@@ -1,0 +1,69 @@
+<!--
+                    dtd for predicate argument lexicon files
+
+ Each file will contain a set of predicates associated with a particular
+ lemma (including phrasal variants,  like 'keep_from', etc)
+
+ Each predicate will contain a set of roles in an entity called a roleset.  The
+ rolesets give mneumonics of the argument labels for each different set of
+ arguments.  Multiple rolesets per predicate are necessary for the accomodation
+ of different senses of the predicate.
+
+ Each roleset associates the argument labels with a set of examples
+ demonstrating some of the primary considerations in predicate argument
+ annotation for the predicate+roleset in consideration.  The examples contain
+ plain text sentences and then assign arguments to segments of the sentence.
+ The examples usually have names which are often space delimited descriptions
+ of the annotation.  The examples often have types which describe, in a
+ nutshell, some primary linguistic properties such as "benefactive" or
+ "agentive".  The type attribute may also include a phrasal particle variant
+ (eg type="keep pace") so as to indicate the guidelines for annotation of these
+ cases.
+
+ The entire document can be decorated with notes for unstructured description of
+ the information presented.
+-->
+<!ELEMENT data (info | schema | annotations)*>
+
+<!ELEMENT info (savetime | progress)*>
+
+<!ELEMENT savetime (#PCDATA)>
+<!ELEMENT progress (#PCDATA)>
+
+<!ELEMENT schema (#PCDATA)>
+<!ATTLIST schema 
+path CDATA #IMPLIED
+protocol CDATA #IMPLIED>
+
+<!ELEMENT annotations (entity | relation)*>
+<!ELEMENT entity (id | span | type | parentsType | properties )*>
+<!ELEMENT relation (id | type | parentsType | properties )*>
+	<!ELEMENT id (#PCDATA)>
+	<!ELEMENT span (#PCDATA)>
+	<!ELEMENT type (#PCDATA)>
+	<!ELEMENT parentsType (#PCDATA)>
+	<!ELEMENT properties (Polarity | ContextualModality | Class | DocTimeRel | Type | Representation | Degree | ContextualAspect | Difficulty | Source | Target | Head | Attribute | Set | Member | FirstInstance | Coreferring_String | Whole | Part | Report | Event | Argument | Related_to)*>
+		<!ELEMENT Polarity (#PCDATA)>
+		<!ELEMENT ContextualModality (#PCDATA)>
+		<!ELEMENT Class (#PCDATA)>
+		<!ELEMENT DocTimeRel (#PCDATA)>
+		<!ELEMENT Type (#PCDATA)>
+		<!ELEMENT Representation (#PCDATA)>
+		<!ELEMENT Degree (#PCDATA)>
+		<!ELEMENT ContextualAspect (#PCDATA)>
+		<!ELEMENT Difficulty (#PCDATA)>
+		<!ELEMENT Source (#PCDATA)>
+		<!ELEMENT Target (#PCDATA)>
+		<!ELEMENT Head (#PCDATA)>
+		<!ELEMENT Attribute (#PCDATA)>
+		<!ELEMENT Set (#PCDATA)>
+		<!ELEMENT Member (#PCDATA)>
+		<!ELEMENT FirstInstance (#PCDATA)>
+		<!ELEMENT Coreferring_String (#PCDATA)>
+		<!ELEMENT Whole (#PCDATA)>
+		<!ELEMENT Part (#PCDATA)>
+		<!ELEMENT Report (#PCDATA)>
+		<!ELEMENT Event (#PCDATA)>
+		<!ELEMENT Argument (#PCDATA)>
+		<!ELEMENT Related_to (#PCDATA)>
+

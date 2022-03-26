@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+<info>
+  <savetime>16:19:00 12-09-2015</savetime>
+  <progress>completed</progress>
+</info>
+
+<schema path="./" protocol="file">temporal.schema.xml</schema>
+
+<annotations>
+	<entity>
+		<id>81@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>73,79</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>82@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>81,94</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>83@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>106,125</span>
+		<type>DOCTIME</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>84@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>136,139</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>AFTER</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>HYPOTHETICAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>85@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>149,157</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>BEFORE</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>86@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>277,283</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>BEFORE</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>87@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>284,289</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>BEFORE</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>88@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>290,292</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>89@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>296,304</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>90@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>305,311</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>91@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>314,325</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>92@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>414,420</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>93@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>422,428</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>94@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>440,459</span>
+		<type>SECTIONTIME</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>95@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>481,485</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>OVERLAP</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>96@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>487,491</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>BEFORE</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>97@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>507,514</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>98@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>515,519</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>99@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>520,526</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>BEFORE</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>100@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>532,548</span>
+		<type>TIMEX3</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Class>DATE</Class>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>101@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>564,570</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>102@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>572,584</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>103@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>596,615</span>
+		<type>SECTIONTIME</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>104@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>633,644</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>105@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>646,652</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>106@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>655,734</span>
+		<type>DUPLICATE</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>107@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>753,758</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>108@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>763,770</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>BEFORE</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>109@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>786,796</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>BEFORE</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>110@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>797,809</span>
+		<type>TIMEX3</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Class>DATE</Class>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>111@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>815,821</span>
+		<type>EVENT</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<DocTimeRel>BEFORE</DocTimeRel>
+			<Type>N/A</Type>
+			<Representation>EXPLICIT</Representation>
+			<Degree>N/A</Degree>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<ContextualAspect>N/A</ContextualAspect>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</entity>
+
+	<entity>
+		<id>112@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<span>822,825</span>
+		<type>ENTITY</type>
+		<parentsType>Entities</parentsType>
+		<properties>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+		</properties>
+	</entity>
+
+	<relation>
+		<id>24@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>APPOSITIVE</type>
+		<parentsType>CorefChains</parentsType>
+		<properties>
+			<Head>82@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Head>
+			<Attribute>81@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Attribute>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>25@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>TLINK</type>
+		<parentsType>TemporalRelations</parentsType>
+		<properties>
+			<Source>86@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Source>
+			<Type>OVERLAP/CAUSES</Type>
+			<Target>87@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Target>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>26@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>IDENTICAL</type>
+		<parentsType>CorefChains</parentsType>
+		<properties>
+			<FirstInstance>86@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</FirstInstance>
+			<Coreferring_String>96@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Coreferring_String>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>27@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>APPOSITIVE</type>
+		<parentsType>CorefChains</parentsType>
+		<properties>
+			<Head>93@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Head>
+			<Attribute>92@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Attribute>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>28@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>IDENTICAL</type>
+		<parentsType>CorefChains</parentsType>
+		<properties>
+			<FirstInstance>93@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</FirstInstance>
+			<Coreferring_String>105@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Coreferring_String>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>29@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>TLINK</type>
+		<parentsType>TemporalRelations</parentsType>
+		<properties>
+			<Source>100@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Source>
+			<Type>CONTAINS</Type>
+			<Target>99@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Target>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>30@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>TLINK</type>
+		<parentsType>TemporalRelations</parentsType>
+		<properties>
+			<Source>100@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Source>
+			<Type>CONTAINS</Type>
+			<Target>96@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Target>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>31@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>APPOSITIVE</type>
+		<parentsType>CorefChains</parentsType>
+		<properties>
+			<Head>102@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Head>
+			<Attribute>101@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Attribute>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>32@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>APPOSITIVE</type>
+		<parentsType>CorefChains</parentsType>
+		<properties>
+			<Head>105@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Head>
+			<Attribute>104@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Attribute>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>33@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>TLINK</type>
+		<parentsType>TemporalRelations</parentsType>
+		<properties>
+			<Source>108@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Source>
+			<Type>OVERLAP/CAUSES</Type>
+			<Target>111@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Target>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>34@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>TLINK</type>
+		<parentsType>TemporalRelations</parentsType>
+		<properties>
+			<Source>109@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Source>
+			<Type>CONTAINS</Type>
+			<Target>108@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Target>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>35@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>TLINK</type>
+		<parentsType>TemporalRelations</parentsType>
+		<properties>
+			<Source>110@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Source>
+			<Type>CONTAINS</Type>
+			<Target>109@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Target>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>36@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>BRIDGING</type>
+		<parentsType>CorefChains</parentsType>
+		<properties>
+			<Argument>95@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Argument>
+			<Related_to>96@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Related_to>
+			<Related_to>99@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Related_to>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>37@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>TLINK</type>
+		<parentsType>TemporalRelations</parentsType>
+		<properties>
+			<Source>95@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Source>
+			<Type>CONTAINS-SUBEVENT</Type>
+			<Target>96@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Target>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>38@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>TLINK</type>
+		<parentsType>TemporalRelations</parentsType>
+		<properties>
+			<Source>95@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Source>
+			<Type>CONTAINS-SUBEVENT</Type>
+			<Target>99@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Target>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</relation>
+
+	<relation>
+		<id>39@r@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</id>
+		<type>TLINK</type>
+		<parentsType>TemporalRelations</parentsType>
+		<properties>
+			<Source>95@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Source>
+			<Type>CONTAINS-SUBEVENT</Type>
+			<Target>108@e@af18d29036ab0a9f8cf2742a5a1b4804.mpdf@gold</Target>
+			<Polarity>POS</Polarity>
+			<ContextualModality>ACTUAL</ContextualModality>
+			<Difficulty>NONE</Difficulty>
+		</properties>
+	</relation>
+
+</annotations>
+
+</data>
