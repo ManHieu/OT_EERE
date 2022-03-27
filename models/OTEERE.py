@@ -1,4 +1,5 @@
 from collections import OrderedDict
+import math
 from this import d
 from typing import Dict, List, Tuple
 import torch
@@ -95,7 +96,18 @@ class OTEERE(nn.Module):
         bs = input_ids.size(0)
         # Embedding
         # Compute transformer embedding
-        _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state
+        # _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state
+        _context_emb = []
+        num_para = math.ceil(input_ids.size(1) / 512.0)
+        for i in range(num_para):
+            start = i * 512
+            end = (i + 1) * 512
+            para_ids = input_ids[:, start: end]
+            para_input_attn_mask = input_attention_mask[:, start:end]
+            para_ctx = self.encoder(para_ids, para_input_attn_mask).last_hidden_state
+            print(f"para_ctx: {para_ctx.size()}")
+            _context_emb.append(para_ctx)
+        _context_emb = torch.cat(_context_emb, dim=1)
         context_emb = []
         max_ns = masks.size(1)
         for i, map in enumerate(mapping):
