@@ -10,8 +10,8 @@ def register_datapoint(func):
     return func
 
 
-def get_datapoint(type, mydict):
-    return DATAPOINT[type](mydict)
+def get_datapoint(type, mydict, doc_info=True):
+    return DATAPOINT[type](mydict, doc_info=True)
 
 
 @register_datapoint
@@ -45,10 +45,11 @@ def hieve_datapoint(my_dict, doc_info=True):
             e1_poss = e1['token_id'] + sents_tok_span[s1][0]
             e2_poss = e2['token_id'] + sents_tok_span[s2][0]
 
-            if tokens[e1_poss] == e1['mention'] and tokens[e2_poss] == e2['mention']:
+            if e1['mention'] in tokens[e1_poss]  and e2['mention'] in tokens[e2_poss]:
                 triggers = [{'possition': [e1_poss], 'mention': e1['mention'], 'span': (e1['start_char'], e1['end_char'])},
                             {'possition': [e2_poss], 'mention': e2['mention'], 'span': (e2['start_char'], e2['end_char'])}]
             else:
+                print(f"{tokens} - {sents_tok_span}")
                 print(f"{e1_poss} - {tokens[e1_poss]} - {e1['mention']}")
                 print(f"{e2_poss} - {tokens[e2_poss]} - {e2['mention']}")
                 continue
@@ -94,8 +95,8 @@ def hieve_datapoint(my_dict, doc_info=True):
                 e1_span = (e1['start_char'] - my_dict['sentences'][s1]['sent_start_char'], e1['end_char'] - my_dict['sentences'][s1]['sent_start_char'])
                 e2_span = (e2['start_char'] - my_dict['sentences'][s2]['sent_start_char'], e2['end_char'] - my_dict['sentences'][s2]['sent_start_char'])
             
-            assert tokens[e1_poss] == e1['mention']
-            assert tokens[e2_poss] == e2['mention']
+            assert e1['mention'] in tokens[e1_poss]
+            assert e2['mention'] in tokens[e2_poss] 
             triggers = [{'possition': [e1_poss], 'mention': e1['mention'], 'span': e1_span},
                         {'possition': [e2_poss], 'mention': e2['mention'], 'span': e2_span}]
         

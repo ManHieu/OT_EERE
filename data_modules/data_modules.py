@@ -35,6 +35,7 @@ class EEREDataModule(pl.LightningDataModule):
         self.save_hyperparameters()
         self.data_name = data_args.datasets
         self.tokenizer = data_args.tokenizer
+        self.encoder = data_args.encoder
         self.max_seq_len = data_args.max_seq_length
         self.batch_size = data_args.batch_size
         self.data_dir = fold_dir
@@ -43,6 +44,7 @@ class EEREDataModule(pl.LightningDataModule):
         dataset = load_dataset(
                 name=self.data_name,
                 tokenizer=self.tokenizer,
+                encoder=self.encoder,
                 data_dir=self.data_dir,
                 max_input_length=self.max_seq_len,
                 seed=self.hparams.seed,
@@ -59,6 +61,7 @@ class EEREDataModule(pl.LightningDataModule):
         dataset = load_dataset(
                 name=self.data_name,
                 tokenizer=self.tokenizer,
+                encoder=self.encoder,
                 data_dir=self.data_dir,
                 max_input_length=self.max_seq_len,
                 seed=self.hparams.seed,
@@ -75,6 +78,7 @@ class EEREDataModule(pl.LightningDataModule):
         dataset = load_dataset(
                 name=self.data_name,
                 tokenizer=self.tokenizer,
+                encoder=self.encoder,
                 data_dir=self.data_dir,
                 max_input_length=self.max_seq_len,
                 seed=self.hparams.seed,

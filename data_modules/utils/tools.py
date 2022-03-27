@@ -10,8 +10,6 @@ import random
 random.seed(1741)
 import spacy
 import networkx as nx
-from utils.constants import *
-import matplotlib.pyplot as plt
 
 
 nlp = spacy.load("en_core_web_sm")
@@ -85,13 +83,13 @@ def span_SENT_to_DOC(token_span_SENT, sent_start):
     return token_span_DOC
 
 
-def id_lookup(span_SENT, start_char):
+def id_lookup(span_SENT, start_char, end_char):
     # this function is applicable to RoBERTa subword or token from ltf/spaCy
     # id: start from 0
     token_id = -1
     for token_span in span_SENT:
         token_id += 1
-        if token_span[0] <= start_char and token_span[1] >= start_char:
+        if token_span[0] <= start_char and token_span[1] >= end_char:
             return token_id
     raise ValueError("Nothing is found. \n span sentence: {} \n start_char: {}".format(span_SENT, start_char))
 
@@ -133,10 +131,10 @@ def mapping_subtok_id(subtoks: List[str], tokens: List[str]):
     # mapping <unk> token:
     for key in range(len(tokens)):
         if mapping_dict.get(key) == None:
-            print(tokens[key])
+            print(f"haven't_mapping_tok: {tokens[key]}")
             mapping_dict[key] = random.randint(0, len(tokens)-1)
     
-    print(f"tokens: {tokens} \nsub_tokens: {subtoks} \nmapping_dict: {mapping_dict}")
+    # print(f"tokens: {tokens} \nsub_tokens: {subtoks} \nmapping_dict: {mapping_dict}")
     
     return dict(mapping_dict)
     

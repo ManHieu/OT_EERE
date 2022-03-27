@@ -31,6 +31,8 @@ def run(defaults: Dict):
             defaults[key] = True if defaults[key]=='True' else False
         if defaults[key] == 'None':
             defaults[key] = None
+    if job == 'HiEve':
+        defaults['loss_weights'] = [993.0/333, 993.0/349, 933.0/128, 933.0/453]
     
     # parse remaining arguments and divide them into three categories
     second_parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
@@ -41,6 +43,7 @@ def run(defaults: Dict):
     training_args: TrainingArguments
     # print(second_parser.parse_args_into_dataclasses(remaining_args))
     model_args, data_args, training_args = second_parser.parse_args_into_dataclasses(remaining_args)
+    data_args.datasets = job
 
     record_file_name = './result.txt'
     if args.tuning:
@@ -174,8 +177,6 @@ if __name__ == '__main__':
     parser.add_argument('-t', '--tuning', action='store_true', default=False, help='tune hyperparameters')
 
     args, remaining_args = parser.parse_known_args()
-    if args.rl:
-        assert args.trained_model != None
     
     if args.tuning:
         print("tuning ......")

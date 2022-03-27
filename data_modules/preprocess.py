@@ -60,13 +60,23 @@ class Preprocessor(object):
         if type(corpus) == list:
             processed_corpus = []
             for my_dict in tqdm.tqdm(corpus):
-                processed_corpus.extend(get_datapoint(self.datapoint, my_dict))
+                len_doc = sum([len(sentence['tokens']) for sentence in my_dict['sentences']])
+                if len_doc < 300:
+                    doc_info = True
+                else:
+                    doc_info = False
+                processed_corpus.extend(get_datapoint(self.datapoint, my_dict, doc_info))
             with open(save_path, 'w', encoding='utf-8') as f:
                 json.dump(processed_corpus, f, indent=6)
         else:
             processed_corpus = defaultdict(list)
             for key, topic in corpus.items():
                 for my_dict in tqdm.tqdm(topic):
+                    len_doc = sum([len(sentence['tokens']) for sentence in my_dict['sentences']])
+                    if len_doc < 300:
+                        doc_info = True
+                    else:
+                        doc_info = False
                     processed_corpus[key].extend(get_datapoint(self.datapoint, my_dict))
             with open(save_path, 'w', encoding='utf-8') as f:
                 json.dump(processed_corpus, f, indent=6)

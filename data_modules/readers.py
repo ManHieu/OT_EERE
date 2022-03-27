@@ -77,7 +77,7 @@ def tsvx_reader(dir_name, file_name):
             i = 0
             if char_head != -1:
                 for span_sent in sent_dict['token_span_SENT']:
-                    if char_head in range(span_sent[0], span_sent[1] + 1):
+                    if char_head == span_sent[0]:
                         assert sent_dict['tokens'][i] == text_head, f"{sent_dict['tokens'][i]} - {text_head} - {span_sent} - {char_head} - {sent_dict}"
                         sent_dict['heads'].append(i)
                         break
@@ -91,7 +91,9 @@ def tsvx_reader(dir_name, file_name):
     # Add sent_id as an attribute of event
     for event_id, event_dict in my_dict["event_dict"].items():
         my_dict["event_dict"][event_id]["sent_id"] = sent_id = sent_id_lookup(my_dict, event_dict["start_char"], event_dict["end_char"])
-        my_dict["event_dict"][event_id]["token_id"] = id_lookup(my_dict["sentences"][sent_id]["token_span_DOC"], event_dict["start_char"])
+        my_dict["event_dict"][event_id]["token_id"] = id_lookup(my_dict["sentences"][sent_id]["token_span_DOC"], event_dict["start_char"], event_dict["end_char"])
+        assert my_dict["event_dict"][event_id]["mention"] in my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"]], \
+            f'{my_dict["event_dict"][event_id]}  - {my_dict["sentences"][sent_id]} - {my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"]]}'
 
     return my_dict
 

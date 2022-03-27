@@ -24,6 +24,11 @@ class DataTrainingArguments:
         metadata= {"help": "The tokenizer used to prepare data"}
     )
 
+    encoder: str = field(
+        default = '/vinai/hieumdt/pretrained_models/models/roberta-base',
+        metadata= {"help": "The path of encoder model"}
+    )
+
     max_seq_length: int = field(
         default=512,
         metadata={
@@ -47,13 +52,18 @@ class TrainingArguments(transformers.TrainingArguments):
     """
     Arguments for the Trainer.
     """
+    output_dir: str = field(
+        default='experiments',
+        metadata={"help": "The output directory where the results and model weights will be written."}
+    )
+
     num_labels: int = field(
         default = None,
         metadata= {"help": "Number labels in this dataset"}
     )
     
     loss_weights: List[float] = field(
-        default = [1.0/num_labels] * num_labels,
+        default = None,
         metadata= {"help": "Weight for Cross-entropy loss"}
     )
 
