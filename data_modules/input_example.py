@@ -87,6 +87,6 @@ class InputFeatures:
     dep_path: List[int]
     adjacent_maxtrix: Tensor
     scores: List[Tuple[int, int]]                   # distance to triggers.
-
+    # input_presentation: Tensor
 
     

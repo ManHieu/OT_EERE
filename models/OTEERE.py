@@ -16,7 +16,7 @@ class OTEERE(nn.Module):
                 encoder_model: str,
                 max_seq_len: int,
                 distance_emb_size: int,
-                gcn_outp_size: int,
+                # gcn_outp_size: int,
                 gcn_num_layers: int,
                 num_labels: int,
                 loss_weights: List[float],
@@ -35,8 +35,8 @@ class OTEERE(nn.Module):
 
         # Encoding layers
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
-        self.distance_emb = nn.Embedding(max_seq_len, distance_emb_size)
-        self.in_size = 768 + distance_emb_size if 'base' in encoder_model else 1024 + distance_emb_size
+        self.distance_emb = nn.Embedding(400, distance_emb_size)
+        self.in_size = 768 + distance_emb_size * 2 if 'base' in encoder_model else 1024 + distance_emb_size * 2
         self.rnn = nn.LSTM(self.in_size, int(self.in_size/2), rnn_num_layers, 
                             batch_first=True, dropout=dropout, bidirectional=True)
 
@@ -45,7 +45,8 @@ class OTEERE(nn.Module):
 
         # GCN layers
         gcn_input_size = 2 * int(self.in_size/2)
-        self.gcn = GCN(gcn_input_size, gcn_outp_size, gcn_num_layers, rnn_hidden_size, rnn_num_layers, dropout)
+        gcn_outp_size = gcn_input_size
+        self.gcn = GCN(gcn_input_size, gcn_input_size, gcn_num_layers, rnn_hidden_size, rnn_num_layers, dropout)
 
         # Classifier layers
         if fn_actv == 'relu':
@@ -83,66 +84,75 @@ class OTEERE(nn.Module):
     def forward(self, 
                 input_ids: torch.Tensor, 
                 input_attention_mask: torch.Tensor, 
-                mapping: List[Dict[int, List[int]]], 
+                # ctx_emb: torch.Tensor,
                 masks: torch.Tensor, 
                 labels: torch.Tensor, 
-                trigger_poss: List[List[List[int]]],
                 dep_paths: torch.Tensor, 
                 adjs: torch.Tensor, 
                 head_dists: torch.Tensor, 
-                tail_dists: torch.Tensor
+                tail_dists: torch.Tensor,
+                mapping: List[Dict[int, List[int]]], 
+                trigger_poss: List[List[List[int]]],
                 ):
         
         bs = input_ids.size(0)
         # Embedding
         # Compute transformer embedding
-        # _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state
-        _context_emb = []
-        num_para = math.ceil(input_ids.size(1) / 512.0)
-        for i in range(num_para):
-            start = i * 512
-            end = (i + 1) * 512
-            para_ids = input_ids[:, start: end]
-            para_input_attn_mask = input_attention_mask[:, start:end]
-            para_ctx = self.encoder(para_ids, para_input_attn_mask).last_hidden_state
-            print(f"para_ctx: {para_ctx.size()}")
-            _context_emb.append(para_ctx)
-        _context_emb = torch.cat(_context_emb, dim=1)
+        _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state
+        with torch.no_grad():
+            _context_emb = []
+            num_para = math.ceil(input_ids.size(1) / 512.0)
+            # print(f"input_ids: {input_ids.size()}")
+            for i in range(num_para):
+                start = i * 512
+                end = (i + 1) * 512
+                para_ids = input_ids[:, start: end]
+                para_input_attn_mask = input_attention_mask[:, start:end]
+                # print(f"para_ids: {para_ids.size()}")
+                # print(f"para_attn_mask: {para_input_attn_mask.size()}")
+                para_ctx = self.encoder(para_ids, para_input_attn_mask).last_hidden_state
+                # print(f"para_ctx: {para_ctx.size()}")
+                _context_emb.append(para_ctx)
+            _context_emb = torch.cat(_context_emb, dim=1) # (bs, max_seq_len, encoder_hidden_size)
+
+        # _context_emb = ctx_emb
+        # print(f"_contex_emb: {_context_emb.size()}")
         context_emb = []
         max_ns = masks.size(1)
         for i, map in enumerate(mapping):
             emb = []
-            ns = torch.sum(masks[i])
+            ns = int(torch.sum(masks[i]))
             map[ns-1] = list(range(ns-1)) # ROOT mapping
-            for tok_id in ns:
+            for tok_id in range(ns):
                 token_mapping = map[tok_id]
                 tok_presentation = _context_emb[i, token_mapping[0]: token_mapping[-1]+1, :]
-                tok_presentation = torch.max(tok_presentation, dim=0)[0]
-                print(f"tok_presentation: {tok_presentation.size()}")
+                tok_presentation = torch.max(tok_presentation, dim=0)[0] # (encoder_hidden_size)
+                # print(f"tok_presentation: {tok_presentation.size()}")
                 emb.append(tok_presentation)
             # padding
             if max_ns > ns:
-                emb.append([torch.zeros(tok_presentation.size())] * (max_ns-ns))
+                emb = emb + [torch.zeros(tok_presentation.size()).cuda()] * (max_ns-ns)
 
-            emb = torch.stack(emb, dim=0)
-            print(f"emb: {emb.size()}")
+            emb = torch.stack(emb, dim=0) # (max_ns, encoder_hidden_size)
+            # print(f"emb: {emb.size()}")
             
             context_emb.append(emb)
 
         context_emb = torch.stack(context_emb, dim=0) # (bs, max_ns, hiden_size)
-        print(f"ctx_emb: {context_emb.size()}")
         # Compute distance embedding
+        # print(head_dists.size())
+        # print(self.distance_emb)
         head_dists_emb = self.distance_emb(head_dists)
         tail_dists_emb = self.distance_emb(tail_dists)
 
         emb = [context_emb, head_dists_emb, tail_dists_emb]
         emb = torch.cat(emb, dim=2)
-        print(f"emb: {emb.size()}")
 
         # Encoding with RNN
+        # print(masks)
         ls = [torch.sum(masks[i]).item() for i in range(bs)]
         gcn_input = self.encode_with_rnn(emb, ls) # (bs, max_ns, gcn_input_size)
-        print(f"gcn_input: {gcn_input}")
+        # print(f"gcn_input: {gcn_input}")
 
         # OT
         on_dps = [] # on dependency path token presentation
@@ -151,24 +161,26 @@ class OTEERE(nn.Module):
         off_dp_maginals = [] # off dependency path maginal distribution
         for i in range(bs):
             dep_path = dep_paths[i]
-
-            on_dp_score = - torch.min(torch.stack([head_dists, tail_dists], dim=0), dim=0)[0] * dep_path
-            on_dp_score[dep_path==0] = -10000
-            on_dp_maginal = F.softmax(on_dp_score, dim=0)
-            off_dp_score = - torch.min(torch.stack([head_dists, tail_dists], dim=0), dim=0)[0] * (1 - dep_path) * masks[i]
-            off_dp_score[((1 - dep_path) * masks[i])==0] = -10000
-            off_dp_maginal = F.softmax(off_dp_score, dim=0)
-            null_prob = torch.mean(off_dp_maginal, dim=0)
-            on_dp_maginal = torch.cat([null_prob, null_prob * on_dp_maginal], dim=0)
-            print(f"on_dp_maginal: {on_dp_maginal.size()}")
-            print(f"off_dp_maginal: {off_dp_maginal.size()}")
+        
+            on_dp_score = - torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * dep_path
+            # print(f"on_dp_score: {on_dp_score.size()}")
+            on_dp_score[dep_path==0] = -10000.0
+            on_dp_maginal = F.softmax(on_dp_score.float(), dim=0)
+            off_dp_score = - torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * (1 - dep_path) * masks[i]
+            off_dp_score[((1 - dep_path) * masks[i])==0] = -10000.0
+            off_dp_maginal = F.softmax(off_dp_score.float(), dim=0) # (max_ns)
+            # null_prob = torch.mean(off_dp_maginal, dim=0).unsqueeze(0)
+            on_dp_maginal = torch.cat([torch.Tensor([0.5]).cuda(), 0.5 * on_dp_maginal], dim=0) # (max_ns + 1)
+            # print(torch.sum(on_dp_maginal))
+            # print(f"on_dp_maginal: {on_dp_maginal.size()}")
+            # print(f"off_dp_maginal: {off_dp_maginal.size()}")
             
-            on_dp = gcn_input[i] * dep_path.unsqueeze(0).expand((gcn_input.size(1), gcn_input.size(2)))
-            off_dp = gcn_input[i] * ((1 - dep_path) * masks[i]).unsqueeze(0).expand((gcn_input.size(1), gcn_input.size(2)))
+            on_dp = gcn_input[i] * dep_path.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2)))
+            off_dp = gcn_input[i] * ((1 - dep_path) * masks[i]).unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2))) # (max_ns, gcn_input_size)
             null_presentation = torch.mean(off_dp, dim=0).unsqueeze(0)
-            on_dp = torch.cat([null_presentation, on_dp], dim=0)
-            print(f'on_dp: {on_dp.size()}')
-            print(f"off_dp: {off_dp.size()}")
+            on_dp = torch.cat([null_presentation, on_dp], dim=0) # (max_ns+1, gcn_input_size)
+            # print(f'on_dp: {on_dp.size()}')
+            # print(f"off_dp: {off_dp.size()}")
             
             on_dps.append(on_dp)
             off_dps.append(off_dp)
@@ -176,21 +188,30 @@ class OTEERE(nn.Module):
             off_dp_maginals.append(off_dp_maginal)
         
         on_dps = torch.stack(on_dps, dim=0)
+        # print(f"on_dp: {torch.sum(on_dps)}")
         off_dps = torch.stack(off_dps, dim=0)
+        # print(f"off_dp: {torch.sum(off_dps)}")
         on_dp_maginals = torch.stack(on_dp_maginals, dim=0)
         off_dp_maginals = torch.stack(off_dp_maginals, dim=0)
+        # print(f"off_maginal: {torch.sum(off_dp_maginals)}")
+        # print(f"on_maginal: {torch.sum(on_dp_maginals)}")
 
-        cost, pi, C = self.sinkhorn(off_dps, on_dps, off_dp_maginals, on_dp_maginals)
-        print(f"pi: {pi.size()}")
+        cost, pi, C = self.sinkhorn(off_dps, on_dps, off_dp_maginals, on_dp_maginals, cuda=True)
+        # print(f"pi: {pi.size()}")
+        pi = pi.cuda()
         max_ns = pi.size(1)
-        OT_adj = (pi[:, :, 1:] + 1)* (1.0 / torch.stack([torch.max(pi, dim=2)[0] + 1] * max_ns, dim=-1)) # + 1 to avoid devide 0
+        # print(f"pi: {pi[0]}")
+        OT_adj = (pi[:, :, 1:])* (1.0 / torch.stack([torch.max(pi, dim=2)[0]] * max_ns, dim=-1)) # + 1 to avoid devide 0
+        # print(f"OT_adj: {OT_adj[0]}")
         OT_adj[OT_adj < 1] = 0
+        # print(f"OT_adj: {OT_adj[0]}")
 
         on_dp_masks = torch.stack([dep_paths] * max_ns, dim=2)
         off_dp_masks = torch.stack([(1- dep_paths) * masks] * max_ns, dim=2)
-        print(f"on_dp_masks: {on_dp_masks}")
-        print(f"off_dp_masks: {off_dp_masks}")
+        # print(f"on_dp_masks: {on_dp_masks[0]}")
+        # print(f"off_dp_masks: {off_dp_masks[0]}")
         OT_adj = OT_adj * on_dp_masks.transpose(1, 2) * off_dp_masks
+        # print(f"OT_adj: {OT_adj[0]}")
         # undirecting
         OT_adj = OT_adj + OT_adj.transpose(1, 2)
         
@@ -216,7 +237,7 @@ class OTEERE(nn.Module):
         tails = torch.stack(tails, dim=0)
         doc_presentations = torch.stack(doc_presentations, dim=0)
         presentations = torch.cat([heads, tails, doc_presentations], dim=1)
-        print(f"presentations: {presentations.size()}")
+        # print(f"presentations: {presentations.size()}")
         logits = self.classifier(presentations)
 
         # Regularizarion

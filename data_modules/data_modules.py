@@ -40,8 +40,8 @@ class EEREDataModule(pl.LightningDataModule):
         self.batch_size = data_args.batch_size
         self.data_dir = fold_dir
     
-    def train_dataloader(self):
-        dataset = load_dataset(
+    def prepare_data(self):
+        load_dataset(
                 name=self.data_name,
                 tokenizer=self.tokenizer,
                 encoder=self.encoder,
@@ -49,33 +49,8 @@ class EEREDataModule(pl.LightningDataModule):
                 max_input_length=self.max_seq_len,
                 seed=self.hparams.seed,
                 split = 'train')
-        dataloader = DataLoader(
-            dataset= dataset,
-            batch_size= self.batch_size,
-            shuffle=True,
-            collate_fn=dataset.my_collate,
-        )
-        return dataloader
-    
-    def val_dataloader(self):
-        dataset = load_dataset(
-                name=self.data_name,
-                tokenizer=self.tokenizer,
-                encoder=self.encoder,
-                data_dir=self.data_dir,
-                max_input_length=self.max_seq_len,
-                seed=self.hparams.seed,
-                split = 'val')
-        dataloader = DataLoader(
-            dataset= dataset,
-            batch_size= self.batch_size,
-            shuffle=True,
-            collate_fn=dataset.my_collate,
-        )
-        return dataloader
-    
-    def test_dataloader(self):
-        dataset = load_dataset(
+        
+        load_dataset(
                 name=self.data_name,
                 tokenizer=self.tokenizer,
                 encoder=self.encoder,
@@ -83,10 +58,71 @@ class EEREDataModule(pl.LightningDataModule):
                 max_input_length=self.max_seq_len,
                 seed=self.hparams.seed,
                 split = 'test')
+
+        load_dataset(
+                name=self.data_name,
+                tokenizer=self.tokenizer,
+                encoder=self.encoder,
+                data_dir=self.data_dir,
+                max_input_length=self.max_seq_len,
+                seed=self.hparams.seed,
+                split = 'val')
+    
+    def setup(self, stage=None):
+        # Assign train/val datasets for use in dataloaders
+        if stage == "fit":
+            self.train_data = load_dataset(
+                name=self.data_name,
+                tokenizer=self.tokenizer,
+                encoder=self.encoder,
+                data_dir=self.data_dir,
+                max_input_length=self.max_seq_len,
+                seed=self.hparams.seed,
+                split = 'train')
+            
+            self.val_data = load_dataset(
+                name=self.data_name,
+                tokenizer=self.tokenizer,
+                encoder=self.encoder,
+                data_dir=self.data_dir,
+                max_input_length=self.max_seq_len,
+                seed=self.hparams.seed,
+                split = 'val')
+
+        # Assign test dataset for use in dataloader(s)
+        if stage == "test":
+            self.test_data = load_dataset(
+                name=self.data_name,
+                tokenizer=self.tokenizer,
+                encoder=self.encoder,
+                data_dir=self.data_dir,
+                max_input_length=self.max_seq_len,
+                seed=self.hparams.seed,
+                split = 'test')
+    
+    def train_dataloader(self):
         dataloader = DataLoader(
-            dataset= dataset,
+            dataset= self.train_data,
             batch_size= self.batch_size,
             shuffle=True,
-            collate_fn=dataset.my_collate,
+            collate_fn=self.train_data.my_collate,
+        )
+        return dataloader
+    
+    def val_dataloader(self):
+        dataloader = DataLoader(
+            dataset= self.val_data,
+            batch_size= self.batch_size,
+            shuffle=False,
+            collate_fn=self.val_data.my_collate,
+        )
+        return dataloader
+    
+    def test_dataloader(self):
+        dataloader = DataLoader(
+            dataset= self.test_data,
+            batch_size= self.batch_size,
+            shuffle=False,
+            collate_fn=self.test_data.my_collate,
         )
         return dataloader

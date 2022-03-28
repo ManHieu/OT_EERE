@@ -1,8 +1,5 @@
-import imp
-import torch 
+import torch
 import torch.nn as nn
-import torch.nn.functional as F
-
 
 # Adapted from https://github.com/gpeyre/SinkhornAutoDiff
 class SinkhornDistance(nn.Module):
@@ -23,28 +20,30 @@ class SinkhornDistance(nn.Module):
         - Input: :math:`(N, P_1, D_1)`, :math:`(N, P_2, D_2)`
         - Output: :math:`(N)` or :math:`()`, depending on `reduction`
     """
-    def __init__(self, eps, max_iter, reduction='none') -> None:
-        super().__init__()
+    def __init__(self, eps, max_iter, reduction='none'):
+        super(SinkhornDistance, self).__init__()
         self.eps = eps
         self.max_iter = max_iter
         self.reduction = reduction
-    
+
     def forward(self, x, y, mu=None, nu=None, cuda=False):
         # The Sinkhorn algorithm takes as input three variables :
         C = self._cost_matrix(x, y)  # Wasserstein cost function
         x_points = x.shape[-2]
         y_points = y.shape[-2]
-        
-        batch_size = x.shape[0]
+        if x.dim() == 2:
+            batch_size = 1
+        else:
+            batch_size = x.shape[0]
 
-        # both marginal distributions are fixed with equal weights if none
+        # both marginals are fixed with equal weights
         if mu is None:
             mu = torch.empty(batch_size, x_points, dtype=torch.float,
                          requires_grad=False).fill_(1.0 / x_points).squeeze()
             if cuda:
                 mu = mu.cuda()
         else:
-            mu = torch.FloatTensor(mu)
+            # mu = torch.FloatTensor(mu)
             if cuda:
                 mu = mu.cuda()
         if nu is None:
@@ -53,7 +52,7 @@ class SinkhornDistance(nn.Module):
             if cuda:
                 nu = nu.cuda()
         else:
-            nu = torch.FloatTensor(nu)
+            # nu = nu
             if cuda:
                 nu = nu.cuda()
         u = torch.zeros_like(mu)
@@ -99,7 +98,7 @@ class SinkhornDistance(nn.Module):
 
     @staticmethod
     def _cost_matrix(x, y, p=2):
-        r"""Returns the matrix of $|x_i-y_j|^p$."""
+        "Returns the matrix of $|x_i-y_j|^p$."
         x_col = x.unsqueeze(-2)
         y_lin = y.unsqueeze(-3)
         C = torch.sum((torch.abs(x_col - y_lin)) ** p, -1)

@@ -73,7 +73,7 @@ class BaseDataset(Dataset, ABC):
                 f'Max sequence length is {max_sequence_length} but the longest is {max_length_needed} long'
             )
     
-    def process_long_doc(self, input_ids, input_attention_mask):
+    def get_doc_emb(self, input_ids, input_attention_mask):
         num_paras = math.ceil(len(input_ids) / 500.0)
         input_present = []
         for i in range(num_paras):
@@ -84,26 +84,26 @@ class BaseDataset(Dataset, ABC):
             para_emb = self.encoder(para_ids, para_attention_mask).last_hidden_state
             input_present.append(para_emb)
         input_present = torch.cat(input_present, dim=-1).squeeze(0)
-        print(f"input_present:{input_present.size()}")
+        # print(f"input_present:{input_present.size()}")
         return input_present
 
     def compute_features(self):
         try:
-            os.mkdir(self.data_path + 'featured')
+            os.mkdir(self.data_path + f'featured/{self.split}')
         except FileExistsError:
             pass
-
-        featured_path = self.data_path + 'featured/' + f'{self.split}_featured.pkl'
+        featured_path = self.data_path + f'featured/{self.split}.pkl'
         if os.path.exists(featured_path):
             with open(featured_path, 'rb') as f:
-                features = pickle.load(f)
+                features = pickle.load(f)  
         else:
             features = []
-            for example in tqdm(self.examples, desc="Compute features"):
+            for example in tqdm(self.examples, desc="Load features"):    
                 input_seq = " ".join(example.tokens)
                 input_encoded = self.tokenizer(input_seq)
                 input_ids = input_encoded['input_ids']
                 input_attention_mask = input_encoded['attention_mask']
+                # input_presentation = self.get_doc_emb(input_ids, input_attention_mask)
 
                 subwords_no_space = []
                 for index, i in enumerate(input_ids):
@@ -150,32 +150,38 @@ class BaseDataset(Dataset, ABC):
                         triggers_poss=trigger_poss,
                         dep_path=example.dep_path,
                         adjacent_maxtrix=adj,
-                        scores=scores
+                        scores=scores,
+                        # input_presentation=input_presentation
                     )
                     features.append(feature)
-            
-            self._warn_max_sequence_length(self.max_input_length, features)
             with open(featured_path, 'wb') as f:
                 pickle.dump(features, f, pickle.HIGHEST_PROTOCOL)
+            
+        # print(f"feature: {features[0]}")
+        self._warn_max_sequence_length(self.max_input_length, features)
+        print("Loaded {} data points in {} set".format(len(features), self.split))
 
         return features
 
 
     def my_collate(self, batch: List[InputFeatures]):
         max_seq_len = max([len(ex.input_ids) for ex in batch])
+        # hidden_size = batch[0].input_presentation.size(-1)
         max_ns = max([len(ex.dep_path) for ex in batch]) # include ROOT
 
         input_ids = []
         input_attention_mask = []
+        # input_ctx_emb = torch.zeros(len(batch), max_seq_len, hidden_size)
         dep_path = []
         labels = []
-        adj = torch.zeros((len(batch), max_ns, max_ns))
-        masks = torch.zeros((len(batch), max_ns))
+        adj = torch.zeros((len(batch), max_ns, max_ns), dtype=torch.float)
+        masks = torch.zeros((len(batch), max_ns), dtype=torch.float)
         head_dists = []
         tail_dists = []
         for i, ex in enumerate(batch):
             input_ids.append(padding(ex.input_ids, max_sent_len=max_seq_len, pad_tok=self.tokenizer.pad_token_id))
             input_attention_mask.append(padding(ex.input_attention_mask, max_sent_len=max_seq_len, pad_tok=0))
+            # input_ctx_emb[i, 0:ex.input_presentation.size(0), :] = ex.input_presentation
             dep_path.append(padding(ex.dep_path, max_sent_len=max_ns, pad_tok=0))
             masks[i, 0:ex.adjacent_maxtrix.size(0)] = masks[i, 0:ex.adjacent_maxtrix.size(0)] + 1
             adj[i, 0:ex.adjacent_maxtrix.size(0), 0:ex.adjacent_maxtrix.size(1)] = ex.adjacent_maxtrix
@@ -187,12 +193,12 @@ class BaseDataset(Dataset, ABC):
         input_attention_mask = torch.tensor(input_attention_mask)
         dep_path = torch.tensor(dep_path)
         labels = torch.tensor(labels)
-        head_dists = torch.tensor(head_dists)
-        tail_dists = torch.tensor(tail_dists)
+        head_dists = torch.tensor(head_dists, dtype=torch.int)
+        tail_dists = torch.tensor(tail_dists, dtype=torch.int)
 
-        return (input_ids, input_attention_mask, [ex.mapping for ex in batch], 
-                masks, labels, [ex.triggers_poss for ex in batch],
-                dep_path, adj, head_dists, tail_dists)
+        return (input_ids, input_attention_mask, masks, labels,
+                dep_path, adj, head_dists, tail_dists, 
+                [ex.mapping for ex in batch], [ex.triggers_poss for ex in batch])
 
 
 

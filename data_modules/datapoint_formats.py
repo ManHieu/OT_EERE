@@ -11,7 +11,7 @@ def register_datapoint(func):
 
 
 def get_datapoint(type, mydict, doc_info=True):
-    return DATAPOINT[type](mydict, doc_info=True)
+    return DATAPOINT[type](mydict, doc_info)
 
 
 @register_datapoint

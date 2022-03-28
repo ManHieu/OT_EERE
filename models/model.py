@@ -15,25 +15,26 @@ class PlOTEERE(pl.LightningModule):
                 model_args: ModelArguments, 
                 training_args: TrainingArguments,
                 datasets: str,
-                num_training_step: int) -> None:
+                # num_training_step: int
+                ) -> None:
         super().__init__()
         self.save_hyperparameters()
         self.model = OTEERE(encoder_model=model_args.encoder_name_or_path,
                             max_seq_len=training_args.max_seq_len,
                             distance_emb_size=model_args.distance_emb_size,
-                            gcn_outp_size=model_args.gcn_outp_size,
+                            # gcn_outp_size=model_args.gcn_outp_size,
                             gcn_num_layers=model_args.gcn_num_layers,
                             num_labels=training_args.num_labels,
                             loss_weights=training_args.loss_weights,
                             rnn_hidden_size=model_args.rnn_hidden_size,
-                            rnn_num_layer=model_args.rnn_num_layers,
+                            rnn_num_layers=model_args.rnn_num_layers,
                             dropout=model_args.dropout,
                             OT_eps=model_args.OT_eps,
                             OT_max_iter=model_args.OT_max_iter,
                             OT_reduction=model_args.OT_reduction,
                             fn_actv=model_args.fn_actv,
-                            regular_loss_weight=training_args.regular_loss_weight,
-                            )
+                            regular_loss_weight=training_args.regular_loss_weight,)
+        self.model_results = []
     
     def training_step(self, batch, batch_idx):
         logits, loss = self.model(*batch)
@@ -42,6 +43,7 @@ class PlOTEERE(pl.LightningModule):
 
     def validation_step(self, batch, batch_idx) -> Optional[STEP_OUTPUT]:
         logits, loss = self.model(*batch)
+        # print(logits.size())
         pred_labels = torch.max(logits, dim=1).indices.cpu().numpy()
         labels = batch[4].cpu().numpy()
         return pred_labels, labels
@@ -50,9 +52,11 @@ class PlOTEERE(pl.LightningModule):
         labels = []
         predicts = []
         for output in outputs:
-            print(f"Output: {output}")
+            # print(f"Output: {output}")
             labels.extend(output[1])
             predicts.extend(output[0])
+        # print(labels)
+        # print(predicts)
         p, r, f1 = compute_f1(dataset=self.hparams.datasets, 
                             num_label=self.hparams.training_args.num_labels, 
                             gold=labels, 
@@ -70,44 +74,36 @@ class PlOTEERE(pl.LightningModule):
         labels = []
         predicts = []
         for output in outputs:
-            print(f"Output: {output}")
+            # print(f"Output: {output}")
             labels.extend(output[1])
             predicts.extend(output[0])
         p, r, f1 = compute_f1(dataset=self.hparams.datasets, 
                             num_label=self.hparams.training_args.num_labels, 
                             gold=labels, 
                             pred=predicts)
+        self.model_results = (p, r, f1)
         return p, r, f1
     
     def configure_optimizers(self):
         "Prepare optimizer and schedule (linear warmup and decay)"
+        # num_batches = len(self.train_dataloader()) / self.trainer.accumulate_grad_batches
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_pretrain_parameters = [
-            {
-                "params": [p for n, p in self.model.encoder.named_parameters() if not any(nd in n for nd in no_decay)],
-                "weight_decay": self.hparams.training_args.weight_decay,
-                "lr": self.hparams.training_args.encoder_lr
-            },
-            {
-                "params": [p for n, p in self.model.encoder.named_parameters() if  any(nd in n for nd in no_decay)],
-                "weight_decay": 0.0,
-                "lr": self.hparams.training_args.encoder_lr
-            },
             {
                 "params": [p for n, p in self.model.named_parameters() if 'encoder.' not in n],
                 "weight_decay": 0.0,
                 "lr": self.hparams.training_args.lr
             }]
         optimizer = AdamW(optimizer_grouped_pretrain_parameters, eps=self.hparams.training_args.adam_epsilon)
-        num_warmup_steps = self.hparams.training_args.warmup_ratio * self.hparams.num_training_step
-        scheduler = get_linear_schedule_with_warmup(
-            optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=self.hparams.num_training_step
-        )
+        # num_warmup_steps = self.hparams.training_args.warmup_ratio * self.hparams.num_training_step
+        # scheduler = get_linear_schedule_with_warmup(
+        #     optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=self.hparams.num_training_step
+        # )
         return {
             "optimizer": optimizer,
-            "lr_scheduler": {
-                "scheduler": scheduler,
-                'interval': 'step'
-            }
+            # "lr_scheduler": {
+            #     "scheduler": scheduler,
+            #     'interval': 'step'
+            # }
         }
 

@@ -66,7 +66,7 @@ def run(defaults: Dict):
                             data_args=data_args,
                             fold_dir=fold_dir)
         
-        number_step_in_epoch = len(dm.train_dataloader())/training_args.gradient_accumulation_steps
+        # number_step_in_epoch = len(dm.train_dataloader())/training_args.gradient_accumulation_steps
         # construct name for the output directory
         output_dir = os.path.join(
             training_args.output_dir,
@@ -97,7 +97,8 @@ def run(defaults: Dict):
         model = PlOTEERE(model_args=model_args,
                         training_args=training_args,
                         datasets=job,
-                        num_training_step=int(number_step_in_epoch * training_args.num_epoches))
+                        # num_training_step=int(number_step_in_epoch * training_args.num_epoches)
+                        )
         
         trainer = Trainer(
             # logger=tb_logger,
@@ -105,8 +106,7 @@ def run(defaults: Dict):
             max_epochs=training_args.num_epoches, 
             gpus=[args.gpu], 
             accumulate_grad_batches=training_args.gradient_accumulation_steps,
-            gradient_clip_val=training_args.gradient_clip_val, 
-            num_sanity_val_steps=5, 
+            num_sanity_val_steps=0, 
             val_check_interval=1.0, # use float to check every n epochs 
             callbacks = [lr_logger, checkpoint_callback],
         )
@@ -118,8 +118,9 @@ def run(defaults: Dict):
         best_model = PlOTEERE.load_from_checkpoint(checkpoint_callback.best_model_path)
         print("Testing .....")
         dm.setup('test')
-        p, r, f1 = trainer.test(best_model, dm)
-        print(trainer.test(best_model, dm))
+        trainer.test(best_model, dm)
+        # print(best_model.model_results)
+        p, r, f1 = best_model.model_results
         f1s.append(f1)
         ps.append(p)
         rs.append(r)
@@ -150,13 +151,13 @@ def run(defaults: Dict):
 def objective(trial: optuna.Trial):
     defaults = {
         'lr': trial.suggest_categorical('lr', [1e-6, 1e-5, 1e-4, 1e-3]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 1e-6, 1e-5, 1e-4]),
-        'batch_size': trial.suggest_categorical('batch_size', [16, 32]),
+        # 'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 1e-6, 1e-5, 1e-4]),
+        'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [5, 10, 15]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1, 0.01]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [8]),
-        'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
+        # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
         'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3, 4]),
         'rnn_hidden_size': trial.suggest_categorical('rnn_hidden_size', [0]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),

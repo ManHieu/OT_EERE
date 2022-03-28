@@ -16,17 +16,10 @@ nlp = spacy.load("en_core_web_sm")
 
 
 # Padding function
-def padding(sent, pos = False, max_sent_len = 194, pad_tok=0):
-    if pos == False:
-        one_list = [1] * max_sent_len # pad token id
-        mask = [0] * max_sent_len
-        one_list[0:len(sent)] = sent
-        mask[0:len(sent)] = [1] * len(sent)
-        return one_list, mask
-    else:
-        one_list = [pad_tok] * max_sent_len # none id 
-        one_list[0:len(sent)] = sent
-        return one_list
+def padding(sent, max_sent_len = 194, pad_tok=0):
+    one_list = [pad_tok] * max_sent_len # none id 
+    one_list[0:len(sent)] = sent
+    return one_list
 
 
 def format_time(elapsed):
