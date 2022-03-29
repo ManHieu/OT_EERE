@@ -102,7 +102,7 @@ class ModelArguments:
     )
 
     distance_emb_size: int = field(
-        default = 8,
+        default = 0,
         metadata= {"help": "Embedding size of distance to triggers"}
     )
 

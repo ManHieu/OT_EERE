@@ -71,7 +71,7 @@ def run(defaults: Dict):
         output_dir = os.path.join(
             training_args.output_dir,
             f'{args.job}'
-            f'-encoder_lr{training_args.encoder_lr}'
+            # f'-encoder_lr{training_args.encoder_lr}'
             f'-lr{training_args.lr}'
             f'-eps{training_args.num_epoches}')
         try:
@@ -150,13 +150,14 @@ def run(defaults: Dict):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [1e-5, 1e-4, 1e-3]),
+        'lr': trial.suggest_categorical('lr', [5e-4, 1e-3]), # 5e-5, 1e-4,
+        'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
         # 'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 1e-6, 1e-5, 1e-4]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [5, 10, 15]),
-        'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1, 0.01]),
-        'distance_emb_size': trial.suggest_categorical('distance_emb_size', [8]),
+        'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.05, 0.1, 0.2, 0.5]),
+        'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
         'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3, 4]),
         'rnn_hidden_size': trial.suggest_categorical('rnn_hidden_size', [0]),

@@ -40,33 +40,33 @@ class EEREDataModule(pl.LightningDataModule):
         self.batch_size = data_args.batch_size
         self.data_dir = fold_dir
     
-    def prepare_data(self):
-        load_dataset(
-                name=self.data_name,
-                tokenizer=self.tokenizer,
-                encoder=self.encoder,
-                data_dir=self.data_dir,
-                max_input_length=self.max_seq_len,
-                seed=self.hparams.seed,
-                split = 'train')
+    # def prepare_data(self):
+    #     load_dataset(
+    #             name=self.data_name,
+    #             tokenizer=self.tokenizer,
+    #             encoder=self.encoder,
+    #             data_dir=self.data_dir,
+    #             max_input_length=self.max_seq_len,
+    #             seed=self.hparams.seed,
+    #             split = 'train')
         
-        load_dataset(
-                name=self.data_name,
-                tokenizer=self.tokenizer,
-                encoder=self.encoder,
-                data_dir=self.data_dir,
-                max_input_length=self.max_seq_len,
-                seed=self.hparams.seed,
-                split = 'test')
+    #     load_dataset(
+    #             name=self.data_name,
+    #             tokenizer=self.tokenizer,
+    #             encoder=self.encoder,
+    #             data_dir=self.data_dir,
+    #             max_input_length=self.max_seq_len,
+    #             seed=self.hparams.seed,
+    #             split = 'test')
 
-        load_dataset(
-                name=self.data_name,
-                tokenizer=self.tokenizer,
-                encoder=self.encoder,
-                data_dir=self.data_dir,
-                max_input_length=self.max_seq_len,
-                seed=self.hparams.seed,
-                split = 'val')
+    #     load_dataset(
+    #             name=self.data_name,
+    #             tokenizer=self.tokenizer,
+    #             encoder=self.encoder,
+    #             data_dir=self.data_dir,
+    #             max_input_length=self.max_seq_len,
+    #             seed=self.hparams.seed,
+    #             split = 'val')
     
     def setup(self, stage=None):
         # Assign train/val datasets for use in dataloaders
