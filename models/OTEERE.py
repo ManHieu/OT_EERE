@@ -35,7 +35,8 @@ class OTEERE(nn.Module):
 
         # Encoding layers
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
-        self.distance_emb = nn.Embedding(500, distance_emb_size)
+        # self.distance_emb = nn.Embedding(500, distance_emb_size)
+        distance_emb_size = 0
         self.in_size = 768 + distance_emb_size * 2 if 'base' in encoder_model else 1024 + distance_emb_size * 2
         self.rnn = nn.LSTM(self.in_size, int(self.in_size/2), rnn_num_layers, 
                             batch_first=True, dropout=dropout, bidirectional=True)
@@ -142,11 +143,11 @@ class OTEERE(nn.Module):
         # Compute distance embedding
         # print(head_dists.size())
         # print(self.distance_emb)
-        head_dists_emb = self.distance_emb(head_dists)
-        tail_dists_emb = self.distance_emb(tail_dists)
+        # head_dists_emb = self.distance_emb(head_dists)
+        # tail_dists_emb = self.distance_emb(tail_dists)
 
-        emb = [context_emb, head_dists_emb, tail_dists_emb]
-        emb = torch.cat(emb, dim=2)
+        emb = context_emb
+        # emb = torch.cat(emb, dim=2)
 
         # Encoding with RNN
         # print(masks)
