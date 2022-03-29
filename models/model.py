@@ -45,7 +45,7 @@ class PlOTEERE(pl.LightningModule):
         logits, loss = self.model(*batch)
         # print(logits.size())
         pred_labels = torch.max(logits, dim=1).indices.cpu().numpy()
-        labels = batch[4].cpu().numpy()
+        labels = batch[3].cpu().numpy()
         return pred_labels, labels
     
     def validation_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
@@ -67,7 +67,7 @@ class PlOTEERE(pl.LightningModule):
     def test_step(self, batch, batch_idx) -> Optional[STEP_OUTPUT]:
         logits, loss = self.model(*batch)
         pred_labels = torch.max(logits, dim=1).indices.cpu().numpy()
-        labels = batch[4].cpu().numpy()
+        labels = batch[3].cpu().numpy()
         return pred_labels, labels
     
     def test_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:

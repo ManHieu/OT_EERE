@@ -106,7 +106,7 @@ def run(defaults: Dict):
             max_epochs=training_args.num_epoches, 
             gpus=[args.gpu], 
             accumulate_grad_batches=training_args.gradient_accumulation_steps,
-            num_sanity_val_steps=0, 
+            num_sanity_val_steps=5, 
             val_check_interval=1.0, # use float to check every n epochs 
             callbacks = [lr_logger, checkpoint_callback],
         )
