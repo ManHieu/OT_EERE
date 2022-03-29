@@ -35,7 +35,7 @@ class OTEERE(nn.Module):
 
         # Encoding layers
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
-        self.distance_emb = nn.Embedding(400, distance_emb_size)
+        self.distance_emb = nn.Embedding(500, distance_emb_size)
         self.in_size = 768 + distance_emb_size * 2 if 'base' in encoder_model else 1024 + distance_emb_size * 2
         self.rnn = nn.LSTM(self.in_size, int(self.in_size/2), rnn_num_layers, 
                             batch_first=True, dropout=dropout, bidirectional=True)

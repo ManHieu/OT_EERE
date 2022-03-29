@@ -68,10 +68,13 @@ class BaseDataset(Dataset, ABC):
 
     def _warn_max_sequence_length(self, max_sequence_length: int, input_features: List[InputFeatures]):
         max_length_needed = max(len(x.input_ids) for x in input_features)
+        max_distance = max([max([max(score) for score in x.scores]) for x in input_features])
         if max_length_needed > max_sequence_length:
             logging.warning(
-                f'Max sequence length is {max_sequence_length} but the longest is {max_length_needed} long'
-            )
+                f'Max sequence length is {max_sequence_length} but the longest is {max_length_needed} long')
+        logging.warning(
+            f'Max distance is {max_distance} long'
+        )
     
     def get_doc_emb(self, input_ids, input_attention_mask):
         num_paras = math.ceil(len(input_ids) / 500.0)
