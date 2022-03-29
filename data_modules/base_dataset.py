@@ -44,7 +44,7 @@ class BaseDataset(Dataset, ABC):
         
         self.features: List[InputFeatures] = self.compute_features()
         
-        self.size = len(self.examples)
+        self.size = len(self.features)
     
     def __len__(self) -> int:
         return self.size
