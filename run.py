@@ -16,6 +16,7 @@ from arguments import DataTrainingArguments, ModelArguments, TrainingArguments
 from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
 from data_modules.data_modules import load_data_module
 from models.model import PlOTEERE
+import shutil
 
 
 def run(defaults: Dict):
@@ -128,10 +129,13 @@ def run(defaults: Dict):
         print(f"F1: {f1}")
         print(f"P: {p}")
         print(f"R: {r}")
-        with open(output_dir+f'-{f1}', 'w', encoding='utf-8') as f:
-            f.write(f"F1: {f1} \n")
-            f.write(f"P: {p} \n")
-            f.write(f"R: {r} \n")
+
+        shutil.rmtree(f'{output_dir}')
+    
+        # with open(output_dir+f'-{f1}', 'w', encoding='utf-8') as f:
+        #     f.write(f"F1: {f1} \n")
+        #     f.write(f"P: {p} \n")
+        #     f.write(f"R: {r} \n")
 
     f1 = sum(f1s)/len(f1s)
     p = sum(ps)/len(ps)
