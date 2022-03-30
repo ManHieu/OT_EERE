@@ -86,7 +86,7 @@ class PlOTEERE(pl.LightningModule):
     
     def configure_optimizers(self):
         "Prepare optimizer and schedule (linear warmup and decay)"
-        # num_batches = len(self.train_dataloader()) / self.trainer.accumulate_grad_batches
+        num_batches = self.trainer.max_epochs * len(self.train_dataloader()) / self.trainer.accumulate_grad_batches
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_pretrain_parameters = [
             {
@@ -95,15 +95,15 @@ class PlOTEERE(pl.LightningModule):
                 "lr": self.hparams.training_args.lr
             }]
         optimizer = AdamW(optimizer_grouped_pretrain_parameters, eps=self.hparams.training_args.adam_epsilon)
-        # num_warmup_steps = self.hparams.training_args.warmup_ratio * self.hparams.num_training_step
-        # scheduler = get_linear_schedule_with_warmup(
-        #     optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=self.hparams.num_training_step
-        # )
+        num_warmup_steps = 0.1 * num_batches
+        scheduler = get_linear_schedule_with_warmup(
+            optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=num_batches
+        )
         return {
             "optimizer": optimizer,
-            # "lr_scheduler": {
-            #     "scheduler": scheduler,
-            #     'interval': 'step'
-            # }
+            "lr_scheduler": {
+                "scheduler": scheduler,
+                'interval': 'step'
+            }
         }
 

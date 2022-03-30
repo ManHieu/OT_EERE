@@ -128,7 +128,7 @@ def run(defaults: Dict):
         print(f"F1: {f1}")
         print(f"P: {p}")
         print(f"R: {r}")
-        with open(output_dir+f'{f1}', 'w', encoding='utf-8') as f:
+        with open(output_dir+f'-{f1}', 'w', encoding='utf-8') as f:
             f.write(f"F1: {f1} \n")
             f.write(f"P: {p} \n")
             f.write(f"R: {r} \n")
@@ -150,19 +150,19 @@ def run(defaults: Dict):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [5e-4, 1e-3]), # 5e-5, 1e-4,
+        'lr': trial.suggest_categorical('lr', [1e-4, 3e-4, 5e-4, 7e-4]), # 5e-5, 1e-4,
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
         # 'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 1e-6, 1e-5, 1e-4]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [5, 10, 15]),
-        'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.05, 0.1, 0.2, 0.5]),
+        'num_epoches': trial.suggest_categorical('num_epoches', [5, 10,]), #   15, 20
+        'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.05, 0.1, 0.2]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3, 4]),
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [3, 4]),
         'rnn_hidden_size': trial.suggest_categorical('rnn_hidden_size', [0]),
-        'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
-        'fn_actv': trial.suggest_categorical('fn_actv', ['relu']),
+        'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1, 2]),
+        'fn_actv': trial.suggest_categorical('fn_actv', ['relu', 'leaky_relu', 'tanh', 'hardtanh', 'silu']),
     }   
     
     f1 = run(defaults=defaults)

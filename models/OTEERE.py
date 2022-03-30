@@ -37,8 +37,12 @@ class OTEERE(nn.Module):
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
         # self.distance_emb = nn.Embedding(500, distance_emb_size)
         self.in_size = 768 + distance_emb_size * 2 if 'base' in encoder_model else 1024 + distance_emb_size * 2
-        self.rnn = nn.LSTM(self.in_size, int(self.in_size/2), rnn_num_layers, 
-                            batch_first=True, dropout=dropout, bidirectional=True)
+        if rnn_num_layers > 1:
+            self.rnn = nn.LSTM(self.in_size, int(self.in_size/2), rnn_num_layers, 
+                                batch_first=True, dropout=dropout, bidirectional=True)
+        else:
+            self.rnn = nn.LSTM(self.in_size, int(self.in_size/2), rnn_num_layers, 
+                                batch_first=True, bidirectional=True)
 
         # OT
         self.sinkhorn = SinkhornDistance(eps=OT_eps, max_iter=OT_max_iter, reduction=OT_reduction)
@@ -213,7 +217,17 @@ class OTEERE(nn.Module):
         OT_adj = OT_adj * on_dp_masks.transpose(1, 2) * off_dp_masks
         # print(f"OT_adj: {OT_adj[0]}")
         # undirecting
+        # branchs = []
+        # dep_path_list = []
         OT_adj = OT_adj + OT_adj.transpose(1, 2)
+        # for i in range(OT_adj[0].size(1)):
+        #     if dep_paths[0, i] == 1:
+        #         dep_path_list.append(i)
+        #     for j in range(OT_adj[0].size(1)):
+        #         if OT_adj[0, i, j] == 1:
+        #             branchs.append((i, j))
+        # print(f"edges: {branchs}")
+        # print(f"dep_path_list: {dep_path_list}")
         
         dep_path_adjs = adjs * on_dp_masks * on_dp_masks.transpose(1,2)
         pruned_adjs = dep_path_adjs + OT_adj
