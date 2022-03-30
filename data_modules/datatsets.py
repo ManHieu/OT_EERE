@@ -73,7 +73,7 @@ class EEREDataset(BaseDataset):
                                         tokens=datapoint['tokens'],
                                         dep_path=datapoint['dep_path']
                     )
-
+                    print(f"tokens: {datapoint['tokens']}")
                     examples.append(example)
                 
         return examples

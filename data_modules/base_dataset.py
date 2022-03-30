@@ -11,6 +11,7 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModel
 import networkx as nx
 from data_modules.input_example import InputExample, InputFeatures
+from data_modules.utils.scratch_tokenizer import ScratchTokenizer
 from data_modules.utils.tools import mapping_subtok_id, padding
 
 
@@ -23,6 +24,7 @@ class BaseDataset(Dataset, ABC):
     def __init__(
         self,
         tokenizer: str,
+        scratch_tokenizer_file: str,
         encoder_model: str,
         data_dir: str,
         max_input_length: int,
@@ -32,6 +34,9 @@ class BaseDataset(Dataset, ABC):
         super().__init__()
 
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer)
+        self.scratch_tokenizer = ScratchTokenizer()
+        self.scratch_tokenizer.from_file(scratch_tokenizer_file)
+        
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
         self.encoder.eval()
         self.max_input_length = max_input_length
