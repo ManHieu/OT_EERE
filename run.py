@@ -32,7 +32,7 @@ def run(defaults: Dict):
         if defaults[key] == 'None':
             defaults[key] = None
     if job == 'HiEve':
-        defaults['loss_weights'] = [993.0/333, 993.0/349, 933.0/128, 933.0/453]
+        defaults['loss_weights'] = [6833.0/369, 6833.0/348, 6833.0/162, 6833.0/5954]
     
     # parse remaining arguments and divide them into three categories
     second_parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
@@ -155,7 +155,7 @@ def objective(trial: optuna.Trial):
         # 'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 1e-6, 1e-5, 1e-4]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [5, 10,]), #   15, 20
+        'num_epoches': trial.suggest_categorical('num_epoches', [15, 20]), # 
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.05, 0.1, 0.2]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),

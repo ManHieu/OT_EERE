@@ -1,9 +1,11 @@
 from typing import List
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix
 
 
 def compute_f1(dataset: str, num_label, gold: List[int], pred: List[int]):
     CM = confusion_matrix(gold, pred)
+    # print(f"CM: {CM}")
+    # print("Classification report: \n {}".format(classification_report(gold, pred)))          
     if dataset == "HiEve":
         true = sum([CM[i, i] for i in range(2)])
         sum_pred = sum([CM[i, 0:2].sum() for i in range(len(CM))])
