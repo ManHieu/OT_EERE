@@ -35,6 +35,7 @@ class EEREDataModule(pl.LightningDataModule):
         self.save_hyperparameters()
         self.data_name = data_args.datasets
         self.tokenizer = data_args.tokenizer
+        self.scratch_tokenizer= data_args.scratch_tokenizer_name_or_path
         self.encoder = data_args.encoder
         self.max_seq_len = data_args.max_seq_length
         self.batch_size = data_args.batch_size
@@ -42,6 +43,7 @@ class EEREDataModule(pl.LightningDataModule):
     
     # def prepare_data(self):
     #     load_dataset(
+    #             scratch_tokenizer=self.scratch_tokenizer,
     #             name=self.data_name,
     #             tokenizer=self.tokenizer,
     #             encoder=self.encoder,
@@ -51,6 +53,7 @@ class EEREDataModule(pl.LightningDataModule):
     #             split = 'train')
         
     #     load_dataset(
+    #             scratch_tokenizer=self.scratch_tokenizer,
     #             name=self.data_name,
     #             tokenizer=self.tokenizer,
     #             encoder=self.encoder,
@@ -60,6 +63,7 @@ class EEREDataModule(pl.LightningDataModule):
     #             split = 'test')
 
     #     load_dataset(
+    #             scratch_tokenizer=self.scratch_tokenizer,
     #             name=self.data_name,
     #             tokenizer=self.tokenizer,
     #             encoder=self.encoder,
@@ -72,6 +76,7 @@ class EEREDataModule(pl.LightningDataModule):
         # Assign train/val datasets for use in dataloaders
         if stage == "fit":
             self.train_data = load_dataset(
+                scratch_tokenizer=self.scratch_tokenizer,
                 name=self.data_name,
                 tokenizer=self.tokenizer,
                 encoder=self.encoder,
@@ -81,6 +86,7 @@ class EEREDataModule(pl.LightningDataModule):
                 split = 'train')
             
             self.val_data = load_dataset(
+                scratch_tokenizer=self.scratch_tokenizer,
                 name=self.data_name,
                 tokenizer=self.tokenizer,
                 encoder=self.encoder,
@@ -92,6 +98,7 @@ class EEREDataModule(pl.LightningDataModule):
         # Assign test dataset for use in dataloader(s)
         if stage == "test":
             self.test_data = load_dataset(
+                scratch_tokenizer=self.scratch_tokenizer,
                 name=self.data_name,
                 tokenizer=self.tokenizer,
                 encoder=self.encoder,

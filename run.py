@@ -97,6 +97,7 @@ def run(defaults: Dict):
         model = PlOTEERE(model_args=model_args,
                         training_args=training_args,
                         datasets=job,
+                        scratch_tokenizer=data_args.scratch_tokenizer_name_or_path
                         # num_training_step=int(number_step_in_epoch * training_args.num_epoches)
                         )
         

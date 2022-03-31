@@ -15,12 +15,14 @@ class PlOTEERE(pl.LightningModule):
                 model_args: ModelArguments, 
                 training_args: TrainingArguments,
                 datasets: str,
+                scratch_tokenizer: str,
                 # num_training_step: int
                 ) -> None:
         super().__init__()
         self.save_hyperparameters()
         self.model = OTEERE(encoder_model=model_args.encoder_name_or_path,
                             max_seq_len=training_args.max_seq_len,
+                            scratch_tokenizer=scratch_tokenizer,
                             distance_emb_size=model_args.distance_emb_size,
                             # gcn_outp_size=model_args.gcn_outp_size,
                             gcn_num_layers=model_args.gcn_num_layers,
