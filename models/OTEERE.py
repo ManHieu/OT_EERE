@@ -1,12 +1,14 @@
 from collections import OrderedDict
 import math
-from this import d
 from typing import Dict, List, Tuple
+import pandas as pd
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 from transformers import AutoModel
+from data_modules.utils.scratch_tokenizer import ScratchTokenizer
 from models.GCN import GCN
 from models.sinkhorn import SinkhornDistance
 
@@ -17,6 +19,7 @@ class OTEERE(nn.Module):
                 max_seq_len: int,
                 distance_emb_size: int,
                 # gcn_outp_size: int,
+                scratch_tokenizer: str,
                 gcn_num_layers: int,
                 num_labels: int,
                 loss_weights: List[float],
@@ -28,15 +31,21 @@ class OTEERE(nn.Module):
                 OT_reduction: str = 'mean',
                 fn_actv: str = 'relu',
                 regular_loss_weight: float = 0.1,
+                word_emb_file: str = None,
                 ) -> None:
         super().__init__()
 
         self.drop_out = nn.Dropout(dropout)
+        self.scratch_tokenizer = ScratchTokenizer()
+        self.scratch_tokenizer.from_file(scratch_tokenizer)
+        self.vocab = self.scratch_tokenizer.vocab
+        self.word_embedding_file = word_emb_file
 
         # Encoding layers
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
+        self._init_word_embedding()
         # self.distance_emb = nn.Embedding(500, distance_emb_size)
-        self.in_size = 768 + distance_emb_size * 2 if 'base' in encoder_model else 1024 + distance_emb_size * 2
+        self.in_size = 768 + distance_emb_size * 2 + self.word_embedding_size if 'base' in encoder_model else 1024 + distance_emb_size * 2 + self.word_embedding_size
         if rnn_num_layers > 1:
             self.rnn = nn.LSTM(self.in_size, int(self.in_size/2), rnn_num_layers, 
                                 batch_first=True, dropout=dropout, bidirectional=True)
@@ -79,6 +88,23 @@ class OTEERE(nn.Module):
         self.loss_regu = nn.MSELoss()
         self.regular_loss_weight = regular_loss_weight
     
+    def _init_word_embedding(self):
+        vocab_size = len(self.vocab.items())
+        self.word_embedding = nn.Embedding(num_embeddings=vocab_size, embedding_dim=100)
+        self.word_embedding_size = 100
+
+        glove = pd.read_csv('/vinai/hieumdt/glove/glove.6B.100d.txt', sep=" ", quoting=3, header=None, index_col=0)
+        glove_embedding = {key: val.values for key, val in glove.T.items()}
+        # print(f"the: {glove_embedding['the']}")
+
+        embedding_matrix=np.zeros((vocab_size,100))
+        for i, w in self.vocab.items():
+            if w in glove_embedding.keys():
+                embedding_matrix[i] = glove_embedding[w]
+        
+        self.word_embedding.weight = nn.Parameter(torch.tensor(embedding_matrix,dtype=torch.float32))
+        self.word_embedding.weight.requires_grad=True        
+    
     def encode_with_rnn(self, inp: torch.Tensor(), ls: List[int]) -> torch.Tensor(): # batch_size x max_seq_len x hidden_dim*2
         packed = pack_padded_sequence(inp, ls, batch_first=True, enforce_sorted=False)
         rnn_encode, _ = self.rnn(packed)
@@ -97,6 +123,7 @@ class OTEERE(nn.Module):
                 tail_dists: torch.Tensor,
                 mapping: List[Dict[int, List[int]]], 
                 trigger_poss: List[List[List[int]]],
+                input_token_ids: torch.Tensor
                 ):
         
         bs = input_ids.size(0)
@@ -121,6 +148,9 @@ class OTEERE(nn.Module):
 
         # _context_emb = ctx_emb
         # print(f"_contex_emb: {_context_emb.size()}")
+        # Compute word embedding
+        word_emb = self.word_embedding(input_token_ids) # (bs)
+
         context_emb = []
         max_ns = masks.size(1)
         for i, map in enumerate(mapping):
@@ -132,6 +162,10 @@ class OTEERE(nn.Module):
                 tok_presentation = _context_emb[i, token_mapping[0]: token_mapping[-1]+1, :]
                 tok_presentation = torch.max(tok_presentation, dim=0)[0] # (encoder_hidden_size)
                 # print(f"tok_presentation: {tok_presentation.size()}")
+                if tok_id != ns - 1:
+                    tok_presentation = torch.cat([tok_presentation, word_emb[i, tok_id, :]], dim=-1)
+                else:
+                    tok_presentation = torch.cat([tok_presentation, torch.max(word_emb[i, 0:ns, :], dim=0)[0]], dim=-1)
                 emb.append(tok_presentation)
             # padding
             if max_ns > ns:

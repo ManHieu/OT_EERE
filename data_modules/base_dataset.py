@@ -11,6 +11,7 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModel
 import networkx as nx
 from data_modules.input_example import InputExample, InputFeatures
+from data_modules.utils.scratch_tokenizer import ScratchTokenizer
 from data_modules.utils.tools import mapping_subtok_id, padding
 
 
@@ -23,6 +24,7 @@ class BaseDataset(Dataset, ABC):
     def __init__(
         self,
         tokenizer: str,
+        scratch_tokenizer_file: str,
         encoder_model: str,
         data_dir: str,
         max_input_length: int,
@@ -32,6 +34,9 @@ class BaseDataset(Dataset, ABC):
         super().__init__()
 
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer)
+        self.scratch_tokenizer = ScratchTokenizer()
+        self.scratch_tokenizer.from_file(scratch_tokenizer_file)
+        
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
         self.encoder.eval()
         self.max_input_length = max_input_length
@@ -92,10 +97,10 @@ class BaseDataset(Dataset, ABC):
 
     def compute_features(self):
         try:
-            os.mkdir(self.data_path + f'featured/{self.split}')
+            os.mkdir(self.data_path + f'wemb_featured')
         except FileExistsError:
             pass
-        featured_path = self.data_path + f'featured/{self.split}.pkl'
+        featured_path = self.data_path + f'wemb_featured/{self.split}.pkl'
         if os.path.exists(featured_path):
             with open(featured_path, 'rb') as f:
                 features = pickle.load(f)  
@@ -107,6 +112,8 @@ class BaseDataset(Dataset, ABC):
                 input_ids = input_encoded['input_ids']
                 input_attention_mask = input_encoded['attention_mask']
                 # input_presentation = self.get_doc_emb(input_ids, input_attention_mask)
+
+                _, input_token_ids = self.scratch_tokenizer.tokenize(example.tokens, tokenized=True)
 
                 subwords_no_space = []
                 for index, i in enumerate(input_ids):
@@ -147,6 +154,7 @@ class BaseDataset(Dataset, ABC):
                     
                     feature = InputFeatures(
                         input_ids=input_ids,
+                        input_token_ids=input_token_ids,
                         input_attention_mask=input_attention_mask,
                         mapping=mapping,
                         label=label,
@@ -181,9 +189,11 @@ class BaseDataset(Dataset, ABC):
         masks = torch.zeros((len(batch), max_ns), dtype=torch.float)
         head_dists = []
         tail_dists = []
+        input_token_ids = []
         for i, ex in enumerate(batch):
             input_ids.append(padding(ex.input_ids, max_sent_len=max_seq_len, pad_tok=self.tokenizer.pad_token_id))
             input_attention_mask.append(padding(ex.input_attention_mask, max_sent_len=max_seq_len, pad_tok=0))
+            input_token_ids.append(padding(ex.input_token_ids, max_sent_len=max_ns-1, pad_tok=0))
             # input_ctx_emb[i, 0:ex.input_presentation.size(0), :] = ex.input_presentation
             dep_path.append(padding(ex.dep_path, max_sent_len=max_ns, pad_tok=0))
             masks[i, 0:ex.adjacent_maxtrix.size(0)] = masks[i, 0:ex.adjacent_maxtrix.size(0)] + 1
@@ -193,6 +203,7 @@ class BaseDataset(Dataset, ABC):
             tail_dists.append(padding([sc[1] for sc in ex.scores], max_sent_len=max_ns, pad_tok=max_ns))
         
         input_ids = torch.tensor(input_ids)
+        input_token_ids = torch.tensor(input_token_ids)
         input_attention_mask = torch.tensor(input_attention_mask)
         dep_path = torch.tensor(dep_path)
         labels = torch.tensor(labels)
@@ -201,7 +212,7 @@ class BaseDataset(Dataset, ABC):
 
         return (input_ids, input_attention_mask, masks, labels,
                 dep_path, adj, head_dists, tail_dists, 
-                [ex.mapping for ex in batch], [ex.triggers_poss for ex in batch])
+                [ex.mapping for ex in batch], [ex.triggers_poss for ex in batch], input_token_ids)
 
 
 

@@ -80,6 +80,7 @@ class InputFeatures:
     Property names are the same names as the corresponding inputs to model.
     """
     input_ids: List[int]
+    input_token_ids: List[int]
     input_attention_mask: List[int]
     mapping: Dict[int, List[int]]
     label: int
