@@ -6,7 +6,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
+from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_sequence
 from transformers import AutoModel
 from data_modules.utils.scratch_tokenizer import ScratchTokenizer
 from models.GCN import GCN
@@ -36,14 +36,19 @@ class OTEERE(nn.Module):
         super().__init__()
 
         self.drop_out = nn.Dropout(dropout)
-        self.scratch_tokenizer = ScratchTokenizer()
-        self.scratch_tokenizer.from_file(scratch_tokenizer)
-        self.vocab = self.scratch_tokenizer.vocab
-        self.word_embedding_file = word_emb_file
 
         # Encoding layers
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
-        self._init_word_embedding()
+        if scratch_tokenizer != None:
+            self.scratch_tokenizer = ScratchTokenizer()
+            self.scratch_tokenizer.from_file(scratch_tokenizer)
+            self.vocab = self.scratch_tokenizer.vocab
+            self.word_embedding_file = word_emb_file
+            self._init_word_embedding()
+            self.use_wemb = True
+        else:
+            self.word_embedding_size = 0
+            self.use_wemb = False
         # self.distance_emb = nn.Embedding(500, distance_emb_size)
         self.in_size = 768 + distance_emb_size * 2 + self.word_embedding_size if 'base' in encoder_model else 1024 + distance_emb_size * 2 + self.word_embedding_size
         if rnn_num_layers > 1:
@@ -91,13 +96,13 @@ class OTEERE(nn.Module):
     def _init_word_embedding(self):
         vocab_size = len(self.vocab.items())
         self.word_embedding = nn.Embedding(num_embeddings=vocab_size, embedding_dim=100)
-        self.word_embedding_size = 100
+        self.word_embedding_size = 50
 
-        glove = pd.read_csv('/vinai/hieumdt/glove/glove.6B.100d.txt', sep=" ", quoting=3, header=None, index_col=0)
+        glove = pd.read_csv('/vinai/hieumdt/glove/glove.6B.50d.txt', sep=" ", quoting=3, header=None, index_col=0)
         glove_embedding = {key: val.values for key, val in glove.T.items()}
         # print(f"the: {glove_embedding['the']}")
 
-        embedding_matrix=np.zeros((vocab_size,100))
+        embedding_matrix=np.zeros((vocab_size,self.word_embedding_size))
         for i, w in self.vocab.items():
             if w in glove_embedding.keys():
                 embedding_matrix[i] = glove_embedding[w]
@@ -123,33 +128,34 @@ class OTEERE(nn.Module):
                 tail_dists: torch.Tensor,
                 mapping: List[Dict[int, List[int]]], 
                 trigger_poss: List[List[List[int]]],
-                input_token_ids: torch.Tensor
+                input_token_ids: torch.Tensor,
+                k_walk_nodes: torch.Tensor,
                 ):
         
         bs = input_ids.size(0)
         # Embedding
         # Compute transformer embedding
         _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state
-        with torch.no_grad():
-            _context_emb = []
-            num_para = math.ceil(input_ids.size(1) / 512.0)
-            # print(f"input_ids: {input_ids.size()}")
-            for i in range(num_para):
-                start = i * 512
-                end = (i + 1) * 512
-                para_ids = input_ids[:, start: end]
-                para_input_attn_mask = input_attention_mask[:, start:end]
-                # print(f"para_ids: {para_ids.size()}")
-                # print(f"para_attn_mask: {para_input_attn_mask.size()}")
-                para_ctx = self.encoder(para_ids, para_input_attn_mask).last_hidden_state
-                # print(f"para_ctx: {para_ctx.size()}")
-                _context_emb.append(para_ctx)
-            _context_emb = torch.cat(_context_emb, dim=1) # (bs, max_seq_len, encoder_hidden_size)
+        _context_emb = []
+        num_para = math.ceil(input_ids.size(1) / 512.0)
+        # print(f"input_ids: {input_ids.size()}")
+        for i in range(num_para):
+            start = i * 512
+            end = (i + 1) * 512
+            para_ids = input_ids[:, start: end]
+            para_input_attn_mask = input_attention_mask[:, start:end]
+            # print(f"para_ids: {para_ids.size()}")
+            # print(f"para_attn_mask: {para_input_attn_mask.size()}")
+            para_ctx = self.encoder(para_ids, para_input_attn_mask).last_hidden_state
+            # print(f"para_ctx: {para_ctx.size()}")
+            _context_emb.append(para_ctx)
+        _context_emb = torch.cat(_context_emb, dim=1) # (bs, max_seq_len, encoder_hidden_size)
 
         # _context_emb = ctx_emb
         # print(f"_contex_emb: {_context_emb.size()}")
         # Compute word embedding
-        word_emb = self.word_embedding(input_token_ids) # (bs)
+        if self.use_wemb:
+            word_emb = self.word_embedding(input_token_ids) # (bs)
 
         context_emb = []
         max_ns = masks.size(1)
@@ -162,10 +168,11 @@ class OTEERE(nn.Module):
                 tok_presentation = _context_emb[i, token_mapping[0]: token_mapping[-1]+1, :]
                 tok_presentation = torch.max(tok_presentation, dim=0)[0] # (encoder_hidden_size)
                 # print(f"tok_presentation: {tok_presentation.size()}")
-                if tok_id != ns - 1:
-                    tok_presentation = torch.cat([tok_presentation, word_emb[i, tok_id, :]], dim=-1)
-                else:
-                    tok_presentation = torch.cat([tok_presentation, torch.max(word_emb[i, 0:ns, :], dim=0)[0]], dim=-1)
+                if self.use_wemb:
+                    if tok_id != ns - 1:
+                        tok_presentation = torch.cat([tok_presentation, word_emb[i, tok_id, :]], dim=-1)
+                    else:
+                        tok_presentation = torch.cat([tok_presentation, torch.max(word_emb[i, 0:ns, :], dim=0)[0]], dim=-1)
                 emb.append(tok_presentation)
             # padding
             if max_ns > ns:
@@ -197,26 +204,41 @@ class OTEERE(nn.Module):
         off_dps = [] # off denpendency path token presentation
         on_dp_maginals = [] # on dependency path maginal distribution
         off_dp_maginals = [] # off dependency path maginal distribution
+        n_on_dp = 0
+        n_off_dp = 0
+        batch_on_dp_ids = []
+        batch_off_dp_ids = []
         for i in range(bs):
             dep_path = dep_paths[i]
-        
-            on_dp_score = - torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * dep_path
+            on_dp_ids = dep_path.nonzero().squeeze(1)
+            batch_on_dp_ids.append(on_dp_ids)
+            if n_on_dp < on_dp_ids.size(0):
+                n_on_dp = on_dp_ids.size(0)
+            on_dp_score = - torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * dep_path # ???
             # print(f"on_dp_score: {on_dp_score.size()}")
-            on_dp_score[dep_path==0] = -10000.0
+            on_dp_score = on_dp_score[on_dp_ids]
             on_dp_maginal = F.softmax(on_dp_score.float(), dim=0)
-            off_dp_score = - torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * (1 - dep_path) * masks[i]
-            off_dp_score[((1 - dep_path) * masks[i])==0] = -10000.0
-            off_dp_maginal = F.softmax(off_dp_score.float(), dim=0) # (max_ns)
+
+            off_dp_masks = (1 - dep_path) * masks[i] * k_walk_nodes[i]
+            off_dp_ids = off_dp_masks.nonzero().squeeze(1)
+            batch_off_dp_ids.append(off_dp_ids)
+            if n_off_dp < off_dp_ids.size(0):
+                n_off_dp = off_dp_ids.size(0)
+            off_dp_score = - torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * off_dp_masks
+            off_dp_score = off_dp_score[off_dp_ids]
+            off_dp_maginal = F.softmax(off_dp_score.float(), dim=0) # (ns-n_on_dp)
             # null_prob = torch.mean(off_dp_maginal, dim=0).unsqueeze(0)
-            on_dp_maginal = torch.cat([torch.Tensor([0.5]).cuda(), 0.5 * on_dp_maginal], dim=0) # (max_ns + 1)
+            on_dp_maginal = torch.cat([torch.Tensor([0.5]).cuda(), 0.5 * on_dp_maginal], dim=0) # (n_on_dp + 1)
             # print(torch.sum(on_dp_maginal))
             # print(f"on_dp_maginal: {on_dp_maginal.size()}")
             # print(f"off_dp_maginal: {off_dp_maginal.size()}")
             
             on_dp = gcn_input[i] * dep_path.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2)))
-            off_dp = gcn_input[i] * ((1 - dep_path) * masks[i]).unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2))) # (max_ns, gcn_input_size)
+            on_dp = on_dp[on_dp_ids]
+            off_dp = gcn_input[i] * off_dp_masks.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2))) # (ns-n_on_dp, gcn_input_size)
+            off_dp = off_dp[off_dp_ids]
             null_presentation = torch.mean(off_dp, dim=0).unsqueeze(0)
-            on_dp = torch.cat([null_presentation, on_dp], dim=0) # (max_ns+1, gcn_input_size)
+            on_dp = torch.cat([null_presentation, on_dp], dim=0) # (n_on_dp+1, gcn_input_size)
             # print(f'on_dp: {on_dp.size()}')
             # print(f"off_dp: {off_dp.size()}")
             
@@ -225,47 +247,40 @@ class OTEERE(nn.Module):
             on_dp_maginals.append(on_dp_maginal)
             off_dp_maginals.append(off_dp_maginal)
         
-        on_dps = torch.stack(on_dps, dim=0)
-        # print(f"on_dp: {torch.sum(on_dps)}")
-        off_dps = torch.stack(off_dps, dim=0)
-        # print(f"off_dp: {torch.sum(off_dps)}")
-        on_dp_maginals = torch.stack(on_dp_maginals, dim=0)
-        off_dp_maginals = torch.stack(off_dp_maginals, dim=0)
-        # print(f"off_maginal: {torch.sum(off_dp_maginals)}")
-        # print(f"on_maginal: {torch.sum(on_dp_maginals)}")
+        on_dps = pad_sequence(on_dps, batch_first=True)
+        # print(f"on_dp: {on_dps.size()}")
+        off_dps = pad_sequence(off_dps, batch_first=True)
+        # print(f"off_dp: {off_dps.size()}")
+        on_dp_maginals = pad_sequence(on_dp_maginals, batch_first=True)
+        off_dp_maginals = pad_sequence(off_dp_maginals, batch_first=True)
+        # print(f"off_maginal: {torch.sum(off_dp_maginals)} - {off_dp_maginals.size()}")
+        # print(f"on_maginal: {torch.sum(on_dp_maginals)} - {on_dp_maginals.size()}")
 
         cost, pi, C = self.sinkhorn(off_dps, on_dps, off_dp_maginals, on_dp_maginals, cuda=True)
         # print(f"pi: {pi.size()}")
         pi = pi.cuda()
-        max_ns = pi.size(1)
+        # print(f"pi: {pi.size()} - {torch.max(pi, dim=2)[0].size()}")
         # print(f"pi: {pi[0]}")
-        OT_adj = (pi[:, :, 1:])* (1.0 / torch.stack([torch.max(pi, dim=2)[0]] * max_ns, dim=-1)) # + 1 to avoid devide 0
-        # print(f"OT_adj: {OT_adj[0]}")
-        OT_adj[OT_adj < 1] = 0
-        # print(f"OT_adj: {OT_adj[0]}")
+        pi = pi / torch.stack([torch.max(pi, dim=2)[0]] * pi.size(2), dim=2)
+        pi = F.softmax(pi, dim=2)
+        # print(f"pi: {pi[0]}")
+        _OT_adj = pi[:, :, 1:].clone()
+        _OT_adj[_OT_adj < 0.1] = 0
+        OT_adj = torch.zeros(adjs.size(), requires_grad=True).cuda()
+        for i  in range(bs):
+            on_dp_ids = batch_on_dp_ids[i]
+            off_dp_ids = batch_off_dp_ids[i]
+            for j in range(on_dp_ids.size(0)):
+                OT_adj[i, off_dp_ids, on_dp_ids[j]] = OT_adj[i, off_dp_ids, on_dp_ids[j]] + _OT_adj[i, :off_dp_ids.size(0), j]
 
+        max_ns = adjs.size(1)
         on_dp_masks = torch.stack([dep_paths] * max_ns, dim=2)
         off_dp_masks = torch.stack([(1- dep_paths) * masks] * max_ns, dim=2)
-        # print(f"on_dp_masks: {on_dp_masks[0]}")
-        # print(f"off_dp_masks: {off_dp_masks[0]}")
-        OT_adj = OT_adj * on_dp_masks.transpose(1, 2) * off_dp_masks
-        # print(f"OT_adj: {OT_adj[0]}")
-        # undirecting
-        # branchs = []
-        # dep_path_list = []
-        OT_adj = OT_adj + OT_adj.transpose(1, 2)
-        # for i in range(OT_adj[0].size(1)):
-        #     if dep_paths[0, i] == 1:
-        #         dep_path_list.append(i)
-        #     for j in range(OT_adj[0].size(1)):
-        #         if OT_adj[0, i, j] == 1:
-        #             branchs.append((i, j))
-        # print(f"edges: {branchs}")
-        # print(f"dep_path_list: {dep_path_list}")
         
         dep_path_adjs = adjs * on_dp_masks * on_dp_masks.transpose(1,2)
         pruned_adjs = dep_path_adjs + OT_adj
-        pruned_adjs[pruned_adjs > 0] = 1
+        pruned_adjs = pruned_adjs + pruned_adjs.transpose(1, 2)
+        pruned_adjs[pruned_adjs > 1] = 1
 
         # GCN
         gcn_outp = self.gcn(gcn_input, pruned_adjs, ls) # (bs x ns x gcn_hidden_size)

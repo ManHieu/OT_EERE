@@ -71,6 +71,7 @@ class InputExample:
     heads: List[int] = None
     tokens: List[str] = None
     dep_path: List[int] = None
+    k_walk_nodes: List[int] = None
 
 
 @dataclass
@@ -88,6 +89,7 @@ class InputFeatures:
     dep_path: List[int]
     adjacent_maxtrix: Tensor
     scores: List[Tuple[int, int]]                   # distance to triggers.
+    k_walk_nodes: List[int] = None
     # input_presentation: Tensor
 
     

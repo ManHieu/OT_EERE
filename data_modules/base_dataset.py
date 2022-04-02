@@ -97,10 +97,10 @@ class BaseDataset(Dataset, ABC):
 
     def compute_features(self):
         try:
-            os.mkdir(self.data_path + f'wemb_featured')
+            os.mkdir(self.data_path + f'wemb_extended_context_featured')
         except FileExistsError:
             pass
-        featured_path = self.data_path + f'wemb_featured/{self.split}.pkl'
+        featured_path = self.data_path + f'wemb_extended_context_featured/{self.split}.pkl'
         if os.path.exists(featured_path):
             with open(featured_path, 'rb') as f:
                 features = pickle.load(f)  
@@ -162,6 +162,7 @@ class BaseDataset(Dataset, ABC):
                         dep_path=example.dep_path,
                         adjacent_maxtrix=adj,
                         scores=scores,
+                        k_walk_nodes=example.k_walk_nodes
                         # input_presentation=input_presentation
                     )
                     features.append(feature)
@@ -184,6 +185,7 @@ class BaseDataset(Dataset, ABC):
         input_attention_mask = []
         # input_ctx_emb = torch.zeros(len(batch), max_seq_len, hidden_size)
         dep_path = []
+        k_walk_nodes = []
         labels = []
         adj = torch.zeros((len(batch), max_ns, max_ns), dtype=torch.float)
         masks = torch.zeros((len(batch), max_ns), dtype=torch.float)
@@ -196,6 +198,7 @@ class BaseDataset(Dataset, ABC):
             input_token_ids.append(padding(ex.input_token_ids, max_sent_len=max_ns-1, pad_tok=0))
             # input_ctx_emb[i, 0:ex.input_presentation.size(0), :] = ex.input_presentation
             dep_path.append(padding(ex.dep_path, max_sent_len=max_ns, pad_tok=0))
+            k_walk_nodes.append(padding(ex.k_walk_nodes, max_sent_len=max_ns, pad_tok=0))
             masks[i, 0:ex.adjacent_maxtrix.size(0)] = masks[i, 0:ex.adjacent_maxtrix.size(0)] + 1
             adj[i, 0:ex.adjacent_maxtrix.size(0), 0:ex.adjacent_maxtrix.size(1)] = ex.adjacent_maxtrix
             labels.append(ex.label)
@@ -206,13 +209,15 @@ class BaseDataset(Dataset, ABC):
         input_token_ids = torch.tensor(input_token_ids)
         input_attention_mask = torch.tensor(input_attention_mask)
         dep_path = torch.tensor(dep_path)
+        k_walk_nodes = torch.tensor(k_walk_nodes)
         labels = torch.tensor(labels)
         head_dists = torch.tensor(head_dists, dtype=torch.int)
         tail_dists = torch.tensor(tail_dists, dtype=torch.int)
 
         return (input_ids, input_attention_mask, masks, labels,
                 dep_path, adj, head_dists, tail_dists, 
-                [ex.mapping for ex in batch], [ex.triggers_poss for ex in batch], input_token_ids)
+                [ex.mapping for ex in batch], [ex.triggers_poss for ex in batch], 
+                input_token_ids, k_walk_nodes)
 
 
 

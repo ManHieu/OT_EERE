@@ -82,7 +82,8 @@ class PlOTEERE(pl.LightningModule):
         p, r, f1 = compute_f1(dataset=self.hparams.datasets, 
                             num_label=self.hparams.training_args.num_labels, 
                             gold=labels, 
-                            pred=predicts)
+                            pred=predicts,
+                            report=True)
         self.model_results = (p, r, f1)
         return p, r, f1
     
@@ -91,6 +92,16 @@ class PlOTEERE(pl.LightningModule):
         num_batches = self.trainer.max_epochs * len(self.train_dataloader()) / self.trainer.accumulate_grad_batches
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_pretrain_parameters = [
+            {
+                "params": [p for n, p in self.model.encoder.named_parameters() if not any(nd in n for nd in no_decay)],
+                "weight_decay": 0.,
+                "lr": self.hparams.training_args.encoder_lr
+            },
+            {
+                "params": [p for n, p in self.model.encoder.named_parameters() if  any(nd in n for nd in no_decay)],
+                "weight_decay": 0.0,
+                "lr": self.hparams.training_args.encoder_lr
+            },
             {
                 "params": [p for n, p in self.model.named_parameters() if 'encoder.' not in n],
                 "weight_decay": 0.0,

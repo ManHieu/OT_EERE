@@ -24,7 +24,7 @@ class DataTrainingArguments:
         metadata= {"help": "The tokenizer used to prepare data"}
     )
 
-    scratch_tokenizer_name_or_path: str = field(
+    scratch_tokenizer_name_or_path: Optional[str] = field(
         default = None,
         metadata= {"help": "The tokenizer used to prepare data"}
     )

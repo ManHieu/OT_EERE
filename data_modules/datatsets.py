@@ -73,7 +73,8 @@ class EEREDataset(BaseDataset):
                                         relations=relations,
                                         heads=datapoint['heads'],
                                         tokens=datapoint['tokens'],
-                                        dep_path=datapoint['dep_path']
+                                        dep_path=datapoint['dep_path'],
+                                        k_walk_nodes=datapoint['k_walk_nodes']
                     )
                     examples.append(example)
                 

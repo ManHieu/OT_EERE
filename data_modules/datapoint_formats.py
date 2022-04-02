@@ -113,16 +113,24 @@ def hieve_datapoint(my_dict, doc_info=True):
             for path in dep_paths:
                 _on_dp += path
             _on_dp = set(_on_dp)
+            k_walk_nodes = []
+            for node in _on_dp:
+                k_walk_nodes.extend(list(nx.dfs_tree(dep_tree, node, depth_limit=2).nodes()))
+            k_walk_nodes = set(k_walk_nodes)
+
             on_dp = [0] * (len(tokens) + 1) # ROOT in the last token
+            k_walk_nodes_mask  = [0] * (len(tokens) + 1) # ROOT in the last token
             for idx in _on_dp:
                 on_dp[idx] = 1
-
+            for idx in k_walk_nodes:
+                k_walk_nodes_mask[idx] = 1
 
             data_point = {
                     'tokens': tokens,
                     'triggers': triggers,
                     'heads': heads,
                     'dep_path': on_dp,
+                    'k_walk_nodes': k_walk_nodes_mask,
                     'labels': [(0, 1, rel)]
                 }
             data_points.append(data_point)
