@@ -29,13 +29,16 @@ class PlOTEERE(pl.LightningModule):
                             num_labels=training_args.num_labels,
                             loss_weights=training_args.loss_weights,
                             rnn_hidden_size=model_args.rnn_hidden_size,
+                            gcn_rnn_hidden_size=model_args.gcn_rnn_hidden_size,
                             rnn_num_layers=model_args.rnn_num_layers,
                             dropout=model_args.dropout,
                             OT_eps=model_args.OT_eps,
                             OT_max_iter=model_args.OT_max_iter,
                             OT_reduction=model_args.OT_reduction,
                             fn_actv=model_args.fn_actv,
-                            regular_loss_weight=training_args.regular_loss_weight,)
+                            regular_loss_weight=training_args.regular_loss_weight,
+                            OT_loss_weight=training_args.OT_loss_weight,
+                            use_word_emb=model_args.use_pretrained_wemb)
         self.model_results = []
     
     def training_step(self, batch, batch_idx):

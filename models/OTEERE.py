@@ -19,11 +19,13 @@ class OTEERE(nn.Module):
                 max_seq_len: int,
                 distance_emb_size: int,
                 # gcn_outp_size: int,
+                use_word_emb: bool,
                 scratch_tokenizer: str,
                 gcn_num_layers: int,
                 num_labels: int,
                 loss_weights: List[float],
                 rnn_hidden_size: int,
+                gcn_rnn_hidden_size: int,
                 rnn_num_layers: int = 1,
                 dropout: float = 0.5,
                 OT_eps: float = 0.1,
@@ -31,6 +33,7 @@ class OTEERE(nn.Module):
                 OT_reduction: str = 'mean',
                 fn_actv: str = 'relu',
                 regular_loss_weight: float = 0.1,
+                OT_loss_weight: float = 0.1,
                 word_emb_file: str = None,
                 ) -> None:
         super().__init__()
@@ -39,7 +42,8 @@ class OTEERE(nn.Module):
 
         # Encoding layers
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
-        if scratch_tokenizer != None:
+        if use_word_emb:
+            print("Loading vocab and pretrained word embedding....")
             self.scratch_tokenizer = ScratchTokenizer()
             self.scratch_tokenizer.from_file(scratch_tokenizer)
             self.vocab = self.scratch_tokenizer.vocab
@@ -51,20 +55,21 @@ class OTEERE(nn.Module):
             self.use_wemb = False
         # self.distance_emb = nn.Embedding(500, distance_emb_size)
         self.in_size = 768 + distance_emb_size * 2 + self.word_embedding_size if 'base' in encoder_model else 1024 + distance_emb_size * 2 + self.word_embedding_size
+        self.rnn_hidden_size = rnn_hidden_size
         if rnn_num_layers > 1:
-            self.rnn = nn.LSTM(self.in_size, int(self.in_size/2), rnn_num_layers, 
+            self.rnn = nn.LSTM(self.in_size, self.rnn_hidden_size, rnn_num_layers, 
                                 batch_first=True, dropout=dropout, bidirectional=True)
         else:
-            self.rnn = nn.LSTM(self.in_size, int(self.in_size/2), rnn_num_layers, 
+            self.rnn = nn.LSTM(self.in_size, self.rnn_hidden_size, rnn_num_layers, 
                                 batch_first=True, bidirectional=True)
 
         # OT
         self.sinkhorn = SinkhornDistance(eps=OT_eps, max_iter=OT_max_iter, reduction=OT_reduction)
 
         # GCN layers
-        gcn_input_size = 2 * int(self.in_size/2)
+        gcn_input_size = 2 * self.rnn_hidden_size
         gcn_outp_size = gcn_input_size
-        self.gcn = GCN(gcn_input_size, gcn_input_size, gcn_num_layers, rnn_hidden_size, rnn_num_layers, dropout)
+        self.gcn = GCN(gcn_input_size, gcn_input_size, gcn_num_layers, gcn_rnn_hidden_size, rnn_num_layers, dropout)
 
         # Classifier layers
         if fn_actv == 'relu':
@@ -79,8 +84,8 @@ class OTEERE(nn.Module):
             self.fn_actv = nn.SiLU()
         elif fn_actv == 'hardtanh':
             self.fn_actv = nn.Hardtanh()
-        fc1 = nn.Linear(gcn_outp_size*3, int(gcn_outp_size*1.5))
-        fc2 = nn.Linear(int(gcn_outp_size*1.5), num_labels)
+        fc1 = nn.Linear(gcn_outp_size*6, int(gcn_outp_size*3))
+        fc2 = nn.Linear(int(gcn_outp_size*3), num_labels)
         self.classifier = nn.Sequential(OrderedDict([('dropout1',self.drop_out), 
                                                     ('fc1', fc1), 
                                                     ('dropout2', self.drop_out), 
@@ -92,6 +97,7 @@ class OTEERE(nn.Module):
         self.loss_pred = nn.CrossEntropyLoss(weight=self.weights)
         self.loss_regu = nn.MSELoss()
         self.regular_loss_weight = regular_loss_weight
+        self.OT_loss_weight = OT_loss_weight
     
     def _init_word_embedding(self):
         vocab_size = len(self.vocab.items())
@@ -214,7 +220,7 @@ class OTEERE(nn.Module):
             batch_on_dp_ids.append(on_dp_ids)
             if n_on_dp < on_dp_ids.size(0):
                 n_on_dp = on_dp_ids.size(0)
-            on_dp_score = - torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * dep_path # ???
+            on_dp_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * dep_path #
             # print(f"on_dp_score: {on_dp_score.size()}")
             on_dp_score = on_dp_score[on_dp_ids]
             on_dp_maginal = F.softmax(on_dp_score.float(), dim=0)
@@ -224,7 +230,7 @@ class OTEERE(nn.Module):
             batch_off_dp_ids.append(off_dp_ids)
             if n_off_dp < off_dp_ids.size(0):
                 n_off_dp = off_dp_ids.size(0)
-            off_dp_score = - torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * off_dp_masks
+            off_dp_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * off_dp_masks
             off_dp_score = off_dp_score[off_dp_ids]
             off_dp_maginal = F.softmax(off_dp_score.float(), dim=0) # (ns-n_on_dp)
             # null_prob = torch.mean(off_dp_maginal, dim=0).unsqueeze(0)
@@ -261,17 +267,27 @@ class OTEERE(nn.Module):
         pi = pi.cuda()
         # print(f"pi: {pi.size()} - {torch.max(pi, dim=2)[0].size()}")
         # print(f"pi: {pi[0]}")
-        pi = pi / torch.stack([torch.max(pi, dim=2)[0]] * pi.size(2), dim=2)
-        pi = F.softmax(pi, dim=2)
+        pi = F.softmax(pi * pi.size(1) * pi.size(2), dim=2)
         # print(f"pi: {pi[0]}")
         _OT_adj = pi[:, :, 1:].clone()
-        _OT_adj[_OT_adj < 0.1] = 0
+        _OT_adj[_OT_adj < 1/pi.size(2)] = 0
         OT_adj = torch.zeros(adjs.size(), requires_grad=True).cuda()
         for i  in range(bs):
             on_dp_ids = batch_on_dp_ids[i]
             off_dp_ids = batch_off_dp_ids[i]
             for j in range(on_dp_ids.size(0)):
-                OT_adj[i, off_dp_ids, on_dp_ids[j]] = OT_adj[i, off_dp_ids, on_dp_ids[j]] + _OT_adj[i, :off_dp_ids.size(0), j]
+                OT_adj[i, off_dp_ids, on_dp_ids[j]] = _OT_adj[i, :off_dp_ids.size(0), j]
+
+        # branchs = []
+        # dep_path_list = []
+        # for i in range(OT_adj[0].size(1)):
+        #     if dep_paths[0, i] == 1:
+        #         dep_path_list.append(i)
+        #     for j in range(OT_adj[0].size(1)):
+        #         if OT_adj[0, i, j] > 0:
+        #             branchs.append((i, j, OT_adj[0, i, j]))
+        # print(f"edges: {branchs}")
+        # print(f"dep_path_list: {dep_path_list}")
 
         max_ns = adjs.size(1)
         on_dp_masks = torch.stack([dep_paths] * max_ns, dim=2)
@@ -284,14 +300,30 @@ class OTEERE(nn.Module):
 
         # GCN
         gcn_outp = self.gcn(gcn_input, pruned_adjs, ls) # (bs x ns x gcn_hidden_size)
+
+        # Regularizarion
+        full_doc_gcn_oupt = self.gcn(gcn_input, adjs, ls)
+        full_doc_presentations = []
+        full_doc_heads = []
+        full_doc_tails = []
+        for i, poss in enumerate(trigger_poss):
+            head = torch.max(full_doc_gcn_oupt[i, poss[0][0]: poss[0][-1] + 1, :], dim=0)[0]
+            tail = torch.max(full_doc_gcn_oupt[i, poss[1][0]: poss[1][-1] + 1, :], dim=0)[0]
+            full_doc_presentation = torch.max(full_doc_gcn_oupt[i, :, :], dim=0)[0]
+            full_doc_heads.append(head)
+            full_doc_tails.append(tail)
+            full_doc_presentations.append(full_doc_presentation)
+        full_doc_heads = torch.stack(full_doc_heads, dim=0)
+        full_doc_tails = torch.stack(full_doc_tails, dim=0)
+        full_doc_presentations = torch.stack(full_doc_presentations, dim=0)
         
         # Classification
         heads = []
         tails = []
         doc_presentations = []
         for i, poss in enumerate(trigger_poss):
-            head = torch.max(gcn_outp[i, poss[0][0]: poss[0][-1] + 1, :] + gcn_input[i, poss[0][0]: poss[0][-1] + 1, :], dim=0)[0] # residual connection
-            tail = torch.max(gcn_outp[i, poss[1][0]: poss[1][-1] + 1, :] + gcn_input[i, poss[1][0]: poss[1][-1] + 1, :], dim=0)[0]
+            head = torch.max(gcn_outp[i, poss[0][0]: poss[0][-1] + 1, :], dim=0)[0]
+            tail = torch.max(gcn_outp[i, poss[1][0]: poss[1][-1] + 1, :], dim=0)[0]
             doc_presentation = torch.max(gcn_outp[i, :, :] + gcn_input[i, :, :], dim=0)[0]
             heads.append(head)
             tails.append(tail)
@@ -299,20 +331,14 @@ class OTEERE(nn.Module):
         heads = torch.stack(heads, dim= 0)
         tails = torch.stack(tails, dim=0)
         doc_presentations = torch.stack(doc_presentations, dim=0)
-        presentations = torch.cat([heads, tails, doc_presentations], dim=1)
+        presentations = torch.cat([heads, full_doc_heads, tails, full_doc_tails, doc_presentations, full_doc_presentations], dim=1)
         # print(f"presentations: {presentations.size()}")
         logits = self.classifier(presentations)
 
-        # Regularizarion
-        full_doc_gcn_oupt = self.gcn(gcn_input, adjs, ls)
-        full_doc_presentations = []
-        for i, poss in enumerate(trigger_poss):
-            full_doc_presentation = torch.max(full_doc_gcn_oupt[i, :, :] + gcn_input[i, :, :], dim=0)[0]
-            full_doc_presentations.append(full_doc_presentation)
-        full_doc_presentations = torch.stack(full_doc_presentations, dim=0)
-
         # Compute loss
-        loss = self.loss_pred(logits, labels) + self.regular_loss_weight * self.loss_regu(doc_presentations, full_doc_presentations)
+        loss = self.loss_pred(logits, labels)\
+            + self.regular_loss_weight * self.loss_regu(doc_presentations, full_doc_presentations)\
+            + self.OT_loss_weight * cost
         return logits, loss
 
         

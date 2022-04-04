@@ -72,10 +72,12 @@ def run(defaults: Dict):
         output_dir = os.path.join(
             training_args.output_dir,
             f'{args.job}'
+            f'-roberta_large'
             f'-lr{training_args.lr}'
             f'-e_lr{training_args.encoder_lr}'
             f'-eps{training_args.num_epoches}'
             f'-regu_weight{training_args.regular_loss_weight}'
+            f'-OT_weight{training_args.OT_loss_weight}'
             f'-gcn_num_layers{model_args.gcn_num_layers}'
             f'-fn_actv{model_args.fn_actv}')
         try:
@@ -111,7 +113,7 @@ def run(defaults: Dict):
             max_epochs=training_args.num_epoches, 
             gpus=[args.gpu], 
             accumulate_grad_batches=training_args.gradient_accumulation_steps,
-            num_sanity_val_steps=5, 
+            num_sanity_val_steps=0, 
             val_check_interval=1.0, # use float to check every n epochs 
             callbacks = [lr_logger, checkpoint_callback],
         )
@@ -145,7 +147,7 @@ def run(defaults: Dict):
     p = sum(ps)/len(ps)
     r = sum(rs)/len(rs)
     print(f"F1: {f1} - P: {p} - R: {r}")
-    if f1 > 0.55:
+    if f1 > 0.50:
         with open(record_file_name, 'a', encoding='utf-8') as f:
             f.write(f"{'--'*10} \n")
             f.write(f"Hyperparams: \n {defaults}\n")
@@ -160,15 +162,17 @@ def objective(trial: optuna.Trial):
     defaults = {
         'lr': trial.suggest_categorical('lr', [5e-4]), # 5e-5, 1e-4,
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [5e-6, 7e-6]),
-        'batch_size': trial.suggest_categorical('batch_size', [16]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [8e-6]),
+        'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [10]), # 
+        'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
+        'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [3]),
-        'rnn_hidden_size': trial.suggest_categorical('rnn_hidden_size', [0]),
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [4]),
+        'rnn_hidden_size': trial.suggest_categorical('rnn_hidden_size', [512]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
         'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu',]), # 'relu', 'tanh', 'hardtanh', 'silu'
     }   

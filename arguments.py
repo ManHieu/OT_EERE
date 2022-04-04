@@ -62,6 +62,11 @@ class TrainingArguments(transformers.TrainingArguments):
         metadata={"help": "The output directory where the results and model weights will be written."}
     )
 
+    seed: int = field(
+        default = 1741,
+        metadata= {"help": "Number labels in this dataset"}
+    )
+
     num_labels: int = field(
         default = None,
         metadata= {"help": "Number labels in this dataset"}
@@ -75,6 +80,11 @@ class TrainingArguments(transformers.TrainingArguments):
     regular_loss_weight: float = field(
         default =  0.1,
         metadata= {"help": "Weight of regularization loss"}
+    )
+
+    OT_loss_weight: float = field(
+        default =  0.1,
+        metadata= {"help": "Weight of OT loss (cost of transportation plan)"}
     )
 
     max_seq_len: int = field(
@@ -106,6 +116,11 @@ class ModelArguments:
         metadata= {"help": "The path of encoder model"}
     )
 
+    use_pretrained_wemb: bool = field(
+        default = True,
+        metadata= {"help": "Use glove trained word embedding"}
+    )
+
     distance_emb_size: int = field(
         default = 0,
         metadata= {"help": "Embedding size of distance to triggers"}
@@ -123,9 +138,14 @@ class ModelArguments:
 
     rnn_hidden_size: int = field(
         default = 0,
-        metadata= {"help": "LSTM in GCN hidden layer size"}
+        metadata= {"help": "LSTM in hidden layer size"}
     )
     
+    gcn_rnn_hidden_size: int = field(
+        default = 0,
+        metadata= {"help": "LSTM in GCN hidden layer size"}
+    )
+
     rnn_num_layers: int = field(
         default = 1,
         metadata= {"help": "LSTM number layer in GCN"}
