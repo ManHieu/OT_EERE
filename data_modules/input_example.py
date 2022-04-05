@@ -33,9 +33,9 @@ class Entity:
     """
     An entity in a training/test example.
     """
-    start: int                  # start index in the sentence
-    end: int                    # end index in the sentence
-    mention: str                # mention of entity
+    start: int = None                 # start index in the sentence
+    end: int = None                # end index in the sentence
+    mention: str = None           # mention of entity
     type: Optional[EntityType] = None   # entity type
     id: Optional[List[int]] = None    # id in the current training/test example
 
@@ -70,6 +70,7 @@ class InputExample:
     relations: List[Relation] = None
     heads: List[int] = None
     tokens: List[str] = None
+    host_sentence_mask: List[int] = None
     dep_path: List[int] = None
     k_walk_nodes: List[int] = None
 
@@ -90,6 +91,7 @@ class InputFeatures:
     adjacent_maxtrix: Tensor
     scores: List[Tuple[int, int]]                   # distance to triggers.
     k_walk_nodes: List[int] = None
+    host_sentence_mask: List[int] = None
     # input_presentation: Tensor
 
     

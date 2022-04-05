@@ -16,10 +16,16 @@ class PlOTEERE(pl.LightningModule):
                 training_args: TrainingArguments,
                 datasets: str,
                 scratch_tokenizer: str,
+                
                 # num_training_step: int
                 ) -> None:
         super().__init__()
         self.save_hyperparameters()
+        if training_args.encoder_lr == 0:
+            self.tune_encoder = False
+        else:
+            self.tune_encoder = True
+
         self.model = OTEERE(encoder_model=model_args.encoder_name_or_path,
                             max_seq_len=training_args.max_seq_len,
                             scratch_tokenizer=scratch_tokenizer,
@@ -38,16 +44,17 @@ class PlOTEERE(pl.LightningModule):
                             fn_actv=model_args.fn_actv,
                             regular_loss_weight=training_args.regular_loss_weight,
                             OT_loss_weight=training_args.OT_loss_weight,
-                            use_word_emb=model_args.use_pretrained_wemb)
+                            use_word_emb=model_args.use_pretrained_wemb,
+                            tune_encoder=self.tune_encoder,)
         self.model_results = []
     
     def training_step(self, batch, batch_idx):
-        logits, loss = self.model(*batch)
-        self.log_dict({'train_loss': loss,}, prog_bar=True)
+        logits, loss, pred_loss, regu_loss, cost = self.model(*batch)
+        self.log_dict({'train_loss': loss, 'pred_loss': pred_loss, 'regu_loss': regu_loss, 'OT_loss': cost}, prog_bar=True)
         return loss
 
     def validation_step(self, batch, batch_idx) -> Optional[STEP_OUTPUT]:
-        logits, loss = self.model(*batch)
+        logits, loss, pred_loss, regu_loss, cost = self.model(*batch)
         # print(logits.size())
         pred_labels = torch.max(logits, dim=1).indices.cpu().numpy()
         labels = batch[3].cpu().numpy()
@@ -65,12 +72,13 @@ class PlOTEERE(pl.LightningModule):
         p, r, f1 = compute_f1(dataset=self.hparams.datasets, 
                             num_label=self.hparams.training_args.num_labels, 
                             gold=labels, 
-                            pred=predicts)
+                            pred=predicts,
+                            report=True)
         self.log_dict({'f1_dev': f1, 'p_dev': p, 'r_dev': r}, prog_bar=True)
         return f1
     
     def test_step(self, batch, batch_idx) -> Optional[STEP_OUTPUT]:
-        logits, loss = self.model(*batch)
+        logits, loss, pred_loss, regu_loss, cost = self.model(*batch)
         pred_labels = torch.max(logits, dim=1).indices.cpu().numpy()
         labels = batch[3].cpu().numpy()
         return pred_labels, labels
@@ -96,20 +104,24 @@ class PlOTEERE(pl.LightningModule):
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_pretrain_parameters = [
             {
-                "params": [p for n, p in self.model.encoder.named_parameters() if not any(nd in n for nd in no_decay)],
-                "weight_decay": 0.,
-                "lr": self.hparams.training_args.encoder_lr
-            },
-            {
-                "params": [p for n, p in self.model.encoder.named_parameters() if  any(nd in n for nd in no_decay)],
-                "weight_decay": 0.0,
-                "lr": self.hparams.training_args.encoder_lr
-            },
-            {
-                "params": [p for n, p in self.model.named_parameters() if 'encoder.' not in n],
-                "weight_decay": 0.0,
-                "lr": self.hparams.training_args.lr
-            }]
+                    "params": [p for n, p in self.model.named_parameters() if 'encoder.' not in n],
+                    "weight_decay": 0.0,
+                    "lr": self.hparams.training_args.lr
+                }
+        ]
+        if self.tune_encoder == True:
+            optimizer_grouped_pretrain_parameters.extend([
+                {
+                    "params": [p for n, p in self.model.encoder.named_parameters() if not any(nd in n for nd in no_decay)],
+                    "weight_decay": 0.,
+                    "lr": self.hparams.training_args.encoder_lr
+                },
+                {
+                    "params": [p for n, p in self.model.encoder.named_parameters() if  any(nd in n for nd in no_decay)],
+                    "weight_decay": 0.0,
+                    "lr": self.hparams.training_args.encoder_lr
+                },])
+        
         optimizer = AdamW(optimizer_grouped_pretrain_parameters, eps=self.hparams.training_args.adam_epsilon)
         num_warmup_steps = 0.1 * num_batches
         scheduler = get_linear_schedule_with_warmup(

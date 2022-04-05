@@ -97,10 +97,10 @@ class BaseDataset(Dataset, ABC):
 
     def compute_features(self):
         try:
-            os.mkdir(self.data_path + f'wemb_extended_context_featured')
+            os.mkdir(self.data_path + f'selected_sentences_featured')
         except FileExistsError:
             pass
-        featured_path = self.data_path + f'wemb_extended_context_featured/{self.split}.pkl'
+        featured_path = self.data_path + f'selected_sentences_featured/{self.split}.pkl'
         if os.path.exists(featured_path):
             with open(featured_path, 'rb') as f:
                 features = pickle.load(f)  
@@ -133,11 +133,13 @@ class BaseDataset(Dataset, ABC):
                 
                 adj = torch.eye(len(example.tokens) + 1) # include ROOT and self loop
                 for i in range(len(example.tokens)):
+                    adj[i, i] = 1 # self loop
                     if dep_tree.has_edge(-1, i):
-                        adj[-1, i] = 1
+                        adj[-1, i] = 1 # root 
                     for j in range(len(example.tokens)):
                         if dep_tree.has_edge(i, j):
                             adj[i, j] = 1
+                            adj[j, i] = 1 # undirected 
 
                 for relation in example.relations:
                     label = relation.type.short
@@ -162,7 +164,8 @@ class BaseDataset(Dataset, ABC):
                         dep_path=example.dep_path,
                         adjacent_maxtrix=adj,
                         scores=scores,
-                        k_walk_nodes=example.k_walk_nodes
+                        k_walk_nodes=example.k_walk_nodes,
+                        host_sentence_mask=example.host_sentence_mask
                         # input_presentation=input_presentation
                     )
                     features.append(feature)
@@ -186,6 +189,7 @@ class BaseDataset(Dataset, ABC):
         # input_ctx_emb = torch.zeros(len(batch), max_seq_len, hidden_size)
         dep_path = []
         k_walk_nodes = []
+        host_sentences_masks = []
         labels = []
         adj = torch.zeros((len(batch), max_ns, max_ns), dtype=torch.float)
         masks = torch.zeros((len(batch), max_ns), dtype=torch.float)
@@ -199,6 +203,7 @@ class BaseDataset(Dataset, ABC):
             # input_ctx_emb[i, 0:ex.input_presentation.size(0), :] = ex.input_presentation
             dep_path.append(padding(ex.dep_path, max_sent_len=max_ns, pad_tok=0))
             k_walk_nodes.append(padding(ex.k_walk_nodes, max_sent_len=max_ns, pad_tok=0))
+            host_sentences_masks.append(padding(ex.host_sentence_mask, max_sent_len=max_ns, pad_tok=0))
             masks[i, 0:ex.adjacent_maxtrix.size(0)] = masks[i, 0:ex.adjacent_maxtrix.size(0)] + 1
             adj[i, 0:ex.adjacent_maxtrix.size(0), 0:ex.adjacent_maxtrix.size(1)] = ex.adjacent_maxtrix
             labels.append(ex.label)
@@ -213,11 +218,12 @@ class BaseDataset(Dataset, ABC):
         labels = torch.tensor(labels)
         head_dists = torch.tensor(head_dists, dtype=torch.int)
         tail_dists = torch.tensor(tail_dists, dtype=torch.int)
+        host_sentences_masks = torch.tensor(host_sentences_masks)
 
         return (input_ids, input_attention_mask, masks, labels,
                 dep_path, adj, head_dists, tail_dists, 
                 [ex.mapping for ex in batch], [ex.triggers_poss for ex in batch], 
-                input_token_ids, k_walk_nodes)
+                input_token_ids, k_walk_nodes, host_sentences_masks)
 
 
 

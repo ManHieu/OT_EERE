@@ -55,7 +55,7 @@ class EEREDataset(BaseDataset):
             print(f"Loaded {len(data)} for split {split} of {self.name} with the sample rate is {self.sample}")
             for i, datapoint in enumerate(data):
                 # print(f"datapoint: {datapoint}")
-                triggers = [Entity(start=trigger['span'][0], end=trigger['span'][1], mention=trigger['mention'], id=trigger['possition']) 
+                triggers = [Entity(mention=trigger['mention'], id=trigger['possition']) 
                             for trigger in datapoint['triggers']]
                 
                 relations = []
@@ -74,7 +74,8 @@ class EEREDataset(BaseDataset):
                                         heads=datapoint['heads'],
                                         tokens=datapoint['tokens'],
                                         dep_path=datapoint['dep_path'],
-                                        k_walk_nodes=datapoint['k_walk_nodes']
+                                        k_walk_nodes=datapoint['k_walk_nodes'],
+                                        host_sentence_mask=datapoint['host_sent']
                     )
                     examples.append(example)
                 

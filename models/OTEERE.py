@@ -35,6 +35,7 @@ class OTEERE(nn.Module):
                 regular_loss_weight: float = 0.1,
                 OT_loss_weight: float = 0.1,
                 word_emb_file: str = None,
+                tune_encoder: bool = True
                 ) -> None:
         super().__init__()
 
@@ -42,6 +43,7 @@ class OTEERE(nn.Module):
 
         # Encoding layers
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
+        self.tune_encoder = tune_encoder
         if use_word_emb:
             print("Loading vocab and pretrained word embedding....")
             self.scratch_tokenizer = ScratchTokenizer()
@@ -67,6 +69,8 @@ class OTEERE(nn.Module):
         self.sinkhorn = SinkhornDistance(eps=OT_eps, max_iter=OT_max_iter, reduction=OT_reduction)
 
         # GCN layers
+        self.q = nn.Parameter(torch.randn(2))
+        self.q.requires_grad = True
         gcn_input_size = 2 * self.rnn_hidden_size
         gcn_outp_size = gcn_input_size
         self.gcn = GCN(gcn_input_size, gcn_input_size, gcn_num_layers, gcn_rnn_hidden_size, rnn_num_layers, dropout)
@@ -136,26 +140,17 @@ class OTEERE(nn.Module):
                 trigger_poss: List[List[List[int]]],
                 input_token_ids: torch.Tensor,
                 k_walk_nodes: torch.Tensor,
+                host_sentences_masks: torch.Tensor
                 ):
         
         bs = input_ids.size(0)
         # Embedding
         # Compute transformer embedding
-        _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state
-        _context_emb = []
-        num_para = math.ceil(input_ids.size(1) / 512.0)
-        # print(f"input_ids: {input_ids.size()}")
-        for i in range(num_para):
-            start = i * 512
-            end = (i + 1) * 512
-            para_ids = input_ids[:, start: end]
-            para_input_attn_mask = input_attention_mask[:, start:end]
-            # print(f"para_ids: {para_ids.size()}")
-            # print(f"para_attn_mask: {para_input_attn_mask.size()}")
-            para_ctx = self.encoder(para_ids, para_input_attn_mask).last_hidden_state
-            # print(f"para_ctx: {para_ctx.size()}")
-            _context_emb.append(para_ctx)
-        _context_emb = torch.cat(_context_emb, dim=1) # (bs, max_seq_len, encoder_hidden_size)
+        if self.tune_encoder:
+            _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state # (bs, max_seq_len, encoder_hidden_size)
+        else:
+            with torch.no_grad():
+                _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state # (bs, max_seq_len, encoder_hidden_size)
 
         # _context_emb = ctx_emb
         # print(f"_contex_emb: {_context_emb.size()}")
@@ -206,78 +201,79 @@ class OTEERE(nn.Module):
         # print(f"gcn_input: {gcn_input}")
 
         # OT
-        on_dps = [] # on dependency path token presentation
-        off_dps = [] # off denpendency path token presentation
-        on_dp_maginals = [] # on dependency path maginal distribution
-        off_dp_maginals = [] # off dependency path maginal distribution
-        n_on_dp = 0
-        n_off_dp = 0
-        batch_on_dp_ids = []
-        batch_off_dp_ids = []
+        on_hosts = [] # on dependency path token presentation
+        off_hosts = [] # off denpendency path token presentation
+        on_host_maginals = [] # on dependency path maginal distribution
+        off_host_maginals = [] # off dependency path maginal distribution
+        n_on_host = 0
+        n_off_host = 0
+        batch_on_host_ids = []
+        batch_off_host_ids = []
         for i in range(bs):
-            dep_path = dep_paths[i]
-            on_dp_ids = dep_path.nonzero().squeeze(1)
-            batch_on_dp_ids.append(on_dp_ids)
-            if n_on_dp < on_dp_ids.size(0):
-                n_on_dp = on_dp_ids.size(0)
-            on_dp_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * dep_path #
+            host_sentence = host_sentences_masks[i]
+            on_host_ids = host_sentence.nonzero().squeeze(1)
+            batch_on_host_ids.append(on_host_ids)
+            if n_on_host < on_host_ids.size(0):
+                n_on_host = on_host_ids.size(0)
+            on_host_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * host_sentence #
             # print(f"on_dp_score: {on_dp_score.size()}")
-            on_dp_score = on_dp_score[on_dp_ids]
-            on_dp_maginal = F.softmax(on_dp_score.float(), dim=0)
+            on_host_score = on_host_score[on_host_ids]
+            on_host_maginal = F.softmax(on_host_score.float(), dim=0)
 
-            off_dp_masks = (1 - dep_path) * masks[i] * k_walk_nodes[i]
-            off_dp_ids = off_dp_masks.nonzero().squeeze(1)
-            batch_off_dp_ids.append(off_dp_ids)
-            if n_off_dp < off_dp_ids.size(0):
-                n_off_dp = off_dp_ids.size(0)
-            off_dp_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * off_dp_masks
-            off_dp_score = off_dp_score[off_dp_ids]
-            off_dp_maginal = F.softmax(off_dp_score.float(), dim=0) # (ns-n_on_dp)
+            off_host_masks = (1 - host_sentence) * masks[i]
+            off_host_ids = off_host_masks.nonzero().squeeze(1)
+            batch_off_host_ids.append(off_host_ids)
+            if n_off_host < off_host_ids.size(0):
+                n_off_host = off_host_ids.size(0)
+            off_host_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * off_host_masks
+            off_host_score = off_host_score[off_host_ids]
+            off_host_maginal = F.softmax(off_host_score.float(), dim=0) # (ns-n_on_dp)
             # null_prob = torch.mean(off_dp_maginal, dim=0).unsqueeze(0)
-            on_dp_maginal = torch.cat([torch.Tensor([0.5]).cuda(), 0.5 * on_dp_maginal], dim=0) # (n_on_dp + 1)
+            on_host_maginal = torch.cat([torch.Tensor([0.5]).cuda(), 0.5 * on_host_maginal], dim=0) # (n_on_dp + 1)
             # print(torch.sum(on_dp_maginal))
             # print(f"on_dp_maginal: {on_dp_maginal.size()}")
             # print(f"off_dp_maginal: {off_dp_maginal.size()}")
             
-            on_dp = gcn_input[i] * dep_path.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2)))
-            on_dp = on_dp[on_dp_ids]
-            off_dp = gcn_input[i] * off_dp_masks.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2))) # (ns-n_on_dp, gcn_input_size)
-            off_dp = off_dp[off_dp_ids]
-            null_presentation = torch.mean(off_dp, dim=0).unsqueeze(0)
-            on_dp = torch.cat([null_presentation, on_dp], dim=0) # (n_on_dp+1, gcn_input_size)
+            on_host = gcn_input[i] * host_sentence.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2)))
+            on_host = on_host[on_host_ids]
+            off_host = gcn_input[i] * off_host_masks.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2))) # (ns-n_on_dp, gcn_input_size)
+            off_host = off_host[off_host_ids]
+            null_presentation = torch.mean(off_host, dim=0).unsqueeze(0)
+            on_host = torch.cat([null_presentation, on_host], dim=0) # (n_on_dp+1, gcn_input_size)
             # print(f'on_dp: {on_dp.size()}')
             # print(f"off_dp: {off_dp.size()}")
             
-            on_dps.append(on_dp)
-            off_dps.append(off_dp)
-            on_dp_maginals.append(on_dp_maginal)
-            off_dp_maginals.append(off_dp_maginal)
+            on_hosts.append(on_host)
+            off_hosts.append(off_host)
+            on_host_maginals.append(on_host_maginal)
+            off_host_maginals.append(off_host_maginal)
         
-        on_dps = pad_sequence(on_dps, batch_first=True)
+        on_hosts = pad_sequence(on_hosts, batch_first=True)
         # print(f"on_dp: {on_dps.size()}")
-        off_dps = pad_sequence(off_dps, batch_first=True)
+        off_hosts = pad_sequence(off_hosts, batch_first=True)
         # print(f"off_dp: {off_dps.size()}")
-        on_dp_maginals = pad_sequence(on_dp_maginals, batch_first=True)
-        off_dp_maginals = pad_sequence(off_dp_maginals, batch_first=True)
+        on_host_maginals = pad_sequence(on_host_maginals, batch_first=True)
+        off_host_maginals = pad_sequence(off_host_maginals, batch_first=True)
         # print(f"off_maginal: {torch.sum(off_dp_maginals)} - {off_dp_maginals.size()}")
         # print(f"on_maginal: {torch.sum(on_dp_maginals)} - {on_dp_maginals.size()}")
 
-        cost, pi, C = self.sinkhorn(off_dps, on_dps, off_dp_maginals, on_dp_maginals, cuda=True)
+        cost, pi, C = self.sinkhorn(off_hosts, on_hosts, off_host_maginals, on_host_maginals, cuda=True)
         # print(f"pi: {pi.size()}")
         pi = pi.cuda()
         # print(f"pi: {pi.size()} - {torch.max(pi, dim=2)[0].size()}")
-        # print(f"pi: {pi[0]}")
-        pi = F.softmax(pi * pi.size(1) * pi.size(2), dim=2)
+        # print(f"pi: {pi[0]}")adjs
+        pi = F.gumbel_softmax(pi * pi.size(1) * pi.size(2), tau=1, dim=2, hard=True)
         # print(f"pi: {pi[0]}")
         _OT_adj = pi[:, :, 1:].clone()
-        _OT_adj[_OT_adj < 1/pi.size(2)] = 0
-        OT_adj = torch.zeros(adjs.size(), requires_grad=True).cuda()
+        OT_adj = torch.zeros(adjs.size()).cuda()
         for i  in range(bs):
-            on_dp_ids = batch_on_dp_ids[i]
-            off_dp_ids = batch_off_dp_ids[i]
-            for j in range(on_dp_ids.size(0)):
-                OT_adj[i, off_dp_ids, on_dp_ids[j]] = _OT_adj[i, :off_dp_ids.size(0), j]
+            on_host_ids = batch_on_host_ids[i]
+            off_host_ids = batch_off_host_ids[i]
+            for j in range(on_host_ids.size(0)):
+                OT_adj[i, off_host_ids, on_host_ids[j]] = _OT_adj[i, :off_host_ids.size(0), j]
 
+        OT_adj = OT_adj + OT_adj.transpose(1, 2)
+        OT_adj = torch.clamp(OT_adj, min=0, max=1) # make sure all edge in (0,1)
         # branchs = []
         # dep_path_list = []
         # for i in range(OT_adj[0].size(1)):
@@ -290,13 +286,14 @@ class OTEERE(nn.Module):
         # print(f"dep_path_list: {dep_path_list}")
 
         max_ns = adjs.size(1)
-        on_dp_masks = torch.stack([dep_paths] * max_ns, dim=2)
-        off_dp_masks = torch.stack([(1- dep_paths) * masks] * max_ns, dim=2)
+        on_host_masks = torch.stack([host_sentences_masks] * max_ns, dim=2)
         
-        dep_path_adjs = adjs * on_dp_masks * on_dp_masks.transpose(1,2)
-        pruned_adjs = dep_path_adjs + OT_adj
-        pruned_adjs = pruned_adjs + pruned_adjs.transpose(1, 2)
+        host_adjs = adjs * on_host_masks * on_host_masks.transpose(1,2)
+        # pruned_adjs = torch.stack([host_adjs, OT_adj], dim=-1) # (bs, ns, ns, 2)
+        # pruned_adjs = torch.matmul(pruned_adjs, F.softmax(self.q))
+        pruned_adjs = host_adjs + OT_adj
         pruned_adjs[pruned_adjs > 1] = 1
+        # pruned_adjs = F.softmax(pruned_adjs, dim=-1)
 
         # GCN
         gcn_outp = self.gcn(gcn_input, pruned_adjs, ls) # (bs x ns x gcn_hidden_size)
@@ -336,10 +333,12 @@ class OTEERE(nn.Module):
         logits = self.classifier(presentations)
 
         # Compute loss
-        loss = self.loss_pred(logits, labels)\
-            + self.regular_loss_weight * self.loss_regu(doc_presentations, full_doc_presentations)\
+        regu_loss = self.loss_regu(doc_presentations, full_doc_presentations)
+        pred_loss = self.loss_pred(logits, labels)
+        loss = pred_loss\
+            + self.regular_loss_weight * regu_loss\
             + self.OT_loss_weight * cost
-        return logits, loss
+        return logits, loss, pred_loss, regu_loss, cost
 
         
 

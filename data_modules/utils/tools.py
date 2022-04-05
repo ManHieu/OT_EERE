@@ -1,7 +1,7 @@
 from collections import defaultdict
 import datetime
 import re
-from typing import List
+from typing import Dict, List, Tuple
 import numpy as np
 np.random.seed(1741)
 import torch
@@ -10,9 +10,11 @@ import random
 random.seed(1741)
 import spacy
 import networkx as nx
+from sentence_transformers import SentenceTransformer, util
 
 
 nlp = spacy.load("en_core_web_sm")
+sim_evaluator = SentenceTransformer('/vinai/hieumdt/all-MiniLM-L12-v1')
 
 
 # Padding function
@@ -132,4 +134,23 @@ def mapping_subtok_id(subtoks: List[str], tokens: List[str]):
     return dict(mapping_dict)
     
 
+@torch.no_grad()
+def compute_sentences_similar(sent_A: List[str], sent_B: List[str], metric: str='vector_sim'):
+    sent_A = ' '.join([word.strip() for word in sent_A])
+    sent_B = ' '.join([word.strip() for word in sent_B])
+
+    if metric=='vector_sim':
+        embeddings1 = sim_evaluator.encode([sent_A], convert_to_tensor=True)
+        embeddings2 = sim_evaluator.encode([sent_B], convert_to_tensor=True)
+        cosine_scores = util.pytorch_cos_sim(embeddings1, embeddings2)
+        score = float(cosine_scores[0][0])
+    return score
+
+
+def get_new_poss(poss_in_sent: int, new_sid: int, sent_span: Dict[int, Tuple[int, int, int]]):
+    new_poss = poss_in_sent
+    for _new_sid, _, _, sent_len in sent_span.values():
+        if _new_sid < new_sid:
+            new_poss += sent_len
+    return new_poss
 

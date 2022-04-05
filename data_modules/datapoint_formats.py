@@ -1,5 +1,5 @@
 import networkx as nx
-from utils.tools import get_dep_path
+from utils.tools import compute_sentences_similar, get_dep_path, get_new_poss
 
 
 DATAPOINT = {}
@@ -138,4 +138,112 @@ def hieve_datapoint(my_dict, doc_info=True):
     return data_points
 
 
+@register_datapoint
+def hieve_datapoint_v2(my_dict, doc_info=True):
+    """
+    Format data for HiEve dataset which choose the most similar context sentences 
+    """
+    data_points = []
+    simmilar_scores = {}
+    for (eid1, eid2), rel in my_dict['relation_dict'].items():
+        e1, e2 = my_dict['event_dict'][eid1], my_dict['event_dict'][eid2]
+        s1, s2 = e1['sent_id'], e2['sent_id']
+        
+        s1_tokens, s2_tokens = my_dict['sentences'][s1]['tokens'], my_dict['sentences'][s2]['tokens']
+        scores = []
+        for s_id, sent in enumerate(my_dict['sentences']):
+            sent_tokens = sent['tokens']
+            if s_id != s1 and s_id != s2:
+                if simmilar_scores.get((s1, s_id)) == None:
+                    s1_sim_score = compute_sentences_similar(s1_tokens, sent_tokens)
+                    simmilar_scores[(s1, s_id)] = s1_sim_score
+                    simmilar_scores[(s_id, s1)] = s1_sim_score
+                else:
+                    s1_sim_score = simmilar_scores[(s1, s_id)]
+                if simmilar_scores.get((s2, s_id)) == None:
+                    s2_sim_score = compute_sentences_similar(s2_tokens, sent_tokens)
+                    simmilar_scores[(s2, s_id)] = s2_sim_score
+                    simmilar_scores[(s_id, s2)] = s2_sim_score
+                else:
+                    s2_sim_score = simmilar_scores[(s2, s_id)]
+                score = max(s1_sim_score, s2_sim_score)
+                scores.append((s_id, score))
+        scores.sort(key=lambda x: x[1], reverse=True)
+        # print(f"scores: {scores}")
+        top_3_relevances = scores[0: 3] + [(s1, 1), (s2, 1)]
+
+        sents_tok_span = {}
+        tokens = []
+        host_sentence_mask = []
+        heads = []
+        start_tok_id = 0
+        for i, (sid, _) in enumerate(sorted(top_3_relevances, key=lambda x: x[0])):
+            sent = my_dict['sentences'][sid]
+
+            if sid == s1 or sid == s2:
+                host_sentence_mask = host_sentence_mask + [1] * len(sent['tokens'])
+            else:
+                host_sentence_mask = host_sentence_mask + [0] * len(sent['tokens'])
+
+            end_tok_id = start_tok_id + len(sent['tokens'])
+            sents_tok_span[sid] = (i, start_tok_id, end_tok_id, len(sent['tokens']))
+            
+            tokens.extend(sent['tokens'])
+            
+            for head in sent['heads']:
+                if head != -1:
+                    heads.append(head + start_tok_id)
+                else:
+                    heads.append(head)
+            assert tokens[start_tok_id: end_tok_id] == sent['tokens'], f"{tokens[start_tok_id: end_tok_id]} - {sent['tokens']} - {(start_tok_id, end_tok_id)}"
+            start_tok_id = end_tok_id
+
+        e1_poss = get_new_poss(e1['token_id'], sents_tok_span[s1][0], sents_tok_span)
+        e2_poss = get_new_poss(e2['token_id'], sents_tok_span[s2][0], sents_tok_span)
+
+        if e1['mention'] in tokens[e1_poss]  and e2['mention'] in tokens[e2_poss]:
+            triggers = [{'possition': [e1_poss], 'mention': e1['mention']},
+                        {'possition': [e2_poss], 'mention': e2['mention']}]
+        else:
+            print(f"{tokens} - {sents_tok_span}")
+            print(f"{e1_poss} - {tokens[e1_poss]} - {e1['mention']}")
+            print(f"{e2_poss} - {tokens[e2_poss]} - {e2['mention']}")
+            continue
+
+        dep_tree = nx.DiGraph()
+        for head, tail in zip(heads, list(range(len(tokens)))):
+            if head != tail:
+                dep_tree.add_edge(head, tail)
+        dep_paths = get_dep_path(dep_tree, [e1_poss, e2_poss])
+        # if dep_paths ==  None:
+        #     print(my_dict['sentences'][s1])
+        #     print(my_dict['sentences'][s2])
+        if dep_paths != None:
+            _on_dp = []
+            for path in dep_paths:
+                _on_dp += path
+            _on_dp = set(_on_dp)
+            k_walk_nodes = []
+            for node in _on_dp:
+                k_walk_nodes.extend(list(nx.dfs_tree(dep_tree, node, depth_limit=2).nodes()))
+            k_walk_nodes = set(k_walk_nodes)
+
+            on_dp = [0] * (len(tokens) + 1) # ROOT in the last token
+            k_walk_nodes_mask  = [0] * (len(tokens) + 1) # ROOT in the last token
+            for idx in _on_dp:
+                on_dp[idx] = 1
+            for idx in k_walk_nodes:
+                k_walk_nodes_mask[idx] = 1
+
+            data_point = {
+                    'tokens': tokens,
+                    'host_sent': host_sentence_mask,
+                    'triggers': triggers,
+                    'heads': heads,
+                    'dep_path': on_dp,
+                    'k_walk_nodes': k_walk_nodes_mask,
+                    'labels': [(0, 1, rel)]
+                }
+            data_points.append(data_point)
+    return data_points
 

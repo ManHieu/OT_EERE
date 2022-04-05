@@ -88,7 +88,7 @@ if __name__ == '__main__':
     dataset = 'HiEve'
 
     if dataset == 'HiEve':
-        datapoint = 'hieve_datapoint'
+        datapoint = 'hieve_datapoint_v2'
         corpus_dir = 'datasets/hievents_v2/processed/'
         processor = Preprocessor(dataset, datapoint)
         corpus = processor.load_dataset(corpus_dir)
