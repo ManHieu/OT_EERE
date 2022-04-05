@@ -18,14 +18,12 @@ class OTEERE(nn.Module):
                 encoder_model: str,
                 max_seq_len: int,
                 distance_emb_size: int,
-                # gcn_outp_size: int,
+                hidden_size: int,
                 use_word_emb: bool,
                 scratch_tokenizer: str,
                 gcn_num_layers: int,
                 num_labels: int,
                 loss_weights: List[float],
-                rnn_hidden_size: int,
-                gcn_rnn_hidden_size: int,
                 rnn_num_layers: int = 1,
                 dropout: float = 0.5,
                 OT_eps: float = 0.1,
@@ -35,7 +33,8 @@ class OTEERE(nn.Module):
                 regular_loss_weight: float = 0.1,
                 OT_loss_weight: float = 0.1,
                 word_emb_file: str = None,
-                tune_encoder: bool = True
+                tune_encoder: bool = True,
+                residual_type: str = 'concat',
                 ) -> None:
         super().__init__()
 
@@ -55,9 +54,8 @@ class OTEERE(nn.Module):
         else:
             self.word_embedding_size = 0
             self.use_wemb = False
-        # self.distance_emb = nn.Embedding(500, distance_emb_size)
         self.in_size = 768 + distance_emb_size * 2 + self.word_embedding_size if 'base' in encoder_model else 1024 + distance_emb_size * 2 + self.word_embedding_size
-        self.rnn_hidden_size = rnn_hidden_size
+        self.rnn_hidden_size = hidden_size
         if rnn_num_layers > 1:
             self.rnn = nn.LSTM(self.in_size, self.rnn_hidden_size, rnn_num_layers, 
                                 batch_first=True, dropout=dropout, bidirectional=True)
@@ -72,10 +70,12 @@ class OTEERE(nn.Module):
         self.q = nn.Parameter(torch.randn(2))
         self.q.requires_grad = True
         gcn_input_size = 2 * self.rnn_hidden_size
-        gcn_outp_size = gcn_input_size
-        self.gcn = GCN(gcn_input_size, gcn_input_size, gcn_num_layers, gcn_rnn_hidden_size, rnn_num_layers, dropout)
+        gcn_outp_size = hidden_size
+        self.gcn = GCN(gcn_input_size, gcn_outp_size, gcn_num_layers, hidden_size, rnn_num_layers, dropout)
+        self.full_doc_gcn = GCN(gcn_input_size, gcn_outp_size, gcn_num_layers, hidden_size, rnn_num_layers, dropout)
 
         # Classifier layers
+        self.residual_type = residual_type
         if fn_actv == 'relu':
             self.fn_actv = nn.ReLU()
         elif fn_actv == 'leaky_relu':
@@ -88,13 +88,31 @@ class OTEERE(nn.Module):
             self.fn_actv = nn.SiLU()
         elif fn_actv == 'hardtanh':
             self.fn_actv = nn.Hardtanh()
-        fc1 = nn.Linear(gcn_outp_size*6, int(gcn_outp_size*3))
-        fc2 = nn.Linear(int(gcn_outp_size*3), num_labels)
-        self.classifier = nn.Sequential(OrderedDict([('dropout1',self.drop_out), 
+
+        self.doc_attn = nn.Sequential(OrderedDict([('dropout',self.drop_out), 
+                                                    ('fc1', nn.Linear(gcn_outp_size, int(gcn_outp_size/2))), 
+                                                    ('dropout', self.drop_out), 
+                                                    ('fn_actv', self.fn_actv), 
+                                                    ('fc2', nn.Linear(int(gcn_outp_size/2), 1))]
+                                                    ))
+        
+        self.fc = nn.Linear(gcn_input_size, hidden_size)
+
+        if self.residual_type == 'concat':
+            classifier_in_size = hidden_size * 9
+        elif self.residual_type == 'addtive':
+            classifier_in_size = hidden_size * 6                   
+        fc1 = nn.Linear(classifier_in_size, int(classifier_in_size/2))
+        fc2 = nn.Linear(int(classifier_in_size/2), int(classifier_in_size/4))
+        fc3 = nn.Linear(int(classifier_in_size/4), num_labels)
+        self.classifier = nn.Sequential(OrderedDict([('dropout',self.drop_out), 
                                                     ('fc1', fc1), 
-                                                    ('dropout2', self.drop_out), 
-                                                    ('relu', self.fn_actv), 
-                                                    ('fc2',fc2) ]))
+                                                    ('dropout', self.drop_out), 
+                                                    ('fn_actv', self.fn_actv), 
+                                                    ('fc2',fc2),
+                                                    ('dropout', self.drop_out), 
+                                                    ('fn_actv', self.fn_actv), 
+                                                    ('fc3',fc3),]))
         
         # Loss fuction
         self.weights = torch.tensor(loss_weights)
@@ -110,13 +128,11 @@ class OTEERE(nn.Module):
 
         glove = pd.read_csv('/vinai/hieumdt/glove/glove.6B.50d.txt', sep=" ", quoting=3, header=None, index_col=0)
         glove_embedding = {key: val.values for key, val in glove.T.items()}
-        # print(f"the: {glove_embedding['the']}")
 
         embedding_matrix=np.zeros((vocab_size,self.word_embedding_size))
         for i, w in self.vocab.items():
             if w in glove_embedding.keys():
                 embedding_matrix[i] = glove_embedding[w]
-        
         self.word_embedding.weight = nn.Parameter(torch.tensor(embedding_matrix,dtype=torch.float32))
         self.word_embedding.weight.requires_grad=True        
     
@@ -129,16 +145,11 @@ class OTEERE(nn.Module):
     def forward(self, 
                 input_ids: torch.Tensor, 
                 input_attention_mask: torch.Tensor, 
-                # ctx_emb: torch.Tensor,
                 masks: torch.Tensor, 
-                # dep_paths: torch.Tensor, 
                 adjs: torch.Tensor, 
-                # head_dists: torch.Tensor, 
-                # tail_dists: torch.Tensor,
                 mapping: List[Dict[int, List[int]]], 
                 trigger_poss: List[Tuple[List[int], List[int]]],
                 input_token_ids: torch.Tensor,
-                # k_walk_nodes: torch.Tensor,
                 host_sentences_masks: torch.Tensor,
                 labels: torch.Tensor, 
                 ):
@@ -152,8 +163,6 @@ class OTEERE(nn.Module):
             with torch.no_grad():
                 _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state # (bs, max_seq_len, encoder_hidden_size)
 
-        # _context_emb = ctx_emb
-        # print(f"_contex_emb: {_context_emb.size()}")
         # Compute word embedding
         if self.use_wemb:
             word_emb = self.word_embedding(input_token_ids) # (bs)
@@ -178,33 +187,21 @@ class OTEERE(nn.Module):
             # padding
             if max_ns > ns:
                 emb = emb + [torch.zeros(tok_presentation.size()).cuda()] * (max_ns-ns)
-
-            emb = torch.stack(emb, dim=0) # (max_ns, encoder_hidden_size)
-            # print(f"emb: {emb.size()}")
-            
+            emb = torch.stack(emb, dim=0) # (max_ns, encoder_hidden_size)            
             context_emb.append(emb)
 
         context_emb = torch.stack(context_emb, dim=0) # (bs, max_ns, hiden_size)
-        # Compute distance embedding
-        # print(head_dists.size())
-        # print(self.distance_emb)
-        # head_dists_emb = self.distance_emb(head_dists)
-        # tail_dists_emb = self.distance_emb(tail_dists)
-
         emb = context_emb
-        # emb = torch.cat(emb, dim=2)
 
         # Encoding with RNN
-        # print(masks)
         ls = [torch.sum(masks[i]).item() for i in range(bs)]
-        gcn_input = self.encode_with_rnn(emb, ls) # (bs, max_ns, gcn_input_size)
-        # print(f"gcn_input: {gcn_input}")
+        gcn_input = self.encode_with_rnn(emb, ls) # (bs, max_ns, gcn_input_size))
 
         # OT
-        on_hosts = [] # on dependency path token presentation
-        off_hosts = [] # off denpendency path token presentation
-        on_host_maginals = [] # on dependency path maginal distribution
-        off_host_maginals = [] # off dependency path maginal distribution
+        on_hosts = [] # on host token presentation
+        off_hosts = [] # off host token presentation
+        on_host_maginals = [] # on host maginal distribution
+        off_host_maginals = [] # off host maginal distribution
         n_on_host = 0
         n_off_host = 0
         batch_on_host_ids = []
@@ -215,24 +212,14 @@ class OTEERE(nn.Module):
             batch_on_host_ids.append(on_host_ids)
             if n_on_host < on_host_ids.size(0):
                 n_on_host = on_host_ids.size(0)
-            # on_host_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * host_sentence #
-            # print(f"on_dp_score: {on_dp_score.size()}")
-            # on_host_score = on_host_score[on_host_ids]
             on_host_maginal = torch.tensor([1.0/on_host_ids.size(0)] * on_host_ids.size(0), dtype=torch.float).cuda()
-
             off_host_masks = (1 - host_sentence) * masks[i]
             off_host_ids = off_host_masks.nonzero().squeeze(1)
             batch_off_host_ids.append(off_host_ids)
             if n_off_host < off_host_ids.size(0):
                 n_off_host = off_host_ids.size(0)
-            # off_host_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * off_host_masks
-            # off_host_score = off_host_score[off_host_ids]
             off_host_maginal = torch.tensor([1.0/off_host_ids.size(0)] * off_host_ids.size(0), dtype=torch.float).cuda() # (ns-n_on_dp)
-            # null_prob = torch.mean(off_dp_maginal, dim=0).unsqueeze(0)
             on_host_maginal = torch.cat([torch.Tensor([0.2]).cuda(), 0.8 * on_host_maginal], dim=0) # (n_on_dp + 1)
-            # print(torch.sum(on_dp_maginal))
-            # print(f"on_dp_maginal: {on_dp_maginal.size()}")
-            # print(f"off_dp_maginal: {off_dp_maginal.size()}")
             
             on_host = gcn_input[i] * host_sentence.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2)))
             on_host = on_host[on_host_ids]
@@ -240,30 +227,20 @@ class OTEERE(nn.Module):
             off_host = off_host[off_host_ids]
             null_presentation = torch.mean(off_host, dim=0).unsqueeze(0)
             on_host = torch.cat([null_presentation, on_host], dim=0) # (n_on_dp+1, gcn_input_size)
-            # print(f'on_dp: {on_dp.size()}')
-            # print(f"off_dp: {off_dp.size()}")
-            
+        
             on_hosts.append(on_host)
             off_hosts.append(off_host)
             on_host_maginals.append(on_host_maginal)
             off_host_maginals.append(off_host_maginal)
         
         on_hosts = pad_sequence(on_hosts, batch_first=True)
-        # print(f"on_dp: {on_dps.size()}")
         off_hosts = pad_sequence(off_hosts, batch_first=True)
-        # print(f"off_dp: {off_dps.size()}")
         on_host_maginals = pad_sequence(on_host_maginals, batch_first=True)
         off_host_maginals = pad_sequence(off_host_maginals, batch_first=True)
-        # print(f"off_maginal: {torch.sum(off_dp_maginals)} - {off_dp_maginals.size()}")
-        # print(f"on_maginal: {torch.sum(on_dp_maginals)} - {on_dp_maginals.size()}")
 
         cost, pi, C = self.sinkhorn(off_hosts, on_hosts, off_host_maginals, on_host_maginals, cuda=True)
-        # print(f"pi: {pi.size()}")
         pi = pi.cuda()
-        # print(f"pi: {pi.size()} - {torch.max(pi, dim=2)[0].size()}")
-        # print(f"pi: {pi[0]}")adjs
         pi = F.gumbel_softmax(pi * pi.size(1) * pi.size(2), tau=1, dim=2, hard=True)
-        # print(f"pi: {pi[0]}")
         _OT_adj = pi[:, :, 1:].clone()
         OT_adj = torch.zeros(adjs.size()).cuda()
         for i  in range(bs):
@@ -274,30 +251,18 @@ class OTEERE(nn.Module):
 
         OT_adj = OT_adj + OT_adj.transpose(1, 2)
         OT_adj = torch.clamp(OT_adj, min=0, max=1) # make sure all edge in (0,1)
-        # branchs = []
-        # dep_path_list = []
-        # for i in range(OT_adj[0].size(1)):
-        #     if dep_paths[0, i] == 1:
-        #         dep_path_list.append(i)
-        #     for j in range(OT_adj[0].size(1)):
-        #         if OT_adj[0, i, j] > 0:
-        #             branchs.append((i, j, OT_adj[0, i, j]))
-        # print(f"edges: {branchs}")
-        # print(f"dep_path_list: {dep_path_list}")
 
         max_ns = adjs.size(1)
         on_host_masks = torch.stack([host_sentences_masks] * max_ns, dim=2)
         
         host_adjs = adjs * on_host_masks * on_host_masks.transpose(1,2)
-        # pruned_adjs = torch.stack([host_adjs, OT_adj], dim=-1) # (bs, ns, ns, 2)
-        # pruned_adjs = torch.matmul(pruned_adjs, F.softmax(self.q))
         pruned_adjs = host_adjs + OT_adj
         pruned_adjs[pruned_adjs > 1] = 1
-        # pruned_adjs = F.softmax(pruned_adjs, dim=-1)
 
         # GCN
+        gcn_input = self.drop_out(gcn_input)
         gcn_outp = self.gcn(gcn_input, pruned_adjs, ls) # (bs x ns x gcn_hidden_size)
-        full_doc_gcn_oupt = self.gcn(gcn_input, adjs, ls)
+        full_doc_gcn_oupt = self.full_doc_gcn(gcn_input, adjs, ls)
 
         # Regularizarion and classification
         _labels = []
@@ -309,26 +274,28 @@ class OTEERE(nn.Module):
         heads = []
         tails = []
         doc_presentations = []
-        # for i, poss in enumerate(trigger_poss):
-        #     head = torch.max(full_doc_gcn_oupt[i, poss[0][0]: poss[0][-1] + 1, :], dim=0)[0]
-        #     tail = torch.max(full_doc_gcn_oupt[i, poss[1][0]: poss[1][-1] + 1, :], dim=0)[0]
-        #     full_doc_presentation = torch.max(full_doc_gcn_oupt[i, :, :], dim=0)[0]
-        #     full_doc_heads.append(head)
-        #     full_doc_tails.append(tail)
-        #     full_doc_presentations.append(full_doc_presentation)
-        # full_doc_heads = torch.stack(full_doc_heads, dim=0)
-        # full_doc_tails = torch.stack(full_doc_tails, dim=0)
-        # full_doc_presentations = torch.stack(full_doc_presentations, dim=0)
+
+        input_doc_presentations = []
+        input_heads = []
+        input_tails = []
+
+        _gcn_input = self.fc(gcn_input)
+        full_doc_attn = self.doc_attn(full_doc_gcn_oupt)
+        input_doc_attn = self.doc_attn(_gcn_input)
+        doc_attn = self.doc_attn(gcn_outp)
+
         for i in range(bs):
             pairs = trigger_poss[i]
             label = labels[i]
             for pair, lb in zip(pairs, label):
                 _labels.append(lb)
-
-                full_doc_presentation = torch.max(full_doc_gcn_oupt[i, :, :], dim=0)[0]
+                full_doc_presentation = torch.sum(full_doc_gcn_oupt[i, :, :] * full_doc_attn[i], dim=0)
                 full_doc_presentations.append(full_doc_presentation)
+
+                input_doc_presentation = torch.sum(_gcn_input[i, :, :] * input_doc_attn[i], dim=0)
+                input_doc_presentations.append(input_doc_presentation)
                 
-                doc_presentation = torch.max(gcn_outp[i, :, :], dim=0)[0]
+                doc_presentation = torch.sum(gcn_outp[i, :, :] * doc_attn[i], dim=0)
                 doc_presentations.append(doc_presentation)
 
                 head_ids, tail_ids = pair
@@ -337,6 +304,11 @@ class OTEERE(nn.Module):
                 full_doc_tail = torch.max(full_doc_gcn_oupt[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
                 full_doc_heads.append(full_doc_head)
                 full_doc_tails.append(full_doc_tail)
+
+                input_head = torch.max(_gcn_input[i, head_ids[0]: head_ids[-1] + 1, :], dim=0)[0]
+                input_tail = torch.max(_gcn_input[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
+                input_heads.append(input_head)
+                input_tails.append(input_tail)
 
                 head = torch.max(gcn_outp[i, head_ids[0]: head_ids[-1] + 1, :], dim=0)[0]
                 tail = torch.max(gcn_outp[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
@@ -347,23 +319,24 @@ class OTEERE(nn.Module):
         heads = torch.stack(heads, dim= 0)
         tails = torch.stack(tails, dim=0)
         doc_presentations = torch.stack(doc_presentations, dim=0)
+
+        input_heads = torch.stack(input_heads, dim= 0)
+        input_tails = torch.stack(input_tails, dim=0)
+        input_doc_presentations = torch.stack(input_doc_presentations, dim=0)
+
         full_doc_heads = torch.stack(full_doc_heads, dim=0)
         full_doc_tails = torch.stack(full_doc_tails, dim=0)
         full_doc_presentations = torch.stack(full_doc_presentations, dim=0)
         
         # Classification
-        # for i, poss in enumerate(trigger_poss):
-        #     head = torch.max(gcn_outp[i, poss[0][0]: poss[0][-1] + 1, :], dim=0)[0]
-        #     tail = torch.max(gcn_outp[i, poss[1][0]: poss[1][-1] + 1, :], dim=0)[0]
-        #     doc_presentation = torch.max(gcn_outp[i, :, :] + gcn_input[i, :, :], dim=0)[0]
-        #     heads.append(head)
-        #     tails.append(tail)
-        #     doc_presentations.append(doc_presentation)
-        # heads = torch.stack(heads, dim= 0)
-        # tails = torch.stack(tails, dim=0)
-        # doc_presentations = torch.stack(doc_presentations, dim=0)
-        presentations = torch.cat([heads, full_doc_heads, tails, full_doc_tails, doc_presentations, full_doc_presentations], dim=1)
-        # print(f"presentations: {presentations.size()}")
+        if self.residual_type == 'concat':
+            presentations = torch.cat([heads, full_doc_heads, input_heads,
+                                    tails, full_doc_tails, input_tails,
+                                    doc_presentations, full_doc_presentations, input_doc_presentations], dim=1)
+        elif self.residual_type == 'addtive':
+            presentations = torch.cat([heads + input_heads, full_doc_heads + input_heads,
+                                    tails + input_tails, full_doc_tails + input_tails,
+                                    doc_presentations + input_doc_presentations, full_doc_presentations + input_doc_presentations], dim=1)
         logits = self.classifier(presentations)
 
         # Compute loss

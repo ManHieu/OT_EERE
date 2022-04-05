@@ -94,7 +94,7 @@ if __name__ == '__main__':
         corpus = processor.load_dataset(corpus_dir)
         corpus = list(sorted(corpus, key=lambda x: x['doc_id']))
         train, test = train_test_split(corpus, train_size=0.8, test_size=0.2)
-        train, validate = train_test_split(train, train_size=0.75, test_size=0.25)
+        train, validate = train_test_split(train, train_size=0.9, test_size=0.1)
 
         processed_path = 'datasets/hievents_v2/train.json'
         train = processor.process_and_save(processed_path, train)

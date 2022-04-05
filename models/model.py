@@ -31,12 +31,10 @@ class PlOTEERE(pl.LightningModule):
                             max_seq_len=training_args.max_seq_len,
                             scratch_tokenizer=scratch_tokenizer,
                             distance_emb_size=model_args.distance_emb_size,
-                            # gcn_outp_size=model_args.gcn_outp_size,
+                            hidden_size=model_args.hidden_size,
                             gcn_num_layers=model_args.gcn_num_layers,
                             num_labels=training_args.num_labels,
                             loss_weights=training_args.loss_weights,
-                            rnn_hidden_size=model_args.rnn_hidden_size,
-                            gcn_rnn_hidden_size=model_args.gcn_rnn_hidden_size,
                             rnn_num_layers=model_args.rnn_num_layers,
                             dropout=model_args.dropout,
                             OT_eps=model_args.OT_eps,
@@ -46,7 +44,8 @@ class PlOTEERE(pl.LightningModule):
                             regular_loss_weight=training_args.regular_loss_weight,
                             OT_loss_weight=training_args.OT_loss_weight,
                             use_word_emb=model_args.use_pretrained_wemb,
-                            tune_encoder=self.tune_encoder,)
+                            tune_encoder=self.tune_encoder,
+                            residual_type=model_args.residual_type)
         self.model_results = []
     
     def training_step(self, batch, batch_idx):

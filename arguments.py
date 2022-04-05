@@ -136,14 +136,14 @@ class ModelArguments:
         metadata= {"help": "Number layer of convolution layers in GCN"}
     )
 
-    rnn_hidden_size: int = field(
+    hidden_size: int = field(
         default = 0,
-        metadata= {"help": "LSTM in hidden layer size"}
+        metadata= {"help": "hidden layer size"}
     )
-    
-    gcn_rnn_hidden_size: int = field(
-        default = 0,
-        metadata= {"help": "LSTM in GCN hidden layer size"}
+
+    residual_type: str = field(
+        default = 'concat',
+        metadata= {"help": "Type of residual connection"}
     )
 
     rnn_num_layers: int = field(
