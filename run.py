@@ -79,7 +79,8 @@ def run(defaults: Dict):
             f'-regu_weight{training_args.regular_loss_weight}'
             f'-OT_weight{training_args.OT_loss_weight}'
             f'-gcn_num_layers{model_args.gcn_num_layers}'
-            f'-fn_actv{model_args.fn_actv}')
+            f'-fn_actv{model_args.fn_actv}'
+            f'-rnn_hidden{model_args.rnn_hidden_size}')
         try:
             os.mkdir(output_dir)
         except FileExistsError:
@@ -160,19 +161,19 @@ def run(defaults: Dict):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [1e-3]), # 5e-5, 1e-4,
+        'lr': trial.suggest_categorical('lr', [1e-6, 5e-6, 1e-5, 5e-5, 1e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
         'encoder_lr': trial.suggest_categorical('encoder_lr', [0]), # 3e-6, 8e-6, 2e-5
         'batch_size': trial.suggest_categorical('batch_size', [16]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [10]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [15, 20]), # 
         'use_pretrained_wemb': trial.suggest_categorical('wemb', [False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.05]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
         'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [3]),
-        'rnn_hidden_size': trial.suggest_categorical('rnn_hidden_size', [512]),
+        'rnn_hidden_size': trial.suggest_categorical('rnn_hidden_size', [256, 512, 768]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
         'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu',]), # 'relu', 'tanh', 'hardtanh', 'silu'
     }   

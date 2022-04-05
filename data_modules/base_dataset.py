@@ -73,13 +73,13 @@ class BaseDataset(Dataset, ABC):
 
     def _warn_max_sequence_length(self, max_sequence_length: int, input_features: List[InputFeatures]):
         max_length_needed = max(len(x.input_ids) for x in input_features)
-        max_distance = max([max([max(score) for score in x.scores]) for x in input_features])
+        # max_distance = max([max([max(score) for score in x.scores]) for x in input_features])
         if max_length_needed > max_sequence_length:
             logging.warning(
                 f'Max sequence length is {max_sequence_length} but the longest is {max_length_needed} long')
-        logging.warning(
-            f'Max distance is {max_distance} long'
-        )
+        # logging.warning(
+        #     f'Max distance is {max_distance} long'
+        # )
     
     def get_doc_emb(self, input_ids, input_attention_mask):
         num_paras = math.ceil(len(input_ids) / 500.0)
@@ -97,10 +97,10 @@ class BaseDataset(Dataset, ABC):
 
     def compute_features(self):
         try:
-            os.mkdir(self.data_path + f'selected_sentences_featured')
+            os.mkdir(self.data_path + f'doc_selected_sentences_featured')
         except FileExistsError:
             pass
-        featured_path = self.data_path + f'selected_sentences_featured/{self.split}.pkl'
+        featured_path = self.data_path + f'doc_selected_sentences_featured/{self.split}.pkl'
         if os.path.exists(featured_path):
             with open(featured_path, 'rb') as f:
                 features = pickle.load(f)  
@@ -141,34 +141,38 @@ class BaseDataset(Dataset, ABC):
                             adj[i, j] = 1
                             adj[j, i] = 1 # undirected 
 
+                labels = []
+                triggers = []
                 for relation in example.relations:
                     label = relation.type.short
-                    
+                    labels.append(label)
+
                     e1_tok_ids = relation.head.id
                     e2_tok_ids = relation.tail.id
-                    trigger_poss = [e1_tok_ids, e2_tok_ids]
+                    trigger_poss = (e1_tok_ids, e2_tok_ids)
+                    triggers.append(trigger_poss)
                     
-                    scores = []
-                    for i in range(len(example.tokens)):
-                        head_dis = 0 if e1_tok_ids[0] <= i <= e1_tok_ids[-1] else min(abs(i - e1_tok_ids[0]), abs(i - e1_tok_ids[-1]))
-                        tail_dis = 0 if e2_tok_ids[0] <= i <= e2_tok_ids[-1] else min(abs(i - e2_tok_ids[0]), abs(i - e2_tok_ids[-1]))
-                        scores.append((head_dis, tail_dis))
+                    # scores = []
+                    # for i in range(len(example.tokens)):
+                    #     head_dis = 0 if e1_tok_ids[0] <= i <= e1_tok_ids[-1] else min(abs(i - e1_tok_ids[0]), abs(i - e1_tok_ids[-1]))
+                    #     tail_dis = 0 if e2_tok_ids[0] <= i <= e2_tok_ids[-1] else min(abs(i - e2_tok_ids[0]), abs(i - e2_tok_ids[-1]))
+                    #     scores.append((head_dis, tail_dis))
                     
-                    feature = InputFeatures(
-                        input_ids=input_ids,
-                        input_token_ids=input_token_ids,
-                        input_attention_mask=input_attention_mask,
-                        mapping=mapping,
-                        label=label,
-                        triggers_poss=trigger_poss,
-                        dep_path=example.dep_path,
-                        adjacent_maxtrix=adj,
-                        scores=scores,
-                        k_walk_nodes=example.k_walk_nodes,
-                        host_sentence_mask=example.host_sentence_mask
-                        # input_presentation=input_presentation
-                    )
-                    features.append(feature)
+                feature = InputFeatures(
+                    input_ids=input_ids,
+                    input_token_ids=input_token_ids,
+                    input_attention_mask=input_attention_mask,
+                    mapping=mapping,
+                    labels=labels,
+                    triggers=triggers,
+                    # dep_path=example.dep_path,
+                    adjacent_maxtrix=adj,
+                    # scores=scores,
+                    # k_walk_nodes=example.k_walk_nodes,
+                    host_sentence_mask=example.host_sentence_mask
+                    # input_presentation=input_presentation
+                )
+                features.append(feature)
             with open(featured_path, 'wb') as f:
                 pickle.dump(features, f, pickle.HIGHEST_PROTOCOL)
             
@@ -182,48 +186,47 @@ class BaseDataset(Dataset, ABC):
     def my_collate(self, batch: List[InputFeatures]):
         max_seq_len = max([len(ex.input_ids) for ex in batch])
         # hidden_size = batch[0].input_presentation.size(-1)
-        max_ns = max([len(ex.dep_path) for ex in batch]) # include ROOT
+        max_ns = max([ex.adjacent_maxtrix.size(1) for ex in batch]) # include ROOT
 
         input_ids = []
         input_attention_mask = []
         # input_ctx_emb = torch.zeros(len(batch), max_seq_len, hidden_size)
-        dep_path = []
-        k_walk_nodes = []
+        # dep_path = []
+        # k_walk_nodes = []
         host_sentences_masks = []
         labels = []
         adj = torch.zeros((len(batch), max_ns, max_ns), dtype=torch.float)
         masks = torch.zeros((len(batch), max_ns), dtype=torch.float)
-        head_dists = []
-        tail_dists = []
+        # head_dists = []
+        # tail_dists = []
         input_token_ids = []
         for i, ex in enumerate(batch):
             input_ids.append(padding(ex.input_ids, max_sent_len=max_seq_len, pad_tok=self.tokenizer.pad_token_id))
             input_attention_mask.append(padding(ex.input_attention_mask, max_sent_len=max_seq_len, pad_tok=0))
             input_token_ids.append(padding(ex.input_token_ids, max_sent_len=max_ns-1, pad_tok=0))
             # input_ctx_emb[i, 0:ex.input_presentation.size(0), :] = ex.input_presentation
-            dep_path.append(padding(ex.dep_path, max_sent_len=max_ns, pad_tok=0))
-            k_walk_nodes.append(padding(ex.k_walk_nodes, max_sent_len=max_ns, pad_tok=0))
+            # dep_path.append(padding(ex.dep_path, max_sent_len=max_ns, pad_tok=0))
+            # k_walk_nodes.append(padding(ex.k_walk_nodes, max_sent_len=max_ns, pad_tok=0))
             host_sentences_masks.append(padding(ex.host_sentence_mask, max_sent_len=max_ns, pad_tok=0))
             masks[i, 0:ex.adjacent_maxtrix.size(0)] = masks[i, 0:ex.adjacent_maxtrix.size(0)] + 1
             adj[i, 0:ex.adjacent_maxtrix.size(0), 0:ex.adjacent_maxtrix.size(1)] = ex.adjacent_maxtrix
-            labels.append(ex.label)
-            head_dists.append(padding([sc[0] for sc in ex.scores], max_sent_len=max_ns, pad_tok=max_ns))
-            tail_dists.append(padding([sc[1] for sc in ex.scores], max_sent_len=max_ns, pad_tok=max_ns))
+            labels.append(ex.labels)
+            # head_dists.append(padding([sc[0] for sc in ex.scores], max_sent_len=max_ns, pad_tok=max_ns))
+            # tail_dists.append(padding([sc[1] for sc in ex.scores], max_sent_len=max_ns, pad_tok=max_ns))
         
         input_ids = torch.tensor(input_ids)
         input_token_ids = torch.tensor(input_token_ids)
         input_attention_mask = torch.tensor(input_attention_mask)
-        dep_path = torch.tensor(dep_path)
-        k_walk_nodes = torch.tensor(k_walk_nodes)
-        labels = torch.tensor(labels)
-        head_dists = torch.tensor(head_dists, dtype=torch.int)
-        tail_dists = torch.tensor(tail_dists, dtype=torch.int)
+        # dep_path = torch.tensor(dep_path)
+        # k_walk_nodes = torch.tensor(k_walk_nodes)
+        # labels = torch.tensor(labels)
+        # head_dists = torch.tensor(head_dists, dtype=torch.int)
+        # tail_dists = torch.tensor(tail_dists, dtype=torch.int)
         host_sentences_masks = torch.tensor(host_sentences_masks)
 
-        return (input_ids, input_attention_mask, masks, labels,
-                dep_path, adj, head_dists, tail_dists, 
-                [ex.mapping for ex in batch], [ex.triggers_poss for ex in batch], 
-                input_token_ids, k_walk_nodes, host_sentences_masks)
+        return (input_ids, input_attention_mask, masks, adj,
+                [ex.mapping for ex in batch], [ex.triggers for ex in batch], 
+                input_token_ids, host_sentences_masks, labels)
 
 
 

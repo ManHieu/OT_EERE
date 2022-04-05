@@ -66,15 +66,15 @@ class EEREDataset(BaseDataset):
                             relations.append(Relation(head=triggers[relation[0]], tail=triggers[relation[1]], type=relation_type))
                     else:
                         relations.append(Relation(head=triggers[relation[0]], tail=triggers[relation[1]], type=relation_type))
-                if len(relations) == 1:
+                if len(relations) >= 1:
                     example = InputExample(
                                         id=i,
                                         triggers=triggers,
                                         relations=relations,
                                         heads=datapoint['heads'],
                                         tokens=datapoint['tokens'],
-                                        dep_path=datapoint['dep_path'],
-                                        k_walk_nodes=datapoint['k_walk_nodes'],
+                                        # dep_path=datapoint['dep_path'],
+                                        # k_walk_nodes=datapoint['k_walk_nodes'],
                                         host_sentence_mask=datapoint['host_sent']
                     )
                     examples.append(example)

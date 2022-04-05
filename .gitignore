@@ -1,7 +1,7 @@
 *__pycache__*
-datasets/hievents_v2/train.json
-datasets/hievents_v2/val.json
-datasets/hievents_v2/test.json
+datasets/hievents_v2/*train*.json
+datasets/hievents_v2/*val*.json
+datasets/hievents_v2/*test*.json
 draft.ipynb
 lightning_logs
 datasets/hievents_v2/featured
@@ -11,3 +11,4 @@ datasets/hievents_v2/wemb_featured
 datasets/hievents_v2/wemb_extended_context_featured
 tuning_result.txt
 datasets/hievents_v2/selected_sentences_featured
+datasets/hievents_v2/*_featured/

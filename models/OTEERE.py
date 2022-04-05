@@ -131,16 +131,16 @@ class OTEERE(nn.Module):
                 input_attention_mask: torch.Tensor, 
                 # ctx_emb: torch.Tensor,
                 masks: torch.Tensor, 
-                labels: torch.Tensor, 
-                dep_paths: torch.Tensor, 
+                # dep_paths: torch.Tensor, 
                 adjs: torch.Tensor, 
-                head_dists: torch.Tensor, 
-                tail_dists: torch.Tensor,
+                # head_dists: torch.Tensor, 
+                # tail_dists: torch.Tensor,
                 mapping: List[Dict[int, List[int]]], 
-                trigger_poss: List[List[List[int]]],
+                trigger_poss: List[Tuple[List[int], List[int]]],
                 input_token_ids: torch.Tensor,
-                k_walk_nodes: torch.Tensor,
-                host_sentences_masks: torch.Tensor
+                # k_walk_nodes: torch.Tensor,
+                host_sentences_masks: torch.Tensor,
+                labels: torch.Tensor, 
                 ):
         
         bs = input_ids.size(0)
@@ -215,21 +215,21 @@ class OTEERE(nn.Module):
             batch_on_host_ids.append(on_host_ids)
             if n_on_host < on_host_ids.size(0):
                 n_on_host = on_host_ids.size(0)
-            on_host_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * host_sentence #
+            # on_host_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * host_sentence #
             # print(f"on_dp_score: {on_dp_score.size()}")
-            on_host_score = on_host_score[on_host_ids]
-            on_host_maginal = F.softmax(on_host_score.float(), dim=0)
+            # on_host_score = on_host_score[on_host_ids]
+            on_host_maginal = torch.tensor([1.0/on_host_ids.size(0)] * on_host_ids.size(0), dtype=torch.float).cuda()
 
             off_host_masks = (1 - host_sentence) * masks[i]
             off_host_ids = off_host_masks.nonzero().squeeze(1)
             batch_off_host_ids.append(off_host_ids)
             if n_off_host < off_host_ids.size(0):
                 n_off_host = off_host_ids.size(0)
-            off_host_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * off_host_masks
-            off_host_score = off_host_score[off_host_ids]
-            off_host_maginal = F.softmax(off_host_score.float(), dim=0) # (ns-n_on_dp)
+            # off_host_score = torch.min(torch.stack([head_dists[i], tail_dists[i]], dim=0), dim=0)[0] * off_host_masks
+            # off_host_score = off_host_score[off_host_ids]
+            off_host_maginal = torch.tensor([1.0/off_host_ids.size(0)] * off_host_ids.size(0), dtype=torch.float).cuda() # (ns-n_on_dp)
             # null_prob = torch.mean(off_dp_maginal, dim=0).unsqueeze(0)
-            on_host_maginal = torch.cat([torch.Tensor([0.5]).cuda(), 0.5 * on_host_maginal], dim=0) # (n_on_dp + 1)
+            on_host_maginal = torch.cat([torch.Tensor([0.2]).cuda(), 0.8 * on_host_maginal], dim=0) # (n_on_dp + 1)
             # print(torch.sum(on_dp_maginal))
             # print(f"on_dp_maginal: {on_dp_maginal.size()}")
             # print(f"off_dp_maginal: {off_dp_maginal.size()}")
@@ -297,48 +297,82 @@ class OTEERE(nn.Module):
 
         # GCN
         gcn_outp = self.gcn(gcn_input, pruned_adjs, ls) # (bs x ns x gcn_hidden_size)
-
-        # Regularizarion
         full_doc_gcn_oupt = self.gcn(gcn_input, adjs, ls)
+
+        # Regularizarion and classification
+        _labels = []
+        
         full_doc_presentations = []
         full_doc_heads = []
         full_doc_tails = []
-        for i, poss in enumerate(trigger_poss):
-            head = torch.max(full_doc_gcn_oupt[i, poss[0][0]: poss[0][-1] + 1, :], dim=0)[0]
-            tail = torch.max(full_doc_gcn_oupt[i, poss[1][0]: poss[1][-1] + 1, :], dim=0)[0]
-            full_doc_presentation = torch.max(full_doc_gcn_oupt[i, :, :], dim=0)[0]
-            full_doc_heads.append(head)
-            full_doc_tails.append(tail)
-            full_doc_presentations.append(full_doc_presentation)
+        
+        heads = []
+        tails = []
+        doc_presentations = []
+        # for i, poss in enumerate(trigger_poss):
+        #     head = torch.max(full_doc_gcn_oupt[i, poss[0][0]: poss[0][-1] + 1, :], dim=0)[0]
+        #     tail = torch.max(full_doc_gcn_oupt[i, poss[1][0]: poss[1][-1] + 1, :], dim=0)[0]
+        #     full_doc_presentation = torch.max(full_doc_gcn_oupt[i, :, :], dim=0)[0]
+        #     full_doc_heads.append(head)
+        #     full_doc_tails.append(tail)
+        #     full_doc_presentations.append(full_doc_presentation)
+        # full_doc_heads = torch.stack(full_doc_heads, dim=0)
+        # full_doc_tails = torch.stack(full_doc_tails, dim=0)
+        # full_doc_presentations = torch.stack(full_doc_presentations, dim=0)
+        for i in range(bs):
+            pairs = trigger_poss[i]
+            label = labels[i]
+            for pair, lb in zip(pairs, label):
+                _labels.append(lb)
+
+                full_doc_presentation = torch.max(full_doc_gcn_oupt[i, :, :], dim=0)[0]
+                full_doc_presentations.append(full_doc_presentation)
+                
+                doc_presentation = torch.max(gcn_outp[i, :, :], dim=0)[0]
+                doc_presentations.append(doc_presentation)
+
+                head_ids, tail_ids = pair
+                
+                full_doc_head = torch.max(full_doc_gcn_oupt[i, head_ids[0]: head_ids[-1] + 1, :], dim=0)[0]
+                full_doc_tail = torch.max(full_doc_gcn_oupt[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
+                full_doc_heads.append(full_doc_head)
+                full_doc_tails.append(full_doc_tail)
+
+                head = torch.max(gcn_outp[i, head_ids[0]: head_ids[-1] + 1, :], dim=0)[0]
+                tail = torch.max(gcn_outp[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
+                heads.append(head)
+                tails.append(tail)
+        
+        _labels = torch.tensor(_labels).cuda()
+        heads = torch.stack(heads, dim= 0)
+        tails = torch.stack(tails, dim=0)
+        doc_presentations = torch.stack(doc_presentations, dim=0)
         full_doc_heads = torch.stack(full_doc_heads, dim=0)
         full_doc_tails = torch.stack(full_doc_tails, dim=0)
         full_doc_presentations = torch.stack(full_doc_presentations, dim=0)
         
         # Classification
-        heads = []
-        tails = []
-        doc_presentations = []
-        for i, poss in enumerate(trigger_poss):
-            head = torch.max(gcn_outp[i, poss[0][0]: poss[0][-1] + 1, :], dim=0)[0]
-            tail = torch.max(gcn_outp[i, poss[1][0]: poss[1][-1] + 1, :], dim=0)[0]
-            doc_presentation = torch.max(gcn_outp[i, :, :] + gcn_input[i, :, :], dim=0)[0]
-            heads.append(head)
-            tails.append(tail)
-            doc_presentations.append(doc_presentation)
-        heads = torch.stack(heads, dim= 0)
-        tails = torch.stack(tails, dim=0)
-        doc_presentations = torch.stack(doc_presentations, dim=0)
+        # for i, poss in enumerate(trigger_poss):
+        #     head = torch.max(gcn_outp[i, poss[0][0]: poss[0][-1] + 1, :], dim=0)[0]
+        #     tail = torch.max(gcn_outp[i, poss[1][0]: poss[1][-1] + 1, :], dim=0)[0]
+        #     doc_presentation = torch.max(gcn_outp[i, :, :] + gcn_input[i, :, :], dim=0)[0]
+        #     heads.append(head)
+        #     tails.append(tail)
+        #     doc_presentations.append(doc_presentation)
+        # heads = torch.stack(heads, dim= 0)
+        # tails = torch.stack(tails, dim=0)
+        # doc_presentations = torch.stack(doc_presentations, dim=0)
         presentations = torch.cat([heads, full_doc_heads, tails, full_doc_tails, doc_presentations, full_doc_presentations], dim=1)
         # print(f"presentations: {presentations.size()}")
         logits = self.classifier(presentations)
 
         # Compute loss
         regu_loss = self.loss_regu(doc_presentations, full_doc_presentations)
-        pred_loss = self.loss_pred(logits, labels)
-        loss = pred_loss\
+        pred_loss = self.loss_pred(logits, _labels)
+        loss = (1- self.regular_loss_weight - self.OT_loss_weight) * pred_loss\
             + self.regular_loss_weight * regu_loss\
             + self.OT_loss_weight * cost
-        return logits, loss, pred_loss, regu_loss, cost
+        return logits, loss, pred_loss, regu_loss, cost, _labels
 
         
 

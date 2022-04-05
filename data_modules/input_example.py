@@ -85,12 +85,12 @@ class InputFeatures:
     input_token_ids: List[int]
     input_attention_mask: List[int]
     mapping: Dict[int, List[int]]
-    label: int
-    triggers_poss: List[List[int]]
-    dep_path: List[int]
+    labels: List[int]
+    triggers: List[Tuple[List[int], List[int]]]
+    # dep_path: List[int]
     adjacent_maxtrix: Tensor
-    scores: List[Tuple[int, int]]                   # distance to triggers.
-    k_walk_nodes: List[int] = None
+    # scores: List[Tuple[int, int]]                   # distance to triggers.
+    # k_walk_nodes: List[int] = None
     host_sentence_mask: List[int] = None
     # input_presentation: Tensor
 

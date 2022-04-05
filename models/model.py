@@ -1,4 +1,5 @@
 from typing import Any, Optional
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -49,15 +50,15 @@ class PlOTEERE(pl.LightningModule):
         self.model_results = []
     
     def training_step(self, batch, batch_idx):
-        logits, loss, pred_loss, regu_loss, cost = self.model(*batch)
+        logits, loss, pred_loss, regu_loss, cost, labels = self.model(*batch)
         self.log_dict({'train_loss': loss, 'pred_loss': pred_loss, 'regu_loss': regu_loss, 'OT_loss': cost}, prog_bar=True)
         return loss
 
     def validation_step(self, batch, batch_idx) -> Optional[STEP_OUTPUT]:
-        logits, loss, pred_loss, regu_loss, cost = self.model(*batch)
+        logits, loss, pred_loss, regu_loss, cost, labels = self.model(*batch)
         # print(logits.size())
         pred_labels = torch.max(logits, dim=1).indices.cpu().numpy()
-        labels = batch[3].cpu().numpy()
+        labels = labels.cpu().numpy()
         return pred_labels, labels
     
     def validation_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
@@ -78,9 +79,9 @@ class PlOTEERE(pl.LightningModule):
         return f1
     
     def test_step(self, batch, batch_idx) -> Optional[STEP_OUTPUT]:
-        logits, loss, pred_loss, regu_loss, cost = self.model(*batch)
+        logits, loss, pred_loss, regu_loss, cost, labels = self.model(*batch)
         pred_labels = torch.max(logits, dim=1).indices.cpu().numpy()
-        labels = batch[3].cpu().numpy()
+        labels = labels.cpu().numpy()
         return pred_labels, labels
     
     def test_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
@@ -122,7 +123,7 @@ class PlOTEERE(pl.LightningModule):
                     "lr": self.hparams.training_args.encoder_lr
                 },])
         
-        optimizer = AdamW(optimizer_grouped_pretrain_parameters, eps=self.hparams.training_args.adam_epsilon)
+        optimizer = AdamW(optimizer_grouped_pretrain_parameters, betas=[0.9, 0.999], eps=1e-8)
         num_warmup_steps = 0.1 * num_batches
         scheduler = get_linear_schedule_with_warmup(
             optimizer, num_warmup_steps=num_warmup_steps, num_training_steps=num_batches
