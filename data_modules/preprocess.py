@@ -2,14 +2,11 @@ from collections import defaultdict
 import json
 import os
 from sklearn.model_selection import train_test_split
-
 import tqdm
-from datapoint_formats import get_datapoint
-from readers import tsvx_reader
+from data_modules.datapoint_formats import get_datapoint
+from data_modules.readers import tsvx_reader
 import random
-random.seed(1741)
 import numpy as np
-np.random.seed(1741)
 
 
 class Preprocessor(object):
@@ -56,7 +53,7 @@ class Preprocessor(object):
         
         return corpus
     
-    def process_and_save(self, save_path, corpus):
+    def process_and_save(self, corpus, save_path=None):
         if type(corpus) == list:
             processed_corpus = []
             for my_dict in tqdm.tqdm(corpus):
@@ -66,8 +63,9 @@ class Preprocessor(object):
                 else:
                     doc_info = False
                 processed_corpus.extend(get_datapoint(self.datapoint, my_dict, doc_info))
-            with open(save_path, 'w', encoding='utf-8') as f:
-                json.dump(processed_corpus, f, indent=6)
+            if save_path != None:
+                with open(save_path, 'w', encoding='utf-8') as f:
+                    json.dump(processed_corpus, f, indent=6)
         else:
             processed_corpus = defaultdict(list)
             for key, topic in corpus.items():
@@ -78,8 +76,9 @@ class Preprocessor(object):
                     else:
                         doc_info = False
                     processed_corpus[key].extend(get_datapoint(self.datapoint, my_dict, doc_info))
-            with open(save_path, 'w', encoding='utf-8') as f:
-                json.dump(processed_corpus, f, indent=6)
+            if save_path != None:
+                with open(save_path, 'w', encoding='utf-8') as f:
+                    json.dump(processed_corpus, f, indent=6)
 
         return processed_corpus
 
@@ -97,13 +96,13 @@ if __name__ == '__main__':
         train, validate = train_test_split(train, train_size=0.9, test_size=0.1)
 
         processed_path = 'datasets/hievents_v2/train.json'
-        train = processor.process_and_save(processed_path, train)
+        train = processor.process_and_save(train, processed_path)
 
         processed_path = 'datasets/hievents_v2/val.json'
-        val = processor.process_and_save(processed_path, validate)
+        val = processor.process_and_save(validate, processed_path)
 
         processed_path = 'datasets/hievents_v2/test.json'
-        test = processor.process_and_save(processed_path, test)
+        test = processor.process_and_save(test, processed_path)
 
         print("Statistic in HiEve")
         print("Number datapoints in dataset: {}".format(len(train + val + test)))

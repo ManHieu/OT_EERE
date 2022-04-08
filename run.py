@@ -8,6 +8,7 @@ from collections import defaultdict
 from typing import Dict
 import optuna
 from pytorch_lightning.trainer.trainer import Trainer
+from sklearn.model_selection import train_test_split
 import torch
 from torch.utils.data import DataLoader
 from transformers import HfArgumentParser
@@ -15,6 +16,7 @@ from pytorch_lightning.utilities.seed import seed_everything
 from arguments import DataTrainingArguments, ModelArguments, TrainingArguments
 from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
 from data_modules.data_modules import load_data_module
+from data_modules.preprocess import Preprocessor
 from models.model import PlOTEERE
 import shutil
 
@@ -46,10 +48,8 @@ def run(defaults: Dict):
     model_args, data_args, training_args = second_parser.parse_args_into_dataclasses(remaining_args)
     data_args.datasets = job
 
-    record_file_name = './result.txt'
     if args.tuning:
         training_args.output_dir = './tuning_experiments'
-        record_file_name = './tuning_result.txt'
     try:
         os.mkdir(training_args.output_dir)
     except FileExistsError:
@@ -148,38 +148,65 @@ def run(defaults: Dict):
     p = sum(ps)/len(ps)
     r = sum(rs)/len(rs)
     print(f"F1: {f1} - P: {p} - R: {r}")
-    with open(record_file_name, 'a', encoding='utf-8') as f:
-        f.write(f"{'--'*10} \n")
-        f.write("Add Residual connection \n")
-        f.write(f"Hyperparams: \n {defaults}\n")
-        f.write(f"F1: {f1} \n")
-        f.write(f"P: {p} \n")
-        f.write(f"R: {r} \n")
     
-    return f1
+    return p, f1, r
 
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [1e-5, 5e-5, 8e-5, 2e-4]),
+        'lr': trial.suggest_categorical('lr', [8e-5]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-6, 3e-6, 5e-6, 8e-6]), # 3e-6, 8e-6, 2e-5
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [5e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [15]), # 
-        'use_pretrained_wemb': trial.suggest_categorical('wemb', [False, True]),
+        'use_pretrained_wemb': trial.suggest_categorical('wemb', [True]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3, 4]),
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [3]),
         'hidden_size': trial.suggest_categorical('hidden_size', [768]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
         'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu']), # 'relu', 'tanh', 'hardtanh', 'silu'
-        'residual_type': 'concat'
-    }   
+        'residual_type': trial.suggest_categorical('residual_type', ['addtive'])
+    }
+
+    random_state = 624
+    print(f"Random_state: {random_state}")
+
+    dataset = args.job
+    if dataset == 'HiEve':
+        datapoint = 'hieve_datapoint_v3'
+        corpus_dir = 'datasets/hievents_v2/processed/'
+        processor = Preprocessor(dataset, datapoint)
+        corpus = processor.load_dataset(corpus_dir)
+        corpus = list(sorted(corpus, key=lambda x: x['doc_id']))
+        train, test = train_test_split(corpus, train_size=0.8, test_size=0.2, random_state=random_state)
+        train, validate = train_test_split(train, train_size=0.9, test_size=0.1, random_state=random_state)
+
+        processed_path = 'datasets/hievents_v2/train.json'
+        train = processor.process_and_save(train, processed_path)
+
+        processed_path = 'datasets/hievents_v2/val.json'
+        val = processor.process_and_save(validate, processed_path)
+
+        processed_path = 'datasets/hievents_v2/test.json'
+        test = processor.process_and_save(test, processed_path)
     
-    f1 = run(defaults=defaults)
+    p, f1, r = run(defaults=defaults)
+
+    record_file_name = 'result.txt'
+    if args.tuning:
+        record_file_name = 'tuning_result.txt'
+
+    with open(record_file_name, 'a', encoding='utf-8') as f:
+        f.write(f"{'--'*10} \n")
+        f.write(f"Random_state: {random_state}")
+        f.write(f"Hyperparams: \n {defaults}\n")
+        f.write(f"F1: {f1} \n")
+        f.write(f"P: {p} \n")
+        f.write(f"R: {r} \n")
 
     return f1
 

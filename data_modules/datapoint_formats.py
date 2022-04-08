@@ -1,6 +1,6 @@
 from itertools import combinations
 import networkx as nx
-from utils.tools import compute_sentences_similar, get_dep_path, get_new_poss
+from data_modules.utils.tools import compute_sentences_similar, get_dep_path, get_new_poss
 
 
 DATAPOINT = {}

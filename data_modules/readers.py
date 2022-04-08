@@ -8,8 +8,8 @@ np.random.seed(1741)
 import bs4
 import xml.etree.ElementTree as ET
 from collections import defaultdict
-from utils.constants import *
-from utils.tools import *
+from data_modules.utils.constants import *
+from data_modules.utils.tools import *
 # from nltk import sent_tokenize
 from bs4 import BeautifulSoup as Soup
 import csv

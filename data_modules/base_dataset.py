@@ -96,15 +96,16 @@ class BaseDataset(Dataset, ABC):
         return input_present
 
     def compute_features(self):
-        try:
-            os.mkdir(self.data_path + f'doc_selected_sentences_featured')
-        except FileExistsError:
-            pass
-        featured_path = self.data_path + f'doc_selected_sentences_featured/{self.split}.pkl'
-        if os.path.exists(featured_path):
-            with open(featured_path, 'rb') as f:
-                features = pickle.load(f)  
-        else:
+        # try:
+        #     os.mkdir(self.data_path + f'doc_selected_sentences_featured')
+        # except FileExistsError:
+        #     pass
+        # featured_path = self.data_path + f'doc_selected_sentences_featured/{self.split}.pkl'
+        # if os.path.exists(featured_path):
+        #     with open(featured_path, 'rb') as f:
+        #         features = pickle.load(f)  
+        # else:
+        if True:
             features = []
             for example in tqdm(self.examples, desc="Load features"):    
                 input_seq = " ".join(example.tokens)
@@ -173,8 +174,8 @@ class BaseDataset(Dataset, ABC):
                     # input_presentation=input_presentation
                 )
                 features.append(feature)
-            with open(featured_path, 'wb') as f:
-                pickle.dump(features, f, pickle.HIGHEST_PROTOCOL)
+            # with open(featured_path, 'wb') as f:
+            #     pickle.dump(features, f, pickle.HIGHEST_PROTOCOL)
             
         # print(f"feature: {features[0]}")
         self._warn_max_sequence_length(self.max_input_length, features)
