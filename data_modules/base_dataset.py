@@ -149,7 +149,11 @@ class BaseDataset(Dataset, ABC):
                     labels.append(label)
 
                     e1_tok_ids = relation.head.id
+                    assert relation.head.mention in ' '.join(example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1]), \
+                    f"{relation.head.mention} - {' '.join(example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1])}"
                     e2_tok_ids = relation.tail.id
+                    assert relation.tail.mention in ' '.join(example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1]), \
+                    f"{relation.tail.mention} - {' '.join(example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1])}"
                     trigger_poss = (e1_tok_ids, e2_tok_ids)
                     triggers.append(trigger_poss)
                     
