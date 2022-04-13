@@ -21,7 +21,7 @@ from models.model import PlOTEERE
 import shutil
 
 
-def run(defaults: Dict):
+def run(defaults: Dict, random_state):
     config = configparser.ConfigParser(allow_no_value=False)
     config.read(args.config_file)
     job = args.job
@@ -72,6 +72,7 @@ def run(defaults: Dict):
         output_dir = os.path.join(
             training_args.output_dir,
             f'{args.job}'
+            f'-random_state{random_state}'
             f'-{model_args.residual_type}'
             f'-lr{training_args.lr}'
             f'-e_lr{training_args.encoder_lr}'
@@ -110,6 +111,7 @@ def run(defaults: Dict):
         
         trainer = Trainer(
             # logger=tb_logger,
+            deterministic=True,
             min_epochs=training_args.num_epoches,
             max_epochs=training_args.num_epoches, 
             gpus=[args.gpu], 
@@ -154,9 +156,9 @@ def run(defaults: Dict):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [8e-5]),
+        'lr': trial.suggest_categorical('lr', [8e-5, 1e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [5e-6]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [3e-6, 5e-6, 8e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [15]), # 
@@ -165,14 +167,14 @@ def objective(trial: optuna.Trial):
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [3]),
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [3, 4]),
         'hidden_size': trial.suggest_categorical('hidden_size', [768]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
-        'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu']), # 'relu', 'tanh', 'hardtanh', 'silu'
+        'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu', 'relu', 'tanh', 'hardtanh', 'silu']), # 'relu', 'tanh', 'hardtanh', 'silu'
         'residual_type': trial.suggest_categorical('residual_type', ['addtive'])
     }
 
-    random_state = 624
+    random_state = trial.suggest_int('random_state', 1, 10000, log=True)
     print(f"Random_state: {random_state}")
 
     dataset = args.job
@@ -194,7 +196,7 @@ def objective(trial: optuna.Trial):
         processed_path = 'datasets/hievents_v2/test.json'
         test = processor.process_and_save(test, processed_path)
     
-    p, f1, r = run(defaults=defaults)
+    p, f1, r = run(defaults=defaults, random_state=random_state)
 
     record_file_name = 'result.txt'
     if args.tuning:
