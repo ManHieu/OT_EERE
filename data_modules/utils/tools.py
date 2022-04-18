@@ -147,10 +147,36 @@ def compute_sentences_similar(sent_A: List[str], sent_B: List[str], metric: str=
     return score
 
 
-def get_new_poss(poss_in_sent: int, new_sid: int, sent_span: Dict[int, Tuple[int, int, int]]):
+def get_new_poss(poss_in_sent: List[int], new_sid: int, sent_span: Dict[int, Tuple[int, int, int, int]]):
     new_poss = poss_in_sent
     for _new_sid, _, _, sent_len in sent_span.values():
         if _new_sid < new_sid:
-            new_poss += sent_len
+            new_poss = [i + sent_len for i in new_poss]
     return new_poss
+
+
+def find_sent_id(sentences: List[Dict], mention_span: List[int]):
+    """
+    Find sentence id of mention (ESL)
+    """
+    for sent in sentences:
+        token_span_doc = sent['token_span_doc']
+        if set(mention_span) == set(mention_span).intersection(set(token_span_doc)):
+            return sent['sent_id']
+    
+    return None
+
+
+def get_mention_span(span: str) -> List[int]:
+    span = [int(tok.strip()) for tok in span.split('_')]
+    return span
+
+
+def find_m_id(mention: List[int], eventdict:Dict):
+    for m_id, ev in eventdict.items():
+        # print(mention, ev['mention_span'])
+        if mention == ev['mention_span']:
+            return m_id
+    
+    return None
 

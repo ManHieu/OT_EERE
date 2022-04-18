@@ -5,10 +5,11 @@ import json
 import logging
 import os
 from collections import defaultdict
+import random
 from typing import Dict
 import optuna
 from pytorch_lightning.trainer.trainer import Trainer
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import KFold, train_test_split
 import torch
 from torch.utils.data import DataLoader
 from transformers import HfArgumentParser
@@ -36,6 +37,8 @@ def run(defaults: Dict, random_state):
             defaults[key] = None
     if job == 'HiEve':
         defaults['loss_weights'] = [6833.0/369, 6833.0/348, 6833.0/162, 6833.0/5954]
+    elif job == 'ESL':
+        defaults['loss_weights'] = [10.0, 1.0]
     
     # parse remaining arguments and divide them into three categories
     second_parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
@@ -55,11 +58,12 @@ def run(defaults: Dict, random_state):
     except FileExistsError:
         pass
 
-    seed_everything(training_args.seed)
-
     f1s = []
     ps = []
     rs = []
+    val_f1s = []
+    val_ps = []
+    val_rs = []
     for i in range(data_args.n_fold):
         print(f"TRAINING AND TESTING IN FOLD {i}: ")
         fold_dir = f'{data_args.data_dir}/{i}' if data_args.n_fold != 1 else data_args.data_dir
@@ -131,9 +135,13 @@ def run(defaults: Dict, random_state):
         trainer.test(best_model, dm)
         # print(best_model.model_results)
         p, r, f1 = best_model.model_results
+        val_p, val_r, val_f1 = best_model.best_vals
         f1s.append(f1)
         ps.append(p)
         rs.append(r)
+        val_f1s.append(val_f1)
+        val_ps.append(val_p)
+        val_rs.append(val_r)
         print(f"RESULT IN FOLD {i}: ")
         print(f"F1: {f1}")
         print(f"P: {p}")
@@ -149,16 +157,19 @@ def run(defaults: Dict, random_state):
     f1 = sum(f1s)/len(f1s)
     p = sum(ps)/len(ps)
     r = sum(rs)/len(rs)
+    val_f1 = sum(val_f1s)/len(val_f1s)
+    val_p = sum(val_ps)/len(val_ps)
+    val_r = sum(val_rs)/len(val_rs)
     print(f"F1: {f1} - P: {p} - R: {r}")
     
-    return p, f1, r
+    return p, f1, r, val_p, val_r, val_f1
 
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [8e-5, 1e-4]),
+        'lr': trial.suggest_categorical('lr', [8e-5, 1e-4, 2e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [3e-6, 5e-6, 8e-6]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-6, 3e-6, 5e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [15]), # 
@@ -167,15 +178,18 @@ def objective(trial: optuna.Trial):
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [3, 4]),
+        'seed': trial.suggest_int('seed', 1, 10000, log=True),
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3, 4]),
         'hidden_size': trial.suggest_categorical('hidden_size', [768]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
-        'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu', 'relu', 'tanh', 'hardtanh', 'silu']), # 'relu', 'tanh', 'hardtanh', 'silu'
+        'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu']), # 'relu', 'tanh', 'hardtanh', 'silu'
         'residual_type': trial.suggest_categorical('residual_type', ['addtive'])
     }
 
-    random_state = trial.suggest_int('random_state', 1, 10000, log=True)
+    random_state = defaults['seed']
     print(f"Random_state: {random_state}")
+
+    seed_everything(random_state, workers=True)
 
     dataset = args.job
     if dataset == 'HiEve':
@@ -184,8 +198,8 @@ def objective(trial: optuna.Trial):
         processor = Preprocessor(dataset, datapoint)
         corpus = processor.load_dataset(corpus_dir)
         corpus = list(sorted(corpus, key=lambda x: x['doc_id']))
-        train, test = train_test_split(corpus, train_size=0.8, test_size=0.2, random_state=random_state)
-        train, validate = train_test_split(train, train_size=0.9, test_size=0.1, random_state=random_state)
+        train, test = train_test_split(corpus, train_size=100.0/120, test_size=20.0/120, random_state=random_state)
+        train, validate = train_test_split(train, train_size=80.0/100., test_size=20.0/100, random_state=random_state)
 
         processed_path = 'datasets/hievents_v2/train.json'
         train = processor.process_and_save(train, processed_path)
@@ -196,7 +210,49 @@ def objective(trial: optuna.Trial):
         processed_path = 'datasets/hievents_v2/test.json'
         test = processor.process_and_save(test, processed_path)
     
-    p, f1, r = run(defaults=defaults, random_state=random_state)
+    elif dataset == 'ESL':
+        datapoint = 'ESL_datapoint'
+        kfold = KFold(n_splits=5)
+        processor = Preprocessor(dataset, datapoint, intra=True, inter=False)
+        corpus_dir = './datasets/EventStoryLine/annotated_data/v0.9/'
+        corpus = processor.load_dataset(corpus_dir)
+
+        _train, test = [], []
+        data = defaultdict(list)
+        for my_dict in corpus:
+            topic = my_dict['doc_id'].split('/')[0]
+            data[topic].append(my_dict)
+
+            if '37/' in my_dict['doc_id'] or '41/' in my_dict['doc_id']:
+                test.append(my_dict)
+            else:
+                _train.append(my_dict)
+
+        # print()
+        # processed_path = f"./datasets/EventStoryLine/intra_data.json"
+        # processed_data = processor.process_and_save(processed_path, data)
+
+        random.shuffle(_train)
+        for fold, (train_ids, valid_ids) in enumerate(kfold.split(_train)):
+            try:
+                os.mkdir(f"./datasets/EventStoryLine/{fold}")
+            except FileExistsError:
+                pass
+
+            train = [_train[id] for id in train_ids]
+            # print(train[0])
+            validate = [_train[id] for id in valid_ids]
+        
+            processed_path = f"./datasets/EventStoryLine/{fold}/train.json"
+            train = processor.process_and_save(train, processed_path)
+
+            processed_path = f"./datasets/EventStoryLine/{fold}/val.json"
+            validate = processor.process_and_save(validate, processed_path)
+            
+            processed_path = f"./datasets/EventStoryLine/{fold}/test.json"
+            test = processor.process_and_save(test, processed_path)
+    
+    p, f1, r, val_p, val_r, val_f1 = run(defaults=defaults, random_state=random_state)
 
     record_file_name = 'result.txt'
     if args.tuning:
@@ -204,11 +260,11 @@ def objective(trial: optuna.Trial):
 
     with open(record_file_name, 'a', encoding='utf-8') as f:
         f.write(f"{'--'*10} \n")
-        f.write(f"Random_state: {random_state}")
+        f.write(f"Random_state: {random_state}\n")
         f.write(f"Hyperparams: \n {defaults}\n")
-        f.write(f"F1: {f1} \n")
-        f.write(f"P: {p} \n")
-        f.write(f"R: {r} \n")
+        f.write(f"F1: {f1} - {val_f1} \n")
+        f.write(f"P: {p} - {val_p} \n")
+        f.write(f"R: {r} - {val_r} \n")
 
     return f1
 

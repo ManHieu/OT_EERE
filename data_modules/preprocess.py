@@ -4,7 +4,7 @@ import os
 from sklearn.model_selection import train_test_split
 import tqdm
 from data_modules.datapoint_formats import get_datapoint
-from data_modules.readers import tsvx_reader
+from data_modules.readers import cat_xml_reader, tsvx_reader
 import random
 import numpy as np
 
@@ -20,8 +20,8 @@ class Preprocessor(object):
     def register_reader(self, dataset):
         if self.dataset == 'HiEve':
             self.reader = tsvx_reader
-        # elif dataset == 'ESL':
-        #     self.reader = cat_xml_reader
+        elif dataset == 'ESL':
+            self.reader = cat_xml_reader
         # elif dataset == 'Causal-TB':
         #     self.reader = ctb_cat_reader
         else:
@@ -40,6 +40,8 @@ class Preprocessor(object):
                         my_dict = self.reader(dir_name, file_name, inter=self.inter, intra=self.intra)
                         if my_dict != None:
                             corpus.append(my_dict)
+                            # print(my_dict)
+                # break
         else:
             onlyfiles = [f for f in os.listdir(dir_name) if os.path.isfile(os.path.join(dir_name, f))]
             i = 0
@@ -58,10 +60,7 @@ class Preprocessor(object):
             processed_corpus = []
             for my_dict in tqdm.tqdm(corpus):
                 len_doc = sum([len(sentence['tokens']) for sentence in my_dict['sentences']])
-                if len_doc < 400:
-                    doc_info = True
-                else:
-                    doc_info = False
+                doc_info = True
                 processed_corpus.extend(get_datapoint(self.datapoint, my_dict, doc_info))
             if save_path != None:
                 with open(save_path, 'w', encoding='utf-8') as f:
@@ -71,10 +70,7 @@ class Preprocessor(object):
             for key, topic in corpus.items():
                 for my_dict in tqdm.tqdm(topic):
                     len_doc = sum([len(sentence['tokens']) for sentence in my_dict['sentences']])
-                    if len_doc < 400:
-                        doc_info = True
-                    else:
-                        doc_info = False
+                    doc_info = True
                     processed_corpus[key].extend(get_datapoint(self.datapoint, my_dict, doc_info))
             if save_path != None:
                 with open(save_path, 'w', encoding='utf-8') as f:
@@ -92,8 +88,8 @@ if __name__ == '__main__':
         processor = Preprocessor(dataset, datapoint)
         corpus = processor.load_dataset(corpus_dir)
         corpus = list(sorted(corpus, key=lambda x: x['doc_id']))
-        train, test = train_test_split(corpus, train_size=0.8, test_size=0.2)
-        train, validate = train_test_split(train, train_size=0.9, test_size=0.1)
+        train, test = train_test_split(corpus, train_size=100.0/120, test_size=20.0/120)
+        train, validate = train_test_split(train, train_size=80.0/100., test_size=20.0/100)
 
         processed_path = 'datasets/hievents_v2/train.json'
         train = processor.process_and_save(train, processed_path)

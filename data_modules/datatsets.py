@@ -61,7 +61,7 @@ class EEREDataset(BaseDataset):
                 relations = []
                 for relation in datapoint['labels']:
                     relation_type = self.relation_types[relation[2]]
-                    if relation_type.short == len(self.natural_relation_types.items()) - 1:
+                    if relation_type.natural == 'NoRel':
                         if random.uniform(0, 1) < self.sample:
                             relations.append(Relation(head=triggers[relation[0]], tail=triggers[relation[1]], type=relation_type))
                     else:
@@ -85,11 +85,22 @@ class EEREDataset(BaseDataset):
 @register_dataset
 class HiEveDataset(EEREDataset):
     name = 'HiEve'
-    sample = 0.4
+    sample = 0.2
 
     natural_relation_types = {
                             0: "SuperSub", 
                             1: "SubSuper", 
                             2: "Coref", 
                             3: "NoRel"
+                            }
+
+
+@register_dataset
+class ESLDataset(EEREDataset):
+    name = 'ESL'
+    sample = 1.0
+
+    natural_relation_types = {
+                            0: "PRECONDITION", 
+                            1: "NoRel"
                             }
