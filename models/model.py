@@ -18,7 +18,7 @@ class PlOTEERE(pl.LightningModule):
                 datasets: str,
                 scratch_tokenizer: str,
                 
-                # num_training_step: int
+                num_training_step: int
                 ) -> None:
         super().__init__()
         self.save_hyperparameters()
@@ -103,7 +103,7 @@ class PlOTEERE(pl.LightningModule):
     
     def configure_optimizers(self):
         "Prepare optimizer and schedule (linear warmup and decay)"
-        num_batches = self.trainer.max_epochs * len(self.train_dataloader()) / self.trainer.accumulate_grad_batches
+        num_batches = self.hparams.num_training_step / self.trainer.accumulate_grad_batches
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_pretrain_parameters = [
             {

@@ -71,7 +71,7 @@ def run(defaults: Dict, random_state):
                             data_args=data_args,
                             fold_dir=fold_dir)
         
-        # number_step_in_epoch = len(dm.train_dataloader())/training_args.gradient_accumulation_steps
+        number_step_in_epoch = len(dm.train_dataloader())/training_args.gradient_accumulation_steps
         # construct name for the output directory
         output_dir = os.path.join(
             training_args.output_dir,
@@ -109,13 +109,12 @@ def run(defaults: Dict, random_state):
         model = PlOTEERE(model_args=model_args,
                         training_args=training_args,
                         datasets=job,
-                        scratch_tokenizer=data_args.scratch_tokenizer_name_or_path
-                        # num_training_step=int(number_step_in_epoch * training_args.num_epoches)
+                        scratch_tokenizer=data_args.scratch_tokenizer_name_or_path,
+                        num_training_step=int(number_step_in_epoch * training_args.num_epoches)
                         )
         
         trainer = Trainer(
             # logger=tb_logger,
-            deterministic=True,
             min_epochs=training_args.num_epoches,
             max_epochs=training_args.num_epoches, 
             gpus=[args.gpu], 
@@ -173,7 +172,7 @@ def objective(trial: optuna.Trial):
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [15]), # 
-        'use_pretrained_wemb': trial.suggest_categorical('wemb', [True]),
+        'use_pretrained_wemb': trial.suggest_categorical('wemb', [False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
@@ -244,13 +243,13 @@ def objective(trial: optuna.Trial):
             validate = [_train[id] for id in valid_ids]
         
             processed_path = f"./datasets/EventStoryLine/{fold}/train.json"
-            train = processor.process_and_save(train, processed_path)
+            processed_train = processor.process_and_save(train, processed_path)
 
             processed_path = f"./datasets/EventStoryLine/{fold}/val.json"
-            validate = processor.process_and_save(validate, processed_path)
+            processed_validate = processor.process_and_save(validate, processed_path)
             
             processed_path = f"./datasets/EventStoryLine/{fold}/test.json"
-            test = processor.process_and_save(test, processed_path)
+            processed_test = processor.process_and_save(test, processed_path)
     
     p, f1, r, val_p, val_r, val_f1 = run(defaults=defaults, random_state=random_state)
 

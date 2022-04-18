@@ -41,7 +41,6 @@ class Preprocessor(object):
                         if my_dict != None:
                             corpus.append(my_dict)
                             # print(my_dict)
-                # break
         else:
             onlyfiles = [f for f in os.listdir(dir_name) if os.path.isfile(os.path.join(dir_name, f))]
             i = 0
