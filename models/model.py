@@ -47,7 +47,7 @@ class PlOTEERE(pl.LightningModule):
                             tune_encoder=self.tune_encoder,
                             residual_type=model_args.residual_type)
         self.model_results = []
-        self.best_vals = (0, 0, 0)
+        self.best_vals = [0, 0, 0]
     
     def training_step(self, batch, batch_idx):
         logits, loss, pred_loss, regu_loss, cost, labels = self.model(*batch)
@@ -76,8 +76,9 @@ class PlOTEERE(pl.LightningModule):
                             pred=predicts,
                             report=True)
         self.log_dict({'f1_dev': f1, 'p_dev': p, 'r_dev': r}, prog_bar=True)
-        if f1 > self.best_vals[-1]:
-            self.best_vals = (p, r, f1)
+        if f1 >= self.best_vals[-1]:
+            print((p, r, f1))
+            self.best_vals = [p, r, f1]
         return f1
     
     def test_step(self, batch, batch_idx) -> Optional[STEP_OUTPUT]:
