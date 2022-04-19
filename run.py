@@ -169,7 +169,7 @@ def objective(trial: optuna.Trial):
     defaults = {
         'lr': trial.suggest_categorical('lr', [8e-5, 1e-4, 2e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-6, 3e-6, 5e-6]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [8e-7, 1e-6, 3e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [15]), # 
@@ -179,7 +179,7 @@ def objective(trial: optuna.Trial):
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
         'seed': trial.suggest_int('seed', 1, 10000, log=True),
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3, 4]),
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3]),
         'hidden_size': trial.suggest_categorical('hidden_size', [768]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
         'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu']), # 'relu', 'tanh', 'hardtanh', 'silu'
