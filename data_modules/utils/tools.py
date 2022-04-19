@@ -38,6 +38,9 @@ def tokenized_to_origin_span(text, token_list):
     token_span = []
     pointer = 0
     for token in token_list:
+        if token not in text:
+            token_span.append([-100, -100])
+            continue
         while True:
             if token[0] == text[pointer]:
                 start = pointer
@@ -62,7 +65,8 @@ def sent_id_lookup(my_dict, start_char, end_char = None):
 
 def token_id_lookup(token_span_SENT, start_char, end_char):
     for index, token_span in enumerate(token_span_SENT):
-        if start_char >= token_span[0] and end_char <= token_span[1]:
+        char_ids = range(token_span[0], token_span[1])
+        if start_char in char_ids or (end_char-1) in char_ids:
             return index
 
 
@@ -126,8 +130,8 @@ def mapping_subtok_id(subtoks: List[str], tokens: List[str]):
     # mapping <unk> token:
     for key in range(len(tokens)):
         if mapping_dict.get(key) == None:
-            print(f"haven't_mapping_tok: {tokens[key]}")
-            mapping_dict[key] = random.randint(0, len(tokens)-1)
+            # print(f"haven't_mapping_tok: {tokens[key]}")
+            mapping_dict[key] = [random.randint(0, len(tokens)-1)]
     
     # print(f"tokens: {tokens} \nsub_tokens: {subtoks} \nmapping_dict: {mapping_dict}")
     

@@ -40,6 +40,36 @@ class EEREDataModule(pl.LightningDataModule):
         self.max_seq_len = data_args.max_seq_length
         self.batch_size = data_args.batch_size
         self.data_dir = fold_dir
+
+        self.train_data = load_dataset(
+                scratch_tokenizer=self.scratch_tokenizer,
+                name=self.data_name,
+                tokenizer=self.tokenizer,
+                encoder=self.encoder,
+                data_dir=self.data_dir,
+                max_input_length=self.max_seq_len,
+                seed=self.hparams.seed,
+                split = 'train')
+            
+        self.val_data = load_dataset(
+                scratch_tokenizer=self.scratch_tokenizer,
+                name=self.data_name,
+                tokenizer=self.tokenizer,
+                encoder=self.encoder,
+                data_dir=self.data_dir,
+                max_input_length=self.max_seq_len,
+                seed=self.hparams.seed,
+                split = 'val')
+        
+        self.test_data = load_dataset(
+                scratch_tokenizer=self.scratch_tokenizer,
+                name=self.data_name,
+                tokenizer=self.tokenizer,
+                encoder=self.encoder,
+                data_dir=self.data_dir,
+                max_input_length=self.max_seq_len,
+                seed=self.hparams.seed,
+                split = 'test')
     
     # def prepare_data(self):
     #     load_dataset(
@@ -71,41 +101,6 @@ class EEREDataModule(pl.LightningDataModule):
     #             max_input_length=self.max_seq_len,
     #             seed=self.hparams.seed,
     #             split = 'val')
-    
-    def setup(self, stage=None):
-        # Assign train/val datasets for use in dataloaders
-        if stage == "fit":
-            self.train_data = load_dataset(
-                scratch_tokenizer=self.scratch_tokenizer,
-                name=self.data_name,
-                tokenizer=self.tokenizer,
-                encoder=self.encoder,
-                data_dir=self.data_dir,
-                max_input_length=self.max_seq_len,
-                seed=self.hparams.seed,
-                split = 'train')
-            
-            self.val_data = load_dataset(
-                scratch_tokenizer=self.scratch_tokenizer,
-                name=self.data_name,
-                tokenizer=self.tokenizer,
-                encoder=self.encoder,
-                data_dir=self.data_dir,
-                max_input_length=self.max_seq_len,
-                seed=self.hparams.seed,
-                split = 'val')
-
-        # Assign test dataset for use in dataloader(s)
-        if stage == "test":
-            self.test_data = load_dataset(
-                scratch_tokenizer=self.scratch_tokenizer,
-                name=self.data_name,
-                tokenizer=self.tokenizer,
-                encoder=self.encoder,
-                data_dir=self.data_dir,
-                max_input_length=self.max_seq_len,
-                seed=self.hparams.seed,
-                split = 'test')
     
     def train_dataloader(self):
         dataloader = DataLoader(

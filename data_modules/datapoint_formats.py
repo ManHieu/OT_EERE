@@ -49,8 +49,8 @@ def hieve_datapoint(my_dict, doc_info=True):
             e2_poss = e2['token_id'] + sents_tok_span[s2][0]
 
             if e1['mention'] in tokens[e1_poss]  and e2['mention'] in tokens[e2_poss]:
-                triggers = [{'possition': [e1_poss], 'mention': e1['mention'], 'span': (e1['start_char'], e1['end_char'])},
-                            {'possition': [e2_poss], 'mention': e2['mention'], 'span': (e2['start_char'], e2['end_char'])}]
+                triggers = [{'position': [e1_poss], 'mention': e1['mention'], 'span': (e1['start_char'], e1['end_char'])},
+                            {'position': [e2_poss], 'mention': e2['mention'], 'span': (e2['start_char'], e2['end_char'])}]
             else:
                 print(f"{tokens} - {sents_tok_span}")
                 print(f"{e1_poss} - {tokens[e1_poss]} - {e1['mention']}")
@@ -100,8 +100,8 @@ def hieve_datapoint(my_dict, doc_info=True):
             
             assert e1['mention'] in tokens[e1_poss]
             assert e2['mention'] in tokens[e2_poss] 
-            triggers = [{'possition': [e1_poss], 'mention': e1['mention'], 'span': e1_span},
-                        {'possition': [e2_poss], 'mention': e2['mention'], 'span': e2_span}]
+            triggers = [{'position': [e1_poss], 'mention': e1['mention'], 'span': e1_span},
+                        {'position': [e2_poss], 'mention': e2['mention'], 'span': e2_span}]
         
         dep_tree = nx.DiGraph()
         for head, tail in zip(heads, list(range(len(tokens)))):
@@ -205,8 +205,8 @@ def hieve_datapoint_v2(my_dict, doc_info=True):
         e2_poss = get_new_poss([e2['token_id']], sents_tok_span[s2][0], sents_tok_span)
 
         if e1['mention'] in tokens[e1_poss[0]]  and e2['mention'] in tokens[e2_poss[0]]:
-            triggers = [{'possition': e1_poss, 'mention': e1['mention']},
-                        {'possition': e2_poss, 'mention': e2['mention']}]
+            triggers = [{'position': e1_poss, 'mention': e1['mention']},
+                        {'position': e2_poss, 'mention': e2['mention']}]
         else:
             print(f"{tokens} - {sents_tok_span}")
             print(f"{e1_poss} - {tokens[e1_poss]} - {e1['mention']}")
@@ -322,8 +322,8 @@ def hieve_datapoint_v3(my_dict, doc_info=True):
                 e1_poss = get_new_poss([e1['token_id']], sents_tok_span[_s1][0], sents_tok_span)
                 e2_poss = get_new_poss([e2['token_id']], sents_tok_span[_s2][0], sents_tok_span)
                 if e1['mention'] in tokens[e1_poss[0]] and e2['mention'] in tokens[e2_poss[0]]:
-                    e1_point = {'possition': e1_poss, 'mention': e1['mention'], 'sid': _s1}
-                    e2_point = {'possition': e2_poss, 'mention': e2['mention'], 'sid': _s2}
+                    e1_point = {'position': e1_poss, 'mention': e1['mention'], 'sid': _s1}
+                    e2_point = {'position': e2_poss, 'mention': e2['mention'], 'sid': _s2}
                     if e1_point not in triggers:
                         triggers.append(e1_point)
                     if e2_point not in triggers:

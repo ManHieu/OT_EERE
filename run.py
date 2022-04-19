@@ -38,7 +38,7 @@ def run(defaults: Dict, random_state):
     if job == 'HiEve':
         defaults['loss_weights'] = [6833.0/369, 6833.0/348, 6833.0/162, 6833.0/5954]
     elif job == 'ESL':
-        defaults['loss_weights'] = [10.0, 1.0]
+        defaults['loss_weights'] = [5.0/6, 1.0/6]
     
     # parse remaining arguments and divide them into three categories
     second_parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
@@ -66,12 +66,12 @@ def run(defaults: Dict, random_state):
     val_rs = []
     for i in range(data_args.n_fold):
         print(f"TRAINING AND TESTING IN FOLD {i}: ")
-        fold_dir = f'{data_args.data_dir}/{i}' if data_args.n_fold != 1 else data_args.data_dir
+        fold_dir = f'{data_args.data_dir}/{i}' # if data_args.n_fold != 1 else data_args.data_dir
         dm = load_data_module(module_name = 'EERE',
                             data_args=data_args,
                             fold_dir=fold_dir)
         
-        # number_step_in_epoch = len(dm.train_dataloader())/training_args.gradient_accumulation_steps
+        number_step_in_epoch = len(dm.train_dataloader())/training_args.gradient_accumulation_steps
         # construct name for the output directory
         output_dir = os.path.join(
             training_args.output_dir,
@@ -109,13 +109,12 @@ def run(defaults: Dict, random_state):
         model = PlOTEERE(model_args=model_args,
                         training_args=training_args,
                         datasets=job,
-                        scratch_tokenizer=data_args.scratch_tokenizer_name_or_path
-                        # num_training_step=int(number_step_in_epoch * training_args.num_epoches)
+                        scratch_tokenizer=data_args.scratch_tokenizer_name_or_path,
+                        num_training_step=int(number_step_in_epoch * training_args.num_epoches)
                         )
         
         trainer = Trainer(
             # logger=tb_logger,
-            deterministic=True,
             min_epochs=training_args.num_epoches,
             max_epochs=training_args.num_epoches, 
             gpus=[args.gpu], 
@@ -167,13 +166,13 @@ def run(defaults: Dict, random_state):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [8e-5, 1e-4, 2e-4]),
+        'lr': trial.suggest_categorical('lr', [5e-5, 1e-4, 5e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
         'encoder_lr': trial.suggest_categorical('encoder_lr', [8e-7, 1e-6, 3e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [15]), # 
-        'use_pretrained_wemb': trial.suggest_categorical('wemb', [True]),
+        'num_epoches': trial.suggest_categorical('num_epoches', [20, 30, 40]), # 
+        'use_pretrained_wemb': trial.suggest_categorical('wemb', [False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
@@ -210,47 +209,47 @@ def objective(trial: optuna.Trial):
         processed_path = 'datasets/hievents_v2/test.json'
         test = processor.process_and_save(test, processed_path)
     
-    elif dataset == 'ESL':
-        datapoint = 'ESL_datapoint'
-        kfold = KFold(n_splits=5)
-        processor = Preprocessor(dataset, datapoint, intra=True, inter=False)
-        corpus_dir = './datasets/EventStoryLine/annotated_data/v0.9/'
-        corpus = processor.load_dataset(corpus_dir)
+    # elif dataset == 'ESL':
+    #     datapoint = 'ESL_datapoint'
+    #     kfold = KFold(n_splits=5)
+    #     processor = Preprocessor(dataset, datapoint, intra=True, inter=False)
+    #     corpus_dir = './datasets/EventStoryLine/annotated_data/v0.9/'
+    #     corpus = processor.load_dataset(corpus_dir)
 
-        _train, test = [], []
-        data = defaultdict(list)
-        for my_dict in corpus:
-            topic = my_dict['doc_id'].split('/')[0]
-            data[topic].append(my_dict)
+    #     _train, test = [], []
+    #     data = defaultdict(list)
+    #     for my_dict in corpus:
+    #         topic = my_dict['doc_id'].split('/')[0]
+    #         data[topic].append(my_dict)
 
-            if '37/' in my_dict['doc_id'] or '41/' in my_dict['doc_id']:
-                test.append(my_dict)
-            else:
-                _train.append(my_dict)
+    #         if '37/' in my_dict['doc_id'] or '41/' in my_dict['doc_id']:
+    #             test.append(my_dict)
+    #         else:
+    #             _train.append(my_dict)
 
-        # print()
-        # processed_path = f"./datasets/EventStoryLine/intra_data.json"
-        # processed_data = processor.process_and_save(processed_path, data)
+    #     # print()
+    #     # processed_path = f"./datasets/EventStoryLine/intra_data.json"
+    #     # processed_data = processor.process_and_save(processed_path, data)
 
-        random.shuffle(_train)
-        for fold, (train_ids, valid_ids) in enumerate(kfold.split(_train)):
-            try:
-                os.mkdir(f"./datasets/EventStoryLine/{fold}")
-            except FileExistsError:
-                pass
+    #     random.shuffle(_train)
+    #     for fold, (train_ids, valid_ids) in enumerate(kfold.split(_train)):
+    #         try:
+    #             os.mkdir(f"./datasets/EventStoryLine/{fold}")
+    #         except FileExistsError:
+    #             pass
 
-            train = [_train[id] for id in train_ids]
-            # print(train[0])
-            validate = [_train[id] for id in valid_ids]
+    #         train = [_train[id] for id in train_ids]
+    #         # print(train[0])
+    #         validate = [_train[id] for id in valid_ids]
         
-            processed_path = f"./datasets/EventStoryLine/{fold}/train.json"
-            train = processor.process_and_save(train, processed_path)
+    #         processed_path = f"./datasets/EventStoryLine/{fold}/train.json"
+    #         processed_train = processor.process_and_save(train, processed_path)
 
-            processed_path = f"./datasets/EventStoryLine/{fold}/val.json"
-            validate = processor.process_and_save(validate, processed_path)
+    #         processed_path = f"./datasets/EventStoryLine/{fold}/test.json"
+    #         processed_validate = processor.process_and_save(validate, processed_path)
             
-            processed_path = f"./datasets/EventStoryLine/{fold}/test.json"
-            test = processor.process_and_save(test, processed_path)
+    #         processed_path = f"./datasets/EventStoryLine/{fold}/val.json"
+    #         processed_test = processor.process_and_save(test, processed_path)
     
     p, f1, r, val_p, val_r, val_f1 = run(defaults=defaults, random_state=random_state)
 
