@@ -1,4 +1,5 @@
 import argparse
+from asyncore import write
 import configparser
 import itertools
 import json
@@ -259,6 +260,7 @@ def objective(trial: optuna.Trial):
 
     with open(record_file_name, 'a', encoding='utf-8') as f:
         f.write(f"{'--'*10} \n")
+        f,write(f"Dataset: {args.job} \n")
         f.write(f"Random_state: {random_state}\n")
         f.write(f"Hyperparams: \n {defaults}\n")
         f.write(f"F1: {f1} - {val_f1} \n")
