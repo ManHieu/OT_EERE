@@ -85,7 +85,7 @@ class EEREDataset(BaseDataset):
 @register_dataset
 class HiEveDataset(EEREDataset):
     name = 'HiEve'
-    sample = 0.2
+    sample = 0.4
 
     natural_relation_types = {
                             0: "SuperSub", 

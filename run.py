@@ -67,7 +67,7 @@ def run(defaults: Dict, random_state):
     val_rs = []
     for i in range(data_args.n_fold):
         print(f"TRAINING AND TESTING IN FOLD {i}: ")
-        fold_dir = f'{data_args.data_dir}/{i}' # if data_args.n_fold != 1 else data_args.data_dir
+        fold_dir = f'{data_args.data_dir}/{i}' if data_args.n_fold != 1 else data_args.data_dir
         dm = load_data_module(module_name = 'EERE',
                             data_args=data_args,
                             fold_dir=fold_dir)
@@ -167,12 +167,12 @@ def run(defaults: Dict, random_state):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [5e-5, 1e-4, 5e-4]),
+        'lr': trial.suggest_categorical('lr', [5e-5, 8e-5, 1e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
         'encoder_lr': trial.suggest_categorical('encoder_lr', [8e-7, 1e-6, 3e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [20, 30, 40]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [15, 20, 30]), # 
         'use_pretrained_wemb': trial.suggest_categorical('wemb', [False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
@@ -260,7 +260,7 @@ def objective(trial: optuna.Trial):
 
     with open(record_file_name, 'a', encoding='utf-8') as f:
         f.write(f"{'--'*10} \n")
-        f,write(f"Dataset: {args.job} \n")
+        f.write(f"Dataset: {dataset} \n")
         f.write(f"Random_state: {random_state}\n")
         f.write(f"Hyperparams: \n {defaults}\n")
         f.write(f"F1: {f1} - {val_f1} \n")
