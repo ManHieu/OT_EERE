@@ -1,0 +1,24 @@
+Text	Rusya'nın Esad hükûmeti yanında Suriye'de operasyonlara başlaması ile uçakları birçok defa Türk hava sahasını ihlâl etti .	Ekim 2015'in başlarında beri Türkiye ve NATO , Rusya'yı Türk hava sahasını ihlal etmemesi için uyardı .	Yaklaşık iki aydan beri beş defa sınır ihlâli konusunda Rus makamları uyarıldı .	En son ikaz 15 Ekim 2015 tarihinde Türkiye Genelkurmay Başkanlığı Karargahı'nda gerçekleştirildi .	Dokuz kişilik Rus heyeti ile on iki kişilik Türk heyeti toplandı .
+Event	T0	başlaması	EVENT	56
+Event	T2	ihlal	EVENT	198
+Event	T3	uyardı	EVENT	218
+Event	T4	ihlâli	EVENT	266
+Event	T5	uyarıldı	EVENT	297
+Event	T6	ikaz	EVENT	315
+Event	T7	gerçekleştirildi	EVENT	388
+Event	T8	toplandı	EVENT	463
+Event	T1	ihlâl	EVENT	110
+Relation	T0	T1	CauseEffect	true	başlaması	ihlâl
+Relation	T1	T0	EffectCause	true	ihlâl	başlaması
+Relation	T4	T5	CauseEffect	true	ihlâli	uyarıldı
+Relation	T5	T4	EffectCause	true	uyarıldı	ihlâli
+Relation	T2	T3	CauseEffect	true	ihlal	uyardı
+Relation	T3	T2	EffectCause	true	uyardı	ihlal
+Relation	T1	T8	CauseEffect	true	ihlâl	toplandı
+Relation	T8	T1	EffectCause	true	toplandı	ihlâl
+Relation	T1	T6	CauseEffect	true	ihlâl	ikaz
+Relation	T6	T1	EffectCause	true	ikaz	ihlâl
+Relation	T4	T6	CauseEffect	true	ihlâli	ikaz
+Relation	T6	T4	EffectCause	true	ikaz	ihlâli
+Relation	T4	T1	NoRel	true	ihlâli	ihlâl
+Relation	T8	T4	NoRel	true	toplandı	ihlâli

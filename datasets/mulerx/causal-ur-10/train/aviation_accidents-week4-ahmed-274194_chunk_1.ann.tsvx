@@ -1,0 +1,56 @@
+Text	پرواز کے 2 منٹ بعد پائلٹ نے اطلاع دی کہ انجن میں آگ لگ گئی ہے -	پرواز 235 1050 فٹ زیادہ سے زیادہ بلندی تک پہنچا پھر بلندی کم ہونا شروع ہو گئی -	دریا میں گرنے سے کچھ لمحے قبل جہاز بائیں طرف جھک گیا اور ہواڈونگ پل پر جہاز کا بایاں پر ایک چلتی ٹیکسی سے ٹکرانے کے بعد پل سے ٹکرایا -	پرواز 235 ٹرانس ایشیا ایئرویز کی دوسری پرواز ہے جو ایک سال کے اندر اندر حادثے کا شکار ہوئی اس سے پہلے پرواز 222 جولائی 2014ء میں حادثے کا شکار ہوئی تھی -	جہاز پر عملے کے 5 افراد کے علاوہ 53 مسافر سوار تھے -
+Event	T0	پرواز	EVENT	0
+Event	T3	پرواز	EVENT	64
+Event	T4	پہنچا	EVENT	106
+Event	T5	شروع	EVENT	130
+Event	T7	گرنے	EVENT	153
+Event	T8	ٹکرانے	EVENT	250
+Event	T9	ٹکرایا	EVENT	270
+Event	T10	پرواز	EVENT	279
+Event	T11	پرواز	EVENT	318
+Event	T12	حادثے	EVENT	351
+Event	T13	حادثے	EVENT	408
+Event	T15	اطلاع	EVENT	28
+Event	T1	آگ	EVENT	49
+Event	T2	کم	EVENT	122
+Event	T6	جھک	EVENT	189
+Event	T16	پرواز	EVENT	381
+Event	T14	شکار	EVENT	360
+Event	T17	شکار	EVENT	417
+Event	T18	سوار	EVENT	475
+Relation	T1	T15	CauseEffect	true	آگ	اطلاع
+Relation	T15	T1	EffectCause	true	اطلاع	آگ
+Relation	T6	T8	CauseEffect	true	جھک	ٹکرانے
+Relation	T8	T6	EffectCause	true	ٹکرانے	جھک
+Relation	T1	T6	NoRel	true	آگ	جھک
+Relation	T1	T9	NoRel	true	آگ	ٹکرایا
+Relation	T11	T12	NoRel	true	پرواز	حادثے
+Relation	T12	T1	NoRel	true	حادثے	آگ
+Relation	T12	T13	NoRel	true	حادثے	حادثے
+Relation	T12	T2	NoRel	true	حادثے	کم
+Relation	T12	T5	NoRel	true	حادثے	شروع
+Relation	T13	T15	NoRel	true	حادثے	اطلاع
+Relation	T13	T17	NoRel	true	حادثے	شکار
+Relation	T13	T3	NoRel	true	حادثے	پرواز
+Relation	T13	T4	NoRel	true	حادثے	پہنچا
+Relation	T13	T9	NoRel	true	حادثے	ٹکرایا
+Relation	T15	T12	NoRel	true	اطلاع	حادثے
+Relation	T15	T14	NoRel	true	اطلاع	شکار
+Relation	T15	T17	NoRel	true	اطلاع	شکار
+Relation	T15	T3	NoRel	true	اطلاع	پرواز
+Relation	T16	T5	NoRel	true	پرواز	شروع
+Relation	T2	T12	NoRel	true	کم	حادثے
+Relation	T2	T14	NoRel	true	کم	شکار
+Relation	T2	T18	NoRel	true	کم	سوار
+Relation	T3	T13	NoRel	true	پرواز	حادثے
+Relation	T3	T15	NoRel	true	پرواز	اطلاع
+Relation	T3	T16	NoRel	true	پرواز	پرواز
+Relation	T5	T1	NoRel	true	شروع	آگ
+Relation	T5	T14	NoRel	true	شروع	شکار
+Relation	T5	T18	NoRel	true	شروع	سوار
+Relation	T6	T11	NoRel	true	جھک	پرواز
+Relation	T6	T9	NoRel	true	جھک	ٹکرایا
+Relation	T7	T0	NoRel	true	گرنے	پرواز
+Relation	T7	T12	NoRel	true	گرنے	حادثے
+Relation	T8	T1	NoRel	true	ٹکرانے	آگ
+Relation	T9	T10	NoRel	true	ٹکرایا	پرواز

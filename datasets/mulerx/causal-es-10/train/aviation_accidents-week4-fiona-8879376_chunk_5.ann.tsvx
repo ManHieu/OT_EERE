@@ -1,0 +1,55 @@
+Text	Southwest es el operador más grande del MAX , y mantener sus 34 aviones en tierra ha reducido al menos US $ 225 millones de los ingresos operativos de la aerolínea .	El avión ha sido retirado de los itinerarios de Southwest hasta el 5 de enero de 2020	La puesta en tierra del Boeing 737 MAX provocó reacciones mixtas de múltiples organizaciones .	La primera autoridad en aterrizar el MAX , la Administración de Aviación Civil de China , dijo que los accidentes " tenían ciertas similitudes " porque ambos aviones fueron entregados recientemente y se estrellaron poco después del despegue .	Boeing expresó su condolencia a los familiares de las víctimas del accidente del Vuelo 610 de Lion Air y del Vuelo 302 de Ethiopian Airlines , al mismo tiempo que defendía la aeronave contra cualquier falla hasta que las pruebas lo refutaran .
+Event	T0	mantener	EVENT	48
+Event	T1	reducido	EVENT	85
+Event	T2	retirado	EVENT	183
+Event	T3	mixtas	EVENT	310
+Event	T4	aterrizar	EVENT	371
+Event	T5	dijo	EVENT	437
+Event	T6	accidentes	EVENT	450
+Event	T7	entregados	EVENT	520
+Event	T8	estrellaron	EVENT	550
+Event	T9	despegue	EVENT	579
+Event	T10	expresó	EVENT	597
+Event	T11	condolencia	EVENT	608
+Event	T12	accidente	EVENT	657
+Event	T13	defendía	EVENT	753
+Event	T14	falla	EVENT	791
+Event	T15	pruebas	EVENT	811
+Event	T16	refutaran	EVENT	822
+Relation	T8	T6	CauseEffect	true	estrellaron	accidentes
+Relation	T6	T8	EffectCause	true	accidentes	estrellaron
+Relation	T1	T11	NoRel	true	reducido	condolencia
+Relation	T1	T6	NoRel	true	reducido	accidentes
+Relation	T11	T12	NoRel	true	condolencia	accidente
+Relation	T11	T5	NoRel	true	condolencia	dijo
+Relation	T12	T11	NoRel	true	accidente	condolencia
+Relation	T12	T16	NoRel	true	accidente	refutaran
+Relation	T12	T3	NoRel	true	accidente	mixtas
+Relation	T13	T3	NoRel	true	defendía	mixtas
+Relation	T14	T2	NoRel	true	falla	retirado
+Relation	T14	T3	NoRel	true	falla	mixtas
+Relation	T15	T0	NoRel	true	pruebas	mantener
+Relation	T15	T11	NoRel	true	pruebas	condolencia
+Relation	T15	T9	NoRel	true	pruebas	despegue
+Relation	T16	T12	NoRel	true	refutaran	accidente
+Relation	T16	T14	NoRel	true	refutaran	falla
+Relation	T16	T5	NoRel	true	refutaran	dijo
+Relation	T16	T6	NoRel	true	refutaran	accidentes
+Relation	T2	T15	NoRel	true	retirado	pruebas
+Relation	T3	T1	NoRel	true	mixtas	reducido
+Relation	T3	T2	NoRel	true	mixtas	retirado
+Relation	T4	T12	NoRel	true	aterrizar	accidente
+Relation	T4	T9	NoRel	true	aterrizar	despegue
+Relation	T5	T2	NoRel	true	dijo	retirado
+Relation	T5	T8	NoRel	true	dijo	estrellaron
+Relation	T6	T0	NoRel	true	accidentes	mantener
+Relation	T6	T15	NoRel	true	accidentes	pruebas
+Relation	T6	T16	NoRel	true	accidentes	refutaran
+Relation	T6	T2	NoRel	true	accidentes	retirado
+Relation	T6	T4	NoRel	true	accidentes	aterrizar
+Relation	T7	T0	NoRel	true	entregados	mantener
+Relation	T7	T10	NoRel	true	entregados	expresó
+Relation	T7	T11	NoRel	true	entregados	condolencia
+Relation	T7	T12	NoRel	true	entregados	accidente
+Relation	T7	T15	NoRel	true	entregados	pruebas
+Relation	T8	T10	NoRel	true	estrellaron	expresó

@@ -1,0 +1,97 @@
+Text	Sidst i marts vurderede eksperter , at den danske strategi om afbødning havde virket , men at tests kunne forbedre det .	Mangel på reagens gjorde dog , at øvrigt test-udstyr ville være nyttesløst .	Sundhedsstyrelsen offentliggjorde en simpel metode til at forberede reagens for RNA og derved øge mængden af mulige tests .	I april udtalte flere danske eksperter , at det var nødvendigt at forsøge at opnå flokimmunitet .	Flokimmunitet kan opnås ved omfattende vaccinationsprogrammer , men da det vurderedes at tage mindst et år , før man vil kunne have sådan et program klar mod coronavirussen , er alternativet , at en tilstrækkelig stor del af befolkningen , formodentlig 60-70 % , bliver smittet og dermed bliver immune , i hvert fald for en tid .
+Event	T0	vurderede	EVENT	14
+Event	T1	afbødning	EVENT	62
+Event	T2	virket	EVENT	78
+Event	T3	tests	EVENT	94
+Event	T4	forbedre	EVENT	106
+Event	T5	gjorde	EVENT	139
+Event	T6	offentliggjorde	EVENT	216
+Event	T7	reagens	EVENT	266
+Event	T8	øge	EVENT	292
+Event	T9	tests	EVENT	314
+Event	T10	udtalte	EVENT	330
+Event	T11	forsøge	EVENT	388
+Event	T12	klar	EVENT	569
+Event	T13	smittet	EVENT	690
+Event	T14	strategi	EVENT	50
+Event	T15	Mangel	EVENT	121
+Event	T16	nyttesløst	EVENT	185
+Event	T17	metode	EVENT	242
+Event	T18	flokimmunitet	EVENT	404
+Event	T19	Flokimmunitet	EVENT	420
+Event	T20	vaccinationsprogrammer	EVENT	459
+Event	T21	vurderedes	EVENT	495
+Event	T22	tage	EVENT	509
+Event	T23	coronavirussen	EVENT	578
+Event	T24	del	EVENT	638
+Event	T25	immune	EVENT	715
+Relation	T15	T16	CauseEffect	true	Mangel	nyttesløst
+Relation	T16	T15	EffectCause	true	nyttesløst	Mangel
+Relation	T17	T8	CauseEffect	true	metode	øge
+Relation	T8	T17	EffectCause	true	øge	metode
+Relation	T20	T19	CauseEffect	true	vaccinationsprogrammer	Flokimmunitet
+Relation	T19	T20	EffectCause	true	Flokimmunitet	vaccinationsprogrammer
+Relation	T13	T25	CauseEffect	true	smittet	immune
+Relation	T25	T13	EffectCause	true	immune	smittet
+Relation	T1	T22	NoRel	true	afbødning	tage
+Relation	T1	T3	NoRel	true	afbødning	tests
+Relation	T1	T4	NoRel	true	afbødning	forbedre
+Relation	T10	T14	NoRel	true	udtalte	strategi
+Relation	T10	T18	NoRel	true	udtalte	flokimmunitet
+Relation	T10	T3	NoRel	true	udtalte	tests
+Relation	T10	T9	NoRel	true	udtalte	tests
+Relation	T11	T0	NoRel	true	forsøge	vurderede
+Relation	T11	T10	NoRel	true	forsøge	udtalte
+Relation	T11	T22	NoRel	true	forsøge	tage
+Relation	T11	T24	NoRel	true	forsøge	del
+Relation	T12	T0	NoRel	true	klar	vurderede
+Relation	T12	T11	NoRel	true	klar	forsøge
+Relation	T12	T16	NoRel	true	klar	nyttesløst
+Relation	T12	T17	NoRel	true	klar	metode
+Relation	T13	T23	NoRel	true	smittet	coronavirussen
+Relation	T14	T25	NoRel	true	strategi	immune
+Relation	T15	T0	NoRel	true	Mangel	vurderede
+Relation	T15	T19	NoRel	true	Mangel	Flokimmunitet
+Relation	T15	T3	NoRel	true	Mangel	tests
+Relation	T16	T10	NoRel	true	nyttesløst	udtalte
+Relation	T16	T8	NoRel	true	nyttesløst	øge
+Relation	T17	T2	NoRel	true	metode	virket
+Relation	T18	T20	NoRel	true	flokimmunitet	vaccinationsprogrammer
+Relation	T18	T24	NoRel	true	flokimmunitet	del
+Relation	T19	T22	NoRel	true	Flokimmunitet	tage
+Relation	T2	T20	NoRel	true	virket	vaccinationsprogrammer
+Relation	T2	T22	NoRel	true	virket	tage
+Relation	T2	T5	NoRel	true	virket	gjorde
+Relation	T2	T8	NoRel	true	virket	øge
+Relation	T20	T2	NoRel	true	vaccinationsprogrammer	virket
+Relation	T20	T3	NoRel	true	vaccinationsprogrammer	tests
+Relation	T21	T22	NoRel	true	vurderedes	tage
+Relation	T21	T24	NoRel	true	vurderedes	del
+Relation	T21	T5	NoRel	true	vurderedes	gjorde
+Relation	T22	T11	NoRel	true	tage	forsøge
+Relation	T22	T12	NoRel	true	tage	klar
+Relation	T22	T13	NoRel	true	tage	smittet
+Relation	T22	T17	NoRel	true	tage	metode
+Relation	T22	T19	NoRel	true	tage	Flokimmunitet
+Relation	T22	T2	NoRel	true	tage	virket
+Relation	T23	T0	NoRel	true	coronavirussen	vurderede
+Relation	T23	T1	NoRel	true	coronavirussen	afbødning
+Relation	T23	T9	NoRel	true	coronavirussen	tests
+Relation	T24	T12	NoRel	true	del	klar
+Relation	T24	T20	NoRel	true	del	vaccinationsprogrammer
+Relation	T24	T23	NoRel	true	del	coronavirussen
+Relation	T25	T9	NoRel	true	immune	tests
+Relation	T3	T15	NoRel	true	tests	Mangel
+Relation	T5	T23	NoRel	true	gjorde	coronavirussen
+Relation	T6	T13	NoRel	true	offentliggjorde	smittet
+Relation	T6	T21	NoRel	true	offentliggjorde	vurderedes
+Relation	T6	T8	NoRel	true	offentliggjorde	øge
+Relation	T7	T12	NoRel	true	reagens	klar
+Relation	T7	T13	NoRel	true	reagens	smittet
+Relation	T7	T8	NoRel	true	reagens	øge
+Relation	T8	T13	NoRel	true	øge	smittet
+Relation	T8	T16	NoRel	true	øge	nyttesløst
+Relation	T8	T5	NoRel	true	øge	gjorde
+Relation	T8	T6	NoRel	true	øge	offentliggjorde
+Relation	T9	T10	NoRel	true	tests	udtalte
+Relation	T9	T25	NoRel	true	tests	immune

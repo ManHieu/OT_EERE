@@ -1,0 +1,24 @@
+Text	Atombomberne over Hiroshima og Nagasaki dræbte mere end 120.000 mennesker med det samme – og endnu flere på sigt .	Alligevel mener flere iagttagere , at atombomberne reddede endnu flere menneskeliv , fordi de førte til Japans kapitulation , og dermed gjorde en ende på Stillehavskrigen .	Dette er dog et meget omstridt synspunkt .	Billedet til højre , af Oppenheimer og Groves , foran det de sørgelige rester af Trinity-testtårnet , er siden blevet et symbol på begyndelsen af den såkaldte “ atomalder ” .	I 1952 blev testområdet ryddet , og det tilbageværende trinitit ( det glas , eksplosionen havde omdannet sandet til ) , blev fjernet .
+Event	T0	Atombomberne	EVENT	0
+Event	T1	dræbte	EVENT	40
+Event	T10	eksplosionen	EVENT	583
+Event	T12	fjernet	EVENT	631
+Event	T2	mener	EVENT	125
+Event	T3	reddede	EVENT	166
+Event	T5	kapitulation	EVENT	226
+Event	T6	gjorde	EVENT	251
+Event	T7	ende	EVENT	261
+Event	T8	Billedet	EVENT	331
+Event	T9	ryddet	EVENT	530
+Relation	T0	T1	CauseEffect	true	Atombomberne	dræbte
+Relation	T1	T0	EffectCause	true	dræbte	Atombomberne
+Relation	T0	T5	CauseEffect	true	Atombomberne	kapitulation
+Relation	T5	T0	EffectCause	true	kapitulation	Atombomberne
+Relation	T0	T3	NoRel	true	Atombomberne	reddede
+Relation	T10	T5	NoRel	true	eksplosionen	kapitulation
+Relation	T3	T12	NoRel	true	reddede	fjernet
+Relation	T6	T8	NoRel	true	gjorde	Billedet
+Relation	T7	T0	NoRel	true	ende	Atombomberne
+Relation	T7	T5	NoRel	true	ende	kapitulation
+Relation	T8	T0	NoRel	true	Billedet	Atombomberne
+Relation	T9	T3	NoRel	true	ryddet	reddede

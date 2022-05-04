@@ -1,0 +1,56 @@
+Text	El primer juicio por el accidente , tuvo lugar los días 24 Y 25 DE ENERO DE 2006 .	En la primera sesión del día 24 , tres militares que comparecieron como testigos asegurando que los fallecidos viajaban sin billetes .	El convenio de Varsovia , que regula el transporte aéreo , establece las limitaciones de indemnización en caso de accidente en 130.000 euros , salvo que haya negligencia de la tripulación y la compañía o que los pasajeros viajen sin billetes , ya que la responsabilidad sería ilimitada .	39	En la última sesión , los abogados de las familias , consideraron que en el juicio quedó acreditada la responsabilidad de las compañías en el accidente .
+Event	T0	juicio	EVENT	10
+Event	T1	accidente	EVENT	24
+Event	T2	sesión	EVENT	97
+Event	T3	comparecieron	EVENT	136
+Event	T4	asegurando	EVENT	164
+Event	T5	viajaban	EVENT	194
+Event	T6	regula	EVENT	248
+Event	T7	establece	EVENT	277
+Event	T8	limitaciones	EVENT	291
+Event	T9	indemnización	EVENT	307
+Event	T10	accidente	EVENT	332
+Event	T11	negligencia	EVENT	376
+Event	T12	viajen	EVENT	440
+Event	T13	sesión	EVENT	522
+Event	T14	consideraron	EVENT	562
+Event	T15	juicio	EVENT	585
+Event	T16	acreditada	EVENT	598
+Event	T17	accidente	EVENT	651
+Relation	T0	T3	NoRel	true	juicio	comparecieron
+Relation	T0	T6	NoRel	true	juicio	regula
+Relation	T1	T12	NoRel	true	accidente	viajen
+Relation	T1	T7	NoRel	true	accidente	establece
+Relation	T10	T1	NoRel	true	accidente	accidente
+Relation	T10	T4	NoRel	true	accidente	asegurando
+Relation	T10	T5	NoRel	true	accidente	viajaban
+Relation	T12	T0	NoRel	true	viajen	juicio
+Relation	T12	T1	NoRel	true	viajen	accidente
+Relation	T12	T16	NoRel	true	viajen	acreditada
+Relation	T16	T12	NoRel	true	acreditada	viajen
+Relation	T16	T7	NoRel	true	acreditada	establece
+Relation	T17	T14	NoRel	true	accidente	consideraron
+Relation	T17	T2	NoRel	true	accidente	sesión
+Relation	T17	T7	NoRel	true	accidente	establece
+Relation	T2	T1	NoRel	true	sesión	accidente
+Relation	T2	T11	NoRel	true	sesión	negligencia
+Relation	T2	T13	NoRel	true	sesión	sesión
+Relation	T2	T15	NoRel	true	sesión	juicio
+Relation	T2	T16	NoRel	true	sesión	acreditada
+Relation	T2	T8	NoRel	true	sesión	limitaciones
+Relation	T3	T11	NoRel	true	comparecieron	negligencia
+Relation	T3	T4	NoRel	true	comparecieron	asegurando
+Relation	T3	T9	NoRel	true	comparecieron	indemnización
+Relation	T4	T0	NoRel	true	asegurando	juicio
+Relation	T4	T1	NoRel	true	asegurando	accidente
+Relation	T4	T2	NoRel	true	asegurando	sesión
+Relation	T4	T3	NoRel	true	asegurando	comparecieron
+Relation	T5	T6	NoRel	true	viajaban	regula
+Relation	T6	T13	NoRel	true	regula	sesión
+Relation	T7	T2	NoRel	true	establece	sesión
+Relation	T7	T5	NoRel	true	establece	viajaban
+Relation	T7	T6	NoRel	true	establece	regula
+Relation	T8	T17	NoRel	true	limitaciones	accidente
+Relation	T9	T17	NoRel	true	indemnización	accidente
+Relation	T9	T3	NoRel	true	indemnización	comparecieron
+Relation	T9	T8	NoRel	true	indemnización	limitaciones

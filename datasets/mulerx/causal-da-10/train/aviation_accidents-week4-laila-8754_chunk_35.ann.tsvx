@@ -1,0 +1,69 @@
+Text	Kort før det amerikanske præsidentvalg i 2004 bekræftede bin Laden offentligt al-Qaeda's involvering i angrebene på USA og han indrømmede sin direkte forbindelse til angrebene .	Han sagde , at angrebene blev udført fordi " vi er frie mennesker , som ikke accepterer lovløshed , og vi vil genetablere friheden i vort land . "	Landet , bin Laden hentyder til , er formentlig Afghanistan .	Osama bin Laden fortæller desuden , at han personligt havde beordret sine tilhængere til at angribe World Trade Center , " vi havde aftalt med Mohammad Atta , Allah forbarm dig over ham , at alle operationer skulle udføres inden for 20 minutter , før Bush og hans administration kunne nå at reagere . "	En anden video , der blev fremstillet af Al Jazeera i september 2006 , viser Osama bin Laden sammen med Ramzi Binalshibh samt to flykaprere , Hamza al-Ghamdi og Wail al-Shehri , mens de forbereder sig til terrorangrebet .
+Event	T0	bekræftede	EVENT	46
+Event	T1	involvering	EVENT	89
+Event	T2	angrebene	EVENT	103
+Event	T3	indrømmede	EVENT	127
+Event	T4	angrebene	EVENT	166
+Event	T5	sagde	EVENT	182
+Event	T6	udført	EVENT	208
+Event	T7	hentyder	EVENT	344
+Event	T8	fortæller	EVENT	403
+Event	T9	beordret	EVENT	447
+Event	T10	angribe	EVENT	479
+Event	T11	aftalt	EVENT	519
+Event	T12	operationer	EVENT	583
+Event	T13	reagere	EVENT	678
+Event	T14	fremstillet	EVENT	716
+Event	T15	viser	EVENT	761
+Event	T16	forbereder	EVENT	876
+Event	T17	terrorangrebet	EVENT	895
+Event	T18	video	EVENT	699
+Event	T19	lovløshed	EVENT	266
+Event	T20	friheden	EVENT	300
+Relation	T19	T6	CauseEffect	true	lovløshed	udført
+Relation	T6	T19	EffectCause	true	udført	lovløshed
+Relation	T20	T6	CauseEffect	true	friheden	udført
+Relation	T6	T20	EffectCause	true	udført	friheden
+Relation	T0	T18	NoRel	true	bekræftede	video
+Relation	T0	T19	NoRel	true	bekræftede	lovløshed
+Relation	T0	T4	NoRel	true	bekræftede	angrebene
+Relation	T1	T8	NoRel	true	involvering	fortæller
+Relation	T11	T10	NoRel	true	aftalt	angribe
+Relation	T11	T7	NoRel	true	aftalt	hentyder
+Relation	T12	T0	NoRel	true	operationer	bekræftede
+Relation	T12	T17	NoRel	true	operationer	terrorangrebet
+Relation	T13	T19	NoRel	true	reagere	lovløshed
+Relation	T13	T4	NoRel	true	reagere	angrebene
+Relation	T14	T18	NoRel	true	fremstillet	video
+Relation	T14	T19	NoRel	true	fremstillet	lovløshed
+Relation	T15	T13	NoRel	true	viser	reagere
+Relation	T15	T2	NoRel	true	viser	angrebene
+Relation	T15	T7	NoRel	true	viser	hentyder
+Relation	T16	T2	NoRel	true	forbereder	angrebene
+Relation	T17	T20	NoRel	true	terrorangrebet	friheden
+Relation	T17	T6	NoRel	true	terrorangrebet	udført
+Relation	T17	T8	NoRel	true	terrorangrebet	fortæller
+Relation	T18	T1	NoRel	true	video	involvering
+Relation	T18	T10	NoRel	true	video	angribe
+Relation	T18	T4	NoRel	true	video	angrebene
+Relation	T19	T11	NoRel	true	lovløshed	aftalt
+Relation	T19	T2	NoRel	true	lovløshed	angrebene
+Relation	T2	T0	NoRel	true	angrebene	bekræftede
+Relation	T2	T18	NoRel	true	angrebene	video
+Relation	T20	T13	NoRel	true	friheden	reagere
+Relation	T20	T15	NoRel	true	friheden	viser
+Relation	T3	T18	NoRel	true	indrømmede	video
+Relation	T4	T15	NoRel	true	angrebene	viser
+Relation	T5	T19	NoRel	true	sagde	lovløshed
+Relation	T6	T15	NoRel	true	udført	viser
+Relation	T6	T17	NoRel	true	udført	terrorangrebet
+Relation	T6	T18	NoRel	true	udført	video
+Relation	T6	T2	NoRel	true	udført	angrebene
+Relation	T6	T4	NoRel	true	udført	angrebene
+Relation	T6	T8	NoRel	true	udført	fortæller
+Relation	T7	T0	NoRel	true	hentyder	bekræftede
+Relation	T7	T12	NoRel	true	hentyder	operationer
+Relation	T7	T4	NoRel	true	hentyder	angrebene
+Relation	T8	T4	NoRel	true	fortæller	angrebene
+Relation	T8	T5	NoRel	true	fortæller	sagde
+Relation	T9	T11	NoRel	true	beordret	aftalt

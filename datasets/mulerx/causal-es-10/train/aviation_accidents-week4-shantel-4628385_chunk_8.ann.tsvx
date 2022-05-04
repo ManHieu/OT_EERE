@@ -1,0 +1,53 @@
+Text	Las tuberías de repostaje de avión en el aeropuerto internacional Juanda habían sido usados para repostar el B-HLL tras ser reinstaladas , fruto de la construcción de nuevos puestos de estacionamiento .	La investigación descubrió que no se habían seguido todos los procedimientos cuando el sistema de tuberías fue reinstaurado en el servicio activo .	Este accidente fue reseñado en la temporada 19° de la serie Mayday : Catástrofes aéreas , del canal National Geographic Channel en el episodio " Descenso Mortal " y en Mayday: Informe Especial en el episodio " Motores Fuera " .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil - Vuelo 38 de British Airways	Cathay Pacific Categoría : Accidentes e incidentes aéreos en Hong Kong Categoría : Cathay Pacific Categoría : Hong Kong en 2010 780 Cathay Pacific Categoría : Accidentes e incidentes de Mayday : catástrofes aéreas
+Event	T0	repostaje	EVENT	16
+Event	T1	usados	EVENT	85
+Event	T2	repostar	EVENT	97
+Event	T3	reinstaladas	EVENT	124
+Event	T4	construcción	EVENT	151
+Event	T6	seguido	EVENT	247
+Event	T7	reinstaurado	EVENT	314
+Event	T8	reseñado	EVENT	370
+Event	T9	Accidente	EVENT	581
+Event	T10	Accidentes	EVENT	613
+Event	T11	Accidentes	EVENT	677
+Event	T12	Vuelo	EVENT	733
+Event	T13	Accidentes	EVENT	788
+Event	T14	incidentes	EVENT	801
+Event	T15	Accidentes	EVENT	920
+Event	T16	incidentes	EVENT	933
+Event	T17	accidente	EVENT	356
+Event	T18	investigación	EVENT	206
+Relation	T17	T18	CauseEffect	true	accidente	investigación
+Relation	T18	T17	EffectCause	true	investigación	accidente
+Relation	T0	T14	NoRel	true	repostaje	incidentes
+Relation	T0	T2	NoRel	true	repostaje	repostar
+Relation	T0	T6	NoRel	true	repostaje	seguido
+Relation	T10	T12	NoRel	true	Accidentes	Vuelo
+Relation	T10	T13	NoRel	true	Accidentes	Accidentes
+Relation	T11	T16	NoRel	true	Accidentes	incidentes
+Relation	T12	T1	NoRel	true	Vuelo	usados
+Relation	T12	T9	NoRel	true	Vuelo	Accidente
+Relation	T13	T14	NoRel	true	Accidentes	incidentes
+Relation	T13	T17	NoRel	true	Accidentes	accidente
+Relation	T13	T18	NoRel	true	Accidentes	investigación
+Relation	T13	T4	NoRel	true	Accidentes	construcción
+Relation	T15	T4	NoRel	true	Accidentes	construcción
+Relation	T15	T7	NoRel	true	Accidentes	reinstaurado
+Relation	T16	T10	NoRel	true	incidentes	Accidentes
+Relation	T16	T7	NoRel	true	incidentes	reinstaurado
+Relation	T18	T16	NoRel	true	investigación	incidentes
+Relation	T18	T2	NoRel	true	investigación	repostar
+Relation	T18	T9	NoRel	true	investigación	Accidente
+Relation	T2	T15	NoRel	true	repostar	Accidentes
+Relation	T2	T4	NoRel	true	repostar	construcción
+Relation	T2	T6	NoRel	true	repostar	seguido
+Relation	T2	T8	NoRel	true	repostar	reseñado
+Relation	T3	T13	NoRel	true	reinstaladas	Accidentes
+Relation	T3	T18	NoRel	true	reinstaladas	investigación
+Relation	T4	T10	NoRel	true	construcción	Accidentes
+Relation	T4	T11	NoRel	true	construcción	Accidentes
+Relation	T6	T4	NoRel	true	seguido	construcción
+Relation	T8	T2	NoRel	true	reseñado	repostar
+Relation	T9	T10	NoRel	true	Accidente	Accidentes
+Relation	T9	T14	NoRel	true	Accidente	incidentes
+Relation	T9	T17	NoRel	true	Accidente	accidente

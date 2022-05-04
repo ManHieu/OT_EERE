@@ -1,0 +1,1312 @@
+{
+  "id": "aviation_accidents-week4-nhung-33202155_chunk_1.ann.tsvx",
+  "text": "Air traffic controllers and members of the investigation team claim the reason for the crash was pilot error .\tThe sixteen passengers included ten Indian nationals , one Japanese , two Americans and three Nepalese .\tAll but one of the passengers and the three crew died at the scene of the accident ; one Nepalese passenger was rescued but died on the way to hospital .\tCategory : Aviation accidents and incidents in 2011 Category : Accidents and incidents involving the Beechcraft 1900\tCategory : Aviation accidents and incidents in Nepal",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "investigation",
+      "label": "EVENT",
+      "char_index": 43,
+      "sid": 0,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "claim",
+      "label": "EVENT",
+      "char_index": 62,
+      "sid": 0,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "crash",
+      "label": "EVENT",
+      "char_index": 87,
+      "sid": 0,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "error",
+      "label": "EVENT",
+      "char_index": 103,
+      "sid": 0,
+      "tid": [
+        17,
+        18
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "included",
+      "label": "EVENT",
+      "char_index": 134,
+      "sid": 1,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "died",
+      "label": "EVENT",
+      "char_index": 265,
+      "sid": 2,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "accident",
+      "label": "EVENT",
+      "char_index": 290,
+      "sid": 2,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "rescued",
+      "label": "EVENT",
+      "char_index": 328,
+      "sid": 2,
+      "tid": [
+        22,
+        23
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "accidents",
+      "label": "EVENT",
+      "char_index": 390,
+      "sid": 3,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "incidents",
+      "label": "EVENT",
+      "char_index": 404,
+      "sid": 3,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "Accidents",
+      "label": "EVENT",
+      "char_index": 433,
+      "sid": 3,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "accidents",
+      "label": "EVENT",
+      "char_index": 507,
+      "sid": 4,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "incidents",
+      "label": "EVENT",
+      "char_index": 521,
+      "sid": 4,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "died",
+      "label": "EVENT",
+      "char_index": 340,
+      "sid": 2,
+      "tid": [
+        24,
+        25
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "incidents",
+      "label": "EVENT",
+      "char_index": 447,
+      "sid": 3,
+      "tid": [
+        12,
+        13
+      ]
+    }
+  },
+  "relation": {
+    "T3-T2": "CauseEffect",
+    "T2-T3": "EffectCause",
+    "T6-T5": "CauseEffect",
+    "T5-T6": "EffectCause",
+    "T6-T7": "CauseEffect",
+    "T7-T6": "EffectCause",
+    "T0-T11": "NoRel",
+    "T0-T14": "NoRel",
+    "T0-T6": "NoRel",
+    "T1-T2": "NoRel",
+    "T1-T8": "NoRel",
+    "T10-T13": "NoRel",
+    "T10-T8": "NoRel",
+    "T13-T6": "NoRel",
+    "T14-T13": "NoRel",
+    "T3-T13": "NoRel",
+    "T4-T0": "NoRel",
+    "T4-T14": "NoRel",
+    "T6-T8": "NoRel",
+    "T9-T13": "NoRel",
+    "T9-T7": "NoRel"
+  },
+  "sentence": [
+    [
+      "Air",
+      "traffic",
+      "controllers",
+      "and",
+      "members",
+      "of",
+      "the",
+      "investigation",
+      "team",
+      "claim",
+      "the",
+      "reason",
+      "for",
+      "the",
+      "crash",
+      "was",
+      "pilot",
+      "error",
+      "."
+    ],
+    [
+      "The",
+      "sixteen",
+      "passengers",
+      "included",
+      "ten",
+      "Indian",
+      "nationals",
+      ",",
+      "one",
+      "Japanese",
+      ",",
+      "two",
+      "Americans",
+      "and",
+      "three",
+      "Nepalese",
+      "."
+    ],
+    [
+      "All",
+      "but",
+      "one",
+      "of",
+      "the",
+      "passengers",
+      "and",
+      "the",
+      "three",
+      "crew",
+      "died",
+      "at",
+      "the",
+      "scene",
+      "of",
+      "the",
+      "accident",
+      ";",
+      "one",
+      "Nepalese",
+      "passenger",
+      "was",
+      "rescued",
+      "but",
+      "died",
+      "on",
+      "the",
+      "way",
+      "to",
+      "hospital",
+      "."
+    ],
+    [
+      "Category",
+      ":",
+      "Aviation",
+      "accidents",
+      "and",
+      "incidents",
+      "in",
+      "2011",
+      "Category",
+      ":",
+      "Accidents",
+      "and",
+      "incidents",
+      "involving",
+      "the",
+      "Beechcraft",
+      "1900"
+    ],
+    [
+      "Category",
+      ":",
+      "Aviation",
+      "accidents",
+      "and",
+      "incidents",
+      "in",
+      "Nepal"
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        9
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        8
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        8
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        17
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        14
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        11
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        17
+      ],
+      "cop"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        17
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        9
+      ],
+      "ccomp"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        3
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        6
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        12
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        6
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        15
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        15
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        6
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        2
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        9
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        9
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        2
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        13
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        13
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        10
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        16
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        16
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        13
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        17
+      ],
+      [
+        2,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        18
+      ],
+      [
+        2,
+        20
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        20
+      ],
+      [
+        2,
+        22
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        2,
+        21
+      ],
+      [
+        2,
+        22
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        2,
+        22
+      ],
+      [
+        2,
+        10
+      ],
+      "parataxis"
+    ],
+    [
+      [
+        2,
+        23
+      ],
+      [
+        2,
+        24
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        24
+      ],
+      [
+        2,
+        22
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        25
+      ],
+      [
+        2,
+        27
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        26
+      ],
+      [
+        2,
+        27
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        27
+      ],
+      [
+        2,
+        24
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        28
+      ],
+      [
+        2,
+        29
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        29
+      ],
+      [
+        2,
+        27
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        30
+      ],
+      [
+        2,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      "appos"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        3
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        3
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        0
+      ],
+      "appos"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        8
+      ],
+      "appos"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        12
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        10
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        10
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        15
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        13
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        8
+      ],
+      "appos"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        0
+      ],
+      "appos"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        3
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        3
+      ],
+      "nmod"
+    ]
+  ]
+}

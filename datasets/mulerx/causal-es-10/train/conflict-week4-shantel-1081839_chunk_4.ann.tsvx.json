@@ -1,0 +1,1614 @@
+{
+  "id": "conflict-week4-shantel-1081839_chunk_4.ann.tsvx",
+  "text": "No obstante , durante el viaje fue capturado por un nav\u00edo de guerra ingl\u00e9s .\tHecho prisionero de guerra , no ser\u00eda liberado hasta 1801 .\tA su regreso Napole\u00f3n le asciende a comandante de Par\u00eds y contrae matrimonio con Laura Permon .\tSin embargo , sus desavenencias con el c\u00f3nsul Bonaparte son cada vez m\u00e1s acuciantes y llegan a su cl\u00edmax tras la proclamaci\u00f3n del Imperio en 1804 , ya que Napole\u00f3n le niega el ascenso a mariscal que s\u00ed concede a otros militares , como Berthier y Murat .\tTras un enfrentamiento , Napole\u00f3n le destituye y le env\u00eda a Arras a reclutar e instruir un nuevo cuerpo de granaderos .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "capturado",
+      "label": "EVENT",
+      "char_index": 35,
+      "sid": 0,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "liberado",
+      "label": "EVENT",
+      "char_index": 115,
+      "sid": 1,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "regreso",
+      "label": "EVENT",
+      "char_index": 142,
+      "sid": 2,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "asciende",
+      "label": "EVENT",
+      "char_index": 162,
+      "sid": 2,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "desavenencias",
+      "label": "EVENT",
+      "char_index": 251,
+      "sid": 3,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "llegan",
+      "label": "EVENT",
+      "char_index": 319,
+      "sid": 3,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "cl\u00edmax",
+      "label": "EVENT",
+      "char_index": 331,
+      "sid": 3,
+      "tid": [
+        18,
+        19
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "proclamaci\u00f3n",
+      "label": "EVENT",
+      "char_index": 346,
+      "sid": 3,
+      "tid": [
+        21,
+        22
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "niega",
+      "label": "EVENT",
+      "char_index": 400,
+      "sid": 3,
+      "tid": [
+        31,
+        32
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "ascenso",
+      "label": "EVENT",
+      "char_index": 409,
+      "sid": 3,
+      "tid": [
+        33,
+        34
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "concede",
+      "label": "EVENT",
+      "char_index": 435,
+      "sid": 3,
+      "tid": [
+        38,
+        39
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "enfrentamiento",
+      "label": "EVENT",
+      "char_index": 495,
+      "sid": 4,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "destituye",
+      "label": "EVENT",
+      "char_index": 524,
+      "sid": 4,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "env\u00eda",
+      "label": "EVENT",
+      "char_index": 539,
+      "sid": 4,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "reclutar",
+      "label": "EVENT",
+      "char_index": 555,
+      "sid": 4,
+      "tid": [
+        13,
+        14
+      ]
+    },
+    "T16": {
+      "id": "T16",
+      "text": "instruir",
+      "label": "EVENT",
+      "char_index": 566,
+      "sid": 4,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "Hecho",
+      "label": "EVENT",
+      "char_index": 77,
+      "sid": 1,
+      "tid": [
+        0,
+        1
+      ]
+    },
+    "T17": {
+      "id": "T17",
+      "text": "matrimonio",
+      "label": "EVENT",
+      "char_index": 203,
+      "sid": 2,
+      "tid": [
+        12,
+        13
+      ]
+    }
+  },
+  "relation": {
+    "T0-T1": "CauseEffect",
+    "T1-T0": "EffectCause",
+    "T12-T13": "CauseEffect",
+    "T13-T12": "EffectCause",
+    "T0-T11": "NoRel",
+    "T1-T11": "NoRel",
+    "T1-T12": "NoRel",
+    "T1-T7": "NoRel",
+    "T10-T7": "NoRel",
+    "T11-T0": "NoRel",
+    "T11-T5": "NoRel",
+    "T11-T8": "NoRel",
+    "T12-T11": "NoRel",
+    "T13-T1": "NoRel",
+    "T13-T11": "NoRel",
+    "T15-T10": "NoRel",
+    "T15-T4": "NoRel",
+    "T15-T8": "NoRel",
+    "T16-T1": "NoRel",
+    "T16-T14": "NoRel",
+    "T17-T16": "NoRel",
+    "T17-T6": "NoRel",
+    "T2-T15": "NoRel",
+    "T2-T3": "NoRel",
+    "T3-T13": "NoRel",
+    "T3-T4": "NoRel",
+    "T4-T6": "NoRel",
+    "T5-T4": "NoRel",
+    "T5-T9": "NoRel",
+    "T6-T0": "NoRel",
+    "T6-T12": "NoRel",
+    "T6-T15": "NoRel",
+    "T6-T2": "NoRel",
+    "T7-T3": "NoRel",
+    "T8-T13": "NoRel",
+    "T8-T2": "NoRel",
+    "T9-T17": "NoRel",
+    "T9-T2": "NoRel"
+  },
+  "sentence": [
+    [
+      "No",
+      "obstante",
+      ",",
+      "durante",
+      "el",
+      "viaje",
+      "fue",
+      "capturado",
+      "por",
+      "un",
+      "nav\u00edo",
+      "de",
+      "guerra",
+      "ingl\u00e9s",
+      "."
+    ],
+    [
+      "Hecho",
+      "prisionero",
+      "de",
+      "guerra",
+      ",",
+      "no",
+      "ser\u00eda",
+      "liberado",
+      "hasta",
+      "1801",
+      "."
+    ],
+    [
+      "A",
+      "su",
+      "regreso",
+      "Napole\u00f3n",
+      "le",
+      "asciende",
+      "a",
+      "comandante",
+      "de",
+      "Par\u00eds",
+      "y",
+      "contrae",
+      "matrimonio",
+      "con",
+      "Laura",
+      "Permon",
+      "."
+    ],
+    [
+      "Sin",
+      "embargo",
+      ",",
+      "sus",
+      "desavenencias",
+      "con",
+      "el",
+      "c\u00f3nsul",
+      "Bonaparte",
+      "son",
+      "cada",
+      "vez",
+      "m\u00e1s",
+      "acuciantes",
+      "y",
+      "llegan",
+      "a",
+      "su",
+      "cl\u00edmax",
+      "tras",
+      "la",
+      "proclamaci\u00f3n",
+      "del",
+      "Imperio",
+      "en",
+      "1804",
+      ",",
+      "ya",
+      "que",
+      "Napole\u00f3n",
+      "le",
+      "niega",
+      "el",
+      "ascenso",
+      "a",
+      "mariscal",
+      "que",
+      "s\u00ed",
+      "concede",
+      "a",
+      "otros",
+      "militares",
+      ",",
+      "como",
+      "Berthier",
+      "y",
+      "Murat",
+      "."
+    ],
+    [
+      "Tras",
+      "un",
+      "enfrentamiento",
+      ",",
+      "Napole\u00f3n",
+      "le",
+      "destituye",
+      "y",
+      "le",
+      "env\u00eda",
+      "a",
+      "Arras",
+      "a",
+      "reclutar",
+      "e",
+      "instruir",
+      "un",
+      "nuevo",
+      "cuerpo",
+      "de",
+      "granaderos",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        7
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      "fixed"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        0
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        7
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      "aux"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        10
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        7
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        10
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        7
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        7
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      "aux"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        7
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        5
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        5
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        7
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        5
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        11
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        11
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        14
+      ],
+      "flat"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        5
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        13
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      "fixed"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        0
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        13
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        7
+      ],
+      "appos"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        13
+      ],
+      "cop"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        13
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        15
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        13
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        18
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        18
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        15
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        21
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        20
+      ],
+      [
+        3,
+        21
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        21
+      ],
+      [
+        3,
+        15
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        22
+      ],
+      [
+        3,
+        23
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        23
+      ],
+      [
+        3,
+        21
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        24
+      ],
+      [
+        3,
+        25
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        25
+      ],
+      [
+        3,
+        21
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        26
+      ],
+      [
+        3,
+        31
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        27
+      ],
+      [
+        3,
+        31
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        28
+      ],
+      [
+        3,
+        27
+      ],
+      "fixed"
+    ],
+    [
+      [
+        3,
+        29
+      ],
+      [
+        3,
+        31
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        30
+      ],
+      [
+        3,
+        31
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        31
+      ],
+      [
+        3,
+        15
+      ],
+      "advcl"
+    ],
+    [
+      [
+        3,
+        32
+      ],
+      [
+        3,
+        33
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        33
+      ],
+      [
+        3,
+        31
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        34
+      ],
+      [
+        3,
+        35
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        35
+      ],
+      [
+        3,
+        33
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        36
+      ],
+      [
+        3,
+        38
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        37
+      ],
+      [
+        3,
+        38
+      ],
+      "advcl"
+    ],
+    [
+      [
+        3,
+        38
+      ],
+      [
+        3,
+        33
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        39
+      ],
+      [
+        3,
+        41
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        40
+      ],
+      [
+        3,
+        41
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        41
+      ],
+      [
+        3,
+        38
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        42
+      ],
+      [
+        3,
+        44
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        43
+      ],
+      [
+        3,
+        44
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        44
+      ],
+      [
+        3,
+        41
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        45
+      ],
+      [
+        3,
+        46
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        46
+      ],
+      [
+        3,
+        44
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        47
+      ],
+      [
+        3,
+        13
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        9
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        6
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        11
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        9
+      ],
+      "iobj"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        13
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        9
+      ],
+      "advcl"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        15
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        13
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        18
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        17
+      ],
+      [
+        4,
+        18
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        18
+      ],
+      [
+        4,
+        13
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        19
+      ],
+      [
+        4,
+        20
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        21
+      ],
+      [
+        4,
+        6
+      ],
+      "punct"
+    ]
+  ]
+}

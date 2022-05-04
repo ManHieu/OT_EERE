@@ -1,0 +1,23 @@
+Text	Sezon finalinde Ahsoka , Darth Vader ile Malachor - V'deki bir Sith tapınağının içinde düello yapar ve arkadaşlarının Vader'dan ve tapınağın yıkımından kaçmasına yardım eder .	Bölüm sona ererken , Darth Vader'ın yaralı olduğu ve tapınaktan ayrıldığı , yeşil - beyaz bir baykuş tarafından izlenir .	Daha önce dizide Ahsoka'ya eşlik eden ve Mortis'in Kızı'nın avatarı olduğu ortaya çıkan baykuş , Ahsoka'nın tapınaktaki bir kapıdan gittiğini gördüğümüz yere doğru uçar .	Filoni , karakterin hala hayatta olduğuna söylesede Ahsoka'nın kaderinin " biraz açık uçlu " olduğunu söyledi .	Dördüncü sezonunun bir bölümünde Ahsoka'nın Vader ile olan dövüşünün sonucu göründü .
+Event	T0	yapar	EVENT	94
+Event	T1	eder	EVENT	169
+Event	T3	yaralı	EVENT	212
+Event	T4	izlenir	EVENT	288
+Event	T5	gittiğini	EVENT	430
+Event	T6	uçar	EVENT	462
+Event	T7	söylesede	EVENT	511
+Event	T8	söyledi	EVENT	571
+Event	T9	göründü	EVENT	657
+Event	T2	ayrıldığı	EVENT	240
+Relation	T0	T3	CauseEffect	true	yapar	yaralı
+Relation	T3	T0	EffectCause	true	yaralı	yapar
+Relation	T5	T6	CauseEffect	true	gittiğini	uçar
+Relation	T6	T5	EffectCause	true	uçar	gittiğini
+Relation	T0	T2	NoRel	true	yapar	ayrıldığı
+Relation	T1	T7	NoRel	true	eder	söylesede
+Relation	T3	T8	NoRel	true	yaralı	söyledi
+Relation	T4	T0	NoRel	true	izlenir	yapar
+Relation	T4	T5	NoRel	true	izlenir	gittiğini
+Relation	T7	T9	NoRel	true	söylesede	göründü
+Relation	T8	T3	NoRel	true	söyledi	yaralı
+Relation	T9	T4	NoRel	true	göründü	izlenir

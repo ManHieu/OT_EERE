@@ -1,0 +1,17 @@
+Text	BANGLADEŞ KURTULUŞ SAVAŞI , geçmişte Doğu Pakistan adını taşıyan bölgede gerçekleşen ve Bengalce konuşan halkın Bangladeş adı altında kendi kaderini tayin hakkı kapsamındaki bağımsızlığıyla sonuçlanan silahlı çatışmadır .	1947'de Hindistan'dan bağımsız Pakistan devletinin kuruluşu ilan edildi .	Bangladeş de , Doğu Pakistan adıyla bu devlete bağlandı .	Hindistan'ın elinde kalan topraklar bu iki Pakistan'ı birbirinden ayırıyor ve bağlantıyı kesiyordu .	Ayrıca Doğu Pakistan'ın elinde kalan toprakların İngiliz işgalcilerin özellikle ihmal ettiği topraklar olması zaman içinde çeşitli problemlere yol açtı .
+Event	T1	gerçekleşen	EVENT	73
+Event	T2	çatışmadır	EVENT	209
+Event	T3	edildi	EVENT	287
+Event	T4	bağlandı	EVENT	343
+Event	T5	ayırıyor	EVENT	420
+Event	T6	kesiyordu	EVENT	443
+Event	T7	açtı	EVENT	602
+Event	T8	BANGLADEŞ KURTULUŞ SAVAŞI	EVENT	0
+Event	T9	bağımsızlığıyla	EVENT	174
+Relation	T3	T4	CauseEffect	true	edildi	bağlandı
+Relation	T4	T3	EffectCause	true	bağlandı	edildi
+Relation	T2	T8	NoRel	true	çatışmadır	BANGLADEŞ KURTULUŞ SAVAŞI
+Relation	T5	T1	NoRel	true	ayırıyor	gerçekleşen
+Relation	T8	T5	NoRel	true	BANGLADEŞ KURTULUŞ SAVAŞI	ayırıyor
+Relation	T8	T7	NoRel	true	BANGLADEŞ KURTULUŞ SAVAŞI	açtı
+Relation	T9	T1	NoRel	true	bağımsızlığıyla	gerçekleşen

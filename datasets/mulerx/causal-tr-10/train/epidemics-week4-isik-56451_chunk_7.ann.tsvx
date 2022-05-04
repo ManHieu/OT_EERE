@@ -1,0 +1,78 @@
+Text	Septisemik vebada , bakteriyel endotoksinler vücutta küçük pıhtılara ve muhtemelen iskemik nekroza ( o dokuya dolaşım / perfüzyon eksikliği nedeniyle doku ölümü ) neden olan yaygın damar içi pıhtılaşmaya ( DIC ) neden olur .	DIC , vücudun pıhtılaşma kaynaklarının tükenmesine neden olur , böylece artık kanamayı kontrol edemez .	Sonuç olarak , ciltte ve diğer organlarda kanama olur ve bu da kırmızı ve / veya siyah düzensiz döküntü ve hemoptizi / hematemez ( kan öksürme / kusma ) neden olabilir .	Deride böcek ısırıklarına benzeyen yumrular vardır ; bunlar genellikle kırmızı ve bazen merkezde beyazdır .	Tedavi edilmezse septisemik veba genellikle ölümcüldür .
+Event	T0	nekroza	EVENT	91
+Event	T1	ölümü	EVENT	155
+Event	T2	kanama	EVENT	371
+Event	T3	döküntü	EVENT	425
+Event	T4	öksürme	EVENT	464
+Event	T5	kusma	EVENT	474
+Event	T6	ölümcüldür	EVENT	651
+Event	T7	vebada	EVENT	11
+Event	T8	olur	EVENT	218
+Event	T9	pıhtılaşmaya	EVENT	191
+Event	T10	endotoksinler	EVENT	31
+Event	T11	DIC	EVENT	225
+Event	T12	DIC	EVENT	206
+Event	T13	tükenmesine	EVENT	264
+Event	T14	hemoptizi	EVENT	436
+Event	T15	hematemez	EVENT	448
+Event	T16	yumrular	EVENT	534
+Event	T17	veba	EVENT	635
+Relation	T10	T7	CauseEffect	true	endotoksinler	vebada
+Relation	T7	T10	EffectCause	true	vebada	endotoksinler
+Relation	T10	T9	CauseEffect	true	endotoksinler	pıhtılaşmaya
+Relation	T9	T10	EffectCause	true	pıhtılaşmaya	endotoksinler
+Relation	T9	T0	CauseEffect	true	pıhtılaşmaya	nekroza
+Relation	T0	T9	EffectCause	true	nekroza	pıhtılaşmaya
+Relation	T9	T1	CauseEffect	true	pıhtılaşmaya	ölümü
+Relation	T1	T9	EffectCause	true	ölümü	pıhtılaşmaya
+Relation	T12	T1	CauseEffect	true	DIC	ölümü
+Relation	T1	T12	EffectCause	true	ölümü	DIC
+Relation	T12	T0	CauseEffect	true	DIC	nekroza
+Relation	T0	T12	EffectCause	true	nekroza	DIC
+Relation	T10	T12	CauseEffect	true	endotoksinler	DIC
+Relation	T12	T10	EffectCause	true	DIC	endotoksinler
+Relation	T11	T13	CauseEffect	true	DIC	tükenmesine
+Relation	T13	T11	EffectCause	true	tükenmesine	DIC
+Relation	T13	T2	CauseEffect	true	tükenmesine	kanama
+Relation	T2	T13	EffectCause	true	kanama	tükenmesine
+Relation	T2	T3	CauseEffect	true	kanama	döküntü
+Relation	T3	T2	EffectCause	true	döküntü	kanama
+Relation	T2	T14	CauseEffect	true	kanama	hemoptizi
+Relation	T14	T2	EffectCause	true	hemoptizi	kanama
+Relation	T2	T15	CauseEffect	true	kanama	hematemez
+Relation	T15	T2	EffectCause	true	hematemez	kanama
+Relation	T2	T4	CauseEffect	true	kanama	öksürme
+Relation	T4	T2	EffectCause	true	öksürme	kanama
+Relation	T2	T5	CauseEffect	true	kanama	kusma
+Relation	T5	T2	EffectCause	true	kusma	kanama
+Relation	T7	T6	CauseEffect	true	vebada	ölümcüldür
+Relation	T6	T7	EffectCause	true	ölümcüldür	vebada
+Relation	T7	T16	CauseEffect	true	vebada	yumrular
+Relation	T16	T7	EffectCause	true	yumrular	vebada
+Relation	T17	T6	CauseEffect	true	veba	ölümcüldür
+Relation	T6	T17	EffectCause	true	ölümcüldür	veba
+Relation	T1	T11	NoRel	true	ölümü	DIC
+Relation	T1	T13	NoRel	true	ölümü	tükenmesine
+Relation	T1	T6	NoRel	true	ölümü	ölümcüldür
+Relation	T10	T0	NoRel	true	endotoksinler	nekroza
+Relation	T11	T0	NoRel	true	DIC	nekroza
+Relation	T11	T14	NoRel	true	DIC	hemoptizi
+Relation	T11	T4	NoRel	true	DIC	öksürme
+Relation	T12	T16	NoRel	true	DIC	yumrular
+Relation	T12	T4	NoRel	true	DIC	öksürme
+Relation	T12	T8	NoRel	true	DIC	olur
+Relation	T13	T17	NoRel	true	tükenmesine	veba
+Relation	T13	T4	NoRel	true	tükenmesine	öksürme
+Relation	T13	T6	NoRel	true	tükenmesine	ölümcüldür
+Relation	T16	T10	NoRel	true	yumrular	endotoksinler
+Relation	T16	T8	NoRel	true	yumrular	olur
+Relation	T2	T11	NoRel	true	kanama	DIC
+Relation	T4	T1	NoRel	true	öksürme	ölümü
+Relation	T6	T15	NoRel	true	ölümcüldür	hematemez
+Relation	T7	T0	NoRel	true	vebada	nekroza
+Relation	T7	T9	NoRel	true	vebada	pıhtılaşmaya
+Relation	T8	T10	NoRel	true	olur	endotoksinler
+Relation	T8	T2	NoRel	true	olur	kanama
+Relation	T8	T5	NoRel	true	olur	kusma
+Relation	T9	T13	NoRel	true	pıhtılaşmaya	tükenmesine
+Relation	T9	T14	NoRel	true	pıhtılaşmaya	hemoptizi

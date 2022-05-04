@@ -1,0 +1,36 @@
+Text	I september 2005 udgav WHO en fornyet udgave af dens pandemiplan fra 1999 .	Årsagen til denne nye udgave er den tiltagende globale spredning af fugleinfluenza af typen H5N1 .	Planen indeholder seks faser , der hver beskriver et stadie på vejen til en pandemi .	Alt efter hvordan smittesituationen ser ud globalt , bliver det tilhørende mål til den aktuelle fase søgt opfyldt .	+----------------------------------- +-----------------------------------+ | Fase | Mål | +=== ================ ================+= ================ ================ ==+ | FASE 1 Ingen nye influenzatyper |
+Event	T0	udgav	EVENT	17
+Event	T1	spredning	EVENT	131
+Event	T2	beskriver	EVENT	215
+Event	T3	pandemi	EVENT	251
+Event	T4	ser	EVENT	297
+Event	T5	opfyldt	EVENT	367
+Event	T6	pandemiplan	EVENT	53
+Event	T7	fugleinfluenza	EVENT	144
+Event	T8	tiltagende	EVENT	112
+Event	T9	faser	EVENT	198
+Event	T10	Planen	EVENT	175
+Event	T11	smittesituationen	EVENT	279
+Event	T12	mål	EVENT	336
+Event	T13	fase	EVENT	357
+Event	T14	fornyet udgave	EVENT	30
+Relation	T7	T14	CauseEffect	true	fugleinfluenza	fornyet udgave
+Relation	T14	T7	EffectCause	true	fornyet udgave	fugleinfluenza
+Relation	T3	T9	CauseEffect	true	pandemi	faser
+Relation	T9	T3	EffectCause	true	faser	pandemi
+Relation	T0	T13	NoRel	true	udgav	fase
+Relation	T0	T2	NoRel	true	udgav	beskriver
+Relation	T1	T3	NoRel	true	spredning	pandemi
+Relation	T10	T3	NoRel	true	Planen	pandemi
+Relation	T11	T2	NoRel	true	smittesituationen	beskriver
+Relation	T14	T5	NoRel	true	fornyet udgave	opfyldt
+Relation	T2	T13	NoRel	true	beskriver	fase
+Relation	T3	T10	NoRel	true	pandemi	Planen
+Relation	T3	T2	NoRel	true	pandemi	beskriver
+Relation	T5	T7	NoRel	true	opfyldt	fugleinfluenza
+Relation	T6	T7	NoRel	true	pandemiplan	fugleinfluenza
+Relation	T7	T11	NoRel	true	fugleinfluenza	smittesituationen
+Relation	T7	T13	NoRel	true	fugleinfluenza	fase
+Relation	T7	T4	NoRel	true	fugleinfluenza	ser
+Relation	T7	T9	NoRel	true	fugleinfluenza	faser
+Relation	T9	T12	NoRel	true	faser	mål

@@ -1,0 +1,45 @@
+Text	Rusya Savunma Bakanlığı'nın yaptığı açıklamaya göre ise Hmeymim Hava Üssü'ne geri dönüş rotasında olan Su - 24 saldırı uçağı , Türk sınırından bir kilometre uzaklıkta ve 6 bin metre yükseklikte olduğu sırada Türk F- 16'ları tarafından Suriye sınırları içerisinde düşürüldü .	Yaptıkları analizler sonucunda ise kesinlikle Türk sınırını ihlâl etmediklerini iddia etti .	İlk açıklamalarında ise uçağın büyük ihtimal Suriye sınırları içerisinden karadan edilen ateş sonucunda düşürüldüğü söylenmişti .	Ateş edilen uçaktan atlayarak Kürt Dağı'na düşen ve Esad hükûmetine bağlı askerler tarafından sağ olarak bulunarak Lazkiye'deki Rus üssüne ulaştırılan Rus pilot Konstantin Murachtin , Türk uçakları tarafından " telsiz ya da göz teması olarak hiçbir ikaz almadıklarını ve Türk hava sahasını ihlâl etmediklerini " iddia etti .	İki pilot uçağın ateş alması ile birlikte paraşütle atladı .
+Event	T0	açıklamaya	EVENT	36
+Event	T10	atladı	EVENT	875
+Event	T12	olduğu	EVENT	194
+Event	T13	açıklamalarında	EVENT	372
+Event	T14	düşürüldüğü	EVENT	472
+Event	T17	bulunarak	EVENT	603
+Event	T18	ulaştırılan	EVENT	637
+Event	T2	düşürüldü	EVENT	263
+Event	T3	analizler	EVENT	286
+Event	T4	iddia etti	EVENT	355
+Event	T6	atlayarak	EVENT	518
+Event	T7	düşen	EVENT	541
+Event	T8	iddia etti	EVENT	810
+Relation	T3	T4	CauseEffect	true	analizler	iddia etti
+Relation	T4	T3	EffectCause	true	iddia etti	analizler
+Relation	T2	T3	CauseEffect	true	düşürüldü	analizler
+Relation	T3	T2	EffectCause	true	analizler	düşürüldü
+Relation	T6	T7	CauseEffect	true	atlayarak	düşen
+Relation	T7	T6	EffectCause	true	düşen	atlayarak
+Relation	T7	T17	CauseEffect	true	düşen	bulunarak
+Relation	T17	T7	EffectCause	true	bulunarak	düşen
+Relation	T17	T18	CauseEffect	true	bulunarak	ulaştırılan
+Relation	T18	T17	EffectCause	true	ulaştırılan	bulunarak
+Relation	T2	T0	CauseEffect	true	düşürüldü	açıklamaya
+Relation	T0	T2	EffectCause	true	açıklamaya	düşürüldü
+Relation	T2	T6	CauseEffect	true	düşürüldü	atlayarak
+Relation	T6	T2	EffectCause	true	atlayarak	düşürüldü
+Relation	T2	T10	CauseEffect	true	düşürüldü	atladı
+Relation	T10	T2	EffectCause	true	atladı	düşürüldü
+Relation	T10	T0	NoRel	true	atladı	açıklamaya
+Relation	T10	T4	NoRel	true	atladı	iddia etti
+Relation	T12	T2	NoRel	true	olduğu	düşürüldü
+Relation	T14	T0	NoRel	true	düşürüldüğü	açıklamaya
+Relation	T14	T18	NoRel	true	düşürüldüğü	ulaştırılan
+Relation	T17	T3	NoRel	true	bulunarak	analizler
+Relation	T18	T10	NoRel	true	ulaştırılan	atladı
+Relation	T18	T14	NoRel	true	ulaştırılan	düşürüldüğü
+Relation	T18	T2	NoRel	true	ulaştırılan	düşürüldü
+Relation	T18	T6	NoRel	true	ulaştırılan	atlayarak
+Relation	T18	T8	NoRel	true	ulaştırılan	iddia etti
+Relation	T4	T6	NoRel	true	iddia etti	atlayarak
+Relation	T6	T3	NoRel	true	atlayarak	analizler
+Relation	T8	T10	NoRel	true	iddia etti	atladı
+Relation	T8	T12	NoRel	true	iddia etti	olduğu

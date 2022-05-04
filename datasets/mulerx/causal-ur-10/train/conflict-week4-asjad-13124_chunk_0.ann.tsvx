@@ -1,0 +1,40 @@
+Text	2003ء میں عراق پر اتحادی افواج کے حملے کے ہفتوں بعد امریکی افواج نے دار الحکومت بغداد کی جانب پیش قدمی کی اور شہر کے جنوبی علاقوں میں عراقی افواج کی کمزور مزاحمت کے بعد 5 اپریل کو بغداد کے ہوائی اڈے پر قبضہ کرنے میں کامیاب ہو گئے ۔	دو روز بعد صدام حسین کے محلات پر قبضہ کرتے ہوئے وہاں چھاؤنیاں قائم کیں ۔	محلات پر قبضے اور اس کی خبر پوری دنیا میں نشر ہونے کے بعد امریکی افواج نے بغداد میں عراقی افواج کو ہتھیار ڈالنے کی ہدایت کی اور بصورت دیگر شہر پر دھاوا بولنے کی دھمکی دی ۔	عراقی حکومت کے عہدیداران اپنی روپوش تھے اور 9 اپریل 2003ء کو عراق کا دار الحکومت بغداد ایک مرتبہ پھر بیرونی حملہ آوروں کا نشانہ بن گیا اور صدام حسین کی حکومت کے خاتمے کا باقاعدہ اعلان کر دیا گیا ۔	اس موقع پر جس واقعے کی سب سے زیادہ تشہیر کی گئی وہ وسطی بغداد میں صدر صدام حسین کے مجسمے کی زمین بوسی تھی ۔
+Event	T0	حملے	EVENT	34
+Event	T1	مزاحمت	EVENT	155
+Event	T2	کرنے	EVENT	207
+Event	T3	کامیاب	EVENT	216
+Event	T4	قبضے	EVENT	314
+Event	T5	خبر	EVENT	329
+Event	T6	ہونے	EVENT	351
+Event	T7	بولنے	EVENT	457
+Event	T8	دی	EVENT	472
+Event	T9	روپوش	EVENT	507
+Event	T10	حملہ	EVENT	585
+Event	T11	خاتمے	EVENT	638
+Event	T12	اعلان	EVENT	655
+Event	T13	واقعے	EVENT	688
+Event	T14	تشہیر	EVENT	709
+Event	T15	بوسی	EVENT	771
+Relation	T0	T10	NoRel	true	حملے	حملہ
+Relation	T0	T4	NoRel	true	حملے	قبضے
+Relation	T0	T7	NoRel	true	حملے	بولنے
+Relation	T1	T13	NoRel	true	مزاحمت	واقعے
+Relation	T1	T4	NoRel	true	مزاحمت	قبضے
+Relation	T10	T3	NoRel	true	حملہ	کامیاب
+Relation	T11	T0	NoRel	true	خاتمے	حملے
+Relation	T11	T1	NoRel	true	خاتمے	مزاحمت
+Relation	T12	T1	NoRel	true	اعلان	مزاحمت
+Relation	T12	T15	NoRel	true	اعلان	بوسی
+Relation	T12	T4	NoRel	true	اعلان	قبضے
+Relation	T12	T8	NoRel	true	اعلان	دی
+Relation	T14	T12	NoRel	true	تشہیر	اعلان
+Relation	T14	T2	NoRel	true	تشہیر	کرنے
+Relation	T15	T2	NoRel	true	بوسی	کرنے
+Relation	T2	T0	NoRel	true	کرنے	حملے
+Relation	T2	T11	NoRel	true	کرنے	خاتمے
+Relation	T2	T5	NoRel	true	کرنے	خبر
+Relation	T4	T6	NoRel	true	قبضے	ہونے
+Relation	T5	T2	NoRel	true	خبر	کرنے
+Relation	T5	T9	NoRel	true	خبر	روپوش
+Relation	T7	T0	NoRel	true	بولنے	حملے
+Relation	T8	T0	NoRel	true	دی	حملے

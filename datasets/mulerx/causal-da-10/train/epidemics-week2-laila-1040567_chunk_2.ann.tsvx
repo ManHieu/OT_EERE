@@ -1,0 +1,22 @@
+Text	I Storbritannien var anden bølge i foråret 1891 mere dødelig end den første bølge , og tredje bølge i vinteren 1892 ramte ligeledes hårdt .	For Danmarks vedkommende menes det første tilfælde at stamme fra et skib fra Sankt Petersborg , der kom til København i december 1889 .	Skibsføreren blev syg og indlagt .	Få dage efter kom de første danske tilfælde da seks soldater fra en københavnsk kasserne meldte sig syge .	Den 12. december 1889 kunne Kjøbenhavns Børs-Tidende skrive at " Kjøbenhavns militære Hospitaler er fulde af Patienter " .
+Event	T10	syge	EVENT	411
+Event	T11	skrive	EVENT	471
+Event	T3	ramte	EVENT	116
+Event	T4	tilfælde	EVENT	182
+Event	T5	kom	EVENT	240
+Event	T7	indlagt	EVENT	301
+Event	T8	kom	EVENT	325
+Event	T9	tilfælde	EVENT	346
+Relation	T5	T4	CauseEffect	true	kom	tilfælde
+Relation	T4	T5	EffectCause	true	tilfælde	kom
+Relation	T10	T8	CauseEffect	true	syge	kom
+Relation	T8	T10	EffectCause	true	kom	syge
+Relation	T9	T11	CauseEffect	true	tilfælde	skrive
+Relation	T11	T9	EffectCause	true	skrive	tilfælde
+Relation	T10	T3	NoRel	true	syge	ramte
+Relation	T10	T9	NoRel	true	syge	tilfælde
+Relation	T5	T7	NoRel	true	kom	indlagt
+Relation	T7	T4	NoRel	true	indlagt	tilfælde
+Relation	T7	T8	NoRel	true	indlagt	kom
+Relation	T8	T11	NoRel	true	kom	skrive
+Relation	T8	T7	NoRel	true	kom	indlagt

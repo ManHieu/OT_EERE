@@ -1,0 +1,38 @@
+Text	thumb| Udbredelsen af Den sorte død i Europa ( 1346–53 ) En PANDEMI ( fra græsk _ pan__–_alle ,__demos__–_folk ) eller GLOBAL EPIDEMI er en infektionssygdom , der påvirker mennesker og dyr i et stort geografisk område ; en hel eller flere verdensdele .	Udrykket " global pandemi " bruges fejlagtigt i medierne .	Ifølge Verdenssundhedsorganisationen WHO skal tre betingelser være opfyldt , før man kan tale om en pandemi :	- Introduktion af en for populationen hidtil ukendt sygdom .	- Smitten spredes til mennesker .
+Event	T0	Udbredelsen	EVENT	7
+Event	T2	infektionssygdom	EVENT	140
+Event	T3	påvirker	EVENT	163
+Event	T4	Udrykket	EVENT	253
+Event	T5	pandemi	EVENT	271
+Event	T6	tale	EVENT	401
+Event	T7	pandemi	EVENT	412
+Event	T8	Introduktion	EVENT	424
+Event	T9	spredes	EVENT	493
+Event	T1	Den sorte død	EVENT	22
+Event	T10	PANDEMI	EVENT	60
+Event	T11	GLOBAL EPIDEMI	EVENT	119
+Event	T12	fejlagtigt	EVENT	288
+Event	T13	betingelser	EVENT	362
+Event	T14	ukendt sygdom	EVENT	467
+Relation	T0	T10	NoRel	true	Udbredelsen	PANDEMI
+Relation	T0	T3	NoRel	true	Udbredelsen	påvirker
+Relation	T1	T14	NoRel	true	Den sorte død	ukendt sygdom
+Relation	T1	T7	NoRel	true	Den sorte død	pandemi
+Relation	T1	T9	NoRel	true	Den sorte død	spredes
+Relation	T10	T1	NoRel	true	PANDEMI	Den sorte død
+Relation	T10	T6	NoRel	true	PANDEMI	tale
+Relation	T10	T7	NoRel	true	PANDEMI	pandemi
+Relation	T10	T9	NoRel	true	PANDEMI	spredes
+Relation	T11	T1	NoRel	true	GLOBAL EPIDEMI	Den sorte død
+Relation	T14	T12	NoRel	true	ukendt sygdom	fejlagtigt
+Relation	T2	T10	NoRel	true	infektionssygdom	PANDEMI
+Relation	T3	T10	NoRel	true	påvirker	PANDEMI
+Relation	T3	T11	NoRel	true	påvirker	GLOBAL EPIDEMI
+Relation	T3	T12	NoRel	true	påvirker	fejlagtigt
+Relation	T3	T4	NoRel	true	påvirker	Udrykket
+Relation	T5	T12	NoRel	true	pandemi	fejlagtigt
+Relation	T6	T1	NoRel	true	tale	Den sorte død
+Relation	T7	T11	NoRel	true	pandemi	GLOBAL EPIDEMI
+Relation	T7	T12	NoRel	true	pandemi	fejlagtigt
+Relation	T7	T6	NoRel	true	pandemi	tale
+Relation	T8	T5	NoRel	true	Introduktion	pandemi

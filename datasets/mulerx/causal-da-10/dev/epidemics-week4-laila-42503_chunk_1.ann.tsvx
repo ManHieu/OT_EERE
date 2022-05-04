@@ -1,0 +1,42 @@
+Text	- Smitten spredes nemt blandt mennesker .	En sygdom er dermed ikke nødvendigvis en pandemi , blot fordi den er vidt udbredt – den skal også være smittefarlig .	Virus og bakterier overføres let mellem mennesker og dyr , jvf zoonose .	Kræft er eksempelvis ikke en pandemi , selvom den er vidt udbredt .	Fra den sorte død over SARS til COVID-19 har verden været udsat for et dusin pandemier .
+Event	T0	spredes	EVENT	10
+Event	T1	overføres	EVENT	179
+Event	T2	zoonose	EVENT	223
+Event	T3	Kræft	EVENT	233
+Event	T4	pandemi	EVENT	262
+Event	T6	pandemier	EVENT	378
+Event	T7	sygdom	EVENT	45
+Event	T8	Smitten	EVENT	2
+Event	T9	pandemi	EVENT	83
+Event	T10	udbredt	EVENT	116
+Event	T11	smittefarlig	EVENT	145
+Event	T12	Virus	EVENT	160
+Event	T13	bakterier	EVENT	169
+Event	T14	udbredt	EVENT	291
+Event	T5	den sorte død	EVENT	305
+Event	T15	SARS	EVENT	324
+Event	T16	COVID-19	EVENT	333
+Relation	T10	T9	CauseEffect	true	udbredt	pandemi
+Relation	T9	T10	EffectCause	true	pandemi	udbredt
+Relation	T11	T9	CauseEffect	true	smittefarlig	pandemi
+Relation	T9	T11	EffectCause	true	pandemi	smittefarlig
+Relation	T0	T1	NoRel	true	spredes	overføres
+Relation	T0	T6	NoRel	true	spredes	pandemier
+Relation	T1	T14	NoRel	true	overføres	udbredt
+Relation	T11	T5	NoRel	true	smittefarlig	den sorte død
+Relation	T12	T14	NoRel	true	Virus	udbredt
+Relation	T13	T5	NoRel	true	bakterier	den sorte død
+Relation	T14	T12	NoRel	true	udbredt	Virus
+Relation	T14	T15	NoRel	true	udbredt	SARS
+Relation	T15	T16	NoRel	true	SARS	COVID-19
+Relation	T3	T16	NoRel	true	Kræft	COVID-19
+Relation	T4	T1	NoRel	true	pandemi	overføres
+Relation	T4	T13	NoRel	true	pandemi	bakterier
+Relation	T4	T3	NoRel	true	pandemi	Kræft
+Relation	T5	T3	NoRel	true	den sorte død	Kræft
+Relation	T5	T4	NoRel	true	den sorte død	pandemi
+Relation	T5	T7	NoRel	true	den sorte død	sygdom
+Relation	T5	T9	NoRel	true	den sorte død	pandemi
+Relation	T7	T11	NoRel	true	sygdom	smittefarlig
+Relation	T9	T3	NoRel	true	pandemi	Kræft
+Relation	T9	T5	NoRel	true	pandemi	den sorte død

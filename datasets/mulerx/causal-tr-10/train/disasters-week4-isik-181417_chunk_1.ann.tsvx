@@ -1,0 +1,39 @@
+Text	1991 yılında Agustos'dan Ekim'e kadar olan patlamada 2 –6 km³ kayaç havaya püskürtülmüş .	Buzul parçaları erimiş , böylelikle oluşan çamur çığı ( lahar ) vadilere doldurmuştur .	Yöre halkının patlama öncesinde bölgeyi boşaltmış olması olası bir kaybın olmasını engellemiştir .	Patlama sırasında püskürtülen küller büyük bir alana , Şili , Arjantin üzerinde Falkland Adaları'na kadar , yağmıştır .	Devasa patlama , neredeyse aynı zamana denk gelen Filipinler'deki Pinatubo Yanardağı'nın patlaması sebebiyle pek bilinmez .
+Event	T0	patlamada	EVENT	43
+Event	T1	püskürtülmüş	EVENT	75
+Event	T2	erimiş	EVENT	106
+Event	T3	oluşan	EVENT	126
+Event	T4	doldurmuştur	EVENT	163
+Event	T5	patlama	EVENT	192
+Event	T6	boşaltmış	EVENT	218
+Event	T7	kaybın	EVENT	245
+Event	T8	Patlama	EVENT	277
+Event	T9	yağmıştır	EVENT	385
+Event	T10	patlama	EVENT	404
+Event	T11	patlaması	EVENT	486
+Event	T12	küller	EVENT	307
+Relation	T0	T1	CauseEffect	true	patlamada	püskürtülmüş
+Relation	T1	T0	EffectCause	true	püskürtülmüş	patlamada
+Relation	T1	T2	CauseEffect	true	püskürtülmüş	erimiş
+Relation	T2	T1	EffectCause	true	erimiş	püskürtülmüş
+Relation	T2	T3	CauseEffect	true	erimiş	oluşan
+Relation	T3	T2	EffectCause	true	oluşan	erimiş
+Relation	T3	T4	CauseEffect	true	oluşan	doldurmuştur
+Relation	T4	T3	EffectCause	true	doldurmuştur	oluşan
+Relation	T0	T12	CauseEffect	true	patlamada	küller
+Relation	T12	T0	EffectCause	true	küller	patlamada
+Relation	T8	T12	CauseEffect	true	Patlama	küller
+Relation	T12	T8	EffectCause	true	küller	Patlama
+Relation	T12	T9	CauseEffect	true	küller	yağmıştır
+Relation	T9	T12	EffectCause	true	yağmıştır	küller
+Relation	T0	T6	NoRel	true	patlamada	boşaltmış
+Relation	T1	T7	NoRel	true	püskürtülmüş	kaybın
+Relation	T10	T6	NoRel	true	patlama	boşaltmış
+Relation	T12	T11	NoRel	true	küller	patlaması
+Relation	T3	T1	NoRel	true	oluşan	püskürtülmüş
+Relation	T4	T0	NoRel	true	doldurmuştur	patlamada
+Relation	T5	T9	NoRel	true	patlama	yağmıştır
+Relation	T6	T3	NoRel	true	boşaltmış	oluşan
+Relation	T7	T1	NoRel	true	kaybın	püskürtülmüş
+Relation	T7	T4	NoRel	true	kaybın	doldurmuştur
+Relation	T8	T4	NoRel	true	Patlama	doldurmuştur

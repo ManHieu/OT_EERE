@@ -1,0 +1,42 @@
+Text	Siwiec fue censurado de las fotografías oficiales de la Agencia Central de Fotografía ( Centralna Agencja Fotograficzna ) , que tenía el monopolio de la emisión de fotografías para la prensa en la era de la Polonia comunista .	Su acto fue capturado en una película de 7 segundos por una cámara de cine de la _ Polish Film Chronicle _ , pero los noticiarios ( _ newsreels _ o noticieros de cine ) oficiales del festival omitieron cualquier mención del incidente .	Sin embargo , estas imágenes sobrevivieron , mal etiquetadas por accidente o por propósito , hasta que fueron redescubiertas más de veinte años después .	La policía secreta polaca ( Służba Bezpieczeństwa ) realizó una investigación de rutina que terminó rápidamente debido a la " muerte del culpable " , seguida de una vigilancia rutinaria de bajo perfil de sus amigos y familiares , durante la cual interceptó la última carta de Siwiec a su esposa ( entregada décadas más tarde ) .	En general , las autoridades no tuvieron problemas para suprimir el evento , ya que ninguno de los pocos testigos mostró deseo alguno de hacer que el suceso fuera conocido .
+Event	T0	censurado	EVENT	11
+Event	T1	emisión	EVENT	153
+Event	T11	investigación	EVENT	681
+Event	T13	muerte	EVENT	743
+Event	T15	vigilancia	EVENT	782
+Event	T16	interceptó	EVENT	863
+Event	T18	suprimir	EVENT	1002
+Event	T2	capturado	EVENT	239
+Event	T20	suceso	EVENT	1096
+Event	T3	omitieron	EVENT	419
+Event	T4	entregada	EVENT	914
+Event	T5	incidente	EVENT	451
+Event	T6	sobrevivieron	EVENT	492
+Event	T9	redescubiertas	EVENT	573
+Relation	T5	T2	CauseEffect	true	incidente	capturado
+Relation	T2	T5	EffectCause	true	capturado	incidente
+Relation	T5	T6	CauseEffect	true	incidente	sobrevivieron
+Relation	T6	T5	EffectCause	true	sobrevivieron	incidente
+Relation	T6	T9	CauseEffect	true	sobrevivieron	redescubiertas
+Relation	T9	T6	EffectCause	true	redescubiertas	sobrevivieron
+Relation	T5	T11	CauseEffect	true	incidente	investigación
+Relation	T11	T5	EffectCause	true	investigación	incidente
+Relation	T11	T16	CauseEffect	true	investigación	interceptó
+Relation	T16	T11	EffectCause	true	interceptó	investigación
+Relation	T0	T16	NoRel	true	censurado	interceptó
+Relation	T0	T4	NoRel	true	censurado	entregada
+Relation	T1	T4	NoRel	true	emisión	entregada
+Relation	T11	T18	NoRel	true	investigación	suprimir
+Relation	T13	T9	NoRel	true	muerte	redescubiertas
+Relation	T16	T15	NoRel	true	interceptó	vigilancia
+Relation	T16	T3	NoRel	true	interceptó	omitieron
+Relation	T16	T4	NoRel	true	interceptó	entregada
+Relation	T18	T16	NoRel	true	suprimir	interceptó
+Relation	T2	T6	NoRel	true	capturado	sobrevivieron
+Relation	T20	T16	NoRel	true	suceso	interceptó
+Relation	T20	T18	NoRel	true	suceso	suprimir
+Relation	T20	T9	NoRel	true	suceso	redescubiertas
+Relation	T3	T5	NoRel	true	omitieron	incidente
+Relation	T4	T0	NoRel	true	entregada	censurado
+Relation	T6	T0	NoRel	true	sobrevivieron	censurado
+Relation	T6	T2	NoRel	true	sobrevivieron	capturado

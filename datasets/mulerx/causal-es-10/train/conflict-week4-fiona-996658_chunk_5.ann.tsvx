@@ -1,0 +1,44 @@
+Text	La entrega se realizó en la vía Borgognissanti ( Florencia ) , y mientras el especialista Giovanne Poggi certificaba su autenticidad , la policía arrestaba al ladrón .	Vicenzo Peruggia fue juzgado en ese país y condenado a un año y quince meses de prisión , pero quedó en libertad luego de siete meses .	Luego de esto , la obra realizó una gira de dos meses por diversos museos italianos , antes de retornar al _ Louvre _ .	En el juicio , Vicenzo declaró haberlo hecho como un « acto patriótico » y nunca delató a ningún cómplice .	Tras la gran estafa , Valfierno y Chaudron viajaron a Los Ángeles , donde amasaron una gran fortuna vendiendo falsificaciones a las estrellas de cine .
+Event	T0	entrega	EVENT	3
+Event	T1	realizó	EVENT	14
+Event	T2	certificaba	EVENT	105
+Event	T3	arrestaba	EVENT	146
+Event	T4	juzgado	EVENT	189
+Event	T5	condenado	EVENT	211
+Event	T6	realizó	EVENT	328
+Event	T7	gira	EVENT	340
+Event	T8	retornar	EVENT	399
+Event	T9	juicio	EVENT	430
+Event	T10	declaró	EVENT	447
+Event	T11	hecho	EVENT	463
+Event	T12	delató	EVENT	505
+Event	T13	estafa	EVENT	545
+Event	T14	viajaron	EVENT	575
+Event	T15	amasaron	EVENT	606
+Event	T16	falsificaciones	EVENT	642
+Relation	T4	T5	CauseEffect	true	juzgado	condenado
+Relation	T5	T4	EffectCause	true	condenado	juzgado
+Relation	T16	T15	CauseEffect	true	falsificaciones	amasaron
+Relation	T15	T16	EffectCause	true	amasaron	falsificaciones
+Relation	T0	T5	NoRel	true	entrega	condenado
+Relation	T1	T5	NoRel	true	realizó	condenado
+Relation	T10	T3	NoRel	true	declaró	arrestaba
+Relation	T10	T9	NoRel	true	declaró	juicio
+Relation	T11	T1	NoRel	true	hecho	realizó
+Relation	T12	T10	NoRel	true	delató	declaró
+Relation	T14	T0	NoRel	true	viajaron	entrega
+Relation	T14	T12	NoRel	true	viajaron	delató
+Relation	T16	T4	NoRel	true	falsificaciones	juzgado
+Relation	T3	T0	NoRel	true	arrestaba	entrega
+Relation	T3	T11	NoRel	true	arrestaba	hecho
+Relation	T3	T9	NoRel	true	arrestaba	juicio
+Relation	T4	T15	NoRel	true	juzgado	amasaron
+Relation	T5	T13	NoRel	true	condenado	estafa
+Relation	T6	T11	NoRel	true	realizó	hecho
+Relation	T6	T3	NoRel	true	realizó	arrestaba
+Relation	T7	T1	NoRel	true	gira	realizó
+Relation	T7	T5	NoRel	true	gira	condenado
+Relation	T8	T14	NoRel	true	retornar	viajaron
+Relation	T8	T3	NoRel	true	retornar	arrestaba
+Relation	T8	T4	NoRel	true	retornar	juzgado
+Relation	T8	T6	NoRel	true	retornar	realizó

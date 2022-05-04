@@ -1,0 +1,43 @@
+Text	El fragmentado resultado condujo a un colapso del sistema democrático alemán .	Las fuerzas de extrema derecha y extrema izquierda , así como las fuerzas monarquistas contrarias a la república y a la democracia liberal , lograron una amplia representación parlamentaria , superior al 40% .	Esto generó que , por sí solos , los partidos democráticos enfrentados entre sí fuesen incapaces de formar un gobierno estable o incluso cesar al Canciller o contrarrestar el poder presidencial de Hindenburg .	Debido a esta situación , hasta marzo de 1933 , se daría una sucesión de gobiernos débiles , dependientes de Hindenburg y sin apoyo parlamentario .	La crisis económica , en conjunto con la creciente crisis política por el debilitamiento del poder legislativo , fortalecería cada vez más al Partido Nazi y a Hitler mismo , generando lo que sería su llegada al poder y el desmantelamiento de la República de Weimar .
+Event	T0	condujo	EVENT	25
+Event	T1	colapso	EVENT	38
+Event	T2	lograron	EVENT	220
+Event	T3	representación	EVENT	240
+Event	T4	generó	EVENT	294
+Event	T5	enfrentados	EVENT	348
+Event	T6	formar	EVENT	389
+Event	T7	cesar	EVENT	426
+Event	T8	sucesión	EVENT	560
+Event	T9	crisis	EVENT	650
+Event	T10	crisis	EVENT	698
+Event	T11	debilitamiento	EVENT	721
+Event	T12	generando	EVENT	821
+Event	T13	llegada	EVENT	847
+Event	T14	desmantelamiento	EVENT	869
+Event	T15	resultado	EVENT	15
+Relation	T15	T1	CauseEffect	true	resultado	colapso
+Relation	T1	T15	EffectCause	true	colapso	resultado
+Relation	T11	T13	CauseEffect	true	debilitamiento	llegada
+Relation	T13	T11	EffectCause	true	llegada	debilitamiento
+Relation	T0	T10	NoRel	true	condujo	crisis
+Relation	T1	T4	NoRel	true	colapso	generó
+Relation	T1	T5	NoRel	true	colapso	enfrentados
+Relation	T1	T6	NoRel	true	colapso	formar
+Relation	T10	T0	NoRel	true	crisis	condujo
+Relation	T10	T3	NoRel	true	crisis	representación
+Relation	T11	T8	NoRel	true	debilitamiento	sucesión
+Relation	T12	T7	NoRel	true	generando	cesar
+Relation	T13	T1	NoRel	true	llegada	colapso
+Relation	T13	T2	NoRel	true	llegada	lograron
+Relation	T13	T9	NoRel	true	llegada	crisis
+Relation	T14	T0	NoRel	true	desmantelamiento	condujo
+Relation	T2	T5	NoRel	true	lograron	enfrentados
+Relation	T4	T2	NoRel	true	generó	lograron
+Relation	T4	T8	NoRel	true	generó	sucesión
+Relation	T5	T2	NoRel	true	enfrentados	lograron
+Relation	T5	T3	NoRel	true	enfrentados	representación
+Relation	T5	T6	NoRel	true	enfrentados	formar
+Relation	T8	T6	NoRel	true	sucesión	formar
+Relation	T9	T13	NoRel	true	crisis	llegada
+Relation	T9	T15	NoRel	true	crisis	resultado
+Relation	T9	T7	NoRel	true	crisis	cesar

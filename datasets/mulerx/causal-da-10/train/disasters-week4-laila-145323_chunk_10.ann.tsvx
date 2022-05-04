@@ -1,0 +1,37 @@
+Text	Plinius den yngre var således den reelle adopterede søn af Plinius den ældre , men ikke i sidstnævntes egen levetid .	For i det mindste en del af tiden boede Plinius under det samme tag som sin søster og nevø ( hvis ægtemand og fader døde ung ) .	Mens de gjorde det , besluttede Plinius at undersøge udbruddet af vulkanen Vesuv , men blev forledt af behovet for en redningsaktion og af en budbringer af en ven , som bad om hjælp .	thumb| left | Rester af templet for Kastor og Pollux i Rom .	Plinus' fader tog ham med til Rom for , at han skulle få en uddannelse .
+Event	T0	boede	EVENT	152
+Event	T1	døde	EVENT	234
+Event	T2	gjorde	EVENT	255
+Event	T3	besluttede	EVENT	268
+Event	T4	udbruddet	EVENT	300
+Event	T5	forledt	EVENT	339
+Event	T6	bad	EVENT	416
+Event	T7	hjælp	EVENT	423
+Event	T8	left	EVENT	438
+Event	T9	tog	EVENT	506
+Event	T10	adopterede	EVENT	41
+Event	T11	redningsaktion	EVENT	365
+Event	T12	behovet	EVENT	350
+Event	T13	budbringer	EVENT	389
+Event	T14	Rester	EVENT	445
+Event	T15	uddannelse	EVENT	552
+Relation	T9	T15	CauseEffect	true	tog	uddannelse
+Relation	T15	T9	EffectCause	true	uddannelse	tog
+Relation	T13	T5	CauseEffect	true	budbringer	forledt
+Relation	T5	T13	EffectCause	true	forledt	budbringer
+Relation	T10	T2	NoRel	true	adopterede	gjorde
+Relation	T10	T5	NoRel	true	adopterede	forledt
+Relation	T11	T2	NoRel	true	redningsaktion	gjorde
+Relation	T14	T3	NoRel	true	Rester	besluttede
+Relation	T14	T6	NoRel	true	Rester	bad
+Relation	T14	T9	NoRel	true	Rester	tog
+Relation	T15	T4	NoRel	true	uddannelse	udbruddet
+Relation	T15	T8	NoRel	true	uddannelse	left
+Relation	T2	T15	NoRel	true	gjorde	uddannelse
+Relation	T4	T1	NoRel	true	udbruddet	døde
+Relation	T5	T4	NoRel	true	forledt	udbruddet
+Relation	T5	T6	NoRel	true	forledt	bad
+Relation	T5	T8	NoRel	true	forledt	left
+Relation	T5	T9	NoRel	true	forledt	tog
+Relation	T6	T3	NoRel	true	bad	besluttede
+Relation	T7	T10	NoRel	true	hjælp	adopterede

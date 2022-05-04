@@ -1,0 +1,72 @@
+Text	Det giftige støv , forårsaget af World Trade Centers sammenbrud , har også ført til flere dødsfald .	Ofrenes navne vil blive medtaget i World Trade Center Memorial .	Det har også ført til en række videnskabelige spekulationer på , om eksponeringen af forskellige giftige stoffer i luften kan have negative virkninger på et fostrets udvikling .	På grund af denne potentielle fare blev børns miljømæssige sundhedscenter sat til at undersøge de børn , hvis mødre var gravide under World Trade Centers sammenbrud samt dem , der boede eller arbejdede i nærheden af World Trade Center . .	En undersøgelse udgivet i april 2010 , foretaget af redningsarbejdere , har konstateret , at alle de medvirkende til redningsarbejdet fik nedsat lungefunktion og at 30 til 40 procent af arbejderne havde vedvarende symptomer , der startede inden for de første år efter angrebet , med en ringe – eller slet ingen – forbedring siden .
+Event	T1	sammenbrud	EVENT	53
+Event	T2	dødsfald	EVENT	90
+Event	T3	medtaget	EVENT	125
+Event	T4	ført	EVENT	179
+Event	T5	spekulationer	EVENT	212
+Event	T6	eksponeringen	EVENT	234
+Event	T7	udvikling	EVENT	332
+Event	T9	undersøge	EVENT	429
+Event	T10	sammenbrud	EVENT	498
+Event	T11	arbejdede	EVENT	536
+Event	T13	foretaget	EVENT	622
+Event	T14	konstateret	EVENT	659
+Event	T15	symptomer	EVENT	797
+Event	T16	startede	EVENT	813
+Event	T17	angrebet	EVENT	851
+Event	T18	forbedring	EVENT	896
+Event	T8	støv	EVENT	12
+Event	T19	virkninger	EVENT	306
+Event	T20	nedsat	EVENT	721
+Event	T21	redningsarbejdet	EVENT	700
+Event	T12	undersøgelse	EVENT	586
+Relation	T1	T8	CauseEffect	true	sammenbrud	støv
+Relation	T8	T1	EffectCause	true	støv	sammenbrud
+Relation	T8	T2	CauseEffect	true	støv	dødsfald
+Relation	T2	T8	EffectCause	true	dødsfald	støv
+Relation	T2	T5	CauseEffect	true	dødsfald	spekulationer
+Relation	T5	T2	EffectCause	true	spekulationer	dødsfald
+Relation	T21	T20	CauseEffect	true	redningsarbejdet	nedsat
+Relation	T20	T21	EffectCause	true	nedsat	redningsarbejdet
+Relation	T21	T15	CauseEffect	true	redningsarbejdet	symptomer
+Relation	T15	T21	EffectCause	true	symptomer	redningsarbejdet
+Relation	T1	T17	NoRel	true	sammenbrud	angrebet
+Relation	T10	T18	NoRel	true	sammenbrud	forbedring
+Relation	T10	T6	NoRel	true	sammenbrud	eksponeringen
+Relation	T11	T1	NoRel	true	arbejdede	sammenbrud
+Relation	T11	T17	NoRel	true	arbejdede	angrebet
+Relation	T11	T3	NoRel	true	arbejdede	medtaget
+Relation	T12	T16	NoRel	true	undersøgelse	startede
+Relation	T12	T5	NoRel	true	undersøgelse	spekulationer
+Relation	T12	T8	NoRel	true	undersøgelse	støv
+Relation	T13	T14	NoRel	true	foretaget	konstateret
+Relation	T13	T21	NoRel	true	foretaget	redningsarbejdet
+Relation	T13	T7	NoRel	true	foretaget	udvikling
+Relation	T13	T8	NoRel	true	foretaget	støv
+Relation	T14	T20	NoRel	true	konstateret	nedsat
+Relation	T14	T21	NoRel	true	konstateret	redningsarbejdet
+Relation	T14	T5	NoRel	true	konstateret	spekulationer
+Relation	T15	T2	NoRel	true	symptomer	dødsfald
+Relation	T16	T1	NoRel	true	startede	sammenbrud
+Relation	T17	T2	NoRel	true	angrebet	dødsfald
+Relation	T18	T13	NoRel	true	forbedring	foretaget
+Relation	T19	T11	NoRel	true	virkninger	arbejdede
+Relation	T19	T14	NoRel	true	virkninger	konstateret
+Relation	T19	T4	NoRel	true	virkninger	ført
+Relation	T19	T8	NoRel	true	virkninger	støv
+Relation	T19	T9	NoRel	true	virkninger	undersøge
+Relation	T2	T7	NoRel	true	dødsfald	udvikling
+Relation	T20	T11	NoRel	true	nedsat	arbejdede
+Relation	T20	T5	NoRel	true	nedsat	spekulationer
+Relation	T20	T7	NoRel	true	nedsat	udvikling
+Relation	T4	T15	NoRel	true	ført	symptomer
+Relation	T5	T7	NoRel	true	spekulationer	udvikling
+Relation	T5	T8	NoRel	true	spekulationer	støv
+Relation	T6	T20	NoRel	true	eksponeringen	nedsat
+Relation	T6	T7	NoRel	true	eksponeringen	udvikling
+Relation	T6	T8	NoRel	true	eksponeringen	støv
+Relation	T7	T13	NoRel	true	udvikling	foretaget
+Relation	T8	T10	NoRel	true	støv	sammenbrud
+Relation	T8	T7	NoRel	true	støv	udvikling
+Relation	T9	T13	NoRel	true	undersøge	foretaget
+Relation	T9	T16	NoRel	true	undersøge	startede

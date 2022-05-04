@@ -1,0 +1,30 @@
+Text	Amerika Birleşik Devletleri'ndeki durgunlukların birçoğuna bankacılık paniği neden oldu .	Büyük Buhran , 1929'dan 1933'e kadar çok sayıda bankada gerçekleşen çeşitli bankacılık krizlerini içeriyordu ; bunlardan bazıları ABD'nin bölgelerine özgüdür Bankaların faaliyetleri , yasaları bankaların sadece tek bir şube işletmesine izin veren eyaletlerde en yaygın olanıdır ve özellikle tek şubeli bankalar bölgelerde bulunduğunda birden fazla şubesi olan bankalara kıyasla riski önemli ölçüde arttırmaktadır .	ekonomik olarak tek bir endüstriye bağımlıdır .	Bankacılık panikleri , muhabir ağlarını düşüren Tennessee ve Kentucky'deki bir dizi bankanın çöküşüyle tetiklenen borsa çöküşünden bir yıl sonra Kasım 1930'da Yukarı - Güney'de başladı .	Aralık ayında New York , tek bir bankanın birçok şubesinde yer alan devasa banka işlemleri yaşadı .
+Event	T0	oldu	EVENT	83
+Event	T1	gerçekleşen	EVENT	146
+Event	T2	içeriyordu	EVENT	188
+Event	T3	faaliyetleri	EVENT	259
+Event	T4	arttırmaktadır	EVENT	488
+Event	T5	panikleri	EVENT	564
+Event	T6	düşüren	EVENT	593
+Event	T8	çöküşünden	EVENT	673
+Event	T9	başladı	EVENT	730
+Event	T10	yaşadı	EVENT	831
+Event	T11	Buhran	EVENT	96
+Event	T12	bağımlıdır	EVENT	540
+Event	T13	çöküşüyle	EVENT	646
+Relation	T13	T8	CauseEffect	true	çöküşüyle	çöküşünden
+Relation	T8	T13	EffectCause	true	çöküşünden	çöküşüyle
+Relation	T8	T5	CauseEffect	true	çöküşünden	panikleri
+Relation	T5	T8	EffectCause	true	panikleri	çöküşünden
+Relation	T1	T13	NoRel	true	gerçekleşen	çöküşüyle
+Relation	T1	T9	NoRel	true	gerçekleşen	başladı
+Relation	T10	T2	NoRel	true	yaşadı	içeriyordu
+Relation	T12	T13	NoRel	true	bağımlıdır	çöküşüyle
+Relation	T2	T10	NoRel	true	içeriyordu	yaşadı
+Relation	T2	T4	NoRel	true	içeriyordu	arttırmaktadır
+Relation	T3	T4	NoRel	true	faaliyetleri	arttırmaktadır
+Relation	T5	T2	NoRel	true	panikleri	içeriyordu
+Relation	T6	T9	NoRel	true	düşüren	başladı
+Relation	T8	T3	NoRel	true	çöküşünden	faaliyetleri
+Relation	T9	T13	NoRel	true	başladı	çöküşüyle
+Relation	T9	T8	NoRel	true	başladı	çöküşünden

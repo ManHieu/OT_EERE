@@ -1,0 +1,40 @@
+Text	El fenómeno sólo batí a las islas con grandes olas que pudieron perpetrar las costas internas del archipiélago , es decir , las aguas pisaron tierra , y trajeron distintos desechos coralinos y basura hacia las carreteras y playas de las costas .	También , por consecuencia lógica , se registraron fuertes vientos y precipitaciones en todo el lugar , pero lo que más puso en tranquilidad a la población fue que el huracán no pasó totalmente sobre las islas , con una categoría más alta , pues hubiera sido una tragedia .	YahooNews_- Bill , muy cerca de convertirse en tormenta tropical - Consultado el 17 de agosto de 2009	Huracán Bill baja a categoría 3 , pero volvería intensificarse - Reuters - Consultado el 20 de agosto de 2009	Referencia en inglés : [ http : / / www.navegalo.com / index .php ? option= com _ content & view= article & id = 43434 & catid=62% 3Ainternational & Itemid=412 & lang= en , Navegalo.com | Hurrricane Bill : " Hurricane watch " in Bermudas ] - Consultado el 20 de agosto de 2009
+Event	T0	fenómeno	EVENT	3
+Event	T2	perpetrar	EVENT	64
+Event	T3	pisaron	EVENT	134
+Event	T4	trajeron	EVENT	153
+Event	T5	registraron	EVENT	285
+Event	T6	vientos	EVENT	305
+Event	T7	precipitaciones	EVENT	315
+Event	T8	huracán	EVENT	413
+Event	T9	pasó	EVENT	424
+Event	T10	tragedia	EVENT	509
+Event	T11	Huracán	EVENT	622
+Event	T12	baja	EVENT	635
+Event	T13	intensificarse	EVENT	670
+Event	T14	Referencia	EVENT	732
+Event	T15	watch	EVENT	950
+Relation	T0	T6	CauseEffect	true	fenómeno	vientos
+Relation	T6	T0	EffectCause	true	vientos	fenómeno
+Relation	T0	T7	CauseEffect	true	fenómeno	precipitaciones
+Relation	T7	T0	EffectCause	true	precipitaciones	fenómeno
+Relation	T0	T9	NoRel	true	fenómeno	pasó
+Relation	T11	T13	NoRel	true	Huracán	intensificarse
+Relation	T11	T7	NoRel	true	Huracán	precipitaciones
+Relation	T13	T4	NoRel	true	intensificarse	trajeron
+Relation	T13	T5	NoRel	true	intensificarse	registraron
+Relation	T14	T0	NoRel	true	Referencia	fenómeno
+Relation	T14	T13	NoRel	true	Referencia	intensificarse
+Relation	T14	T2	NoRel	true	Referencia	perpetrar
+Relation	T15	T14	NoRel	true	watch	Referencia
+Relation	T2	T9	NoRel	true	perpetrar	pasó
+Relation	T3	T11	NoRel	true	pisaron	Huracán
+Relation	T3	T8	NoRel	true	pisaron	huracán
+Relation	T3	T9	NoRel	true	pisaron	pasó
+Relation	T6	T11	NoRel	true	vientos	Huracán
+Relation	T6	T9	NoRel	true	vientos	pasó
+Relation	T7	T3	NoRel	true	precipitaciones	pisaron
+Relation	T7	T6	NoRel	true	precipitaciones	vientos
+Relation	T8	T14	NoRel	true	huracán	Referencia
+Relation	T8	T7	NoRel	true	huracán	precipitaciones
+Relation	T9	T4	NoRel	true	pasó	trajeron

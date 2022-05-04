@@ -1,0 +1,45 @@
+Text	Det lykkedes at koncentrere tyske tropper i forbindelse med Ardenneroffensiven .	Sovjetiske tropper havde nået Østpreussen og Ungarn i 1944 , inden de blev stoppet ved Oder i februar 1945 ; tyskerne holdt fast i stærke fæstningsbyer som Breslau og Königsberg .	Tyskerne havde stor interesse i også at lade andre byer fungere som fæstningsbyer .	I begyndelsen af 1945 var udfaldet af krigen slet ikke så entydig , som det ofte bliver fremstillet i dag .	Nazisternes Gauleiter i Dresden Martin Mutschmann glædede sig i julen 1944 over på ny at se sit folk i angreb ( _ ” … Volk wieder im Angriff zu sehen … ” _ ) .
+Event	T0	lykkedes	EVENT	4
+Event	T1	koncentrere	EVENT	16
+Event	T2	nået	EVENT	106
+Event	T3	stoppet	EVENT	156
+Event	T4	fungere	EVENT	317
+Event	T5	udfaldet	EVENT	371
+Event	T6	fremstillet	EVENT	433
+Event	T7	glædede	EVENT	503
+Event	T8	se	EVENT	542
+Event	T9	angreb	EVENT	556
+Event	T10	Angriff	EVENT	586
+Event	T11	sehen	EVENT	597
+Event	T12	Ardenneroffensiven	EVENT	60
+Event	T13	holdt fast	EVENT	199
+Event	T14	interesse	EVENT	281
+Event	T15	entydig	EVENT	403
+Relation	T9	T7	CauseEffect	true	angreb	glædede
+Relation	T7	T9	EffectCause	true	glædede	angreb
+Relation	T0	T10	NoRel	true	lykkedes	Angriff
+Relation	T0	T5	NoRel	true	lykkedes	udfaldet
+Relation	T0	T6	NoRel	true	lykkedes	fremstillet
+Relation	T0	T8	NoRel	true	lykkedes	se
+Relation	T1	T5	NoRel	true	koncentrere	udfaldet
+Relation	T10	T3	NoRel	true	Angriff	stoppet
+Relation	T11	T3	NoRel	true	sehen	stoppet
+Relation	T11	T8	NoRel	true	sehen	se
+Relation	T12	T14	NoRel	true	Ardenneroffensiven	interesse
+Relation	T12	T5	NoRel	true	Ardenneroffensiven	udfaldet
+Relation	T13	T0	NoRel	true	holdt fast	lykkedes
+Relation	T13	T12	NoRel	true	holdt fast	Ardenneroffensiven
+Relation	T13	T2	NoRel	true	holdt fast	nået
+Relation	T13	T9	NoRel	true	holdt fast	angreb
+Relation	T14	T9	NoRel	true	interesse	angreb
+Relation	T2	T5	NoRel	true	nået	udfaldet
+Relation	T3	T12	NoRel	true	stoppet	Ardenneroffensiven
+Relation	T4	T11	NoRel	true	fungere	sehen
+Relation	T5	T15	NoRel	true	udfaldet	entydig
+Relation	T6	T12	NoRel	true	fremstillet	Ardenneroffensiven
+Relation	T6	T7	NoRel	true	fremstillet	glædede
+Relation	T7	T10	NoRel	true	glædede	Angriff
+Relation	T7	T15	NoRel	true	glædede	entydig
+Relation	T8	T3	NoRel	true	se	stoppet
+Relation	T8	T7	NoRel	true	se	glædede
+Relation	T9	T6	NoRel	true	angreb	fremstillet

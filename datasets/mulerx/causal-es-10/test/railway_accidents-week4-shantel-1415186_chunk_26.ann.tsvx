@@ -1,0 +1,42 @@
+Text	UGT pide responsabilidades al Consell y cree que el accidente que costo la vida a 42 personas se pudo evitar , Levante-EMV , 12 de julio de 2006	La oposición pide la dimisión de Garcia Antón y la Generalitat replica que la causa del accidente fue un ' error fatal ' , Levante-EMV , 5 de julio de 2006	El Consell denunciara a quien diga que había problemas de seguridad y no lo comunico , Las Provincias .	El PSPV pedira la dimisión de Garcia Anton y una comisión investigadora , Levante-EMV , 11 de julio de 2006	_ Fabra destituye a la gerente que manipuló el accidente de Metro _ por Vicente Useros , Xavier Borrás y publicado en El Mundo el 30 de octubre de 2012 .
+Event	T0	cree	EVENT	40
+Event	T1	accidente	EVENT	52
+Event	T2	costo	EVENT	66
+Event	T3	pide	EVENT	158
+Event	T4	dimisión	EVENT	166
+Event	T5	replica	EVENT	208
+Event	T6	accidente	EVENT	233
+Event	T7	denunciara	EVENT	312
+Event	T8	diga	EVENT	331
+Event	T9	pedira	EVENT	413
+Event	T10	dimisión	EVENT	423
+Event	T11	destituye	EVENT	521
+Event	T12	manipuló	EVENT	548
+Event	T13	accidente	EVENT	560
+Event	T14	publicado	EVENT	618
+Relation	T1	T2	CauseEffect	true	accidente	costo
+Relation	T2	T1	EffectCause	true	costo	accidente
+Relation	T0	T10	NoRel	true	cree	dimisión
+Relation	T0	T6	NoRel	true	cree	accidente
+Relation	T1	T11	NoRel	true	accidente	destituye
+Relation	T10	T1	NoRel	true	dimisión	accidente
+Relation	T10	T6	NoRel	true	dimisión	accidente
+Relation	T11	T1	NoRel	true	destituye	accidente
+Relation	T11	T14	NoRel	true	destituye	publicado
+Relation	T12	T14	NoRel	true	manipuló	publicado
+Relation	T12	T9	NoRel	true	manipuló	pedira
+Relation	T2	T11	NoRel	true	costo	destituye
+Relation	T2	T9	NoRel	true	costo	pedira
+Relation	T4	T6	NoRel	true	dimisión	accidente
+Relation	T4	T8	NoRel	true	dimisión	diga
+Relation	T5	T0	NoRel	true	replica	cree
+Relation	T5	T12	NoRel	true	replica	manipuló
+Relation	T5	T2	NoRel	true	replica	costo
+Relation	T5	T6	NoRel	true	replica	accidente
+Relation	T5	T8	NoRel	true	replica	diga
+Relation	T6	T5	NoRel	true	accidente	replica
+Relation	T6	T8	NoRel	true	accidente	diga
+Relation	T7	T11	NoRel	true	denunciara	destituye
+Relation	T7	T13	NoRel	true	denunciara	accidente
+Relation	T7	T14	NoRel	true	denunciara	publicado
+Relation	T8	T5	NoRel	true	diga	replica

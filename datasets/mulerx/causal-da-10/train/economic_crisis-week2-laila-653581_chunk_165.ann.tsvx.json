@@ -1,0 +1,397 @@
+{
+  "id": "economic_crisis-week2-laila-653581_chunk_165.ann.tsvx",
+  "text": "Sp\u00f8rgsm\u00e5let om den \u00f8konomiske virkning af opstigningen og de derved \u00e6ndrede repr\u00e6sentationsbehov og -krav , samt konkurrencen mellem gamle og nye familier er endnu ikke udforsket n\u00f8jere .\t\t\t\t",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "opstigningen",
+      "label": "EVENT",
+      "char_index": 42,
+      "sid": 0,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "\u00e6ndrede",
+      "label": "EVENT",
+      "char_index": 68,
+      "sid": 0,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "konkurrencen",
+      "label": "EVENT",
+      "char_index": 113,
+      "sid": 0,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "udforsket",
+      "label": "EVENT",
+      "char_index": 169,
+      "sid": 0,
+      "tid": [
+        25,
+        26
+      ]
+    }
+  },
+  "relation": {
+    "T0-T1": "CauseEffect",
+    "T1-T0": "EffectCause",
+    "T3-T2": "NoRel"
+  },
+  "sentence": [
+    [
+      "Sp\u00f8rgsm\u00e5let",
+      "om",
+      "den",
+      "\u00f8konomiske",
+      "virkning",
+      "af",
+      "opstigningen",
+      "og",
+      "de",
+      "derved",
+      "\u00e6ndrede",
+      "repr\u00e6sentationsbehov",
+      "og",
+      "-krav",
+      ",",
+      "samt",
+      "konkurrencen",
+      "mellem",
+      "gamle",
+      "og",
+      "nye",
+      "familier",
+      "er",
+      "endnu",
+      "ikke",
+      "udforsket",
+      "n\u00f8jere",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        25
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        0
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        11
+      ],
+      "dep"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        11
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        4
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        13
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        11
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        16
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        21
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        21
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        20
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        18
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        16
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        25
+      ],
+      "aux"
+    ],
+    [
+      [
+        0,
+        23
+      ],
+      [
+        0,
+        25
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        25
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        25
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        27
+      ],
+      [
+        0,
+        25
+      ],
+      "punct"
+    ]
+  ]
+}

@@ -1,0 +1,36 @@
+Text	Rusya otoriteleri kazayla ilgili soruşturma başlattı .	Kazadan 10 gün sonra bir ön raporun yayınlanması bekleniyordu .	14 Eylül 2010'da yayınlanan rapor , bataryaların kendi kendine ısındığını ve ısı kaçağı olduğunu gösterdi .	Bu arıza , ; tüm elektrik sistemini , navigasyon sistemini ve radyo sistemini etkiledi .	Uçağın pistten çıkması sonucunda önemli ölçüde zarar gördü .
+Event	T1	kaçağı	EVENT	200
+Event	T2	gösterdi	EVENT	216
+Event	T3	arıza	EVENT	230
+Event	T4	etkiledi	EVENT	305
+Event	T5	çıkması	EVENT	331
+Event	T6	gördü	EVENT	369
+Event	T7	Kazadan	EVENT	55
+Event	T8	soruşturma	EVENT	33
+Event	T9	kazayla	EVENT	18
+Event	T10	yayınlanması	EVENT	91
+Event	T11	yayınlanan	EVENT	136
+Event	T12	ısındığını	EVENT	182
+Relation	T3	T4	CauseEffect	true	arıza	etkiledi
+Relation	T4	T3	EffectCause	true	etkiledi	arıza
+Relation	T3	T7	CauseEffect	true	arıza	Kazadan
+Relation	T7	T3	EffectCause	true	Kazadan	arıza
+Relation	T3	T9	CauseEffect	true	arıza	kazayla
+Relation	T9	T3	EffectCause	true	kazayla	arıza
+Relation	T9	T8	CauseEffect	true	kazayla	soruşturma
+Relation	T8	T9	EffectCause	true	soruşturma	kazayla
+Relation	T7	T8	CauseEffect	true	Kazadan	soruşturma
+Relation	T8	T7	EffectCause	true	soruşturma	Kazadan
+Relation	T5	T6	CauseEffect	true	çıkması	gördü
+Relation	T6	T5	EffectCause	true	gördü	çıkması
+Relation	T1	T12	NoRel	true	kaçağı	ısındığını
+Relation	T10	T12	NoRel	true	yayınlanması	ısındığını
+Relation	T11	T4	NoRel	true	yayınlanan	etkiledi
+Relation	T2	T9	NoRel	true	gösterdi	kazayla
+Relation	T3	T6	NoRel	true	arıza	gördü
+Relation	T6	T11	NoRel	true	gördü	yayınlanan
+Relation	T7	T1	NoRel	true	Kazadan	kaçağı
+Relation	T8	T5	NoRel	true	soruşturma	çıkması
+Relation	T9	T2	NoRel	true	kazayla	gösterdi
+Relation	T9	T4	NoRel	true	kazayla	etkiledi
+Relation	T9	T7	NoRel	true	kazayla	Kazadan

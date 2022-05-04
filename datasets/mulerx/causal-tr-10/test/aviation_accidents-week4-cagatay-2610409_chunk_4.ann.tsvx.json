@@ -1,0 +1,1187 @@
+{
+  "id": "aviation_accidents-week4-cagatay-2610409_chunk_4.ann.tsvx",
+  "text": "Raporun haz\u0131rlanmas\u0131 i\u00e7in ABD Ulusal Ula\u015f\u0131m G\u00fcvenlik Kurulu'ndan nihai rapor beklendi\u011fi belirtildi .\tKuruldan hen\u00fcz daha son rapor \u00e7\u0131kmad\u0131 .\tKazadan sonra olayla ilgili konu\u015fan pilot normal bir \u015fekilde indirdikleri u\u00e7a\u011f\u0131 durduramad\u0131\u011f\u0131n\u0131 belirtti .\tU\u00e7a\u011f\u0131n kaza yapmas\u0131n\u0131n nedeni olarak ini\u015f s\u0131ras\u0131nda u\u00e7a\u011f\u0131 kontrol eden ikinci pilotun yapt\u0131\u011f\u0131 bir hata oldu\u011fu d\u00fc\u015f\u00fcn\u00fcl\u00fcyor .\t\u0130ni\u015f s\u0131ras\u0131nda ikinci pilot \u0130rfan Yavuz'un kazara \" Pas ge\u00e7me \" sistemini a\u00e7t\u0131\u011f\u0131 i\u00e7in u\u00e7ak indikten sonra u\u00e7a\u011f\u0131n tekrar havalanmaya \u00e7al\u0131\u015ft\u0131\u011f\u0131 i\u00e7in u\u00e7a\u011f\u0131n durdurulamad\u0131 .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "haz\u0131rlanmas\u0131",
+      "label": "EVENT",
+      "char_index": 8,
+      "sid": 0,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "belirtildi",
+      "label": "EVENT",
+      "char_index": 88,
+      "sid": 0,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "\u00e7\u0131kmad\u0131",
+      "label": "EVENT",
+      "char_index": 131,
+      "sid": 1,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "belirtti",
+      "label": "EVENT",
+      "char_index": 237,
+      "sid": 2,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "ini\u015f",
+      "label": "EVENT",
+      "char_index": 285,
+      "sid": 3,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "kontrol",
+      "label": "EVENT",
+      "char_index": 306,
+      "sid": 3,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "yapt\u0131\u011f\u0131",
+      "label": "EVENT",
+      "char_index": 334,
+      "sid": 3,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "hata",
+      "label": "EVENT",
+      "char_index": 346,
+      "sid": 3,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "d\u00fc\u015f\u00fcn\u00fcl\u00fcyor",
+      "label": "EVENT",
+      "char_index": 358,
+      "sid": 3,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "\u0130ni\u015f",
+      "label": "EVENT",
+      "char_index": 372,
+      "sid": 4,
+      "tid": [
+        0,
+        1
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "kazara",
+      "label": "EVENT",
+      "char_index": 415,
+      "sid": 4,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "a\u00e7t\u0131\u011f\u0131",
+      "label": "EVENT",
+      "char_index": 446,
+      "sid": 4,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "indikten",
+      "label": "EVENT",
+      "char_index": 463,
+      "sid": 4,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "\u00e7al\u0131\u015ft\u0131\u011f\u0131",
+      "label": "EVENT",
+      "char_index": 504,
+      "sid": 4,
+      "tid": [
+        20,
+        21
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "durdurulamad\u0131",
+      "label": "EVENT",
+      "char_index": 526,
+      "sid": 4,
+      "tid": [
+        23,
+        24
+      ]
+    },
+    "T16": {
+      "id": "T16",
+      "text": "Kazadan",
+      "label": "EVENT",
+      "char_index": 141,
+      "sid": 2,
+      "tid": [
+        0,
+        1
+      ]
+    },
+    "T17": {
+      "id": "T17",
+      "text": "konu\u015fan",
+      "label": "EVENT",
+      "char_index": 169,
+      "sid": 2,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T18": {
+      "id": "T18",
+      "text": "indirdikleri",
+      "label": "EVENT",
+      "char_index": 202,
+      "sid": 2,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T19": {
+      "id": "T19",
+      "text": "kaza",
+      "label": "EVENT",
+      "char_index": 255,
+      "sid": 3,
+      "tid": [
+        1,
+        2
+      ]
+    }
+  },
+  "relation": {
+    "T7-T19": "CauseEffect",
+    "T19-T7": "EffectCause",
+    "T3-T8": "CauseEffect",
+    "T8-T3": "EffectCause",
+    "T12-T14": "CauseEffect",
+    "T14-T12": "EffectCause",
+    "T14-T15": "CauseEffect",
+    "T15-T14": "EffectCause",
+    "T0-T10": "NoRel",
+    "T0-T15": "NoRel",
+    "T0-T2": "NoRel",
+    "T0-T9": "NoRel",
+    "T1-T0": "NoRel",
+    "T10-T3": "NoRel",
+    "T12-T10": "NoRel",
+    "T13-T17": "NoRel",
+    "T14-T3": "NoRel",
+    "T16-T13": "NoRel",
+    "T17-T1": "NoRel",
+    "T18-T10": "NoRel",
+    "T19-T1": "NoRel",
+    "T19-T8": "NoRel",
+    "T2-T0": "NoRel",
+    "T3-T2": "NoRel",
+    "T3-T6": "NoRel",
+    "T4-T0": "NoRel",
+    "T4-T1": "NoRel",
+    "T4-T12": "NoRel",
+    "T5-T8": "NoRel",
+    "T6-T7": "NoRel",
+    "T9-T19": "NoRel",
+    "T9-T5": "NoRel"
+  },
+  "sentence": [
+    [
+      "Raporun",
+      "haz\u0131rlanmas\u0131",
+      "i\u00e7in",
+      "ABD",
+      "Ulusal",
+      "Ula\u015f\u0131m",
+      "G\u00fcvenlik",
+      "Kurulu'ndan",
+      "nihai",
+      "rapor",
+      "beklendi\u011fi",
+      "belirtildi",
+      "."
+    ],
+    [
+      "Kuruldan",
+      "hen\u00fcz",
+      "daha",
+      "son",
+      "rapor",
+      "\u00e7\u0131kmad\u0131",
+      "."
+    ],
+    [
+      "Kazadan",
+      "sonra",
+      "olayla",
+      "ilgili",
+      "konu\u015fan",
+      "pilot",
+      "normal",
+      "bir",
+      "\u015fekilde",
+      "indirdikleri",
+      "u\u00e7a\u011f\u0131",
+      "durduramad\u0131\u011f\u0131n\u0131",
+      "belirtti",
+      "."
+    ],
+    [
+      "U\u00e7a\u011f\u0131n",
+      "kaza",
+      "yapmas\u0131n\u0131n",
+      "nedeni",
+      "olarak",
+      "ini\u015f",
+      "s\u0131ras\u0131nda",
+      "u\u00e7a\u011f\u0131",
+      "kontrol",
+      "eden",
+      "ikinci",
+      "pilotun",
+      "yapt\u0131\u011f\u0131",
+      "bir",
+      "hata",
+      "oldu\u011fu",
+      "d\u00fc\u015f\u00fcn\u00fcl\u00fcyor",
+      "."
+    ],
+    [
+      "\u0130ni\u015f",
+      "s\u0131ras\u0131nda",
+      "ikinci",
+      "pilot",
+      "\u0130rfan",
+      "Yavuz'un",
+      "kazara",
+      "\"",
+      "Pas",
+      "ge\u00e7me",
+      "\"",
+      "sistemini",
+      "a\u00e7t\u0131\u011f\u0131",
+      "i\u00e7in",
+      "u\u00e7ak",
+      "indikten",
+      "sonra",
+      "u\u00e7a\u011f\u0131n",
+      "tekrar",
+      "havalanmaya",
+      "\u00e7al\u0131\u015ft\u0131\u011f\u0131",
+      "i\u00e7in",
+      "u\u00e7a\u011f\u0131n",
+      "durdurulamad\u0131",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        9
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        3
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        3
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        11
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        5
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        5
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        5
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        4
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      "acl"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        12
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        8
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      "acl"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        12
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      "compound"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        15
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        3
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        8
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        11
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        8
+      ],
+      "compound:lvc"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        12
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        15
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        15
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        16
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        12
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        12
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      "flat"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        12
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        11
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        8
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        12
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        20
+      ],
+      "acl"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        15
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        20
+      ],
+      "acl"
+    ],
+    [
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        15
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        17
+      ],
+      [
+        4,
+        20
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        18
+      ],
+      [
+        4,
+        19
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        19
+      ],
+      [
+        4,
+        20
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        20
+      ],
+      [
+        4,
+        23
+      ],
+      "acl"
+    ],
+    [
+      [
+        4,
+        21
+      ],
+      [
+        4,
+        20
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        22
+      ],
+      [
+        4,
+        23
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        23
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        24
+      ],
+      [
+        4,
+        23
+      ],
+      "punct"
+    ]
+  ]
+}

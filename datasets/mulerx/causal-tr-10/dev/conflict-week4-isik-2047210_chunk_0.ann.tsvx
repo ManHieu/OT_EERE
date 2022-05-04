@@ -1,0 +1,50 @@
+Text	1998 VAN SALDIRISI , 24 Aralık 1998'de Türkiye'nin Van şehrinde , askerî personelin çocukları olan lise öğrencilerini taşıyan askerî servis aracı hareket etmek üzereyken araca yaklaşan PKK mensubu Hamdiye Kapan'ın üzerindeki patlayıcıları infilak ettirmesiyle gerçekleştirilen intihar saldırısı .	Patlama sonucunda saldırganın yanı sıra bir öğrenci öldü , aralarında asker , öğretmen , öğrenci ve diğer sivillerin olduğu 21 kişi ise saldırıdan yaralı olarak kurtuldu .	Van'daki çeşitli liselerde okuyan 12 subay ve astsubay çocuğunu taşıyan askerî servis aracı , 24 Aralık 1998 günü yerel saatle 07.30 ( UTC+02.00 ) civarında iki koruma eşliğinde askerî lojmanlardan ayrıldı .	Araç , 07.40 sularında Hakkâri yolu üzerindeki Subay Orduevi'nin önünden diğer öğrencileri aldığı sırada orduevi yakınlarındaki otomobil galerisi önünde beklemekte olan kadın saldırgan araca doğru yaklaştı .	Servis hareket etmek üzerindeyken , saldırganın üzerindeki patlayıcıları infilak ettirmesiyle intihar saldırısı düzenlendi .
+Event	T1	saldırısı	EVENT	285
+Event	T2	öldü	EVENT	349
+Event	T3	kurtuldu	EVENT	458
+Event	T4	ayrıldı	EVENT	667
+Event	T5	aldığı	EVENT	768
+Event	T6	yaklaştı	EVENT	874
+Event	T8	düzenlendi	EVENT	997
+Event	T9	1998 VAN SALDIRISI	EVENT	0
+Event	T10	taşıyan	EVENT	118
+Event	T11	yaklaşan	EVENT	176
+Event	T12	ettirmesiyle	EVENT	247
+Event	T13	Patlama	EVENT	297
+Event	T7	saldırıdan	EVENT	433
+Event	T14	taşıyan	EVENT	533
+Event	T15	okuyan	EVENT	496
+Event	T16	ettirmesiyle	EVENT	966
+Relation	T13	T2	CauseEffect	true	Patlama	öldü
+Relation	T2	T13	EffectCause	true	öldü	Patlama
+Relation	T13	T3	CauseEffect	true	Patlama	kurtuldu
+Relation	T3	T13	EffectCause	true	kurtuldu	Patlama
+Relation	T12	T13	CauseEffect	true	ettirmesiyle	Patlama
+Relation	T13	T12	EffectCause	true	Patlama	ettirmesiyle
+Relation	T1	T10	NoRel	true	saldırısı	taşıyan
+Relation	T1	T2	NoRel	true	saldırısı	öldü
+Relation	T1	T6	NoRel	true	saldırısı	yaklaştı
+Relation	T10	T15	NoRel	true	taşıyan	okuyan
+Relation	T10	T5	NoRel	true	taşıyan	aldığı
+Relation	T10	T9	NoRel	true	taşıyan	1998 VAN SALDIRISI
+Relation	T11	T12	NoRel	true	yaklaşan	ettirmesiyle
+Relation	T12	T3	NoRel	true	ettirmesiyle	kurtuldu
+Relation	T12	T4	NoRel	true	ettirmesiyle	ayrıldı
+Relation	T13	T10	NoRel	true	Patlama	taşıyan
+Relation	T15	T1	NoRel	true	okuyan	saldırısı
+Relation	T15	T7	NoRel	true	okuyan	saldırıdan
+Relation	T16	T8	NoRel	true	ettirmesiyle	düzenlendi
+Relation	T3	T1	NoRel	true	kurtuldu	saldırısı
+Relation	T3	T14	NoRel	true	kurtuldu	taşıyan
+Relation	T3	T9	NoRel	true	kurtuldu	1998 VAN SALDIRISI
+Relation	T5	T13	NoRel	true	aldığı	Patlama
+Relation	T5	T15	NoRel	true	aldığı	okuyan
+Relation	T6	T10	NoRel	true	yaklaştı	taşıyan
+Relation	T6	T14	NoRel	true	yaklaştı	taşıyan
+Relation	T7	T2	NoRel	true	saldırıdan	öldü
+Relation	T8	T12	NoRel	true	düzenlendi	ettirmesiyle
+Relation	T8	T15	NoRel	true	düzenlendi	okuyan
+Relation	T8	T16	NoRel	true	düzenlendi	ettirmesiyle
+Relation	T8	T2	NoRel	true	düzenlendi	öldü
+Relation	T9	T11	NoRel	true	1998 VAN SALDIRISI	yaklaşan
+Relation	T9	T2	NoRel	true	1998 VAN SALDIRISI	öldü

@@ -1,0 +1,43 @@
+Text	_ OVADAKI ATEŞLER _ ( Japonca : 野 火 _ NOBI _ ) , Shohei Ooka'nin 1951'de yayımlanan romanı .	Yomiuri Ödülünü kazanan roman 1977 yılında Ahmet Altan tarafından Türkçeye çevrildi .	II._Dünya Savaşı'nın sonlarına doğru tamamen imha edilmiş Japon İmparatorluk Ordusu'ndan bir askerin Filipinler'deki anılarını konu alir .	Roman ABD ve FiIipin ordularının Filipinler'i işgal etmiş olan Japon ordusuna saldırıları sürerken kendi birliği tarafından dışlanan Japon er Tamura'nın cepheden kaçışını ve Filipin ormanlarında amaçsızca gezinmesini anlatır .	Aklını yitiren Tamura doğayla başbasa kalır , inancını sorgular , açlik , ölüm ve son olarak yamyamlık gibi sorunlarla yuzlesir .
+Event	T0	yayımlanan	EVENT	73
+Event	T1	kazanan	EVENT	109
+Event	T2	çevrildi	EVENT	168
+Event	T3	imha	EVENT	224
+Event	T4	alir	EVENT	311
+Event	T5	etmiş	EVENT	370
+Event	T6	kaçışını	EVENT	480
+Event	T7	anlatır	EVENT	535
+Event	T8	kalır	EVENT	583
+Event	T9	sorgular	EVENT	600
+Event	T10	ölüm	EVENT	619
+Event	T11	yuzlesir	EVENT	664
+Event	T12	II._Dünya Savaşı'nın	EVENT	179
+Event	T13	saldırıları	EVENT	396
+Event	T14	dışlanan	EVENT	442
+Event	T15	gezinmesini	EVENT	523
+Relation	T14	T6	CauseEffect	true	dışlanan	kaçışını
+Relation	T6	T14	EffectCause	true	kaçışını	dışlanan
+Relation	T0	T1	NoRel	true	yayımlanan	kazanan
+Relation	T1	T13	NoRel	true	kazanan	saldırıları
+Relation	T1	T5	NoRel	true	kazanan	etmiş
+Relation	T1	T7	NoRel	true	kazanan	anlatır
+Relation	T11	T15	NoRel	true	yuzlesir	gezinmesini
+Relation	T13	T12	NoRel	true	saldırıları	II._Dünya Savaşı'nın
+Relation	T14	T12	NoRel	true	dışlanan	II._Dünya Savaşı'nın
+Relation	T14	T8	NoRel	true	dışlanan	kalır
+Relation	T15	T11	NoRel	true	gezinmesini	yuzlesir
+Relation	T2	T10	NoRel	true	çevrildi	ölüm
+Relation	T2	T12	NoRel	true	çevrildi	II._Dünya Savaşı'nın
+Relation	T2	T15	NoRel	true	çevrildi	gezinmesini
+Relation	T2	T9	NoRel	true	çevrildi	sorgular
+Relation	T3	T11	NoRel	true	imha	yuzlesir
+Relation	T4	T0	NoRel	true	alir	yayımlanan
+Relation	T4	T8	NoRel	true	alir	kalır
+Relation	T5	T7	NoRel	true	etmiş	anlatır
+Relation	T6	T1	NoRel	true	kaçışını	kazanan
+Relation	T6	T15	NoRel	true	kaçışını	gezinmesini
+Relation	T7	T13	NoRel	true	anlatır	saldırıları
+Relation	T7	T2	NoRel	true	anlatır	çevrildi
+Relation	T7	T3	NoRel	true	anlatır	imha
+Relation	T8	T1	NoRel	true	kalır	kazanan
+Relation	T8	T5	NoRel	true	kalır	etmiş

@@ -1,0 +1,66 @@
+Text	Da Rejewski kort før sin død erfarede om arbejdet , der var udført på Bletchley Park og om dets betydning for at vinde krigen , var han forbløffet .	Med den massive polske assistance begyndte englænderne selv at arbejde med tysk Enigma kommunikation .	Tidligt i 1939 installerede det engelske secret service sin " Code and Cypher School " på Bletchley Park 80 km nord for London , med det formål at knække de tyske Enigmakoder .	De oprettede et stort opsnapningsnetværk som skulle indsamle den krypterede trafik til kodebryderne på Bletchley .	Med tiden opstod også en stor organisation , som kontrollerede distributionen af den oplyste hemmelige information .
+Event	T0	erfarede	EVENT	29
+Event	T1	udført	EVENT	60
+Event	T2	forbløffet	EVENT	136
+Event	T3	begyndte	EVENT	183
+Event	T4	arbejde	EVENT	212
+Event	T5	kommunikation	EVENT	236
+Event	T6	installerede	EVENT	267
+Event	T7	knække	EVENT	399
+Event	T8	oprettede	EVENT	432
+Event	T9	indsamle	EVENT	481
+Event	T10	opstod	EVENT	554
+Event	T11	distributionen	EVENT	607
+Event	T12	assistance	EVENT	172
+Event	T13	død	EVENT	25
+Event	T14	vinde	EVENT	113
+Event	T15	arbejdet	EVENT	41
+Event	T16	betydning	EVENT	96
+Event	T17	opsnapningsnetværk	EVENT	451
+Event	T18	organisation	EVENT	574
+Event	T19	information	EVENT	647
+Event	T20	kontrollerede	EVENT	593
+Relation	T0	T2	CauseEffect	true	erfarede	forbløffet
+Relation	T2	T0	EffectCause	true	forbløffet	erfarede
+Relation	T6	T7	CauseEffect	true	installerede	knække
+Relation	T7	T6	EffectCause	true	knække	installerede
+Relation	T17	T9	CauseEffect	true	opsnapningsnetværk	indsamle
+Relation	T9	T17	EffectCause	true	indsamle	opsnapningsnetværk
+Relation	T0	T1	NoRel	true	erfarede	udført
+Relation	T0	T10	NoRel	true	erfarede	opstod
+Relation	T1	T12	NoRel	true	udført	assistance
+Relation	T1	T17	NoRel	true	udført	opsnapningsnetværk
+Relation	T1	T8	NoRel	true	udført	oprettede
+Relation	T10	T0	NoRel	true	opstod	erfarede
+Relation	T10	T17	NoRel	true	opstod	opsnapningsnetværk
+Relation	T10	T8	NoRel	true	opstod	oprettede
+Relation	T11	T0	NoRel	true	distributionen	erfarede
+Relation	T11	T1	NoRel	true	distributionen	udført
+Relation	T11	T2	NoRel	true	distributionen	forbløffet
+Relation	T12	T13	NoRel	true	assistance	død
+Relation	T13	T20	NoRel	true	død	kontrollerede
+Relation	T14	T1	NoRel	true	vinde	udført
+Relation	T14	T15	NoRel	true	vinde	arbejdet
+Relation	T14	T2	NoRel	true	vinde	forbløffet
+Relation	T15	T2	NoRel	true	arbejdet	forbløffet
+Relation	T15	T3	NoRel	true	arbejdet	begyndte
+Relation	T16	T4	NoRel	true	betydning	arbejde
+Relation	T17	T11	NoRel	true	opsnapningsnetværk	distributionen
+Relation	T18	T0	NoRel	true	organisation	erfarede
+Relation	T18	T2	NoRel	true	organisation	forbløffet
+Relation	T18	T20	NoRel	true	organisation	kontrollerede
+Relation	T18	T8	NoRel	true	organisation	oprettede
+Relation	T19	T11	NoRel	true	information	distributionen
+Relation	T19	T14	NoRel	true	information	vinde
+Relation	T2	T7	NoRel	true	forbløffet	knække
+Relation	T20	T3	NoRel	true	kontrollerede	begyndte
+Relation	T3	T17	NoRel	true	begyndte	opsnapningsnetværk
+Relation	T4	T3	NoRel	true	arbejde	begyndte
+Relation	T5	T6	NoRel	true	kommunikation	installerede
+Relation	T5	T7	NoRel	true	kommunikation	knække
+Relation	T6	T1	NoRel	true	installerede	udført
+Relation	T6	T10	NoRel	true	installerede	opstod
+Relation	T8	T0	NoRel	true	oprettede	erfarede
+Relation	T8	T3	NoRel	true	oprettede	begyndte
+Relation	T8	T4	NoRel	true	oprettede	arbejde
+Relation	T9	T6	NoRel	true	indsamle	installerede

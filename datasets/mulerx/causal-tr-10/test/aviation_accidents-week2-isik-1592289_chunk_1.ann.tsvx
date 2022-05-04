@@ -1,0 +1,34 @@
+Text	2001'de Libyalı istihbarat subayı Abdelbaset el - Megrahi , bombalamadaki rolünden dolayı hapis cezası adlı .	El - Megrahi , Ağustos 2009'da prostat kanseri teşhisi konduktan sonra İskoçya hükûmeti tarafından serbest bırakıldı ve saldırı sonrasında mahkûm edilen tek kişi olarak Mayıs 2012'de yaşamını yitirdi .	Kaddafi , 2003 yılında Libya'nın Lockerbie faciasıyla ilgili sorumluluğunu kabul etti ve kurbanların ailelerine tazminat ödedi fakat saldırı emrini kendisinin vermediğini dile getirdi .	2011'de Libya iç savaşı sırasında , eski bir hükûmet yetkilisi Kaddafi'nin açıklamasını yalanladı ve Libya liderinin bombalama emrini bizzat verdiğini ileri sürdü .	Bu iddiaların yanı sıra , Pan Am 103 sefer sayılı uçağın düşürülmesine ilişkin çok sayıda komplo teorisi ileri sürülmektedir .
+Event	T10	savaşı	EVENT	515
+Event	T11	yalanladı	EVENT	586
+Event	T12	ileri sürdü	EVENT	649
+Event	T13	ileri sürülmektedir	EVENT	768
+Event	T14	bombalamadaki	EVENT	60
+Event	T16	açıklamasını	EVENT	573
+Event	T17	düşürülmesine	EVENT	720
+Event	T18	bombalama	EVENT	615
+Event	T3	saldırı	EVENT	230
+Event	T4	yitirdi	EVENT	302
+Event	T5	faciasıyla	EVENT	355
+Event	T6	kabul etti	EVENT	387
+Event	T7	ödedi	EVENT	433
+Relation	T6	T7	CauseEffect	true	kabul etti	ödedi
+Relation	T7	T6	EffectCause	true	ödedi	kabul etti
+Relation	T5	T7	CauseEffect	true	faciasıyla	ödedi
+Relation	T7	T5	EffectCause	true	ödedi	faciasıyla
+Relation	T14	T17	CauseEffect	true	bombalamadaki	düşürülmesine
+Relation	T17	T14	EffectCause	true	düşürülmesine	bombalamadaki
+Relation	T11	T3	NoRel	true	yalanladı	saldırı
+Relation	T13	T10	NoRel	true	ileri sürülmektedir	savaşı
+Relation	T13	T4	NoRel	true	ileri sürülmektedir	yitirdi
+Relation	T13	T6	NoRel	true	ileri sürülmektedir	kabul etti
+Relation	T13	T7	NoRel	true	ileri sürülmektedir	ödedi
+Relation	T16	T13	NoRel	true	açıklamasını	ileri sürülmektedir
+Relation	T16	T14	NoRel	true	açıklamasını	bombalamadaki
+Relation	T17	T16	NoRel	true	düşürülmesine	açıklamasını
+Relation	T17	T18	NoRel	true	düşürülmesine	bombalama
+Relation	T17	T5	NoRel	true	düşürülmesine	faciasıyla
+Relation	T18	T7	NoRel	true	bombalama	ödedi
+Relation	T3	T4	NoRel	true	saldırı	yitirdi
+Relation	T3	T6	NoRel	true	saldırı	kabul etti
+Relation	T7	T4	NoRel	true	ödedi	yitirdi

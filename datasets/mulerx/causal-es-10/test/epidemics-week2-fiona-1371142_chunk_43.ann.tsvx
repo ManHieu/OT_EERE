@@ -1,0 +1,84 @@
+Text	No se hicieron censos de la población de Londres de la época , pero los registros disponibles sugieren que la ciudad volvió a su tamaño anterior en un par de años .	Los entierros en 1667 habían vuelto a las cifras de 1663 y el cobro de fogaje se había recuperado ; John Graunt , al analizar los registros de bautismo contemporáneos , concluyó que representaban una población recuperada .	Parte de esto podría explicarse por el retorno de los familias ricas , los comerciantes y las industrias manufactureras , que necesitaban reemplazar las pérdidas entre su personal y tomar medidas para atraer a las personas necesarias .	Colchester había sufrido la despoblación más severa , aunque los registros de fabricación de telas sugieren que la producción se había recuperado o incluso aumentado en 1669 ; el número de habitantes casi había regresado a los niveles previos a la peste en 1674 .	Otras ciudades tuvieron menos éxito : Ipswich se vio menos afectado que Colchester , pero , en 1674 , su población había disminuido en un 18_% , más de lo que podría explicarse solo por las muertes de la peste .
+Event	T1	sugieren	EVENT	94
+Event	T10	recuperada	EVENT	375
+Event	T11	retorno	EVENT	427
+Event	T12	reemplazar	EVENT	526
+Event	T13	pérdidas	EVENT	541
+Event	T14	atraer	EVENT	589
+Event	T15	sufrido	EVENT	641
+Event	T16	despoblación	EVENT	652
+Event	T17	registros	EVENT	689
+Event	T18	sugieren	EVENT	723
+Event	T19	recuperado	EVENT	759
+Event	T20	aumentado	EVENT	780
+Event	T21	regresado	EVENT	835
+Event	T22	peste	EVENT	872
+Event	T23	éxito	EVENT	918
+Event	T26	disminuido	EVENT	1009
+Event	T27	muertes	EVENT	1078
+Event	T28	peste	EVENT	1092
+Event	T3	entierros	EVENT	169
+Event	T4	vuelto	EVENT	194
+Event	T5	cobro	EVENT	227
+Event	T6	recuperado	EVENT	252
+Event	T7	analizar	EVENT	282
+Event	T8	concluyó	EVENT	334
+Event	T9	representaban	EVENT	347
+Relation	T22	T16	CauseEffect	true	peste	despoblación
+Relation	T16	T22	EffectCause	true	despoblación	peste
+Relation	T22	T26	CauseEffect	true	peste	disminuido
+Relation	T26	T22	EffectCause	true	disminuido	peste
+Relation	T28	T27	CauseEffect	true	peste	muertes
+Relation	T27	T28	EffectCause	true	muertes	peste
+Relation	T11	T10	CauseEffect	true	retorno	recuperada
+Relation	T10	T11	EffectCause	true	recuperada	retorno
+Relation	T1	T15	NoRel	true	sugieren	sufrido
+Relation	T1	T16	NoRel	true	sugieren	despoblación
+Relation	T1	T17	NoRel	true	sugieren	registros
+Relation	T1	T23	NoRel	true	sugieren	éxito
+Relation	T10	T5	NoRel	true	recuperada	cobro
+Relation	T10	T9	NoRel	true	recuperada	representaban
+Relation	T11	T20	NoRel	true	retorno	aumentado
+Relation	T11	T22	NoRel	true	retorno	peste
+Relation	T13	T22	NoRel	true	pérdidas	peste
+Relation	T13	T5	NoRel	true	pérdidas	cobro
+Relation	T14	T12	NoRel	true	atraer	reemplazar
+Relation	T14	T16	NoRel	true	atraer	despoblación
+Relation	T14	T4	NoRel	true	atraer	vuelto
+Relation	T16	T1	NoRel	true	despoblación	sugieren
+Relation	T16	T19	NoRel	true	despoblación	recuperado
+Relation	T18	T11	NoRel	true	sugieren	retorno
+Relation	T18	T26	NoRel	true	sugieren	disminuido
+Relation	T19	T16	NoRel	true	recuperado	despoblación
+Relation	T19	T18	NoRel	true	recuperado	sugieren
+Relation	T19	T23	NoRel	true	recuperado	éxito
+Relation	T19	T4	NoRel	true	recuperado	vuelto
+Relation	T19	T8	NoRel	true	recuperado	concluyó
+Relation	T20	T1	NoRel	true	aumentado	sugieren
+Relation	T20	T14	NoRel	true	aumentado	atraer
+Relation	T20	T6	NoRel	true	aumentado	recuperado
+Relation	T21	T11	NoRel	true	regresado	retorno
+Relation	T23	T16	NoRel	true	éxito	despoblación
+Relation	T23	T22	NoRel	true	éxito	peste
+Relation	T26	T15	NoRel	true	disminuido	sufrido
+Relation	T26	T4	NoRel	true	disminuido	vuelto
+Relation	T27	T12	NoRel	true	muertes	reemplazar
+Relation	T27	T23	NoRel	true	muertes	éxito
+Relation	T28	T13	NoRel	true	peste	pérdidas
+Relation	T28	T18	NoRel	true	peste	sugieren
+Relation	T28	T3	NoRel	true	peste	entierros
+Relation	T3	T21	NoRel	true	entierros	regresado
+Relation	T3	T27	NoRel	true	entierros	muertes
+Relation	T4	T12	NoRel	true	vuelto	reemplazar
+Relation	T4	T19	NoRel	true	vuelto	recuperado
+Relation	T5	T10	NoRel	true	cobro	recuperada
+Relation	T5	T11	NoRel	true	cobro	retorno
+Relation	T5	T15	NoRel	true	cobro	sufrido
+Relation	T6	T3	NoRel	true	recuperado	entierros
+Relation	T6	T8	NoRel	true	recuperado	concluyó
+Relation	T7	T11	NoRel	true	analizar	retorno
+Relation	T7	T5	NoRel	true	analizar	cobro
+Relation	T8	T13	NoRel	true	concluyó	pérdidas
+Relation	T8	T3	NoRel	true	concluyó	entierros
+Relation	T8	T7	NoRel	true	concluyó	analizar
+Relation	T9	T20	NoRel	true	representaban	aumentado

@@ -1,0 +1,710 @@
+{
+  "id": "disasters-week4-ahmed-793307_chunk_2.ann.tsvx",
+  "text": "PM Modi surveys flood -hit areas in Kerala , announces Rs 500 crore interim relief -\tRahul urges Modi to declare Kerala floods a national disaster -\t-\tModi begins aerial survey of Kerala floods -\tKerala floods : The ghost of past environment policy returns -",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "announces",
+      "label": "EVENT",
+      "char_index": 45,
+      "sid": 0,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "relief",
+      "label": "EVENT",
+      "char_index": 76,
+      "sid": 0,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "urges",
+      "label": "EVENT",
+      "char_index": 91,
+      "sid": 1,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "declare",
+      "label": "EVENT",
+      "char_index": 105,
+      "sid": 1,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "floods",
+      "label": "EVENT",
+      "char_index": 120,
+      "sid": 1,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "disaster",
+      "label": "EVENT",
+      "char_index": 138,
+      "sid": 1,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "survey",
+      "label": "EVENT",
+      "char_index": 170,
+      "sid": 3,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "floods",
+      "label": "EVENT",
+      "char_index": 187,
+      "sid": 3,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "floods",
+      "label": "EVENT",
+      "char_index": 203,
+      "sid": 4,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "returns",
+      "label": "EVENT",
+      "char_index": 249,
+      "sid": 4,
+      "tid": [
+        9,
+        10
+      ]
+    }
+  },
+  "relation": {
+    "T4-T0": "CauseEffect",
+    "T0-T4": "EffectCause",
+    "T7-T6": "CauseEffect",
+    "T6-T7": "EffectCause",
+    "T5-T2": "CauseEffect",
+    "T2-T5": "EffectCause",
+    "T1-T7": "NoRel",
+    "T3-T1": "NoRel",
+    "T3-T8": "NoRel",
+    "T4-T6": "NoRel",
+    "T6-T5": "NoRel",
+    "T7-T0": "NoRel",
+    "T7-T1": "NoRel",
+    "T7-T9": "NoRel"
+  },
+  "sentence": [
+    [
+      "PM",
+      "Modi",
+      "surveys",
+      "flood",
+      "-hit",
+      "areas",
+      "in",
+      "Kerala",
+      ",",
+      "announces",
+      "Rs",
+      "500",
+      "crore",
+      "interim",
+      "relief",
+      "-"
+    ],
+    [
+      "Rahul",
+      "urges",
+      "Modi",
+      "to",
+      "declare",
+      "Kerala",
+      "floods",
+      "a",
+      "national",
+      "disaster",
+      "-"
+    ],
+    [
+      "-"
+    ],
+    [
+      "Modi",
+      "begins",
+      "aerial",
+      "survey",
+      "of",
+      "Kerala",
+      "floods",
+      "-"
+    ],
+    [
+      "Kerala",
+      "floods",
+      ":",
+      "The",
+      "ghost",
+      "of",
+      "past",
+      "environment",
+      "policy",
+      "returns",
+      "-"
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        2
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        2
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        2
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        14
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        9
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      "iobj"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      "mark"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        1
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        4
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        9
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        4
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        -1
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        1
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        9
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        4
+      ],
+      "punct"
+    ]
+  ]
+}

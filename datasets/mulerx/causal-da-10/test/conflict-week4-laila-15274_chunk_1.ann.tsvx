@@ -1,0 +1,55 @@
+Text	Fire officerer blev dræbt og tyve andre såret , mens Hitler slap med nogle knubs .	Hans storhedsvanvid voksede , og han følte sig frelst af forsynet for at redde Tyskland .	Der havde været andre attentatforsøg , og der fandtes anden modstand i Tyskland , men oftest uden en sammenhængende modstandsbevægelse .	For at gennemføre et _ coup_d’etat _ var der brug for en gruppe indflydelsesrige personer , som modstanden kunne samle sig omkring og et samspil med de væbnede styrker og forberedelse af civil og militær administration .	I Tyskland var de væbnede styrker den eneste større bevæbnede magt , der var relativt uafhængig af partiet , og som ville kunne vælte Hitler .
+Event	T0	dræbt	EVENT	20
+Event	T1	såret	EVENT	40
+Event	T2	slap	EVENT	60
+Event	T3	knubs	EVENT	75
+Event	T4	voksede	EVENT	103
+Event	T5	følte	EVENT	120
+Event	T6	forsynet	EVENT	140
+Event	T7	redde	EVENT	156
+Event	T8	attentatforsøg	EVENT	195
+Event	T9	gennemføre	EVENT	317
+Event	T10	brug	EVENT	355
+Event	T11	samle	EVENT	423
+Event	T12	samspil	EVENT	447
+Event	T13	forberedelse	EVENT	481
+Event	T14	vælte	EVENT	659
+Event	T15	frelst	EVENT	130
+Event	T16	modstand	EVENT	233
+Event	T17	modstandsbevægelse	EVENT	289
+Event	T18	bevæbnede	EVENT	583
+Relation	T2	T4	CauseEffect	true	slap	voksede
+Relation	T4	T2	EffectCause	true	voksede	slap
+Relation	T15	T4	CauseEffect	true	frelst	voksede
+Relation	T4	T15	EffectCause	true	voksede	frelst
+Relation	T0	T14	NoRel	true	dræbt	vælte
+Relation	T0	T8	NoRel	true	dræbt	attentatforsøg
+Relation	T10	T14	NoRel	true	brug	vælte
+Relation	T10	T18	NoRel	true	brug	bevæbnede
+Relation	T10	T3	NoRel	true	brug	knubs
+Relation	T13	T4	NoRel	true	forberedelse	voksede
+Relation	T13	T6	NoRel	true	forberedelse	forsynet
+Relation	T13	T8	NoRel	true	forberedelse	attentatforsøg
+Relation	T15	T17	NoRel	true	frelst	modstandsbevægelse
+Relation	T15	T5	NoRel	true	frelst	følte
+Relation	T15	T7	NoRel	true	frelst	redde
+Relation	T16	T12	NoRel	true	modstand	samspil
+Relation	T16	T13	NoRel	true	modstand	forberedelse
+Relation	T16	T17	NoRel	true	modstand	modstandsbevægelse
+Relation	T16	T9	NoRel	true	modstand	gennemføre
+Relation	T17	T14	NoRel	true	modstandsbevægelse	vælte
+Relation	T18	T1	NoRel	true	bevæbnede	såret
+Relation	T18	T11	NoRel	true	bevæbnede	samle
+Relation	T18	T7	NoRel	true	bevæbnede	redde
+Relation	T2	T13	NoRel	true	slap	forberedelse
+Relation	T3	T17	NoRel	true	knubs	modstandsbevægelse
+Relation	T5	T0	NoRel	true	følte	dræbt
+Relation	T6	T11	NoRel	true	forsynet	samle
+Relation	T6	T4	NoRel	true	forsynet	voksede
+Relation	T6	T8	NoRel	true	forsynet	attentatforsøg
+Relation	T7	T1	NoRel	true	redde	såret
+Relation	T7	T12	NoRel	true	redde	samspil
+Relation	T8	T11	NoRel	true	attentatforsøg	samle
+Relation	T8	T13	NoRel	true	attentatforsøg	forberedelse
+Relation	T9	T12	NoRel	true	gennemføre	samspil
+Relation	T9	T16	NoRel	true	gennemføre	modstand

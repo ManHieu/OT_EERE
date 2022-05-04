@@ -1,0 +1,29 @@
+Text	Tan sólo media hora después del despegue , cuando el avión vuela a altitud de crucero con un Nivel de vuelo ( FL ) 390 , el monitor electrónico centralizado del avión ( ECAM ) mostró un mensaje " ENG 2 CTL SYS FAULT " .	La tripulación contactó con el control de mantenimiento del departamento de ingeniería de la aerolínea y debatieron también sobre las fluctuaciones del aparato .	Como el otro motor operaba en parámetros normales tripulantes y el control de mantenimiento decidieron que era seguro continuar con el vuelo .	Cerca de dos horas después del despegue , a las 03:16 UTC , el mensaje " ENG 2 CTL SYS FAULT " reapareció en el ECAM .	Los tripulantes llamaron nuevamente al control de mantenimiento para revisar la decisión tomada .
+Event	T0	despegue	EVENT	32
+Event	T1	vuela	EVENT	59
+Event	T2	mostró	EVENT	176
+Event	T3	contactó	EVENT	235
+Event	T4	debatieron	EVENT	325
+Event	T5	fluctuaciones	EVENT	354
+Event	T6	operaba	EVENT	401
+Event	T7	control	EVENT	449
+Event	T8	vuelo	EVENT	517
+Event	T9	despegue	EVENT	556
+Event	T10	reapareció	EVENT	620
+Event	T11	llamaron	EVENT	660
+Event	T12	revisar	EVENT	713
+Event	T13	tomada	EVENT	733
+Relation	T0	T6	NoRel	true	despegue	operaba
+Relation	T1	T6	NoRel	true	vuela	operaba
+Relation	T1	T8	NoRel	true	vuela	vuelo
+Relation	T10	T0	NoRel	true	reapareció	despegue
+Relation	T13	T3	NoRel	true	tomada	contactó
+Relation	T2	T1	NoRel	true	mostró	vuela
+Relation	T2	T6	NoRel	true	mostró	operaba
+Relation	T2	T8	NoRel	true	mostró	vuelo
+Relation	T3	T1	NoRel	true	contactó	vuela
+Relation	T4	T3	NoRel	true	debatieron	contactó
+Relation	T5	T6	NoRel	true	fluctuaciones	operaba
+Relation	T6	T4	NoRel	true	operaba	debatieron
+Relation	T7	T3	NoRel	true	control	contactó
+Relation	T7	T4	NoRel	true	control	debatieron

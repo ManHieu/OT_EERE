@@ -1,0 +1,43 @@
+Text	Los pilotos de este vuelo anterior confirmaron que los controladores de tránsito aéreo transmitieron los informes de acción de frenado a la tripulación de vuelo del Delta 1086 ; Estos informes se basaron en los informes de los pilotos de otros dos vuelos que aterrizaron varios minutos antes del vuelo 1086 .	Ambos vuelos anteriores habían informado que la acción de frenado en la pista era " buena " .	Las declaraciones de los pilotos a la NTSB después del accidente revelaron que la pista parecía toda blanca ( cubierta de nieve ) cuando el avión descendió del cielo cubierto , segundos antes de aterrizar .	[ miniaturade imagen | Aeropuerto LaGuardia .	La pista 13 comienza en la parte inferior central de la foto y se extiende hacia la parte superior izquierda .
+Event	T0	vuelo	EVENT	20
+Event	T1	confirmaron	EVENT	35
+Event	T2	transmitieron	EVENT	87
+Event	T3	informes	EVENT	105
+Event	T6	informes	EVENT	184
+Event	T10	vuelo	EVENT	296
+Event	T11	informado	EVENT	340
+Event	T12	acción	EVENT	357
+Event	T13	frenado	EVENT	367
+Event	T14	declaraciones	EVENT	407
+Event	T15	revelaron	EVENT	468
+Event	T16	descendió	EVENT	549
+Event	T17	cubierto	EVENT	569
+Event	T18	aterrizar	EVENT	598
+Event	T4	vuelos	EVENT	248
+Event	T5	accidente	EVENT	458
+Relation	T4	T6	CauseEffect	true	vuelos	informes
+Relation	T6	T4	EffectCause	true	informes	vuelos
+Relation	T0	T1	NoRel	true	vuelo	confirmaron
+Relation	T1	T11	NoRel	true	confirmaron	informado
+Relation	T1	T14	NoRel	true	confirmaron	declaraciones
+Relation	T10	T12	NoRel	true	vuelo	acción
+Relation	T10	T13	NoRel	true	vuelo	frenado
+Relation	T10	T15	NoRel	true	vuelo	revelaron
+Relation	T11	T13	NoRel	true	informado	frenado
+Relation	T11	T16	NoRel	true	informado	descendió
+Relation	T11	T18	NoRel	true	informado	aterrizar
+Relation	T12	T0	NoRel	true	acción	vuelo
+Relation	T12	T16	NoRel	true	acción	descendió
+Relation	T14	T3	NoRel	true	declaraciones	informes
+Relation	T15	T1	NoRel	true	revelaron	confirmaron
+Relation	T15	T3	NoRel	true	revelaron	informes
+Relation	T16	T0	NoRel	true	descendió	vuelo
+Relation	T16	T15	NoRel	true	descendió	revelaron
+Relation	T17	T16	NoRel	true	cubierto	descendió
+Relation	T17	T4	NoRel	true	cubierto	vuelos
+Relation	T18	T13	NoRel	true	aterrizar	frenado
+Relation	T3	T14	NoRel	true	informes	declaraciones
+Relation	T3	T16	NoRel	true	informes	descendió
+Relation	T3	T6	NoRel	true	informes	informes
+Relation	T6	T0	NoRel	true	informes	vuelo
+Relation	T6	T13	NoRel	true	informes	frenado

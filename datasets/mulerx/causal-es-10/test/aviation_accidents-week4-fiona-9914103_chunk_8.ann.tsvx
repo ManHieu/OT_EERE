@@ -1,0 +1,40 @@
+Text	La aerolínea estatal de Bielorrusia , Belavia , podría tener prohibido aterrizar en los aeropuertos de la Unión Europea .	- La OACI expresó su profunda preocupación por « el aparente aterrizaje forzoso » del vuelo .	Un tuit de la OACI afirmó que el aterrizaje forzoso podría infringir el Convenio de Chicago sobre Aviación Civil Internacional .	- El secretario general de la OTAN , Jens Stoltenberg , tuiteó que la puesta a tierra del vuelo constituye un « incidente grave y peligroso que requiere una investigación internacional » .	- La presidenta de la Comisión Europea , Ursula von der Leyen , describió el incidente como « absolutamente inaceptable » y afirmó que « cualquier violación de las normas internacionales de transporte aéreo debe tener consecuencias » .
+Event	T0	aterrizar	EVENT	71
+Event	T1	expresó	EVENT	132
+Event	T2	preocupación	EVENT	152
+Event	T3	aterrizaje	EVENT	183
+Event	T4	vuelo	EVENT	208
+Event	T5	tuit	EVENT	219
+Event	T6	afirmó	EVENT	235
+Event	T7	aterrizaje	EVENT	249
+Event	T8	infringir	EVENT	275
+Event	T9	tuiteó	EVENT	401
+Event	T10	constituye	EVENT	441
+Event	T11	investigación	EVENT	502
+Event	T12	incidente	EVENT	611
+Event	T13	afirmó	EVENT	658
+Event	T14	violación	EVENT	681
+Relation	T0	T1	NoRel	true	aterrizar	expresó
+Relation	T1	T0	NoRel	true	expresó	aterrizar
+Relation	T1	T14	NoRel	true	expresó	violación
+Relation	T1	T4	NoRel	true	expresó	vuelo
+Relation	T10	T1	NoRel	true	constituye	expresó
+Relation	T10	T13	NoRel	true	constituye	afirmó
+Relation	T11	T12	NoRel	true	investigación	incidente
+Relation	T11	T6	NoRel	true	investigación	afirmó
+Relation	T12	T11	NoRel	true	incidente	investigación
+Relation	T12	T7	NoRel	true	incidente	aterrizaje
+Relation	T13	T1	NoRel	true	afirmó	expresó
+Relation	T14	T8	NoRel	true	violación	infringir
+Relation	T2	T0	NoRel	true	preocupación	aterrizar
+Relation	T2	T11	NoRel	true	preocupación	investigación
+Relation	T3	T10	NoRel	true	aterrizaje	constituye
+Relation	T3	T8	NoRel	true	aterrizaje	infringir
+Relation	T3	T9	NoRel	true	aterrizaje	tuiteó
+Relation	T4	T1	NoRel	true	vuelo	expresó
+Relation	T5	T1	NoRel	true	tuit	expresó
+Relation	T5	T2	NoRel	true	tuit	preocupación
+Relation	T6	T9	NoRel	true	afirmó	tuiteó
+Relation	T7	T3	NoRel	true	aterrizaje	aterrizaje
+Relation	T7	T9	NoRel	true	aterrizaje	tuiteó
+Relation	T9	T13	NoRel	true	tuiteó	afirmó

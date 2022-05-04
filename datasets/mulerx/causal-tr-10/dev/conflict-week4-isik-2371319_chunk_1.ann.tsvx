@@ -1,0 +1,57 @@
+Text	Kuruluş , adanın kuzeyinde , 2013 yılında Kıbrıs Cumhuriyeti bayrakları açan kişilerin yargılanması , 2018 yılında Afrika gazetesine karşı gerçekleşen saldırı , 2019 yılında bazı gazetecilere Türkiye tarafından açılan davalar ve 2020 yılında barikatlardan geçmek isteyen işçilere karşı gerçekleşen olaylarda hedef alınan Kıbrıslı Türklere destek olmuştur .	Faaliyetleri nedeniyle kuruluşun liderliği 2021 yılında Türkiye tarafından kara listeye alınmış ve persona non grata edilmiştir .	Kıbrıslılar Birliği , 2019 Avrupa Parlamentosu seçimlerine bağımsız olarak katılabileceğini kamuoyu ile paylaşmış , ancak daha sonra seçimlerde Oz Karahan tarafından Yasemin Hareketi listesi içerisinde temsil edilmiştir .	Kıbrıslılar Birliği , _ Halkların Uluslararası Mücadele Birliği _ , _ Devrimci Parti ve Örgütlerin Enternasyonal Koordinasyonu _ , _ Küresel Ekososyalist Ağı _ ve _ Savaşa Hayır - NATO'ya Hayır _ üyesidir .	Kıbrıslılar Birliği tarafından Kıbrıslı toplum lideri ve devlet adamı Dr. İhsan Ali’nin anısına Onur Ödülleri verilmektedir .
+Event	T0	yargılanması	EVENT	87
+Event	T1	saldırı	EVENT	151
+Event	T2	davalar	EVENT	218
+Event	T3	geçmek	EVENT	256
+Event	T4	alınmış	EVENT	445
+Event	T5	edilmiştir	EVENT	474
+Event	T6	paylaşmış	EVENT	591
+Event	T7	edilmiştir	EVENT	696
+Event	T8	verilmektedir	EVENT	1026
+Event	T9	açan	EVENT	72
+Event	T10	olaylarda	EVENT	298
+Event	T11	alınan	EVENT	314
+Event	T12	olmuştur	EVENT	346
+Event	T13	Faaliyetleri	EVENT	357
+Event	T14	seçimlerine	EVENT	534
+Event	T15	seçimlerde	EVENT	620
+Relation	T9	T0	CauseEffect	true	açan	yargılanması
+Relation	T0	T9	EffectCause	true	yargılanması	açan
+Relation	T0	T12	CauseEffect	true	yargılanması	olmuştur
+Relation	T12	T0	EffectCause	true	olmuştur	yargılanması
+Relation	T1	T12	CauseEffect	true	saldırı	olmuştur
+Relation	T12	T1	EffectCause	true	olmuştur	saldırı
+Relation	T11	T0	CauseEffect	true	alınan	yargılanması
+Relation	T0	T11	EffectCause	true	yargılanması	alınan
+Relation	T11	T1	CauseEffect	true	alınan	saldırı
+Relation	T1	T11	EffectCause	true	saldırı	alınan
+Relation	T11	T2	CauseEffect	true	alınan	davalar
+Relation	T2	T11	EffectCause	true	davalar	alınan
+Relation	T11	T10	CauseEffect	true	alınan	olaylarda
+Relation	T10	T11	EffectCause	true	olaylarda	alınan
+Relation	T3	T10	CauseEffect	true	geçmek	olaylarda
+Relation	T10	T3	EffectCause	true	olaylarda	geçmek
+Relation	T13	T4	CauseEffect	true	Faaliyetleri	alınmış
+Relation	T4	T13	EffectCause	true	alınmış	Faaliyetleri
+Relation	T13	T5	CauseEffect	true	Faaliyetleri	edilmiştir
+Relation	T5	T13	EffectCause	true	edilmiştir	Faaliyetleri
+Relation	T0	T13	NoRel	true	yargılanması	Faaliyetleri
+Relation	T0	T15	NoRel	true	yargılanması	seçimlerde
+Relation	T1	T13	NoRel	true	saldırı	Faaliyetleri
+Relation	T13	T1	NoRel	true	Faaliyetleri	saldırı
+Relation	T13	T11	NoRel	true	Faaliyetleri	alınan
+Relation	T13	T12	NoRel	true	Faaliyetleri	olmuştur
+Relation	T13	T14	NoRel	true	Faaliyetleri	seçimlerine
+Relation	T2	T0	NoRel	true	davalar	yargılanması
+Relation	T2	T5	NoRel	true	davalar	edilmiştir
+Relation	T4	T0	NoRel	true	alınmış	yargılanması
+Relation	T4	T5	NoRel	true	alınmış	edilmiştir
+Relation	T4	T6	NoRel	true	alınmış	paylaşmış
+Relation	T4	T8	NoRel	true	alınmış	verilmektedir
+Relation	T6	T2	NoRel	true	paylaşmış	davalar
+Relation	T6	T7	NoRel	true	paylaşmış	edilmiştir
+Relation	T7	T13	NoRel	true	edilmiştir	Faaliyetleri
+Relation	T8	T0	NoRel	true	verilmektedir	yargılanması
+Relation	T8	T9	NoRel	true	verilmektedir	açan
+Relation	T9	T13	NoRel	true	açan	Faaliyetleri
+Relation	T9	T2	NoRel	true	açan	davalar

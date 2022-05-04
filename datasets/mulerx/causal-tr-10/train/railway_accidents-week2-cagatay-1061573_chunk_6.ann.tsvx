@@ -1,0 +1,34 @@
+Text	- 11 Aralık , 1987 – Mısır hükümetine göre Gize hayvanat bahçesinden dönmekte olan yerel ilkokul öğrencilerini taşımakta olan bir otobüs Mısır , Kahire eteklerinde Ein Sham’da işaretlenmemiş bir hemzemin geçidinde hızlı tren ile çarpıştı , 62 çocuk öldü , 67_si yaralandı .	- 16 Nisan , 1995 - Al Minufiyah memzemin giçit felaketi ; Bir otobüs ekspres tren ile çarpıştığında , sonuç en az kırk dokuz tekstil işçisi öldü .	- 16 Temmuz 2008 Marsa Matruh bir kamyon , tren yolu içindeki durmalı kalkmalı trafikte durmayı başaramadı .	En az 40 ölü .	- 20 Haziran 1959 – Kalabalık bir otobüs , Batı Almanya , Lauffen hemzemin geçidinde bir trenle çarpıştı .
+Event	T0	çarpıştı	EVENT	229
+Event	T1	öldü	EVENT	249
+Event	T10	taşımakta	EVENT	111
+Event	T2	yaralandı	EVENT	262
+Event	T3	felaketi	EVENT	322
+Event	T4	çarpıştığında	EVENT	361
+Event	T5	öldü	EVENT	415
+Event	T6	başaramadı	EVENT	518
+Event	T7	ölü	EVENT	540
+Event	T8	çarpıştı	EVENT	642
+Event	T9	dönmekte	EVENT	69
+Relation	T0	T1	CauseEffect	true	çarpıştı	öldü
+Relation	T1	T0	EffectCause	true	öldü	çarpıştı
+Relation	T0	T2	CauseEffect	true	çarpıştı	yaralandı
+Relation	T2	T0	EffectCause	true	yaralandı	çarpıştı
+Relation	T4	T5	CauseEffect	true	çarpıştığında	öldü
+Relation	T5	T4	EffectCause	true	öldü	çarpıştığında
+Relation	T6	T7	CauseEffect	true	başaramadı	ölü
+Relation	T7	T6	EffectCause	true	ölü	başaramadı
+Relation	T1	T9	NoRel	true	öldü	dönmekte
+Relation	T10	T4	NoRel	true	taşımakta	çarpıştığında
+Relation	T10	T6	NoRel	true	taşımakta	başaramadı
+Relation	T2	T7	NoRel	true	yaralandı	ölü
+Relation	T2	T8	NoRel	true	yaralandı	çarpıştı
+Relation	T3	T9	NoRel	true	felaketi	dönmekte
+Relation	T5	T6	NoRel	true	öldü	başaramadı
+Relation	T5	T9	NoRel	true	öldü	dönmekte
+Relation	T6	T1	NoRel	true	başaramadı	öldü
+Relation	T7	T10	NoRel	true	ölü	taşımakta
+Relation	T7	T9	NoRel	true	ölü	dönmekte
+Relation	T8	T10	NoRel	true	çarpıştı	taşımakta
+Relation	T9	T1	NoRel	true	dönmekte	öldü
+Relation	T9	T8	NoRel	true	dönmekte	çarpıştı

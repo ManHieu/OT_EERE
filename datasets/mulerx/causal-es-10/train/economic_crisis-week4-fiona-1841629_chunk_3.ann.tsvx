@@ -1,0 +1,63 @@
+Text	Pero en 2008 , el incremento de los precios de estas materias primas — particularmente , del precio del petróleo y de la comida — aumentó tanto que comenzó a causar verdaderos daños económicos , amenazando con problemas sociales en los países que se encuentran en vías de desarrollo , la estanflación y el estancamiento de la globalización .	Aunque es difícil poner una fecha de inicio a una crisis económica porque suele ser consecuencia de varios factores que no tienen por qué darse a la vez , se podría decir que la crisis se inició a principios de agosto de 2007 cuando quebró la primera " víctima " : el banco de inversión estadounidense American Home Mortgage .	Esta quiebra provocó turbulencias en los mercados financieros de todo el mundo e hizo intervenir a bancos centrales y gobiernos .	Así se consideraba años después .	En enero de 2008 , el precio del petróleo superó los 100 dólares el barril por primera vez en su historia , y alcanzó los 147 dólares por barril en julio debido a fenómenos especulativos de alta volatilidad que condujeron a un fuerte descenso durante el mes de agosto .
+Event	T0	incremento	EVENT	18
+Event	T1	aumentó	EVENT	130
+Event	T2	comenzó	EVENT	148
+Event	T3	causar	EVENT	158
+Event	T4	daños	EVENT	176
+Event	T5	amenazando	EVENT	195
+Event	T6	estanflación	EVENT	288
+Event	T7	estancamiento	EVENT	306
+Event	T8	crisis	EVENT	392
+Event	T9	decir	EVENT	507
+Event	T10	crisis	EVENT	520
+Event	T11	inició	EVENT	530
+Event	T12	quebró	EVENT	575
+Event	T13	turbulencias	EVENT	690
+Event	T14	intervenir	EVENT	755
+Event	T15	consideraba	EVENT	806
+Event	T16	superó	EVENT	875
+Event	T17	alcanzó	EVENT	943
+Event	T18	especulativos	EVENT	1006
+Event	T19	condujeron	EVENT	1044
+Event	T20	descenso	EVENT	1067
+Relation	T0	T4	CauseEffect	true	incremento	daños
+Relation	T4	T0	EffectCause	true	daños	incremento
+Relation	T12	T10	CauseEffect	true	quebró	crisis
+Relation	T10	T12	EffectCause	true	crisis	quebró
+Relation	T18	T17	CauseEffect	true	especulativos	alcanzó
+Relation	T17	T18	EffectCause	true	alcanzó	especulativos
+Relation	T0	T5	NoRel	true	incremento	amenazando
+Relation	T1	T2	NoRel	true	aumentó	comenzó
+Relation	T10	T7	NoRel	true	crisis	estancamiento
+Relation	T10	T8	NoRel	true	crisis	crisis
+Relation	T11	T0	NoRel	true	inició	incremento
+Relation	T11	T18	NoRel	true	inició	especulativos
+Relation	T11	T2	NoRel	true	inició	comenzó
+Relation	T11	T3	NoRel	true	inició	causar
+Relation	T11	T6	NoRel	true	inició	estanflación
+Relation	T12	T20	NoRel	true	quebró	descenso
+Relation	T12	T9	NoRel	true	quebró	decir
+Relation	T13	T15	NoRel	true	turbulencias	consideraba
+Relation	T14	T19	NoRel	true	intervenir	condujeron
+Relation	T16	T14	NoRel	true	superó	intervenir
+Relation	T16	T18	NoRel	true	superó	especulativos
+Relation	T17	T12	NoRel	true	alcanzó	quebró
+Relation	T17	T3	NoRel	true	alcanzó	causar
+Relation	T18	T10	NoRel	true	especulativos	crisis
+Relation	T18	T2	NoRel	true	especulativos	comenzó
+Relation	T18	T7	NoRel	true	especulativos	estancamiento
+Relation	T19	T7	NoRel	true	condujeron	estancamiento
+Relation	T2	T1	NoRel	true	comenzó	aumentó
+Relation	T20	T16	NoRel	true	descenso	superó
+Relation	T20	T17	NoRel	true	descenso	alcanzó
+Relation	T20	T19	NoRel	true	descenso	condujeron
+Relation	T20	T2	NoRel	true	descenso	comenzó
+Relation	T20	T6	NoRel	true	descenso	estanflación
+Relation	T3	T14	NoRel	true	causar	intervenir
+Relation	T3	T18	NoRel	true	causar	especulativos
+Relation	T4	T18	NoRel	true	daños	especulativos
+Relation	T4	T2	NoRel	true	daños	comenzó
+Relation	T6	T10	NoRel	true	estanflación	crisis
+Relation	T7	T6	NoRel	true	estancamiento	estanflación
+Relation	T8	T6	NoRel	true	crisis	estanflación
+Relation	T9	T2	NoRel	true	decir	comenzó

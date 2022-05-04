@@ -1,0 +1,75 @@
+Text	Kırgızistan Hükûmeti ve ACT Airlines uçağın yakıt ikmali ve mürettebat değişikliği için Bişkek'e inişe geçtiğini açıklasa da Kırgızistan muhalefeti uçağın kargo enkazında Rusça ve Kırgızca etiket basılı ürünler bulunduğu , ACT Airlines'ın uçakta Hong Kong'dan İstanbul'a direkt gidecek yakıt olduğunu açıklamasından dolayı kargoların Bişkek'te indirileceğini ve havalimanında kaçakçılık veya yolsuzluk yapılıyor olabileceğini söyledi .	Kazanın ardından Devletler Arası Havacılık Komitesi ; yaptığı araştırma sonucunda uçağın herhangi bir arızasının olmadığını veya hava trafik kontrolörlerinin bir hata yapmadığını , uçağın pilotaj hatası nedeniyle yanlış süzülüş hattını yakalaması sonucunda kaza yaptığını açıkladı .	13 Ocak 2003'te üretilen ve TC - MCL kuyruk numaralı Boeing 747 - 412F ( üretici seri numarası 32897 ) , Türk Hava Yolları adına ACT Airlines ( günümüzde MyCARGO Airlines ) tarafından işletiliyordu .	4 adet Pratt & Whitney PW4056 turbofan motoruyla donatılmıştı .	Kaza anında 46.820 uçuş saati ve 8.308 inişi vardı .
+Event	T0	ikmali	EVENT	50
+Event	T1	değişikliği	EVENT	71
+Event	T2	açıklasa	EVENT	113
+Event	T3	açıklamasından	EVENT	301
+Event	T5	söyledi	EVENT	426
+Event	T6	Kazanın	EVENT	436
+Event	T7	araştırma	EVENT	498
+Event	T8	hatası	EVENT	632
+Event	T9	açıkladı	EVENT	708
+Event	T10	işletiliyordu	EVENT	903
+Event	T11	Kaza	EVENT	983
+Event	T12	kaçakçılık	EVENT	376
+Event	T13	yolsuzluk	EVENT	392
+Event	T4	inişe	EVENT	97
+Event	T14	enkazında	EVENT	161
+Event	T15	indirileceğini	EVENT	344
+Event	T16	yakalaması	EVENT	672
+Event	T17	kaza	EVENT	693
+Event	T18	üretilen	EVENT	735
+Event	T19	donatılmıştı	EVENT	968
+Relation	T0	T4	CauseEffect	true	ikmali	inişe
+Relation	T4	T0	EffectCause	true	inişe	ikmali
+Relation	T1	T4	CauseEffect	true	değişikliği	inişe
+Relation	T4	T1	EffectCause	true	inişe	değişikliği
+Relation	T14	T2	CauseEffect	true	enkazında	açıklasa
+Relation	T2	T14	EffectCause	true	açıklasa	enkazında
+Relation	T14	T3	CauseEffect	true	enkazında	açıklamasından
+Relation	T3	T14	EffectCause	true	açıklamasından	enkazında
+Relation	T3	T5	CauseEffect	true	açıklamasından	söyledi
+Relation	T5	T3	EffectCause	true	söyledi	açıklamasından
+Relation	T7	T9	CauseEffect	true	araştırma	açıkladı
+Relation	T9	T7	EffectCause	true	açıkladı	araştırma
+Relation	T16	T17	CauseEffect	true	yakalaması	kaza
+Relation	T17	T16	EffectCause	true	kaza	yakalaması
+Relation	T8	T16	CauseEffect	true	hatası	yakalaması
+Relation	T16	T8	EffectCause	true	yakalaması	hatası
+Relation	T8	T17	CauseEffect	true	hatası	kaza
+Relation	T17	T8	EffectCause	true	kaza	hatası
+Relation	T17	T14	CauseEffect	true	kaza	enkazında
+Relation	T14	T17	EffectCause	true	enkazında	kaza
+Relation	T0	T8	NoRel	true	ikmali	hatası
+Relation	T1	T10	NoRel	true	değişikliği	işletiliyordu
+Relation	T1	T12	NoRel	true	değişikliği	kaçakçılık
+Relation	T1	T18	NoRel	true	değişikliği	üretilen
+Relation	T10	T19	NoRel	true	işletiliyordu	donatılmıştı
+Relation	T11	T13	NoRel	true	Kaza	yolsuzluk
+Relation	T11	T7	NoRel	true	Kaza	araştırma
+Relation	T12	T1	NoRel	true	kaçakçılık	değişikliği
+Relation	T12	T17	NoRel	true	kaçakçılık	kaza
+Relation	T13	T0	NoRel	true	yolsuzluk	ikmali
+Relation	T13	T1	NoRel	true	yolsuzluk	değişikliği
+Relation	T13	T11	NoRel	true	yolsuzluk	Kaza
+Relation	T13	T3	NoRel	true	yolsuzluk	açıklamasından
+Relation	T14	T10	NoRel	true	enkazında	işletiliyordu
+Relation	T14	T4	NoRel	true	enkazında	inişe
+Relation	T15	T8	NoRel	true	indirileceğini	hatası
+Relation	T15	T9	NoRel	true	indirileceğini	açıkladı
+Relation	T16	T6	NoRel	true	yakalaması	Kazanın
+Relation	T16	T7	NoRel	true	yakalaması	araştırma
+Relation	T17	T1	NoRel	true	kaza	değişikliği
+Relation	T17	T7	NoRel	true	kaza	araştırma
+Relation	T18	T2	NoRel	true	üretilen	açıklasa
+Relation	T19	T15	NoRel	true	donatılmıştı	indirileceğini
+Relation	T19	T17	NoRel	true	donatılmıştı	kaza
+Relation	T19	T5	NoRel	true	donatılmıştı	söyledi
+Relation	T2	T10	NoRel	true	açıklasa	işletiliyordu
+Relation	T3	T13	NoRel	true	açıklamasından	yolsuzluk
+Relation	T4	T8	NoRel	true	inişe	hatası
+Relation	T5	T18	NoRel	true	söyledi	üretilen
+Relation	T6	T9	NoRel	true	Kazanın	açıkladı
+Relation	T7	T8	NoRel	true	araştırma	hatası
+Relation	T8	T12	NoRel	true	hatası	kaçakçılık
+Relation	T8	T2	NoRel	true	hatası	açıklasa
+Relation	T8	T9	NoRel	true	hatası	açıkladı

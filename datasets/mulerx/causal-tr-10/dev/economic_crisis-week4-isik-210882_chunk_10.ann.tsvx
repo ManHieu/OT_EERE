@@ -1,0 +1,41 @@
+Text	Krugman'a göre Doğu Asya ekonomileri yüksek büyüme hızlarını verimlilik artışına yol açan sermaye yatırımlarına borçluydular .	Ancak , toplam faktör verimliliği çok az artmıştı .	Krugman'a göre sermaye yatırımları değil , toplam faktör verimliliğindeki artış sürdürülebilir büyüme sağlayabilirdi .	Krizden sonra Krugman iyi bir gelecek tahmincisi olarak görüldü ancak kendisi krizi ve büyüklüğünü önceden tahmin etmediğini belirtti .	Bu yıllarda Tayland , Endonezya ve Güney Kore'nin büyük miktarda özel sektör cari hesap açığı vardı ve düşük kur politikası borç almayı teşvik ederek sektörlerin dış dünyaya karşı kırılganlıkları arttırdı .
+Event	T1	artış	EVENT	253
+Event	T2	Krizden	EVENT	298
+Event	T3	görüldü	EVENT	354
+Event	T4	krizi	EVENT	376
+Event	T6	belirtti	EVENT	423
+Event	T9	arttırdı	EVENT	630
+Event	T10	yatırımlarına	EVENT	98
+Event	T11	hızlarını	EVENT	51
+Event	T12	artışına	EVENT	72
+Event	T13	artmıştı	EVENT	168
+Event	T5	vardı	EVENT	528
+Event	T7	ederek	EVENT	577
+Event	T8	politikası	EVENT	547
+Relation	T10	T12	CauseEffect	true	yatırımlarına	artışına
+Relation	T12	T10	EffectCause	true	artışına	yatırımlarına
+Relation	T12	T11	CauseEffect	true	artışına	hızlarını
+Relation	T11	T12	EffectCause	true	hızlarını	artışına
+Relation	T8	T7	CauseEffect	true	politikası	ederek
+Relation	T7	T8	EffectCause	true	ederek	politikası
+Relation	T7	T9	CauseEffect	true	ederek	arttırdı
+Relation	T9	T7	EffectCause	true	arttırdı	ederek
+Relation	T1	T2	NoRel	true	artış	Krizden
+Relation	T1	T4	NoRel	true	artış	krizi
+Relation	T12	T1	NoRel	true	artışına	artış
+Relation	T12	T2	NoRel	true	artışına	Krizden
+Relation	T12	T6	NoRel	true	artışına	belirtti
+Relation	T2	T5	NoRel	true	Krizden	vardı
+Relation	T3	T1	NoRel	true	görüldü	artış
+Relation	T3	T2	NoRel	true	görüldü	Krizden
+Relation	T4	T2	NoRel	true	krizi	Krizden
+Relation	T4	T7	NoRel	true	krizi	ederek
+Relation	T4	T9	NoRel	true	krizi	arttırdı
+Relation	T5	T4	NoRel	true	vardı	krizi
+Relation	T6	T2	NoRel	true	belirtti	Krizden
+Relation	T7	T10	NoRel	true	ederek	yatırımlarına
+Relation	T8	T13	NoRel	true	politikası	artmıştı
+Relation	T8	T4	NoRel	true	politikası	krizi
+Relation	T9	T1	NoRel	true	arttırdı	artış
+Relation	T9	T12	NoRel	true	arttırdı	artışına
+Relation	T9	T5	NoRel	true	arttırdı	vardı

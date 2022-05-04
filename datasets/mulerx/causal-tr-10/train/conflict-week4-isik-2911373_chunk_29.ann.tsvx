@@ -1,0 +1,76 @@
+Text	Çalınan sanat eserlerinin ve antikaların çoğu " muzaffer Müttefik orduları tarafından ... esas olarak tuz madenlerinde , tünellerde ve gözlerden uzak kalelerde gizlenmiş " belgelenmiş , bulunmuş veya kurtarılmış olsa da , birçok sanat eseri hiçbir zaman hak sahiplerine iade edilmemiştir .	Dünya çapındaki sanat tacirleri , galeriler ve müzeler , eserlerin bir kısmının orijinal sahiplerinden çalındıktan sonra satın alındığı iddialarını araştırmak için koleksiyonlarının menşeini araştırmak zorunda kalmışlardır .	Daha 1985 yılında , Amerikan müzelerinin sorunu tanımlamasından ve Nazi tarafından yağmalanan Holokost kurbanlarının varlıkları hakkındaki uluslararası konferanstan önce , Avrupa ülkeleri " II. Dünya Savaşı sırasında Naziler tarafından el konulan Yahudi'lere ait " sanat eserleri , madeni paralar ve madalyaların envanter listelerini yayınladı ve eserlerin sahipleriyle yasal mirasçılarına iade edilmesi için sürecin ayrıntılarını açıkladı .	1998'de bir Avusturya'dan danışma kurulu , 1998 iade yasası hükümleri uyarınca 6.292 sanat eserinin yasal sahiplerine ( çoğu Yahudi ) iade edilmesini tavsiye etti .	Nazi toplama kampı ve ölüm kampı kurbanları öldürülmelerinden önce tamamen soymak zorundaydı ve tüm kişisel eşyalarına el konuluyordu .
+Event	T0	belgelenmiş	EVENT	172
+Event	T1	bulunmuş	EVENT	186
+Event	T2	kurtarılmış	EVENT	200
+Event	T4	çalındıktan	EVENT	393
+Event	T5	araştırmak	EVENT	438
+Event	T6	araştırmak	EVENT	481
+Event	T7	tanımlamasından	EVENT	563
+Event	T8	yağmalanan	EVENT	598
+Event	T9	konulan	EVENT	754
+Event	T10	yayınladı	EVENT	849
+Event	T11	edilmesi	EVENT	910
+Event	T12	açıkladı	EVENT	946
+Event	T13	etti	EVENT	1115
+Event	T15	öldürülmelerinden	EVENT	1166
+Event	T16	soymak	EVENT	1197
+Event	T17	Çalınan	EVENT	0
+Event	T18	gizlenmiş	EVENT	160
+Event	T3	alındığı	EVENT	417
+Event	T19	iddialarını	EVENT	426
+Event	T20	Holokost	EVENT	609
+Event	T21	II. Dünya Savaşı	EVENT	705
+Event	T22	edilmesini	EVENT	1096
+Event	T23	yasası	EVENT	1010
+Event	T24	konuluyordu	EVENT	1244
+Relation	T19	T5	CauseEffect	true	iddialarını	araştırmak
+Relation	T5	T19	EffectCause	true	araştırmak	iddialarını
+Relation	T23	T13	CauseEffect	true	yasası	etti
+Relation	T13	T23	EffectCause	true	etti	yasası
+Relation	T0	T19	NoRel	true	belgelenmiş	iddialarını
+Relation	T0	T22	NoRel	true	belgelenmiş	edilmesini
+Relation	T0	T23	NoRel	true	belgelenmiş	yasası
+Relation	T0	T6	NoRel	true	belgelenmiş	araştırmak
+Relation	T1	T17	NoRel	true	bulunmuş	Çalınan
+Relation	T1	T6	NoRel	true	bulunmuş	araştırmak
+Relation	T10	T0	NoRel	true	yayınladı	belgelenmiş
+Relation	T10	T1	NoRel	true	yayınladı	bulunmuş
+Relation	T10	T15	NoRel	true	yayınladı	öldürülmelerinden
+Relation	T10	T21	NoRel	true	yayınladı	II. Dünya Savaşı
+Relation	T11	T12	NoRel	true	edilmesi	açıkladı
+Relation	T11	T15	NoRel	true	edilmesi	öldürülmelerinden
+Relation	T11	T2	NoRel	true	edilmesi	kurtarılmış
+Relation	T11	T9	NoRel	true	edilmesi	konulan
+Relation	T12	T2	NoRel	true	açıkladı	kurtarılmış
+Relation	T12	T24	NoRel	true	açıkladı	konuluyordu
+Relation	T12	T6	NoRel	true	açıkladı	araştırmak
+Relation	T13	T16	NoRel	true	etti	soymak
+Relation	T13	T5	NoRel	true	etti	araştırmak
+Relation	T15	T1	NoRel	true	öldürülmelerinden	bulunmuş
+Relation	T15	T9	NoRel	true	öldürülmelerinden	konulan
+Relation	T16	T1	NoRel	true	soymak	bulunmuş
+Relation	T17	T22	NoRel	true	Çalınan	edilmesini
+Relation	T17	T7	NoRel	true	Çalınan	tanımlamasından
+Relation	T19	T16	NoRel	true	iddialarını	soymak
+Relation	T19	T17	NoRel	true	iddialarını	Çalınan
+Relation	T19	T22	NoRel	true	iddialarını	edilmesini
+Relation	T21	T3	NoRel	true	II. Dünya Savaşı	alındığı
+Relation	T22	T24	NoRel	true	edilmesini	konuluyordu
+Relation	T22	T5	NoRel	true	edilmesini	araştırmak
+Relation	T22	T6	NoRel	true	edilmesini	araştırmak
+Relation	T23	T4	NoRel	true	yasası	çalındıktan
+Relation	T24	T15	NoRel	true	konuluyordu	öldürülmelerinden
+Relation	T24	T22	NoRel	true	konuluyordu	edilmesini
+Relation	T24	T23	NoRel	true	konuluyordu	yasası
+Relation	T24	T3	NoRel	true	konuluyordu	alındığı
+Relation	T24	T4	NoRel	true	konuluyordu	çalındıktan
+Relation	T3	T17	NoRel	true	alındığı	Çalınan
+Relation	T5	T20	NoRel	true	araştırmak	Holokost
+Relation	T5	T24	NoRel	true	araştırmak	konuluyordu
+Relation	T5	T8	NoRel	true	araştırmak	yağmalanan
+Relation	T6	T10	NoRel	true	araştırmak	yayınladı
+Relation	T6	T5	NoRel	true	araştırmak	araştırmak
+Relation	T7	T11	NoRel	true	tanımlamasından	edilmesi
+Relation	T7	T2	NoRel	true	tanımlamasından	kurtarılmış
+Relation	T9	T12	NoRel	true	konulan	açıkladı
+Relation	T9	T13	NoRel	true	konulan	etti

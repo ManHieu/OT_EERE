@@ -1,0 +1,63 @@
+Text	1605 Ağustos’unda Tebriz üzerine yürüyen Sinan Paşa , Urmiye Meydan Muharebesinde Şah Abbas’ın kumanda ettiği 50.000 kişilik Safevi ordusuna mağlup olup ( 9 Eylül 1605 ) , Diyarbakır’a çekildi ve orada vefat etti ( 2 Aralık 1605 ) .	Safeviler ise Gence ve Şamahı’yı alıp Şirvan’ın mühim bir kısmını ele geçirdiler .	Yeni serdar sadrazam Kuyucu Murad Paşa , Tebriz üzerine yürüdüyse de Şah’ın sulh teklifi üzerine padişaha haber gönderip Diyarbakır’a çekildi ve orada vefat etti .	Yerine sadrazam ve serdar olan Diyarbakır beylerbeyi Nasuh Paşa , İstanbul’a geldi ve İran’la İstanbul ateşkes antlaşması imzaladı .	Bu antlaşma ile çeyrek asır önce Safevilerden kazanılan 570.000 km²’lik toprağın 400.000 km²’si kaybedilmişti .
+Event	T0	mağlup	EVENT	141
+Event	T1	çekildi	EVENT	185
+Event	T3	alıp	EVENT	266
+Event	T4	geçirdiler	EVENT	303
+Event	T5	yürüdüyse	EVENT	372
+Event	T6	teklifi	EVENT	397
+Event	T7	çekildi	EVENT	450
+Event	T9	imzaladı	EVENT	602
+Event	T10	antlaşma	EVENT	616
+Event	T11	kaybedilmişti	EVENT	709
+Event	T12	yürüyen	EVENT	33
+Event	T13	Urmiye Meydan Muharebesinde	EVENT	54
+Event	T8	vefat etti	EVENT	467
+Event	T2	vefat etti	EVENT	202
+Event	T14	geldi	EVENT	557
+Event	T15	olan	EVENT	506
+Event	T16	antlaşması	EVENT	591
+Relation	T0	T1	CauseEffect	true	mağlup	çekildi
+Relation	T1	T0	EffectCause	true	çekildi	mağlup
+Relation	T1	T3	CauseEffect	true	çekildi	alıp
+Relation	T3	T1	EffectCause	true	alıp	çekildi
+Relation	T1	T4	CauseEffect	true	çekildi	geçirdiler
+Relation	T4	T1	EffectCause	true	geçirdiler	çekildi
+Relation	T6	T7	CauseEffect	true	teklifi	çekildi
+Relation	T7	T6	EffectCause	true	çekildi	teklifi
+Relation	T10	T11	CauseEffect	true	antlaşma	kaybedilmişti
+Relation	T11	T10	EffectCause	true	kaybedilmişti	antlaşma
+Relation	T16	T14	CauseEffect	true	antlaşması	geldi
+Relation	T14	T16	EffectCause	true	geldi	antlaşması
+Relation	T0	T10	NoRel	true	mağlup	antlaşma
+Relation	T1	T10	NoRel	true	çekildi	antlaşma
+Relation	T11	T2	NoRel	true	kaybedilmişti	vefat etti
+Relation	T12	T1	NoRel	true	yürüyen	çekildi
+Relation	T12	T10	NoRel	true	yürüyen	antlaşma
+Relation	T12	T3	NoRel	true	yürüyen	alıp
+Relation	T12	T8	NoRel	true	yürüyen	vefat etti
+Relation	T13	T12	NoRel	true	Urmiye Meydan Muharebesinde	yürüyen
+Relation	T13	T6	NoRel	true	Urmiye Meydan Muharebesinde	teklifi
+Relation	T13	T9	NoRel	true	Urmiye Meydan Muharebesinde	imzaladı
+Relation	T14	T5	NoRel	true	geldi	yürüdüyse
+Relation	T15	T1	NoRel	true	olan	çekildi
+Relation	T15	T11	NoRel	true	olan	kaybedilmişti
+Relation	T15	T13	NoRel	true	olan	Urmiye Meydan Muharebesinde
+Relation	T3	T8	NoRel	true	alıp	vefat etti
+Relation	T3	T9	NoRel	true	alıp	imzaladı
+Relation	T4	T13	NoRel	true	geçirdiler	Urmiye Meydan Muharebesinde
+Relation	T4	T15	NoRel	true	geçirdiler	olan
+Relation	T5	T1	NoRel	true	yürüdüyse	çekildi
+Relation	T5	T16	NoRel	true	yürüdüyse	antlaşması
+Relation	T5	T2	NoRel	true	yürüdüyse	vefat etti
+Relation	T6	T11	NoRel	true	teklifi	kaybedilmişti
+Relation	T6	T13	NoRel	true	teklifi	Urmiye Meydan Muharebesinde
+Relation	T6	T14	NoRel	true	teklifi	geldi
+Relation	T6	T2	NoRel	true	teklifi	vefat etti
+Relation	T6	T5	NoRel	true	teklifi	yürüdüyse
+Relation	T7	T4	NoRel	true	çekildi	geçirdiler
+Relation	T8	T3	NoRel	true	vefat etti	alıp
+Relation	T9	T1	NoRel	true	imzaladı	çekildi
+Relation	T9	T11	NoRel	true	imzaladı	kaybedilmişti
+Relation	T9	T13	NoRel	true	imzaladı	Urmiye Meydan Muharebesinde
+Relation	T9	T15	NoRel	true	imzaladı	olan
+Relation	T9	T7	NoRel	true	imzaladı	çekildi

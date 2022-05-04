@@ -1,0 +1,54 @@
+Text	Saldırıdan bir gün sonra PKK'ya yakın internet sitelerinde Midyat saldırısının ' Dirok Amed ' kod adlı İshak Katar tarafından gerçekleştirildiği açıklanarak saldırı üstlenildi .	Midyat İlçe Emniyet Müdürlüğüne düzenlenen saldırıyı takip etmek üzere Diyarbakır'dan ilçeye giden gazeteciler , olay yerinde görüntü ve fotoğraf alırken bir grubun fiziksel saldırısına uğradı .	Çeşitli ajanslara çalışan Mahmut Bozarslan , Sertaç Kayar ve Hatice Kamer adlı gazeteciler yaralandı ve Midyat Devlet Hastanesi'ne götürülerek tedavi altına alındı .	Bu arada saldırıya uğrayan Emniyet Müdürlüğü binası önünde toplanan bir grup , görüntü ve fotoğraf almak isteyen gazetecilere sert tepki gösterip , çalışmalarını engelledi .	Sözlü ve fiziki tepkilere uğrayan gazeteciler bölgeden ayrılmak zorunda kaldı .
+Event	T0	Saldırıdan	EVENT	0
+Event	T1	saldırısının	EVENT	66
+Event	T2	üstlenildi	EVENT	165
+Event	T4	uğradı	EVENT	364
+Event	T5	yaralandı	EVENT	464
+Event	T6	alındı	EVENT	530
+Event	T7	gösterip	EVENT	676
+Event	T8	engelledi	EVENT	701
+Event	T11	açıklanarak	EVENT	145
+Event	T12	alırken	EVENT	324
+Event	T13	giden	EVENT	271
+Event	T3	çalışan	EVENT	391
+Event	T14	götürülerek	EVENT	504
+Event	T9	tepkilere	EVENT	729
+Event	T10	kaldı	EVENT	785
+Relation	T11	T2	CauseEffect	true	açıklanarak	üstlenildi
+Relation	T2	T11	EffectCause	true	üstlenildi	açıklanarak
+Relation	T12	T4	CauseEffect	true	alırken	uğradı
+Relation	T4	T12	EffectCause	true	uğradı	alırken
+Relation	T0	T13	CauseEffect	true	Saldırıdan	giden
+Relation	T13	T0	EffectCause	true	giden	Saldırıdan
+Relation	T0	T12	CauseEffect	true	Saldırıdan	alırken
+Relation	T12	T0	EffectCause	true	alırken	Saldırıdan
+Relation	T4	T5	CauseEffect	true	uğradı	yaralandı
+Relation	T5	T4	EffectCause	true	yaralandı	uğradı
+Relation	T5	T14	CauseEffect	true	yaralandı	götürülerek
+Relation	T14	T5	EffectCause	true	götürülerek	yaralandı
+Relation	T5	T6	CauseEffect	true	yaralandı	alındı
+Relation	T6	T5	EffectCause	true	alındı	yaralandı
+Relation	T9	T10	CauseEffect	true	tepkilere	kaldı
+Relation	T10	T9	EffectCause	true	kaldı	tepkilere
+Relation	T7	T8	CauseEffect	true	gösterip	engelledi
+Relation	T8	T7	EffectCause	true	engelledi	gösterip
+Relation	T1	T7	NoRel	true	saldırısının	gösterip
+Relation	T10	T1	NoRel	true	kaldı	saldırısının
+Relation	T10	T3	NoRel	true	kaldı	çalışan
+Relation	T11	T12	NoRel	true	açıklanarak	alırken
+Relation	T11	T3	NoRel	true	açıklanarak	çalışan
+Relation	T11	T4	NoRel	true	açıklanarak	uğradı
+Relation	T13	T10	NoRel	true	giden	kaldı
+Relation	T13	T6	NoRel	true	giden	alındı
+Relation	T13	T8	NoRel	true	giden	engelledi
+Relation	T14	T4	NoRel	true	götürülerek	uğradı
+Relation	T3	T10	NoRel	true	çalışan	kaldı
+Relation	T3	T12	NoRel	true	çalışan	alırken
+Relation	T3	T9	NoRel	true	çalışan	tepkilere
+Relation	T4	T6	NoRel	true	uğradı	alındı
+Relation	T5	T1	NoRel	true	yaralandı	saldırısının
+Relation	T6	T3	NoRel	true	alındı	çalışan
+Relation	T6	T4	NoRel	true	alındı	uğradı
+Relation	T6	T7	NoRel	true	alındı	gösterip
+Relation	T9	T13	NoRel	true	tepkilere	giden
+Relation	T9	T4	NoRel	true	tepkilere	uğradı

@@ -1,0 +1,27 @@
+Text	Los servicios suburbanos se cancelaron temporalmente , dando la vuelta en Finsbury Park .	El coche no. 1889 sufrió daños tan graves que se debió achatarrar .	Se había programado que se renumeraría como 10153 , pero ese número permaneció sin usar .	Dos semanas después , se reemplazó el pórtico de señales , pero los servicios completos no se restablecieron hasta el 23 de febrero de 1945 .	El oficial de inspección , coronel Wilson , concluyó en su informe que el fallo principal era responsabilidad del maquinista .
+Event	T0	cancelaron	EVENT	28
+Event	T1	daños	EVENT	115
+Event	T2	achatarrar	EVENT	145
+Event	T3	renumeraría	EVENT	185
+Event	T4	permaneció	EVENT	226
+Event	T5	reemplazó	EVENT	273
+Event	T6	restablecieron	EVENT	342
+Event	T7	concluyó	EVENT	434
+Event	T8	informe	EVENT	449
+Event	T9	fallo	EVENT	464
+Relation	T1	T2	CauseEffect	true	daños	achatarrar
+Relation	T2	T1	EffectCause	true	achatarrar	daños
+Relation	T0	T1	NoRel	true	cancelaron	daños
+Relation	T1	T8	NoRel	true	daños	informe
+Relation	T1	T9	NoRel	true	daños	fallo
+Relation	T2	T3	NoRel	true	achatarrar	renumeraría
+Relation	T3	T4	NoRel	true	renumeraría	permaneció
+Relation	T3	T7	NoRel	true	renumeraría	concluyó
+Relation	T3	T9	NoRel	true	renumeraría	fallo
+Relation	T4	T3	NoRel	true	permaneció	renumeraría
+Relation	T5	T0	NoRel	true	reemplazó	cancelaron
+Relation	T5	T1	NoRel	true	reemplazó	daños
+Relation	T7	T4	NoRel	true	concluyó	permaneció
+Relation	T7	T8	NoRel	true	concluyó	informe
+Relation	T8	T5	NoRel	true	informe	reemplazó
+Relation	T9	T8	NoRel	true	fallo	informe

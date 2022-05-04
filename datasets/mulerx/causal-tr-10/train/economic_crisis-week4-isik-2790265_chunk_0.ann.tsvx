@@ -1,0 +1,55 @@
+Text	BANKERLER KRIZI , Türkiye tarihinde 1980'li yıllarda yüksek faizli gelir elde etmek amacıyla paralarını bankerlere yatıran ve bankerlik sisteminin çöküşü ile mevduat sahiplerinin parasını kaybetmesi ile sonuçlanan olay .	Sayılarının 300 bini geçtiği tahmin edilen bankerzedeler 1980'li yıllarda Türkiye gündeminin popüler konularından biri olmuştur .	Olay , toplumsal bir infiale yol açmış , o dönem intiharlar , öldürme ve yaralamalar artmıştır .	12 Eylül Darbesi ile ordu yönetime el koymuş ve asker kökenli Bülend Ulusu liderliğinde 21 Eylül 1980 tarihinde 44. Türkiye Hükûmeti kurulmuştur .	Bülent Ulusu hükümeti tarafından , ilgili mevzuatta düzenlemeler yapılmış , bankerlerin reklam yapmalarını kısıtlanmış , banker olma şartları zorlaştırılmış , vb . bankerlik sistemi için sınırlayıcı tedbirler getirilmiştir .
+Event	T0	yatıran	EVENT	115
+Event	T1	çöküşü	EVENT	147
+Event	T2	kaybetmesi	EVENT	188
+Event	T3	olay	EVENT	214
+Event	T4	Olay	EVENT	351
+Event	T5	açmış	EVENT	384
+Event	T7	kurulmuştur	EVENT	581
+Event	T8	yapılmış	EVENT	660
+Event	T9	kısıtlanmış	EVENT	702
+Event	T10	getirilmiştir	EVENT	804
+Event	T11	KRIZI	EVENT	10
+Event	T13	artmıştır	EVENT	436
+Event	T6	Darbesi	EVENT	457
+Event	T12	koymuş	EVENT	486
+Event	T14	zorlaştırılmış	EVENT	737
+Relation	T1	T2	CauseEffect	true	çöküşü	kaybetmesi
+Relation	T2	T1	EffectCause	true	kaybetmesi	çöküşü
+Relation	T2	T11	CauseEffect	true	kaybetmesi	KRIZI
+Relation	T11	T2	EffectCause	true	KRIZI	kaybetmesi
+Relation	T6	T12	CauseEffect	true	Darbesi	koymuş
+Relation	T12	T6	EffectCause	true	koymuş	Darbesi
+Relation	T12	T7	CauseEffect	true	koymuş	kurulmuştur
+Relation	T7	T12	EffectCause	true	kurulmuştur	koymuş
+Relation	T7	T8	CauseEffect	true	kurulmuştur	yapılmış
+Relation	T8	T7	EffectCause	true	yapılmış	kurulmuştur
+Relation	T8	T9	CauseEffect	true	yapılmış	kısıtlanmış
+Relation	T9	T8	EffectCause	true	kısıtlanmış	yapılmış
+Relation	T8	T14	CauseEffect	true	yapılmış	zorlaştırılmış
+Relation	T14	T8	EffectCause	true	zorlaştırılmış	yapılmış
+Relation	T8	T10	CauseEffect	true	yapılmış	getirilmiştir
+Relation	T10	T8	EffectCause	true	getirilmiştir	yapılmış
+Relation	T0	T10	NoRel	true	yatıran	getirilmiştir
+Relation	T1	T11	NoRel	true	çöküşü	KRIZI
+Relation	T1	T4	NoRel	true	çöküşü	Olay
+Relation	T10	T12	NoRel	true	getirilmiştir	koymuş
+Relation	T10	T2	NoRel	true	getirilmiştir	kaybetmesi
+Relation	T11	T12	NoRel	true	KRIZI	koymuş
+Relation	T12	T1	NoRel	true	koymuş	çöküşü
+Relation	T12	T4	NoRel	true	koymuş	Olay
+Relation	T13	T0	NoRel	true	artmıştır	yatıran
+Relation	T14	T1	NoRel	true	zorlaştırılmış	çöküşü
+Relation	T14	T10	NoRel	true	zorlaştırılmış	getirilmiştir
+Relation	T14	T2	NoRel	true	zorlaştırılmış	kaybetmesi
+Relation	T14	T5	NoRel	true	zorlaştırılmış	açmış
+Relation	T14	T6	NoRel	true	zorlaştırılmış	Darbesi
+Relation	T4	T7	NoRel	true	Olay	kurulmuştur
+Relation	T4	T8	NoRel	true	Olay	yapılmış
+Relation	T4	T9	NoRel	true	Olay	kısıtlanmış
+Relation	T5	T0	NoRel	true	açmış	yatıran
+Relation	T5	T2	NoRel	true	açmış	kaybetmesi
+Relation	T6	T2	NoRel	true	Darbesi	kaybetmesi
+Relation	T8	T1	NoRel	true	yapılmış	çöküşü
+Relation	T9	T10	NoRel	true	kısıtlanmış	getirilmiştir
+Relation	T9	T3	NoRel	true	kısıtlanmış	olay

@@ -1,0 +1,27 @@
+Text	Taboritsky etraftaki kalabalık tarafından yakalandı .	Olay yerinde ölen Nabokov ile birlikte toplam dokuz kişi suikast girişimi sırasında yaralandı ; Berlin grubunda bulunan Kadet partisi üyesi L. E. Elyaşev ve Rul gazetesinin editörü Avgust Kaminka dahil .	Şabelski ve Taboritsky'e yapılan tıbbi deneyin neticesinde ikisinin de uzun bir süredir uyuşturucu kullandığı , suikast girişiminde oldukça güçlü bir miktarda kullandıkları öğrenildi .	Milyukov'a suikast girişimine dair yargılama süreci 1922 yılının 3 ila 7 Temmuz günleri arasında , Moabit'teki Berlin Adli Mahkemesi'nde gerçekleşti .	Mahkeme , Taboritsky'i , bilinçli bir şekilde Nabokov'un ölümüne sebep açacak yaralara sebep olmaktan ötürü 14 yıl boyunca zorunlu ağır işe mahkum etti .
+Event	T0	yakalandı	EVENT	42
+Event	T2	ölen	EVENT	67
+Event	T3	girişimi	EVENT	119
+Event	T4	yaralandı	EVENT	138
+Event	T6	deneyin	EVENT	297
+Event	T9	öğrenildi	EVENT	431
+Event	T10	süreci	EVENT	488
+Event	T11	gerçekleşti	EVENT	580
+Event	T12	etti	EVENT	741
+Event	T1	girişimine	EVENT	462
+Relation	T3	T2	CauseEffect	true	girişimi	ölen
+Relation	T2	T3	EffectCause	true	ölen	girişimi
+Relation	T3	T4	CauseEffect	true	girişimi	yaralandı
+Relation	T4	T3	EffectCause	true	yaralandı	girişimi
+Relation	T6	T9	CauseEffect	true	deneyin	öğrenildi
+Relation	T9	T6	EffectCause	true	öğrenildi	deneyin
+Relation	T1	T10	CauseEffect	true	girişimine	süreci
+Relation	T10	T1	EffectCause	true	süreci	girişimine
+Relation	T10	T12	CauseEffect	true	süreci	etti
+Relation	T12	T10	EffectCause	true	etti	süreci
+Relation	T0	T3	NoRel	true	yakalandı	girişimi
+Relation	T0	T4	NoRel	true	yakalandı	yaralandı
+Relation	T12	T4	NoRel	true	etti	yaralandı
+Relation	T2	T1	NoRel	true	ölen	girişimine
+Relation	T2	T10	NoRel	true	ölen	süreci
+Relation	T2	T12	NoRel	true	ölen	etti

@@ -1,0 +1,54 @@
+Text	Según más testigos presenciales , después de que la aeronave cayó en picada , alrededor de cinco explosiones pudieron ser oídas a un kilómetro ( 0.62mi ) .	El avión se invirtió , la nariz golpeó un hotel y el resto del avión impactó tres edificios , uno de ellos un salón de masajes repleto de gente , en un ángulo casi perpendicular .	Tras el impacto , el avión explotó y de acuerdo con los testigos parecía " una escena del infierno " , con cuerpos que eran expulsados hacia la calle .	Se trata del accidente de un Hércules C-130 más mortífero en Indonesia , superando el accidente de 1991 en Yakartadel este .	Asimismo , es el tercer accidente aéreo más mortífero en la provincia de Sumatradel norte , después del vuelo 152 de Garuda Indonesia y el vuelo 091 de Mandala Airlines , además de ser el segundo desastre aéreo en Indonesia en menos de seis meses , luego del accidente del vuelo 8501 de Indonesia AirAsia en diciembre del 2014 .
+Event	T1	oídas	EVENT	122
+Event	T2	invirtió	EVENT	168
+Event	T3	golpeó	EVENT	188
+Event	T4	impactó	EVENT	225
+Event	T5	impacto	EVENT	344
+Event	T6	explotó	EVENT	363
+Event	T7	expulsados	EVENT	460
+Event	T8	trata	EVENT	491
+Event	T9	accidente	EVENT	501
+Event	T10	superando	EVENT	561
+Event	T11	accidente	EVENT	574
+Event	T12	vuelo	EVENT	717
+Event	T13	vuelo	EVENT	752
+Event	T14	desastre	EVENT	809
+Event	T15	accidente	EVENT	872
+Event	T16	vuelo	EVENT	886
+Event	T17	cayó	EVENT	61
+Relation	T17	T3	CauseEffect	true	cayó	golpeó
+Relation	T3	T17	EffectCause	true	golpeó	cayó
+Relation	T17	T4	CauseEffect	true	cayó	impactó
+Relation	T4	T17	EffectCause	true	impactó	cayó
+Relation	T4	T6	CauseEffect	true	impactó	explotó
+Relation	T6	T4	EffectCause	true	explotó	impactó
+Relation	T1	T10	NoRel	true	oídas	superando
+Relation	T1	T13	NoRel	true	oídas	vuelo
+Relation	T1	T5	NoRel	true	oídas	impacto
+Relation	T1	T8	NoRel	true	oídas	trata
+Relation	T10	T6	NoRel	true	superando	explotó
+Relation	T12	T17	NoRel	true	vuelo	cayó
+Relation	T13	T16	NoRel	true	vuelo	vuelo
+Relation	T14	T4	NoRel	true	desastre	impactó
+Relation	T15	T10	NoRel	true	accidente	superando
+Relation	T15	T4	NoRel	true	accidente	impactó
+Relation	T16	T11	NoRel	true	vuelo	accidente
+Relation	T16	T4	NoRel	true	vuelo	impactó
+Relation	T17	T9	NoRel	true	cayó	accidente
+Relation	T2	T12	NoRel	true	invirtió	vuelo
+Relation	T2	T15	NoRel	true	invirtió	accidente
+Relation	T3	T10	NoRel	true	golpeó	superando
+Relation	T3	T15	NoRel	true	golpeó	accidente
+Relation	T4	T11	NoRel	true	impactó	accidente
+Relation	T4	T12	NoRel	true	impactó	vuelo
+Relation	T4	T13	NoRel	true	impactó	vuelo
+Relation	T4	T16	NoRel	true	impactó	vuelo
+Relation	T4	T2	NoRel	true	impactó	invirtió
+Relation	T4	T5	NoRel	true	impactó	impacto
+Relation	T4	T7	NoRel	true	impactó	expulsados
+Relation	T7	T1	NoRel	true	expulsados	oídas
+Relation	T7	T12	NoRel	true	expulsados	vuelo
+Relation	T8	T1	NoRel	true	trata	oídas
+Relation	T8	T5	NoRel	true	trata	impacto
+Relation	T9	T3	NoRel	true	accidente	golpeó
+Relation	T9	T7	NoRel	true	accidente	expulsados

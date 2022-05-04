@@ -1,0 +1,50 @@
+Text	سائنسدانوں نے گرم ہوائی طوفان يا ٹراپيکل سائيکلون کی شدّت کو سات درجوں ميں تقسيم کيا ہے ۔	پہلے درجے ميں طوفان کی شدت 74 سے 95 کلوميٹر فی گھنٹہ تک ہوتی ہے جو عام سی گرج چمک پر مشتمل سائيکلون ہے ۔	اگر سائيکلون ميں ہوا کی شدت 96 سے 110 کلوميٹر فی گھنٹہ ہوجاتی ہے تو اسے دوسرے درجہ کا طوفان کہا جاتا ہے ۔	اس طوفان ميں عموماً ماہی گيروں کو کشتياں ساحلوں پر لگادينے کی تاکيد کی جاتی ہے اور پانی خشکی پر نہيں چڑھتا ۔	تيسرے درجے کے سائيکلون کو ٹراپيکل ڈپريشن کہا جاتا ہے جو معتدل درجہ کا طوفان ہے ۔
+Event	T0	طوفان	EVENT	24
+Event	T1	طوفان	EVENT	104
+Event	T2	شدت	EVENT	113
+Event	T4	کہا	EVENT	287
+Event	T5	طوفان	EVENT	304
+Event	T6	لگادينے	EVENT	352
+Event	T7	تاکيد	EVENT	363
+Event	T8	چڑھتا	EVENT	402
+Event	T9	کہا	EVENT	451
+Event	T10	طوفان	EVENT	480
+Event	T11	سائيکلون	EVENT	41
+Event	T12	تقسيم	EVENT	75
+Event	T13	مشتمل	EVENT	175
+Event	T14	سائيکلون	EVENT	181
+Event	T15	سائيکلون	EVENT	199
+Event	T3	ہوجاتی	EVENT	250
+Event	T16	سائيکلون	EVENT	424
+Relation	T3	T4	CauseEffect	true	ہوجاتی	کہا
+Relation	T4	T3	EffectCause	true	کہا	ہوجاتی
+Relation	T0	T12	NoRel	true	طوفان	تقسيم
+Relation	T0	T4	NoRel	true	طوفان	کہا
+Relation	T1	T10	NoRel	true	طوفان	طوفان
+Relation	T1	T16	NoRel	true	طوفان	سائيکلون
+Relation	T10	T1	NoRel	true	طوفان	طوفان
+Relation	T10	T5	NoRel	true	طوفان	طوفان
+Relation	T10	T6	NoRel	true	طوفان	لگادينے
+Relation	T11	T0	NoRel	true	سائيکلون	طوفان
+Relation	T11	T6	NoRel	true	سائيکلون	لگادينے
+Relation	T12	T15	NoRel	true	تقسيم	سائيکلون
+Relation	T14	T16	NoRel	true	سائيکلون	سائيکلون
+Relation	T15	T14	NoRel	true	سائيکلون	سائيکلون
+Relation	T15	T16	NoRel	true	سائيکلون	سائيکلون
+Relation	T16	T15	NoRel	true	سائيکلون	سائيکلون
+Relation	T2	T14	NoRel	true	شدت	سائيکلون
+Relation	T3	T15	NoRel	true	ہوجاتی	سائيکلون
+Relation	T3	T7	NoRel	true	ہوجاتی	تاکيد
+Relation	T3	T8	NoRel	true	ہوجاتی	چڑھتا
+Relation	T4	T11	NoRel	true	کہا	سائيکلون
+Relation	T4	T12	NoRel	true	کہا	تقسيم
+Relation	T5	T10	NoRel	true	طوفان	طوفان
+Relation	T6	T0	NoRel	true	لگادينے	طوفان
+Relation	T6	T11	NoRel	true	لگادينے	سائيکلون
+Relation	T6	T2	NoRel	true	لگادينے	شدت
+Relation	T6	T8	NoRel	true	لگادينے	چڑھتا
+Relation	T6	T9	NoRel	true	لگادينے	کہا
+Relation	T7	T14	NoRel	true	تاکيد	سائيکلون
+Relation	T8	T14	NoRel	true	چڑھتا	سائيکلون
+Relation	T9	T1	NoRel	true	کہا	طوفان
+Relation	T9	T6	NoRel	true	کہا	لگادينے

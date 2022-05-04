@@ -1,0 +1,29 @@
+Text	1946 VARTO - HINIS DEPREMI , 31 Mayıs günü yerel saat ile 05.12'de 5.9 M _ ( s ) büyüklüğünde ( tahmini ) meydana gelen deprem .	Mercalli şiddet ölçeğine göre en büyük şiddet VIII ( Yıkıcı ) olarak hissedildi .	Deprem , 839 can kaybına yol açtı .	Depremin sabah saatlerinde meydana gelmesinden ve bu saatlerde yöre halkının büyük bölümünün yayla veya tarlada iş başında bulunmasından ötürü can kaybı tahminlerden düşük seviyede gerçekleşti .	Varto - Hınıs , 1946 Kategori : Muş tarihi Kategori : 20. yüzyılda Erzurum Kategori : Varto Kategori : Hınıs Varto - Hınıs depremi Varto - Hınıs
+Event	T1	deprem	EVENT	120
+Event	T2	şiddet	EVENT	168
+Event	T3	hissedildi	EVENT	198
+Event	T4	Deprem	EVENT	211
+Event	T5	açtı	EVENT	240
+Event	T6	Depremin	EVENT	247
+Event	T7	gerçekleşti	EVENT	428
+Event	T8	1946 VARTO - HINIS DEPREMI	EVENT	0
+Event	T9	bulunmasından	EVENT	370
+Event	T10	depremi	EVENT	565
+Relation	T9	T7	CauseEffect	true	bulunmasından	gerçekleşti
+Relation	T7	T9	EffectCause	true	gerçekleşti	bulunmasından
+Relation	T1	T4	NoRel	true	deprem	Deprem
+Relation	T1	T9	NoRel	true	deprem	bulunmasından
+Relation	T10	T8	NoRel	true	depremi	1946 VARTO - HINIS DEPREMI
+Relation	T2	T10	NoRel	true	şiddet	depremi
+Relation	T3	T10	NoRel	true	hissedildi	depremi
+Relation	T3	T6	NoRel	true	hissedildi	Depremin
+Relation	T4	T2	NoRel	true	Deprem	şiddet
+Relation	T4	T3	NoRel	true	Deprem	hissedildi
+Relation	T5	T4	NoRel	true	açtı	Deprem
+Relation	T5	T6	NoRel	true	açtı	Depremin
+Relation	T5	T7	NoRel	true	açtı	gerçekleşti
+Relation	T6	T8	NoRel	true	Depremin	1946 VARTO - HINIS DEPREMI
+Relation	T6	T9	NoRel	true	Depremin	bulunmasından
+Relation	T7	T8	NoRel	true	gerçekleşti	1946 VARTO - HINIS DEPREMI
+Relation	T8	T6	NoRel	true	1946 VARTO - HINIS DEPREMI	Depremin
+Relation	T9	T1	NoRel	true	bulunmasından	deprem

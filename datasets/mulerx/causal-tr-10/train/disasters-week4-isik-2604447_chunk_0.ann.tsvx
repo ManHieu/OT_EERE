@@ -1,0 +1,42 @@
+Text	1948 AŞKABAT DEPREMI ( _ 1948 Aşgabat yer titremesi _ ; _ Aşhabadskoye zemletryaseniye 1948 goda _ ) , 6 Ekim 1948 tarihinde Sovyetler Birliği'nin Türkmenistan SSC'nin başkenti Aşkabat yakınlarında meydana gelen bir depremdir .	Deprem richter ölçeğine göre 7 , 3 şiddetinde olup Mercalli ölçeği göre X ( _ yoğun _ ) olarak kaydedilmiştir .	Türkmenistan hükûmetinin sansürü nedeniyle deprem Sovyet medyasında geniş bir şekilde rapor edilmedi .	Tarihçiler , zayiat ve hasarın kapsamını bildirme yasağının Sovyet hükûmetinin yeterli tepki için yeterli mali kaynak tahsis etmesine izin vermediği konusunda hemfikirdir .	Deprem , 6 Ekim 1948 sabah saat 1: 12'de meydana geldi .
+Event	T0	DEPREMI	EVENT	13
+Event	T1	titremesi	EVENT	42
+Event	T2	gelen	EVENT	206
+Event	T3	depremdir	EVENT	216
+Event	T4	kaydedilmiştir	EVENT	323
+Event	T5	sansürü	EVENT	365
+Event	T6	deprem	EVENT	383
+Event	T7	edilmedi	EVENT	432
+Event	T10	tepki	EVENT	530
+Event	T12	Deprem	EVENT	616
+Event	T13	geldi	EVENT	665
+Event	T9	yasağının	EVENT	493
+Event	T8	vermediği	EVENT	582
+Relation	T0	T4	CauseEffect	true	DEPREMI	kaydedilmiştir
+Relation	T4	T0	EffectCause	true	kaydedilmiştir	DEPREMI
+Relation	T5	T7	CauseEffect	true	sansürü	edilmedi
+Relation	T7	T5	EffectCause	true	edilmedi	sansürü
+Relation	T0	T7	CauseEffect	true	DEPREMI	edilmedi
+Relation	T7	T0	EffectCause	true	edilmedi	DEPREMI
+Relation	T1	T4	NoRel	true	titremesi	kaydedilmiştir
+Relation	T10	T0	NoRel	true	tepki	DEPREMI
+Relation	T10	T8	NoRel	true	tepki	vermediği
+Relation	T12	T10	NoRel	true	Deprem	tepki
+Relation	T12	T13	NoRel	true	Deprem	geldi
+Relation	T12	T4	NoRel	true	Deprem	kaydedilmiştir
+Relation	T13	T1	NoRel	true	geldi	titremesi
+Relation	T13	T5	NoRel	true	geldi	sansürü
+Relation	T13	T7	NoRel	true	geldi	edilmedi
+Relation	T2	T1	NoRel	true	gelen	titremesi
+Relation	T3	T0	NoRel	true	depremdir	DEPREMI
+Relation	T4	T12	NoRel	true	kaydedilmiştir	Deprem
+Relation	T5	T10	NoRel	true	sansürü	tepki
+Relation	T5	T4	NoRel	true	sansürü	kaydedilmiştir
+Relation	T6	T10	NoRel	true	deprem	tepki
+Relation	T7	T3	NoRel	true	edilmedi	depremdir
+Relation	T8	T0	NoRel	true	vermediği	DEPREMI
+Relation	T8	T10	NoRel	true	vermediği	tepki
+Relation	T8	T4	NoRel	true	vermediği	kaydedilmiştir
+Relation	T8	T9	NoRel	true	vermediği	yasağının
+Relation	T9	T0	NoRel	true	yasağının	DEPREMI
+Relation	T9	T4	NoRel	true	yasağının	kaydedilmiştir

@@ -1,0 +1,20 @@
+Text	McGill doktora adayı Aengus Bridgman , Poilievre'nin dilekçesinin zamanlamasının tesadüf olma ihtimalinin düşük olduğunu söyledi .	Poilievre , Trudeau ve WEF'den alıntı yaptığını söyleyerek yanıt verdi .	Simon Fraser Üniversitesi'nde profesör olan Ahmed El - Ravi , bu tepkinin Poilievre'nin hükümete yönelik eleştirilerinin yanlış yorumlanması olduğunu iddia etti .	Aynı sıralarda Muhafazakar lider Erin O'Toole , Trudeau'nun pandemiyi büyük ve riskli bir deney uygulamak için kullandığını iddia ederek sıfırlama fikrini eleştirdi .	Komplo teorisi , " küresel finans elitlerinin " ve dünya liderlerinin , dünya hükümetlerinin yeniden yapılandırılmasına izin verecek koşullara neden olmak için kasıtlı olarak koronavirüsün yayılmasını serbest bırakarak bir pandemi planladıklarını iddia ediyor .
+Event	T0	söyledi	EVENT	121
+Event	T1	verdi	EVENT	196
+Event	T2	eleştirilerinin	EVENT	309
+Event	T3	etti	EVENT	360
+Event	T5	sıfırlama	EVENT	504
+Event	T6	eleştirdi	EVENT	522
+Event	T8	ediyor	EVENT	787
+Event	T9	yaptığını	EVENT	169
+Event	T4	kullandığını	EVENT	478
+Event	T7	teorisi	EVENT	541
+Relation	T7	T8	CauseEffect	true	teorisi	ediyor
+Relation	T8	T7	EffectCause	true	ediyor	teorisi
+Relation	T2	T6	NoRel	true	eleştirilerinin	eleştirdi
+Relation	T2	T7	NoRel	true	eleştirilerinin	teorisi
+Relation	T5	T1	NoRel	true	sıfırlama	verdi
+Relation	T5	T6	NoRel	true	sıfırlama	eleştirdi
+Relation	T6	T1	NoRel	true	eleştirdi	verdi
+Relation	T6	T9	NoRel	true	eleştirdi	yaptığını
+Relation	T9	T2	NoRel	true	yaptığını	eleştirilerinin

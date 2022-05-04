@@ -1,0 +1,68 @@
+Text	Estas hipótesis fueron publicados en diversos medios de prensa , radio y televisión , como el diario El Mundo , Libertad Digital y esRadio , COPE , Radio Internacional , Intereconomía Televisión y Distrito TV .	El inicio de dichas teorías está en el artículo publicado en El Mundo el 23 de abril de 2004 , 39 días después de los atentados .	En él se cuestionaba la veracidad como prueba de la mochila con una bomba , que no llegó a estallar , encontrada a las 2:40 horas de la madrugada del 12 de marzo en la comisaría de Puente de Vallecas , entre los objetos de las victimas recuperados en la estación .	La carga explosiva fue desactivada por los TEDAX de la Policía Nacional , mientras que el teléfono móvil , que tenía como sistema de activación , sirvió para averiguar donde se había comprado , facilitando las primeras detenciones .	A ese primer articulo , le sucedieron teorías sobre la posibilidad de que la instrucción del sumario hubiese sido saboteada por la Policía con mentiras al juez instructor , Juan del Olmo , al que entregaban _ informes contradictorios , declaraciones manipuladas y documentos falsos _ relacionados con la bolsa bomba _ .
+Event	T0	publicados	EVENT	23
+Event	T1	teorías	EVENT	231
+Event	T2	publicado	EVENT	259
+Event	T3	atentados	EVENT	329
+Event	T4	cuestionaba	EVENT	350
+Event	T5	prueba	EVENT	380
+Event	T6	llegó	EVENT	424
+Event	T7	estallar	EVENT	432
+Event	T8	encontrada	EVENT	443
+Event	T9	recuperados	EVENT	577
+Event	T10	desactivada	EVENT	629
+Event	T11	activación	EVENT	739
+Event	T12	sirvió	EVENT	752
+Event	T13	averiguar	EVENT	764
+Event	T14	comprado	EVENT	789
+Event	T15	facilitando	EVENT	800
+Event	T16	detenciones	EVENT	825
+Event	T17	teorías	EVENT	877
+Event	T18	instrucción	EVENT	916
+Event	T19	sumario	EVENT	932
+Event	T20	saboteada	EVENT	953
+Event	T21	mentiras	EVENT	982
+Event	T22	manipuladas	EVENT	1089
+Event	T23	relacionados	EVENT	1123
+Relation	T1	T14	NoRel	true	teorías	comprado
+Relation	T1	T17	NoRel	true	teorías	teorías
+Relation	T1	T5	NoRel	true	teorías	prueba
+Relation	T10	T3	NoRel	true	desactivada	atentados
+Relation	T10	T6	NoRel	true	desactivada	llegó
+Relation	T13	T18	NoRel	true	averiguar	instrucción
+Relation	T13	T8	NoRel	true	averiguar	encontrada
+Relation	T14	T23	NoRel	true	comprado	relacionados
+Relation	T16	T2	NoRel	true	detenciones	publicado
+Relation	T17	T11	NoRel	true	teorías	activación
+Relation	T18	T8	NoRel	true	instrucción	encontrada
+Relation	T19	T1	NoRel	true	sumario	teorías
+Relation	T2	T11	NoRel	true	publicado	activación
+Relation	T2	T13	NoRel	true	publicado	averiguar
+Relation	T2	T20	NoRel	true	publicado	saboteada
+Relation	T2	T21	NoRel	true	publicado	mentiras
+Relation	T2	T5	NoRel	true	publicado	prueba
+Relation	T20	T14	NoRel	true	saboteada	comprado
+Relation	T20	T19	NoRel	true	saboteada	sumario
+Relation	T20	T2	NoRel	true	saboteada	publicado
+Relation	T22	T1	NoRel	true	manipuladas	teorías
+Relation	T23	T14	NoRel	true	relacionados	comprado
+Relation	T23	T18	NoRel	true	relacionados	instrucción
+Relation	T23	T19	NoRel	true	relacionados	sumario
+Relation	T23	T7	NoRel	true	relacionados	estallar
+Relation	T3	T0	NoRel	true	atentados	publicados
+Relation	T3	T10	NoRel	true	atentados	desactivada
+Relation	T3	T5	NoRel	true	atentados	prueba
+Relation	T4	T18	NoRel	true	cuestionaba	instrucción
+Relation	T4	T5	NoRel	true	cuestionaba	prueba
+Relation	T4	T6	NoRel	true	cuestionaba	llegó
+Relation	T5	T9	NoRel	true	prueba	recuperados
+Relation	T6	T10	NoRel	true	llegó	desactivada
+Relation	T6	T20	NoRel	true	llegó	saboteada
+Relation	T6	T23	NoRel	true	llegó	relacionados
+Relation	T6	T9	NoRel	true	llegó	recuperados
+Relation	T7	T17	NoRel	true	estallar	teorías
+Relation	T8	T10	NoRel	true	encontrada	desactivada
+Relation	T8	T16	NoRel	true	encontrada	detenciones
+Relation	T8	T22	NoRel	true	encontrada	manipuladas
+Relation	T8	T23	NoRel	true	encontrada	relacionados
+Relation	T8	T5	NoRel	true	encontrada	prueba
+Relation	T9	T5	NoRel	true	recuperados	prueba

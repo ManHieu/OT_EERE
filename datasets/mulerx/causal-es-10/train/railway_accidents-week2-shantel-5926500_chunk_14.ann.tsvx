@@ -1,0 +1,40 @@
+Text	Las cajas negras también registraron 4 km antes de la curva , poco más de un minuto antes del accidente , una señal acústica ASFA de _ vía libre _ ( semáforo en verde , punto kilométrico 80,33 ) , que indica circulación normal , sin requerir al maquinista ninguna acción .	Otros accidentes ferroviarios en España de años recientes en los que una señal errónea de _ vía libre _ ha estado también implicada han sido los de Arévalo ( 2010 ) , Villada ( 2006 ) , Chinchilla ( 2003 ) , y Huarte-Araquil ( 1997 ) .	A causa del descarrilamiento , la vía quedó interceptada y el tráfico ferroviario fue suspendido en el tramo afectado perteneciente a la línea de alta velocidad Olmedo-Zamora-Galicia .	Una decena de trenes modificaron su itinerario el 25 de julio de 2013 circulando por otras líneas férreas o se habilitó un transporte alternativo por carretera .	[ El entonces presidente del Gobierno , Mariano Rajoy , y el presidente de la Junta de Galicia , Alberto Núñez Feijóo , visitando el lugar del accidente ]
+Event	T0	registraron	EVENT	25
+Event	T1	curva	EVENT	54
+Event	T10	suspendido	EVENT	595
+Event	T11	modificaron	EVENT	715
+Event	T12	habilitó	EVENT	805
+Event	T13	visitando	EVENT	976
+Event	T14	accidente	EVENT	999
+Event	T2	accidente	EVENT	94
+Event	T3	señal	EVENT	110
+Event	T4	requerir	EVENT	233
+Event	T5	acción	EVENT	264
+Event	T6	accidentes	EVENT	279
+Event	T7	descarrilamiento	EVENT	521
+Event	T8	interceptada	EVENT	553
+Event	T9	tráfico	EVENT	571
+Relation	T7	T8	CauseEffect	true	descarrilamiento	interceptada
+Relation	T8	T7	EffectCause	true	interceptada	descarrilamiento
+Relation	T9	T10	CauseEffect	true	tráfico	suspendido
+Relation	T10	T9	EffectCause	true	suspendido	tráfico
+Relation	T7	T10	CauseEffect	true	descarrilamiento	suspendido
+Relation	T10	T7	EffectCause	true	suspendido	descarrilamiento
+Relation	T7	T11	CauseEffect	true	descarrilamiento	modificaron
+Relation	T11	T7	EffectCause	true	modificaron	descarrilamiento
+Relation	T0	T14	NoRel	true	registraron	accidente
+Relation	T1	T12	NoRel	true	curva	habilitó
+Relation	T1	T14	NoRel	true	curva	accidente
+Relation	T10	T13	NoRel	true	suspendido	visitando
+Relation	T10	T2	NoRel	true	suspendido	accidente
+Relation	T11	T4	NoRel	true	modificaron	requerir
+Relation	T12	T3	NoRel	true	habilitó	señal
+Relation	T12	T5	NoRel	true	habilitó	acción
+Relation	T14	T3	NoRel	true	accidente	señal
+Relation	T2	T1	NoRel	true	accidente	curva
+Relation	T3	T5	NoRel	true	señal	acción
+Relation	T3	T8	NoRel	true	señal	interceptada
+Relation	T5	T2	NoRel	true	acción	accidente
+Relation	T5	T9	NoRel	true	acción	tráfico
+Relation	T6	T0	NoRel	true	accidentes	registraron
+Relation	T8	T13	NoRel	true	interceptada	visitando

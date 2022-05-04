@@ -1,0 +1,35 @@
+Text	Daha önceki eleştirilerine rağmen KPD önderi işçileri yalnız bırakmamak ve her şeye rağmen onların içinde olmak gerekir düşüncesiyle konseylerin başına geçti .	Durum oldukça kötüydü , kuşatma 16 gün sürdü ve Noske’nin birlikleri ve Freikorps 30 Nisan’da Münih’e girdi ve komünistlere büyük saldırılar gerçekleştirdi .	Böylece Münih İşçi ve Asker Konseyleri Cumhuriyeti yıkıldı .	Karşı devrim tüm Almanya’yı sardı .	SPD , devrimcilerin yükselişini ve devrimi engelledikten sonra burjuvazi tarafından gözden çıkarılmıştı .
+Event	T0	geçti	EVENT	152
+Event	T1	kuşatma	EVENT	184
+Event	T3	girdi	EVENT	262
+Event	T5	yıkıldı	EVENT	369
+Event	T7	sardı	EVENT	407
+Event	T8	yükselişini	EVENT	435
+Event	T9	devrimi	EVENT	450
+Event	T10	eleştirilerine	EVENT	12
+Event	T11	saldırılar	EVENT	290
+Event	T2	Karşı devrim	EVENT	379
+Event	T4	çıkarılmıştı	EVENT	506
+Event	T6	engelledikten	EVENT	458
+Relation	T1	T5	CauseEffect	true	kuşatma	yıkıldı
+Relation	T5	T1	EffectCause	true	yıkıldı	kuşatma
+Relation	T8	T2	CauseEffect	true	yükselişini	Karşı devrim
+Relation	T2	T8	EffectCause	true	Karşı devrim	yükselişini
+Relation	T9	T2	CauseEffect	true	devrimi	Karşı devrim
+Relation	T2	T9	EffectCause	true	Karşı devrim	devrimi
+Relation	T0	T3	NoRel	true	geçti	girdi
+Relation	T1	T2	NoRel	true	kuşatma	Karşı devrim
+Relation	T10	T3	NoRel	true	eleştirilerine	girdi
+Relation	T10	T8	NoRel	true	eleştirilerine	yükselişini
+Relation	T11	T8	NoRel	true	saldırılar	yükselişini
+Relation	T11	T9	NoRel	true	saldırılar	devrimi
+Relation	T3	T4	NoRel	true	girdi	çıkarılmıştı
+Relation	T3	T6	NoRel	true	girdi	engelledikten
+Relation	T5	T0	NoRel	true	yıkıldı	geçti
+Relation	T5	T4	NoRel	true	yıkıldı	çıkarılmıştı
+Relation	T5	T8	NoRel	true	yıkıldı	yükselişini
+Relation	T6	T5	NoRel	true	engelledikten	yıkıldı
+Relation	T6	T9	NoRel	true	engelledikten	devrimi
+Relation	T8	T3	NoRel	true	yükselişini	girdi
+Relation	T8	T9	NoRel	true	yükselişini	devrimi
+Relation	T9	T3	NoRel	true	devrimi	girdi

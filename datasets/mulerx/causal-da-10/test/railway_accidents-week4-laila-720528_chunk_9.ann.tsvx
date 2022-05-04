@@ -1,0 +1,103 @@
+Text	Ifølge jernbaneselskabet havde lokomotivføreren arbejdet 30 år for selskabet og havde kørt på strækningen i over et år .	Ifølge en pressemeddelelse den 25. juli 2013 fra den øverste regionsdomstol i Galicien , der efterforskede ulykken , gav domstolen politiet ordre på at afhøre lokomotivføreren med en sigtets rettigheder på hospitalet , hvor han blev varetægtsfængslet .	Ifølge Jaime Iglesias , der er ledende politichef i den nordvestlige Galicien , blev lokomotivføreren formelt tilbageholdt kl. 20.00 torsdag aften sigtet for forbrydelser i forbindelse med ulykken .	Efterforskningen viste , at lokomotivføreren skulle have påbegyndt opbremsningen af toget fire km før den kurve , hvor toget afsporedes .	På et lukket retsmøde i Santiago de Compostela søndag aften den 28. juli 2013 erkendte den 52-årige lokomotivfører sit ansvar for ulykken og forklarede , at ulykken skyldtes en forglemmelse fra hans side , og at han troede , at han og toget befandt sig et helt andet sted på ruten .
+Event	T0	arbejdet	EVENT	48
+Event	T1	kørt	EVENT	86
+Event	T2	pressemeddelelse	EVENT	131
+Event	T3	ulykken	EVENT	228
+Event	T4	gav	EVENT	238
+Event	T5	ordre	EVENT	261
+Event	T6	afhøre	EVENT	273
+Event	T7	varetægtsfængslet	EVENT	354
+Event	T8	tilbageholdt	EVENT	484
+Event	T9	sigtet	EVENT	521
+Event	T10	forbrydelser	EVENT	532
+Event	T11	ulykken	EVENT	563
+Event	T12	viste	EVENT	590
+Event	T13	afsporedes	EVENT	698
+Event	T14	retsmøde	EVENT	724
+Event	T15	erkendte	EVENT	789
+Event	T16	ulykken	EVENT	841
+Event	T17	forklarede	EVENT	852
+Event	T18	skyldtes	EVENT	876
+Event	T19	forglemmelse	EVENT	888
+Event	T20	troede	EVENT	927
+Event	T21	befandt	EVENT	952
+Event	T22	efterforskede	EVENT	214
+Event	T23	opbremsningen	EVENT	640
+Event	T24	ulykken	EVENT	868
+Relation	T3	T7	CauseEffect	true	ulykken	varetægtsfængslet
+Relation	T7	T3	EffectCause	true	varetægtsfængslet	ulykken
+Relation	T11	T9	CauseEffect	true	ulykken	sigtet
+Relation	T9	T11	EffectCause	true	sigtet	ulykken
+Relation	T9	T8	CauseEffect	true	sigtet	tilbageholdt
+Relation	T8	T9	EffectCause	true	tilbageholdt	sigtet
+Relation	T10	T9	CauseEffect	true	forbrydelser	sigtet
+Relation	T9	T10	EffectCause	true	sigtet	forbrydelser
+Relation	T10	T11	CauseEffect	true	forbrydelser	ulykken
+Relation	T11	T10	EffectCause	true	ulykken	forbrydelser
+Relation	T8	T7	CauseEffect	true	tilbageholdt	varetægtsfængslet
+Relation	T7	T8	EffectCause	true	varetægtsfængslet	tilbageholdt
+Relation	T19	T16	CauseEffect	true	forglemmelse	ulykken
+Relation	T16	T19	EffectCause	true	ulykken	forglemmelse
+Relation	T19	T18	CauseEffect	true	forglemmelse	skyldtes
+Relation	T18	T19	EffectCause	true	skyldtes	forglemmelse
+Relation	T0	T17	NoRel	true	arbejdet	forklarede
+Relation	T0	T24	NoRel	true	arbejdet	ulykken
+Relation	T0	T4	NoRel	true	arbejdet	gav
+Relation	T0	T5	NoRel	true	arbejdet	ordre
+Relation	T0	T7	NoRel	true	arbejdet	varetægtsfængslet
+Relation	T1	T14	NoRel	true	kørt	retsmøde
+Relation	T10	T24	NoRel	true	forbrydelser	ulykken
+Relation	T11	T2	NoRel	true	ulykken	pressemeddelelse
+Relation	T11	T20	NoRel	true	ulykken	troede
+Relation	T11	T4	NoRel	true	ulykken	gav
+Relation	T12	T1	NoRel	true	viste	kørt
+Relation	T12	T16	NoRel	true	viste	ulykken
+Relation	T13	T19	NoRel	true	afsporedes	forglemmelse
+Relation	T13	T4	NoRel	true	afsporedes	gav
+Relation	T13	T7	NoRel	true	afsporedes	varetægtsfængslet
+Relation	T14	T18	NoRel	true	retsmøde	skyldtes
+Relation	T14	T7	NoRel	true	retsmøde	varetægtsfængslet
+Relation	T15	T0	NoRel	true	erkendte	arbejdet
+Relation	T15	T20	NoRel	true	erkendte	troede
+Relation	T15	T7	NoRel	true	erkendte	varetægtsfængslet
+Relation	T16	T18	NoRel	true	ulykken	skyldtes
+Relation	T17	T16	NoRel	true	forklarede	ulykken
+Relation	T17	T4	NoRel	true	forklarede	gav
+Relation	T18	T3	NoRel	true	skyldtes	ulykken
+Relation	T18	T4	NoRel	true	skyldtes	gav
+Relation	T18	T5	NoRel	true	skyldtes	ordre
+Relation	T19	T1	NoRel	true	forglemmelse	kørt
+Relation	T19	T13	NoRel	true	forglemmelse	afsporedes
+Relation	T19	T24	NoRel	true	forglemmelse	ulykken
+Relation	T2	T12	NoRel	true	pressemeddelelse	viste
+Relation	T2	T4	NoRel	true	pressemeddelelse	gav
+Relation	T2	T8	NoRel	true	pressemeddelelse	tilbageholdt
+Relation	T2	T9	NoRel	true	pressemeddelelse	sigtet
+Relation	T20	T24	NoRel	true	troede	ulykken
+Relation	T22	T0	NoRel	true	efterforskede	arbejdet
+Relation	T22	T18	NoRel	true	efterforskede	skyldtes
+Relation	T22	T2	NoRel	true	efterforskede	pressemeddelelse
+Relation	T23	T11	NoRel	true	opbremsningen	ulykken
+Relation	T23	T14	NoRel	true	opbremsningen	retsmøde
+Relation	T23	T16	NoRel	true	opbremsningen	ulykken
+Relation	T23	T19	NoRel	true	opbremsningen	forglemmelse
+Relation	T23	T3	NoRel	true	opbremsningen	ulykken
+Relation	T24	T23	NoRel	true	ulykken	opbremsningen
+Relation	T3	T6	NoRel	true	ulykken	afhøre
+Relation	T4	T20	NoRel	true	gav	troede
+Relation	T4	T22	NoRel	true	gav	efterforskede
+Relation	T4	T23	NoRel	true	gav	opbremsningen
+Relation	T5	T19	NoRel	true	ordre	forglemmelse
+Relation	T5	T22	NoRel	true	ordre	efterforskede
+Relation	T5	T23	NoRel	true	ordre	opbremsningen
+Relation	T6	T12	NoRel	true	afhøre	viste
+Relation	T6	T15	NoRel	true	afhøre	erkendte
+Relation	T6	T19	NoRel	true	afhøre	forglemmelse
+Relation	T6	T22	NoRel	true	afhøre	efterforskede
+Relation	T7	T0	NoRel	true	varetægtsfængslet	arbejdet
+Relation	T7	T1	NoRel	true	varetægtsfængslet	kørt
+Relation	T7	T14	NoRel	true	varetægtsfængslet	retsmøde
+Relation	T7	T2	NoRel	true	varetægtsfængslet	pressemeddelelse
+Relation	T8	T13	NoRel	true	tilbageholdt	afsporedes
+Relation	T8	T18	NoRel	true	tilbageholdt	skyldtes
+Relation	T9	T13	NoRel	true	sigtet	afsporedes

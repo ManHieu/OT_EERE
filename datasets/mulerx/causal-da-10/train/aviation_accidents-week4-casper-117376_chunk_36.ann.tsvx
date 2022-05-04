@@ -1,0 +1,22 @@
+Text	9/11 kommissionen mener , at flyet stadig var under kaprernes kontrol , men at de måtte have vurderet , at det kun var et spørgsmål om sekunder , inden passagererne var trængt ind og havde overvundet dem .	Andre hævder , at der ikke kan være tvivl om , at passagererne trængte ind i cockpittet .	Flynummer 93 styrtede ned i et nedlagt kulmineområde ved Stonycreek Township klokken 10:03:11 .	National Transportation_Safety_Board ( NTSB ) rapporterede , at flyet styrtede ned med en hastighed på 906 km/t i en vinkel på 40 ° på ryggen .	Det lavede et næsten tre meter dybt og omkring 12 meter stort nedslagskrater .
+Event	T0	mener	EVENT	18
+Event	T1	kontrol	EVENT	62
+Event	T2	vurderet	EVENT	93
+Event	T3	overvundet	EVENT	189
+Event	T4	hævder	EVENT	212
+Event	T5	nedlagt	EVENT	327
+Event	T6	rapporterede	EVENT	438
+Event	T7	lavede	EVENT	540
+Event	T8	styrtede ned	EVENT	309
+Relation	T1	T8	CauseEffect	true	kontrol	styrtede ned
+Relation	T8	T1	EffectCause	true	styrtede ned	kontrol
+Relation	T8	T6	CauseEffect	true	styrtede ned	rapporterede
+Relation	T6	T8	EffectCause	true	rapporterede	styrtede ned
+Relation	T1	T3	NoRel	true	kontrol	overvundet
+Relation	T2	T0	NoRel	true	vurderet	mener
+Relation	T2	T4	NoRel	true	vurderet	hævder
+Relation	T4	T6	NoRel	true	hævder	rapporterede
+Relation	T5	T8	NoRel	true	nedlagt	styrtede ned
+Relation	T6	T4	NoRel	true	rapporterede	hævder
+Relation	T7	T1	NoRel	true	lavede	kontrol
+Relation	T8	T2	NoRel	true	styrtede ned	vurderet

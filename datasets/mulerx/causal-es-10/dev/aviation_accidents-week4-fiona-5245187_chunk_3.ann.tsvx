@@ -1,0 +1,50 @@
+Text	Los curiosos empezaron a lanzar piedras a los soldados como represalia .	El agua para combatir el incendio se retrasó varias horas debido a la escasez de camiones de bomberos , por lo que los civiles trataron de luchar contra el fuego a mano con cubos de plástico .	Los camiones con agua procedentes de una construcción cercana tuvieron dificultades para llegar al lugar debido a las estrechas carreteras del barrio .	El acceso al lugar estuvo inicialmente restringido por el fuego , y más tarde por los fuertes vientos y precipitaciones .	Los rescatadores expresaron su preocupación de que un apartamento de tres plantas se colapsase y cayese .
+Event	T0	empezaron	EVENT	13
+Event	T1	represalia	EVENT	60
+Event	T2	combatir	EVENT	86
+Event	T3	incendio	EVENT	98
+Event	T4	retrasó	EVENT	110
+Event	T5	trataron	EVENT	200
+Event	T6	luchar	EVENT	212
+Event	T7	construcción	EVENT	307
+Event	T8	dificultades	EVENT	337
+Event	T9	acceso	EVENT	421
+Event	T10	restringido	EVENT	457
+Event	T11	fuego	EVENT	476
+Event	T12	vientos	EVENT	512
+Event	T13	precipitaciones	EVENT	522
+Event	T14	expresaron	EVENT	557
+Event	T15	preocupación	EVENT	571
+Event	T16	colapsase	EVENT	625
+Event	T17	cayese	EVENT	637
+Relation	T13	T10	CauseEffect	true	precipitaciones	restringido
+Relation	T10	T13	EffectCause	true	restringido	precipitaciones
+Relation	T0	T12	NoRel	true	empezaron	vientos
+Relation	T0	T4	NoRel	true	empezaron	retrasó
+Relation	T0	T8	NoRel	true	empezaron	dificultades
+Relation	T1	T3	NoRel	true	represalia	incendio
+Relation	T1	T4	NoRel	true	represalia	retrasó
+Relation	T1	T5	NoRel	true	represalia	trataron
+Relation	T1	T7	NoRel	true	represalia	construcción
+Relation	T1	T8	NoRel	true	represalia	dificultades
+Relation	T10	T5	NoRel	true	restringido	trataron
+Relation	T10	T6	NoRel	true	restringido	luchar
+Relation	T10	T7	NoRel	true	restringido	construcción
+Relation	T11	T0	NoRel	true	fuego	empezaron
+Relation	T11	T9	NoRel	true	fuego	acceso
+Relation	T12	T3	NoRel	true	vientos	incendio
+Relation	T12	T9	NoRel	true	vientos	acceso
+Relation	T13	T15	NoRel	true	precipitaciones	preocupación
+Relation	T14	T4	NoRel	true	expresaron	retrasó
+Relation	T14	T9	NoRel	true	expresaron	acceso
+Relation	T15	T3	NoRel	true	preocupación	incendio
+Relation	T16	T1	NoRel	true	colapsase	represalia
+Relation	T16	T11	NoRel	true	colapsase	fuego
+Relation	T17	T0	NoRel	true	cayese	empezaron
+Relation	T3	T10	NoRel	true	incendio	restringido
+Relation	T3	T9	NoRel	true	incendio	acceso
+Relation	T4	T14	NoRel	true	retrasó	expresaron
+Relation	T6	T3	NoRel	true	luchar	incendio
+Relation	T8	T14	NoRel	true	dificultades	expresaron
+Relation	T8	T15	NoRel	true	dificultades	preocupación
+Relation	T8	T6	NoRel	true	dificultades	luchar

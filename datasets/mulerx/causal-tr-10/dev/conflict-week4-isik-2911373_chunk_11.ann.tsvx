@@ -1,0 +1,48 @@
+Text	Rothschilds , Rosenbergs , Wildenstein ve Schloss Ailesi gibi önde gelen Yahudi ailelerin sanat koleksiyonları , yüksek değerleri nedeniyle müsadere hedefiydi .	Ayrıca , Yahudi sanat tüccarları da Alman örgütlerine - Jacques Goudstikker , Benjamin ve Nathan Katz ve Kurt Walter Bachstitz'ün sanat galerilerine - genelde baskı altındayken - sanat eserleri sattı .	Yahudi olmayan sanat tacirleri de Almanlara eser sattılar , Hollanda'daki sanat tacirleri De Boer ve Hoogendijk örnek gösterilebilir .	21 Kasım 1944 tarihinde , Owen Roberts'ın isteği üzerine , William J. Donovan , yağma , müsadere ve Nazi Almanya'sı , müttefikleri ve yağmaya dahil olan çeşitli birey ve örgütlerin kültürel nesne transferi konularında bilgi toplanması ile savaş suçlularını kovuşturmak ve mülklerini iade etmek için OSS içinde Art Yağma Araştırma Birimi'ni ( Aliu ) oluşturdu .	ALIU , Nazi politikası uygulamadaki rolleri yüzünden yakalanıp sorgulanacak bir grup kilit şüpheliyi belirleyerek , sanat yağmacılığına katıldığına inanılan kişiler hakkında bilgi topladı .
+Event	T0	baskı	EVENT	320
+Event	T1	sattı	EVENT	355
+Event	T2	sattılar	EVENT	412
+Event	T3	isteği	EVENT	540
+Event	T4	transferi	EVENT	694
+Event	T5	toplanması	EVENT	722
+Event	T6	savaş	EVENT	737
+Event	T7	etmek	EVENT	786
+Event	T8	oluşturdu	EVENT	847
+Event	T9	sorgulanacak	EVENT	922
+Event	T10	belirleyerek	EVENT	960
+Event	T11	topladı	EVENT	1039
+Event	T12	yağma	EVENT	578
+Event	T13	kovuşturmak	EVENT	755
+Event	T14	yağmacılığına	EVENT	981
+Relation	T0	T1	CauseEffect	true	baskı	sattı
+Relation	T1	T0	EffectCause	true	sattı	baskı
+Relation	T3	T8	CauseEffect	true	isteği	oluşturdu
+Relation	T8	T3	EffectCause	true	oluşturdu	isteği
+Relation	T8	T11	CauseEffect	true	oluşturdu	topladı
+Relation	T11	T8	EffectCause	true	topladı	oluşturdu
+Relation	T0	T11	NoRel	true	baskı	topladı
+Relation	T0	T13	NoRel	true	baskı	kovuşturmak
+Relation	T1	T7	NoRel	true	sattı	etmek
+Relation	T10	T2	NoRel	true	belirleyerek	sattılar
+Relation	T10	T6	NoRel	true	belirleyerek	savaş
+Relation	T10	T9	NoRel	true	belirleyerek	sorgulanacak
+Relation	T11	T0	NoRel	true	topladı	baskı
+Relation	T13	T10	NoRel	true	kovuşturmak	belirleyerek
+Relation	T3	T1	NoRel	true	isteği	sattı
+Relation	T3	T13	NoRel	true	isteği	kovuşturmak
+Relation	T3	T7	NoRel	true	isteği	etmek
+Relation	T4	T1	NoRel	true	transferi	sattı
+Relation	T4	T11	NoRel	true	transferi	topladı
+Relation	T5	T13	NoRel	true	toplanması	kovuşturmak
+Relation	T5	T14	NoRel	true	toplanması	yağmacılığına
+Relation	T5	T8	NoRel	true	toplanması	oluşturdu
+Relation	T6	T10	NoRel	true	savaş	belirleyerek
+Relation	T6	T13	NoRel	true	savaş	kovuşturmak
+Relation	T7	T3	NoRel	true	etmek	isteği
+Relation	T7	T9	NoRel	true	etmek	sorgulanacak
+Relation	T8	T0	NoRel	true	oluşturdu	baskı
+Relation	T8	T12	NoRel	true	oluşturdu	yağma
+Relation	T8	T14	NoRel	true	oluşturdu	yağmacılığına
+Relation	T9	T2	NoRel	true	sorgulanacak	sattılar
+Relation	T9	T3	NoRel	true	sorgulanacak	isteği
+Relation	T9	T6	NoRel	true	sorgulanacak	savaş

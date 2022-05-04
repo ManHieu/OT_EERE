@@ -1,0 +1,35 @@
+Text	[ Imagen de la « Subdivisión de Investigación de Accidentes Aéreos » ( AAIB en inglés ) de los restos del Piper PA-46 Malibu que se encuentran en el fondo marino .	] Se inició una operación de búsqueda y rescate , pero se suspendió a las 02:00 GMT del 22 de enero debido al empeoramiento de las condiciones climáticas .	Aunque estaban fuera del área de responsabilidad del Reino Unido , la Guardia Costera de Su Majestad envió dos helicópteros para ayudar en la búsqueda de la aeronave .	También se envió un helicóptero francés para participar en la búsqueda , al igual que los barcos de salvamento de los centros de coordinación ( MRCC ) de Alderney y el sub-centro ( MRSC ) de Guernsey .	La búsqueda se reanudó a las 08:00 GMT .
+Event	T0	Imagen	EVENT	2
+Event	T1	Investigación	EVENT	32
+Event	T2	restos	EVENT	95
+Event	T3	inició	EVENT	169
+Event	T4	operación	EVENT	180
+Event	T5	búsqueda	EVENT	193
+Event	T6	rescate	EVENT	204
+Event	T7	suspendió	EVENT	222
+Event	T8	empeoramiento	EVENT	274
+Event	T9	envió	EVENT	421
+Event	T10	ayudar	EVENT	449
+Event	T11	búsqueda	EVENT	462
+Event	T12	participar	EVENT	533
+Event	T13	búsqueda	EVENT	550
+Event	T14	búsqueda	EVENT	693
+Event	T15	reanudó	EVENT	705
+Relation	T1	T3	NoRel	true	Investigación	inició
+Relation	T10	T14	NoRel	true	ayudar	búsqueda
+Relation	T10	T3	NoRel	true	ayudar	inició
+Relation	T10	T9	NoRel	true	ayudar	envió
+Relation	T11	T13	NoRel	true	búsqueda	búsqueda
+Relation	T12	T10	NoRel	true	participar	ayudar
+Relation	T12	T2	NoRel	true	participar	restos
+Relation	T13	T8	NoRel	true	búsqueda	empeoramiento
+Relation	T14	T0	NoRel	true	búsqueda	Imagen
+Relation	T14	T11	NoRel	true	búsqueda	búsqueda
+Relation	T15	T0	NoRel	true	reanudó	Imagen
+Relation	T15	T11	NoRel	true	reanudó	búsqueda
+Relation	T15	T14	NoRel	true	reanudó	búsqueda
+Relation	T2	T10	NoRel	true	restos	ayudar
+Relation	T2	T13	NoRel	true	restos	búsqueda
+Relation	T5	T15	NoRel	true	búsqueda	reanudó
+Relation	T5	T9	NoRel	true	búsqueda	envió
+Relation	T9	T2	NoRel	true	envió	restos

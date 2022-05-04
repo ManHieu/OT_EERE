@@ -1,0 +1,33 @@
+Text	Yer titredi ve dört büyük deprem oldu , patlama akşam 20: 48_'da başladı .	15 km uzaklıkta , 09: 35'te kişiler tahliye edilmeye başlandı .	Lava Crater altında başlayan 500 m uzunluğunda çatlak açıldı ve lav çeşmeler ve diğer lav akıntıları oradan fışkırdı .	Patlama sırasında ortaya çıkan kül bulutları fırtınaya neden oldu .	Volkanın gökyüzü ve yeri siyah oldu bu siyah rüzgâr tarafından kuzeye nakledildi .
+Event	T0	titredi	EVENT	4
+Event	T1	oldu	EVENT	33
+Event	T2	patlama	EVENT	40
+Event	T3	başladı	EVENT	65
+Event	T4	başlandı	EVENT	128
+Event	T5	başlayan	EVENT	159
+Event	T6	açıldı	EVENT	193
+Event	T7	fışkırdı	EVENT	247
+Event	T8	Patlama	EVENT	258
+Event	T10	nakledildi	EVENT	396
+Event	T11	deprem	EVENT	26
+Event	T12	oldu	EVENT	319
+Event	T9	rüzgâr	EVENT	371
+Event	T13	oldu	EVENT	357
+Relation	T6	T7	CauseEffect	true	açıldı	fışkırdı
+Relation	T7	T6	EffectCause	true	fışkırdı	açıldı
+Relation	T2	T13	CauseEffect	true	patlama	oldu
+Relation	T13	T2	EffectCause	true	oldu	patlama
+Relation	T9	T10	CauseEffect	true	rüzgâr	nakledildi
+Relation	T10	T9	EffectCause	true	nakledildi	rüzgâr
+Relation	T0	T7	NoRel	true	titredi	fışkırdı
+Relation	T1	T8	NoRel	true	oldu	Patlama
+Relation	T10	T3	NoRel	true	nakledildi	başladı
+Relation	T10	T8	NoRel	true	nakledildi	Patlama
+Relation	T12	T10	NoRel	true	oldu	nakledildi
+Relation	T13	T8	NoRel	true	oldu	Patlama
+Relation	T3	T4	NoRel	true	başladı	başlandı
+Relation	T4	T9	NoRel	true	başlandı	rüzgâr
+Relation	T5	T1	NoRel	true	başlayan	oldu
+Relation	T7	T5	NoRel	true	fışkırdı	başlayan
+Relation	T7	T8	NoRel	true	fışkırdı	Patlama
+Relation	T8	T3	NoRel	true	Patlama	başladı

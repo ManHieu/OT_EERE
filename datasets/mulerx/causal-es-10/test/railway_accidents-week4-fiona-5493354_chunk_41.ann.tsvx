@@ -1,0 +1,51 @@
+Text	- 1907_____-___25 DE MAYO : en las cercanías de Sabóia , en la Línea del Sur , un descarrilamiento provoca siete muertos y veintiún heridos .	- 1909_____-___25 DE SEPTIEMBRE : Se produce el choque de dos trenes de mercancías en la línea del Duero , resultando heridos dos ferroviarios .	- 17 DE NOVIEMBRE : El Sudexpreso descarrila entren las estaciones de Pinhel y Guarda , resultando heridos leves los dos miembros de la pareja de conducción de la locomotora que remolcaba el convoy .	- 1910 -___19 DE SEPTIEMBRE : En la estación de Senhora da Hora , próxima a Oporto , un tren de recreo que transportaba 400 viajeros que venían de celebrar una romería dscarrila a causa de un doble cambio .	Se producen al menos 70 heridos , la mayoría leves .
+Event	T0	muertos	EVENT	113
+Event	T1	heridos	EVENT	132
+Event	T2	produce	EVENT	179
+Event	T3	choque	EVENT	190
+Event	T4	heridos	EVENT	260
+Event	T5	remolcaba	EVENT	465
+Event	T6	recreo	EVENT	583
+Event	T7	transportaba	EVENT	594
+Event	T8	celebrar	EVENT	634
+Event	T9	dscarrila	EVENT	655
+Event	T10	cambio	EVENT	685
+Event	T11	producen	EVENT	697
+Event	T12	heridos	EVENT	718
+Event	T13	descarrilamiento	EVENT	82
+Relation	T9	T12	CauseEffect	true	dscarrila	heridos
+Relation	T12	T9	EffectCause	true	heridos	dscarrila
+Relation	T10	T9	CauseEffect	true	cambio	dscarrila
+Relation	T9	T10	EffectCause	true	dscarrila	cambio
+Relation	T13	T0	CauseEffect	true	descarrilamiento	muertos
+Relation	T0	T13	EffectCause	true	muertos	descarrilamiento
+Relation	T13	T1	CauseEffect	true	descarrilamiento	heridos
+Relation	T1	T13	EffectCause	true	heridos	descarrilamiento
+Relation	T3	T4	CauseEffect	true	choque	heridos
+Relation	T4	T3	EffectCause	true	heridos	choque
+Relation	T0	T3	NoRel	true	muertos	choque
+Relation	T0	T5	NoRel	true	muertos	remolcaba
+Relation	T0	T9	NoRel	true	muertos	dscarrila
+Relation	T1	T6	NoRel	true	heridos	recreo
+Relation	T10	T7	NoRel	true	cambio	transportaba
+Relation	T10	T8	NoRel	true	cambio	celebrar
+Relation	T11	T1	NoRel	true	producen	heridos
+Relation	T11	T3	NoRel	true	producen	choque
+Relation	T12	T0	NoRel	true	heridos	muertos
+Relation	T13	T10	NoRel	true	descarrilamiento	cambio
+Relation	T2	T13	NoRel	true	produce	descarrilamiento
+Relation	T2	T3	NoRel	true	produce	choque
+Relation	T2	T9	NoRel	true	produce	dscarrila
+Relation	T3	T12	NoRel	true	choque	heridos
+Relation	T3	T13	NoRel	true	choque	descarrilamiento
+Relation	T3	T6	NoRel	true	choque	recreo
+Relation	T3	T8	NoRel	true	choque	celebrar
+Relation	T4	T12	NoRel	true	heridos	heridos
+Relation	T4	T13	NoRel	true	heridos	descarrilamiento
+Relation	T4	T2	NoRel	true	heridos	produce
+Relation	T6	T0	NoRel	true	recreo	muertos
+Relation	T7	T0	NoRel	true	transportaba	muertos
+Relation	T7	T8	NoRel	true	transportaba	celebrar
+Relation	T8	T5	NoRel	true	celebrar	remolcaba
+Relation	T9	T2	NoRel	true	dscarrila	produce
+Relation	T9	T4	NoRel	true	dscarrila	heridos

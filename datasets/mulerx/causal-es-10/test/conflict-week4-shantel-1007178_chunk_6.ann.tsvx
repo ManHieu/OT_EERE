@@ -1,0 +1,45 @@
+Text	El aún congelado Megatron fue llevado a estas instalaciones y fue usado en los avances de la tecnología humana a través de la ingeniería inversa .	En el presente , el Decepticon conocido como Blackout ataca la base militar estadounidense en Qatar para encontrar la localización de Megatron y la Chispa Suprema .	Él trata de introducirse en los archivos de la base de la computadora , pero es detenido cuando el comandante de la base corta la línea de la computadora .	El Capitán William Lennox y su equipo logran escapar de la base y buscar ayuda .	De vuelta en Estados Unidos , el bisnieto del Capitán Witwicky , el adolescente Sam Witwicky , compra su primer auto , que resulta ser el Autobot explorador Bumblebee ( que se convierte en un Chevrolet Camaro Z28 de 1977 ) , tratando de conquistar a la chica de sus sueños , Mikaela Banes .
+Event	T0	llevado	EVENT	30
+Event	T1	usado	EVENT	66
+Event	T2	avances	EVENT	79
+Event	T3	ataca	EVENT	201
+Event	T4	encontrar	EVENT	252
+Event	T5	trata	EVENT	315
+Event	T6	introducirse	EVENT	324
+Event	T7	detenido	EVENT	392
+Event	T8	corta	EVENT	433
+Event	T9	escapar	EVENT	513
+Event	T10	ayuda	EVENT	541
+Event	T11	vuelta	EVENT	552
+Event	T12	compra	EVENT	644
+Event	T13	convierte	EVENT	725
+Event	T14	tratando	EVENT	774
+Event	T15	conquistar	EVENT	786
+Relation	T0	T15	NoRel	true	llevado	conquistar
+Relation	T1	T10	NoRel	true	usado	ayuda
+Relation	T1	T3	NoRel	true	usado	ataca
+Relation	T10	T13	NoRel	true	ayuda	convierte
+Relation	T10	T14	NoRel	true	ayuda	tratando
+Relation	T11	T1	NoRel	true	vuelta	usado
+Relation	T12	T0	NoRel	true	compra	llevado
+Relation	T13	T3	NoRel	true	convierte	ataca
+Relation	T14	T1	NoRel	true	tratando	usado
+Relation	T14	T9	NoRel	true	tratando	escapar
+Relation	T15	T9	NoRel	true	conquistar	escapar
+Relation	T2	T14	NoRel	true	avances	tratando
+Relation	T2	T8	NoRel	true	avances	corta
+Relation	T3	T5	NoRel	true	ataca	trata
+Relation	T3	T7	NoRel	true	ataca	detenido
+Relation	T4	T11	NoRel	true	encontrar	vuelta
+Relation	T4	T12	NoRel	true	encontrar	compra
+Relation	T5	T13	NoRel	true	trata	convierte
+Relation	T5	T3	NoRel	true	trata	ataca
+Relation	T7	T3	NoRel	true	detenido	ataca
+Relation	T7	T4	NoRel	true	detenido	encontrar
+Relation	T7	T6	NoRel	true	detenido	introducirse
+Relation	T8	T3	NoRel	true	corta	ataca
+Relation	T8	T6	NoRel	true	corta	introducirse
+Relation	T9	T14	NoRel	true	escapar	tratando
+Relation	T9	T15	NoRel	true	escapar	conquistar
+Relation	T9	T7	NoRel	true	escapar	detenido
+Relation	T9	T8	NoRel	true	escapar	corta

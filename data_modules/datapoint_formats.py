@@ -350,6 +350,87 @@ def hieve_datapoint_v3(my_dict, doc_info=True):
     
     return data_points
 
+
+@register_datapoint
+def mulerx_datapoint(my_dict, doc_info=True):
+    """
+    Format data for Mulerx dataset which choose the most similar context sentences 
+    (two host sentences is a dataopint that mean it can have more than one event pair labeled in a datapoint)
+    """
+    sentence_pairs = combinations(range(len(my_dict['sentences'])), r=2)
+    sentence_pairs = list(sentence_pairs) + [(i, i) for i in range(len(my_dict['sentences']))]
+    sentence_pairs = set(sentence_pairs)
+
+    simmilar_scores = {}
+    data_points = []
+    for s1, s2 in sentence_pairs:
+        # print(f"scores: {scores}")
+        top_3_relevances = [(sid, 1) for sid in range(len(my_dict['sentences']))]
+        top_3_relevances = list(set(top_3_relevances))
+        sents_tok_span = {}
+        tokens = []
+        host_sentence_mask = []
+        heads = []
+        start_tok_id = 0
+        for i, (sid, _) in enumerate(sorted(top_3_relevances, key=lambda x: x[0])):
+            sent = my_dict['sentences'][sid]
+
+            if sid == s1 or sid == s2:
+                host_sentence_mask = host_sentence_mask + [1] * len(sent['tokens'])
+            else:
+                host_sentence_mask = host_sentence_mask + [0] * len(sent['tokens'])
+
+            end_tok_id = start_tok_id + len(sent['tokens'])
+            sents_tok_span[sid] = (i, start_tok_id, end_tok_id, len(sent['tokens']))
+            
+            tokens.extend(sent['tokens'])
+            
+            for head in sent['heads']:
+                if head != -1:
+                    heads.append(head + start_tok_id)
+                else:
+                    heads.append(head)
+            assert tokens[start_tok_id: end_tok_id] == sent['tokens'], f"{tokens[start_tok_id: end_tok_id]} - {sent['tokens']} - {(start_tok_id, end_tok_id)}"
+            start_tok_id = end_tok_id
+
+        triggers = []
+        labels = []
+        for (eid1, eid2), rel in my_dict['relation_dict'].items():
+            e1, e2 = my_dict['event_dict'][eid1], my_dict['event_dict'][eid2]
+            _s1, _s2 = e1['sent_id'], e2['sent_id']
+            if (_s1 == s1 and _s2 == s2) or (_s1 == s2 and _s2 == s1):
+                e1_poss = get_new_poss([e1['token_id']], sents_tok_span[_s1][0], sents_tok_span)
+                e2_poss = get_new_poss([e2['token_id']], sents_tok_span[_s2][0], sents_tok_span)
+                if e1['mention'] in tokens[e1_poss[0]] and e2['mention'] in tokens[e2_poss[0]]:
+                    e1_point = {'position': e1_poss, 'mention': e1['mention'], 'sid': _s1}
+                    e2_point = {'position': e2_poss, 'mention': e2['mention'], 'sid': _s2}
+                    if e1_point not in triggers:
+                        triggers.append(e1_point)
+                    if e2_point not in triggers:
+                        triggers.append(e2_point)
+                    labels.append((triggers.index(e1_point), triggers.index(e2_point), rel))
+                else:
+                    print(f"{tokens} - {sents_tok_span}")
+                    print(f"{e1_poss} - {tokens[e1_poss]} - {e1['mention']}")
+                    print(f"{e2_poss} - {tokens[e2_poss]} - {e2['mention']}")
+                    continue
+                
+        if len(labels) > 0:
+            data_point = {
+                        'tokens': tokens,
+                        'host_sent': host_sentence_mask,
+                        'triggers': triggers,
+                        'heads': heads,
+                        'labels': labels
+                    }
+            data_points.append(data_point)
+        
+    # num_labels = sum([len(datapoint['labels']) for datapoint in data_points])
+    # assert len(my_dict['relation_dict'].items()) == num_labels, print(f"{len(my_dict['relation_dict'].items())} - {num_labels}")
+    
+    return data_points
+
+
 @register_datapoint
 def ESL_datapoint(my_dict, intra=True, inter=False):
     """

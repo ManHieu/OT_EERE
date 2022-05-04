@@ -1,0 +1,38 @@
+Text	Galipler oyunlardan 13. Mıntıka'ya kaçırılırlar .	12. Mıntıka'nın bombalanması üzerine ailesiyle beraber 13. Mıntıka'da yaşamaya başlar .	Başkent Capitol'e yapılan isyan hareketlerine katılır ve Capitol'de , savaşa sağlık görevlisi olarak katılan kız kardeşini kaybeder .	Daha sonra isyan hareketlerini sonlanınca 12. Mıntıka'ya geri dönerek Peeta'yla evlenir ve biri erkek biri kız iki çocukları olur .	23 Mart 2012'de vizyona giren _ Açlık Oyunları _ adlı filmde Katniss karakterini Jennifer Lawrence canlandırdı .
+Event	T0	kaçırılırlar	EVENT	35
+Event	T1	bombalanması	EVENT	66
+Event	T2	katılır	EVENT	184
+Event	T3	kaybeder	EVENT	261
+Event	T4	sonlanınca	EVENT	303
+Event	T5	giren	EVENT	428
+Event	T6	Oyunları	EVENT	442
+Event	T7	canlandırdı	EVENT	503
+Event	T8	başlar	EVENT	129
+Event	T9	savaşa	EVENT	208
+Event	T10	katılan	EVENT	239
+Event	T11	dönerek	EVENT	334
+Event	T12	evlenir	EVENT	352
+Relation	T1	T8	CauseEffect	true	bombalanması	başlar
+Relation	T8	T1	EffectCause	true	başlar	bombalanması
+Relation	T9	T10	CauseEffect	true	savaşa	katılan
+Relation	T10	T9	EffectCause	true	katılan	savaşa
+Relation	T9	T3	CauseEffect	true	savaşa	kaybeder
+Relation	T3	T9	EffectCause	true	kaybeder	savaşa
+Relation	T4	T11	CauseEffect	true	sonlanınca	dönerek
+Relation	T11	T4	EffectCause	true	dönerek	sonlanınca
+Relation	T0	T10	NoRel	true	kaçırılırlar	katılan
+Relation	T0	T6	NoRel	true	kaçırılırlar	Oyunları
+Relation	T1	T0	NoRel	true	bombalanması	kaçırılırlar
+Relation	T1	T11	NoRel	true	bombalanması	dönerek
+Relation	T1	T2	NoRel	true	bombalanması	katılır
+Relation	T2	T0	NoRel	true	katılır	kaçırılırlar
+Relation	T2	T10	NoRel	true	katılır	katılan
+Relation	T3	T12	NoRel	true	kaybeder	evlenir
+Relation	T3	T5	NoRel	true	kaybeder	giren
+Relation	T4	T0	NoRel	true	sonlanınca	kaçırılırlar
+Relation	T4	T12	NoRel	true	sonlanınca	evlenir
+Relation	T4	T6	NoRel	true	sonlanınca	Oyunları
+Relation	T4	T7	NoRel	true	sonlanınca	canlandırdı
+Relation	T5	T10	NoRel	true	giren	katılan
+Relation	T5	T9	NoRel	true	giren	savaşa
+Relation	T7	T8	NoRel	true	canlandırdı	başlar

@@ -1,0 +1,85 @@
+Text	_ Ypiranga _ formåede at lægge til land i en anden havn og lodse våbnende , hvilket gjorde Wilson meget vred .	ABC-staterne blandede sig og de amerikanske tropper forlod Mexico , men hændelsen havde allerede tilføjet yderligere spændinger til det mexicansk-amerikansk forhold .	I 1916 skete der en gengældelsesaktion for plyndringen af Pancho Villa i Columbus , New Mexico , og 15 amerikanske statsborgeres død , der blev dræbt af en gruppe _ Villistas _ som angreb et tog på Mexico North Western Railway nær Santa Isabel , Chihuahua ,	Præsident Wilson sendte tropper under ledelse af brigadegeneral John J. Pershing til Mexico for at fange Villa .	I perioden 1876-1911 var forholdet mellem den romerskkatolske kirke og den mexicanske regering stabilt , og de anti-gejstlige love i Mexicos Grundlag af 1857 eksisterede stadig , men blev ikke håndhævet , så konflikterne ophørte .
+Event	T0	lodse	EVENT	59
+Event	T1	gjorde	EVENT	84
+Event	T2	blandede	EVENT	124
+Event	T3	forlod	EVENT	163
+Event	T4	hændelsen	EVENT	183
+Event	T5	tilføjet	EVENT	208
+Event	T6	spændinger	EVENT	228
+Event	T7	skete	EVENT	285
+Event	T8	gengældelsesaktion	EVENT	298
+Event	T9	plyndringen	EVENT	321
+Event	T10	død	EVENT	407
+Event	T11	dræbt	EVENT	422
+Event	T12	angreb	EVENT	459
+Event	T13	tog	EVENT	469
+Event	T14	sendte	EVENT	553
+Event	T15	fange	EVENT	635
+Event	T16	eksisterede	EVENT	807
+Event	T17	håndhævet	EVENT	842
+Event	T18	ophørte	EVENT	870
+Event	T19	formåede	EVENT	13
+Event	T20	lægge	EVENT	25
+Event	T21	forhold	EVENT	268
+Event	T22	forholdet	EVENT	674
+Relation	T4	T6	CauseEffect	true	hændelsen	spændinger
+Relation	T6	T4	EffectCause	true	spændinger	hændelsen
+Relation	T2	T3	CauseEffect	true	blandede	forlod
+Relation	T3	T2	EffectCause	true	forlod	blandede
+Relation	T19	T1	CauseEffect	true	formåede	gjorde
+Relation	T1	T19	EffectCause	true	gjorde	formåede
+Relation	T9	T8	CauseEffect	true	plyndringen	gengældelsesaktion
+Relation	T8	T9	EffectCause	true	gengældelsesaktion	plyndringen
+Relation	T8	T10	CauseEffect	true	gengældelsesaktion	død
+Relation	T10	T8	EffectCause	true	død	gengældelsesaktion
+Relation	T12	T11	CauseEffect	true	angreb	dræbt
+Relation	T11	T12	EffectCause	true	dræbt	angreb
+Relation	T14	T15	CauseEffect	true	sendte	fange
+Relation	T15	T14	EffectCause	true	fange	sendte
+Relation	T17	T18	CauseEffect	true	håndhævet	ophørte
+Relation	T18	T17	EffectCause	true	ophørte	håndhævet
+Relation	T0	T10	NoRel	true	lodse	død
+Relation	T0	T19	NoRel	true	lodse	formåede
+Relation	T0	T20	NoRel	true	lodse	lægge
+Relation	T10	T12	NoRel	true	død	angreb
+Relation	T10	T5	NoRel	true	død	tilføjet
+Relation	T11	T16	NoRel	true	dræbt	eksisterede
+Relation	T12	T13	NoRel	true	angreb	tog
+Relation	T12	T22	NoRel	true	angreb	forholdet
+Relation	T13	T15	NoRel	true	tog	fange
+Relation	T14	T19	NoRel	true	sendte	formåede
+Relation	T15	T1	NoRel	true	fange	gjorde
+Relation	T15	T17	NoRel	true	fange	håndhævet
+Relation	T15	T19	NoRel	true	fange	formåede
+Relation	T15	T2	NoRel	true	fange	blandede
+Relation	T16	T13	NoRel	true	eksisterede	tog
+Relation	T16	T7	NoRel	true	eksisterede	skete
+Relation	T17	T16	NoRel	true	håndhævet	eksisterede
+Relation	T17	T20	NoRel	true	håndhævet	lægge
+Relation	T17	T6	NoRel	true	håndhævet	spændinger
+Relation	T18	T10	NoRel	true	ophørte	død
+Relation	T18	T13	NoRel	true	ophørte	tog
+Relation	T18	T15	NoRel	true	ophørte	fange
+Relation	T19	T14	NoRel	true	formåede	sendte
+Relation	T19	T15	NoRel	true	formåede	fange
+Relation	T19	T8	NoRel	true	formåede	gengældelsesaktion
+Relation	T19	T9	NoRel	true	formåede	plyndringen
+Relation	T2	T1	NoRel	true	blandede	gjorde
+Relation	T2	T17	NoRel	true	blandede	håndhævet
+Relation	T20	T12	NoRel	true	lægge	angreb
+Relation	T20	T4	NoRel	true	lægge	hændelsen
+Relation	T20	T6	NoRel	true	lægge	spændinger
+Relation	T20	T9	NoRel	true	lægge	plyndringen
+Relation	T22	T16	NoRel	true	forholdet	eksisterede
+Relation	T3	T6	NoRel	true	forlod	spændinger
+Relation	T3	T8	NoRel	true	forlod	gengældelsesaktion
+Relation	T4	T14	NoRel	true	hændelsen	sendte
+Relation	T5	T4	NoRel	true	tilføjet	hændelsen
+Relation	T6	T17	NoRel	true	spændinger	håndhævet
+Relation	T6	T22	NoRel	true	spændinger	forholdet
+Relation	T6	T7	NoRel	true	spændinger	skete
+Relation	T7	T16	NoRel	true	skete	eksisterede
+Relation	T8	T6	NoRel	true	gengældelsesaktion	spændinger
+Relation	T9	T10	NoRel	true	plyndringen	død
+Relation	T9	T17	NoRel	true	plyndringen	håndhævet
+Relation	T9	T3	NoRel	true	plyndringen	forlod

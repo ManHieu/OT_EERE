@@ -1,0 +1,78 @@
+Text	Los informes iniciales sugirieron que los controladores aéreos del aeropuerto Internacional Benazir Bhutto en Islamabad - lugar de destino - perdieron el contacto con el avión a las 09:43 hora local ( 03:43 UTC ) , minutos antes de la hora programada para su aterrizaje .	Media hora antes los controladores se habían visto obligados a desviar otro avión que intentaba aterrizar debido a las malas condiciones meteorológicas .	Mientras la BBC informaba que los controladores declararon que las conversaciones con el avión no señalaban que nada estuviera mal , el New York Times aseguró todo lo contrario , afirmando que los pilotos fueron advertidos de que estaban lejos de la pista , a pesar de que el piloto afirmara que podía verla .	Según el periódico neoyorquino , el controlador pidió al vuelo 202 que virara hacia la izquierda , ya que tenía las colinas de Margalla delante , lo cual el piloto se encargó de confirmar .	Un funcionario de la aerolínea pakistaní dijo que los pilotos no enviaron ninguna señal de emergencia antes del accidente .
+Event	T0	informes	EVENT	4
+Event	T1	sugirieron	EVENT	23
+Event	T2	perdieron	EVENT	141
+Event	T3	contacto	EVENT	154
+Event	T4	programada	EVENT	240
+Event	T5	aterrizaje	EVENT	259
+Event	T7	desviar	EVENT	335
+Event	T8	declararon	EVENT	474
+Event	T9	conversaciones	EVENT	493
+Event	T10	aseguró	EVENT	577
+Event	T11	afirmando	EVENT	605
+Event	T12	advertidos	EVENT	638
+Event	T13	afirmara	EVENT	709
+Event	T14	pidió	EVENT	784
+Event	T15	virara	EVENT	807
+Event	T16	encargó	EVENT	903
+Event	T17	confirmar	EVENT	914
+Event	T18	dijo	EVENT	967
+Event	T21	accidente	EVENT	1038
+Event	T19	condiciones	EVENT	397
+Event	T6	informaba	EVENT	442
+Relation	T19	T7	CauseEffect	true	condiciones	desviar
+Relation	T7	T19	EffectCause	true	desviar	condiciones
+Relation	T0	T1	NoRel	true	informes	sugirieron
+Relation	T0	T16	NoRel	true	informes	encargó
+Relation	T0	T21	NoRel	true	informes	accidente
+Relation	T1	T14	NoRel	true	sugirieron	pidió
+Relation	T10	T12	NoRel	true	aseguró	advertidos
+Relation	T10	T19	NoRel	true	aseguró	condiciones
+Relation	T10	T3	NoRel	true	aseguró	contacto
+Relation	T10	T7	NoRel	true	aseguró	desviar
+Relation	T10	T9	NoRel	true	aseguró	conversaciones
+Relation	T11	T17	NoRel	true	afirmando	confirmar
+Relation	T11	T3	NoRel	true	afirmando	contacto
+Relation	T12	T0	NoRel	true	advertidos	informes
+Relation	T12	T3	NoRel	true	advertidos	contacto
+Relation	T12	T7	NoRel	true	advertidos	desviar
+Relation	T13	T5	NoRel	true	afirmara	aterrizaje
+Relation	T14	T13	NoRel	true	pidió	afirmara
+Relation	T14	T19	NoRel	true	pidió	condiciones
+Relation	T15	T1	NoRel	true	virara	sugirieron
+Relation	T17	T11	NoRel	true	confirmar	afirmando
+Relation	T17	T2	NoRel	true	confirmar	perdieron
+Relation	T17	T9	NoRel	true	confirmar	conversaciones
+Relation	T18	T14	NoRel	true	dijo	pidió
+Relation	T18	T4	NoRel	true	dijo	programada
+Relation	T19	T11	NoRel	true	condiciones	afirmando
+Relation	T19	T14	NoRel	true	condiciones	pidió
+Relation	T19	T18	NoRel	true	condiciones	dijo
+Relation	T19	T3	NoRel	true	condiciones	contacto
+Relation	T19	T5	NoRel	true	condiciones	aterrizaje
+Relation	T2	T12	NoRel	true	perdieron	advertidos
+Relation	T2	T15	NoRel	true	perdieron	virara
+Relation	T3	T5	NoRel	true	contacto	aterrizaje
+Relation	T4	T12	NoRel	true	programada	advertidos
+Relation	T4	T15	NoRel	true	programada	virara
+Relation	T4	T2	NoRel	true	programada	perdieron
+Relation	T4	T7	NoRel	true	programada	desviar
+Relation	T5	T0	NoRel	true	aterrizaje	informes
+Relation	T5	T1	NoRel	true	aterrizaje	sugirieron
+Relation	T5	T11	NoRel	true	aterrizaje	afirmando
+Relation	T5	T14	NoRel	true	aterrizaje	pidió
+Relation	T6	T11	NoRel	true	informaba	afirmando
+Relation	T6	T12	NoRel	true	informaba	advertidos
+Relation	T6	T2	NoRel	true	informaba	perdieron
+Relation	T6	T7	NoRel	true	informaba	desviar
+Relation	T7	T12	NoRel	true	desviar	advertidos
+Relation	T7	T21	NoRel	true	desviar	accidente
+Relation	T7	T5	NoRel	true	desviar	aterrizaje
+Relation	T7	T8	NoRel	true	desviar	declararon
+Relation	T8	T13	NoRel	true	declararon	afirmara
+Relation	T8	T17	NoRel	true	declararon	confirmar
+Relation	T8	T2	NoRel	true	declararon	perdieron
+Relation	T9	T11	NoRel	true	conversaciones	afirmando
+Relation	T9	T19	NoRel	true	conversaciones	condiciones
+Relation	T9	T2	NoRel	true	conversaciones	perdieron
+Relation	T9	T6	NoRel	true	conversaciones	informaba

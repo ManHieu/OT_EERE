@@ -1,0 +1,45 @@
+Text	La tripulación de vuelo reconoció este mensaje .	Incapaz de distinguir la pista no iluminada a través de la lluvia , el capitán pidió una vuelta ( aproximación frustrada ) a una altitud de aproximadamente 200 pies ( aproximadamente 120 pies sobre el suelo ) .	Esta llamada se realizó a unos 100 pies por debajo del DA ( Altitud de decisión ) .	El DC-9 se estrelló contra la franja de césped entre la pista y la calle de rodaje .	A 60 metros del primer punto de impacto , el empenaje golpeó una alcantarilla de drenaje de hormigón , el avión se desintegró y estalló en llamas .
+Event	T0	reconoció	EVENT	24
+Event	T1	mensaje	EVENT	39
+Event	T2	distinguir	EVENT	60
+Event	T3	iluminada	EVENT	83
+Event	T4	lluvia	EVENT	108
+Event	T5	pidió	EVENT	128
+Event	T6	vuelta	EVENT	138
+Event	T7	frustrada	EVENT	160
+Event	T8	llamada	EVENT	265
+Event	T9	realizó	EVENT	276
+Event	T10	decisión	EVENT	331
+Event	T11	estrelló	EVENT	355
+Event	T12	impacto	EVENT	461
+Event	T13	golpeó	EVENT	483
+Event	T14	drenaje	EVENT	510
+Event	T15	desintegró	EVENT	544
+Event	T17	estalló	EVENT	557
+Relation	T12	T15	CauseEffect	true	impacto	desintegró
+Relation	T15	T12	EffectCause	true	desintegró	impacto
+Relation	T12	T17	CauseEffect	true	impacto	estalló
+Relation	T17	T12	EffectCause	true	estalló	impacto
+Relation	T0	T1	NoRel	true	reconoció	mensaje
+Relation	T1	T8	NoRel	true	mensaje	llamada
+Relation	T10	T11	NoRel	true	decisión	estrelló
+Relation	T10	T12	NoRel	true	decisión	impacto
+Relation	T10	T13	NoRel	true	decisión	golpeó
+Relation	T12	T0	NoRel	true	impacto	reconoció
+Relation	T12	T2	NoRel	true	impacto	distinguir
+Relation	T12	T4	NoRel	true	impacto	lluvia
+Relation	T13	T1	NoRel	true	golpeó	mensaje
+Relation	T14	T3	NoRel	true	drenaje	iluminada
+Relation	T14	T4	NoRel	true	drenaje	lluvia
+Relation	T14	T6	NoRel	true	drenaje	vuelta
+Relation	T15	T5	NoRel	true	desintegró	pidió
+Relation	T17	T4	NoRel	true	estalló	lluvia
+Relation	T3	T9	NoRel	true	iluminada	realizó
+Relation	T4	T17	NoRel	true	lluvia	estalló
+Relation	T4	T8	NoRel	true	lluvia	llamada
+Relation	T4	T9	NoRel	true	lluvia	realizó
+Relation	T5	T8	NoRel	true	pidió	llamada
+Relation	T6	T2	NoRel	true	vuelta	distinguir
+Relation	T6	T9	NoRel	true	vuelta	realizó
+Relation	T7	T12	NoRel	true	frustrada	impacto
+Relation	T8	T11	NoRel	true	llamada	estrelló

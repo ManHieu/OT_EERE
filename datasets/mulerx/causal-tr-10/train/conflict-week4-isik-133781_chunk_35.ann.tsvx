@@ -1,0 +1,66 @@
+Text	26 Eylül 1618’de Erdebil’de imzalanıp 29 Eylül 1619’da İstanbul’da Sultan Genç Osman tarafından da kabul edilen bu antlaşmaya göre ; Kanuni devrinde Amasya Antlaşmasıyla tayin edilen sınırlar esas kabul edilecek , Kars ve Ahıska Osmanlılarda kalacak , Safeviler , Osmanlı hakimiyetinde bulunan Dağıstan’a taarruz etmeyecek ve esirler iade edilecekti .	Ayrıca İran her yıl 100 yük ipek , kumaş v. s . kıymetli eşyayı haraç olarak İstanbul’a gönderecek ve Sünni büyüklerine sövmeyi terk edeceklerdi .	Sultan IV. Murad’ın tahta geçişinin hemen , evvelden beri Anadolu’da sürüp gitmekte olan isyanlardan biri de Bağdad’da baş göstermiş , burada bulunan on iki bin kişilik yerli kulu askerinin başında bulunup zengin ve nüfuzlu bir kişi olan Bekir Subaşı , şehri ele geçirmişti .	Bağdad valiliğine tayin isteği İstanbul tarafından kabul edilmeyip , başka bir vali gönderilince de şehre almamıştı .	Bunun üzerine bölgeye gönderilen Hafız Ahmed Paşa şehri kuşatınca , valilikten ümidini kesen Bekir Subaşı , mukavemet edemeyeceğini anlayarak , Şah Abbas’a haber gönderip Safevi tabiiyyetine geçmek istediğini bildirdi .
+Event	T0	kabul	EVENT	99
+Event	T1	tayin	EVENT	170
+Event	T2	edilecek	EVENT	203
+Event	T3	edilecekti	EVENT	339
+Event	T4	gönderecek	EVENT	440
+Event	T5	geçişinin	EVENT	525
+Event	T6	isyanlardan	EVENT	588
+Event	T7	göstermiş	EVENT	622
+Event	T8	geçirmişti	EVENT	762
+Event	T10	kuşatınca	EVENT	949
+Event	T11	geçmek	EVENT	1084
+Event	T12	bildirdi	EVENT	1102
+Event	T13	imzalanıp	EVENT	28
+Event	T14	antlaşmaya	EVENT	115
+Event	T15	Amasya Antlaşmasıyla	EVENT	149
+Event	T9	gönderilince	EVENT	859
+Event	T16	gönderilen	EVENT	915
+Relation	T15	T1	CauseEffect	true	Amasya Antlaşmasıyla	tayin
+Relation	T1	T15	EffectCause	true	tayin	Amasya Antlaşmasıyla
+Relation	T0	T14	CauseEffect	true	kabul	antlaşmaya
+Relation	T14	T0	EffectCause	true	antlaşmaya	kabul
+Relation	T14	T3	CauseEffect	true	antlaşmaya	edilecekti
+Relation	T3	T14	EffectCause	true	edilecekti	antlaşmaya
+Relation	T14	T4	CauseEffect	true	antlaşmaya	gönderecek
+Relation	T4	T14	EffectCause	true	gönderecek	antlaşmaya
+Relation	T5	T7	CauseEffect	true	geçişinin	göstermiş
+Relation	T7	T5	EffectCause	true	göstermiş	geçişinin
+Relation	T7	T8	CauseEffect	true	göstermiş	geçirmişti
+Relation	T8	T7	EffectCause	true	geçirmişti	göstermiş
+Relation	T8	T16	CauseEffect	true	geçirmişti	gönderilen
+Relation	T16	T8	EffectCause	true	gönderilen	geçirmişti
+Relation	T8	T10	CauseEffect	true	geçirmişti	kuşatınca
+Relation	T10	T8	EffectCause	true	kuşatınca	geçirmişti
+Relation	T0	T12	NoRel	true	kabul	bildirdi
+Relation	T1	T10	NoRel	true	tayin	kuşatınca
+Relation	T1	T12	NoRel	true	tayin	bildirdi
+Relation	T1	T7	NoRel	true	tayin	göstermiş
+Relation	T10	T11	NoRel	true	kuşatınca	geçmek
+Relation	T10	T4	NoRel	true	kuşatınca	gönderecek
+Relation	T10	T9	NoRel	true	kuşatınca	gönderilince
+Relation	T11	T10	NoRel	true	geçmek	kuşatınca
+Relation	T11	T14	NoRel	true	geçmek	antlaşmaya
+Relation	T11	T9	NoRel	true	geçmek	gönderilince
+Relation	T13	T3	NoRel	true	imzalanıp	edilecekti
+Relation	T13	T4	NoRel	true	imzalanıp	gönderecek
+Relation	T14	T13	NoRel	true	antlaşmaya	imzalanıp
+Relation	T14	T8	NoRel	true	antlaşmaya	geçirmişti
+Relation	T15	T4	NoRel	true	Amasya Antlaşmasıyla	gönderecek
+Relation	T15	T7	NoRel	true	Amasya Antlaşmasıyla	göstermiş
+Relation	T15	T8	NoRel	true	Amasya Antlaşmasıyla	geçirmişti
+Relation	T16	T14	NoRel	true	gönderilen	antlaşmaya
+Relation	T2	T1	NoRel	true	edilecek	tayin
+Relation	T2	T10	NoRel	true	edilecek	kuşatınca
+Relation	T2	T6	NoRel	true	edilecek	isyanlardan
+Relation	T3	T8	NoRel	true	edilecekti	geçirmişti
+Relation	T4	T7	NoRel	true	gönderecek	göstermiş
+Relation	T4	T8	NoRel	true	gönderecek	geçirmişti
+Relation	T5	T11	NoRel	true	geçişinin	geçmek
+Relation	T6	T2	NoRel	true	isyanlardan	edilecek
+Relation	T6	T5	NoRel	true	isyanlardan	geçişinin
+Relation	T7	T6	NoRel	true	göstermiş	isyanlardan
+Relation	T8	T0	NoRel	true	geçirmişti	kabul
+Relation	T9	T0	NoRel	true	gönderilince	kabul
+Relation	T9	T3	NoRel	true	gönderilince	edilecekti
+Relation	T9	T6	NoRel	true	gönderilince	isyanlardan

@@ -1,0 +1,83 @@
+Text	Denne beslutning mødte kritik , da Sundhedsstyrelsen ikke havde anbefalet det , og beslutningen var derfor udelukkende politisk .	Den danske professor Lone Simonsen fra Roskilde Universitet udtalte , at tiltaget ikke ville bidrage _ til at begrænse spredningen af coronavirus på nuværende tidspunkt , hvor epidemien allerede har ramt Danmark _ .	Omkring 100.000 danskere forventes desuden at komme fra udlandet til Danmark .	Den 15. marts blev det udmeldt , at Tyskland ville lukke grænsen til Danmark fra den 16. marts kl. 6:00 .	Den 19. marts blev en bekendtgørelse om nødundervisning vedtaget , der angav at skoleaktiviteterne skulle gennemføres online med eleverne hjemme .
+Event	T0	kritik	EVENT	23
+Event	T1	anbefalet	EVENT	64
+Event	T2	udtalte	EVENT	190
+Event	T3	tiltaget	EVENT	203
+Event	T4	spredningen	EVENT	249
+Event	T5	epidemien	EVENT	306
+Event	T6	ramt	EVENT	329
+Event	T7	komme	EVENT	392
+Event	T8	udmeldt	EVENT	448
+Event	T9	lukke	EVENT	476
+Event	T10	bekendtgørelse	EVENT	553
+Event	T11	vedtaget	EVENT	587
+Event	T12	angav	EVENT	602
+Event	T13	beslutning	EVENT	6
+Event	T14	beslutningen	EVENT	83
+Event	T15	coronavirus	EVENT	264
+Event	T16	forventes	EVENT	371
+Event	T17	nødundervisning	EVENT	571
+Event	T18	skoleaktiviteterne	EVENT	611
+Event	T19	gennemføres	EVENT	637
+Event	T20	hjemme	EVENT	669
+Event	T21	politisk	EVENT	119
+Event	T22	online	EVENT	649
+Relation	T21	T0	CauseEffect	true	politisk	kritik
+Relation	T0	T21	EffectCause	true	kritik	politisk
+Relation	T11	T22	CauseEffect	true	vedtaget	online
+Relation	T22	T11	EffectCause	true	online	vedtaget
+Relation	T0	T5	NoRel	true	kritik	epidemien
+Relation	T11	T17	NoRel	true	vedtaget	nødundervisning
+Relation	T11	T19	NoRel	true	vedtaget	gennemføres
+Relation	T11	T3	NoRel	true	vedtaget	tiltaget
+Relation	T11	T4	NoRel	true	vedtaget	spredningen
+Relation	T11	T6	NoRel	true	vedtaget	ramt
+Relation	T12	T16	NoRel	true	angav	forventes
+Relation	T12	T3	NoRel	true	angav	tiltaget
+Relation	T13	T11	NoRel	true	beslutning	vedtaget
+Relation	T13	T21	NoRel	true	beslutning	politisk
+Relation	T14	T10	NoRel	true	beslutningen	bekendtgørelse
+Relation	T14	T21	NoRel	true	beslutningen	politisk
+Relation	T14	T9	NoRel	true	beslutningen	lukke
+Relation	T15	T0	NoRel	true	coronavirus	kritik
+Relation	T15	T10	NoRel	true	coronavirus	bekendtgørelse
+Relation	T15	T7	NoRel	true	coronavirus	komme
+Relation	T16	T11	NoRel	true	forventes	vedtaget
+Relation	T16	T7	NoRel	true	forventes	komme
+Relation	T17	T22	NoRel	true	nødundervisning	online
+Relation	T17	T5	NoRel	true	nødundervisning	epidemien
+Relation	T18	T0	NoRel	true	skoleaktiviteterne	kritik
+Relation	T18	T14	NoRel	true	skoleaktiviteterne	beslutningen
+Relation	T18	T19	NoRel	true	skoleaktiviteterne	gennemføres
+Relation	T18	T22	NoRel	true	skoleaktiviteterne	online
+Relation	T18	T6	NoRel	true	skoleaktiviteterne	ramt
+Relation	T19	T0	NoRel	true	gennemføres	kritik
+Relation	T19	T12	NoRel	true	gennemføres	angav
+Relation	T19	T7	NoRel	true	gennemføres	komme
+Relation	T2	T1	NoRel	true	udtalte	anbefalet
+Relation	T2	T18	NoRel	true	udtalte	skoleaktiviteterne
+Relation	T2	T21	NoRel	true	udtalte	politisk
+Relation	T2	T4	NoRel	true	udtalte	spredningen
+Relation	T21	T14	NoRel	true	politisk	beslutningen
+Relation	T21	T3	NoRel	true	politisk	tiltaget
+Relation	T22	T10	NoRel	true	online	bekendtgørelse
+Relation	T22	T2	NoRel	true	online	udtalte
+Relation	T22	T6	NoRel	true	online	ramt
+Relation	T22	T7	NoRel	true	online	komme
+Relation	T3	T11	NoRel	true	tiltaget	vedtaget
+Relation	T3	T15	NoRel	true	tiltaget	coronavirus
+Relation	T3	T18	NoRel	true	tiltaget	skoleaktiviteterne
+Relation	T3	T21	NoRel	true	tiltaget	politisk
+Relation	T4	T7	NoRel	true	spredningen	komme
+Relation	T5	T19	NoRel	true	epidemien	gennemføres
+Relation	T5	T8	NoRel	true	epidemien	udmeldt
+Relation	T6	T0	NoRel	true	ramt	kritik
+Relation	T7	T1	NoRel	true	komme	anbefalet
+Relation	T7	T17	NoRel	true	komme	nødundervisning
+Relation	T7	T5	NoRel	true	komme	epidemien
+Relation	T7	T8	NoRel	true	komme	udmeldt
+Relation	T8	T1	NoRel	true	udmeldt	anbefalet
+Relation	T8	T6	NoRel	true	udmeldt	ramt
+Relation	T9	T12	NoRel	true	lukke	angav
+Relation	T9	T19	NoRel	true	lukke	gennemføres
+Relation	T9	T21	NoRel	true	lukke	politisk

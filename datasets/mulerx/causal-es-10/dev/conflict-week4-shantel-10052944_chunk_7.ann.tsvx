@@ -1,0 +1,37 @@
+Text	Los sobrevivientes huyeron a los Valles Calchaquíes .	Por su parte , el gobernador Albornoz hizo una campaña prolongada en los Valles Calchaquíes , en que no hubo grandes batallas pero logró hostigar a los indígenas lo suficiente como para que se sometieran a la encomienda .	No fundó ciudades , y los jesuitas fundaron dos misiones permanentes en Santa María y San Carlos .	Una vez rendida la resistencia en los Valles , Albornoz volvió sobre los hualfines , dirigidos por el hijo de Chalimín , y los derrotó y apresó .	Desde allí , los cuatrocientos hualfines y abaucanes sobrevivientes fueron enviados a la ciudad de Córdoba en carácter de encomendados .
+Event	T0	huyeron	EVENT	19
+Event	T1	hizo	EVENT	92
+Event	T2	campaña	EVENT	101
+Event	T3	batallas	EVENT	171
+Event	T4	hostigar	EVENT	191
+Event	T5	sometieran	EVENT	247
+Event	T6	encomienda	EVENT	263
+Event	T7	rendida	EVENT	383
+Event	T8	resistencia	EVENT	394
+Event	T9	volvió	EVENT	431
+Event	T10	dirigidos	EVENT	460
+Event	T11	derrotó	EVENT	502
+Event	T12	apresó	EVENT	512
+Event	T13	enviados	EVENT	596
+Event	T14	fundaron	EVENT	311
+Relation	T4	T5	CauseEffect	true	hostigar	sometieran
+Relation	T5	T4	EffectCause	true	sometieran	hostigar
+Relation	T1	T4	NoRel	true	hizo	hostigar
+Relation	T10	T1	NoRel	true	dirigidos	hizo
+Relation	T10	T3	NoRel	true	dirigidos	batallas
+Relation	T10	T6	NoRel	true	dirigidos	encomienda
+Relation	T10	T9	NoRel	true	dirigidos	volvió
+Relation	T12	T5	NoRel	true	apresó	sometieran
+Relation	T12	T6	NoRel	true	apresó	encomienda
+Relation	T12	T7	NoRel	true	apresó	rendida
+Relation	T12	T8	NoRel	true	apresó	resistencia
+Relation	T14	T1	NoRel	true	fundaron	hizo
+Relation	T2	T8	NoRel	true	campaña	resistencia
+Relation	T4	T0	NoRel	true	hostigar	huyeron
+Relation	T4	T14	NoRel	true	hostigar	fundaron
+Relation	T4	T3	NoRel	true	hostigar	batallas
+Relation	T4	T9	NoRel	true	hostigar	volvió
+Relation	T6	T11	NoRel	true	encomienda	derrotó
+Relation	T6	T7	NoRel	true	encomienda	rendida
+Relation	T7	T1	NoRel	true	rendida	hizo
+Relation	T9	T6	NoRel	true	volvió	encomienda

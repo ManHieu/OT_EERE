@@ -1,0 +1,54 @@
+Text	یہ کارروائی عراق کی کٹھ پتلی حکومت کی فوجوں کی امداد میں کی گئی جو مقتدی صدر کے حامی ملیشیا سے لڑائی میں مشغول ہے ۔	اقوام متحدہ کے سابق اہلکار البرادی کے مطابق ، عراق پر حملے کے نتیجہ میں دس لاکھ افراد ہلاک ہوئے اور حملہ ور جنگی جرائم کے مرتکب ہیں ۔	امریکی افواج نے جینیوا معاہدہ کی کھلم کھلا خلاف ورزی کی اور قیدیوں پر بے انتہا ظلم و تشدد میں ملوث رہی ۔	امریکا کی طرح برطانوی فوج بھی قیدیوں کو تشدد کے ذریعہ ہلاک کرتی رہی ۔	امریکی فوج عراق میں بڑے فوجی اڈے قائم کر رہی ہے اور ستمبر 2007ء کی تقریر میں امریکی صدر نے عراق پر مستقل فوجی قبضے کا ارادہ ظاہر کیا ہے ۔
+Event	T0	کارروائی	EVENT	3
+Event	T1	لڑائی	EVENT	95
+Event	T2	حملے	EVENT	170
+Event	T5	ظلم	EVENT	329
+Event	T6	تشدد	EVENT	335
+Event	T7	تشدد	EVENT	395
+Event	T8	ہلاک	EVENT	409
+Event	T9	قائم	EVENT	458
+Event	T10	تقریر	EVENT	492
+Event	T11	قبضے	EVENT	535
+Event	T12	امداد	EVENT	47
+Event	T13	مشغول	EVENT	105
+Event	T14	ہلاک	EVENT	202
+Event	T16	مرتکب	EVENT	238
+Event	T15	جنگی جرائم	EVENT	224
+Event	T3	ورزی	EVENT	298
+Event	T4	ملوث	EVENT	344
+Event	T17	ظاہر	EVENT	549
+Relation	T12	T0	CauseEffect	true	امداد	کارروائی
+Relation	T0	T12	EffectCause	true	کارروائی	امداد
+Relation	T2	T14	CauseEffect	true	حملے	ہلاک
+Relation	T14	T2	EffectCause	true	ہلاک	حملے
+Relation	T7	T8	CauseEffect	true	تشدد	ہلاک
+Relation	T8	T7	EffectCause	true	ہلاک	تشدد
+Relation	T1	T10	NoRel	true	لڑائی	تقریر
+Relation	T10	T11	NoRel	true	تقریر	قبضے
+Relation	T11	T15	NoRel	true	قبضے	جنگی جرائم
+Relation	T11	T3	NoRel	true	قبضے	ورزی
+Relation	T11	T4	NoRel	true	قبضے	ملوث
+Relation	T12	T11	NoRel	true	امداد	قبضے
+Relation	T12	T3	NoRel	true	امداد	ورزی
+Relation	T13	T14	NoRel	true	مشغول	ہلاک
+Relation	T13	T2	NoRel	true	مشغول	حملے
+Relation	T14	T16	NoRel	true	ہلاک	مرتکب
+Relation	T14	T4	NoRel	true	ہلاک	ملوث
+Relation	T15	T11	NoRel	true	جنگی جرائم	قبضے
+Relation	T15	T7	NoRel	true	جنگی جرائم	تشدد
+Relation	T16	T13	NoRel	true	مرتکب	مشغول
+Relation	T16	T17	NoRel	true	مرتکب	ظاہر
+Relation	T16	T7	NoRel	true	مرتکب	تشدد
+Relation	T17	T12	NoRel	true	ظاہر	امداد
+Relation	T2	T17	NoRel	true	حملے	ظاہر
+Relation	T3	T2	NoRel	true	ورزی	حملے
+Relation	T4	T9	NoRel	true	ملوث	قائم
+Relation	T5	T1	NoRel	true	ظلم	لڑائی
+Relation	T5	T13	NoRel	true	ظلم	مشغول
+Relation	T5	T17	NoRel	true	ظلم	ظاہر
+Relation	T6	T1	NoRel	true	تشدد	لڑائی
+Relation	T6	T14	NoRel	true	تشدد	ہلاک
+Relation	T6	T17	NoRel	true	تشدد	ظاہر
+Relation	T7	T17	NoRel	true	تشدد	ظاہر
+Relation	T8	T13	NoRel	true	ہلاک	مشغول
+Relation	T9	T12	NoRel	true	قائم	امداد

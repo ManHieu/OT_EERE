@@ -1,0 +1,37 @@
+Text	300px | sağ | thumb MONTPARNASSE GARI TREN_KAZASI , 22 Ekim 1895 tarihinde , Fransa'nın başkenti Paris'in Montparnasse Garı'ında meydana gelmiş bir tren kazasıdır .	Granville - Paris arasında sefer yapan tren , istasyona varmaya birkaç dakika geç kalmıştı .	Makinist bu gecikmeyi telafi etmek için tren garına normalden fazla hızla girdi .	Hava frenlerinin yavaşlattığı ancak durduramadığı tren , tampon durdurma bölgesini geçtikten sonra istasyon kaidesini de aşarak , gar duvarını yıktı ve Lokomotif Place de Rennes'e düştü ve burnunun üzerinde durdu .	Granville'den 08.45'te yola çıkan , Chemins de fer de l ' Ouest şirketince çalıştırılan 721 nolu buharlı tren , altı vagonda toplam 131 yolcu taşıyordu .
+Event	T0	gelmiş	EVENT	137
+Event	T1	kazasıdır	EVENT	153
+Event	T4	girdi	EVENT	332
+Event	T5	yavaşlattığı	EVENT	357
+Event	T6	geçtikten	EVENT	423
+Event	T7	aşarak	EVENT	461
+Event	T8	yıktı	EVENT	483
+Event	T9	düştü	EVENT	520
+Event	T10	durdu	EVENT	547
+Event	T11	TREN_KAZASI	EVENT	38
+Event	T2	kalmıştı	EVENT	247
+Event	T3	durduramadığı	EVENT	376
+Event	T12	çalıştırılan	EVENT	630
+Event	T13	taşıyordu	EVENT	697
+Relation	T2	T4	CauseEffect	true	kalmıştı	girdi
+Relation	T4	T2	EffectCause	true	girdi	kalmıştı
+Relation	T4	T3	CauseEffect	true	girdi	durduramadığı
+Relation	T3	T4	EffectCause	true	durduramadığı	girdi
+Relation	T3	T6	CauseEffect	true	durduramadığı	geçtikten
+Relation	T6	T3	EffectCause	true	geçtikten	durduramadığı
+Relation	T6	T8	CauseEffect	true	geçtikten	yıktı
+Relation	T8	T6	EffectCause	true	yıktı	geçtikten
+Relation	T8	T9	CauseEffect	true	yıktı	düştü
+Relation	T9	T8	EffectCause	true	düştü	yıktı
+Relation	T9	T10	CauseEffect	true	düştü	durdu
+Relation	T10	T9	EffectCause	true	durdu	düştü
+Relation	T0	T6	NoRel	true	gelmiş	geçtikten
+Relation	T10	T1	NoRel	true	durdu	kazasıdır
+Relation	T10	T4	NoRel	true	durdu	girdi
+Relation	T11	T2	NoRel	true	TREN_KAZASI	kalmıştı
+Relation	T12	T10	NoRel	true	çalıştırılan	durdu
+Relation	T13	T11	NoRel	true	taşıyordu	TREN_KAZASI
+Relation	T13	T2	NoRel	true	taşıyordu	kalmıştı
+Relation	T3	T8	NoRel	true	durduramadığı	yıktı
+Relation	T6	T11	NoRel	true	geçtikten	TREN_KAZASI
+Relation	T7	T12	NoRel	true	aşarak	çalıştırılan

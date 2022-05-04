@@ -1,0 +1,132 @@
+Text	CORRUPTED BLOOD-HÆNDELSEN var en glitch i MMORPG-spillet _ World of Warcraft _ , der optrådte 13. september 2005 , og som tog form af en virtuel epidemi .	Epidemien begyndte da et nyt område blev åbnet i spillet ( _ the raid of Zul'Gurub _ ) , i hvilken områdets stærkeste fjende , bossen Hakkar , ville inficere sine angribere med en forbandelse , der drænede liv og var yderst smitsom .	Denne forbandelse hed _ Corrupted Blood _ .	Forbandelsen , der kun var beregnet til at vare nogle få sekunder og kun skulle være virksom inden for det nyåbnede område Zul'Gurub spredte sig dog snart over hele den virtuelle verden , da spillere opdagede at teleportationsmagi kunne bringe sygdommen ud fra det begrænsede område , den var planlagt til .	Både ved tilfælde og gennem bevidste handlinger spredte _ Corrupted Blood _ sig således snart som en pandemi , der hurtigt dræbte spillere på lavere niveauer , og var til stor gene for spillere på høje niveauer .	
+Event	T0	glitch	EVENT	33
+Event	T1	optrådte	EVENT	85
+Event	T2	epidemi	EVENT	145
+Event	T3	begyndte	EVENT	165
+Event	T4	åbnet	EVENT	196
+Event	T5	spillet	EVENT	204
+Event	T7	inficere	EVENT	304
+Event	T8	forbandelse	EVENT	335
+Event	T9	hed	EVENT	407
+Event	T11	Forbandelsen	EVENT	433
+Event	T12	beregnet	EVENT	460
+Event	T13	opdagede	EVENT	633
+Event	T14	teleportationsmagi	EVENT	645
+Event	T15	sygdommen	EVENT	677
+Event	T16	planlagt	EVENT	726
+Event	T17	tilfælde	EVENT	750
+Event	T18	spredte	EVENT	789
+Event	T20	pandemi	EVENT	842
+Event	T21	dræbte	EVENT	864
+Event	T22	gene	EVENT	917
+Event	T23	BLOOD-HÆNDELSEN	EVENT	10
+Event	T24	Epidemien	EVENT	155
+Event	T25	angribere	EVENT	318
+Event	T26	drænede liv	EVENT	353
+Event	T27	smitsom	EVENT	379
+Event	T10	forbandelse	EVENT	395
+Event	T28	spredte sig	EVENT	566
+Event	T29	bevidste handlinger	EVENT	769
+Event	T19	MMORPG-spillet	EVENT	42
+Event	T6	fjende	EVENT	273
+Event	T30	vare	EVENT	476
+Event	T31	virksom	EVENT	518
+Relation	T18	T20	CauseEffect	true	spredte	pandemi
+Relation	T20	T18	EffectCause	true	pandemi	spredte
+Relation	T29	T18	CauseEffect	true	bevidste handlinger	spredte
+Relation	T18	T29	EffectCause	true	spredte	bevidste handlinger
+Relation	T17	T18	CauseEffect	true	tilfælde	spredte
+Relation	T18	T17	EffectCause	true	spredte	tilfælde
+Relation	T20	T21	CauseEffect	true	pandemi	dræbte
+Relation	T21	T20	EffectCause	true	dræbte	pandemi
+Relation	T20	T22	CauseEffect	true	pandemi	gene
+Relation	T22	T20	EffectCause	true	gene	pandemi
+Relation	T0	T23	CauseEffect	true	glitch	BLOOD-HÆNDELSEN
+Relation	T23	T0	EffectCause	true	BLOOD-HÆNDELSEN	glitch
+Relation	T4	T3	CauseEffect	true	åbnet	begyndte
+Relation	T3	T4	EffectCause	true	begyndte	åbnet
+Relation	T14	T28	CauseEffect	true	teleportationsmagi	spredte sig
+Relation	T28	T14	EffectCause	true	spredte sig	teleportationsmagi
+Relation	T28	T20	CauseEffect	true	spredte sig	pandemi
+Relation	T20	T28	EffectCause	true	pandemi	spredte sig
+Relation	T0	T25	NoRel	true	glitch	angribere
+Relation	T0	T6	NoRel	true	glitch	fjende
+Relation	T1	T12	NoRel	true	optrådte	beregnet
+Relation	T1	T24	NoRel	true	optrådte	Epidemien
+Relation	T10	T12	NoRel	true	forbandelse	beregnet
+Relation	T10	T16	NoRel	true	forbandelse	planlagt
+Relation	T10	T2	NoRel	true	forbandelse	epidemi
+Relation	T11	T0	NoRel	true	Forbandelsen	glitch
+Relation	T11	T29	NoRel	true	Forbandelsen	bevidste handlinger
+Relation	T11	T6	NoRel	true	Forbandelsen	fjende
+Relation	T12	T19	NoRel	true	beregnet	MMORPG-spillet
+Relation	T12	T20	NoRel	true	beregnet	pandemi
+Relation	T12	T28	NoRel	true	beregnet	spredte sig
+Relation	T12	T8	NoRel	true	beregnet	forbandelse
+Relation	T13	T15	NoRel	true	opdagede	sygdommen
+Relation	T13	T24	NoRel	true	opdagede	Epidemien
+Relation	T13	T26	NoRel	true	opdagede	drænede liv
+Relation	T14	T17	NoRel	true	teleportationsmagi	tilfælde
+Relation	T15	T18	NoRel	true	sygdommen	spredte
+Relation	T15	T23	NoRel	true	sygdommen	BLOOD-HÆNDELSEN
+Relation	T15	T27	NoRel	true	sygdommen	smitsom
+Relation	T15	T5	NoRel	true	sygdommen	spillet
+Relation	T16	T0	NoRel	true	planlagt	glitch
+Relation	T16	T1	NoRel	true	planlagt	optrådte
+Relation	T16	T12	NoRel	true	planlagt	beregnet
+Relation	T16	T15	NoRel	true	planlagt	sygdommen
+Relation	T16	T30	NoRel	true	planlagt	vare
+Relation	T16	T5	NoRel	true	planlagt	spillet
+Relation	T17	T14	NoRel	true	tilfælde	teleportationsmagi
+Relation	T17	T22	NoRel	true	tilfælde	gene
+Relation	T17	T4	NoRel	true	tilfælde	åbnet
+Relation	T17	T9	NoRel	true	tilfælde	hed
+Relation	T19	T20	NoRel	true	MMORPG-spillet	pandemi
+Relation	T2	T0	NoRel	true	epidemi	glitch
+Relation	T2	T12	NoRel	true	epidemi	beregnet
+Relation	T2	T27	NoRel	true	epidemi	smitsom
+Relation	T21	T2	NoRel	true	dræbte	epidemi
+Relation	T21	T30	NoRel	true	dræbte	vare
+Relation	T21	T4	NoRel	true	dræbte	åbnet
+Relation	T22	T11	NoRel	true	gene	Forbandelsen
+Relation	T22	T15	NoRel	true	gene	sygdommen
+Relation	T22	T16	NoRel	true	gene	planlagt
+Relation	T22	T18	NoRel	true	gene	spredte
+Relation	T22	T24	NoRel	true	gene	Epidemien
+Relation	T24	T16	NoRel	true	Epidemien	planlagt
+Relation	T24	T26	NoRel	true	Epidemien	drænede liv
+Relation	T26	T1	NoRel	true	drænede liv	optrådte
+Relation	T26	T17	NoRel	true	drænede liv	tilfælde
+Relation	T26	T25	NoRel	true	drænede liv	angribere
+Relation	T27	T1	NoRel	true	smitsom	optrådte
+Relation	T28	T1	NoRel	true	spredte sig	optrådte
+Relation	T28	T19	NoRel	true	spredte sig	MMORPG-spillet
+Relation	T28	T25	NoRel	true	spredte sig	angribere
+Relation	T29	T7	NoRel	true	bevidste handlinger	inficere
+Relation	T3	T21	NoRel	true	begyndte	dræbte
+Relation	T3	T23	NoRel	true	begyndte	BLOOD-HÆNDELSEN
+Relation	T3	T31	NoRel	true	begyndte	virksom
+Relation	T3	T5	NoRel	true	begyndte	spillet
+Relation	T30	T0	NoRel	true	vare	glitch
+Relation	T30	T26	NoRel	true	vare	drænede liv
+Relation	T31	T1	NoRel	true	virksom	optrådte
+Relation	T31	T11	NoRel	true	virksom	Forbandelsen
+Relation	T31	T13	NoRel	true	virksom	opdagede
+Relation	T31	T27	NoRel	true	virksom	smitsom
+Relation	T31	T29	NoRel	true	virksom	bevidste handlinger
+Relation	T31	T9	NoRel	true	virksom	hed
+Relation	T4	T24	NoRel	true	åbnet	Epidemien
+Relation	T5	T14	NoRel	true	spillet	teleportationsmagi
+Relation	T5	T17	NoRel	true	spillet	tilfælde
+Relation	T6	T2	NoRel	true	fjende	epidemi
+Relation	T6	T26	NoRel	true	fjende	drænede liv
+Relation	T6	T27	NoRel	true	fjende	smitsom
+Relation	T6	T9	NoRel	true	fjende	hed
+Relation	T7	T18	NoRel	true	inficere	spredte
+Relation	T7	T23	NoRel	true	inficere	BLOOD-HÆNDELSEN
+Relation	T7	T30	NoRel	true	inficere	vare
+Relation	T8	T2	NoRel	true	forbandelse	epidemi
+Relation	T8	T4	NoRel	true	forbandelse	åbnet
+Relation	T9	T1	NoRel	true	hed	optrådte
+Relation	T9	T20	NoRel	true	hed	pandemi
+Relation	T9	T21	NoRel	true	hed	dræbte

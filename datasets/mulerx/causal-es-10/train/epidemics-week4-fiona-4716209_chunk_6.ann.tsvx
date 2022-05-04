@@ -1,0 +1,67 @@
+Text	Los planes de actuación deben conocerlos los profesionales con suficiente antelación y estar adecuadamente formados ; y los políticos deben ser coherentes en sus actuaciones y coordinar todos los medios disponibles .	Es fundamental invertir en recursos de salud pública para preparar las acciones preventivas , y reducir las desigualdades de salud para minimizar las consecuencias de las crisis sanitarias , ya que en general siempre las sufren más los más pobres .	[ Recompensa de 2,5 millones de dólares ofrecida por el FBI , el Servicio Postal de EE.UU. y ADVO Inc. , por información sobre los ataques con carbunco en 2001 .	] Un manejo adecuado de la crisis sanitaria es un caso específico de gestión de riesgos y manejo de crisis , que puede implicar una serie de pasos o situaciones que no siempre es posible definir de antemano , por la multiplicidad de actores involucrados :	- Percepción de un riesgo de afectación colectiva : detección de un caso clínico que genera alarma ( Alerta ) .
+Event	T0	actuaciones	EVENT	162
+Event	T1	invertir	EVENT	232
+Event	T2	preparar	EVENT	275
+Event	T3	acciones	EVENT	288
+Event	T4	reducir	EVENT	313
+Event	T5	crisis	EVENT	388
+Event	T6	sufren	EVENT	438
+Event	T7	Recompensa	EVENT	468
+Event	T8	ofrecida	EVENT	506
+Event	T9	información	EVENT	575
+Event	T10	ataques	EVENT	597
+Event	T11	manejo	EVENT	633
+Event	T12	crisis	EVENT	655
+Event	T13	gestión	EVENT	697
+Event	T14	manejo	EVENT	718
+Event	T15	crisis	EVENT	728
+Event	T16	Percepción	EVENT	886
+Event	T17	afectación	EVENT	913
+Event	T18	detección	EVENT	936
+Event	T19	alarma	EVENT	976
+Event	T20	desigualdades	EVENT	325
+Relation	T0	T2	NoRel	true	actuaciones	preparar
+Relation	T1	T0	NoRel	true	invertir	actuaciones
+Relation	T1	T13	NoRel	true	invertir	gestión
+Relation	T10	T15	NoRel	true	ataques	crisis
+Relation	T10	T16	NoRel	true	ataques	Percepción
+Relation	T10	T2	NoRel	true	ataques	preparar
+Relation	T10	T4	NoRel	true	ataques	reducir
+Relation	T11	T14	NoRel	true	manejo	manejo
+Relation	T12	T14	NoRel	true	crisis	manejo
+Relation	T12	T16	NoRel	true	crisis	Percepción
+Relation	T12	T9	NoRel	true	crisis	información
+Relation	T13	T3	NoRel	true	gestión	acciones
+Relation	T14	T17	NoRel	true	manejo	afectación
+Relation	T14	T4	NoRel	true	manejo	reducir
+Relation	T14	T5	NoRel	true	manejo	crisis
+Relation	T15	T10	NoRel	true	crisis	ataques
+Relation	T15	T4	NoRel	true	crisis	reducir
+Relation	T17	T9	NoRel	true	afectación	información
+Relation	T18	T13	NoRel	true	detección	gestión
+Relation	T19	T1	NoRel	true	alarma	invertir
+Relation	T19	T10	NoRel	true	alarma	ataques
+Relation	T19	T11	NoRel	true	alarma	manejo
+Relation	T19	T15	NoRel	true	alarma	crisis
+Relation	T2	T1	NoRel	true	preparar	invertir
+Relation	T2	T16	NoRel	true	preparar	Percepción
+Relation	T2	T17	NoRel	true	preparar	afectación
+Relation	T2	T8	NoRel	true	preparar	ofrecida
+Relation	T2	T9	NoRel	true	preparar	información
+Relation	T20	T2	NoRel	true	desigualdades	preparar
+Relation	T20	T4	NoRel	true	desigualdades	reducir
+Relation	T20	T5	NoRel	true	desigualdades	crisis
+Relation	T3	T12	NoRel	true	acciones	crisis
+Relation	T3	T16	NoRel	true	acciones	Percepción
+Relation	T3	T4	NoRel	true	acciones	reducir
+Relation	T3	T8	NoRel	true	acciones	ofrecida
+Relation	T4	T17	NoRel	true	reducir	afectación
+Relation	T5	T1	NoRel	true	crisis	invertir
+Relation	T5	T8	NoRel	true	crisis	ofrecida
+Relation	T6	T20	NoRel	true	sufren	desigualdades
+Relation	T7	T4	NoRel	true	Recompensa	reducir
+Relation	T7	T5	NoRel	true	Recompensa	crisis
+Relation	T7	T9	NoRel	true	Recompensa	información
+Relation	T8	T20	NoRel	true	ofrecida	desigualdades
+Relation	T9	T15	NoRel	true	información	crisis
+Relation	T9	T3	NoRel	true	información	acciones

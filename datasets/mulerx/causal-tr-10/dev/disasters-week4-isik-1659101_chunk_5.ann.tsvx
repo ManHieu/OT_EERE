@@ -1,0 +1,35 @@
+Text	Bu dağ andezit , bazalt ve dakit tipi magmatik kayaçlar püskürtmüştür ve son faaliyetinde ortaya çıkan magmatik kayaçlar ise içinde zengin silikon dioksitler bulunan andezit kayaçlarıdır .	Dosya : Mount Redoubt .jpg | Redoubt Dağı kuzey yüzü 1980 Dosya : Mt Redoubtedit1 .jpg | Redoubt Dağı 2009 püskürmesinde kül ve duman bulutu Dosya : Mt Redoubt 2009 - 03 -21 1237756418 ak231 .JPG | 2009 püskürmesine başlamadan bir iki gün önce püskürtülen istim dumanı Dosya : Redoubt Andesite .jpg | 2009 püskürmesinden dağın havaya fırlattığı andezit kayaç parçası	- " Ulusal Park Hizmeti " resmi websitesi Lake Clark Ulusal Parkı - Alaska Volkan Gözlemevi'nin 2009 volkan faaliyeti için jeologlar raporları - Volkanın 2009 püskürmesi için BBC Haberleri ve diğer video - Boston .	hrm blogcusu tarafından 2009 püskürmesi hakkındaki fotoğraflar albümü	Kategori : Amerika Birleşik Devletleri'ndeki stratovolkanlar Kategori : Alaska'daki dağlar Kategori : Aktif yanardağlar Kategori : Kenai Peninsula Borough Kategori : Clark Gölü Ulusal Parkı Kategori : Aleut Sıradağları Kategori : 20._yüzyıldaki volkanik olaylar Kategori : 60 ° K Kategori : 153 ° B
+Event	T0	püskürtmüştür	EVENT	56
+Event	T2	bulutu	EVENT	323
+Event	T3	püskürmesine	EVENT	392
+Event	T4	püskürmesinden	EVENT	495
+Event	T5	faaliyeti	EVENT	664
+Event	T6	püskürmesi	EVENT	715
+Event	T7	püskürmesi	EVENT	800
+Event	T8	olaylar	EVENT	1095
+Event	T1	püskürmesinde	EVENT	296
+Event	T9	dumanı	EVENT	451
+Event	T10	fırlattığı	EVENT	523
+Event	T11	raporları	EVENT	689
+Event	T12	albümü	EVENT	834
+Relation	T1	T2	CauseEffect	true	püskürmesinde	bulutu
+Relation	T2	T1	EffectCause	true	bulutu	püskürmesinde
+Relation	T4	T10	CauseEffect	true	püskürmesinden	fırlattığı
+Relation	T10	T4	EffectCause	true	fırlattığı	püskürmesinden
+Relation	T5	T11	CauseEffect	true	faaliyeti	raporları
+Relation	T11	T5	EffectCause	true	raporları	faaliyeti
+Relation	T7	T12	CauseEffect	true	püskürmesi	albümü
+Relation	T12	T7	EffectCause	true	albümü	püskürmesi
+Relation	T0	T7	NoRel	true	püskürtmüştür	püskürmesi
+Relation	T11	T12	NoRel	true	raporları	albümü
+Relation	T12	T6	NoRel	true	albümü	püskürmesi
+Relation	T2	T3	NoRel	true	bulutu	püskürmesine
+Relation	T2	T6	NoRel	true	bulutu	püskürmesi
+Relation	T3	T4	NoRel	true	püskürmesine	püskürmesinden
+Relation	T3	T5	NoRel	true	püskürmesine	faaliyeti
+Relation	T4	T8	NoRel	true	püskürmesinden	olaylar
+Relation	T5	T8	NoRel	true	faaliyeti	olaylar
+Relation	T6	T9	NoRel	true	püskürmesi	dumanı
+Relation	T8	T0	NoRel	true	olaylar	püskürtmüştür
+Relation	T9	T1	NoRel	true	dumanı	püskürmesinde
+Relation	T9	T12	NoRel	true	dumanı	albümü

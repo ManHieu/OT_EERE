@@ -1,0 +1,60 @@
+Text	Dette synspunkt , som ikke kun var begrænset til pacifistiske og pro-tyske organisationer , blev videre understøttet af tyske og mexicanske diplomater såvel som flere amerikanske aviser , specielt fra Hearsts medieimperium .	Men den 29. marts 1917 holdt telegrammets oprindelige forfatter , den tyske udenrigsminister Arthur Zimmermann en tale hvori han bekræftede telegrammets indhold hvorved spekulationerne om fabrikation ophørte .	Anti-mexicanske og anti-tyske følelser var allerede udbredte i USA på dette tidspunkt .	Dels fordi den mexicanske revolutionsgeneral Pancho Villa løbende havde foretaget flere togter ind i USA , dels fordi tyske ubåde havde angrebet flere amerikanske skibe og sænket flere britiske civile fartøjer med store tab af menneskeliv til følge .	Ikke mindst sænkningen af RMS Lusitania den 7. maj 1915 havde vakt forargelse .
+Event	T0	understøttet	EVENT	104
+Event	T1	holdt	EVENT	248
+Event	T2	tale	EVENT	339
+Event	T3	bekræftede	EVENT	354
+Event	T4	spekulationerne	EVENT	394
+Event	T5	ophørte	EVENT	425
+Event	T6	udbredte	EVENT	487
+Event	T7	foretaget	EVENT	595
+Event	T8	angrebet	EVENT	659
+Event	T9	sænket	EVENT	695
+Event	T10	tab	EVENT	743
+Event	T11	sænkningen	EVENT	786
+Event	T12	synspunkt	EVENT	6
+Event	T13	begrænset	EVENT	35
+Event	T14	følelser	EVENT	465
+Event	T15	togter	EVENT	611
+Relation	T3	T5	CauseEffect	true	bekræftede	ophørte
+Relation	T5	T3	EffectCause	true	ophørte	bekræftede
+Relation	T8	T9	CauseEffect	true	angrebet	sænket
+Relation	T9	T8	EffectCause	true	sænket	angrebet
+Relation	T8	T10	CauseEffect	true	angrebet	tab
+Relation	T10	T8	EffectCause	true	tab	angrebet
+Relation	T7	T14	CauseEffect	true	foretaget	følelser
+Relation	T14	T7	EffectCause	true	følelser	foretaget
+Relation	T8	T14	CauseEffect	true	angrebet	følelser
+Relation	T14	T8	EffectCause	true	følelser	angrebet
+Relation	T0	T13	NoRel	true	understøttet	begrænset
+Relation	T0	T7	NoRel	true	understøttet	foretaget
+Relation	T0	T8	NoRel	true	understøttet	angrebet
+Relation	T10	T15	NoRel	true	tab	togter
+Relation	T10	T2	NoRel	true	tab	tale
+Relation	T10	T4	NoRel	true	tab	spekulationerne
+Relation	T10	T5	NoRel	true	tab	ophørte
+Relation	T11	T5	NoRel	true	sænkningen	ophørte
+Relation	T12	T15	NoRel	true	synspunkt	togter
+Relation	T12	T2	NoRel	true	synspunkt	tale
+Relation	T13	T15	NoRel	true	begrænset	togter
+Relation	T13	T7	NoRel	true	begrænset	foretaget
+Relation	T14	T3	NoRel	true	følelser	bekræftede
+Relation	T15	T0	NoRel	true	togter	understøttet
+Relation	T15	T3	NoRel	true	togter	bekræftede
+Relation	T15	T8	NoRel	true	togter	angrebet
+Relation	T2	T6	NoRel	true	tale	udbredte
+Relation	T3	T8	NoRel	true	bekræftede	angrebet
+Relation	T4	T3	NoRel	true	spekulationerne	bekræftede
+Relation	T4	T6	NoRel	true	spekulationerne	udbredte
+Relation	T5	T13	NoRel	true	ophørte	begrænset
+Relation	T6	T10	NoRel	true	udbredte	tab
+Relation	T6	T4	NoRel	true	udbredte	spekulationerne
+Relation	T7	T3	NoRel	true	foretaget	bekræftede
+Relation	T8	T1	NoRel	true	angrebet	holdt
+Relation	T8	T3	NoRel	true	angrebet	bekræftede
+Relation	T8	T5	NoRel	true	angrebet	ophørte
+Relation	T9	T0	NoRel	true	sænket	understøttet
+Relation	T9	T11	NoRel	true	sænket	sænkningen
+Relation	T9	T14	NoRel	true	sænket	følelser
+Relation	T9	T15	NoRel	true	sænket	togter
+Relation	T9	T2	NoRel	true	sænket	tale
+Relation	T9	T5	NoRel	true	sænket	ophørte

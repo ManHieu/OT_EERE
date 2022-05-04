@@ -1,0 +1,48 @@
+Text	10 MAYIS 1556 MARMARA DENIZI DEPREMI orta Marmara Denizi'nin kuzey sahilleri , İstanbul ve Bursa'da hissedilmişti	Deprem , Marmara Denizi'nin doğu kısmında , Orta Sırt Kuzey Fayı'nda meydana gelmiş ve Richter ölçeğine göre 7.4 büyüklüğünde olduğu hesaplanmıştır .	Aynı fay üzerinde 200 -300 yıl aralıklarla depremler meydana gelmiş , fayın o noktasında meydana gelen bu deprem dizisinin bir evvelkisi 1346 depremine , bir sonraki ise 1766 Büyük İstanbul Depremi'ne neden olmuştur .	Deprem , güneşin batmasından sonra çok şiddetli bir rüzgarla birlikte gerçekleşmiş , İstanbul'daki zararlar arasında Fatih Camii , Ayasofya Camii ve surlarda hasar olduğu kaydedilmiştir .	Tarihî kayıtlarda anlatılan hasar miktarı bu depremin şiddetinin Mercalli şiddet ölçeği'nde VIII'e karşılık geldiğini göstermektedir .
+Event	T1	hissedilmişti	EVENT	100
+Event	T2	Deprem	EVENT	114
+Event	T3	gelmiş	EVENT	191
+Event	T4	hesaplanmıştır	EVENT	247
+Event	T5	gelmiş	EVENT	325
+Event	T7	deprem	EVENT	370
+Event	T8	depremine	EVENT	406
+Event	T9	Deprem	EVENT	482
+Event	T10	batmasından	EVENT	499
+Event	T11	gerçekleşmiş	EVENT	552
+Event	T12	kaydedilmiştir	EVENT	653
+Event	T13	hasar	EVENT	698
+Event	T14	10 MAYIS 1556 MARMARA DENIZI DEPREMI	EVENT	0
+Event	T6	olmuştur	EVENT	471
+Event	T15	göstermektedir	EVENT	788
+Event	T16	kayıtlarda	EVENT	677
+Relation	T3	T1	CauseEffect	true	gelmiş	hissedilmişti
+Relation	T1	T3	EffectCause	true	hissedilmişti	gelmiş
+Relation	T2	T4	CauseEffect	true	Deprem	hesaplanmıştır
+Relation	T4	T2	EffectCause	true	hesaplanmıştır	Deprem
+Relation	T11	T12	CauseEffect	true	gerçekleşmiş	kaydedilmiştir
+Relation	T12	T11	EffectCause	true	kaydedilmiştir	gerçekleşmiş
+Relation	T12	T15	CauseEffect	true	kaydedilmiştir	göstermektedir
+Relation	T15	T12	EffectCause	true	göstermektedir	kaydedilmiştir
+Relation	T13	T16	CauseEffect	true	hasar	kayıtlarda
+Relation	T16	T13	EffectCause	true	kayıtlarda	hasar
+Relation	T16	T15	CauseEffect	true	kayıtlarda	göstermektedir
+Relation	T15	T16	EffectCause	true	göstermektedir	kayıtlarda
+Relation	T1	T8	NoRel	true	hissedilmişti	depremine
+Relation	T10	T12	NoRel	true	batmasından	kaydedilmiştir
+Relation	T10	T4	NoRel	true	batmasından	hesaplanmıştır
+Relation	T11	T13	NoRel	true	gerçekleşmiş	hasar
+Relation	T12	T5	NoRel	true	kaydedilmiştir	gelmiş
+Relation	T12	T7	NoRel	true	kaydedilmiştir	deprem
+Relation	T13	T4	NoRel	true	hasar	hesaplanmıştır
+Relation	T15	T14	NoRel	true	göstermektedir	10 MAYIS 1556 MARMARA DENIZI DEPREMI
+Relation	T16	T5	NoRel	true	kayıtlarda	gelmiş
+Relation	T16	T6	NoRel	true	kayıtlarda	olmuştur
+Relation	T2	T1	NoRel	true	Deprem	hissedilmişti
+Relation	T2	T7	NoRel	true	Deprem	deprem
+Relation	T4	T13	NoRel	true	hesaplanmıştır	hasar
+Relation	T4	T7	NoRel	true	hesaplanmıştır	deprem
+Relation	T5	T8	NoRel	true	gelmiş	depremine
+Relation	T6	T13	NoRel	true	olmuştur	hasar
+Relation	T7	T2	NoRel	true	deprem	Deprem
+Relation	T9	T12	NoRel	true	Deprem	kaydedilmiştir
+Relation	T9	T5	NoRel	true	Deprem	gelmiş

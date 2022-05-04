@@ -1,0 +1,54 @@
+Text	Antibiyotiklerle erken tedavi , mortalite oranını yüzde 4- 15 arasında azaltır .	Pnömonik veba formu , akciğerlerin enfeksiyonundan kaynaklanır .	Öksürme ve hapşırmaya neden olur ve böylece bakteriyel hücreler içeren ve bunları teneffüs eden herkesi enfekte etmesi muhtemel havadaki damlacıklar üretir .	Pnömonik veba için kuluçka süresi kısa , genellikle iki ila dört gün , ancak bazen sadece birkaç saattir .	İlk belirtiler diğer bazı solunum yolu hastalıklarından ayırt edilemez ; baş ağrısı , halsizlik ve kan tükürme veya kusmayı içerir .
+Event	T0	tedavi	EVENT	23
+Event	T1	Öksürme	EVENT	146
+Event	T3	üretir	EVENT	295
+Event	T4	belirtiler	EVENT	415
+Event	T5	ağrısı	EVENT	488
+Event	T6	tükürme	EVENT	514
+Event	T7	azaltır	EVENT	71
+Event	T8	veba	EVENT	90
+Event	T9	enfeksiyonundan	EVENT	116
+Event	T10	hapşırmaya	EVENT	157
+Event	T2	eden	EVENT	237
+Event	T11	etmesi	EVENT	258
+Event	T12	halsizlik	EVENT	497
+Event	T13	kusmayı	EVENT	527
+Relation	T0	T7	CauseEffect	true	tedavi	azaltır
+Relation	T7	T0	EffectCause	true	azaltır	tedavi
+Relation	T9	T8	CauseEffect	true	enfeksiyonundan	veba
+Relation	T8	T9	EffectCause	true	veba	enfeksiyonundan
+Relation	T8	T1	CauseEffect	true	veba	Öksürme
+Relation	T1	T8	EffectCause	true	Öksürme	veba
+Relation	T8	T10	CauseEffect	true	veba	hapşırmaya
+Relation	T10	T8	EffectCause	true	hapşırmaya	veba
+Relation	T1	T3	CauseEffect	true	Öksürme	üretir
+Relation	T3	T1	EffectCause	true	üretir	Öksürme
+Relation	T10	T3	CauseEffect	true	hapşırmaya	üretir
+Relation	T3	T10	EffectCause	true	üretir	hapşırmaya
+Relation	T3	T11	CauseEffect	true	üretir	etmesi
+Relation	T11	T3	EffectCause	true	etmesi	üretir
+Relation	T0	T4	NoRel	true	tedavi	belirtiler
+Relation	T0	T9	NoRel	true	tedavi	enfeksiyonundan
+Relation	T1	T5	NoRel	true	Öksürme	ağrısı
+Relation	T10	T0	NoRel	true	hapşırmaya	tedavi
+Relation	T10	T9	NoRel	true	hapşırmaya	enfeksiyonundan
+Relation	T11	T2	NoRel	true	etmesi	eden
+Relation	T11	T4	NoRel	true	etmesi	belirtiler
+Relation	T11	T9	NoRel	true	etmesi	enfeksiyonundan
+Relation	T12	T0	NoRel	true	halsizlik	tedavi
+Relation	T12	T2	NoRel	true	halsizlik	eden
+Relation	T13	T2	NoRel	true	kusmayı	eden
+Relation	T13	T3	NoRel	true	kusmayı	üretir
+Relation	T2	T4	NoRel	true	eden	belirtiler
+Relation	T2	T7	NoRel	true	eden	azaltır
+Relation	T2	T9	NoRel	true	eden	enfeksiyonundan
+Relation	T5	T6	NoRel	true	ağrısı	tükürme
+Relation	T6	T11	NoRel	true	tükürme	etmesi
+Relation	T6	T12	NoRel	true	tükürme	halsizlik
+Relation	T6	T3	NoRel	true	tükürme	üretir
+Relation	T7	T10	NoRel	true	azaltır	hapşırmaya
+Relation	T7	T2	NoRel	true	azaltır	eden
+Relation	T7	T3	NoRel	true	azaltır	üretir
+Relation	T7	T9	NoRel	true	azaltır	enfeksiyonundan
+Relation	T8	T11	NoRel	true	veba	etmesi
+Relation	T8	T3	NoRel	true	veba	üretir

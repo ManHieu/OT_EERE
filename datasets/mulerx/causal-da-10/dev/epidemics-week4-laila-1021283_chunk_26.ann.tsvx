@@ -1,0 +1,43 @@
+Text	Den 7. marts reagerede Italiens premierminister , Giuseppe Conte , med at udstede en forordning , der lukkede dele af det nordlige Italien ned .	Initiativet blev af kritikere opfattet som en alt for sen reaktion , og den 16. marts var der 24.747 bekræftede smittetilfælde og 2158 døde .	At Italien var særdeles hårdt ramt , blev bekræftet den 19. marts , hvor landet overhalede Kina som landet med flest registrerede coronavirus-relaterede dødsfald i verden med i alt 3405 omkomne .	Omkring 1. maj 2020 knækkede kurven over omkomne i landet .	Pr. 4. maj var der rapporteret 28.824 dødsfald .
+Event	T0	reagerede	EVENT	13
+Event	T1	udstede	EVENT	74
+Event	T2	lukkede	EVENT	102
+Event	T3	opfattet	EVENT	175
+Event	T4	reaktion	EVENT	203
+Event	T5	smittetilfælde	EVENT	257
+Event	T6	døde	EVENT	280
+Event	T7	ramt	EVENT	317
+Event	T8	bekræftet	EVENT	329
+Event	T9	overhalede	EVENT	367
+Event	T10	dødsfald	EVENT	440
+Event	T11	rapporteret	EVENT	562
+Event	T12	dødsfald	EVENT	581
+Event	T13	forordning	EVENT	85
+Event	T14	flest registrerede	EVENT	398
+Event	T15	omkomne	EVENT	473
+Event	T16	knækkede	EVENT	503
+Event	T17	omkomne	EVENT	524
+Relation	T0	T13	CauseEffect	true	reagerede	forordning
+Relation	T13	T0	EffectCause	true	forordning	reagerede
+Relation	T13	T2	CauseEffect	true	forordning	lukkede
+Relation	T2	T13	EffectCause	true	lukkede	forordning
+Relation	T0	T17	NoRel	true	reagerede	omkomne
+Relation	T1	T0	NoRel	true	udstede	reagerede
+Relation	T1	T6	NoRel	true	udstede	døde
+Relation	T11	T6	NoRel	true	rapporteret	døde
+Relation	T13	T14	NoRel	true	forordning	flest registrerede
+Relation	T13	T17	NoRel	true	forordning	omkomne
+Relation	T13	T3	NoRel	true	forordning	opfattet
+Relation	T13	T7	NoRel	true	forordning	ramt
+Relation	T14	T1	NoRel	true	flest registrerede	udstede
+Relation	T14	T15	NoRel	true	flest registrerede	omkomne
+Relation	T14	T5	NoRel	true	flest registrerede	smittetilfælde
+Relation	T15	T3	NoRel	true	omkomne	opfattet
+Relation	T15	T5	NoRel	true	omkomne	smittetilfælde
+Relation	T15	T9	NoRel	true	omkomne	overhalede
+Relation	T16	T12	NoRel	true	knækkede	dødsfald
+Relation	T3	T13	NoRel	true	opfattet	forordning
+Relation	T4	T12	NoRel	true	reaktion	dødsfald
+Relation	T4	T9	NoRel	true	reaktion	overhalede
+Relation	T5	T11	NoRel	true	smittetilfælde	rapporteret
+Relation	T6	T15	NoRel	true	døde	omkomne

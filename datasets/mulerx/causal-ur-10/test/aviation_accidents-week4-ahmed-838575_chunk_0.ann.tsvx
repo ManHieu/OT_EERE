@@ -1,0 +1,18 @@
+Text	چین ساؤتھ ویسٹ ائیرلائنز فلائٹ 4509 چین میں ایک اندرونی قسم کی پرواز تھی جو 24 فروری 1999ء کو ایک فضائی حادثے کا شکار ہوئی تھی ۔	یہ پرواز چین کے شہر چینگدو سے ژجیانگ سفر کر رہی تھی ۔	یہ پرواز چین ساؤتھ ویسٹ ائیرلائنز کے طیارہ ٹوپولف 154 ایم کے ساختہ ہوائی جہاز کی تھی جو اپنی منزل پر پہنچنے سے قبل حادثے کا شکار ہوئی ۔	اِس حادثے میں عملے کے 11 اور 50 مسافروں سمیت 61 افراد جاں بحق ہوئے ۔	یہ طیارہ ٹوپولف 154 ایم ساختہ تھا جو غالباً 1990ء میں بنایا گیا تھا ۔
+Event	T0	پرواز	EVENT	63
+Event	T1	حادثے	EVENT	104
+Event	T3	پرواز	EVENT	132
+Event	T4	سفر	EVENT	166
+Event	T5	پرواز	EVENT	186
+Event	T6	پہنچنے	EVENT	284
+Event	T7	حادثے	EVENT	298
+Event	T8	حادثے	EVENT	323
+Event	T10	بنایا	EVENT	442
+Event	T11	جاں بحق	EVENT	373
+Relation	T8	T11	CauseEffect	true	حادثے	جاں بحق
+Relation	T11	T8	EffectCause	true	جاں بحق	حادثے
+Relation	T0	T6	NoRel	true	پرواز	پہنچنے
+Relation	T10	T11	NoRel	true	بنایا	جاں بحق
+Relation	T10	T7	NoRel	true	بنایا	حادثے
+Relation	T5	T10	NoRel	true	پرواز	بنایا
+Relation	T7	T8	NoRel	true	حادثے	حادثے

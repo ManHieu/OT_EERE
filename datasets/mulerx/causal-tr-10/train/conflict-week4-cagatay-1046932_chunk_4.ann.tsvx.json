@@ -1,0 +1,1034 @@
+{
+  "id": "conflict-week4-cagatay-1046932_chunk_4.ann.tsvx",
+  "text": "Kasaba meydan\u0131nda \u00f6ld\u00fcr\u00fcld\u00fckten sonra Esved'in cans\u0131z bedeni bir araban\u0131n arkas\u0131na ba\u011flan\u0131p caddelerde s\u00fcr\u00fcklenerek gezdirilmi\u015ftir .\t\" De\u011fersiz oldu\u011fu \"nu g\u00f6stermek i\u00e7in de \u00f6l\u00fc bir k\u00f6pe\u011fin par\u00e7alar\u0131 ile birlikte g\u00f6m\u00fclm\u00fc\u015ft\u00fcr .\tDaha sonra hala bakire olup olmad\u0131\u011f\u0131n\u0131 anlamak i\u00e7in cesedi g\u00f6m\u00fcld\u00fc\u011f\u00fc yerden \u00e7\u0131kar\u0131larak Musul Adli T\u0131p Enstit\u00fcs\u00fcne g\u00f6nderilmi\u015ftir .\tAdli T\u0131p raporuna g\u00f6re Esved \u00f6ld\u00fc\u011f\u00fcnde hala bakire idi .\tYap\u0131lan otopsi ; kafatas\u0131 ve omurilik k\u0131r\u0131lmas\u0131 sonucu \u00f6ld\u00fc\u011f\u00fcn\u00fc ortaya \u00e7\u0131kard\u0131 .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "\u00f6ld\u00fcr\u00fcld\u00fckten",
+      "label": "EVENT",
+      "char_index": 18,
+      "sid": 0,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "gezdirilmi\u015ftir",
+      "label": "EVENT",
+      "char_index": 116,
+      "sid": 0,
+      "tid": [
+        13,
+        14
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "g\u00f6stermek",
+      "label": "EVENT",
+      "char_index": 155,
+      "sid": 1,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "g\u00f6m\u00fclm\u00fc\u015ft\u00fcr",
+      "label": "EVENT",
+      "char_index": 212,
+      "sid": 1,
+      "tid": [
+        13,
+        14
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "g\u00f6nderilmi\u015ftir",
+      "label": "EVENT",
+      "char_index": 341,
+      "sid": 2,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "\u00f6ld\u00fc\u011f\u00fcnde",
+      "label": "EVENT",
+      "char_index": 387,
+      "sid": 3,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "otopsi",
+      "label": "EVENT",
+      "char_index": 423,
+      "sid": 4,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "\u00e7\u0131kard\u0131",
+      "label": "EVENT",
+      "char_index": 486,
+      "sid": 4,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "ba\u011flan\u0131p",
+      "label": "EVENT",
+      "char_index": 83,
+      "sid": 0,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "\u00f6l\u00fc",
+      "label": "EVENT",
+      "char_index": 173,
+      "sid": 1,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "anlamak",
+      "label": "EVENT",
+      "char_index": 265,
+      "sid": 2,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "g\u00f6m\u00fcld\u00fc\u011f\u00fc",
+      "label": "EVENT",
+      "char_index": 285,
+      "sid": 2,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "\u00e7\u0131kar\u0131larak",
+      "label": "EVENT",
+      "char_index": 302,
+      "sid": 2,
+      "tid": [
+        11,
+        12
+      ]
+    }
+  },
+  "relation": {
+    "T10-T12": "CauseEffect",
+    "T12-T10": "EffectCause",
+    "T2-T3": "CauseEffect",
+    "T3-T2": "EffectCause",
+    "T10-T4": "CauseEffect",
+    "T4-T10": "EffectCause",
+    "T5-T6": "CauseEffect",
+    "T6-T5": "EffectCause",
+    "T0-T12": "NoRel",
+    "T0-T8": "NoRel",
+    "T0-T9": "NoRel",
+    "T1-T0": "NoRel",
+    "T1-T3": "NoRel",
+    "T1-T9": "NoRel",
+    "T11-T12": "NoRel",
+    "T12-T1": "NoRel",
+    "T2-T8": "NoRel",
+    "T3-T10": "NoRel",
+    "T3-T4": "NoRel",
+    "T4-T12": "NoRel",
+    "T4-T7": "NoRel",
+    "T4-T9": "NoRel",
+    "T6-T4": "NoRel",
+    "T7-T1": "NoRel",
+    "T7-T10": "NoRel",
+    "T7-T11": "NoRel",
+    "T8-T11": "NoRel",
+    "T9-T1": "NoRel",
+    "T9-T4": "NoRel"
+  },
+  "sentence": [
+    [
+      "Kasaba",
+      "meydan\u0131nda",
+      "\u00f6ld\u00fcr\u00fcld\u00fckten",
+      "sonra",
+      "Esved'in",
+      "cans\u0131z",
+      "bedeni",
+      "bir",
+      "araban\u0131n",
+      "arkas\u0131na",
+      "ba\u011flan\u0131p",
+      "caddelerde",
+      "s\u00fcr\u00fcklenerek",
+      "gezdirilmi\u015ftir",
+      "."
+    ],
+    [
+      "\"",
+      "De\u011fersiz",
+      "oldu\u011fu",
+      "\"nu",
+      "g\u00f6stermek",
+      "i\u00e7in",
+      "de",
+      "\u00f6l\u00fc",
+      "bir",
+      "k\u00f6pe\u011fin",
+      "par\u00e7alar\u0131",
+      "ile",
+      "birlikte",
+      "g\u00f6m\u00fclm\u00fc\u015ft\u00fcr",
+      "."
+    ],
+    [
+      "Daha",
+      "sonra",
+      "hala",
+      "bakire",
+      "olup",
+      "olmad\u0131\u011f\u0131n\u0131",
+      "anlamak",
+      "i\u00e7in",
+      "cesedi",
+      "g\u00f6m\u00fcld\u00fc\u011f\u00fc",
+      "yerden",
+      "\u00e7\u0131kar\u0131larak",
+      "Musul",
+      "Adli",
+      "T\u0131p",
+      "Enstit\u00fcs\u00fcne",
+      "g\u00f6nderilmi\u015ftir",
+      "."
+    ],
+    [
+      "Adli",
+      "T\u0131p",
+      "raporuna",
+      "g\u00f6re",
+      "Esved",
+      "\u00f6ld\u00fc\u011f\u00fcnde",
+      "hala",
+      "bakire",
+      "idi",
+      "."
+    ],
+    [
+      "Yap\u0131lan",
+      "otopsi",
+      ";",
+      "kafatas\u0131",
+      "ve",
+      "omurilik",
+      "k\u0131r\u0131lmas\u0131",
+      "sonucu",
+      "\u00f6ld\u00fc\u011f\u00fcn\u00fc",
+      "ortaya",
+      "\u00e7\u0131kard\u0131",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        13
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        6
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        13
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        13
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        13
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        13
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        13
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        4
+      ],
+      "advmod:emph"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        13
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        10
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        13
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        13
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        16
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        6
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        11
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        11
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      "acl"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        16
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        16
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        12
+      ],
+      "flat"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        12
+      ],
+      "flat"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        12
+      ],
+      "flat"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        17
+      ],
+      [
+        2,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        2
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      "flat"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        7
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        7
+      ],
+      "cop"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      "acl"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        9
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        6
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        3
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        9
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        9
+      ],
+      "punct"
+    ]
+  ]
+}

@@ -1,0 +1,41 @@
+Text	Los llamados DESÓRDENES EN FERGUSON hacen referencia a la serie de manifestaciones , tanto pacíficas como violentas , que se iniciaron en la localidad estadounidense de Ferguson , Misuri , un día después del asesinato de Michael Brown , el 9 de agosto de 2014 , y que se prolongaron por más de una semana .	Tras conocerse los detalles del asesinato del joven afroamericano , la policía adoptó de inmediato medidas preventivas contra posibles focos de violencia .	Por otra parte , la familia de Michael Brown , junto con diversas comunidades afroamericanas , iniciaron manifestaciones pacíficas en las inmediaciones del lugar del asesinato .	Michael Brown , un joven de 18 años de edad , murió después de recibir 6 disparos por parte del agente de policía del departamento de Misuri , Darren Wilson , de 28 años de edad .	Brown estaba desarmado y no tenía antecedentes penales .
+Event	T0	referencia	EVENT	42
+Event	T1	serie	EVENT	58
+Event	T2	manifestaciones	EVENT	67
+Event	T3	iniciaron	EVENT	125
+Event	T4	asesinato	EVENT	208
+Event	T5	prolongaron	EVENT	271
+Event	T6	conocerse	EVENT	312
+Event	T7	asesinato	EVENT	339
+Event	T8	adoptó	EVENT	386
+Event	T9	preventivas	EVENT	414
+Event	T10	focos	EVENT	442
+Event	T11	violencia	EVENT	451
+Event	T13	asesinato	EVENT	629
+Event	T14	disparos	EVENT	714
+Event	T15	desarmado	EVENT	834
+Event	T16	murió	EVENT	687
+Event	T17	manifestaciones	EVENT	568
+Relation	T14	T16	CauseEffect	true	disparos	murió
+Relation	T16	T14	EffectCause	true	murió	disparos
+Relation	T0	T15	NoRel	true	referencia	desarmado
+Relation	T0	T17	NoRel	true	referencia	manifestaciones
+Relation	T0	T6	NoRel	true	referencia	conocerse
+Relation	T11	T1	NoRel	true	violencia	serie
+Relation	T11	T2	NoRel	true	violencia	manifestaciones
+Relation	T13	T1	NoRel	true	asesinato	serie
+Relation	T14	T11	NoRel	true	disparos	violencia
+Relation	T14	T4	NoRel	true	disparos	asesinato
+Relation	T14	T8	NoRel	true	disparos	adoptó
+Relation	T15	T2	NoRel	true	desarmado	manifestaciones
+Relation	T15	T5	NoRel	true	desarmado	prolongaron
+Relation	T16	T0	NoRel	true	murió	referencia
+Relation	T16	T1	NoRel	true	murió	serie
+Relation	T2	T15	NoRel	true	manifestaciones	desarmado
+Relation	T3	T5	NoRel	true	iniciaron	prolongaron
+Relation	T4	T1	NoRel	true	asesinato	serie
+Relation	T4	T15	NoRel	true	asesinato	desarmado
+Relation	T7	T0	NoRel	true	asesinato	referencia
+Relation	T7	T6	NoRel	true	asesinato	conocerse
+Relation	T8	T14	NoRel	true	adoptó	disparos
+Relation	T9	T0	NoRel	true	preventivas	referencia

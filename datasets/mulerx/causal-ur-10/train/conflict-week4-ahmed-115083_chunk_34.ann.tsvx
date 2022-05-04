@@ -1,0 +1,56 @@
+Text	1857ء میں ہندو اور مسلمان سپاہیوں کی غیرت نئے کارتوسوں پر لگی گائے اور سور کی چربی کو چکھ کر بیدار ہو گئی جس سے برصغیر میں انگریزوں کے خلاف غیر منظم جنگ کا آغاز ہوا ۔	لکھنؤ اور دہلی کے شیعہ سنی علما نے جہاد کا مشترکہ فتویٰ دیا ۔	شاہ عبد العزیز کے دار الحرب والے فتوے کے برعکس یہ فتویٰ ایک حقیقی خطرہ بن کر سامنے آیا کیوں کہ یہ واضح اور روشن سیاسی ہدف رکھتا تھا ۔	ہندوستان ایسٹ انڈیا کمپنی کے ہاتھوں سے پھسلا تو برطانیہ کی حکومت نے گود لے لیا ۔	رنگون سے آنے والے انگریز فوج کے دستے نے لاکھوں لوگ قتل کر کے چنگیز خان کی سی دھاک بٹھا دی ۔
+Event	T0	لگی	EVENT	58
+Event	T1	چکھ	EVENT	86
+Event	T2	بیدار	EVENT	93
+Event	T3	جنگ	EVENT	149
+Event	T5	جہاد	EVENT	202
+Event	T7	خطرہ	EVENT	295
+Event	T8	پھسلا	EVENT	402
+Event	T9	آنے	EVENT	453
+Event	T10	قتل	EVENT	495
+Event	T4	فتویٰ	EVENT	217
+Event	T6	فتوے	EVENT	262
+Event	T11	فتویٰ	EVENT	279
+Event	T12	رکھتا	EVENT	351
+Event	T13	گود	EVENT	431
+Event	T14	بٹھا	EVENT	526
+Relation	T1	T2	CauseEffect	true	چکھ	بیدار
+Relation	T2	T1	EffectCause	true	بیدار	چکھ
+Relation	T2	T3	CauseEffect	true	بیدار	جنگ
+Relation	T3	T2	EffectCause	true	جنگ	بیدار
+Relation	T2	T5	CauseEffect	true	بیدار	جہاد
+Relation	T5	T2	EffectCause	true	جہاد	بیدار
+Relation	T11	T7	CauseEffect	true	فتویٰ	خطرہ
+Relation	T7	T11	EffectCause	true	خطرہ	فتویٰ
+Relation	T8	T13	CauseEffect	true	پھسلا	گود
+Relation	T13	T8	EffectCause	true	گود	پھسلا
+Relation	T10	T14	CauseEffect	true	قتل	بٹھا
+Relation	T14	T10	EffectCause	true	بٹھا	قتل
+Relation	T1	T14	NoRel	true	چکھ	بٹھا
+Relation	T1	T5	NoRel	true	چکھ	جہاد
+Relation	T1	T6	NoRel	true	چکھ	فتوے
+Relation	T1	T9	NoRel	true	چکھ	آنے
+Relation	T10	T12	NoRel	true	قتل	رکھتا
+Relation	T10	T8	NoRel	true	قتل	پھسلا
+Relation	T11	T10	NoRel	true	فتویٰ	قتل
+Relation	T11	T14	NoRel	true	فتویٰ	بٹھا
+Relation	T11	T4	NoRel	true	فتویٰ	فتویٰ
+Relation	T11	T9	NoRel	true	فتویٰ	آنے
+Relation	T13	T4	NoRel	true	گود	فتویٰ
+Relation	T14	T12	NoRel	true	بٹھا	رکھتا
+Relation	T14	T3	NoRel	true	بٹھا	جنگ
+Relation	T14	T8	NoRel	true	بٹھا	پھسلا
+Relation	T2	T11	NoRel	true	بیدار	فتویٰ
+Relation	T3	T7	NoRel	true	جنگ	خطرہ
+Relation	T4	T10	NoRel	true	فتویٰ	قتل
+Relation	T4	T12	NoRel	true	فتویٰ	رکھتا
+Relation	T5	T0	NoRel	true	جہاد	لگی
+Relation	T5	T1	NoRel	true	جہاد	چکھ
+Relation	T5	T9	NoRel	true	جہاد	آنے
+Relation	T7	T0	NoRel	true	خطرہ	لگی
+Relation	T7	T12	NoRel	true	خطرہ	رکھتا
+Relation	T7	T14	NoRel	true	خطرہ	بٹھا
+Relation	T8	T10	NoRel	true	پھسلا	قتل
+Relation	T8	T4	NoRel	true	پھسلا	فتویٰ
+Relation	T8	T7	NoRel	true	پھسلا	خطرہ
+Relation	T9	T2	NoRel	true	آنے	بیدار

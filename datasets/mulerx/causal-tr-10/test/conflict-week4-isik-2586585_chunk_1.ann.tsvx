@@ -1,0 +1,32 @@
+Text	Bu bölünme neticesinde Litvanya , Letonya ve Estonya ile birlikte Rus alanına düştü .	Ekim 1939'daki Sovyet - Litvanya Karşılıklı Yardım Anlaşmasına göre Litvanya , Vilnius Bölgesi'nin bir kısmı karşılığında Litvanya'daki çeşitli üslere 20.000 Sovyet askerinin yerleştirilmesine izin vermeyi kabul etti .	Etki alanında hakimiyetini tesis etmek için düzenlenen Sovyet eylemleri Finlandiya ile yaşanan Kış Savaşı nedeniyle ertelendi ve Almanya'nın Batı Avrupa'da hızlı ilerlemeler kaydettiği 1940 baharında yeniden başladı .	Bağımsızlık tehdidine rağmen , Litvanya makamları beklenmedik durumları planlamak için etkisiz ve ültimatom için hazırlıksızdı .	Karşılıklı Yardım Anlaşmasına göre ülkede görevli olan Sovyet birlikleri ile etkili askeri direniş sağlamak imkânsızdı .
+Event	T0	bölünme	EVENT	3
+Event	T1	düştü	EVENT	78
+Event	T2	etti	EVENT	298
+Event	T4	eylemleri	EVENT	367
+Event	T6	Savaşı	EVENT	404
+Event	T7	ertelendi	EVENT	421
+Event	T9	başladı	EVENT	513
+Event	T10	tehdidine	EVENT	535
+Event	T11	Anlaşmasına	EVENT	137
+Event	T12	yerleştirilmesine	EVENT	261
+Event	T3	düzenlenen	EVENT	349
+Event	T5	ilerlemeler	EVENT	467
+Event	T8	Anlaşmasına	EVENT	670
+Relation	T0	T1	CauseEffect	true	bölünme	düştü
+Relation	T1	T0	EffectCause	true	düştü	bölünme
+Relation	T11	T2	CauseEffect	true	Anlaşmasına	etti
+Relation	T2	T11	EffectCause	true	etti	Anlaşmasına
+Relation	T6	T7	CauseEffect	true	Savaşı	ertelendi
+Relation	T7	T6	EffectCause	true	ertelendi	Savaşı
+Relation	T5	T9	CauseEffect	true	ilerlemeler	başladı
+Relation	T9	T5	EffectCause	true	başladı	ilerlemeler
+Relation	T0	T12	NoRel	true	bölünme	yerleştirilmesine
+Relation	T0	T2	NoRel	true	bölünme	etti
+Relation	T0	T4	NoRel	true	bölünme	eylemleri
+Relation	T10	T7	NoRel	true	tehdidine	ertelendi
+Relation	T11	T4	NoRel	true	Anlaşmasına	eylemleri
+Relation	T12	T2	NoRel	true	yerleştirilmesine	etti
+Relation	T12	T3	NoRel	true	yerleştirilmesine	düzenlenen
+Relation	T2	T4	NoRel	true	etti	eylemleri
+Relation	T3	T1	NoRel	true	düzenlenen	düştü
+Relation	T6	T12	NoRel	true	Savaşı	yerleştirilmesine

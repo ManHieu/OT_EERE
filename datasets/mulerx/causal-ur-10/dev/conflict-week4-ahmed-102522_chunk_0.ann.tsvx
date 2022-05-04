@@ -1,0 +1,36 @@
+Text	اسلامی امارت افغانستان ( Islamic Emirate of Afghanistan ) ( پشتو : د افغانستان امارات اسلامي ) طالبان کے افغانستان پر بر سر اقتدار آنے پر 1996 میں قائم ہوئی 2001 میں ختم ہوئی ۔	یہ حکومت افغان طالبان نے قائم کیا تھا اور ملا عمر مجاہد اس کی سربراہی کر رہے تھے ۔	یہ ریاست ایک طویل جنگ کے بعد طالبان نے قائم کیا تھا جس سعودی عرب نے اس تسلیم کر لیا تھا ۔	1979ء جب سوویت روس یا عام طور پر جسے روس کہا جاتا تھا ، نے افغانستان پر اپنا قبضہ چاہا جس کے لیے روس ایک اور خود مختار ملک افغانستان میں کود پڑا ، اسی بات نے پورے اسلامی دنیا کو ہلا کر رکھ دیا ۔	اسی کے نتیجے میں روسیوں سے نمٹنے کے لیے مجاہدین کی تنظیم وجود میں آئی جس کو پاکستان ، سعودی عرب ، امریکا سمیت بیشتر اسلامی ممالک نے امداد فراہم کی ۔
+Event	T0	آنے	EVENT	131
+Event	T2	جنگ	EVENT	278
+Event	T3	تسلیم	EVENT	331
+Event	T4	کہا	EVENT	391
+Event	T5	چاہا	EVENT	432
+Event	T6	پڑا	EVENT	491
+Event	T7	نمٹنے	EVENT	572
+Event	T8	آئی	EVENT	611
+Event	T9	قائم	EVENT	147
+Event	T10	ختم	EVENT	166
+Event	T1	قائم	EVENT	299
+Event	T11	ہلا	EVENT	528
+Event	T12	قبضہ	EVENT	427
+Event	T13	امداد	EVENT	677
+Relation	T6	T11	CauseEffect	true	پڑا	ہلا
+Relation	T11	T6	EffectCause	true	ہلا	پڑا
+Relation	T5	T6	CauseEffect	true	چاہا	پڑا
+Relation	T6	T5	EffectCause	true	پڑا	چاہا
+Relation	T7	T8	CauseEffect	true	نمٹنے	آئی
+Relation	T8	T7	EffectCause	true	آئی	نمٹنے
+Relation	T2	T1	CauseEffect	true	جنگ	قائم
+Relation	T1	T2	EffectCause	true	قائم	جنگ
+Relation	T11	T1	NoRel	true	ہلا	قائم
+Relation	T11	T2	NoRel	true	ہلا	جنگ
+Relation	T12	T1	NoRel	true	قبضہ	قائم
+Relation	T12	T6	NoRel	true	قبضہ	پڑا
+Relation	T12	T8	NoRel	true	قبضہ	آئی
+Relation	T13	T9	NoRel	true	امداد	قائم
+Relation	T2	T11	NoRel	true	جنگ	ہلا
+Relation	T2	T8	NoRel	true	جنگ	آئی
+Relation	T3	T6	NoRel	true	تسلیم	پڑا
+Relation	T4	T2	NoRel	true	کہا	جنگ
+Relation	T5	T12	NoRel	true	چاہا	قبضہ
+Relation	T5	T2	NoRel	true	چاہا	جنگ
+Relation	T7	T9	NoRel	true	نمٹنے	قائم

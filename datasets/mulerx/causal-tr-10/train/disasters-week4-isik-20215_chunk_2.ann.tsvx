@@ -1,0 +1,26 @@
+Text	- 73 km uzunluğunda olan bu fayın 30 km'lik batı bölümü 17 Ağustos 1999 depreminde kırılmış bulunuyordu .	12 Kasım 1999 depremi ise fayın 43 km uzunluğundaki doğu bölümünün kırılması sonucunda oluşmuştur .	- Bu deprem , 17 Ağustos 1999 Gölcük Depremine neden olan Kuzey Anadolu Fayı'ın kuzey kolunu oluşturan fayların en doğusunda bulunan segmenti üzerinde gerçekleşmiştir .	- 12 Kasım 1999 depremi , 17 Ağustos 1999'daki kırılmaların Düzce fayının doğu bölümünü tetiklemesi sonucu gelişmiştir .	- Deprem kırığının doğu bölümünü sağ yönlü doğrultu atımlı , Efteni gölü bölümü ise oblik faylanma mekanizmasını yansıtır .
+Event	T0	kırılmış	EVENT	83
+Event	T1	depremi	EVENT	120
+Event	T2	kırılması	EVENT	173
+Event	T3	deprem	EVENT	211
+Event	T4	gerçekleşmiştir	EVENT	357
+Event	T5	kırılmaların	EVENT	422
+Event	T6	faylanma	EVENT	586
+Event	T7	yansıtır	EVENT	609
+Event	T8	depreminde	EVENT	72
+Event	T9	gelişmiştir	EVENT	482
+Relation	T0	T8	CauseEffect	true	kırılmış	depreminde
+Relation	T8	T0	EffectCause	true	depreminde	kırılmış
+Relation	T2	T1	CauseEffect	true	kırılması	depremi
+Relation	T1	T2	EffectCause	true	depremi	kırılması
+Relation	T5	T9	CauseEffect	true	kırılmaların	gelişmiştir
+Relation	T9	T5	EffectCause	true	gelişmiştir	kırılmaların
+Relation	T0	T3	NoRel	true	kırılmış	deprem
+Relation	T0	T6	NoRel	true	kırılmış	faylanma
+Relation	T1	T8	NoRel	true	depremi	depreminde
+Relation	T1	T9	NoRel	true	depremi	gelişmiştir
+Relation	T2	T5	NoRel	true	kırılması	kırılmaların
+Relation	T3	T1	NoRel	true	deprem	depremi
+Relation	T3	T8	NoRel	true	deprem	depreminde
+Relation	T5	T3	NoRel	true	kırılmaların	deprem
+Relation	T5	T8	NoRel	true	kırılmaların	depreminde

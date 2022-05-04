@@ -1,0 +1,41 @@
+Text	1983ء میں کراچی میں شیعہ آبادیوں پر حملے ہوئے جن میں ساٹھ افراد شہید کر دیے گئے ۔	5 جولائی 1985ء کو کوئٹہ میں تکفیری دہشت گردوں نے اپنے دو پولیس والے سہولت کاروں کے ہمراہ پولیس کی وردیاں پہن کر شیعوں کے احتجاجی جلوس پر حملہ کیا جس کے نتیجے میں 25 شیعہ قتل ہو_ئے ۔	البتہ چونکہ یہ دو بدو مقابلے کی کوشش تھی ، لہذا 11 دہشت گرد جوابی کارروائی میں ہلاک ہو گئے ۔	پولیس کے ریکارڈ کے مطابق ہلاک شدگان میں سے دو کی شناخت پولیس اہلکاروں کے طور پر ہوئی ، باقی 9 جعلی وردیاں پہن کر آ_ئے تھے ۔	24 جولائی 1987ء کو پاراچنار میں شیعہ آبادیوں پر افغان مجاہدین کا حملہ شیعوں کی بھرپور تیاری کی وجہ سے ناکام ہو گیا ۔
+Event	T0	شہید	EVENT	64
+Event	T1	جلوس	EVENT	211
+Event	T2	جس	EVENT	228
+Event	T3	نتیجے	EVENT	234
+Event	T4	قتل	EVENT	252
+Event	T5	مقابلے	EVENT	286
+Event	T6	کوشش	EVENT	296
+Event	T7	کارروائی	EVENT	330
+Event	T8	ہلاک	EVENT	343
+Event	T9	شناخت	EVENT	406
+Event	T10	حملہ	EVENT	546
+Event	T11	تیاری	EVENT	567
+Event	T12	ناکام	EVENT	583
+Relation	T2	T4	CauseEffect	true	جس	قتل
+Relation	T4	T2	EffectCause	true	قتل	جس
+Relation	T11	T12	CauseEffect	true	تیاری	ناکام
+Relation	T12	T11	EffectCause	true	ناکام	تیاری
+Relation	T1	T2	NoRel	true	جلوس	جس
+Relation	T1	T7	NoRel	true	جلوس	کارروائی
+Relation	T10	T11	NoRel	true	حملہ	تیاری
+Relation	T10	T2	NoRel	true	حملہ	جس
+Relation	T10	T6	NoRel	true	حملہ	کوشش
+Relation	T11	T1	NoRel	true	تیاری	جلوس
+Relation	T11	T10	NoRel	true	تیاری	حملہ
+Relation	T11	T2	NoRel	true	تیاری	جس
+Relation	T11	T8	NoRel	true	تیاری	ہلاک
+Relation	T12	T1	NoRel	true	ناکام	جلوس
+Relation	T12	T2	NoRel	true	ناکام	جس
+Relation	T12	T3	NoRel	true	ناکام	نتیجے
+Relation	T2	T12	NoRel	true	جس	ناکام
+Relation	T4	T9	NoRel	true	قتل	شناخت
+Relation	T5	T9	NoRel	true	مقابلے	شناخت
+Relation	T6	T10	NoRel	true	کوشش	حملہ
+Relation	T6	T8	NoRel	true	کوشش	ہلاک
+Relation	T7	T1	NoRel	true	کارروائی	جلوس
+Relation	T7	T10	NoRel	true	کارروائی	حملہ
+Relation	T7	T12	NoRel	true	کارروائی	ناکام
+Relation	T8	T3	NoRel	true	ہلاک	نتیجے
+Relation	T9	T2	NoRel	true	شناخت	جس
+Relation	T9	T5	NoRel	true	شناخت	مقابلے

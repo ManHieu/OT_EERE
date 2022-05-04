@@ -1,0 +1,18 @@
+Text	Anti - HIV testi , üniversite hastanelerinin mikrobiyoloji laboratuvarlarında , sigorta ve devlet hastanelerinin laboratuvarlarında ve özel laboratuvarlarda yaptırabilir .	Son zamanlarda HIV virüsünün kandaki varlığının direkt kanıtlanması PCR ( polymerase chain reaction = polimeraz zincir reaksiyonu ) yöntemi ile de yapılabilmektedir .	Pencere dönemi ile ilgili belirsizlikleri gidermek için bazı açıklamalar yapılmalıdır ; zira " Üç Ay " ifadesi , HIV virüsüne maruz kalmış her bünyenin ' üçüncü ayda ' antikor üreteceği gibi yaygın bir yanılgıya yol açmaktadır .	Halbuki pencere döneminin kişiden kişiye değişiklik gösterdiğini vurgulamak gerekir .	" Üç Aylık " süre , uluslararası sağlık kuruluşlarının tüm bünyesel farklılıkları da kapsayacak şekilde belirlediği ' maksimum ' süredir .
+Event	T0	kanıtlanması	EVENT	227
+Event	T1	reaksiyonu	EVENT	291
+Event	T2	açmaktadır	EVENT	555
+Event	T4	belirlediği	EVENT	758
+Event	T5	testi	EVENT	11
+Event	T6	yöntemi	EVENT	304
+Event	T7	kalmış	EVENT	471
+Event	T3	gösterdiğini	EVENT	620
+Relation	T6	T0	CauseEffect	true	yöntemi	kanıtlanması
+Relation	T0	T6	EffectCause	true	kanıtlanması	yöntemi
+Relation	T1	T6	NoRel	true	reaksiyonu	yöntemi
+Relation	T2	T4	NoRel	true	açmaktadır	belirlediği
+Relation	T2	T5	NoRel	true	açmaktadır	testi
+Relation	T3	T5	NoRel	true	gösterdiğini	testi
+Relation	T3	T6	NoRel	true	gösterdiğini	yöntemi
+Relation	T5	T7	NoRel	true	testi	kalmış
+Relation	T6	T7	NoRel	true	yöntemi	kalmış

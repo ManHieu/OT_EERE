@@ -1,0 +1,23 @@
+Text	SEPAHAN HAVAYOLLARI'NIN 5915 SEFER SAYILI UÇUŞU , 10 Ağustos 2014'te Tahran Mehrabad Uluslararası Havalimanı'ndan Tabas Havaalanı'na gitmekte olan Sepahan Havayolları'na ait An - 140 tipi yolcu uçağının kalkışından kısa bir süre sonra düşmesi ile sonuçlanan havacılık kazası .	40 yolcu ve 8 mürettabat personelinden kurtulan olmadığı açıklandı .	Kategori : Tahran tarihi Kategori : İran'daki havacılık kazaları ve olayları Kategori : 2014'te İran Kategori : 2014'te havacılık kazaları ve olayları Kategori : 35° K Kategori : 51° D Kategori : Antonov An - 140 içeren kazalar ve olaylar		
+Event	T0	kalkışından	EVENT	203
+Event	T1	düşmesi	EVENT	235
+Event	T2	kazası	EVENT	268
+Event	T3	açıklandı	EVENT	334
+Event	T4	kazalar	EVENT	566
+Event	T5	olaylar	EVENT	577
+Event	T6	kazaları	EVENT	402
+Event	T7	olayları	EVENT	414
+Event	T8	kazaları	EVENT	476
+Event	T9	olayları	EVENT	488
+Relation	T1	T3	CauseEffect	true	düşmesi	açıklandı
+Relation	T3	T1	EffectCause	true	açıklandı	düşmesi
+Relation	T2	T3	CauseEffect	true	kazası	açıklandı
+Relation	T3	T2	EffectCause	true	açıklandı	kazası
+Relation	T0	T3	NoRel	true	kalkışından	açıklandı
+Relation	T1	T5	NoRel	true	düşmesi	olaylar
+Relation	T2	T7	NoRel	true	kazası	olayları
+Relation	T4	T9	NoRel	true	kazalar	olayları
+Relation	T6	T5	NoRel	true	kazaları	olaylar
+Relation	T8	T2	NoRel	true	kazaları	kazası
+Relation	T9	T0	NoRel	true	olayları	kalkışından
+Relation	T9	T6	NoRel	true	olayları	kazaları

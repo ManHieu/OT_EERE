@@ -1,0 +1,50 @@
+Text	Apenas existe información acerca del accidente .	Parece que se produjo a primera hora de la noche , que llovía fuertemente y que la estación donde se produjo el siniestro se había quedado sin electricidad .	Los dos trenes que colisionaron habrían sido un mercancías procedente de Sant Vicenç de Calders y uno de viajeros que desde Barcelona se dirigía a Vilafranca del Penedès , el primero de los cuales iría ocupado por gran cantidad de personas , principalmente soldados y gente que huía del avance del ejército franquista .	No se conoce con exactitud las causas que provocaron el siniestro ; algunas fuentes se refieren a la falta de visibilidad debido a intensa lluvia ; otras a un fallo de las señales .	Tampoco se conoce el número exacto de víctimas resultantes del accidente , ofreciendo los medios de prensa anteriormente citados cifras de fallecidos que varían entre 30 y 65 , mientras que las de heridos oscilan entre 30 y 200
+Event	T0	accidente	EVENT	37
+Event	T1	produjo	EVENT	63
+Event	T2	llovía	EVENT	104
+Event	T3	produjo	EVENT	150
+Event	T4	siniestro	EVENT	161
+Event	T5	colisionaron	EVENT	226
+Event	T6	dirigía	EVENT	344
+Event	T7	ocupado	EVENT	409
+Event	T8	huía	EVENT	485
+Event	T9	avance	EVENT	494
+Event	T10	provocaron	EVENT	569
+Event	T11	siniestro	EVENT	583
+Event	T12	refieren	EVENT	614
+Event	T13	lluvia	EVENT	666
+Event	T14	fallo	EVENT	686
+Event	T15	accidente	EVENT	772
+Event	T16	ofreciendo	EVENT	784
+Event	T17	cifras	EVENT	838
+Event	T18	fallecidos	EVENT	848
+Relation	T5	T4	CauseEffect	true	colisionaron	siniestro
+Relation	T4	T5	EffectCause	true	siniestro	colisionaron
+Relation	T0	T11	NoRel	true	accidente	siniestro
+Relation	T0	T15	NoRel	true	accidente	accidente
+Relation	T1	T0	NoRel	true	produjo	accidente
+Relation	T1	T12	NoRel	true	produjo	refieren
+Relation	T10	T1	NoRel	true	provocaron	produjo
+Relation	T10	T11	NoRel	true	provocaron	siniestro
+Relation	T10	T5	NoRel	true	provocaron	colisionaron
+Relation	T11	T2	NoRel	true	siniestro	llovía
+Relation	T11	T8	NoRel	true	siniestro	huía
+Relation	T15	T6	NoRel	true	accidente	dirigía
+Relation	T16	T10	NoRel	true	ofreciendo	provocaron
+Relation	T16	T13	NoRel	true	ofreciendo	lluvia
+Relation	T17	T4	NoRel	true	cifras	siniestro
+Relation	T18	T15	NoRel	true	fallecidos	accidente
+Relation	T18	T8	NoRel	true	fallecidos	huía
+Relation	T2	T0	NoRel	true	llovía	accidente
+Relation	T2	T6	NoRel	true	llovía	dirigía
+Relation	T3	T16	NoRel	true	produjo	ofreciendo
+Relation	T3	T17	NoRel	true	produjo	cifras
+Relation	T4	T14	NoRel	true	siniestro	fallo
+Relation	T4	T2	NoRel	true	siniestro	llovía
+Relation	T5	T3	NoRel	true	colisionaron	produjo
+Relation	T6	T12	NoRel	true	dirigía	refieren
+Relation	T6	T14	NoRel	true	dirigía	fallo
+Relation	T7	T14	NoRel	true	ocupado	fallo
+Relation	T7	T15	NoRel	true	ocupado	accidente
+Relation	T8	T3	NoRel	true	huía	produjo
+Relation	T9	T8	NoRel	true	avance	huía

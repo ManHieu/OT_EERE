@@ -1,0 +1,28 @@
+Text	El VUELO 178 DE URAL AIRLINES fue un vuelo regular de pasajeros desde Aeropuerto Internacional de Moscú-Sheremétievo en Moscú ( Rusia ) al Aeropuerto Internacional de Simferópol en Simferópol , Crimea , Rusia .	El 15 de agosto de 2019 , el Airbus A321 que operaba el vuelo sufrió un choque contra una bandada de pájaros que paralizaron los motores , provocando que el piloto tuviera que aterrizar de emergencia en un campo de maíz .	Sin víctimas mortales de los 233 ocupantes , 74 necesitaron asistencia médica y solo una persona fue hospitalizada .	[ La aeronave accidentada en junio de 2018 .	] El avión era un Airbus A321-211 , registrado en Bermudas como VQ-BOZ , msn 2117 .
+Event	T0	VUELO	EVENT	3
+Event	T1	operaba	EVENT	256
+Event	T2	sufrió	EVENT	273
+Event	T3	choque	EVENT	283
+Event	T4	paralizaron	EVENT	324
+Event	T5	provocando	EVENT	350
+Event	T6	aterrizar	EVENT	387
+Event	T7	emergencia	EVENT	400
+Event	T8	hospitalizada	EVENT	534
+Event	T9	accidentada	EVENT	564
+Event	T10	registrado	EVENT	631
+Relation	T3	T4	CauseEffect	true	choque	paralizaron
+Relation	T4	T3	EffectCause	true	paralizaron	choque
+Relation	T4	T6	CauseEffect	true	paralizaron	aterrizar
+Relation	T6	T4	EffectCause	true	aterrizar	paralizaron
+Relation	T0	T4	NoRel	true	VUELO	paralizaron
+Relation	T0	T6	NoRel	true	VUELO	aterrizar
+Relation	T0	T8	NoRel	true	VUELO	hospitalizada
+Relation	T1	T2	NoRel	true	operaba	sufrió
+Relation	T1	T5	NoRel	true	operaba	provocando
+Relation	T1	T9	NoRel	true	operaba	accidentada
+Relation	T10	T8	NoRel	true	registrado	hospitalizada
+Relation	T5	T2	NoRel	true	provocando	sufrió
+Relation	T6	T2	NoRel	true	aterrizar	sufrió
+Relation	T6	T3	NoRel	true	aterrizar	choque
+Relation	T8	T4	NoRel	true	hospitalizada	paralizaron
+Relation	T8	T5	NoRel	true	hospitalizada	provocando

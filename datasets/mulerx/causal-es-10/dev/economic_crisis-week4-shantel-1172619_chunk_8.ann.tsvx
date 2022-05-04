@@ -1,0 +1,50 @@
+Text	En 1937 , los nazis aprobaron la Ley del Gran Hamburgo , en virtud de la cual la cercana ciudad hanseática de Hamburgo se amplió para incluir ciudades que anteriormente pertenecían a la provincia prusiana de Schleswig -Holstein .	Para compensar a Prusia por estas pérdidas ( y en parte porque Adolf Hitler tenía una aversión personal por Lübeck después de que se negara a permitirle hacer campaña allí en 1932 y porque la bandera de Lübeck era extremadamente similar a la bandera de Polonia , que Hitler odiaba después de 1935 debido a la muerte de Józef Piłsudski ) .	El estado de Lübeck , de 711 años de duración , llegó a su fin y casi todo su territorio se incorporó a Schleswig -Holstein .	Lübeck fue ocupado por el ejército británico en los últimos días de la Segunda Guerra Mundial .	El ejército soviético luego ocupó todo el territorio al este de la ciudad , según lo acordado por las potencias aliadas .
+Event	T0	aprobaron	EVENT	20
+Event	T1	amplió	EVENT	122
+Event	T2	compensar	EVENT	235
+Event	T3	pérdidas	EVENT	264
+Event	T4	aversión	EVENT	316
+Event	T5	negara	EVENT	363
+Event	T6	muerte	EVENT	539
+Event	T7	llegó	EVENT	617
+Event	T8	incorporó	EVENT	661
+Event	T9	ocupado	EVENT	706
+Event	T10	ocupó	EVENT	819
+Event	T11	acordado	EVENT	876
+Event	T12	Ley del Gran Hamburgo	EVENT	33
+Event	T13	Segunda Guerra Mundial	EVENT	766
+Relation	T12	T1	CauseEffect	true	Ley del Gran Hamburgo	amplió
+Relation	T1	T12	EffectCause	true	amplió	Ley del Gran Hamburgo
+Relation	T0	T10	NoRel	true	aprobaron	ocupó
+Relation	T0	T12	NoRel	true	aprobaron	Ley del Gran Hamburgo
+Relation	T0	T2	NoRel	true	aprobaron	compensar
+Relation	T0	T5	NoRel	true	aprobaron	negara
+Relation	T0	T9	NoRel	true	aprobaron	ocupado
+Relation	T1	T11	NoRel	true	amplió	acordado
+Relation	T1	T3	NoRel	true	amplió	pérdidas
+Relation	T10	T0	NoRel	true	ocupó	aprobaron
+Relation	T10	T13	NoRel	true	ocupó	Segunda Guerra Mundial
+Relation	T11	T12	NoRel	true	acordado	Ley del Gran Hamburgo
+Relation	T11	T7	NoRel	true	acordado	llegó
+Relation	T12	T0	NoRel	true	Ley del Gran Hamburgo	aprobaron
+Relation	T12	T11	NoRel	true	Ley del Gran Hamburgo	acordado
+Relation	T12	T3	NoRel	true	Ley del Gran Hamburgo	pérdidas
+Relation	T13	T11	NoRel	true	Segunda Guerra Mundial	acordado
+Relation	T13	T4	NoRel	true	Segunda Guerra Mundial	aversión
+Relation	T2	T0	NoRel	true	compensar	aprobaron
+Relation	T2	T9	NoRel	true	compensar	ocupado
+Relation	T3	T13	NoRel	true	pérdidas	Segunda Guerra Mundial
+Relation	T4	T11	NoRel	true	aversión	acordado
+Relation	T5	T1	NoRel	true	negara	amplió
+Relation	T5	T2	NoRel	true	negara	compensar
+Relation	T6	T1	NoRel	true	muerte	amplió
+Relation	T6	T12	NoRel	true	muerte	Ley del Gran Hamburgo
+Relation	T7	T0	NoRel	true	llegó	aprobaron
+Relation	T7	T12	NoRel	true	llegó	Ley del Gran Hamburgo
+Relation	T7	T6	NoRel	true	llegó	muerte
+Relation	T7	T8	NoRel	true	llegó	incorporó
+Relation	T8	T4	NoRel	true	incorporó	aversión
+Relation	T8	T5	NoRel	true	incorporó	negara
+Relation	T8	T6	NoRel	true	incorporó	muerte
+Relation	T9	T3	NoRel	true	ocupado	pérdidas
+Relation	T9	T4	NoRel	true	ocupado	aversión

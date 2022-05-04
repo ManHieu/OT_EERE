@@ -1,0 +1,98 @@
+Text	El ente persigue a Barley para hacerse con la gema , lo que obliga a Ian a tratar de defender a su hermano , pero él le pide que complete el hechizo de visita , a lo que este le ofrece que pase los minutos restantes del hechizo con su padre .	Ian consigue completar el hechizo , lo que restaura la mitad de Wilden mientras a la escena llegan Laurel y Corey , que intentan destruir al dragón con la espada de la mantícora .	Sin embargo , el dragón noquea a Corey y se deshace del báculo antes de aproximarse al semi restaurado Wilden y a Barley para obtener la gema .	Ian consigue crearse un nuevo báculo a través de una astilla del original y destruye al dragón .	Los restos del concreto encierran a Ian , que solo puede ver cómo Barley tiene una breve charla con Wilden antes de que este se desvanezca , habiéndose completado las 24 horas .
+Event	T0	persigue	EVENT	8
+Event	T1	obliga	EVENT	60
+Event	T2	tratar	EVENT	75
+Event	T3	defender	EVENT	85
+Event	T4	pide	EVENT	120
+Event	T5	complete	EVENT	129
+Event	T6	hechizo	EVENT	141
+Event	T7	visita	EVENT	152
+Event	T8	pase	EVENT	189
+Event	T9	hechizo	EVENT	220
+Event	T10	completar	EVENT	256
+Event	T11	hechizo	EVENT	269
+Event	T12	restaura	EVENT	286
+Event	T13	llegan	EVENT	335
+Event	T14	destruir	EVENT	372
+Event	T15	noquea	EVENT	447
+Event	T16	deshace	EVENT	467
+Event	T17	aproximarse	EVENT	495
+Event	T18	obtener	EVENT	549
+Event	T19	crearse	EVENT	580
+Event	T20	destruye	EVENT	643
+Event	T21	restos	EVENT	668
+Event	T22	encierran	EVENT	688
+Event	T23	charla	EVENT	753
+Event	T24	desvanezca	EVENT	792
+Event	T25	completado	EVENT	816
+Relation	T10	T12	CauseEffect	true	completar	restaura
+Relation	T12	T10	EffectCause	true	restaura	completar
+Relation	T19	T20	CauseEffect	true	crearse	destruye
+Relation	T20	T19	EffectCause	true	destruye	crearse
+Relation	T0	T1	NoRel	true	persigue	obliga
+Relation	T0	T5	NoRel	true	persigue	complete
+Relation	T0	T7	NoRel	true	persigue	visita
+Relation	T1	T11	NoRel	true	obliga	hechizo
+Relation	T1	T21	NoRel	true	obliga	restos
+Relation	T10	T16	NoRel	true	completar	deshace
+Relation	T10	T21	NoRel	true	completar	restos
+Relation	T10	T22	NoRel	true	completar	encierran
+Relation	T10	T24	NoRel	true	completar	desvanezca
+Relation	T10	T8	NoRel	true	completar	pase
+Relation	T11	T1	NoRel	true	hechizo	obliga
+Relation	T11	T17	NoRel	true	hechizo	aproximarse
+Relation	T12	T15	NoRel	true	restaura	noquea
+Relation	T12	T3	NoRel	true	restaura	defender
+Relation	T13	T2	NoRel	true	llegan	tratar
+Relation	T13	T8	NoRel	true	llegan	pase
+Relation	T14	T21	NoRel	true	destruir	restos
+Relation	T14	T6	NoRel	true	destruir	hechizo
+Relation	T15	T17	NoRel	true	noquea	aproximarse
+Relation	T15	T22	NoRel	true	noquea	encierran
+Relation	T16	T10	NoRel	true	deshace	completar
+Relation	T16	T15	NoRel	true	deshace	noquea
+Relation	T16	T17	NoRel	true	deshace	aproximarse
+Relation	T16	T2	NoRel	true	deshace	tratar
+Relation	T16	T24	NoRel	true	deshace	desvanezca
+Relation	T17	T8	NoRel	true	aproximarse	pase
+Relation	T18	T14	NoRel	true	obtener	destruir
+Relation	T19	T1	NoRel	true	crearse	obliga
+Relation	T19	T14	NoRel	true	crearse	destruir
+Relation	T19	T21	NoRel	true	crearse	restos
+Relation	T19	T4	NoRel	true	crearse	pide
+Relation	T2	T21	NoRel	true	tratar	restos
+Relation	T20	T13	NoRel	true	destruye	llegan
+Relation	T20	T18	NoRel	true	destruye	obtener
+Relation	T20	T25	NoRel	true	destruye	completado
+Relation	T20	T5	NoRel	true	destruye	complete
+Relation	T21	T0	NoRel	true	restos	persigue
+Relation	T21	T5	NoRel	true	restos	complete
+Relation	T22	T4	NoRel	true	encierran	pide
+Relation	T23	T13	NoRel	true	charla	llegan
+Relation	T23	T20	NoRel	true	charla	destruye
+Relation	T23	T4	NoRel	true	charla	pide
+Relation	T24	T18	NoRel	true	desvanezca	obtener
+Relation	T24	T3	NoRel	true	desvanezca	defender
+Relation	T24	T9	NoRel	true	desvanezca	hechizo
+Relation	T25	T1	NoRel	true	completado	obliga
+Relation	T3	T16	NoRel	true	defender	deshace
+Relation	T3	T19	NoRel	true	defender	crearse
+Relation	T3	T24	NoRel	true	defender	desvanezca
+Relation	T4	T2	NoRel	true	pide	tratar
+Relation	T4	T7	NoRel	true	pide	visita
+Relation	T4	T8	NoRel	true	pide	pase
+Relation	T5	T12	NoRel	true	complete	restaura
+Relation	T5	T18	NoRel	true	complete	obtener
+Relation	T5	T22	NoRel	true	complete	encierran
+Relation	T5	T9	NoRel	true	complete	hechizo
+Relation	T7	T12	NoRel	true	visita	restaura
+Relation	T7	T2	NoRel	true	visita	tratar
+Relation	T7	T22	NoRel	true	visita	encierran
+Relation	T7	T23	NoRel	true	visita	charla
+Relation	T7	T5	NoRel	true	visita	complete
+Relation	T7	T8	NoRel	true	visita	pase
+Relation	T8	T14	NoRel	true	pase	destruir
+Relation	T8	T9	NoRel	true	pase	hechizo
+Relation	T9	T1	NoRel	true	hechizo	obliga
+Relation	T9	T25	NoRel	true	hechizo	completado
+Relation	T9	T6	NoRel	true	hechizo	hechizo

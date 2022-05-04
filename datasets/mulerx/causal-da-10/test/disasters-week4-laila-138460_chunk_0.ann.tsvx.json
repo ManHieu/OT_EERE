@@ -1,0 +1,1025 @@
+{
+  "id": "disasters-week4-laila-138460_chunk_0.ann.tsvx",
+  "text": "thumb| 300 px | Kanonslag under eksplosion\tEt KANONSLAG er en kraftig pap/papirbeholder med krudt .\tDet er cirka 10 til 15 centimeter langt , ofte sort og har en cirka 4 til 5 centimeter lang lunte .\tN\u00e5r kanonslaget ant\u00e6ndes , br\u00e6nder krudtet inde i r\u00f8ret , og det kraftige tryk f\u00e5r beholderen til at eksplodere .\tDer lyder et meget h\u00f8jt knald , som n\u00e5r en kanon affyres .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "ant\u00e6ndes",
+      "label": "EVENT",
+      "char_index": 216,
+      "sid": 3,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "f\u00e5r",
+      "label": "EVENT",
+      "char_index": 279,
+      "sid": 3,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "eksplodere",
+      "label": "EVENT",
+      "char_index": 301,
+      "sid": 3,
+      "tid": [
+        18,
+        19
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "lyder",
+      "label": "EVENT",
+      "char_index": 318,
+      "sid": 4,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "knald",
+      "label": "EVENT",
+      "char_index": 338,
+      "sid": 4,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "affyres",
+      "label": "EVENT",
+      "char_index": 363,
+      "sid": 4,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "Kanonslag",
+      "label": "EVENT",
+      "char_index": 16,
+      "sid": 0,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "eksplosion",
+      "label": "EVENT",
+      "char_index": 32,
+      "sid": 0,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "KANONSLAG",
+      "label": "EVENT",
+      "char_index": 46,
+      "sid": 1,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "kanonslaget",
+      "label": "EVENT",
+      "char_index": 204,
+      "sid": 3,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "br\u00e6nder",
+      "label": "EVENT",
+      "char_index": 227,
+      "sid": 3,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "tryk",
+      "label": "EVENT",
+      "char_index": 274,
+      "sid": 3,
+      "tid": [
+        13,
+        14
+      ]
+    }
+  },
+  "relation": {
+    "T11-T2": "CauseEffect",
+    "T2-T11": "EffectCause",
+    "T0-T10": "CauseEffect",
+    "T10-T0": "EffectCause",
+    "T2-T4": "CauseEffect",
+    "T4-T2": "EffectCause",
+    "T0-T8": "NoRel",
+    "T1-T9": "NoRel",
+    "T10-T5": "NoRel",
+    "T11-T10": "NoRel",
+    "T2-T9": "NoRel",
+    "T4-T1": "NoRel",
+    "T4-T9": "NoRel",
+    "T5-T6": "NoRel",
+    "T8-T1": "NoRel",
+    "T8-T10": "NoRel",
+    "T9-T1": "NoRel",
+    "T9-T11": "NoRel",
+    "T9-T2": "NoRel"
+  },
+  "sentence": [
+    [
+      "thumb|",
+      "300",
+      "px",
+      "|",
+      "Kanonslag",
+      "under",
+      "eksplosion"
+    ],
+    [
+      "Et",
+      "KANONSLAG",
+      "er",
+      "en",
+      "kraftig",
+      "pap/papirbeholder",
+      "med",
+      "krudt",
+      "."
+    ],
+    [
+      "Det",
+      "er",
+      "cirka",
+      "10",
+      "til",
+      "15",
+      "centimeter",
+      "langt",
+      ",",
+      "ofte",
+      "sort",
+      "og",
+      "har",
+      "en",
+      "cirka",
+      "4",
+      "til",
+      "5",
+      "centimeter",
+      "lang",
+      "lunte",
+      "."
+    ],
+    [
+      "N\u00e5r",
+      "kanonslaget",
+      "ant\u00e6ndes",
+      ",",
+      "br\u00e6nder",
+      "krudtet",
+      "inde",
+      "i",
+      "r\u00f8ret",
+      ",",
+      "og",
+      "det",
+      "kraftige",
+      "tryk",
+      "f\u00e5r",
+      "beholderen",
+      "til",
+      "at",
+      "eksplodere",
+      "."
+    ],
+    [
+      "Der",
+      "lyder",
+      "et",
+      "meget",
+      "h\u00f8jt",
+      "knald",
+      ",",
+      "som",
+      "n\u00e5r",
+      "en",
+      "kanon",
+      "affyres",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      "nummod"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        0
+      ],
+      "list"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        0
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        0
+      ],
+      "list"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        5
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      "cop"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        5
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        5
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        7
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        7
+      ],
+      "cop"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        6
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        6
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        7
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        7
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        20
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        18
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        18
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        18
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        17
+      ],
+      [
+        2,
+        19
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        18
+      ],
+      [
+        2,
+        19
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        20
+      ],
+      [
+        2,
+        12
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        21
+      ],
+      [
+        2,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        2
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        4
+      ],
+      "obl:loc"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        14
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        13
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        4
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        14
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        18
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        18
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        14
+      ],
+      "advcl"
+    ],
+    [
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      "expl"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        5
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        1
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        11
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        7
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        11
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        1
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        1
+      ],
+      "punct"
+    ]
+  ]
+}

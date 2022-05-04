@@ -1,0 +1,53 @@
+Text	اس قانون سے امریکی آئین کی چوتھی ترمیم عضو معطل ہو کر رہ گئی ہے ۔	امریکی انتظامیہ نے ایک امریکی شہری ہوزے پاڈیلا پر دہشت گردی کے الزامات لگا کر خصوصی عدالت میں مقدمہ چلانے میں ناکامی کے بعد فلوریڈا کی ایک jury سے چھوٹے موٹے دہشت گردی الزامات میں سزا کا فیصلہ حاصل کر لیا ۔	فلوریڈا یونیوسٹی پروفیسر سمیع کے خلاف دہشت الزامات میں عدالتی ناکامی کے بعد امریکی انتظامیہ نے اسے ملک بَدر کر دیا ۔	امریکہ میں مقیم 5000 مسلمان افراد کو بغیر کسی الزام کے جیل میں بند کر دیا گیا ۔	امریکی ایف ۔بی ۔آئی ۔ باقاعدہ مسلمانوں کو پھانسنے کے لیے عادی مجرموں کو بھاری رقوم دیتی ہے جو باتوں باتوں میں نوجوان مسلمانوں سے " قابلِ اعتراض " جملے کہلوا لیتے ہیں جس پر امریکی عدالتوں سے آسانی سے سزا کا فیصلہ حاصل کر لیا جاتا ہے ۔
+Event	T0	ترمیم	EVENT	33
+Event	T1	معطل	EVENT	43
+Event	T2	گئی	EVENT	57
+Event	T3	چلانے	EVENT	166
+Event	T4	ناکامی	EVENT	176
+Event	T5	الزامات	EVENT	234
+Event	T6	سزا	EVENT	246
+Event	T7	حاصل	EVENT	259
+Event	T8	لیا	EVENT	267
+Event	T9	الزامات	EVENT	316
+Event	T10	ناکامی	EVENT	335
+Event	T11	دیا	EVENT	384
+Event	T12	الزام	EVENT	436
+Event	T13	بند	EVENT	453
+Event	T14	پھانسنے	EVENT	512
+Event	T15	دیتی	EVENT	553
+Event	T16	سزا	EVENT	669
+Event	T17	فیصلہ	EVENT	676
+Relation	T10	T11	CauseEffect	true	ناکامی	دیا
+Relation	T11	T10	EffectCause	true	دیا	ناکامی
+Relation	T15	T14	CauseEffect	true	دیتی	پھانسنے
+Relation	T14	T15	EffectCause	true	پھانسنے	دیتی
+Relation	T0	T10	NoRel	true	ترمیم	ناکامی
+Relation	T0	T11	NoRel	true	ترمیم	دیا
+Relation	T0	T17	NoRel	true	ترمیم	فیصلہ
+Relation	T1	T9	NoRel	true	معطل	الزامات
+Relation	T10	T14	NoRel	true	ناکامی	پھانسنے
+Relation	T10	T3	NoRel	true	ناکامی	چلانے
+Relation	T11	T7	NoRel	true	دیا	حاصل
+Relation	T12	T1	NoRel	true	الزام	معطل
+Relation	T12	T13	NoRel	true	الزام	بند
+Relation	T13	T12	NoRel	true	بند	الزام
+Relation	T15	T11	NoRel	true	دیتی	دیا
+Relation	T16	T7	NoRel	true	سزا	حاصل
+Relation	T17	T14	NoRel	true	فیصلہ	پھانسنے
+Relation	T17	T6	NoRel	true	فیصلہ	سزا
+Relation	T17	T9	NoRel	true	فیصلہ	الزامات
+Relation	T2	T6	NoRel	true	گئی	سزا
+Relation	T3	T0	NoRel	true	چلانے	ترمیم
+Relation	T4	T12	NoRel	true	ناکامی	الزام
+Relation	T4	T14	NoRel	true	ناکامی	پھانسنے
+Relation	T4	T2	NoRel	true	ناکامی	گئی
+Relation	T5	T1	NoRel	true	الزامات	معطل
+Relation	T5	T2	NoRel	true	الزامات	گئی
+Relation	T5	T8	NoRel	true	الزامات	لیا
+Relation	T7	T6	NoRel	true	حاصل	سزا
+Relation	T8	T17	NoRel	true	لیا	فیصلہ
+Relation	T9	T0	NoRel	true	الزامات	ترمیم
+Relation	T9	T1	NoRel	true	الزامات	معطل
+Relation	T9	T13	NoRel	true	الزامات	بند
+Relation	T9	T7	NoRel	true	الزامات	حاصل
+Relation	T9	T8	NoRel	true	الزامات	لیا

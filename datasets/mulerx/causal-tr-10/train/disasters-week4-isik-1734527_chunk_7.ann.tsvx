@@ -1,0 +1,43 @@
+Text	Zavidoviçi kentinde bir köprü Bosna Nehri üzerine yıkıldı .	Saraybosna'daki Miljacka Nehri tarihinin en yüksek seviyesine yükseldi .	Hrasno Donje köyü'nün Parići mezrası ve Kalesija kasabası toprak kaymaları sebebiyle altyapı ciddi zarar gördü ve birçok ev yıkıldı .	Bosna Hersek Mayınları Kaldırma Merkezi ( BH MAC ) , yaşanan heyelânlar ve suların taşınması sonucu , 1991- 1999 yılları arasında yaşanan Yugoslavya Savaşları ve Bosna Savaşı döneminde yerleştirilen bir milyon civarında kara mayınınından 120.000 tanesinin 900 kilometrekarelik bir alana yayıldığı yer değiştirdiğini açıkladı .	küçükresim | sol | Selin ardından Krupanj şehri , Sırbistan , 19 Mayıs 2014 Sırbistan , sel felaketinde en büyük tahribatı yaşayan ülke oldu .
+Event	T0	yıkıldı	EVENT	50
+Event	T1	yükseldi	EVENT	122
+Event	T2	kaymaları	EVENT	198
+Event	T3	gördü	EVENT	238
+Event	T4	yıkıldı	EVENT	257
+Event	T5	heyelânlar	EVENT	328
+Event	T6	taşınması	EVENT	350
+Event	T8	Savaşı	EVENT	435
+Event	T9	yerleştirilen	EVENT	452
+Event	T10	yayıldığı	EVENT	554
+Event	T11	açıkladı	EVENT	583
+Event	T12	felaketinde	EVENT	686
+Event	T13	oldu	EVENT	730
+Event	T14	Savaşları	EVENT	416
+Relation	T2	T3	CauseEffect	true	kaymaları	gördü
+Relation	T3	T2	EffectCause	true	gördü	kaymaları
+Relation	T2	T4	CauseEffect	true	kaymaları	yıkıldı
+Relation	T4	T2	EffectCause	true	yıkıldı	kaymaları
+Relation	T5	T11	CauseEffect	true	heyelânlar	açıkladı
+Relation	T11	T5	EffectCause	true	açıkladı	heyelânlar
+Relation	T6	T11	CauseEffect	true	taşınması	açıkladı
+Relation	T11	T6	EffectCause	true	açıkladı	taşınması
+Relation	T0	T11	NoRel	true	yıkıldı	açıkladı
+Relation	T0	T12	NoRel	true	yıkıldı	felaketinde
+Relation	T1	T10	NoRel	true	yükseldi	yayıldığı
+Relation	T1	T13	NoRel	true	yükseldi	oldu
+Relation	T1	T14	NoRel	true	yükseldi	Savaşları
+Relation	T1	T4	NoRel	true	yükseldi	yıkıldı
+Relation	T1	T6	NoRel	true	yükseldi	taşınması
+Relation	T10	T14	NoRel	true	yayıldığı	Savaşları
+Relation	T10	T5	NoRel	true	yayıldığı	heyelânlar
+Relation	T11	T8	NoRel	true	açıkladı	Savaşı
+Relation	T12	T0	NoRel	true	felaketinde	yıkıldı
+Relation	T13	T1	NoRel	true	oldu	yükseldi
+Relation	T13	T3	NoRel	true	oldu	gördü
+Relation	T13	T5	NoRel	true	oldu	heyelânlar
+Relation	T13	T8	NoRel	true	oldu	Savaşı
+Relation	T2	T5	NoRel	true	kaymaları	heyelânlar
+Relation	T3	T6	NoRel	true	gördü	taşınması
+Relation	T4	T12	NoRel	true	yıkıldı	felaketinde
+Relation	T6	T2	NoRel	true	taşınması	kaymaları
+Relation	T9	T5	NoRel	true	yerleştirilen	heyelânlar

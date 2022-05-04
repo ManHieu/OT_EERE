@@ -1,0 +1,32 @@
+Text	Her var det første tilfælde den 13. december .	Franske læger ved Albert Schweitzer-hospitalet i Colmar i Alsace har ved analyse af røntgenbilleder fundet , at det første tilfælde i Europa muligvis allerede var til stede den 16. november 2019 .	Dette førte i første omgang ikke til registrerede sygdomstilfælde .	Her hed det sig først , at en 61-årig mand var død af lungebetændelse i Wuhan som følge at en ny virus .	Yderligere 41 personer var smittet , og 739 var i karantæne , og der ikke var flere smittede siden den 3. januar ifølge de kinesiske sundhedsmyndigheder .
+Event	T0	tilfælde	EVENT	19
+Event	T1	analyse	EVENT	120
+Event	T2	fundet	EVENT	147
+Event	T3	tilfælde	EVENT	170
+Event	T4	stede	EVENT	214
+Event	T5	førte	EVENT	250
+Event	T6	hed	EVENT	316
+Event	T7	død	EVENT	359
+Event	T8	lungebetændelse	EVENT	366
+Event	T9	virus	EVENT	409
+Event	T10	smittet	EVENT	444
+Event	T11	karantæne	EVENT	467
+Event	T12	smittede	EVENT	501
+Event	T13	sygdomstilfælde	EVENT	294
+Relation	T1	T2	CauseEffect	true	analyse	fundet
+Relation	T2	T1	EffectCause	true	fundet	analyse
+Relation	T8	T7	CauseEffect	true	lungebetændelse	død
+Relation	T7	T8	EffectCause	true	død	lungebetændelse
+Relation	T9	T8	CauseEffect	true	virus	lungebetændelse
+Relation	T8	T9	EffectCause	true	lungebetændelse	virus
+Relation	T0	T7	NoRel	true	tilfælde	død
+Relation	T10	T2	NoRel	true	smittet	fundet
+Relation	T10	T5	NoRel	true	smittet	førte
+Relation	T11	T2	NoRel	true	karantæne	fundet
+Relation	T11	T6	NoRel	true	karantæne	hed
+Relation	T13	T11	NoRel	true	sygdomstilfælde	karantæne
+Relation	T3	T2	NoRel	true	tilfælde	fundet
+Relation	T5	T3	NoRel	true	førte	tilfælde
+Relation	T5	T4	NoRel	true	førte	stede
+Relation	T5	T7	NoRel	true	førte	død
+Relation	T9	T13	NoRel	true	virus	sygdomstilfælde

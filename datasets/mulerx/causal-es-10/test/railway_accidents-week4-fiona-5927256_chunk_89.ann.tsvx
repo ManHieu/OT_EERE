@@ -1,0 +1,27 @@
+Text	- 18 de junio de 1963 .	Cerca de Gor ( Granada ) un tren arrolló a un turismo en un paso a nivel , falleciendo los seis ocupantes del mismo .	- 7 de febrero de 1964 .	En la estación de San Vicente de Calders ( Tarragona ) , el “ Cataluña expreso ” Port Bou_–_Madrid chocó con un tren rápido que cubría la relación entre la capital de España y Barcelona , con el balance de tres personas muertas y cincuenta y cuatro heridas .	- El 10 de febrero de 1965 , ocurrió el Accidente ferroviario de Grisén entre las estaciones de Grisén y Pinseque , en la provincia de Zaragoza , al declararse un grave incendio que afectó a tres coches del tren correo Madrid-Barcelona .
+Event	T0	arrolló	EVENT	57
+Event	T1	falleciendo	EVENT	99
+Event	T2	chocó	EVENT	266
+Event	T3	cubría	EVENT	295
+Event	T4	balance	EVENT	362
+Event	T5	muertas	EVENT	387
+Event	T6	heridas	EVENT	416
+Event	T7	ocurrió	EVENT	455
+Event	T8	Accidente	EVENT	466
+Event	T9	declararse	EVENT	575
+Event	T10	incendio	EVENT	595
+Event	T11	afectó	EVENT	608
+Relation	T0	T1	CauseEffect	true	arrolló	falleciendo
+Relation	T1	T0	EffectCause	true	falleciendo	arrolló
+Relation	T2	T5	CauseEffect	true	chocó	muertas
+Relation	T5	T2	EffectCause	true	muertas	chocó
+Relation	T2	T6	CauseEffect	true	chocó	heridas
+Relation	T6	T2	EffectCause	true	heridas	chocó
+Relation	T10	T8	CauseEffect	true	incendio	Accidente
+Relation	T8	T10	EffectCause	true	Accidente	incendio
+Relation	T2	T0	NoRel	true	chocó	arrolló
+Relation	T3	T10	NoRel	true	cubría	incendio
+Relation	T5	T9	NoRel	true	muertas	declararse
+Relation	T7	T0	NoRel	true	ocurrió	arrolló
+Relation	T7	T6	NoRel	true	ocurrió	heridas
+Relation	T8	T3	NoRel	true	Accidente	cubría

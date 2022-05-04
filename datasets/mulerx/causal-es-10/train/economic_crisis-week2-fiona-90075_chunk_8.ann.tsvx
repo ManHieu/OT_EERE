@@ -1,0 +1,40 @@
+Text	Por solicitud de su padre , fue trasladado a un hospital más cercano a su hogar , llegando a Alexandersbad el 25 de octubre .	Aún convaleciente , solicitó que se le permitiera inscribirse para entrenar como piloto , por lo que después de unas vacaciones navideñas con su familia , se reportó a Múnich .	Recibió adiestramiento básico de vuelo en las bases aéreas de Oberschleissheim y Lechfeld de marzo a junio de 1918 y entrenamiento avanzado en Valenciennes en Francia en octubre .	El 14 de octubre fue asignado al _ Jagdstaffel _ 35b , un escuadrón de combate bávaro equipado con biplanos Fokker D. VII .	No vio ninguna acción con el _ Jagdstaffel _ 35b , ya que la guerra terminó el 11 de noviembre , antes de que tuviera la oportunidad .
+Event	T0	solicitud	EVENT	4
+Event	T1	trasladado	EVENT	32
+Event	T10	avanzado	EVENT	434
+Event	T11	asignado	EVENT	504
+Event	T12	combate	EVENT	554
+Event	T13	equipado	EVENT	569
+Event	T15	acción	EVENT	622
+Event	T16	terminó	EVENT	675
+Event	T2	llegando	EVENT	82
+Event	T3	solicitó	EVENT	146
+Event	T4	inscribirse	EVENT	176
+Event	T5	entrenar	EVENT	193
+Event	T6	vacaciones	EVENT	243
+Event	T7	reportó	EVENT	284
+Event	T8	adiestramiento	EVENT	311
+Event	T9	vuelo	EVENT	336
+Relation	T0	T1	CauseEffect	true	solicitud	trasladado
+Relation	T1	T0	EffectCause	true	trasladado	solicitud
+Relation	T1	T2	CauseEffect	true	trasladado	llegando
+Relation	T2	T1	EffectCause	true	llegando	trasladado
+Relation	T8	T11	CauseEffect	true	adiestramiento	asignado
+Relation	T11	T8	EffectCause	true	asignado	adiestramiento
+Relation	T1	T11	NoRel	true	trasladado	asignado
+Relation	T1	T15	NoRel	true	trasladado	acción
+Relation	T1	T16	NoRel	true	trasladado	terminó
+Relation	T11	T1	NoRel	true	asignado	trasladado
+Relation	T11	T10	NoRel	true	asignado	avanzado
+Relation	T11	T12	NoRel	true	asignado	combate
+Relation	T12	T16	NoRel	true	combate	terminó
+Relation	T12	T4	NoRel	true	combate	inscribirse
+Relation	T15	T7	NoRel	true	acción	reportó
+Relation	T2	T16	NoRel	true	llegando	terminó
+Relation	T2	T5	NoRel	true	llegando	entrenar
+Relation	T4	T12	NoRel	true	inscribirse	combate
+Relation	T4	T5	NoRel	true	inscribirse	entrenar
+Relation	T5	T2	NoRel	true	entrenar	llegando
+Relation	T6	T2	NoRel	true	vacaciones	llegando
+Relation	T6	T5	NoRel	true	vacaciones	entrenar
+Relation	T8	T16	NoRel	true	adiestramiento	terminó

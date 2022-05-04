@@ -1,0 +1,74 @@
+Text	AFAD tarafından Kastamonu'ya 5 milyon lira , Sinop'a 3 milyon lira , Bartın'a ise 2 milyon lira acil yardım ödeneğinin gönderilirken , Aile ve Sosyal Hizmetler Bakanlığı tarafından ise Kastamonu'ya 5 milyon lira , Sinop'a 3 milyon lira , Bartın'a da 2 milyon lira ödenek gönderildi .	AFAD , Eylül 2021'de yaptığı açıklamada 2021 orman yangınları ve sel felaketi için başlatılan yardım kampanyasında toplam 902 milyon 863 bin lira bağış yapıldığını , ayrıca Katar'ın 265 milyon lira bağış yaptığını duyurdu .	Afet ve Acil Durum Yönetimi Başkanlığı ( AFAD ) 21 Ağustos 2021'de yaptığı açıklamada sel nedeniyle Kastamonu'da 71 , Sinop'ta 10 ve Bartın'da ise 1 kişinin hayatını kaybettiğini duyurdu .	Ayrıca , Kastamonu'da 10 , Sinop'ta 6 olmak üzere toplam 16 kişi için kayıp başvurusu yapıldığını , hastanelerde ise 2 kişinin ise tedavi altında olduğunu belirtti .	Sel felaketi nedeniyle Kastamonu'da ; Çatalzeytin Köprüsü , Küre İkiçay Köprüsü , Azdavay Köprüsü yıkılırken , Valay - 1 Köprüsü'nün ayaklarında ve Kanlıçay Köprüsü'nün yaklaşım dolgularında hasar meydana geldi .
+Event	T0	gönderildi	EVENT	271
+Event	T1	açıklamada	EVENT	313
+Event	T3	felaketi	EVENT	353
+Event	T4	duyurdu	EVENT	498
+Event	T5	sel	EVENT	594
+Event	T6	duyurdu	EVENT	687
+Event	T7	belirtti	EVENT	852
+Event	T8	felaketi	EVENT	867
+Event	T9	yıkılırken	EVENT	961
+Event	T10	geldi	EVENT	1068
+Event	T11	gönderilirken	EVENT	119
+Event	T12	kampanyasında	EVENT	385
+Event	T13	yapıldığını	EVENT	436
+Event	T2	yangınları	EVENT	335
+Event	T14	yaptığını	EVENT	488
+Event	T15	açıklamada	EVENT	583
+Event	T16	kaybettiğini	EVENT	674
+Event	T17	yapıldığını	EVENT	783
+Event	T18	olduğunu	EVENT	843
+Relation	T2	T12	CauseEffect	true	yangınları	kampanyasında
+Relation	T12	T2	EffectCause	true	kampanyasında	yangınları
+Relation	T3	T12	CauseEffect	true	felaketi	kampanyasında
+Relation	T12	T3	EffectCause	true	kampanyasında	felaketi
+Relation	T12	T13	CauseEffect	true	kampanyasında	yapıldığını
+Relation	T13	T12	EffectCause	true	yapıldığını	kampanyasında
+Relation	T12	T14	CauseEffect	true	kampanyasında	yaptığını
+Relation	T14	T12	EffectCause	true	yaptığını	kampanyasında
+Relation	T14	T1	CauseEffect	true	yaptığını	açıklamada
+Relation	T1	T14	EffectCause	true	açıklamada	yaptığını
+Relation	T5	T16	CauseEffect	true	sel	kaybettiğini
+Relation	T16	T5	EffectCause	true	kaybettiğini	sel
+Relation	T16	T15	CauseEffect	true	kaybettiğini	açıklamada
+Relation	T15	T16	EffectCause	true	açıklamada	kaybettiğini
+Relation	T17	T15	CauseEffect	true	yapıldığını	açıklamada
+Relation	T15	T17	EffectCause	true	açıklamada	yapıldığını
+Relation	T18	T15	CauseEffect	true	olduğunu	açıklamada
+Relation	T15	T18	EffectCause	true	açıklamada	olduğunu
+Relation	T8	T9	CauseEffect	true	felaketi	yıkılırken
+Relation	T9	T8	EffectCause	true	yıkılırken	felaketi
+Relation	T8	T10	CauseEffect	true	felaketi	geldi
+Relation	T10	T8	EffectCause	true	geldi	felaketi
+Relation	T0	T16	NoRel	true	gönderildi	kaybettiğini
+Relation	T0	T8	NoRel	true	gönderildi	felaketi
+Relation	T10	T15	NoRel	true	geldi	açıklamada
+Relation	T11	T15	NoRel	true	gönderilirken	açıklamada
+Relation	T11	T17	NoRel	true	gönderilirken	yapıldığını
+Relation	T12	T16	NoRel	true	kampanyasında	kaybettiğini
+Relation	T12	T8	NoRel	true	kampanyasında	felaketi
+Relation	T13	T0	NoRel	true	yapıldığını	gönderildi
+Relation	T14	T13	NoRel	true	yaptığını	yapıldığını
+Relation	T17	T5	NoRel	true	yapıldığını	sel
+Relation	T18	T12	NoRel	true	olduğunu	kampanyasında
+Relation	T18	T13	NoRel	true	olduğunu	yapıldığını
+Relation	T18	T3	NoRel	true	olduğunu	felaketi
+Relation	T18	T4	NoRel	true	olduğunu	duyurdu
+Relation	T2	T13	NoRel	true	yangınları	yapıldığını
+Relation	T2	T18	NoRel	true	yangınları	olduğunu
+Relation	T3	T4	NoRel	true	felaketi	duyurdu
+Relation	T4	T12	NoRel	true	duyurdu	kampanyasında
+Relation	T4	T5	NoRel	true	duyurdu	sel
+Relation	T4	T7	NoRel	true	duyurdu	belirtti
+Relation	T5	T1	NoRel	true	sel	açıklamada
+Relation	T5	T2	NoRel	true	sel	yangınları
+Relation	T7	T1	NoRel	true	belirtti	açıklamada
+Relation	T7	T15	NoRel	true	belirtti	açıklamada
+Relation	T8	T12	NoRel	true	felaketi	kampanyasında
+Relation	T8	T4	NoRel	true	felaketi	duyurdu
+Relation	T8	T7	NoRel	true	felaketi	belirtti
+Relation	T9	T0	NoRel	true	yıkılırken	gönderildi
+Relation	T9	T13	NoRel	true	yıkılırken	yapıldığını
+Relation	T9	T15	NoRel	true	yıkılırken	açıklamada
+Relation	T9	T3	NoRel	true	yıkılırken	felaketi
+Relation	T9	T6	NoRel	true	yıkılırken	duyurdu

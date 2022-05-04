@@ -1,0 +1,42 @@
+Text	Her kan nævnes den styrkede tro på retssamfundet , som fulgte etableringen af et konstitutionelt monarki i Storbritannien under den glorværdige revolution i 1688 samt fremkomsten af et stabilt finansmarked baseret på Bank of Englands styring af nationens gæld .	thumb | Det eneste overlevende eksemplar af en _ Spinning Mule _ bygget af opfinderen Samuel Crompton .	Starten på den industrielle revolution er tæt knyttet til nogle få brancher , hvor der blev gjort nogle afgørende opfindelser i den anden halvdel af det 18. århundrede :	- TEKSTILFREMSTILLING – Bomuldsspinderi ved hjælp af Richard Arkwrights Water Frame , James Hargreaves' Spinning Jenny og Samuel Cromptons Spinning Mule ( en kombination af Spinning Jenny og Water Frame ) .	Den blev patenteret i 1769 og patentet udløb i 1783 .
+Event	T0	tro	EVENT	28
+Event	T1	etableringen	EVENT	62
+Event	T10	opfindelser	EVENT	480
+Event	T11	Spinning	EVENT	640
+Event	T12	Spinning	EVENT	675
+Event	T13	kombination	EVENT	694
+Event	T14	patenteret	EVENT	752
+Event	T15	udløb	EVENT	782
+Event	T2	revolution	EVENT	144
+Event	T3	fremkomsten	EVENT	167
+Event	T4	styring	EVENT	234
+Event	T5	bygget	EVENT	327
+Event	T6	Starten	EVENT	366
+Event	T9	gjort	EVENT	458
+Relation	T1	T0	CauseEffect	true	etableringen	tro
+Relation	T0	T1	EffectCause	true	tro	etableringen
+Relation	T4	T3	CauseEffect	true	styring	fremkomsten
+Relation	T3	T4	EffectCause	true	fremkomsten	styring
+Relation	T2	T1	CauseEffect	true	revolution	etableringen
+Relation	T1	T2	EffectCause	true	etableringen	revolution
+Relation	T3	T1	CauseEffect	true	fremkomsten	etableringen
+Relation	T1	T3	EffectCause	true	etableringen	fremkomsten
+Relation	T10	T6	CauseEffect	true	opfindelser	Starten
+Relation	T6	T10	EffectCause	true	Starten	opfindelser
+Relation	T14	T15	CauseEffect	true	patenteret	udløb
+Relation	T15	T14	EffectCause	true	udløb	patenteret
+Relation	T0	T12	NoRel	true	tro	Spinning
+Relation	T10	T1	NoRel	true	opfindelser	etableringen
+Relation	T11	T2	NoRel	true	Spinning	revolution
+Relation	T11	T6	NoRel	true	Spinning	Starten
+Relation	T12	T1	NoRel	true	Spinning	etableringen
+Relation	T12	T14	NoRel	true	Spinning	patenteret
+Relation	T12	T15	NoRel	true	Spinning	udløb
+Relation	T14	T11	NoRel	true	patenteret	Spinning
+Relation	T14	T4	NoRel	true	patenteret	styring
+Relation	T15	T5	NoRel	true	udløb	bygget
+Relation	T15	T9	NoRel	true	udløb	gjort
+Relation	T3	T11	NoRel	true	fremkomsten	Spinning
+Relation	T4	T5	NoRel	true	styring	bygget
+Relation	T5	T11	NoRel	true	bygget	Spinning
+Relation	T9	T15	NoRel	true	gjort	udløb

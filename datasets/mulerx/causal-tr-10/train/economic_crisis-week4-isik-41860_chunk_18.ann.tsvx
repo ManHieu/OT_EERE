@@ -1,0 +1,23 @@
+Text	küçükresim | sağ | 200px | Bükreşliler Bucur - Obor'da kuyrukta beklerken , 1986 Yükselen totaliter yönetimine rağmen , Çavuşesku’nun Sovyetler Birliği’nden bağımsız politikası ve 1968’deki Çekoslovakya'nın İşgaline karşı protestosu , onun yaramaz anti - Sovyetçi biri olduğuna inanan ve onu fonlayarak ( ona parasal destek sağlayarak ) Varşova Paktı’ında bir hizip yaratmayı uman Batılı güçlerin ilgisini çekti .	Çavuşesku fonlamanın daima yararına olmadığının farkına varmadı .	Ekonomik Kalkınma Programı’nın finansmanında kullanmak üzere 13 milyar USD gibi ağır bir borcun altına girdi .	Ancak bu krediler ülkenin finansmanında heba oldu .	Bunu düzeltme çabası olarak , dış borçları geri ödemeye karar verdi .
+Event	T0	politikası	EVENT	166
+Event	T1	protestosu	EVENT	222
+Event	T2	çekti	EVENT	406
+Event	T4	girdi	EVENT	583
+Event	T5	verdi	EVENT	705
+Event	T6	beklerken	EVENT	64
+Event	T7	İşgaline	EVENT	207
+Event	T3	Programı’nın	EVENT	498
+Event	T8	oldu	EVENT	636
+Relation	T7	T1	CauseEffect	true	İşgaline	protestosu
+Relation	T1	T7	EffectCause	true	protestosu	İşgaline
+Relation	T3	T4	CauseEffect	true	Programı’nın	girdi
+Relation	T4	T3	EffectCause	true	girdi	Programı’nın
+Relation	T4	T8	CauseEffect	true	girdi	oldu
+Relation	T8	T4	EffectCause	true	oldu	girdi
+Relation	T8	T5	CauseEffect	true	oldu	verdi
+Relation	T5	T8	EffectCause	true	verdi	oldu
+Relation	T4	T5	NoRel	true	girdi	verdi
+Relation	T5	T1	NoRel	true	verdi	protestosu
+Relation	T5	T6	NoRel	true	verdi	beklerken
+Relation	T5	T7	NoRel	true	verdi	İşgaline
+Relation	T7	T0	NoRel	true	İşgaline	politikası

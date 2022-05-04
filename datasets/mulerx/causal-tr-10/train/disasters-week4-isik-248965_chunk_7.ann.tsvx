@@ -1,0 +1,31 @@
+Text	Terreiro do Paço antes do Terramoto de 1755 .png | Bu tabloda , yıkılmasından az önceki hâliyle Ribeira Kraliyet Sarayı tasvir edilmiştir Lisbon1755hanging .jpg | 1755 senesinde yapılmış bu gravürde , depremden sonra Lizbon'da yaşanan kaos ve yağmacıların infâzı resmedilmektedir .	Álvaro Pereira ; _ The Opportunity of a Disaster : The Economic Impact of the 1755 Lisbon Earthquake _ ; Centre for Historical Economics and Related Research ; York Üniversitesi , 2006	P. - L. Blanc ; " Earthquakes and tsunami in November 1755 in Morocco : adifferent reading of contemporaneous documentary sources " ; _ Natural Hazards and Earth System Sciences _ ; 14 Mayıs 2009 ; Erişim Târihi : 17 Eylül 2016	Horst Rademacher , Alte Erde , neuer Irrglaube .	Was uns das Beben von Lissabon vor 250 Jahren noch heute lehren sollte .
+Event	T0	yapılmış	EVENT	178
+Event	T1	depremden	EVENT	201
+Event	T2	kaos	EVENT	235
+Event	T3	resmedilmektedir	EVENT	263
+Event	T4	Disaster	EVENT	322
+Event	T5	Impact	EVENT	346
+Event	T6	Earthquake	EVENT	372
+Event	T7	Earthquakes	EVENT	485
+Event	T8	tsunami	EVENT	501
+Event	T10	lehren	EVENT	801
+Event	T11	yıkılmasından	EVENT	64
+Event	T12	edilmiştir	EVENT	127
+Event	T13	infâzı	EVENT	256
+Event	T14	Erişim	EVENT	665
+Relation	T1	T2	CauseEffect	true	depremden	kaos
+Relation	T2	T1	EffectCause	true	kaos	depremden
+Relation	T1	T13	CauseEffect	true	depremden	infâzı
+Relation	T13	T1	EffectCause	true	infâzı	depremden
+Relation	T6	T5	CauseEffect	true	Earthquake	Impact
+Relation	T5	T6	EffectCause	true	Impact	Earthquake
+Relation	T0	T11	NoRel	true	yapılmış	yıkılmasından
+Relation	T1	T6	NoRel	true	depremden	Earthquake
+Relation	T10	T1	NoRel	true	lehren	depremden
+Relation	T11	T12	NoRel	true	yıkılmasından	edilmiştir
+Relation	T13	T11	NoRel	true	infâzı	yıkılmasından
+Relation	T14	T11	NoRel	true	Erişim	yıkılmasından
+Relation	T3	T2	NoRel	true	resmedilmektedir	kaos
+Relation	T6	T13	NoRel	true	Earthquake	infâzı
+Relation	T7	T11	NoRel	true	Earthquakes	yıkılmasından
+Relation	T7	T3	NoRel	true	Earthquakes	resmedilmektedir

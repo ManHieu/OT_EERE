@@ -1,0 +1,56 @@
+Text	Rapporten oplyser , at det var almindeligt kendt blandt brugerne , at den anvendte låsemekanisme i sadlen var upålidelig .	Havarikommissionens rapport dokumenterer efter gennemgang af og forsøg med det involverede godstog kort efter ulykken , at 4 ud af 6 ikke virkede , således at skamlen kunne holde traileren fast .	Nogle af skamlerne var i så dårlig stand , at låsemekanismen slet ikke kunne bevæge sig .	Citat : _ Der blev fundet yderligere 2 skamler , der ikke var låst på godstoget , der var involveret i ulykken .	På disse placeringer var der læsset sættevognstrailere , der var mindst 3 gange tungere ( og dermed mindre vindfølsomme ) end den der væltede af godstoget .
+Event	T0	oplyser	EVENT	10
+Event	T1	dokumenterer	EVENT	151
+Event	T2	gennemgang	EVENT	170
+Event	T3	forsøg	EVENT	187
+Event	T4	ulykken	EVENT	233
+Event	T5	virkede	EVENT	261
+Event	T6	fundet	EVENT	428
+Event	T7	låst	EVENT	471
+Event	T8	ulykken	EVENT	512
+Event	T9	læsset	EVENT	551
+Event	T10	væltede	EVENT	656
+Event	T11	kendt	EVENT	43
+Event	T12	anvendte	EVENT	74
+Event	T13	holde	EVENT	296
+Event	T14	stand	EVENT	354
+Event	T15	bevæge	EVENT	396
+Event	T16	placeringer	EVENT	531
+Event	T17	upålidelig	EVENT	110
+Event	T18	tungere	EVENT	602
+Relation	T2	T1	CauseEffect	true	gennemgang	dokumenterer
+Relation	T1	T2	EffectCause	true	dokumenterer	gennemgang
+Relation	T3	T1	CauseEffect	true	forsøg	dokumenterer
+Relation	T1	T3	EffectCause	true	dokumenterer	forsøg
+Relation	T5	T4	CauseEffect	true	virkede	ulykken
+Relation	T4	T5	EffectCause	true	ulykken	virkede
+Relation	T10	T4	CauseEffect	true	væltede	ulykken
+Relation	T4	T10	EffectCause	true	ulykken	væltede
+Relation	T0	T18	NoRel	true	oplyser	tungere
+Relation	T0	T9	NoRel	true	oplyser	læsset
+Relation	T1	T4	NoRel	true	dokumenterer	ulykken
+Relation	T10	T11	NoRel	true	væltede	kendt
+Relation	T10	T12	NoRel	true	væltede	anvendte
+Relation	T10	T18	NoRel	true	væltede	tungere
+Relation	T11	T5	NoRel	true	kendt	virkede
+Relation	T12	T6	NoRel	true	anvendte	fundet
+Relation	T13	T4	NoRel	true	holde	ulykken
+Relation	T15	T18	NoRel	true	bevæge	tungere
+Relation	T16	T13	NoRel	true	placeringer	holde
+Relation	T16	T4	NoRel	true	placeringer	ulykken
+Relation	T17	T15	NoRel	true	upålidelig	bevæge
+Relation	T17	T2	NoRel	true	upålidelig	gennemgang
+Relation	T18	T11	NoRel	true	tungere	kendt
+Relation	T18	T7	NoRel	true	tungere	låst
+Relation	T2	T12	NoRel	true	gennemgang	anvendte
+Relation	T2	T7	NoRel	true	gennemgang	låst
+Relation	T3	T17	NoRel	true	forsøg	upålidelig
+Relation	T4	T16	NoRel	true	ulykken	placeringer
+Relation	T5	T2	NoRel	true	virkede	gennemgang
+Relation	T7	T11	NoRel	true	låst	kendt
+Relation	T7	T14	NoRel	true	låst	stand
+Relation	T8	T1	NoRel	true	ulykken	dokumenterer
+Relation	T8	T18	NoRel	true	ulykken	tungere
+Relation	T9	T17	NoRel	true	læsset	upålidelig
+Relation	T9	T7	NoRel	true	læsset	låst
+Relation	T9	T8	NoRel	true	læsset	ulykken

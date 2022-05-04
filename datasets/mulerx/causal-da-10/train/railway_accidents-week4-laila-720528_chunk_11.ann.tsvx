@@ -1,0 +1,33 @@
+Text	Lokomotivføreren fik opkaldet klokken 20.39 , da toget kørte med 199 km/t .	Opkaldet varede mindre end to minutter og blev afsluttet 11 sekunder før , at toget kørte af skinnerne .	Føreren bremsede op kl. 20.40 , da toget kørte med 195 km/t til trods for , at fartgrænsen på den del af strækningen var 80 km/t , men da var det for sent .	Retten har tidligere sagt , at toget kørte med 192 km/t ganske kort tid inden afsporingen , og at det forulykkede med en hastighed på 153 km/t .	File : Accidente ferroviario de Angrois cerca de Santiago de Compostela - 24-07-2013 .
+Event	T0	opkaldet	EVENT	21
+Event	T1	kørte	EVENT	55
+Event	T2	varede	EVENT	85
+Event	T3	afsluttet	EVENT	123
+Event	T4	kørte	EVENT	160
+Event	T5	kørte	EVENT	222
+Event	T6	sagt	EVENT	359
+Event	T7	kørte	EVENT	375
+Event	T8	afsporingen	EVENT	416
+Event	T9	forulykkede	EVENT	440
+Event	T10	Accidente	EVENT	490
+Event	T11	fartgrænsen	EVENT	260
+Event	T12	bremsede	EVENT	189
+Relation	T7	T4	CauseEffect	true	kørte	kørte
+Relation	T4	T7	EffectCause	true	kørte	kørte
+Relation	T11	T12	CauseEffect	true	fartgrænsen	bremsede
+Relation	T12	T11	EffectCause	true	bremsede	fartgrænsen
+Relation	T0	T12	CauseEffect	true	opkaldet	bremsede
+Relation	T12	T0	EffectCause	true	bremsede	opkaldet
+Relation	T8	T9	CauseEffect	true	afsporingen	forulykkede
+Relation	T9	T8	EffectCause	true	forulykkede	afsporingen
+Relation	T7	T8	CauseEffect	true	kørte	afsporingen
+Relation	T8	T7	EffectCause	true	afsporingen	kørte
+Relation	T0	T5	NoRel	true	opkaldet	kørte
+Relation	T0	T8	NoRel	true	opkaldet	afsporingen
+Relation	T1	T10	NoRel	true	kørte	Accidente
+Relation	T1	T8	NoRel	true	kørte	afsporingen
+Relation	T10	T5	NoRel	true	Accidente	kørte
+Relation	T12	T4	NoRel	true	bremsede	kørte
+Relation	T2	T1	NoRel	true	varede	kørte
+Relation	T7	T2	NoRel	true	kørte	varede
+Relation	T8	T6	NoRel	true	afsporingen	sagt

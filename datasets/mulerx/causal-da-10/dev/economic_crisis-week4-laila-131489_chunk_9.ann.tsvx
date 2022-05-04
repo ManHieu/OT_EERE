@@ -1,0 +1,23 @@
+Text	Opgørelsen viste , at huset havde otte værelser på første sal , fyldt med malerier , tegninger , tøj og møbler m.m .	I ateliet var der to stole , to staffelier , tre paletter , ti lærreder , et skrivebord , et egetræsbord og en mindre træskab med skuffer .	Nitten af Vermeers malerier var testamenteret til hans kone Catharina og hendes mor .	Hun solgte to af billederne til bageren Hendrick van Buyten for at betale en stor gæld ( for brød eller lån ) .	Maria Thins døde i 1680 og blev begravet ved siden af Johannes Vermeer i den gamle kirke .
+Event	T0	viste	EVENT	11
+Event	T1	fyldt	EVENT	64
+Event	T2	testamenteret	EVENT	289
+Event	T3	solgte	EVENT	347
+Event	T4	betale	EVENT	410
+Event	T5	døde	EVENT	467
+Event	T6	begravet	EVENT	487
+Event	T7	var	EVENT	127
+Relation	T4	T3	CauseEffect	true	betale	solgte
+Relation	T3	T4	EffectCause	true	solgte	betale
+Relation	T0	T3	NoRel	true	viste	solgte
+Relation	T1	T2	NoRel	true	fyldt	testamenteret
+Relation	T2	T1	NoRel	true	testamenteret	fyldt
+Relation	T3	T5	NoRel	true	solgte	døde
+Relation	T3	T7	NoRel	true	solgte	var
+Relation	T5	T3	NoRel	true	døde	solgte
+Relation	T6	T0	NoRel	true	begravet	viste
+Relation	T6	T2	NoRel	true	begravet	testamenteret
+Relation	T6	T7	NoRel	true	begravet	var
+Relation	T7	T0	NoRel	true	var	viste
+Relation	T7	T4	NoRel	true	var	betale
+Relation	T7	T5	NoRel	true	var	døde

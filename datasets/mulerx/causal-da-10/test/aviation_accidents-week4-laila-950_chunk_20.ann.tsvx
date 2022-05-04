@@ -1,0 +1,36 @@
+Text	Syv uger efter den 11. september 2001 blev 230 millioner dollar fjernet fra kælderen under tårn 4 .	Tæt ved tvillingetårnene stod metalskulpturen The Sphere , som et symbol for verdensfred .	Skulpturen blev designet af den tyske skulptør Fritz Koenig .	Skulpturen blev beskadiget under terrorangrebet , men er sidenhen blevet bevaret og står nu i Battery Park som et mindesmærke for de omkomne .	Man planlægger at flytte skulpturen til sin oprindelige placering når Frihedstårnet står klart .
+Event	T0	fjernet	EVENT	64
+Event	T1	stod	EVENT	125
+Event	T2	designet	EVENT	207
+Event	T3	terrorangrebet	EVENT	286
+Event	T4	bevaret	EVENT	326
+Event	T5	står	EVENT	337
+Event	T6	omkomne	EVENT	386
+Event	T7	planlægger	EVENT	400
+Event	T8	flytte	EVENT	414
+Event	T9	symbol	EVENT	166
+Event	T10	beskadiget	EVENT	269
+Event	T11	mindesmærke	EVENT	367
+Event	T12	står klart	EVENT	480
+Relation	T1	T10	CauseEffect	true	stod	beskadiget
+Relation	T10	T1	EffectCause	true	beskadiget	stod
+Relation	T3	T10	CauseEffect	true	terrorangrebet	beskadiget
+Relation	T10	T3	EffectCause	true	beskadiget	terrorangrebet
+Relation	T0	T1	NoRel	true	fjernet	stod
+Relation	T0	T4	NoRel	true	fjernet	bevaret
+Relation	T10	T12	NoRel	true	beskadiget	står klart
+Relation	T10	T7	NoRel	true	beskadiget	planlægger
+Relation	T10	T8	NoRel	true	beskadiget	flytte
+Relation	T10	T9	NoRel	true	beskadiget	symbol
+Relation	T11	T1	NoRel	true	mindesmærke	stod
+Relation	T11	T7	NoRel	true	mindesmærke	planlægger
+Relation	T12	T10	NoRel	true	står klart	beskadiget
+Relation	T2	T1	NoRel	true	designet	stod
+Relation	T3	T5	NoRel	true	terrorangrebet	står
+Relation	T3	T8	NoRel	true	terrorangrebet	flytte
+Relation	T4	T7	NoRel	true	bevaret	planlægger
+Relation	T6	T4	NoRel	true	omkomne	bevaret
+Relation	T8	T0	NoRel	true	flytte	fjernet
+Relation	T8	T4	NoRel	true	flytte	bevaret
+Relation	T9	T6	NoRel	true	symbol	omkomne
+Relation	T9	T8	NoRel	true	symbol	flytte

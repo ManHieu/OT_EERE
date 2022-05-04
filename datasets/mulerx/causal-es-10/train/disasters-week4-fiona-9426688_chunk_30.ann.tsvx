@@ -1,0 +1,35 @@
+Text	Modi anunció un alivio inmediato de ₹10 mil millones ( US $ 132 millones ) para Bengala Occidental y un alivio de ₹ 5 mil millones ( US $ 66,2 millones ) para Odisha .	De antemano , Modi anunció que se proporcionarían ₹200,000 ( US $ 2,650 ) a los familiares de las personas que murieron durante la tormenta , y ₹ 50,000 ( US $ 660 ) se otorgarían a cada persona herida .	El Ministerio de Gestión de Desastres y Socorro en Bangladés aprobó un presupuesto de ৳2,5 –3 mil millones para reparar terraplenes dañados por Amphan .	Se distribuyeron otros ৳ 1.5 mil millones a cada distrito fuertemente afectado por la tormenta , junto con 500 paquetes de láminas de estaño corrugado .	- Ciclón Gonu ( 2007 ) – Ciclón tropical más intenso de Mar Arábigo en junio de 2007 antes de causar estragos en Emiratos Árabes Unidos .
+Event	T0	anunció	EVENT	5
+Event	T1	alivio	EVENT	16
+Event	T2	alivio	EVENT	104
+Event	T3	anunció	EVENT	187
+Event	T4	murieron	EVENT	279
+Event	T5	tormenta	EVENT	299
+Event	T6	otorgarían	EVENT	337
+Event	T7	herida	EVENT	363
+Event	T8	aprobó	EVENT	433
+Event	T9	dañados	EVENT	504
+Event	T10	distribuyeron	EVENT	528
+Event	T11	afectado	EVENT	595
+Event	T12	tormenta	EVENT	611
+Event	T13	corrugado	EVENT	666
+Event	T14	estragos	EVENT	779
+Relation	T5	T4	CauseEffect	true	tormenta	murieron
+Relation	T4	T5	EffectCause	true	murieron	tormenta
+Relation	T0	T10	NoRel	true	anunció	distribuyeron
+Relation	T1	T12	NoRel	true	alivio	tormenta
+Relation	T11	T1	NoRel	true	afectado	alivio
+Relation	T11	T13	NoRel	true	afectado	corrugado
+Relation	T12	T1	NoRel	true	tormenta	alivio
+Relation	T2	T10	NoRel	true	alivio	distribuyeron
+Relation	T2	T9	NoRel	true	alivio	dañados
+Relation	T5	T0	NoRel	true	tormenta	anunció
+Relation	T5	T10	NoRel	true	tormenta	distribuyeron
+Relation	T5	T9	NoRel	true	tormenta	dañados
+Relation	T6	T2	NoRel	true	otorgarían	alivio
+Relation	T7	T1	NoRel	true	herida	alivio
+Relation	T7	T11	NoRel	true	herida	afectado
+Relation	T7	T14	NoRel	true	herida	estragos
+Relation	T8	T0	NoRel	true	aprobó	anunció
+Relation	T8	T5	NoRel	true	aprobó	tormenta
+Relation	T9	T6	NoRel	true	dañados	otorgarían

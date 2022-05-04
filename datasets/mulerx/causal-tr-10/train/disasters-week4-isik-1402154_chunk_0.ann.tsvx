@@ -1,0 +1,13 @@
+Text	1935 DIGOR DEPREMI 1 Mayıs 1935 günü Türkiye'nin Doğu Anadolu Bölgesi'ndeki Kars Digor'da meydana gelen deprem .	200 can kaybına yol açtı .	6.2 büyüklüğünde meydana gelmiştir .	Deprem sonrasında bölgede 300 ila 400 ev yıkılmıştır .	
+Event	T1	deprem	EVENT	104
+Event	T2	açtı	EVENT	133
+Event	T3	gelmiştir	EVENT	165
+Event	T4	Deprem	EVENT	177
+Event	T5	yıkılmıştır	EVENT	218
+Event	T6	1935 DIGOR DEPREMI	EVENT	0
+Relation	T3	T4	NoRel	true	gelmiştir	Deprem
+Relation	T3	T5	NoRel	true	gelmiştir	yıkılmıştır
+Relation	T4	T1	NoRel	true	Deprem	deprem
+Relation	T4	T3	NoRel	true	Deprem	gelmiştir
+Relation	T5	T3	NoRel	true	yıkılmıştır	gelmiştir
+Relation	T5	T6	NoRel	true	yıkılmıştır	1935 DIGOR DEPREMI

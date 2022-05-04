@@ -1,0 +1,67 @@
+Text	A las 22:22 hora local , el Boeing 737-823 patinó mientras aterrizaba en la pista 12 en Kingston e invadió el área circundante sufriendo graves daños .	Los informes dan fe de que cayó una fuerte lluvia en el momento del accidente , como se comprobó posteriormente con la emisión de un informe meteorológico especial .	Algunos pasajeros informaron que el servicio a bordo se suspendió varias veces durante el vuelo , antes de ser cancelado por completo debido a las turbulencias .	También se anunció que algunas de las luces de aproximación a la pista del aeropuerto no estaban encendidas en el momento del accidente .	Los funcionarios jamaicanos , sin embargo , minimizaron el papel de las luces como la principal causa del accidente , y señalaron que se había notificado a la tripulación que la pista principal estaba debidamente iluminada .
+Event	T0	patinó	EVENT	43
+Event	T1	aterrizaba	EVENT	59
+Event	T2	invadió	EVENT	99
+Event	T3	daños	EVENT	144
+Event	T6	lluvia	EVENT	195
+Event	T7	accidente	EVENT	220
+Event	T8	comprobó	EVENT	240
+Event	T10	informe	EVENT	285
+Event	T11	informaron	EVENT	336
+Event	T12	suspendió	EVENT	374
+Event	T13	vuelo	EVENT	408
+Event	T14	cancelado	EVENT	429
+Event	T15	turbulencias	EVENT	465
+Event	T16	anunció	EVENT	491
+Event	T17	encendidas	EVENT	577
+Event	T18	accidente	EVENT	606
+Event	T19	accidente	EVENT	724
+Event	T20	señalaron	EVENT	738
+Event	T21	notificado	EVENT	761
+Event	T22	iluminada	EVENT	831
+Event	T4	informes	EVENT	156
+Relation	T2	T3	CauseEffect	true	invadió	daños
+Relation	T3	T2	EffectCause	true	daños	invadió
+Relation	T15	T14	CauseEffect	true	turbulencias	cancelado
+Relation	T14	T15	EffectCause	true	cancelado	turbulencias
+Relation	T0	T17	NoRel	true	patinó	encendidas
+Relation	T0	T2	NoRel	true	patinó	invadió
+Relation	T0	T8	NoRel	true	patinó	comprobó
+Relation	T1	T2	NoRel	true	aterrizaba	invadió
+Relation	T10	T1	NoRel	true	informe	aterrizaba
+Relation	T11	T17	NoRel	true	informaron	encendidas
+Relation	T11	T19	NoRel	true	informaron	accidente
+Relation	T11	T8	NoRel	true	informaron	comprobó
+Relation	T12	T11	NoRel	true	suspendió	informaron
+Relation	T12	T21	NoRel	true	suspendió	notificado
+Relation	T12	T22	NoRel	true	suspendió	iluminada
+Relation	T13	T2	NoRel	true	vuelo	invadió
+Relation	T13	T21	NoRel	true	vuelo	notificado
+Relation	T14	T13	NoRel	true	cancelado	vuelo
+Relation	T14	T18	NoRel	true	cancelado	accidente
+Relation	T15	T18	NoRel	true	turbulencias	accidente
+Relation	T15	T20	NoRel	true	turbulencias	señalaron
+Relation	T15	T22	NoRel	true	turbulencias	iluminada
+Relation	T15	T8	NoRel	true	turbulencias	comprobó
+Relation	T16	T1	NoRel	true	anunció	aterrizaba
+Relation	T16	T18	NoRel	true	anunció	accidente
+Relation	T16	T21	NoRel	true	anunció	notificado
+Relation	T17	T1	NoRel	true	encendidas	aterrizaba
+Relation	T17	T2	NoRel	true	encendidas	invadió
+Relation	T18	T15	NoRel	true	accidente	turbulencias
+Relation	T18	T20	NoRel	true	accidente	señalaron
+Relation	T19	T13	NoRel	true	accidente	vuelo
+Relation	T19	T15	NoRel	true	accidente	turbulencias
+Relation	T19	T16	NoRel	true	accidente	anunció
+Relation	T2	T11	NoRel	true	invadió	informaron
+Relation	T2	T17	NoRel	true	invadió	encendidas
+Relation	T21	T12	NoRel	true	notificado	suspendió
+Relation	T21	T20	NoRel	true	notificado	señalaron
+Relation	T3	T18	NoRel	true	daños	accidente
+Relation	T4	T14	NoRel	true	informes	cancelado
+Relation	T4	T15	NoRel	true	informes	turbulencias
+Relation	T4	T16	NoRel	true	informes	anunció
+Relation	T4	T20	NoRel	true	informes	señalaron
+Relation	T4	T3	NoRel	true	informes	daños
+Relation	T6	T11	NoRel	true	lluvia	informaron
+Relation	T7	T16	NoRel	true	accidente	anunció

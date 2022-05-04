@@ -1,0 +1,60 @@
+Text	Desuden arbejdede Colbert for at fjerne indenrigske hindringer for handelen dels ved at nedskære indre takster , dels ved en omfattende udbygning af veje og kanaler .	Disse tiltag førte til fremskridt for fransk forædlingsvirksomhed og økonomisk vækst , hvorimod forsøgene på at fremme Frankrigs rolle i den internationale søfart gav mindre gode udfald .	Tidligt udviklede merkantilismen sig også i England .	Fra slutningen af det 14. og gennem det 15. århundrede søgte Englands gennem sin lovgivning at fortrænge fremmede købmænd og hæve den nationale skibsfart , lige som der oprettedes stabelpladser for engelske varer i udlandet .	Fra midten af det 16. århundrede begyndte merkantilismen her at udformes i tiltag , alle af handelspolitisk Indhold .
+Event	T0	arbejdede	EVENT	8
+Event	T1	fjerne	EVENT	33
+Event	T2	nedskære	EVENT	88
+Event	T3	udbygning	EVENT	136
+Event	T4	førte	EVENT	180
+Event	T5	fremskridt	EVENT	190
+Event	T6	gav	EVENT	330
+Event	T7	udviklede	EVENT	363
+Event	T8	fortrænge	EVENT	504
+Event	T9	hæve	EVENT	534
+Event	T10	udformes	EVENT	699
+Event	T11	tiltag	EVENT	710
+Event	T12	hindringer	EVENT	52
+Event	T13	handelen	EVENT	67
+Event	T14	fremme	EVENT	279
+Event	T15	forsøgene	EVENT	263
+Event	T16	tiltag	EVENT	173
+Event	T17	lovgivning	EVENT	490
+Event	T18	oprettedes	EVENT	578
+Event	T19	begyndte	EVENT	668
+Relation	T2	T1	CauseEffect	true	nedskære	fjerne
+Relation	T1	T2	EffectCause	true	fjerne	nedskære
+Relation	T3	T1	CauseEffect	true	udbygning	fjerne
+Relation	T1	T3	EffectCause	true	fjerne	udbygning
+Relation	T16	T5	CauseEffect	true	tiltag	fremskridt
+Relation	T5	T16	EffectCause	true	fremskridt	tiltag
+Relation	T17	T8	CauseEffect	true	lovgivning	fortrænge
+Relation	T8	T17	EffectCause	true	fortrænge	lovgivning
+Relation	T17	T9	CauseEffect	true	lovgivning	hæve
+Relation	T9	T17	EffectCause	true	hæve	lovgivning
+Relation	T0	T13	NoRel	true	arbejdede	handelen
+Relation	T0	T17	NoRel	true	arbejdede	lovgivning
+Relation	T1	T4	NoRel	true	fjerne	førte
+Relation	T10	T7	NoRel	true	udformes	udviklede
+Relation	T12	T11	NoRel	true	hindringer	tiltag
+Relation	T12	T8	NoRel	true	hindringer	fortrænge
+Relation	T13	T15	NoRel	true	handelen	forsøgene
+Relation	T13	T17	NoRel	true	handelen	lovgivning
+Relation	T13	T19	NoRel	true	handelen	begyndte
+Relation	T14	T10	NoRel	true	fremme	udformes
+Relation	T15	T10	NoRel	true	forsøgene	udformes
+Relation	T17	T1	NoRel	true	lovgivning	fjerne
+Relation	T17	T15	NoRel	true	lovgivning	forsøgene
+Relation	T17	T3	NoRel	true	lovgivning	udbygning
+Relation	T19	T10	NoRel	true	begyndte	udformes
+Relation	T2	T0	NoRel	true	nedskære	arbejdede
+Relation	T3	T5	NoRel	true	udbygning	fremskridt
+Relation	T4	T18	NoRel	true	førte	oprettedes
+Relation	T4	T9	NoRel	true	førte	hæve
+Relation	T5	T4	NoRel	true	fremskridt	førte
+Relation	T6	T0	NoRel	true	gav	arbejdede
+Relation	T6	T7	NoRel	true	gav	udviklede
+Relation	T6	T9	NoRel	true	gav	hæve
+Relation	T8	T11	NoRel	true	fortrænge	tiltag
+Relation	T8	T12	NoRel	true	fortrænge	hindringer
+Relation	T8	T15	NoRel	true	fortrænge	forsøgene
+Relation	T9	T12	NoRel	true	hæve	hindringer
+Relation	T9	T15	NoRel	true	hæve	forsøgene
+Relation	T9	T5	NoRel	true	hæve	fremskridt

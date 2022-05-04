@@ -1,0 +1,62 @@
+Text	STATSTERRORISME er terrorisme , udøvet af ( eller på ordre fra ) staten overfor egne eller andre staters borgere .	Et godt eksempel er den vold , der blev udøvet i Nazityskland under anden verdenskrig , hvor befolkningen oplevede terror som en del af regeringens politik .	Det første eksempel på terrorisme i moderne tid var et eksempel på statsterrorisme , nemlig Robespierres terrorregime 1793-1794 under den franske revolution , hvor de revolutionære fastholdt magten ved at anvende vold , trusler og massevis af henrettelser .	Andre eksempler på statsterrorisme er Sovjetunion under Stalin 1929-1953 , Cambodja under Pol Pot 1976-1979 og Argentinas militærdiktatur 1976-1983 .	Begrebet statsterrorisme er ikke entydigt anerkendt .
+Event	T0	terrorisme	EVENT	19
+Event	T1	udøvet	EVENT	32
+Event	T2	vold	EVENT	139
+Event	T3	udøvet	EVENT	155
+Event	T4	terror	EVENT	230
+Event	T5	politik	EVENT	263
+Event	T6	terrorregime	EVENT	378
+Event	T7	revolution	EVENT	419
+Event	T8	vold	EVENT	486
+Event	T9	trusler	EVENT	493
+Event	T10	henrettelser	EVENT	516
+Event	T11	STATSTERRORISME	EVENT	0
+Event	T12	anden verdenskrig	EVENT	183
+Event	T13	oplevede	EVENT	221
+Event	T14	fastholdt	EVENT	454
+Event	T15	anvende	EVENT	478
+Event	T16	statsterrorisme	EVENT	550
+Event	T17	statsterrorisme	EVENT	690
+Relation	T2	T13	CauseEffect	true	vold	oplevede
+Relation	T13	T2	EffectCause	true	oplevede	vold
+Relation	T15	T14	CauseEffect	true	anvende	fastholdt
+Relation	T14	T15	EffectCause	true	fastholdt	anvende
+Relation	T0	T11	NoRel	true	terrorisme	STATSTERRORISME
+Relation	T0	T4	NoRel	true	terrorisme	terror
+Relation	T0	T7	NoRel	true	terrorisme	revolution
+Relation	T1	T5	NoRel	true	udøvet	politik
+Relation	T10	T1	NoRel	true	henrettelser	udøvet
+Relation	T10	T12	NoRel	true	henrettelser	anden verdenskrig
+Relation	T10	T13	NoRel	true	henrettelser	oplevede
+Relation	T10	T8	NoRel	true	henrettelser	vold
+Relation	T12	T2	NoRel	true	anden verdenskrig	vold
+Relation	T12	T5	NoRel	true	anden verdenskrig	politik
+Relation	T12	T8	NoRel	true	anden verdenskrig	vold
+Relation	T13	T7	NoRel	true	oplevede	revolution
+Relation	T14	T2	NoRel	true	fastholdt	vold
+Relation	T15	T1	NoRel	true	anvende	udøvet
+Relation	T15	T17	NoRel	true	anvende	statsterrorisme
+Relation	T15	T6	NoRel	true	anvende	terrorregime
+Relation	T16	T6	NoRel	true	statsterrorisme	terrorregime
+Relation	T16	T7	NoRel	true	statsterrorisme	revolution
+Relation	T17	T10	NoRel	true	statsterrorisme	henrettelser
+Relation	T17	T4	NoRel	true	statsterrorisme	terror
+Relation	T17	T7	NoRel	true	statsterrorisme	revolution
+Relation	T2	T17	NoRel	true	vold	statsterrorisme
+Relation	T2	T4	NoRel	true	vold	terror
+Relation	T3	T0	NoRel	true	udøvet	terrorisme
+Relation	T3	T1	NoRel	true	udøvet	udøvet
+Relation	T3	T16	NoRel	true	udøvet	statsterrorisme
+Relation	T3	T7	NoRel	true	udøvet	revolution
+Relation	T4	T12	NoRel	true	terror	anden verdenskrig
+Relation	T4	T7	NoRel	true	terror	revolution
+Relation	T4	T9	NoRel	true	terror	trusler
+Relation	T6	T14	NoRel	true	terrorregime	fastholdt
+Relation	T7	T12	NoRel	true	revolution	anden verdenskrig
+Relation	T7	T15	NoRel	true	revolution	anvende
+Relation	T8	T11	NoRel	true	vold	STATSTERRORISME
+Relation	T8	T14	NoRel	true	vold	fastholdt
+Relation	T9	T1	NoRel	true	trusler	udøvet
+Relation	T9	T16	NoRel	true	trusler	statsterrorisme
+Relation	T9	T17	NoRel	true	trusler	statsterrorisme
+Relation	T9	T5	NoRel	true	trusler	politik

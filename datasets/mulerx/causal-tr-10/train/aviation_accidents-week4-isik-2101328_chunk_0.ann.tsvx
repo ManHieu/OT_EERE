@@ -1,0 +1,49 @@
+Text	UNITED AIRLINES'IN 175 SEFER SAYILI UÇUŞU , Amerika Birleşik Devletleri'nde iç hat uçuşu gerçekleştiren ve el - Kaide üyesi kişilerce , 11 Eylül 2001'de gerçekleştirilen saldırılar dahilinde kaçırılan yolcu uçağı .	Boston , Massachusetts'teki Logan Uluslararası Havalimanı'ndan , Los Angeles , Kaliforniya'daki Los Angeles Uluslararası Havalimanı'na gitmek üzere kalkan Boeing 767 - 200 tipindeki uçağın kontrolü , bir süre sonra beş el - Kaide üyesinin eline geçti .	New York'taki Dünya Ticaret Merkezi'nin Güney Kulesi'ne intihar saldırısı düzenleyen uçaktaki 65 kişiden kurtulan olmadı .	Çarpmanın etkisiyle bir müddet sonra bina çöktü ve binadaki yaklaşık 900 kişinin ölümüne sebep oldu .	Kategori : Uçak kaçırmaları Kategori : Amerika Birleşik Devletleri'ndeki havacılık kazaları ve olayları Kategori : 11 Eylül saldırıları Kategori : New York tarihi
+Event	T1	saldırılar	EVENT	170
+Event	T2	kaçırılan	EVENT	191
+Event	T3	gitmek	EVENT	350
+Event	T5	geçti	EVENT	460
+Event	T7	çöktü	EVENT	633
+Event	T8	oldu	EVENT	686
+Event	T9	kazaları	EVENT	776
+Event	T10	olayları	EVENT	788
+Event	T11	UÇUŞU	EVENT	36
+Event	T12	uçuşu	EVENT	83
+Event	T13	kalkan	EVENT	363
+Event	T14	saldırısı	EVENT	532
+Event	T4	Çarpmanın	EVENT	591
+Event	T6	kaçırmaları	EVENT	709
+Event	T15	saldırıları	EVENT	817
+Relation	T5	T2	CauseEffect	true	geçti	kaçırılan
+Relation	T2	T5	EffectCause	true	kaçırılan	geçti
+Relation	T3	T13	CauseEffect	true	gitmek	kalkan
+Relation	T13	T3	EffectCause	true	kalkan	gitmek
+Relation	T4	T7	CauseEffect	true	Çarpmanın	çöktü
+Relation	T7	T4	EffectCause	true	çöktü	Çarpmanın
+Relation	T7	T8	CauseEffect	true	çöktü	oldu
+Relation	T8	T7	EffectCause	true	oldu	çöktü
+Relation	T2	T14	CauseEffect	true	kaçırılan	saldırısı
+Relation	T14	T2	EffectCause	true	saldırısı	kaçırılan
+Relation	T2	T1	CauseEffect	true	kaçırılan	saldırılar
+Relation	T1	T2	EffectCause	true	saldırılar	kaçırılan
+Relation	T10	T14	NoRel	true	olayları	saldırısı
+Relation	T10	T3	NoRel	true	olayları	gitmek
+Relation	T11	T15	NoRel	true	UÇUŞU	saldırıları
+Relation	T11	T9	NoRel	true	UÇUŞU	kazaları
+Relation	T12	T8	NoRel	true	uçuşu	oldu
+Relation	T13	T8	NoRel	true	kalkan	oldu
+Relation	T14	T15	NoRel	true	saldırısı	saldırıları
+Relation	T14	T9	NoRel	true	saldırısı	kazaları
+Relation	T15	T6	NoRel	true	saldırıları	kaçırmaları
+Relation	T2	T4	NoRel	true	kaçırılan	Çarpmanın
+Relation	T2	T9	NoRel	true	kaçırılan	kazaları
+Relation	T3	T1	NoRel	true	gitmek	saldırılar
+Relation	T3	T11	NoRel	true	gitmek	UÇUŞU
+Relation	T4	T9	NoRel	true	Çarpmanın	kazaları
+Relation	T5	T12	NoRel	true	geçti	uçuşu
+Relation	T6	T12	NoRel	true	kaçırmaları	uçuşu
+Relation	T6	T14	NoRel	true	kaçırmaları	saldırısı
+Relation	T6	T3	NoRel	true	kaçırmaları	gitmek
+Relation	T7	T13	NoRel	true	çöktü	kalkan
+Relation	T9	T12	NoRel	true	kazaları	uçuşu
+Relation	T9	T6	NoRel	true	kazaları	kaçırmaları

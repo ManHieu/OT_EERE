@@ -1,0 +1,754 @@
+{
+  "id": "epidemics-week4-isik-2568389_chunk_6.ann.tsvx",
+  "text": "\u0130lk \u00f6l\u00fcm de do\u011fruland\u0131 .\t- \u0130sko\u00e7ya ilk vakas\u0131n\u0131 do\u011frulad\u0131 .\t- Singapur d\u00f6rt vakay\u0131 daha do\u011frulayarak toplam say\u0131s\u0131n\u0131 106'ya \u00e7\u0131kard\u0131 .\t- G\u00fcney Kore 376 vakay\u0131 daha do\u011frulayarak toplam say\u0131s\u0131n\u0131 3.526'ya getirdi .\t210 vaka , daha sonra bildirilen 18. \u00f6l\u00fcmle do\u011fruland\u0131 ve toplam say\u0131 3.736'ya ula\u015ft\u0131 .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "\u00f6l\u00fcm",
+      "label": "EVENT",
+      "char_index": 4,
+      "sid": 0,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "do\u011fruland\u0131",
+      "label": "EVENT",
+      "char_index": 12,
+      "sid": 0,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "do\u011frulad\u0131",
+      "label": "EVENT",
+      "char_index": 48,
+      "sid": 1,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "\u00e7\u0131kard\u0131",
+      "label": "EVENT",
+      "char_index": 124,
+      "sid": 2,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "getirdi",
+      "label": "EVENT",
+      "char_index": 201,
+      "sid": 3,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "bildirilen",
+      "label": "EVENT",
+      "char_index": 233,
+      "sid": 4,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "do\u011fruland\u0131",
+      "label": "EVENT",
+      "char_index": 255,
+      "sid": 4,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "ula\u015ft\u0131",
+      "label": "EVENT",
+      "char_index": 290,
+      "sid": 4,
+      "tid": [
+        13,
+        14
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "vakas\u0131n\u0131",
+      "label": "EVENT",
+      "char_index": 39,
+      "sid": 1,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "do\u011frulayarak",
+      "label": "EVENT",
+      "char_index": 88,
+      "sid": 2,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "do\u011frulayarak",
+      "label": "EVENT",
+      "char_index": 163,
+      "sid": 3,
+      "tid": [
+        6,
+        7
+      ]
+    }
+  },
+  "relation": {
+    "T0-T1": "CauseEffect",
+    "T1-T0": "EffectCause",
+    "T8-T2": "CauseEffect",
+    "T2-T8": "EffectCause",
+    "T9-T3": "CauseEffect",
+    "T3-T9": "EffectCause",
+    "T10-T4": "CauseEffect",
+    "T4-T10": "EffectCause",
+    "T6-T7": "CauseEffect",
+    "T7-T6": "EffectCause",
+    "T5-T6": "CauseEffect",
+    "T6-T5": "EffectCause",
+    "T10-T3": "NoRel",
+    "T10-T9": "NoRel",
+    "T2-T10": "NoRel",
+    "T4-T9": "NoRel",
+    "T5-T4": "NoRel",
+    "T5-T8": "NoRel",
+    "T5-T9": "NoRel",
+    "T7-T1": "NoRel",
+    "T7-T8": "NoRel",
+    "T8-T10": "NoRel",
+    "T9-T8": "NoRel"
+  },
+  "sentence": [
+    [
+      "\u0130lk",
+      "\u00f6l\u00fcm",
+      "de",
+      "do\u011fruland\u0131",
+      "."
+    ],
+    [
+      "-",
+      "\u0130sko\u00e7ya",
+      "ilk",
+      "vakas\u0131n\u0131",
+      "do\u011frulad\u0131",
+      "."
+    ],
+    [
+      "-",
+      "Singapur",
+      "d\u00f6rt",
+      "vakay\u0131",
+      "daha",
+      "do\u011frulayarak",
+      "toplam",
+      "say\u0131s\u0131n\u0131",
+      "106'ya",
+      "\u00e7\u0131kard\u0131",
+      "."
+    ],
+    [
+      "-",
+      "G\u00fcney",
+      "Kore",
+      "376",
+      "vakay\u0131",
+      "daha",
+      "do\u011frulayarak",
+      "toplam",
+      "say\u0131s\u0131n\u0131",
+      "3.526'ya",
+      "getirdi",
+      "."
+    ],
+    [
+      "210",
+      "vaka",
+      ",",
+      "daha",
+      "sonra",
+      "bildirilen",
+      "18.",
+      "\u00f6l\u00fcmle",
+      "do\u011fruland\u0131",
+      "ve",
+      "toplam",
+      "say\u0131",
+      "3.736'ya",
+      "ula\u015ft\u0131",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      "advmod:emph"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        4
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        9
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        9
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        9
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      "flat"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      "nummod"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        10
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      "nummod"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        8
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        7
+      ],
+      "acl"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        13
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        11
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        13
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        13
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        8
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        13
+      ],
+      "punct"
+    ]
+  ]
+}

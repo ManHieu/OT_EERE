@@ -1,0 +1,71 @@
+Text	Bu sırada Osmanlıların teslim çağrısı 25 Haziran'da Negroponte kalesindeki Venedikliler tarafından reddedildi ve topçular kaleyi şiddetle dövmeye başladılar .	2.000 atlı da adaya yayılarak tüm yerleşimleri istila ettiler .	27 Haziran , 30 Haziran ve 5 Temmuz'daki üç taarruz savunmacılar tarafından püskürtülürken , garnizon Türk hatlarını geçen ulaklar sayesinde Niccolo da Canale'ye haber ulaştırarak yardım istemeyi başardıysa da , Venedik donanması yardıma gelmedi .	Bu arada 8 Temmuz'daki dördüncü taarruz da püskürtüldüyse de , ağır kayıplara uğrayan Venedik garnizonu direnme gücünün sonuna gelmişti .	11 Temmuz'da genel taarruz için tüm birliklerini karaya çıkaran Fatih Sultan Mehmet 12 Temmuz'da saldırı emrini verdi .
+Event	T0	çağrısı	EVENT	30
+Event	T1	reddedildi	EVENT	99
+Event	T2	ettiler	EVENT	213
+Event	T3	taarruz	EVENT	267
+Event	T4	püskürtülürken	EVENT	299
+Event	T5	geçen	EVENT	340
+Event	T6	başardıysa	EVENT	419
+Event	T8	taarruz	EVENT	503
+Event	T9	püskürtüldüyse	EVENT	514
+Event	T10	kayıplara	EVENT	539
+Event	T11	direnme	EVENT	575
+Event	T12	gelmişti	EVENT	598
+Event	T13	taarruz	EVENT	628
+Event	T14	saldırı	EVENT	706
+Event	T15	verdi	EVENT	721
+Event	T16	başladılar	EVENT	146
+Event	T17	yayılarak	EVENT	179
+Event	T18	ulaştırarak	EVENT	391
+Event	T7	çıkaran	EVENT	665
+Relation	T1	T16	CauseEffect	true	reddedildi	başladılar
+Relation	T16	T1	EffectCause	true	başladılar	reddedildi
+Relation	T0	T1	CauseEffect	true	çağrısı	reddedildi
+Relation	T1	T0	EffectCause	true	reddedildi	çağrısı
+Relation	T8	T10	CauseEffect	true	taarruz	kayıplara
+Relation	T10	T8	EffectCause	true	kayıplara	taarruz
+Relation	T10	T12	CauseEffect	true	kayıplara	gelmişti
+Relation	T12	T10	EffectCause	true	gelmişti	kayıplara
+Relation	T13	T7	CauseEffect	true	taarruz	çıkaran
+Relation	T7	T13	EffectCause	true	çıkaran	taarruz
+Relation	T0	T17	NoRel	true	çağrısı	yayılarak
+Relation	T0	T2	NoRel	true	çağrısı	ettiler
+Relation	T1	T14	NoRel	true	reddedildi	saldırı
+Relation	T1	T5	NoRel	true	reddedildi	geçen
+Relation	T1	T8	NoRel	true	reddedildi	taarruz
+Relation	T10	T16	NoRel	true	kayıplara	başladılar
+Relation	T10	T2	NoRel	true	kayıplara	ettiler
+Relation	T11	T0	NoRel	true	direnme	çağrısı
+Relation	T11	T3	NoRel	true	direnme	taarruz
+Relation	T12	T14	NoRel	true	gelmişti	saldırı
+Relation	T12	T17	NoRel	true	gelmişti	yayılarak
+Relation	T12	T5	NoRel	true	gelmişti	geçen
+Relation	T12	T7	NoRel	true	gelmişti	çıkaran
+Relation	T12	T9	NoRel	true	gelmişti	püskürtüldüyse
+Relation	T13	T18	NoRel	true	taarruz	ulaştırarak
+Relation	T13	T4	NoRel	true	taarruz	püskürtülürken
+Relation	T13	T6	NoRel	true	taarruz	başardıysa
+Relation	T14	T17	NoRel	true	saldırı	yayılarak
+Relation	T14	T6	NoRel	true	saldırı	başardıysa
+Relation	T15	T7	NoRel	true	verdi	çıkaran
+Relation	T16	T12	NoRel	true	başladılar	gelmişti
+Relation	T16	T9	NoRel	true	başladılar	püskürtüldüyse
+Relation	T17	T5	NoRel	true	yayılarak	geçen
+Relation	T17	T7	NoRel	true	yayılarak	çıkaran
+Relation	T18	T2	NoRel	true	ulaştırarak	ettiler
+Relation	T18	T3	NoRel	true	ulaştırarak	taarruz
+Relation	T18	T7	NoRel	true	ulaştırarak	çıkaran
+Relation	T18	T9	NoRel	true	ulaştırarak	püskürtüldüyse
+Relation	T2	T0	NoRel	true	ettiler	çağrısı
+Relation	T2	T1	NoRel	true	ettiler	reddedildi
+Relation	T2	T9	NoRel	true	ettiler	püskürtüldüyse
+Relation	T3	T18	NoRel	true	taarruz	ulaştırarak
+Relation	T3	T8	NoRel	true	taarruz	taarruz
+Relation	T4	T16	NoRel	true	püskürtülürken	başladılar
+Relation	T4	T18	NoRel	true	püskürtülürken	ulaştırarak
+Relation	T6	T7	NoRel	true	başardıysa	çıkaran
+Relation	T8	T0	NoRel	true	taarruz	çağrısı
+Relation	T8	T1	NoRel	true	taarruz	reddedildi
+Relation	T8	T13	NoRel	true	taarruz	taarruz
+Relation	T8	T15	NoRel	true	taarruz	verdi
+Relation	T9	T4	NoRel	true	püskürtüldüyse	püskürtülürken

@@ -1,0 +1,33 @@
+Text	سکردو سے روانگی کے بعد 14 ہزار فٹ کی بلندی پر طیارے کے بائیں انجن کا ایک کمپریسر بے کار ہو گیا اور آگ لگ گئی ، جہاز کے عملہ نے انجن کو بند کر دیا اور واپس سکردو ہی میں طیارے کو بحفاظت اتار لیا ۔	قومیت اموات کل ----------_-------_----	مسافر عملہ پاکستانی 39 5 آسٹریائی 2 0 چینی 1_______0 کل 42 5	زمرہ : 2016ء کے فضائی حادثات و واقعات زمرہ : 2016ء میں پاکستان زمرہ : 2016ء میں پاکستان میں آفات زمرہ : پاکستان انٹرنیشنل ایئر لائنز کے حادثات و واقعات زمرہ : پاکستان میں ہوائی حادثات و واقعات زمرہ : ضلع ایبٹ آباد	
+Event	T0	روانگی	EVENT	9
+Event	T3	بند	EVENT	135
+Event	T5	اموات	EVENT	201
+Event	T6	حادثات	EVENT	317
+Event	T7	واقعات	EVENT	326
+Event	T8	حادثات	EVENT	431
+Event	T9	واقعات	EVENT	440
+Event	T10	حادثات	EVENT	472
+Event	T11	آگ	EVENT	99
+Event	T12	بے کار	EVENT	81
+Event	T1	اتار	EVENT	184
+Event	T2	واقعات	EVENT	481
+Event	T4	آفات	EVENT	387
+Relation	T12	T11	CauseEffect	true	بے کار	آگ
+Relation	T11	T12	EffectCause	true	آگ	بے کار
+Relation	T11	T3	CauseEffect	true	آگ	بند
+Relation	T3	T11	EffectCause	true	بند	آگ
+Relation	T10	T1	NoRel	true	حادثات	اتار
+Relation	T10	T11	NoRel	true	حادثات	آگ
+Relation	T10	T7	NoRel	true	حادثات	واقعات
+Relation	T12	T10	NoRel	true	بے کار	حادثات
+Relation	T3	T1	NoRel	true	بند	اتار
+Relation	T4	T6	NoRel	true	آفات	حادثات
+Relation	T5	T1	NoRel	true	اموات	اتار
+Relation	T5	T12	NoRel	true	اموات	بے کار
+Relation	T6	T1	NoRel	true	حادثات	اتار
+Relation	T6	T5	NoRel	true	حادثات	اموات
+Relation	T6	T9	NoRel	true	حادثات	واقعات
+Relation	T7	T10	NoRel	true	واقعات	حادثات
+Relation	T7	T2	NoRel	true	واقعات	واقعات
+Relation	T8	T0	NoRel	true	حادثات	روانگی
+Relation	T9	T6	NoRel	true	واقعات	حادثات

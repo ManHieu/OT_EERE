@@ -1,0 +1,26 @@
+Text	Finalmente , el número de lesiones se fijó en 74 , ninguno de los cuales resultó gravemente herido .	A todos los pasajeros se les ofrecieron ₽ 100.000 ( U$S 1.714 ) como compensación por accidente .	Se ha abierto una investigación sobre el accidente .	El Comité Interestatal de Aviación es responsable de investigar los accidentes de aviación civil en Rusia .	Hay una proliferación de aves cerca del aeropuerto Moscú-Zhukovsky debido a los vertederos ilegales .
+Event	T0	lesiones	EVENT	26
+Event	T1	fijó	EVENT	38
+Event	T2	herido	EVENT	92
+Event	T3	ofrecieron	EVENT	130
+Event	T4	compensación	EVENT	170
+Event	T5	accidente	EVENT	187
+Event	T6	abierto	EVENT	205
+Event	T7	investigación	EVENT	217
+Event	T8	accidente	EVENT	240
+Event	T9	investigar	EVENT	305
+Event	T10	accidentes	EVENT	320
+Event	T11	proliferación	EVENT	368
+Event	T12	vertederos	EVENT	440
+Relation	T0	T12	NoRel	true	lesiones	vertederos
+Relation	T1	T8	NoRel	true	fijó	accidente
+Relation	T10	T1	NoRel	true	accidentes	fijó
+Relation	T10	T2	NoRel	true	accidentes	herido
+Relation	T2	T10	NoRel	true	herido	accidentes
+Relation	T2	T5	NoRel	true	herido	accidente
+Relation	T3	T5	NoRel	true	ofrecieron	accidente
+Relation	T5	T3	NoRel	true	accidente	ofrecieron
+Relation	T5	T8	NoRel	true	accidente	accidente
+Relation	T6	T8	NoRel	true	abierto	accidente
+Relation	T7	T5	NoRel	true	investigación	accidente
+Relation	T9	T2	NoRel	true	investigar	herido

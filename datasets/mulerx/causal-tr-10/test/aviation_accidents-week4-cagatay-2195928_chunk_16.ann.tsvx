@@ -1,0 +1,32 @@
+Text	Kazanın ardından birçok basın kuruluşu , kazayı yapan uçağın ACT Airlines'a ait olmasına rağmen haberlerinde bir Türk Hava Yolları uçağının kaza yaptığını belirtti .	Türk Hava Yolları , uçağın ve mürettebatın onlara ait olmadığını ve kaza yapan uçağın ve mürettebatın ACT Airlines'a ait olduğunu söyleyen bir basın açıklaması yaptı .	Yine de uçuş Türk Hava Yolları uçuş numarası altında gerçekleştirilmişti .	37 kişi Kırgızistan Sağlık Bakanlığına ait sağlık kuruluşlarına getirildi , başarılı bir tedaviden sonra 36 tanesi taburcu edildi , bir kişi hastanede öldü .	Hastanede ölen kişinin 29 yaşında olduğu ve tüm müdahalelere rağmen başarılı olamadıkları açıklandı .
+Event	T0	Kazanın	EVENT	0
+Event	T1	belirtti	EVENT	155
+Event	T2	söyleyen	EVENT	296
+Event	T4	uçuş	EVENT	342
+Event	T5	gerçekleştirilmişti	EVENT	387
+Event	T6	getirildi	EVENT	473
+Event	T7	tedaviden	EVENT	498
+Event	T9	öldü	EVENT	560
+Event	T10	ölen	EVENT	577
+Event	T11	müdahalelere	EVENT	615
+Event	T12	açıklandı	EVENT	657
+Event	T13	kazayı	EVENT	41
+Event	T3	açıklaması	EVENT	315
+Event	T8	taburcu	EVENT	524
+Relation	T1	T3	CauseEffect	true	belirtti	açıklaması
+Relation	T3	T1	EffectCause	true	açıklaması	belirtti
+Relation	T13	T9	CauseEffect	true	kazayı	öldü
+Relation	T9	T13	EffectCause	true	öldü	kazayı
+Relation	T7	T8	CauseEffect	true	tedaviden	taburcu
+Relation	T8	T7	EffectCause	true	taburcu	tedaviden
+Relation	T0	T10	NoRel	true	Kazanın	ölen
+Relation	T11	T1	NoRel	true	müdahalelere	belirtti
+Relation	T13	T11	NoRel	true	kazayı	müdahalelere
+Relation	T13	T5	NoRel	true	kazayı	gerçekleştirilmişti
+Relation	T2	T7	NoRel	true	söyleyen	tedaviden
+Relation	T4	T10	NoRel	true	uçuş	ölen
+Relation	T4	T5	NoRel	true	uçuş	gerçekleştirilmişti
+Relation	T5	T3	NoRel	true	gerçekleştirilmişti	açıklaması
+Relation	T6	T3	NoRel	true	getirildi	açıklaması
+Relation	T6	T7	NoRel	true	getirildi	tedaviden
+Relation	T9	T6	NoRel	true	öldü	getirildi

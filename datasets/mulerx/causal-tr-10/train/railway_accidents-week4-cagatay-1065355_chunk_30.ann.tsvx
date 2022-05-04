@@ -1,0 +1,32 @@
+Text	Allama Iqbal Ekspresi makinisti Juma Goth İstasyonundaki trenin durmasını belirten işarete aldırış etmemiş ve aynı hatta Karaçi’den gelen diğer trenle çarpışmışması sonra en az 18 kişi öldü .	- 27 Kasım , 2009 – Moskova’dan Sankt - Peterburg_‘a bir seyahatte Bologoye’de Neva Express raydan çıkma_sı ile en az 27 ölü rapor edildi .	Lenta .ru Tren saatte yaklaşık 200 km hızla hareket ettiğinde yaklaşık 7 kilogram patlayıcı lokomotif altına konulmuştu .	Lokomotif ve çoğu vagon kayarak zarar gördü , fakat son üç vagon raydan çıktı .	İkinci bomba kutarma operasyonu sırasında patlatıldı .
+Event	T0	etmemiş	EVENT	99
+Event	T1	çarpışmışması	EVENT	151
+Event	T2	öldü	EVENT	185
+Event	T3	seyahatte	EVENT	249
+Event	T4	çıkma_sı	EVENT	291
+Event	T5	edildi	EVENT	323
+Event	T6	konulmuştu	EVENT	441
+Event	T7	gördü	EVENT	492
+Event	T8	çıktı	EVENT	526
+Event	T9	patlatıldı	EVENT	576
+Event	T10	ölü	EVENT	313
+Relation	T0	T1	CauseEffect	true	etmemiş	çarpışmışması
+Relation	T1	T0	EffectCause	true	çarpışmışması	etmemiş
+Relation	T1	T2	CauseEffect	true	çarpışmışması	öldü
+Relation	T2	T1	EffectCause	true	öldü	çarpışmışması
+Relation	T4	T10	CauseEffect	true	çıkma_sı	ölü
+Relation	T10	T4	EffectCause	true	ölü	çıkma_sı
+Relation	T6	T7	CauseEffect	true	konulmuştu	gördü
+Relation	T7	T6	EffectCause	true	gördü	konulmuştu
+Relation	T6	T8	CauseEffect	true	konulmuştu	çıktı
+Relation	T8	T6	EffectCause	true	çıktı	konulmuştu
+Relation	T0	T6	NoRel	true	etmemiş	konulmuştu
+Relation	T1	T10	NoRel	true	çarpışmışması	ölü
+Relation	T1	T4	NoRel	true	çarpışmışması	çıkma_sı
+Relation	T3	T9	NoRel	true	seyahatte	patlatıldı
+Relation	T4	T1	NoRel	true	çıkma_sı	çarpışmışması
+Relation	T4	T3	NoRel	true	çıkma_sı	seyahatte
+Relation	T5	T9	NoRel	true	edildi	patlatıldı
+Relation	T7	T10	NoRel	true	gördü	ölü
+Relation	T8	T10	NoRel	true	çıktı	ölü
+Relation	T8	T3	NoRel	true	çıktı	seyahatte

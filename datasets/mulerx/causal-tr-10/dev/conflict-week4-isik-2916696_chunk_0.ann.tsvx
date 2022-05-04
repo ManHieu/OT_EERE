@@ -1,0 +1,38 @@
+Text	Mondros Ateşkes Antlaşması sonrasında Fransızların Anadolu'nun güneyini işgal etmeleri sonucu Fransız ve yerel Ermeni Kuvvetleri ile Kuvayı Milliye güçleri arasında Osmaniye'de günümüzde de Kanlıgeçit olarak bilinen mevkiide gerçekleşen savaş .	Osmaniye , Gaziantep ve Suriye'yi işgali altında tutan Fransız kuvvetleri , Osmaniye - Gaziantep karayolu ve demiryolu hattını kontrol altında tutmak ve Gaziantep ve Suriye'deki kuvvetlerine lojistik destek sağlamak amacında idiler .	Bu amaçla Osmaniye'den Gaziantep istikametine harekete geçmiş ve Mamure Tren İstasyonu'nu ele geçirmişlerdir .	Kuvayı Milliye birliklerinin düzenlediği Mamure Baskını'nda Saim bey ile birlikte 15 Türk eri şehit olmuştur .	Kadirli ve Dörtyol birlikleri ile Kanlıgeçit'i tutarak başarılı mücadeleler vermişlerse de Fransız birliklerine engel olamamışlar , Fransız birlikleri Hasanbeyli üzerinden İslahiye'ye ve oradan da Antep'e ulaşmışlardır .
+Event	T1	etmeleri	EVENT	78
+Event	T2	savaş	EVENT	237
+Event	T3	işgali	EVENT	279
+Event	T4	geçmiş	EVENT	534
+Event	T5	düzenlediği	EVENT	619
+Event	T6	olmuştur	EVENT	690
+Event	T7	mücadeleler	EVENT	765
+Event	T8	Mondros Ateşkes Antlaşması	EVENT	0
+Event	T9	tutmak	EVENT	388
+Event	T10	sağlamak	EVENT	452
+Event	T11	geçirmişlerdir	EVENT	573
+Event	T12	Mamure Baskını'nda	EVENT	631
+Event	T13	ulaşmışlardır	EVENT	906
+Relation	T1	T2	CauseEffect	true	etmeleri	savaş
+Relation	T2	T1	EffectCause	true	savaş	etmeleri
+Relation	T12	T6	CauseEffect	true	Mamure Baskını'nda	olmuştur
+Relation	T6	T12	EffectCause	true	olmuştur	Mamure Baskını'nda
+Relation	T11	T12	CauseEffect	true	geçirmişlerdir	Mamure Baskını'nda
+Relation	T12	T11	EffectCause	true	Mamure Baskını'nda	geçirmişlerdir
+Relation	T1	T7	CauseEffect	true	etmeleri	mücadeleler
+Relation	T7	T1	EffectCause	true	mücadeleler	etmeleri
+Relation	T1	T4	CauseEffect	true	etmeleri	geçmiş
+Relation	T4	T1	EffectCause	true	geçmiş	etmeleri
+Relation	T4	T11	CauseEffect	true	geçmiş	geçirmişlerdir
+Relation	T11	T4	EffectCause	true	geçirmişlerdir	geçmiş
+Relation	T10	T3	NoRel	true	sağlamak	işgali
+Relation	T13	T5	NoRel	true	ulaşmışlardır	düzenlediği
+Relation	T2	T12	NoRel	true	savaş	Mamure Baskını'nda
+Relation	T2	T13	NoRel	true	savaş	ulaşmışlardır
+Relation	T2	T7	NoRel	true	savaş	mücadeleler
+Relation	T3	T8	NoRel	true	işgali	Mondros Ateşkes Antlaşması
+Relation	T4	T8	NoRel	true	geçmiş	Mondros Ateşkes Antlaşması
+Relation	T6	T10	NoRel	true	olmuştur	sağlamak
+Relation	T8	T5	NoRel	true	Mondros Ateşkes Antlaşması	düzenlediği
+Relation	T8	T6	NoRel	true	Mondros Ateşkes Antlaşması	olmuştur
+Relation	T8	T7	NoRel	true	Mondros Ateşkes Antlaşması	mücadeleler
+Relation	T9	T3	NoRel	true	tutmak	işgali

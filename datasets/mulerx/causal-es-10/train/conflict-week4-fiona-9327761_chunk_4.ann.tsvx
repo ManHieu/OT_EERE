@@ -1,0 +1,52 @@
+Text	Apoyado por una intensa campaña internacional , finalmente fue perdonada , luego liberada en 1962 en el marco de los acuerdos de Evian .	Tras su liberación , Djamila Bouhired trabajó con Jacques Vergès , con quien se casó en 1965 - en _ Révolution africaine _ , una revista centrada en las revoluciones nacionalistas africanas .	De su matrimonio con Vergès , tiene dos hijos , Meriem y Liess Vergès .	En noviembre de 2015 se rumoreó su muerte e incluso se llegó a recitar una oración mortuoria ( fatiha ) en su memoria en el Parlamento tunecino .	El 11 de marzo de 2019 , Djamila Bouhired participó en Argel en la manifestación para protestar contra la nueva candidatura de Abdelaziz Bouteflika en las elecciones presidenciales de previstas para el mes abril .
+Event	T0	Apoyado	EVENT	0
+Event	T1	campaña	EVENT	24
+Event	T2	perdonada	EVENT	63
+Event	T3	liberada	EVENT	81
+Event	T4	acuerdos	EVENT	117
+Event	T5	liberación	EVENT	145
+Event	T6	trabajó	EVENT	175
+Event	T7	casó	EVENT	217
+Event	T8	centrada	EVENT	274
+Event	T9	matrimonio	EVENT	335
+Event	T10	rumoreó	EVENT	425
+Event	T11	muerte	EVENT	436
+Event	T12	llegó	EVENT	456
+Event	T13	recitar	EVENT	464
+Event	T14	participó	EVENT	589
+Event	T15	manifestación	EVENT	614
+Event	T16	protestar	EVENT	633
+Event	T17	previstas	EVENT	731
+Relation	T2	T3	CauseEffect	true	perdonada	liberada
+Relation	T3	T2	EffectCause	true	liberada	perdonada
+Relation	T0	T17	NoRel	true	Apoyado	previstas
+Relation	T0	T3	NoRel	true	Apoyado	liberada
+Relation	T1	T0	NoRel	true	campaña	Apoyado
+Relation	T1	T15	NoRel	true	campaña	manifestación
+Relation	T1	T16	NoRel	true	campaña	protestar
+Relation	T1	T2	NoRel	true	campaña	perdonada
+Relation	T1	T8	NoRel	true	campaña	centrada
+Relation	T10	T12	NoRel	true	rumoreó	llegó
+Relation	T12	T17	NoRel	true	llegó	previstas
+Relation	T12	T6	NoRel	true	llegó	trabajó
+Relation	T13	T3	NoRel	true	recitar	liberada
+Relation	T13	T5	NoRel	true	recitar	liberación
+Relation	T14	T12	NoRel	true	participó	llegó
+Relation	T14	T16	NoRel	true	participó	protestar
+Relation	T14	T5	NoRel	true	participó	liberación
+Relation	T15	T8	NoRel	true	manifestación	centrada
+Relation	T16	T2	NoRel	true	protestar	perdonada
+Relation	T16	T4	NoRel	true	protestar	acuerdos
+Relation	T16	T7	NoRel	true	protestar	casó
+Relation	T3	T5	NoRel	true	liberada	liberación
+Relation	T4	T15	NoRel	true	acuerdos	manifestación
+Relation	T4	T2	NoRel	true	acuerdos	perdonada
+Relation	T4	T7	NoRel	true	acuerdos	casó
+Relation	T5	T1	NoRel	true	liberación	campaña
+Relation	T5	T15	NoRel	true	liberación	manifestación
+Relation	T5	T6	NoRel	true	liberación	trabajó
+Relation	T5	T8	NoRel	true	liberación	centrada
+Relation	T6	T9	NoRel	true	trabajó	matrimonio
+Relation	T7	T0	NoRel	true	casó	Apoyado
+Relation	T8	T14	NoRel	true	centrada	participó
+Relation	T9	T13	NoRel	true	matrimonio	recitar

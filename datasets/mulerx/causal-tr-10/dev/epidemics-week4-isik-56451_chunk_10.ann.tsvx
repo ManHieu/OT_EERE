@@ -1,0 +1,25 @@
+Text	- Türkiye’de Veba ( Taun ) Tarihçesi Üzerine , Süheyl Ünver , Tedavi Kliniği ve Laboratuarı , Sayı : 5 ( 1935 ) , Sayfa : 70 - 88 .	- Sürremerrî , Kitâb_fîhi ẕikrü’l - vebâʾ ve’ṭ - ṭâʿûn , Yayınlayan : Şevket b. Rıfkī Şevket , Amman - Dımaşk 1425 / 2005 , Sayfa: 88 , 101.	- İbn Hacer el - Askalânî , Beẕlü’l - mâʿûn_fî fażli’ṭ -ṭâʿûn , Yayınlayan : Ahmed İsâm Abdülkādir el - Kâtib , Riyad 1411 , Sayfa : 78 , 85 , 97 , 109 , 196 , 305.	- Dünya Sağlık Örgütü ( DSÖ ) - Health topic - Communicable Disease Surveillance & Response - Impact of plague & Information resources - Centers for Disease Control and Prevention ( CDC ) - CDC Plague - Infectious Disease Information - Agent Fact Sheet : Plague , biyogüvenlik - Symptoms , causes , pictures of bubonic plague - Secrets of the Dead .	Mystery of the Black Death PBS - Flea As Weapon ( 281 KB ) - Researchers sound the alarm : the multidrug resistance of the plague bacillus could spread - Plague - LoveToKnow 1911 - Genom_bilgisi NIAID PathoSystems Resource Integration Center ( PATRIC ) - fotoğraflar , videolar
+Event	T0	Response	EVENT	521
+Event	T1	Impact	EVENT	532
+Event	T2	plague	EVENT	542
+Event	T3	Plague	EVENT	693
+Event	T4	plague	EVENT	757
+Event	T5	spread	EVENT	933
+Event	T6	Plague	EVENT	942
+Event	T7	Surveillance	EVENT	506
+Event	T8	Dead	EVENT	781
+Relation	T2	T1	CauseEffect	true	plague	Impact
+Relation	T1	T2	EffectCause	true	Impact	plague
+Relation	T2	T6	NoRel	true	plague	Plague
+Relation	T3	T1	NoRel	true	Plague	Impact
+Relation	T3	T6	NoRel	true	Plague	Plague
+Relation	T5	T0	NoRel	true	spread	Response
+Relation	T5	T6	NoRel	true	spread	Plague
+Relation	T5	T8	NoRel	true	spread	Dead
+Relation	T6	T3	NoRel	true	Plague	Plague
+Relation	T6	T8	NoRel	true	Plague	Dead
+Relation	T7	T1	NoRel	true	Surveillance	Impact
+Relation	T7	T5	NoRel	true	Surveillance	spread
+Relation	T7	T6	NoRel	true	Surveillance	Plague
+Relation	T7	T8	NoRel	true	Surveillance	Dead
+Relation	T8	T7	NoRel	true	Dead	Surveillance

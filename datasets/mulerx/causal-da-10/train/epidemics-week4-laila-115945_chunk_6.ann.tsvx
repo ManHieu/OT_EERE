@@ -1,0 +1,28 @@
+Text	Sidst på efteråret begyndte dødstallet at falde .	Først i februar 1666 var det sikkert for kongen og hans følge at vende tilbage til byen .	På det tidspunkt havde handelen med det europæiske kontinent spredt pestsmitten til Frankrig , hvor den ebbede ud den følgende vinter .	Pesttilfældene fortsatte i moderat tempo til september 1666 .	Den 2. og 3. september ødelagde den store brand i London mange af byens mest befolkede beboelses- og forretningskvarterer .
+Event	T0	dødstallet	EVENT	28
+Event	T1	falde	EVENT	42
+Event	T2	vende	EVENT	115
+Event	T3	pestsmitten	EVENT	208
+Event	T4	fortsatte	EVENT	291
+Event	T5	ødelagde	EVENT	361
+Event	T6	sikkert	EVENT	79
+Event	T7	handelen	EVENT	163
+Event	T8	ebbede ud	EVENT	244
+Event	T9	Pesttilfældene	EVENT	276
+Event	T10	brand	EVENT	380
+Event	T11	spredt	EVENT	201
+Relation	T10	T5	CauseEffect	true	brand	ødelagde
+Relation	T5	T10	EffectCause	true	ødelagde	brand
+Relation	T7	T11	CauseEffect	true	handelen	spredt
+Relation	T11	T7	EffectCause	true	spredt	handelen
+Relation	T1	T6	CauseEffect	true	falde	sikkert
+Relation	T6	T1	EffectCause	true	sikkert	falde
+Relation	T0	T11	NoRel	true	dødstallet	spredt
+Relation	T0	T5	NoRel	true	dødstallet	ødelagde
+Relation	T0	T9	NoRel	true	dødstallet	Pesttilfældene
+Relation	T10	T6	NoRel	true	brand	sikkert
+Relation	T11	T4	NoRel	true	spredt	fortsatte
+Relation	T2	T11	NoRel	true	vende	spredt
+Relation	T3	T11	NoRel	true	pestsmitten	spredt
+Relation	T3	T9	NoRel	true	pestsmitten	Pesttilfældene
+Relation	T9	T0	NoRel	true	Pesttilfældene	dødstallet

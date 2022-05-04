@@ -1,0 +1,48 @@
+Text	Bu tarih davanın zamanaşımı süresinin dolmasından tam iki hafta sonraydı .	Kanunlara göre “ taksirle ölüme sebebiyet verme ” suçunun zamanaşımı karşılığı 7.5 yıl .	Davadaki zamanaşımı Ocak ayının son haftasında bittiği için , davanın bu duruşmasında sanık avukatları davanın zamanaşımından düşürülmesini talep edecek .	Mahkeme de bu talebe uymak zorunda kalacak .	Birleşik Taşımacılık Çalışanları Sendikası ( BTS ) , kazanın yıldönümünde yaptığı açıklamada TCDD’nin 4/ 8 oranında suçlu bulunmasına rağmen yöneticilerin adalet önüne çıkartılmadığını vurgulamıştır .
+Event	T0	dolmasından	EVENT	38
+Event	T1	zamanaşımı	EVENT	173
+Event	T2	bittiği	EVENT	211
+Event	T3	duruşmasında	EVENT	237
+Event	T4	edecek	EVENT	310
+Event	T5	vurgulamıştır	EVENT	549
+Event	T6	taksirle	EVENT	92
+Event	T7	ölüme	EVENT	101
+Event	T8	kalacak	EVENT	354
+Event	T9	kazanın	EVENT	417
+Event	T10	açıklamada	EVENT	446
+Event	T11	Kanunlara	EVENT	75
+Event	T12	zamanaşımı	EVENT	133
+Relation	T6	T7	CauseEffect	true	taksirle	ölüme
+Relation	T7	T6	EffectCause	true	ölüme	taksirle
+Relation	T0	T4	CauseEffect	true	dolmasından	edecek
+Relation	T4	T0	EffectCause	true	edecek	dolmasından
+Relation	T4	T8	CauseEffect	true	edecek	kalacak
+Relation	T8	T4	EffectCause	true	kalacak	edecek
+Relation	T9	T10	CauseEffect	true	kazanın	açıklamada
+Relation	T10	T9	EffectCause	true	açıklamada	kazanın
+Relation	T10	T5	CauseEffect	true	açıklamada	vurgulamıştır
+Relation	T5	T10	EffectCause	true	vurgulamıştır	açıklamada
+Relation	T11	T12	CauseEffect	true	Kanunlara	zamanaşımı
+Relation	T12	T11	EffectCause	true	zamanaşımı	Kanunlara
+Relation	T11	T2	CauseEffect	true	Kanunlara	bittiği
+Relation	T2	T11	EffectCause	true	bittiği	Kanunlara
+Relation	T2	T4	CauseEffect	true	bittiği	edecek
+Relation	T4	T2	EffectCause	true	edecek	bittiği
+Relation	T0	T12	NoRel	true	dolmasından	zamanaşımı
+Relation	T1	T2	NoRel	true	zamanaşımı	bittiği
+Relation	T10	T3	NoRel	true	açıklamada	duruşmasında
+Relation	T10	T7	NoRel	true	açıklamada	ölüme
+Relation	T11	T1	NoRel	true	Kanunlara	zamanaşımı
+Relation	T11	T5	NoRel	true	Kanunlara	vurgulamıştır
+Relation	T11	T9	NoRel	true	Kanunlara	kazanın
+Relation	T12	T5	NoRel	true	zamanaşımı	vurgulamıştır
+Relation	T12	T6	NoRel	true	zamanaşımı	taksirle
+Relation	T3	T7	NoRel	true	duruşmasında	ölüme
+Relation	T3	T8	NoRel	true	duruşmasında	kalacak
+Relation	T4	T10	NoRel	true	edecek	açıklamada
+Relation	T4	T3	NoRel	true	edecek	duruşmasında
+Relation	T4	T9	NoRel	true	edecek	kazanın
+Relation	T5	T2	NoRel	true	vurgulamıştır	bittiği
+Relation	T6	T2	NoRel	true	taksirle	bittiği
+Relation	T7	T1	NoRel	true	ölüme	zamanaşımı
+Relation	T7	T5	NoRel	true	ölüme	vurgulamıştır

@@ -1,0 +1,56 @@
+Text	Den 6. januar 1986 kl. 22:36 holdt tog 10266 for " stop " foran Hundige Station , idet den udløste togvej ikke kunne komme til udførelse på grund af manglende kontrol på et sporskifte .	Tog 40266 der fulgte umiddelbart efter tog 10266 fik efter passagen af Ishøj T HKT-information om 90 km/t .	I næste afsnit modtog toget information om 50 km/t , hvorfor lokomotivføreren indledte en fuldbremsning .	Da denne viste sig at være utilstrækkelig iværksatte HKT-anlægget en nødbremsning .	Da denne heller ikke var tilstrækkelig kolliderede 40266 med bagenden af det holdende 10266 .
+Event	T0	holdt	EVENT	29
+Event	T1	udløste	EVENT	91
+Event	T2	kontrol	EVENT	159
+Event	T3	sporskifte	EVENT	173
+Event	T4	fulgte	EVENT	200
+Event	T5	fik	EVENT	235
+Event	T6	passagen	EVENT	245
+Event	T7	modtog	EVENT	309
+Event	T8	information	EVENT	322
+Event	T9	indledte	EVENT	372
+Event	T10	fuldbremsning	EVENT	384
+Event	T11	viste	EVENT	409
+Event	T12	iværksatte	EVENT	442
+Event	T13	nødbremsning	EVENT	469
+Event	T14	kolliderede	EVENT	523
+Event	T15	udførelse	EVENT	127
+Event	T16	var	EVENT	505
+Relation	T16	T14	CauseEffect	true	var	kolliderede
+Relation	T14	T16	EffectCause	true	kolliderede	var
+Relation	T11	T14	CauseEffect	true	viste	kolliderede
+Relation	T14	T11	EffectCause	true	kolliderede	viste
+Relation	T7	T10	CauseEffect	true	modtog	fuldbremsning
+Relation	T10	T7	EffectCause	true	fuldbremsning	modtog
+Relation	T2	T14	CauseEffect	true	kontrol	kolliderede
+Relation	T14	T2	EffectCause	true	kolliderede	kontrol
+Relation	T0	T15	NoRel	true	holdt	udførelse
+Relation	T0	T16	NoRel	true	holdt	var
+Relation	T0	T8	NoRel	true	holdt	information
+Relation	T1	T16	NoRel	true	udløste	var
+Relation	T1	T2	NoRel	true	udløste	kontrol
+Relation	T11	T15	NoRel	true	viste	udførelse
+Relation	T14	T12	NoRel	true	kolliderede	iværksatte
+Relation	T14	T3	NoRel	true	kolliderede	sporskifte
+Relation	T14	T4	NoRel	true	kolliderede	fulgte
+Relation	T14	T8	NoRel	true	kolliderede	information
+Relation	T15	T0	NoRel	true	udførelse	holdt
+Relation	T15	T10	NoRel	true	udførelse	fuldbremsning
+Relation	T16	T13	NoRel	true	var	nødbremsning
+Relation	T16	T15	NoRel	true	var	udførelse
+Relation	T16	T3	NoRel	true	var	sporskifte
+Relation	T2	T11	NoRel	true	kontrol	viste
+Relation	T3	T0	NoRel	true	sporskifte	holdt
+Relation	T3	T15	NoRel	true	sporskifte	udførelse
+Relation	T3	T2	NoRel	true	sporskifte	kontrol
+Relation	T4	T11	NoRel	true	fulgte	viste
+Relation	T5	T1	NoRel	true	fik	udløste
+Relation	T5	T12	NoRel	true	fik	iværksatte
+Relation	T6	T8	NoRel	true	passagen	information
+Relation	T6	T9	NoRel	true	passagen	indledte
+Relation	T8	T1	NoRel	true	information	udløste
+Relation	T8	T16	NoRel	true	information	var
+Relation	T8	T6	NoRel	true	information	passagen
+Relation	T8	T9	NoRel	true	information	indledte
+Relation	T9	T12	NoRel	true	indledte	iværksatte
+Relation	T9	T14	NoRel	true	indledte	kolliderede

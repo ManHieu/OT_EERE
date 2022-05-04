@@ -1,0 +1,25 @@
+Text	01.03'te mürettebat alçalma talep etti , kontrolör irtifanın altına inilmeyecek şekilde alçalmaya izin verdi .	01.10'da kontrolör hava durumunu bildirdi : " rüzgâr sakin , görüş mesafesi 50 m , pist görüş mesafesi 300 m , dondurucu sis mevcut , dikey görüş mesafesi 160_ft " ve mürettebatın yaklaşıma devam edip etmeyeceğini sordu .	Mürettebat yaklaşıma devam edeceklerini bildirdi .	Mürettebat , standart yaklaşma çizelgesine uygun olarak 26 numaralı piste yaklaşma gerçekleştirdi .	01.11'de kontrolör mürettebatı bilgilendirdi : " … geçiş seviyesi altı sıfır ve ILS , 26 numaralı piste yaklaşım için hazır .
+Event	T0	etti	EVENT	34
+Event	T1	verdi	EVENT	103
+Event	T2	bildirdi	EVENT	144
+Event	T3	sordu	EVENT	325
+Event	T4	bildirdi	EVENT	373
+Event	T5	gerçekleştirdi	EVENT	467
+Event	T6	bilgilendirdi	EVENT	515
+Event	T7	geçiş	EVENT	535
+Event	T8	alçalma	EVENT	20
+Event	T9	sis	EVENT	232
+Relation	T0	T1	CauseEffect	true	etti	verdi
+Relation	T1	T0	EffectCause	true	verdi	etti
+Relation	T8	T2	CauseEffect	true	alçalma	bildirdi
+Relation	T2	T8	EffectCause	true	bildirdi	alçalma
+Relation	T3	T4	CauseEffect	true	sordu	bildirdi
+Relation	T4	T3	EffectCause	true	bildirdi	sordu
+Relation	T8	T5	CauseEffect	true	alçalma	gerçekleştirdi
+Relation	T5	T8	EffectCause	true	gerçekleştirdi	alçalma
+Relation	T4	T6	CauseEffect	true	bildirdi	bilgilendirdi
+Relation	T6	T4	EffectCause	true	bilgilendirdi	bildirdi
+Relation	T3	T6	NoRel	true	sordu	bilgilendirdi
+Relation	T4	T7	NoRel	true	bildirdi	geçiş
+Relation	T9	T3	NoRel	true	sis	sordu
+Relation	T9	T7	NoRel	true	sis	geçiş

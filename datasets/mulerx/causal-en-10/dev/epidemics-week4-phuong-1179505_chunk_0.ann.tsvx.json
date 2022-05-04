@@ -1,0 +1,2800 @@
+{
+  "id": "epidemics-week4-phuong-1179505_chunk_0.ann.tsvx",
+  "text": "WELL POISONING is the act of malicious manipulation of potable water resources in order to cause illness or death , or to deny an opponent access to fresh water resources .\tWell poisoning has been historically documented as a strategy during wartime since antiquity , and was used both offensively ( as a terror tactic to disrupt and depopulate a target area ) and defensively ( as a scorched earth tactic to deny an invading army sources of clean water ) .\tRotting corpses ( both animal and human ) thrown down wells were the most common implementation ; in one of the earliest examples of biological warfare , corpses known to have died from common transmissible diseases of the Pre-Modern era such as bubonic plague or tuberculosis were especially favored for well - poisoning .\tAdditionally , well poisoning was one of the three gravest antisemitic accusations made against Jews during this period ( the other two being host desecration and blood libel ) .\tSimilar accusations were also made of Koreans living in Japan in the aftermath of the 1923 Great Kant\u014d earthquake .",
+  "event": {
+    "T1": {
+      "id": "T1",
+      "text": "act",
+      "label": "EVENT",
+      "char_index": 22,
+      "sid": 0,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "manipulation",
+      "label": "EVENT",
+      "char_index": 39,
+      "sid": 0,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "death",
+      "label": "EVENT",
+      "char_index": 108,
+      "sid": 0,
+      "tid": [
+        18,
+        19
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "deny",
+      "label": "EVENT",
+      "char_index": 122,
+      "sid": 0,
+      "tid": [
+        22,
+        23
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "documented",
+      "label": "EVENT",
+      "char_index": 210,
+      "sid": 1,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "strategy",
+      "label": "EVENT",
+      "char_index": 226,
+      "sid": 1,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "wartime",
+      "label": "EVENT",
+      "char_index": 242,
+      "sid": 1,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "used",
+      "label": "EVENT",
+      "char_index": 276,
+      "sid": 1,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "disrupt",
+      "label": "EVENT",
+      "char_index": 322,
+      "sid": 1,
+      "tid": [
+        25,
+        26
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "depopulate",
+      "label": "EVENT",
+      "char_index": 334,
+      "sid": 1,
+      "tid": [
+        27,
+        28
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "deny",
+      "label": "EVENT",
+      "char_index": 409,
+      "sid": 1,
+      "tid": [
+        41,
+        42
+      ]
+    },
+    "T16": {
+      "id": "T16",
+      "text": "invading",
+      "label": "EVENT",
+      "char_index": 417,
+      "sid": 1,
+      "tid": [
+        43,
+        44
+      ]
+    },
+    "T17": {
+      "id": "T17",
+      "text": "Rotting",
+      "label": "EVENT",
+      "char_index": 458,
+      "sid": 2,
+      "tid": [
+        0,
+        1
+      ]
+    },
+    "T18": {
+      "id": "T18",
+      "text": "implementation",
+      "label": "EVENT",
+      "char_index": 539,
+      "sid": 2,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T19": {
+      "id": "T19",
+      "text": "warfare",
+      "label": "EVENT",
+      "char_index": 602,
+      "sid": 2,
+      "tid": [
+        25,
+        26
+      ]
+    },
+    "T20": {
+      "id": "T20",
+      "text": "died",
+      "label": "EVENT",
+      "char_index": 634,
+      "sid": 2,
+      "tid": [
+        31,
+        32
+      ]
+    },
+    "T21": {
+      "id": "T21",
+      "text": "diseases",
+      "label": "EVENT",
+      "char_index": 665,
+      "sid": 2,
+      "tid": [
+        35,
+        36
+      ]
+    },
+    "T22": {
+      "id": "T22",
+      "text": "plague",
+      "label": "EVENT",
+      "char_index": 712,
+      "sid": 2,
+      "tid": [
+        43,
+        44
+      ]
+    },
+    "T23": {
+      "id": "T23",
+      "text": "tuberculosis",
+      "label": "EVENT",
+      "char_index": 722,
+      "sid": 2,
+      "tid": [
+        45,
+        46
+      ]
+    },
+    "T24": {
+      "id": "T24",
+      "text": "favored",
+      "label": "EVENT",
+      "char_index": 751,
+      "sid": 2,
+      "tid": [
+        48,
+        49
+      ]
+    },
+    "T25": {
+      "id": "T25",
+      "text": "poisoning",
+      "label": "EVENT",
+      "char_index": 770,
+      "sid": 2,
+      "tid": [
+        52,
+        53
+      ]
+    },
+    "T27": {
+      "id": "T27",
+      "text": "made",
+      "label": "EVENT",
+      "char_index": 865,
+      "sid": 3,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T28": {
+      "id": "T28",
+      "text": "desecration",
+      "label": "EVENT",
+      "char_index": 929,
+      "sid": 3,
+      "tid": [
+        24,
+        25
+      ]
+    },
+    "T29": {
+      "id": "T29",
+      "text": "libel",
+      "label": "EVENT",
+      "char_index": 951,
+      "sid": 3,
+      "tid": [
+        27,
+        28
+      ]
+    },
+    "T30": {
+      "id": "T30",
+      "text": "accusations",
+      "label": "EVENT",
+      "char_index": 969,
+      "sid": 4,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T31": {
+      "id": "T31",
+      "text": "made",
+      "label": "EVENT",
+      "char_index": 991,
+      "sid": 4,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T32": {
+      "id": "T32",
+      "text": "living",
+      "label": "EVENT",
+      "char_index": 1007,
+      "sid": 4,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T33": {
+      "id": "T33",
+      "text": "earthquake",
+      "label": "EVENT",
+      "char_index": 1064,
+      "sid": 4,
+      "tid": [
+        18,
+        19
+      ]
+    },
+    "T34": {
+      "id": "T34",
+      "text": "WELL POISONING",
+      "label": "EVENT",
+      "char_index": 0,
+      "sid": 0,
+      "tid": [
+        0,
+        3
+      ]
+    },
+    "T35": {
+      "id": "T35",
+      "text": "cause",
+      "label": "EVENT",
+      "char_index": 91,
+      "sid": 0,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T36": {
+      "id": "T36",
+      "text": "illness",
+      "label": "EVENT",
+      "char_index": 97,
+      "sid": 0,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "Well poisoning",
+      "label": "EVENT",
+      "char_index": 173,
+      "sid": 1,
+      "tid": [
+        0,
+        3
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "terror tactic",
+      "label": "EVENT",
+      "char_index": 305,
+      "sid": 1,
+      "tid": [
+        22,
+        25
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "scorched earth tactic",
+      "label": "EVENT",
+      "char_index": 384,
+      "sid": 1,
+      "tid": [
+        37,
+        41
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "well poisoning",
+      "label": "EVENT",
+      "char_index": 797,
+      "sid": 3,
+      "tid": [
+        2,
+        5
+      ]
+    },
+    "T26": {
+      "id": "T26",
+      "text": "against",
+      "label": "EVENT",
+      "char_index": 870,
+      "sid": 3,
+      "tid": [
+        13,
+        14
+      ]
+    }
+  },
+  "relation": {
+    "T35-T34": "CauseEffect",
+    "T34-T35": "EffectCause",
+    "T4-T34": "CauseEffect",
+    "T34-T4": "EffectCause",
+    "T11-T10": "CauseEffect",
+    "T10-T11": "EffectCause",
+    "T12-T10": "CauseEffect",
+    "T10-T12": "EffectCause",
+    "T15-T13": "CauseEffect",
+    "T13-T15": "EffectCause",
+    "T21-T20": "CauseEffect",
+    "T20-T21": "EffectCause",
+    "T14-T26": "CauseEffect",
+    "T26-T14": "EffectCause",
+    "T33-T30": "CauseEffect",
+    "T30-T33": "EffectCause",
+    "T1-T16": "NoRel",
+    "T1-T2": "NoRel",
+    "T1-T23": "NoRel",
+    "T1-T27": "NoRel",
+    "T1-T5": "NoRel",
+    "T1-T8": "NoRel",
+    "T1-T9": "NoRel",
+    "T10-T6": "NoRel",
+    "T12-T18": "NoRel",
+    "T12-T19": "NoRel",
+    "T12-T2": "NoRel",
+    "T12-T7": "NoRel",
+    "T13-T36": "NoRel",
+    "T14-T13": "NoRel",
+    "T14-T21": "NoRel",
+    "T14-T23": "NoRel",
+    "T14-T36": "NoRel",
+    "T15-T19": "NoRel",
+    "T15-T21": "NoRel",
+    "T15-T27": "NoRel",
+    "T15-T3": "NoRel",
+    "T15-T33": "NoRel",
+    "T16-T1": "NoRel",
+    "T16-T20": "NoRel",
+    "T16-T22": "NoRel",
+    "T16-T28": "NoRel",
+    "T17-T21": "NoRel",
+    "T17-T25": "NoRel",
+    "T17-T33": "NoRel",
+    "T18-T15": "NoRel",
+    "T18-T24": "NoRel",
+    "T18-T27": "NoRel",
+    "T18-T3": "NoRel",
+    "T19-T5": "NoRel",
+    "T2-T17": "NoRel",
+    "T2-T28": "NoRel",
+    "T2-T33": "NoRel",
+    "T2-T5": "NoRel",
+    "T2-T7": "NoRel",
+    "T20-T10": "NoRel",
+    "T20-T12": "NoRel",
+    "T20-T22": "NoRel",
+    "T20-T8": "NoRel",
+    "T21-T14": "NoRel",
+    "T21-T19": "NoRel",
+    "T21-T26": "NoRel",
+    "T21-T27": "NoRel",
+    "T21-T34": "NoRel",
+    "T21-T5": "NoRel",
+    "T21-T6": "NoRel",
+    "T22-T11": "NoRel",
+    "T22-T18": "NoRel",
+    "T22-T20": "NoRel",
+    "T22-T3": "NoRel",
+    "T22-T30": "NoRel",
+    "T23-T16": "NoRel",
+    "T23-T18": "NoRel",
+    "T23-T2": "NoRel",
+    "T23-T20": "NoRel",
+    "T23-T21": "NoRel",
+    "T23-T31": "NoRel",
+    "T24-T11": "NoRel",
+    "T24-T28": "NoRel",
+    "T24-T3": "NoRel",
+    "T24-T9": "NoRel",
+    "T25-T12": "NoRel",
+    "T25-T17": "NoRel",
+    "T25-T20": "NoRel",
+    "T26-T11": "NoRel",
+    "T26-T19": "NoRel",
+    "T26-T7": "NoRel",
+    "T27-T26": "NoRel",
+    "T29-T19": "NoRel",
+    "T29-T33": "NoRel",
+    "T29-T8": "NoRel",
+    "T3-T13": "NoRel",
+    "T3-T14": "NoRel",
+    "T3-T23": "NoRel",
+    "T3-T36": "NoRel",
+    "T30-T1": "NoRel",
+    "T30-T22": "NoRel",
+    "T30-T24": "NoRel",
+    "T30-T29": "NoRel",
+    "T30-T36": "NoRel",
+    "T31-T19": "NoRel",
+    "T31-T21": "NoRel",
+    "T31-T35": "NoRel",
+    "T32-T11": "NoRel",
+    "T32-T18": "NoRel",
+    "T32-T26": "NoRel",
+    "T32-T28": "NoRel",
+    "T32-T29": "NoRel",
+    "T32-T30": "NoRel",
+    "T32-T35": "NoRel",
+    "T32-T4": "NoRel",
+    "T33-T19": "NoRel",
+    "T33-T22": "NoRel",
+    "T33-T5": "NoRel",
+    "T34-T17": "NoRel",
+    "T34-T28": "NoRel",
+    "T34-T9": "NoRel",
+    "T35-T15": "NoRel",
+    "T35-T20": "NoRel",
+    "T35-T29": "NoRel",
+    "T35-T4": "NoRel",
+    "T35-T7": "NoRel",
+    "T36-T1": "NoRel",
+    "T36-T19": "NoRel",
+    "T36-T5": "NoRel",
+    "T4-T14": "NoRel",
+    "T4-T17": "NoRel",
+    "T4-T35": "NoRel",
+    "T4-T36": "NoRel",
+    "T4-T6": "NoRel",
+    "T4-T9": "NoRel",
+    "T5-T15": "NoRel",
+    "T5-T23": "NoRel",
+    "T5-T26": "NoRel",
+    "T5-T28": "NoRel",
+    "T5-T32": "NoRel",
+    "T5-T33": "NoRel",
+    "T6-T11": "NoRel",
+    "T6-T13": "NoRel",
+    "T6-T15": "NoRel",
+    "T6-T16": "NoRel",
+    "T6-T35": "NoRel",
+    "T6-T8": "NoRel",
+    "T7-T3": "NoRel",
+    "T7-T33": "NoRel",
+    "T8-T12": "NoRel",
+    "T8-T16": "NoRel",
+    "T8-T26": "NoRel",
+    "T9-T20": "NoRel",
+    "T9-T36": "NoRel"
+  },
+  "sentence": [
+    [
+      "WELL",
+      "POISONING",
+      "is",
+      "the",
+      "act",
+      "of",
+      "malicious",
+      "manipulation",
+      "of",
+      "potable",
+      "water",
+      "resources",
+      "in",
+      "order",
+      "to",
+      "cause",
+      "illness",
+      "or",
+      "death",
+      ",",
+      "or",
+      "to",
+      "deny",
+      "an",
+      "opponent",
+      "access",
+      "to",
+      "fresh",
+      "water",
+      "resources",
+      "."
+    ],
+    [
+      "Well",
+      "poisoning",
+      "has",
+      "been",
+      "historically",
+      "documented",
+      "as",
+      "a",
+      "strategy",
+      "during",
+      "wartime",
+      "since",
+      "antiquity",
+      ",",
+      "and",
+      "was",
+      "used",
+      "both",
+      "offensively",
+      "(",
+      "as",
+      "a",
+      "terror",
+      "tactic",
+      "to",
+      "disrupt",
+      "and",
+      "depopulate",
+      "a",
+      "target",
+      "area",
+      ")",
+      "and",
+      "defensively",
+      "(",
+      "as",
+      "a",
+      "scorched",
+      "earth",
+      "tactic",
+      "to",
+      "deny",
+      "an",
+      "invading",
+      "army",
+      "sources",
+      "of",
+      "clean",
+      "water",
+      ")",
+      "."
+    ],
+    [
+      "Rotting",
+      "corpses",
+      "(",
+      "both",
+      "animal",
+      "and",
+      "human",
+      ")",
+      "thrown",
+      "down",
+      "wells",
+      "were",
+      "the",
+      "most",
+      "common",
+      "implementation",
+      ";",
+      "in",
+      "one",
+      "of",
+      "the",
+      "earliest",
+      "examples",
+      "of",
+      "biological",
+      "warfare",
+      ",",
+      "corpses",
+      "known",
+      "to",
+      "have",
+      "died",
+      "from",
+      "common",
+      "transmissible",
+      "diseases",
+      "of",
+      "the",
+      "Pre-Modern",
+      "era",
+      "such",
+      "as",
+      "bubonic",
+      "plague",
+      "or",
+      "tuberculosis",
+      "were",
+      "especially",
+      "favored",
+      "for",
+      "well",
+      "-",
+      "poisoning",
+      "."
+    ],
+    [
+      "Additionally",
+      ",",
+      "well",
+      "poisoning",
+      "was",
+      "one",
+      "of",
+      "the",
+      "three",
+      "gravest",
+      "antisemitic",
+      "accusations",
+      "made",
+      "against",
+      "Jews",
+      "during",
+      "this",
+      "period",
+      "(",
+      "the",
+      "other",
+      "two",
+      "being",
+      "host",
+      "desecration",
+      "and",
+      "blood",
+      "libel",
+      ")",
+      "."
+    ],
+    [
+      "Similar",
+      "accusations",
+      "were",
+      "also",
+      "made",
+      "of",
+      "Koreans",
+      "living",
+      "in",
+      "Japan",
+      "in",
+      "the",
+      "aftermath",
+      "of",
+      "the",
+      "1923",
+      "Great",
+      "Kant\u014d",
+      "earthquake",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      "cop"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        11
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        11
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        7
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        15
+      ],
+      "mark"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        12
+      ],
+      "fixed"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        15
+      ],
+      "mark"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        7
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        15
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        18
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        16
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        22
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        22
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        22
+      ],
+      "mark"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        15
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        23
+      ],
+      [
+        0,
+        24
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        22
+      ],
+      "iobj"
+    ],
+    [
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        22
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        29
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        27
+      ],
+      [
+        0,
+        28
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        29
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        29
+      ],
+      [
+        0,
+        25
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        30
+      ],
+      [
+        0,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        5
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      "aux"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        8
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        5
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        5
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        5
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        16
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        16
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        5
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        23
+      ],
+      "cc:preconj"
+    ],
+    [
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        16
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        19
+      ],
+      [
+        1,
+        23
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        20
+      ],
+      [
+        1,
+        23
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        21
+      ],
+      [
+        1,
+        23
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        22
+      ],
+      [
+        1,
+        23
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        23
+      ],
+      [
+        1,
+        18
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        24
+      ],
+      [
+        1,
+        25
+      ],
+      "mark"
+    ],
+    [
+      [
+        1,
+        25
+      ],
+      [
+        1,
+        23
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        26
+      ],
+      [
+        1,
+        27
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        27
+      ],
+      [
+        1,
+        25
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        28
+      ],
+      [
+        1,
+        30
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        29
+      ],
+      [
+        1,
+        30
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        30
+      ],
+      [
+        1,
+        25
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        31
+      ],
+      [
+        1,
+        23
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        32
+      ],
+      [
+        1,
+        33
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        33
+      ],
+      [
+        1,
+        16
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        34
+      ],
+      [
+        1,
+        39
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        35
+      ],
+      [
+        1,
+        39
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        36
+      ],
+      [
+        1,
+        39
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        37
+      ],
+      [
+        1,
+        39
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        38
+      ],
+      [
+        1,
+        39
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        39
+      ],
+      [
+        1,
+        33
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        40
+      ],
+      [
+        1,
+        41
+      ],
+      "mark"
+    ],
+    [
+      [
+        1,
+        41
+      ],
+      [
+        1,
+        39
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        42
+      ],
+      [
+        1,
+        44
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        43
+      ],
+      [
+        1,
+        44
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        44
+      ],
+      [
+        1,
+        45
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        45
+      ],
+      [
+        1,
+        41
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        46
+      ],
+      [
+        1,
+        48
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        47
+      ],
+      [
+        1,
+        48
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        48
+      ],
+      [
+        1,
+        45
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        49
+      ],
+      [
+        1,
+        39
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        50
+      ],
+      [
+        1,
+        5
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        15
+      ],
+      "csubj"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      "cc:preconj"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        1
+      ],
+      "appos"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        4
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        1
+      ],
+      "acl"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        8
+      ],
+      "compound:prt"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        8
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        15
+      ],
+      "cop"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        15
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        15
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        15
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        17
+      ],
+      [
+        2,
+        18
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        18
+      ],
+      [
+        2,
+        48
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        19
+      ],
+      [
+        2,
+        22
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        20
+      ],
+      [
+        2,
+        22
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        21
+      ],
+      [
+        2,
+        22
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        22
+      ],
+      [
+        2,
+        18
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        23
+      ],
+      [
+        2,
+        25
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        24
+      ],
+      [
+        2,
+        25
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        25
+      ],
+      [
+        2,
+        22
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        26
+      ],
+      [
+        2,
+        48
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        27
+      ],
+      [
+        2,
+        48
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        2,
+        28
+      ],
+      [
+        2,
+        27
+      ],
+      "acl"
+    ],
+    [
+      [
+        2,
+        29
+      ],
+      [
+        2,
+        31
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        30
+      ],
+      [
+        2,
+        31
+      ],
+      "aux"
+    ],
+    [
+      [
+        2,
+        31
+      ],
+      [
+        2,
+        28
+      ],
+      "xcomp"
+    ],
+    [
+      [
+        2,
+        32
+      ],
+      [
+        2,
+        35
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        33
+      ],
+      [
+        2,
+        35
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        34
+      ],
+      [
+        2,
+        35
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        35
+      ],
+      [
+        2,
+        31
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        36
+      ],
+      [
+        2,
+        39
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        37
+      ],
+      [
+        2,
+        39
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        38
+      ],
+      [
+        2,
+        39
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        39
+      ],
+      [
+        2,
+        35
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        40
+      ],
+      [
+        2,
+        43
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        41
+      ],
+      [
+        2,
+        40
+      ],
+      "fixed"
+    ],
+    [
+      [
+        2,
+        42
+      ],
+      [
+        2,
+        43
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        43
+      ],
+      [
+        2,
+        39
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        44
+      ],
+      [
+        2,
+        45
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        45
+      ],
+      [
+        2,
+        43
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        46
+      ],
+      [
+        2,
+        48
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        2,
+        47
+      ],
+      [
+        2,
+        48
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        48
+      ],
+      [
+        2,
+        15
+      ],
+      "parataxis"
+    ],
+    [
+      [
+        2,
+        49
+      ],
+      [
+        2,
+        52
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        50
+      ],
+      [
+        2,
+        52
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        51
+      ],
+      [
+        2,
+        52
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        52
+      ],
+      [
+        2,
+        48
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        53
+      ],
+      [
+        2,
+        15
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        5
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        5
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        5
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      "cop"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        11
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        11
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        11
+      ],
+      "nummod"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        11
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        5
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        12
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        17
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        17
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        12
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        24
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        21
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        20
+      ],
+      [
+        3,
+        21
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        21
+      ],
+      [
+        3,
+        24
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        22
+      ],
+      [
+        3,
+        24
+      ],
+      "cop"
+    ],
+    [
+      [
+        3,
+        23
+      ],
+      [
+        3,
+        24
+      ],
+      "compound"
+    ],
+    [
+      [
+        3,
+        24
+      ],
+      [
+        3,
+        11
+      ],
+      "parataxis"
+    ],
+    [
+      [
+        3,
+        25
+      ],
+      [
+        3,
+        27
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        26
+      ],
+      [
+        3,
+        27
+      ],
+      "compound"
+    ],
+    [
+      [
+        3,
+        27
+      ],
+      [
+        3,
+        24
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        28
+      ],
+      [
+        3,
+        24
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        29
+      ],
+      [
+        3,
+        5
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        4
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        4
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        4
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        6
+      ],
+      "acl"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        7
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        12
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        7
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        18
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        18
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        18
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        18
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        17
+      ],
+      [
+        4,
+        18
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        18
+      ],
+      [
+        4,
+        12
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        19
+      ],
+      [
+        4,
+        4
+      ],
+      "punct"
+    ]
+  ]
+}

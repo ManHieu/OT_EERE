@@ -1,0 +1,15 @@
+Text	Banken havde i 2006 et resultat før skat på 94 mio. og beskæftigede 250 medarbejdere .	Ved børsnoteringen i 2007 havde banken 17 filialer , primært på det sydlige Sjælland samt i København , Århus og Odense .	Kort tid efter børsnoteringen i juni 2007 opsagde den daværende adm. direktør Carlo Chow sin stilling for at starte som adm. direktør for Føroya Banki Danmark .	Daværende vicedirektør i bankTrelleborg , Tonny Rasmussen , blev udnævnt til ny direktør .	I januar 2008 meddelte banken , at den på grund af betydelige finansielle problemer havde indgået aftale med Sydbank om fusion .
+Event	T0	beskæftigede	EVENT	55
+Event	T1	børsnoteringen	EVENT	91
+Event	T2	opsagde	EVENT	251
+Event	T3	starte	EVENT	318
+Event	T4	udnævnt	EVENT	435
+Event	T5	meddelte	EVENT	475
+Event	T6	aftale	EVENT	559
+Event	T7	fusion	EVENT	581
+Event	T8	problemer	EVENT	535
+Relation	T3	T2	CauseEffect	true	starte	opsagde
+Relation	T2	T3	EffectCause	true	opsagde	starte
+Relation	T6	T1	NoRel	true	aftale	børsnoteringen
+Relation	T6	T8	NoRel	true	aftale	problemer
+Relation	T7	T6	NoRel	true	fusion	aftale

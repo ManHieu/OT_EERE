@@ -1,0 +1,39 @@
+Text	14 Mayıs'ta oluşan alçak basınç Balkanlar'a doğru hareket etti .	Şiddetli sağanak yağışlar 13- 14 Mayıs itibarıyla , Bosna - Hersek , Romanya ve İtalya'nın doğu bölgelerini etkisi altına aldı .	Yağışlar bölgede sınırlı bir etki yarattı fakat , daha sonra nehirlerin debilerinin hızla yükselmesi sonucu taşkınlar meydana geldi .	Sonuç olarak , aşırı sağanak yağış en çok etkilenen bölgeler olan Sırbistan ( Belgrad alanı ) ve Bosna - Hersek'in kuzeyine düştü .	15 Mayıs günü Sırbistan'ın başkenti Belgrad'da yağış miktarı 1897'deki miktarı geçerek , tarihi bir rekor kırdı ve m²'ye 205 kg yağış düştü .
+Event	T0	basınç	EVENT	25
+Event	T1	etti	EVENT	58
+Event	T2	yağışlar	EVENT	82
+Event	T3	aldı	EVENT	187
+Event	T4	Yağışlar	EVENT	194
+Event	T5	yarattı	EVENT	228
+Event	T6	geldi	EVENT	320
+Event	T7	yağış	EVENT	357
+Event	T9	yağış	EVENT	507
+Event	T10	geçerek	EVENT	539
+Event	T11	kırdı	EVENT	566
+Event	T12	düştü	EVENT	594
+Event	T13	yükselmesi	EVENT	284
+Relation	T2	T13	CauseEffect	true	yağışlar	yükselmesi
+Relation	T13	T2	EffectCause	true	yükselmesi	yağışlar
+Relation	T13	T6	CauseEffect	true	yükselmesi	geldi
+Relation	T6	T13	EffectCause	true	geldi	yükselmesi
+Relation	T4	T13	CauseEffect	true	Yağışlar	yükselmesi
+Relation	T13	T4	EffectCause	true	yükselmesi	Yağışlar
+Relation	T2	T11	CauseEffect	true	yağışlar	kırdı
+Relation	T11	T2	EffectCause	true	kırdı	yağışlar
+Relation	T10	T11	CauseEffect	true	geçerek	kırdı
+Relation	T11	T10	EffectCause	true	kırdı	geçerek
+Relation	T9	T10	CauseEffect	true	yağış	geçerek
+Relation	T10	T9	EffectCause	true	geçerek	yağış
+Relation	T11	T12	CauseEffect	true	kırdı	düştü
+Relation	T12	T11	EffectCause	true	düştü	kırdı
+Relation	T0	T11	NoRel	true	basınç	kırdı
+Relation	T1	T12	NoRel	true	etti	düştü
+Relation	T1	T13	NoRel	true	etti	yükselmesi
+Relation	T1	T3	NoRel	true	etti	aldı
+Relation	T1	T5	NoRel	true	etti	yarattı
+Relation	T11	T9	NoRel	true	kırdı	yağış
+Relation	T12	T4	NoRel	true	düştü	Yağışlar
+Relation	T12	T6	NoRel	true	düştü	geldi
+Relation	T4	T6	NoRel	true	Yağışlar	geldi
+Relation	T5	T0	NoRel	true	yarattı	basınç
+Relation	T6	T10	NoRel	true	geldi	geçerek

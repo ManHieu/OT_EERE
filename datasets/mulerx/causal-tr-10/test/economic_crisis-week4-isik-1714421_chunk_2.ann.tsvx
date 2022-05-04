@@ -1,0 +1,23 @@
+Text	Sonradan işlenen soykırıma katılmadı : sol göz ve göğüsünden yaralandıktan sonra , tedavisi ve iyileşmesi için Güney Afrika'ya gitti .	1907 yılında , binbaşı rütbesine terfi etti ve 11. Kolorduya atandı .	Ekim 1913 yılında , Alman İmparatorluk ordusunda yarbaylığa terfi ettirildi ve Alman Kamerunun'da ( bugünün Kamerun , ve bugünkü Nijerya'nın bir kısmı ) olarak bilinen Alman sömürge güçlerinin komutanı olarak atadı .	Lettow - Vorbeck , Ağustos 1914 yılında , Birinci Dünya Savaşı'nın ilk aşamalarında , sadece 2. 600 Alman vatandaşı ve 2.472 Afrikalı askerden oluşan küçük bir askerî garnizonun komutanıydı .	Lettow - Vorbeck , Tanga şehrinde önemli bir İngiliz amfibisinin saldırısını püskürtmek için hazırlanmıştır .
+Event	T1	yaralandıktan	EVENT	61
+Event	T4	gitti	EVENT	127
+Event	T5	etti	EVENT	174
+Event	T6	atandı	EVENT	196
+Event	T7	ettirildi	EVENT	271
+Event	T8	atadı	EVENT	414
+Event	T10	hazırlanmıştır	EVENT	707
+Event	T11	soykırıma	EVENT	17
+Event	T2	Birinci Dünya Savaşı'nın	EVENT	464
+Event	T3	saldırısını	EVENT	679
+Relation	T1	T4	CauseEffect	true	yaralandıktan	gitti
+Relation	T4	T1	EffectCause	true	gitti	yaralandıktan
+Relation	T3	T10	CauseEffect	true	saldırısını	hazırlanmıştır
+Relation	T10	T3	EffectCause	true	hazırlanmıştır	saldırısını
+Relation	T1	T7	NoRel	true	yaralandıktan	ettirildi
+Relation	T10	T2	NoRel	true	hazırlanmıştır	Birinci Dünya Savaşı'nın
+Relation	T11	T4	NoRel	true	soykırıma	gitti
+Relation	T2	T4	NoRel	true	Birinci Dünya Savaşı'nın	gitti
+Relation	T3	T4	NoRel	true	saldırısını	gitti
+Relation	T4	T2	NoRel	true	gitti	Birinci Dünya Savaşı'nın
+Relation	T4	T3	NoRel	true	gitti	saldırısını
+Relation	T4	T5	NoRel	true	gitti	etti

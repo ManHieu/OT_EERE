@@ -1,0 +1,23 @@
+Text	Savaşın Kasım 1918'de bitmesinden sonra , komünist devrim ile savaşmak için kurulmuş sağcı bir yarı askerî örgüt olan _ Freikorps Epp _ üyesi oldu .	Schreck , 1920'de katıldığı ve 53 numaralı üye olarak kaydedildiği Nasyonal Sosyalist Alman İşçi Partisi'nin ilk üyelerinden biriydi .	Partinin ilk yıllarında parti lideri Adolf Hitler ile yakın bir dostluk kurdu .	sol | küçükresim | Soldan sağa : Julius Schaub , Julius Schreck , Adolf Hitler , Hans Georg Maurer ve Edmund Schneider ( 1925 ) _ Sturmabteilung _ ( ; SA ) kurucu üyelerinden biri olan Schreck , birimin gelişiminde ve büyümesinde etkin bir rol üstlendi .	Nazi Partisi'nin yarı askerî kanadı olan SA , siyasi muhalifleri karışıklığa itmek ve partinin güvenliğini sağlamak için oluşturulmuştu .
+Event	T0	bitmesinden	EVENT	22
+Event	T1	devrim	EVENT	51
+Event	T3	katıldığı	EVENT	167
+Event	T4	kurdu	EVENT	356
+Event	T7	üstlendi	EVENT	608
+Event	T9	oluşturulmuştu	EVENT	740
+Event	T10	Savaşın	EVENT	0
+Event	T2	örgüt	EVENT	107
+Event	T11	kaydedildiği	EVENT	203
+Event	T5	gelişiminde	EVENT	567
+Event	T6	büyümesinde	EVENT	582
+Relation	T1	T2	CauseEffect	true	devrim	örgüt
+Relation	T2	T1	EffectCause	true	örgüt	devrim
+Relation	T0	T1	NoRel	true	bitmesinden	devrim
+Relation	T0	T6	NoRel	true	bitmesinden	büyümesinde
+Relation	T11	T2	NoRel	true	kaydedildiği	örgüt
+Relation	T2	T0	NoRel	true	örgüt	bitmesinden
+Relation	T2	T6	NoRel	true	örgüt	büyümesinde
+Relation	T4	T3	NoRel	true	kurdu	katıldığı
+Relation	T5	T2	NoRel	true	gelişiminde	örgüt
+Relation	T6	T4	NoRel	true	büyümesinde	kurdu
+Relation	T7	T6	NoRel	true	üstlendi	büyümesinde

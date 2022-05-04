@@ -1,0 +1,37 @@
+Text	De nye skibe skulle bl.a. afløse ældre skibe , der blev ophugget .	Udover opgradering af skibe er der også sket en opgradering af flådens luftstyrker , hvor forældede fly af typen Beriev Be-12 ville blive udskiftet med Il-38'ere .	Sukhoj Su-24M-fly ville samtidig blive opgraderet til Su-24M2 .	Efter Ruslands annektering af Krim er forholdet til Vesten blevet forværret .	Der har i 2021 forekommet enkelte militære operationer i Sortehavet , hvor amerikanske og britiske flådefartøjer har patruljeret og er blevet mødt med reaktioner fra Sortehavsflåden .
+Event	T0	ophugget	EVENT	56
+Event	T1	opgradering	EVENT	74
+Event	T2	sket	EVENT	107
+Event	T3	opgradering	EVENT	115
+Event	T4	udskiftet	EVENT	205
+Event	T5	opgraderet	EVENT	270
+Event	T6	annektering	EVENT	310
+Event	T7	forværret	EVENT	361
+Event	T8	forekommet	EVENT	388
+Event	T9	operationer	EVENT	416
+Event	T10	patruljeret	EVENT	490
+Event	T11	mødt	EVENT	515
+Event	T12	reaktioner	EVENT	524
+Event	T13	afløse	EVENT	26
+Event	T14	forældede	EVENT	157
+Event	T15	forholdet	EVENT	333
+Relation	T6	T7	CauseEffect	true	annektering	forværret
+Relation	T7	T6	EffectCause	true	forværret	annektering
+Relation	T1	T14	NoRel	true	opgradering	forældede
+Relation	T1	T8	NoRel	true	opgradering	forekommet
+Relation	T11	T14	NoRel	true	mødt	forældede
+Relation	T11	T5	NoRel	true	mødt	opgraderet
+Relation	T12	T9	NoRel	true	reaktioner	operationer
+Relation	T14	T11	NoRel	true	forældede	mødt
+Relation	T15	T3	NoRel	true	forholdet	opgradering
+Relation	T4	T11	NoRel	true	udskiftet	mødt
+Relation	T4	T15	NoRel	true	udskiftet	forholdet
+Relation	T4	T5	NoRel	true	udskiftet	opgraderet
+Relation	T4	T8	NoRel	true	udskiftet	forekommet
+Relation	T5	T0	NoRel	true	opgraderet	ophugget
+Relation	T5	T3	NoRel	true	opgraderet	opgradering
+Relation	T5	T8	NoRel	true	opgraderet	forekommet
+Relation	T6	T13	NoRel	true	annektering	afløse
+Relation	T6	T8	NoRel	true	annektering	forekommet
+Relation	T7	T11	NoRel	true	forværret	mødt
+Relation	T8	T11	NoRel	true	forekommet	mødt

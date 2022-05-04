@@ -1,0 +1,55 @@
+Text	Los esfuerzos de rescate se vieron complicados por las fuertes nevadas en el área , que según se informa tenía alrededor de 70 cm ( 28 pulgadas ) de profundidad en el lugar del accidente .	La Organización de Aviación Civil de Irán ( CAO.IRI ) abrió una investigación sobre el accidente .	Un día después del accidente , tanto la grabadora de voz de la cabina de vuelo como la grabadora de datos de vuelo fueron recuperadas y llevadas a Teherán para su análisis .	En 2017 , la CAO.IRI publicó su informe final acerca del accidente .	De su análisis , resultó que después de comenzar su aproximación final a la pista 21 del aeropuerto de Urmia desde una altitud de 7.000 pies ( 2.100 m ) , el aeropuerto de Urmia se encuentra a una altura de 4.300 pies ( 1.300 m ) .
+Event	T0	esfuerzos	EVENT	4
+Event	T1	rescate	EVENT	17
+Event	T2	complicados	EVENT	35
+Event	T3	nevadas	EVENT	63
+Event	T4	accidente	EVENT	177
+Event	T5	abrió	EVENT	243
+Event	T6	investigación	EVENT	253
+Event	T7	accidente	EVENT	276
+Event	T8	accidente	EVENT	307
+Event	T9	recuperadas	EVENT	410
+Event	T10	llevadas	EVENT	424
+Event	T11	análisis	EVENT	451
+Event	T12	publicó	EVENT	483
+Event	T13	accidente	EVENT	519
+Event	T14	análisis	EVENT	537
+Event	T15	resultó	EVENT	548
+Event	T16	comenzar	EVENT	571
+Relation	T7	T6	CauseEffect	true	accidente	investigación
+Relation	T6	T7	EffectCause	true	investigación	accidente
+Relation	T0	T5	NoRel	true	esfuerzos	abrió
+Relation	T10	T13	NoRel	true	llevadas	accidente
+Relation	T10	T15	NoRel	true	llevadas	resultó
+Relation	T10	T3	NoRel	true	llevadas	nevadas
+Relation	T10	T7	NoRel	true	llevadas	accidente
+Relation	T10	T8	NoRel	true	llevadas	accidente
+Relation	T11	T10	NoRel	true	análisis	llevadas
+Relation	T11	T13	NoRel	true	análisis	accidente
+Relation	T11	T14	NoRel	true	análisis	análisis
+Relation	T11	T4	NoRel	true	análisis	accidente
+Relation	T12	T7	NoRel	true	publicó	accidente
+Relation	T12	T9	NoRel	true	publicó	recuperadas
+Relation	T13	T0	NoRel	true	accidente	esfuerzos
+Relation	T13	T16	NoRel	true	accidente	comenzar
+Relation	T14	T0	NoRel	true	análisis	esfuerzos
+Relation	T14	T10	NoRel	true	análisis	llevadas
+Relation	T15	T7	NoRel	true	resultó	accidente
+Relation	T2	T12	NoRel	true	complicados	publicó
+Relation	T2	T5	NoRel	true	complicados	abrió
+Relation	T3	T13	NoRel	true	nevadas	accidente
+Relation	T3	T2	NoRel	true	nevadas	complicados
+Relation	T3	T7	NoRel	true	nevadas	accidente
+Relation	T5	T0	NoRel	true	abrió	esfuerzos
+Relation	T5	T14	NoRel	true	abrió	análisis
+Relation	T5	T6	NoRel	true	abrió	investigación
+Relation	T5	T7	NoRel	true	abrió	accidente
+Relation	T5	T9	NoRel	true	abrió	recuperadas
+Relation	T6	T13	NoRel	true	investigación	accidente
+Relation	T7	T4	NoRel	true	accidente	accidente
+Relation	T8	T1	NoRel	true	accidente	rescate
+Relation	T8	T2	NoRel	true	accidente	complicados
+Relation	T9	T1	NoRel	true	recuperadas	rescate
+Relation	T9	T11	NoRel	true	recuperadas	análisis
+Relation	T9	T2	NoRel	true	recuperadas	complicados
+Relation	T9	T7	NoRel	true	recuperadas	accidente

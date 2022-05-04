@@ -1,0 +1,61 @@
+Text	Esa noche , Margot y el equipo descubren en el granero un extraño ritual en el que se sacrifica a una cabra recién nacida de dos cabezas .	El misterio se profundiza y la advertencia de Jacob intriga aún más a Margot .	Mientras Samuel da a Dale una lección de equitación , Margot y Chris se cuelan en la iglesia y descubren extraños murales dibujados en el suelo que representan una figura demoníaca llamada Asmodeo y escenas de sacrificios rituales .	Al seguir indagando , Chris encuentra un compartimento oculto bajo el altar , que conduce a un foso .	Aprovechando la ocasión , Margot pide a Chris que la baje al foso .
+Event	T0	descubren	EVENT	31
+Event	T1	ritual	EVENT	66
+Event	T11	cuelan	EVENT	290
+Event	T12	descubren	EVENT	313
+Event	T13	dibujados	EVENT	340
+Event	T14	representan	EVENT	366
+Event	T15	escenas	EVENT	417
+Event	T16	rituales	EVENT	440
+Event	T17	indagando	EVENT	461
+Event	T18	encuentra	EVENT	479
+Event	T2	sacrifica	EVENT	86
+Event	T20	ocasión	EVENT	569
+Event	T3	nacida	EVENT	115
+Event	T4	misterio	EVENT	142
+Event	T5	profundiza	EVENT	154
+Event	T6	advertencia	EVENT	170
+Event	T7	intriga	EVENT	191
+Event	T8	da	EVENT	234
+Event	T9	lección	EVENT	248
+Relation	T17	T18	CauseEffect	true	indagando	encuentra
+Relation	T18	T17	EffectCause	true	encuentra	indagando
+Relation	T6	T7	CauseEffect	true	advertencia	intriga
+Relation	T7	T6	EffectCause	true	intriga	advertencia
+Relation	T1	T0	CauseEffect	true	ritual	descubren
+Relation	T0	T1	EffectCause	true	descubren	ritual
+Relation	T0	T9	NoRel	true	descubren	lección
+Relation	T1	T5	NoRel	true	ritual	profundiza
+Relation	T11	T16	NoRel	true	cuelan	rituales
+Relation	T11	T18	NoRel	true	cuelan	encuentra
+Relation	T12	T15	NoRel	true	descubren	escenas
+Relation	T12	T18	NoRel	true	descubren	encuentra
+Relation	T13	T20	NoRel	true	dibujados	ocasión
+Relation	T14	T11	NoRel	true	representan	cuelan
+Relation	T14	T17	NoRel	true	representan	indagando
+Relation	T14	T8	NoRel	true	representan	da
+Relation	T15	T11	NoRel	true	escenas	cuelan
+Relation	T16	T12	NoRel	true	rituales	descubren
+Relation	T16	T17	NoRel	true	rituales	indagando
+Relation	T16	T7	NoRel	true	rituales	intriga
+Relation	T17	T0	NoRel	true	indagando	descubren
+Relation	T17	T15	NoRel	true	indagando	escenas
+Relation	T18	T7	NoRel	true	encuentra	intriga
+Relation	T2	T3	NoRel	true	sacrifica	nacida
+Relation	T2	T4	NoRel	true	sacrifica	misterio
+Relation	T20	T16	NoRel	true	ocasión	rituales
+Relation	T3	T18	NoRel	true	nacida	encuentra
+Relation	T4	T12	NoRel	true	misterio	descubren
+Relation	T4	T2	NoRel	true	misterio	sacrifica
+Relation	T4	T6	NoRel	true	misterio	advertencia
+Relation	T5	T1	NoRel	true	profundiza	ritual
+Relation	T6	T1	NoRel	true	advertencia	ritual
+Relation	T6	T12	NoRel	true	advertencia	descubren
+Relation	T6	T13	NoRel	true	advertencia	dibujados
+Relation	T6	T9	NoRel	true	advertencia	lección
+Relation	T7	T1	NoRel	true	intriga	ritual
+Relation	T7	T3	NoRel	true	intriga	nacida
+Relation	T8	T17	NoRel	true	da	indagando
+Relation	T8	T5	NoRel	true	da	profundiza
+Relation	T9	T11	NoRel	true	lección	cuelan
+Relation	T9	T17	NoRel	true	lección	indagando

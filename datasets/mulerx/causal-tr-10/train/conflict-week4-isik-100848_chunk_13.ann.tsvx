@@ -1,0 +1,40 @@
+Text	Son yapıtı Les damnés de la terre ( İngilizce’ye Constance Farrington tarafından The Wretched of the Earth , ‘ Yeryüzünün Lanetlileri ’ olarak çevrildi ) onlara yönelikti .	Ezilenlere , kolonisizleştirme kasırgasında ve yeni - kolonici / küreselleşmiş dünyada karşılaşacakları tehlikelere karşı uyarı niteliği taşır .	Fanon’un kolonicilik - karşıtı hareketlere ve özgürlük hareketlerine esin verici bir etkisi olmuştur .	Özellikle , Les damnés de la terre , İran’da Ali Şeriati , Güney Afrika’da Steve Biko ve Küba’da Ernesto Che Guevara gibi devrimci önderlerin yapıtlarında başlıca bir etkidir .	Bunların içinden yalnızca Guevara , Fanon’un şiddet kuramlarıyla ilgilenmiştir ; Şeriati ve Biko için Fanon’a temel ilgi , sırasıyla , ‘ yeni insan ’ ve ‘ siyah bilinci ’ dolayısıyladır .
+Event	T0	yapıtı	EVENT	4
+Event	T1	Wretched	EVENT	85
+Event	T2	çevrildi	EVENT	143
+Event	T3	uyarı	EVENT	295
+Event	T4	etkisi	EVENT	403
+Event	T5	ilgilenmiştir	EVENT	663
+Event	T6	Lanetlileri	EVENT	122
+Event	T7	kolonicilik	EVENT	327
+Event	T8	hareketlere	EVENT	349
+Event	T9	hareketlerine	EVENT	373
+Event	T10	kolonici	EVENT	227
+Event	T11	tehlikelere	EVENT	277
+Event	T12	yapıtlarında	EVENT	563
+Relation	T7	T8	CauseEffect	true	kolonicilik	hareketlere
+Relation	T8	T7	EffectCause	true	hareketlere	kolonicilik
+Relation	T7	T9	CauseEffect	true	kolonicilik	hareketlerine
+Relation	T9	T7	EffectCause	true	hareketlerine	kolonicilik
+Relation	T11	T3	CauseEffect	true	tehlikelere	uyarı
+Relation	T3	T11	EffectCause	true	uyarı	tehlikelere
+Relation	T0	T10	NoRel	true	yapıtı	kolonici
+Relation	T0	T9	NoRel	true	yapıtı	hareketlerine
+Relation	T1	T7	NoRel	true	Wretched	kolonicilik
+Relation	T12	T3	NoRel	true	yapıtlarında	uyarı
+Relation	T2	T0	NoRel	true	çevrildi	yapıtı
+Relation	T2	T1	NoRel	true	çevrildi	Wretched
+Relation	T2	T11	NoRel	true	çevrildi	tehlikelere
+Relation	T2	T4	NoRel	true	çevrildi	etkisi
+Relation	T2	T9	NoRel	true	çevrildi	hareketlerine
+Relation	T3	T1	NoRel	true	uyarı	Wretched
+Relation	T3	T4	NoRel	true	uyarı	etkisi
+Relation	T4	T11	NoRel	true	etkisi	tehlikelere
+Relation	T5	T2	NoRel	true	ilgilenmiştir	çevrildi
+Relation	T5	T8	NoRel	true	ilgilenmiştir	hareketlere
+Relation	T6	T2	NoRel	true	Lanetlileri	çevrildi
+Relation	T7	T3	NoRel	true	kolonicilik	uyarı
+Relation	T8	T2	NoRel	true	hareketlere	çevrildi
+Relation	T8	T6	NoRel	true	hareketlere	Lanetlileri
+Relation	T9	T1	NoRel	true	hareketlerine	Wretched
+Relation	T9	T8	NoRel	true	hareketlerine	hareketlere

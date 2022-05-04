@@ -1,0 +1,43 @@
+Text	2016 ÜSKÜP SEL FELAKETI , Makedonya'nın başkenti Üsküp'te ve Kalkandelen'de 6 Ağustos 2016 tarihinden itibaren etkili olan aşırı yağmur ve şiddetli fırtınanın yol açtığı sel felaketi .	Staykovsi , Smilkovsi , Araçinovo ve Singeliç köylerinde etkili yağış sonrası meydana gelen felekette 21 kişinin yaşamını yitirdiği bildirildi .	Felakette ölenlerin çoğunun araçları sel sularına kapılan ve sürüklenenler olduğu sanılıyor .	Makedonya hükûmeti sel felaketi nedeniyle pazartesi günü ulusal yas ilan ettiklerini açıkladı .	
+Event	T0	FELAKETI	EVENT	15
+Event	T1	yağmur	EVENT	129
+Event	T2	felaketi	EVENT	174
+Event	T3	yağış	EVENT	249
+Event	T4	felekette	EVENT	277
+Event	T5	bildirildi	EVENT	317
+Event	T6	ölenlerin	EVENT	340
+Event	T7	kapılan	EVENT	380
+Event	T8	sanılıyor	EVENT	412
+Event	T9	felaketi	EVENT	447
+Event	T10	açıkladı	EVENT	509
+Event	T11	fırtınanın	EVENT	148
+Event	T12	sürüklenenler	EVENT	391
+Relation	T1	T0	CauseEffect	true	yağmur	FELAKETI
+Relation	T0	T1	EffectCause	true	FELAKETI	yağmur
+Relation	T11	T0	CauseEffect	true	fırtınanın	FELAKETI
+Relation	T0	T11	EffectCause	true	FELAKETI	fırtınanın
+Relation	T0	T5	CauseEffect	true	FELAKETI	bildirildi
+Relation	T5	T0	EffectCause	true	bildirildi	FELAKETI
+Relation	T0	T7	CauseEffect	true	FELAKETI	kapılan
+Relation	T7	T0	EffectCause	true	kapılan	FELAKETI
+Relation	T7	T12	CauseEffect	true	kapılan	sürüklenenler
+Relation	T12	T7	EffectCause	true	sürüklenenler	kapılan
+Relation	T12	T6	CauseEffect	true	sürüklenenler	ölenlerin
+Relation	T6	T12	EffectCause	true	ölenlerin	sürüklenenler
+Relation	T0	T10	CauseEffect	true	FELAKETI	açıkladı
+Relation	T10	T0	EffectCause	true	açıkladı	FELAKETI
+Relation	T9	T10	CauseEffect	true	felaketi	açıkladı
+Relation	T10	T9	EffectCause	true	açıkladı	felaketi
+Relation	T1	T11	NoRel	true	yağmur	fırtınanın
+Relation	T11	T5	NoRel	true	fırtınanın	bildirildi
+Relation	T2	T6	NoRel	true	felaketi	ölenlerin
+Relation	T2	T7	NoRel	true	felaketi	kapılan
+Relation	T3	T4	NoRel	true	yağış	felekette
+Relation	T4	T1	NoRel	true	felekette	yağmur
+Relation	T4	T3	NoRel	true	felekette	yağış
+Relation	T4	T6	NoRel	true	felekette	ölenlerin
+Relation	T5	T2	NoRel	true	bildirildi	felaketi
+Relation	T8	T11	NoRel	true	sanılıyor	fırtınanın
+Relation	T8	T2	NoRel	true	sanılıyor	felaketi
+Relation	T9	T12	NoRel	true	felaketi	sürüklenenler
+Relation	T9	T4	NoRel	true	felaketi	felekette

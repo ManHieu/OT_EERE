@@ -1,0 +1,16 @@
+Text	At mølledæmninger ved græsmøller i ældre tid ikke kun har bestået af jord og sten vidner fundet af meget velbevarede egetræsspunsvægge om .	Haderslev Museum fandt et helt system af spunsvægge , som skulle lede vandet udenom møllen for at forhindre oversvømmelser i selve møllerenden ved regnskyl o.l.	Spunsvæggen er omhyggeligt forarbejdet af stavplanker og mindre små runde pæle , som med trænagler er fastgjort til en lægte .	Kategori : Seværdigheder i Danmark Kategori : Bygninger , konstruktioner og anlæg i Kolding Kommune Kategori : Vandmøller i Danmark	
+Event	T0	fundet	EVENT	89
+Event	T1	fandt	EVENT	157
+Event	T2	oversvømmelser	EVENT	248
+Event	T3	regnskyl	EVENT	287
+Event	T4	forarbejdet	EVENT	328
+Event	T5	fastgjort	EVENT	403
+Event	T6	forhindre	EVENT	238
+Event	T7	system	EVENT	171
+Relation	T3	T7	CauseEffect	true	regnskyl	system
+Relation	T7	T3	EffectCause	true	system	regnskyl
+Relation	T0	T3	NoRel	true	fundet	regnskyl
+Relation	T2	T6	NoRel	true	oversvømmelser	forhindre
+Relation	T5	T7	NoRel	true	fastgjort	system
+Relation	T7	T0	NoRel	true	system	fundet
+Relation	T7	T4	NoRel	true	system	forarbejdet

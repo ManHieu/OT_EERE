@@ -1,0 +1,32 @@
+Text	Fırtına etkisini azaltarak karaya doğru devam etti ve Eylül'ün 23'ünde geçiş zayıflamasını yapmaktaydı .	Savannah şehri , Hugo'nun önceden beklenmesiyle boşaltıldı ama burada fırtının yıldır ım sağanaklarından ve sınırlı etkisinden daha fazlası görülmedi .	Hugo Savannah'ı vurduğunda , 1898 Atlantik fırtına mevsiminden beri Georgia'da görülen ilk fırtına oldu .	Güney Karolina valisi Carroll Campbell fırtınanın ilerlemesiyle şehrin boşaltılması kararını verdi ; bu çoğu hayatın kurtulmasını sağladı .	Bölge Ölen - - - - - - - - - - - - - - - - - - - - - - - - - - - - Birleşik Devletler 35 Porto Riko 12 Guadeloupe 11 Montserrat 1 Virgin Adaları 6 Antigua ve Barbuda 1 Saint Kitts ve Nevis 1 Toplam 76
+Event	T0	etti	EVENT	46
+Event	T1	yapmaktaydı	EVENT	91
+Event	T2	boşaltıldı	EVENT	153
+Event	T3	fırtının	EVENT	175
+Event	T4	görülmedi	EVENT	245
+Event	T5	vurduğunda	EVENT	273
+Event	T6	fırtına	EVENT	300
+Event	T7	oldu	EVENT	356
+Event	T8	ilerlemesiyle	EVENT	413
+Event	T9	verdi	EVENT	456
+Event	T10	sağladı	EVENT	493
+Event	T11	Ölen	EVENT	509
+Event	T12	Hugo'nun	EVENT	122
+Relation	T12	T2	CauseEffect	true	Hugo'nun	boşaltıldı
+Relation	T2	T12	EffectCause	true	boşaltıldı	Hugo'nun
+Relation	T8	T9	CauseEffect	true	ilerlemesiyle	verdi
+Relation	T9	T8	EffectCause	true	verdi	ilerlemesiyle
+Relation	T9	T10	CauseEffect	true	verdi	sağladı
+Relation	T10	T9	EffectCause	true	sağladı	verdi
+Relation	T0	T2	NoRel	true	etti	boşaltıldı
+Relation	T0	T5	NoRel	true	etti	vurduğunda
+Relation	T1	T10	NoRel	true	yapmaktaydı	sağladı
+Relation	T10	T11	NoRel	true	sağladı	Ölen
+Relation	T11	T7	NoRel	true	Ölen	oldu
+Relation	T12	T10	NoRel	true	Hugo'nun	sağladı
+Relation	T3	T10	NoRel	true	fırtının	sağladı
+Relation	T3	T8	NoRel	true	fırtının	ilerlemesiyle
+Relation	T4	T9	NoRel	true	görülmedi	verdi
+Relation	T8	T0	NoRel	true	ilerlemesiyle	etti
+Relation	T8	T4	NoRel	true	ilerlemesiyle	görülmedi
+Relation	T9	T0	NoRel	true	verdi	etti

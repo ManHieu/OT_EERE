@@ -1,0 +1,56 @@
+Text	Los ATENTADOS EN ADÉN ocurrieron entre el 10 al 13 de octubre de 2021 y estaban dirigidos a miembros del Estado yemení , los ataques dejaron 18 fallecidos .	El 10 de octubre de 2021 , un coche bomba en Adén ( Yemen ) mató a seis personas e hirió a otras siete .	La agencia de noticias estatal dijo que la bomba fue un intento de asesinato terrorista dirigido al gobernador de Adén Ahmed Lamlas y al ministro de agricultura Salem al-Suqatri .	El 30 de octubre de 2021 , un coche bomba cerca del Aeropuerto Internacional de Adén mató al menos a 12 civiles e hirió a varios más .	El primer ministro Mueeen Abdulmalek Saeed lo describió como un atentado terrorista con bomba .
+Event	T0	ATENTADOS	EVENT	4
+Event	T1	ocurrieron	EVENT	22
+Event	T2	dirigidos	EVENT	80
+Event	T4	fallecidos	EVENT	144
+Event	T5	mató	EVENT	217
+Event	T6	hirió	EVENT	240
+Event	T7	dijo	EVENT	293
+Event	T8	bomba	EVENT	305
+Event	T9	intento	EVENT	318
+Event	T10	asesinato	EVENT	329
+Event	T11	dirigido	EVENT	350
+Event	T12	mató	EVENT	527
+Event	T13	hirió	EVENT	556
+Event	T14	atentado	EVENT	641
+Event	T3	bomba	EVENT	193
+Event	T15	bomba	EVENT	478
+Event	T16	describió	EVENT	623
+Relation	T0	T4	CauseEffect	true	ATENTADOS	fallecidos
+Relation	T4	T0	EffectCause	true	fallecidos	ATENTADOS
+Relation	T3	T5	CauseEffect	true	bomba	mató
+Relation	T5	T3	EffectCause	true	mató	bomba
+Relation	T3	T6	CauseEffect	true	bomba	hirió
+Relation	T6	T3	EffectCause	true	hirió	bomba
+Relation	T15	T12	CauseEffect	true	bomba	mató
+Relation	T12	T15	EffectCause	true	mató	bomba
+Relation	T15	T13	CauseEffect	true	bomba	hirió
+Relation	T13	T15	EffectCause	true	hirió	bomba
+Relation	T0	T11	NoRel	true	ATENTADOS	dirigido
+Relation	T0	T16	NoRel	true	ATENTADOS	describió
+Relation	T1	T0	NoRel	true	ocurrieron	ATENTADOS
+Relation	T10	T6	NoRel	true	asesinato	hirió
+Relation	T12	T10	NoRel	true	mató	asesinato
+Relation	T12	T11	NoRel	true	mató	dirigido
+Relation	T14	T7	NoRel	true	atentado	dijo
+Relation	T15	T14	NoRel	true	bomba	atentado
+Relation	T15	T5	NoRel	true	bomba	mató
+Relation	T16	T13	NoRel	true	describió	hirió
+Relation	T16	T2	NoRel	true	describió	dirigidos
+Relation	T16	T3	NoRel	true	describió	bomba
+Relation	T16	T6	NoRel	true	describió	hirió
+Relation	T16	T9	NoRel	true	describió	intento
+Relation	T2	T16	NoRel	true	dirigidos	describió
+Relation	T3	T9	NoRel	true	bomba	intento
+Relation	T4	T15	NoRel	true	fallecidos	bomba
+Relation	T4	T3	NoRel	true	fallecidos	bomba
+Relation	T4	T8	NoRel	true	fallecidos	bomba
+Relation	T6	T10	NoRel	true	hirió	asesinato
+Relation	T6	T7	NoRel	true	hirió	dijo
+Relation	T6	T8	NoRel	true	hirió	bomba
+Relation	T7	T5	NoRel	true	dijo	mató
+Relation	T7	T6	NoRel	true	dijo	hirió
+Relation	T8	T1	NoRel	true	bomba	ocurrieron
+Relation	T9	T13	NoRel	true	intento	hirió
+Relation	T9	T15	NoRel	true	intento	bomba
+Relation	T9	T2	NoRel	true	intento	dirigidos

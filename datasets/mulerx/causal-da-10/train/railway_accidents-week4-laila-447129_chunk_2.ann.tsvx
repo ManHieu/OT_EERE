@@ -1,0 +1,25 @@
+Text	Arbejdet blev besværliggjort af det omfattende mudderlag , som var forårsaget af laharen .	Det lykkedes ikke at finde alle ligene , idet tyve ikke blev fundet i tiden efter ulykken .	Med mellemrum helt op til halvtreds år senere er der dog fundet skeletter , der kan være fra nogle af de manglende lig .		
+Event	T0	Arbejdet	EVENT	0
+Event	T1	besværliggjort	EVENT	14
+Event	T2	mudderlag	EVENT	47
+Event	T3	forårsaget	EVENT	67
+Event	T4	lykkedes	EVENT	95
+Event	T5	finde	EVENT	112
+Event	T6	fundet	EVENT	152
+Event	T7	ulykken	EVENT	173
+Event	T8	fundet	EVENT	240
+Event	T9	lig	EVENT	298
+Event	T10	laharen	EVENT	81
+Relation	T10	T2	CauseEffect	true	laharen	mudderlag
+Relation	T2	T10	EffectCause	true	mudderlag	laharen
+Relation	T2	T1	CauseEffect	true	mudderlag	besværliggjort
+Relation	T1	T2	EffectCause	true	besværliggjort	mudderlag
+Relation	T0	T1	NoRel	true	Arbejdet	besværliggjort
+Relation	T0	T4	NoRel	true	Arbejdet	lykkedes
+Relation	T0	T8	NoRel	true	Arbejdet	fundet
+Relation	T1	T6	NoRel	true	besværliggjort	fundet
+Relation	T5	T0	NoRel	true	finde	Arbejdet
+Relation	T5	T8	NoRel	true	finde	fundet
+Relation	T6	T2	NoRel	true	fundet	mudderlag
+Relation	T6	T4	NoRel	true	fundet	lykkedes
+Relation	T7	T5	NoRel	true	ulykken	finde

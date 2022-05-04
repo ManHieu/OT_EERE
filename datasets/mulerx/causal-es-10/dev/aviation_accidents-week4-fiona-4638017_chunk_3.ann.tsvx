@@ -1,0 +1,46 @@
+Text	- Técnica de recuperación inicial de pérdida de sustentación no apropiada a las circunstancias de vuelo , en donde era prioritario disminuir el ángulo de ataque en desmedro de la pérdida de altitud .	- Comportamiento inusual de los comandos de vuelo de alerones , durante la pérdida de control , probablemente por la acumulación de hielo en la superficie anterior a los mismos , que imposibilitaron la recuperación de la aeronave .	- Situación de estrés creciente en la tripulación , que afectó la toma de decisiones operativas " .	El informe expresa además algunas " Condiciones potencialmente peligrosas , no causales del presente suceso " , relacionadas con el " Contexto organizacional y operacional de la empresa " , como :	- Especificaciones de operación del explotador desactualizadas - Cumplimiento parcializado de lo establecido en la RAAC 121.133_– Apéndice A , referente a la mantener actualizados los Manuales de Operación del Explotador .
+Event	T0	recuperación	EVENT	13
+Event	T1	pérdida	EVENT	37
+Event	T2	vuelo	EVENT	98
+Event	T3	disminuir	EVENT	131
+Event	T4	ataque	EVENT	154
+Event	T5	pérdida	EVENT	179
+Event	T6	vuelo	EVENT	244
+Event	T7	pérdida	EVENT	275
+Event	T8	acumulación	EVENT	317
+Event	T9	imposibilitaron	EVENT	383
+Event	T10	recuperación	EVENT	402
+Event	T11	creciente	EVENT	454
+Event	T12	afectó	EVENT	488
+Event	T13	toma	EVENT	498
+Event	T14	expresa	EVENT	543
+Event	T15	suceso	EVENT	633
+Event	T16	operación	EVENT	751
+Event	T17	establecido	EVENT	826
+Relation	T8	T7	CauseEffect	true	acumulación	pérdida
+Relation	T7	T8	EffectCause	true	pérdida	acumulación
+Relation	T7	T9	CauseEffect	true	pérdida	imposibilitaron
+Relation	T9	T7	EffectCause	true	imposibilitaron	pérdida
+Relation	T0	T13	NoRel	true	recuperación	toma
+Relation	T0	T7	NoRel	true	recuperación	pérdida
+Relation	T1	T5	NoRel	true	pérdida	pérdida
+Relation	T10	T0	NoRel	true	recuperación	recuperación
+Relation	T10	T8	NoRel	true	recuperación	acumulación
+Relation	T11	T0	NoRel	true	creciente	recuperación
+Relation	T12	T5	NoRel	true	afectó	pérdida
+Relation	T12	T8	NoRel	true	afectó	acumulación
+Relation	T12	T9	NoRel	true	afectó	imposibilitaron
+Relation	T14	T1	NoRel	true	expresa	pérdida
+Relation	T14	T4	NoRel	true	expresa	ataque
+Relation	T14	T5	NoRel	true	expresa	pérdida
+Relation	T14	T8	NoRel	true	expresa	acumulación
+Relation	T15	T6	NoRel	true	suceso	vuelo
+Relation	T16	T17	NoRel	true	operación	establecido
+Relation	T3	T4	NoRel	true	disminuir	ataque
+Relation	T4	T16	NoRel	true	ataque	operación
+Relation	T4	T7	NoRel	true	ataque	pérdida
+Relation	T5	T0	NoRel	true	pérdida	recuperación
+Relation	T6	T8	NoRel	true	vuelo	acumulación
+Relation	T7	T4	NoRel	true	pérdida	ataque
+Relation	T8	T15	NoRel	true	acumulación	suceso
+Relation	T9	T15	NoRel	true	imposibilitaron	suceso

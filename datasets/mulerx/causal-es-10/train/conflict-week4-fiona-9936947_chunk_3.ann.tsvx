@@ -1,0 +1,111 @@
+Text	Más tarde , el ministro del Interior , José Elice , se pronunció al respecto en su cuenta de Twitter , alegando que no permitirá que la ciudadanía frustre las labores del gobierno peruano respecto a la campaña de vacunación , punto que anteriormente fue perjudicado tras las primeras manifestaciones del 9 de junio .	Tras esta situación la comunicadora Vanya Thais , manifestó que cambiarían de sede , desplazándose así hacia la avenida de la Peruanidad con la avenida 28 de Julio .	Posteriormente , Fujimori se refirió al hecho respondiendo a un tuit redactado por Vanya Thais , confirmando su presencia en el acto proselitista .	El sábado 19 de junio , partidistas de ambos bandos participaron en las marchas convocadas por sus respectivas organizaciones políticas .	El ministro del interior , José Elice , declaró en horas de la tarde que se había « destinado más de tres mil efectivos entrenados en el control de multitudes con la finalidad de asegurar que estas movilizaciones se desarrollen en forma pacífica y sin interrumpir el proceso de vacunación » .
+Event	T0	pronunció	EVENT	55
+Event	T1	alegando	EVENT	103
+Event	T2	frustre	EVENT	147
+Event	T3	labores	EVENT	159
+Event	T4	vacunación	EVENT	213
+Event	T5	perjudicado	EVENT	254
+Event	T6	manifestaciones	EVENT	284
+Event	T7	situación	EVENT	327
+Event	T8	manifestó	EVENT	367
+Event	T9	cambiarían	EVENT	381
+Event	T10	desplazándose	EVENT	402
+Event	T11	refirió	EVENT	512
+Event	T12	respondiendo	EVENT	529
+Event	T13	redactado	EVENT	552
+Event	T14	confirmando	EVENT	580
+Event	T15	presencia	EVENT	595
+Event	T16	participaron	EVENT	683
+Event	T17	convocadas	EVENT	711
+Event	T18	declaró	EVENT	809
+Event	T19	destinado	EVENT	853
+Event	T20	entrenados	EVENT	889
+Event	T21	control	EVENT	906
+Event	T22	asegurar	EVENT	948
+Event	T23	movilizaciones	EVENT	967
+Event	T24	desarrollen	EVENT	985
+Event	T25	interrumpir	EVENT	1021
+Event	T26	proceso	EVENT	1036
+Event	T27	vacunación	EVENT	1047
+Relation	T17	T16	CauseEffect	true	convocadas	participaron
+Relation	T16	T17	EffectCause	true	participaron	convocadas
+Relation	T0	T15	NoRel	true	pronunció	presencia
+Relation	T0	T17	NoRel	true	pronunció	convocadas
+Relation	T0	T21	NoRel	true	pronunció	control
+Relation	T0	T3	NoRel	true	pronunció	labores
+Relation	T0	T7	NoRel	true	pronunció	situación
+Relation	T1	T0	NoRel	true	alegando	pronunció
+Relation	T1	T19	NoRel	true	alegando	destinado
+Relation	T1	T2	NoRel	true	alegando	frustre
+Relation	T1	T3	NoRel	true	alegando	labores
+Relation	T1	T4	NoRel	true	alegando	vacunación
+Relation	T10	T0	NoRel	true	desplazándose	pronunció
+Relation	T10	T26	NoRel	true	desplazándose	proceso
+Relation	T10	T27	NoRel	true	desplazándose	vacunación
+Relation	T11	T1	NoRel	true	refirió	alegando
+Relation	T11	T10	NoRel	true	refirió	desplazándose
+Relation	T11	T18	NoRel	true	refirió	declaró
+Relation	T12	T15	NoRel	true	respondiendo	presencia
+Relation	T12	T21	NoRel	true	respondiendo	control
+Relation	T12	T24	NoRel	true	respondiendo	desarrollen
+Relation	T12	T26	NoRel	true	respondiendo	proceso
+Relation	T12	T7	NoRel	true	respondiendo	situación
+Relation	T13	T26	NoRel	true	redactado	proceso
+Relation	T13	T8	NoRel	true	redactado	manifestó
+Relation	T14	T24	NoRel	true	confirmando	desarrollen
+Relation	T14	T26	NoRel	true	confirmando	proceso
+Relation	T15	T21	NoRel	true	presencia	control
+Relation	T15	T26	NoRel	true	presencia	proceso
+Relation	T15	T9	NoRel	true	presencia	cambiarían
+Relation	T16	T19	NoRel	true	participaron	destinado
+Relation	T16	T25	NoRel	true	participaron	interrumpir
+Relation	T17	T11	NoRel	true	convocadas	refirió
+Relation	T17	T12	NoRel	true	convocadas	respondiendo
+Relation	T17	T15	NoRel	true	convocadas	presencia
+Relation	T18	T0	NoRel	true	declaró	pronunció
+Relation	T18	T14	NoRel	true	declaró	confirmando
+Relation	T18	T16	NoRel	true	declaró	participaron
+Relation	T18	T2	NoRel	true	declaró	frustre
+Relation	T18	T22	NoRel	true	declaró	asegurar
+Relation	T18	T8	NoRel	true	declaró	manifestó
+Relation	T19	T10	NoRel	true	destinado	desplazándose
+Relation	T19	T12	NoRel	true	destinado	respondiendo
+Relation	T19	T4	NoRel	true	destinado	vacunación
+Relation	T2	T16	NoRel	true	frustre	participaron
+Relation	T2	T27	NoRel	true	frustre	vacunación
+Relation	T2	T8	NoRel	true	frustre	manifestó
+Relation	T20	T15	NoRel	true	entrenados	presencia
+Relation	T20	T7	NoRel	true	entrenados	situación
+Relation	T20	T9	NoRel	true	entrenados	cambiarían
+Relation	T21	T14	NoRel	true	control	confirmando
+Relation	T21	T22	NoRel	true	control	asegurar
+Relation	T21	T23	NoRel	true	control	movilizaciones
+Relation	T21	T5	NoRel	true	control	perjudicado
+Relation	T22	T0	NoRel	true	asegurar	pronunció
+Relation	T22	T10	NoRel	true	asegurar	desplazándose
+Relation	T23	T11	NoRel	true	movilizaciones	refirió
+Relation	T23	T27	NoRel	true	movilizaciones	vacunación
+Relation	T24	T1	NoRel	true	desarrollen	alegando
+Relation	T24	T20	NoRel	true	desarrollen	entrenados
+Relation	T24	T27	NoRel	true	desarrollen	vacunación
+Relation	T25	T10	NoRel	true	interrumpir	desplazándose
+Relation	T27	T10	NoRel	true	vacunación	desplazándose
+Relation	T27	T8	NoRel	true	vacunación	manifestó
+Relation	T3	T10	NoRel	true	labores	desplazándose
+Relation	T3	T13	NoRel	true	labores	redactado
+Relation	T3	T14	NoRel	true	labores	confirmando
+Relation	T3	T16	NoRel	true	labores	participaron
+Relation	T3	T26	NoRel	true	labores	proceso
+Relation	T4	T14	NoRel	true	vacunación	confirmando
+Relation	T4	T24	NoRel	true	vacunación	desarrollen
+Relation	T5	T12	NoRel	true	perjudicado	respondiendo
+Relation	T5	T27	NoRel	true	perjudicado	vacunación
+Relation	T6	T11	NoRel	true	manifestaciones	refirió
+Relation	T6	T12	NoRel	true	manifestaciones	respondiendo
+Relation	T6	T18	NoRel	true	manifestaciones	declaró
+Relation	T6	T4	NoRel	true	manifestaciones	vacunación
+Relation	T7	T0	NoRel	true	situación	pronunció
+Relation	T7	T19	NoRel	true	situación	destinado
+Relation	T7	T5	NoRel	true	situación	perjudicado
+Relation	T8	T26	NoRel	true	manifestó	proceso
+Relation	T8	T5	NoRel	true	manifestó	perjudicado

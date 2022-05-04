@@ -1,0 +1,51 @@
+Text	La CIAIAC no pudo determinar fehacientemente cuál fue el modo de fallo exacto del TOWS .	Una teoría inicial de las causas del accidente era que el sistema de reversa del motor n.º 2 ( lado derecho ) se pudiera haber activado durante el ascenso , haciendo que el avión virara bruscamente hacia la derecha .	Esta teoría surgió debido a que en los restos del accidente se encontró uno de los motores con el sistema de reversa desplegado .	Estos inversores de empuje se emplean normalmente justo después del aterrizaje para reducir las distancias de frenado .	Sin embargo , como el MD-82 tiene los motores instalados en la cola , bastante cerca uno del otro y cerca del eje longitudinal del avión , la activación de un inversor no habría producido un viraje incontrolable .
+Event	T0	determinar	EVENT	18
+Event	T1	fallo	EVENT	65
+Event	T2	accidente	EVENT	126
+Event	T3	activado	EVENT	216
+Event	T4	ascenso	EVENT	236
+Event	T5	haciendo	EVENT	246
+Event	T6	virara	EVENT	268
+Event	T7	restos	EVENT	345
+Event	T8	accidente	EVENT	356
+Event	T9	encontró	EVENT	369
+Event	T10	desplegado	EVENT	423
+Event	T11	emplean	EVENT	466
+Event	T12	aterrizaje	EVENT	504
+Event	T13	frenado	EVENT	546
+Event	T14	instalados	EVENT	602
+Event	T15	activación	EVENT	698
+Event	T16	producido	EVENT	734
+Relation	T3	T2	CauseEffect	true	activado	accidente
+Relation	T2	T3	EffectCause	true	accidente	activado
+Relation	T0	T16	NoRel	true	determinar	producido
+Relation	T1	T13	NoRel	true	fallo	frenado
+Relation	T1	T3	NoRel	true	fallo	activado
+Relation	T1	T6	NoRel	true	fallo	virara
+Relation	T1	T7	NoRel	true	fallo	restos
+Relation	T10	T11	NoRel	true	desplegado	emplean
+Relation	T10	T15	NoRel	true	desplegado	activación
+Relation	T10	T2	NoRel	true	desplegado	accidente
+Relation	T12	T4	NoRel	true	aterrizaje	ascenso
+Relation	T12	T8	NoRel	true	aterrizaje	accidente
+Relation	T13	T7	NoRel	true	frenado	restos
+Relation	T14	T0	NoRel	true	instalados	determinar
+Relation	T15	T1	NoRel	true	activación	fallo
+Relation	T15	T12	NoRel	true	activación	aterrizaje
+Relation	T16	T13	NoRel	true	producido	frenado
+Relation	T2	T11	NoRel	true	accidente	emplean
+Relation	T4	T0	NoRel	true	ascenso	determinar
+Relation	T4	T8	NoRel	true	ascenso	accidente
+Relation	T5	T8	NoRel	true	haciendo	accidente
+Relation	T6	T11	NoRel	true	virara	emplean
+Relation	T6	T14	NoRel	true	virara	instalados
+Relation	T6	T16	NoRel	true	virara	producido
+Relation	T6	T3	NoRel	true	virara	activado
+Relation	T6	T4	NoRel	true	virara	ascenso
+Relation	T7	T2	NoRel	true	restos	accidente
+Relation	T8	T0	NoRel	true	accidente	determinar
+Relation	T8	T12	NoRel	true	accidente	aterrizaje
+Relation	T8	T3	NoRel	true	accidente	activado
+Relation	T8	T7	NoRel	true	accidente	restos
+Relation	T9	T4	NoRel	true	encontró	ascenso
+Relation	T9	T6	NoRel	true	encontró	virara

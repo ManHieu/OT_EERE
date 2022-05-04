@@ -1,0 +1,57 @@
+Text	Este fue el primer accidente de Southwest Airlines en los 35 años de historia de la compañía que resultó en una muerte .	El incidente principal anterior fue en 2000 , cuando el vuelo 1455 de Southwest Airlines se desbordó en una pista de aterrizaje en Burbank , California , hiriendo a 43 personas y evitando por poco una catástrofe ; el avión terminó frente a una gasolinera Chevron .	Como resultado directo del accidente , la Administración Federal de Aviación de EE._UU_. Creó el Comité de reglamentación de la aviación para la evaluación del desempeño de despegue y aterrizaje .	( ARCO TALPA ) .	En 2016 , con base en las recomendaciones de TALPA ARC , la FAA implementó un nuevo Código numérico de condición de pista para comunicar las condiciones de la pista entre la administración del aeropuerto a los miembros de la tripulación de vuelo .
+Event	T0	accidente	EVENT	19
+Event	T1	resultó	EVENT	97
+Event	T2	muerte	EVENT	112
+Event	T3	desbordó	EVENT	213
+Event	T4	aterrizaje	EVENT	238
+Event	T5	hiriendo	EVENT	275
+Event	T6	evitando	EVENT	300
+Event	T7	catástrofe	EVENT	322
+Event	T8	terminó	EVENT	344
+Event	T9	accidente	EVENT	413
+Event	T10	evaluación	EVENT	531
+Event	T11	desempeño	EVENT	546
+Event	T12	despegue	EVENT	559
+Event	T13	aterrizaje	EVENT	570
+Event	T14	recomendaciones	EVENT	626
+Event	T15	implementó	EVENT	664
+Event	T16	comunicar	EVENT	727
+Event	T17	Creó	EVENT	475
+Relation	T0	T2	CauseEffect	true	accidente	muerte
+Relation	T2	T0	EffectCause	true	muerte	accidente
+Relation	T0	T14	NoRel	true	accidente	recomendaciones
+Relation	T0	T17	NoRel	true	accidente	Creó
+Relation	T0	T9	NoRel	true	accidente	accidente
+Relation	T1	T14	NoRel	true	resultó	recomendaciones
+Relation	T10	T15	NoRel	true	evaluación	implementó
+Relation	T10	T4	NoRel	true	evaluación	aterrizaje
+Relation	T10	T9	NoRel	true	evaluación	accidente
+Relation	T11	T15	NoRel	true	desempeño	implementó
+Relation	T11	T16	NoRel	true	desempeño	comunicar
+Relation	T12	T10	NoRel	true	despegue	evaluación
+Relation	T13	T1	NoRel	true	aterrizaje	resultó
+Relation	T13	T11	NoRel	true	aterrizaje	desempeño
+Relation	T14	T12	NoRel	true	recomendaciones	despegue
+Relation	T14	T2	NoRel	true	recomendaciones	muerte
+Relation	T14	T4	NoRel	true	recomendaciones	aterrizaje
+Relation	T14	T7	NoRel	true	recomendaciones	catástrofe
+Relation	T16	T1	NoRel	true	comunicar	resultó
+Relation	T17	T11	NoRel	true	Creó	desempeño
+Relation	T17	T14	NoRel	true	Creó	recomendaciones
+Relation	T2	T1	NoRel	true	muerte	resultó
+Relation	T2	T14	NoRel	true	muerte	recomendaciones
+Relation	T3	T14	NoRel	true	desbordó	recomendaciones
+Relation	T4	T11	NoRel	true	aterrizaje	desempeño
+Relation	T5	T15	NoRel	true	hiriendo	implementó
+Relation	T5	T9	NoRel	true	hiriendo	accidente
+Relation	T6	T14	NoRel	true	evitando	recomendaciones
+Relation	T6	T16	NoRel	true	evitando	comunicar
+Relation	T6	T7	NoRel	true	evitando	catástrofe
+Relation	T7	T15	NoRel	true	catástrofe	implementó
+Relation	T7	T8	NoRel	true	catástrofe	terminó
+Relation	T8	T16	NoRel	true	terminó	comunicar
+Relation	T8	T3	NoRel	true	terminó	desbordó
+Relation	T8	T5	NoRel	true	terminó	hiriendo
+Relation	T9	T14	NoRel	true	accidente	recomendaciones
+Relation	T9	T15	NoRel	true	accidente	implementó
+Relation	T9	T5	NoRel	true	accidente	hiriendo

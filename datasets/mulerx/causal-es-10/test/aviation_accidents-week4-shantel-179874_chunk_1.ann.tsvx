@@ -1,0 +1,24 @@
+Text	Las autoridades en Chipre compartieron la lista de pasajeros .	De los 115 pasajeros del avión , 48 eran menores de edad .	Según una noticia emitida en Atenas , varios niños griegos regresaban de vacaciones en este vuelo .	El accidente fue el mayor de la historia de la aeronavegación griega , junto con uno de los más graves de agosto de 2005 , un mes oscuro para la aviación comercial , en el que también se presentaron , entre otros , las tragedias del Vuelo 708 de West Caribbean y del Vuelo 204 de TANS Perú .	[ 5B-DBY , la aeronave involucrada en el accidente , rodando en el aeropuerto Ruzyne en marzo de 2005 .
+Event	T0	compartieron	EVENT	26
+Event	T1	emitida	EVENT	140
+Event	T2	regresaban	EVENT	181
+Event	T3	vacaciones	EVENT	195
+Event	T4	vuelo	EVENT	214
+Event	T6	presentaron	EVENT	409
+Event	T7	tragedias	EVENT	441
+Event	T8	Vuelo	EVENT	455
+Event	T9	Vuelo	EVENT	489
+Event	T10	involucrada	EVENT	537
+Event	T11	accidente	EVENT	555
+Event	T12	rodando	EVENT	567
+Event	T13	accidente	EVENT	225
+Relation	T1	T0	NoRel	true	emitida	compartieron
+Relation	T11	T12	NoRel	true	accidente	rodando
+Relation	T2	T12	NoRel	true	regresaban	rodando
+Relation	T3	T4	NoRel	true	vacaciones	vuelo
+Relation	T3	T7	NoRel	true	vacaciones	tragedias
+Relation	T3	T8	NoRel	true	vacaciones	Vuelo
+Relation	T4	T0	NoRel	true	vuelo	compartieron
+Relation	T4	T11	NoRel	true	vuelo	accidente
+Relation	T6	T10	NoRel	true	presentaron	involucrada
+Relation	T8	T13	NoRel	true	Vuelo	accidente

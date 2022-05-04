@@ -1,0 +1,65 @@
+Text	Den 1. september 1939 råede det polske luftvåben over ca. 86 PZL. 37'ere , men mindre end halvdelen af disse blev benyttet i kamp , bl.a. som følge af , at flere af flyene blev benyttet af træningsenheder , flere af flyene var under reparation eller under vedligeholdelse og nogle blev holdt i reserve .	Flyene led store tab under aktiv tjeneste , da de led under ikke at have tilstrækkelig støtte fra escorterende jagerfly , hvilket gjorde dem til nemme ofte for Luftwaffes jagerfly .	De sidste missioner med flyet fandt stede den 19. september 1939 .	I oktober blev ca. 26-27 af de PZL. 37'ere , der var evakueret fra Polen beslaglagt af Rumæniens regering og senere brugt af det rumænske luftvåben på østfronten i kamp mod Sovjetunionen .	- Cynk , Jerzy B. _ The Polish Air Force at War : The Official History , Vol. 1 , 1939–1943 _ .
+Event	T0	råede	EVENT	22
+Event	T1	benyttet	EVENT	114
+Event	T2	kamp	EVENT	125
+Event	T3	benyttet	EVENT	177
+Event	T4	reparation	EVENT	233
+Event	T5	vedligeholdelse	EVENT	256
+Event	T6	holdt	EVENT	286
+Event	T7	led	EVENT	311
+Event	T8	tab	EVENT	321
+Event	T9	led	EVENT	354
+Event	T10	gjorde	EVENT	434
+Event	T11	missioner	EVENT	496
+Event	T12	stede	EVENT	522
+Event	T13	evakueret	EVENT	606
+Event	T14	beslaglagt	EVENT	626
+Event	T15	brugt	EVENT	669
+Event	T16	kamp	EVENT	717
+Event	T17	halvdelen	EVENT	90
+Event	T18	støtte	EVENT	391
+Relation	T3	T17	CauseEffect	true	benyttet	halvdelen
+Relation	T17	T3	EffectCause	true	halvdelen	benyttet
+Relation	T4	T17	CauseEffect	true	reparation	halvdelen
+Relation	T17	T4	EffectCause	true	halvdelen	reparation
+Relation	T5	T17	CauseEffect	true	vedligeholdelse	halvdelen
+Relation	T17	T5	EffectCause	true	halvdelen	vedligeholdelse
+Relation	T6	T17	CauseEffect	true	holdt	halvdelen
+Relation	T17	T6	EffectCause	true	halvdelen	holdt
+Relation	T18	T10	CauseEffect	true	støtte	gjorde
+Relation	T10	T18	EffectCause	true	gjorde	støtte
+Relation	T10	T8	CauseEffect	true	gjorde	tab
+Relation	T8	T10	EffectCause	true	tab	gjorde
+Relation	T0	T13	NoRel	true	råede	evakueret
+Relation	T0	T16	NoRel	true	råede	kamp
+Relation	T0	T6	NoRel	true	råede	holdt
+Relation	T10	T6	NoRel	true	gjorde	holdt
+Relation	T11	T0	NoRel	true	missioner	råede
+Relation	T12	T2	NoRel	true	stede	kamp
+Relation	T12	T3	NoRel	true	stede	benyttet
+Relation	T12	T9	NoRel	true	stede	led
+Relation	T13	T7	NoRel	true	evakueret	led
+Relation	T13	T8	NoRel	true	evakueret	tab
+Relation	T15	T13	NoRel	true	brugt	evakueret
+Relation	T15	T17	NoRel	true	brugt	halvdelen
+Relation	T15	T18	NoRel	true	brugt	støtte
+Relation	T15	T3	NoRel	true	brugt	benyttet
+Relation	T16	T15	NoRel	true	kamp	brugt
+Relation	T17	T2	NoRel	true	halvdelen	kamp
+Relation	T17	T8	NoRel	true	halvdelen	tab
+Relation	T2	T5	NoRel	true	kamp	vedligeholdelse
+Relation	T4	T1	NoRel	true	reparation	benyttet
+Relation	T4	T10	NoRel	true	reparation	gjorde
+Relation	T4	T9	NoRel	true	reparation	led
+Relation	T5	T10	NoRel	true	vedligeholdelse	gjorde
+Relation	T5	T12	NoRel	true	vedligeholdelse	stede
+Relation	T5	T15	NoRel	true	vedligeholdelse	brugt
+Relation	T5	T3	NoRel	true	vedligeholdelse	benyttet
+Relation	T6	T0	NoRel	true	holdt	råede
+Relation	T7	T2	NoRel	true	led	kamp
+Relation	T7	T3	NoRel	true	led	benyttet
+Relation	T7	T8	NoRel	true	led	tab
+Relation	T9	T12	NoRel	true	led	stede
+Relation	T9	T13	NoRel	true	led	evakueret
+Relation	T9	T3	NoRel	true	led	benyttet
+Relation	T9	T8	NoRel	true	led	tab

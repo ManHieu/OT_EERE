@@ -1,0 +1,45 @@
+Text	Chaikovski encabezó el nuevo gobierno gracias a su gran popularidad y como representante del socialismo no marxista de origen populista .	[ El general británico Frederick C. Poole , al mando de las fuerzas aliadas en Arcángel , mantuvo tensas relaciones con Chaikovski hasta su traslado en octubre de 1918 .	| thumb | left ] [ El capitán Gueorgui Chaplin , cabecilla del golpe contra los bolcheviques que permitió a Chaikovski formar un Gobierno en Arcángel , más tarde se rebeló contra él , deportándolo temporalmente al Ártico , de donde fue liberado por la mediación de los embajadores aliados .	| thumb | right ]	Pronto la elección de un gabinete exclusivamente socialista , formado por socialrevolucionarios a pesar de las promesas de Chaikovski de incluir a todos los partidos políticos , enfrentó a éste con el dirigente del golpe contra los bolcheviques , el capitán Gueorgui Chaplin y con los representantes aliados en la región .
+Event	T0	encabezó	EVENT	11
+Event	T1	relaciones	EVENT	243
+Event	T10	elección	EVENT	627
+Event	T11	formado	EVENT	679
+Event	T12	promesas	EVENT	728
+Event	T13	enfrentó	EVENT	795
+Event	T2	traslado	EVENT	278
+Event	T3	golpe	EVENT	371
+Event	T4	permitió	EVENT	405
+Event	T5	formar	EVENT	427
+Event	T6	rebeló	EVENT	473
+Event	T7	deportándolo	EVENT	492
+Event	T8	liberado	EVENT	544
+Event	T9	mediación	EVENT	560
+Relation	T6	T7	CauseEffect	true	rebeló	deportándolo
+Relation	T7	T6	EffectCause	true	deportándolo	rebeló
+Relation	T9	T8	CauseEffect	true	mediación	liberado
+Relation	T8	T9	EffectCause	true	liberado	mediación
+Relation	T3	T5	CauseEffect	true	golpe	formar
+Relation	T5	T3	EffectCause	true	formar	golpe
+Relation	T10	T13	CauseEffect	true	elección	enfrentó
+Relation	T13	T10	EffectCause	true	enfrentó	elección
+Relation	T7	T8	CauseEffect	true	deportándolo	liberado
+Relation	T8	T7	EffectCause	true	liberado	deportándolo
+Relation	T0	T9	NoRel	true	encabezó	mediación
+Relation	T1	T11	NoRel	true	relaciones	formado
+Relation	T1	T4	NoRel	true	relaciones	permitió
+Relation	T10	T3	NoRel	true	elección	golpe
+Relation	T10	T4	NoRel	true	elección	permitió
+Relation	T10	T7	NoRel	true	elección	deportándolo
+Relation	T12	T7	NoRel	true	promesas	deportándolo
+Relation	T13	T3	NoRel	true	enfrentó	golpe
+Relation	T13	T4	NoRel	true	enfrentó	permitió
+Relation	T2	T1	NoRel	true	traslado	relaciones
+Relation	T4	T0	NoRel	true	permitió	encabezó
+Relation	T4	T6	NoRel	true	permitió	rebeló
+Relation	T5	T9	NoRel	true	formar	mediación
+Relation	T6	T10	NoRel	true	rebeló	elección
+Relation	T6	T11	NoRel	true	rebeló	formado
+Relation	T7	T11	NoRel	true	deportándolo	formado
+Relation	T9	T0	NoRel	true	mediación	encabezó
+Relation	T9	T11	NoRel	true	mediación	formado
+Relation	T9	T2	NoRel	true	mediación	traslado
+Relation	T9	T5	NoRel	true	mediación	formar

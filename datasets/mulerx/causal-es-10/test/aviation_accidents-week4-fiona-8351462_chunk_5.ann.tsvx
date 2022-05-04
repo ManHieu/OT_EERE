@@ -1,0 +1,54 @@
+Text	Las imágenes revelaban que el avión se estrelló contra el suelo e inmediatamente estalló en llamas .	La fiscalía rusa inició un proceso penal por presuntas violaciones a las normas de seguridad de tránsito aéreo .	Se encontraron informes de que se le había prohibido a la aerolínea operar rutas internacionales en 2015 , y que estas se reanudaron en 2016 después de un cambio en las políticas .	El Servicio Federal Ruso para la Supervisión del Transporte ( Rostransnadzor ) declaró que durante un examen al avión siniestrado , la aerolínea había violado los procedimientos para cambiar el aceite en las cajas de cambio , y para lavar el filtro de arranque de aire .	De acuerdo con el manifiesto de vuelo , en el avión viajaban 65 pasajeros y 6 miembros de la tripulación .
+Event	T0	revelaban	EVENT	13
+Event	T1	estrelló	EVENT	39
+Event	T2	inició	EVENT	118
+Event	T3	penal	EVENT	136
+Event	T4	violaciones	EVENT	156
+Event	T5	informes	EVENT	229
+Event	T6	prohibido	EVENT	257
+Event	T7	operar	EVENT	282
+Event	T8	reanudaron	EVENT	336
+Event	T9	cambio	EVENT	369
+Event	T10	declaró	EVENT	474
+Event	T11	examen	EVENT	497
+Event	T12	siniestrado	EVENT	513
+Event	T13	violado	EVENT	546
+Event	T14	procedimientos	EVENT	558
+Event	T15	cambiar	EVENT	578
+Event	T16	lavar	EVENT	628
+Event	T17	arranque	EVENT	647
+Event	T18	vuelo	EVENT	698
+Relation	T4	T3	CauseEffect	true	violaciones	penal
+Relation	T3	T4	EffectCause	true	penal	violaciones
+Relation	T1	T5	NoRel	true	estrelló	informes
+Relation	T1	T8	NoRel	true	estrelló	reanudaron
+Relation	T10	T13	NoRel	true	declaró	violado
+Relation	T10	T18	NoRel	true	declaró	vuelo
+Relation	T10	T6	NoRel	true	declaró	prohibido
+Relation	T11	T16	NoRel	true	examen	lavar
+Relation	T11	T9	NoRel	true	examen	cambio
+Relation	T13	T1	NoRel	true	violado	estrelló
+Relation	T14	T15	NoRel	true	procedimientos	cambiar
+Relation	T14	T16	NoRel	true	procedimientos	lavar
+Relation	T14	T17	NoRel	true	procedimientos	arranque
+Relation	T15	T10	NoRel	true	cambiar	declaró
+Relation	T15	T14	NoRel	true	cambiar	procedimientos
+Relation	T15	T18	NoRel	true	cambiar	vuelo
+Relation	T15	T7	NoRel	true	cambiar	operar
+Relation	T16	T8	NoRel	true	lavar	reanudaron
+Relation	T17	T12	NoRel	true	arranque	siniestrado
+Relation	T17	T2	NoRel	true	arranque	inició
+Relation	T18	T1	NoRel	true	vuelo	estrelló
+Relation	T18	T6	NoRel	true	vuelo	prohibido
+Relation	T2	T12	NoRel	true	inició	siniestrado
+Relation	T2	T15	NoRel	true	inició	cambiar
+Relation	T2	T6	NoRel	true	inició	prohibido
+Relation	T2	T9	NoRel	true	inició	cambio
+Relation	T4	T17	NoRel	true	violaciones	arranque
+Relation	T4	T5	NoRel	true	violaciones	informes
+Relation	T5	T16	NoRel	true	informes	lavar
+Relation	T7	T13	NoRel	true	operar	violado
+Relation	T7	T2	NoRel	true	operar	inició
+Relation	T8	T4	NoRel	true	reanudaron	violaciones
+Relation	T9	T0	NoRel	true	cambio	revelaban
+Relation	T9	T12	NoRel	true	cambio	siniestrado

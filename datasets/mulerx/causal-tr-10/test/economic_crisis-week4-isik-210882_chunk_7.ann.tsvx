@@ -1,0 +1,27 @@
+Text	Sanayi üretimi ve ihracat azalıp işsizlik artmış , kapasite olarak talep ve büyüme daralmıştır .	1997 yılına kadar Asya , gelişmekte olan ülkelere akan sermayenin neredeyse yarısına yakınını çekmekteydi .	Özellikle Güney Asya ekonomileri yüksek faiz politikası izleyerek yüksek kar elde etmek isteyen yabancı yatırımcıları kendilerine çektiler .	Bunun sonucu olarak bu ekonomiler yüksek miktarda sıcak para çektiler ve değerli kıymetlerin fiyatları yükseldi .	Bu yıllarda , yani 1980'lerin sonları ve 1990'ların başlarında , Tayland , Malezya , Endonezya , Filipinler , Singapur ve Güney Kore ekonomileri % 8 ile % 12 arasında yüksek büyüme gerçekleştirdiler .
+Event	T1	artmış	EVENT	42
+Event	T2	daralmıştır	EVENT	83
+Event	T3	çekmekteydi	EVENT	191
+Event	T4	çektiler	EVENT	335
+Event	T5	çektiler	EVENT	407
+Event	T6	yükseldi	EVENT	449
+Event	T7	gerçekleştirdiler	EVENT	641
+Event	T8	azalıp	EVENT	26
+Event	T9	politikası	EVENT	250
+Relation	T9	T4	CauseEffect	true	politikası	çektiler
+Relation	T4	T9	EffectCause	true	çektiler	politikası
+Relation	T4	T5	CauseEffect	true	çektiler	çektiler
+Relation	T5	T4	EffectCause	true	çektiler	çektiler
+Relation	T5	T6	CauseEffect	true	çektiler	yükseldi
+Relation	T6	T5	EffectCause	true	yükseldi	çektiler
+Relation	T6	T7	CauseEffect	true	yükseldi	gerçekleştirdiler
+Relation	T7	T6	EffectCause	true	gerçekleştirdiler	yükseldi
+Relation	T3	T9	NoRel	true	çekmekteydi	politikası
+Relation	T5	T1	NoRel	true	çektiler	artmış
+Relation	T6	T3	NoRel	true	yükseldi	çekmekteydi
+Relation	T7	T3	NoRel	true	gerçekleştirdiler	çekmekteydi
+Relation	T8	T5	NoRel	true	azalıp	çektiler
+Relation	T9	T2	NoRel	true	politikası	daralmıştır
+Relation	T9	T3	NoRel	true	politikası	çekmekteydi
+Relation	T9	T6	NoRel	true	politikası	yükseldi
+Relation	T9	T7	NoRel	true	politikası	gerçekleştirdiler

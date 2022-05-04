@@ -1,0 +1,75 @@
+Text	SKRUEBRÆKKER er den nedsættende betegnelse for en strejkebryder , dvs. en person , der under en kollektiv strejke arbejder i konflikt med de øvrige strejkende kolleger .	Afledt af _ skrue _ der i gammel brug betød strejke .	Ved fagbevægelsens tidligere organisering i slutningen af 1800-tallet , foregik en strejke som en " skrue " , hvor man skiftevis strejkede på forskellige arbejdspladser .	Var der eksempelvis 10 arbejdspladser indenfor en branche , ramte strejkeskruen to arbejdspladser ad gangen .	På den måde sikrede man , at de resterende otte arbejdspladser udbetalte løn , så man ikke tømte strejkekassen med det samme .
+Event	T0	konflikt	EVENT	125
+Event	T1	strejkende	EVENT	148
+Event	T2	Afledt	EVENT	170
+Event	T3	strejke	EVENT	214
+Event	T4	organisering	EVENT	253
+Event	T5	foregik	EVENT	296
+Event	T6	strejke	EVENT	307
+Event	T7	strejkede	EVENT	353
+Event	T8	strejkeskruen	EVENT	461
+Event	T9	sikrede	EVENT	517
+Event	T10	udbetalte	EVENT	568
+Event	T11	SKRUEBRÆKKER	EVENT	0
+Event	T12	strejkebryder	EVENT	50
+Event	T13	arbejder	EVENT	114
+Event	T14	betød	EVENT	208
+Event	T15	skiftevis	EVENT	343
+Event	T16	skrue	EVENT	324
+Event	T17	Var	EVENT	395
+Event	T18	tømte	EVENT	596
+Event	T19	ramte	EVENT	455
+Relation	T14	T11	CauseEffect	true	betød	SKRUEBRÆKKER
+Relation	T11	T14	EffectCause	true	SKRUEBRÆKKER	betød
+Relation	T15	T16	CauseEffect	true	skiftevis	skrue
+Relation	T16	T15	EffectCause	true	skrue	skiftevis
+Relation	T0	T12	CauseEffect	true	konflikt	strejkebryder
+Relation	T12	T0	EffectCause	true	strejkebryder	konflikt
+Relation	T19	T10	CauseEffect	true	ramte	udbetalte
+Relation	T10	T19	EffectCause	true	udbetalte	ramte
+Relation	T10	T18	CauseEffect	true	udbetalte	tømte
+Relation	T18	T10	EffectCause	true	tømte	udbetalte
+Relation	T0	T11	NoRel	true	konflikt	SKRUEBRÆKKER
+Relation	T0	T2	NoRel	true	konflikt	Afledt
+Relation	T1	T14	NoRel	true	strejkende	betød
+Relation	T1	T16	NoRel	true	strejkende	skrue
+Relation	T1	T17	NoRel	true	strejkende	Var
+Relation	T11	T0	NoRel	true	SKRUEBRÆKKER	konflikt
+Relation	T11	T18	NoRel	true	SKRUEBRÆKKER	tømte
+Relation	T11	T2	NoRel	true	SKRUEBRÆKKER	Afledt
+Relation	T12	T14	NoRel	true	strejkebryder	betød
+Relation	T12	T7	NoRel	true	strejkebryder	strejkede
+Relation	T12	T8	NoRel	true	strejkebryder	strejkeskruen
+Relation	T13	T11	NoRel	true	arbejder	SKRUEBRÆKKER
+Relation	T13	T14	NoRel	true	arbejder	betød
+Relation	T13	T3	NoRel	true	arbejder	strejke
+Relation	T14	T15	NoRel	true	betød	skiftevis
+Relation	T15	T10	NoRel	true	skiftevis	udbetalte
+Relation	T16	T0	NoRel	true	skrue	konflikt
+Relation	T16	T17	NoRel	true	skrue	Var
+Relation	T17	T5	NoRel	true	Var	foregik
+Relation	T18	T0	NoRel	true	tømte	konflikt
+Relation	T18	T9	NoRel	true	tømte	sikrede
+Relation	T19	T12	NoRel	true	ramte	strejkebryder
+Relation	T19	T14	NoRel	true	ramte	betød
+Relation	T19	T17	NoRel	true	ramte	Var
+Relation	T2	T18	NoRel	true	Afledt	tømte
+Relation	T2	T6	NoRel	true	Afledt	strejke
+Relation	T3	T10	NoRel	true	strejke	udbetalte
+Relation	T3	T13	NoRel	true	strejke	arbejder
+Relation	T3	T16	NoRel	true	strejke	skrue
+Relation	T3	T18	NoRel	true	strejke	tømte
+Relation	T3	T8	NoRel	true	strejke	strejkeskruen
+Relation	T3	T9	NoRel	true	strejke	sikrede
+Relation	T4	T11	NoRel	true	organisering	SKRUEBRÆKKER
+Relation	T4	T13	NoRel	true	organisering	arbejder
+Relation	T4	T18	NoRel	true	organisering	tømte
+Relation	T5	T14	NoRel	true	foregik	betød
+Relation	T5	T9	NoRel	true	foregik	sikrede
+Relation	T6	T3	NoRel	true	strejke	strejke
+Relation	T6	T5	NoRel	true	strejke	foregik
+Relation	T6	T7	NoRel	true	strejke	strejkede
+Relation	T7	T13	NoRel	true	strejkede	arbejder
+Relation	T7	T3	NoRel	true	strejkede	strejke
+Relation	T7	T5	NoRel	true	strejkede	foregik
+Relation	T9	T14	NoRel	true	sikrede	betød

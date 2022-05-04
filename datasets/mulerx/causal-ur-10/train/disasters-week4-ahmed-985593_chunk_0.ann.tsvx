@@ -1,0 +1,33 @@
+Text	جولائی 2021ء میں بھارتی ریاست مہاراشٹر میں سیلاب آیا ۔	28 جولائی 2021ء تک ، سیلاب اور زمین کھسکنے کی وجہ سے تقریبا 251 افراد ہلاک اور 100 سے زائد لاپتہ ہیں ۔	اس سیلاب کی وجہ سے مغربی مہاراشٹر میں تیرہ اضلاع متاثر ہوئے ہیں ۔	مہاراشٹر میں بارش 22 جولائی 2021ء کو شروع ہوئی اور اس کے کئی مغربی اضلاع میں شدید بارش ہوئی ۔	23 جولائی 2021ء کو نیوز رپورٹ کے مطابق مہاراشٹر میں 40 سالوں میں پہلی جولائی کے مہینے میں سب سے زیادہ بارش ہوئی ۔
+Event	T0	آیا	EVENT	49
+Event	T1	سیلاب	EVENT	76
+Event	T2	کھسکنے	EVENT	91
+Event	T3	ہلاک	EVENT	125
+Event	T4	لاپتہ	EVENT	146
+Event	T5	سیلاب	EVENT	161
+Event	T6	ہوئے	EVENT	213
+Event	T7	بارش	EVENT	237
+Event	T8	ہوئی	EVENT	266
+Event	T9	ہوئی	EVENT	311
+Event	T10	رپورٹ	EVENT	342
+Event	T11	ہوئی	EVENT	425
+Relation	T1	T3	CauseEffect	true	سیلاب	ہلاک
+Relation	T3	T1	EffectCause	true	ہلاک	سیلاب
+Relation	T1	T4	CauseEffect	true	سیلاب	لاپتہ
+Relation	T4	T1	EffectCause	true	لاپتہ	سیلاب
+Relation	T0	T11	NoRel	true	آیا	ہوئی
+Relation	T0	T9	NoRel	true	آیا	ہوئی
+Relation	T1	T6	NoRel	true	سیلاب	ہوئے
+Relation	T1	T7	NoRel	true	سیلاب	بارش
+Relation	T11	T2	NoRel	true	ہوئی	کھسکنے
+Relation	T11	T6	NoRel	true	ہوئی	ہوئے
+Relation	T2	T7	NoRel	true	کھسکنے	بارش
+Relation	T4	T5	NoRel	true	لاپتہ	سیلاب
+Relation	T4	T9	NoRel	true	لاپتہ	ہوئی
+Relation	T5	T10	NoRel	true	سیلاب	رپورٹ
+Relation	T6	T2	NoRel	true	ہوئے	کھسکنے
+Relation	T6	T3	NoRel	true	ہوئے	ہلاک
+Relation	T6	T4	NoRel	true	ہوئے	لاپتہ
+Relation	T7	T0	NoRel	true	بارش	آیا
+Relation	T7	T1	NoRel	true	بارش	سیلاب
+Relation	T9	T4	NoRel	true	ہوئی	لاپتہ

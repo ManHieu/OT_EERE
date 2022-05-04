@@ -1,0 +1,23 @@
+Text	Toplumdaki yoksul ve orta sınıfın ihtiyaçları devlet tarafından karşılanır ; örneğin Almanya'da çıkan toprak yasasıyla köylülerin topraklarının ipotek yoluyla ellerinden alınmasının önüne geçilmiş ve fırsatçı sermayenin köylüyü sömürmesi engellenmiştir .	Faşizmin amacı bir toplumu birlik - beraberlik , ulusal değerler , tarih bilinci , vatan - bayrak - devlet üçlemesi , halkçılık ve devletçilik gibi anlayışların altında bütünleştirmektir .	Saldırgan milliyetçi olmakla birlikte - özellikle de nasyonal sosyalizmde - ırkçı boyutlara varabilmektedir .	Milliyetçi veya ırkçı fikirlerin benimsenmesi ülkelere göre değişmektedir ; örneğin İtalyan faşizminde " İtalyan vatandaşlığı " kavramı ön plandayken , Alman nasyonal sosyalizminde ise " Alman kanı taşıma " düşüncesi ön plandadır .	Mussolini'nin doktrininde vatandaşlık kavramı vurgulanırken , Hitler'in doktrininde ise kan bağı vurgulanmaktadır .
+Event	T0	engellenmiştir	EVENT	238
+Event	T2	benimsenmesi	EVENT	587
+Event	T3	karşılanır	EVENT	64
+Event	T4	yasasıyla	EVENT	109
+Event	T5	geçilmiş	EVENT	188
+Event	T6	bütünleştirmektir	EVENT	424
+Event	T1	vurgulanırken	EVENT	832
+Event	T7	vurgulanmaktadır	EVENT	883
+Event	T8	değişmektedir	EVENT	614
+Relation	T3	T4	CauseEffect	true	karşılanır	yasasıyla
+Relation	T4	T3	EffectCause	true	yasasıyla	karşılanır
+Relation	T4	T5	CauseEffect	true	yasasıyla	geçilmiş
+Relation	T5	T4	EffectCause	true	geçilmiş	yasasıyla
+Relation	T5	T0	CauseEffect	true	geçilmiş	engellenmiştir
+Relation	T0	T5	EffectCause	true	engellenmiştir	geçilmiş
+Relation	T1	T4	NoRel	true	vurgulanırken	yasasıyla
+Relation	T2	T3	NoRel	true	benimsenmesi	karşılanır
+Relation	T2	T6	NoRel	true	benimsenmesi	bütünleştirmektir
+Relation	T2	T8	NoRel	true	benimsenmesi	değişmektedir
+Relation	T5	T1	NoRel	true	geçilmiş	vurgulanırken
+Relation	T5	T8	NoRel	true	geçilmiş	değişmektedir
+Relation	T7	T5	NoRel	true	vurgulanmaktadır	geçilmiş

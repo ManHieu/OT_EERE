@@ -1,0 +1,37 @@
+Text	Mukashev ayrıca şunları söyledi : " Kazadan sonra uçağın tek bir kısmı bile sağlam kalmadı .	"	2 Mart 2015'te Devletler Arası Havacılık Komitesi , hava koşullarının minimumun gereksinimlerin altında olması nedeniyle başlatılan kaçırılan yaklaşım prosedürü sırasında , irtifâ dümeninin sapmasının kaydedildiğini ve bunun da dik bir dalışa ve uçağın düşmesiyle sonuçlandığını belirten nihai kaza raporunu yayınladı .	Soruşturmada herhangi bir sistem arızası veya dış faktör olduğuna dair bir kanıt bulamadı ve irtifâ dümeninin sapmasının nedenini belirleyemedi .	Kazakistan Cumhurbaşkanı Nursultan Nazarbayev , kazada ölenlerin ailelerine ve arkadaşlarına başsağlığı dileklerini ifade ederek , mağdurların ailelerine gerekli yardımın verileceğini söyledi .
+Event	T0	prosedürü	EVENT	246
+Event	T1	kaydedildiğini	EVENT	296
+Event	T2	dalışa	EVENT	331
+Event	T3	yayınladı	EVENT	403
+Event	T4	sapmasının	EVENT	525
+Event	T5	belirleyemedi	EVENT	545
+Event	T6	söyledi	EVENT	745
+Event	T7	Kazadan	EVENT	36
+Event	T8	düşmesiyle	EVENT	348
+Event	T9	sapmasının	EVENT	285
+Event	T10	Soruşturmada	EVENT	415
+Event	T11	kazada	EVENT	609
+Event	T12	ölenlerin	EVENT	616
+Relation	T9	T2	CauseEffect	true	sapmasının	dalışa
+Relation	T2	T9	EffectCause	true	dalışa	sapmasının
+Relation	T2	T8	CauseEffect	true	dalışa	düşmesiyle
+Relation	T8	T2	EffectCause	true	düşmesiyle	dalışa
+Relation	T4	T7	CauseEffect	true	sapmasının	Kazadan
+Relation	T7	T4	EffectCause	true	Kazadan	sapmasının
+Relation	T9	T7	CauseEffect	true	sapmasının	Kazadan
+Relation	T7	T9	EffectCause	true	Kazadan	sapmasının
+Relation	T12	T6	CauseEffect	true	ölenlerin	söyledi
+Relation	T6	T12	EffectCause	true	söyledi	ölenlerin
+Relation	T0	T10	NoRel	true	prosedürü	Soruşturmada
+Relation	T0	T2	NoRel	true	prosedürü	dalışa
+Relation	T1	T6	NoRel	true	kaydedildiğini	söyledi
+Relation	T11	T4	NoRel	true	kazada	sapmasının
+Relation	T11	T5	NoRel	true	kazada	belirleyemedi
+Relation	T11	T8	NoRel	true	kazada	düşmesiyle
+Relation	T2	T10	NoRel	true	dalışa	Soruşturmada
+Relation	T3	T8	NoRel	true	yayınladı	düşmesiyle
+Relation	T4	T5	NoRel	true	sapmasının	belirleyemedi
+Relation	T6	T5	NoRel	true	söyledi	belirleyemedi
+Relation	T7	T8	NoRel	true	Kazadan	düşmesiyle
+Relation	T8	T7	NoRel	true	düşmesiyle	Kazadan
+Relation	T9	T6	NoRel	true	sapmasının	söyledi

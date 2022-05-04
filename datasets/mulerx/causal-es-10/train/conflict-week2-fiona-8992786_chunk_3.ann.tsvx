@@ -1,0 +1,30 @@
+Text	Se estableció una moratoria de tres meses para la independencia de Croacia por lo que la declaración tuvo efecto el 8 de octubre de 1991 .	La Guardia Nacional Croata ( - ZNG ) se formó en mayo de 1991 debido a que el Ejército Popular Yugoslavo ( _ Jugoslavenska Narodna Armija _ - _ JNA _ ) apoyó cada vez más a la SAO Krajina y la Policía Croata no pudo hacer frente a la situación .	En noviembre del mismo año , el ZNG pasó a denominarse Ejército Croata ( , HV ) .	El establecimiento de la Fuerza Militar de Croacia se vio obstaculizada por un embargo de armas de las Naciones Unidas que se estableció en septiembre de 1991 .	Los últimos meses de 1991 vieron la lucha más feroz de la guerra , que culminó en la Batalla de los Cuarteles , el Asedio de Dubrovnik y la Batalla de Vukovar .
+Event	T0	estableció	EVENT	3
+Event	T1	moratoria	EVENT	18
+Event	T10	lucha	EVENT	664
+Event	T11	guerra	EVENT	686
+Event	T12	culminó	EVENT	699
+Event	T3	formó	EVENT	179
+Event	T4	apoyó	EVENT	291
+Event	T5	establecimiento	EVENT	470
+Event	T6	obstaculizada	EVENT	525
+Event	T7	embargo	EVENT	546
+Event	T8	estableció	EVENT	593
+Relation	T7	T6	CauseEffect	true	embargo	obstaculizada
+Relation	T6	T7	EffectCause	true	obstaculizada	embargo
+Relation	T5	T6	CauseEffect	true	establecimiento	obstaculizada
+Relation	T6	T5	EffectCause	true	obstaculizada	establecimiento
+Relation	T4	T3	CauseEffect	true	apoyó	formó
+Relation	T3	T4	EffectCause	true	formó	apoyó
+Relation	T0	T12	NoRel	true	estableció	culminó
+Relation	T1	T0	NoRel	true	moratoria	estableció
+Relation	T1	T8	NoRel	true	moratoria	estableció
+Relation	T10	T4	NoRel	true	lucha	apoyó
+Relation	T10	T7	NoRel	true	lucha	embargo
+Relation	T11	T0	NoRel	true	guerra	estableció
+Relation	T3	T0	NoRel	true	formó	estableció
+Relation	T6	T11	NoRel	true	obstaculizada	guerra
+Relation	T7	T4	NoRel	true	embargo	apoyó
+Relation	T7	T5	NoRel	true	embargo	establecimiento
+Relation	T7	T8	NoRel	true	embargo	estableció
+Relation	T8	T7	NoRel	true	estableció	embargo

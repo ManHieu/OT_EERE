@@ -1,0 +1,42 @@
+Text	2 تا 3 مئی 2018ء ، تیز رفتار طوفان گرد و باد نے شمالی بھارتی ریاستوں اتر پردیش اور راجستھان میں شدید نقصان پہنچایا ، کم از کم 125 سے زیادہ افراد ہلاک اور 200 سے زیادہ زخمی ہوئے ۔	ریاست راجستھان میں ، کم سے کم 35 افراد ہلاک ہو گئے اور تیز ہواؤں کی وجہ سے 8000 بجلی کے کھمبے اور سیکنڑوں درختوں کے گرنے سے 200 افراد زخمی ہوئے ۔	ہمسایہ ریاست اترپردیش میں ، مرنے والوں کی تعداد 73 سے زیادہ ہے ، مرنے والوں کی سب سے بڑی تعداد آگرہ میں تھی جہاں 43 افراد ہلاک ہوئے ۔	گرد کا طوفان بھارت کا موسمی طوفان ہے ۔	طوفان عام طور پر موسم گرما کے مہینوں میں آتے ہیں ، جب موسم خشک ہوتا ہے تو قدرتی طور پر گزرتی ہوئی ہوائیں گرد کو اوپر کی طرف اٹھاتی ہیں ۔
+Event	T0	پہنچایا	EVENT	107
+Event	T1	ہلاک	EVENT	145
+Event	T2	ہوئے	EVENT	172
+Event	T3	ہلاک	EVENT	218
+Event	T4	گئے	EVENT	226
+Event	T5	گرنے	EVENT	295
+Event	T6	ہوئے	EVENT	318
+Event	T7	مرنے	EVENT	353
+Event	T8	مرنے	EVENT	390
+Event	T9	ہوئے	EVENT	452
+Event	T10	طوفان	EVENT	466
+Event	T11	طوفان	EVENT	487
+Event	T12	طوفان	EVENT	498
+Event	T13	گزرتی	EVENT	585
+Event	T14	اٹھاتی	EVENT	622
+Event	T15	طوفان	EVENT	29
+Relation	T15	T1	CauseEffect	true	طوفان	ہلاک
+Relation	T1	T15	EffectCause	true	ہلاک	طوفان
+Relation	T15	T2	CauseEffect	true	طوفان	ہوئے
+Relation	T2	T15	EffectCause	true	ہوئے	طوفان
+Relation	T0	T4	NoRel	true	پہنچایا	گئے
+Relation	T10	T0	NoRel	true	طوفان	پہنچایا
+Relation	T10	T4	NoRel	true	طوفان	گئے
+Relation	T10	T5	NoRel	true	طوفان	گرنے
+Relation	T12	T0	NoRel	true	طوفان	پہنچایا
+Relation	T13	T1	NoRel	true	گزرتی	ہلاک
+Relation	T13	T2	NoRel	true	گزرتی	ہوئے
+Relation	T13	T3	NoRel	true	گزرتی	ہلاک
+Relation	T15	T10	NoRel	true	طوفان	طوفان
+Relation	T4	T8	NoRel	true	گئے	مرنے
+Relation	T4	T9	NoRel	true	گئے	ہوئے
+Relation	T5	T15	NoRel	true	گرنے	طوفان
+Relation	T5	T6	NoRel	true	گرنے	ہوئے
+Relation	T6	T11	NoRel	true	ہوئے	طوفان
+Relation	T6	T4	NoRel	true	ہوئے	گئے
+Relation	T7	T9	NoRel	true	مرنے	ہوئے
+Relation	T8	T4	NoRel	true	مرنے	گئے
+Relation	T8	T6	NoRel	true	مرنے	ہوئے
+Relation	T8	T7	NoRel	true	مرنے	مرنے
+Relation	T9	T12	NoRel	true	ہوئے	طوفان
+Relation	T9	T2	NoRel	true	ہوئے	ہوئے

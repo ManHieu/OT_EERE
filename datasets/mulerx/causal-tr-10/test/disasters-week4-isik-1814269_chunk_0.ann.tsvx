@@ -1,0 +1,11 @@
+Text	1957 ABANT DEPREMI , Kuzey Anadolu Fay Hattı üzerinde , Mudurnu vadisinde meydana elen deprem .	Deprem şiddeti IX , magnitüdü 7.1 olarak tespit edilmiştir .	Depremde 52 kişi ölmüş , 101 kişi yaralanmış , 5000'den fazla ev hasar görmüştür .		
+Event	T0	DEPREMI	EVENT	11
+Event	T1	deprem	EVENT	87
+Event	T2	edilmiştir	EVENT	144
+Event	T3	Depremde	EVENT	157
+Event	T4	ölmüş	EVENT	174
+Event	T5	yaralanmış	EVENT	191
+Event	T6	görmüştür	EVENT	228
+Relation	T1	T6	NoRel	true	deprem	görmüştür
+Relation	T2	T3	NoRel	true	edilmiştir	Depremde
+Relation	T5	T1	NoRel	true	yaralanmış	deprem

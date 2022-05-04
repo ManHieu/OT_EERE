@@ -1,0 +1,22 @@
+Text	Grevdeki işçilerle polis arasında çatışmalar yaşanıyordu .	1918'in ilk yarısında , hem Rusya'da hem de Almanya'da birçok insan , Alman topraklarında bir komünist devrim olmasını bekliyordu .	Vladimir Lenin'in de Dünya devriminin gerçekleştirilmesi umudu artmıştı .	Büyük Berlin İşçi Konseyi gücünü arttırabilmek için SPD’ye katılım çağrısında bulundu .	SPD işçi sınıfının kendiliğinden gelişen mücadelesini , devrimci ilerlemesini engellemek ve hareketi kendi kontrolü altına alabilmek için bu çağrıya olumlu cevap verdi .
+Event	T0	yaşanıyordu	EVENT	45
+Event	T1	devrim	EVENT	162
+Event	T3	artmıştı	EVENT	254
+Event	T4	bulundu	EVENT	343
+Event	T5	mücadelesini	EVENT	394
+Event	T6	ilerlemesini	EVENT	418
+Event	T7	verdi	EVENT	515
+Event	T8	Grevdeki	EVENT	0
+Event	T2	devriminin	EVENT	218
+Relation	T8	T0	CauseEffect	true	Grevdeki	yaşanıyordu
+Relation	T0	T8	EffectCause	true	yaşanıyordu	Grevdeki
+Relation	T6	T7	CauseEffect	true	ilerlemesini	verdi
+Relation	T7	T6	EffectCause	true	verdi	ilerlemesini
+Relation	T0	T3	NoRel	true	yaşanıyordu	artmıştı
+Relation	T1	T4	NoRel	true	devrim	bulundu
+Relation	T2	T8	NoRel	true	devriminin	Grevdeki
+Relation	T3	T4	NoRel	true	artmıştı	bulundu
+Relation	T6	T2	NoRel	true	ilerlemesini	devriminin
+Relation	T7	T1	NoRel	true	verdi	devrim
+Relation	T7	T2	NoRel	true	verdi	devriminin
+Relation	T8	T5	NoRel	true	Grevdeki	mücadelesini

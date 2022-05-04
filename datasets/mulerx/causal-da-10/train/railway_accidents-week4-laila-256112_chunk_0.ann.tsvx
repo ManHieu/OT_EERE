@@ -1,0 +1,114 @@
+Text	Den 1. juni 2004 kl. ca. 7:19 kolliderede et indkørende regionaltog fra Herning med et udkørende regionaltog i sydenden af Holstebro station .	Kollisionen mellem de tog regionaltog skete ved forholdsvis lav hastighed og 26 personer blev kvæstet , heraf 2 alvorligt ; alle var passagerer i det indkørende tog ( RV 3705 ) .	Undersøgelserne påviste , at tog_RV 3718 var afgået fra Holstebro spor 1 uden at der var signalgivning til udkørsel , idet PU-signalet , der skulle iagttages , ikke eller kun vanskeligt kunne ses fra togets normale standsningsted i spor 1 og lokomotivføreren havde formentlig benyttet signalgivningen i uordenssignalet for overkørsel 360 som indikation af at der var signal til udkørsel .	Det kritiske PU-signal blev siden flyttet så der kunne opnås den krævede synlighed og desuden er strækningen siden blev udrustet med ATC i forenklet udgave ( ATC-t ) .	
+Event	T0	kolliderede	EVENT	30
+Event	T1	Kollisionen	EVENT	143
+Event	T2	skete	EVENT	181
+Event	T3	kvæstet	EVENT	237
+Event	T4	påviste	EVENT	338
+Event	T5	afgået	EVENT	367
+Event	T6	signalgivning	EVENT	411
+Event	T7	iagttages	EVENT	470
+Event	T8	ses	EVENT	514
+Event	T9	indikation	EVENT	664
+Event	T10	flyttet	EVENT	745
+Event	T11	udrustet	EVENT	831
+Event	T12	indkørende	EVENT	293
+Event	T13	udkørsel	EVENT	429
+Event	T14	signal	EVENT	689
+Event	T15	udkørsel	EVENT	700
+Event	T16	PU-signal	EVENT	724
+Event	T17	krævede	EVENT	776
+Event	T18	indkørende	EVENT	45
+Event	T19	udkørende	EVENT	87
+Event	T20	benyttet	EVENT	598
+Event	T21	opnås	EVENT	766
+Event	T22	Undersøgelserne	EVENT	322
+Event	T23	PU-signalet	EVENT	445
+Event	T24	vanskeligt	EVENT	497
+Event	T25	signalgivningen	EVENT	607
+Event	T26	uordenssignalet	EVENT	625
+Relation	T0	T3	CauseEffect	true	kolliderede	kvæstet
+Relation	T3	T0	EffectCause	true	kvæstet	kolliderede
+Relation	T1	T3	CauseEffect	true	Kollisionen	kvæstet
+Relation	T3	T1	EffectCause	true	kvæstet	Kollisionen
+Relation	T6	T3	CauseEffect	true	signalgivning	kvæstet
+Relation	T3	T6	EffectCause	true	kvæstet	signalgivning
+Relation	T24	T5	CauseEffect	true	vanskeligt	afgået
+Relation	T5	T24	EffectCause	true	afgået	vanskeligt
+Relation	T20	T5	CauseEffect	true	benyttet	afgået
+Relation	T5	T20	EffectCause	true	afgået	benyttet
+Relation	T1	T10	CauseEffect	true	Kollisionen	flyttet
+Relation	T10	T1	EffectCause	true	flyttet	Kollisionen
+Relation	T1	T11	CauseEffect	true	Kollisionen	udrustet
+Relation	T11	T1	EffectCause	true	udrustet	Kollisionen
+Relation	T0	T20	NoRel	true	kolliderede	benyttet
+Relation	T0	T6	NoRel	true	kolliderede	signalgivning
+Relation	T1	T12	NoRel	true	Kollisionen	indkørende
+Relation	T1	T23	NoRel	true	Kollisionen	PU-signalet
+Relation	T1	T5	NoRel	true	Kollisionen	afgået
+Relation	T12	T23	NoRel	true	indkørende	PU-signalet
+Relation	T12	T8	NoRel	true	indkørende	ses
+Relation	T13	T11	NoRel	true	udkørsel	udrustet
+Relation	T13	T3	NoRel	true	udkørsel	kvæstet
+Relation	T14	T11	NoRel	true	signal	udrustet
+Relation	T14	T19	NoRel	true	signal	udkørende
+Relation	T14	T4	NoRel	true	signal	påviste
+Relation	T14	T8	NoRel	true	signal	ses
+Relation	T15	T9	NoRel	true	udkørsel	indikation
+Relation	T16	T1	NoRel	true	PU-signal	Kollisionen
+Relation	T16	T12	NoRel	true	PU-signal	indkørende
+Relation	T16	T20	NoRel	true	PU-signal	benyttet
+Relation	T16	T21	NoRel	true	PU-signal	opnås
+Relation	T17	T20	NoRel	true	krævede	benyttet
+Relation	T17	T24	NoRel	true	krævede	vanskeligt
+Relation	T17	T6	NoRel	true	krævede	signalgivning
+Relation	T18	T10	NoRel	true	indkørende	flyttet
+Relation	T18	T20	NoRel	true	indkørende	benyttet
+Relation	T19	T18	NoRel	true	udkørende	indkørende
+Relation	T2	T1	NoRel	true	skete	Kollisionen
+Relation	T2	T13	NoRel	true	skete	udkørsel
+Relation	T2	T21	NoRel	true	skete	opnås
+Relation	T2	T3	NoRel	true	skete	kvæstet
+Relation	T20	T15	NoRel	true	benyttet	udkørsel
+Relation	T20	T21	NoRel	true	benyttet	opnås
+Relation	T20	T24	NoRel	true	benyttet	vanskeligt
+Relation	T20	T3	NoRel	true	benyttet	kvæstet
+Relation	T20	T8	NoRel	true	benyttet	ses
+Relation	T21	T14	NoRel	true	opnås	signal
+Relation	T21	T16	NoRel	true	opnås	PU-signal
+Relation	T21	T24	NoRel	true	opnås	vanskeligt
+Relation	T21	T6	NoRel	true	opnås	signalgivning
+Relation	T21	T9	NoRel	true	opnås	indikation
+Relation	T22	T13	NoRel	true	Undersøgelserne	udkørsel
+Relation	T22	T17	NoRel	true	Undersøgelserne	krævede
+Relation	T22	T19	NoRel	true	Undersøgelserne	udkørende
+Relation	T22	T3	NoRel	true	Undersøgelserne	kvæstet
+Relation	T23	T19	NoRel	true	PU-signalet	udkørende
+Relation	T23	T25	NoRel	true	PU-signalet	signalgivningen
+Relation	T24	T12	NoRel	true	vanskeligt	indkørende
+Relation	T24	T15	NoRel	true	vanskeligt	udkørsel
+Relation	T25	T0	NoRel	true	signalgivningen	kolliderede
+Relation	T25	T16	NoRel	true	signalgivningen	PU-signal
+Relation	T25	T18	NoRel	true	signalgivningen	indkørende
+Relation	T25	T21	NoRel	true	signalgivningen	opnås
+Relation	T25	T22	NoRel	true	signalgivningen	Undersøgelserne
+Relation	T25	T23	NoRel	true	signalgivningen	PU-signalet
+Relation	T26	T15	NoRel	true	uordenssignalet	udkørsel
+Relation	T26	T20	NoRel	true	uordenssignalet	benyttet
+Relation	T26	T24	NoRel	true	uordenssignalet	vanskeligt
+Relation	T4	T21	NoRel	true	påviste	opnås
+Relation	T4	T9	NoRel	true	påviste	indikation
+Relation	T5	T13	NoRel	true	afgået	udkørsel
+Relation	T5	T19	NoRel	true	afgået	udkørende
+Relation	T5	T8	NoRel	true	afgået	ses
+Relation	T5	T9	NoRel	true	afgået	indikation
+Relation	T6	T10	NoRel	true	signalgivning	flyttet
+Relation	T6	T13	NoRel	true	signalgivning	udkørsel
+Relation	T7	T12	NoRel	true	iagttages	indkørende
+Relation	T7	T21	NoRel	true	iagttages	opnås
+Relation	T7	T22	NoRel	true	iagttages	Undersøgelserne
+Relation	T7	T5	NoRel	true	iagttages	afgået
+Relation	T8	T17	NoRel	true	ses	krævede
+Relation	T8	T18	NoRel	true	ses	indkørende
+Relation	T8	T25	NoRel	true	ses	signalgivningen
+Relation	T8	T3	NoRel	true	ses	kvæstet
+Relation	T9	T18	NoRel	true	indikation	indkørende

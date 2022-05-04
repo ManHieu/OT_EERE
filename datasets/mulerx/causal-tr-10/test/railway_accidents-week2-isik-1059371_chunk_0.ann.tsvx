@@ -1,0 +1,20 @@
+Text	2010 BILECIK TREN ÇARPIŞMASI 3 Ocak 2010 tarihinde meydana geldi .	Kazaya iki yolcu treni karıştı .	Bir kişi öldü ve yedi kişi yaralandı .	3 Ocak 2010 günü , iki yolcu treni Türkiye , Bilecik'te çarpıştı .	Kaza diğer trenin arkasına çarpması şeklinde oldu .
+Event	T0	geldi	EVENT	59
+Event	T1	Kazaya	EVENT	67
+Event	T2	karıştı	EVENT	90
+Event	T3	öldü	EVENT	109
+Event	T4	çarpıştı	EVENT	195
+Event	T5	Kaza	EVENT	206
+Event	T6	çarpması	EVENT	233
+Event	T8	yaralandı	EVENT	127
+Relation	T6	T5	CauseEffect	true	çarpması	Kaza
+Relation	T5	T6	EffectCause	true	Kaza	çarpması
+Relation	T4	T3	CauseEffect	true	çarpıştı	öldü
+Relation	T3	T4	EffectCause	true	öldü	çarpıştı
+Relation	T4	T8	CauseEffect	true	çarpıştı	yaralandı
+Relation	T8	T4	EffectCause	true	yaralandı	çarpıştı
+Relation	T2	T3	NoRel	true	karıştı	öldü
+Relation	T3	T6	NoRel	true	öldü	çarpması
+Relation	T6	T0	NoRel	true	çarpması	geldi
+Relation	T8	T5	NoRel	true	yaralandı	Kaza
+Relation	T8	T6	NoRel	true	yaralandı	çarpması

@@ -1,0 +1,41 @@
+Text	El especialista en accidentes aéreos , Alan Covián de México , cree que se trató de una posible falla mecánica combinada con acumulación de hielo .	Dice que por el impacto es posible que el piloto haya tenido control en la aeronave los últimos segundos , y trató de subir la nariz para salvar la aeronave , pero sus esfuerzos fueron en vano .	Como consecuencia del accidente , la entrega del premio Alas de Rusia , que se celebra anualmente fue cancelada .	Este premio es entregado a la mejor línea aérea de Rusia .	- Utair - " Официальное сообщение ОАО « Авиакомпания « ЮТэйр » .
+Event	T0	accidentes	EVENT	19
+Event	T1	cree	EVENT	63
+Event	T3	acumulación	EVENT	125
+Event	T4	Dice	EVENT	148
+Event	T5	impacto	EVENT	164
+Event	T6	control	EVENT	209
+Event	T7	trató	EVENT	257
+Event	T8	subir	EVENT	266
+Event	T9	salvar	EVENT	286
+Event	T10	accidente	EVENT	365
+Event	T11	entrega	EVENT	380
+Event	T12	celebra	EVENT	422
+Event	T13	cancelada	EVENT	445
+Event	T14	entregado	EVENT	472
+Event	T2	premio Alas de Rusia	EVENT	392
+Relation	T10	T13	CauseEffect	true	accidente	cancelada
+Relation	T13	T10	EffectCause	true	cancelada	accidente
+Relation	T0	T1	NoRel	true	accidentes	cree
+Relation	T0	T5	NoRel	true	accidentes	impacto
+Relation	T0	T6	NoRel	true	accidentes	control
+Relation	T1	T10	NoRel	true	cree	accidente
+Relation	T10	T6	NoRel	true	accidente	control
+Relation	T11	T10	NoRel	true	entrega	accidente
+Relation	T14	T11	NoRel	true	entregado	entrega
+Relation	T14	T8	NoRel	true	entregado	subir
+Relation	T2	T10	NoRel	true	premio Alas de Rusia	accidente
+Relation	T3	T0	NoRel	true	acumulación	accidentes
+Relation	T3	T1	NoRel	true	acumulación	cree
+Relation	T3	T11	NoRel	true	acumulación	entrega
+Relation	T4	T11	NoRel	true	Dice	entrega
+Relation	T6	T14	NoRel	true	control	entregado
+Relation	T7	T13	NoRel	true	trató	cancelada
+Relation	T7	T4	NoRel	true	trató	Dice
+Relation	T8	T13	NoRel	true	subir	cancelada
+Relation	T8	T2	NoRel	true	subir	premio Alas de Rusia
+Relation	T8	T5	NoRel	true	subir	impacto
+Relation	T8	T6	NoRel	true	subir	control
+Relation	T8	T9	NoRel	true	subir	salvar
+Relation	T9	T5	NoRel	true	salvar	impacto
+Relation	T9	T8	NoRel	true	salvar	subir

@@ -1,0 +1,37 @@
+Text	AEROFLOT'UN 4225 SEFER SAYILI UÇUŞU , 8 Temmuz 1980'de Alma - Ata Havalimanı'ndan ( şu an Almatı ) Simferopol Havalimanı'na bir Tupolev Tu - 154B - 2 ile yapılan bir tarifeli iç hat uçuşuydu .	Uçak , tırmanış sırasında karşılaştığı sıcak hava sütunu nedeniyle hava hızı aniden düştüğünde yaklaşık 500 fit ( 152,4 m ) yükseklikteydi .	Bu , uçağın kalkış havalimanından yaklaşık 5 km mesafedeyken uçağın perdövitese girmesine , yere düşmesine ve alev almasına neden oldu ve uçaktaki 156'sı yolcu 166 kişinin ölümüne neden oldu .	Bu kaza bugüne kadar Kazakistan'da gerçekleşmiş en büyük havacılık kazasıdır .	Kaza anında Alma - Ata'da bir sıcak hava dalgası yaşanıyordu .
+Event	T0	UÇUŞU	EVENT	30
+Event	T2	uçuşuydu	EVENT	182
+Event	T3	tırmanış	EVENT	200
+Event	T4	kalkış	EVENT	346
+Event	T5	girmesine	EVENT	414
+Event	T6	düşmesine	EVENT	431
+Event	T7	oldu	EVENT	464
+Event	T8	oldu	EVENT	520
+Event	T9	kaza	EVENT	530
+Event	T10	gerçekleşmiş	EVENT	562
+Event	T11	kazasıdır	EVENT	594
+Event	T12	Kaza	EVENT	606
+Event	T13	yaşanıyordu	EVENT	655
+Event	T1	karşılaştığı	EVENT	219
+Relation	T5	T6	CauseEffect	true	girmesine	düşmesine
+Relation	T6	T5	EffectCause	true	düşmesine	girmesine
+Relation	T7	T8	CauseEffect	true	oldu	oldu
+Relation	T8	T7	EffectCause	true	oldu	oldu
+Relation	T0	T5	NoRel	true	UÇUŞU	girmesine
+Relation	T1	T13	NoRel	true	karşılaştığı	yaşanıyordu
+Relation	T1	T5	NoRel	true	karşılaştığı	girmesine
+Relation	T10	T13	NoRel	true	gerçekleşmiş	yaşanıyordu
+Relation	T11	T7	NoRel	true	kazasıdır	oldu
+Relation	T12	T1	NoRel	true	Kaza	karşılaştığı
+Relation	T12	T7	NoRel	true	Kaza	oldu
+Relation	T13	T3	NoRel	true	yaşanıyordu	tırmanış
+Relation	T13	T9	NoRel	true	yaşanıyordu	kaza
+Relation	T2	T12	NoRel	true	uçuşuydu	Kaza
+Relation	T2	T6	NoRel	true	uçuşuydu	düşmesine
+Relation	T2	T8	NoRel	true	uçuşuydu	oldu
+Relation	T3	T8	NoRel	true	tırmanış	oldu
+Relation	T5	T10	NoRel	true	girmesine	gerçekleşmiş
+Relation	T5	T12	NoRel	true	girmesine	Kaza
+Relation	T8	T2	NoRel	true	oldu	uçuşuydu
+Relation	T8	T3	NoRel	true	oldu	tırmanış
+Relation	T9	T13	NoRel	true	kaza	yaşanıyordu

@@ -1,0 +1,565 @@
+{
+  "id": "railway_accidents-week4-laila-191925_chunk_1.ann.tsvx",
+  "text": "Det fremgik af lokal instruktion , at sporisolationen ved indgangssporskiftet ikke gav garanti for sporfrihed mellem spor 1 og spor 2 , og at stationsbestyreren derfor i forbindelse med signalgivning skulle foretage direkte togvejseftersyn , hvilket \u00e5benbart ikke skete .\t\t\t\t",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "fremgik",
+      "label": "EVENT",
+      "char_index": 4,
+      "sid": 0,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "instruktion",
+      "label": "EVENT",
+      "char_index": 21,
+      "sid": 0,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "gav",
+      "label": "EVENT",
+      "char_index": 83,
+      "sid": 0,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "signalgivning",
+      "label": "EVENT",
+      "char_index": 186,
+      "sid": 0,
+      "tid": [
+        29,
+        30
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "foretage",
+      "label": "EVENT",
+      "char_index": 207,
+      "sid": 0,
+      "tid": [
+        31,
+        32
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "skete",
+      "label": "EVENT",
+      "char_index": 264,
+      "sid": 0,
+      "tid": [
+        38,
+        39
+      ]
+    }
+  },
+  "relation": {
+    "T2-T4": "CauseEffect",
+    "T4-T2": "EffectCause",
+    "T3-T0": "NoRel",
+    "T4-T0": "NoRel",
+    "T4-T1": "NoRel"
+  },
+  "sentence": [
+    [
+      "Det",
+      "fremgik",
+      "af",
+      "lokal",
+      "instruktion",
+      ",",
+      "at",
+      "sporisolationen",
+      "ved",
+      "indgangssporskiftet",
+      "ikke",
+      "gav",
+      "garanti",
+      "for",
+      "sporfrihed",
+      "mellem",
+      "spor",
+      "1",
+      "og",
+      "spor",
+      "2",
+      ",",
+      "og",
+      "at",
+      "stationsbestyreren",
+      "derfor",
+      "i",
+      "forbindelse",
+      "med",
+      "signalgivning",
+      "skulle",
+      "foretage",
+      "direkte",
+      "togvejseftersyn",
+      ",",
+      "hvilket",
+      "\u00e5benbart",
+      "ikke",
+      "skete",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        1
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        11
+      ],
+      "mark"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        11
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        7
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        0
+      ],
+      "acl:relcl"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        11
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        12
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        16
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        14
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        16
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        19
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        16
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        19
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        11
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        11
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        23
+      ],
+      [
+        0,
+        31
+      ],
+      "mark"
+    ],
+    [
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        31
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        31
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        27
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        27
+      ],
+      [
+        0,
+        31
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        29
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        29
+      ],
+      [
+        0,
+        27
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        30
+      ],
+      [
+        0,
+        31
+      ],
+      "aux"
+    ],
+    [
+      [
+        0,
+        31
+      ],
+      [
+        0,
+        11
+      ],
+      "dep"
+    ],
+    [
+      [
+        0,
+        32
+      ],
+      [
+        0,
+        33
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        33
+      ],
+      [
+        0,
+        31
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        34
+      ],
+      [
+        0,
+        31
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        35
+      ],
+      [
+        0,
+        38
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        36
+      ],
+      [
+        0,
+        38
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        37
+      ],
+      [
+        0,
+        38
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        38
+      ],
+      [
+        0,
+        31
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        39
+      ],
+      [
+        0,
+        1
+      ],
+      "punct"
+    ]
+  ]
+}

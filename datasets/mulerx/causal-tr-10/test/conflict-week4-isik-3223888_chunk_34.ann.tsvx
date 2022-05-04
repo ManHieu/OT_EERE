@@ -1,0 +1,29 @@
+Text	İşlevselciler , sağlıklı bir toplumu korumak için sosyal değişimin gerekli olduğuna inanırlar .	Yavaş , iyi planlanmış ve evrimsel yöntem türleri , sağlıklı bir toplumu sosyal olarak değiştirir .	Bu sosyal değişiklikler genellikle şiddetli bir değişim ihtiyacından kaynaklanır ve öncesinde bir sosyal şok meydana gelir .	Terörizm , toplumu , kendisini korumak için yeni yollar bulmasını sağlayan bir yön değişikliğine doğru hareket ettiren bir sosyal şok meydana getirmek olarak görülebilir , ancak bu fikir kusurludur , çünkü terörizm , gelişme veya istikrar gösteren ilerlemeci olmaktan çok korku ve gerilemeye ilham verir .	Çatışma teorisi , “ çıkar anlaşmazlığı arasındaki çatışmanın , sosyal değişimin ve genel olarak toplumun temel , canlandırıcı gücü olduğu fikridir .
+Event	T0	değiştirir	EVENT	183
+Event	T1	değişiklikler	EVENT	206
+Event	T2	getirmek	EVENT	463
+Event	T4	korku	EVENT	593
+Event	T5	verir	EVENT	619
+Event	T6	anlaşmazlığı	EVENT	653
+Event	T7	Terörizm	EVENT	321
+Event	T8	terörizm	EVENT	527
+Event	T9	çatışmanın	EVENT	677
+Event	T10	değişimin	EVENT	697
+Event	T3	gelir	EVENT	313
+Relation	T8	T4	CauseEffect	true	terörizm	korku
+Relation	T4	T8	EffectCause	true	korku	terörizm
+Relation	T8	T5	CauseEffect	true	terörizm	verir
+Relation	T5	T8	EffectCause	true	verir	terörizm
+Relation	T3	T1	CauseEffect	true	gelir	değişiklikler
+Relation	T1	T3	EffectCause	true	değişiklikler	gelir
+Relation	T0	T2	NoRel	true	değiştirir	getirmek
+Relation	T0	T7	NoRel	true	değiştirir	Terörizm
+Relation	T10	T3	NoRel	true	değişimin	gelir
+Relation	T10	T4	NoRel	true	değişimin	korku
+Relation	T2	T6	NoRel	true	getirmek	anlaşmazlığı
+Relation	T2	T8	NoRel	true	getirmek	terörizm
+Relation	T3	T8	NoRel	true	gelir	terörizm
+Relation	T4	T1	NoRel	true	korku	değişiklikler
+Relation	T5	T7	NoRel	true	verir	Terörizm
+Relation	T6	T1	NoRel	true	anlaşmazlığı	değişiklikler
+Relation	T6	T9	NoRel	true	anlaşmazlığı	çatışmanın

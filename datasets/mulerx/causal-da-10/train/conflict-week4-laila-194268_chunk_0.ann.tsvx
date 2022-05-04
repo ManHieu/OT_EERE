@@ -1,0 +1,40 @@
+Text	Den PALÆSTINENSISKE BORGERKRIG var en konflikt i 2006–07 mellem de to hovedfraktioner i Palæstina , Hamas og Fatah .	De fleste af kampene foregik på Gazastriben , som blev overtaget af Hamas i juni 2007 .	Hamas vandt det palæstinensiske valg i 2006 .	Dette resulterede i , at Israel , USA , EU , flere vestlige lande og Den arabiske verden indførte sanktioner , der suspenderede al udenlandsk hjælp , som palæstinenserne er afhængig af .	( Hjælpen blev lovet genoptaget hvis Hamas anerkender staten Israel , accepterer aftaler lavet af den slagne Fatah regime og frasiger sig vold . )
+Event	T0	konflikt	EVENT	38
+Event	T1	foregik	EVENT	138
+Event	T2	overtaget	EVENT	172
+Event	T3	vandt	EVENT	211
+Event	T4	valg	EVENT	237
+Event	T5	resulterede	EVENT	257
+Event	T6	sanktioner	EVENT	349
+Event	T7	suspenderede	EVENT	366
+Event	T8	genoptaget	EVENT	459
+Event	T9	lavet	EVENT	527
+Event	T10	vold	EVENT	576
+Event	T11	PALÆSTINENSISKE BORGERKRIG	EVENT	4
+Event	T12	kampene	EVENT	130
+Event	T13	accepterer	EVENT	508
+Relation	T12	T2	CauseEffect	true	kampene	overtaget
+Relation	T2	T12	EffectCause	true	overtaget	kampene
+Relation	T3	T6	CauseEffect	true	vandt	sanktioner
+Relation	T6	T3	EffectCause	true	sanktioner	vandt
+Relation	T3	T7	CauseEffect	true	vandt	suspenderede
+Relation	T7	T3	EffectCause	true	suspenderede	vandt
+Relation	T0	T12	NoRel	true	konflikt	kampene
+Relation	T1	T11	NoRel	true	foregik	PALÆSTINENSISKE BORGERKRIG
+Relation	T1	T13	NoRel	true	foregik	accepterer
+Relation	T1	T6	NoRel	true	foregik	sanktioner
+Relation	T10	T2	NoRel	true	vold	overtaget
+Relation	T11	T2	NoRel	true	PALÆSTINENSISKE BORGERKRIG	overtaget
+Relation	T11	T3	NoRel	true	PALÆSTINENSISKE BORGERKRIG	vandt
+Relation	T11	T6	NoRel	true	PALÆSTINENSISKE BORGERKRIG	sanktioner
+Relation	T12	T5	NoRel	true	kampene	resulterede
+Relation	T3	T13	NoRel	true	vandt	accepterer
+Relation	T4	T5	NoRel	true	valg	resulterede
+Relation	T4	T6	NoRel	true	valg	sanktioner
+Relation	T4	T8	NoRel	true	valg	genoptaget
+Relation	T6	T1	NoRel	true	sanktioner	foregik
+Relation	T7	T9	NoRel	true	suspenderede	lavet
+Relation	T8	T11	NoRel	true	genoptaget	PALÆSTINENSISKE BORGERKRIG
+Relation	T8	T12	NoRel	true	genoptaget	kampene
+Relation	T9	T10	NoRel	true	lavet	vold
+Relation	T9	T4	NoRel	true	lavet	valg

@@ -1,0 +1,54 @@
+Text	Luego lanzó un desafío al campeón Drew McIntyre por un combate por el título en SummerSlam .	Más tarde esa noche , McIntyre aceptó el desafío de Orton y luego derrotó a Dolph Ziggler en un Extreme Rules match en una revancha de The Horror Show en Extreme Rules , evitando que Ziggler ganara la oportunidad por el título .	Después del combate , Orton atacó a McIntyre con un _ RKO _ .	El episodio del 20 de julio de _ Raw _ , Andrade & Angel Garza perdieron ante los Campeones en Parejas de Raw The Street Profits ( Angelo Dawkins & Montez Ford ) .	La siguiente semana se pactó un combate entre Andrade & Garza , The Viking Raiders , y Cedric Alexander & Ricochet , donde Andrade y Garza ganaron una oportunidad titular en SummerSlam .
+Event	T1	desafío	EVENT	15
+Event	T10	oportunidad	EVENT	294
+Event	T11	título	EVENT	313
+Event	T12	combate	EVENT	334
+Event	T13	atacó	EVENT	350
+Event	T14	episodio	EVENT	387
+Event	T15	perdieron	EVENT	447
+Event	T16	pactó	EVENT	571
+Event	T17	combate	EVENT	580
+Event	T18	ganaron	EVENT	687
+Event	T4	aceptó	EVENT	124
+Event	T5	desafío	EVENT	134
+Event	T6	derrotó	EVENT	159
+Event	T7	revancha	EVENT	216
+Event	T8	evitando	EVENT	263
+Event	T9	ganara	EVENT	284
+Event	T19	SummerSlam	EVENT	80
+Relation	T1	T4	CauseEffect	true	desafío	aceptó
+Relation	T4	T1	EffectCause	true	aceptó	desafío
+Relation	T6	T8	CauseEffect	true	derrotó	evitando
+Relation	T8	T6	EffectCause	true	evitando	derrotó
+Relation	T17	T18	CauseEffect	true	combate	ganaron
+Relation	T18	T17	EffectCause	true	ganaron	combate
+Relation	T1	T16	NoRel	true	desafío	pactó
+Relation	T1	T18	NoRel	true	desafío	ganaron
+Relation	T1	T7	NoRel	true	desafío	revancha
+Relation	T10	T15	NoRel	true	oportunidad	perdieron
+Relation	T11	T10	NoRel	true	título	oportunidad
+Relation	T11	T6	NoRel	true	título	derrotó
+Relation	T11	T8	NoRel	true	título	evitando
+Relation	T12	T1	NoRel	true	combate	desafío
+Relation	T12	T11	NoRel	true	combate	título
+Relation	T12	T6	NoRel	true	combate	derrotó
+Relation	T12	T9	NoRel	true	combate	ganara
+Relation	T13	T11	NoRel	true	atacó	título
+Relation	T14	T18	NoRel	true	episodio	ganaron
+Relation	T15	T14	NoRel	true	perdieron	episodio
+Relation	T15	T16	NoRel	true	perdieron	pactó
+Relation	T15	T5	NoRel	true	perdieron	desafío
+Relation	T16	T13	NoRel	true	pactó	atacó
+Relation	T17	T11	NoRel	true	combate	título
+Relation	T19	T1	NoRel	true	SummerSlam	desafío
+Relation	T19	T18	NoRel	true	SummerSlam	ganaron
+Relation	T4	T18	NoRel	true	aceptó	ganaron
+Relation	T4	T8	NoRel	true	aceptó	evitando
+Relation	T5	T1	NoRel	true	desafío	desafío
+Relation	T5	T10	NoRel	true	desafío	oportunidad
+Relation	T5	T13	NoRel	true	desafío	atacó
+Relation	T6	T1	NoRel	true	derrotó	desafío
+Relation	T6	T18	NoRel	true	derrotó	ganaron
+Relation	T6	T5	NoRel	true	derrotó	desafío
+Relation	T6	T7	NoRel	true	derrotó	revancha
+Relation	T9	T15	NoRel	true	ganara	perdieron

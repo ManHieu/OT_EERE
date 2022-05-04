@@ -1,0 +1,61 @@
+Text	] Antes de iniciar el procedimiento de aproximación a la pista 05 derecha del Aeropuerto Internacional de la Ciudad de México , el piloto del Learjet 45 no redujo la velocidad de su aeronave a 180 nudos antes de cruzar el VOR Mateo , como se lo instruyó el controlador aéreo .	Se mantuvo arriba de los 250 nudos , muy alta para el corredor aéreo .	Pese a que el piloto confirmó la instrucción de reducir su velocidad , nunca la cumplió .	La alta velocidad que registró el Learjet , pilotado por el capitán Álvaro Sánchez Jiménez , ocasionó que se acercara peligrosamente a un avión pesado de pasajeros Boeing 767-300 de Mexicana , procedente de Buenos Aires , y que entrara en la estela de turbulencia , desestabilizando y derribando a la pequeña aeronave .	Esa misma noche , el entonces procurador de justicia del Distrito Federal , Miguel Ángel Mancera , informaba que por el momento eran trece los cadáveres que se encontraban en el Servicio Médico Forense como resultado del accidente .
+Event	T0	iniciar	EVENT	11
+Event	T1	procedimiento	EVENT	22
+Event	T2	aproximación	EVENT	39
+Event	T3	redujo	EVENT	156
+Event	T4	cruzar	EVENT	212
+Event	T5	instruyó	EVENT	245
+Event	T6	mantuvo	EVENT	280
+Event	T7	confirmó	EVENT	369
+Event	T8	instrucción	EVENT	381
+Event	T9	reducir	EVENT	396
+Event	T10	cumplió	EVENT	428
+Event	T11	registró	EVENT	460
+Event	T12	pilotado	EVENT	482
+Event	T13	ocasionó	EVENT	531
+Event	T15	turbulencia	EVENT	690
+Event	T16	desestabilizando	EVENT	704
+Event	T17	derribando	EVENT	723
+Event	T18	accidente	EVENT	979
+Event	T19	cadáveres	EVENT	901
+Event	T20	entrara	EVENT	666
+Relation	T18	T19	CauseEffect	true	accidente	cadáveres
+Relation	T19	T18	EffectCause	true	cadáveres	accidente
+Relation	T3	T20	CauseEffect	true	redujo	entrara
+Relation	T20	T3	EffectCause	true	entrara	redujo
+Relation	T20	T16	CauseEffect	true	entrara	desestabilizando
+Relation	T16	T20	EffectCause	true	desestabilizando	entrara
+Relation	T20	T17	CauseEffect	true	entrara	derribando
+Relation	T17	T20	EffectCause	true	derribando	entrara
+Relation	T0	T16	NoRel	true	iniciar	desestabilizando
+Relation	T0	T18	NoRel	true	iniciar	accidente
+Relation	T0	T5	NoRel	true	iniciar	instruyó
+Relation	T0	T7	NoRel	true	iniciar	confirmó
+Relation	T1	T3	NoRel	true	procedimiento	redujo
+Relation	T1	T9	NoRel	true	procedimiento	reducir
+Relation	T10	T11	NoRel	true	cumplió	registró
+Relation	T11	T12	NoRel	true	registró	pilotado
+Relation	T11	T17	NoRel	true	registró	derribando
+Relation	T11	T18	NoRel	true	registró	accidente
+Relation	T11	T3	NoRel	true	registró	redujo
+Relation	T13	T1	NoRel	true	ocasionó	procedimiento
+Relation	T15	T0	NoRel	true	turbulencia	iniciar
+Relation	T15	T7	NoRel	true	turbulencia	confirmó
+Relation	T15	T9	NoRel	true	turbulencia	reducir
+Relation	T17	T10	NoRel	true	derribando	cumplió
+Relation	T17	T11	NoRel	true	derribando	registró
+Relation	T2	T0	NoRel	true	aproximación	iniciar
+Relation	T2	T18	NoRel	true	aproximación	accidente
+Relation	T2	T4	NoRel	true	aproximación	cruzar
+Relation	T2	T5	NoRel	true	aproximación	instruyó
+Relation	T20	T1	NoRel	true	entrara	procedimiento
+Relation	T3	T9	NoRel	true	redujo	reducir
+Relation	T4	T12	NoRel	true	cruzar	pilotado
+Relation	T4	T8	NoRel	true	cruzar	instrucción
+Relation	T5	T15	NoRel	true	instruyó	turbulencia
+Relation	T5	T3	NoRel	true	instruyó	redujo
+Relation	T6	T11	NoRel	true	mantuvo	registró
+Relation	T6	T12	NoRel	true	mantuvo	pilotado
+Relation	T7	T4	NoRel	true	confirmó	cruzar
+Relation	T9	T12	NoRel	true	reducir	pilotado
+Relation	T9	T17	NoRel	true	reducir	derribando

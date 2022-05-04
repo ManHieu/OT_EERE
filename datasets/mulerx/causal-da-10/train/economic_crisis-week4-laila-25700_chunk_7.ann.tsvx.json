@@ -1,0 +1,960 @@
+{
+  "id": "economic_crisis-week4-laila-25700_chunk_7.ann.tsvx",
+  "text": "Elsje flygtede og sprang i Damrak , men den till\u00f8bende m\u00e6ngde fik hende op igen .\tByens magistrat d\u00f8mte hende til d\u00f8den , og hun blev henrettet ved kv\u00e6lning p\u00e5 Dam .\tHendes lig blev h\u00e6ngt op i Volewijk p\u00e5 IJs nordlige bred .\t\u00d8ksen hang ved siden af hendes hoved .\tDen 57-\u00e5rige Rembrandt lod sig ro over til Volewijk for at tegne hende .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "flygtede",
+      "label": "EVENT",
+      "char_index": 6,
+      "sid": 0,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "sprang",
+      "label": "EVENT",
+      "char_index": 18,
+      "sid": 0,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "fik",
+      "label": "EVENT",
+      "char_index": 62,
+      "sid": 0,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "d\u00f8mte",
+      "label": "EVENT",
+      "char_index": 98,
+      "sid": 1,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "d\u00f8den",
+      "label": "EVENT",
+      "char_index": 114,
+      "sid": 1,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "henrettet",
+      "label": "EVENT",
+      "char_index": 134,
+      "sid": 1,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "kv\u00e6lning",
+      "label": "EVENT",
+      "char_index": 148,
+      "sid": 1,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "hang",
+      "label": "EVENT",
+      "char_index": 231,
+      "sid": 3,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "lod",
+      "label": "EVENT",
+      "char_index": 287,
+      "sid": 4,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "tegne",
+      "label": "EVENT",
+      "char_index": 323,
+      "sid": 4,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "op",
+      "label": "EVENT",
+      "char_index": 72,
+      "sid": 0,
+      "tid": [
+        13,
+        14
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "h\u00e6ngt",
+      "label": "EVENT",
+      "char_index": 182,
+      "sid": 2,
+      "tid": [
+        3,
+        4
+      ]
+    }
+  },
+  "relation": {
+    "T9-T8": "CauseEffect",
+    "T8-T9": "EffectCause",
+    "T0-T1": "NoRel",
+    "T10-T4": "NoRel",
+    "T11-T3": "NoRel",
+    "T2-T1": "NoRel",
+    "T2-T8": "NoRel",
+    "T3-T6": "NoRel",
+    "T4-T5": "NoRel",
+    "T4-T6": "NoRel",
+    "T5-T6": "NoRel",
+    "T5-T8": "NoRel",
+    "T6-T3": "NoRel",
+    "T9-T5": "NoRel"
+  },
+  "sentence": [
+    [
+      "Elsje",
+      "flygtede",
+      "og",
+      "sprang",
+      "i",
+      "Damrak",
+      ",",
+      "men",
+      "den",
+      "till\u00f8bende",
+      "m\u00e6ngde",
+      "fik",
+      "hende",
+      "op",
+      "igen",
+      "."
+    ],
+    [
+      "Byens",
+      "magistrat",
+      "d\u00f8mte",
+      "hende",
+      "til",
+      "d\u00f8den",
+      ",",
+      "og",
+      "hun",
+      "blev",
+      "henrettet",
+      "ved",
+      "kv\u00e6lning",
+      "p\u00e5",
+      "Dam",
+      "."
+    ],
+    [
+      "Hendes",
+      "lig",
+      "blev",
+      "h\u00e6ngt",
+      "op",
+      "i",
+      "Volewijk",
+      "p\u00e5",
+      "IJs",
+      "nordlige",
+      "bred",
+      "."
+    ],
+    [
+      "\u00d8ksen",
+      "hang",
+      "ved",
+      "siden",
+      "af",
+      "hendes",
+      "hoved",
+      "."
+    ],
+    [
+      "Den",
+      "57-\u00e5rige",
+      "Rembrandt",
+      "lod",
+      "sig",
+      "ro",
+      "over",
+      "til",
+      "Volewijk",
+      "for",
+      "at",
+      "tegne",
+      "hende",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        11
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        11
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        10
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        11
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        11
+      ],
+      "obl:loc"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        11
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        10
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      "aux"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        2
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        10
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        14
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        12
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "aux"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      "obl:loc"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        4
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        10
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        10
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        3
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        3
+      ],
+      "xcomp"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      "obl:loc"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        11
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        11
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        5
+      ],
+      "advcl"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        11
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        3
+      ],
+      "punct"
+    ]
+  ]
+}

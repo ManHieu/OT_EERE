@@ -1,0 +1,83 @@
+Text	La Real Audiencia de Charcas decidió relevar del mando militar a Albornoz y reemplazarlo por Antonio de Ulloa , que además reemplazaría al gobernador por un año en sus funciones civiles .	A fines de marzo de 1633 , Ulloa hizo una entrada con 270 españoles y 500 indios yanaconas a los Valles Calchaquíes , donde logró causar algunos daños y destruir sus propias cabalgaduras , por lo que se vio obligado a regresar a Salta .	Por su parte , Cabrera atacó desde La Rioja los pueblos del oeste de la sierra de Ambato , logrando someter a Saujil , Pisapanaco , Mutquín y Colpes .	El 15 de septiembre de 1633 refundó la ciudad de Londres , en Pomán , con todas las formalidades de la ley , y donde obligó a asentarse a quienes habían huido de la ciudad anterior hacia La Rioja .	Para retomar posesión del territorio , los españoles aplicaron una política de terror , colocando en los caminos de cuerpos ahorcados y mutilados , cabezas cortadas en picas y ejecuciones públicas atroces , con descuartizamientos y exhibición de miembros mutilados .
+Event	T0	relevar	EVENT	37
+Event	T1	reemplazarlo	EVENT	76
+Event	T2	reemplazaría	EVENT	123
+Event	T3	hizo	EVENT	221
+Event	T4	entrada	EVENT	230
+Event	T5	causar	EVENT	318
+Event	T6	daños	EVENT	333
+Event	T7	destruir	EVENT	341
+Event	T8	obligado	EVENT	395
+Event	T9	regresar	EVENT	406
+Event	T10	atacó	EVENT	448
+Event	T11	someter	EVENT	525
+Event	T12	refundó	EVENT	604
+Event	T13	obligó	EVENT	693
+Event	T14	asentarse	EVENT	702
+Event	T15	huido	EVENT	729
+Event	T16	aplicaron	EVENT	827
+Event	T17	terror	EVENT	853
+Event	T18	colocando	EVENT	862
+Event	T19	mutilados	EVENT	910
+Event	T20	cortadas	EVENT	930
+Event	T21	ejecuciones	EVENT	950
+Event	T22	descuartizamientos	EVENT	985
+Event	T23	exhibición	EVENT	1006
+Event	T24	mutilados	EVENT	1029
+Relation	T4	T6	CauseEffect	true	entrada	daños
+Relation	T6	T4	EffectCause	true	daños	entrada
+Relation	T10	T11	CauseEffect	true	atacó	someter
+Relation	T11	T10	EffectCause	true	someter	atacó
+Relation	T0	T24	NoRel	true	relevar	mutilados
+Relation	T0	T5	NoRel	true	relevar	causar
+Relation	T0	T7	NoRel	true	relevar	destruir
+Relation	T1	T4	NoRel	true	reemplazarlo	entrada
+Relation	T10	T5	NoRel	true	atacó	causar
+Relation	T11	T13	NoRel	true	someter	obligó
+Relation	T11	T2	NoRel	true	someter	reemplazaría
+Relation	T11	T20	NoRel	true	someter	cortadas
+Relation	T12	T17	NoRel	true	refundó	terror
+Relation	T13	T4	NoRel	true	obligó	entrada
+Relation	T14	T13	NoRel	true	asentarse	obligó
+Relation	T14	T2	NoRel	true	asentarse	reemplazaría
+Relation	T14	T23	NoRel	true	asentarse	exhibición
+Relation	T14	T24	NoRel	true	asentarse	mutilados
+Relation	T14	T6	NoRel	true	asentarse	daños
+Relation	T15	T2	NoRel	true	huido	reemplazaría
+Relation	T15	T22	NoRel	true	huido	descuartizamientos
+Relation	T16	T8	NoRel	true	aplicaron	obligado
+Relation	T17	T23	NoRel	true	terror	exhibición
+Relation	T17	T7	NoRel	true	terror	destruir
+Relation	T18	T14	NoRel	true	colocando	asentarse
+Relation	T18	T21	NoRel	true	colocando	ejecuciones
+Relation	T18	T6	NoRel	true	colocando	daños
+Relation	T18	T9	NoRel	true	colocando	regresar
+Relation	T2	T13	NoRel	true	reemplazaría	obligó
+Relation	T2	T14	NoRel	true	reemplazaría	asentarse
+Relation	T2	T20	NoRel	true	reemplazaría	cortadas
+Relation	T20	T17	NoRel	true	cortadas	terror
+Relation	T20	T19	NoRel	true	cortadas	mutilados
+Relation	T20	T21	NoRel	true	cortadas	ejecuciones
+Relation	T21	T12	NoRel	true	ejecuciones	refundó
+Relation	T21	T22	NoRel	true	ejecuciones	descuartizamientos
+Relation	T21	T4	NoRel	true	ejecuciones	entrada
+Relation	T21	T8	NoRel	true	ejecuciones	obligado
+Relation	T22	T13	NoRel	true	descuartizamientos	obligó
+Relation	T22	T18	NoRel	true	descuartizamientos	colocando
+Relation	T23	T1	NoRel	true	exhibición	reemplazarlo
+Relation	T23	T3	NoRel	true	exhibición	hizo
+Relation	T23	T9	NoRel	true	exhibición	regresar
+Relation	T24	T12	NoRel	true	mutilados	refundó
+Relation	T24	T13	NoRel	true	mutilados	obligó
+Relation	T24	T19	NoRel	true	mutilados	mutilados
+Relation	T24	T23	NoRel	true	mutilados	exhibición
+Relation	T24	T3	NoRel	true	mutilados	hizo
+Relation	T3	T10	NoRel	true	hizo	atacó
+Relation	T4	T7	NoRel	true	entrada	destruir
+Relation	T6	T0	NoRel	true	daños	relevar
+Relation	T6	T14	NoRel	true	daños	asentarse
+Relation	T6	T20	NoRel	true	daños	cortadas
+Relation	T6	T3	NoRel	true	daños	hizo
+Relation	T7	T20	NoRel	true	destruir	cortadas
+Relation	T7	T8	NoRel	true	destruir	obligado
+Relation	T8	T5	NoRel	true	obligado	causar

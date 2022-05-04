@@ -1,0 +1,49 @@
+Text	] En total se encontraron 50 cadáveres de entre los 228 ocupantes .	Las autoridades de Brasil informaron que la búsqueda continuaría hasta el 19 de junio , con la posibilidad de extenderse , pero sería muy poco probable encontrar a todos los ocupantes del Airbus A330 .	La búsqueda continuó hasta el día 26 , finalizada ante la imposibilidad de encontrar los demás cuerpos .	Los exámenes de los primeros cuerpos rescatados indican que el Airbus A330 pudo haberse partido en el aire , ya que los cuerpos no presentan quemaduras , pero sí muestran fracturas en todo su cuerpo .	Además , los cuerpos recuperados del Atlántico en su mayoría estaban sin sus ropas ( por la acción del viento ) y no presentan signos de ahogamiento .
+Event	T0	encontraron	EVENT	14
+Event	T1	informaron	EVENT	94
+Event	T2	continuaría	EVENT	121
+Event	T3	extenderse	EVENT	178
+Event	T4	continuó	EVENT	282
+Event	T5	finalizada	EVENT	309
+Event	T6	encontrar	EVENT	345
+Event	T7	exámenes	EVENT	379
+Event	T8	indican	EVENT	423
+Event	T9	partido	EVENT	463
+Event	T10	quemaduras	EVENT	516
+Event	T11	fracturas	EVENT	546
+Event	T12	recuperados	EVENT	597
+Event	T13	acción	EVENT	668
+Event	T14	ahogamiento	EVENT	713
+Event	T15	cadáveres	EVENT	29
+Relation	T9	T15	CauseEffect	true	partido	cadáveres
+Relation	T15	T9	EffectCause	true	cadáveres	partido
+Relation	T0	T1	NoRel	true	encontraron	informaron
+Relation	T0	T12	NoRel	true	encontraron	recuperados
+Relation	T0	T5	NoRel	true	encontraron	finalizada
+Relation	T0	T6	NoRel	true	encontraron	encontrar
+Relation	T1	T14	NoRel	true	informaron	ahogamiento
+Relation	T1	T2	NoRel	true	informaron	continuaría
+Relation	T1	T4	NoRel	true	informaron	continuó
+Relation	T10	T7	NoRel	true	quemaduras	exámenes
+Relation	T11	T0	NoRel	true	fracturas	encontraron
+Relation	T11	T12	NoRel	true	fracturas	recuperados
+Relation	T12	T3	NoRel	true	recuperados	extenderse
+Relation	T13	T12	NoRel	true	acción	recuperados
+Relation	T13	T2	NoRel	true	acción	continuaría
+Relation	T14	T3	NoRel	true	ahogamiento	extenderse
+Relation	T2	T15	NoRel	true	continuaría	cadáveres
+Relation	T2	T9	NoRel	true	continuaría	partido
+Relation	T3	T12	NoRel	true	extenderse	recuperados
+Relation	T3	T2	NoRel	true	extenderse	continuaría
+Relation	T3	T6	NoRel	true	extenderse	encontrar
+Relation	T4	T13	NoRel	true	continuó	acción
+Relation	T5	T2	NoRel	true	finalizada	continuaría
+Relation	T5	T7	NoRel	true	finalizada	exámenes
+Relation	T6	T7	NoRel	true	encontrar	exámenes
+Relation	T6	T9	NoRel	true	encontrar	partido
+Relation	T7	T14	NoRel	true	exámenes	ahogamiento
+Relation	T7	T4	NoRel	true	exámenes	continuó
+Relation	T8	T3	NoRel	true	indican	extenderse
+Relation	T9	T1	NoRel	true	partido	informaron
+Relation	T9	T10	NoRel	true	partido	quemaduras
+Relation	T9	T7	NoRel	true	partido	exámenes

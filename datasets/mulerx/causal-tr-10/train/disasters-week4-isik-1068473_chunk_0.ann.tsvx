@@ -1,0 +1,17 @@
+Text	2003 BINGÖL DEPREMI , 1 Mayıs 2003 tarihinde yerel saatle 03.27'de ( 00:27 UTC ) gerçekleşen , Türkiye'nin doğusunu etkileyen , 6,4 büyüklüğündeki depremdir .	Merkezi Bingöl'ün 15 km. kuzeyindeki Bingöl bölgesidir .	Etkilenen bölgede en az 176 kişi öldü , 625 bina çöktü veya ağır hasara uğradı .		
+Event	T1	gerçekleşen	EVENT	81
+Event	T2	etkileyen	EVENT	116
+Event	T3	depremdir	EVENT	147
+Event	T4	öldü	EVENT	249
+Event	T5	çöktü	EVENT	265
+Event	T6	uğradı	EVENT	288
+Event	T7	2003 BINGÖL DEPREMI	EVENT	0
+Event	T8	Etkilenen	EVENT	216
+Relation	T7	T2	CauseEffect	true	2003 BINGÖL DEPREMI	etkileyen
+Relation	T2	T7	EffectCause	true	etkileyen	2003 BINGÖL DEPREMI
+Relation	T2	T5	NoRel	true	etkileyen	çöktü
+Relation	T3	T1	NoRel	true	depremdir	gerçekleşen
+Relation	T3	T5	NoRel	true	depremdir	çöktü
+Relation	T3	T8	NoRel	true	depremdir	Etkilenen
+Relation	T4	T7	NoRel	true	öldü	2003 BINGÖL DEPREMI
+Relation	T5	T2	NoRel	true	çöktü	etkileyen

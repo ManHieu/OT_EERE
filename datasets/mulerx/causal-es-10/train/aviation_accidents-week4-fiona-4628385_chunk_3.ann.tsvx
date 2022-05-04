@@ -1,0 +1,32 @@
+Text	Como el resto de parámetros del motor permanecían normales , tanto los tripulantes como el control de mantenimiento se mostraron nuevamente de acuerdo en que era seguro continuar volando a Hong Kong .	Tras otras dos horas el avión se encontraba en descenso a Hong Kong cuando , a las 05:19 UTC , a unas 203 kilómetros al sureste del aeropuerto Chek Lap Kok de Hong Kong , el ECAM del avión mostró los mensajes " ENG 1 CTL SYS FAULT " y " ENG 2 STALL " en un breve periodo de tiempo .	El segundo mensaje significaba que el compresor de un motor había fallado , un problema en el motor potencialmente grave .	La tripulación efectuó las acciones del ECAM necesarias moviendo la palanca de gases del motor número dos a la posición de ralentí ( o mínimo empuje ) .	La tripulación aumentó los gases en el motor número uno hasta Máximo Empuje Continuo ( MCT ) para compensar el escaso empuje del motor número dos .
+Event	T0	mostraron	EVENT	119
+Event	T1	acuerdo	EVENT	143
+Event	T2	volando	EVENT	179
+Event	T3	descenso	EVENT	248
+Event	T4	mostró	EVENT	390
+Event	T5	mensajes	EVENT	401
+Event	T6	fallado	EVENT	550
+Event	T7	efectuó	EVENT	622
+Event	T8	acciones	EVENT	634
+Event	T9	moviendo	EVENT	663
+Event	T10	empuje	EVENT	749
+Event	T11	aumentó	EVENT	775
+Event	T12	gases	EVENT	787
+Event	T13	compensar	EVENT	858
+Relation	T11	T13	CauseEffect	true	aumentó	compensar
+Relation	T13	T11	EffectCause	true	compensar	aumentó
+Relation	T11	T4	NoRel	true	aumentó	mostró
+Relation	T12	T10	NoRel	true	gases	empuje
+Relation	T12	T2	NoRel	true	gases	volando
+Relation	T2	T10	NoRel	true	volando	empuje
+Relation	T2	T4	NoRel	true	volando	mostró
+Relation	T3	T2	NoRel	true	descenso	volando
+Relation	T3	T7	NoRel	true	descenso	efectuó
+Relation	T3	T9	NoRel	true	descenso	moviendo
+Relation	T4	T6	NoRel	true	mostró	fallado
+Relation	T5	T12	NoRel	true	mensajes	gases
+Relation	T5	T2	NoRel	true	mensajes	volando
+Relation	T5	T7	NoRel	true	mensajes	efectuó
+Relation	T6	T10	NoRel	true	fallado	empuje
+Relation	T6	T13	NoRel	true	fallado	compensar
+Relation	T7	T12	NoRel	true	efectuó	gases

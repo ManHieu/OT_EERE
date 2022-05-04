@@ -1,0 +1,29 @@
+Text	El ASEDIO DE CHARLESTON fue una de las batallas más importantes en la etapa final de la Guerra de la Independencia de Estados Unidos , después de que los británicos desplezaran su foco estratégico a las colonias del sur .	Como derrota , significó la mayor derrota en número de bajas del lado revolucionario .	En cambio , el General George Washington consiguió evitar los intentos de combate fuerza a fuerza y ubicar a sus fuerzas estratégicamente para que las mejores comunicaciones de los británicos ( SLOC ) no pudieran realizar un golpe aplastante .	Al mismo tiempo , Washington , junto con su ayudante , el General La Fayette , fue consciente de los esfuerzos por ganarle a los británicos el Reino Unido de Francia .	Categoría : Estados Unidos en 1780 Charleston Categoría : Historia de Carolina del Sur Charleston Charleston
+Event	T0	ASEDIO	EVENT	3
+Event	T1	batallas	EVENT	39
+Event	T3	desplezaran	EVENT	165
+Event	T4	derrota	EVENT	227
+Event	T5	significó	EVENT	237
+Event	T6	derrota	EVENT	256
+Event	T7	bajas	EVENT	277
+Event	T8	intentos	EVENT	371
+Event	T9	combate	EVENT	383
+Event	T10	ubicar	EVENT	409
+Event	T11	realizar	EVENT	522
+Event	T2	Guerra de la Independencia de Estados Unidos	EVENT	88
+Relation	T0	T9	NoRel	true	ASEDIO	combate
+Relation	T10	T0	NoRel	true	ubicar	ASEDIO
+Relation	T10	T11	NoRel	true	ubicar	realizar
+Relation	T10	T6	NoRel	true	ubicar	derrota
+Relation	T11	T2	NoRel	true	realizar	Guerra de la Independencia de Estados Unidos
+Relation	T11	T3	NoRel	true	realizar	desplezaran
+Relation	T2	T4	NoRel	true	Guerra de la Independencia de Estados Unidos	derrota
+Relation	T3	T2	NoRel	true	desplezaran	Guerra de la Independencia de Estados Unidos
+Relation	T3	T6	NoRel	true	desplezaran	derrota
+Relation	T4	T7	NoRel	true	derrota	bajas
+Relation	T4	T9	NoRel	true	derrota	combate
+Relation	T5	T4	NoRel	true	significó	derrota
+Relation	T7	T1	NoRel	true	bajas	batallas
+Relation	T7	T10	NoRel	true	bajas	ubicar
+Relation	T8	T1	NoRel	true	intentos	batallas
+Relation	T8	T9	NoRel	true	intentos	combate

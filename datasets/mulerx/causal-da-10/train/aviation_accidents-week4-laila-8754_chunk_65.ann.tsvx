@@ -1,0 +1,38 @@
+Text	Skaderne på Pentagon blev repareret inden for et år .	En midlertidig World_Trade_Center PATH station åbnede i slutningen af 2003 og den endelig station åbnede i 2016 .	Opførelsen af det nye World Trade Center nr. 7 blev afsluttet i 2006 .	Arbejdet med at genopbygge selve World Trade_Center komplekset kom først i gang i slutningen af 2006 pga. en strid om finansieringen .	Opførelsen af One World Trade Center begyndte den 27. april 2006 og bygningen nåede sin endelige højde på 541 meter ( 1776 fod ) den 20. maj 2013 og blev derved den højeste bygning i Nordamerika .
+Event	T0	Skaderne	EVENT	0
+Event	T1	repareret	EVENT	26
+Event	T2	åbnede	EVENT	101
+Event	T3	åbnede	EVENT	152
+Event	T4	Opførelsen	EVENT	168
+Event	T5	afsluttet	EVENT	220
+Event	T6	Arbejdet	EVENT	239
+Event	T7	genopbygge	EVENT	255
+Event	T8	kom	EVENT	302
+Event	T9	Opførelsen	EVENT	374
+Event	T10	begyndte	EVENT	411
+Event	T11	nåede	EVENT	452
+Event	T12	strid	EVENT	348
+Event	T13	blev	EVENT	523
+Relation	T11	T13	CauseEffect	true	nåede	blev
+Relation	T13	T11	EffectCause	true	blev	nåede
+Relation	T12	T8	CauseEffect	true	strid	kom
+Relation	T8	T12	EffectCause	true	kom	strid
+Relation	T0	T1	NoRel	true	Skaderne	repareret
+Relation	T10	T8	NoRel	true	begyndte	kom
+Relation	T10	T9	NoRel	true	begyndte	Opførelsen
+Relation	T11	T6	NoRel	true	nåede	Arbejdet
+Relation	T11	T8	NoRel	true	nåede	kom
+Relation	T12	T0	NoRel	true	strid	Skaderne
+Relation	T12	T3	NoRel	true	strid	åbnede
+Relation	T12	T9	NoRel	true	strid	Opførelsen
+Relation	T2	T3	NoRel	true	åbnede	åbnede
+Relation	T3	T2	NoRel	true	åbnede	åbnede
+Relation	T5	T2	NoRel	true	afsluttet	åbnede
+Relation	T5	T4	NoRel	true	afsluttet	Opførelsen
+Relation	T6	T1	NoRel	true	Arbejdet	repareret
+Relation	T6	T11	NoRel	true	Arbejdet	nåede
+Relation	T7	T11	NoRel	true	genopbygge	nåede
+Relation	T8	T0	NoRel	true	kom	Skaderne
+Relation	T8	T13	NoRel	true	kom	blev
+Relation	T9	T0	NoRel	true	Opførelsen	Skaderne
+Relation	T9	T13	NoRel	true	Opførelsen	blev

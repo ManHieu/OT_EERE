@@ -1,0 +1,72 @@
+Text	Las hembras de elefante asiático fueron utilizadas , a veces en pequeños grupos , a veces en vastos regimientos de miles de animales en el siglo XIII , principalmente para producir un efecto táctico de " choque y asombro " en el campo .	Además , los animales grandes proporcionaban plataformas elevadas desde las que los arqueros podían lanzar flechas al enemigo y desde las que los generales podían observar la batalla .	El efecto psicológico de los elefantes de guerra era a menudo su principal uso táctico .	Después de encontrarse con la caballería de los elefantes en la Batalla del Hidaspes , las tropas de Alejandro Magno se amotinaron y se negaron a seguir avanzando hacia la India .	Sin embargo , los animales a menudo no se podían rastrear en la batalla , y cuando se enfrentaban a oponentes decididos , a menudo huían y pisoteaban a su propia infantería en su huida .
+Event	T0	utilizadas	EVENT	40
+Event	T1	regimientos	EVENT	100
+Event	T2	efecto	EVENT	184
+Event	T3	choque	EVENT	204
+Event	T4	lanzar	EVENT	337
+Event	T5	observar	EVENT	400
+Event	T6	batalla	EVENT	412
+Event	T7	efecto	EVENT	425
+Event	T8	guerra	EVENT	464
+Event	T9	uso	EVENT	497
+Event	T10	encontrarse	EVENT	522
+Event	T11	Batalla	EVENT	575
+Event	T12	amotinaron	EVENT	631
+Event	T13	negaron	EVENT	647
+Event	T14	avanzando	EVENT	664
+Event	T15	rastrear	EVENT	740
+Event	T16	batalla	EVENT	755
+Event	T17	enfrentaban	EVENT	777
+Event	T18	decididos	EVENT	801
+Event	T19	huían	EVENT	822
+Event	T20	pisoteaban	EVENT	830
+Event	T21	huida	EVENT	870
+Relation	T0	T1	NoRel	true	utilizadas	regimientos
+Relation	T0	T21	NoRel	true	utilizadas	huida
+Relation	T1	T8	NoRel	true	regimientos	guerra
+Relation	T10	T12	NoRel	true	encontrarse	amotinaron
+Relation	T10	T2	NoRel	true	encontrarse	efecto
+Relation	T10	T3	NoRel	true	encontrarse	choque
+Relation	T10	T4	NoRel	true	encontrarse	lanzar
+Relation	T11	T10	NoRel	true	Batalla	encontrarse
+Relation	T11	T17	NoRel	true	Batalla	enfrentaban
+Relation	T12	T6	NoRel	true	amotinaron	batalla
+Relation	T13	T6	NoRel	true	negaron	batalla
+Relation	T13	T7	NoRel	true	negaron	efecto
+Relation	T14	T10	NoRel	true	avanzando	encontrarse
+Relation	T14	T11	NoRel	true	avanzando	Batalla
+Relation	T14	T18	NoRel	true	avanzando	decididos
+Relation	T14	T3	NoRel	true	avanzando	choque
+Relation	T15	T16	NoRel	true	rastrear	batalla
+Relation	T15	T3	NoRel	true	rastrear	choque
+Relation	T16	T4	NoRel	true	batalla	lanzar
+Relation	T17	T1	NoRel	true	enfrentaban	regimientos
+Relation	T18	T0	NoRel	true	decididos	utilizadas
+Relation	T18	T5	NoRel	true	decididos	observar
+Relation	T19	T10	NoRel	true	huían	encontrarse
+Relation	T2	T1	NoRel	true	efecto	regimientos
+Relation	T2	T13	NoRel	true	efecto	negaron
+Relation	T2	T3	NoRel	true	efecto	choque
+Relation	T20	T17	NoRel	true	pisoteaban	enfrentaban
+Relation	T21	T14	NoRel	true	huida	avanzando
+Relation	T21	T17	NoRel	true	huida	enfrentaban
+Relation	T21	T3	NoRel	true	huida	choque
+Relation	T21	T5	NoRel	true	huida	observar
+Relation	T3	T12	NoRel	true	choque	amotinaron
+Relation	T3	T17	NoRel	true	choque	enfrentaban
+Relation	T3	T18	NoRel	true	choque	decididos
+Relation	T3	T5	NoRel	true	choque	observar
+Relation	T4	T12	NoRel	true	lanzar	amotinaron
+Relation	T6	T1	NoRel	true	batalla	regimientos
+Relation	T6	T4	NoRel	true	batalla	lanzar
+Relation	T6	T8	NoRel	true	batalla	guerra
+Relation	T7	T10	NoRel	true	efecto	encontrarse
+Relation	T7	T13	NoRel	true	efecto	negaron
+Relation	T8	T1	NoRel	true	guerra	regimientos
+Relation	T8	T12	NoRel	true	guerra	amotinaron
+Relation	T8	T14	NoRel	true	guerra	avanzando
+Relation	T8	T15	NoRel	true	guerra	rastrear
+Relation	T8	T21	NoRel	true	guerra	huida
+Relation	T8	T4	NoRel	true	guerra	lanzar
+Relation	T9	T18	NoRel	true	uso	decididos
+Relation	T9	T3	NoRel	true	uso	choque

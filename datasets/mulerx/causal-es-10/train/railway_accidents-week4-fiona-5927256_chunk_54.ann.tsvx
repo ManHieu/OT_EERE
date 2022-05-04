@@ -1,0 +1,42 @@
+Text	Los vagones se hallaban aparcados a la espera de ser descargados en una de las vías del muelle de la estación de la citada localidad , que almacenaba también una importante cantidad de material de guerra , provocando la explosión del mismo .	Murieron alrededor de un centenar de personas y otras 1500 resultaron heridas . .	- 3 de diciembre de 1940 .	En la estación de Velilla de Ebro ( Zaragoza ) chocan el expreso Madrid_-_Barcelona y su homólogo que cubría la relación contraria .	Fallecen 53 personas y 58 resultan heridas .
+Event	T0	aparcados	EVENT	24
+Event	T1	espera	EVENT	39
+Event	T2	descargados	EVENT	53
+Event	T3	almacenaba	EVENT	139
+Event	T4	guerra	EVENT	197
+Event	T5	provocando	EVENT	206
+Event	T6	explosión	EVENT	220
+Event	T7	Murieron	EVENT	242
+Event	T8	heridas	EVENT	312
+Event	T9	chocan	EVENT	398
+Event	T10	cubría	EVENT	453
+Event	T11	Fallecen	EVENT	484
+Event	T12	heridas	EVENT	519
+Relation	T6	T7	CauseEffect	true	explosión	Murieron
+Relation	T7	T6	EffectCause	true	Murieron	explosión
+Relation	T6	T8	CauseEffect	true	explosión	heridas
+Relation	T8	T6	EffectCause	true	heridas	explosión
+Relation	T9	T11	CauseEffect	true	chocan	Fallecen
+Relation	T11	T9	EffectCause	true	Fallecen	chocan
+Relation	T9	T12	CauseEffect	true	chocan	heridas
+Relation	T12	T9	EffectCause	true	heridas	chocan
+Relation	T0	T10	NoRel	true	aparcados	cubría
+Relation	T0	T12	NoRel	true	aparcados	heridas
+Relation	T10	T11	NoRel	true	cubría	Fallecen
+Relation	T10	T12	NoRel	true	cubría	heridas
+Relation	T11	T3	NoRel	true	Fallecen	almacenaba
+Relation	T11	T4	NoRel	true	Fallecen	guerra
+Relation	T2	T10	NoRel	true	descargados	cubría
+Relation	T2	T12	NoRel	true	descargados	heridas
+Relation	T3	T7	NoRel	true	almacenaba	Murieron
+Relation	T4	T11	NoRel	true	guerra	Fallecen
+Relation	T4	T3	NoRel	true	guerra	almacenaba
+Relation	T4	T7	NoRel	true	guerra	Murieron
+Relation	T5	T1	NoRel	true	provocando	espera
+Relation	T5	T6	NoRel	true	provocando	explosión
+Relation	T5	T9	NoRel	true	provocando	chocan
+Relation	T7	T1	NoRel	true	Murieron	espera
+Relation	T7	T3	NoRel	true	Murieron	almacenaba
+Relation	T8	T11	NoRel	true	heridas	Fallecen
+Relation	T9	T3	NoRel	true	chocan	almacenaba
+Relation	T9	T7	NoRel	true	chocan	Murieron

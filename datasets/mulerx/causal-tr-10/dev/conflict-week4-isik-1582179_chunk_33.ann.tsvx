@@ -1,0 +1,59 @@
+Text	Vaiz Robinson'un bu projesi ile belki de 35.000 yıldır atalarının yaşadığı topraklardan koparılan ve sağ kalabilen 300 kadar Tasmanya yerlisi gurbetçi yapılmıştır , fakat vaizin yaptığı gerçekte o sağ kalanların da toptan imhasını kolaylaştırmak olmuştur Flinders Adası " soykırımın işlendiği bir toplama kampı " olarak tanımlanmıştır .	Flinders Adasında _ Wybalenna _ ( « Black Man's House » ) ya da _ Settlement Point _ denen toplama kampında ölümlerin en sık sebepleri arasında grip gibi solunum yolu hastalıkları , verem ve zatürre görülmektedir .	1835 yılında adadaki cerrah Dr. James Allen , Robinson'a verdiği raporda Tasmanya yerlilerin soğuk iklime uygun olmayan giyeceklerle tutulmasının büyük ölümlere sebep olduğunu belirtmiştir .	Doktor Allen bu durumun düzeltilmesi için harekete geçmiş , fakat yöneticiler onun bu uyrarılarını dikkate almamıştır .	Kurumsallaştırılmış yetersiz beslenme hastalıkların yayılmasını sağlamış ve ölümler başlamıştır .
+Event	T0	projesi	EVENT	20
+Event	T1	yaptığı	EVENT	178
+Event	T2	ölümlerin	EVENT	445
+Event	T3	grip	EVENT	481
+Event	T4	görülmektedir	EVENT	536
+Event	T5	verdiği	EVENT	609
+Event	T6	tutulmasının	EVENT	685
+Event	T7	belirtmiştir	EVENT	728
+Event	T8	düzeltilmesi	EVENT	767
+Event	T9	geçmiş	EVENT	794
+Event	T10	sağlamış	EVENT	927
+Event	T11	başlamıştır	EVENT	947
+Event	T12	koparılan	EVENT	88
+Event	T13	yapılmıştır	EVENT	151
+Event	T14	kolaylaştırmak	EVENT	231
+Event	T15	verem	EVENT	519
+Event	T16	zatürre	EVENT	528
+Event	T17	hastalıkları	EVENT	504
+Event	T18	ölümlere	EVENT	704
+Relation	T12	T13	CauseEffect	true	koparılan	yapılmıştır
+Relation	T13	T12	EffectCause	true	yapılmıştır	koparılan
+Relation	T3	T2	CauseEffect	true	grip	ölümlerin
+Relation	T2	T3	EffectCause	true	ölümlerin	grip
+Relation	T17	T2	CauseEffect	true	hastalıkları	ölümlerin
+Relation	T2	T17	EffectCause	true	ölümlerin	hastalıkları
+Relation	T15	T2	CauseEffect	true	verem	ölümlerin
+Relation	T2	T15	EffectCause	true	ölümlerin	verem
+Relation	T16	T2	CauseEffect	true	zatürre	ölümlerin
+Relation	T2	T16	EffectCause	true	ölümlerin	zatürre
+Relation	T6	T18	CauseEffect	true	tutulmasının	ölümlere
+Relation	T18	T6	EffectCause	true	ölümlere	tutulmasının
+Relation	T10	T11	CauseEffect	true	sağlamış	başlamıştır
+Relation	T11	T10	EffectCause	true	başlamıştır	sağlamış
+Relation	T0	T12	NoRel	true	projesi	koparılan
+Relation	T0	T16	NoRel	true	projesi	zatürre
+Relation	T10	T16	NoRel	true	sağlamış	zatürre
+Relation	T10	T18	NoRel	true	sağlamış	ölümlere
+Relation	T10	T6	NoRel	true	sağlamış	tutulmasının
+Relation	T12	T9	NoRel	true	koparılan	geçmiş
+Relation	T13	T16	NoRel	true	yapılmıştır	zatürre
+Relation	T13	T8	NoRel	true	yapılmıştır	düzeltilmesi
+Relation	T14	T8	NoRel	true	kolaylaştırmak	düzeltilmesi
+Relation	T15	T12	NoRel	true	verem	koparılan
+Relation	T15	T17	NoRel	true	verem	hastalıkları
+Relation	T16	T1	NoRel	true	zatürre	yaptığı
+Relation	T16	T12	NoRel	true	zatürre	koparılan
+Relation	T16	T18	NoRel	true	zatürre	ölümlere
+Relation	T16	T3	NoRel	true	zatürre	grip
+Relation	T18	T4	NoRel	true	ölümlere	görülmektedir
+Relation	T3	T10	NoRel	true	grip	sağlamış
+Relation	T3	T16	NoRel	true	grip	zatürre
+Relation	T3	T6	NoRel	true	grip	tutulmasının
+Relation	T6	T10	NoRel	true	tutulmasının	sağlamış
+Relation	T6	T8	NoRel	true	tutulmasının	düzeltilmesi
+Relation	T7	T14	NoRel	true	belirtmiştir	kolaylaştırmak
+Relation	T7	T9	NoRel	true	belirtmiştir	geçmiş
+Relation	T9	T18	NoRel	true	geçmiş	ölümlere
+Relation	T9	T5	NoRel	true	geçmiş	verdiği

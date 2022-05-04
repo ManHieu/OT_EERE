@@ -1,0 +1,52 @@
+Text	Algunas de las mujeres se casaron y tuvieron hijos , mientras que otras permanecieron solteras .	Según un historiador que rastreó las vidas de casi dos docenas de ex amazonas , todas las mujeres mostraron dificultades para adaptarse a la vida como guerreras retiradas , a menudo luchando por encontrar nuevos roles en sus comunidades que les dieran un sentido de orgullo comparable al de sus vidas anteriores .	Muchas mostraban una tendencia a iniciar peleas o discusiones que asustaban a sus vecinos y familiares .	Entre 1934 y 1942 , varios viajeros británicos en Abomey registraron encuentros con ex-amazonas , ahora ancianas que hilaban algodón o se entretenían en los patios .	Se dice que un número desconocido de mujeres se entrenó con los miembros de las Amazonas de Dahomey después de que se disolvieran , continuando así la tradición .
+Event	T0	rastreó	EVENT	122
+Event	T1	dificultades	EVENT	205
+Event	T2	retiradas	EVENT	258
+Event	T3	luchando	EVENT	279
+Event	T4	encontrar	EVENT	292
+Event	T5	dieran	EVENT	342
+Event	T6	tendencia	EVENT	432
+Event	T7	peleas	EVENT	452
+Event	T8	discusiones	EVENT	461
+Event	T9	encuentros	EVENT	585
+Event	T10	entretenían	EVENT	654
+Event	T11	dice	EVENT	685
+Event	T12	entrenó	EVENT	730
+Event	T13	disolvieran	EVENT	800
+Event	T14	continuando	EVENT	814
+Event	T15	casaron	EVENT	26
+Event	T16	tuvieron	EVENT	36
+Event	T17	registraron	EVENT	573
+Relation	T0	T5	NoRel	true	rastreó	dieran
+Relation	T1	T14	NoRel	true	dificultades	continuando
+Relation	T1	T17	NoRel	true	dificultades	registraron
+Relation	T1	T9	NoRel	true	dificultades	encuentros
+Relation	T10	T11	NoRel	true	entretenían	dice
+Relation	T13	T10	NoRel	true	disolvieran	entretenían
+Relation	T13	T12	NoRel	true	disolvieran	entrenó
+Relation	T13	T4	NoRel	true	disolvieran	encontrar
+Relation	T14	T8	NoRel	true	continuando	discusiones
+Relation	T16	T17	NoRel	true	tuvieron	registraron
+Relation	T16	T7	NoRel	true	tuvieron	peleas
+Relation	T17	T10	NoRel	true	registraron	entretenían
+Relation	T17	T11	NoRel	true	registraron	dice
+Relation	T2	T11	NoRel	true	retiradas	dice
+Relation	T2	T12	NoRel	true	retiradas	entrenó
+Relation	T2	T15	NoRel	true	retiradas	casaron
+Relation	T2	T8	NoRel	true	retiradas	discusiones
+Relation	T3	T0	NoRel	true	luchando	rastreó
+Relation	T4	T16	NoRel	true	encontrar	tuvieron
+Relation	T4	T17	NoRel	true	encontrar	registraron
+Relation	T4	T3	NoRel	true	encontrar	luchando
+Relation	T4	T6	NoRel	true	encontrar	tendencia
+Relation	T4	T7	NoRel	true	encontrar	peleas
+Relation	T5	T11	NoRel	true	dieran	dice
+Relation	T5	T16	NoRel	true	dieran	tuvieron
+Relation	T5	T17	NoRel	true	dieran	registraron
+Relation	T5	T2	NoRel	true	dieran	retiradas
+Relation	T6	T3	NoRel	true	tendencia	luchando
+Relation	T6	T9	NoRel	true	tendencia	encuentros
+Relation	T7	T15	NoRel	true	peleas	casaron
+Relation	T7	T2	NoRel	true	peleas	retiradas
+Relation	T7	T9	NoRel	true	peleas	encuentros
+Relation	T8	T15	NoRel	true	discusiones	casaron

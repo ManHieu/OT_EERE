@@ -1,0 +1,37 @@
+Text	Haydar , Uzun Hasan’ın kızı Halime Begüm Âlemşah’la evlendi .	Bu evlilikten Şah İsmail dünyaya geldi .	Âkkoyunlularla akrabalık bağlarını pekiştirip gücünü arttıran Haydar , babasının öcünü almak için Şirvan hükümdarı Ferruh Yesar üzerine yürüdüyse de 1488’de yapılan savaşta öldürüldü .	Bundan bir müddet sonra hareketin başına geçen İsmail , Akkoyunlu Devleti’nin içinde bulunduğu karışıklıktan istifade ederek , çoğu Anadolu’da bulunan birçok Türkmen kabilesini etrafında topladı .	Karabağ ve Şirvan’ın bir kısmını ele geçirerek Azerbaycan üzerine yürüdü .
+Event	T0	evlendi	EVENT	52
+Event	T1	geldi	EVENT	95
+Event	T4	yürüdüyse	EVENT	239
+Event	T5	öldürüldü	EVENT	276
+Event	T7	istifade	EVENT	397
+Event	T8	topladı	EVENT	475
+Event	T9	yürüdü	EVENT	551
+Event	T2	arttıran	EVENT	156
+Event	T3	savaşta	EVENT	268
+Event	T6	geçen	EVENT	329
+Event	T10	karışıklıktan	EVENT	383
+Event	T11	geçirerek	EVENT	522
+Relation	T2	T4	CauseEffect	true	arttıran	yürüdüyse
+Relation	T4	T2	EffectCause	true	yürüdüyse	arttıran
+Relation	T4	T3	CauseEffect	true	yürüdüyse	savaşta
+Relation	T3	T4	EffectCause	true	savaşta	yürüdüyse
+Relation	T3	T5	CauseEffect	true	savaşta	öldürüldü
+Relation	T5	T3	EffectCause	true	öldürüldü	savaşta
+Relation	T10	T7	CauseEffect	true	karışıklıktan	istifade
+Relation	T7	T10	EffectCause	true	istifade	karışıklıktan
+Relation	T10	T8	CauseEffect	true	karışıklıktan	topladı
+Relation	T8	T10	EffectCause	true	topladı	karışıklıktan
+Relation	T6	T11	CauseEffect	true	geçen	geçirerek
+Relation	T11	T6	EffectCause	true	geçirerek	geçen
+Relation	T6	T9	CauseEffect	true	geçen	yürüdü
+Relation	T9	T6	EffectCause	true	yürüdü	geçen
+Relation	T0	T1	NoRel	true	evlendi	geldi
+Relation	T1	T3	NoRel	true	geldi	savaşta
+Relation	T1	T4	NoRel	true	geldi	yürüdüyse
+Relation	T3	T7	NoRel	true	savaşta	istifade
+Relation	T3	T8	NoRel	true	savaşta	topladı
+Relation	T4	T7	NoRel	true	yürüdüyse	istifade
+Relation	T9	T2	NoRel	true	yürüdü	arttıran
+Relation	T9	T3	NoRel	true	yürüdü	savaşta
+Relation	T9	T5	NoRel	true	yürüdü	öldürüldü
+Relation	T9	T7	NoRel	true	yürüdü	istifade

@@ -1,0 +1,136 @@
+Text	[ Scanning-elektronmikroskopi ( SEM ) af SARS-CoV-2 , som man 2020 antog kunne være/blive den første 'Disease X'-kandidat ]	DISEASE X ( 'Sygdom X ' ) er et pladsholdernavn , der blev vedtaget af Verdenssundhedsorganisationen ( WHO ) i februar 2018 på deres udvalgte liste ( shortlist ) for prioriterede sygdomme for at repræsentere et hypotetisk , ukendt patogen , der kunne forårsage en fremtidig epidemi .	WHO vedtog pladsholdernavnet for at sikre , at deres planlægning var tilstrækkelig fleksibel til at kunne tilpasse sig et ukendt patogen − fx bredere vacciner og produktionsfaciliteter .	Direktøren for _ US National Institute of Allergy and Infectious Diseases _ Anthony Fauci sagde , at konceptet med _ Disease X _ ville tilskynde WHO-projekter til at fokusere forskningsindsatsen på hele klasser af virus som fx virusslægten flavivirus i stedet for kun på individuelle stammer som fx zikavirus , og dermed forbedre WHO's evne til at reagere på uforudsete stammer .	I 2020 blev det diskuteret − herunder blandt nogle af WHO's egne ekspertrådgivere − om COVID-19 , forårsaget af SARS-CoV-2-virusstammen , kunne opfylde kravene til at blive den første _ Disease_X _.
+Event	T0	SEM	EVENT	32
+Event	T1	antog	EVENT	67
+Event	T2	vedtaget	EVENT	183
+Event	T3	forårsage	EVENT	375
+Event	T4	epidemi	EVENT	398
+Event	T5	vedtog	EVENT	412
+Event	T6	sagde	EVENT	685
+Event	T7	konceptet	EVENT	696
+Event	T8	forskningsindsatsen	EVENT	770
+Event	T9	forbedre	EVENT	916
+Event	T10	diskuteret	EVENT	991
+Event	T11	forårsaget	EVENT	1073
+Event	T12	SARS-CoV-2	EVENT	41
+Event	T13	være/blive	EVENT	79
+Event	T14	'Disease X'-kandidat	EVENT	101
+Event	T15	DISEASE X	EVENT	124
+Event	T16	'Sygdom X '	EVENT	136
+Event	T17	sygdomme	EVENT	303
+Event	T18	planlægning	EVENT	461
+Event	T19	tilpasse	EVENT	514
+Event	T20	vacciner	EVENT	558
+Event	T21	Disease X	EVENT	712
+Event	T22	fokusere	EVENT	761
+Event	T23	klasser af virus	EVENT	798
+Event	T24	reagere	EVENT	943
+Event	T25	COVID-19	EVENT	1062
+Event	T26	SARS-CoV-2	EVENT	1087
+Event	T27	opfylde	EVENT	1119
+Event	T28	Disease_X	EVENT	1161
+Event	T29	repræsentere	EVENT	319
+Event	T30	patogen	EVENT	355
+Relation	T7	T22	CauseEffect	true	konceptet	fokusere
+Relation	T22	T7	EffectCause	true	fokusere	konceptet
+Relation	T22	T9	CauseEffect	true	fokusere	forbedre
+Relation	T9	T22	EffectCause	true	forbedre	fokusere
+Relation	T26	T25	CauseEffect	true	SARS-CoV-2	COVID-19
+Relation	T25	T26	EffectCause	true	COVID-19	SARS-CoV-2
+Relation	T0	T19	NoRel	true	SEM	tilpasse
+Relation	T0	T6	NoRel	true	SEM	sagde
+Relation	T0	T9	NoRel	true	SEM	forbedre
+Relation	T1	T12	NoRel	true	antog	SARS-CoV-2
+Relation	T1	T17	NoRel	true	antog	sygdomme
+Relation	T1	T26	NoRel	true	antog	SARS-CoV-2
+Relation	T10	T18	NoRel	true	diskuteret	planlægning
+Relation	T10	T2	NoRel	true	diskuteret	vedtaget
+Relation	T10	T4	NoRel	true	diskuteret	epidemi
+Relation	T10	T7	NoRel	true	diskuteret	konceptet
+Relation	T11	T26	NoRel	true	forårsaget	SARS-CoV-2
+Relation	T11	T29	NoRel	true	forårsaget	repræsentere
+Relation	T11	T4	NoRel	true	forårsaget	epidemi
+Relation	T12	T13	NoRel	true	SARS-CoV-2	være/blive
+Relation	T12	T30	NoRel	true	SARS-CoV-2	patogen
+Relation	T13	T10	NoRel	true	være/blive	diskuteret
+Relation	T13	T18	NoRel	true	være/blive	planlægning
+Relation	T14	T1	NoRel	true	'Disease X'-kandidat	antog
+Relation	T14	T10	NoRel	true	'Disease X'-kandidat	diskuteret
+Relation	T14	T2	NoRel	true	'Disease X'-kandidat	vedtaget
+Relation	T14	T24	NoRel	true	'Disease X'-kandidat	reagere
+Relation	T15	T4	NoRel	true	DISEASE X	epidemi
+Relation	T16	T12	NoRel	true	'Sygdom X '	SARS-CoV-2
+Relation	T16	T9	NoRel	true	'Sygdom X '	forbedre
+Relation	T17	T0	NoRel	true	sygdomme	SEM
+Relation	T17	T10	NoRel	true	sygdomme	diskuteret
+Relation	T17	T18	NoRel	true	sygdomme	planlægning
+Relation	T17	T6	NoRel	true	sygdomme	sagde
+Relation	T18	T13	NoRel	true	planlægning	være/blive
+Relation	T19	T0	NoRel	true	tilpasse	SEM
+Relation	T19	T1	NoRel	true	tilpasse	antog
+Relation	T19	T11	NoRel	true	tilpasse	forårsaget
+Relation	T19	T20	NoRel	true	tilpasse	vacciner
+Relation	T19	T28	NoRel	true	tilpasse	Disease_X
+Relation	T19	T4	NoRel	true	tilpasse	epidemi
+Relation	T19	T5	NoRel	true	tilpasse	vedtog
+Relation	T2	T14	NoRel	true	vedtaget	'Disease X'-kandidat
+Relation	T2	T27	NoRel	true	vedtaget	opfylde
+Relation	T2	T6	NoRel	true	vedtaget	sagde
+Relation	T2	T9	NoRel	true	vedtaget	forbedre
+Relation	T20	T30	NoRel	true	vacciner	patogen
+Relation	T20	T4	NoRel	true	vacciner	epidemi
+Relation	T20	T7	NoRel	true	vacciner	konceptet
+Relation	T20	T8	NoRel	true	vacciner	forskningsindsatsen
+Relation	T21	T14	NoRel	true	Disease X	'Disease X'-kandidat
+Relation	T21	T8	NoRel	true	Disease X	forskningsindsatsen
+Relation	T22	T11	NoRel	true	fokusere	forårsaget
+Relation	T22	T16	NoRel	true	fokusere	'Sygdom X '
+Relation	T22	T23	NoRel	true	fokusere	klasser af virus
+Relation	T22	T26	NoRel	true	fokusere	SARS-CoV-2
+Relation	T23	T5	NoRel	true	klasser af virus	vedtog
+Relation	T24	T9	NoRel	true	reagere	forbedre
+Relation	T25	T0	NoRel	true	COVID-19	SEM
+Relation	T25	T10	NoRel	true	COVID-19	diskuteret
+Relation	T25	T13	NoRel	true	COVID-19	være/blive
+Relation	T25	T16	NoRel	true	COVID-19	'Sygdom X '
+Relation	T25	T18	NoRel	true	COVID-19	planlægning
+Relation	T25	T27	NoRel	true	COVID-19	opfylde
+Relation	T26	T3	NoRel	true	SARS-CoV-2	forårsage
+Relation	T26	T4	NoRel	true	SARS-CoV-2	epidemi
+Relation	T26	T7	NoRel	true	SARS-CoV-2	konceptet
+Relation	T27	T16	NoRel	true	opfylde	'Sygdom X '
+Relation	T27	T21	NoRel	true	opfylde	Disease X
+Relation	T27	T25	NoRel	true	opfylde	COVID-19
+Relation	T27	T29	NoRel	true	opfylde	repræsentere
+Relation	T28	T17	NoRel	true	Disease_X	sygdomme
+Relation	T28	T27	NoRel	true	Disease_X	opfylde
+Relation	T29	T0	NoRel	true	repræsentere	SEM
+Relation	T29	T13	NoRel	true	repræsentere	være/blive
+Relation	T29	T18	NoRel	true	repræsentere	planlægning
+Relation	T29	T26	NoRel	true	repræsentere	SARS-CoV-2
+Relation	T3	T0	NoRel	true	forårsage	SEM
+Relation	T3	T14	NoRel	true	forårsage	'Disease X'-kandidat
+Relation	T30	T13	NoRel	true	patogen	være/blive
+Relation	T30	T14	NoRel	true	patogen	'Disease X'-kandidat
+Relation	T30	T22	NoRel	true	patogen	fokusere
+Relation	T30	T28	NoRel	true	patogen	Disease_X
+Relation	T4	T16	NoRel	true	epidemi	'Sygdom X '
+Relation	T4	T19	NoRel	true	epidemi	tilpasse
+Relation	T4	T21	NoRel	true	epidemi	Disease X
+Relation	T5	T13	NoRel	true	vedtog	være/blive
+Relation	T5	T19	NoRel	true	vedtog	tilpasse
+Relation	T5	T27	NoRel	true	vedtog	opfylde
+Relation	T5	T9	NoRel	true	vedtog	forbedre
+Relation	T6	T0	NoRel	true	sagde	SEM
+Relation	T6	T1	NoRel	true	sagde	antog
+Relation	T6	T23	NoRel	true	sagde	klasser af virus
+Relation	T6	T30	NoRel	true	sagde	patogen
+Relation	T6	T5	NoRel	true	sagde	vedtog
+Relation	T7	T4	NoRel	true	konceptet	epidemi
+Relation	T7	T6	NoRel	true	konceptet	sagde
+Relation	T7	T8	NoRel	true	konceptet	forskningsindsatsen
+Relation	T8	T24	NoRel	true	forskningsindsatsen	reagere
+Relation	T8	T30	NoRel	true	forskningsindsatsen	patogen
+Relation	T8	T5	NoRel	true	forskningsindsatsen	vedtog
+Relation	T9	T23	NoRel	true	forbedre	klasser af virus
+Relation	T9	T29	NoRel	true	forbedre	repræsentere
+Relation	T9	T3	NoRel	true	forbedre	forårsage

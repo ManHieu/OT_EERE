@@ -1,0 +1,41 @@
+Text	- Kaptan Amerika'nın ölümünden çok etkilenen Punisher , Kaptan'ın teslim olduğu zaman bıraktığı maskesini giyerek kostümünü değiştirir ve kendi başına suçlularla mücadeleye devam eder .	- Thor Demir Adam'la kendi klonunu yaratmayı denediği ve diğer kahramanlara zarar verdiği için dövüşür ve zırhını parçalar .			
+Event	T0	ölümünden	EVENT	21
+Event	T2	giyerek	EVENT	106
+Event	T3	değiştirir	EVENT	124
+Event	T5	denediği	EVENT	231
+Event	T7	dövüşür	EVENT	281
+Event	T1	teslim olduğu	EVENT	66
+Event	T8	mücadeleye	EVENT	162
+Event	T9	etkilenen	EVENT	35
+Event	T10	yaratmayı	EVENT	221
+Event	T6	zarar verdiği	EVENT	262
+Event	T11	parçalar	EVENT	300
+Event	T4	devam	EVENT	173
+Relation	T0	T9	CauseEffect	true	ölümünden	etkilenen
+Relation	T9	T0	EffectCause	true	etkilenen	ölümünden
+Relation	T9	T2	CauseEffect	true	etkilenen	giyerek
+Relation	T2	T9	EffectCause	true	giyerek	etkilenen
+Relation	T9	T3	CauseEffect	true	etkilenen	değiştirir
+Relation	T3	T9	EffectCause	true	değiştirir	etkilenen
+Relation	T9	T8	CauseEffect	true	etkilenen	mücadeleye
+Relation	T8	T9	EffectCause	true	mücadeleye	etkilenen
+Relation	T6	T7	CauseEffect	true	zarar verdiği	dövüşür
+Relation	T7	T6	EffectCause	true	dövüşür	zarar verdiği
+Relation	T5	T7	CauseEffect	true	denediği	dövüşür
+Relation	T7	T5	EffectCause	true	dövüşür	denediği
+Relation	T0	T8	NoRel	true	ölümünden	mücadeleye
+Relation	T1	T7	NoRel	true	teslim olduğu	dövüşür
+Relation	T1	T8	NoRel	true	teslim olduğu	mücadeleye
+Relation	T1	T9	NoRel	true	teslim olduğu	etkilenen
+Relation	T10	T6	NoRel	true	yaratmayı	zarar verdiği
+Relation	T10	T7	NoRel	true	yaratmayı	dövüşür
+Relation	T11	T3	NoRel	true	parçalar	değiştirir
+Relation	T11	T7	NoRel	true	parçalar	dövüşür
+Relation	T11	T9	NoRel	true	parçalar	etkilenen
+Relation	T4	T5	NoRel	true	devam	denediği
+Relation	T5	T0	NoRel	true	denediği	ölümünden
+Relation	T7	T0	NoRel	true	dövüşür	ölümünden
+Relation	T7	T2	NoRel	true	dövüşür	giyerek
+Relation	T7	T3	NoRel	true	dövüşür	değiştirir
+Relation	T7	T4	NoRel	true	dövüşür	devam
+Relation	T9	T4	NoRel	true	etkilenen	devam

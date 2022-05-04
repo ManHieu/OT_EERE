@@ -1,0 +1,26 @@
+Text	Arkasında talan edilmiş topraklar bıraksa da Batı Avrupa bu geri çekilmenin sonucunda saldırıya uğramaktan korunmuş olur .	Batı Avrupa’nın Macarlar sayesinde Moğolların saldırılarından korunduğuna dair bir inanış olsa da , Moğollar Ögeday’ın ani ölümü sebebiyle geri çekilmiştir .	Ögeday ölmemiş olsaydı Moğolların Avrupa içlerine ne kadar daha ilerleyebileceği tarihçilerce tartışılmıştır .	Ancak dönemin lojistik sorunlarının Moğolların ilerleyişini engelleyeceği öngörülmüştür .	Macarlar Moğol istilasından önemli dersler almışlardır .
+Event	T0	çekilmenin	EVENT	65
+Event	T1	saldırıya	EVENT	86
+Event	T2	ölümü	EVENT	246
+Event	T3	çekilmiştir	EVENT	267
+Event	T5	tartışılmıştır	EVENT	375
+Event	T6	korunmuş	EVENT	107
+Event	T7	saldırılarından	EVENT	169
+Event	T8	korunduğuna	EVENT	185
+Event	T4	engelleyeceği	EVENT	452
+Event	T9	istilasından	EVENT	497
+Event	T10	almışlardır	EVENT	525
+Relation	T0	T6	CauseEffect	true	çekilmenin	korunmuş
+Relation	T6	T0	EffectCause	true	korunmuş	çekilmenin
+Relation	T2	T3	CauseEffect	true	ölümü	çekilmiştir
+Relation	T3	T2	EffectCause	true	çekilmiştir	ölümü
+Relation	T0	T3	NoRel	true	çekilmenin	çekilmiştir
+Relation	T0	T8	NoRel	true	çekilmenin	korunduğuna
+Relation	T1	T4	NoRel	true	saldırıya	engelleyeceği
+Relation	T10	T9	NoRel	true	almışlardır	istilasından
+Relation	T3	T5	NoRel	true	çekilmiştir	tartışılmıştır
+Relation	T5	T4	NoRel	true	tartışılmıştır	engelleyeceği
+Relation	T5	T7	NoRel	true	tartışılmıştır	saldırılarından
+Relation	T7	T4	NoRel	true	saldırılarından	engelleyeceği
+Relation	T7	T5	NoRel	true	saldırılarından	tartışılmıştır
+Relation	T8	T10	NoRel	true	korunduğuna	almışlardır

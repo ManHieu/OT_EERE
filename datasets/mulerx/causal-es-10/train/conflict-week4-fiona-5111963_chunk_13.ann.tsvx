@@ -1,0 +1,43 @@
+Text	El 4 de mayo , las fuerzas de seguridad tomaron el control de la carretera que comunica las provincias de Hadramout , Shabwa y Abyan .	Otras operaciones en Shabwa lograron además lograron eliminar a los terroristas de Mefraq al Said , Hesat al Labn , Al Karif y Al Naqaba .	Además , se abatieron a al menos 37 combatientes en la localidad de Yul Reda .	El 6 de mayo la ofensiva consiguió lograr uno de sus objetivos principales al tomar la zona montañosa de Al Mahfad , en una batalla en la que se cobró varias decenas de muertos entre los yihadistas , que abandonaron el área al amanecer .	Además tomaron posesión de otro bastión del grupo terrorista de Haban y Qarn al-Sawad , en la zona de Shabwa .
+Event	T0	tomaron	EVENT	40
+Event	T1	control	EVENT	51
+Event	T2	comunica	EVENT	79
+Event	T3	operaciones	EVENT	141
+Event	T4	lograron	EVENT	163
+Event	T5	eliminar	EVENT	188
+Event	T6	abatieron	EVENT	286
+Event	T7	lograr	EVENT	388
+Event	T8	tomar	EVENT	431
+Event	T9	cobró	EVENT	498
+Event	T10	muertos	EVENT	522
+Event	T11	abandonaron	EVENT	557
+Event	T12	amanecer	EVENT	580
+Event	T13	ofensiva	EVENT	369
+Relation	T3	T5	CauseEffect	true	operaciones	eliminar
+Relation	T5	T3	EffectCause	true	eliminar	operaciones
+Relation	T3	T6	CauseEffect	true	operaciones	abatieron
+Relation	T6	T3	EffectCause	true	abatieron	operaciones
+Relation	T13	T8	CauseEffect	true	ofensiva	tomar
+Relation	T8	T13	EffectCause	true	tomar	ofensiva
+Relation	T13	T10	CauseEffect	true	ofensiva	muertos
+Relation	T10	T13	EffectCause	true	muertos	ofensiva
+Relation	T0	T4	NoRel	true	tomaron	lograron
+Relation	T0	T5	NoRel	true	tomaron	eliminar
+Relation	T1	T10	NoRel	true	control	muertos
+Relation	T1	T5	NoRel	true	control	eliminar
+Relation	T11	T1	NoRel	true	abandonaron	control
+Relation	T11	T9	NoRel	true	abandonaron	cobró
+Relation	T13	T4	NoRel	true	ofensiva	lograron
+Relation	T2	T5	NoRel	true	comunica	eliminar
+Relation	T2	T9	NoRel	true	comunica	cobró
+Relation	T3	T12	NoRel	true	operaciones	amanecer
+Relation	T5	T0	NoRel	true	eliminar	tomaron
+Relation	T5	T2	NoRel	true	eliminar	comunica
+Relation	T5	T6	NoRel	true	eliminar	abatieron
+Relation	T5	T7	NoRel	true	eliminar	lograr
+Relation	T8	T6	NoRel	true	tomar	abatieron
+Relation	T8	T9	NoRel	true	tomar	cobró
+Relation	T9	T11	NoRel	true	cobró	abandonaron
+Relation	T9	T2	NoRel	true	cobró	comunica
+Relation	T9	T3	NoRel	true	cobró	operaciones
+Relation	T9	T7	NoRel	true	cobró	lograr

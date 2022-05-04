@@ -1,0 +1,46 @@
+Text	- Ekim 1987 - Moro hemzemin geçit felaketi — Bir yolcu treni otobüse çarptığında , en az elli kişi öldü ve kırk kişi yaralandı .	- Eylül 2003 - Malikwal hemzemin geçit felaketi — Bir otobüs , Lalamusa - Surghuda yerel treniyle çarpıştı .	En az yirmi yedi kişi öldü ve altı kişi yaralandı .	- Mian Channun kasabası , yaklaşık Punjab bölgesindeki Mutlan şehri merkezinin yaklaşık 100 kilometre doğusu - sisli - Okul otobüsü - 9 ölü ve 18 yaralı .	- Voronezhskay hemzemin geçit felaketi — 21 Ocak 2006 , fabrika işçilerini taşıyan bir otobüs , Mineralnye Vody - Krasnodar yolcu treniyle çarpıştı .
+Event	T0	felaketi	EVENT	34
+Event	T1	çarptığında	EVENT	69
+Event	T2	öldü	EVENT	99
+Event	T3	yaralandı	EVENT	117
+Event	T4	felaketi	EVENT	168
+Event	T5	çarpıştı	EVENT	227
+Event	T6	öldü	EVENT	260
+Event	T7	yaralandı	EVENT	278
+Event	T8	ölü	EVENT	426
+Event	T9	felaketi	EVENT	475
+Event	T10	çarpıştı	EVENT	584
+Event	T11	yaralı	EVENT	436
+Event	T12	sisli	EVENT	401
+Event	T13	taşıyan	EVENT	520
+Relation	T1	T0	CauseEffect	true	çarptığında	felaketi
+Relation	T0	T1	EffectCause	true	felaketi	çarptığında
+Relation	T0	T2	CauseEffect	true	felaketi	öldü
+Relation	T2	T0	EffectCause	true	öldü	felaketi
+Relation	T0	T3	CauseEffect	true	felaketi	yaralandı
+Relation	T3	T0	EffectCause	true	yaralandı	felaketi
+Relation	T5	T4	CauseEffect	true	çarpıştı	felaketi
+Relation	T4	T5	EffectCause	true	felaketi	çarpıştı
+Relation	T4	T6	CauseEffect	true	felaketi	öldü
+Relation	T6	T4	EffectCause	true	öldü	felaketi
+Relation	T4	T7	CauseEffect	true	felaketi	yaralandı
+Relation	T7	T4	EffectCause	true	yaralandı	felaketi
+Relation	T10	T9	CauseEffect	true	çarpıştı	felaketi
+Relation	T9	T10	EffectCause	true	felaketi	çarpıştı
+Relation	T10	T5	NoRel	true	çarpıştı	çarpıştı
+Relation	T11	T10	NoRel	true	yaralı	çarpıştı
+Relation	T11	T2	NoRel	true	yaralı	öldü
+Relation	T12	T7	NoRel	true	sisli	yaralandı
+Relation	T13	T0	NoRel	true	taşıyan	felaketi
+Relation	T13	T1	NoRel	true	taşıyan	çarptığında
+Relation	T3	T1	NoRel	true	yaralandı	çarptığında
+Relation	T3	T10	NoRel	true	yaralandı	çarpıştı
+Relation	T3	T5	NoRel	true	yaralandı	çarpıştı
+Relation	T6	T13	NoRel	true	öldü	taşıyan
+Relation	T7	T0	NoRel	true	yaralandı	felaketi
+Relation	T7	T11	NoRel	true	yaralandı	yaralı
+Relation	T7	T13	NoRel	true	yaralandı	taşıyan
+Relation	T7	T5	NoRel	true	yaralandı	çarpıştı
+Relation	T7	T6	NoRel	true	yaralandı	öldü
+Relation	T7	T9	NoRel	true	yaralandı	felaketi
+Relation	T9	T2	NoRel	true	felaketi	öldü

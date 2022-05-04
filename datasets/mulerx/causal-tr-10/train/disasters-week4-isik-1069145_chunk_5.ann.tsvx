@@ -1,0 +1,51 @@
+Text	Güçlü bir kasırganın meydana gelmesi için fırtına merkezinin etrafında gök gürültülü fırtınaların olması gerekir .	Daha sonra , Gabrielle güç kazanmaya başladı ve 7 Eylül günü , Lookout Burnu'ndan 300 km uzaktayken Gabrielle Tropikal Fırtınası olarak adlandırıldı .	Fırtına Gulf_Stream'i geçtiği zaman rüzgâr değişimi yavaşladı , güçlü gök gürültülü fırtınaların merkez etrafında oluşmasına izin verdi , ve 15:45 UTC civarında , Gabrielle Kuzey Karolina kıyısına ulaştı .	Saatte 95 kilometre hıza ulaşan rüzgârları vardı .	Fırtına kuzey ve kuzeydoğuya doğru döndü ve 10 Eylül günü yeniden okyanusa döndü .
+Event	T0	gelmesi	EVENT	29
+Event	T1	başladı	EVENT	152
+Event	T2	adlandırıldı	EVENT	251
+Event	T3	geçtiği	EVENT	288
+Event	T4	yavaşladı	EVENT	318
+Event	T5	verdi	EVENT	396
+Event	T6	ulaştı	EVENT	463
+Event	T7	döndü	EVENT	558
+Event	T8	döndü	EVENT	598
+Event	T9	kasırganın	EVENT	10
+Event	T10	fırtınaların	EVENT	85
+Event	T11	Gabrielle Tropikal Fırtınası	EVENT	215
+Event	T12	rüzgârları	EVENT	504
+Event	T13	Fırtına	EVENT	523
+Event	T14	Fırtına	EVENT	266
+Relation	T11	T3	CauseEffect	true	Gabrielle Tropikal Fırtınası	geçtiği
+Relation	T3	T11	EffectCause	true	geçtiği	Gabrielle Tropikal Fırtınası
+Relation	T3	T4	CauseEffect	true	geçtiği	yavaşladı
+Relation	T4	T3	EffectCause	true	yavaşladı	geçtiği
+Relation	T4	T5	CauseEffect	true	yavaşladı	verdi
+Relation	T5	T4	EffectCause	true	verdi	yavaşladı
+Relation	T11	T12	CauseEffect	true	Gabrielle Tropikal Fırtınası	rüzgârları
+Relation	T12	T11	EffectCause	true	rüzgârları	Gabrielle Tropikal Fırtınası
+Relation	T11	T7	CauseEffect	true	Gabrielle Tropikal Fırtınası	döndü
+Relation	T7	T11	EffectCause	true	döndü	Gabrielle Tropikal Fırtınası
+Relation	T7	T8	CauseEffect	true	döndü	döndü
+Relation	T8	T7	EffectCause	true	döndü	döndü
+Relation	T5	T6	CauseEffect	true	verdi	ulaştı
+Relation	T6	T5	EffectCause	true	ulaştı	verdi
+Relation	T13	T7	CauseEffect	true	Fırtına	döndü
+Relation	T7	T13	EffectCause	true	döndü	Fırtına
+Relation	T14	T3	CauseEffect	true	Fırtına	geçtiği
+Relation	T3	T14	EffectCause	true	geçtiği	Fırtına
+Relation	T0	T10	NoRel	true	gelmesi	fırtınaların
+Relation	T0	T11	NoRel	true	gelmesi	Gabrielle Tropikal Fırtınası
+Relation	T0	T8	NoRel	true	gelmesi	döndü
+Relation	T1	T6	NoRel	true	başladı	ulaştı
+Relation	T11	T9	NoRel	true	Gabrielle Tropikal Fırtınası	kasırganın
+Relation	T12	T2	NoRel	true	rüzgârları	adlandırıldı
+Relation	T13	T0	NoRel	true	Fırtına	gelmesi
+Relation	T13	T5	NoRel	true	Fırtına	verdi
+Relation	T2	T7	NoRel	true	adlandırıldı	döndü
+Relation	T3	T12	NoRel	true	geçtiği	rüzgârları
+Relation	T3	T7	NoRel	true	geçtiği	döndü
+Relation	T4	T14	NoRel	true	yavaşladı	Fırtına
+Relation	T6	T11	NoRel	true	ulaştı	Gabrielle Tropikal Fırtınası
+Relation	T6	T3	NoRel	true	ulaştı	geçtiği
+Relation	T7	T5	NoRel	true	döndü	verdi
+Relation	T9	T1	NoRel	true	kasırganın	başladı
+Relation	T9	T10	NoRel	true	kasırganın	fırtınaların

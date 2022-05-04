@@ -1,0 +1,43 @@
+Text	14 Kasım 1963 gününde yüzeyde başlayan ilk hareketlenmenin yaşandığı gün , sabah saat 11:00'e kadar püskürmenin oluşturduğu sıcak kül ve dumanlar birkaç kilometre yüksekliğe ulaştı .	İlk önce kuzeydoğu - güneybatı doğrultusunda üç ayrı noktadan yüzeye çıkmaya başlayan püskürmeler , akşama doğru birleşerek tek bir yarıkta toplandı .	Bir sonraki hafta içinde patlama ve püskürmeler sürekli bir hâl aldı ve birkaç günde bütünüyle cüruftan oluşmuş olan ada , 500 metre genişliğe ve 45 metre yüksekliğe ulaştı .	Ortaya çıkan yeni adaya İzlandalılarca İskandinav Mitolojisi'nde ateş devi olan Surtur'den ilham alarak _ Surtur'ün Adası _ anlamına gelen _ Surtsey _ adı verildi .	Patlamalar sürerken tek bir noktada yoğunlaşarak yüzeye çıkmakta olan lavlar , adaya daha yuvarlak bir biçim vermeye başladılar .
+Event	T10	verildi	EVENT	664
+Event	T12	hareketlenmenin	EVENT	43
+Event	T13	püskürmenin	EVENT	100
+Event	T15	birleşerek	EVENT	296
+Event	T16	püskürmeler	EVENT	370
+Event	T17	oluşmuş	EVENT	438
+Event	T19	yoğunlaşarak	EVENT	710
+Event	T20	çıkmakta	EVENT	730
+Event	T3	ulaştı	EVENT	174
+Event	T4	püskürmeler	EVENT	269
+Event	T5	toplandı	EVENT	323
+Event	T6	patlama	EVENT	359
+Event	T8	ulaştı	EVENT	500
+Relation	T6	T17	CauseEffect	true	patlama	oluşmuş
+Relation	T17	T6	EffectCause	true	oluşmuş	patlama
+Relation	T16	T17	CauseEffect	true	püskürmeler	oluşmuş
+Relation	T17	T16	EffectCause	true	oluşmuş	püskürmeler
+Relation	T16	T8	CauseEffect	true	püskürmeler	ulaştı
+Relation	T8	T16	EffectCause	true	ulaştı	püskürmeler
+Relation	T6	T8	CauseEffect	true	patlama	ulaştı
+Relation	T8	T6	EffectCause	true	ulaştı	patlama
+Relation	T17	T10	CauseEffect	true	oluşmuş	verildi
+Relation	T10	T17	EffectCause	true	verildi	oluşmuş
+Relation	T10	T12	NoRel	true	verildi	hareketlenmenin
+Relation	T12	T8	NoRel	true	hareketlenmenin	ulaştı
+Relation	T13	T3	NoRel	true	püskürmenin	ulaştı
+Relation	T13	T8	NoRel	true	püskürmenin	ulaştı
+Relation	T15	T10	NoRel	true	birleşerek	verildi
+Relation	T15	T17	NoRel	true	birleşerek	oluşmuş
+Relation	T16	T10	NoRel	true	püskürmeler	verildi
+Relation	T16	T13	NoRel	true	püskürmeler	püskürmenin
+Relation	T17	T12	NoRel	true	oluşmuş	hareketlenmenin
+Relation	T17	T5	NoRel	true	oluşmuş	toplandı
+Relation	T19	T13	NoRel	true	yoğunlaşarak	püskürmenin
+Relation	T19	T5	NoRel	true	yoğunlaşarak	toplandı
+Relation	T20	T4	NoRel	true	çıkmakta	püskürmeler
+Relation	T3	T10	NoRel	true	ulaştı	verildi
+Relation	T3	T16	NoRel	true	ulaştı	püskürmeler
+Relation	T4	T10	NoRel	true	püskürmeler	verildi
+Relation	T5	T10	NoRel	true	toplandı	verildi
+Relation	T5	T15	NoRel	true	toplandı	birleşerek
+Relation	T6	T13	NoRel	true	patlama	püskürmenin

@@ -1,0 +1,23 @@
+Text	Lokomotivet og den forreste vogn nåede over på den anden side , men da de efterfølgende vogne faldt ned , trak de også de forreste med , og lokomotivet , tenderen og de første seks vogne styrtede i floden , mens de sidste tre passagervogne samt yderligere to vogne blev på breden .	Af de 285 personer i toget omkom 151 .	Af de seks passagervogne , der styrtede i floden , var samtlige togets fem 2. klassesvogne , og af de 176 passagerer på 2. klasse reddede blot 28 livet .	Redningsaktionen blev gennemført af blandt andet soldater , jernbanepersonale , politi , vejarbejdere , lokale landmænd og bedemænd .	Landets premierminister hastede til ulykkesstedet for at deltage i koordineringen af aktionen .
+Event	T0	trak	EVENT	106
+Event	T1	styrtede	EVENT	187
+Event	T2	omkom	EVENT	309
+Event	T3	styrtede	EVENT	352
+Event	T4	reddede	EVENT	451
+Event	T5	livet	EVENT	467
+Event	T6	gennemført	EVENT	497
+Event	T7	hastede	EVENT	633
+Event	T8	aktionen	EVENT	694
+Event	T9	nåede	EVENT	33
+Relation	T0	T1	CauseEffect	true	trak	styrtede
+Relation	T1	T0	EffectCause	true	styrtede	trak
+Relation	T1	T2	CauseEffect	true	styrtede	omkom
+Relation	T2	T1	EffectCause	true	omkom	styrtede
+Relation	T3	T2	CauseEffect	true	styrtede	omkom
+Relation	T2	T3	EffectCause	true	omkom	styrtede
+Relation	T3	T0	NoRel	true	styrtede	trak
+Relation	T3	T7	NoRel	true	styrtede	hastede
+Relation	T4	T0	NoRel	true	reddede	trak
+Relation	T7	T5	NoRel	true	hastede	livet
+Relation	T8	T3	NoRel	true	aktionen	styrtede
+Relation	T8	T5	NoRel	true	aktionen	livet

@@ -1,0 +1,19 @@
+Text	Adele , ayrıca Spice Girls'ü genç bir kızken akşam partilerinde taklit etti .	Şarkıcı Gabrielle gibi görünebilmek için annesi , pullarla bir göz maskesi yaptı ki Adele , bunun utandırıcı olduğunu dile getirdi .	On bir yaşındayken , mobilya üreticisi ve yetişkin öğrenme etkinlikleri organizatörü olan annesiyle birlikte West Norwood , Güney Londra'ya taşındı .	West Norwood , Adele'in on altı yaşındayken yazdığı ve ilk kaydı olan " Hometown Glory"nin konusuydu .	Güney Londra'ya taşındıktan sonra Aaliyah , Destiny's Child ve Mary J Blige gibi şarkıcılar ve R& B ile ilgilenmeye başladı .
+Event	T0	etti	EVENT	71
+Event	T1	yaptı	EVENT	153
+Event	T2	getirdi	EVENT	201
+Event	T3	taşındı	EVENT	351
+Event	T4	yazdığı	EVENT	405
+Event	T5	kaydı	EVENT	420
+Event	T6	taşındıktan	EVENT	480
+Event	T7	başladı	EVENT	580
+Relation	T0	T1	CauseEffect	true	etti	yaptı
+Relation	T1	T0	EffectCause	true	yaptı	etti
+Relation	T1	T2	CauseEffect	true	yaptı	getirdi
+Relation	T2	T1	EffectCause	true	getirdi	yaptı
+Relation	T0	T4	NoRel	true	etti	yazdığı
+Relation	T2	T4	NoRel	true	getirdi	yazdığı
+Relation	T3	T2	NoRel	true	taşındı	getirdi
+Relation	T4	T3	NoRel	true	yazdığı	taşındı
+Relation	T5	T4	NoRel	true	kaydı	yazdığı
+Relation	T7	T6	NoRel	true	başladı	taşındıktan

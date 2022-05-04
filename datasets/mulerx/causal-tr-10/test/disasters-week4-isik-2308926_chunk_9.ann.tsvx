@@ -1,0 +1,53 @@
+Text	Muson sezonu bozuldu ve Yangtze Vadisi'nde aşırı sele dönüştü .	Hindistan'da gecikmiş yaz musonu , şiddetli yağışlara neden oldu ve böylelikle kolera , Bengal'deki Ganj yakınındaki bir bölgeden Moskova'ya kadar yayılmaya başladı .	1782 -1788 yılları arasındaki soğuk hava ile ilgili Büyük Tenmei kıtlığından sonra dikkatli olmaya çalışan Japonya'da mahsuller soğuktan hasar gördü fakat mahsullerdeki hasar resmî olarak belirtilmedi ve hava nüfus üzerinde olumsuz etkiler gösterdi .	küçükresim | 175px | Grönland'dan gelen buz çekirdeği içerisindeki sülfat konsantrasyonu .	1810'dan önce bilinmeyen bir patlama meydana geldi .
+Event	T0	bozuldu	EVENT	13
+Event	T1	dönüştü	EVENT	54
+Event	T4	oldu	EVENT	124
+Event	T5	başladı	EVENT	221
+Event	T6	gördü	EVENT	374
+Event	T7	gösterdi	EVENT	471
+Event	T8	konsantrasyonu	EVENT	556
+Event	T9	geldi	EVENT	618
+Event	T3	musonu	EVENT	90
+Event	T2	kıtlığından	EVENT	296
+Event	T10	soğuk	EVENT	261
+Event	T11	çalışan	EVENT	330
+Event	T12	soğuktan	EVENT	359
+Event	T13	patlama	EVENT	602
+Relation	T0	T1	CauseEffect	true	bozuldu	dönüştü
+Relation	T1	T0	EffectCause	true	dönüştü	bozuldu
+Relation	T3	T4	CauseEffect	true	musonu	oldu
+Relation	T4	T3	EffectCause	true	oldu	musonu
+Relation	T4	T5	CauseEffect	true	oldu	başladı
+Relation	T5	T4	EffectCause	true	başladı	oldu
+Relation	T10	T2	CauseEffect	true	soğuk	kıtlığından
+Relation	T2	T10	EffectCause	true	kıtlığından	soğuk
+Relation	T2	T11	CauseEffect	true	kıtlığından	çalışan
+Relation	T11	T2	EffectCause	true	çalışan	kıtlığından
+Relation	T12	T6	CauseEffect	true	soğuktan	gördü
+Relation	T6	T12	EffectCause	true	gördü	soğuktan
+Relation	T6	T7	CauseEffect	true	gördü	gösterdi
+Relation	T7	T6	EffectCause	true	gösterdi	gördü
+Relation	T1	T5	NoRel	true	dönüştü	başladı
+Relation	T10	T0	NoRel	true	soğuk	bozuldu
+Relation	T10	T12	NoRel	true	soğuk	soğuktan
+Relation	T11	T4	NoRel	true	çalışan	oldu
+Relation	T11	T5	NoRel	true	çalışan	başladı
+Relation	T11	T7	NoRel	true	çalışan	gösterdi
+Relation	T11	T9	NoRel	true	çalışan	geldi
+Relation	T12	T0	NoRel	true	soğuktan	bozuldu
+Relation	T12	T1	NoRel	true	soğuktan	dönüştü
+Relation	T12	T3	NoRel	true	soğuktan	musonu
+Relation	T12	T9	NoRel	true	soğuktan	geldi
+Relation	T13	T0	NoRel	true	patlama	bozuldu
+Relation	T13	T10	NoRel	true	patlama	soğuk
+Relation	T13	T7	NoRel	true	patlama	gösterdi
+Relation	T3	T12	NoRel	true	musonu	soğuktan
+Relation	T3	T7	NoRel	true	musonu	gösterdi
+Relation	T4	T2	NoRel	true	oldu	kıtlığından
+Relation	T5	T0	NoRel	true	başladı	bozuldu
+Relation	T6	T9	NoRel	true	gördü	geldi
+Relation	T7	T12	NoRel	true	gösterdi	soğuktan
+Relation	T7	T2	NoRel	true	gösterdi	kıtlığından
+Relation	T7	T4	NoRel	true	gösterdi	oldu
+Relation	T8	T11	NoRel	true	konsantrasyonu	çalışan
+Relation	T8	T4	NoRel	true	konsantrasyonu	oldu

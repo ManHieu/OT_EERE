@@ -1,0 +1,36 @@
+Text	Det betød at den blandt andet fik eneleverancen til Københavns Universitetsbibliotek .	Reitzel startede et forlag , og langt størstedelen af de litterære produktioner i den danske Guldalder udkom på C.A. Reizels forlag .	Det var i denne tidlige periode , at boghandlen skiftede lokaler til Løvstræde i Vajsenhusets gård .	Digteren og filosoffen Poul Martin Møller udødeliggjorde Reitzels boghandel i sit digt _ Scener fra Rosenborgs Have _ i den komiske dialog kaldet _ Hans og Trine _ :	I 1853 døde C.A. Reitzel og hans sønner Theodor og Carl Reitzel overtog virksomheden .
+Event	T0	betød	EVENT	4
+Event	T1	fik	EVENT	30
+Event	T2	startede	EVENT	95
+Event	T3	udkom	EVENT	190
+Event	T4	skiftede	EVENT	269
+Event	T5	udødeliggjorde	EVENT	364
+Event	T6	boghandel	EVENT	388
+Event	T7	digt	EVENT	404
+Event	T8	kaldet	EVENT	461
+Event	T9	døde	EVENT	495
+Event	T10	overtog	EVENT	552
+Event	T11	eneleverancen	EVENT	34
+Event	T12	produktioner	EVENT	154
+Event	T13	periode	EVENT	245
+Event	T14	dialog	EVENT	454
+Relation	T14	T5	CauseEffect	true	dialog	udødeliggjorde
+Relation	T5	T14	EffectCause	true	udødeliggjorde	dialog
+Relation	T9	T10	CauseEffect	true	døde	overtog
+Relation	T10	T9	EffectCause	true	overtog	døde
+Relation	T1	T12	NoRel	true	fik	produktioner
+Relation	T1	T4	NoRel	true	fik	skiftede
+Relation	T13	T14	NoRel	true	periode	dialog
+Relation	T2	T10	NoRel	true	startede	overtog
+Relation	T2	T14	NoRel	true	startede	dialog
+Relation	T2	T5	NoRel	true	startede	udødeliggjorde
+Relation	T2	T7	NoRel	true	startede	digt
+Relation	T4	T1	NoRel	true	skiftede	fik
+Relation	T4	T9	NoRel	true	skiftede	døde
+Relation	T5	T13	NoRel	true	udødeliggjorde	periode
+Relation	T5	T3	NoRel	true	udødeliggjorde	udkom
+Relation	T6	T13	NoRel	true	boghandel	periode
+Relation	T6	T8	NoRel	true	boghandel	kaldet
+Relation	T7	T3	NoRel	true	digt	udkom
+Relation	T9	T0	NoRel	true	døde	betød
+Relation	T9	T3	NoRel	true	døde	udkom

@@ -1,0 +1,50 @@
+Text	_ Variety _ köşe yazarı Jonathan Holland , filmin dönem detayının iyi olduğunu , ancak filmin resmi olarak onaylanan versiyonu izlediğini ve gerçekte olanları derinlemesine göstermediğini söyledi .	küçükresim | 300x300pik | Başarısız darbe sırasında rehin alınan milletvekilleri ve hükûmet yetkilileri 23 Şubat 2011'de olayın 30. yılını kutladılar .	Olayların ilk sonucu , başarısız darbeden sonra bir kurum olarak Monarşinin halkın ve politik sınıfın gözünde ezici meşruiyet kazanmasıydı .	Uzun vadede darbenin başarısızlığı , Franco ideolojisi taraftarlarının İspanya'nın bir demokrasi olarak geleceğini yok etme ve faşist totaliter fikirlerini ulus üzerinde uygulamadaki son ciddi girişimi olarak görülebilir .	Campamento davası ( _ juicio de Campamento ) _ olarak bilinen davada Yüksek Askeri Divanı , Miláns del Bosch , Alfonso Armada ve Antonio Tejero Molina'yi darbenin baş aktörleri olarak otuz yıl hapis cezasına çarptırdı .
+Event	T0	izlediğini	EVENT	127
+Event	T1	söyledi	EVENT	188
+Event	T2	darbe	EVENT	234
+Event	T3	alınan	EVENT	256
+Event	T4	olayın	EVENT	319
+Event	T5	başarısızlığı	EVENT	512
+Event	T6	etme	EVENT	610
+Event	T7	girişimi	EVENT	684
+Event	T8	davası	EVENT	725
+Event	T9	juicio	EVENT	736
+Event	T10	davada	EVENT	776
+Event	T11	çarptırdı	EVENT	922
+Event	T12	kutladılar	EVENT	337
+Event	T13	Olayların	EVENT	350
+Event	T14	darbeden	EVENT	383
+Event	T15	kazanmasıydı	EVENT	476
+Event	T16	darbenin	EVENT	503
+Event	T17	darbenin	EVENT	868
+Relation	T17	T8	CauseEffect	true	darbenin	davası
+Relation	T8	T17	EffectCause	true	davası	darbenin
+Relation	T8	T11	CauseEffect	true	davası	çarptırdı
+Relation	T11	T8	EffectCause	true	çarptırdı	davası
+Relation	T1	T7	NoRel	true	söyledi	girişimi
+Relation	T1	T8	NoRel	true	söyledi	davası
+Relation	T10	T12	NoRel	true	davada	kutladılar
+Relation	T10	T5	NoRel	true	davada	başarısızlığı
+Relation	T11	T0	NoRel	true	çarptırdı	izlediğini
+Relation	T11	T7	NoRel	true	çarptırdı	girişimi
+Relation	T12	T16	NoRel	true	kutladılar	darbenin
+Relation	T12	T6	NoRel	true	kutladılar	etme
+Relation	T13	T16	NoRel	true	Olayların	darbenin
+Relation	T13	T4	NoRel	true	Olayların	olayın
+Relation	T14	T16	NoRel	true	darbeden	darbenin
+Relation	T14	T9	NoRel	true	darbeden	juicio
+Relation	T15	T4	NoRel	true	kazanmasıydı	olayın
+Relation	T15	T8	NoRel	true	kazanmasıydı	davası
+Relation	T16	T3	NoRel	true	darbenin	alınan
+Relation	T17	T9	NoRel	true	darbenin	juicio
+Relation	T2	T13	NoRel	true	darbe	Olayların
+Relation	T3	T15	NoRel	true	alınan	kazanmasıydı
+Relation	T3	T2	NoRel	true	alınan	darbe
+Relation	T3	T6	NoRel	true	alınan	etme
+Relation	T3	T9	NoRel	true	alınan	juicio
+Relation	T4	T5	NoRel	true	olayın	başarısızlığı
+Relation	T6	T4	NoRel	true	etme	olayın
+Relation	T6	T5	NoRel	true	etme	başarısızlığı
+Relation	T6	T8	NoRel	true	etme	davası
+Relation	T7	T0	NoRel	true	girişimi	izlediğini
+Relation	T8	T9	NoRel	true	davası	juicio

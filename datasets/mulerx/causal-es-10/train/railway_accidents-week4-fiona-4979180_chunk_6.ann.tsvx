@@ -1,0 +1,17 @@
+Text	Una sola gota de sarín del tamaño de una cabeza de alfiler podía matar a un adulto .	Con sus paquetes de sarin y paraguas con puntas afiladas , los perpetradores abordaron los trenes designados .	En las estaciones preestablecidas , los paquetes de sarín fueron abandonados y pinchados varias veces con las puntas afiladas de los paraguas .	Luego , los autores se bajaron del tren y salieron de la estación para encontrarse con su cómplice que tenía un coche .	Al dejar los paquetes perforados en el suelo , el sarín se empezó a escapar en el vagón del tren y las estaciones .
+Event	T0	matar	EVENT	65
+Event	T1	abordaron	EVENT	162
+Event	T2	designados	EVENT	183
+Event	T3	abandonados	EVENT	261
+Event	T4	pinchados	EVENT	275
+Event	T5	empezó	EVENT	519
+Event	T6	escapar	EVENT	528
+Event	T7	perforados	EVENT	482
+Relation	T7	T6	CauseEffect	true	perforados	escapar
+Relation	T6	T7	EffectCause	true	escapar	perforados
+Relation	T0	T3	NoRel	true	matar	abandonados
+Relation	T2	T3	NoRel	true	designados	abandonados
+Relation	T4	T3	NoRel	true	pinchados	abandonados
+Relation	T5	T6	NoRel	true	empezó	escapar
+Relation	T7	T1	NoRel	true	perforados	abordaron
+Relation	T7	T3	NoRel	true	perforados	abandonados

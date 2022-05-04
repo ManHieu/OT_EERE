@@ -1,0 +1,70 @@
+Text	En él se reconocían y respetaban los límites vigentes entre ambas naciones , a la espera de la celebración de un convenio de arreglo de límites .	Ello implicaba que ambas partes consideraban ya sin validez al Tratado Larrea-Gual de 1829 .	Fue recién entre 1841 y 1842 cuando Ecuador inició públicamente su reclamo al Perú de los territorios de Jaén y Maynas , incitado por el derrocado gobernante peruano-boliviano Andrés de Santa Cruz y algunos de sus partidarios refugiados en Guayaquil , tras el fin de la Confederación Perú-Boliviana .	Para sustentar su reclamo , el Ecuador hizo una interpretación tergiversada de diversos artículos del Tratado de 1829 , que ahora reclamaba como vigente .	Este reclamo lo hizo aprovechando la coyuntura de la guerra entre Perú y Bolivia ; una vez finalizada esta guerra , cesó temporalmente en su reclamo .
+Event	T0	reconocían	EVENT	9
+Event	T1	espera	EVENT	82
+Event	T2	celebración	EVENT	95
+Event	T3	arreglo	EVENT	125
+Event	T4	implicaba	EVENT	151
+Event	T5	inició	EVENT	283
+Event	T6	reclamo	EVENT	306
+Event	T7	incitado	EVENT	360
+Event	T8	derrocado	EVENT	376
+Event	T9	fin	EVENT	499
+Event	T10	sustentar	EVENT	545
+Event	T11	reclamo	EVENT	558
+Event	T12	hizo	EVENT	579
+Event	T13	reclamaba	EVENT	670
+Event	T14	reclamo	EVENT	700
+Event	T15	aprovechando	EVENT	716
+Event	T16	coyuntura	EVENT	732
+Event	T17	guerra	EVENT	748
+Event	T18	finalizada	EVENT	786
+Event	T19	guerra	EVENT	802
+Event	T20	cesó	EVENT	811
+Event	T21	reclamo	EVENT	836
+Relation	T0	T12	NoRel	true	reconocían	hizo
+Relation	T0	T14	NoRel	true	reconocían	reclamo
+Relation	T0	T18	NoRel	true	reconocían	finalizada
+Relation	T0	T19	NoRel	true	reconocían	guerra
+Relation	T0	T8	NoRel	true	reconocían	derrocado
+Relation	T1	T19	NoRel	true	espera	guerra
+Relation	T1	T2	NoRel	true	espera	celebración
+Relation	T1	T20	NoRel	true	espera	cesó
+Relation	T10	T0	NoRel	true	sustentar	reconocían
+Relation	T10	T21	NoRel	true	sustentar	reclamo
+Relation	T10	T3	NoRel	true	sustentar	arreglo
+Relation	T11	T12	NoRel	true	reclamo	hizo
+Relation	T12	T19	NoRel	true	hizo	guerra
+Relation	T12	T4	NoRel	true	hizo	implicaba
+Relation	T12	T8	NoRel	true	hizo	derrocado
+Relation	T13	T3	NoRel	true	reclamaba	arreglo
+Relation	T14	T13	NoRel	true	reclamo	reclamaba
+Relation	T16	T1	NoRel	true	coyuntura	espera
+Relation	T16	T7	NoRel	true	coyuntura	incitado
+Relation	T17	T19	NoRel	true	guerra	guerra
+Relation	T17	T8	NoRel	true	guerra	derrocado
+Relation	T18	T16	NoRel	true	finalizada	coyuntura
+Relation	T19	T7	NoRel	true	guerra	incitado
+Relation	T19	T9	NoRel	true	guerra	fin
+Relation	T2	T17	NoRel	true	celebración	guerra
+Relation	T2	T20	NoRel	true	celebración	cesó
+Relation	T20	T11	NoRel	true	cesó	reclamo
+Relation	T20	T12	NoRel	true	cesó	hizo
+Relation	T21	T13	NoRel	true	reclamo	reclamaba
+Relation	T21	T9	NoRel	true	reclamo	fin
+Relation	T3	T11	NoRel	true	arreglo	reclamo
+Relation	T3	T18	NoRel	true	arreglo	finalizada
+Relation	T4	T3	NoRel	true	implicaba	arreglo
+Relation	T5	T18	NoRel	true	inició	finalizada
+Relation	T5	T8	NoRel	true	inició	derrocado
+Relation	T6	T14	NoRel	true	reclamo	reclamo
+Relation	T6	T4	NoRel	true	reclamo	implicaba
+Relation	T6	T7	NoRel	true	reclamo	incitado
+Relation	T7	T9	NoRel	true	incitado	fin
+Relation	T8	T13	NoRel	true	derrocado	reclamaba
+Relation	T8	T3	NoRel	true	derrocado	arreglo
+Relation	T8	T7	NoRel	true	derrocado	incitado
+Relation	T9	T16	NoRel	true	fin	coyuntura
+Relation	T9	T17	NoRel	true	fin	guerra
+Relation	T9	T3	NoRel	true	fin	arreglo
+Relation	T9	T5	NoRel	true	fin	inició
+Relation	T9	T8	NoRel	true	fin	derrocado

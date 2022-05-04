@@ -1,0 +1,70 @@
+Text	Udviklingen i forholdet mellem godsejerne og bønderne forløb derfra forskelligt fra land til land , men generelt blev forholdene især forværret for bønderne i områder med få eller ingen byer , da de ikke kunne flygte til byerne og finde arbejde – dvs. hovedsagligt Østeuropa .	Flere af Danmarks egne i tiden efter _ Den sorte død _ havde mange ødegårde , for eksempel , da Dronning Margrethe I overtog Brøndum hovedgård i Slet herred i 1401 lå 34 ud af 48 gårde øde .	I Danmark sås også et fald i jordrenten , for eksempel fik Århus domkapitels gods i 1427 fra 17 % til 44 % af ydelserne i byerne Hinnerup , Kasted og Kysing i forhold til årene omkring 1315 .	Jordrentefaldet og ødelægningen er forklaret med et fald i befolkningstallet .	Skønt nogle historikere har ment at der var nedgang i befolkningstallet før Den sorte død har historikeren Erik Ulsig argumenteret for at Den sorte død har haft en helt afgørende betydning .
+Event	T0	Udviklingen	EVENT	0
+Event	T1	forløb	EVENT	54
+Event	T2	flygte	EVENT	210
+Event	T3	finde	EVENT	231
+Event	T5	overtog	EVENT	394
+Event	T6	sås	EVENT	478
+Event	T7	fald	EVENT	490
+Event	T8	fik	EVENT	523
+Event	T9	Jordrentefaldet	EVENT	660
+Event	T10	ødelægningen	EVENT	679
+Event	T11	forklaret	EVENT	695
+Event	T12	fald	EVENT	712
+Event	T13	nedgang	EVENT	783
+Event	T15	argumenteret	EVENT	857
+Event	T17	forværret	EVENT	134
+Event	T4	Den sorte død	EVENT	316
+Event	T14	Den sorte død	EVENT	815
+Event	T16	Den sorte død	EVENT	877
+Event	T18	betydning	EVENT	918
+Event	T19	øde	EVENT	462
+Event	T20	ødegårde	EVENT	344
+Relation	T12	T9	CauseEffect	true	fald	Jordrentefaldet
+Relation	T9	T12	EffectCause	true	Jordrentefaldet	fald
+Relation	T12	T10	CauseEffect	true	fald	ødelægningen
+Relation	T10	T12	EffectCause	true	ødelægningen	fald
+Relation	T20	T7	CauseEffect	true	ødegårde	fald
+Relation	T7	T20	EffectCause	true	fald	ødegårde
+Relation	T2	T17	CauseEffect	true	flygte	forværret
+Relation	T17	T2	EffectCause	true	forværret	flygte
+Relation	T3	T17	CauseEffect	true	finde	forværret
+Relation	T17	T3	EffectCause	true	forværret	finde
+Relation	T1	T12	NoRel	true	forløb	fald
+Relation	T1	T3	NoRel	true	forløb	finde
+Relation	T10	T13	NoRel	true	ødelægningen	nedgang
+Relation	T11	T15	NoRel	true	forklaret	argumenteret
+Relation	T11	T9	NoRel	true	forklaret	Jordrentefaldet
+Relation	T12	T0	NoRel	true	fald	Udviklingen
+Relation	T12	T14	NoRel	true	fald	Den sorte død
+Relation	T12	T16	NoRel	true	fald	Den sorte død
+Relation	T12	T19	NoRel	true	fald	øde
+Relation	T12	T6	NoRel	true	fald	sås
+Relation	T13	T14	NoRel	true	nedgang	Den sorte død
+Relation	T13	T19	NoRel	true	nedgang	øde
+Relation	T14	T2	NoRel	true	Den sorte død	flygte
+Relation	T17	T8	NoRel	true	forværret	fik
+Relation	T18	T10	NoRel	true	betydning	ødelægningen
+Relation	T18	T14	NoRel	true	betydning	Den sorte død
+Relation	T18	T20	NoRel	true	betydning	ødegårde
+Relation	T18	T9	NoRel	true	betydning	Jordrentefaldet
+Relation	T19	T1	NoRel	true	øde	forløb
+Relation	T19	T13	NoRel	true	øde	nedgang
+Relation	T19	T15	NoRel	true	øde	argumenteret
+Relation	T19	T5	NoRel	true	øde	overtog
+Relation	T2	T14	NoRel	true	flygte	Den sorte død
+Relation	T4	T0	NoRel	true	Den sorte død	Udviklingen
+Relation	T4	T10	NoRel	true	Den sorte død	ødelægningen
+Relation	T4	T15	NoRel	true	Den sorte død	argumenteret
+Relation	T4	T19	NoRel	true	Den sorte død	øde
+Relation	T4	T8	NoRel	true	Den sorte død	fik
+Relation	T5	T15	NoRel	true	overtog	argumenteret
+Relation	T5	T20	NoRel	true	overtog	ødegårde
+Relation	T6	T18	NoRel	true	sås	betydning
+Relation	T7	T12	NoRel	true	fald	fald
+Relation	T7	T4	NoRel	true	fald	Den sorte død
+Relation	T7	T8	NoRel	true	fald	fik
+Relation	T8	T11	NoRel	true	fik	forklaret
+Relation	T9	T16	NoRel	true	Jordrentefaldet	Den sorte død
+Relation	T9	T19	NoRel	true	Jordrentefaldet	øde
+Relation	T9	T20	NoRel	true	Jordrentefaldet	ødegårde

@@ -1,0 +1,27 @@
+Text	31 Mart 1944'te 572 Lancaster bombardıman uçağı , 214 Halifax bombardıman uçağı ve 9 spifire avcı uçağı gece 22.00'da Nürnberg şehrini bombalamak için İngiltere'den havalandı .	Uçakların 55'i çeşitli sebeplerden dolayı geri döndü .	Uçaklar Belçika sınırını 01.00'da geçtikten sonra Alman radarları tarafından hızlıca tespit edildiler .	Alman avcı uçakları düşmanı karşılamak için hızlıca üslerinden havalandı ilk bir saatte 45 uçak düşürdü .	Dalga dalga gönderilen Alman avcı uçakları düşmana ağır darbeler vurdu ve uçakların formasyonunu bozdu .
+Event	T0	bombalamak	EVENT	135
+Event	T1	havalandı	EVENT	165
+Event	T2	döndü	EVENT	224
+Event	T3	geçtikten	EVENT	266
+Event	T4	edildiler	EVENT	324
+Event	T5	havalandı	EVENT	399
+Event	T6	düşürdü	EVENT	432
+Event	T7	vurdu	EVENT	507
+Event	T8	bozdu	EVENT	539
+Event	T9	gönderilen	EVENT	454
+Relation	T4	T5	CauseEffect	true	edildiler	havalandı
+Relation	T5	T4	EffectCause	true	havalandı	edildiler
+Relation	T5	T6	CauseEffect	true	havalandı	düşürdü
+Relation	T6	T5	EffectCause	true	düşürdü	havalandı
+Relation	T5	T7	CauseEffect	true	havalandı	vurdu
+Relation	T7	T5	EffectCause	true	vurdu	havalandı
+Relation	T5	T8	CauseEffect	true	havalandı	bozdu
+Relation	T8	T5	EffectCause	true	bozdu	havalandı
+Relation	T0	T5	NoRel	true	bombalamak	havalandı
+Relation	T4	T8	NoRel	true	edildiler	bozdu
+Relation	T4	T9	NoRel	true	edildiler	gönderilen
+Relation	T5	T2	NoRel	true	havalandı	döndü
+Relation	T6	T4	NoRel	true	düşürdü	edildiler
+Relation	T6	T8	NoRel	true	düşürdü	bozdu
+Relation	T9	T2	NoRel	true	gönderilen	döndü
+Relation	T9	T6	NoRel	true	gönderilen	düşürdü

@@ -1,0 +1,31 @@
+Text	Hayatta kalanların 17'si yaralandı .	1. hava koşullarının iniş için gereken minimum güvenlik koşulların altına inmesi rağmen mürettebatı bu durumdan haberdar etmeyen hava trafik kontrolörü ; 2. yaklaşımı uygularken ve güvensiz havalarda uçarken mürettebat hatası .	Kazanın ikincil bir nedeni , METAR'ın kötü hava yoğunlaştığında 20.00 , 20.15 ve 20.30'da hava durumu raporları sağlamamasıydı ve bu da yaklaşımla devam etmesi gerekip gerekmediğini belirlemek için mürettebata yardımcı olacaktı .	Kazakistan Sivil Havacılık Müdürlüğü başkanının , o gün on beş saat çalıştığı ve uçuş için sağlık sertifikası olmadığı için mürettebata uçuşta yardımcı olmaması gerektiği de belirtildi .	Kategori : 1965'te Sovyetler Birliği Kategori : Aeroflot kazaları ve olayları Kategori : Kazakistan SSC'deki havacılık kazaları ve olayları Kategori : İncelenmemiş çeviri içeren sayfalar Kategori : 1965'te havacılık kazaları ve olayları Kategori : İlyuşin İl - 18 içeren kazalar ve olaylar
+Event	T0	yaralandı	EVENT	25
+Event	T1	iniş	EVENT	58
+Event	T2	inmesi	EVENT	111
+Event	T3	uygularken	EVENT	204
+Event	T4	hatası	EVENT	256
+Event	T5	etmesi	EVENT	418
+Event	T6	çalıştığı	EVENT	563
+Event	T7	uçuş	EVENT	576
+Event	T8	belirtildi	EVENT	669
+Event	T9	kazalar	EVENT	953
+Event	T10	olaylar	EVENT	964
+Event	T11	Kazanın	EVENT	265
+Event	T12	yardımcı	EVENT	475
+Relation	T2	T11	CauseEffect	true	inmesi	Kazanın
+Relation	T11	T2	EffectCause	true	Kazanın	inmesi
+Relation	T4	T11	CauseEffect	true	hatası	Kazanın
+Relation	T11	T4	EffectCause	true	Kazanın	hatası
+Relation	T0	T1	NoRel	true	yaralandı	iniş
+Relation	T0	T12	NoRel	true	yaralandı	yardımcı
+Relation	T11	T1	NoRel	true	Kazanın	iniş
+Relation	T11	T9	NoRel	true	Kazanın	kazalar
+Relation	T12	T8	NoRel	true	yardımcı	belirtildi
+Relation	T2	T9	NoRel	true	inmesi	kazalar
+Relation	T3	T11	NoRel	true	uygularken	Kazanın
+Relation	T3	T4	NoRel	true	uygularken	hatası
+Relation	T4	T6	NoRel	true	hatası	çalıştığı
+Relation	T5	T11	NoRel	true	etmesi	Kazanın
+Relation	T9	T0	NoRel	true	kazalar	yaralandı
+Relation	T9	T1	NoRel	true	kazalar	iniş
+Relation	T9	T11	NoRel	true	kazalar	Kazanın

@@ -1,0 +1,34 @@
+Text	Protestoların bastırılmasının rağmen , 1956 olayları sonunda Gürcistan halkı Sovyetler Birliği'ne olan sadakatinin ciddi şekilde sorgulamaya başladı .	Tarihçi Ronald Grigor Suny , " Sovyet hükûmetinden gelen hızlı ve acımasız tepki , Sovyet sisteminin ne kadarının değişeceğine ve Stalin'in otoriterizminin ne kadarını koruyacağına dair ikilemi çözemediğini açıkça gösterdi .	Hükûmetin Tiflis'teki kafa karışıklığı , reformun partinin temel iktidar tekelini koruma kararlılığıyla sınırlı olacağının kanlı bir işaretiydi .	" yorumunu yaptı .	1956 olayının hemen ardından Sovyetler Birliği'nden açıkça ayrılma çağrısı yapan ilk Gürcü yeraltı grupları ortaya çıktı .
+Event	T0	olayları	EVENT	44
+Event	T1	tepki	EVENT	226
+Event	T3	gösterdi	EVENT	365
+Event	T5	işaretiydi	EVENT	509
+Event	T6	yaptı	EVENT	533
+Event	T7	çıktı	EVENT	656
+Event	T8	Protestoların	EVENT	0
+Event	T9	bastırılmasının	EVENT	14
+Event	T10	başladı	EVENT	141
+Event	T2	reformun	EVENT	417
+Event	T4	olayının	EVENT	546
+Event	T11	çağrısı	EVENT	608
+Relation	T8	T9	CauseEffect	true	Protestoların	bastırılmasının
+Relation	T9	T8	EffectCause	true	bastırılmasının	Protestoların
+Relation	T0	T10	CauseEffect	true	olayları	başladı
+Relation	T10	T0	EffectCause	true	başladı	olayları
+Relation	T1	T3	CauseEffect	true	tepki	gösterdi
+Relation	T3	T1	EffectCause	true	gösterdi	tepki
+Relation	T10	T11	CauseEffect	true	başladı	çağrısı
+Relation	T11	T10	EffectCause	true	çağrısı	başladı
+Relation	T10	T7	CauseEffect	true	başladı	çıktı
+Relation	T7	T10	EffectCause	true	çıktı	başladı
+Relation	T8	T0	CauseEffect	true	Protestoların	olayları
+Relation	T0	T8	EffectCause	true	olayları	Protestoların
+Relation	T0	T3	NoRel	true	olayları	gösterdi
+Relation	T11	T4	NoRel	true	çağrısı	olayının
+Relation	T2	T0	NoRel	true	reformun	olayları
+Relation	T2	T3	NoRel	true	reformun	gösterdi
+Relation	T3	T2	NoRel	true	gösterdi	reformun
+Relation	T4	T11	NoRel	true	olayının	çağrısı
+Relation	T5	T0	NoRel	true	işaretiydi	olayları
+Relation	T7	T3	NoRel	true	çıktı	gösterdi
+Relation	T9	T10	NoRel	true	bastırılmasının	başladı

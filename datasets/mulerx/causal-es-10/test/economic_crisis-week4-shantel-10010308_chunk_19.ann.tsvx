@@ -1,0 +1,49 @@
+Text	Brandon Castañeda regresó a la competencia el 15 de septiembre de 2021 para reemplazar a Jesús " Chuy " Almada quien abandonó la competencia por motivos personales el día anterior .	El participante ingresó a la competencia para sustituir a un guerrero debido a múltiples contagios de COVID-19 .	En la octava semana , se anunció que Agustín Fernández , Asaf Torres y Nicola Porcella incumplieron con los protocolos de cuarentena , por lo que fueron suspendidos del programa , siendo temporalmente sustituidos por los refuerzos Aldo De Nigris , Jorge Losa y Miguel Montaño ( sustituyendo en ese orden a Agustín , Asaf y Nicola ) .	Al inicio de la undécima semana Jorge Losa estuvo sustituyendo a Jesús " Chuy " Almada debido a compromisos personales .	Jorge Losa , Diego Montu y Paola Peña fueron repechados por sus respectivos equipos al final de la undécima semana , regresando formalmente a la competencia en la duodécima semana .
+Event	T0	regresó	EVENT	18
+Event	T1	competencia	EVENT	31
+Event	T2	abandonó	EVENT	117
+Event	T3	competencia	EVENT	129
+Event	T4	ingresó	EVENT	198
+Event	T5	competencia	EVENT	211
+Event	T6	sustituir	EVENT	228
+Event	T7	contagios	EVENT	271
+Event	T8	anunció	EVENT	320
+Event	T9	incumplieron	EVENT	382
+Event	T10	suspendidos	EVENT	448
+Event	T11	sustituidos	EVENT	496
+Event	T12	sustituyendo	EVENT	573
+Event	T13	sustituyendo	EVENT	679
+Event	T14	repechados	EVENT	795
+Event	T15	regresando	EVENT	867
+Event	T16	competencia	EVENT	895
+Relation	T7	T6	CauseEffect	true	contagios	sustituir
+Relation	T6	T7	EffectCause	true	sustituir	contagios
+Relation	T9	T10	CauseEffect	true	incumplieron	suspendidos
+Relation	T10	T9	EffectCause	true	suspendidos	incumplieron
+Relation	T10	T11	CauseEffect	true	suspendidos	sustituidos
+Relation	T11	T10	EffectCause	true	sustituidos	suspendidos
+Relation	T0	T1	NoRel	true	regresó	competencia
+Relation	T0	T14	NoRel	true	regresó	repechados
+Relation	T1	T9	NoRel	true	competencia	incumplieron
+Relation	T11	T14	NoRel	true	sustituidos	repechados
+Relation	T11	T16	NoRel	true	sustituidos	competencia
+Relation	T11	T2	NoRel	true	sustituidos	abandonó
+Relation	T11	T3	NoRel	true	sustituidos	competencia
+Relation	T11	T4	NoRel	true	sustituidos	ingresó
+Relation	T12	T10	NoRel	true	sustituyendo	suspendidos
+Relation	T12	T6	NoRel	true	sustituyendo	sustituir
+Relation	T13	T9	NoRel	true	sustituyendo	incumplieron
+Relation	T15	T6	NoRel	true	regresando	sustituir
+Relation	T15	T7	NoRel	true	regresando	contagios
+Relation	T3	T9	NoRel	true	competencia	incumplieron
+Relation	T4	T3	NoRel	true	ingresó	competencia
+Relation	T5	T11	NoRel	true	competencia	sustituidos
+Relation	T5	T6	NoRel	true	competencia	sustituir
+Relation	T6	T5	NoRel	true	sustituir	competencia
+Relation	T6	T8	NoRel	true	sustituir	anunció
+Relation	T7	T13	NoRel	true	contagios	sustituyendo
+Relation	T7	T15	NoRel	true	contagios	regresando
+Relation	T7	T5	NoRel	true	contagios	competencia
+Relation	T8	T0	NoRel	true	anunció	regresó
+Relation	T9	T1	NoRel	true	incumplieron	competencia
+Relation	T9	T7	NoRel	true	incumplieron	contagios

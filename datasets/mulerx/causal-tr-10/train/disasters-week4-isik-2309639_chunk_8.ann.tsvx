@@ -1,0 +1,33 @@
+Text	1 ve 3 Ekim 1815'te Kalküta yakınındaki Hint Okyanusu'nda bir ponza yığını bulundu .	23 Nisan'da zirve hâlâ yoğun kül bulutuyla kaplı bir hâldeydi .	Patlama 15 Temmuz'da sona erdi ancak duman emisyonları 23 Ağustos'a kadar sürdü .	Patlamanın üzerinden dört yıl sonra Ağustos 1819'a kadar alev ve sarsıntılı gibi artçı olaylar yaşanmaya devam etti .	Orta büyüklükte bir tsunami , saat 10 civarında Sanggar'da 4 metreye kadar yükselerek 10 Nisan'da Endonezya takımadalarındaki çeşitli adaların kıyılarına çarptı .
+Event	T0	bulundu	EVENT	75
+Event	T1	zirve	EVENT	97
+Event	T2	Patlama	EVENT	149
+Event	T3	erdi	EVENT	175
+Event	T4	emisyonları	EVENT	192
+Event	T5	sürdü	EVENT	223
+Event	T6	Patlamanın	EVENT	231
+Event	T7	sarsıntılı	EVENT	296
+Event	T8	etti	EVENT	342
+Event	T9	tsunami	EVENT	369
+Event	T10	yükselerek	EVENT	424
+Event	T11	çarptı	EVENT	503
+Relation	T9	T10	CauseEffect	true	tsunami	yükselerek
+Relation	T10	T9	EffectCause	true	yükselerek	tsunami
+Relation	T10	T11	CauseEffect	true	yükselerek	çarptı
+Relation	T11	T10	EffectCause	true	çarptı	yükselerek
+Relation	T0	T3	NoRel	true	bulundu	erdi
+Relation	T1	T5	NoRel	true	zirve	sürdü
+Relation	T10	T3	NoRel	true	yükselerek	erdi
+Relation	T10	T6	NoRel	true	yükselerek	Patlamanın
+Relation	T11	T5	NoRel	true	çarptı	sürdü
+Relation	T11	T7	NoRel	true	çarptı	sarsıntılı
+Relation	T2	T0	NoRel	true	Patlama	bulundu
+Relation	T2	T3	NoRel	true	Patlama	erdi
+Relation	T2	T6	NoRel	true	Patlama	Patlamanın
+Relation	T4	T11	NoRel	true	emisyonları	çarptı
+Relation	T4	T7	NoRel	true	emisyonları	sarsıntılı
+Relation	T4	T9	NoRel	true	emisyonları	tsunami
+Relation	T5	T11	NoRel	true	sürdü	çarptı
+Relation	T6	T2	NoRel	true	Patlamanın	Patlama
+Relation	T8	T10	NoRel	true	etti	yükselerek
+Relation	T9	T6	NoRel	true	tsunami	Patlamanın

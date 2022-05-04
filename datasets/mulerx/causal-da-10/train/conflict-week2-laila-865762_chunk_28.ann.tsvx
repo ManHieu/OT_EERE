@@ -1,0 +1,25 @@
+Text	Blot 10 dage senere blev El Salmana besat af osmanniske hærstyrker da de samledes til_slaget ved Romani .	I midten af juni indledte den 1. eskadrille fra Australian Flying Corps aktiv tjeneste med sin "B" Flight ved Suez og foretog rekognosceringsflyvninger .	Den 9 juli blev "A" Flight stationeret ved Sherika i Øvre Egypten mens " C" Flight fik base ved Qantara .	Slaget ved Romani fandt sted nær den egyptiske by af samme navn 37 km øst for Suez-kanalen fra kort efter midnat mellem den 3. og 4. august og indtil de angribende styrker trak sig tilbage omkring middag den 5. august .	Centralmagternes styrke af østrigere , tyskere og osmannere under Kress von Kressenstein forsøgte at stoppe den britiske generobring af egyptisk område på Sinaihalvøen og ville afskære Suez-kanalen ved at kunne udsætte den for artilleribeskydning .
+Event	T0	besat	EVENT	36
+Event	T10	forsøgte	EVENT	675
+Event	T11	stoppe	EVENT	687
+Event	T12	generobring	EVENT	707
+Event	T13	afskære	EVENT	763
+Event	T14	udsætte	EVENT	797
+Event	T15	artilleribeskydning	EVENT	813
+Event	T2	indledte	EVENT	123
+Event	T4	Flight	EVENT	205
+Event	T5	rekognosceringsflyvninger	EVENT	232
+Event	T6	stationeret	EVENT	287
+Event	T8	Slaget	EVENT	366
+Relation	T0	T10	NoRel	true	besat	forsøgte
+Relation	T0	T15	NoRel	true	besat	artilleribeskydning
+Relation	T11	T2	NoRel	true	stoppe	indledte
+Relation	T12	T0	NoRel	true	generobring	besat
+Relation	T13	T6	NoRel	true	afskære	stationeret
+Relation	T14	T10	NoRel	true	udsætte	forsøgte
+Relation	T15	T12	NoRel	true	artilleribeskydning	generobring
+Relation	T2	T0	NoRel	true	indledte	besat
+Relation	T2	T12	NoRel	true	indledte	generobring
+Relation	T2	T13	NoRel	true	indledte	afskære
+Relation	T6	T15	NoRel	true	stationeret	artilleribeskydning
+Relation	T8	T6	NoRel	true	Slaget	stationeret

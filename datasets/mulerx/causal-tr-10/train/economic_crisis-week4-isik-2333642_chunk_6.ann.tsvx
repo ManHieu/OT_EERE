@@ -1,0 +1,29 @@
+Text	Ayrıca bazı marketlerde ve bakkalarda temel tüketim maddelerine satış sınırlaması getirildi .	Yine bu süreç içerisinde pek çok dükkan iflas bayrağını çekti .	128 Milyar Dolar nerede iddialarını eski Türkiye Cumhuriyet Merkez Bankası Başkanı yeni bir iddia ile doğruladı , " kaybolan 128 değil 140 Milyar Dolardı " dedi .	Türkiye döviz ve borç krizi Kategori : 2019'da ekonomi Kategori : 2020'de ekonomi Kategori : 2021'de ekonomi Kategori : 2022' de ekonomi Türkiye döviz ve borç krizi Kategori : Türkiye'de ekonomik krizler Döviz ve borç krizi Kategori : 2019'da Türkiye Kategori : 2020'de Türkiye Kategori : 2021'de Türkiye Kategori : 2022'de Türkiye	https : / / www. sozcu . com . tr / 2021 / ekonomi / tl - faiz - indirimi - sinyali - verildi - gunden - bu - yana - yuzde - 25 - deger - kaybetti - 6782763 /
+Event	T0	getirildi	EVENT	82
+Event	T1	süreç	EVENT	102
+Event	T3	çekti	EVENT	150
+Event	T5	doğruladı	EVENT	260
+Event	T6	krizi	EVENT	343
+Event	T7	krizi	EVENT	480
+Event	T2	iddialarını	EVENT	182
+Event	T4	krizler	EVENT	517
+Event	T8	krizi	EVENT	539
+Event	T10	kaybetti	EVENT	791
+Event	T9	sinyali	EVENT	729
+Relation	T1	T3	CauseEffect	true	süreç	çekti
+Relation	T3	T1	EffectCause	true	çekti	süreç
+Relation	T2	T5	CauseEffect	true	iddialarını	doğruladı
+Relation	T5	T2	EffectCause	true	doğruladı	iddialarını
+Relation	T9	T10	CauseEffect	true	sinyali	kaybetti
+Relation	T10	T9	EffectCause	true	kaybetti	sinyali
+Relation	T0	T8	NoRel	true	getirildi	krizi
+Relation	T1	T10	NoRel	true	süreç	kaybetti
+Relation	T3	T10	NoRel	true	çekti	kaybetti
+Relation	T3	T6	NoRel	true	çekti	krizi
+Relation	T4	T0	NoRel	true	krizler	getirildi
+Relation	T4	T1	NoRel	true	krizler	süreç
+Relation	T5	T0	NoRel	true	doğruladı	getirildi
+Relation	T7	T6	NoRel	true	krizi	krizi
+Relation	T7	T8	NoRel	true	krizi	krizi
+Relation	T7	T9	NoRel	true	krizi	sinyali
+Relation	T8	T10	NoRel	true	krizi	kaybetti

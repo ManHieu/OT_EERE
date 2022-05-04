@@ -1,0 +1,41 @@
+Text	آپ کی شاعری زبان زدعام وخاص ہو گئی اور آپ ہر مکتب فکر کے لوگوں میں ہر دلعزیز شاعر کی حیثیت سے متعارف ہو_ئے ۔	پاکستان کی آزادی کے بعد ہو نے والے فسادات میں آپ کی دکان لوٹ لی گئی جس کے سبب آپ زبردست مالی بحر ان کا شکار ہو کر باغبا نپورہ سے بادشاہی مسجد کے قریب حجرے میں منتقل ہو گئے ۔	آپ کے پاس کل اثاثہ ان کی چند کتابیں تھیں ۔	1949 میں آپ ٹکسالی گیٹ میں واقع اس حجرے میں منتقل ہو گئے جس میں شاہ حسین ( مادھو لال حسین ) بھی مقیم رہے تھے اور تادم مرگ یہی حجرہ ان کا مسکن ٹھہرا ۔	اسی دور میں استاد دامن کی شادی ہوئی لیکن کچھ ہی عر_صہ بعد ان کا کم سن بیٹا اور بیوی انتقال کر گئے اور پھر تمام عمر شادی نہ کی ۔
+Event	T0	آزادی	EVENT	120
+Event	T1	فسادات	EVENT	144
+Event	T2	شکار	EVENT	212
+Event	T4	انتقال	EVENT	560
+Event	T5	شادی	EVENT	591
+Event	T6	گئی	EVENT	31
+Event	T7	ہو_ئے	EVENT	101
+Event	T8	لوٹ	EVENT	166
+Event	T9	حجرے	EVENT	259
+Event	T11	حجرے	EVENT	361
+Event	T12	مقیم	EVENT	422
+Event	T14	تادم مرگ	EVENT	439
+Event	T13	ٹھہرا	EVENT	468
+Event	T10	شادی	EVENT	502
+Relation	T1	T8	CauseEffect	true	فسادات	لوٹ
+Relation	T8	T1	EffectCause	true	لوٹ	فسادات
+Relation	T8	T2	CauseEffect	true	لوٹ	شکار
+Relation	T2	T8	EffectCause	true	شکار	لوٹ
+Relation	T2	T9	CauseEffect	true	شکار	حجرے
+Relation	T9	T2	EffectCause	true	حجرے	شکار
+Relation	T0	T7	NoRel	true	آزادی	ہو_ئے
+Relation	T1	T5	NoRel	true	فسادات	شادی
+Relation	T1	T7	NoRel	true	فسادات	ہو_ئے
+Relation	T1	T9	NoRel	true	فسادات	حجرے
+Relation	T10	T2	NoRel	true	شادی	شکار
+Relation	T11	T8	NoRel	true	حجرے	لوٹ
+Relation	T12	T1	NoRel	true	مقیم	فسادات
+Relation	T12	T11	NoRel	true	مقیم	حجرے
+Relation	T13	T10	NoRel	true	ٹھہرا	شادی
+Relation	T14	T6	NoRel	true	تادم مرگ	گئی
+Relation	T2	T4	NoRel	true	شکار	انتقال
+Relation	T2	T7	NoRel	true	شکار	ہو_ئے
+Relation	T4	T1	NoRel	true	انتقال	فسادات
+Relation	T4	T13	NoRel	true	انتقال	ٹھہرا
+Relation	T5	T13	NoRel	true	شادی	ٹھہرا
+Relation	T7	T1	NoRel	true	ہو_ئے	فسادات
+Relation	T7	T10	NoRel	true	ہو_ئے	شادی
+Relation	T7	T11	NoRel	true	ہو_ئے	حجرے
+Relation	T8	T9	NoRel	true	لوٹ	حجرے
+Relation	T9	T8	NoRel	true	حجرے	لوٹ

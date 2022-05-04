@@ -1,0 +1,56 @@
+Text	Gelen haberlere göre tsunamide zarar gören kasabaların arasında Kamaishi , Miyako , Ōtsuchi , ve Yamada ( Iwate ilinde ) , Namie , Sōma ve Minamisōma ( Fukuşima ilinde ) ve Higashimatsushima , Onagawa , Natori , Ishinomaki , and Kesennuma ( Miyagi ilinde ) vardır .	Tsunaminin en ciddi etkileri kuzeyde Erimo'dan güneyde Ōarai'ye kadar olan 670 kilometrelik bir kıyı şeridinde hissedildi ve bölgedeki zararın çoğu depremi izleyen saat içerisinde meydana geldi .	Ōarai yakınlarında tsunamiden kaynaklanan dev bir anafor görüntülendi .	Tsunami Miyagi'ye bağlı Miyatojima adasına olan köprüyü tamamen önüne katarak götürdü ve 900 ada sakini mahsur kaldı .	İki metre yüksekliğindeki bir tsunami depremden iki saat sonra Chiba ilini vurdu ve Asahi gibi şehirlerde hasara yol açtı .
+Event	T0	gören	EVENT	37
+Event	T1	Tsunaminin	EVENT	266
+Event	T2	etkileri	EVENT	286
+Event	T3	hissedildi	EVENT	377
+Event	T4	zararın	EVENT	401
+Event	T6	görüntülendi	EVENT	519
+Event	T7	Tsunami	EVENT	534
+Event	T8	götürdü	EVENT	612
+Event	T9	kaldı	EVENT	645
+Event	T10	depremden	EVENT	691
+Event	T11	vurdu	EVENT	728
+Event	T13	tsunamide	EVENT	21
+Event	T14	depremi	EVENT	414
+Event	T5	tsunamiden	EVENT	481
+Event	T12	hasara	EVENT	759
+Relation	T13	T0	CauseEffect	true	tsunamide	gören
+Relation	T0	T13	EffectCause	true	gören	tsunamide
+Relation	T1	T2	CauseEffect	true	Tsunaminin	etkileri
+Relation	T2	T1	EffectCause	true	etkileri	Tsunaminin
+Relation	T1	T3	CauseEffect	true	Tsunaminin	hissedildi
+Relation	T3	T1	EffectCause	true	hissedildi	Tsunaminin
+Relation	T1	T4	CauseEffect	true	Tsunaminin	zararın
+Relation	T4	T1	EffectCause	true	zararın	Tsunaminin
+Relation	T14	T1	CauseEffect	true	depremi	Tsunaminin
+Relation	T1	T14	EffectCause	true	Tsunaminin	depremi
+Relation	T1	T6	CauseEffect	true	Tsunaminin	görüntülendi
+Relation	T6	T1	EffectCause	true	görüntülendi	Tsunaminin
+Relation	T8	T9	CauseEffect	true	götürdü	kaldı
+Relation	T9	T8	EffectCause	true	kaldı	götürdü
+Relation	T7	T12	CauseEffect	true	Tsunami	hasara
+Relation	T12	T7	EffectCause	true	hasara	Tsunami
+Relation	T0	T7	NoRel	true	gören	Tsunami
+Relation	T11	T10	NoRel	true	vurdu	depremden
+Relation	T11	T6	NoRel	true	vurdu	görüntülendi
+Relation	T12	T0	NoRel	true	hasara	gören
+Relation	T12	T5	NoRel	true	hasara	tsunamiden
+Relation	T13	T7	NoRel	true	tsunamide	Tsunami
+Relation	T14	T13	NoRel	true	depremi	tsunamide
+Relation	T14	T2	NoRel	true	depremi	etkileri
+Relation	T2	T3	NoRel	true	etkileri	hissedildi
+Relation	T2	T4	NoRel	true	etkileri	zararın
+Relation	T2	T5	NoRel	true	etkileri	tsunamiden
+Relation	T3	T13	NoRel	true	hissedildi	tsunamide
+Relation	T3	T7	NoRel	true	hissedildi	Tsunami
+Relation	T4	T3	NoRel	true	zararın	hissedildi
+Relation	T4	T8	NoRel	true	zararın	götürdü
+Relation	T4	T9	NoRel	true	zararın	kaldı
+Relation	T5	T14	NoRel	true	tsunamiden	depremi
+Relation	T6	T10	NoRel	true	görüntülendi	depremden
+Relation	T6	T11	NoRel	true	görüntülendi	vurdu
+Relation	T7	T0	NoRel	true	Tsunami	gören
+Relation	T7	T13	NoRel	true	Tsunami	tsunamide
+Relation	T9	T13	NoRel	true	kaldı	tsunamide
+Relation	T9	T4	NoRel	true	kaldı	zararın
+Relation	T9	T5	NoRel	true	kaldı	tsunamiden

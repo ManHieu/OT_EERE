@@ -1,0 +1,53 @@
+Text	En el Libro Guinness de los récords figuraba como una de las mayores tragedias ferroviarias de la historia , con un balance de 500 a 800 víctimas .	Marshall , John , autor del libro _ Rail facts and feats , _ ofreció una estimación de víctimas de entre 500 y 800 muertos , declarándolo como el tercer accidente ferroviario con más víctimas del mundo .	Estimaciones del sindicato ferroviario de UGT comparten aquella cifra .	Esas cifras son descartadas por otras versiones , que afirman que el balance real podría haber llegado a los 150-200 muertos .	Finalmente , la investigación publicada en 2019 fija el número total de fallecidos en 100 , especificando individualmente su identidad .
+Event	T0	figuraba	EVENT	36
+Event	T1	tragedias	EVENT	69
+Event	T10	accidente	EVENT	301
+Event	T11	Estimaciones	EVENT	352
+Event	T12	descartadas	EVENT	440
+Event	T13	afirman	EVENT	478
+Event	T14	llegado	EVENT	519
+Event	T15	muertos	EVENT	541
+Event	T16	publicada	EVENT	581
+Event	T18	fallecidos	EVENT	623
+Event	T19	especificando	EVENT	643
+Event	T5	ofreció	EVENT	209
+Event	T6	estimación	EVENT	221
+Event	T7	víctimas	EVENT	235
+Event	T8	muertos	EVENT	263
+Event	T9	declarándolo	EVENT	273
+Event	T2	víctimas	EVENT	137
+Relation	T10	T8	CauseEffect	true	accidente	muertos
+Relation	T8	T10	EffectCause	true	muertos	accidente
+Relation	T1	T2	CauseEffect	true	tragedias	víctimas
+Relation	T2	T1	EffectCause	true	víctimas	tragedias
+Relation	T0	T10	NoRel	true	figuraba	accidente
+Relation	T0	T5	NoRel	true	figuraba	ofreció
+Relation	T0	T6	NoRel	true	figuraba	estimación
+Relation	T1	T0	NoRel	true	tragedias	figuraba
+Relation	T1	T13	NoRel	true	tragedias	afirman
+Relation	T10	T6	NoRel	true	accidente	estimación
+Relation	T12	T15	NoRel	true	descartadas	muertos
+Relation	T12	T19	NoRel	true	descartadas	especificando
+Relation	T12	T8	NoRel	true	descartadas	muertos
+Relation	T13	T11	NoRel	true	afirman	Estimaciones
+Relation	T13	T15	NoRel	true	afirman	muertos
+Relation	T13	T19	NoRel	true	afirman	especificando
+Relation	T13	T7	NoRel	true	afirman	víctimas
+Relation	T13	T8	NoRel	true	afirman	muertos
+Relation	T14	T19	NoRel	true	llegado	especificando
+Relation	T15	T19	NoRel	true	muertos	especificando
+Relation	T15	T6	NoRel	true	muertos	estimación
+Relation	T16	T14	NoRel	true	publicada	llegado
+Relation	T16	T2	NoRel	true	publicada	víctimas
+Relation	T16	T9	NoRel	true	publicada	declarándolo
+Relation	T18	T10	NoRel	true	fallecidos	accidente
+Relation	T19	T7	NoRel	true	especificando	víctimas
+Relation	T19	T9	NoRel	true	especificando	declarándolo
+Relation	T5	T1	NoRel	true	ofreció	tragedias
+Relation	T6	T19	NoRel	true	estimación	especificando
+Relation	T6	T5	NoRel	true	estimación	ofreció
+Relation	T7	T0	NoRel	true	víctimas	figuraba
+Relation	T7	T1	NoRel	true	víctimas	tragedias
+Relation	T8	T14	NoRel	true	muertos	llegado
+Relation	T8	T7	NoRel	true	muertos	víctimas
+Relation	T9	T18	NoRel	true	declarándolo	fallecidos

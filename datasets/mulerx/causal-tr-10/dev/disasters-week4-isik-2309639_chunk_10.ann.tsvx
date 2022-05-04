@@ -1,0 +1,21 @@
+Text	Boylamsal rüzgarlar bu ince parçacıkları dünyaya yayarak görülebilir olaylar yarattı .	28 Haziran ile 2 Temmuz 1815 ve 3 Eylül ile 7 Ekim 1815 tarihleri_arasında Londra'da uzun ve parlak renkli gün batımları ve alacakaranlıklar sıklıkla görüldü .	Alacakaranlık gökyüzünün ışıltısı tipik olarak ufukta turuncu veya kırmızı , mor veya pembeye rengini aldı .	Tahmini ölüm sayısı , kaynağa bağlı olarak değişmektedir .	Zollinger ( 1855 ) muhtemelen piroklastik akışlardan kaynaklanan doğrudan ölüm sayısını 10 bine çıkarmıştır .
+Event	T0	yarattı	EVENT	77
+Event	T1	görüldü	EVENT	237
+Event	T2	aldı	EVENT	349
+Event	T3	ölüm	EVENT	364
+Event	T4	değişmektedir	EVENT	399
+Event	T5	ölüm	EVENT	489
+Event	T6	çıkarmıştır	EVENT	511
+Event	T7	rüzgarlar	EVENT	10
+Event	T8	yayarak	EVENT	49
+Relation	T7	T8	CauseEffect	true	rüzgarlar	yayarak
+Relation	T8	T7	EffectCause	true	yayarak	rüzgarlar
+Relation	T8	T0	CauseEffect	true	yayarak	yarattı
+Relation	T0	T8	EffectCause	true	yarattı	yayarak
+Relation	T0	T1	CauseEffect	true	yarattı	görüldü
+Relation	T1	T0	EffectCause	true	görüldü	yarattı
+Relation	T0	T2	CauseEffect	true	yarattı	aldı
+Relation	T2	T0	EffectCause	true	aldı	yarattı
+Relation	T3	T0	NoRel	true	ölüm	yarattı
+Relation	T3	T1	NoRel	true	ölüm	görüldü
+Relation	T4	T3	NoRel	true	değişmektedir	ölüm

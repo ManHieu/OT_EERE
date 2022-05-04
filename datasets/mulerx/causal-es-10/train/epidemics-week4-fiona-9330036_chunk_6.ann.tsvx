@@ -1,0 +1,67 @@
+Text	En 1995 se empleó un cordón sanitario para controlar un estallido de enfermedad por el virus del Ébola en Kikwit , Zaire .	El presidente Mobutu Sese Seko rodeó la ciudad con tropas y suspendió todos los vuelos a la comunidad .	Adentro de Kikwit , la Organización Mundial de la Salud y equipos médicos de Zaire levantaron más cordones sanitarios , entierros aislados y zonas de tratamiento de la población general , conteniendo exitosamente la infección .	Durante el estallido de SARS de 2003 en Canadá , " la cuarentena comunitaria " fue utilizada para reducir la transmisión de la enfermedad con éxito moderado .	Durante la epidemia de influenza de 2018 la ciudad de Gunnison , Colorado se auto-aisló por dos meses para impedir una introducción de la infección .
+Event	T0	empleó	EVENT	11
+Event	T1	controlar	EVENT	43
+Event	T2	estallido	EVENT	56
+Event	T3	enfermedad	EVENT	69
+Event	T4	rodeó	EVENT	154
+Event	T5	suspendió	EVENT	183
+Event	T6	vuelos	EVENT	203
+Event	T7	levantaron	EVENT	310
+Event	T8	entierros	EVENT	347
+Event	T9	tratamiento	EVENT	377
+Event	T10	conteniendo	EVENT	415
+Event	T11	infección	EVENT	443
+Event	T12	estallido	EVENT	466
+Event	T13	utilizada	EVENT	538
+Event	T14	reducir	EVENT	553
+Event	T15	transmisión	EVENT	564
+Event	T16	epidemia	EVENT	625
+Event	T17	influenza	EVENT	637
+Event	T18	auto-aisló	EVENT	691
+Event	T19	introducción	EVENT	733
+Event	T20	infección	EVENT	752
+Event	T21	Ébola	EVENT	97
+Relation	T21	T4	CauseEffect	true	Ébola	rodeó
+Relation	T4	T21	EffectCause	true	rodeó	Ébola
+Relation	T21	T5	CauseEffect	true	Ébola	suspendió
+Relation	T5	T21	EffectCause	true	suspendió	Ébola
+Relation	T1	T13	NoRel	true	controlar	utilizada
+Relation	T1	T5	NoRel	true	controlar	suspendió
+Relation	T10	T14	NoRel	true	conteniendo	reducir
+Relation	T10	T19	NoRel	true	conteniendo	introducción
+Relation	T11	T7	NoRel	true	infección	levantaron
+Relation	T12	T21	NoRel	true	estallido	Ébola
+Relation	T13	T10	NoRel	true	utilizada	conteniendo
+Relation	T13	T11	NoRel	true	utilizada	infección
+Relation	T13	T3	NoRel	true	utilizada	enfermedad
+Relation	T14	T11	NoRel	true	reducir	infección
+Relation	T14	T15	NoRel	true	reducir	transmisión
+Relation	T14	T19	NoRel	true	reducir	introducción
+Relation	T14	T9	NoRel	true	reducir	tratamiento
+Relation	T15	T6	NoRel	true	transmisión	vuelos
+Relation	T16	T17	NoRel	true	epidemia	influenza
+Relation	T16	T5	NoRel	true	epidemia	suspendió
+Relation	T16	T8	NoRel	true	epidemia	entierros
+Relation	T18	T13	NoRel	true	auto-aisló	utilizada
+Relation	T18	T4	NoRel	true	auto-aisló	rodeó
+Relation	T19	T9	NoRel	true	introducción	tratamiento
+Relation	T2	T0	NoRel	true	estallido	empleó
+Relation	T20	T1	NoRel	true	infección	controlar
+Relation	T3	T13	NoRel	true	enfermedad	utilizada
+Relation	T3	T8	NoRel	true	enfermedad	entierros
+Relation	T5	T13	NoRel	true	suspendió	utilizada
+Relation	T5	T6	NoRel	true	suspendió	vuelos
+Relation	T6	T13	NoRel	true	vuelos	utilizada
+Relation	T6	T15	NoRel	true	vuelos	transmisión
+Relation	T6	T18	NoRel	true	vuelos	auto-aisló
+Relation	T7	T19	NoRel	true	levantaron	introducción
+Relation	T7	T2	NoRel	true	levantaron	estallido
+Relation	T7	T6	NoRel	true	levantaron	vuelos
+Relation	T8	T12	NoRel	true	entierros	estallido
+Relation	T8	T19	NoRel	true	entierros	introducción
+Relation	T8	T2	NoRel	true	entierros	estallido
+Relation	T8	T4	NoRel	true	entierros	rodeó
+Relation	T9	T1	NoRel	true	tratamiento	controlar
+Relation	T9	T12	NoRel	true	tratamiento	estallido
+Relation	T9	T17	NoRel	true	tratamiento	influenza
+Relation	T9	T6	NoRel	true	tratamiento	vuelos

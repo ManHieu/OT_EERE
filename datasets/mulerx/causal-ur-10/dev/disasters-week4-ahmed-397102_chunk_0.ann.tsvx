@@ -1,0 +1,18 @@
+Text	ریموٹلی_ٹریگرڈ ( Remotely triggered ) ایسے زلزلے جو بڑے زلزلوں کے اثرات کی وجہ سے دوردراز کے کسی علاقے میں آنے ۔	اس زلزلے یا زلزلوں کو ریموٹلی_ٹریگرڈ زلزلہ کہتے ہیں ۔	دور دراز کے مقام پر آنے والا ریموٹلی_ٹریگر زلزلہ پھر دوسرے دور دراز کے مقام پر کسی زلزلے کی وجہ بن سکتا ہے ۔		
+Event	T0	triggered	EVENT	26
+Event	T1	زلزلے	EVENT	43
+Event	T2	اثرات	EVENT	66
+Event	T3	آنے	EVENT	107
+Event	T4	زلزلے	EVENT	116
+Event	T5	زلزلوں	EVENT	125
+Event	T6	کہتے	EVENT	156
+Event	T7	آنے	EVENT	187
+Event	T8	زلزلہ	EVENT	210
+Event	T9	زلزلے	EVENT	250
+Relation	T2	T3	CauseEffect	true	اثرات	آنے
+Relation	T3	T2	EffectCause	true	آنے	اثرات
+Relation	T0	T5	NoRel	true	triggered	زلزلوں
+Relation	T0	T6	NoRel	true	triggered	کہتے
+Relation	T5	T2	NoRel	true	زلزلوں	اثرات
+Relation	T7	T9	NoRel	true	آنے	زلزلے
+Relation	T9	T8	NoRel	true	زلزلے	زلزلہ

@@ -1,0 +1,33 @@
+Text	Akarsunun yatağının daraltılması ve bu vadiye yapıların inşa edilmesi sel felaketinin en önemli nedenlerinden birisi olduğu ifade edildi .	Ezine Çayı üzerinde bulunan köprülerin kemerli olmaması ve var olanların da çayın üzerinde düz inşa edilmesi selin etkisini arttıran bir diğer etmen olarak nitelendirildi .	Ayrıca ilçedeki tomruk deposundaki ağaç ve kütüklerin köprüleri tıkaması ve suyun geçişine set oluşturması ile halka yeterli bilgilendirme yapılmaması selin nedenleri arasında sıralandı .	Ezine Çayı üzerinde kurulu Bozkurt ilçesi yakınlarındaki Ebru Regülatörü ve Hidro Elektrik Santrali'nin kapaklarının patladığı ve sel felaketine yol açtığı iddia edildi .	İçişleri Bakanlığı ile Kastamonu Valiliği ise iddiayı yalanladı .
+Event	T0	daraltılması	EVENT	20
+Event	T2	edildi	EVENT	130
+Event	T3	nitelendirildi	EVENT	295
+Event	T4	tıkaması	EVENT	376
+Event	T5	oluşturması	EVENT	407
+Event	T7	sıralandı	EVENT	488
+Event	T8	patladığı	EVENT	617
+Event	T9	edildi	EVENT	662
+Event	T10	yalanladı	EVENT	725
+Event	T11	edilmesi	EVENT	61
+Event	T1	felaketinin	EVENT	74
+Relation	T9	T10	CauseEffect	true	edildi	yalanladı
+Relation	T10	T9	EffectCause	true	yalanladı	edildi
+Relation	T1	T2	CauseEffect	true	felaketinin	edildi
+Relation	T2	T1	EffectCause	true	edildi	felaketinin
+Relation	T1	T3	CauseEffect	true	felaketinin	nitelendirildi
+Relation	T3	T1	EffectCause	true	nitelendirildi	felaketinin
+Relation	T1	T7	CauseEffect	true	felaketinin	sıralandı
+Relation	T7	T1	EffectCause	true	sıralandı	felaketinin
+Relation	T1	T9	CauseEffect	true	felaketinin	edildi
+Relation	T9	T1	EffectCause	true	edildi	felaketinin
+Relation	T10	T5	NoRel	true	yalanladı	oluşturması
+Relation	T10	T8	NoRel	true	yalanladı	patladığı
+Relation	T11	T3	NoRel	true	edilmesi	nitelendirildi
+Relation	T11	T8	NoRel	true	edilmesi	patladığı
+Relation	T2	T10	NoRel	true	edildi	yalanladı
+Relation	T2	T3	NoRel	true	edildi	nitelendirildi
+Relation	T2	T4	NoRel	true	edildi	tıkaması
+Relation	T5	T10	NoRel	true	oluşturması	yalanladı
+Relation	T7	T11	NoRel	true	sıralandı	edilmesi
+Relation	T7	T2	NoRel	true	sıralandı	edildi
+Relation	T8	T7	NoRel	true	patladığı	sıralandı

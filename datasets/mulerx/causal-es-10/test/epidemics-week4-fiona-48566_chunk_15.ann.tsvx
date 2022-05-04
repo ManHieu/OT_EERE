@@ -1,0 +1,70 @@
+Text	A finales de febrero de 2006 , en la isla alemana de Rügen , en el Mar Báltico , se detectó el primer caso en Europa de una infección por H5N1 transmitida a un mamífero , concretamente un gato encontrado muerto .	Por tal razón , se recomendó aislar a los gatos y otros animales domésticos del contacto con el exterior en aquellas zonas en donde se hubieran producido brotes ( WN ) .	En un refugio de Austria conocido como el _ Arca de Noé _ , en el que se habían sacrificado previamente 32 aves , se descubrieron tres casos más en gatos .	Los animales fueron trasladados a Viena para ser examinados ( WN ) .	En enero de 2008 la República Dominicana anunció la aparición en Higüey al este de la isla la cepa de gripe aviaria H5N1 , de baja patogenicidad , los casos se descubrieron cuando unos productores avícolas solicitaron permiso oficial para exportar gallos de pelea a Colombia .
+Event	T0	detectó	EVENT	84
+Event	T1	caso	EVENT	102
+Event	T2	infección	EVENT	124
+Event	T3	transmitida	EVENT	143
+Event	T4	muerto	EVENT	204
+Event	T5	contacto	EVENT	293
+Event	T6	brotes	EVENT	367
+Event	T7	sacrificado	EVENT	463
+Event	T8	descubrieron	EVENT	500
+Event	T9	casos	EVENT	518
+Event	T10	trasladados	EVENT	559
+Event	T11	examinados	EVENT	588
+Event	T12	anunció	EVENT	649
+Event	T13	aparición	EVENT	660
+Event	T14	gripe	EVENT	710
+Event	T15	casos	EVENT	759
+Event	T16	descubrieron	EVENT	768
+Event	T17	permiso	EVENT	826
+Event	T18	exportar	EVENT	847
+Event	T19	pelea	EVENT	866
+Relation	T2	T4	CauseEffect	true	infección	muerto
+Relation	T4	T2	EffectCause	true	muerto	infección
+Relation	T0	T11	NoRel	true	detectó	examinados
+Relation	T0	T14	NoRel	true	detectó	gripe
+Relation	T0	T6	NoRel	true	detectó	brotes
+Relation	T0	T7	NoRel	true	detectó	sacrificado
+Relation	T1	T14	NoRel	true	caso	gripe
+Relation	T1	T16	NoRel	true	caso	descubrieron
+Relation	T1	T17	NoRel	true	caso	permiso
+Relation	T1	T18	NoRel	true	caso	exportar
+Relation	T1	T7	NoRel	true	caso	sacrificado
+Relation	T10	T11	NoRel	true	trasladados	examinados
+Relation	T11	T12	NoRel	true	examinados	anunció
+Relation	T12	T14	NoRel	true	anunció	gripe
+Relation	T12	T17	NoRel	true	anunció	permiso
+Relation	T12	T5	NoRel	true	anunció	contacto
+Relation	T13	T10	NoRel	true	aparición	trasladados
+Relation	T13	T12	NoRel	true	aparición	anunció
+Relation	T13	T9	NoRel	true	aparición	casos
+Relation	T14	T18	NoRel	true	gripe	exportar
+Relation	T15	T16	NoRel	true	casos	descubrieron
+Relation	T15	T19	NoRel	true	casos	pelea
+Relation	T15	T2	NoRel	true	casos	infección
+Relation	T16	T0	NoRel	true	descubrieron	detectó
+Relation	T16	T3	NoRel	true	descubrieron	transmitida
+Relation	T16	T6	NoRel	true	descubrieron	brotes
+Relation	T17	T0	NoRel	true	permiso	detectó
+Relation	T17	T8	NoRel	true	permiso	descubrieron
+Relation	T18	T4	NoRel	true	exportar	muerto
+Relation	T19	T5	NoRel	true	pelea	contacto
+Relation	T19	T6	NoRel	true	pelea	brotes
+Relation	T2	T16	NoRel	true	infección	descubrieron
+Relation	T2	T17	NoRel	true	infección	permiso
+Relation	T2	T5	NoRel	true	infección	contacto
+Relation	T3	T11	NoRel	true	transmitida	examinados
+Relation	T4	T9	NoRel	true	muerto	casos
+Relation	T5	T1	NoRel	true	contacto	caso
+Relation	T5	T13	NoRel	true	contacto	aparición
+Relation	T5	T14	NoRel	true	contacto	gripe
+Relation	T5	T7	NoRel	true	contacto	sacrificado
+Relation	T6	T10	NoRel	true	brotes	trasladados
+Relation	T6	T2	NoRel	true	brotes	infección
+Relation	T7	T0	NoRel	true	sacrificado	detectó
+Relation	T7	T14	NoRel	true	sacrificado	gripe
+Relation	T8	T13	NoRel	true	descubrieron	aparición
+Relation	T8	T16	NoRel	true	descubrieron	descubrieron
+Relation	T8	T19	NoRel	true	descubrieron	pelea
+Relation	T9	T19	NoRel	true	casos	pelea
+Relation	T9	T7	NoRel	true	casos	sacrificado

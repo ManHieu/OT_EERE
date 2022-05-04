@@ -1,0 +1,28 @@
+Text	زلزلہ پیما ( Seismometer ) ایک آلہ جس سے زمین کی جنبش جو زلزلے کی وجہ سے پیدا ہوتی ہے ، ناپی جاتی ہے ۔	اس آلے میں ایک قلم یا تو کسی وزنی لٹکن ( پنڈولم ) سے وابستہ ہوتا ہے یا کسی ایسے وزن سے بڑھا ہوا ہوتا ہے جس کا توازن ذرا سی جنبش سے متزلزل ہوجاتا ہے ۔	قلم کی نوک بیلن پر لپٹنے ہوئے کاغذ کو چھوتی ہے ۔	بیلن آہستہ آہستہ گھومتا رہتا ہے ۔	زمین میں ذرا سی بھی جنبش ہوگی تو قلم کا خط بیلن پر ٹیڑھا ہو جائے گا ، جسے دیکھ کر ماہرین سمجھ جاتے ہیں کہ زلزلہ کہاں آیا ، کتنی شدت کا تھا اور کب تک رہا ۔
+Event	T0	جنبش	EVENT	49
+Event	T1	زلزلے	EVENT	57
+Event	T2	جنبش	EVENT	226
+Event	T3	لپٹنے	EVENT	272
+Event	T4	چھوتی	EVENT	291
+Event	T5	جنبش	EVENT	356
+Event	T6	دیکھ	EVENT	410
+Event	T7	سمجھ	EVENT	425
+Event	T8	آیا	EVENT	453
+Event	T9	پیدا	EVENT	73
+Event	T10	ناپی	EVENT	88
+Relation	T1	T9	CauseEffect	true	زلزلے	پیدا
+Relation	T9	T1	EffectCause	true	پیدا	زلزلے
+Relation	T0	T6	NoRel	true	جنبش	دیکھ
+Relation	T0	T8	NoRel	true	جنبش	آیا
+Relation	T10	T0	NoRel	true	ناپی	جنبش
+Relation	T2	T0	NoRel	true	جنبش	جنبش
+Relation	T3	T0	NoRel	true	لپٹنے	جنبش
+Relation	T3	T10	NoRel	true	لپٹنے	ناپی
+Relation	T3	T5	NoRel	true	لپٹنے	جنبش
+Relation	T4	T0	NoRel	true	چھوتی	جنبش
+Relation	T4	T3	NoRel	true	چھوتی	لپٹنے
+Relation	T4	T7	NoRel	true	چھوتی	سمجھ
+Relation	T5	T0	NoRel	true	جنبش	جنبش
+Relation	T5	T7	NoRel	true	جنبش	سمجھ
+Relation	T8	T0	NoRel	true	آیا	جنبش
+Relation	T8	T7	NoRel	true	آیا	سمجھ

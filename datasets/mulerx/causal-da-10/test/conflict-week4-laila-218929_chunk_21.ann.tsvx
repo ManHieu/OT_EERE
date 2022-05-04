@@ -1,0 +1,70 @@
+Text	Det var præcis den slags nyheder , som Xerxes ønskede at høre , at athenienserne måske var villige til at underkaste sig ham , og at han ville være i stand til at knuse resten af de allieredes flåde .	Xerxes slugte tydeligvis maddingen , og den persiske flåde blev samme aften sendt af sted for at gennemføre denne blokade .	Xerxes gav ordre til at der skulle opstilles en trone på skråningen af Aigaleobjerget med udsigt over stræderne , så han kunne se slaget tydeligt fra et udsigtspunkt , således at han kunne notere sig navnene på de kaptajner , der kæmpede ekstra godt .	Ifølge Herodot brugde de allierede aftenen på heftigt at debattere , hvad de skulle gøre .	Peloponneserne foretrak evakuering , og det var på dette tidspunkt , at Themistokles forsøgte at narre Xerxes .
+Event	T0	høre	EVENT	57
+Event	T1	underkaste	EVENT	106
+Event	T2	knuse	EVENT	163
+Event	T3	slugte	EVENT	208
+Event	T4	gennemføre	EVENT	298
+Event	T5	blokade	EVENT	315
+Event	T6	opstilles	EVENT	360
+Event	T7	slaget	EVENT	455
+Event	T8	kæmpede	EVENT	555
+Event	T9	brugde	EVENT	592
+Event	T10	debattere	EVENT	634
+Event	T11	gøre	EVENT	661
+Event	T12	evakuering	EVENT	692
+Event	T13	forsøgte	EVENT	753
+Event	T14	narre	EVENT	765
+Event	T15	nyheder	EVENT	25
+Event	T16	ønskede	EVENT	46
+Event	T17	villige	EVENT	91
+Event	T18	stand	EVENT	150
+Event	T19	se	EVENT	452
+Event	T20	notere	EVENT	514
+Relation	T6	T19	CauseEffect	true	opstilles	se
+Relation	T19	T6	EffectCause	true	se	opstilles
+Relation	T15	T3	CauseEffect	true	nyheder	slugte
+Relation	T3	T15	EffectCause	true	slugte	nyheder
+Relation	T0	T15	NoRel	true	høre	nyheder
+Relation	T1	T4	NoRel	true	underkaste	gennemføre
+Relation	T10	T15	NoRel	true	debattere	nyheder
+Relation	T10	T17	NoRel	true	debattere	villige
+Relation	T11	T12	NoRel	true	gøre	evakuering
+Relation	T11	T9	NoRel	true	gøre	brugde
+Relation	T12	T11	NoRel	true	evakuering	gøre
+Relation	T12	T16	NoRel	true	evakuering	ønskede
+Relation	T12	T17	NoRel	true	evakuering	villige
+Relation	T13	T12	NoRel	true	forsøgte	evakuering
+Relation	T13	T18	NoRel	true	forsøgte	stand
+Relation	T13	T2	NoRel	true	forsøgte	knuse
+Relation	T14	T0	NoRel	true	narre	høre
+Relation	T14	T20	NoRel	true	narre	notere
+Relation	T14	T3	NoRel	true	narre	slugte
+Relation	T14	T6	NoRel	true	narre	opstilles
+Relation	T15	T13	NoRel	true	nyheder	forsøgte
+Relation	T15	T17	NoRel	true	nyheder	villige
+Relation	T17	T0	NoRel	true	villige	høre
+Relation	T17	T6	NoRel	true	villige	opstilles
+Relation	T18	T0	NoRel	true	stand	høre
+Relation	T18	T7	NoRel	true	stand	slaget
+Relation	T19	T11	NoRel	true	se	gøre
+Relation	T2	T10	NoRel	true	knuse	debattere
+Relation	T2	T12	NoRel	true	knuse	evakuering
+Relation	T2	T16	NoRel	true	knuse	ønskede
+Relation	T2	T8	NoRel	true	knuse	kæmpede
+Relation	T20	T12	NoRel	true	notere	evakuering
+Relation	T20	T14	NoRel	true	notere	narre
+Relation	T20	T19	NoRel	true	notere	se
+Relation	T20	T3	NoRel	true	notere	slugte
+Relation	T20	T7	NoRel	true	notere	slaget
+Relation	T3	T16	NoRel	true	slugte	ønskede
+Relation	T3	T17	NoRel	true	slugte	villige
+Relation	T4	T15	NoRel	true	gennemføre	nyheder
+Relation	T4	T8	NoRel	true	gennemføre	kæmpede
+Relation	T5	T12	NoRel	true	blokade	evakuering
+Relation	T5	T20	NoRel	true	blokade	notere
+Relation	T5	T6	NoRel	true	blokade	opstilles
+Relation	T7	T0	NoRel	true	slaget	høre
+Relation	T7	T13	NoRel	true	slaget	forsøgte
+Relation	T8	T20	NoRel	true	kæmpede	notere
+Relation	T9	T10	NoRel	true	brugde	debattere
+Relation	T9	T5	NoRel	true	brugde	blokade

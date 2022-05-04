@@ -1,0 +1,28 @@
+Text	I. ve II. Düzce ayaklanmaları Kuvâ -yi Milliye karşıtı ayaklanmalardır ve Kuvâ -yi Milliye kuvvetlerince bastırılmıştır .	Boğazlar'ı elde tutmak amacıyla çıkartılan ayaklanmalardır ve Kuvâ-yi Milliye kuvvetlerince bastırılmıştır .	Güneydoğu Anadolu’da Fransız , İngiliz ve Ermeni faaliyetlerinin artması , bölgede yaşayan Kürt aşiretlerini de kışkırtmaları sonucunda Milli aşireti de ayaklanmıştır .	Aşiret liderlerinden Mahmut , İsmail , Halil ve diğer şahıslar Fransız ve İngilizlerle temasa geçerek Siirt’ten Tunceli’ye kadar olan bölgeyi idareleri altına almak için harekete geçtiler .	Milli aşiretinin ayaklanmasının bastırılması için 13. Kolordu görevlendirildi .
+Event	T0	bastırılmıştır	EVENT	105
+Event	T2	bastırılmıştır	EVENT	214
+Event	T3	artması	EVENT	296
+Event	T4	kışkırtmaları	EVENT	343
+Event	T5	ayaklanmıştır	EVENT	384
+Event	T7	görevlendirildi	EVENT	652
+Event	T8	ayaklanmaları	EVENT	16
+Event	T1	geçerek	EVENT	494
+Event	T9	geçtiler	EVENT	579
+Event	T10	ayaklanmasının	EVENT	607
+Relation	T8	T0	CauseEffect	true	ayaklanmaları	bastırılmıştır
+Relation	T0	T8	EffectCause	true	bastırılmıştır	ayaklanmaları
+Relation	T8	T2	CauseEffect	true	ayaklanmaları	bastırılmıştır
+Relation	T2	T8	EffectCause	true	bastırılmıştır	ayaklanmaları
+Relation	T3	T5	CauseEffect	true	artması	ayaklanmıştır
+Relation	T5	T3	EffectCause	true	ayaklanmıştır	artması
+Relation	T4	T5	CauseEffect	true	kışkırtmaları	ayaklanmıştır
+Relation	T5	T4	EffectCause	true	ayaklanmıştır	kışkırtmaları
+Relation	T5	T7	CauseEffect	true	ayaklanmıştır	görevlendirildi
+Relation	T7	T5	EffectCause	true	görevlendirildi	ayaklanmıştır
+Relation	T10	T7	CauseEffect	true	ayaklanmasının	görevlendirildi
+Relation	T7	T10	EffectCause	true	görevlendirildi	ayaklanmasının
+Relation	T0	T7	NoRel	true	bastırılmıştır	görevlendirildi
+Relation	T1	T7	NoRel	true	geçerek	görevlendirildi
+Relation	T10	T3	NoRel	true	ayaklanmasının	artması
+Relation	T2	T1	NoRel	true	bastırılmıştır	geçerek
+Relation	T3	T10	NoRel	true	artması	ayaklanmasının

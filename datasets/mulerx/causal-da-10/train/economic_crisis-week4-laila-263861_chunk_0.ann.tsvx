@@ -1,0 +1,38 @@
+Text	FLYING ENTERPRISE AS DENMARK , var det første egentlige charterflyselskab i Danmark , aktivt fra 1959 til 1965 .	Selskabet er opkaldt efter skibet _ Flying Enterprise _ , med danskfødte kaptajn Kurt Carlsen , der ved årsskiftet 1952 blev verdenskendt under kampen med at redde det kæntrede skib og dets hemmelige last .	Selskabet blev stiftet juli 1959 af 2 tidligere SAS ansatte , Hans Linde og Finn Nielsen , der ønskede at udfordre SAS , som dengang havde et negativt syn på charterflyvninger .	Tidligere , i 1950'erne , havde rejsearrangøren _ Aero-Lloyd _ opereret som charter transportør med et Douglas DC-3 fly .	[ C-4 Argonaut fly , magen til Flying Enterprises , der alle tdl. havde fløjet hos britiske BOAC . ]
+Event	T0	opkaldt	EVENT	126
+Event	T1	kampen	EVENT	257
+Event	T2	redde	EVENT	271
+Event	T3	kæntrede	EVENT	281
+Event	T4	stiftet	EVENT	335
+Event	T5	udfordre	EVENT	426
+Event	T6	opereret	EVENT	561
+Event	T7	fløjet	EVENT	692
+Event	T8	første	EVENT	39
+Event	T9	hemmelige	EVENT	303
+Event	T10	negativt syn	EVENT	462
+Event	T11	magen til	EVENT	641
+Event	T12	verdenskendt	EVENT	238
+Event	T13	tidligere	EVENT	358
+Relation	T2	T12	CauseEffect	true	redde	verdenskendt
+Relation	T12	T2	EffectCause	true	verdenskendt	redde
+Relation	T0	T11	NoRel	true	opkaldt	magen til
+Relation	T0	T6	NoRel	true	opkaldt	opereret
+Relation	T0	T7	NoRel	true	opkaldt	fløjet
+Relation	T0	T9	NoRel	true	opkaldt	hemmelige
+Relation	T1	T12	NoRel	true	kampen	verdenskendt
+Relation	T1	T2	NoRel	true	kampen	redde
+Relation	T1	T3	NoRel	true	kampen	kæntrede
+Relation	T1	T8	NoRel	true	kampen	første
+Relation	T10	T12	NoRel	true	negativt syn	verdenskendt
+Relation	T13	T11	NoRel	true	tidligere	magen til
+Relation	T13	T9	NoRel	true	tidligere	hemmelige
+Relation	T2	T1	NoRel	true	redde	kampen
+Relation	T2	T6	NoRel	true	redde	opereret
+Relation	T3	T0	NoRel	true	kæntrede	opkaldt
+Relation	T5	T0	NoRel	true	udfordre	opkaldt
+Relation	T5	T3	NoRel	true	udfordre	kæntrede
+Relation	T6	T9	NoRel	true	opereret	hemmelige
+Relation	T7	T0	NoRel	true	fløjet	opkaldt
+Relation	T7	T13	NoRel	true	fløjet	tidligere
+Relation	T8	T5	NoRel	true	første	udfordre
+Relation	T9	T3	NoRel	true	hemmelige	kæntrede

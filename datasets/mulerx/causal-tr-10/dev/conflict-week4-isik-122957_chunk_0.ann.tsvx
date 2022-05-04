@@ -1,0 +1,31 @@
+Text	_ İÇ SAVAŞ _ ( İngilizce özgün adıyla _ Civil War _ ) , Mark Miller tarafından kaleme alınmış ve Steve McNiven tarafından çizilmiş 2006 yazında sınırlı sayıda tasarlanmış , bir yol kesişimi öyküsüdür .	“ Avengers Disassembled ” ve “ House of M ” gibi önceki Marvel hikâyelerindeki öyküler üzerine kurulmuştur .	Dizinin sloganı ise _ “ Hangi taraftasınız ? _ ”	“ The New Warriors ” adlı süper grubun bir TV şovunu seri olarak çekmesiyle başlar .	Süper kötülerle canlı yayında kapışmaları sırasında Nitro isimli süper kötü , gerçekleştirdiği patlamayla yerel bir ilkokulun havaya uçmasına neden olur .
+Event	T0	alınmış	EVENT	86
+Event	T1	çizilmiş	EVENT	122
+Event	T2	tasarlanmış	EVENT	159
+Event	T3	öyküsüdür	EVENT	190
+Event	T4	Disassembled	EVENT	213
+Event	T5	başlar	EVENT	436
+Event	T6	kapışmaları	EVENT	475
+Event	T7	patlamayla	EVENT	540
+Event	T8	İÇ SAVAŞ	EVENT	2
+Event	T9	Civil War	EVENT	40
+Event	T10	kurulmuştur	EVENT	297
+Event	T11	şovunu	EVENT	406
+Event	T12	uçmasına	EVENT	578
+Relation	T7	T12	CauseEffect	true	patlamayla	uçmasına
+Relation	T12	T7	EffectCause	true	uçmasına	patlamayla
+Relation	T0	T11	NoRel	true	alınmış	şovunu
+Relation	T0	T3	NoRel	true	alınmış	öyküsüdür
+Relation	T0	T5	NoRel	true	alınmış	başlar
+Relation	T0	T6	NoRel	true	alınmış	kapışmaları
+Relation	T11	T5	NoRel	true	şovunu	başlar
+Relation	T2	T4	NoRel	true	tasarlanmış	Disassembled
+Relation	T2	T8	NoRel	true	tasarlanmış	İÇ SAVAŞ
+Relation	T4	T5	NoRel	true	Disassembled	başlar
+Relation	T4	T7	NoRel	true	Disassembled	patlamayla
+Relation	T7	T5	NoRel	true	patlamayla	başlar
+Relation	T8	T2	NoRel	true	İÇ SAVAŞ	tasarlanmış
+Relation	T8	T9	NoRel	true	İÇ SAVAŞ	Civil War
+Relation	T9	T12	NoRel	true	Civil War	uçmasına
+Relation	T9	T6	NoRel	true	Civil War	kapışmaları
+Relation	T9	T8	NoRel	true	Civil War	İÇ SAVAŞ

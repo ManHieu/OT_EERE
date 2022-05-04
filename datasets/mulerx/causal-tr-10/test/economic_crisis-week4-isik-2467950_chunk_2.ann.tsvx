@@ -1,0 +1,28 @@
+Text	7 Ağustos'ta Liege'i işgal etti ve 22 - 23 Ağustos'ta Namur Kalesi ] ]'ni ele geçirdi .	Fransa'da von Bülow 23 - 24 Ağustos'ta Charleroi'deki Fransız Beşinci Ordu'dan General Charles Lanrezac'ı ve 29 -30 Ağustos'ta St. Quentin'de yenmişti .	Karl von Bülow , Andenne'deki ( 20 Ağustos ) ve birkaç gün sonra Leffe'deki ( 23 Ağustos - 1914 ) katliamlar için savaş suçlusu olarak kabul edilir .	2. Ordu ve Genel Alexander von Kluck’un 1. Ordusu 31 Ağustos’tan 2 Eylül’e kadar Paris’e yaklaşırken , iki ordu arasındaki artan boşluktan endişe duyan von Bülow , Kluck’a 1. Orduyu ona doğru çevirmesini emretti .	Ancak bu karar , Kluck'un Schlieffen Planında belirtildiği gibi , güney ve batı yerine Paris'in güney ve doğusunda ilerlemesiyle sonuçlandı .
+Event	T0	etti	EVENT	27
+Event	T1	geçirdi	EVENT	78
+Event	T2	yenmişti	EVENT	230
+Event	T3	katliamlar	EVENT	339
+Event	T4	edilir	EVENT	382
+Event	T6	emretti	EVENT	595
+Event	T7	karar	EVENT	614
+Event	T8	sonuçlandı	EVENT	734
+Event	T9	yaklaşırken	EVENT	480
+Event	T5	endişe	EVENT	530
+Event	T10	boşluktan	EVENT	520
+Relation	T3	T4	CauseEffect	true	katliamlar	edilir
+Relation	T4	T3	EffectCause	true	edilir	katliamlar
+Relation	T6	T8	CauseEffect	true	emretti	sonuçlandı
+Relation	T8	T6	EffectCause	true	sonuçlandı	emretti
+Relation	T5	T6	CauseEffect	true	endişe	emretti
+Relation	T6	T5	EffectCause	true	emretti	endişe
+Relation	T10	T5	CauseEffect	true	boşluktan	endişe
+Relation	T5	T10	EffectCause	true	endişe	boşluktan
+Relation	T7	T8	CauseEffect	true	karar	sonuçlandı
+Relation	T8	T7	EffectCause	true	sonuçlandı	karar
+Relation	T0	T3	NoRel	true	etti	katliamlar
+Relation	T1	T8	NoRel	true	geçirdi	sonuçlandı
+Relation	T2	T3	NoRel	true	yenmişti	katliamlar
+Relation	T3	T2	NoRel	true	katliamlar	yenmişti
+Relation	T5	T7	NoRel	true	endişe	karar
+Relation	T8	T2	NoRel	true	sonuçlandı	yenmişti

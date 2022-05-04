@@ -1,0 +1,45 @@
+Text	2014ء تا 2015ء پاک بھارت سرحدی جھڑپیں پاکستانی افواج و ہندوستانی افواج کے درمیان ماضی میں ہونے والی سرحدی جھڑپوں کا سلسلہ ہے ۔	حالیہ جھڑپوں کا آغاز جالائی کے وسط میں شروع ہوا جب ایک بھارتی سیکیورٹی اہلکار جمو کے علاقے میں پاکستانی افواج کی فائرنگ سے ہلاک ہوا ۔	تاہم اب تک دونوں ممالک کی افواج ایک دوسرے پر فائر بندی کی خلاف ورزی کا الزام لگاتی رہی ہیں ۔	اکتوبر 2014ء میں سرحدی جھڑپوں کی شدت میں اضافہ ہونے پر بھارتی وزیر دفاع ارن جیٹلی نے پاکستان کو بلا_اشتعال گولہ باری کرنے پر سخت رد عمل کے متعلق خبردار کیا ۔	جبکہ پاکستانی وزیر دفاع خواجہ آصف نے کسی بھی قسم کی بھارتی جارحیت کا منہ توڑ جواب دینے کا اعلان کیا ۔
+Event	T0	جھڑپیں	EVENT	31
+Event	T1	جھڑپوں	EVENT	106
+Event	T2	سلسلہ	EVENT	116
+Event	T3	جھڑپوں	EVENT	133
+Event	T5	فائرنگ	EVENT	240
+Event	T7	ورزی	EVENT	324
+Event	T9	جھڑپوں	EVENT	377
+Event	T12	کرنے	EVENT	471
+Event	T13	جارحیت	EVENT	571
+Event	T15	آغاز	EVENT	143
+Event	T16	شروع	EVENT	166
+Event	T4	ہلاک	EVENT	250
+Event	T6	بندی	EVENT	311
+Event	T17	الزام	EVENT	332
+Event	T8	اضافہ	EVENT	395
+Event	T10	خبردار	EVENT	499
+Event	T11	جواب	EVENT	589
+Event	T18	اعلان	EVENT	602
+Relation	T5	T4	CauseEffect	true	فائرنگ	ہلاک
+Relation	T4	T5	EffectCause	true	ہلاک	فائرنگ
+Relation	T7	T17	CauseEffect	true	ورزی	الزام
+Relation	T17	T7	EffectCause	true	الزام	ورزی
+Relation	T8	T10	CauseEffect	true	اضافہ	خبردار
+Relation	T10	T8	EffectCause	true	خبردار	اضافہ
+Relation	T0	T15	NoRel	true	جھڑپیں	آغاز
+Relation	T1	T0	NoRel	true	جھڑپوں	جھڑپیں
+Relation	T10	T15	NoRel	true	خبردار	آغاز
+Relation	T10	T18	NoRel	true	خبردار	اعلان
+Relation	T13	T0	NoRel	true	جارحیت	جھڑپیں
+Relation	T13	T5	NoRel	true	جارحیت	فائرنگ
+Relation	T13	T6	NoRel	true	جارحیت	بندی
+Relation	T15	T11	NoRel	true	آغاز	جواب
+Relation	T15	T5	NoRel	true	آغاز	فائرنگ
+Relation	T16	T1	NoRel	true	شروع	جھڑپوں
+Relation	T16	T18	NoRel	true	شروع	اعلان
+Relation	T17	T16	NoRel	true	الزام	شروع
+Relation	T18	T12	NoRel	true	اعلان	کرنے
+Relation	T2	T12	NoRel	true	سلسلہ	کرنے
+Relation	T2	T6	NoRel	true	سلسلہ	بندی
+Relation	T4	T17	NoRel	true	ہلاک	الزام
+Relation	T6	T1	NoRel	true	بندی	جھڑپوں
+Relation	T7	T6	NoRel	true	ورزی	بندی
+Relation	T9	T1	NoRel	true	جھڑپوں	جھڑپوں
+Relation	T9	T4	NoRel	true	جھڑپوں	ہلاک

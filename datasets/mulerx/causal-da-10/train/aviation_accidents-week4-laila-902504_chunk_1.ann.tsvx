@@ -1,0 +1,13 @@
+Text	Det blev bygget i 1999 og var dermed snart 18 år da ulykken indtraf .	Det var registreret CP-2933 , med serienummer E2348 .	Maskinen havde fire Lycoming LF507-1F-motorer .	Det havde tidligere fløjet for andre flyselskaber , også chartret .	En periode fra 2010 til 2013 stod det oplagret i Norwich International Airport .
+Event	T0	bygget	EVENT	9
+Event	T1	indtraf	EVENT	60
+Event	T2	registreret	EVENT	78
+Event	T3	fløjet	EVENT	192
+Event	T4	chartret	EVENT	229
+Event	T5	stod	EVENT	269
+Event	T6	oplagret	EVENT	278
+Event	T7	havde	EVENT	133
+Relation	T2	T1	NoRel	true	registreret	indtraf
+Relation	T5	T7	NoRel	true	stod	havde
+Relation	T6	T2	NoRel	true	oplagret	registreret
+Relation	T7	T2	NoRel	true	havde	registreret

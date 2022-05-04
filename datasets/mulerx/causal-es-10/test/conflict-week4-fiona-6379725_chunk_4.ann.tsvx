@@ -1,0 +1,39 @@
+Text	El General Morazán junto al Coronel Román Valladares al mando de otro destacamento de la Fuerza Aliada rodean el cerro “ _ Caranguije _ ” y atacan el flanco derecho de las Fuerzas Federales .	El combate se intensificó por espacio de cinco horas , a las 15:00 horas ( ) las tropas federales de Milla fueron aplastadas por los hombres al mando del General Francisco Morazán .	Vencido el General José Justo Milla y algunos de sus oficiales que sobrevivieron huyeron del campo de batalla , dejando documentos , baúles y otros pertrechos .	Por su parte la fuerza reservista aliada al mando del Coronel José María Gutiérrez Osejo y el Capitán Francisco Ferrera , no les fue posible entrar en acción .	Tras esta victoria , Morazán marchó a Tegucigalpa a tomarla el 12 de noviembre y el 26 de ese mismo mes llega a la capital Comayagua donde hizo su entrada triunfal y ocupó la jefatura del Estado de Honduras la cual presidía interinamente el señor Miguel Eusebio Bustamante .
+Event	T0	rodean	EVENT	103
+Event	T1	atacan	EVENT	140
+Event	T2	combate	EVENT	195
+Event	T3	intensificó	EVENT	206
+Event	T4	aplastadas	EVENT	306
+Event	T5	Vencido	EVENT	374
+Event	T6	dejando	EVENT	486
+Event	T7	victoria	EVENT	705
+Event	T8	marchó	EVENT	724
+Event	T9	llega	EVENT	799
+Event	T10	hizo	EVENT	834
+Event	T11	triunfal	EVENT	850
+Event	T12	ocupó	EVENT	861
+Event	T13	presidía	EVENT	910
+Relation	T1	T4	CauseEffect	true	atacan	aplastadas
+Relation	T4	T1	EffectCause	true	aplastadas	atacan
+Relation	T0	T1	CauseEffect	true	rodean	atacan
+Relation	T1	T0	EffectCause	true	atacan	rodean
+Relation	T0	T13	NoRel	true	rodean	presidía
+Relation	T1	T12	NoRel	true	atacan	ocupó
+Relation	T11	T7	NoRel	true	triunfal	victoria
+Relation	T11	T9	NoRel	true	triunfal	llega
+Relation	T13	T0	NoRel	true	presidía	rodean
+Relation	T13	T2	NoRel	true	presidía	combate
+Relation	T13	T7	NoRel	true	presidía	victoria
+Relation	T2	T11	NoRel	true	combate	triunfal
+Relation	T3	T12	NoRel	true	intensificó	ocupó
+Relation	T3	T5	NoRel	true	intensificó	Vencido
+Relation	T4	T3	NoRel	true	aplastadas	intensificó
+Relation	T4	T5	NoRel	true	aplastadas	Vencido
+Relation	T5	T12	NoRel	true	Vencido	ocupó
+Relation	T5	T7	NoRel	true	Vencido	victoria
+Relation	T6	T0	NoRel	true	dejando	rodean
+Relation	T7	T0	NoRel	true	victoria	rodean
+Relation	T7	T1	NoRel	true	victoria	atacan
+Relation	T7	T10	NoRel	true	victoria	hizo
+Relation	T8	T1	NoRel	true	marchó	atacan
+Relation	T9	T4	NoRel	true	llega	aplastadas

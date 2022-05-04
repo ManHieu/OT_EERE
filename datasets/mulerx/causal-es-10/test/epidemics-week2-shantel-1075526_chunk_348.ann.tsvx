@@ -1,0 +1,48 @@
+Text	Al día siguiente fue a ver a Merthin el hermano Thomas quien lo felicitó porque había tenido razón respecto al puente y quería que viera las grietas que habían vuelto a aparecer en la torre de la catedral .	Merthin aconsejó excavar un agujero alrededor de la torre .	Jeremiah excavó el agujero y la cofradía contrató a Merthin para la reparación del puente .	Merthin le propuso a Mark que postulara para reemplazar a Elfric como mayordomo en las elecciones del próximo 1 de noviembre , este aceptó .	A mediados de octubre Caris fue a ver la excavación alrededor del pilar de la torre de la catedral y se encontró con Merthin y le pidió que cuando fuera a ver a sus padres hablara con su hermano Ralph sobre la situación de Wulfric , que le diera un pedazo de tierra para que la cultivara , que no lo castigara más .
+Event	T0	felicitó	EVENT	64
+Event	T1	vuelto	EVENT	160
+Event	T10	elecciones	EVENT	446
+Event	T11	aceptó	EVENT	491
+Event	T13	excavación	EVENT	541
+Event	T14	encontró	EVENT	604
+Event	T15	pidió	EVENT	630
+Event	T2	aparecer	EVENT	169
+Event	T4	excavó	EVENT	276
+Event	T5	contrató	EVENT	308
+Event	T6	reparación	EVENT	335
+Event	T7	propuso	EVENT	370
+Event	T8	postulara	EVENT	389
+Event	T9	reemplazar	EVENT	404
+Event	T3	aconsejó	EVENT	215
+Event	T12	fue	EVENT	528
+Relation	T2	T3	CauseEffect	true	aparecer	aconsejó
+Relation	T3	T2	EffectCause	true	aconsejó	aparecer
+Relation	T3	T4	CauseEffect	true	aconsejó	excavó
+Relation	T4	T3	EffectCause	true	excavó	aconsejó
+Relation	T2	T6	CauseEffect	true	aparecer	reparación
+Relation	T6	T2	EffectCause	true	reparación	aparecer
+Relation	T7	T11	CauseEffect	true	propuso	aceptó
+Relation	T11	T7	EffectCause	true	aceptó	propuso
+Relation	T12	T14	CauseEffect	true	fue	encontró
+Relation	T14	T12	EffectCause	true	encontró	fue
+Relation	T0	T13	NoRel	true	felicitó	excavación
+Relation	T0	T6	NoRel	true	felicitó	reparación
+Relation	T1	T9	NoRel	true	vuelto	reemplazar
+Relation	T10	T5	NoRel	true	elecciones	contrató
+Relation	T11	T9	NoRel	true	aceptó	reemplazar
+Relation	T12	T0	NoRel	true	fue	felicitó
+Relation	T12	T11	NoRel	true	fue	aceptó
+Relation	T13	T5	NoRel	true	excavación	contrató
+Relation	T14	T11	NoRel	true	encontró	aceptó
+Relation	T15	T11	NoRel	true	pidió	aceptó
+Relation	T2	T11	NoRel	true	aparecer	aceptó
+Relation	T2	T8	NoRel	true	aparecer	postulara
+Relation	T4	T13	NoRel	true	excavó	excavación
+Relation	T4	T6	NoRel	true	excavó	reparación
+Relation	T7	T2	NoRel	true	propuso	aparecer
+Relation	T7	T8	NoRel	true	propuso	postulara
+Relation	T8	T12	NoRel	true	postulara	fue
+Relation	T8	T9	NoRel	true	postulara	reemplazar
+Relation	T9	T12	NoRel	true	reemplazar	fue
+Relation	T9	T13	NoRel	true	reemplazar	excavación
+Relation	T9	T14	NoRel	true	reemplazar	encontró

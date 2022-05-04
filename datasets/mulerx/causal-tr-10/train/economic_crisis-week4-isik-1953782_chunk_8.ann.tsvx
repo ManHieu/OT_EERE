@@ -1,0 +1,27 @@
+Text	Türkçe baskısı 2015 yılında _ Enver Paşa'nın Trablusgarp Günlüğü _ adıyla Tarih & Kuram Yayınları tarafından yayınlanmıştır .	" Kaderin savurduğu her haşin darbeye bizimle beraber katlanmakla kalmayıp bundan doğan acıları da hafifletmek için de akla gelen hiçbir yardımı esirgemeyen sadık bir dost "	Ernst Jaeckh'in Çanakkale Cephesi'nde savaşan Osmanlı askerlerine destek için topladığı 1 milyon marklık yardıma teşekkür etmek için Mustafa Kemal'in gönderdiği 2 Eylül 1915 tarihli telgrafta şöyle denmektedir :	" Gelibolu Yarımadası'nda yaralanan ve sakatlanan Osmanlı askerleri için topladığınız ianeye benim ve Mareşal Von Sanders'in teşekkürlerini sunarız .	Yolladığınız bir milyon Mark'a ( Jack Fonu ) ismini verdik .
+Event	T0	baskısı	EVENT	7
+Event	T1	yayınlanmıştır	EVENT	109
+Event	T5	yaralanan	EVENT	538
+Event	T6	sakatlanan	EVENT	551
+Event	T7	verdik	EVENT	714
+Event	T8	Günlüğü	EVENT	57
+Event	T9	darbeye	EVENT	156
+Event	T3	Cephesi'nde	EVENT	326
+Event	T10	yardıma	EVENT	405
+Event	T2	telgrafta	EVENT	482
+Relation	T3	T10	CauseEffect	true	Cephesi'nde	yardıma
+Relation	T10	T3	EffectCause	true	yardıma	Cephesi'nde
+Relation	T10	T2	CauseEffect	true	yardıma	telgrafta
+Relation	T2	T10	EffectCause	true	telgrafta	yardıma
+Relation	T1	T0	NoRel	true	yayınlanmıştır	baskısı
+Relation	T10	T0	NoRel	true	yardıma	baskısı
+Relation	T2	T5	NoRel	true	telgrafta	yaralanan
+Relation	T3	T6	NoRel	true	Cephesi'nde	sakatlanan
+Relation	T5	T2	NoRel	true	yaralanan	telgrafta
+Relation	T5	T3	NoRel	true	yaralanan	Cephesi'nde
+Relation	T6	T0	NoRel	true	sakatlanan	baskısı
+Relation	T6	T3	NoRel	true	sakatlanan	Cephesi'nde
+Relation	T7	T10	NoRel	true	verdik	yardıma
+Relation	T7	T2	NoRel	true	verdik	telgrafta
+Relation	T9	T0	NoRel	true	darbeye	baskısı
+Relation	T9	T2	NoRel	true	darbeye	telgrafta

@@ -1,0 +1,21 @@
+Text	یہ زلزلہ 7.8 میگنیٹیوڈ کی شدّت کا تھا ، جس سے مستونگ ، لورالائی ، قلات ، پشین اور چمن کے علاقے بھی متاثر ہوئے تھے ۔	زلزلہ کا مرکز چمن فالٹ کا مقام تھا ۔	اس زلزلے نے 30 سیکنڈ میں پورے شہر کو ملیا میٹ کرکے رکھ دیا ۔	اس زلزلے سے ہونے والی اموات کی تعداد اندازہً 60 ہزار تک بتائی جاتی ہے ۔	1939ء میں ترکی میں زلزلے سے 32 ہزار 7 سو افراد کی جانیں گئیں ۔
+Event	T0	زلزلہ	EVENT	3
+Event	T1	ہوئے	EVENT	105
+Event	T2	زلزلہ	EVENT	116
+Event	T3	زلزلے	EVENT	156
+Event	T4	دیا	EVENT	208
+Event	T5	زلزلے	EVENT	217
+Event	T6	ہونے	EVENT	226
+Event	T7	اموات	EVENT	236
+Event	T8	زلزلے	EVENT	305
+Event	T9	گئیں	EVENT	342
+Relation	T5	T7	CauseEffect	true	زلزلے	اموات
+Relation	T7	T5	EffectCause	true	اموات	زلزلے
+Relation	T1	T6	NoRel	true	ہوئے	ہونے
+Relation	T2	T1	NoRel	true	زلزلہ	ہوئے
+Relation	T2	T9	NoRel	true	زلزلہ	گئیں
+Relation	T3	T5	NoRel	true	زلزلے	زلزلے
+Relation	T4	T8	NoRel	true	دیا	زلزلے
+Relation	T4	T9	NoRel	true	دیا	گئیں
+Relation	T6	T9	NoRel	true	ہونے	گئیں
+Relation	T9	T3	NoRel	true	گئیں	زلزلے

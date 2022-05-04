@@ -1,0 +1,70 @@
+Text	Mientras estaba sobre el canal de Mozambique , el sistema trajo fuertes lluvias al noroeste de Madagascar , con acumulaciones localizadas de aproximadamente 400 milímetros .	Las inundaciones y corrimientos de tierra mataron a una persona en Besalampy , dejaron otras dos desaparecidas y afectaron a otras 1_100 , dañando 137 hogares .	Como depresión tropical , aún durante la formación del ciclón , Idai trajo tormentas torrenciales al sur de Malaui , tras las cuales 60 personas fueron reportadas muertas y otras 577 resultaron heridas .	Las áreas afectadas habían visto un aumento de las lluvias en enero , lo que aumentó el riesgo de inundaciones .	Las fuertes inundaciones de Idai comenzaron el 9 de marzo , haciendo desaparecer puentes , carreteras y casas .
+Event	T0	trajo	EVENT	58
+Event	T1	lluvias	EVENT	72
+Event	T2	inundaciones	EVENT	178
+Event	T3	corrimientos	EVENT	193
+Event	T4	mataron	EVENT	216
+Event	T5	dejaron	EVENT	253
+Event	T6	desaparecidas	EVENT	271
+Event	T7	afectaron	EVENT	287
+Event	T8	dañando	EVENT	313
+Event	T9	formación	EVENT	376
+Event	T10	ciclón	EVENT	390
+Event	T11	muertas	EVENT	498
+Event	T12	heridas	EVENT	529
+Event	T13	afectadas	EVENT	549
+Event	T14	visto	EVENT	566
+Event	T15	aumento	EVENT	575
+Event	T16	lluvias	EVENT	590
+Event	T17	aumentó	EVENT	616
+Event	T18	inundaciones	EVENT	637
+Event	T19	inundaciones	EVENT	664
+Event	T20	comenzaron	EVENT	685
+Event	T21	desaparecer	EVENT	721
+Relation	T2	T4	CauseEffect	true	inundaciones	mataron
+Relation	T4	T2	EffectCause	true	mataron	inundaciones
+Relation	T3	T4	CauseEffect	true	corrimientos	mataron
+Relation	T4	T3	EffectCause	true	mataron	corrimientos
+Relation	T2	T6	CauseEffect	true	inundaciones	desaparecidas
+Relation	T6	T2	EffectCause	true	desaparecidas	inundaciones
+Relation	T19	T21	CauseEffect	true	inundaciones	desaparecer
+Relation	T21	T19	EffectCause	true	desaparecer	inundaciones
+Relation	T0	T11	NoRel	true	trajo	muertas
+Relation	T0	T14	NoRel	true	trajo	visto
+Relation	T1	T0	NoRel	true	lluvias	trajo
+Relation	T1	T10	NoRel	true	lluvias	ciclón
+Relation	T1	T15	NoRel	true	lluvias	aumento
+Relation	T10	T13	NoRel	true	ciclón	afectadas
+Relation	T10	T6	NoRel	true	ciclón	desaparecidas
+Relation	T12	T1	NoRel	true	heridas	lluvias
+Relation	T12	T18	NoRel	true	heridas	inundaciones
+Relation	T13	T1	NoRel	true	afectadas	lluvias
+Relation	T13	T4	NoRel	true	afectadas	mataron
+Relation	T14	T11	NoRel	true	visto	muertas
+Relation	T14	T3	NoRel	true	visto	corrimientos
+Relation	T15	T10	NoRel	true	aumento	ciclón
+Relation	T15	T3	NoRel	true	aumento	corrimientos
+Relation	T15	T8	NoRel	true	aumento	dañando
+Relation	T16	T0	NoRel	true	lluvias	trajo
+Relation	T17	T7	NoRel	true	aumentó	afectaron
+Relation	T17	T8	NoRel	true	aumentó	dañando
+Relation	T19	T13	NoRel	true	inundaciones	afectadas
+Relation	T19	T18	NoRel	true	inundaciones	inundaciones
+Relation	T19	T5	NoRel	true	inundaciones	dejaron
+Relation	T2	T5	NoRel	true	inundaciones	dejaron
+Relation	T20	T16	NoRel	true	comenzaron	lluvias
+Relation	T21	T4	NoRel	true	desaparecer	mataron
+Relation	T21	T6	NoRel	true	desaparecer	desaparecidas
+Relation	T3	T10	NoRel	true	corrimientos	ciclón
+Relation	T3	T13	NoRel	true	corrimientos	afectadas
+Relation	T3	T7	NoRel	true	corrimientos	afectaron
+Relation	T4	T17	NoRel	true	mataron	aumentó
+Relation	T4	T18	NoRel	true	mataron	inundaciones
+Relation	T4	T8	NoRel	true	mataron	dañando
+Relation	T5	T0	NoRel	true	dejaron	trajo
+Relation	T5	T3	NoRel	true	dejaron	corrimientos
+Relation	T7	T12	NoRel	true	afectaron	heridas
+Relation	T7	T15	NoRel	true	afectaron	aumento
+Relation	T7	T17	NoRel	true	afectaron	aumentó
+Relation	T8	T11	NoRel	true	dañando	muertas
+Relation	T9	T14	NoRel	true	formación	visto

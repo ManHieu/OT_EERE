@@ -1,0 +1,55 @@
+Text	İlk beş madde ; Bulgaristan’ın savaş katılmasına izin verilmemesi ve ülkeye gelen işgalci kuvvetleri çıkarılması ; faşist devletlere yiyecek ve ham madde satışının durdurulması ve başta Sovyetler Birliği olmak üzere Balkan halkları ve barış yanlısı devletlerle dostluk ve dayanışma kurulmasına ilişkin konular yer alıyordu .	Son yedi maddede ise ; faşizme karşı savaşta esir alınanların serbest bırakılmaları , halkın siyasi hak ve özgürlüklerinin geri verilmesi , ordunun faşizmin bir askeri gücü olmaktan çıkarılması , bütün sivil - faşist örgütlerin kapatılması , Bulgaristan’ın ve Bulgar halkının özgürlük ve bağımsızlığının sağlanması gibi maddelere yer veriliyordu .	2 Eylül 1944 yılında Kızıl Ordu'nun ilerlemesi üzerine Alman yanlısı İvan Bagryanov istifa etti .	Bunun üzerine batı yanlısı bir iktidar kuruldu .	Hükûmet orduya Kızıl Ordu ile mücadele etmemesini emretti .
+Event	T0	çıkarılması	EVENT	101
+Event	T1	durdurulması	EVENT	164
+Event	T2	esir	EVENT	370
+Event	T3	ilerlemesi	EVENT	709
+Event	T4	etti	EVENT	764
+Event	T5	kuruldu	EVENT	810
+Event	T7	emretti	EVENT	870
+Event	T8	satışının	EVENT	154
+Event	T9	kurulmasına	EVENT	282
+Event	T10	alıyordu	EVENT	314
+Event	T11	bırakılmaları	EVENT	395
+Event	T12	verilmesi	EVENT	453
+Event	T13	çıkarılması	EVENT	507
+Event	T14	kapatılması	EVENT	553
+Event	T15	veriliyordu	EVENT	659
+Event	T16	sağlanması	EVENT	629
+Relation	T3	T4	CauseEffect	true	ilerlemesi	etti
+Relation	T4	T3	EffectCause	true	etti	ilerlemesi
+Relation	T4	T5	CauseEffect	true	etti	kuruldu
+Relation	T5	T4	EffectCause	true	kuruldu	etti
+Relation	T5	T7	CauseEffect	true	kuruldu	emretti
+Relation	T7	T5	EffectCause	true	emretti	kuruldu
+Relation	T0	T7	NoRel	true	çıkarılması	emretti
+Relation	T1	T12	NoRel	true	durdurulması	verilmesi
+Relation	T1	T3	NoRel	true	durdurulması	ilerlemesi
+Relation	T10	T11	NoRel	true	alıyordu	bırakılmaları
+Relation	T10	T12	NoRel	true	alıyordu	verilmesi
+Relation	T11	T12	NoRel	true	bırakılmaları	verilmesi
+Relation	T11	T16	NoRel	true	bırakılmaları	sağlanması
+Relation	T11	T8	NoRel	true	bırakılmaları	satışının
+Relation	T12	T0	NoRel	true	verilmesi	çıkarılması
+Relation	T12	T2	NoRel	true	verilmesi	esir
+Relation	T12	T3	NoRel	true	verilmesi	ilerlemesi
+Relation	T13	T1	NoRel	true	çıkarılması	durdurulması
+Relation	T14	T10	NoRel	true	kapatılması	alıyordu
+Relation	T14	T15	NoRel	true	kapatılması	veriliyordu
+Relation	T15	T16	NoRel	true	veriliyordu	sağlanması
+Relation	T15	T2	NoRel	true	veriliyordu	esir
+Relation	T15	T7	NoRel	true	veriliyordu	emretti
+Relation	T16	T1	NoRel	true	sağlanması	durdurulması
+Relation	T16	T4	NoRel	true	sağlanması	etti
+Relation	T16	T8	NoRel	true	sağlanması	satışının
+Relation	T3	T2	NoRel	true	ilerlemesi	esir
+Relation	T4	T11	NoRel	true	etti	bırakılmaları
+Relation	T4	T8	NoRel	true	etti	satışının
+Relation	T5	T11	NoRel	true	kuruldu	bırakılmaları
+Relation	T5	T14	NoRel	true	kuruldu	kapatılması
+Relation	T5	T9	NoRel	true	kuruldu	kurulmasına
+Relation	T7	T0	NoRel	true	emretti	çıkarılması
+Relation	T8	T14	NoRel	true	satışının	kapatılması
+Relation	T8	T7	NoRel	true	satışının	emretti
+Relation	T8	T9	NoRel	true	satışının	kurulmasına
+Relation	T9	T1	NoRel	true	kurulmasına	durdurulması
+Relation	T9	T4	NoRel	true	kurulmasına	etti

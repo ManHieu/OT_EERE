@@ -1,0 +1,29 @@
+Text	IKE KASIRGASI ( ) , 2008'de Küba ve ABD'de zarara yol açan büyük bir kasırga .	Ağustos sonunda Afrika yakınlarında başlayan bir Yeşil Burun tipi kasırgadır .	Daha sonra Karayipler'e yöneldi ve Küba'yı etkileyen en masraflı kasırgası oldu .	Ardından Teksas'ta karaya çıktı ve ABD'de karaya çıkan en masraflı üçüncü kasırga ve Teksas tarihinin en masraflı kasırgası oldu .	
+Event	T0	kasırga	EVENT	69
+Event	T1	başlayan	EVENT	115
+Event	T2	yöneldi	EVENT	182
+Event	T3	etkileyen	EVENT	201
+Event	T4	oldu	EVENT	233
+Event	T5	çıktı	EVENT	266
+Event	T6	çıkan	EVENT	289
+Event	T7	oldu	EVENT	364
+Event	T8	KASIRGASI	EVENT	4
+Event	T9	zarara	EVENT	43
+Relation	T1	T2	CauseEffect	true	başlayan	yöneldi
+Relation	T2	T1	EffectCause	true	yöneldi	başlayan
+Relation	T2	T3	CauseEffect	true	yöneldi	etkileyen
+Relation	T3	T2	EffectCause	true	etkileyen	yöneldi
+Relation	T2	T5	CauseEffect	true	yöneldi	çıktı
+Relation	T5	T2	EffectCause	true	çıktı	yöneldi
+Relation	T8	T4	CauseEffect	true	KASIRGASI	oldu
+Relation	T4	T8	EffectCause	true	oldu	KASIRGASI
+Relation	T0	T6	NoRel	true	kasırga	çıkan
+Relation	T2	T9	NoRel	true	yöneldi	zarara
+Relation	T3	T4	NoRel	true	etkileyen	oldu
+Relation	T3	T9	NoRel	true	etkileyen	zarara
+Relation	T6	T5	NoRel	true	çıkan	çıktı
+Relation	T7	T0	NoRel	true	oldu	kasırga
+Relation	T8	T3	NoRel	true	KASIRGASI	etkileyen
+Relation	T8	T6	NoRel	true	KASIRGASI	çıkan
+Relation	T8	T9	NoRel	true	KASIRGASI	zarara
+Relation	T9	T8	NoRel	true	zarara	KASIRGASI

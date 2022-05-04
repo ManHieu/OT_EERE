@@ -1,0 +1,38 @@
+Text	En forudsætning for lånet var , at landet gennemførte økonomiske stramninger , strukturreformer og privatiseringer .	Allerede året efter var recessionen forværret , samtidig med at den græske regering ikke i forventet omfang havde gennemført de aftalte stramninger .	Der var behov for at tilføre yderligere 130 mia. EUR , medregnet en kapitaltilførsel på 48 mia. EUR til de private banker .	Samtidig måtte private kreditorer indgå en aftale , der indebar forlængelse af løbetiderne , lavere renter og en nedskrivning af den nominelle gæld med 53,3 % .	Det samlede program blev vedtaget og underskrevet i februar 2012 .
+Event	T0	lånet	EVENT	20
+Event	T1	gennemførte	EVENT	42
+Event	T10	nedskrivning	EVENT	504
+Event	T11	vedtaget	EVENT	577
+Event	T12	underskrevet	EVENT	589
+Event	T3	privatiseringer	EVENT	99
+Event	T4	forværret	EVENT	153
+Event	T5	gennemført	EVENT	231
+Event	T6	stramninger	EVENT	253
+Event	T7	indgå	EVENT	425
+Event	T8	aftale	EVENT	434
+Event	T9	forlængelse	EVENT	455
+Relation	T1	T0	CauseEffect	true	gennemførte	lånet
+Relation	T0	T1	EffectCause	true	lånet	gennemførte
+Relation	T3	T0	CauseEffect	true	privatiseringer	lånet
+Relation	T0	T3	EffectCause	true	lånet	privatiseringer
+Relation	T4	T8	CauseEffect	true	forværret	aftale
+Relation	T8	T4	EffectCause	true	aftale	forværret
+Relation	T11	T8	CauseEffect	true	vedtaget	aftale
+Relation	T8	T11	EffectCause	true	aftale	vedtaget
+Relation	T10	T1	NoRel	true	nedskrivning	gennemførte
+Relation	T10	T8	NoRel	true	nedskrivning	aftale
+Relation	T11	T3	NoRel	true	vedtaget	privatiseringer
+Relation	T12	T11	NoRel	true	underskrevet	vedtaget
+Relation	T12	T5	NoRel	true	underskrevet	gennemført
+Relation	T3	T7	NoRel	true	privatiseringer	indgå
+Relation	T3	T8	NoRel	true	privatiseringer	aftale
+Relation	T5	T0	NoRel	true	gennemført	lånet
+Relation	T5	T9	NoRel	true	gennemført	forlængelse
+Relation	T6	T1	NoRel	true	stramninger	gennemførte
+Relation	T6	T10	NoRel	true	stramninger	nedskrivning
+Relation	T6	T7	NoRel	true	stramninger	indgå
+Relation	T6	T8	NoRel	true	stramninger	aftale
+Relation	T7	T1	NoRel	true	indgå	gennemførte
+Relation	T7	T4	NoRel	true	indgå	forværret
+Relation	T8	T9	NoRel	true	aftale	forlængelse
+Relation	T9	T5	NoRel	true	forlængelse	gennemført

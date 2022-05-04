@@ -1,0 +1,34 @@
+Text	İki yolcu yolculuklarına demiryolu ile devam etmeye karar verdi .	514 sefer sayılı uçuşun yolcuları , uçuş ekibinin yaptıklarından dolayı onurlandırılmasını istedi .	Mürettebat , kaza soruşturmasında yetkililere yardımcı olmak için Ukhta'da kaldı .	Başarılı acil iniş Rus havacılık uzmanları tarafından bir mucize olarak adlandırıldı .	Rusya Ulaştırma Bakanı Igor Levitin mürettebatla bir araya gelerek kazadaki " kahramanca , kararlı ve profesyonel davranışları " için teşekkür etti .
+Event	T1	istedi	EVENT	157
+Event	T11	yaptıklarından	EVENT	116
+Event	T12	onurlandırılmasını	EVENT	138
+Event	T16	kazadaki	EVENT	403
+Event	T2	soruşturmasında	EVENT	184
+Event	T3	kaldı	EVENT	241
+Event	T4	iniş	EVENT	263
+Event	T5	adlandırıldı	EVENT	321
+Event	T6	teşekkür etti	EVENT	470
+Event	T7	yolculuklarına	EVENT	10
+Relation	T11	T12	CauseEffect	true	yaptıklarından	onurlandırılmasını
+Relation	T12	T11	EffectCause	true	onurlandırılmasını	yaptıklarından
+Relation	T11	T1	CauseEffect	true	yaptıklarından	istedi
+Relation	T1	T11	EffectCause	true	istedi	yaptıklarından
+Relation	T2	T3	CauseEffect	true	soruşturmasında	kaldı
+Relation	T3	T2	EffectCause	true	kaldı	soruşturmasında
+Relation	T4	T5	CauseEffect	true	iniş	adlandırıldı
+Relation	T5	T4	EffectCause	true	adlandırıldı	iniş
+Relation	T11	T6	CauseEffect	true	yaptıklarından	teşekkür etti
+Relation	T6	T11	EffectCause	true	teşekkür etti	yaptıklarından
+Relation	T4	T6	CauseEffect	true	iniş	teşekkür etti
+Relation	T6	T4	EffectCause	true	teşekkür etti	iniş
+Relation	T16	T2	CauseEffect	true	kazadaki	soruşturmasında
+Relation	T2	T16	EffectCause	true	soruşturmasında	kazadaki
+Relation	T1	T2	NoRel	true	istedi	soruşturmasında
+Relation	T12	T3	NoRel	true	onurlandırılmasını	kaldı
+Relation	T12	T4	NoRel	true	onurlandırılmasını	iniş
+Relation	T12	T5	NoRel	true	onurlandırılmasını	adlandırıldı
+Relation	T3	T1	NoRel	true	kaldı	istedi
+Relation	T4	T1	NoRel	true	iniş	istedi
+Relation	T5	T12	NoRel	true	adlandırıldı	onurlandırılmasını
+Relation	T5	T3	NoRel	true	adlandırıldı	kaldı
+Relation	T7	T2	NoRel	true	yolculuklarına	soruşturmasında

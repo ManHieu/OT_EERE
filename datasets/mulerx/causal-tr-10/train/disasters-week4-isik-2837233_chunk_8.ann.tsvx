@@ -1,0 +1,22 @@
+Text	" dedi .	- - Fransa İçişleri Bakanı Gérald Darmanin , Ege Denizi'nde gerçekleşen depremden dolayı Türkiye ve Yunanistan'a , ülkelerin ihtiyacı hâlinde yardımların anında ulaştırılacağını belirtti .	- - İsrail Savunma Bakanı Benny Gantz , deprem bölgesine arama kurtarma ekibi gönderilmesi ve Sahra Hastanesi kurulması için hazır olduklarını belirtti .	- - Katar Büyükelçiliği , " Türkiye'nin İzmir ilinde meydana gelen depremden dolayı Türk hükümetine ve kardeş Türk halkına taziye ve başsağlığı dileklerini sunar , yaralılara acil şifalar temenni eder .	" açıklamasında bulundu .
+Event	T0	belirtti	EVENT	187
+Event	T1	gönderilmesi	EVENT	276
+Event	T2	kurulması	EVENT	308
+Event	T3	belirtti	EVENT	341
+Event	T5	depremden	EVENT	419
+Event	T6	eder	EVENT	548
+Event	T7	bulundu	EVENT	571
+Event	T8	depremden	EVENT	81
+Event	T9	deprem	EVENT	238
+Relation	T8	T0	CauseEffect	true	depremden	belirtti
+Relation	T0	T8	EffectCause	true	belirtti	depremden
+Relation	T9	T3	CauseEffect	true	deprem	belirtti
+Relation	T3	T9	EffectCause	true	belirtti	deprem
+Relation	T5	T7	CauseEffect	true	depremden	bulundu
+Relation	T7	T5	EffectCause	true	bulundu	depremden
+Relation	T0	T1	NoRel	true	belirtti	gönderilmesi
+Relation	T0	T3	NoRel	true	belirtti	belirtti
+Relation	T2	T9	NoRel	true	kurulması	deprem
+Relation	T6	T9	NoRel	true	eder	deprem
+Relation	T7	T8	NoRel	true	bulundu	depremden
+Relation	T7	T9	NoRel	true	bulundu	deprem

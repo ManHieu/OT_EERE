@@ -1,0 +1,57 @@
+Text	Cerca de 500 mil viviendas están con daño severo y se estiman un total de 2 millones de damnificados , en la peor tragedia natural vivida en Chile desde 1960 .	La presidenta Michelle Bachelet declaró “ estado de excepción constitucional de catástrofe ” en las regiones del Maule y Biobío .	Un fuerte TSUNAMI impactó las costas chilenas como producto del terremoto , destruyendo varias localidades ya devastadas por el impacto telúrico .	El archipiélago de Juan Fernández , pese a no sentir el sismo , fue impactado por las marejadas que arrasaron con su único poblado , San Juan Bautista , en la Isla Robinson Crusoe .	La alerta de tsunami generada para el océano Pacífico se extendió posteriormente a 53 países ubicados a lo largo de gran parte de su cuenca , llegando a Perú , Ecuador , Colombia , Panamá , Costa Rica , la Antártida , Nueva Zelanda , la Polinesia Francesa y las costas de Hawái .
+Event	T0	damnificados	EVENT	88
+Event	T1	tragedia	EVENT	114
+Event	T2	vivida	EVENT	131
+Event	T3	declaró	EVENT	192
+Event	T4	catástrofe	EVENT	240
+Event	T6	terremoto	EVENT	354
+Event	T7	destruyendo	EVENT	366
+Event	T8	devastadas	EVENT	400
+Event	T9	sentir	EVENT	483
+Event	T10	sismo	EVENT	493
+Event	T11	impactado	EVENT	505
+Event	T12	marejadas	EVENT	523
+Event	T13	arrasaron	EVENT	537
+Event	T14	alerta	EVENT	622
+Event	T15	generada	EVENT	640
+Event	T16	extendió	EVENT	676
+Event	T17	llegando	EVENT	761
+Event	T18	TSUNAMI	EVENT	300
+Relation	T6	T18	CauseEffect	true	terremoto	TSUNAMI
+Relation	T18	T6	EffectCause	true	TSUNAMI	terremoto
+Relation	T18	T7	CauseEffect	true	TSUNAMI	destruyendo
+Relation	T7	T18	EffectCause	true	destruyendo	TSUNAMI
+Relation	T6	T8	CauseEffect	true	terremoto	devastadas
+Relation	T8	T6	EffectCause	true	devastadas	terremoto
+Relation	T18	T11	CauseEffect	true	TSUNAMI	impactado
+Relation	T11	T18	EffectCause	true	impactado	TSUNAMI
+Relation	T12	T13	CauseEffect	true	marejadas	arrasaron
+Relation	T13	T12	EffectCause	true	arrasaron	marejadas
+Relation	T0	T14	NoRel	true	damnificados	alerta
+Relation	T0	T17	NoRel	true	damnificados	llegando
+Relation	T0	T2	NoRel	true	damnificados	vivida
+Relation	T1	T10	NoRel	true	tragedia	sismo
+Relation	T1	T11	NoRel	true	tragedia	impactado
+Relation	T10	T4	NoRel	true	sismo	catástrofe
+Relation	T11	T1	NoRel	true	impactado	tragedia
+Relation	T11	T15	NoRel	true	impactado	generada
+Relation	T11	T16	NoRel	true	impactado	extendió
+Relation	T12	T7	NoRel	true	marejadas	destruyendo
+Relation	T14	T9	NoRel	true	alerta	sentir
+Relation	T15	T1	NoRel	true	generada	tragedia
+Relation	T15	T14	NoRel	true	generada	alerta
+Relation	T15	T18	NoRel	true	generada	TSUNAMI
+Relation	T16	T17	NoRel	true	extendió	llegando
+Relation	T17	T15	NoRel	true	llegando	generada
+Relation	T17	T9	NoRel	true	llegando	sentir
+Relation	T18	T12	NoRel	true	TSUNAMI	marejadas
+Relation	T18	T3	NoRel	true	TSUNAMI	declaró
+Relation	T2	T18	NoRel	true	vivida	TSUNAMI
+Relation	T3	T4	NoRel	true	declaró	catástrofe
+Relation	T4	T12	NoRel	true	catástrofe	marejadas
+Relation	T4	T15	NoRel	true	catástrofe	generada
+Relation	T6	T11	NoRel	true	terremoto	impactado
+Relation	T6	T4	NoRel	true	terremoto	catástrofe
+Relation	T6	T9	NoRel	true	terremoto	sentir
+Relation	T7	T12	NoRel	true	destruyendo	marejadas
+Relation	T7	T6	NoRel	true	destruyendo	terremoto

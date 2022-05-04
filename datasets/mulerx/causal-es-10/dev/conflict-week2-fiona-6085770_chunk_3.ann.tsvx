@@ -1,0 +1,32 @@
+Text	Durante la ocupación serbia del territorio , el general Janković obligó a notables y caudillos tribales locales a firmar una declaración de agradecimiento al rey Petar I Karađorđević por su « liberación por el ejército serbio » .	El ejército del Reino de Serbia capturó Durrës el 29 de noviembre de 1912 , sin ningún tipo de resistencia .	Inmediatamente después de su llegada a Durrës , el Reino de Serbia estableció el Condado de Durrës , sus oficinas de distrito y designó al gobernador de la provincia , el alcalde de la ciudad y el comandante de la guarnición militar .	Durante la ocupación , el ejército serbio cometió numerosos crímenes contra la población albanesa « con vistas a la transformación del carácter étnico de estas regiones » .	El Gobierno serbio rechazó los informes de crímenes de guerra .
+Event	T0	ocupación	EVENT	11
+Event	T1	obligó	EVENT	65
+Event	T11	crímenes	EVENT	634
+Event	T13	rechazó	EVENT	766
+Event	T2	firmar	EVENT	114
+Event	T5	liberación	EVENT	192
+Event	T6	capturó	EVENT	262
+Event	T7	resistencia	EVENT	325
+Event	T8	llegada	EVENT	368
+Event	T9	ocupación	EVENT	585
+Event	T3	estableció	EVENT	406
+Event	T4	designó	EVENT	467
+Relation	T0	T5	NoRel	true	ocupación	liberación
+Relation	T0	T9	NoRel	true	ocupación	ocupación
+Relation	T11	T2	NoRel	true	crímenes	firmar
+Relation	T13	T4	NoRel	true	rechazó	designó
+Relation	T13	T7	NoRel	true	rechazó	resistencia
+Relation	T2	T13	NoRel	true	firmar	rechazó
+Relation	T2	T6	NoRel	true	firmar	capturó
+Relation	T2	T8	NoRel	true	firmar	llegada
+Relation	T3	T0	NoRel	true	estableció	ocupación
+Relation	T3	T13	NoRel	true	estableció	rechazó
+Relation	T3	T9	NoRel	true	estableció	ocupación
+Relation	T4	T2	NoRel	true	designó	firmar
+Relation	T4	T9	NoRel	true	designó	ocupación
+Relation	T5	T0	NoRel	true	liberación	ocupación
+Relation	T6	T8	NoRel	true	capturó	llegada
+Relation	T7	T4	NoRel	true	resistencia	designó
+Relation	T8	T2	NoRel	true	llegada	firmar
+Relation	T8	T7	NoRel	true	llegada	resistencia
+Relation	T9	T5	NoRel	true	ocupación	liberación

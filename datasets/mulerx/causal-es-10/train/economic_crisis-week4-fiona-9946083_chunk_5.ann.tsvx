@@ -1,0 +1,68 @@
+Text	A pesar de que la sombra fue purgada de Sakura , Angra Mainyu todavía intenta emerger del Santo Grial .	Rider lleva a Rin y Sakura a un lugar seguro mientras Shirou se queda para detener el renacimiento de la entidad , pero un Kirei moribundo interfiere ya que cree que el nacimiento de Angra Mainyu puede mostrar su propósito en la vida .	Shirou derrota a Kirei después de una feroz pelea a puñetazos , esta última declarando a Shirou como el ganador de la Guerra del Santo Grial antes de morir .	Sin embargo , Shirou duda en destruir el grial , sabiendo que lo matará .	Illya aparece ante él , le pregunta si quiere vivir y le dice que protegerá a su hermano pequeño .
+Event	T0	purgada	EVENT	29
+Event	T1	emerger	EVENT	78
+Event	T2	lleva	EVENT	110
+Event	T3	queda	EVENT	168
+Event	T4	detener	EVENT	179
+Event	T5	renacimiento	EVENT	190
+Event	T6	interfiere	EVENT	243
+Event	T7	cree	EVENT	261
+Event	T8	nacimiento	EVENT	273
+Event	T9	mostrar	EVENT	306
+Event	T10	derrota	EVENT	347
+Event	T11	pelea	EVENT	384
+Event	T12	declarando	EVENT	416
+Event	T13	ganador	EVENT	444
+Event	T14	Guerra	EVENT	458
+Event	T15	morir	EVENT	490
+Event	T16	duda	EVENT	519
+Event	T17	destruir	EVENT	527
+Event	T18	sabiendo	EVENT	547
+Event	T19	matará	EVENT	563
+Event	T20	aparece	EVENT	578
+Event	T21	pregunta	EVENT	599
+Relation	T11	T10	CauseEffect	true	pelea	derrota
+Relation	T10	T11	EffectCause	true	derrota	pelea
+Relation	T0	T13	NoRel	true	purgada	ganador
+Relation	T0	T18	NoRel	true	purgada	sabiendo
+Relation	T0	T20	NoRel	true	purgada	aparece
+Relation	T0	T6	NoRel	true	purgada	interfiere
+Relation	T0	T7	NoRel	true	purgada	cree
+Relation	T1	T17	NoRel	true	emerger	destruir
+Relation	T10	T6	NoRel	true	derrota	interfiere
+Relation	T10	T7	NoRel	true	derrota	cree
+Relation	T11	T15	NoRel	true	pelea	morir
+Relation	T12	T2	NoRel	true	declarando	lleva
+Relation	T12	T8	NoRel	true	declarando	nacimiento
+Relation	T13	T7	NoRel	true	ganador	cree
+Relation	T14	T10	NoRel	true	Guerra	derrota
+Relation	T14	T13	NoRel	true	Guerra	ganador
+Relation	T14	T9	NoRel	true	Guerra	mostrar
+Relation	T15	T13	NoRel	true	morir	ganador
+Relation	T15	T14	NoRel	true	morir	Guerra
+Relation	T15	T8	NoRel	true	morir	nacimiento
+Relation	T16	T3	NoRel	true	duda	queda
+Relation	T17	T15	NoRel	true	destruir	morir
+Relation	T17	T16	NoRel	true	destruir	duda
+Relation	T17	T21	NoRel	true	destruir	pregunta
+Relation	T17	T9	NoRel	true	destruir	mostrar
+Relation	T18	T19	NoRel	true	sabiendo	matará
+Relation	T19	T6	NoRel	true	matará	interfiere
+Relation	T19	T7	NoRel	true	matará	cree
+Relation	T21	T18	NoRel	true	pregunta	sabiendo
+Relation	T3	T12	NoRel	true	queda	declarando
+Relation	T3	T17	NoRel	true	queda	destruir
+Relation	T4	T11	NoRel	true	detener	pelea
+Relation	T5	T10	NoRel	true	renacimiento	derrota
+Relation	T5	T20	NoRel	true	renacimiento	aparece
+Relation	T7	T1	NoRel	true	cree	emerger
+Relation	T7	T14	NoRel	true	cree	Guerra
+Relation	T7	T2	NoRel	true	cree	lleva
+Relation	T7	T8	NoRel	true	cree	nacimiento
+Relation	T8	T0	NoRel	true	nacimiento	purgada
+Relation	T8	T19	NoRel	true	nacimiento	matará
+Relation	T8	T20	NoRel	true	nacimiento	aparece
+Relation	T8	T21	NoRel	true	nacimiento	pregunta
+Relation	T8	T7	NoRel	true	nacimiento	cree
+Relation	T9	T1	NoRel	true	mostrar	emerger
+Relation	T9	T11	NoRel	true	mostrar	pelea

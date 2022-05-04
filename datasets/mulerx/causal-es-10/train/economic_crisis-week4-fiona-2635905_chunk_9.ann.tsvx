@@ -1,0 +1,68 @@
+Text	Alemania quedó en bancarrota .	La inflación acrecentó las dudas sobre la eficacia de las instituciones liberales , especialmente entre la clase media que había perdido gran parte de su riqueza al ser ésta expresada en depósitos bancarios y bonos gubernamentales , víctimas de las peores devaluaciones .	Asimismo , produjo un fuerte resentimiento hacia los banqueros alemanes y los especuladores , muchos de ellos judíos , a los que el gobierno y la prensa culparon de la inflación .	La prosperidad de los especuladores en metales preciosos e inmuebles , y la ruina financiera de los ahorristas que conservaban dinero en efectivo , hizo que muchos de estos últimos empezaran a perder la fe en los mecanismos de la democracia y el capitalismo , que no habían podido protegerlos del desastre .	Lo que demuestra la hiperinflación en la República de Weimar , es que la pérdida de confianza en los medios convencionales de intercambio económico rompe con el orden social .
+Event	T0	bancarrota	EVENT	18
+Event	T1	acrecentó	EVENT	44
+Event	T2	dudas	EVENT	58
+Event	T3	perdido	EVENT	160
+Event	T4	expresada	EVENT	205
+Event	T5	víctimas	EVENT	264
+Event	T6	devaluaciones	EVENT	287
+Event	T7	produjo	EVENT	314
+Event	T8	resentimiento	EVENT	332
+Event	T9	culparon	EVENT	456
+Event	T10	inflación	EVENT	471
+Event	T11	prosperidad	EVENT	486
+Event	T12	ruina	EVENT	559
+Event	T13	hizo	EVENT	631
+Event	T14	empezaran	EVENT	664
+Event	T15	perder	EVENT	676
+Event	T16	desastre	EVENT	780
+Event	T17	demuestra	EVENT	798
+Event	T18	hiperinflación	EVENT	811
+Event	T19	pérdida	EVENT	864
+Event	T20	rompe	EVENT	939
+Relation	T19	T20	CauseEffect	true	pérdida	rompe
+Relation	T20	T19	EffectCause	true	rompe	pérdida
+Relation	T0	T4	NoRel	true	bancarrota	expresada
+Relation	T1	T0	NoRel	true	acrecentó	bancarrota
+Relation	T1	T14	NoRel	true	acrecentó	empezaran
+Relation	T1	T8	NoRel	true	acrecentó	resentimiento
+Relation	T10	T1	NoRel	true	inflación	acrecentó
+Relation	T10	T20	NoRel	true	inflación	rompe
+Relation	T10	T5	NoRel	true	inflación	víctimas
+Relation	T10	T6	NoRel	true	inflación	devaluaciones
+Relation	T11	T13	NoRel	true	prosperidad	hizo
+Relation	T12	T11	NoRel	true	ruina	prosperidad
+Relation	T12	T8	NoRel	true	ruina	resentimiento
+Relation	T13	T11	NoRel	true	hizo	prosperidad
+Relation	T13	T18	NoRel	true	hizo	hiperinflación
+Relation	T14	T17	NoRel	true	empezaran	demuestra
+Relation	T14	T5	NoRel	true	empezaran	víctimas
+Relation	T15	T12	NoRel	true	perder	ruina
+Relation	T15	T6	NoRel	true	perder	devaluaciones
+Relation	T16	T17	NoRel	true	desastre	demuestra
+Relation	T17	T15	NoRel	true	demuestra	perder
+Relation	T17	T16	NoRel	true	demuestra	desastre
+Relation	T17	T19	NoRel	true	demuestra	pérdida
+Relation	T17	T20	NoRel	true	demuestra	rompe
+Relation	T19	T11	NoRel	true	pérdida	prosperidad
+Relation	T19	T2	NoRel	true	pérdida	dudas
+Relation	T19	T7	NoRel	true	pérdida	produjo
+Relation	T19	T8	NoRel	true	pérdida	resentimiento
+Relation	T2	T16	NoRel	true	dudas	desastre
+Relation	T2	T5	NoRel	true	dudas	víctimas
+Relation	T3	T12	NoRel	true	perdido	ruina
+Relation	T3	T16	NoRel	true	perdido	desastre
+Relation	T3	T17	NoRel	true	perdido	demuestra
+Relation	T3	T9	NoRel	true	perdido	culparon
+Relation	T4	T0	NoRel	true	expresada	bancarrota
+Relation	T4	T18	NoRel	true	expresada	hiperinflación
+Relation	T4	T5	NoRel	true	expresada	víctimas
+Relation	T5	T7	NoRel	true	víctimas	produjo
+Relation	T6	T1	NoRel	true	devaluaciones	acrecentó
+Relation	T6	T12	NoRel	true	devaluaciones	ruina
+Relation	T6	T18	NoRel	true	devaluaciones	hiperinflación
+Relation	T7	T2	NoRel	true	produjo	dudas
+Relation	T8	T14	NoRel	true	resentimiento	empezaran
+Relation	T9	T12	NoRel	true	culparon	ruina
+Relation	T9	T14	NoRel	true	culparon	empezaran
+Relation	T9	T6	NoRel	true	culparon	devaluaciones

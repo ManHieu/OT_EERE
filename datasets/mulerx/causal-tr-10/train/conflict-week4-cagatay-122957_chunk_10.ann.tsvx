@@ -1,0 +1,50 @@
+Text	- Kaptan Amerika , vatana ihanetten yargılanmak üzere mahkemeye götürülürken Cross Bones tarafından suikasta uğrar ve öldürülür .	- Amerika Başkanı , tasarıya karşı olup da teslim olan tüm süper kahramanlara genel af ilan eder .	Bazı karakterler bunu kabul edip tasarıyı kabul ederken , bazıları ülkeyi terk etmeye karar veriler .	( Çoğu Kanada'ya kaçar .	) Bazıları ise yeraltına inerler .
+Event	T0	yargılanmak	EVENT	36
+Event	T1	götürülürken	EVENT	64
+Event	T2	uğrar	EVENT	109
+Event	T3	öldürülür	EVENT	118
+Event	T5	kabul	EVENT	251
+Event	T6	terk	EVENT	303
+Event	T7	kaçar	EVENT	348
+Event	T8	ihanetten	EVENT	26
+Event	T9	mahkemeye	EVENT	54
+Event	T10	suikasta	EVENT	100
+Event	T12	teslim olan	EVENT	173
+Event	T13	af	EVENT	214
+Event	T11	kabul	EVENT	271
+Event	T14	karar veriler	EVENT	315
+Event	T15	inerler	EVENT	381
+Event	T4	ilan	EVENT	217
+Relation	T12	T13	CauseEffect	true	teslim olan	af
+Relation	T13	T12	EffectCause	true	af	teslim olan
+Relation	T14	T7	CauseEffect	true	karar veriler	kaçar
+Relation	T7	T14	EffectCause	true	kaçar	karar veriler
+Relation	T14	T15	CauseEffect	true	karar veriler	inerler
+Relation	T15	T14	EffectCause	true	inerler	karar veriler
+Relation	T0	T1	NoRel	true	yargılanmak	götürülürken
+Relation	T1	T11	NoRel	true	götürülürken	kabul
+Relation	T1	T13	NoRel	true	götürülürken	af
+Relation	T10	T13	NoRel	true	suikasta	af
+Relation	T11	T0	NoRel	true	kabul	yargılanmak
+Relation	T11	T14	NoRel	true	kabul	karar veriler
+Relation	T11	T15	NoRel	true	kabul	inerler
+Relation	T12	T2	NoRel	true	teslim olan	uğrar
+Relation	T13	T14	NoRel	true	af	karar veriler
+Relation	T13	T9	NoRel	true	af	mahkemeye
+Relation	T14	T13	NoRel	true	karar veriler	af
+Relation	T14	T3	NoRel	true	karar veriler	öldürülür
+Relation	T15	T5	NoRel	true	inerler	kabul
+Relation	T2	T4	NoRel	true	uğrar	ilan
+Relation	T2	T5	NoRel	true	uğrar	kabul
+Relation	T3	T13	NoRel	true	öldürülür	af
+Relation	T3	T4	NoRel	true	öldürülür	ilan
+Relation	T4	T2	NoRel	true	ilan	uğrar
+Relation	T5	T0	NoRel	true	kabul	yargılanmak
+Relation	T5	T12	NoRel	true	kabul	teslim olan
+Relation	T6	T12	NoRel	true	terk	teslim olan
+Relation	T6	T15	NoRel	true	terk	inerler
+Relation	T8	T13	NoRel	true	ihanetten	af
+Relation	T8	T15	NoRel	true	ihanetten	inerler
+Relation	T9	T11	NoRel	true	mahkemeye	kabul
+Relation	T9	T14	NoRel	true	mahkemeye	karar veriler
+Relation	T9	T4	NoRel	true	mahkemeye	ilan

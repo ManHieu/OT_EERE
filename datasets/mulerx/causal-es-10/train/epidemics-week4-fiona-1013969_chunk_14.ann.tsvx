@@ -1,0 +1,73 @@
+Text	En este final , Jim es herido por el disparo del comandante Henry West , y Selena y Hannah lo llevan al hospital , pero las maniobras de reanimación no funcionan , y ambas se alejan , armadas , a través del hospital desierto .	En el comentario incluido en el DVD , Boyle y Garland explican que este fue el final original de la película , pero que fue rechazado después de probarlo con audiencias de control , por considerarlo demasiado deprimente .	En opinión de los guionistas , la imagen final de Selena y Hannah saliendo del hospital quería dar a entender que sobrevivirían , mientras que los espectadores entendieron lo contrario , esto es , que estaban condenadas a morir .	Pese a que finalmente lo cambiaron , este final sigue siendo el preferido por los guionistas , ya que consideran que así el círculo se cierra para Jim , quien empieza y termina la película en una cama en un hospital desierto .	Es una versión extendida del final alternativo donde Jim muere en el hospital .
+Event	T0	final	EVENT	8
+Event	T1	herido	EVENT	23
+Event	T2	disparo	EVENT	37
+Event	T3	llevan	EVENT	94
+Event	T4	maniobras	EVENT	124
+Event	T5	reanimación	EVENT	137
+Event	T6	funcionan	EVENT	152
+Event	T7	alejan	EVENT	175
+Event	T8	armadas	EVENT	184
+Event	T9	incluido	EVENT	244
+Event	T10	rechazado	EVENT	351
+Event	T11	probarlo	EVENT	372
+Event	T12	saliendo	EVENT	515
+Event	T13	dar	EVENT	544
+Event	T14	sobrevivirían	EVENT	563
+Event	T15	entendieron	EVENT	609
+Event	T16	condenadas	EVENT	658
+Event	T17	morir	EVENT	671
+Event	T18	cambiaron	EVENT	704
+Event	T19	cierra	EVENT	814
+Event	T20	empieza	EVENT	838
+Event	T21	termina	EVENT	848
+Event	T22	muere	EVENT	963
+Relation	T2	T1	CauseEffect	true	disparo	herido
+Relation	T1	T2	EffectCause	true	herido	disparo
+Relation	T0	T19	NoRel	true	final	cierra
+Relation	T0	T21	NoRel	true	final	termina
+Relation	T0	T3	NoRel	true	final	llevan
+Relation	T0	T7	NoRel	true	final	alejan
+Relation	T1	T13	NoRel	true	herido	dar
+Relation	T1	T17	NoRel	true	herido	morir
+Relation	T1	T6	NoRel	true	herido	funcionan
+Relation	T11	T17	NoRel	true	probarlo	morir
+Relation	T11	T6	NoRel	true	probarlo	funcionan
+Relation	T12	T7	NoRel	true	saliendo	alejan
+Relation	T13	T10	NoRel	true	dar	rechazado
+Relation	T13	T11	NoRel	true	dar	probarlo
+Relation	T14	T13	NoRel	true	sobrevivirían	dar
+Relation	T14	T3	NoRel	true	sobrevivirían	llevan
+Relation	T15	T22	NoRel	true	entendieron	muere
+Relation	T15	T7	NoRel	true	entendieron	alejan
+Relation	T16	T3	NoRel	true	condenadas	llevan
+Relation	T17	T22	NoRel	true	morir	muere
+Relation	T17	T6	NoRel	true	morir	funcionan
+Relation	T18	T2	NoRel	true	cambiaron	disparo
+Relation	T18	T20	NoRel	true	cambiaron	empieza
+Relation	T19	T13	NoRel	true	cierra	dar
+Relation	T2	T15	NoRel	true	disparo	entendieron
+Relation	T2	T17	NoRel	true	disparo	morir
+Relation	T2	T20	NoRel	true	disparo	empieza
+Relation	T20	T4	NoRel	true	empieza	maniobras
+Relation	T20	T5	NoRel	true	empieza	reanimación
+Relation	T21	T2	NoRel	true	termina	disparo
+Relation	T22	T14	NoRel	true	muere	sobrevivirían
+Relation	T22	T4	NoRel	true	muere	maniobras
+Relation	T22	T6	NoRel	true	muere	funcionan
+Relation	T3	T10	NoRel	true	llevan	rechazado
+Relation	T3	T11	NoRel	true	llevan	probarlo
+Relation	T3	T14	NoRel	true	llevan	sobrevivirían
+Relation	T4	T14	NoRel	true	maniobras	sobrevivirían
+Relation	T5	T12	NoRel	true	reanimación	saliendo
+Relation	T5	T18	NoRel	true	reanimación	cambiaron
+Relation	T5	T21	NoRel	true	reanimación	termina
+Relation	T5	T22	NoRel	true	reanimación	muere
+Relation	T5	T7	NoRel	true	reanimación	alejan
+Relation	T6	T12	NoRel	true	funcionan	saliendo
+Relation	T8	T12	NoRel	true	armadas	saliendo
+Relation	T8	T17	NoRel	true	armadas	morir
+Relation	T8	T6	NoRel	true	armadas	funcionan
+Relation	T9	T1	NoRel	true	incluido	herido
+Relation	T9	T14	NoRel	true	incluido	sobrevivirían
+Relation	T9	T7	NoRel	true	incluido	alejan

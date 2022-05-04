@@ -1,0 +1,35 @@
+Text	Şimdiye kadar Zengezur bölgesinde Azerbaycan ile Ermenistan arasında neredeyse kesin bir sınır yoktu ve iki ülke arasındaki sınırın çizilmesi meselesi Ermenistan'ın yenilgisinden hemen sonra ortaya çıktı .	İki ülke arasında başka sınır sorunları da var ; Ermenistan , 1990'lardan beri Azerbaycan'ın Kazah Rayonunda üç Azerbaycan köyünü ve Nahçıvan Özerk Cumhuriyeti'ndeki Kerki köyü de dahil olmak üzere birçok köyü işgal ediyor .	16 Kasım'da çıkan çatışmada 6 Ermeni ve 7 Azerbaycanlı askeri hayatını kaybetmişti ve aynı gün Rusya Savunma Bakanı Sergey Şoygu'nun arabulucuğu ile ateşkes görüşmeleri yapıldı .	Azerbaycan ile Ermenistan arasındaki gerginlik Mayıs ayından bu yana tırmanıyor .	Ermenistan'a göre , Azerbaycan ordusu güney sınırını geçerek Garagol Gölü'nü işgal etti , ancak Azerbaycan Dışişleri Bakanlığı iddiaları yalanladı ve Azerbaycan'ın kendi sınırlarını koruduğunu söyledi .
+Event	T0	yenilgisinden	EVENT	165
+Event	T1	çıktı	EVENT	198
+Event	T2	sorunları	EVENT	236
+Event	T3	ediyor	EVENT	422
+Event	T4	çatışmada	EVENT	449
+Event	T5	kaybetmişti	EVENT	502
+Event	T6	yapıldı	EVENT	600
+Event	T7	gerginlik	EVENT	647
+Event	T8	tırmanıyor	EVENT	679
+Event	T10	yalanladı	EVENT	829
+Event	T11	söyledi	EVENT	885
+Event	T12	arabulucuğu	EVENT	564
+Event	T9	işgal	EVENT	769
+Relation	T0	T1	CauseEffect	true	yenilgisinden	çıktı
+Relation	T1	T0	EffectCause	true	çıktı	yenilgisinden
+Relation	T3	T2	CauseEffect	true	ediyor	sorunları
+Relation	T2	T3	EffectCause	true	sorunları	ediyor
+Relation	T4	T5	CauseEffect	true	çatışmada	kaybetmişti
+Relation	T5	T4	EffectCause	true	kaybetmişti	çatışmada
+Relation	T5	T6	CauseEffect	true	kaybetmişti	yapıldı
+Relation	T6	T5	EffectCause	true	yapıldı	kaybetmişti
+Relation	T9	T10	CauseEffect	true	işgal	yalanladı
+Relation	T10	T9	EffectCause	true	yalanladı	işgal
+Relation	T10	T0	NoRel	true	yalanladı	yenilgisinden
+Relation	T10	T2	NoRel	true	yalanladı	sorunları
+Relation	T10	T3	NoRel	true	yalanladı	ediyor
+Relation	T10	T5	NoRel	true	yalanladı	kaybetmişti
+Relation	T3	T11	NoRel	true	ediyor	söyledi
+Relation	T4	T6	NoRel	true	çatışmada	yapıldı
+Relation	T5	T1	NoRel	true	kaybetmişti	çıktı
+Relation	T5	T11	NoRel	true	kaybetmişti	söyledi
+Relation	T7	T4	NoRel	true	gerginlik	çatışmada
+Relation	T8	T2	NoRel	true	tırmanıyor	sorunları
+Relation	T9	T4	NoRel	true	işgal	çatışmada

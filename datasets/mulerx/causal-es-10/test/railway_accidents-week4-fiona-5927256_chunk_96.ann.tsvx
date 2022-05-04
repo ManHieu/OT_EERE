@@ -1,0 +1,28 @@
+Text	- 9 de agosto de 1970 .	Entre las estaciones de Urdúliz y Plencia , en la línea suburbana que une Bilbao con la última localidad citada , se produce el accidente ferroviario más grave ocurrido en la vía estrecha española , al chocar frontalmente un tren atestado de viajeros con otro que circulaba vacío .	Murieron 33 personas y 165 resultaron heridas .	- El 11 de septiembre de 1971 , un balance de 6 muertos y 22 heridos es el resultado del choque entre un talgo que cubría el trayecto Madrid-Málaga y un tren mercancías entre Marmolejo y Arjonilla , en la provincia de Jaén .	- 8 de enero de 1972 .
+Event	T0	produce	EVENT	141
+Event	T1	ocurrido	EVENT	184
+Event	T2	chocar	EVENT	226
+Event	T3	atestado	EVENT	254
+Event	T4	Murieron	EVENT	306
+Event	T5	heridas	EVENT	344
+Event	T6	balance	EVENT	389
+Event	T7	muertos	EVENT	402
+Event	T8	resultado	EVENT	429
+Event	T9	choque	EVENT	443
+Event	T10	cubría	EVENT	469
+Event	T11	accidente	EVENT	152
+Relation	T2	T11	CauseEffect	true	chocar	accidente
+Relation	T11	T2	EffectCause	true	accidente	chocar
+Relation	T11	T4	CauseEffect	true	accidente	Murieron
+Relation	T4	T11	EffectCause	true	Murieron	accidente
+Relation	T11	T5	CauseEffect	true	accidente	heridas
+Relation	T5	T11	EffectCause	true	heridas	accidente
+Relation	T0	T9	NoRel	true	produce	choque
+Relation	T10	T7	NoRel	true	cubría	muertos
+Relation	T2	T4	NoRel	true	chocar	Murieron
+Relation	T3	T0	NoRel	true	atestado	produce
+Relation	T3	T2	NoRel	true	atestado	chocar
+Relation	T6	T1	NoRel	true	balance	ocurrido
+Relation	T7	T0	NoRel	true	muertos	produce
+Relation	T7	T5	NoRel	true	muertos	heridas
+Relation	T9	T0	NoRel	true	choque	produce

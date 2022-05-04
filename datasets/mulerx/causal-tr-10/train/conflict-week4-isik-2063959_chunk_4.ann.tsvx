@@ -1,0 +1,25 @@
+Text	Binada ağır hasar oluştu .	Diyarbakır Valiliği'nin yaptığı ilk açıklamaya göre 5 kişi hayatını kaybetti , 39 kişi yaralandı .	Enkaza dönen hizmet binası içerisinde hayatını kaybedenler arasında bir çocuk ve bir kadınının da olduğu belirtildi .	Olay sonrasında PKK'lılar ile Türk Polisi arasında çıkan çatışmada 8 PKK'lı ölü ele geçirildi .	Daha sonradan bir kişinin daha cansız bedeni bulundu .
+Event	T0	oluştu	EVENT	18
+Event	T1	yaptığı	EVENT	51
+Event	T2	açıklamaya	EVENT	63
+Event	T3	kaybetti	EVENT	95
+Event	T4	yaralandı	EVENT	114
+Event	T5	kaybedenler	EVENT	173
+Event	T6	belirtildi	EVENT	231
+Event	T7	Olay	EVENT	244
+Event	T8	çatışmada	EVENT	301
+Event	T9	geçirildi	EVENT	328
+Event	T10	bulundu	EVENT	385
+Relation	T8	T9	CauseEffect	true	çatışmada	geçirildi
+Relation	T9	T8	EffectCause	true	geçirildi	çatışmada
+Relation	T0	T9	NoRel	true	oluştu	geçirildi
+Relation	T1	T0	NoRel	true	yaptığı	oluştu
+Relation	T1	T10	NoRel	true	yaptığı	bulundu
+Relation	T3	T6	NoRel	true	kaybetti	belirtildi
+Relation	T3	T9	NoRel	true	kaybetti	geçirildi
+Relation	T5	T4	NoRel	true	kaybedenler	yaralandı
+Relation	T7	T10	NoRel	true	Olay	bulundu
+Relation	T7	T9	NoRel	true	Olay	geçirildi
+Relation	T8	T2	NoRel	true	çatışmada	açıklamaya
+Relation	T8	T4	NoRel	true	çatışmada	yaralandı
+Relation	T9	T7	NoRel	true	geçirildi	Olay

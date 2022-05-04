@@ -1,0 +1,41 @@
+Text	La tripulación de vuelo no adquirió ninguna referencia visual terrestre antes de iniciar la aproximación .	El avión comenzó su descenso final para el aterrizaje demasiado pronto .	La aeronave había descendido a 280 pies sobre el suelo cuando el sistema de toma de conciencia y la advertencia Terreno sonaba en la cabina .	El capitán ordenó un Go-Around y el piloto automático se desconectó .	El primer oficial levanto la nariz de la aeronave durante 4 segundos y las palancas de empuje se ajustan para iniciar un go-around .
+Event	T0	adquirió	EVENT	27
+Event	T1	iniciar	EVENT	81
+Event	T2	aproximación	EVENT	92
+Event	T3	comenzó	EVENT	116
+Event	T4	final	EVENT	136
+Event	T5	aterrizaje	EVENT	150
+Event	T6	descendido	EVENT	198
+Event	T7	toma	EVENT	256
+Event	T8	advertencia	EVENT	280
+Event	T9	sonaba	EVENT	300
+Event	T10	ordenó	EVENT	333
+Event	T11	desconectó	EVENT	379
+Event	T12	levanto	EVENT	410
+Event	T13	empuje	EVENT	479
+Event	T14	ajustan	EVENT	489
+Event	T15	iniciar	EVENT	502
+Event	T16	go-around	EVENT	513
+Relation	T10	T11	CauseEffect	true	ordenó	desconectó
+Relation	T11	T10	EffectCause	true	desconectó	ordenó
+Relation	T0	T12	NoRel	true	adquirió	levanto
+Relation	T1	T2	NoRel	true	iniciar	aproximación
+Relation	T1	T9	NoRel	true	iniciar	sonaba
+Relation	T11	T14	NoRel	true	desconectó	ajustan
+Relation	T11	T3	NoRel	true	desconectó	comenzó
+Relation	T12	T14	NoRel	true	levanto	ajustan
+Relation	T12	T15	NoRel	true	levanto	iniciar
+Relation	T13	T0	NoRel	true	empuje	adquirió
+Relation	T13	T12	NoRel	true	empuje	levanto
+Relation	T15	T16	NoRel	true	iniciar	go-around
+Relation	T15	T2	NoRel	true	iniciar	aproximación
+Relation	T16	T10	NoRel	true	go-around	ordenó
+Relation	T2	T9	NoRel	true	aproximación	sonaba
+Relation	T3	T8	NoRel	true	comenzó	advertencia
+Relation	T4	T0	NoRel	true	final	adquirió
+Relation	T4	T2	NoRel	true	final	aproximación
+Relation	T5	T0	NoRel	true	aterrizaje	adquirió
+Relation	T5	T12	NoRel	true	aterrizaje	levanto
+Relation	T7	T5	NoRel	true	toma	aterrizaje
+Relation	T8	T13	NoRel	true	advertencia	empuje
+Relation	T9	T8	NoRel	true	sonaba	advertencia

@@ -1,0 +1,67 @@
+Text	İmparator Phocas , General Germanus'a Edessa'yı kuşatması için talimat verdi ve Narses'in , " arkadaşı ve [ kayın ] babası " Mauricius'un intikamını almakta çok istekli olan , Mauricius'un ölümünü , Ermenistan'ı ve Mezopotamya'yı yeniden ele geçirmek için Roma İmparatorluğu'na saldırmakta bahane olarak kullanan Pers kral Hüsrev'den yardım istemesine yol açtı .	General Germanus , Persler'e karşı savaşta öldü .	Phocas tarafından Hüsrev'e gönderilen bir ordu üst Mezopotamya'da Dara yakınlarında yenildi ve 605 yılında bu önemli kalenin ele geçirilmesine neden oldu .	Narses , Phocas tarafından kendisiyle anlaşmak için atanmış olan hadım olan Leontius'dan kaçmıştı , ancak Narses barış koşullarını görüşmek üzere Konstantinopolis'e geri dönmeye kalkıştığında ve Phocas onu canlı canlı yaktı .	Narses'in ölümünün yanında Perslerin durdurulamaması da Phocas'ın askeri yönetiminin prestijine zarar verdi .
+Event	T0	kuşatması	EVENT	48
+Event	T1	verdi	EVENT	71
+Event	T2	ölümünü	EVENT	189
+Event	T3	geçirmek	EVENT	242
+Event	T4	saldırmakta	EVENT	278
+Event	T5	kullanan	EVENT	304
+Event	T6	açtı	EVENT	356
+Event	T7	öldü	EVENT	406
+Event	T8	gönderilen	EVENT	440
+Event	T9	yenildi	EVENT	497
+Event	T10	oldu	EVENT	562
+Event	T11	anlaşmak	EVENT	607
+Event	T12	görüşmek	EVENT	700
+Event	T13	kalkıştığında	EVENT	747
+Event	T14	yaktı	EVENT	787
+Event	T15	ölümünün	EVENT	805
+Event	T17	verdi	EVENT	897
+Event	T18	atanmış	EVENT	621
+Event	T19	kaçmıştı	EVENT	658
+Relation	T1	T0	CauseEffect	true	verdi	kuşatması
+Relation	T0	T1	EffectCause	true	kuşatması	verdi
+Relation	T0	T7	CauseEffect	true	kuşatması	öldü
+Relation	T7	T0	EffectCause	true	öldü	kuşatması
+Relation	T19	T14	CauseEffect	true	kaçmıştı	yaktı
+Relation	T14	T19	EffectCause	true	yaktı	kaçmıştı
+Relation	T15	T17	CauseEffect	true	ölümünün	verdi
+Relation	T17	T15	EffectCause	true	verdi	ölümünün
+Relation	T14	T17	CauseEffect	true	yaktı	verdi
+Relation	T17	T14	EffectCause	true	verdi	yaktı
+Relation	T0	T9	CauseEffect	true	kuşatması	yenildi
+Relation	T9	T0	EffectCause	true	yenildi	kuşatması
+Relation	T9	T10	CauseEffect	true	yenildi	oldu
+Relation	T10	T9	EffectCause	true	oldu	yenildi
+Relation	T0	T8	NoRel	true	kuşatması	gönderilen
+Relation	T1	T14	NoRel	true	verdi	yaktı
+Relation	T1	T15	NoRel	true	verdi	ölümünün
+Relation	T10	T1	NoRel	true	oldu	verdi
+Relation	T10	T11	NoRel	true	oldu	anlaşmak
+Relation	T10	T15	NoRel	true	oldu	ölümünün
+Relation	T10	T7	NoRel	true	oldu	öldü
+Relation	T11	T14	NoRel	true	anlaşmak	yaktı
+Relation	T12	T0	NoRel	true	görüşmek	kuşatması
+Relation	T12	T17	NoRel	true	görüşmek	verdi
+Relation	T12	T19	NoRel	true	görüşmek	kaçmıştı
+Relation	T13	T6	NoRel	true	kalkıştığında	açtı
+Relation	T14	T0	NoRel	true	yaktı	kuşatması
+Relation	T14	T12	NoRel	true	yaktı	görüşmek
+Relation	T15	T3	NoRel	true	ölümünün	geçirmek
+Relation	T18	T11	NoRel	true	atanmış	anlaşmak
+Relation	T18	T3	NoRel	true	atanmış	geçirmek
+Relation	T19	T11	NoRel	true	kaçmıştı	anlaşmak
+Relation	T19	T7	NoRel	true	kaçmıştı	öldü
+Relation	T3	T1	NoRel	true	geçirmek	verdi
+Relation	T4	T0	NoRel	true	saldırmakta	kuşatması
+Relation	T4	T1	NoRel	true	saldırmakta	verdi
+Relation	T4	T10	NoRel	true	saldırmakta	oldu
+Relation	T4	T11	NoRel	true	saldırmakta	anlaşmak
+Relation	T4	T12	NoRel	true	saldırmakta	görüşmek
+Relation	T5	T17	NoRel	true	kullanan	verdi
+Relation	T5	T2	NoRel	true	kullanan	ölümünü
+Relation	T6	T12	NoRel	true	açtı	görüşmek
+Relation	T6	T15	NoRel	true	açtı	ölümünün
+Relation	T7	T19	NoRel	true	öldü	kaçmıştı
+Relation	T8	T18	NoRel	true	gönderilen	atanmış
+Relation	T8	T5	NoRel	true	gönderilen	kullanan
+Relation	T9	T8	NoRel	true	yenildi	gönderilen

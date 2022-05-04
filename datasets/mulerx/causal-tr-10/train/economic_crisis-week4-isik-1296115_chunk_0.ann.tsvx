@@ -1,0 +1,19 @@
+Text	SECURITATE ( Rumence _ Güvenlik _ ) , resmi adıyla DEPARTAMENTUL SECURITĂȚII STATULUI ( Devlet Güvenlik Bakanlığı , kısaca DSS ) , Romanya Sosyalist Cumhuriyeti'nin gizli polis teşkilatı .	Komünist rejimden önce Romen gizli polisine Siguranța Statului olarak anılıyordu .	30 Ağustos 1948'de Romanya Kızıl Ordu işgali altındayken Sovyet NKVD'nin yardımıyla kuruldu .	1989'da Nicolae Ceaușescu'nun devrilmesinin ardından DSS , Parlamentonun DSS'yi çeşitli alt bölümlere dönüştüren bir yasayı onayladığı 1991 yılına kadar varoldu .	Securitate , Romanya nüfusu ile oranı ele alındığında Doğu bloğundaki en büyük gizli polis kuvvetlerinden biriydi .
+Event	T0	anılıyordu	EVENT	259
+Event	T1	işgali	EVENT	310
+Event	T2	kuruldu	EVENT	356
+Event	T3	devrilmesinin	EVENT	396
+Event	T4	dönüştüren	EVENT	468
+Event	T5	onayladığı	EVENT	490
+Event	T6	varoldu	EVENT	519
+Event	T8	yardımıyla	EVENT	345
+Relation	T1	T8	CauseEffect	true	işgali	yardımıyla
+Relation	T8	T1	EffectCause	true	yardımıyla	işgali
+Relation	T8	T2	CauseEffect	true	yardımıyla	kuruldu
+Relation	T2	T8	EffectCause	true	kuruldu	yardımıyla
+Relation	T0	T1	NoRel	true	anılıyordu	işgali
+Relation	T1	T3	NoRel	true	işgali	devrilmesinin
+Relation	T2	T6	NoRel	true	kuruldu	varoldu
+Relation	T5	T8	NoRel	true	onayladığı	yardımıyla
+Relation	T6	T4	NoRel	true	varoldu	dönüştüren
+Relation	T8	T0	NoRel	true	yardımıyla	anılıyordu

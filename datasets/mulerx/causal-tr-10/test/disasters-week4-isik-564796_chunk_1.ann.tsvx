@@ -1,0 +1,39 @@
+Text	Bu deprem Çin'de 1976 yılında meydana gelen ve yaklaşık 250.000 kişinin öldüğü Tangshan Depremi_nden sonraki şiddeti ve can kaybı en büyük olan depremdi .	Amerika Birleşik Devletleri Jeolojik Araştırma jeolojistlerine göre , bu magnitüddeki bir deprem _ çok tehlikeli _ ve büyük zararlara sebep olabilir .	12 Mayıs , 2008 saat 22: 07 e göre yapılan raporlara göre deprem Siçuan ve Çin'in pek çok bölgesinde enaz 10.000 kişinin ölümüne neden oldu .	fakat bu rakam gelecek sonraki raporlara göre artabilir .	Chongqing'da , 5 öğrencinin öldüğü rapor edildi , 20 kişi daha gömüldü ve bir ilk okul çöktüğünde 100 den fazla kişi yaralandı .
+Event	T0	deprem	EVENT	3
+Event	T1	gelen	EVENT	38
+Event	T2	öldüğü	EVENT	72
+Event	T3	kaybı	EVENT	124
+Event	T4	depremdi	EVENT	144
+Event	T5	deprem	EVENT	245
+Event	T6	deprem	EVENT	364
+Event	T7	oldu	EVENT	441
+Event	T8	edildi	EVENT	547
+Event	T9	gömüldü	EVENT	569
+Event	T10	çöktüğünde	EVENT	593
+Event	T11	yaralandı	EVENT	623
+Event	T12	Depremi_nden	EVENT	88
+Relation	T12	T2	CauseEffect	true	Depremi_nden	öldüğü
+Relation	T2	T12	EffectCause	true	öldüğü	Depremi_nden
+Relation	T6	T7	CauseEffect	true	deprem	oldu
+Relation	T7	T6	EffectCause	true	oldu	deprem
+Relation	T6	T8	CauseEffect	true	deprem	edildi
+Relation	T8	T6	EffectCause	true	edildi	deprem
+Relation	T6	T9	CauseEffect	true	deprem	gömüldü
+Relation	T9	T6	EffectCause	true	gömüldü	deprem
+Relation	T6	T10	CauseEffect	true	deprem	çöktüğünde
+Relation	T10	T6	EffectCause	true	çöktüğünde	deprem
+Relation	T10	T11	CauseEffect	true	çöktüğünde	yaralandı
+Relation	T11	T10	EffectCause	true	yaralandı	çöktüğünde
+Relation	T0	T11	NoRel	true	deprem	yaralandı
+Relation	T0	T6	NoRel	true	deprem	deprem
+Relation	T1	T0	NoRel	true	gelen	deprem
+Relation	T1	T8	NoRel	true	gelen	edildi
+Relation	T10	T3	NoRel	true	çöktüğünde	kaybı
+Relation	T11	T9	NoRel	true	yaralandı	gömüldü
+Relation	T12	T7	NoRel	true	Depremi_nden	oldu
+Relation	T2	T3	NoRel	true	öldüğü	kaybı
+Relation	T2	T4	NoRel	true	öldüğü	depremdi
+Relation	T2	T9	NoRel	true	öldüğü	gömüldü
+Relation	T3	T1	NoRel	true	kaybı	gelen
+Relation	T3	T12	NoRel	true	kaybı	Depremi_nden
+Relation	T5	T0	NoRel	true	deprem	deprem

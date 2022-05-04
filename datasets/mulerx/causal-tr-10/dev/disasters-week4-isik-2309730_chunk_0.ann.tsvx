@@ -1,0 +1,39 @@
+Text	HATEPE PATLAMASI , Taupo Gölü'nün MS 180 yılında meydana gelen patlamasına verilen isimdir .	Hatepe Plinian ponza tefra tabakasından ötürü bu adı almıştır ve bazen TAUPO PATLAMASI olarak anılmaktadır .	Son 20 bin yıl içinde Yeni Zelanda'da gerçekleşen en büyük patlama olarak kabul edilir .	VEI 7 patlama olarak sınıflandırılan patlama sonucu 120 kilometreküplük bir fışkırma meydana geldi ve bunun 30 kilometreküpü ise ilk birkaç dakikada fışkırtıldı .	Böylece , son 5000 yılda meydana gelen en şiddetli patlamalardan biri olmuştur ve M. Ö. 2. bin yıldaki Minoan patlaması , Paektu Dağının 946'daki patlaması ve Tambora Dağı'nın 1815'teki patlaması ile karşılaştırılabilir .
+Event	T1	almıştır	EVENT	146
+Event	T2	patlama	EVENT	261
+Event	T3	edilir	EVENT	282
+Event	T4	patlama	EVENT	297
+Event	T5	geldi	EVENT	384
+Event	T6	fışkırtıldı	EVENT	440
+Event	T7	meydana	EVENT	479
+Event	T8	patlamalardan	EVENT	505
+Event	T9	patlaması	EVENT	564
+Event	T10	patlaması	EVENT	600
+Event	T11	patlaması	EVENT	640
+Event	T12	karşılaştırılabilir	EVENT	654
+Event	T13	TAUPO PATLAMASI	EVENT	164
+Event	T14	HATEPE PATLAMASI	EVENT	0
+Relation	T14	T5	CauseEffect	true	HATEPE PATLAMASI	geldi
+Relation	T5	T14	EffectCause	true	geldi	HATEPE PATLAMASI
+Relation	T13	T5	CauseEffect	true	TAUPO PATLAMASI	geldi
+Relation	T5	T13	EffectCause	true	geldi	TAUPO PATLAMASI
+Relation	T1	T13	NoRel	true	almıştır	TAUPO PATLAMASI
+Relation	T1	T14	NoRel	true	almıştır	HATEPE PATLAMASI
+Relation	T1	T3	NoRel	true	almıştır	edilir
+Relation	T10	T7	NoRel	true	patlaması	meydana
+Relation	T11	T5	NoRel	true	patlaması	geldi
+Relation	T12	T1	NoRel	true	karşılaştırılabilir	almıştır
+Relation	T12	T2	NoRel	true	karşılaştırılabilir	patlama
+Relation	T12	T9	NoRel	true	karşılaştırılabilir	patlaması
+Relation	T13	T1	NoRel	true	TAUPO PATLAMASI	almıştır
+Relation	T13	T6	NoRel	true	TAUPO PATLAMASI	fışkırtıldı
+Relation	T13	T8	NoRel	true	TAUPO PATLAMASI	patlamalardan
+Relation	T14	T8	NoRel	true	HATEPE PATLAMASI	patlamalardan
+Relation	T2	T1	NoRel	true	patlama	almıştır
+Relation	T3	T9	NoRel	true	edilir	patlaması
+Relation	T4	T11	NoRel	true	patlama	patlaması
+Relation	T4	T3	NoRel	true	patlama	edilir
+Relation	T4	T9	NoRel	true	patlama	patlaması
+Relation	T5	T11	NoRel	true	geldi	patlaması
+Relation	T8	T2	NoRel	true	patlamalardan	patlama
+Relation	T9	T7	NoRel	true	patlaması	meydana

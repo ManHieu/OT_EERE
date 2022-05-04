@@ -1,0 +1,75 @@
+Text	بھوٹان میں کورونا وائرس کی وبا کا خطرہ اور معاملات اس وقت آشکارا ہوئے جب کوویت سے بھوٹان آئی ایک خاتون کے ذریعے کی گئی مسافرت سے کورونا وائرس انفیکشن پھیلنے کا اندازہ لگایا گیا ۔	سرکار نے ملک کی لگ بھگ 750,000 کی آبادی کے لیے گھر پر رہنے کا حکم جاری کیا ۔	ملک میں سبھی اسکول ، دفاتر اور عوامی مقامات بند کر دیے گئے ۔	سرکاری بیان کے مطانق یہ لاکڈاؤن پانچ سے 21 دنوں کے لیے متاثرہ مریضوں کی پہچان کرکے انہیں علاج فراہم کرنے کے لیے لاگو کیا گیا ہے ۔	لاکڈاؤن کا مقصد انفیکشن کے فروغ کے خدشے کو فوری طور پر دور کرنا تھا ۔۔
+Event	T0	خطرہ	EVENT	34
+Event	T1	معاملات	EVENT	43
+Event	T2	آشکارا	EVENT	58
+Event	T3	مسافرت	EVENT	119
+Event	T4	پھیلنے	EVENT	150
+Event	T5	بند	EVENT	300
+Event	T6	بیان	EVENT	324
+Event	T7	پہچان	EVENT	389
+Event	T8	انفیکشن	EVENT	463
+Event	T9	فروغ	EVENT	474
+Event	T10	خدشے	EVENT	482
+Event	T11	وبا	EVENT	27
+Event	T12	آئی	EVENT	89
+Event	T13	انفیکشن	EVENT	142
+Event	T14	حکم	EVENT	241
+Event	T15	لاکڈاؤن	EVENT	341
+Event	T16	متاثرہ	EVENT	372
+Event	T17	علاج	EVENT	406
+Event	T18	لاگو	EVENT	429
+Event	T19	لاکڈاؤن	EVENT	447
+Event	T20	کرنا	EVENT	506
+Relation	T12	T4	CauseEffect	true	آئی	پھیلنے
+Relation	T4	T12	EffectCause	true	پھیلنے	آئی
+Relation	T4	T2	CauseEffect	true	پھیلنے	آشکارا
+Relation	T2	T4	EffectCause	true	آشکارا	پھیلنے
+Relation	T11	T14	CauseEffect	true	وبا	حکم
+Relation	T14	T11	EffectCause	true	حکم	وبا
+Relation	T11	T5	CauseEffect	true	وبا	بند
+Relation	T5	T11	EffectCause	true	بند	وبا
+Relation	T11	T16	CauseEffect	true	وبا	متاثرہ
+Relation	T16	T11	EffectCause	true	متاثرہ	وبا
+Relation	T11	T15	CauseEffect	true	وبا	لاکڈاؤن
+Relation	T15	T11	EffectCause	true	لاکڈاؤن	وبا
+Relation	T8	T9	CauseEffect	true	انفیکشن	فروغ
+Relation	T9	T8	EffectCause	true	فروغ	انفیکشن
+Relation	T10	T19	CauseEffect	true	خدشے	لاکڈاؤن
+Relation	T19	T10	EffectCause	true	لاکڈاؤن	خدشے
+Relation	T0	T12	NoRel	true	خطرہ	آئی
+Relation	T0	T19	NoRel	true	خطرہ	لاکڈاؤن
+Relation	T1	T11	NoRel	true	معاملات	وبا
+Relation	T1	T13	NoRel	true	معاملات	انفیکشن
+Relation	T1	T15	NoRel	true	معاملات	لاکڈاؤن
+Relation	T10	T1	NoRel	true	خدشے	معاملات
+Relation	T10	T12	NoRel	true	خدشے	آئی
+Relation	T10	T5	NoRel	true	خدشے	بند
+Relation	T11	T6	NoRel	true	وبا	بیان
+Relation	T12	T16	NoRel	true	آئی	متاثرہ
+Relation	T13	T0	NoRel	true	انفیکشن	خطرہ
+Relation	T13	T14	NoRel	true	انفیکشن	حکم
+Relation	T14	T6	NoRel	true	حکم	بیان
+Relation	T15	T1	NoRel	true	لاکڈاؤن	معاملات
+Relation	T15	T16	NoRel	true	لاکڈاؤن	متاثرہ
+Relation	T15	T8	NoRel	true	لاکڈاؤن	انفیکشن
+Relation	T15	T9	NoRel	true	لاکڈاؤن	فروغ
+Relation	T16	T0	NoRel	true	متاثرہ	خطرہ
+Relation	T17	T2	NoRel	true	علاج	آشکارا
+Relation	T17	T9	NoRel	true	علاج	فروغ
+Relation	T18	T8	NoRel	true	لاگو	انفیکشن
+Relation	T2	T11	NoRel	true	آشکارا	وبا
+Relation	T2	T17	NoRel	true	آشکارا	علاج
+Relation	T2	T6	NoRel	true	آشکارا	بیان
+Relation	T4	T0	NoRel	true	پھیلنے	خطرہ
+Relation	T4	T15	NoRel	true	پھیلنے	لاکڈاؤن
+Relation	T4	T20	NoRel	true	پھیلنے	کرنا
+Relation	T5	T12	NoRel	true	بند	آئی
+Relation	T5	T14	NoRel	true	بند	حکم
+Relation	T5	T16	NoRel	true	بند	متاثرہ
+Relation	T6	T16	NoRel	true	بیان	متاثرہ
+Relation	T6	T18	NoRel	true	بیان	لاگو
+Relation	T7	T15	NoRel	true	پہچان	لاکڈاؤن
+Relation	T7	T16	NoRel	true	پہچان	متاثرہ
+Relation	T7	T18	NoRel	true	پہچان	لاگو
+Relation	T7	T3	NoRel	true	پہچان	مسافرت
+Relation	T8	T10	NoRel	true	انفیکشن	خدشے

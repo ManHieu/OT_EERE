@@ -1,0 +1,12 @@
+Text	Motiverne var mest blomster som symboler på Jomfru Maria .	Men nonnerne fremstillede også en lang række andre håndarbejder i klosteret : Vævede bånd , sprangarbejder , vævning af uldstof og linned og syning af tøj .	Klosteret behøvede selv en mængde broderede tekstiler til kirkens cirka 60 altre , og Birgitta befalede , at der skulle høre to sæt altertekstiler og messehageler til hvert alter .	Heldigvis er der bevaret mange broderier fra Vadstena , selv om det er lidt i forhold til , hvad der har eksisteret .	I det hele taget er der bevaret mange flere middelalderbroderier i Sverige end i Danmark , muligvis ryddede man ved reformationen mere væk her i landet af det , der havde med den katolske kirke at gøre .
+Event	T0	fremstillede	EVENT	72
+Event	T1	syning	EVENT	200
+Event	T2	behøvede	EVENT	226
+Event	T4	bevaret	EVENT	414
+Event	T5	eksisteret	EVENT	502
+Event	T6	bevaret	EVENT	539
+Event	T7	ryddede	EVENT	615
+Relation	T0	T5	NoRel	true	fremstillede	eksisteret
+Relation	T0	T6	NoRel	true	fremstillede	bevaret
+Relation	T1	T2	NoRel	true	syning	behøvede
+Relation	T7	T4	NoRel	true	ryddede	bevaret

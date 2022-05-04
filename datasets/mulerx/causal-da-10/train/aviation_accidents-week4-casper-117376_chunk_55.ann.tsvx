@@ -1,0 +1,26 @@
+Text	Det foreslåede udseende har også mødt kritik , fordi buen ligner en halvmåne , der er et islamisk symbol .	En vigtig milepæl blev bekendtgjort den 31. august 2009 , da der var indgået en aftale mellem grundejerne og National Park Service om at sælge jorden til mindesmærket for omkring 9,5 millioner dollars .	Planen er at have mindesmærket færdigt til den 11. september 2011 , 10 år efter angrebet .	Den 25. august 2008 opstillede hundredvis af brandfolk i New York et kors lavet af stål fra resterne af World Trade Center .	Bjælken , der var påsat ovenpå , er formet som Pentagon , og det hele blev opsat uden for brandstationen for Shanksville Volunteer Fire Department .
+Event	T0	udseende	EVENT	15
+Event	T1	kritik	EVENT	38
+Event	T2	bekendtgjort	EVENT	130
+Event	T3	indgået	EVENT	176
+Event	T4	aftale	EVENT	187
+Event	T5	sælge	EVENT	244
+Event	T6	angrebet	EVENT	390
+Event	T7	opstillede	EVENT	421
+Event	T8	lavet	EVENT	475
+Event	T9	påsat	EVENT	544
+Event	T10	formet	EVENT	562
+Event	T11	opsat	EVENT	601
+Event	T12	Planen	EVENT	310
+Relation	T4	T2	CauseEffect	true	aftale	bekendtgjort
+Relation	T2	T4	EffectCause	true	bekendtgjort	aftale
+Relation	T1	T5	NoRel	true	kritik	sælge
+Relation	T10	T7	NoRel	true	formet	opstillede
+Relation	T10	T8	NoRel	true	formet	lavet
+Relation	T11	T0	NoRel	true	opsat	udseende
+Relation	T2	T5	NoRel	true	bekendtgjort	sælge
+Relation	T5	T2	NoRel	true	sælge	bekendtgjort
+Relation	T6	T3	NoRel	true	angrebet	indgået
+Relation	T6	T4	NoRel	true	angrebet	aftale
+Relation	T6	T8	NoRel	true	angrebet	lavet
+Relation	T9	T10	NoRel	true	påsat	formet

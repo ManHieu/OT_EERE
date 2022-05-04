@@ -1,0 +1,55 @@
+Text	Soltó las correas y su paracaídas luego se desplegó automáticamente .	Siebold no llevaba traje de presión .	Durante la prueba , la aeronave sufrió una anomalía grave derivada de un error del copiloto , al accionar los frenos prematuramente .	Testigos dijeron que la nave explotó durante el vuelo luego de que uno de sus cohetes propulsores se incendiara , más tarde fue descartado .	Finalmente en 2015 , se informó que el accidente fue causado por una falla estructural después de que el copiloto desbloqueara el sistema de frenos demasiado pronto .
+Event	T0	Soltó	EVENT	0
+Event	T1	paracaídas	EVENT	23
+Event	T2	desplegó	EVENT	43
+Event	T3	prueba	EVENT	119
+Event	T4	sufrió	EVENT	140
+Event	T5	derivada	EVENT	166
+Event	T6	error	EVENT	181
+Event	T7	accionar	EVENT	205
+Event	T8	dijeron	EVENT	251
+Event	T9	explotó	EVENT	271
+Event	T10	vuelo	EVENT	290
+Event	T11	incendiara	EVENT	343
+Event	T12	descartado	EVENT	370
+Event	T13	informó	EVENT	407
+Event	T15	desbloqueara	EVENT	497
+Event	T16	falla estructural	EVENT	452
+Event	T17	accidente	EVENT	422
+Relation	T7	T4	CauseEffect	true	accionar	sufrió
+Relation	T4	T7	EffectCause	true	sufrió	accionar
+Relation	T16	T17	CauseEffect	true	falla estructural	accidente
+Relation	T17	T16	EffectCause	true	accidente	falla estructural
+Relation	T0	T13	NoRel	true	Soltó	informó
+Relation	T0	T17	NoRel	true	Soltó	accidente
+Relation	T0	T3	NoRel	true	Soltó	prueba
+Relation	T1	T13	NoRel	true	paracaídas	informó
+Relation	T1	T17	NoRel	true	paracaídas	accidente
+Relation	T1	T4	NoRel	true	paracaídas	sufrió
+Relation	T1	T5	NoRel	true	paracaídas	derivada
+Relation	T10	T5	NoRel	true	vuelo	derivada
+Relation	T11	T6	NoRel	true	incendiara	error
+Relation	T11	T8	NoRel	true	incendiara	dijeron
+Relation	T13	T3	NoRel	true	informó	prueba
+Relation	T13	T7	NoRel	true	informó	accionar
+Relation	T15	T3	NoRel	true	desbloqueara	prueba
+Relation	T15	T9	NoRel	true	desbloqueara	explotó
+Relation	T16	T1	NoRel	true	falla estructural	paracaídas
+Relation	T16	T2	NoRel	true	falla estructural	desplegó
+Relation	T2	T0	NoRel	true	desplegó	Soltó
+Relation	T2	T12	NoRel	true	desplegó	descartado
+Relation	T2	T17	NoRel	true	desplegó	accidente
+Relation	T2	T7	NoRel	true	desplegó	accionar
+Relation	T2	T8	NoRel	true	desplegó	dijeron
+Relation	T3	T12	NoRel	true	prueba	descartado
+Relation	T3	T5	NoRel	true	prueba	derivada
+Relation	T3	T7	NoRel	true	prueba	accionar
+Relation	T3	T9	NoRel	true	prueba	explotó
+Relation	T4	T2	NoRel	true	sufrió	desplegó
+Relation	T4	T6	NoRel	true	sufrió	error
+Relation	T5	T11	NoRel	true	derivada	incendiara
+Relation	T6	T5	NoRel	true	error	derivada
+Relation	T7	T5	NoRel	true	accionar	derivada
+Relation	T8	T5	NoRel	true	dijeron	derivada
+Relation	T8	T9	NoRel	true	dijeron	explotó
+Relation	T9	T16	NoRel	true	explotó	falla estructural

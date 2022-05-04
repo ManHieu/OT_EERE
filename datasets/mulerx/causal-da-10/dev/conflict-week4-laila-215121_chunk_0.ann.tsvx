@@ -1,0 +1,92 @@
+Text	VOLDGIFT ( af gammeldansk _ waldgift__-__wald__'magt ' og _ gift__' overgivelse ' ) er en indgået aftale om , at parter i en eventuel tvist giver afkald på at indbringe uoverensstemmelserne for domstolene , men i stedet erklærer sig indforstået i at lade en sagkyndig opmand ( under betegnelsen VOLDGIFTSRET ) afgøre tvisten endeligt og bindende for de involverede parter .	En aftale om voldgift kan også indgås frivilligt mellem de involverede parter efter at tvisten er opstået .	En sag kan foretrækkes afgjort ved voldgift , frem for ved domstolene , af en række årsager .	Ved voldgift opnås ofte en hurtigere afgørelse , især fordi en voldgiftskendelse som udgangspunkt ikke kan appelleres .	Voldgiftskendelser kan kun appelleres hvis parterne har aftalt dette i voldgiftsaftalen .
+Event	T0	aftale	EVENT	98
+Event	T1	afkald	EVENT	146
+Event	T2	uoverensstemmelserne	EVENT	169
+Event	T3	erklærer	EVENT	220
+Event	T4	tvisten	EVENT	317
+Event	T5	aftale	EVENT	377
+Event	T6	voldgift	EVENT	387
+Event	T7	indgås	EVENT	405
+Event	T8	tvisten	EVENT	461
+Event	T9	opstået	EVENT	472
+Event	T10	sag	EVENT	485
+Event	T11	afgjort	EVENT	505
+Event	T12	voldgift	EVENT	517
+Event	T13	opnås	EVENT	589
+Event	T14	afgørelse	EVENT	613
+Event	T15	voldgiftskendelse	EVENT	639
+Event	T16	Voldgiftskendelser	EVENT	696
+Event	T17	appelleres	EVENT	723
+Event	T18	aftalt	EVENT	752
+Event	T19	VOLDGIFT	EVENT	0
+Event	T20	afgøre	EVENT	310
+Event	T21	foretrækkes	EVENT	493
+Event	T22	appelleres	EVENT	683
+Relation	T14	T21	CauseEffect	true	afgørelse	foretrækkes
+Relation	T21	T14	EffectCause	true	foretrækkes	afgørelse
+Relation	T22	T14	CauseEffect	true	appelleres	afgørelse
+Relation	T14	T22	EffectCause	true	afgørelse	appelleres
+Relation	T0	T16	NoRel	true	aftale	Voldgiftskendelser
+Relation	T0	T4	NoRel	true	aftale	tvisten
+Relation	T1	T12	NoRel	true	afkald	voldgift
+Relation	T1	T14	NoRel	true	afkald	afgørelse
+Relation	T1	T21	NoRel	true	afkald	foretrækkes
+Relation	T10	T11	NoRel	true	sag	afgjort
+Relation	T10	T18	NoRel	true	sag	aftalt
+Relation	T10	T3	NoRel	true	sag	erklærer
+Relation	T10	T9	NoRel	true	sag	opstået
+Relation	T11	T19	NoRel	true	afgjort	VOLDGIFT
+Relation	T11	T21	NoRel	true	afgjort	foretrækkes
+Relation	T11	T6	NoRel	true	afgjort	voldgift
+Relation	T11	T7	NoRel	true	afgjort	indgås
+Relation	T12	T11	NoRel	true	voldgift	afgjort
+Relation	T12	T18	NoRel	true	voldgift	aftalt
+Relation	T12	T4	NoRel	true	voldgift	tvisten
+Relation	T13	T1	NoRel	true	opnås	afkald
+Relation	T13	T15	NoRel	true	opnås	voldgiftskendelse
+Relation	T13	T17	NoRel	true	opnås	appelleres
+Relation	T13	T9	NoRel	true	opnås	opstået
+Relation	T14	T2	NoRel	true	afgørelse	uoverensstemmelserne
+Relation	T15	T4	NoRel	true	voldgiftskendelse	tvisten
+Relation	T15	T5	NoRel	true	voldgiftskendelse	aftale
+Relation	T15	T7	NoRel	true	voldgiftskendelse	indgås
+Relation	T16	T17	NoRel	true	Voldgiftskendelser	appelleres
+Relation	T16	T20	NoRel	true	Voldgiftskendelser	afgøre
+Relation	T16	T22	NoRel	true	Voldgiftskendelser	appelleres
+Relation	T16	T7	NoRel	true	Voldgiftskendelser	indgås
+Relation	T17	T0	NoRel	true	appelleres	aftale
+Relation	T17	T15	NoRel	true	appelleres	voldgiftskendelse
+Relation	T18	T12	NoRel	true	aftalt	voldgift
+Relation	T18	T13	NoRel	true	aftalt	opnås
+Relation	T18	T22	NoRel	true	aftalt	appelleres
+Relation	T18	T5	NoRel	true	aftalt	aftale
+Relation	T19	T21	NoRel	true	VOLDGIFT	foretrækkes
+Relation	T19	T5	NoRel	true	VOLDGIFT	aftale
+Relation	T2	T11	NoRel	true	uoverensstemmelserne	afgjort
+Relation	T2	T18	NoRel	true	uoverensstemmelserne	aftalt
+Relation	T2	T5	NoRel	true	uoverensstemmelserne	aftale
+Relation	T2	T8	NoRel	true	uoverensstemmelserne	tvisten
+Relation	T20	T1	NoRel	true	afgøre	afkald
+Relation	T20	T10	NoRel	true	afgøre	sag
+Relation	T20	T15	NoRel	true	afgøre	voldgiftskendelse
+Relation	T20	T21	NoRel	true	afgøre	foretrækkes
+Relation	T20	T22	NoRel	true	afgøre	appelleres
+Relation	T20	T7	NoRel	true	afgøre	indgås
+Relation	T21	T3	NoRel	true	foretrækkes	erklærer
+Relation	T21	T8	NoRel	true	foretrækkes	tvisten
+Relation	T22	T16	NoRel	true	appelleres	Voldgiftskendelser
+Relation	T22	T20	NoRel	true	appelleres	afgøre
+Relation	T3	T4	NoRel	true	erklærer	tvisten
+Relation	T4	T20	NoRel	true	tvisten	afgøre
+Relation	T5	T13	NoRel	true	aftale	opnås
+Relation	T5	T21	NoRel	true	aftale	foretrækkes
+Relation	T6	T1	NoRel	true	voldgift	afkald
+Relation	T6	T10	NoRel	true	voldgift	sag
+Relation	T6	T21	NoRel	true	voldgift	foretrækkes
+Relation	T7	T0	NoRel	true	indgås	aftale
+Relation	T8	T14	NoRel	true	tvisten	afgørelse
+Relation	T8	T20	NoRel	true	tvisten	afgøre
+Relation	T8	T22	NoRel	true	tvisten	appelleres
+Relation	T9	T10	NoRel	true	opstået	sag
+Relation	T9	T11	NoRel	true	opstået	afgjort
+Relation	T9	T5	NoRel	true	opstået	aftale

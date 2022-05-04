@@ -1,0 +1,65 @@
+Text	Heiberg udgav også denne sags akter , det skete i skriftet _ Procedure og Dom ved Hof- og Stads-Retten i den af Generalfiskalen anlagde Sag angaaende Visen " Vor Klub er dog en herlig Sag etc " _ ( 1795 ) , denne gang med udførlige kommentarer og indledning , hvor Heiberg ofte satirisk og spøgefuldt giver sin opfattelse af sagen .	Fra nu af synes Heiberg at have besluttet ikke mere at optræde som offentlig skribent .	Forholdene medførte dog , at han ikke vedblivende kunne holde sig tilbage .	Den vindige unge republikaner Malthe Conrad Bruun , der som dramaturg støttedes af Rahbek , havde i tidskriftet _ Svada _ væltet sig ind på Heiberg , fordi denne forfægtede madame Preislers ret til at spille Sigbrit i Samsøes tragedie _ Dyveke _ .	Heiberg var ikke sen til at give den unge mand svar på tiltale , og Bruun replicerede atter på en uforskammet måde .
+Event	T0	udgav	EVENT	8
+Event	T1	skete	EVENT	42
+Event	T10	medførte	EVENT	432
+Event	T11	støttedes	EVENT	567
+Event	T12	væltet	EVENT	619
+Event	T13	forfægtede	EVENT	659
+Event	T14	ret	EVENT	687
+Event	T15	spille	EVENT	698
+Event	T16	tragedie	EVENT	723
+Event	T17	give	EVENT	773
+Event	T19	replicerede	EVENT	819
+Event	T2	Dom	EVENT	74
+Event	T3	kommentarer	EVENT	232
+Event	T4	indledning	EVENT	247
+Event	T5	giver	EVENT	301
+Event	T6	opfattelse	EVENT	311
+Event	T7	synes	EVENT	343
+Event	T8	besluttet	EVENT	365
+Event	T9	optræde	EVENT	388
+Relation	T12	T17	CauseEffect	true	væltet	give
+Relation	T17	T12	EffectCause	true	give	væltet
+Relation	T17	T19	CauseEffect	true	give	replicerede
+Relation	T19	T17	EffectCause	true	replicerede	give
+Relation	T0	T9	NoRel	true	udgav	optræde
+Relation	T1	T14	NoRel	true	skete	ret
+Relation	T1	T16	NoRel	true	skete	tragedie
+Relation	T1	T8	NoRel	true	skete	besluttet
+Relation	T10	T2	NoRel	true	medførte	Dom
+Relation	T10	T5	NoRel	true	medførte	giver
+Relation	T11	T3	NoRel	true	støttedes	kommentarer
+Relation	T12	T4	NoRel	true	væltet	indledning
+Relation	T13	T17	NoRel	true	forfægtede	give
+Relation	T13	T2	NoRel	true	forfægtede	Dom
+Relation	T14	T10	NoRel	true	ret	medførte
+Relation	T14	T17	NoRel	true	ret	give
+Relation	T14	T7	NoRel	true	ret	synes
+Relation	T14	T9	NoRel	true	ret	optræde
+Relation	T15	T6	NoRel	true	spille	opfattelse
+Relation	T15	T9	NoRel	true	spille	optræde
+Relation	T16	T19	NoRel	true	tragedie	replicerede
+Relation	T17	T10	NoRel	true	give	medførte
+Relation	T17	T3	NoRel	true	give	kommentarer
+Relation	T19	T11	NoRel	true	replicerede	støttedes
+Relation	T19	T6	NoRel	true	replicerede	opfattelse
+Relation	T19	T7	NoRel	true	replicerede	synes
+Relation	T3	T10	NoRel	true	kommentarer	medførte
+Relation	T3	T12	NoRel	true	kommentarer	væltet
+Relation	T3	T17	NoRel	true	kommentarer	give
+Relation	T4	T10	NoRel	true	indledning	medførte
+Relation	T4	T13	NoRel	true	indledning	forfægtede
+Relation	T4	T16	NoRel	true	indledning	tragedie
+Relation	T4	T17	NoRel	true	indledning	give
+Relation	T4	T9	NoRel	true	indledning	optræde
+Relation	T5	T10	NoRel	true	giver	medførte
+Relation	T5	T12	NoRel	true	giver	væltet
+Relation	T5	T3	NoRel	true	giver	kommentarer
+Relation	T5	T4	NoRel	true	giver	indledning
+Relation	T5	T8	NoRel	true	giver	besluttet
+Relation	T7	T12	NoRel	true	synes	væltet
+Relation	T8	T1	NoRel	true	besluttet	skete
+Relation	T9	T10	NoRel	true	optræde	medførte
+Relation	T9	T11	NoRel	true	optræde	støttedes
+Relation	T9	T2	NoRel	true	optræde	Dom
+Relation	T9	T5	NoRel	true	optræde	giver

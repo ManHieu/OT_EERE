@@ -1,0 +1,510 @@
+{
+  "id": "disasters-week4-isik-1360504_chunk_0.ann.tsvx",
+  "text": "OKEECHOBEE KASIRGASI veya SAN FELIPE SEGUNDO KASIRGASI , \u00f6l\u00fcml\u00fc kas\u0131rga .\t1928 Atlantik kas\u0131rga sezonunda meydana gelen kas\u0131rga , R\u00fczg\u00e2ralt\u0131 Adalar\u0131 , Porto Riko , Bahamalar ve Florida'y\u0131 vurmu\u015f ve b\u00fcy\u00fck kay\u0131ba neden olmu\u015ftur .\t\t\t",
+  "event": {
+    "T1": {
+      "id": "T1",
+      "text": "kas\u0131rga",
+      "label": "EVENT",
+      "char_index": 64,
+      "sid": 0,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "kas\u0131rga",
+      "label": "EVENT",
+      "char_index": 120,
+      "sid": 1,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "vurmu\u015f",
+      "label": "EVENT",
+      "char_index": 188,
+      "sid": 1,
+      "tid": [
+        17,
+        18
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "OKEECHOBEE KASIRGASI",
+      "label": "EVENT",
+      "char_index": 0,
+      "sid": 0,
+      "tid": [
+        0,
+        3
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "SAN FELIPE SEGUNDO KASIRGASI",
+      "label": "EVENT",
+      "char_index": 26,
+      "sid": 0,
+      "tid": [
+        3,
+        9
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "olmu\u015ftur",
+      "label": "EVENT",
+      "char_index": 217,
+      "sid": 1,
+      "tid": [
+        22,
+        23
+      ]
+    }
+  },
+  "relation": {
+    "T4-T3": "CauseEffect",
+    "T3-T4": "EffectCause",
+    "T5-T3": "CauseEffect",
+    "T3-T5": "EffectCause",
+    "T1-T5": "NoRel",
+    "T2-T5": "NoRel",
+    "T3-T6": "NoRel",
+    "T5-T1": "NoRel"
+  },
+  "sentence": [
+    [
+      "OKEECHOBEE",
+      "KASIRGASI",
+      "veya",
+      "SAN",
+      "FELIPE",
+      "SEGUNDO",
+      "KASIRGASI",
+      ",",
+      "\u00f6l\u00fcml\u00fc",
+      "kas\u0131rga",
+      "."
+    ],
+    [
+      "1928",
+      "Atlantik",
+      "kas\u0131rga",
+      "sezonunda",
+      "meydana",
+      "gelen",
+      "kas\u0131rga",
+      ",",
+      "R\u00fczg\u00e2ralt\u0131",
+      "Adalar\u0131",
+      ",",
+      "Porto",
+      "Riko",
+      ",",
+      "Bahamalar",
+      "ve",
+      "Florida'y\u0131",
+      "vurmu\u015f",
+      "ve",
+      "b\u00fcy\u00fck",
+      "kay\u0131ba",
+      "neden",
+      "olmu\u015ftur",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        9
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        6
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        17
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        17
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        17
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        8
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        8
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        11
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        14
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        8
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        16
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        8
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        21
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        19
+      ],
+      [
+        1,
+        20
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        20
+      ],
+      [
+        1,
+        21
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        21
+      ],
+      [
+        1,
+        17
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        22
+      ],
+      [
+        1,
+        21
+      ],
+      "compound:lvc"
+    ],
+    [
+      [
+        1,
+        23
+      ],
+      [
+        1,
+        21
+      ],
+      "punct"
+    ]
+  ]
+}

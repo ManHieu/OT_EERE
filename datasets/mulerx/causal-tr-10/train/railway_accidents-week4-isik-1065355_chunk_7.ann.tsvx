@@ -1,0 +1,58 @@
+Text	Çarpışma sonucu pek çok kişi yaralanır .	Bazısı erimiş tehlikeli Fenol asid_‘i içeren 47 vagon taşıyan bir CSX yük treni , üzerinde makinisti olmadan Toledo’da kaçmaktadır .	Tren , üzerine çıkmayı başaran bir demiryolu işçisi tarafından dudurulmadan önce Kenton , Ohio_‘ya doğru gitmekteydi ...	- 18 Temmuz , 2001 – Howard Street Tünel yangını , Baltimore , Maryland , Birleşik Devletler : Kimyasallar ve ağaç ürünleri taşıyan bir 60 - vagonlu dakikada 1, 7 km hızla giden CSX treni Baltimore altındaki uzun tünelde raydan çıkarak altı gün yanarak su kirlenmesine ve yangına sebep olur ..	- 19 Ağustos , 2001 – Kurunegala tren çarpışması , Sri_Lanka : Bir tren hız ve fazla kalabalık oluşu nedeniyle raydan çıktığında 13 kişi ölür .
+Event	T0	yaralanır	EVENT	29
+Event	T1	kaçmaktadır	EVENT	160
+Event	T2	gitmekteydi	EVENT	279
+Event	T3	yangını	EVENT	336
+Event	T4	yanarak	EVENT	540
+Event	T5	kirlenmesine	EVENT	551
+Event	T6	çarpışması	EVENT	627
+Event	T7	ölür	EVENT	726
+Event	T8	Çarpışma	EVENT	0
+Event	T9	erimiş	EVENT	48
+Event	T10	taşıyan	EVENT	95
+Event	T11	çıkmayı	EVENT	189
+Event	T12	dudurulmadan	EVENT	237
+Event	T13	giden	EVENT	467
+Event	T14	çıkarak	EVENT	523
+Event	T15	yangına	EVENT	567
+Event	T16	olur	EVENT	581
+Event	T17	taşıyan	EVENT	419
+Event	T18	çıktığında	EVENT	707
+Relation	T8	T0	CauseEffect	true	Çarpışma	yaralanır
+Relation	T0	T8	EffectCause	true	yaralanır	Çarpışma
+Relation	T11	T12	CauseEffect	true	çıkmayı	dudurulmadan
+Relation	T12	T11	EffectCause	true	dudurulmadan	çıkmayı
+Relation	T14	T3	CauseEffect	true	çıkarak	yangını
+Relation	T3	T14	EffectCause	true	yangını	çıkarak
+Relation	T14	T4	CauseEffect	true	çıkarak	yanarak
+Relation	T4	T14	EffectCause	true	yanarak	çıkarak
+Relation	T4	T5	CauseEffect	true	yanarak	kirlenmesine
+Relation	T5	T4	EffectCause	true	kirlenmesine	yanarak
+Relation	T18	T6	CauseEffect	true	çıktığında	çarpışması
+Relation	T6	T18	EffectCause	true	çarpışması	çıktığında
+Relation	T6	T7	CauseEffect	true	çarpışması	ölür
+Relation	T7	T6	EffectCause	true	ölür	çarpışması
+Relation	T0	T10	NoRel	true	yaralanır	taşıyan
+Relation	T1	T3	NoRel	true	kaçmaktadır	yangını
+Relation	T1	T9	NoRel	true	kaçmaktadır	erimiş
+Relation	T10	T11	NoRel	true	taşıyan	çıkmayı
+Relation	T10	T16	NoRel	true	taşıyan	olur
+Relation	T10	T4	NoRel	true	taşıyan	yanarak
+Relation	T11	T9	NoRel	true	çıkmayı	erimiş
+Relation	T14	T1	NoRel	true	çıkarak	kaçmaktadır
+Relation	T14	T15	NoRel	true	çıkarak	yangına
+Relation	T15	T13	NoRel	true	yangına	giden
+Relation	T16	T10	NoRel	true	olur	taşıyan
+Relation	T17	T18	NoRel	true	taşıyan	çıktığında
+Relation	T17	T4	NoRel	true	taşıyan	yanarak
+Relation	T3	T0	NoRel	true	yangını	yaralanır
+Relation	T4	T10	NoRel	true	yanarak	taşıyan
+Relation	T4	T17	NoRel	true	yanarak	taşıyan
+Relation	T4	T3	NoRel	true	yanarak	yangını
+Relation	T5	T12	NoRel	true	kirlenmesine	dudurulmadan
+Relation	T5	T7	NoRel	true	kirlenmesine	ölür
+Relation	T6	T11	NoRel	true	çarpışması	çıkmayı
+Relation	T6	T12	NoRel	true	çarpışması	dudurulmadan
+Relation	T7	T10	NoRel	true	ölür	taşıyan
+Relation	T8	T11	NoRel	true	Çarpışma	çıkmayı
+Relation	T8	T14	NoRel	true	Çarpışma	çıkarak

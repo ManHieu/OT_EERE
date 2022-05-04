@@ -1,0 +1,13 @@
+Text	Kategori : 1882 doğumlular Kategori : 1934 yılında ölenler Kategori : Reichswehr generalleri Kategori : Alman antifaşistler Kategori : Weimar Cumhuriyeti'nde kişiler Kategori : Uzun Bıçaklar Gecesi kurbanları Kategori : Suikast sonucu ölen Almanlar				
+Event	T0	Gecesi	EVENT	191
+Event	T1	ölen	EVENT	235
+Event	T2	ölenler	EVENT	51
+Event	T3	doğumlular	EVENT	16
+Event	T4	Suikast	EVENT	220
+Relation	T4	T1	CauseEffect	true	Suikast	ölen
+Relation	T1	T4	EffectCause	true	ölen	Suikast
+Relation	T2	T0	NoRel	true	ölenler	Gecesi
+Relation	T3	T0	NoRel	true	doğumlular	Gecesi
+Relation	T3	T2	NoRel	true	doğumlular	ölenler
+Relation	T3	T4	NoRel	true	doğumlular	Suikast
+Relation	T4	T0	NoRel	true	Suikast	Gecesi

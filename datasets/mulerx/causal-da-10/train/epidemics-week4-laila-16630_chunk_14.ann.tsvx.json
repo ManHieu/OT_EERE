@@ -1,0 +1,1124 @@
+{
+  "id": "epidemics-week4-laila-16630_chunk_14.ann.tsvx",
+  "text": "Fra slutningen af april og de f\u00f8lgende m\u00e5neder skete spontane massakrer i Provence og Dauphin\u00e9 .\tI Savoyen herskede den 14-\u00e5rige grev Am\u00e9d\u00e9e VI , der troede , at j\u00f8derne var skyldige i giftsammensv\u00e6gelsen .\tD\u00e9r blev tortur anvendt til at fremtvinge tilst\u00e5elser i efter\u00e5ret 1348 .\tDen 1. december 1348 br\u00f8d en folkem\u00e6ngde ind i f\u00e6ngslet i hovedstaden Chamb\u00e9ry og slog de fleste af de j\u00f8diske fanger ihjel .\tFra disse omr\u00e5der bredte j\u00f8deforf\u00f8lgelsen sig .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "massakrer",
+      "label": "EVENT",
+      "char_index": 62,
+      "sid": 0,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "herskede",
+      "label": "EVENT",
+      "char_index": 107,
+      "sid": 1,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "troede",
+      "label": "EVENT",
+      "char_index": 150,
+      "sid": 1,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "giftsammensv\u00e6gelsen",
+      "label": "EVENT",
+      "char_index": 185,
+      "sid": 1,
+      "tid": [
+        17,
+        18
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "anvendt",
+      "label": "EVENT",
+      "char_index": 223,
+      "sid": 2,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "tilst\u00e5elser",
+      "label": "EVENT",
+      "char_index": 249,
+      "sid": 2,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "br\u00f8d",
+      "label": "EVENT",
+      "char_index": 301,
+      "sid": 3,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "f\u00e6ngslet",
+      "label": "EVENT",
+      "char_index": 327,
+      "sid": 3,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "slog",
+      "label": "EVENT",
+      "char_index": 362,
+      "sid": 3,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "j\u00f8deforf\u00f8lgelsen",
+      "label": "EVENT",
+      "char_index": 431,
+      "sid": 4,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "skyldige",
+      "label": "EVENT",
+      "char_index": 174,
+      "sid": 1,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "tortur",
+      "label": "EVENT",
+      "char_index": 216,
+      "sid": 2,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "ihjel",
+      "label": "EVENT",
+      "char_index": 398,
+      "sid": 3,
+      "tid": [
+        21,
+        22
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "slutningen",
+      "label": "EVENT",
+      "char_index": 4,
+      "sid": 0,
+      "tid": [
+        1,
+        2
+      ]
+    }
+  },
+  "relation": {
+    "T2-T8": "CauseEffect",
+    "T8-T2": "EffectCause",
+    "T2-T11": "CauseEffect",
+    "T11-T2": "EffectCause",
+    "T1-T7": "NoRel",
+    "T12-T0": "NoRel",
+    "T12-T10": "NoRel",
+    "T13-T0": "NoRel",
+    "T13-T12": "NoRel",
+    "T2-T0": "NoRel",
+    "T2-T10": "NoRel",
+    "T2-T13": "NoRel",
+    "T3-T12": "NoRel",
+    "T3-T7": "NoRel",
+    "T3-T8": "NoRel",
+    "T3-T9": "NoRel",
+    "T4-T0": "NoRel",
+    "T5-T0": "NoRel",
+    "T5-T13": "NoRel",
+    "T5-T2": "NoRel",
+    "T6-T2": "NoRel",
+    "T7-T4": "NoRel",
+    "T7-T8": "NoRel",
+    "T9-T4": "NoRel"
+  },
+  "sentence": [
+    [
+      "Fra",
+      "slutningen",
+      "af",
+      "april",
+      "og",
+      "de",
+      "f\u00f8lgende",
+      "m\u00e5neder",
+      "skete",
+      "spontane",
+      "massakrer",
+      "i",
+      "Provence",
+      "og",
+      "Dauphin\u00e9",
+      "."
+    ],
+    [
+      "I",
+      "Savoyen",
+      "herskede",
+      "den",
+      "14-\u00e5rige",
+      "grev",
+      "Am\u00e9d\u00e9e",
+      "VI",
+      ",",
+      "der",
+      "troede",
+      ",",
+      "at",
+      "j\u00f8derne",
+      "var",
+      "skyldige",
+      "i",
+      "giftsammensv\u00e6gelsen",
+      "."
+    ],
+    [
+      "D\u00e9r",
+      "blev",
+      "tortur",
+      "anvendt",
+      "til",
+      "at",
+      "fremtvinge",
+      "tilst\u00e5elser",
+      "i",
+      "efter\u00e5ret",
+      "1348",
+      "."
+    ],
+    [
+      "Den",
+      "1.",
+      "december",
+      "1348",
+      "br\u00f8d",
+      "en",
+      "folkem\u00e6ngde",
+      "ind",
+      "i",
+      "f\u00e6ngslet",
+      "i",
+      "hovedstaden",
+      "Chamb\u00e9ry",
+      "og",
+      "slog",
+      "de",
+      "fleste",
+      "af",
+      "de",
+      "j\u00f8diske",
+      "fanger",
+      "ihjel",
+      "."
+    ],
+    [
+      "Fra",
+      "disse",
+      "omr\u00e5der",
+      "bredte",
+      "j\u00f8deforf\u00f8lgelsen",
+      "sig",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        8
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        7
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        7
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        8
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        12
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        6
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        6
+      ],
+      "acl:relcl"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        15
+      ],
+      "mark"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        15
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        15
+      ],
+      "cop"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        10
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        17
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        15
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      "aux"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      "advcl"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        9
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        4
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        4
+      ],
+      "obl:loc"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        7
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        9
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      "appos"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        4
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        16
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        14
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        20
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        20
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        20
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        20
+      ],
+      [
+        3,
+        16
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        21
+      ],
+      [
+        3,
+        14
+      ],
+      "compound:prt"
+    ],
+    [
+      [
+        3,
+        22
+      ],
+      [
+        3,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        3
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        3
+      ],
+      "punct"
+    ]
+  ]
+}

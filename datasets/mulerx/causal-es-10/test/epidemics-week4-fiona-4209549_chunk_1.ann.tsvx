@@ -1,0 +1,50 @@
+Text	El virus de la inmunodeficiencia humana ( VIH ) tiene su origen en el África ecuatorial , donde pasó a los humanos como una mutación del virus de inmunodeficiencia de los simios ( VIS ) , que ataca particularmente a los llamados monos verdes africanos y a los chimpancés .	Es probable que el VIH haya sido adquirido en Zaire por los profesores haitianos que acudieron a ese país a realizar labores de alfabetización poco después de que el antiguo Congo Belga obtuvo su independencia .	A la rápida difusión del VIH en Haití contribuyó no sólo la pobreza del país , sino su inestabilidad política .	En 1986 terminó la dictadura de François Duvalier ( Papa Doc ) , y el país fue gobernado por varias juntas militares hasta 1990 .	Durante ese período , el débil sistema de salud haitiano quedó destruido por la desatención y la carencia de recursos para sostenerlo .
+Event	T0	pasó	EVENT	96
+Event	T1	mutación	EVENT	124
+Event	T2	ataca	EVENT	192
+Event	T3	adquirido	EVENT	306
+Event	T4	acudieron	EVENT	358
+Event	T5	labores	EVENT	390
+Event	T6	alfabetización	EVENT	401
+Event	T7	obtuvo	EVENT	459
+Event	T8	independencia	EVENT	469
+Event	T9	difusión	EVENT	497
+Event	T10	contribuyó	EVENT	523
+Event	T11	terminó	EVENT	605
+Event	T12	dictadura	EVENT	616
+Event	T13	gobernado	EVENT	676
+Event	T14	destruido	EVENT	790
+Event	T15	desatención	EVENT	807
+Relation	T15	T14	CauseEffect	true	desatención	destruido
+Relation	T14	T15	EffectCause	true	destruido	desatención
+Relation	T0	T3	NoRel	true	pasó	adquirido
+Relation	T0	T6	NoRel	true	pasó	alfabetización
+Relation	T1	T11	NoRel	true	mutación	terminó
+Relation	T1	T14	NoRel	true	mutación	destruido
+Relation	T1	T7	NoRel	true	mutación	obtuvo
+Relation	T10	T0	NoRel	true	contribuyó	pasó
+Relation	T10	T12	NoRel	true	contribuyó	dictadura
+Relation	T10	T5	NoRel	true	contribuyó	labores
+Relation	T11	T0	NoRel	true	terminó	pasó
+Relation	T11	T7	NoRel	true	terminó	obtuvo
+Relation	T13	T0	NoRel	true	gobernado	pasó
+Relation	T13	T7	NoRel	true	gobernado	obtuvo
+Relation	T13	T8	NoRel	true	gobernado	independencia
+Relation	T14	T3	NoRel	true	destruido	adquirido
+Relation	T14	T5	NoRel	true	destruido	labores
+Relation	T14	T6	NoRel	true	destruido	alfabetización
+Relation	T2	T11	NoRel	true	ataca	terminó
+Relation	T2	T4	NoRel	true	ataca	acudieron
+Relation	T2	T5	NoRel	true	ataca	labores
+Relation	T2	T9	NoRel	true	ataca	difusión
+Relation	T3	T0	NoRel	true	adquirido	pasó
+Relation	T3	T14	NoRel	true	adquirido	destruido
+Relation	T3	T2	NoRel	true	adquirido	ataca
+Relation	T3	T7	NoRel	true	adquirido	obtuvo
+Relation	T5	T11	NoRel	true	labores	terminó
+Relation	T6	T14	NoRel	true	alfabetización	destruido
+Relation	T6	T9	NoRel	true	alfabetización	difusión
+Relation	T7	T10	NoRel	true	obtuvo	contribuyó
+Relation	T7	T11	NoRel	true	obtuvo	terminó
+Relation	T8	T6	NoRel	true	independencia	alfabetización
+Relation	T9	T4	NoRel	true	difusión	acudieron

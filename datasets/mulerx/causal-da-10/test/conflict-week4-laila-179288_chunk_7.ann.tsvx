@@ -1,0 +1,39 @@
+Text	Senere , i år 904 betød et arabisk angreb voldsomme plyndringer .	I forbindelse med korsridderes erobring af Konstantinopel under det 4. korstog i 1200-tallet oprettedes kongeriget Thessaloniki – det tysk-romerske kejserriges største vasal – som dog kun overlevede i 20 år , da det i 1224 blev generobret af efterkommere af Byzans' kejser , som udråbte området til kejserriget Thessaloniki med en udstrækning som nutidens Nordgrækenland .	Blot seks år senere blev dette regime så fjernet , og regionen blev vasal under det 2. bulgarske kejserdømme .	Allerede i 1246 overgik magten til endnu et hold efterkommere af Byzans .	Fra da af og frem til 1423 nu hed det det nikæanske kejserrige .
+Event	T0	betød	EVENT	18
+Event	T1	plyndringer	EVENT	52
+Event	T2	erobring	EVENT	97
+Event	T3	korstog	EVENT	137
+Event	T4	oprettedes	EVENT	159
+Event	T5	overlevede	EVENT	254
+Event	T6	generobret	EVENT	294
+Event	T7	udråbte	EVENT	345
+Event	T8	fjernet	EVENT	480
+Event	T9	hed	EVENT	654
+Event	T10	angreb	EVENT	35
+Event	T11	udstrækning	EVENT	397
+Event	T12	overgik	EVENT	566
+Event	T13	vasal	EVENT	507
+Relation	T10	T1	CauseEffect	true	angreb	plyndringer
+Relation	T1	T10	EffectCause	true	plyndringer	angreb
+Relation	T2	T4	CauseEffect	true	erobring	oprettedes
+Relation	T4	T2	EffectCause	true	oprettedes	erobring
+Relation	T6	T5	CauseEffect	true	generobret	overlevede
+Relation	T5	T6	EffectCause	true	overlevede	generobret
+Relation	T8	T13	CauseEffect	true	fjernet	vasal
+Relation	T13	T8	EffectCause	true	vasal	fjernet
+Relation	T0	T3	NoRel	true	betød	korstog
+Relation	T10	T4	NoRel	true	angreb	oprettedes
+Relation	T11	T4	NoRel	true	udstrækning	oprettedes
+Relation	T11	T6	NoRel	true	udstrækning	generobret
+Relation	T12	T0	NoRel	true	overgik	betød
+Relation	T13	T3	NoRel	true	vasal	korstog
+Relation	T2	T1	NoRel	true	erobring	plyndringer
+Relation	T3	T0	NoRel	true	korstog	betød
+Relation	T3	T9	NoRel	true	korstog	hed
+Relation	T5	T3	NoRel	true	overlevede	korstog
+Relation	T5	T4	NoRel	true	overlevede	oprettedes
+Relation	T6	T1	NoRel	true	generobret	plyndringer
+Relation	T6	T13	NoRel	true	generobret	vasal
+Relation	T6	T9	NoRel	true	generobret	hed
+Relation	T8	T2	NoRel	true	fjernet	erobring
+Relation	T8	T4	NoRel	true	fjernet	oprettedes

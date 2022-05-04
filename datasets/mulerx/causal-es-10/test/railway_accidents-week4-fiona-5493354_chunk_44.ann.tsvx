@@ -1,0 +1,48 @@
+Text	Mueren quince personas y cuarenta resultan heridas .	- 1912 - 15 DE ENERO : dos trenes mixtos que circulaban por la línea del Duero chocan entre las estaciones de Ermesinde y Valongo .	Cinco ferroviarios resultan heridos .	- 7 DE MARZO : un nuevo choque de dos trenes ocurrido en la línea del Duero entre las estaciones de Ermesinde y Valongo se salda con un balance de un muerto y nueve heridos .	- 1916 -___20 DE FEBRERO : El tren correo de la línea del Duero descarrila cerca de Caidé como consecuencia de haber colisionado con los materiales caídos sobre la vía que se desprendieron de la pared de un talud a causa de la lluvia .
+Event	T0	Mueren	EVENT	0
+Event	T1	heridas	EVENT	43
+Event	T2	circulaban	EVENT	98
+Event	T3	chocan	EVENT	132
+Event	T4	heridos	EVENT	213
+Event	T5	choque	EVENT	247
+Event	T6	ocurrido	EVENT	268
+Event	T7	balance	EVENT	359
+Event	T8	muerto	EVENT	373
+Event	T9	heridos	EVENT	388
+Event	T10	descarrila	EVENT	462
+Event	T11	colisionado	EVENT	515
+Event	T12	caídos	EVENT	546
+Event	T13	desprendieron	EVENT	573
+Event	T14	talud	EVENT	605
+Event	T15	lluvia	EVENT	625
+Relation	T3	T0	CauseEffect	true	chocan	Mueren
+Relation	T0	T3	EffectCause	true	Mueren	chocan
+Relation	T3	T1	CauseEffect	true	chocan	heridas
+Relation	T1	T3	EffectCause	true	heridas	chocan
+Relation	T5	T8	CauseEffect	true	choque	muerto
+Relation	T8	T5	EffectCause	true	muerto	choque
+Relation	T5	T9	CauseEffect	true	choque	heridos
+Relation	T9	T5	EffectCause	true	heridos	choque
+Relation	T11	T10	CauseEffect	true	colisionado	descarrila
+Relation	T10	T11	EffectCause	true	descarrila	colisionado
+Relation	T15	T13	CauseEffect	true	lluvia	desprendieron
+Relation	T13	T15	EffectCause	true	desprendieron	lluvia
+Relation	T13	T11	CauseEffect	true	desprendieron	colisionado
+Relation	T11	T13	EffectCause	true	colisionado	desprendieron
+Relation	T0	T6	NoRel	true	Mueren	ocurrido
+Relation	T0	T9	NoRel	true	Mueren	heridos
+Relation	T1	T7	NoRel	true	heridas	balance
+Relation	T10	T5	NoRel	true	descarrila	choque
+Relation	T11	T8	NoRel	true	colisionado	muerto
+Relation	T12	T11	NoRel	true	caídos	colisionado
+Relation	T14	T4	NoRel	true	talud	heridos
+Relation	T14	T5	NoRel	true	talud	choque
+Relation	T15	T3	NoRel	true	lluvia	chocan
+Relation	T2	T7	NoRel	true	circulaban	balance
+Relation	T4	T13	NoRel	true	heridos	desprendieron
+Relation	T4	T2	NoRel	true	heridos	circulaban
+Relation	T6	T3	NoRel	true	ocurrido	chocan
+Relation	T6	T8	NoRel	true	ocurrido	muerto
+Relation	T7	T6	NoRel	true	balance	ocurrido
+Relation	T8	T13	NoRel	true	muerto	desprendieron
+Relation	T8	T4	NoRel	true	muerto	heridos

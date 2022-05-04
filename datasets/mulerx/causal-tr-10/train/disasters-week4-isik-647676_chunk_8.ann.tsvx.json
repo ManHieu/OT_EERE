@@ -1,0 +1,353 @@
+{
+  "id": "disasters-week4-isik-647676_chunk_8.ann.tsvx",
+  "text": "\" South China morning post .\t\" _ Rekor derecedeki ya\u011f\u0131\u015f iki ki\u015finin \u00f6l\u00fcm\u00fcne ve tar\u0131m arazilerinin su alt\u0131nda kalmas\u0131na neden oldu .\t_\t\t",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "ya\u011f\u0131\u015f",
+      "label": "EVENT",
+      "char_index": 50,
+      "sid": 1,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "\u00f6l\u00fcm\u00fcne",
+      "label": "EVENT",
+      "char_index": 68,
+      "sid": 1,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "oldu",
+      "label": "EVENT",
+      "char_index": 125,
+      "sid": 1,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "kalmas\u0131na",
+      "label": "EVENT",
+      "char_index": 109,
+      "sid": 1,
+      "tid": [
+        13,
+        14
+      ]
+    }
+  },
+  "relation": {
+    "T0-T2": "CauseEffect",
+    "T2-T0": "EffectCause",
+    "T0-T1": "NoRel"
+  },
+  "sentence": [
+    [
+      "\"",
+      "South",
+      "China",
+      "morning",
+      "post",
+      "."
+    ],
+    [
+      "\"",
+      "_",
+      "Rekor",
+      "derecedeki",
+      "ya\u011f\u0131\u015f",
+      "iki",
+      "ki\u015finin",
+      "\u00f6l\u00fcm\u00fcne",
+      "ve",
+      "tar\u0131m",
+      "arazilerinin",
+      "su",
+      "alt\u0131nda",
+      "kalmas\u0131na",
+      "neden",
+      "oldu",
+      "."
+    ],
+    [
+      "_"
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        14
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        14
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        13
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        13
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        13
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        7
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        14
+      ],
+      "compound:lvc"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        14
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ]
+  ]
+}

@@ -1,0 +1,89 @@
+Text	A las 02:52:04 el piloto de LaMia solicita _ " vectores para acercamiento " _ , se le responde que _ " tiene otro vuelo aproximando " _ ( el LAN3020 ) y que estaban revisando la pista , por lo que se solicita al LMI2933 informe _ " qué tiempo tiene para permanecer en espera " _ .	Este responde que tiene una _ " emergencia de combustible " _ , por lo cual se cancela la autorización al LAN3020 , y se le indica al LMI2933 que efectúe un _ " viraje por derecha " _ advirtiéndole que _ " tiene los tránsitos a una milla debajo " _ .	A las 02:53:45 el motor # 3 comenzó a apagarse , apagándose el motor # 4 solo 13 segundos después , ninguna de estas dos situaciones fueron informadas a la controladora , que aún sin saber este dato , instruyó a los demás vuelos en el área para que le despejen el camino al LMI2933 .	Mientras eso sucedía , LMI2933 cruzó , sin autorización , la trayectoria de las demás aeronaves sostenidas por debajo de él .	A las 02:54:47 los registros del FDR indican alarma " master warning " y una reducción de potencia en el motor # 1 del 39,5% al 29% .
+Event	T0	solicita	EVENT	34
+Event	T1	responde	EVENT	86
+Event	T2	revisando	EVENT	165
+Event	T3	solicita	EVENT	200
+Event	T4	informe	EVENT	220
+Event	T5	espera	EVENT	268
+Event	T6	responde	EVENT	286
+Event	T7	emergencia	EVENT	313
+Event	T8	cancela	EVENT	360
+Event	T9	autorización	EVENT	371
+Event	T10	indica	EVENT	405
+Event	T11	efectúe	EVENT	427
+Event	T12	viraje	EVENT	442
+Event	T13	tránsitos	EVENT	497
+Event	T14	comenzó	EVENT	560
+Event	T15	apagarse	EVENT	570
+Event	T16	apagándose	EVENT	581
+Event	T17	situaciones	EVENT	653
+Event	T18	informadas	EVENT	672
+Event	T19	instruyó	EVENT	733
+Event	T20	despejen	EVENT	784
+Event	T21	sucedía	EVENT	829
+Event	T22	trayectoria	EVENT	877
+Event	T23	registros	EVENT	961
+Event	T24	alarma	EVENT	987
+Event	T25	reducción	EVENT	1019
+Relation	T0	T1	CauseEffect	true	solicita	responde
+Relation	T1	T0	EffectCause	true	responde	solicita
+Relation	T6	T8	CauseEffect	true	responde	cancela
+Relation	T8	T6	EffectCause	true	cancela	responde
+Relation	T0	T14	NoRel	true	solicita	comenzó
+Relation	T0	T15	NoRel	true	solicita	apagarse
+Relation	T0	T18	NoRel	true	solicita	informadas
+Relation	T0	T6	NoRel	true	solicita	responde
+Relation	T1	T17	NoRel	true	responde	situaciones
+Relation	T1	T21	NoRel	true	responde	sucedía
+Relation	T1	T24	NoRel	true	responde	alarma
+Relation	T1	T4	NoRel	true	responde	informe
+Relation	T10	T19	NoRel	true	indica	instruyó
+Relation	T11	T14	NoRel	true	efectúe	comenzó
+Relation	T12	T18	NoRel	true	viraje	informadas
+Relation	T13	T10	NoRel	true	tránsitos	indica
+Relation	T13	T8	NoRel	true	tránsitos	cancela
+Relation	T14	T22	NoRel	true	comenzó	trayectoria
+Relation	T15	T1	NoRel	true	apagarse	responde
+Relation	T15	T3	NoRel	true	apagarse	solicita
+Relation	T16	T13	NoRel	true	apagándose	tránsitos
+Relation	T17	T20	NoRel	true	situaciones	despejen
+Relation	T18	T0	NoRel	true	informadas	solicita
+Relation	T18	T12	NoRel	true	informadas	viraje
+Relation	T18	T21	NoRel	true	informadas	sucedía
+Relation	T18	T3	NoRel	true	informadas	solicita
+Relation	T19	T13	NoRel	true	instruyó	tránsitos
+Relation	T19	T5	NoRel	true	instruyó	espera
+Relation	T19	T9	NoRel	true	instruyó	autorización
+Relation	T2	T11	NoRel	true	revisando	efectúe
+Relation	T2	T3	NoRel	true	revisando	solicita
+Relation	T2	T4	NoRel	true	revisando	informe
+Relation	T2	T8	NoRel	true	revisando	cancela
+Relation	T20	T7	NoRel	true	despejen	emergencia
+Relation	T21	T11	NoRel	true	sucedía	efectúe
+Relation	T21	T12	NoRel	true	sucedía	viraje
+Relation	T21	T23	NoRel	true	sucedía	registros
+Relation	T21	T5	NoRel	true	sucedía	espera
+Relation	T21	T9	NoRel	true	sucedía	autorización
+Relation	T22	T18	NoRel	true	trayectoria	informadas
+Relation	T22	T19	NoRel	true	trayectoria	instruyó
+Relation	T22	T2	NoRel	true	trayectoria	revisando
+Relation	T22	T8	NoRel	true	trayectoria	cancela
+Relation	T24	T17	NoRel	true	alarma	situaciones
+Relation	T24	T22	NoRel	true	alarma	trayectoria
+Relation	T24	T3	NoRel	true	alarma	solicita
+Relation	T24	T4	NoRel	true	alarma	informe
+Relation	T25	T13	NoRel	true	reducción	tránsitos
+Relation	T25	T18	NoRel	true	reducción	informadas
+Relation	T25	T23	NoRel	true	reducción	registros
+Relation	T3	T1	NoRel	true	solicita	responde
+Relation	T3	T19	NoRel	true	solicita	instruyó
+Relation	T4	T16	NoRel	true	informe	apagándose
+Relation	T5	T1	NoRel	true	espera	responde
+Relation	T6	T18	NoRel	true	responde	informadas
+Relation	T7	T16	NoRel	true	emergencia	apagándose
+Relation	T8	T14	NoRel	true	cancela	comenzó
+Relation	T8	T19	NoRel	true	cancela	instruyó
+Relation	T8	T2	NoRel	true	cancela	revisando
+Relation	T8	T23	NoRel	true	cancela	registros
+Relation	T9	T3	NoRel	true	autorización	solicita
+Relation	T9	T5	NoRel	true	autorización	espera

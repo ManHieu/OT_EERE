@@ -1,0 +1,46 @@
+Text	Tras el incremento del motor número uno hasta el 74% N₁ , los movimientos de las palancas de gases no tuvieron ningún efecto en la velocidad de rotación del motor .	A las 13:43 hora local ( 05:43 UTC ) y once minutos después de declarar el “ Mayday ” , la tripulación aterrizó el avión en la pista 07L de Chek Lap Kok a una velocidad de 426 kilómetros por hora .	Esta velocidad estaba 176 km/h por encima de la velocidad normal de aterrizaje de un A330 , y por encima de la velocidad máxima permitida para la extensión de flaps e incluso la velocidad era excesiva para las recomendaciones de despliegue de ruedas .	Tras el aterrizaje sólo las reversas del motor número uno se desplegaron y la tripulación se las ingenió para detener el avión usando el máximo frenado posible .	El motor número uno seguía en cifras de entre 70% y 80% N₁ hasta que la tripulación apagó ambos motores tras detener completamente el avión .
+Event	T0	incremento	EVENT	8
+Event	T1	movimientos	EVENT	62
+Event	T2	rotación	EVENT	144
+Event	T3	declarar	EVENT	228
+Event	T4	aterrizó	EVENT	268
+Event	T5	aterrizaje	EVENT	431
+Event	T6	extensión	EVENT	509
+Event	T7	flaps	EVENT	522
+Event	T8	recomendaciones	EVENT	573
+Event	T9	despliegue	EVENT	592
+Event	T10	aterrizaje	EVENT	623
+Event	T11	desplegaron	EVENT	676
+Event	T12	ingenió	EVENT	712
+Event	T13	detener	EVENT	725
+Event	T14	frenado	EVENT	759
+Event	T15	cifras	EVENT	807
+Event	T16	apagó	EVENT	861
+Event	T17	detener	EVENT	886
+Relation	T12	T13	CauseEffect	true	ingenió	detener
+Relation	T13	T12	EffectCause	true	detener	ingenió
+Relation	T17	T16	CauseEffect	true	detener	apagó
+Relation	T16	T17	EffectCause	true	apagó	detener
+Relation	T0	T16	NoRel	true	incremento	apagó
+Relation	T0	T4	NoRel	true	incremento	aterrizó
+Relation	T0	T6	NoRel	true	incremento	extensión
+Relation	T1	T4	NoRel	true	movimientos	aterrizó
+Relation	T10	T14	NoRel	true	aterrizaje	frenado
+Relation	T12	T4	NoRel	true	ingenió	aterrizó
+Relation	T12	T6	NoRel	true	ingenió	extensión
+Relation	T14	T17	NoRel	true	frenado	detener
+Relation	T15	T11	NoRel	true	cifras	desplegaron
+Relation	T15	T6	NoRel	true	cifras	extensión
+Relation	T17	T5	NoRel	true	detener	aterrizaje
+Relation	T17	T6	NoRel	true	detener	extensión
+Relation	T2	T1	NoRel	true	rotación	movimientos
+Relation	T2	T10	NoRel	true	rotación	aterrizaje
+Relation	T2	T5	NoRel	true	rotación	aterrizaje
+Relation	T3	T1	NoRel	true	declarar	movimientos
+Relation	T4	T6	NoRel	true	aterrizó	extensión
+Relation	T7	T3	NoRel	true	flaps	declarar
+Relation	T8	T7	NoRel	true	recomendaciones	flaps
+Relation	T9	T0	NoRel	true	despliegue	incremento
+Relation	T9	T12	NoRel	true	despliegue	ingenió
+Relation	T9	T4	NoRel	true	despliegue	aterrizó
+Relation	T9	T5	NoRel	true	despliegue	aterrizaje

@@ -1,0 +1,23 @@
+Text	اگلے روز حکومتِ پاکستان نے کہا کہ امریکا نے اسے میزائل حملے کی پیشگی اطلاع نہیں دی تھی اور اس طرح کے یک طرفہ حملوں سے حالات میں بہتری آنے میں مدد نہیں ملے گی ۔	-	31 اکتوبر کو وزیرستان میں 4 میزائل حملوں میں 20 افراد ہلاک ہو گئے جن میں القاعدہ رہنما ابو آکاش اور محمد حسن خلیل ال حکیم بھی شامل تھے ۔	-	14 نومبر کو میران شاہ کے قریب میزائل حملے میں 12 افراد ہلاک ہو گئے ۔
+Event	T0	کہا	EVENT	27
+Event	T1	حملے	EVENT	55
+Event	T2	اطلاع	EVENT	69
+Event	T3	حملوں	EVENT	109
+Event	T4	آنے	EVENT	134
+Event	T5	حملوں	EVENT	197
+Event	T6	ہلاک	EVENT	216
+Event	T7	حملے	EVENT	338
+Event	T8	ہلاک	EVENT	356
+Event	T9	گئے	EVENT	364
+Relation	T5	T6	CauseEffect	true	حملوں	ہلاک
+Relation	T6	T5	EffectCause	true	ہلاک	حملوں
+Relation	T7	T8	CauseEffect	true	حملے	ہلاک
+Relation	T8	T7	EffectCause	true	ہلاک	حملے
+Relation	T1	T0	NoRel	true	حملے	کہا
+Relation	T5	T8	NoRel	true	حملوں	ہلاک
+Relation	T5	T9	NoRel	true	حملوں	گئے
+Relation	T6	T7	NoRel	true	ہلاک	حملے
+Relation	T7	T5	NoRel	true	حملے	حملوں
+Relation	T7	T9	NoRel	true	حملے	گئے
+Relation	T8	T2	NoRel	true	ہلاک	اطلاع
+Relation	T9	T1	NoRel	true	گئے	حملے

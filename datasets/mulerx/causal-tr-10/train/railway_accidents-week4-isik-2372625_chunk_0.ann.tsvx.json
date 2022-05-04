@@ -1,0 +1,1839 @@
+{
+  "id": "railway_accidents-week4-isik-2372625_chunk_0.ann.tsvx",
+  "text": "ANKARA MAR\u015eANDIZ HIZLI TREN_KAZASI 13 Aral\u0131k 2018 tarihinde saat 06:30'da Ankara Y\u00fcksek H\u0131zl\u0131 Tren Gar\u0131'ndan kalkan ve Konya Gar\u0131 y\u00f6n\u00fcne do\u011fru hareket eden HT 80000 serisi y\u00fcksek h\u0131zl\u0131 trenin Ankara'n\u0131n Yenimahalle il\u00e7esinde yer alan Mar\u015fandiz Tren \u0130stasyonu'nda yol kontrol\u00fc yapan E 68000 model k\u0131lavuz lokomotifle \u00e7arp\u0131\u015fmas\u0131 sonucu meydana gelmi\u015ftir .\tOlay\u0131n ard\u0131ndan Ula\u015ft\u0131rma ve Altyap\u0131 Bakan\u0131 Mehmet Cahit Turhan ve Ankara Valisi Vasip \u015eahin olayla ilgili a\u00e7\u0131klama yapm\u0131\u015f 206 yolcunun bulundu\u011fu trende 107 yaral\u0131 oldu\u011fu 9 ki\u015finin ya\u015fam\u0131n\u0131 yitirdi\u011fi belirtilmi\u015ftir .\tAnkara'da 13 Aral\u0131k 2018'de 3'\u00fc makinist 9 ki\u015finin hayat\u0131n\u0131 kaybetti\u011fi , 107 ki\u015finin yaraland\u0131\u011f\u0131 y\u00fcksek h\u0131zl\u0131 tren ( YHT ) kazas\u0131na ili\u015fkin 10 san\u0131\u011f\u0131n yarg\u0131lanmas\u0131na devam ediliyor .\tKategori : Ankara'daki demiryolu kazalar\u0131 ve olaylar\u0131 Kategori : 2018'de Ankara Kategori : 2018'de demiryolu kazalar\u0131 Kategori : T\u00fcrkiye'de y\u00fcksek h\u0131zl\u0131 demiryolu\t",
+  "event": {
+    "T1": {
+      "id": "T1",
+      "text": "gelmi\u015ftir",
+      "label": "EVENT",
+      "char_index": 342,
+      "sid": 0,
+      "tid": [
+        48,
+        49
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "Olay\u0131n",
+      "label": "EVENT",
+      "char_index": 354,
+      "sid": 1,
+      "tid": [
+        0,
+        1
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "yapm\u0131\u015f",
+      "label": "EVENT",
+      "char_index": 470,
+      "sid": 1,
+      "tid": [
+        17,
+        18
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "belirtilmi\u015ftir",
+      "label": "EVENT",
+      "char_index": 554,
+      "sid": 1,
+      "tid": [
+        29,
+        30
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "kaybetti\u011fi",
+      "label": "EVENT",
+      "char_index": 631,
+      "sid": 2,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "yaraland\u0131\u011f\u0131",
+      "label": "EVENT",
+      "char_index": 656,
+      "sid": 2,
+      "tid": [
+        13,
+        14
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "olaylar\u0131",
+      "label": "EVENT",
+      "char_index": 799,
+      "sid": 3,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "TREN_KAZASI",
+      "label": "EVENT",
+      "char_index": 23,
+      "sid": 0,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "kalkan",
+      "label": "EVENT",
+      "char_index": 109,
+      "sid": 0,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "eden",
+      "label": "EVENT",
+      "char_index": 151,
+      "sid": 0,
+      "tid": [
+        22,
+        23
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "yapan",
+      "label": "EVENT",
+      "char_index": 276,
+      "sid": 0,
+      "tid": [
+        39,
+        40
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "\u00e7arp\u0131\u015fmas\u0131",
+      "label": "EVENT",
+      "char_index": 316,
+      "sid": 0,
+      "tid": [
+        45,
+        46
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "yaral\u0131",
+      "label": "EVENT",
+      "char_index": 511,
+      "sid": 1,
+      "tid": [
+        23,
+        24
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "yitirdi\u011fi",
+      "label": "EVENT",
+      "char_index": 544,
+      "sid": 1,
+      "tid": [
+        28,
+        29
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "kazas\u0131na",
+      "label": "EVENT",
+      "char_index": 694,
+      "sid": 2,
+      "tid": [
+        20,
+        21
+      ]
+    },
+    "T16": {
+      "id": "T16",
+      "text": "ediliyor",
+      "label": "EVENT",
+      "char_index": 743,
+      "sid": 2,
+      "tid": [
+        26,
+        27
+      ]
+    },
+    "T17": {
+      "id": "T17",
+      "text": "kazalar\u0131",
+      "label": "EVENT",
+      "char_index": 787,
+      "sid": 3,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T18": {
+      "id": "T18",
+      "text": "kazalar\u0131",
+      "label": "EVENT",
+      "char_index": 863,
+      "sid": 3,
+      "tid": [
+        15,
+        16
+      ]
+    }
+  },
+  "relation": {
+    "T12-T8": "CauseEffect",
+    "T8-T12": "EffectCause",
+    "T8-T3": "CauseEffect",
+    "T3-T8": "EffectCause",
+    "T8-T13": "CauseEffect",
+    "T13-T8": "EffectCause",
+    "T8-T14": "CauseEffect",
+    "T14-T8": "EffectCause",
+    "T8-T5": "CauseEffect",
+    "T5-T8": "EffectCause",
+    "T8-T6": "CauseEffect",
+    "T6-T8": "EffectCause",
+    "T15-T5": "CauseEffect",
+    "T5-T15": "EffectCause",
+    "T15-T6": "CauseEffect",
+    "T6-T15": "EffectCause",
+    "T15-T16": "CauseEffect",
+    "T16-T15": "EffectCause",
+    "T2-T3": "CauseEffect",
+    "T3-T2": "EffectCause",
+    "T3-T4": "CauseEffect",
+    "T4-T3": "EffectCause",
+    "T1-T14": "NoRel",
+    "T1-T17": "NoRel",
+    "T10-T14": "NoRel",
+    "T10-T2": "NoRel",
+    "T12-T11": "NoRel",
+    "T12-T4": "NoRel",
+    "T13-T15": "NoRel",
+    "T13-T7": "NoRel",
+    "T14-T18": "NoRel",
+    "T14-T6": "NoRel",
+    "T14-T9": "NoRel",
+    "T16-T10": "NoRel",
+    "T16-T17": "NoRel",
+    "T17-T2": "NoRel",
+    "T17-T7": "NoRel",
+    "T3-T9": "NoRel",
+    "T4-T1": "NoRel",
+    "T4-T14": "NoRel",
+    "T5-T12": "NoRel",
+    "T5-T18": "NoRel",
+    "T5-T3": "NoRel",
+    "T5-T6": "NoRel",
+    "T6-T10": "NoRel",
+    "T6-T14": "NoRel",
+    "T7-T12": "NoRel",
+    "T7-T2": "NoRel",
+    "T7-T8": "NoRel"
+  },
+  "sentence": [
+    [
+      "ANKARA",
+      "MAR\u015eANDIZ",
+      "HIZLI",
+      "TREN_KAZASI",
+      "13",
+      "Aral\u0131k",
+      "2018",
+      "tarihinde",
+      "saat",
+      "06:30'da",
+      "Ankara",
+      "Y\u00fcksek",
+      "H\u0131zl\u0131",
+      "Tren",
+      "Gar\u0131'ndan",
+      "kalkan",
+      "ve",
+      "Konya",
+      "Gar\u0131",
+      "y\u00f6n\u00fcne",
+      "do\u011fru",
+      "hareket",
+      "eden",
+      "HT",
+      "80000",
+      "serisi",
+      "y\u00fcksek",
+      "h\u0131zl\u0131",
+      "trenin",
+      "Ankara'n\u0131n",
+      "Yenimahalle",
+      "il\u00e7esinde",
+      "yer",
+      "alan",
+      "Mar\u015fandiz",
+      "Tren",
+      "\u0130stasyonu'nda",
+      "yol",
+      "kontrol\u00fc",
+      "yapan",
+      "E",
+      "68000",
+      "model",
+      "k\u0131lavuz",
+      "lokomotifle",
+      "\u00e7arp\u0131\u015fmas\u0131",
+      "sonucu",
+      "meydana",
+      "gelmi\u015ftir",
+      "."
+    ],
+    [
+      "Olay\u0131n",
+      "ard\u0131ndan",
+      "Ula\u015ft\u0131rma",
+      "ve",
+      "Altyap\u0131",
+      "Bakan\u0131",
+      "Mehmet",
+      "Cahit",
+      "Turhan",
+      "ve",
+      "Ankara",
+      "Valisi",
+      "Vasip",
+      "\u015eahin",
+      "olayla",
+      "ilgili",
+      "a\u00e7\u0131klama",
+      "yapm\u0131\u015f",
+      "206",
+      "yolcunun",
+      "bulundu\u011fu",
+      "trende",
+      "107",
+      "yaral\u0131",
+      "oldu\u011fu",
+      "9",
+      "ki\u015finin",
+      "ya\u015fam\u0131n\u0131",
+      "yitirdi\u011fi",
+      "belirtilmi\u015ftir",
+      "."
+    ],
+    [
+      "Ankara'da",
+      "13",
+      "Aral\u0131k",
+      "2018'de",
+      "3'\u00fc",
+      "makinist",
+      "9",
+      "ki\u015finin",
+      "hayat\u0131n\u0131",
+      "kaybetti\u011fi",
+      ",",
+      "107",
+      "ki\u015finin",
+      "yaraland\u0131\u011f\u0131",
+      "y\u00fcksek",
+      "h\u0131zl\u0131",
+      "tren",
+      "(",
+      "YHT",
+      ")",
+      "kazas\u0131na",
+      "ili\u015fkin",
+      "10",
+      "san\u0131\u011f\u0131n",
+      "yarg\u0131lanmas\u0131na",
+      "devam",
+      "ediliyor",
+      "."
+    ],
+    [
+      "Kategori",
+      ":",
+      "Ankara'daki",
+      "demiryolu",
+      "kazalar\u0131",
+      "ve",
+      "olaylar\u0131",
+      "Kategori",
+      ":",
+      "2018'de",
+      "Ankara",
+      "Kategori",
+      ":",
+      "2018'de",
+      "demiryolu",
+      "kazalar\u0131",
+      "Kategori",
+      ":",
+      "T\u00fcrkiye'de",
+      "y\u00fcksek",
+      "h\u0131zl\u0131",
+      "demiryolu"
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        44
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        7
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        4
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        47
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        45
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        8
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        15
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        10
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        10
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        10
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        10
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        28
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        21
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        19
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        17
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        21
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        19
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        25
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        21
+      ],
+      "compound:lvc"
+    ],
+    [
+      [
+        0,
+        23
+      ],
+      [
+        0,
+        25
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        40
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        28
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        28
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        27
+      ],
+      [
+        0,
+        28
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        45
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        29
+      ],
+      [
+        0,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        30
+      ],
+      [
+        0,
+        31
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        31
+      ],
+      [
+        0,
+        32
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        32
+      ],
+      [
+        0,
+        15
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        33
+      ],
+      [
+        0,
+        32
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        34
+      ],
+      [
+        0,
+        21
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        35
+      ],
+      [
+        0,
+        34
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        36
+      ],
+      [
+        0,
+        34
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        37
+      ],
+      [
+        0,
+        38
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        38
+      ],
+      [
+        0,
+        45
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        39
+      ],
+      [
+        0,
+        21
+      ],
+      "compound:lvc"
+    ],
+    [
+      [
+        0,
+        40
+      ],
+      [
+        0,
+        42
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        41
+      ],
+      [
+        0,
+        10
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        42
+      ],
+      [
+        0,
+        44
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        43
+      ],
+      [
+        0,
+        44
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        44
+      ],
+      [
+        0,
+        45
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        45
+      ],
+      [
+        0,
+        46
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        46
+      ],
+      [
+        0,
+        47
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        47
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        48
+      ],
+      [
+        0,
+        47
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        49
+      ],
+      [
+        0,
+        47
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        17
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        17
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        2
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        2
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        27
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        10
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        10
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        10
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        20
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        14
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        17
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        29
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        19
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        19
+      ],
+      [
+        1,
+        20
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        20
+      ],
+      [
+        1,
+        21
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        21
+      ],
+      [
+        1,
+        27
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        22
+      ],
+      [
+        1,
+        23
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        23
+      ],
+      [
+        1,
+        24
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        24
+      ],
+      [
+        1,
+        21
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        25
+      ],
+      [
+        1,
+        26
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        26
+      ],
+      [
+        1,
+        27
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        27
+      ],
+      [
+        1,
+        29
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        28
+      ],
+      [
+        1,
+        27
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        29
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        30
+      ],
+      [
+        1,
+        29
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        25
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        8
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      "flat"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      "flat"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        20
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        8
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        13
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        13
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        8
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        20
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        14
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        14
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        17
+      ],
+      [
+        2,
+        18
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        18
+      ],
+      [
+        2,
+        20
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        19
+      ],
+      [
+        2,
+        18
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        20
+      ],
+      [
+        2,
+        24
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        21
+      ],
+      [
+        2,
+        20
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        22
+      ],
+      [
+        2,
+        23
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        23
+      ],
+      [
+        2,
+        24
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        24
+      ],
+      [
+        2,
+        25
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        25
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        26
+      ],
+      [
+        2,
+        25
+      ],
+      "compound:lvc"
+    ],
+    [
+      [
+        2,
+        27
+      ],
+      [
+        2,
+        25
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        4
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      "nummod"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        11
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        15
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        16
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        20
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        20
+      ],
+      [
+        3,
+        21
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        21
+      ],
+      [
+        3,
+        16
+      ],
+      "nmod:poss"
+    ]
+  ]
+}

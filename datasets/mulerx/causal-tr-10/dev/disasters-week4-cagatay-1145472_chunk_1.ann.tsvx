@@ -1,0 +1,13 @@
+Text	Ölümlerin çoğu Kapı Dağı yöresindeki bu kerpiç evlerde yaşandı .	Bu felaketten sonra heyelan alanına beton bentler yapıldı .	Suyolu ve Doğrudere dereleri üzerine yapılan 84 adet beton seki ile derelerin kontrollü akması sağlanarak şiddetli yağmurlar sırasında bir kez daha heyelan ve sel felaketinin yaşanmaması hedeflenmektedir .	Kategori : Türkiye'deki seller Kategori : 1995'te Türkiye Kategori : 1995'teki doğal afetler Kategori : 1990'lardaki seller Kategori : Senirkent	
+Event	T0	Ölümlerin	EVENT	0
+Event	T1	yaşandı	EVENT	55
+Event	T2	felaketten	EVENT	68
+Event	T3	yapıldı	EVENT	115
+Event	T4	akması	EVENT	213
+Event	T5	heyelan	EVENT	273
+Event	T6	sel	EVENT	284
+Relation	T2	T3	CauseEffect	true	felaketten	yapıldı
+Relation	T3	T2	EffectCause	true	yapıldı	felaketten
+Relation	T0	T6	NoRel	true	Ölümlerin	sel
+Relation	T2	T4	NoRel	true	felaketten	akması
+Relation	T5	T2	NoRel	true	heyelan	felaketten

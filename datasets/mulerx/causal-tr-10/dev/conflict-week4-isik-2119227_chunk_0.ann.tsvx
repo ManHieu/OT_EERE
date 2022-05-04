@@ -1,0 +1,44 @@
+Text	USS _ COLE _ SALDIRISI , Yemen'in Aden şehri limanında demirlenen güdümlü füze taşıma kapasiteli bir Amerikan muhribi olan USS _ Cole _ ( DDG - 67 )'a 12 Ekim 2000 tarihinde el - Kaide tarafından düzenlenen saldırıdır .	Bu saldırı sonucunda 17 denizci ölmüş , 39'u ise yaralanmıştır .	Muhripte ise ciddi bir hasar meydana gelmiştir .	Saldırı , patlayıcı yüklü bir teknenin USS _ Cole _ { { ' } } a çarptırılmasıyla gerçekleştirildi .	Kategori : El - Kaide'nin saldırıları Kategori : Yemen'deki intihar saldırıları Kategori : 2000'de Yemen Kategori : 2000'deki patlamalar Kategori : 2000'lerde saldırılar Kategori : Bilgi kutusu bulunmayan sayfalar
+Event	T0	SALDIRISI	EVENT	13
+Event	T1	saldırıdır	EVENT	207
+Event	T2	saldırı	EVENT	223
+Event	T3	ölmüş	EVENT	252
+Event	T4	yaralanmıştır	EVENT	269
+Event	T5	gelmiştir	EVENT	322
+Event	T6	Saldırı	EVENT	334
+Event	T7	gerçekleştirildi	EVENT	415
+Event	T8	demirlenen	EVENT	55
+Event	T9	yüklü	EVENT	354
+Event	T10	çarptırılmasıyla	EVENT	398
+Event	T11	saldırıları	EVENT	460
+Event	T12	saldırıları	EVENT	502
+Event	T13	patlamalar	EVENT	560
+Event	T14	saldırılar	EVENT	593
+Relation	T0	T4	NoRel	true	SALDIRISI	yaralanmıştır
+Relation	T1	T11	NoRel	true	saldırıdır	saldırıları
+Relation	T1	T3	NoRel	true	saldırıdır	ölmüş
+Relation	T10	T13	NoRel	true	çarptırılmasıyla	patlamalar
+Relation	T10	T4	NoRel	true	çarptırılmasıyla	yaralanmıştır
+Relation	T11	T13	NoRel	true	saldırıları	patlamalar
+Relation	T12	T1	NoRel	true	saldırıları	saldırıdır
+Relation	T13	T3	NoRel	true	patlamalar	ölmüş
+Relation	T13	T7	NoRel	true	patlamalar	gerçekleştirildi
+Relation	T13	T9	NoRel	true	patlamalar	yüklü
+Relation	T14	T0	NoRel	true	saldırılar	SALDIRISI
+Relation	T14	T10	NoRel	true	saldırılar	çarptırılmasıyla
+Relation	T2	T9	NoRel	true	saldırı	yüklü
+Relation	T3	T1	NoRel	true	ölmüş	saldırıdır
+Relation	T3	T14	NoRel	true	ölmüş	saldırılar
+Relation	T3	T8	NoRel	true	ölmüş	demirlenen
+Relation	T4	T11	NoRel	true	yaralanmıştır	saldırıları
+Relation	T4	T8	NoRel	true	yaralanmıştır	demirlenen
+Relation	T4	T9	NoRel	true	yaralanmıştır	yüklü
+Relation	T5	T1	NoRel	true	gelmiştir	saldırıdır
+Relation	T5	T12	NoRel	true	gelmiştir	saldırıları
+Relation	T5	T7	NoRel	true	gelmiştir	gerçekleştirildi
+Relation	T6	T4	NoRel	true	Saldırı	yaralanmıştır
+Relation	T6	T8	NoRel	true	Saldırı	demirlenen
+Relation	T7	T1	NoRel	true	gerçekleştirildi	saldırıdır
+Relation	T7	T3	NoRel	true	gerçekleştirildi	ölmüş
+Relation	T7	T8	NoRel	true	gerçekleştirildi	demirlenen
+Relation	T8	T10	NoRel	true	demirlenen	çarptırılmasıyla

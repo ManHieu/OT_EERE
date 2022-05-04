@@ -1,0 +1,33 @@
+Text	Tras el accidente , la NZDF pospuso de manera indefinida el contrato con National Airlines para sus necesidades de transporte .	La serie de televisión canadiense _ Mayday : catástrofes aéreas _ presentó el desastre del Vuelo 102 en el episodio 10 de la temporada 15 , titulado " PESADILLA AFGANA " , emitido por primera vez en el 2017 .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil	- Descripción del accidente en Aviation Safety - Reporte preliminar de la NTSB ( _ en inglés _ ) - Reporte final del accidente de la NTSB ( _ en inglés _ ) - " Información relativa al vuelo NCR102 .	" National Air Cargo ( Archive ) - " STATEMENT FROM NATIONAL AIR CARGO .
+Event	T0	accidente	EVENT	8
+Event	T1	pospuso	EVENT	28
+Event	T2	catástrofes	EVENT	173
+Event	T3	presentó	EVENT	194
+Event	T4	desastre	EVENT	206
+Event	T5	titulado	EVENT	268
+Event	T6	emitido	EVENT	300
+Event	T7	Accidente	EVENT	339
+Event	T8	Accidentes	EVENT	371
+Event	T9	Accidentes	EVENT	435
+Event	T10	accidente	EVENT	507
+Event	T11	Reporte	EVENT	538
+Event	T12	accidente	EVENT	606
+Event	T13	vuelo	EVENT	673
+Relation	T0	T1	CauseEffect	true	accidente	pospuso
+Relation	T1	T0	EffectCause	true	pospuso	accidente
+Relation	T0	T4	NoRel	true	accidente	desastre
+Relation	T1	T5	NoRel	true	pospuso	titulado
+Relation	T1	T8	NoRel	true	pospuso	Accidentes
+Relation	T13	T12	NoRel	true	vuelo	accidente
+Relation	T13	T6	NoRel	true	vuelo	emitido
+Relation	T3	T10	NoRel	true	presentó	accidente
+Relation	T3	T5	NoRel	true	presentó	titulado
+Relation	T4	T2	NoRel	true	desastre	catástrofes
+Relation	T4	T7	NoRel	true	desastre	Accidente
+Relation	T4	T9	NoRel	true	desastre	Accidentes
+Relation	T5	T3	NoRel	true	titulado	presentó
+Relation	T6	T8	NoRel	true	emitido	Accidentes
+Relation	T6	T9	NoRel	true	emitido	Accidentes
+Relation	T7	T1	NoRel	true	Accidente	pospuso
+Relation	T8	T0	NoRel	true	Accidentes	accidente
+Relation	T9	T13	NoRel	true	Accidentes	vuelo

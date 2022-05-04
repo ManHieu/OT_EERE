@@ -1,0 +1,35 @@
+Text	İlk ölüm de doğrulandı .	- İskoçya ilk vakasını doğruladı .	- Singapur dört vakayı daha doğrulayarak toplam sayısını 106'ya çıkardı .	- Güney Kore 376 vakayı daha doğrulayarak toplam sayısını 3.526'ya getirdi .	210 vaka , daha sonra bildirilen 18. ölümle doğrulandı ve toplam sayı 3.736'ya ulaştı .
+Event	T0	ölüm	EVENT	4
+Event	T1	doğrulandı	EVENT	12
+Event	T2	doğruladı	EVENT	48
+Event	T3	çıkardı	EVENT	124
+Event	T4	getirdi	EVENT	201
+Event	T5	bildirilen	EVENT	233
+Event	T6	doğrulandı	EVENT	255
+Event	T7	ulaştı	EVENT	290
+Event	T8	vakasını	EVENT	39
+Event	T9	doğrulayarak	EVENT	88
+Event	T10	doğrulayarak	EVENT	163
+Relation	T0	T1	CauseEffect	true	ölüm	doğrulandı
+Relation	T1	T0	EffectCause	true	doğrulandı	ölüm
+Relation	T8	T2	CauseEffect	true	vakasını	doğruladı
+Relation	T2	T8	EffectCause	true	doğruladı	vakasını
+Relation	T9	T3	CauseEffect	true	doğrulayarak	çıkardı
+Relation	T3	T9	EffectCause	true	çıkardı	doğrulayarak
+Relation	T10	T4	CauseEffect	true	doğrulayarak	getirdi
+Relation	T4	T10	EffectCause	true	getirdi	doğrulayarak
+Relation	T6	T7	CauseEffect	true	doğrulandı	ulaştı
+Relation	T7	T6	EffectCause	true	ulaştı	doğrulandı
+Relation	T5	T6	CauseEffect	true	bildirilen	doğrulandı
+Relation	T6	T5	EffectCause	true	doğrulandı	bildirilen
+Relation	T10	T3	NoRel	true	doğrulayarak	çıkardı
+Relation	T10	T9	NoRel	true	doğrulayarak	doğrulayarak
+Relation	T2	T10	NoRel	true	doğruladı	doğrulayarak
+Relation	T4	T9	NoRel	true	getirdi	doğrulayarak
+Relation	T5	T4	NoRel	true	bildirilen	getirdi
+Relation	T5	T8	NoRel	true	bildirilen	vakasını
+Relation	T5	T9	NoRel	true	bildirilen	doğrulayarak
+Relation	T7	T1	NoRel	true	ulaştı	doğrulandı
+Relation	T7	T8	NoRel	true	ulaştı	vakasını
+Relation	T8	T10	NoRel	true	vakasını	doğrulayarak
+Relation	T9	T8	NoRel	true	doğrulayarak	vakasını

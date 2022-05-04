@@ -1,0 +1,46 @@
+Text	1995 BAKÜ METRO YANGINI , 28 Ekim 1995 tarihinde Bakü metrosu'nun Ulduz ve Neriman Nerimanov metro istasyonları arasında çıkan ve 289 kişinin ölümüne 270 kişinin ise yaralanmasına sebep olan yangındır .	Bu yangın , dünyanın en fazla ölüme sebebiyet veren metro faciasıdır .	Yangının elektrik hatlarındaki teknik bir sorundan ötürü çıktığı düşünülmektedir .	Facia sonrasında olayı araştırmak üzere kurulan komisyonun başkanı olan Başbakan Yardımcısı Abbas Abbasov yangının sebebini eskimiş Sovyet ekipmanlarının hâlen kullanılması olarak göstermiştir .	Facianın ardından devlet başkanı Haydar Aliyev Amerikalı bir yetkiliye öncelikle edinilen bilginin teknik bir arıza sonucu facianın gerçekleştiğini gösterdiği ancak sabotaj ihtimalinin de değerlendirildiğini bildirmiştir .
+Event	T0	çıkan	EVENT	121
+Event	T1	ölümüne	EVENT	142
+Event	T2	yangındır	EVENT	191
+Event	T3	yangın	EVENT	206
+Event	T4	faciasıdır	EVENT	261
+Event	T5	Yangının	EVENT	274
+Event	T6	Facia	EVENT	357
+Event	T7	araştırmak	EVENT	380
+Event	T8	yangının	EVENT	463
+Event	T9	kullanılması	EVENT	517
+Event	T10	göstermiştir	EVENT	537
+Event	T11	Facianın	EVENT	552
+Event	T12	gösterdiği	EVENT	700
+Event	T13	bildirmiştir	EVENT	760
+Event	T14	1995 BAKÜ METRO YANGINI	EVENT	0
+Event	T15	düşünülmektedir	EVENT	339
+Event	T16	değerlendirildiğini	EVENT	740
+Relation	T14	T1	CauseEffect	true	1995 BAKÜ METRO YANGINI	ölümüne
+Relation	T1	T14	EffectCause	true	ölümüne	1995 BAKÜ METRO YANGINI
+Relation	T14	T2	CauseEffect	true	1995 BAKÜ METRO YANGINI	yangındır
+Relation	T2	T14	EffectCause	true	yangındır	1995 BAKÜ METRO YANGINI
+Relation	T9	T8	CauseEffect	true	kullanılması	yangının
+Relation	T8	T9	EffectCause	true	yangının	kullanılması
+Relation	T0	T1	NoRel	true	çıkan	ölümüne
+Relation	T0	T8	NoRel	true	çıkan	yangının
+Relation	T1	T15	NoRel	true	ölümüne	düşünülmektedir
+Relation	T1	T3	NoRel	true	ölümüne	yangın
+Relation	T10	T16	NoRel	true	göstermiştir	değerlendirildiğini
+Relation	T10	T5	NoRel	true	göstermiştir	Yangının
+Relation	T11	T6	NoRel	true	Facianın	Facia
+Relation	T11	T7	NoRel	true	Facianın	araştırmak
+Relation	T12	T14	NoRel	true	gösterdiği	1995 BAKÜ METRO YANGINI
+Relation	T14	T16	NoRel	true	1995 BAKÜ METRO YANGINI	değerlendirildiğini
+Relation	T15	T14	NoRel	true	düşünülmektedir	1995 BAKÜ METRO YANGINI
+Relation	T15	T7	NoRel	true	düşünülmektedir	araştırmak
+Relation	T16	T2	NoRel	true	değerlendirildiğini	yangındır
+Relation	T16	T6	NoRel	true	değerlendirildiğini	Facia
+Relation	T2	T15	NoRel	true	yangındır	düşünülmektedir
+Relation	T3	T14	NoRel	true	yangın	1995 BAKÜ METRO YANGINI
+Relation	T3	T9	NoRel	true	yangın	kullanılması
+Relation	T4	T11	NoRel	true	faciasıdır	Facianın
+Relation	T4	T9	NoRel	true	faciasıdır	kullanılması
+Relation	T5	T8	NoRel	true	Yangının	yangının
+Relation	T6	T15	NoRel	true	Facia	düşünülmektedir
+Relation	T6	T16	NoRel	true	Facia	değerlendirildiğini

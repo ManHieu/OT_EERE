@@ -1,0 +1,20 @@
+Text	يہ اب تک آنے والے طوفانوں ميں سب سے ہولناک طوفان ہے ۔	1ہيزل سائيکلون ( 1954ء ) : تقريباً 1200 افراد ہلاک ہوئے ۔	1گيلوسٹون Galvaston ( 1900ء ) : اس ہريکين ميں آٹھ سے بارہ ہزار افراد لقمہ �¿ اجل بن گئے ۔	1ميکسيکو ہريکين ( 1909ء ) : پندرہ سو افراد موت کی نيند سو گئے ۔	1Lake Okeechobee Hurricane ( 1932ء ) : ڈھائی ہزار سے 3107 اموات ہوئيں ۔
+Event	T0	آنے	EVENT	9
+Event	T1	طوفان	EVENT	43
+Event	T3	موت	EVENT	245
+Event	T4	گئے	EVENT	260
+Event	T5	Hurricane	EVENT	283
+Event	T6	طوفانوں	EVENT	18
+Event	T7	ہلاک	EVENT	100
+Event	T8	سائيکلون	EVENT	60
+Event	T2	اموات	EVENT	324
+Relation	T8	T7	CauseEffect	true	سائيکلون	ہلاک
+Relation	T7	T8	EffectCause	true	ہلاک	سائيکلون
+Relation	T5	T2	CauseEffect	true	Hurricane	اموات
+Relation	T2	T5	EffectCause	true	اموات	Hurricane
+Relation	T0	T7	NoRel	true	آنے	ہلاک
+Relation	T2	T0	NoRel	true	اموات	آنے
+Relation	T3	T5	NoRel	true	موت	Hurricane
+Relation	T4	T6	NoRel	true	گئے	طوفانوں
+Relation	T8	T1	NoRel	true	سائيکلون	طوفان
+Relation	T8	T6	NoRel	true	سائيکلون	طوفانوں

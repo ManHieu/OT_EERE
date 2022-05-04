@@ -1,0 +1,57 @@
+Text	Bu ölüm , aile isimleri olan Antoninus'un salgınla ilişkili hale gelmesine sebep oldu .	Salgın 9 yıl sonra yeniden ortaya çıktı , Romalı bir tarihçi olan Dio Cassius'a göre ( 155 – 235 ) , salgın Roma'da günde 2000 kişinin ölmesine sebep olmuştur , bu sayı salgından etkilenenlerin çeyreği kadardı , bu hastalığa % 25 öldürme oranı vermektedir .	Hastalıktan dolayı ölen kişi sayısının 5 milyon civarında olduğu tahmin edilmektedir , ve hastalık bazı bölgelerde nüfusun üçte biri kadarını öldürdü ve Roma ordusunu harap etti .	Eski kaynaklar salgının 165 -166 kışında Seleusya kuşatması sırasında ilk defa ortaya çıktığını kabul eder .	Ammianus Marcellinus'a göre salgın Galya bölgesinden Ren'e kadar yayılmıştı .
+Event	T0	ölüm	EVENT	3
+Event	T1	Salgın	EVENT	88
+Event	T2	çıktı	EVENT	122
+Event	T3	salgın	EVENT	189
+Event	T5	salgından	EVENT	257
+Event	T6	öldürme	EVENT	318
+Event	T7	vermektedir	EVENT	332
+Event	T8	ölen	EVENT	365
+Event	T9	hastalık	EVENT	436
+Event	T10	öldürdü	EVENT	488
+Event	T11	etti	EVENT	519
+Event	T12	kuşatması	EVENT	576
+Event	T13	salgın	EVENT	663
+Event	T14	yayılmıştı	EVENT	700
+Event	T15	ölmesine	EVENT	223
+Event	T4	salgınla	EVENT	42
+Event	T16	Hastalıktan	EVENT	346
+Event	T17	çıktığını	EVENT	612
+Relation	T3	T15	CauseEffect	true	salgın	ölmesine
+Relation	T15	T3	EffectCause	true	ölmesine	salgın
+Relation	T4	T0	CauseEffect	true	salgınla	ölüm
+Relation	T0	T4	EffectCause	true	ölüm	salgınla
+Relation	T9	T10	CauseEffect	true	hastalık	öldürdü
+Relation	T10	T9	EffectCause	true	öldürdü	hastalık
+Relation	T16	T8	CauseEffect	true	Hastalıktan	ölen
+Relation	T8	T16	EffectCause	true	ölen	Hastalıktan
+Relation	T9	T11	CauseEffect	true	hastalık	etti
+Relation	T11	T9	EffectCause	true	etti	hastalık
+Relation	T0	T10	NoRel	true	ölüm	öldürdü
+Relation	T0	T17	NoRel	true	ölüm	çıktığını
+Relation	T1	T12	NoRel	true	Salgın	kuşatması
+Relation	T1	T6	NoRel	true	Salgın	öldürme
+Relation	T10	T15	NoRel	true	öldürdü	ölmesine
+Relation	T11	T0	NoRel	true	etti	ölüm
+Relation	T12	T2	NoRel	true	kuşatması	çıktı
+Relation	T12	T5	NoRel	true	kuşatması	salgından
+Relation	T16	T11	NoRel	true	Hastalıktan	etti
+Relation	T16	T13	NoRel	true	Hastalıktan	salgın
+Relation	T17	T16	NoRel	true	çıktığını	Hastalıktan
+Relation	T17	T2	NoRel	true	çıktığını	çıktı
+Relation	T17	T8	NoRel	true	çıktığını	ölen
+Relation	T2	T11	NoRel	true	çıktı	etti
+Relation	T2	T14	NoRel	true	çıktı	yayılmıştı
+Relation	T2	T16	NoRel	true	çıktı	Hastalıktan
+Relation	T2	T9	NoRel	true	çıktı	hastalık
+Relation	T3	T5	NoRel	true	salgın	salgından
+Relation	T4	T7	NoRel	true	salgınla	vermektedir
+Relation	T5	T7	NoRel	true	salgından	vermektedir
+Relation	T5	T9	NoRel	true	salgından	hastalık
+Relation	T6	T16	NoRel	true	öldürme	Hastalıktan
+Relation	T6	T9	NoRel	true	öldürme	hastalık
+Relation	T7	T14	NoRel	true	vermektedir	yayılmıştı
+Relation	T7	T4	NoRel	true	vermektedir	salgınla
+Relation	T8	T12	NoRel	true	ölen	kuşatması
+Relation	T8	T13	NoRel	true	ölen	salgın
+Relation	T9	T0	NoRel	true	hastalık	ölüm

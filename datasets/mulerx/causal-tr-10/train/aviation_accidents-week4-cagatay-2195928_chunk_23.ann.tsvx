@@ -1,0 +1,50 @@
+Text	Bu açıklama , uçağın ilk iniş denemesinde düştüğünü söyleyen başka bir resmî açıklama ile çelişiyordu .	Kırgızistan'ın Sivil Havacılık ve Hava Sahası Kullanımı Çok Taraflı Anlaşması katılımcısı olması sebebiyle kazanın araştırmasını Devletler Arası Havacılık Komitesi ( IAC ) yaptı .	Türkiye Ulaştırma Bakanlığı , Kırgızistan otoritelerine yardım etmek üzere kaza soruşturma kurulundan Bişkek'e iki uzman gönderdiğini söyledi .	Ayrıca bir Boeing teknik ekibi , talep üzerine Amerika Birleşik Devletleri'nin kaza soruşturma kurumu olan Ulusal Ulaşım Güvenliği Kurulunun yönetimi altında kaza sahasına gitti .	Ayrıca Kırgızistan Hükûmeti , Başbakan Sooronbay Ceenbekov'un emriyle kazanın nedenlerini incelemek için bir hükûmet komisyonu oluşturuldu .
+Event	T0	açıklama	EVENT	3
+Event	T1	açıklama	EVENT	77
+Event	T2	çelişiyordu	EVENT	90
+Event	T3	araştırmasını	EVENT	219
+Event	T5	soruşturma	EVENT	364
+Event	T6	söyledi	EVENT	418
+Event	T7	talep	EVENT	461
+Event	T8	soruşturma	EVENT	512
+Event	T9	kaza	EVENT	586
+Event	T10	gitti	EVENT	600
+Event	T11	kazanın	EVENT	678
+Event	T12	incelemek	EVENT	698
+Event	T13	oluşturuldu	EVENT	735
+Event	T14	denemesinde	EVENT	30
+Event	T15	kazanın	EVENT	211
+Event	T16	gönderdiğini	EVENT	405
+Event	T4	yardım	EVENT	340
+Relation	T16	T4	CauseEffect	true	gönderdiğini	yardım
+Relation	T4	T16	EffectCause	true	yardım	gönderdiğini
+Relation	T7	T10	CauseEffect	true	talep	gitti
+Relation	T10	T7	EffectCause	true	gitti	talep
+Relation	T12	T13	CauseEffect	true	incelemek	oluşturuldu
+Relation	T13	T12	EffectCause	true	oluşturuldu	incelemek
+Relation	T0	T14	NoRel	true	açıklama	denemesinde
+Relation	T0	T15	NoRel	true	açıklama	kazanın
+Relation	T0	T4	NoRel	true	açıklama	yardım
+Relation	T0	T7	NoRel	true	açıklama	talep
+Relation	T0	T8	NoRel	true	açıklama	soruşturma
+Relation	T1	T11	NoRel	true	açıklama	kazanın
+Relation	T1	T12	NoRel	true	açıklama	incelemek
+Relation	T10	T14	NoRel	true	gitti	denemesinde
+Relation	T11	T4	NoRel	true	kazanın	yardım
+Relation	T14	T13	NoRel	true	denemesinde	oluşturuldu
+Relation	T14	T2	NoRel	true	denemesinde	çelişiyordu
+Relation	T15	T3	NoRel	true	kazanın	araştırmasını
+Relation	T16	T0	NoRel	true	gönderdiğini	açıklama
+Relation	T2	T14	NoRel	true	çelişiyordu	denemesinde
+Relation	T3	T1	NoRel	true	araştırmasını	açıklama
+Relation	T3	T7	NoRel	true	araştırmasını	talep
+Relation	T4	T15	NoRel	true	yardım	kazanın
+Relation	T4	T2	NoRel	true	yardım	çelişiyordu
+Relation	T4	T5	NoRel	true	yardım	soruşturma
+Relation	T5	T15	NoRel	true	soruşturma	kazanın
+Relation	T7	T0	NoRel	true	talep	açıklama
+Relation	T7	T5	NoRel	true	talep	soruşturma
+Relation	T8	T5	NoRel	true	soruşturma	soruşturma
+Relation	T9	T11	NoRel	true	kaza	kazanın
+Relation	T9	T12	NoRel	true	kaza	incelemek
+Relation	T9	T13	NoRel	true	kaza	oluşturuldu

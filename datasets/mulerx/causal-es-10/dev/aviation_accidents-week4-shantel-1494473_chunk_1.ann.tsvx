@@ -1,0 +1,58 @@
+Text	El Instituto de Protección Civil y Administración de Desastres declaró que podrían haber sido hallados los restos del avión desaparecido en el Páramo de los Conejos , un sitio ubicado a unos diez kilómetros del aeropuerto de origen .	Santa Bárbara Airlines se pronunció en dos ocasiones ; en su primer comunicado manifestaron las palabras de condolencia a los familiares de los pasajeros y tripulantes que fallecieron en el trágico accidente y , además , que se ofrecerían en toda disposición para el traslado de los mismos y para cualquier servicio que los mismos requirieran .	En su segundo comunicado hizo alusión al levantamiento de la orden desprendida del Instituto Nacional de Aeronáutica Civil en la cual obligaban a la empresa a cesar las operaciones donde se utilizara el avión tipo Aeroespatiale ATR 42-300 , por lo tanto , todos los vuelos nacionales habían sido cancelados .	Los vuelos internacionales no se interrumpieron y posteriormente la ruta Mérida_-_Maiquetía estaría siendo cubierta con entera normalidad , aunque los vuelos serían redirigidos al Aeropuerto Internacional Juan Pablo Pérez Alfonso en El Vigía , a unos noventa kilómetros de Mérida .	Uno de los pasajeros era el alcalde del municipio Rangel Alexander Quintero ( cuya capital es la ciudad de Mucuchíes , estado Mérida ) y su hijo Eisberth Quintero de 11 años de edad .
+Event	T0	declaró	EVENT	63
+Event	T1	desaparecido	EVENT	124
+Event	T2	pronunció	EVENT	260
+Event	T3	manifestaron	EVENT	313
+Event	T4	fallecieron	EVENT	406
+Event	T5	accidente	EVENT	432
+Event	T6	traslado	EVENT	501
+Event	T10	obligaban	EVENT	713
+Event	T13	vuelos	EVENT	845
+Event	T14	cancelados	EVENT	875
+Event	T15	vuelos	EVENT	892
+Event	T17	cubierta	EVENT	995
+Event	T18	vuelos	EVENT	1039
+Event	T19	redirigidos	EVENT	1053
+Event	T20	hallados	EVENT	94
+Event	T7	comunicado	EVENT	593
+Event	T8	orden	EVENT	640
+Relation	T5	T4	CauseEffect	true	accidente	fallecieron
+Relation	T4	T5	EffectCause	true	fallecieron	accidente
+Relation	T5	T1	CauseEffect	true	accidente	desaparecido
+Relation	T1	T5	EffectCause	true	desaparecido	accidente
+Relation	T1	T20	CauseEffect	true	desaparecido	hallados
+Relation	T20	T1	EffectCause	true	hallados	desaparecido
+Relation	T5	T8	CauseEffect	true	accidente	orden
+Relation	T8	T5	EffectCause	true	orden	accidente
+Relation	T8	T14	CauseEffect	true	orden	cancelados
+Relation	T14	T8	EffectCause	true	cancelados	orden
+Relation	T0	T1	NoRel	true	declaró	desaparecido
+Relation	T0	T19	NoRel	true	declaró	redirigidos
+Relation	T0	T2	NoRel	true	declaró	pronunció
+Relation	T0	T7	NoRel	true	declaró	comunicado
+Relation	T1	T3	NoRel	true	desaparecido	manifestaron
+Relation	T10	T0	NoRel	true	obligaban	declaró
+Relation	T10	T14	NoRel	true	obligaban	cancelados
+Relation	T10	T19	NoRel	true	obligaban	redirigidos
+Relation	T13	T20	NoRel	true	vuelos	hallados
+Relation	T14	T13	NoRel	true	cancelados	vuelos
+Relation	T14	T17	NoRel	true	cancelados	cubierta
+Relation	T14	T19	NoRel	true	cancelados	redirigidos
+Relation	T14	T20	NoRel	true	cancelados	hallados
+Relation	T15	T7	NoRel	true	vuelos	comunicado
+Relation	T17	T7	NoRel	true	cubierta	comunicado
+Relation	T18	T1	NoRel	true	vuelos	desaparecido
+Relation	T19	T2	NoRel	true	redirigidos	pronunció
+Relation	T19	T20	NoRel	true	redirigidos	hallados
+Relation	T19	T3	NoRel	true	redirigidos	manifestaron
+Relation	T2	T10	NoRel	true	pronunció	obligaban
+Relation	T2	T13	NoRel	true	pronunció	vuelos
+Relation	T2	T17	NoRel	true	pronunció	cubierta
+Relation	T4	T3	NoRel	true	fallecieron	manifestaron
+Relation	T4	T8	NoRel	true	fallecieron	orden
+Relation	T5	T18	NoRel	true	accidente	vuelos
+Relation	T6	T13	NoRel	true	traslado	vuelos
+Relation	T7	T0	NoRel	true	comunicado	declaró
+Relation	T7	T4	NoRel	true	comunicado	fallecieron
+Relation	T7	T8	NoRel	true	comunicado	orden
+Relation	T8	T13	NoRel	true	orden	vuelos

@@ -1,0 +1,75 @@
+Text	La pandemia de COVID-19 ha causado la interrupción más significativa en el calendario deportivo mundial desde la Segunda Guerra Mundial .	Las medidas de distanciamiento social y físico , el cierre de empresas y escuelas y la reducción de la vida social causados por la pandemia han alterado muchos aspectos habituales de la vida , incluidos el deporte y la actividad física .	Para salvaguardar la salud de los deportistas y otras personas involucradas , se han cancelado o pospuesto la mayoría de los eventos deportivos importantes a nivel internacional , regional y nacional , desde maratones hasta torneos de fútbol , pasando por campeonatos de atletismo , juegos de baloncesto y eventos de otros deportes .	Muchas competiciones deportivas se han llevado a cabo sin público .	Solo unos pocos países y territorios , como Turkmenistán , Bielorrusia y Nicaragua , han continuado los eventos deportivos profesionales según lo planeado .
+Event	T0	pandemia	EVENT	3
+Event	T1	causado	EVENT	27
+Event	T2	interrupción	EVENT	38
+Event	T3	Guerra	EVENT	121
+Event	T4	medidas	EVENT	142
+Event	T5	distanciamiento	EVENT	153
+Event	T6	cierre	EVENT	190
+Event	T7	reducción	EVENT	225
+Event	T8	causados	EVENT	253
+Event	T9	pandemia	EVENT	269
+Event	T10	alterado	EVENT	282
+Event	T11	cancelado	EVENT	461
+Event	T12	pospuesto	EVENT	473
+Event	T13	eventos	EVENT	501
+Event	T14	maratones	EVENT	584
+Event	T15	torneos	EVENT	600
+Event	T16	pasando	EVENT	620
+Event	T17	campeonatos	EVENT	632
+Event	T18	juegos	EVENT	659
+Event	T19	eventos	EVENT	682
+Event	T20	continuado	EVENT	867
+Event	T21	planeado	EVENT	924
+Relation	T0	T2	CauseEffect	true	pandemia	interrupción
+Relation	T2	T0	EffectCause	true	interrupción	pandemia
+Relation	T1	T0	NoRel	true	causado	pandemia
+Relation	T1	T13	NoRel	true	causado	eventos
+Relation	T1	T20	NoRel	true	causado	continuado
+Relation	T1	T5	NoRel	true	causado	distanciamiento
+Relation	T1	T9	NoRel	true	causado	pandemia
+Relation	T10	T14	NoRel	true	alterado	maratones
+Relation	T11	T1	NoRel	true	cancelado	causado
+Relation	T11	T21	NoRel	true	cancelado	planeado
+Relation	T11	T4	NoRel	true	cancelado	medidas
+Relation	T12	T11	NoRel	true	pospuesto	cancelado
+Relation	T13	T2	NoRel	true	eventos	interrupción
+Relation	T13	T6	NoRel	true	eventos	cierre
+Relation	T14	T12	NoRel	true	maratones	pospuesto
+Relation	T14	T15	NoRel	true	maratones	torneos
+Relation	T15	T11	NoRel	true	torneos	cancelado
+Relation	T15	T18	NoRel	true	torneos	juegos
+Relation	T16	T15	NoRel	true	pasando	torneos
+Relation	T16	T20	NoRel	true	pasando	continuado
+Relation	T16	T9	NoRel	true	pasando	pandemia
+Relation	T17	T10	NoRel	true	campeonatos	alterado
+Relation	T17	T12	NoRel	true	campeonatos	pospuesto
+Relation	T18	T1	NoRel	true	juegos	causado
+Relation	T18	T19	NoRel	true	juegos	eventos
+Relation	T18	T4	NoRel	true	juegos	medidas
+Relation	T18	T6	NoRel	true	juegos	cierre
+Relation	T19	T0	NoRel	true	eventos	pandemia
+Relation	T19	T16	NoRel	true	eventos	pasando
+Relation	T2	T10	NoRel	true	interrupción	alterado
+Relation	T2	T14	NoRel	true	interrupción	maratones
+Relation	T2	T15	NoRel	true	interrupción	torneos
+Relation	T20	T4	NoRel	true	continuado	medidas
+Relation	T20	T7	NoRel	true	continuado	reducción
+Relation	T21	T17	NoRel	true	planeado	campeonatos
+Relation	T21	T18	NoRel	true	planeado	juegos
+Relation	T21	T3	NoRel	true	planeado	Guerra
+Relation	T3	T11	NoRel	true	Guerra	cancelado
+Relation	T3	T13	NoRel	true	Guerra	eventos
+Relation	T4	T15	NoRel	true	medidas	torneos
+Relation	T4	T6	NoRel	true	medidas	cierre
+Relation	T5	T17	NoRel	true	distanciamiento	campeonatos
+Relation	T5	T19	NoRel	true	distanciamiento	eventos
+Relation	T6	T2	NoRel	true	cierre	interrupción
+Relation	T6	T4	NoRel	true	cierre	medidas
+Relation	T6	T5	NoRel	true	cierre	distanciamiento
+Relation	T7	T10	NoRel	true	reducción	alterado
+Relation	T7	T15	NoRel	true	reducción	torneos
+Relation	T7	T20	NoRel	true	reducción	continuado
+Relation	T7	T6	NoRel	true	reducción	cierre
+Relation	T9	T16	NoRel	true	pandemia	pasando
+Relation	T9	T20	NoRel	true	pandemia	continuado

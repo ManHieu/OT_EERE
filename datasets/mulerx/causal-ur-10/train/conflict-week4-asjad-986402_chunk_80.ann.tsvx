@@ -1,0 +1,26 @@
+Text	تصغیر | مغربی اناطولیہ شہروں 1919 میں جل رہے تھے کہ -	میں ترک وفد کی رپورٹ کے مطابق 22 لوزان متعدد ذرائع کے مطابق ، پیچھے ہٹنے والی یونانی فوج نے جنگ کے آخری مرحلے کے دوران اناطولیہ سے بھاگتے ہوئے جھلسا ہوا زمین کی پالیسی پر عمل کیا ۔	مشرق وسطیٰ کے تاریخ دان ، سڈنی نیٹلٹن فشر نے لکھا ہے کہ : " یونانی فوج نے پسپائی میں ایک جلی ہوئی زمین کی پالیسی پر عمل کیا اور اس کے راستے میں غیر محفوظ ترک دیہاتیوں کے خلاف ہر طرح کے غم و غصے کا ارتکاب کیا ۔	" نارمن ایم نائرمک نے نوٹ کیا کہ " یونانی پسپائی مقامی آبادی کے لیے قبضے سے بھی زیادہ تباہ کن تھی " ۔	اس وقت قسطنطنیہ میں امریکی نائب قونصل جیمز لوڈر پارک نے یونانی انخلاء کے فورا بعد تباہ شدہ علاقے کا دورہ کیا ، اور ازمیر کے آس پاس کے شہروں اور قصبوں کی صورتحال کی اطلاع دی ، جیسا کہ منیسا کی آگ ۔
+Event	T0	رپورٹ	EVENT	69
+Event	T1	ہٹنے	EVENT	122
+Event	T2	جنگ	EVENT	146
+Event	T3	بھاگتے	EVENT	185
+Event	T4	پالیسی	EVENT	215
+Event	T5	لکھا	EVENT	280
+Event	T6	پالیسی	EVENT	341
+Event	T7	انخلاء	EVENT	610
+Event	T8	تباہ	EVENT	629
+Event	T9	آگ	EVENT	739
+Relation	T1	T2	NoRel	true	ہٹنے	جنگ
+Relation	T1	T9	NoRel	true	ہٹنے	آگ
+Relation	T2	T8	NoRel	true	جنگ	تباہ
+Relation	T3	T2	NoRel	true	بھاگتے	جنگ
+Relation	T3	T5	NoRel	true	بھاگتے	لکھا
+Relation	T3	T7	NoRel	true	بھاگتے	انخلاء
+Relation	T4	T0	NoRel	true	پالیسی	رپورٹ
+Relation	T5	T7	NoRel	true	لکھا	انخلاء
+Relation	T6	T7	NoRel	true	پالیسی	انخلاء
+Relation	T7	T1	NoRel	true	انخلاء	ہٹنے
+Relation	T7	T6	NoRel	true	انخلاء	پالیسی
+Relation	T8	T3	NoRel	true	تباہ	بھاگتے
+Relation	T8	T7	NoRel	true	تباہ	انخلاء
+Relation	T9	T6	NoRel	true	آگ	پالیسی
+Relation	T9	T7	NoRel	true	آگ	انخلاء

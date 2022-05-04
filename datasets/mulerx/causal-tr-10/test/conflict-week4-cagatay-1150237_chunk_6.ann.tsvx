@@ -1,0 +1,18 @@
+Text	Şehirde görev yapan askerler ise geniş çaplı bir harekâta karşı çıkmalarına rağmen emirlere uyarlar .	4 Nisan gecesi başlayan harekâtta şehir 2 bin askerle kuşatılır .	Dört ev hava saldırısı sonucu vurulduğu sırada şehide yer yer çatışmalar çıkar .	5 Nisan sabahı abluka altındaki şehre giriş çıkışlar tamamen kesilir .	Radyo istasyonunu ele geçiren ABD askerleri halktan evlerinden çıkmamalarını isteyen Arapça bildiriler dağıtır .
+Event	T0	harekâtta	EVENT	126
+Event	T1	kuşatılır	EVENT	156
+Event	T2	vurulduğu	EVENT	198
+Event	T3	çıkar	EVENT	241
+Event	T4	abluka	EVENT	264
+Event	T5	kesilir	EVENT	310
+Event	T6	dağıtır	EVENT	423
+Event	T7	harekâta	EVENT	49
+Event	T8	uyarlar	EVENT	92
+Relation	T8	T0	CauseEffect	true	uyarlar	harekâtta
+Relation	T0	T8	EffectCause	true	harekâtta	uyarlar
+Relation	T1	T4	NoRel	true	kuşatılır	abluka
+Relation	T1	T8	NoRel	true	kuşatılır	uyarlar
+Relation	T3	T7	NoRel	true	çıkar	harekâta
+Relation	T5	T0	NoRel	true	kesilir	harekâtta
+Relation	T5	T7	NoRel	true	kesilir	harekâta
+Relation	T6	T0	NoRel	true	dağıtır	harekâtta

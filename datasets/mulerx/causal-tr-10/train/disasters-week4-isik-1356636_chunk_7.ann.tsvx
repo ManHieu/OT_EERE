@@ -1,0 +1,76 @@
+Text	" Afet yasası " olarak bilinen ve 16 Mayıs 2012 tarihinde kabul edilen 6306 sayılı " Afet Riski Altındaki Alanların Dönüştürülmesi Hakkında Kanun " , 31 Mayıs 2012 tarihinde , 28.309 sayılı Resmî Gazete'de yayımlanarak yürürlüğe girdi .	Kanun ile riskli yapıların bulunduğu arsa ve arazilerdeki iyileştirme , tasfiye ve yenilemelerin usul ve esasları belirlenirken , kanunun uygulama sorumluluğu Çevre_ve Şehircilik Bakanlığı'na verildi .	küçükresim | sağ | İHH İnsani Yardım Vakfı'nın enkazdaki arama kurtarma çalışmaları ( 26 Ekim 2011 ) küçükresim | sağ | Depremden bir hafta sonra afet bölgesi .	küçükresim | sağ | AKUT ekiplerinin arama kurtarma çalışmaları ( 25 Ekim 2011 ) Türk Kızılayı tarafından yapılan açıklamada , bölgedeki kan merkezlerinin yaralılar için gerekli kanı ulaştırma çalışmalarına başladığı ve bölgede arama kurtarma ekibi , iş makinesi ve içme suyu ihtiyacı bulunduğu belirtildi .	Yardım malzemelerinin bölgeye ulaştırılması için tüm hazırlıklar yapıldı .
+Event	T0	girdi	EVENT	229
+Event	T1	iyileştirme	EVENT	295
+Event	T2	tasfiye	EVENT	309
+Event	T3	belirlenirken	EVENT	351
+Event	T4	verildi	EVENT	429
+Event	T5	çalışmaları	EVENT	511
+Event	T6	afet	EVENT	585
+Event	T7	çalışmaları	EVENT	651
+Event	T8	başladığı	EVENT	806
+Event	T9	belirtildi	EVENT	894
+Event	T10	yapıldı	EVENT	972
+Event	T11	edilen	EVENT	64
+Event	T12	Afet yasası	EVENT	2
+Event	T13	yayımlanarak	EVENT	206
+Event	T14	Kanun	EVENT	237
+Event	T15	yenilemelerin	EVENT	320
+Event	T16	Depremden	EVENT	559
+Event	T17	açıklamada	EVENT	713
+Event	T18	ihtiyacı	EVENT	875
+Relation	T12	T11	CauseEffect	true	Afet yasası	edilen
+Relation	T11	T12	EffectCause	true	edilen	Afet yasası
+Relation	T11	T13	CauseEffect	true	edilen	yayımlanarak
+Relation	T13	T11	EffectCause	true	yayımlanarak	edilen
+Relation	T13	T0	CauseEffect	true	yayımlanarak	girdi
+Relation	T0	T13	EffectCause	true	girdi	yayımlanarak
+Relation	T14	T3	CauseEffect	true	Kanun	belirlenirken
+Relation	T3	T14	EffectCause	true	belirlenirken	Kanun
+Relation	T12	T3	CauseEffect	true	Afet yasası	belirlenirken
+Relation	T3	T12	EffectCause	true	belirlenirken	Afet yasası
+Relation	T12	T4	CauseEffect	true	Afet yasası	verildi
+Relation	T4	T12	EffectCause	true	verildi	Afet yasası
+Relation	T18	T17	CauseEffect	true	ihtiyacı	açıklamada
+Relation	T17	T18	EffectCause	true	açıklamada	ihtiyacı
+Relation	T0	T10	NoRel	true	girdi	yapıldı
+Relation	T0	T12	NoRel	true	girdi	Afet yasası
+Relation	T0	T5	NoRel	true	girdi	çalışmaları
+Relation	T1	T11	NoRel	true	iyileştirme	edilen
+Relation	T10	T0	NoRel	true	yapıldı	girdi
+Relation	T10	T13	NoRel	true	yapıldı	yayımlanarak
+Relation	T10	T16	NoRel	true	yapıldı	Depremden
+Relation	T10	T4	NoRel	true	yapıldı	verildi
+Relation	T11	T14	NoRel	true	edilen	Kanun
+Relation	T12	T13	NoRel	true	Afet yasası	yayımlanarak
+Relation	T12	T18	NoRel	true	Afet yasası	ihtiyacı
+Relation	T13	T18	NoRel	true	yayımlanarak	ihtiyacı
+Relation	T13	T8	NoRel	true	yayımlanarak	başladığı
+Relation	T14	T10	NoRel	true	Kanun	yapıldı
+Relation	T14	T18	NoRel	true	Kanun	ihtiyacı
+Relation	T15	T16	NoRel	true	yenilemelerin	Depremden
+Relation	T15	T9	NoRel	true	yenilemelerin	belirtildi
+Relation	T16	T13	NoRel	true	Depremden	yayımlanarak
+Relation	T16	T18	NoRel	true	Depremden	ihtiyacı
+Relation	T16	T4	NoRel	true	Depremden	verildi
+Relation	T16	T6	NoRel	true	Depremden	afet
+Relation	T16	T9	NoRel	true	Depremden	belirtildi
+Relation	T17	T1	NoRel	true	açıklamada	iyileştirme
+Relation	T17	T11	NoRel	true	açıklamada	edilen
+Relation	T17	T14	NoRel	true	açıklamada	Kanun
+Relation	T17	T16	NoRel	true	açıklamada	Depremden
+Relation	T18	T14	NoRel	true	ihtiyacı	Kanun
+Relation	T18	T15	NoRel	true	ihtiyacı	yenilemelerin
+Relation	T18	T6	NoRel	true	ihtiyacı	afet
+Relation	T2	T5	NoRel	true	tasfiye	çalışmaları
+Relation	T2	T9	NoRel	true	tasfiye	belirtildi
+Relation	T3	T10	NoRel	true	belirlenirken	yapıldı
+Relation	T3	T17	NoRel	true	belirlenirken	açıklamada
+Relation	T3	T9	NoRel	true	belirlenirken	belirtildi
+Relation	T4	T0	NoRel	true	verildi	girdi
+Relation	T5	T0	NoRel	true	çalışmaları	girdi
+Relation	T5	T9	NoRel	true	çalışmaları	belirtildi
+Relation	T6	T13	NoRel	true	afet	yayımlanarak
+Relation	T6	T17	NoRel	true	afet	açıklamada
+Relation	T7	T13	NoRel	true	çalışmaları	yayımlanarak
+Relation	T9	T1	NoRel	true	belirtildi	iyileştirme
+Relation	T9	T4	NoRel	true	belirtildi	verildi

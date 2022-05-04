@@ -1,0 +1,47 @@
+Text	Buradan İran’ın merkezi Kazvin üzerine gitmek isteyen Hüsrev Paşa , Dergüzin’e geldi .	Burada toplanan savaş meclisinde , Kazvin üzerine yapılacak harekât görüşüldü .	Mesafenin uzaklığı Safevilerin bütün yol boyunu tahliye ve tahrib ettikleri , iaşe tedariki zorluğu ve bilhassa su_kıtlığı olabileceği gibi sebeplerle ordunun Bağdad üzerine yürümesi kararlaştırıldı .	14 Temmuz’da Nihavend civarındaki Cemhal ovasına gelen Hüsrev Paşa , Luristan hakimi Hüseyin Han’ın 12.000 kişilik bir kuvvetle mevzi alıp bir kısım kuvvetiyle de pusu kurduğu haberini alınca , Anadolu ve Rumeli beylerbeyilerini bir kısım kuvvetle bunların üzerine gönderdi .	Yapılan çetin muharebe sonunda Safaviler mağlup edildi ve Hüseyin Han güçlükle kaçıp kurtuldu .
+Event	T0	geldi	EVENT	79
+Event	T1	görüşüldü	EVENT	155
+Event	T2	tahliye	EVENT	215
+Event	T3	ettikleri	EVENT	233
+Event	T4	kararlaştırıldı	EVENT	350
+Event	T5	alıp	EVENT	502
+Event	T6	alınca	EVENT	553
+Event	T7	gönderdi	EVENT	633
+Event	T8	muharebe	EVENT	658
+Event	T9	edildi	EVENT	692
+Event	T10	kurtuldu	EVENT	729
+Event	T11	toplanan	EVENT	94
+Event	T12	gelen	EVENT	417
+Event	T13	kaçıp	EVENT	723
+Relation	T11	T1	CauseEffect	true	toplanan	görüşüldü
+Relation	T1	T11	EffectCause	true	görüşüldü	toplanan
+Relation	T11	T4	CauseEffect	true	toplanan	kararlaştırıldı
+Relation	T4	T11	EffectCause	true	kararlaştırıldı	toplanan
+Relation	T6	T7	CauseEffect	true	alınca	gönderdi
+Relation	T7	T6	EffectCause	true	gönderdi	alınca
+Relation	T7	T8	CauseEffect	true	gönderdi	muharebe
+Relation	T8	T7	EffectCause	true	muharebe	gönderdi
+Relation	T8	T9	CauseEffect	true	muharebe	edildi
+Relation	T9	T8	EffectCause	true	edildi	muharebe
+Relation	T9	T13	CauseEffect	true	edildi	kaçıp
+Relation	T13	T9	EffectCause	true	kaçıp	edildi
+Relation	T13	T10	CauseEffect	true	kaçıp	kurtuldu
+Relation	T10	T13	EffectCause	true	kurtuldu	kaçıp
+Relation	T0	T12	NoRel	true	geldi	gelen
+Relation	T1	T8	NoRel	true	görüşüldü	muharebe
+Relation	T10	T4	NoRel	true	kurtuldu	kararlaştırıldı
+Relation	T11	T5	NoRel	true	toplanan	alıp
+Relation	T12	T4	NoRel	true	gelen	kararlaştırıldı
+Relation	T13	T11	NoRel	true	kaçıp	toplanan
+Relation	T2	T4	NoRel	true	tahliye	kararlaştırıldı
+Relation	T3	T13	NoRel	true	ettikleri	kaçıp
+Relation	T4	T5	NoRel	true	kararlaştırıldı	alıp
+Relation	T4	T7	NoRel	true	kararlaştırıldı	gönderdi
+Relation	T5	T11	NoRel	true	alıp	toplanan
+Relation	T5	T12	NoRel	true	alıp	gelen
+Relation	T6	T4	NoRel	true	alınca	kararlaştırıldı
+Relation	T7	T0	NoRel	true	gönderdi	geldi
+Relation	T7	T1	NoRel	true	gönderdi	görüşüldü
+Relation	T7	T2	NoRel	true	gönderdi	tahliye
+Relation	T9	T11	NoRel	true	edildi	toplanan
+Relation	T9	T4	NoRel	true	edildi	kararlaştırıldı

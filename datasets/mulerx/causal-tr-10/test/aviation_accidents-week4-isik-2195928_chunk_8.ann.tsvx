@@ -1,0 +1,28 @@
+Text	Kalkış , tırmanış ve uçuş sırasında uçak sistemleri stabil bir şekilde çalışıyordu .	16 Ocak 2017 günü saat 00.41'de , uçak _ KAMUD _ referans noktası üzerinden uçuş seviyesinde Bişkek ATC Bölge Kontrol Merkezinin kontrol sahasına girdi ( Çin'de belirlenmiş ayrılma sistemine göre ) .	Saat 00.51'de mürettebat iniş için irtifaya alçalma izni istedi .	Saat 00.59'da , mürettebat Manas Havalimanı için hava durumu bilgilerini aldı : " Pist görüş mesafesi ; pist eşiğinde 400 m , pist orta noktasında ve pist sonunda 300 m , dikey görüş mesafesi 130_ft " .	Saat 01.01'de mürettebat açıkça belirtilen şu verileri aldı : pistin ortasında pist görüş mesafesi 300 m , dikey görüş mesafesi 150_ft .
+Event	T0	Kalkış	EVENT	0
+Event	T1	uçuş	EVENT	21
+Event	T2	çalışıyordu	EVENT	71
+Event	T3	uçuş	EVENT	161
+Event	T4	girdi	EVENT	231
+Event	T6	iniş	EVENT	310
+Event	T7	istedi	EVENT	342
+Event	T8	aldı	EVENT	424
+Event	T9	aldı	EVENT	609
+Event	T10	tırmanış	EVENT	9
+Relation	T6	T7	CauseEffect	true	iniş	istedi
+Relation	T7	T6	EffectCause	true	istedi	iniş
+Relation	T6	T8	CauseEffect	true	iniş	aldı
+Relation	T8	T6	EffectCause	true	aldı	iniş
+Relation	T6	T9	CauseEffect	true	iniş	aldı
+Relation	T9	T6	EffectCause	true	aldı	iniş
+Relation	T1	T10	NoRel	true	uçuş	tırmanış
+Relation	T1	T2	NoRel	true	uçuş	çalışıyordu
+Relation	T10	T3	NoRel	true	tırmanış	uçuş
+Relation	T10	T4	NoRel	true	tırmanış	girdi
+Relation	T10	T6	NoRel	true	tırmanış	iniş
+Relation	T2	T3	NoRel	true	çalışıyordu	uçuş
+Relation	T4	T2	NoRel	true	girdi	çalışıyordu
+Relation	T6	T0	NoRel	true	iniş	Kalkış
+Relation	T6	T2	NoRel	true	iniş	çalışıyordu
+Relation	T7	T1	NoRel	true	istedi	uçuş
+Relation	T9	T2	NoRel	true	aldı	çalışıyordu

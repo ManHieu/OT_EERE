@@ -272,6 +272,6 @@ def cat_xml_reader(dir_name, file_name, intra=True, inter=False):
 
 
 if __name__ == '__main__':
-    my_dict = tsvx_reader(dir_name="datasets/hievents_v2/processed/", file_name="article-1126.tsvx")
-    with open("article-1126.json", 'w') as f:
+    my_dict = tsvx_reader(dir_name="datasets/mulerx/subevent-en-10/test/", file_name="aviation_accidents-week2-nhung-108257_chunk_80.ann.tsvx")
+    with open("aviation_accidents-week2-nhung-108257_chunk_80.ann.tsvx", 'w') as f:
         json.dump(my_dict,f, indent=6)

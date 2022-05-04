@@ -1,0 +1,36 @@
+Text	Ama daha sonra Asgardlıları bir araya getirdikten sonra Demir Adam ve Bay Fantastik'ten bu yaptıklarının hesabını sorar .	)	Bu arada Demir Adam ve Bay Fantastik , yakaladıkları tasarı karşıtı süper kahramanları " 42 " adı verilen Negatif Bölge'de bulunan bir boyutlar arası hapishaneye göndermektedirler .	Örümcek Adam , bu hapishaneyi ( bazılarının deyişi ile " Marvel'in Guantanamo'su " ) görünce yanlış tarafta olduğunu anlar ve Kaptan'ın tarafına geçmek ister ama Demir Adam tarafından fark edilir .	Örümcek Adam , fikrini değiştirmeyince Demir Adam'ın işe aldığı eski suçlulardan Jester ve Jack O'lantern tarafından yakalanır ve öldüresiye dövülür .
+Event	T0	sorar	EVENT	114
+Event	T1	göndermektedirler	EVENT	286
+Event	T2	geçmek	EVENT	451
+Event	T4	değiştirmeyince	EVENT	527
+Event	T5	yakalanır	EVENT	621
+Event	T6	dövülür	EVENT	645
+Event	T7	getirdikten	EVENT	38
+Event	T8	yakaladıkları	EVENT	163
+Event	T9	anlar	EVENT	423
+Event	T10	ister	EVENT	458
+Event	T3	fark edilir	EVENT	490
+Event	T11	görünce	EVENT	391
+Relation	T11	T9	CauseEffect	true	görünce	anlar
+Relation	T9	T11	EffectCause	true	anlar	görünce
+Relation	T9	T10	CauseEffect	true	anlar	ister
+Relation	T10	T9	EffectCause	true	ister	anlar
+Relation	T4	T5	CauseEffect	true	değiştirmeyince	yakalanır
+Relation	T5	T4	EffectCause	true	yakalanır	değiştirmeyince
+Relation	T4	T6	CauseEffect	true	değiştirmeyince	dövülür
+Relation	T6	T4	EffectCause	true	dövülür	değiştirmeyince
+Relation	T0	T3	NoRel	true	sorar	fark edilir
+Relation	T0	T5	NoRel	true	sorar	yakalanır
+Relation	T10	T11	NoRel	true	ister	görünce
+Relation	T11	T1	NoRel	true	görünce	göndermektedirler
+Relation	T11	T4	NoRel	true	görünce	değiştirmeyince
+Relation	T2	T4	NoRel	true	geçmek	değiştirmeyince
+Relation	T3	T1	NoRel	true	fark edilir	göndermektedirler
+Relation	T4	T1	NoRel	true	değiştirmeyince	göndermektedirler
+Relation	T7	T11	NoRel	true	getirdikten	görünce
+Relation	T7	T6	NoRel	true	getirdikten	dövülür
+Relation	T7	T9	NoRel	true	getirdikten	anlar
+Relation	T8	T10	NoRel	true	yakaladıkları	ister
+Relation	T8	T9	NoRel	true	yakaladıkları	anlar
+Relation	T9	T5	NoRel	true	anlar	yakalanır
+Relation	T9	T7	NoRel	true	anlar	getirdikten

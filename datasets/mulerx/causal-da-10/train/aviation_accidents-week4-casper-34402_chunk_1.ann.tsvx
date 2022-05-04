@@ -1,0 +1,23 @@
+Text	Dette er det højeste indtjeningsbeløb for en politisk dokumentarfilm hidtil .	Sony rapporterede at DVD-udgaven på udgivelsesdagen solgte over to millioner kopier – endnu en rekord for genren .	Filmen omhandler Bush-regeringen og dens handlinger efter terrorangrebet den 11. september 2001 , herunder invasionen af Afghanistan og invasionen og besættelsen af Irak .	Moore beskriver her det venlige forhold mellem Bush-familien og især det saudiarabiske kongehus og Bin Laden familien ( Osama bin Ladens egen familie ) .	_ FAHRENHEIT 9/11 _ er blevet kritiseret for at være utroværdig .
+Event	T0	rapporterede	EVENT	83
+Event	T1	solgte	EVENT	130
+Event	T2	rekord	EVENT	173
+Event	T3	omhandler	EVENT	200
+Event	T4	handlinger	EVENT	234
+Event	T5	terrorangrebet	EVENT	251
+Event	T6	invasionen	EVENT	300
+Event	T7	invasionen	EVENT	329
+Event	T8	besættelsen	EVENT	343
+Event	T9	beskriver	EVENT	371
+Event	T10	kritiseret	EVENT	549
+Relation	T9	T10	CauseEffect	true	beskriver	kritiseret
+Relation	T10	T9	EffectCause	true	kritiseret	beskriver
+Relation	T1	T8	NoRel	true	solgte	besættelsen
+Relation	T10	T7	NoRel	true	kritiseret	invasionen
+Relation	T2	T9	NoRel	true	rekord	beskriver
+Relation	T3	T2	NoRel	true	omhandler	rekord
+Relation	T3	T8	NoRel	true	omhandler	besættelsen
+Relation	T4	T1	NoRel	true	handlinger	solgte
+Relation	T4	T3	NoRel	true	handlinger	omhandler
+Relation	T7	T4	NoRel	true	invasionen	handlinger
+Relation	T8	T2	NoRel	true	besættelsen	rekord

@@ -1,0 +1,98 @@
+Text	Pakistanlı yetkililer tarafından Muhammed'in yakalandığı belirtilen Ravalpindi'de evde yaşayan diğer kişiler ise baskın yapıldığı sırada Muhammed'in evde olmadığını ve başka bir yerde yapılan bir baskın sırasında kendisinin yakalanmış olabileceğini ifade etmişti .	Tutuklanmasının ardından iki gün Pakistan'da tutulan Muhammed , sonradan Afganistan'daki bir CIA gizli hapishanesinde sorgulandı .	Mayıs 2004'te hazırlanan ve Ağustos 2009'da kamuoyuna açıklanan CIA'in sorgu ve gözaltı uygulamalarıyla ilgili raporuna göre Muhammed'e yapılan sorgulamalar sırasında CIA adına çalışan " tecrübeli bir sorgulayıcının " CIA genel müfettişine " sorgulayıcıların Halid Şeyh Muhammed'i , Amerika Birleşik Devletleri'nde herhangi bir şey olursa çocuklarını öldüreceği " tehdidinde bulunduğunu belirtmekteydi .	Ron Suskind'in 2006 tarihli kitabında yer alan ve olay hakkında bilgisi olan bir CIA yöneticisinin ifadesine göre Muhammed bu tehdide " peki , daha iyi bir yerde Allah'a kavuşacaklar " şeklinde bir tepki vermişti .	Üç gün Pakistan'da sorgulanmasının ardından Polonya'da bulunan gizli bir CIA hapishanesine nakledildi .
+Event	T0	yakalandığı	EVENT	45
+Event	T1	yapıldığı	EVENT	120
+Event	T2	baskın	EVENT	196
+Event	T3	yakalanmış	EVENT	224
+Event	T4	etmişti	EVENT	255
+Event	T5	Tutuklanmasının	EVENT	265
+Event	T6	tutulan	EVENT	310
+Event	T7	sorgulandı	EVENT	383
+Event	T8	hazırlanan	EVENT	410
+Event	T9	sorgu	EVENT	467
+Event	T10	gözaltı	EVENT	476
+Event	T11	sorgulamalar	EVENT	540
+Event	T12	öldüreceği	EVENT	747
+Event	T13	tehdidinde	EVENT	760
+Event	T14	belirtmekteydi	EVENT	783
+Event	T15	olay	EVENT	850
+Event	T16	ifadesine	EVENT	899
+Event	T17	tehdide	EVENT	926
+Event	T18	sorgulanmasının	EVENT	1034
+Event	T19	nakledildi	EVENT	1106
+Event	T20	açıklanan	EVENT	450
+Event	T21	uygulamalarıyla	EVENT	484
+Event	T23	çalışan	EVENT	573
+Event	T22	alan	EVENT	842
+Event	T24	vermişti	EVENT	1004
+Event	T25	kavuşacaklar	EVENT	970
+Relation	T5	T7	CauseEffect	true	Tutuklanmasının	sorgulandı
+Relation	T7	T5	EffectCause	true	sorgulandı	Tutuklanmasının
+Relation	T5	T6	CauseEffect	true	Tutuklanmasının	tutulan
+Relation	T6	T5	EffectCause	true	tutulan	Tutuklanmasının
+Relation	T17	T24	CauseEffect	true	tehdide	vermişti
+Relation	T24	T17	EffectCause	true	vermişti	tehdide
+Relation	T5	T19	CauseEffect	true	Tutuklanmasının	nakledildi
+Relation	T19	T5	EffectCause	true	nakledildi	Tutuklanmasının
+Relation	T0	T2	NoRel	true	yakalandığı	baskın
+Relation	T0	T3	NoRel	true	yakalandığı	yakalanmış
+Relation	T1	T10	NoRel	true	yapıldığı	gözaltı
+Relation	T1	T11	NoRel	true	yapıldığı	sorgulamalar
+Relation	T1	T15	NoRel	true	yapıldığı	olay
+Relation	T1	T21	NoRel	true	yapıldığı	uygulamalarıyla
+Relation	T1	T24	NoRel	true	yapıldığı	vermişti
+Relation	T1	T7	NoRel	true	yapıldığı	sorgulandı
+Relation	T10	T14	NoRel	true	gözaltı	belirtmekteydi
+Relation	T12	T1	NoRel	true	öldüreceği	yapıldığı
+Relation	T12	T5	NoRel	true	öldüreceği	Tutuklanmasının
+Relation	T13	T10	NoRel	true	tehdidinde	gözaltı
+Relation	T13	T14	NoRel	true	tehdidinde	belirtmekteydi
+Relation	T13	T25	NoRel	true	tehdidinde	kavuşacaklar
+Relation	T14	T25	NoRel	true	belirtmekteydi	kavuşacaklar
+Relation	T15	T14	NoRel	true	olay	belirtmekteydi
+Relation	T15	T21	NoRel	true	olay	uygulamalarıyla
+Relation	T15	T25	NoRel	true	olay	kavuşacaklar
+Relation	T15	T7	NoRel	true	olay	sorgulandı
+Relation	T15	T9	NoRel	true	olay	sorgu
+Relation	T16	T8	NoRel	true	ifadesine	hazırlanan
+Relation	T17	T12	NoRel	true	tehdide	öldüreceği
+Relation	T17	T18	NoRel	true	tehdide	sorgulanmasının
+Relation	T18	T10	NoRel	true	sorgulanmasının	gözaltı
+Relation	T19	T2	NoRel	true	nakledildi	baskın
+Relation	T2	T22	NoRel	true	baskın	alan
+Relation	T2	T5	NoRel	true	baskın	Tutuklanmasının
+Relation	T2	T6	NoRel	true	baskın	tutulan
+Relation	T2	T8	NoRel	true	baskın	hazırlanan
+Relation	T20	T1	NoRel	true	açıklanan	yapıldığı
+Relation	T20	T15	NoRel	true	açıklanan	olay
+Relation	T20	T18	NoRel	true	açıklanan	sorgulanmasının
+Relation	T20	T19	NoRel	true	açıklanan	nakledildi
+Relation	T20	T24	NoRel	true	açıklanan	vermişti
+Relation	T20	T9	NoRel	true	açıklanan	sorgu
+Relation	T22	T12	NoRel	true	alan	öldüreceği
+Relation	T23	T16	NoRel	true	çalışan	ifadesine
+Relation	T24	T15	NoRel	true	vermişti	olay
+Relation	T24	T19	NoRel	true	vermişti	nakledildi
+Relation	T24	T2	NoRel	true	vermişti	baskın
+Relation	T25	T12	NoRel	true	kavuşacaklar	öldüreceği
+Relation	T25	T15	NoRel	true	kavuşacaklar	olay
+Relation	T25	T19	NoRel	true	kavuşacaklar	nakledildi
+Relation	T25	T2	NoRel	true	kavuşacaklar	baskın
+Relation	T25	T21	NoRel	true	kavuşacaklar	uygulamalarıyla
+Relation	T3	T17	NoRel	true	yakalanmış	tehdide
+Relation	T3	T7	NoRel	true	yakalanmış	sorgulandı
+Relation	T3	T9	NoRel	true	yakalanmış	sorgu
+Relation	T4	T12	NoRel	true	etmişti	öldüreceği
+Relation	T4	T17	NoRel	true	etmişti	tehdide
+Relation	T4	T20	NoRel	true	etmişti	açıklanan
+Relation	T4	T8	NoRel	true	etmişti	hazırlanan
+Relation	T5	T18	NoRel	true	Tutuklanmasının	sorgulanmasının
+Relation	T5	T2	NoRel	true	Tutuklanmasının	baskın
+Relation	T6	T14	NoRel	true	tutulan	belirtmekteydi
+Relation	T7	T13	NoRel	true	sorgulandı	tehdidinde
+Relation	T7	T23	NoRel	true	sorgulandı	çalışan
+Relation	T8	T15	NoRel	true	hazırlanan	olay
+Relation	T8	T2	NoRel	true	hazırlanan	baskın
+Relation	T9	T10	NoRel	true	sorgu	gözaltı
+Relation	T9	T13	NoRel	true	sorgu	tehdidinde
+Relation	T9	T4	NoRel	true	sorgu	etmişti
+Relation	T9	T5	NoRel	true	sorgu	Tutuklanmasının

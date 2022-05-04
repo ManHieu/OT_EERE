@@ -1,0 +1,83 @@
+Text	Hensigten var at centralisere ledelsen af samtlige statens materielle anliggender , hvilket medførte , at man nedlagde Kommercekollegiet og andre hidtil selvstændige institutioner inden for finansstyrelsen , ligesom Finanskollegiet overtog forskellige forretninger , dels af finansiel natur , dels af anden art , som hidtil havde været administreret af kancellierne .	Kollegiet lededes af 4 deputerede og var organiseret i 3 afdelinger ( danske , norske og tyske kammer ) .	Efter Struensees fald i 1772 ændredes Finanskollegiet hurtigt ; forskellige administrationsgrene blev snart efter udskilte fra Kollegiets bestyrelse , og ved Forordningen af 14. januar 1773 gennemførtes en fuldstændig omorganisation .	Herefter oprettede man ved siden af Finanskollegiet følgende 4 institutioner : et rentekammer , et toldkammer , et økonomi- og kommercekollegium og et bjergværks-direktorium , idet forretningerne fordeltes således , at Finanskollegiet kun fik ledelsen af penge- , bank- og møntvæsenet .	Dette kollegium , der var sideordnet med de andre nysnævnte 4 afdelinger , og bestyredes af de deputerede fra Rentekammeret og Toldkammeret , skiftede ved resolution af 2. juni 1784 navn og kaldtes derefter for Finanskassedirektionen .
+Event	T0	medførte	EVENT	92
+Event	T1	nedlagde	EVENT	110
+Event	T2	overtog	EVENT	232
+Event	T3	administreret	EVENT	336
+Event	T4	lededes	EVENT	378
+Event	T5	fald	EVENT	491
+Event	T6	ændredes	EVENT	503
+Event	T7	udskilte	EVENT	588
+Event	T8	gennemførtes	EVENT	664
+Event	T9	omorganisation	EVENT	692
+Event	T10	oprettede	EVENT	718
+Event	T11	fordeltes	EVENT	905
+Event	T12	skiftede	EVENT	1138
+Event	T13	resolution	EVENT	1151
+Event	T14	kaldtes	EVENT	1186
+Event	T15	centralisere	EVENT	17
+Event	T16	Hensigten	EVENT	0
+Event	T17	organiseret	EVENT	409
+Event	T18	Forordningen	EVENT	632
+Event	T19	ledelsen	EVENT	952
+Event	T20	sideordnet	EVENT	1022
+Event	T21	bestyredes	EVENT	1074
+Relation	T15	T1	CauseEffect	true	centralisere	nedlagde
+Relation	T1	T15	EffectCause	true	nedlagde	centralisere
+Relation	T15	T2	CauseEffect	true	centralisere	overtog
+Relation	T2	T15	EffectCause	true	overtog	centralisere
+Relation	T18	T9	CauseEffect	true	Forordningen	omorganisation
+Relation	T9	T18	EffectCause	true	omorganisation	Forordningen
+Relation	T5	T6	CauseEffect	true	fald	ændredes
+Relation	T6	T5	EffectCause	true	ændredes	fald
+Relation	T11	T19	CauseEffect	true	fordeltes	ledelsen
+Relation	T19	T11	EffectCause	true	ledelsen	fordeltes
+Relation	T19	T10	CauseEffect	true	ledelsen	oprettede
+Relation	T10	T19	EffectCause	true	oprettede	ledelsen
+Relation	T0	T5	NoRel	true	medførte	fald
+Relation	T1	T16	NoRel	true	nedlagde	Hensigten
+Relation	T10	T11	NoRel	true	oprettede	fordeltes
+Relation	T10	T6	NoRel	true	oprettede	ændredes
+Relation	T11	T5	NoRel	true	fordeltes	fald
+Relation	T14	T13	NoRel	true	kaldtes	resolution
+Relation	T14	T15	NoRel	true	kaldtes	centralisere
+Relation	T14	T19	NoRel	true	kaldtes	ledelsen
+Relation	T14	T4	NoRel	true	kaldtes	lededes
+Relation	T15	T20	NoRel	true	centralisere	sideordnet
+Relation	T15	T21	NoRel	true	centralisere	bestyredes
+Relation	T16	T11	NoRel	true	Hensigten	fordeltes
+Relation	T16	T18	NoRel	true	Hensigten	Forordningen
+Relation	T16	T3	NoRel	true	Hensigten	administreret
+Relation	T16	T6	NoRel	true	Hensigten	ændredes
+Relation	T17	T1	NoRel	true	organiseret	nedlagde
+Relation	T17	T15	NoRel	true	organiseret	centralisere
+Relation	T17	T16	NoRel	true	organiseret	Hensigten
+Relation	T17	T21	NoRel	true	organiseret	bestyredes
+Relation	T18	T10	NoRel	true	Forordningen	oprettede
+Relation	T18	T11	NoRel	true	Forordningen	fordeltes
+Relation	T18	T14	NoRel	true	Forordningen	kaldtes
+Relation	T18	T17	NoRel	true	Forordningen	organiseret
+Relation	T18	T5	NoRel	true	Forordningen	fald
+Relation	T2	T21	NoRel	true	overtog	bestyredes
+Relation	T20	T0	NoRel	true	sideordnet	medførte
+Relation	T20	T10	NoRel	true	sideordnet	oprettede
+Relation	T20	T13	NoRel	true	sideordnet	resolution
+Relation	T20	T15	NoRel	true	sideordnet	centralisere
+Relation	T20	T2	NoRel	true	sideordnet	overtog
+Relation	T21	T0	NoRel	true	bestyredes	medførte
+Relation	T21	T10	NoRel	true	bestyredes	oprettede
+Relation	T21	T15	NoRel	true	bestyredes	centralisere
+Relation	T21	T4	NoRel	true	bestyredes	lededes
+Relation	T3	T2	NoRel	true	administreret	overtog
+Relation	T4	T11	NoRel	true	lededes	fordeltes
+Relation	T4	T2	NoRel	true	lededes	overtog
+Relation	T5	T7	NoRel	true	fald	udskilte
+Relation	T6	T16	NoRel	true	ændredes	Hensigten
+Relation	T6	T4	NoRel	true	ændredes	lededes
+Relation	T6	T7	NoRel	true	ændredes	udskilte
+Relation	T7	T10	NoRel	true	udskilte	oprettede
+Relation	T7	T12	NoRel	true	udskilte	skiftede
+Relation	T8	T14	NoRel	true	gennemførtes	kaldtes
+Relation	T8	T16	NoRel	true	gennemførtes	Hensigten
+Relation	T8	T2	NoRel	true	gennemførtes	overtog
+Relation	T8	T5	NoRel	true	gennemførtes	fald
+Relation	T9	T15	NoRel	true	omorganisation	centralisere

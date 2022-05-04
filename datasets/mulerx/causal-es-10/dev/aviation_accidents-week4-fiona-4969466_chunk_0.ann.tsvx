@@ -1,0 +1,56 @@
+Text	El vUELO 277 DE IRAN AIR fue un servicio doméstico de pasajeros programado desde Teherán a Urmía , Irán , que el domingo 9 de enero de 2011 se estrelló después de abortar su aproximación al aeropuerto de Urmía con mal tiempo .	78 de las 105 personas a bordo murieron .	La investigación oficial concluyó que las condiciones de engelamiento y el manejo incorrecto del motor por parte de la tripulación provocaron un doble apagado del motor , pérdida de altitud e impacto con el suelo .	El avión implicado en fue un Boeing 727-286 construido en 1974 y registrado como EP-IRP .	El avión estuvo parado mucho tiempo durante su vida operativa .
+Event	T0	programado	EVENT	64
+Event	T1	abortar	EVENT	163
+Event	T2	aproximación	EVENT	174
+Event	T3	murieron	EVENT	258
+Event	T4	investigación	EVENT	272
+Event	T5	concluyó	EVENT	294
+Event	T6	engelamiento	EVENT	326
+Event	T7	manejo	EVENT	344
+Event	T8	provocaron	EVENT	400
+Event	T9	apagado	EVENT	420
+Event	T10	pérdida	EVENT	440
+Event	T11	impacto	EVENT	461
+Event	T12	implicado	EVENT	493
+Event	T13	construido	EVENT	528
+Event	T14	registrado	EVENT	549
+Event	T15	parado	EVENT	590
+Event	T16	estrelló	EVENT	143
+Relation	T16	T3	CauseEffect	true	estrelló	murieron
+Relation	T3	T16	EffectCause	true	murieron	estrelló
+Relation	T6	T11	CauseEffect	true	engelamiento	impacto
+Relation	T11	T6	EffectCause	true	impacto	engelamiento
+Relation	T7	T11	CauseEffect	true	manejo	impacto
+Relation	T11	T7	EffectCause	true	impacto	manejo
+Relation	T9	T10	CauseEffect	true	apagado	pérdida
+Relation	T10	T9	EffectCause	true	pérdida	apagado
+Relation	T10	T11	CauseEffect	true	pérdida	impacto
+Relation	T11	T10	EffectCause	true	impacto	pérdida
+Relation	T0	T5	NoRel	true	programado	concluyó
+Relation	T1	T7	NoRel	true	abortar	manejo
+Relation	T12	T4	NoRel	true	implicado	investigación
+Relation	T12	T8	NoRel	true	implicado	provocaron
+Relation	T13	T5	NoRel	true	construido	concluyó
+Relation	T13	T7	NoRel	true	construido	manejo
+Relation	T14	T1	NoRel	true	registrado	abortar
+Relation	T14	T9	NoRel	true	registrado	apagado
+Relation	T15	T11	NoRel	true	parado	impacto
+Relation	T15	T14	NoRel	true	parado	registrado
+Relation	T15	T8	NoRel	true	parado	provocaron
+Relation	T16	T11	NoRel	true	estrelló	impacto
+Relation	T16	T13	NoRel	true	estrelló	construido
+Relation	T2	T7	NoRel	true	aproximación	manejo
+Relation	T3	T13	NoRel	true	murieron	construido
+Relation	T5	T12	NoRel	true	concluyó	implicado
+Relation	T5	T8	NoRel	true	concluyó	provocaron
+Relation	T6	T13	NoRel	true	engelamiento	construido
+Relation	T6	T15	NoRel	true	engelamiento	parado
+Relation	T6	T2	NoRel	true	engelamiento	aproximación
+Relation	T6	T9	NoRel	true	engelamiento	apagado
+Relation	T7	T13	NoRel	true	manejo	construido
+Relation	T7	T15	NoRel	true	manejo	parado
+Relation	T7	T6	NoRel	true	manejo	engelamiento
+Relation	T7	T9	NoRel	true	manejo	apagado
+Relation	T9	T12	NoRel	true	apagado	implicado
+Relation	T9	T2	NoRel	true	apagado	aproximación
+Relation	T9	T5	NoRel	true	apagado	concluyó

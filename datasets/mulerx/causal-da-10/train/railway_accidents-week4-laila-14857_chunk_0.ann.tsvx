@@ -1,0 +1,59 @@
+Text	Ved LYNTOGSULYKKEN den 10. august 1967 , kl. ca. 10.10 , blev det standsede lyntog _ Sydvestjyden _ påkørt bagfra med 70-80 km/t af lyntog _ Nordjyden _ , bl.a. på grund af fejlfortolkning af meldinger .	Ulykken skete ca. 4 km øst for Odense station på dæmningen øst for underføringen af Nyborgvej .	På grund af det standsede lyntog _ Sydvestjyden _ viste det foregående signal " stop " for lyntog _ Nordjyden _ .	_ Nordjydens _ lokomotivfører fik af fjernstyringscentralen i Odense telefonisk tilladelse til at passere signalet .	Personalet i fjernstyringscentralen undlod at benytte den såkaldte togtidsskriver , der ville have afsløret , at årsagen til at signalet viste " stop " , kunne være det holdende _ Sydvestjyden _.
+Event	T0	lyntog	EVENT	76
+Event	T1	påkørt	EVENT	100
+Event	T2	lyntog	EVENT	132
+Event	T3	fejlfortolkning	EVENT	173
+Event	T4	meldinger	EVENT	192
+Event	T5	skete	EVENT	212
+Event	T7	viste	EVENT	350
+Event	T8	signal	EVENT	371
+Event	T9	lyntog	EVENT	391
+Event	T10	fik	EVENT	444
+Event	T11	signalet	EVENT	520
+Event	T12	undlod	EVENT	567
+Event	T13	benytte	EVENT	577
+Event	T14	afsløret	EVENT	630
+Event	T15	viste	EVENT	668
+Event	T16	LYNTOGSULYKKEN	EVENT	4
+Event	T6	standsede	EVENT	316
+Event	T17	tilladelse	EVENT	494
+Event	T18	Ulykken	EVENT	204
+Relation	T12	T16	CauseEffect	true	undlod	LYNTOGSULYKKEN
+Relation	T16	T12	EffectCause	true	LYNTOGSULYKKEN	undlod
+Relation	T12	T10	CauseEffect	true	undlod	fik
+Relation	T10	T12	EffectCause	true	fik	undlod
+Relation	T10	T16	CauseEffect	true	fik	LYNTOGSULYKKEN
+Relation	T16	T10	EffectCause	true	LYNTOGSULYKKEN	fik
+Relation	T12	T18	CauseEffect	true	undlod	Ulykken
+Relation	T18	T12	EffectCause	true	Ulykken	undlod
+Relation	T10	T18	CauseEffect	true	fik	Ulykken
+Relation	T18	T10	EffectCause	true	Ulykken	fik
+Relation	T0	T18	NoRel	true	lyntog	Ulykken
+Relation	T0	T2	NoRel	true	lyntog	lyntog
+Relation	T0	T5	NoRel	true	lyntog	skete
+Relation	T0	T7	NoRel	true	lyntog	viste
+Relation	T1	T17	NoRel	true	påkørt	tilladelse
+Relation	T1	T18	NoRel	true	påkørt	Ulykken
+Relation	T11	T15	NoRel	true	signalet	viste
+Relation	T13	T14	NoRel	true	benytte	afsløret
+Relation	T13	T9	NoRel	true	benytte	lyntog
+Relation	T14	T18	NoRel	true	afsløret	Ulykken
+Relation	T14	T9	NoRel	true	afsløret	lyntog
+Relation	T15	T0	NoRel	true	viste	lyntog
+Relation	T15	T12	NoRel	true	viste	undlod
+Relation	T15	T13	NoRel	true	viste	benytte
+Relation	T15	T4	NoRel	true	viste	meldinger
+Relation	T16	T8	NoRel	true	LYNTOGSULYKKEN	signal
+Relation	T17	T16	NoRel	true	tilladelse	LYNTOGSULYKKEN
+Relation	T17	T9	NoRel	true	tilladelse	lyntog
+Relation	T18	T0	NoRel	true	Ulykken	lyntog
+Relation	T18	T1	NoRel	true	Ulykken	påkørt
+Relation	T2	T10	NoRel	true	lyntog	fik
+Relation	T2	T18	NoRel	true	lyntog	Ulykken
+Relation	T3	T2	NoRel	true	fejlfortolkning	lyntog
+Relation	T7	T1	NoRel	true	viste	påkørt
+Relation	T7	T11	NoRel	true	viste	signalet
+Relation	T8	T13	NoRel	true	signal	benytte
+Relation	T8	T17	NoRel	true	signal	tilladelse
+Relation	T9	T1	NoRel	true	lyntog	påkørt
+Relation	T9	T4	NoRel	true	lyntog	meldinger

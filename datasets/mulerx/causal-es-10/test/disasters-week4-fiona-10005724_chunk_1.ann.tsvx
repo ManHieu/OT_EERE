@@ -1,0 +1,106 @@
+Text	- Agosto de 2021 , estalló el incendio de la montaña Dokan en el lugar llamado bosque “ Abuskikin ” en el municipio de White Water en el estado de Tebessa .	- El 9 de agosto de 2021 , se produjeron múltiples incendios simultáneos en Tizi Ouzou , con seis muertes registradas en su primer día .	Un gran número de ciudadanos del municipio de Arbaa Nath Irathan , una de las zonas afectadas por los incendios que estallaron en el estado de Provincia de Tizi Uzu , quemaron a una persona que sospechaban que había incendiado los bosques después de que lo arrestaran .	Unas horas después parecía que un músico llamado Jamal Ben Ismail de Miliana , de 38 años , viajó a la zona afectada para brindar asistencia , y los activistas circularon sus declaraciones pidiendo a las personas que mostraran fuerza y coraje y se unieran a la región de Tizi Ouzou para brindar Asistencia en la extinción de incendios .	El Ministerio de Justicia argelino dijo , en un comunicado , que la Fiscalía ordenó la apertura de una investigación sobre las circunstancias del asesinato del joven Jamal Ben Ismail .
+Event	T0	estalló	EVENT	19
+Event	T1	incendio	EVENT	30
+Event	T2	produjeron	EVENT	187
+Event	T3	registradas	EVENT	263
+Event	T4	afectadas	EVENT	378
+Event	T5	incendios	EVENT	396
+Event	T6	estallaron	EVENT	410
+Event	T7	quemaron	EVENT	461
+Event	T8	sospechaban	EVENT	488
+Event	T9	incendiado	EVENT	510
+Event	T10	arrestaran	EVENT	551
+Event	T11	parecía	EVENT	583
+Event	T12	viajó	EVENT	656
+Event	T13	afectada	EVENT	672
+Event	T14	asistencia	EVENT	694
+Event	T15	circularon	EVENT	724
+Event	T16	pidiendo	EVENT	753
+Event	T17	unieran	EVENT	812
+Event	T18	extinción	EVENT	876
+Event	T19	incendios	EVENT	889
+Event	T20	dijo	EVENT	936
+Event	T21	comunicado	EVENT	949
+Event	T22	ordenó	EVENT	978
+Event	T23	apertura	EVENT	988
+Event	T24	investigación	EVENT	1004
+Event	T25	asesinato	EVENT	1047
+Relation	T22	T24	CauseEffect	true	ordenó	investigación
+Relation	T24	T22	EffectCause	true	investigación	ordenó
+Relation	T0	T1	NoRel	true	estalló	incendio
+Relation	T0	T14	NoRel	true	estalló	asistencia
+Relation	T0	T9	NoRel	true	estalló	incendiado
+Relation	T10	T23	NoRel	true	arrestaran	apertura
+Relation	T11	T14	NoRel	true	parecía	asistencia
+Relation	T11	T16	NoRel	true	parecía	pidiendo
+Relation	T11	T5	NoRel	true	parecía	incendios
+Relation	T12	T18	NoRel	true	viajó	extinción
+Relation	T12	T19	NoRel	true	viajó	incendios
+Relation	T12	T4	NoRel	true	viajó	afectadas
+Relation	T12	T5	NoRel	true	viajó	incendios
+Relation	T13	T23	NoRel	true	afectada	apertura
+Relation	T13	T3	NoRel	true	afectada	registradas
+Relation	T14	T18	NoRel	true	asistencia	extinción
+Relation	T14	T2	NoRel	true	asistencia	produjeron
+Relation	T15	T0	NoRel	true	circularon	estalló
+Relation	T16	T10	NoRel	true	pidiendo	arrestaran
+Relation	T16	T22	NoRel	true	pidiendo	ordenó
+Relation	T16	T6	NoRel	true	pidiendo	estallaron
+Relation	T16	T7	NoRel	true	pidiendo	quemaron
+Relation	T17	T12	NoRel	true	unieran	viajó
+Relation	T17	T3	NoRel	true	unieran	registradas
+Relation	T18	T10	NoRel	true	extinción	arrestaran
+Relation	T18	T24	NoRel	true	extinción	investigación
+Relation	T19	T1	NoRel	true	incendios	incendio
+Relation	T19	T12	NoRel	true	incendios	viajó
+Relation	T19	T17	NoRel	true	incendios	unieran
+Relation	T19	T18	NoRel	true	incendios	extinción
+Relation	T19	T21	NoRel	true	incendios	comunicado
+Relation	T19	T23	NoRel	true	incendios	apertura
+Relation	T2	T11	NoRel	true	produjeron	parecía
+Relation	T2	T16	NoRel	true	produjeron	pidiendo
+Relation	T2	T19	NoRel	true	produjeron	incendios
+Relation	T2	T6	NoRel	true	produjeron	estallaron
+Relation	T20	T1	NoRel	true	dijo	incendio
+Relation	T20	T14	NoRel	true	dijo	asistencia
+Relation	T20	T21	NoRel	true	dijo	comunicado
+Relation	T20	T3	NoRel	true	dijo	registradas
+Relation	T21	T13	NoRel	true	comunicado	afectada
+Relation	T21	T4	NoRel	true	comunicado	afectadas
+Relation	T22	T0	NoRel	true	ordenó	estalló
+Relation	T22	T12	NoRel	true	ordenó	viajó
+Relation	T22	T18	NoRel	true	ordenó	extinción
+Relation	T22	T20	NoRel	true	ordenó	dijo
+Relation	T22	T4	NoRel	true	ordenó	afectadas
+Relation	T22	T7	NoRel	true	ordenó	quemaron
+Relation	T22	T9	NoRel	true	ordenó	incendiado
+Relation	T23	T16	NoRel	true	apertura	pidiendo
+Relation	T23	T17	NoRel	true	apertura	unieran
+Relation	T23	T22	NoRel	true	apertura	ordenó
+Relation	T24	T13	NoRel	true	investigación	afectada
+Relation	T24	T14	NoRel	true	investigación	asistencia
+Relation	T24	T3	NoRel	true	investigación	registradas
+Relation	T24	T8	NoRel	true	investigación	sospechaban
+Relation	T25	T0	NoRel	true	asesinato	estalló
+Relation	T25	T12	NoRel	true	asesinato	viajó
+Relation	T25	T18	NoRel	true	asesinato	extinción
+Relation	T3	T10	NoRel	true	registradas	arrestaran
+Relation	T3	T15	NoRel	true	registradas	circularon
+Relation	T3	T16	NoRel	true	registradas	pidiendo
+Relation	T3	T19	NoRel	true	registradas	incendios
+Relation	T3	T6	NoRel	true	registradas	estallaron
+Relation	T4	T1	NoRel	true	afectadas	incendio
+Relation	T4	T17	NoRel	true	afectadas	unieran
+Relation	T4	T3	NoRel	true	afectadas	registradas
+Relation	T5	T20	NoRel	true	incendios	dijo
+Relation	T5	T24	NoRel	true	incendios	investigación
+Relation	T6	T1	NoRel	true	estallaron	incendio
+Relation	T6	T11	NoRel	true	estallaron	parecía
+Relation	T7	T1	NoRel	true	quemaron	incendio
+Relation	T7	T15	NoRel	true	quemaron	circularon
+Relation	T8	T15	NoRel	true	sospechaban	circularon
+Relation	T8	T21	NoRel	true	sospechaban	comunicado
+Relation	T8	T22	NoRel	true	sospechaban	ordenó
+Relation	T8	T3	NoRel	true	sospechaban	registradas
+Relation	T8	T6	NoRel	true	sospechaban	estallaron
+Relation	T9	T4	NoRel	true	incendiado	afectadas

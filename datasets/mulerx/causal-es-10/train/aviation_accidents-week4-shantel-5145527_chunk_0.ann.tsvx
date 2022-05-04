@@ -1,0 +1,46 @@
+Text	El 22 de noviembre de 2003 , poco después de despegar de Bagdad , Irak , un Airbus A300B4-200F carguero , registrado OO-DLL y propiedad de European Air Transport fue golpeado en la punta del ala izquierda por un misil tierra-aire durante un vuelo programado a Muharraq .	El daño sufrido por el ala resultó en un incendio y en la pérdida completa de los sistemas hidráulicos .	Al regresar a Bagdad , la tripulación de tres personas realizó un aterrizaje sin más daños del A300 , utilizando el empuje diferencial de los motores como la única manera posible de controlar la aeronave .	Esto resultó en una velocidad de aterrizaje mayor a la segura , haciendo que se saliera de la pista hacia un terreno no preparado .	La tripulación constaba de tres personas : el capitán Eric Gennotte y el primer oficial Steeve Michielsen , ambos belgas , y el ingeniero de vuelo escocés Mario Rofail .
+Event	T0	despegar	EVENT	45
+Event	T1	registrado	EVENT	106
+Event	T2	golpeado	EVENT	166
+Event	T6	incendio	EVENT	312
+Event	T7	regresar	EVENT	379
+Event	T8	realizó	EVENT	431
+Event	T9	aterrizaje	EVENT	442
+Event	T10	daños	EVENT	461
+Event	T11	utilizando	EVENT	478
+Event	T13	resultó	EVENT	587
+Event	T14	aterrizaje	EVENT	615
+Event	T15	haciendo	EVENT	646
+Event	T16	saliera	EVENT	662
+Event	T17	constaba	EVENT	729
+Event	T3	vuelo	EVENT	241
+Event	T4	daño	EVENT	274
+Relation	T4	T6	CauseEffect	true	daño	incendio
+Relation	T6	T4	EffectCause	true	incendio	daño
+Relation	T0	T16	NoRel	true	despegar	saliera
+Relation	T0	T6	NoRel	true	despegar	incendio
+Relation	T0	T9	NoRel	true	despegar	aterrizaje
+Relation	T1	T13	NoRel	true	registrado	resultó
+Relation	T1	T8	NoRel	true	registrado	realizó
+Relation	T10	T6	NoRel	true	daños	incendio
+Relation	T14	T17	NoRel	true	aterrizaje	constaba
+Relation	T15	T0	NoRel	true	haciendo	despegar
+Relation	T15	T7	NoRel	true	haciendo	regresar
+Relation	T15	T8	NoRel	true	haciendo	realizó
+Relation	T16	T6	NoRel	true	saliera	incendio
+Relation	T17	T0	NoRel	true	constaba	despegar
+Relation	T17	T6	NoRel	true	constaba	incendio
+Relation	T17	T9	NoRel	true	constaba	aterrizaje
+Relation	T2	T10	NoRel	true	golpeado	daños
+Relation	T2	T16	NoRel	true	golpeado	saliera
+Relation	T2	T4	NoRel	true	golpeado	daño
+Relation	T3	T13	NoRel	true	vuelo	resultó
+Relation	T4	T13	NoRel	true	daño	resultó
+Relation	T4	T15	NoRel	true	daño	haciendo
+Relation	T4	T9	NoRel	true	daño	aterrizaje
+Relation	T6	T8	NoRel	true	incendio	realizó
+Relation	T7	T0	NoRel	true	regresar	despegar
+Relation	T7	T11	NoRel	true	regresar	utilizando
+Relation	T8	T11	NoRel	true	realizó	utilizando
+Relation	T8	T4	NoRel	true	realizó	daño
+Relation	T9	T1	NoRel	true	aterrizaje	registrado

@@ -1,0 +1,31 @@
+Text	تصغیر | 240x240 پکسل | یونانی لیتھوگراف جس میں ساکاریہ کی جنگ کی عکاسی کی گئی ہے ۔ کاتہیا - اسکیشیر کی جنگ میں اسمت_انو کے تحت ترک فوجیوں کی پسپائی کے بعد یونانی فوج انقرہ کے مغرب میں ۔	قسطنطنیہ کی جنگ کی فریاد " انگیرا کے لیے " تھی اور برطانوی افسران کو متوقع طور پر کمال شہر میں فتح کے عشائیے کے لیے مدعو کیا گیا تھا ۔	یہ تصور کیا گیا تھا کہ ترک انقلابی ، جنہوں نے مسلسل گھیراؤ سے گریز کیا تھا ، اپنے دارالحکومت کے دفاع میں جنگ کی طرف مائل ہوں گے اور شکست کی جنگ میں تباہ ہو جائیں گے ۔	سوویت مدد کے باوجود ، سپلائی کم تھی کیونکہ ترک فوج یونانیوں سے ملنے کے لیے تیار تھی ۔	پرائیویٹ رائفلوں ، بندوقوں اور گولہ بارود کے مالکان کو انہیں فوج کے حوالے کرنا پڑتا تھا اور ہر گھر کو ایک جوڑا کپڑے اور سینڈل مہیا کرنا ہوتا تھا ۔
+Event	T0	جنگ	EVENT	58
+Event	T1	عکاسی	EVENT	65
+Event	T2	جنگ	EVENT	103
+Event	T3	پسپائی	EVENT	141
+Event	T4	جنگ	EVENT	198
+Event	T5	فریاد	EVENT	205
+Event	T6	فتح	EVENT	281
+Event	T7	گھیراؤ	EVENT	373
+Event	T8	جنگ	EVENT	426
+Event	T9	شکست	EVENT	453
+Event	T10	جنگ	EVENT	461
+Event	T11	تباہ	EVENT	469
+Event	T12	مدد	EVENT	494
+Event	T13	ملنے	EVENT	551
+Relation	T10	T13	NoRel	true	جنگ	ملنے
+Relation	T11	T10	NoRel	true	تباہ	جنگ
+Relation	T12	T1	NoRel	true	مدد	عکاسی
+Relation	T12	T6	NoRel	true	مدد	فتح
+Relation	T13	T0	NoRel	true	ملنے	جنگ
+Relation	T13	T3	NoRel	true	ملنے	پسپائی
+Relation	T2	T5	NoRel	true	جنگ	فریاد
+Relation	T3	T6	NoRel	true	پسپائی	فتح
+Relation	T5	T11	NoRel	true	فریاد	تباہ
+Relation	T5	T13	NoRel	true	فریاد	ملنے
+Relation	T6	T5	NoRel	true	فتح	فریاد
+Relation	T6	T7	NoRel	true	فتح	گھیراؤ
+Relation	T7	T11	NoRel	true	گھیراؤ	تباہ
+Relation	T8	T5	NoRel	true	جنگ	فریاد
+Relation	T9	T12	NoRel	true	شکست	مدد
+Relation	T9	T8	NoRel	true	شکست	جنگ

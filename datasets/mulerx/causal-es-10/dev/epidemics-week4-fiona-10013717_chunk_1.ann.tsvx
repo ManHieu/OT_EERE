@@ -1,0 +1,72 @@
+Text	Se ha informado de planes sobre el uso de tecnología de escaneo digital para contar el número de corazones que hay actualmente en la pared .	Si bien el plan original para el mural no autorizado incluía una disposición para limpiar el área después de un período de tiempo , algunos activistas han argumentado que el mural debería permanecer indefinidamente como un monumento permanente .	El primer ministro , Boris Johnson , había prometido previamente un monumento " apropiado y permanente " para aquellos que murieron por COVID-19 después de la conclusión de la pandemia .	El 29 de marzo de 2021 , el líder del Partido Laborista Keir Starmer visitó el mural , que describió como un " monumento notable " , antes de pedirle a Boris Johnson que lo visitara personalmente y se relacionara con las familias de los fallecidos .	Johnson más tarde visitó el muro para una " reflexión tranquila " sin reunirse con las familias en duelo , lo que un cofundador del grupo dijo que era " una visita nocturna al amparo de la oscuridad ... un movimiento cínico y poco sincero que es profundamente hiriente " .
+Event	T0	informado	EVENT	6
+Event	T1	planes	EVENT	19
+Event	T2	uso	EVENT	35
+Event	T3	contar	EVENT	77
+Event	T4	incluía	EVENT	194
+Event	T5	disposición	EVENT	206
+Event	T6	limpiar	EVENT	223
+Event	T7	argumentado	EVENT	296
+Event	T8	prometido	EVENT	430
+Event	T9	murieron	EVENT	510
+Event	T10	conclusión	EVENT	546
+Event	T11	pandemia	EVENT	563
+Event	T12	describió	EVENT	665
+Event	T13	relacionara	EVENT	775
+Event	T14	fallecidos	EVENT	811
+Event	T15	reflexión	EVENT	868
+Event	T16	reunirse	EVENT	894
+Event	T17	duelo	EVENT	923
+Event	T18	dijo	EVENT	962
+Event	T19	visita	EVENT	981
+Event	T20	movimiento	EVENT	1030
+Relation	T11	T9	CauseEffect	true	pandemia	murieron
+Relation	T9	T11	EffectCause	true	murieron	pandemia
+Relation	T0	T14	NoRel	true	informado	fallecidos
+Relation	T0	T9	NoRel	true	informado	murieron
+Relation	T1	T0	NoRel	true	planes	informado
+Relation	T1	T3	NoRel	true	planes	contar
+Relation	T1	T5	NoRel	true	planes	disposición
+Relation	T10	T0	NoRel	true	conclusión	informado
+Relation	T10	T8	NoRel	true	conclusión	prometido
+Relation	T11	T19	NoRel	true	pandemia	visita
+Relation	T12	T17	NoRel	true	describió	duelo
+Relation	T12	T5	NoRel	true	describió	disposición
+Relation	T13	T1	NoRel	true	relacionara	planes
+Relation	T13	T20	NoRel	true	relacionara	movimiento
+Relation	T13	T6	NoRel	true	relacionara	limpiar
+Relation	T14	T16	NoRel	true	fallecidos	reunirse
+Relation	T14	T3	NoRel	true	fallecidos	contar
+Relation	T15	T16	NoRel	true	reflexión	reunirse
+Relation	T15	T2	NoRel	true	reflexión	uso
+Relation	T15	T3	NoRel	true	reflexión	contar
+Relation	T15	T7	NoRel	true	reflexión	argumentado
+Relation	T16	T15	NoRel	true	reunirse	reflexión
+Relation	T16	T20	NoRel	true	reunirse	movimiento
+Relation	T16	T7	NoRel	true	reunirse	argumentado
+Relation	T16	T8	NoRel	true	reunirse	prometido
+Relation	T17	T11	NoRel	true	duelo	pandemia
+Relation	T17	T13	NoRel	true	duelo	relacionara
+Relation	T18	T15	NoRel	true	dijo	reflexión
+Relation	T19	T0	NoRel	true	visita	informado
+Relation	T19	T20	NoRel	true	visita	movimiento
+Relation	T19	T3	NoRel	true	visita	contar
+Relation	T2	T13	NoRel	true	uso	relacionara
+Relation	T2	T4	NoRel	true	uso	incluía
+Relation	T3	T10	NoRel	true	contar	conclusión
+Relation	T3	T6	NoRel	true	contar	limpiar
+Relation	T4	T15	NoRel	true	incluía	reflexión
+Relation	T5	T16	NoRel	true	disposición	reunirse
+Relation	T5	T18	NoRel	true	disposición	dijo
+Relation	T6	T1	NoRel	true	limpiar	planes
+Relation	T6	T10	NoRel	true	limpiar	conclusión
+Relation	T6	T11	NoRel	true	limpiar	pandemia
+Relation	T6	T14	NoRel	true	limpiar	fallecidos
+Relation	T6	T16	NoRel	true	limpiar	reunirse
+Relation	T6	T17	NoRel	true	limpiar	duelo
+Relation	T6	T7	NoRel	true	limpiar	argumentado
+Relation	T7	T1	NoRel	true	argumentado	planes
+Relation	T7	T12	NoRel	true	argumentado	describió
+Relation	T7	T13	NoRel	true	argumentado	relacionara
+Relation	T8	T18	NoRel	true	prometido	dijo
+Relation	T8	T6	NoRel	true	prometido	limpiar

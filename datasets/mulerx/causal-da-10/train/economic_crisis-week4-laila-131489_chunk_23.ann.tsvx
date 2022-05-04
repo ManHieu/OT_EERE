@@ -1,0 +1,38 @@
+Text	I dag er antallet nede på 34-37 , der med rimelig sikkerhed kan henføres til Vermeer .	Men i takt med , at antallet af malerier er mindsket , er Vermeers omdømme vokset støt , så han i dag anses som en af de vigtigste malere fra den nederlandske guldalder .	I 2004 blev _ Ung pige ved klaviatur _ solgt for 30 millioner dollars af baron Frédéric Rolins dødsbo til den amerikanske milliardær Steve Wynn .	Det var første gang siden 1921 , at et Vermeer-billede var på auktion – og det eneste tilbageværende i privat eje .	Det er ukendt , hvor Vermeer blev oplært som maler , eller hos hvem , men det antages , at han studerede i sin hjemby .
+Event	T0	mindsket	EVENT	131
+Event	T1	vokset	EVENT	162
+Event	T2	solgt	EVENT	297
+Event	T3	oplært	EVENT	554
+Event	T4	studerede	EVENT	615
+Event	T5	henføres	EVENT	64
+Event	T6	nede	EVENT	18
+Event	T7	omdømme	EVENT	154
+Event	T8	vigtigste	EVENT	208
+Event	T9	dødsbo	EVENT	353
+Event	T10	milliardær	EVENT	380
+Event	T11	auktion	EVENT	466
+Event	T12	privat	EVENT	507
+Event	T13	første	EVENT	412
+Event	T14	eneste	EVENT	483
+Relation	T13	T2	CauseEffect	true	første	solgt
+Relation	T2	T13	EffectCause	true	solgt	første
+Relation	T14	T2	CauseEffect	true	eneste	solgt
+Relation	T2	T14	EffectCause	true	solgt	eneste
+Relation	T10	T2	CauseEffect	true	milliardær	solgt
+Relation	T2	T10	EffectCause	true	solgt	milliardær
+Relation	T1	T0	NoRel	true	vokset	mindsket
+Relation	T10	T9	NoRel	true	milliardær	dødsbo
+Relation	T12	T1	NoRel	true	privat	vokset
+Relation	T14	T0	NoRel	true	eneste	mindsket
+Relation	T4	T6	NoRel	true	studerede	nede
+Relation	T5	T0	NoRel	true	henføres	mindsket
+Relation	T5	T1	NoRel	true	henføres	vokset
+Relation	T5	T10	NoRel	true	henføres	milliardær
+Relation	T5	T9	NoRel	true	henføres	dødsbo
+Relation	T6	T3	NoRel	true	nede	oplært
+Relation	T7	T0	NoRel	true	omdømme	mindsket
+Relation	T7	T13	NoRel	true	omdømme	første
+Relation	T8	T9	NoRel	true	vigtigste	dødsbo
+Relation	T9	T10	NoRel	true	dødsbo	milliardær
+Relation	T9	T14	NoRel	true	dødsbo	eneste
+Relation	T9	T6	NoRel	true	dødsbo	nede

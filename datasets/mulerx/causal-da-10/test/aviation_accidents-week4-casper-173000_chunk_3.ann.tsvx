@@ -1,0 +1,22 @@
+Text	Han blev anklaget for terrorisme ved en domstol i New York i januar 1996 og blev efterfølgende optaget på listen over FBI's 22 mest eftersøgte terrorister .	Siden 11. september-angrebene har han været blandt de 10 mest eftersøgte .	I september 2006 meddelte USA's regering , at Mohammed var blevet flyttet fra et hemmeligt fængsel til Guantanamo-basen .	- Khalid Shaikh Mohammed fra GlobalSecurity .org - Moussaoui Trial " Substitute for Testimony " from Khalid Shaikh Mohammed .	A summary of information KSM provided to his American interrogators .
+Event	T0	anklaget	EVENT	9
+Event	T1	optaget	EVENT	95
+Event	T2	eftersøgte	EVENT	132
+Event	T3	eftersøgte	EVENT	219
+Event	T4	meddelte	EVENT	249
+Event	T5	flyttet	EVENT	298
+Event	T6	Trial	EVENT	415
+Event	T7	summary	EVENT	482
+Event	T8	provided	EVENT	509
+Relation	T0	T1	CauseEffect	true	anklaget	optaget
+Relation	T1	T0	EffectCause	true	optaget	anklaget
+Relation	T1	T3	CauseEffect	true	optaget	eftersøgte
+Relation	T3	T1	EffectCause	true	eftersøgte	optaget
+Relation	T0	T6	NoRel	true	anklaget	Trial
+Relation	T1	T4	NoRel	true	optaget	meddelte
+Relation	T2	T3	NoRel	true	eftersøgte	eftersøgte
+Relation	T3	T4	NoRel	true	eftersøgte	meddelte
+Relation	T6	T0	NoRel	true	Trial	anklaget
+Relation	T6	T3	NoRel	true	Trial	eftersøgte
+Relation	T8	T4	NoRel	true	provided	meddelte
+Relation	T8	T6	NoRel	true	provided	Trial
