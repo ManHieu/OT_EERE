@@ -1,0 +1,24 @@
+Text	Kırgızistan Meclisi , kargonun sahibini ve planlanan varış yerini netleştirmek için 11 üyeli bir komisyon kurdu .	Devlet Ulusal Güvenlik Komitesi ise kargonun 1.902 kilogramlık bir kısmının JTI Kazakhstan LLC siparişi üzerine gerçekten Kırgızistan'a getirileceğini ; ancak kaza günü Kırgızistan'da boşaltılmayacağını açıkladı .	Komitenin açıklamasına göre uçak , Japonya'dan Türkiye'ye kargo taşıyordu .	Uçağın Bişkek'te yakıt ikmali yapması gerekiyordu ve ardından tüm malların boşaltılması için Türkiye'ye gidecekti .	Kırgızistan'a getirilecek kargo ise 1902 kg ağırlığında elektronik çakmaktı ve 19 Ocak'ta başka bir uçuşla Bişkek'e gönderilecekti .
+Event	T0	kurdu	EVENT	106
+Event	T1	siparişi	EVENT	209
+Event	T2	kaza	EVENT	273
+Event	T3	açıkladı	EVENT	317
+Event	T4	açıklamasına	EVENT	338
+Event	T5	taşıyordu	EVENT	392
+Event	T7	boşaltılması	EVENT	479
+Event	T8	gidecekti	EVENT	508
+Event	T9	gönderilecekti	EVENT	636
+Event	T10	netleştirmek	EVENT	66
+Event	T6	ikmali	EVENT	427
+Relation	T0	T2	NoRel	true	kurdu	kaza
+Relation	T0	T8	NoRel	true	kurdu	gidecekti
+Relation	T1	T2	NoRel	true	siparişi	kaza
+Relation	T2	T10	NoRel	true	kaza	netleştirmek
+Relation	T2	T4	NoRel	true	kaza	açıklamasına
+Relation	T4	T2	NoRel	true	açıklamasına	kaza
+Relation	T4	T5	NoRel	true	açıklamasına	taşıyordu
+Relation	T5	T10	NoRel	true	taşıyordu	netleştirmek
+Relation	T7	T5	NoRel	true	boşaltılması	taşıyordu
+Relation	T8	T4	NoRel	true	gidecekti	açıklamasına
+Relation	T9	T6	NoRel	true	gönderilecekti	ikmali
+Relation	T9	T7	NoRel	true	gönderilecekti	boşaltılması

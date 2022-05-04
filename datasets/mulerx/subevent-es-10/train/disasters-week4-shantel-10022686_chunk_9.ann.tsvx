@@ -1,0 +1,50 @@
+Text	Un meteorólogo de la NTSB examinó las condiciones climáticas en el momento del accidente para determinar si el clima fue un factor que contribuyó al accidente .	La NTSB también analizó y desarrolló la transcripción de la grabadora de voz de la cabina .	Los investigadores de la NTSB examinaron y probaron los sistemas antideslizante , freno automático e inversor de empuje en la aeronave .	El interruptor selector de freno automático en la cabina se encontró en la posición " máxima " .	La manija del cono de cola en la cabina principal se había accionado , presumiblemente con fines de evacuación , y el cono de cola trasero se había desprendido .
+Event	T0	examinó	EVENT	26
+Event	T1	accidente	EVENT	79
+Event	T2	determinar	EVENT	94
+Event	T3	contribuyó	EVENT	135
+Event	T4	accidente	EVENT	149
+Event	T5	analizó	EVENT	177
+Event	T6	desarrolló	EVENT	187
+Event	T7	transcripción	EVENT	201
+Event	T8	examinaron	EVENT	283
+Event	T9	probaron	EVENT	296
+Event	T10	empuje	EVENT	366
+Event	T11	encontró	EVENT	450
+Event	T12	accionado	EVENT	546
+Event	T13	evacuación	EVENT	587
+Event	T14	desprendido	EVENT	635
+Relation	T1	T0	SuperSub	true	accidente	examinó
+Relation	T0	T1	SubSuper	true	examinó	accidente
+Relation	T1	T5	SuperSub	true	accidente	analizó
+Relation	T5	T1	SubSuper	true	analizó	accidente
+Relation	T5	T6	SuperSub	true	analizó	desarrolló
+Relation	T6	T5	SubSuper	true	desarrolló	analizó
+Relation	T7	T5	SuperSub	true	transcripción	analizó
+Relation	T5	T7	SubSuper	true	analizó	transcripción
+Relation	T0	T3	NoRel	true	examinó	contribuyó
+Relation	T0	T7	NoRel	true	examinó	transcripción
+Relation	T0	T8	NoRel	true	examinó	examinaron
+Relation	T1	T7	NoRel	true	accidente	transcripción
+Relation	T1	T8	NoRel	true	accidente	examinaron
+Relation	T1	T9	NoRel	true	accidente	probaron
+Relation	T11	T6	NoRel	true	encontró	desarrolló
+Relation	T12	T0	NoRel	true	accionado	examinó
+Relation	T12	T11	NoRel	true	accionado	encontró
+Relation	T12	T7	NoRel	true	accionado	transcripción
+Relation	T12	T8	NoRel	true	accionado	examinaron
+Relation	T13	T3	NoRel	true	evacuación	contribuyó
+Relation	T14	T0	NoRel	true	desprendido	examinó
+Relation	T14	T5	NoRel	true	desprendido	analizó
+Relation	T2	T0	NoRel	true	determinar	examinó
+Relation	T2	T10	NoRel	true	determinar	empuje
+Relation	T2	T11	NoRel	true	determinar	encontró
+Relation	T2	T8	NoRel	true	determinar	examinaron
+Relation	T3	T5	NoRel	true	contribuyó	analizó
+Relation	T5	T14	NoRel	true	analizó	desprendido
+Relation	T5	T9	NoRel	true	analizó	probaron
+Relation	T6	T10	NoRel	true	desarrolló	empuje
+Relation	T6	T8	NoRel	true	desarrolló	examinaron
+Relation	T7	T9	NoRel	true	transcripción	probaron
+Relation	T8	T14	NoRel	true	examinaron	desprendido
+Relation	T8	T9	NoRel	true	examinaron	probaron

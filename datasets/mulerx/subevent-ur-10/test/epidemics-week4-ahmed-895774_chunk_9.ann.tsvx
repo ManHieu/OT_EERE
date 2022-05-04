@@ -1,0 +1,17 @@
+Text	اور آگرہ میں اس کے اہل خانہ کے 6 ارکان کو بھی الگ تھلگ کیا گیا ۔	دہلی کے جس ریستوراں میں اس نے 28 فروری کو کھانا کھایا تھا اس کے عملہ کے تمام افراد کو 2 ہفتوں کے لیے الگ تھلگ رہنے کا حکم دیا گیا ۔	نوئیڈا کے دو اسکولوں کے طلبہ نے یوم پیدائش کی تقریب میں شرکت کی تھی ان تمام کو ایک ہفتہ کے لیے الگ تھلگ کیا گیا اور اسکول کو بند کر دیا گیا ۔	-	3 مارچ ایک اطالوی زائر کی بیوی جے پور میں کورونا وائرس سے متاثر پائی گئی ۔
+Event	T0	بند	EVENT	322
+Event	T2	الگ	EVENT	46
+Event	T3	کھانا	EVENT	107
+Event	T4	الگ	EVENT	166
+Event	T5	حکم	EVENT	183
+Event	T6	شرکت	EVENT	253
+Event	T7	الگ	EVENT	292
+Event	T8	متاثر	EVENT	399
+Relation	T4	T5	SuperSub	true	الگ	حکم
+Relation	T5	T4	SubSuper	true	حکم	الگ
+Relation	T2	T3	NoRel	true	الگ	کھانا
+Relation	T5	T8	NoRel	true	حکم	متاثر
+Relation	T6	T0	NoRel	true	شرکت	بند
+Relation	T7	T2	NoRel	true	الگ	الگ
+Relation	T8	T2	NoRel	true	متاثر	الگ
+Relation	T8	T5	NoRel	true	متاثر	حکم

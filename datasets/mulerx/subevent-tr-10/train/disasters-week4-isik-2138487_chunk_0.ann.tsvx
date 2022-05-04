@@ -1,0 +1,38 @@
+Text	2016 ÜSKÜP SEL FELAKETI , Makedonya'nın başkenti Üsküp'te ve Kalkandelen'de 6 Ağustos 2016 tarihinden itibaren etkili olan aşırı yağmur ve şiddetli fırtınanın yol açtığı sel felaketi .	Staykovsi , Smilkovsi , Araçinovo ve Singeliç köylerinde etkili yağış sonrası meydana gelen felekette 21 kişinin yaşamını yitirdiği bildirildi .	Felakette ölenlerin çoğunun araçları sel sularına kapılan ve sürüklenenler olduğu sanılıyor .	Makedonya hükûmeti sel felaketi nedeniyle pazartesi günü ulusal yas ilan ettiklerini açıkladı .	
+Event	T0	FELAKETI	EVENT	15
+Event	T1	yağmur	EVENT	129
+Event	T2	felaketi	EVENT	174
+Event	T3	yağış	EVENT	249
+Event	T4	felekette	EVENT	277
+Event	T5	bildirildi	EVENT	317
+Event	T6	ölenlerin	EVENT	340
+Event	T7	kapılan	EVENT	380
+Event	T8	sanılıyor	EVENT	412
+Event	T9	felaketi	EVENT	447
+Event	T10	açıkladı	EVENT	509
+Event	T11	fırtınanın	EVENT	148
+Event	T12	sürüklenenler	EVENT	391
+Relation	T0	T11	NoRel	true	FELAKETI	fırtınanın
+Relation	T1	T11	NoRel	true	yağmur	fırtınanın
+Relation	T10	T8	NoRel	true	açıkladı	sanılıyor
+Relation	T11	T0	NoRel	true	fırtınanın	FELAKETI
+Relation	T11	T3	NoRel	true	fırtınanın	yağış
+Relation	T12	T1	NoRel	true	sürüklenenler	yağmur
+Relation	T12	T5	NoRel	true	sürüklenenler	bildirildi
+Relation	T12	T6	NoRel	true	sürüklenenler	ölenlerin
+Relation	T12	T9	NoRel	true	sürüklenenler	felaketi
+Relation	T2	T0	NoRel	true	felaketi	FELAKETI
+Relation	T2	T3	NoRel	true	felaketi	yağış
+Relation	T4	T0	NoRel	true	felekette	FELAKETI
+Relation	T4	T11	NoRel	true	felekette	fırtınanın
+Relation	T5	T1	NoRel	true	bildirildi	yağmur
+Relation	T5	T2	NoRel	true	bildirildi	felaketi
+Relation	T6	T11	NoRel	true	ölenlerin	fırtınanın
+Relation	T6	T8	NoRel	true	ölenlerin	sanılıyor
+Relation	T7	T10	NoRel	true	kapılan	açıkladı
+Relation	T7	T11	NoRel	true	kapılan	fırtınanın
+Relation	T7	T12	NoRel	true	kapılan	sürüklenenler
+Relation	T8	T1	NoRel	true	sanılıyor	yağmur
+Relation	T8	T2	NoRel	true	sanılıyor	felaketi
+Relation	T9	T11	NoRel	true	felaketi	fırtınanın
+Relation	T9	T2	NoRel	true	felaketi	felaketi

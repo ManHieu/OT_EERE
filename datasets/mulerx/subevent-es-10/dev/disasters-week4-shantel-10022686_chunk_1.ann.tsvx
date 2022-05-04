@@ -1,0 +1,48 @@
+Text	El informe final de la NTSB encontró que la causa probable del accidente fue la " incapacidad del piloto para mantener el control direccional del avión debido a su aplicación de un empuje inverso excesivo , lo que degradó la efectividad del timón para controlar el rumbo del avión " .	[ miniaturade imagen | N909 DL , el MD-88 involucrado en el accidente , fotografiado en enero de 2015 , dos meses antes del accidente ] La aeronave involucrada era un McDonnell Douglas MD-88 , con registro N909 DL , número de serie 49540 , fabricado en julio de 1987 y entregado nuevo a Delta el 30 de diciembre de 1987 .	Había acumulado 71.196 horas de vuelo totales y 54.865 ciclos de vuelo totales antes del accidente .	Fue propiedad de Delta y fue operado por Delta desde que la aeronave se puso en servicio .	En los seis meses anteriores al accidente , se completaron controles de mantenimiento programados regularmente de 600 horas de vuelo , 2200 horas de vuelo y 760 días , todos sin discrepancias .
+Event	T0	encontró	EVENT	28
+Event	T1	accidente	EVENT	63
+Event	T2	control	EVENT	122
+Event	T3	aplicación	EVENT	164
+Event	T4	degradó	EVENT	214
+Event	T5	involucrado	EVENT	327
+Event	T6	accidente	EVENT	345
+Event	T7	fotografiado	EVENT	357
+Event	T8	accidente	EVENT	409
+Event	T9	involucrada	EVENT	433
+Event	T10	fabricado	EVENT	525
+Event	T11	acumulado	EVENT	613
+Event	T12	ciclos	EVENT	662
+Event	T13	accidente	EVENT	696
+Event	T14	operado	EVENT	737
+Event	T15	accidente	EVENT	831
+Event	T18	vuelo	EVENT	926
+Event	T19	vuelo	EVENT	948
+Event	T16	mantenimiento	EVENT	871
+Relation	T6	T7	SuperSub	true	accidente	fotografiado
+Relation	T7	T6	SubSuper	true	fotografiado	accidente
+Relation	T10	T11	SuperSub	true	fabricado	acumulado
+Relation	T11	T10	SubSuper	true	acumulado	fabricado
+Relation	T0	T16	NoRel	true	encontró	mantenimiento
+Relation	T1	T11	NoRel	true	accidente	acumulado
+Relation	T10	T6	NoRel	true	fabricado	accidente
+Relation	T11	T1	NoRel	true	acumulado	accidente
+Relation	T12	T9	NoRel	true	ciclos	involucrada
+Relation	T13	T3	NoRel	true	accidente	aplicación
+Relation	T13	T4	NoRel	true	accidente	degradó
+Relation	T13	T7	NoRel	true	accidente	fotografiado
+Relation	T15	T13	NoRel	true	accidente	accidente
+Relation	T15	T2	NoRel	true	accidente	control
+Relation	T16	T0	NoRel	true	mantenimiento	encontró
+Relation	T16	T14	NoRel	true	mantenimiento	operado
+Relation	T2	T12	NoRel	true	control	ciclos
+Relation	T3	T11	NoRel	true	aplicación	acumulado
+Relation	T3	T4	NoRel	true	aplicación	degradó
+Relation	T4	T15	NoRel	true	degradó	accidente
+Relation	T4	T18	NoRel	true	degradó	vuelo
+Relation	T5	T0	NoRel	true	involucrado	encontró
+Relation	T5	T2	NoRel	true	involucrado	control
+Relation	T7	T19	NoRel	true	fotografiado	vuelo
+Relation	T8	T0	NoRel	true	accidente	encontró
+Relation	T8	T6	NoRel	true	accidente	accidente
+Relation	T8	T7	NoRel	true	accidente	fotografiado
+Relation	T9	T13	NoRel	true	involucrada	accidente

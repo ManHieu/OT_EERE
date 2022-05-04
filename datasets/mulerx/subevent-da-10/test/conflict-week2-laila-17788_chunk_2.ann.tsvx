@@ -1,0 +1,43 @@
+Text	I løbet af natten konsoliderede begge sider deres linjer .	Trods de voldsomme tab fortsatte Lee med at forpostfægte med McClellan hele den 18. september mens han trak sin anslagne hær syd for floden .	Selv om han havde overlegenhed i antal lykkedes det ikke for McClellans angreb at opnå den fornødne tyngde , hvilket tillod Lee at modangribe ved at flytte styrker langs indre linjer for at møde alle udfordringer .	Trods rigelige reserve som kunne være sat ind for at udnytte lokale successer mislykkedes det for McClellan at ødelægge Lees hær .	Ikke desto mindre var Lees invasion af Maryland slut , men han kunne trække sin hær tilbage til Virginia uden indblanding fra den overforsigtige McClellan .
+Event	T0	konsoliderede	EVENT	18
+Event	T1	fortsatte	EVENT	82
+Event	T10	møde	EVENT	391
+Event	T11	udfordringer	EVENT	401
+Event	T12	udnytte	EVENT	469
+Event	T13	mislykkedes	EVENT	494
+Event	T14	ødelægge	EVENT	527
+Event	T15	invasion	EVENT	574
+Event	T16	trække	EVENT	616
+Event	T2	forpostfægte	EVENT	103
+Event	T3	trak	EVENT	162
+Event	T4	lykkedes	EVENT	240
+Event	T5	angreb	EVENT	273
+Event	T6	opnå	EVENT	283
+Event	T7	tillod	EVENT	318
+Event	T8	modangribe	EVENT	332
+Relation	T0	T16	NoRel	true	konsoliderede	trække
+Relation	T1	T11	NoRel	true	fortsatte	udfordringer
+Relation	T1	T6	NoRel	true	fortsatte	opnå
+Relation	T10	T15	NoRel	true	møde	invasion
+Relation	T11	T2	NoRel	true	udfordringer	forpostfægte
+Relation	T11	T4	NoRel	true	udfordringer	lykkedes
+Relation	T12	T1	NoRel	true	udnytte	fortsatte
+Relation	T12	T3	NoRel	true	udnytte	trak
+Relation	T13	T1	NoRel	true	mislykkedes	fortsatte
+Relation	T13	T11	NoRel	true	mislykkedes	udfordringer
+Relation	T13	T16	NoRel	true	mislykkedes	trække
+Relation	T13	T2	NoRel	true	mislykkedes	forpostfægte
+Relation	T14	T13	NoRel	true	ødelægge	mislykkedes
+Relation	T14	T3	NoRel	true	ødelægge	trak
+Relation	T14	T7	NoRel	true	ødelægge	tillod
+Relation	T16	T14	NoRel	true	trække	ødelægge
+Relation	T3	T11	NoRel	true	trak	udfordringer
+Relation	T3	T16	NoRel	true	trak	trække
+Relation	T4	T11	NoRel	true	lykkedes	udfordringer
+Relation	T4	T2	NoRel	true	lykkedes	forpostfægte
+Relation	T4	T8	NoRel	true	lykkedes	modangribe
+Relation	T5	T8	NoRel	true	angreb	modangribe
+Relation	T7	T14	NoRel	true	tillod	ødelægge
+Relation	T7	T2	NoRel	true	tillod	forpostfægte
+Relation	T7	T5	NoRel	true	tillod	angreb
+Relation	T8	T11	NoRel	true	modangribe	udfordringer

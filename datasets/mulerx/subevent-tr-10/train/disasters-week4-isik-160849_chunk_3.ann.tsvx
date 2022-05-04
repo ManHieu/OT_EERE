@@ -1,0 +1,57 @@
+Text	Vestmannaeyjar'ın oluşturduğu bir başka büyük volkan patlaması ise 1973 yılında Heimaey Adası'ndaki Eldfell'dir .	Surtsey'in oluşmasında etkili olan püskürme , bu volkanik zincir boyunca Jólnir Adası ve adlandırılmamış birçok küçük tepeciğin yanı sıra daha küçük çapta birçok başka adacık daha oluşturmuş , ancak bunların pek çoğu kısa süre içinde aşınarak küçülmüş ve su altında kalmışlardır .	14 Kasım 1963 tarihinde saat 07: 15'te ( UTC+0 ) , İzlanda'nın güney kıyılarında , Vestmannaeyjar takımadalarının yakınındaki _ Ísleifur II _ adlı trol gemisinin aşçısı , teknelerinin güneybatısında havaya yükselmekte olan siyah dumanları gördü .	İlk önce ne olduğu anlaşılamayan nesneleri yakından görmek için yönünü değiştiren geminin kaptanı , bunun yanmakta olan bir diğer balıkçı teknesi olabileceğini düşündü , ancak bölgeye vardıklarında patlamaya hazır volkanın küllerinden yükselen dumanlar ile karşılaştılar .	Hareketlenme hiç beklenmedik bir anda gelmesine karşın püskürmesinin oldukça yakın olduğuna ilişkin pek çok ipucu vermiştir .
+Event	T0	patlaması	EVENT	53
+Event	T1	püskürme	EVENT	149
+Event	T2	oluşturmuş	EVENT	294
+Event	T3	küçülmüş	EVENT	357
+Event	T4	yükselmekte	EVENT	601
+Event	T5	gördü	EVENT	634
+Event	T6	düşündü	EVENT	802
+Event	T7	patlamaya	EVENT	840
+Event	T8	yükselen	EVENT	877
+Event	T9	Hareketlenme	EVENT	915
+Event	T10	gelmesine	EVENT	953
+Event	T11	püskürmesinin	EVENT	970
+Event	T12	vermiştir	EVENT	1029
+Event	T13	oluşmasında	EVENT	125
+Event	T14	kalmışlardır	EVENT	380
+Event	T15	aşınarak	EVENT	348
+Event	T16	değiştiren	EVENT	713
+Event	T17	karşılaştılar	EVENT	899
+Relation	T1	T3	NoRel	true	püskürme	küçülmüş
+Relation	T10	T15	NoRel	true	gelmesine	aşınarak
+Relation	T10	T5	NoRel	true	gelmesine	gördü
+Relation	T10	T6	NoRel	true	gelmesine	düşündü
+Relation	T12	T0	NoRel	true	vermiştir	patlaması
+Relation	T12	T14	NoRel	true	vermiştir	kalmışlardır
+Relation	T12	T3	NoRel	true	vermiştir	küçülmüş
+Relation	T12	T9	NoRel	true	vermiştir	Hareketlenme
+Relation	T13	T14	NoRel	true	oluşmasında	kalmışlardır
+Relation	T13	T7	NoRel	true	oluşmasında	patlamaya
+Relation	T15	T10	NoRel	true	aşınarak	gelmesine
+Relation	T15	T16	NoRel	true	aşınarak	değiştiren
+Relation	T16	T0	NoRel	true	değiştiren	patlaması
+Relation	T16	T1	NoRel	true	değiştiren	püskürme
+Relation	T17	T16	NoRel	true	karşılaştılar	değiştiren
+Relation	T17	T2	NoRel	true	karşılaştılar	oluşturmuş
+Relation	T2	T12	NoRel	true	oluşturmuş	vermiştir
+Relation	T2	T14	NoRel	true	oluşturmuş	kalmışlardır
+Relation	T2	T17	NoRel	true	oluşturmuş	karşılaştılar
+Relation	T2	T7	NoRel	true	oluşturmuş	patlamaya
+Relation	T3	T12	NoRel	true	küçülmüş	vermiştir
+Relation	T3	T13	NoRel	true	küçülmüş	oluşmasında
+Relation	T3	T14	NoRel	true	küçülmüş	kalmışlardır
+Relation	T3	T6	NoRel	true	küçülmüş	düşündü
+Relation	T4	T11	NoRel	true	yükselmekte	püskürmesinin
+Relation	T4	T14	NoRel	true	yükselmekte	kalmışlardır
+Relation	T4	T5	NoRel	true	yükselmekte	gördü
+Relation	T5	T12	NoRel	true	gördü	vermiştir
+Relation	T5	T9	NoRel	true	gördü	Hareketlenme
+Relation	T6	T10	NoRel	true	düşündü	gelmesine
+Relation	T6	T8	NoRel	true	düşündü	yükselen
+Relation	T7	T13	NoRel	true	patlamaya	oluşmasında
+Relation	T7	T14	NoRel	true	patlamaya	kalmışlardır
+Relation	T7	T17	NoRel	true	patlamaya	karşılaştılar
+Relation	T7	T4	NoRel	true	patlamaya	yükselmekte
+Relation	T7	T6	NoRel	true	patlamaya	düşündü
+Relation	T8	T1	NoRel	true	yükselen	püskürme
+Relation	T9	T5	NoRel	true	Hareketlenme	gördü

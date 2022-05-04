@@ -1,0 +1,34 @@
+Text	thumb|	Det forulykkede tog transporteres væk	TOGULYKKEN I JELLING skete den 1. august 1995 hvor to regionaltog stødte frontalt sammen i sydenden af Jelling Station .	Ingen personer omkom ved ulykken – men af de i alt 69 personer i togene , blev 19 indlagt og 35 behandlet på skadestuer ; 15 kom ikke på sygehus .	De to regionaltog var så sammenfiltrede , at de måtte skæres op på stedet for at blive fragtet bort .
+Event	T0	TOGULYKKEN	EVENT	45
+Event	T1	skete	EVENT	66
+Event	T2	omkom	EVENT	181
+Event	T3	ulykken	EVENT	191
+Event	T4	indlagt	EVENT	248
+Event	T5	behandlet	EVENT	262
+Event	T6	kom	EVENT	291
+Event	T7	sammenfiltrede	EVENT	338
+Event	T8	transporteres	EVENT	27
+Event	T9	forulykkede	EVENT	11
+Event	T10	stødte	EVENT	111
+Event	T11	skæres op	EVENT	367
+Event	T12	fragtet bort	EVENT	400
+Relation	T9	T8	SuperSub	true	forulykkede	transporteres
+Relation	T8	T9	SubSuper	true	transporteres	forulykkede
+Relation	T0	T6	SuperSub	true	TOGULYKKEN	kom
+Relation	T6	T0	SubSuper	true	kom	TOGULYKKEN
+Relation	T11	T12	SuperSub	true	skæres op	fragtet bort
+Relation	T12	T11	SubSuper	true	fragtet bort	skæres op
+Relation	T0	T7	NoRel	true	TOGULYKKEN	sammenfiltrede
+Relation	T1	T0	NoRel	true	skete	TOGULYKKEN
+Relation	T1	T2	NoRel	true	skete	omkom
+Relation	T10	T2	NoRel	true	stødte	omkom
+Relation	T10	T9	NoRel	true	stødte	forulykkede
+Relation	T11	T3	NoRel	true	skæres op	ulykken
+Relation	T2	T0	NoRel	true	omkom	TOGULYKKEN
+Relation	T4	T3	NoRel	true	indlagt	ulykken
+Relation	T4	T6	NoRel	true	indlagt	kom
+Relation	T4	T8	NoRel	true	indlagt	transporteres
+Relation	T6	T12	NoRel	true	kom	fragtet bort
+Relation	T6	T5	NoRel	true	kom	behandlet
+Relation	T7	T9	NoRel	true	sammenfiltrede	forulykkede
+Relation	T8	T5	NoRel	true	transporteres	behandlet

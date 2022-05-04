@@ -1,0 +1,37 @@
+Text	Til godset hørte endvidere Ubberup Mølle ved Ugerløse/Tølløse .	Sidstnævnte mølle har været strøgodsbesiddelse , idet godset aldrig har haft et sammenhængende areal , der gik så langt som til Ugerløse .	Fra godsregnskaberne kendes yderligere én vandmølle Kalvehave_mølle ved Sønder Jernløse .	Møllen med vævningshus og gård nedbrændte i 1834 , møllerfamilien måtte tage ophold på Dortheaslyst , hvorefter brandassurancen blev brugt til at opføre en ny vindmølle , deraf navnet Knabstrup Møllebakke .	Møllen blev opført af Carl Wilhelm Bang fra Holbæk , der ordnede skiftet efter den forrige møllers enke , som han ægtede i 1835 .
+Event	T0	hørte	EVENT	11
+Event	T1	gik	EVENT	171
+Event	T2	kendes	EVENT	224
+Event	T3	nedbrændte	EVENT	324
+Event	T4	ophold	EVENT	370
+Event	T5	brugt	EVENT	426
+Event	T6	opføre	EVENT	439
+Event	T7	opført	EVENT	512
+Event	T8	skiftet	EVENT	565
+Event	T9	ægtede	EVENT	614
+Event	T10	strøgodsbesiddelse	EVENT	92
+Event	T11	sammenhængende	EVENT	144
+Event	T12	brandassurancen	EVENT	405
+Relation	T1	T6	NoRel	true	gik	opføre
+Relation	T10	T3	NoRel	true	strøgodsbesiddelse	nedbrændte
+Relation	T11	T12	NoRel	true	sammenhængende	brandassurancen
+Relation	T12	T1	NoRel	true	brandassurancen	gik
+Relation	T2	T11	NoRel	true	kendes	sammenhængende
+Relation	T3	T12	NoRel	true	nedbrændte	brandassurancen
+Relation	T3	T2	NoRel	true	nedbrændte	kendes
+Relation	T3	T7	NoRel	true	nedbrændte	opført
+Relation	T3	T9	NoRel	true	nedbrændte	ægtede
+Relation	T4	T10	NoRel	true	ophold	strøgodsbesiddelse
+Relation	T4	T11	NoRel	true	ophold	sammenhængende
+Relation	T4	T12	NoRel	true	ophold	brandassurancen
+Relation	T4	T9	NoRel	true	ophold	ægtede
+Relation	T5	T12	NoRel	true	brugt	brandassurancen
+Relation	T5	T2	NoRel	true	brugt	kendes
+Relation	T5	T3	NoRel	true	brugt	nedbrændte
+Relation	T5	T9	NoRel	true	brugt	ægtede
+Relation	T6	T4	NoRel	true	opføre	ophold
+Relation	T7	T0	NoRel	true	opført	hørte
+Relation	T7	T11	NoRel	true	opført	sammenhængende
+Relation	T7	T8	NoRel	true	opført	skiftet
+Relation	T8	T3	NoRel	true	skiftet	nedbrændte
+Relation	T8	T9	NoRel	true	skiftet	ægtede

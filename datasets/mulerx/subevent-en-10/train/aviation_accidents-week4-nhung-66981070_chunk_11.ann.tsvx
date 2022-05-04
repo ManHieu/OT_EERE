@@ -1,0 +1,58 @@
+Text	By early the next morning , nearly 4,000 people had signed a _ We the People _ petition on the White House website asking for the banning of such demonstrations by the group at victims ' funerals .	Additionally , a posting that same day on a Twitter account affiliated with the hacktivist group Anonymous hinted that WBC leaders would be targeted if they made good on their threat to picket the funerals .	On May 20 , 2013 , WBC tweeted praising God for the 2013 Moore tornado and that they would protest the funerals of the victims .	On May 30 , 2011 , WBC was present at Arlington National Cemetery 's Memorial Day services as part of their " Thank God for Dead Soldiers " campaign .	A counter protest included members of the Ku Klux Klan .
+Event	T0	signed	EVENT	52
+Event	T1	asking	EVENT	115
+Event	T2	banning	EVENT	130
+Event	T3	demonstrations	EVENT	146
+Event	T4	funerals	EVENT	187
+Event	T5	posting	EVENT	215
+Event	T6	affiliated	EVENT	258
+Event	T7	hinted	EVENT	305
+Event	T8	targeted	EVENT	338
+Event	T9	threat	EVENT	374
+Event	T10	picket	EVENT	384
+Event	T11	funerals	EVENT	395
+Event	T12	praising	EVENT	437
+Event	T13	tornado	EVENT	469
+Event	T14	protest	EVENT	497
+Event	T15	funerals	EVENT	509
+Event	T16	present	EVENT	562
+Event	T17	services	EVENT	617
+Event	T18	included	EVENT	704
+Event	T19	made	EVENT	355
+Relation	T0	T14	NoRel	true	signed	protest
+Relation	T0	T15	NoRel	true	signed	funerals
+Relation	T1	T5	NoRel	true	asking	posting
+Relation	T1	T7	NoRel	true	asking	hinted
+Relation	T10	T14	NoRel	true	picket	protest
+Relation	T10	T4	NoRel	true	picket	funerals
+Relation	T10	T7	NoRel	true	picket	hinted
+Relation	T11	T1	NoRel	true	funerals	asking
+Relation	T11	T16	NoRel	true	funerals	present
+Relation	T11	T4	NoRel	true	funerals	funerals
+Relation	T12	T7	NoRel	true	praising	hinted
+Relation	T13	T0	NoRel	true	tornado	signed
+Relation	T13	T18	NoRel	true	tornado	included
+Relation	T13	T4	NoRel	true	tornado	funerals
+Relation	T14	T1	NoRel	true	protest	asking
+Relation	T14	T2	NoRel	true	protest	banning
+Relation	T14	T3	NoRel	true	protest	demonstrations
+Relation	T15	T5	NoRel	true	funerals	posting
+Relation	T16	T11	NoRel	true	present	funerals
+Relation	T17	T15	NoRel	true	services	funerals
+Relation	T18	T2	NoRel	true	included	banning
+Relation	T19	T10	NoRel	true	made	picket
+Relation	T19	T16	NoRel	true	made	present
+Relation	T19	T7	NoRel	true	made	hinted
+Relation	T2	T18	NoRel	true	banning	included
+Relation	T3	T12	NoRel	true	demonstrations	praising
+Relation	T3	T9	NoRel	true	demonstrations	threat
+Relation	T5	T17	NoRel	true	posting	services
+Relation	T5	T3	NoRel	true	posting	demonstrations
+Relation	T5	T8	NoRel	true	posting	targeted
+Relation	T6	T7	NoRel	true	affiliated	hinted
+Relation	T7	T11	NoRel	true	hinted	funerals
+Relation	T7	T14	NoRel	true	hinted	protest
+Relation	T8	T18	NoRel	true	targeted	included
+Relation	T8	T9	NoRel	true	targeted	threat
+Relation	T9	T11	NoRel	true	threat	funerals
+Relation	T9	T2	NoRel	true	threat	banning

@@ -1,0 +1,28 @@
+Text	El fuselaje frontal quedó destruido , pero la parte posterior del avión permaneció intacta .	El ala izquierda se encontraba sumergida en el río .	El accidente dejó a Nepal Airlines con solo dos aviones en operación para sus vuelos de cabotaje .	La aerolínea informó que efectuaría un cambio de motores que permitiría poner tres Twin Otters más , que en aquel momento estaban aparcados , en el aire , pero que este proceso llevaría al menos cinco meses .	Mientras tanto , la aerolínea esperaba una importante pérdida de cuota de mercado .
+Event	T0	destruido	EVENT	26
+Event	T1	sumergida	EVENT	124
+Event	T2	dejó	EVENT	159
+Event	T3	vuelos	EVENT	224
+Event	T4	informó	EVENT	258
+Event	T5	efectuaría	EVENT	270
+Event	T6	cambio	EVENT	284
+Event	T7	poner	EVENT	317
+Event	T8	aparcados	EVENT	375
+Event	T9	esperaba	EVENT	484
+Event	T10	pérdida	EVENT	508
+Event	T11	accidente	EVENT	149
+Relation	T11	T0	NoRel	true	accidente	destruido
+Relation	T11	T10	NoRel	true	accidente	pérdida
+Relation	T11	T4	NoRel	true	accidente	informó
+Relation	T2	T10	NoRel	true	dejó	pérdida
+Relation	T3	T10	NoRel	true	vuelos	pérdida
+Relation	T3	T7	NoRel	true	vuelos	poner
+Relation	T4	T3	NoRel	true	informó	vuelos
+Relation	T5	T2	NoRel	true	efectuaría	dejó
+Relation	T5	T8	NoRel	true	efectuaría	aparcados
+Relation	T6	T1	NoRel	true	cambio	sumergida
+Relation	T7	T4	NoRel	true	poner	informó
+Relation	T7	T8	NoRel	true	poner	aparcados
+Relation	T8	T1	NoRel	true	aparcados	sumergida
+Relation	T8	T4	NoRel	true	aparcados	informó
+Relation	T9	T11	NoRel	true	esperaba	accidente

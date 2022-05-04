@@ -1,0 +1,65 @@
+Text	WILFRIED BONIFATIUS " BONI " BÖSE ( 7 February 1949 , – 4 July 1976 ) was a founding member of the German organization Revolutionary Cells that was described in the early 1980s as one of Germany 's most dangerous leftist terrorist groups by the West German Interior Ministry .	He carried out attacks in Germany and in 1976 was involved in the hijacking of Air France Flight 139 , that led to his death in Entebbe , Uganda during the Israeli operation to free the hostages .	Ilan Hartuv , one of the surviving hostages in the hijacking of Air France Flight 139 in 1976 , recalled Böse saying to him during the hijacking that " I carried out terrorist acts in West Germany because the ruling establishment took Nazis and reactionaries into its service . "	Böse was a leader of the 1976 hijacking of Air France Flight 139 from Tel Aviv , Israel to Paris , France via Athens , Greece .	After diverting Air France Flight 139 to Entebbe , Uganda , Böse separated the Israelis from the other passengers ; the other passengers were allowed to go home .
+Event	T0	described	EVENT	148
+Event	T1	attacks	EVENT	292
+Event	T2	involved	EVENT	327
+Event	T3	hijacking	EVENT	343
+Event	T4	death	EVENT	396
+Event	T5	operation	EVENT	441
+Event	T6	free	EVENT	454
+Event	T7	hostages	EVENT	463
+Event	T8	hostages	EVENT	509
+Event	T9	hijacking	EVENT	525
+Event	T10	recalled	EVENT	570
+Event	T11	saying	EVENT	584
+Event	T12	hijacking	EVENT	609
+Event	T14	took	EVENT	704
+Event	T15	hijacking	EVENT	784
+Event	T16	diverting	EVENT	888
+Event	T17	separated	EVENT	947
+Event	T18	allowed	EVENT	1024
+Event	T19	carried out	EVENT	280
+Event	T13	terrorist acts	EVENT	640
+Relation	T17	T18	SuperSub	true	separated	allowed
+Relation	T18	T17	SubSuper	true	allowed	separated
+Relation	T0	T4	NoRel	true	described	death
+Relation	T1	T10	NoRel	true	attacks	recalled
+Relation	T1	T11	NoRel	true	attacks	saying
+Relation	T10	T1	NoRel	true	recalled	attacks
+Relation	T10	T12	NoRel	true	recalled	hijacking
+Relation	T11	T4	NoRel	true	saying	death
+Relation	T12	T1	NoRel	true	hijacking	attacks
+Relation	T12	T2	NoRel	true	hijacking	involved
+Relation	T12	T5	NoRel	true	hijacking	operation
+Relation	T13	T12	NoRel	true	terrorist acts	hijacking
+Relation	T13	T17	NoRel	true	terrorist acts	separated
+Relation	T14	T0	NoRel	true	took	described
+Relation	T14	T10	NoRel	true	took	recalled
+Relation	T14	T12	NoRel	true	took	hijacking
+Relation	T14	T15	NoRel	true	took	hijacking
+Relation	T14	T16	NoRel	true	took	diverting
+Relation	T15	T12	NoRel	true	hijacking	hijacking
+Relation	T15	T3	NoRel	true	hijacking	hijacking
+Relation	T15	T9	NoRel	true	hijacking	hijacking
+Relation	T16	T0	NoRel	true	diverting	described
+Relation	T17	T14	NoRel	true	separated	took
+Relation	T17	T6	NoRel	true	separated	free
+Relation	T18	T0	NoRel	true	allowed	described
+Relation	T18	T10	NoRel	true	allowed	recalled
+Relation	T19	T3	NoRel	true	carried out	hijacking
+Relation	T2	T9	NoRel	true	involved	hijacking
+Relation	T3	T7	NoRel	true	hijacking	hostages
+Relation	T4	T0	NoRel	true	death	described
+Relation	T4	T11	NoRel	true	death	saying
+Relation	T4	T7	NoRel	true	death	hostages
+Relation	T4	T8	NoRel	true	death	hostages
+Relation	T4	T9	NoRel	true	death	hijacking
+Relation	T6	T4	NoRel	true	free	death
+Relation	T6	T5	NoRel	true	free	operation
+Relation	T7	T1	NoRel	true	hostages	attacks
+Relation	T7	T19	NoRel	true	hostages	carried out
+Relation	T8	T1	NoRel	true	hostages	attacks
+Relation	T8	T16	NoRel	true	hostages	diverting
+Relation	T9	T15	NoRel	true	hijacking	hijacking
+Relation	T9	T16	NoRel	true	hijacking	diverting
+Relation	T9	T4	NoRel	true	hijacking	death
+Relation	T9	T6	NoRel	true	hijacking	free

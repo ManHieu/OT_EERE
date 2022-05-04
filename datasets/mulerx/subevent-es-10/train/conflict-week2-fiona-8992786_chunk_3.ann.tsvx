@@ -1,0 +1,15 @@
+Text	Se estableció una moratoria de tres meses para la independencia de Croacia por lo que la declaración tuvo efecto el 8 de octubre de 1991 .	La Guardia Nacional Croata ( - ZNG ) se formó en mayo de 1991 debido a que el Ejército Popular Yugoslavo ( _ Jugoslavenska Narodna Armija _ - _ JNA _ ) apoyó cada vez más a la SAO Krajina y la Policía Croata no pudo hacer frente a la situación .	En noviembre del mismo año , el ZNG pasó a denominarse Ejército Croata ( , HV ) .	El establecimiento de la Fuerza Militar de Croacia se vio obstaculizada por un embargo de armas de las Naciones Unidas que se estableció en septiembre de 1991 .	Los últimos meses de 1991 vieron la lucha más feroz de la guerra , que culminó en la Batalla de los Cuarteles , el Asedio de Dubrovnik y la Batalla de Vukovar .
+Event	T0	estableció	EVENT	3
+Event	T1	moratoria	EVENT	18
+Event	T10	lucha	EVENT	664
+Event	T11	guerra	EVENT	686
+Event	T12	culminó	EVENT	699
+Event	T3	formó	EVENT	179
+Event	T4	apoyó	EVENT	291
+Event	T5	establecimiento	EVENT	470
+Event	T6	obstaculizada	EVENT	525
+Event	T7	embargo	EVENT	546
+Event	T8	estableció	EVENT	593
+Relation	T0	T4	NoRel	true	estableció	apoyó
+Relation	T12	T8	NoRel	true	culminó	estableció
+Relation	T3	T6	NoRel	true	formó	obstaculizada

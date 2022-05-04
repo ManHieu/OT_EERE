@@ -1,0 +1,31 @@
+Text	Poco después del accidente , el Comité de Seguridad Nacional en el Transporte ( NTSC ) recuperó la grabadora de datos de vuelo para su investigación .	El 1 de mayo de 2013 , la búsqueda de la grabadora de voz fue suspendida , aun cuando ya había sido localizada , por las malas condiciones meteorológicas .	La NTSC se centró en su primera etapa en recopilar los testimonios de tripulantes , pasajeros y testigos .	La NTSC publicó un informe provisional el 15 de mayo de 2013 .	Los datos de vuelo mostraron que el avión continuó descendiendo por debajo de la altitud mínima de descenso ( MDA ) , que era de AGL .
+Event	T0	accidente	EVENT	17
+Event	T1	recuperó	EVENT	87
+Event	T2	investigación	EVENT	135
+Event	T3	búsqueda	EVENT	177
+Event	T4	suspendida	EVENT	213
+Event	T5	localizada	EVENT	251
+Event	T6	centró	EVENT	318
+Event	T7	etapa	EVENT	339
+Event	T8	recopilar	EVENT	348
+Event	T9	publicó	EVENT	422
+Event	T10	mostraron	EVENT	496
+Event	T11	descendiendo	EVENT	528
+Event	T12	descenso	EVENT	576
+Relation	T0	T1	SuperSub	true	accidente	recuperó
+Relation	T1	T0	SubSuper	true	recuperó	accidente
+Relation	T0	T3	SuperSub	true	accidente	búsqueda
+Relation	T3	T0	SubSuper	true	búsqueda	accidente
+Relation	T0	T8	SuperSub	true	accidente	recopilar
+Relation	T8	T0	SubSuper	true	recopilar	accidente
+Relation	T0	T10	NoRel	true	accidente	mostraron
+Relation	T11	T12	NoRel	true	descendiendo	descenso
+Relation	T12	T0	NoRel	true	descenso	accidente
+Relation	T12	T11	NoRel	true	descenso	descendiendo
+Relation	T12	T5	NoRel	true	descenso	localizada
+Relation	T2	T3	NoRel	true	investigación	búsqueda
+Relation	T2	T9	NoRel	true	investigación	publicó
+Relation	T3	T7	NoRel	true	búsqueda	etapa
+Relation	T4	T11	NoRel	true	suspendida	descendiendo
+Relation	T5	T0	NoRel	true	localizada	accidente
+Relation	T7	T0	NoRel	true	etapa	accidente

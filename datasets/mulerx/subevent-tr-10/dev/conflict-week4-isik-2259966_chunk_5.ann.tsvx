@@ -1,0 +1,25 @@
+Text	İki yıllık bu süre zarfında , İtalyan kuvvetleri , Sirenayka'nın kuzeyindeki düzlükleri de ele geçirmişlerdi .	Ancak Cebel - i Ahtar'ın ormanlık tepelerini işgal etme girişiminde bulunan İtalyan kuvvetleri , geniş çaplı gerilla direnişiyle karşılandı .	Direniş , Senusi lider Ömer Muhtar tarafından yönetiliyordu .	İtalyanlar , işgal ve bastırma harekâtına , Sirte çölünü hızla işgal ederek başladılar .	Hava ve kara araçlarının etkin şekilde kullanıldığı , iyi organize edilmiş bir lojik desteğiyle , İtalyanlar beş ay içinde 150, 000 km² alanı ele geçirdi .
+Event	T0	girişiminde	EVENT	167
+Event	T1	karşılandı	EVENT	240
+Event	T2	Direniş	EVENT	253
+Event	T3	işgal	EVENT	328
+Event	T4	kullanıldığı	EVENT	443
+Event	T5	geçirdi	EVENT	550
+Event	T6	geçirmişlerdi	EVENT	95
+Event	T7	direnişiyle	EVENT	228
+Event	T8	yönetiliyordu	EVENT	299
+Event	T9	harekâtına	EVENT	346
+Event	T10	başladılar	EVENT	391
+Event	T11	edilmiş	EVENT	471
+Relation	T11	T1	NoRel	true	edilmiş	karşılandı
+Relation	T3	T5	NoRel	true	işgal	geçirdi
+Relation	T4	T0	NoRel	true	kullanıldığı	girişiminde
+Relation	T5	T1	NoRel	true	geçirdi	karşılandı
+Relation	T5	T11	NoRel	true	geçirdi	edilmiş
+Relation	T5	T2	NoRel	true	geçirdi	Direniş
+Relation	T5	T4	NoRel	true	geçirdi	kullanıldığı
+Relation	T6	T2	NoRel	true	geçirmişlerdi	Direniş
+Relation	T6	T8	NoRel	true	geçirmişlerdi	yönetiliyordu
+Relation	T7	T0	NoRel	true	direnişiyle	girişiminde
+Relation	T8	T1	NoRel	true	yönetiliyordu	karşılandı
+Relation	T9	T4	NoRel	true	harekâtına	kullanıldığı

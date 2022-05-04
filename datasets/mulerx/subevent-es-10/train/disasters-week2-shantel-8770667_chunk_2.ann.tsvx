@@ -1,0 +1,24 @@
+Text	Inmediatamente después de tocar tierra , Yutu experimentó un ciclo de sustitución en la pared del ojo ( eyewall ) , provocando que se debilitara momentáneamente mientras completaba el proceso .	Manteniendo el estado de super tifón , Yutu continuó moviéndose hacia el oeste hacia las Filipinas , entrando al Área de Responsabilidad Filipina ( Philippine Area of Responsibility , PAR ) .	La tormenta causó un daño catastrófico al atravesar Tinian y Saipán , destruyendo numerosos hograes y matando a 2 personas .	Los vientos violentos destruyeron estructuras de concreto en el sur de Saipán y removieron grandes áreas de vegetación .	En las Filipinas , los derrumbes extendidos mataron al menos 6 personas y dejaron más de 23 desaparecidos .
+Event	T0	experimentó	EVENT	46
+Event	T11	atravesar	EVENT	428
+Event	T12	destruyendo	EVENT	456
+Event	T13	matando	EVENT	488
+Event	T14	destruyeron	EVENT	533
+Event	T15	removieron	EVENT	591
+Event	T16	mataron	EVENT	676
+Event	T17	dejaron	EVENT	706
+Event	T3	provocando	EVENT	116
+Event	T8	tocar	EVENT	26
+Event	T1	tormenta	EVENT	389
+Event	T2	derrumbes	EVENT	655
+Relation	T1	T11	SuperSub	true	tormenta	atravesar
+Relation	T11	T1	SubSuper	true	atravesar	tormenta
+Relation	T0	T8	NoRel	true	experimentó	tocar
+Relation	T1	T14	NoRel	true	tormenta	destruyeron
+Relation	T1	T15	NoRel	true	tormenta	removieron
+Relation	T14	T3	NoRel	true	destruyeron	provocando
+Relation	T2	T12	NoRel	true	derrumbes	destruyendo
+Relation	T2	T8	NoRel	true	derrumbes	tocar
+Relation	T3	T1	NoRel	true	provocando	tormenta
+Relation	T3	T17	NoRel	true	provocando	dejaron
+Relation	T8	T15	NoRel	true	tocar	removieron

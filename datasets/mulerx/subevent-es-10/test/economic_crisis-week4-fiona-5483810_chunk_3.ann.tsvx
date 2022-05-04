@@ -1,0 +1,44 @@
+Text	Después de las elecciones de 1928 , en las cuales el Partido Socialdemócrata tuvo grandes avances , este logró formar una coalición multipartidista con el Partido de Centro , el Partido Popular de Baviera , el Partido Democrático Alemán , y el Partido Popular Alemán , restableciendo la Coalición de Weimar de 1919 con Hermann Müller como Canciller .	Durante este gobierno estalló la Gran Depresión en 1929 .	El 27 de marzo de 1930 , la coalición colapsó , debido a la disputa por un menor aumento de las cotizaciones al seguro de desempleo y a las intenciones del presidente Paul von Hindenburg de instaurar un gabinete presidencial " antimarxista y antiparlamentario " .	Hindenburg designó canciller a Heinrich Brüning en un gobierno minoritario sin el SPD .	Tras asumir , Brüning presentó su presupuesto , que fue rechazado por el Reichstag .
+Event	T0	elecciones	EVENT	15
+Event	T1	tuvo	EVENT	77
+Event	T2	avances	EVENT	90
+Event	T3	formar	EVENT	111
+Event	T4	coalición	EVENT	122
+Event	T5	restableciendo	EVENT	269
+Event	T6	estalló	EVENT	373
+Event	T7	Depresión	EVENT	389
+Event	T8	colapsó	EVENT	447
+Event	T9	disputa	EVENT	469
+Event	T10	aumento	EVENT	490
+Event	T11	intenciones	EVENT	549
+Event	T12	instaurar	EVENT	599
+Event	T13	designó	EVENT	684
+Event	T14	asumir	EVENT	766
+Event	T15	rechazado	EVENT	817
+Relation	T0	T10	NoRel	true	elecciones	aumento
+Relation	T0	T3	NoRel	true	elecciones	formar
+Relation	T0	T8	NoRel	true	elecciones	colapsó
+Relation	T10	T0	NoRel	true	aumento	elecciones
+Relation	T10	T3	NoRel	true	aumento	formar
+Relation	T10	T9	NoRel	true	aumento	disputa
+Relation	T11	T5	NoRel	true	intenciones	restableciendo
+Relation	T11	T6	NoRel	true	intenciones	estalló
+Relation	T12	T8	NoRel	true	instaurar	colapsó
+Relation	T13	T11	NoRel	true	designó	intenciones
+Relation	T13	T15	NoRel	true	designó	rechazado
+Relation	T13	T2	NoRel	true	designó	avances
+Relation	T13	T6	NoRel	true	designó	estalló
+Relation	T15	T13	NoRel	true	rechazado	designó
+Relation	T15	T5	NoRel	true	rechazado	restableciendo
+Relation	T2	T12	NoRel	true	avances	instaurar
+Relation	T3	T1	NoRel	true	formar	tuvo
+Relation	T4	T1	NoRel	true	coalición	tuvo
+Relation	T4	T7	NoRel	true	coalición	Depresión
+Relation	T4	T9	NoRel	true	coalición	disputa
+Relation	T5	T13	NoRel	true	restableciendo	designó
+Relation	T5	T6	NoRel	true	restableciendo	estalló
+Relation	T7	T15	NoRel	true	Depresión	rechazado
+Relation	T8	T5	NoRel	true	colapsó	restableciendo
+Relation	T9	T1	NoRel	true	disputa	tuvo
+Relation	T9	T2	NoRel	true	disputa	avances
+Relation	T9	T5	NoRel	true	disputa	restableciendo

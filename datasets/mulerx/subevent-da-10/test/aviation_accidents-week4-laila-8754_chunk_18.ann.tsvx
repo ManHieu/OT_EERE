@@ -1,0 +1,20 @@
+Text	Den 7. april og 12. april meddelte man , at mellem 10 og 20 kropsdele var fundet på stedet .	Søgningen afsluttedes juli 2010 .	Sammen med de 110-etagers høje tvillingetårne i World Trade_Center-komplekset blev mange andre bygninger på Ground Zero ødelagt eller i det mindste meget alvorligt beskadiget , herunder kan nævnes bygningerne World Trade_Center nr. 7 , 6 ,_5 ,_4 , Marriott World Trade Center , World Financial_Center-komplekset og St. Nicholas Greek Orthodox Church .	Tvillingetårnenes kollaps er de eneste eksempler på et progressivt kollaps af stål-indrammede strukturer i historien .	Deutsche Bank Building blev senere dømt til at blive revet ned , grundet ubeboelige samt giftige forhold inde i kontorbygningen .
+Event	T0	meddelte	EVENT	26
+Event	T1	fundet	EVENT	74
+Event	T2	afsluttedes	EVENT	103
+Event	T3	ødelagt	EVENT	247
+Event	T4	beskadiget	EVENT	291
+Event	T5	kollaps	EVENT	497
+Event	T6	kollaps	EVENT	546
+Event	T7	Søgningen	EVENT	93
+Event	T8	dømt	EVENT	633
+Event	T9	giftige forhold	EVENT	687
+Relation	T0	T1	NoRel	true	meddelte	fundet
+Relation	T1	T2	NoRel	true	fundet	afsluttedes
+Relation	T1	T8	NoRel	true	fundet	dømt
+Relation	T2	T5	NoRel	true	afsluttedes	kollaps
+Relation	T6	T8	NoRel	true	kollaps	dømt
+Relation	T7	T1	NoRel	true	Søgningen	fundet
+Relation	T8	T3	NoRel	true	dømt	ødelagt
+Relation	T9	T3	NoRel	true	giftige forhold	ødelagt
+Relation	T9	T5	NoRel	true	giftige forhold	kollaps

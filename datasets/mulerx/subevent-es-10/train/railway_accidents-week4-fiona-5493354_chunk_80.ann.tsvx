@@ -1,0 +1,29 @@
+Text	Como consecuencia de la colisión se producen cerca de trescientos heridos , aunque solamente cinco de gravedad .	- 12 DE SEPTIEMBRE : Seis muertos , - dos de ellos de nacionalidad española - y varias decenas de heridos es el resultado de la colisión entre tres trenes ocurrida en la estación de Caxarias ( Línea del Norte ) .	- 20 DE NOVIEMBRE : Un locomotora de maniobras que escapó sin conductor de la estación de Torre das Vargens colisionó frontalmente a tres kilómetros de dicha estación con el tren rápido Lisboa_-_Madrid .	A consecuencia del accidente resultaron heridas levemente ocho personas .	- 1982_____-___16 DE FEBRERO : Cuatro heridos es el balance del choque de dos trenes ocurrido entre las estaciones de Mealhada y Pampilhosa , línea del Norte
+Event	T0	colisión	EVENT	24
+Event	T1	producen	EVENT	36
+Event	T2	heridos	EVENT	66
+Event	T3	muertos	EVENT	139
+Event	T4	heridos	EVENT	211
+Event	T5	resultado	EVENT	225
+Event	T6	colisión	EVENT	241
+Event	T7	ocurrida	EVENT	268
+Event	T8	maniobras	EVENT	363
+Event	T9	colisionó	EVENT	434
+Event	T10	balance	EVENT	656
+Event	T11	choque	EVENT	668
+Event	T12	ocurrido	EVENT	689
+Relation	T0	T12	NoRel	true	colisión	ocurrido
+Relation	T0	T5	NoRel	true	colisión	resultado
+Relation	T11	T8	NoRel	true	choque	maniobras
+Relation	T12	T11	NoRel	true	ocurrido	choque
+Relation	T2	T11	NoRel	true	heridos	choque
+Relation	T3	T2	NoRel	true	muertos	heridos
+Relation	T4	T10	NoRel	true	heridos	balance
+Relation	T4	T6	NoRel	true	heridos	colisión
+Relation	T7	T1	NoRel	true	ocurrida	producen
+Relation	T7	T11	NoRel	true	ocurrida	choque
+Relation	T7	T8	NoRel	true	ocurrida	maniobras
+Relation	T8	T1	NoRel	true	maniobras	producen
+Relation	T8	T12	NoRel	true	maniobras	ocurrido
+Relation	T8	T2	NoRel	true	maniobras	heridos
+Relation	T9	T11	NoRel	true	colisionó	choque

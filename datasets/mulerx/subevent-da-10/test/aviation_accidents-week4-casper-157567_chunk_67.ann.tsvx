@@ -1,0 +1,64 @@
+Text	Påstanden syntes først at stamme fra Dewdney der ved et selvstudie beskrevet i bogen _ Project Achilles _ afprøvede telefon opkald i forskellige højder og konkluderede at " Mobiltelefonopkald er fra passagerfly fysisk umuligt over 8.000 fod og statistisk usandsynligt under . " .	Baseret på denne påstand har bl.a. Dewdney og Michel Chossudovsky påstået at opkaldene alle skulle være fabrikerede og at alle personerne der forestod dem var en del af sammensværgelsen , angiveligt for derved at skabe en dækhistorie for et fly der efter historien aldrig eksisterede .	En ofte refereret udtalelse er af Alexa Graf , talsmand for det amerikanske telefonselskab og udbyder af mobiltelefoni AT&T , der i en artikel fra 1. november 2001 , sagde at GSM systemerne ikke er designet til telefoni fra stor højde , og at det næsten må betragtes som et usædvanligt tilfælde at opkaldene nåede deres endemål .	Foruden to blev alle opkald fra Flight 93 lavet gennem airphone .	Airphones har intet problem med opkald fra store højder – det er det de er konstrueret til .
+Event	T0	syntes	EVENT	10
+Event	T1	beskrevet	EVENT	67
+Event	T2	afprøvede	EVENT	106
+Event	T3	opkald	EVENT	124
+Event	T4	konkluderede	EVENT	155
+Event	T5	påstand	EVENT	297
+Event	T6	påstået	EVENT	346
+Event	T7	forestod	EVENT	422
+Event	T8	sammensværgelsen	EVENT	449
+Event	T9	skabe	EVENT	493
+Event	T10	udtalelse	EVENT	584
+Event	T11	artikel	EVENT	701
+Event	T12	sagde	EVENT	732
+Event	T13	designet	EVENT	764
+Event	T14	nåede	EVENT	874
+Event	T15	opkald	EVENT	917
+Event	T16	lavet	EVENT	938
+Event	T17	opkald	EVENT	994
+Event	T18	konstrueret	EVENT	1037
+Relation	T1	T2	SuperSub	true	beskrevet	afprøvede
+Relation	T2	T1	SubSuper	true	afprøvede	beskrevet
+Relation	T1	T4	SuperSub	true	beskrevet	konkluderede
+Relation	T4	T1	SubSuper	true	konkluderede	beskrevet
+Relation	T5	T6	SuperSub	true	påstand	påstået
+Relation	T6	T5	SubSuper	true	påstået	påstand
+Relation	T5	T7	SuperSub	true	påstand	forestod
+Relation	T7	T5	SubSuper	true	forestod	påstand
+Relation	T5	T9	SuperSub	true	påstand	skabe
+Relation	T9	T5	SubSuper	true	skabe	påstand
+Relation	T15	T14	SuperSub	true	opkald	nåede
+Relation	T14	T15	SubSuper	true	nåede	opkald
+Relation	T15	T13	SuperSub	true	opkald	designet
+Relation	T13	T15	SubSuper	true	designet	opkald
+Relation	T15	T18	SuperSub	true	opkald	konstrueret
+Relation	T18	T15	SubSuper	true	konstrueret	opkald
+Relation	T1	T15	NoRel	true	beskrevet	opkald
+Relation	T1	T16	NoRel	true	beskrevet	lavet
+Relation	T1	T17	NoRel	true	beskrevet	opkald
+Relation	T10	T14	NoRel	true	udtalelse	nåede
+Relation	T10	T3	NoRel	true	udtalelse	opkald
+Relation	T10	T5	NoRel	true	udtalelse	påstand
+Relation	T12	T13	NoRel	true	sagde	designet
+Relation	T14	T13	NoRel	true	nåede	designet
+Relation	T14	T9	NoRel	true	nåede	skabe
+Relation	T15	T2	NoRel	true	opkald	afprøvede
+Relation	T16	T10	NoRel	true	lavet	udtalelse
+Relation	T16	T7	NoRel	true	lavet	forestod
+Relation	T16	T8	NoRel	true	lavet	sammensværgelsen
+Relation	T17	T1	NoRel	true	opkald	beskrevet
+Relation	T17	T6	NoRel	true	opkald	påstået
+Relation	T17	T9	NoRel	true	opkald	skabe
+Relation	T18	T12	NoRel	true	konstrueret	sagde
+Relation	T18	T9	NoRel	true	konstrueret	skabe
+Relation	T2	T12	NoRel	true	afprøvede	sagde
+Relation	T2	T13	NoRel	true	afprøvede	designet
+Relation	T4	T5	NoRel	true	konkluderede	påstand
+Relation	T4	T9	NoRel	true	konkluderede	skabe
+Relation	T5	T14	NoRel	true	påstand	nåede
+Relation	T6	T16	NoRel	true	påstået	lavet
+Relation	T6	T7	NoRel	true	påstået	forestod
+Relation	T8	T7	NoRel	true	sammensværgelsen	forestod
+Relation	T9	T1	NoRel	true	skabe	beskrevet
+Relation	T9	T2	NoRel	true	skabe	afprøvede

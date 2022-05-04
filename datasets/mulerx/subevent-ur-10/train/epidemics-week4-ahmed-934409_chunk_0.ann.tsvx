@@ -1,0 +1,62 @@
+Text	بھوٹان میں کورونا وائرس کی وبا کا خطرہ اور معاملات اس وقت آشکارا ہوئے جب کوویت سے بھوٹان آئی ایک خاتون کے ذریعے کی گئی مسافرت سے کورونا وائرس انفیکشن پھیلنے کا اندازہ لگایا گیا ۔	سرکار نے ملک کی لگ بھگ 750,000 کی آبادی کے لیے گھر پر رہنے کا حکم جاری کیا ۔	ملک میں سبھی اسکول ، دفاتر اور عوامی مقامات بند کر دیے گئے ۔	سرکاری بیان کے مطانق یہ لاکڈاؤن پانچ سے 21 دنوں کے لیے متاثرہ مریضوں کی پہچان کرکے انہیں علاج فراہم کرنے کے لیے لاگو کیا گیا ہے ۔	لاکڈاؤن کا مقصد انفیکشن کے فروغ کے خدشے کو فوری طور پر دور کرنا تھا ۔۔
+Event	T0	خطرہ	EVENT	34
+Event	T1	معاملات	EVENT	43
+Event	T2	آشکارا	EVENT	58
+Event	T3	مسافرت	EVENT	119
+Event	T4	پھیلنے	EVENT	150
+Event	T5	بند	EVENT	300
+Event	T6	بیان	EVENT	324
+Event	T7	پہچان	EVENT	389
+Event	T8	انفیکشن	EVENT	463
+Event	T9	فروغ	EVENT	474
+Event	T10	خدشے	EVENT	482
+Event	T11	وبا	EVENT	27
+Event	T12	آئی	EVENT	89
+Event	T13	انفیکشن	EVENT	142
+Event	T14	حکم	EVENT	241
+Event	T15	لاکڈاؤن	EVENT	341
+Event	T16	متاثرہ	EVENT	372
+Event	T17	علاج	EVENT	406
+Event	T18	لاگو	EVENT	429
+Event	T19	لاکڈاؤن	EVENT	447
+Event	T20	کرنا	EVENT	506
+Relation	T3	T12	SuperSub	true	مسافرت	آئی
+Relation	T12	T3	SubSuper	true	آئی	مسافرت
+Relation	T17	T7	SuperSub	true	علاج	پہچان
+Relation	T7	T17	SubSuper	true	پہچان	علاج
+Relation	T10	T0	NoRel	true	خدشے	خطرہ
+Relation	T10	T13	NoRel	true	خدشے	انفیکشن
+Relation	T12	T13	NoRel	true	آئی	انفیکشن
+Relation	T13	T1	NoRel	true	انفیکشن	معاملات
+Relation	T13	T18	NoRel	true	انفیکشن	لاگو
+Relation	T13	T19	NoRel	true	انفیکشن	لاکڈاؤن
+Relation	T13	T8	NoRel	true	انفیکشن	انفیکشن
+Relation	T13	T9	NoRel	true	انفیکشن	فروغ
+Relation	T14	T19	NoRel	true	حکم	لاکڈاؤن
+Relation	T14	T6	NoRel	true	حکم	بیان
+Relation	T15	T13	NoRel	true	لاکڈاؤن	انفیکشن
+Relation	T15	T18	NoRel	true	لاکڈاؤن	لاگو
+Relation	T16	T5	NoRel	true	متاثرہ	بند
+Relation	T17	T20	NoRel	true	علاج	کرنا
+Relation	T17	T6	NoRel	true	علاج	بیان
+Relation	T18	T8	NoRel	true	لاگو	انفیکشن
+Relation	T2	T20	NoRel	true	آشکارا	کرنا
+Relation	T2	T4	NoRel	true	آشکارا	پھیلنے
+Relation	T20	T14	NoRel	true	کرنا	حکم
+Relation	T20	T18	NoRel	true	کرنا	لاگو
+Relation	T3	T0	NoRel	true	مسافرت	خطرہ
+Relation	T3	T15	NoRel	true	مسافرت	لاکڈاؤن
+Relation	T3	T17	NoRel	true	مسافرت	علاج
+Relation	T4	T11	NoRel	true	پھیلنے	وبا
+Relation	T4	T17	NoRel	true	پھیلنے	علاج
+Relation	T4	T18	NoRel	true	پھیلنے	لاگو
+Relation	T5	T1	NoRel	true	بند	معاملات
+Relation	T5	T18	NoRel	true	بند	لاگو
+Relation	T5	T3	NoRel	true	بند	مسافرت
+Relation	T6	T1	NoRel	true	بیان	معاملات
+Relation	T6	T4	NoRel	true	بیان	پھیلنے
+Relation	T7	T15	NoRel	true	پہچان	لاکڈاؤن
+Relation	T8	T20	NoRel	true	انفیکشن	کرنا
+Relation	T9	T1	NoRel	true	فروغ	معاملات
+Relation	T9	T14	NoRel	true	فروغ	حکم
+Relation	T9	T18	NoRel	true	فروغ	لاگو

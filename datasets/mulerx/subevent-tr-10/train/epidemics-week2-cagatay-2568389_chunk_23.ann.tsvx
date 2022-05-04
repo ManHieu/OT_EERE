@@ -1,0 +1,25 @@
+Text	Dava sayısı 102'den 24 artarak 126 oldu .	- Brezilya iki vakayı daha doğrulayarak toplam sayısını 4'e çıkardı .	- Kanada , British Columbia'da bir vakayı daha doğrulayarak toplam sayısını 34'e çıkardı .	- Çin 119 yeni vakayı doğrulayarak toplam sayıyı 80.270'e çıkardı .	38 yeni ölüm de doğrulandı ve toplam 2.981'e ulaştı .
+Event	T0	çıkardı	EVENT	102
+Event	T1	çıkardı	EVENT	193
+Event	T10	doğrulayarak	EVENT	69
+Event	T12	doğrulayarak	EVENT	159
+Event	T14	doğrulayarak	EVENT	225
+Event	T2	çıkardı	EVENT	261
+Event	T4	doğrulandı	EVENT	287
+Event	T5	ulaştı	EVENT	316
+Event	T6	artarak	EVENT	23
+Event	T7	oldu	EVENT	35
+Relation	T0	T2	NoRel	true	çıkardı	çıkardı
+Relation	T1	T0	NoRel	true	çıkardı	çıkardı
+Relation	T1	T12	NoRel	true	çıkardı	doğrulayarak
+Relation	T10	T14	NoRel	true	doğrulayarak	doğrulayarak
+Relation	T10	T2	NoRel	true	doğrulayarak	çıkardı
+Relation	T12	T5	NoRel	true	doğrulayarak	ulaştı
+Relation	T2	T12	NoRel	true	çıkardı	doğrulayarak
+Relation	T2	T5	NoRel	true	çıkardı	ulaştı
+Relation	T2	T7	NoRel	true	çıkardı	oldu
+Relation	T5	T0	NoRel	true	ulaştı	çıkardı
+Relation	T5	T4	NoRel	true	ulaştı	doğrulandı
+Relation	T6	T0	NoRel	true	artarak	çıkardı
+Relation	T7	T0	NoRel	true	oldu	çıkardı
+Relation	T7	T6	NoRel	true	oldu	artarak

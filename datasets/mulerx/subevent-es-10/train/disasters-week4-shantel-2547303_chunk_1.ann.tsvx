@@ -1,0 +1,50 @@
+Text	El ciclón causó fuertes daños al llegar a tierra a lo largo de su trayectoria , provocando diez muertes .	Fanele golpeó Madagascar justo dos días después de que la tormenta tropical Eric golpeó la parte noroeste del país .	Las dos tormentas afectaron alrededor de 50,000 personas , de las cuales 4,000 quedaron damnificadas .	Fanele golpeó el país durante una serie de protestas al gobierno , por lo que las actividades de socorro se vieron afectadas .	[ Trayectoria del ciclón Fanele . ] Por varios días a mediados de enero de 2009 , una circulación muy débil y baja persistió en el canal de Mozambique , acompañada con una convención atmosférica , y tormentas eléctricas .
+Event	T0	daños	EVENT	24
+Event	T1	trayectoria	EVENT	66
+Event	T2	muertes	EVENT	96
+Event	T3	golpeó	EVENT	113
+Event	T4	golpeó	EVENT	187
+Event	T5	afectaron	EVENT	241
+Event	T6	damnificadas	EVENT	311
+Event	T7	golpeó	EVENT	333
+Event	T8	serie	EVENT	360
+Event	T9	protestas	EVENT	369
+Event	T10	actividades	EVENT	408
+Event	T11	socorro	EVENT	423
+Event	T12	afectadas	EVENT	441
+Event	T13	Trayectoria	EVENT	455
+Event	T14	circulación	EVENT	539
+Event	T15	persistió	EVENT	568
+Event	T16	acompañada	EVENT	606
+Event	T17	ciclón	EVENT	3
+Relation	T0	T4	NoRel	true	daños	golpeó
+Relation	T1	T0	NoRel	true	trayectoria	daños
+Relation	T1	T15	NoRel	true	trayectoria	persistió
+Relation	T1	T2	NoRel	true	trayectoria	muertes
+Relation	T1	T3	NoRel	true	trayectoria	golpeó
+Relation	T1	T8	NoRel	true	trayectoria	serie
+Relation	T10	T3	NoRel	true	actividades	golpeó
+Relation	T12	T13	NoRel	true	afectadas	Trayectoria
+Relation	T12	T3	NoRel	true	afectadas	golpeó
+Relation	T13	T0	NoRel	true	Trayectoria	daños
+Relation	T15	T13	NoRel	true	persistió	Trayectoria
+Relation	T15	T9	NoRel	true	persistió	protestas
+Relation	T16	T3	NoRel	true	acompañada	golpeó
+Relation	T16	T5	NoRel	true	acompañada	afectaron
+Relation	T16	T8	NoRel	true	acompañada	serie
+Relation	T17	T10	NoRel	true	ciclón	actividades
+Relation	T2	T15	NoRel	true	muertes	persistió
+Relation	T2	T16	NoRel	true	muertes	acompañada
+Relation	T3	T12	NoRel	true	golpeó	afectadas
+Relation	T3	T17	NoRel	true	golpeó	ciclón
+Relation	T3	T4	NoRel	true	golpeó	golpeó
+Relation	T3	T8	NoRel	true	golpeó	serie
+Relation	T4	T1	NoRel	true	golpeó	trayectoria
+Relation	T4	T10	NoRel	true	golpeó	actividades
+Relation	T5	T13	NoRel	true	afectaron	Trayectoria
+Relation	T5	T7	NoRel	true	afectaron	golpeó
+Relation	T7	T12	NoRel	true	golpeó	afectadas
+Relation	T7	T14	NoRel	true	golpeó	circulación
+Relation	T8	T2	NoRel	true	serie	muertes
+Relation	T8	T6	NoRel	true	serie	damnificadas
+Relation	T9	T17	NoRel	true	protestas	ciclón

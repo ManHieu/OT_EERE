@@ -1,0 +1,30 @@
+Text	Det antages , at årsagen til ulykken var , at lokomotivføreren troede , at udkørselssignalet for et gennemkørende tog fra København var gældende for hans tog .	De to udkørselssignaler stod på linje ved hver sit spor , og sporanlægget var udformet således , at da tog 6311 fejlagtigt kørte forbi udkørselssignalet , blev det ledt ad afløbssporet til sporstopperen i stedet for at køre ud i sporet med det gennemkørende tog .			
+Event	T0	antages	EVENT	4
+Event	T1	ulykken	EVENT	29
+Event	T2	troede	EVENT	63
+Event	T3	udformet	EVENT	238
+Event	T4	kørte	EVENT	283
+Event	T5	ledt	EVENT	324
+Event	T6	udkørselssignalet	EVENT	75
+Event	T7	gennemkørende	EVENT	100
+Event	T8	gældende	EVENT	136
+Event	T9	udkørselssignaler	EVENT	166
+Event	T10	udkørselssignalet	EVENT	295
+Event	T11	køre	EVENT	379
+Event	T12	gennemkørende	EVENT	404
+Event	T13	stod	EVENT	184
+Relation	T0	T13	NoRel	true	antages	stod
+Relation	T10	T13	NoRel	true	udkørselssignalet	stod
+Relation	T11	T5	NoRel	true	køre	ledt
+Relation	T12	T13	NoRel	true	gennemkørende	stod
+Relation	T12	T5	NoRel	true	gennemkørende	ledt
+Relation	T12	T9	NoRel	true	gennemkørende	udkørselssignaler
+Relation	T2	T3	NoRel	true	troede	udformet
+Relation	T3	T0	NoRel	true	udformet	antages
+Relation	T3	T9	NoRel	true	udformet	udkørselssignaler
+Relation	T4	T12	NoRel	true	kørte	gennemkørende
+Relation	T5	T0	NoRel	true	ledt	antages
+Relation	T6	T2	NoRel	true	udkørselssignalet	troede
+Relation	T7	T4	NoRel	true	gennemkørende	kørte
+Relation	T8	T5	NoRel	true	gældende	ledt
+Relation	T9	T1	NoRel	true	udkørselssignaler	ulykken

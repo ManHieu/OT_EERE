@@ -1,0 +1,39 @@
+Text	»	1826 yılında Tasmanya yerlileri ekonomik ve siyasi mağduriyetlerinin giderilmesi ve intikam olarak umutsuz gerilla savaşına başlarlar .	Oyster Bay boyunun kabile reisi _ Tukalunginta _ ( _ Tongerlongeter , Tongerlongter _ ; Beyaz adı : _ King William _ ; ölümü : 1837 ) vaiz Robinson'a kendilerinin ve atalarının Beyazlar tarafından acımasızca istismar edildiğini , öldürüldüğünü , eş ve kızlarının kaçırılıp uzağa götürüldüğünü söylemiştir .	Britanyalıların askeri stratejisi tökezlerken yerliler üç yıl Beyazlar üzerine saldırılarını yoğunlaştırmışlardır .	1826 ve 1827 yıllarında sömürgeciler ve mülkleri üzerine yerlilerin yüzden fazla saldırısı olmuş ve 42 Beyaz öldürülmüş bir çoğu da yaralanmıştır .
+Event	T0	giderilmesi	EVENT	71
+Event	T1	ölümü	EVENT	257
+Event	T2	öldürüldüğünü	EVENT	368
+Event	T3	kaçırılıp	EVENT	401
+Event	T4	söylemiştir	EVENT	431
+Event	T5	tökezlerken	EVENT	479
+Event	T8	öldürülmüş	EVENT	670
+Event	T9	yaralanmıştır	EVENT	693
+Event	T10	başlarlar	EVENT	126
+Event	T11	intikam	EVENT	86
+Event	T12	edildiğini	EVENT	355
+Event	T13	yoğunlaştırmışlardır	EVENT	538
+Event	T6	saldırısı	EVENT	642
+Relation	T0	T10	NoRel	true	giderilmesi	başlarlar
+Relation	T0	T13	NoRel	true	giderilmesi	yoğunlaştırmışlardır
+Relation	T0	T8	NoRel	true	giderilmesi	öldürülmüş
+Relation	T1	T5	NoRel	true	ölümü	tökezlerken
+Relation	T10	T4	NoRel	true	başlarlar	söylemiştir
+Relation	T11	T9	NoRel	true	intikam	yaralanmıştır
+Relation	T13	T1	NoRel	true	yoğunlaştırmışlardır	ölümü
+Relation	T13	T11	NoRel	true	yoğunlaştırmışlardır	intikam
+Relation	T13	T2	NoRel	true	yoğunlaştırmışlardır	öldürüldüğünü
+Relation	T13	T9	NoRel	true	yoğunlaştırmışlardır	yaralanmıştır
+Relation	T2	T4	NoRel	true	öldürüldüğünü	söylemiştir
+Relation	T3	T11	NoRel	true	kaçırılıp	intikam
+Relation	T3	T13	NoRel	true	kaçırılıp	yoğunlaştırmışlardır
+Relation	T3	T2	NoRel	true	kaçırılıp	öldürüldüğünü
+Relation	T3	T4	NoRel	true	kaçırılıp	söylemiştir
+Relation	T5	T3	NoRel	true	tökezlerken	kaçırılıp
+Relation	T5	T4	NoRel	true	tökezlerken	söylemiştir
+Relation	T8	T1	NoRel	true	öldürülmüş	ölümü
+Relation	T8	T13	NoRel	true	öldürülmüş	yoğunlaştırmışlardır
+Relation	T8	T2	NoRel	true	öldürülmüş	öldürüldüğünü
+Relation	T8	T9	NoRel	true	öldürülmüş	yaralanmıştır
+Relation	T9	T1	NoRel	true	yaralanmıştır	ölümü
+Relation	T9	T11	NoRel	true	yaralanmıştır	intikam
+Relation	T9	T2	NoRel	true	yaralanmıştır	öldürüldüğünü
+Relation	T9	T4	NoRel	true	yaralanmıştır	söylemiştir

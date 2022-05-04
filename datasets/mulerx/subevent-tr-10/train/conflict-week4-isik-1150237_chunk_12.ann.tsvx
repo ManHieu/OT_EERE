@@ -1,0 +1,31 @@
+Text	Bu zamana kadar sadece sınırlı sayıda Saddam yanlısı tarafından yürütüldüğü düşünülen direnişin daha yaygın ve örgütlü olduğu ortaya çıkmıştır .	Ayrıca ABD’nin işgal döneminde yerel birliklere ve milislere güvenemeyeceği kanıtlanmıştır .	Muharebe sırasında çok sayıda sivil hayatını kaybedecek ve ABD’nin Irak halkına karşı tutumu sorgulanmaya başlanacaktır .	ABD’nin burada kullandığı fosforlu mermiler ve napalm bombaları da uluslararası kamuoyu tarafından eleştirilmiştir .	BBC tarafından ortaya çıkarılan olayda topçu birliklerinin uluslararası yasayı çiğneyerek yasadışı silahlar kullandığı ispatlanmıştır .
+Event	T0	direnişin	EVENT	86
+Event	T1	çıkmıştır	EVENT	133
+Event	T2	işgal	EVENT	160
+Event	T3	kanıtlanmıştır	EVENT	221
+Event	T4	kaybedecek	EVENT	283
+Event	T5	kullandığı	EVENT	375
+Event	T6	eleştirilmiştir	EVENT	459
+Event	T8	ispatlanmıştır	EVENT	596
+Event	T9	Muharebe	EVENT	238
+Event	T10	başlanacaktır	EVENT	344
+Event	T7	çıkarılan	EVENT	499
+Event	T11	olayda	EVENT	509
+Event	T12	kullandığı	EVENT	585
+Event	T13	çiğneyerek	EVENT	556
+Relation	T0	T2	NoRel	true	direnişin	işgal
+Relation	T0	T4	NoRel	true	direnişin	kaybedecek
+Relation	T1	T0	NoRel	true	çıkmıştır	direnişin
+Relation	T10	T13	NoRel	true	başlanacaktır	çiğneyerek
+Relation	T12	T4	NoRel	true	kullandığı	kaybedecek
+Relation	T13	T4	NoRel	true	çiğneyerek	kaybedecek
+Relation	T2	T0	NoRel	true	işgal	direnişin
+Relation	T3	T5	NoRel	true	kanıtlanmıştır	kullandığı
+Relation	T4	T13	NoRel	true	kaybedecek	çiğneyerek
+Relation	T4	T5	NoRel	true	kaybedecek	kullandığı
+Relation	T5	T2	NoRel	true	kullandığı	işgal
+Relation	T7	T6	NoRel	true	çıkarılan	eleştirilmiştir
+Relation	T8	T1	NoRel	true	ispatlanmıştır	çıkmıştır
+Relation	T8	T13	NoRel	true	ispatlanmıştır	çiğneyerek
+Relation	T9	T1	NoRel	true	Muharebe	çıkmıştır
+Relation	T9	T4	NoRel	true	Muharebe	kaybedecek

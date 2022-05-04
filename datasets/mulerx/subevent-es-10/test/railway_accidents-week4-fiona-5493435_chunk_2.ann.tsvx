@@ -1,0 +1,101 @@
+Text	Después de la partida , el jefe de la estación de Nelas telefoneó a la estación de Moimenta-Alcafache , para avisar de la partida del Internacional , siendo , entonces , informado , que el servicio Regional ya se encontraba de camino .	Previendo que las formaciones iban a colisionar , intentó avisar al guardabarrera de un paso a nivel entre ambas estaciones , de modo que este parase la formación a través del movimiento de una bandera o de la colocación de petardos en la vía ; no obstante , esta maniobra no fue posible porque el convoy ya había pasado .	Alrededor de las 18.37 ambas formaciones colisionaron , cuando circulaban a una velocidad aproximada de 100 km/h ; el choque destruyó las locomotoras y algunos coches en ambas formaciones y provocó varios incendios debido al combustible presente en las locomotoras y en los sistemas de calefacción de los coches .	Debido a que los materiales utilizados en los vagones no eran a prueba de llamas , el fuego se propagó rápidamente , produciendo grandes cantidades de humo .	Tras el choque se cundió el pánico entre los pasajeros que intentaron salir de los coches .
+Event	T0	partida	EVENT	14
+Event	T1	partida	EVENT	122
+Event	T2	informado	EVENT	170
+Event	T3	Previendo	EVENT	236
+Event	T4	colisionar	EVENT	273
+Event	T5	avisar	EVENT	294
+Event	T6	paso	EVENT	324
+Event	T7	parase	EVENT	379
+Event	T8	formación	EVENT	389
+Event	T9	movimiento	EVENT	412
+Event	T10	colocación	EVENT	446
+Event	T11	maniobra	EVENT	500
+Event	T12	pasado	EVENT	550
+Event	T13	colisionaron	EVENT	600
+Event	T14	circulaban	EVENT	622
+Event	T15	destruyó	EVENT	684
+Event	T16	provocó	EVENT	749
+Event	T17	utilizados	EVENT	901
+Event	T18	fuego	EVENT	959
+Event	T19	propagó	EVENT	968
+Event	T20	produciendo	EVENT	990
+Event	T21	choque	EVENT	1039
+Event	T22	cundió	EVENT	1049
+Event	T23	pánico	EVENT	1059
+Event	T24	salir	EVENT	1101
+Event	T25	choque	EVENT	677
+Event	T26	incendios	EVENT	764
+Relation	T0	T15	NoRel	true	partida	destruyó
+Relation	T0	T2	NoRel	true	partida	informado
+Relation	T0	T3	NoRel	true	partida	Previendo
+Relation	T1	T10	NoRel	true	partida	colocación
+Relation	T10	T18	NoRel	true	colocación	fuego
+Relation	T11	T1	NoRel	true	maniobra	partida
+Relation	T11	T25	NoRel	true	maniobra	choque
+Relation	T12	T1	NoRel	true	pasado	partida
+Relation	T12	T11	NoRel	true	pasado	maniobra
+Relation	T12	T15	NoRel	true	pasado	destruyó
+Relation	T12	T20	NoRel	true	pasado	produciendo
+Relation	T12	T7	NoRel	true	pasado	parase
+Relation	T13	T24	NoRel	true	colisionaron	salir
+Relation	T14	T18	NoRel	true	circulaban	fuego
+Relation	T15	T24	NoRel	true	destruyó	salir
+Relation	T15	T5	NoRel	true	destruyó	avisar
+Relation	T15	T6	NoRel	true	destruyó	paso
+Relation	T15	T7	NoRel	true	destruyó	parase
+Relation	T16	T11	NoRel	true	provocó	maniobra
+Relation	T16	T21	NoRel	true	provocó	choque
+Relation	T16	T24	NoRel	true	provocó	salir
+Relation	T16	T5	NoRel	true	provocó	avisar
+Relation	T16	T7	NoRel	true	provocó	parase
+Relation	T17	T11	NoRel	true	utilizados	maniobra
+Relation	T17	T25	NoRel	true	utilizados	choque
+Relation	T17	T5	NoRel	true	utilizados	avisar
+Relation	T17	T6	NoRel	true	utilizados	paso
+Relation	T17	T7	NoRel	true	utilizados	parase
+Relation	T18	T13	NoRel	true	fuego	colisionaron
+Relation	T18	T15	NoRel	true	fuego	destruyó
+Relation	T18	T22	NoRel	true	fuego	cundió
+Relation	T18	T4	NoRel	true	fuego	colisionar
+Relation	T19	T17	NoRel	true	propagó	utilizados
+Relation	T19	T21	NoRel	true	propagó	choque
+Relation	T2	T21	NoRel	true	informado	choque
+Relation	T2	T7	NoRel	true	informado	parase
+Relation	T20	T1	NoRel	true	produciendo	partida
+Relation	T20	T16	NoRel	true	produciendo	provocó
+Relation	T21	T14	NoRel	true	choque	circulaban
+Relation	T21	T3	NoRel	true	choque	Previendo
+Relation	T21	T5	NoRel	true	choque	avisar
+Relation	T21	T9	NoRel	true	choque	movimiento
+Relation	T22	T6	NoRel	true	cundió	paso
+Relation	T23	T10	NoRel	true	pánico	colocación
+Relation	T24	T0	NoRel	true	salir	partida
+Relation	T24	T20	NoRel	true	salir	produciendo
+Relation	T24	T21	NoRel	true	salir	choque
+Relation	T24	T7	NoRel	true	salir	parase
+Relation	T24	T8	NoRel	true	salir	formación
+Relation	T25	T2	NoRel	true	choque	informado
+Relation	T26	T4	NoRel	true	incendios	colisionar
+Relation	T3	T11	NoRel	true	Previendo	maniobra
+Relation	T3	T16	NoRel	true	Previendo	provocó
+Relation	T3	T5	NoRel	true	Previendo	avisar
+Relation	T4	T1	NoRel	true	colisionar	partida
+Relation	T4	T17	NoRel	true	colisionar	utilizados
+Relation	T4	T25	NoRel	true	colisionar	choque
+Relation	T5	T14	NoRel	true	avisar	circulaban
+Relation	T5	T25	NoRel	true	avisar	choque
+Relation	T5	T26	NoRel	true	avisar	incendios
+Relation	T5	T9	NoRel	true	avisar	movimiento
+Relation	T6	T1	NoRel	true	paso	partida
+Relation	T6	T21	NoRel	true	paso	choque
+Relation	T6	T25	NoRel	true	paso	choque
+Relation	T6	T3	NoRel	true	paso	Previendo
+Relation	T6	T9	NoRel	true	paso	movimiento
+Relation	T7	T19	NoRel	true	parase	propagó
+Relation	T7	T22	NoRel	true	parase	cundió
+Relation	T8	T22	NoRel	true	formación	cundió
+Relation	T8	T7	NoRel	true	formación	parase
+Relation	T9	T15	NoRel	true	movimiento	destruyó
+Relation	T9	T22	NoRel	true	movimiento	cundió
+Relation	T9	T5	NoRel	true	movimiento	avisar

@@ -1,0 +1,61 @@
+Text	_ STAR TIGER _ ( registration G - AHNP ) was an Avro Tudor IV passenger aircraft owned and operated by British South American Airways ( BSAA ) which disappeared without a trace over the Atlantic Ocean while on a flight between Santa Maria in the Azores and Bermuda in the early morning of 30 January 1948 .	The loss of the aircraft along with that of BSAA Avro Tudor _ Star Ariel _ in 1949 remains unsolved , with the resulting speculation helping to develop the Bermuda Triangle legend .	British South American Airways ( BSAA ) was an airline created by former World War II pilots in an effort to provide service on the previously untapped South American trade and passenger routes .	Originally named British Latin American Air Lines ( BLAIR ) it was split off from the British Overseas Airways Corporation to operate its South Atlantic routes .	It commenced transatlantic services in March 1946 , with a BSAA Avro Lancastrian making the first operational flight from London 's Heathrow Airport .
+Event	T0	operated	EVENT	91
+Event	T1	disappeared	EVENT	149
+Event	T10	named	EVENT	696
+Event	T11	operate	EVENT	811
+Event	T12	commenced	EVENT	850
+Event	T13	services	EVENT	874
+Event	T14	making	EVENT	928
+Event	T15	flight	EVENT	957
+Event	T16	owned	EVENT	81
+Event	T17	split off	EVENT	752
+Event	T2	flight	EVENT	212
+Event	T3	loss	EVENT	311
+Event	T4	unsolved	EVENT	398
+Event	T5	helping	EVENT	440
+Event	T6	develop	EVENT	451
+Event	T7	provide	EVENT	598
+Event	T8	created	EVENT	544
+Event	T9	effort	EVENT	588
+Relation	T0	T16	SuperSub	true	operated	owned
+Relation	T16	T0	SubSuper	true	owned	operated
+Relation	T1	T2	SuperSub	true	disappeared	flight
+Relation	T2	T1	SubSuper	true	flight	disappeared
+Relation	T3	T1	SuperSub	true	loss	disappeared
+Relation	T1	T3	SubSuper	true	disappeared	loss
+Relation	T14	T12	SuperSub	true	making	commenced
+Relation	T12	T14	SubSuper	true	commenced	making
+Relation	T0	T1	NoRel	true	operated	disappeared
+Relation	T0	T15	NoRel	true	operated	flight
+Relation	T0	T6	NoRel	true	operated	develop
+Relation	T0	T7	NoRel	true	operated	provide
+Relation	T0	T9	NoRel	true	operated	effort
+Relation	T1	T12	NoRel	true	disappeared	commenced
+Relation	T1	T13	NoRel	true	disappeared	services
+Relation	T1	T14	NoRel	true	disappeared	making
+Relation	T1	T15	NoRel	true	disappeared	flight
+Relation	T1	T4	NoRel	true	disappeared	unsolved
+Relation	T1	T5	NoRel	true	disappeared	helping
+Relation	T10	T13	NoRel	true	named	services
+Relation	T10	T4	NoRel	true	named	unsolved
+Relation	T10	T9	NoRel	true	named	effort
+Relation	T11	T0	NoRel	true	operate	operated
+Relation	T11	T3	NoRel	true	operate	loss
+Relation	T11	T6	NoRel	true	operate	develop
+Relation	T12	T13	NoRel	true	commenced	services
+Relation	T12	T9	NoRel	true	commenced	effort
+Relation	T13	T5	NoRel	true	services	helping
+Relation	T15	T13	NoRel	true	flight	services
+Relation	T15	T4	NoRel	true	flight	unsolved
+Relation	T16	T1	NoRel	true	owned	disappeared
+Relation	T16	T3	NoRel	true	owned	loss
+Relation	T3	T12	NoRel	true	loss	commenced
+Relation	T3	T13	NoRel	true	loss	services
+Relation	T3	T6	NoRel	true	loss	develop
+Relation	T3	T9	NoRel	true	loss	effort
+Relation	T4	T13	NoRel	true	unsolved	services
+Relation	T6	T1	NoRel	true	develop	disappeared
+Relation	T8	T13	NoRel	true	created	services
+Relation	T8	T16	NoRel	true	created	owned
+Relation	T8	T5	NoRel	true	created	helping
+Relation	T9	T10	NoRel	true	effort	named

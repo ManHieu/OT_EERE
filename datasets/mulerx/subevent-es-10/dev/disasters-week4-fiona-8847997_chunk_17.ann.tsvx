@@ -1,0 +1,47 @@
+Text	El 23 de marzo , se declaró la situación como Emergencia de Nivel 3 , una categoría que solo tienen las guerras civiles de Yemen , Siria y Sudán del Sur .	El 24 de marzo , la ONU hizo un llamamiento urgente para conseguir $ 282 millones ( 249 millones de € ) para comenzar la reconstrucción de Mozambique en los próximos tres meses .	: La Unión Europea anunció una ayuda de 3.5 millones para Mozambique , Zimbabue y Malawi tras el paso del ciclón .	Canalizó la ayuda en dos millones para Mozambique , uno para Malawi y 500_000 € para Zimbabue , así como 250_000 € de ayuda humanitaria inicial .	La Unión Europea también cubriría el apoyo logístico para alcanzar las poblaciones afectadas .
+Event	T0	declaró	EVENT	20
+Event	T1	situación	EVENT	31
+Event	T2	Emergencia	EVENT	46
+Event	T3	hizo	EVENT	179
+Event	T4	llamamiento	EVENT	187
+Event	T5	conseguir	EVENT	212
+Event	T6	comenzar	EVENT	264
+Event	T7	reconstrucción	EVENT	276
+Event	T8	anunció	EVENT	353
+Event	T9	ayuda	EVENT	365
+Event	T10	paso	EVENT	431
+Event	T11	ciclón	EVENT	440
+Event	T12	Canalizó	EVENT	449
+Event	T13	ayuda	EVENT	461
+Event	T14	ayuda	EVENT	567
+Event	T15	cubriría	EVENT	620
+Event	T16	alcanzar	EVENT	653
+Event	T17	afectadas	EVENT	678
+Relation	T0	T12	NoRel	true	declaró	Canalizó
+Relation	T0	T17	NoRel	true	declaró	afectadas
+Relation	T1	T17	NoRel	true	situación	afectadas
+Relation	T1	T8	NoRel	true	situación	anunció
+Relation	T10	T7	NoRel	true	paso	reconstrucción
+Relation	T12	T15	NoRel	true	Canalizó	cubriría
+Relation	T12	T9	NoRel	true	Canalizó	ayuda
+Relation	T13	T15	NoRel	true	ayuda	cubriría
+Relation	T13	T2	NoRel	true	ayuda	Emergencia
+Relation	T13	T9	NoRel	true	ayuda	ayuda
+Relation	T14	T2	NoRel	true	ayuda	Emergencia
+Relation	T15	T8	NoRel	true	cubriría	anunció
+Relation	T16	T2	NoRel	true	alcanzar	Emergencia
+Relation	T17	T13	NoRel	true	afectadas	ayuda
+Relation	T2	T15	NoRel	true	Emergencia	cubriría
+Relation	T2	T17	NoRel	true	Emergencia	afectadas
+Relation	T3	T7	NoRel	true	hizo	reconstrucción
+Relation	T5	T11	NoRel	true	conseguir	ciclón
+Relation	T5	T17	NoRel	true	conseguir	afectadas
+Relation	T6	T5	NoRel	true	comenzar	conseguir
+Relation	T7	T16	NoRel	true	reconstrucción	alcanzar
+Relation	T7	T3	NoRel	true	reconstrucción	hizo
+Relation	T8	T14	NoRel	true	anunció	ayuda
+Relation	T8	T5	NoRel	true	anunció	conseguir
+Relation	T9	T0	NoRel	true	ayuda	declaró
+Relation	T9	T1	NoRel	true	ayuda	situación
+Relation	T9	T15	NoRel	true	ayuda	cubriría
+Relation	T9	T5	NoRel	true	ayuda	conseguir

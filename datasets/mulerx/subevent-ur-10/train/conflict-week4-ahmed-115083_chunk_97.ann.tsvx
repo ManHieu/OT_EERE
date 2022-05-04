@@ -1,0 +1,63 @@
+Text	1993ء میں لاہور میں سپاہ محمد کے نام سے ایک شیعہ دہشت گرد تنظیم کا قیام ہوا جس نے سپاہ صحابہ کے حملوں کے جواب میں دیوبندی حضرات پر حملے کرنا شروع کیے ۔	چنانچہ اگر کسی شیعہ مسجد پر حملہ ہوتا تو کچھ ہی دنوں میں کسی دیوبندی مسجد میں بے گناہ لوگ قتل کیے جاتے ۔	حکومت نے صورت حال خطرناک ہوتے دیکھ کر دونوں تنظیموں کے گرد گھیرا تنگ کرنا چاہا تو مولانا ضیاء الرحمن فاروقی نے سپاہ صحابہ کے عسکری حصے کو لشکر جھنگوی کا نام دے کر لا تعلقی کا اعلان کر دیا ، اگرچہ لشکر جھنگوی کے کارکنوں کی گرفتا_ری کی صورت میں سپاہ صحابہ ہی قانونی اور مالی امداد مہیا کرتی ۔	لشکر جھنگوی کے بانی مولانا ضیاء الرحمن فاروقی جنوری 1997ء میں سپاہ محمد کی طرف سے کیے گئے ایک بم دھماکے میں جاں بحق ہو گئے ۔	چونکہ یہ تنظیم سٹریٹجک اثاثوں کے لیے نقصان_دہ ثابت ہو رہی تھی لہذا لاہور پولیس نے آپریشن کر کے سپاہ محمد کا خاتمہ کر دیا ،
+Event	T1	حملوں	EVENT	96
+Event	T2	حملہ	EVENT	180
+Event	T3	دیکھ	EVENT	287
+Event	T4	اعلان	EVENT	432
+Event	T5	کیے	EVENT	630
+Event	T6	دھماکے	EVENT	645
+Event	T8	آپریشن	EVENT	755
+Event	T9	خاتمہ	EVENT	781
+Event	T10	قیام	EVENT	67
+Event	T11	جواب	EVENT	105
+Event	T12	حملے	EVENT	131
+Event	T13	قتل	EVENT	242
+Event	T14	کرنا	EVENT	326
+Event	T15	کر	EVENT	417
+Event	T16	گرفتا_ری	EVENT	479
+Event	T17	مہیا	EVENT	536
+Event	T19	جاں بحق	EVENT	656
+Event	T7	نقصان_دہ	EVENT	710
+Event	T18	ثابت	EVENT	719
+Relation	T11	T12	SuperSub	true	جواب	حملے
+Relation	T12	T11	SubSuper	true	حملے	جواب
+Relation	T4	T15	SuperSub	true	اعلان	کر
+Relation	T15	T4	SubSuper	true	کر	اعلان
+Relation	T1	T11	NoRel	true	حملوں	جواب
+Relation	T10	T19	NoRel	true	قیام	جاں بحق
+Relation	T10	T2	NoRel	true	قیام	حملہ
+Relation	T10	T4	NoRel	true	قیام	اعلان
+Relation	T11	T15	NoRel	true	جواب	کر
+Relation	T11	T2	NoRel	true	جواب	حملہ
+Relation	T12	T15	NoRel	true	حملے	کر
+Relation	T12	T3	NoRel	true	حملے	دیکھ
+Relation	T12	T4	NoRel	true	حملے	اعلان
+Relation	T13	T1	NoRel	true	قتل	حملوں
+Relation	T13	T7	NoRel	true	قتل	نقصان_دہ
+Relation	T14	T1	NoRel	true	کرنا	حملوں
+Relation	T14	T16	NoRel	true	کرنا	گرفتا_ری
+Relation	T14	T2	NoRel	true	کرنا	حملہ
+Relation	T14	T3	NoRel	true	کرنا	دیکھ
+Relation	T14	T7	NoRel	true	کرنا	نقصان_دہ
+Relation	T14	T9	NoRel	true	کرنا	خاتمہ
+Relation	T15	T19	NoRel	true	کر	جاں بحق
+Relation	T15	T6	NoRel	true	کر	دھماکے
+Relation	T16	T5	NoRel	true	گرفتا_ری	کیے
+Relation	T16	T8	NoRel	true	گرفتا_ری	آپریشن
+Relation	T18	T2	NoRel	true	ثابت	حملہ
+Relation	T19	T17	NoRel	true	جاں بحق	مہیا
+Relation	T2	T12	NoRel	true	حملہ	حملے
+Relation	T2	T19	NoRel	true	حملہ	جاں بحق
+Relation	T2	T5	NoRel	true	حملہ	کیے
+Relation	T3	T11	NoRel	true	دیکھ	جواب
+Relation	T3	T2	NoRel	true	دیکھ	حملہ
+Relation	T3	T8	NoRel	true	دیکھ	آپریشن
+Relation	T3	T9	NoRel	true	دیکھ	خاتمہ
+Relation	T4	T13	NoRel	true	اعلان	قتل
+Relation	T4	T19	NoRel	true	اعلان	جاں بحق
+Relation	T5	T13	NoRel	true	کیے	قتل
+Relation	T5	T14	NoRel	true	کیے	کرنا
+Relation	T5	T8	NoRel	true	کیے	آپریشن
+Relation	T6	T1	NoRel	true	دھماکے	حملوں
+Relation	T6	T19	NoRel	true	دھماکے	جاں بحق
+Relation	T7	T18	NoRel	true	نقصان_دہ	ثابت
+Relation	T7	T19	NoRel	true	نقصان_دہ	جاں بحق

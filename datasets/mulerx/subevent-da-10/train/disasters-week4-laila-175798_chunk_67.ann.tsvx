@@ -1,0 +1,39 @@
+Text	Bogen læses og anerkendes ivrigt i historierevisionistiske kredse .	Såvel USAF og RAF har lagt rigeligt med materiale frem der viser at Dresden var et legitimt militært angrebsmål .	Den britiske historiker Frederick Taylor har endvidere fremlagt dokumenter der på ny viser det militærindustrielles betydning for Dresden , de tyske planer på østfronten og de aftaler som man havde med Sovjetunionen .	Han betoner at det var tyskerne der påbegyndte luftkrigen og førte den hensynsløst , og at englændernes eneste mulighed dengang var at sætte en modoffensiv ind .	Hans argument er at angrebene var en militær nødvendighed , uden at udelukke at det kunne stride mod folkeretten .
+Event	T0	læses	EVENT	6
+Event	T1	anerkendes	EVENT	15
+Event	T2	lagt	EVENT	90
+Event	T3	viser	EVENT	127
+Event	T4	angrebsmål	EVENT	169
+Event	T5	fremlagt	EVENT	237
+Event	T6	viser	EVENT	267
+Event	T7	aftaler	EVENT	358
+Event	T8	betoner	EVENT	404
+Event	T9	førte	EVENT	461
+Event	T10	sætte	EVENT	535
+Event	T11	angrebene	EVENT	582
+Event	T12	påbegyndte	EVENT	436
+Event	T13	mulighed	EVENT	511
+Event	T14	kunne	EVENT	646
+Event	T15	nødvendighed	EVENT	607
+Event	T16	planer	EVENT	331
+Relation	T7	T4	SuperSub	true	aftaler	angrebsmål
+Relation	T4	T7	SubSuper	true	angrebsmål	aftaler
+Relation	T1	T11	NoRel	true	anerkendes	angrebene
+Relation	T1	T3	NoRel	true	anerkendes	viser
+Relation	T1	T8	NoRel	true	anerkendes	betoner
+Relation	T12	T7	NoRel	true	påbegyndte	aftaler
+Relation	T13	T1	NoRel	true	mulighed	anerkendes
+Relation	T13	T10	NoRel	true	mulighed	sætte
+Relation	T16	T6	NoRel	true	planer	viser
+Relation	T16	T7	NoRel	true	planer	aftaler
+Relation	T2	T7	NoRel	true	lagt	aftaler
+Relation	T3	T13	NoRel	true	viser	mulighed
+Relation	T3	T5	NoRel	true	viser	fremlagt
+Relation	T4	T12	NoRel	true	angrebsmål	påbegyndte
+Relation	T4	T3	NoRel	true	angrebsmål	viser
+Relation	T4	T6	NoRel	true	angrebsmål	viser
+Relation	T5	T16	NoRel	true	fremlagt	planer
+Relation	T7	T10	NoRel	true	aftaler	sætte
+Relation	T7	T8	NoRel	true	aftaler	betoner
+Relation	T8	T12	NoRel	true	betoner	påbegyndte
+Relation	T8	T13	NoRel	true	betoner	mulighed

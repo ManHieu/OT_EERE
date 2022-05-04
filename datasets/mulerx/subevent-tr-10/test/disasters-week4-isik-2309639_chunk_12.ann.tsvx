@@ -1,0 +1,38 @@
+Text	Tanguy , açlık ve hastalık yüzünden Bali ve Doğu Cava'da başka kurbanlar olabileceğini belirtti .	Tahminlerine göre doğrudan volkanik etkilerden 11 bin kişi , patlamadan hemen sonra açlık ve salgın hastalıklar sonucu 49 bin kişi ölmüştür .	Oppenheimer ( 2003 ) , toplamda en az 71 bin kişinin öldüğünü söylemiştir .	Reid , Bali ve diğer yerlerde Sumbawa'nın ötesine geçen toplam doğrudan ve dolaylı ölümlerin not edilmesini ve belki de 100 bin rakamının uygun bir tahmin olduğunu belirtmektedir .	Kategori : 1815'te Asya Kategori : 19. yüzyıldaki volkanik olaylar Kategori : Endonezya'da volkanizma Kategori : 1815'teki doğal afetler Kategori : Endonezya'daki doğal afetler Kategori : Sumbawa
+Event	T0	hastalık	EVENT	18
+Event	T1	belirtti	EVENT	87
+Event	T2	Tahminlerine	EVENT	98
+Event	T3	patlamadan	EVENT	159
+Event	T4	ölmüştür	EVENT	229
+Event	T5	söylemiştir	EVENT	302
+Event	T7	tahmin	EVENT	464
+Event	T8	belirtmektedir	EVENT	480
+Event	T9	açlık	EVENT	9
+Event	T10	açlık	EVENT	182
+Event	T11	salgın	EVENT	191
+Event	T6	olaylar	EVENT	556
+Event	T12	afetler	EVENT	626
+Event	T13	afetler	EVENT	666
+Relation	T0	T7	NoRel	true	hastalık	tahmin
+Relation	T0	T8	NoRel	true	hastalık	belirtmektedir
+Relation	T0	T9	NoRel	true	hastalık	açlık
+Relation	T1	T0	NoRel	true	belirtti	hastalık
+Relation	T1	T13	NoRel	true	belirtti	afetler
+Relation	T1	T5	NoRel	true	belirtti	söylemiştir
+Relation	T1	T8	NoRel	true	belirtti	belirtmektedir
+Relation	T10	T1	NoRel	true	açlık	belirtti
+Relation	T10	T5	NoRel	true	açlık	söylemiştir
+Relation	T10	T6	NoRel	true	açlık	olaylar
+Relation	T12	T6	NoRel	true	afetler	olaylar
+Relation	T13	T3	NoRel	true	afetler	patlamadan
+Relation	T13	T9	NoRel	true	afetler	açlık
+Relation	T3	T7	NoRel	true	patlamadan	tahmin
+Relation	T4	T11	NoRel	true	ölmüştür	salgın
+Relation	T5	T7	NoRel	true	söylemiştir	tahmin
+Relation	T6	T2	NoRel	true	olaylar	Tahminlerine
+Relation	T6	T7	NoRel	true	olaylar	tahmin
+Relation	T7	T1	NoRel	true	tahmin	belirtti
+Relation	T7	T9	NoRel	true	tahmin	açlık
+Relation	T8	T7	NoRel	true	belirtmektedir	tahmin
+Relation	T8	T9	NoRel	true	belirtmektedir	açlık
+Relation	T9	T3	NoRel	true	açlık	patlamadan

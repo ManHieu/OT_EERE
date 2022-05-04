@@ -1,0 +1,28 @@
+Text	Ayrıca olaylar sırasında yüzlerce kişi yaralanmıştır .	Ardından gelen dalgada 200'den fazla kişi tutuklandı ve daha sonra Sibirya'daki çalışma kamplarına sürüldü .	Mart 1956 gösterileri Gürcistan Komünist Partisi içindeki çatlakları genişletti , çünkü bazı yetkililer halkla dayanışma gösterdiklerini açıkça ifade etti .	Temmuz 1956'da Moskova Merkez Komitesi Gürcü Komünist liderliğini eleştiren bir karar çıkardı ve Ağustos ayında Tiflis'teki parti ikinci sekreterinin yerini bir Rus aldı .	Ancak Mjavanadze , röportajlarında kurban sayısını en aza indirerek ve partinin yeni görüşleri tartışmak için bir konferans programına sahip olduğunu duyurarak Gürcüleri sakinleştirdi .
+Event	T0	olaylar	EVENT	7
+Event	T1	yaralanmıştır	EVENT	39
+Event	T3	tutuklandı	EVENT	97
+Event	T4	sürüldü	EVENT	154
+Event	T5	genişletti	EVENT	233
+Event	T6	etti	EVENT	314
+Event	T7	eleştiren	EVENT	387
+Event	T9	aldı	EVENT	486
+Event	T10	sakinleştirdi	EVENT	663
+Event	T11	dalgada	EVENT	70
+Event	T2	gösterileri	EVENT	174
+Event	T8	karar	EVENT	401
+Event	T12	indirerek	EVENT	551
+Event	T13	tartışmak	EVENT	588
+Event	T14	duyurarak	EVENT	643
+Relation	T1	T0	NoRel	true	yaralanmıştır	olaylar
+Relation	T10	T12	NoRel	true	sakinleştirdi	indirerek
+Relation	T10	T13	NoRel	true	sakinleştirdi	tartışmak
+Relation	T10	T9	NoRel	true	sakinleştirdi	aldı
+Relation	T12	T13	NoRel	true	indirerek	tartışmak
+Relation	T12	T14	NoRel	true	indirerek	duyurarak
+Relation	T12	T5	NoRel	true	indirerek	genişletti
+Relation	T13	T0	NoRel	true	tartışmak	olaylar
+Relation	T3	T5	NoRel	true	tutuklandı	genişletti
+Relation	T4	T9	NoRel	true	sürüldü	aldı
+Relation	T8	T0	NoRel	true	karar	olaylar
+Relation	T9	T4	NoRel	true	aldı	sürüldü

@@ -1,0 +1,118 @@
+Text	The aircraft , which left from Posadas and was due to land in Aeroparque Jorge Newbery , Buenos Aires , was forced to divert towards Fray Bentos to avoid a storm .	Examination of the aircraft 's flight data recorder ( FDR ) revealed that shortly after the diversion occurred , the aircraft airspeed indicator began to fall to an alarmingly low indicated airspeed .	Unknown to the pilots , this was caused not directly , by a loss of power , but by ice formed inside the pitot tube , which reads the airspeed for the indicator by measuring the pressure of inflow air .	The ice obstructing the pitot tube reduced the air inflow , thus giving an erroneously low indicated airspeed .	In response to what they interpreted as a loss of engine power , the pilots gradually increased power from the engines in order to maintain airspeed ; seeing no improvement , they contacted the control tower in Ezeiza Airport and requested clearance to descend to a lower altitude .
+Event	T0	left	EVENT	21
+Event	T1	land	EVENT	54
+Event	T2	forced	EVENT	108
+Event	T3	divert	EVENT	118
+Event	T4	storm	EVENT	156
+Event	T5	Examination	EVENT	164
+Event	T6	revealed	EVENT	224
+Event	T7	occurred	EVENT	266
+Event	T8	began	EVENT	309
+Event	T9	fall	EVENT	318
+Event	T10	caused	EVENT	398
+Event	T11	loss	EVENT	425
+Event	T12	formed	EVENT	452
+Event	T13	reads	EVENT	489
+Event	T14	measuring	EVENT	529
+Event	T15	obstructing	EVENT	576
+Event	T16	reduced	EVENT	603
+Event	T17	inflow	EVENT	619
+Event	T18	giving	EVENT	633
+Event	T19	response	EVENT	683
+Event	T20	interpreted	EVENT	705
+Event	T21	loss	EVENT	722
+Event	T22	seeing	EVENT	831
+Event	T23	improvement	EVENT	841
+Event	T24	contacted	EVENT	860
+Event	T25	clearance	EVENT	920
+Event	T26	descend	EVENT	933
+Event	T27	increased	EVENT	766
+Event	T28	maintain	EVENT	811
+Relation	T0	T1	SuperSub	true	left	land
+Relation	T1	T0	SubSuper	true	land	left
+Relation	T7	T8	SuperSub	true	occurred	began
+Relation	T8	T7	SubSuper	true	began	occurred
+Relation	T12	T13	SuperSub	true	formed	reads
+Relation	T13	T12	SubSuper	true	reads	formed
+Relation	T20	T19	SuperSub	true	interpreted	response
+Relation	T19	T20	SubSuper	true	response	interpreted
+Relation	T0	T20	NoRel	true	left	interpreted
+Relation	T0	T9	NoRel	true	left	fall
+Relation	T1	T15	NoRel	true	land	obstructing
+Relation	T1	T28	NoRel	true	land	maintain
+Relation	T10	T20	NoRel	true	caused	interpreted
+Relation	T10	T5	NoRel	true	caused	Examination
+Relation	T11	T10	NoRel	true	loss	caused
+Relation	T11	T24	NoRel	true	loss	contacted
+Relation	T11	T27	NoRel	true	loss	increased
+Relation	T12	T18	NoRel	true	formed	giving
+Relation	T12	T20	NoRel	true	formed	interpreted
+Relation	T12	T25	NoRel	true	formed	clearance
+Relation	T13	T21	NoRel	true	reads	loss
+Relation	T13	T23	NoRel	true	reads	improvement
+Relation	T14	T16	NoRel	true	measuring	reduced
+Relation	T14	T22	NoRel	true	measuring	seeing
+Relation	T14	T26	NoRel	true	measuring	descend
+Relation	T15	T3	NoRel	true	obstructing	divert
+Relation	T15	T6	NoRel	true	obstructing	revealed
+Relation	T16	T0	NoRel	true	reduced	left
+Relation	T16	T15	NoRel	true	reduced	obstructing
+Relation	T16	T5	NoRel	true	reduced	Examination
+Relation	T16	T9	NoRel	true	reduced	fall
+Relation	T17	T3	NoRel	true	inflow	divert
+Relation	T17	T5	NoRel	true	inflow	Examination
+Relation	T17	T8	NoRel	true	inflow	began
+Relation	T2	T10	NoRel	true	forced	caused
+Relation	T2	T14	NoRel	true	forced	measuring
+Relation	T2	T21	NoRel	true	forced	loss
+Relation	T2	T5	NoRel	true	forced	Examination
+Relation	T2	T8	NoRel	true	forced	began
+Relation	T20	T15	NoRel	true	interpreted	obstructing
+Relation	T20	T17	NoRel	true	interpreted	inflow
+Relation	T20	T2	NoRel	true	interpreted	forced
+Relation	T20	T24	NoRel	true	interpreted	contacted
+Relation	T20	T3	NoRel	true	interpreted	divert
+Relation	T21	T17	NoRel	true	loss	inflow
+Relation	T21	T25	NoRel	true	loss	clearance
+Relation	T21	T3	NoRel	true	loss	divert
+Relation	T22	T11	NoRel	true	seeing	loss
+Relation	T22	T15	NoRel	true	seeing	obstructing
+Relation	T22	T7	NoRel	true	seeing	occurred
+Relation	T23	T13	NoRel	true	improvement	reads
+Relation	T23	T17	NoRel	true	improvement	inflow
+Relation	T23	T21	NoRel	true	improvement	loss
+Relation	T23	T24	NoRel	true	improvement	contacted
+Relation	T23	T25	NoRel	true	improvement	clearance
+Relation	T23	T27	NoRel	true	improvement	increased
+Relation	T24	T12	NoRel	true	contacted	formed
+Relation	T24	T16	NoRel	true	contacted	reduced
+Relation	T25	T14	NoRel	true	clearance	measuring
+Relation	T25	T15	NoRel	true	clearance	obstructing
+Relation	T25	T17	NoRel	true	clearance	inflow
+Relation	T25	T18	NoRel	true	clearance	giving
+Relation	T25	T26	NoRel	true	clearance	descend
+Relation	T25	T3	NoRel	true	clearance	divert
+Relation	T25	T5	NoRel	true	clearance	Examination
+Relation	T25	T9	NoRel	true	clearance	fall
+Relation	T26	T12	NoRel	true	descend	formed
+Relation	T26	T20	NoRel	true	descend	interpreted
+Relation	T26	T23	NoRel	true	descend	improvement
+Relation	T26	T3	NoRel	true	descend	divert
+Relation	T28	T0	NoRel	true	maintain	left
+Relation	T3	T17	NoRel	true	divert	inflow
+Relation	T3	T19	NoRel	true	divert	response
+Relation	T3	T26	NoRel	true	divert	descend
+Relation	T3	T27	NoRel	true	divert	increased
+Relation	T4	T10	NoRel	true	storm	caused
+Relation	T4	T13	NoRel	true	storm	reads
+Relation	T4	T14	NoRel	true	storm	measuring
+Relation	T4	T21	NoRel	true	storm	loss
+Relation	T5	T1	NoRel	true	Examination	land
+Relation	T5	T13	NoRel	true	Examination	reads
+Relation	T5	T19	NoRel	true	Examination	response
+Relation	T6	T17	NoRel	true	revealed	inflow
+Relation	T6	T4	NoRel	true	revealed	storm
+Relation	T7	T11	NoRel	true	occurred	loss
+Relation	T7	T17	NoRel	true	occurred	inflow
+Relation	T9	T23	NoRel	true	fall	improvement
+Relation	T9	T8	NoRel	true	fall	began

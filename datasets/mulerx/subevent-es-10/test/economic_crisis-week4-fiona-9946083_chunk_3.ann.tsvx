@@ -1,0 +1,64 @@
+Text	Shirou usa los recuerdos para recrear el arma del mago más antiguo conocido , la espada Jeweled Zelretch , pero el poder del brazo de Archer continúa dañando su mente y cuerpo .	Mientras tanto , Zouken planea hacer de Sakura su nueva nave , revelando que su cuerpo real es un gusano ubicado cerca del corazón de Sakura .	Sin embargo , Sakura toma represalias absorbiendo a Assassin con la Sombra antes de arrancar a Zouken de su pecho y aplastarlo .	Después de una breve confrontación , Shirou convence a Rider de que salvará a Sakura pase lo que pase , consiguiendo su ayuda junto con Rin .	El grupo llega a la Cueva Fuyuki , donde el Grial contaminado espera , pero Saber Alter se interpone en su camino y solo deja que Rin pase por orden de Sakura .
+Event	T0	usa	EVENT	7
+Event	T1	recrear	EVENT	30
+Event	T2	dañando	EVENT	150
+Event	T3	hacer	EVENT	209
+Event	T4	revelando	EVENT	241
+Event	T5	absorbiendo	EVENT	359
+Event	T6	arrancar	EVENT	405
+Event	T7	aplastarlo	EVENT	437
+Event	T8	confrontación	EVENT	471
+Event	T9	convence	EVENT	494
+Event	T10	salvará	EVENT	518
+Event	T11	pase	EVENT	535
+Event	T12	pase	EVENT	547
+Event	T13	consiguiendo	EVENT	554
+Event	T14	ayuda	EVENT	570
+Event	T15	llega	EVENT	601
+Event	T16	espera	EVENT	654
+Event	T17	interpone	EVENT	683
+Event	T18	deja	EVENT	713
+Event	T19	pase	EVENT	726
+Event	T20	poder	EVENT	115
+Relation	T0	T10	NoRel	true	usa	salvará
+Relation	T0	T4	NoRel	true	usa	revelando
+Relation	T1	T18	NoRel	true	recrear	deja
+Relation	T1	T6	NoRel	true	recrear	arrancar
+Relation	T10	T12	NoRel	true	salvará	pase
+Relation	T10	T5	NoRel	true	salvará	absorbiendo
+Relation	T10	T7	NoRel	true	salvará	aplastarlo
+Relation	T11	T12	NoRel	true	pase	pase
+Relation	T11	T13	NoRel	true	pase	consiguiendo
+Relation	T12	T0	NoRel	true	pase	usa
+Relation	T12	T13	NoRel	true	pase	consiguiendo
+Relation	T13	T4	NoRel	true	consiguiendo	revelando
+Relation	T13	T5	NoRel	true	consiguiendo	absorbiendo
+Relation	T13	T7	NoRel	true	consiguiendo	aplastarlo
+Relation	T14	T18	NoRel	true	ayuda	deja
+Relation	T14	T20	NoRel	true	ayuda	poder
+Relation	T15	T1	NoRel	true	llega	recrear
+Relation	T15	T10	NoRel	true	llega	salvará
+Relation	T15	T17	NoRel	true	llega	interpone
+Relation	T15	T18	NoRel	true	llega	deja
+Relation	T16	T0	NoRel	true	espera	usa
+Relation	T17	T0	NoRel	true	interpone	usa
+Relation	T17	T2	NoRel	true	interpone	dañando
+Relation	T19	T15	NoRel	true	pase	llega
+Relation	T19	T5	NoRel	true	pase	absorbiendo
+Relation	T2	T18	NoRel	true	dañando	deja
+Relation	T2	T20	NoRel	true	dañando	poder
+Relation	T2	T6	NoRel	true	dañando	arrancar
+Relation	T3	T1	NoRel	true	hacer	recrear
+Relation	T3	T7	NoRel	true	hacer	aplastarlo
+Relation	T4	T17	NoRel	true	revelando	interpone
+Relation	T4	T8	NoRel	true	revelando	confrontación
+Relation	T5	T1	NoRel	true	absorbiendo	recrear
+Relation	T5	T13	NoRel	true	absorbiendo	consiguiendo
+Relation	T6	T10	NoRel	true	arrancar	salvará
+Relation	T6	T13	NoRel	true	arrancar	consiguiendo
+Relation	T6	T16	NoRel	true	arrancar	espera
+Relation	T6	T8	NoRel	true	arrancar	confrontación
+Relation	T7	T0	NoRel	true	aplastarlo	usa
+Relation	T7	T19	NoRel	true	aplastarlo	pase
+Relation	T7	T2	NoRel	true	aplastarlo	dañando
+Relation	T8	T6	NoRel	true	confrontación	arrancar

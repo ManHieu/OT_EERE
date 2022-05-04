@@ -1,0 +1,39 @@
+Text	Hasbro organizó una enorme campaña promocional para la película , haciendo acuerdos con miles de compañías .	La campaña publicitaria incluyó una campaña de mercadotecnia viral , estrenos coordinados de cómics precuelas , juguetes y libros , así como acuerdos de emplazamiento publicitario con General Motors , Burger King y con eBay .	_ Transformers _ recibió reseñas mixtas a positivas y fue un éxito en taquilla .	Es la centésimo sexta películas más exitosa estrenada y la quinta más exitosa de 2007 , reuniendo aproximadamente US $709 millones mundialmente .	La película ganó cuatro premios de la Visual Effects Society y fue nominada a tres Premios Óscar , para mejor edición de sonido , mejor sonido y mejores efectos visuales .
+Event	T0	organizó	EVENT	7
+Event	T2	acuerdos	EVENT	75
+Event	T3	incluyó	EVENT	133
+Event	T4	viral	EVENT	170
+Event	T5	acuerdos	EVENT	250
+Event	T6	mixtas	EVENT	368
+Event	T7	éxito	EVENT	396
+Event	T8	estrenada	EVENT	460
+Event	T9	reuniendo	EVENT	504
+Event	T10	ganó	EVENT	574
+Event	T11	nominada	EVENT	629
+Event	T12	edición	EVENT	672
+Event	T1	campaña	EVENT	27
+Event	T13	película	EVENT	55
+Relation	T13	T1	SuperSub	true	película	campaña
+Relation	T1	T13	SubSuper	true	campaña	película
+Relation	T13	T2	SuperSub	true	película	acuerdos
+Relation	T2	T13	SubSuper	true	acuerdos	película
+Relation	T13	T8	SuperSub	true	película	estrenada
+Relation	T8	T13	SubSuper	true	estrenada	película
+Relation	T13	T11	SuperSub	true	película	nominada
+Relation	T11	T13	SubSuper	true	nominada	película
+Relation	T13	T10	SuperSub	true	película	ganó
+Relation	T10	T13	SubSuper	true	ganó	película
+Relation	T0	T3	NoRel	true	organizó	incluyó
+Relation	T10	T9	NoRel	true	ganó	reuniendo
+Relation	T11	T7	NoRel	true	nominada	éxito
+Relation	T12	T10	NoRel	true	edición	ganó
+Relation	T12	T11	NoRel	true	edición	nominada
+Relation	T13	T3	NoRel	true	película	incluyó
+Relation	T13	T6	NoRel	true	película	mixtas
+Relation	T2	T9	NoRel	true	acuerdos	reuniendo
+Relation	T3	T7	NoRel	true	incluyó	éxito
+Relation	T4	T0	NoRel	true	viral	organizó
+Relation	T4	T11	NoRel	true	viral	nominada
+Relation	T6	T2	NoRel	true	mixtas	acuerdos
+Relation	T7	T0	NoRel	true	éxito	organizó
+Relation	T8	T3	NoRel	true	estrenada	incluyó

@@ -1,0 +1,13 @@
+Text	96 de los 97 pasajeros así como todos los tripulantes perecieron en el accidente .	Un total de 102 personas murieron en el accidente .	El único superviviente del accidente fue el soldado de 28 años Youcef Djillali .	Fue el peor accidente aéreo de Argelia hasta el Accidente del Il-76 de la Fuerza Aérea de Argelia en 2018 .	Durante el despegue en la pista 02 del aeropuerto de Tamanrasset Aguenar , el motor izquierdo sufrió una explosión contenida .
+Event	T0	perecieron	EVENT	54
+Event	T1	accidente	EVENT	71
+Event	T2	accidente	EVENT	123
+Event	T3	accidente	EVENT	162
+Event	T4	accidente	EVENT	228
+Event	T5	Accidente	EVENT	264
+Event	T6	despegue	EVENT	335
+Event	T7	sufrió	EVENT	418
+Event	T8	explosión	EVENT	429
+Relation	T0	T2	NoRel	true	perecieron	accidente
+Relation	T5	T0	NoRel	true	Accidente	perecieron
+Relation	T6	T0	NoRel	true	despegue	perecieron

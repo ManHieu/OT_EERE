@@ -1,0 +1,55 @@
+Text	küçükresim | 300px | Uluslararası Jandarma kaptanı Hendrik Reimers Arnavut eylemciler tarafından tutuklandı ARNAVUTLUK İSLAM AYAKLANMASI veya ARNAVUT KÖYLÜLER AYAKLANMASI 1914'te meydana gelen ve Arnavutluğu yöneten Prens Wilhelm zu Wied'in otoriter rejime karşı çıkan bir ayaklanma .	Çoğunluğu Müslüman olan eylemciler Arnavutluğun Osmanlı hakimiyetin altına girmesini ve genel af ilan edilmesini istediler .	Eylemden sonra Prens Wied ülkeden kaçtı ve monarşi ülkede bitti .	Fakat Wied resmi olarak tahttan feragat etmedi .	Prenslik resmi olarak devam etti ve 1925'e kadar ülkeyi Wied'in adına memurlar ve naipler yönetti .
+Event	T0	tutuklandı	EVENT	97
+Event	T3	gelen	EVENT	187
+Event	T4	çıkan	EVENT	263
+Event	T5	ayaklanma	EVENT	273
+Event	T6	kaçtı	EVENT	444
+Event	T7	bitti	EVENT	468
+Event	T9	etti	EVENT	553
+Event	T10	yönetti	EVENT	615
+Event	T11	ARNAVUTLUK İSLAM AYAKLANMASI	EVENT	108
+Event	T1	ARNAVUT KÖYLÜLER AYAKLANMASI	EVENT	142
+Event	T2	yöneten	EVENT	208
+Event	T12	rejime	EVENT	250
+Event	T13	Eylemden	EVENT	410
+Event	T14	girmesini	EVENT	360
+Event	T15	edilmesini	EVENT	387
+Event	T16	istediler	EVENT	398
+Relation	T11	T0	SuperSub	true	ARNAVUTLUK İSLAM AYAKLANMASI	tutuklandı
+Relation	T0	T11	SubSuper	true	tutuklandı	ARNAVUTLUK İSLAM AYAKLANMASI
+Relation	T1	T0	SuperSub	true	ARNAVUT KÖYLÜLER AYAKLANMASI	tutuklandı
+Relation	T0	T1	SubSuper	true	tutuklandı	ARNAVUT KÖYLÜLER AYAKLANMASI
+Relation	T11	T6	SuperSub	true	ARNAVUTLUK İSLAM AYAKLANMASI	kaçtı
+Relation	T6	T11	SubSuper	true	kaçtı	ARNAVUTLUK İSLAM AYAKLANMASI
+Relation	T1	T6	SuperSub	true	ARNAVUT KÖYLÜLER AYAKLANMASI	kaçtı
+Relation	T6	T1	SubSuper	true	kaçtı	ARNAVUT KÖYLÜLER AYAKLANMASI
+Relation	T11	T7	SuperSub	true	ARNAVUTLUK İSLAM AYAKLANMASI	bitti
+Relation	T7	T11	SubSuper	true	bitti	ARNAVUTLUK İSLAM AYAKLANMASI
+Relation	T1	T7	SuperSub	true	ARNAVUT KÖYLÜLER AYAKLANMASI	bitti
+Relation	T7	T1	SubSuper	true	bitti	ARNAVUT KÖYLÜLER AYAKLANMASI
+Relation	T0	T3	NoRel	true	tutuklandı	gelen
+Relation	T0	T4	NoRel	true	tutuklandı	çıkan
+Relation	T10	T11	NoRel	true	yönetti	ARNAVUTLUK İSLAM AYAKLANMASI
+Relation	T10	T13	NoRel	true	yönetti	Eylemden
+Relation	T10	T6	NoRel	true	yönetti	kaçtı
+Relation	T11	T12	NoRel	true	ARNAVUTLUK İSLAM AYAKLANMASI	rejime
+Relation	T12	T11	NoRel	true	rejime	ARNAVUTLUK İSLAM AYAKLANMASI
+Relation	T13	T0	NoRel	true	Eylemden	tutuklandı
+Relation	T13	T5	NoRel	true	Eylemden	ayaklanma
+Relation	T14	T7	NoRel	true	girmesini	bitti
+Relation	T14	T9	NoRel	true	girmesini	etti
+Relation	T15	T4	NoRel	true	edilmesini	çıkan
+Relation	T16	T3	NoRel	true	istediler	gelen
+Relation	T16	T7	NoRel	true	istediler	bitti
+Relation	T2	T13	NoRel	true	yöneten	Eylemden
+Relation	T3	T1	NoRel	true	gelen	ARNAVUT KÖYLÜLER AYAKLANMASI
+Relation	T3	T12	NoRel	true	gelen	rejime
+Relation	T3	T2	NoRel	true	gelen	yöneten
+Relation	T3	T5	NoRel	true	gelen	ayaklanma
+Relation	T4	T11	NoRel	true	çıkan	ARNAVUTLUK İSLAM AYAKLANMASI
+Relation	T4	T2	NoRel	true	çıkan	yöneten
+Relation	T4	T3	NoRel	true	çıkan	gelen
+Relation	T5	T11	NoRel	true	ayaklanma	ARNAVUTLUK İSLAM AYAKLANMASI
+Relation	T5	T3	NoRel	true	ayaklanma	gelen
+Relation	T6	T12	NoRel	true	kaçtı	rejime
+Relation	T9	T3	NoRel	true	etti	gelen

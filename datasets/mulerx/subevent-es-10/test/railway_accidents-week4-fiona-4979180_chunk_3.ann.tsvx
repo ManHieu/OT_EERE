@@ -1,0 +1,69 @@
+Text	Esbozó una profecía del fin del mundo , que incluía una Tercera Guerra Mundial y describía un conflicto final que culminaría en un Armagedón nuclear , tomando prestado el término del Apocalipsis .	Su supuesta misión consistía en tomar sobre sí los pecados del mundo y declaró que podía transferir poder espiritual a sus seguidores y finalmente quitarles sus pecados y malas obras .	También vio oscuras conspiraciones en todas partes , promulgadas por judíos , los masones , los holandeses , la Familia Real Británica y religiones rivales japonesas .	La policía japonesa inicialmente informó que el ataque fue la forma del culto de acelerar un apocalipsis .	La fiscalía dijo que se trataba de un intento de derrocar al gobierno e instalar a Shoko Asahara , el fundador del grupo , como el « emperador de Japón » .
+Event	T0	Esbozó	EVENT	0
+Event	T1	profecía	EVENT	11
+Event	T2	incluía	EVENT	44
+Event	T3	describía	EVENT	81
+Event	T4	culminaría	EVENT	114
+Event	T5	Apocalipsis	EVENT	183
+Event	T6	consistía	EVENT	216
+Event	T7	declaró	EVENT	268
+Event	T8	transferir	EVENT	286
+Event	T9	pecados	EVENT	358
+Event	T10	vio	EVENT	390
+Event	T11	conspiraciones	EVENT	402
+Event	T12	promulgadas	EVENT	435
+Event	T13	informó	EVENT	583
+Event	T14	culto	EVENT	622
+Event	T15	acelerar	EVENT	631
+Event	T16	apocalipsis	EVENT	643
+Event	T17	dijo	EVENT	669
+Event	T18	intento	EVENT	695
+Event	T19	derrocar	EVENT	706
+Event	T20	instalar	EVENT	729
+Relation	T8	T9	SuperSub	true	transferir	pecados
+Relation	T9	T8	SubSuper	true	pecados	transferir
+Relation	T0	T7	NoRel	true	Esbozó	declaró
+Relation	T1	T0	NoRel	true	profecía	Esbozó
+Relation	T1	T12	NoRel	true	profecía	promulgadas
+Relation	T10	T14	NoRel	true	vio	culto
+Relation	T11	T5	NoRel	true	conspiraciones	Apocalipsis
+Relation	T12	T15	NoRel	true	promulgadas	acelerar
+Relation	T12	T19	NoRel	true	promulgadas	derrocar
+Relation	T14	T1	NoRel	true	culto	profecía
+Relation	T14	T16	NoRel	true	culto	apocalipsis
+Relation	T14	T9	NoRel	true	culto	pecados
+Relation	T15	T0	NoRel	true	acelerar	Esbozó
+Relation	T15	T17	NoRel	true	acelerar	dijo
+Relation	T15	T5	NoRel	true	acelerar	Apocalipsis
+Relation	T16	T14	NoRel	true	apocalipsis	culto
+Relation	T16	T17	NoRel	true	apocalipsis	dijo
+Relation	T17	T16	NoRel	true	dijo	apocalipsis
+Relation	T17	T2	NoRel	true	dijo	incluía
+Relation	T18	T11	NoRel	true	intento	conspiraciones
+Relation	T18	T17	NoRel	true	intento	dijo
+Relation	T19	T1	NoRel	true	derrocar	profecía
+Relation	T19	T10	NoRel	true	derrocar	vio
+Relation	T19	T5	NoRel	true	derrocar	Apocalipsis
+Relation	T2	T0	NoRel	true	incluía	Esbozó
+Relation	T2	T18	NoRel	true	incluía	intento
+Relation	T2	T19	NoRel	true	incluía	derrocar
+Relation	T2	T9	NoRel	true	incluía	pecados
+Relation	T20	T1	NoRel	true	instalar	profecía
+Relation	T20	T14	NoRel	true	instalar	culto
+Relation	T20	T6	NoRel	true	instalar	consistía
+Relation	T3	T18	NoRel	true	describía	intento
+Relation	T4	T19	NoRel	true	culminaría	derrocar
+Relation	T4	T2	NoRel	true	culminaría	incluía
+Relation	T5	T11	NoRel	true	Apocalipsis	conspiraciones
+Relation	T5	T14	NoRel	true	Apocalipsis	culto
+Relation	T6	T1	NoRel	true	consistía	profecía
+Relation	T6	T14	NoRel	true	consistía	culto
+Relation	T6	T18	NoRel	true	consistía	intento
+Relation	T6	T4	NoRel	true	consistía	culminaría
+Relation	T7	T13	NoRel	true	declaró	informó
+Relation	T7	T15	NoRel	true	declaró	acelerar
+Relation	T7	T20	NoRel	true	declaró	instalar
+Relation	T8	T11	NoRel	true	transferir	conspiraciones
+Relation	T8	T12	NoRel	true	transferir	promulgadas
+Relation	T9	T13	NoRel	true	pecados	informó
+Relation	T9	T6	NoRel	true	pecados	consistía

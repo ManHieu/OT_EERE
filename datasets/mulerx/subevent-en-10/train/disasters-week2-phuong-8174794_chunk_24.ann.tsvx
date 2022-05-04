@@ -1,0 +1,80 @@
+Text	Firefighters across North America protested that it was insensitive to make a film about fallen firefighters while their children were still young , and Worcester Fire Fighters IAFF Local 1009 wrote to other firefighters asking them not to participate in the movie 's production .	This resulted in the production company being unable to procure agreements in the United States or Canada to allow the use of firefighter insignia , while Canadian firefighters refused to act as extras and fire departments in the Toronto metropolitan area refused to lease firetrucks to the company .	In late April 2004 , Warner Bros. and Image Entertainment , the production company , issued a joint statement saying that the making of a film the size and scope of _ Worcester Cold Storage _ was " a complex process that needed the support of various groups and individuals , including firefighters .	Due to circumstances beyond our control , we no longer have such support .	We have therefore decided not to move ahead with this project at this time . "
+Event	T0	protested	EVENT	34
+Event	T1	make	EVENT	71
+Event	T10	refused	EVENT	458
+Event	T11	act	EVENT	469
+Event	T12	refused	EVENT	537
+Event	T13	issued	EVENT	667
+Event	T14	saying	EVENT	692
+Event	T15	making	EVENT	708
+Event	T16	needed	EVENT	803
+Event	T17	support	EVENT	814
+Event	T18	decided	EVENT	976
+Event	T2	fallen	EVENT	89
+Event	T20	control	EVENT	915
+Event	T21	support	EVENT	948
+Event	T3	wrote	EVENT	193
+Event	T4	asking	EVENT	221
+Event	T5	participate	EVENT	240
+Event	T6	production	EVENT	268
+Event	T7	resulted	EVENT	286
+Event	T8	agreements	EVENT	345
+Event	T9	use	EVENT	400
+Relation	T0	T3	SuperSub	true	protested	wrote
+Relation	T3	T0	SubSuper	true	wrote	protested
+Relation	T1	T6	SuperSub	true	make	production
+Relation	T6	T1	SubSuper	true	production	make
+Relation	T1	T10	NoRel	true	make	refused
+Relation	T1	T15	NoRel	true	make	making
+Relation	T1	T2	NoRel	true	make	fallen
+Relation	T1	T21	NoRel	true	make	support
+Relation	T10	T21	NoRel	true	refused	support
+Relation	T10	T8	NoRel	true	refused	agreements
+Relation	T11	T10	NoRel	true	act	refused
+Relation	T11	T17	NoRel	true	act	support
+Relation	T11	T20	NoRel	true	act	control
+Relation	T11	T6	NoRel	true	act	production
+Relation	T11	T9	NoRel	true	act	use
+Relation	T12	T1	NoRel	true	refused	make
+Relation	T12	T15	NoRel	true	refused	making
+Relation	T12	T21	NoRel	true	refused	support
+Relation	T12	T9	NoRel	true	refused	use
+Relation	T13	T1	NoRel	true	issued	make
+Relation	T13	T10	NoRel	true	issued	refused
+Relation	T13	T9	NoRel	true	issued	use
+Relation	T14	T11	NoRel	true	saying	act
+Relation	T14	T13	NoRel	true	saying	issued
+Relation	T14	T4	NoRel	true	saying	asking
+Relation	T15	T4	NoRel	true	making	asking
+Relation	T16	T0	NoRel	true	needed	protested
+Relation	T16	T15	NoRel	true	needed	making
+Relation	T16	T20	NoRel	true	needed	control
+Relation	T16	T8	NoRel	true	needed	agreements
+Relation	T17	T14	NoRel	true	support	saying
+Relation	T17	T16	NoRel	true	support	needed
+Relation	T17	T8	NoRel	true	support	agreements
+Relation	T18	T15	NoRel	true	decided	making
+Relation	T18	T6	NoRel	true	decided	production
+Relation	T2	T12	NoRel	true	fallen	refused
+Relation	T2	T18	NoRel	true	fallen	decided
+Relation	T2	T6	NoRel	true	fallen	production
+Relation	T20	T15	NoRel	true	control	making
+Relation	T21	T13	NoRel	true	support	issued
+Relation	T21	T17	NoRel	true	support	support
+Relation	T21	T20	NoRel	true	support	control
+Relation	T3	T1	NoRel	true	wrote	make
+Relation	T3	T11	NoRel	true	wrote	act
+Relation	T3	T9	NoRel	true	wrote	use
+Relation	T4	T0	NoRel	true	asking	protested
+Relation	T4	T10	NoRel	true	asking	refused
+Relation	T4	T16	NoRel	true	asking	needed
+Relation	T4	T18	NoRel	true	asking	decided
+Relation	T5	T11	NoRel	true	participate	act
+Relation	T5	T17	NoRel	true	participate	support
+Relation	T5	T4	NoRel	true	participate	asking
+Relation	T5	T8	NoRel	true	participate	agreements
+Relation	T6	T11	NoRel	true	production	act
+Relation	T6	T7	NoRel	true	production	resulted
+Relation	T7	T13	NoRel	true	resulted	issued
+Relation	T7	T2	NoRel	true	resulted	fallen
+Relation	T7	T4	NoRel	true	resulted	asking

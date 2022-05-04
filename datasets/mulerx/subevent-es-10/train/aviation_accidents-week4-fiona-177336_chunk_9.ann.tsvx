@@ -1,0 +1,150 @@
+Text	Según el informe , el análisis de la grabadora de voz reveló que la tripulación discutió el tema de las condiciones climáticas , incluyendo la posibilidad de congelamiento , y solicitó y ejecutó varias veces descensos con la esperanza de encontrar zonas de mejores condiciones .	El informe también reveló que los motores estaban funcionando al momento del impacto , ya que los rotores estaban girando a altas velocidades y que el patrón de impacto sugiere que la nariz de la aeronave estaba arriba , lo cual es consistente con la teoría de que el hielo finalmente provocó el accidente .	Un nuevo informe presentado en agosto de 2010 del Ministerio del Poder Popular para Transporte y Comunicaciones de Venezuela dice que “ Las evidencias señalan la clasificación de factor humano como causal del accidente ” , como plantea el texto entregado a la defensa de las familia de las víctimas al cumplirse cinco años del accidente aéreo .	El documento explica que el siniestro se debió a una cadena de eventos entre los que destacan la crisis financiera de la aerolínea colombiana , el probable desconocimiento por parte de los tripulantes de algunas limitaciones operacionales del avión , además de la impericia del piloto y del copiloto .	Debido a la mala administración de la aerolínea , el avión despegó con un cierto sobrepeso .
+Event	T0	informe	EVENT	9
+Event	T1	análisis	EVENT	22
+Event	T2	reveló	EVENT	54
+Event	T3	discutió	EVENT	80
+Event	T4	congelamiento	EVENT	158
+Event	T5	solicitó	EVENT	176
+Event	T6	ejecutó	EVENT	187
+Event	T7	descensos	EVENT	208
+Event	T8	informe	EVENT	282
+Event	T9	reveló	EVENT	298
+Event	T10	funcionando	EVENT	329
+Event	T11	impacto	EVENT	356
+Event	T12	girando	EVENT	393
+Event	T13	sugiere	EVENT	448
+Event	T14	provocó	EVENT	564
+Event	T15	accidente	EVENT	575
+Event	T16	presentado	EVENT	604
+Event	T17	dice	EVENT	712
+Event	T18	señalan	EVENT	738
+Event	T19	clasificación	EVENT	749
+Event	T20	accidente	EVENT	796
+Event	T21	plantea	EVENT	815
+Event	T22	entregado	EVENT	832
+Event	T23	explica	EVENT	945
+Event	T24	siniestro	EVENT	960
+Event	T25	debió	EVENT	973
+Event	T26	eventos	EVENT	995
+Event	T27	destacan	EVENT	1017
+Event	T28	crisis	EVENT	1029
+Event	T29	desconocimiento	EVENT	1088
+Event	T30	impericia	EVENT	1196
+Event	T31	administración	EVENT	1251
+Event	T32	despegó	EVENT	1293
+Event	T33	sobrepeso	EVENT	1315
+Relation	T0	T4	NoRel	true	informe	congelamiento
+Relation	T1	T10	NoRel	true	análisis	funcionando
+Relation	T1	T16	NoRel	true	análisis	presentado
+Relation	T1	T24	NoRel	true	análisis	siniestro
+Relation	T1	T9	NoRel	true	análisis	reveló
+Relation	T10	T12	NoRel	true	funcionando	girando
+Relation	T11	T2	NoRel	true	impacto	reveló
+Relation	T11	T8	NoRel	true	impacto	informe
+Relation	T12	T5	NoRel	true	girando	solicitó
+Relation	T13	T10	NoRel	true	sugiere	funcionando
+Relation	T13	T19	NoRel	true	sugiere	clasificación
+Relation	T13	T23	NoRel	true	sugiere	explica
+Relation	T13	T26	NoRel	true	sugiere	eventos
+Relation	T13	T30	NoRel	true	sugiere	impericia
+Relation	T13	T31	NoRel	true	sugiere	administración
+Relation	T13	T7	NoRel	true	sugiere	descensos
+Relation	T13	T9	NoRel	true	sugiere	reveló
+Relation	T14	T6	NoRel	true	provocó	ejecutó
+Relation	T15	T0	NoRel	true	accidente	informe
+Relation	T15	T20	NoRel	true	accidente	accidente
+Relation	T15	T8	NoRel	true	accidente	informe
+Relation	T16	T15	NoRel	true	presentado	accidente
+Relation	T16	T2	NoRel	true	presentado	reveló
+Relation	T17	T0	NoRel	true	dice	informe
+Relation	T17	T16	NoRel	true	dice	presentado
+Relation	T17	T22	NoRel	true	dice	entregado
+Relation	T17	T3	NoRel	true	dice	discutió
+Relation	T17	T30	NoRel	true	dice	impericia
+Relation	T17	T33	NoRel	true	dice	sobrepeso
+Relation	T18	T32	NoRel	true	señalan	despegó
+Relation	T18	T5	NoRel	true	señalan	solicitó
+Relation	T19	T10	NoRel	true	clasificación	funcionando
+Relation	T19	T25	NoRel	true	clasificación	debió
+Relation	T19	T7	NoRel	true	clasificación	descensos
+Relation	T19	T8	NoRel	true	clasificación	informe
+Relation	T2	T0	NoRel	true	reveló	informe
+Relation	T2	T23	NoRel	true	reveló	explica
+Relation	T2	T26	NoRel	true	reveló	eventos
+Relation	T2	T28	NoRel	true	reveló	crisis
+Relation	T2	T29	NoRel	true	reveló	desconocimiento
+Relation	T2	T7	NoRel	true	reveló	descensos
+Relation	T20	T6	NoRel	true	accidente	ejecutó
+Relation	T21	T10	NoRel	true	plantea	funcionando
+Relation	T21	T15	NoRel	true	plantea	accidente
+Relation	T21	T28	NoRel	true	plantea	crisis
+Relation	T21	T33	NoRel	true	plantea	sobrepeso
+Relation	T21	T6	NoRel	true	plantea	ejecutó
+Relation	T22	T21	NoRel	true	entregado	plantea
+Relation	T22	T23	NoRel	true	entregado	explica
+Relation	T22	T5	NoRel	true	entregado	solicitó
+Relation	T23	T22	NoRel	true	explica	entregado
+Relation	T23	T24	NoRel	true	explica	siniestro
+Relation	T23	T32	NoRel	true	explica	despegó
+Relation	T23	T6	NoRel	true	explica	ejecutó
+Relation	T24	T22	NoRel	true	siniestro	entregado
+Relation	T24	T26	NoRel	true	siniestro	eventos
+Relation	T24	T29	NoRel	true	siniestro	desconocimiento
+Relation	T25	T21	NoRel	true	debió	plantea
+Relation	T25	T27	NoRel	true	debió	destacan
+Relation	T25	T5	NoRel	true	debió	solicitó
+Relation	T25	T7	NoRel	true	debió	descensos
+Relation	T26	T1	NoRel	true	eventos	análisis
+Relation	T26	T10	NoRel	true	eventos	funcionando
+Relation	T26	T20	NoRel	true	eventos	accidente
+Relation	T26	T29	NoRel	true	eventos	desconocimiento
+Relation	T26	T4	NoRel	true	eventos	congelamiento
+Relation	T27	T23	NoRel	true	destacan	explica
+Relation	T28	T21	NoRel	true	crisis	plantea
+Relation	T29	T22	NoRel	true	desconocimiento	entregado
+Relation	T29	T24	NoRel	true	desconocimiento	siniestro
+Relation	T3	T11	NoRel	true	discutió	impacto
+Relation	T3	T24	NoRel	true	discutió	siniestro
+Relation	T3	T28	NoRel	true	discutió	crisis
+Relation	T3	T32	NoRel	true	discutió	despegó
+Relation	T3	T8	NoRel	true	discutió	informe
+Relation	T30	T33	NoRel	true	impericia	sobrepeso
+Relation	T30	T4	NoRel	true	impericia	congelamiento
+Relation	T31	T11	NoRel	true	administración	impacto
+Relation	T31	T12	NoRel	true	administración	girando
+Relation	T31	T18	NoRel	true	administración	señalan
+Relation	T31	T4	NoRel	true	administración	congelamiento
+Relation	T32	T10	NoRel	true	despegó	funcionando
+Relation	T32	T31	NoRel	true	despegó	administración
+Relation	T32	T4	NoRel	true	despegó	congelamiento
+Relation	T32	T5	NoRel	true	despegó	solicitó
+Relation	T33	T0	NoRel	true	sobrepeso	informe
+Relation	T33	T13	NoRel	true	sobrepeso	sugiere
+Relation	T33	T21	NoRel	true	sobrepeso	plantea
+Relation	T33	T26	NoRel	true	sobrepeso	eventos
+Relation	T33	T27	NoRel	true	sobrepeso	destacan
+Relation	T33	T32	NoRel	true	sobrepeso	despegó
+Relation	T33	T6	NoRel	true	sobrepeso	ejecutó
+Relation	T33	T9	NoRel	true	sobrepeso	reveló
+Relation	T4	T10	NoRel	true	congelamiento	funcionando
+Relation	T4	T11	NoRel	true	congelamiento	impacto
+Relation	T4	T18	NoRel	true	congelamiento	señalan
+Relation	T5	T11	NoRel	true	solicitó	impacto
+Relation	T5	T7	NoRel	true	solicitó	descensos
+Relation	T5	T8	NoRel	true	solicitó	informe
+Relation	T6	T13	NoRel	true	ejecutó	sugiere
+Relation	T6	T16	NoRel	true	ejecutó	presentado
+Relation	T6	T24	NoRel	true	ejecutó	siniestro
+Relation	T7	T18	NoRel	true	descensos	señalan
+Relation	T7	T19	NoRel	true	descensos	clasificación
+Relation	T7	T6	NoRel	true	descensos	ejecutó
+Relation	T8	T20	NoRel	true	informe	accidente
+Relation	T8	T23	NoRel	true	informe	explica
+Relation	T8	T33	NoRel	true	informe	sobrepeso
+Relation	T9	T1	NoRel	true	reveló	análisis
+Relation	T9	T15	NoRel	true	reveló	accidente
+Relation	T9	T17	NoRel	true	reveló	dice
+Relation	T9	T2	NoRel	true	reveló	reveló
+Relation	T9	T28	NoRel	true	reveló	crisis
+Relation	T9	T30	NoRel	true	reveló	impericia
+Relation	T9	T8	NoRel	true	reveló	informe

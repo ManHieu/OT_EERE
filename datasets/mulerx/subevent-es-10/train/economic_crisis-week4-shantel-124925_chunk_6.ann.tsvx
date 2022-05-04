@@ -1,0 +1,98 @@
+Text	Todo esto aceleró una etapa económica negativa en el mundo occidental que ya había empezado , y llevó a una recesión global durante el año siguiente .	A largo plazo , el embargo produjo un cambio en algunas políticas estructurales de Occidente , avanzando hacia una mayor conciencia energética y una política monetaria más restrictiva para combatir mejor la inflación .	- 23 de agosto : Se reúnen en Riad y negocian en secreto un acuerdo por el que los árabes utilizarán el " _ arma del petróleo _ " como parte del inminente conflicto militar .	- 15 de septiembre : La OPEP declara un frente de negociación , consistente en los seis países del Golfo Pérsico , para presionar al alza de los precios y finalizar su apoyo a Israel , establecido en los acuerdos de Teherán de 1971 .	- 6 de octubre : Egipto y Siria atacan a Israel el día del Yom Kippur , comenzando así la cuarta guerra árabe-israelí , más conocida como Guerra del Yom Kippur .
+Event	T0	aceleró	EVENT	10
+Event	T1	empezado	EVENT	83
+Event	T2	recesión	EVENT	108
+Event	T3	produjo	EVENT	178
+Event	T4	cambio	EVENT	189
+Event	T5	avanzando	EVENT	246
+Event	T6	combatir	EVENT	340
+Event	T7	inflación	EVENT	358
+Event	T8	reúnen	EVENT	390
+Event	T9	negocian	EVENT	407
+Event	T10	acuerdo	EVENT	430
+Event	T11	conflicto	EVENT	525
+Event	T12	declara	EVENT	574
+Event	T13	negociación	EVENT	595
+Event	T14	presionar	EVENT	665
+Event	T15	finalizar	EVENT	700
+Event	T16	apoyo	EVENT	713
+Event	T17	establecido	EVENT	730
+Event	T18	acuerdos	EVENT	749
+Event	T19	atacan	EVENT	811
+Event	T20	comenzando	EVENT	851
+Event	T21	guerra	EVENT	876
+Event	T23	embargo	EVENT	170
+Event	T22	Guerra del Yom Kippur	EVENT	917
+Relation	T23	T5	SuperSub	true	embargo	avanzando
+Relation	T5	T23	SubSuper	true	avanzando	embargo
+Relation	T0	T2	NoRel	true	aceleró	recesión
+Relation	T1	T13	NoRel	true	empezado	negociación
+Relation	T1	T23	NoRel	true	empezado	embargo
+Relation	T1	T5	NoRel	true	empezado	avanzando
+Relation	T10	T12	NoRel	true	acuerdo	declara
+Relation	T10	T3	NoRel	true	acuerdo	produjo
+Relation	T10	T5	NoRel	true	acuerdo	avanzando
+Relation	T10	T7	NoRel	true	acuerdo	inflación
+Relation	T11	T16	NoRel	true	conflicto	apoyo
+Relation	T11	T17	NoRel	true	conflicto	establecido
+Relation	T11	T2	NoRel	true	conflicto	recesión
+Relation	T11	T7	NoRel	true	conflicto	inflación
+Relation	T11	T8	NoRel	true	conflicto	reúnen
+Relation	T11	T9	NoRel	true	conflicto	negocian
+Relation	T12	T0	NoRel	true	declara	aceleró
+Relation	T12	T9	NoRel	true	declara	negocian
+Relation	T13	T0	NoRel	true	negociación	aceleró
+Relation	T13	T4	NoRel	true	negociación	cambio
+Relation	T14	T18	NoRel	true	presionar	acuerdos
+Relation	T14	T22	NoRel	true	presionar	Guerra del Yom Kippur
+Relation	T15	T2	NoRel	true	finalizar	recesión
+Relation	T15	T22	NoRel	true	finalizar	Guerra del Yom Kippur
+Relation	T16	T0	NoRel	true	apoyo	aceleró
+Relation	T16	T1	NoRel	true	apoyo	empezado
+Relation	T16	T10	NoRel	true	apoyo	acuerdo
+Relation	T16	T6	NoRel	true	apoyo	combatir
+Relation	T17	T4	NoRel	true	establecido	cambio
+Relation	T17	T5	NoRel	true	establecido	avanzando
+Relation	T18	T1	NoRel	true	acuerdos	empezado
+Relation	T18	T22	NoRel	true	acuerdos	Guerra del Yom Kippur
+Relation	T18	T5	NoRel	true	acuerdos	avanzando
+Relation	T18	T6	NoRel	true	acuerdos	combatir
+Relation	T19	T16	NoRel	true	atacan	apoyo
+Relation	T19	T4	NoRel	true	atacan	cambio
+Relation	T19	T9	NoRel	true	atacan	negocian
+Relation	T2	T13	NoRel	true	recesión	negociación
+Relation	T2	T8	NoRel	true	recesión	reúnen
+Relation	T2	T9	NoRel	true	recesión	negocian
+Relation	T20	T12	NoRel	true	comenzando	declara
+Relation	T20	T17	NoRel	true	comenzando	establecido
+Relation	T20	T2	NoRel	true	comenzando	recesión
+Relation	T21	T17	NoRel	true	guerra	establecido
+Relation	T21	T8	NoRel	true	guerra	reúnen
+Relation	T22	T15	NoRel	true	Guerra del Yom Kippur	finalizar
+Relation	T22	T16	NoRel	true	Guerra del Yom Kippur	apoyo
+Relation	T22	T23	NoRel	true	Guerra del Yom Kippur	embargo
+Relation	T22	T3	NoRel	true	Guerra del Yom Kippur	produjo
+Relation	T22	T4	NoRel	true	Guerra del Yom Kippur	cambio
+Relation	T23	T10	NoRel	true	embargo	acuerdo
+Relation	T23	T12	NoRel	true	embargo	declara
+Relation	T23	T9	NoRel	true	embargo	negocian
+Relation	T3	T15	NoRel	true	produjo	finalizar
+Relation	T3	T18	NoRel	true	produjo	acuerdos
+Relation	T3	T4	NoRel	true	produjo	cambio
+Relation	T3	T6	NoRel	true	produjo	combatir
+Relation	T4	T17	NoRel	true	cambio	establecido
+Relation	T4	T18	NoRel	true	cambio	acuerdos
+Relation	T5	T20	NoRel	true	avanzando	comenzando
+Relation	T5	T21	NoRel	true	avanzando	guerra
+Relation	T5	T6	NoRel	true	avanzando	combatir
+Relation	T6	T14	NoRel	true	combatir	presionar
+Relation	T6	T21	NoRel	true	combatir	guerra
+Relation	T6	T22	NoRel	true	combatir	Guerra del Yom Kippur
+Relation	T6	T4	NoRel	true	combatir	cambio
+Relation	T7	T1	NoRel	true	inflación	empezado
+Relation	T7	T16	NoRel	true	inflación	apoyo
+Relation	T7	T2	NoRel	true	inflación	recesión
+Relation	T8	T10	NoRel	true	reúnen	acuerdo
+Relation	T8	T15	NoRel	true	reúnen	finalizar
+Relation	T8	T7	NoRel	true	reúnen	inflación
+Relation	T9	T22	NoRel	true	negocian	Guerra del Yom Kippur

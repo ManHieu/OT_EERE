@@ -1,0 +1,24 @@
+Text	Deprem en çok Muradiye ve çevre ilçeler olan Erciş ve Özalp'de can ve mal kaybına sebep oldu .	3.304 kişilik nüfusa sahip Çaldıran'da evlerin % 95'i yıkıldı ve 615 kişi öldü .	Ağrı iline bağlı Diyadin ve Taşlıçay ilçeleri dolayları da etkilendi .	7,9 M _ ( s ) büyüklüğündeki 1939 Erzincan depreminden sonra o güne kadarki Anadolu'da yaşanan en şiddetli depremdir .	Bölgenin yaşadığı en büyük depremlerden biri olan bu depremin büyüklüğü 7,5 M _ ( s ) olarak ölçüldü .
+Event	T0	Deprem	EVENT	0
+Event	T2	yıkıldı	EVENT	149
+Event	T3	öldü	EVENT	169
+Event	T4	etkilendi	EVENT	235
+Event	T5	yaşanan	EVENT	334
+Event	T6	depremdir	EVENT	354
+Event	T7	yaşadığı	EVENT	375
+Event	T8	ölçüldü	EVENT	459
+Event	T9	kaybına	EVENT	74
+Event	T1	depreminden	EVENT	290
+Relation	T0	T6	NoRel	true	Deprem	depremdir
+Relation	T2	T4	NoRel	true	yıkıldı	etkilendi
+Relation	T3	T5	NoRel	true	öldü	yaşanan
+Relation	T3	T6	NoRel	true	öldü	depremdir
+Relation	T3	T7	NoRel	true	öldü	yaşadığı
+Relation	T4	T5	NoRel	true	etkilendi	yaşanan
+Relation	T4	T6	NoRel	true	etkilendi	depremdir
+Relation	T4	T7	NoRel	true	etkilendi	yaşadığı
+Relation	T4	T8	NoRel	true	etkilendi	ölçüldü
+Relation	T5	T8	NoRel	true	yaşanan	ölçüldü
+Relation	T6	T7	NoRel	true	depremdir	yaşadığı
+Relation	T6	T9	NoRel	true	depremdir	kaybına
+Relation	T8	T9	NoRel	true	ölçüldü	kaybına

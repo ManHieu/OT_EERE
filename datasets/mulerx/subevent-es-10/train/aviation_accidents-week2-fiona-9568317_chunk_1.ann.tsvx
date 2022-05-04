@@ -1,0 +1,32 @@
+Text	El vuelo 4226 es el accidente de aviación más mortal que involucra a un BAC One-Eleven .	La investigación posterior realizada por las autoridades nigerianas concluyó que el accidente fue causado por un error del piloto .	El vuelo 4226 llevaba 69 pasajeros y 8 miembros de la tripulación en el momento del accidente , contrariamente a los informes iniciales que afirmaban que el avión transportaba a 105 pasajeros .	17 pasajeros abordaron el avión en Kano .	La mayoría de los pasajeros eran nigerianos , y se confirmó que un libanés estaba a bordo del vuelo 4226 .
+Event	T0	vuelo	EVENT	3
+Event	T1	accidente	EVENT	20
+Event	T12	abordaron	EVENT	428
+Event	T13	confirmó	EVENT	508
+Event	T14	vuelo	EVENT	551
+Event	T3	realizada	EVENT	116
+Event	T4	concluyó	EVENT	157
+Event	T5	accidente	EVENT	173
+Event	T6	causado	EVENT	187
+Event	T7	error	EVENT	202
+Event	T8	accidente	EVENT	305
+Event	T9	informes	EVENT	338
+Relation	T0	T13	NoRel	true	vuelo	confirmó
+Relation	T0	T5	NoRel	true	vuelo	accidente
+Relation	T0	T6	NoRel	true	vuelo	causado
+Relation	T0	T7	NoRel	true	vuelo	error
+Relation	T1	T8	NoRel	true	accidente	accidente
+Relation	T1	T9	NoRel	true	accidente	informes
+Relation	T12	T13	NoRel	true	abordaron	confirmó
+Relation	T12	T5	NoRel	true	abordaron	accidente
+Relation	T14	T0	NoRel	true	vuelo	vuelo
+Relation	T14	T12	NoRel	true	vuelo	abordaron
+Relation	T14	T3	NoRel	true	vuelo	realizada
+Relation	T14	T4	NoRel	true	vuelo	concluyó
+Relation	T3	T5	NoRel	true	realizada	accidente
+Relation	T3	T9	NoRel	true	realizada	informes
+Relation	T5	T4	NoRel	true	accidente	concluyó
+Relation	T7	T3	NoRel	true	error	realizada
+Relation	T7	T5	NoRel	true	error	accidente
+Relation	T8	T1	NoRel	true	accidente	accidente
+Relation	T9	T13	NoRel	true	informes	confirmó

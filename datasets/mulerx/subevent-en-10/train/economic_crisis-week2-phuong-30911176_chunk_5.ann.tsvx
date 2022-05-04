@@ -1,0 +1,99 @@
+Text	If borrowers default at first period , upon observing this default , lenders will make an inference about the likely realization of the magnitude of borrowers ’ first period shocks indirectly and update their expectations to be pessimistic on borrowers ’ future output and their repayment prospects on future loans .	Although borrowers can get fresh lending again , they need to pay higher interest rates than the case they did not default in the past .	The gap between the interest rates for fresh lending with and without past default is defined as default premium , which can also be seen as the difference between the new debt issue prices with and without past default .	Therefore , if borrowers default , they will face a positive default premium , namely higher interest rates and lower new debt issuing price .	If the investment requirement is relatively inelastic , in another word , the amount of investment requirement relatively not affected by debt issuing price , borrowers have to issue more debts to compensate for low issue prices to acquire the required amount of investment .
+Event	T0	default	EVENT	13
+Event	T1	observing	EVENT	44
+Event	T10	default	EVENT	432
+Event	T11	gap	EVENT	458
+Event	T12	lending	EVENT	499
+Event	T13	default	EVENT	529
+Event	T14	defined	EVENT	540
+Event	T16	default	EVENT	666
+Event	T17	default	EVENT	701
+Event	T18	face	EVENT	721
+Event	T19	issuing	EVENT	803
+Event	T2	default	EVENT	59
+Event	T20	affected	EVENT	945
+Event	T21	issuing	EVENT	962
+Event	T22	issue	EVENT	996
+Event	T23	compensate	EVENT	1016
+Event	T24	acquire	EVENT	1051
+Event	T26	lending	EVENT	350
+Event	T3	make	EVENT	82
+Event	T4	inference	EVENT	90
+Event	T5	realization	EVENT	117
+Event	T6	shocks	EVENT	174
+Event	T7	update	EVENT	196
+Event	T8	loans	EVENT	309
+Event	T9	pay	EVENT	379
+Relation	T3	T7	SuperSub	true	make	update
+Relation	T7	T3	SubSuper	true	update	make
+Relation	T26	T9	SuperSub	true	lending	pay
+Relation	T9	T26	SubSuper	true	pay	lending
+Relation	T23	T24	SuperSub	true	compensate	acquire
+Relation	T24	T23	SubSuper	true	acquire	compensate
+Relation	T0	T10	NoRel	true	default	default
+Relation	T0	T11	NoRel	true	default	gap
+Relation	T0	T4	NoRel	true	default	inference
+Relation	T0	T5	NoRel	true	default	realization
+Relation	T1	T11	NoRel	true	observing	gap
+Relation	T1	T20	NoRel	true	observing	affected
+Relation	T1	T9	NoRel	true	observing	pay
+Relation	T10	T13	NoRel	true	default	default
+Relation	T10	T19	NoRel	true	default	issuing
+Relation	T10	T20	NoRel	true	default	affected
+Relation	T10	T22	NoRel	true	default	issue
+Relation	T10	T3	NoRel	true	default	make
+Relation	T11	T16	NoRel	true	gap	default
+Relation	T11	T21	NoRel	true	gap	issuing
+Relation	T12	T2	NoRel	true	lending	default
+Relation	T12	T21	NoRel	true	lending	issuing
+Relation	T12	T23	NoRel	true	lending	compensate
+Relation	T13	T12	NoRel	true	default	lending
+Relation	T13	T6	NoRel	true	default	shocks
+Relation	T13	T7	NoRel	true	default	update
+Relation	T14	T0	NoRel	true	defined	default
+Relation	T14	T18	NoRel	true	defined	face
+Relation	T14	T6	NoRel	true	defined	shocks
+Relation	T16	T11	NoRel	true	default	gap
+Relation	T16	T21	NoRel	true	default	issuing
+Relation	T17	T3	NoRel	true	default	make
+Relation	T17	T7	NoRel	true	default	update
+Relation	T18	T12	NoRel	true	face	lending
+Relation	T18	T16	NoRel	true	face	default
+Relation	T19	T11	NoRel	true	issuing	gap
+Relation	T19	T20	NoRel	true	issuing	affected
+Relation	T19	T4	NoRel	true	issuing	inference
+Relation	T2	T1	NoRel	true	default	observing
+Relation	T2	T17	NoRel	true	default	default
+Relation	T20	T14	NoRel	true	affected	defined
+Relation	T20	T17	NoRel	true	affected	default
+Relation	T21	T2	NoRel	true	issuing	default
+Relation	T21	T26	NoRel	true	issuing	lending
+Relation	T21	T3	NoRel	true	issuing	make
+Relation	T22	T13	NoRel	true	issue	default
+Relation	T22	T14	NoRel	true	issue	defined
+Relation	T23	T0	NoRel	true	compensate	default
+Relation	T23	T17	NoRel	true	compensate	default
+Relation	T23	T3	NoRel	true	compensate	make
+Relation	T24	T2	NoRel	true	acquire	default
+Relation	T24	T21	NoRel	true	acquire	issuing
+Relation	T24	T4	NoRel	true	acquire	inference
+Relation	T24	T5	NoRel	true	acquire	realization
+Relation	T26	T14	NoRel	true	lending	defined
+Relation	T26	T16	NoRel	true	lending	default
+Relation	T3	T24	NoRel	true	make	acquire
+Relation	T3	T4	NoRel	true	make	inference
+Relation	T5	T12	NoRel	true	realization	lending
+Relation	T5	T22	NoRel	true	realization	issue
+Relation	T5	T4	NoRel	true	realization	inference
+Relation	T6	T10	NoRel	true	shocks	default
+Relation	T6	T4	NoRel	true	shocks	inference
+Relation	T6	T9	NoRel	true	shocks	pay
+Relation	T7	T16	NoRel	true	update	default
+Relation	T7	T17	NoRel	true	update	default
+Relation	T7	T4	NoRel	true	update	inference
+Relation	T7	T6	NoRel	true	update	shocks
+Relation	T7	T8	NoRel	true	update	loans
+Relation	T8	T20	NoRel	true	loans	affected
+Relation	T9	T10	NoRel	true	pay	default
+Relation	T9	T22	NoRel	true	pay	issue
+Relation	T9	T8	NoRel	true	pay	loans

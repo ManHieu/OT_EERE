@@ -1,0 +1,25 @@
+Text	El 25 de noviembre de 2019 , dos helicópteros militares franceses , que eran parte de la Operación Barkhane , se estrellaron en el norte de Malí y murieron 13 soldados .	Fue el incidente más mortal que involucró al ejército francés desde el atentado contra los cuarteles en Beirut en 1983 .	Un helicóptero de ataque francés Eurocopter Tiger chocó con un helicóptero de transporte militar Eurocopter AS532 Cougar a baja altitud durante la noche , mientras viajaba cerca de la ciudad de Ménaka , en el norte de Malí .	Los helicópteros estaban en medio de una persecución a fuerzas militantes en vehículos y motocicletas , después de que las fuerzas terrestres pidieran apoyo aéreo .	Por razones desconocidas , los dos helicópteros chocaron y se estrellaron matando a todos a bordo .
+Event	T0	estrellaron	EVENT	113
+Event	T1	murieron	EVENT	147
+Event	T10	persecución	EVENT	557
+Event	T11	chocaron	EVENT	729
+Event	T12	matando	EVENT	755
+Event	T3	incidente	EVENT	177
+Event	T5	involucró	EVENT	202
+Event	T6	atentado	EVENT	241
+Event	T7	ataque	EVENT	309
+Event	T8	chocó	EVENT	341
+Event	T9	viajaba	EVENT	455
+Relation	T10	T11	SuperSub	true	persecución	chocaron
+Relation	T11	T10	SubSuper	true	chocaron	persecución
+Relation	T10	T7	NoRel	true	persecución	ataque
+Relation	T12	T1	NoRel	true	matando	murieron
+Relation	T3	T1	NoRel	true	incidente	murieron
+Relation	T3	T12	NoRel	true	incidente	matando
+Relation	T5	T1	NoRel	true	involucró	murieron
+Relation	T5	T3	NoRel	true	involucró	incidente
+Relation	T6	T3	NoRel	true	atentado	incidente
+Relation	T8	T12	NoRel	true	chocó	matando
+Relation	T9	T10	NoRel	true	viajaba	persecución
+Relation	T9	T11	NoRel	true	viajaba	chocaron
+Relation	T9	T6	NoRel	true	viajaba	atentado

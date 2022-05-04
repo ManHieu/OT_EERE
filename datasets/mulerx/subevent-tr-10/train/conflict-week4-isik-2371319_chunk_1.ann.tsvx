@@ -1,0 +1,46 @@
+Text	Kuruluş , adanın kuzeyinde , 2013 yılında Kıbrıs Cumhuriyeti bayrakları açan kişilerin yargılanması , 2018 yılında Afrika gazetesine karşı gerçekleşen saldırı , 2019 yılında bazı gazetecilere Türkiye tarafından açılan davalar ve 2020 yılında barikatlardan geçmek isteyen işçilere karşı gerçekleşen olaylarda hedef alınan Kıbrıslı Türklere destek olmuştur .	Faaliyetleri nedeniyle kuruluşun liderliği 2021 yılında Türkiye tarafından kara listeye alınmış ve persona non grata edilmiştir .	Kıbrıslılar Birliği , 2019 Avrupa Parlamentosu seçimlerine bağımsız olarak katılabileceğini kamuoyu ile paylaşmış , ancak daha sonra seçimlerde Oz Karahan tarafından Yasemin Hareketi listesi içerisinde temsil edilmiştir .	Kıbrıslılar Birliği , _ Halkların Uluslararası Mücadele Birliği _ , _ Devrimci Parti ve Örgütlerin Enternasyonal Koordinasyonu _ , _ Küresel Ekososyalist Ağı _ ve _ Savaşa Hayır - NATO'ya Hayır _ üyesidir .	Kıbrıslılar Birliği tarafından Kıbrıslı toplum lideri ve devlet adamı Dr. İhsan Ali’nin anısına Onur Ödülleri verilmektedir .
+Event	T0	yargılanması	EVENT	87
+Event	T1	saldırı	EVENT	151
+Event	T2	davalar	EVENT	218
+Event	T3	geçmek	EVENT	256
+Event	T4	alınmış	EVENT	445
+Event	T5	edilmiştir	EVENT	474
+Event	T6	paylaşmış	EVENT	591
+Event	T7	edilmiştir	EVENT	696
+Event	T8	verilmektedir	EVENT	1026
+Event	T9	açan	EVENT	72
+Event	T10	olaylarda	EVENT	298
+Event	T11	alınan	EVENT	314
+Event	T12	olmuştur	EVENT	346
+Event	T13	Faaliyetleri	EVENT	357
+Event	T14	seçimlerine	EVENT	534
+Event	T15	seçimlerde	EVENT	620
+Relation	T2	T12	SuperSub	true	davalar	olmuştur
+Relation	T12	T2	SubSuper	true	olmuştur	davalar
+Relation	T10	T12	SuperSub	true	olaylarda	olmuştur
+Relation	T12	T10	SubSuper	true	olmuştur	olaylarda
+Relation	T0	T12	NoRel	true	yargılanması	olmuştur
+Relation	T0	T3	NoRel	true	yargılanması	geçmek
+Relation	T1	T14	NoRel	true	saldırı	seçimlerine
+Relation	T1	T3	NoRel	true	saldırı	geçmek
+Relation	T10	T13	NoRel	true	olaylarda	Faaliyetleri
+Relation	T11	T1	NoRel	true	alınan	saldırı
+Relation	T11	T14	NoRel	true	alınan	seçimlerine
+Relation	T12	T7	NoRel	true	olmuştur	edilmiştir
+Relation	T12	T8	NoRel	true	olmuştur	verilmektedir
+Relation	T13	T12	NoRel	true	Faaliyetleri	olmuştur
+Relation	T13	T15	NoRel	true	Faaliyetleri	seçimlerde
+Relation	T14	T15	NoRel	true	seçimlerine	seçimlerde
+Relation	T15	T13	NoRel	true	seçimlerde	Faaliyetleri
+Relation	T2	T4	NoRel	true	davalar	alınmış
+Relation	T3	T15	NoRel	true	geçmek	seçimlerde
+Relation	T3	T6	NoRel	true	geçmek	paylaşmış
+Relation	T4	T12	NoRel	true	alınmış	olmuştur
+Relation	T5	T10	NoRel	true	edilmiştir	olaylarda
+Relation	T5	T11	NoRel	true	edilmiştir	alınan
+Relation	T5	T3	NoRel	true	edilmiştir	geçmek
+Relation	T7	T11	NoRel	true	edilmiştir	alınan
+Relation	T7	T13	NoRel	true	edilmiştir	Faaliyetleri
+Relation	T8	T10	NoRel	true	verilmektedir	olaylarda
+Relation	T8	T5	NoRel	true	verilmektedir	edilmiştir
+Relation	T9	T3	NoRel	true	açan	geçmek

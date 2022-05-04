@@ -1,0 +1,54 @@
+Text	Mid-December : Prototype Myasishchev M - 17 - 1 Chayka high - altitude interceptor , painted in Aeroflot colours and bearing civil registration _ CCCP - 17100_ , becomes accidentally airborne during initial taxi trial at Kumertau , when , in poor visibility , the starboard aileron accidentally lowered and aircraft turned abruptly .	Pilot , Kir Chernobrovkin , takes off to avoid snow heap , but wingtip subsequently hits hillside and the prototype was destroyed , pilot KWF .	23 January : Aeronautica Militare Italiana , Italian Air Force Lockheed C - 130 H Hercules _ MM62000_ , ' 46 - 14 ' , of the 46 Aerobrigata , jumped chocks during engine run - up , hit tree , written - off .	Parts used to support c / n 4491,__ MM61995_ damaged in hard landing , Pisa , January 1999 .	Hull at Milan - Malpensa , Italy , December 1979 , 1989 .
+Event	T0	painted	EVENT	85
+Event	T1	registration	EVENT	131
+Event	T2	airborne	EVENT	183
+Event	T3	trial	EVENT	212
+Event	T4	lowered	EVENT	295
+Event	T5	hits	EVENT	418
+Event	T6	destroyed	EVENT	454
+Event	T8	hit	EVENT	659
+Event	T10	used	EVENT	692
+Event	T11	damaged	EVENT	731
+Event	T12	landing	EVENT	747
+Event	T13	turned	EVENT	316
+Event	T14	takes off	EVENT	362
+Event	T15	snow	EVENT	381
+Event	T9	written - off	EVENT	670
+Event	T7	jumped	EVENT	620
+Relation	T3	T2	SuperSub	true	trial	airborne
+Relation	T2	T3	SubSuper	true	airborne	trial
+Relation	T4	T13	SuperSub	true	lowered	turned
+Relation	T13	T4	SubSuper	true	turned	lowered
+Relation	T14	T5	SuperSub	true	takes off	hits
+Relation	T5	T14	SubSuper	true	hits	takes off
+Relation	T7	T8	SuperSub	true	jumped	hit
+Relation	T8	T7	SubSuper	true	hit	jumped
+Relation	T8	T9	SuperSub	true	hit	written - off
+Relation	T9	T8	SubSuper	true	written - off	hit
+Relation	T0	T10	NoRel	true	painted	used
+Relation	T0	T11	NoRel	true	painted	damaged
+Relation	T0	T6	NoRel	true	painted	destroyed
+Relation	T1	T13	NoRel	true	registration	turned
+Relation	T1	T4	NoRel	true	registration	lowered
+Relation	T10	T12	NoRel	true	used	landing
+Relation	T10	T14	NoRel	true	used	takes off
+Relation	T10	T4	NoRel	true	used	lowered
+Relation	T11	T0	NoRel	true	damaged	painted
+Relation	T11	T12	NoRel	true	damaged	landing
+Relation	T11	T14	NoRel	true	damaged	takes off
+Relation	T11	T2	NoRel	true	damaged	airborne
+Relation	T11	T8	NoRel	true	damaged	hit
+Relation	T12	T1	NoRel	true	landing	registration
+Relation	T12	T5	NoRel	true	landing	hits
+Relation	T13	T8	NoRel	true	turned	hit
+Relation	T14	T13	NoRel	true	takes off	turned
+Relation	T14	T9	NoRel	true	takes off	written - off
+Relation	T2	T1	NoRel	true	airborne	registration
+Relation	T2	T4	NoRel	true	airborne	lowered
+Relation	T2	T7	NoRel	true	airborne	jumped
+Relation	T4	T3	NoRel	true	lowered	trial
+Relation	T5	T3	NoRel	true	hits	trial
+Relation	T6	T14	NoRel	true	destroyed	takes off
+Relation	T8	T11	NoRel	true	hit	damaged
+Relation	T9	T12	NoRel	true	written - off	landing
+Relation	T9	T3	NoRel	true	written - off	trial

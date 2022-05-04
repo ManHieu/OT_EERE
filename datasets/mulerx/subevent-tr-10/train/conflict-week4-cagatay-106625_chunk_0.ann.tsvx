@@ -1,0 +1,10 @@
+Text	küçükresim | Sonya Blade SONYA BLADE , Mortal Kombat dövüş oyunu serisinden kurgusal bir karakterdir .	ilk olarak serinin ilk çıkan oyunu olan Mortal Kombat'da görülmüştür .	Kano'yu takip ederken yanlışlıkla Mortal Kombat turnuvasına girer ve Shao Kahn'ın amaçlarını öğrenir .	Asıl amacı Earthrealm'ı korumak olan bir Special Forces ajanıdır .	Johnny Cage'den Cassie Cage adında bir kızı vardır .
+Event	T0	oyunu	EVENT	132
+Event	T1	görülmüştür	EVENT	160
+Event	T2	takip	EVENT	182
+Event	T3	girer	EVENT	234
+Event	T4	öğrenir	EVENT	267
+Event	T5	korumak	EVENT	301
+Relation	T2	T1	NoRel	true	takip	görülmüştür
+Relation	T2	T4	NoRel	true	takip	öğrenir
+Relation	T5	T2	NoRel	true	korumak	takip

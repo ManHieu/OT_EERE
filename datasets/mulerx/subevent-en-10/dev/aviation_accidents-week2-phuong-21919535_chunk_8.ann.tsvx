@@ -1,0 +1,36 @@
+Text	On 31 October 1944 , Foskett was returning to base following an operation when his Spitfire developed engine trouble between the islands of Skiathos and Skópelos over the Aegean Sea .	He attempted to bail out of the aircraft , but his altitude was too low for his parachute to open , and he was consequently killed .	Foskett 's body was later recovered , and he was buried at sea ; he is commemorated on the Malta Memorial .	Foskett 's younger brother Bruce William , a Royal Australian Air Force navigator , had been killed in an operation over Berlin the previous February .	By the time of his death , Foskett had been officially credited with a tally of 6 ½ Axis aircraft shot down .
+Event	T0	returning	EVENT	33
+Event	T1	operation	EVENT	64
+Event	T10	operation	EVENT	531
+Event	T11	death	EVENT	596
+Event	T12	credited	EVENT	632
+Event	T14	shot down	EVENT	675
+Event	T2	trouble	EVENT	109
+Event	T4	open	EVENT	277
+Event	T5	killed	EVENT	308
+Event	T6	recovered	EVENT	343
+Event	T7	buried	EVENT	366
+Event	T8	commemorated	EVENT	388
+Event	T9	killed	EVENT	518
+Relation	T1	T0	SuperSub	true	operation	returning
+Relation	T0	T1	SubSuper	true	returning	operation
+Relation	T6	T7	SuperSub	true	recovered	buried
+Relation	T7	T6	SubSuper	true	buried	recovered
+Relation	T6	T8	SuperSub	true	recovered	commemorated
+Relation	T8	T6	SubSuper	true	commemorated	recovered
+Relation	T5	T6	SuperSub	true	killed	recovered
+Relation	T6	T5	SubSuper	true	recovered	killed
+Relation	T0	T11	NoRel	true	returning	death
+Relation	T0	T8	NoRel	true	returning	commemorated
+Relation	T1	T11	NoRel	true	operation	death
+Relation	T1	T2	NoRel	true	operation	trouble
+Relation	T11	T7	NoRel	true	death	buried
+Relation	T11	T9	NoRel	true	death	killed
+Relation	T14	T1	NoRel	true	shot down	operation
+Relation	T14	T8	NoRel	true	shot down	commemorated
+Relation	T2	T11	NoRel	true	trouble	death
+Relation	T2	T7	NoRel	true	trouble	buried
+Relation	T4	T12	NoRel	true	open	credited
+Relation	T9	T11	NoRel	true	killed	death
+Relation	T9	T12	NoRel	true	killed	credited
+Relation	T9	T4	NoRel	true	killed	open

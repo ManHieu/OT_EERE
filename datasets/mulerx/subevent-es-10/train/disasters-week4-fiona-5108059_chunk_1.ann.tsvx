@@ -1,0 +1,36 @@
+Text	La colisión se ha producido por el choque de un tren que comunicaba Varsovia con Cracovia con otro convoy que ya se encontraba en la vía .	La fiscalía ha abierto diligencias contra el regulador de tráfico por posible error humano e intentar falsificar el parte de guardia .	A la escena del accidente se han trasladado 19 ambulancias , _ Todo lo que tenemos _ , lamentó el director del Servicio de Emergencias Regional , Artur Borowicz .	Dos helicópteros fueron enviados desde Varsovia y la localidad de Wroclaw para el traslado de heridos .	En las operaciones de rescate participaron 450 bomberos y más de un centenar de policías , aunque los primeros en asistir a los heridos fueron varios vecinos al lugar del accidente .
+Event	T0	producido	EVENT	18
+Event	T1	choque	EVENT	35
+Event	T2	comunicaba	EVENT	57
+Event	T3	diligencias	EVENT	162
+Event	T4	falsificar	EVENT	241
+Event	T5	accidente	EVENT	290
+Event	T6	trasladado	EVENT	307
+Event	T7	enviados	EVENT	461
+Event	T8	traslado	EVENT	519
+Event	T9	heridos	EVENT	531
+Event	T10	operaciones	EVENT	548
+Event	T11	participaron	EVENT	571
+Event	T12	asistir	EVENT	655
+Event	T13	heridos	EVENT	669
+Event	T14	accidente	EVENT	712
+Event	T15	colisión	EVENT	3
+Relation	T5	T6	SuperSub	true	accidente	trasladado
+Relation	T6	T5	SubSuper	true	trasladado	accidente
+Relation	T0	T1	NoRel	true	producido	choque
+Relation	T1	T0	NoRel	true	choque	producido
+Relation	T10	T13	NoRel	true	operaciones	heridos
+Relation	T12	T8	NoRel	true	asistir	traslado
+Relation	T13	T6	NoRel	true	heridos	trasladado
+Relation	T15	T11	NoRel	true	colisión	participaron
+Relation	T15	T7	NoRel	true	colisión	enviados
+Relation	T15	T9	NoRel	true	colisión	heridos
+Relation	T2	T13	NoRel	true	comunicaba	heridos
+Relation	T3	T9	NoRel	true	diligencias	heridos
+Relation	T4	T11	NoRel	true	falsificar	participaron
+Relation	T4	T13	NoRel	true	falsificar	heridos
+Relation	T5	T0	NoRel	true	accidente	producido
+Relation	T6	T12	NoRel	true	trasladado	asistir
+Relation	T7	T13	NoRel	true	enviados	heridos
+Relation	T9	T0	NoRel	true	heridos	producido
+Relation	T9	T3	NoRel	true	heridos	diligencias

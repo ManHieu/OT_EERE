@@ -1,0 +1,50 @@
+Text	26 Eylül 1618’de Erdebil’de imzalanıp 29 Eylül 1619’da İstanbul’da Sultan Genç Osman tarafından da kabul edilen bu antlaşmaya göre ; Kanuni devrinde Amasya Antlaşmasıyla tayin edilen sınırlar esas kabul edilecek , Kars ve Ahıska Osmanlılarda kalacak , Safeviler , Osmanlı hakimiyetinde bulunan Dağıstan’a taarruz etmeyecek ve esirler iade edilecekti .	Ayrıca İran her yıl 100 yük ipek , kumaş v. s . kıymetli eşyayı haraç olarak İstanbul’a gönderecek ve Sünni büyüklerine sövmeyi terk edeceklerdi .	Sultan IV. Murad’ın tahta geçişinin hemen , evvelden beri Anadolu’da sürüp gitmekte olan isyanlardan biri de Bağdad’da baş göstermiş , burada bulunan on iki bin kişilik yerli kulu askerinin başında bulunup zengin ve nüfuzlu bir kişi olan Bekir Subaşı , şehri ele geçirmişti .	Bağdad valiliğine tayin isteği İstanbul tarafından kabul edilmeyip , başka bir vali gönderilince de şehre almamıştı .	Bunun üzerine bölgeye gönderilen Hafız Ahmed Paşa şehri kuşatınca , valilikten ümidini kesen Bekir Subaşı , mukavemet edemeyeceğini anlayarak , Şah Abbas’a haber gönderip Safevi tabiiyyetine geçmek istediğini bildirdi .
+Event	T0	kabul	EVENT	99
+Event	T1	tayin	EVENT	170
+Event	T2	edilecek	EVENT	203
+Event	T3	edilecekti	EVENT	339
+Event	T4	gönderecek	EVENT	440
+Event	T5	geçişinin	EVENT	525
+Event	T6	isyanlardan	EVENT	588
+Event	T7	göstermiş	EVENT	622
+Event	T8	geçirmişti	EVENT	762
+Event	T10	kuşatınca	EVENT	949
+Event	T11	geçmek	EVENT	1084
+Event	T12	bildirdi	EVENT	1102
+Event	T13	imzalanıp	EVENT	28
+Event	T14	antlaşmaya	EVENT	115
+Event	T15	Amasya Antlaşmasıyla	EVENT	149
+Event	T9	gönderilince	EVENT	859
+Event	T16	gönderilen	EVENT	915
+Relation	T0	T1	NoRel	true	kabul	tayin
+Relation	T0	T10	NoRel	true	kabul	kuşatınca
+Relation	T0	T16	NoRel	true	kabul	gönderilen
+Relation	T1	T10	NoRel	true	tayin	kuşatınca
+Relation	T1	T7	NoRel	true	tayin	göstermiş
+Relation	T10	T14	NoRel	true	kuşatınca	antlaşmaya
+Relation	T10	T16	NoRel	true	kuşatınca	gönderilen
+Relation	T11	T8	NoRel	true	geçmek	geçirmişti
+Relation	T13	T9	NoRel	true	imzalanıp	gönderilince
+Relation	T14	T15	NoRel	true	antlaşmaya	Amasya Antlaşmasıyla
+Relation	T14	T16	NoRel	true	antlaşmaya	gönderilen
+Relation	T14	T3	NoRel	true	antlaşmaya	edilecekti
+Relation	T14	T4	NoRel	true	antlaşmaya	gönderecek
+Relation	T14	T9	NoRel	true	antlaşmaya	gönderilince
+Relation	T15	T10	NoRel	true	Amasya Antlaşmasıyla	kuşatınca
+Relation	T16	T10	NoRel	true	gönderilen	kuşatınca
+Relation	T16	T15	NoRel	true	gönderilen	Amasya Antlaşmasıyla
+Relation	T2	T11	NoRel	true	edilecek	geçmek
+Relation	T3	T11	NoRel	true	edilecekti	geçmek
+Relation	T4	T13	NoRel	true	gönderecek	imzalanıp
+Relation	T4	T15	NoRel	true	gönderecek	Amasya Antlaşmasıyla
+Relation	T4	T16	NoRel	true	gönderecek	gönderilen
+Relation	T4	T3	NoRel	true	gönderecek	edilecekti
+Relation	T4	T9	NoRel	true	gönderecek	gönderilince
+Relation	T5	T0	NoRel	true	geçişinin	kabul
+Relation	T5	T14	NoRel	true	geçişinin	antlaşmaya
+Relation	T7	T0	NoRel	true	göstermiş	kabul
+Relation	T7	T10	NoRel	true	göstermiş	kuşatınca
+Relation	T7	T12	NoRel	true	göstermiş	bildirdi
+Relation	T7	T2	NoRel	true	göstermiş	edilecek
+Relation	T8	T1	NoRel	true	geçirmişti	tayin
+Relation	T9	T7	NoRel	true	gönderilince	göstermiş

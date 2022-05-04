@@ -1,0 +1,43 @@
+Text	سراج الدولہ نے انگریزوں سے جنگ کی لیکن ان کا مسلک شیعہ ہونے کی وجہ سے انھیں شاہ ولی اللہ کی طرف سے وہ حمایت نہ ملی جو احمد شاہ ابدالی کو میسر رہی ۔	یہی مسلہ میر قاسم اور اودھ کے نواب شجاع الدولہ کو درپیش تھا ، انھیں بھی بکسر کے میدان میں دہلی کے سنی امرا یا شاہ ولی اللہ کی طرف سے کوئی حمایت نہ ملی ۔	احمد شاہ ابدالی نے کل سات حملے کیے جن میں سے چوتھے اور پانچویں حملے میں دہلی پہنچا ۔	دہلی پر 1757 ء کے حملے میں افغانوں نے منظم انداز میں شہر کو لوٹا ، شہر کے محلوں میں الگ الگ ٹولیاں بھیجی گئیں جنہوں نے نہ صرف گھروں کا سامان لوٹا بلکہ فرش اکھاڑ کر بھی تلاشی لی تاکہ کسی کا چھپایا گیا زیور باقی نہ رہ جائے ۔	بے شمار ہندو خواتین کی عصمت لوٹی گئی ۔
+Event	T1	حملے	EVENT	364
+Event	T2	پہنچا	EVENT	378
+Event	T3	حملے	EVENT	404
+Event	T4	لوٹا	EVENT	446
+Event	T5	لوٹا	EVENT	527
+Event	T7	چھپایا	EVENT	575
+Event	T9	جنگ	EVENT	27
+Event	T10	ہونے	EVENT	55
+Event	T11	حمایت	EVENT	102
+Event	T12	درپیش	EVENT	198
+Event	T13	حمایت	EVENT	286
+Event	T14	حملے	EVENT	327
+Event	T15	بھیجی	EVENT	485
+Event	T16	تلاشی	EVENT	554
+Event	T6	لوٹی	EVENT	637
+Relation	T12	T13	SuperSub	true	درپیش	حمایت
+Relation	T13	T12	SubSuper	true	حمایت	درپیش
+Relation	T4	T15	SuperSub	true	لوٹا	بھیجی
+Relation	T15	T4	SubSuper	true	بھیجی	لوٹا
+Relation	T11	T12	NoRel	true	حمایت	درپیش
+Relation	T11	T4	NoRel	true	حمایت	لوٹا
+Relation	T11	T5	NoRel	true	حمایت	لوٹا
+Relation	T11	T7	NoRel	true	حمایت	چھپایا
+Relation	T12	T10	NoRel	true	درپیش	ہونے
+Relation	T12	T2	NoRel	true	درپیش	پہنچا
+Relation	T12	T4	NoRel	true	درپیش	لوٹا
+Relation	T12	T9	NoRel	true	درپیش	جنگ
+Relation	T13	T4	NoRel	true	حمایت	لوٹا
+Relation	T14	T4	NoRel	true	حملے	لوٹا
+Relation	T15	T1	NoRel	true	بھیجی	حملے
+Relation	T15	T2	NoRel	true	بھیجی	پہنچا
+Relation	T16	T2	NoRel	true	تلاشی	پہنچا
+Relation	T2	T11	NoRel	true	پہنچا	حمایت
+Relation	T2	T15	NoRel	true	پہنچا	بھیجی
+Relation	T2	T4	NoRel	true	پہنچا	لوٹا
+Relation	T3	T13	NoRel	true	حملے	حمایت
+Relation	T3	T16	NoRel	true	حملے	تلاشی
+Relation	T4	T10	NoRel	true	لوٹا	ہونے
+Relation	T6	T16	NoRel	true	لوٹی	تلاشی
+Relation	T6	T4	NoRel	true	لوٹی	لوٹا
+Relation	T7	T16	NoRel	true	چھپایا	تلاشی
+Relation	T9	T16	NoRel	true	جنگ	تلاشی

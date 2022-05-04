@@ -1,0 +1,22 @@
+Text	میانمار میں کورونا وائرس کی وبا اس سال مارچ پہلی لہر کے طور پر شروع ہوئی تھی ، جس کی وجہ سے میانمار سمیت دنیا بھر میں لاک ڈاؤن لاگو ہوا تھا ۔	ملک کے کاروبار پر اس کا کافی منفی اثر پڑا اور کئی لوگ اس قدر مجبور ہوئے کہ اپنی بقا کے لیے چوہے اور سانب کھانے لگے ۔	سائنس دانوں نے 6 نئے کورونا وائرس کا پتہ لگایا ہے ۔	یہ میانمار میں پائے جانے والے چمگاڈر کی تین اقسام میں پایا جاتا ہے ۔	یہ کورونا وائرس کی طرح ہیں ۔
+Event	T0	وبا	EVENT	28
+Event	T1	لہر	EVENT	49
+Event	T7	پائے	EVENT	326
+Event	T8	پایا	EVENT	365
+Event	T9	شروع	EVENT	63
+Event	T10	لاک ڈاؤن	EVENT	118
+Event	T2	اثر	EVENT	176
+Event	T3	مجبور	EVENT	203
+Event	T4	کھانے	EVENT	247
+Event	T5	پتہ	EVENT	296
+Relation	T0	T1	SuperSub	true	وبا	لہر
+Relation	T1	T0	SubSuper	true	لہر	وبا
+Relation	T3	T4	SuperSub	true	مجبور	کھانے
+Relation	T4	T3	SubSuper	true	کھانے	مجبور
+Relation	T0	T5	NoRel	true	وبا	پتہ
+Relation	T1	T2	NoRel	true	لہر	اثر
+Relation	T2	T0	NoRel	true	اثر	وبا
+Relation	T2	T4	NoRel	true	اثر	کھانے
+Relation	T3	T1	NoRel	true	مجبور	لہر
+Relation	T3	T2	NoRel	true	مجبور	اثر
+Relation	T3	T8	NoRel	true	مجبور	پایا

@@ -1,0 +1,23 @@
+Text	2010 KANSU HEYELANI veya 2010 KANSU TOPRAK KAYMASI , Çin'in Kansu eyaletinde meydana gelmiş bir çamur kayması ( heyelan ) .	Kayma , 8 Ağustos 2010 günü , geceyarısı saat 24: 00'te Gannan Tibet Özerk ilinde gerçekleşti .	2010 Çin sellerinin en ölümcül felaketiydi .	En büyük zarar Zhugqu ilçesinde meydana geldi .	13 Ağustos 2010 günü itibarı ile çamur kaymasında 1156 kişi ölürken 558 kişi kayboldu .
+Event	T2	heyelan	EVENT	112
+Event	T3	gerçekleşti	EVENT	206
+Event	T4	felaketiydi	EVENT	251
+Event	T5	zarar	EVENT	274
+Event	T7	kaymasında	EVENT	352
+Event	T8	ölürken	EVENT	373
+Event	T9	kayboldu	EVENT	390
+Event	T10	2010 KANSU HEYELANI	EVENT	0
+Event	T11	2010 KANSU TOPRAK KAYMASI	EVENT	25
+Event	T1	kayması	EVENT	102
+Event	T12	Kayma	EVENT	124
+Relation	T1	T2	NoRel	true	kayması	heyelan
+Relation	T1	T8	NoRel	true	kayması	ölürken
+Relation	T11	T12	NoRel	true	2010 KANSU TOPRAK KAYMASI	Kayma
+Relation	T12	T8	NoRel	true	Kayma	ölürken
+Relation	T3	T4	NoRel	true	gerçekleşti	felaketiydi
+Relation	T3	T5	NoRel	true	gerçekleşti	zarar
+Relation	T4	T11	NoRel	true	felaketiydi	2010 KANSU TOPRAK KAYMASI
+Relation	T8	T12	NoRel	true	ölürken	Kayma
+Relation	T8	T9	NoRel	true	ölürken	kayboldu
+Relation	T9	T4	NoRel	true	kayboldu	felaketiydi
+Relation	T9	T8	NoRel	true	kayboldu	ölürken

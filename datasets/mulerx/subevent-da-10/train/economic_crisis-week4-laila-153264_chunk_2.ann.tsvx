@@ -1,0 +1,34 @@
+Text	Således fortæller en anekdote , at Margaret Thatcher smed hans værk _ The Constitution of Liberty _ på bordet til et ledelsesmøde i Conservative Party og erklærede " _ This is what we believe _ " – " _ Dette er hvad vi tror på _ " .	Hayek var en ledende kritiker af socialismen og kommunismen i 1900-tallet .	Hayek mente , at en hvilken som helst form for kollektivisme ikke kunne undgå at føre til andet end centralisering af magten omkring en enkelt person eller en lille elite .	I sin økonomiske teori byggede Hayek videre på ideer fra andre østrigske økonomer , herunder Ludwig von Mises arbejde under kalkulationsdebatten .	I _ Vejen til Trældom _ og i efterfølgende værker påstod Hayek , at en væsentlig forudsætning for et socialistisk samfund er en centralt planlagt økonomi og at planøkonomi altid vil føre til totalitarisme .
+Event	T0	fortæller	EVENT	8
+Event	T1	smed	EVENT	53
+Event	T2	føre	EVENT	390
+Event	T3	byggede	EVENT	505
+Event	T4	arbejde	EVENT	592
+Event	T5	påstod	EVENT	679
+Event	T6	tror	EVENT	219
+Event	T7	believe	EVENT	184
+Event	T8	kritiker	EVENT	254
+Event	T9	kollektivisme	EVENT	356
+Event	T10	centralisering	EVENT	409
+Event	T11	planøkonomi	EVENT	789
+Event	T12	totalitarisme	EVENT	820
+Event	T13	socialistisk	EVENT	730
+Event	T14	planlagt	EVENT	766
+Relation	T13	T14	SuperSub	true	socialistisk	planlagt
+Relation	T14	T13	SubSuper	true	planlagt	socialistisk
+Relation	T0	T9	NoRel	true	fortæller	kollektivisme
+Relation	T10	T14	NoRel	true	centralisering	planlagt
+Relation	T11	T1	NoRel	true	planøkonomi	smed
+Relation	T11	T14	NoRel	true	planøkonomi	planlagt
+Relation	T12	T2	NoRel	true	totalitarisme	føre
+Relation	T12	T4	NoRel	true	totalitarisme	arbejde
+Relation	T14	T0	NoRel	true	planlagt	fortæller
+Relation	T14	T10	NoRel	true	planlagt	centralisering
+Relation	T14	T4	NoRel	true	planlagt	arbejde
+Relation	T14	T9	NoRel	true	planlagt	kollektivisme
+Relation	T4	T13	NoRel	true	arbejde	socialistisk
+Relation	T6	T11	NoRel	true	tror	planøkonomi
+Relation	T6	T3	NoRel	true	tror	byggede
+Relation	T8	T6	NoRel	true	kritiker	tror
+Relation	T9	T0	NoRel	true	kollektivisme	fortæller
+Relation	T9	T3	NoRel	true	kollektivisme	byggede

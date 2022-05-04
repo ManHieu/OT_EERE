@@ -1,0 +1,61 @@
+Text	Lieutenant JOHN MONCRIEFF and Captain GEORGE HOOD were two New Zealanders who vanished on 10 January 1928 while attempting the first trans-Tasman flight from Australia to New Zealand .	Radio signals were received from their aircraft for 12 hours after their departure from Sydney , but despite a number of purported sightings in New Zealand , and many land searches in the intervening years , no trace of the aviators or their aircraft has ever been found .	John Robert Moncrieff was a New Zealander by adoption , being born at Lerwick in the Shetland Islands on 22 September 1894 .	Educated at Leith Academy in Scotland , he emigrated to New Zealand early at the age of 16 and trained as a motor engineer .	He enlisted in the armed forces in December 1917 , and took a flying course with the Canterbury ( NZ ) Aviation Company at the Sockburn aerodrome ( later renamed Wigram Aerodrome ) .
+Event	T0	vanished	EVENT	78
+Event	T1	attempting	EVENT	112
+Event	T10	born	EVENT	520
+Event	T11	Educated	EVENT	583
+Event	T12	emigrated	EVENT	626
+Event	T13	trained	EVENT	678
+Event	T14	enlisted	EVENT	711
+Event	T15	took	EVENT	763
+Event	T16	renamed	EVENT	862
+Event	T2	flight	EVENT	146
+Event	T3	signals	EVENT	191
+Event	T5	departure	EVENT	258
+Event	T6	sightings	EVENT	316
+Event	T7	searches	EVENT	357
+Event	T8	found	EVENT	450
+Event	T9	adoption	EVENT	503
+Relation	T0	T7	SuperSub	true	vanished	searches
+Relation	T7	T0	SubSuper	true	searches	vanished
+Relation	T0	T6	SuperSub	true	vanished	sightings
+Relation	T6	T0	SubSuper	true	sightings	vanished
+Relation	T0	T3	SuperSub	true	vanished	signals
+Relation	T3	T0	SubSuper	true	signals	vanished
+Relation	T9	T10	SuperSub	true	adoption	born
+Relation	T10	T9	SubSuper	true	born	adoption
+Relation	T9	T14	SuperSub	true	adoption	enlisted
+Relation	T14	T9	SubSuper	true	enlisted	adoption
+Relation	T9	T13	SuperSub	true	adoption	trained
+Relation	T13	T9	SubSuper	true	trained	adoption
+Relation	T9	T12	SuperSub	true	adoption	emigrated
+Relation	T12	T9	SubSuper	true	emigrated	adoption
+Relation	T9	T11	SuperSub	true	adoption	Educated
+Relation	T11	T9	SubSuper	true	Educated	adoption
+Relation	T0	T10	NoRel	true	vanished	born
+Relation	T12	T10	NoRel	true	emigrated	born
+Relation	T13	T0	NoRel	true	trained	vanished
+Relation	T13	T14	NoRel	true	trained	enlisted
+Relation	T13	T2	NoRel	true	trained	flight
+Relation	T14	T0	NoRel	true	enlisted	vanished
+Relation	T14	T3	NoRel	true	enlisted	signals
+Relation	T15	T16	NoRel	true	took	renamed
+Relation	T15	T6	NoRel	true	took	sightings
+Relation	T16	T11	NoRel	true	renamed	Educated
+Relation	T16	T12	NoRel	true	renamed	emigrated
+Relation	T16	T15	NoRel	true	renamed	took
+Relation	T2	T10	NoRel	true	flight	born
+Relation	T2	T11	NoRel	true	flight	Educated
+Relation	T2	T12	NoRel	true	flight	emigrated
+Relation	T2	T15	NoRel	true	flight	took
+Relation	T2	T6	NoRel	true	flight	sightings
+Relation	T2	T7	NoRel	true	flight	searches
+Relation	T3	T7	NoRel	true	signals	searches
+Relation	T3	T8	NoRel	true	signals	found
+Relation	T5	T12	NoRel	true	departure	emigrated
+Relation	T6	T2	NoRel	true	sightings	flight
+Relation	T7	T13	NoRel	true	searches	trained
+Relation	T7	T16	NoRel	true	searches	renamed
+Relation	T8	T7	NoRel	true	found	searches
+Relation	T9	T1	NoRel	true	adoption	attempting
+Relation	T9	T16	NoRel	true	adoption	renamed
+Relation	T9	T3	NoRel	true	adoption	signals

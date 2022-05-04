@@ -1,0 +1,36 @@
+Text	شاہ عالم ثانی نے شیعہ سردار نجف خان کو اپنا وزیر مقرر کیا ۔	نجف خان نے سکھوں کے مقابلے میں دہلی کا کامیابی سے دفاع کیا ۔	1782ء میں نجف خان کا انتقال ہو گیا ۔	1787 ء میں ضابطہ خان کے بیٹے غلام قادر روہیلہ نے دہلی پر حملہ کر کے دوبارہ قبضہ کر لیا ۔	وہ ایک ذہنی مریض تھا ، اس نے شاہ عالم ثانی کی آنکھوں میں سوئی مار کر اندھا کر دیا اور مغل شہزادیوں سے زنا باالجبر کرنے کے بعد ننگا کر کے کوڑے لگائے ۔
+Event	T0	مقابلے	EVENT	80
+Event	T1	کامیابی	EVENT	99
+Event	T2	انتقال	EVENT	142
+Event	T4	قبضہ	EVENT	233
+Event	T5	مار	EVENT	309
+Event	T8	مقرر	EVENT	49
+Event	T9	دفاع	EVENT	110
+Event	T3	حملہ	EVENT	215
+Event	T10	زنا	EVENT	349
+Event	T11	ننگا	EVENT	373
+Event	T12	کوڑے	EVENT	384
+Event	T6	اندھا	EVENT	316
+Relation	T4	T3	SuperSub	true	قبضہ	حملہ
+Relation	T3	T4	SubSuper	true	حملہ	قبضہ
+Relation	T0	T2	NoRel	true	مقابلے	انتقال
+Relation	T0	T3	NoRel	true	مقابلے	حملہ
+Relation	T1	T5	NoRel	true	کامیابی	مار
+Relation	T1	T8	NoRel	true	کامیابی	مقرر
+Relation	T10	T0	NoRel	true	زنا	مقابلے
+Relation	T10	T3	NoRel	true	زنا	حملہ
+Relation	T11	T1	NoRel	true	ننگا	کامیابی
+Relation	T12	T6	NoRel	true	کوڑے	اندھا
+Relation	T2	T0	NoRel	true	انتقال	مقابلے
+Relation	T2	T10	NoRel	true	انتقال	زنا
+Relation	T2	T11	NoRel	true	انتقال	ننگا
+Relation	T2	T12	NoRel	true	انتقال	کوڑے
+Relation	T2	T6	NoRel	true	انتقال	اندھا
+Relation	T4	T0	NoRel	true	قبضہ	مقابلے
+Relation	T5	T3	NoRel	true	مار	حملہ
+Relation	T6	T2	NoRel	true	اندھا	انتقال
+Relation	T6	T9	NoRel	true	اندھا	دفاع
+Relation	T8	T0	NoRel	true	مقرر	مقابلے
+Relation	T8	T1	NoRel	true	مقرر	کامیابی
+Relation	T8	T11	NoRel	true	مقرر	ننگا
+Relation	T8	T12	NoRel	true	مقرر	کوڑے

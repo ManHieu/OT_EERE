@@ -1,0 +1,43 @@
+Text	küçükresim | II. Dünya Savaşı'nda yakıt sıkıntısı nedeniyle at arabasına dönüştürülen bir otomobil .	ENERJI KRIZI , enerji kaynaklarının arzında oluşan darboğaz veya fiyat artışı sonra ortaya çıkan duruma verilen isimdir .	Popüler literatürde özellikle elektrik şebekelerinde ve araçlar için yakıt tedariği sıkıntısı için kullanılmaktadır .	Son yıllarda endüstriyel gelişme ve nüfus artışıyla birlikte enerji için küresel talep büyük bir artış göstermiştir .	- 1973 Petrol Krizi - 1979 Petrol Krizi - 1990 Petrol fiyatı şoku - Kaliforniya elektrik krizi - 2004 Arjantin enerji krizi - 2008 Orta Asya enerji krizi
+Event	T0	dönüştürülen	EVENT	73
+Event	T1	artışı	EVENT	172
+Event	T2	gelişme	EVENT	366
+Event	T3	göstermiştir	EVENT	444
+Event	T4	Krizi	EVENT	493
+Event	T5	şoku	EVENT	520
+Event	T6	krizi	EVENT	548
+Event	T7	krizi	EVENT	577
+Event	T8	krizi	EVENT	607
+Event	T9	II. Dünya Savaşı'nda	EVENT	13
+Event	T10	sıkıntısı	EVENT	40
+Event	T11	KRIZI	EVENT	108
+Event	T12	darboğaz	EVENT	152
+Event	T13	artışıyla	EVENT	383
+Event	T14	Krizi	EVENT	473
+Relation	T0	T1	NoRel	true	dönüştürülen	artışı
+Relation	T0	T11	NoRel	true	dönüştürülen	KRIZI
+Relation	T0	T13	NoRel	true	dönüştürülen	artışıyla
+Relation	T0	T2	NoRel	true	dönüştürülen	gelişme
+Relation	T0	T7	NoRel	true	dönüştürülen	krizi
+Relation	T1	T11	NoRel	true	artışı	KRIZI
+Relation	T1	T5	NoRel	true	artışı	şoku
+Relation	T12	T1	NoRel	true	darboğaz	artışı
+Relation	T12	T10	NoRel	true	darboğaz	sıkıntısı
+Relation	T12	T8	NoRel	true	darboğaz	krizi
+Relation	T13	T14	NoRel	true	artışıyla	Krizi
+Relation	T13	T7	NoRel	true	artışıyla	krizi
+Relation	T14	T3	NoRel	true	Krizi	göstermiştir
+Relation	T2	T12	NoRel	true	gelişme	darboğaz
+Relation	T2	T4	NoRel	true	gelişme	Krizi
+Relation	T3	T0	NoRel	true	göstermiştir	dönüştürülen
+Relation	T3	T11	NoRel	true	göstermiştir	KRIZI
+Relation	T3	T14	NoRel	true	göstermiştir	Krizi
+Relation	T4	T0	NoRel	true	Krizi	dönüştürülen
+Relation	T4	T2	NoRel	true	Krizi	gelişme
+Relation	T6	T11	NoRel	true	krizi	KRIZI
+Relation	T6	T9	NoRel	true	krizi	II. Dünya Savaşı'nda
+Relation	T7	T13	NoRel	true	krizi	artışıyla
+Relation	T8	T4	NoRel	true	krizi	Krizi
+Relation	T8	T7	NoRel	true	krizi	krizi
+Relation	T9	T11	NoRel	true	II. Dünya Savaşı'nda	KRIZI
+Relation	T9	T7	NoRel	true	II. Dünya Savaşı'nda	krizi

@@ -1,0 +1,42 @@
+Text	Amerika Birleşik Devletleri Hava Kuvvetleri kazadan üç gün sonra , 5 Eylül 1958'de C- 130 ile gerçekleştirdiği Havadan Muhabere Keşif Platformu ( ACRP ) görevlerini yeni bir emre dek askıya aldı .	Askıya alma 15 Ekim 1958'e dek devam etti .	13 Kasım 1958'de Amerika Birleşik Devletleri Dışişleri Bakanlığı , Sovyetler Birliği'nin Washington büyükelçisine Rus savaş pilotlarının C- 130'u düşürürken yaptıkları konuşmaların Rusça bir transkriptini verdi .	Sovyetler Birliği bu kaydın sahte olduğunu açıkladı .	6 Şubat 1959'da Sovyetler Birliği'nin daha çok detayı paylaşmasını ve uçağı düşürdüklerini itiraf etmelerini isteyen Amerika Birleşik Devletleri , 6 Şubat 1959'da bir Birleşmiş Milletler oturumunda Rus savaş pilotlarının C-130'u düşürürken yaptıkları konuşmaların bir teyp kaydını kamuoyuna duyurdu .
+Event	T0	emre	EVENT	174
+Event	T1	aldı	EVENT	190
+Event	T2	alma	EVENT	204
+Event	T3	etti	EVENT	234
+Event	T4	verdi	EVENT	446
+Event	T5	açıkladı	EVENT	497
+Event	T6	itiraf	EVENT	599
+Event	T7	duyurdu	EVENT	799
+Event	T8	kazadan	EVENT	44
+Event	T9	düşürürken	EVENT	387
+Event	T10	konuşmaların	EVENT	409
+Event	T11	düşürdüklerini	EVENT	584
+Event	T12	paylaşmasını	EVENT	562
+Event	T13	isteyen	EVENT	617
+Event	T14	oturumunda	EVENT	695
+Event	T15	düşürürken	EVENT	737
+Relation	T14	T7	SuperSub	true	oturumunda	duyurdu
+Relation	T7	T14	SubSuper	true	duyurdu	oturumunda
+Relation	T14	T13	SuperSub	true	oturumunda	isteyen
+Relation	T13	T14	SubSuper	true	isteyen	oturumunda
+Relation	T1	T5	NoRel	true	aldı	açıkladı
+Relation	T10	T14	NoRel	true	konuşmaların	oturumunda
+Relation	T11	T0	NoRel	true	düşürdüklerini	emre
+Relation	T11	T1	NoRel	true	düşürdüklerini	aldı
+Relation	T12	T1	NoRel	true	paylaşmasını	aldı
+Relation	T12	T10	NoRel	true	paylaşmasını	konuşmaların
+Relation	T13	T0	NoRel	true	isteyen	emre
+Relation	T13	T3	NoRel	true	isteyen	etti
+Relation	T15	T0	NoRel	true	düşürürken	emre
+Relation	T15	T8	NoRel	true	düşürürken	kazadan
+Relation	T2	T14	NoRel	true	alma	oturumunda
+Relation	T2	T3	NoRel	true	alma	etti
+Relation	T2	T9	NoRel	true	alma	düşürürken
+Relation	T3	T2	NoRel	true	etti	alma
+Relation	T4	T1	NoRel	true	verdi	aldı
+Relation	T6	T1	NoRel	true	itiraf	aldı
+Relation	T7	T1	NoRel	true	duyurdu	aldı
+Relation	T7	T5	NoRel	true	duyurdu	açıkladı
+Relation	T8	T6	NoRel	true	kazadan	itiraf
+Relation	T8	T7	NoRel	true	kazadan	duyurdu
+Relation	T9	T1	NoRel	true	düşürürken	aldı

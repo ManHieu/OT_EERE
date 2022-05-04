@@ -1,0 +1,18 @@
+Text	" ifadeleri yer aldı .	- : Dışişleri Bakanı Nikos Dendias , mevkidaşı Mevlüt Çavuşoğlu'nu telefonla aradı .	Depremle ilgili geçmiş olsun dileklerini ileten Dendias yardıma hazır olduklarını bildirdi .	Yunanistan Başbakanı Kiryakos Miçotakis , depremden sonra sosyal medya hesabından paylaştığı mesajda , " Türkiye'yi vuran yıkıcı depremin ardından Cumhurbaşkanı Erdoğan ve Türk halkı ile canı gönülden dayanışma içindeyiz .	Arama ve kurtarma ekiplerimiz yardım etmeye hazır .
+Event	T0	aldı	EVENT	16
+Event	T1	aradı	EVENT	100
+Event	T2	bildirdi	EVENT	190
+Event	T3	depremin	EVENT	330
+Event	T4	yardım	EVENT	454
+Event	T5	Depremle	EVENT	108
+Event	T6	ileten	EVENT	149
+Event	T7	depremden	EVENT	243
+Event	T8	paylaştığı	EVENT	283
+Relation	T0	T8	NoRel	true	aldı	paylaştığı
+Relation	T2	T6	NoRel	true	bildirdi	ileten
+Relation	T3	T2	NoRel	true	depremin	bildirdi
+Relation	T3	T8	NoRel	true	depremin	paylaştığı
+Relation	T4	T8	NoRel	true	yardım	paylaştığı
+Relation	T5	T2	NoRel	true	Depremle	bildirdi
+Relation	T5	T7	NoRel	true	Depremle	depremden
+Relation	T7	T8	NoRel	true	depremden	paylaştığı

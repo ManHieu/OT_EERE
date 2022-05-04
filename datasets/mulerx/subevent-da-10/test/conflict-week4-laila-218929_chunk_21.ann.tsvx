@@ -1,0 +1,61 @@
+Text	Det var præcis den slags nyheder , som Xerxes ønskede at høre , at athenienserne måske var villige til at underkaste sig ham , og at han ville være i stand til at knuse resten af de allieredes flåde .	Xerxes slugte tydeligvis maddingen , og den persiske flåde blev samme aften sendt af sted for at gennemføre denne blokade .	Xerxes gav ordre til at der skulle opstilles en trone på skråningen af Aigaleobjerget med udsigt over stræderne , så han kunne se slaget tydeligt fra et udsigtspunkt , således at han kunne notere sig navnene på de kaptajner , der kæmpede ekstra godt .	Ifølge Herodot brugde de allierede aftenen på heftigt at debattere , hvad de skulle gøre .	Peloponneserne foretrak evakuering , og det var på dette tidspunkt , at Themistokles forsøgte at narre Xerxes .
+Event	T0	høre	EVENT	57
+Event	T1	underkaste	EVENT	106
+Event	T2	knuse	EVENT	163
+Event	T3	slugte	EVENT	208
+Event	T4	gennemføre	EVENT	298
+Event	T5	blokade	EVENT	315
+Event	T6	opstilles	EVENT	360
+Event	T7	slaget	EVENT	455
+Event	T8	kæmpede	EVENT	555
+Event	T9	brugde	EVENT	592
+Event	T10	debattere	EVENT	634
+Event	T11	gøre	EVENT	661
+Event	T12	evakuering	EVENT	692
+Event	T13	forsøgte	EVENT	753
+Event	T14	narre	EVENT	765
+Event	T15	nyheder	EVENT	25
+Event	T16	ønskede	EVENT	46
+Event	T17	villige	EVENT	91
+Event	T18	stand	EVENT	150
+Event	T19	se	EVENT	452
+Event	T20	notere	EVENT	514
+Relation	T0	T11	NoRel	true	høre	gøre
+Relation	T0	T13	NoRel	true	høre	forsøgte
+Relation	T0	T20	NoRel	true	høre	notere
+Relation	T0	T4	NoRel	true	høre	gennemføre
+Relation	T0	T7	NoRel	true	høre	slaget
+Relation	T0	T8	NoRel	true	høre	kæmpede
+Relation	T0	T9	NoRel	true	høre	brugde
+Relation	T1	T7	NoRel	true	underkaste	slaget
+Relation	T10	T16	NoRel	true	debattere	ønskede
+Relation	T11	T18	NoRel	true	gøre	stand
+Relation	T11	T6	NoRel	true	gøre	opstilles
+Relation	T12	T14	NoRel	true	evakuering	narre
+Relation	T14	T11	NoRel	true	narre	gøre
+Relation	T15	T1	NoRel	true	nyheder	underkaste
+Relation	T15	T18	NoRel	true	nyheder	stand
+Relation	T15	T9	NoRel	true	nyheder	brugde
+Relation	T16	T20	NoRel	true	ønskede	notere
+Relation	T17	T9	NoRel	true	villige	brugde
+Relation	T18	T11	NoRel	true	stand	gøre
+Relation	T18	T13	NoRel	true	stand	forsøgte
+Relation	T18	T14	NoRel	true	stand	narre
+Relation	T18	T17	NoRel	true	stand	villige
+Relation	T18	T2	NoRel	true	stand	knuse
+Relation	T18	T4	NoRel	true	stand	gennemføre
+Relation	T19	T12	NoRel	true	se	evakuering
+Relation	T20	T12	NoRel	true	notere	evakuering
+Relation	T20	T16	NoRel	true	notere	ønskede
+Relation	T20	T18	NoRel	true	notere	stand
+Relation	T3	T4	NoRel	true	slugte	gennemføre
+Relation	T5	T6	NoRel	true	blokade	opstilles
+Relation	T6	T16	NoRel	true	opstilles	ønskede
+Relation	T7	T18	NoRel	true	slaget	stand
+Relation	T7	T2	NoRel	true	slaget	knuse
+Relation	T7	T5	NoRel	true	slaget	blokade
+Relation	T8	T0	NoRel	true	kæmpede	høre
+Relation	T8	T14	NoRel	true	kæmpede	narre
+Relation	T8	T18	NoRel	true	kæmpede	stand
+Relation	T8	T19	NoRel	true	kæmpede	se
+Relation	T9	T0	NoRel	true	brugde	høre

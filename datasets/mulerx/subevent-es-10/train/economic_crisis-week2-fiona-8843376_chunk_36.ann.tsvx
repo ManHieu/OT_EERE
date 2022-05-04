@@ -1,0 +1,40 @@
+Text	En el Palacio de los Cóndores , el palacio de gobierno del estado Zulia , personas adeptas al oficialismo ingresaron abrupta y violentamente , insultando , lanzando sillas y otros objetos , para exigir « lo que se les había prometido » .	La policía regional no pudo controlar la situación .	Durante la madrugada del 7 de diciembre , la presidenta del Consejo Nacional Electoral , Indira Alfonzo , dio lectura al Primer Boletín de resultados en el que se concedió la victoria oficialmente al Partido Socialista Unido de Venezuela ( PSUV ) y sus aliados .	La rectora declaró que hubo una participación de 31% en el primer anuncio electoral de Caracas , y que hasta ese momento el 83% de los votos habían sido contados .	Según el boletín emitido por el Poder Electoral , de un total de 5.264.104 votos emitidos , el PSUV y otros partidos oficialistas recibieron 3.558.320 votos , alrededor del 67% , mientras que los partidos minoritarios obtuvieron menos de 20% de los votos .
+Event	T0	ingresaron	EVENT	106
+Event	T1	insultando	EVENT	143
+Event	T10	declaró	EVENT	565
+Event	T11	participación	EVENT	586
+Event	T12	contados	EVENT	707
+Event	T13	emitido	EVENT	735
+Event	T14	emitidos	EVENT	799
+Event	T15	recibieron	EVENT	848
+Event	T16	obtuvieron	EVENT	936
+Event	T2	lanzando	EVENT	156
+Event	T3	exigir	EVENT	195
+Event	T5	controlar	EVENT	266
+Event	T6	situación	EVENT	279
+Event	T7	resultados	EVENT	430
+Event	T8	concedió	EVENT	454
+Relation	T0	T1	SuperSub	true	ingresaron	insultando
+Relation	T1	T0	SubSuper	true	insultando	ingresaron
+Relation	T0	T2	SuperSub	true	ingresaron	lanzando
+Relation	T2	T0	SubSuper	true	lanzando	ingresaron
+Relation	T0	T13	NoRel	true	ingresaron	emitido
+Relation	T10	T11	NoRel	true	declaró	participación
+Relation	T10	T15	NoRel	true	declaró	recibieron
+Relation	T10	T2	NoRel	true	declaró	lanzando
+Relation	T11	T0	NoRel	true	participación	ingresaron
+Relation	T12	T6	NoRel	true	contados	situación
+Relation	T13	T8	NoRel	true	emitido	concedió
+Relation	T14	T6	NoRel	true	emitidos	situación
+Relation	T15	T14	NoRel	true	recibieron	emitidos
+Relation	T15	T5	NoRel	true	recibieron	controlar
+Relation	T15	T8	NoRel	true	recibieron	concedió
+Relation	T2	T14	NoRel	true	lanzando	emitidos
+Relation	T2	T5	NoRel	true	lanzando	controlar
+Relation	T3	T10	NoRel	true	exigir	declaró
+Relation	T3	T12	NoRel	true	exigir	contados
+Relation	T3	T16	NoRel	true	exigir	obtuvieron
+Relation	T3	T8	NoRel	true	exigir	concedió
+Relation	T5	T1	NoRel	true	controlar	insultando
+Relation	T5	T6	NoRel	true	controlar	situación
+Relation	T7	T10	NoRel	true	resultados	declaró

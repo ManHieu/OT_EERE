@@ -1,0 +1,21 @@
+Text	فائل: A Home Economics class receiving instructions on cooking .	Ottawa , Ontario , 1959 .jpg| ہوم اکنامکس کی کلاس کھانا پکانے سے متعلق ہدایات وصول کرتی ہے ۔	اوٹاوا ، اونٹاریو ، 1959 ۔	" In 1973 , Ontario renamed home economics as Family Studies .	The Ministry of Education acknowledged that the roles of family members were changing , and that both boys and girls needed to learn basic skills that contribute towards family living .
+Event	T0	instructions	EVENT	39
+Event	T1	cooking	EVENT	55
+Event	T2	کرتی	EVENT	148
+Event	T3	renamed	EVENT	205
+Event	T4	acknowledged	EVENT	274
+Event	T5	changing	EVENT	325
+Event	T6	learn	EVENT	375
+Event	T7	living	EVENT	425
+Event	T8	contribute	EVENT	399
+Relation	T1	T0	SuperSub	true	cooking	instructions
+Relation	T0	T1	SubSuper	true	instructions	cooking
+Relation	T0	T2	NoRel	true	instructions	کرتی
+Relation	T1	T2	NoRel	true	cooking	کرتی
+Relation	T2	T0	NoRel	true	کرتی	instructions
+Relation	T2	T8	NoRel	true	کرتی	contribute
+Relation	T3	T5	NoRel	true	renamed	changing
+Relation	T3	T6	NoRel	true	renamed	learn
+Relation	T3	T7	NoRel	true	renamed	living
+Relation	T4	T7	NoRel	true	acknowledged	living
+Relation	T8	T0	NoRel	true	contribute	instructions

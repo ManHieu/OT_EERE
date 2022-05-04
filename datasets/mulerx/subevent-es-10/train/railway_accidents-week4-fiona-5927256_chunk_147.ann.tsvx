@@ -1,0 +1,15 @@
+Text	" Tres muertos y dieciséis heridos , balance provisional de un accidente ferroviario ocurrido en Covas ( Lugo ) " , en _ ABC _ , 15-07-1973 , edición Madrid , p. 33 .	Servidor de prensa histórica del diario ABC .	" 29 escolares murieron en el paso a nivel de Muñoz " , en El Adelanto , diario de Salamanca , 22-12-1978 , portada y pp. 3 a 7 .	Hemeroteca de la Universidad de Salamanca	" Consternación tras la muerte de seis jóvenes arrollados por un tren " , en La Gaceta Regional , 11-04-2004 , portada y pp. 54 a 57 .
+Event	T0	muertos	EVENT	7
+Event	T1	heridos	EVENT	27
+Event	T2	accidente	EVENT	63
+Event	T3	ocurrido	EVENT	85
+Event	T4	murieron	EVENT	228
+Event	T5	paso	EVENT	243
+Event	T6	Consternación	EVENT	387
+Event	T7	muerte	EVENT	409
+Event	T8	arrollados	EVENT	432
+Relation	T7	T6	SuperSub	true	muerte	Consternación
+Relation	T6	T7	SubSuper	true	Consternación	muerte
+Relation	T0	T4	NoRel	true	muertos	murieron
+Relation	T5	T1	NoRel	true	paso	heridos
+Relation	T7	T4	NoRel	true	muerte	murieron

@@ -1,0 +1,21 @@
+Text	1827ء سے 1931ء تک بلوچستان میں 9 زلزلے آئے لیکن ان کی تفصیل نہیں ملتی ۔	بیسویں صدی کا پہلا بڑا زلزلہ ہمالیہ پٹی پر کانگڑہ کے مقام پر آیا جس میں 20 ہزار افراد لقمہ اجل بنے ۔	1906ء میں 3 زلزلے آئے جس میں کولمبیا اور ایکواڈور کے ایک ہزار ، سان فرانسسکو کے تین ہزار اور چلی میں 20 ہزار افراد کی جانیں گئیں ۔	1908ء میں تاریخ کے بدترین زلزلوں میں سے ایک زلزلہ اٹلی میں آیا تھا جس میں ایک لاکھ 60 ہزار افراد ہلاک ہوئے ۔	1920ء میں تاریخ کا نواں بڑا زلزلہ آیا جس میں چین کے علاقے ننگشیر اور گنسو کے 2 لاکھ افراد لقمہ اجل بنے ۔
+Event	T0	آئے	EVENT	39
+Event	T1	زلزلہ	EVENT	95
+Event	T2	آیا	EVENT	133
+Event	T3	بنے	EVENT	167
+Event	T4	جس	EVENT	195
+Event	T5	گئیں	EVENT	297
+Event	T6	زلزلوں	EVENT	330
+Event	T7	زلزلہ	EVENT	348
+Event	T8	آیا	EVENT	363
+Event	T9	ہوئے	EVENT	406
+Event	T10	آیا	EVENT	447
+Event	T11	بنے	EVENT	512
+Relation	T1	T3	NoRel	true	زلزلہ	بنے
+Relation	T1	T9	NoRel	true	زلزلہ	ہوئے
+Relation	T10	T2	NoRel	true	آیا	آیا
+Relation	T11	T5	NoRel	true	بنے	گئیں
+Relation	T2	T3	NoRel	true	آیا	بنے
+Relation	T3	T4	NoRel	true	بنے	جس
+Relation	T4	T0	NoRel	true	جس	آئے
+Relation	T6	T0	NoRel	true	زلزلوں	آئے

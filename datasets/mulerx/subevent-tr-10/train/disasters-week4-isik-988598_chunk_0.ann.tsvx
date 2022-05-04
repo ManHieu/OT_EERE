@@ -1,0 +1,46 @@
+Text	küçükresim | 383x 383pik | Ayamama Deresi'nin taşması sonucu sular altında kalan Basın Ekspres yolu 2009 MARMARA SEL DIZISI 9 Eylül 2009 tarihinde Türkiye'nin Marmara Bölgesinde meydana gelen bir sel dizisidir .	Daha çok İstanbul ve Tekirdağ'ı etkilemiş , en az 31 kişinin ölümü ve 9 kişinin kaybolmasıyla sonuçlanmış , en az 70 milyon dolarlık bir zarar vermiştir .	8 Eylül gününü 9 Eylül'e bağlayan gece , İç Anadolu'da bulunan bir yukarı seviye alçağının ( ULL ) Karadeniz'den Marmara bölgesine yoğun nem adveksiyonu yapması sonucunda bölgedeki çok düşük yoğunlaşma depresyonu havayı doyma noktasına yaklaştırmıştı .	Bunun yanı sıra atmosferin üst seviyelerindeki soğuk havanın , sıcak deniz yüzeyinin etkileşimi sonucu meydana gelen yoğun konvektif fırtınalar 9 Eylül 2009 sabahın erken saatlerinde doruk noktasına ulaştı ve selin meydana gelmesine yol açtı .	küçükresim | 302x302pik | Su içinde kalan bir İETT otobüsünün üstüne sığınmış yolcular
+Event	T0	DIZISI	EVENT	117
+Event	T1	gelen	EVENT	186
+Event	T2	dizisidir	EVENT	200
+Event	T3	etkilemiş	EVENT	244
+Event	T4	ölümü	EVENT	273
+Event	T5	sonuçlanmış	EVENT	306
+Event	T6	vermiştir	EVENT	355
+Event	T7	depresyonu	EVENT	569
+Event	T9	yaklaştırmıştı	EVENT	603
+Event	T10	etkileşimi	EVENT	705
+Event	T11	fırtınalar	EVENT	753
+Event	T12	ulaştı	EVENT	819
+Event	T13	açtı	EVENT	857
+Event	T14	sığınmış	EVENT	933
+Event	T15	kaybolmasıyla	EVENT	292
+Event	T8	kalan	EVENT	900
+Relation	T11	T13	SuperSub	true	fırtınalar	açtı
+Relation	T13	T11	SubSuper	true	açtı	fırtınalar
+Relation	T0	T12	NoRel	true	DIZISI	ulaştı
+Relation	T0	T14	NoRel	true	DIZISI	sığınmış
+Relation	T1	T0	NoRel	true	gelen	DIZISI
+Relation	T1	T8	NoRel	true	gelen	kalan
+Relation	T11	T15	NoRel	true	fırtınalar	kaybolmasıyla
+Relation	T11	T4	NoRel	true	fırtınalar	ölümü
+Relation	T11	T6	NoRel	true	fırtınalar	vermiştir
+Relation	T11	T8	NoRel	true	fırtınalar	kalan
+Relation	T12	T13	NoRel	true	ulaştı	açtı
+Relation	T12	T3	NoRel	true	ulaştı	etkilemiş
+Relation	T12	T4	NoRel	true	ulaştı	ölümü
+Relation	T12	T9	NoRel	true	ulaştı	yaklaştırmıştı
+Relation	T13	T3	NoRel	true	açtı	etkilemiş
+Relation	T14	T1	NoRel	true	sığınmış	gelen
+Relation	T14	T10	NoRel	true	sığınmış	etkileşimi
+Relation	T14	T8	NoRel	true	sığınmış	kalan
+Relation	T14	T9	NoRel	true	sığınmış	yaklaştırmıştı
+Relation	T2	T0	NoRel	true	dizisidir	DIZISI
+Relation	T2	T10	NoRel	true	dizisidir	etkileşimi
+Relation	T5	T10	NoRel	true	sonuçlanmış	etkileşimi
+Relation	T6	T4	NoRel	true	vermiştir	ölümü
+Relation	T6	T5	NoRel	true	vermiştir	sonuçlanmış
+Relation	T7	T1	NoRel	true	depresyonu	gelen
+Relation	T8	T1	NoRel	true	kalan	gelen
+Relation	T9	T2	NoRel	true	yaklaştırmıştı	dizisidir
+Relation	T9	T5	NoRel	true	yaklaştırmıştı	sonuçlanmış
+Relation	T9	T8	NoRel	true	yaklaştırmıştı	kalan

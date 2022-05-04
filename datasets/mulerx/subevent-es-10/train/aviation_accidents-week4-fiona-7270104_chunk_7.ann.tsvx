@@ -1,0 +1,78 @@
+Text	Al momento del accidente , la NTSB le había solicitado a la FAA instalar sistemas automáticos de extinción de incendios en las bodegas de los aviones de carga .	UPS Airlines siguió las regulaciones de la FAA , que indicaban que los pilotos tenían que despresurizar la cabina principal y ascender a una altitud de al menos 20_000 pies ( 6096 m ) al detectar un incendio para privar de oxígeno a las flamas .	El 23 de septiembre de 2010 , la AGAC reportó que la NTSB había descargado con éxito el 100% del material contenido en las cajas negras , y que la información estaba siendo analizada .	En octubre de 2010 , Boeing anunció que se modificarían las listas de verificación de incendios para que al menos uno de los tres sistemas de aire acondicionado sea dejado en operación para prevenir la acumulación excesiva de humo en la cubierta de vuelo .	El 24 de julio de 2013 , la AGAC publicó el reporte final de la investigación .
+Event	T0	accidente	EVENT	15
+Event	T1	solicitado	EVENT	44
+Event	T2	extinción	EVENT	97
+Event	T3	siguió	EVENT	174
+Event	T4	regulaciones	EVENT	185
+Event	T5	indicaban	EVENT	214
+Event	T6	despresurizar	EVENT	251
+Event	T7	ascender	EVENT	287
+Event	T8	detectar	EVENT	348
+Event	T9	incendio	EVENT	360
+Event	T10	privar	EVENT	374
+Event	T11	reportó	EVENT	445
+Event	T12	descargado	EVENT	471
+Event	T13	analizada	EVENT	580
+Event	T14	anunció	EVENT	620
+Event	T15	modificarían	EVENT	635
+Event	T16	listas	EVENT	652
+Event	T17	verificación	EVENT	662
+Event	T18	incendios	EVENT	678
+Event	T19	acumulación	EVENT	794
+Event	T20	vuelo	EVENT	841
+Event	T21	publicó	EVENT	882
+Event	T22	investigación	EVENT	913
+Relation	T22	T21	SuperSub	true	investigación	publicó
+Relation	T21	T22	SubSuper	true	publicó	investigación
+Relation	T0	T21	NoRel	true	accidente	publicó
+Relation	T0	T8	NoRel	true	accidente	detectar
+Relation	T1	T15	NoRel	true	solicitado	modificarían
+Relation	T1	T4	NoRel	true	solicitado	regulaciones
+Relation	T1	T9	NoRel	true	solicitado	incendio
+Relation	T10	T2	NoRel	true	privar	extinción
+Relation	T10	T6	NoRel	true	privar	despresurizar
+Relation	T11	T15	NoRel	true	reportó	modificarían
+Relation	T11	T16	NoRel	true	reportó	listas
+Relation	T12	T5	NoRel	true	descargado	indicaban
+Relation	T12	T7	NoRel	true	descargado	ascender
+Relation	T13	T19	NoRel	true	analizada	acumulación
+Relation	T13	T7	NoRel	true	analizada	ascender
+Relation	T14	T0	NoRel	true	anunció	accidente
+Relation	T14	T11	NoRel	true	anunció	reportó
+Relation	T14	T7	NoRel	true	anunció	ascender
+Relation	T14	T8	NoRel	true	anunció	detectar
+Relation	T14	T9	NoRel	true	anunció	incendio
+Relation	T15	T11	NoRel	true	modificarían	reportó
+Relation	T15	T16	NoRel	true	modificarían	listas
+Relation	T15	T20	NoRel	true	modificarían	vuelo
+Relation	T15	T21	NoRel	true	modificarían	publicó
+Relation	T15	T22	NoRel	true	modificarían	investigación
+Relation	T16	T1	NoRel	true	listas	solicitado
+Relation	T16	T2	NoRel	true	listas	extinción
+Relation	T16	T20	NoRel	true	listas	vuelo
+Relation	T17	T14	NoRel	true	verificación	anunció
+Relation	T17	T7	NoRel	true	verificación	ascender
+Relation	T18	T8	NoRel	true	incendios	detectar
+Relation	T19	T7	NoRel	true	acumulación	ascender
+Relation	T2	T12	NoRel	true	extinción	descargado
+Relation	T2	T17	NoRel	true	extinción	verificación
+Relation	T20	T22	NoRel	true	vuelo	investigación
+Relation	T21	T0	NoRel	true	publicó	accidente
+Relation	T21	T15	NoRel	true	publicó	modificarían
+Relation	T21	T20	NoRel	true	publicó	vuelo
+Relation	T21	T9	NoRel	true	publicó	incendio
+Relation	T22	T10	NoRel	true	investigación	privar
+Relation	T22	T6	NoRel	true	investigación	despresurizar
+Relation	T3	T22	NoRel	true	siguió	investigación
+Relation	T3	T8	NoRel	true	siguió	detectar
+Relation	T5	T17	NoRel	true	indicaban	verificación
+Relation	T5	T19	NoRel	true	indicaban	acumulación
+Relation	T5	T2	NoRel	true	indicaban	extinción
+Relation	T5	T8	NoRel	true	indicaban	detectar
+Relation	T6	T15	NoRel	true	despresurizar	modificarían
+Relation	T7	T14	NoRel	true	ascender	anunció
+Relation	T7	T3	NoRel	true	ascender	siguió
+Relation	T8	T2	NoRel	true	detectar	extinción
+Relation	T8	T5	NoRel	true	detectar	indicaban
+Relation	T9	T4	NoRel	true	incendio	regulaciones
+Relation	T9	T5	NoRel	true	incendio	indicaban

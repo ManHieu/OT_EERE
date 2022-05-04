@@ -1,0 +1,20 @@
+Text	En la madrileña estación de Villaverde-Orcasitas , situada en el ramal de Leganés , un tren que transportaba tropas y material militar chocó con una locomotora que realizaba maniobras con el resultado de 17 muertos y 39 heridos .	- 24 de agosto de 1959 .	En la estación de Morés ( Zaragoza ) , el expreso de Barcelona a La Coruña chocó con un tren de mercancías que se hallaba detenido en la referida estación .	Murieron cinco personas y treinta y ocho más resultaron heridas .	- 19 de julio de 1960 .
+Event	T0	transportaba	EVENT	96
+Event	T1	chocó	EVENT	135
+Event	T2	maniobras	EVENT	174
+Event	T3	resultado	EVENT	191
+Event	T4	muertos	EVENT	207
+Event	T5	heridos	EVENT	220
+Event	T6	chocó	EVENT	330
+Event	T7	detenido	EVENT	377
+Event	T8	Murieron	EVENT	412
+Event	T9	heridas	EVENT	468
+Relation	T0	T4	NoRel	true	transportaba	muertos
+Relation	T1	T7	NoRel	true	chocó	detenido
+Relation	T3	T8	NoRel	true	resultado	Murieron
+Relation	T4	T6	NoRel	true	muertos	chocó
+Relation	T5	T7	NoRel	true	heridos	detenido
+Relation	T6	T4	NoRel	true	chocó	muertos
+Relation	T6	T8	NoRel	true	chocó	Murieron
+Relation	T7	T8	NoRel	true	detenido	Murieron
+Relation	T9	T0	NoRel	true	heridas	transportaba

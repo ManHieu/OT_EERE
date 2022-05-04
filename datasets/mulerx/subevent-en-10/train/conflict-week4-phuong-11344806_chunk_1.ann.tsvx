@@ -1,0 +1,54 @@
+Text	Prior to the outbreak of the First World War , Wadsworth worked as a clerk .	he ran a garage while a Blackburn Rovers player and the business later failed , which caused financial and health problems for his family .	After his retirement from professional football in 1930 , Wadsworth worked for the Lytham St. Annes Corporation 's transport department .	During the First World War , Wadsworth lied about his age to enlist as a gunner in the Royal Garrison Artillery and was wounded in action .	His older brother Charles was killed in the war and " the atrocities left him physically and mentally scarred , suffering blackouts and grappling with post-traumatic stress " .
+Event	T0	outbreak	EVENT	13
+Event	T1	worked	EVENT	57
+Event	T2	ran	EVENT	80
+Event	T3	failed	EVENT	148
+Event	T4	retirement	EVENT	227
+Event	T5	worked	EVENT	285
+Event	T6	lied	EVENT	394
+Event	T7	enlist	EVENT	416
+Event	T8	action	EVENT	486
+Event	T9	killed	EVENT	525
+Event	T10	war	EVENT	539
+Event	T11	left	EVENT	564
+Event	T12	scarred	EVENT	597
+Event	T13	blackouts	EVENT	617
+Event	T14	grappling	EVENT	631
+Event	T15	stress	EVENT	661
+Event	T16	problems	EVENT	191
+Event	T17	wounded	EVENT	475
+Event	T18	atrocities	EVENT	553
+Relation	T1	T12	NoRel	true	worked	scarred
+Relation	T1	T7	NoRel	true	worked	enlist
+Relation	T10	T1	NoRel	true	war	worked
+Relation	T11	T18	NoRel	true	left	atrocities
+Relation	T11	T8	NoRel	true	left	action
+Relation	T12	T0	NoRel	true	scarred	outbreak
+Relation	T12	T7	NoRel	true	scarred	enlist
+Relation	T13	T1	NoRel	true	blackouts	worked
+Relation	T13	T18	NoRel	true	blackouts	atrocities
+Relation	T14	T17	NoRel	true	grappling	wounded
+Relation	T14	T9	NoRel	true	grappling	killed
+Relation	T16	T6	NoRel	true	problems	lied
+Relation	T17	T18	NoRel	true	wounded	atrocities
+Relation	T18	T14	NoRel	true	atrocities	grappling
+Relation	T18	T16	NoRel	true	atrocities	problems
+Relation	T2	T11	NoRel	true	ran	left
+Relation	T2	T8	NoRel	true	ran	action
+Relation	T3	T14	NoRel	true	failed	grappling
+Relation	T3	T18	NoRel	true	failed	atrocities
+Relation	T3	T4	NoRel	true	failed	retirement
+Relation	T3	T7	NoRel	true	failed	enlist
+Relation	T4	T12	NoRel	true	retirement	scarred
+Relation	T4	T16	NoRel	true	retirement	problems
+Relation	T4	T17	NoRel	true	retirement	wounded
+Relation	T4	T9	NoRel	true	retirement	killed
+Relation	T5	T0	NoRel	true	worked	outbreak
+Relation	T5	T11	NoRel	true	worked	left
+Relation	T5	T7	NoRel	true	worked	enlist
+Relation	T6	T0	NoRel	true	lied	outbreak
+Relation	T6	T17	NoRel	true	lied	wounded
+Relation	T8	T12	NoRel	true	action	scarred
+Relation	T8	T2	NoRel	true	action	ran
+Relation	T9	T10	NoRel	true	killed	war
+Relation	T9	T4	NoRel	true	killed	retirement

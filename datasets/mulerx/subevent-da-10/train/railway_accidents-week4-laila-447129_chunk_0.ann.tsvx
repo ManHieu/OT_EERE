@@ -1,0 +1,35 @@
+Text	thumb | 200 px | right | Den nuværende vejbro over Whangaehu ved Tangiwai TANGIWAI ULYKKEN var en voldsom togulykke , der fandt sted 24 . december 1953 ved Tangiwai New Zealand .	Ved ulykken omkom 151 mennesker , hvilket gør den til den alvorligste togulykke i landets historie .	Et lokomotiv med elleve vogne var på vej fra Wellington til Auckland , da det skulle passere broen over floden Whangaehu ved Tangiwai .	Broen var imidlertid få minutter forinden blevet stærkt skadet som følge af en lahar ( et mudderskred ) fra Ruapehu-bjerget .	Skreddet havde revet et helt brofag væk , så kun skinnerne stod tilbage , og da toget kørte ind på disse , kunne skinnerne ikke holde vægten og brød helt sammen .	
+Event	T1	omkom	EVENT	191
+Event	T3	passere	EVENT	365
+Event	T4	skadet	EVENT	472
+Event	T5	Skreddet	EVENT	542
+Event	T6	revet	EVENT	557
+Event	T7	brød	EVENT	686
+Event	T9	på vej	EVENT	314
+Event	T11	lahar	EVENT	495
+Event	T12	mudderskred	EVENT	506
+Event	T13	kørte	EVENT	628
+Event	T14	holde	EVENT	670
+Event	T15	stod	EVENT	601
+Event	T10	ULYKKEN	EVENT	83
+Event	T16	togulykke	EVENT	106
+Event	T8	ulykken	EVENT	183
+Event	T2	togulykke	EVENT	249
+Relation	T1	T11	NoRel	true	omkom	lahar
+Relation	T1	T12	NoRel	true	omkom	mudderskred
+Relation	T1	T16	NoRel	true	omkom	togulykke
+Relation	T11	T10	NoRel	true	lahar	ULYKKEN
+Relation	T12	T11	NoRel	true	mudderskred	lahar
+Relation	T12	T5	NoRel	true	mudderskred	Skreddet
+Relation	T13	T11	NoRel	true	kørte	lahar
+Relation	T13	T16	NoRel	true	kørte	togulykke
+Relation	T14	T9	NoRel	true	holde	på vej
+Relation	T15	T9	NoRel	true	stod	på vej
+Relation	T16	T10	NoRel	true	togulykke	ULYKKEN
+Relation	T16	T3	NoRel	true	togulykke	passere
+Relation	T2	T1	NoRel	true	togulykke	omkom
+Relation	T3	T10	NoRel	true	passere	ULYKKEN
+Relation	T3	T11	NoRel	true	passere	lahar
+Relation	T4	T9	NoRel	true	skadet	på vej
+Relation	T5	T1	NoRel	true	Skreddet	omkom
+Relation	T9	T8	NoRel	true	på vej	ulykken

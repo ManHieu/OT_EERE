@@ -1,0 +1,47 @@
+Text	Binbaşı Grigori Krawzow inşaat döneminde çeşitli maddi teşvik ve eğitim çalışmalarıyla işgücünün artırıldığını belirtti .	Anıtın inşasında emek harcayan tüm işçilere , Aleksandr Kotikov'un adına atfen hazırlanan ve ek gıda paketi içeren " Kotikov Paketi " verildi .	Açılış töreninde konuşma yapan askeri yetkili Aleksandr Kotikov " Bu anıt sadece Berlin'de açılan bir anıt değildir , aynı zamanda Avrupa'nın merkezinde , sosyalist anavatanın , insanlığın , bugünkü ve gelecek kuşakların hayatlarının kim tarafından kurtarıldığının dünyanın halklarına hatırlatmak için açılmış bir anıttır .	Avrupa'nın merkezinde bulunan bu anıtın büyüklüğü , Sovyet iktidarının aşılmaz kuvvette , ve onun kurtuluş misyonuna tanıktır .	Bu anıt köleliğe ve emperyalist karanlık güçlerin kundakçılığına karşı , sosyalizm , demokrasi ve halkların egemenlik hakları adına , Sovyetler Birliği ile dünya halklarının mücadelesinin ve yeni savaşının bir sembolüdür .
+Event	T1	belirtti	EVENT	111
+Event	T2	emek	EVENT	139
+Event	T3	verildi	EVENT	256
+Event	T4	kurtuluş	EVENT	688
+Event	T5	mücadelesinin	EVENT	892
+Event	T6	artırıldığını	EVENT	97
+Event	T8	çalışmalarıyla	EVENT	72
+Event	T7	inşasında	EVENT	129
+Event	T9	hazırlanan	EVENT	201
+Event	T10	konuşma	EVENT	283
+Event	T11	töreninde	EVENT	273
+Event	T12	açılan	EVENT	357
+Event	T13	kurtarıldığının	EVENT	515
+Event	T14	hatırlatmak	EVENT	551
+Event	T15	açılmış	EVENT	568
+Event	T16	köleliğe	EVENT	726
+Event	T17	kundakçılığına	EVENT	768
+Event	T18	savaşının	EVENT	914
+Relation	T1	T11	NoRel	true	belirtti	töreninde
+Relation	T10	T18	NoRel	true	konuşma	savaşının
+Relation	T10	T7	NoRel	true	konuşma	inşasında
+Relation	T11	T1	NoRel	true	töreninde	belirtti
+Relation	T11	T16	NoRel	true	töreninde	köleliğe
+Relation	T11	T2	NoRel	true	töreninde	emek
+Relation	T11	T3	NoRel	true	töreninde	verildi
+Relation	T11	T4	NoRel	true	töreninde	kurtuluş
+Relation	T11	T5	NoRel	true	töreninde	mücadelesinin
+Relation	T12	T1	NoRel	true	açılan	belirtti
+Relation	T12	T8	NoRel	true	açılan	çalışmalarıyla
+Relation	T13	T3	NoRel	true	kurtarıldığının	verildi
+Relation	T14	T12	NoRel	true	hatırlatmak	açılan
+Relation	T14	T13	NoRel	true	hatırlatmak	kurtarıldığının
+Relation	T15	T10	NoRel	true	açılmış	konuşma
+Relation	T15	T6	NoRel	true	açılmış	artırıldığını
+Relation	T16	T9	NoRel	true	köleliğe	hazırlanan
+Relation	T17	T18	NoRel	true	kundakçılığına	savaşının
+Relation	T18	T10	NoRel	true	savaşının	konuşma
+Relation	T3	T13	NoRel	true	verildi	kurtarıldığının
+Relation	T3	T9	NoRel	true	verildi	hazırlanan
+Relation	T4	T11	NoRel	true	kurtuluş	töreninde
+Relation	T5	T18	NoRel	true	mücadelesinin	savaşının
+Relation	T5	T2	NoRel	true	mücadelesinin	emek
+Relation	T5	T6	NoRel	true	mücadelesinin	artırıldığını
+Relation	T6	T13	NoRel	true	artırıldığını	kurtarıldığının
+Relation	T8	T13	NoRel	true	çalışmalarıyla	kurtarıldığının
+Relation	T8	T15	NoRel	true	çalışmalarıyla	açılmış

@@ -1,0 +1,87 @@
+Text	A tent city of at least 17 tents and 30 occupants was set up at Centennial Square , with plans to remain until the social and economic problems that prompted the Occupy movement are addressed .	Victoria Mayor Dean Fortin initial praised the PAOV movement and its international counterparts as "_ citizen participation and one of the emerging issues of our times _, " saying that "_ people have an urgent need to be involved in the events and process that shape their lives . _"	Fortin later retracted his support for the protesters stating ( referring to the PAOV and their tent city in Centennial Square ) _ " I think we 're coming to a place where more and more , much like Vancouver , we 're getting concerned about the safety issues " ._	On November 5 , 2011 , demonstrators held a flash occupation at the intersection of Fort Street and Douglas Street , the centre of Victoria 's financial district , to commemorate Bank Transfer Day .	The two banks at this intersection ( RBC and TD Canada Trust ) temporarily shut down and locked their doors " due to protesting " .
+Event	T1	problems	EVENT	135
+Event	T10	stating	EVENT	532
+Event	T11	referring	EVENT	542
+Event	T12	coming	EVENT	626
+Event	T13	held	EVENT	779
+Event	T14	occupation	EVENT	792
+Event	T15	commemorate	EVENT	909
+Event	T16	Transfer	EVENT	926
+Event	T17	locked	EVENT	1030
+Event	T18	protesting	EVENT	1058
+Event	T19	set up	EVENT	54
+Event	T2	prompted	EVENT	149
+Event	T20	remain	EVENT	98
+Event	T22	movement	EVENT	246
+Event	T23	involved	EVENT	415
+Event	T24	shut down	EVENT	1016
+Event	T25	safety	EVENT	723
+Event	T26	concerned	EVENT	703
+Event	T27	participation	EVENT	304
+Event	T3	movement	EVENT	169
+Event	T4	addressed	EVENT	182
+Event	T5	praised	EVENT	229
+Event	T7	shape	EVENT	455
+Event	T8	retracted	EVENT	491
+Event	T9	support	EVENT	505
+Relation	T19	T20	SuperSub	true	set up	remain
+Relation	T20	T19	SubSuper	true	remain	set up
+Relation	T1	T2	NoRel	true	problems	prompted
+Relation	T1	T24	NoRel	true	problems	shut down
+Relation	T11	T14	NoRel	true	referring	occupation
+Relation	T11	T17	NoRel	true	referring	locked
+Relation	T11	T24	NoRel	true	referring	shut down
+Relation	T12	T24	NoRel	true	coming	shut down
+Relation	T12	T4	NoRel	true	coming	addressed
+Relation	T13	T15	NoRel	true	held	commemorate
+Relation	T13	T18	NoRel	true	held	protesting
+Relation	T13	T23	NoRel	true	held	involved
+Relation	T13	T24	NoRel	true	held	shut down
+Relation	T14	T1	NoRel	true	occupation	problems
+Relation	T14	T19	NoRel	true	occupation	set up
+Relation	T15	T3	NoRel	true	commemorate	movement
+Relation	T16	T10	NoRel	true	Transfer	stating
+Relation	T16	T8	NoRel	true	Transfer	retracted
+Relation	T17	T7	NoRel	true	locked	shape
+Relation	T18	T20	NoRel	true	protesting	remain
+Relation	T19	T10	NoRel	true	set up	stating
+Relation	T19	T18	NoRel	true	set up	protesting
+Relation	T19	T22	NoRel	true	set up	movement
+Relation	T19	T7	NoRel	true	set up	shape
+Relation	T2	T12	NoRel	true	prompted	coming
+Relation	T20	T11	NoRel	true	remain	referring
+Relation	T20	T13	NoRel	true	remain	held
+Relation	T20	T17	NoRel	true	remain	locked
+Relation	T20	T25	NoRel	true	remain	safety
+Relation	T20	T26	NoRel	true	remain	concerned
+Relation	T22	T17	NoRel	true	movement	locked
+Relation	T22	T26	NoRel	true	movement	concerned
+Relation	T22	T8	NoRel	true	movement	retracted
+Relation	T23	T14	NoRel	true	involved	occupation
+Relation	T24	T20	NoRel	true	shut down	remain
+Relation	T24	T7	NoRel	true	shut down	shape
+Relation	T25	T13	NoRel	true	safety	held
+Relation	T25	T2	NoRel	true	safety	prompted
+Relation	T25	T27	NoRel	true	safety	participation
+Relation	T26	T12	NoRel	true	concerned	coming
+Relation	T26	T22	NoRel	true	concerned	movement
+Relation	T26	T23	NoRel	true	concerned	involved
+Relation	T26	T3	NoRel	true	concerned	movement
+Relation	T27	T15	NoRel	true	participation	commemorate
+Relation	T27	T25	NoRel	true	participation	safety
+Relation	T4	T10	NoRel	true	addressed	stating
+Relation	T4	T25	NoRel	true	addressed	safety
+Relation	T4	T26	NoRel	true	addressed	concerned
+Relation	T5	T18	NoRel	true	praised	protesting
+Relation	T7	T1	NoRel	true	shape	problems
+Relation	T7	T26	NoRel	true	shape	concerned
+Relation	T7	T8	NoRel	true	shape	retracted
+Relation	T7	T9	NoRel	true	shape	support
+Relation	T8	T13	NoRel	true	retracted	held
+Relation	T8	T14	NoRel	true	retracted	occupation
+Relation	T8	T27	NoRel	true	retracted	participation
+Relation	T9	T17	NoRel	true	support	locked
+Relation	T9	T2	NoRel	true	support	prompted
+Relation	T9	T26	NoRel	true	support	concerned
+Relation	T9	T7	NoRel	true	support	shape
+Relation	T9	T8	NoRel	true	support	retracted

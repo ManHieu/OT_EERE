@@ -1,0 +1,36 @@
+Text	BÜYÜK SIFIRLAMA , GREAT RESET veya GLOBAL RESET Dünya Ekonomik Forumu'nun ( WEF ) COVID - 19 salgını sonrasında , ekonomiyi sürdürülebilir bir şekilde yeniden inşa etme önerisidir .	Mayıs 2020'de Birleşik Krallık Prensi Charles ve WEF direktörü Klaus Schwab tarafından tanıtıldı .	Yatırımları , karşılıklı ilerlemeye daha uygun hale getirerek ve çevresel girişimlere daha fazla odaklanarak , kapitalizmi geliştirmeyi amaçlamaktadır .	Salgını , riskli bir deney haline getirmekle eleştirilen öneri , bir dilekçe ile 72 saatten daha kısa bir sürede 80.000 imza toplanılarak durduruldu .	Buna yanıt olarak bir komplo teorisi yayıldı ve bunun sosyoekonomik , çevresel değişiklikleri ve sözde " Yeni Dünya Düzenini " getirmek için kullanılacağını iddia etti .
+Event	T1	önerisidir	EVENT	169
+Event	T2	tanıtıldı	EVENT	269
+Event	T3	deney	EVENT	455
+Event	T4	durduruldu	EVENT	572
+Event	T5	yayıldı	EVENT	622
+Event	T6	etti	EVENT	748
+Event	T7	etme	EVENT	164
+Event	T8	toplanılarak	EVENT	559
+Event	T9	BÜYÜK SIFIRLAMA	EVENT	0
+Event	T10	GREAT RESET	EVENT	18
+Event	T11	GLOBAL RESET	EVENT	35
+Relation	T9	T8	SuperSub	true	BÜYÜK SIFIRLAMA	toplanılarak
+Relation	T8	T9	SubSuper	true	toplanılarak	BÜYÜK SIFIRLAMA
+Relation	T10	T8	SuperSub	true	GREAT RESET	toplanılarak
+Relation	T8	T10	SubSuper	true	toplanılarak	GREAT RESET
+Relation	T11	T8	SuperSub	true	GLOBAL RESET	toplanılarak
+Relation	T8	T11	SubSuper	true	toplanılarak	GLOBAL RESET
+Relation	T9	T5	SuperSub	true	BÜYÜK SIFIRLAMA	yayıldı
+Relation	T5	T9	SubSuper	true	yayıldı	BÜYÜK SIFIRLAMA
+Relation	T10	T5	SuperSub	true	GREAT RESET	yayıldı
+Relation	T5	T10	SubSuper	true	yayıldı	GREAT RESET
+Relation	T11	T5	SuperSub	true	GLOBAL RESET	yayıldı
+Relation	T5	T11	SubSuper	true	yayıldı	GLOBAL RESET
+Relation	T1	T11	NoRel	true	önerisidir	GLOBAL RESET
+Relation	T1	T8	NoRel	true	önerisidir	toplanılarak
+Relation	T10	T11	NoRel	true	GREAT RESET	GLOBAL RESET
+Relation	T11	T7	NoRel	true	GLOBAL RESET	etme
+Relation	T11	T9	NoRel	true	GLOBAL RESET	BÜYÜK SIFIRLAMA
+Relation	T3	T11	NoRel	true	deney	GLOBAL RESET
+Relation	T3	T6	NoRel	true	deney	etti
+Relation	T3	T9	NoRel	true	deney	BÜYÜK SIFIRLAMA
+Relation	T4	T2	NoRel	true	durduruldu	tanıtıldı
+Relation	T4	T7	NoRel	true	durduruldu	etme
+Relation	T6	T10	NoRel	true	etti	GREAT RESET
+Relation	T6	T7	NoRel	true	etti	etme

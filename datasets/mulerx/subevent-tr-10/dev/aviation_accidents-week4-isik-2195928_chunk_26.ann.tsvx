@@ -1,0 +1,28 @@
+Text	Kategori : 2017'de Kırgızistan Kategori : 2017'de havacılık kazaları ve olayları Kategori : Kırgızistan'daki havacılık kazaları ve olayları Kategori : Türk Hava Yolları kazaları ve olayları Kategori : Bişkek'teki olaylar Kategori : Pilotaj hatası nedeniyle gerçekleşen havacılık kazaları ve olayları Kategori : Boeing 747 içeren kazalar ve olaylar	Pope Francis Daily | erişimtarihi = 16 Ağustos 2020 | dil = İngilizce | arşiv url = https : / / web.	archive . org / web / 20200830171346 / https : / / popefrancis daily . com / popes - telegram - of - condolences - for - victims - of - plane - crash - in - kyrgyzstan / | arşivtarihi = 30 Ağustos 2020 | ölü url = evet } }	TRT Кыргызча | erişimtarihi = 12 Ağustos 2020 | dil = ky - KG | çalışma = TRT | arşiv url = https : / / web .	archive. org / web / 20170120163805 / https : / / www . trt. net . tr / kyrgyz / turkiia - 1 / 2017 / 01 / 16 / bishkiektie - kulaghan - uchak - kimghie - taandyk - 652687 | arşivtarihi = 20 Ocak 2017 | ölü url = evet } }
+Event	T0	kazaları	EVENT	60
+Event	T1	olayları	EVENT	72
+Event	T2	olayları	EVENT	181
+Event	T3	hatası	EVENT	240
+Event	T4	gerçekleşen	EVENT	257
+Event	T5	kazaları	EVENT	279
+Event	T6	olayları	EVENT	291
+Event	T7	kazalar	EVENT	329
+Event	T8	olaylar	EVENT	340
+Event	T9	crash	EVENT	593
+Event	T10	kazaları	EVENT	119
+Event	T11	olayları	EVENT	131
+Event	T12	kazaları	EVENT	169
+Event	T13	olaylar	EVENT	213
+Relation	T0	T4	NoRel	true	kazaları	gerçekleşen
+Relation	T1	T12	NoRel	true	olayları	kazaları
+Relation	T10	T3	NoRel	true	kazaları	hatası
+Relation	T11	T2	NoRel	true	olayları	olayları
+Relation	T2	T1	NoRel	true	olayları	olayları
+Relation	T3	T12	NoRel	true	hatası	kazaları
+Relation	T3	T2	NoRel	true	hatası	olayları
+Relation	T5	T12	NoRel	true	kazaları	kazaları
+Relation	T6	T0	NoRel	true	olayları	kazaları
+Relation	T6	T1	NoRel	true	olayları	olayları
+Relation	T7	T0	NoRel	true	kazalar	kazaları
+Relation	T7	T5	NoRel	true	kazalar	kazaları
+Relation	T7	T9	NoRel	true	kazalar	crash

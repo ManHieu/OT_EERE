@@ -1,0 +1,19 @@
+Text	BOLDERSLEV -ULYKKEN er en jernbaneulykke som fandt sted ved Bolderslev Station på den Østjyske længdebane den 14. oktober 1956 .	Søndag den 14. oktober 1956 forlod et udflugtstog Tinglev Station kl. 07.40 for at køre til København .	På den næste station efter Tinglev , Bolderslev Station , skulle toget kl. 08.00 krydse et godstog , som holdt på hovedsporet .	Under indkørsel på krydsningssporet blev et sporskifte omstillet med det resultat at udflugtstogets sidste vogn kom til at køre med et hjulsæt på hvert spor .	Vognen blev afsporet og væltede .
+Event	T0	jernbaneulykke	EVENT	26
+Event	T1	køre	EVENT	212
+Event	T2	krydse	EVENT	314
+Event	T3	holdt	EVENT	338
+Event	T4	indkørsel	EVENT	367
+Event	T5	omstillet	EVENT	416
+Event	T6	køre	EVENT	484
+Event	T7	afsporet	EVENT	532
+Event	T8	væltede	EVENT	544
+Relation	T7	T8	SuperSub	true	afsporet	væltede
+Relation	T8	T7	SubSuper	true	væltede	afsporet
+Relation	T0	T6	NoRel	true	jernbaneulykke	køre
+Relation	T2	T8	NoRel	true	krydse	væltede
+Relation	T4	T2	NoRel	true	indkørsel	krydse
+Relation	T4	T8	NoRel	true	indkørsel	væltede
+Relation	T5	T2	NoRel	true	omstillet	krydse
+Relation	T5	T4	NoRel	true	omstillet	indkørsel
+Relation	T6	T3	NoRel	true	køre	holdt

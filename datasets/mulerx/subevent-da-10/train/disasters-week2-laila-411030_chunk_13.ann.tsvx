@@ -1,0 +1,33 @@
+Text	En haitiansk dreng , får behandling	Jordskælvet ramte det mest befolkede område i landet .	Det internationale Røde Kors meddelte , at omkring 3 millioner mennesker var blevet ramt af jordskælvet .	Den 24. januar , bekræftede Haitis regering at antallet af døde var nået op på , over 150.000 i hovedstaden alene , inklusiv de mange tusinde døde i murbrokkerne og uden for hovedstaden Port-au-Prince .	De haitianske myndigheder har ligeledes vurderet , at 250.000 mennesker var ramt af skader , og flere millioner haitianere var blevet hjemløse .
+Event	T0	ramte	EVENT	48
+Event	T1	meddelte	EVENT	120
+Event	T2	ramt	EVENT	175
+Event	T3	jordskælvet	EVENT	183
+Event	T4	bekræftede	EVENT	214
+Event	T5	døde	EVENT	256
+Event	T6	døde	EVENT	339
+Event	T7	vurderet	EVENT	440
+Event	T8	ramt	EVENT	476
+Event	T9	skader	EVENT	484
+Relation	T3	T1	SuperSub	true	jordskælvet	meddelte
+Relation	T1	T3	SubSuper	true	meddelte	jordskælvet
+Relation	T3	T4	SuperSub	true	jordskælvet	bekræftede
+Relation	T4	T3	SubSuper	true	bekræftede	jordskælvet
+Relation	T4	T5	SuperSub	true	bekræftede	døde
+Relation	T5	T4	SubSuper	true	døde	bekræftede
+Relation	T3	T7	SuperSub	true	jordskælvet	vurderet
+Relation	T7	T3	SubSuper	true	vurderet	jordskælvet
+Relation	T0	T4	SuperSub	true	ramte	bekræftede
+Relation	T4	T0	SubSuper	true	bekræftede	ramte
+Relation	T0	T3	NoRel	true	ramte	jordskælvet
+Relation	T0	T5	NoRel	true	ramte	døde
+Relation	T1	T0	NoRel	true	meddelte	ramte
+Relation	T1	T2	NoRel	true	meddelte	ramt
+Relation	T1	T7	NoRel	true	meddelte	vurderet
+Relation	T5	T3	NoRel	true	døde	jordskælvet
+Relation	T6	T7	NoRel	true	døde	vurderet
+Relation	T7	T5	NoRel	true	vurderet	døde
+Relation	T7	T8	NoRel	true	vurderet	ramt
+Relation	T8	T3	NoRel	true	ramt	jordskælvet
+Relation	T9	T2	NoRel	true	skader	ramt
+Relation	T9	T5	NoRel	true	skader	døde

@@ -1,0 +1,41 @@
+Text	1243 kişi ise toprak altından sağ olarak çıkarıldı .	21 Ağustos 2010 verilerine göre is bu sayılar ; 1471 ölü , 294 kayıp , 1243 kurtarılan kişi olarak gerçekleşmiştir ..	Sebebi bölgedeki aşırı yağışlardı .	Yağışlardan sonra , Zhugqu şehrinin kuzeyindeki küçük bir nehri tıkayan , yığınlardan meydana gelmiş doğal bir baraj oluştu .	Baraj suyun ağırlığına dayanamayıp yıkılınca , beş katlı bir bina yüksekliğinde olan çamurlu su şehri bastı .
+Event	T0	çıkarıldı	EVENT	41
+Event	T1	kayıp	EVENT	116
+Event	T2	kurtarılan	EVENT	129
+Event	T3	gerçekleşmiştir	EVENT	152
+Event	T4	yağışlardı	EVENT	194
+Event	T5	Yağışlardan	EVENT	207
+Event	T6	tıkayan	EVENT	271
+Event	T7	oluştu	EVENT	324
+Event	T8	yıkılınca	EVENT	368
+Event	T9	bastı	EVENT	435
+Event	T10	ölü	EVENT	106
+Event	T11	yığınlardan	EVENT	281
+Event	T12	ağırlığına	EVENT	345
+Relation	T4	T0	SuperSub	true	yağışlardı	çıkarıldı
+Relation	T0	T4	SubSuper	true	çıkarıldı	yağışlardı
+Relation	T4	T10	SuperSub	true	yağışlardı	ölü
+Relation	T10	T4	SubSuper	true	ölü	yağışlardı
+Relation	T4	T1	SuperSub	true	yağışlardı	kayıp
+Relation	T1	T4	SubSuper	true	kayıp	yağışlardı
+Relation	T4	T2	SuperSub	true	yağışlardı	kurtarılan
+Relation	T2	T4	SubSuper	true	kurtarılan	yağışlardı
+Relation	T4	T11	SuperSub	true	yağışlardı	yığınlardan
+Relation	T11	T4	SubSuper	true	yığınlardan	yağışlardı
+Relation	T4	T9	SuperSub	true	yağışlardı	bastı
+Relation	T9	T4	SubSuper	true	bastı	yağışlardı
+Relation	T0	T8	NoRel	true	çıkarıldı	yıkılınca
+Relation	T11	T2	NoRel	true	yığınlardan	kurtarılan
+Relation	T11	T3	NoRel	true	yığınlardan	gerçekleşmiştir
+Relation	T11	T6	NoRel	true	yığınlardan	tıkayan
+Relation	T12	T0	NoRel	true	ağırlığına	çıkarıldı
+Relation	T2	T0	NoRel	true	kurtarılan	çıkarıldı
+Relation	T2	T9	NoRel	true	kurtarılan	bastı
+Relation	T4	T7	NoRel	true	yağışlardı	oluştu
+Relation	T5	T1	NoRel	true	Yağışlardan	kayıp
+Relation	T5	T3	NoRel	true	Yağışlardan	gerçekleşmiştir
+Relation	T5	T4	NoRel	true	Yağışlardan	yağışlardı
+Relation	T5	T9	NoRel	true	Yağışlardan	bastı
+Relation	T6	T12	NoRel	true	tıkayan	ağırlığına
+Relation	T7	T6	NoRel	true	oluştu	tıkayan
+Relation	T8	T1	NoRel	true	yıkılınca	kayıp

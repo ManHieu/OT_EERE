@@ -1,0 +1,31 @@
+Text	thumb| Soldater i Fort Riley , Kansas , ramt af den spanske syge , i Camp Funston .	thumb| Politifolk i Seattle iført masker lavet af Røde Kors 1918 .	DEN SPANSKE SYGE ( SYGEN FRA KANSAS , USA ) var en influenzapandemi fra 1918 til 1920 .	Flere end 50 millioner døde af den ; de 15-18.000 var danskere .	Sygdommen spredtes til store dele af verden : Europa , Nordamerika , Asien , Alaska og øer i Stillehavet og havde dermed karakter af en verdensomspændende epidemi - en såkaldt pandemi .
+Event	T0	ramt	EVENT	40
+Event	T2	lavet	EVENT	125
+Event	T4	influenzapandemi	EVENT	202
+Event	T5	døde	EVENT	262
+Event	T6	spredtes	EVENT	314
+Event	T7	epidemi	EVENT	459
+Event	T8	pandemi	EVENT	480
+Event	T1	spanske syge	EVENT	52
+Event	T9	iført	EVENT	112
+Event	T10	SYGEN	EVENT	170
+Event	T3	SPANSKE SYGE	EVENT	155
+Event	T11	var	EVENT	289
+Event	T12	Sygdommen	EVENT	304
+Relation	T5	T11	SuperSub	true	døde	var
+Relation	T11	T5	SubSuper	true	var	døde
+Relation	T0	T11	NoRel	true	ramt	var
+Relation	T0	T4	NoRel	true	ramt	influenzapandemi
+Relation	T1	T3	NoRel	true	spanske syge	SPANSKE SYGE
+Relation	T10	T1	NoRel	true	SYGEN	spanske syge
+Relation	T10	T11	NoRel	true	SYGEN	var
+Relation	T10	T4	NoRel	true	SYGEN	influenzapandemi
+Relation	T10	T5	NoRel	true	SYGEN	døde
+Relation	T11	T2	NoRel	true	var	lavet
+Relation	T3	T10	NoRel	true	SPANSKE SYGE	SYGEN
+Relation	T3	T2	NoRel	true	SPANSKE SYGE	lavet
+Relation	T4	T2	NoRel	true	influenzapandemi	lavet
+Relation	T7	T0	NoRel	true	epidemi	ramt
+Relation	T7	T5	NoRel	true	epidemi	døde
+Relation	T8	T11	NoRel	true	pandemi	var
+Relation	T9	T12	NoRel	true	iført	Sygdommen

@@ -1,0 +1,42 @@
+Text	Collett pulled an on - base transfer to join No. 32 Squadron RFC on 1 March 1916 ; however , he was then posted to No. 18 Squadron RFC on 9 March 1916 as a Vickers FB. 5 pilot .	After a month 's service , he was admitted to hospital on 18 April with a broken nose , and returned to Home Establishment in England via the merchant ship _ Delta _ .	On 13 June 1916 , he was posted to the Royal Flying Corps ' Experimental Station at Orfordness , Suffolk as a test pilot .	His duties there included undertaking the British military 's first parachute jump from an aeroplane , a Royal Aircraft Factory BE. 2 c , from a height of on 13 January 1917 using a parachute designed by Everard Calthrop .	He successfully repeated the experiment several days later .
+Event	T0	pulled	EVENT	8
+Event	T1	transfer	EVENT	28
+Event	T2	join	EVENT	40
+Event	T3	posted	EVENT	105
+Event	T4	service	EVENT	195
+Event	T5	returned	EVENT	270
+Event	T6	posted	EVENT	371
+Event	T7	test	EVENT	456
+Event	T8	duties	EVENT	473
+Event	T9	undertaking	EVENT	495
+Event	T10	jump	EVENT	547
+Event	T11	using	EVENT	643
+Event	T12	designed	EVENT	661
+Event	T13	repeated	EVENT	708
+Event	T14	experiment	EVENT	721
+Event	T15	broken	EVENT	252
+Relation	T0	T1	NoRel	true	pulled	transfer
+Relation	T0	T14	NoRel	true	pulled	experiment
+Relation	T0	T6	NoRel	true	pulled	posted
+Relation	T1	T11	NoRel	true	transfer	using
+Relation	T10	T0	NoRel	true	jump	pulled
+Relation	T10	T7	NoRel	true	jump	test
+Relation	T11	T0	NoRel	true	using	pulled
+Relation	T11	T3	NoRel	true	using	posted
+Relation	T11	T6	NoRel	true	using	posted
+Relation	T12	T13	NoRel	true	designed	repeated
+Relation	T12	T15	NoRel	true	designed	broken
+Relation	T13	T14	NoRel	true	repeated	experiment
+Relation	T13	T7	NoRel	true	repeated	test
+Relation	T14	T15	NoRel	true	experiment	broken
+Relation	T15	T5	NoRel	true	broken	returned
+Relation	T15	T9	NoRel	true	broken	undertaking
+Relation	T3	T11	NoRel	true	posted	using
+Relation	T5	T11	NoRel	true	returned	using
+Relation	T5	T4	NoRel	true	returned	service
+Relation	T5	T7	NoRel	true	returned	test
+Relation	T5	T8	NoRel	true	returned	duties
+Relation	T6	T11	NoRel	true	posted	using
+Relation	T7	T5	NoRel	true	test	returned
+Relation	T7	T8	NoRel	true	test	duties
+Relation	T8	T6	NoRel	true	duties	posted

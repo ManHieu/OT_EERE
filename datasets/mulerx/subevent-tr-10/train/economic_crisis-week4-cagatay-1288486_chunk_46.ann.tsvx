@@ -1,0 +1,24 @@
+Text	VKPD başındaki birleşik kelimesini atarak KPD olarak anılmaya başlandı .	Kısa bir sürede 500.000 üyeye sahip olan KPD artık kitlesel bir güç haline gelmişti .	20 Şubat 1920’de yapılan seçimlerde Orta Almanya’da en güçlü parti KPD olmuştu .	Seçimlerden sonra sosyal demokrat bölge valisi “ işçileri komünistlerin teröründen kurtarmak ve asayişi sağlamak ” için bölgeye güvenlik güçlerini yığmaya başladı .	Güvenlik güçleri bazı şehirleri işgal etmeye başladı , bunun üzerine işçiler ayaklanmaya başladı .
+Event	T0	başlandı	EVENT	62
+Event	T1	gelmişti	EVENT	148
+Event	T2	başladı	EVENT	395
+Event	T3	olmuştu	EVENT	230
+Event	T4	seçimlerde	EVENT	184
+Event	T5	Seçimlerden	EVENT	240
+Event	T6	kurtarmak	EVENT	323
+Event	T7	sağlamak	EVENT	344
+Event	T8	işgal	EVENT	437
+Event	T9	ayaklanmaya	EVENT	482
+Relation	T0	T5	NoRel	true	başlandı	Seçimlerden
+Relation	T0	T8	NoRel	true	başlandı	işgal
+Relation	T1	T8	NoRel	true	gelmişti	işgal
+Relation	T1	T9	NoRel	true	gelmişti	ayaklanmaya
+Relation	T2	T5	NoRel	true	başladı	Seçimlerden
+Relation	T2	T9	NoRel	true	başladı	ayaklanmaya
+Relation	T3	T4	NoRel	true	olmuştu	seçimlerde
+Relation	T6	T0	NoRel	true	kurtarmak	başlandı
+Relation	T6	T8	NoRel	true	kurtarmak	işgal
+Relation	T6	T9	NoRel	true	kurtarmak	ayaklanmaya
+Relation	T8	T4	NoRel	true	işgal	seçimlerde
+Relation	T9	T0	NoRel	true	ayaklanmaya	başlandı
+Relation	T9	T7	NoRel	true	ayaklanmaya	sağlamak

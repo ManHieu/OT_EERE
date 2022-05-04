@@ -1,0 +1,119 @@
+Text	The first officer , whose own ADI would have shown the true angle of bank , failed to participate in full crew resource management techniques , saying nothing to challenge his captain 's actions nor made any attempt to take over the flight with his own controls .	The older and more experienced flight engineer did call out " bank " four times in 19 seconds , but the captain ignored his warnings , continued to ignore the chiming alarm , made no verbal response , and actually continued to increase the left bank angle .	At 18:38 , 55 seconds after take - off , Flight 8509 's left wing dragged along the ground , then the aircraft plunged into the ground at a speed of between 250 and 300 knots , in a 40 ° pitch down and 90 ° left bank attitude .	The aircraft exploded on impact .	After the investigation , the United Kingdom 's Air Accidents Investigation Branch ( AAIB ) issued recommendations to Korean Air to revise its training program and company culture , to promote a more free atmosphere between the captain and the first officer .
+Event	T0	shown	EVENT	45
+Event	T1	failed	EVENT	76
+Event	T2	participate	EVENT	86
+Event	T3	saying	EVENT	144
+Event	T4	challenge	EVENT	162
+Event	T5	actions	EVENT	187
+Event	T6	made	EVENT	199
+Event	T7	attempt	EVENT	208
+Event	T8	flight	EVENT	233
+Event	T9	controls	EVENT	253
+Event	T10	ignored	EVENT	376
+Event	T11	continued	EVENT	399
+Event	T12	ignore	EVENT	412
+Event	T13	made	EVENT	439
+Event	T14	response	EVENT	454
+Event	T15	continued	EVENT	478
+Event	T16	increase	EVENT	491
+Event	T17	dragged	EVENT	588
+Event	T18	attitude	EVENT	739
+Event	T19	impact	EVENT	775
+Event	T20	investigation	EVENT	794
+Event	T21	revise	EVENT	916
+Event	T22	training	EVENT	927
+Event	T23	call out	EVENT	315
+Event	T24	take - off	EVENT	550
+Event	T25	plunged	EVENT	633
+Event	T26	exploded	EVENT	763
+Event	T27	issued	EVENT	876
+Event	T28	promote	EVENT	969
+Relation	T0	T1	SuperSub	true	shown	failed
+Relation	T1	T0	SubSuper	true	failed	shown
+Relation	T23	T10	SuperSub	true	call out	ignored
+Relation	T10	T23	SubSuper	true	ignored	call out
+Relation	T10	T11	SuperSub	true	ignored	continued
+Relation	T11	T10	SubSuper	true	continued	ignored
+Relation	T11	T13	SuperSub	true	continued	made
+Relation	T13	T11	SubSuper	true	made	continued
+Relation	T13	T15	SuperSub	true	made	continued
+Relation	T15	T13	SubSuper	true	continued	made
+Relation	T24	T17	SuperSub	true	take - off	dragged
+Relation	T17	T24	SubSuper	true	dragged	take - off
+Relation	T17	T25	SuperSub	true	dragged	plunged
+Relation	T25	T17	SubSuper	true	plunged	dragged
+Relation	T20	T27	SuperSub	true	investigation	issued
+Relation	T27	T20	SubSuper	true	issued	investigation
+Relation	T27	T21	SuperSub	true	issued	revise
+Relation	T21	T27	SubSuper	true	revise	issued
+Relation	T27	T28	SuperSub	true	issued	promote
+Relation	T28	T27	SubSuper	true	promote	issued
+Relation	T0	T6	NoRel	true	shown	made
+Relation	T1	T12	NoRel	true	failed	ignore
+Relation	T1	T14	NoRel	true	failed	response
+Relation	T1	T22	NoRel	true	failed	training
+Relation	T1	T4	NoRel	true	failed	challenge
+Relation	T10	T2	NoRel	true	ignored	participate
+Relation	T11	T16	NoRel	true	continued	increase
+Relation	T11	T25	NoRel	true	continued	plunged
+Relation	T11	T3	NoRel	true	continued	saying
+Relation	T11	T5	NoRel	true	continued	actions
+Relation	T12	T22	NoRel	true	ignore	training
+Relation	T12	T23	NoRel	true	ignore	call out
+Relation	T12	T6	NoRel	true	ignore	made
+Relation	T13	T12	NoRel	true	made	ignore
+Relation	T13	T25	NoRel	true	made	plunged
+Relation	T13	T8	NoRel	true	made	flight
+Relation	T14	T20	NoRel	true	response	investigation
+Relation	T14	T27	NoRel	true	response	issued
+Relation	T14	T3	NoRel	true	response	saying
+Relation	T15	T0	NoRel	true	continued	shown
+Relation	T15	T14	NoRel	true	continued	response
+Relation	T15	T3	NoRel	true	continued	saying
+Relation	T16	T13	NoRel	true	increase	made
+Relation	T16	T15	NoRel	true	increase	continued
+Relation	T17	T13	NoRel	true	dragged	made
+Relation	T17	T18	NoRel	true	dragged	attitude
+Relation	T19	T2	NoRel	true	impact	participate
+Relation	T19	T25	NoRel	true	impact	plunged
+Relation	T19	T28	NoRel	true	impact	promote
+Relation	T2	T19	NoRel	true	participate	impact
+Relation	T2	T27	NoRel	true	participate	issued
+Relation	T20	T16	NoRel	true	investigation	increase
+Relation	T20	T18	NoRel	true	investigation	attitude
+Relation	T20	T26	NoRel	true	investigation	exploded
+Relation	T20	T5	NoRel	true	investigation	actions
+Relation	T21	T26	NoRel	true	revise	exploded
+Relation	T21	T4	NoRel	true	revise	challenge
+Relation	T22	T17	NoRel	true	training	dragged
+Relation	T24	T16	NoRel	true	take - off	increase
+Relation	T24	T2	NoRel	true	take - off	participate
+Relation	T25	T1	NoRel	true	plunged	failed
+Relation	T25	T14	NoRel	true	plunged	response
+Relation	T25	T15	NoRel	true	plunged	continued
+Relation	T25	T2	NoRel	true	plunged	participate
+Relation	T25	T23	NoRel	true	plunged	call out
+Relation	T26	T12	NoRel	true	exploded	ignore
+Relation	T26	T9	NoRel	true	exploded	controls
+Relation	T27	T19	NoRel	true	issued	impact
+Relation	T27	T22	NoRel	true	issued	training
+Relation	T27	T23	NoRel	true	issued	call out
+Relation	T28	T11	NoRel	true	promote	continued
+Relation	T28	T16	NoRel	true	promote	increase
+Relation	T28	T22	NoRel	true	promote	training
+Relation	T3	T14	NoRel	true	saying	response
+Relation	T3	T17	NoRel	true	saying	dragged
+Relation	T3	T2	NoRel	true	saying	participate
+Relation	T4	T1	NoRel	true	challenge	failed
+Relation	T4	T2	NoRel	true	challenge	participate
+Relation	T4	T23	NoRel	true	challenge	call out
+Relation	T5	T1	NoRel	true	actions	failed
+Relation	T5	T2	NoRel	true	actions	participate
+Relation	T5	T24	NoRel	true	actions	take - off
+Relation	T6	T15	NoRel	true	made	continued
+Relation	T6	T2	NoRel	true	made	participate
+Relation	T6	T27	NoRel	true	made	issued
+Relation	T7	T13	NoRel	true	attempt	made
+Relation	T8	T20	NoRel	true	flight	investigation
+Relation	T9	T17	NoRel	true	controls	dragged
+Relation	T9	T22	NoRel	true	controls	training

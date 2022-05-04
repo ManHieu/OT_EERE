@@ -1,0 +1,33 @@
+Text	İnişten sonra kontrolü devralan kaptan Ender Bayraktar , uçağın hız kesici sistemini kapattı ancak sağ motor " pas geçme " ayarında kaldığı için tam hızda çalışıyordu .	Bundan dolayı uçak pistin sol tarafından çıktı ve çamurlu yamaca saplandı .	Kazadan 200 gün sonra uçağın enkazının kaldırılması için sigorta şirketince ihaleye çıkıldı .	Enkazın parçalara ayrılması için 9 Türk ve 6 yabancı uçak mühendisinden oluşan bir ekip çalıştı .	Uçağın işe yarayan parçaları sökülüp İngiltere'ye gönderildi .
+Event	T0	İnişten	EVENT	0
+Event	T2	kapattı	EVENT	85
+Event	T4	çalışıyordu	EVENT	155
+Event	T5	çıktı	EVENT	210
+Event	T6	saplandı	EVENT	234
+Event	T7	Kazadan	EVENT	245
+Event	T8	kaldırılması	EVENT	284
+Event	T9	çıkıldı	EVENT	329
+Event	T10	ayrılması	EVENT	357
+Event	T11	çalıştı	EVENT	427
+Event	T12	sökülüp	EVENT	466
+Event	T13	gönderildi	EVENT	487
+Event	T1	devralan	EVENT	23
+Event	T3	kaldığı	EVENT	132
+Event	T14	enkazının	EVENT	274
+Event	T15	Enkazın	EVENT	339
+Relation	T0	T11	NoRel	true	İnişten	çalıştı
+Relation	T1	T10	NoRel	true	devralan	ayrılması
+Relation	T10	T1	NoRel	true	ayrılması	devralan
+Relation	T11	T3	NoRel	true	çalıştı	kaldığı
+Relation	T11	T5	NoRel	true	çalıştı	çıktı
+Relation	T13	T7	NoRel	true	gönderildi	Kazadan
+Relation	T3	T13	NoRel	true	kaldığı	gönderildi
+Relation	T4	T10	NoRel	true	çalışıyordu	ayrılması
+Relation	T4	T13	NoRel	true	çalışıyordu	gönderildi
+Relation	T5	T12	NoRel	true	çıktı	sökülüp
+Relation	T6	T1	NoRel	true	saplandı	devralan
+Relation	T7	T1	NoRel	true	Kazadan	devralan
+Relation	T7	T13	NoRel	true	Kazadan	gönderildi
+Relation	T7	T15	NoRel	true	Kazadan	Enkazın
+Relation	T7	T5	NoRel	true	Kazadan	çıktı
+Relation	T8	T14	NoRel	true	kaldırılması	enkazının

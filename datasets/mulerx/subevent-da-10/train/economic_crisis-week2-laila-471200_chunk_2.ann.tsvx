@@ -1,0 +1,23 @@
+Text	Tørninghus mistede dog senere sin betydning .	Borgen forfaldt , og i 1597 brændte den ned .	I 1784 købte Hans Boysen Tørning Mølle .	Hans efterkommere videreførte møllen og den sidste døde barnløs i 1945 .	Indtil 1960 drev arvingerne ( en bror , en søster og en niece ) møllen videre og den var faktisk i brug som korn- og melmølle indtil 1975 .
+Event	T0	mistede	EVENT	11
+Event	T1	forfaldt	EVENT	53
+Event	T2	brændte	EVENT	74
+Event	T3	købte	EVENT	99
+Event	T4	videreførte	EVENT	151
+Event	T5	døde	EVENT	184
+Event	T6	drev	EVENT	218
+Event	T7	brug	EVENT	305
+Relation	T1	T2	SuperSub	true	forfaldt	brændte
+Relation	T2	T1	SubSuper	true	brændte	forfaldt
+Relation	T4	T5	SuperSub	true	videreførte	døde
+Relation	T5	T4	SubSuper	true	døde	videreførte
+Relation	T2	T7	NoRel	true	brændte	brug
+Relation	T3	T0	NoRel	true	købte	mistede
+Relation	T4	T6	NoRel	true	videreførte	drev
+Relation	T5	T7	NoRel	true	døde	brug
+Relation	T6	T0	NoRel	true	drev	mistede
+Relation	T6	T7	NoRel	true	drev	brug
+Relation	T7	T0	NoRel	true	brug	mistede
+Relation	T7	T1	NoRel	true	brug	forfaldt
+Relation	T7	T2	NoRel	true	brug	brændte
+Relation	T7	T5	NoRel	true	brug	døde

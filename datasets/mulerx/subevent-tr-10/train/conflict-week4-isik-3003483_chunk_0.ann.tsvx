@@ -1,0 +1,28 @@
+Text	OSMANLI'NIN MANI'YI ISTILASI ( ) , 1803 yılında Manya Burnu'nda Rum isyancılar ile Osmanlı ordusu arasında meydana gelen bir muharebedir .	Muharebe , Manyotların isyanını bastırmak için Osmanlı tarafından yapılan bir dizi istiladan biriydi .	Manya Burnu , Yunanistan'ın engebeli arazisi ve Manyotların isyanları nedeniyle Osmanlı'nın ele geçiremediği bir bölgesiydi .	Manyotlar , Venedik ile Osmanlılar arasında ne zaman savaş çıksa Venediklilerle ittifak yaparak Osmanlılara zarar vermiş ve korsanlık yapmayı da adet edinmişlerdir .	Zanetos Grigorakis , Mani beyi olarak atanmış ve Zanetbey adını almıştır .
+Event	T0	muharebedir	EVENT	125
+Event	T1	yapılan	EVENT	205
+Event	T2	isyanları	EVENT	302
+Event	T4	çıksa	EVENT	427
+Event	T5	ittifak	EVENT	448
+Event	T6	vermiş	EVENT	482
+Event	T7	atanmış	EVENT	572
+Event	T8	OSMANLI'NIN MANI'YI ISTILASI	EVENT	0
+Event	T9	Muharebe	EVENT	139
+Event	T3	edinmişlerdir	EVENT	518
+Relation	T0	T4	NoRel	true	muharebedir	çıksa
+Relation	T1	T4	NoRel	true	yapılan	çıksa
+Relation	T1	T6	NoRel	true	yapılan	vermiş
+Relation	T2	T5	NoRel	true	isyanları	ittifak
+Relation	T2	T6	NoRel	true	isyanları	vermiş
+Relation	T3	T4	NoRel	true	edinmişlerdir	çıksa
+Relation	T4	T1	NoRel	true	çıksa	yapılan
+Relation	T5	T9	NoRel	true	ittifak	Muharebe
+Relation	T6	T0	NoRel	true	vermiş	muharebedir
+Relation	T6	T3	NoRel	true	vermiş	edinmişlerdir
+Relation	T7	T6	NoRel	true	atanmış	vermiş
+Relation	T7	T8	NoRel	true	atanmış	OSMANLI'NIN MANI'YI ISTILASI
+Relation	T8	T1	NoRel	true	OSMANLI'NIN MANI'YI ISTILASI	yapılan
+Relation	T8	T9	NoRel	true	OSMANLI'NIN MANI'YI ISTILASI	Muharebe
+Relation	T9	T1	NoRel	true	Muharebe	yapılan
+Relation	T9	T3	NoRel	true	Muharebe	edinmişlerdir
+Relation	T9	T8	NoRel	true	Muharebe	OSMANLI'NIN MANI'YI ISTILASI

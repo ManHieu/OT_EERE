@@ -1,0 +1,37 @@
+Text	Fransiskan papazlar , Baf'taki kiliselerini depremin ardından terk etti .	Depremden sadece 30 yıl önce inşa edilmiş olan ve limanı gözetleyen Saranda Kolones kalesi deprem sırasında yıkıldı .	Kuruyan limanı gözetlemek artık bir ihtiyaç olmadığından da tekrar inşa edilmedi .	Deprem , Baf kasabasını kalıcı biçimde değiştirdi .	Limanı kullanılmaz hale getiren deprem , kıyıyı denize doğru genişletti ve bu nedenle limanın korunaklı yeri ortadan kayboldu .
+Event	T0	depremin	EVENT	44
+Event	T3	deprem	EVENT	165
+Event	T4	yıkıldı	EVENT	182
+Event	T5	Deprem	EVENT	275
+Event	T6	değiştirdi	EVENT	314
+Event	T7	deprem	EVENT	359
+Event	T8	genişletti	EVENT	388
+Event	T9	kayboldu	EVENT	444
+Event	T10	Depremden	EVENT	74
+Event	T1	terk etti	EVENT	62
+Event	T2	inşa edilmiş	EVENT	103
+Event	T11	gözetleyen	EVENT	131
+Event	T12	Kuruyan	EVENT	192
+Event	T13	getiren	EVENT	351
+Relation	T0	T5	NoRel	true	depremin	Deprem
+Relation	T0	T6	NoRel	true	depremin	değiştirdi
+Relation	T1	T13	NoRel	true	terk etti	getiren
+Relation	T11	T10	NoRel	true	gözetleyen	Depremden
+Relation	T12	T1	NoRel	true	Kuruyan	terk etti
+Relation	T12	T9	NoRel	true	Kuruyan	kayboldu
+Relation	T13	T11	NoRel	true	getiren	gözetleyen
+Relation	T13	T3	NoRel	true	getiren	deprem
+Relation	T3	T2	NoRel	true	deprem	inşa edilmiş
+Relation	T3	T6	NoRel	true	deprem	değiştirdi
+Relation	T4	T11	NoRel	true	yıkıldı	gözetleyen
+Relation	T4	T9	NoRel	true	yıkıldı	kayboldu
+Relation	T5	T10	NoRel	true	Deprem	Depremden
+Relation	T6	T0	NoRel	true	değiştirdi	depremin
+Relation	T6	T13	NoRel	true	değiştirdi	getiren
+Relation	T6	T2	NoRel	true	değiştirdi	inşa edilmiş
+Relation	T6	T7	NoRel	true	değiştirdi	deprem
+Relation	T7	T9	NoRel	true	deprem	kayboldu
+Relation	T8	T0	NoRel	true	genişletti	depremin
+Relation	T8	T1	NoRel	true	genişletti	terk etti
+Relation	T8	T12	NoRel	true	genişletti	Kuruyan
+Relation	T9	T0	NoRel	true	kayboldu	depremin

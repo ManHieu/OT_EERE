@@ -1,0 +1,20 @@
+Text	Om hans optræden blev dokumentarfilmen Man on Wire lavet .	På Memorial Day i 1983 klatrede Dan Goodwin op ad World Trade Centers nordlige tårn .	Hans stunt var for at henlede opmærksomheden på den manglende evne til at redde mennesker potentielt fanget i de øverste etager af skyskrabere .	I 1995 blev VM i skak afholdt på 107. etage i det sydlige tårn .	Den 13. februar 1975 udbrød en brand på 11. etage i det nordlige tårn .
+Event	T0	lavet	EVENT	51
+Event	T1	klatrede	EVENT	82
+Event	T2	stunt	EVENT	150
+Event	T3	henlede	EVENT	167
+Event	T4	redde	EVENT	219
+Event	T5	fanget	EVENT	246
+Event	T6	afholdt	EVENT	312
+Event	T7	udbrød	EVENT	376
+Event	T8	brand	EVENT	386
+Event	T9	optræden	EVENT	8
+Relation	T1	T2	SuperSub	true	klatrede	stunt
+Relation	T2	T1	SubSuper	true	stunt	klatrede
+Relation	T0	T8	NoRel	true	lavet	brand
+Relation	T1	T6	NoRel	true	klatrede	afholdt
+Relation	T3	T5	NoRel	true	henlede	fanget
+Relation	T3	T9	NoRel	true	henlede	optræden
+Relation	T6	T8	NoRel	true	afholdt	brand
+Relation	T6	T9	NoRel	true	afholdt	optræden
+Relation	T9	T1	NoRel	true	optræden	klatrede

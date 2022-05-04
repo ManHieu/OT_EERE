@@ -1,0 +1,26 @@
+Text	La AD de la FAA tiene efecto solamente en aquellos aviones que estén registrados en los Estados Unidos , ya que la jurisdicción de la FAA se limita al territorio estadounidense .	Los países con acuerdos de reciprocidad en aviación pueden también cumplir la directiva , pero el resto de naciones no están obligadas a seguir esta norma .	Como resultado del incidente , la FAA investigó las técnicas de fabricado de Boeing para descubrir si en algún momento se produce algún fallo que pueda propiciar estos problemas .	El avión que sufrió el incidente no tenía un número demasiado elevado de rotaciones .	Boeing cooperó con la FAA en la investigación del incidente .
+Event	T0	efecto	EVENT	22
+Event	T1	registrados	EVENT	69
+Event	T2	incidente	EVENT	355
+Event	T3	investigó	EVENT	374
+Event	T4	fabricado	EVENT	400
+Event	T5	descubrir	EVENT	425
+Event	T6	fallo	EVENT	472
+Event	T7	sufrió	EVENT	529
+Event	T8	incidente	EVENT	539
+Event	T9	cooperó	EVENT	609
+Event	T10	investigación	EVENT	634
+Event	T11	incidente	EVENT	652
+Relation	T0	T6	NoRel	true	efecto	fallo
+Relation	T1	T10	NoRel	true	registrados	investigación
+Relation	T1	T2	NoRel	true	registrados	incidente
+Relation	T1	T5	NoRel	true	registrados	descubrir
+Relation	T11	T1	NoRel	true	incidente	registrados
+Relation	T11	T4	NoRel	true	incidente	fabricado
+Relation	T2	T11	NoRel	true	incidente	incidente
+Relation	T4	T10	NoRel	true	fabricado	investigación
+Relation	T4	T2	NoRel	true	fabricado	incidente
+Relation	T5	T1	NoRel	true	descubrir	registrados
+Relation	T5	T11	NoRel	true	descubrir	incidente
+Relation	T6	T7	NoRel	true	fallo	sufrió
+Relation	T8	T4	NoRel	true	incidente	fabricado

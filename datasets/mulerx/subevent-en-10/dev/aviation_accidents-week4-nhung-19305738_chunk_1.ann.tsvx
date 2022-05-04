@@ -1,0 +1,61 @@
+Text	The airline operated mostly Avro aircraft : Yorks , Lancastrians and Tudors , and flew to Bermuda , the West Indies and the western coast of South America .	_ Star Tiger _ was one of three enlarged and improved versions of the Avro Tudor , designated Tudor IV ; it had made 11 transatlantic flights , a total of 575 hours flying time , since its initial test flight on 4 November 1947 .	On the morning of 28 January 1948 , the crew and passengers boarded _ Star Tiger _ at Lisbon only to be forced to return to the airport waiting room when the pilot , Captain Brian W. McMillan , told them that the port inner engine needed some attention .	The aircraft took off 2 hours later , and made what was intended to be a 75 - minute refuelling stop at Santa Maria in the Azores .	However , the reported weather was so poor that Captain McMillan decided they should stop over until the next day .
+Event	T0	operated	EVENT	12
+Event	T1	flew	EVENT	82
+Event	T2	improved	EVENT	202
+Event	T3	designated	EVENT	240
+Event	T4	made	EVENT	269
+Event	T5	flights	EVENT	291
+Event	T6	flight	EVENT	359
+Event	T7	boarded	EVENT	447
+Event	T8	forced	EVENT	491
+Event	T9	return	EVENT	501
+Event	T10	told	EVENT	581
+Event	T11	needed	EVENT	618
+Event	T12	attention	EVENT	630
+Event	T13	made	EVENT	684
+Event	T14	intended	EVENT	698
+Event	T15	stop	EVENT	738
+Event	T16	decided	EVENT	839
+Event	T17	took off	EVENT	655
+Event	T18	stop	EVENT	859
+Event	T19	weather	EVENT	797
+Relation	T17	T15	SuperSub	true	took off	stop
+Relation	T15	T17	SubSuper	true	stop	took off
+Relation	T1	T10	NoRel	true	flew	told
+Relation	T1	T12	NoRel	true	flew	attention
+Relation	T1	T17	NoRel	true	flew	took off
+Relation	T1	T3	NoRel	true	flew	designated
+Relation	T1	T6	NoRel	true	flew	flight
+Relation	T1	T8	NoRel	true	flew	forced
+Relation	T1	T9	NoRel	true	flew	return
+Relation	T11	T15	NoRel	true	needed	stop
+Relation	T11	T7	NoRel	true	needed	boarded
+Relation	T11	T8	NoRel	true	needed	forced
+Relation	T12	T3	NoRel	true	attention	designated
+Relation	T13	T18	NoRel	true	made	stop
+Relation	T14	T15	NoRel	true	intended	stop
+Relation	T15	T18	NoRel	true	stop	stop
+Relation	T15	T4	NoRel	true	stop	made
+Relation	T15	T7	NoRel	true	stop	boarded
+Relation	T16	T0	NoRel	true	decided	operated
+Relation	T16	T14	NoRel	true	decided	intended
+Relation	T18	T15	NoRel	true	stop	stop
+Relation	T18	T19	NoRel	true	stop	weather
+Relation	T18	T2	NoRel	true	stop	improved
+Relation	T18	T4	NoRel	true	stop	made
+Relation	T19	T6	NoRel	true	weather	flight
+Relation	T19	T8	NoRel	true	weather	forced
+Relation	T3	T19	NoRel	true	designated	weather
+Relation	T3	T4	NoRel	true	designated	made
+Relation	T5	T11	NoRel	true	flights	needed
+Relation	T5	T12	NoRel	true	flights	attention
+Relation	T5	T3	NoRel	true	flights	designated
+Relation	T7	T13	NoRel	true	boarded	made
+Relation	T7	T14	NoRel	true	boarded	intended
+Relation	T7	T16	NoRel	true	boarded	decided
+Relation	T7	T6	NoRel	true	boarded	flight
+Relation	T8	T17	NoRel	true	forced	took off
+Relation	T8	T7	NoRel	true	forced	boarded
+Relation	T8	T9	NoRel	true	forced	return
+Relation	T9	T2	NoRel	true	return	improved
+Relation	T9	T5	NoRel	true	return	flights

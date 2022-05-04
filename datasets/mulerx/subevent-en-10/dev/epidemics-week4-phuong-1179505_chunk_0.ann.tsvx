@@ -1,0 +1,184 @@
+Text	WELL POISONING is the act of malicious manipulation of potable water resources in order to cause illness or death , or to deny an opponent access to fresh water resources .	Well poisoning has been historically documented as a strategy during wartime since antiquity , and was used both offensively ( as a terror tactic to disrupt and depopulate a target area ) and defensively ( as a scorched earth tactic to deny an invading army sources of clean water ) .	Rotting corpses ( both animal and human ) thrown down wells were the most common implementation ; in one of the earliest examples of biological warfare , corpses known to have died from common transmissible diseases of the Pre-Modern era such as bubonic plague or tuberculosis were especially favored for well - poisoning .	Additionally , well poisoning was one of the three gravest antisemitic accusations made against Jews during this period ( the other two being host desecration and blood libel ) .	Similar accusations were also made of Koreans living in Japan in the aftermath of the 1923 Great Kantō earthquake .
+Event	T1	act	EVENT	22
+Event	T2	manipulation	EVENT	39
+Event	T3	death	EVENT	108
+Event	T4	deny	EVENT	122
+Event	T6	documented	EVENT	210
+Event	T7	strategy	EVENT	226
+Event	T8	wartime	EVENT	242
+Event	T9	used	EVENT	276
+Event	T11	disrupt	EVENT	322
+Event	T12	depopulate	EVENT	334
+Event	T15	deny	EVENT	409
+Event	T16	invading	EVENT	417
+Event	T17	Rotting	EVENT	458
+Event	T18	implementation	EVENT	539
+Event	T19	warfare	EVENT	602
+Event	T20	died	EVENT	634
+Event	T21	diseases	EVENT	665
+Event	T22	plague	EVENT	712
+Event	T23	tuberculosis	EVENT	722
+Event	T24	favored	EVENT	751
+Event	T25	poisoning	EVENT	770
+Event	T27	made	EVENT	865
+Event	T28	desecration	EVENT	929
+Event	T29	libel	EVENT	951
+Event	T30	accusations	EVENT	969
+Event	T31	made	EVENT	991
+Event	T32	living	EVENT	1007
+Event	T33	earthquake	EVENT	1064
+Event	T34	WELL POISONING	EVENT	0
+Event	T35	cause	EVENT	91
+Event	T36	illness	EVENT	97
+Event	T5	Well poisoning	EVENT	173
+Event	T10	terror tactic	EVENT	305
+Event	T13	scorched earth tactic	EVENT	384
+Event	T14	well poisoning	EVENT	797
+Event	T26	against	EVENT	870
+Relation	T5	T9	SuperSub	true	Well poisoning	used
+Relation	T9	T5	SubSuper	true	used	Well poisoning
+Relation	T21	T22	SuperSub	true	diseases	plague
+Relation	T22	T21	SubSuper	true	plague	diseases
+Relation	T21	T23	SuperSub	true	diseases	tuberculosis
+Relation	T23	T21	SubSuper	true	tuberculosis	diseases
+Relation	T1	T14	NoRel	true	act	well poisoning
+Relation	T1	T22	NoRel	true	act	plague
+Relation	T1	T23	NoRel	true	act	tuberculosis
+Relation	T1	T31	NoRel	true	act	made
+Relation	T1	T35	NoRel	true	act	cause
+Relation	T10	T1	NoRel	true	terror tactic	act
+Relation	T10	T3	NoRel	true	terror tactic	death
+Relation	T11	T16	NoRel	true	disrupt	invading
+Relation	T11	T21	NoRel	true	disrupt	diseases
+Relation	T11	T29	NoRel	true	disrupt	libel
+Relation	T11	T34	NoRel	true	disrupt	WELL POISONING
+Relation	T11	T5	NoRel	true	disrupt	Well poisoning
+Relation	T11	T7	NoRel	true	disrupt	strategy
+Relation	T11	T8	NoRel	true	disrupt	wartime
+Relation	T12	T1	NoRel	true	depopulate	act
+Relation	T12	T11	NoRel	true	depopulate	disrupt
+Relation	T12	T18	NoRel	true	depopulate	implementation
+Relation	T12	T19	NoRel	true	depopulate	warfare
+Relation	T12	T22	NoRel	true	depopulate	plague
+Relation	T12	T27	NoRel	true	depopulate	made
+Relation	T12	T29	NoRel	true	depopulate	libel
+Relation	T12	T4	NoRel	true	depopulate	deny
+Relation	T13	T16	NoRel	true	scorched earth tactic	invading
+Relation	T13	T24	NoRel	true	scorched earth tactic	favored
+Relation	T13	T30	NoRel	true	scorched earth tactic	accusations
+Relation	T13	T35	NoRel	true	scorched earth tactic	cause
+Relation	T13	T36	NoRel	true	scorched earth tactic	illness
+Relation	T13	T9	NoRel	true	scorched earth tactic	used
+Relation	T14	T13	NoRel	true	well poisoning	scorched earth tactic
+Relation	T14	T32	NoRel	true	well poisoning	living
+Relation	T14	T33	NoRel	true	well poisoning	earthquake
+Relation	T14	T4	NoRel	true	well poisoning	deny
+Relation	T15	T1	NoRel	true	deny	act
+Relation	T15	T30	NoRel	true	deny	accusations
+Relation	T15	T32	NoRel	true	deny	living
+Relation	T16	T13	NoRel	true	invading	scorched earth tactic
+Relation	T16	T3	NoRel	true	invading	death
+Relation	T16	T34	NoRel	true	invading	WELL POISONING
+Relation	T16	T9	NoRel	true	invading	used
+Relation	T17	T10	NoRel	true	Rotting	terror tactic
+Relation	T17	T3	NoRel	true	Rotting	death
+Relation	T17	T31	NoRel	true	Rotting	made
+Relation	T18	T14	NoRel	true	implementation	well poisoning
+Relation	T18	T15	NoRel	true	implementation	deny
+Relation	T18	T17	NoRel	true	implementation	Rotting
+Relation	T18	T2	NoRel	true	implementation	manipulation
+Relation	T18	T32	NoRel	true	implementation	living
+Relation	T18	T9	NoRel	true	implementation	used
+Relation	T19	T11	NoRel	true	warfare	disrupt
+Relation	T19	T15	NoRel	true	warfare	deny
+Relation	T19	T32	NoRel	true	warfare	living
+Relation	T2	T1	NoRel	true	manipulation	act
+Relation	T2	T13	NoRel	true	manipulation	scorched earth tactic
+Relation	T2	T19	NoRel	true	manipulation	warfare
+Relation	T2	T28	NoRel	true	manipulation	desecration
+Relation	T2	T8	NoRel	true	manipulation	wartime
+Relation	T20	T19	NoRel	true	died	warfare
+Relation	T20	T24	NoRel	true	died	favored
+Relation	T20	T31	NoRel	true	died	made
+Relation	T20	T9	NoRel	true	died	used
+Relation	T21	T1	NoRel	true	diseases	act
+Relation	T21	T10	NoRel	true	diseases	terror tactic
+Relation	T21	T20	NoRel	true	diseases	died
+Relation	T21	T25	NoRel	true	diseases	poisoning
+Relation	T21	T31	NoRel	true	diseases	made
+Relation	T21	T6	NoRel	true	diseases	documented
+Relation	T21	T7	NoRel	true	diseases	strategy
+Relation	T22	T2	NoRel	true	plague	manipulation
+Relation	T22	T25	NoRel	true	plague	poisoning
+Relation	T22	T26	NoRel	true	plague	against
+Relation	T22	T27	NoRel	true	plague	made
+Relation	T23	T33	NoRel	true	tuberculosis	earthquake
+Relation	T24	T31	NoRel	true	favored	made
+Relation	T24	T32	NoRel	true	favored	living
+Relation	T24	T7	NoRel	true	favored	strategy
+Relation	T25	T3	NoRel	true	poisoning	death
+Relation	T26	T10	NoRel	true	against	terror tactic
+Relation	T26	T15	NoRel	true	against	deny
+Relation	T26	T28	NoRel	true	against	desecration
+Relation	T26	T36	NoRel	true	against	illness
+Relation	T26	T8	NoRel	true	against	wartime
+Relation	T27	T12	NoRel	true	made	depopulate
+Relation	T27	T20	NoRel	true	made	died
+Relation	T28	T13	NoRel	true	desecration	scorched earth tactic
+Relation	T28	T19	NoRel	true	desecration	warfare
+Relation	T28	T31	NoRel	true	desecration	made
+Relation	T28	T34	NoRel	true	desecration	WELL POISONING
+Relation	T29	T1	NoRel	true	libel	act
+Relation	T29	T14	NoRel	true	libel	well poisoning
+Relation	T29	T15	NoRel	true	libel	deny
+Relation	T29	T17	NoRel	true	libel	Rotting
+Relation	T29	T23	NoRel	true	libel	tuberculosis
+Relation	T29	T25	NoRel	true	libel	poisoning
+Relation	T29	T3	NoRel	true	libel	death
+Relation	T29	T30	NoRel	true	libel	accusations
+Relation	T29	T31	NoRel	true	libel	made
+Relation	T3	T11	NoRel	true	death	disrupt
+Relation	T3	T21	NoRel	true	death	diseases
+Relation	T3	T24	NoRel	true	death	favored
+Relation	T30	T17	NoRel	true	accusations	Rotting
+Relation	T30	T21	NoRel	true	accusations	diseases
+Relation	T30	T27	NoRel	true	accusations	made
+Relation	T30	T28	NoRel	true	accusations	desecration
+Relation	T30	T35	NoRel	true	accusations	cause
+Relation	T31	T2	NoRel	true	made	manipulation
+Relation	T31	T35	NoRel	true	made	cause
+Relation	T33	T12	NoRel	true	earthquake	depopulate
+Relation	T33	T22	NoRel	true	earthquake	plague
+Relation	T33	T35	NoRel	true	earthquake	cause
+Relation	T34	T22	NoRel	true	WELL POISONING	plague
+Relation	T34	T4	NoRel	true	WELL POISONING	deny
+Relation	T35	T24	NoRel	true	cause	favored
+Relation	T35	T27	NoRel	true	cause	made
+Relation	T36	T28	NoRel	true	illness	desecration
+Relation	T36	T3	NoRel	true	illness	death
+Relation	T36	T6	NoRel	true	illness	documented
+Relation	T4	T33	NoRel	true	deny	earthquake
+Relation	T4	T36	NoRel	true	deny	illness
+Relation	T4	T5	NoRel	true	deny	Well poisoning
+Relation	T4	T7	NoRel	true	deny	strategy
+Relation	T5	T10	NoRel	true	Well poisoning	terror tactic
+Relation	T5	T2	NoRel	true	Well poisoning	manipulation
+Relation	T5	T20	NoRel	true	Well poisoning	died
+Relation	T5	T27	NoRel	true	Well poisoning	made
+Relation	T5	T3	NoRel	true	Well poisoning	death
+Relation	T6	T27	NoRel	true	documented	made
+Relation	T6	T5	NoRel	true	documented	Well poisoning
+Relation	T7	T10	NoRel	true	strategy	terror tactic
+Relation	T7	T16	NoRel	true	strategy	invading
+Relation	T7	T17	NoRel	true	strategy	Rotting
+Relation	T7	T26	NoRel	true	strategy	against
+Relation	T7	T6	NoRel	true	strategy	documented
+Relation	T8	T14	NoRel	true	wartime	well poisoning
+Relation	T8	T17	NoRel	true	wartime	Rotting
+Relation	T8	T25	NoRel	true	wartime	poisoning
+Relation	T8	T31	NoRel	true	wartime	made
+Relation	T8	T33	NoRel	true	wartime	earthquake
+Relation	T8	T36	NoRel	true	wartime	illness
+Relation	T9	T12	NoRel	true	used	depopulate
+Relation	T9	T3	NoRel	true	used	death
+Relation	T9	T7	NoRel	true	used	strategy

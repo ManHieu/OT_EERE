@@ -1,0 +1,17 @@
+Text	Aynı zamanda 1950'li yıllardan beri ve Soğuk Savaş süreci sonrası ilk kez bir NATO üyesi ülke tarafından doğrudan Rus uçağı düşürüldü .	Rusya , Suriye İç Savaşı'na müdahil olduğundan beri ilk ciddi kaybını bu olay neticesinde yaşadı .	Türk Silahlı Kuvvetleri Genelkurmay Başkanlığı'nın yaptığı açıklamaya göre Türk hava sahasını ihlal eden uçak , beş dakika içerisinde on defa uyarılmasına rağmen sınır ihlaline son vermeyince angajman kuralları gereği iki Türk F - 16 uçağı tarafından vuruldu .	Uçak , Suriye Türkmen Ordusu'nun kontrolündeki Bayırbucak bölgesine düştü .	Uçaktaki iki pilot paraşüt ile atlamasına rağmen , pilotlardan biri Suriye Türkmen Ordusu'na bağlı 10. Tümen tarafından ölü olarak ele geçirildi .
+Event	T0	düşürüldü	EVENT	124
+Event	T15	ölü	EVENT	692
+Event	T2	olay	EVENT	209
+Event	T4	açıklamaya	EVENT	294
+Event	T6	uyarılmasına	EVENT	377
+Event	T7	vuruldu	EVENT	486
+Event	T8	düştü	EVENT	564
+Event	T9	atlamasına	EVENT	603
+Relation	T2	T0	SuperSub	true	olay	düşürüldü
+Relation	T0	T2	SubSuper	true	düşürüldü	olay
+Relation	T2	T7	SuperSub	true	olay	vuruldu
+Relation	T7	T2	SubSuper	true	vuruldu	olay
+Relation	T2	T6	NoRel	true	olay	uyarılmasına
+Relation	T7	T15	NoRel	true	vuruldu	ölü
+Relation	T9	T6	NoRel	true	atlamasına	uyarılmasına
+Relation	T9	T8	NoRel	true	atlamasına	düştü

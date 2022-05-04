@@ -1,0 +1,25 @@
+Text	Men de her gnister var længere nede .	Gnisterne kom fra skinnerne , og lokomotivføreren vidste derfor , at der var noget galt .	Fra førerhuset så han nu , hvordan noget stort hang ud fra godstogets anden vogn på vej i modsatte retning .	Og et splitsekund efter hørte han braget " _ .	Ifølge Torben Koch var det lokomotivførerens fornemmelse , at trykket som opstod , da IC4-toget mødte godstoget fik traileren til at rive sig fri .
+Event	T0	kom	EVENT	48
+Event	T1	vidste	EVENT	88
+Event	T2	hørte	EVENT	261
+Event	T3	braget	EVENT	271
+Event	T4	trykket	EVENT	346
+Event	T5	opstod	EVENT	358
+Event	T6	mødte	EVENT	380
+Event	T7	fik	EVENT	396
+Event	T8	var	EVENT	19
+Event	T9	hang	EVENT	175
+Event	T10	rive	EVENT	417
+Relation	T0	T10	NoRel	true	kom	rive
+Relation	T0	T2	NoRel	true	kom	hørte
+Relation	T0	T4	NoRel	true	kom	trykket
+Relation	T0	T6	NoRel	true	kom	mødte
+Relation	T1	T2	NoRel	true	vidste	hørte
+Relation	T1	T4	NoRel	true	vidste	trykket
+Relation	T2	T10	NoRel	true	hørte	rive
+Relation	T3	T4	NoRel	true	braget	trykket
+Relation	T4	T0	NoRel	true	trykket	kom
+Relation	T5	T10	NoRel	true	opstod	rive
+Relation	T5	T9	NoRel	true	opstod	hang
+Relation	T8	T10	NoRel	true	var	rive
+Relation	T9	T10	NoRel	true	hang	rive

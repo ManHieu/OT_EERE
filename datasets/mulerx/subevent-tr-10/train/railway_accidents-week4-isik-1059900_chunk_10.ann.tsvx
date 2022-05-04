@@ -1,0 +1,18 @@
+Text	- 12 Nisan 2010.	Kuzey sınırında yer alan Merano'nun yakınlarında gerçekleşen kazada toprak kayması nedeniyle raylardan çıkan bir banliyo treninin kayaya çarpması sonucu 9 kişi öldü , yaklaşık 30 kişi de yaralandı .	- 21 Nisan 2010 .	Turistleri taşıyan lüks bir trenin Pretoria'da raylardan çıkması sonucu iki kişi hayatını kaybederken en az 25 kişi de yaralandı .	- 6 Mayıs 2010.
+Event	T0	kazada	EVENT	78
+Event	T1	kayması	EVENT	92
+Event	T2	öldü	EVENT	177
+Event	T3	yaralandı	EVENT	204
+Event	T4	taşıyan	EVENT	245
+Event	T5	kaybederken	EVENT	324
+Event	T6	yaralandı	EVENT	353
+Event	T7	çıkan	EVENT	120
+Event	T8	çarpması	EVENT	154
+Event	T9	çıkması	EVENT	291
+Relation	T0	T1	NoRel	true	kazada	kayması
+Relation	T3	T0	NoRel	true	yaralandı	kazada
+Relation	T3	T5	NoRel	true	yaralandı	kaybederken
+Relation	T5	T2	NoRel	true	kaybederken	öldü
+Relation	T5	T7	NoRel	true	kaybederken	çıkan
+Relation	T7	T1	NoRel	true	çıkan	kayması
+Relation	T9	T5	NoRel	true	çıkması	kaybederken

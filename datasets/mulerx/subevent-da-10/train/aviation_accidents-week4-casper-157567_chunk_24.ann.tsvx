@@ -1,0 +1,45 @@
+Text	En enkelt USA baseret institutionel baseret investor , uden nogen tænkelig forbindelse til al Qaeda købte 95 procent af alle UAL puts den 6. september , som del af en handelsstrategi der også inkluderede _ købet _ af 115.000 aktier i American den 10. september .	Ligeledes kan størstedelen af den tilsyneladende mistænksomme handel med American den 10. september spores tilbage til en specifik USA baseret option baseret newsletter , som blev faxet til dets abonnenter søndag den 9. september , og som anbefalede disse handler .	SEC og FBI med hjælp fra andre etater og aktieindustrien , har brugt enorme ressourcer på at undersøge dette tema , inklusiv at sikre samarbejde med mange udenlandske regeringer .	Disse undersøgelser har konkluderet at det tilsyneladende mistænksomme konsekvent har vist sig uskyldigt .	"
+Event	T0	købte	EVENT	100
+Event	T1	handelsstrategi	EVENT	167
+Event	T2	inkluderede	EVENT	192
+Event	T3	købet	EVENT	206
+Event	T4	handel	EVENT	325
+Event	T5	spores	EVENT	363
+Event	T6	faxet	EVENT	443
+Event	T7	anbefalede	EVENT	502
+Event	T8	handler	EVENT	519
+Event	T9	brugt	EVENT	592
+Event	T10	undersøge	EVENT	622
+Event	T11	samarbejde	EVENT	663
+Event	T12	undersøgelser	EVENT	715
+Event	T13	konkluderet	EVENT	733
+Event	T14	vist	EVENT	795
+Relation	T1	T0	SuperSub	true	handelsstrategi	købte
+Relation	T0	T1	SubSuper	true	købte	handelsstrategi
+Relation	T1	T3	SuperSub	true	handelsstrategi	købet
+Relation	T3	T1	SubSuper	true	købet	handelsstrategi
+Relation	T8	T7	SuperSub	true	handler	anbefalede
+Relation	T7	T8	SubSuper	true	anbefalede	handler
+Relation	T8	T5	SuperSub	true	handler	spores
+Relation	T5	T8	SubSuper	true	spores	handler
+Relation	T12	T13	SuperSub	true	undersøgelser	konkluderet
+Relation	T13	T12	SubSuper	true	konkluderet	undersøgelser
+Relation	T0	T3	NoRel	true	købte	købet
+Relation	T1	T13	NoRel	true	handelsstrategi	konkluderet
+Relation	T10	T11	NoRel	true	undersøge	samarbejde
+Relation	T11	T3	NoRel	true	samarbejde	købet
+Relation	T14	T0	NoRel	true	vist	købte
+Relation	T14	T10	NoRel	true	vist	undersøge
+Relation	T2	T13	NoRel	true	inkluderede	konkluderet
+Relation	T3	T5	NoRel	true	købet	spores
+Relation	T4	T10	NoRel	true	handel	undersøge
+Relation	T4	T13	NoRel	true	handel	konkluderet
+Relation	T4	T14	NoRel	true	handel	vist
+Relation	T5	T13	NoRel	true	spores	konkluderet
+Relation	T5	T14	NoRel	true	spores	vist
+Relation	T6	T1	NoRel	true	faxet	handelsstrategi
+Relation	T6	T5	NoRel	true	faxet	spores
+Relation	T7	T5	NoRel	true	anbefalede	spores
+Relation	T7	T6	NoRel	true	anbefalede	faxet
+Relation	T8	T0	NoRel	true	handler	købte
+Relation	T9	T5	NoRel	true	brugt	spores

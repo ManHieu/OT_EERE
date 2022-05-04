@@ -1,0 +1,23 @@
+Text	İki taraf da Fırat Nehri’nin karşılıklı yakalarında 6 hafta hareketsiz beklediler .	6. haftanın sonunda Pers - Bizans kuvvetleri nehri geçerek hücuma kalkmak üzere harekâta başladı .	Halid , düşmanının nehri geçmesi için bir süre bekledi .	Pers - Bizans birleşik kuvvetleri Fırat'ı geçtikleri anda Halid , Mazar Savaşı'nda uyguladığı taktiğin bir benzerini kullanarak , askerlerine nehri henüz arkalarına almış Pers - Bizans kuvvetlerine karşı harekete geçmeleri emrini verdi .	Müslümanlar eş zamanlı olarak ani bir hamle ile nehir üzerindeki köprüyü işgal etmeyi başararak Pers - Bizans kuvvetlerini kıskaca aldı .
+Event	T0	beklediler	EVENT	71
+Event	T2	başladı	EVENT	173
+Event	T4	bekledi	EVENT	230
+Event	T5	geçtikleri	EVENT	282
+Event	T6	kullanarak	EVENT	357
+Event	T7	verdi	EVENT	470
+Event	T8	hamle	EVENT	516
+Event	T10	aldı	EVENT	609
+Event	T11	geçerek	EVENT	135
+Event	T1	Mazar Savaşı'nda	EVENT	306
+Event	T3	başararak	EVENT	564
+Relation	T0	T1	NoRel	true	beklediler	Mazar Savaşı'nda
+Relation	T1	T11	NoRel	true	Mazar Savaşı'nda	geçerek
+Relation	T1	T8	NoRel	true	Mazar Savaşı'nda	hamle
+Relation	T11	T8	NoRel	true	geçerek	hamle
+Relation	T2	T11	NoRel	true	başladı	geçerek
+Relation	T2	T4	NoRel	true	başladı	bekledi
+Relation	T3	T2	NoRel	true	başararak	başladı
+Relation	T5	T10	NoRel	true	geçtikleri	aldı
+Relation	T6	T1	NoRel	true	kullanarak	Mazar Savaşı'nda
+Relation	T7	T4	NoRel	true	verdi	bekledi
+Relation	T7	T6	NoRel	true	verdi	kullanarak

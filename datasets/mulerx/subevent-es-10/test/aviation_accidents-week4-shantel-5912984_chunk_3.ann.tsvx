@@ -1,0 +1,49 @@
+Text	La NTSB anunció en una nota de prensa del 30 de abril que los representantes de la FAA y de la empresa Boeing también proporcionarían ayuda y asistencia técnica a la investigación .	El 2 de junio de 2013 , los investigadores confirmaron la hipótesis de la carga suelta : tres vehículos blindados y dos buscadores de minas ( 80 toneladas en total ) no habían sido sujetados correctamente .	Al menos un vehículo blindado se había soltado durante el despegue y rodó hacia atrás golpeando el mamparo posterior del avión , perforándolo y dañando la grabadora de voz de la cabina y la grabadora de datos del vuelo .	Esto también cortó los sistemas hidráulicos 1 y 2 , y dañó los componentes del estabilizador horizontal , sobre todo el perno del estabilizador , lo que hizo que el avión fuera incontrolable .	Por tanto , sin control del avión , con una rotación de cabeceo anormal y en pérdida , la caída era inevitable .
+Event	T0	anunció	EVENT	8
+Event	T1	nota	EVENT	23
+Event	T2	investigación	EVENT	166
+Event	T3	confirmaron	EVENT	225
+Event	T4	hipótesis	EVENT	240
+Event	T5	sujetados	EVENT	363
+Event	T6	soltado	EVENT	428
+Event	T7	despegue	EVENT	447
+Event	T8	rodó	EVENT	458
+Event	T9	golpeando	EVENT	475
+Event	T10	perforándolo	EVENT	518
+Event	T11	dañando	EVENT	533
+Event	T12	vuelo	EVENT	602
+Event	T13	cortó	EVENT	623
+Event	T14	dañó	EVENT	664
+Event	T15	hizo	EVENT	763
+Event	T16	rotación	EVENT	847
+Event	T17	pérdida	EVENT	880
+Event	T18	caída	EVENT	893
+Relation	T12	T7	SuperSub	true	vuelo	despegue
+Relation	T7	T12	SubSuper	true	despegue	vuelo
+Relation	T12	T18	SuperSub	true	vuelo	caída
+Relation	T18	T12	SubSuper	true	caída	vuelo
+Relation	T0	T13	NoRel	true	anunció	cortó
+Relation	T1	T12	NoRel	true	nota	vuelo
+Relation	T10	T3	NoRel	true	perforándolo	confirmaron
+Relation	T11	T13	NoRel	true	dañando	cortó
+Relation	T12	T2	NoRel	true	vuelo	investigación
+Relation	T13	T18	NoRel	true	cortó	caída
+Relation	T13	T5	NoRel	true	cortó	sujetados
+Relation	T14	T13	NoRel	true	dañó	cortó
+Relation	T15	T13	NoRel	true	hizo	cortó
+Relation	T15	T4	NoRel	true	hizo	hipótesis
+Relation	T15	T9	NoRel	true	hizo	golpeando
+Relation	T16	T1	NoRel	true	rotación	nota
+Relation	T16	T7	NoRel	true	rotación	despegue
+Relation	T2	T1	NoRel	true	investigación	nota
+Relation	T2	T13	NoRel	true	investigación	cortó
+Relation	T2	T7	NoRel	true	investigación	despegue
+Relation	T3	T8	NoRel	true	confirmaron	rodó
+Relation	T4	T0	NoRel	true	hipótesis	anunció
+Relation	T5	T6	NoRel	true	sujetados	soltado
+Relation	T5	T7	NoRel	true	sujetados	despegue
+Relation	T6	T13	NoRel	true	soltado	cortó
+Relation	T8	T10	NoRel	true	rodó	perforándolo
+Relation	T8	T12	NoRel	true	rodó	vuelo
+Relation	T8	T13	NoRel	true	rodó	cortó
+Relation	T9	T6	NoRel	true	golpeando	soltado

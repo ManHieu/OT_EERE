@@ -1,0 +1,24 @@
+Text	Yanardağ daha önce Ocak 2011'de patlamıştı , martta meydana gelen patlamanın depremle ilişkili olup olmadığı bilinmiyor .	Antarktika'da sismik dalgaların Whillans Buz Akıntısı'nın 0,5 metre kadar kaymasına yol açtığı da bildirildi .	NASA'da çalışan bir araştırma ekibinin başkanı olan Dr. Richard Gross , ekibi için 1,8 mikrosaniyelik bir kaymanın bile önemli olduğunu , bunun Mars'a giden bir uzay aracının yönlendirilme biçimini etkilediğini belirtti .	Gross , değişiklikleri hesaba katmamanın görevin başarısızlıkla sonuçlanması anlamına gelebileceğini söyledi .	Deprem , Japonya'nın tüm Pasifik kıyısı boyunca çok büyük bir zarara yol açmış olan büyük bir tsunamiyi tetikledi .
+Event	T0	patlamıştı	EVENT	32
+Event	T1	patlamanın	EVENT	66
+Event	T2	açtığı	EVENT	210
+Event	T3	bildirildi	EVENT	220
+Event	T4	belirtti	EVENT	444
+Event	T5	değişiklikleri	EVENT	463
+Event	T6	söyledi	EVENT	556
+Event	T7	Deprem	EVENT	566
+Event	T8	açmış	EVENT	639
+Event	T9	tetikledi	EVENT	670
+Event	T10	dalgaların	EVENT	143
+Relation	T0	T4	NoRel	true	patlamıştı	belirtti
+Relation	T1	T6	NoRel	true	patlamanın	söyledi
+Relation	T10	T9	NoRel	true	dalgaların	tetikledi
+Relation	T2	T7	NoRel	true	açtığı	Deprem
+Relation	T3	T10	NoRel	true	bildirildi	dalgaların
+Relation	T5	T0	NoRel	true	değişiklikleri	patlamıştı
+Relation	T5	T7	NoRel	true	değişiklikleri	Deprem
+Relation	T6	T8	NoRel	true	söyledi	açmış
+Relation	T7	T1	NoRel	true	Deprem	patlamanın
+Relation	T7	T4	NoRel	true	Deprem	belirtti
+Relation	T8	T0	NoRel	true	açmış	patlamıştı
+Relation	T8	T7	NoRel	true	açmış	Deprem

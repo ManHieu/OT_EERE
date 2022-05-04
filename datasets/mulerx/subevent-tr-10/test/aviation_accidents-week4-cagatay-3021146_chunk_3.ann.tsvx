@@ -1,0 +1,25 @@
+Text	Yardımcı pilot ve biri çocuk 13 yolcu , toplam 14 kişi kurtuldu .	Yardımcı pilot ve bir yolcu ağır yaralıydı .	Kazanın ana nedeni yaklaşma kontrolörünün uçağın havalimanından uzaklığını yanlış bildirmesi ve bundan dolayı uçağın erken alçalmaya başlaması ve yaklaşma şemasının ihlal edilmesidir .	Uçağın bulutların içinde uçması ve dağı görememesi ve mürettebatın konumlarını teyit etmemeleri kazanın gerçekleşmesinde bir faktördür .	Kategori : 1970'te Özbekistan Kategori : Özbekistan SSC'deki havacılık kazaları ve olayları Kategori : 1970'te havacılık kazaları ve olayları Kategori : İlyuşin İl - 18 içeren kazalar ve olaylar Kategori : Aeroflot kazaları ve olayları Kategori : Hava trafik kontrolörü hatası nedeniyle gerçekleşen havacılık kazaları ve olayları Kategori : Kontrollü uçuşta yere çarpma
+Event	T0	kurtuldu	EVENT	55
+Event	T1	yaralıydı	EVENT	99
+Event	T2	Kazanın	EVENT	111
+Event	T3	bildirmesi	EVENT	193
+Event	T4	başlaması	EVENT	244
+Event	T6	uçması	EVENT	321
+Event	T7	görememesi	EVENT	336
+Event	T11	hatası	EVENT	703
+Event	T13	kazaları	EVENT	742
+Event	T14	olayları	EVENT	754
+Event	T16	ihlal	EVENT	276
+Event	T5	kazanın	EVENT	392
+Relation	T0	T5	NoRel	true	kurtuldu	kazanın
+Relation	T13	T6	NoRel	true	kazaları	uçması
+Relation	T2	T0	NoRel	true	Kazanın	kurtuldu
+Relation	T2	T1	NoRel	true	Kazanın	yaralıydı
+Relation	T2	T11	NoRel	true	Kazanın	hatası
+Relation	T2	T7	NoRel	true	Kazanın	görememesi
+Relation	T4	T1	NoRel	true	başlaması	yaralıydı
+Relation	T4	T7	NoRel	true	başlaması	görememesi
+Relation	T5	T16	NoRel	true	kazanın	ihlal
+Relation	T5	T3	NoRel	true	kazanın	bildirmesi
+Relation	T6	T1	NoRel	true	uçması	yaralıydı
+Relation	T6	T14	NoRel	true	uçması	olayları

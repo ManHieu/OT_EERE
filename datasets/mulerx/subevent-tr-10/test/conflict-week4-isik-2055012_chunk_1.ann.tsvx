@@ -1,0 +1,82 @@
+Text	Bu yöntem II. Felluce Muharebesi'nde ve Bağdat'ın işgalinde Amerika Birleşik Devletleri yönetimince sıkça başvurulmuştur .	Colombia Üniversitesi desteğiyle yapılan bir araştırmada embedded gazetecilerin yaptığı haberlerin derinlikten yoksun olduğu , açılan ateşle vurulan insanların gösterilmediği belirtilmiştir .	Değişik zamanlarda toplam 775 gazeteci ve fotoğrafçı , bulundukları birliğin yerini , silahların konumunu ifşa etmeyeceklerine dair bir sözleşme imzalayarak ve kısa bir eğitim alarak , ABD ordusuna ‘ iliştirilmiş ’ olarak savaş bölgesine götürülmüş , sadece zırhlı araçlar içinden gördükleri savaşı Amerika Birleşik Devletleri kamuoyuna yansıtmışlardır .	Neden böyle bir uygulamaya gittikleri sorulan Deniz piyade yarbayı Rick Long , " Açık söyleyeyim , savaşı kazanmak istiyoruz .	Ve enformasyon da bu savaşın önemli bir parçası .
+Event	T0	işgalinde	EVENT	50
+Event	T1	başvurulmuştur	EVENT	106
+Event	T2	yaptığı	EVENT	203
+Event	T3	açılan	EVENT	250
+Event	T4	vurulan	EVENT	264
+Event	T5	belirtilmiştir	EVENT	298
+Event	T7	eğitim	EVENT	484
+Event	T8	götürülmüş	EVENT	553
+Event	T9	savaşı	EVENT	607
+Event	T11	yöntem	EVENT	3
+Event	T12	II. Felluce Muharebesi'nde	EVENT	10
+Event	T13	araştırmada	EVENT	168
+Event	T6	sözleşme	EVENT	451
+Event	T14	savaş	EVENT	537
+Event	T15	gördükleri	EVENT	596
+Event	T16	yansıtmışlardır	EVENT	652
+Event	T17	uygulamaya	EVENT	686
+Event	T18	sorulan	EVENT	708
+Event	T19	savaşı	EVENT	769
+Event	T20	savaşın	EVENT	818
+Event	T10	istiyoruz	EVENT	785
+Relation	T12	T11	SuperSub	true	II. Felluce Muharebesi'nde	yöntem
+Relation	T11	T12	SubSuper	true	yöntem	II. Felluce Muharebesi'nde
+Relation	T0	T11	SuperSub	true	işgalinde	yöntem
+Relation	T11	T0	SubSuper	true	yöntem	işgalinde
+Relation	T12	T17	SuperSub	true	II. Felluce Muharebesi'nde	uygulamaya
+Relation	T17	T12	SubSuper	true	uygulamaya	II. Felluce Muharebesi'nde
+Relation	T0	T17	SuperSub	true	işgalinde	uygulamaya
+Relation	T17	T0	SubSuper	true	uygulamaya	işgalinde
+Relation	T0	T14	NoRel	true	işgalinde	savaş
+Relation	T0	T8	NoRel	true	işgalinde	götürülmüş
+Relation	T10	T1	NoRel	true	istiyoruz	başvurulmuştur
+Relation	T10	T9	NoRel	true	istiyoruz	savaşı
+Relation	T11	T10	NoRel	true	yöntem	istiyoruz
+Relation	T11	T15	NoRel	true	yöntem	gördükleri
+Relation	T11	T18	NoRel	true	yöntem	sorulan
+Relation	T11	T20	NoRel	true	yöntem	savaşın
+Relation	T11	T5	NoRel	true	yöntem	belirtilmiştir
+Relation	T12	T15	NoRel	true	II. Felluce Muharebesi'nde	gördükleri
+Relation	T13	T14	NoRel	true	araştırmada	savaş
+Relation	T13	T15	NoRel	true	araştırmada	gördükleri
+Relation	T14	T12	NoRel	true	savaş	II. Felluce Muharebesi'nde
+Relation	T14	T19	NoRel	true	savaş	savaşı
+Relation	T15	T1	NoRel	true	gördükleri	başvurulmuştur
+Relation	T15	T11	NoRel	true	gördükleri	yöntem
+Relation	T15	T5	NoRel	true	gördükleri	belirtilmiştir
+Relation	T16	T1	NoRel	true	yansıtmışlardır	başvurulmuştur
+Relation	T16	T11	NoRel	true	yansıtmışlardır	yöntem
+Relation	T16	T12	NoRel	true	yansıtmışlardır	II. Felluce Muharebesi'nde
+Relation	T16	T19	NoRel	true	yansıtmışlardır	savaşı
+Relation	T16	T8	NoRel	true	yansıtmışlardır	götürülmüş
+Relation	T17	T3	NoRel	true	uygulamaya	açılan
+Relation	T17	T6	NoRel	true	uygulamaya	sözleşme
+Relation	T18	T19	NoRel	true	sorulan	savaşı
+Relation	T18	T2	NoRel	true	sorulan	yaptığı
+Relation	T18	T20	NoRel	true	sorulan	savaşın
+Relation	T18	T3	NoRel	true	sorulan	açılan
+Relation	T19	T16	NoRel	true	savaşı	yansıtmışlardır
+Relation	T19	T20	NoRel	true	savaşı	savaşın
+Relation	T2	T12	NoRel	true	yaptığı	II. Felluce Muharebesi'nde
+Relation	T2	T6	NoRel	true	yaptığı	sözleşme
+Relation	T20	T10	NoRel	true	savaşın	istiyoruz
+Relation	T20	T16	NoRel	true	savaşın	yansıtmışlardır
+Relation	T20	T17	NoRel	true	savaşın	uygulamaya
+Relation	T20	T7	NoRel	true	savaşın	eğitim
+Relation	T3	T14	NoRel	true	açılan	savaş
+Relation	T3	T2	NoRel	true	açılan	yaptığı
+Relation	T3	T4	NoRel	true	açılan	vurulan
+Relation	T4	T2	NoRel	true	vurulan	yaptığı
+Relation	T4	T20	NoRel	true	vurulan	savaşın
+Relation	T4	T3	NoRel	true	vurulan	açılan
+Relation	T4	T9	NoRel	true	vurulan	savaşı
+Relation	T5	T6	NoRel	true	belirtilmiştir	sözleşme
+Relation	T6	T10	NoRel	true	sözleşme	istiyoruz
+Relation	T6	T16	NoRel	true	sözleşme	yansıtmışlardır
+Relation	T7	T15	NoRel	true	eğitim	gördükleri
+Relation	T8	T12	NoRel	true	götürülmüş	II. Felluce Muharebesi'nde
+Relation	T8	T4	NoRel	true	götürülmüş	vurulan
+Relation	T8	T7	NoRel	true	götürülmüş	eğitim
+Relation	T9	T11	NoRel	true	savaşı	yöntem
+Relation	T9	T18	NoRel	true	savaşı	sorulan

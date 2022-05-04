@@ -1,0 +1,37 @@
+Text	La Cruz Roja y la Policía del Puerto de Nueva York también apoyaron los esfuerzos .	A de las 3:00 p._m. , Michael Bloomberg , alcalde de Nueva York , respondió a las interrogantes en una conferencia de prensa .	Al llamar a la colisión , « un accidente en el que no creemos que haya sobrevivientes » , Bloomberg anunció que la misión ya no era de rescate , sino más bien de recuperación .	La noche del 8 de agosto de 2009 , la Guardia Costera de los Estados Unidos mantenía una zona de seguridad de tres kilómetros desde el túnel Holland hasta el túnel Lincoln , solicitando a las embarcaciones moverse lentamente y mantenerse a menos de 400 yardas del lado de Manhattan al pasar por la zona .	La zona de seguridad fue mantenida por el bote guardacostas _ Penobscot Bay _ .
+Event	T0	esfuerzos	EVENT	72
+Event	T1	respondió	EVENT	150
+Event	T2	interrogantes	EVENT	166
+Event	T3	conferencia	EVENT	187
+Event	T4	llamar	EVENT	214
+Event	T5	colisión	EVENT	226
+Event	T6	accidente	EVENT	242
+Event	T7	anunció	EVENT	311
+Event	T8	rescate	EVENT	346
+Event	T9	recuperación	EVENT	373
+Event	T10	mantenía	EVENT	464
+Event	T11	solicitando	EVENT	562
+Event	T12	pasar	EVENT	673
+Event	T13	mantenida	EVENT	718
+Relation	T0	T3	NoRel	true	esfuerzos	conferencia
+Relation	T1	T3	NoRel	true	respondió	conferencia
+Relation	T1	T7	NoRel	true	respondió	anunció
+Relation	T10	T12	NoRel	true	mantenía	pasar
+Relation	T10	T2	NoRel	true	mantenía	interrogantes
+Relation	T10	T6	NoRel	true	mantenía	accidente
+Relation	T11	T7	NoRel	true	solicitando	anunció
+Relation	T12	T13	NoRel	true	pasar	mantenida
+Relation	T12	T6	NoRel	true	pasar	accidente
+Relation	T12	T8	NoRel	true	pasar	rescate
+Relation	T2	T11	NoRel	true	interrogantes	solicitando
+Relation	T2	T5	NoRel	true	interrogantes	colisión
+Relation	T3	T1	NoRel	true	conferencia	respondió
+Relation	T3	T7	NoRel	true	conferencia	anunció
+Relation	T4	T9	NoRel	true	llamar	recuperación
+Relation	T5	T10	NoRel	true	colisión	mantenía
+Relation	T5	T8	NoRel	true	colisión	rescate
+Relation	T6	T10	NoRel	true	accidente	mantenía
+Relation	T6	T5	NoRel	true	accidente	colisión
+Relation	T7	T5	NoRel	true	anunció	colisión
+Relation	T8	T3	NoRel	true	rescate	conferencia
+Relation	T8	T7	NoRel	true	rescate	anunció

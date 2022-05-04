@@ -1,0 +1,20 @@
+Text	Üstün Osmanlı kuvvetleri karşısında gösterilen kararlılık sonrasında kazanılan bu zafer Sırp asilerine büyük moral kazandırdı .	Büyük bir yenilgiden çekinen İbrahim Paşa Sırplar ile mütareke görüşmelerine başladı .	Kategori : Sırbistan'ın muharebeleri Kategori : Osmanlı İmparatorluğu'nun muharebeleri Kategori : Birinci Sırp Ayaklanması Kategori : 1806'da Avrupa Kategori : 1806'da Osmanlı İmparatorluğu Kategori : 1806'da çatışmalar Kategori : VikiProje Tarih kaynak bekleyen maddeler		
+Event	T1	zafer	EVENT	82
+Event	T2	kazandırdı	EVENT	115
+Event	T3	çekinen	EVENT	149
+Event	T4	başladı	EVENT	205
+Event	T5	kararlılık	EVENT	47
+Event	T6	muharebeleri	EVENT	239
+Event	T7	muharebeleri	EVENT	289
+Event	T8	Ayaklanması	EVENT	326
+Event	T9	çatışmalar	EVENT	424
+Relation	T5	T1	SuperSub	true	kararlılık	zafer
+Relation	T1	T5	SubSuper	true	zafer	kararlılık
+Relation	T2	T3	NoRel	true	kazandırdı	çekinen
+Relation	T3	T1	NoRel	true	çekinen	zafer
+Relation	T3	T4	NoRel	true	çekinen	başladı
+Relation	T4	T2	NoRel	true	başladı	kazandırdı
+Relation	T4	T8	NoRel	true	başladı	Ayaklanması
+Relation	T6	T1	NoRel	true	muharebeleri	zafer
+Relation	T7	T1	NoRel	true	muharebeleri	zafer
+Relation	T7	T3	NoRel	true	muharebeleri	çekinen

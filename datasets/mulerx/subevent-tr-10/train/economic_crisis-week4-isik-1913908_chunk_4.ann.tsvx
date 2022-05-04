@@ -1,0 +1,26 @@
+Text	Bildirge karşıtı , bazı sanatçıların içinde olduğu hükûmet destekli bir karşı kampanya başlatıldı .	Bildirge karşıtları arasında Çekoslovakya'nın önde gelen şarkıcılarından Karel Gott , ünlü komedi yazarı Jan Werich de bulunuyordu .	Jan Werich daha sonralarında , bildirge karşıtı açıklamayı imzalarken , attığı imzanın 77 Bildirgesi'ne karşı olduğunu bilmediğini iddia etmişti .	Grup üyeleri , gözaltılar , yargılamalar ve hapis cezalarının yanı sıra ; işten çıkartma , çocuklarının eğitim olanaklarının ellerinden alınması , ehliyetlerinin iptal edilmesi , sürgün gibi baskılara maruz kaldılar .	Hatta Çekoslovak gizli polisi Státní bezpečnost ile iş birliğine zorlandılar .
+Event	T0	başlatıldı	EVENT	87
+Event	T2	alınması	EVENT	516
+Event	T3	edilmesi	EVENT	548
+Event	T4	sürgün	EVENT	559
+Event	T5	zorlandılar	EVENT	663
+Event	T6	etmişti	EVENT	370
+Event	T7	Bildirgesi'ne	EVENT	323
+Event	T1	imzalarken	EVENT	292
+Event	T8	kaldılar	EVENT	587
+Event	T9	gözaltılar	EVENT	395
+Event	T10	yargılamalar	EVENT	408
+Event	T11	cezalarının	EVENT	430
+Event	T12	çıkartma	EVENT	460
+Relation	T0	T9	NoRel	true	başlatıldı	gözaltılar
+Relation	T11	T10	NoRel	true	cezalarının	yargılamalar
+Relation	T12	T4	NoRel	true	çıkartma	sürgün
+Relation	T2	T4	NoRel	true	alınması	sürgün
+Relation	T3	T2	NoRel	true	edilmesi	alınması
+Relation	T4	T0	NoRel	true	sürgün	başlatıldı
+Relation	T4	T3	NoRel	true	sürgün	edilmesi
+Relation	T5	T0	NoRel	true	zorlandılar	başlatıldı
+Relation	T5	T1	NoRel	true	zorlandılar	imzalarken
+Relation	T7	T3	NoRel	true	Bildirgesi'ne	edilmesi
+Relation	T8	T12	NoRel	true	kaldılar	çıkartma
+Relation	T9	T4	NoRel	true	gözaltılar	sürgün

@@ -1,0 +1,38 @@
+Text	Un avión de la compañía aérea Blue Wings cayó el sábado 15 de mayo de 2010 , en Surinam , cerca de la frontera con la Guayana Francesa , dejando sus ocho ocupantes desaparecidos , según las autoridades .	" No puedo confirmar si están vivos o muertos , porque yo todavía no he podido llegar a la zona del accidente " dijo el director de las Autoridades de Aviación Surinam , Mohammed Sherief Saboerali .	El avión , fabricado en Rusia , que había despegado del Aeropuerto Godo Olo , cayó en una zona boscosa a 5 kilómetros de Poeketi y cerca de la frontera con la Guayana Francesa , en un vuelo que se dirigía al Aeropuerto Zorg en Hoop en Paramaribo .	Debido al mal tiempo , las autoridades no pudieron enviar ninguna misión de rescate hasta la mañana del domingo .	Surinam Accidente aéreo en Surinam mayo 2010 Accidente aéreo en Surinam mayo 2010 Categoría : Accidentes e incidentes aéreos en Surinam Categoría : Accidentes e incidentes de Antonov An-28 Categoría : Distrito de Sipaliwini
+Event	T0	cayó	EVENT	41
+Event	T2	desaparecidos	EVENT	164
+Event	T3	accidente	EVENT	304
+Event	T4	dijo	EVENT	316
+Event	T5	fabricado	EVENT	414
+Event	T6	despegado	EVENT	445
+Event	T7	cayó	EVENT	481
+Event	T8	vuelo	EVENT	587
+Event	T9	dirigía	EVENT	600
+Event	T12	Accidente	EVENT	773
+Event	T13	Accidente	EVENT	810
+Event	T14	incidentes	EVENT	872
+Event	T15	Accidentes	EVENT	913
+Event	T16	incidentes	EVENT	926
+Relation	T6	T7	SuperSub	true	despegado	cayó
+Relation	T7	T6	SubSuper	true	cayó	despegado
+Relation	T0	T3	NoRel	true	cayó	accidente
+Relation	T12	T4	NoRel	true	Accidente	dijo
+Relation	T13	T16	NoRel	true	Accidente	incidentes
+Relation	T15	T13	NoRel	true	Accidentes	Accidente
+Relation	T15	T16	NoRel	true	Accidentes	incidentes
+Relation	T15	T4	NoRel	true	Accidentes	dijo
+Relation	T15	T8	NoRel	true	Accidentes	vuelo
+Relation	T16	T7	NoRel	true	incidentes	cayó
+Relation	T3	T13	NoRel	true	accidente	Accidente
+Relation	T4	T12	NoRel	true	dijo	Accidente
+Relation	T4	T8	NoRel	true	dijo	vuelo
+Relation	T5	T15	NoRel	true	fabricado	Accidentes
+Relation	T6	T13	NoRel	true	despegado	Accidente
+Relation	T6	T16	NoRel	true	despegado	incidentes
+Relation	T6	T5	NoRel	true	despegado	fabricado
+Relation	T6	T8	NoRel	true	despegado	vuelo
+Relation	T7	T13	NoRel	true	cayó	Accidente
+Relation	T7	T4	NoRel	true	cayó	dijo
+Relation	T8	T12	NoRel	true	vuelo	Accidente
+Relation	T8	T15	NoRel	true	vuelo	Accidentes
+Relation	T8	T9	NoRel	true	vuelo	dirigía

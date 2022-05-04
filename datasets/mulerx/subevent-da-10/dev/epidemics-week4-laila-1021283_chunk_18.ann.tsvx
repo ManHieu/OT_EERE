@@ -1,0 +1,153 @@
+Text	WHO har anbefalet omfattende tests af formodet smittede for at skabe størst mulig evidens for sygdommens forløb og udbredelse .	Anbefalingen lyder : " Den bedste metode til at forebygge og neddrosle overførslen af sygdommen er sikre informationer om COVID-19 virus , om sygdommen , dens årsager og hvordan den breder sig .	Endvidere har WHO anbefalet , at landene så vidt muligt isolerer de syge for at undgå smittespredning .	" Hurtigere diagnose , isolation og karantæne " samt udbygning af kapaciteten på hospitalerne anser WHO's ekspert i virus Bruce Aylward for den bedste strategi .	Flere lande tøvede med at foretage omfattende tests , men i løbet af marts valgte de fleste , herunder Danmark , at intensivere disse , hvilket betød , at der opstod mangel på de for testen nødvendige remedier .
+Event	T0	anbefalet	EVENT	8
+Event	T1	tests	EVENT	29
+Event	T2	smittede	EVENT	47
+Event	T3	forløb	EVENT	105
+Event	T4	lyder	EVENT	141
+Event	T5	overførslen	EVENT	199
+Event	T6	breder	EVENT	310
+Event	T7	anbefalet	EVENT	341
+Event	T8	isolerer	EVENT	379
+Event	T9	smittespredning	EVENT	409
+Event	T10	diagnose	EVENT	439
+Event	T11	isolation	EVENT	450
+Event	T12	udbygning	EVENT	480
+Event	T13	anser	EVENT	521
+Event	T14	tøvede	EVENT	601
+Event	T15	foretage	EVENT	615
+Event	T16	tests	EVENT	635
+Event	T17	valgte	EVENT	664
+Event	T18	betød	EVENT	733
+Event	T19	sygdommens	EVENT	94
+Event	T20	udbredelse	EVENT	115
+Event	T21	Anbefalingen	EVENT	128
+Event	T22	metode	EVENT	162
+Event	T23	forebygge	EVENT	176
+Event	T24	neddrosle	EVENT	189
+Event	T25	sygdommen	EVENT	214
+Event	T26	sikre informationer	EVENT	227
+Event	T27	COVID-19 virus	EVENT	250
+Event	T28	sygdommen	EVENT	270
+Event	T29	årsager	EVENT	287
+Event	T30	undgå	EVENT	403
+Event	T31	karantæne	EVENT	463
+Event	T32	strategi	EVENT	578
+Event	T33	intensivere	EVENT	705
+Event	T34	mangel	EVENT	755
+Relation	T32	T10	SuperSub	true	strategi	diagnose
+Relation	T10	T32	SubSuper	true	diagnose	strategi
+Relation	T32	T11	SuperSub	true	strategi	isolation
+Relation	T11	T32	SubSuper	true	isolation	strategi
+Relation	T32	T31	SuperSub	true	strategi	karantæne
+Relation	T31	T32	SubSuper	true	karantæne	strategi
+Relation	T32	T12	SuperSub	true	strategi	udbygning
+Relation	T12	T32	SubSuper	true	udbygning	strategi
+Relation	T22	T26	SuperSub	true	metode	sikre informationer
+Relation	T26	T22	SubSuper	true	sikre informationer	metode
+Relation	T0	T20	NoRel	true	anbefalet	udbredelse
+Relation	T0	T28	NoRel	true	anbefalet	sygdommen
+Relation	T1	T17	NoRel	true	tests	valgte
+Relation	T1	T21	NoRel	true	tests	Anbefalingen
+Relation	T1	T8	NoRel	true	tests	isolerer
+Relation	T10	T25	NoRel	true	diagnose	sygdommen
+Relation	T11	T13	NoRel	true	isolation	anser
+Relation	T12	T2	NoRel	true	udbygning	smittede
+Relation	T12	T23	NoRel	true	udbygning	forebygge
+Relation	T12	T26	NoRel	true	udbygning	sikre informationer
+Relation	T12	T29	NoRel	true	udbygning	årsager
+Relation	T12	T30	NoRel	true	udbygning	undgå
+Relation	T12	T9	NoRel	true	udbygning	smittespredning
+Relation	T13	T11	NoRel	true	anser	isolation
+Relation	T13	T19	NoRel	true	anser	sygdommens
+Relation	T13	T25	NoRel	true	anser	sygdommen
+Relation	T13	T3	NoRel	true	anser	forløb
+Relation	T14	T10	NoRel	true	tøvede	diagnose
+Relation	T15	T11	NoRel	true	foretage	isolation
+Relation	T15	T18	NoRel	true	foretage	betød
+Relation	T15	T25	NoRel	true	foretage	sygdommen
+Relation	T15	T31	NoRel	true	foretage	karantæne
+Relation	T16	T19	NoRel	true	tests	sygdommens
+Relation	T16	T29	NoRel	true	tests	årsager
+Relation	T16	T3	NoRel	true	tests	forløb
+Relation	T17	T12	NoRel	true	valgte	udbygning
+Relation	T17	T28	NoRel	true	valgte	sygdommen
+Relation	T17	T29	NoRel	true	valgte	årsager
+Relation	T17	T8	NoRel	true	valgte	isolerer
+Relation	T18	T11	NoRel	true	betød	isolation
+Relation	T18	T13	NoRel	true	betød	anser
+Relation	T18	T15	NoRel	true	betød	foretage
+Relation	T18	T5	NoRel	true	betød	overførslen
+Relation	T19	T26	NoRel	true	sygdommens	sikre informationer
+Relation	T19	T6	NoRel	true	sygdommens	breder
+Relation	T2	T16	NoRel	true	smittede	tests
+Relation	T2	T26	NoRel	true	smittede	sikre informationer
+Relation	T2	T28	NoRel	true	smittede	sygdommen
+Relation	T2	T4	NoRel	true	smittede	lyder
+Relation	T20	T0	NoRel	true	udbredelse	anbefalet
+Relation	T20	T12	NoRel	true	udbredelse	udbygning
+Relation	T20	T14	NoRel	true	udbredelse	tøvede
+Relation	T20	T21	NoRel	true	udbredelse	Anbefalingen
+Relation	T20	T32	NoRel	true	udbredelse	strategi
+Relation	T20	T7	NoRel	true	udbredelse	anbefalet
+Relation	T21	T23	NoRel	true	Anbefalingen	forebygge
+Relation	T21	T31	NoRel	true	Anbefalingen	karantæne
+Relation	T21	T5	NoRel	true	Anbefalingen	overførslen
+Relation	T21	T7	NoRel	true	Anbefalingen	anbefalet
+Relation	T21	T8	NoRel	true	Anbefalingen	isolerer
+Relation	T22	T1	NoRel	true	metode	tests
+Relation	T22	T27	NoRel	true	metode	COVID-19 virus
+Relation	T22	T9	NoRel	true	metode	smittespredning
+Relation	T23	T30	NoRel	true	forebygge	undgå
+Relation	T24	T19	NoRel	true	neddrosle	sygdommens
+Relation	T24	T33	NoRel	true	neddrosle	intensivere
+Relation	T25	T4	NoRel	true	sygdommen	lyder
+Relation	T26	T18	NoRel	true	sikre informationer	betød
+Relation	T26	T20	NoRel	true	sikre informationer	udbredelse
+Relation	T26	T31	NoRel	true	sikre informationer	karantæne
+Relation	T26	T6	NoRel	true	sikre informationer	breder
+Relation	T27	T17	NoRel	true	COVID-19 virus	valgte
+Relation	T27	T18	NoRel	true	COVID-19 virus	betød
+Relation	T27	T24	NoRel	true	COVID-19 virus	neddrosle
+Relation	T29	T15	NoRel	true	årsager	foretage
+Relation	T29	T24	NoRel	true	årsager	neddrosle
+Relation	T29	T3	NoRel	true	årsager	forløb
+Relation	T29	T32	NoRel	true	årsager	strategi
+Relation	T3	T16	NoRel	true	forløb	tests
+Relation	T3	T19	NoRel	true	forløb	sygdommens
+Relation	T3	T33	NoRel	true	forløb	intensivere
+Relation	T3	T7	NoRel	true	forløb	anbefalet
+Relation	T30	T21	NoRel	true	undgå	Anbefalingen
+Relation	T30	T28	NoRel	true	undgå	sygdommen
+Relation	T30	T29	NoRel	true	undgå	årsager
+Relation	T30	T6	NoRel	true	undgå	breder
+Relation	T31	T14	NoRel	true	karantæne	tøvede
+Relation	T32	T1	NoRel	true	strategi	tests
+Relation	T32	T24	NoRel	true	strategi	neddrosle
+Relation	T32	T3	NoRel	true	strategi	forløb
+Relation	T33	T10	NoRel	true	intensivere	diagnose
+Relation	T33	T18	NoRel	true	intensivere	betød
+Relation	T33	T20	NoRel	true	intensivere	udbredelse
+Relation	T33	T26	NoRel	true	intensivere	sikre informationer
+Relation	T33	T31	NoRel	true	intensivere	karantæne
+Relation	T34	T12	NoRel	true	mangel	udbygning
+Relation	T34	T18	NoRel	true	mangel	betød
+Relation	T34	T20	NoRel	true	mangel	udbredelse
+Relation	T34	T25	NoRel	true	mangel	sygdommen
+Relation	T34	T4	NoRel	true	mangel	lyder
+Relation	T4	T1	NoRel	true	lyder	tests
+Relation	T4	T13	NoRel	true	lyder	anser
+Relation	T4	T28	NoRel	true	lyder	sygdommen
+Relation	T4	T8	NoRel	true	lyder	isolerer
+Relation	T5	T1	NoRel	true	overførslen	tests
+Relation	T5	T17	NoRel	true	overførslen	valgte
+Relation	T5	T2	NoRel	true	overførslen	smittede
+Relation	T5	T28	NoRel	true	overførslen	sygdommen
+Relation	T5	T34	NoRel	true	overførslen	mangel
+Relation	T6	T17	NoRel	true	breder	valgte
+Relation	T7	T11	NoRel	true	anbefalet	isolation
+Relation	T7	T4	NoRel	true	anbefalet	lyder
+Relation	T8	T20	NoRel	true	isolerer	udbredelse
+Relation	T8	T29	NoRel	true	isolerer	årsager
+Relation	T8	T32	NoRel	true	isolerer	strategi
+Relation	T8	T34	NoRel	true	isolerer	mangel
+Relation	T9	T10	NoRel	true	smittespredning	diagnose

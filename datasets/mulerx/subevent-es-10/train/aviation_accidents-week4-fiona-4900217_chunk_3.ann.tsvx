@@ -1,0 +1,93 @@
+Text	La ruta planificada requería un descenso pronunciado hacia Madang y , aunque la aeronave descendía abruptamente , las hélices dejaron su configuración de crucero de 900 rpm , lo que provocó un aumento de la velocidad del aire .	Ninguno de los pilotos notó que la velocidad aerodinámica aumentaba hacia la velocidad máxima de operación ( VMO ) ya que estaban " distraídos por el clima " .	Cuando la aeronave alcanzó el VMO al pasar a través de 10.500 pies , con una velocidad de descenso de entre 3.500 y 4.200 pies por minuto , sonó la advertencia de exceso de velocidad del VMO .	El capitán le pidió a al copiloto que aumentara la velocidad de la hélice a 1.050 rpm para reducir la velocidad del avión .	Él evantó el morro de la aeronave en respuesta a la advertencia y esto redujo la velocidad de descenso a aproximadamente 2,000 pies por minuto , sin embargo , la advertencia de exceso de velocidad del VMO siguió sonando .
+Event	T0	requería	EVENT	20
+Event	T1	pronunciado	EVENT	41
+Event	T2	descendía	EVENT	89
+Event	T3	dejaron	EVENT	126
+Event	T4	configuración	EVENT	137
+Event	T5	provocó	EVENT	182
+Event	T6	aumento	EVENT	193
+Event	T7	notó	EVENT	251
+Event	T8	aumentaba	EVENT	286
+Event	T9	operación	EVENT	325
+Event	T10	distraídos	EVENT	360
+Event	T11	alcanzó	EVENT	407
+Event	T12	pasar	EVENT	425
+Event	T13	descenso	EVENT	478
+Event	T14	sonó	EVENT	528
+Event	T15	advertencia	EVENT	536
+Event	T16	exceso	EVENT	551
+Event	T17	pidió	EVENT	595
+Event	T18	aumentara	EVENT	619
+Event	T19	evantó	EVENT	708
+Event	T20	morro	EVENT	718
+Event	T21	advertencia	EVENT	757
+Event	T22	redujo	EVENT	776
+Event	T23	descenso	EVENT	799
+Event	T24	advertencia	EVENT	867
+Event	T25	sonando	EVENT	917
+Relation	T0	T2	NoRel	true	requería	descendía
+Relation	T0	T24	NoRel	true	requería	advertencia
+Relation	T1	T5	NoRel	true	pronunciado	provocó
+Relation	T1	T9	NoRel	true	pronunciado	operación
+Relation	T10	T11	NoRel	true	distraídos	alcanzó
+Relation	T10	T18	NoRel	true	distraídos	aumentara
+Relation	T10	T9	NoRel	true	distraídos	operación
+Relation	T11	T14	NoRel	true	alcanzó	sonó
+Relation	T11	T24	NoRel	true	alcanzó	advertencia
+Relation	T12	T0	NoRel	true	pasar	requería
+Relation	T12	T9	NoRel	true	pasar	operación
+Relation	T13	T11	NoRel	true	descenso	alcanzó
+Relation	T13	T22	NoRel	true	descenso	redujo
+Relation	T14	T15	NoRel	true	sonó	advertencia
+Relation	T14	T23	NoRel	true	sonó	descenso
+Relation	T14	T5	NoRel	true	sonó	provocó
+Relation	T14	T9	NoRel	true	sonó	operación
+Relation	T15	T14	NoRel	true	advertencia	sonó
+Relation	T15	T16	NoRel	true	advertencia	exceso
+Relation	T15	T18	NoRel	true	advertencia	aumentara
+Relation	T15	T4	NoRel	true	advertencia	configuración
+Relation	T15	T9	NoRel	true	advertencia	operación
+Relation	T16	T19	NoRel	true	exceso	evantó
+Relation	T16	T5	NoRel	true	exceso	provocó
+Relation	T17	T0	NoRel	true	pidió	requería
+Relation	T18	T20	NoRel	true	aumentara	morro
+Relation	T18	T22	NoRel	true	aumentara	redujo
+Relation	T18	T25	NoRel	true	aumentara	sonando
+Relation	T18	T8	NoRel	true	aumentara	aumentaba
+Relation	T19	T20	NoRel	true	evantó	morro
+Relation	T19	T21	NoRel	true	evantó	advertencia
+Relation	T2	T14	NoRel	true	descendía	sonó
+Relation	T2	T4	NoRel	true	descendía	configuración
+Relation	T2	T5	NoRel	true	descendía	provocó
+Relation	T20	T12	NoRel	true	morro	pasar
+Relation	T20	T25	NoRel	true	morro	sonando
+Relation	T21	T17	NoRel	true	advertencia	pidió
+Relation	T21	T25	NoRel	true	advertencia	sonando
+Relation	T21	T6	NoRel	true	advertencia	aumento
+Relation	T22	T16	NoRel	true	redujo	exceso
+Relation	T22	T7	NoRel	true	redujo	notó
+Relation	T23	T10	NoRel	true	descenso	distraídos
+Relation	T23	T11	NoRel	true	descenso	alcanzó
+Relation	T23	T20	NoRel	true	descenso	morro
+Relation	T23	T6	NoRel	true	descenso	aumento
+Relation	T24	T1	NoRel	true	advertencia	pronunciado
+Relation	T25	T0	NoRel	true	sonando	requería
+Relation	T25	T11	NoRel	true	sonando	alcanzó
+Relation	T25	T17	NoRel	true	sonando	pidió
+Relation	T3	T12	NoRel	true	dejaron	pasar
+Relation	T3	T14	NoRel	true	dejaron	sonó
+Relation	T3	T2	NoRel	true	dejaron	descendía
+Relation	T3	T20	NoRel	true	dejaron	morro
+Relation	T3	T23	NoRel	true	dejaron	descenso
+Relation	T4	T23	NoRel	true	configuración	descenso
+Relation	T5	T12	NoRel	true	provocó	pasar
+Relation	T5	T17	NoRel	true	provocó	pidió
+Relation	T5	T24	NoRel	true	provocó	advertencia
+Relation	T5	T8	NoRel	true	provocó	aumentaba
+Relation	T6	T22	NoRel	true	aumento	redujo
+Relation	T7	T25	NoRel	true	notó	sonando
+Relation	T8	T14	NoRel	true	aumentaba	sonó
+Relation	T8	T2	NoRel	true	aumentaba	descendía
+Relation	T9	T15	NoRel	true	operación	advertencia
+Relation	T9	T19	NoRel	true	operación	evantó
+Relation	T9	T6	NoRel	true	operación	aumento

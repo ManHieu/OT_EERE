@@ -1,0 +1,13 @@
+Text	پلیٹ فارم کی ویب سائٹ کا نام اور اسے دوستوں ، رشتہ داروں اور جاننے والوں تک پھیلانے کی استدعا کی گئی ۔	- 3 مارچ - سندھ میں کورونا کے 1 مریض کا اضافہ ، کل مریضوں کی تعداد 5 ہو گئی ۔	-	6 مارچ - سندھ میں کورونا کے 1 مریض کا اضافہ ، کل مریضوں کی تعداد 6 ہو گئی ۔	-
+Event	T0	پھیلانے	EVENT	76
+Event	T1	اضافہ	EVENT	143
+Event	T2	گئی	EVENT	175
+Event	T3	اضافہ	EVENT	221
+Event	T4	گئی	EVENT	253
+Event	T5	استدعا	EVENT	87
+Relation	T0	T5	SuperSub	true	پھیلانے	استدعا
+Relation	T5	T0	SubSuper	true	استدعا	پھیلانے
+Relation	T2	T1	SuperSub	true	گئی	اضافہ
+Relation	T1	T2	SubSuper	true	اضافہ	گئی
+Relation	T4	T3	SuperSub	true	گئی	اضافہ
+Relation	T3	T4	SubSuper	true	اضافہ	گئی

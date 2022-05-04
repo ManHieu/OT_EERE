@@ -1,0 +1,39 @@
+Text	Estando en la academia , Kurt Meyer sufrió un grave accidente al querer realizar una broma a uno de sus compañeros cayendo de pie desde una altura de dos pisos ; el aterrizaje lo dejó con múltiples fracturas .	Debido a la resistencia física al golpe recibido y su pronta recuperación se le apoda _ Panzermeyer _ por su similitud con la resistencia de un tanque .	Políticamente activo a una edad temprana y partidario fanático del nazismo , Meyer se unió a las Juventudes Hitlerianas cuando tenía quince años , se convirtió en miembro de pleno derecho del Partido Nazi en septiembre de 1930 y se unió a las SS en octubre de 1931 .	Fue invitado a la boda de Joseph Goebbels en diciembre de ese año .	En mayo de 1934 , Meyer fue transferido a la Leibstandarte SS Adolf Hitler .
+Event	T1	accidente	EVENT	52
+Event	T11	unió	EVENT	449
+Event	T12	convirtió	EVENT	513
+Event	T13	unió	EVENT	595
+Event	T14	invitado	EVENT	634
+Event	T15	boda	EVENT	648
+Event	T16	transferido	EVENT	726
+Event	T2	broma	EVENT	85
+Event	T3	cayendo	EVENT	115
+Event	T4	aterrizaje	EVENT	165
+Event	T6	fracturas	EVENT	198
+Event	T7	recibido	EVENT	250
+Event	T8	recuperación	EVENT	271
+Event	T9	apoda	EVENT	290
+Relation	T3	T4	SuperSub	true	cayendo	aterrizaje
+Relation	T4	T3	SubSuper	true	aterrizaje	cayendo
+Relation	T7	T8	SuperSub	true	recibido	recuperación
+Relation	T8	T7	SubSuper	true	recuperación	recibido
+Relation	T11	T16	SuperSub	true	unió	transferido
+Relation	T16	T11	SubSuper	true	transferido	unió
+Relation	T1	T7	NoRel	true	accidente	recibido
+Relation	T11	T12	NoRel	true	unió	convirtió
+Relation	T11	T14	NoRel	true	unió	invitado
+Relation	T11	T4	NoRel	true	unió	aterrizaje
+Relation	T12	T13	NoRel	true	convirtió	unió
+Relation	T12	T7	NoRel	true	convirtió	recibido
+Relation	T13	T11	NoRel	true	unió	unió
+Relation	T14	T4	NoRel	true	invitado	aterrizaje
+Relation	T14	T6	NoRel	true	invitado	fracturas
+Relation	T14	T7	NoRel	true	invitado	recibido
+Relation	T15	T13	NoRel	true	boda	unió
+Relation	T2	T3	NoRel	true	broma	cayendo
+Relation	T2	T8	NoRel	true	broma	recuperación
+Relation	T3	T6	NoRel	true	cayendo	fracturas
+Relation	T3	T8	NoRel	true	cayendo	recuperación
+Relation	T8	T4	NoRel	true	recuperación	aterrizaje
+Relation	T9	T14	NoRel	true	apoda	invitado
+Relation	T9	T8	NoRel	true	apoda	recuperación

@@ -1,0 +1,68 @@
+Text	El avión sufrió una despresurización , volando de regreso a Taiwán el mismo día , y efectuándose una reparación provisional al día siguiente .	Una reparación más a fondo fue llevada a cabo por el equipo de China Airlines del 23 al 26 de mayo de 1980 .	Sin embargo , la reparación permanente del golpe de la cola no fue llevado a cabo de acuerdo al Manual de Reparaciones Estructural de Boeing ( SRM ) .	La zona de carenado dañado en la Sección 46 no fue suprimido y la reparación con doblador que se supone que cubría con creces el 30% de la zona dañada no era lo suficientemente extensa como para garantizar la restauración de la resistencia estructural .	En consecuencia , tras repetidos ciclos de despresurización y presurización durante el vuelo , el cono de cola dañado comenzó a romperse gradualmente y finalmente se rompió en vuelo el 25 de mayo de 2002 , exactamente 22 años después de que la reparación errónea fuese efectuada en la cola dañada .
+Event	T0	sufrió	EVENT	9
+Event	T1	despresurización	EVENT	20
+Event	T2	volando	EVENT	39
+Event	T4	reparación	EVENT	147
+Event	T6	golpe	EVENT	295
+Event	T8	dañado	EVENT	423
+Event	T10	reparación	EVENT	469
+Event	T11	cubría	EVENT	511
+Event	T12	dañada	EVENT	547
+Event	T13	restauración	EVENT	612
+Event	T14	ciclos	EVENT	690
+Event	T15	despresurización	EVENT	700
+Event	T16	presurización	EVENT	719
+Event	T17	vuelo	EVENT	744
+Event	T18	comenzó	EVENT	775
+Event	T19	romperse	EVENT	785
+Event	T20	rompió	EVENT	823
+Event	T21	vuelo	EVENT	833
+Event	T22	efectuada	EVENT	926
+Event	T23	dañada	EVENT	947
+Event	T3	reparación	EVENT	101
+Relation	T2	T1	SuperSub	true	volando	despresurización
+Relation	T1	T2	SubSuper	true	despresurización	volando
+Relation	T0	T20	NoRel	true	sufrió	rompió
+Relation	T0	T21	NoRel	true	sufrió	vuelo
+Relation	T1	T17	NoRel	true	despresurización	vuelo
+Relation	T10	T18	NoRel	true	reparación	comenzó
+Relation	T10	T19	NoRel	true	reparación	romperse
+Relation	T10	T23	NoRel	true	reparación	dañada
+Relation	T10	T4	NoRel	true	reparación	reparación
+Relation	T13	T15	NoRel	true	restauración	despresurización
+Relation	T13	T19	NoRel	true	restauración	romperse
+Relation	T14	T10	NoRel	true	ciclos	reparación
+Relation	T14	T15	NoRel	true	ciclos	despresurización
+Relation	T15	T11	NoRel	true	despresurización	cubría
+Relation	T15	T19	NoRel	true	despresurización	romperse
+Relation	T15	T23	NoRel	true	despresurización	dañada
+Relation	T17	T12	NoRel	true	vuelo	dañada
+Relation	T18	T15	NoRel	true	comenzó	despresurización
+Relation	T18	T22	NoRel	true	comenzó	efectuada
+Relation	T19	T0	NoRel	true	romperse	sufrió
+Relation	T19	T18	NoRel	true	romperse	comenzó
+Relation	T19	T2	NoRel	true	romperse	volando
+Relation	T2	T10	NoRel	true	volando	reparación
+Relation	T2	T12	NoRel	true	volando	dañada
+Relation	T2	T22	NoRel	true	volando	efectuada
+Relation	T2	T23	NoRel	true	volando	dañada
+Relation	T20	T10	NoRel	true	rompió	reparación
+Relation	T20	T11	NoRel	true	rompió	cubría
+Relation	T21	T1	NoRel	true	vuelo	despresurización
+Relation	T22	T12	NoRel	true	efectuada	dañada
+Relation	T22	T18	NoRel	true	efectuada	comenzó
+Relation	T22	T23	NoRel	true	efectuada	dañada
+Relation	T22	T4	NoRel	true	efectuada	reparación
+Relation	T23	T22	NoRel	true	dañada	efectuada
+Relation	T3	T0	NoRel	true	reparación	sufrió
+Relation	T3	T17	NoRel	true	reparación	vuelo
+Relation	T4	T15	NoRel	true	reparación	despresurización
+Relation	T4	T23	NoRel	true	reparación	dañada
+Relation	T4	T6	NoRel	true	reparación	golpe
+Relation	T6	T10	NoRel	true	golpe	reparación
+Relation	T6	T12	NoRel	true	golpe	dañada
+Relation	T6	T15	NoRel	true	golpe	despresurización
+Relation	T6	T20	NoRel	true	golpe	rompió
+Relation	T8	T17	NoRel	true	dañado	vuelo
+Relation	T8	T22	NoRel	true	dañado	efectuada
+Relation	T8	T4	NoRel	true	dañado	reparación

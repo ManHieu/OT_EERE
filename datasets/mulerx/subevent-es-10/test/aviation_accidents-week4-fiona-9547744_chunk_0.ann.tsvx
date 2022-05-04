@@ -1,0 +1,22 @@
+Text	El VUELO 1344 DE AIR INDIA EXPRESS era un vuelo programado desde el Aeropuerto Internacional de Dubái al Aeropuerto Internacional de Kozhikode , Kerala , India .	El 7 de agosto de 2020 , la aeronave que operaba el vuelo , un Boeing 737-8NG , se estrelló tras derrapar fuera de la pista .	Después de que la aeronave salió de la pista , cayó en un valle más allá de la pista , rompiéndose en varios pedazos .	De los 184 pasajeros y 6 tripulantes a bordo de la aeronave ( 190 en total ) , los dos pilotos y 19 pasajeros murieron .	[ La aeronave accidentada , fotografiada en 2016 .
+Event	T0	programado	EVENT	48
+Event	T1	operaba	EVENT	203
+Event	T2	vuelo	EVENT	214
+Event	T3	estrelló	EVENT	245
+Event	T4	derrapar	EVENT	259
+Event	T5	salió	EVENT	315
+Event	T6	cayó	EVENT	335
+Event	T7	rompiéndose	EVENT	375
+Event	T8	murieron	EVENT	517
+Event	T9	accidentada	EVENT	542
+Event	T10	fotografiada	EVENT	556
+Relation	T0	T3	NoRel	true	programado	estrelló
+Relation	T10	T1	NoRel	true	fotografiada	operaba
+Relation	T3	T8	NoRel	true	estrelló	murieron
+Relation	T5	T1	NoRel	true	salió	operaba
+Relation	T5	T3	NoRel	true	salió	estrelló
+Relation	T5	T4	NoRel	true	salió	derrapar
+Relation	T7	T3	NoRel	true	rompiéndose	estrelló
+Relation	T7	T5	NoRel	true	rompiéndose	salió
+Relation	T8	T10	NoRel	true	murieron	fotografiada
+Relation	T9	T10	NoRel	true	accidentada	fotografiada

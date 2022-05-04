@@ -1,0 +1,19 @@
+Text	General Ne Win , askerlerine “ Silahlar yukarıya bakmayacak ” şeklinde emir vererek göstericilerin vurulmasını istedi .	Ancak krizi başarılı şekilde yönetemedi .	Bunun üzerine 18 Eylül tarihinde ülke genelinde sıkıyönetim ilan edilerek ' ' Devlet Hukuku ve Nizamı Yenileme Konseyi '' yönetime geldi .	Konseye başkanlık yapan General Saw Maung’un yönetiminde yaklaşık 3 bin kişinin öldürülmesiyle ayaklanma bastırıldı .	Bu ayaklanma 08.08. 88 tarihinde vuku bulduğu için _ 8888 Ayaklanması _ olarak adlandırılmıştır .
+Event	T0	istedi	EVENT	111
+Event	T1	krizi	EVENT	126
+Event	T4	geldi	EVENT	293
+Event	T5	bastırıldı	EVENT	406
+Event	T6	ayaklanma	EVENT	422
+Event	T7	bulduğu	EVENT	457
+Event	T8	vererek	EVENT	76
+Event	T2	yönetemedi	EVENT	149
+Event	T3	edilerek	EVENT	227
+Event	T9	öldürülmesiyle	EVENT	381
+Relation	T1	T5	NoRel	true	krizi	bastırıldı
+Relation	T2	T1	NoRel	true	yönetemedi	krizi
+Relation	T2	T3	NoRel	true	yönetemedi	edilerek
+Relation	T3	T5	NoRel	true	edilerek	bastırıldı
+Relation	T7	T6	NoRel	true	bulduğu	ayaklanma
+Relation	T8	T0	NoRel	true	vererek	istedi
+Relation	T8	T3	NoRel	true	vererek	edilerek
+Relation	T9	T2	NoRel	true	öldürülmesiyle	yönetemedi

@@ -1,0 +1,23 @@
+Text	8 مئی 2015ء کو دن کے وقت پاکستانی فوج کا مل می-17 ہیلی کاپٹر شمالی پاکستان کے علاقہ گلگت بلتستان کی وادی نلتر میں حادثہ کا شکار ہوا ۔ جس میں دو پائلٹ ، انڈونیشیا اور ملیشیا کے سفیروں کی بیویاں اور فلپائن اور ناروے کے پاکستان میں تعینات سفیر ہلاک ہوئے ،	پرواز میں 11 غیر ملکی اور 6 پاکستانی سوار تھے ، جن میں سے 8 ہلاک اور دیگر زخمی ہیں ۔	زخمیوں میں ہالینڈ اور پولینڈ کے سفیر بھی شامل ہیں ۔	حادثہ کا سبب کیا تھا ، اس کی تحقیقات جاری ہیں ، ابتدائی طور پر بعض ذرائع ابلاغ ( جیسے بی بی سی اردو ) کے مطابق ہیلی کاپٹر آرمی پبلک اسکول میں اترتے ہوئے عمارت سے ٹکرایا ۔	جس سے یہ سانحہ رونما ہوا ۔
+Event	T0	حادثہ	EVENT	114
+Event	T1	سانحہ	EVENT	570
+Event	T10	ٹکرایا	EVENT	552
+Event	T3	شامل	EVENT	379
+Event	T4	ہلاک	EVENT	313
+Event	T5	زخمی	EVENT	327
+Event	T6	تحقیقات	EVENT	419
+Event	T7	حادثہ	EVENT	390
+Event	T8	سوار	EVENT	290
+Relation	T5	T3	SuperSub	true	زخمی	شامل
+Relation	T3	T5	SubSuper	true	شامل	زخمی
+Relation	T0	T7	NoRel	true	حادثہ	حادثہ
+Relation	T1	T3	NoRel	true	سانحہ	شامل
+Relation	T1	T5	NoRel	true	سانحہ	زخمی
+Relation	T1	T6	NoRel	true	سانحہ	تحقیقات
+Relation	T10	T0	NoRel	true	ٹکرایا	حادثہ
+Relation	T10	T6	NoRel	true	ٹکرایا	تحقیقات
+Relation	T3	T0	NoRel	true	شامل	حادثہ
+Relation	T4	T6	NoRel	true	ہلاک	تحقیقات
+Relation	T5	T6	NoRel	true	زخمی	تحقیقات
+Relation	T7	T5	NoRel	true	حادثہ	زخمی
+Relation	T8	T6	NoRel	true	سوار	تحقیقات

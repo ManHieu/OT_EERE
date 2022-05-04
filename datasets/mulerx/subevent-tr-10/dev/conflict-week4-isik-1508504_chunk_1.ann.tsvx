@@ -1,0 +1,27 @@
+Text	_ Associated Press _ , Nakoula ile evinde bir röportaj yaptı ve bir telefon numarası ile Nakoula'nın önceden kullandığı Nicola Bacily gibi takma adları paylaştı .	Çalıntı kimlik ve sosyal güvenlik numaraları kullanarak federal bankalarda hesabı bulunan çok sayıda kişiyi dolandıran Nakoula , 2010 yılında mahkemenin aleyhinde verdiği karara itiraz etmedi ve dolandırdığı sahışlara yaklaşık 800 bin dolar ödemeye mahkûm edilen Nakoula'nın , şartlı tahliye gözetmeninin onayı olmadan bilgisayar ya da internet kullanması da beş yıllığına yasaklandı .	Nakoula Basseley Nakoula , Haziran 2011'de hapishaneden serbest bırakıldı .	Asistan ABD Avukatı Jennifer Leigh Williams'a göre , Nakoula çalıntı kimlikler ile Sosyal Güvenlik numaraları kullanarak banka hesapları açtı ve bu hesaplar üzerinden çekleri yatırdı böylece Nakoula , ATM makinelerinden parayı çekebildi .	Kategori : 1957 doğumlular Kategori : Mısırlılar Kategori : Amerikalı senaristler Kategori : Mısır asıllı Amerikalılar Kategori : Amerika Birleşik Devletleri'ndeki Mısırlı göçmenler Kategori : Kahire Üniversitesinde öğrenim görenler Kategori : Personae non gratae Kategori : Dolandırıcılar Kategori : Kıptîler Kategori : İslam eleştirmenleri Kategori : Amerikalı tutuklular ve hükümlüler Kategori : Yaşayan insanlar
+Event	T0	yaptı	EVENT	55
+Event	T1	paylaştı	EVENT	152
+Event	T2	dolandıran	EVENT	271
+Event	T4	dolandırdığı	EVENT	358
+Event	T5	mahkûm	EVENT	412
+Event	T8	yasaklandı	EVENT	536
+Event	T9	bırakıldı	EVENT	613
+Event	T10	açtı	EVENT	762
+Event	T11	yatırdı	EVENT	800
+Event	T12	çekebildi	EVENT	852
+Event	T13	kullanarak	EVENT	208
+Event	T14	karara	EVENT	334
+Event	T3	kullanarak	EVENT	735
+Relation	T11	T10	NoRel	true	yatırdı	açtı
+Relation	T11	T13	NoRel	true	yatırdı	kullanarak
+Relation	T13	T2	NoRel	true	kullanarak	dolandıran
+Relation	T13	T9	NoRel	true	kullanarak	bırakıldı
+Relation	T2	T1	NoRel	true	dolandıran	paylaştı
+Relation	T2	T4	NoRel	true	dolandıran	dolandırdığı
+Relation	T4	T12	NoRel	true	dolandırdığı	çekebildi
+Relation	T5	T1	NoRel	true	mahkûm	paylaştı
+Relation	T5	T2	NoRel	true	mahkûm	dolandıran
+Relation	T5	T8	NoRel	true	mahkûm	yasaklandı
+Relation	T8	T2	NoRel	true	yasaklandı	dolandıran
+Relation	T9	T2	NoRel	true	bırakıldı	dolandıran
+Relation	T9	T8	NoRel	true	bırakıldı	yasaklandı

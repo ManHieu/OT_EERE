@@ -1,0 +1,39 @@
+Text	Den 12. –_15. april landede allierede tropper i Norge , men i løbet af to uger var det meste af Norge på tyske hænder , og de allierede tropper blev evakueret fra Nordnorge .	Fiaskoen med den Allierede kampagne i Norge , som egentlig var afledt af de aldrig realiserede planer om at støtte Finland , afstedkom en berømt debat i det britiske Underhus , hvorunder premierminister Neville Chamberlain konstant blev angrebet .	Et tillidsvotum blev vedtaget med 281 mod 200 stemmer , men mange af Chamberlains støtter havde stemt imod ham , mens mange andre havde afstået fra at stemme .	Den ydmygede Chamberlain fandt det umuligt at lede den britiske regering eller at danne en national samlingsregering .	Den 10. maj indgav Chamberlain sin afskedsbegæring , mens han fortsatte som leder af det konservative parti .
+Event	T0	landede	EVENT	20
+Event	T1	evakueret	EVENT	149
+Event	T10	stemt	EVENT	519
+Event	T11	afstået	EVENT	559
+Event	T12	fandt	EVENT	608
+Event	T13	lede	EVENT	629
+Event	T14	indgav	EVENT	714
+Event	T15	afskedsbegæring	EVENT	737
+Event	T16	fortsatte	EVENT	764
+Event	T2	Fiaskoen	EVENT	175
+Event	T3	afledt	EVENT	238
+Event	T4	planer	EVENT	270
+Event	T5	støtte	EVENT	283
+Event	T6	afstedkom	EVENT	300
+Event	T7	debat	EVENT	320
+Event	T8	angrebet	EVENT	412
+Event	T9	vedtaget	EVENT	444
+Relation	T2	T7	SuperSub	true	Fiaskoen	debat
+Relation	T7	T2	SubSuper	true	debat	Fiaskoen
+Relation	T10	T9	SuperSub	true	stemt	vedtaget
+Relation	T9	T10	SubSuper	true	vedtaget	stemt
+Relation	T1	T13	NoRel	true	evakueret	lede
+Relation	T1	T8	NoRel	true	evakueret	angrebet
+Relation	T11	T5	NoRel	true	afstået	støtte
+Relation	T13	T15	NoRel	true	lede	afskedsbegæring
+Relation	T13	T6	NoRel	true	lede	afstedkom
+Relation	T14	T16	NoRel	true	indgav	fortsatte
+Relation	T14	T8	NoRel	true	indgav	angrebet
+Relation	T15	T14	NoRel	true	afskedsbegæring	indgav
+Relation	T15	T8	NoRel	true	afskedsbegæring	angrebet
+Relation	T5	T1	NoRel	true	støtte	evakueret
+Relation	T5	T7	NoRel	true	støtte	debat
+Relation	T7	T10	NoRel	true	debat	stemt
+Relation	T7	T12	NoRel	true	debat	fandt
+Relation	T7	T5	NoRel	true	debat	støtte
+Relation	T8	T6	NoRel	true	angrebet	afstedkom
+Relation	T8	T9	NoRel	true	angrebet	vedtaget
+Relation	T9	T14	NoRel	true	vedtaget	indgav

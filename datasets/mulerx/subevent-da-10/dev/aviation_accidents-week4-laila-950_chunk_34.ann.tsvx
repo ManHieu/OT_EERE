@@ -1,0 +1,33 @@
+Text	Klokken 9:59 kollapsede sydtårnet som følge af , at tårnets stålsøjler havde mistet deres styrke pga. ildebranden .	Det nordlige tårn kollapsede klokken 10:28 efter at have brændt i 102 minutter .	Klokken 5:21 pm kollapsede bygning 7 , hvilket er blevet begrundet med ukontrollerede brande inde i bygningen .	World Trade Center tårn 3 ( kendt som Hotel Marriott ) blev ødelagt under sammenbruddet af de to tvillingetårne .	De tre resterende bygninger i WTC Plaza havde lidt stor skade efter tårnenes sammenstyrtning og de blev bagefter revet ned .
+Event	T0	kollapsede	EVENT	13
+Event	T1	mistet	EVENT	77
+Event	T2	ildebranden	EVENT	102
+Event	T3	kollapsede	EVENT	134
+Event	T4	brændt	EVENT	173
+Event	T5	kollapsede	EVENT	213
+Event	T6	begrundet	EVENT	254
+Event	T7	brande	EVENT	283
+Event	T8	ødelagt	EVENT	369
+Event	T9	sammenbruddet	EVENT	383
+Event	T10	skade	EVENT	479
+Event	T11	sammenstyrtning	EVENT	500
+Event	T12	revet ned	EVENT	536
+Relation	T0	T3	NoRel	true	kollapsede	kollapsede
+Relation	T1	T6	NoRel	true	mistet	begrundet
+Relation	T10	T11	NoRel	true	skade	sammenstyrtning
+Relation	T11	T10	NoRel	true	sammenstyrtning	skade
+Relation	T11	T8	NoRel	true	sammenstyrtning	ødelagt
+Relation	T11	T9	NoRel	true	sammenstyrtning	sammenbruddet
+Relation	T12	T6	NoRel	true	revet ned	begrundet
+Relation	T3	T11	NoRel	true	kollapsede	sammenstyrtning
+Relation	T3	T5	NoRel	true	kollapsede	kollapsede
+Relation	T3	T7	NoRel	true	kollapsede	brande
+Relation	T4	T11	NoRel	true	brændt	sammenstyrtning
+Relation	T4	T2	NoRel	true	brændt	ildebranden
+Relation	T4	T8	NoRel	true	brændt	ødelagt
+Relation	T4	T9	NoRel	true	brændt	sammenbruddet
+Relation	T5	T0	NoRel	true	kollapsede	kollapsede
+Relation	T6	T0	NoRel	true	begrundet	kollapsede
+Relation	T7	T2	NoRel	true	brande	ildebranden
+Relation	T8	T0	NoRel	true	ødelagt	kollapsede
+Relation	T8	T4	NoRel	true	ødelagt	brændt

@@ -1,0 +1,25 @@
+Text	El VUELO 157 DE AEROSUCRE era un vuelo de carga que operaba un Boeing 727 de esa aerolínea entre los aeropuertos colombianos Germán Olano de Puerto Carreño y El Dorado de Bogotá , que se estrelló el 20 de diciembre de 2016 a 8 km del aeropuerto de salida .	En el accidente fallecieron 5 de los 6 tripulantes , quedando el restante en estado crítico .	En los minutos previos a la salida prevista , un avión de pasajeros Cessna 208 y un Embraer ERJ-170 despegaron de la pista 07 .	El viento en ese momento era de unos 010 grados a 8 nudos .	Posteriormente , el Boeing 727 rodó hacia la pista , retrocediendo hasta el umbral de la pista 25 .
+Event	T0	vuelo	EVENT	33
+Event	T1	operaba	EVENT	52
+Event	T2	estrelló	EVENT	187
+Event	T3	salida	EVENT	248
+Event	T4	fallecieron	EVENT	273
+Event	T5	quedando	EVENT	310
+Event	T6	prevista	EVENT	386
+Event	T7	despegaron	EVENT	451
+Event	T8	viento	EVENT	482
+Event	T9	rodó	EVENT	570
+Event	T10	retrocediendo	EVENT	592
+Relation	T0	T7	NoRel	true	vuelo	despegaron
+Relation	T0	T8	NoRel	true	vuelo	viento
+Relation	T1	T9	NoRel	true	operaba	rodó
+Relation	T10	T8	NoRel	true	retrocediendo	viento
+Relation	T2	T10	NoRel	true	estrelló	retrocediendo
+Relation	T2	T6	NoRel	true	estrelló	prevista
+Relation	T2	T9	NoRel	true	estrelló	rodó
+Relation	T3	T5	NoRel	true	salida	quedando
+Relation	T4	T1	NoRel	true	fallecieron	operaba
+Relation	T6	T10	NoRel	true	prevista	retrocediendo
+Relation	T7	T5	NoRel	true	despegaron	quedando
+Relation	T8	T5	NoRel	true	viento	quedando
+Relation	T9	T5	NoRel	true	rodó	quedando

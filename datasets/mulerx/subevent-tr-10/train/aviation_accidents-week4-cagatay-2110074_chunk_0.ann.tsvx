@@ -1,0 +1,32 @@
+Text	EGYPTAIR 804 ( MS804 / MSR804 ) sefer sayılı uçuş , Paris'ten Kahire'ye giden , EgyptAir firmasına ait Airbus A320 - 232 model yolcu uçağının düşmesi ile sonuçlanmıştır .	Uçak 19 Mayıs 2016 günü , Mısır saatine göre ( UTC+2 ) saat 02: 30'da Akdeniz'e içindeki 56 yolcu ve 10 mürettebatıyla ile birlikte düşmüştür .	Yunan Radyo Televizyonu uçak enkazının Kerte Adası'nda bulunduğunu açıklamıştır .	Fransa Sivil Havacılık Kurumu uçağın düşmeden önce yangın şüphesiyle duman alarmı verdiğini doğrulamıştır .	Uçağın düşmesiyle alakalı olarak bomba şüphesi iddiaları da vardır .
+Event	T0	uçuş	EVENT	45
+Event	T1	düşmesi	EVENT	142
+Event	T3	düşmüştür	EVENT	303
+Event	T4	açıklamıştır	EVENT	382
+Event	T5	düşmeden	EVENT	434
+Event	T6	doğrulamıştır	EVENT	489
+Event	T7	giden	EVENT	72
+Event	T2	bulunduğunu	EVENT	370
+Event	T9	alarmı	EVENT	472
+Event	T10	şüphesiyle	EVENT	455
+Relation	T0	T9	SuperSub	true	uçuş	alarmı
+Relation	T9	T0	SubSuper	true	alarmı	uçuş
+Relation	T0	T10	SuperSub	true	uçuş	şüphesiyle
+Relation	T10	T0	SubSuper	true	şüphesiyle	uçuş
+Relation	T0	T5	SuperSub	true	uçuş	düşmeden
+Relation	T5	T0	SubSuper	true	düşmeden	uçuş
+Relation	T0	T3	SuperSub	true	uçuş	düşmüştür
+Relation	T3	T0	SubSuper	true	düşmüştür	uçuş
+Relation	T0	T1	SuperSub	true	uçuş	düşmesi
+Relation	T1	T0	SubSuper	true	düşmesi	uçuş
+Relation	T1	T2	NoRel	true	düşmesi	bulunduğunu
+Relation	T1	T4	NoRel	true	düşmesi	açıklamıştır
+Relation	T10	T3	NoRel	true	şüphesiyle	düşmüştür
+Relation	T2	T1	NoRel	true	bulunduğunu	düşmesi
+Relation	T2	T5	NoRel	true	bulunduğunu	düşmeden
+Relation	T3	T4	NoRel	true	düşmüştür	açıklamıştır
+Relation	T4	T2	NoRel	true	açıklamıştır	bulunduğunu
+Relation	T4	T9	NoRel	true	açıklamıştır	alarmı
+Relation	T5	T4	NoRel	true	düşmeden	açıklamıştır
+Relation	T5	T7	NoRel	true	düşmeden	giden
+Relation	T7	T10	NoRel	true	giden	şüphesiyle

@@ -1,0 +1,80 @@
+Text	El primer ministro de Israel , Benjamín Netanyahu , anunció el cierre de todas las escuelas y universidades del país , a excepción de jardines de infancia , guarderías , centros para educación especial y centros para jóvenes en riesgo , hasta después de las vacaciones de Pésaj ( 17 de abril ) .	Nicolás Maduro , presidente de Venezuela , informa en cadena presidencial que se decreta " emergencia permanente " por el coronavirus y se suspende por un mes los vuelos entre Venezuela y Europa o Colombia , aparte de reuniones , eventos y concentraciones a nivel nacional .	La OMS establece el Fondo de Respuesta Solidaria contra la COVID-19 para recibir donaciones de particulares , empresas e instituciones .	Los casos y muertes en China siguen disminuyendo y el gobierno dice que la epidemia en el país asiático esta prácticamente controlada .	El director general de la Organización Mundial de la Salud , Tedros A. Ghebreyesus dijo en la conferencia diaria que “ Europa se ha convertido ahora en el epicentro del COVID-19 , con más casos reportados y muertos que todo el resto del mundo junto , si exceptuamos a China ” .
+Event	T0	anunció	EVENT	52
+Event	T1	cierre	EVENT	63
+Event	T2	vacaciones	EVENT	258
+Event	T3	informa	EVENT	339
+Event	T4	decreta	EVENT	377
+Event	T5	coronavirus	EVENT	418
+Event	T6	suspende	EVENT	435
+Event	T7	vuelos	EVENT	459
+Event	T8	reuniones	EVENT	514
+Event	T9	eventos	EVENT	526
+Event	T10	concentraciones	EVENT	536
+Event	T11	establece	EVENT	578
+Event	T12	Respuesta	EVENT	600
+Event	T13	casos	EVENT	712
+Event	T14	muertes	EVENT	720
+Event	T15	disminuyendo	EVENT	744
+Event	T16	dice	EVENT	771
+Event	T17	epidemia	EVENT	783
+Event	T18	controlada	EVENT	831
+Event	T19	dijo	EVENT	927
+Event	T20	convertido	EVENT	976
+Event	T21	reportados	EVENT	1038
+Event	T22	muertos	EVENT	1051
+Relation	T0	T22	NoRel	true	anunció	muertos
+Relation	T0	T5	NoRel	true	anunció	coronavirus
+Relation	T0	T6	NoRel	true	anunció	suspende
+Relation	T1	T17	NoRel	true	cierre	epidemia
+Relation	T10	T11	NoRel	true	concentraciones	establece
+Relation	T10	T19	NoRel	true	concentraciones	dijo
+Relation	T10	T4	NoRel	true	concentraciones	decreta
+Relation	T10	T6	NoRel	true	concentraciones	suspende
+Relation	T10	T9	NoRel	true	concentraciones	eventos
+Relation	T11	T12	NoRel	true	establece	Respuesta
+Relation	T11	T2	NoRel	true	establece	vacaciones
+Relation	T11	T6	NoRel	true	establece	suspende
+Relation	T12	T13	NoRel	true	Respuesta	casos
+Relation	T12	T4	NoRel	true	Respuesta	decreta
+Relation	T12	T6	NoRel	true	Respuesta	suspende
+Relation	T12	T7	NoRel	true	Respuesta	vuelos
+Relation	T12	T8	NoRel	true	Respuesta	reuniones
+Relation	T13	T1	NoRel	true	casos	cierre
+Relation	T14	T15	NoRel	true	muertes	disminuyendo
+Relation	T14	T17	NoRel	true	muertes	epidemia
+Relation	T15	T20	NoRel	true	disminuyendo	convertido
+Relation	T16	T1	NoRel	true	dice	cierre
+Relation	T16	T21	NoRel	true	dice	reportados
+Relation	T17	T13	NoRel	true	epidemia	casos
+Relation	T17	T16	NoRel	true	epidemia	dice
+Relation	T17	T20	NoRel	true	epidemia	convertido
+Relation	T17	T21	NoRel	true	epidemia	reportados
+Relation	T17	T9	NoRel	true	epidemia	eventos
+Relation	T18	T15	NoRel	true	controlada	disminuyendo
+Relation	T18	T20	NoRel	true	controlada	convertido
+Relation	T18	T21	NoRel	true	controlada	reportados
+Relation	T18	T8	NoRel	true	controlada	reuniones
+Relation	T19	T15	NoRel	true	dijo	disminuyendo
+Relation	T19	T17	NoRel	true	dijo	epidemia
+Relation	T19	T4	NoRel	true	dijo	decreta
+Relation	T2	T3	NoRel	true	vacaciones	informa
+Relation	T2	T7	NoRel	true	vacaciones	vuelos
+Relation	T20	T19	NoRel	true	convertido	dijo
+Relation	T21	T15	NoRel	true	reportados	disminuyendo
+Relation	T22	T3	NoRel	true	muertos	informa
+Relation	T3	T0	NoRel	true	informa	anunció
+Relation	T3	T17	NoRel	true	informa	epidemia
+Relation	T3	T5	NoRel	true	informa	coronavirus
+Relation	T4	T6	NoRel	true	decreta	suspende
+Relation	T5	T1	NoRel	true	coronavirus	cierre
+Relation	T5	T10	NoRel	true	coronavirus	concentraciones
+Relation	T5	T20	NoRel	true	coronavirus	convertido
+Relation	T6	T4	NoRel	true	suspende	decreta
+Relation	T6	T9	NoRel	true	suspende	eventos
+Relation	T7	T12	NoRel	true	vuelos	Respuesta
+Relation	T8	T0	NoRel	true	reuniones	anunció
+Relation	T8	T11	NoRel	true	reuniones	establece
+Relation	T8	T9	NoRel	true	reuniones	eventos
+Relation	T9	T19	NoRel	true	eventos	dijo
+Relation	T9	T6	NoRel	true	eventos	suspende
+Relation	T9	T7	NoRel	true	eventos	vuelos

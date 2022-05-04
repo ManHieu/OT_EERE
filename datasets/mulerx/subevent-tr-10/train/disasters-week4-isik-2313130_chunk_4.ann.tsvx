@@ -1,0 +1,20 @@
+Text	küçükresim | sol | Bir arama - kurtarma faaliyeti Aralarında Çin'in de bulunduğu birkaç ülke depremden sonra yardımda bulunmayı teklif etse de , Tayvan hükümeti ülkenin yardım görevlisi ve malzemesi bakımından eksiklik taşımadığını , bu yüzden yardım tekliflerini kibarca reddettiğini açıkladı .	Fakat , Tayvanlı yetkililerin sahip olmadığı bir teknoloji olan vücut ısısı algılama donanımına sahip oldukları için bir Japon birliğinin kabul edilmesine karar verildi .	Japonya özel kurtarma ekibi , arama çalışmalarına yardım sağlamak için 9 Şubat'ta bölgeye geldi ve Tayvan'a ulaşan ilk uluslararası arama - kurtarma ekibi oldu .	Singapur , Hava Kuvvetleri Komutanlığına ait C - 130 Hercules vasıtasıyla Tayvan'a 103.000 dolar insanî yardım malzemesi gönderdi .	Aralarında Tayvan ile resmî diplomatik ilişkisi bulunan 18 ülkenin de olduğu 63 ülke ile Avrupa Birliği , Doğu Karayip Devletleri Örgütü , Orta Amerika Parlamentosu ve Orta Amerika Ortak Pazarı Tayvan hükûmetine başsağlığı mesajı gönderdi .
+Event	T0	faaliyeti	EVENT	40
+Event	T1	etse	EVENT	135
+Event	T2	açıkladı	EVENT	285
+Event	T3	verildi	EVENT	457
+Event	T5	geldi	EVENT	557
+Event	T6	oldu	EVENT	622
+Event	T7	gönderdi	EVENT	750
+Event	T8	gönderdi	EVENT	991
+Event	T9	depremden	EVENT	93
+Relation	T0	T5	NoRel	true	faaliyeti	geldi
+Relation	T1	T6	NoRel	true	etse	oldu
+Relation	T2	T9	NoRel	true	açıkladı	depremden
+Relation	T3	T1	NoRel	true	verildi	etse
+Relation	T5	T6	NoRel	true	geldi	oldu
+Relation	T6	T0	NoRel	true	oldu	faaliyeti
+Relation	T6	T1	NoRel	true	oldu	etse
+Relation	T7	T2	NoRel	true	gönderdi	açıkladı
+Relation	T8	T0	NoRel	true	gönderdi	faaliyeti
+Relation	T8	T1	NoRel	true	gönderdi	etse

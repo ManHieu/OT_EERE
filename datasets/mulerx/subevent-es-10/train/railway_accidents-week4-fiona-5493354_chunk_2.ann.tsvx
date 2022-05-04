@@ -1,0 +1,21 @@
+Text	Página 243 .	- 1865 - 16 DE FEBRERO : descarrilamiento del tren correo de la línea del Este en las cercanías de la estación de Portalegre .	Del accidente resultan un herido grave y otro leve .	- 18 DE SEPTIEMBRE : una composición que transportaba trabajadores entre Beja y Casével , en la entonces denominada Línea del Sur ( actualmente Línea del Alentejo ) , se ve forzada a efectuar un frenado de emergencia debido a un sabotaje en la vía ; los ocupantes salieron despedidos de la composición , produciéndose tres muertos y dos heridos graves .	SANTOS , Luís Filipe Rosa ( 1995 ) . Os Acessos a Faro e aos Concelhos Limítrofes na Segunda Metade do Séc. XIX .
+Event	T0	descarrilamiento	EVENT	38
+Event	T1	resultan	EVENT	154
+Event	T2	composición	EVENT	218
+Event	T3	transportaba	EVENT	234
+Event	T4	forzada	EVENT	366
+Event	T5	efectuar	EVENT	376
+Event	T6	frenado	EVENT	388
+Event	T7	sabotaje	EVENT	422
+Event	T8	despedidos	EVENT	466
+Event	T9	muertos	EVENT	516
+Event	T10	Acessos	EVENT	587
+Event	T11	heridos	EVENT	530
+Relation	T0	T3	NoRel	true	descarrilamiento	transportaba
+Relation	T0	T8	NoRel	true	descarrilamiento	despedidos
+Relation	T11	T1	NoRel	true	heridos	resultan
+Relation	T3	T4	NoRel	true	transportaba	forzada
+Relation	T4	T9	NoRel	true	forzada	muertos
+Relation	T5	T8	NoRel	true	efectuar	despedidos
+Relation	T8	T6	NoRel	true	despedidos	frenado
+Relation	T8	T7	NoRel	true	despedidos	sabotaje

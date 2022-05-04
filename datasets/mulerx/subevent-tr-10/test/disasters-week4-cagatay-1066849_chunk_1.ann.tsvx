@@ -1,0 +1,29 @@
+Text	Tsunami alarmı 53 ülkede yayımlandı , ve tsunami Şili'nin Valparaíso denizinde 2.6 m yüksekliğinde kayıt edildi .	Başkan Michelle Bachelet bir " Felaket durumu " ilan etti .	O ayrıca ölülerin en az 723 kişi olduğunu teyit etti .	Çok kişinin kayıp olduğu rapor edildi .	Sismeloglar , depremin çok kuvvetli olması nedeniyle gün uzunluğunu 1, 26 mikro saniye kısalttığını ve dünyanın dönüş eksenini 3 inç veya 2,7 milyarsaniye oynattığını tahmin etmekteler .
+Event	T0	alarmı	EVENT	8
+Event	T1	yayımlandı	EVENT	25
+Event	T2	tsunami	EVENT	41
+Event	T6	kayıp	EVENT	241
+Event	T8	depremin	EVENT	283
+Event	T9	dönüş	EVENT	381
+Event	T5	ölülerin	EVENT	183
+Event	T11	teyit etti	EVENT	216
+Event	T4	ilan etti	EVENT	162
+Event	T3	kayıt edildi	EVENT	99
+Event	T7	rapor edildi	EVENT	254
+Event	T12	kısalttığını	EVENT	356
+Event	T13	oynattığını	EVENT	424
+Event	T10	tahmin etmekteler	EVENT	436
+Relation	T0	T1	NoRel	true	alarmı	yayımlandı
+Relation	T12	T10	NoRel	true	kısalttığını	tahmin etmekteler
+Relation	T12	T13	NoRel	true	kısalttığını	oynattığını
+Relation	T12	T9	NoRel	true	kısalttığını	dönüş
+Relation	T2	T11	NoRel	true	tsunami	teyit etti
+Relation	T2	T13	NoRel	true	tsunami	oynattığını
+Relation	T3	T4	NoRel	true	kayıt edildi	ilan etti
+Relation	T3	T5	NoRel	true	kayıt edildi	ölülerin
+Relation	T3	T9	NoRel	true	kayıt edildi	dönüş
+Relation	T4	T12	NoRel	true	ilan etti	kısalttığını
+Relation	T5	T9	NoRel	true	ölülerin	dönüş
+Relation	T7	T1	NoRel	true	rapor edildi	yayımlandı
+Relation	T7	T4	NoRel	true	rapor edildi	ilan etti
+Relation	T7	T6	NoRel	true	rapor edildi	kayıp

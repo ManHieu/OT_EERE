@@ -1,0 +1,36 @@
+Text	Los sobrevivientes huyeron a los Valles Calchaquíes .	Por su parte , el gobernador Albornoz hizo una campaña prolongada en los Valles Calchaquíes , en que no hubo grandes batallas pero logró hostigar a los indígenas lo suficiente como para que se sometieran a la encomienda .	No fundó ciudades , y los jesuitas fundaron dos misiones permanentes en Santa María y San Carlos .	Una vez rendida la resistencia en los Valles , Albornoz volvió sobre los hualfines , dirigidos por el hijo de Chalimín , y los derrotó y apresó .	Desde allí , los cuatrocientos hualfines y abaucanes sobrevivientes fueron enviados a la ciudad de Córdoba en carácter de encomendados .
+Event	T0	huyeron	EVENT	19
+Event	T1	hizo	EVENT	92
+Event	T2	campaña	EVENT	101
+Event	T3	batallas	EVENT	171
+Event	T4	hostigar	EVENT	191
+Event	T5	sometieran	EVENT	247
+Event	T6	encomienda	EVENT	263
+Event	T7	rendida	EVENT	383
+Event	T8	resistencia	EVENT	394
+Event	T9	volvió	EVENT	431
+Event	T10	dirigidos	EVENT	460
+Event	T11	derrotó	EVENT	502
+Event	T12	apresó	EVENT	512
+Event	T13	enviados	EVENT	596
+Event	T14	fundaron	EVENT	311
+Relation	T7	T9	SuperSub	true	rendida	volvió
+Relation	T9	T7	SubSuper	true	volvió	rendida
+Relation	T9	T11	SuperSub	true	volvió	derrotó
+Relation	T11	T9	SubSuper	true	derrotó	volvió
+Relation	T9	T12	SuperSub	true	volvió	apresó
+Relation	T12	T9	SubSuper	true	apresó	volvió
+Relation	T1	T14	NoRel	true	hizo	fundaron
+Relation	T1	T3	NoRel	true	hizo	batallas
+Relation	T10	T8	NoRel	true	dirigidos	resistencia
+Relation	T11	T3	NoRel	true	derrotó	batallas
+Relation	T11	T4	NoRel	true	derrotó	hostigar
+Relation	T11	T7	NoRel	true	derrotó	rendida
+Relation	T13	T11	NoRel	true	enviados	derrotó
+Relation	T13	T6	NoRel	true	enviados	encomienda
+Relation	T14	T10	NoRel	true	fundaron	dirigidos
+Relation	T3	T12	NoRel	true	batallas	apresó
+Relation	T3	T9	NoRel	true	batallas	volvió
+Relation	T4	T13	NoRel	true	hostigar	enviados
+Relation	T4	T3	NoRel	true	hostigar	batallas
+Relation	T6	T2	NoRel	true	encomienda	campaña

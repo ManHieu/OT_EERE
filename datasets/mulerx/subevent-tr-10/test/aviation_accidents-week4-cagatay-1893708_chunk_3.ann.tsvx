@@ -1,0 +1,34 @@
+Text	Peşaver'deki bir okulda öğretmenlik yapan Halid Şeyh Muhammed , kendi ifadesine göre 1991 yılında okula destek amacıyla Afganistan'da bulunan Seyyaf'a düzenlediği seyahat sonucunda kendisinden maddî destek aldı .	1992'de , Pencap Üniversitesi'nden İslam kültürü ve tarihi dalında yüksek lisans yaptı .	Ertesi yıl Katar Elektrik ve Su Bakanlığında proje mühendisi olarak işe başlarken , yıl içerisinde evlendi ve ailesini Katar'a yerleştirdi .	Katar hükûmetindeki görevini 1996 yılı başlarına kadar sürdürürken , mesleği gereği çeşitli ülkelerde bulundu .	Ocak 2009'da , Bosna- Hersek'te yayınlanan ' ' Fokus '' gazetesindeki bir haberde , ülkenin istihbarat birimlerinde çalışan bir görevlinin yaptığı açıklamaya göre Halid Şeyh Muhammed , Bosna Savaşı sırasında , Eylül 1995'te yardım gönüllüsü olarak Bosna-Hersek'e hareket etmiş ve Müslüman Kardeşler'e bağlı bir yardım kuruluşunda gönüllü olarak çalışmıştı .
+Event	T0	ifadesine	EVENT	70
+Event	T1	seyahat	EVENT	163
+Event	T2	aldı	EVENT	206
+Event	T3	yaptı	EVENT	294
+Event	T4	evlendi	EVENT	401
+Event	T5	yerleştirdi	EVENT	429
+Event	T6	bulundu	EVENT	545
+Event	T7	açıklamaya	EVENT	702
+Event	T8	etmiş	EVENT	826
+Event	T9	çalışmıştı	EVENT	900
+Event	T10	destek	EVENT	104
+Event	T11	görevini	EVENT	463
+Event	T12	çalışan	EVENT	671
+Relation	T10	T2	SuperSub	true	destek	aldı
+Relation	T2	T10	SubSuper	true	aldı	destek
+Relation	T0	T1	NoRel	true	ifadesine	seyahat
+Relation	T1	T0	NoRel	true	seyahat	ifadesine
+Relation	T1	T11	NoRel	true	seyahat	görevini
+Relation	T1	T2	NoRel	true	seyahat	aldı
+Relation	T1	T6	NoRel	true	seyahat	bulundu
+Relation	T10	T1	NoRel	true	destek	seyahat
+Relation	T11	T12	NoRel	true	görevini	çalışan
+Relation	T12	T8	NoRel	true	çalışan	etmiş
+Relation	T2	T11	NoRel	true	aldı	görevini
+Relation	T2	T8	NoRel	true	aldı	etmiş
+Relation	T2	T9	NoRel	true	aldı	çalışmıştı
+Relation	T3	T12	NoRel	true	yaptı	çalışan
+Relation	T5	T0	NoRel	true	yerleştirdi	ifadesine
+Relation	T5	T3	NoRel	true	yerleştirdi	yaptı
+Relation	T6	T5	NoRel	true	bulundu	yerleştirdi
+Relation	T7	T10	NoRel	true	açıklamaya	destek
+Relation	T7	T4	NoRel	true	açıklamaya	evlendi
+Relation	T8	T3	NoRel	true	etmiş	yaptı

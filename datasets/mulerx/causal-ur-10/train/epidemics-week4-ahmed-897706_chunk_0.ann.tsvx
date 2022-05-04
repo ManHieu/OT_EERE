@@ -1,0 +1,90 @@
+Text	حمل میں کووڈ-19 کے اثرات ابھی تک مکمل طور پر معلوم نہیں ہیں ، کیوں کہ ابھی ایسا باوثوق مواد ( ڈیٹا ) دستیاب نہیں ہو سکا ۔	چین میں ایک چھوٹے سے مطالعے سے پتا چلتا ہے کہ حاملہ خواتین میں کووڈ-19 کے نمونیا کی طبی علامات و اثرات ، غیر حاملہ بالغہ خواتین کی طرح کی تھیں ۔	مارچ 2020ء تک ، کووڈ-19 کی متاثرہ حاملہ خواتین سے ، ان کے پیدا ہونے والے بچوں میں ، اس کی منتقلی کا کوئی ثبوت نہیں ملا ۔	البتہ ، اسی طرح کے وبائی امراض جیسے سارس اور میرس پر مبنی پیش گوئیاں بتاتی ہیں کہ حاملہ خواتین کو اس وبائی مرض سے شدید خطرہ ہوتا ہے ۔	نیویارکم_یں 43 حاملہ خواتین سے متعلق شماریات کے مطابق ان میں مرض کی کیفیت کسی بھی دوسرے بالغ کورونا وائرس مریض کے جیسی تھی : 86 % میں یہ کم خطرناک ، 9.3 % میں شدید خطر_ناک اور 4.7 % میں انتہائی خطرناک ثابت ہوا ۔
+Event	T0	حمل	EVENT	0
+Event	T1	اثرات	EVENT	19
+Event	T2	مطالعے	EVENT	143
+Event	T4	نمونیا	EVENT	196
+Event	T5	منتقلی	EVENT	357
+Event	T6	ملا	EVENT	382
+Event	T7	امراض	EVENT	413
+Event	T8	بتاتی	EVENT	457
+Event	T9	شماریات	EVENT	559
+Event	T11	معلوم	EVENT	45
+Event	T12	دستیاب	EVENT	101
+Event	T13	پتا	EVENT	153
+Event	T3	حاملہ	EVENT	168
+Event	T14	اثرات	EVENT	219
+Event	T15	علامات	EVENT	210
+Event	T16	حاملہ	EVENT	231
+Event	T17	متاثرہ	EVENT	294
+Event	T18	حاملہ	EVENT	301
+Event	T19	پیدا	EVENT	325
+Event	T21	پیش گوئیاں	EVENT	446
+Event	T20	حاملہ	EVENT	470
+Event	T22	مرض	EVENT	495
+Event	T23	خطرہ	EVENT	507
+Event	T24	حاملہ	EVENT	537
+Event	T25	مرض	EVENT	583
+Event	T26	ثابت	EVENT	723
+Relation	T12	T11	CauseEffect	true	دستیاب	معلوم
+Relation	T11	T12	EffectCause	true	معلوم	دستیاب
+Relation	T18	T19	CauseEffect	true	حاملہ	پیدا
+Relation	T19	T18	EffectCause	true	پیدا	حاملہ
+Relation	T0	T13	NoRel	true	حمل	پتا
+Relation	T0	T7	NoRel	true	حمل	امراض
+Relation	T1	T14	NoRel	true	اثرات	اثرات
+Relation	T1	T19	NoRel	true	اثرات	پیدا
+Relation	T11	T3	NoRel	true	معلوم	حاملہ
+Relation	T12	T1	NoRel	true	دستیاب	اثرات
+Relation	T12	T19	NoRel	true	دستیاب	پیدا
+Relation	T12	T21	NoRel	true	دستیاب	پیش گوئیاں
+Relation	T12	T26	NoRel	true	دستیاب	ثابت
+Relation	T12	T4	NoRel	true	دستیاب	نمونیا
+Relation	T13	T2	NoRel	true	پتا	مطالعے
+Relation	T13	T3	NoRel	true	پتا	حاملہ
+Relation	T13	T9	NoRel	true	پتا	شماریات
+Relation	T14	T17	NoRel	true	اثرات	متاثرہ
+Relation	T14	T2	NoRel	true	اثرات	مطالعے
+Relation	T14	T22	NoRel	true	اثرات	مرض
+Relation	T14	T23	NoRel	true	اثرات	خطرہ
+Relation	T14	T4	NoRel	true	اثرات	نمونیا
+Relation	T15	T11	NoRel	true	علامات	معلوم
+Relation	T15	T26	NoRel	true	علامات	ثابت
+Relation	T15	T4	NoRel	true	علامات	نمونیا
+Relation	T15	T6	NoRel	true	علامات	ملا
+Relation	T16	T0	NoRel	true	حاملہ	حمل
+Relation	T16	T12	NoRel	true	حاملہ	دستیاب
+Relation	T16	T17	NoRel	true	حاملہ	متاثرہ
+Relation	T16	T25	NoRel	true	حاملہ	مرض
+Relation	T17	T8	NoRel	true	متاثرہ	بتاتی
+Relation	T18	T17	NoRel	true	حاملہ	متاثرہ
+Relation	T18	T2	NoRel	true	حاملہ	مطالعے
+Relation	T19	T14	NoRel	true	پیدا	اثرات
+Relation	T19	T15	NoRel	true	پیدا	علامات
+Relation	T2	T17	NoRel	true	مطالعے	متاثرہ
+Relation	T2	T21	NoRel	true	مطالعے	پیش گوئیاں
+Relation	T20	T19	NoRel	true	حاملہ	پیدا
+Relation	T20	T23	NoRel	true	حاملہ	خطرہ
+Relation	T22	T23	NoRel	true	مرض	خطرہ
+Relation	T23	T0	NoRel	true	خطرہ	حمل
+Relation	T23	T13	NoRel	true	خطرہ	پتا
+Relation	T23	T19	NoRel	true	خطرہ	پیدا
+Relation	T23	T4	NoRel	true	خطرہ	نمونیا
+Relation	T24	T0	NoRel	true	حاملہ	حمل
+Relation	T24	T2	NoRel	true	حاملہ	مطالعے
+Relation	T24	T5	NoRel	true	حاملہ	منتقلی
+Relation	T25	T14	NoRel	true	مرض	اثرات
+Relation	T25	T5	NoRel	true	مرض	منتقلی
+Relation	T25	T8	NoRel	true	مرض	بتاتی
+Relation	T26	T2	NoRel	true	ثابت	مطالعے
+Relation	T4	T2	NoRel	true	نمونیا	مطالعے
+Relation	T4	T26	NoRel	true	نمونیا	ثابت
+Relation	T4	T6	NoRel	true	نمونیا	ملا
+Relation	T6	T1	NoRel	true	ملا	اثرات
+Relation	T6	T12	NoRel	true	ملا	دستیاب
+Relation	T6	T14	NoRel	true	ملا	اثرات
+Relation	T6	T15	NoRel	true	ملا	علامات
+Relation	T8	T1	NoRel	true	بتاتی	اثرات
+Relation	T8	T7	NoRel	true	بتاتی	امراض
+Relation	T9	T0	NoRel	true	شماریات	حمل
+Relation	T9	T14	NoRel	true	شماریات	اثرات
+Relation	T9	T23	NoRel	true	شماریات	خطرہ

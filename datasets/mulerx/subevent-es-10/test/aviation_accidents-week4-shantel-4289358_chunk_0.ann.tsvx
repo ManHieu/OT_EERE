@@ -1,0 +1,25 @@
+Text	El VUELO 883 DE AERO CARIBBEAN fue un vuelo internacional entre el de Aeropuerto Internacional Toussaint Louverture de Puerto Príncipe , Haití y el Aeropuerto Internacional José Martí de La Habana , Cuba , con escala en el Aeropuerto Internacional de Santiago de Cuba operado por la compañía cubana Aero Caribbean .	El aparato , un ATR 72-212 , se estrelló el 4 de noviembre de 2010 en torno a Guasimal , en la provincia de Sancti Spíritus , falleciendo sus 68 ocupantes — 61 pasajeros y 7 tripulantes — .	Es el accidente más mortal de un ATR 72 junto con el vuelo 4184 de American Eagle estrellado en octubre de 1994 , ya que tienen el mismo número de víctimas .	Además , curiosamente el desastre de ambos vuelos fueron causados por la misma razón : el engelamiento .	El avión involucrado era un ATR 72-212 con matrícula CU-T1549 , que operaba con Aero Caribean desde .
+Event	T0	escala	EVENT	210
+Event	T1	operado	EVENT	268
+Event	T2	estrelló	EVENT	348
+Event	T3	falleciendo	EVENT	442
+Event	T4	accidente	EVENT	512
+Event	T5	mortal	EVENT	526
+Event	T6	estrellado	EVENT	588
+Event	T7	desastre	EVENT	689
+Event	T8	causados	EVENT	721
+Event	T9	engelamiento	EVENT	754
+Event	T10	involucrado	EVENT	778
+Event	T11	operaba	EVENT	837
+Event	T12	VUELO	EVENT	3
+Relation	T12	T2	SuperSub	true	VUELO	estrelló
+Relation	T2	T12	SubSuper	true	estrelló	VUELO
+Relation	T0	T12	NoRel	true	escala	VUELO
+Relation	T11	T2	NoRel	true	operaba	estrelló
+Relation	T12	T7	NoRel	true	VUELO	desastre
+Relation	T2	T6	NoRel	true	estrelló	estrellado
+Relation	T4	T7	NoRel	true	accidente	desastre
+Relation	T4	T8	NoRel	true	accidente	causados
+Relation	T5	T12	NoRel	true	mortal	VUELO
+Relation	T6	T4	NoRel	true	estrellado	accidente
+Relation	T9	T11	NoRel	true	engelamiento	operaba

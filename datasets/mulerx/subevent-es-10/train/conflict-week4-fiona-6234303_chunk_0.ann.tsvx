@@ -1,0 +1,38 @@
+Text	La HUELGA DE LAS CAMISERAS DE NUEVA YORK DE 1909 ( en inglés : _ New York shirtwaist strike of 1909 _ ) o LEVANTAMIENTO DE LAS 20_000 , fue una huelga laboral en la que participaron principalmente mujeres inmigrantes de origen europeo y de familia judía que trabajaban en Nueva York en las fábricas textiles de camisas .	La huelga fue liderada por Clara Lemlich , de origen ruso , y apoyado por la _ Liga Nacional de Sindicatos de Mujeres de América _ ( _ National Women's Trade Union League of America _ - NWTUL ) .	La huelga comenzó el 23 de noviembre de 1909 .	En febrero de 1910 , la NWTUL acordó con los dueños de algunas fábricas la mejora en los salarios , mejores condiciones laborales y reducción de la jornada laboral .	La huelga general fue suspendida el 15 de febrero de 1910 aunque algunas protestas continuaron .
+Event	T0	HUELGA	EVENT	3
+Event	T1	strike	EVENT	85
+Event	T2	LEVANTAMIENTO	EVENT	106
+Event	T3	participaron	EVENT	169
+Event	T4	trabajaban	EVENT	258
+Event	T5	liderada	EVENT	335
+Event	T6	apoyado	EVENT	383
+Event	T7	comenzó	EVENT	527
+Event	T8	mejora	EVENT	639
+Event	T9	reducción	EVENT	696
+Event	T10	huelga	EVENT	733
+Event	T11	suspendida	EVENT	752
+Event	T12	continuaron	EVENT	813
+Event	T13	huelga	EVENT	520
+Relation	T0	T3	NoRel	true	HUELGA	participaron
+Relation	T0	T4	NoRel	true	HUELGA	trabajaban
+Relation	T1	T4	NoRel	true	strike	trabajaban
+Relation	T1	T8	NoRel	true	strike	mejora
+Relation	T10	T6	NoRel	true	huelga	apoyado
+Relation	T10	T9	NoRel	true	huelga	reducción
+Relation	T11	T10	NoRel	true	suspendida	huelga
+Relation	T11	T4	NoRel	true	suspendida	trabajaban
+Relation	T11	T7	NoRel	true	suspendida	comenzó
+Relation	T12	T3	NoRel	true	continuaron	participaron
+Relation	T13	T5	NoRel	true	huelga	liderada
+Relation	T13	T7	NoRel	true	huelga	comenzó
+Relation	T2	T12	NoRel	true	LEVANTAMIENTO	continuaron
+Relation	T3	T12	NoRel	true	participaron	continuaron
+Relation	T3	T2	NoRel	true	participaron	LEVANTAMIENTO
+Relation	T3	T6	NoRel	true	participaron	apoyado
+Relation	T4	T8	NoRel	true	trabajaban	mejora
+Relation	T5	T2	NoRel	true	liderada	LEVANTAMIENTO
+Relation	T5	T8	NoRel	true	liderada	mejora
+Relation	T7	T5	NoRel	true	comenzó	liderada
+Relation	T7	T8	NoRel	true	comenzó	mejora
+Relation	T8	T7	NoRel	true	mejora	comenzó
+Relation	T9	T2	NoRel	true	reducción	LEVANTAMIENTO

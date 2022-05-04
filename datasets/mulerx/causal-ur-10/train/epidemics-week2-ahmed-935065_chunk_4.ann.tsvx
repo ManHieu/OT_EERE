@@ -1,0 +1,25 @@
+Text	وزارت صحت نے بتایا کہ اس علاقے میں سب سے پہلے ایک مریض میں انفیکشن کی تصدیق ہو گئی تھی جس کے بعد مزید 321 افراد انفیکشن میں پائے گئے تھے ۔	اس انفیکشن کو پھیلنے سے روکنے کے لیے حکومت نے دار الحکومت کے دو مضافاتی علاقوں میں کرفیو نافذ کر دیا ، اسکولوں اور یونیورسٹیوں کو بند کر دیا اور عوامی آمد و رفت پر پابندی لگا دی ۔	اس واقعے کے منظر عام پر آنے تک ملک میں انفکشن کے 3,471 معاملے رپورٹ ہوئے ہیں اور 13 کی موت ہو گئی تھی ۔	زمرہ : ایشیا میں کورونا وائرس کی وبا ، 2020ء زمرہ : کورونا وائرس کی وبا بلحاظ ملک و علاقہ ، 2019ء -	2020ء زمرہ : صفحات مع_گراف
+Event	T0	بتایا	EVENT	13
+Event	T1	انفیکشن	EVENT	59
+Event	T10	بند	EVENT	269
+Event	T11	واقعے	EVENT	322
+Event	T13	انفکشن	EVENT	358
+Event	T2	تصدیق	EVENT	70
+Event	T4	انفیکشن	EVENT	112
+Event	T6	انفیکشن	EVENT	142
+Event	T7	پھیلنے	EVENT	153
+Event	T8	روکنے	EVENT	163
+Relation	T1	T2	CauseEffect	true	انفیکشن	تصدیق
+Relation	T2	T1	EffectCause	true	تصدیق	انفیکشن
+Relation	T6	T7	CauseEffect	true	انفیکشن	پھیلنے
+Relation	T7	T6	EffectCause	true	پھیلنے	انفیکشن
+Relation	T0	T4	NoRel	true	بتایا	انفیکشن
+Relation	T0	T8	NoRel	true	بتایا	روکنے
+Relation	T10	T13	NoRel	true	بند	انفکشن
+Relation	T13	T7	NoRel	true	انفکشن	پھیلنے
+Relation	T4	T0	NoRel	true	انفیکشن	بتایا
+Relation	T4	T11	NoRel	true	انفیکشن	واقعے
+Relation	T4	T7	NoRel	true	انفیکشن	پھیلنے
+Relation	T7	T10	NoRel	true	پھیلنے	بند
+Relation	T7	T8	NoRel	true	پھیلنے	روکنے
+Relation	T8	T0	NoRel	true	روکنے	بتایا

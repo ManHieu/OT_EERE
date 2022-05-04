@@ -1,0 +1,51 @@
+Text	El piloto rechazó el despegue con aproximadamente 600 pies restantes de pista .	El piloto seleccionó la potencia del motor en ralentí , el empuje de la hélice en reversa y los flaps a 0 ° para maximizar la tracción de frenado .	La aeronave continuó pasando el final de la pista 33 .	La aeronave viajaba a una velocidad relativamente baja , pero el piloto no pudo detenerse antes de que la aeronave descendiera por la pendiente empinada y descendiera por un terraplén antes de detenerse en un barranco .	Como resultado del impacto , la aeronave resultó dañada y su sistema de combustible se vio afectado , por lo que se produjo un incendio posterior al accidente .
+Event	T0	rechazó	EVENT	10
+Event	T1	despegue	EVENT	21
+Event	T2	seleccionó	EVENT	90
+Event	T3	ralentí	EVENT	126
+Event	T4	empuje	EVENT	139
+Event	T5	tracción	EVENT	206
+Event	T6	frenado	EVENT	218
+Event	T7	pasando	EVENT	249
+Event	T8	viajaba	EVENT	295
+Event	T10	descendiera	EVENT	398
+Event	T11	descendiera	EVENT	438
+Event	T12	detenerse	EVENT	476
+Event	T13	impacto	EVENT	522
+Event	T14	dañada	EVENT	552
+Event	T15	afectado	EVENT	594
+Event	T17	accidente	EVENT	652
+Event	T16	incendio	EVENT	630
+Relation	T17	T13	SuperSub	true	accidente	impacto
+Relation	T13	T17	SubSuper	true	impacto	accidente
+Relation	T0	T13	NoRel	true	rechazó	impacto
+Relation	T0	T14	NoRel	true	rechazó	dañada
+Relation	T0	T2	NoRel	true	rechazó	seleccionó
+Relation	T10	T2	NoRel	true	descendiera	seleccionó
+Relation	T11	T2	NoRel	true	descendiera	seleccionó
+Relation	T12	T0	NoRel	true	detenerse	rechazó
+Relation	T12	T17	NoRel	true	detenerse	accidente
+Relation	T12	T2	NoRel	true	detenerse	seleccionó
+Relation	T12	T8	NoRel	true	detenerse	viajaba
+Relation	T13	T0	NoRel	true	impacto	rechazó
+Relation	T13	T15	NoRel	true	impacto	afectado
+Relation	T14	T12	NoRel	true	dañada	detenerse
+Relation	T15	T0	NoRel	true	afectado	rechazó
+Relation	T15	T13	NoRel	true	afectado	impacto
+Relation	T17	T6	NoRel	true	accidente	frenado
+Relation	T2	T0	NoRel	true	seleccionó	rechazó
+Relation	T2	T10	NoRel	true	seleccionó	descendiera
+Relation	T2	T17	NoRel	true	seleccionó	accidente
+Relation	T3	T0	NoRel	true	ralentí	rechazó
+Relation	T3	T11	NoRel	true	ralentí	descendiera
+Relation	T3	T12	NoRel	true	ralentí	detenerse
+Relation	T3	T15	NoRel	true	ralentí	afectado
+Relation	T4	T12	NoRel	true	empuje	detenerse
+Relation	T4	T6	NoRel	true	empuje	frenado
+Relation	T4	T7	NoRel	true	empuje	pasando
+Relation	T5	T11	NoRel	true	tracción	descendiera
+Relation	T5	T2	NoRel	true	tracción	seleccionó
+Relation	T6	T15	NoRel	true	frenado	afectado
+Relation	T8	T1	NoRel	true	viajaba	despegue
+Relation	T8	T13	NoRel	true	viajaba	impacto
+Relation	T8	T5	NoRel	true	viajaba	tracción

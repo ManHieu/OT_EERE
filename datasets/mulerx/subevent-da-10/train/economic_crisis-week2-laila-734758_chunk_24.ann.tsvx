@@ -1,0 +1,31 @@
+Text	Den tekniske udvikling omfattede ligeledes opfindelsen af finere sigter , de såkaldte tromlesigter i ca. 1820 .	Oprindelig var de fleste mekaniske dele , kamhjul , aksler m.v. i mølleriet tilvirket i træ .	I 1754 konstruerede englænderen John Smeaton det første vingehoved i stål .	I en videnskabelig artikel fra 1759 redegjorde han for eksperimenter , udført på små modeller af vand- og vindmøller , hvor den øgede effektivitet i mølleriet gennem anvendelse af stål i stedet for træ i møllernes gangtøj blev underbygget .	Internationalt anerkendte eksperter har vurderet , at den øgede effektivitet , som Smeatons eksperimenter tilførte mølleriet , var en afgørende faktor i Den industrielle revolution .
+Event	T0	omfattede	EVENT	23
+Event	T1	opfindelsen	EVENT	43
+Event	T10	tilførte	EVENT	629
+Event	T2	tilvirket	EVENT	188
+Event	T3	konstruerede	EVENT	213
+Event	T4	redegjorde	EVENT	318
+Event	T5	eksperimenter	EVENT	337
+Event	T6	udført	EVENT	353
+Event	T7	anvendelse	EVENT	448
+Event	T8	underbygget	EVENT	509
+Event	T9	vurderet	EVENT	563
+Relation	T10	T9	SuperSub	true	tilførte	vurderet
+Relation	T9	T10	SubSuper	true	vurderet	tilførte
+Relation	T2	T3	SuperSub	true	tilvirket	konstruerede
+Relation	T3	T2	SubSuper	true	konstruerede	tilvirket
+Relation	T5	T7	SuperSub	true	eksperimenter	anvendelse
+Relation	T7	T5	SubSuper	true	anvendelse	eksperimenter
+Relation	T0	T1	SuperSub	true	omfattede	opfindelsen
+Relation	T1	T0	SubSuper	true	opfindelsen	omfattede
+Relation	T4	T9	SuperSub	true	redegjorde	vurderet
+Relation	T9	T4	SubSuper	true	vurderet	redegjorde
+Relation	T0	T2	NoRel	true	omfattede	tilvirket
+Relation	T2	T8	NoRel	true	tilvirket	underbygget
+Relation	T3	T9	NoRel	true	konstruerede	vurderet
+Relation	T4	T10	NoRel	true	redegjorde	tilførte
+Relation	T5	T2	NoRel	true	eksperimenter	tilvirket
+Relation	T5	T9	NoRel	true	eksperimenter	vurderet
+Relation	T6	T0	NoRel	true	udført	omfattede
+Relation	T6	T1	NoRel	true	udført	opfindelsen
+Relation	T8	T3	NoRel	true	underbygget	konstruerede

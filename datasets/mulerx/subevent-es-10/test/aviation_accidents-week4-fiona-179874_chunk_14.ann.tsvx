@@ -1,0 +1,85 @@
+Text	Cuando cayeron las máscaras de oxígeno en la cabina , la tripulación no interpretó el hecho como una falla de presurización y no se realizó el protocolo de avión en descenso brusco , lo que no acaeció .	Los minutos de oxigenación se acabaron y los tripulantes y pasajeros pasaron a un cuadro de hipoxia somnolienta , solo el sobrecargo Prodromou se dio cuenta de que algo andaba muy mal y reaccionó buscando las botellas de aire a presión lo que le dio unos 30 minutos más de vida .	Para cuando pudo hacerse con los mandos , no pudo controlarlo debido a su inexperiencia con los 737 , finalmente el avión quedó sin combustible y se desplomó .	El 23 de diciembre de 2008 , Helios Airways y cuatro de sus funcionarios fueron acusados en Chipre de 119 cargos de homicidio involuntario y muerte por imprudencia y negligencia .	Los cuatro funcionarios acusados fueron el ex piloto jefe Ianko Stoimenov , el presidente de la junta Andreas Drakos , el director ejecutivo Demetris Pantazis y el gerente de operaciones Giorgos Kikidis .
+Event	T0	cayeron	EVENT	7
+Event	T1	interpretó	EVENT	72
+Event	T2	hecho	EVENT	86
+Event	T3	falla	EVENT	101
+Event	T4	presurización	EVENT	110
+Event	T5	realizó	EVENT	132
+Event	T6	protocolo	EVENT	143
+Event	T7	descenso	EVENT	165
+Event	T8	acaeció	EVENT	193
+Event	T9	oxigenación	EVENT	218
+Event	T10	acabaron	EVENT	233
+Event	T11	cuadro	EVENT	285
+Event	T12	sobrecargo	EVENT	325
+Event	T13	buscando	EVENT	399
+Event	T14	dio	EVENT	449
+Event	T15	inexperiencia	EVENT	557
+Event	T16	quedó	EVENT	605
+Event	T17	desplomó	EVENT	632
+Event	T18	acusados	EVENT	723
+Event	T19	cargos	EVENT	749
+Event	T20	homicidio	EVENT	759
+Event	T21	muerte	EVENT	784
+Event	T22	acusados	EVENT	847
+Event	T23	controlarlo	EVENT	533
+Relation	T15	T23	SuperSub	true	inexperiencia	controlarlo
+Relation	T23	T15	SubSuper	true	controlarlo	inexperiencia
+Relation	T0	T12	NoRel	true	cayeron	sobrecargo
+Relation	T0	T2	NoRel	true	cayeron	hecho
+Relation	T0	T8	NoRel	true	cayeron	acaeció
+Relation	T1	T14	NoRel	true	interpretó	dio
+Relation	T1	T17	NoRel	true	interpretó	desplomó
+Relation	T1	T4	NoRel	true	interpretó	presurización
+Relation	T1	T7	NoRel	true	interpretó	descenso
+Relation	T10	T19	NoRel	true	acabaron	cargos
+Relation	T10	T21	NoRel	true	acabaron	muerte
+Relation	T11	T1	NoRel	true	cuadro	interpretó
+Relation	T12	T14	NoRel	true	sobrecargo	dio
+Relation	T13	T0	NoRel	true	buscando	cayeron
+Relation	T13	T11	NoRel	true	buscando	cuadro
+Relation	T13	T15	NoRel	true	buscando	inexperiencia
+Relation	T13	T23	NoRel	true	buscando	controlarlo
+Relation	T14	T10	NoRel	true	dio	acabaron
+Relation	T15	T16	NoRel	true	inexperiencia	quedó
+Relation	T15	T19	NoRel	true	inexperiencia	cargos
+Relation	T15	T22	NoRel	true	inexperiencia	acusados
+Relation	T16	T0	NoRel	true	quedó	cayeron
+Relation	T16	T13	NoRel	true	quedó	buscando
+Relation	T16	T15	NoRel	true	quedó	inexperiencia
+Relation	T16	T17	NoRel	true	quedó	desplomó
+Relation	T16	T7	NoRel	true	quedó	descenso
+Relation	T16	T8	NoRel	true	quedó	acaeció
+Relation	T17	T12	NoRel	true	desplomó	sobrecargo
+Relation	T17	T16	NoRel	true	desplomó	quedó
+Relation	T17	T18	NoRel	true	desplomó	acusados
+Relation	T17	T23	NoRel	true	desplomó	controlarlo
+Relation	T17	T7	NoRel	true	desplomó	descenso
+Relation	T18	T3	NoRel	true	acusados	falla
+Relation	T19	T11	NoRel	true	cargos	cuadro
+Relation	T20	T11	NoRel	true	homicidio	cuadro
+Relation	T20	T3	NoRel	true	homicidio	falla
+Relation	T20	T9	NoRel	true	homicidio	oxigenación
+Relation	T21	T2	NoRel	true	muerte	hecho
+Relation	T23	T11	NoRel	true	controlarlo	cuadro
+Relation	T23	T6	NoRel	true	controlarlo	protocolo
+Relation	T3	T15	NoRel	true	falla	inexperiencia
+Relation	T3	T18	NoRel	true	falla	acusados
+Relation	T4	T10	NoRel	true	presurización	acabaron
+Relation	T4	T2	NoRel	true	presurización	hecho
+Relation	T5	T23	NoRel	true	realizó	controlarlo
+Relation	T5	T8	NoRel	true	realizó	acaeció
+Relation	T6	T10	NoRel	true	protocolo	acabaron
+Relation	T6	T9	NoRel	true	protocolo	oxigenación
+Relation	T7	T10	NoRel	true	descenso	acabaron
+Relation	T7	T13	NoRel	true	descenso	buscando
+Relation	T7	T20	NoRel	true	descenso	homicidio
+Relation	T7	T8	NoRel	true	descenso	acaeció
+Relation	T8	T13	NoRel	true	acaeció	buscando
+Relation	T8	T19	NoRel	true	acaeció	cargos
+Relation	T8	T21	NoRel	true	acaeció	muerte
+Relation	T8	T4	NoRel	true	acaeció	presurización
+Relation	T9	T15	NoRel	true	oxigenación	inexperiencia
+Relation	T9	T16	NoRel	true	oxigenación	quedó
+Relation	T9	T22	NoRel	true	oxigenación	acusados
+Relation	T9	T8	NoRel	true	oxigenación	acaeció

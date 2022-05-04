@@ -1,0 +1,19 @@
+Text	küçükresim | Roma vebası sırasında ölüm meleği kapıyı çalarken ; Jules - Elie Delaunay tarafından çizilmiş ve Levasseur tarafından işlenmiştir .	ANTONINUS VEBASI , ayrıca bilinen diğer adıyla GALEN'IN VEBASI ( adını Roma İmparatorluğunda yaşayan Yunan doktorun isminden almıştır ) , MS 165 - 180 yılları arasında yaşandığı tahmin edilen , Yakın Doğu'daki seferlerden Roma İmparatorluğu'na dönen askerler tarafından getirilmiş salgın bir hastalıktır .	Akademisyenler bunun çiçek hastalığı ya da kızamık olduğundan şüphelenmiştir , ancak gerçek sebebi belirsizliğini korumaktadır .	Salgın , Roma imparatoru Lucius Verus'un ( ö. 169 ) hayatını kaybetmesine sebep olmuştur .	Verus , Marcus Aurelius Antoninus'un kral naibiydi .
+Event	T0	vebası	EVENT	18
+Event	T1	ANTONINUS VEBASI	EVENT	145
+Event	T10	dönen	EVENT	389
+Event	T11	getirilmiş	EVENT	415
+Event	T2	çalarken	EVENT	54
+Event	T3	çizilmiş	EVENT	98
+Event	T4	işlenmiştir	EVENT	131
+Event	T7	Salgın	EVENT	580
+Event	T8	GALEN'IN VEBASI	EVENT	192
+Event	T9	almıştır	EVENT	270
+Relation	T2	T1	NoRel	true	çalarken	ANTONINUS VEBASI
+Relation	T2	T3	NoRel	true	çalarken	çizilmiş
+Relation	T2	T4	NoRel	true	çalarken	işlenmiştir
+Relation	T3	T9	NoRel	true	çizilmiş	almıştır
+Relation	T7	T10	NoRel	true	Salgın	dönen
+Relation	T7	T9	NoRel	true	Salgın	almıştır
+Relation	T8	T2	NoRel	true	GALEN'IN VEBASI	çalarken
+Relation	T8	T4	NoRel	true	GALEN'IN VEBASI	işlenmiştir

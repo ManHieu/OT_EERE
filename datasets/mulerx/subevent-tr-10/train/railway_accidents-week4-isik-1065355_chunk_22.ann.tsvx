@@ -1,0 +1,21 @@
+Text	6 yolcu öldü ve 55 kişi yaralandı onların 13_ü çiddi yaralı .	Kazaya demiryolu üzerinde kullanılmasına uygun olmayan retardant sepep oldu .	Bu madde kazadan tajminen 10 dakika önce demiryolu üzerine püskürtülmüştü .	Bu madde ray üzerinde kayganlık yarattığından frenlemeyi imkânsızlaştırıyordu ..	Çarpışmadan 30 dakika sonra , kurtarma operasyonunda , bir kurtarma treni aynı problemle karşılaşıyor ve çok eşit noktada raydan çıkıyordu .
+Event	T0	öldü	EVENT	8
+Event	T1	oldu	EVENT	133
+Event	T2	püskürtülmüştü	EVENT	199
+Event	T3	operasyonunda	EVENT	336
+Event	T4	karşılaşıyor	EVENT	386
+Event	T5	çıkıyordu	EVENT	426
+Event	T6	yaralandı	EVENT	24
+Event	T7	yaralı	EVENT	53
+Event	T8	retardant	EVENT	117
+Event	T9	Kazaya	EVENT	62
+Event	T10	imkânsızlaştırıyordu	EVENT	273
+Relation	T0	T3	NoRel	true	öldü	operasyonunda
+Relation	T1	T4	NoRel	true	oldu	karşılaşıyor
+Relation	T1	T9	NoRel	true	oldu	Kazaya
+Relation	T10	T2	NoRel	true	imkânsızlaştırıyordu	püskürtülmüştü
+Relation	T10	T5	NoRel	true	imkânsızlaştırıyordu	çıkıyordu
+Relation	T3	T1	NoRel	true	operasyonunda	oldu
+Relation	T5	T1	NoRel	true	çıkıyordu	oldu
+Relation	T8	T0	NoRel	true	retardant	öldü
+Relation	T9	T7	NoRel	true	Kazaya	yaralı

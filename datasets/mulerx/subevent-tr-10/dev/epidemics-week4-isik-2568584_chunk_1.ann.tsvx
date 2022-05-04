@@ -1,0 +1,24 @@
+Text	Sosyal mesafe , enfeksiyonun damlacık temasıyla ( öksürme , tükürme veya hapşırma ) bulaştığı durumlarda etkilidir ; cinsel temas da dahil olmak üzere doğrudan fiziksel temas ; dolaylı fiziksel temas ( örneğin ; fomit gibi kirli bir yüzeye dokunarak ) ; veya hava yoluyla bulaşma ( eğer mikroorganizma havada uzun süre hayatta kalabilirse ) .	Sosyal mesafe , enfeksiyonun öncelikle kontamine su , yiyecek veya sivrisinek veya diğer böcekler gibi taşıyıcılar yoluyla ve daha az sıklıkla kişiden kişiye bulaştığı durumlarda daha az etkili olabilir .	Sosyal mesafenin dezavantajları arasında yalnızlık , düşük verimlilik ve toplumsal yapı ile ilişkili faydaların kaybı gösterilebilir .	Sosyal mesafenin , mesafesi ülkelere göre değişmektedir .	Türkiye'de sosyal mesafe uzaklığı 1.5 metredir .
+Event	T0	enfeksiyonun	EVENT	16
+Event	T1	temasıyla	EVENT	38
+Event	T2	tükürme	EVENT	60
+Event	T3	hapşırma	EVENT	73
+Event	T4	bulaştığı	EVENT	84
+Event	T5	temas	EVENT	124
+Event	T6	temas	EVENT	169
+Event	T7	temas	EVENT	194
+Event	T8	bulaşma	EVENT	272
+Event	T9	enfeksiyonun	EVENT	359
+Event	T10	öksürme	EVENT	50
+Event	T11	dokunarak	EVENT	240
+Relation	T0	T7	SuperSub	true	enfeksiyonun	temas
+Relation	T7	T0	SubSuper	true	temas	enfeksiyonun
+Relation	T0	T4	NoRel	true	enfeksiyonun	bulaştığı
+Relation	T10	T11	NoRel	true	öksürme	dokunarak
+Relation	T10	T7	NoRel	true	öksürme	temas
+Relation	T11	T2	NoRel	true	dokunarak	tükürme
+Relation	T2	T3	NoRel	true	tükürme	hapşırma
+Relation	T2	T8	NoRel	true	tükürme	bulaşma
+Relation	T7	T5	NoRel	true	temas	temas
+Relation	T7	T8	NoRel	true	temas	bulaşma
+Relation	T8	T10	NoRel	true	bulaşma	öksürme

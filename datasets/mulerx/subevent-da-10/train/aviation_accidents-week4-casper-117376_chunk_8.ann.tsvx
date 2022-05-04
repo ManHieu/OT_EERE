@@ -1,0 +1,28 @@
+Text	Klokken 07:03 tjekkede al-Ghamdi ind uden bagage , mens al-Nami indskrev med to tasker .	Klokken 07:24 tjekkede al-Haznawi ind med en taske , og klokken 07:39 tjekkede Ziad Jarrah ind uden bagage .	Al-Haznawi var den eneste af flykaprerne , der blev udvalgt til ekstra kontrol .	Hans indtjekkede taske undergik en ekstra scanning for sprængstoffer .	Ingen blandt sikkerhedspersonalet registrerede noget usædvanligt ved flykaprerne .
+Event	T0	tjekkede	EVENT	14
+Event	T1	indskrev	EVENT	64
+Event	T2	tjekkede	EVENT	103
+Event	T3	tjekkede	EVENT	159
+Event	T4	udvalgt	EVENT	250
+Event	T5	kontrol	EVENT	269
+Event	T6	indtjekkede	EVENT	284
+Event	T7	undergik	EVENT	302
+Event	T8	scanning	EVENT	321
+Event	T9	registrerede	EVENT	384
+Relation	T5	T4	SuperSub	true	kontrol	udvalgt
+Relation	T4	T5	SubSuper	true	udvalgt	kontrol
+Relation	T5	T2	SuperSub	true	kontrol	tjekkede
+Relation	T2	T5	SubSuper	true	tjekkede	kontrol
+Relation	T5	T8	SuperSub	true	kontrol	scanning
+Relation	T8	T5	SubSuper	true	scanning	kontrol
+Relation	T7	T9	SuperSub	true	undergik	registrerede
+Relation	T9	T7	SubSuper	true	registrerede	undergik
+Relation	T2	T7	NoRel	true	tjekkede	undergik
+Relation	T3	T0	NoRel	true	tjekkede	tjekkede
+Relation	T3	T6	NoRel	true	tjekkede	indtjekkede
+Relation	T4	T1	NoRel	true	udvalgt	indskrev
+Relation	T6	T2	NoRel	true	indtjekkede	tjekkede
+Relation	T7	T2	NoRel	true	undergik	tjekkede
+Relation	T9	T1	NoRel	true	registrerede	indskrev
+Relation	T9	T2	NoRel	true	registrerede	tjekkede
+Relation	T9	T6	NoRel	true	registrerede	indtjekkede

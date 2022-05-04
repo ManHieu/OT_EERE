@@ -1,0 +1,14 @@
+Text	ARADO AR 234 " Blitz " ( lyn ) var et tysk jetdrevet bombefly , udviklet og produceret for Luftwaffe af Arado Flugzeugwerke , Warnemünde under 2. verdenskrig .	Prototypen fløj første gang 30. juli 1943 og er verdens første jetdrevne bombefly .	2. august 1944 blev Ar 234 også verdens første jetdrevne rekognosceringsfly .	Flyet blev hovedsagelig benyttet som rekognosceringsfly og var så godt som umuligt at bekæmpe .	Kategori : Bombefly Kategori : Observationsfly Kategori : Luftwaffe Kategori : Fly fra 2. verdenskrig Kategori : Militærfly fra Tyskland Kategori : 2-motors jetfly
+Event	T0	udviklet	EVENT	64
+Event	T1	produceret	EVENT	76
+Event	T2	fløj	EVENT	171
+Event	T3	benyttet	EVENT	346
+Event	T4	bekæmpe	EVENT	408
+Relation	T4	T3	SuperSub	true	bekæmpe	benyttet
+Relation	T3	T4	SubSuper	true	benyttet	bekæmpe
+Relation	T0	T2	SuperSub	true	udviklet	fløj
+Relation	T2	T0	SubSuper	true	fløj	udviklet
+Relation	T1	T2	SuperSub	true	produceret	fløj
+Relation	T2	T1	SubSuper	true	fløj	produceret
+Relation	T1	T0	NoRel	true	produceret	udviklet
+Relation	T4	T0	NoRel	true	bekæmpe	udviklet

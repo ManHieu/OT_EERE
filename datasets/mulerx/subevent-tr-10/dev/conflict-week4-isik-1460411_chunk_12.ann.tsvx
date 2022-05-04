@@ -1,0 +1,18 @@
+Text	10 Ekim 1779 tarihinde 3.000 kişilik Kabardey , Hatukuay , Çemguy ve Besleney kuvvetleri 10.000 kişilik Rus ordusu ile savaştı ve Rus ordusuna büyük kayıplar verdirdi .	1799 yılında Gürcistan'ın Rusya’ya ilhak olmasının ardından savaş yayıldı ve cephe genişledi .	Bunun ardından Kabardeyler savaşta birçok seçkin insanlarını ve birçok sivili kaybettiler ve 25 yıl boyunca Rusya’ya karşı büyük bir direniş gösterildi .	Çerkesleri bitirmek isteyen general Bulgakov , Astrahan’dan veba mikrobu getirdi .	Bu , binlerce Çerkesi öldürdü .
+Event	T0	savaştı	EVENT	119
+Event	T1	verdirdi	EVENT	158
+Event	T2	yayıldı	EVENT	235
+Event	T3	genişledi	EVENT	252
+Event	T4	savaşta	EVENT	291
+Event	T5	kaybettiler	EVENT	342
+Event	T6	gösterildi	EVENT	405
+Event	T7	bitirmek	EVENT	429
+Event	T8	getirdi	EVENT	491
+Event	T9	öldürdü	EVENT	523
+Relation	T0	T1	NoRel	true	savaştı	verdirdi
+Relation	T0	T4	NoRel	true	savaştı	savaşta
+Relation	T2	T4	NoRel	true	yayıldı	savaşta
+Relation	T3	T8	NoRel	true	genişledi	getirdi
+Relation	T3	T9	NoRel	true	genişledi	öldürdü
+Relation	T7	T3	NoRel	true	bitirmek	genişledi
+Relation	T9	T6	NoRel	true	öldürdü	gösterildi

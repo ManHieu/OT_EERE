@@ -1,0 +1,29 @@
+Text	RUDOLF LÜTERS ( 10 de mayo de 1883 - 24 de diciembre de 1945 ) fue un general alemán quien sirvió en la Wehrmacht durante la Segunda Guerra Mundial .	Se unió al ejército el 2 de noviembre de 1902 como Fahnenjunker y participó en la Primera Guerra Mundial donde fue herido dos veces , en septiembre de 1914 y en octubre de 1915 .	Durante la Segunda Guerra Mundial , fue seleccionado como comandante de la 223ª división de infantería el 6 de mayo de 1941 , participando con esta unidad en la invasión de la Unión Soviética hasta el 19 de octubre .	El 1 de noviembre de 1942 , fue seleccionado como comandante de las tropas alemanas en Croacia .	Fue promovido a General de Infantería el 1 de febrero de 1943 y se convirtió en el primer comandante del recién creado XV Cuerpo de Montaña el 25 de agosto .
+Event	T0	sirvió	EVENT	91
+Event	T1	unió	EVENT	153
+Event	T2	participó	EVENT	216
+Event	T3	Guerra	EVENT	240
+Event	T4	herido	EVENT	265
+Event	T5	seleccionado	EVENT	369
+Event	T6	participando	EVENT	455
+Event	T7	invasión	EVENT	490
+Event	T8	seleccionado	EVENT	578
+Event	T9	promovido	EVENT	647
+Event	T10	convirtió	EVENT	710
+Event	T11	creado	EVENT	755
+Relation	T0	T9	NoRel	true	sirvió	promovido
+Relation	T1	T2	NoRel	true	unió	participó
+Relation	T1	T4	NoRel	true	unió	herido
+Relation	T1	T6	NoRel	true	unió	participando
+Relation	T10	T0	NoRel	true	convirtió	sirvió
+Relation	T10	T8	NoRel	true	convirtió	seleccionado
+Relation	T11	T6	NoRel	true	creado	participando
+Relation	T3	T1	NoRel	true	Guerra	unió
+Relation	T3	T9	NoRel	true	Guerra	promovido
+Relation	T5	T11	NoRel	true	seleccionado	creado
+Relation	T5	T4	NoRel	true	seleccionado	herido
+Relation	T7	T10	NoRel	true	invasión	convirtió
+Relation	T8	T0	NoRel	true	seleccionado	sirvió
+Relation	T8	T4	NoRel	true	seleccionado	herido
+Relation	T8	T9	NoRel	true	seleccionado	promovido
+Relation	T9	T2	NoRel	true	promovido	participó

@@ -1,0 +1,53 @@
+Text	1996 TUNCELI SALDIRISI , 30 Haziran 1996 tarihinde Tunceli'nin merkez ilçesinde yer alan Tunceli Cumhuriyet Meydanı'nda bayrak töreni için toplanan altmış kişilik askerî birliğe yönelik düzenlenen intihar saldırısıdır .	Zeynep Kınacı olduğu saptanan canlı bomba dahil olmak üzere Astsubay Ali Alıç , Astsubay Cafer Akıncı , Astsubay Hakan Akyar , Er Celal Hatıl , Er İbrahim Sever , Astsubay Önder Yağmur , Er Ahmet Yayman ve Er Yusuf Yıldırım adlı sekiz bandocu asker yaşamını yitirmiş , 29 asker de yaralı kurtulmuştur .	Olay , Türkiye'de meydana gelen ilk canlı bomba saldırısı olarak tarihe geçmiştir .	- Türkiye'deki intihar saldırıları listesi - PKK saldırıları ve çatışmaları kronolojisi ( 1990'lar )	Kategori : Türkiye'deki intihar saldırıları Kategori : Türkiye'de cinayet Kategori : Tunceli merkez Kategori : PKK tarafından düzenlenen saldırılar Kategori : 20. yüzyılda Tunceli Tunceli saldırısı Tunceli saldırısı Tunceli saldırısı
+Event	T1	saldırısıdır	EVENT	205
+Event	T2	yitirmiş	EVENT	478
+Event	T3	kurtulmuştur	EVENT	508
+Event	T4	Olay	EVENT	523
+Event	T5	saldırısı	EVENT	571
+Event	T6	cinayet	EVENT	774
+Event	T7	saldırısı	EVENT	896
+Event	T8	saldırısı	EVENT	914
+Event	T9	1996 TUNCELI SALDIRISI	EVENT	0
+Event	T10	toplanan	EVENT	139
+Event	T11	töreni	EVENT	127
+Event	T12	gelen	EVENT	549
+Event	T13	geçmiştir	EVENT	595
+Event	T14	saldırıları	EVENT	630
+Event	T15	saldırıları	EVENT	656
+Event	T16	çatışmaları	EVENT	671
+Event	T17	saldırıları	EVENT	740
+Event	T18	saldırılar	EVENT	845
+Event	T19	saldırısı	EVENT	932
+Relation	T9	T2	SuperSub	true	1996 TUNCELI SALDIRISI	yitirmiş
+Relation	T2	T9	SubSuper	true	yitirmiş	1996 TUNCELI SALDIRISI
+Relation	T9	T3	SuperSub	true	1996 TUNCELI SALDIRISI	kurtulmuştur
+Relation	T3	T9	SubSuper	true	kurtulmuştur	1996 TUNCELI SALDIRISI
+Relation	T10	T8	NoRel	true	toplanan	saldırısı
+Relation	T11	T15	NoRel	true	töreni	saldırıları
+Relation	T11	T4	NoRel	true	töreni	Olay
+Relation	T12	T1	NoRel	true	gelen	saldırısıdır
+Relation	T12	T15	NoRel	true	gelen	saldırıları
+Relation	T14	T11	NoRel	true	saldırıları	töreni
+Relation	T14	T15	NoRel	true	saldırıları	saldırıları
+Relation	T14	T17	NoRel	true	saldırıları	saldırıları
+Relation	T14	T4	NoRel	true	saldırıları	Olay
+Relation	T14	T5	NoRel	true	saldırıları	saldırısı
+Relation	T15	T14	NoRel	true	saldırıları	saldırıları
+Relation	T15	T19	NoRel	true	saldırıları	saldırısı
+Relation	T15	T6	NoRel	true	saldırıları	cinayet
+Relation	T16	T13	NoRel	true	çatışmaları	geçmiştir
+Relation	T16	T4	NoRel	true	çatışmaları	Olay
+Relation	T17	T7	NoRel	true	saldırıları	saldırısı
+Relation	T18	T9	NoRel	true	saldırılar	1996 TUNCELI SALDIRISI
+Relation	T19	T1	NoRel	true	saldırısı	saldırısıdır
+Relation	T19	T10	NoRel	true	saldırısı	toplanan
+Relation	T19	T15	NoRel	true	saldırısı	saldırıları
+Relation	T3	T8	NoRel	true	kurtulmuştur	saldırısı
+Relation	T4	T2	NoRel	true	Olay	yitirmiş
+Relation	T5	T12	NoRel	true	saldırısı	gelen
+Relation	T6	T12	NoRel	true	cinayet	gelen
+Relation	T6	T4	NoRel	true	cinayet	Olay
+Relation	T7	T15	NoRel	true	saldırısı	saldırıları
+Relation	T7	T5	NoRel	true	saldırısı	saldırısı
+Relation	T7	T9	NoRel	true	saldırısı	1996 TUNCELI SALDIRISI
+Relation	T9	T18	NoRel	true	1996 TUNCELI SALDIRISI	saldırılar

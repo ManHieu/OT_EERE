@@ -1,0 +1,107 @@
+Text	Se transforma en bailarina exótica en el prestigioso cabaré _ Yoshiwara _ , y así excita a los asistentes y nubla su razón para promover la discordia y la decadencia entre los jóvenes adinerados .	Siguiendo los malos consejos del robot , los trabajadores inician una revuelta y destruyen la « Máquina Corazón » , que proporciona la energía que hace funcionar todas las demás maquinarias de Metrópolis .	La destrucción de la máquina también provoca que los tanques de agua de la ciudad se aneguen , e inunden el submundo de los trabajadores , quienes , cegados por el discurso del robot , han descuidado la seguridad de sus hijos , que terminan siendo rescatados por Freder y la verdadera María .	Al darse cuenta de su grave error , los trabajadores , desesperados , salen a la superficie en busca de su « enemiga en la ciudadela » , la presunta María .	La muchedumbre invade el distrito de diversiones de la ciudad y captura a la falsa María , a la que atan a una estaca y prenden fuego , mientras Freder observa todo y desespera .
+Event	T0	transforma	EVENT	3
+Event	T1	excita	EVENT	82
+Event	T2	nubla	EVENT	108
+Event	T3	promover	EVENT	128
+Event	T4	discordia	EVENT	140
+Event	T5	decadencia	EVENT	155
+Event	T6	consejos	EVENT	217
+Event	T7	inician	EVENT	255
+Event	T8	revuelta	EVENT	267
+Event	T9	destruyen	EVENT	278
+Event	T10	proporciona	EVENT	317
+Event	T11	funcionar	EVENT	349
+Event	T12	destrucción	EVENT	406
+Event	T13	provoca	EVENT	440
+Event	T14	aneguen	EVENT	488
+Event	T15	inunden	EVENT	500
+Event	T16	cegados	EVENT	552
+Event	T17	descuidado	EVENT	592
+Event	T18	terminan	EVENT	635
+Event	T19	rescatados	EVENT	651
+Event	T20	error	EVENT	724
+Event	T21	salen	EVENT	766
+Event	T22	invade	EVENT	868
+Event	T23	diversiones	EVENT	890
+Event	T24	captura	EVENT	917
+Event	T25	atan	EVENT	953
+Event	T26	observa	EVENT	1005
+Event	T27	desespera	EVENT	1020
+Relation	T0	T1	SuperSub	true	transforma	excita
+Relation	T1	T0	SubSuper	true	excita	transforma
+Relation	T0	T2	SuperSub	true	transforma	nubla
+Relation	T2	T0	SubSuper	true	nubla	transforma
+Relation	T0	T12	NoRel	true	transforma	destrucción
+Relation	T0	T27	NoRel	true	transforma	desespera
+Relation	T0	T7	NoRel	true	transforma	inician
+Relation	T10	T17	NoRel	true	proporciona	descuidado
+Relation	T10	T18	NoRel	true	proporciona	terminan
+Relation	T10	T19	NoRel	true	proporciona	rescatados
+Relation	T11	T14	NoRel	true	funcionar	aneguen
+Relation	T11	T18	NoRel	true	funcionar	terminan
+Relation	T11	T23	NoRel	true	funcionar	diversiones
+Relation	T12	T0	NoRel	true	destrucción	transforma
+Relation	T12	T18	NoRel	true	destrucción	terminan
+Relation	T12	T19	NoRel	true	destrucción	rescatados
+Relation	T12	T5	NoRel	true	destrucción	decadencia
+Relation	T12	T8	NoRel	true	destrucción	revuelta
+Relation	T13	T11	NoRel	true	provoca	funcionar
+Relation	T13	T12	NoRel	true	provoca	destrucción
+Relation	T13	T27	NoRel	true	provoca	desespera
+Relation	T14	T1	NoRel	true	aneguen	excita
+Relation	T14	T11	NoRel	true	aneguen	funcionar
+Relation	T14	T15	NoRel	true	aneguen	inunden
+Relation	T14	T24	NoRel	true	aneguen	captura
+Relation	T14	T27	NoRel	true	aneguen	desespera
+Relation	T15	T2	NoRel	true	inunden	nubla
+Relation	T16	T20	NoRel	true	cegados	error
+Relation	T16	T9	NoRel	true	cegados	destruyen
+Relation	T17	T10	NoRel	true	descuidado	proporciona
+Relation	T17	T3	NoRel	true	descuidado	promover
+Relation	T18	T0	NoRel	true	terminan	transforma
+Relation	T18	T13	NoRel	true	terminan	provoca
+Relation	T18	T17	NoRel	true	terminan	descuidado
+Relation	T19	T1	NoRel	true	rescatados	excita
+Relation	T2	T10	NoRel	true	nubla	proporciona
+Relation	T2	T15	NoRel	true	nubla	inunden
+Relation	T2	T23	NoRel	true	nubla	diversiones
+Relation	T2	T6	NoRel	true	nubla	consejos
+Relation	T20	T11	NoRel	true	error	funcionar
+Relation	T20	T14	NoRel	true	error	aneguen
+Relation	T20	T16	NoRel	true	error	cegados
+Relation	T20	T2	NoRel	true	error	nubla
+Relation	T20	T26	NoRel	true	error	observa
+Relation	T21	T19	NoRel	true	salen	rescatados
+Relation	T21	T4	NoRel	true	salen	discordia
+Relation	T22	T1	NoRel	true	invade	excita
+Relation	T22	T23	NoRel	true	invade	diversiones
+Relation	T23	T12	NoRel	true	diversiones	destrucción
+Relation	T23	T3	NoRel	true	diversiones	promover
+Relation	T23	T5	NoRel	true	diversiones	decadencia
+Relation	T23	T6	NoRel	true	diversiones	consejos
+Relation	T24	T16	NoRel	true	captura	cegados
+Relation	T24	T2	NoRel	true	captura	nubla
+Relation	T24	T23	NoRel	true	captura	diversiones
+Relation	T25	T10	NoRel	true	atan	proporciona
+Relation	T25	T13	NoRel	true	atan	provoca
+Relation	T25	T15	NoRel	true	atan	inunden
+Relation	T25	T2	NoRel	true	atan	nubla
+Relation	T26	T17	NoRel	true	observa	descuidado
+Relation	T26	T3	NoRel	true	observa	promover
+Relation	T27	T18	NoRel	true	desespera	terminan
+Relation	T27	T7	NoRel	true	desespera	inician
+Relation	T3	T16	NoRel	true	promover	cegados
+Relation	T3	T25	NoRel	true	promover	atan
+Relation	T3	T7	NoRel	true	promover	inician
+Relation	T4	T21	NoRel	true	discordia	salen
+Relation	T4	T24	NoRel	true	discordia	captura
+Relation	T4	T27	NoRel	true	discordia	desespera
+Relation	T4	T3	NoRel	true	discordia	promover
+Relation	T6	T0	NoRel	true	consejos	transforma
+Relation	T7	T0	NoRel	true	inician	transforma
+Relation	T7	T18	NoRel	true	inician	terminan
+Relation	T7	T19	NoRel	true	inician	rescatados
+Relation	T7	T21	NoRel	true	inician	salen
+Relation	T7	T24	NoRel	true	inician	captura
+Relation	T8	T17	NoRel	true	revuelta	descuidado
+Relation	T8	T7	NoRel	true	revuelta	inician

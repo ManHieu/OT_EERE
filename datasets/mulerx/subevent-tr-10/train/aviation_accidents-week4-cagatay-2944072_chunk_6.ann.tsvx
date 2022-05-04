@@ -1,0 +1,26 @@
+Text	Çarpışma sonucu ise ikinci pilot hayatını kaybetti ve 51'i ağır ( 2 mürettebat ile beraber ) , 56 kişi yaralandı .	- Air France Flight 358 , bir Airbus A340 ( F - GLZQ ) pisti aşarak ve 2005 yılında Toronto Pearson Uluslararası Havaalanında düştü .	- TAM Airlines Flight 3054 , bir Airbus A320 ( PR - MBK ) pisti aşarak 2007 yılında São Paulo - Congonhas Havaalanında bir benzin istasyonuna çarptı .	- - " 14 Eylül 1993'te Varşova'daki Airbus A320 - 211 Uçağına Kaza Raporu " ( Arşiv ) - Ana Komisyon Uçak Kazası Soruşturması - Ekler ( Arşiv ) - CVR transkripti , Frenleme Sisteminin Dokümantasyonu , Lufthansa A320 kullanım kılavuzundan alıntı	Kategori : 1993'te Polonya Kategori : Lufthansa Kategori : Polonya'daki havacılık kazaları ve olayları Kategori : 1993'te havacılık kazaları ve olayları
+Event	T0	kaybetti	EVENT	42
+Event	T1	yaralandı	EVENT	103
+Event	T2	aşarak	EVENT	176
+Event	T3	düştü	EVENT	241
+Event	T4	aşarak	EVENT	313
+Event	T5	çarptı	EVENT	391
+Event	T7	Soruşturması	EVENT	513
+Event	T9	alıntı	EVENT	638
+Event	T10	kazaları	EVENT	777
+Event	T11	olayları	EVENT	789
+Event	T12	Çarpışma	EVENT	0
+Event	T6	Kaza	EVENT	462
+Relation	T1	T10	NoRel	true	yaralandı	kazaları
+Relation	T1	T12	NoRel	true	yaralandı	Çarpışma
+Relation	T1	T2	NoRel	true	yaralandı	aşarak
+Relation	T1	T6	NoRel	true	yaralandı	Kaza
+Relation	T10	T3	NoRel	true	kazaları	düştü
+Relation	T10	T9	NoRel	true	kazaları	alıntı
+Relation	T3	T9	NoRel	true	düştü	alıntı
+Relation	T5	T1	NoRel	true	çarptı	yaralandı
+Relation	T6	T2	NoRel	true	Kaza	aşarak
+Relation	T6	T5	NoRel	true	Kaza	çarptı
+Relation	T6	T7	NoRel	true	Kaza	Soruşturması
+Relation	T7	T12	NoRel	true	Soruşturması	Çarpışma
+Relation	T7	T3	NoRel	true	Soruşturması	düştü

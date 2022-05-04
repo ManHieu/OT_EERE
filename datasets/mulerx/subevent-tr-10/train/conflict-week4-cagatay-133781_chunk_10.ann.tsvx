@@ -1,0 +1,33 @@
+Text	( Fırat - Dicle Seferi )	Şah İsmail'in 1524 yılında ölümüyle birlikten yerine oğlu I. Tahmasb geçti .	Şah Tahmasb tahta çıktığında henüz 10 yaşındaydı .	Bu yüzden ilk yılları savaşsız geçen Şah Tahmasp ; tahta çıktıktan 10 yıl sonra Osmanlı İmparatorluğu ile mücadeleye başladı .	1529 yılında İran’ın Bağdad valisi Zülfikar Han’ın Osmanlı Devleti’ne , buna karşılık Osmanlı Bitlis valisi Şeref Han’ın da İran’a iltihak etmeleri ortalığı karıştırdı , İran şahı I. Tahmasb , Osmanlı kuvvetlerinin Avrupa’da sefere çıkmasından istifade ederek Bağdad’a asker gönderip , Zülfikar Han’ı öldürttü ve yeni bir vali tayin etti .
+Event	T0	geçti	EVENT	94
+Event	T3	karıştırdı	EVENT	437
+Event	T4	istifade	EVENT	524
+Event	T5	öldürttü	EVENT	581
+Event	T6	etti	EVENT	613
+Event	T7	ölümüyle	EVENT	52
+Event	T8	çıktığında	EVENT	120
+Event	T9	geçen	EVENT	184
+Event	T10	çıktıktan	EVENT	210
+Event	T11	mücadeleye	EVENT	259
+Event	T1	iltihak	EVENT	411
+Event	T2	çıkmasından	EVENT	512
+Event	T12	gönderip	EVENT	555
+Relation	T11	T1	SuperSub	true	mücadeleye	iltihak
+Relation	T1	T11	SubSuper	true	iltihak	mücadeleye
+Relation	T11	T3	SuperSub	true	mücadeleye	karıştırdı
+Relation	T3	T11	SubSuper	true	karıştırdı	mücadeleye
+Relation	T11	T4	SuperSub	true	mücadeleye	istifade
+Relation	T4	T11	SubSuper	true	istifade	mücadeleye
+Relation	T1	T8	NoRel	true	iltihak	çıktığında
+Relation	T10	T1	NoRel	true	çıktıktan	iltihak
+Relation	T10	T12	NoRel	true	çıktıktan	gönderip
+Relation	T11	T12	NoRel	true	mücadeleye	gönderip
+Relation	T12	T2	NoRel	true	gönderip	çıkmasından
+Relation	T12	T8	NoRel	true	gönderip	çıktığında
+Relation	T2	T0	NoRel	true	çıkmasından	geçti
+Relation	T2	T12	NoRel	true	çıkmasından	gönderip
+Relation	T3	T5	NoRel	true	karıştırdı	öldürttü
+Relation	T4	T6	NoRel	true	istifade	etti
+Relation	T6	T0	NoRel	true	etti	geçti
+Relation	T6	T4	NoRel	true	etti	istifade
+Relation	T9	T12	NoRel	true	geçen	gönderip

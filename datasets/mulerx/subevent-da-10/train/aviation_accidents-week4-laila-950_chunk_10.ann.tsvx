@@ -1,0 +1,34 @@
+Text	Efter omfattende forhandlinger med regeringerne i New Jersey og New York blev man med havnemyndigheden enige om at bakke op om projektet , som skulle opføres på det sted , hvor der lå en Radio Row på vestsiden af Manhattan .	For at gøre aftalen acceptabel for New Jersey skulle havnemyndigheden indvillige i at overtage den konkursramte Hudson & Manhattan Railroad ( omdøbt til PATH ) , som bragte pendlere fra New Jersey til Lower Manhattan .	Opførelsen af det nordlige tårn startede i august 1968 , og det sydlige tårn i 1969 .	I december 1970 flyttede de første lejere ind i det nordlige tårn , og i januar 1972 ind i det sydlige tårn .	I 1970'erne opførte man fire andre bygninger som en del af projektet .
+Event	T0	forhandlinger	EVENT	17
+Event	T1	enige	EVENT	103
+Event	T2	opføres	EVENT	150
+Event	T3	overtage	EVENT	311
+Event	T4	omdøbt	EVENT	367
+Event	T5	bragte	EVENT	391
+Event	T6	Opførelsen	EVENT	444
+Event	T7	startede	EVENT	476
+Event	T8	opførte	EVENT	652
+Event	T9	konkursramte	EVENT	324
+Event	T10	flyttede	EVENT	546
+Event	T11	lå	EVENT	181
+Event	T12	acceptabel	EVENT	245
+Relation	T6	T10	SuperSub	true	Opførelsen	flyttede
+Relation	T10	T6	SubSuper	true	flyttede	Opførelsen
+Relation	T0	T12	NoRel	true	forhandlinger	acceptabel
+Relation	T0	T6	NoRel	true	forhandlinger	Opførelsen
+Relation	T1	T7	NoRel	true	enige	startede
+Relation	T10	T8	NoRel	true	flyttede	opførte
+Relation	T11	T6	NoRel	true	lå	Opførelsen
+Relation	T12	T0	NoRel	true	acceptabel	forhandlinger
+Relation	T12	T6	NoRel	true	acceptabel	Opførelsen
+Relation	T12	T7	NoRel	true	acceptabel	startede
+Relation	T2	T1	NoRel	true	opføres	enige
+Relation	T2	T9	NoRel	true	opføres	konkursramte
+Relation	T3	T10	NoRel	true	overtage	flyttede
+Relation	T3	T12	NoRel	true	overtage	acceptabel
+Relation	T3	T9	NoRel	true	overtage	konkursramte
+Relation	T7	T6	NoRel	true	startede	Opførelsen
+Relation	T8	T1	NoRel	true	opførte	enige
+Relation	T8	T10	NoRel	true	opførte	flyttede
+Relation	T8	T11	NoRel	true	opførte	lå
+Relation	T9	T10	NoRel	true	konkursramte	flyttede

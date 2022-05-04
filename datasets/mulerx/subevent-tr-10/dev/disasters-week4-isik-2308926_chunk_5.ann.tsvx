@@ -1,0 +1,15 @@
+Text	12 Haziran'da Shaker üyeleri , soğuktan yok olan ekinleri yeniden ekmek zorunda kaldılar .	7 Temmuz'da hava oldukça soğudu ve hiçbir şey gelişmez oldu .	Berkshire Tepeleri , 23 Ağustos'ta tekrar dondu .	Temmuz ve Ağustos aylarında Pennsylvania'nın kuzeybatısından güneye kadar göl ve nehirlerde buzlanma görüldü .	Don olayı , 20 ve 21 Ağustos tarihlerinde Virginia'nın güneyine kadar uzandı .
+Event	T1	soğudu	EVENT	116
+Event	T3	dondu	EVENT	195
+Event	T4	görüldü	EVENT	304
+Event	T6	uzandı	EVENT	384
+Event	T7	kaldılar	EVENT	80
+Event	T8	soğuktan	EVENT	31
+Event	T9	olan	EVENT	44
+Event	T10	oldu	EVENT	146
+Event	T2	Don	EVENT	314
+Relation	T10	T9	NoRel	true	oldu	olan
+Relation	T4	T10	NoRel	true	görüldü	oldu
+Relation	T4	T9	NoRel	true	görüldü	olan
+Relation	T7	T10	NoRel	true	kaldılar	oldu
+Relation	T8	T10	NoRel	true	soğuktan	oldu

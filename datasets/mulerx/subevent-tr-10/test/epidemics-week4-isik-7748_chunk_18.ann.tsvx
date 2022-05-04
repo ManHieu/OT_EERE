@@ -1,0 +1,16 @@
+Text	Durkheim ve Marx ile karşılaştırılsa , Weber daha çok birey ve kültür üzerine yoğunlaştı ve bu onun yöntembiliminde açıktır .	Durkheim toplum üzerine yoğunlaşırken , Weber birey ve onun eylemleri üzerine yoğunlaştı .	Diğer taraftan Marx maddi dünyanın fikirler dünyası üzerindeki önceliğini savunurken , Weber en azından büyük resimde fikirlerin bireylerin davranışlarını motive ettiğini ileri sürdü .	Weber , nesnellik ve öznellik sorunu üzerine yoğunlaştı .	Weber toplumsal eylem ile toplumsal davranışı birbirinden ayırdı ve toplumsal eylemin ancak bireylerin bir diğeri ile öznel olarak nasıl ilişkiye girdiğinin anlaşılması sayesinde anlaşılabileceğini belirtti .
+Event	T1	sürdü	EVENT	394
+Event	T2	yoğunlaştı	EVENT	447
+Event	T4	belirtti	EVENT	658
+Event	T5	yoğunlaştı	EVENT	78
+Event	T6	yoğunlaşırken	EVENT	150
+Event	T7	yoğunlaştı	EVENT	204
+Event	T8	karşılaştırılsa	EVENT	21
+Event	T9	savunurken	EVENT	291
+Event	T10	ayırdı	EVENT	518
+Relation	T1	T10	NoRel	true	sürdü	ayırdı
+Relation	T1	T5	NoRel	true	sürdü	yoğunlaştı
+Relation	T5	T2	NoRel	true	yoğunlaştı	yoğunlaştı
+Relation	T6	T7	NoRel	true	yoğunlaşırken	yoğunlaştı
+Relation	T7	T2	NoRel	true	yoğunlaştı	yoğunlaştı
+Relation	T9	T10	NoRel	true	savunurken	ayırdı

@@ -1,0 +1,56 @@
+Text	I 1349 opfordrede kong Magnus Eriksson af Sverige indbyggerne til at skrifte , faste hver fredag og betale skat til paven .	Idéen om isolation af syge er gammel og findes i det Gamle Testamente .	Isolation blev også brugt i forbindelse med Den sorte død .	Således påbød visconte Bernabo af Reggio i Italien i 1374 at pest-ramte skulle forvises fra byen .	Idéen om karantæne opstod i Dubrovnik , det daværende Ragusa , da byens store råd i 1377 bestemte at personer der kom fra pest-ramte områder skulle være i isolation i en måned før de kunne komme ind i byen .
+Event	T0	opfordrede	EVENT	7
+Event	T1	betale	EVENT	100
+Event	T2	findes	EVENT	164
+Event	T3	Isolation	EVENT	196
+Event	T4	brugt	EVENT	216
+Event	T6	påbød	EVENT	264
+Event	T7	forvises	EVENT	335
+Event	T8	Idéen	EVENT	355
+Event	T9	opstod	EVENT	374
+Event	T10	bestemte	EVENT	444
+Event	T11	skrifte	EVENT	69
+Event	T12	faste	EVENT	79
+Event	T13	skat	EVENT	107
+Event	T14	isolation	EVENT	133
+Event	T5	Den sorte død	EVENT	240
+Event	T15	pest-ramte	EVENT	317
+Event	T16	karantæne	EVENT	364
+Event	T17	pest-ramte	EVENT	477
+Event	T18	isolation	EVENT	510
+Event	T19	komme	EVENT	544
+Relation	T18	T19	SuperSub	true	isolation	komme
+Relation	T19	T18	SubSuper	true	komme	isolation
+Relation	T0	T17	NoRel	true	opfordrede	pest-ramte
+Relation	T0	T5	NoRel	true	opfordrede	Den sorte død
+Relation	T1	T10	NoRel	true	betale	bestemte
+Relation	T1	T15	NoRel	true	betale	pest-ramte
+Relation	T10	T17	NoRel	true	bestemte	pest-ramte
+Relation	T10	T4	NoRel	true	bestemte	brugt
+Relation	T11	T3	NoRel	true	skrifte	Isolation
+Relation	T13	T9	NoRel	true	skat	opstod
+Relation	T14	T6	NoRel	true	isolation	påbød
+Relation	T15	T0	NoRel	true	pest-ramte	opfordrede
+Relation	T15	T1	NoRel	true	pest-ramte	betale
+Relation	T16	T1	NoRel	true	karantæne	betale
+Relation	T16	T12	NoRel	true	karantæne	faste
+Relation	T17	T12	NoRel	true	pest-ramte	faste
+Relation	T17	T13	NoRel	true	pest-ramte	skat
+Relation	T18	T13	NoRel	true	isolation	skat
+Relation	T19	T16	NoRel	true	komme	karantæne
+Relation	T3	T14	NoRel	true	Isolation	isolation
+Relation	T3	T19	NoRel	true	Isolation	komme
+Relation	T3	T2	NoRel	true	Isolation	findes
+Relation	T4	T6	NoRel	true	brugt	påbød
+Relation	T4	T7	NoRel	true	brugt	forvises
+Relation	T5	T0	NoRel	true	Den sorte død	opfordrede
+Relation	T5	T14	NoRel	true	Den sorte død	isolation
+Relation	T5	T17	NoRel	true	Den sorte død	pest-ramte
+Relation	T5	T9	NoRel	true	Den sorte død	opstod
+Relation	T6	T18	NoRel	true	påbød	isolation
+Relation	T6	T2	NoRel	true	påbød	findes
+Relation	T8	T0	NoRel	true	Idéen	opfordrede
+Relation	T8	T15	NoRel	true	Idéen	pest-ramte
+Relation	T8	T17	NoRel	true	Idéen	pest-ramte
+Relation	T8	T5	NoRel	true	Idéen	Den sorte død
+Relation	T9	T0	NoRel	true	opstod	opfordrede

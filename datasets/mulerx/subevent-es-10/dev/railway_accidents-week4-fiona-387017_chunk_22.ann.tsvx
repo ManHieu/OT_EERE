@@ -1,0 +1,13 @@
+Text	- TANGO o TANGUITO : La gente de los suburbios — en tiempos de la adolescencia de Iglesias — bailaba mayormente tango .	Él , por el contrario , era un bailarín de rock .	Por eso , sus amigos le pedían que bailara : « Bailate un tango , José . Un tanguito » , y él bailaba un rock .	La frase , repetida hasta el cansancio , quedó asociada con él , que pronto fue conocido por aquel apodo .	- RAMSÉS VII : Proviene de la fascinación del músico por el faraón egipcio Ramsés II .
+Event	T0	bailaba	EVENT	93
+Event	T1	repetida	EVENT	293
+Event	T2	cansancio	EVENT	311
+Event	T3	asociada	EVENT	329
+Event	T4	conocido	EVENT	362
+Event	T5	fascinación	EVENT	419
+Relation	T1	T3	SuperSub	true	repetida	asociada
+Relation	T3	T1	SubSuper	true	asociada	repetida
+Relation	T1	T5	NoRel	true	repetida	fascinación
+Relation	T2	T4	NoRel	true	cansancio	conocido
+Relation	T3	T2	NoRel	true	asociada	cansancio
+Relation	T5	T0	NoRel	true	fascinación	bailaba

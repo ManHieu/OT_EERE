@@ -1,0 +1,43 @@
+Text	El aún congelado Megatron fue llevado a estas instalaciones y fue usado en los avances de la tecnología humana a través de la ingeniería inversa .	En el presente , el Decepticon conocido como Blackout ataca la base militar estadounidense en Qatar para encontrar la localización de Megatron y la Chispa Suprema .	Él trata de introducirse en los archivos de la base de la computadora , pero es detenido cuando el comandante de la base corta la línea de la computadora .	El Capitán William Lennox y su equipo logran escapar de la base y buscar ayuda .	De vuelta en Estados Unidos , el bisnieto del Capitán Witwicky , el adolescente Sam Witwicky , compra su primer auto , que resulta ser el Autobot explorador Bumblebee ( que se convierte en un Chevrolet Camaro Z28 de 1977 ) , tratando de conquistar a la chica de sus sueños , Mikaela Banes .
+Event	T0	llevado	EVENT	30
+Event	T1	usado	EVENT	66
+Event	T2	avances	EVENT	79
+Event	T3	ataca	EVENT	201
+Event	T4	encontrar	EVENT	252
+Event	T5	trata	EVENT	315
+Event	T6	introducirse	EVENT	324
+Event	T7	detenido	EVENT	392
+Event	T8	corta	EVENT	433
+Event	T9	escapar	EVENT	513
+Event	T10	ayuda	EVENT	541
+Event	T11	vuelta	EVENT	552
+Event	T12	compra	EVENT	644
+Event	T13	convierte	EVENT	725
+Event	T14	tratando	EVENT	774
+Event	T15	conquistar	EVENT	786
+Relation	T11	T12	SuperSub	true	vuelta	compra
+Relation	T12	T11	SubSuper	true	compra	vuelta
+Relation	T0	T6	NoRel	true	llevado	introducirse
+Relation	T0	T7	NoRel	true	llevado	detenido
+Relation	T0	T8	NoRel	true	llevado	corta
+Relation	T10	T1	NoRel	true	ayuda	usado
+Relation	T10	T13	NoRel	true	ayuda	convierte
+Relation	T10	T15	NoRel	true	ayuda	conquistar
+Relation	T11	T13	NoRel	true	vuelta	convierte
+Relation	T11	T14	NoRel	true	vuelta	tratando
+Relation	T11	T15	NoRel	true	vuelta	conquistar
+Relation	T12	T8	NoRel	true	compra	corta
+Relation	T13	T11	NoRel	true	convierte	vuelta
+Relation	T14	T15	NoRel	true	tratando	conquistar
+Relation	T2	T12	NoRel	true	avances	compra
+Relation	T2	T6	NoRel	true	avances	introducirse
+Relation	T3	T10	NoRel	true	ataca	ayuda
+Relation	T3	T13	NoRel	true	ataca	convierte
+Relation	T4	T11	NoRel	true	encontrar	vuelta
+Relation	T4	T15	NoRel	true	encontrar	conquistar
+Relation	T4	T2	NoRel	true	encontrar	avances
+Relation	T4	T6	NoRel	true	encontrar	introducirse
+Relation	T6	T1	NoRel	true	introducirse	usado
+Relation	T6	T15	NoRel	true	introducirse	conquistar
+Relation	T8	T2	NoRel	true	corta	avances
+Relation	T9	T11	NoRel	true	escapar	vuelta

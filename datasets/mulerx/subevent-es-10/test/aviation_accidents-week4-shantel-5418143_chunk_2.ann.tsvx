@@ -1,0 +1,99 @@
+Text	Tras la caída , decenas de hombres del ejército nepalí fueron enviados al lugar de la caída , auxiliando en la búsqueda entre los restos y a combatir las llamas causadas por la aeronave incendiada que amenazaban algunas residencias próximas al lugar de la caída .	Según las autoridades del aeropuerto de Katmandú y de la Dirección de Aviación Civil de Nepal , el Dornier 228 se chocó un pájaro , que provocaría un incendio a bordo .	El fuego afectaría a partes vitales de la aeronave , causando la caída del aparato .	Las cajas negra de la aeronave fueron encontradas y podrán ser utilizadas para descubrir mayores detalles sobre la caída .	La AAIB británica envió un equipo para ayudar en la investigación iniciada por Nepal sobre la causa del siniestro .
+Event	T0	caída	EVENT	8
+Event	T1	enviados	EVENT	62
+Event	T2	caída	EVENT	86
+Event	T3	auxiliando	EVENT	94
+Event	T4	búsqueda	EVENT	111
+Event	T5	combatir	EVENT	141
+Event	T6	causadas	EVENT	161
+Event	T7	incendiada	EVENT	186
+Event	T8	amenazaban	EVENT	201
+Event	T9	caída	EVENT	256
+Event	T10	chocó	EVENT	378
+Event	T11	provocaría	EVENT	400
+Event	T12	incendio	EVENT	414
+Event	T14	causando	EVENT	486
+Event	T15	caída	EVENT	498
+Event	T16	encontradas	EVENT	556
+Event	T17	descubrir	EVENT	597
+Event	T18	caída	EVENT	633
+Event	T19	envió	EVENT	659
+Event	T20	ayudar	EVENT	680
+Event	T21	iniciada	EVENT	707
+Event	T22	siniestro	EVENT	745
+Event	T13	fuego	EVENT	436
+Event	T23	investigación	EVENT	693
+Relation	T10	T12	SuperSub	true	chocó	incendio
+Relation	T12	T10	SubSuper	true	incendio	chocó
+Relation	T13	T15	SuperSub	true	fuego	caída
+Relation	T15	T13	SubSuper	true	caída	fuego
+Relation	T22	T4	SuperSub	true	siniestro	búsqueda
+Relation	T4	T22	SubSuper	true	búsqueda	siniestro
+Relation	T0	T10	NoRel	true	caída	chocó
+Relation	T0	T15	NoRel	true	caída	caída
+Relation	T1	T12	NoRel	true	enviados	incendio
+Relation	T1	T5	NoRel	true	enviados	combatir
+Relation	T10	T11	NoRel	true	chocó	provocaría
+Relation	T10	T20	NoRel	true	chocó	ayudar
+Relation	T10	T23	NoRel	true	chocó	investigación
+Relation	T10	T3	NoRel	true	chocó	auxiliando
+Relation	T10	T9	NoRel	true	chocó	caída
+Relation	T11	T5	NoRel	true	provocaría	combatir
+Relation	T11	T7	NoRel	true	provocaría	incendiada
+Relation	T11	T8	NoRel	true	provocaría	amenazaban
+Relation	T12	T22	NoRel	true	incendio	siniestro
+Relation	T13	T14	NoRel	true	fuego	causando
+Relation	T13	T2	NoRel	true	fuego	caída
+Relation	T13	T23	NoRel	true	fuego	investigación
+Relation	T13	T3	NoRel	true	fuego	auxiliando
+Relation	T13	T9	NoRel	true	fuego	caída
+Relation	T14	T0	NoRel	true	causando	caída
+Relation	T14	T23	NoRel	true	causando	investigación
+Relation	T16	T0	NoRel	true	encontradas	caída
+Relation	T16	T1	NoRel	true	encontradas	enviados
+Relation	T16	T12	NoRel	true	encontradas	incendio
+Relation	T16	T20	NoRel	true	encontradas	ayudar
+Relation	T16	T6	NoRel	true	encontradas	causadas
+Relation	T17	T0	NoRel	true	descubrir	caída
+Relation	T17	T10	NoRel	true	descubrir	chocó
+Relation	T17	T2	NoRel	true	descubrir	caída
+Relation	T17	T5	NoRel	true	descubrir	combatir
+Relation	T18	T23	NoRel	true	caída	investigación
+Relation	T18	T6	NoRel	true	caída	causadas
+Relation	T19	T1	NoRel	true	envió	enviados
+Relation	T19	T21	NoRel	true	envió	iniciada
+Relation	T19	T5	NoRel	true	envió	combatir
+Relation	T2	T10	NoRel	true	caída	chocó
+Relation	T2	T14	NoRel	true	caída	causando
+Relation	T2	T3	NoRel	true	caída	auxiliando
+Relation	T20	T3	NoRel	true	ayudar	auxiliando
+Relation	T20	T5	NoRel	true	ayudar	combatir
+Relation	T21	T10	NoRel	true	iniciada	chocó
+Relation	T21	T20	NoRel	true	iniciada	ayudar
+Relation	T21	T5	NoRel	true	iniciada	combatir
+Relation	T22	T11	NoRel	true	siniestro	provocaría
+Relation	T22	T3	NoRel	true	siniestro	auxiliando
+Relation	T22	T8	NoRel	true	siniestro	amenazaban
+Relation	T23	T1	NoRel	true	investigación	enviados
+Relation	T23	T14	NoRel	true	investigación	causando
+Relation	T23	T15	NoRel	true	investigación	caída
+Relation	T23	T19	NoRel	true	investigación	envió
+Relation	T3	T13	NoRel	true	auxiliando	fuego
+Relation	T3	T21	NoRel	true	auxiliando	iniciada
+Relation	T3	T22	NoRel	true	auxiliando	siniestro
+Relation	T4	T1	NoRel	true	búsqueda	enviados
+Relation	T4	T23	NoRel	true	búsqueda	investigación
+Relation	T5	T12	NoRel	true	combatir	incendio
+Relation	T5	T13	NoRel	true	combatir	fuego
+Relation	T5	T14	NoRel	true	combatir	causando
+Relation	T5	T22	NoRel	true	combatir	siniestro
+Relation	T5	T23	NoRel	true	combatir	investigación
+Relation	T5	T8	NoRel	true	combatir	amenazaban
+Relation	T5	T9	NoRel	true	combatir	caída
+Relation	T6	T15	NoRel	true	causadas	caída
+Relation	T7	T15	NoRel	true	incendiada	caída
+Relation	T7	T17	NoRel	true	incendiada	descubrir
+Relation	T7	T5	NoRel	true	incendiada	combatir
+Relation	T8	T22	NoRel	true	amenazaban	siniestro
+Relation	T8	T23	NoRel	true	amenazaban	investigación
+Relation	T9	T23	NoRel	true	caída	investigación

@@ -1,0 +1,53 @@
+Text	Los daños a los controles de cola y a los sistemas hidráulicos hicieron imposible a la tripulación recuperar el control de la aeronave .	La NTSB determinó que la causa probable del accidente fueron los procedimientos inadecuados de National Airlines para sujetar cargas especiales , lo que resultó en una mala sujeción de la carga por parte del supervisor de carga .	Una de las principales recomendaciones fue ordenar el entrenamiento de todos los supervisores de carga .	Esto ahora es un estándar para todas las aerolíneas de carga bajo la Administración Federal de Aviación .	El accidente interrumpió la retirada de la Fuerza de Defensa de Nueva Zelanda ( NZDF ) de Afganistán , puesto que estaba a escasas horas de recibir la llegada de otro avión de National Airlines que transportase sus equipamientos fuera de Afganistán .
+Event	T0	daños	EVENT	4
+Event	T1	controles	EVENT	16
+Event	T2	recuperar	EVENT	99
+Event	T3	control	EVENT	112
+Event	T4	determinó	EVENT	145
+Event	T5	accidente	EVENT	181
+Event	T6	resultó	EVENT	290
+Event	T7	sujeción	EVENT	310
+Event	T8	ordenar	EVENT	410
+Event	T9	entrenamiento	EVENT	421
+Event	T10	interrumpió	EVENT	591
+Event	T11	retirada	EVENT	606
+Event	T12	recibir	EVENT	718
+Event	T13	llegada	EVENT	729
+Event	T14	transportase	EVENT	776
+Event	T15	procedimientos	EVENT	202
+Event	T16	accidente	EVENT	581
+Relation	T5	T4	SuperSub	true	accidente	determinó
+Relation	T4	T5	SubSuper	true	determinó	accidente
+Relation	T0	T10	NoRel	true	daños	interrumpió
+Relation	T0	T15	NoRel	true	daños	procedimientos
+Relation	T0	T16	NoRel	true	daños	accidente
+Relation	T0	T6	NoRel	true	daños	resultó
+Relation	T1	T3	NoRel	true	controles	control
+Relation	T1	T6	NoRel	true	controles	resultó
+Relation	T10	T3	NoRel	true	interrumpió	control
+Relation	T10	T7	NoRel	true	interrumpió	sujeción
+Relation	T11	T14	NoRel	true	retirada	transportase
+Relation	T11	T6	NoRel	true	retirada	resultó
+Relation	T12	T6	NoRel	true	recibir	resultó
+Relation	T13	T1	NoRel	true	llegada	controles
+Relation	T13	T15	NoRel	true	llegada	procedimientos
+Relation	T14	T0	NoRel	true	transportase	daños
+Relation	T14	T10	NoRel	true	transportase	interrumpió
+Relation	T15	T0	NoRel	true	procedimientos	daños
+Relation	T15	T12	NoRel	true	procedimientos	recibir
+Relation	T15	T4	NoRel	true	procedimientos	determinó
+Relation	T15	T8	NoRel	true	procedimientos	ordenar
+Relation	T2	T14	NoRel	true	recuperar	transportase
+Relation	T2	T5	NoRel	true	recuperar	accidente
+Relation	T4	T13	NoRel	true	determinó	llegada
+Relation	T5	T14	NoRel	true	accidente	transportase
+Relation	T5	T7	NoRel	true	accidente	sujeción
+Relation	T6	T1	NoRel	true	resultó	controles
+Relation	T7	T1	NoRel	true	sujeción	controles
+Relation	T7	T14	NoRel	true	sujeción	transportase
+Relation	T8	T0	NoRel	true	ordenar	daños
+Relation	T8	T11	NoRel	true	ordenar	retirada
+Relation	T8	T5	NoRel	true	ordenar	accidente
+Relation	T9	T16	NoRel	true	entrenamiento	accidente
+Relation	T9	T4	NoRel	true	entrenamiento	determinó
+Relation	T9	T8	NoRel	true	entrenamiento	ordenar

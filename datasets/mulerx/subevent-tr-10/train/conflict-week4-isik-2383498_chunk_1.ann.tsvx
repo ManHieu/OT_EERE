@@ -1,0 +1,34 @@
+Text	Şehitliğe ilk düzenleme mimar Hakkı Atun tarafından 1964 ortalarında yapılmıştır .	Mezarların sayısı arttıkça şehitlik yeniden düzenlenmiştir .	1974'te Kıbrıs Harekâtı sırasında hayatını kaybeden Kıbrıslı Türk mücahitler ve Türk ordusuna mensup askerler , ilk olarak Tekke Bahçesi Şehitliği'ne defnedildiler .	Buraya gömülü olan 84 Türk askerinin naaşı 1983 yılında düzenlenen bir törenle Boğaz Şehitliği'ne aktarıldı .	1974'te çatışmalar sürerken hayatını kaybedenlerin hemen defnedilmesi zaruri olduğundan definler beşer kişinin bir arada olduğu toplu mezarlara yapıldı .
+Event	T0	düzenleme	EVENT	14
+Event	T1	düzenlenmiştir	EVENT	127
+Event	T2	kaybeden	EVENT	187
+Event	T3	defnedildiler	EVENT	294
+Event	T4	gömülü	EVENT	317
+Event	T5	aktarıldı	EVENT	408
+Event	T6	yapıldı	EVENT	564
+Event	T7	yapılmıştır	EVENT	69
+Event	T8	arttıkça	EVENT	101
+Event	T9	Kıbrıs Harekâtı	EVENT	152
+Event	T10	düzenlenen	EVENT	366
+Event	T11	çatışmalar	EVENT	428
+Event	T12	kaybedenlerin	EVENT	457
+Relation	T0	T5	NoRel	true	düzenleme	aktarıldı
+Relation	T1	T2	NoRel	true	düzenlenmiştir	kaybeden
+Relation	T1	T3	NoRel	true	düzenlenmiştir	defnedildiler
+Relation	T1	T8	NoRel	true	düzenlenmiştir	arttıkça
+Relation	T10	T11	NoRel	true	düzenlenen	çatışmalar
+Relation	T10	T6	NoRel	true	düzenlenen	yapıldı
+Relation	T11	T2	NoRel	true	çatışmalar	kaybeden
+Relation	T11	T6	NoRel	true	çatışmalar	yapıldı
+Relation	T11	T7	NoRel	true	çatışmalar	yapılmıştır
+Relation	T12	T3	NoRel	true	kaybedenlerin	defnedildiler
+Relation	T12	T7	NoRel	true	kaybedenlerin	yapılmıştır
+Relation	T3	T5	NoRel	true	defnedildiler	aktarıldı
+Relation	T4	T8	NoRel	true	gömülü	arttıkça
+Relation	T5	T3	NoRel	true	aktarıldı	defnedildiler
+Relation	T5	T7	NoRel	true	aktarıldı	yapılmıştır
+Relation	T6	T1	NoRel	true	yapıldı	düzenlenmiştir
+Relation	T6	T4	NoRel	true	yapıldı	gömülü
+Relation	T7	T5	NoRel	true	yapılmıştır	aktarıldı
+Relation	T8	T11	NoRel	true	arttıkça	çatışmalar
+Relation	T9	T8	NoRel	true	Kıbrıs Harekâtı	arttıkça

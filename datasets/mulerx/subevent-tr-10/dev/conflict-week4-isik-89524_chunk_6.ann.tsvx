@@ -1,0 +1,39 @@
+Text	Obi - Wan - Kenobi ise Luke'u gizli gözetimiyle Anakin'in Tatooine gezegenindeki üvey kardeşi Owen Lars'a teslim eder .	Vader ve Grand Moff Tarkin ( Peter Cushing ) Asiler tarafından çalınan Ölüm Yıldızı süper silahının gizli planlarını geri kazanmakla görevlendirildi .	Vader , planları droid R2 - D2 içine gizleyen ve Vader'in eski Jedi Ustası Obi- Wan Kenobi'yi Tatooine gezegeninde bulması için gönderen Prenses Leia'yı yakalar ve işkence eder .	Leia'nın Obi- Wan'ın müttefikleri Luke Skywalker ve Han Solo tarafından kurtarılması sırasında Vader , ışın kılıcı düellosunda Obi- Wan'ı öldürür .	Ölüm Yıldızı'ndaki Asi saldırısı sırasında Vader , TIE savaşçısına biner ve Asi X kanatlı savaşçıları vurmaya çalışır , ancak geri dönmeye karar veren Han Solo müdahale eder ve Vader'in gemisini rotadan uzaklaştırarak Luke'un Ölüm Yıldızını yok etmesine izin verir .
+Event	T0	eder	EVENT	113
+Event	T1	çalınan	EVENT	183
+Event	T2	görevlendirildi	EVENT	253
+Event	T4	yakalar	EVENT	424
+Event	T5	eder	EVENT	443
+Event	T6	kurtarılması	EVENT	522
+Event	T7	düellosunda	EVENT	565
+Event	T8	öldürür	EVENT	588
+Event	T9	saldırısı	EVENT	621
+Event	T10	biner	EVENT	665
+Event	T11	çalışır	EVENT	708
+Event	T13	eder	EVENT	767
+Event	T14	verir	EVENT	857
+Event	T15	gönderen	EVENT	399
+Event	T3	uzaklaştırarak	EVENT	801
+Relation	T0	T2	NoRel	true	eder	görevlendirildi
+Relation	T0	T6	NoRel	true	eder	kurtarılması
+Relation	T0	T7	NoRel	true	eder	düellosunda
+Relation	T0	T9	NoRel	true	eder	saldırısı
+Relation	T1	T15	NoRel	true	çalınan	gönderen
+Relation	T10	T15	NoRel	true	biner	gönderen
+Relation	T11	T1	NoRel	true	çalışır	çalınan
+Relation	T13	T15	NoRel	true	eder	gönderen
+Relation	T14	T11	NoRel	true	verir	çalışır
+Relation	T14	T4	NoRel	true	verir	yakalar
+Relation	T2	T1	NoRel	true	görevlendirildi	çalınan
+Relation	T2	T11	NoRel	true	görevlendirildi	çalışır
+Relation	T3	T10	NoRel	true	uzaklaştırarak	biner
+Relation	T3	T8	NoRel	true	uzaklaştırarak	öldürür
+Relation	T4	T2	NoRel	true	yakalar	görevlendirildi
+Relation	T5	T4	NoRel	true	eder	yakalar
+Relation	T7	T1	NoRel	true	düellosunda	çalınan
+Relation	T7	T5	NoRel	true	düellosunda	eder
+Relation	T8	T13	NoRel	true	öldürür	eder
+Relation	T8	T3	NoRel	true	öldürür	uzaklaştırarak
+Relation	T8	T4	NoRel	true	öldürür	yakalar
+Relation	T8	T7	NoRel	true	öldürür	düellosunda
+Relation	T8	T9	NoRel	true	öldürür	saldırısı

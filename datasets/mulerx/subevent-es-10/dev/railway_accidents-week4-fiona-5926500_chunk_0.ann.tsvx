@@ -1,0 +1,48 @@
+Text	El ACCIDENTE FERROVIARIO DE SANTIAGO DE COMPOSTELA o ACCIDENTE DE ANGROIS se produjo el miércoles 24 de julio de 2013 cuando un tren Alvia , que viajaba de Madrid a Ferrol , descarriló en la curva A Grandeira de Angrois , a unos tres kilómetros de la estación de Santiago de Compostela .	De las 224 personas que viajaban a bordo — 218 pasajeros y seis tripulantes — , 144 resultaron heridas y 80 fallecieron .	El tren viajaba a 191 km/h cuando entró en la curva del accidente , duplicando la velocidad máxima de 80 km/h .	Cuando el maquinista se percató de la situación , accionó el freno de emergencia .	El accidente fue grabado por una cámara de seguridad que muestra los trece vehículos descarrilando y cuatro dándose la vuelta .
+Event	T0	ACCIDENTE	EVENT	3
+Event	T1	ACCIDENTE	EVENT	53
+Event	T2	produjo	EVENT	77
+Event	T3	descarriló	EVENT	174
+Event	T4	curva	EVENT	191
+Event	T5	heridas	EVENT	383
+Event	T6	fallecieron	EVENT	396
+Event	T7	viajaba	EVENT	418
+Event	T8	curva	EVENT	456
+Event	T9	accidente	EVENT	466
+Event	T10	duplicando	EVENT	478
+Event	T11	percató	EVENT	546
+Event	T12	situación	EVENT	560
+Event	T13	accionó	EVENT	572
+Event	T14	accidente	EVENT	608
+Event	T15	grabado	EVENT	622
+Event	T16	muestra	EVENT	662
+Event	T17	descarrilando	EVENT	690
+Relation	T0	T17	NoRel	true	ACCIDENTE	descarrilando
+Relation	T10	T12	NoRel	true	duplicando	situación
+Relation	T10	T6	NoRel	true	duplicando	fallecieron
+Relation	T11	T1	NoRel	true	percató	ACCIDENTE
+Relation	T12	T14	NoRel	true	situación	accidente
+Relation	T12	T8	NoRel	true	situación	curva
+Relation	T13	T10	NoRel	true	accionó	duplicando
+Relation	T13	T2	NoRel	true	accionó	produjo
+Relation	T13	T5	NoRel	true	accionó	heridas
+Relation	T13	T9	NoRel	true	accionó	accidente
+Relation	T14	T10	NoRel	true	accidente	duplicando
+Relation	T14	T17	NoRel	true	accidente	descarrilando
+Relation	T14	T3	NoRel	true	accidente	descarriló
+Relation	T14	T5	NoRel	true	accidente	heridas
+Relation	T15	T3	NoRel	true	grabado	descarriló
+Relation	T15	T5	NoRel	true	grabado	heridas
+Relation	T17	T5	NoRel	true	descarrilando	heridas
+Relation	T2	T14	NoRel	true	produjo	accidente
+Relation	T2	T8	NoRel	true	produjo	curva
+Relation	T3	T1	NoRel	true	descarriló	ACCIDENTE
+Relation	T4	T10	NoRel	true	curva	duplicando
+Relation	T5	T11	NoRel	true	heridas	percató
+Relation	T6	T13	NoRel	true	fallecieron	accionó
+Relation	T6	T14	NoRel	true	fallecieron	accidente
+Relation	T7	T12	NoRel	true	viajaba	situación
+Relation	T7	T5	NoRel	true	viajaba	heridas
+Relation	T8	T0	NoRel	true	curva	ACCIDENTE
+Relation	T9	T3	NoRel	true	accidente	descarriló
+Relation	T9	T5	NoRel	true	accidente	heridas

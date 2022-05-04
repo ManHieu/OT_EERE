@@ -1,0 +1,14 @@
+Text	Hemeroteca digital del diario ABC	« Cuatro muertos y más de cuarenta heridos en un accidente ferroviario cerca de Lisboa » , artículo en _ ABC _ , edición Madrid , 14 de agosto de 1976 , página 55 .	Hemeroteca digital del diario ABC	Choque a 30 km/n atrassou a vida na " Linha " y Circulaçao normalizada na linha do Estoril , artículos en el _ Diario de Lisboa _ , 22 de septiembre de 1977 , portada y página 5 , en Archivo digital de la Fundación Mario Soares ( en portugués ) .	Deficiencia de Frenagem causa 59 feridos , artículo en el Diario de Lisboa , 16 de noviembre de 1977 , página 5 , en Archivo digital de la Fundación Mario Soares ( en portugués ) .
+Event	T0	muertos	EVENT	43
+Event	T1	heridos	EVENT	69
+Event	T2	accidente	EVENT	83
+Event	T3	Choque	EVENT	233
+Event	T4	normalizada	EVENT	292
+Event	T5	Deficiencia	EVENT	480
+Event	T6	causa	EVENT	504
+Event	T7	feridos	EVENT	513
+Relation	T1	T7	NoRel	true	heridos	feridos
+Relation	T2	T1	NoRel	true	accidente	heridos
+Relation	T5	T2	NoRel	true	Deficiencia	accidente
+Relation	T5	T4	NoRel	true	Deficiencia	normalizada
+Relation	T7	T4	NoRel	true	feridos	normalizada

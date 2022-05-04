@@ -1,0 +1,28 @@
+Text	A las 09:47 , el extremo del ala derecha del avión impactó con la pista durante su intento de aterrizaje final , el avión se dio la vuelta , y acabó a doscientos metros de pista invertido , saliéndose de esta e incendiándose .	Seis personas murieron , incluyendo al piloto y al copiloto .	Un testigo dentro de la terminal del aeropuerto sostuvo que la niebla era tan espesa que no fue posible ver el accidente .	Los heridos fueron llevados al Hospital Univesitario de Cork para su tratamiento .	Cuatro fueron heridos graves , mientras que otros dos presentaban una situación crítica .
+Event	T0	impactó	EVENT	51
+Event	T1	intento	EVENT	83
+Event	T2	acabó	EVENT	143
+Event	T3	invertido	EVENT	178
+Event	T4	saliéndose	EVENT	190
+Event	T5	incendiándose	EVENT	211
+Event	T6	murieron	EVENT	241
+Event	T7	sostuvo	EVENT	337
+Event	T8	accidente	EVENT	400
+Event	T9	heridos	EVENT	416
+Event	T10	llevados	EVENT	431
+Event	T11	tratamiento	EVENT	481
+Event	T12	presentaban	EVENT	549
+Relation	T9	T10	SuperSub	true	heridos	llevados
+Relation	T10	T9	SubSuper	true	llevados	heridos
+Relation	T1	T7	NoRel	true	intento	sostuvo
+Relation	T10	T8	NoRel	true	llevados	accidente
+Relation	T11	T10	NoRel	true	tratamiento	llevados
+Relation	T12	T3	NoRel	true	presentaban	invertido
+Relation	T12	T5	NoRel	true	presentaban	incendiándose
+Relation	T4	T3	NoRel	true	saliéndose	invertido
+Relation	T4	T8	NoRel	true	saliéndose	accidente
+Relation	T5	T10	NoRel	true	incendiándose	llevados
+Relation	T8	T10	NoRel	true	accidente	llevados
+Relation	T8	T6	NoRel	true	accidente	murieron
+Relation	T9	T5	NoRel	true	heridos	incendiándose
+Relation	T9	T8	NoRel	true	heridos	accidente

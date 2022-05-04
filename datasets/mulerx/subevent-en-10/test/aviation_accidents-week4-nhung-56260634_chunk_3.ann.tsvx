@@ -1,0 +1,72 @@
+Text	The speed caused the aircraft to enter an aerodynamic condition known as vortex ring state .	In this condition , a vortex envelops the rotor , causing an aircraft to lose lift , in essence descending in its own downwash .	After two months of investigation by the Marine Corps Judge Advocate General a final report was released which absolved the aircraft itself of any mechanical faults and instead pinned the blame on the exceptionally high rate of descent coupled with human error .	After 16 years of the widows fighting the Marine Corps and the V - 22 Osprey program stakeholders , both pilots were vindicated when they were cleared of blame for the crash in 2016 by then Deputy Defense Secretary Bob Work .	The crash resulted in a two - month moratorium on V - 22 test flights and further postponed its entry into operational military service .
+Event	T0	caused	EVENT	10
+Event	T1	enter	EVENT	33
+Event	T2	envelops	EVENT	122
+Event	T3	causing	EVENT	143
+Event	T5	descending	EVENT	189
+Event	T6	investigation	EVENT	242
+Event	T7	report	EVENT	307
+Event	T8	released	EVENT	318
+Event	T9	absolved	EVENT	333
+Event	T10	faults	EVENT	380
+Event	T11	pinned	EVENT	399
+Event	T12	blame	EVENT	410
+Event	T13	coupled	EVENT	458
+Event	T14	error	EVENT	477
+Event	T15	fighting	EVENT	514
+Event	T16	vindicated	EVENT	602
+Event	T17	cleared	EVENT	628
+Event	T18	crash	EVENT	653
+Event	T20	moratorium	EVENT	747
+Event	T21	flights	EVENT	773
+Event	T22	lose	EVENT	166
+Event	T4	crash	EVENT	715
+Event	T19	postponed	EVENT	793
+Relation	T15	T16	SuperSub	true	fighting	vindicated
+Relation	T16	T15	SubSuper	true	vindicated	fighting
+Relation	T0	T2	NoRel	true	caused	envelops
+Relation	T0	T22	NoRel	true	caused	lose
+Relation	T10	T13	NoRel	true	faults	coupled
+Relation	T10	T22	NoRel	true	faults	lose
+Relation	T11	T18	NoRel	true	pinned	crash
+Relation	T11	T4	NoRel	true	pinned	crash
+Relation	T12	T6	NoRel	true	blame	investigation
+Relation	T12	T7	NoRel	true	blame	report
+Relation	T13	T19	NoRel	true	coupled	postponed
+Relation	T13	T2	NoRel	true	coupled	envelops
+Relation	T13	T4	NoRel	true	coupled	crash
+Relation	T13	T9	NoRel	true	coupled	absolved
+Relation	T14	T0	NoRel	true	error	caused
+Relation	T14	T16	NoRel	true	error	vindicated
+Relation	T14	T3	NoRel	true	error	causing
+Relation	T15	T3	NoRel	true	fighting	causing
+Relation	T15	T4	NoRel	true	fighting	crash
+Relation	T17	T22	NoRel	true	cleared	lose
+Relation	T18	T15	NoRel	true	crash	fighting
+Relation	T18	T20	NoRel	true	crash	moratorium
+Relation	T18	T7	NoRel	true	crash	report
+Relation	T19	T1	NoRel	true	postponed	enter
+Relation	T2	T21	NoRel	true	envelops	flights
+Relation	T21	T0	NoRel	true	flights	caused
+Relation	T21	T22	NoRel	true	flights	lose
+Relation	T21	T3	NoRel	true	flights	causing
+Relation	T22	T16	NoRel	true	lose	vindicated
+Relation	T22	T18	NoRel	true	lose	crash
+Relation	T22	T6	NoRel	true	lose	investigation
+Relation	T3	T18	NoRel	true	causing	crash
+Relation	T3	T19	NoRel	true	causing	postponed
+Relation	T3	T9	NoRel	true	causing	absolved
+Relation	T4	T14	NoRel	true	crash	error
+Relation	T4	T16	NoRel	true	crash	vindicated
+Relation	T4	T21	NoRel	true	crash	flights
+Relation	T4	T3	NoRel	true	crash	causing
+Relation	T5	T21	NoRel	true	descending	flights
+Relation	T6	T16	NoRel	true	investigation	vindicated
+Relation	T7	T1	NoRel	true	report	enter
+Relation	T7	T17	NoRel	true	report	cleared
+Relation	T7	T2	NoRel	true	report	envelops
+Relation	T8	T19	NoRel	true	released	postponed
+Relation	T9	T12	NoRel	true	absolved	blame
+Relation	T9	T2	NoRel	true	absolved	envelops
+Relation	T9	T20	NoRel	true	absolved	moratorium
+Relation	T9	T22	NoRel	true	absolved	lose

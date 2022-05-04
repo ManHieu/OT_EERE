@@ -1,0 +1,26 @@
+Text	QUASI SAVAŞI ( ; ) , 1798 - 1800 yılları arasında ABD ile Fransa arasında ilan edilmemiş ve çoğunlukla denizde gerçekleşen bir savaş idi .	Fransız Devrim Savaşları sırasında Fransız monarşisinin devrilmesini takiben ABD , önceki rejime borçlu olduğu gerekçesiyle Fransa'ya olan borcunu geri ödemeyi reddetti .	Bunun üzerine Fransa Amerikan gemilere yönelik bir dizi saldırı düzenledi ve Amerikalılar da misilleme gerçekleştirdi .	1800 Sözleşmesi'nin imzalanması ile iki ülke arasındaki düşmanlıklar sona erdi .	- Selected Bibliography of The Quasi War with France compiled by the United States Army Center of Military History
+Event	T1	gerçekleşen	EVENT	111
+Event	T2	savaş	EVENT	127
+Event	T3	reddetti	EVENT	299
+Event	T5	gerçekleştirdi	EVENT	413
+Event	T7	erdi	EVENT	504
+Event	T8	War	EVENT	548
+Event	T9	compiled	EVENT	564
+Event	T10	QUASI SAVAŞI	EVENT	0
+Event	T11	devrilmesini	EVENT	195
+Event	T12	saldırı	EVENT	366
+Event	T4	Sözleşmesi'nin	EVENT	435
+Relation	T12	T5	SuperSub	true	saldırı	gerçekleştirdi
+Relation	T5	T12	SubSuper	true	gerçekleştirdi	saldırı
+Relation	T10	T4	SuperSub	true	QUASI SAVAŞI	Sözleşmesi'nin
+Relation	T4	T10	SubSuper	true	Sözleşmesi'nin	QUASI SAVAŞI
+Relation	T1	T10	NoRel	true	gerçekleşen	QUASI SAVAŞI
+Relation	T1	T9	NoRel	true	gerçekleşen	compiled
+Relation	T11	T5	NoRel	true	devrilmesini	gerçekleştirdi
+Relation	T12	T11	NoRel	true	saldırı	devrilmesini
+Relation	T2	T12	NoRel	true	savaş	saldırı
+Relation	T4	T2	NoRel	true	Sözleşmesi'nin	savaş
+Relation	T4	T3	NoRel	true	Sözleşmesi'nin	reddetti
+Relation	T5	T7	NoRel	true	gerçekleştirdi	erdi
+Relation	T7	T3	NoRel	true	erdi	reddetti
+Relation	T7	T4	NoRel	true	erdi	Sözleşmesi'nin

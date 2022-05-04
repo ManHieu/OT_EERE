@@ -1,0 +1,19 @@
+Text	İlçe merkezindeki binaların % 10'u kullanılamaz hale gelmiştir .	Kurşunlu ilçe merkezinde 50 ev , Sivricek köyünde ise 80 ev yıkılmıştır .	17 Ağustos'ta saat 11: 10 civarında meydana gelen ve Çerkeş ve Şabanözü ilçelerinde de hissedilen ikinci deprem , bu ilçelerde hasara neden olmazken Kurşunlu ilçe merkezinde hasarlı bir cami ve minaresinin yıkılmasına neden olmuştur .	Enkazın kaldırılması amacıyla Ilgaz'a 150 , Kurşunlu'ya ise 310 asker gönderilmiştir .	Kurşunlu depremi , 1951 Kategori : Çankırı tarihi Kategori : Kurşunlu Kurşunlu depremi Kurşunlu depremi Kategori : 20 ° K Kategori : 32 ° D
+Event	T0	yıkılmıştır	EVENT	125
+Event	T2	deprem	EVENT	244
+Event	T4	gönderilmiştir	EVENT	444
+Event	T5	depremi	EVENT	470
+Event	T6	gelmiştir	EVENT	53
+Event	T7	olmuştur	EVENT	363
+Event	T3	Enkazın	EVENT	374
+Event	T8	depremi	EVENT	540
+Event	T9	depremi	EVENT	557
+Relation	T0	T3	NoRel	true	yıkılmıştır	Enkazın
+Relation	T2	T5	NoRel	true	deprem	depremi
+Relation	T2	T6	NoRel	true	deprem	gelmiştir
+Relation	T3	T9	NoRel	true	Enkazın	depremi
+Relation	T6	T0	NoRel	true	gelmiştir	yıkılmıştır
+Relation	T6	T2	NoRel	true	gelmiştir	deprem
+Relation	T6	T8	NoRel	true	gelmiştir	depremi
+Relation	T7	T3	NoRel	true	olmuştur	Enkazın
+Relation	T9	T4	NoRel	true	depremi	gönderilmiştir

@@ -1,0 +1,31 @@
+Text	- 1907_____-___25 DE MAYO : en las cercanías de Sabóia , en la Línea del Sur , un descarrilamiento provoca siete muertos y veintiún heridos .	- 1909_____-___25 DE SEPTIEMBRE : Se produce el choque de dos trenes de mercancías en la línea del Duero , resultando heridos dos ferroviarios .	- 17 DE NOVIEMBRE : El Sudexpreso descarrila entren las estaciones de Pinhel y Guarda , resultando heridos leves los dos miembros de la pareja de conducción de la locomotora que remolcaba el convoy .	- 1910 -___19 DE SEPTIEMBRE : En la estación de Senhora da Hora , próxima a Oporto , un tren de recreo que transportaba 400 viajeros que venían de celebrar una romería dscarrila a causa de un doble cambio .	Se producen al menos 70 heridos , la mayoría leves .
+Event	T0	muertos	EVENT	113
+Event	T1	heridos	EVENT	132
+Event	T2	produce	EVENT	179
+Event	T3	choque	EVENT	190
+Event	T4	heridos	EVENT	260
+Event	T5	remolcaba	EVENT	465
+Event	T6	recreo	EVENT	583
+Event	T7	transportaba	EVENT	594
+Event	T8	celebrar	EVENT	634
+Event	T9	dscarrila	EVENT	655
+Event	T10	cambio	EVENT	685
+Event	T11	producen	EVENT	697
+Event	T12	heridos	EVENT	718
+Event	T13	descarrilamiento	EVENT	82
+Relation	T1	T13	NoRel	true	heridos	descarrilamiento
+Relation	T1	T6	NoRel	true	heridos	recreo
+Relation	T10	T1	NoRel	true	cambio	heridos
+Relation	T10	T12	NoRel	true	cambio	heridos
+Relation	T10	T13	NoRel	true	cambio	descarrilamiento
+Relation	T11	T4	NoRel	true	producen	heridos
+Relation	T2	T5	NoRel	true	produce	remolcaba
+Relation	T3	T4	NoRel	true	choque	heridos
+Relation	T4	T13	NoRel	true	heridos	descarrilamiento
+Relation	T4	T8	NoRel	true	heridos	celebrar
+Relation	T6	T8	NoRel	true	recreo	celebrar
+Relation	T8	T0	NoRel	true	celebrar	muertos
+Relation	T8	T13	NoRel	true	celebrar	descarrilamiento
+Relation	T9	T10	NoRel	true	dscarrila	cambio
+Relation	T9	T11	NoRel	true	dscarrila	producen
+Relation	T9	T4	NoRel	true	dscarrila	heridos

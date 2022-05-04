@@ -1,0 +1,86 @@
+Text	The Pan Am crew indicated that they would prefer to circle in a holding pattern until landing clearance was given ( they had enough fuel to safely stay in the air for two more hours ) , but they were ordered to divert to Tenerife .	Los Rodeos was a regional airport that could not easily accommodate all of the traffic diverted from Gran Canaria , which included five large airliners .	The airport had only one runway and one major taxiway running parallel to it , with four short taxiways connecting the two .	While waiting for Gran Canaria airport to reopen , the diverted airplanes took up so much space that they were having to park on the long taxiway , making it unavailable for the purpose of taxiing .	Instead , departing aircraft needed to taxi along the runway to position themselves for takeoff , a procedure known as a backtaxi or backtrack .
+Event	T0	indicated	EVENT	16
+Event	T1	circle	EVENT	52
+Event	T2	given	EVENT	108
+Event	T3	ordered	EVENT	200
+Event	T4	divert	EVENT	211
+Event	T5	diverted	EVENT	319
+Event	T6	running	EVENT	440
+Event	T7	connecting	EVENT	490
+Event	T8	waiting	EVENT	517
+Event	T9	reopen	EVENT	553
+Event	T10	diverted	EVENT	566
+Event	T11	park	EVENT	632
+Event	T12	making	EVENT	659
+Event	T13	taxiing	EVENT	700
+Event	T14	departing	EVENT	720
+Event	T15	needed	EVENT	739
+Event	T16	taxi	EVENT	749
+Event	T17	position	EVENT	774
+Event	T18	takeoff	EVENT	798
+Event	T19	known	EVENT	820
+Event	T20	stay	EVENT	147
+Event	T21	had	EVENT	121
+Event	T22	accommodate	EVENT	288
+Event	T23	included	EVENT	354
+Event	T24	had	EVENT	398
+Event	T25	took up	EVENT	585
+Relation	T9	T25	SuperSub	true	reopen	took up
+Relation	T25	T9	SubSuper	true	took up	reopen
+Relation	T1	T19	NoRel	true	circle	known
+Relation	T1	T20	NoRel	true	circle	stay
+Relation	T1	T22	NoRel	true	circle	accommodate
+Relation	T1	T23	NoRel	true	circle	included
+Relation	T1	T6	NoRel	true	circle	running
+Relation	T10	T17	NoRel	true	diverted	position
+Relation	T11	T0	NoRel	true	park	indicated
+Relation	T11	T10	NoRel	true	park	diverted
+Relation	T11	T13	NoRel	true	park	taxiing
+Relation	T11	T16	NoRel	true	park	taxi
+Relation	T11	T5	NoRel	true	park	diverted
+Relation	T11	T6	NoRel	true	park	running
+Relation	T13	T12	NoRel	true	taxiing	making
+Relation	T13	T4	NoRel	true	taxiing	divert
+Relation	T14	T21	NoRel	true	departing	had
+Relation	T14	T22	NoRel	true	departing	accommodate
+Relation	T15	T14	NoRel	true	needed	departing
+Relation	T15	T17	NoRel	true	needed	position
+Relation	T15	T18	NoRel	true	needed	takeoff
+Relation	T15	T25	NoRel	true	needed	took up
+Relation	T16	T1	NoRel	true	taxi	circle
+Relation	T16	T13	NoRel	true	taxi	taxiing
+Relation	T16	T25	NoRel	true	taxi	took up
+Relation	T16	T3	NoRel	true	taxi	ordered
+Relation	T16	T8	NoRel	true	taxi	waiting
+Relation	T17	T12	NoRel	true	position	making
+Relation	T17	T8	NoRel	true	position	waiting
+Relation	T18	T10	NoRel	true	takeoff	diverted
+Relation	T18	T6	NoRel	true	takeoff	running
+Relation	T2	T3	NoRel	true	given	ordered
+Relation	T20	T2	NoRel	true	stay	given
+Relation	T20	T3	NoRel	true	stay	ordered
+Relation	T21	T2	NoRel	true	had	given
+Relation	T21	T7	NoRel	true	had	connecting
+Relation	T22	T14	NoRel	true	accommodate	departing
+Relation	T22	T17	NoRel	true	accommodate	position
+Relation	T22	T4	NoRel	true	accommodate	divert
+Relation	T22	T8	NoRel	true	accommodate	waiting
+Relation	T23	T1	NoRel	true	included	circle
+Relation	T23	T10	NoRel	true	included	diverted
+Relation	T23	T6	NoRel	true	included	running
+Relation	T24	T10	NoRel	true	had	diverted
+Relation	T24	T11	NoRel	true	had	park
+Relation	T24	T7	NoRel	true	had	connecting
+Relation	T24	T9	NoRel	true	had	reopen
+Relation	T25	T0	NoRel	true	took up	indicated
+Relation	T25	T18	NoRel	true	took up	takeoff
+Relation	T25	T19	NoRel	true	took up	known
+Relation	T4	T12	NoRel	true	divert	making
+Relation	T4	T13	NoRel	true	divert	taxiing
+Relation	T4	T25	NoRel	true	divert	took up
+Relation	T4	T3	NoRel	true	divert	ordered
+Relation	T5	T2	NoRel	true	diverted	given
+Relation	T6	T13	NoRel	true	running	taxiing
+Relation	T8	T24	NoRel	true	waiting	had
+Relation	T9	T3	NoRel	true	reopen	ordered
+Relation	T9	T7	NoRel	true	reopen	connecting

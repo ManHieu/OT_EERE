@@ -1,0 +1,39 @@
+Text	En su breve reinado Trajano Decio tuvo que realizar importantes operaciones bélicas contra los godos , quienes cruzaron el Danubio para saquear los territorios de Mesia y Tracia .	Esta es la primera ocasión de importancia en la que los godos , que más tarde tendrían un papel decisivo , aparecen en la documentación histórica .	No se conocen muchos detalles de la campaña y hasta qué punto Trajano Decio y su hijo mayor Herenio Etrusco estuvieron personalmente envueltos .	Los godos bajo el rey Cniva fueron sorprendidos en el asedio de Nicópolis en las orillas del Danubio .	Al acercarse el ejército romano traspasaron las montañas balcánicas , pero entonces regresaron y sorprendieron a los romanos cerca de Beroë ( moderna Stara Zagora ) , saqueando su campamento y dispersando a las tropas romanas .
+Event	T0	reinado	EVENT	12
+Event	T1	tuvo	EVENT	34
+Event	T2	realizar	EVENT	43
+Event	T3	cruzaron	EVENT	111
+Event	T4	saquear	EVENT	136
+Event	T5	ocasión	EVENT	199
+Event	T6	aparecen	EVENT	287
+Event	T7	envueltos	EVENT	461
+Event	T8	sorprendidos	EVENT	508
+Event	T9	asedio	EVENT	527
+Event	T10	sorprendieron	EVENT	673
+Event	T11	saqueando	EVENT	743
+Event	T12	dispersando	EVENT	769
+Relation	T10	T12	SuperSub	true	sorprendieron	dispersando
+Relation	T12	T10	SubSuper	true	dispersando	sorprendieron
+Relation	T0	T11	NoRel	true	reinado	saqueando
+Relation	T0	T12	NoRel	true	reinado	dispersando
+Relation	T1	T0	NoRel	true	tuvo	reinado
+Relation	T1	T7	NoRel	true	tuvo	envueltos
+Relation	T11	T10	NoRel	true	saqueando	sorprendieron
+Relation	T11	T2	NoRel	true	saqueando	realizar
+Relation	T11	T5	NoRel	true	saqueando	ocasión
+Relation	T12	T11	NoRel	true	dispersando	saqueando
+Relation	T12	T2	NoRel	true	dispersando	realizar
+Relation	T12	T8	NoRel	true	dispersando	sorprendidos
+Relation	T2	T5	NoRel	true	realizar	ocasión
+Relation	T2	T7	NoRel	true	realizar	envueltos
+Relation	T3	T6	NoRel	true	cruzaron	aparecen
+Relation	T3	T8	NoRel	true	cruzaron	sorprendidos
+Relation	T3	T9	NoRel	true	cruzaron	asedio
+Relation	T4	T3	NoRel	true	saquear	cruzaron
+Relation	T5	T1	NoRel	true	ocasión	tuvo
+Relation	T5	T8	NoRel	true	ocasión	sorprendidos
+Relation	T6	T5	NoRel	true	aparecen	ocasión
+Relation	T8	T10	NoRel	true	sorprendidos	sorprendieron
+Relation	T8	T11	NoRel	true	sorprendidos	saqueando
+Relation	T9	T0	NoRel	true	asedio	reinado
+Relation	T9	T12	NoRel	true	asedio	dispersando

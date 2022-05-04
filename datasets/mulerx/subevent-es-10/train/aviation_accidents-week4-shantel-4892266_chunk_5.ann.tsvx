@@ -1,0 +1,100 @@
+Text	La causa del accidente fue que inadvertidamente se permitió que la aeronave acelerara 110 km/h por encima de la velocidad límite de diseño durante un descenso de emergencia .	Esto provocó vibraciones de baja frecuencia en la aeronave en todos los ejes , un aumento de las aceleraciones alternas que superaron el margen de seguridad .	El resultado fue la ruptura de la aeronave en el aire , seguida de su colisión con la tierra .	- Acciones inoportunas e inadecuadas de la tripulación para controlar la emergencia decente - Falta de coordinación adecuada entre los miembros de la tripulación - Desviaciones de las recomendaciones del manual de vuelo al ejecutar el descenso de emergencia - Indicaciones engañosas sobre instrumentos básicos cuando están fuera de las condiciones de funcionamiento características .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil - Anexo : Accidentes por fabricante de la aeronave - Vuelo 703 de Saratov Airlines
+Event	T0	accidente	EVENT	13
+Event	T1	permitió	EVENT	51
+Event	T2	acelerara	EVENT	76
+Event	T3	diseño	EVENT	132
+Event	T4	descenso	EVENT	150
+Event	T5	emergencia	EVENT	162
+Event	T6	vibraciones	EVENT	188
+Event	T7	aumento	EVENT	257
+Event	T8	superaron	EVENT	299
+Event	T9	resultado	EVENT	337
+Event	T10	ruptura	EVENT	354
+Event	T11	colisión	EVENT	404
+Event	T12	Acciones	EVENT	431
+Event	T13	controlar	EVENT	489
+Event	T14	emergencia	EVENT	502
+Event	T15	Desviaciones	EVENT	593
+Event	T16	vuelo	EVENT	643
+Event	T17	ejecutar	EVENT	652
+Event	T18	descenso	EVENT	664
+Event	T19	emergencia	EVENT	676
+Event	T20	engañosas	EVENT	702
+Event	T21	Accidente	EVENT	815
+Event	T22	Accidentes	EVENT	847
+Event	T23	Accidentes	EVENT	911
+Event	T24	Accidentes	EVENT	975
+Relation	T0	T12	NoRel	true	accidente	Acciones
+Relation	T0	T13	NoRel	true	accidente	controlar
+Relation	T0	T14	NoRel	true	accidente	emergencia
+Relation	T0	T5	NoRel	true	accidente	emergencia
+Relation	T0	T6	NoRel	true	accidente	vibraciones
+Relation	T1	T18	NoRel	true	permitió	descenso
+Relation	T1	T9	NoRel	true	permitió	resultado
+Relation	T10	T3	NoRel	true	ruptura	diseño
+Relation	T11	T2	NoRel	true	colisión	acelerara
+Relation	T11	T23	NoRel	true	colisión	Accidentes
+Relation	T11	T24	NoRel	true	colisión	Accidentes
+Relation	T11	T3	NoRel	true	colisión	diseño
+Relation	T12	T10	NoRel	true	Acciones	ruptura
+Relation	T12	T8	NoRel	true	Acciones	superaron
+Relation	T13	T16	NoRel	true	controlar	vuelo
+Relation	T13	T22	NoRel	true	controlar	Accidentes
+Relation	T14	T12	NoRel	true	emergencia	Acciones
+Relation	T14	T15	NoRel	true	emergencia	Desviaciones
+Relation	T14	T2	NoRel	true	emergencia	acelerara
+Relation	T15	T10	NoRel	true	Desviaciones	ruptura
+Relation	T15	T14	NoRel	true	Desviaciones	emergencia
+Relation	T16	T14	NoRel	true	vuelo	emergencia
+Relation	T16	T18	NoRel	true	vuelo	descenso
+Relation	T16	T19	NoRel	true	vuelo	emergencia
+Relation	T16	T9	NoRel	true	vuelo	resultado
+Relation	T17	T6	NoRel	true	ejecutar	vibraciones
+Relation	T17	T7	NoRel	true	ejecutar	aumento
+Relation	T18	T0	NoRel	true	descenso	accidente
+Relation	T18	T19	NoRel	true	descenso	emergencia
+Relation	T18	T24	NoRel	true	descenso	Accidentes
+Relation	T19	T0	NoRel	true	emergencia	accidente
+Relation	T19	T11	NoRel	true	emergencia	colisión
+Relation	T19	T13	NoRel	true	emergencia	controlar
+Relation	T19	T22	NoRel	true	emergencia	Accidentes
+Relation	T20	T0	NoRel	true	engañosas	accidente
+Relation	T20	T12	NoRel	true	engañosas	Acciones
+Relation	T20	T4	NoRel	true	engañosas	descenso
+Relation	T21	T15	NoRel	true	Accidente	Desviaciones
+Relation	T22	T1	NoRel	true	Accidentes	permitió
+Relation	T22	T15	NoRel	true	Accidentes	Desviaciones
+Relation	T22	T17	NoRel	true	Accidentes	ejecutar
+Relation	T22	T7	NoRel	true	Accidentes	aumento
+Relation	T22	T8	NoRel	true	Accidentes	superaron
+Relation	T23	T21	NoRel	true	Accidentes	Accidente
+Relation	T23	T3	NoRel	true	Accidentes	diseño
+Relation	T23	T7	NoRel	true	Accidentes	aumento
+Relation	T24	T16	NoRel	true	Accidentes	vuelo
+Relation	T24	T7	NoRel	true	Accidentes	aumento
+Relation	T3	T12	NoRel	true	diseño	Acciones
+Relation	T3	T22	NoRel	true	diseño	Accidentes
+Relation	T3	T7	NoRel	true	diseño	aumento
+Relation	T3	T9	NoRel	true	diseño	resultado
+Relation	T4	T10	NoRel	true	descenso	ruptura
+Relation	T5	T22	NoRel	true	emergencia	Accidentes
+Relation	T6	T1	NoRel	true	vibraciones	permitió
+Relation	T6	T17	NoRel	true	vibraciones	ejecutar
+Relation	T6	T19	NoRel	true	vibraciones	emergencia
+Relation	T6	T21	NoRel	true	vibraciones	Accidente
+Relation	T6	T24	NoRel	true	vibraciones	Accidentes
+Relation	T6	T7	NoRel	true	vibraciones	aumento
+Relation	T7	T17	NoRel	true	aumento	ejecutar
+Relation	T7	T2	NoRel	true	aumento	acelerara
+Relation	T7	T20	NoRel	true	aumento	engañosas
+Relation	T7	T21	NoRel	true	aumento	Accidente
+Relation	T7	T5	NoRel	true	aumento	emergencia
+Relation	T7	T6	NoRel	true	aumento	vibraciones
+Relation	T8	T1	NoRel	true	superaron	permitió
+Relation	T8	T24	NoRel	true	superaron	Accidentes
+Relation	T8	T3	NoRel	true	superaron	diseño
+Relation	T8	T4	NoRel	true	superaron	descenso
+Relation	T9	T12	NoRel	true	resultado	Acciones
+Relation	T9	T21	NoRel	true	resultado	Accidente
+Relation	T9	T23	NoRel	true	resultado	Accidentes
+Relation	T9	T7	NoRel	true	resultado	aumento

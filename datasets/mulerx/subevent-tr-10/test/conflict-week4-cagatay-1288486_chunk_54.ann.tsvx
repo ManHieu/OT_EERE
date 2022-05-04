@@ -1,0 +1,34 @@
+Text	SPD , Alman Halk Partisi ( _ Deutsche Volkspartei _ - DVP ) ile beraber hükûmet kurdu .	SPD daha önceden olduğu gibi yine sınıf hareketini bastırıyordu , işçi sınıfı içinde her şeye rağmen etkili olan SPD grevleri bastırıyordu .	Burjuvazin bütün kararlarına onay verirken devrimin en önemli kazanımlarımdan olan 8 saatlik işgününün kaldırılmasına bile ses çıkarmadı .	Ekim ayına gelindiği zaman KPD işçi sınıfının bu hareketliliğinin tekrar bir devrimci durum yarattığı görüşündeydi .	Bu çerçevede silahlı işçi birlikleri oluşturuyor , devrim hazırlıkları yapıyordu .
+Event	T0	kurdu	EVENT	80
+Event	T1	bastırıyordu	EVENT	139
+Event	T2	bastırıyordu	EVENT	214
+Event	T3	onay	EVENT	258
+Event	T4	kaldırılmasına	EVENT	332
+Event	T5	hareketliliğinin	EVENT	417
+Event	T7	yapıyordu	EVENT	556
+Event	T8	hareketini	EVENT	128
+Event	T9	grevleri	EVENT	205
+Event	T10	devrimin	EVENT	272
+Event	T11	oluşturuyor	EVENT	522
+Event	T12	kazanımlarımdan	EVENT	291
+Event	T6	yarattığı	EVENT	460
+Relation	T10	T12	SuperSub	true	devrimin	kazanımlarımdan
+Relation	T12	T10	SubSuper	true	kazanımlarımdan	devrimin
+Relation	T5	T8	SuperSub	true	hareketliliğinin	hareketini
+Relation	T8	T5	SubSuper	true	hareketini	hareketliliğinin
+Relation	T5	T9	SuperSub	true	hareketliliğinin	grevleri
+Relation	T9	T5	SubSuper	true	grevleri	hareketliliğinin
+Relation	T5	T7	SuperSub	true	hareketliliğinin	yapıyordu
+Relation	T7	T5	SubSuper	true	yapıyordu	hareketliliğinin
+Relation	T5	T11	SuperSub	true	hareketliliğinin	oluşturuyor
+Relation	T11	T5	SubSuper	true	oluşturuyor	hareketliliğinin
+Relation	T0	T3	NoRel	true	kurdu	onay
+Relation	T10	T8	NoRel	true	devrimin	hareketini
+Relation	T11	T2	NoRel	true	oluşturuyor	bastırıyordu
+Relation	T12	T1	NoRel	true	kazanımlarımdan	bastırıyordu
+Relation	T12	T9	NoRel	true	kazanımlarımdan	grevleri
+Relation	T6	T12	NoRel	true	yarattığı	kazanımlarımdan
+Relation	T6	T8	NoRel	true	yarattığı	hareketini
+Relation	T7	T9	NoRel	true	yapıyordu	grevleri
+Relation	T8	T3	NoRel	true	hareketini	onay
+Relation	T9	T2	NoRel	true	grevleri	bastırıyordu

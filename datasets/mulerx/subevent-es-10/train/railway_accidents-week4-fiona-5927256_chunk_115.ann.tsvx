@@ -1,0 +1,20 @@
+Text	- 9 de enero de 1984 .	Cerca de Pravia ( Asturias ) el choque de dos trenes de viajeros en el interior de un túnel se saldó con tres personas muertas y ochenta heridas .	- El 30 de octubre de 1984 , En Villajoyosa , línea de Alicante a Denia , la colisión entre dos trenes de FEVE causó 9 fallecidos y 28 heridos .	- 15 de noviembre de 1987 .	En Ceceda ( Asturias ) un tren compuesto de tres unidades que desde Oviedo se dirigía a Bilbao cae desde un puente al río Piloña .
+Event	T0	choque	EVENT	55
+Event	T1	saldó	EVENT	118
+Event	T2	muertas	EVENT	142
+Event	T3	heridas	EVENT	160
+Event	T4	colisión	EVENT	247
+Event	T5	causó	EVENT	281
+Event	T6	fallecidos	EVENT	289
+Event	T7	heridos	EVENT	305
+Event	T8	dirigía	EVENT	421
+Event	T9	cae	EVENT	438
+Relation	T0	T5	NoRel	true	choque	causó
+Relation	T0	T6	NoRel	true	choque	fallecidos
+Relation	T1	T3	NoRel	true	saldó	heridas
+Relation	T2	T6	NoRel	true	muertas	fallecidos
+Relation	T3	T9	NoRel	true	heridas	cae
+Relation	T5	T9	NoRel	true	causó	cae
+Relation	T7	T0	NoRel	true	heridos	choque
+Relation	T7	T1	NoRel	true	heridos	saldó
+Relation	T7	T2	NoRel	true	heridos	muertas

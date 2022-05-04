@@ -1,0 +1,41 @@
+Text	Horas más tarde , se encontró al último superviviente del accidente , el futbolista Neto , rescatado a las 05:40 hora local .	De los 77 ocupantes , 71 murieron en el desastre ; al principio se pensó que eran 75 los fallecidos , pero más tarde se reveló que 4 pasajeros no abordaron el vuelo .	De ellos , tres no lo hicieron por problemas de agenda : el alcalde de Chapecó — Luciano Buligon — , el presidente del consejo de esa ciudad — Plinio Nes Filho — y Gelson Merisio , diputado de Santa Catarina .	El periodista y conductor radial Iván Carlos Agnoletto no abordó el avión porque , al tener un documento de identidad vencido , podía tener problemas al hacer migración en Colombia .	Rescate de Policía al vuelo 2933_-_02 .jpg Rescate de Policía al vuelo 2933_-_05 .jpg Rescate de Policía al vuelo 2933_-_06 .jpg
+Event	T0	encontró	EVENT	21
+Event	T1	accidente	EVENT	58
+Event	T2	rescatado	EVENT	91
+Event	T3	murieron	EVENT	151
+Event	T4	desastre	EVENT	166
+Event	T5	pensó	EVENT	193
+Event	T6	fallecidos	EVENT	215
+Event	T7	reveló	EVENT	246
+Event	T8	abordaron	EVENT	272
+Event	T9	vuelo	EVENT	285
+Event	T10	vencido	EVENT	621
+Event	T11	migración	EVENT	662
+Event	T12	Rescate	EVENT	686
+Event	T13	vuelo	EVENT	708
+Event	T14	Rescate	EVENT	729
+Event	T15	vuelo	EVENT	794
+Relation	T0	T1	NoRel	true	encontró	accidente
+Relation	T0	T9	NoRel	true	encontró	vuelo
+Relation	T10	T12	NoRel	true	vencido	Rescate
+Relation	T10	T2	NoRel	true	vencido	rescatado
+Relation	T13	T0	NoRel	true	vuelo	encontró
+Relation	T13	T1	NoRel	true	vuelo	accidente
+Relation	T13	T5	NoRel	true	vuelo	pensó
+Relation	T15	T13	NoRel	true	vuelo	vuelo
+Relation	T2	T1	NoRel	true	rescatado	accidente
+Relation	T3	T5	NoRel	true	murieron	pensó
+Relation	T3	T6	NoRel	true	murieron	fallecidos
+Relation	T4	T11	NoRel	true	desastre	migración
+Relation	T5	T10	NoRel	true	pensó	vencido
+Relation	T5	T3	NoRel	true	pensó	murieron
+Relation	T5	T4	NoRel	true	pensó	desastre
+Relation	T5	T7	NoRel	true	pensó	reveló
+Relation	T7	T0	NoRel	true	reveló	encontró
+Relation	T7	T1	NoRel	true	reveló	accidente
+Relation	T7	T9	NoRel	true	reveló	vuelo
+Relation	T8	T1	NoRel	true	abordaron	accidente
+Relation	T8	T11	NoRel	true	abordaron	migración
+Relation	T8	T14	NoRel	true	abordaron	Rescate
+Relation	T8	T9	NoRel	true	abordaron	vuelo
+Relation	T9	T4	NoRel	true	vuelo	desastre

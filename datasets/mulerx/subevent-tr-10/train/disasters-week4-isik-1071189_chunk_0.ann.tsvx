@@ -1,0 +1,34 @@
+Text	1976 ÇALDIRAN DEPREMI , 24 Kasım 1976 tarihinde yerel saatle 12: 22'de merkez_üssü Van'ın Muradiye ilçesi Çaldıran bucağı olan 7,5 M _ ( s ) büyüklüğündeki deprem .	3840 kişi öldü , 9232 bina hasar gördü .	2000 kilometrekarelik bir alandaki evlerin % 80'i yıkıldı .	Depremin yanı sıra bölgede gece hava sıcaklığının - 17 dereceye kadar düşmesi sonucu donma nedeniyle de ölümler oldu .	Yağmur ve kar yağışları nedeniyle kurtarma ve yardım çalışmaları gecikti .
+Event	T1	deprem	EVENT	156
+Event	T2	öldü	EVENT	175
+Event	T3	gördü	EVENT	198
+Event	T4	yıkıldı	EVENT	256
+Event	T5	Depremin	EVENT	266
+Event	T6	donma	EVENT	351
+Event	T7	oldu	EVENT	378
+Event	T10	gecikti	EVENT	450
+Event	T11	1976 ÇALDIRAN DEPREMI	EVENT	0
+Event	T12	düşmesi	EVENT	336
+Event	T13	yağışları	EVENT	399
+Event	T8	çalışmaları	EVENT	438
+Relation	T11	T2	SuperSub	true	1976 ÇALDIRAN DEPREMI	öldü
+Relation	T2	T11	SubSuper	true	öldü	1976 ÇALDIRAN DEPREMI
+Relation	T11	T3	SuperSub	true	1976 ÇALDIRAN DEPREMI	gördü
+Relation	T3	T11	SubSuper	true	gördü	1976 ÇALDIRAN DEPREMI
+Relation	T11	T4	SuperSub	true	1976 ÇALDIRAN DEPREMI	yıkıldı
+Relation	T4	T11	SubSuper	true	yıkıldı	1976 ÇALDIRAN DEPREMI
+Relation	T11	T8	SuperSub	true	1976 ÇALDIRAN DEPREMI	çalışmaları
+Relation	T8	T11	SubSuper	true	çalışmaları	1976 ÇALDIRAN DEPREMI
+Relation	T1	T3	NoRel	true	deprem	gördü
+Relation	T1	T5	NoRel	true	deprem	Depremin
+Relation	T1	T6	NoRel	true	deprem	donma
+Relation	T11	T6	NoRel	true	1976 ÇALDIRAN DEPREMI	donma
+Relation	T11	T7	NoRel	true	1976 ÇALDIRAN DEPREMI	oldu
+Relation	T13	T10	NoRel	true	yağışları	gecikti
+Relation	T13	T11	NoRel	true	yağışları	1976 ÇALDIRAN DEPREMI
+Relation	T5	T11	NoRel	true	Depremin	1976 ÇALDIRAN DEPREMI
+Relation	T5	T12	NoRel	true	Depremin	düşmesi
+Relation	T5	T8	NoRel	true	Depremin	çalışmaları
+Relation	T6	T13	NoRel	true	donma	yağışları
+Relation	T7	T11	NoRel	true	oldu	1976 ÇALDIRAN DEPREMI
+Relation	T8	T2	NoRel	true	çalışmaları	öldü

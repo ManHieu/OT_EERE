@@ -1,0 +1,38 @@
+Text	EL VUELO 331 DE AMERICAN AIRLINES era un vuelo internacional regular entre el Aeropuerto Nacional Ronald Reagan en Washington , DC y el Aeropuerto Internacional Norman Manley en Kingston , Jamaica , con escala en Miami .	El 22 de diciembre de 2009 , el avión transportaba 148 pasajeros y seis tripulantes y , al aterrizar terminó saliendo de la pista , debido a la lluvia y el mal tiempo , continuando su rumbo hasta que se partió por la mitad .	Algunos de los factores que contribuyeron al accidente incluyen la alta velocidad de la aeronave después de que aterrizó y el aterrizaje del avión en el medio de la pista del aeropuerto .	La información atestigua que un Boeing 747 de Virgin Atlantic aterrizó con éxito en el mismo aeropuerto en condiciones climáticas muy similares , justo antes del vuelo 331 .	El vuelo se originó en el Aeropuerto Nacional Ronald Reagan , en Washington , DC , con escala en el Aeropuerto Internacional de Miami , en Miami , Florida .
+Event	T0	escala	EVENT	203
+Event	T1	transportaba	EVENT	259
+Event	T2	saliendo	EVENT	330
+Event	T3	lluvia	EVENT	365
+Event	T5	rumbo	EVENT	405
+Event	T6	partió	EVENT	424
+Event	T8	aterrizó	EVENT	558
+Event	T10	atestigua	EVENT	649
+Event	T11	aterrizó	EVENT	696
+Event	T12	vuelo	EVENT	796
+Event	T13	vuelo	EVENT	811
+Event	T14	originó	EVENT	820
+Event	T15	escala	EVENT	895
+Event	T16	VUELO	EVENT	3
+Event	T17	aterrizar	EVENT	312
+Event	T4	accidente	EVENT	491
+Relation	T16	T4	SuperSub	true	VUELO	accidente
+Relation	T4	T16	SubSuper	true	accidente	VUELO
+Relation	T0	T15	NoRel	true	escala	escala
+Relation	T10	T6	NoRel	true	atestigua	partió
+Relation	T11	T12	NoRel	true	aterrizó	vuelo
+Relation	T11	T16	NoRel	true	aterrizó	VUELO
+Relation	T11	T5	NoRel	true	aterrizó	rumbo
+Relation	T12	T16	NoRel	true	vuelo	VUELO
+Relation	T14	T17	NoRel	true	originó	aterrizar
+Relation	T14	T5	NoRel	true	originó	rumbo
+Relation	T15	T1	NoRel	true	escala	transportaba
+Relation	T15	T10	NoRel	true	escala	atestigua
+Relation	T17	T1	NoRel	true	aterrizar	transportaba
+Relation	T17	T3	NoRel	true	aterrizar	lluvia
+Relation	T2	T15	NoRel	true	saliendo	escala
+Relation	T3	T16	NoRel	true	lluvia	VUELO
+Relation	T4	T2	NoRel	true	accidente	saliendo
+Relation	T6	T10	NoRel	true	partió	atestigua
+Relation	T6	T11	NoRel	true	partió	aterrizó
+Relation	T6	T14	NoRel	true	partió	originó
+Relation	T8	T1	NoRel	true	aterrizó	transportaba

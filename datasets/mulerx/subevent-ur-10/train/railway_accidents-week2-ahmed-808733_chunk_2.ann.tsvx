@@ -1,0 +1,19 @@
+Text	پنجاب پولیس اور ریلوے پولیس نے لدھیانہ ریلوے اسٹیشن میں ٹرین کے ڈرائیور کو حراست میں رکھا ۔	ڈرائیور نے عہدیداروں کو کہا کہ اسے گرین سگنل ملا تھا اور اسے اس بات کا اندازہ نہیں تھا کہ وہاں ٹریکوں پر کئی سو افراد کھڑے ہیں ۔	زمرہ : 2018ء میں بھارت میں آفات زمرہ : 2018ء میں ریلوے حادثات زمرہ : امرتسر میں نقل و حمل زمرہ : بھارت ریلوے کی شمولیت والے حادثات اور واقعات زمرہ : فلم شدہ حادثاتی اموات زمرہ : صفحات مع_گراف		
+Event	T0	رکھا	EVENT	85
+Event	T1	کہا	EVENT	116
+Event	T2	حادثات	EVENT	276
+Event	T4	حادثات	EVENT	345
+Event	T5	واقعات	EVENT	356
+Event	T6	فلم	EVENT	370
+Event	T7	اموات	EVENT	386
+Relation	T0	T1	NoRel	true	رکھا	کہا
+Relation	T0	T2	NoRel	true	رکھا	حادثات
+Relation	T0	T6	NoRel	true	رکھا	فلم
+Relation	T1	T2	NoRel	true	کہا	حادثات
+Relation	T1	T6	NoRel	true	کہا	فلم
+Relation	T2	T4	NoRel	true	حادثات	حادثات
+Relation	T2	T5	NoRel	true	حادثات	واقعات
+Relation	T4	T5	NoRel	true	حادثات	واقعات
+Relation	T4	T7	NoRel	true	حادثات	اموات
+Relation	T6	T5	NoRel	true	فلم	واقعات
+Relation	T7	T2	NoRel	true	اموات	حادثات

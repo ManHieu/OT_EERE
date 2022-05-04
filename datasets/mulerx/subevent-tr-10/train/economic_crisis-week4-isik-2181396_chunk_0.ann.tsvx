@@ -1,0 +1,18 @@
+Text	KAYIP ONYIL ( _ Ushinawareta Jūnen _ ) , Japonya'daki varlık fiyat balonunun çöküşünden sonraki dönemdir .	Bu terim ilk olarak 1991'den 2000'e kadar olan yıllar için kullanılmaktaydı , ancak 2001'den 2010'a kadar olan on yıl da sıklıkla dahil edilerek olarak da anılır .	1995 - 2007 yılları arasında ülkenin GSYİH'i nominal olarak 5.33 trilyondan 4.36 trilyon dolara geriledi , maaşlar % 5 civarında düştü ve durgun fiyat seviyesine girdi .	Kayıp Onyıl'ın etkisi günümüzde de devam etmekte olup Japonya'nın gerilemelerinin kapsamı ve ölçümü hakkında bazı tartışmalar olsa da Kayıp Onyıl'ın ekonomik etkisi iyi belirlenmiş ve Japon politikacılar sonuçlarını çözmeye devam etmektedirler .	Kategori : Heisei dönemi Kategori : Japonya'nın ekonomi tarihi Kategori : 1990'larda Japonya Kategori : Ekonomik krizler
+Event	T0	çöküşünden	EVENT	77
+Event	T2	anılır	EVENT	262
+Event	T3	geriledi	EVENT	367
+Event	T4	düştü	EVENT	400
+Event	T5	girdi	EVENT	433
+Event	T6	etkisi	EVENT	456
+Event	T7	gerilemelerinin	EVENT	507
+Event	T8	etkisi	EVENT	599
+Event	T9	krizler	EVENT	800
+Event	T1	kullanılmaktaydı	EVENT	166
+Relation	T0	T3	NoRel	true	çöküşünden	geriledi
+Relation	T0	T6	NoRel	true	çöküşünden	etkisi
+Relation	T3	T4	NoRel	true	geriledi	düştü
+Relation	T4	T1	NoRel	true	düştü	kullanılmaktaydı
+Relation	T5	T7	NoRel	true	girdi	gerilemelerinin
+Relation	T6	T1	NoRel	true	etkisi	kullanılmaktaydı
+Relation	T7	T5	NoRel	true	gerilemelerinin	girdi

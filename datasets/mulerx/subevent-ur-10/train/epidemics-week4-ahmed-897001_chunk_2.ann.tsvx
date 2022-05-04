@@ -1,0 +1,37 @@
+Text	700 سے زائد افراد کو نگرانی میں رکھا گیا اور تقریباً 400 افراد کو ان کے علاج اور صحت کی دیکھ بھال کے لیے رکھا گیا ۔	انفیکشن کی تشخیص کے لیے ایک پولیمریز چین رد عمل ( PCR ) ٹیسٹ تیار کیا گیا تھا ، اس انتہائی نگہداشت کے ساتھ ووہان کے 41 افراد کے گروپ میں ایک نئے کورونا وائرس کی دریافت کی تصدیق ہوئی ۔	ان میں دو لوگوں نے ابھی جلد ہی شادی کی تھی ۔	ان میں ایک بازار بھی نہیں گیا تھا ۔	اور کچھ لوگ اس سمندری غذائی بازار میں کام کرنے والے خاندان سے تھے ۔
+Event	T0	نگرانی	EVENT	21
+Event	T1	علاج	EVENT	72
+Event	T2	انفیکشن	EVENT	116
+Event	T3	تشخیص	EVENT	127
+Event	T4	دریافت	EVENT	277
+Event	T6	شادی	EVENT	331
+Event	T7	رکھا	EVENT	105
+Event	T9	دیکھ بھال	EVENT	88
+Event	T8	ٹیسٹ	EVENT	172
+Event	T10	تیار	EVENT	177
+Event	T11	تصدیق	EVENT	287
+Event	T5	گیا	EVENT	371
+Event	T12	کام	EVENT	419
+Relation	T0	T7	NoRel	true	نگرانی	رکھا
+Relation	T1	T5	NoRel	true	علاج	گیا
+Relation	T1	T8	NoRel	true	علاج	ٹیسٹ
+Relation	T11	T12	NoRel	true	تصدیق	کام
+Relation	T11	T3	NoRel	true	تصدیق	تشخیص
+Relation	T12	T3	NoRel	true	کام	تشخیص
+Relation	T2	T9	NoRel	true	انفیکشن	دیکھ بھال
+Relation	T3	T0	NoRel	true	تشخیص	نگرانی
+Relation	T4	T11	NoRel	true	دریافت	تصدیق
+Relation	T4	T2	NoRel	true	دریافت	انفیکشن
+Relation	T4	T3	NoRel	true	دریافت	تشخیص
+Relation	T4	T5	NoRel	true	دریافت	گیا
+Relation	T5	T0	NoRel	true	گیا	نگرانی
+Relation	T5	T8	NoRel	true	گیا	ٹیسٹ
+Relation	T6	T5	NoRel	true	شادی	گیا
+Relation	T7	T10	NoRel	true	رکھا	تیار
+Relation	T7	T11	NoRel	true	رکھا	تصدیق
+Relation	T7	T12	NoRel	true	رکھا	کام
+Relation	T8	T0	NoRel	true	ٹیسٹ	نگرانی
+Relation	T8	T4	NoRel	true	ٹیسٹ	دریافت
+Relation	T9	T0	NoRel	true	دیکھ بھال	نگرانی
+Relation	T9	T10	NoRel	true	دیکھ بھال	تیار
+Relation	T9	T12	NoRel	true	دیکھ بھال	کام

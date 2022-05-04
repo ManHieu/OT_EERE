@@ -1,0 +1,49 @@
+Text	The water was able to penetrate inside the sensor bodies , then froze in flight , rendering two of three of the sensors inoperative , thus removing the protection they normally provided in the aircraft 's flight management system .	The primary cause of the accident was that the crew attempted an improvised test of the AOA warning system , not knowing that it was not functioning properly due to the inoperative sensors .	They also disregarded the proper speed limits for the tests they were performing , resulting in a stall .	The aircraft 's computers received conflicting information from the three AOA sensors .	The aircraft computer system ’s programming logic had been designed to reject one sensor value if it deviated significantly from the other two sensor values .
+Event	T1	penetrate	EVENT	22
+Event	T2	rendering	EVENT	82
+Event	T3	removing	EVENT	139
+Event	T4	protection	EVENT	152
+Event	T5	provided	EVENT	177
+Event	T6	accident	EVENT	257
+Event	T7	attempted	EVENT	284
+Event	T8	test	EVENT	308
+Event	T9	knowing	EVENT	345
+Event	T10	functioning	EVENT	369
+Event	T11	disregarded	EVENT	433
+Event	T12	tests	EVENT	477
+Event	T13	performing	EVENT	493
+Event	T14	resulting	EVENT	506
+Event	T15	stall	EVENT	521
+Event	T16	designed	EVENT	676
+Event	T17	reject	EVENT	688
+Event	T18	deviated	EVENT	718
+Event	T19	froze	EVENT	64
+Event	T20	received	EVENT	555
+Relation	T1	T19	SuperSub	true	penetrate	froze
+Relation	T19	T1	SubSuper	true	froze	penetrate
+Relation	T19	T2	SuperSub	true	froze	rendering
+Relation	T2	T19	SubSuper	true	rendering	froze
+Relation	T1	T2	NoRel	true	penetrate	rendering
+Relation	T1	T8	NoRel	true	penetrate	test
+Relation	T10	T19	NoRel	true	functioning	froze
+Relation	T10	T6	NoRel	true	functioning	accident
+Relation	T10	T8	NoRel	true	functioning	test
+Relation	T11	T15	NoRel	true	disregarded	stall
+Relation	T12	T19	NoRel	true	tests	froze
+Relation	T14	T15	NoRel	true	resulting	stall
+Relation	T15	T3	NoRel	true	stall	removing
+Relation	T15	T6	NoRel	true	stall	accident
+Relation	T16	T14	NoRel	true	designed	resulting
+Relation	T16	T4	NoRel	true	designed	protection
+Relation	T16	T6	NoRel	true	designed	accident
+Relation	T17	T5	NoRel	true	reject	provided
+Relation	T18	T4	NoRel	true	deviated	protection
+Relation	T18	T9	NoRel	true	deviated	knowing
+Relation	T20	T17	NoRel	true	received	reject
+Relation	T4	T19	NoRel	true	protection	froze
+Relation	T5	T16	NoRel	true	provided	designed
+Relation	T6	T19	NoRel	true	accident	froze
+Relation	T7	T12	NoRel	true	attempted	tests
+Relation	T7	T2	NoRel	true	attempted	rendering
+Relation	T8	T6	NoRel	true	test	accident
+Relation	T9	T14	NoRel	true	knowing	resulting

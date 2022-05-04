@@ -1,0 +1,13 @@
+Text	Ulric Neisser , " Bilişsel Yaklaşım " tanımını yaparken , insanların " gerçek dünya " ile sadece duyusal girdi gibi bilgileri işleyen aracı sistemler aracılığıyla etkileşime girebileceğini söylemektedir .	Bilişsel bilim insanları tarafından da anlaşıldığı gibi , biliş çalışması , bu sistemlerin ve girdiden gelen bilgiyi işleme biçimlerinin incelenmesidir .	İşleme süreci , girdinin yalnızca ilk kez yapılandırılmasını ve yorumlanmasını değil , aynı zamanda depolanmasını ve daha sonra kullanılmasını da içermektedir .	Steven Pinker , bilişsel devrimin fiziksel dünya ile fikirler , kavramlar , anlamlar ve niyetler dünyası arasında bir köprü olduğunu iddia etmektedir .	Bilişsel devrim , iki dünyayı zihinsel yaşamın bilgi , hesaplama ve geri bildirim açısından açıklanabileceği bir teori ile birleştirmiştir .
+Event	T0	söylemektedir	EVENT	189
+Event	T1	çalışması	EVENT	269
+Event	T2	işleme	EVENT	322
+Event	T3	incelenmesidir	EVENT	342
+Event	T4	devrim	EVENT	681
+Event	T5	birleştirmiştir	EVENT	795
+Event	T6	devrimin	EVENT	545
+Relation	T3	T6	NoRel	true	incelenmesidir	devrimin
+Relation	T4	T2	NoRel	true	devrim	işleme
+Relation	T5	T4	NoRel	true	birleştirmiştir	devrim
+Relation	T6	T0	NoRel	true	devrimin	söylemektedir
+Relation	T6	T5	NoRel	true	devrimin	birleştirmiştir

@@ -1,0 +1,18 @@
+Text	Seis de ellas murieron y la restante resultó herida grave .	- 20 de noviembre de 1979 .	Un turismo y un taxi son arrollados por un convoy que efectuaba maniobras en un paso a nivel situado en el casco urbano de Cartagena .	Resultan 6 fallecidos .	- El 6 de diciembre de 1979 , un tren vacío , fuera de control y sin maquinista colisionó con otro que unía Barcelona con Puigcerdá causando 18 muertos y 49 heridos en Las Franquesas del Vallés , Barcelona .
+Event	T0	murieron	EVENT	14
+Event	T1	arrollados	EVENT	113
+Event	T2	maniobras	EVENT	152
+Event	T3	fallecidos	EVENT	234
+Event	T4	colisionó	EVENT	327
+Event	T5	causando	EVENT	379
+Event	T6	muertos	EVENT	391
+Event	T7	heridos	EVENT	404
+Event	T8	herida	EVENT	45
+Relation	T1	T3	NoRel	true	arrollados	fallecidos
+Relation	T2	T4	NoRel	true	maniobras	colisionó
+Relation	T3	T1	NoRel	true	fallecidos	arrollados
+Relation	T3	T4	NoRel	true	fallecidos	colisionó
+Relation	T4	T0	NoRel	true	colisionó	murieron
+Relation	T4	T3	NoRel	true	colisionó	fallecidos
+Relation	T6	T5	NoRel	true	muertos	causando
+Relation	T8	T0	NoRel	true	herida	murieron

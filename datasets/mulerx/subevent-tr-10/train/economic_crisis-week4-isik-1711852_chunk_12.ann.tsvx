@@ -1,0 +1,36 @@
+Text	Ekonomik beklentilerin olumsuzlaştığı bir ortamda , Hazine'nin yüklü bir borç itfası öncesinde 19 Şubat 2001'de beklenmedik siyasi gerginlikler yaşandı .	Kriz , Milli Güvenlik Kurulu toplantısında Cumhurbaşkanı Ahmet Necdet Sezer ile Başbakan Bülent Ecevit arasındaki tartışmayla patlak verdi .	21 Şubat 2001 tarihli toplantıda Sezer'in Ecevit'e anayasa kitapçığı fırlatması olayından hemen sonra İstanbul Menkul Kıymetler Borsası'nda % 18 , 1 oranında düşüş yaşandı gecelik faizler % 7500’e kadar yükseldi .	Daha sonra " dalgalı kur " sistemine geçilmesi yönünde karar alındı .	Başbakan'ın " devlet yönetiminde kriz var " açıklamasıyla birlikte mali piyasalarda panikle başlayan süreç , yerli parayı savunmak için gecelik faizlerin çok yüksek oranlara ulaşmasına rağmen , yerleşiklerin yoğun döviz talebi nedeniyle Merkez Bankası'nın 5 milyar dolarlık döviz satışıyla sonuçlandı .
+Event	T0	itfası	EVENT	78
+Event	T1	yaşandı	EVENT	144
+Event	T2	Kriz	EVENT	154
+Event	T3	verdi	EVENT	287
+Event	T5	yaşandı	EVENT	459
+Event	T6	yükseldi	EVENT	498
+Event	T8	alındı	EVENT	570
+Event	T9	kriz	EVENT	612
+Event	T10	süreç	EVENT	680
+Event	T12	talebi	EVENT	799
+Event	T13	sonuçlandı	EVENT	869
+Event	T14	tartışmayla	EVENT	268
+Event	T15	fırlatması	EVENT	364
+Event	T7	açıklamasıyla	EVENT	623
+Relation	T2	T7	SuperSub	true	Kriz	açıklamasıyla
+Relation	T7	T2	SubSuper	true	açıklamasıyla	Kriz
+Relation	T10	T15	NoRel	true	süreç	fırlatması
+Relation	T10	T6	NoRel	true	süreç	yükseldi
+Relation	T10	T7	NoRel	true	süreç	açıklamasıyla
+Relation	T10	T9	NoRel	true	süreç	kriz
+Relation	T12	T14	NoRel	true	talebi	tartışmayla
+Relation	T12	T7	NoRel	true	talebi	açıklamasıyla
+Relation	T13	T12	NoRel	true	sonuçlandı	talebi
+Relation	T14	T13	NoRel	true	tartışmayla	sonuçlandı
+Relation	T14	T6	NoRel	true	tartışmayla	yükseldi
+Relation	T15	T3	NoRel	true	fırlatması	verdi
+Relation	T2	T3	NoRel	true	Kriz	verdi
+Relation	T5	T10	NoRel	true	yaşandı	süreç
+Relation	T5	T3	NoRel	true	yaşandı	verdi
+Relation	T7	T13	NoRel	true	açıklamasıyla	sonuçlandı
+Relation	T7	T15	NoRel	true	açıklamasıyla	fırlatması
+Relation	T8	T0	NoRel	true	alındı	itfası
+Relation	T8	T14	NoRel	true	alındı	tartışmayla
+Relation	T8	T15	NoRel	true	alındı	fırlatması
+Relation	T9	T1	NoRel	true	kriz	yaşandı

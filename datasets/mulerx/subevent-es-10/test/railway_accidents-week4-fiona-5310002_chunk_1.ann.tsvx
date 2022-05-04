@@ -1,0 +1,129 @@
+Text	La locomotora abandonó la vía y cayó en el tramo entre la línea y la pared de la trinchera , arrastando consigo el tender , el furgón y el primer vagón de tercera clase , deteniéndose enseguida ; debido al terreno abrupto , el segundo vagón de tercera clase penetró en el vagón caído , destruyendo la mitad de este .	El tercer vagón descarriló , igualmente , pero se mantuvo en la plataforma de la vía ; el resto de la composición no llegó a descarrilar .	Debido al hecho de no existir ninguna en las proximidades del lugar del accidente , tuvieron que ser los propios pasajeros los que se desplazasen a las estaciones en ambos sentidos del accidente , con el fin de dar la alarma .	Los primeros socorros vinieron de las poblaciones próximas y de participantes de una feria en Odemira , habiendo después llegado una composición de Funcheira , transportando operarios ; aproximadamente tres horas después del accidente , un comboi con médicos y enfermeros llegó al lugar .	Los heridos fueron transportados por ferrocarril a Beja , habiendo llegado alrededor de la media noche , y a Portimão por ruta ; los muertos fueron depositados , de forma provisional , en la Estación de Santa Clara-Sabóia .
+Event	T0	abandonó	EVENT	14
+Event	T1	cayó	EVENT	32
+Event	T2	arrastando	EVENT	93
+Event	T3	deteniéndose	EVENT	171
+Event	T4	penetró	EVENT	258
+Event	T5	caído	EVENT	278
+Event	T6	destruyendo	EVENT	286
+Event	T7	descarriló	EVENT	333
+Event	T8	mantuvo	EVENT	367
+Event	T9	composición	EVENT	419
+Event	T10	llegó	EVENT	434
+Event	T11	descarrilar	EVENT	442
+Event	T12	hecho	EVENT	466
+Event	T13	accidente	EVENT	528
+Event	T14	desplazasen	EVENT	590
+Event	T15	accidente	EVENT	641
+Event	T16	dar	EVENT	667
+Event	T17	alarma	EVENT	674
+Event	T18	vinieron	EVENT	705
+Event	T19	feria	EVENT	768
+Event	T20	llegado	EVENT	804
+Event	T21	composición	EVENT	816
+Event	T22	transportando	EVENT	843
+Event	T23	accidente	EVENT	908
+Event	T24	llegó	EVENT	955
+Event	T25	heridos	EVENT	976
+Event	T26	transportados	EVENT	991
+Event	T27	llegado	EVENT	1039
+Event	T28	muertos	EVENT	1105
+Event	T29	depositados	EVENT	1120
+Relation	T23	T24	SuperSub	true	accidente	llegó
+Relation	T24	T23	SubSuper	true	llegó	accidente
+Relation	T25	T26	SuperSub	true	heridos	transportados
+Relation	T26	T25	SubSuper	true	transportados	heridos
+Relation	T0	T1	NoRel	true	abandonó	cayó
+Relation	T0	T12	NoRel	true	abandonó	hecho
+Relation	T0	T21	NoRel	true	abandonó	composición
+Relation	T0	T27	NoRel	true	abandonó	llegado
+Relation	T0	T7	NoRel	true	abandonó	descarriló
+Relation	T1	T10	NoRel	true	cayó	llegó
+Relation	T1	T25	NoRel	true	cayó	heridos
+Relation	T1	T4	NoRel	true	cayó	penetró
+Relation	T1	T6	NoRel	true	cayó	destruyendo
+Relation	T10	T20	NoRel	true	llegó	llegado
+Relation	T10	T8	NoRel	true	llegó	mantuvo
+Relation	T10	T9	NoRel	true	llegó	composición
+Relation	T11	T28	NoRel	true	descarrilar	muertos
+Relation	T11	T4	NoRel	true	descarrilar	penetró
+Relation	T12	T16	NoRel	true	hecho	dar
+Relation	T12	T19	NoRel	true	hecho	feria
+Relation	T12	T24	NoRel	true	hecho	llegó
+Relation	T12	T6	NoRel	true	hecho	destruyendo
+Relation	T13	T17	NoRel	true	accidente	alarma
+Relation	T13	T2	NoRel	true	accidente	arrastando
+Relation	T13	T21	NoRel	true	accidente	composición
+Relation	T13	T4	NoRel	true	accidente	penetró
+Relation	T13	T9	NoRel	true	accidente	composición
+Relation	T14	T0	NoRel	true	desplazasen	abandonó
+Relation	T16	T11	NoRel	true	dar	descarrilar
+Relation	T16	T4	NoRel	true	dar	penetró
+Relation	T17	T13	NoRel	true	alarma	accidente
+Relation	T17	T25	NoRel	true	alarma	heridos
+Relation	T18	T11	NoRel	true	vinieron	descarrilar
+Relation	T18	T13	NoRel	true	vinieron	accidente
+Relation	T18	T17	NoRel	true	vinieron	alarma
+Relation	T18	T2	NoRel	true	vinieron	arrastando
+Relation	T18	T26	NoRel	true	vinieron	transportados
+Relation	T18	T27	NoRel	true	vinieron	llegado
+Relation	T19	T12	NoRel	true	feria	hecho
+Relation	T19	T17	NoRel	true	feria	alarma
+Relation	T19	T25	NoRel	true	feria	heridos
+Relation	T2	T1	NoRel	true	arrastando	cayó
+Relation	T2	T14	NoRel	true	arrastando	desplazasen
+Relation	T2	T16	NoRel	true	arrastando	dar
+Relation	T2	T22	NoRel	true	arrastando	transportando
+Relation	T20	T17	NoRel	true	llegado	alarma
+Relation	T20	T19	NoRel	true	llegado	feria
+Relation	T20	T23	NoRel	true	llegado	accidente
+Relation	T21	T1	NoRel	true	composición	cayó
+Relation	T21	T26	NoRel	true	composición	transportados
+Relation	T21	T29	NoRel	true	composición	depositados
+Relation	T22	T10	NoRel	true	transportando	llegó
+Relation	T22	T14	NoRel	true	transportando	desplazasen
+Relation	T22	T6	NoRel	true	transportando	destruyendo
+Relation	T23	T13	NoRel	true	accidente	accidente
+Relation	T23	T15	NoRel	true	accidente	accidente
+Relation	T23	T2	NoRel	true	accidente	arrastando
+Relation	T23	T8	NoRel	true	accidente	mantuvo
+Relation	T24	T20	NoRel	true	llegó	llegado
+Relation	T24	T27	NoRel	true	llegó	llegado
+Relation	T25	T11	NoRel	true	heridos	descarrilar
+Relation	T25	T19	NoRel	true	heridos	feria
+Relation	T25	T21	NoRel	true	heridos	composición
+Relation	T25	T9	NoRel	true	heridos	composición
+Relation	T26	T16	NoRel	true	transportados	dar
+Relation	T27	T13	NoRel	true	llegado	accidente
+Relation	T28	T1	NoRel	true	muertos	cayó
+Relation	T28	T19	NoRel	true	muertos	feria
+Relation	T28	T22	NoRel	true	muertos	transportando
+Relation	T28	T29	NoRel	true	muertos	depositados
+Relation	T29	T10	NoRel	true	depositados	llegó
+Relation	T29	T18	NoRel	true	depositados	vinieron
+Relation	T29	T2	NoRel	true	depositados	arrastando
+Relation	T29	T21	NoRel	true	depositados	composición
+Relation	T3	T10	NoRel	true	deteniéndose	llegó
+Relation	T3	T11	NoRel	true	deteniéndose	descarrilar
+Relation	T3	T20	NoRel	true	deteniéndose	llegado
+Relation	T3	T21	NoRel	true	deteniéndose	composición
+Relation	T3	T28	NoRel	true	deteniéndose	muertos
+Relation	T3	T9	NoRel	true	deteniéndose	composición
+Relation	T4	T0	NoRel	true	penetró	abandonó
+Relation	T4	T11	NoRel	true	penetró	descarrilar
+Relation	T4	T8	NoRel	true	penetró	mantuvo
+Relation	T5	T11	NoRel	true	caído	descarrilar
+Relation	T5	T21	NoRel	true	caído	composición
+Relation	T5	T23	NoRel	true	caído	accidente
+Relation	T5	T4	NoRel	true	caído	penetró
+Relation	T6	T25	NoRel	true	destruyendo	heridos
+Relation	T6	T4	NoRel	true	destruyendo	penetró
+Relation	T6	T9	NoRel	true	destruyendo	composición
+Relation	T7	T1	NoRel	true	descarriló	cayó
+Relation	T8	T1	NoRel	true	mantuvo	cayó
+Relation	T8	T13	NoRel	true	mantuvo	accidente
+Relation	T8	T18	NoRel	true	mantuvo	vinieron
+Relation	T8	T22	NoRel	true	mantuvo	transportando
+Relation	T8	T6	NoRel	true	mantuvo	destruyendo
+Relation	T9	T0	NoRel	true	composición	abandonó
+Relation	T9	T10	NoRel	true	composición	llegó

@@ -1,0 +1,21 @@
+Text	Por otro lado , la depreciación del peso cubano tras la crisis generó que aquellos que tuviesen familiares en el exterior , al enviar fondos , también tendrían más posibilidades de ingresos y solidez económica .	Las remesas , el turismo , la economía subterránea e informal , el subempleo y la necesidad de la relocalización de los procesos productivos por falta de recursos energéticos llevaron al gobierno cubano a tomar medidas profundas en la manera de planificar su economía y sus relaciones mercantiles .	Para atacar la crisis , se hicieron reformas a nivel constitucional en 1991 , que generarían principalmente dos sectores económicos emergentes y paralelos al sector estatal , así como un sistema bimonetario .	Por un lado , se reabrió el mercado interno mediante la moneda local y , por otro , el mercado de importaciones y fabricación nacional con moneda extranjera .	Durante el período especial se dio una transición de un modelo de planificación central socialista a un modelo socialista de mercado descentralizado .
+Event	T0	depreciación	EVENT	19
+Event	T1	generó	EVENT	63
+Event	T2	enviar	EVENT	127
+Event	T3	relocalización	EVENT	310
+Event	T4	llevaron	EVENT	387
+Event	T5	medidas	EVENT	423
+Event	T6	atacar	EVENT	516
+Event	T7	crisis	EVENT	526
+Event	T8	reformas	EVENT	547
+Event	T9	generarían	EVENT	593
+Event	T10	dio	EVENT	910
+Event	T11	transición	EVENT	918
+Relation	T1	T11	NoRel	true	generó	transición
+Relation	T10	T9	NoRel	true	dio	generarían
+Relation	T11	T3	NoRel	true	transición	relocalización
+Relation	T2	T6	NoRel	true	enviar	atacar
+Relation	T5	T1	NoRel	true	medidas	generó
+Relation	T6	T8	NoRel	true	atacar	reformas
+Relation	T7	T5	NoRel	true	crisis	medidas
+Relation	T9	T0	NoRel	true	generarían	depreciación

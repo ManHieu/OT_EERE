@@ -1,0 +1,120 @@
+Text	Inicialmente las autoridades judiciales de la ciudad de Turín recibieron el caso de los fiscales italianos en lo criminal , y desestimaron su investigación , pero el caso se filtró a la prensa , obteniendo eco en diarios importantes de Italia como Il Corriere della Sera , La Repubblica , Tuttosport y la Gazzetta dello Sport .	El impacto mediático fue tan grande que obligó a los tribunales deportivos italianos a reabrir el caso y asumir competencia sobre el mismo , siendo así la FIGC ( _ Federazione Italiana de Giuoco di Calcio _ ) quien determinó culpabilidades en primera instancia .	Una vez realizada toda la investigación , la FIGC debió pronunciarse tomando en cuenta las pruebas acumuladas por jueces y fiscales , y al determinarse que también hubo responsabilidad de los árbitros los tribunales de la FIGC dieron el siguiente veredicto el 4 de julio del 2006 :	- La JUVENTUS es despojada de sus dos últimos scudettos ( 2004-2005 y 2005-2006 ) y su descenso a la Serie B con 30 puntos de penalización , más una multa de 120.000 euros .	- El AC MILAN pierde 15 puntos y no disputa la Champions League 2006-07 en su fase de grupos directamente , teniendo que jugar la fase previa ( aun así , el equipo rossonero se clasificaría y terminaría ganando el torneo ) , más una multa de 100.000 euros .
+Event	T0	recibieron	EVENT	62
+Event	T1	caso	EVENT	76
+Event	T2	desestimaron	EVENT	126
+Event	T3	investigación	EVENT	142
+Event	T4	filtró	EVENT	174
+Event	T5	eco	EVENT	206
+Event	T6	impacto	EVENT	331
+Event	T7	obligó	EVENT	368
+Event	T8	reabrir	EVENT	415
+Event	T9	caso	EVENT	426
+Event	T10	competencia	EVENT	440
+Event	T11	culpabilidades	EVENT	553
+Event	T12	realizada	EVENT	599
+Event	T13	investigación	EVENT	617
+Event	T14	acumuladas	EVENT	690
+Event	T15	determinarse	EVENT	730
+Event	T16	dieron	EVENT	818
+Event	T17	veredicto	EVENT	838
+Event	T18	despojada	EVENT	890
+Event	T19	scudettos	EVENT	919
+Event	T20	descenso	EVENT	960
+Event	T21	penalización	EVENT	999
+Event	T22	multa	EVENT	1022
+Event	T23	pierde	EVENT	1061
+Event	T24	disputa	EVENT	1083
+Event	T25	jugar	EVENT	1168
+Event	T26	clasificaría	EVENT	1224
+Event	T27	ganando	EVENT	1250
+Event	T28	multa	EVENT	1280
+Relation	T1	T4	SuperSub	true	caso	filtró
+Relation	T4	T1	SubSuper	true	filtró	caso
+Relation	T0	T18	NoRel	true	recibieron	despojada
+Relation	T1	T0	NoRel	true	caso	recibieron
+Relation	T1	T14	NoRel	true	caso	acumuladas
+Relation	T1	T19	NoRel	true	caso	scudettos
+Relation	T1	T26	NoRel	true	caso	clasificaría
+Relation	T1	T3	NoRel	true	caso	investigación
+Relation	T10	T13	NoRel	true	competencia	investigación
+Relation	T10	T19	NoRel	true	competencia	scudettos
+Relation	T10	T22	NoRel	true	competencia	multa
+Relation	T10	T4	NoRel	true	competencia	filtró
+Relation	T10	T5	NoRel	true	competencia	eco
+Relation	T10	T8	NoRel	true	competencia	reabrir
+Relation	T11	T2	NoRel	true	culpabilidades	desestimaron
+Relation	T12	T10	NoRel	true	realizada	competencia
+Relation	T12	T18	NoRel	true	realizada	despojada
+Relation	T12	T21	NoRel	true	realizada	penalización
+Relation	T13	T26	NoRel	true	investigación	clasificaría
+Relation	T13	T4	NoRel	true	investigación	filtró
+Relation	T13	T7	NoRel	true	investigación	obligó
+Relation	T14	T3	NoRel	true	acumuladas	investigación
+Relation	T14	T8	NoRel	true	acumuladas	reabrir
+Relation	T15	T18	NoRel	true	determinarse	despojada
+Relation	T15	T4	NoRel	true	determinarse	filtró
+Relation	T16	T24	NoRel	true	dieron	disputa
+Relation	T17	T27	NoRel	true	veredicto	ganando
+Relation	T17	T8	NoRel	true	veredicto	reabrir
+Relation	T18	T28	NoRel	true	despojada	multa
+Relation	T18	T8	NoRel	true	despojada	reabrir
+Relation	T19	T10	NoRel	true	scudettos	competencia
+Relation	T19	T23	NoRel	true	scudettos	pierde
+Relation	T19	T6	NoRel	true	scudettos	impacto
+Relation	T2	T12	NoRel	true	desestimaron	realizada
+Relation	T2	T26	NoRel	true	desestimaron	clasificaría
+Relation	T2	T27	NoRel	true	desestimaron	ganando
+Relation	T2	T8	NoRel	true	desestimaron	reabrir
+Relation	T20	T17	NoRel	true	descenso	veredicto
+Relation	T20	T3	NoRel	true	descenso	investigación
+Relation	T21	T14	NoRel	true	penalización	acumuladas
+Relation	T21	T7	NoRel	true	penalización	obligó
+Relation	T22	T11	NoRel	true	multa	culpabilidades
+Relation	T22	T13	NoRel	true	multa	investigación
+Relation	T22	T14	NoRel	true	multa	acumuladas
+Relation	T22	T4	NoRel	true	multa	filtró
+Relation	T22	T8	NoRel	true	multa	reabrir
+Relation	T23	T16	NoRel	true	pierde	dieron
+Relation	T23	T24	NoRel	true	pierde	disputa
+Relation	T23	T7	NoRel	true	pierde	obligó
+Relation	T23	T9	NoRel	true	pierde	caso
+Relation	T24	T17	NoRel	true	disputa	veredicto
+Relation	T24	T19	NoRel	true	disputa	scudettos
+Relation	T24	T9	NoRel	true	disputa	caso
+Relation	T25	T16	NoRel	true	jugar	dieron
+Relation	T25	T17	NoRel	true	jugar	veredicto
+Relation	T25	T27	NoRel	true	jugar	ganando
+Relation	T26	T0	NoRel	true	clasificaría	recibieron
+Relation	T26	T19	NoRel	true	clasificaría	scudettos
+Relation	T27	T10	NoRel	true	ganando	competencia
+Relation	T27	T11	NoRel	true	ganando	culpabilidades
+Relation	T27	T23	NoRel	true	ganando	pierde
+Relation	T28	T19	NoRel	true	multa	scudettos
+Relation	T28	T22	NoRel	true	multa	multa
+Relation	T28	T27	NoRel	true	multa	ganando
+Relation	T28	T4	NoRel	true	multa	filtró
+Relation	T28	T6	NoRel	true	multa	impacto
+Relation	T3	T12	NoRel	true	investigación	realizada
+Relation	T3	T27	NoRel	true	investigación	ganando
+Relation	T3	T4	NoRel	true	investigación	filtró
+Relation	T3	T6	NoRel	true	investigación	impacto
+Relation	T4	T17	NoRel	true	filtró	veredicto
+Relation	T4	T23	NoRel	true	filtró	pierde
+Relation	T4	T28	NoRel	true	filtró	multa
+Relation	T5	T6	NoRel	true	eco	impacto
+Relation	T5	T7	NoRel	true	eco	obligó
+Relation	T6	T15	NoRel	true	impacto	determinarse
+Relation	T6	T22	NoRel	true	impacto	multa
+Relation	T6	T23	NoRel	true	impacto	pierde
+Relation	T7	T1	NoRel	true	obligó	caso
+Relation	T7	T18	NoRel	true	obligó	despojada
+Relation	T7	T27	NoRel	true	obligó	ganando
+Relation	T7	T8	NoRel	true	obligó	reabrir
+Relation	T8	T14	NoRel	true	reabrir	acumuladas
+Relation	T8	T25	NoRel	true	reabrir	jugar
+Relation	T8	T27	NoRel	true	reabrir	ganando
+Relation	T9	T13	NoRel	true	caso	investigación
+Relation	T9	T16	NoRel	true	caso	dieron
+Relation	T9	T28	NoRel	true	caso	multa
+Relation	T9	T3	NoRel	true	caso	investigación
+Relation	T9	T7	NoRel	true	caso	obligó

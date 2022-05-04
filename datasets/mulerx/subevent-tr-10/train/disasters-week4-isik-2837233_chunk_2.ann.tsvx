@@ -1,0 +1,37 @@
+Text	20 Temmuz 2017'deki depremde , Yunanistan ve Türkiye'de toplam 2 ölüm ve yüzlerce yaralanma bildirildi .	Bu deprem sonrasında Muğla kıyılarında küçük çapta tsunami oluşmuştur .	Oluşan tsunamide ortalama 30–40 cm dalga yüksekliği gözlenmiş , oluşan tsunami nedeni ile maddi hasarlar meydana gelmiştir .	Yapılan saha çalışmalarında tsunaminin maksimum yüksekliği 1, 9 m olarak tespit edilmiştir .	Depremin büyüklüğünü Kandilli Rasathanesi 6,9 M _ ( w ) , Afet ve Acil Durum Yönetimi Başkanlığı ( AFAD ) 6,6 M _ ( w ) , Atina Jeodinamik Enstitüsü 6,7 M _ ( L ) , ABD Jeoloji Araştırmaları Kurumu ( USGS ) ve Avrupa - Akdeniz Sismoloji Merkezi 7,0 M _ ( w ) olarak açıkladı .
+Event	T0	depremde	EVENT	20
+Event	T1	ölüm	EVENT	65
+Event	T2	bildirildi	EVENT	92
+Event	T3	deprem	EVENT	108
+Event	T4	oluşmuştur	EVENT	164
+Event	T5	tsunamide	EVENT	184
+Event	T6	gözlenmiş	EVENT	229
+Event	T7	edilmiştir	EVENT	382
+Event	T8	Depremin	EVENT	395
+Event	T9	açıkladı	EVENT	661
+Event	T10	yaralanma	EVENT	82
+Event	T11	tsunami	EVENT	156
+Event	T12	gelmiştir	EVENT	290
+Event	T13	çalışmalarında	EVENT	315
+Relation	T0	T2	SuperSub	true	depremde	bildirildi
+Relation	T2	T0	SubSuper	true	bildirildi	depremde
+Relation	T0	T4	SuperSub	true	depremde	oluşmuştur
+Relation	T4	T0	SubSuper	true	oluşmuştur	depremde
+Relation	T0	T9	SuperSub	true	depremde	açıkladı
+Relation	T9	T0	SubSuper	true	açıkladı	depremde
+Relation	T0	T13	NoRel	true	depremde	çalışmalarında
+Relation	T1	T0	NoRel	true	ölüm	depremde
+Relation	T1	T6	NoRel	true	ölüm	gözlenmiş
+Relation	T1	T7	NoRel	true	ölüm	edilmiştir
+Relation	T10	T5	NoRel	true	yaralanma	tsunamide
+Relation	T12	T9	NoRel	true	gelmiştir	açıkladı
+Relation	T2	T12	NoRel	true	bildirildi	gelmiştir
+Relation	T2	T13	NoRel	true	bildirildi	çalışmalarında
+Relation	T3	T0	NoRel	true	deprem	depremde
+Relation	T4	T11	NoRel	true	oluşmuştur	tsunami
+Relation	T5	T4	NoRel	true	tsunamide	oluşmuştur
+Relation	T5	T7	NoRel	true	tsunamide	edilmiştir
+Relation	T6	T8	NoRel	true	gözlenmiş	Depremin
+Relation	T7	T4	NoRel	true	edilmiştir	oluşmuştur
+Relation	T8	T13	NoRel	true	Depremin	çalışmalarında
+Relation	T9	T13	NoRel	true	açıkladı	çalışmalarında

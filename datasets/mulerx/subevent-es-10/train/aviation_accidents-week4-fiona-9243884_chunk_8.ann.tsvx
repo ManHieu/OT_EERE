@@ -1,0 +1,134 @@
+Text	La Embajada de Ucrania en Irán dijo que los detalles preliminares apuntaban a la falla del motor ; También emitió una declaración que descarta el terrorismo , pero eliminó rápidamente la declaración .	Más tarde , el mismo día , la Embajada de Ucrania en Irán dijo que todo era posible y se negó a descartar que el avión fuera alcanzado por un misil .	El Ministerio de Carreteras y Transporte de Irán dijo el 8 de enero de 2020 que el avión estalló en llamas después de que se inició un incendio en uno de sus motores , lo que provocó que el piloto perdiera el control y se estrellara en el suelo .	El 9 de enero de 2020 funcionarios del Pentágono de los Estados Unidos sugirieron que el avión podría haber sido derribado accidentalmente por un misil Tor-M1 , ya que instrumentos satelitales detectaron el lanzamiento de dos proyectiles , seguido de una explosión .	Horas después el primer ministro de Canadá , Justin Trudeau declaró en conferencia de prensa que diferentes evidencias presentadas en informes de inteligencia también apuntaban al derribo del avión por un misil iraní , aunque avanzó la necesidad de una investigación exhaustiva para asegurarse « más allá de toda duda » .
+Event	T0	dijo	EVENT	31
+Event	T1	apuntaban	EVENT	66
+Event	T2	falla	EVENT	81
+Event	T3	emitió	EVENT	107
+Event	T4	declaración	EVENT	118
+Event	T5	descarta	EVENT	134
+Event	T6	terrorismo	EVENT	146
+Event	T7	eliminó	EVENT	164
+Event	T8	declaración	EVENT	187
+Event	T9	dijo	EVENT	259
+Event	T10	negó	EVENT	290
+Event	T11	alcanzado	EVENT	326
+Event	T12	dijo	EVENT	400
+Event	T13	inició	EVENT	476
+Event	T14	incendio	EVENT	486
+Event	T15	provocó	EVENT	526
+Event	T16	perdiera	EVENT	548
+Event	T17	control	EVENT	560
+Event	T18	estrellara	EVENT	573
+Event	T19	sugirieron	EVENT	669
+Event	T20	detectaron	EVENT	791
+Event	T21	lanzamiento	EVENT	805
+Event	T22	explosión	EVENT	853
+Event	T23	declaró	EVENT	925
+Event	T24	presentadas	EVENT	984
+Event	T25	informes	EVENT	999
+Event	T26	apuntaban	EVENT	1032
+Event	T27	derribo	EVENT	1045
+Event	T28	avanzó	EVENT	1091
+Event	T29	necesidad	EVENT	1101
+Event	T30	investigación	EVENT	1118
+Relation	T0	T15	NoRel	true	dijo	provocó
+Relation	T0	T17	NoRel	true	dijo	control
+Relation	T0	T8	NoRel	true	dijo	declaración
+Relation	T1	T10	NoRel	true	apuntaban	negó
+Relation	T1	T11	NoRel	true	apuntaban	alcanzado
+Relation	T1	T17	NoRel	true	apuntaban	control
+Relation	T1	T21	NoRel	true	apuntaban	lanzamiento
+Relation	T1	T28	NoRel	true	apuntaban	avanzó
+Relation	T10	T20	NoRel	true	negó	detectaron
+Relation	T10	T21	NoRel	true	negó	lanzamiento
+Relation	T10	T22	NoRel	true	negó	explosión
+Relation	T10	T24	NoRel	true	negó	presentadas
+Relation	T10	T26	NoRel	true	negó	apuntaban
+Relation	T10	T7	NoRel	true	negó	eliminó
+Relation	T11	T16	NoRel	true	alcanzado	perdiera
+Relation	T11	T22	NoRel	true	alcanzado	explosión
+Relation	T11	T23	NoRel	true	alcanzado	declaró
+Relation	T11	T4	NoRel	true	alcanzado	declaración
+Relation	T11	T8	NoRel	true	alcanzado	declaración
+Relation	T12	T15	NoRel	true	dijo	provocó
+Relation	T13	T3	NoRel	true	inició	emitió
+Relation	T14	T27	NoRel	true	incendio	derribo
+Relation	T14	T30	NoRel	true	incendio	investigación
+Relation	T15	T20	NoRel	true	provocó	detectaron
+Relation	T15	T5	NoRel	true	provocó	descarta
+Relation	T15	T7	NoRel	true	provocó	eliminó
+Relation	T16	T11	NoRel	true	perdiera	alcanzado
+Relation	T16	T19	NoRel	true	perdiera	sugirieron
+Relation	T16	T4	NoRel	true	perdiera	declaración
+Relation	T17	T14	NoRel	true	control	incendio
+Relation	T17	T29	NoRel	true	control	necesidad
+Relation	T18	T12	NoRel	true	estrellara	dijo
+Relation	T18	T27	NoRel	true	estrellara	derribo
+Relation	T18	T29	NoRel	true	estrellara	necesidad
+Relation	T19	T0	NoRel	true	sugirieron	dijo
+Relation	T19	T1	NoRel	true	sugirieron	apuntaban
+Relation	T19	T20	NoRel	true	sugirieron	detectaron
+Relation	T19	T5	NoRel	true	sugirieron	descarta
+Relation	T2	T23	NoRel	true	falla	declaró
+Relation	T2	T29	NoRel	true	falla	necesidad
+Relation	T2	T30	NoRel	true	falla	investigación
+Relation	T20	T0	NoRel	true	detectaron	dijo
+Relation	T20	T2	NoRel	true	detectaron	falla
+Relation	T20	T28	NoRel	true	detectaron	avanzó
+Relation	T21	T0	NoRel	true	lanzamiento	dijo
+Relation	T21	T15	NoRel	true	lanzamiento	provocó
+Relation	T21	T18	NoRel	true	lanzamiento	estrellara
+Relation	T21	T19	NoRel	true	lanzamiento	sugirieron
+Relation	T21	T23	NoRel	true	lanzamiento	declaró
+Relation	T22	T12	NoRel	true	explosión	dijo
+Relation	T22	T17	NoRel	true	explosión	control
+Relation	T22	T2	NoRel	true	explosión	falla
+Relation	T22	T28	NoRel	true	explosión	avanzó
+Relation	T22	T3	NoRel	true	explosión	emitió
+Relation	T23	T19	NoRel	true	declaró	sugirieron
+Relation	T24	T2	NoRel	true	presentadas	falla
+Relation	T24	T22	NoRel	true	presentadas	explosión
+Relation	T24	T5	NoRel	true	presentadas	descarta
+Relation	T25	T15	NoRel	true	informes	provocó
+Relation	T25	T27	NoRel	true	informes	derribo
+Relation	T26	T10	NoRel	true	apuntaban	negó
+Relation	T26	T13	NoRel	true	apuntaban	inició
+Relation	T26	T19	NoRel	true	apuntaban	sugirieron
+Relation	T26	T2	NoRel	true	apuntaban	falla
+Relation	T26	T8	NoRel	true	apuntaban	declaración
+Relation	T27	T0	NoRel	true	derribo	dijo
+Relation	T27	T11	NoRel	true	derribo	alcanzado
+Relation	T27	T14	NoRel	true	derribo	incendio
+Relation	T27	T8	NoRel	true	derribo	declaración
+Relation	T28	T14	NoRel	true	avanzó	incendio
+Relation	T28	T15	NoRel	true	avanzó	provocó
+Relation	T28	T16	NoRel	true	avanzó	perdiera
+Relation	T28	T19	NoRel	true	avanzó	sugirieron
+Relation	T28	T26	NoRel	true	avanzó	apuntaban
+Relation	T28	T30	NoRel	true	avanzó	investigación
+Relation	T28	T8	NoRel	true	avanzó	declaración
+Relation	T29	T0	NoRel	true	necesidad	dijo
+Relation	T29	T16	NoRel	true	necesidad	perdiera
+Relation	T29	T23	NoRel	true	necesidad	declaró
+Relation	T3	T17	NoRel	true	emitió	control
+Relation	T3	T22	NoRel	true	emitió	explosión
+Relation	T30	T0	NoRel	true	investigación	dijo
+Relation	T30	T4	NoRel	true	investigación	declaración
+Relation	T4	T20	NoRel	true	declaración	detectaron
+Relation	T4	T7	NoRel	true	declaración	eliminó
+Relation	T5	T25	NoRel	true	descarta	informes
+Relation	T5	T29	NoRel	true	descarta	necesidad
+Relation	T5	T6	NoRel	true	descarta	terrorismo
+Relation	T6	T16	NoRel	true	terrorismo	perdiera
+Relation	T6	T22	NoRel	true	terrorismo	explosión
+Relation	T6	T3	NoRel	true	terrorismo	emitió
+Relation	T7	T1	NoRel	true	eliminó	apuntaban
+Relation	T7	T10	NoRel	true	eliminó	negó
+Relation	T7	T12	NoRel	true	eliminó	dijo
+Relation	T7	T14	NoRel	true	eliminó	incendio
+Relation	T7	T24	NoRel	true	eliminó	presentadas
+Relation	T8	T12	NoRel	true	declaración	dijo
+Relation	T8	T25	NoRel	true	declaración	informes
+Relation	T8	T26	NoRel	true	declaración	apuntaban
+Relation	T9	T0	NoRel	true	dijo	dijo
+Relation	T9	T23	NoRel	true	dijo	declaró
+Relation	T9	T26	NoRel	true	dijo	apuntaban

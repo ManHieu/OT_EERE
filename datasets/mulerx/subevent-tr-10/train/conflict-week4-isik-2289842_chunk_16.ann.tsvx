@@ -1,0 +1,24 @@
+Text	Nicetas , Perslere direnmeye devam etti , ancak Adhri' at'da yenildi .	Bununla birlikte , Emesa yakınlarında küçük bir zafer kazanmayı başardı , ancak her iki taraf da ağır kayıplara uğradı - toplam ölüm sayısı 20.000 idi .	Daha ciddisi , direnişin zayıflığı , Perslerin ve Yahudi müttefiklerinin üç haftalık bir kuşatmanın ardından Kudüs'ü ele geçirmelerini sağladı .	Antik kaynaklar , orada 57.000 veya 66.500 kişinin katledildiğini iddia eder ; Patrik Zacharias da dahil olmak üzere diğer 35.000 kişi ise Pers Ülkesi'ne tehcir edildi .	Şehrin birçok kilisesi ( Kıyamet veya Kutsal Kabir Kilisesi dahil ) yakıldı ve Gerçek Haç , Kutsal Mızrak ve Kutsal Sünger de dahil olmak üzere çok sayıda kutsal emanet Pers başkenti Tizpon'a taşındı .
+Event	T0	etti	EVENT	35
+Event	T1	yenildi	EVENT	61
+Event	T2	başardı	EVENT	135
+Event	T3	uğradı	EVENT	183
+Event	T4	ölüm	EVENT	199
+Event	T5	kuşatmanın	EVENT	313
+Event	T6	sağladı	EVENT	359
+Event	T7	eder	EVENT	441
+Event	T8	edildi	EVENT	530
+Event	T9	yakıldı	EVENT	607
+Event	T10	taşındı	EVENT	731
+Event	T11	direnmeye	EVENT	19
+Event	T13	zayıflığı	EVENT	249
+Relation	T10	T0	NoRel	true	taşındı	etti
+Relation	T10	T8	NoRel	true	taşındı	edildi
+Relation	T13	T7	NoRel	true	zayıflığı	eder
+Relation	T2	T10	NoRel	true	başardı	taşındı
+Relation	T2	T11	NoRel	true	başardı	direnmeye
+Relation	T4	T11	NoRel	true	ölüm	direnmeye
+Relation	T5	T1	NoRel	true	kuşatmanın	yenildi
+Relation	T6	T8	NoRel	true	sağladı	edildi
+Relation	T7	T11	NoRel	true	eder	direnmeye
+Relation	T8	T6	NoRel	true	edildi	sağladı

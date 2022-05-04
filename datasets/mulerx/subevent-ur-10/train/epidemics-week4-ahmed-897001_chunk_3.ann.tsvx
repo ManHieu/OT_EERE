@@ -1,0 +1,25 @@
+Text	اس وائرس سے متاثر پہلی موت 9 جنوری 2020ء میں ہوئی ۔	-	20 جنوری 2020ء کو ، چینی وزیر اعظم لی کی چیانگ نے زور دیا کہ نئے کورونا وائرس کی وجہ سے ہونے والی وبا کو روکنے اور اس سے نمٹنے کے لیے فیصلہ کن اور موثر کوشش کی جائے ۔	-	22 جنوری 2020ء کو عالمی ادارہ صحت کے زیر اہتمام ایک ایمرجنسی کمیٹی منتخب ہوئی ، جس میں صحت کے عالمی قوانین کے مطابق صحت عامہ کی فوری توجہ کی ضرورت پر گفتگو ہوئی ۔
+Event	T0	موت	EVENT	23
+Event	T2	روکنے	EVENT	159
+Event	T3	کوشش	EVENT	206
+Event	T6	متاثر	EVENT	12
+Event	T1	وبا	EVENT	152
+Event	T7	نمٹنے	EVENT	175
+Event	T8	فیصلہ	EVENT	188
+Event	T9	توجہ	EVENT	356
+Event	T10	گفتگو	EVENT	373
+Event	T5	منتخب	EVENT	290
+Relation	T7	T3	SuperSub	true	نمٹنے	کوشش
+Relation	T3	T7	SubSuper	true	کوشش	نمٹنے
+Relation	T7	T8	SuperSub	true	نمٹنے	فیصلہ
+Relation	T8	T7	SubSuper	true	فیصلہ	نمٹنے
+Relation	T10	T9	SuperSub	true	گفتگو	توجہ
+Relation	T9	T10	SubSuper	true	توجہ	گفتگو
+Relation	T0	T5	NoRel	true	موت	منتخب
+Relation	T0	T7	NoRel	true	موت	نمٹنے
+Relation	T0	T9	NoRel	true	موت	توجہ
+Relation	T1	T2	NoRel	true	وبا	روکنے
+Relation	T2	T6	NoRel	true	روکنے	متاثر
+Relation	T9	T0	NoRel	true	توجہ	موت
+Relation	T9	T2	NoRel	true	توجہ	روکنے
+Relation	T9	T7	NoRel	true	توجہ	نمٹنے

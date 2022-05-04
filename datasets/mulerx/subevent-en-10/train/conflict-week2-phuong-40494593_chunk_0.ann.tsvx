@@ -1,0 +1,47 @@
+Text	The SPARTACIST UPRISING ( ) , also known as the JANUARY UPRISING (_ Januar aufstand _ ) , was a general strike ( and the armed battles accompanying it ) in Berlin from 5 to 12 January 1919 .	Germany was in the middle of a post-war revolution , and two of the perceived paths forward were social democracy and a council republic similar to the one which had been established by the Bolsheviks in Russia .	The uprising was primarily a power struggle between the Social Democratic Party of Germany ( SPD ) led by Friedrich Ebert and the Communist Party of Germany ( KPD ) , led by Karl Liebknecht and Rosa Luxemburg , who had previously founded and led the Spartacist League (_ Spartakusbund _ ) .	The revolt was improvised and small - scale and was quickly crushed by the superior firepower of government troops , but Berlin was largely undisturbed .	Long - distance trains continued to run on time and newspapers remained on sale , as the rebels passively confined themselves to only a few select locations .
+Event	T0	UPRISING	EVENT	15
+Event	T1	UPRISING	EVENT	56
+Event	T10	led	EVENT	503
+Event	T11	led	EVENT	571
+Event	T12	founded	EVENT	634
+Event	T13	led	EVENT	646
+Event	T14	revolt	EVENT	699
+Event	T15	improvised	EVENT	710
+Event	T16	crushed	EVENT	755
+Event	T17	undisturbed	EVENT	835
+Event	T18	continued	EVENT	872
+Event	T19	confined	EVENT	955
+Event	T2	aufstand	EVENT	75
+Event	T3	strike	EVENT	104
+Event	T6	remained	EVENT	912
+Event	T7	established	EVENT	362
+Event	T8	uprising	EVENT	408
+Event	T9	struggle	EVENT	439
+Relation	T12	T11	SuperSub	true	founded	led
+Relation	T11	T12	SubSuper	true	led	founded
+Relation	T13	T11	SuperSub	true	led	led
+Relation	T11	T13	SubSuper	true	led	led
+Relation	T0	T16	NoRel	true	UPRISING	crushed
+Relation	T0	T19	NoRel	true	UPRISING	confined
+Relation	T0	T6	NoRel	true	UPRISING	remained
+Relation	T0	T8	NoRel	true	UPRISING	uprising
+Relation	T1	T14	NoRel	true	UPRISING	revolt
+Relation	T1	T7	NoRel	true	UPRISING	established
+Relation	T11	T9	NoRel	true	led	struggle
+Relation	T12	T19	NoRel	true	founded	confined
+Relation	T12	T8	NoRel	true	founded	uprising
+Relation	T14	T10	NoRel	true	revolt	led
+Relation	T14	T19	NoRel	true	revolt	confined
+Relation	T15	T19	NoRel	true	improvised	confined
+Relation	T16	T10	NoRel	true	crushed	led
+Relation	T16	T19	NoRel	true	crushed	confined
+Relation	T17	T7	NoRel	true	undisturbed	established
+Relation	T18	T14	NoRel	true	continued	revolt
+Relation	T18	T16	NoRel	true	continued	crushed
+Relation	T18	T7	NoRel	true	continued	established
+Relation	T18	T8	NoRel	true	continued	uprising
+Relation	T19	T7	NoRel	true	confined	established
+Relation	T3	T14	NoRel	true	strike	revolt
+Relation	T3	T17	NoRel	true	strike	undisturbed
+Relation	T6	T0	NoRel	true	remained	UPRISING
+Relation	T7	T19	NoRel	true	established	confined

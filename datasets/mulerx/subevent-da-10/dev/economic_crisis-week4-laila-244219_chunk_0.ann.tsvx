@@ -1,0 +1,27 @@
+Text	KRONEBANKEN var en dansk bank med hovedsæde i Hillerød .	Banken blev dannet efter , at Sjællandske Bank og Frederiksborg Bank i 1983 fusionerede og i første omgang fortsatte under navnet Sjællandske Bank .	I 1984 ændrede banken navn til Kronebanken .	I december 1984 orienterede det daværende Tilsyn med Banker og Sparekasser ( senere Finanstilsynet ) Danmarks Nationalbank om alvorlige problemer i Kronebanken , der var Danmarks syvendestørste bank .	Banken var blot timer fra en konkurs forårsaget af at lån og garantier til en enkelt kunde på mere end 600 millioner kr. , efter at kunden ( ejendomsfirmaet og byggekoncernen Flexplan Gruppen ledet af byggematador Jørgen Olsen ) gik konkurs .
+Event	T0	dannet	EVENT	69
+Event	T1	fusionerede	EVENT	133
+Event	T2	fortsatte	EVENT	164
+Event	T3	ændrede	EVENT	213
+Event	T4	orienterede	EVENT	267
+Event	T5	problemer	EVENT	387
+Event	T6	forårsaget	EVENT	489
+Event	T7	lån	EVENT	506
+Event	T8	konkurs	EVENT	685
+Event	T9	konkurs	EVENT	481
+Event	T10	garantier	EVENT	513
+Event	T11	enkelt	EVENT	530
+Relation	T11	T8	SuperSub	true	enkelt	konkurs
+Relation	T8	T11	SubSuper	true	konkurs	enkelt
+Relation	T0	T1	NoRel	true	dannet	fusionerede
+Relation	T0	T7	NoRel	true	dannet	lån
+Relation	T1	T2	NoRel	true	fusionerede	fortsatte
+Relation	T10	T11	NoRel	true	garantier	enkelt
+Relation	T10	T7	NoRel	true	garantier	lån
+Relation	T11	T9	NoRel	true	enkelt	konkurs
+Relation	T2	T4	NoRel	true	fortsatte	orienterede
+Relation	T4	T0	NoRel	true	orienterede	dannet
+Relation	T5	T11	NoRel	true	problemer	enkelt
+Relation	T8	T10	NoRel	true	konkurs	garantier
+Relation	T8	T5	NoRel	true	konkurs	problemer
+Relation	T9	T10	NoRel	true	konkurs	garantier

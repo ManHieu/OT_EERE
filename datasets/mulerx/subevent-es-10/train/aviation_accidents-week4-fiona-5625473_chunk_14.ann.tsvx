@@ -1,0 +1,48 @@
+Text	Este fue el primer accidente de Southwest Airlines en los 35 años de historia de la compañía que resultó en una muerte .	El incidente principal anterior fue en 2000 , cuando el vuelo 1455 de Southwest Airlines se desbordó en una pista de aterrizaje en Burbank , California , hiriendo a 43 personas y evitando por poco una catástrofe ; el avión terminó frente a una gasolinera Chevron .	Como resultado directo del accidente , la Administración Federal de Aviación de EE._UU_. Creó el Comité de reglamentación de la aviación para la evaluación del desempeño de despegue y aterrizaje .	( ARCO TALPA ) .	En 2016 , con base en las recomendaciones de TALPA ARC , la FAA implementó un nuevo Código numérico de condición de pista para comunicar las condiciones de la pista entre la administración del aeropuerto a los miembros de la tripulación de vuelo .
+Event	T0	accidente	EVENT	19
+Event	T1	resultó	EVENT	97
+Event	T2	muerte	EVENT	112
+Event	T3	desbordó	EVENT	213
+Event	T4	aterrizaje	EVENT	238
+Event	T5	hiriendo	EVENT	275
+Event	T6	evitando	EVENT	300
+Event	T7	catástrofe	EVENT	322
+Event	T8	terminó	EVENT	344
+Event	T9	accidente	EVENT	413
+Event	T10	evaluación	EVENT	531
+Event	T11	desempeño	EVENT	546
+Event	T12	despegue	EVENT	559
+Event	T13	aterrizaje	EVENT	570
+Event	T14	recomendaciones	EVENT	626
+Event	T15	implementó	EVENT	664
+Event	T16	comunicar	EVENT	727
+Event	T17	Creó	EVENT	475
+Relation	T9	T17	SuperSub	true	accidente	Creó
+Relation	T17	T9	SubSuper	true	Creó	accidente
+Relation	T0	T3	NoRel	true	accidente	desbordó
+Relation	T1	T0	NoRel	true	resultó	accidente
+Relation	T1	T11	NoRel	true	resultó	desempeño
+Relation	T1	T13	NoRel	true	resultó	aterrizaje
+Relation	T10	T17	NoRel	true	evaluación	Creó
+Relation	T11	T5	NoRel	true	desempeño	hiriendo
+Relation	T12	T15	NoRel	true	despegue	implementó
+Relation	T12	T5	NoRel	true	despegue	hiriendo
+Relation	T12	T9	NoRel	true	despegue	accidente
+Relation	T14	T16	NoRel	true	recomendaciones	comunicar
+Relation	T15	T8	NoRel	true	implementó	terminó
+Relation	T15	T9	NoRel	true	implementó	accidente
+Relation	T16	T12	NoRel	true	comunicar	despegue
+Relation	T17	T1	NoRel	true	Creó	resultó
+Relation	T2	T10	NoRel	true	muerte	evaluación
+Relation	T2	T9	NoRel	true	muerte	accidente
+Relation	T4	T10	NoRel	true	aterrizaje	evaluación
+Relation	T4	T17	NoRel	true	aterrizaje	Creó
+Relation	T4	T2	NoRel	true	aterrizaje	muerte
+Relation	T5	T2	NoRel	true	hiriendo	muerte
+Relation	T5	T6	NoRel	true	hiriendo	evitando
+Relation	T6	T8	NoRel	true	evitando	terminó
+Relation	T7	T0	NoRel	true	catástrofe	accidente
+Relation	T7	T1	NoRel	true	catástrofe	resultó
+Relation	T7	T13	NoRel	true	catástrofe	aterrizaje
+Relation	T7	T4	NoRel	true	catástrofe	aterrizaje
+Relation	T8	T6	NoRel	true	terminó	evitando

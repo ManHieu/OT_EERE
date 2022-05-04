@@ -1,0 +1,28 @@
+Text	Kaydın yayılması basında büyük yer aldı .	Sovyetler Birliği uçağın düşürüldüğünü inkar etmeye devam etti .	Sovyetler Birliği'nin dağılmasının ardından Rusya Devlet Başkanı Boris Yeltsin , 1991'de mevcut bilgileri yayınlamaya başladı .	1992'de olayı araştırmak üzere ortak bir Amerikan / Rus komisyonu kuruldu .	Bu komisyonun kurulmasıyla Sovyet Hava Savunma Kuvvetleri arşivlerinde bulunan olayla ilgili bir takım belgelerin gizliliği kaldırılarak yayınladı .
+Event	T0	yayılması	EVENT	7
+Event	T1	aldı	EVENT	35
+Event	T2	inkar	EVENT	81
+Event	T3	etti	EVENT	100
+Event	T4	başladı	EVENT	225
+Event	T5	araştırmak	EVENT	249
+Event	T6	kuruldu	EVENT	301
+Event	T7	yayınladı	EVENT	448
+Event	T8	dağılmasının	EVENT	129
+Event	T9	olayı	EVENT	243
+Event	T10	kurulmasıyla	EVENT	325
+Event	T11	kaldırılarak	EVENT	435
+Relation	T0	T6	NoRel	true	yayılması	kuruldu
+Relation	T10	T0	NoRel	true	kurulmasıyla	yayılması
+Relation	T10	T3	NoRel	true	kurulmasıyla	etti
+Relation	T11	T10	NoRel	true	kaldırılarak	kurulmasıyla
+Relation	T2	T4	NoRel	true	inkar	başladı
+Relation	T2	T5	NoRel	true	inkar	araştırmak
+Relation	T2	T8	NoRel	true	inkar	dağılmasının
+Relation	T4	T2	NoRel	true	başladı	inkar
+Relation	T5	T0	NoRel	true	araştırmak	yayılması
+Relation	T5	T4	NoRel	true	araştırmak	başladı
+Relation	T6	T3	NoRel	true	kuruldu	etti
+Relation	T6	T5	NoRel	true	kuruldu	araştırmak
+Relation	T7	T10	NoRel	true	yayınladı	kurulmasıyla
+Relation	T9	T4	NoRel	true	olayı	başladı
+Relation	T9	T5	NoRel	true	olayı	araştırmak

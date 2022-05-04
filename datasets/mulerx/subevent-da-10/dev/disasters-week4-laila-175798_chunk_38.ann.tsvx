@@ -1,0 +1,34 @@
+Text	Først da var banesystemet i Dresden endelig ødelagt .	Den tyske regering benyttede angrebene i propagandaen mod de allierede .	Nazisterne opfordrede til en sidste mobilisering .	De nærede et håb om , at Anti-Hitler-koalitionen faldt , og meddelte til Elblinjen ” At den skulle holdes til det sidste ” ( _ Halten bis zum letzten ! ) _ .	Den 14. april erklærede Mutschmann officielt Dresden for fæstning .
+Event	T0	ødelagt	EVENT	44
+Event	T1	angrebene	EVENT	83
+Event	T2	opfordrede	EVENT	138
+Event	T3	mobilisering	EVENT	163
+Event	T4	nærede	EVENT	181
+Event	T5	faldt	EVENT	227
+Event	T6	meddelte	EVENT	238
+Event	T7	erklærede	EVENT	350
+Event	T8	fæstning	EVENT	393
+Event	T9	håb	EVENT	191
+Event	T10	holdes	EVENT	277
+Event	T11	benyttede	EVENT	73
+Event	T12	propagandaen	EVENT	95
+Relation	T0	T11	NoRel	true	ødelagt	benyttede
+Relation	T0	T2	NoRel	true	ødelagt	opfordrede
+Relation	T0	T3	NoRel	true	ødelagt	mobilisering
+Relation	T0	T6	NoRel	true	ødelagt	meddelte
+Relation	T0	T7	NoRel	true	ødelagt	erklærede
+Relation	T0	T9	NoRel	true	ødelagt	håb
+Relation	T1	T10	NoRel	true	angrebene	holdes
+Relation	T10	T3	NoRel	true	holdes	mobilisering
+Relation	T10	T9	NoRel	true	holdes	håb
+Relation	T11	T4	NoRel	true	benyttede	nærede
+Relation	T12	T4	NoRel	true	propagandaen	nærede
+Relation	T2	T4	NoRel	true	opfordrede	nærede
+Relation	T3	T10	NoRel	true	mobilisering	holdes
+Relation	T3	T2	NoRel	true	mobilisering	opfordrede
+Relation	T4	T11	NoRel	true	nærede	benyttede
+Relation	T7	T3	NoRel	true	erklærede	mobilisering
+Relation	T8	T5	NoRel	true	fæstning	faldt
+Relation	T9	T0	NoRel	true	håb	ødelagt
+Relation	T9	T5	NoRel	true	håb	faldt
+Relation	T9	T7	NoRel	true	håb	erklærede

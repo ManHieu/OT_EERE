@@ -1,0 +1,14 @@
+Text	Percentages were calculated by dividing the annual wage in local currency by the country 's 2009 خام_ملکی_پیداوار per capita , obtain ed from the IMF 's World Economic Outlook Database , October 2010 Edition .	کیوبا average monthly salary National Office of Statistics , Republic of کیوبا 2010 figure , _National Office of Statistics , Republic of کیوبا_	CIA - The World Factbook -	کیوبا was used for PPP Conversion rate and GDP PPP per capita .	A 25: 1 rate was used to convert کیوباn pesos into کیوباn convertible pesos .
+Event	T0	calculated	EVENT	17
+Event	T1	dividing	EVENT	31
+Event	T2	ed	EVENT	134
+Event	T3	used	EVENT	392
+Event	T4	rate	EVENT	454
+Event	T5	used	EVENT	463
+Event	T6	convert	EVENT	471
+Relation	T0	T1	NoRel	true	calculated	dividing
+Relation	T2	T1	NoRel	true	ed	dividing
+Relation	T4	T1	NoRel	true	rate	dividing
+Relation	T4	T2	NoRel	true	rate	ed
+Relation	T5	T1	NoRel	true	used	dividing
+Relation	T5	T4	NoRel	true	used	rate

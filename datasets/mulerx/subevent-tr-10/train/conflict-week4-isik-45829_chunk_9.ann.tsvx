@@ -1,0 +1,18 @@
+Text	Sampson , Kıbrıslı Rum ve Kıbrıslı Türkler arasındaki şiddetli çatışmalarda Rum silahlı gruplara liderlik etti .	Küçük Kaymaklı'daki çatışmalardan sonra Nikos Sampson , Kıbrıslı Türkler tarafından " Küçük Kaymaklı'nın Kasabı " olarak adlandırıldı .	Küçük Kaymaklı'dan sonra Kıbrıs Türk toplumundan yaklaşık 800 kadın ve çocuk savaş alanından çıkarıldı , daha sonra Kızılhaç'a teslim edilmek üzere bir Rum okuluna yerleştirildi .	Türk tarafına göre kadın ve çocuklar rehin tutuldu .	Sampson müfrezesinin Omorfita'daki eylemi , Rum ve Kıbrıs basını tarafından kendisinin ve adamlarının yüceltilmesiyle sonuçlandı .
+Event	T0	etti	EVENT	106
+Event	T1	adlandırıldı	EVENT	234
+Event	T2	çıkarıldı	EVENT	342
+Event	T3	yerleştirildi	EVENT	413
+Event	T4	tutuldu	EVENT	472
+Event	T5	eylemi	EVENT	517
+Event	T6	sonuçlandı	EVENT	600
+Event	T7	çatışmalarda	EVENT	63
+Event	T8	çatışmalardan	EVENT	133
+Relation	T1	T3	NoRel	true	adlandırıldı	yerleştirildi
+Relation	T2	T5	NoRel	true	çıkarıldı	eylemi
+Relation	T3	T6	NoRel	true	yerleştirildi	sonuçlandı
+Relation	T5	T7	NoRel	true	eylemi	çatışmalarda
+Relation	T6	T2	NoRel	true	sonuçlandı	çıkarıldı
+Relation	T7	T8	NoRel	true	çatışmalarda	çatışmalardan
+Relation	T8	T0	NoRel	true	çatışmalardan	etti
+Relation	T8	T3	NoRel	true	çatışmalardan	yerleştirildi

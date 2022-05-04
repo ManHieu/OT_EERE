@@ -1,0 +1,83 @@
+Text	During the investigation , an examination on the pylon attachment points revealed some damage done to the wing 's pylon mounting bracket that matched the bent shape of the pylon 's rear attachment fitting .	This meant that the pylon attachment fitting had struck the mounting bracket at some point .	This was important evidence , as the only way the pylon fitting could strike the wing 's mounting bracket in the observed manner was if the bolts that held the pylon to the wing had been removed and the engine / pylon assembly was being supported by something other than the aircraft itself .	Therefore , investigators now could conclude that the observed damage to the rear pylon mount had been present before the crash actually occurred , rather than being caused by it .	The NTSB determined that the damage to the left - wing engine pylon had occurred during an earlier engine change at the American Airlines aircraft maintenance facility in Tulsa , Oklahoma , between March 29 and 30 , 1979 .
+Event	T0	investigation	EVENT	11
+Event	T1	examination	EVENT	30
+Event	T2	revealed	EVENT	73
+Event	T3	done	EVENT	94
+Event	T4	matched	EVENT	142
+Event	T5	bent	EVENT	154
+Event	T6	fitting	EVENT	197
+Event	T7	meant	EVENT	212
+Event	T8	fitting	EVENT	244
+Event	T9	struck	EVENT	256
+Event	T10	fitting	EVENT	356
+Event	T11	strike	EVENT	370
+Event	T12	observed	EVENT	413
+Event	T13	held	EVENT	451
+Event	T14	removed	EVENT	487
+Event	T15	supported	EVENT	537
+Event	T16	conclude	EVENT	629
+Event	T17	damage	EVENT	656
+Event	T18	present	EVENT	696
+Event	T19	crash	EVENT	715
+Event	T20	occurred	EVENT	730
+Event	T21	caused	EVENT	759
+Event	T22	determined	EVENT	783
+Event	T23	damage	EVENT	803
+Event	T24	occurred	EVENT	846
+Event	T25	change	EVENT	880
+Relation	T0	T16	NoRel	true	investigation	conclude
+Relation	T0	T6	NoRel	true	investigation	fitting
+Relation	T1	T8	NoRel	true	examination	fitting
+Relation	T10	T16	NoRel	true	fitting	conclude
+Relation	T10	T2	NoRel	true	fitting	revealed
+Relation	T10	T7	NoRel	true	fitting	meant
+Relation	T10	T8	NoRel	true	fitting	fitting
+Relation	T11	T13	NoRel	true	strike	held
+Relation	T11	T18	NoRel	true	strike	present
+Relation	T11	T7	NoRel	true	strike	meant
+Relation	T12	T11	NoRel	true	observed	strike
+Relation	T12	T2	NoRel	true	observed	revealed
+Relation	T13	T10	NoRel	true	held	fitting
+Relation	T13	T18	NoRel	true	held	present
+Relation	T13	T21	NoRel	true	held	caused
+Relation	T13	T22	NoRel	true	held	determined
+Relation	T14	T17	NoRel	true	removed	damage
+Relation	T14	T9	NoRel	true	removed	struck
+Relation	T15	T16	NoRel	true	supported	conclude
+Relation	T15	T21	NoRel	true	supported	caused
+Relation	T15	T8	NoRel	true	supported	fitting
+Relation	T16	T12	NoRel	true	conclude	observed
+Relation	T16	T13	NoRel	true	conclude	held
+Relation	T17	T0	NoRel	true	damage	investigation
+Relation	T17	T19	NoRel	true	damage	crash
+Relation	T17	T2	NoRel	true	damage	revealed
+Relation	T17	T9	NoRel	true	damage	struck
+Relation	T18	T12	NoRel	true	present	observed
+Relation	T18	T17	NoRel	true	present	damage
+Relation	T19	T0	NoRel	true	crash	investigation
+Relation	T2	T1	NoRel	true	revealed	examination
+Relation	T2	T10	NoRel	true	revealed	fitting
+Relation	T2	T5	NoRel	true	revealed	bent
+Relation	T21	T23	NoRel	true	caused	damage
+Relation	T21	T7	NoRel	true	caused	meant
+Relation	T22	T15	NoRel	true	determined	supported
+Relation	T22	T20	NoRel	true	determined	occurred
+Relation	T22	T8	NoRel	true	determined	fitting
+Relation	T23	T1	NoRel	true	damage	examination
+Relation	T23	T13	NoRel	true	damage	held
+Relation	T23	T17	NoRel	true	damage	damage
+Relation	T24	T15	NoRel	true	occurred	supported
+Relation	T25	T1	NoRel	true	change	examination
+Relation	T25	T7	NoRel	true	change	meant
+Relation	T3	T10	NoRel	true	done	fitting
+Relation	T3	T14	NoRel	true	done	removed
+Relation	T3	T21	NoRel	true	done	caused
+Relation	T4	T19	NoRel	true	matched	crash
+Relation	T5	T2	NoRel	true	bent	revealed
+Relation	T5	T21	NoRel	true	bent	caused
+Relation	T6	T13	NoRel	true	fitting	held
+Relation	T7	T19	NoRel	true	meant	crash
+Relation	T7	T8	NoRel	true	meant	fitting
+Relation	T8	T16	NoRel	true	fitting	conclude
+Relation	T8	T20	NoRel	true	fitting	occurred
+Relation	T9	T24	NoRel	true	struck	occurred

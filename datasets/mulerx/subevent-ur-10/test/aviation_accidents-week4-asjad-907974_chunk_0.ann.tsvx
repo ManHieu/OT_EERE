@@ -1,0 +1,41 @@
+Text	پی آئی اے کی پرواز PK -544 ، پاکستان انٹرنیشنل ایئر لائنز کا ایک فوکر F27 مئی25 ، 1998 کو ، گوادر انٹرنیشنل ایئرپورٹ سے پرواز کے فورا بعد ہی ، بلوچ اسٹوڈنٹس آرگنائزیشن سے تعلق رکھنے والے تین مسلح افراد نے انھیں اغوا کر لیا تھا ۔	طیارہ ، جن میں 33 مسافر اور عملے کے 5 ارکان شامل تھے ، صرف گوادر انٹرنیشنل ایئرپورٹ ، بلوچستان سے پہنچا تھا ، اور اسے حیدرآباد ایئرپورٹ ، سندھ میں لینڈ کرنا تھا ۔	ہائی جیکرز نے مطالبہ کیا کہ ہوائی جہاز کو نئی دہلی ، ہندوستان روانہ کیا جائے ۔	پاک فوج کے اسپیشل سروس گروپ کی حیدری کمپنی ، ساتویں کمانڈو ضرار بٹالین ، ایس ایس جی ڈویژن ، پاکستان رینجرز کے ممبروں کے ہمراہ ، طیارے میں دھاوا بولی ، جب کہ پاکستان پولیس نے طیارے کو گھیرے میں لے لیا ۔	آپریشن کا اختتام ان تینوں ہائی جیکرز کے ساتھ ہوا جن کو پاکستان نے گرفتار کیا اور اسے موت کی سزا سنائی -
+Event	T0	پرواز	EVENT	13
+Event	T1	پرواز	EVENT	120
+Event	T2	لیا	EVENT	219
+Event	T3	پہنچا	EVENT	327
+Event	T4	لینڈ	EVENT	376
+Event	T5	بولی	EVENT	615
+Event	T6	گھیرے	EVENT	654
+Event	T7	لیا	EVENT	667
+Event	T8	آپریشن	EVENT	673
+Event	T9	اختتام	EVENT	683
+Event	T10	ہوا	EVENT	718
+Event	T11	کیا	EVENT	746
+Event	T12	موت	EVENT	758
+Event	T13	سنائی	EVENT	769
+Relation	T1	T3	SuperSub	true	پرواز	پہنچا
+Relation	T3	T1	SubSuper	true	پہنچا	پرواز
+Relation	T8	T9	SuperSub	true	آپریشن	اختتام
+Relation	T9	T8	SubSuper	true	اختتام	آپریشن
+Relation	T8	T5	SuperSub	true	آپریشن	بولی
+Relation	T5	T8	SubSuper	true	بولی	آپریشن
+Relation	T8	T6	SuperSub	true	آپریشن	گھیرے
+Relation	T6	T8	SubSuper	true	گھیرے	آپریشن
+Relation	T8	T7	SuperSub	true	آپریشن	لیا
+Relation	T7	T8	SubSuper	true	لیا	آپریشن
+Relation	T8	T10	SuperSub	true	آپریشن	ہوا
+Relation	T10	T8	SubSuper	true	ہوا	آپریشن
+Relation	T8	T11	SuperSub	true	آپریشن	کیا
+Relation	T11	T8	SubSuper	true	کیا	آپریشن
+Relation	T0	T1	NoRel	true	پرواز	پرواز
+Relation	T1	T0	NoRel	true	پرواز	پرواز
+Relation	T1	T2	NoRel	true	پرواز	لیا
+Relation	T11	T5	NoRel	true	کیا	بولی
+Relation	T11	T6	NoRel	true	کیا	گھیرے
+Relation	T13	T6	NoRel	true	سنائی	گھیرے
+Relation	T3	T13	NoRel	true	پہنچا	سنائی
+Relation	T3	T2	NoRel	true	پہنچا	لیا
+Relation	T5	T11	NoRel	true	بولی	کیا
+Relation	T5	T4	NoRel	true	بولی	لینڈ
+Relation	T8	T4	NoRel	true	آپریشن	لینڈ
+Relation	T9	T5	NoRel	true	اختتام	بولی

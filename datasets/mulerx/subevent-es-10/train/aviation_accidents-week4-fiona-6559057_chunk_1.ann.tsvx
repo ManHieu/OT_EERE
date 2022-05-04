@@ -1,0 +1,23 @@
+Text	El avión finalmente se estrelló en la selva de Masine Lek , que se encuentra en Dhikura VDC , en el distrito de Arghakhanchi .	Aunque el accidente no fue presenciado , algunos residentes vieron restos de la aeronave estrellada .	Al inicio nadie fue capaz de llegar al lugar del accidente debido a la mala visibilidad .	Cuando los cuerpos de rescate y recuperación finalmente llegaron al lugar del accidente , encontraron los cuerpos esparcidos por la colina .	De acuerdo con el Ejército de Nepal , el lugar del accidente se encuentra a una altitud de 7000 pies ( 2100 metros ) .
+Event	T0	estrelló	EVENT	23
+Event	T1	accidente	EVENT	137
+Event	T2	presenciado	EVENT	154
+Event	T3	vieron	EVENT	187
+Event	T4	estrellada	EVENT	216
+Event	T5	rescate	EVENT	341
+Event	T6	recuperación	EVENT	351
+Event	T7	llegaron	EVENT	375
+Event	T8	accidente	EVENT	397
+Event	T9	encontraron	EVENT	409
+Event	T10	esparcidos	EVENT	433
+Event	T11	accidente	EVENT	511
+Relation	T11	T4	NoRel	true	accidente	estrellada
+Relation	T11	T7	NoRel	true	accidente	llegaron
+Relation	T2	T4	NoRel	true	presenciado	estrellada
+Relation	T3	T0	NoRel	true	vieron	estrelló
+Relation	T4	T0	NoRel	true	estrellada	estrelló
+Relation	T5	T0	NoRel	true	rescate	estrelló
+Relation	T5	T10	NoRel	true	rescate	esparcidos
+Relation	T5	T8	NoRel	true	rescate	accidente
+Relation	T6	T0	NoRel	true	recuperación	estrelló
+Relation	T8	T7	NoRel	true	accidente	llegaron

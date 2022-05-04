@@ -1,0 +1,37 @@
+Text	UNITED AIRLINES'IN 175 SEFER SAYILI UÇUŞU , Amerika Birleşik Devletleri'nde iç hat uçuşu gerçekleştiren ve el - Kaide üyesi kişilerce , 11 Eylül 2001'de gerçekleştirilen saldırılar dahilinde kaçırılan yolcu uçağı .	Boston , Massachusetts'teki Logan Uluslararası Havalimanı'ndan , Los Angeles , Kaliforniya'daki Los Angeles Uluslararası Havalimanı'na gitmek üzere kalkan Boeing 767 - 200 tipindeki uçağın kontrolü , bir süre sonra beş el - Kaide üyesinin eline geçti .	New York'taki Dünya Ticaret Merkezi'nin Güney Kulesi'ne intihar saldırısı düzenleyen uçaktaki 65 kişiden kurtulan olmadı .	Çarpmanın etkisiyle bir müddet sonra bina çöktü ve binadaki yaklaşık 900 kişinin ölümüne sebep oldu .	Kategori : Uçak kaçırmaları Kategori : Amerika Birleşik Devletleri'ndeki havacılık kazaları ve olayları Kategori : 11 Eylül saldırıları Kategori : New York tarihi
+Event	T1	saldırılar	EVENT	170
+Event	T2	kaçırılan	EVENT	191
+Event	T3	gitmek	EVENT	350
+Event	T5	geçti	EVENT	460
+Event	T7	çöktü	EVENT	633
+Event	T8	oldu	EVENT	686
+Event	T9	kazaları	EVENT	776
+Event	T10	olayları	EVENT	788
+Event	T11	UÇUŞU	EVENT	36
+Event	T12	uçuşu	EVENT	83
+Event	T13	kalkan	EVENT	363
+Event	T14	saldırısı	EVENT	532
+Event	T4	Çarpmanın	EVENT	591
+Event	T6	kaçırmaları	EVENT	709
+Event	T15	saldırıları	EVENT	817
+Relation	T14	T4	SuperSub	true	saldırısı	Çarpmanın
+Relation	T4	T14	SubSuper	true	Çarpmanın	saldırısı
+Relation	T14	T7	SuperSub	true	saldırısı	çöktü
+Relation	T7	T14	SubSuper	true	çöktü	saldırısı
+Relation	T14	T8	SuperSub	true	saldırısı	oldu
+Relation	T8	T14	SubSuper	true	oldu	saldırısı
+Relation	T1	T12	NoRel	true	saldırılar	uçuşu
+Relation	T10	T13	NoRel	true	olayları	kalkan
+Relation	T12	T10	NoRel	true	uçuşu	olayları
+Relation	T12	T9	NoRel	true	uçuşu	kazaları
+Relation	T14	T3	NoRel	true	saldırısı	gitmek
+Relation	T14	T9	NoRel	true	saldırısı	kazaları
+Relation	T2	T4	NoRel	true	kaçırılan	Çarpmanın
+Relation	T4	T15	NoRel	true	Çarpmanın	saldırıları
+Relation	T7	T15	NoRel	true	çöktü	saldırıları
+Relation	T7	T2	NoRel	true	çöktü	kaçırılan
+Relation	T8	T10	NoRel	true	oldu	olayları
+Relation	T8	T13	NoRel	true	oldu	kalkan
+Relation	T8	T15	NoRel	true	oldu	saldırıları
+Relation	T8	T6	NoRel	true	oldu	kaçırmaları
+Relation	T9	T3	NoRel	true	kazaları	gitmek

@@ -1,0 +1,13 @@
+Text	Bir kişi ölür ve diğer sayısız kişi kimyasal açık olma nedeniyle tedavi edilir .	- 6 Şubat , 2002 – Charlotte’s Dale tren çarpışması , Güney Afrika : Ev ile iş arası çalışan iki tren Durban yakını Charlotte’s Dale’de çarpıştı .	16sı çocuk 22 ölü .	- 20 Şubat , 2002 – Al Ayatt tren felaketi , Mısır : Kapasitesinin iki katı yüklü bir tren alev aldığında , 373 ölü .	- 30 Mart , 2002 – Euromed rotasında Valensiya - Barselona hattında bir İspanyol yüksek hızlı ekspres treni , Tortosa - Barcelona Catalunya ekspresi ile kafa kafaya çarpıştı .
+Event	T0	ölür	EVENT	9
+Event	T1	edilir	EVENT	72
+Event	T2	çarpışması	EVENT	122
+Event	T3	çarpıştı	EVENT	217
+Event	T4	ölü	EVENT	242
+Event	T5	felaketi	EVENT	282
+Event	T6	aldığında	EVENT	344
+Event	T7	ölü	EVENT	360
+Event	T8	çarpıştı	EVENT	531
+Relation	T1	T2	NoRel	true	edilir	çarpışması
+Relation	T3	T7	NoRel	true	çarpıştı	ölü
+Relation	T8	T1	NoRel	true	çarpıştı	edilir

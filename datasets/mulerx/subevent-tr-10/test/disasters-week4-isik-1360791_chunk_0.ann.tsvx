@@ -1,0 +1,13 @@
+Text	1941 VAN - ERCIŞ DEPREMI 10 Eylül 1941 tarihinde Van'ın Erciş ilçesinde meydana gelen deprem .	Richter ölçeğine göre 5.9 M _ ( s ) büyüklüğündeki depremde 192 veya 194 kişi ölürken 36 köy de tamamen yıkıldı .			
+Event	T0	meydana	EVENT	72
+Event	T1	deprem	EVENT	86
+Event	T2	depremde	EVENT	146
+Event	T3	ölürken	EVENT	173
+Event	T4	yıkıldı	EVENT	199
+Event	T5	1941 VAN - ERCIŞ DEPREMI	EVENT	0
+Relation	T5	T3	SuperSub	true	1941 VAN - ERCIŞ DEPREMI	ölürken
+Relation	T3	T5	SubSuper	true	ölürken	1941 VAN - ERCIŞ DEPREMI
+Relation	T5	T4	SuperSub	true	1941 VAN - ERCIŞ DEPREMI	yıkıldı
+Relation	T4	T5	SubSuper	true	yıkıldı	1941 VAN - ERCIŞ DEPREMI
+Relation	T2	T0	NoRel	true	depremde	meydana
+Relation	T5	T2	NoRel	true	1941 VAN - ERCIŞ DEPREMI	depremde

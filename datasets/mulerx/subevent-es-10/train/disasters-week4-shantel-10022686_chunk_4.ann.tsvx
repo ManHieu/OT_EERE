@@ -1,0 +1,45 @@
+Text	Los pilotos de este vuelo anterior confirmaron que los controladores de tránsito aéreo transmitieron los informes de acción de frenado a la tripulación de vuelo del Delta 1086 ; Estos informes se basaron en los informes de los pilotos de otros dos vuelos que aterrizaron varios minutos antes del vuelo 1086 .	Ambos vuelos anteriores habían informado que la acción de frenado en la pista era " buena " .	Las declaraciones de los pilotos a la NTSB después del accidente revelaron que la pista parecía toda blanca ( cubierta de nieve ) cuando el avión descendió del cielo cubierto , segundos antes de aterrizar .	[ miniaturade imagen | Aeropuerto LaGuardia .	La pista 13 comienza en la parte inferior central de la foto y se extiende hacia la parte superior izquierda .
+Event	T0	vuelo	EVENT	20
+Event	T1	confirmaron	EVENT	35
+Event	T2	transmitieron	EVENT	87
+Event	T3	informes	EVENT	105
+Event	T6	informes	EVENT	184
+Event	T10	vuelo	EVENT	296
+Event	T11	informado	EVENT	340
+Event	T12	acción	EVENT	357
+Event	T13	frenado	EVENT	367
+Event	T14	declaraciones	EVENT	407
+Event	T15	revelaron	EVENT	468
+Event	T16	descendió	EVENT	549
+Event	T17	cubierto	EVENT	569
+Event	T18	aterrizar	EVENT	598
+Event	T4	vuelos	EVENT	248
+Event	T5	accidente	EVENT	458
+Relation	T5	T14	SuperSub	true	accidente	declaraciones
+Relation	T14	T5	SubSuper	true	declaraciones	accidente
+Relation	T0	T15	NoRel	true	vuelo	revelaron
+Relation	T10	T15	NoRel	true	vuelo	revelaron
+Relation	T10	T3	NoRel	true	vuelo	informes
+Relation	T11	T10	NoRel	true	informado	vuelo
+Relation	T11	T18	NoRel	true	informado	aterrizar
+Relation	T11	T3	NoRel	true	informado	informes
+Relation	T12	T16	NoRel	true	acción	descendió
+Relation	T12	T18	NoRel	true	acción	aterrizar
+Relation	T12	T2	NoRel	true	acción	transmitieron
+Relation	T13	T0	NoRel	true	frenado	vuelo
+Relation	T13	T11	NoRel	true	frenado	informado
+Relation	T13	T14	NoRel	true	frenado	declaraciones
+Relation	T15	T1	NoRel	true	revelaron	confirmaron
+Relation	T15	T10	NoRel	true	revelaron	vuelo
+Relation	T17	T0	NoRel	true	cubierto	vuelo
+Relation	T17	T10	NoRel	true	cubierto	vuelo
+Relation	T17	T16	NoRel	true	cubierto	descendió
+Relation	T17	T5	NoRel	true	cubierto	accidente
+Relation	T17	T6	NoRel	true	cubierto	informes
+Relation	T2	T11	NoRel	true	transmitieron	informado
+Relation	T2	T4	NoRel	true	transmitieron	vuelos
+Relation	T3	T14	NoRel	true	informes	declaraciones
+Relation	T3	T16	NoRel	true	informes	descendió
+Relation	T3	T4	NoRel	true	informes	vuelos
+Relation	T6	T16	NoRel	true	informes	descendió
+Relation	T6	T2	NoRel	true	informes	transmitieron

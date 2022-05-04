@@ -1,0 +1,111 @@
+Text	Alcohol - based gel or foam hand sanitizers work well to destroy viruses and bacteria .	Anyone with flu - like symptoms , such as a sudden fever , cough , or muscle aches , should stay away from work or public transportation and should contact a doctor for advice .	Social distancing , another tactic , is staying away from other people who might be infected , and can include avoiding large gatherings , spreading out a little at work , or perhaps staying home and lying low if an infection is spreading in a community .	Public health and other responsible authorities have action plans which may request or require social distancing actions , depending on the severity of the outbreak .	Vaccines are available for different kinds of swine flu .
+Event	T0	destroy	EVENT	57
+Event	T1	fever	EVENT	139
+Event	T2	cough	EVENT	147
+Event	T3	aches	EVENT	165
+Event	T7	infected	EVENT	350
+Event	T8	avoiding	EVENT	377
+Event	T9	gatherings	EVENT	392
+Event	T10	staying	EVENT	449
+Event	T12	infection	EVENT	482
+Event	T13	spreading	EVENT	495
+Event	T14	action	EVENT	575
+Event	T15	request	EVENT	598
+Event	T16	require	EVENT	609
+Event	T17	actions	EVENT	635
+Event	T18	outbreak	EVENT	678
+Event	T19	Vaccines	EVENT	689
+Event	T20	flu	EVENT	741
+Event	T21	symptoms	EVENT	111
+Event	T4	stay away	EVENT	180
+Event	T22	contact	EVENT	236
+Event	T5	Social distancing	EVENT	266
+Event	T6	staying away	EVENT	306
+Event	T23	spreading out	EVENT	405
+Event	T11	lying low	EVENT	466
+Event	T24	social distancing	EVENT	617
+Relation	T21	T1	SuperSub	true	symptoms	fever
+Relation	T1	T21	SubSuper	true	fever	symptoms
+Relation	T21	T2	SuperSub	true	symptoms	cough
+Relation	T2	T21	SubSuper	true	cough	symptoms
+Relation	T21	T3	SuperSub	true	symptoms	aches
+Relation	T3	T21	SubSuper	true	aches	symptoms
+Relation	T5	T8	SuperSub	true	Social distancing	avoiding
+Relation	T8	T5	SubSuper	true	avoiding	Social distancing
+Relation	T5	T23	SuperSub	true	Social distancing	spreading out
+Relation	T23	T5	SubSuper	true	spreading out	Social distancing
+Relation	T5	T10	SuperSub	true	Social distancing	staying
+Relation	T10	T5	SubSuper	true	staying	Social distancing
+Relation	T5	T11	SuperSub	true	Social distancing	lying low
+Relation	T11	T5	SubSuper	true	lying low	Social distancing
+Relation	T0	T10	NoRel	true	destroy	staying
+Relation	T0	T13	NoRel	true	destroy	spreading
+Relation	T0	T19	NoRel	true	destroy	Vaccines
+Relation	T0	T2	NoRel	true	destroy	cough
+Relation	T0	T20	NoRel	true	destroy	flu
+Relation	T0	T24	NoRel	true	destroy	social distancing
+Relation	T1	T0	NoRel	true	fever	destroy
+Relation	T10	T0	NoRel	true	staying	destroy
+Relation	T10	T12	NoRel	true	staying	infection
+Relation	T10	T3	NoRel	true	staying	aches
+Relation	T10	T8	NoRel	true	staying	avoiding
+Relation	T11	T0	NoRel	true	lying low	destroy
+Relation	T11	T1	NoRel	true	lying low	fever
+Relation	T11	T21	NoRel	true	lying low	symptoms
+Relation	T11	T6	NoRel	true	lying low	staying away
+Relation	T11	T7	NoRel	true	lying low	infected
+Relation	T14	T0	NoRel	true	action	destroy
+Relation	T14	T15	NoRel	true	action	request
+Relation	T14	T17	NoRel	true	action	actions
+Relation	T14	T18	NoRel	true	action	outbreak
+Relation	T14	T3	NoRel	true	action	aches
+Relation	T15	T12	NoRel	true	request	infection
+Relation	T15	T16	NoRel	true	request	require
+Relation	T15	T20	NoRel	true	request	flu
+Relation	T16	T1	NoRel	true	require	fever
+Relation	T16	T24	NoRel	true	require	social distancing
+Relation	T17	T12	NoRel	true	actions	infection
+Relation	T17	T22	NoRel	true	actions	contact
+Relation	T18	T16	NoRel	true	outbreak	require
+Relation	T18	T9	NoRel	true	outbreak	gatherings
+Relation	T19	T10	NoRel	true	Vaccines	staying
+Relation	T19	T13	NoRel	true	Vaccines	spreading
+Relation	T2	T1	NoRel	true	cough	fever
+Relation	T2	T22	NoRel	true	cough	contact
+Relation	T20	T1	NoRel	true	flu	fever
+Relation	T21	T13	NoRel	true	symptoms	spreading
+Relation	T21	T14	NoRel	true	symptoms	action
+Relation	T21	T24	NoRel	true	symptoms	social distancing
+Relation	T22	T12	NoRel	true	contact	infection
+Relation	T22	T21	NoRel	true	contact	symptoms
+Relation	T22	T23	NoRel	true	contact	spreading out
+Relation	T22	T24	NoRel	true	contact	social distancing
+Relation	T23	T22	NoRel	true	spreading out	contact
+Relation	T24	T12	NoRel	true	social distancing	infection
+Relation	T24	T13	NoRel	true	social distancing	spreading
+Relation	T24	T15	NoRel	true	social distancing	request
+Relation	T24	T4	NoRel	true	social distancing	stay away
+Relation	T24	T5	NoRel	true	social distancing	Social distancing
+Relation	T3	T1	NoRel	true	aches	fever
+Relation	T3	T8	NoRel	true	aches	avoiding
+Relation	T4	T0	NoRel	true	stay away	destroy
+Relation	T4	T15	NoRel	true	stay away	request
+Relation	T4	T24	NoRel	true	stay away	social distancing
+Relation	T4	T8	NoRel	true	stay away	avoiding
+Relation	T5	T0	NoRel	true	Social distancing	destroy
+Relation	T6	T12	NoRel	true	staying away	infection
+Relation	T6	T15	NoRel	true	staying away	request
+Relation	T6	T19	NoRel	true	staying away	Vaccines
+Relation	T6	T22	NoRel	true	staying away	contact
+Relation	T6	T3	NoRel	true	staying away	aches
+Relation	T6	T7	NoRel	true	staying away	infected
+Relation	T7	T12	NoRel	true	infected	infection
+Relation	T7	T22	NoRel	true	infected	contact
+Relation	T8	T12	NoRel	true	avoiding	infection
+Relation	T8	T21	NoRel	true	avoiding	symptoms
+Relation	T8	T23	NoRel	true	avoiding	spreading out
+Relation	T8	T9	NoRel	true	avoiding	gatherings
+Relation	T9	T1	NoRel	true	gatherings	fever
+Relation	T9	T22	NoRel	true	gatherings	contact
+Relation	T9	T24	NoRel	true	gatherings	social distancing
+Relation	T9	T5	NoRel	true	gatherings	Social distancing

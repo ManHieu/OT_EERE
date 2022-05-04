@@ -1,0 +1,43 @@
+Text	Many of the German fallen are buried at La Cambe German war cemetery .	Field Marshal Montgomery ( third from right ) talking with Simonds ( second from right ) at II Canadian Corps Headquarters in Normandy , 20 July 1944	] ]	The Battle of Verrières Ridge — although given no particular prominence in German military history — is one of the First Canadian Army 's most scrutinised actions .	The matter was first brought to public attention by Stacey , who wrestled with the question of how to present the battle in the Official History of the Canadian Army in the Second World War , and was required to make minor changes to the narrative of the battle by Simonds .
+Event	T0	fallen	EVENT	19
+Event	T1	buried	EVENT	30
+Event	T10	required	EVENT	590
+Event	T11	make	EVENT	602
+Event	T12	changes	EVENT	613
+Event	T13	battle	EVENT	645
+Event	T15	attention	EVENT	429
+Event	T2	talking	EVENT	117
+Event	T3	Battle	EVENT	229
+Event	T4	given	EVENT	266
+Event	T6	wrestled	EVENT	455
+Event	T7	question	EVENT	473
+Event	T8	present	EVENT	492
+Event	T9	battle	EVENT	504
+Relation	T15	T8	SuperSub	true	attention	present
+Relation	T8	T15	SubSuper	true	present	attention
+Relation	T15	T12	SuperSub	true	attention	changes
+Relation	T12	T15	SubSuper	true	changes	attention
+Relation	T0	T3	NoRel	true	fallen	Battle
+Relation	T0	T7	NoRel	true	fallen	question
+Relation	T0	T8	NoRel	true	fallen	present
+Relation	T10	T2	NoRel	true	required	talking
+Relation	T10	T4	NoRel	true	required	given
+Relation	T10	T6	NoRel	true	required	wrestled
+Relation	T11	T12	NoRel	true	make	changes
+Relation	T11	T6	NoRel	true	make	wrestled
+Relation	T13	T11	NoRel	true	battle	make
+Relation	T13	T6	NoRel	true	battle	wrestled
+Relation	T15	T7	NoRel	true	attention	question
+Relation	T2	T11	NoRel	true	talking	make
+Relation	T2	T6	NoRel	true	talking	wrestled
+Relation	T3	T1	NoRel	true	Battle	buried
+Relation	T3	T8	NoRel	true	Battle	present
+Relation	T4	T1	NoRel	true	given	buried
+Relation	T6	T1	NoRel	true	wrestled	buried
+Relation	T6	T10	NoRel	true	wrestled	required
+Relation	T7	T11	NoRel	true	question	make
+Relation	T7	T8	NoRel	true	question	present
+Relation	T8	T11	NoRel	true	present	make
+Relation	T8	T7	NoRel	true	present	question
+Relation	T8	T9	NoRel	true	present	battle
+Relation	T9	T15	NoRel	true	battle	attention

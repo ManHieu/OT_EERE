@@ -1,0 +1,28 @@
+Text	En la mañana del 9 de junio , a través de un comunicado publicado por el Comité Ejecutivo de la Región Lima Provincias de Perú Libre , el partido convocaba a una protesta a partir de las 11:00 a._m. en la Plaza San Martín .	Los disturbios también se registraron en ciudades del interior del país , como en Cuzco , en donde los simpatizantes de Perú Libre mostraron su rechazo ante la ONPE y Fujimori .	Por la tarde , distintos medios de comunicación reportaron una marcha en el distrito de Jesús María por parte de simpatizantes de Fuerza Popular en respaldo a su lideresa , Keiko Fujimori .	También se registraron manifestaciones en otros puntos del país , principalmente en ciudades del norte , como Chiclayo , en donde Fujimori obtuvo la mayoría de votos .	El sábado 12 de junio los simpatizantes de Fuerza Popular convocaron a la marcha « Respeta mi voto » , con horario 15:00 UTC-5 , nuevamente en el Campo de Marte .
+Event	T0	publicado	EVENT	56
+Event	T1	convocaba	EVENT	146
+Event	T10	manifestaciones	EVENT	615
+Event	T11	obtuvo	EVENT	731
+Event	T13	convocaron	EVENT	818
+Event	T14	marcha	EVENT	834
+Event	T3	disturbios	EVENT	228
+Event	T5	mostraron	EVENT	355
+Event	T7	reportaron	EVENT	450
+Event	T8	marcha	EVENT	465
+Relation	T3	T5	SuperSub	true	disturbios	mostraron
+Relation	T5	T3	SubSuper	true	mostraron	disturbios
+Relation	T3	T10	SuperSub	true	disturbios	manifestaciones
+Relation	T10	T3	SubSuper	true	manifestaciones	disturbios
+Relation	T0	T10	NoRel	true	publicado	manifestaciones
+Relation	T1	T10	NoRel	true	convocaba	manifestaciones
+Relation	T1	T7	NoRel	true	convocaba	reportaron
+Relation	T10	T11	NoRel	true	manifestaciones	obtuvo
+Relation	T10	T13	NoRel	true	manifestaciones	convocaron
+Relation	T11	T5	NoRel	true	obtuvo	mostraron
+Relation	T13	T7	NoRel	true	convocaron	reportaron
+Relation	T14	T0	NoRel	true	marcha	publicado
+Relation	T5	T0	NoRel	true	mostraron	publicado
+Relation	T5	T10	NoRel	true	mostraron	manifestaciones
+Relation	T7	T1	NoRel	true	reportaron	convocaba
+Relation	T7	T3	NoRel	true	reportaron	disturbios
+Relation	T7	T5	NoRel	true	reportaron	mostraron

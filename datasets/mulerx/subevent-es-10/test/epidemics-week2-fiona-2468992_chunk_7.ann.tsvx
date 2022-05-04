@@ -1,0 +1,73 @@
+Text	Mientras tanto , Cuba reportó el día 11 de mayo el primer caso del virus A ( H1N1 ) , que , según la Salud Pública de ese país , era de origen mexicano , por lo que Cuba tomó las medidas pertinentes para que no se propagase al resto de la isla .	Mientras la gripe seguía avanzando en el Caribe y Centroamérica , Puerto Rico se convirtió en el estado más afectado del Caribe con 34 muertes y 2,224 casos confirmados y Costa Rica el más afectado de Centroamérica con 27 muertes confirmadas al 7 de agosto de 2009 .	El 11 de agosto de 2009 fue confirmado que el Presidente Dr. Óscar Arias Sánchez resultó positivo en prueba de la Gripe A ( H1N1 ) , convirtiéndose en el primer Jefe de Estado en contagiarse con el virus .	El Presidente presentó síntomas leves , pero como padece de asma continuó trabajando en sus funciones oficiales desde su casa .	La gripe A ( H1N1 ) llegó por primera vez a Sudamérica el 2 de mayo , luego de que Colombia reportase su primer caso de gripe A ( H1N1 ) .
+Event	T0	reportó	EVENT	22
+Event	T1	caso	EVENT	58
+Event	T10	afectado	EVENT	435
+Event	T11	confirmadas	EVENT	476
+Event	T12	confirmado	EVENT	541
+Event	T13	convirtiéndose	EVENT	646
+Event	T14	contagiarse	EVENT	692
+Event	T15	padece	EVENT	769
+Event	T16	gripe	EVENT	850
+Event	T17	llegó	EVENT	867
+Event	T18	reportase	EVENT	939
+Event	T19	caso	EVENT	959
+Event	T2	tomó	EVENT	170
+Event	T20	gripe	EVENT	967
+Event	T3	medidas	EVENT	179
+Event	T4	propagase	EVENT	214
+Event	T5	avanzando	EVENT	271
+Event	T6	convirtió	EVENT	327
+Event	T7	afectado	EVENT	354
+Event	T8	muertes	EVENT	381
+Event	T9	confirmados	EVENT	403
+Event	T21	gripe	EVENT	258
+Relation	T12	T13	SuperSub	true	confirmado	convirtiéndose
+Relation	T13	T12	SubSuper	true	convirtiéndose	confirmado
+Relation	T0	T15	NoRel	true	reportó	padece
+Relation	T1	T12	NoRel	true	caso	confirmado
+Relation	T1	T5	NoRel	true	caso	avanzando
+Relation	T10	T14	NoRel	true	afectado	contagiarse
+Relation	T10	T17	NoRel	true	afectado	llegó
+Relation	T10	T20	NoRel	true	afectado	gripe
+Relation	T11	T15	NoRel	true	confirmadas	padece
+Relation	T12	T21	NoRel	true	confirmado	gripe
+Relation	T12	T3	NoRel	true	confirmado	medidas
+Relation	T13	T3	NoRel	true	convirtiéndose	medidas
+Relation	T13	T9	NoRel	true	convirtiéndose	confirmados
+Relation	T14	T0	NoRel	true	contagiarse	reportó
+Relation	T14	T15	NoRel	true	contagiarse	padece
+Relation	T15	T0	NoRel	true	padece	reportó
+Relation	T15	T18	NoRel	true	padece	reportase
+Relation	T16	T1	NoRel	true	gripe	caso
+Relation	T16	T9	NoRel	true	gripe	confirmados
+Relation	T17	T2	NoRel	true	llegó	tomó
+Relation	T17	T20	NoRel	true	llegó	gripe
+Relation	T17	T6	NoRel	true	llegó	convirtió
+Relation	T18	T16	NoRel	true	reportase	gripe
+Relation	T18	T5	NoRel	true	reportase	avanzando
+Relation	T19	T12	NoRel	true	caso	confirmado
+Relation	T19	T18	NoRel	true	caso	reportase
+Relation	T19	T6	NoRel	true	caso	convirtió
+Relation	T19	T9	NoRel	true	caso	confirmados
+Relation	T2	T20	NoRel	true	tomó	gripe
+Relation	T2	T6	NoRel	true	tomó	convirtió
+Relation	T20	T10	NoRel	true	gripe	afectado
+Relation	T20	T12	NoRel	true	gripe	confirmado
+Relation	T20	T15	NoRel	true	gripe	padece
+Relation	T21	T0	NoRel	true	gripe	reportó
+Relation	T21	T4	NoRel	true	gripe	propagase
+Relation	T3	T11	NoRel	true	medidas	confirmadas
+Relation	T3	T14	NoRel	true	medidas	contagiarse
+Relation	T3	T19	NoRel	true	medidas	caso
+Relation	T3	T9	NoRel	true	medidas	confirmados
+Relation	T4	T15	NoRel	true	propagase	padece
+Relation	T4	T6	NoRel	true	propagase	convirtió
+Relation	T5	T11	NoRel	true	avanzando	confirmadas
+Relation	T5	T21	NoRel	true	avanzando	gripe
+Relation	T5	T3	NoRel	true	avanzando	medidas
+Relation	T7	T17	NoRel	true	afectado	llegó
+Relation	T8	T12	NoRel	true	muertes	confirmado
+Relation	T8	T13	NoRel	true	muertes	convirtiéndose
+Relation	T8	T2	NoRel	true	muertes	tomó
+Relation	T9	T0	NoRel	true	confirmados	reportó
+Relation	T9	T15	NoRel	true	confirmados	padece

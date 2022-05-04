@@ -1,0 +1,48 @@
+Text	Soltó las correas y su paracaídas luego se desplegó automáticamente .	Siebold no llevaba traje de presión .	Durante la prueba , la aeronave sufrió una anomalía grave derivada de un error del copiloto , al accionar los frenos prematuramente .	Testigos dijeron que la nave explotó durante el vuelo luego de que uno de sus cohetes propulsores se incendiara , más tarde fue descartado .	Finalmente en 2015 , se informó que el accidente fue causado por una falla estructural después de que el copiloto desbloqueara el sistema de frenos demasiado pronto .
+Event	T0	Soltó	EVENT	0
+Event	T1	paracaídas	EVENT	23
+Event	T2	desplegó	EVENT	43
+Event	T3	prueba	EVENT	119
+Event	T4	sufrió	EVENT	140
+Event	T5	derivada	EVENT	166
+Event	T6	error	EVENT	181
+Event	T7	accionar	EVENT	205
+Event	T8	dijeron	EVENT	251
+Event	T9	explotó	EVENT	271
+Event	T10	vuelo	EVENT	290
+Event	T11	incendiara	EVENT	343
+Event	T12	descartado	EVENT	370
+Event	T13	informó	EVENT	407
+Event	T15	desbloqueara	EVENT	497
+Event	T16	falla estructural	EVENT	452
+Event	T17	accidente	EVENT	422
+Relation	T0	T11	NoRel	true	Soltó	incendiara
+Relation	T0	T15	NoRel	true	Soltó	desbloqueara
+Relation	T11	T1	NoRel	true	incendiara	paracaídas
+Relation	T11	T9	NoRel	true	incendiara	explotó
+Relation	T12	T17	NoRel	true	descartado	accidente
+Relation	T13	T0	NoRel	true	informó	Soltó
+Relation	T13	T5	NoRel	true	informó	derivada
+Relation	T13	T9	NoRel	true	informó	explotó
+Relation	T15	T12	NoRel	true	desbloqueara	descartado
+Relation	T15	T13	NoRel	true	desbloqueara	informó
+Relation	T16	T7	NoRel	true	falla estructural	accionar
+Relation	T16	T8	NoRel	true	falla estructural	dijeron
+Relation	T17	T2	NoRel	true	accidente	desplegó
+Relation	T17	T4	NoRel	true	accidente	sufrió
+Relation	T2	T10	NoRel	true	desplegó	vuelo
+Relation	T3	T1	NoRel	true	prueba	paracaídas
+Relation	T3	T16	NoRel	true	prueba	falla estructural
+Relation	T3	T6	NoRel	true	prueba	error
+Relation	T3	T7	NoRel	true	prueba	accionar
+Relation	T4	T6	NoRel	true	sufrió	error
+Relation	T5	T4	NoRel	true	derivada	sufrió
+Relation	T6	T17	NoRel	true	error	accidente
+Relation	T6	T2	NoRel	true	error	desplegó
+Relation	T6	T3	NoRel	true	error	prueba
+Relation	T6	T5	NoRel	true	error	derivada
+Relation	T7	T3	NoRel	true	accionar	prueba
+Relation	T8	T5	NoRel	true	dijeron	derivada
+Relation	T8	T9	NoRel	true	dijeron	explotó
+Relation	T9	T12	NoRel	true	explotó	descartado
+Relation	T9	T17	NoRel	true	explotó	accidente

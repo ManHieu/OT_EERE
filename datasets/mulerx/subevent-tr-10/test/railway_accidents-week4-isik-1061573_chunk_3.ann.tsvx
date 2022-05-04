@@ -1,0 +1,31 @@
+Text	İkaz ışıkları çalışıyor .	- 25px 22 Ağustos 2007 - Somerville - Tyabb – kamyon sürücüsü öldü - parlayan ışıklar , gürleme yok - 25px 18 Kasım , 2008 – Bir Connex Melbourne ekpres treni Dandenong South , Victoria_‘da bir otomobil ile çarpıştı , bir faal hemzemin geçidinde durmayı başaramayıp hemzemin geçidi işgal eden arabanın 53 yaşındaki kadın sürücüsü öldü .	- 27 Kasım , 2008 – Cardwell Quensland’ın yaklaşık 20 km güneyinde Bruce Hihway üzerinde bir QR Tilt Train kamyonla çarpıştı , sonuç iki kişi öldü ve diğer pek çok kişi yaralandı .	- 1 Ocak , 2009 – Innisfail , Queensland yakınında ne geçit kapısı ne de ikaz işaretlerinin olmadığı hemzemin geçitte bir QR Sunlander treni bir çöp kamyonu ile çarpıştı , bir kişi öldü , diğer sekiz kişi yaralandı .	- 16 Nisan 2008 – ATN Bangla televizyonuna göre , Dinajpur - Dakka Ekoto Expres treni , Kalihati , Tangail , Bangladeş dışında hen - mzemin geçitte bir yerel otobüsle çarpıştı , 18 ölü ve 30 yaralı .
+Event	T0	çalışıyor	EVENT	14
+Event	T1	öldü	EVENT	88
+Event	T2	çarpıştı	EVENT	233
+Event	T4	öldü	EVENT	356
+Event	T5	çarpıştı	EVENT	479
+Event	T6	öldü	EVENT	505
+Event	T7	yaralandı	EVENT	532
+Event	T8	çarpıştı	EVENT	705
+Event	T9	öldü	EVENT	725
+Event	T10	yaralandı	EVENT	749
+Event	T11	çarpıştı	EVENT	928
+Event	T12	ölü	EVENT	942
+Event	T3	eden	EVENT	314
+Event	T13	yaralı	EVENT	952
+Relation	T10	T0	NoRel	true	yaralandı	çalışıyor
+Relation	T11	T5	NoRel	true	çarpıştı	çarpıştı
+Relation	T2	T13	NoRel	true	çarpıştı	yaralı
+Relation	T3	T1	NoRel	true	eden	öldü
+Relation	T3	T5	NoRel	true	eden	çarpıştı
+Relation	T4	T2	NoRel	true	öldü	çarpıştı
+Relation	T6	T0	NoRel	true	öldü	çalışıyor
+Relation	T6	T7	NoRel	true	öldü	yaralandı
+Relation	T7	T1	NoRel	true	yaralandı	öldü
+Relation	T7	T12	NoRel	true	yaralandı	ölü
+Relation	T7	T2	NoRel	true	yaralandı	çarpıştı
+Relation	T7	T4	NoRel	true	yaralandı	öldü
+Relation	T7	T5	NoRel	true	yaralandı	çarpıştı
+Relation	T7	T9	NoRel	true	yaralandı	öldü
+Relation	T9	T0	NoRel	true	öldü	çalışıyor
+Relation	T9	T4	NoRel	true	öldü	öldü

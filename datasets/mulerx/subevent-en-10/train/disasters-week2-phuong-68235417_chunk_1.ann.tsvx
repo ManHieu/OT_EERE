@@ -1,0 +1,59 @@
+Text	Lou Qinjian , party chief of CPC Jiangsu Provincial Committee , and Wu Zhenglong , governor of Jiangsu , issued instructions , demanding scientific organization of search and rescue , full treatment of the wounded , minimizing casualties and preventing secondary disasters .	Wu Zhenglong , and the main leaders of Suzhou and Wujiang District rushed to the scene to organize and command the rescue at the first time .	The Ministry of Emergency Management and Ministry of Housing and Urban - Rural Development send working groups to the scene to guide the rescue work .	On July 13 , Lou Qinjian , the top political position in the province , rushed to the scene to command rescue and disposal work .	At 9:00 on July 14 , the search and rescue work ended .
+Event	T0	demanding	EVENT	127
+Event	T1	search	EVENT	164
+Event	T10	rescue	EVENT	390
+Event	T11	send	EVENT	508
+Event	T12	guide	EVENT	544
+Event	T14	rescue	EVENT	671
+Event	T15	search	EVENT	723
+Event	T16	ended	EVENT	746
+Event	T17	issued	EVENT	105
+Event	T19	minimizing	EVENT	216
+Event	T2	rescue	EVENT	175
+Event	T20	preventing	EVENT	242
+Event	T21	rushed	EVENT	640
+Event	T3	treatment	EVENT	189
+Event	T4	wounded	EVENT	206
+Event	T5	casualties	EVENT	227
+Event	T6	disasters	EVENT	263
+Event	T7	rushed	EVENT	342
+Event	T8	organize	EVENT	365
+Event	T9	command	EVENT	378
+Relation	T17	T0	SuperSub	true	issued	demanding
+Relation	T0	T17	SubSuper	true	demanding	issued
+Relation	T0	T16	NoRel	true	demanding	ended
+Relation	T0	T2	NoRel	true	demanding	rescue
+Relation	T0	T6	NoRel	true	demanding	disasters
+Relation	T1	T6	NoRel	true	search	disasters
+Relation	T1	T9	NoRel	true	search	command
+Relation	T10	T11	NoRel	true	rescue	send
+Relation	T12	T14	NoRel	true	guide	rescue
+Relation	T12	T15	NoRel	true	guide	search
+Relation	T12	T4	NoRel	true	guide	wounded
+Relation	T14	T12	NoRel	true	rescue	guide
+Relation	T14	T7	NoRel	true	rescue	rushed
+Relation	T16	T21	NoRel	true	ended	rushed
+Relation	T16	T9	NoRel	true	ended	command
+Relation	T17	T11	NoRel	true	issued	send
+Relation	T17	T3	NoRel	true	issued	treatment
+Relation	T17	T6	NoRel	true	issued	disasters
+Relation	T19	T17	NoRel	true	minimizing	issued
+Relation	T2	T6	NoRel	true	rescue	disasters
+Relation	T2	T8	NoRel	true	rescue	organize
+Relation	T21	T15	NoRel	true	rushed	search
+Relation	T21	T19	NoRel	true	rushed	minimizing
+Relation	T3	T11	NoRel	true	treatment	send
+Relation	T3	T8	NoRel	true	treatment	organize
+Relation	T4	T9	NoRel	true	wounded	command
+Relation	T5	T6	NoRel	true	casualties	disasters
+Relation	T6	T1	NoRel	true	disasters	search
+Relation	T6	T9	NoRel	true	disasters	command
+Relation	T7	T11	NoRel	true	rushed	send
+Relation	T7	T16	NoRel	true	rushed	ended
+Relation	T7	T6	NoRel	true	rushed	disasters
+Relation	T7	T9	NoRel	true	rushed	command
+Relation	T8	T11	NoRel	true	organize	send
+Relation	T8	T20	NoRel	true	organize	preventing
+Relation	T9	T12	NoRel	true	command	guide
+Relation	T9	T5	NoRel	true	command	casualties
+Relation	T9	T7	NoRel	true	command	rushed

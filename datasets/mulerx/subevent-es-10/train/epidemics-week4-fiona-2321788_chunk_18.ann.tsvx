@@ -1,0 +1,49 @@
+Text	Se estima en cerca de 500 casos la aparición de síndrome de Guillain-Barré , causados probablemente por una reacción inmunopatológica a la vacuna y de los cuales 25 terminaron en muerte por complicaciones pulmonares severas .	Hasta la fecha , no se han encontrado otras vacunas de la gripe vinculadas al síndrome de Guillain-Barré .	En septiembre de 1988 , un virus de gripe porcina mató a una mujer en Wisconsin , Estados Unidos , para posteriormente infectar a varios cientos de personas .	Barbara Ann Wieners , mujer embarazada de 32 años , tenía 8 meses de gestación cuando ella y su esposo Ed se enfermaron tras visitar una granja de cerdos en la feria del condado de Walworth .	Barbara murió ocho días después , aunque los médicos lograron inducirle parto y lograron salvar a su pequeña hija antes de morir .
+Event	T0	estima	EVENT	3
+Event	T1	aparición	EVENT	35
+Event	T2	causados	EVENT	77
+Event	T3	reacción	EVENT	108
+Event	T4	muerte	EVENT	179
+Event	T5	complicaciones	EVENT	190
+Event	T6	encontrado	EVENT	253
+Event	T7	virus	EVENT	360
+Event	T8	gripe	EVENT	369
+Event	T9	mató	EVENT	383
+Event	T10	infectar	EVENT	452
+Event	T11	gestación	EVENT	561
+Event	T12	enfermaron	EVENT	601
+Event	T13	visitar	EVENT	617
+Event	T14	murió	EVENT	692
+Event	T15	parto	EVENT	756
+Event	T16	salvar	EVENT	773
+Event	T17	morir	EVENT	807
+Relation	T0	T16	NoRel	true	estima	salvar
+Relation	T0	T2	NoRel	true	estima	causados
+Relation	T1	T10	NoRel	true	aparición	infectar
+Relation	T1	T13	NoRel	true	aparición	visitar
+Relation	T1	T2	NoRel	true	aparición	causados
+Relation	T10	T5	NoRel	true	infectar	complicaciones
+Relation	T11	T15	NoRel	true	gestación	parto
+Relation	T11	T17	NoRel	true	gestación	morir
+Relation	T11	T4	NoRel	true	gestación	muerte
+Relation	T14	T16	NoRel	true	murió	salvar
+Relation	T15	T10	NoRel	true	parto	infectar
+Relation	T15	T13	NoRel	true	parto	visitar
+Relation	T15	T2	NoRel	true	parto	causados
+Relation	T15	T6	NoRel	true	parto	encontrado
+Relation	T16	T10	NoRel	true	salvar	infectar
+Relation	T16	T17	NoRel	true	salvar	morir
+Relation	T16	T3	NoRel	true	salvar	reacción
+Relation	T17	T4	NoRel	true	morir	muerte
+Relation	T17	T5	NoRel	true	morir	complicaciones
+Relation	T3	T1	NoRel	true	reacción	aparición
+Relation	T4	T0	NoRel	true	muerte	estima
+Relation	T5	T0	NoRel	true	complicaciones	estima
+Relation	T5	T11	NoRel	true	complicaciones	gestación
+Relation	T7	T16	NoRel	true	virus	salvar
+Relation	T7	T5	NoRel	true	virus	complicaciones
+Relation	T8	T14	NoRel	true	gripe	murió
+Relation	T8	T16	NoRel	true	gripe	salvar
+Relation	T8	T2	NoRel	true	gripe	causados
+Relation	T9	T4	NoRel	true	mató	muerte
+Relation	T9	T7	NoRel	true	mató	virus

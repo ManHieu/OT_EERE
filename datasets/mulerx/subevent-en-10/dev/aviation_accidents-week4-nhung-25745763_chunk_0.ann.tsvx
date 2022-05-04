@@ -1,0 +1,36 @@
+Text	DIVI DIVI AIR FLIGHT 014 ( some sources refer to it as FLIGHT 016 ) , was a scheduled commuter flight from Hato International Airport in Curaçao to Flamingo International Airport in Bonaire carrying a single pilot and nine passengers , which on 22 October 2009 ditched in the Caribbean Sea off the Coast of Bonaire due to an engine failure .	[ PJ - SUN , the Britten - Norman BN - 2A - 8 Islander aircraft involved in the accident , seen at Curaçao International Airport ]	[ PJ - SUN , the Britten - Norman BN - 2A - 8 Islander aircraft involved in the accident , seen at Daly River Airport ]	The aircraft involved was a Britten - Norman BN - 2A Islander , registration PJ - SUN .	The aircraft made its first flight on 12 December 1973 , and was therefore almost 36 years old at the time of the accident .
+Event	T0	flight	EVENT	95
+Event	T1	carrying	EVENT	190
+Event	T2	ditched	EVENT	261
+Event	T3	failure	EVENT	332
+Event	T4	accident	EVENT	422
+Event	T5	seen	EVENT	433
+Event	T6	accident	EVENT	553
+Event	T7	seen	EVENT	564
+Event	T8	involved	EVENT	606
+Event	T9	registration	EVENT	657
+Event	T10	made	EVENT	694
+Event	T11	flight	EVENT	709
+Event	T12	accident	EVENT	795
+Relation	T1	T2	SuperSub	true	carrying	ditched
+Relation	T2	T1	SubSuper	true	ditched	carrying
+Relation	T4	T5	SuperSub	true	accident	seen
+Relation	T5	T4	SubSuper	true	seen	accident
+Relation	T6	T7	SuperSub	true	accident	seen
+Relation	T7	T6	SubSuper	true	seen	accident
+Relation	T0	T3	NoRel	true	flight	failure
+Relation	T0	T4	NoRel	true	flight	accident
+Relation	T0	T7	NoRel	true	flight	seen
+Relation	T10	T0	NoRel	true	made	flight
+Relation	T10	T7	NoRel	true	made	seen
+Relation	T10	T9	NoRel	true	made	registration
+Relation	T3	T7	NoRel	true	failure	seen
+Relation	T3	T9	NoRel	true	failure	registration
+Relation	T4	T10	NoRel	true	accident	made
+Relation	T4	T6	NoRel	true	accident	accident
+Relation	T5	T2	NoRel	true	seen	ditched
+Relation	T5	T3	NoRel	true	seen	failure
+Relation	T7	T8	NoRel	true	seen	involved
+Relation	T8	T2	NoRel	true	involved	ditched
+Relation	T8	T7	NoRel	true	involved	seen
+Relation	T9	T0	NoRel	true	registration	flight

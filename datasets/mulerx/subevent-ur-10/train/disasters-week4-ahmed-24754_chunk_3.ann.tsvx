@@ -1,0 +1,24 @@
+Text	پل سے چھلانگ لگا کر خودکشی ایک عام رحجان ہے ۔	2001ء میں 146 افراد نے باسفورس پر واقع دونوں پلوں سے کود کر خود کشی کی کوشش کی جس میں سے 24 اپنی جانوں سے ہاتھ دھو بیٹھے ۔	2002ء میں 190 اقدامات خود کشی میں 38 افراد ہلاک ہوئے ۔	-	باسفورس پل ، آبنائے باسفورس پر تعمیر کیا جانے والا پہلا پل جو فاتح سلطان محمد پل سے تقریباً 5 کلومیٹر جنوب میں واقع ہے -
+Event	T0	لگا	EVENT	13
+Event	T1	خودکشی	EVENT	20
+Event	T2	کشی	EVENT	110
+Event	T3	بیٹھے	EVENT	161
+Event	T4	کشی	EVENT	195
+Event	T5	ہوئے	EVENT	217
+Event	T6	تعمیر	EVENT	257
+Event	T7	واقع	EVENT	80
+Event	T8	کوشش	EVENT	117
+Relation	T7	T3	SuperSub	true	واقع	بیٹھے
+Relation	T3	T7	SubSuper	true	بیٹھے	واقع
+Relation	T2	T8	SuperSub	true	کشی	کوشش
+Relation	T8	T2	SubSuper	true	کوشش	کشی
+Relation	T1	T7	NoRel	true	خودکشی	واقع
+Relation	T1	T8	NoRel	true	خودکشی	کوشش
+Relation	T2	T7	NoRel	true	کشی	واقع
+Relation	T4	T1	NoRel	true	کشی	خودکشی
+Relation	T5	T6	NoRel	true	ہوئے	تعمیر
+Relation	T6	T2	NoRel	true	تعمیر	کشی
+Relation	T6	T8	NoRel	true	تعمیر	کوشش
+Relation	T7	T1	NoRel	true	واقع	خودکشی
+Relation	T7	T4	NoRel	true	واقع	کشی
+Relation	T8	T0	NoRel	true	کوشش	لگا

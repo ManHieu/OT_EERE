@@ -1,0 +1,5 @@
+Text	Hitler Hindenburg'un ölümünden sonra Cumhurbaşkanlığı makamını üstlendi ve bunu Şansölyelik makamı ile birleştirdi .				
+Event	T0	ölümünden	EVENT	21
+Event	T1	üstlendi	EVENT	63
+Event	T2	birleştirdi	EVENT	103
+Relation	T1	T0	NoRel	true	üstlendi	ölümünden

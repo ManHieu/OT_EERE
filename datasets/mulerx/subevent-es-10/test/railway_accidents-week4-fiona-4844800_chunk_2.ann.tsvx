@@ -1,0 +1,52 @@
+Text	En este punto el tren se descarriló , cayendo por el barranco .	La investigación sobre el accidente constató que idealmente todas las estaciones debían construirse de tal manera que no existiera un gradiente en sus líneas , pero el terreno montañoso de la zona hizo que esto fuera imposible en el caso de Vicuña .	Asimismo , indicó que los frenos del tren eran de diseño Westinghouse , por lo que debían ser a prueba de fallos aun cuando la locomotora hubiera estado en ralentí en aquel momento y una falla en el sistema pudo haber pasado desapercibida .	El informe también destacó que , contra las regulaciones , se había convertido en práctica habitual no mantener los frenos aplicados cuando los trenes esperaran durante largos períodos en la estación .	Los informes de prensa en el momento afirmaron que un niño de seis años se había metido en la cabina de la locomotora y accidentalmente liberó los frenos .
+Event	T0	descarriló	EVENT	25
+Event	T1	cayendo	EVENT	38
+Event	T2	investigación	EVENT	67
+Event	T3	constató	EVENT	100
+Event	T4	hizo	EVENT	261
+Event	T5	indicó	EVENT	325
+Event	T6	fallos	EVENT	420
+Event	T7	ralentí	EVENT	470
+Event	T8	falla	EVENT	501
+Event	T9	desapercibida	EVENT	539
+Event	T10	informe	EVENT	558
+Event	T11	destacó	EVENT	574
+Event	T12	regulaciones	EVENT	599
+Event	T13	aplicados	EVENT	678
+Event	T14	esperaran	EVENT	706
+Event	T15	informes	EVENT	761
+Event	T16	afirmaron	EVENT	794
+Event	T17	metido	EVENT	838
+Event	T18	liberó	EVENT	893
+Relation	T0	T12	NoRel	true	descarriló	regulaciones
+Relation	T0	T8	NoRel	true	descarriló	falla
+Relation	T1	T10	NoRel	true	cayendo	informe
+Relation	T1	T15	NoRel	true	cayendo	informes
+Relation	T1	T18	NoRel	true	cayendo	liberó
+Relation	T1	T5	NoRel	true	cayendo	indicó
+Relation	T10	T12	NoRel	true	informe	regulaciones
+Relation	T10	T18	NoRel	true	informe	liberó
+Relation	T11	T0	NoRel	true	destacó	descarriló
+Relation	T12	T2	NoRel	true	regulaciones	investigación
+Relation	T14	T16	NoRel	true	esperaran	afirmaron
+Relation	T14	T3	NoRel	true	esperaran	constató
+Relation	T14	T4	NoRel	true	esperaran	hizo
+Relation	T16	T17	NoRel	true	afirmaron	metido
+Relation	T16	T3	NoRel	true	afirmaron	constató
+Relation	T17	T12	NoRel	true	metido	regulaciones
+Relation	T17	T7	NoRel	true	metido	ralentí
+Relation	T18	T1	NoRel	true	liberó	cayendo
+Relation	T18	T7	NoRel	true	liberó	ralentí
+Relation	T2	T1	NoRel	true	investigación	cayendo
+Relation	T2	T14	NoRel	true	investigación	esperaran
+Relation	T2	T4	NoRel	true	investigación	hizo
+Relation	T3	T14	NoRel	true	constató	esperaran
+Relation	T3	T2	NoRel	true	constató	investigación
+Relation	T4	T2	NoRel	true	hizo	investigación
+Relation	T4	T8	NoRel	true	hizo	falla
+Relation	T7	T0	NoRel	true	ralentí	descarriló
+Relation	T7	T6	NoRel	true	ralentí	fallos
+Relation	T8	T12	NoRel	true	falla	regulaciones
+Relation	T8	T18	NoRel	true	falla	liberó
+Relation	T9	T0	NoRel	true	desapercibida	descarriló
+Relation	T9	T13	NoRel	true	desapercibida	aplicados

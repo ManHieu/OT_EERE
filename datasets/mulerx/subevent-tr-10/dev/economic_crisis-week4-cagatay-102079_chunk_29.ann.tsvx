@@ -1,0 +1,20 @@
+Text	Özgürlükten korkan , köleliğe hızla koşan kitlelerin önce özgürlükle yeniden tanışmaları gerekmektedir .	Faşizm özel bir hükûmet biçimi değil , kitle psikolojisinin tarih içerisinde ortaya çıkan özel bir halidir .	Franz Neumann , Nazi Almanyası’nı değerlendirirken , tekelci sistemde totaliter nitelikli politik bir iktidar olmadan kârların korunamayacağını , bunun da nasyonal sosyalizmin ayırıcı özelliği olduğunu belirtiyordu .	Daha sonra Neumann faşizmi “ buyrukçu ekonomi ” ya da “ totaliter tekelci kapitalizm ” olarak tanımlamıştı .	Neumann’a göre Almanya’da nasyonal sosyalizmin yükselmesi sermayenin tekelleşmeyle sonuçlanan merkezileşme ve yoğunlaşma sürecinin ilerlemiş olmasıyla ilişkilendiriyordu .
+Event	T0	belirtiyordu	EVENT	416
+Event	T1	yükselmesi	EVENT	587
+Event	T2	ilerlemiş	EVENT	671
+Event	T3	ilişkilendiriyordu	EVENT	691
+Event	T4	korkan	EVENT	12
+Event	T5	gerekmektedir	EVENT	89
+Event	T6	tanışmaları	EVENT	77
+Event	T7	değerlendirirken	EVENT	248
+Event	T8	tekelleşmeyle	EVENT	609
+Relation	T1	T4	NoRel	true	yükselmesi	korkan
+Relation	T2	T6	NoRel	true	ilerlemiş	tanışmaları
+Relation	T3	T2	NoRel	true	ilişkilendiriyordu	ilerlemiş
+Relation	T3	T6	NoRel	true	ilişkilendiriyordu	tanışmaları
+Relation	T3	T7	NoRel	true	ilişkilendiriyordu	değerlendirirken
+Relation	T5	T2	NoRel	true	gerekmektedir	ilerlemiş
+Relation	T5	T8	NoRel	true	gerekmektedir	tekelleşmeyle
+Relation	T6	T7	NoRel	true	tanışmaları	değerlendirirken
+Relation	T7	T4	NoRel	true	değerlendirirken	korkan
+Relation	T8	T5	NoRel	true	tekelleşmeyle	gerekmektedir

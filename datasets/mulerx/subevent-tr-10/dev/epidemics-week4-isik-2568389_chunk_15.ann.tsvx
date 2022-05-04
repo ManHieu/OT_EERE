@@ -1,0 +1,12 @@
+Text	123 vaka daha sonra teyit edildi ve toplam sayı 4.335'e ulaştı .	- İspanya 36 davayı daha doğrulayarak toplam sayısını 120'ye çıkardı .	- İsveç bir vakayı daha doğrulayarak toplam sayısını 15'e çıkardı .	- Tayvan bir vaka daha doğruladı ve toplam 41'e ulaştı .	- Tayland bir vaka daha doğruladı ve toplam sayıyı 43'e çıkardı .
+Event	T0	edildi	EVENT	26
+Event	T1	ulaştı	EVENT	56
+Event	T2	çıkardı	EVENT	126
+Event	T3	çıkardı	EVENT	194
+Event	T4	doğruladı	EVENT	227
+Event	T5	ulaştı	EVENT	252
+Event	T6	doğruladı	EVENT	285
+Event	T7	çıkardı	EVENT	317
+Event	T8	doğrulayarak	EVENT	90
+Event	T9	doğrulayarak	EVENT	160
+Relation	T3	T7	NoRel	true	çıkardı	çıkardı

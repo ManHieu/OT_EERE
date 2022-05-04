@@ -1,0 +1,30 @@
+Text	Kasaba meydanında öldürüldükten sonra Esved'in cansız bedeni bir arabanın arkasına bağlanıp caddelerde sürüklenerek gezdirilmiştir .	" Değersiz olduğu "nu göstermek için de ölü bir köpeğin parçaları ile birlikte gömülmüştür .	Daha sonra hala bakire olup olmadığını anlamak için cesedi gömüldüğü yerden çıkarılarak Musul Adli Tıp Enstitüsüne gönderilmiştir .	Adli Tıp raporuna göre Esved öldüğünde hala bakire idi .	Yapılan otopsi ; kafatası ve omurilik kırılması sonucu öldüğünü ortaya çıkardı .
+Event	T0	öldürüldükten	EVENT	18
+Event	T1	gezdirilmiştir	EVENT	116
+Event	T2	göstermek	EVENT	155
+Event	T3	gömülmüştür	EVENT	212
+Event	T4	gönderilmiştir	EVENT	341
+Event	T5	öldüğünde	EVENT	387
+Event	T6	otopsi	EVENT	423
+Event	T7	çıkardı	EVENT	486
+Event	T8	bağlanıp	EVENT	83
+Event	T9	ölü	EVENT	173
+Event	T10	anlamak	EVENT	265
+Event	T11	gömüldüğü	EVENT	285
+Event	T12	çıkarılarak	EVENT	302
+Relation	T6	T7	SuperSub	true	otopsi	çıkardı
+Relation	T7	T6	SubSuper	true	çıkardı	otopsi
+Relation	T11	T4	NoRel	true	gömüldüğü	gönderilmiştir
+Relation	T12	T10	NoRel	true	çıkarılarak	anlamak
+Relation	T2	T9	NoRel	true	göstermek	ölü
+Relation	T3	T5	NoRel	true	gömülmüştür	öldüğünde
+Relation	T4	T6	NoRel	true	gönderilmiştir	otopsi
+Relation	T4	T8	NoRel	true	gönderilmiştir	bağlanıp
+Relation	T5	T9	NoRel	true	öldüğünde	ölü
+Relation	T6	T0	NoRel	true	otopsi	öldürüldükten
+Relation	T6	T12	NoRel	true	otopsi	çıkarılarak
+Relation	T6	T5	NoRel	true	otopsi	öldüğünde
+Relation	T6	T8	NoRel	true	otopsi	bağlanıp
+Relation	T8	T1	NoRel	true	bağlanıp	gezdirilmiştir
+Relation	T8	T10	NoRel	true	bağlanıp	anlamak
+Relation	T9	T4	NoRel	true	ölü	gönderilmiştir

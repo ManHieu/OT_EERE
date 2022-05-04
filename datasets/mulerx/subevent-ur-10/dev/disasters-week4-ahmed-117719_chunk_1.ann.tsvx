@@ -1,0 +1,17 @@
+Text	1804ء میں ایک انگریز انجینیر رچرڈ ٹرے دی تھک نے بھاپ سے چلنے والا انجن تیار کیا ۔	لیکن یہ صرف بیس ٹن وزن کھینچ سکتا تھا ۔	اس کے بعد جارج اسٹیفن سن نے اس سے زیادہ طاقتور انجن بنایا ۔	اس انجن کے کامیاب تجربے کے بعد اسٹاکٹن اور ڈارلنگٹن تک ریل کی پٹری بچھائی گئی جس پر صرف مال گاڑیاں چلائی گئیں ۔	1830ء میں لیور پول سے مانچسٹر کو ملانے والی ریلوے لائن کا افتتاح ہوا اور برطانیہ میں سب سے پہلی مسافر گاڑی اسی ریلوے لائن پر چلی ۔
+Event	T0	چلنے	EVENT	56
+Event	T1	کھینچ	EVENT	105
+Event	T2	بنایا	EVENT	174
+Event	T3	تجربے	EVENT	200
+Event	T5	چلی	EVENT	419
+Event	T6	تیار	EVENT	71
+Event	T7	چلائی	EVENT	281
+Event	T8	افتتاح	EVENT	352
+Relation	T6	T0	SuperSub	true	تیار	چلنے
+Relation	T0	T6	SubSuper	true	چلنے	تیار
+Relation	T1	T2	NoRel	true	کھینچ	بنایا
+Relation	T1	T5	NoRel	true	کھینچ	چلی
+Relation	T1	T8	NoRel	true	کھینچ	افتتاح
+Relation	T2	T6	NoRel	true	بنایا	تیار
+Relation	T5	T3	NoRel	true	چلی	تجربے
+Relation	T6	T2	NoRel	true	تیار	بنایا

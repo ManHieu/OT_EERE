@@ -1,0 +1,23 @@
+Text	Salgının nerede başladığı bilinmiyor .	Ancak salgın Doğu sahilindeki kolonilerle veya savaş koşullarının harap ettiği bölgelerle sınırlı değildi .	Salgın Kuzey Amerika kıtasına yayıldı .	1775'te , İngiliz işgali altındaki Boston'da ve Kıta Ordusu'nun Kanada'yı işgali arasında çoktan yayılmıştı .	Washington'un Boston kuşatması sırasında , hastalık hem Kıta Avrupası hem de İngiliz kamplarında görüldü .
+Event	T0	Salgının	EVENT	0
+Event	T2	savaş	EVENT	86
+Event	T3	harap	EVENT	105
+Event	T4	yayıldı	EVENT	177
+Event	T5	işgali	EVENT	205
+Event	T6	işgali	EVENT	261
+Event	T7	yayılmıştı	EVENT	284
+Event	T8	kuşatması	EVENT	318
+Event	T9	hastalık	EVENT	340
+Event	T10	görüldü	EVENT	394
+Event	T1	salgın	EVENT	45
+Event	T11	Salgın	EVENT	147
+Relation	T0	T1	NoRel	true	Salgının	salgın
+Relation	T0	T3	NoRel	true	Salgının	harap
+Relation	T1	T2	NoRel	true	salgın	savaş
+Relation	T1	T5	NoRel	true	salgın	işgali
+Relation	T10	T0	NoRel	true	görüldü	Salgının
+Relation	T10	T1	NoRel	true	görüldü	salgın
+Relation	T3	T2	NoRel	true	harap	savaş
+Relation	T5	T11	NoRel	true	işgali	Salgın
+Relation	T5	T8	NoRel	true	işgali	kuşatması
+Relation	T6	T11	NoRel	true	işgali	Salgın

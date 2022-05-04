@@ -1,0 +1,66 @@
+Text	Una historia inventada durante el acto fue que se produjo un accidente causado por beber vodka y fumar al mismo tiempo , o por combustión espontánea , con el objetivo de desviar el interés hacia los chismes y retratar a Siwiec como un borracho irresponsable .	También fue declarado en fermo mental .	A pesar de la gran cantidad de asistentes al festival , hubo relativamente pocos testigos , y el incidente no causó ninguna demora en la actividad principal .	Los periodistas y otros testigos sabían que no podrían publicar ninguna fotografía o filmación , por lo que las personas que se percataron del incidente no se molestaron en grabarlo , ni tampoco intentaron realizar una investigación posterior .	Las pocas fotografías de los incidentes fueron destruidas , olvidadas o perdidas .
+Event	T0	inventada	EVENT	13
+Event	T2	causado	EVENT	71
+Event	T3	beber	EVENT	83
+Event	T4	fumar	EVENT	97
+Event	T5	combustión	EVENT	127
+Event	T6	desviar	EVENT	170
+Event	T7	retratar	EVENT	209
+Event	T8	declarado	EVENT	272
+Event	T9	incidente	EVENT	397
+Event	T10	causó	EVENT	410
+Event	T11	demora	EVENT	424
+Event	T12	actividad	EVENT	437
+Event	T13	percataron	EVENT	587
+Event	T14	incidente	EVENT	602
+Event	T15	molestaron	EVENT	618
+Event	T16	realizar	EVENT	665
+Event	T17	investigación	EVENT	678
+Event	T18	incidentes	EVENT	733
+Event	T19	destruidas	EVENT	751
+Event	T20	olvidadas	EVENT	764
+Event	T21	perdidas	EVENT	776
+Event	T1	accidente	EVENT	61
+Relation	T0	T15	NoRel	true	inventada	molestaron
+Relation	T1	T17	NoRel	true	accidente	investigación
+Relation	T10	T16	NoRel	true	causó	realizar
+Relation	T11	T1	NoRel	true	demora	accidente
+Relation	T12	T7	NoRel	true	actividad	retratar
+Relation	T13	T17	NoRel	true	percataron	investigación
+Relation	T13	T21	NoRel	true	percataron	perdidas
+Relation	T14	T1	NoRel	true	incidente	accidente
+Relation	T14	T13	NoRel	true	incidente	percataron
+Relation	T15	T14	NoRel	true	molestaron	incidente
+Relation	T15	T18	NoRel	true	molestaron	incidentes
+Relation	T15	T21	NoRel	true	molestaron	perdidas
+Relation	T15	T3	NoRel	true	molestaron	beber
+Relation	T16	T18	NoRel	true	realizar	incidentes
+Relation	T16	T8	NoRel	true	realizar	declarado
+Relation	T17	T21	NoRel	true	investigación	perdidas
+Relation	T17	T6	NoRel	true	investigación	desviar
+Relation	T18	T0	NoRel	true	incidentes	inventada
+Relation	T18	T16	NoRel	true	incidentes	realizar
+Relation	T18	T8	NoRel	true	incidentes	declarado
+Relation	T18	T9	NoRel	true	incidentes	incidente
+Relation	T19	T0	NoRel	true	destruidas	inventada
+Relation	T19	T14	NoRel	true	destruidas	incidente
+Relation	T2	T14	NoRel	true	causado	incidente
+Relation	T2	T20	NoRel	true	causado	olvidadas
+Relation	T20	T3	NoRel	true	olvidadas	beber
+Relation	T21	T13	NoRel	true	perdidas	percataron
+Relation	T21	T8	NoRel	true	perdidas	declarado
+Relation	T3	T12	NoRel	true	beber	actividad
+Relation	T3	T13	NoRel	true	beber	percataron
+Relation	T3	T15	NoRel	true	beber	molestaron
+Relation	T3	T20	NoRel	true	beber	olvidadas
+Relation	T4	T3	NoRel	true	fumar	beber
+Relation	T4	T8	NoRel	true	fumar	declarado
+Relation	T4	T9	NoRel	true	fumar	incidente
+Relation	T5	T21	NoRel	true	combustión	perdidas
+Relation	T6	T1	NoRel	true	desviar	accidente
+Relation	T6	T19	NoRel	true	desviar	destruidas
+Relation	T7	T13	NoRel	true	retratar	percataron
+Relation	T8	T1	NoRel	true	declarado	accidente
+Relation	T8	T18	NoRel	true	declarado	incidentes
+Relation	T9	T2	NoRel	true	incidente	causado
+Relation	T9	T6	NoRel	true	incidente	desviar

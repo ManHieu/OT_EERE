@@ -1,0 +1,29 @@
+Text	A pesar de que las escaleras en la cascada de hielo de Khumbu resultaron dañadas por las avalanchas , un puñado de montañistas , inmutados por el desastre , buscaron inmediatamente la autorización del gobierno nepalí para continuar con su intento de ascender la montaña y obtuvieron el permiso para hacerlo el 29 de abril de 2015 .	" Las escaleras serán reparadas en los próximos dos o tres días y los ascensos continuarán , no hay razón para que las expediciones sean canceladas " , argumentó Tulsi Gautam , jefe del departamento de turismo de Nepal .	" No hay ninguna razón científica para esperar otro temblor ... y creemos que el suelo es lo suficientemente estable como para subir a pesar de las réplicas .	"	Más tarde , se anunció el cierre de las rutas sobre la cascada de hielo durante el resto de la temporada , el segundo año consecutivo que la montaña estuvo cerrada debido a las avalanchas .
+Event	T0	dañadas	EVENT	73
+Event	T1	inmutados	EVENT	129
+Event	T16	anunció	EVENT	729
+Event	T17	cierre	EVENT	740
+Event	T18	avalanchas	EVENT	891
+Event	T2	desastre	EVENT	146
+Event	T3	autorización	EVENT	184
+Event	T7	obtuvieron	EVENT	272
+Event	T4	avalanchas	EVENT	89
+Event	T5	buscaron	EVENT	157
+Relation	T16	T17	SuperSub	true	anunció	cierre
+Relation	T17	T16	SubSuper	true	cierre	anunció
+Relation	T1	T0	NoRel	true	inmutados	dañadas
+Relation	T1	T17	NoRel	true	inmutados	cierre
+Relation	T1	T18	NoRel	true	inmutados	avalanchas
+Relation	T1	T2	NoRel	true	inmutados	desastre
+Relation	T16	T3	NoRel	true	anunció	autorización
+Relation	T17	T4	NoRel	true	cierre	avalanchas
+Relation	T17	T5	NoRel	true	cierre	buscaron
+Relation	T18	T3	NoRel	true	avalanchas	autorización
+Relation	T18	T5	NoRel	true	avalanchas	buscaron
+Relation	T2	T17	NoRel	true	desastre	cierre
+Relation	T2	T3	NoRel	true	desastre	autorización
+Relation	T3	T16	NoRel	true	autorización	anunció
+Relation	T4	T16	NoRel	true	avalanchas	anunció
+Relation	T4	T3	NoRel	true	avalanchas	autorización
+Relation	T4	T7	NoRel	true	avalanchas	obtuvieron
+Relation	T5	T17	NoRel	true	buscaron	cierre

@@ -1,0 +1,87 @@
+Text	Finanspolitisk holdbarhed indebærer , at de offentlige finanser skal være i så god stand , at vi kan finansiere de merudgifter til bl.a. sundhed , pleje og pension , som følger af , at vi fremover bliver stadig flere ældre - vel at mærke uden at forøge beskatningen eller reducere væksten i de offentlige udgifter på andre områder ..._ "	I maj 2017 offentliggjorde den daværende regering en ny 2025-plan med titlen " Vækst og velstand 2025 " .	Her redegjorde man for beregningen af råderummet , hvor der blev taget udgangspunkt i et forløb med nulvækst i det offentlige forbrug .	Beregningen af råderummet tager udgangspunkt i den mellemfristede fremskrivning af Danmarks økonomi og offentlige finanser , som i mange år har været et af de centrale redskaber i den danske regerings økonomiske politik .	Den mellemfristede fremskrivning går 5-10 år frem i tiden .
+Event	T0	finansiere	EVENT	101
+Event	T1	væksten	EVENT	281
+Event	T2	offentliggjorde	EVENT	349
+Event	T3	redegjorde	EVENT	448
+Event	T4	forløb	EVENT	533
+Event	T5	nulvækst	EVENT	544
+Event	T6	Beregningen	EVENT	580
+Event	T7	går	EVENT	835
+Event	T8	holdbarhed	EVENT	15
+Event	T9	indebærer	EVENT	26
+Event	T10	finanser	EVENT	55
+Event	T11	merudgifter	EVENT	115
+Event	T12	uden	EVENT	238
+Event	T13	reducere	EVENT	272
+Event	T14	stand	EVENT	83
+Event	T15	flere	EVENT	211
+Event	T16	følger	EVENT	170
+Event	T17	regering	EVENT	379
+Event	T18	2025-plan	EVENT	394
+Event	T19	beregningen	EVENT	467
+Event	T20	forbrug	EVENT	570
+Event	T21	redskaber	EVENT	748
+Event	T23	politik	EVENT	792
+Event	T24	mellemfristede fremskrivning	EVENT	806
+Event	T22	mellemfristede fremskrivning	EVENT	631
+Relation	T18	T19	SuperSub	true	2025-plan	beregningen
+Relation	T19	T18	SubSuper	true	beregningen	2025-plan
+Relation	T18	T5	SuperSub	true	2025-plan	nulvækst
+Relation	T5	T18	SubSuper	true	nulvækst	2025-plan
+Relation	T22	T21	SuperSub	true	mellemfristede fremskrivning	redskaber
+Relation	T21	T22	SubSuper	true	redskaber	mellemfristede fremskrivning
+Relation	T0	T19	NoRel	true	finansiere	beregningen
+Relation	T1	T2	NoRel	true	væksten	offentliggjorde
+Relation	T1	T4	NoRel	true	væksten	forløb
+Relation	T1	T8	NoRel	true	væksten	holdbarhed
+Relation	T10	T0	NoRel	true	finanser	finansiere
+Relation	T10	T19	NoRel	true	finanser	beregningen
+Relation	T11	T18	NoRel	true	merudgifter	2025-plan
+Relation	T11	T24	NoRel	true	merudgifter	mellemfristede fremskrivning
+Relation	T12	T17	NoRel	true	uden	regering
+Relation	T13	T21	NoRel	true	reducere	redskaber
+Relation	T13	T22	NoRel	true	reducere	mellemfristede fremskrivning
+Relation	T13	T8	NoRel	true	reducere	holdbarhed
+Relation	T14	T18	NoRel	true	stand	2025-plan
+Relation	T14	T24	NoRel	true	stand	mellemfristede fremskrivning
+Relation	T14	T5	NoRel	true	stand	nulvækst
+Relation	T15	T10	NoRel	true	flere	finanser
+Relation	T15	T22	NoRel	true	flere	mellemfristede fremskrivning
+Relation	T15	T23	NoRel	true	flere	politik
+Relation	T16	T14	NoRel	true	følger	stand
+Relation	T16	T21	NoRel	true	følger	redskaber
+Relation	T16	T24	NoRel	true	følger	mellemfristede fremskrivning
+Relation	T17	T19	NoRel	true	regering	beregningen
+Relation	T18	T14	NoRel	true	2025-plan	stand
+Relation	T18	T8	NoRel	true	2025-plan	holdbarhed
+Relation	T19	T16	NoRel	true	beregningen	følger
+Relation	T19	T17	NoRel	true	beregningen	regering
+Relation	T19	T24	NoRel	true	beregningen	mellemfristede fremskrivning
+Relation	T2	T5	NoRel	true	offentliggjorde	nulvækst
+Relation	T21	T0	NoRel	true	redskaber	finansiere
+Relation	T21	T17	NoRel	true	redskaber	regering
+Relation	T21	T7	NoRel	true	redskaber	går
+Relation	T22	T1	NoRel	true	mellemfristede fremskrivning	væksten
+Relation	T22	T15	NoRel	true	mellemfristede fremskrivning	flere
+Relation	T22	T16	NoRel	true	mellemfristede fremskrivning	følger
+Relation	T22	T6	NoRel	true	mellemfristede fremskrivning	Beregningen
+Relation	T23	T0	NoRel	true	politik	finansiere
+Relation	T23	T14	NoRel	true	politik	stand
+Relation	T23	T16	NoRel	true	politik	følger
+Relation	T24	T23	NoRel	true	mellemfristede fremskrivning	politik
+Relation	T3	T12	NoRel	true	redegjorde	uden
+Relation	T3	T2	NoRel	true	redegjorde	offentliggjorde
+Relation	T3	T22	NoRel	true	redegjorde	mellemfristede fremskrivning
+Relation	T4	T17	NoRel	true	forløb	regering
+Relation	T5	T13	NoRel	true	nulvækst	reducere
+Relation	T5	T14	NoRel	true	nulvækst	stand
+Relation	T5	T2	NoRel	true	nulvækst	offentliggjorde
+Relation	T5	T3	NoRel	true	nulvækst	redegjorde
+Relation	T6	T12	NoRel	true	Beregningen	uden
+Relation	T6	T14	NoRel	true	Beregningen	stand
+Relation	T7	T11	NoRel	true	går	merudgifter
+Relation	T7	T5	NoRel	true	går	nulvækst
+Relation	T7	T8	NoRel	true	går	holdbarhed
+Relation	T8	T20	NoRel	true	holdbarhed	forbrug
+Relation	T8	T24	NoRel	true	holdbarhed	mellemfristede fremskrivning
+Relation	T8	T5	NoRel	true	holdbarhed	nulvækst

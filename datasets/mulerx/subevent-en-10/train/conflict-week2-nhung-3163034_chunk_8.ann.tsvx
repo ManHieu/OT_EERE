@@ -1,0 +1,76 @@
+Text	One event that Ibn al - Athir describes during this failed siege was the finding of the Holy Lance by Peter Bartholomew , but framed in the context of Peter Bartholomew having buried a lance in a certain spot prior to such " discovery . "	Regarding the siege , Ibn al - Athir attributes the failure to Qawam ad - Daula Kerbuqa , who led the Muslim charge and failed for treating the Muslims " with such contempt and scorn " and prevented the Muslims from killing the Franks when given the opportunity .	Ibn al - Athir 's description of the siege ended in the overwhelming victory of Frankish armies against the Muslims .	This was but the first step to the conquest of Jerusalem by the crusaders in 1099 .	D._S. Richards translated a large portion of the text dealing with the history of the Seljuk Turks ._.
+Event	T1	describes	EVENT	30
+Event	T10	led	EVENT	333
+Event	T11	charge	EVENT	348
+Event	T12	failed	EVENT	359
+Event	T13	treating	EVENT	370
+Event	T14	prevented	EVENT	428
+Event	T15	killing	EVENT	455
+Event	T16	given	EVENT	479
+Event	T17	description	EVENT	521
+Event	T18	ended	EVENT	546
+Event	T19	victory	EVENT	572
+Event	T2	siege	EVENT	59
+Event	T20	step	EVENT	644
+Event	T21	conquest	EVENT	656
+Event	T22	translated	EVENT	720
+Event	T23	dealing	EVENT	759
+Event	T3	finding	EVENT	73
+Event	T4	framed	EVENT	126
+Event	T5	buried	EVENT	176
+Event	T6	discovery	EVENT	225
+Event	T7	siege	EVENT	253
+Event	T8	attributes	EVENT	276
+Event	T9	failure	EVENT	291
+Relation	T1	T16	NoRel	true	describes	given
+Relation	T1	T19	NoRel	true	describes	victory
+Relation	T10	T23	NoRel	true	led	dealing
+Relation	T11	T14	NoRel	true	charge	prevented
+Relation	T11	T21	NoRel	true	charge	conquest
+Relation	T11	T3	NoRel	true	charge	finding
+Relation	T11	T9	NoRel	true	charge	failure
+Relation	T12	T19	NoRel	true	failed	victory
+Relation	T12	T7	NoRel	true	failed	siege
+Relation	T13	T7	NoRel	true	treating	siege
+Relation	T15	T11	NoRel	true	killing	charge
+Relation	T15	T21	NoRel	true	killing	conquest
+Relation	T15	T7	NoRel	true	killing	siege
+Relation	T16	T1	NoRel	true	given	describes
+Relation	T16	T20	NoRel	true	given	step
+Relation	T16	T6	NoRel	true	given	discovery
+Relation	T17	T1	NoRel	true	description	describes
+Relation	T17	T11	NoRel	true	description	charge
+Relation	T17	T2	NoRel	true	description	siege
+Relation	T17	T7	NoRel	true	description	siege
+Relation	T18	T12	NoRel	true	ended	failed
+Relation	T18	T2	NoRel	true	ended	siege
+Relation	T19	T12	NoRel	true	victory	failed
+Relation	T19	T20	NoRel	true	victory	step
+Relation	T19	T5	NoRel	true	victory	buried
+Relation	T19	T8	NoRel	true	victory	attributes
+Relation	T2	T10	NoRel	true	siege	led
+Relation	T2	T16	NoRel	true	siege	given
+Relation	T2	T23	NoRel	true	siege	dealing
+Relation	T2	T6	NoRel	true	siege	discovery
+Relation	T20	T12	NoRel	true	step	failed
+Relation	T20	T7	NoRel	true	step	siege
+Relation	T21	T8	NoRel	true	conquest	attributes
+Relation	T22	T13	NoRel	true	translated	treating
+Relation	T22	T21	NoRel	true	translated	conquest
+Relation	T22	T3	NoRel	true	translated	finding
+Relation	T23	T1	NoRel	true	dealing	describes
+Relation	T23	T16	NoRel	true	dealing	given
+Relation	T3	T9	NoRel	true	finding	failure
+Relation	T4	T5	NoRel	true	framed	buried
+Relation	T5	T23	NoRel	true	buried	dealing
+Relation	T6	T10	NoRel	true	discovery	led
+Relation	T6	T11	NoRel	true	discovery	charge
+Relation	T6	T9	NoRel	true	discovery	failure
+Relation	T7	T12	NoRel	true	siege	failed
+Relation	T7	T3	NoRel	true	siege	finding
+Relation	T8	T11	NoRel	true	attributes	charge
+Relation	T8	T12	NoRel	true	attributes	failed
+Relation	T8	T13	NoRel	true	attributes	treating
+Relation	T8	T9	NoRel	true	attributes	failure
+Relation	T9	T1	NoRel	true	failure	describes
+Relation	T9	T17	NoRel	true	failure	description

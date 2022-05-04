@@ -1,0 +1,29 @@
+Text	El 18 de mayo de 2017 , un automóvil se estrelló en Times Square , Nueva York .	Una persona murió y 20 resultaron heridas .	El veterano de la armada Richard Rojas fue acusado de dos cargos de asesinato en segundo grado , 18 intentos de homicidio y 38 agresiones , a lo que se declaró inocente .	Después de ser detenido , se descubrió que Rojas había ingerido fenciclidina antes del accidente .	Cuando fue entrevistado por el NYPD , Rojas dijo que quería morir en un " suicidio por un policía " , y que había estado escuchando voces .
+Event	T0	estrelló	EVENT	40
+Event	T1	murió	EVENT	92
+Event	T10	ingerido	EVENT	350
+Event	T11	accidente	EVENT	382
+Event	T2	heridas	EVENT	114
+Event	T3	acusado	EVENT	167
+Event	T5	intentos	EVENT	224
+Event	T7	agresiones	EVENT	251
+Event	T8	detenido	EVENT	310
+Event	T9	descubrió	EVENT	324
+Event	T4	entrevistado	EVENT	405
+Relation	T9	T8	SuperSub	true	descubrió	detenido
+Relation	T8	T9	SubSuper	true	detenido	descubrió
+Relation	T1	T10	NoRel	true	murió	ingerido
+Relation	T1	T2	NoRel	true	murió	heridas
+Relation	T1	T3	NoRel	true	murió	acusado
+Relation	T1	T7	NoRel	true	murió	agresiones
+Relation	T10	T0	NoRel	true	ingerido	estrelló
+Relation	T10	T11	NoRel	true	ingerido	accidente
+Relation	T11	T0	NoRel	true	accidente	estrelló
+Relation	T11	T5	NoRel	true	accidente	intentos
+Relation	T2	T5	NoRel	true	heridas	intentos
+Relation	T3	T7	NoRel	true	acusado	agresiones
+Relation	T5	T1	NoRel	true	intentos	murió
+Relation	T5	T8	NoRel	true	intentos	detenido
+Relation	T7	T2	NoRel	true	agresiones	heridas
+Relation	T8	T1	NoRel	true	detenido	murió
+Relation	T9	T7	NoRel	true	descubrió	agresiones

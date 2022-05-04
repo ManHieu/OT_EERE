@@ -1,0 +1,39 @@
+Text	El informe preliminar , publicado el 16 de marzo , afirmaba que el avión , dirigido por el copiloto , se había desviado del centro de pista durante la aproximación final y la tripulación decidió efectuar un tercer go-around cuatro segundos antes del impacto .	El avión se balanceó a izquierda y derecha , y el ala derecha impactó a continuación en pista .	Una alarma en cabina , que se creía que se trataba de la sirena de advertencia de entrada en pérdida , sonó repetidamente durante los siete segundos previos al impacto .	No se descubrieron deficiencias en el avión o la infraestructura del aeródromo .	La investigación continúa en curso y no se han notificado nuevos descubrimientos .
+Event	T0	informe	EVENT	3
+Event	T1	publicado	EVENT	24
+Event	T2	afirmaba	EVENT	51
+Event	T3	dirigido	EVENT	75
+Event	T4	desviado	EVENT	111
+Event	T5	efectuar	EVENT	195
+Event	T6	go-around	EVENT	214
+Event	T7	impacto	EVENT	250
+Event	T8	balanceó	EVENT	272
+Event	T9	impactó	EVENT	322
+Event	T10	alarma	EVENT	360
+Event	T11	creía	EVENT	386
+Event	T15	sonó	EVENT	459
+Event	T16	impacto	EVENT	516
+Event	T17	deficiencias	EVENT	545
+Relation	T16	T15	SuperSub	true	impacto	sonó
+Relation	T15	T16	SubSuper	true	sonó	impacto
+Relation	T0	T9	NoRel	true	informe	impactó
+Relation	T1	T17	NoRel	true	publicado	deficiencias
+Relation	T11	T3	NoRel	true	creía	dirigido
+Relation	T15	T0	NoRel	true	sonó	informe
+Relation	T15	T6	NoRel	true	sonó	go-around
+Relation	T15	T7	NoRel	true	sonó	impacto
+Relation	T15	T8	NoRel	true	sonó	balanceó
+Relation	T16	T17	NoRel	true	impacto	deficiencias
+Relation	T16	T7	NoRel	true	impacto	impacto
+Relation	T17	T1	NoRel	true	deficiencias	publicado
+Relation	T2	T0	NoRel	true	afirmaba	informe
+Relation	T2	T3	NoRel	true	afirmaba	dirigido
+Relation	T2	T4	NoRel	true	afirmaba	desviado
+Relation	T4	T11	NoRel	true	desviado	creía
+Relation	T4	T8	NoRel	true	desviado	balanceó
+Relation	T4	T9	NoRel	true	desviado	impactó
+Relation	T5	T8	NoRel	true	efectuar	balanceó
+Relation	T6	T7	NoRel	true	go-around	impacto
+Relation	T7	T5	NoRel	true	impacto	efectuar
+Relation	T8	T2	NoRel	true	balanceó	afirmaba
+Relation	T9	T0	NoRel	true	impactó	informe

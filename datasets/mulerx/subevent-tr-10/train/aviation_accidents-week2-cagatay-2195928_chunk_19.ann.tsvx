@@ -1,0 +1,32 @@
+Text	Muhalefetteki Ata Meken Sosyalist Partisi milletvekili Ömürbek Tekebayev kargo enkazında Rusça ve Kırgızca etiket basılı ürünler bulunduğunu ve bu ürünlerin açıkça Kırgızistan pazarına yönelik olduğunu söyledi .	Ayrıca katıldığı bir parlamento toplantısında bir Türkiye şirketinden mektup aldığını ; uçakta Bişkek'e gelmeden direkt olarak İstanbul'a gitmesine yetecek yakıtın bulunduğunu ve uçağın , kargoların Bişkek'te boşaltılması için geldiğini ve hükûmetin doğruları sakladığını söyledi .	Havalimanı gümrüğünün kargodan haberi olmadığı için bazı haberler kargonun kaçak olabileceğini yazdı .	27 Ocak'ta nakliye firması Global Link Logistics , Hong Kong'dan gelen bir ACT Airlines uçağının Manas Havalimanı'na varmasını beklediğini açıkladı .	Tekebayev bunun ardından havalimanında kaçakçılık veya yolsuzluk yapılıyor olabileceğini söyledi .
+Event	T0	söyledi	EVENT	202
+Event	T1	katıldığı	EVENT	219
+Event	T12	geldiğini	EVENT	439
+Event	T13	sakladığını	EVENT	472
+Event	T17	varmasını	EVENT	714
+Event	T18	beklediğini	EVENT	724
+Event	T19	kaçakçılık	EVENT	786
+Event	T2	boşaltılması	EVENT	421
+Event	T20	yolsuzluk	EVENT	802
+Event	T3	söyledi	EVENT	484
+Event	T4	yazdı	EVENT	589
+Event	T5	açıkladı	EVENT	736
+Event	T7	söyledi	EVENT	836
+Relation	T0	T13	NoRel	true	söyledi	sakladığını
+Relation	T0	T19	NoRel	true	söyledi	kaçakçılık
+Relation	T0	T20	NoRel	true	söyledi	yolsuzluk
+Relation	T1	T20	NoRel	true	katıldığı	yolsuzluk
+Relation	T1	T5	NoRel	true	katıldığı	açıkladı
+Relation	T12	T1	NoRel	true	geldiğini	katıldığı
+Relation	T12	T17	NoRel	true	geldiğini	varmasını
+Relation	T12	T20	NoRel	true	geldiğini	yolsuzluk
+Relation	T17	T20	NoRel	true	varmasını	yolsuzluk
+Relation	T18	T12	NoRel	true	beklediğini	geldiğini
+Relation	T19	T17	NoRel	true	kaçakçılık	varmasını
+Relation	T2	T12	NoRel	true	boşaltılması	geldiğini
+Relation	T2	T4	NoRel	true	boşaltılması	yazdı
+Relation	T20	T3	NoRel	true	yolsuzluk	söyledi
+Relation	T3	T5	NoRel	true	söyledi	açıkladı
+Relation	T5	T0	NoRel	true	açıkladı	söyledi
+Relation	T5	T4	NoRel	true	açıkladı	yazdı
+Relation	T7	T18	NoRel	true	söyledi	beklediğini

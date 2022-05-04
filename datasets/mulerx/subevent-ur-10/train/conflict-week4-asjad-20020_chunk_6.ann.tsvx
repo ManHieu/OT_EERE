@@ -1,0 +1,54 @@
+Text	انھوں نے کہا کہ پہلے مشرف نے کہا تھا کہ کارگل میں فوج کی بجائے مجاہدین لڑ رہے ہیں ، اس کے بعد مشرف نے تسلیم کیا کہ کارگل جنگ فوج نے لڑی ۔	کارگل کے ذریعے کشمیر کے مسئلے کو عالمی سطح پر دوبارہ اجاگر کرنے کے پرویز مشرف کے بیان پر تبصرہ کرتے ہوئے انھوں نے کہا کہ کارگل میں پاکستانی فوجیوں کی ہلاکتوں کو پاکستان نے تسلیم نہیں کیا اور ان کی لاشیں وصول کرنے سے انکار کر دیا ۔	اردو پوائنٹ	10 فروری 2008 کو نئی دہلی میں اسرائیل کے سفیر مارک سوفر نے ایک چونکا دینے والا انکشاف کرتے ہوئے بتایا کہ ان کے ملک نے 1999ء میں پاکستان کے ساتھ کارگل کی جنگ کا رخ بدلنے میں بھارت کی مدد کی تھی ۔	کشمیر میڈیا سروس کے مطابق ایک ہفت روزہ " آﺅٹ لک " کو انٹرویو میں اسرائیلی سفیر نے بتایا کہ کس طرح کارگل کے بعد دونوں ملکوں کے دفاعی تعلقات کو فروغ حاصل ہوا جب اسرائیل نے ایک نازک مرحلے پر زمینی صورت حال بدلنے میں بھارت کو بچایا ۔
+Event	T0	کہا	EVENT	9
+Event	T1	کہا	EVENT	29
+Event	T2	لڑ	EVENT	71
+Event	T3	جنگ	EVENT	121
+Event	T4	لڑی	EVENT	132
+Event	T5	بیان	EVENT	219
+Event	T6	کہا	EVENT	252
+Event	T7	ہلاکتوں	EVENT	288
+Event	T8	وصول	EVENT	341
+Event	T9	دینے	EVENT	450
+Event	T10	بتایا	EVENT	477
+Event	T11	جنگ	EVENT	534
+Event	T12	بدلنے	EVENT	544
+Event	T13	بتایا	EVENT	658
+Event	T14	ہوا	EVENT	728
+Event	T15	بدلنے	EVENT	779
+Event	T16	بچایا	EVENT	798
+Relation	T3	T4	SuperSub	true	جنگ	لڑی
+Relation	T4	T3	SubSuper	true	لڑی	جنگ
+Relation	T3	T7	SuperSub	true	جنگ	ہلاکتوں
+Relation	T7	T3	SubSuper	true	ہلاکتوں	جنگ
+Relation	T3	T8	SuperSub	true	جنگ	وصول
+Relation	T8	T3	SubSuper	true	وصول	جنگ
+Relation	T11	T4	SuperSub	true	جنگ	لڑی
+Relation	T4	T11	SubSuper	true	لڑی	جنگ
+Relation	T11	T7	SuperSub	true	جنگ	ہلاکتوں
+Relation	T7	T11	SubSuper	true	ہلاکتوں	جنگ
+Relation	T11	T8	SuperSub	true	جنگ	وصول
+Relation	T8	T11	SubSuper	true	وصول	جنگ
+Relation	T0	T15	NoRel	true	کہا	بدلنے
+Relation	T0	T2	NoRel	true	کہا	لڑ
+Relation	T1	T10	NoRel	true	کہا	بتایا
+Relation	T1	T13	NoRel	true	کہا	بتایا
+Relation	T1	T16	NoRel	true	کہا	بچایا
+Relation	T1	T7	NoRel	true	کہا	ہلاکتوں
+Relation	T10	T11	NoRel	true	بتایا	جنگ
+Relation	T10	T5	NoRel	true	بتایا	بیان
+Relation	T11	T2	NoRel	true	جنگ	لڑ
+Relation	T12	T5	NoRel	true	بدلنے	بیان
+Relation	T13	T5	NoRel	true	بتایا	بیان
+Relation	T15	T10	NoRel	true	بدلنے	بتایا
+Relation	T15	T12	NoRel	true	بدلنے	بدلنے
+Relation	T16	T12	NoRel	true	بچایا	بدلنے
+Relation	T2	T14	NoRel	true	لڑ	ہوا
+Relation	T2	T16	NoRel	true	لڑ	بچایا
+Relation	T2	T9	NoRel	true	لڑ	دینے
+Relation	T3	T2	NoRel	true	جنگ	لڑ
+Relation	T4	T7	NoRel	true	لڑی	ہلاکتوں
+Relation	T5	T11	NoRel	true	بیان	جنگ
+Relation	T5	T3	NoRel	true	بیان	جنگ
+Relation	T6	T11	NoRel	true	کہا	جنگ
+Relation	T9	T4	NoRel	true	دینے	لڑی
+Relation	T9	T5	NoRel	true	دینے	بیان

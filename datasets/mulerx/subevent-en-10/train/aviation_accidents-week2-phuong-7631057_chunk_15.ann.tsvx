@@ -1,0 +1,46 @@
+Text	On 24 October a 26 - member Soviet and Mozambican delegation travelled from Maputo to Komatipoort to join the South African team investigating the crash .	Eventually , agreement was reached for representatives of South Africa , Mozambique and the Soviet Union to jointly examine the CVR tapes under Swiss auspices in Zurich .	According to South Africa , approaches were made to both the United States National Transportation Safety Board and the British Air Accidents Investigation Branch requesting official assistance in the investigation , however both agencies were not willing to become involved on an individual basis .	Pik Botha would later state that on his recommendation , due to the mounting suspicions of South African culpability in the crash , the services of three foreign individuals were obtained , and these persons became three of the six members of the Board of Inquiry .	These individuals were : Frank Borman , an aeronautical engineer , former United States test pilot , astronaut and CEO of Eastern Air Lines , Geoffrey Wilkinson , former head of the British Department for Transport 's Air Accidents Investigation Branch , and Sir Edward Eveleigh , former Lord Justice of Appeal and member of the British Privy Council .
+Event	T0	travelled	EVENT	61
+Event	T1	investigating	EVENT	129
+Event	T10	state	EVENT	648
+Event	T11	recommendation	EVENT	666
+Event	T12	suspicions	EVENT	703
+Event	T13	crash	EVENT	750
+Event	T14	obtained	EVENT	805
+Event	T15	became	EVENT	834
+Event	T16	join	EVENT	101
+Event	T2	crash	EVENT	147
+Event	T3	reached	EVENT	182
+Event	T4	examine	EVENT	271
+Event	T5	approaches	EVENT	354
+Event	T6	made	EVENT	370
+Event	T7	requesting	EVENT	489
+Event	T8	assistance	EVENT	509
+Event	T9	investigation	EVENT	527
+Relation	T3	T4	SuperSub	true	reached	examine
+Relation	T4	T3	SubSuper	true	examine	reached
+Relation	T0	T10	NoRel	true	travelled	state
+Relation	T11	T10	NoRel	true	recommendation	state
+Relation	T12	T0	NoRel	true	suspicions	travelled
+Relation	T12	T13	NoRel	true	suspicions	crash
+Relation	T12	T7	NoRel	true	suspicions	requesting
+Relation	T13	T14	NoRel	true	crash	obtained
+Relation	T13	T16	NoRel	true	crash	join
+Relation	T14	T0	NoRel	true	obtained	travelled
+Relation	T14	T1	NoRel	true	obtained	investigating
+Relation	T15	T0	NoRel	true	became	travelled
+Relation	T15	T11	NoRel	true	became	recommendation
+Relation	T16	T3	NoRel	true	join	reached
+Relation	T2	T5	NoRel	true	crash	approaches
+Relation	T2	T6	NoRel	true	crash	made
+Relation	T3	T10	NoRel	true	reached	state
+Relation	T3	T12	NoRel	true	reached	suspicions
+Relation	T3	T14	NoRel	true	reached	obtained
+Relation	T4	T7	NoRel	true	examine	requesting
+Relation	T5	T3	NoRel	true	approaches	reached
+Relation	T5	T7	NoRel	true	approaches	requesting
+Relation	T6	T2	NoRel	true	made	crash
+Relation	T7	T9	NoRel	true	requesting	investigation
+Relation	T9	T1	NoRel	true	investigation	investigating
+Relation	T9	T10	NoRel	true	investigation	state
+Relation	T9	T12	NoRel	true	investigation	suspicions
+Relation	T9	T4	NoRel	true	investigation	examine

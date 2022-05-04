@@ -1,0 +1,25 @@
+Text	Rusya otoriteleri kazayla ilgili soruşturma başlattı .	Kazadan 10 gün sonra bir ön raporun yayınlanması bekleniyordu .	14 Eylül 2010'da yayınlanan rapor , bataryaların kendi kendine ısındığını ve ısı kaçağı olduğunu gösterdi .	Bu arıza , ; tüm elektrik sistemini , navigasyon sistemini ve radyo sistemini etkiledi .	Uçağın pistten çıkması sonucunda önemli ölçüde zarar gördü .
+Event	T1	kaçağı	EVENT	200
+Event	T2	gösterdi	EVENT	216
+Event	T3	arıza	EVENT	230
+Event	T4	etkiledi	EVENT	305
+Event	T5	çıkması	EVENT	331
+Event	T6	gördü	EVENT	369
+Event	T7	Kazadan	EVENT	55
+Event	T8	soruşturma	EVENT	33
+Event	T9	kazayla	EVENT	18
+Event	T10	yayınlanması	EVENT	91
+Event	T11	yayınlanan	EVENT	136
+Event	T12	ısındığını	EVENT	182
+Relation	T11	T2	SuperSub	true	yayınlanan	gösterdi
+Relation	T2	T11	SubSuper	true	gösterdi	yayınlanan
+Relation	T3	T12	SuperSub	true	arıza	ısındığını
+Relation	T12	T3	SubSuper	true	ısındığını	arıza
+Relation	T3	T1	SuperSub	true	arıza	kaçağı
+Relation	T1	T3	SubSuper	true	kaçağı	arıza
+Relation	T11	T5	NoRel	true	yayınlanan	çıkması
+Relation	T12	T8	NoRel	true	ısındığını	soruşturma
+Relation	T2	T8	NoRel	true	gösterdi	soruşturma
+Relation	T3	T7	NoRel	true	arıza	Kazadan
+Relation	T6	T2	NoRel	true	gördü	gösterdi
+Relation	T8	T12	NoRel	true	soruşturma	ısındığını

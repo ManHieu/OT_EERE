@@ -1,0 +1,38 @@
+Text	Şah , Nahcivan taraflarında olmasına rağmen , Osmanlı ordusunun üzerine gelmediğinden , başka çarpışma olmadı .	1617’de Kırım hanı II . Canibek Giray 40.000 kişilik süvarisi ile Gence ve Nahcivan üzerine akın düzenleyip kışı yeni serdar sadrazam Halil Paşa ile beraber Diyarbakır’da geçirdi .	1618 Eylül ayında hızlı bir yürüyüşle Erdebil ile Tebriz arasında bulunan Pul - Şikeste mevkiine gelen Osmanlı kuvvetleri , yorgunluğunu üzerinden atamadan İran ordusunun pususuna düşünce , büyük kayıplar vererek yenildi .	Toplanan savaş meclisinde geri çekilmenin çok kötü sonuç vereceği düşünülerek , ordunun Erdebil üzerine yürümesi kararlaştırıldı .	Bu durumdan endişelenip sulh teklif eden Şah Abbas’la Erdebil surları önünde yapılan görüşmeler sonunda antlaşma imzalandı .
+Event	T0	çarpışma	EVENT	94
+Event	T2	geçirdi	EVENT	283
+Event	T3	düşünce	EVENT	473
+Event	T4	yenildi	EVENT	506
+Event	T5	savaş	EVENT	525
+Event	T6	çekilmenin	EVENT	547
+Event	T7	kararlaştırıldı	EVENT	629
+Event	T8	teklif	EVENT	676
+Event	T9	görüşmeler	EVENT	732
+Event	T10	imzalandı	EVENT	760
+Event	T1	akın	EVENT	204
+Event	T11	yürüyüşle	EVENT	321
+Event	T12	gelen	EVENT	390
+Event	T13	endişelenip	EVENT	659
+Relation	T5	T7	SuperSub	true	savaş	kararlaştırıldı
+Relation	T7	T5	SubSuper	true	kararlaştırıldı	savaş
+Relation	T1	T2	NoRel	true	akın	geçirdi
+Relation	T1	T3	NoRel	true	akın	düşünce
+Relation	T1	T5	NoRel	true	akın	savaş
+Relation	T10	T7	NoRel	true	imzalandı	kararlaştırıldı
+Relation	T10	T8	NoRel	true	imzalandı	teklif
+Relation	T11	T13	NoRel	true	yürüyüşle	endişelenip
+Relation	T11	T4	NoRel	true	yürüyüşle	yenildi
+Relation	T12	T9	NoRel	true	gelen	görüşmeler
+Relation	T13	T9	NoRel	true	endişelenip	görüşmeler
+Relation	T2	T4	NoRel	true	geçirdi	yenildi
+Relation	T4	T3	NoRel	true	yenildi	düşünce
+Relation	T4	T6	NoRel	true	yenildi	çekilmenin
+Relation	T6	T7	NoRel	true	çekilmenin	kararlaştırıldı
+Relation	T6	T8	NoRel	true	çekilmenin	teklif
+Relation	T7	T1	NoRel	true	kararlaştırıldı	akın
+Relation	T7	T11	NoRel	true	kararlaştırıldı	yürüyüşle
+Relation	T7	T6	NoRel	true	kararlaştırıldı	çekilmenin
+Relation	T9	T0	NoRel	true	görüşmeler	çarpışma
+Relation	T9	T11	NoRel	true	görüşmeler	yürüyüşle
+Relation	T9	T5	NoRel	true	görüşmeler	savaş
+Relation	T9	T7	NoRel	true	görüşmeler	kararlaştırıldı

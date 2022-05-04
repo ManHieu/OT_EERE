@@ -1,0 +1,24 @@
+Text	El 23 de junio la cantidad de muertos por el choque de trenes de metro subió a nueve , incluyendo uno de los conductores , una mujer , dijo la autoridad de Tránsito del Área Metropolitana de Washington ( WMATA ) .	El gerente general del Metro John Catoe dijo que la causa del accidente era desconocida " el sistema es seguro " .	Oficiales de WMATA dijeron inicialmente que a eso de las 5:00 p._m. EDT , el primer tren esperaba que pasara otro tren	Dos o tres minutos después , por razones desconocidas el segundo tren chocó , matando al operador del segundo tren en el impacto .	Según a sobrevivientes del accidente , el segundo tren trataba de detenerse para evitar la colisión .
+Event	T0	muertos	EVENT	30
+Event	T1	choque	EVENT	45
+Event	T10	accidente	EVENT	606
+Event	T11	trataba	EVENT	634
+Event	T12	detenerse	EVENT	645
+Event	T13	colisión	EVENT	670
+Event	T4	accidente	EVENT	276
+Event	T5	esperaba	EVENT	418
+Event	T6	pasara	EVENT	431
+Event	T7	chocó	EVENT	518
+Event	T8	matando	EVENT	526
+Event	T9	impacto	EVENT	569
+Relation	T0	T6	NoRel	true	muertos	pasara
+Relation	T1	T8	NoRel	true	choque	matando
+Relation	T13	T11	NoRel	true	colisión	trataba
+Relation	T13	T4	NoRel	true	colisión	accidente
+Relation	T4	T11	NoRel	true	accidente	trataba
+Relation	T4	T5	NoRel	true	accidente	esperaba
+Relation	T5	T7	NoRel	true	esperaba	chocó
+Relation	T7	T5	NoRel	true	chocó	esperaba
+Relation	T8	T0	NoRel	true	matando	muertos
+Relation	T9	T0	NoRel	true	impacto	muertos
+Relation	T9	T5	NoRel	true	impacto	esperaba

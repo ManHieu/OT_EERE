@@ -1,0 +1,26 @@
+Text	ان کی حادثاتی کے بعد غلام اسحاق خان نگران صدر منتخب ہوئے ۔	جنرل ضیاء الحق کی موت کے حوالے سے تحقیقات کا آغا ز بھی ہوا لیکن آج تک ان کی موت کے متعلق کوئی حقیقت سامنے نہیں آ سکی ۔	طیارے میں چیرمین جوائنٹ چیف آف سٹاف کمیٹی جنرل اختر عبدالرحمن سمیت سینئر فوجی افسران سوار تھے ۔	امریکی سفیر آنرڈ رافیل اور امریکی جنرل ہربرٹ ویسم بھی حادثہ کے وقت طیارے میں موجود تھے جو ضیاالحق کے ہمراہ پلک جھپکنے میں راکھ کے ڈھیر میں تبدیل ہو گئے ۔	واشنگٹن نے تحقیقات میں پاکستانیوں کی مدد کے لیے امریکی ایئر فورس کے افسران کی ایک ٹیم روانہ کی ، لیکن دو اطراف نے مختلف نتائج اخذ کیے ۔
+Event	T0	ہوئے	EVENT	52
+Event	T1	موت	EVENT	77
+Event	T2	تحقیقات	EVENT	93
+Event	T3	ہوا	EVENT	114
+Event	T4	موت	EVENT	135
+Event	T5	حادثہ	EVENT	328
+Event	T6	جھپکنے	EVENT	385
+Event	T7	تبدیل	EVENT	413
+Event	T8	گئے	EVENT	422
+Event	T9	تحقیقات	EVENT	439
+Event	T10	کیے	EVENT	558
+Relation	T0	T3	NoRel	true	ہوئے	ہوا
+Relation	T1	T4	NoRel	true	موت	موت
+Relation	T1	T6	NoRel	true	موت	جھپکنے
+Relation	T10	T5	NoRel	true	کیے	حادثہ
+Relation	T10	T7	NoRel	true	کیے	تبدیل
+Relation	T2	T10	NoRel	true	تحقیقات	کیے
+Relation	T2	T3	NoRel	true	تحقیقات	ہوا
+Relation	T3	T4	NoRel	true	ہوا	موت
+Relation	T3	T8	NoRel	true	ہوا	گئے
+Relation	T4	T3	NoRel	true	موت	ہوا
+Relation	T5	T8	NoRel	true	حادثہ	گئے
+Relation	T6	T1	NoRel	true	جھپکنے	موت
+Relation	T6	T8	NoRel	true	جھپکنے	گئے
+Relation	T7	T5	NoRel	true	تبدیل	حادثہ

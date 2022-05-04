@@ -1,0 +1,39 @@
+Text	I dag er antallet nede på 34-37 , der med rimelig sikkerhed kan henføres til Vermeer .	Men i takt med , at antallet af malerier er mindsket , er Vermeers omdømme vokset støt , så han i dag anses som en af de vigtigste malere fra den nederlandske guldalder .	I 2004 blev _ Ung pige ved klaviatur _ solgt for 30 millioner dollars af baron Frédéric Rolins dødsbo til den amerikanske milliardær Steve Wynn .	Det var første gang siden 1921 , at et Vermeer-billede var på auktion – og det eneste tilbageværende i privat eje .	Det er ukendt , hvor Vermeer blev oplært som maler , eller hos hvem , men det antages , at han studerede i sin hjemby .
+Event	T0	mindsket	EVENT	131
+Event	T1	vokset	EVENT	162
+Event	T2	solgt	EVENT	297
+Event	T3	oplært	EVENT	554
+Event	T4	studerede	EVENT	615
+Event	T5	henføres	EVENT	64
+Event	T6	nede	EVENT	18
+Event	T7	omdømme	EVENT	154
+Event	T8	vigtigste	EVENT	208
+Event	T9	dødsbo	EVENT	353
+Event	T10	milliardær	EVENT	380
+Event	T11	auktion	EVENT	466
+Event	T12	privat	EVENT	507
+Event	T13	første	EVENT	412
+Event	T14	eneste	EVENT	483
+Relation	T0	T10	NoRel	true	mindsket	milliardær
+Relation	T0	T3	NoRel	true	mindsket	oplært
+Relation	T0	T6	NoRel	true	mindsket	nede
+Relation	T0	T9	NoRel	true	mindsket	dødsbo
+Relation	T1	T2	NoRel	true	vokset	solgt
+Relation	T1	T5	NoRel	true	vokset	henføres
+Relation	T1	T8	NoRel	true	vokset	vigtigste
+Relation	T10	T2	NoRel	true	milliardær	solgt
+Relation	T11	T12	NoRel	true	auktion	privat
+Relation	T11	T6	NoRel	true	auktion	nede
+Relation	T13	T12	NoRel	true	første	privat
+Relation	T2	T0	NoRel	true	solgt	mindsket
+Relation	T2	T6	NoRel	true	solgt	nede
+Relation	T3	T9	NoRel	true	oplært	dødsbo
+Relation	T4	T5	NoRel	true	studerede	henføres
+Relation	T5	T4	NoRel	true	henføres	studerede
+Relation	T6	T3	NoRel	true	nede	oplært
+Relation	T6	T4	NoRel	true	nede	studerede
+Relation	T6	T5	NoRel	true	nede	henføres
+Relation	T8	T11	NoRel	true	vigtigste	auktion
+Relation	T8	T9	NoRel	true	vigtigste	dødsbo
+Relation	T9	T0	NoRel	true	dødsbo	mindsket
+Relation	T9	T3	NoRel	true	dødsbo	oplært

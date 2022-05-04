@@ -1,0 +1,84 @@
+Text	With an agent and an innocent bystander dead and four more severely wounded , including two more innocent bystanders , as well as the complete escape of the Dillinger gang , the FBI came under severe criticism , with calls for director J. Edgar Hoover 's resignation and a widely circulated petition demanding Purvis ' suspension .	At the time of the Little Bohemia shootout , Nelson 's identity as a member of the Dillinger gang had been known to the FBI for two weeks .	Following the killing of Baum , Nelson became nationally notorious and was made a high - priority target of the Bureau .	The focus on him and the murdered agent served to deflect some of the intense criticism directed at Hoover and Purvis following the Little Bohemia debacle .	A day after the Little Bohemia raid , Dillinger , Hamilton , and Van Meter ran through a police roadblock near Hastings , Minnesota , drawing fire from officers there .
+Event	T0	dead	EVENT	40
+Event	T1	wounded	EVENT	68
+Event	T10	killing	EVENT	486
+Event	T11	became	EVENT	511
+Event	T12	made	EVENT	547
+Event	T13	focus	EVENT	597
+Event	T14	murdered	EVENT	618
+Event	T15	served	EVENT	633
+Event	T16	deflect	EVENT	643
+Event	T17	criticism	EVENT	671
+Event	T18	debacle	EVENT	740
+Event	T19	raid	EVENT	781
+Event	T2	escape	EVENT	143
+Event	T20	ran	EVENT	825
+Event	T21	drawing	EVENT	884
+Event	T3	criticism	EVENT	200
+Event	T4	calls	EVENT	217
+Event	T5	resignation	EVENT	255
+Event	T6	demanding	EVENT	300
+Event	T7	suspension	EVENT	319
+Event	T8	shootout	EVENT	366
+Event	T9	known	EVENT	439
+Relation	T3	T4	SuperSub	true	criticism	calls
+Relation	T4	T3	SubSuper	true	calls	criticism
+Relation	T3	T5	SuperSub	true	criticism	resignation
+Relation	T5	T3	SubSuper	true	resignation	criticism
+Relation	T3	T6	SuperSub	true	criticism	demanding
+Relation	T6	T3	SubSuper	true	demanding	criticism
+Relation	T17	T18	SuperSub	true	criticism	debacle
+Relation	T18	T17	SubSuper	true	debacle	criticism
+Relation	T19	T20	SuperSub	true	raid	ran
+Relation	T20	T19	SubSuper	true	ran	raid
+Relation	T19	T21	SuperSub	true	raid	drawing
+Relation	T21	T19	SubSuper	true	drawing	raid
+Relation	T0	T12	NoRel	true	dead	made
+Relation	T0	T7	NoRel	true	dead	suspension
+Relation	T1	T0	NoRel	true	wounded	dead
+Relation	T1	T16	NoRel	true	wounded	deflect
+Relation	T10	T1	NoRel	true	killing	wounded
+Relation	T10	T20	NoRel	true	killing	ran
+Relation	T11	T18	NoRel	true	became	debacle
+Relation	T12	T17	NoRel	true	made	criticism
+Relation	T13	T1	NoRel	true	focus	wounded
+Relation	T13	T19	NoRel	true	focus	raid
+Relation	T13	T2	NoRel	true	focus	escape
+Relation	T13	T3	NoRel	true	focus	criticism
+Relation	T14	T6	NoRel	true	murdered	demanding
+Relation	T15	T13	NoRel	true	served	focus
+Relation	T16	T12	NoRel	true	deflect	made
+Relation	T16	T15	NoRel	true	deflect	served
+Relation	T17	T13	NoRel	true	criticism	focus
+Relation	T17	T16	NoRel	true	criticism	deflect
+Relation	T17	T8	NoRel	true	criticism	shootout
+Relation	T18	T3	NoRel	true	debacle	criticism
+Relation	T19	T17	NoRel	true	raid	criticism
+Relation	T2	T10	NoRel	true	escape	killing
+Relation	T20	T1	NoRel	true	ran	wounded
+Relation	T20	T11	NoRel	true	ran	became
+Relation	T20	T5	NoRel	true	ran	resignation
+Relation	T20	T9	NoRel	true	ran	known
+Relation	T21	T0	NoRel	true	drawing	dead
+Relation	T21	T10	NoRel	true	drawing	killing
+Relation	T21	T16	NoRel	true	drawing	deflect
+Relation	T21	T17	NoRel	true	drawing	criticism
+Relation	T21	T5	NoRel	true	drawing	resignation
+Relation	T21	T6	NoRel	true	drawing	demanding
+Relation	T3	T14	NoRel	true	criticism	murdered
+Relation	T3	T8	NoRel	true	criticism	shootout
+Relation	T4	T14	NoRel	true	calls	murdered
+Relation	T4	T15	NoRel	true	calls	served
+Relation	T4	T16	NoRel	true	calls	deflect
+Relation	T4	T8	NoRel	true	calls	shootout
+Relation	T5	T12	NoRel	true	resignation	made
+Relation	T5	T19	NoRel	true	resignation	raid
+Relation	T6	T19	NoRel	true	demanding	raid
+Relation	T6	T21	NoRel	true	demanding	drawing
+Relation	T7	T0	NoRel	true	suspension	dead
+Relation	T7	T12	NoRel	true	suspension	made
+Relation	T7	T2	NoRel	true	suspension	escape
+Relation	T7	T9	NoRel	true	suspension	known
+Relation	T8	T10	NoRel	true	shootout	killing
+Relation	T8	T20	NoRel	true	shootout	ran
+Relation	T9	T17	NoRel	true	known	criticism

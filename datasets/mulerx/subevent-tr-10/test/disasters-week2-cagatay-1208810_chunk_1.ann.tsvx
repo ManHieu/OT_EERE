@@ -1,0 +1,13 @@
+Text	9.1 ila 9.3 olan büyüklüğüyle , bir sismografla kaydedilmiş olan bugüne kadarki en büyük üçüncü depremdi .	Süresi 8.3 dakika ile 10 dakika arasında değişen deprem , bugüne kadar görülmüş en uzun süreye sahipti ve tüm gezegeni 1 cm hareket ettirdi , Alaska'ya kadar depremleri tetikledi .	İçmerkezi Simeulue ile Sumatra arasındaydı .	Etkilenen ülkeler ve halklarının durumu , dünya çapında bir insani yardım kampanyasının başlamasına sebep oldu .	Tüm dünya çapından depremzedelere yardım amacıyla 14 milyar Amerikan doları ( 2004 itibarı ile ) bağış toplandı .
+Event	T0	kaydedilmiş	EVENT	48
+Event	T1	depremdi	EVENT	96
+Event	T2	deprem	EVENT	156
+Event	T3	görülmüş	EVENT	178
+Event	T5	tetikledi	EVENT	276
+Event	T6	yardım	EVENT	480
+Event	T7	toplandı	EVENT	549
+Relation	T1	T3	NoRel	true	depremdi	görülmüş
+Relation	T1	T5	NoRel	true	depremdi	tetikledi
+Relation	T2	T6	NoRel	true	deprem	yardım
+Relation	T6	T5	NoRel	true	yardım	tetikledi
+Relation	T7	T5	NoRel	true	toplandı	tetikledi

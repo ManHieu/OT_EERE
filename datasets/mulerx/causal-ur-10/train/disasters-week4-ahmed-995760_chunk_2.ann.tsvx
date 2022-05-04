@@ -1,0 +1,37 @@
+Text	اس زلزلے میں کم از کم 800 افراد ہلاک ہوئے اور صوبے میں بڑا نقصان ہوا ۔	خطے کے قریب ایک 1997ء میں 7.1 کا زلزلہ جو جنوب مشرق میں آیا ، اس میں کم از کم 60 افراد ہلاک ہوئے تھے ۔	اس زلزلے میں ایک زور کا طریقہ کار بھی تھا لیکن اندھے زور کی غلطی پر ہوا ۔	امریکی جیولوجیکل سروے کے مطابق زلزلہ افقی شگاف کے رخنے کے پھٹنے کے دوران میں آیا جو سلیمان پہاڑوں اور وسطی بروہی رینج کے نیچے فولڈ اور افقی شگافی بیلٹ کا حصہ ہے ۔	اس کے بعد 4.6 شدت کا آفٹر شاک تھا ۔
+Event	T0	زلزلے	EVENT	3
+Event	T1	ہوئے	EVENT	37
+Event	T2	ہوا	EVENT	65
+Event	T3	7.1	EVENT	97
+Event	T4	زلزلہ	EVENT	104
+Event	T5	آیا	EVENT	127
+Event	T6	ہوئے	EVENT	163
+Event	T7	زلزلے	EVENT	177
+Event	T8	ہوا	EVENT	242
+Event	T9	سروے	EVENT	265
+Event	T10	زلزلہ	EVENT	279
+Event	T11	رخنے	EVENT	298
+Event	T12	پھٹنے	EVENT	306
+Event	T13	آیا	EVENT	325
+Event	T14	شاک	EVENT	437
+Relation	T4	T6	CauseEffect	true	زلزلہ	ہوئے
+Relation	T6	T4	EffectCause	true	ہوئے	زلزلہ
+Relation	T1	T13	NoRel	true	ہوئے	آیا
+Relation	T1	T6	NoRel	true	ہوئے	ہوئے
+Relation	T10	T1	NoRel	true	زلزلہ	ہوئے
+Relation	T10	T4	NoRel	true	زلزلہ	زلزلہ
+Relation	T11	T9	NoRel	true	رخنے	سروے
+Relation	T12	T14	NoRel	true	پھٹنے	شاک
+Relation	T12	T5	NoRel	true	پھٹنے	آیا
+Relation	T13	T1	NoRel	true	آیا	ہوئے
+Relation	T14	T0	NoRel	true	شاک	زلزلے
+Relation	T14	T4	NoRel	true	شاک	زلزلہ
+Relation	T14	T7	NoRel	true	شاک	زلزلے
+Relation	T14	T8	NoRel	true	شاک	ہوا
+Relation	T14	T9	NoRel	true	شاک	سروے
+Relation	T3	T2	NoRel	true	7.1	ہوا
+Relation	T5	T14	NoRel	true	آیا	شاک
+Relation	T7	T3	NoRel	true	زلزلے	7.1
+Relation	T8	T12	NoRel	true	ہوا	پھٹنے
+Relation	T8	T3	NoRel	true	ہوا	7.1
+Relation	T9	T8	NoRel	true	سروے	ہوا

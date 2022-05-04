@@ -1,0 +1,13 @@
+Text	1979 FRANKFURT THY BÜROSU SALDIRISI , 27 Ağustos 1979 tarihinde Türk Hava Yolları'nın Frankfurt bürosuna yapılan bombalı saldırı .	Saldırıda yoldan geçmekte olan bir yaya yaralandı .	Saldırı Ermeni silahlı örgütü Ermenistan'ın Kurtuluşu için Ermeni Gizli Ordusu ( ASALA ) tarafından üstlenildi .	http : / / earsiv . sehir .	edu .
+Event	T1	saldırı	EVENT	121
+Event	T2	Saldırıda	EVENT	131
+Event	T3	yaralandı	EVENT	171
+Event	T4	Saldırı	EVENT	183
+Event	T5	üstlenildi	EVENT	283
+Event	T6	1979 FRANKFURT THY BÜROSU SALDIRISI	EVENT	0
+Relation	T6	T3	SuperSub	true	1979 FRANKFURT THY BÜROSU SALDIRISI	yaralandı
+Relation	T3	T6	SubSuper	true	yaralandı	1979 FRANKFURT THY BÜROSU SALDIRISI
+Relation	T1	T4	NoRel	true	saldırı	Saldırı
+Relation	T2	T3	NoRel	true	Saldırıda	yaralandı
+Relation	T2	T6	NoRel	true	Saldırıda	1979 FRANKFURT THY BÜROSU SALDIRISI
+Relation	T4	T3	NoRel	true	Saldırı	yaralandı

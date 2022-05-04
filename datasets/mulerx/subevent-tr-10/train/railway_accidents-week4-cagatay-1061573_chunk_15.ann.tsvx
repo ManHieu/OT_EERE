@@ -1,0 +1,36 @@
+Text	- 12 Eylül 1982 – Alman turistleri taşıyan bir otobüs , İsviçre , Zürih yakınlarındaki hemzemin geçitte bir tren ile çarpıştı , 39 kişi öldü .	Bariyerler kapatılmadı , çünkü operatör yanlış düğmeye basıyordu .	Çarpışmadan sadece iki yalcu hayatta kaldı .	- Hsinchu hemzemin geçit felaketi — 8 Mart , 1981 , bir yolcu treni ile otobüs çarpıştı , en az otuz kişi öldü ve 131 kişi yaralandı .	- Luchu hemzemin geçit felaketi — En az yirmi beş kişi öldü ve oruz iki kişi yaralandı , Aralık 1990 .
+Event	T0	çarpıştı	EVENT	117
+Event	T1	öldü	EVENT	136
+Event	T2	kapatılmadı	EVENT	154
+Event	T3	kaldı	EVENT	247
+Event	T4	felaketi	EVENT	280
+Event	T5	çarpıştı	EVENT	334
+Event	T6	öldü	EVENT	361
+Event	T7	yaralandı	EVENT	378
+Event	T8	felaketi	EVENT	413
+Event	T9	öldü	EVENT	445
+Event	T10	yaralandı	EVENT	467
+Event	T11	basıyordu	EVENT	198
+Relation	T4	T5	SuperSub	true	felaketi	çarpıştı
+Relation	T5	T4	SubSuper	true	çarpıştı	felaketi
+Relation	T4	T6	SuperSub	true	felaketi	öldü
+Relation	T6	T4	SubSuper	true	öldü	felaketi
+Relation	T4	T7	SuperSub	true	felaketi	yaralandı
+Relation	T7	T4	SubSuper	true	yaralandı	felaketi
+Relation	T8	T9	SuperSub	true	felaketi	öldü
+Relation	T9	T8	SubSuper	true	öldü	felaketi
+Relation	T8	T10	SuperSub	true	felaketi	yaralandı
+Relation	T10	T8	SubSuper	true	yaralandı	felaketi
+Relation	T0	T1	NoRel	true	çarpıştı	öldü
+Relation	T0	T5	NoRel	true	çarpıştı	çarpıştı
+Relation	T0	T7	NoRel	true	çarpıştı	yaralandı
+Relation	T1	T2	NoRel	true	öldü	kapatılmadı
+Relation	T11	T7	NoRel	true	basıyordu	yaralandı
+Relation	T2	T10	NoRel	true	kapatılmadı	yaralandı
+Relation	T2	T6	NoRel	true	kapatılmadı	öldü
+Relation	T3	T5	NoRel	true	kaldı	çarpıştı
+Relation	T4	T11	NoRel	true	felaketi	basıyordu
+Relation	T5	T0	NoRel	true	çarpıştı	çarpıştı
+Relation	T5	T6	NoRel	true	çarpıştı	öldü
+Relation	T9	T0	NoRel	true	öldü	çarpıştı
+Relation	T9	T3	NoRel	true	öldü	kaldı

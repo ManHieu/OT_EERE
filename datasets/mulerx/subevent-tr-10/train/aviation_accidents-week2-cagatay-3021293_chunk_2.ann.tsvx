@@ -1,0 +1,8 @@
+Text	Uçak , neredeyse dik , 80 °'lik bir açıyla düz bir bozkıra düştü .	Uçakta bulunan 36 kişinin tamamı öldü .	Yakıt depoları çarpmanın etkisiyle infilak etti ancak yangın çıkmadı .	Kokpitin enkazında yardımcı pilotun ve bir yolcunun cesedi bulundu .	Kaptan pilotun cesedi , kokpitte değildi .
+Event	T0	düştü	EVENT	59
+Event	T1	öldü	EVENT	100
+Event	T2	infilak	EVENT	142
+Event	T4	bulundu	EVENT	237
+Event	T6	çarpmanın	EVENT	122
+Relation	T1	T4	NoRel	true	öldü	bulundu
+Relation	T4	T1	NoRel	true	bulundu	öldü

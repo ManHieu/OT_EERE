@@ -1,0 +1,18 @@
+Text	Bu kapsamda önemli miktarda anıtı da hayata geçirdi .	Ancak , 1980'lerde Kültür Bakanlığı Güzel Sanatlar Genel Müdürlüğü devreye girdi ve _ " SEMBOLIK ŞEHITLIKLER , KAHRAMANLIK ANITLARI " _ akımı başlatarak , Gelibolu Yarımadası Tarihi Milli Parkı'nın sınırları içinde yirminin üzerinde eser ortaya çıkardı .	2005 yılında ise Gelibolu Yarımadası Tarihi Milli Parkı'nın içerisinde önemli faaliyetler gerçekleştirilerek , Tarihi Milli Park içerisinde yeni şehitlik yapıldı .	Şehitlik ve eserlerle ilgili köklü bakım ve renovatif çalışmalar yapıldı .	Tarihi Alan içerisindeki yolların bakım ve asfaltlanması gerçekleştirildi .
+Event	T0	geçirdi	EVENT	44
+Event	T1	girdi	EVENT	129
+Event	T2	çıkardı	EVENT	299
+Event	T3	yapıldı	EVENT	463
+Event	T4	bakım	EVENT	508
+Event	T6	bakım	EVENT	582
+Event	T8	başlatarak	EVENT	196
+Event	T9	faaliyetler	EVENT	387
+Event	T10	asfaltlanması	EVENT	591
+Event	T5	çalışmalar	EVENT	527
+Relation	T10	T0	NoRel	true	asfaltlanması	geçirdi
+Relation	T2	T6	NoRel	true	çıkardı	bakım
+Relation	T4	T6	NoRel	true	bakım	bakım
+Relation	T5	T3	NoRel	true	çalışmalar	yapıldı
+Relation	T5	T6	NoRel	true	çalışmalar	bakım
+Relation	T8	T3	NoRel	true	başlatarak	yapıldı
+Relation	T9	T10	NoRel	true	faaliyetler	asfaltlanması

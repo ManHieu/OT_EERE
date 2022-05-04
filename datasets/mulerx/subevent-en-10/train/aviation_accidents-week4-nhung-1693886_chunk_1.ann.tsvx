@@ -1,0 +1,48 @@
+Text	Flight 902 departed from Paris , France , at 13:39 local time on a course to Seoul , South Korea .	The plane 's only scheduled stop was in Anchorage , Alaska , US , where it would refuel and proceed to Seoul , avoiding Soviet airspace .	It was commanded by Captain Kim Chang - kyu , with Co-pilot Cha Soon - do and Flight Engineer Lee Khun -shik making up the other flight deck crew .	The aircraft made regular radio check - ins as it flew northwest , the last of which , five hours and twenty one minutes after take off , placed it near CFS Alert on Ellesmere Island .	The aircraft 's flight path took it almost directly over the North Magnetic Pole , causing large errors in the aircraft 's magnetic compass - based navigation systems .
+Event	T0	Flight	EVENT	0
+Event	T1	departed	EVENT	11
+Event	T2	course	EVENT	67
+Event	T3	stop	EVENT	127
+Event	T4	refuel	EVENT	180
+Event	T5	proceed	EVENT	191
+Event	T6	avoiding	EVENT	210
+Event	T7	commanded	EVENT	244
+Event	T8	made	EVENT	398
+Event	T9	flew	EVENT	435
+Event	T10	causing	EVENT	653
+Event	T11	errors	EVENT	667
+Event	T12	take off	EVENT	512
+Event	T13	placed	EVENT	523
+Event	T14	took	EVENT	598
+Relation	T4	T5	SuperSub	true	refuel	proceed
+Relation	T5	T4	SubSuper	true	proceed	refuel
+Relation	T12	T13	SuperSub	true	take off	placed
+Relation	T13	T12	SubSuper	true	placed	take off
+Relation	T0	T3	NoRel	true	Flight	stop
+Relation	T1	T11	NoRel	true	departed	errors
+Relation	T1	T3	NoRel	true	departed	stop
+Relation	T10	T11	NoRel	true	causing	errors
+Relation	T10	T12	NoRel	true	causing	take off
+Relation	T10	T13	NoRel	true	causing	placed
+Relation	T10	T3	NoRel	true	causing	stop
+Relation	T10	T4	NoRel	true	causing	refuel
+Relation	T11	T14	NoRel	true	errors	took
+Relation	T12	T14	NoRel	true	take off	took
+Relation	T14	T11	NoRel	true	took	errors
+Relation	T2	T13	NoRel	true	course	placed
+Relation	T3	T0	NoRel	true	stop	Flight
+Relation	T3	T12	NoRel	true	stop	take off
+Relation	T3	T5	NoRel	true	stop	proceed
+Relation	T4	T3	NoRel	true	refuel	stop
+Relation	T5	T6	NoRel	true	proceed	avoiding
+Relation	T5	T8	NoRel	true	proceed	made
+Relation	T6	T12	NoRel	true	avoiding	take off
+Relation	T6	T13	NoRel	true	avoiding	placed
+Relation	T6	T2	NoRel	true	avoiding	course
+Relation	T7	T12	NoRel	true	commanded	take off
+Relation	T7	T2	NoRel	true	commanded	course
+Relation	T7	T8	NoRel	true	commanded	made
+Relation	T8	T7	NoRel	true	made	commanded
+Relation	T9	T11	NoRel	true	flew	errors
+Relation	T9	T2	NoRel	true	flew	course
+Relation	T9	T7	NoRel	true	flew	commanded

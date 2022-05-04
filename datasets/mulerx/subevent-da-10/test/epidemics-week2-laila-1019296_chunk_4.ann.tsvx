@@ -1,0 +1,43 @@
+Text	Han havde også afsat betydelige summer til at bygge store kirker som Hagia Sofia .	Mens imperiet skulle finansiere disse udgifter , kom pesten og fik katastrofale følger for skatteindkrævingen , selv om kejseren hurtigt fik gennemført en ny lovgivning for mere effektivt at behandle de mængder med arvetvister , som kom i kølvandet på de store antal af døde .	Efterhånden , som sygdommen spredte sig videre til andre havnebyer rundt om Middelhavet , førte den til , at de krigførende gotere fik nye muligheder i deres strid med Konstantinopel .	Pesten svækkede Det byzantinske rige ved et kritisk tidspunkt , da Justinians hær havde erobret næsten hele Italien og den vestlige middelhavskyst .	Denne generobring kunne have ført til , at det svækkede Vestromerske rige ville være blevet forenet med det Østromerske rige under fælles_kejser for første gang siden år 395 .
+Event	T0	bygge	EVENT	46
+Event	T1	finansiere	EVENT	104
+Event	T10	førte	EVENT	450
+Event	T11	strid	EVENT	518
+Event	T12	svækkede	EVENT	552
+Event	T13	erobret	EVENT	633
+Event	T14	generobring	EVENT	700
+Event	T15	ført	EVENT	723
+Event	T16	forenet	EVENT	786
+Event	T17	afsat	EVENT	15
+Event	T2	udgifter	EVENT	121
+Event	T3	pesten	EVENT	136
+Event	T6	behandle	EVENT	274
+Event	T7	kom	EVENT	316
+Event	T8	kølvandet	EVENT	322
+Event	T9	døde	EVENT	353
+Relation	T17	T0	SuperSub	true	afsat	bygge
+Relation	T0	T17	SubSuper	true	bygge	afsat
+Relation	T9	T6	SuperSub	true	døde	behandle
+Relation	T6	T9	SubSuper	true	behandle	døde
+Relation	T10	T11	SuperSub	true	førte	strid
+Relation	T11	T10	SubSuper	true	strid	førte
+Relation	T13	T12	SuperSub	true	erobret	svækkede
+Relation	T12	T13	SubSuper	true	svækkede	erobret
+Relation	T17	T1	SuperSub	true	afsat	finansiere
+Relation	T1	T17	SubSuper	true	finansiere	afsat
+Relation	T0	T15	NoRel	true	bygge	ført
+Relation	T0	T6	NoRel	true	bygge	behandle
+Relation	T10	T0	NoRel	true	førte	bygge
+Relation	T10	T14	NoRel	true	førte	generobring
+Relation	T12	T16	NoRel	true	svækkede	forenet
+Relation	T14	T1	NoRel	true	generobring	finansiere
+Relation	T15	T10	NoRel	true	ført	førte
+Relation	T16	T13	NoRel	true	forenet	erobret
+Relation	T16	T8	NoRel	true	forenet	kølvandet
+Relation	T17	T16	NoRel	true	afsat	forenet
+Relation	T2	T8	NoRel	true	udgifter	kølvandet
+Relation	T3	T7	NoRel	true	pesten	kom
+Relation	T6	T12	NoRel	true	behandle	svækkede
+Relation	T6	T2	NoRel	true	behandle	udgifter
+Relation	T6	T3	NoRel	true	behandle	pesten
+Relation	T7	T3	NoRel	true	kom	pesten

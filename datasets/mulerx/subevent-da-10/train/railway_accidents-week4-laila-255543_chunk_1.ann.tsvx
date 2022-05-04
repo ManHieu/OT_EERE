@@ -1,0 +1,53 @@
+Text	På vej tilbage til arbejdsstedet krydsede de sporene , men banemontøren , der ledede arbejdsholdet , og banemesteren standsede op i sporet , på trods af , at i hvert fald banemontøren må have vidst , at der ventedes tog , inden arbejdet kunne genoptages .	De har næppe hørt toget komme , idet det kørte med styrevognen forrest , således at der var 4 vogne mellem den og det skubbende lokomotiv .	Jernbanetilsynets undersøgelser påviste ikke overtrædelse af sikkerhedsbestemmelser eller mangler ved instruktionen for færdsel i eller ved trafikeret spor , der kunne være årsag til ulykken .	Men undersøgelserne påviste , at bestemmelserne om sikring af arbejdssteder for såvel medarbejdere som for togene , var forældede og usammenhængende .	Især denne ulykke førte til at instruktionen om sikring af arbejdssteder blev ændret grundlæggende i 2003 .
+Event	T0	krydsede	EVENT	33
+Event	T1	ledede	EVENT	78
+Event	T2	tog	EVENT	216
+Event	T3	genoptages	EVENT	243
+Event	T4	hørt	EVENT	269
+Event	T5	komme	EVENT	280
+Event	T6	kørte	EVENT	297
+Event	T7	påviste	EVENT	428
+Event	T8	overtrædelse	EVENT	441
+Event	T9	mangler	EVENT	486
+Event	T10	færdsel	EVENT	516
+Event	T11	ulykken	EVENT	579
+Event	T12	påviste	EVENT	609
+Event	T13	førte	EVENT	758
+Event	T14	instruktionen	EVENT	771
+Event	T15	ændret	EVENT	818
+Event	T16	standsede	EVENT	117
+Event	T17	vidst	EVENT	192
+Event	T18	undersøgelserne	EVENT	593
+Event	T19	ulykke	EVENT	751
+Relation	T1	T19	NoRel	true	ledede	ulykke
+Relation	T1	T5	NoRel	true	ledede	komme
+Relation	T1	T8	NoRel	true	ledede	overtrædelse
+Relation	T10	T18	NoRel	true	færdsel	undersøgelserne
+Relation	T10	T4	NoRel	true	færdsel	hørt
+Relation	T10	T5	NoRel	true	færdsel	komme
+Relation	T11	T12	NoRel	true	ulykken	påviste
+Relation	T11	T16	NoRel	true	ulykken	standsede
+Relation	T11	T19	NoRel	true	ulykken	ulykke
+Relation	T12	T17	NoRel	true	påviste	vidst
+Relation	T12	T3	NoRel	true	påviste	genoptages
+Relation	T13	T3	NoRel	true	førte	genoptages
+Relation	T15	T10	NoRel	true	ændret	færdsel
+Relation	T15	T12	NoRel	true	ændret	påviste
+Relation	T15	T13	NoRel	true	ændret	førte
+Relation	T15	T7	NoRel	true	ændret	påviste
+Relation	T16	T13	NoRel	true	standsede	førte
+Relation	T17	T1	NoRel	true	vidst	ledede
+Relation	T17	T3	NoRel	true	vidst	genoptages
+Relation	T17	T4	NoRel	true	vidst	hørt
+Relation	T19	T5	NoRel	true	ulykke	komme
+Relation	T3	T12	NoRel	true	genoptages	påviste
+Relation	T3	T13	NoRel	true	genoptages	førte
+Relation	T3	T4	NoRel	true	genoptages	hørt
+Relation	T4	T15	NoRel	true	hørt	ændret
+Relation	T5	T12	NoRel	true	komme	påviste
+Relation	T6	T13	NoRel	true	kørte	førte
+Relation	T6	T3	NoRel	true	kørte	genoptages
+Relation	T7	T12	NoRel	true	påviste	påviste
+Relation	T7	T5	NoRel	true	påviste	komme
+Relation	T9	T0	NoRel	true	mangler	krydsede
+Relation	T9	T16	NoRel	true	mangler	standsede

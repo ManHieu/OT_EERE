@@ -1,0 +1,50 @@
+Text	Prior to take off they had not factored in heat and humidity to the airplane performance , and so were now too heavy to maintain altitude on one engine .	In trying to maintain altitude , they slowed to 100 MPH , which made them sink even faster .	They ditched 8 miles from the southern tip of Guam .	The pilot failed to use flaps to lower his speed during landing , and landed with a 15 MPH tailwind , contributing to a hard landing , the aircraft nose tearing off , and two fatalities .	22 September : A U.S. Navy Lockheed P - 3B Orion , BuNo__152757_ of VP - 8 on flight out of Naval Air Station Brunswick , Maine , at 1205 hrs. en route to Trenton , Ontario for display at an air show , explodes in the air eight - ten minutes later and comes down over Poland , Maine .
+Event	T0	trying	EVENT	157
+Event	T1	slowed	EVENT	192
+Event	T2	made	EVENT	218
+Event	T3	sink	EVENT	228
+Event	T4	ditched	EVENT	252
+Event	T5	failed	EVENT	310
+Event	T6	flaps	EVENT	324
+Event	T7	lower	EVENT	333
+Event	T8	landing	EVENT	356
+Event	T9	landed	EVENT	370
+Event	T10	landing	EVENT	425
+Event	T11	fatalities	EVENT	475
+Event	T12	display	EVENT	665
+Event	T13	show	EVENT	683
+Event	T14	take off	EVENT	9
+Event	T15	maintain	EVENT	120
+Event	T16	tearing off	EVENT	453
+Event	T17	explodes	EVENT	690
+Event	T18	comes	EVENT	740
+Relation	T12	T17	SuperSub	true	display	explodes
+Relation	T17	T12	SubSuper	true	explodes	display
+Relation	T17	T18	SuperSub	true	explodes	comes
+Relation	T18	T17	SubSuper	true	comes	explodes
+Relation	T0	T18	NoRel	true	trying	comes
+Relation	T0	T7	NoRel	true	trying	lower
+Relation	T1	T10	NoRel	true	slowed	landing
+Relation	T1	T7	NoRel	true	slowed	lower
+Relation	T10	T15	NoRel	true	landing	maintain
+Relation	T11	T0	NoRel	true	fatalities	trying
+Relation	T11	T15	NoRel	true	fatalities	maintain
+Relation	T12	T3	NoRel	true	display	sink
+Relation	T15	T11	NoRel	true	maintain	fatalities
+Relation	T16	T10	NoRel	true	tearing off	landing
+Relation	T16	T8	NoRel	true	tearing off	landing
+Relation	T17	T7	NoRel	true	explodes	lower
+Relation	T18	T14	NoRel	true	comes	take off
+Relation	T18	T7	NoRel	true	comes	lower
+Relation	T2	T12	NoRel	true	made	display
+Relation	T3	T16	NoRel	true	sink	tearing off
+Relation	T3	T8	NoRel	true	sink	landing
+Relation	T5	T11	NoRel	true	failed	fatalities
+Relation	T5	T8	NoRel	true	failed	landing
+Relation	T6	T13	NoRel	true	flaps	show
+Relation	T6	T2	NoRel	true	flaps	made
+Relation	T7	T14	NoRel	true	lower	take off
+Relation	T7	T15	NoRel	true	lower	maintain
+Relation	T7	T4	NoRel	true	lower	ditched
+Relation	T9	T0	NoRel	true	landed	trying
+Relation	T9	T12	NoRel	true	landed	display

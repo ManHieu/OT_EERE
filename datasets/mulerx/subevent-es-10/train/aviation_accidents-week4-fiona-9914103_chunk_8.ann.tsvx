@@ -1,0 +1,43 @@
+Text	La aerolínea estatal de Bielorrusia , Belavia , podría tener prohibido aterrizar en los aeropuertos de la Unión Europea .	- La OACI expresó su profunda preocupación por « el aparente aterrizaje forzoso » del vuelo .	Un tuit de la OACI afirmó que el aterrizaje forzoso podría infringir el Convenio de Chicago sobre Aviación Civil Internacional .	- El secretario general de la OTAN , Jens Stoltenberg , tuiteó que la puesta a tierra del vuelo constituye un « incidente grave y peligroso que requiere una investigación internacional » .	- La presidenta de la Comisión Europea , Ursula von der Leyen , describió el incidente como « absolutamente inaceptable » y afirmó que « cualquier violación de las normas internacionales de transporte aéreo debe tener consecuencias » .
+Event	T0	aterrizar	EVENT	71
+Event	T1	expresó	EVENT	132
+Event	T2	preocupación	EVENT	152
+Event	T3	aterrizaje	EVENT	183
+Event	T4	vuelo	EVENT	208
+Event	T5	tuit	EVENT	219
+Event	T6	afirmó	EVENT	235
+Event	T7	aterrizaje	EVENT	249
+Event	T8	infringir	EVENT	275
+Event	T9	tuiteó	EVENT	401
+Event	T10	constituye	EVENT	441
+Event	T11	investigación	EVENT	502
+Event	T12	incidente	EVENT	611
+Event	T13	afirmó	EVENT	658
+Event	T14	violación	EVENT	681
+Relation	T3	T2	SuperSub	true	aterrizaje	preocupación
+Relation	T2	T3	SubSuper	true	preocupación	aterrizaje
+Relation	T0	T11	NoRel	true	aterrizar	investigación
+Relation	T0	T7	NoRel	true	aterrizar	aterrizaje
+Relation	T0	T9	NoRel	true	aterrizar	tuiteó
+Relation	T1	T3	NoRel	true	expresó	aterrizaje
+Relation	T11	T1	NoRel	true	investigación	expresó
+Relation	T11	T12	NoRel	true	investigación	incidente
+Relation	T12	T5	NoRel	true	incidente	tuit
+Relation	T13	T4	NoRel	true	afirmó	vuelo
+Relation	T13	T5	NoRel	true	afirmó	tuit
+Relation	T14	T1	NoRel	true	violación	expresó
+Relation	T14	T11	NoRel	true	violación	investigación
+Relation	T14	T6	NoRel	true	violación	afirmó
+Relation	T2	T14	NoRel	true	preocupación	violación
+Relation	T2	T5	NoRel	true	preocupación	tuit
+Relation	T3	T10	NoRel	true	aterrizaje	constituye
+Relation	T3	T14	NoRel	true	aterrizaje	violación
+Relation	T4	T10	NoRel	true	vuelo	constituye
+Relation	T5	T2	NoRel	true	tuit	preocupación
+Relation	T6	T14	NoRel	true	afirmó	violación
+Relation	T6	T4	NoRel	true	afirmó	vuelo
+Relation	T6	T7	NoRel	true	afirmó	aterrizaje
+Relation	T7	T12	NoRel	true	aterrizaje	incidente
+Relation	T8	T13	NoRel	true	infringir	afirmó
+Relation	T8	T6	NoRel	true	infringir	afirmó
+Relation	T9	T6	NoRel	true	tuiteó	afirmó

@@ -1,0 +1,91 @@
+Text	thumb| 350 px |En falanksformation Xerxes sendte mederne først , formentlig på grund af forventningerne om deres heltemod , eller som Diodorus Siculus har antydet , fordi han ønskede , at de skulle bære hovedbyrden af angrebet ( mederne var få år før blevet underlagt perserne ) .	Mederne , som skulle tage grækerne til fange , befandt sig nu i et frontalangreb .	Grækerne havde taget opstilling på begge sider af den genopbyggede fønikiske mur .	Detaljer om taktikken er uklare , grækerne var med stor sandsynlighed opstillet i en falanksformation , der skabte en væg af overlappende skjolde , hvor spyd stak ud , og som strakte sig tværs over hele passet .	Herodot fortæller , at enhederne fra hver stat stod samlet hver for sig .
+Event	T0	falanksformation	EVENT	18
+Event	T1	sendte	EVENT	42
+Event	T2	antydet	EVENT	155
+Event	T3	ønskede	EVENT	175
+Event	T4	bære	EVENT	198
+Event	T5	angrebet	EVENT	218
+Event	T6	underlagt	EVENT	258
+Event	T7	tage	EVENT	302
+Event	T8	befandt	EVENT	328
+Event	T9	frontalangreb	EVENT	348
+Event	T10	opstilling	EVENT	385
+Event	T11	opstillet	EVENT	517
+Event	T12	skabte	EVENT	555
+Event	T13	strakte	EVENT	622
+Event	T14	passet	EVENT	650
+Event	T15	fortæller	EVENT	667
+Event	T16	heltemod	EVENT	113
+Event	T17	genopbyggede	EVENT	418
+Event	T18	taktikken	EVENT	459
+Event	T19	falanksformation	EVENT	532
+Event	T20	stak ud	EVENT	605
+Event	T21	overlappende	EVENT	572
+Event	T22	stod	EVENT	706
+Relation	T6	T4	SuperSub	true	underlagt	bære
+Relation	T4	T6	SubSuper	true	bære	underlagt
+Relation	T19	T21	SuperSub	true	falanksformation	overlappende
+Relation	T21	T19	SubSuper	true	overlappende	falanksformation
+Relation	T19	T20	SuperSub	true	falanksformation	stak ud
+Relation	T20	T19	SubSuper	true	stak ud	falanksformation
+Relation	T19	T13	SuperSub	true	falanksformation	strakte
+Relation	T13	T19	SubSuper	true	strakte	falanksformation
+Relation	T0	T10	NoRel	true	falanksformation	opstilling
+Relation	T0	T12	NoRel	true	falanksformation	skabte
+Relation	T0	T21	NoRel	true	falanksformation	overlappende
+Relation	T1	T10	NoRel	true	sendte	opstilling
+Relation	T1	T21	NoRel	true	sendte	overlappende
+Relation	T1	T3	NoRel	true	sendte	ønskede
+Relation	T1	T6	NoRel	true	sendte	underlagt
+Relation	T10	T1	NoRel	true	opstilling	sendte
+Relation	T11	T3	NoRel	true	opstillet	ønskede
+Relation	T12	T0	NoRel	true	skabte	falanksformation
+Relation	T12	T19	NoRel	true	skabte	falanksformation
+Relation	T12	T22	NoRel	true	skabte	stod
+Relation	T12	T4	NoRel	true	skabte	bære
+Relation	T12	T5	NoRel	true	skabte	angrebet
+Relation	T13	T11	NoRel	true	strakte	opstillet
+Relation	T13	T18	NoRel	true	strakte	taktikken
+Relation	T13	T3	NoRel	true	strakte	ønskede
+Relation	T14	T10	NoRel	true	passet	opstilling
+Relation	T14	T11	NoRel	true	passet	opstillet
+Relation	T14	T20	NoRel	true	passet	stak ud
+Relation	T14	T5	NoRel	true	passet	angrebet
+Relation	T16	T10	NoRel	true	heltemod	opstilling
+Relation	T17	T10	NoRel	true	genopbyggede	opstilling
+Relation	T18	T13	NoRel	true	taktikken	strakte
+Relation	T18	T15	NoRel	true	taktikken	fortæller
+Relation	T18	T21	NoRel	true	taktikken	overlappende
+Relation	T19	T11	NoRel	true	falanksformation	opstillet
+Relation	T19	T12	NoRel	true	falanksformation	skabte
+Relation	T2	T16	NoRel	true	antydet	heltemod
+Relation	T2	T6	NoRel	true	antydet	underlagt
+Relation	T20	T1	NoRel	true	stak ud	sendte
+Relation	T20	T13	NoRel	true	stak ud	strakte
+Relation	T20	T5	NoRel	true	stak ud	angrebet
+Relation	T20	T7	NoRel	true	stak ud	tage
+Relation	T21	T10	NoRel	true	overlappende	opstilling
+Relation	T21	T16	NoRel	true	overlappende	heltemod
+Relation	T21	T22	NoRel	true	overlappende	stod
+Relation	T22	T12	NoRel	true	stod	skabte
+Relation	T22	T13	NoRel	true	stod	strakte
+Relation	T22	T18	NoRel	true	stod	taktikken
+Relation	T22	T3	NoRel	true	stod	ønskede
+Relation	T3	T0	NoRel	true	ønskede	falanksformation
+Relation	T3	T1	NoRel	true	ønskede	sendte
+Relation	T3	T12	NoRel	true	ønskede	skabte
+Relation	T3	T13	NoRel	true	ønskede	strakte
+Relation	T3	T15	NoRel	true	ønskede	fortæller
+Relation	T3	T21	NoRel	true	ønskede	overlappende
+Relation	T3	T8	NoRel	true	ønskede	befandt
+Relation	T4	T16	NoRel	true	bære	heltemod
+Relation	T4	T17	NoRel	true	bære	genopbyggede
+Relation	T5	T1	NoRel	true	angrebet	sendte
+Relation	T6	T11	NoRel	true	underlagt	opstillet
+Relation	T6	T19	NoRel	true	underlagt	falanksformation
+Relation	T7	T11	NoRel	true	tage	opstillet
+Relation	T7	T19	NoRel	true	tage	falanksformation
+Relation	T8	T2	NoRel	true	befandt	antydet
+Relation	T8	T21	NoRel	true	befandt	overlappende
+Relation	T9	T12	NoRel	true	frontalangreb	skabte
+Relation	T9	T20	NoRel	true	frontalangreb	stak ud

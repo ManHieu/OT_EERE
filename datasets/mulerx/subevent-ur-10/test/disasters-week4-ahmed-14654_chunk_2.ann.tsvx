@@ -1,0 +1,33 @@
+Text	20 جنوری 1986ء کو ایک تجویز کو قبول کر لیا اور 12 فروری 1986ء کو کینٹربری ، کینٹ کے مقام پر دونوں حکومتوں کے درمیان معاہدے پر دستخط ہوئے ۔	تصغیر | ملکہ ایلزبتھ دوم اور فرانسیسی صدر فرانکو متراں سرنگ کا افتتاح کررہے ہیں سرنگ کھودنے کا کام 15 ہزار کارکنوں نے 7 سال سے زائد عرصے تک کیا جس کے لیے دونوں ممالک نے 11 خصوصی مشینیں تیار کی تھیں جنہیں TBM ( Tunnel boring machines ) کا نام دیا گیا تھا ۔	سرنگ کی تعمیر کے کام کا آغاز 1 دسمبر 1987ء کو دونوں ممالک کے ساحلوں سے شروع ہوا اور 1 دسمبر 1990ء کو دونوں ممالک کی ٹی بی ایمز سمندر کی تہ سے 40 میٹر نیچے ایک دوسرے سے آملیں ۔	22 مئی 1991ء کو دونوں اطراف کی پٹریوں کو جوڑ دیا گیا ۔	سرنگ کا باقاعدہ افتتاح 6 مئی 1994ء کو برطانیہ کی ملکہ ایلزبتھ دوم اور فرانس کے صدر فرانکو متراں نے کیا ۔
+Event	T0	قبول	EVENT	31
+Event	T1	معاہدے	EVENT	116
+Event	T3	کررہے	EVENT	209
+Event	T4	کھودنے	EVENT	224
+Event	T5	کیا	EVENT	279
+Event	T6	تعمیر	EVENT	403
+Event	T7	کام	EVENT	412
+Event	T8	آغاز	EVENT	419
+Event	T9	ہوا	EVENT	471
+Event	T10	سرنگ	EVENT	626
+Event	T11	افتتاح	EVENT	642
+Event	T12	دستخط	EVENT	126
+Relation	T1	T12	SuperSub	true	معاہدے	دستخط
+Relation	T12	T1	SubSuper	true	دستخط	معاہدے
+Relation	T0	T1	NoRel	true	قبول	معاہدے
+Relation	T0	T10	NoRel	true	قبول	سرنگ
+Relation	T0	T4	NoRel	true	قبول	کھودنے
+Relation	T0	T7	NoRel	true	قبول	کام
+Relation	T0	T9	NoRel	true	قبول	ہوا
+Relation	T1	T10	NoRel	true	معاہدے	سرنگ
+Relation	T1	T7	NoRel	true	معاہدے	کام
+Relation	T1	T8	NoRel	true	معاہدے	آغاز
+Relation	T10	T4	NoRel	true	سرنگ	کھودنے
+Relation	T10	T6	NoRel	true	سرنگ	تعمیر
+Relation	T10	T8	NoRel	true	سرنگ	آغاز
+Relation	T11	T8	NoRel	true	افتتاح	آغاز
+Relation	T5	T11	NoRel	true	کیا	افتتاح
+Relation	T6	T9	NoRel	true	تعمیر	ہوا
+Relation	T7	T3	NoRel	true	کام	کررہے
+Relation	T8	T1	NoRel	true	آغاز	معاہدے
+Relation	T8	T12	NoRel	true	آغاز	دستخط
+Relation	T9	T10	NoRel	true	ہوا	سرنگ

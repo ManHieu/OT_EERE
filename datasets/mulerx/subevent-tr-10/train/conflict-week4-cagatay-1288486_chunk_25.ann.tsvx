@@ -1,0 +1,57 @@
+Text	24 Aralık’ta SPD hükûmeti saldırı emri verdi .	Bu durumu öğrenen işçiler donanma erleriyle dayanışmak için sarayın önüne geldiler bu dayanışma sayesinde saldırıyı gerçekleştiren askerlerin silahlarına el koyuldu ve subayların rütbeleri söküldü ve bu şekilde karşıdevrim durdurulmuş oldu .	Bu olay SPD’nin kitlelerle arasının açılmasını sağladı .	Tabandan gelen baskılara dayanamayan USPD konseyden çekilmek zorunda kaldı .	Ve bu şekilde Almanya’nın en yüksek iki siyasal kurumu olan Halk Temsilcileri Konseyi ve İşçi ve Asker Konseyleri Merkez Konseyi sadece SPD üyelerinden oluşuyordu .
+Event	T0	verdi	EVENT	39
+Event	T1	dayanışma	EVENT	133
+Event	T2	söküldü	EVENT	236
+Event	T3	durdurulmuş	EVENT	270
+Event	T4	olay	EVENT	292
+Event	T6	çekilmek	EVENT	398
+Event	T7	kaldı	EVENT	415
+Event	T8	öğrenen	EVENT	57
+Event	T9	dayanışmak	EVENT	91
+Event	T10	geldiler	EVENT	121
+Event	T11	saldırıyı	EVENT	153
+Event	T12	el koyuldu	EVENT	201
+Event	T13	karşıdevrim	EVENT	258
+Event	T5	açılmasını	EVENT	325
+Event	T14	baskılara	EVENT	361
+Relation	T13	T0	SuperSub	true	karşıdevrim	verdi
+Relation	T0	T13	SubSuper	true	verdi	karşıdevrim
+Relation	T3	T9	SuperSub	true	durdurulmuş	dayanışmak
+Relation	T9	T3	SubSuper	true	dayanışmak	durdurulmuş
+Relation	T3	T10	SuperSub	true	durdurulmuş	geldiler
+Relation	T10	T3	SubSuper	true	geldiler	durdurulmuş
+Relation	T3	T1	SuperSub	true	durdurulmuş	dayanışma
+Relation	T1	T3	SubSuper	true	dayanışma	durdurulmuş
+Relation	T3	T12	SuperSub	true	durdurulmuş	el koyuldu
+Relation	T12	T3	SubSuper	true	el koyuldu	durdurulmuş
+Relation	T13	T11	SuperSub	true	karşıdevrim	saldırıyı
+Relation	T11	T13	SubSuper	true	saldırıyı	karşıdevrim
+Relation	T3	T2	SuperSub	true	durdurulmuş	söküldü
+Relation	T2	T3	SubSuper	true	söküldü	durdurulmuş
+Relation	T3	T14	SuperSub	true	durdurulmuş	baskılara
+Relation	T14	T3	SubSuper	true	baskılara	durdurulmuş
+Relation	T0	T1	NoRel	true	verdi	dayanışma
+Relation	T0	T14	NoRel	true	verdi	baskılara
+Relation	T0	T5	NoRel	true	verdi	açılmasını
+Relation	T0	T9	NoRel	true	verdi	dayanışmak
+Relation	T1	T9	NoRel	true	dayanışma	dayanışmak
+Relation	T10	T1	NoRel	true	geldiler	dayanışma
+Relation	T10	T4	NoRel	true	geldiler	olay
+Relation	T12	T11	NoRel	true	el koyuldu	saldırıyı
+Relation	T13	T12	NoRel	true	karşıdevrim	el koyuldu
+Relation	T13	T14	NoRel	true	karşıdevrim	baskılara
+Relation	T13	T5	NoRel	true	karşıdevrim	açılmasını
+Relation	T14	T8	NoRel	true	baskılara	öğrenen
+Relation	T2	T1	NoRel	true	söküldü	dayanışma
+Relation	T2	T14	NoRel	true	söküldü	baskılara
+Relation	T5	T1	NoRel	true	açılmasını	dayanışma
+Relation	T5	T6	NoRel	true	açılmasını	çekilmek
+Relation	T6	T0	NoRel	true	çekilmek	verdi
+Relation	T6	T4	NoRel	true	çekilmek	olay
+Relation	T7	T12	NoRel	true	kaldı	el koyuldu
+Relation	T8	T11	NoRel	true	öğrenen	saldırıyı
+Relation	T8	T12	NoRel	true	öğrenen	el koyuldu
+Relation	T8	T3	NoRel	true	öğrenen	durdurulmuş
+Relation	T8	T5	NoRel	true	öğrenen	açılmasını
+Relation	T8	T9	NoRel	true	öğrenen	dayanışmak
+Relation	T9	T6	NoRel	true	dayanışmak	çekilmek

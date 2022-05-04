@@ -1,0 +1,49 @@
+Text	526 tarihinde Mayıs sonlarında olasılıkla 20. ve 29. günleri bir BÜYÜK DEPREM Suriye ve Türkiye'de Antakya'yı yaklaşık 250.000 kişiyi öldürerek vurdu .	Depremi bir yangın takip etti ve deprem sonrası ayakta kalan binaların çoğunu tahrip etti .	Modified Mercalli scale'sındaki zarar tahminleri : VIII Antakya , VII Dafna & Seleukia'dır .	Seleukia limanında bir 0,7 - 0, 8 m'lik arazi çıkıntısı hesap edildi ve limanın sonradan gelen çamurla dolması onu kullanılamaz şekilde bıraktı .	Bu olay tarihte altıncı ölümcül tabii felaket ve ikinci ölümcül depremdi .
+Event	T0	vurdu	EVENT	144
+Event	T1	Depremi	EVENT	152
+Event	T2	etti	EVENT	177
+Event	T3	deprem	EVENT	185
+Event	T4	etti	EVENT	237
+Event	T5	tahminleri	EVENT	282
+Event	T6	edildi	EVENT	399
+Event	T7	dolması	EVENT	440
+Event	T8	bıraktı	EVENT	473
+Event	T9	olay	EVENT	486
+Event	T10	felaket	EVENT	521
+Event	T11	depremdi	EVENT	547
+Event	T12	DEPREM	EVENT	71
+Event	T13	öldürerek	EVENT	134
+Relation	T12	T13	SuperSub	true	DEPREM	öldürerek
+Relation	T13	T12	SubSuper	true	öldürerek	DEPREM
+Relation	T12	T2	SuperSub	true	DEPREM	etti
+Relation	T2	T12	SubSuper	true	etti	DEPREM
+Relation	T12	T4	SuperSub	true	DEPREM	etti
+Relation	T4	T12	SubSuper	true	etti	DEPREM
+Relation	T12	T5	SuperSub	true	DEPREM	tahminleri
+Relation	T5	T12	SubSuper	true	tahminleri	DEPREM
+Relation	T12	T6	SuperSub	true	DEPREM	edildi
+Relation	T6	T12	SubSuper	true	edildi	DEPREM
+Relation	T12	T7	SuperSub	true	DEPREM	dolması
+Relation	T7	T12	SubSuper	true	dolması	DEPREM
+Relation	T7	T8	SuperSub	true	dolması	bıraktı
+Relation	T8	T7	SubSuper	true	bıraktı	dolması
+Relation	T12	T10	SuperSub	true	DEPREM	felaket
+Relation	T10	T12	SubSuper	true	felaket	DEPREM
+Relation	T0	T10	NoRel	true	vurdu	felaket
+Relation	T0	T7	NoRel	true	vurdu	dolması
+Relation	T1	T5	NoRel	true	Depremi	tahminleri
+Relation	T1	T9	NoRel	true	Depremi	olay
+Relation	T10	T1	NoRel	true	felaket	Depremi
+Relation	T10	T11	NoRel	true	felaket	depremdi
+Relation	T10	T2	NoRel	true	felaket	etti
+Relation	T10	T6	NoRel	true	felaket	edildi
+Relation	T11	T4	NoRel	true	depremdi	etti
+Relation	T11	T9	NoRel	true	depremdi	olay
+Relation	T12	T1	NoRel	true	DEPREM	Depremi
+Relation	T13	T10	NoRel	true	öldürerek	felaket
+Relation	T13	T4	NoRel	true	öldürerek	etti
+Relation	T3	T4	NoRel	true	deprem	etti
+Relation	T4	T8	NoRel	true	etti	bıraktı
+Relation	T7	T9	NoRel	true	dolması	olay
+Relation	T9	T13	NoRel	true	olay	öldürerek
+Relation	T9	T8	NoRel	true	olay	bıraktı

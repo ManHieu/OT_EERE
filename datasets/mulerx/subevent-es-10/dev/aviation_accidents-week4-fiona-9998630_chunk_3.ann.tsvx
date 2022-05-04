@@ -1,0 +1,41 @@
+Text	El ministerio de defensa ruso se apresuró para ir al lugar del acontecimiento , en internet circula un video en el que se ve detalladamente cómo el avión tiene un motor incendiándose y también cómo cae , por lo cual los investigadores comienzan a especular sobre que el accidente fue causado por el incendio del motor derecho .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil - Categoría : Accidentes e incidentes aéreos de 2021	Categoría : Accidentes e incidentes aéreos Categoría : Accidentes e incidentes aéreos en Rusia Categoría : Accidentes e incidentes aéreos de 2021		
+Event	T0	apresuró	EVENT	33
+Event	T1	acontecimiento	EVENT	63
+Event	T3	incendiándose	EVENT	169
+Event	T4	cae	EVENT	198
+Event	T5	comienzan	EVENT	235
+Event	T6	especular	EVENT	247
+Event	T7	accidente	EVENT	270
+Event	T8	causado	EVENT	284
+Event	T9	incendio	EVENT	299
+Event	T10	Accidentes	EVENT	362
+Event	T11	Accidentes	EVENT	426
+Event	T12	incidentes	EVENT	439
+Event	T13	Accidentes	EVENT	494
+Event	T14	incidentes	EVENT	507
+Event	T15	incidentes	EVENT	558
+Event	T16	incidentes	EVENT	601
+Event	T17	Accidentes	EVENT	640
+Event	T18	incidentes	EVENT	653
+Relation	T1	T3	NoRel	true	acontecimiento	incendiándose
+Relation	T10	T8	NoRel	true	Accidentes	causado
+Relation	T11	T0	NoRel	true	Accidentes	apresuró
+Relation	T11	T13	NoRel	true	Accidentes	Accidentes
+Relation	T11	T15	NoRel	true	Accidentes	incidentes
+Relation	T11	T6	NoRel	true	Accidentes	especular
+Relation	T13	T9	NoRel	true	Accidentes	incendio
+Relation	T14	T1	NoRel	true	incidentes	acontecimiento
+Relation	T16	T11	NoRel	true	incidentes	Accidentes
+Relation	T16	T7	NoRel	true	incidentes	accidente
+Relation	T17	T15	NoRel	true	Accidentes	incidentes
+Relation	T3	T15	NoRel	true	incendiándose	incidentes
+Relation	T3	T18	NoRel	true	incendiándose	incidentes
+Relation	T4	T16	NoRel	true	cae	incidentes
+Relation	T4	T17	NoRel	true	cae	Accidentes
+Relation	T4	T9	NoRel	true	cae	incendio
+Relation	T5	T17	NoRel	true	comienzan	Accidentes
+Relation	T6	T9	NoRel	true	especular	incendio
+Relation	T7	T13	NoRel	true	accidente	Accidentes
+Relation	T8	T11	NoRel	true	causado	Accidentes
+Relation	T8	T7	NoRel	true	causado	accidente
+Relation	T9	T5	NoRel	true	incendio	comienzan

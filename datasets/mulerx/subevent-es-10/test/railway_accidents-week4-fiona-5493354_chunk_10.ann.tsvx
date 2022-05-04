@@ -1,0 +1,16 @@
+Text	- 8 DE JULIO : descarrilamiento de un vagón de un tren de la línea del Norte debido al atropello de una res bovina .	Ocurrió en las proximidades de Azambuja .	- 13 DE SEPTIEMBRE : descarrilamiento de un convoy de la línea del Sureste en las proximidades de Poceirão .	- 15 DE SEPTIEMBRE : entre las estaciones de Mato de Miranda y Vale de Figueira descarrila el tren correo de Lisboa a Oporto .	El accidente dejó un muerto y al menos una treintena de heridos .
+Event	T0	descarrilamiento	EVENT	15
+Event	T1	atropello	EVENT	87
+Event	T2	Ocurrió	EVENT	117
+Event	T3	descarrilamiento	EVENT	180
+Event	T4	descarrila	EVENT	348
+Event	T6	muerto	EVENT	416
+Event	T7	heridos	EVENT	451
+Event	T8	accidente	EVENT	398
+Relation	T0	T6	NoRel	true	descarrilamiento	muerto
+Relation	T6	T7	NoRel	true	muerto	heridos
+Relation	T7	T1	NoRel	true	heridos	atropello
+Relation	T7	T6	NoRel	true	heridos	muerto
+Relation	T8	T2	NoRel	true	accidente	Ocurrió
+Relation	T8	T4	NoRel	true	accidente	descarrila
+Relation	T8	T6	NoRel	true	accidente	muerto

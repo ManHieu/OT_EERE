@@ -1,0 +1,33 @@
+Text	Kaldığı yeri gösterdikten sonra , aynı gün Hosenfeld tarafından karnı doyurulan Szpilman , aylarca ona bakan bu subayı gelecekte kaleme alacağı _ Śmierć Miasta : Niezwykła Prawdziwa Historia Przeżycia Jednego Człowieka w Warszawie 1939 – 1945 _ ( " _ Şehrin Ölümü : Varşova'da bir Adamın Hayatta Kalmasının Olağanüstü Hikayesi _ " ) kitabında " Hayatımı kurtaran Alman " diye anacaktı .	Nazi Partisinin yayımladığı emirler genelgesinde yasaklanmış olmasına rağmen Polonya'daki kiliselerin Missa Ayinlerine katıldı .	Polonyalı savaş esirlerine aileleri ile görüşmeleri ve erken tahliye edilmeleri için yardım etti .	Ettiği yardımlardan ve çiğnediği kurallardan / emirlerden ötürü Hosenfeld , birkaç defa Gestapo tarafından tutuklanma tehlikesiyle karşı karşıya kalmıştı .	17 Ocak 1945'te , Varşova'nın yaklaşık 30 km batısındaki küçük bir Polonya şehri olan Błonie'deki Alman bölüğünü kıstıran Kızıl Ordu , şehri çembere aldı ve kaçış noktası bırakmadı .
+Event	T0	gösterdikten	EVENT	13
+Event	T2	yasaklanmış	EVENT	436
+Event	T3	katıldı	EVENT	506
+Event	T5	etti	EVENT	608
+Event	T6	Ettiği	EVENT	615
+Event	T7	çiğnediği	EVENT	638
+Event	T8	kalmıştı	EVENT	760
+Event	T9	kıstıran	EVENT	884
+Event	T10	aldı	EVENT	920
+Event	T13	doyurulan	EVENT	70
+Event	T14	kurtaran	EVENT	354
+Event	T15	bakan	EVENT	103
+Event	T16	alacağı	EVENT	136
+Event	T17	anacaktı	EVENT	376
+Event	T18	genelgesinde	EVENT	423
+Relation	T0	T15	NoRel	true	gösterdikten	bakan
+Relation	T10	T13	NoRel	true	aldı	doyurulan
+Relation	T13	T16	NoRel	true	doyurulan	alacağı
+Relation	T13	T6	NoRel	true	doyurulan	Ettiği
+Relation	T14	T3	NoRel	true	kurtaran	katıldı
+Relation	T15	T3	NoRel	true	bakan	katıldı
+Relation	T15	T6	NoRel	true	bakan	Ettiği
+Relation	T16	T6	NoRel	true	alacağı	Ettiği
+Relation	T2	T16	NoRel	true	yasaklanmış	alacağı
+Relation	T2	T17	NoRel	true	yasaklanmış	anacaktı
+Relation	T2	T3	NoRel	true	yasaklanmış	katıldı
+Relation	T2	T9	NoRel	true	yasaklanmış	kıstıran
+Relation	T5	T0	NoRel	true	etti	gösterdikten
+Relation	T5	T10	NoRel	true	etti	aldı
+Relation	T6	T2	NoRel	true	Ettiği	yasaklanmış
+Relation	T8	T10	NoRel	true	kalmıştı	aldı
+Relation	T9	T16	NoRel	true	kıstıran	alacağı

@@ -1,0 +1,26 @@
+Text	Bugünkü Moldova'da , Kişinev Katliamı olarak da bilinen 1903 Kişinev pogromu 47-49 kişinin ölümüne yol açtı .	The Times ve The New York Times tarafından yayınlandıktan sonra uluslararası kamuoyunda yankı uyandırdı .	1905'te ikinci , daha küçük bir Kişinev pogromu vardı .	20 Temmuz 1905'te Yekaterinoslav'da ( günümüz Dnipro , Ukrayna ) bir pogrom , Yahudi savunma grubu tarafından durduruldu ( gruptaki bir adam öldü ) .	31 Temmuz 1905'te , belediye başkanının önderlik ettiği bir vatansever alayı şiddetlenen Makaryev kasabasında ( Nizhni Novgorod yakınında ) Soluk yerleşim dışındaki ilk pogrom gerçekleştirildi .
+Event	T1	açtı	EVENT	103
+Event	T2	yayınlandıktan	EVENT	153
+Event	T3	uyandırdı	EVENT	204
+Event	T4	durduruldu	EVENT	382
+Event	T5	öldü	EVENT	413
+Event	T6	şiddetlenen	EVENT	499
+Event	T7	gerçekleştirildi	EVENT	598
+Event	T8	Kişinev Katliamı	EVENT	21
+Event	T9	pogromu	EVENT	256
+Event	T10	pogrom	EVENT	341
+Event	T11	ettiği	EVENT	471
+Event	T12	pogrom	EVENT	591
+Relation	T8	T1	SuperSub	true	Kişinev Katliamı	açtı
+Relation	T1	T8	SubSuper	true	açtı	Kişinev Katliamı
+Relation	T8	T3	SuperSub	true	Kişinev Katliamı	uyandırdı
+Relation	T3	T8	SubSuper	true	uyandırdı	Kişinev Katliamı
+Relation	T8	T2	SuperSub	true	Kişinev Katliamı	yayınlandıktan
+Relation	T2	T8	SubSuper	true	yayınlandıktan	Kişinev Katliamı
+Relation	T2	T5	NoRel	true	yayınlandıktan	öldü
+Relation	T3	T12	NoRel	true	uyandırdı	pogrom
+Relation	T5	T7	NoRel	true	öldü	gerçekleştirildi
+Relation	T7	T11	NoRel	true	gerçekleştirildi	ettiği
+Relation	T8	T10	NoRel	true	Kişinev Katliamı	pogrom
+Relation	T8	T12	NoRel	true	Kişinev Katliamı	pogrom
+Relation	T8	T6	NoRel	true	Kişinev Katliamı	şiddetlenen

@@ -1,0 +1,44 @@
+Text	Como quedó en evidencia tras la recuperación de las cajas negras , hubo momentos en los que los miembros de la tripulación no comunicaron sus intenciones a los demás , llevando a comportamientos contradictorios entre ellos , incluso existiendo momentos en los que los dos copilotos enviaban órdenes completamente opuestas a la aeronave .	- LA FALTA DE IMPLEMENTACIÓN DE LOS PROCEDIMIENTOS ESTÁNDAR PARA LA SOLUCIÓN DEL PROBLEMA .	Los copilotos no siguieron el procedimiento estándar cuando reasumieron el control del avión tras haberse desactivado el piloto automático .	Estos procedimientos incluyen los relativos a perder los tubos Pitot y en caso de entrar en pérdida .	Alain Bouillard , el investigador principal , dijo que los dos pilotos a los mandos nunca comprendieron que el avión , que partió de Brasil en un vuelo nocturno con destino a Francia , sufría una pérdida de sustentación aerodinámica y " se encontraban en una situación de una pérdida casi total del control " .
+Event	T0	evidencia	EVENT	14
+Event	T1	recuperación	EVENT	32
+Event	T5	reasumieron	EVENT	490
+Event	T6	control	EVENT	505
+Event	T7	desactivado	EVENT	536
+Event	T8	perder	EVENT	617
+Event	T9	pérdida	EVENT	663
+Event	T10	dijo	EVENT	719
+Event	T12	partió	EVENT	796
+Event	T13	vuelo	EVENT	819
+Event	T14	sufría	EVENT	858
+Event	T15	pérdida	EVENT	869
+Event	T16	situación	EVENT	932
+Event	T17	pérdida	EVENT	949
+Event	T2	comportamientos	EVENT	179
+Event	T3	órdenes	EVENT	291
+Relation	T13	T1	SuperSub	true	vuelo	recuperación
+Relation	T1	T13	SubSuper	true	recuperación	vuelo
+Relation	T13	T2	SuperSub	true	vuelo	comportamientos
+Relation	T2	T13	SubSuper	true	comportamientos	vuelo
+Relation	T12	T15	NoRel	true	partió	pérdida
+Relation	T12	T5	NoRel	true	partió	reasumieron
+Relation	T14	T16	NoRel	true	sufría	situación
+Relation	T14	T9	NoRel	true	sufría	pérdida
+Relation	T15	T0	NoRel	true	pérdida	evidencia
+Relation	T15	T12	NoRel	true	pérdida	partió
+Relation	T15	T13	NoRel	true	pérdida	vuelo
+Relation	T15	T7	NoRel	true	pérdida	desactivado
+Relation	T16	T17	NoRel	true	situación	pérdida
+Relation	T17	T13	NoRel	true	pérdida	vuelo
+Relation	T17	T5	NoRel	true	pérdida	reasumieron
+Relation	T2	T17	NoRel	true	comportamientos	pérdida
+Relation	T2	T9	NoRel	true	comportamientos	pérdida
+Relation	T3	T0	NoRel	true	órdenes	evidencia
+Relation	T3	T15	NoRel	true	órdenes	pérdida
+Relation	T3	T8	NoRel	true	órdenes	perder
+Relation	T5	T3	NoRel	true	reasumieron	órdenes
+Relation	T6	T17	NoRel	true	control	pérdida
+Relation	T6	T5	NoRel	true	control	reasumieron
+Relation	T7	T14	NoRel	true	desactivado	sufría
+Relation	T8	T17	NoRel	true	perder	pérdida
+Relation	T9	T0	NoRel	true	pérdida	evidencia
+Relation	T9	T15	NoRel	true	pérdida	pérdida

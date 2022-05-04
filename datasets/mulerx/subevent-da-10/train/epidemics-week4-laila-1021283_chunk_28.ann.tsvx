@@ -1,0 +1,38 @@
+Text	I USA fik virussen senere fat end i Europa .	Men i slutningen af marts annoncerede Donald Trump , der tidligere havde betegnet sygdommen som en " almindelig influenza " , omfattende restriktioner på baggrund af en stærkt stigende kurve for antallet af dødsfald .	I begyndelsen af april var USA for første gang det land , der havde flest rapporterede døde , jf. de daglige rapporter fra Johns Hopkins University .	Pr. 26. oktober 2020 var der i alt over 8 millioner smittede , og 226.000 døde i USA .	Den 26. december 2020 var antallet af smittede i USA steget til 19.433.847 og antallet af personer i USA , der var døde med COVID-19 var 339.921 .
+Event	T0	virussen	EVENT	10
+Event	T1	fat	EVENT	26
+Event	T2	annoncerede	EVENT	71
+Event	T3	sygdommen	EVENT	127
+Event	T4	restriktioner	EVENT	182
+Event	T5	kurve	EVENT	230
+Event	T6	dødsfald	EVENT	252
+Event	T7	døde	EVENT	350
+Event	T8	rapporter	EVENT	372
+Event	T9	smittede	EVENT	465
+Event	T10	døde	EVENT	487
+Event	T11	smittede	EVENT	538
+Event	T12	steget	EVENT	553
+Event	T13	døde	EVENT	615
+Event	T14	influenza	EVENT	157
+Event	T15	COVID-19	EVENT	624
+Relation	T4	T2	SuperSub	true	restriktioner	annoncerede
+Relation	T2	T4	SubSuper	true	annoncerede	restriktioner
+Relation	T0	T2	NoRel	true	virussen	annoncerede
+Relation	T0	T9	NoRel	true	virussen	smittede
+Relation	T1	T5	NoRel	true	fat	kurve
+Relation	T1	T8	NoRel	true	fat	rapporter
+Relation	T11	T3	NoRel	true	smittede	sygdommen
+Relation	T12	T7	NoRel	true	steget	døde
+Relation	T13	T3	NoRel	true	døde	sygdommen
+Relation	T14	T4	NoRel	true	influenza	restriktioner
+Relation	T15	T14	NoRel	true	COVID-19	influenza
+Relation	T15	T5	NoRel	true	COVID-19	kurve
+Relation	T4	T0	NoRel	true	restriktioner	virussen
+Relation	T4	T10	NoRel	true	restriktioner	døde
+Relation	T4	T3	NoRel	true	restriktioner	sygdommen
+Relation	T7	T3	NoRel	true	døde	sygdommen
+Relation	T7	T5	NoRel	true	døde	kurve
+Relation	T8	T11	NoRel	true	rapporter	smittede
+Relation	T9	T10	NoRel	true	smittede	døde
+Relation	T9	T14	NoRel	true	smittede	influenza
+Relation	T9	T2	NoRel	true	smittede	annoncerede

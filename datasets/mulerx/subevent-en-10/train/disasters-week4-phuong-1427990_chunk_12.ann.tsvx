@@ -1,0 +1,48 @@
+Text	Turning to the northwest , it quickly weakened to a tropical depression and dissipated on June 17 over Mississippi .	In advance of the system , officials issued storm warnings for coastal areas of Alabama and western Florida , and residents in low - lying areas were advised to seek higher ground .	Damage associated with the cyclone was generally minor , and only one life was lost when a boy fell into the swollen waters of a river and drowned .	On August 7 , a tropical storm formed north of the Leeward Islands , likely from a tropical wave .	It tracked to the west - northwest , slowly strengthening to a hurricane as it moved through the Bahamas on August 11 .
+Event	T0	Turning	EVENT	0
+Event	T1	depression	EVENT	61
+Event	T2	dissipated	EVENT	76
+Event	T3	advised	EVENT	267
+Event	T4	seek	EVENT	278
+Event	T5	associated	EVENT	306
+Event	T6	cyclone	EVENT	326
+Event	T7	lost	EVENT	378
+Event	T8	drowned	EVENT	438
+Event	T9	formed	EVENT	479
+Event	T11	tracked	EVENT	550
+Event	T12	hurricane	EVENT	610
+Event	T13	moved	EVENT	626
+Event	T14	storm	EVENT	161
+Event	T15	warnings	EVENT	167
+Event	T16	Damage	EVENT	299
+Event	T10	tropical wave	EVENT	531
+Event	T17	tropical storm	EVENT	464
+Relation	T12	T13	SuperSub	true	hurricane	moved
+Relation	T13	T12	SubSuper	true	moved	hurricane
+Relation	T10	T17	NoRel	true	tropical wave	tropical storm
+Relation	T11	T2	NoRel	true	tracked	dissipated
+Relation	T13	T11	NoRel	true	moved	tracked
+Relation	T13	T15	NoRel	true	moved	warnings
+Relation	T15	T12	NoRel	true	warnings	hurricane
+Relation	T15	T9	NoRel	true	warnings	formed
+Relation	T16	T17	NoRel	true	Damage	tropical storm
+Relation	T17	T13	NoRel	true	tropical storm	moved
+Relation	T17	T16	NoRel	true	tropical storm	Damage
+Relation	T17	T5	NoRel	true	tropical storm	associated
+Relation	T17	T6	NoRel	true	tropical storm	cyclone
+Relation	T17	T7	NoRel	true	tropical storm	lost
+Relation	T3	T0	NoRel	true	advised	Turning
+Relation	T4	T0	NoRel	true	seek	Turning
+Relation	T4	T16	NoRel	true	seek	Damage
+Relation	T4	T9	NoRel	true	seek	formed
+Relation	T5	T6	NoRel	true	associated	cyclone
+Relation	T5	T8	NoRel	true	associated	drowned
+Relation	T6	T14	NoRel	true	cyclone	storm
+Relation	T6	T8	NoRel	true	cyclone	drowned
+Relation	T6	T9	NoRel	true	cyclone	formed
+Relation	T7	T1	NoRel	true	lost	depression
+Relation	T7	T15	NoRel	true	lost	warnings
+Relation	T7	T2	NoRel	true	lost	dissipated
+Relation	T9	T11	NoRel	true	formed	tracked
+Relation	T9	T2	NoRel	true	formed	dissipated
+Relation	T9	T8	NoRel	true	formed	drowned

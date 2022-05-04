@@ -1,0 +1,21 @@
+Text	Kazadan yaklaşık yirmi dakika sonra Alman ambulans helikopterleri çevre şehirlerden oraya ulaştırıldı .	Devamlı olarak ambulanslar geldi ve gitti .	Ayrıca saatler sonra bir otobüs oraya ulaştı ve yaralılarla dolu şekilde 80 kilometre ötedeki Ludwigshawen kentine gitti .	Bir paramedik çalışanı kazanın yarattığı tansiyon biraz hafifledikten sonra şunları söyledi :	" Otobüsün içinde 5 tane feci bir şekilde yanmış kazazede vardı .
+Event	T0	Kazadan	EVENT	0
+Event	T1	ulaştırıldı	EVENT	90
+Event	T2	geldi	EVENT	131
+Event	T3	gitti	EVENT	140
+Event	T4	ulaştı	EVENT	186
+Event	T5	gitti	EVENT	263
+Event	T6	tansiyon	EVENT	312
+Event	T7	söyledi	EVENT	355
+Event	T8	yanmış	EVENT	407
+Event	T9	yaralılarla	EVENT	196
+Event	T10	kazanın	EVENT	294
+Relation	T1	T6	NoRel	true	ulaştırıldı	tansiyon
+Relation	T10	T0	NoRel	true	kazanın	Kazadan
+Relation	T10	T4	NoRel	true	kazanın	ulaştı
+Relation	T3	T5	NoRel	true	gitti	gitti
+Relation	T4	T1	NoRel	true	ulaştı	ulaştırıldı
+Relation	T4	T8	NoRel	true	ulaştı	yanmış
+Relation	T5	T9	NoRel	true	gitti	yaralılarla
+Relation	T6	T2	NoRel	true	tansiyon	geldi
+Relation	T8	T4	NoRel	true	yanmış	ulaştı

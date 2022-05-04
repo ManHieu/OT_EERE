@@ -1,0 +1,68 @@
+Text	El capitán , en medio de una comunicación por radio , detuvo su transmisión e inmediatamente tomó el control de la aeronave , donde comenzó a realizar entradas de cabeceo en los controles de vuelo .	Durante este tiempo , la copiloto declaró un mayday y el controlador de tránsito aéreo ofreció todas las opciones a la tripulación para una aproximación o desvío .	Aunque la aeronave comenzó a ascender , el capitán sintió que sus crecientes esfuerzos en los controles de vuelo no parecían tener el efecto deseado .	La copiloto también aplicó entradas de morro hacia arriba , pero también percibió que la aeronave no respondía como se esperaba .	La pantalla de vuelo principal ( PFD ) mostraba advertencias de errores de ajuste de cabeceo y balanceo .
+Event	T0	comunicación	EVENT	29
+Event	T1	detuvo	EVENT	54
+Event	T2	transmisión	EVENT	64
+Event	T3	tomó	EVENT	93
+Event	T4	control	EVENT	101
+Event	T5	comenzó	EVENT	132
+Event	T6	entradas	EVENT	151
+Event	T7	controles	EVENT	178
+Event	T8	vuelo	EVENT	191
+Event	T9	declaró	EVENT	233
+Event	T10	ofreció	EVENT	286
+Event	T11	aproximación	EVENT	339
+Event	T12	desvío	EVENT	354
+Event	T13	comenzó	EVENT	382
+Event	T14	ascender	EVENT	392
+Event	T15	sintió	EVENT	414
+Event	T16	esfuerzos	EVENT	440
+Event	T17	controles	EVENT	457
+Event	T18	percibió	EVENT	587
+Event	T19	respondía	EVENT	615
+Event	T20	advertencias	EVENT	692
+Event	T21	errores	EVENT	708
+Event	T22	ajuste	EVENT	719
+Relation	T1	T3	SuperSub	true	detuvo	tomó
+Relation	T3	T1	SubSuper	true	tomó	detuvo
+Relation	T0	T2	NoRel	true	comunicación	transmisión
+Relation	T0	T8	NoRel	true	comunicación	vuelo
+Relation	T1	T0	NoRel	true	detuvo	comunicación
+Relation	T1	T22	NoRel	true	detuvo	ajuste
+Relation	T10	T14	NoRel	true	ofreció	ascender
+Relation	T10	T15	NoRel	true	ofreció	sintió
+Relation	T10	T9	NoRel	true	ofreció	declaró
+Relation	T11	T13	NoRel	true	aproximación	comenzó
+Relation	T12	T0	NoRel	true	desvío	comunicación
+Relation	T12	T18	NoRel	true	desvío	percibió
+Relation	T12	T2	NoRel	true	desvío	transmisión
+Relation	T13	T16	NoRel	true	comenzó	esfuerzos
+Relation	T13	T17	NoRel	true	comenzó	controles
+Relation	T14	T18	NoRel	true	ascender	percibió
+Relation	T15	T19	NoRel	true	sintió	respondía
+Relation	T15	T5	NoRel	true	sintió	comenzó
+Relation	T16	T12	NoRel	true	esfuerzos	desvío
+Relation	T16	T2	NoRel	true	esfuerzos	transmisión
+Relation	T16	T22	NoRel	true	esfuerzos	ajuste
+Relation	T17	T1	NoRel	true	controles	detuvo
+Relation	T18	T9	NoRel	true	percibió	declaró
+Relation	T19	T13	NoRel	true	respondía	comenzó
+Relation	T19	T3	NoRel	true	respondía	tomó
+Relation	T19	T4	NoRel	true	respondía	control
+Relation	T19	T6	NoRel	true	respondía	entradas
+Relation	T19	T8	NoRel	true	respondía	vuelo
+Relation	T20	T17	NoRel	true	advertencias	controles
+Relation	T20	T6	NoRel	true	advertencias	entradas
+Relation	T21	T2	NoRel	true	errores	transmisión
+Relation	T3	T11	NoRel	true	tomó	aproximación
+Relation	T4	T10	NoRel	true	control	ofreció
+Relation	T4	T16	NoRel	true	control	esfuerzos
+Relation	T4	T18	NoRel	true	control	percibió
+Relation	T4	T6	NoRel	true	control	entradas
+Relation	T6	T20	NoRel	true	entradas	advertencias
+Relation	T8	T12	NoRel	true	vuelo	desvío
+Relation	T8	T13	NoRel	true	vuelo	comenzó
+Relation	T8	T20	NoRel	true	vuelo	advertencias
+Relation	T8	T21	NoRel	true	vuelo	errores
+Relation	T9	T11	NoRel	true	declaró	aproximación
+Relation	T9	T12	NoRel	true	declaró	desvío
+Relation	T9	T5	NoRel	true	declaró	comenzó

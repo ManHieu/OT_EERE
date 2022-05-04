@@ -1,0 +1,76 @@
+Text	Commentators such as Johnson point out that this action was illegal , and that in deferring the investigation to the ICAO , the Reagan administration effectively precluded any politically or militarily sensitive information from being subpoenaed that might have embarrassed the administration or contradicted its version of events .	Unlike the NTSB , ICAO can subpoena neither persons nor documents and is dependent on the governments involved — in this incident , the United States , the Soviet Union , Japan , and South Korea — to supply evidence voluntarily .	The International Civil Aviation Organization ( ICAO ) had only one experience of investigation of an air disaster prior to the KAL 007 shootdown .	This was the incident of February 21 , 1973 , when Libyan Arab Airlines Flight 114 was shot down by Israeli F - 4 jets over the Sinai Peninsula .	ICAO convention required the state in whose territory the accident had taken place ( the Soviet Union ) to conduct an investigation together with the country of registration ( South Korea ) , the country whose air traffic control the aircraft was flying under ( Japan ) , as well as the country of the aircraft 's manufacturer ( USA ) .
+Event	T0	action	EVENT	49
+Event	T1	deferring	EVENT	82
+Event	T2	investigation	EVENT	96
+Event	T3	precluded	EVENT	162
+Event	T4	subpoenaed	EVENT	235
+Event	T5	embarrassed	EVENT	262
+Event	T6	contradicted	EVENT	296
+Event	T7	events	EVENT	324
+Event	T8	subpoena	EVENT	360
+Event	T9	incident	EVENT	454
+Event	T10	supply	EVENT	533
+Event	T11	experience	EVENT	631
+Event	T12	investigation	EVENT	645
+Event	T13	disaster	EVENT	669
+Event	T14	shootdown	EVENT	699
+Event	T15	incident	EVENT	724
+Event	T16	required	EVENT	873
+Event	T17	accident	EVENT	915
+Event	T18	conduct	EVENT	964
+Event	T19	investigation	EVENT	975
+Event	T20	control	EVENT	1079
+Event	T21	flying	EVENT	1104
+Event	T22	shot down	EVENT	798
+Relation	T0	T10	NoRel	true	action	supply
+Relation	T0	T12	NoRel	true	action	investigation
+Relation	T0	T4	NoRel	true	action	subpoenaed
+Relation	T10	T0	NoRel	true	supply	action
+Relation	T10	T20	NoRel	true	supply	control
+Relation	T11	T16	NoRel	true	experience	required
+Relation	T12	T11	NoRel	true	investigation	experience
+Relation	T13	T10	NoRel	true	disaster	supply
+Relation	T13	T17	NoRel	true	disaster	accident
+Relation	T14	T18	NoRel	true	shootdown	conduct
+Relation	T14	T21	NoRel	true	shootdown	flying
+Relation	T14	T3	NoRel	true	shootdown	precluded
+Relation	T15	T10	NoRel	true	incident	supply
+Relation	T15	T13	NoRel	true	incident	disaster
+Relation	T15	T7	NoRel	true	incident	events
+Relation	T16	T10	NoRel	true	required	supply
+Relation	T16	T11	NoRel	true	required	experience
+Relation	T16	T20	NoRel	true	required	control
+Relation	T16	T3	NoRel	true	required	precluded
+Relation	T16	T6	NoRel	true	required	contradicted
+Relation	T16	T8	NoRel	true	required	subpoena
+Relation	T17	T16	NoRel	true	accident	required
+Relation	T17	T8	NoRel	true	accident	subpoena
+Relation	T18	T5	NoRel	true	conduct	embarrassed
+Relation	T19	T12	NoRel	true	investigation	investigation
+Relation	T19	T2	NoRel	true	investigation	investigation
+Relation	T2	T10	NoRel	true	investigation	supply
+Relation	T20	T10	NoRel	true	control	supply
+Relation	T20	T8	NoRel	true	control	subpoena
+Relation	T21	T18	NoRel	true	flying	conduct
+Relation	T22	T13	NoRel	true	shot down	disaster
+Relation	T22	T16	NoRel	true	shot down	required
+Relation	T22	T6	NoRel	true	shot down	contradicted
+Relation	T22	T7	NoRel	true	shot down	events
+Relation	T3	T1	NoRel	true	precluded	deferring
+Relation	T3	T20	NoRel	true	precluded	control
+Relation	T3	T5	NoRel	true	precluded	embarrassed
+Relation	T3	T9	NoRel	true	precluded	incident
+Relation	T4	T11	NoRel	true	subpoenaed	experience
+Relation	T5	T11	NoRel	true	embarrassed	experience
+Relation	T6	T13	NoRel	true	contradicted	disaster
+Relation	T6	T19	NoRel	true	contradicted	investigation
+Relation	T6	T21	NoRel	true	contradicted	flying
+Relation	T7	T13	NoRel	true	events	disaster
+Relation	T7	T8	NoRel	true	events	subpoena
+Relation	T8	T1	NoRel	true	subpoena	deferring
+Relation	T8	T10	NoRel	true	subpoena	supply
+Relation	T8	T15	NoRel	true	subpoena	incident
+Relation	T8	T18	NoRel	true	subpoena	conduct
+Relation	T8	T7	NoRel	true	subpoena	events
+Relation	T9	T13	NoRel	true	incident	disaster
+Relation	T9	T21	NoRel	true	incident	flying

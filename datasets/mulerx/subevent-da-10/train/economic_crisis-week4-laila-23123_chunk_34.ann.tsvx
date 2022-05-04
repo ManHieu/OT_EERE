@@ -1,0 +1,25 @@
+Text	Blandt de seneste medarbejdere var den " revolutionens filosof " Nicolas de Condorcet .	Han havde til mål at kortlægge den aktuelle viden om alle teoretiske videnskaber og praktiske erhverv i den franske encyklopædi .	Værket var en udvidet og politiseret i Ephraim Chambers´ encyklopædi fra 1728 .	Encyklopædien udkom mellem 1751 og 1772 og blev berømt for redaktør Diderots mange konflikter med kirkens og statens censur .	Trods censuren lykkedes det at få udgivet encyklopædien .
+Event	T0	politiseret	EVENT	243
+Event	T1	udkom	EVENT	312
+Event	T2	berømt	EVENT	346
+Event	T3	konflikter	EVENT	381
+Event	T4	censur	EVENT	415
+Event	T5	lykkedes	EVENT	439
+Event	T6	udgivet	EVENT	458
+Event	T7	kortlægge	EVENT	109
+Event	T8	medarbejdere	EVENT	18
+Event	T9	udvidet	EVENT	232
+Event	T10	censuren	EVENT	430
+Relation	T0	T2	NoRel	true	politiseret	berømt
+Relation	T1	T8	NoRel	true	udkom	medarbejdere
+Relation	T2	T7	NoRel	true	berømt	kortlægge
+Relation	T3	T5	NoRel	true	konflikter	lykkedes
+Relation	T4	T10	NoRel	true	censur	censuren
+Relation	T4	T6	NoRel	true	censur	udgivet
+Relation	T5	T6	NoRel	true	lykkedes	udgivet
+Relation	T6	T10	NoRel	true	udgivet	censuren
+Relation	T6	T7	NoRel	true	udgivet	kortlægge
+Relation	T6	T8	NoRel	true	udgivet	medarbejdere
+Relation	T8	T0	NoRel	true	medarbejdere	politiseret
+Relation	T8	T9	NoRel	true	medarbejdere	udvidet
+Relation	T9	T7	NoRel	true	udvidet	kortlægge

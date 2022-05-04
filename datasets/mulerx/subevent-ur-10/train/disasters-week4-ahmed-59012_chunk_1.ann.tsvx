@@ -1,0 +1,38 @@
+Text	جون 1990ء میں شمال مغربی ایران میں زلزلے کے نتیجے میں 40ہزار سے زائد افراد ہلاک ہوئے تھے ۔	جبکہ جولائی 1976ء میں چین میں آنے والے زلزلے سے ڈھائی لاکھ افراد ہلاک ہو گئے تھے ۔	اس سے قبل مئی 1970میں پیرو کے شہر ماونٹ ہواسکاران میں زلزلے اور مٹی کے تودے گرنے سے 70ہزار افراد لقمہ اجل بن گئے تھے ۔	اسی طرح دسمبر 1939ء میں ترکی کے شہر ایر زنکن میں تقریباً 40ہزار ہلاکتیں ہوئیں ۔	جبکہ 1935میں کوئٹہ میں آنے والے زلزلے سے 50ہزار افراد ہلاک ہو گئے تھے ۔
+Event	T0	زلزلے	EVENT	35
+Event	T1	ہوئے	EVENT	80
+Event	T2	آنے	EVENT	121
+Event	T3	زلزلے	EVENT	130
+Event	T4	ہلاک	EVENT	156
+Event	T5	گئے	EVENT	164
+Event	T6	زلزلے	EVENT	228
+Event	T7	گرنے	EVENT	250
+Event	T8	گئے	EVENT	283
+Event	T9	ہوئیں	EVENT	365
+Event	T10	آنے	EVENT	396
+Event	T11	زلزلے	EVENT	405
+Event	T12	ہلاک	EVENT	427
+Event	T13	گئے	EVENT	435
+Relation	T0	T6	NoRel	true	زلزلے	زلزلے
+Relation	T0	T8	NoRel	true	زلزلے	گئے
+Relation	T1	T9	NoRel	true	ہوئے	ہوئیں
+Relation	T10	T11	NoRel	true	آنے	زلزلے
+Relation	T10	T3	NoRel	true	آنے	زلزلے
+Relation	T13	T0	NoRel	true	گئے	زلزلے
+Relation	T13	T1	NoRel	true	گئے	ہوئے
+Relation	T13	T9	NoRel	true	گئے	ہوئیں
+Relation	T2	T0	NoRel	true	آنے	زلزلے
+Relation	T3	T12	NoRel	true	زلزلے	ہلاک
+Relation	T3	T8	NoRel	true	زلزلے	گئے
+Relation	T4	T13	NoRel	true	ہلاک	گئے
+Relation	T4	T8	NoRel	true	ہلاک	گئے
+Relation	T5	T11	NoRel	true	گئے	زلزلے
+Relation	T6	T1	NoRel	true	زلزلے	ہوئے
+Relation	T6	T3	NoRel	true	زلزلے	زلزلے
+Relation	T7	T3	NoRel	true	گرنے	زلزلے
+Relation	T7	T6	NoRel	true	گرنے	زلزلے
+Relation	T8	T12	NoRel	true	گئے	ہلاک
+Relation	T8	T13	NoRel	true	گئے	گئے
+Relation	T8	T3	NoRel	true	گئے	زلزلے
+Relation	T8	T6	NoRel	true	گئے	زلزلے
+Relation	T9	T11	NoRel	true	ہوئیں	زلزلے

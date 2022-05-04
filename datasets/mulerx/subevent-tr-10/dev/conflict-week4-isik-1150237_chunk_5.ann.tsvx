@@ -1,0 +1,49 @@
+Text	Olay yerine gelen halk ve direnişçiler cesetleri araçtan çıkartarak yerlerde sürüdükten sonra Fırat Nehri üzerindeki bir köprüye asarlar .	Olaya dair fotoğrafların dünya kamuoyuna yansıması üzerine ABD Ordusunda şehirde denetimi ele geçirmek için harekât planları yapılmaya başlanır .	sağ | küçükresim | 200px | Muharebenin başlamasıyla beraber ABD birlikleri Felluce'yi abluka altına alıp araç giriş çıkışını durdururlar	Irak’taki tüm ABD harekâtlarından sorumlular arasında yer alan General Mark Kimmitt 1 Nisan günü yaptığı açıklamada Blackwater ölümleriyle ilgili açıklama yapar , direnişe sert şekilde cevap verileceğini ve şehirde asayişin sağlanacağını belirtir .	3 Nisan günü Felluce’ye karşı harekât emri yayınlanır .
+Event	T0	Olay	EVENT	0
+Event	T1	sürüdükten	EVENT	77
+Event	T2	yansıması	EVENT	180
+Event	T3	geçirmek	EVENT	233
+Event	T4	başlanır	EVENT	274
+Event	T5	alıp	EVENT	385
+Event	T6	ölümleriyle	EVENT	549
+Event	T7	yapar	EVENT	577
+Event	T8	belirtir	EVENT	660
+Event	T9	yayınlanır	EVENT	714
+Event	T10	asarlar	EVENT	129
+Event	T11	çıkartarak	EVENT	57
+Event	T12	Olaya	EVENT	139
+Event	T13	Muharebenin	EVENT	312
+Event	T15	durdururlar	EVENT	410
+Event	T14	açıklamada	EVENT	527
+Event	T16	direnişe	EVENT	585
+Relation	T0	T12	NoRel	true	Olay	Olaya
+Relation	T1	T15	NoRel	true	sürüdükten	durdururlar
+Relation	T1	T16	NoRel	true	sürüdükten	direnişe
+Relation	T10	T5	NoRel	true	asarlar	alıp
+Relation	T10	T8	NoRel	true	asarlar	belirtir
+Relation	T11	T10	NoRel	true	çıkartarak	asarlar
+Relation	T11	T13	NoRel	true	çıkartarak	Muharebenin
+Relation	T11	T16	NoRel	true	çıkartarak	direnişe
+Relation	T12	T1	NoRel	true	Olaya	sürüdükten
+Relation	T12	T15	NoRel	true	Olaya	durdururlar
+Relation	T13	T0	NoRel	true	Muharebenin	Olay
+Relation	T13	T4	NoRel	true	Muharebenin	başlanır
+Relation	T13	T9	NoRel	true	Muharebenin	yayınlanır
+Relation	T15	T13	NoRel	true	durdururlar	Muharebenin
+Relation	T15	T14	NoRel	true	durdururlar	açıklamada
+Relation	T15	T2	NoRel	true	durdururlar	yansıması
+Relation	T16	T15	NoRel	true	direnişe	durdururlar
+Relation	T2	T11	NoRel	true	yansıması	çıkartarak
+Relation	T2	T15	NoRel	true	yansıması	durdururlar
+Relation	T2	T16	NoRel	true	yansıması	direnişe
+Relation	T3	T11	NoRel	true	geçirmek	çıkartarak
+Relation	T3	T2	NoRel	true	geçirmek	yansıması
+Relation	T4	T10	NoRel	true	başlanır	asarlar
+Relation	T5	T12	NoRel	true	alıp	Olaya
+Relation	T6	T0	NoRel	true	ölümleriyle	Olay
+Relation	T6	T13	NoRel	true	ölümleriyle	Muharebenin
+Relation	T6	T7	NoRel	true	ölümleriyle	yapar
+Relation	T7	T1	NoRel	true	yapar	sürüdükten
+Relation	T7	T3	NoRel	true	yapar	geçirmek
+Relation	T7	T4	NoRel	true	yapar	başlanır
+Relation	T8	T2	NoRel	true	belirtir	yansıması

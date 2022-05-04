@@ -1,0 +1,31 @@
+Text	BULGAR DIRENIŞ HAREKETI , Bulgaristan'ın müttefiki Nazi Almanyası'nın Sovyetler Birliği'ni işgal etmesine tepki gösteren komünistlerin oluşturduğu direniş hareketi .	Bazı bölgelerde Rus göçmenlerde bu harekete katıldı .	Almanların Avrupa'da etkisi arttıkça ülkelerde faşist hükûmetler kuruluyordu .	Bunun bir örneği Bulgaristan'da olmuş ve Çar III. Boris , 1940 başlarında faşistlerden oluşan bir hükûmet kurup başkanlığına da Alman hayranı Prof. Bogdan Filov'u getirmiştir .	Kurulan yeni hükûmet halka yönelik anti - demokratik önlemler almaya başladı .
+Event	T1	tepki	EVENT	106
+Event	T2	hareketi	EVENT	155
+Event	T3	katıldı	EVENT	210
+Event	T4	etkisi	EVENT	241
+Event	T5	kuruluyordu	EVENT	285
+Event	T6	başladı	EVENT	545
+Event	T7	BULGAR DIRENIŞ HAREKETI	EVENT	0
+Event	T8	işgal	EVENT	91
+Event	T9	arttıkça	EVENT	248
+Event	T10	kurup	EVENT	405
+Event	T11	getirmiştir	EVENT	462
+Event	T12	Kurulan	EVENT	476
+Relation	T1	T9	NoRel	true	tepki	arttıkça
+Relation	T10	T5	NoRel	true	kurup	kuruluyordu
+Relation	T10	T8	NoRel	true	kurup	işgal
+Relation	T11	T10	NoRel	true	getirmiştir	kurup
+Relation	T11	T2	NoRel	true	getirmiştir	hareketi
+Relation	T12	T2	NoRel	true	Kurulan	hareketi
+Relation	T12	T9	NoRel	true	Kurulan	arttıkça
+Relation	T2	T6	NoRel	true	hareketi	başladı
+Relation	T3	T9	NoRel	true	katıldı	arttıkça
+Relation	T4	T7	NoRel	true	etkisi	BULGAR DIRENIŞ HAREKETI
+Relation	T5	T1	NoRel	true	kuruluyordu	tepki
+Relation	T5	T10	NoRel	true	kuruluyordu	kurup
+Relation	T5	T11	NoRel	true	kuruluyordu	getirmiştir
+Relation	T5	T9	NoRel	true	kuruluyordu	arttıkça
+Relation	T6	T12	NoRel	true	başladı	Kurulan
+Relation	T7	T10	NoRel	true	BULGAR DIRENIŞ HAREKETI	kurup
+Relation	T7	T2	NoRel	true	BULGAR DIRENIŞ HAREKETI	hareketi
+Relation	T8	T7	NoRel	true	işgal	BULGAR DIRENIŞ HAREKETI

@@ -1,0 +1,75 @@
+Text	Pasarían más de tres décadas para que su cuerpo fuera sometido a una autopsia .	El 26 de abril de 2000 , el exgobernador de Río de Janeiro , Leonel Brizola sostuvo que los expresidentes de Brasil Joao Goulart y Juscelino Kubitschek fueron asesinados como parte de la Operación Cóndor , y pidió la apertura de las investigaciones sobre sus muertes .	Juscelino Kubitschek murió en un accidente de automóvil .	El 27 de enero de 2008 , el periódico Folha de São Paulo publicó una historia con una declaración de Mario Neira Barreiro , exmiembro del servicio de inteligencia de la dictadura de Uruguay , y declaró que Goulart fue envenenado , haciendo suyas las sospechas de Brizola .	La orden de asesinar a Goulart , según él , provenía de Sérgio Fleury , director del Departamento de Ordem Política e Social ( Departamento de Orden Político y Social ) y la licencia para matar vino del presidente Ernesto Geisel mismo .
+Event	T0	Pasarían	EVENT	0
+Event	T1	autopsia	EVENT	69
+Event	T2	sostuvo	EVENT	156
+Event	T3	asesinados	EVENT	239
+Event	T4	Operación	EVENT	267
+Event	T5	pidió	EVENT	288
+Event	T6	apertura	EVENT	297
+Event	T7	investigaciones	EVENT	313
+Event	T8	muertes	EVENT	339
+Event	T9	accidente	EVENT	382
+Event	T10	publicó	EVENT	464
+Event	T11	historia	EVENT	476
+Event	T12	declaración	EVENT	493
+Event	T13	dictadura	EVENT	576
+Event	T14	declaró	EVENT	601
+Event	T15	envenenado	EVENT	625
+Event	T16	sospechas	EVENT	657
+Event	T17	orden	EVENT	683
+Event	T18	asesinar	EVENT	692
+Event	T19	provenía	EVENT	724
+Event	T20	licencia	EVENT	854
+Event	T21	matar	EVENT	868
+Relation	T8	T6	SuperSub	true	muertes	apertura
+Relation	T6	T8	SubSuper	true	apertura	muertes
+Relation	T1	T15	NoRel	true	autopsia	envenenado
+Relation	T1	T16	NoRel	true	autopsia	sospechas
+Relation	T10	T14	NoRel	true	publicó	declaró
+Relation	T10	T17	NoRel	true	publicó	orden
+Relation	T10	T21	NoRel	true	publicó	matar
+Relation	T10	T3	NoRel	true	publicó	asesinados
+Relation	T11	T10	NoRel	true	historia	publicó
+Relation	T11	T5	NoRel	true	historia	pidió
+Relation	T12	T1	NoRel	true	declaración	autopsia
+Relation	T12	T17	NoRel	true	declaración	orden
+Relation	T12	T6	NoRel	true	declaración	apertura
+Relation	T12	T7	NoRel	true	declaración	investigaciones
+Relation	T13	T18	NoRel	true	dictadura	asesinar
+Relation	T14	T12	NoRel	true	declaró	declaración
+Relation	T14	T3	NoRel	true	declaró	asesinados
+Relation	T14	T8	NoRel	true	declaró	muertes
+Relation	T15	T1	NoRel	true	envenenado	autopsia
+Relation	T15	T11	NoRel	true	envenenado	historia
+Relation	T15	T18	NoRel	true	envenenado	asesinar
+Relation	T15	T20	NoRel	true	envenenado	licencia
+Relation	T16	T9	NoRel	true	sospechas	accidente
+Relation	T17	T21	NoRel	true	orden	matar
+Relation	T17	T6	NoRel	true	orden	apertura
+Relation	T18	T21	NoRel	true	asesinar	matar
+Relation	T18	T9	NoRel	true	asesinar	accidente
+Relation	T19	T18	NoRel	true	provenía	asesinar
+Relation	T2	T15	NoRel	true	sostuvo	envenenado
+Relation	T2	T18	NoRel	true	sostuvo	asesinar
+Relation	T20	T15	NoRel	true	licencia	envenenado
+Relation	T20	T16	NoRel	true	licencia	sospechas
+Relation	T20	T9	NoRel	true	licencia	accidente
+Relation	T21	T8	NoRel	true	matar	muertes
+Relation	T3	T18	NoRel	true	asesinados	asesinar
+Relation	T4	T10	NoRel	true	Operación	publicó
+Relation	T4	T5	NoRel	true	Operación	pidió
+Relation	T5	T7	NoRel	true	pidió	investigaciones
+Relation	T6	T13	NoRel	true	apertura	dictadura
+Relation	T6	T16	NoRel	true	apertura	sospechas
+Relation	T6	T17	NoRel	true	apertura	orden
+Relation	T6	T19	NoRel	true	apertura	provenía
+Relation	T6	T20	NoRel	true	apertura	licencia
+Relation	T6	T5	NoRel	true	apertura	pidió
+Relation	T7	T16	NoRel	true	investigaciones	sospechas
+Relation	T8	T15	NoRel	true	muertes	envenenado
+Relation	T8	T18	NoRel	true	muertes	asesinar
+Relation	T8	T7	NoRel	true	muertes	investigaciones
+Relation	T9	T11	NoRel	true	accidente	historia
+Relation	T9	T13	NoRel	true	accidente	dictadura
+Relation	T9	T17	NoRel	true	accidente	orden
+Relation	T9	T20	NoRel	true	accidente	licencia

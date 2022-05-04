@@ -1,0 +1,43 @@
+Text	El día anterior a la toma de esta medida , el vuelo 2043 de Conviasa , con 97 pasajeros a bordo , emitió la señal _ mayday _ , y aterrizó de emergencia en el Aeropuerto Internacional de Maiquetía , cerca de Caracas , sin inconvenientes .	La aeronave que tuvo el accidente fue un ATR 42-320 número de serie 1010 , matrícula YV-1010 .	Esta aeronave hizo su viaje inaugural en 1994 .	Este modelo cuenta con 2 motores General y un alcance máximo de 1.611 kilómetros .	El avión había tenido varias fallas anteriormente , por lo que fue llevado a reparar a una empresa no certificada en los Estados Unidos , reparación que tuvo un costo de 1.000.000 USD .
+Event	T0	toma	EVENT	21
+Event	T1	medida	EVENT	34
+Event	T2	vuelo	EVENT	46
+Event	T3	emitió	EVENT	98
+Event	T4	señal	EVENT	108
+Event	T5	aterrizó	EVENT	129
+Event	T6	emergencia	EVENT	141
+Event	T7	tuvo	EVENT	254
+Event	T8	accidente	EVENT	262
+Event	T9	hizo	EVENT	347
+Event	T10	inaugural	EVENT	361
+Event	T11	tenido	EVENT	479
+Event	T12	fallas	EVENT	493
+Event	T13	reparar	EVENT	541
+Event	T14	reparación	EVENT	602
+Relation	T2	T3	SuperSub	true	vuelo	emitió
+Relation	T3	T2	SubSuper	true	emitió	vuelo
+Relation	T2	T5	SuperSub	true	vuelo	aterrizó
+Relation	T5	T2	SubSuper	true	aterrizó	vuelo
+Relation	T0	T7	NoRel	true	toma	tuvo
+Relation	T0	T9	NoRel	true	toma	hizo
+Relation	T10	T5	NoRel	true	inaugural	aterrizó
+Relation	T11	T14	NoRel	true	tenido	reparación
+Relation	T12	T0	NoRel	true	fallas	toma
+Relation	T12	T14	NoRel	true	fallas	reparación
+Relation	T12	T3	NoRel	true	fallas	emitió
+Relation	T12	T6	NoRel	true	fallas	emergencia
+Relation	T12	T9	NoRel	true	fallas	hizo
+Relation	T14	T0	NoRel	true	reparación	toma
+Relation	T14	T1	NoRel	true	reparación	medida
+Relation	T14	T11	NoRel	true	reparación	tenido
+Relation	T2	T10	NoRel	true	vuelo	inaugural
+Relation	T2	T7	NoRel	true	vuelo	tuvo
+Relation	T4	T13	NoRel	true	señal	reparar
+Relation	T4	T2	NoRel	true	señal	vuelo
+Relation	T4	T9	NoRel	true	señal	hizo
+Relation	T5	T0	NoRel	true	aterrizó	toma
+Relation	T5	T6	NoRel	true	aterrizó	emergencia
+Relation	T6	T10	NoRel	true	emergencia	inaugural
+Relation	T6	T7	NoRel	true	emergencia	tuvo
+Relation	T6	T9	NoRel	true	emergencia	hizo
+Relation	T9	T3	NoRel	true	hizo	emitió

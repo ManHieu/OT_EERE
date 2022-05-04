@@ -1,0 +1,38 @@
+Text	There , al - Ghamdi showed his Virginia ID Card as identification , and boarded Flight 175 where he sat the furthest back of the hijackers , in seat 9D , helped to hijack it , and assisted as the plane crashed into the World Trade Center .	The brothers pushed the passengers and crew to the back of the plane while Fayez Banihammad and Mohand al - Shehri killed the pilots Victor Saracini and Michael Horrocks allowing Marwan al - Shehhi to take control of the plane .	Category : United Airlines Flight 175	Category : 2001 deaths Category : Saudi Arabian al - Qaeda members Category : Participants in the September 11 attacks Category : 1979 births	Category : Saudi Arabian mass murderers Category : Saudi Arabian murderers of children Category : Saudi Arabian expatriates in the United States Category : People from Al - Bahah Province
+Event	T0	showed	EVENT	20
+Event	T1	boarded	EVENT	72
+Event	T2	sat	EVENT	100
+Event	T3	helped	EVENT	154
+Event	T4	hijack	EVENT	164
+Event	T5	assisted	EVENT	180
+Event	T6	pushed	EVENT	253
+Event	T7	killed	EVENT	355
+Event	T8	allowing	EVENT	410
+Event	T9	deaths	EVENT	523
+Event	T10	births	EVENT	642
+Event	T11	murderers	EVENT	679
+Event	T12	murderers	EVENT	714
+Event	T13	crashed	EVENT	202
+Event	T14	control	EVENT	446
+Relation	T0	T1	SuperSub	true	showed	boarded
+Relation	T1	T0	SubSuper	true	boarded	showed
+Relation	T0	T12	NoRel	true	showed	murderers
+Relation	T0	T13	NoRel	true	showed	crashed
+Relation	T0	T6	NoRel	true	showed	pushed
+Relation	T1	T9	NoRel	true	boarded	deaths
+Relation	T10	T6	NoRel	true	births	pushed
+Relation	T12	T14	NoRel	true	murderers	control
+Relation	T12	T3	NoRel	true	murderers	helped
+Relation	T13	T0	NoRel	true	crashed	showed
+Relation	T14	T0	NoRel	true	control	showed
+Relation	T14	T6	NoRel	true	control	pushed
+Relation	T2	T9	NoRel	true	sat	deaths
+Relation	T3	T1	NoRel	true	helped	boarded
+Relation	T3	T2	NoRel	true	helped	sat
+Relation	T3	T5	NoRel	true	helped	assisted
+Relation	T4	T11	NoRel	true	hijack	murderers
+Relation	T6	T10	NoRel	true	pushed	births
+Relation	T7	T0	NoRel	true	killed	showed
+Relation	T7	T1	NoRel	true	killed	boarded
+Relation	T9	T1	NoRel	true	deaths	boarded
+Relation	T9	T10	NoRel	true	deaths	births

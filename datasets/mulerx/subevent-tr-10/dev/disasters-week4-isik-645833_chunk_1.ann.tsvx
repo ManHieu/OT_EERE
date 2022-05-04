@@ -1,0 +1,28 @@
+Text	Bu kurum silahlı kuvvetler , özel sektör ( yerel , ulusal ve uluslararası ) , sivil toplum kuruluşları , yabancı hükümetler ve BM kuruluşları tarafından destekleniyordu .	Henüz yaşamakta olan kişilerin aranması , yaralıların bulundukları bölgeden ivedilikle taşınmaları , enkazın kaldırılması , güvenlik önlemlerinin sıkılaştırılması ve depremden etkilenen insanların gereksinimlerine yanıt verilmesi öncelikle ele alınan tedbirlerdi .	Evlerini yitiren insanlara barınma olanağı sağlandı , portatif tuvaletler sipariş edildi , temiz su ve sağlık hizmetleri sunulmaya başlandı , gıda yardımına hız verildi ve özellikle çocuklar için eğitsel ve psikososyal destek sağlandı .	Hemen deprem sonrasında 37 milyon dolarlık bir gelir toplandı .	Bu miktarın 9.5 milyon doları Acil Yardım Destek Ödeneği ( CERF ) tarafından karşılandı .
+Event	T0	aranması	EVENT	202
+Event	T1	taşınmaları	EVENT	258
+Event	T2	kaldırılması	EVENT	280
+Event	T3	yitiren	EVENT	445
+Event	T4	sağlandı	EVENT	479
+Event	T5	edildi	EVENT	518
+Event	T6	verildi	EVENT	597
+Event	T7	sağlandı	EVENT	662
+Event	T8	deprem	EVENT	679
+Event	T9	toplandı	EVENT	726
+Event	T10	karşılandı	EVENT	814
+Event	T11	sıkılaştırılması	EVENT	317
+Event	T12	verilmesi	EVENT	391
+Event	T13	başlandı	EVENT	567
+Relation	T0	T12	NoRel	true	aranması	verilmesi
+Relation	T1	T7	NoRel	true	taşınmaları	sağlandı
+Relation	T12	T11	NoRel	true	verilmesi	sıkılaştırılması
+Relation	T2	T0	NoRel	true	kaldırılması	aranması
+Relation	T2	T10	NoRel	true	kaldırılması	karşılandı
+Relation	T2	T3	NoRel	true	kaldırılması	yitiren
+Relation	T3	T13	NoRel	true	yitiren	başlandı
+Relation	T4	T0	NoRel	true	sağlandı	aranması
+Relation	T4	T8	NoRel	true	sağlandı	deprem
+Relation	T5	T3	NoRel	true	edildi	yitiren
+Relation	T5	T6	NoRel	true	edildi	verildi
+Relation	T6	T1	NoRel	true	verildi	taşınmaları
+Relation	T7	T11	NoRel	true	sağlandı	sıkılaştırılması

@@ -1,0 +1,64 @@
+Text	Cuando salió brevemente para hacer una llamada telefónica al día siguiente , los rehenes convencieron al conductor para que los ayudara a escapar .	Varado , Hess llamó a su esposa , quien le llevó una bicicleta para que pudiera regresar a la ciudad .	Se hospedó en casa con los Haushofer y luego huyó a Austria , pero lo convencieron de que regresara .	Fue detenido y sentenciado a dieciocho meses de prisión por su rol en el intento de golpe de Estado , que más tarde se conoció como el _ Putsch _ de la cervecería .	Hitler fue sentenciado a cinco años de prisión y el NSDAP y las SA fueron prohibidos .
+Event	T0	salió	EVENT	7
+Event	T1	hacer	EVENT	29
+Event	T2	llamada	EVENT	39
+Event	T3	convencieron	EVENT	89
+Event	T4	ayudara	EVENT	128
+Event	T5	escapar	EVENT	138
+Event	T6	llevó	EVENT	191
+Event	T7	regresar	EVENT	228
+Event	T8	regresara	EVENT	341
+Event	T9	detenido	EVENT	357
+Event	T10	sentenciado	EVENT	368
+Event	T11	rol	EVENT	416
+Event	T12	intento	EVENT	426
+Event	T13	golpe	EVENT	437
+Event	T14	conoció	EVENT	472
+Event	T15	sentenciado	EVENT	529
+Event	T16	prohibidos	EVENT	592
+Event	T17	hospedó	EVENT	254
+Event	T18	huyó	EVENT	296
+Relation	T0	T11	NoRel	true	salió	rol
+Relation	T0	T12	NoRel	true	salió	intento
+Relation	T0	T7	NoRel	true	salió	regresar
+Relation	T1	T11	NoRel	true	hacer	rol
+Relation	T1	T3	NoRel	true	hacer	convencieron
+Relation	T10	T7	NoRel	true	sentenciado	regresar
+Relation	T11	T18	NoRel	true	rol	huyó
+Relation	T12	T11	NoRel	true	intento	rol
+Relation	T12	T17	NoRel	true	intento	hospedó
+Relation	T12	T4	NoRel	true	intento	ayudara
+Relation	T12	T8	NoRel	true	intento	regresara
+Relation	T12	T9	NoRel	true	intento	detenido
+Relation	T13	T1	NoRel	true	golpe	hacer
+Relation	T13	T15	NoRel	true	golpe	sentenciado
+Relation	T13	T6	NoRel	true	golpe	llevó
+Relation	T14	T10	NoRel	true	conoció	sentenciado
+Relation	T14	T18	NoRel	true	conoció	huyó
+Relation	T15	T12	NoRel	true	sentenciado	intento
+Relation	T15	T18	NoRel	true	sentenciado	huyó
+Relation	T16	T5	NoRel	true	prohibidos	escapar
+Relation	T16	T9	NoRel	true	prohibidos	detenido
+Relation	T17	T11	NoRel	true	hospedó	rol
+Relation	T17	T8	NoRel	true	hospedó	regresara
+Relation	T18	T0	NoRel	true	huyó	salió
+Relation	T18	T15	NoRel	true	huyó	sentenciado
+Relation	T18	T3	NoRel	true	huyó	convencieron
+Relation	T2	T0	NoRel	true	llamada	salió
+Relation	T2	T5	NoRel	true	llamada	escapar
+Relation	T2	T7	NoRel	true	llamada	regresar
+Relation	T2	T8	NoRel	true	llamada	regresara
+Relation	T4	T0	NoRel	true	ayudara	salió
+Relation	T4	T14	NoRel	true	ayudara	conoció
+Relation	T5	T10	NoRel	true	escapar	sentenciado
+Relation	T5	T11	NoRel	true	escapar	rol
+Relation	T5	T4	NoRel	true	escapar	ayudara
+Relation	T6	T15	NoRel	true	llevó	sentenciado
+Relation	T6	T5	NoRel	true	llevó	escapar
+Relation	T7	T12	NoRel	true	regresar	intento
+Relation	T7	T13	NoRel	true	regresar	golpe
+Relation	T7	T8	NoRel	true	regresar	regresara
+Relation	T8	T14	NoRel	true	regresara	conoció
+Relation	T9	T2	NoRel	true	detenido	llamada
+Relation	T9	T6	NoRel	true	detenido	llevó
+Relation	T9	T8	NoRel	true	detenido	regresara

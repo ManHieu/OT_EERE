@@ -1,0 +1,71 @@
+Text	They were allowed to return after 1856 .	During their period of exile , rivalry between the various factions became obvious , a conflict which became the basis for political allegiances in later years .	In the meantime , Magheru , upon the advice of Colquhoun , ordered the demobilization of his troops ( October 10 ) , and , accompanied by a few of his officers , passed the Southern Carpathians into Hermannstadt — at the time , the Transylvanian city was nominally in the Austrian Empire , but gripped by the Hungarian Revolution .	Starting in December 1848 , a number of Wallachian revolutionaries who had escaped or had been set free from arrest began mediating an understanding between Hungary 's Lajos Kossuth and those Romanian Transylvanian activists and peasants who , under the leadership of Avram Iancu , were mounting military resistance to the _ Honvédség _ troops of Józef Bem .	Nicolae Bălcescu emerged from his refuge in the Principality of Serbia , and , together with Alexandru G. Golescu and Ion Ionescu de la Brad , began talks with Iancu in Zlatna .
+Event	T0	allowed	EVENT	10
+Event	T1	return	EVENT	21
+Event	T2	exile	EVENT	64
+Event	T3	rivalry	EVENT	72
+Event	T4	obvious	EVENT	116
+Event	T5	conflict	EVENT	128
+Event	T6	became	EVENT	143
+Event	T7	allegiances	EVENT	174
+Event	T8	ordered	EVENT	262
+Event	T9	demobilization	EVENT	274
+Event	T10	passed	EVENT	365
+Event	T11	gripped	EVENT	497
+Event	T12	Revolution	EVENT	522
+Event	T13	Starting	EVENT	535
+Event	T14	escaped	EVENT	610
+Event	T15	mediating	EVENT	657
+Event	T16	understanding	EVENT	670
+Event	T17	mounting	EVENT	822
+Event	T18	resistance	EVENT	840
+Event	T19	emerged	EVENT	911
+Event	T20	refuge	EVENT	928
+Event	T21	talks	EVENT	1043
+Event	T22	advice	EVENT	240
+Event	T23	accompanied	EVENT	326
+Relation	T10	T23	SuperSub	true	passed	accompanied
+Relation	T23	T10	SubSuper	true	accompanied	passed
+Relation	T0	T11	NoRel	true	allowed	gripped
+Relation	T1	T20	NoRel	true	return	refuge
+Relation	T1	T4	NoRel	true	return	obvious
+Relation	T10	T18	NoRel	true	passed	resistance
+Relation	T12	T0	NoRel	true	Revolution	allowed
+Relation	T12	T21	NoRel	true	Revolution	talks
+Relation	T12	T5	NoRel	true	Revolution	conflict
+Relation	T13	T10	NoRel	true	Starting	passed
+Relation	T13	T3	NoRel	true	Starting	rivalry
+Relation	T13	T5	NoRel	true	Starting	conflict
+Relation	T14	T1	NoRel	true	escaped	return
+Relation	T14	T18	NoRel	true	escaped	resistance
+Relation	T14	T21	NoRel	true	escaped	talks
+Relation	T14	T8	NoRel	true	escaped	ordered
+Relation	T15	T2	NoRel	true	mediating	exile
+Relation	T16	T6	NoRel	true	understanding	became
+Relation	T17	T13	NoRel	true	mounting	Starting
+Relation	T17	T3	NoRel	true	mounting	rivalry
+Relation	T17	T9	NoRel	true	mounting	demobilization
+Relation	T18	T14	NoRel	true	resistance	escaped
+Relation	T18	T19	NoRel	true	resistance	emerged
+Relation	T19	T3	NoRel	true	emerged	rivalry
+Relation	T19	T8	NoRel	true	emerged	ordered
+Relation	T2	T0	NoRel	true	exile	allowed
+Relation	T2	T13	NoRel	true	exile	Starting
+Relation	T2	T4	NoRel	true	exile	obvious
+Relation	T20	T11	NoRel	true	refuge	gripped
+Relation	T20	T15	NoRel	true	refuge	mediating
+Relation	T20	T3	NoRel	true	refuge	rivalry
+Relation	T21	T7	NoRel	true	talks	allegiances
+Relation	T22	T19	NoRel	true	advice	emerged
+Relation	T22	T7	NoRel	true	advice	allegiances
+Relation	T23	T15	NoRel	true	accompanied	mediating
+Relation	T3	T22	NoRel	true	rivalry	advice
+Relation	T3	T8	NoRel	true	rivalry	ordered
+Relation	T4	T23	NoRel	true	obvious	accompanied
+Relation	T4	T6	NoRel	true	obvious	became
+Relation	T5	T10	NoRel	true	conflict	passed
+Relation	T6	T16	NoRel	true	became	understanding
+Relation	T6	T22	NoRel	true	became	advice
+Relation	T7	T9	NoRel	true	allegiances	demobilization
+Relation	T8	T15	NoRel	true	ordered	mediating
+Relation	T8	T23	NoRel	true	ordered	accompanied
+Relation	T9	T14	NoRel	true	demobilization	escaped

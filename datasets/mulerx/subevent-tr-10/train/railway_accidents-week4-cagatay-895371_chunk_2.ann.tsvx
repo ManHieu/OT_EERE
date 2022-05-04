@@ -1,0 +1,34 @@
+Text	Aynı raporda kaza mahalinde makinistler için uyarıcı işaret ve tabela bulunmadığı , toplam yolculuk için verilen 5 saat 15 dakikanın yeterli olmadığı ve uygun olmayan altyapının da kazayı etkileyen faktörlerden olduğu belirtilmiştir .	Sakarya 2. Ağır Ceza Mahkemesi'nde görülen davada sanıkların avukatı Salih Ekizler , kaza sırasında vagonlardan savrulan parçaların kazadan hemen sonra TCDD yetkilileri tarafından bulundukları yerlerden alınarak yol kenarına öbeklendiğini ve bu şekilde delillerin karartıldığını iddia edecektir .	Dava , Sakarya 2. Ağır Ceza Mahkemesi'nde görüldü .	Davanın sonuçlanmasıyla beraber 1. makinist Fikret Karabulut 2 yıl 6 ay hapis ve 100 YTL para cezasına , 2. makinist Recep Sönmez 1 yıl 3 ay hapis ile 333 YTL para cezasına çarptırılır .	Tren Şefi Köksal Coşkun ise beraat eder .
+Event	T0	kaza	EVENT	13
+Event	T1	yolculuk	EVENT	91
+Event	T2	etkileyen	EVENT	188
+Event	T3	belirtilmiştir	EVENT	218
+Event	T4	davada	EVENT	278
+Event	T5	kaza	EVENT	320
+Event	T6	savrulan	EVENT	347
+Event	T7	öbeklendiğini	EVENT	460
+Event	T8	edecektir	EVENT	520
+Event	T9	Dava	EVENT	532
+Event	T10	görüldü	EVENT	574
+Event	T11	çarptırılır	EVENT	757
+Event	T12	eder	EVENT	806
+Event	T13	verilen	EVENT	105
+Event	T14	karartıldığını	EVENT	499
+Relation	T0	T10	NoRel	true	kaza	görüldü
+Relation	T10	T3	NoRel	true	görüldü	belirtilmiştir
+Relation	T10	T9	NoRel	true	görüldü	Dava
+Relation	T11	T1	NoRel	true	çarptırılır	yolculuk
+Relation	T11	T5	NoRel	true	çarptırılır	kaza
+Relation	T12	T6	NoRel	true	eder	savrulan
+Relation	T13	T6	NoRel	true	verilen	savrulan
+Relation	T14	T9	NoRel	true	karartıldığını	Dava
+Relation	T2	T5	NoRel	true	etkileyen	kaza
+Relation	T3	T4	NoRel	true	belirtilmiştir	davada
+Relation	T4	T1	NoRel	true	davada	yolculuk
+Relation	T4	T2	NoRel	true	davada	etkileyen
+Relation	T5	T14	NoRel	true	kaza	karartıldığını
+Relation	T6	T1	NoRel	true	savrulan	yolculuk
+Relation	T6	T13	NoRel	true	savrulan	verilen
+Relation	T7	T14	NoRel	true	öbeklendiğini	karartıldığını
+Relation	T7	T2	NoRel	true	öbeklendiğini	etkileyen
+Relation	T9	T13	NoRel	true	Dava	verilen

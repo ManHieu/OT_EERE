@@ -1,0 +1,34 @@
+Text	Boeing dejó de fabricar el 777 con motores de la serie P & W PW4000 en 2013 , y el motor ya no está en producción activa .	El Boeing 777 es un avión bimotor de fuselaje ancho y largo alcance .	En el momento del incidente , tenía una tasa de mortalidad por accidentes relativamente baja .	Los únicos dos accidentes con pérdida total de aeronaves , pasajeros y tripulación son los vuelos MH17 de Malaysia Airlines que fue derribado sobre Ucrania en julio de 2014 y MH 370 que desapareció sobre el Océano Índico en marzo de 2014 .	Los otros accidentes fatales , el vuelo 521 de Emirates y el vuelo 214 de Asiana Airlines , se atribuyeron a errores del piloto .
+Event	T0	dejó	EVENT	7
+Event	T1	fabricar	EVENT	15
+Event	T2	incidente	EVENT	211
+Event	T3	mortalidad	EVENT	241
+Event	T4	accidentes	EVENT	256
+Event	T5	accidentes	EVENT	303
+Event	T6	vuelos	EVENT	379
+Event	T7	derribado	EVENT	420
+Event	T8	desapareció	EVENT	474
+Event	T9	fatales	EVENT	549
+Event	T10	vuelo	EVENT	562
+Event	T11	atribuyeron	EVENT	623
+Event	T12	errores	EVENT	637
+Event	T13	accidentes	EVENT	538
+Relation	T1	T10	NoRel	true	fabricar	vuelo
+Relation	T1	T5	NoRel	true	fabricar	accidentes
+Relation	T10	T12	NoRel	true	vuelo	errores
+Relation	T10	T4	NoRel	true	vuelo	accidentes
+Relation	T11	T2	NoRel	true	atribuyeron	incidente
+Relation	T12	T2	NoRel	true	errores	incidente
+Relation	T12	T7	NoRel	true	errores	derribado
+Relation	T2	T13	NoRel	true	incidente	accidentes
+Relation	T2	T6	NoRel	true	incidente	vuelos
+Relation	T3	T0	NoRel	true	mortalidad	dejó
+Relation	T3	T1	NoRel	true	mortalidad	fabricar
+Relation	T4	T11	NoRel	true	accidentes	atribuyeron
+Relation	T4	T13	NoRel	true	accidentes	accidentes
+Relation	T6	T2	NoRel	true	vuelos	incidente
+Relation	T7	T1	NoRel	true	derribado	fabricar
+Relation	T7	T3	NoRel	true	derribado	mortalidad
+Relation	T7	T5	NoRel	true	derribado	accidentes
+Relation	T8	T0	NoRel	true	desapareció	dejó
+Relation	T9	T13	NoRel	true	fatales	accidentes

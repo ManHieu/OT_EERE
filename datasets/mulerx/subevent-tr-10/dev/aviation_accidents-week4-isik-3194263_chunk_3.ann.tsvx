@@ -1,0 +1,25 @@
+Text	Azerbaycan tarihinin en ölümcül helikopter kazası 20 Kasım 1991'de Hocavend Rayonunun Karakent köyü yakınlarında meydana geldi .	Olayda Tevfik İsmailov , İsmet Gayibov , Muhammet Esedov ve diğerleri de dahil olmak üzere toplam 22 kişi ölmüştü .	24 Temmuz 2019'da Azerbaycan Hava Kuvvetleri'ne ait MIG - 29 uçağı eğitim uçuşları yaparken aniden radarlardan kayboldu .	Uçak Hazar Denizi'ne düşmesiyle pilot Yarbay Reşat Atakişiyev kayboldu ve uzun bir aramanın ardından pilotun cesedi bulundu .	30 Kasım 2021 günü saat 10: 40 sularında Devlet Sınır Hizmetine ait Mil Mi - 17 askeri helikopteri Sengeçal'dan havalandı ve Hızı Rayonundaki Karaheybet uçuş alanında eğitim uçuşları yaptığı sırada düştü .
+Event	T0	kazası	EVENT	43
+Event	T1	geldi	EVENT	121
+Event	T2	ölmüştü	EVENT	235
+Event	T3	kayboldu	EVENT	356
+Event	T4	düşmesiyle	EVENT	388
+Event	T5	kayboldu	EVENT	429
+Event	T6	aramanın	EVENT	450
+Event	T7	bulundu	EVENT	483
+Event	T8	havalandı	EVENT	605
+Event	T11	düştü	EVENT	691
+Event	T12	Olayda	EVENT	129
+Event	T13	uçuşları	EVENT	319
+Event	T9	uçuşları	EVENT	667
+Relation	T0	T13	NoRel	true	kazası	uçuşları
+Relation	T0	T7	NoRel	true	kazası	bulundu
+Relation	T0	T8	NoRel	true	kazası	havalandı
+Relation	T1	T6	NoRel	true	geldi	aramanın
+Relation	T11	T12	NoRel	true	düştü	Olayda
+Relation	T4	T3	NoRel	true	düşmesiyle	kayboldu
+Relation	T5	T1	NoRel	true	kayboldu	geldi
+Relation	T5	T4	NoRel	true	kayboldu	düşmesiyle
+Relation	T6	T13	NoRel	true	aramanın	uçuşları
+Relation	T7	T5	NoRel	true	bulundu	kayboldu
+Relation	T8	T0	NoRel	true	havalandı	kazası

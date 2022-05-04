@@ -1,0 +1,38 @@
+Text	Los británicos destruyeron el lugar de nacimiento del Mulá , Kob Faradod , y otros lugares , pero evitando siempre destruir mezquitas .	En el primer combate contra los derviches se usaron ametralladoras que devastaron los campos de los rebeldes ( Afbakayle , 3 de junio ) .	El segundo combate fue en Fardhhirin ( 16 de julio ) .	Los británicos persiguieron a los seguidores del Mulá día y noche , pero estos , buenos conocedores del terreno , no se dejaron atrapar y finalmente los británicos se retiraron .	Las bajas de los derviches se estimaron en unos 1200 muertos y heridos y atraparon a 800 prisioneros incluyendo a algunos notables .
+Event	T0	destruyeron	EVENT	15
+Event	T1	destruir	EVENT	115
+Event	T10	muertos	EVENT	561
+Event	T11	heridos	EVENT	571
+Event	T12	atraparon	EVENT	581
+Event	T2	combate	EVENT	149
+Event	T3	devastaron	EVENT	207
+Event	T4	combate	EVENT	285
+Event	T5	persiguieron	EVENT	344
+Event	T6	atrapar	EVENT	457
+Event	T7	retiraron	EVENT	496
+Event	T8	bajas	EVENT	512
+Event	T9	estimaron	EVENT	538
+Relation	T5	T7	SuperSub	true	persiguieron	retiraron
+Relation	T7	T5	SubSuper	true	retiraron	persiguieron
+Relation	T0	T11	NoRel	true	destruyeron	heridos
+Relation	T0	T5	NoRel	true	destruyeron	persiguieron
+Relation	T1	T10	NoRel	true	destruir	muertos
+Relation	T1	T9	NoRel	true	destruir	estimaron
+Relation	T11	T1	NoRel	true	heridos	destruir
+Relation	T11	T6	NoRel	true	heridos	atrapar
+Relation	T11	T7	NoRel	true	heridos	retiraron
+Relation	T12	T10	NoRel	true	atraparon	muertos
+Relation	T2	T7	NoRel	true	combate	retiraron
+Relation	T3	T5	NoRel	true	devastaron	persiguieron
+Relation	T3	T8	NoRel	true	devastaron	bajas
+Relation	T4	T0	NoRel	true	combate	destruyeron
+Relation	T4	T10	NoRel	true	combate	muertos
+Relation	T5	T3	NoRel	true	persiguieron	devastaron
+Relation	T6	T9	NoRel	true	atrapar	estimaron
+Relation	T7	T10	NoRel	true	retiraron	muertos
+Relation	T7	T11	NoRel	true	retiraron	heridos
+Relation	T8	T1	NoRel	true	bajas	destruir
+Relation	T8	T12	NoRel	true	bajas	atraparon
+Relation	T8	T3	NoRel	true	bajas	devastaron
+Relation	T9	T1	NoRel	true	estimaron	destruir
+Relation	T9	T11	NoRel	true	estimaron	heridos

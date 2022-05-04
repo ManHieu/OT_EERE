@@ -1,0 +1,21 @@
+Text	İlk ölüm de doğrulandı .	- İskoçya ilk vakasını doğruladı .	- Singapur dört vakayı daha doğrulayarak toplam sayısını 106'ya çıkardı .	- Güney Kore 376 vakayı daha doğrulayarak toplam sayısını 3.526'ya getirdi .	210 vaka , daha sonra bildirilen 18. ölümle doğrulandı ve toplam sayı 3.736'ya ulaştı .
+Event	T0	ölüm	EVENT	4
+Event	T1	doğrulandı	EVENT	12
+Event	T2	doğruladı	EVENT	48
+Event	T3	çıkardı	EVENT	124
+Event	T4	getirdi	EVENT	201
+Event	T5	bildirilen	EVENT	233
+Event	T6	doğrulandı	EVENT	255
+Event	T7	ulaştı	EVENT	290
+Event	T8	vakasını	EVENT	39
+Event	T9	doğrulayarak	EVENT	88
+Event	T10	doğrulayarak	EVENT	163
+Relation	T10	T0	NoRel	true	doğrulayarak	ölüm
+Relation	T2	T10	NoRel	true	doğruladı	doğrulayarak
+Relation	T3	T0	NoRel	true	çıkardı	ölüm
+Relation	T3	T8	NoRel	true	çıkardı	vakasını
+Relation	T6	T8	NoRel	true	doğrulandı	vakasını
+Relation	T7	T1	NoRel	true	ulaştı	doğrulandı
+Relation	T7	T6	NoRel	true	ulaştı	doğrulandı
+Relation	T8	T4	NoRel	true	vakasını	getirdi
+Relation	T9	T7	NoRel	true	doğrulayarak	ulaştı

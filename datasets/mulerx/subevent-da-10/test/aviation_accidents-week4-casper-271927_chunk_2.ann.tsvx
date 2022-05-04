@@ -1,0 +1,35 @@
+Text	- Stemmeoptagelser fra United 93's sorte boks af både terroristerne og passagererne , der prøver at overtage flyet .	- Øjenvidneberetninger fra passagerer , mens disse beskrev deres sidste øjeblikke overfor familiemedlemmer og myndigheder på _ airphones _ og mobiltelefoner fra de fortabte flys kabiner .	Selvom regeringsrapporter ikke er kendt for deres prosa , blev rapporten meget rost for dens litterære kvaliteter .	I New York Times priste Richard Posner den som " ualmindelig klar , ovenikøbet medrivende " og kaldte den " en usandsynlig litterær triumf " .	Rapporten strøg til tops på flere bestseller-lister og blev rost af anmelderne for dens letlæselighed og styrken af dens fortælling .
+Event	T0	Stemmeoptagelser	EVENT	2
+Event	T1	prøver	EVENT	90
+Event	T2	overtage	EVENT	100
+Event	T3	beskrev	EVENT	168
+Event	T4	fortabte	EVENT	281
+Event	T5	kendt	EVENT	339
+Event	T6	rost	EVENT	384
+Event	T7	priste	EVENT	438
+Event	T8	kaldte	EVENT	516
+Event	T9	triumf	EVENT	553
+Event	T10	strøg	EVENT	574
+Event	T11	rost	EVENT	624
+Event	T12	fortælling	EVENT	685
+Relation	T2	T0	SuperSub	true	overtage	Stemmeoptagelser
+Relation	T0	T2	SubSuper	true	Stemmeoptagelser	overtage
+Relation	T2	T3	SuperSub	true	overtage	beskrev
+Relation	T3	T2	SubSuper	true	beskrev	overtage
+Relation	T6	T7	SuperSub	true	rost	priste
+Relation	T7	T6	SubSuper	true	priste	rost
+Relation	T6	T9	SuperSub	true	rost	triumf
+Relation	T9	T6	SubSuper	true	triumf	rost
+Relation	T1	T0	NoRel	true	prøver	Stemmeoptagelser
+Relation	T1	T11	NoRel	true	prøver	rost
+Relation	T1	T7	NoRel	true	prøver	priste
+Relation	T1	T8	NoRel	true	prøver	kaldte
+Relation	T10	T0	NoRel	true	strøg	Stemmeoptagelser
+Relation	T11	T5	NoRel	true	rost	kendt
+Relation	T2	T10	NoRel	true	overtage	strøg
+Relation	T4	T3	NoRel	true	fortabte	beskrev
+Relation	T5	T8	NoRel	true	kendt	kaldte
+Relation	T5	T9	NoRel	true	kendt	triumf
+Relation	T7	T0	NoRel	true	priste	Stemmeoptagelser
+Relation	T8	T10	NoRel	true	kaldte	strøg
+Relation	T9	T10	NoRel	true	triumf	strøg

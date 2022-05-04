@@ -1,0 +1,22 @@
+Text	Andre fly , såsom General Dynamics F-111 Aardvark , supplerede B-52 i roller , som flyet ikke kunne udføre , såsom missioner i lav højde ved høj hastighed .	B-52'erens officielle navn _ Stratofortress _ er sjældent blevet anvendt ved andet end formelle lejligheder .	Blandt personellet kaldes den _ BUFF _ ( Big Ugly Fat Fucker ) .	Under indtryk af den stadig mere omfattende krig i Sydøstasien blev 28 B-52F'er udstyret med udvendigt ophæng til 24×750 punds bomber ( 340 kg ) i projekt _ South Bay _ i juni 1964 .	Yderligere 46 fly fik tilsvarende ændringer i projekt _ Sun Bath _ .
+Event	T0	supplerede	EVENT	52
+Event	T1	udføre	EVENT	100
+Event	T2	missioner	EVENT	115
+Event	T3	anvendt	EVENT	222
+Event	T4	kaldes	EVENT	286
+Event	T5	indtryk	EVENT	338
+Event	T6	krig	EVENT	376
+Event	T7	udstyret	EVENT	412
+Event	T8	fik	EVENT	533
+Event	T9	ændringer	EVENT	549
+Relation	T7	T8	SuperSub	true	udstyret	fik
+Relation	T8	T7	SubSuper	true	fik	udstyret
+Relation	T1	T8	NoRel	true	udføre	fik
+Relation	T3	T4	NoRel	true	anvendt	kaldes
+Relation	T4	T0	NoRel	true	kaldes	supplerede
+Relation	T4	T9	NoRel	true	kaldes	ændringer
+Relation	T5	T7	NoRel	true	indtryk	udstyret
+Relation	T5	T8	NoRel	true	indtryk	fik
+Relation	T6	T7	NoRel	true	krig	udstyret
+Relation	T9	T4	NoRel	true	ændringer	kaldes
+Relation	T9	T5	NoRel	true	ændringer	indtryk

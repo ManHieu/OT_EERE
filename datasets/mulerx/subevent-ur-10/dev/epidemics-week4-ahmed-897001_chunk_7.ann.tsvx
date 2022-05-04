@@ -1,0 +1,24 @@
+Text	24 جنوری جمعہ کے دن چین کی حکومت نے 1000 بستروں کی گنجائش والا ایک ہسپتال 10 دنوں میں بنانے کا وعدہ کیا ۔	خبر رساں ادارے روئٹرز نے ژانجیانگ ڈیلی کے حوالے سے نقل کیا ہے کہ دس بلڈوزر اور تیرہ کے قریب کھدائی کرنے والی مشینیں جمعرات کی شام 23 جنوری کو ووہان کے نو تعمیر ہونے والے ہسپتال کی جگہ پر پہنچے ۔	حکام کے مطابق امید ہے کہ 3 فروری تک 270،000 مربع فٹ پر ہسپتال کی تعمیر مکمل ہوجائے گی ۔	زمرہ : ایشیا میں کورونا وائرس کی وبا ، 2020ء زمرہ : چین میں 2019ء کی آفات زمرہ : چین میں 2020ء کی آفات زمرہ : کورونا وائرس کی وبا بلحاظ ملک و علاقہ ، 2019ء - 2020ء زمرہ : صفحات مع_گراف	
+Event	T0	بنانے	EVENT	86
+Event	T1	پہنچے	EVENT	293
+Event	T3	وعدہ	EVENT	95
+Event	T4	نقل	EVENT	157
+Event	T5	کرنے	EVENT	205
+Event	T6	ہونے	EVENT	266
+Event	T7	مکمل	EVENT	372
+Event	T2	وبا	EVENT	422
+Event	T8	آفات	EVENT	458
+Event	T9	آفات	EVENT	487
+Event	T10	وبا	EVENT	515
+Event	T11	صفحات	EVENT	560
+Relation	T0	T3	SuperSub	true	بنانے	وعدہ
+Relation	T3	T0	SubSuper	true	وعدہ	بنانے
+Relation	T0	T4	NoRel	true	بنانے	نقل
+Relation	T0	T6	NoRel	true	بنانے	ہونے
+Relation	T10	T11	NoRel	true	وبا	صفحات
+Relation	T3	T6	NoRel	true	وعدہ	ہونے
+Relation	T4	T10	NoRel	true	نقل	وبا
+Relation	T4	T8	NoRel	true	نقل	آفات
+Relation	T7	T11	NoRel	true	مکمل	صفحات
+Relation	T8	T2	NoRel	true	آفات	وبا
+Relation	T9	T2	NoRel	true	آفات	وبا

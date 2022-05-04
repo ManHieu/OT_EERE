@@ -1,0 +1,59 @@
+Text	Christian Estrada regresó a la competencia para anunciar se salida , en su lugar Matías Ochoa ingresó al equipo " Leones " .	El participante ingresó a la competencia para sustituir a un guerrero debido a múltiples contagios de COVID-19 , sin embargo , más adelante fue nombrado competidor a tiempo completo .	Garzonio regresó al equipo " Leones " para reemplazar a Paola Peña después de que saliese de la competencia por una lesión .	En la octava semana , se anunció que Agustín Fernández , Asaf Torres y Nicola Porcella incumplieron con los protocolos de cuarentena , por lo que fueron suspendidos del programa , siendo temporalmente sustituidos por los refuerzos Aldo De Nigris , Jorge Losa y Miguel Montaño ( sustituyendo en ese orden a Agustín , Asaf y Nicola ) .	En la octava semana , se anunció que Agustín Fernández , Asaf Torres y Nicola Porcella incumplieron con los protocolos de cuarentena , por lo que fueron suspendidos del programa , siendo temporalmente sustituidos por los refuerzos Aldo De Nigris , Jorge Losa y Miguel Montaño ( sustituyendo en ese orden a Agustín , Asaf y Nicola ) .
+Event	T0	regresó	EVENT	18
+Event	T1	competencia	EVENT	31
+Event	T2	salida	EVENT	60
+Event	T3	ingresó	EVENT	94
+Event	T4	ingresó	EVENT	141
+Event	T5	competencia	EVENT	154
+Event	T6	sustituir	EVENT	171
+Event	T7	contagios	EVENT	214
+Event	T8	regresó	EVENT	318
+Event	T9	saliese	EVENT	391
+Event	T10	competencia	EVENT	405
+Event	T11	lesión	EVENT	425
+Event	T12	anunció	EVENT	459
+Event	T13	incumplieron	EVENT	521
+Event	T14	suspendidos	EVENT	587
+Event	T15	sustituidos	EVENT	635
+Event	T16	sustituyendo	EVENT	712
+Event	T17	anunció	EVENT	793
+Event	T18	incumplieron	EVENT	855
+Event	T19	suspendidos	EVENT	921
+Event	T20	sustituidos	EVENT	969
+Event	T21	sustituyendo	EVENT	1046
+Relation	T0	T13	NoRel	true	regresó	incumplieron
+Relation	T0	T5	NoRel	true	regresó	competencia
+Relation	T1	T0	NoRel	true	competencia	regresó
+Relation	T1	T2	NoRel	true	competencia	salida
+Relation	T10	T11	NoRel	true	competencia	lesión
+Relation	T11	T13	NoRel	true	lesión	incumplieron
+Relation	T11	T17	NoRel	true	lesión	anunció
+Relation	T12	T9	NoRel	true	anunció	saliese
+Relation	T13	T12	NoRel	true	incumplieron	anunció
+Relation	T13	T2	NoRel	true	incumplieron	salida
+Relation	T13	T6	NoRel	true	incumplieron	sustituir
+Relation	T14	T10	NoRel	true	suspendidos	competencia
+Relation	T14	T13	NoRel	true	suspendidos	incumplieron
+Relation	T14	T4	NoRel	true	suspendidos	ingresó
+Relation	T15	T19	NoRel	true	sustituidos	suspendidos
+Relation	T16	T14	NoRel	true	sustituyendo	suspendidos
+Relation	T16	T8	NoRel	true	sustituyendo	regresó
+Relation	T18	T1	NoRel	true	incumplieron	competencia
+Relation	T18	T10	NoRel	true	incumplieron	competencia
+Relation	T18	T3	NoRel	true	incumplieron	ingresó
+Relation	T2	T14	NoRel	true	salida	suspendidos
+Relation	T2	T15	NoRel	true	salida	sustituidos
+Relation	T2	T20	NoRel	true	salida	sustituidos
+Relation	T2	T4	NoRel	true	salida	ingresó
+Relation	T2	T9	NoRel	true	salida	saliese
+Relation	T20	T16	NoRel	true	sustituidos	sustituyendo
+Relation	T21	T10	NoRel	true	sustituyendo	competencia
+Relation	T4	T12	NoRel	true	ingresó	anunció
+Relation	T5	T13	NoRel	true	competencia	incumplieron
+Relation	T5	T21	NoRel	true	competencia	sustituyendo
+Relation	T5	T4	NoRel	true	competencia	ingresó
+Relation	T6	T20	NoRel	true	sustituir	sustituidos
+Relation	T7	T20	NoRel	true	contagios	sustituidos
+Relation	T8	T5	NoRel	true	regresó	competencia
+Relation	T9	T19	NoRel	true	saliese	suspendidos
+Relation	T9	T20	NoRel	true	saliese	sustituidos

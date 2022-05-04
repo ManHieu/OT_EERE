@@ -1,0 +1,25 @@
+Text	En az 42 kişi öldü .	- 21 Aralık , 1978 - Monoz hemzemin geçiti felaketi – Okul çocuklarını taşıyan bir otobüs yolcu treniyle çarpıştı .	En az yirmi yedi ölü ve otuz yedi yaralı .	- Ocak 1989 - Ahungalla hemzemin geçit kazası , — En az elli bir kişi öldü ve 110 kişi yaralandı .	- 2005 - Polgahawela hemzemin geçit çarpışması , Sri Lanka — : bir otobüs , bir hemzemin geçitte bir trene üstün olmaya çalışır ; en az 35 kişi ölür .
+Event	T0	öldü	EVENT	14
+Event	T1	felaketi	EVENT	64
+Event	T2	çarpıştı	EVENT	126
+Event	T3	ölü	EVENT	154
+Event	T4	yaralı	EVENT	171
+Event	T5	kazası	EVENT	219
+Event	T6	öldü	EVENT	250
+Event	T7	yaralandı	EVENT	267
+Event	T8	çarpışması	EVENT	315
+Event	T9	çalışır	EVENT	399
+Event	T10	ölür	EVENT	423
+Relation	T1	T2	SuperSub	true	felaketi	çarpıştı
+Relation	T2	T1	SubSuper	true	çarpıştı	felaketi
+Relation	T1	T4	SuperSub	true	felaketi	yaralı
+Relation	T4	T1	SubSuper	true	yaralı	felaketi
+Relation	T1	T3	SuperSub	true	felaketi	ölü
+Relation	T3	T1	SubSuper	true	ölü	felaketi
+Relation	T0	T3	NoRel	true	öldü	ölü
+Relation	T0	T8	NoRel	true	öldü	çarpışması
+Relation	T10	T7	NoRel	true	ölür	yaralandı
+Relation	T6	T5	NoRel	true	öldü	kazası
+Relation	T8	T0	NoRel	true	çarpışması	öldü
+Relation	T9	T2	NoRel	true	çalışır	çarpıştı
+Relation	T9	T5	NoRel	true	çalışır	kazası

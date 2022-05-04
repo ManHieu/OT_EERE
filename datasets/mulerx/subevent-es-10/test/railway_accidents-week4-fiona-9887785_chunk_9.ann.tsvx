@@ -1,0 +1,23 @@
+Text	El tránsito de la avenida Tláhuac permanecía cerrado en las inmediaciones del accidente .	El tren modelo FE-10 se retiró de la estructura colapsada cerca de las 11 de la mañana .	Claudia Sheinbaum , jefa de gobierno de la Ciudad de México , durante un recorrido en la zona del accidente anunció el inicio de una investigación para deslindar responsabilidades .	No descartó la colaboración de equipos internacionales en dichas labores .	Anunció igualmente el apoyo para las familias de las víctimas .
+Event	T0	tránsito	EVENT	3
+Event	T1	cerrado	EVENT	45
+Event	T2	accidente	EVENT	78
+Event	T3	retiró	EVENT	114
+Event	T4	colapsada	EVENT	138
+Event	T5	recorrido	EVENT	252
+Event	T6	anunció	EVENT	287
+Event	T7	inicio	EVENT	298
+Event	T8	investigación	EVENT	312
+Event	T9	colaboración	EVENT	376
+Event	T10	labores	EVENT	426
+Event	T11	accidente	EVENT	277
+Relation	T0	T8	NoRel	true	tránsito	investigación
+Relation	T10	T3	NoRel	true	labores	retiró
+Relation	T10	T5	NoRel	true	labores	recorrido
+Relation	T10	T8	NoRel	true	labores	investigación
+Relation	T3	T10	NoRel	true	retiró	labores
+Relation	T6	T1	NoRel	true	anunció	cerrado
+Relation	T6	T9	NoRel	true	anunció	colaboración
+Relation	T7	T9	NoRel	true	inicio	colaboración
+Relation	T8	T6	NoRel	true	investigación	anunció
+Relation	T9	T2	NoRel	true	colaboración	accidente

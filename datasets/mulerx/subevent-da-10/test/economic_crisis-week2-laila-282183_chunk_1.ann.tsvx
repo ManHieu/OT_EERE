@@ -1,0 +1,20 @@
+Text	Den bevaringsværdige mølle blev købt af Nationalmuseet i 1961 og siden overdraget til Lemvig museum og i 1978 overtog foreningen Danske Møllers Venner Aa-Mølle .	I forbindelse med en restaurering af møllen og anlæggelse af en ny Møllesø er der etableret en overfaldsmølle .	Møllen har på det ene hjul et gangtøj , der repræsenterer den gamle romerske trækform ( Beigthon Drive ) .	I 1995 nedsætter Gudum sogneforening et udvalg , der i samarbejde med Danske Møllers Venner gik i gang med planlægningen af og restaureringen af Aa-Mølle .	Dette arbejde stod færdigt i 1999 .
+Event	T0	købt	EVENT	32
+Event	T1	overdraget	EVENT	71
+Event	T2	overtog	EVENT	110
+Event	T3	restaurering	EVENT	183
+Event	T4	anlæggelse	EVENT	209
+Event	T5	etableret	EVENT	244
+Event	T6	nedsætter	EVENT	388
+Event	T7	gik	EVENT	473
+Event	T8	restaureringen	EVENT	508
+Relation	T3	T5	SuperSub	true	restaurering	etableret
+Relation	T5	T3	SubSuper	true	etableret	restaurering
+Relation	T4	T5	SuperSub	true	anlæggelse	etableret
+Relation	T5	T4	SubSuper	true	etableret	anlæggelse
+Relation	T6	T8	SuperSub	true	nedsætter	restaureringen
+Relation	T8	T6	SubSuper	true	restaureringen	nedsætter
+Relation	T2	T1	NoRel	true	overtog	overdraget
+Relation	T6	T1	NoRel	true	nedsætter	overdraget
+Relation	T7	T2	NoRel	true	gik	overtog
+Relation	T8	T7	NoRel	true	restaureringen	gik

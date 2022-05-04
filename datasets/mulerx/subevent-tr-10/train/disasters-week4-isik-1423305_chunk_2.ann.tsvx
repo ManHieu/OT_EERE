@@ -1,0 +1,27 @@
+Text	Deprem bölgeyi 9 Kasım 1968 Cumartesi günü saat 11.02'de vurdu .	Sarsıntının merkezi Hamilton County'nın biraz kuzeybatısı Illinois - Indiana sınırına , yaklaşık 120 mil ( 193 km ) doğusu olarak kayıt edildi .	Depremin merkezine en yakın olan yerleşim yerleri ise alçak tepeler üzerine kurulmuş birkaç küçük kasaba idi .	Bilim insanları bu fay hattındaki yırtılmayı güçlü olarak nitelendirmişlerdir .	Deprem sırasında , yüzey dalgası ve cisim dalgası büyüklükleri sırasıyla 5.2 ve 5.54 olarak ölçüldü .
+Event	T0	Deprem	EVENT	0
+Event	T1	vurdu	EVENT	57
+Event	T2	Sarsıntının	EVENT	65
+Event	T3	edildi	EVENT	201
+Event	T4	yırtılmayı	EVENT	355
+Event	T5	nitelendirmişlerdir	EVENT	379
+Event	T6	Deprem	EVENT	401
+Event	T7	ölçüldü	EVENT	493
+Relation	T0	T1	SuperSub	true	Deprem	vurdu
+Relation	T1	T0	SubSuper	true	vurdu	Deprem
+Relation	T0	T4	SuperSub	true	Deprem	yırtılmayı
+Relation	T4	T0	SubSuper	true	yırtılmayı	Deprem
+Relation	T0	T7	SuperSub	true	Deprem	ölçüldü
+Relation	T7	T0	SubSuper	true	ölçüldü	Deprem
+Relation	T0	T3	SuperSub	true	Deprem	edildi
+Relation	T3	T0	SubSuper	true	edildi	Deprem
+Relation	T0	T2	NoRel	true	Deprem	Sarsıntının
+Relation	T1	T3	NoRel	true	vurdu	edildi
+Relation	T1	T4	NoRel	true	vurdu	yırtılmayı
+Relation	T1	T5	NoRel	true	vurdu	nitelendirmişlerdir
+Relation	T2	T7	NoRel	true	Sarsıntının	ölçüldü
+Relation	T3	T1	NoRel	true	edildi	vurdu
+Relation	T4	T2	NoRel	true	yırtılmayı	Sarsıntının
+Relation	T4	T6	NoRel	true	yırtılmayı	Deprem
+Relation	T6	T2	NoRel	true	Deprem	Sarsıntının
+Relation	T6	T7	NoRel	true	Deprem	ölçüldü

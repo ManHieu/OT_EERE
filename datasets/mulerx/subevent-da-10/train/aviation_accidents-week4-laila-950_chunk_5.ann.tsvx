@@ -1,0 +1,41 @@
+Text	I december 1961 afholdt man et møde mellem havnemyndighedens direktør , Austin J. Tobin , og New Jerseys nyvalgte guvernør , Richard J. Hughes , hvor havnemyndigheden tilbød at overtage Hudson & Manhattan Railroad og omdøbe den til Port Authority Trans-Hudson ( forkortet PATH ) .	Havnemyndigheden havde besluttet at flytte projektet til byggepladsen ved Hudson Terminal på den vestlige side af Lower Manhattan , hvilket var et mere praktisk sted for New Jerseys pendlere .	Med den nye placering ville havnemyndigheden sammen med erhvervelsen af H_&_M Railroad tillige støtte projektet .	For New Yorks borgmester John Lindsay og byens råd var det ligeledes nødvendigt med projektets godkendelse .	Den 3. august 1966 indgik man en aftale , således at havnemyndigheden skulle erlægge årlige betalinger til byen i stedet for skat for at få rettighederne til udlejning af World Trade Center til private lejere .
+Event	T0	afholdt	EVENT	16
+Event	T1	møde	EVENT	31
+Event	T2	tilbød	EVENT	167
+Event	T3	overtage	EVENT	177
+Event	T4	omdøbe	EVENT	217
+Event	T5	besluttet	EVENT	304
+Event	T6	erhvervelsen	EVENT	530
+Event	T7	godkendelse	EVENT	683
+Event	T8	indgik	EVENT	716
+Event	T9	aftale	EVENT	730
+Event	T10	flytte	EVENT	317
+Event	T11	støtte	EVENT	569
+Event	T12	betalinger	EVENT	789
+Event	T13	udlejning	EVENT	855
+Relation	T12	T13	SuperSub	true	betalinger	udlejning
+Relation	T13	T12	SubSuper	true	udlejning	betalinger
+Relation	T6	T11	SuperSub	true	erhvervelsen	støtte
+Relation	T11	T6	SubSuper	true	støtte	erhvervelsen
+Relation	T9	T12	SuperSub	true	aftale	betalinger
+Relation	T12	T9	SubSuper	true	betalinger	aftale
+Relation	T0	T6	NoRel	true	afholdt	erhvervelsen
+Relation	T1	T4	NoRel	true	møde	omdøbe
+Relation	T10	T13	NoRel	true	flytte	udlejning
+Relation	T10	T9	NoRel	true	flytte	aftale
+Relation	T12	T10	NoRel	true	betalinger	flytte
+Relation	T12	T3	NoRel	true	betalinger	overtage
+Relation	T12	T8	NoRel	true	betalinger	indgik
+Relation	T2	T13	NoRel	true	tilbød	udlejning
+Relation	T3	T13	NoRel	true	overtage	udlejning
+Relation	T3	T4	NoRel	true	overtage	omdøbe
+Relation	T3	T6	NoRel	true	overtage	erhvervelsen
+Relation	T5	T11	NoRel	true	besluttet	støtte
+Relation	T5	T7	NoRel	true	besluttet	godkendelse
+Relation	T6	T8	NoRel	true	erhvervelsen	indgik
+Relation	T6	T9	NoRel	true	erhvervelsen	aftale
+Relation	T8	T6	NoRel	true	indgik	erhvervelsen
+Relation	T9	T0	NoRel	true	aftale	afholdt
+Relation	T9	T1	NoRel	true	aftale	møde
+Relation	T9	T3	NoRel	true	aftale	overtage
+Relation	T9	T5	NoRel	true	aftale	besluttet

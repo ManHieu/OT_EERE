@@ -1,0 +1,74 @@
+Text	Dobbelte tornadoer i Great Plains den 28. september 2010 .	En TORNADO er en hvirvelvind der ved høj hastighed er i stand til at anrette store ødelæggelser på sin vej .	Ordet tornado er af spansk oprindelse .	En skypumpe må ikke forveksles med en støvhvirvel eller en tornado hvilket den ofte bliver på grund af den cirkulære rotation af en synlig luftsøjle .	Skypumper dannes ved konvergenslinjer hvor luft kan rotere samtidige med den rejser i forbindelse med bygeskyer opstår , hvorimod tornadoer dannes under roterende fuldt udviklede cumulonimbus skyer , hvor de fra basen af skyen i det som kaldes sky-vægen strækker sig fra skyen og ned til jorden .
+Event	T0	tornadoer	EVENT	9
+Event	T1	anrette	EVENT	128
+Event	T2	ødelæggelser	EVENT	142
+Event	T3	rotation	EVENT	325
+Event	T4	dannes	EVENT	369
+Event	T5	konvergenslinjer	EVENT	380
+Event	T6	rejser	EVENT	436
+Event	T7	opstår	EVENT	471
+Event	T8	dannes	EVENT	499
+Event	T9	strækker	EVENT	613
+Event	T10	TORNADO	EVENT	62
+Event	T11	hastighed	EVENT	100
+Event	T12	hvirvelvind	EVENT	76
+Event	T13	tornado	EVENT	174
+Event	T14	skypumpe	EVENT	211
+Event	T15	støvhvirvel	EVENT	246
+Event	T16	forveksles	EVENT	228
+Event	T17	tornado	EVENT	267
+Event	T18	bliver	EVENT	292
+Event	T19	luftsøjle	EVENT	347
+Event	T20	rotere	EVENT	411
+Event	T21	cumulonimbus skyer	EVENT	538
+Event	T22	roterende	EVENT	512
+Relation	T10	T12	SuperSub	true	TORNADO	hvirvelvind
+Relation	T12	T10	SubSuper	true	hvirvelvind	TORNADO
+Relation	T0	T8	NoRel	true	tornadoer	dannes
+Relation	T0	T9	NoRel	true	tornadoer	strækker
+Relation	T10	T14	NoRel	true	TORNADO	skypumpe
+Relation	T10	T2	NoRel	true	TORNADO	ødelæggelser
+Relation	T11	T1	NoRel	true	hastighed	anrette
+Relation	T11	T10	NoRel	true	hastighed	TORNADO
+Relation	T11	T19	NoRel	true	hastighed	luftsøjle
+Relation	T11	T21	NoRel	true	hastighed	cumulonimbus skyer
+Relation	T12	T0	NoRel	true	hvirvelvind	tornadoer
+Relation	T12	T11	NoRel	true	hvirvelvind	hastighed
+Relation	T13	T14	NoRel	true	tornado	skypumpe
+Relation	T13	T4	NoRel	true	tornado	dannes
+Relation	T13	T7	NoRel	true	tornado	opstår
+Relation	T14	T4	NoRel	true	skypumpe	dannes
+Relation	T15	T13	NoRel	true	støvhvirvel	tornado
+Relation	T15	T14	NoRel	true	støvhvirvel	skypumpe
+Relation	T15	T16	NoRel	true	støvhvirvel	forveksles
+Relation	T16	T20	NoRel	true	forveksles	rotere
+Relation	T16	T5	NoRel	true	forveksles	konvergenslinjer
+Relation	T16	T8	NoRel	true	forveksles	dannes
+Relation	T17	T1	NoRel	true	tornado	anrette
+Relation	T17	T11	NoRel	true	tornado	hastighed
+Relation	T17	T12	NoRel	true	tornado	hvirvelvind
+Relation	T18	T11	NoRel	true	bliver	hastighed
+Relation	T18	T6	NoRel	true	bliver	rejser
+Relation	T19	T1	NoRel	true	luftsøjle	anrette
+Relation	T19	T12	NoRel	true	luftsøjle	hvirvelvind
+Relation	T19	T15	NoRel	true	luftsøjle	støvhvirvel
+Relation	T2	T6	NoRel	true	ødelæggelser	rejser
+Relation	T21	T13	NoRel	true	cumulonimbus skyer	tornado
+Relation	T22	T13	NoRel	true	roterende	tornado
+Relation	T3	T10	NoRel	true	rotation	TORNADO
+Relation	T3	T15	NoRel	true	rotation	støvhvirvel
+Relation	T3	T7	NoRel	true	rotation	opstår
+Relation	T4	T0	NoRel	true	dannes	tornadoer
+Relation	T4	T14	NoRel	true	dannes	skypumpe
+Relation	T4	T2	NoRel	true	dannes	ødelæggelser
+Relation	T5	T19	NoRel	true	konvergenslinjer	luftsøjle
+Relation	T5	T20	NoRel	true	konvergenslinjer	rotere
+Relation	T6	T19	NoRel	true	rejser	luftsøjle
+Relation	T7	T1	NoRel	true	opstår	anrette
+Relation	T7	T2	NoRel	true	opstår	ødelæggelser
+Relation	T7	T4	NoRel	true	opstår	dannes
+Relation	T8	T0	NoRel	true	dannes	tornadoer
+Relation	T8	T20	NoRel	true	dannes	rotere
+Relation	T9	T0	NoRel	true	strækker	tornadoer
+Relation	T9	T11	NoRel	true	strækker	hastighed
+Relation	T9	T21	NoRel	true	strækker	cumulonimbus skyer

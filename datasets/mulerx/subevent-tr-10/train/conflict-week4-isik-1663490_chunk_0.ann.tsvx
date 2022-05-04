@@ -1,0 +1,29 @@
+Text	KOLOMBIYA ÇATIŞMALARI , Kolombiya'da yaklaşık 1964 veya 1966 yılında devlet güçleri ve Kolombiya Devrimci Silahlı Güçleri ( FARC ) ile Ulusal Kurtuluş Ordusu ( ELN ) gibi köylü gerillalar arasında başlayan ve asimetrik düşük yoğunlukla günümüze kadar devam eden silahlı çatışmalardır .	Kökeni tarihsel olarak , 1948'de popülist lider Jorge Eliecer Gaitán'ın siyasi suikastıyla tetiklenen ve 1960'larda Kolombiya'nın kırsal kesimlerinde komünizme karşı Amerika Birleşik Devletleri destekli kuvvetli baskılar sonrasında Liberal ve Komünist militanların FARC içine yeniden yapılanmasına yol açan _ La Violencia _ olarak bilinen çatışmalara dayanır .	Mücadele için ileri sürülen nedenler gruptan gruba farklılık gösterir .	FARC ve diğer gerilla hareketleri , yoksulların haklarını savunmak , onları devlet şiddetinden korumak ve sosyalizm yoluyla sosyal adalet sağlamak için mücadele ettiklerini iddia etmektedirler .	Kolombiya devleti , düzen ve istikrar için mücadele ettiğini , vatandaşlarının hak ve çıkarlarını korumak istediğini iddia etmektedir .
+Event	T0	ÇATIŞMALARI	EVENT	10
+Event	T1	başlayan	EVENT	197
+Event	T2	çatışmalardır	EVENT	270
+Event	T3	tetiklenen	EVENT	377
+Event	T4	baskılar	EVENT	498
+Event	T6	Mücadele	EVENT	647
+Event	T7	sürülen	EVENT	667
+Event	T8	mücadele	EVENT	871
+Event	T9	iddia	EVENT	892
+Event	T10	mücadele	EVENT	957
+Event	T11	iddia	EVENT	1031
+Event	T12	suikastıyla	EVENT	365
+Event	T5	yapılanmasına	EVENT	570
+Relation	T0	T10	NoRel	true	ÇATIŞMALARI	mücadele
+Relation	T0	T6	NoRel	true	ÇATIŞMALARI	Mücadele
+Relation	T0	T7	NoRel	true	ÇATIŞMALARI	sürülen
+Relation	T1	T10	NoRel	true	başlayan	mücadele
+Relation	T1	T4	NoRel	true	başlayan	baskılar
+Relation	T1	T9	NoRel	true	başlayan	iddia
+Relation	T10	T0	NoRel	true	mücadele	ÇATIŞMALARI
+Relation	T10	T1	NoRel	true	mücadele	başlayan
+Relation	T12	T2	NoRel	true	suikastıyla	çatışmalardır
+Relation	T12	T6	NoRel	true	suikastıyla	Mücadele
+Relation	T2	T4	NoRel	true	çatışmalardır	baskılar
+Relation	T3	T11	NoRel	true	tetiklenen	iddia
+Relation	T4	T10	NoRel	true	baskılar	mücadele
+Relation	T4	T12	NoRel	true	baskılar	suikastıyla
+Relation	T5	T7	NoRel	true	yapılanmasına	sürülen

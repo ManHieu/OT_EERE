@@ -1,0 +1,18 @@
+Text	Mürettebat yaklaşımı planlanan şekilde uygulamaya başladı ancak uçak pist merkezinin 500 metre ( 1.600_ft ) sağındaydı .	Uçağın inmesine 10 kilometre ( 6,2 mil ) kala kontrolör mürettebata 300 metre ( 980_ft ) irtifaya inme talimatını verdi ve hava koşullarının kötüleşmeye başladığı konusunda uyardı .	Uçak pistin sonundan 8,5 kilometre uzaktayken kayma yoluna girdi ve iniş için irtifa azalmaya devam etti .	Havalimanındaki görüş mesafesi , minimum güvenli mesafenin çok altında ; 800 metreye ulaşmıştı .	Kontrolör ise mürettebatı veya operasyon yöneticisini durum hakkında bilgilendirmedi .
+Event	T0	başladı	EVENT	50
+Event	T1	inmesine	EVENT	128
+Event	T2	verdi	EVENT	235
+Event	T3	başladığı	EVENT	274
+Event	T4	uyardı	EVENT	294
+Event	T5	girdi	EVENT	362
+Event	T6	iniş	EVENT	371
+Event	T8	bilgilendirmedi	EVENT	576
+Event	T7	etti	EVENT	403
+Relation	T0	T4	NoRel	true	başladı	uyardı
+Relation	T1	T0	NoRel	true	inmesine	başladı
+Relation	T3	T4	NoRel	true	başladığı	uyardı
+Relation	T4	T2	NoRel	true	uyardı	verdi
+Relation	T5	T0	NoRel	true	girdi	başladı
+Relation	T6	T5	NoRel	true	iniş	girdi
+Relation	T8	T3	NoRel	true	bilgilendirmedi	başladığı
+Relation	T8	T7	NoRel	true	bilgilendirmedi	etti

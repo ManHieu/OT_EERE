@@ -1,0 +1,15 @@
+Text	بنیادی ذرائع نے یہ اشارہ دیا ہے کہ پٹڑ یوں کے کسی حصے میں فریکچر کی وجہ سے ہو سکتا ہے کہ ریل گاڑی پٹڑی سے اتر گئی ہو ۔	دیگر ذرائع کے مطابق ریل گاڑی پر ضرورت سے زیادہ لوگ سوار تھے ۔	کچھ زندہ بچ جانے والوں نے دعوی کیا ہے کہ کچھ کوچیں بہت آواز پیدا کر رہی تھیں ، مزید ان کے پہیے صحیح نہیں چل رہے تھے ۔	تصغیر| شیڈول کے مطابق ٹرین کے راستے انڈور سے پٹنہ تک	- 2016 Eséka ٹرین پٹڑی سے اتر ، ایک مہلک پٹڑی سے اتر چند ہفتے پہلے -
+Event	T1	چل	EVENT	286
+Event	T3	اتر	EVENT	378
+Event	T4	اتر	EVENT	401
+Event	T5	فریکچر	EVENT	58
+Event	T6	اتر	EVENT	106
+Event	T7	اشارہ	EVENT	19
+Event	T8	سوار	EVENT	170
+Event	T9	پیدا	EVENT	241
+Relation	T1	T5	NoRel	true	چل	فریکچر
+Relation	T3	T5	NoRel	true	اتر	فریکچر
+Relation	T4	T8	NoRel	true	اتر	سوار
+Relation	T7	T4	NoRel	true	اشارہ	اتر
+Relation	T8	T9	NoRel	true	سوار	پیدا
+Relation	T9	T5	NoRel	true	پیدا	فریکچر

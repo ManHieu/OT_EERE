@@ -1,0 +1,36 @@
+Text	1981 İSPANYOL DARBE GIRIŞIMI ( İspanyolca : _ Intento de Golpe de Estado de España de 1981 _ ) , İspanya'da 23 - F ve TEJERAZO olarak da bilinen , 23 Şubat 1981'de İspanya'da yaşanmış bir darbe girişimidir .	Yarbay Antonio Tejero , Başbakan'ın seçileceği oylama sırasında 200 silahlı jandarma ile Milletvekilleri Kongresi'ni bastı .	Askerler , parlamenterleri ve bakanları 18 saat boyunca rehin tuttu , bu sırada Kral I. Juan Carlos , darbeyi televizyonda çıkıp kınadı , hukukun üstünlüğü ve demokratik hükûmetin devamını istedi .	Ateş edilmiş olsa da , rehineciler ertesi sabah kimseyi öldürmeden teslim oldu .	Darbe girişimi , İspanya'nın demokrasiye geçişiyle bağlantılıydı .
+Event	T1	yaşanmış	EVENT	175
+Event	T2	girişimidir	EVENT	194
+Event	T3	oylama	EVENT	255
+Event	T4	bastı	EVENT	325
+Event	T5	tuttu	EVENT	395
+Event	T6	kınadı	EVENT	462
+Event	T7	istedi	EVENT	522
+Event	T8	girişimi	EVENT	618
+Event	T9	1981 İSPANYOL DARBE GIRIŞIMI	EVENT	0
+Event	T10	çıkıp	EVENT	456
+Event	T11	edilmiş	EVENT	536
+Event	T12	oldu	EVENT	605
+Relation	T9	T5	SuperSub	true	1981 İSPANYOL DARBE GIRIŞIMI	tuttu
+Relation	T5	T9	SubSuper	true	tuttu	1981 İSPANYOL DARBE GIRIŞIMI
+Relation	T9	T4	SuperSub	true	1981 İSPANYOL DARBE GIRIŞIMI	bastı
+Relation	T4	T9	SubSuper	true	bastı	1981 İSPANYOL DARBE GIRIŞIMI
+Relation	T9	T6	SuperSub	true	1981 İSPANYOL DARBE GIRIŞIMI	kınadı
+Relation	T6	T9	SubSuper	true	kınadı	1981 İSPANYOL DARBE GIRIŞIMI
+Relation	T9	T10	SuperSub	true	1981 İSPANYOL DARBE GIRIŞIMI	çıkıp
+Relation	T10	T9	SubSuper	true	çıkıp	1981 İSPANYOL DARBE GIRIŞIMI
+Relation	T9	T11	SuperSub	true	1981 İSPANYOL DARBE GIRIŞIMI	edilmiş
+Relation	T11	T9	SubSuper	true	edilmiş	1981 İSPANYOL DARBE GIRIŞIMI
+Relation	T1	T6	NoRel	true	yaşanmış	kınadı
+Relation	T10	T7	NoRel	true	çıkıp	istedi
+Relation	T11	T1	NoRel	true	edilmiş	yaşanmış
+Relation	T11	T10	NoRel	true	edilmiş	çıkıp
+Relation	T11	T12	NoRel	true	edilmiş	oldu
+Relation	T11	T4	NoRel	true	edilmiş	bastı
+Relation	T3	T1	NoRel	true	oylama	yaşanmış
+Relation	T3	T11	NoRel	true	oylama	edilmiş
+Relation	T5	T6	NoRel	true	tuttu	kınadı
+Relation	T6	T7	NoRel	true	kınadı	istedi
+Relation	T7	T9	NoRel	true	istedi	1981 İSPANYOL DARBE GIRIŞIMI
+Relation	T9	T2	NoRel	true	1981 İSPANYOL DARBE GIRIŞIMI	girişimidir
+Relation	T9	T8	NoRel	true	1981 İSPANYOL DARBE GIRIŞIMI	girişimi

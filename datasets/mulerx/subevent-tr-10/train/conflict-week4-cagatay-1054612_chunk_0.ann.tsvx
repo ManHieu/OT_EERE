@@ -1,0 +1,36 @@
+Text	küçükresim | 213x213px | sağ | 1819 yılında Frankfurt'ta Yahudilere karşı yapılan Hep - Hep pogromu POGROM ; dinsel , etnik veya siyasi nedenlerle bir gruba karşı yapılan şiddet hareketleridir .	Bu şiddet hareketleri genellikle evleri , iş yerlerini veya ibadet yerlerini tahrip etmek , insanları dövmek , yaralamak , tecavüz etmek veya öldürmekten oluşur .	Bu deyim ilk olarak tarihin çeşitli dönemlerinde Yahudilere karşı yapılan şiddet hareketlerini tanımlamak için kullanılmış , sonra da anlamı diğer gruplara karşı yapılan benzer şiddet olaylarını kapsayacak şekilde genişletilmiştir .	Pogrom kelimesinin aslı Rusçadır ( ПОГРОМ ) , fakat Rusçadaki anlamı daha geneldir .	Rusçada her türlü toplu şiddet olaylarına pogrom denir .
+Event	T0	yapılan	EVENT	74
+Event	T1	hareketleridir	EVENT	178
+Event	T2	hareketleri	EVENT	205
+Event	T3	dövmek	EVENT	297
+Event	T4	yaralamak	EVENT	306
+Event	T5	kullanılmış	EVENT	469
+Event	T6	genişletilmiştir	EVENT	572
+Event	T7	tahrip	EVENT	272
+Event	T8	tecavüz	EVENT	318
+Event	T9	öldürmekten	EVENT	337
+Event	T10	hareketlerini	EVENT	439
+Event	T11	olaylarını	EVENT	542
+Event	T12	olaylarına	EVENT	707
+Relation	T2	T7	SuperSub	true	hareketleri	tahrip
+Relation	T7	T2	SubSuper	true	tahrip	hareketleri
+Relation	T2	T3	SuperSub	true	hareketleri	dövmek
+Relation	T3	T2	SubSuper	true	dövmek	hareketleri
+Relation	T2	T4	SuperSub	true	hareketleri	yaralamak
+Relation	T4	T2	SubSuper	true	yaralamak	hareketleri
+Relation	T2	T8	SuperSub	true	hareketleri	tecavüz
+Relation	T8	T2	SubSuper	true	tecavüz	hareketleri
+Relation	T2	T9	SuperSub	true	hareketleri	öldürmekten
+Relation	T9	T2	SubSuper	true	öldürmekten	hareketleri
+Relation	T1	T0	NoRel	true	hareketleridir	yapılan
+Relation	T10	T6	NoRel	true	hareketlerini	genişletilmiştir
+Relation	T12	T5	NoRel	true	olaylarına	kullanılmış
+Relation	T12	T7	NoRel	true	olaylarına	tahrip
+Relation	T4	T12	NoRel	true	yaralamak	olaylarına
+Relation	T5	T2	NoRel	true	kullanılmış	hareketleri
+Relation	T5	T8	NoRel	true	kullanılmış	tecavüz
+Relation	T7	T11	NoRel	true	tahrip	olaylarını
+Relation	T8	T5	NoRel	true	tecavüz	kullanılmış
+Relation	T9	T1	NoRel	true	öldürmekten	hareketleridir
+Relation	T9	T11	NoRel	true	öldürmekten	olaylarını
+Relation	T9	T3	NoRel	true	öldürmekten	dövmek

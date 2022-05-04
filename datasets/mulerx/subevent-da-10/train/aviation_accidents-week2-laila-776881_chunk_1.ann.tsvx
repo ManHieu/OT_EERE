@@ -1,0 +1,78 @@
+Text	Efter at flyveledelsen havde anmodet flyet om at foretage en kursændring omkring 50 minutter inde i flyvningen , forsvandt flyet fra radaren .	Eftersøgningen af det forsvundne fly ledtes af franske soldater udstationeret i Mali .	Et øde sted i ørkenen fandt de flyvraget , der lå fuldstændig udbrændt og spredt , uden overlevende .	Af flyets to sorte bokse , som bragtes til analyse i Paris , var _ flight_data_recorderen _ ( der registrerer flyvehastighed , flyvehøjde , kurs … ) i god stand , mens _ cockpit voice_recorderen _ ( der optager lyde i cockpittet ) ikke umiddelbart var læsbar .	Analyser , som fremkom d. 30. juli 2014 , viste at flyet faldt ti km på tre minutter og var næsten intakt , da det ramte jorden med en estimeret fart på ca. 180 km/h.
+Event	T0	anmodet	EVENT	29
+Event	T1	foretage	EVENT	49
+Event	T10	lå	EVENT	277
+Event	T11	udbrændt	EVENT	292
+Event	T12	spredt	EVENT	304
+Event	T13	bragtes	EVENT	363
+Event	T14	analyse	EVENT	375
+Event	T15	flyvehastighed	EVENT	442
+Event	T16	Analyser	EVENT	593
+Event	T17	fremkom	EVENT	608
+Event	T18	viste	EVENT	635
+Event	T19	faldt	EVENT	650
+Event	T2	kursændring	EVENT	61
+Event	T20	ramte	EVENT	708
+Event	T21	fart	EVENT	738
+Event	T3	flyvningen	EVENT	100
+Event	T4	forsvandt	EVENT	113
+Event	T5	Eftersøgningen	EVENT	143
+Event	T6	forsvundne	EVENT	165
+Event	T7	ledtes	EVENT	180
+Event	T8	udstationeret	EVENT	207
+Event	T9	fandt	EVENT	252
+Relation	T0	T2	SuperSub	true	anmodet	kursændring
+Relation	T2	T0	SubSuper	true	kursændring	anmodet
+Relation	T7	T5	SuperSub	true	ledtes	Eftersøgningen
+Relation	T5	T7	SubSuper	true	Eftersøgningen	ledtes
+Relation	T19	T21	SuperSub	true	faldt	fart
+Relation	T21	T19	SubSuper	true	fart	faldt
+Relation	T0	T17	NoRel	true	anmodet	fremkom
+Relation	T0	T3	NoRel	true	anmodet	flyvningen
+Relation	T0	T5	NoRel	true	anmodet	Eftersøgningen
+Relation	T1	T18	NoRel	true	foretage	viste
+Relation	T1	T6	NoRel	true	foretage	forsvundne
+Relation	T10	T13	NoRel	true	lå	bragtes
+Relation	T10	T8	NoRel	true	lå	udstationeret
+Relation	T11	T1	NoRel	true	udbrændt	foretage
+Relation	T11	T18	NoRel	true	udbrændt	viste
+Relation	T11	T6	NoRel	true	udbrændt	forsvundne
+Relation	T12	T19	NoRel	true	spredt	faldt
+Relation	T13	T17	NoRel	true	bragtes	fremkom
+Relation	T14	T11	NoRel	true	analyse	udbrændt
+Relation	T14	T18	NoRel	true	analyse	viste
+Relation	T14	T4	NoRel	true	analyse	forsvandt
+Relation	T15	T11	NoRel	true	flyvehastighed	udbrændt
+Relation	T15	T21	NoRel	true	flyvehastighed	fart
+Relation	T15	T8	NoRel	true	flyvehastighed	udstationeret
+Relation	T16	T17	NoRel	true	Analyser	fremkom
+Relation	T16	T20	NoRel	true	Analyser	ramte
+Relation	T17	T21	NoRel	true	fremkom	fart
+Relation	T18	T17	NoRel	true	viste	fremkom
+Relation	T18	T2	NoRel	true	viste	kursændring
+Relation	T18	T5	NoRel	true	viste	Eftersøgningen
+Relation	T19	T14	NoRel	true	faldt	analyse
+Relation	T19	T15	NoRel	true	faldt	flyvehastighed
+Relation	T19	T2	NoRel	true	faldt	kursændring
+Relation	T19	T9	NoRel	true	faldt	fandt
+Relation	T2	T21	NoRel	true	kursændring	fart
+Relation	T20	T5	NoRel	true	ramte	Eftersøgningen
+Relation	T20	T8	NoRel	true	ramte	udstationeret
+Relation	T21	T1	NoRel	true	fart	foretage
+Relation	T21	T3	NoRel	true	fart	flyvningen
+Relation	T21	T8	NoRel	true	fart	udstationeret
+Relation	T3	T0	NoRel	true	flyvningen	anmodet
+Relation	T3	T2	NoRel	true	flyvningen	kursændring
+Relation	T4	T21	NoRel	true	forsvandt	fart
+Relation	T5	T1	NoRel	true	Eftersøgningen	foretage
+Relation	T5	T6	NoRel	true	Eftersøgningen	forsvundne
+Relation	T6	T15	NoRel	true	forsvundne	flyvehastighed
+Relation	T6	T7	NoRel	true	forsvundne	ledtes
+Relation	T7	T4	NoRel	true	ledtes	forsvandt
+Relation	T7	T6	NoRel	true	ledtes	forsvundne
+Relation	T8	T10	NoRel	true	udstationeret	lå
+Relation	T8	T14	NoRel	true	udstationeret	analyse
+Relation	T8	T15	NoRel	true	udstationeret	flyvehastighed
+Relation	T8	T17	NoRel	true	udstationeret	fremkom
+Relation	T9	T4	NoRel	true	fandt	forsvandt
+Relation	T9	T5	NoRel	true	fandt	Eftersøgningen

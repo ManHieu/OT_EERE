@@ -1,0 +1,69 @@
+Text	On September 1 , 2010 , in a direct response to the shooting , activist settlers and " hundreds " of members of Likud holding placards that read " They shoot , we build " began construction in settlements across the West Bank , including a structure at the entrance to Kiryat Arba , very near the site of the attack .	Human Rights Watch responded by calling on Hamas to cease attacks on civilians .	Ban Ki -moon , Secretary - General of the United nations , said that " this attack must be recognized for what it is : a cynical and blatant attempt to undermine the direct Israeli - Palestinian negotiations starting tomorrow . "	Palestinian Authority and Israel forces started arresting Hamas supporters .	Israeli forces killed Iyad Shilbaya , a commander of the Izz ad - Din al - Qassam Brigades , twelve others were arrested in the overnight operation between September 16 and 17 .
+Event	T0	shooting	EVENT	52
+Event	T1	holding	EVENT	118
+Event	T10	recognized	EVENT	490
+Event	T11	attempt	EVENT	540
+Event	T12	undermine	EVENT	551
+Event	T13	starting	EVENT	607
+Event	T14	arresting	EVENT	677
+Event	T15	killed	EVENT	721
+Event	T16	arrested	EVENT	818
+Event	T17	operation	EVENT	844
+Event	T18	response	EVENT	36
+Event	T19	cease	EVENT	370
+Event	T2	read	EVENT	140
+Event	T3	shoot	EVENT	152
+Event	T4	build	EVENT	163
+Event	T5	construction	EVENT	177
+Event	T6	attack	EVENT	309
+Event	T7	responded	EVENT	337
+Event	T8	said	EVENT	458
+Event	T9	attack	EVENT	475
+Relation	T18	T5	SuperSub	true	response	construction
+Relation	T5	T18	SubSuper	true	construction	response
+Relation	T18	T1	SuperSub	true	response	holding
+Relation	T1	T18	SubSuper	true	holding	response
+Relation	T14	T15	SuperSub	true	arresting	killed
+Relation	T15	T14	SubSuper	true	killed	arresting
+Relation	T0	T9	NoRel	true	shooting	attack
+Relation	T1	T16	NoRel	true	holding	arrested
+Relation	T1	T5	NoRel	true	holding	construction
+Relation	T10	T12	NoRel	true	recognized	undermine
+Relation	T10	T13	NoRel	true	recognized	starting
+Relation	T10	T16	NoRel	true	recognized	arrested
+Relation	T12	T1	NoRel	true	undermine	holding
+Relation	T12	T13	NoRel	true	undermine	starting
+Relation	T12	T2	NoRel	true	undermine	read
+Relation	T13	T16	NoRel	true	starting	arrested
+Relation	T14	T1	NoRel	true	arresting	holding
+Relation	T14	T10	NoRel	true	arresting	recognized
+Relation	T14	T12	NoRel	true	arresting	undermine
+Relation	T15	T1	NoRel	true	killed	holding
+Relation	T15	T12	NoRel	true	killed	undermine
+Relation	T15	T16	NoRel	true	killed	arrested
+Relation	T15	T17	NoRel	true	killed	operation
+Relation	T15	T8	NoRel	true	killed	said
+Relation	T17	T2	NoRel	true	operation	read
+Relation	T17	T8	NoRel	true	operation	said
+Relation	T18	T12	NoRel	true	response	undermine
+Relation	T18	T9	NoRel	true	response	attack
+Relation	T19	T13	NoRel	true	cease	starting
+Relation	T19	T16	NoRel	true	cease	arrested
+Relation	T2	T15	NoRel	true	read	killed
+Relation	T2	T16	NoRel	true	read	arrested
+Relation	T3	T10	NoRel	true	shoot	recognized
+Relation	T4	T11	NoRel	true	build	attempt
+Relation	T4	T12	NoRel	true	build	undermine
+Relation	T4	T3	NoRel	true	build	shoot
+Relation	T4	T8	NoRel	true	build	said
+Relation	T5	T9	NoRel	true	construction	attack
+Relation	T6	T10	NoRel	true	attack	recognized
+Relation	T6	T13	NoRel	true	attack	starting
+Relation	T7	T2	NoRel	true	responded	read
+Relation	T7	T8	NoRel	true	responded	said
+Relation	T8	T15	NoRel	true	said	killed
+Relation	T8	T17	NoRel	true	said	operation
+Relation	T8	T3	NoRel	true	said	shoot
+Relation	T8	T4	NoRel	true	said	build
+Relation	T9	T14	NoRel	true	attack	arresting
+Relation	T9	T4	NoRel	true	attack	build

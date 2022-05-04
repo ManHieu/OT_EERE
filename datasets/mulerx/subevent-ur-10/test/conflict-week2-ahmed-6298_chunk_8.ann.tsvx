@@ -1,0 +1,29 @@
+Text	فروری کے پہلے دو ہفتوں کے دوران میٹنگیں اور ہڑتالیں مسلسل ہوتی رہیں ۔	8 فروری کو پوٹیلوف فیکٹری میں پولیس کا مار مار کر بھرکس نکال دیاگیا جبکہ 14 فروری کو جب ڈوما کا اجلاس شروع ہو رہا تھا ، 90ہزار ورکروں نے پیٹروگراڈ میں ہڑتال کردی ۔	ماسکو میں بھی کئی پلانٹ بند ہو گئے ۔	16 فروری کو انتظامیہ نے پیٹروگراڈ میں ’’ روٹی کارڈ ‘‘ متعارف کرادیے ۔	اس انفرادیت نے جذبات کو اور بھی بھڑکا دیا اور 19 فروری کو عوام کے جھنڈ جن میں زیادہ تر خواتین شامل تھیں ، خوراک کی دکانوں پر جمع ہو گئے جو روٹی کا مطالبہ کر رہے تھے ۔
+Event	T0	میٹنگیں	EVENT	32
+Event	T1	نکال	EVENT	126
+Event	T10	بھڑکا	EVENT	373
+Event	T2	ہڑتال	EVENT	221
+Event	T4	بند	EVENT	258
+Event	T5	متعارف	EVENT	325
+Event	T6	جمع	EVENT	466
+Event	T7	مطالبہ	EVENT	488
+Event	T8	ہڑتالیں	EVENT	44
+Event	T9	اجلاس	EVENT	166
+Relation	T10	T7	SuperSub	true	بھڑکا	مطالبہ
+Relation	T7	T10	SubSuper	true	مطالبہ	بھڑکا
+Relation	T6	T7	SuperSub	true	جمع	مطالبہ
+Relation	T7	T6	SubSuper	true	مطالبہ	جمع
+Relation	T1	T8	SuperSub	true	نکال	ہڑتالیں
+Relation	T8	T1	SubSuper	true	ہڑتالیں	نکال
+Relation	T4	T8	SuperSub	true	بند	ہڑتالیں
+Relation	T8	T4	SubSuper	true	ہڑتالیں	بند
+Relation	T1	T4	NoRel	true	نکال	بند
+Relation	T10	T2	NoRel	true	بھڑکا	ہڑتال
+Relation	T2	T1	NoRel	true	ہڑتال	نکال
+Relation	T4	T2	NoRel	true	بند	ہڑتال
+Relation	T5	T6	NoRel	true	متعارف	جمع
+Relation	T6	T0	NoRel	true	جمع	میٹنگیں
+Relation	T6	T1	NoRel	true	جمع	نکال
+Relation	T6	T2	NoRel	true	جمع	ہڑتال
+Relation	T9	T4	NoRel	true	اجلاس	بند
+Relation	T9	T8	NoRel	true	اجلاس	ہڑتالیں

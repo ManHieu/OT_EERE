@@ -1,0 +1,17 @@
+Text	26 جنوری 2001ء میں بھارت کے علاقے گجرات میں زبردست قسم کا زلزلہ آیا جس کی شدت ریکٹر اسکیل پر 7.7 تھی ۔	اس زلزلے کی شدت پاکستان میں بھی محسوس کی گئی ۔	اس زلزلے سے بھارت کے 25 ہزار اور پاکستان کے کُل 20 افراد ہلاک ہوئے ۔	اسی سال پیرو میں زلزلے سے 75 افراد جاں بحق ہوئے ۔	2002ء میں افغانستان میں زلزلے سے ایک ہزار افراد ہلاک ہوئے ۔
+Event	T0	زلزلے	EVENT	106
+Event	T1	شدت	EVENT	115
+Event	T2	محسوس	EVENT	135
+Event	T3	گئی	EVENT	144
+Event	T4	زلزلے	EVENT	153
+Event	T5	ہوئے	EVENT	212
+Event	T6	زلزلے	EVENT	236
+Event	T7	ہوئے	EVENT	262
+Event	T8	زلزلے	EVENT	293
+Event	T9	ہوئے	EVENT	322
+Relation	T0	T7	NoRel	true	زلزلے	ہوئے
+Relation	T1	T5	NoRel	true	شدت	ہوئے
+Relation	T3	T8	NoRel	true	گئی	زلزلے
+Relation	T6	T3	NoRel	true	زلزلے	گئی
+Relation	T7	T9	NoRel	true	ہوئے	ہوئے
+Relation	T9	T4	NoRel	true	ہوئے	زلزلے

@@ -1,0 +1,75 @@
+Text	پھیپھڑوں کے اعضا پر زیادہ تر اثر COVID-19 کرتا ہے کیونکہ وائرس میزبان خلیوں تک بذریعہ ACE2 انزایم رسائی حاصل کرتا ہے ، یہ انزایم پھیپڑوں کے type II alveolar cells میں وافر ہوتا ہے ۔	وائرس ایک خصوصی تہہ گلائیکو پروٹین استعمال کرتا ہے ، جو " اِسپکائیک " کہلاتا ہے ، تاکہ ACE2 سے منسلک ہو سکے اور میزبان خلیہ میں گھس پائے ۔	ہر بافت میں ACE2 کی کثافت ، اُس بافت میں مرض کی شدت سے تعلق رکھتی ہے اور کچھ نے سُجھاؤ دیا ہے کہ ACE2 کی سرگرمی گھٹانا حفاظتی ہوسکتا ہے ، جبکہ ایک اور نظریہ ہے کہ Angiotensin II receptor blocker والی ادویات کو استعمال کرتے ہوئے ACE2 کو بڑھانا بھی حفاظتی ہوسکتا ہے اور ایسے قیاسوں کو آزمانے کی ضرورت ہے ۔	جیسے ہی چھتے دار ( alveolar ) مرض بڑھتا ہے تنفس کا نظام ناکارہ ہو کر موت واقع ہوسکتی ہے ۔	وائرس کے لیے ACE2 دِل پر حملہ کرنے کے لیے راہ بھی ہموار کرسکتا ہے ، جس کے نتیجے میں acute cardiac injury ہوسکتی ۔
+Event	T0	استعمال	EVENT	217
+Event	T2	مرض	EVENT	362
+Event	T3	استعمال	EVENT	531
+Event	T4	بڑھانا	EVENT	557
+Event	T5	آزمانے	EVENT	604
+Event	T6	بڑھتا	EVENT	659
+Event	T8	کرتا	EVENT	42
+Event	T9	حاصل	EVENT	104
+Event	T10	وافر	EVENT	167
+Event	T11	کہلاتا	EVENT	252
+Event	T12	منسلک	EVENT	277
+Event	T13	گھس	EVENT	310
+Event	T1	تعلق	EVENT	376
+Event	T14	سُجھاؤ	EVENT	401
+Event	T15	ہوسکتا	EVENT	447
+Event	T16	ہوسکتا	EVENT	575
+Event	T17	گھٹانا	EVENT	433
+Event	T18	مرض	EVENT	655
+Event	T19	موت	EVENT	694
+Event	T20	ہو	EVENT	688
+Event	T7	حملہ	EVENT	740
+Event	T21	ہموار	EVENT	765
+Event	T22	injury	EVENT	813
+Relation	T9	T8	CauseEffect	true	حاصل	کرتا
+Relation	T8	T9	EffectCause	true	کرتا	حاصل
+Relation	T3	T4	CauseEffect	true	استعمال	بڑھانا
+Relation	T4	T3	EffectCause	true	بڑھانا	استعمال
+Relation	T6	T19	CauseEffect	true	بڑھتا	موت
+Relation	T19	T6	EffectCause	true	موت	بڑھتا
+Relation	T7	T22	CauseEffect	true	حملہ	injury
+Relation	T22	T7	EffectCause	true	injury	حملہ
+Relation	T0	T16	NoRel	true	استعمال	ہوسکتا
+Relation	T0	T22	NoRel	true	استعمال	injury
+Relation	T1	T16	NoRel	true	تعلق	ہوسکتا
+Relation	T1	T2	NoRel	true	تعلق	مرض
+Relation	T10	T15	NoRel	true	وافر	ہوسکتا
+Relation	T10	T4	NoRel	true	وافر	بڑھانا
+Relation	T11	T14	NoRel	true	کہلاتا	سُجھاؤ
+Relation	T13	T14	NoRel	true	گھس	سُجھاؤ
+Relation	T14	T16	NoRel	true	سُجھاؤ	ہوسکتا
+Relation	T14	T2	NoRel	true	سُجھاؤ	مرض
+Relation	T14	T7	NoRel	true	سُجھاؤ	حملہ
+Relation	T15	T0	NoRel	true	ہوسکتا	استعمال
+Relation	T15	T1	NoRel	true	ہوسکتا	تعلق
+Relation	T16	T14	NoRel	true	ہوسکتا	سُجھاؤ
+Relation	T16	T6	NoRel	true	ہوسکتا	بڑھتا
+Relation	T16	T8	NoRel	true	ہوسکتا	کرتا
+Relation	T17	T15	NoRel	true	گھٹانا	ہوسکتا
+Relation	T17	T19	NoRel	true	گھٹانا	موت
+Relation	T17	T21	NoRel	true	گھٹانا	ہموار
+Relation	T17	T7	NoRel	true	گھٹانا	حملہ
+Relation	T18	T10	NoRel	true	مرض	وافر
+Relation	T18	T2	NoRel	true	مرض	مرض
+Relation	T19	T10	NoRel	true	موت	وافر
+Relation	T19	T7	NoRel	true	موت	حملہ
+Relation	T2	T21	NoRel	true	مرض	ہموار
+Relation	T20	T22	NoRel	true	ہو	injury
+Relation	T20	T4	NoRel	true	ہو	بڑھانا
+Relation	T21	T18	NoRel	true	ہموار	مرض
+Relation	T22	T14	NoRel	true	injury	سُجھاؤ
+Relation	T22	T16	NoRel	true	injury	ہوسکتا
+Relation	T22	T3	NoRel	true	injury	استعمال
+Relation	T3	T12	NoRel	true	استعمال	منسلک
+Relation	T3	T8	NoRel	true	استعمال	کرتا
+Relation	T4	T12	NoRel	true	بڑھانا	منسلک
+Relation	T4	T19	NoRel	true	بڑھانا	موت
+Relation	T4	T9	NoRel	true	بڑھانا	حاصل
+Relation	T7	T16	NoRel	true	حملہ	ہوسکتا
+Relation	T7	T17	NoRel	true	حملہ	گھٹانا
+Relation	T8	T11	NoRel	true	کرتا	کہلاتا
+Relation	T8	T15	NoRel	true	کرتا	ہوسکتا
+Relation	T9	T1	NoRel	true	حاصل	تعلق
+Relation	T9	T11	NoRel	true	حاصل	کہلاتا
+Relation	T9	T20	NoRel	true	حاصل	ہو

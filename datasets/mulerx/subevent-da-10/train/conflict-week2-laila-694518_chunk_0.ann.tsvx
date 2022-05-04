@@ -1,0 +1,27 @@
+Text	var den sidste store japanske flådeoperation under Stillehavskrigen i 2. verdenskrig .	Operationen er også kendt som OPERATION _HEAVEN_ONE __( ) på engelsk og TEN-ICHI-GOU ( ) på japansk .	I april 1945 satte det japanske slagskib _ Yamato _ ( det største slagskib i verden ) , sammen med ni andre japanske krigsskibe , ud fra Japan i et bevidst selvmordstogt mod allierede styrker , der var i kamp i slaget om Okinawa .	Den japanske styrke blev angrebet , stoppet og næsten fuldstændigt nedkæmpet af amerikanske hangarskibsbaserede fly , før styrken nåede til Okinawa .	_ Yamato _ og fem andre japanske krigsskibe blev sænket .
+Event	T0	flådeoperation	EVENT	30
+Event	T1	Operationen	EVENT	87
+Event	T10	nåede	EVENT	550
+Event	T2	kendt	EVENT	107
+Event	T3	satte	EVENT	202
+Event	T5	kamp	EVENT	393
+Event	T6	slaget	EVENT	400
+Event	T7	angrebet	EVENT	445
+Event	T8	stoppet	EVENT	456
+Event	T9	nedkæmpet	EVENT	487
+Relation	T1	T2	SuperSub	true	Operationen	kendt
+Relation	T2	T1	SubSuper	true	kendt	Operationen
+Relation	T0	T2	SuperSub	true	flådeoperation	kendt
+Relation	T2	T0	SubSuper	true	kendt	flådeoperation
+Relation	T5	T7	SuperSub	true	kamp	angrebet
+Relation	T7	T5	SubSuper	true	angrebet	kamp
+Relation	T0	T10	NoRel	true	flådeoperation	nåede
+Relation	T0	T3	NoRel	true	flådeoperation	satte
+Relation	T0	T5	NoRel	true	flådeoperation	kamp
+Relation	T1	T10	NoRel	true	Operationen	nåede
+Relation	T2	T3	NoRel	true	kendt	satte
+Relation	T2	T8	NoRel	true	kendt	stoppet
+Relation	T6	T9	NoRel	true	slaget	nedkæmpet
+Relation	T7	T9	NoRel	true	angrebet	nedkæmpet
+Relation	T8	T1	NoRel	true	stoppet	Operationen
+Relation	T8	T6	NoRel	true	stoppet	slaget

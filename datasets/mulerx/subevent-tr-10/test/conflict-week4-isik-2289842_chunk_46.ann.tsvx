@@ -1,0 +1,31 @@
+Text	Herakleios'un zafer ordusu , kendisine karşı duracak Pers ordusu kalmadığı için , Hüsrev'in sarayı olan Dastagird'i yağmaladılar ve ele geçirilmiş 300 adet Bizans bayrağını geri alırken muazzam zenginlik elde ettiler .	Hüsrev , Tizpon'un savunması için destek sağlamaya çalışmak için zaten Susiana dağlarına kaçmıştı .	Herakleios daha sonra Hüsrev'e bir ültimatom yayınladı :	Bununla birlikte , Herakleios , Tizpon'a saldıramazdı , çünkü Nahravan Kanalı'nın üzerindeki bir köprünün çökmesi nedeniyle mümkün değildi , ve kanalı geçmek için girişimde bulunmadı .	Ne olursa olsun , Pers ordusu isyan etti ve II. Hüsrev'i devirerek onun yerine Siroes olarak da bilinen oğlu II. Kavad tahta geçti .
+Event	T0	yağmaladılar	EVENT	116
+Event	T1	alırken	EVENT	178
+Event	T2	savunması	EVENT	238
+Event	T3	yayınladı	EVENT	364
+Event	T4	çökmesi	EVENT	482
+Event	T5	geçmek	EVENT	527
+Event	T6	etti	EVENT	597
+Event	T7	devirerek	EVENT	618
+Event	T8	geçti	EVENT	686
+Event	T9	geçirilmiş	EVENT	136
+Event	T10	ettiler	EVENT	209
+Event	T11	kaçmıştı	EVENT	308
+Event	T12	çalışmak	EVENT	270
+Relation	T0	T1	NoRel	true	yağmaladılar	alırken
+Relation	T1	T0	NoRel	true	alırken	yağmaladılar
+Relation	T1	T3	NoRel	true	alırken	yayınladı
+Relation	T10	T0	NoRel	true	ettiler	yağmaladılar
+Relation	T10	T11	NoRel	true	ettiler	kaçmıştı
+Relation	T10	T2	NoRel	true	ettiler	savunması
+Relation	T10	T6	NoRel	true	ettiler	etti
+Relation	T10	T7	NoRel	true	ettiler	devirerek
+Relation	T11	T12	NoRel	true	kaçmıştı	çalışmak
+Relation	T12	T10	NoRel	true	çalışmak	ettiler
+Relation	T3	T1	NoRel	true	yayınladı	alırken
+Relation	T4	T11	NoRel	true	çökmesi	kaçmıştı
+Relation	T5	T0	NoRel	true	geçmek	yağmaladılar
+Relation	T5	T7	NoRel	true	geçmek	devirerek
+Relation	T6	T0	NoRel	true	etti	yağmaladılar
+Relation	T7	T3	NoRel	true	devirerek	yayınladı
+Relation	T8	T2	NoRel	true	geçti	savunması

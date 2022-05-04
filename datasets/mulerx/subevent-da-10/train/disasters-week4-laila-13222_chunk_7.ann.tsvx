@@ -1,0 +1,73 @@
+Text	El Reno tornadoen medførte skader der kategoriserede den som en EF3 tornado .	Orkaner er også vinde , de er langsommere end de voldsomste tornadoer , men påvirker et langt større område .	Nogen forveksler måske tornadoer med orkaner , men der er tale om to vidt forskellige vejrsystemer .	Dog er det ikke udsædvanligt at der i lavtrykket orkanen består af kan dannes kraftige skypumper eller sågar tornadoer .	Orkaner kan ses fra rummet via et satellitbillede , mens tornadoer ikke kan ses fra den afstand .
+Event	T0	skader	EVENT	27
+Event	T1	kategoriserede	EVENT	38
+Event	T2	tornado	EVENT	68
+Event	T3	vinde	EVENT	94
+Event	T4	påvirker	EVENT	154
+Event	T5	tornadoer	EVENT	211
+Event	T6	består	EVENT	346
+Event	T7	dannes	EVENT	360
+Event	T8	ses	EVENT	422
+Event	T9	ses	EVENT	486
+Event	T10	tornadoen	EVENT	8
+Event	T11	Orkaner	EVENT	78
+Event	T12	tornadoer	EVENT	138
+Event	T13	langsommere	EVENT	108
+Event	T14	orkaner	EVENT	225
+Event	T15	forveksler	EVENT	194
+Event	T16	forskellige	EVENT	262
+Event	T17	lavtrykket	EVENT	327
+Event	T18	orkanen	EVENT	338
+Event	T19	skypumper	EVENT	376
+Event	T20	tornadoer	EVENT	398
+Event	T21	Orkaner	EVENT	410
+Event	T22	tornadoer	EVENT	467
+Relation	T11	T13	SuperSub	true	Orkaner	langsommere
+Relation	T13	T11	SubSuper	true	langsommere	Orkaner
+Relation	T0	T20	NoRel	true	skader	tornadoer
+Relation	T1	T16	NoRel	true	kategoriserede	forskellige
+Relation	T1	T17	NoRel	true	kategoriserede	lavtrykket
+Relation	T1	T18	NoRel	true	kategoriserede	orkanen
+Relation	T1	T3	NoRel	true	kategoriserede	vinde
+Relation	T10	T11	NoRel	true	tornadoen	Orkaner
+Relation	T10	T14	NoRel	true	tornadoen	orkaner
+Relation	T10	T17	NoRel	true	tornadoen	lavtrykket
+Relation	T10	T6	NoRel	true	tornadoen	består
+Relation	T10	T7	NoRel	true	tornadoen	dannes
+Relation	T10	T8	NoRel	true	tornadoen	ses
+Relation	T11	T0	NoRel	true	Orkaner	skader
+Relation	T11	T15	NoRel	true	Orkaner	forveksler
+Relation	T11	T2	NoRel	true	Orkaner	tornado
+Relation	T11	T21	NoRel	true	Orkaner	Orkaner
+Relation	T11	T9	NoRel	true	Orkaner	ses
+Relation	T12	T17	NoRel	true	tornadoer	lavtrykket
+Relation	T12	T3	NoRel	true	tornadoer	vinde
+Relation	T12	T6	NoRel	true	tornadoer	består
+Relation	T14	T3	NoRel	true	orkaner	vinde
+Relation	T14	T6	NoRel	true	orkaner	består
+Relation	T15	T17	NoRel	true	forveksler	lavtrykket
+Relation	T17	T18	NoRel	true	lavtrykket	orkanen
+Relation	T17	T20	NoRel	true	lavtrykket	tornadoer
+Relation	T17	T3	NoRel	true	lavtrykket	vinde
+Relation	T18	T11	NoRel	true	orkanen	Orkaner
+Relation	T18	T15	NoRel	true	orkanen	forveksler
+Relation	T18	T3	NoRel	true	orkanen	vinde
+Relation	T19	T5	NoRel	true	skypumper	tornadoer
+Relation	T2	T6	NoRel	true	tornado	består
+Relation	T2	T7	NoRel	true	tornado	dannes
+Relation	T2	T9	NoRel	true	tornado	ses
+Relation	T20	T0	NoRel	true	tornadoer	skader
+Relation	T20	T18	NoRel	true	tornadoer	orkanen
+Relation	T20	T6	NoRel	true	tornadoer	består
+Relation	T22	T7	NoRel	true	tornadoer	dannes
+Relation	T4	T15	NoRel	true	påvirker	forveksler
+Relation	T4	T20	NoRel	true	påvirker	tornadoer
+Relation	T4	T5	NoRel	true	påvirker	tornadoer
+Relation	T5	T3	NoRel	true	tornadoer	vinde
+Relation	T6	T15	NoRel	true	består	forveksler
+Relation	T6	T8	NoRel	true	består	ses
+Relation	T7	T14	NoRel	true	dannes	orkaner
+Relation	T7	T19	NoRel	true	dannes	skypumper
+Relation	T8	T20	NoRel	true	ses	tornadoer
+Relation	T8	T7	NoRel	true	ses	dannes
+Relation	T8	T9	NoRel	true	ses	ses

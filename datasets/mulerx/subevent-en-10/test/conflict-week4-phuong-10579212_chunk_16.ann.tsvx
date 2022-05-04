@@ -1,0 +1,89 @@
+Text	The Canadian Official Historian Charles Stacey , and military historian Michael Reynolds , wrote that German casualty figures for individual operations are difficult to determine .	Stacey attributes this to the gradual degradation of the German logistics chain , leaving incomplete records , and Reynolds wrote that units sometimes over-reported their losses , in the hope of receiving more reinforcements .	German losses for the battle were significantly fewer than those suffered by the Canadians .	According to Reynolds , between 16 July and 1 August , the 1st SS Panzer Division lost 1,092 men killed , wounded or captured — along with 11 _ Panzer__IV tanks and 10 _ Sturmgeschütz__III self - propelled guns — in fighting across all its fronts including at Verrières .	Over a similar period , he estimates the 12th SS Panzer Division — in all sectors — suffered only 134 casualties .
+Event	T0	wrote	EVENT	91
+Event	T1	casualty	EVENT	109
+Event	T2	operations	EVENT	141
+Event	T3	determine	EVENT	169
+Event	T4	attributes	EVENT	188
+Event	T5	degradation	EVENT	219
+Event	T6	leaving	EVENT	263
+Event	T7	wrote	EVENT	305
+Event	T8	losses	EVENT	352
+Event	T9	receiving	EVENT	376
+Event	T10	reinforcements	EVENT	391
+Event	T11	losses	EVENT	415
+Event	T12	battle	EVENT	430
+Event	T13	suffered	EVENT	473
+Event	T14	lost	EVENT	583
+Event	T15	killed	EVENT	598
+Event	T16	wounded	EVENT	607
+Event	T17	captured	EVENT	618
+Event	T18	propelled	EVENT	697
+Event	T19	fighting	EVENT	717
+Event	T20	estimates	EVENT	800
+Event	T21	suffered	EVENT	857
+Event	T22	casualties	EVENT	875
+Event	T23	over-reported	EVENT	332
+Event	T24	hope	EVENT	368
+Relation	T0	T1	NoRel	true	wrote	casualty
+Relation	T0	T5	NoRel	true	wrote	degradation
+Relation	T0	T9	NoRel	true	wrote	receiving
+Relation	T1	T10	NoRel	true	casualty	reinforcements
+Relation	T1	T18	NoRel	true	casualty	propelled
+Relation	T1	T7	NoRel	true	casualty	wrote
+Relation	T10	T20	NoRel	true	reinforcements	estimates
+Relation	T11	T14	NoRel	true	losses	lost
+Relation	T11	T9	NoRel	true	losses	receiving
+Relation	T12	T10	NoRel	true	battle	reinforcements
+Relation	T12	T11	NoRel	true	battle	losses
+Relation	T13	T5	NoRel	true	suffered	degradation
+Relation	T14	T1	NoRel	true	lost	casualty
+Relation	T14	T16	NoRel	true	lost	wounded
+Relation	T14	T17	NoRel	true	lost	captured
+Relation	T14	T23	NoRel	true	lost	over-reported
+Relation	T14	T7	NoRel	true	lost	wrote
+Relation	T15	T0	NoRel	true	killed	wrote
+Relation	T15	T18	NoRel	true	killed	propelled
+Relation	T15	T24	NoRel	true	killed	hope
+Relation	T15	T5	NoRel	true	killed	degradation
+Relation	T16	T17	NoRel	true	wounded	captured
+Relation	T16	T5	NoRel	true	wounded	degradation
+Relation	T17	T10	NoRel	true	captured	reinforcements
+Relation	T17	T14	NoRel	true	captured	lost
+Relation	T17	T8	NoRel	true	captured	losses
+Relation	T17	T9	NoRel	true	captured	receiving
+Relation	T18	T11	NoRel	true	propelled	losses
+Relation	T18	T14	NoRel	true	propelled	lost
+Relation	T18	T2	NoRel	true	propelled	operations
+Relation	T18	T20	NoRel	true	propelled	estimates
+Relation	T18	T6	NoRel	true	propelled	leaving
+Relation	T19	T12	NoRel	true	fighting	battle
+Relation	T19	T23	NoRel	true	fighting	over-reported
+Relation	T19	T3	NoRel	true	fighting	determine
+Relation	T2	T19	NoRel	true	operations	fighting
+Relation	T20	T9	NoRel	true	estimates	receiving
+Relation	T21	T12	NoRel	true	suffered	battle
+Relation	T21	T20	NoRel	true	suffered	estimates
+Relation	T21	T5	NoRel	true	suffered	degradation
+Relation	T21	T7	NoRel	true	suffered	wrote
+Relation	T23	T12	NoRel	true	over-reported	battle
+Relation	T23	T22	NoRel	true	over-reported	casualties
+Relation	T23	T24	NoRel	true	over-reported	hope
+Relation	T23	T3	NoRel	true	over-reported	determine
+Relation	T24	T1	NoRel	true	hope	casualty
+Relation	T24	T14	NoRel	true	hope	lost
+Relation	T24	T16	NoRel	true	hope	wounded
+Relation	T3	T16	NoRel	true	determine	wounded
+Relation	T3	T20	NoRel	true	determine	estimates
+Relation	T3	T4	NoRel	true	determine	attributes
+Relation	T4	T10	NoRel	true	attributes	reinforcements
+Relation	T5	T2	NoRel	true	degradation	operations
+Relation	T5	T23	NoRel	true	degradation	over-reported
+Relation	T6	T10	NoRel	true	leaving	reinforcements
+Relation	T6	T3	NoRel	true	leaving	determine
+Relation	T6	T7	NoRel	true	leaving	wrote
+Relation	T7	T1	NoRel	true	wrote	casualty
+Relation	T7	T4	NoRel	true	wrote	attributes
+Relation	T8	T10	NoRel	true	losses	reinforcements
+Relation	T8	T13	NoRel	true	losses	suffered
+Relation	T8	T7	NoRel	true	losses	wrote
+Relation	T9	T18	NoRel	true	receiving	propelled

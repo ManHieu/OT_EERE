@@ -1,0 +1,8 @@
+Text	Bazı binalar yıkıldı .	NTV canlı yayınına katılan Elazığ Valisi Çetin Oktay Kaldırım , kent genelinde 3 kişinin hayatını kaybettiğini açıkladı .	Malatya Valisi Aydın Baruş da " Malatya'daki depremde şu ana kadar toplam 3 vatandaşımız öldü .	Doğanyol , Pütürge ve Kale ilçelerimizde toplam 45 kişi yaralandı .	" belirtti .
+Event	T0	yıkıldı	EVENT	13
+Event	T1	açıkladı	EVENT	134
+Event	T2	depremde	EVENT	190
+Event	T3	öldü	EVENT	234
+Event	T4	yaralandı	EVENT	297
+Event	T5	katılan	EVENT	42
+Relation	T4	T1	NoRel	true	yaralandı	açıkladı

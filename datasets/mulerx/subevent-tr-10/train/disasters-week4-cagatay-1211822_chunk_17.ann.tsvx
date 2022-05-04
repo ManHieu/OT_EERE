@@ -1,0 +1,17 @@
+Text	küçükresim | sol | NOAA'nın tsunaminin yayılımına ilişkin animasyonu Bu veriler , JMA'nın Japonya kıyısı boyunca bulunan kayıt istasyonlarından elde edildi .	Pek çok bölge ayrıca 1 ila 3 metre uzunluğunda olan tsunami dalgalarından etkilendi ve JMA raporu " Bazı yerlerde dalgaların yüksekliği bu verilerden daha yüksek olabilir " diye bir not içermekteydi .	İlk kaydedilen tsunami dalgası verilerinin zamanları 15.12 ila 15.21 arasında değişmekteydi , bu da depremden 26 ila 35 dakika sonraydı .	Rapor ayrıca tsunami gözlem detaylarını ve dalgalardan etkilenen kıyıların ayrıntılı haritalarını içermekteydi .	23 Mart 2011'de , Liman ve Havalimanları Araştırma Enstitüsü , telemetri ile aşağıdaki verileri elde etti :
+Event	T0	animasyonu	EVENT	58
+Event	T1	kayıt	EVENT	121
+Event	T2	edildi	EVENT	149
+Event	T3	etkilendi	EVENT	232
+Event	T5	tsunami	EVENT	510
+Event	T6	içermekteydi	EVENT	595
+Event	T4	depremden	EVENT	459
+Event	T8	tsunaminin	EVENT	28
+Event	T9	gözlem	EVENT	518
+Event	T7	elde etti	EVENT	706
+Relation	T0	T8	NoRel	true	animasyonu	tsunaminin
+Relation	T2	T7	NoRel	true	edildi	elde etti
+Relation	T3	T9	NoRel	true	etkilendi	gözlem
+Relation	T6	T7	NoRel	true	içermekteydi	elde etti
+Relation	T8	T7	NoRel	true	tsunaminin	elde etti
+Relation	T9	T3	NoRel	true	gözlem	etkilendi

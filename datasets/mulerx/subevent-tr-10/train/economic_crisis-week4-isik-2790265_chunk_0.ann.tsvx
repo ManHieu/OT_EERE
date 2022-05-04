@@ -1,0 +1,48 @@
+Text	BANKERLER KRIZI , Türkiye tarihinde 1980'li yıllarda yüksek faizli gelir elde etmek amacıyla paralarını bankerlere yatıran ve bankerlik sisteminin çöküşü ile mevduat sahiplerinin parasını kaybetmesi ile sonuçlanan olay .	Sayılarının 300 bini geçtiği tahmin edilen bankerzedeler 1980'li yıllarda Türkiye gündeminin popüler konularından biri olmuştur .	Olay , toplumsal bir infiale yol açmış , o dönem intiharlar , öldürme ve yaralamalar artmıştır .	12 Eylül Darbesi ile ordu yönetime el koymuş ve asker kökenli Bülend Ulusu liderliğinde 21 Eylül 1980 tarihinde 44. Türkiye Hükûmeti kurulmuştur .	Bülent Ulusu hükümeti tarafından , ilgili mevzuatta düzenlemeler yapılmış , bankerlerin reklam yapmalarını kısıtlanmış , banker olma şartları zorlaştırılmış , vb . bankerlik sistemi için sınırlayıcı tedbirler getirilmiştir .
+Event	T0	yatıran	EVENT	115
+Event	T1	çöküşü	EVENT	147
+Event	T2	kaybetmesi	EVENT	188
+Event	T3	olay	EVENT	214
+Event	T4	Olay	EVENT	351
+Event	T5	açmış	EVENT	384
+Event	T7	kurulmuştur	EVENT	581
+Event	T8	yapılmış	EVENT	660
+Event	T9	kısıtlanmış	EVENT	702
+Event	T10	getirilmiştir	EVENT	804
+Event	T11	KRIZI	EVENT	10
+Event	T13	artmıştır	EVENT	436
+Event	T6	Darbesi	EVENT	457
+Event	T12	koymuş	EVENT	486
+Event	T14	zorlaştırılmış	EVENT	737
+Relation	T11	T5	SuperSub	true	KRIZI	açmış
+Relation	T5	T11	SubSuper	true	açmış	KRIZI
+Relation	T11	T13	SuperSub	true	KRIZI	artmıştır
+Relation	T13	T11	SubSuper	true	artmıştır	KRIZI
+Relation	T0	T1	NoRel	true	yatıran	çöküşü
+Relation	T0	T6	NoRel	true	yatıran	Darbesi
+Relation	T1	T4	NoRel	true	çöküşü	Olay
+Relation	T11	T0	NoRel	true	KRIZI	yatıran
+Relation	T11	T10	NoRel	true	KRIZI	getirilmiştir
+Relation	T12	T6	NoRel	true	koymuş	Darbesi
+Relation	T12	T9	NoRel	true	koymuş	kısıtlanmış
+Relation	T13	T0	NoRel	true	artmıştır	yatıran
+Relation	T13	T12	NoRel	true	artmıştır	koymuş
+Relation	T14	T10	NoRel	true	zorlaştırılmış	getirilmiştir
+Relation	T14	T11	NoRel	true	zorlaştırılmış	KRIZI
+Relation	T14	T7	NoRel	true	zorlaştırılmış	kurulmuştur
+Relation	T2	T12	NoRel	true	kaybetmesi	koymuş
+Relation	T2	T6	NoRel	true	kaybetmesi	Darbesi
+Relation	T3	T1	NoRel	true	olay	çöküşü
+Relation	T3	T10	NoRel	true	olay	getirilmiştir
+Relation	T3	T11	NoRel	true	olay	KRIZI
+Relation	T4	T6	NoRel	true	Olay	Darbesi
+Relation	T4	T8	NoRel	true	Olay	yapılmış
+Relation	T4	T9	NoRel	true	Olay	kısıtlanmış
+Relation	T5	T2	NoRel	true	açmış	kaybetmesi
+Relation	T5	T4	NoRel	true	açmış	Olay
+Relation	T6	T1	NoRel	true	Darbesi	çöküşü
+Relation	T6	T2	NoRel	true	Darbesi	kaybetmesi
+Relation	T8	T11	NoRel	true	yapılmış	KRIZI
+Relation	T8	T13	NoRel	true	yapılmış	artmıştır
+Relation	T8	T5	NoRel	true	yapılmış	açmış
+Relation	T9	T0	NoRel	true	kısıtlanmış	yatıran

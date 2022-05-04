@@ -1,0 +1,45 @@
+Text	küçükresim | Yerleşim planı | 201x201px | alt = DÜNYA TICARET MERKEZI ( İngilizce : WORLD TRADE CENTER ) , Amerika Birleşik Devletleri'nin New York kentinde Manhattan semtinde bulunan ve 11 Eylül 2001 terör saldırılarında yıkılan ticaret merkezi .	Yıkılışının ardından birinci kulenin yapımına 27 Nisan 2006 yılında başlanmış olup 3 Kasım 2014 tarihinde tamamlanıp açılmıştır .	Dünya ticareti merkezi 1 , 2 , 3 , 4 ve 7 olarak isimlendirilen kulelerin 7 numaralı olanı 7 Mayıs 2002 tarihinde inşaatına başlanıp 23 Mayıs 2020 tarihinde açılmıştır .	2 numaralı kulenin 2024 yılında açılması beklenmektedir .	küçükresim | Binadaki asansörler | 352x352px İkiz Kuleler olarak adlandırılan merkezin yapımına 1960 yılında başlanmış ve ilk kiracısı 1970 yılında Kuzey kuleye taşınmış , bundan iki yıl sonra ikinci kiracı Güney kuleye taşınmıştır .
+Event	T0	Yıkılışının	EVENT	248
+Event	T1	yapımına	EVENT	285
+Event	T2	başlanmış	EVENT	316
+Event	T3	açılmıştır	EVENT	365
+Event	T4	açılmıştır	EVENT	535
+Event	T5	başlanmış	EVENT	715
+Event	T6	taşınmış	EVENT	767
+Event	T7	tamamlanıp	EVENT	354
+Event	T8	saldırılarında	EVENT	207
+Event	T9	yıkılan	EVENT	222
+Event	T10	inşaatına	EVENT	492
+Event	T11	yapımına	EVENT	693
+Event	T12	taşınmıştır	EVENT	826
+Event	T13	başlanıp	EVENT	502
+Relation	T8	T9	SuperSub	true	saldırılarında	yıkılan
+Relation	T9	T8	SubSuper	true	yıkılan	saldırılarında
+Relation	T8	T1	SuperSub	true	saldırılarında	yapımına
+Relation	T1	T8	SubSuper	true	yapımına	saldırılarında
+Relation	T8	T10	SuperSub	true	saldırılarında	inşaatına
+Relation	T10	T8	SubSuper	true	inşaatına	saldırılarında
+Relation	T0	T3	NoRel	true	Yıkılışının	açılmıştır
+Relation	T1	T10	NoRel	true	yapımına	inşaatına
+Relation	T1	T11	NoRel	true	yapımına	yapımına
+Relation	T10	T1	NoRel	true	inşaatına	yapımına
+Relation	T11	T10	NoRel	true	yapımına	inşaatına
+Relation	T11	T12	NoRel	true	yapımına	taşınmıştır
+Relation	T11	T4	NoRel	true	yapımına	açılmıştır
+Relation	T11	T5	NoRel	true	yapımına	başlanmış
+Relation	T12	T13	NoRel	true	taşınmıştır	başlanıp
+Relation	T13	T6	NoRel	true	başlanıp	taşınmış
+Relation	T2	T0	NoRel	true	başlanmış	Yıkılışının
+Relation	T2	T9	NoRel	true	başlanmış	yıkılan
+Relation	T3	T8	NoRel	true	açılmıştır	saldırılarında
+Relation	T4	T2	NoRel	true	açılmıştır	başlanmış
+Relation	T4	T6	NoRel	true	açılmıştır	taşınmış
+Relation	T4	T7	NoRel	true	açılmıştır	tamamlanıp
+Relation	T4	T9	NoRel	true	açılmıştır	yıkılan
+Relation	T5	T13	NoRel	true	başlanmış	başlanıp
+Relation	T5	T4	NoRel	true	başlanmış	açılmıştır
+Relation	T6	T9	NoRel	true	taşınmış	yıkılan
+Relation	T7	T12	NoRel	true	tamamlanıp	taşınmıştır
+Relation	T9	T0	NoRel	true	yıkılan	Yıkılışının
+Relation	T9	T10	NoRel	true	yıkılan	inşaatına
+Relation	T9	T12	NoRel	true	yıkılan	taşınmıştır

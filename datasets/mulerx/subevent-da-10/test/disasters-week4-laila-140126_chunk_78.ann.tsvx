@@ -1,0 +1,59 @@
+Text	thumb| alt= | B-52H 61-0026 _Czar 52 _ øjeblikke før den styrtede ned under træning til en flyopvisning .	Copilotens nødluge , som blev afskudt under hans forsøg på at undslippe kan ses nær spidsen af halen .	- Den 16. oktober 1984 studsede B-52G , AF serienummer 57-6479 , vingen på Hunts Mesa , en formation i Monument Valley , Arizona , og styrtede ned , hvilket sendte en ildkugle højt op i luften .	To af de syv besætningsmedlemmer omkom ved styrtet .	- Den 2. februar 1991 styrtede en B-52G fra 4300 Provisional Bomb Wing på Diego Garcia ned mens den var på vej tilbage fra en bombemission i Irak under Golfkrigen .
+Event	T0	træning	EVENT	76
+Event	T1	flyopvisning	EVENT	91
+Event	T2	nødluge	EVENT	117
+Event	T3	afskudt	EVENT	136
+Event	T4	undslippe	EVENT	168
+Event	T5	ses	EVENT	182
+Event	T6	studsede	EVENT	232
+Event	T7	formation	EVENT	300
+Event	T8	sendte	EVENT	366
+Event	T9	omkom	EVENT	437
+Event	T10	styrtet	EVENT	447
+Event	T11	styrtede	EVENT	479
+Event	T12	bombemission	EVENT	583
+Event	T13	Golfkrigen	EVENT	609
+Event	T14	styrtede ned	EVENT	57
+Event	T15	forsøg	EVENT	155
+Event	T16	styrtede ned	EVENT	343
+Event	T17	på vej	EVENT	561
+Relation	T2	T5	SuperSub	true	nødluge	ses
+Relation	T5	T2	SubSuper	true	ses	nødluge
+Relation	T0	T11	NoRel	true	træning	styrtede
+Relation	T0	T14	NoRel	true	træning	styrtede ned
+Relation	T1	T2	NoRel	true	flyopvisning	nødluge
+Relation	T10	T13	NoRel	true	styrtet	Golfkrigen
+Relation	T10	T5	NoRel	true	styrtet	ses
+Relation	T10	T8	NoRel	true	styrtet	sendte
+Relation	T10	T9	NoRel	true	styrtet	omkom
+Relation	T11	T12	NoRel	true	styrtede	bombemission
+Relation	T11	T16	NoRel	true	styrtede	styrtede ned
+Relation	T11	T2	NoRel	true	styrtede	nødluge
+Relation	T11	T6	NoRel	true	styrtede	studsede
+Relation	T12	T10	NoRel	true	bombemission	styrtet
+Relation	T12	T2	NoRel	true	bombemission	nødluge
+Relation	T13	T8	NoRel	true	Golfkrigen	sendte
+Relation	T14	T5	NoRel	true	styrtede ned	ses
+Relation	T15	T10	NoRel	true	forsøg	styrtet
+Relation	T15	T13	NoRel	true	forsøg	Golfkrigen
+Relation	T15	T6	NoRel	true	forsøg	studsede
+Relation	T16	T4	NoRel	true	styrtede ned	undslippe
+Relation	T17	T1	NoRel	true	på vej	flyopvisning
+Relation	T17	T14	NoRel	true	på vej	styrtede ned
+Relation	T17	T4	NoRel	true	på vej	undslippe
+Relation	T17	T5	NoRel	true	på vej	ses
+Relation	T2	T7	NoRel	true	nødluge	formation
+Relation	T2	T8	NoRel	true	nødluge	sendte
+Relation	T3	T9	NoRel	true	afskudt	omkom
+Relation	T4	T0	NoRel	true	undslippe	træning
+Relation	T5	T10	NoRel	true	ses	styrtet
+Relation	T5	T13	NoRel	true	ses	Golfkrigen
+Relation	T5	T17	NoRel	true	ses	på vej
+Relation	T5	T8	NoRel	true	ses	sendte
+Relation	T6	T1	NoRel	true	studsede	flyopvisning
+Relation	T6	T15	NoRel	true	studsede	forsøg
+Relation	T7	T12	NoRel	true	formation	bombemission
+Relation	T7	T13	NoRel	true	formation	Golfkrigen
+Relation	T7	T5	NoRel	true	formation	ses
+Relation	T8	T3	NoRel	true	sendte	afskudt
+Relation	T8	T6	NoRel	true	sendte	studsede

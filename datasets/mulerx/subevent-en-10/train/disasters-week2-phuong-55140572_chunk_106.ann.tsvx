@@ -1,0 +1,34 @@
+Text	Portions of the Georgia and South Carolina coasts were also photographed .	Additionally , the _ Sun - Sentinel _ published before and after photos of several landmarks in the Florida Keys .	In the days after the hurricane , due to the heavy rainfall , numerous rivers had flooded , including residential areas .	Public health risks , such as diarrheal infections and mosquito - borne illnesses , remain from the flooding that resulted in the aftermath of the hurricane .	A large concern from flooding is contamination because people become exposed to dirty floodwaters and the potential for contaminated water to enter the local water supply is significant .
+Event	T0	photographed	EVENT	60
+Event	T1	published	EVENT	113
+Event	T10	flooding	EVENT	492
+Event	T11	contamination	EVENT	504
+Event	T12	contaminated	EVENT	591
+Event	T13	enter	EVENT	613
+Event	T15	exposed	EVENT	540
+Event	T2	hurricane	EVENT	212
+Event	T3	rainfall	EVENT	241
+Event	T4	flooded	EVENT	272
+Event	T6	remain	EVENT	396
+Event	T7	flooding	EVENT	412
+Event	T8	resulted	EVENT	426
+Event	T9	hurricane	EVENT	459
+Relation	T3	T2	SuperSub	true	rainfall	hurricane
+Relation	T2	T3	SubSuper	true	hurricane	rainfall
+Relation	T0	T3	NoRel	true	photographed	rainfall
+Relation	T1	T3	NoRel	true	published	rainfall
+Relation	T11	T10	NoRel	true	contamination	flooding
+Relation	T11	T15	NoRel	true	contamination	exposed
+Relation	T11	T4	NoRel	true	contamination	flooded
+Relation	T12	T11	NoRel	true	contaminated	contamination
+Relation	T12	T4	NoRel	true	contaminated	flooded
+Relation	T13	T0	NoRel	true	enter	photographed
+Relation	T13	T9	NoRel	true	enter	hurricane
+Relation	T2	T9	NoRel	true	hurricane	hurricane
+Relation	T3	T0	NoRel	true	rainfall	photographed
+Relation	T4	T2	NoRel	true	flooded	hurricane
+Relation	T6	T12	NoRel	true	remain	contaminated
+Relation	T6	T15	NoRel	true	remain	exposed
+Relation	T7	T10	NoRel	true	flooding	flooding
+Relation	T7	T15	NoRel	true	flooding	exposed
+Relation	T7	T3	NoRel	true	flooding	rainfall

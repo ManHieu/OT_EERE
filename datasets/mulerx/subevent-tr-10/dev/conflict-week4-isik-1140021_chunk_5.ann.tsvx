@@ -1,0 +1,24 @@
+Text	Ancak Küba askerleri uçak pistine barikat kurmuşlardır .	Mason arkadaşları için kendini feda edip uçaktan atlar ve barikatı bir uçaksavar yardımıyla yok eder .	Bu sırada Lev Kravchenko ve bir Kübalı asker tarafından yakalanıp bayıltılır .	Uyandığında ise karşısında Fidel Castro , Sovyet komutan Tümgeneral Nikita Dragovich ve onun sağ kolu Albay Lev Kravchenko belirir .	Mason Castro'ya onu öldürdüklerini söyler ancak Castro sadece dublörünü öldürdürdüğünü , planlarını bildiklerini söyler .
+Event	T0	eder	EVENT	153
+Event	T1	bayıltılır	EVENT	226
+Event	T2	belirir	EVENT	362
+Event	T3	söyler	EVENT	407
+Event	T4	öldürdürdüğünü	EVENT	444
+Event	T5	söyler	EVENT	485
+Event	T6	kurmuşlardır	EVENT	42
+Event	T7	atlar	EVENT	106
+Event	T8	yakalanıp	EVENT	216
+Event	T9	Uyandığında	EVENT	239
+Event	T10	öldürdüklerini	EVENT	392
+Relation	T1	T5	NoRel	true	bayıltılır	söyler
+Relation	T2	T9	NoRel	true	belirir	Uyandığında
+Relation	T3	T1	NoRel	true	söyler	bayıltılır
+Relation	T4	T1	NoRel	true	öldürdürdüğünü	bayıltılır
+Relation	T4	T9	NoRel	true	öldürdürdüğünü	Uyandığında
+Relation	T6	T7	NoRel	true	kurmuşlardır	atlar
+Relation	T7	T3	NoRel	true	atlar	söyler
+Relation	T8	T3	NoRel	true	yakalanıp	söyler
+Relation	T8	T7	NoRel	true	yakalanıp	atlar
+Relation	T9	T0	NoRel	true	Uyandığında	eder
+Relation	T9	T5	NoRel	true	Uyandığında	söyler
+Relation	T9	T6	NoRel	true	Uyandığında	kurmuşlardır

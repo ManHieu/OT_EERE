@@ -1,0 +1,41 @@
+Text	Vietnamese Navy ship ( described by Joe Baugher as a fishing vessel ) picks up three American crew , two men and one woman , said a spokesman at the Vietnamese embassy in Bangkok on 15 July , and took them to Vietnam where they were being " treated very kindly " .	Arrangements would be made to repatriate the crew .	At this time the United States and Vietnam had not yet reestablished diplomatic relations .	13 July : US Marine Corps McDonnell - Douglas AV - 8B - 3 Harrier II , Bu No _ 161582_ , c / n 512014/14 , of VMAT - 203 , crashed at MCAS Cherry Point , North Carolina .	10 August : US Navy Kaman SH - 2F Seasprite , BuNo__ 161910 _ , assigned to HSL - 35 NAS North Island , suffers tail structure failure and loss of directional control and crashes into ocean approximately off Point Loma while returning from weapons training exercise at NALF San Clemente Island .
+Event	T0	described	EVENT	23
+Event	T1	said	EVENT	125
+Event	T2	took	EVENT	196
+Event	T3	treated	EVENT	241
+Event	T4	made	EVENT	287
+Event	T5	repatriate	EVENT	295
+Event	T6	reestablished	EVENT	372
+Event	T7	relations	EVENT	397
+Event	T8	crashed	EVENT	532
+Event	T9	failure	EVENT	707
+Event	T10	loss	EVENT	719
+Event	T11	returning	EVENT	805
+Event	T12	exercise	EVENT	837
+Event	T13	picks up	EVENT	70
+Event	T14	Arrangements	EVENT	265
+Event	T15	assigned	EVENT	644
+Event	T16	suffers	EVENT	684
+Event	T17	crashes	EVENT	751
+Relation	T11	T17	SuperSub	true	returning	crashes
+Relation	T17	T11	SubSuper	true	crashes	returning
+Relation	T0	T12	NoRel	true	described	exercise
+Relation	T0	T14	NoRel	true	described	Arrangements
+Relation	T1	T10	NoRel	true	said	loss
+Relation	T1	T2	NoRel	true	said	took
+Relation	T10	T6	NoRel	true	loss	reestablished
+Relation	T12	T14	NoRel	true	exercise	Arrangements
+Relation	T13	T8	NoRel	true	picks up	crashed
+Relation	T13	T9	NoRel	true	picks up	failure
+Relation	T14	T2	NoRel	true	Arrangements	took
+Relation	T17	T5	NoRel	true	crashes	repatriate
+Relation	T17	T6	NoRel	true	crashes	reestablished
+Relation	T3	T13	NoRel	true	treated	picks up
+Relation	T4	T16	NoRel	true	made	suffers
+Relation	T5	T15	NoRel	true	repatriate	assigned
+Relation	T6	T17	NoRel	true	reestablished	crashes
+Relation	T7	T0	NoRel	true	relations	described
+Relation	T7	T11	NoRel	true	relations	returning
+Relation	T7	T5	NoRel	true	relations	repatriate
+Relation	T8	T17	NoRel	true	crashed	crashes
+Relation	T9	T14	NoRel	true	failure	Arrangements

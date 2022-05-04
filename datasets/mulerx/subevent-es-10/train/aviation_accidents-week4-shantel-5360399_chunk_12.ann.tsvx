@@ -1,0 +1,70 @@
+Text	Este accidente fue debido a una reparación errónea del mamparo de presión trasero , que había resultado dañado en 1978 en un golpe de cola .	En ambos accidentes , la reparación había sido efectuada de manera incorrecta .	China Airlines discutió gran parte del informe , sosteniendo que los investigadores no habían encontrado las piezas del avión que probaban las conclusiones del informe de la investigación .	Una prueba de la fatiga del metal estaba en unas fotografías tomadas durante una inspección de rutina del avión años antes del accidente .	Las fotos mostraban marcas visibles de color marrón nicotina alrededor del cono de cola .
+Event	T0	accidente	EVENT	5
+Event	T2	dañado	EVENT	104
+Event	T3	golpe	EVENT	125
+Event	T4	accidentes	EVENT	150
+Event	T5	reparación	EVENT	166
+Event	T6	efectuada	EVENT	188
+Event	T7	discutió	EVENT	236
+Event	T8	informe	EVENT	260
+Event	T9	sosteniendo	EVENT	270
+Event	T10	encontrado	EVENT	315
+Event	T11	probaban	EVENT	351
+Event	T12	conclusiones	EVENT	364
+Event	T13	investigación	EVENT	395
+Event	T14	prueba	EVENT	415
+Event	T15	fatiga	EVENT	428
+Event	T16	estaba	EVENT	445
+Event	T17	tomadas	EVENT	472
+Event	T18	inspección	EVENT	492
+Event	T19	accidente	EVENT	538
+Event	T20	mostraban	EVENT	560
+Event	T1	reparación	EVENT	32
+Relation	T4	T5	SuperSub	true	accidentes	reparación
+Relation	T5	T4	SubSuper	true	reparación	accidentes
+Relation	T19	T20	SuperSub	true	accidente	mostraban
+Relation	T20	T19	SubSuper	true	mostraban	accidente
+Relation	T0	T10	NoRel	true	accidente	encontrado
+Relation	T0	T12	NoRel	true	accidente	conclusiones
+Relation	T0	T16	NoRel	true	accidente	estaba
+Relation	T0	T9	NoRel	true	accidente	sosteniendo
+Relation	T1	T10	NoRel	true	reparación	encontrado
+Relation	T1	T17	NoRel	true	reparación	tomadas
+Relation	T10	T12	NoRel	true	encontrado	conclusiones
+Relation	T10	T19	NoRel	true	encontrado	accidente
+Relation	T10	T5	NoRel	true	encontrado	reparación
+Relation	T11	T13	NoRel	true	probaban	investigación
+Relation	T11	T2	NoRel	true	probaban	dañado
+Relation	T12	T13	NoRel	true	conclusiones	investigación
+Relation	T12	T2	NoRel	true	conclusiones	dañado
+Relation	T13	T16	NoRel	true	investigación	estaba
+Relation	T13	T3	NoRel	true	investigación	golpe
+Relation	T13	T6	NoRel	true	investigación	efectuada
+Relation	T16	T12	NoRel	true	estaba	conclusiones
+Relation	T16	T20	NoRel	true	estaba	mostraban
+Relation	T16	T4	NoRel	true	estaba	accidentes
+Relation	T16	T9	NoRel	true	estaba	sosteniendo
+Relation	T17	T10	NoRel	true	tomadas	encontrado
+Relation	T17	T2	NoRel	true	tomadas	dañado
+Relation	T18	T10	NoRel	true	inspección	encontrado
+Relation	T18	T5	NoRel	true	inspección	reparación
+Relation	T19	T2	NoRel	true	accidente	dañado
+Relation	T19	T9	NoRel	true	accidente	sosteniendo
+Relation	T2	T11	NoRel	true	dañado	probaban
+Relation	T20	T0	NoRel	true	mostraban	accidente
+Relation	T20	T11	NoRel	true	mostraban	probaban
+Relation	T20	T17	NoRel	true	mostraban	tomadas
+Relation	T3	T7	NoRel	true	golpe	discutió
+Relation	T4	T13	NoRel	true	accidentes	investigación
+Relation	T4	T17	NoRel	true	accidentes	tomadas
+Relation	T4	T19	NoRel	true	accidentes	accidente
+Relation	T4	T2	NoRel	true	accidentes	dañado
+Relation	T5	T19	NoRel	true	reparación	accidente
+Relation	T6	T18	NoRel	true	efectuada	inspección
+Relation	T6	T19	NoRel	true	efectuada	accidente
+Relation	T7	T0	NoRel	true	discutió	accidente
+Relation	T7	T10	NoRel	true	discutió	encontrado
+Relation	T7	T2	NoRel	true	discutió	dañado
+Relation	T7	T4	NoRel	true	discutió	accidentes
+Relation	T8	T20	NoRel	true	informe	mostraban
+Relation	T8	T3	NoRel	true	informe	golpe

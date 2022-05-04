@@ -1,0 +1,34 @@
+Text	I omkring 1.500 meters højde ramte flyet en bjergside .	Den franske anklagemyndighed konkluderede på grundlag af de foretagne undersøgelser , at flystyrtet var resultatet af en bevidst handling fra andenpilotens side .	Målt på antallet af omkomne er ulykken den tredje værste flyulykke , der har fundet sted i Frankrig , efter flyulykker den 1. december 1981 på Korsika ( 180 omkomne ) og den 3. marts 1974 ( Turkish Airlines Flight 981 , 346 omkomne ) .	Flight 9525 lettede fra bane 07R i Barcelona–El Prat Lufthavn omkring klokken 10:01 CET med forventet ankomst i Flughafen Düsseldorf International klokken 11:39 CET .	Kl. 10:27 nåede flyet sin cruise højde ved 38.000 fod ( cirka 10 km ) ca. 55 km sydøst for Marseille .
+Event	T0	ramte	EVENT	29
+Event	T1	konkluderede	EVENT	85
+Event	T2	undersøgelser	EVENT	126
+Event	T3	flystyrtet	EVENT	145
+Event	T4	handling	EVENT	185
+Event	T5	ulykken	EVENT	250
+Event	T6	flyulykke	EVENT	276
+Event	T7	flyulykker	EVENT	327
+Event	T8	omkomne	EVENT	443
+Event	T9	lettede	EVENT	467
+Event	T10	ankomst	EVENT	557
+Event	T11	nåede	EVENT	632
+Event	T12	resultatet	EVENT	160
+Event	T13	omkomne	EVENT	239
+Relation	T13	T6	SuperSub	true	omkomne	flyulykke
+Relation	T6	T13	SubSuper	true	flyulykke	omkomne
+Relation	T0	T10	NoRel	true	ramte	ankomst
+Relation	T1	T8	NoRel	true	konkluderede	omkomne
+Relation	T12	T1	NoRel	true	resultatet	konkluderede
+Relation	T13	T10	NoRel	true	omkomne	ankomst
+Relation	T2	T12	NoRel	true	undersøgelser	resultatet
+Relation	T3	T12	NoRel	true	flystyrtet	resultatet
+Relation	T4	T13	NoRel	true	handling	omkomne
+Relation	T5	T3	NoRel	true	ulykken	flystyrtet
+Relation	T5	T7	NoRel	true	ulykken	flyulykker
+Relation	T5	T8	NoRel	true	ulykken	omkomne
+Relation	T6	T12	NoRel	true	flyulykke	resultatet
+Relation	T7	T9	NoRel	true	flyulykker	lettede
+Relation	T8	T10	NoRel	true	omkomne	ankomst
+Relation	T8	T2	NoRel	true	omkomne	undersøgelser
+Relation	T8	T3	NoRel	true	omkomne	flystyrtet
+Relation	T9	T0	NoRel	true	lettede	ramte
+Relation	T9	T3	NoRel	true	lettede	flystyrtet

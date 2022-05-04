@@ -1,0 +1,22 @@
+Text	Bu baskın sırasında Demirci Efe'nin bazı kuvvetleri Isparta'ya kadar olan bölgedeki köylere dağılmıştı .	Harekâtın devamı bu çetelerin bulundukları köylerin basılması ve kaçakların ele geçirilmesi şeklinde sürmüştür .	Demirci Efe ise emrindeki 80 kişilik bir kuvvetle Uluborlu yönünde çekilmiştir .	18 Aralık 1920 tarihinde Demirci Efe'nin 700 adamı teslim alınmıştır .	Bu kişilerden yaşları uygun olanlar birliklerine sevk edilmek üzere yollandılar .
+Event	T0	baskın	EVENT	3
+Event	T1	dağılmıştı	EVENT	92
+Event	T2	devamı	EVENT	115
+Event	T3	basılması	EVENT	157
+Event	T4	geçirilmesi	EVENT	185
+Event	T5	sürmüştür	EVENT	206
+Event	T6	çekilmiştir	EVENT	285
+Event	T7	yollandılar	EVENT	438
+Event	T8	teslim alınmıştır	EVENT	350
+Relation	T2	T3	SuperSub	true	devamı	basılması
+Relation	T3	T2	SubSuper	true	basılması	devamı
+Relation	T2	T4	SuperSub	true	devamı	geçirilmesi
+Relation	T4	T2	SubSuper	true	geçirilmesi	devamı
+Relation	T2	T8	SuperSub	true	devamı	teslim alınmıştır
+Relation	T8	T2	SubSuper	true	teslim alınmıştır	devamı
+Relation	T1	T2	NoRel	true	dağılmıştı	devamı
+Relation	T1	T6	NoRel	true	dağılmıştı	çekilmiştir
+Relation	T4	T3	NoRel	true	geçirilmesi	basılması
+Relation	T4	T6	NoRel	true	geçirilmesi	çekilmiştir
+Relation	T6	T5	NoRel	true	çekilmiştir	sürmüştür
+Relation	T8	T3	NoRel	true	teslim alınmıştır	basılması

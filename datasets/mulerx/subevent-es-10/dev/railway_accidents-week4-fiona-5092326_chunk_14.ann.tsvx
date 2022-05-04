@@ -1,0 +1,34 @@
+Text	Tenían conocimiento del mal estado del material rodante y de la política empresarial de TBA , y recibieron alertas por parte de la CNRT .	A pesar de esto , utilizaron artimañas burocráticas para detener las medidas que eviten el plan delictivo de la empresa .	Así , contribuyeron al mal estado del material que fue entregado en consesión a TBA .	En los fundamentos de la sentencia , el tribunal menciona que con el accionar delictivo de los imputados se incumplieron las condiciones de seguridad , superando el umbral del riesgo permitido en el rubro ferroviario .	A su vez , destruyeron el estándar de calidad proyectando un trato indigno a los usuarios del servicio .
+Event	T0	alertas	EVENT	107
+Event	T1	utilizaron	EVENT	156
+Event	T2	detener	EVENT	195
+Event	T3	medidas	EVENT	207
+Event	T4	contribuyeron	EVENT	266
+Event	T5	entregado	EVENT	315
+Event	T6	sentencia	EVENT	371
+Event	T7	menciona	EVENT	395
+Event	T8	incumplieron	EVENT	454
+Event	T9	superando	EVENT	498
+Event	T10	permitido	EVENT	529
+Event	T11	destruyeron	EVENT	576
+Event	T12	proyectando	EVENT	611
+Event	T13	artimañas	EVENT	167
+Relation	T0	T10	NoRel	true	alertas	permitido
+Relation	T0	T2	NoRel	true	alertas	detener
+Relation	T1	T13	NoRel	true	utilizaron	artimañas
+Relation	T10	T5	NoRel	true	permitido	entregado
+Relation	T10	T7	NoRel	true	permitido	menciona
+Relation	T11	T3	NoRel	true	destruyeron	medidas
+Relation	T11	T7	NoRel	true	destruyeron	menciona
+Relation	T12	T1	NoRel	true	proyectando	utilizaron
+Relation	T12	T4	NoRel	true	proyectando	contribuyeron
+Relation	T12	T6	NoRel	true	proyectando	sentencia
+Relation	T13	T3	NoRel	true	artimañas	medidas
+Relation	T13	T5	NoRel	true	artimañas	entregado
+Relation	T2	T12	NoRel	true	detener	proyectando
+Relation	T3	T6	NoRel	true	medidas	sentencia
+Relation	T3	T8	NoRel	true	medidas	incumplieron
+Relation	T6	T10	NoRel	true	sentencia	permitido
+Relation	T6	T8	NoRel	true	sentencia	incumplieron
+Relation	T7	T2	NoRel	true	menciona	detener
+Relation	T8	T9	NoRel	true	incumplieron	superando

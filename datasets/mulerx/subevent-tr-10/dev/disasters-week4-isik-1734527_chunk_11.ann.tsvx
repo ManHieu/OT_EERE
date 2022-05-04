@@ -1,0 +1,28 @@
+Text	ABD'nin doğal afet'in neden olduğu hasarı gidermek için her türlü yardımı yapacağını ifade etti .	- – Almanya Dışişleri Bakanı Frank - Walter Steinmeier yaptığı yazılı açıklamada , " Sel sonucu yakınlarını kaybetmiş ailelere en derin duygularla başsağlığı diliyoruz .	" şeklinde bir açıklama yaparak Almanya'nın Bosna - Hersek ve Sırbistan'a yardım teklif ettiğini bildirdi .	Ayrıca , Almanya Teknik Yardım Federal Ajansı her iki ülke için 350.000 € fon ayırdı ve Sırbistan'daki su tahliye çalışması için ekip gönderdi .	- – Azerbaycan Olağanüstü Haller Bakanlığı , Cumhurbaşkanı İlham Aliyev'in talimatı ile Bosna - Hersek ve Sırbistan'a insanî yardım malzemeleri içeren 12 adet motorlu tekne , 260 çadır , 300 sahra yatak seti , 1500 battaniye , 40 jenaratör ve 20 adet su pompası gönderdi .
+Event	T0	yardımı	EVENT	66
+Event	T1	etti	EVENT	91
+Event	T2	kaybetmiş	EVENT	206
+Event	T3	bildirdi	EVENT	365
+Event	T4	ayırdı	EVENT	454
+Event	T5	çalışması	EVENT	490
+Event	T6	gönderdi	EVENT	510
+Event	T7	gönderdi	EVENT	783
+Event	T8	hasarı	EVENT	35
+Event	T9	açıklamada	EVENT	168
+Event	T10	Sel	EVENT	183
+Event	T11	diliyoruz	EVENT	256
+Event	T12	talimatı	EVENT	596
+Relation	T0	T9	NoRel	true	yardımı	açıklamada
+Relation	T10	T8	NoRel	true	Sel	hasarı
+Relation	T11	T1	NoRel	true	diliyoruz	etti
+Relation	T12	T8	NoRel	true	talimatı	hasarı
+Relation	T2	T5	NoRel	true	kaybetmiş	çalışması
+Relation	T3	T11	NoRel	true	bildirdi	diliyoruz
+Relation	T4	T12	NoRel	true	ayırdı	talimatı
+Relation	T5	T6	NoRel	true	çalışması	gönderdi
+Relation	T6	T10	NoRel	true	gönderdi	Sel
+Relation	T6	T11	NoRel	true	gönderdi	diliyoruz
+Relation	T7	T12	NoRel	true	gönderdi	talimatı
+Relation	T8	T10	NoRel	true	hasarı	Sel
+Relation	T8	T7	NoRel	true	hasarı	gönderdi
+Relation	T9	T5	NoRel	true	açıklamada	çalışması

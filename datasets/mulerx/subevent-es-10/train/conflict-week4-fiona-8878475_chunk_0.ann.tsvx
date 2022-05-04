@@ -1,0 +1,51 @@
+Text	RYSZARD SIWIEC ( ; 7 de marzo de 1909 - 12 de septiembre de 1968 ) fue un contador polaco y exmiembro de la resistencia del Ejército Nacional , quien fuera la primera persona en suicidarse por autoinmolación en protesta contra la invasión de Checoslovaquia por el Pacto de Varsovia .	Aunque su acción fue capturada por una cámara de cine , la prensa polaca omitió cualquier mención del incidente , siendo suprimida con éxito por las autoridades .	Siwiec preparó su plan solo , y pocas personas se dieron cuenta de lo que trataba de lograr con su sacrificio .	Su historia permaneció casi olvidada hasta la caída del comunismo , cuando fue relatada por primera vez en un documental del director polaco Maciej Drygas .	Desde entonces , Siwiec ha recibido póstumamente una serie de honores y condecoraciones checas , eslovacas y polacas .
+Event	T0	resistencia	EVENT	108
+Event	T1	suicidarse	EVENT	178
+Event	T2	protesta	EVENT	211
+Event	T3	invasión	EVENT	230
+Event	T4	Pacto	EVENT	264
+Event	T5	acción	EVENT	294
+Event	T6	capturada	EVENT	305
+Event	T7	omitió	EVENT	357
+Event	T8	incidente	EVENT	386
+Event	T9	suprimida	EVENT	405
+Event	T10	lograr	EVENT	532
+Event	T11	sacrificio	EVENT	546
+Event	T12	permaneció	EVENT	571
+Event	T13	olvidada	EVENT	587
+Event	T14	caída	EVENT	605
+Event	T15	relatada	EVENT	638
+Event	T16	documental	EVENT	669
+Event	T17	recibido	EVENT	743
+Relation	T3	T2	SuperSub	true	invasión	protesta
+Relation	T2	T3	SubSuper	true	protesta	invasión
+Relation	T0	T10	NoRel	true	resistencia	lograr
+Relation	T0	T14	NoRel	true	resistencia	caída
+Relation	T0	T3	NoRel	true	resistencia	invasión
+Relation	T0	T7	NoRel	true	resistencia	omitió
+Relation	T1	T0	NoRel	true	suicidarse	resistencia
+Relation	T1	T5	NoRel	true	suicidarse	acción
+Relation	T12	T0	NoRel	true	permaneció	resistencia
+Relation	T12	T11	NoRel	true	permaneció	sacrificio
+Relation	T12	T5	NoRel	true	permaneció	acción
+Relation	T13	T11	NoRel	true	olvidada	sacrificio
+Relation	T13	T17	NoRel	true	olvidada	recibido
+Relation	T13	T6	NoRel	true	olvidada	capturada
+Relation	T14	T17	NoRel	true	caída	recibido
+Relation	T15	T0	NoRel	true	relatada	resistencia
+Relation	T15	T12	NoRel	true	relatada	permaneció
+Relation	T15	T16	NoRel	true	relatada	documental
+Relation	T15	T3	NoRel	true	relatada	invasión
+Relation	T15	T6	NoRel	true	relatada	capturada
+Relation	T16	T10	NoRel	true	documental	lograr
+Relation	T17	T13	NoRel	true	recibido	olvidada
+Relation	T2	T16	NoRel	true	protesta	documental
+Relation	T3	T1	NoRel	true	invasión	suicidarse
+Relation	T3	T9	NoRel	true	invasión	suprimida
+Relation	T4	T5	NoRel	true	Pacto	acción
+Relation	T5	T1	NoRel	true	acción	suicidarse
+Relation	T6	T0	NoRel	true	capturada	resistencia
+Relation	T6	T9	NoRel	true	capturada	suprimida
+Relation	T8	T11	NoRel	true	incidente	sacrificio
+Relation	T9	T1	NoRel	true	suprimida	suicidarse
+Relation	T9	T3	NoRel	true	suprimida	invasión

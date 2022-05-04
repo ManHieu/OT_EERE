@@ -1,0 +1,25 @@
+Text	El 8 de marzo , las SDF tomaron el control de la colina Menxer en el campo oriental , mientras elementos de 11.º Unidad Expedicionaria de Marines fue desplegada al norte de Siria , junto con una batería de artillería M777 Howitzers para apoyar el ataque en Raqa .	Entretanto , aproximadamente 150 militantes de Daesh de Hama y Deir ez-Zor fueron movilizados para reforzar Raqa , a pesar del asedio parcial que había sido impuesto a la ciudad .	El 9 de marzo , las SDF capturaron la colina de Menxer , junto con tres villas en los dos frentes cerca de Raqa .	244 insurgentes árabes del campo de Raqa se unieron a las SDF .	Al siguiente día , las SDF avanzaron desde Abu Khashab , capturando tres villas .
+Event	T0	control	EVENT	35
+Event	T1	desplegada	EVENT	150
+Event	T2	apoyar	EVENT	237
+Event	T3	ataque	EVENT	247
+Event	T4	movilizados	EVENT	346
+Event	T5	reforzar	EVENT	363
+Event	T6	parcial	EVENT	398
+Event	T7	impuesto	EVENT	421
+Event	T8	capturaron	EVENT	468
+Event	T9	unieron	EVENT	602
+Event	T10	avanzaron	EVENT	649
+Event	T11	capturando	EVENT	679
+Relation	T0	T6	NoRel	true	control	parcial
+Relation	T1	T10	NoRel	true	desplegada	avanzaron
+Relation	T1	T8	NoRel	true	desplegada	capturaron
+Relation	T10	T5	NoRel	true	avanzaron	reforzar
+Relation	T10	T8	NoRel	true	avanzaron	capturaron
+Relation	T11	T7	NoRel	true	capturando	impuesto
+Relation	T3	T11	NoRel	true	ataque	capturando
+Relation	T5	T1	NoRel	true	reforzar	desplegada
+Relation	T5	T8	NoRel	true	reforzar	capturaron
+Relation	T6	T0	NoRel	true	parcial	control
+Relation	T6	T3	NoRel	true	parcial	ataque
+Relation	T6	T5	NoRel	true	parcial	reforzar

@@ -1,0 +1,24 @@
+Text	Det vindende forslag med titlen " Crescent af Embrace " blev udpeget den 7. september 2005 .	En plan for opførelsen omfatter en bueformet vej med Rød Løn og Sukker-Løn plantet langs ydersiden .	Planerne stødte dog ind i problemer med finansieringen og som på grund af mindesmærkets størrelse og udseende .	Kongresmedlem Charles H. Taylor forhindrede , at 10 millioner dollars fra staten kunne bruges til projektet , fordi han så det som " urealistisk . "	Førende republikanske kongresmedlemmer overtalte ham dog senere til at indvillige i projektet med politisk pres og satte gang i godkendelsen af et mindre statsligt beløb .
+Event	T0	forslag	EVENT	13
+Event	T1	Crescent	EVENT	34
+Event	T2	udpeget	EVENT	61
+Event	T3	plantet	EVENT	168
+Event	T4	stødte	EVENT	203
+Event	T5	problemer	EVENT	220
+Event	T6	forhindrede	EVENT	338
+Event	T7	bruges	EVENT	393
+Event	T8	overtalte	EVENT	494
+Event	T9	godkendelsen	EVENT	583
+Relation	T0	T2	SuperSub	true	forslag	udpeget
+Relation	T2	T0	SubSuper	true	udpeget	forslag
+Relation	T5	T6	SuperSub	true	problemer	forhindrede
+Relation	T6	T5	SubSuper	true	forhindrede	problemer
+Relation	T2	T1	NoRel	true	udpeget	Crescent
+Relation	T2	T8	NoRel	true	udpeget	overtalte
+Relation	T4	T2	NoRel	true	stødte	udpeget
+Relation	T4	T9	NoRel	true	stødte	godkendelsen
+Relation	T6	T1	NoRel	true	forhindrede	Crescent
+Relation	T6	T2	NoRel	true	forhindrede	udpeget
+Relation	T6	T7	NoRel	true	forhindrede	bruges
+Relation	T8	T1	NoRel	true	overtalte	Crescent
+Relation	T9	T1	NoRel	true	godkendelsen	Crescent

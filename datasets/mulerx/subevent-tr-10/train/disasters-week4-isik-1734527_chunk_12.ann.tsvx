@@ -1,0 +1,68 @@
+Text	- – Bulgaristan Dışişleri Bakanı Kristian Vigenin sel felaketi nedeniyle Bosna Hersek ve Sırbistan’ a tâziye mesajı gönderdi .	Vigenin mesajında , her iki ülkede yakınlarını kaybeden ailelerin yakınlarına başsağlığı diledi ve zararların ortak güç birliği ile telâfî edebileceğine olan inancını ifâde etti .	- – Dışişleri Bakanlığı'ndan yapılan yazılı açıklamada , İspanya'nın Sırbistan ve Bosna - Hersek'te 40'ın üzerinde can kaybının yaşandığı ve ciddi hasara neden olan sel felaketini üzüntüyle karşıladığı ifade edilerek , İspanyol hükûmetinin bu zor günlerinde bölge halkı ve yetkilileri ile dayanışma içerisinde olacağı belirtildi .	- – Norveç Dışişleri Bakanlığı'ndan yapılan açıklamada , " Norveç hükûmeti'nin Bosna Hersek ve Sırbistan’da meydana gelen sel felaketi için 7,5 milyon dolar yardım ayırdığı ve bu fonun 2 milyon dolarlık kısmının acil yardımlar , geri kalanın ise okul , hastane , yol ve köprü gibi yapıların tamiratı için harcanacağı " bildirildi .	- – Başbakan Recep Tayyip Erdoğan Bosna Hersek Devlet Başkanı Bakir İzzetbegoviç'i ve Sırbistan Başbakanı Aleksandar Vuciç'i telefonla arayarak , sel felaketi nedeniyle tâziyelerini iletti ve Türkiye olarak her türlü yardıma hazır olduğunu söyledi .
+Event	T0	felaketi	EVENT	54
+Event	T1	gönderdi	EVENT	116
+Event	T2	kaybeden	EVENT	174
+Event	T3	diledi	EVENT	216
+Event	T4	etti	EVENT	300
+Event	T5	yaşandığı	EVENT	435
+Event	T8	belirtildi	EVENT	625
+Event	T9	felaketi	EVENT	764
+Event	T10	ayırdığı	EVENT	802
+Event	T11	tamiratı	EVENT	929
+Event	T12	bildirildi	EVENT	957
+Event	T13	felaketi	EVENT	1120
+Event	T14	iletti	EVENT	1152
+Event	T15	söyledi	EVENT	1210
+Event	T16	zararların	EVENT	226
+Event	T17	açıklamada	EVENT	351
+Event	T6	hasara	EVENT	454
+Event	T18	felaketini	EVENT	476
+Event	T19	edilerek	EVENT	515
+Event	T7	açıklamada	EVENT	682
+Event	T20	arayarak	EVENT	1105
+Relation	T0	T15	NoRel	true	felaketi	söyledi
+Relation	T0	T17	NoRel	true	felaketi	açıklamada
+Relation	T0	T5	NoRel	true	felaketi	yaşandığı
+Relation	T0	T9	NoRel	true	felaketi	felaketi
+Relation	T1	T16	NoRel	true	gönderdi	zararların
+Relation	T1	T18	NoRel	true	gönderdi	felaketini
+Relation	T10	T19	NoRel	true	ayırdığı	edilerek
+Relation	T12	T19	NoRel	true	bildirildi	edilerek
+Relation	T12	T2	NoRel	true	bildirildi	kaybeden
+Relation	T13	T19	NoRel	true	felaketi	edilerek
+Relation	T13	T20	NoRel	true	felaketi	arayarak
+Relation	T14	T0	NoRel	true	iletti	felaketi
+Relation	T15	T17	NoRel	true	söyledi	açıklamada
+Relation	T16	T0	NoRel	true	zararların	felaketi
+Relation	T17	T3	NoRel	true	açıklamada	diledi
+Relation	T18	T12	NoRel	true	felaketini	bildirildi
+Relation	T18	T13	NoRel	true	felaketini	felaketi
+Relation	T18	T8	NoRel	true	felaketini	belirtildi
+Relation	T19	T0	NoRel	true	edilerek	felaketi
+Relation	T19	T1	NoRel	true	edilerek	gönderdi
+Relation	T19	T15	NoRel	true	edilerek	söyledi
+Relation	T19	T3	NoRel	true	edilerek	diledi
+Relation	T19	T8	NoRel	true	edilerek	belirtildi
+Relation	T2	T18	NoRel	true	kaybeden	felaketini
+Relation	T2	T19	NoRel	true	kaybeden	edilerek
+Relation	T20	T4	NoRel	true	arayarak	etti
+Relation	T3	T0	NoRel	true	diledi	felaketi
+Relation	T3	T14	NoRel	true	diledi	iletti
+Relation	T3	T17	NoRel	true	diledi	açıklamada
+Relation	T3	T5	NoRel	true	diledi	yaşandığı
+Relation	T4	T1	NoRel	true	etti	gönderdi
+Relation	T4	T14	NoRel	true	etti	iletti
+Relation	T4	T16	NoRel	true	etti	zararların
+Relation	T4	T2	NoRel	true	etti	kaybeden
+Relation	T4	T5	NoRel	true	etti	yaşandığı
+Relation	T4	T7	NoRel	true	etti	açıklamada
+Relation	T5	T10	NoRel	true	yaşandığı	ayırdığı
+Relation	T5	T14	NoRel	true	yaşandığı	iletti
+Relation	T5	T19	NoRel	true	yaşandığı	edilerek
+Relation	T7	T13	NoRel	true	açıklamada	felaketi
+Relation	T8	T14	NoRel	true	belirtildi	iletti
+Relation	T8	T18	NoRel	true	belirtildi	felaketini
+Relation	T8	T4	NoRel	true	belirtildi	etti
+Relation	T8	T5	NoRel	true	belirtildi	yaşandığı
+Relation	T9	T1	NoRel	true	felaketi	gönderdi
+Relation	T9	T15	NoRel	true	felaketi	söyledi

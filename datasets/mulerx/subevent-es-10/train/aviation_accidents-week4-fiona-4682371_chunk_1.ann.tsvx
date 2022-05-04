@@ -1,0 +1,43 @@
+Text	Este aparato había sido fabricado por el constructor estadounidense Sikorsky Aircraft Corporation , en el año 1966 , con número de fabricante 61299 .	Se entregó a la compañía noruega Helikopter Service ese mismo año , que registró la aeronave con la matrícula _ LN-ORE _ .	En el año 1992 , esta aeronave fue transferida a Helicsa , identificándose en el registro de la Dirección General de Aviación Civil con la matrícula EC-FJJ .	Después del accidente , la Comisión de Investigación de Accidentes e Incidentes de Aviación Civil ( CIAIAC ) comenzó una investigación para determinar las causas que lo originaron .	En septiembre del 2009 , la CIAIAC , concluyó la investigación con un Informe en el que no se establecía ninguna causa ( ni siquiera probable ) del accidente .
+Event	T0	fabricado	EVENT	24
+Event	T1	entregó	EVENT	153
+Event	T2	registró	EVENT	222
+Event	T3	transferida	EVENT	308
+Event	T4	identificándose	EVENT	332
+Event	T5	accidente	EVENT	443
+Event	T6	Investigación	EVENT	470
+Event	T7	Incidentes	EVENT	500
+Event	T8	comenzó	EVENT	540
+Event	T9	investigación	EVENT	552
+Event	T10	determinar	EVENT	571
+Event	T11	originaron	EVENT	600
+Event	T12	concluyó	EVENT	650
+Event	T13	investigación	EVENT	662
+Event	T14	establecía	EVENT	707
+Event	T15	accidente	EVENT	761
+Relation	T0	T2	SuperSub	true	fabricado	registró
+Relation	T2	T0	SubSuper	true	registró	fabricado
+Relation	T0	T14	NoRel	true	fabricado	establecía
+Relation	T0	T8	NoRel	true	fabricado	comenzó
+Relation	T1	T13	NoRel	true	entregó	investigación
+Relation	T10	T13	NoRel	true	determinar	investigación
+Relation	T11	T15	NoRel	true	originaron	accidente
+Relation	T11	T5	NoRel	true	originaron	accidente
+Relation	T13	T15	NoRel	true	investigación	accidente
+Relation	T14	T12	NoRel	true	establecía	concluyó
+Relation	T14	T4	NoRel	true	establecía	identificándose
+Relation	T15	T0	NoRel	true	accidente	fabricado
+Relation	T15	T13	NoRel	true	accidente	investigación
+Relation	T15	T6	NoRel	true	accidente	Investigación
+Relation	T3	T12	NoRel	true	transferida	concluyó
+Relation	T3	T5	NoRel	true	transferida	accidente
+Relation	T4	T13	NoRel	true	identificándose	investigación
+Relation	T4	T14	NoRel	true	identificándose	establecía
+Relation	T4	T15	NoRel	true	identificándose	accidente
+Relation	T5	T10	NoRel	true	accidente	determinar
+Relation	T5	T12	NoRel	true	accidente	concluyó
+Relation	T6	T8	NoRel	true	Investigación	comenzó
+Relation	T7	T12	NoRel	true	Incidentes	concluyó
+Relation	T7	T3	NoRel	true	Incidentes	transferida
+Relation	T8	T1	NoRel	true	comenzó	entregó
+Relation	T9	T7	NoRel	true	investigación	Incidentes

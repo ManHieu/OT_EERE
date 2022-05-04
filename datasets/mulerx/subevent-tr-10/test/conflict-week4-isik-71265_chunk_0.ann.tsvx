@@ -1,0 +1,15 @@
+Text	küçükresim | İzmir Metropoliti Hrisostomos İZMIRLI AZIZ HRISOSTOMOS KALAFATIS ( _ Chrysostomos Kalafatis _ ; d. 1867 , Tirilye - ö. 1922 , İzmir ) , Rum din ve siyaset adamı .	I. Dünya Savaşı'ndan sonra İzmir'in Yunan işgali altında bulunduğu dönemde İzmir metropoliti idi .	Türk ordusunun Yunan işgaline son vermek üzere şehre girmesinden sonra halk tarafından linç edilerek öldürüldü .	4 Kasım 1922'de Rum Ortodoks Kilisesi tarafından Azîz mertebesine yükseltildi .	1867’de Tirilye ' ] ] dünyaya geldi .
+Event	T0	girmesinden	EVENT	328
+Event	T1	linç	EVENT	362
+Event	T2	öldürüldü	EVENT	376
+Event	T3	yükseltildi	EVENT	454
+Event	T4	geldi	EVENT	498
+Event	T5	I. Dünya Savaşı'ndan	EVENT	176
+Event	T6	işgali	EVENT	218
+Event	T7	işgaline	EVENT	296
+Relation	T0	T3	NoRel	true	girmesinden	yükseltildi
+Relation	T2	T5	NoRel	true	öldürüldü	I. Dünya Savaşı'ndan
+Relation	T3	T2	NoRel	true	yükseltildi	öldürüldü
+Relation	T4	T6	NoRel	true	geldi	işgali
+Relation	T5	T1	NoRel	true	I. Dünya Savaşı'ndan	linç
+Relation	T6	T3	NoRel	true	işgali	yükseltildi

@@ -1,0 +1,62 @@
+Text	Con la salida aparentemente libre , consiguen escapar y llegar al taxi de Frank .	No obstante , West se encuentra dentro de él y le dispara a Jim , pero Hannah reserva una venganza cruel para el mayor : pone el taxi en reversa , dejándolo dentro de la mansión para que Mailer rompa la ventana trasera , llevándose a West afuera del coche para luego apalearlo .	Acto seguido , los tres escapan , dejando la mansión atrás .	Otros 28 días más tarde , Jim despierta en una cabaña en Cumbria , ya recuperado de sus heridas .	Tras levantarse se encuentra con Selena , que se encuentra cosiendo unas telas , luego entra Hannah avisando que un avión de reconocimiento se aproxima .
+Event	T0	salida	EVENT	7
+Event	T1	escapar	EVENT	46
+Event	T2	encuentra	EVENT	104
+Event	T3	dispara	EVENT	132
+Event	T4	reserva	EVENT	160
+Event	T5	pone	EVENT	203
+Event	T6	reversa	EVENT	219
+Event	T7	dejándolo	EVENT	229
+Event	T8	rompa	EVENT	276
+Event	T9	llevándose	EVENT	303
+Event	T10	apalearlo	EVENT	349
+Event	T11	escapan	EVENT	385
+Event	T12	dejando	EVENT	395
+Event	T13	despierta	EVENT	452
+Event	T14	recuperado	EVENT	492
+Event	T15	heridas	EVENT	510
+Event	T16	levantarse	EVENT	525
+Event	T17	encuentra	EVENT	539
+Event	T18	cosiendo	EVENT	579
+Event	T19	avisando	EVENT	620
+Event	T20	reconocimiento	EVENT	645
+Event	T21	aproxima	EVENT	663
+Relation	T0	T16	NoRel	true	salida	levantarse
+Relation	T0	T3	NoRel	true	salida	dispara
+Relation	T0	T4	NoRel	true	salida	reserva
+Relation	T1	T13	NoRel	true	escapar	despierta
+Relation	T1	T14	NoRel	true	escapar	recuperado
+Relation	T1	T2	NoRel	true	escapar	encuentra
+Relation	T11	T19	NoRel	true	escapan	avisando
+Relation	T11	T20	NoRel	true	escapan	reconocimiento
+Relation	T11	T3	NoRel	true	escapan	dispara
+Relation	T12	T0	NoRel	true	dejando	salida
+Relation	T12	T14	NoRel	true	dejando	recuperado
+Relation	T12	T8	NoRel	true	dejando	rompa
+Relation	T13	T19	NoRel	true	despierta	avisando
+Relation	T13	T6	NoRel	true	despierta	reversa
+Relation	T15	T1	NoRel	true	heridas	escapar
+Relation	T16	T13	NoRel	true	levantarse	despierta
+Relation	T16	T15	NoRel	true	levantarse	heridas
+Relation	T16	T21	NoRel	true	levantarse	aproxima
+Relation	T17	T12	NoRel	true	encuentra	dejando
+Relation	T2	T17	NoRel	true	encuentra	encuentra
+Relation	T20	T9	NoRel	true	reconocimiento	llevándose
+Relation	T21	T13	NoRel	true	aproxima	despierta
+Relation	T3	T19	NoRel	true	dispara	avisando
+Relation	T3	T5	NoRel	true	dispara	pone
+Relation	T4	T10	NoRel	true	reserva	apalearlo
+Relation	T5	T11	NoRel	true	pone	escapan
+Relation	T5	T13	NoRel	true	pone	despierta
+Relation	T5	T14	NoRel	true	pone	recuperado
+Relation	T6	T14	NoRel	true	reversa	recuperado
+Relation	T6	T20	NoRel	true	reversa	reconocimiento
+Relation	T7	T1	NoRel	true	dejándolo	escapar
+Relation	T7	T18	NoRel	true	dejándolo	cosiendo
+Relation	T7	T20	NoRel	true	dejándolo	reconocimiento
+Relation	T8	T16	NoRel	true	rompa	levantarse
+Relation	T8	T17	NoRel	true	rompa	encuentra
+Relation	T9	T1	NoRel	true	llevándose	escapar
+Relation	T9	T4	NoRel	true	llevándose	reserva
+Relation	T9	T6	NoRel	true	llevándose	reversa
+Relation	T9	T7	NoRel	true	llevándose	dejándolo

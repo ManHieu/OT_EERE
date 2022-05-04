@@ -1,0 +1,20 @@
+Text	DOGGER BANK MUHAREBESI 10 Şubat 1916 tarihinde Alman İmparatorluğu ve Birleşik Krallık arasında yaşanan çatışma .	Üç Alman torpil gemisinin Kuzey Denizi'ne girmesi ve 15. Britanya mayın temizleyici filosuyla karşılaşması çatışmayı tetiklemiştir .	Düşmana saldırıp saldırmama konusunda ilk anda kararsız kalan Almanlar , İngiliz birliklerinin mayın temizleyici şalopalardan oluştuğunu fark edince ilerlemeye başlamıştır .	_ HMS Arabis _ { { ' } } in batırıldığı muharebe Alman İmparatorluğu lehine sonuçlanmıştır .	
+Event	T0	çatışma	EVENT	104
+Event	T1	girmesi	EVENT	156
+Event	T2	tetiklemiştir	EVENT	231
+Event	T5	muharebe	EVENT	461
+Event	T6	sonuçlanmıştır	EVENT	497
+Event	T7	DOGGER BANK MUHAREBESI	EVENT	0
+Event	T8	karşılaşması	EVENT	208
+Event	T3	başlamıştır	EVENT	407
+Event	T4	edince	EVENT	389
+Event	T9	batırıldığı	EVENT	449
+Relation	T5	T9	SuperSub	true	muharebe	batırıldığı
+Relation	T9	T5	SubSuper	true	batırıldığı	muharebe
+Relation	T0	T1	NoRel	true	çatışma	girmesi
+Relation	T1	T4	NoRel	true	girmesi	edince
+Relation	T2	T1	NoRel	true	tetiklemiştir	girmesi
+Relation	T2	T3	NoRel	true	tetiklemiştir	başlamıştır
+Relation	T3	T7	NoRel	true	başlamıştır	DOGGER BANK MUHAREBESI
+Relation	T6	T9	NoRel	true	sonuçlanmıştır	batırıldığı
+Relation	T8	T4	NoRel	true	karşılaşması	edince

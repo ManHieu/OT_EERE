@@ -1,0 +1,27 @@
+Text	23 December : LTV A - 7D Corsair II , _ 67-14586_ , while assigned to Eglin AFB , Florida 's 3246th Test Wing , Air Development & Test Center for mission support , suffers engine failure on take - off from Tallahassee Municipal Airport , Florida and makes forced landing , coming down largely intact .	Airframe is hauled back to Eglin AFB on a truck , where it is either scrapped or becomes a target hulk .	23 December : General Dynamics FB - 111A ,__68 – 290_ , crashes in the area of the Ashland forest in Maine , ~ 45 minutes after take - off from Loring AFB , Maine .	2 January : USMC McDonnell - Douglas F - 4J Phantom II , BuNo__155506_ , of VMFA -333 , crashes on approach to NAS Oceana , Virginia .	Both crew eject safely .
+Event	T0	assigned	EVENT	58
+Event	T1	landing	EVENT	263
+Event	T2	intact	EVENT	293
+Event	T3	scrapped	EVENT	371
+Event	T4	becomes	EVENT	383
+Event	T5	crashes	EVENT	463
+Event	T6	eject	EVENT	717
+Event	T7	suffers	EVENT	164
+Event	T8	take - off	EVENT	190
+Event	T9	hauled back	EVENT	314
+Event	T10	take - off	EVENT	535
+Event	T11	crashes	EVENT	660
+Relation	T10	T5	SuperSub	true	take - off	crashes
+Relation	T5	T10	SubSuper	true	crashes	take - off
+Relation	T0	T9	NoRel	true	assigned	hauled back
+Relation	T10	T2	NoRel	true	take - off	intact
+Relation	T11	T9	NoRel	true	crashes	hauled back
+Relation	T2	T0	NoRel	true	intact	assigned
+Relation	T2	T8	NoRel	true	intact	take - off
+Relation	T3	T6	NoRel	true	scrapped	eject
+Relation	T6	T1	NoRel	true	eject	landing
+Relation	T6	T2	NoRel	true	eject	intact
+Relation	T7	T8	NoRel	true	suffers	take - off
+Relation	T8	T3	NoRel	true	take - off	scrapped
+Relation	T9	T11	NoRel	true	hauled back	crashes
+Relation	T9	T6	NoRel	true	hauled back	eject

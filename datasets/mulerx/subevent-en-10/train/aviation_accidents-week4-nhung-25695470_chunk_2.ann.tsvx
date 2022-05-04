@@ -1,0 +1,30 @@
+Text	The plane later landed at Chattanooga , Tennessee 's Lovell Field in bound from Knoxville , Tennessee 's McGhee Tyson Airport to pick up the ransom .	After picking up the less - than - demanded ransom money , the plane took off , bound for Havana .	The hijackers passed out some of the ransom money to the passengers .	Contrary to the hijackers ' expectations , Cuban leader Fidel Castro did not accept them into that country ; thus the hijackers had the airplane flown to Orlando , Florida and discussed flying to Algeria ( which was not possible due to the airplane 's limited range ) .	This marked the first time a hijacked airplane had left Cuba with the hijackers on board .
+Event	T0	landed	EVENT	16
+Event	T1	ransom	EVENT	141
+Event	T3	accept	EVENT	396
+Event	T4	flown	EVENT	464
+Event	T5	flying	EVENT	505
+Event	T6	marked	EVENT	594
+Event	T7	hijacked	EVENT	618
+Event	T8	left	EVENT	640
+Event	T9	pick up	EVENT	129
+Event	T10	took off	EVENT	219
+Event	T11	passed	EVENT	263
+Event	T2	picking up	EVENT	156
+Relation	T2	T10	SuperSub	true	picking up	took off
+Relation	T10	T2	SubSuper	true	took off	picking up
+Relation	T3	T5	SuperSub	true	accept	flying
+Relation	T5	T3	SubSuper	true	flying	accept
+Relation	T10	T11	NoRel	true	took off	passed
+Relation	T10	T6	NoRel	true	took off	marked
+Relation	T11	T9	NoRel	true	passed	pick up
+Relation	T2	T3	NoRel	true	picking up	accept
+Relation	T3	T10	NoRel	true	accept	took off
+Relation	T4	T7	NoRel	true	flown	hijacked
+Relation	T5	T8	NoRel	true	flying	left
+Relation	T6	T10	NoRel	true	marked	took off
+Relation	T6	T5	NoRel	true	marked	flying
+Relation	T7	T1	NoRel	true	hijacked	ransom
+Relation	T7	T10	NoRel	true	hijacked	took off
+Relation	T7	T11	NoRel	true	hijacked	passed
+Relation	T7	T4	NoRel	true	hijacked	flown

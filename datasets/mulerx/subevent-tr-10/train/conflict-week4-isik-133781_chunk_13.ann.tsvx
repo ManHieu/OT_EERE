@@ -1,0 +1,16 @@
+Text	1547 yılında Şah Tahmasb’ın kardeşi Elkas Mirza , Şirvan valiliğindeyken saltanat sevdasına kapıldığı için kardeşinin kaçarak İstanbul’a geldi ve Osmanlı Devleti’ne sığındı .	Kanuni Sultan Süleyman , uzun süredir Avrupa ile meşgul olmasından istifade etmeye çalışan Şah Tahmasb’ın , Doğu Anadolu’ya yeniden girip Van kalesi başta olmak üzere bazı yerleri işgal ettikten başka , Şiiliğin Anadolu içlerinde yayılmasını temin edecek propagandadan geri durmamış olması sebebiyle İran’a savaş açmak istiyordu .	Şehzade Elkas Mirza’nın sığınma fırsatını kaçırmayarak İran ile savaşa karar verdi .	Ordu 29 Mart 1548 günü İstanbul’dan hareket etti .	Elkas Mirza yanına verilen Osmanlı kuvvetleri ile öncü kuvvet olarak gönderildi .
+Event	T0	kapıldığı	EVENT	92
+Event	T1	geldi	EVENT	137
+Event	T2	sığındı	EVENT	165
+Event	T3	sığınma	EVENT	530
+Event	T4	verdi	EVENT	583
+Event	T5	etti	EVENT	635
+Event	T6	gönderildi	EVENT	711
+Event	T7	kaçarak	EVENT	118
+Event	T8	verilen	EVENT	661
+Relation	T1	T0	NoRel	true	geldi	kapıldığı
+Relation	T3	T2	NoRel	true	sığınma	sığındı
+Relation	T3	T5	NoRel	true	sığınma	etti
+Relation	T4	T1	NoRel	true	verdi	geldi
+Relation	T5	T2	NoRel	true	etti	sığındı
+Relation	T8	T0	NoRel	true	verilen	kapıldığı

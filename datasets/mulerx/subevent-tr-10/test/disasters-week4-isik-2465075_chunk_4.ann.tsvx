@@ -1,0 +1,53 @@
+Text	Depremde Avcılar'da Hacı Ahmet Tükenmez Camisi'nin bir minaresi yıkıldı .	Fatih'te bulunan İstanbul Üniversitesi Diş Hekimliği Fakültesi depremde ağır hasar aldı , ertesi gün tahliye edildi .	Balat'ta koruma altındaki üç bina hasar gördü , aynı gün içerisinde belediye ekipleri tarafından kontrollü olarak yıkıldı .	Sabiha Gökçen Havalimanı'na inişler pistin hasar alıp almadığının kontrolü için geçici olarak durduruldu , pist güvenliği kontrol edildikten sonra havalimanı yeniden iniş ve kalkışlara açıldı .	AFAD'ın belirlemelerine göre Biruni Üniversitesi karşısındaki surlarda yıkıntı , bazı ilçelerdeki binalarda çatlaklar , Sultangazi ve Eyüp’te iki binada hasar tespit edildi .
+Event	T0	Depremde	EVENT	0
+Event	T1	yıkıldı	EVENT	64
+Event	T2	aldı	EVENT	157
+Event	T3	edildi	EVENT	183
+Event	T4	gördü	EVENT	232
+Event	T5	yıkıldı	EVENT	306
+Event	T6	inişler	EVENT	344
+Event	T7	kontrolü	EVENT	382
+Event	T8	durduruldu	EVENT	410
+Event	T9	iniş	EVENT	482
+Event	T10	açıldı	EVENT	501
+Event	T11	belirlemelerine	EVENT	518
+Event	T12	yıkıntı	EVENT	581
+Event	T13	edildi	EVENT	676
+Event	T14	depremde	EVENT	137
+Event	T15	edildikten	EVENT	446
+Event	T16	kalkışlara	EVENT	490
+Event	T17	çatlaklar	EVENT	618
+Event	T18	hasar	EVENT	663
+Relation	T0	T18	NoRel	true	Depremde	hasar
+Relation	T0	T4	NoRel	true	Depremde	gördü
+Relation	T10	T15	NoRel	true	açıldı	edildikten
+Relation	T11	T2	NoRel	true	belirlemelerine	aldı
+Relation	T12	T1	NoRel	true	yıkıntı	yıkıldı
+Relation	T12	T18	NoRel	true	yıkıntı	hasar
+Relation	T12	T8	NoRel	true	yıkıntı	durduruldu
+Relation	T13	T8	NoRel	true	edildi	durduruldu
+Relation	T14	T11	NoRel	true	depremde	belirlemelerine
+Relation	T14	T3	NoRel	true	depremde	edildi
+Relation	T14	T7	NoRel	true	depremde	kontrolü
+Relation	T15	T18	NoRel	true	edildikten	hasar
+Relation	T15	T6	NoRel	true	edildikten	inişler
+Relation	T16	T0	NoRel	true	kalkışlara	Depremde
+Relation	T16	T1	NoRel	true	kalkışlara	yıkıldı
+Relation	T16	T17	NoRel	true	kalkışlara	çatlaklar
+Relation	T16	T8	NoRel	true	kalkışlara	durduruldu
+Relation	T17	T3	NoRel	true	çatlaklar	edildi
+Relation	T17	T5	NoRel	true	çatlaklar	yıkıldı
+Relation	T18	T13	NoRel	true	hasar	edildi
+Relation	T2	T14	NoRel	true	aldı	depremde
+Relation	T2	T16	NoRel	true	aldı	kalkışlara
+Relation	T2	T4	NoRel	true	aldı	gördü
+Relation	T2	T5	NoRel	true	aldı	yıkıldı
+Relation	T3	T12	NoRel	true	edildi	yıkıntı
+Relation	T4	T11	NoRel	true	gördü	belirlemelerine
+Relation	T4	T16	NoRel	true	gördü	kalkışlara
+Relation	T6	T13	NoRel	true	inişler	edildi
+Relation	T6	T9	NoRel	true	inişler	iniş
+Relation	T8	T12	NoRel	true	durduruldu	yıkıntı
+Relation	T9	T0	NoRel	true	iniş	Depremde
+Relation	T9	T13	NoRel	true	iniş	edildi
+Relation	T9	T18	NoRel	true	iniş	hasar

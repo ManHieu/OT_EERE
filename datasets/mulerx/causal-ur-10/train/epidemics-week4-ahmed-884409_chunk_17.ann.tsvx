@@ -1,0 +1,39 @@
+Text	کسی بھی نجی کاروبار کو ، چاہے وہ بڑا ہو یا چھوٹا ، ناکام نہ ہونے کا یقین دلایا گیا ۔	برطانیہ میں کورونا وائرس کا پہلا تصدیق شدہ واقعہ 31 جنوری کو ہوا تھا ، جب دو چینی شہری یارک کے اسٹیکٹی ایئرٹ ہوٹل میں بیمار ہوگئے تھے اور یکم مئی کی شام 5 بجے تک کرونا وائرس کی وجہ سے مرنے والوں کی تعداد 28،131 تک جا پہنچی ۔	وزیر اعظم بورس جانسن نے 23 مارچ کو لاک ڈاؤن کا اعلان کیا ، لاک ڈاؤن قوانین پر حکومت کو ہر تین ہفتوں پر نظرثانی کرنا ہوگی ۔	اگلی جائزہ 7 مئی تک مکمل ہونا ہے ۔	اگرچہ اس سے پہلے لاک ڈاؤن کے بارے میں اعلانات ہوسکتے ہیں ۔
+Event	T1	تصدیق	EVENT	118
+Event	T2	واقعہ	EVENT	128
+Event	T5	مرنے	EVENT	269
+Event	T6	پہنچی	EVENT	302
+Event	T7	جائزہ	EVENT	438
+Event	T9	یقین	EVENT	68
+Event	T10	بیمار	EVENT	203
+Event	T4	لاک ڈاؤن	EVENT	345
+Event	T3	اعلان	EVENT	357
+Event	T12	لاک ڈاؤن	EVENT	369
+Event	T11	نظرثانی	EVENT	413
+Event	T13	مکمل	EVENT	453
+Event	T15	لاک ڈاؤن	EVENT	485
+Event	T8	اعلانات	EVENT	506
+Relation	T10	T1	CauseEffect	true	بیمار	تصدیق
+Relation	T1	T10	EffectCause	true	تصدیق	بیمار
+Relation	T2	T4	CauseEffect	true	واقعہ	لاک ڈاؤن
+Relation	T4	T2	EffectCause	true	لاک ڈاؤن	واقعہ
+Relation	T1	T13	NoRel	true	تصدیق	مکمل
+Relation	T10	T13	NoRel	true	بیمار	مکمل
+Relation	T10	T15	NoRel	true	بیمار	لاک ڈاؤن
+Relation	T11	T13	NoRel	true	نظرثانی	مکمل
+Relation	T11	T9	NoRel	true	نظرثانی	یقین
+Relation	T12	T4	NoRel	true	لاک ڈاؤن	لاک ڈاؤن
+Relation	T12	T6	NoRel	true	لاک ڈاؤن	پہنچی
+Relation	T13	T10	NoRel	true	مکمل	بیمار
+Relation	T13	T9	NoRel	true	مکمل	یقین
+Relation	T15	T1	NoRel	true	لاک ڈاؤن	تصدیق
+Relation	T15	T10	NoRel	true	لاک ڈاؤن	بیمار
+Relation	T15	T9	NoRel	true	لاک ڈاؤن	یقین
+Relation	T3	T12	NoRel	true	اعلان	لاک ڈاؤن
+Relation	T3	T15	NoRel	true	اعلان	لاک ڈاؤن
+Relation	T4	T1	NoRel	true	لاک ڈاؤن	تصدیق
+Relation	T6	T10	NoRel	true	پہنچی	بیمار
+Relation	T7	T15	NoRel	true	جائزہ	لاک ڈاؤن
+Relation	T8	T12	NoRel	true	اعلانات	لاک ڈاؤن
+Relation	T9	T10	NoRel	true	یقین	بیمار
+Relation	T9	T7	NoRel	true	یقین	جائزہ

@@ -1,0 +1,38 @@
+Text	El gobernador de la provincia de Buenos Aires , Daniel Scioli , lo hizo en la provincia .	En estos casos , se suspendieron las celebraciones de carnaval programadas para esos días .	La causa fue investigada por el juez federal Claudio Bonadío y fue juzgada en dos juicios orales , conocidos como Once I y Once II , seguidos contra distintos acusados , realizados en 2014 y 2018 .	Los hechos fueron investigados por el fiscal federal Federico Delgado , bajo el control del juez de instrucción federal Claudio Bonadio .	En los primeros días el fiscal Delgado acusó duramente al juez Bonadío de " apropiarse " del expediente , impididiéndole realizar sus tareas de investigación .
+Event	T0	hizo	EVENT	67
+Event	T1	suspendieron	EVENT	110
+Event	T2	celebraciones	EVENT	127
+Event	T3	programadas	EVENT	153
+Event	T4	causa	EVENT	185
+Event	T5	investigada	EVENT	195
+Event	T6	juzgada	EVENT	249
+Event	T7	juicios	EVENT	264
+Event	T8	realizados	EVENT	352
+Event	T9	hechos	EVENT	384
+Event	T10	investigados	EVENT	398
+Event	T11	control	EVENT	460
+Event	T12	acusó	EVENT	557
+Event	T13	tareas	EVENT	652
+Event	T14	investigación	EVENT	662
+Event	T15	impididiéndole	EVENT	624
+Relation	T12	T15	SuperSub	true	acusó	impididiéndole
+Relation	T15	T12	SubSuper	true	impididiéndole	acusó
+Relation	T0	T10	NoRel	true	hizo	investigados
+Relation	T0	T12	NoRel	true	hizo	acusó
+Relation	T1	T0	NoRel	true	suspendieron	hizo
+Relation	T1	T2	NoRel	true	suspendieron	celebraciones
+Relation	T1	T3	NoRel	true	suspendieron	programadas
+Relation	T10	T11	NoRel	true	investigados	control
+Relation	T12	T4	NoRel	true	acusó	causa
+Relation	T14	T0	NoRel	true	investigación	hizo
+Relation	T14	T10	NoRel	true	investigación	investigados
+Relation	T15	T3	NoRel	true	impididiéndole	programadas
+Relation	T15	T8	NoRel	true	impididiéndole	realizados
+Relation	T15	T9	NoRel	true	impididiéndole	hechos
+Relation	T2	T11	NoRel	true	celebraciones	control
+Relation	T2	T3	NoRel	true	celebraciones	programadas
+Relation	T4	T3	NoRel	true	causa	programadas
+Relation	T5	T10	NoRel	true	investigada	investigados
+Relation	T5	T3	NoRel	true	investigada	programadas
+Relation	T6	T11	NoRel	true	juzgada	control
+Relation	T8	T0	NoRel	true	realizados	hizo

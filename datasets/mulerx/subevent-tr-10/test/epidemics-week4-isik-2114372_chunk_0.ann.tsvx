@@ -1,0 +1,29 @@
+Text	HISSÈNE HABRÉ ( Arapça : حسين حبري - [ hiˈsɛn_ˈhabre ] ) ya da bir diğer kullanımı ile HISSEN HABRÉ ; ( 13 Eylül 1942 - 24 Ağustos 2021 ) , Çadlı siyasetçi .	Habré , Afrika kıtasında bulunan Çad'da 1982 ile 1990 yılları arasında devlet başkanlığı makamında bulunmuştur .	İsyancı birlik _ Kuzey Birlikleri Ordusu _ ( Forces Armées du Nord ) lideri olan Habré , 1982 yılında gerçekleştirdiği darbe ile iktidara gelmiştir .	Libya ile yaşanan sorunda Fransa ve ABD kendisini desteklemiş ve eğitim , silah ve finansman sağlamıştır .	Fransa ve ABD'den gelen destekle Muammer Kaddafi önderliğindeki Libya'ya karşı üstünlük kuran Habré , Libya'nın işgal ettiği tüm kuzey bölgelerini işgalde kurtararak , 1987 yılında kazanılan Toyota Savaşı ile birlikte Libya'yı tamamen ülkeden çıkartmıştır .
+Event	T1	darbe	EVENT	390
+Event	T2	gelmiştir	EVENT	409
+Event	T4	desteklemiş	EVENT	471
+Event	T5	işgal	EVENT	640
+Event	T6	kurtararak	EVENT	683
+Event	T7	kazanılan	EVENT	709
+Event	T9	çıkartmıştır	EVENT	771
+Event	T10	bulunmuştur	EVENT	257
+Event	T11	sağlamıştır	EVENT	514
+Event	T3	sorunda	EVENT	439
+Event	T12	destekle	EVENT	552
+Event	T13	kuran	EVENT	616
+Event	T8	Toyota Savaşı	EVENT	719
+Relation	T10	T1	NoRel	true	bulunmuştur	darbe
+Relation	T11	T3	NoRel	true	sağlamıştır	sorunda
+Relation	T13	T11	NoRel	true	kuran	sağlamıştır
+Relation	T13	T5	NoRel	true	kuran	işgal
+Relation	T2	T13	NoRel	true	gelmiştir	kuran
+Relation	T2	T7	NoRel	true	gelmiştir	kazanılan
+Relation	T4	T1	NoRel	true	desteklemiş	darbe
+Relation	T4	T10	NoRel	true	desteklemiş	bulunmuştur
+Relation	T5	T10	NoRel	true	işgal	bulunmuştur
+Relation	T5	T12	NoRel	true	işgal	destekle
+Relation	T6	T1	NoRel	true	kurtararak	darbe
+Relation	T6	T12	NoRel	true	kurtararak	destekle
+Relation	T7	T3	NoRel	true	kazanılan	sorunda
+Relation	T7	T6	NoRel	true	kazanılan	kurtararak
+Relation	T8	T2	NoRel	true	Toyota Savaşı	gelmiştir

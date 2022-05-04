@@ -1,0 +1,87 @@
+Text	UNITED NATIONS SECURITY COUNCIL RESOLUTION 1368 , adopted unanimously on 12 September 2001 , after expressing its determination to combat threats to international peace and security caused by acts of terrorism and recognising the right of individual and collective self - defense , the Council condemned the September 11 attacks in the United States .	The Security Council strongly condemned the attacks in New York City , Washington D.C. and Pennsylvania and regarded the incidents as a threat to international peace and security .	It expressed sympathy and condolences to the victims and their families and the United States government .	The resolution called on all countries to co-operate in bringing the perpetrators , organisers and sponsors of the attacks to justice and that those responsible for supporting or harbouring the perpetrators , organisers and sponsors would be held accountable .	The international community was called upon to increase efforts to suppress and prevent terrorist activities through co-operation and implementation of anti-terrorist conventions and Security Council resolutions , particularly Resolution 1269 ( 1999 ) .
+Event	T0	adopted	EVENT	50
+Event	T1	expressing	EVENT	99
+Event	T2	determination	EVENT	114
+Event	T3	threats	EVENT	138
+Event	T4	caused	EVENT	182
+Event	T5	acts	EVENT	192
+Event	T6	recognising	EVENT	214
+Event	T7	condemned	EVENT	294
+Event	T8	attacks	EVENT	321
+Event	T9	condemned	EVENT	382
+Event	T10	attacks	EVENT	396
+Event	T11	regarded	EVENT	460
+Event	T12	incidents	EVENT	473
+Event	T13	threat	EVENT	488
+Event	T15	called	EVENT	655
+Event	T16	bringing	EVENT	696
+Event	T17	attacks	EVENT	755
+Event	T18	harbouring	EVENT	819
+Event	T19	efforts	EVENT	957
+Event	T20	suppress	EVENT	968
+Event	T22	expressed	EVENT	536
+Event	T14	supporting	EVENT	805
+Event	T23	prevent	EVENT	981
+Event	T21	co-operation	EVENT	1018
+Event	T24	implementation	EVENT	1035
+Relation	T0	T11	NoRel	true	adopted	regarded
+Relation	T1	T10	NoRel	true	expressing	attacks
+Relation	T1	T15	NoRel	true	expressing	called
+Relation	T10	T18	NoRel	true	attacks	harbouring
+Relation	T10	T24	NoRel	true	attacks	implementation
+Relation	T11	T1	NoRel	true	regarded	expressing
+Relation	T11	T17	NoRel	true	regarded	attacks
+Relation	T12	T16	NoRel	true	incidents	bringing
+Relation	T12	T21	NoRel	true	incidents	co-operation
+Relation	T12	T5	NoRel	true	incidents	acts
+Relation	T13	T1	NoRel	true	threat	expressing
+Relation	T13	T15	NoRel	true	threat	called
+Relation	T13	T17	NoRel	true	threat	attacks
+Relation	T13	T20	NoRel	true	threat	suppress
+Relation	T13	T24	NoRel	true	threat	implementation
+Relation	T14	T1	NoRel	true	supporting	expressing
+Relation	T14	T18	NoRel	true	supporting	harbouring
+Relation	T14	T2	NoRel	true	supporting	determination
+Relation	T14	T20	NoRel	true	supporting	suppress
+Relation	T14	T24	NoRel	true	supporting	implementation
+Relation	T15	T11	NoRel	true	called	regarded
+Relation	T15	T24	NoRel	true	called	implementation
+Relation	T15	T5	NoRel	true	called	acts
+Relation	T16	T11	NoRel	true	bringing	regarded
+Relation	T16	T17	NoRel	true	bringing	attacks
+Relation	T16	T7	NoRel	true	bringing	condemned
+Relation	T17	T19	NoRel	true	attacks	efforts
+Relation	T18	T4	NoRel	true	harbouring	caused
+Relation	T19	T15	NoRel	true	efforts	called
+Relation	T19	T18	NoRel	true	efforts	harbouring
+Relation	T19	T4	NoRel	true	efforts	caused
+Relation	T2	T1	NoRel	true	determination	expressing
+Relation	T2	T15	NoRel	true	determination	called
+Relation	T2	T23	NoRel	true	determination	prevent
+Relation	T20	T3	NoRel	true	suppress	threats
+Relation	T20	T7	NoRel	true	suppress	condemned
+Relation	T21	T0	NoRel	true	co-operation	adopted
+Relation	T21	T10	NoRel	true	co-operation	attacks
+Relation	T21	T4	NoRel	true	co-operation	caused
+Relation	T21	T5	NoRel	true	co-operation	acts
+Relation	T23	T19	NoRel	true	prevent	efforts
+Relation	T23	T4	NoRel	true	prevent	caused
+Relation	T23	T6	NoRel	true	prevent	recognising
+Relation	T3	T11	NoRel	true	threats	regarded
+Relation	T3	T17	NoRel	true	threats	attacks
+Relation	T3	T22	NoRel	true	threats	expressed
+Relation	T3	T8	NoRel	true	threats	attacks
+Relation	T4	T14	NoRel	true	caused	supporting
+Relation	T4	T20	NoRel	true	caused	suppress
+Relation	T5	T2	NoRel	true	acts	determination
+Relation	T5	T21	NoRel	true	acts	co-operation
+Relation	T5	T22	NoRel	true	acts	expressed
+Relation	T5	T23	NoRel	true	acts	prevent
+Relation	T6	T10	NoRel	true	recognising	attacks
+Relation	T6	T22	NoRel	true	recognising	expressed
+Relation	T6	T7	NoRel	true	recognising	condemned
+Relation	T7	T12	NoRel	true	condemned	incidents
+Relation	T7	T3	NoRel	true	condemned	threats
+Relation	T8	T21	NoRel	true	attacks	co-operation
+Relation	T9	T21	NoRel	true	condemned	co-operation
+Relation	T9	T7	NoRel	true	condemned	condemned

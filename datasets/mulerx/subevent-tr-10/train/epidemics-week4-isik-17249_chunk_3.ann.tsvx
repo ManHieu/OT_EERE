@@ -1,0 +1,18 @@
+Text	Robert Norman’ın eski çalışmalarından fazlasıyla esinlendiği başlıca bilimsel çalışması 1600 yılında yayınlanan _ De Magnete _ { { ' } } tir .	O , çalışmasında , deneylerinin çoğunu terrella isimli Dünya modeli ile açıklamaktadır .	Bu deneylerden Dünya’nın kendi başına bir manyetik olduğu ve pusulanın kuzeyi göstermesinin nedeninin de bu olduğu sonucuna varmıştır .	Dünya’nın merkezinin demir olduğunu ilk kez doğru bir şekilde öne süren de William Gilberttir ve mıknatısın önemli ve ilişik kısımlarının her birinin yeni bir kuzey ve güney kutbu oluşturabildiği kesilebilir kısımları olduğunu düşünmüştür .	_ De Magnete _ { { ' } } in 6. kitap 3. bölümünde , Güneşmerkezlilikten bahsetmese de varolduğundan bile şüphe duyulan dev gök kürenin çok daha küçük olan Dünya’nın günlük devinimine karşılık günlük olarak döndüğünün düşünülmesini absürd bulunduğunu ifade ederek Dünya’nın günlük devinimi doğrular .
+Event	T0	açıklamaktadır	EVENT	215
+Event	T3	doğrular	EVENT	898
+Event	T4	çalışması	EVENT	78
+Event	T5	çalışmalarından	EVENT	22
+Event	T6	esinlendiği	EVENT	49
+Event	T7	varmıştır	EVENT	356
+Event	T8	süren	EVENT	434
+Event	T9	düşünmüştür	EVENT	595
+Relation	T0	T4	NoRel	true	açıklamaktadır	çalışması
+Relation	T0	T6	NoRel	true	açıklamaktadır	esinlendiği
+Relation	T3	T5	NoRel	true	doğrular	çalışmalarından
+Relation	T4	T0	NoRel	true	çalışması	açıklamaktadır
+Relation	T5	T0	NoRel	true	çalışmalarından	açıklamaktadır
+Relation	T8	T3	NoRel	true	süren	doğrular
+Relation	T8	T4	NoRel	true	süren	çalışması
+Relation	T9	T0	NoRel	true	düşünmüştür	açıklamaktadır
+Relation	T9	T4	NoRel	true	düşünmüştür	çalışması

@@ -1,0 +1,71 @@
+Text	Dog valgte lokomotivføreren i IC4-toget at sætte hastigheden ned , og toget kørte på tidspunktet for kollisionen 121 km/t , hvilket ifølge Havarikommissionen muligvis har reduceret antallet af omkomne .	Godstoget kørte med 119 km/t og standsede først , da der manglede kørestrøm .	For det tredje udløste sammenstødet en enorm energi .	Ifølge rapporten var IC4-togets konstruktion dog med til at begrænse skaderne og muligvis også antallet af dræbte og kvæstede i ulykken .	Vedrørende fastgørelsen fastslår Havarikommissionens rapport , at fastgøringen af kongetappen i sadlen er det eneste fastgøringspunkt og derfor sikkerhedskritisk .
+Event	T0	valgte	EVENT	4
+Event	T1	kørte	EVENT	76
+Event	T2	kollisionen	EVENT	101
+Event	T3	reduceret	EVENT	171
+Event	T4	kørte	EVENT	213
+Event	T5	standsede	EVENT	235
+Event	T6	sammenstødet	EVENT	304
+Event	T7	konstruktion	EVENT	367
+Event	T8	skaderne	EVENT	404
+Event	T9	dræbte	EVENT	442
+Event	T10	kvæstede	EVENT	452
+Event	T11	ulykken	EVENT	463
+Event	T12	fastslår	EVENT	497
+Event	T13	fastgøringen	EVENT	539
+Event	T14	sætte hastigheden ned	EVENT	43
+Event	T15	energi	EVENT	326
+Event	T16	fastgørelsen	EVENT	484
+Event	T17	sikkerhedskritisk	EVENT	617
+Event	T18	rapport	EVENT	526
+Relation	T4	T5	SuperSub	true	kørte	standsede
+Relation	T5	T4	SubSuper	true	standsede	kørte
+Relation	T7	T8	SuperSub	true	konstruktion	skaderne
+Relation	T8	T7	SubSuper	true	skaderne	konstruktion
+Relation	T7	T9	SuperSub	true	konstruktion	dræbte
+Relation	T9	T7	SubSuper	true	dræbte	konstruktion
+Relation	T7	T10	SuperSub	true	konstruktion	kvæstede
+Relation	T10	T7	SubSuper	true	kvæstede	konstruktion
+Relation	T11	T6	SuperSub	true	ulykken	sammenstødet
+Relation	T6	T11	SubSuper	true	sammenstødet	ulykken
+Relation	T11	T2	SuperSub	true	ulykken	kollisionen
+Relation	T2	T11	SubSuper	true	kollisionen	ulykken
+Relation	T18	T12	SuperSub	true	rapport	fastslår
+Relation	T12	T18	SubSuper	true	fastslår	rapport
+Relation	T0	T11	NoRel	true	valgte	ulykken
+Relation	T1	T17	NoRel	true	kørte	sikkerhedskritisk
+Relation	T1	T8	NoRel	true	kørte	skaderne
+Relation	T10	T0	NoRel	true	kvæstede	valgte
+Relation	T10	T13	NoRel	true	kvæstede	fastgøringen
+Relation	T11	T14	NoRel	true	ulykken	sætte hastigheden ned
+Relation	T11	T9	NoRel	true	ulykken	dræbte
+Relation	T12	T5	NoRel	true	fastslår	standsede
+Relation	T13	T12	NoRel	true	fastgøringen	fastslår
+Relation	T14	T17	NoRel	true	sætte hastigheden ned	sikkerhedskritisk
+Relation	T14	T2	NoRel	true	sætte hastigheden ned	kollisionen
+Relation	T14	T3	NoRel	true	sætte hastigheden ned	reduceret
+Relation	T14	T6	NoRel	true	sætte hastigheden ned	sammenstødet
+Relation	T16	T17	NoRel	true	fastgørelsen	sikkerhedskritisk
+Relation	T17	T15	NoRel	true	sikkerhedskritisk	energi
+Relation	T17	T5	NoRel	true	sikkerhedskritisk	standsede
+Relation	T2	T14	NoRel	true	kollisionen	sætte hastigheden ned
+Relation	T2	T15	NoRel	true	kollisionen	energi
+Relation	T2	T8	NoRel	true	kollisionen	skaderne
+Relation	T3	T1	NoRel	true	reduceret	kørte
+Relation	T3	T15	NoRel	true	reduceret	energi
+Relation	T3	T5	NoRel	true	reduceret	standsede
+Relation	T4	T10	NoRel	true	kørte	kvæstede
+Relation	T4	T14	NoRel	true	kørte	sætte hastigheden ned
+Relation	T4	T18	NoRel	true	kørte	rapport
+Relation	T4	T2	NoRel	true	kørte	kollisionen
+Relation	T4	T8	NoRel	true	kørte	skaderne
+Relation	T5	T11	NoRel	true	standsede	ulykken
+Relation	T5	T12	NoRel	true	standsede	fastslår
+Relation	T5	T17	NoRel	true	standsede	sikkerhedskritisk
+Relation	T5	T2	NoRel	true	standsede	kollisionen
+Relation	T6	T15	NoRel	true	sammenstødet	energi
+Relation	T6	T18	NoRel	true	sammenstødet	rapport
+Relation	T7	T3	NoRel	true	konstruktion	reduceret
+Relation	T8	T0	NoRel	true	skaderne	valgte
+Relation	T8	T2	NoRel	true	skaderne	kollisionen
+Relation	T9	T14	NoRel	true	dræbte	sætte hastigheden ned

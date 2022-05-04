@@ -1,0 +1,38 @@
+Text	El descarrilamiento es el peor accidente de tren en Taiwán desde 1991 , cuando 30 personas murieron en una colisión cerca de Miaoli .	Según un comunicado de prensa de la Administración de Ferrocarriles de Taiwán el 21 de octubre , la causa del accidente es aún desconocida .	El tren involucrado en el accidente fue construido por la compañía japonesa Nippon Sharyo en 2011 , y se sometió a importantes trabajos de mantenimiento en 2017 .	Al menos 18 personas murieron en el accidente , y otras 187 resultaron heridas , todas a bordo .	Al parecer , seis de las víctimas fallecidas eran menores de 18 años .
+Event	T0	descarrilamiento	EVENT	3
+Event	T1	accidente	EVENT	31
+Event	T2	murieron	EVENT	91
+Event	T3	colisión	EVENT	107
+Event	T4	comunicado	EVENT	143
+Event	T5	accidente	EVENT	244
+Event	T6	involucrado	EVENT	283
+Event	T7	accidente	EVENT	301
+Event	T8	construido	EVENT	315
+Event	T9	trabajos	EVENT	402
+Event	T10	murieron	EVENT	459
+Event	T11	accidente	EVENT	474
+Event	T12	heridas	EVENT	509
+Event	T13	fallecidas	EVENT	569
+Relation	T10	T11	NoRel	true	murieron	accidente
+Relation	T11	T3	NoRel	true	accidente	colisión
+Relation	T12	T10	NoRel	true	heridas	murieron
+Relation	T12	T2	NoRel	true	heridas	murieron
+Relation	T12	T9	NoRel	true	heridas	trabajos
+Relation	T13	T9	NoRel	true	fallecidas	trabajos
+Relation	T2	T4	NoRel	true	murieron	comunicado
+Relation	T2	T5	NoRel	true	murieron	accidente
+Relation	T2	T9	NoRel	true	murieron	trabajos
+Relation	T3	T10	NoRel	true	colisión	murieron
+Relation	T3	T7	NoRel	true	colisión	accidente
+Relation	T3	T8	NoRel	true	colisión	construido
+Relation	T4	T11	NoRel	true	comunicado	accidente
+Relation	T4	T9	NoRel	true	comunicado	trabajos
+Relation	T5	T10	NoRel	true	accidente	murieron
+Relation	T5	T11	NoRel	true	accidente	accidente
+Relation	T5	T6	NoRel	true	accidente	involucrado
+Relation	T6	T8	NoRel	true	involucrado	construido
+Relation	T7	T0	NoRel	true	accidente	descarrilamiento
+Relation	T7	T11	NoRel	true	accidente	accidente
+Relation	T7	T3	NoRel	true	accidente	colisión
+Relation	T7	T4	NoRel	true	accidente	comunicado
+Relation	T8	T2	NoRel	true	construido	murieron

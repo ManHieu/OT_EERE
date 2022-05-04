@@ -1,0 +1,25 @@
+Text	Davao City'deki üç alışveriş merkezi , depremin ardından hasar bildirdi .	General Santos’da , Gaisano Alışveriş Merkezi , depremin tetiklediği bir yangının ardından tahliye edildi .	143 bina hasar gördü , biri yıkıldı .	Zarar görmüş binaların 40'ının ev , 70'inin okul , 7'sinin sağlık tesisi , 10'unun ticari bina ve 2'sinin ibadet yeri olduğu bildirildi .	Sabah saat 09.04'te 6.6 büyüklüğünde bir deprem Filipinler'de Mindanao adasını vurdu .
+Event	T0	depremin	EVENT	39
+Event	T1	bildirdi	EVENT	63
+Event	T3	edildi	EVENT	173
+Event	T4	gördü	EVENT	197
+Event	T5	yıkıldı	EVENT	210
+Event	T6	görmüş	EVENT	226
+Event	T7	bildirildi	EVENT	345
+Event	T8	deprem	EVENT	399
+Event	T9	vurdu	EVENT	437
+Event	T10	yangının	EVENT	147
+Event	T11	depremin	EVENT	122
+Relation	T0	T1	NoRel	true	depremin	bildirdi
+Relation	T0	T9	NoRel	true	depremin	vurdu
+Relation	T10	T4	NoRel	true	yangının	gördü
+Relation	T10	T9	NoRel	true	yangının	vurdu
+Relation	T11	T1	NoRel	true	depremin	bildirdi
+Relation	T11	T10	NoRel	true	depremin	yangının
+Relation	T11	T5	NoRel	true	depremin	yıkıldı
+Relation	T3	T7	NoRel	true	edildi	bildirildi
+Relation	T4	T6	NoRel	true	gördü	görmüş
+Relation	T4	T9	NoRel	true	gördü	vurdu
+Relation	T5	T0	NoRel	true	yıkıldı	depremin
+Relation	T8	T9	NoRel	true	deprem	vurdu
+Relation	T9	T8	NoRel	true	vurdu	deprem

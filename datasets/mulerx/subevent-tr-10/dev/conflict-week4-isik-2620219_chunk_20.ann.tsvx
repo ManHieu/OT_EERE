@@ -1,0 +1,32 @@
+Text	) .	Adele Wiseman'ın Kurban romanı , kendi ülkelerinde bir pogromdan sonra yerinden edilmiş ve iki oğlunu isyanda kaybettikten sonra Kanada'ya göç eden bir aile ile de ilgilidir ve zorlukla hayatta kalabildiklerini anlatmaktadır .	Oğulların kaybedilmesi ve öldürülmesi tüm hikâyede duygusallık yaratıyor .	Mark Twain , 1906'da yayınlanan Din Üzerine Düşünceler , Bölüm 3'te Rus pogromlarının grafik tanımlarını vermektedir .	Joseph Joffo , annesinin gençliğini , Çar II. Nikolay Rusya'sında bir Yahudi olan biyografide ' Anna ve Orkestrası'_nda anlatıyor .
+Event	T0	edilmiş	EVENT	84
+Event	T1	kaybettikten	EVENT	114
+Event	T2	göç	EVENT	143
+Event	T3	anlatmaktadır	EVENT	215
+Event	T4	kaybedilmesi	EVENT	241
+Event	T5	öldürülmesi	EVENT	257
+Event	T6	yaratıyor	EVENT	294
+Event	T7	yayınlanan	EVENT	327
+Event	T8	vermektedir	EVENT	411
+Event	T9	anlatıyor	EVENT	545
+Event	T10	pogromdan	EVENT	59
+Event	T11	isyanda	EVENT	106
+Event	T12	pogromlarının	EVENT	378
+Relation	T0	T7	NoRel	true	edilmiş	yayınlanan
+Relation	T1	T12	NoRel	true	kaybettikten	pogromlarının
+Relation	T1	T3	NoRel	true	kaybettikten	anlatmaktadır
+Relation	T1	T5	NoRel	true	kaybettikten	öldürülmesi
+Relation	T11	T7	NoRel	true	isyanda	yayınlanan
+Relation	T2	T9	NoRel	true	göç	anlatıyor
+Relation	T3	T0	NoRel	true	anlatmaktadır	edilmiş
+Relation	T4	T0	NoRel	true	kaybedilmesi	edilmiş
+Relation	T4	T1	NoRel	true	kaybedilmesi	kaybettikten
+Relation	T4	T10	NoRel	true	kaybedilmesi	pogromdan
+Relation	T4	T7	NoRel	true	kaybedilmesi	yayınlanan
+Relation	T5	T3	NoRel	true	öldürülmesi	anlatmaktadır
+Relation	T5	T8	NoRel	true	öldürülmesi	vermektedir
+Relation	T6	T2	NoRel	true	yaratıyor	göç
+Relation	T8	T0	NoRel	true	vermektedir	edilmiş
+Relation	T8	T12	NoRel	true	vermektedir	pogromlarının
+Relation	T8	T2	NoRel	true	vermektedir	göç
+Relation	T9	T3	NoRel	true	anlatıyor	anlatmaktadır

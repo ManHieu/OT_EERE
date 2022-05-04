@@ -1,0 +1,14 @@
+Text	EDIBE SULARI AĞBABA ( d. 1953 Erzincan - ö. 2 Temmuz 1993 ; Sivas ) , Davut Sulari'nin en büyük çocuğu , Türk halk müziği şarkıcısı .	Evlenince İsviçre'ye taşındı .	Basel'de yaşadığı halde Türkiye'de yapılan bütün Bektaşî Kültür etkinlikleri ve ehlibeyt cemlerine , konferanslarına katılmıştır .	Sivas'ta düzenlenen Pir Sultan Abdal Şenlikleri sırasında Madımak Oteli'nin yakılması sonucu ölmüştür .	Kategori : Türk halk müziği ses sanatçıları Kategori : Karşıyaka Mezarlığı'na defnedilenler Kategori : Madımak Katliamı kurbanları
+Event	T0	taşındı	EVENT	155
+Event	T2	Şenlikleri	EVENT	333
+Event	T3	ölmüştür	EVENT	389
+Event	T4	Katliamı	EVENT	511
+Event	T5	Evlenince	EVENT	134
+Event	T6	etkinlikleri	EVENT	229
+Event	T7	katılmıştır	EVENT	282
+Event	T8	yakılması	EVENT	372
+Event	T1	defnedilenler	EVENT	478
+Relation	T2	T0	NoRel	true	Şenlikleri	taşındı
+Relation	T3	T6	NoRel	true	ölmüştür	etkinlikleri
+Relation	T5	T4	NoRel	true	Evlenince	Katliamı
+Relation	T8	T6	NoRel	true	yakılması	etkinlikleri

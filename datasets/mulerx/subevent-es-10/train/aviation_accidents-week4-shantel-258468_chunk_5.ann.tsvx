@@ -1,0 +1,30 @@
+Text	Pasaban de las 14.00 ( hora española ) cuando embarcaban en el avión , que les transportaría hacía España .	Su avión , de fabricación rusa y de compañía y tripulación ucraniana , era un Yakovlev Yak-42D fabricado veinte años atrás con matrícula UR-42352 .	Los 53 militares españoles desaparecidos iniciaron el viaje sobrevolando las altísimas cordilleras afganas , hasta que llegaron al aeropuerto de Manás en la capital de Kirguistán , a las 16:00 , hora española .	En esa nueva escala , embarcarían los otros nueve militares que llevaban otros cuatro meses de misión Libertad Duradera , de apoyo aéreo al despliegue de sus compañeros en Kabul .	Iba a ser una breve escala , pero fueron 6 horas y media tensas de espera , por una mala planificación del vuelo .
+Event	T0	transportaría	EVENT	79
+Event	T1	fabricado	EVENT	203
+Event	T2	iniciaron	EVENT	297
+Event	T3	sobrevolando	EVENT	316
+Event	T4	llegaron	EVENT	375
+Event	T5	despliegue	EVENT	607
+Event	T6	escala	EVENT	667
+Event	T7	espera	EVENT	714
+Event	T8	vuelo	EVENT	754
+Event	T9	embarcaban	EVENT	46
+Event	T10	desaparecidos	EVENT	283
+Relation	T3	T4	SuperSub	true	sobrevolando	llegaron
+Relation	T4	T3	SubSuper	true	llegaron	sobrevolando
+Relation	T8	T7	SuperSub	true	vuelo	espera
+Relation	T7	T8	SubSuper	true	espera	vuelo
+Relation	T0	T3	NoRel	true	transportaría	sobrevolando
+Relation	T1	T2	NoRel	true	fabricado	iniciaron
+Relation	T10	T2	NoRel	true	desaparecidos	iniciaron
+Relation	T2	T10	NoRel	true	iniciaron	desaparecidos
+Relation	T2	T8	NoRel	true	iniciaron	vuelo
+Relation	T3	T2	NoRel	true	sobrevolando	iniciaron
+Relation	T4	T5	NoRel	true	llegaron	despliegue
+Relation	T4	T7	NoRel	true	llegaron	espera
+Relation	T5	T7	NoRel	true	despliegue	espera
+Relation	T5	T9	NoRel	true	despliegue	embarcaban
+Relation	T6	T3	NoRel	true	escala	sobrevolando
+Relation	T7	T10	NoRel	true	espera	desaparecidos
+Relation	T7	T2	NoRel	true	espera	iniciaron
+Relation	T9	T4	NoRel	true	embarcaban	llegaron

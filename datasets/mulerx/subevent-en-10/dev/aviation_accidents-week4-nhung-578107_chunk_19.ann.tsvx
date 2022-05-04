@@ -1,0 +1,82 @@
+Text	Over the following months and years , stories began circulating that employees of Eastern Air Lines , and numerous passengers , had reported sightings of the dead crew members , captain Robert Loft and second officer ( flight engineer ) Donald Repo , sitting on board other L- 1011s ( including , in particular , N318EA ) .	These stories speculated that parts of the crashed aircraft were salvaged after the investigation and refitted into other L - 1011s .	The reported hauntings were said to only be seen on the planes that used the spare parts .	Gossip regarding the sighting of the spirits of Don Repo and Bob Loft spread throughout Eastern Air Lines to the point where Eastern 's management warned employees that they could face dismissal if caught spreading ghost stories .	While Eastern Air Lines publicly denied their planes were haunted , they reportedly removed all the salvaged parts from their L - 1011 fleet .
+Event	T0	circulating	EVENT	52
+Event	T1	sightings	EVENT	141
+Event	T2	dead	EVENT	158
+Event	T3	sitting	EVENT	251
+Event	T4	speculated	EVENT	338
+Event	T5	crashed	EVENT	367
+Event	T6	salvaged	EVENT	389
+Event	T7	investigation	EVENT	408
+Event	T8	hauntings	EVENT	471
+Event	T9	said	EVENT	486
+Event	T10	seen	EVENT	502
+Event	T11	used	EVENT	526
+Event	T12	Gossip	EVENT	549
+Event	T13	sighting	EVENT	570
+Event	T14	spread	EVENT	619
+Event	T15	warned	EVENT	696
+Event	T16	dismissal	EVENT	734
+Event	T17	spreading	EVENT	754
+Event	T19	denied	EVENT	813
+Event	T20	haunted	EVENT	838
+Event	T21	removed	EVENT	864
+Event	T22	salvaged	EVENT	880
+Event	T23	refitted	EVENT	426
+Relation	T0	T12	NoRel	true	circulating	Gossip
+Relation	T0	T16	NoRel	true	circulating	dismissal
+Relation	T1	T13	NoRel	true	sightings	sighting
+Relation	T1	T20	NoRel	true	sightings	haunted
+Relation	T1	T5	NoRel	true	sightings	crashed
+Relation	T1	T7	NoRel	true	sightings	investigation
+Relation	T1	T9	NoRel	true	sightings	said
+Relation	T10	T1	NoRel	true	seen	sightings
+Relation	T10	T15	NoRel	true	seen	warned
+Relation	T11	T0	NoRel	true	used	circulating
+Relation	T11	T13	NoRel	true	used	sighting
+Relation	T11	T16	NoRel	true	used	dismissal
+Relation	T12	T2	NoRel	true	Gossip	dead
+Relation	T12	T3	NoRel	true	Gossip	sitting
+Relation	T13	T7	NoRel	true	sighting	investigation
+Relation	T14	T5	NoRel	true	spread	crashed
+Relation	T15	T5	NoRel	true	warned	crashed
+Relation	T16	T1	NoRel	true	dismissal	sightings
+Relation	T16	T12	NoRel	true	dismissal	Gossip
+Relation	T16	T21	NoRel	true	dismissal	removed
+Relation	T17	T10	NoRel	true	spreading	seen
+Relation	T17	T8	NoRel	true	spreading	hauntings
+Relation	T19	T17	NoRel	true	denied	spreading
+Relation	T19	T20	NoRel	true	denied	haunted
+Relation	T2	T0	NoRel	true	dead	circulating
+Relation	T2	T1	NoRel	true	dead	sightings
+Relation	T2	T10	NoRel	true	dead	seen
+Relation	T2	T21	NoRel	true	dead	removed
+Relation	T2	T6	NoRel	true	dead	salvaged
+Relation	T2	T7	NoRel	true	dead	investigation
+Relation	T2	T8	NoRel	true	dead	hauntings
+Relation	T20	T0	NoRel	true	haunted	circulating
+Relation	T20	T10	NoRel	true	haunted	seen
+Relation	T21	T11	NoRel	true	removed	used
+Relation	T22	T0	NoRel	true	salvaged	circulating
+Relation	T22	T12	NoRel	true	salvaged	Gossip
+Relation	T22	T15	NoRel	true	salvaged	warned
+Relation	T22	T6	NoRel	true	salvaged	salvaged
+Relation	T22	T8	NoRel	true	salvaged	hauntings
+Relation	T23	T11	NoRel	true	refitted	used
+Relation	T23	T17	NoRel	true	refitted	spreading
+Relation	T23	T22	NoRel	true	refitted	salvaged
+Relation	T3	T14	NoRel	true	sitting	spread
+Relation	T3	T22	NoRel	true	sitting	salvaged
+Relation	T3	T9	NoRel	true	sitting	said
+Relation	T4	T0	NoRel	true	speculated	circulating
+Relation	T4	T17	NoRel	true	speculated	spreading
+Relation	T4	T23	NoRel	true	speculated	refitted
+Relation	T6	T11	NoRel	true	salvaged	used
+Relation	T6	T22	NoRel	true	salvaged	salvaged
+Relation	T6	T23	NoRel	true	salvaged	refitted
+Relation	T7	T20	NoRel	true	investigation	haunted
+Relation	T7	T6	NoRel	true	investigation	salvaged
+Relation	T8	T15	NoRel	true	hauntings	warned
+Relation	T8	T2	NoRel	true	hauntings	dead
+Relation	T8	T21	NoRel	true	hauntings	removed
+Relation	T9	T10	NoRel	true	said	seen
+Relation	T9	T7	NoRel	true	said	investigation

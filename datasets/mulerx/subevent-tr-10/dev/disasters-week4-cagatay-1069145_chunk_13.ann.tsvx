@@ -1,0 +1,13 @@
+Text	Fakat çoğu bölgeye hiç yağmur yağmadı .	Fırtına , Kuzey Karolina 12. Karayolu'nun Hatteras Adası üzerinde bulunan bölümünü sel nedeniyle üç saat boyunca trafiğe kapattı .	Morehead City ve Beaufort'taki yollar da trafiğe kapandı .	Birkaç bina selden az miktarda zarar gördü .	Carteret County'de sel suları 5000 dolar zarara yol açtı .
+Event	T0	yağmadı	EVENT	30
+Event	T1	sel	EVENT	123
+Event	T2	kapattı	EVENT	161
+Event	T3	kapandı	EVENT	220
+Event	T4	gördü	EVENT	267
+Event	T5	açtı	EVENT	327
+Event	T6	selden	EVENT	242
+Relation	T1	T2	NoRel	true	sel	kapattı
+Relation	T3	T0	NoRel	true	kapandı	yağmadı
+Relation	T3	T4	NoRel	true	kapandı	gördü
+Relation	T3	T5	NoRel	true	kapandı	açtı
+Relation	T5	T2	NoRel	true	açtı	kapattı
