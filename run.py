@@ -110,7 +110,7 @@ def run(defaults: Dict, random_state):
         model = PlOTEERE(model_args=model_args,
                         training_args=training_args,
                         datasets=job,
-                        scratch_tokenizer=data_args.scratch_tokenizer_name_or_path,
+                        # scratch_tokenizer=data_args.scratch_tokenizer_name_or_path,
                         num_training_step=int(number_step_in_epoch * training_args.num_epoches)
                         )
         
@@ -173,7 +173,7 @@ def objective(trial: optuna.Trial):
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [15, 20, 30]), # 
-        'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
+        # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
@@ -192,65 +192,6 @@ def objective(trial: optuna.Trial):
     seed_everything(random_state, workers=True)
 
     dataset = args.job
-    if dataset == 'HiEve':
-        datapoint = 'hieve_datapoint_v3'
-        corpus_dir = 'datasets/hievents_v2/processed/'
-        processor = Preprocessor(dataset, datapoint)
-        corpus = processor.load_dataset(corpus_dir)
-        corpus = list(sorted(corpus, key=lambda x: x['doc_id']))
-        train, test = train_test_split(corpus, train_size=100.0/120, test_size=20.0/120, random_state=random_state)
-        train, validate = train_test_split(train, train_size=80.0/100., test_size=20.0/100, random_state=random_state)
-
-        processed_path = 'datasets/hievents_v2/train.json'
-        train = processor.process_and_save(train, processed_path)
-
-        processed_path = 'datasets/hievents_v2/val.json'
-        val = processor.process_and_save(validate, processed_path)
-
-        processed_path = 'datasets/hievents_v2/test.json'
-        test = processor.process_and_save(test, processed_path)
-    
-    # elif dataset == 'ESL':
-    #     datapoint = 'ESL_datapoint'
-    #     kfold = KFold(n_splits=5)
-    #     processor = Preprocessor(dataset, datapoint, intra=True, inter=False)
-    #     corpus_dir = './datasets/EventStoryLine/annotated_data/v0.9/'
-    #     corpus = processor.load_dataset(corpus_dir)
-
-    #     _train, test = [], []
-    #     data = defaultdict(list)
-    #     for my_dict in corpus:
-    #         topic = my_dict['doc_id'].split('/')[0]
-    #         data[topic].append(my_dict)
-
-    #         if '37/' in my_dict['doc_id'] or '41/' in my_dict['doc_id']:
-    #             test.append(my_dict)
-    #         else:
-    #             _train.append(my_dict)
-
-    #     # print()
-    #     # processed_path = f"./datasets/EventStoryLine/intra_data.json"
-    #     # processed_data = processor.process_and_save(processed_path, data)
-
-    #     random.shuffle(_train)
-    #     for fold, (train_ids, valid_ids) in enumerate(kfold.split(_train)):
-    #         try:
-    #             os.mkdir(f"./datasets/EventStoryLine/{fold}")
-    #         except FileExistsError:
-    #             pass
-
-    #         train = [_train[id] for id in train_ids]
-    #         # print(train[0])
-    #         validate = [_train[id] for id in valid_ids]
-        
-    #         processed_path = f"./datasets/EventStoryLine/{fold}/train.json"
-    #         processed_train = processor.process_and_save(train, processed_path)
-
-    #         processed_path = f"./datasets/EventStoryLine/{fold}/test.json"
-    #         processed_validate = processor.process_and_save(validate, processed_path)
-            
-    #         processed_path = f"./datasets/EventStoryLine/{fold}/val.json"
-    #         processed_test = processor.process_and_save(test, processed_path)
     
     p, f1, r, val_p, val_r, val_f1 = run(defaults=defaults, random_state=random_state)
 

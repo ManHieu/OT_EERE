@@ -69,6 +69,7 @@ class EEREDataset(BaseDataset):
                 if len(relations) >= 1:
                     example = InputExample(
                                         id=i,
+                                        content=datapoint['content'],
                                         triggers=triggers,
                                         relations=relations,
                                         heads=datapoint['heads'],

@@ -13,7 +13,7 @@ import networkx as nx
 from sentence_transformers import SentenceTransformer, util
 
 
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("es_core_news_sm")
 sim_evaluator = SentenceTransformer('/vinai/hieumdt/all-MiniLM-L12-v1')
 
 
@@ -54,6 +54,9 @@ def tokenized_to_origin_span(text, token_list):
 
 
 def sent_id_lookup(my_dict, start_char, end_char = None):
+    # print(f"my_dict: {my_dict}")
+    # print(f"start: {start_char}")
+    # print(f"end: {end_char}")
     for sent_dict in my_dict['sentences']:
         if end_char is None:
             if start_char >= sent_dict['sent_start_char'] and start_char <= sent_dict['sent_end_char']:
@@ -85,13 +88,17 @@ def span_SENT_to_DOC(token_span_SENT, sent_start):
 def id_lookup(span_SENT, start_char, end_char):
     # this function is applicable to RoBERTa subword or token from ltf/spaCy
     # id: start from 0
-    token_id = -1
-    for token_span in span_SENT:
-        token_id += 1
-        if token_span[0] <= start_char and token_span[1] >= end_char:
-            return token_id
-    raise ValueError("Nothing is found. \n span sentence: {} \n start_char: {}".format(span_SENT, start_char))
+    token_id = []
+    char_range = set(range(start_char, end_char))
+    for i, token_span in enumerate(span_SENT):
+        # if token_span[0] <= start_char or token_span[1] >= end_char:
+        #     return token_id
+        if len(set(range(token_span[0], token_span[1])).intersection(char_range)) > 0:
+            token_id.append(i)
+    if len(token_id) == 0: 
+        raise ValueError("Nothing is found. \n span sentence: {} \n start_char: {} \n end_char: {}".format(span_SENT, start_char, end_char))
 
+    return token_id
 
 def find_common_lowest_ancestor(tree, nodes):
     ancestor = nx.lowest_common_ancestor(tree, nodes[0], nodes[1])

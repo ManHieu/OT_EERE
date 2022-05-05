@@ -19,8 +19,6 @@ class OTEERE(nn.Module):
                 max_seq_len: int,
                 distance_emb_size: int,
                 hidden_size: int,
-                use_word_emb: bool,
-                scratch_tokenizer: str,
                 gcn_num_layers: int,
                 num_labels: int,
                 loss_weights: List[float],
@@ -32,7 +30,6 @@ class OTEERE(nn.Module):
                 fn_actv: str = 'relu',
                 regular_loss_weight: float = 0.1,
                 OT_loss_weight: float = 0.1,
-                word_emb_file: str = None,
                 tune_encoder: bool = True,
                 residual_type: str = 'concat',
                 ) -> None:
@@ -43,17 +40,8 @@ class OTEERE(nn.Module):
         # Encoding layers
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
         self.tune_encoder = tune_encoder
-        if use_word_emb:
-            print("Loading vocab and pretrained word embedding....")
-            self.scratch_tokenizer = ScratchTokenizer()
-            self.scratch_tokenizer.from_file(scratch_tokenizer)
-            self.vocab = self.scratch_tokenizer.vocab
-            self.word_embedding_file = word_emb_file
-            self._init_word_embedding()
-            self.use_wemb = True
-        else:
-            self.word_embedding_size = 0
-            self.use_wemb = False
+        self.word_embedding_size = 0
+        self.use_wemb = False
         self.in_size = 768 + distance_emb_size * 2 + self.word_embedding_size if 'base' in encoder_model else 1024 + distance_emb_size * 2 + self.word_embedding_size
         self.rnn_hidden_size = hidden_size
         if rnn_num_layers > 1:

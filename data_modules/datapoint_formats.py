@@ -1,7 +1,6 @@
 from itertools import combinations
 import networkx as nx
-from tqdm import tgrange
-from data_modules.utils.tools import compute_sentences_similar, get_dep_path, get_new_poss
+from utils.tools import compute_sentences_similar, get_dep_path, get_new_poss
 import time 
 
 
@@ -292,8 +291,10 @@ def hieve_datapoint_v3(my_dict, doc_info=True):
         host_sentence_mask = []
         heads = []
         start_tok_id = 0
+        content = ''
         for i, (sid, _) in enumerate(sorted(top_3_relevances, key=lambda x: x[0])):
             sent = my_dict['sentences'][sid]
+            content = content + sent['content']
 
             if sid == s1 or sid == s2:
                 host_sentence_mask = host_sentence_mask + [1] * len(sent['tokens'])
@@ -319,8 +320,8 @@ def hieve_datapoint_v3(my_dict, doc_info=True):
             e1, e2 = my_dict['event_dict'][eid1], my_dict['event_dict'][eid2]
             _s1, _s2 = e1['sent_id'], e2['sent_id']
             if (_s1 == s1 and _s2 == s2) or (_s1 == s2 and _s2 == s1):
-                e1_poss = get_new_poss([e1['token_id']], sents_tok_span[_s1][0], sents_tok_span)
-                e2_poss = get_new_poss([e2['token_id']], sents_tok_span[_s2][0], sents_tok_span)
+                e1_poss = get_new_poss(e1['token_id'], sents_tok_span[_s1][0], sents_tok_span)
+                e2_poss = get_new_poss(e2['token_id'], sents_tok_span[_s2][0], sents_tok_span)
                 if e1['mention'] in tokens[e1_poss[0]] and e2['mention'] in tokens[e2_poss[0]]:
                     e1_point = {'position': e1_poss, 'mention': e1['mention'], 'sid': _s1}
                     e2_point = {'position': e2_poss, 'mention': e2['mention'], 'sid': _s2}
@@ -339,6 +340,7 @@ def hieve_datapoint_v3(my_dict, doc_info=True):
             data_point = {
                         'tokens': tokens,
                         'host_sent': host_sentence_mask,
+                        'content': content,
                         'triggers': triggers,
                         'heads': heads,
                         'labels': labels
@@ -372,8 +374,10 @@ def mulerx_datapoint(my_dict, doc_info=True):
         host_sentence_mask = []
         heads = []
         start_tok_id = 0
+        content = ''
         for i, (sid, _) in enumerate(sorted(top_3_relevances, key=lambda x: x[0])):
             sent = my_dict['sentences'][sid]
+            content = content + sent['content']
 
             if sid == s1 or sid == s2:
                 host_sentence_mask = host_sentence_mask + [1] * len(sent['tokens'])
@@ -399,25 +403,25 @@ def mulerx_datapoint(my_dict, doc_info=True):
             e1, e2 = my_dict['event_dict'][eid1], my_dict['event_dict'][eid2]
             _s1, _s2 = e1['sent_id'], e2['sent_id']
             if (_s1 == s1 and _s2 == s2) or (_s1 == s2 and _s2 == s1):
-                e1_poss = get_new_poss([e1['token_id']], sents_tok_span[_s1][0], sents_tok_span)
-                e2_poss = get_new_poss([e2['token_id']], sents_tok_span[_s2][0], sents_tok_span)
-                if e1['mention'] in tokens[e1_poss[0]] and e2['mention'] in tokens[e2_poss[0]]:
-                    e1_point = {'position': e1_poss, 'mention': e1['mention'], 'sid': _s1}
-                    e2_point = {'position': e2_poss, 'mention': e2['mention'], 'sid': _s2}
-                    if e1_point not in triggers:
-                        triggers.append(e1_point)
-                    if e2_point not in triggers:
-                        triggers.append(e2_point)
-                    labels.append((triggers.index(e1_point), triggers.index(e2_point), rel))
-                else:
+                e1_poss = get_new_poss(e1['token_id'], sents_tok_span[_s1][0], sents_tok_span)
+                e2_poss = get_new_poss(e2['token_id'], sents_tok_span[_s2][0], sents_tok_span)
+                e1_point = {'position': e1_poss, 'mention': e1['mention'], 'sid': _s1}
+                e2_point = {'position': e2_poss, 'mention': e2['mention'], 'sid': _s2}
+                if e1_point not in triggers:
+                    triggers.append(e1_point)
+                if e2_point not in triggers:
+                    triggers.append(e2_point)
+                labels.append((triggers.index(e1_point), triggers.index(e2_point), rel))
+                if e1['mention'] not in ' '.join([tokens[i] for i in e1_poss]) or e2['mention'] not in ' '.join([tokens[i] for i in e2_poss]):
                     print(f"{tokens} - {sents_tok_span}")
-                    print(f"{e1_poss} - {tokens[e1_poss]} - {e1['mention']}")
-                    print(f"{e2_poss} - {tokens[e2_poss]} - {e2['mention']}")
+                    print(f"{e1_poss} - {' '.join([tokens[i] for i in e1_poss])} - {e1['mention']}")
+                    print(f"{e2_poss} - {' '.join([tokens[i] for i in e2_poss])} - {e2['mention']}")
                     continue
                 
         if len(labels) > 0:
             data_point = {
                         'tokens': tokens,
+                        'content': content,
                         'host_sent': host_sentence_mask,
                         'triggers': triggers,
                         'heads': heads,
@@ -475,8 +479,10 @@ def ESL_datapoint(my_dict, intra=True, inter=False):
         host_sentence_mask = []
         heads = []
         start_tok_id = 0
+        content = ''
         for i, (sid, _) in enumerate(sorted(top_3_relevances, key=lambda x: x[0])):
             sent = my_dict['sentences'][sid]
+            content = content + sent['content']
 
             if sid == s1 or sid == s2:
                 host_sentence_mask = host_sentence_mask + [1] * len(sent['tokens'])
@@ -531,6 +537,7 @@ def ESL_datapoint(my_dict, intra=True, inter=False):
         if len(labels) > 0:
             data_point = {
                         'tokens': tokens,
+                        'content': content,
                         'host_sent': host_sentence_mask,
                         'triggers': triggers,
                         'heads': heads,

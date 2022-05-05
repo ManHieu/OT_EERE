@@ -24,11 +24,6 @@ class DataTrainingArguments:
         metadata= {"help": "The tokenizer used to prepare data"}
     )
 
-    scratch_tokenizer_name_or_path: Optional[str] = field(
-        default = None,
-        metadata= {"help": "The tokenizer used to prepare data"}
-    )
-
     encoder: str = field(
         default = '/vinai/hieumdt/pretrained_models/models/roberta-base',
         metadata= {"help": "The path of encoder model"}
@@ -114,11 +109,6 @@ class ModelArguments:
     encoder_name_or_path: str = field(
         default = '/vinai/hieumdt/pretrained_models/models/roberta-base',
         metadata= {"help": "The path of encoder model"}
-    )
-
-    use_pretrained_wemb: bool = field(
-        default = True,
-        metadata= {"help": "Use glove trained word embedding"}
     )
 
     distance_emb_size: int = field(

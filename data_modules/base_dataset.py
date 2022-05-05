@@ -11,7 +11,6 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModel
 import networkx as nx
 from data_modules.input_example import InputExample, InputFeatures
-from data_modules.utils.scratch_tokenizer import ScratchTokenizer
 from data_modules.utils.tools import mapping_subtok_id, padding
 
 
@@ -24,7 +23,6 @@ class BaseDataset(Dataset, ABC):
     def __init__(
         self,
         tokenizer: str,
-        scratch_tokenizer_file: str,
         encoder_model: str,
         data_dir: str,
         max_input_length: int,
@@ -34,8 +32,6 @@ class BaseDataset(Dataset, ABC):
         super().__init__()
 
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer)
-        self.scratch_tokenizer = ScratchTokenizer()
-        self.scratch_tokenizer.from_file(scratch_tokenizer_file)
         
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
         self.encoder.eval()
@@ -108,14 +104,11 @@ class BaseDataset(Dataset, ABC):
         if True:
             features = []
             for example in tqdm(self.examples, desc="Load features"):    
-                input_seq = " ".join(example.tokens)
+                input_seq = example.content
                 input_encoded = self.tokenizer(input_seq)
                 input_ids = input_encoded['input_ids']
                 input_attention_mask = input_encoded['attention_mask']
                 # input_presentation = self.get_doc_emb(input_ids, input_attention_mask)
-
-                _, input_token_ids = self.scratch_tokenizer.tokenize(example.tokens, tokenized=True)
-
                 subwords_no_space = []
                 for index, i in enumerate(input_ids):
                     r_token = self.tokenizer.decode([i])
@@ -165,7 +158,7 @@ class BaseDataset(Dataset, ABC):
                     
                 feature = InputFeatures(
                     input_ids=input_ids,
-                    input_token_ids=input_token_ids,
+                    input_token_ids=example.tokens,
                     input_attention_mask=input_attention_mask,
                     mapping=mapping,
                     labels=labels,

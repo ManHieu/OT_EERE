@@ -29,7 +29,6 @@ class PlOTEERE(pl.LightningModule):
 
         self.model = OTEERE(encoder_model=model_args.encoder_name_or_path,
                             max_seq_len=training_args.max_seq_len,
-                            scratch_tokenizer=scratch_tokenizer,
                             distance_emb_size=model_args.distance_emb_size,
                             hidden_size=model_args.hidden_size,
                             gcn_num_layers=model_args.gcn_num_layers,
@@ -43,7 +42,6 @@ class PlOTEERE(pl.LightningModule):
                             fn_actv=model_args.fn_actv,
                             regular_loss_weight=training_args.regular_loss_weight,
                             OT_loss_weight=training_args.OT_loss_weight,
-                            use_word_emb=model_args.use_pretrained_wemb,
                             tune_encoder=self.tune_encoder,
                             residual_type=model_args.residual_type)
         self.model_results = []
