@@ -18,7 +18,6 @@ from pytorch_lightning.utilities.seed import seed_everything
 from arguments import DataTrainingArguments, ModelArguments, TrainingArguments
 from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
 from data_modules.data_modules import load_data_module
-from data_modules.preprocess import Preprocessor
 from models.model import PlOTEERE
 import shutil
 
@@ -40,6 +39,8 @@ def run(defaults: Dict, random_state):
         defaults['loss_weights'] = [6833.0/369, 6833.0/348, 6833.0/162, 6833.0/5954]
     elif job == 'ESL':
         defaults['loss_weights'] = [5.0/6, 1.0/6]
+    elif job == 'subevent_mulerx':
+        defaults['loss_weights'] = [4062/146.0, 4062/146.0, 4062/3770.0]
     
     # parse remaining arguments and divide them into three categories
     second_parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
@@ -172,14 +173,14 @@ def objective(trial: optuna.Trial):
         'encoder_lr': trial.suggest_categorical('encoder_lr', [8e-7, 1e-6, 3e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [15, 20, 30]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [15]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
-        'seed': trial.suggest_int('seed', 1, 10000, log=True),
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3]),
+        'seed': 1741,
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2]),
         'hidden_size': trial.suggest_categorical('hidden_size', [768]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
         'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu']), # 'relu', 'tanh', 'hardtanh', 'silu'

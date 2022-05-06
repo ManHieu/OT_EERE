@@ -16,7 +16,6 @@ def register_dataset(dataset_class: BaseDataset):
 
 def load_dataset(name:str,
                 tokenizer: str,
-                scratch_tokenizer: str,
                 encoder: str,
                 data_dir: str,
                 max_input_length: int,
@@ -27,7 +26,6 @@ def load_dataset(name:str,
     '''
     return DATASETS[name](
         tokenizer=tokenizer,
-        scratch_tokenizer_file=scratch_tokenizer,
         encoder_model=encoder,
         data_dir=data_dir,
         max_input_length=max_input_length,
@@ -93,6 +91,18 @@ class HiEveDataset(EEREDataset):
                             1: "SubSuper", 
                             2: "Coref", 
                             3: "NoRel"
+                            }
+
+
+@register_dataset
+class SubEventMulerxDataset(EEREDataset):
+    name = 'subevent_mulerx'
+    sample = 1.0
+
+    natural_relation_types = {
+                            0: "SuperSub", 
+                            1: "SubSuper",  
+                            2: "NoRel"
                             }
 
 

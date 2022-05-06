@@ -13,7 +13,7 @@ import networkx as nx
 from sentence_transformers import SentenceTransformer, util
 
 
-nlp = spacy.load("es_core_news_sm")
+nlp = spacy.load("en_core_web_sm")
 sim_evaluator = SentenceTransformer('/vinai/hieumdt/all-MiniLM-L12-v1')
 
 
@@ -34,22 +34,18 @@ def format_time(elapsed):
     return str(datetime.timedelta(seconds=elapsed_rounded))
 
 
-def tokenized_to_origin_span(text, token_list):
+def tokenized_to_origin_span(text: str, token_list: List[str]):
     token_span = []
     pointer = 0
     for token in token_list:
-        if token not in text:
+        start = text.find(token, pointer)
+        if start != -1:
+            end = start + len(token)
+            pointer = end
+            token_span.append([start, end])
+            assert text[start: end] == token, f"{token}-{text}"
+        else:
             token_span.append([-100, -100])
-            continue
-        while True:
-            if token[0] == text[pointer]:
-                start = pointer
-                end = start + len(token)
-                pointer = end
-                break
-            else:
-                pointer += 1
-        token_span.append([start, end])
     return token_span
 
 
@@ -124,10 +120,9 @@ def get_dep_path(tree, nodes):
         return None
 
 
-def mapping_subtok_id(subtoks: List[str], tokens: List[str]):
-    text = ' '.join(tokens)
+def mapping_subtok_id(subtoks: List[str], tokens: List[str], text: str):
     token_spans = tokenized_to_origin_span(text, tokens)
-    subtok_spans = tokenized_to_origin_span(text, subtoks)
+    subtok_spans = tokenized_to_origin_span(text.lower(), subtoks)
 
     mapping_dict = defaultdict(list)
     for i, subtok_span in enumerate(subtok_spans, start=1):

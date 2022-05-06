@@ -11,7 +11,14 @@ def compute_f1(dataset: str, num_label: int, gold: List[int], pred: List[int], r
         P = true / sum_pred
         R = true / sum_gold
         F1 = 2 * P * R / (P + R)
-    if dataset == 'ESL':
+    elif dataset == 'ESL':
+        true = sum([CM[i, i] for i in range(1)])
+        sum_pred = sum([CM[i, 0:1].sum() for i in range(num_label)])
+        sum_gold = sum([CM[i].sum() for i in range(1)])
+        P = true / sum_pred
+        R = true / sum_gold
+        F1 = 2 * P * R / (P + R)
+    elif dataset == 'subevent_mulerx':
         true = sum([CM[i, i] for i in range(1)])
         sum_pred = sum([CM[i, 0:1].sum() for i in range(num_label)])
         sum_gold = sum([CM[i].sum() for i in range(1)])

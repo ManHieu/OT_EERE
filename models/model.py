@@ -16,7 +16,7 @@ class PlOTEERE(pl.LightningModule):
                 model_args: ModelArguments, 
                 training_args: TrainingArguments,
                 datasets: str,
-                scratch_tokenizer: str,
+                # scratch_tokenizer: str,
                 
                 num_training_step: int
                 ) -> None:
