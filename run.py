@@ -43,7 +43,7 @@ def run(defaults: Dict, random_state):
         defaults['loss_weights'] = [4062/146.0, 4062/146.0, 4062/3770.0]
         defaults['tokenizer'] = '/vinai/hieumdt/pretrained_models/tokenizers/mBERT-base'
         defaults['encoder_name_or_path'] = '/vinai/hieumdt/pretrained_models/models/mBERT-base'
-        defaults['data_dir'] = 'datasets/mulerx/subevent-da-10'
+        defaults['data_dir'] = 'datasets/mulerx/subevent-en-10'
     
     # parse remaining arguments and divide them into three categories
     second_parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
@@ -183,12 +183,12 @@ def run(defaults: Dict, random_state):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [1e-4]),
+        'lr': trial.suggest_categorical('lr', [1e-5, 1e-4, 1e-3]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [3e-6]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 1e-6, 1e-5]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [20]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [50]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
@@ -239,9 +239,9 @@ if __name__ == '__main__':
     
     if args.tuning:
         print("tuning ......")
-        # sampler = optuna.samplers.TPESampler(seed=1741)
+        sampler = optuna.samplers.TPESampler(seed=1741)
         study = optuna.create_study(direction='maximize')
-        study.optimize(objective, n_trials=25)
+        study.optimize(objective, n_trials=25, sampler=sampler)
         trial = study.best_trial
         print('Accuracy: {}'.format(trial.value))
         print("Best hyperparameters: {}".format(trial.params))
