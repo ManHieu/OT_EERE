@@ -147,10 +147,39 @@ class OTEERE(nn.Module):
         # Embedding
         # Compute transformer embedding
         if self.tune_encoder:
-            _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state # (bs, max_seq_len, encoder_hidden_size)
+            # _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state # (bs, max_seq_len, encoder_hidden_size)
+            _context_emb = []
+            num_para = math.ceil(input_ids.size(1) / 512.0)
+            # print(f"input_ids: {input_ids.size()}")
+            for i in range(num_para):
+                start = i * 512
+                end = (i + 1) * 512
+                para_ids = input_ids[:, start: end]
+                para_input_attn_mask = input_attention_mask[:, start:end]
+                # print(f"para_ids: {para_ids.size()}")
+                # print(f"para_attn_mask: {para_input_attn_mask.size()}")
+                para_ctx = self.encoder(para_ids, para_input_attn_mask).last_hidden_state
+                # print(f"para_ctx: {para_ctx.size()}")
+                _context_emb.append(para_ctx)
+            _context_emb = torch.cat(_context_emb, dim=1) # (bs, max_seq_len, encoder_hidden_size)
+
         else:
             with torch.no_grad():
-                _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state # (bs, max_seq_len, encoder_hidden_size)
+                # _context_emb = self.encoder(input_ids, input_attention_mask).last_hidden_state # (bs, max_seq_len, encoder_hidden_size)
+                _context_emb = []
+                num_para = math.ceil(input_ids.size(1) / 512.0)
+                # print(f"input_ids: {input_ids.size()}")
+                for i in range(num_para):
+                    start = i * 512
+                    end = (i + 1) * 512
+                    para_ids = input_ids[:, start: end]
+                    para_input_attn_mask = input_attention_mask[:, start:end]
+                    # print(f"para_ids: {para_ids.size()}")
+                    # print(f"para_attn_mask: {para_input_attn_mask.size()}")
+                    para_ctx = self.encoder(para_ids, para_input_attn_mask).last_hidden_state
+                    # print(f"para_ctx: {para_ctx.size()}")
+                    _context_emb.append(para_ctx)
+                _context_emb = torch.cat(_context_emb, dim=1) # (bs, max_seq_len, encoder_hidden_size)
 
         # Compute word embedding
         if self.use_wemb:
