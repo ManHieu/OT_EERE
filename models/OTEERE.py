@@ -88,9 +88,9 @@ class OTEERE(nn.Module):
         self.fc = nn.Linear(gcn_input_size, hidden_size)
 
         if self.residual_type == 'concat':
-            classifier_in_size = hidden_size * 9
+            classifier_in_size = hidden_size * 3
         elif self.residual_type == 'addtive':
-            classifier_in_size = hidden_size * 6                   
+            classifier_in_size = hidden_size * 3                  
         fc1 = nn.Linear(classifier_in_size, int(classifier_in_size/2))
         fc2 = nn.Linear(int(classifier_in_size/2), int(classifier_in_size/4))
         fc3 = nn.Linear(int(classifier_in_size/4), num_labels)

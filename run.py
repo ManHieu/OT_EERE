@@ -185,7 +185,7 @@ def objective(trial: optuna.Trial):
     defaults = {
         'lr': trial.suggest_categorical('lr', [1e-5, 1e-4, 1e-3]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 1e-6, 1e-5]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 1e-6, 1e-5, 1e-4]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [50]), # 
@@ -241,7 +241,7 @@ if __name__ == '__main__':
         print("tuning ......")
         sampler = optuna.samplers.TPESampler(seed=1741)
         study = optuna.create_study(direction='maximize')
-        study.optimize(objective, n_trials=25, sampler=sampler)
+        study.optimize(objective, n_trials=25)
         trial = study.best_trial
         print('Accuracy: {}'.format(trial.value))
         print("Best hyperparameters: {}".format(trial.params))
