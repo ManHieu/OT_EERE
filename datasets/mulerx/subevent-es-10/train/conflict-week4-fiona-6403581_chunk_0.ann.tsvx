@@ -1,0 +1,40 @@
+Text	Los llamados DESÓRDENES EN FERGUSON hacen referencia a la serie de manifestaciones , tanto pacíficas como violentas , que se iniciaron en la localidad estadounidense de Ferguson , Misuri , un día después del asesinato de Michael Brown , el 9 de agosto de 2014 , y que se prolongaron por más de una semana .	Tras conocerse los detalles del asesinato del joven afroamericano , la policía adoptó de inmediato medidas preventivas contra posibles focos de violencia .	Por otra parte , la familia de Michael Brown , junto con diversas comunidades afroamericanas , iniciaron manifestaciones pacíficas en las inmediaciones del lugar del asesinato .	Michael Brown , un joven de 18 años de edad , murió después de recibir 6 disparos por parte del agente de policía del departamento de Misuri , Darren Wilson , de 28 años de edad .	Brown estaba desarmado y no tenía antecedentes penales .
+Event	T0	referencia	EVENT	42
+Event	T1	serie	EVENT	58
+Event	T2	manifestaciones	EVENT	67
+Event	T3	iniciaron	EVENT	125
+Event	T4	asesinato	EVENT	208
+Event	T5	prolongaron	EVENT	271
+Event	T6	conocerse	EVENT	312
+Event	T7	asesinato	EVENT	339
+Event	T8	adoptó	EVENT	386
+Event	T9	preventivas	EVENT	414
+Event	T10	focos	EVENT	442
+Event	T11	violencia	EVENT	451
+Event	T13	asesinato	EVENT	629
+Event	T14	disparos	EVENT	714
+Event	T15	desarmado	EVENT	834
+Event	T16	murió	EVENT	687
+Event	T17	manifestaciones	EVENT	568
+Relation	T13	T17	SuperSub	true	asesinato	manifestaciones
+Relation	T17	T13	SubSuper	true	manifestaciones	asesinato
+Relation	T0	T10	NoRel	true	referencia	focos
+Relation	T1	T10	NoRel	true	serie	focos
+Relation	T10	T13	NoRel	true	focos	asesinato
+Relation	T10	T9	NoRel	true	focos	preventivas
+Relation	T13	T8	NoRel	true	asesinato	adoptó
+Relation	T13	T9	NoRel	true	asesinato	preventivas
+Relation	T16	T1	NoRel	true	murió	serie
+Relation	T17	T11	NoRel	true	manifestaciones	violencia
+Relation	T17	T16	NoRel	true	manifestaciones	murió
+Relation	T17	T4	NoRel	true	manifestaciones	asesinato
+Relation	T2	T4	NoRel	true	manifestaciones	asesinato
+Relation	T2	T5	NoRel	true	manifestaciones	prolongaron
+Relation	T2	T8	NoRel	true	manifestaciones	adoptó
+Relation	T3	T14	NoRel	true	iniciaron	disparos
+Relation	T5	T4	NoRel	true	prolongaron	asesinato
+Relation	T6	T4	NoRel	true	conocerse	asesinato
+Relation	T8	T13	NoRel	true	adoptó	asesinato
+Relation	T8	T16	NoRel	true	adoptó	murió
+Relation	T9	T16	NoRel	true	preventivas	murió
+Relation	T9	T5	NoRel	true	preventivas	prolongaron

@@ -1,0 +1,34 @@
+Text	] [ Liceo Italia de Chaitén destruido por el desborde del río Blanco .	] Una vez iniciada la erupción , Sernageomin estableció alerta volcánica roja , y activó la preparación de equipamiento para monitoreo sísmico y la movilización de personal del Observatorio Vulcanológico de los Andes del Sur , desde Temuco a Chaitén .	El organismo técnico sugirió una zona de exclusión total en un radio de 30 kilómetros en torno al macizo .	En tanto , a las 02:00 hora local del 2 de mayo de 2008 , las autoridades regionales de la Onemi decretaron alerta roja administrativa e iniciaron la evacuación de los sectores más afectados por las cenizas .	En 24 horas , más de cuatro mil personas fueron evacuadas exitosamente desde las zonas de riesgo .
+Event	T0	destruido	EVENT	28
+Event	T1	desborde	EVENT	45
+Event	T2	iniciada	EVENT	81
+Event	T3	erupción	EVENT	93
+Event	T4	activó	EVENT	153
+Event	T5	preparación	EVENT	163
+Event	T6	movilización	EVENT	219
+Event	T7	sugirió	EVENT	344
+Event	T8	iniciaron	EVENT	567
+Event	T9	evacuación	EVENT	580
+Event	T10	afectados	EVENT	611
+Event	T11	cenizas	EVENT	629
+Event	T12	evacuadas	EVENT	687
+Relation	T0	T10	NoRel	true	destruido	afectados
+Relation	T1	T2	NoRel	true	desborde	iniciada
+Relation	T10	T7	NoRel	true	afectados	sugirió
+Relation	T11	T7	NoRel	true	cenizas	sugirió
+Relation	T11	T9	NoRel	true	cenizas	evacuación
+Relation	T12	T0	NoRel	true	evacuadas	destruido
+Relation	T12	T11	NoRel	true	evacuadas	cenizas
+Relation	T3	T1	NoRel	true	erupción	desborde
+Relation	T3	T9	NoRel	true	erupción	evacuación
+Relation	T4	T2	NoRel	true	activó	iniciada
+Relation	T5	T3	NoRel	true	preparación	erupción
+Relation	T6	T0	NoRel	true	movilización	destruido
+Relation	T6	T5	NoRel	true	movilización	preparación
+Relation	T7	T10	NoRel	true	sugirió	afectados
+Relation	T7	T5	NoRel	true	sugirió	preparación
+Relation	T7	T6	NoRel	true	sugirió	movilización
+Relation	T8	T10	NoRel	true	iniciaron	afectados
+Relation	T9	T12	NoRel	true	evacuación	evacuadas
+Relation	T9	T4	NoRel	true	evacuación	activó
+Relation	T9	T5	NoRel	true	evacuación	preparación

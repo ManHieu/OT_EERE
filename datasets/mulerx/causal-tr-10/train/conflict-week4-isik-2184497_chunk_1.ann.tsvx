@@ -1,0 +1,27 @@
+Text	Saldırıda ilk anda biri 6 aylık hamile iki kadın polis memuru ve 3 sivil öldü .	Olay sonrası ilçeye takviye birlikler sevk edildi .	Nusaybin Caddesi'nde polis ekipleri , geniş güvenlik önlemleri alırken , emniyet müdürlüğü binası brandayla kapatıldı .	Yaralılar hastanelere taşındı ve tedavi altına alındı .	Saldırıda yaralanan 51 kişinin çoğunun çocuk olduğu belirtildi .
+Event	T0	öldü	EVENT	73
+Event	T1	Olay	EVENT	80
+Event	T2	edildi	EVENT	123
+Event	T3	kapatıldı	EVENT	240
+Event	T4	taşındı	EVENT	274
+Event	T5	alındı	EVENT	299
+Event	T6	yaralanan	EVENT	318
+Event	T7	belirtildi	EVENT	360
+Event	T8	Saldırıda	EVENT	0
+Event	T9	önlemleri	EVENT	185
+Event	T10	Saldırıda	EVENT	308
+Relation	T9	T3	CauseEffect	true	önlemleri	kapatıldı
+Relation	T3	T9	EffectCause	true	kapatıldı	önlemleri
+Relation	T2	T9	CauseEffect	true	edildi	önlemleri
+Relation	T9	T2	EffectCause	true	önlemleri	edildi
+Relation	T4	T5	CauseEffect	true	taşındı	alındı
+Relation	T5	T4	EffectCause	true	alındı	taşındı
+Relation	T0	T4	NoRel	true	öldü	taşındı
+Relation	T0	T8	NoRel	true	öldü	Saldırıda
+Relation	T0	T9	NoRel	true	öldü	önlemleri
+Relation	T2	T4	NoRel	true	edildi	taşındı
+Relation	T4	T7	NoRel	true	taşındı	belirtildi
+Relation	T4	T8	NoRel	true	taşındı	Saldırıda
+Relation	T8	T9	NoRel	true	Saldırıda	önlemleri
+Relation	T9	T10	NoRel	true	önlemleri	Saldırıda
+Relation	T9	T6	NoRel	true	önlemleri	yaralanan

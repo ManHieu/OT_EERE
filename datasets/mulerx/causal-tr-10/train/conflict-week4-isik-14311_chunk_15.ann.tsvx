@@ -1,0 +1,31 @@
+Text	Ateşkes başlamadan Girne - Lefkoşa hattı birleşti .	Geçici ateşkes ilan edildiyse de Rum birliklerinin bu ateşkes kurallarına uymaması sonucu 13 Ağustos'ta Türk birlikleri tekrar ilerlemeye başladı .	Türk birlikleri 14 Ağustos'ta başkent Lefkoşa'ya , 15 Ağustos'ta Lefke ve Mağusa'ya girdi .	Uluslararası baskılar sonucunda ateşkes ilan edildi ve adanın % 37'si Türkler'in kontrolüne geçti .	170.000 civarındaki Kıbrıslı Rum kuzeyde bulunan evlerinden göç ettirildi , 50.000 Kıbrıslı Türk ve daha sonra da Türkiye'nin teşviki ile Türkiye'den gelen göçmenler ise bu evlere yerleştirildi .
+Event	T0	birleşti	EVENT	41
+Event	T1	edildiyse	EVENT	72
+Event	T2	ateşkes	EVENT	106
+Event	T3	başladı	EVENT	190
+Event	T4	girdi	EVENT	284
+Event	T5	baskılar	EVENT	305
+Event	T6	edildi	EVENT	337
+Event	T7	geçti	EVENT	384
+Event	T8	ettirildi	EVENT	456
+Event	T9	yerleştirildi	EVENT	572
+Event	T10	Ateşkes	EVENT	0
+Relation	T3	T4	CauseEffect	true	başladı	girdi
+Relation	T4	T3	EffectCause	true	girdi	başladı
+Relation	T5	T6	CauseEffect	true	baskılar	edildi
+Relation	T6	T5	EffectCause	true	edildi	baskılar
+Relation	T7	T8	CauseEffect	true	geçti	ettirildi
+Relation	T8	T7	EffectCause	true	ettirildi	geçti
+Relation	T4	T7	CauseEffect	true	girdi	geçti
+Relation	T7	T4	EffectCause	true	geçti	girdi
+Relation	T7	T9	CauseEffect	true	geçti	yerleştirildi
+Relation	T9	T7	EffectCause	true	yerleştirildi	geçti
+Relation	T0	T3	NoRel	true	birleşti	başladı
+Relation	T1	T4	NoRel	true	edildiyse	girdi
+Relation	T10	T1	NoRel	true	Ateşkes	edildiyse
+Relation	T3	T0	NoRel	true	başladı	birleşti
+Relation	T5	T0	NoRel	true	baskılar	birleşti
+Relation	T7	T2	NoRel	true	geçti	ateşkes
+Relation	T7	T3	NoRel	true	geçti	başladı
+Relation	T8	T2	NoRel	true	ettirildi	ateşkes
+Relation	T8	T6	NoRel	true	ettirildi	edildi

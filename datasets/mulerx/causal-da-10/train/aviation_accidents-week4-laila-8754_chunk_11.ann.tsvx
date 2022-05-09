@@ -1,0 +1,26 @@
+Text	Med en brændstofkapacitet på 91.000 liter blev hvert fly en flyvende brandbombe .	- Klokken 8:46:40 om morgenen lokal tid ( 14:46:40 dansk tid ) stødte American Airlines' flynummer 11 ( Boeing 767 ) ind i nordsiden af World Trade Centers nordlige tårn .	- Klokken 9:03:11 ( 15:03:11 dansk tid ) stødte United Airlines' flynummer 175 ( Boeing 767 ) ind i det sydlige tårn , hvilket blev sendt direkte i fjernsynet af Tv-selskaberne , der var ankommet for at filme det nordlige tårn .	- American Airlines' flynummer 77 ( Boeing 757 ) styrtede ned i det amerikanske forsvarsministeriums hovedkvarter Pentagon klokken 9:37:46 om morgenen lokal tid ( 15:37:46 dansk tid ) .	- Det fjerde kaprede fly , United Airlines' fly nummer 93 ( Boeing 757 ) , styrtede ned på en mark i det sydvestlige Pennsylvania klokken 10:03:11 ( 16:03:11 dansk tid ) , og vragdele blev fundet op til 5 kilometer væk .
+Event	T0	stødte	EVENT	145
+Event	T1	stødte	EVENT	295
+Event	T2	ankommet	EVENT	441
+Event	T3	filme	EVENT	457
+Event	T4	kaprede	EVENT	682
+Event	T5	blev	EVENT	42
+Event	T6	sendt	EVENT	386
+Event	T7	styrtede ned	EVENT	532
+Event	T8	styrtede ned	EVENT	744
+Event	T9	fundet	EVENT	858
+Event	T10	brandbombe	EVENT	69
+Relation	T5	T10	CauseEffect	true	blev	brandbombe
+Relation	T10	T5	EffectCause	true	brandbombe	blev
+Relation	T1	T0	NoRel	true	stødte	stødte
+Relation	T2	T1	NoRel	true	ankommet	stødte
+Relation	T3	T9	NoRel	true	filme	fundet
+Relation	T5	T0	NoRel	true	blev	stødte
+Relation	T5	T2	NoRel	true	blev	ankommet
+Relation	T5	T6	NoRel	true	blev	sendt
+Relation	T6	T1	NoRel	true	sendt	stødte
+Relation	T7	T2	NoRel	true	styrtede ned	ankommet
+Relation	T7	T4	NoRel	true	styrtede ned	kaprede
+Relation	T8	T10	NoRel	true	styrtede ned	brandbombe
+Relation	T9	T1	NoRel	true	fundet	stødte
+Relation	T9	T10	NoRel	true	fundet	brandbombe

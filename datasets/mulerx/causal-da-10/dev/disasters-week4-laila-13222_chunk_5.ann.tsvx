@@ -1,0 +1,100 @@
+Text	Dette har stor betydning særligt i " Tornado Alley " , hvor der findes et varslingscenter i Oklahoma City , " Storm Prediction Center /National Weather Service " , hvorfra man observerer skyernes rotation og gang og udløser varslingssirener , hvis der er kraftig aktivitet i en tordensky .	Tornadoalarm ( sirene , radio og tv melding ) udløses gennemsnitligt 13 minutter før tornadoen når jorden .	De skyer , der danner tornadoer er cumulonimbussky og det er også de mest imponerende .	Cumulonimbusskyen kan nemlig blive op til 15.000 m høj og dermed nå helt op til tropopausen .	En tornados diameter er typisk 45 m ( 50 yards ) , men kan blive flere kilomenter brede .
+Event	T0	observerer	EVENT	176
+Event	T1	rotation	EVENT	196
+Event	T2	gang	EVENT	208
+Event	T3	varslingssirener	EVENT	224
+Event	T4	aktivitet	EVENT	263
+Event	T5	tordensky	EVENT	278
+Event	T7	udløses	EVENT	336
+Event	T8	når	EVENT	385
+Event	T9	tornadoer	EVENT	420
+Event	T10	betydning	EVENT	15
+Event	T11	varslingscenter	EVENT	74
+Event	T12	Prediction	EVENT	116
+Event	T13	Tornadoalarm	EVENT	290
+Event	T14	sirene	EVENT	305
+Event	T15	radio	EVENT	314
+Event	T6	tv melding	EVENT	323
+Event	T16	tornadoen	EVENT	375
+Event	T17	imponerende	EVENT	472
+Event	T18	skyer	EVENT	401
+Event	T19	cumulonimbussky	EVENT	433
+Event	T20	Cumulonimbusskyen	EVENT	486
+Event	T21	nå	EVENT	551
+Event	T22	blive	EVENT	515
+Event	T23	tornados	EVENT	583
+Event	T24	diameter	EVENT	592
+Event	T25	blive	EVENT	639
+Relation	T22	T17	CauseEffect	true	blive	imponerende
+Relation	T17	T22	EffectCause	true	imponerende	blive
+Relation	T4	T3	CauseEffect	true	aktivitet	varslingssirener
+Relation	T3	T4	EffectCause	true	varslingssirener	aktivitet
+Relation	T0	T11	NoRel	true	observerer	varslingscenter
+Relation	T0	T7	NoRel	true	observerer	udløses
+Relation	T1	T12	NoRel	true	rotation	Prediction
+Relation	T1	T16	NoRel	true	rotation	tornadoen
+Relation	T10	T20	NoRel	true	betydning	Cumulonimbusskyen
+Relation	T11	T16	NoRel	true	varslingscenter	tornadoen
+Relation	T11	T22	NoRel	true	varslingscenter	blive
+Relation	T12	T11	NoRel	true	Prediction	varslingscenter
+Relation	T12	T20	NoRel	true	Prediction	Cumulonimbusskyen
+Relation	T14	T1	NoRel	true	sirene	rotation
+Relation	T14	T17	NoRel	true	sirene	imponerende
+Relation	T14	T24	NoRel	true	sirene	diameter
+Relation	T14	T3	NoRel	true	sirene	varslingssirener
+Relation	T14	T5	NoRel	true	sirene	tordensky
+Relation	T15	T12	NoRel	true	radio	Prediction
+Relation	T15	T22	NoRel	true	radio	blive
+Relation	T15	T9	NoRel	true	radio	tornadoer
+Relation	T16	T0	NoRel	true	tornadoen	observerer
+Relation	T16	T1	NoRel	true	tornadoen	rotation
+Relation	T16	T10	NoRel	true	tornadoen	betydning
+Relation	T16	T17	NoRel	true	tornadoen	imponerende
+Relation	T16	T19	NoRel	true	tornadoen	cumulonimbussky
+Relation	T16	T20	NoRel	true	tornadoen	Cumulonimbusskyen
+Relation	T16	T23	NoRel	true	tornadoen	tornados
+Relation	T16	T8	NoRel	true	tornadoen	når
+Relation	T17	T0	NoRel	true	imponerende	observerer
+Relation	T17	T10	NoRel	true	imponerende	betydning
+Relation	T17	T14	NoRel	true	imponerende	sirene
+Relation	T17	T18	NoRel	true	imponerende	skyer
+Relation	T17	T3	NoRel	true	imponerende	varslingssirener
+Relation	T18	T3	NoRel	true	skyer	varslingssirener
+Relation	T18	T6	NoRel	true	skyer	tv melding
+Relation	T19	T5	NoRel	true	cumulonimbussky	tordensky
+Relation	T2	T21	NoRel	true	gang	nå
+Relation	T2	T24	NoRel	true	gang	diameter
+Relation	T2	T3	NoRel	true	gang	varslingssirener
+Relation	T2	T7	NoRel	true	gang	udløses
+Relation	T2	T8	NoRel	true	gang	når
+Relation	T20	T10	NoRel	true	Cumulonimbusskyen	betydning
+Relation	T21	T13	NoRel	true	nå	Tornadoalarm
+Relation	T21	T14	NoRel	true	nå	sirene
+Relation	T21	T24	NoRel	true	nå	diameter
+Relation	T21	T6	NoRel	true	nå	tv melding
+Relation	T21	T9	NoRel	true	nå	tornadoer
+Relation	T22	T5	NoRel	true	blive	tordensky
+Relation	T22	T6	NoRel	true	blive	tv melding
+Relation	T23	T11	NoRel	true	tornados	varslingscenter
+Relation	T23	T12	NoRel	true	tornados	Prediction
+Relation	T23	T18	NoRel	true	tornados	skyer
+Relation	T24	T1	NoRel	true	diameter	rotation
+Relation	T24	T3	NoRel	true	diameter	varslingssirener
+Relation	T3	T1	NoRel	true	varslingssirener	rotation
+Relation	T3	T20	NoRel	true	varslingssirener	Cumulonimbusskyen
+Relation	T3	T24	NoRel	true	varslingssirener	diameter
+Relation	T3	T5	NoRel	true	varslingssirener	tordensky
+Relation	T4	T17	NoRel	true	aktivitet	imponerende
+Relation	T5	T10	NoRel	true	tordensky	betydning
+Relation	T5	T16	NoRel	true	tordensky	tornadoen
+Relation	T5	T9	NoRel	true	tordensky	tornadoer
+Relation	T6	T15	NoRel	true	tv melding	radio
+Relation	T6	T4	NoRel	true	tv melding	aktivitet
+Relation	T6	T5	NoRel	true	tv melding	tordensky
+Relation	T7	T1	NoRel	true	udløses	rotation
+Relation	T7	T4	NoRel	true	udløses	aktivitet
+Relation	T7	T5	NoRel	true	udløses	tordensky
+Relation	T8	T10	NoRel	true	når	betydning
+Relation	T8	T13	NoRel	true	når	Tornadoalarm
+Relation	T8	T21	NoRel	true	når	nå
+Relation	T8	T5	NoRel	true	når	tordensky

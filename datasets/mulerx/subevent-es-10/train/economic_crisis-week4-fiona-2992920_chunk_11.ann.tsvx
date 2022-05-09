@@ -1,0 +1,58 @@
+Text	El 13 de noviembre de 2006 en _ Home and Away _ se le dedicó un episodio a Belinda .	El 17 de noviembre del mismo año , incluyó un montaje especial con escenas de Emmett en su papel de Rebecca Fisher-Nash y al finalizar se dio información acerca de la fundación McGrath Foundation .	El tema y la letra de las canciones se han mantenido igual desde el inicio de la serie , sin embargo se ha ido reduciendo para que haya nuevas versiones de la canción .	El tema fue lanzado como sencillo en el Reino Unido en 1989 y ocupó el puesto número 73 , la pista incluía los temas de apertura y cierre de la serie .	En 1995 se tomaron extractos de la segunda estrofa de la canción para ponerlos en el cierre del programa y en 1996 y el 2004 la canción fue acortada .
+Event	T0	dedicó	EVENT	54
+Event	T1	episodio	EVENT	64
+Event	T2	incluyó	EVENT	120
+Event	T3	montaje	EVENT	131
+Event	T4	escenas	EVENT	152
+Event	T5	información	EVENT	227
+Event	T6	mantenido	EVENT	326
+Event	T7	serie	EVENT	364
+Event	T8	reduciendo	EVENT	394
+Event	T9	versiones	EVENT	426
+Event	T10	lanzado	EVENT	464
+Event	T11	sencillo	EVENT	477
+Event	T12	ocupó	EVENT	514
+Event	T13	incluía	EVENT	551
+Event	T14	apertura	EVENT	572
+Event	T15	cierre	EVENT	583
+Event	T16	tomaron	EVENT	615
+Event	T17	cierre	EVENT	689
+Event	T18	acortada	EVENT	744
+Relation	T10	T12	SuperSub	true	lanzado	ocupó
+Relation	T12	T10	SubSuper	true	ocupó	lanzado
+Relation	T0	T12	NoRel	true	dedicó	ocupó
+Relation	T0	T13	NoRel	true	dedicó	incluía
+Relation	T0	T2	NoRel	true	dedicó	incluyó
+Relation	T0	T3	NoRel	true	dedicó	montaje
+Relation	T0	T4	NoRel	true	dedicó	escenas
+Relation	T0	T5	NoRel	true	dedicó	información
+Relation	T0	T9	NoRel	true	dedicó	versiones
+Relation	T10	T1	NoRel	true	lanzado	episodio
+Relation	T10	T15	NoRel	true	lanzado	cierre
+Relation	T10	T18	NoRel	true	lanzado	acortada
+Relation	T10	T8	NoRel	true	lanzado	reduciendo
+Relation	T11	T0	NoRel	true	sencillo	dedicó
+Relation	T11	T7	NoRel	true	sencillo	serie
+Relation	T12	T15	NoRel	true	ocupó	cierre
+Relation	T13	T4	NoRel	true	incluía	escenas
+Relation	T14	T1	NoRel	true	apertura	episodio
+Relation	T14	T18	NoRel	true	apertura	acortada
+Relation	T15	T16	NoRel	true	cierre	tomaron
+Relation	T15	T18	NoRel	true	cierre	acortada
+Relation	T16	T7	NoRel	true	tomaron	serie
+Relation	T17	T10	NoRel	true	cierre	lanzado
+Relation	T17	T2	NoRel	true	cierre	incluyó
+Relation	T17	T3	NoRel	true	cierre	montaje
+Relation	T2	T17	NoRel	true	incluyó	cierre
+Relation	T3	T4	NoRel	true	montaje	escenas
+Relation	T3	T6	NoRel	true	montaje	mantenido
+Relation	T4	T11	NoRel	true	escenas	sencillo
+Relation	T4	T6	NoRel	true	escenas	mantenido
+Relation	T5	T14	NoRel	true	información	apertura
+Relation	T6	T1	NoRel	true	mantenido	episodio
+Relation	T6	T2	NoRel	true	mantenido	incluyó
+Relation	T6	T3	NoRel	true	mantenido	montaje
+Relation	T7	T10	NoRel	true	serie	lanzado
+Relation	T7	T12	NoRel	true	serie	ocupó
+Relation	T9	T18	NoRel	true	versiones	acortada
+Relation	T9	T6	NoRel	true	versiones	mantenido

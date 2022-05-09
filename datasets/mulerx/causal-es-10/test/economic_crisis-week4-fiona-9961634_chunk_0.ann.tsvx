@@ -1,0 +1,51 @@
+Text	BEST IN THE WORLD 2021 fue el undécimo edición del Best in the World , un evento pago por ver de lucha libre profesional producido por Ring of Honor .	Tuvo lugar el 11 de julio de 2021 desde el Chesapeake Employers Insurance Arena ( anteriormente fue nombrado como UMBC Event Center ) en Baltimore , Maryland , ya que el evento de 2020 fue pospuesto debido a la pandemia de COVID-19 .	Este también fue el primer evento de Ring of Honor desde Gateway to Honor el 29 de febrero de 2020 que contó con la asistencia de fanáticos .	En _ ROH 19th Anniversary Show _ , después de que Rush de La Facción Ingobernable defendiera con éxito el Campeonato Mundial de ROH contra Jay Lethal de The Foundation , Brody King salía para interrumpir las celebraciones posteriores al partido .	A su lado estaban Tony Deppen , Chris Dickinson y la leyenda de ROH Homicide , que comenzaron a devastar tanto a The Foundation ( Lethal , Tracy Williams , Rhett Titus y Jonathan Gresham ) como a LFI ( Rush , Kenny King , Dragon Lee y La Bestia del Ring ) .
+Event	T0	edición	EVENT	39
+Event	T1	pago	EVENT	81
+Event	T2	producido	EVENT	121
+Event	T3	evento	EVENT	321
+Event	T4	pandemia	EVENT	362
+Event	T5	evento	EVENT	412
+Event	T6	contó	EVENT	488
+Event	T7	asistencia	EVENT	501
+Event	T9	defendiera	EVENT	609
+Event	T10	Campeonato	EVENT	633
+Event	T11	salía	EVENT	708
+Event	T12	interrumpir	EVENT	719
+Event	T13	partido	EVENT	764
+Event	T14	leyenda	EVENT	827
+Event	T15	Homicide	EVENT	842
+Event	T16	comenzaron	EVENT	857
+Event	T17	devastar	EVENT	870
+Event	T8	pospuesto	EVENT	340
+Relation	T4	T8	CauseEffect	true	pandemia	pospuesto
+Relation	T8	T4	EffectCause	true	pospuesto	pandemia
+Relation	T0	T11	NoRel	true	edición	salía
+Relation	T1	T11	NoRel	true	pago	salía
+Relation	T10	T17	NoRel	true	Campeonato	devastar
+Relation	T10	T2	NoRel	true	Campeonato	producido
+Relation	T10	T3	NoRel	true	Campeonato	evento
+Relation	T11	T8	NoRel	true	salía	pospuesto
+Relation	T12	T2	NoRel	true	interrumpir	producido
+Relation	T13	T11	NoRel	true	partido	salía
+Relation	T13	T12	NoRel	true	partido	interrumpir
+Relation	T13	T2	NoRel	true	partido	producido
+Relation	T13	T3	NoRel	true	partido	evento
+Relation	T15	T17	NoRel	true	Homicide	devastar
+Relation	T15	T9	NoRel	true	Homicide	defendiera
+Relation	T16	T11	NoRel	true	comenzaron	salía
+Relation	T16	T5	NoRel	true	comenzaron	evento
+Relation	T2	T4	NoRel	true	producido	pandemia
+Relation	T4	T17	NoRel	true	pandemia	devastar
+Relation	T4	T3	NoRel	true	pandemia	evento
+Relation	T5	T1	NoRel	true	evento	pago
+Relation	T5	T13	NoRel	true	evento	partido
+Relation	T5	T14	NoRel	true	evento	leyenda
+Relation	T5	T6	NoRel	true	evento	contó
+Relation	T6	T17	NoRel	true	contó	devastar
+Relation	T7	T12	NoRel	true	asistencia	interrumpir
+Relation	T7	T17	NoRel	true	asistencia	devastar
+Relation	T7	T8	NoRel	true	asistencia	pospuesto
+Relation	T8	T0	NoRel	true	pospuesto	edición
+Relation	T8	T11	NoRel	true	pospuesto	salía
+Relation	T9	T6	NoRel	true	defendiera	contó
+Relation	T9	T7	NoRel	true	defendiera	asistencia

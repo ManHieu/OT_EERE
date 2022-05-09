@@ -1,0 +1,120 @@
+Text	Unos días más tarde la Asociación de Víctimas del accidente de metro de Valencia del 3 de julio de 2006 ( AVM3J ) declaró que consideraba el cambio de nombre como un acto para favorecer el olvido del siniestro ocurrido cuatro años antes , en el que murieron 43 personas y 47 resultaron heridas .	El 1 de marzo de 2012 la estación vio modificado de nuevo su nombre , pasando esta vez a llamarse _ Joaquín Sorolla-Jesús _ , accediendo así parcialmente a la propuesta realizada por los grupos de la oposición ( PSPV , Compromís y Esquerra Unida ) y la AVM3J .	Finalmente , el 30 de junio de 2016 , la estación recuperó su nombre original tras casi seis años de cambios .	El Consell , bajo la presidencia de Ximo Puig ( PSPV ) , anunció el cambio con motivo del décimo aniversario del accidente .	La ley , impulsada por el gobierno valenciano ( PSPV y Compromís ) , publicada en marzo de 2018 , recoge la creación de la _ Agencia Valenciana de Seguridad Ferroviaria _ y una comisión independiente de técnicos para vigilar que dicha norma se cumpla , analizar los incidentes ferroviarios y que investiguen los accidentes en caso de producirse .
+Event	T0	accidente	EVENT	50
+Event	T1	declaró	EVENT	114
+Event	T2	cambio	EVENT	141
+Event	T3	acto	EVENT	166
+Event	T4	favorecer	EVENT	176
+Event	T5	olvido	EVENT	189
+Event	T7	murieron	EVENT	249
+Event	T8	heridas	EVENT	286
+Event	T9	modificado	EVENT	334
+Event	T10	pasando	EVENT	366
+Event	T11	accediendo	EVENT	422
+Event	T12	realizada	EVENT	465
+Event	T13	recuperó	EVENT	607
+Event	T14	cambios	EVENT	658
+Event	T15	presidencia	EVENT	689
+Event	T16	anunció	EVENT	725
+Event	T17	cambio	EVENT	736
+Event	T18	accidente	EVENT	781
+Event	T19	impulsada	EVENT	802
+Event	T20	publicada	EVENT	862
+Event	T21	recoge	EVENT	891
+Event	T22	creación	EVENT	901
+Event	T23	vigilar	EVENT	1010
+Event	T24	cumpla	EVENT	1037
+Event	T25	analizar	EVENT	1046
+Event	T26	incidentes	EVENT	1059
+Event	T27	investiguen	EVENT	1089
+Event	T28	accidentes	EVENT	1105
+Event	T6	siniestro	EVENT	200
+Relation	T6	T8	SuperSub	true	siniestro	heridas
+Relation	T8	T6	SubSuper	true	heridas	siniestro
+Relation	T0	T8	NoRel	true	accidente	heridas
+Relation	T1	T12	NoRel	true	declaró	realizada
+Relation	T1	T3	NoRel	true	declaró	acto
+Relation	T1	T4	NoRel	true	declaró	favorecer
+Relation	T1	T5	NoRel	true	declaró	olvido
+Relation	T1	T6	NoRel	true	declaró	siniestro
+Relation	T10	T1	NoRel	true	pasando	declaró
+Relation	T10	T18	NoRel	true	pasando	accidente
+Relation	T10	T21	NoRel	true	pasando	recoge
+Relation	T10	T4	NoRel	true	pasando	favorecer
+Relation	T11	T23	NoRel	true	accediendo	vigilar
+Relation	T11	T27	NoRel	true	accediendo	investiguen
+Relation	T11	T6	NoRel	true	accediendo	siniestro
+Relation	T11	T7	NoRel	true	accediendo	murieron
+Relation	T12	T0	NoRel	true	realizada	accidente
+Relation	T12	T13	NoRel	true	realizada	recuperó
+Relation	T12	T15	NoRel	true	realizada	presidencia
+Relation	T12	T7	NoRel	true	realizada	murieron
+Relation	T13	T2	NoRel	true	recuperó	cambio
+Relation	T13	T20	NoRel	true	recuperó	publicada
+Relation	T13	T7	NoRel	true	recuperó	murieron
+Relation	T13	T9	NoRel	true	recuperó	modificado
+Relation	T14	T12	NoRel	true	cambios	realizada
+Relation	T14	T4	NoRel	true	cambios	favorecer
+Relation	T15	T14	NoRel	true	presidencia	cambios
+Relation	T15	T5	NoRel	true	presidencia	olvido
+Relation	T16	T10	NoRel	true	anunció	pasando
+Relation	T16	T17	NoRel	true	anunció	cambio
+Relation	T16	T27	NoRel	true	anunció	investiguen
+Relation	T16	T5	NoRel	true	anunció	olvido
+Relation	T17	T14	NoRel	true	cambio	cambios
+Relation	T17	T20	NoRel	true	cambio	publicada
+Relation	T17	T8	NoRel	true	cambio	heridas
+Relation	T18	T10	NoRel	true	accidente	pasando
+Relation	T18	T12	NoRel	true	accidente	realizada
+Relation	T18	T16	NoRel	true	accidente	anunció
+Relation	T18	T26	NoRel	true	accidente	incidentes
+Relation	T18	T5	NoRel	true	accidente	olvido
+Relation	T19	T0	NoRel	true	impulsada	accidente
+Relation	T19	T1	NoRel	true	impulsada	declaró
+Relation	T19	T14	NoRel	true	impulsada	cambios
+Relation	T19	T16	NoRel	true	impulsada	anunció
+Relation	T2	T10	NoRel	true	cambio	pasando
+Relation	T2	T23	NoRel	true	cambio	vigilar
+Relation	T2	T9	NoRel	true	cambio	modificado
+Relation	T20	T0	NoRel	true	publicada	accidente
+Relation	T20	T2	NoRel	true	publicada	cambio
+Relation	T20	T3	NoRel	true	publicada	acto
+Relation	T21	T3	NoRel	true	recoge	acto
+Relation	T22	T15	NoRel	true	creación	presidencia
+Relation	T22	T26	NoRel	true	creación	incidentes
+Relation	T23	T19	NoRel	true	vigilar	impulsada
+Relation	T23	T20	NoRel	true	vigilar	publicada
+Relation	T23	T6	NoRel	true	vigilar	siniestro
+Relation	T23	T7	NoRel	true	vigilar	murieron
+Relation	T23	T8	NoRel	true	vigilar	heridas
+Relation	T24	T1	NoRel	true	cumpla	declaró
+Relation	T24	T11	NoRel	true	cumpla	accediendo
+Relation	T24	T12	NoRel	true	cumpla	realizada
+Relation	T24	T2	NoRel	true	cumpla	cambio
+Relation	T24	T23	NoRel	true	cumpla	vigilar
+Relation	T24	T27	NoRel	true	cumpla	investiguen
+Relation	T24	T28	NoRel	true	cumpla	accidentes
+Relation	T25	T24	NoRel	true	analizar	cumpla
+Relation	T25	T6	NoRel	true	analizar	siniestro
+Relation	T27	T18	NoRel	true	investiguen	accidente
+Relation	T27	T5	NoRel	true	investiguen	olvido
+Relation	T27	T6	NoRel	true	investiguen	siniestro
+Relation	T27	T8	NoRel	true	investiguen	heridas
+Relation	T28	T24	NoRel	true	accidentes	cumpla
+Relation	T28	T27	NoRel	true	accidentes	investiguen
+Relation	T28	T9	NoRel	true	accidentes	modificado
+Relation	T4	T24	NoRel	true	favorecer	cumpla
+Relation	T5	T10	NoRel	true	olvido	pasando
+Relation	T5	T12	NoRel	true	olvido	realizada
+Relation	T5	T15	NoRel	true	olvido	presidencia
+Relation	T5	T16	NoRel	true	olvido	anunció
+Relation	T5	T17	NoRel	true	olvido	cambio
+Relation	T5	T25	NoRel	true	olvido	analizar
+Relation	T5	T26	NoRel	true	olvido	incidentes
+Relation	T5	T8	NoRel	true	olvido	heridas
+Relation	T6	T7	NoRel	true	siniestro	murieron
+Relation	T7	T1	NoRel	true	murieron	declaró
+Relation	T7	T11	NoRel	true	murieron	accediendo
+Relation	T7	T22	NoRel	true	murieron	creación
+Relation	T7	T4	NoRel	true	murieron	favorecer
+Relation	T9	T22	NoRel	true	modificado	creación
+Relation	T9	T27	NoRel	true	modificado	investiguen

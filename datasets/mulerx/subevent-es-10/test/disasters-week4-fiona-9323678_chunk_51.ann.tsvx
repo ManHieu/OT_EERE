@@ -1,0 +1,106 @@
+Text	Dinamarca extiende el cierre de la actividad económica hasta el 7 de febrero para reducir los contagios y el aumento de casos por la nueva variante de Reino Unido .	Cuba anuncia nuevas restricciones para frenar el aumento de casos por COVID-19 , como el cierre de escuelas , bares y restaurantes y la suspensión del transporte público por la noche .	Reino Unido prohíbe la entrada de viajeros de Sudamérica y Portugal por una nueva variante de COVID-19 proveniente de Brasil .	Francia anuncia un toque de queda en todo el país a partir de las 6:00 p.m. por dos semanas a partir del sábado para frenar los contagios de COVID-19 .	Manaus , estado brasileño del Amazonas , anuncia un toque de queda desde las 19:00 hasta las 06:00 por el gran aumento de contagios y muertes que han causado un colapso sanitario y falta de oxígeno para atender a los enfermos .
+Event	T0	extiende	EVENT	10
+Event	T1	cierre	EVENT	22
+Event	T2	reducir	EVENT	82
+Event	T3	contagios	EVENT	94
+Event	T4	aumento	EVENT	109
+Event	T5	variante	EVENT	139
+Event	T6	anuncia	EVENT	170
+Event	T7	restricciones	EVENT	185
+Event	T8	frenar	EVENT	204
+Event	T9	aumento	EVENT	214
+Event	T10	casos	EVENT	225
+Event	T11	cierre	EVENT	254
+Event	T12	suspensión	EVENT	301
+Event	T13	prohíbe	EVENT	362
+Event	T14	entrada	EVENT	373
+Event	T15	anuncia	EVENT	485
+Event	T16	toque	EVENT	496
+Event	T17	queda	EVENT	505
+Event	T18	frenar	EVENT	594
+Event	T19	contagios	EVENT	605
+Event	T20	anuncia	EVENT	670
+Event	T21	queda	EVENT	690
+Event	T22	aumento	EVENT	740
+Event	T23	contagios	EVENT	751
+Event	T24	muertes	EVENT	763
+Event	T25	causado	EVENT	779
+Event	T26	variante	EVENT	432
+Event	T27	colapso	EVENT	790
+Relation	T22	T27	SuperSub	true	aumento	colapso
+Relation	T27	T22	SubSuper	true	colapso	aumento
+Relation	T0	T21	NoRel	true	extiende	queda
+Relation	T1	T17	NoRel	true	cierre	queda
+Relation	T1	T21	NoRel	true	cierre	queda
+Relation	T1	T25	NoRel	true	cierre	causado
+Relation	T1	T26	NoRel	true	cierre	variante
+Relation	T1	T3	NoRel	true	cierre	contagios
+Relation	T1	T7	NoRel	true	cierre	restricciones
+Relation	T10	T11	NoRel	true	casos	cierre
+Relation	T10	T17	NoRel	true	casos	queda
+Relation	T10	T2	NoRel	true	casos	reducir
+Relation	T10	T21	NoRel	true	casos	queda
+Relation	T10	T26	NoRel	true	casos	variante
+Relation	T11	T21	NoRel	true	cierre	queda
+Relation	T12	T1	NoRel	true	suspensión	cierre
+Relation	T12	T20	NoRel	true	suspensión	anuncia
+Relation	T12	T21	NoRel	true	suspensión	queda
+Relation	T12	T24	NoRel	true	suspensión	muertes
+Relation	T13	T1	NoRel	true	prohíbe	cierre
+Relation	T13	T12	NoRel	true	prohíbe	suspensión
+Relation	T13	T15	NoRel	true	prohíbe	anuncia
+Relation	T13	T19	NoRel	true	prohíbe	contagios
+Relation	T13	T8	NoRel	true	prohíbe	frenar
+Relation	T14	T11	NoRel	true	entrada	cierre
+Relation	T14	T12	NoRel	true	entrada	suspensión
+Relation	T14	T13	NoRel	true	entrada	prohíbe
+Relation	T14	T18	NoRel	true	entrada	frenar
+Relation	T14	T21	NoRel	true	entrada	queda
+Relation	T14	T3	NoRel	true	entrada	contagios
+Relation	T14	T9	NoRel	true	entrada	aumento
+Relation	T15	T3	NoRel	true	anuncia	contagios
+Relation	T15	T8	NoRel	true	anuncia	frenar
+Relation	T16	T11	NoRel	true	toque	cierre
+Relation	T16	T12	NoRel	true	toque	suspensión
+Relation	T17	T0	NoRel	true	queda	extiende
+Relation	T17	T14	NoRel	true	queda	entrada
+Relation	T17	T23	NoRel	true	queda	contagios
+Relation	T18	T14	NoRel	true	frenar	entrada
+Relation	T18	T16	NoRel	true	frenar	toque
+Relation	T19	T15	NoRel	true	contagios	anuncia
+Relation	T19	T25	NoRel	true	contagios	causado
+Relation	T2	T13	NoRel	true	reducir	prohíbe
+Relation	T20	T11	NoRel	true	anuncia	cierre
+Relation	T20	T25	NoRel	true	anuncia	causado
+Relation	T21	T17	NoRel	true	queda	queda
+Relation	T21	T27	NoRel	true	queda	colapso
+Relation	T22	T14	NoRel	true	aumento	entrada
+Relation	T22	T16	NoRel	true	aumento	toque
+Relation	T23	T1	NoRel	true	contagios	cierre
+Relation	T23	T18	NoRel	true	contagios	frenar
+Relation	T23	T22	NoRel	true	contagios	aumento
+Relation	T24	T10	NoRel	true	muertes	casos
+Relation	T24	T4	NoRel	true	muertes	aumento
+Relation	T25	T1	NoRel	true	causado	cierre
+Relation	T25	T11	NoRel	true	causado	cierre
+Relation	T25	T17	NoRel	true	causado	queda
+Relation	T27	T14	NoRel	true	colapso	entrada
+Relation	T27	T19	NoRel	true	colapso	contagios
+Relation	T27	T21	NoRel	true	colapso	queda
+Relation	T27	T4	NoRel	true	colapso	aumento
+Relation	T3	T22	NoRel	true	contagios	aumento
+Relation	T4	T18	NoRel	true	aumento	frenar
+Relation	T4	T2	NoRel	true	aumento	reducir
+Relation	T4	T21	NoRel	true	aumento	queda
+Relation	T5	T16	NoRel	true	variante	toque
+Relation	T5	T17	NoRel	true	variante	queda
+Relation	T6	T14	NoRel	true	anuncia	entrada
+Relation	T6	T18	NoRel	true	anuncia	frenar
+Relation	T6	T5	NoRel	true	anuncia	variante
+Relation	T7	T26	NoRel	true	restricciones	variante
+Relation	T7	T5	NoRel	true	restricciones	variante
+Relation	T8	T17	NoRel	true	frenar	queda
+Relation	T8	T25	NoRel	true	frenar	causado
+Relation	T9	T10	NoRel	true	aumento	casos
+Relation	T9	T23	NoRel	true	aumento	contagios
+Relation	T9	T8	NoRel	true	aumento	frenar

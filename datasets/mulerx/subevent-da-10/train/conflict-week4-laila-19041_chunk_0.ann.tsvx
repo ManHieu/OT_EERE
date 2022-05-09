@@ -1,0 +1,43 @@
+Text	thumb|	En laserstyret bombe af type Bolt 117 LGB er en forkortelse for Laser Guided Bomb , en bombe , der kastes fra en flyvemaskine og derpå ledes mod målet ved hjælp af laserstyring .	Bomberne kan enten laves til laserstyring , eller et LGB-kit kan påmonteres 'dumme ' bomber ( konventionelle bomber ) .	Dette kit indeholder styrbare finner og et hoved med en lasersensor .	Belysning af målet ( _tagging_ ) kan også ske af en person på jorden med en _ Laser Designator _ , men normalen er at det sker fra et fly .
+Event	T0	kastes	EVENT	106
+Event	T1	ledes	EVENT	142
+Event	T2	laserstyring	EVENT	171
+Event	T3	laves	EVENT	205
+Event	T4	Belysning	EVENT	376
+Event	T5	ske	EVENT	418
+Event	T6	sker	EVENT	498
+Event	T7	laserstyring	EVENT	215
+Event	T8	påmonteres	EVENT	251
+Event	T9	styrbare	EVENT	327
+Event	T10	lasersensor	EVENT	362
+Event	T11	LGB-kit	EVENT	239
+Event	T12	på jorden	EVENT	435
+Event	T13	laserstyret bombe	EVENT	10
+Relation	T13	T0	SuperSub	true	laserstyret bombe	kastes
+Relation	T0	T13	SubSuper	true	kastes	laserstyret bombe
+Relation	T13	T1	SuperSub	true	laserstyret bombe	ledes
+Relation	T1	T13	SubSuper	true	ledes	laserstyret bombe
+Relation	T11	T9	SuperSub	true	LGB-kit	styrbare
+Relation	T9	T11	SubSuper	true	styrbare	LGB-kit
+Relation	T11	T10	SuperSub	true	LGB-kit	lasersensor
+Relation	T10	T11	SubSuper	true	lasersensor	LGB-kit
+Relation	T0	T9	NoRel	true	kastes	styrbare
+Relation	T10	T12	NoRel	true	lasersensor	på jorden
+Relation	T11	T1	NoRel	true	LGB-kit	ledes
+Relation	T11	T13	NoRel	true	LGB-kit	laserstyret bombe
+Relation	T11	T3	NoRel	true	LGB-kit	laves
+Relation	T12	T6	NoRel	true	på jorden	sker
+Relation	T12	T9	NoRel	true	på jorden	styrbare
+Relation	T13	T3	NoRel	true	laserstyret bombe	laves
+Relation	T2	T3	NoRel	true	laserstyring	laves
+Relation	T2	T6	NoRel	true	laserstyring	sker
+Relation	T3	T13	NoRel	true	laves	laserstyret bombe
+Relation	T3	T2	NoRel	true	laves	laserstyring
+Relation	T3	T7	NoRel	true	laves	laserstyring
+Relation	T5	T6	NoRel	true	ske	sker
+Relation	T5	T7	NoRel	true	ske	laserstyring
+Relation	T6	T2	NoRel	true	sker	laserstyring
+Relation	T6	T4	NoRel	true	sker	Belysning
+Relation	T6	T5	NoRel	true	sker	ske
+Relation	T6	T7	NoRel	true	sker	laserstyring
+Relation	T7	T12	NoRel	true	laserstyring	på jorden

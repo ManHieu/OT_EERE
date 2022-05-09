@@ -1,0 +1,29 @@
+Text	Bu kuşatmada Darth Maul , Emir 66’yı Ahsoka Tano’ya anlatıp onu uyarmaya çalışmıştır fakat Ahsoka , Maul’a inanmamıştır .	Ahsoka Tano ve Komutan Rex bu kuşatmada başarılı olup Maul’u yakalamayı başarmışlardır ama Emir 66 yüzünden Ahsoka ve Rex’in emekleri boşa gitmiştir .	Artık bir Sith Lordu olmayan Maul'u hayatta tutan tek şey , üzerinden ne kadar zaman geçmiş olsa da Ben Kenobiye olan nefretidir .	Kenobi’nin Tatooine’de saklandığını öğrenen Maul , Ezra Bridger’ı kullanarak Ben Kenobi’nin tam olarak nerede saklandığını öğrenir .	Ben Kenobi ile son düellosunu yapan Maul , Kenobinin kollarının arasında ölür .
+Event	T1	gitmiştir	EVENT	261
+Event	T3	öğrenen	EVENT	440
+Event	T4	kullanarak	EVENT	470
+Event	T5	öğrenir	EVENT	527
+Event	T7	ölür	EVENT	610
+Event	T8	kuşatmada	EVENT	3
+Event	T9	çalışmıştır	EVENT	73
+Event	T10	kuşatmada	EVENT	152
+Event	T11	başarmışlardır	EVENT	194
+Event	T2	saklandığını	EVENT	427
+Event	T6	düellosunu	EVENT	556
+Relation	T1	T9	NoRel	true	gitmiştir	çalışmıştır
+Relation	T10	T6	NoRel	true	kuşatmada	düellosunu
+Relation	T10	T9	NoRel	true	kuşatmada	çalışmıştır
+Relation	T11	T7	NoRel	true	başarmışlardır	ölür
+Relation	T2	T1	NoRel	true	saklandığını	gitmiştir
+Relation	T2	T7	NoRel	true	saklandığını	ölür
+Relation	T3	T8	NoRel	true	öğrenen	kuşatmada
+Relation	T4	T9	NoRel	true	kullanarak	çalışmıştır
+Relation	T5	T11	NoRel	true	öğrenir	başarmışlardır
+Relation	T5	T7	NoRel	true	öğrenir	ölür
+Relation	T5	T9	NoRel	true	öğrenir	çalışmıştır
+Relation	T6	T10	NoRel	true	düellosunu	kuşatmada
+Relation	T7	T10	NoRel	true	ölür	kuşatmada
+Relation	T7	T3	NoRel	true	ölür	öğrenen
+Relation	T7	T5	NoRel	true	ölür	öğrenir
+Relation	T8	T6	NoRel	true	kuşatmada	düellosunu
+Relation	T9	T2	NoRel	true	çalışmıştır	saklandığını

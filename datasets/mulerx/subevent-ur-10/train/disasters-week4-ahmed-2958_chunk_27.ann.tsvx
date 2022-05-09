@@ -1,0 +1,28 @@
+Text	ليکن دنيا کے لیے خطرہ بننے والے مسائل کا اجتماعی حل تلاش کرنا ضروری ہے ورنہ توازن بگڑنے کا تمام تر نقصان پوری نوعِ انسانی کو مجموعی طور پر بھگتنا پڑے گا ۔	ہريکين يا_سائيکلون دراصل ايک ديوقامت بگولے سے مشابہ ہوتا ہے جس ميں ہوا ايک بے حد کم دباؤ کے مرکزے کے گرد بڑے حجم ميں قوت کے ساتھ گھومتی ہے اور اس کی رفتار اپنی انتہا کو پہنچ جاتی ہے جو بيرونی اطراف ميں بڑھتا جاتا ہے اور جس کو طوالت مرکز سے 20 يا 30 ميل تک ہوسکتی ہے ۔	مرکز کے گرد گھومنے والی ہوا کا قطر اوسطا 40 کلوميٹر ہوتا ہے ، مگر يہ بعض اوقات بڑھ کر 80 کلوميٹر تک بھی پہنچ جاتا ہے ۔	طوفان کا سب سے خطرناک حصّہ Surge ہوتا ہے ۔	يہ پانی کے ايک عظيم گنبد کی مانند ہوتا ہے جس کی چوڑائی بعض مرتبہ 80 کلوميٹر تک ہوتی ہے اور اس کی راہ ميں آنے والی ساحلی آبادی بُری طرح متاثر ہوتی ہے ۔
+Event	T0	تلاش	EVENT	52
+Event	T1	بگڑنے	EVENT	82
+Event	T2	گھومتی	EVENT	284
+Event	T3	بڑھتا	EVENT	357
+Event	T4	طوفان	EVENT	542
+Event	T5	نقصان	EVENT	99
+Event	T6	خطرہ	EVENT	17
+Event	T7	بننے	EVENT	22
+Event	T8	بھگتنا	EVENT	139
+Event	T9	متاثر	EVENT	720
+Event	T10	پہنچ	EVENT	527
+Event	T11	ہوسکتی	EVENT	411
+Relation	T0	T7	NoRel	true	تلاش	بننے
+Relation	T10	T5	NoRel	true	پہنچ	نقصان
+Relation	T11	T2	NoRel	true	ہوسکتی	گھومتی
+Relation	T2	T11	NoRel	true	گھومتی	ہوسکتی
+Relation	T2	T3	NoRel	true	گھومتی	بڑھتا
+Relation	T2	T5	NoRel	true	گھومتی	نقصان
+Relation	T2	T6	NoRel	true	گھومتی	خطرہ
+Relation	T2	T7	NoRel	true	گھومتی	بننے
+Relation	T3	T10	NoRel	true	بڑھتا	پہنچ
+Relation	T3	T8	NoRel	true	بڑھتا	بھگتنا
+Relation	T7	T8	NoRel	true	بننے	بھگتنا
+Relation	T8	T0	NoRel	true	بھگتنا	تلاش
+Relation	T8	T10	NoRel	true	بھگتنا	پہنچ
+Relation	T8	T9	NoRel	true	بھگتنا	متاثر
+Relation	T9	T2	NoRel	true	متاثر	گھومتی

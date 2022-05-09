@@ -1,0 +1,22 @@
+Text	AZERBAYCAN HAVA YOLLARI'NIN 217 SEFER SAYILI UÇUŞU , 23 Aralık 2005 tarihinde yerel saatle 22.40'da Bakü , Azerbaycan'dan Aktau , Kazakistan'a giderken Hazar Gölü'ne düşmüştür .	Uçuş bir Antonov An - 140 ile gerçekleştiriliyordu .	Gece vakti , Bakü Havalimanı'ndan kalktıktan yaklaşık beş dakika sonra mürettebat bir sistem arızası bildirdi .	Uçuş aletleri olmadan gece vakti Hazar Denizi üzerinde gitmek mürettebatın uçuş parametrelerini doğruluğunu yargılamasını zorlaştırdı .	Bakü'ye geri dönmeye çalışırken , uçak kısa bir süre sonra Hazar Denizi kıyısında düştü .
+Event	T0	UÇUŞU	EVENT	45
+Event	T1	düşmüştür	EVENT	166
+Event	T2	Uçuş	EVENT	178
+Event	T3	gerçekleştiriliyordu	EVENT	208
+Event	T4	bildirdi	EVENT	332
+Event	T5	gitmek	EVENT	398
+Event	T6	uçuş	EVENT	418
+Event	T7	zorlaştırdı	EVENT	465
+Event	T8	düştü	EVENT	561
+Event	T9	kalktıktan	EVENT	265
+Event	T10	arızası	EVENT	324
+Relation	T10	T4	CauseEffect	true	arızası	bildirdi
+Relation	T4	T10	EffectCause	true	bildirdi	arızası
+Relation	T5	T7	CauseEffect	true	gitmek	zorlaştırdı
+Relation	T7	T5	EffectCause	true	zorlaştırdı	gitmek
+Relation	T1	T7	NoRel	true	düşmüştür	zorlaştırdı
+Relation	T2	T1	NoRel	true	Uçuş	düşmüştür
+Relation	T5	T4	NoRel	true	gitmek	bildirdi
+Relation	T7	T3	NoRel	true	zorlaştırdı	gerçekleştiriliyordu
+Relation	T9	T1	NoRel	true	kalktıktan	düşmüştür
+Relation	T9	T2	NoRel	true	kalktıktan	Uçuş

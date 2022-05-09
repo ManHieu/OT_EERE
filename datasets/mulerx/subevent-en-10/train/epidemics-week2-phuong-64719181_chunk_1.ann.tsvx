@@ -1,0 +1,174 @@
+Text	The policy document sets out what must be done to deliver a global response " that leaves no - one behind " , reduces global vulnerability to future pandemics , builds resilience to future shocks , especially climate change , and addresses " the severe and systemic inequalities exposed by the pandemic " .	The document focuses on three main operational approaches , namely delivering a large coordinated and comprehensive response on health ; adopting policies to address the adverse human rights , humanitarian , and socioeconomic , humanitarian effects ; and creating a recovery process that " builds back better " .	As part of the United Nations ' response , the UN Secretary - General has been prominent in ensuring the maintenance of normal UN operations , in launching events , and making in appeals on behalf of the United Nations System , including for the world 's first global ceasefire and for billions of dollars in funding .	He has also defended the WHO 's response to the crisis and fought back against COVID - 19 misinformation .	As the UN 's response became more systematized , he been issuing policy briefs , by theme , population , and region , to aid governments in how to address the consequences of the pandemic .
+Event	T0	done	EVENT	42
+Event	T1	deliver	EVENT	50
+Event	T10	pandemic	EVENT	294
+Event	T11	focuses	EVENT	320
+Event	T12	delivering	EVENT	374
+Event	T13	response	EVENT	423
+Event	T14	adopting	EVENT	444
+Event	T16	creating	EVENT	562
+Event	T17	prominent	EVENT	699
+Event	T18	ensuring	EVENT	712
+Event	T19	maintenance	EVENT	725
+Event	T2	response	EVENT	67
+Event	T20	operations	EVENT	750
+Event	T21	fought	EVENT	998
+Event	T22	making	EVENT	789
+Event	T23	appeals	EVENT	799
+Event	T24	ceasefire	EVENT	888
+Event	T25	defended	EVENT	951
+Event	T26	crisis	EVENT	987
+Event	T27	issuing	EVENT	1103
+Event	T28	pandemic	EVENT	1225
+Event	T29	sets out	EVENT	20
+Event	T3	leaves	EVENT	83
+Event	T30	builds	EVENT	161
+Event	T31	approaches	EVENT	354
+Event	T32	address	EVENT	465
+Event	T33	launching	EVENT	766
+Event	T34	response	EVENT	971
+Event	T35	became	EVENT	1068
+Event	T36	aid	EVENT	1167
+Event	T37	address	EVENT	1193
+Event	T4	reduces	EVENT	110
+Event	T5	pandemics	EVENT	149
+Event	T6	shocks	EVENT	189
+Event	T8	addresses	EVENT	230
+Event	T9	exposed	EVENT	279
+Relation	T29	T1	SuperSub	true	sets out	deliver
+Relation	T1	T29	SubSuper	true	deliver	sets out
+Relation	T31	T13	SuperSub	true	approaches	response
+Relation	T13	T31	SubSuper	true	response	approaches
+Relation	T31	T14	SuperSub	true	approaches	adopting
+Relation	T14	T31	SubSuper	true	adopting	approaches
+Relation	T31	T16	SuperSub	true	approaches	creating
+Relation	T16	T31	SubSuper	true	creating	approaches
+Relation	T31	T12	SuperSub	true	approaches	delivering
+Relation	T12	T31	SubSuper	true	delivering	approaches
+Relation	T0	T10	NoRel	true	done	pandemic
+Relation	T0	T13	NoRel	true	done	response
+Relation	T0	T18	NoRel	true	done	ensuring
+Relation	T0	T4	NoRel	true	done	reduces
+Relation	T0	T5	NoRel	true	done	pandemics
+Relation	T1	T19	NoRel	true	deliver	maintenance
+Relation	T1	T23	NoRel	true	deliver	appeals
+Relation	T1	T25	NoRel	true	deliver	defended
+Relation	T1	T3	NoRel	true	deliver	leaves
+Relation	T1	T32	NoRel	true	deliver	address
+Relation	T1	T33	NoRel	true	deliver	launching
+Relation	T10	T2	NoRel	true	pandemic	response
+Relation	T10	T28	NoRel	true	pandemic	pandemic
+Relation	T11	T18	NoRel	true	focuses	ensuring
+Relation	T11	T2	NoRel	true	focuses	response
+Relation	T11	T5	NoRel	true	focuses	pandemics
+Relation	T12	T0	NoRel	true	delivering	done
+Relation	T12	T21	NoRel	true	delivering	fought
+Relation	T12	T30	NoRel	true	delivering	builds
+Relation	T13	T10	NoRel	true	response	pandemic
+Relation	T13	T14	NoRel	true	response	adopting
+Relation	T13	T20	NoRel	true	response	operations
+Relation	T13	T3	NoRel	true	response	leaves
+Relation	T13	T8	NoRel	true	response	addresses
+Relation	T14	T23	NoRel	true	adopting	appeals
+Relation	T14	T37	NoRel	true	adopting	address
+Relation	T14	T5	NoRel	true	adopting	pandemics
+Relation	T14	T8	NoRel	true	adopting	addresses
+Relation	T16	T12	NoRel	true	creating	delivering
+Relation	T16	T21	NoRel	true	creating	fought
+Relation	T16	T29	NoRel	true	creating	sets out
+Relation	T16	T30	NoRel	true	creating	builds
+Relation	T16	T32	NoRel	true	creating	address
+Relation	T16	T33	NoRel	true	creating	launching
+Relation	T17	T23	NoRel	true	prominent	appeals
+Relation	T17	T24	NoRel	true	prominent	ceasefire
+Relation	T17	T6	NoRel	true	prominent	shocks
+Relation	T18	T1	NoRel	true	ensuring	deliver
+Relation	T18	T10	NoRel	true	ensuring	pandemic
+Relation	T18	T16	NoRel	true	ensuring	creating
+Relation	T18	T19	NoRel	true	ensuring	maintenance
+Relation	T18	T20	NoRel	true	ensuring	operations
+Relation	T18	T23	NoRel	true	ensuring	appeals
+Relation	T18	T25	NoRel	true	ensuring	defended
+Relation	T18	T34	NoRel	true	ensuring	response
+Relation	T18	T36	NoRel	true	ensuring	aid
+Relation	T19	T1	NoRel	true	maintenance	deliver
+Relation	T19	T21	NoRel	true	maintenance	fought
+Relation	T19	T29	NoRel	true	maintenance	sets out
+Relation	T19	T8	NoRel	true	maintenance	addresses
+Relation	T21	T4	NoRel	true	fought	reduces
+Relation	T22	T24	NoRel	true	making	ceasefire
+Relation	T22	T9	NoRel	true	making	exposed
+Relation	T23	T0	NoRel	true	appeals	done
+Relation	T23	T10	NoRel	true	appeals	pandemic
+Relation	T23	T14	NoRel	true	appeals	adopting
+Relation	T23	T16	NoRel	true	appeals	creating
+Relation	T23	T17	NoRel	true	appeals	prominent
+Relation	T23	T26	NoRel	true	appeals	crisis
+Relation	T23	T27	NoRel	true	appeals	issuing
+Relation	T23	T33	NoRel	true	appeals	launching
+Relation	T23	T36	NoRel	true	appeals	aid
+Relation	T24	T12	NoRel	true	ceasefire	delivering
+Relation	T24	T17	NoRel	true	ceasefire	prominent
+Relation	T25	T12	NoRel	true	defended	delivering
+Relation	T25	T24	NoRel	true	defended	ceasefire
+Relation	T25	T34	NoRel	true	defended	response
+Relation	T26	T1	NoRel	true	crisis	deliver
+Relation	T26	T10	NoRel	true	crisis	pandemic
+Relation	T26	T14	NoRel	true	crisis	adopting
+Relation	T26	T19	NoRel	true	crisis	maintenance
+Relation	T27	T0	NoRel	true	issuing	done
+Relation	T27	T10	NoRel	true	issuing	pandemic
+Relation	T27	T12	NoRel	true	issuing	delivering
+Relation	T27	T21	NoRel	true	issuing	fought
+Relation	T27	T29	NoRel	true	issuing	sets out
+Relation	T27	T30	NoRel	true	issuing	builds
+Relation	T27	T36	NoRel	true	issuing	aid
+Relation	T28	T21	NoRel	true	pandemic	fought
+Relation	T29	T12	NoRel	true	sets out	delivering
+Relation	T29	T24	NoRel	true	sets out	ceasefire
+Relation	T29	T28	NoRel	true	sets out	pandemic
+Relation	T29	T32	NoRel	true	sets out	address
+Relation	T3	T16	NoRel	true	leaves	creating
+Relation	T3	T19	NoRel	true	leaves	maintenance
+Relation	T3	T37	NoRel	true	leaves	address
+Relation	T30	T3	NoRel	true	builds	leaves
+Relation	T31	T26	NoRel	true	approaches	crisis
+Relation	T31	T3	NoRel	true	approaches	leaves
+Relation	T31	T5	NoRel	true	approaches	pandemics
+Relation	T32	T33	NoRel	true	address	launching
+Relation	T32	T4	NoRel	true	address	reduces
+Relation	T32	T8	NoRel	true	address	addresses
+Relation	T33	T17	NoRel	true	launching	prominent
+Relation	T33	T20	NoRel	true	launching	operations
+Relation	T34	T2	NoRel	true	response	response
+Relation	T34	T22	NoRel	true	response	making
+Relation	T34	T9	NoRel	true	response	exposed
+Relation	T35	T11	NoRel	true	became	focuses
+Relation	T35	T14	NoRel	true	became	adopting
+Relation	T35	T20	NoRel	true	became	operations
+Relation	T35	T3	NoRel	true	became	leaves
+Relation	T36	T23	NoRel	true	aid	appeals
+Relation	T36	T26	NoRel	true	aid	crisis
+Relation	T37	T14	NoRel	true	address	adopting
+Relation	T37	T24	NoRel	true	address	ceasefire
+Relation	T4	T19	NoRel	true	reduces	maintenance
+Relation	T4	T34	NoRel	true	reduces	response
+Relation	T4	T35	NoRel	true	reduces	became
+Relation	T5	T26	NoRel	true	pandemics	crisis
+Relation	T5	T36	NoRel	true	pandemics	aid
+Relation	T5	T37	NoRel	true	pandemics	address
+Relation	T6	T10	NoRel	true	shocks	pandemic
+Relation	T6	T19	NoRel	true	shocks	maintenance
+Relation	T6	T24	NoRel	true	shocks	ceasefire
+Relation	T6	T35	NoRel	true	shocks	became
+Relation	T6	T37	NoRel	true	shocks	address
+Relation	T8	T14	NoRel	true	addresses	adopting
+Relation	T8	T16	NoRel	true	addresses	creating
+Relation	T8	T21	NoRel	true	addresses	fought
+Relation	T8	T25	NoRel	true	addresses	defended
+Relation	T8	T32	NoRel	true	addresses	address
+Relation	T9	T13	NoRel	true	exposed	response
+Relation	T9	T23	NoRel	true	exposed	appeals
+Relation	T9	T29	NoRel	true	exposed	sets out
+Relation	T9	T35	NoRel	true	exposed	became
+Relation	T9	T36	NoRel	true	exposed	aid

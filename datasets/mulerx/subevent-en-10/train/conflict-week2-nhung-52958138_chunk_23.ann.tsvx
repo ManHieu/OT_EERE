@@ -1,0 +1,83 @@
+Text	On 12 February 2017 , the pro-government / anti-Iohannis protest continued for its 9th day with 400 protesters .	On 9 June 2018 , the ruling Social Democratic Party ( PSD ) organised a pro-government rally in Bucharest , which had over 100,000 attendants .	After receiving negative opinions from the judicial institutions regarding the government ordinance bills , President of Romania Klaus Iohannis stated on 20 January 2017 that the presidency requested the government to withdraw the government proposals .	Following the protests on 22 January 2017 , Klaus Iohannis announced that he would call for a referendum in order for the public opinion to have a say on these controversial issues .	He rebutted Dragnea 's claims of a coup by declaring that PSD was attempting a coup d'état against the rule of law in the country , and that Romanians had the right to vote on these issues , especially since they were not part of PSD 's electoral programme upon which they won the 2016 parliamentary elections .
+Event	T0	continued	EVENT	65
+Event	T1	organised	EVENT	173
+Event	T10	announced	EVENT	570
+Event	T12	referendum	EVENT	605
+Event	T13	say	EVENT	658
+Event	T14	rebutted	EVENT	697
+Event	T15	claims	EVENT	717
+Event	T16	coup	EVENT	729
+Event	T17	declaring	EVENT	737
+Event	T18	attempting	EVENT	760
+Event	T19	coup	EVENT	773
+Event	T2	rally	EVENT	200
+Event	T20	vote	EVENT	862
+Event	T21	won	EVENT	967
+Event	T22	elections	EVENT	994
+Event	T3	opinions	EVENT	282
+Event	T4	stated	EVENT	401
+Event	T5	requested	EVENT	447
+Event	T6	withdraw	EVENT	475
+Event	T7	proposals	EVENT	499
+Event	T8	Following	EVENT	511
+Event	T9	protests	EVENT	525
+Relation	T1	T0	SuperSub	true	organised	continued
+Relation	T0	T1	SubSuper	true	continued	organised
+Relation	T5	T6	SuperSub	true	requested	withdraw
+Relation	T6	T5	SubSuper	true	withdraw	requested
+Relation	T9	T10	SuperSub	true	protests	announced
+Relation	T10	T9	SubSuper	true	announced	protests
+Relation	T0	T16	NoRel	true	continued	coup
+Relation	T0	T20	NoRel	true	continued	vote
+Relation	T0	T3	NoRel	true	continued	opinions
+Relation	T0	T8	NoRel	true	continued	Following
+Relation	T10	T19	NoRel	true	announced	coup
+Relation	T10	T6	NoRel	true	announced	withdraw
+Relation	T12	T10	NoRel	true	referendum	announced
+Relation	T12	T2	NoRel	true	referendum	rally
+Relation	T12	T7	NoRel	true	referendum	proposals
+Relation	T12	T8	NoRel	true	referendum	Following
+Relation	T13	T2	NoRel	true	say	rally
+Relation	T13	T20	NoRel	true	say	vote
+Relation	T13	T3	NoRel	true	say	opinions
+Relation	T14	T16	NoRel	true	rebutted	coup
+Relation	T14	T9	NoRel	true	rebutted	protests
+Relation	T15	T4	NoRel	true	claims	stated
+Relation	T16	T21	NoRel	true	coup	won
+Relation	T16	T9	NoRel	true	coup	protests
+Relation	T17	T19	NoRel	true	declaring	coup
+Relation	T17	T2	NoRel	true	declaring	rally
+Relation	T17	T7	NoRel	true	declaring	proposals
+Relation	T17	T8	NoRel	true	declaring	Following
+Relation	T18	T12	NoRel	true	attempting	referendum
+Relation	T18	T13	NoRel	true	attempting	say
+Relation	T18	T15	NoRel	true	attempting	claims
+Relation	T18	T4	NoRel	true	attempting	stated
+Relation	T19	T6	NoRel	true	coup	withdraw
+Relation	T2	T9	NoRel	true	rally	protests
+Relation	T20	T13	NoRel	true	vote	say
+Relation	T21	T15	NoRel	true	won	claims
+Relation	T21	T20	NoRel	true	won	vote
+Relation	T21	T3	NoRel	true	won	opinions
+Relation	T21	T5	NoRel	true	won	requested
+Relation	T21	T9	NoRel	true	won	protests
+Relation	T22	T15	NoRel	true	elections	claims
+Relation	T22	T9	NoRel	true	elections	protests
+Relation	T3	T10	NoRel	true	opinions	announced
+Relation	T3	T16	NoRel	true	opinions	coup
+Relation	T3	T20	NoRel	true	opinions	vote
+Relation	T3	T21	NoRel	true	opinions	won
+Relation	T3	T5	NoRel	true	opinions	requested
+Relation	T3	T6	NoRel	true	opinions	withdraw
+Relation	T3	T8	NoRel	true	opinions	Following
+Relation	T4	T15	NoRel	true	stated	claims
+Relation	T5	T2	NoRel	true	requested	rally
+Relation	T7	T0	NoRel	true	proposals	continued
+Relation	T7	T1	NoRel	true	proposals	organised
+Relation	T7	T21	NoRel	true	proposals	won
+Relation	T7	T6	NoRel	true	proposals	withdraw
+Relation	T8	T12	NoRel	true	Following	referendum
+Relation	T8	T6	NoRel	true	Following	withdraw
+Relation	T8	T9	NoRel	true	Following	protests
+Relation	T9	T14	NoRel	true	protests	rebutted
+Relation	T9	T8	NoRel	true	protests	Following

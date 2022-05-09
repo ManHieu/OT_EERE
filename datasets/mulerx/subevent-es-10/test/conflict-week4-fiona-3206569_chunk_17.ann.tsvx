@@ -1,0 +1,46 @@
+Text	También proporcionaron informes detallados sobre las posiciones de artillería y fortificaciones norcoreanas en la isla de Wolmido , en Incheon y las islas cercanas .	Durante los extensos periodos de marea baja localizaron y eliminaron algunas de las minas navales del enemigo , pero en un hecho que sería crítico para el éxito de la futura invasión , Clark informó que los norcoreanos no habían minado de forma sistemática los canales .	Cuando los norcoreanos descubrieron que los agentes habían desembarcado en las islas cercanas a Inchon hicieron varios ataques , incluyendo una incursión tentativa contra Yonghung-do con seis juncos .	Clark instaló una ametralladora en un sampan y hundió a los juncos atacantes .	En respuesta , los norcoreanos mataron a unos 50 civiles por ayudar a Clark .
+Event	T0	informes	EVENT	23
+Event	T1	posiciones	EVENT	53
+Event	T2	periodos	EVENT	187
+Event	T3	localizaron	EVENT	210
+Event	T4	eliminaron	EVENT	224
+Event	T5	hecho	EVENT	289
+Event	T6	invasión	EVENT	340
+Event	T7	informó	EVENT	357
+Event	T8	minado	EVENT	395
+Event	T9	desembarcado	EVENT	496
+Event	T10	hicieron	EVENT	540
+Event	T11	ataques	EVENT	556
+Event	T12	tentativa	EVENT	591
+Event	T13	instaló	EVENT	644
+Event	T14	ametralladora	EVENT	656
+Event	T15	hundió	EVENT	685
+Event	T16	mataron	EVENT	748
+Event	T17	ayudar	EVENT	778
+Relation	T0	T10	NoRel	true	informes	hicieron
+Relation	T0	T11	NoRel	true	informes	ataques
+Relation	T10	T14	NoRel	true	hicieron	ametralladora
+Relation	T10	T16	NoRel	true	hicieron	mataron
+Relation	T11	T0	NoRel	true	ataques	informes
+Relation	T11	T12	NoRel	true	ataques	tentativa
+Relation	T11	T2	NoRel	true	ataques	periodos
+Relation	T12	T13	NoRel	true	tentativa	instaló
+Relation	T12	T3	NoRel	true	tentativa	localizaron
+Relation	T13	T8	NoRel	true	instaló	minado
+Relation	T13	T9	NoRel	true	instaló	desembarcado
+Relation	T14	T6	NoRel	true	ametralladora	invasión
+Relation	T15	T4	NoRel	true	hundió	eliminaron
+Relation	T15	T7	NoRel	true	hundió	informó
+Relation	T16	T13	NoRel	true	mataron	instaló
+Relation	T16	T7	NoRel	true	mataron	informó
+Relation	T2	T4	NoRel	true	periodos	eliminaron
+Relation	T2	T8	NoRel	true	periodos	minado
+Relation	T4	T17	NoRel	true	eliminaron	ayudar
+Relation	T4	T2	NoRel	true	eliminaron	periodos
+Relation	T5	T6	NoRel	true	hecho	invasión
+Relation	T6	T3	NoRel	true	invasión	localizaron
+Relation	T8	T15	NoRel	true	minado	hundió
+Relation	T8	T9	NoRel	true	minado	desembarcado
+Relation	T9	T1	NoRel	true	desembarcado	posiciones
+Relation	T9	T11	NoRel	true	desembarcado	ataques
+Relation	T9	T12	NoRel	true	desembarcado	tentativa

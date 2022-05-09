@@ -1,0 +1,52 @@
+Text	Los helicópteros llegaron al sitio del accidente a las 16:40 y se descubrió que ocho de las nueve personas que iban en la nave habían fallecido tras el impacto .	El único sobreviviente fue hallado alrededor de las 09:00 del 9 de septiembre , con una herida en la cabeza y contusiones graves y cinco costillas y un omóplato rotos .	El accidente fue oído por dos Pescadores , quienes informaron a las autoridades de la locación aproximada del impacto .	Se guardó un minuto de silencio en la Asamblea Legislativa Plurinacional de Bolivia en memoria de los fallecidos .	Se reportó que el radiofaro omnidireccional VHF del Aeropuerto de la ciudad de Trinidad estaba fuera de servicio desde el 20 de agosto y que se estaba intentando dar una señal de aproximación sin precisión al momento del accidente .
+Event	T0	llegaron	EVENT	17
+Event	T1	accidente	EVENT	39
+Event	T2	descubrió	EVENT	66
+Event	T3	fallecido	EVENT	134
+Event	T4	impacto	EVENT	152
+Event	T5	hallado	EVENT	189
+Event	T6	herida	EVENT	250
+Event	T8	oído	EVENT	348
+Event	T9	informaron	EVENT	382
+Event	T10	locación	EVENT	417
+Event	T11	impacto	EVENT	441
+Event	T12	guardó	EVENT	454
+Event	T13	fallecidos	EVENT	553
+Event	T14	reportó	EVENT	569
+Event	T15	dar	EVENT	728
+Event	T16	accidente	EVENT	787
+Relation	T1	T2	SuperSub	true	accidente	descubrió
+Relation	T2	T1	SubSuper	true	descubrió	accidente
+Relation	T1	T0	SuperSub	true	accidente	llegaron
+Relation	T0	T1	SubSuper	true	llegaron	accidente
+Relation	T1	T5	SuperSub	true	accidente	hallado
+Relation	T5	T1	SubSuper	true	hallado	accidente
+Relation	T1	T12	SuperSub	true	accidente	guardó
+Relation	T12	T1	SubSuper	true	guardó	accidente
+Relation	T0	T12	NoRel	true	llegaron	guardó
+Relation	T0	T3	NoRel	true	llegaron	fallecido
+Relation	T0	T6	NoRel	true	llegaron	herida
+Relation	T0	T9	NoRel	true	llegaron	informaron
+Relation	T1	T8	NoRel	true	accidente	oído
+Relation	T10	T12	NoRel	true	locación	guardó
+Relation	T11	T1	NoRel	true	impacto	accidente
+Relation	T11	T14	NoRel	true	impacto	reportó
+Relation	T11	T8	NoRel	true	impacto	oído
+Relation	T12	T14	NoRel	true	guardó	reportó
+Relation	T14	T12	NoRel	true	reportó	guardó
+Relation	T15	T13	NoRel	true	dar	fallecidos
+Relation	T15	T14	NoRel	true	dar	reportó
+Relation	T15	T4	NoRel	true	dar	impacto
+Relation	T16	T0	NoRel	true	accidente	llegaron
+Relation	T16	T11	NoRel	true	accidente	impacto
+Relation	T16	T15	NoRel	true	accidente	dar
+Relation	T16	T2	NoRel	true	accidente	descubrió
+Relation	T16	T3	NoRel	true	accidente	fallecido
+Relation	T16	T6	NoRel	true	accidente	herida
+Relation	T2	T11	NoRel	true	descubrió	impacto
+Relation	T3	T1	NoRel	true	fallecido	accidente
+Relation	T3	T2	NoRel	true	fallecido	descubrió
+Relation	T6	T0	NoRel	true	herida	llegaron
+Relation	T6	T4	NoRel	true	herida	impacto
+Relation	T8	T5	NoRel	true	oído	hallado
+Relation	T8	T9	NoRel	true	oído	informaron

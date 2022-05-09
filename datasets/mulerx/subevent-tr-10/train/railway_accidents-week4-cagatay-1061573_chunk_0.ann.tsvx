@@ -1,0 +1,36 @@
+Text	- 11 Haziran , 1962 - Salisberry hemzemin geçit felaketi – En az kırk bir kişi öldü ve yetmiş kişi yaralandı .	Olay Buenos_Aires’in banliyösünde bir ekspres trenin aşırı yüklü otobüse çarpmasıyla meydana geldi .	- 31 Ekim , 1984 - San Justo hemzemin geçit felaketi – En az kırk üç kişi öldü ve yirmi iki kişi yaralandı .	Olay yerel bir otobüsün bir banliyö treniyle çarpışmasıyla meydana geldi .	- 9 Mart , 2008 , Dolores , Buenos Aires – Bir otobüs , bir yolcu treniyle çarpıştı , 17 ölü , en az 35 yaralı .
+Event	T1	öldü	EVENT	79
+Event	T2	yaralandı	EVENT	99
+Event	T3	Olay	EVENT	111
+Event	T5	felaketi	EVENT	256
+Event	T6	öldü	EVENT	286
+Event	T7	yaralandı	EVENT	309
+Event	T8	Olay	EVENT	321
+Event	T10	çarpıştı	EVENT	471
+Event	T11	ölü	EVENT	485
+Event	T12	yaralı	EVENT	500
+Event	T13	felaketi	EVENT	48
+Event	T14	çarpmasıyla	EVENT	184
+Event	T4	çarpışmasıyla	EVENT	366
+Relation	T13	T1	SuperSub	true	felaketi	öldü
+Relation	T1	T13	SubSuper	true	öldü	felaketi
+Relation	T13	T2	SuperSub	true	felaketi	yaralandı
+Relation	T2	T13	SubSuper	true	yaralandı	felaketi
+Relation	T13	T14	SuperSub	true	felaketi	çarpmasıyla
+Relation	T14	T13	SubSuper	true	çarpmasıyla	felaketi
+Relation	T3	T14	SuperSub	true	Olay	çarpmasıyla
+Relation	T14	T3	SubSuper	true	çarpmasıyla	Olay
+Relation	T5	T6	SuperSub	true	felaketi	öldü
+Relation	T6	T5	SubSuper	true	öldü	felaketi
+Relation	T5	T7	SuperSub	true	felaketi	yaralandı
+Relation	T7	T5	SubSuper	true	yaralandı	felaketi
+Relation	T5	T4	SuperSub	true	felaketi	çarpışmasıyla
+Relation	T4	T5	SubSuper	true	çarpışmasıyla	felaketi
+Relation	T1	T3	NoRel	true	öldü	Olay
+Relation	T11	T5	NoRel	true	ölü	felaketi
+Relation	T13	T3	NoRel	true	felaketi	Olay
+Relation	T14	T2	NoRel	true	çarpmasıyla	yaralandı
+Relation	T3	T7	NoRel	true	Olay	yaralandı
+Relation	T6	T11	NoRel	true	öldü	ölü
+Relation	T6	T13	NoRel	true	öldü	felaketi
+Relation	T7	T6	NoRel	true	yaralandı	öldü

@@ -1,0 +1,50 @@
+Text	2003ء میں عراق پر اتحادی افواج کے حملے کے ہفتوں بعد امریکی افواج نے دار الحکومت بغداد کی جانب پیش قدمی کی اور شہر کے جنوبی علاقوں میں عراقی افواج کی کمزور مزاحمت کے بعد 5 اپریل کو بغداد کے ہوائی اڈے پر قبضہ کرنے میں کامیاب ہو گئے ۔	دو روز بعد صدام حسین کے محلات پر قبضہ کرتے ہوئے وہاں چھاؤنیاں قائم کیں ۔	محلات پر قبضے اور اس کی خبر پوری دنیا میں نشر ہونے کے بعد امریکی افواج نے بغداد میں عراقی افواج کو ہتھیار ڈالنے کی ہدایت کی اور بصورت دیگر شہر پر دھاوا بولنے کی دھمکی دی ۔	عراقی حکومت کے عہدیداران اپنی روپوش تھے اور 9 اپریل 2003ء کو عراق کا دار الحکومت بغداد ایک مرتبہ پھر بیرونی حملہ آوروں کا نشانہ بن گیا اور صدام حسین کی حکومت کے خاتمے کا باقاعدہ اعلان کر دیا گیا ۔	اس موقع پر جس واقعے کی سب سے زیادہ تشہیر کی گئی وہ وسطی بغداد میں صدر صدام حسین کے مجسمے کی زمین بوسی تھی ۔
+Event	T0	حملے	EVENT	34
+Event	T1	مزاحمت	EVENT	155
+Event	T2	کرنے	EVENT	207
+Event	T3	کامیاب	EVENT	216
+Event	T4	قبضے	EVENT	314
+Event	T5	خبر	EVENT	329
+Event	T6	ہونے	EVENT	351
+Event	T7	بولنے	EVENT	457
+Event	T8	دی	EVENT	472
+Event	T9	روپوش	EVENT	507
+Event	T10	حملہ	EVENT	585
+Event	T11	خاتمے	EVENT	638
+Event	T12	اعلان	EVENT	655
+Event	T13	واقعے	EVENT	688
+Event	T14	تشہیر	EVENT	709
+Event	T15	بوسی	EVENT	771
+Relation	T11	T10	SuperSub	true	خاتمے	حملہ
+Relation	T10	T11	SubSuper	true	حملہ	خاتمے
+Relation	T11	T12	SuperSub	true	خاتمے	اعلان
+Relation	T12	T11	SubSuper	true	اعلان	خاتمے
+Relation	T11	T13	SuperSub	true	خاتمے	واقعے
+Relation	T13	T11	SubSuper	true	واقعے	خاتمے
+Relation	T11	T14	SuperSub	true	خاتمے	تشہیر
+Relation	T14	T11	SubSuper	true	تشہیر	خاتمے
+Relation	T11	T15	SuperSub	true	خاتمے	بوسی
+Relation	T15	T11	SubSuper	true	بوسی	خاتمے
+Relation	T0	T1	NoRel	true	حملے	مزاحمت
+Relation	T0	T14	NoRel	true	حملے	تشہیر
+Relation	T0	T2	NoRel	true	حملے	کرنے
+Relation	T1	T5	NoRel	true	مزاحمت	خبر
+Relation	T11	T6	NoRel	true	خاتمے	ہونے
+Relation	T12	T2	NoRel	true	اعلان	کرنے
+Relation	T13	T3	NoRel	true	واقعے	کامیاب
+Relation	T13	T5	NoRel	true	واقعے	خبر
+Relation	T15	T10	NoRel	true	بوسی	حملہ
+Relation	T15	T2	NoRel	true	بوسی	کرنے
+Relation	T15	T9	NoRel	true	بوسی	روپوش
+Relation	T2	T13	NoRel	true	کرنے	واقعے
+Relation	T2	T7	NoRel	true	کرنے	بولنے
+Relation	T3	T2	NoRel	true	کامیاب	کرنے
+Relation	T3	T6	NoRel	true	کامیاب	ہونے
+Relation	T4	T14	NoRel	true	قبضے	تشہیر
+Relation	T6	T4	NoRel	true	ہونے	قبضے
+Relation	T6	T9	NoRel	true	ہونے	روپوش
+Relation	T7	T15	NoRel	true	بولنے	بوسی
+Relation	T7	T4	NoRel	true	بولنے	قبضے
+Relation	T9	T14	NoRel	true	روپوش	تشہیر
+Relation	T9	T15	NoRel	true	روپوش	بوسی
+Relation	T9	T2	NoRel	true	روپوش	کرنے

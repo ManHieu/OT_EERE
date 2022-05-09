@@ -1,0 +1,53 @@
+Text	El 11 de marzo de 2020 , se anunció que Pagano y Chessman participarían en una Lucha de Cabellera vs. Cabellera en Triplemanía .	Los dos pelearían en la conferencia de prensa de Triplemanía luego del anuncio del combate .	El 26 de octubre de 2020 , durante una conferencia de prensa virtual , AAA anunció que se habían asociado con Marvel Comics para promover la nueva línea Funko Pop de _ Marvel Lucha Libre Edition _ .	Como parte de la asociación , AAA albergará una lucha de exhibición de parejas de Marvel en _ Triplemanía _ , que enfrentará a Aracno y Leyenda Americana contra Terror Púrpura y Venenoide ; los cuatro personajes aparecen en la línea Lucha Libre Edition .	Triplemanía XXVIII se planeó originalmente para tener como tema el _ torneo Héroe o Villano _ , que habría presentado luchadores de los socios estadounidenses de AAA , AEW e Impact Wrestling .
+Event	T0	anunció	EVENT	28
+Event	T1	participarían	EVENT	58
+Event	T10	promover	EVENT	351
+Event	T11	asociación	EVENT	438
+Event	T12	albergará	EVENT	455
+Event	T14	exhibición	EVENT	478
+Event	T15	enfrentará	EVENT	535
+Event	T16	aparecen	EVENT	633
+Event	T17	Lucha	EVENT	654
+Event	T18	planeó	EVENT	698
+Event	T19	presentado	EVENT	783
+Event	T2	Lucha	EVENT	79
+Event	T3	pelearían	EVENT	137
+Event	T4	conferencia	EVENT	153
+Event	T5	anuncio	EVENT	200
+Event	T6	combate	EVENT	212
+Event	T7	conferencia	EVENT	261
+Event	T8	anunció	EVENT	297
+Event	T9	asociado	EVENT	319
+Relation	T9	T10	CauseEffect	true	asociado	promover
+Relation	T10	T9	EffectCause	true	promover	asociado
+Relation	T0	T11	NoRel	true	anunció	asociación
+Relation	T10	T5	NoRel	true	promover	anuncio
+Relation	T11	T8	NoRel	true	asociación	anunció
+Relation	T12	T11	NoRel	true	albergará	asociación
+Relation	T12	T7	NoRel	true	albergará	conferencia
+Relation	T14	T11	NoRel	true	exhibición	asociación
+Relation	T15	T18	NoRel	true	enfrentará	planeó
+Relation	T15	T5	NoRel	true	enfrentará	anuncio
+Relation	T16	T11	NoRel	true	aparecen	asociación
+Relation	T16	T4	NoRel	true	aparecen	conferencia
+Relation	T16	T7	NoRel	true	aparecen	conferencia
+Relation	T17	T9	NoRel	true	Lucha	asociado
+Relation	T18	T12	NoRel	true	planeó	albergará
+Relation	T19	T1	NoRel	true	presentado	participarían
+Relation	T19	T15	NoRel	true	presentado	enfrentará
+Relation	T19	T18	NoRel	true	presentado	planeó
+Relation	T2	T12	NoRel	true	Lucha	albergará
+Relation	T3	T0	NoRel	true	pelearían	anunció
+Relation	T3	T5	NoRel	true	pelearían	anuncio
+Relation	T4	T1	NoRel	true	conferencia	participarían
+Relation	T5	T12	NoRel	true	anuncio	albergará
+Relation	T5	T16	NoRel	true	anuncio	aparecen
+Relation	T6	T14	NoRel	true	combate	exhibición
+Relation	T6	T4	NoRel	true	combate	conferencia
+Relation	T6	T7	NoRel	true	combate	conferencia
+Relation	T7	T5	NoRel	true	conferencia	anuncio
+Relation	T8	T5	NoRel	true	anunció	anuncio
+Relation	T9	T17	NoRel	true	asociado	Lucha
+Relation	T9	T18	NoRel	true	asociado	planeó
+Relation	T9	T19	NoRel	true	asociado	presentado
+Relation	T9	T6	NoRel	true	asociado	combate

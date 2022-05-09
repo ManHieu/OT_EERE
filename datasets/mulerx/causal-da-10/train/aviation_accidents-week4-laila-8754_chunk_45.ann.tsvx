@@ -1,0 +1,54 @@
+Text	En lille del af al-Qaeda's totale udgifter , der sandsynligvis er $ 30 millioner om året , blev finansieret af Osama bin Laden's personlige formue .	En stor del af finansieringen synes dog at være kommet som donationer fra Golflandene , og donorene har måske ikke været vidende om donationernes endelige mål .	Ifølge CIA har også arabiske /islamiske hjælpeorganisationer , med for ringe regnskabskontrol , været udnyttet , f.eks. den saudiarabiske al Haramain Islamiske Fond , ligesom organisationen _ al Wafa _ har kanaliseret penge til al-Qaeda , måske med viden om onde hensigter , da al-Qaeda kontrollerede organisationen .	I dagene efter terrorangrebet opstod der talrige typer af chikane og racerelateret kriminalitet , også kaldet hate crime , mod folk fra Mellemøsten .	Sikhere var også mål for chikaner , fordi de mandlige sikhere ofte bærer turban , hvilket tit blev forbundet med muslimer .
+Event	T0	finansieret	EVENT	96
+Event	T1	synes	EVENT	179
+Event	T2	kommet	EVENT	197
+Event	T3	udnyttet	EVENT	412
+Event	T4	kanaliseret	EVENT	516
+Event	T5	kontrollerede	EVENT	597
+Event	T6	opstod	EVENT	658
+Event	T7	chikane	EVENT	686
+Event	T8	bærer	EVENT	845
+Event	T9	forbundet	EVENT	877
+Event	T10	udgifter	EVENT	34
+Event	T11	vidende	EVENT	270
+Event	T12	terrorangrebet	EVENT	643
+Event	T13	kriminalitet	EVENT	711
+Event	T14	hate crime	EVENT	738
+Event	T15	chikaner	EVENT	803
+Event	T16	mål	EVENT	795
+Relation	T5	T4	CauseEffect	true	kontrollerede	kanaliseret
+Relation	T4	T5	EffectCause	true	kanaliseret	kontrollerede
+Relation	T8	T15	CauseEffect	true	bærer	chikaner
+Relation	T15	T8	EffectCause	true	chikaner	bærer
+Relation	T0	T3	NoRel	true	finansieret	udnyttet
+Relation	T0	T5	NoRel	true	finansieret	kontrollerede
+Relation	T1	T16	NoRel	true	synes	mål
+Relation	T1	T4	NoRel	true	synes	kanaliseret
+Relation	T1	T9	NoRel	true	synes	forbundet
+Relation	T10	T2	NoRel	true	udgifter	kommet
+Relation	T10	T4	NoRel	true	udgifter	kanaliseret
+Relation	T10	T5	NoRel	true	udgifter	kontrollerede
+Relation	T11	T9	NoRel	true	vidende	forbundet
+Relation	T12	T14	NoRel	true	terrorangrebet	hate crime
+Relation	T12	T16	NoRel	true	terrorangrebet	mål
+Relation	T13	T1	NoRel	true	kriminalitet	synes
+Relation	T13	T10	NoRel	true	kriminalitet	udgifter
+Relation	T14	T10	NoRel	true	hate crime	udgifter
+Relation	T15	T11	NoRel	true	chikaner	vidende
+Relation	T15	T12	NoRel	true	chikaner	terrorangrebet
+Relation	T15	T7	NoRel	true	chikaner	chikane
+Relation	T16	T0	NoRel	true	mål	finansieret
+Relation	T16	T10	NoRel	true	mål	udgifter
+Relation	T16	T12	NoRel	true	mål	terrorangrebet
+Relation	T2	T15	NoRel	true	kommet	chikaner
+Relation	T4	T7	NoRel	true	kanaliseret	chikane
+Relation	T5	T1	NoRel	true	kontrollerede	synes
+Relation	T5	T10	NoRel	true	kontrollerede	udgifter
+Relation	T5	T13	NoRel	true	kontrollerede	kriminalitet
+Relation	T6	T4	NoRel	true	opstod	kanaliseret
+Relation	T7	T2	NoRel	true	chikane	kommet
+Relation	T7	T9	NoRel	true	chikane	forbundet
+Relation	T8	T10	NoRel	true	bærer	udgifter
+Relation	T8	T11	NoRel	true	bærer	vidende
+Relation	T8	T4	NoRel	true	bærer	kanaliseret
+Relation	T9	T12	NoRel	true	forbundet	terrorangrebet

@@ -1,0 +1,119 @@
+Text	In a comparative study of the two tragedies published in 1991 , political scientist Robert Entman points out that with KAL 007 , " the angle taken by the US media emphasised the moral bankruptcy and guilt of the perpetrating nation .	With Iran Air 655 , the frame de-emphasised guilt and focused on the complex problems of operating military high technology " .	Since the aircraft had departed from U.S. soil and U.S. nationals had died in the incident , the National Transportation Safety Board ( NTSB ) was legally required to investigate .	On the morning of September 1 , the NTSB chief in Alaska , James Michelangelo , received an order from the NTSB in Washington at the behest of the State Department requiring all documents relating to the NTSB investigation to be sent to Washington , and notifying him that the State Department would now conduct the investigation .	The U.S. State Department , after closing the NTSB investigation on the grounds that it was not an accident , pursued an ICAO investigation instead .
+Event	T0	study	EVENT	17
+Event	T1	published	EVENT	44
+Event	T2	taken	EVENT	141
+Event	T3	emphasised	EVENT	163
+Event	T4	bankruptcy	EVENT	184
+Event	T5	guilt	EVENT	199
+Event	T6	perpetrating	EVENT	212
+Event	T7	guilt	EVENT	278
+Event	T8	operating	EVENT	323
+Event	T9	departed	EVENT	385
+Event	T10	died	EVENT	432
+Event	T11	incident	EVENT	444
+Event	T12	required	EVENT	517
+Event	T13	investigate	EVENT	529
+Event	T14	received	EVENT	623
+Event	T15	order	EVENT	635
+Event	T16	requiring	EVENT	707
+Event	T17	investigation	EVENT	752
+Event	T18	sent	EVENT	772
+Event	T19	notifying	EVENT	797
+Event	T20	conduct	EVENT	847
+Event	T21	investigation	EVENT	859
+Event	T22	closing	EVENT	909
+Event	T23	investigation	EVENT	926
+Event	T24	accident	EVENT	974
+Event	T25	pursued	EVENT	985
+Event	T26	investigation	EVENT	1001
+Event	T27	tragedies	EVENT	34
+Event	T28	de-emphasised	EVENT	264
+Event	T29	focused on	EVENT	288
+Event	T30	complex problems	EVENT	303
+Relation	T29	T28	SuperSub	true	focused on	de-emphasised
+Relation	T28	T29	SubSuper	true	de-emphasised	focused on
+Relation	T10	T9	SuperSub	true	died	departed
+Relation	T9	T10	SubSuper	true	departed	died
+Relation	T16	T18	SuperSub	true	requiring	sent
+Relation	T18	T16	SubSuper	true	sent	requiring
+Relation	T16	T20	SuperSub	true	requiring	conduct
+Relation	T20	T16	SubSuper	true	conduct	requiring
+Relation	T0	T17	NoRel	true	study	investigation
+Relation	T0	T18	NoRel	true	study	sent
+Relation	T0	T24	NoRel	true	study	accident
+Relation	T1	T0	NoRel	true	published	study
+Relation	T1	T19	NoRel	true	published	notifying
+Relation	T1	T26	NoRel	true	published	investigation
+Relation	T1	T29	NoRel	true	published	focused on
+Relation	T1	T4	NoRel	true	published	bankruptcy
+Relation	T1	T7	NoRel	true	published	guilt
+Relation	T10	T0	NoRel	true	died	study
+Relation	T10	T19	NoRel	true	died	notifying
+Relation	T10	T25	NoRel	true	died	pursued
+Relation	T10	T7	NoRel	true	died	guilt
+Relation	T11	T19	NoRel	true	incident	notifying
+Relation	T11	T27	NoRel	true	incident	tragedies
+Relation	T12	T0	NoRel	true	required	study
+Relation	T12	T27	NoRel	true	required	tragedies
+Relation	T12	T30	NoRel	true	required	complex problems
+Relation	T13	T0	NoRel	true	investigate	study
+Relation	T14	T8	NoRel	true	received	operating
+Relation	T15	T4	NoRel	true	order	bankruptcy
+Relation	T16	T1	NoRel	true	requiring	published
+Relation	T17	T11	NoRel	true	investigation	incident
+Relation	T17	T23	NoRel	true	investigation	investigation
+Relation	T17	T25	NoRel	true	investigation	pursued
+Relation	T18	T1	NoRel	true	sent	published
+Relation	T18	T27	NoRel	true	sent	tragedies
+Relation	T19	T13	NoRel	true	notifying	investigate
+Relation	T19	T25	NoRel	true	notifying	pursued
+Relation	T19	T27	NoRel	true	notifying	tragedies
+Relation	T19	T4	NoRel	true	notifying	bankruptcy
+Relation	T19	T5	NoRel	true	notifying	guilt
+Relation	T2	T14	NoRel	true	taken	received
+Relation	T2	T18	NoRel	true	taken	sent
+Relation	T2	T22	NoRel	true	taken	closing
+Relation	T2	T23	NoRel	true	taken	investigation
+Relation	T2	T4	NoRel	true	taken	bankruptcy
+Relation	T2	T8	NoRel	true	taken	operating
+Relation	T20	T24	NoRel	true	conduct	accident
+Relation	T20	T8	NoRel	true	conduct	operating
+Relation	T21	T17	NoRel	true	investigation	investigation
+Relation	T22	T11	NoRel	true	closing	incident
+Relation	T22	T8	NoRel	true	closing	operating
+Relation	T23	T1	NoRel	true	investigation	published
+Relation	T23	T8	NoRel	true	investigation	operating
+Relation	T24	T17	NoRel	true	accident	investigation
+Relation	T24	T22	NoRel	true	accident	closing
+Relation	T25	T28	NoRel	true	pursued	de-emphasised
+Relation	T25	T3	NoRel	true	pursued	emphasised
+Relation	T26	T5	NoRel	true	investigation	guilt
+Relation	T26	T6	NoRel	true	investigation	perpetrating
+Relation	T27	T11	NoRel	true	tragedies	incident
+Relation	T27	T23	NoRel	true	tragedies	investigation
+Relation	T27	T28	NoRel	true	tragedies	de-emphasised
+Relation	T28	T0	NoRel	true	de-emphasised	study
+Relation	T28	T11	NoRel	true	de-emphasised	incident
+Relation	T28	T5	NoRel	true	de-emphasised	guilt
+Relation	T29	T11	NoRel	true	focused on	incident
+Relation	T29	T24	NoRel	true	focused on	accident
+Relation	T29	T7	NoRel	true	focused on	guilt
+Relation	T3	T11	NoRel	true	emphasised	incident
+Relation	T3	T5	NoRel	true	emphasised	guilt
+Relation	T30	T19	NoRel	true	complex problems	notifying
+Relation	T30	T2	NoRel	true	complex problems	taken
+Relation	T30	T4	NoRel	true	complex problems	bankruptcy
+Relation	T30	T7	NoRel	true	complex problems	guilt
+Relation	T4	T14	NoRel	true	bankruptcy	received
+Relation	T4	T19	NoRel	true	bankruptcy	notifying
+Relation	T4	T6	NoRel	true	bankruptcy	perpetrating
+Relation	T5	T15	NoRel	true	guilt	order
+Relation	T5	T21	NoRel	true	guilt	investigation
+Relation	T5	T22	NoRel	true	guilt	closing
+Relation	T5	T28	NoRel	true	guilt	de-emphasised
+Relation	T7	T4	NoRel	true	guilt	bankruptcy
+Relation	T7	T8	NoRel	true	guilt	operating
+Relation	T8	T29	NoRel	true	operating	focused on
+Relation	T9	T18	NoRel	true	departed	sent
+Relation	T9	T19	NoRel	true	departed	notifying
+Relation	T9	T2	NoRel	true	departed	taken

@@ -1,0 +1,43 @@
+Text	Acetoneperoxid kan detonere ved antændelse eller ved stød .	TATP er et hjemmelavet sprængstof der er populært blandt terrorister .	Grundet dets ustabilitet kaldes det også for SATANS_MOR .	Omkring 1993 var det på mode blandt studerende på Danmarks Tekniske Universitet ( det daværende Danmarks Tekniske Højskole ) at fremstille bomber af TATP som de lærte om på rusture og i _ The Terrorist's Handbook _ hentet via modem .	I den forbindelse skete flere uheld .
+Event	T0	detonere	EVENT	19
+Event	T1	antændelse	EVENT	32
+Event	T2	stød	EVENT	53
+Event	T3	kaldes	EVENT	156
+Event	T4	lærte	EVENT	350
+Event	T5	hentet	EVENT	404
+Event	T6	skete	EVENT	441
+Event	T7	uheld	EVENT	453
+Event	T8	populært	EVENT	101
+Event	T9	hjemmelavet	EVENT	71
+Event	T10	ustabilitet	EVENT	144
+Event	T11	fremstille	EVENT	317
+Event	T12	mode	EVENT	213
+Relation	T1	T0	CauseEffect	true	antændelse	detonere
+Relation	T0	T1	EffectCause	true	detonere	antændelse
+Relation	T2	T0	CauseEffect	true	stød	detonere
+Relation	T0	T2	EffectCause	true	detonere	stød
+Relation	T10	T3	CauseEffect	true	ustabilitet	kaldes
+Relation	T3	T10	EffectCause	true	kaldes	ustabilitet
+Relation	T12	T11	CauseEffect	true	mode	fremstille
+Relation	T11	T12	EffectCause	true	fremstille	mode
+Relation	T4	T11	CauseEffect	true	lærte	fremstille
+Relation	T11	T4	EffectCause	true	fremstille	lærte
+Relation	T5	T11	CauseEffect	true	hentet	fremstille
+Relation	T11	T5	EffectCause	true	fremstille	hentet
+Relation	T11	T7	CauseEffect	true	fremstille	uheld
+Relation	T7	T11	EffectCause	true	uheld	fremstille
+Relation	T1	T2	NoRel	true	antændelse	stød
+Relation	T1	T3	NoRel	true	antændelse	kaldes
+Relation	T11	T10	NoRel	true	fremstille	ustabilitet
+Relation	T11	T8	NoRel	true	fremstille	populært
+Relation	T12	T8	NoRel	true	mode	populært
+Relation	T2	T8	NoRel	true	stød	populært
+Relation	T3	T1	NoRel	true	kaldes	antændelse
+Relation	T3	T4	NoRel	true	kaldes	lærte
+Relation	T4	T0	NoRel	true	lærte	detonere
+Relation	T6	T0	NoRel	true	skete	detonere
+Relation	T6	T3	NoRel	true	skete	kaldes
+Relation	T7	T2	NoRel	true	uheld	stød
+Relation	T7	T4	NoRel	true	uheld	lærte
+Relation	T7	T8	NoRel	true	uheld	populært
+Relation	T8	T9	NoRel	true	populært	hjemmelavet

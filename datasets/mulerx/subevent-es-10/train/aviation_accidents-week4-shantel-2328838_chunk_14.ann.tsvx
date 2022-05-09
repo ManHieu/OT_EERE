@@ -1,0 +1,31 @@
+Text	Los aviones pueden continuar aterrizando , mientras los despegues están determinados por la cola en punto de espera ) .	Se notificó que la visibilidad en el momento del accidente era muy mala .	Había relámpagos , fuertes vientos racheados y granizo a la vez , y la lluvia comenzó a caer justo en el momento en que el avión estaba aterrizando .	Después de dos horas los vientos habían pasado de 5 a 30 km/h ( 3 a 20 mph ) y la temperatura cayó de 30 a 23 ° C ( 86 a 74 ° F ) .	Un aviso de tormentas peligrosas estaba en vigor desde las 11:30 a.m .
+Event	T1	despegues	EVENT	56
+Event	T4	notificó	EVENT	123
+Event	T5	accidente	EVENT	169
+Event	T6	relámpagos	EVENT	200
+Event	T8	comenzó	EVENT	272
+Event	T9	caer	EVENT	282
+Event	T10	aterrizando	EVENT	330
+Event	T11	vientos	EVENT	369
+Event	T12	pasado	EVENT	384
+Event	T13	cayó	EVENT	438
+Event	T14	aviso	EVENT	479
+Event	T2	vientos	EVENT	221
+Relation	T6	T4	SuperSub	true	relámpagos	notificó
+Relation	T4	T6	SubSuper	true	notificó	relámpagos
+Relation	T1	T10	NoRel	true	despegues	aterrizando
+Relation	T1	T2	NoRel	true	despegues	vientos
+Relation	T11	T13	NoRel	true	vientos	cayó
+Relation	T11	T5	NoRel	true	vientos	accidente
+Relation	T12	T4	NoRel	true	pasado	notificó
+Relation	T13	T10	NoRel	true	cayó	aterrizando
+Relation	T13	T6	NoRel	true	cayó	relámpagos
+Relation	T4	T12	NoRel	true	notificó	pasado
+Relation	T4	T8	NoRel	true	notificó	comenzó
+Relation	T4	T9	NoRel	true	notificó	caer
+Relation	T5	T10	NoRel	true	accidente	aterrizando
+Relation	T5	T12	NoRel	true	accidente	pasado
+Relation	T5	T13	NoRel	true	accidente	cayó
+Relation	T5	T14	NoRel	true	accidente	aviso
+Relation	T6	T14	NoRel	true	relámpagos	aviso
+Relation	T9	T13	NoRel	true	caer	cayó

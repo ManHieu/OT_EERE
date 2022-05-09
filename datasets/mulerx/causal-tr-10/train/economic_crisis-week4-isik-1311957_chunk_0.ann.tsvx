@@ -1,0 +1,18 @@
+Text	WASALU MUHAMMAD JACO ( d. 16 Şubat 1982 ) , sahne adı ile LUPE FIASCO ( ) , Amerikalı rapçi ve 1st and 15th Entertainment şirketinin CEO'sudur .	Aynı zamanda gerçek adını kullanarak post punk grubu Japanese Cartoon'un solistliğini yapmaktadır .	Chicago'da büyüyen Jaco , ilk başta sözlerinin kaba içeriğinden dolayı hip hop'tan hoşlanmasa da sonraları bu türle ilgilenmeye başladı .	Lupe Fiasco adını alarak babasının bodrumunda şarkılar kaydetmeye başladı ve Da Pak adında bir gruba katıldı .	Grup kısa süre sonra dağılırken ; Fiasco Jay- Z ile tanıştı ve Atlantic Records ile anlaşma yapma fırsatı yakaladı .
+Event	T0	büyüyen	EVENT	256
+Event	T1	katıldı	EVENT	484
+Event	T2	dağılırken	EVENT	515
+Event	T3	tanıştı	EVENT	546
+Event	T4	yakaladı	EVENT	600
+Event	T5	başladı	EVENT	373
+Event	T6	başladı	EVENT	449
+Relation	T5	T6	CauseEffect	true	başladı	başladı
+Relation	T6	T5	EffectCause	true	başladı	başladı
+Relation	T5	T1	CauseEffect	true	başladı	katıldı
+Relation	T1	T5	EffectCause	true	katıldı	başladı
+Relation	T1	T2	CauseEffect	true	katıldı	dağılırken
+Relation	T2	T1	EffectCause	true	dağılırken	katıldı
+Relation	T0	T2	NoRel	true	büyüyen	dağılırken
+Relation	T0	T4	NoRel	true	büyüyen	yakaladı
+Relation	T2	T0	NoRel	true	dağılırken	büyüyen
+Relation	T3	T4	NoRel	true	tanıştı	yakaladı

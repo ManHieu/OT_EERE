@@ -1,0 +1,28 @@
+Text	En la línea de Madrid a Irún , entre las estaciones de Robledo de Chavela y Santa María de la Alameda se produce el choque entre una doble composición de automotores TER que desde Madrid se dirigía a La Coruña y Vigo y un tractor de maniobras que circulaba aislado .	El accidente tuvo un balance de 28 víctimas mortales y alrededor de 80 heridos .	- 13 de julio de 1968 .	A la salida de la Estación de Medina del Campo ( Valladolid ) el expreso Coruña_–_Madrid choca con un tren de mercancías .	El accidente causa 9 muertos y más de 60 heridos .
+Event	T0	produce	EVENT	105
+Event	T1	choque	EVENT	116
+Event	T2	composición	EVENT	139
+Event	T3	dirigía	EVENT	190
+Event	T4	tuvo	EVENT	280
+Event	T5	balance	EVENT	288
+Event	T6	heridos	EVENT	338
+Event	T7	salida	EVENT	377
+Event	T8	choca	EVENT	461
+Event	T9	muertos	EVENT	516
+Event	T10	heridos	EVENT	536
+Event	T11	accidente	EVENT	270
+Event	T12	víctimas	EVENT	302
+Event	T13	accidente	EVENT	498
+Relation	T0	T10	NoRel	true	produce	heridos
+Relation	T12	T4	NoRel	true	víctimas	tuvo
+Relation	T12	T7	NoRel	true	víctimas	salida
+Relation	T2	T6	NoRel	true	composición	heridos
+Relation	T2	T8	NoRel	true	composición	choca
+Relation	T3	T2	NoRel	true	dirigía	composición
+Relation	T3	T5	NoRel	true	dirigía	balance
+Relation	T3	T8	NoRel	true	dirigía	choca
+Relation	T5	T10	NoRel	true	balance	heridos
+Relation	T6	T10	NoRel	true	heridos	heridos
+Relation	T7	T6	NoRel	true	salida	heridos
+Relation	T7	T9	NoRel	true	salida	muertos
+Relation	T9	T12	NoRel	true	muertos	víctimas

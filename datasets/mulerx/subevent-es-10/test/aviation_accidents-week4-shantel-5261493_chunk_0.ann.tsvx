@@ -1,0 +1,40 @@
+Text	El VUELO 120 DE TAME fue un Boeing 727-134 , con registro HC-BLF , con nombre _ El Oro _ operando un vuelo de pasajeros entre Quito , Ecuador y Cali , Colombia , con escala en Tulcán .	La aeronave se estrelló en el intento de aterrizaje al Aeropuerto Internacional Teniente Luis Mantilla en Tulcán el 28 de enero de 2002 .	El piloto , en el aterrizaje , reportó brumosas condiciones y voló contra el Volcán Cumbal , localizado cerca de Ipiales , Colombia , a las 10:23 de la mañana .	Todos los pasajeros y tripulación murieron en el accidente .	El Boeing 727-100 partió de Quito a las 10:03 hora local , despegando de la Pista 17 .
+Event	T0	registro	EVENT	49
+Event	T1	operando	EVENT	89
+Event	T2	vuelo	EVENT	101
+Event	T3	escala	EVENT	166
+Event	T4	intento	EVENT	215
+Event	T5	aterrizaje	EVENT	226
+Event	T6	aterrizaje	EVENT	341
+Event	T7	voló	EVENT	385
+Event	T8	murieron	EVENT	518
+Event	T9	accidente	EVENT	533
+Event	T10	partió	EVENT	563
+Event	T11	despegando	EVENT	604
+Event	T12	VUELO	EVENT	3
+Event	T13	estrelló	EVENT	200
+Relation	T12	T13	SuperSub	true	VUELO	estrelló
+Relation	T13	T12	SubSuper	true	estrelló	VUELO
+Relation	T0	T4	NoRel	true	registro	intento
+Relation	T10	T5	NoRel	true	partió	aterrizaje
+Relation	T11	T4	NoRel	true	despegando	intento
+Relation	T12	T1	NoRel	true	VUELO	operando
+Relation	T12	T10	NoRel	true	VUELO	partió
+Relation	T12	T7	NoRel	true	VUELO	voló
+Relation	T13	T9	NoRel	true	estrelló	accidente
+Relation	T2	T5	NoRel	true	vuelo	aterrizaje
+Relation	T3	T6	NoRel	true	escala	aterrizaje
+Relation	T4	T2	NoRel	true	intento	vuelo
+Relation	T4	T6	NoRel	true	intento	aterrizaje
+Relation	T5	T1	NoRel	true	aterrizaje	operando
+Relation	T5	T10	NoRel	true	aterrizaje	partió
+Relation	T5	T13	NoRel	true	aterrizaje	estrelló
+Relation	T5	T3	NoRel	true	aterrizaje	escala
+Relation	T6	T3	NoRel	true	aterrizaje	escala
+Relation	T6	T9	NoRel	true	aterrizaje	accidente
+Relation	T7	T10	NoRel	true	voló	partió
+Relation	T7	T9	NoRel	true	voló	accidente
+Relation	T8	T12	NoRel	true	murieron	VUELO
+Relation	T8	T5	NoRel	true	murieron	aterrizaje
+Relation	T9	T11	NoRel	true	accidente	despegando
+Relation	T9	T4	NoRel	true	accidente	intento

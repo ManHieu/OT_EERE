@@ -1,0 +1,45 @@
+Text	Önceden de iki kuşatmayı başarılı şekilde püskürtmüş olan kent saldırıya hazırdı ve surlar güçlendirilmiş , kimi bölgelerde patlayıcılarla desteklenmişti .	27 bin kişilik müttefik ordusu şehri tamamen kuşatmış olmasına rağmen mevsimsel yağışlar nedeniyle muhasara için istihkâm faaliyetleri zorlukla yürütülebilmekteydi .	Kaleye karşı açılan tünel vb istihkâm girişimleri zaman zaman saldıran Fransızların müdahalesi nedeniyle kesintiye uğruyordu .	İki büyük topun gelmesiyle birlikte dövülmeye başlayan sur kompleksinde bir bölgede ele geçirilen mevzi sayesinde istihkâmcılar ana surların altını kazarak ilerleme şansı elde etmişlerdi .	Surlarda açılan gediklerin de etkisiyle Wellington 6 Nisan 1812 günü gece saat 22 sularında şehre saldırı emri verir .
+Event	T0	püskürtmüş	EVENT	42
+Event	T1	hazırdı	EVENT	73
+Event	T2	güçlendirilmiş	EVENT	91
+Event	T3	desteklenmişti	EVENT	139
+Event	T4	kuşatmış	EVENT	201
+Event	T5	yağışlar	EVENT	236
+Event	T6	faaliyetleri	EVENT	278
+Event	T7	açılan	EVENT	335
+Event	T8	girişimleri	EVENT	360
+Event	T9	müdahalesi	EVENT	406
+Event	T10	başlayan	EVENT	495
+Event	T11	geçirilen	EVENT	537
+Event	T12	açılan	EVENT	647
+Event	T13	verir	EVENT	749
+Event	T14	kazarak	EVENT	597
+Relation	T5	T6	CauseEffect	true	yağışlar	faaliyetleri
+Relation	T6	T5	EffectCause	true	faaliyetleri	yağışlar
+Relation	T9	T8	CauseEffect	true	müdahalesi	girişimleri
+Relation	T8	T9	EffectCause	true	girişimleri	müdahalesi
+Relation	T11	T14	CauseEffect	true	geçirilen	kazarak
+Relation	T14	T11	EffectCause	true	kazarak	geçirilen
+Relation	T12	T13	CauseEffect	true	açılan	verir
+Relation	T13	T12	EffectCause	true	verir	açılan
+Relation	T0	T12	NoRel	true	püskürtmüş	açılan
+Relation	T0	T5	NoRel	true	püskürtmüş	yağışlar
+Relation	T0	T8	NoRel	true	püskürtmüş	girişimleri
+Relation	T1	T2	NoRel	true	hazırdı	güçlendirilmiş
+Relation	T10	T12	NoRel	true	başlayan	açılan
+Relation	T10	T6	NoRel	true	başlayan	faaliyetleri
+Relation	T11	T5	NoRel	true	geçirilen	yağışlar
+Relation	T11	T7	NoRel	true	geçirilen	açılan
+Relation	T12	T10	NoRel	true	açılan	başlayan
+Relation	T12	T11	NoRel	true	açılan	geçirilen
+Relation	T2	T0	NoRel	true	güçlendirilmiş	püskürtmüş
+Relation	T2	T11	NoRel	true	güçlendirilmiş	geçirilen
+Relation	T2	T6	NoRel	true	güçlendirilmiş	faaliyetleri
+Relation	T3	T0	NoRel	true	desteklenmişti	püskürtmüş
+Relation	T4	T14	NoRel	true	kuşatmış	kazarak
+Relation	T4	T2	NoRel	true	kuşatmış	güçlendirilmiş
+Relation	T4	T7	NoRel	true	kuşatmış	açılan
+Relation	T5	T0	NoRel	true	yağışlar	püskürtmüş
+Relation	T5	T13	NoRel	true	yağışlar	verir
+Relation	T6	T7	NoRel	true	faaliyetleri	açılan
+Relation	T9	T1	NoRel	true	müdahalesi	hazırdı

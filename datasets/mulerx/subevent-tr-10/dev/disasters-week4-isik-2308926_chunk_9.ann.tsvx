@@ -1,0 +1,37 @@
+Text	Muson sezonu bozuldu ve Yangtze Vadisi'nde aşırı sele dönüştü .	Hindistan'da gecikmiş yaz musonu , şiddetli yağışlara neden oldu ve böylelikle kolera , Bengal'deki Ganj yakınındaki bir bölgeden Moskova'ya kadar yayılmaya başladı .	1782 -1788 yılları arasındaki soğuk hava ile ilgili Büyük Tenmei kıtlığından sonra dikkatli olmaya çalışan Japonya'da mahsuller soğuktan hasar gördü fakat mahsullerdeki hasar resmî olarak belirtilmedi ve hava nüfus üzerinde olumsuz etkiler gösterdi .	küçükresim | 175px | Grönland'dan gelen buz çekirdeği içerisindeki sülfat konsantrasyonu .	1810'dan önce bilinmeyen bir patlama meydana geldi .
+Event	T0	bozuldu	EVENT	13
+Event	T1	dönüştü	EVENT	54
+Event	T4	oldu	EVENT	124
+Event	T5	başladı	EVENT	221
+Event	T6	gördü	EVENT	374
+Event	T7	gösterdi	EVENT	471
+Event	T8	konsantrasyonu	EVENT	556
+Event	T9	geldi	EVENT	618
+Event	T3	musonu	EVENT	90
+Event	T2	kıtlığından	EVENT	296
+Event	T10	soğuk	EVENT	261
+Event	T11	çalışan	EVENT	330
+Event	T12	soğuktan	EVENT	359
+Event	T13	patlama	EVENT	602
+Relation	T0	T2	NoRel	true	bozuldu	kıtlığından
+Relation	T0	T5	NoRel	true	bozuldu	başladı
+Relation	T0	T8	NoRel	true	bozuldu	konsantrasyonu
+Relation	T1	T5	NoRel	true	dönüştü	başladı
+Relation	T1	T6	NoRel	true	dönüştü	gördü
+Relation	T10	T12	NoRel	true	soğuk	soğuktan
+Relation	T11	T0	NoRel	true	çalışan	bozuldu
+Relation	T11	T9	NoRel	true	çalışan	geldi
+Relation	T12	T11	NoRel	true	soğuktan	çalışan
+Relation	T12	T4	NoRel	true	soğuktan	oldu
+Relation	T12	T5	NoRel	true	soğuktan	başladı
+Relation	T2	T7	NoRel	true	kıtlığından	gösterdi
+Relation	T2	T8	NoRel	true	kıtlığından	konsantrasyonu
+Relation	T3	T2	NoRel	true	musonu	kıtlığından
+Relation	T4	T3	NoRel	true	oldu	musonu
+Relation	T5	T7	NoRel	true	başladı	gösterdi
+Relation	T6	T0	NoRel	true	gördü	bozuldu
+Relation	T6	T2	NoRel	true	gördü	kıtlığından
+Relation	T7	T13	NoRel	true	gösterdi	patlama
+Relation	T7	T8	NoRel	true	gösterdi	konsantrasyonu
+Relation	T8	T4	NoRel	true	konsantrasyonu	oldu
+Relation	T9	T0	NoRel	true	geldi	bozuldu

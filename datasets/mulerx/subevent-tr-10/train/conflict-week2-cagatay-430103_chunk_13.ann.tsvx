@@ -1,0 +1,21 @@
+Text	Talha ve Zübeyr’i de yanına aldı ve birlikte Ali’nin hilâfetinden memnun olmayanların çoğunlukta olduğunu düşündükleri Basra şehrine gittiler .	Aişe , Osman’ın öldürülmesinden önce Osman için “ O kitabın hükmünü çiğnemiştir ” derken Osman’ın öldürülüp yerine Ali’nin seçildiğini duyunca “ Mazlum olarak öldürülmüştür " dedi .	Talha ve Zübeyr ise Osman hayatta iken onu eleştirmişler ve aleyhinde bulunmuşlar , başlangıçta Ali’ye biat etmişler , fakat umdukları valilik taleplerine olumlu cevap alamayınca ona karşı tavır almışlardı .	Basra Valisi Abdullah ile Talha ve Zübeyr’in Mekke’ye gidip hac dolayısıyla burada bulunan Aişe’ye katılmaları ve Osman’ın kanını talep etmek üzere bir araya gelmeleri , Emevi Oğulları için bulunmaz bir fırsattı .	Bu arada Ali , kendisine ilk tepki Muaviye’den geldiğinden ona karşı savaş hazırlığı yapıyordu .
+Event	T1	talep	EVENT	664
+Event	T10	öldürülüp	EVENT	242
+Event	T11	seçildiğini	EVENT	267
+Event	T13	eleştirmişler	EVENT	369
+Event	T18	gidip	EVENT	588
+Event	T2	tepki	EVENT	777
+Event	T20	katılmaları	EVENT	633
+Event	T3	yapıyordu	EVENT	833
+Event	T4	aldı	EVENT	28
+Event	T8	gittiler	EVENT	133
+Event	T9	çiğnemiştir	EVENT	212
+Relation	T1	T8	NoRel	true	talep	gittiler
+Relation	T11	T10	NoRel	true	seçildiğini	öldürülüp
+Relation	T13	T1	NoRel	true	eleştirmişler	talep
+Relation	T13	T10	NoRel	true	eleştirmişler	öldürülüp
+Relation	T13	T9	NoRel	true	eleştirmişler	çiğnemiştir
+Relation	T4	T13	NoRel	true	aldı	eleştirmişler
+Relation	T8	T1	NoRel	true	gittiler	talep
+Relation	T8	T9	NoRel	true	gittiler	çiğnemiştir
+Relation	T9	T18	NoRel	true	çiğnemiştir	gidip

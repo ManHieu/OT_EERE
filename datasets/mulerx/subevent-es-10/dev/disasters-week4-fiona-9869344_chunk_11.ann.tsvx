@@ -1,0 +1,54 @@
+Text	El 17 de abril se levantó la Señal # 2 para Catanduanes y toda la isla de Samar .	PAGASA también emitió avisos de inundaciones para tres regiones de Visayas y Mindanao .	En preparación para las intensas lluvias , la Comisión Nacional de Telecomunicaciones ordenó a las empresas de telecomunicaciones que preparen instalaciones en las áreas afectadas pronosticadas , incluidas estaciones de carga y llamadas gratuitas .	En la subsiguiente suspensión de viajes , 2.507 personas y 61 embarcaciones marítimas quedaron varadas en puertos de todo el país .	Ya el 17 de abril , comenzó la evacuación preventiva en la región de Bicol y la provincia de Samar , y para el 21 de abril , 169.072 personas fueron evacuadas en el valle de Cagayán , la región de Bicol , Visayas del este y Caraga .
+Event	T0	levantó	EVENT	18
+Event	T1	Señal	EVENT	29
+Event	T2	avisos	EVENT	104
+Event	T3	inundaciones	EVENT	114
+Event	T4	preparación	EVENT	173
+Event	T5	lluvias	EVENT	203
+Event	T6	ordenó	EVENT	256
+Event	T7	preparen	EVENT	304
+Event	T8	pronosticadas	EVENT	350
+Event	T9	carga	EVENT	390
+Event	T10	suspensión	EVENT	438
+Event	T11	viajes	EVENT	452
+Event	T12	varadas	EVENT	514
+Event	T13	comenzó	EVENT	571
+Event	T14	preventiva	EVENT	593
+Event	T15	evacuadas	EVENT	700
+Event	T16	evacuación	EVENT	582
+Relation	T4	T10	SuperSub	true	preparación	suspensión
+Relation	T10	T4	SubSuper	true	suspensión	preparación
+Relation	T10	T12	SuperSub	true	suspensión	varadas
+Relation	T12	T10	SubSuper	true	varadas	suspensión
+Relation	T0	T5	NoRel	true	levantó	lluvias
+Relation	T0	T6	NoRel	true	levantó	ordenó
+Relation	T1	T4	NoRel	true	Señal	preparación
+Relation	T10	T0	NoRel	true	suspensión	levantó
+Relation	T10	T11	NoRel	true	suspensión	viajes
+Relation	T10	T13	NoRel	true	suspensión	comenzó
+Relation	T10	T14	NoRel	true	suspensión	preventiva
+Relation	T10	T3	NoRel	true	suspensión	inundaciones
+Relation	T10	T9	NoRel	true	suspensión	carga
+Relation	T13	T1	NoRel	true	comenzó	Señal
+Relation	T13	T9	NoRel	true	comenzó	carga
+Relation	T14	T12	NoRel	true	preventiva	varadas
+Relation	T14	T13	NoRel	true	preventiva	comenzó
+Relation	T14	T6	NoRel	true	preventiva	ordenó
+Relation	T14	T8	NoRel	true	preventiva	pronosticadas
+Relation	T16	T14	NoRel	true	evacuación	preventiva
+Relation	T2	T0	NoRel	true	avisos	levantó
+Relation	T2	T4	NoRel	true	avisos	preparación
+Relation	T3	T0	NoRel	true	inundaciones	levantó
+Relation	T5	T11	NoRel	true	lluvias	viajes
+Relation	T5	T12	NoRel	true	lluvias	varadas
+Relation	T5	T6	NoRel	true	lluvias	ordenó
+Relation	T5	T7	NoRel	true	lluvias	preparen
+Relation	T6	T12	NoRel	true	ordenó	varadas
+Relation	T6	T2	NoRel	true	ordenó	avisos
+Relation	T6	T3	NoRel	true	ordenó	inundaciones
+Relation	T6	T7	NoRel	true	ordenó	preparen
+Relation	T6	T8	NoRel	true	ordenó	pronosticadas
+Relation	T6	T9	NoRel	true	ordenó	carga
+Relation	T7	T5	NoRel	true	preparen	lluvias
+Relation	T9	T11	NoRel	true	carga	viajes
+Relation	T9	T13	NoRel	true	carga	comenzó

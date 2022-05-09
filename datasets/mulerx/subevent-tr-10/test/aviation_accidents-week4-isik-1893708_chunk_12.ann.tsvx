@@ -1,0 +1,72 @@
+Text	Bu belgelere göre Halid Şeyh Muhammed üzerinde 183 defa waterboarding tekniği uygulanmıştı .	Birkaç gün sonra , " sorgulama programı hakkında bilgisi olan bir ABD yetkilisi " ile Fox News muhabirinin yaptığı görüşmede yetkili , 183 sayısının waterboarding sırasında Muhammed'in suratına dökülen su sayısı olduğunu ve bir su dökme işleminin birkaç saniye sürdüğünü belirterek , Muhammed'in Uluslararası Kızılhaç Komitesi yetkililerine yaptığı açıklamayı da hatırlatarak kendisine beş waterboarding seansı yapıldığını ifade etti .	Kasım 2005'te , İnsan Hakları İzleme Örgütü tarafından yayınlanan bir raporla CIA'in Polonya ve Romanya'da gizli hapishaneleri olduğunu ortaya çıkarmasından birkaç hafta sonra bu tesislerin faaliyetlerine son verildi ve Halid Şeyh Muhammed'in de içinde bulunduğu el - Kaide'nin üst düzey isimleri olduğu öne sürülen 11 tutuklunun Kuzey Afrika çöllerindeki bir CIA tesisine nakledildiği hükûmet yetkililerince açıklandı .	Amerika Birleşik Devletleri Başkanı George W. Bush 6 Eylül 2006 günü yaptığı açıklamayla gizli CIA hapishanelerinin varlığını kabul ederken Halid Şeyh Muhammed'in de aralarında bulunduğu bazı tutukluların Küba'daki Guantanamo Kampı'na nakledildiğini ve yargı sürecinin başlayacağını belirtti .	Mart 2007'de , Savaşçı Statüsünün Gözden Geçirilmesi Mahkemesi'ndeki duruşmalar gerçekleştirilmeye başlandı .
+Event	T0	uygulanmıştı	EVENT	78
+Event	T1	görüşmede	EVENT	208
+Event	T2	waterboarding	EVENT	242
+Event	T3	dökülen	EVENT	287
+Event	T4	belirterek	EVENT	364
+Event	T5	etti	EVENT	522
+Event	T6	yayınlanan	EVENT	584
+Event	T7	çıkarmasından	EVENT	672
+Event	T8	verildi	EVENT	738
+Event	T9	nakledildiği	EVENT	902
+Event	T10	açıklandı	EVENT	938
+Event	T11	kabul	EVENT	1076
+Event	T12	nakledildiğini	EVENT	1185
+Event	T13	belirtti	EVENT	1233
+Event	T14	başlandı	EVENT	1343
+Event	T15	waterboarding	EVENT	56
+Event	T16	sorgulama	EVENT	114
+Event	T17	işleminin	EVENT	330
+Event	T18	açıklamayı	EVENT	442
+Event	T19	waterboarding	EVENT	483
+Event	T20	yapıldığını	EVENT	504
+Event	T21	açıklamayla	EVENT	1027
+Event	T22	Geçirilmesi	EVENT	1285
+Relation	T0	T10	NoRel	true	uygulanmıştı	açıklandı
+Relation	T0	T2	NoRel	true	uygulanmıştı	waterboarding
+Relation	T0	T6	NoRel	true	uygulanmıştı	yayınlanan
+Relation	T0	T7	NoRel	true	uygulanmıştı	çıkarmasından
+Relation	T1	T0	NoRel	true	görüşmede	uygulanmıştı
+Relation	T10	T14	NoRel	true	açıklandı	başlandı
+Relation	T10	T22	NoRel	true	açıklandı	Geçirilmesi
+Relation	T11	T17	NoRel	true	kabul	işleminin
+Relation	T11	T18	NoRel	true	kabul	açıklamayı
+Relation	T11	T20	NoRel	true	kabul	yapıldığını
+Relation	T12	T10	NoRel	true	nakledildiğini	açıklandı
+Relation	T13	T16	NoRel	true	belirtti	sorgulama
+Relation	T14	T1	NoRel	true	başlandı	görüşmede
+Relation	T14	T18	NoRel	true	başlandı	açıklamayı
+Relation	T15	T1	NoRel	true	waterboarding	görüşmede
+Relation	T15	T3	NoRel	true	waterboarding	dökülen
+Relation	T16	T1	NoRel	true	sorgulama	görüşmede
+Relation	T16	T15	NoRel	true	sorgulama	waterboarding
+Relation	T16	T21	NoRel	true	sorgulama	açıklamayla
+Relation	T16	T22	NoRel	true	sorgulama	Geçirilmesi
+Relation	T17	T19	NoRel	true	işleminin	waterboarding
+Relation	T17	T22	NoRel	true	işleminin	Geçirilmesi
+Relation	T17	T6	NoRel	true	işleminin	yayınlanan
+Relation	T18	T1	NoRel	true	açıklamayı	görüşmede
+Relation	T18	T10	NoRel	true	açıklamayı	açıklandı
+Relation	T18	T12	NoRel	true	açıklamayı	nakledildiğini
+Relation	T18	T4	NoRel	true	açıklamayı	belirterek
+Relation	T19	T1	NoRel	true	waterboarding	görüşmede
+Relation	T19	T13	NoRel	true	waterboarding	belirtti
+Relation	T2	T22	NoRel	true	waterboarding	Geçirilmesi
+Relation	T20	T8	NoRel	true	yapıldığını	verildi
+Relation	T22	T12	NoRel	true	Geçirilmesi	nakledildiğini
+Relation	T22	T13	NoRel	true	Geçirilmesi	belirtti
+Relation	T3	T17	NoRel	true	dökülen	işleminin
+Relation	T4	T19	NoRel	true	belirterek	waterboarding
+Relation	T4	T3	NoRel	true	belirterek	dökülen
+Relation	T4	T5	NoRel	true	belirterek	etti
+Relation	T4	T7	NoRel	true	belirterek	çıkarmasından
+Relation	T6	T10	NoRel	true	yayınlanan	açıklandı
+Relation	T6	T17	NoRel	true	yayınlanan	işleminin
+Relation	T7	T20	NoRel	true	çıkarmasından	yapıldığını
+Relation	T7	T5	NoRel	true	çıkarmasından	etti
+Relation	T7	T6	NoRel	true	çıkarmasından	yayınlanan
+Relation	T9	T17	NoRel	true	nakledildiği	işleminin
+Relation	T9	T19	NoRel	true	nakledildiği	waterboarding
+Relation	T9	T2	NoRel	true	nakledildiği	waterboarding
+Relation	T9	T21	NoRel	true	nakledildiği	açıklamayla
+Relation	T9	T6	NoRel	true	nakledildiği	yayınlanan

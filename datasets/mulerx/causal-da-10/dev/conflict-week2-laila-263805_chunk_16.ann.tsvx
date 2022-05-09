@@ -1,0 +1,34 @@
+Text	thumbnail | Ernst Toller i 1917	Ved udråbelsen af rådsrepublikken overtog den 26-årige Ernst Toller ledelsen af centralrådet fra Ernst Niekisch og blev således det formelle statsoverhoved i den nyudråbte republik .	De mest indflydelsesrige personligheder i den nyetablerede Rådsrepublik var udover Toller anarkisterne Gustav Landauer ( som folkekommisær for folkeoplysning ) , Erich Mühsam ( den havde bragt sig selv i forslag som folkekommisær ofr udenrigsanliggender , hvilket Toller og Landauer dog afviste ) og Silvio Gesell ( som folkekommissær for republikkens finanser ) .	I kredsen om disse færdedes - med den marxistiske historiker Arthur Rosenbergs ord - " dunkle eventyrere , med delvist åbenlyse [[patologi ] ske træk " , der bidrog med simpel ineffektivitet eller forvirring , hvilket kompromitterede rådsrepublikken og bragte udenforstående , der sympatiserede med republikken , i miskredit .	Folkekommisæren
+Event	T0	udråbelsen	EVENT	36
+Event	T1	overtog	EVENT	66
+Event	T10	bragte	EVENT	833
+Event	T11	sympatiserede	EVENT	861
+Event	T12	miskredit	EVENT	895
+Event	T2	bragt	EVENT	402
+Event	T3	forslag	EVENT	419
+Event	T4	afviste	EVENT	502
+Event	T5	færdedes	EVENT	599
+Event	T7	bidrog	EVENT	738
+Event	T8	forvirring	EVENT	777
+Event	T9	kompromitterede	EVENT	798
+Relation	T0	T1	CauseEffect	true	udråbelsen	overtog
+Relation	T1	T0	EffectCause	true	overtog	udråbelsen
+Relation	T7	T9	CauseEffect	true	bidrog	kompromitterede
+Relation	T9	T7	EffectCause	true	kompromitterede	bidrog
+Relation	T8	T9	CauseEffect	true	forvirring	kompromitterede
+Relation	T9	T8	EffectCause	true	kompromitterede	forvirring
+Relation	T9	T12	CauseEffect	true	kompromitterede	miskredit
+Relation	T12	T9	EffectCause	true	miskredit	kompromitterede
+Relation	T11	T12	CauseEffect	true	sympatiserede	miskredit
+Relation	T12	T11	EffectCause	true	miskredit	sympatiserede
+Relation	T1	T3	NoRel	true	overtog	forslag
+Relation	T10	T1	NoRel	true	bragte	overtog
+Relation	T12	T2	NoRel	true	miskredit	bragt
+Relation	T12	T8	NoRel	true	miskredit	forvirring
+Relation	T2	T4	NoRel	true	bragt	afviste
+Relation	T4	T3	NoRel	true	afviste	forslag
+Relation	T5	T1	NoRel	true	færdedes	overtog
+Relation	T5	T3	NoRel	true	færdedes	forslag
+Relation	T8	T3	NoRel	true	forvirring	forslag
+Relation	T8	T4	NoRel	true	forvirring	afviste
+Relation	T9	T4	NoRel	true	kompromitterede	afviste

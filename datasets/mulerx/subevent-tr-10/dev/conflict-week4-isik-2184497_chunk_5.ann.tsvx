@@ -1,0 +1,24 @@
+Text	Saldırının ardından kimi siyasiler ve sivil toplum kuruluşları yaptıkları açıklamada saldırıyı lanetlediler .	Saldırıdan bir gün sonra ilçede bir protesto yürüyüşü yapıldı .	- Saldırıdan kısa bir süre sonra açıklama yapan Başbakan Binali Yıldırım , " Allah'tan alınan tedbirler , bariyerler vesilesiyle çok çok büyük bir patlayıcı olmasına rağmen , tabii yaralananlar oldu çok sayıda .	30 civarında yaralımız var .	Maalesef şu ana kadar teyit edilen şekliyle 1 polis , 2 vatandaş olmak üzere 3 vefatımız var .
+Event	T0	Saldırının	EVENT	0
+Event	T1	lanetlediler	EVENT	95
+Event	T2	Saldırıdan	EVENT	110
+Event	T3	yapıldı	EVENT	164
+Event	T4	Saldırıdan	EVENT	176
+Event	T5	patlayıcı	EVENT	321
+Event	T6	açıklamada	EVENT	74
+Event	T7	açıklama	EVENT	207
+Event	T8	vefatımız	EVENT	494
+Event	T9	yaralananlar	EVENT	355
+Event	T10	yaralımız	EVENT	399
+Relation	T0	T3	NoRel	true	Saldırının	yapıldı
+Relation	T1	T0	NoRel	true	lanetlediler	Saldırının
+Relation	T1	T2	NoRel	true	lanetlediler	Saldırıdan
+Relation	T1	T3	NoRel	true	lanetlediler	yapıldı
+Relation	T2	T1	NoRel	true	Saldırıdan	lanetlediler
+Relation	T2	T6	NoRel	true	Saldırıdan	açıklamada
+Relation	T4	T0	NoRel	true	Saldırıdan	Saldırının
+Relation	T4	T1	NoRel	true	Saldırıdan	lanetlediler
+Relation	T6	T7	NoRel	true	açıklamada	açıklama
+Relation	T6	T9	NoRel	true	açıklamada	yaralananlar
+Relation	T7	T2	NoRel	true	açıklama	Saldırıdan
+Relation	T7	T6	NoRel	true	açıklama	açıklamada

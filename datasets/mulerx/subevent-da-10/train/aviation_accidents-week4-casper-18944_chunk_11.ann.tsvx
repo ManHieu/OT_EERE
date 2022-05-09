@@ -1,0 +1,75 @@
+Text	Den 20. september 2001 opfordrede et råd af afghanske religiøse ledere Talibanstyret til at anmode bin Laden om at forlade Afghanistan .	Det må dog konstateres , at Osama bin Laden tog afstand fra at være involveret i angrebet på USA den 11. september 2001 , og det holdt han fast på , indtil USA hævdede , at de havde fundet videobånd , hvor han angiveligt hævdes at deltage og selv udtale , at han stod bag .	Det er uafklaret , hvorfor Osama bin Laden først nægtede at stå bag 11. september , når han ellers altid havde været meget hurtigt ude med at erklære sig selv og sin organisation ansvarlig .	I årene efter 11. september-angrebet stod bin Laden øverst på FBIs liste over efterlyste personer , og organisationen havde sat en dusør på op til $ 25 millioner for informationer , som kunne føre til hans tilfangetagelse .	FBI efterlyste ikke eksplicit Osama bin Laden for at stå bag terrorangrebet den 11. september 2001 , men for meddelagtighed i terrorangreb generelt , og mistænkte ham for ansvaret for 11. september-angrebet .
+Event	T0	opfordrede	EVENT	23
+Event	T1	anmode	EVENT	92
+Event	T2	forlade	EVENT	115
+Event	T3	angrebet	EVENT	218
+Event	T4	holdt	EVENT	266
+Event	T5	hævdede	EVENT	297
+Event	T6	fundet	EVENT	319
+Event	T7	hævdes	EVENT	358
+Event	T8	udtale	EVENT	384
+Event	T9	stod	EVENT	400
+Event	T10	nægtede	EVENT	460
+Event	T11	stå	EVENT	471
+Event	T12	erklære	EVENT	553
+Event	T13	stod	EVENT	639
+Event	T14	sat	EVENT	726
+Event	T15	dusør	EVENT	733
+Event	T16	tilfangetagelse	EVENT	808
+Event	T17	efterlyste	EVENT	830
+Event	T18	meddelagtighed	EVENT	935
+Event	T19	terrorangreb	EVENT	952
+Event	T20	mistænkte	EVENT	979
+Relation	T2	T1	SuperSub	true	forlade	anmode
+Relation	T1	T2	SubSuper	true	anmode	forlade
+Relation	T2	T4	SuperSub	true	forlade	holdt
+Relation	T4	T2	SubSuper	true	holdt	forlade
+Relation	T9	T10	SuperSub	true	stod	nægtede
+Relation	T10	T9	SubSuper	true	nægtede	stod
+Relation	T9	T12	SuperSub	true	stod	erklære
+Relation	T12	T9	SubSuper	true	erklære	stod
+Relation	T16	T15	SuperSub	true	tilfangetagelse	dusør
+Relation	T15	T16	SubSuper	true	dusør	tilfangetagelse
+Relation	T13	T17	SuperSub	true	stod	efterlyste
+Relation	T17	T13	SubSuper	true	efterlyste	stod
+Relation	T0	T16	NoRel	true	opfordrede	tilfangetagelse
+Relation	T1	T13	NoRel	true	anmode	stod
+Relation	T10	T1	NoRel	true	nægtede	anmode
+Relation	T10	T15	NoRel	true	nægtede	dusør
+Relation	T10	T4	NoRel	true	nægtede	holdt
+Relation	T11	T10	NoRel	true	stå	nægtede
+Relation	T11	T9	NoRel	true	stå	stod
+Relation	T12	T16	NoRel	true	erklære	tilfangetagelse
+Relation	T12	T7	NoRel	true	erklære	hævdes
+Relation	T13	T11	NoRel	true	stod	stå
+Relation	T15	T18	NoRel	true	dusør	meddelagtighed
+Relation	T16	T1	NoRel	true	tilfangetagelse	anmode
+Relation	T16	T11	NoRel	true	tilfangetagelse	stå
+Relation	T16	T13	NoRel	true	tilfangetagelse	stod
+Relation	T17	T11	NoRel	true	efterlyste	stå
+Relation	T17	T15	NoRel	true	efterlyste	dusør
+Relation	T17	T18	NoRel	true	efterlyste	meddelagtighed
+Relation	T17	T2	NoRel	true	efterlyste	forlade
+Relation	T17	T7	NoRel	true	efterlyste	hævdes
+Relation	T19	T11	NoRel	true	terrorangreb	stå
+Relation	T19	T20	NoRel	true	terrorangreb	mistænkte
+Relation	T2	T10	NoRel	true	forlade	nægtede
+Relation	T2	T15	NoRel	true	forlade	dusør
+Relation	T3	T6	NoRel	true	angrebet	fundet
+Relation	T4	T11	NoRel	true	holdt	stå
+Relation	T4	T17	NoRel	true	holdt	efterlyste
+Relation	T5	T11	NoRel	true	hævdede	stå
+Relation	T5	T3	NoRel	true	hævdede	angrebet
+Relation	T6	T0	NoRel	true	fundet	opfordrede
+Relation	T6	T11	NoRel	true	fundet	stå
+Relation	T6	T13	NoRel	true	fundet	stod
+Relation	T6	T2	NoRel	true	fundet	forlade
+Relation	T6	T5	NoRel	true	fundet	hævdede
+Relation	T7	T3	NoRel	true	hævdes	angrebet
+Relation	T7	T8	NoRel	true	hævdes	udtale
+Relation	T8	T15	NoRel	true	udtale	dusør
+Relation	T8	T17	NoRel	true	udtale	efterlyste
+Relation	T8	T5	NoRel	true	udtale	hævdede
+Relation	T9	T1	NoRel	true	stod	anmode
+Relation	T9	T11	NoRel	true	stod	stå
+Relation	T9	T3	NoRel	true	stod	angrebet

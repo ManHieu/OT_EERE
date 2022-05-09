@@ -1,0 +1,59 @@
+Text	Den græske flåde greb chancen og sikrede sig en afgørende sejr ved at sænke eller erobre mindst 300 persiske skibe .	Som følge af nederlaget trak Xerxes sig tilbage til Asien med størstedelen af sin hær , og overlod det til Mardonius at fuldføre erobringen af Grækenland .	Det følgende år blev resten af den persiske hær imidlertid afgørende slået i slaget ved Platæa og den persiske flåde blev slået i slaget ved Mycale .	Herefter forsøgte perserne ikke igen at erobre det græske fastland .	Disse slag ved Salamis og Platæa udgjorde således et vendepunkt i Perserkrigene .
+Event	T0	chancen	EVENT	22
+Event	T1	sikrede	EVENT	33
+Event	T2	sejr	EVENT	58
+Event	T3	sænke	EVENT	70
+Event	T4	erobre	EVENT	82
+Event	T5	trak	EVENT	141
+Event	T6	overlod	EVENT	208
+Event	T7	erobringen	EVENT	246
+Event	T8	slået	EVENT	342
+Event	T9	slaget	EVENT	350
+Event	T10	slået	EVENT	395
+Event	T11	slaget	EVENT	403
+Event	T12	forsøgte	EVENT	432
+Event	T13	slag	EVENT	498
+Event	T14	udgjorde	EVENT	525
+Event	T15	vendepunkt	EVENT	545
+Event	T16	nederlaget	EVENT	130
+Event	T17	erobre	EVENT	463
+Relation	T3	T2	CauseEffect	true	sænke	sejr
+Relation	T2	T3	EffectCause	true	sejr	sænke
+Relation	T4	T2	CauseEffect	true	erobre	sejr
+Relation	T2	T4	EffectCause	true	sejr	erobre
+Relation	T16	T5	CauseEffect	true	nederlaget	trak
+Relation	T5	T16	EffectCause	true	trak	nederlaget
+Relation	T16	T6	CauseEffect	true	nederlaget	overlod
+Relation	T6	T16	EffectCause	true	overlod	nederlaget
+Relation	T8	T12	CauseEffect	true	slået	forsøgte
+Relation	T12	T8	EffectCause	true	forsøgte	slået
+Relation	T10	T12	CauseEffect	true	slået	forsøgte
+Relation	T12	T10	EffectCause	true	forsøgte	slået
+Relation	T13	T15	CauseEffect	true	slag	vendepunkt
+Relation	T15	T13	EffectCause	true	vendepunkt	slag
+Relation	T0	T11	NoRel	true	chancen	slaget
+Relation	T0	T5	NoRel	true	chancen	trak
+Relation	T1	T12	NoRel	true	sikrede	forsøgte
+Relation	T1	T9	NoRel	true	sikrede	slaget
+Relation	T10	T13	NoRel	true	slået	slag
+Relation	T10	T2	NoRel	true	slået	sejr
+Relation	T10	T3	NoRel	true	slået	sænke
+Relation	T10	T6	NoRel	true	slået	overlod
+Relation	T11	T10	NoRel	true	slaget	slået
+Relation	T11	T2	NoRel	true	slaget	sejr
+Relation	T12	T4	NoRel	true	forsøgte	erobre
+Relation	T13	T14	NoRel	true	slag	udgjorde
+Relation	T14	T12	NoRel	true	udgjorde	forsøgte
+Relation	T16	T4	NoRel	true	nederlaget	erobre
+Relation	T17	T6	NoRel	true	erobre	overlod
+Relation	T2	T11	NoRel	true	sejr	slaget
+Relation	T5	T10	NoRel	true	trak	slået
+Relation	T5	T14	NoRel	true	trak	udgjorde
+Relation	T6	T12	NoRel	true	overlod	forsøgte
+Relation	T6	T15	NoRel	true	overlod	vendepunkt
+Relation	T6	T5	NoRel	true	overlod	trak
+Relation	T8	T16	NoRel	true	slået	nederlaget
+Relation	T9	T10	NoRel	true	slaget	slået
+Relation	T9	T12	NoRel	true	slaget	forsøgte
+Relation	T9	T17	NoRel	true	slaget	erobre
+Relation	T9	T2	NoRel	true	slaget	sejr

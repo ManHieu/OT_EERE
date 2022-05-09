@@ -1,0 +1,29 @@
+Text	Galipler oyunlardan 13. Mıntıka'ya kaçırılırlar .	12. Mıntıka'nın bombalanması üzerine ailesiyle beraber 13. Mıntıka'da yaşamaya başlar .	Başkent Capitol'e yapılan isyan hareketlerine katılır ve Capitol'de , savaşa sağlık görevlisi olarak katılan kız kardeşini kaybeder .	Daha sonra isyan hareketlerini sonlanınca 12. Mıntıka'ya geri dönerek Peeta'yla evlenir ve biri erkek biri kız iki çocukları olur .	23 Mart 2012'de vizyona giren _ Açlık Oyunları _ adlı filmde Katniss karakterini Jennifer Lawrence canlandırdı .
+Event	T0	kaçırılırlar	EVENT	35
+Event	T1	bombalanması	EVENT	66
+Event	T2	katılır	EVENT	184
+Event	T3	kaybeder	EVENT	261
+Event	T4	sonlanınca	EVENT	303
+Event	T5	giren	EVENT	428
+Event	T6	Oyunları	EVENT	442
+Event	T7	canlandırdı	EVENT	503
+Event	T8	başlar	EVENT	129
+Event	T9	savaşa	EVENT	208
+Event	T10	katılan	EVENT	239
+Event	T11	dönerek	EVENT	334
+Event	T12	evlenir	EVENT	352
+Relation	T1	T4	NoRel	true	bombalanması	sonlanınca
+Relation	T10	T1	NoRel	true	katılan	bombalanması
+Relation	T10	T4	NoRel	true	katılan	sonlanınca
+Relation	T3	T11	NoRel	true	kaybeder	dönerek
+Relation	T5	T11	NoRel	true	giren	dönerek
+Relation	T5	T3	NoRel	true	giren	kaybeder
+Relation	T6	T11	NoRel	true	Oyunları	dönerek
+Relation	T6	T2	NoRel	true	Oyunları	katılır
+Relation	T6	T4	NoRel	true	Oyunları	sonlanınca
+Relation	T6	T5	NoRel	true	Oyunları	giren
+Relation	T6	T7	NoRel	true	Oyunları	canlandırdı
+Relation	T8	T12	NoRel	true	başlar	evlenir
+Relation	T9	T10	NoRel	true	savaşa	katılan
+Relation	T9	T11	NoRel	true	savaşa	dönerek
+Relation	T9	T4	NoRel	true	savaşa	sonlanınca

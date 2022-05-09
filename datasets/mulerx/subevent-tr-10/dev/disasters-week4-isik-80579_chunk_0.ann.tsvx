@@ -1,0 +1,19 @@
+Text	1780 BÜYÜK KASIRGASI Atlantik'in gelmiş geçmiş en ölümcül tropikal kasırgası olarak kabul edilir .	Fırtınanın Küçük Antiller'den Barbados , Martinik ve Sint Eustatius'u 10 Ekim - 16 Ekim 1 tarihleri arasında vurması sonucu yaklaşık 22.000 kişi ölmüştür .	Binlerce ölü kıyıdan uzakta ortaya çıkmıştır .	Mitch Kasırgası ise 1998 Atlantik kasırgası sezonunda Honduras ve çevresinde 11.000 -18.000 kişinin ölümüne yol açmıştır .	1780 fırtınasındaki ölü sayısı yalnız başına , diğer tüm Atlantik kasırgalarının 10 yıllık zaman aralıklarındaki toplamlarından daha fazladır .
+Event	T0	edilir	EVENT	90
+Event	T1	ölmüştür	EVENT	244
+Event	T2	ölü	EVENT	264
+Event	T3	çıkmıştır	EVENT	290
+Event	T4	Kasırgası	EVENT	308
+Event	T5	kasırgası	EVENT	336
+Event	T6	açmıştır	EVENT	414
+Event	T7	ölü	EVENT	445
+Event	T8	KASIRGASI	EVENT	11
+Relation	T3	T8	NoRel	true	çıkmıştır	KASIRGASI
+Relation	T4	T1	NoRel	true	Kasırgası	ölmüştür
+Relation	T5	T8	NoRel	true	kasırgası	KASIRGASI
+Relation	T6	T2	NoRel	true	açmıştır	ölü
+Relation	T6	T7	NoRel	true	açmıştır	ölü
+Relation	T7	T1	NoRel	true	ölü	ölmüştür
+Relation	T7	T5	NoRel	true	ölü	kasırgası
+Relation	T7	T6	NoRel	true	ölü	açmıştır
+Relation	T8	T3	NoRel	true	KASIRGASI	çıkmıştır

@@ -1,0 +1,17 @@
+Text	Bu H3 gibi 5 bir VEI tarihsel zamanlarda ülkenin ikinci büyük volkanın patlama oldu .	Þjórsárdalur vadisinde ( 15 km uzaklıkta ) , ( 50 km uzaklıkta ) Hrunamannaafréttur ve Lake Hvítárvatn ( 70 km uzaklıkta ) volkanın rüzgâra karşı çiftlikler hasar nedeniyle terk edildi .	Patlama Hekla’nın Avrupa çapında meşhur olmasına neden oldu .	4 patlama A VEI lav 0, 15 üzerinde km³'lük ve volkanın 0, 2 km³'lük üreten 19 Ocak 1158 tarihinde başlamıştır .	Bu yanardağın batı Efrahvolshraun lav kaynağı olması muhtemeldir .
+Event	T0	oldu	EVENT	79
+Event	T1	hasar	EVENT	243
+Event	T2	edildi	EVENT	264
+Event	T3	Patlama	EVENT	273
+Event	T4	oldu	EVENT	328
+Event	T5	patlama	EVENT	337
+Event	T6	üreten	EVENT	403
+Event	T7	başlamıştır	EVENT	433
+Event	T8	patlama	EVENT	71
+Relation	T0	T3	NoRel	true	oldu	Patlama
+Relation	T1	T8	NoRel	true	hasar	patlama
+Relation	T2	T3	NoRel	true	edildi	Patlama
+Relation	T2	T7	NoRel	true	edildi	başlamıştır
+Relation	T3	T1	NoRel	true	Patlama	hasar
+Relation	T4	T5	NoRel	true	oldu	patlama
+Relation	T5	T4	NoRel	true	patlama	oldu

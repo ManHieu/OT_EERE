@@ -1,0 +1,28 @@
+Text	WORLD TRADE_CENTER ( WTC ) var et kæmpe forretningscenter og bygningskompleks i Lower Manhattan , New York , bestående af syv bygninger .	Mest kendte var de to 110-etagers høje tvillingetårne , der blev opført i perioden 1966-73 , med en højde på hhv. 415 og 417 meter .	Ved opførelsen var tårnene de højeste i verden , indtil de i 1974 blev overgået af det 442 meter høje Sears Tower i Chicago .	Komplekset blev ødelagt under de koordinerede terroraktioner på USA den 11. september 2001 , da Al-Qaeda-tilknyttede terrorister kaprede de to passagerfly : American Airlines Flight 11 og United Airlines Flight 175 , og styrede dem direkte ind i de to tvillingetårne , hvilket fik begge tårne til at kollapse på mindre end to timer .	World Trade Center blev designet af Minoru Yamasaki .
+Event	T0	kendte	EVENT	143
+Event	T1	opført	EVENT	203
+Event	T2	overgået	EVENT	342
+Event	T3	ødelagt	EVENT	413
+Event	T4	terroraktioner	EVENT	443
+Event	T5	kaprede	EVENT	526
+Event	T6	styrede	EVENT	617
+Event	T7	fik	EVENT	674
+Event	T8	kollapse	EVENT	697
+Event	T9	designet	EVENT	755
+Event	T10	opførelsen	EVENT	275
+Event	T11	højeste	EVENT	301
+Relation	T11	T2	SuperSub	true	højeste	overgået
+Relation	T2	T11	SubSuper	true	overgået	højeste
+Relation	T4	T5	SuperSub	true	terroraktioner	kaprede
+Relation	T5	T4	SubSuper	true	kaprede	terroraktioner
+Relation	T6	T8	SuperSub	true	styrede	kollapse
+Relation	T8	T6	SubSuper	true	kollapse	styrede
+Relation	T1	T0	NoRel	true	opført	kendte
+Relation	T10	T11	NoRel	true	opførelsen	højeste
+Relation	T10	T3	NoRel	true	opførelsen	ødelagt
+Relation	T10	T8	NoRel	true	opførelsen	kollapse
+Relation	T11	T1	NoRel	true	højeste	opført
+Relation	T6	T4	NoRel	true	styrede	terroraktioner
+Relation	T7	T10	NoRel	true	fik	opførelsen
+Relation	T8	T11	NoRel	true	kollapse	højeste
+Relation	T9	T1	NoRel	true	designet	opført

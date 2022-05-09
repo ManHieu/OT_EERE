@@ -1,0 +1,26 @@
+Text	YOUSSEF BELHADJ , alias _ Abu Dujanah _ ( Touzine , Marruecos , 1976 ) es un yihadista marroquí , condenado por terrorismo .	Se le consideraba uno de los tres presuntos autores intelectuales de los atentados del 11 de marzo de 2004 en Madrid , junto a Rabei Osman _ El Egipcio _ y Hassan El Haski .	Fue condenado a 12 años de prisión en el juicio por los atentados de Madrid .	Fue detenido en Bélgica en febrero de 2005 y extraditado a España en abril siguiente , donde ingresó en prisión incondicional .	Fue el portavoz de los terroristas en el vídeo que el 13 de marzo de 2004 – dos días después de los atentados y en la noche previa a las elecciones generales – dejaron en una papelera cercana a la mezquita madrileña de la M-30 , tras previo aviso a Telemadrid .
+Event	T0	condenado	EVENT	98
+Event	T1	terrorismo	EVENT	112
+Event	T2	consideraba	EVENT	131
+Event	T3	atentados	EVENT	198
+Event	T4	juicio	EVENT	340
+Event	T5	atentados	EVENT	355
+Event	T6	detenido	EVENT	381
+Event	T7	extraditado	EVENT	422
+Event	T8	atentados	EVENT	605
+Event	T9	dejaron	EVENT	665
+Event	T10	aviso	EVENT	746
+Event	T11	condenado	EVENT	303
+Relation	T1	T0	CauseEffect	true	terrorismo	condenado
+Relation	T0	T1	EffectCause	true	condenado	terrorismo
+Relation	T5	T6	CauseEffect	true	atentados	detenido
+Relation	T6	T5	EffectCause	true	detenido	atentados
+Relation	T5	T11	CauseEffect	true	atentados	condenado
+Relation	T11	T5	EffectCause	true	condenado	atentados
+Relation	T10	T5	NoRel	true	aviso	atentados
+Relation	T2	T5	NoRel	true	consideraba	atentados
+Relation	T3	T0	NoRel	true	atentados	condenado
+Relation	T3	T9	NoRel	true	atentados	dejaron
+Relation	T4	T6	NoRel	true	juicio	detenido
+Relation	T7	T2	NoRel	true	extraditado	consideraba
+Relation	T9	T1	NoRel	true	dejaron	terrorismo

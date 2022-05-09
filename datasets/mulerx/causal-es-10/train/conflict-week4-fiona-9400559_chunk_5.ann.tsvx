@@ -1,0 +1,55 @@
+Text	La guerra marcó el surgimiento de Estados Unidos como una potencia militar y económica .	Sin embargo , el alto costo humano de la guerra hizo que el gobierno estadounidense adoptara una política de aislacionismo a nivel de política exterior , lo que contribuyó al fracaso de la Sociedad de Naciones .	Se supone comúnmente que las experiencias de la guerra en el oeste han llevado a una especie de trauma nacional colectivo para todos los países participantes .	El optimismo de 1900 desapareció por completo y los que lucharon se convirtieron en lo que se conoce como " la generación perdida " porque nunca se recuperaron por completo de su sufrimiento .	Durante los años siguientes , gran parte de Europa se lamentó en privado y en público ; Se erigieron monumentos en miles de pueblos y ciudades .
+Event	T0	marcó	EVENT	10
+Event	T1	surgimiento	EVENT	19
+Event	T2	hizo	EVENT	137
+Event	T3	adoptara	EVENT	173
+Event	T4	contribuyó	EVENT	250
+Event	T5	fracaso	EVENT	264
+Event	T7	guerra	EVENT	349
+Event	T8	llevado	EVENT	372
+Event	T9	trauma	EVENT	397
+Event	T10	desapareció	EVENT	482
+Event	T11	lucharon	EVENT	517
+Event	T12	convirtieron	EVENT	529
+Event	T13	perdida	EVENT	583
+Event	T14	recuperaron	EVENT	609
+Event	T15	sufrimiento	EVENT	640
+Event	T16	lamentó	EVENT	708
+Event	T17	erigieron	EVENT	745
+Event	T6	aislacionismo	EVENT	198
+Relation	T1	T14	NoRel	true	surgimiento	recuperaron
+Relation	T10	T12	NoRel	true	desapareció	convirtieron
+Relation	T10	T2	NoRel	true	desapareció	hizo
+Relation	T10	T3	NoRel	true	desapareció	adoptara
+Relation	T10	T4	NoRel	true	desapareció	contribuyó
+Relation	T11	T2	NoRel	true	lucharon	hizo
+Relation	T11	T6	NoRel	true	lucharon	aislacionismo
+Relation	T12	T14	NoRel	true	convirtieron	recuperaron
+Relation	T13	T1	NoRel	true	perdida	surgimiento
+Relation	T13	T17	NoRel	true	perdida	erigieron
+Relation	T13	T9	NoRel	true	perdida	trauma
+Relation	T14	T15	NoRel	true	recuperaron	sufrimiento
+Relation	T14	T5	NoRel	true	recuperaron	fracaso
+Relation	T14	T7	NoRel	true	recuperaron	guerra
+Relation	T14	T9	NoRel	true	recuperaron	trauma
+Relation	T15	T10	NoRel	true	sufrimiento	desapareció
+Relation	T16	T10	NoRel	true	lamentó	desapareció
+Relation	T16	T17	NoRel	true	lamentó	erigieron
+Relation	T16	T4	NoRel	true	lamentó	contribuyó
+Relation	T16	T5	NoRel	true	lamentó	fracaso
+Relation	T17	T16	NoRel	true	erigieron	lamentó
+Relation	T2	T10	NoRel	true	hizo	desapareció
+Relation	T2	T12	NoRel	true	hizo	convirtieron
+Relation	T3	T0	NoRel	true	adoptara	marcó
+Relation	T4	T15	NoRel	true	contribuyó	sufrimiento
+Relation	T4	T3	NoRel	true	contribuyó	adoptara
+Relation	T5	T12	NoRel	true	fracaso	convirtieron
+Relation	T5	T16	NoRel	true	fracaso	lamentó
+Relation	T6	T0	NoRel	true	aislacionismo	marcó
+Relation	T6	T1	NoRel	true	aislacionismo	surgimiento
+Relation	T7	T14	NoRel	true	guerra	recuperaron
+Relation	T7	T15	NoRel	true	guerra	sufrimiento
+Relation	T7	T9	NoRel	true	guerra	trauma
+Relation	T8	T17	NoRel	true	llevado	erigieron
+Relation	T8	T6	NoRel	true	llevado	aislacionismo
+Relation	T9	T11	NoRel	true	trauma	lucharon

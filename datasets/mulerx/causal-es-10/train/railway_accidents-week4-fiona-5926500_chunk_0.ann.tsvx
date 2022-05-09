@@ -1,0 +1,54 @@
+Text	El ACCIDENTE FERROVIARIO DE SANTIAGO DE COMPOSTELA o ACCIDENTE DE ANGROIS se produjo el miércoles 24 de julio de 2013 cuando un tren Alvia , que viajaba de Madrid a Ferrol , descarriló en la curva A Grandeira de Angrois , a unos tres kilómetros de la estación de Santiago de Compostela .	De las 224 personas que viajaban a bordo — 218 pasajeros y seis tripulantes — , 144 resultaron heridas y 80 fallecieron .	El tren viajaba a 191 km/h cuando entró en la curva del accidente , duplicando la velocidad máxima de 80 km/h .	Cuando el maquinista se percató de la situación , accionó el freno de emergencia .	El accidente fue grabado por una cámara de seguridad que muestra los trece vehículos descarrilando y cuatro dándose la vuelta .
+Event	T0	ACCIDENTE	EVENT	3
+Event	T1	ACCIDENTE	EVENT	53
+Event	T2	produjo	EVENT	77
+Event	T3	descarriló	EVENT	174
+Event	T4	curva	EVENT	191
+Event	T5	heridas	EVENT	383
+Event	T6	fallecieron	EVENT	396
+Event	T7	viajaba	EVENT	418
+Event	T8	curva	EVENT	456
+Event	T9	accidente	EVENT	466
+Event	T10	duplicando	EVENT	478
+Event	T11	percató	EVENT	546
+Event	T12	situación	EVENT	560
+Event	T13	accionó	EVENT	572
+Event	T14	accidente	EVENT	608
+Event	T15	grabado	EVENT	622
+Event	T16	muestra	EVENT	662
+Event	T17	descarrilando	EVENT	690
+Relation	T3	T0	CauseEffect	true	descarriló	ACCIDENTE
+Relation	T0	T3	EffectCause	true	ACCIDENTE	descarriló
+Relation	T0	T5	CauseEffect	true	ACCIDENTE	heridas
+Relation	T5	T0	EffectCause	true	heridas	ACCIDENTE
+Relation	T0	T6	CauseEffect	true	ACCIDENTE	fallecieron
+Relation	T6	T0	EffectCause	true	fallecieron	ACCIDENTE
+Relation	T11	T13	CauseEffect	true	percató	accionó
+Relation	T13	T11	EffectCause	true	accionó	percató
+Relation	T1	T12	NoRel	true	ACCIDENTE	situación
+Relation	T1	T2	NoRel	true	ACCIDENTE	produjo
+Relation	T10	T15	NoRel	true	duplicando	grabado
+Relation	T11	T4	NoRel	true	percató	curva
+Relation	T12	T6	NoRel	true	situación	fallecieron
+Relation	T14	T13	NoRel	true	accidente	accionó
+Relation	T14	T15	NoRel	true	accidente	grabado
+Relation	T14	T2	NoRel	true	accidente	produjo
+Relation	T14	T3	NoRel	true	accidente	descarriló
+Relation	T14	T8	NoRel	true	accidente	curva
+Relation	T15	T11	NoRel	true	grabado	percató
+Relation	T16	T12	NoRel	true	muestra	situación
+Relation	T16	T5	NoRel	true	muestra	heridas
+Relation	T17	T0	NoRel	true	descarrilando	ACCIDENTE
+Relation	T17	T4	NoRel	true	descarrilando	curva
+Relation	T17	T6	NoRel	true	descarrilando	fallecieron
+Relation	T3	T15	NoRel	true	descarriló	grabado
+Relation	T4	T0	NoRel	true	curva	ACCIDENTE
+Relation	T4	T1	NoRel	true	curva	ACCIDENTE
+Relation	T4	T14	NoRel	true	curva	accidente
+Relation	T4	T15	NoRel	true	curva	grabado
+Relation	T4	T9	NoRel	true	curva	accidente
+Relation	T5	T10	NoRel	true	heridas	duplicando
+Relation	T5	T14	NoRel	true	heridas	accidente
+Relation	T7	T15	NoRel	true	viajaba	grabado
+Relation	T7	T4	NoRel	true	viajaba	curva
+Relation	T8	T16	NoRel	true	curva	muestra

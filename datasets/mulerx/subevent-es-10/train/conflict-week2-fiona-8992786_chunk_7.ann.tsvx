@@ -1,0 +1,66 @@
+Text	En la última ronda de reuniones de diez días , Vance negoció otro acuerdo de alto el fuego como un acuerdo provisional respaldado por un despliegue de fuerzas de paz para supervisarlo .	El último obstáculo para el acuerdo se eliminó cuando Tuđman acordó levantar el bloqueo de los restantes cuarteles de JNA en el territorio controlado por HV el 25 de diciembre .	Esto cumplió con las condiciones de Kadijević para la implementación del alto el fuego y Milošević declaró que no tenía objeciones al plan el 31 de diciembre .	El acuerdo final se conoce como el PLAN VANCE , el ACUERDO DE IMPLEMENTACIÓN o ' ' ' Acuerdo de Sarajevo ' ' ' ( ) .	El despliegue de Naciones Unidas fue posible gracias a la aceptación de que el acuerdo no era uno político final y la descripción del papel de la misión de Naciones Unidas , que permitió que ambas partes la reclamaran como una victoria .
+Event	T0	ronda	EVENT	13
+Event	T1	reuniones	EVENT	22
+Event	T10	controlado	EVENT	325
+Event	T11	cumplió	EVENT	369
+Event	T12	implementación	EVENT	418
+Event	T13	declaró	EVENT	463
+Event	T14	objeciones	EVENT	484
+Event	T15	acuerdo	EVENT	527
+Event	T16	despliegue	EVENT	644
+Event	T17	aceptación	EVENT	699
+Event	T18	acuerdo	EVENT	720
+Event	T19	permitió	EVENT	819
+Event	T20	reclamaran	EVENT	848
+Event	T21	victoria	EVENT	868
+Event	T3	acuerdo	EVENT	66
+Event	T4	respaldado	EVENT	119
+Event	T5	despliegue	EVENT	137
+Event	T6	acuerdo	EVENT	214
+Event	T7	eliminó	EVENT	225
+Event	T8	levantar	EVENT	254
+Event	T9	bloqueo	EVENT	266
+Relation	T17	T18	SuperSub	true	aceptación	acuerdo
+Relation	T18	T17	SubSuper	true	acuerdo	aceptación
+Relation	T1	T0	SuperSub	true	reuniones	ronda
+Relation	T0	T1	SubSuper	true	ronda	reuniones
+Relation	T0	T12	NoRel	true	ronda	implementación
+Relation	T1	T15	NoRel	true	reuniones	acuerdo
+Relation	T10	T14	NoRel	true	controlado	objeciones
+Relation	T11	T14	NoRel	true	cumplió	objeciones
+Relation	T11	T20	NoRel	true	cumplió	reclamaran
+Relation	T11	T5	NoRel	true	cumplió	despliegue
+Relation	T12	T14	NoRel	true	implementación	objeciones
+Relation	T12	T6	NoRel	true	implementación	acuerdo
+Relation	T13	T14	NoRel	true	declaró	objeciones
+Relation	T13	T19	NoRel	true	declaró	permitió
+Relation	T14	T8	NoRel	true	objeciones	levantar
+Relation	T15	T3	NoRel	true	acuerdo	acuerdo
+Relation	T15	T4	NoRel	true	acuerdo	respaldado
+Relation	T16	T17	NoRel	true	despliegue	aceptación
+Relation	T16	T20	NoRel	true	despliegue	reclamaran
+Relation	T17	T0	NoRel	true	aceptación	ronda
+Relation	T17	T19	NoRel	true	aceptación	permitió
+Relation	T19	T13	NoRel	true	permitió	declaró
+Relation	T19	T14	NoRel	true	permitió	objeciones
+Relation	T19	T15	NoRel	true	permitió	acuerdo
+Relation	T19	T16	NoRel	true	permitió	despliegue
+Relation	T19	T20	NoRel	true	permitió	reclamaran
+Relation	T19	T4	NoRel	true	permitió	respaldado
+Relation	T19	T7	NoRel	true	permitió	eliminó
+Relation	T20	T1	NoRel	true	reclamaran	reuniones
+Relation	T20	T10	NoRel	true	reclamaran	controlado
+Relation	T20	T16	NoRel	true	reclamaran	despliegue
+Relation	T20	T18	NoRel	true	reclamaran	acuerdo
+Relation	T21	T1	NoRel	true	victoria	reuniones
+Relation	T21	T13	NoRel	true	victoria	declaró
+Relation	T21	T9	NoRel	true	victoria	bloqueo
+Relation	T4	T21	NoRel	true	respaldado	victoria
+Relation	T5	T1	NoRel	true	despliegue	reuniones
+Relation	T7	T0	NoRel	true	eliminó	ronda
+Relation	T7	T10	NoRel	true	eliminó	controlado
+Relation	T8	T4	NoRel	true	levantar	respaldado
+Relation	T8	T9	NoRel	true	levantar	bloqueo
+Relation	T9	T14	NoRel	true	bloqueo	objeciones
+Relation	T9	T3	NoRel	true	bloqueo	acuerdo
+Relation	T9	T4	NoRel	true	bloqueo	respaldado

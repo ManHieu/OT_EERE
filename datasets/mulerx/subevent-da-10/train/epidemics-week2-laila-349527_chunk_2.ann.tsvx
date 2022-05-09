@@ -1,0 +1,16 @@
+Text	De brugte de sædvanlige udtømmende midler ( åreladning , lavement , opkastning ) , der i mange tilfælde kun forværrede tilstanden .	En gruppe unge læger tog initiativ til at visitere de hårdest ramte kvarterer og yde hygiejnisk rådgivning , og de værst ramte familier blev udflyttet til store teltlejre på Københavns vold , ligesom der oprettedes bespisning for de fattigste .	Det var i fattigkvartererne , at sygdommens slog hårdest til .	Epidemien ebbede ud i oktober 1853 .	Der var blevet anmeldt 7.219 tilfælde , hvoraf 4.737 ( 65,6 % ) havde dødelig udgang .
+Event	T0	brugte	EVENT	3
+Event	T1	visitere	EVENT	174
+Event	T3	udflyttet	EVENT	273
+Event	T4	bespisning	EVENT	347
+Event	T5	slog	EVENT	421
+Event	T6	anmeldt	EVENT	492
+Event	T7	tilfælde	EVENT	506
+Relation	T5	T6	SuperSub	true	slog	anmeldt
+Relation	T6	T5	SubSuper	true	anmeldt	slog
+Relation	T5	T7	SuperSub	true	slog	tilfælde
+Relation	T7	T5	SubSuper	true	tilfælde	slog
+Relation	T4	T0	NoRel	true	bespisning	brugte
+Relation	T6	T7	NoRel	true	anmeldt	tilfælde
+Relation	T7	T0	NoRel	true	tilfælde	brugte
+Relation	T7	T3	NoRel	true	tilfælde	udflyttet

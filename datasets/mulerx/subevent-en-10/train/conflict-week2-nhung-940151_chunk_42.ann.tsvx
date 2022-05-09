@@ -1,0 +1,55 @@
+Text	In only a span of 80 hours , Barksdale B - 52s and support personnel deployed forward to Andersen Air Force Base , Guam , carried out the strike against Iraqi targets and returned to Guam .	Fourteen months later , in November 1997 , personnel and aircraft deployed from Barksdale to the British island of Diego Garcia in the Indian Ocean by order of the president .	They joined forces already in the region in response to a renewed bout of provocations and threats made by Saddam Hussein .	Remaining at Diego Garcia until June 1998 , Barksdale 's forces bolstered the ability to defend the security of the region against possible aggression by Iraq and to accomplish specific military objectives if a diplomatic solution to the confrontation could not be achieved .	Six B - 52s and personnel from Barksdale were again deployed to Diego Garcia in November 1998 becoming part of the 2d Air Expeditionary Group .
+Event	T0	strike	EVENT	138
+Event	T1	deployed	EVENT	256
+Event	T10	accomplish	EVENT	656
+Event	T11	solution	EVENT	712
+Event	T12	confrontation	EVENT	728
+Event	T13	achieved	EVENT	755
+Event	T14	deployed	EVENT	818
+Event	T15	becoming	EVENT	860
+Event	T16	carried out	EVENT	122
+Event	T17	returned	EVENT	171
+Event	T18	deployed	EVENT	69
+Event	T19	joined	EVENT	371
+Event	T2	order	EVENT	341
+Event	T20	threats	EVENT	457
+Event	T4	provocations	EVENT	440
+Event	T6	Remaining	EVENT	490
+Event	T7	bolstered	EVENT	554
+Event	T8	defend	EVENT	579
+Event	T9	aggression	EVENT	630
+Relation	T6	T7	SuperSub	true	Remaining	bolstered
+Relation	T7	T6	SubSuper	true	bolstered	Remaining
+Relation	T1	T0	NoRel	true	deployed	strike
+Relation	T1	T2	NoRel	true	deployed	order
+Relation	T1	T9	NoRel	true	deployed	aggression
+Relation	T10	T14	NoRel	true	accomplish	deployed
+Relation	T11	T14	NoRel	true	solution	deployed
+Relation	T11	T2	NoRel	true	solution	order
+Relation	T12	T1	NoRel	true	confrontation	deployed
+Relation	T12	T16	NoRel	true	confrontation	carried out
+Relation	T13	T18	NoRel	true	achieved	deployed
+Relation	T13	T2	NoRel	true	achieved	order
+Relation	T13	T6	NoRel	true	achieved	Remaining
+Relation	T15	T0	NoRel	true	becoming	strike
+Relation	T15	T18	NoRel	true	becoming	deployed
+Relation	T15	T9	NoRel	true	becoming	aggression
+Relation	T16	T4	NoRel	true	carried out	provocations
+Relation	T16	T8	NoRel	true	carried out	defend
+Relation	T16	T9	NoRel	true	carried out	aggression
+Relation	T18	T9	NoRel	true	deployed	aggression
+Relation	T19	T9	NoRel	true	joined	aggression
+Relation	T2	T18	NoRel	true	order	deployed
+Relation	T20	T10	NoRel	true	threats	accomplish
+Relation	T20	T2	NoRel	true	threats	order
+Relation	T4	T6	NoRel	true	provocations	Remaining
+Relation	T6	T17	NoRel	true	Remaining	returned
+Relation	T6	T18	NoRel	true	Remaining	deployed
+Relation	T6	T4	NoRel	true	Remaining	provocations
+Relation	T7	T15	NoRel	true	bolstered	becoming
+Relation	T7	T16	NoRel	true	bolstered	carried out
+Relation	T8	T18	NoRel	true	defend	deployed
+Relation	T8	T7	NoRel	true	defend	bolstered
+Relation	T9	T0	NoRel	true	aggression	strike
+Relation	T9	T1	NoRel	true	aggression	deployed
+Relation	T9	T6	NoRel	true	aggression	Remaining

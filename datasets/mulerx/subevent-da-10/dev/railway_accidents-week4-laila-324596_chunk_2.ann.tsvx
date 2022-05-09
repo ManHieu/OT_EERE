@@ -1,0 +1,33 @@
+Text	Han reagerede på præsident Abraham Lincolns appel om frivillige ved krigens start og stod for rekrutteringen af 38th New York Infantry .	Han blev udpeget til regimentets første oberst .	Han førte regimentet i det Første slag ved Bull Run , og blev fungerende brigadechef for Brigadegeneral Orlando B. Willcox's brigade da denne blev såret i slaget .	Han kom næste gang i kamp i 1862 under Peninsula_kampagnen i brigadegeneral David B. Birneys brigade i 3. Korps .	Ward fortsatte med at klare sig godt i Nordlige Virginia kampagnen , og kom i kamp ved Andet Bull Run og Chantilly .
+Event	T0	reagerede	EVENT	4
+Event	T1	appel	EVENT	44
+Event	T2	start	EVENT	76
+Event	T3	stod	EVENT	85
+Event	T4	rekrutteringen	EVENT	94
+Event	T5	udpeget	EVENT	146
+Event	T6	førte	EVENT	190
+Event	T7	slag	EVENT	220
+Event	T8	såret	EVENT	333
+Event	T9	slaget	EVENT	341
+Event	T10	kamp	EVENT	371
+Event	T11	fortsatte	EVENT	469
+Event	T12	kamp	EVENT	542
+Event	T13	blev	EVENT	243
+Event	T14	Peninsula_kampagnen	EVENT	389
+Relation	T0	T3	SuperSub	true	reagerede	stod
+Relation	T3	T0	SubSuper	true	stod	reagerede
+Relation	T3	T5	SuperSub	true	stod	udpeget
+Relation	T5	T3	SubSuper	true	udpeget	stod
+Relation	T1	T5	NoRel	true	appel	udpeget
+Relation	T12	T11	NoRel	true	kamp	fortsatte
+Relation	T13	T10	NoRel	true	blev	kamp
+Relation	T13	T4	NoRel	true	blev	rekrutteringen
+Relation	T13	T5	NoRel	true	blev	udpeget
+Relation	T13	T8	NoRel	true	blev	såret
+Relation	T14	T12	NoRel	true	Peninsula_kampagnen	kamp
+Relation	T2	T10	NoRel	true	start	kamp
+Relation	T4	T8	NoRel	true	rekrutteringen	såret
+Relation	T6	T13	NoRel	true	førte	blev
+Relation	T7	T12	NoRel	true	slag	kamp
+Relation	T7	T2	NoRel	true	slag	start
+Relation	T9	T13	NoRel	true	slaget	blev

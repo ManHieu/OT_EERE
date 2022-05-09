@@ -1,0 +1,56 @@
+Text	Başkent Konstantinopolis'de kalabalığı beslemek verimli Mısır'dan gelen tahıl gönderilerine dayandığı için , bu ülkenin kaybı Bizans imparatorluğu'na şiddetli bir darbe oldu .	Önceki zamanların Roma'da yaşayanlara verilen hububat yardımının benzeri Konstantinopoli'deki bedava tahıl oranı , 618'de kaldırıldı .	Sasaniler 615'te Kalkedon'a ulaştığında , Sebeos'a göre , bu noktada Herakleios'un savaştan çekilmeyi kabul edip Roma İmparatorluğu'nun bir Pers devleti haline gelmesi yanında , hatta II. Hüsrev'in imparatoru seçmesine izin vermek yanında Sasani imparatoru II. Hüsrev'e bağlanmaya hazırdı .	Kalkedon 617'de Şahin'e düştüğünde Persler'in Konstantinopolis'ten görünür hale gelmesiyle bazı şeyler Bizanslar için daha da sert görünüyordu .	Şahin , nazik bir şekilde bir barış heyetini kabul etti ancak barış görüşmelerine katılma yetkisi olmadığını iddia ederek , Herakleios'u barış teklifini reddeden Hüsrev'e yönlendirdi .
+Event	T0	beslemek	EVENT	39
+Event	T1	kaybı	EVENT	120
+Event	T2	kaldırıldı	EVENT	298
+Event	T3	kabul	EVENT	413
+Event	T4	gelmesi	EVENT	471
+Event	T5	seçmesine	EVENT	520
+Event	T6	düştüğünde	EVENT	626
+Event	T7	yönlendirdi	EVENT	918
+Event	T8	gönderilerine	EVENT	78
+Event	T9	gelen	EVENT	66
+Event	T10	yardımının	EVENT	230
+Event	T11	ulaştığında	EVENT	339
+Event	T12	savaştan	EVENT	394
+Event	T13	vermek	EVENT	535
+Event	T14	gelmesiyle	EVENT	682
+Event	T15	görünüyordu	EVENT	733
+Event	T16	kabul	EVENT	792
+Event	T17	görüşmelerine	EVENT	815
+Event	T18	iddia	EVENT	856
+Event	T19	teklifini	EVENT	890
+Relation	T18	T7	CauseEffect	true	iddia	yönlendirdi
+Relation	T7	T18	EffectCause	true	yönlendirdi	iddia
+Relation	T0	T11	NoRel	true	beslemek	ulaştığında
+Relation	T0	T9	NoRel	true	beslemek	gelen
+Relation	T1	T13	NoRel	true	kaybı	vermek
+Relation	T1	T8	NoRel	true	kaybı	gönderilerine
+Relation	T10	T8	NoRel	true	yardımının	gönderilerine
+Relation	T11	T16	NoRel	true	ulaştığında	kabul
+Relation	T11	T5	NoRel	true	ulaştığında	seçmesine
+Relation	T13	T1	NoRel	true	vermek	kaybı
+Relation	T13	T10	NoRel	true	vermek	yardımının
+Relation	T14	T11	NoRel	true	gelmesiyle	ulaştığında
+Relation	T14	T18	NoRel	true	gelmesiyle	iddia
+Relation	T15	T18	NoRel	true	görünüyordu	iddia
+Relation	T15	T19	NoRel	true	görünüyordu	teklifini
+Relation	T16	T14	NoRel	true	kabul	gelmesiyle
+Relation	T16	T5	NoRel	true	kabul	seçmesine
+Relation	T17	T16	NoRel	true	görüşmelerine	kabul
+Relation	T17	T7	NoRel	true	görüşmelerine	yönlendirdi
+Relation	T18	T13	NoRel	true	iddia	vermek
+Relation	T18	T4	NoRel	true	iddia	gelmesi
+Relation	T19	T1	NoRel	true	teklifini	kaybı
+Relation	T19	T10	NoRel	true	teklifini	yardımının
+Relation	T3	T0	NoRel	true	kabul	beslemek
+Relation	T3	T17	NoRel	true	kabul	görüşmelerine
+Relation	T3	T19	NoRel	true	kabul	teklifini
+Relation	T4	T14	NoRel	true	gelmesi	gelmesiyle
+Relation	T5	T4	NoRel	true	seçmesine	gelmesi
+Relation	T6	T10	NoRel	true	düştüğünde	yardımının
+Relation	T6	T18	NoRel	true	düştüğünde	iddia
+Relation	T6	T9	NoRel	true	düştüğünde	gelen
+Relation	T7	T16	NoRel	true	yönlendirdi	kabul
+Relation	T7	T17	NoRel	true	yönlendirdi	görüşmelerine
+Relation	T8	T11	NoRel	true	gönderilerine	ulaştığında
+Relation	T9	T0	NoRel	true	gelen	beslemek

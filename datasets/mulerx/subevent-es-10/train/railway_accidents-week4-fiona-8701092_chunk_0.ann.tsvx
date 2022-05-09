@@ -1,0 +1,50 @@
+Text	El descarrilamiento de Eschede ocurrió el 3 de junio de 1998 , cerca de la aldea de Eschede en el distrito de Celle en Baja Sajonia , Alemania , cuando un tren de alta velocidad descarriló y se estrelló en un puente de carretera .	101 personas murieron y alrededor de 100 resultaron heridas .	Sigue siendo el peor desastre ferroviario en la historia de la República Federal de Alemania y el peor desastre ferroviario de alta velocidad en todo el mundo .	La causa fue una grieta de fatiga en una rueda que , cuando falló , hizo que el tren descarrilara en un conjunto de puntos y se estrellara contra los pilares de un puente de carretera de hormigón , lo que provocó que colapsara y aplastara a dos coches .	Los coches restantes y la cabeza motriz trasera se estrellaron contra los restos .
+Event	T0	descarrilamiento	EVENT	3
+Event	T1	ocurrió	EVENT	31
+Event	T2	descarriló	EVENT	178
+Event	T3	estrelló	EVENT	194
+Event	T4	murieron	EVENT	244
+Event	T5	heridas	EVENT	283
+Event	T6	desastre	EVENT	314
+Event	T7	desastre	EVENT	396
+Event	T8	causa	EVENT	457
+Event	T9	grieta	EVENT	471
+Event	T10	fatiga	EVENT	481
+Event	T11	falló	EVENT	514
+Event	T12	hizo	EVENT	522
+Event	T13	descarrilara	EVENT	539
+Event	T14	estrellara	EVENT	582
+Event	T15	provocó	EVENT	659
+Event	T16	colapsara	EVENT	671
+Event	T17	aplastara	EVENT	683
+Event	T18	estrellaron	EVENT	759
+Relation	T0	T1	NoRel	true	descarrilamiento	ocurrió
+Relation	T0	T14	NoRel	true	descarrilamiento	estrellara
+Relation	T0	T16	NoRel	true	descarrilamiento	colapsara
+Relation	T0	T7	NoRel	true	descarrilamiento	desastre
+Relation	T1	T2	NoRel	true	ocurrió	descarriló
+Relation	T11	T15	NoRel	true	falló	provocó
+Relation	T13	T1	NoRel	true	descarrilara	ocurrió
+Relation	T13	T3	NoRel	true	descarrilara	estrelló
+Relation	T14	T0	NoRel	true	estrellara	descarrilamiento
+Relation	T15	T11	NoRel	true	provocó	falló
+Relation	T15	T3	NoRel	true	provocó	estrelló
+Relation	T15	T6	NoRel	true	provocó	desastre
+Relation	T17	T10	NoRel	true	aplastara	fatiga
+Relation	T17	T13	NoRel	true	aplastara	descarrilara
+Relation	T17	T3	NoRel	true	aplastara	estrelló
+Relation	T17	T6	NoRel	true	aplastara	desastre
+Relation	T18	T4	NoRel	true	estrellaron	murieron
+Relation	T2	T14	NoRel	true	descarriló	estrellara
+Relation	T2	T18	NoRel	true	descarriló	estrellaron
+Relation	T2	T3	NoRel	true	descarriló	estrelló
+Relation	T2	T4	NoRel	true	descarriló	murieron
+Relation	T3	T16	NoRel	true	estrelló	colapsara
+Relation	T4	T15	NoRel	true	murieron	provocó
+Relation	T5	T1	NoRel	true	heridas	ocurrió
+Relation	T6	T10	NoRel	true	desastre	fatiga
+Relation	T6	T15	NoRel	true	desastre	provocó
+Relation	T7	T12	NoRel	true	desastre	hizo
+Relation	T7	T8	NoRel	true	desastre	causa
+Relation	T8	T7	NoRel	true	causa	desastre
+Relation	T9	T10	NoRel	true	grieta	fatiga

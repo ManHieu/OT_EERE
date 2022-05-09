@@ -1,0 +1,86 @@
+Text	La decisión sienta un precedente para mayores límites impuestas a las autoridades de salud pública que tratan de aislar a las poblaciones enfermas .	Entre 1901 y 1902 , el brote de peste continuó empeorando .	En un discurso de 1901 a ambas cámaras de la Legislatura estatal de California , Gage acusó a las autoridades federales , particularmente a Kinyoun , de inyectar bacterias de la peste en cadáveres , falsificando evidencia .	En respuesta a lo que dijo que era un espantapájaros masivo por parte del MHS , Gage impulsó un proyecto de ley de censura para amordazar cualquier informe de los medios de comunicación sobre la infección por peste .	El proyecto de ley fracasó en la Legislatura del Estado de California , sin embargo , las leyes para amordazar los informes entre la comunidad médica lograron ser aprobados y fueron firmados por el gobernador .
+Event	T0	sienta	EVENT	12
+Event	T1	impuestas	EVENT	54
+Event	T2	tratan	EVENT	103
+Event	T3	brote	EVENT	172
+Event	T4	empeorando	EVENT	196
+Event	T5	discurso	EVENT	215
+Event	T6	acusó	EVENT	295
+Event	T7	inyectar	EVENT	362
+Event	T8	peste	EVENT	387
+Event	T9	evidencia	EVENT	421
+Event	T10	respuesta	EVENT	436
+Event	T11	dijo	EVENT	455
+Event	T12	impulsó	EVENT	518
+Event	T13	censura	EVENT	548
+Event	T14	amordazar	EVENT	561
+Event	T15	informe	EVENT	581
+Event	T16	infección	EVENT	628
+Event	T17	peste	EVENT	642
+Event	T18	fracasó	EVENT	669
+Event	T19	amordazar	EVENT	751
+Event	T20	informes	EVENT	765
+Event	T21	lograron	EVENT	800
+Event	T22	aprobados	EVENT	813
+Event	T23	firmados	EVENT	832
+Relation	T0	T21	NoRel	true	sienta	lograron
+Relation	T1	T16	NoRel	true	impuestas	infección
+Relation	T1	T21	NoRel	true	impuestas	lograron
+Relation	T1	T7	NoRel	true	impuestas	inyectar
+Relation	T1	T8	NoRel	true	impuestas	peste
+Relation	T10	T1	NoRel	true	respuesta	impuestas
+Relation	T10	T14	NoRel	true	respuesta	amordazar
+Relation	T10	T4	NoRel	true	respuesta	empeorando
+Relation	T11	T1	NoRel	true	dijo	impuestas
+Relation	T11	T17	NoRel	true	dijo	peste
+Relation	T11	T18	NoRel	true	dijo	fracasó
+Relation	T11	T23	NoRel	true	dijo	firmados
+Relation	T12	T11	NoRel	true	impulsó	dijo
+Relation	T12	T17	NoRel	true	impulsó	peste
+Relation	T12	T2	NoRel	true	impulsó	tratan
+Relation	T12	T23	NoRel	true	impulsó	firmados
+Relation	T13	T19	NoRel	true	censura	amordazar
+Relation	T13	T7	NoRel	true	censura	inyectar
+Relation	T13	T9	NoRel	true	censura	evidencia
+Relation	T14	T1	NoRel	true	amordazar	impuestas
+Relation	T14	T11	NoRel	true	amordazar	dijo
+Relation	T15	T0	NoRel	true	informe	sienta
+Relation	T15	T3	NoRel	true	informe	brote
+Relation	T15	T6	NoRel	true	informe	acusó
+Relation	T16	T6	NoRel	true	infección	acusó
+Relation	T16	T7	NoRel	true	infección	inyectar
+Relation	T16	T8	NoRel	true	infección	peste
+Relation	T17	T14	NoRel	true	peste	amordazar
+Relation	T17	T15	NoRel	true	peste	informe
+Relation	T17	T19	NoRel	true	peste	amordazar
+Relation	T19	T3	NoRel	true	amordazar	brote
+Relation	T19	T6	NoRel	true	amordazar	acusó
+Relation	T2	T11	NoRel	true	tratan	dijo
+Relation	T2	T21	NoRel	true	tratan	lograron
+Relation	T20	T11	NoRel	true	informes	dijo
+Relation	T20	T23	NoRel	true	informes	firmados
+Relation	T20	T5	NoRel	true	informes	discurso
+Relation	T20	T9	NoRel	true	informes	evidencia
+Relation	T21	T5	NoRel	true	lograron	discurso
+Relation	T21	T9	NoRel	true	lograron	evidencia
+Relation	T22	T14	NoRel	true	aprobados	amordazar
+Relation	T22	T9	NoRel	true	aprobados	evidencia
+Relation	T23	T2	NoRel	true	firmados	tratan
+Relation	T3	T15	NoRel	true	brote	informe
+Relation	T3	T19	NoRel	true	brote	amordazar
+Relation	T3	T8	NoRel	true	brote	peste
+Relation	T3	T9	NoRel	true	brote	evidencia
+Relation	T4	T10	NoRel	true	empeorando	respuesta
+Relation	T4	T12	NoRel	true	empeorando	impulsó
+Relation	T4	T13	NoRel	true	empeorando	censura
+Relation	T5	T13	NoRel	true	discurso	censura
+Relation	T5	T16	NoRel	true	discurso	infección
+Relation	T6	T21	NoRel	true	acusó	lograron
+Relation	T7	T1	NoRel	true	inyectar	impuestas
+Relation	T7	T13	NoRel	true	inyectar	censura
+Relation	T7	T14	NoRel	true	inyectar	amordazar
+Relation	T7	T4	NoRel	true	inyectar	empeorando
+Relation	T7	T6	NoRel	true	inyectar	acusó
+Relation	T7	T8	NoRel	true	inyectar	peste
+Relation	T9	T18	NoRel	true	evidencia	fracasó
+Relation	T9	T21	NoRel	true	evidencia	lograron

@@ -1,0 +1,71 @@
+Text	Begge tog havde virksom ATC , men strækningen mellem Holbæk og Kalundborg var ikke udrustet med ATC .	ATC kunne med overvejende sandsynlighed have hindret ulykken .	Da det ved denne og tidligere ulykker ikke kunne afvises , at en af årsagerne til lokomotivførerens manglende bremsning , var en tilvænning til ATC-overvåget kørsel , blev en af anbefalingerne i undersøgelsesrapporten , at mulighederne for at etablere ATC på de strækninger , der endnu ikke var blevet udrustet med ATC , skulle undersøges .	Strækningen Holbæk-Kalundborg har fortsat ( 2020 ) ikke ATC og der er – på trods af at alle tog , der befarer strækningen har mobil ATC-udrustning – ikke aktuelle planer om etablering af ATC på strækningen .	Kopi fra DBC Webarkiv: Toguheld : en undersøgelse af redningsberedskabets indsatser ved uheld med tog .
+Event	T0	udrustet	EVENT	83
+Event	T1	ulykken	EVENT	155
+Event	T2	ulykker	EVENT	195
+Event	T3	bremsning	EVENT	275
+Event	T4	tilvænning	EVENT	294
+Event	T5	kørsel	EVENT	323
+Event	T6	etablere	EVENT	408
+Event	T7	udrustet	EVENT	467
+Event	T8	undersøges	EVENT	493
+Event	T9	befarer	EVENT	608
+Event	T10	etablering	EVENT	679
+Event	T11	undersøgelse	EVENT	751
+Event	T12	indsatser	EVENT	788
+Event	T13	uheld	EVENT	802
+Event	T14	havde	EVENT	10
+Event	T15	afvises	EVENT	214
+Event	T16	årsagerne	EVENT	233
+Event	T17	undersøgelsesrapporten	EVENT	360
+Event	T18	anbefalingerne	EVENT	343
+Event	T19	Toguheld	EVENT	737
+Relation	T19	T11	SuperSub	true	Toguheld	undersøgelse
+Relation	T11	T19	SubSuper	true	undersøgelse	Toguheld
+Relation	T17	T18	SuperSub	true	undersøgelsesrapporten	anbefalingerne
+Relation	T18	T17	SubSuper	true	anbefalingerne	undersøgelsesrapporten
+Relation	T17	T6	SuperSub	true	undersøgelsesrapporten	etablere
+Relation	T6	T17	SubSuper	true	etablere	undersøgelsesrapporten
+Relation	T17	T7	SuperSub	true	undersøgelsesrapporten	udrustet
+Relation	T7	T17	SubSuper	true	udrustet	undersøgelsesrapporten
+Relation	T17	T8	SuperSub	true	undersøgelsesrapporten	undersøges
+Relation	T8	T17	SubSuper	true	undersøges	undersøgelsesrapporten
+Relation	T0	T18	NoRel	true	udrustet	anbefalingerne
+Relation	T0	T5	NoRel	true	udrustet	kørsel
+Relation	T10	T19	NoRel	true	etablering	Toguheld
+Relation	T10	T2	NoRel	true	etablering	ulykker
+Relation	T10	T3	NoRel	true	etablering	bremsning
+Relation	T11	T3	NoRel	true	undersøgelse	bremsning
+Relation	T11	T8	NoRel	true	undersøgelse	undersøges
+Relation	T12	T0	NoRel	true	indsatser	udrustet
+Relation	T12	T6	NoRel	true	indsatser	etablere
+Relation	T13	T12	NoRel	true	uheld	indsatser
+Relation	T13	T2	NoRel	true	uheld	ulykker
+Relation	T14	T0	NoRel	true	havde	udrustet
+Relation	T14	T12	NoRel	true	havde	indsatser
+Relation	T14	T15	NoRel	true	havde	afvises
+Relation	T15	T16	NoRel	true	afvises	årsagerne
+Relation	T15	T17	NoRel	true	afvises	undersøgelsesrapporten
+Relation	T16	T17	NoRel	true	årsagerne	undersøgelsesrapporten
+Relation	T16	T4	NoRel	true	årsagerne	tilvænning
+Relation	T16	T7	NoRel	true	årsagerne	udrustet
+Relation	T17	T19	NoRel	true	undersøgelsesrapporten	Toguheld
+Relation	T17	T5	NoRel	true	undersøgelsesrapporten	kørsel
+Relation	T19	T8	NoRel	true	Toguheld	undersøges
+Relation	T19	T9	NoRel	true	Toguheld	befarer
+Relation	T2	T16	NoRel	true	ulykker	årsagerne
+Relation	T2	T18	NoRel	true	ulykker	anbefalingerne
+Relation	T3	T1	NoRel	true	bremsning	ulykken
+Relation	T3	T9	NoRel	true	bremsning	befarer
+Relation	T4	T14	NoRel	true	tilvænning	havde
+Relation	T4	T9	NoRel	true	tilvænning	befarer
+Relation	T5	T12	NoRel	true	kørsel	indsatser
+Relation	T5	T4	NoRel	true	kørsel	tilvænning
+Relation	T6	T11	NoRel	true	etablere	undersøgelse
+Relation	T6	T8	NoRel	true	etablere	undersøges
+Relation	T7	T14	NoRel	true	udrustet	havde
+Relation	T7	T15	NoRel	true	udrustet	afvises
+Relation	T7	T16	NoRel	true	udrustet	årsagerne
+Relation	T7	T18	NoRel	true	udrustet	anbefalingerne
+Relation	T8	T11	NoRel	true	undersøges	undersøgelse
+Relation	T8	T2	NoRel	true	undersøges	ulykker
+Relation	T9	T18	NoRel	true	befarer	anbefalingerne

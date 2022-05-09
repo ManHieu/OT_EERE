@@ -1,0 +1,65 @@
+Text	Diecinueve personas resultaron heridas ; el piloto y el copiloto sufrieron daños en el cuello y la nariz , y varias personas fueron llevadas al hospital .	La mayoría de las heridas se produjeron durante la evacuación de emergencia .	El Aeropuerto de Bancasi se mantuvo cerrado por al menos 1 día , tiempo durante el que las autoridades de transporte del aire evaluaron la capacidad del aeropuerto de continuar gestionando vuelos .	Se cree que la causa del accidente fue un error del piloto .	Según las declaraciones de los testigos , el avión comenzó el aterrizaje una vez pasada la zona inicial de touchdown de la pista , lo que supuso que quedara una parte inadecuada e insuficiente para que el avión fuera capaz de desacelerar , causando que el avión se saliera de la pista .
+Event	T0	heridas	EVENT	31
+Event	T1	daños	EVENT	75
+Event	T2	llevadas	EVENT	132
+Event	T3	heridas	EVENT	173
+Event	T4	produjeron	EVENT	184
+Event	T5	evacuación	EVENT	206
+Event	T6	cerrado	EVENT	269
+Event	T7	evaluaron	EVENT	359
+Event	T8	vuelos	EVENT	422
+Event	T9	cree	EVENT	434
+Event	T10	accidente	EVENT	456
+Event	T11	error	EVENT	473
+Event	T12	declaraciones	EVENT	502
+Event	T13	comenzó	EVENT	543
+Event	T14	aterrizaje	EVENT	554
+Event	T15	pasada	EVENT	573
+Event	T16	touchdown	EVENT	599
+Event	T17	supuso	EVENT	630
+Event	T18	desacelerar	EVENT	718
+Event	T19	causando	EVENT	732
+Event	T20	saliera	EVENT	757
+Relation	T0	T10	NoRel	true	heridas	accidente
+Relation	T0	T15	NoRel	true	heridas	pasada
+Relation	T0	T18	NoRel	true	heridas	desacelerar
+Relation	T1	T5	NoRel	true	daños	evacuación
+Relation	T10	T14	NoRel	true	accidente	aterrizaje
+Relation	T11	T4	NoRel	true	error	produjeron
+Relation	T12	T13	NoRel	true	declaraciones	comenzó
+Relation	T13	T1	NoRel	true	comenzó	daños
+Relation	T13	T12	NoRel	true	comenzó	declaraciones
+Relation	T13	T14	NoRel	true	comenzó	aterrizaje
+Relation	T13	T17	NoRel	true	comenzó	supuso
+Relation	T15	T2	NoRel	true	pasada	llevadas
+Relation	T15	T4	NoRel	true	pasada	produjeron
+Relation	T16	T17	NoRel	true	touchdown	supuso
+Relation	T16	T5	NoRel	true	touchdown	evacuación
+Relation	T17	T10	NoRel	true	supuso	accidente
+Relation	T17	T11	NoRel	true	supuso	error
+Relation	T17	T2	NoRel	true	supuso	llevadas
+Relation	T18	T15	NoRel	true	desacelerar	pasada
+Relation	T18	T16	NoRel	true	desacelerar	touchdown
+Relation	T18	T20	NoRel	true	desacelerar	saliera
+Relation	T2	T12	NoRel	true	llevadas	declaraciones
+Relation	T2	T19	NoRel	true	llevadas	causando
+Relation	T2	T6	NoRel	true	llevadas	cerrado
+Relation	T20	T0	NoRel	true	saliera	heridas
+Relation	T20	T1	NoRel	true	saliera	daños
+Relation	T20	T11	NoRel	true	saliera	error
+Relation	T20	T12	NoRel	true	saliera	declaraciones
+Relation	T20	T4	NoRel	true	saliera	produjeron
+Relation	T20	T8	NoRel	true	saliera	vuelos
+Relation	T3	T7	NoRel	true	heridas	evaluaron
+Relation	T4	T10	NoRel	true	produjeron	accidente
+Relation	T4	T14	NoRel	true	produjeron	aterrizaje
+Relation	T5	T20	NoRel	true	evacuación	saliera
+Relation	T5	T8	NoRel	true	evacuación	vuelos
+Relation	T6	T14	NoRel	true	cerrado	aterrizaje
+Relation	T6	T5	NoRel	true	cerrado	evacuación
+Relation	T7	T0	NoRel	true	evaluaron	heridas
+Relation	T7	T19	NoRel	true	evaluaron	causando
+Relation	T8	T6	NoRel	true	vuelos	cerrado
+Relation	T9	T10	NoRel	true	cree	accidente
+Relation	T9	T15	NoRel	true	cree	pasada
+Relation	T9	T8	NoRel	true	cree	vuelos

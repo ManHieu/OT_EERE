@@ -1,0 +1,50 @@
+Text	I sin store reces fra 1643 søgte Christian 4. at centralisere bestemmelserne , og med enevælden i 1660 blev møllebrugene som erhverv underkastet kongelig bevilling ( møllerprivilegium ) .	Først med Christian 5.’s Danske Lov blev de styret af en egentlig central lovgivning , der bl.a. fastlagde lovbestemmelser om opstemning af vand ved vandmøller og om retten til at drive møllevirksomhed .	Græsmøllernes drift skulle ophøre 1. maj og kunne først påbegyndes igen efter høsten .	Skvatmøllerne skulle med enkelte undtagelser helt afskaffes .	Desuden indførte Christian 5. en generel bestemmelse om betaling for formaling af korn og MØLLESKYLD , dvs. beskatning af møllebrugene .
+Event	T0	reces	EVENT	12
+Event	T1	søgte	EVENT	27
+Event	T10	bestemmelse	EVENT	582
+Event	T11	betaling	EVENT	597
+Event	T12	formaling	EVENT	610
+Event	T13	beskatning	EVENT	649
+Event	T14	enevælden	EVENT	86
+Event	T2	underkastet	EVENT	133
+Event	T3	styret	EVENT	232
+Event	T4	lovbestemmelser	EVENT	295
+Event	T5	opstemning	EVENT	314
+Event	T6	drift	EVENT	406
+Event	T7	ophøre	EVENT	419
+Event	T8	afskaffes	EVENT	529
+Event	T9	indførte	EVENT	549
+Relation	T6	T7	SuperSub	true	drift	ophøre
+Relation	T7	T6	SubSuper	true	ophøre	drift
+Relation	T13	T11	SuperSub	true	beskatning	betaling
+Relation	T11	T13	SubSuper	true	betaling	beskatning
+Relation	T11	T12	SuperSub	true	betaling	formaling
+Relation	T12	T11	SubSuper	true	formaling	betaling
+Relation	T1	T14	SuperSub	true	søgte	enevælden
+Relation	T14	T1	SubSuper	true	enevælden	søgte
+Relation	T3	T4	SuperSub	true	styret	lovbestemmelser
+Relation	T4	T3	SubSuper	true	lovbestemmelser	styret
+Relation	T3	T5	SuperSub	true	styret	opstemning
+Relation	T5	T3	SubSuper	true	opstemning	styret
+Relation	T13	T9	SuperSub	true	beskatning	indførte
+Relation	T9	T13	SubSuper	true	indførte	beskatning
+Relation	T9	T10	SuperSub	true	indførte	bestemmelse
+Relation	T10	T9	SubSuper	true	bestemmelse	indførte
+Relation	T10	T11	SuperSub	true	bestemmelse	betaling
+Relation	T11	T10	SubSuper	true	betaling	bestemmelse
+Relation	T0	T12	NoRel	true	reces	formaling
+Relation	T0	T7	NoRel	true	reces	ophøre
+Relation	T1	T10	NoRel	true	søgte	bestemmelse
+Relation	T10	T12	NoRel	true	bestemmelse	formaling
+Relation	T10	T2	NoRel	true	bestemmelse	underkastet
+Relation	T11	T5	NoRel	true	betaling	opstemning
+Relation	T13	T14	NoRel	true	beskatning	enevælden
+Relation	T2	T9	NoRel	true	underkastet	indførte
+Relation	T3	T7	NoRel	true	styret	ophøre
+Relation	T5	T9	NoRel	true	opstemning	indførte
+Relation	T6	T11	NoRel	true	drift	betaling
+Relation	T6	T12	NoRel	true	drift	formaling
+Relation	T6	T3	NoRel	true	drift	styret
+Relation	T7	T3	NoRel	true	ophøre	styret
+Relation	T8	T13	NoRel	true	afskaffes	beskatning
+Relation	T9	T3	NoRel	true	indførte	styret

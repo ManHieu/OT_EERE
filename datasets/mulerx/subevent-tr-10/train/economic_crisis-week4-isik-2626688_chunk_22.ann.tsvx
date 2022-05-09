@@ -1,0 +1,14 @@
+Text	Bu tür korkuların bir koşuyu tetiklemesini önlemek için , ABD FDIC devralma operasyonlarını gizli tutar ve bir sonraki iş gününde yeni sahiplik altında şubeleri yeniden açar .	Hükûmetin kendisinin nakit sıkıntısı çektiği düşünülürse , devlet mevduat sigorta programları etkisiz olabilir .	- Banka sermaye gereksinimleri , bankanın iflas etme olasılığını azaltır .	Basel III anlaşması , banka sermaye gereksinimlerini güçlendirmekte ve banka likiditesi ve banka kaldıracı ile ilgili yeni düzenleme gereklilikleri getirmektedir .	- Tam rezerv bankacılık , rezerv oranının % 100'e ayarlandığı varsayımsal bir durumdur ve yatırılan fonlar , mevduat sahibi talep üzerine fonları çekme yasal hakkını elinde tuttuğu sürece banka tarafından ödünç verilmez .
+Event	T1	tutar	EVENT	98
+Event	T2	açar	EVENT	169
+Event	T3	çektiği	EVENT	213
+Event	T5	güçlendirmekte	EVENT	417
+Event	T7	getirmektedir	EVENT	512
+Event	T4	azaltır	EVENT	354
+Event	T11	anlaşması	EVENT	374
+Relation	T1	T2	NoRel	true	tutar	açar
+Relation	T1	T5	NoRel	true	tutar	güçlendirmekte
+Relation	T11	T2	NoRel	true	anlaşması	açar
+Relation	T3	T1	NoRel	true	çektiği	tutar
+Relation	T3	T2	NoRel	true	çektiği	açar
+Relation	T7	T4	NoRel	true	getirmektedir	azaltır

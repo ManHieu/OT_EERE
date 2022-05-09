@@ -1,0 +1,27 @@
+Text	بھارت سیاچن گلیشیئر سمیت تمام بلند پہاڑوں پر جبکہ پاکستان نسبتا کم اونچے پہاڑوں پر موجود ہے ۔	کشمیر پاکستان اور بھارت کے درمیان میں تنازعے کی اہم ترین وجہ ہے اور اس تنازعے کا واحد حل اقوام متحفہ کی قرار دادوں کے تناظر میں کشمیری عوام کے حق خود ارادیت کو تسلیم کرنا ہے .	پاکستان اور بھارت دونوں جوہری طاقتیں ہیں جو کشمیر کے آزادی اور خود مختاری کو بامسئلہ کشمیر دنیا کے خطرناک ترین علاقائی تنازعات میں سے ایک شمار کرتے ہیں ۔	دونوں ممالک کشمیر پر تین جنگیں لڑچکے ہیں جن میں 1947ء کی جنگ ، 1965 ء کی جنگ اور 1999ء کی کارگل جنگ شامل ہیں 1971ء کی جنگ بنگال کی وجہ سے ہوئی تھی ۔	سولہ مارچ 1846 ء انگریز نے 75 لاکھ کے عوض کشمیر گلاب سنگھ ڈوگرہ کو فروخت کیا .
+Event	T0	تنازعے	EVENT	132
+Event	T1	تنازعے	EVENT	165
+Event	T2	تنازعات	EVENT	389
+Event	T3	لڑچکے	EVENT	455
+Event	T4	جنگ	EVENT	481
+Event	T5	جنگ	EVENT	497
+Event	T6	جنگ	EVENT	542
+Event	T7	ہوئی	EVENT	562
+Event	T8	تسلیم	EVENT	254
+Event	T9	شمار	EVENT	408
+Event	T10	جنگیں	EVENT	449
+Event	T11	شامل	EVENT	524
+Event	T12	جنگ	EVENT	520
+Event	T13	فروخت	EVENT	640
+Relation	T10	T4	SuperSub	true	جنگیں	جنگ
+Relation	T4	T10	SubSuper	true	جنگ	جنگیں
+Relation	T10	T5	SuperSub	true	جنگیں	جنگ
+Relation	T5	T10	SubSuper	true	جنگ	جنگیں
+Relation	T1	T0	NoRel	true	تنازعے	تنازعے
+Relation	T1	T8	NoRel	true	تنازعے	تسلیم
+Relation	T13	T5	NoRel	true	فروخت	جنگ
+Relation	T3	T8	NoRel	true	لڑچکے	تسلیم
+Relation	T6	T0	NoRel	true	جنگ	تنازعے
+Relation	T7	T8	NoRel	true	ہوئی	تسلیم
+Relation	T8	T12	NoRel	true	تسلیم	جنگ
+Relation	T9	T1	NoRel	true	شمار	تنازعے

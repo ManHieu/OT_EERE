@@ -1,0 +1,57 @@
+Text	En ese caso , los pilotos evitaron la tragedia porque se percataron rápidamente del problema y actuaron según el procedimiento : aceleraron ambos motores al máximo y mantuvieron el morro del avión bajo .	También les favorecieron las condiciones para el despegue : menor altitud del aeropuerto , menor temperatura del aire , menor carga , motores más potentes y sustancial viento de frente en lugar de ligero viento de cola .	La NTSB realizó simulaciones de las posibles condiciones del avión de Spanair .	En las pruebas con el disyuntor K-33 abierto , el sistema TOWS no se activó y ascendió la temperatura de la sonda de temperatura RAT .	Sin embargo , también falló el sistema de aviso de entrada en pérdida , que sí se activó el día del accidente .
+Event	T0	tragedia	EVENT	38
+Event	T1	percataron	EVENT	57
+Event	T2	actuaron	EVENT	95
+Event	T3	procedimiento	EVENT	113
+Event	T4	aceleraron	EVENT	129
+Event	T5	mantuvieron	EVENT	166
+Event	T6	morro	EVENT	181
+Event	T7	favorecieron	EVENT	216
+Event	T8	despegue	EVENT	253
+Event	T9	simulaciones	EVENT	441
+Event	T10	pruebas	EVENT	512
+Event	T11	activó	EVENT	574
+Event	T12	ascendió	EVENT	583
+Event	T13	falló	EVENT	662
+Event	T14	aviso	EVENT	682
+Event	T15	pérdida	EVENT	702
+Event	T16	activó	EVENT	722
+Event	T17	accidente	EVENT	740
+Relation	T11	T12	CauseEffect	true	activó	ascendió
+Relation	T12	T11	EffectCause	true	ascendió	activó
+Relation	T0	T17	NoRel	true	tragedia	accidente
+Relation	T0	T7	NoRel	true	tragedia	favorecieron
+Relation	T0	T9	NoRel	true	tragedia	simulaciones
+Relation	T1	T5	NoRel	true	percataron	mantuvieron
+Relation	T10	T13	NoRel	true	pruebas	falló
+Relation	T11	T17	NoRel	true	activó	accidente
+Relation	T11	T2	NoRel	true	activó	actuaron
+Relation	T12	T16	NoRel	true	ascendió	activó
+Relation	T13	T12	NoRel	true	falló	ascendió
+Relation	T13	T14	NoRel	true	falló	aviso
+Relation	T13	T15	NoRel	true	falló	pérdida
+Relation	T14	T11	NoRel	true	aviso	activó
+Relation	T14	T12	NoRel	true	aviso	ascendió
+Relation	T14	T6	NoRel	true	aviso	morro
+Relation	T15	T1	NoRel	true	pérdida	percataron
+Relation	T15	T14	NoRel	true	pérdida	aviso
+Relation	T15	T4	NoRel	true	pérdida	aceleraron
+Relation	T16	T13	NoRel	true	activó	falló
+Relation	T16	T17	NoRel	true	activó	accidente
+Relation	T2	T1	NoRel	true	actuaron	percataron
+Relation	T2	T10	NoRel	true	actuaron	pruebas
+Relation	T3	T15	NoRel	true	procedimiento	pérdida
+Relation	T3	T17	NoRel	true	procedimiento	accidente
+Relation	T3	T2	NoRel	true	procedimiento	actuaron
+Relation	T4	T15	NoRel	true	aceleraron	pérdida
+Relation	T5	T11	NoRel	true	mantuvieron	activó
+Relation	T6	T1	NoRel	true	morro	percataron
+Relation	T6	T13	NoRel	true	morro	falló
+Relation	T6	T3	NoRel	true	morro	procedimiento
+Relation	T6	T4	NoRel	true	morro	aceleraron
+Relation	T7	T12	NoRel	true	favorecieron	ascendió
+Relation	T8	T14	NoRel	true	despegue	aviso
+Relation	T9	T15	NoRel	true	simulaciones	pérdida
+Relation	T9	T17	NoRel	true	simulaciones	accidente
+Relation	T9	T7	NoRel	true	simulaciones	favorecieron
+Relation	T9	T8	NoRel	true	simulaciones	despegue

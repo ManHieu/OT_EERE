@@ -1,0 +1,63 @@
+Text	I_lighed med Ramlyng havde personen været på skiferie i Norditalien men var kommet hjem allerede den 15. februar .	Først den 27. februar havde personen henvendt sig til egen læge , der henviste til undersøgelse på Rigshospitalet , hvor den positive test for SARS-CoV-2 blev udført .	Den fjerde rapport om et dansk tilfælde gjaldt en person , der havde haft kontakt til patienten fra den anden rapport .	Der var tale om en medarbejder på Aarhus Universitetshospital som øjensynligt var smittet i forbindelse med en konference i München .	Medarbejderen havde været i tæt kontakt med en italiener på konferencen , og da medarbejderen fik oplysninger om , at italieneren var testet positiv for SARS-CoV-2 , satte medarbejderen sig selv i karantæne .
+Event	T0	kommet	EVENT	76
+Event	T1	henvendt	EVENT	152
+Event	T2	henviste	EVENT	185
+Event	T3	undersøgelse	EVENT	198
+Event	T4	test	EVENT	249
+Event	T5	udført	EVENT	274
+Event	T6	gjaldt	EVENT	323
+Event	T7	kontakt	EVENT	357
+Event	T8	tale	EVENT	411
+Event	T9	smittet	EVENT	485
+Event	T10	konference	EVENT	514
+Event	T11	kontakt	EVENT	569
+Event	T12	satte	EVENT	703
+Event	T13	karantæne	EVENT	734
+Event	T14	skiferie	EVENT	45
+Event	T15	SARS-CoV-2	EVENT	258
+Event	T16	tilfælde	EVENT	314
+Event	T17	fjerde rapport	EVENT	287
+Event	T18	anden rapport	EVENT	387
+Event	T19	oplysninger	EVENT	635
+Event	T20	positiv	EVENT	678
+Event	T21	SARS-CoV-2	EVENT	690
+Relation	T1	T3	NoRel	true	henvendt	undersøgelse
+Relation	T1	T4	NoRel	true	henvendt	test
+Relation	T1	T5	NoRel	true	henvendt	udført
+Relation	T10	T19	NoRel	true	konference	oplysninger
+Relation	T10	T9	NoRel	true	konference	smittet
+Relation	T11	T10	NoRel	true	kontakt	konference
+Relation	T11	T21	NoRel	true	kontakt	SARS-CoV-2
+Relation	T11	T3	NoRel	true	kontakt	undersøgelse
+Relation	T11	T5	NoRel	true	kontakt	udført
+Relation	T11	T8	NoRel	true	kontakt	tale
+Relation	T12	T17	NoRel	true	satte	fjerde rapport
+Relation	T13	T2	NoRel	true	karantæne	henviste
+Relation	T14	T11	NoRel	true	skiferie	kontakt
+Relation	T14	T20	NoRel	true	skiferie	positiv
+Relation	T16	T1	NoRel	true	tilfælde	henvendt
+Relation	T16	T6	NoRel	true	tilfælde	gjaldt
+Relation	T17	T11	NoRel	true	fjerde rapport	kontakt
+Relation	T17	T13	NoRel	true	fjerde rapport	karantæne
+Relation	T19	T8	NoRel	true	oplysninger	tale
+Relation	T2	T6	NoRel	true	henviste	gjaldt
+Relation	T2	T7	NoRel	true	henviste	kontakt
+Relation	T20	T10	NoRel	true	positiv	konference
+Relation	T20	T17	NoRel	true	positiv	fjerde rapport
+Relation	T21	T2	NoRel	true	SARS-CoV-2	henviste
+Relation	T4	T19	NoRel	true	test	oplysninger
+Relation	T4	T3	NoRel	true	test	undersøgelse
+Relation	T5	T1	NoRel	true	udført	henvendt
+Relation	T5	T21	NoRel	true	udført	SARS-CoV-2
+Relation	T5	T4	NoRel	true	udført	test
+Relation	T6	T18	NoRel	true	gjaldt	anden rapport
+Relation	T6	T4	NoRel	true	gjaldt	test
+Relation	T8	T13	NoRel	true	tale	karantæne
+Relation	T8	T15	NoRel	true	tale	SARS-CoV-2
+Relation	T8	T4	NoRel	true	tale	test
+Relation	T8	T7	NoRel	true	tale	kontakt
+Relation	T9	T13	NoRel	true	smittet	karantæne
+Relation	T9	T17	NoRel	true	smittet	fjerde rapport
+Relation	T9	T20	NoRel	true	smittet	positiv
+Relation	T9	T4	NoRel	true	smittet	test
+Relation	T9	T6	NoRel	true	smittet	gjaldt

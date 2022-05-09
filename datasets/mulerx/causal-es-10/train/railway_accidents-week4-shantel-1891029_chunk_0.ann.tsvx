@@ -1,0 +1,32 @@
+Text	El ACCIDENTE DE TRENES DE CHATSWORTH EN LOS ÁNGELES fue un accidente ferroviario que ocurrió el 12 de septiembre de 2008 a las 16:23 PDT ( 23:23 GMT ) en el distrito Chatsworth de Los Ángeles , California en los Estados Unidos .	La colisión es el accidente ferroviario más mortífero en los Estados Unidos desde el accidente ferroviario de Big Bayou Canot de 1993 .	Los motivos del choque aún no se han esclarecido pero Tyrell especificó a ABC7 que la locomotora estaba jalando al tren de Metrolink , y que la fuerza de la colisión al parecer empujó a la pesada locomotora al primer vagón de pasajeros , el cual se volcó a un lado .	Los trenes viajaban por la misma vía , y aparentemente los trenes se cambian desde una locación remota .	Tyrell le dijo a la emisora que “ _ claramente algo estuvo mal _ ” .
+Event	T0	ACCIDENTE	EVENT	3
+Event	T2	colisión	EVENT	232
+Event	T3	accidente	EVENT	247
+Event	T4	accidente	EVENT	314
+Event	T5	choque	EVENT	381
+Event	T6	esclarecido	EVENT	402
+Event	T7	especificó	EVENT	426
+Event	T8	jalando	EVENT	469
+Event	T9	colisión	EVENT	522
+Event	T10	empujó	EVENT	542
+Event	T11	volcó	EVENT	614
+Event	T12	viajaban	EVENT	643
+Event	T13	cambian	EVENT	701
+Event	T14	dijo	EVENT	747
+Relation	T9	T10	CauseEffect	true	colisión	empujó
+Relation	T10	T9	EffectCause	true	empujó	colisión
+Relation	T10	T11	CauseEffect	true	empujó	volcó
+Relation	T11	T10	EffectCause	true	volcó	empujó
+Relation	T0	T13	NoRel	true	ACCIDENTE	cambian
+Relation	T0	T5	NoRel	true	ACCIDENTE	choque
+Relation	T10	T4	NoRel	true	empujó	accidente
+Relation	T11	T7	NoRel	true	volcó	especificó
+Relation	T12	T11	NoRel	true	viajaban	volcó
+Relation	T12	T6	NoRel	true	viajaban	esclarecido
+Relation	T14	T8	NoRel	true	dijo	jalando
+Relation	T14	T9	NoRel	true	dijo	colisión
+Relation	T3	T6	NoRel	true	accidente	esclarecido
+Relation	T5	T6	NoRel	true	choque	esclarecido
+Relation	T7	T11	NoRel	true	especificó	volcó
+Relation	T8	T3	NoRel	true	jalando	accidente
+Relation	T9	T4	NoRel	true	colisión	accidente

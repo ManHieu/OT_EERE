@@ -1,0 +1,74 @@
+Text	Anlæggelsen af jernbaner havde været afgørende for Mexicos udvikling ( i lighed med andre områder i Latinamerika ) og havde sat fart på den økonomiske udvikling samt forøget den centrale statsmagt .	Den isolation i forhold til den centrale ledelse , som mange fjerne områder havde nydt godt af eller lidt under , var nu slut .	Telegraflinjerne , der blev opsat ved siden af jernbanelinjerne betød omgående kommunikation mellem fjerne delstater og hovedstaden .	Den politiske snilde og fleksibilitet , som Díaz havde udvist i begyndelsen af porfiriatoen , var ved at svinde .	Han sørgede for at have delstatsguvernørerne under kontrol og udskiftede dem efter forgodtbefindende .
+Event	T0	Anlæggelsen	EVENT	0
+Event	T1	udvikling	EVENT	59
+Event	T2	udvikling	EVENT	151
+Event	T3	forøget	EVENT	166
+Event	T4	nydt	EVENT	281
+Event	T5	opsat	EVENT	355
+Event	T6	betød	EVENT	391
+Event	T7	kommunikation	EVENT	406
+Event	T8	snilde	EVENT	475
+Event	T9	udvist	EVENT	516
+Event	T10	svinde	EVENT	566
+Event	T11	sørgede	EVENT	579
+Event	T12	udskiftede	EVENT	637
+Event	T13	fart	EVENT	128
+Event	T14	isolation	EVENT	203
+Event	T15	lidt	EVENT	300
+Event	T16	slut	EVENT	320
+Event	T17	fleksibilitet	EVENT	485
+Event	T18	porfiriatoen	EVENT	540
+Event	T19	kontrol	EVENT	626
+Relation	T0	T1	CauseEffect	true	Anlæggelsen	udvikling
+Relation	T1	T0	EffectCause	true	udvikling	Anlæggelsen
+Relation	T0	T13	CauseEffect	true	Anlæggelsen	fart
+Relation	T13	T0	EffectCause	true	fart	Anlæggelsen
+Relation	T0	T3	CauseEffect	true	Anlæggelsen	forøget
+Relation	T3	T0	EffectCause	true	forøget	Anlæggelsen
+Relation	T0	T14	CauseEffect	true	Anlæggelsen	isolation
+Relation	T14	T0	EffectCause	true	isolation	Anlæggelsen
+Relation	T5	T7	CauseEffect	true	opsat	kommunikation
+Relation	T7	T5	EffectCause	true	kommunikation	opsat
+Relation	T12	T19	CauseEffect	true	udskiftede	kontrol
+Relation	T19	T12	EffectCause	true	kontrol	udskiftede
+Relation	T0	T2	NoRel	true	Anlæggelsen	udvikling
+Relation	T1	T13	NoRel	true	udvikling	fart
+Relation	T1	T19	NoRel	true	udvikling	kontrol
+Relation	T1	T6	NoRel	true	udvikling	betød
+Relation	T1	T8	NoRel	true	udvikling	snilde
+Relation	T10	T12	NoRel	true	svinde	udskiftede
+Relation	T10	T14	NoRel	true	svinde	isolation
+Relation	T10	T2	NoRel	true	svinde	udvikling
+Relation	T10	T4	NoRel	true	svinde	nydt
+Relation	T11	T12	NoRel	true	sørgede	udskiftede
+Relation	T11	T16	NoRel	true	sørgede	slut
+Relation	T11	T7	NoRel	true	sørgede	kommunikation
+Relation	T11	T9	NoRel	true	sørgede	udvist
+Relation	T12	T0	NoRel	true	udskiftede	Anlæggelsen
+Relation	T12	T17	NoRel	true	udskiftede	fleksibilitet
+Relation	T13	T15	NoRel	true	fart	lidt
+Relation	T13	T18	NoRel	true	fart	porfiriatoen
+Relation	T13	T7	NoRel	true	fart	kommunikation
+Relation	T14	T4	NoRel	true	isolation	nydt
+Relation	T15	T12	NoRel	true	lidt	udskiftede
+Relation	T15	T2	NoRel	true	lidt	udvikling
+Relation	T15	T6	NoRel	true	lidt	betød
+Relation	T15	T8	NoRel	true	lidt	snilde
+Relation	T16	T15	NoRel	true	slut	lidt
+Relation	T17	T4	NoRel	true	fleksibilitet	nydt
+Relation	T17	T5	NoRel	true	fleksibilitet	opsat
+Relation	T18	T11	NoRel	true	porfiriatoen	sørgede
+Relation	T18	T13	NoRel	true	porfiriatoen	fart
+Relation	T18	T7	NoRel	true	porfiriatoen	kommunikation
+Relation	T19	T11	NoRel	true	kontrol	sørgede
+Relation	T19	T18	NoRel	true	kontrol	porfiriatoen
+Relation	T2	T10	NoRel	true	udvikling	svinde
+Relation	T2	T3	NoRel	true	udvikling	forøget
+Relation	T2	T6	NoRel	true	udvikling	betød
+Relation	T2	T7	NoRel	true	udvikling	kommunikation
+Relation	T3	T16	NoRel	true	forøget	slut
+Relation	T3	T6	NoRel	true	forøget	betød
+Relation	T6	T2	NoRel	true	betød	udvikling
+Relation	T7	T10	NoRel	true	kommunikation	svinde
+Relation	T8	T15	NoRel	true	snilde	lidt
+Relation	T8	T18	NoRel	true	snilde	porfiriatoen

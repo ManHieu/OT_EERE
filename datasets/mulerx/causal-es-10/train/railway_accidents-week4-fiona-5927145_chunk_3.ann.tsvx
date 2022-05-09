@@ -1,0 +1,31 @@
+Text	El testimonio de un ex-ferroviario que esa noche cubría turno en la estación de Valladolid y tuvo acceso a conversaciones entre Valladolid , Medina del Campo y el puesto de mando de Valladolid reza lo siguiente :	Los ocho fallecidos viajaban en el expreso " Cantabria " y eran originarios de la provincia del mismo nombre .	Entre los fallecidos se encontraba el Consejero de Obras Públicas del Gobierno Cántabro , Félix Ducasse .	Otro alto cargo del mismo gobierno , Juan Tarín , director general de Agricultura , quedó atrapado durante horas , siendo liberado por los bomberos .	El accidente provocó un gran impacto en la sociedad vallisoletana .
+Event	T0	testimonio	EVENT	3
+Event	T1	acceso	EVENT	98
+Event	T2	conversaciones	EVENT	107
+Event	T4	viajaban	EVENT	233
+Event	T5	fallecidos	EVENT	334
+Event	T6	atrapado	EVENT	520
+Event	T7	liberado	EVENT	552
+Event	T8	provocó	EVENT	593
+Event	T9	impacto	EVENT	609
+Event	T3	fallecidos	EVENT	222
+Event	T10	accidente	EVENT	583
+Relation	T10	T3	CauseEffect	true	accidente	fallecidos
+Relation	T3	T10	EffectCause	true	fallecidos	accidente
+Relation	T0	T10	NoRel	true	testimonio	accidente
+Relation	T0	T6	NoRel	true	testimonio	atrapado
+Relation	T1	T2	NoRel	true	acceso	conversaciones
+Relation	T1	T7	NoRel	true	acceso	liberado
+Relation	T2	T0	NoRel	true	conversaciones	testimonio
+Relation	T2	T9	NoRel	true	conversaciones	impacto
+Relation	T3	T9	NoRel	true	fallecidos	impacto
+Relation	T4	T3	NoRel	true	viajaban	fallecidos
+Relation	T4	T7	NoRel	true	viajaban	liberado
+Relation	T5	T1	NoRel	true	fallecidos	acceso
+Relation	T5	T9	NoRel	true	fallecidos	impacto
+Relation	T7	T1	NoRel	true	liberado	acceso
+Relation	T7	T2	NoRel	true	liberado	conversaciones
+Relation	T7	T4	NoRel	true	liberado	viajaban
+Relation	T8	T6	NoRel	true	provocó	atrapado
+Relation	T9	T10	NoRel	true	impacto	accidente
+Relation	T9	T8	NoRel	true	impacto	provocó

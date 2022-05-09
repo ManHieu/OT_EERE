@@ -1,0 +1,28 @@
+Text	La pérdida de frenos hizo que no se respetara la parada del tranvía existente en la glorieta de las Pirámides .	Los heridos fueron destinados a diversas casas de socorro del barrio de Arganzuela , así como a hospital provincial de Madrid ubicado en Atocha .	De los quince fallecidos , uno de ellos quedó sin identficar durante una semana .	Para mantener el servicio de transporte se tuvo que desviar a puentes adyacentes un servicio temporal .	El servicio tranviario de la línea 31 quedó restablecido en agosto de este mismo año .
+Event	T0	pérdida	EVENT	3
+Event	T1	hizo	EVENT	21
+Event	T2	parada	EVENT	49
+Event	T3	heridos	EVENT	116
+Event	T4	destinados	EVENT	131
+Event	T5	fallecidos	EVENT	272
+Event	T6	quedó	EVENT	298
+Event	T7	identficar	EVENT	308
+Event	T8	tuvo	EVENT	383
+Event	T9	desviar	EVENT	392
+Event	T10	restablecido	EVENT	488
+Relation	T3	T4	SuperSub	true	heridos	destinados
+Relation	T4	T3	SubSuper	true	destinados	heridos
+Relation	T0	T1	NoRel	true	pérdida	hizo
+Relation	T10	T8	NoRel	true	restablecido	tuvo
+Relation	T2	T1	NoRel	true	parada	hizo
+Relation	T2	T7	NoRel	true	parada	identficar
+Relation	T2	T8	NoRel	true	parada	tuvo
+Relation	T3	T6	NoRel	true	heridos	quedó
+Relation	T4	T9	NoRel	true	destinados	desviar
+Relation	T5	T3	NoRel	true	fallecidos	heridos
+Relation	T5	T9	NoRel	true	fallecidos	desviar
+Relation	T6	T5	NoRel	true	quedó	fallecidos
+Relation	T7	T5	NoRel	true	identficar	fallecidos
+Relation	T8	T10	NoRel	true	tuvo	restablecido
+Relation	T8	T9	NoRel	true	tuvo	desviar
+Relation	T9	T2	NoRel	true	desviar	parada

@@ -1,0 +1,22 @@
+Text	küçükresim | NSKK bayrağı küçükresim | Alman işgali altındaki NSKK eğitim taşıma hizmeti kamyonlar , Ekim 1939 , Poznań	NASYONAL SOSYALIST SÜRÜCÜLER KOLORDUSU ( Almanca : _ Nationalsozialistisches Kraftfahrkorps _ , NSKK ) , Nasyonal Sosyalist Alman İşçi Partisi'nin 1931- 1945 arasında faaliyet göstermiş , 1930 yılı başından beri var olan eski Nasyonal Sosyalist Otomobil Kolordusu'nun halefi olarak kurulmuş paramiliter bir örgütüydü .	_ Nasyonal Sosyalist Motor Kolordusu _ olarak da biliniyordu .	1934 yılında Adolf Hühnlein başkanlığında yönetildi .	1942 yılında Hühnlein'in ölümünden sonra Erwin Krauss _ Korpsführer _ ( Kolordu Lideri ) görevini devraldı .
+Event	T1	kurulmuş	EVENT	402
+Event	T2	biliniyordu	EVENT	488
+Event	T3	yönetildi	EVENT	544
+Event	T4	ölümünden	EVENT	581
+Event	T5	devraldı	EVENT	654
+Event	T6	işgali	EVENT	45
+Event	T7	hizmeti	EVENT	81
+Event	T8	göstermiş	EVENT	296
+Event	T9	halefi	EVENT	388
+Relation	T1	T5	NoRel	true	kurulmuş	devraldı
+Relation	T3	T5	NoRel	true	yönetildi	devraldı
+Relation	T3	T7	NoRel	true	yönetildi	hizmeti
+Relation	T4	T3	NoRel	true	ölümünden	yönetildi
+Relation	T4	T6	NoRel	true	ölümünden	işgali
+Relation	T4	T8	NoRel	true	ölümünden	göstermiş
+Relation	T4	T9	NoRel	true	ölümünden	halefi
+Relation	T5	T6	NoRel	true	devraldı	işgali
+Relation	T7	T5	NoRel	true	hizmeti	devraldı
+Relation	T7	T9	NoRel	true	hizmeti	halefi
+Relation	T8	T4	NoRel	true	göstermiş	ölümünden
+Relation	T9	T3	NoRel	true	halefi	yönetildi

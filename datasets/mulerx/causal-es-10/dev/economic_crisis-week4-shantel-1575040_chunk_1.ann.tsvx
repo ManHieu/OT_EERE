@@ -1,0 +1,58 @@
+Text	El presidente Fernando de la Rúa lo nombró ministro de trabajo , cargo que ocupó hasta el 6 de octubre del año 2000 .	Se alejó del ministerio bajo sospechas de corrupción para la aprobación de la ley de flexibilidad laboral , aunque siguió ocupando un cargo de importancia en el gobierno ya que fue derivado a la secretaría de la presidencia , ocupada anteriormente por Jorge de la Rúa .	La periodista María Fernanda Villosio , afirmó después de una investigación que las negociaciones con los senadores se definieron en el despacho presidencial del mismo Fernando de la Rúa , quien dijo : " Arréglenlo con Santibañes " , jefe de la SIDE .	Un excolaborador del entonces presidente provisional del Senado José Genoud ( UCR ) , afirmó que se pagaron coimas con 5 millones de pesos extraídos de la bóveda de la SIDE y que cobraron el propio Genoud y el entonces ministro de Trabajo , Alberto Flamarique .	Flamarique fue acusado por la justicia de “ cohecho activo ” por el supuesto reparto ilegal de dinero entre los legisladores para la sanción de la reforma laboral en el 2000 .
+Event	T0	nombró	EVENT	36
+Event	T1	ocupó	EVENT	75
+Event	T2	alejó	EVENT	121
+Event	T3	sospechas	EVENT	147
+Event	T4	corrupción	EVENT	160
+Event	T5	aprobación	EVENT	179
+Event	T6	ocupando	EVENT	240
+Event	T7	derivado	EVENT	299
+Event	T8	ocupada	EVENT	344
+Event	T9	afirmó	EVENT	428
+Event	T10	investigación	EVENT	450
+Event	T11	negociaciones	EVENT	472
+Event	T12	definieron	EVENT	507
+Event	T13	dijo	EVENT	583
+Event	T14	afirmó	EVENT	726
+Event	T16	extraídos	EVENT	779
+Event	T17	cobraron	EVENT	819
+Event	T18	acusado	EVENT	917
+Event	T19	sanción	EVENT	1035
+Relation	T0	T1	NoRel	true	nombró	ocupó
+Relation	T0	T16	NoRel	true	nombró	extraídos
+Relation	T0	T17	NoRel	true	nombró	cobraron
+Relation	T1	T13	NoRel	true	ocupó	dijo
+Relation	T1	T16	NoRel	true	ocupó	extraídos
+Relation	T1	T7	NoRel	true	ocupó	derivado
+Relation	T10	T6	NoRel	true	investigación	ocupando
+Relation	T11	T4	NoRel	true	negociaciones	corrupción
+Relation	T12	T0	NoRel	true	definieron	nombró
+Relation	T12	T17	NoRel	true	definieron	cobraron
+Relation	T12	T19	NoRel	true	definieron	sanción
+Relation	T12	T5	NoRel	true	definieron	aprobación
+Relation	T12	T9	NoRel	true	definieron	afirmó
+Relation	T13	T12	NoRel	true	dijo	definieron
+Relation	T13	T18	NoRel	true	dijo	acusado
+Relation	T13	T19	NoRel	true	dijo	sanción
+Relation	T14	T10	NoRel	true	afirmó	investigación
+Relation	T16	T12	NoRel	true	extraídos	definieron
+Relation	T17	T7	NoRel	true	cobraron	derivado
+Relation	T18	T3	NoRel	true	acusado	sospechas
+Relation	T19	T0	NoRel	true	sanción	nombró
+Relation	T19	T9	NoRel	true	sanción	afirmó
+Relation	T2	T19	NoRel	true	alejó	sanción
+Relation	T3	T6	NoRel	true	sospechas	ocupando
+Relation	T4	T5	NoRel	true	corrupción	aprobación
+Relation	T4	T6	NoRel	true	corrupción	ocupando
+Relation	T5	T16	NoRel	true	aprobación	extraídos
+Relation	T5	T3	NoRel	true	aprobación	sospechas
+Relation	T6	T12	NoRel	true	ocupando	definieron
+Relation	T6	T17	NoRel	true	ocupando	cobraron
+Relation	T6	T4	NoRel	true	ocupando	corrupción
+Relation	T7	T12	NoRel	true	derivado	definieron
+Relation	T7	T14	NoRel	true	derivado	afirmó
+Relation	T7	T17	NoRel	true	derivado	cobraron
+Relation	T8	T14	NoRel	true	ocupada	afirmó
+Relation	T9	T14	NoRel	true	afirmó	afirmó
+Relation	T9	T17	NoRel	true	afirmó	cobraron
+Relation	T9	T18	NoRel	true	afirmó	acusado

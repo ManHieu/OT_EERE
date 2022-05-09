@@ -1,0 +1,35 @@
+Text	El libro incluye un registro pormenorizado de las 100 víctimas mortales y de los heridos .	- La autoridad judicial militar , que fue la que definitivamente intervino ya que los ferroviarios se encontraban militarizados , procesó bajo la acusación de 83 homicidios a cuatro trabajadores de Renfe incluido el maquinista del tren correo , que fueron absueltos tras el correspondiente juicio .	- Todas las víctimas , o sus familiares , recibieron las indemnizaciones previstas por el SOV ( Seguro Obligatorio de Viajeros ) que en el caso de los fallecidos totalizaron 2800000 pesetas .	- La noticia del accidente apareció de manera destacada al día siguiente en por lo menos 20 periódicos de toda España , si bien las cifras de víctimas mortales mencionadas eran inferiores a 30 advirtiéndose que eran provisionales .	- En los días siguientes , se siguieron publicando noticias subiendo la cifra a 59 ; también se publicaron en la prensa numerosas esquelas y varios edictos judiciales con nombres de víctimas mortales .
+Event	T0	heridos	EVENT	81
+Event	T1	intervino	EVENT	156
+Event	T2	militarizados	EVENT	205
+Event	T3	acusación	EVENT	237
+Event	T4	homicidios	EVENT	253
+Event	T5	absueltos	EVENT	347
+Event	T6	juicio	EVENT	381
+Event	T7	previstas	EVENT	463
+Event	T8	noticia	EVENT	587
+Event	T9	apareció	EVENT	609
+Event	T10	mencionadas	EVENT	742
+Event	T11	advirtiéndose	EVENT	775
+Event	T12	subiendo	EVENT	874
+Event	T13	publicaron	EVENT	910
+Event	T14	accidente	EVENT	599
+Relation	T1	T4	NoRel	true	intervino	homicidios
+Relation	T1	T9	NoRel	true	intervino	apareció
+Relation	T10	T8	NoRel	true	mencionadas	noticia
+Relation	T11	T2	NoRel	true	advirtiéndose	militarizados
+Relation	T11	T7	NoRel	true	advirtiéndose	previstas
+Relation	T12	T1	NoRel	true	subiendo	intervino
+Relation	T12	T3	NoRel	true	subiendo	acusación
+Relation	T12	T6	NoRel	true	subiendo	juicio
+Relation	T13	T10	NoRel	true	publicaron	mencionadas
+Relation	T2	T12	NoRel	true	militarizados	subiendo
+Relation	T2	T9	NoRel	true	militarizados	apareció
+Relation	T3	T1	NoRel	true	acusación	intervino
+Relation	T3	T4	NoRel	true	acusación	homicidios
+Relation	T5	T0	NoRel	true	absueltos	heridos
+Relation	T5	T10	NoRel	true	absueltos	mencionadas
+Relation	T5	T4	NoRel	true	absueltos	homicidios
+Relation	T6	T11	NoRel	true	juicio	advirtiéndose
+Relation	T7	T13	NoRel	true	previstas	publicaron
+Relation	T9	T11	NoRel	true	apareció	advirtiéndose

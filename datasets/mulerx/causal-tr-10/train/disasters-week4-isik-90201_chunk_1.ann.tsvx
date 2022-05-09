@@ -1,0 +1,24 @@
+Text	O zamanlarda nüfusun büyük çoğunluğu yapay_lös ( kül rengi toprak ) toprağından uçurumlardaki yapay mağaralarında yaşamaktaydılar , felaket sırasında bu mağaraların birçoğu göçmüştür .	Jeolojik verilere dayanarak yapılan modern tahminlere göre , depremin Mw ( moment magnitude scale ) ölçüsüne göre yaklaşık 11 şiddetinde olduğunu tahmin edilmektedir .	Tarihte en ölümcül deprem ve en ölümcül beşinci doğal felaket olmasına rağmen , daha büyük şiddette depremler de olmuştur .	Artçıl şoklar ayda birkaç kere olmak üzere yarım yıl kadar sürmüştür .	Depremin merkezi Şensi'de bulunan Hua Dağı yakınındaki Hua ilçesidir ( enlem 34.5 , boylam 109.7 ) .
+Event	T0	felaket	EVENT	132
+Event	T1	göçmüştür	EVENT	173
+Event	T2	tahminlere	EVENT	228
+Event	T4	deprem	EVENT	372
+Event	T5	felaket	EVENT	407
+Event	T6	depremler	EVENT	453
+Event	T7	sürmüştür	EVENT	536
+Event	T8	Depremin	EVENT	548
+Event	T3	edilmektedir	EVENT	338
+Event	T9	olmuştur	EVENT	466
+Relation	T0	T1	CauseEffect	true	felaket	göçmüştür
+Relation	T1	T0	EffectCause	true	göçmüştür	felaket
+Relation	T0	T3	CauseEffect	true	felaket	edilmektedir
+Relation	T3	T0	EffectCause	true	edilmektedir	felaket
+Relation	T0	T7	CauseEffect	true	felaket	sürmüştür
+Relation	T7	T0	EffectCause	true	sürmüştür	felaket
+Relation	T1	T2	NoRel	true	göçmüştür	tahminlere
+Relation	T3	T2	NoRel	true	edilmektedir	tahminlere
+Relation	T3	T8	NoRel	true	edilmektedir	Depremin
+Relation	T4	T2	NoRel	true	deprem	tahminlere
+Relation	T5	T6	NoRel	true	felaket	depremler
+Relation	T6	T3	NoRel	true	depremler	edilmektedir
+Relation	T8	T9	NoRel	true	Depremin	olmuştur

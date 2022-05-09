@@ -1,0 +1,44 @@
+Text	Omkring 12.000 mennesker omkom .	På grund af den lave jordskælvsrisiko og den forholdsvis lavvandede Nordsø er risikoen for tsunamier ikke stor i Danmark , men der forekommer usædvanlige bølger .	Den største risiko i Nordatlanten menes at være fra skred af undersøiske vulkankegler eller bevægelser langs forkastningen ved den Iberiske Halvø .	Storegga-skreddet omkring år 6200 f.v.t. var et undersøisk jordskred ved den norske kontinentalskrænt ud for Møre .	Man har undersøgt sedimenter og fossiler af havdyr , som tsunamien skyllede op på land , og fastslået højden til 20 meter på Shetland , 6-10 meter på Færøerne , 9-11 meter nær Sula , 6-7 meter nær Trondhjem , 3-4 meter nær Bergen og 3-6 meter i Skotland .
+Event	T0	omkom	EVENT	25
+Event	T1	tsunamier	EVENT	124
+Event	T2	forekommer	EVENT	164
+Event	T3	bølger	EVENT	187
+Event	T4	skred	EVENT	248
+Event	T5	bevægelser	EVENT	288
+Event	T6	jordskred	EVENT	403
+Event	T7	undersøgt	EVENT	468
+Event	T8	fastslået	EVENT	552
+Event	T9	jordskælvsrisiko	EVENT	54
+Event	T10	lavvandede	EVENT	90
+Event	T11	risikoen	EVENT	111
+Event	T12	risiko	EVENT	208
+Event	T13	Storegga-skreddet	EVENT	344
+Event	T14	tsunamien	EVENT	517
+Relation	T9	T11	CauseEffect	true	jordskælvsrisiko	risikoen
+Relation	T11	T9	EffectCause	true	risikoen	jordskælvsrisiko
+Relation	T10	T11	CauseEffect	true	lavvandede	risikoen
+Relation	T11	T10	EffectCause	true	risikoen	lavvandede
+Relation	T4	T12	CauseEffect	true	skred	risiko
+Relation	T12	T4	EffectCause	true	risiko	skred
+Relation	T5	T12	CauseEffect	true	bevægelser	risiko
+Relation	T12	T5	EffectCause	true	risiko	bevægelser
+Relation	T7	T8	CauseEffect	true	undersøgt	fastslået
+Relation	T8	T7	EffectCause	true	fastslået	undersøgt
+Relation	T0	T5	NoRel	true	omkom	bevægelser
+Relation	T0	T7	NoRel	true	omkom	undersøgt
+Relation	T11	T6	NoRel	true	risikoen	jordskred
+Relation	T12	T6	NoRel	true	risiko	jordskred
+Relation	T13	T8	NoRel	true	Storegga-skreddet	fastslået
+Relation	T14	T0	NoRel	true	tsunamien	omkom
+Relation	T14	T2	NoRel	true	tsunamien	forekommer
+Relation	T2	T12	NoRel	true	forekommer	risiko
+Relation	T2	T14	NoRel	true	forekommer	tsunamien
+Relation	T3	T8	NoRel	true	bølger	fastslået
+Relation	T4	T6	NoRel	true	skred	jordskred
+Relation	T5	T7	NoRel	true	bevægelser	undersøgt
+Relation	T7	T13	NoRel	true	undersøgt	Storegga-skreddet
+Relation	T7	T5	NoRel	true	undersøgt	bevægelser
+Relation	T8	T0	NoRel	true	fastslået	omkom
+Relation	T8	T13	NoRel	true	fastslået	Storegga-skreddet
+Relation	T9	T1	NoRel	true	jordskælvsrisiko	tsunamier
+Relation	T9	T10	NoRel	true	jordskælvsrisiko	lavvandede

@@ -1,0 +1,41 @@
+Text	دوسری طرف بھارتی سیکیورٹی فورسز نے پاکستانی رینجرز کی گولہ باری سے تقریبا چودہ شہریوں کی ہلاکت کا دعویٰ کیا ۔	-___- نومبر 19 ، بھارتی بارڈر فورسز کی پانڈو سیکٹر میں فائرنگ سے ایک پاکستانی فوجی ہلاک ہوا ۔	یاد رہے کہ یہ جنگ بندی کی خلاف ورزی کا یہ واقع پاکستان کی طرف سے جذبہ خیر سگالی کے تحت بھارت زیر انتظام جمو و کشمیر کا رہائشی 13 سالہ طالب علم کو بھارت سیکیورٹی انتظامیہ کے حوالے کرنے کے ایک دن بعد پیش آیا ۔	-___- دسمبر 30 ، پاکستانی حکام نے غلطی سے کنٹرول لائن پار کرنی والی 16 سالہ لڑکی کو اس کے خاندان کے حوالے کر دیا ۔	-___- دسمبر 31 ، بی ایس ایف سپاہی ، کانسٹیبل سری رام گواری کو جموں و کشمیر کے سامبا سیکٹر میں پاکستان کی طرف سے گولی مار کر قتل کر دیا گیا ۔
+Event	T0	ہلاکت	EVENT	89
+Event	T2	فائرنگ	EVENT	165
+Event	T4	بندی	EVENT	222
+Event	T5	ورزی	EVENT	235
+Event	T6	واقع	EVENT	246
+Event	T9	غلطی	EVENT	446
+Event	T11	حوالے	EVENT	512
+Event	T13	مار	EVENT	644
+Event	T16	گولہ باری	EVENT	54
+Event	T14	دعویٰ	EVENT	98
+Event	T1	ہلاک	EVENT	193
+Event	T3	حوالے	EVENT	377
+Event	T15	پیش	EVENT	402
+Event	T7	پار	EVENT	466
+Event	T8	قتل	EVENT	651
+Relation	T6	T5	SuperSub	true	واقع	ورزی
+Relation	T5	T6	SubSuper	true	ورزی	واقع
+Relation	T7	T9	SuperSub	true	پار	غلطی
+Relation	T9	T7	SubSuper	true	غلطی	پار
+Relation	T0	T7	NoRel	true	ہلاکت	پار
+Relation	T1	T13	NoRel	true	ہلاک	مار
+Relation	T1	T5	NoRel	true	ہلاک	ورزی
+Relation	T1	T9	NoRel	true	ہلاک	غلطی
+Relation	T11	T6	NoRel	true	حوالے	واقع
+Relation	T13	T2	NoRel	true	مار	فائرنگ
+Relation	T13	T3	NoRel	true	مار	حوالے
+Relation	T14	T2	NoRel	true	دعویٰ	فائرنگ
+Relation	T15	T9	NoRel	true	پیش	غلطی
+Relation	T16	T5	NoRel	true	گولہ باری	ورزی
+Relation	T16	T8	NoRel	true	گولہ باری	قتل
+Relation	T2	T11	NoRel	true	فائرنگ	حوالے
+Relation	T2	T13	NoRel	true	فائرنگ	مار
+Relation	T2	T5	NoRel	true	فائرنگ	ورزی
+Relation	T3	T13	NoRel	true	حوالے	مار
+Relation	T5	T11	NoRel	true	ورزی	حوالے
+Relation	T6	T16	NoRel	true	واقع	گولہ باری
+Relation	T7	T0	NoRel	true	پار	ہلاکت
+Relation	T7	T1	NoRel	true	پار	ہلاک
+Relation	T7	T6	NoRel	true	پار	واقع
+Relation	T8	T16	NoRel	true	قتل	گولہ باری

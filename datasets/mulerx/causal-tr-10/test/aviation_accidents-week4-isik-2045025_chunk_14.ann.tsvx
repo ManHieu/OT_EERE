@@ -1,0 +1,32 @@
+Text	İki Rus Mi- 8 helikopteri , Rus Sukhoi Su - 24M uçağındaki pilotları kurtarma ve arama çalışmaları kapsamında alana gönderildi .	Helikopterlerin ikisi de Suriye Türkmen Ordusu'na mensup muhalifler tarafından düşük yoğunluklu ateş altında kaldı ve bir Rus deniz piyadesi öldürüldü .	Tarafsız bölgeye iniş yapıldıktan sonra zarar gören helikopter terkedildi ve mürettebatın tamamı tahliye edildi .	Özgür Suriye Ordusu'na bağlı 1. Sahil Tümeni'ne mensup muhalifler tarafından ABD yapımı BGM - 71 TOW tanksavar füzesi ile imha edildi .	- ABD Devlet Başkanı Barack Obama , " Rusya'nın Suriye Muhalif ve Devrimci Güçler Ulusal Koalisyonu'nu değil , IŞİD’i hedef alması durumunda bu tür problemlerin olmayacağını ve Türkiye'nin kendi hava sahasını ve topraklarını korumaya hakkının bulunduğunu " söyledi .
+Event	T1	gönderildi	EVENT	116
+Event	T2	kaldı	EVENT	238
+Event	T3	öldürüldü	EVENT	270
+Event	T4	yapıldıktan	EVENT	304
+Event	T5	zarar	EVENT	322
+Event	T6	terkedildi	EVENT	345
+Event	T7	edildi	EVENT	387
+Event	T9	söyledi	EVENT	789
+Event	T10	çalışmaları	EVENT	87
+Event	T8	imha	EVENT	518
+Event	T11	füzesi	EVENT	507
+Relation	T10	T1	CauseEffect	true	çalışmaları	gönderildi
+Relation	T1	T10	EffectCause	true	gönderildi	çalışmaları
+Relation	T2	T3	CauseEffect	true	kaldı	öldürüldü
+Relation	T3	T2	EffectCause	true	öldürüldü	kaldı
+Relation	T2	T5	CauseEffect	true	kaldı	zarar
+Relation	T5	T2	EffectCause	true	zarar	kaldı
+Relation	T5	T4	CauseEffect	true	zarar	yapıldıktan
+Relation	T4	T5	EffectCause	true	yapıldıktan	zarar
+Relation	T5	T7	CauseEffect	true	zarar	edildi
+Relation	T7	T5	EffectCause	true	edildi	zarar
+Relation	T7	T6	CauseEffect	true	edildi	terkedildi
+Relation	T6	T7	EffectCause	true	terkedildi	edildi
+Relation	T11	T8	CauseEffect	true	füzesi	imha
+Relation	T8	T11	EffectCause	true	imha	füzesi
+Relation	T1	T2	NoRel	true	gönderildi	kaldı
+Relation	T11	T10	NoRel	true	füzesi	çalışmaları
+Relation	T11	T5	NoRel	true	füzesi	zarar
+Relation	T3	T6	NoRel	true	öldürüldü	terkedildi
+Relation	T7	T1	NoRel	true	edildi	gönderildi
+Relation	T7	T11	NoRel	true	edildi	füzesi

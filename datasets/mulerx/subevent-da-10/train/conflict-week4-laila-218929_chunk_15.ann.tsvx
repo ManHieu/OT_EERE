@@ -1,0 +1,67 @@
+Text	Det samtidige slag ved Artemisium havde indtil da været uafgjort ; men da nyheden om Thermopylæ nåede dem trak den allierede flåde sig tilbage idet det ikke længere var vigtigt at holde stræderne ved Artemisium .	Den allierede flåde sejlede herefter fra Artemisium til Salamis for at deltage i evakueringen af Athen .	Undervejs efterlod Themistokles inskriptioner , som henvendte sig til de jonisk græske besætninger i den persiske flåde ved alle de kilder , som de kunne tænkes at passere , i hvilke de blev opfordret til at skifte over på den græske side .	Efter_slaget ved Thermopylæ plyndrede og brændte den persiske hær de byer i Boiotien , som ikke havde overgivet sig – Platæa og Thespiai inden den marcherede mod den nu_rømmede by Athen .	De allierede ( fortrinsvis peloponnesere ) forberedte sig på at forsvare Korinthtangen .
+Event	T0	slag	EVENT	14
+Event	T1	nyheden	EVENT	74
+Event	T2	nåede	EVENT	96
+Event	T3	trak	EVENT	106
+Event	T4	holde	EVENT	180
+Event	T5	sejlede	EVENT	233
+Event	T6	evakueringen	EVENT	294
+Event	T7	efterlod	EVENT	328
+Event	T8	henvendte	EVENT	370
+Event	T9	passere	EVENT	482
+Event	T10	opfordret	EVENT	509
+Event	T11	Efter_slaget	EVENT	559
+Event	T12	plyndrede	EVENT	587
+Event	T13	brændte	EVENT	600
+Event	T14	overgivet	EVENT	661
+Event	T15	marcherede	EVENT	706
+Event	T16	forberedte	EVENT	790
+Event	T17	forsvare	EVENT	811
+Event	T18	uafgjort	EVENT	56
+Event	T19	inskriptioner	EVENT	350
+Event	T20	nu_rømmede	EVENT	725
+Relation	T11	T12	SuperSub	true	Efter_slaget	plyndrede
+Relation	T12	T11	SubSuper	true	plyndrede	Efter_slaget
+Relation	T11	T13	SuperSub	true	Efter_slaget	brændte
+Relation	T13	T11	SubSuper	true	brændte	Efter_slaget
+Relation	T1	T0	NoRel	true	nyheden	slag
+Relation	T10	T14	NoRel	true	opfordret	overgivet
+Relation	T10	T15	NoRel	true	opfordret	marcherede
+Relation	T11	T17	NoRel	true	Efter_slaget	forsvare
+Relation	T11	T6	NoRel	true	Efter_slaget	evakueringen
+Relation	T12	T20	NoRel	true	plyndrede	nu_rømmede
+Relation	T12	T8	NoRel	true	plyndrede	henvendte
+Relation	T13	T5	NoRel	true	brændte	sejlede
+Relation	T14	T12	NoRel	true	overgivet	plyndrede
+Relation	T14	T3	NoRel	true	overgivet	trak
+Relation	T15	T2	NoRel	true	marcherede	nåede
+Relation	T16	T11	NoRel	true	forberedte	Efter_slaget
+Relation	T16	T4	NoRel	true	forberedte	holde
+Relation	T17	T3	NoRel	true	forsvare	trak
+Relation	T17	T4	NoRel	true	forsvare	holde
+Relation	T17	T9	NoRel	true	forsvare	passere
+Relation	T18	T11	NoRel	true	uafgjort	Efter_slaget
+Relation	T18	T13	NoRel	true	uafgjort	brændte
+Relation	T18	T17	NoRel	true	uafgjort	forsvare
+Relation	T19	T10	NoRel	true	inskriptioner	opfordret
+Relation	T19	T11	NoRel	true	inskriptioner	Efter_slaget
+Relation	T19	T6	NoRel	true	inskriptioner	evakueringen
+Relation	T2	T12	NoRel	true	nåede	plyndrede
+Relation	T2	T4	NoRel	true	nåede	holde
+Relation	T2	T8	NoRel	true	nåede	henvendte
+Relation	T20	T0	NoRel	true	nu_rømmede	slag
+Relation	T20	T17	NoRel	true	nu_rømmede	forsvare
+Relation	T3	T19	NoRel	true	trak	inskriptioner
+Relation	T4	T11	NoRel	true	holde	Efter_slaget
+Relation	T4	T15	NoRel	true	holde	marcherede
+Relation	T4	T8	NoRel	true	holde	henvendte
+Relation	T5	T11	NoRel	true	sejlede	Efter_slaget
+Relation	T5	T14	NoRel	true	sejlede	overgivet
+Relation	T5	T15	NoRel	true	sejlede	marcherede
+Relation	T6	T3	NoRel	true	evakueringen	trak
+Relation	T6	T5	NoRel	true	evakueringen	sejlede
+Relation	T7	T5	NoRel	true	efterlod	sejlede
+Relation	T7	T6	NoRel	true	efterlod	evakueringen
+Relation	T7	T8	NoRel	true	efterlod	henvendte
+Relation	T8	T7	NoRel	true	henvendte	efterlod
+Relation	T9	T6	NoRel	true	passere	evakueringen

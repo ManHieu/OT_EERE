@@ -1,0 +1,54 @@
+Text	Herefter spredte sygdommen sig til Hong Kong hvor det første tilfælde blev registreret den 12. marts 2003 .	Efterfølgende er også Canada , Frankrig , Irland , Italien , Schweiz , Singapore , Storbritannien , Taiwan , Thailand , Tyskland ( Frankfurt ) , USA og Vietnam ( Hanoi ) blevet ramt .	I dagene efter den 6. april viste det sig , at smitten i Kina var langt større end den officielle udmelding , og den kinesiske sundhedsminister blev fyret .	Den 28. april 2003 blev Vietnam erklæret for det første land som effektivt havde bekæmpet sygdommen og stoppet smitten i landet .	Status 7. maj 2003 : 6727 registrerede tilfælde fordelt på 28 lande på 6 kontinenter , hvoraf 478 er døde .
+Event	T0	sygdommen	EVENT	17
+Event	T1	tilfælde	EVENT	61
+Event	T2	registreret	EVENT	75
+Event	T3	ramt	EVENT	285
+Event	T4	viste	EVENT	320
+Event	T5	smitten	EVENT	339
+Event	T6	udmelding	EVENT	390
+Event	T7	fyret	EVENT	441
+Event	T8	erklæret	EVENT	481
+Event	T9	sygdommen	EVENT	539
+Event	T10	smitten	EVENT	560
+Event	T11	døde	EVENT	680
+Event	T12	stoppet	EVENT	552
+Event	T13	tilfælde	EVENT	618
+Event	T14	spredte	EVENT	9
+Event	T15	større	EVENT	364
+Event	T16	bekæmpet	EVENT	530
+Relation	T15	T7	CauseEffect	true	større	fyret
+Relation	T7	T15	EffectCause	true	fyret	større
+Relation	T0	T13	CauseEffect	true	sygdommen	tilfælde
+Relation	T13	T0	EffectCause	true	tilfælde	sygdommen
+Relation	T0	T11	CauseEffect	true	sygdommen	døde
+Relation	T11	T0	EffectCause	true	døde	sygdommen
+Relation	T0	T14	NoRel	true	sygdommen	spredte
+Relation	T1	T12	NoRel	true	tilfælde	stoppet
+Relation	T1	T16	NoRel	true	tilfælde	bekæmpet
+Relation	T1	T4	NoRel	true	tilfælde	viste
+Relation	T1	T5	NoRel	true	tilfælde	smitten
+Relation	T10	T1	NoRel	true	smitten	tilfælde
+Relation	T10	T11	NoRel	true	smitten	døde
+Relation	T10	T6	NoRel	true	smitten	udmelding
+Relation	T11	T6	NoRel	true	døde	udmelding
+Relation	T12	T1	NoRel	true	stoppet	tilfælde
+Relation	T12	T4	NoRel	true	stoppet	viste
+Relation	T13	T10	NoRel	true	tilfælde	smitten
+Relation	T13	T16	NoRel	true	tilfælde	bekæmpet
+Relation	T13	T3	NoRel	true	tilfælde	ramt
+Relation	T13	T7	NoRel	true	tilfælde	fyret
+Relation	T14	T13	NoRel	true	spredte	tilfælde
+Relation	T14	T4	NoRel	true	spredte	viste
+Relation	T14	T8	NoRel	true	spredte	erklæret
+Relation	T15	T10	NoRel	true	større	smitten
+Relation	T15	T6	NoRel	true	større	udmelding
+Relation	T16	T5	NoRel	true	bekæmpet	smitten
+Relation	T3	T15	NoRel	true	ramt	større
+Relation	T4	T14	NoRel	true	viste	spredte
+Relation	T4	T5	NoRel	true	viste	smitten
+Relation	T4	T9	NoRel	true	viste	sygdommen
+Relation	T5	T1	NoRel	true	smitten	tilfælde
+Relation	T5	T12	NoRel	true	smitten	stoppet
+Relation	T6	T0	NoRel	true	udmelding	sygdommen
+Relation	T6	T5	NoRel	true	udmelding	smitten
+Relation	T7	T12	NoRel	true	fyret	stoppet

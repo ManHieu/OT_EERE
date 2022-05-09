@@ -1,0 +1,55 @@
+Text	Daha ilk çatışma sırasında gerçek olmadığı aslında Bay Fantastik tarafından yapılan bir robot olduğu belli olan Thor , Kaptan Amerika'nın tarafındakilerden Bill Foster'ı ( Goliath ) öldürür .	Şaşkına dönen Kaptan ve arkadaşları savaş alanını terk ederler .	Kocasının ne tür bir canavar yarattığını görüp , Kaptan'ın mücadelesinin daha onurlu olduğuna karar veren Sue Richards ( Görünmez Kadın ) ve Human Torch ( Johnny Storm ) Kaptan'ın tarafına geçerler .	Demirr Adam Thor'un DNA'sından onun bir klonunu yaratmayı dener .	( Gerçek Thor'sa o sırada Yggdrasill'in parçalanması sonrası olan olaylarla Asgard'ı dünyada yeniden yaratma ve dünyaya düşen Asgardlı ailesi ve arkadaşlarını aramakla meşgul olduğu için İç Savaş olaylarına karışmaz .
+Event	T0	çatışma	EVENT	9
+Event	T1	yapılan	EVENT	76
+Event	T2	öldürür	EVENT	182
+Event	T3	görüp	EVENT	298
+Event	T4	mücadelesinin	EVENT	316
+Event	T5	dener	EVENT	515
+Event	T6	parçalanması	EVENT	563
+Event	T7	yaratma	EVENT	624
+Event	T8	karışmaz	EVENT	730
+Event	T9	yarattığını	EVENT	286
+Event	T10	karar veren	EVENT	351
+Event	T11	geçerler	EVENT	446
+Event	T12	terk ederler	EVENT	242
+Event	T13	yaratmayı	EVENT	505
+Event	T14	İç Savaş	EVENT	710
+Event	T15	aramakla	EVENT	682
+Relation	T3	T10	CauseEffect	true	görüp	karar veren
+Relation	T10	T3	EffectCause	true	karar veren	görüp
+Relation	T10	T11	CauseEffect	true	karar veren	geçerler
+Relation	T11	T10	EffectCause	true	geçerler	karar veren
+Relation	T2	T12	CauseEffect	true	öldürür	terk ederler
+Relation	T12	T2	EffectCause	true	terk ederler	öldürür
+Relation	T15	T8	CauseEffect	true	aramakla	karışmaz
+Relation	T8	T15	EffectCause	true	karışmaz	aramakla
+Relation	T6	T8	CauseEffect	true	parçalanması	karışmaz
+Relation	T8	T6	EffectCause	true	karışmaz	parçalanması
+Relation	T7	T8	CauseEffect	true	yaratma	karışmaz
+Relation	T8	T7	EffectCause	true	karışmaz	yaratma
+Relation	T0	T11	NoRel	true	çatışma	geçerler
+Relation	T0	T15	NoRel	true	çatışma	aramakla
+Relation	T1	T4	NoRel	true	yapılan	mücadelesinin
+Relation	T1	T5	NoRel	true	yapılan	dener
+Relation	T1	T8	NoRel	true	yapılan	karışmaz
+Relation	T10	T15	NoRel	true	karar veren	aramakla
+Relation	T10	T5	NoRel	true	karar veren	dener
+Relation	T10	T6	NoRel	true	karar veren	parçalanması
+Relation	T10	T8	NoRel	true	karar veren	karışmaz
+Relation	T10	T9	NoRel	true	karar veren	yarattığını
+Relation	T11	T13	NoRel	true	geçerler	yaratmayı
+Relation	T11	T3	NoRel	true	geçerler	görüp
+Relation	T12	T5	NoRel	true	terk ederler	dener
+Relation	T12	T7	NoRel	true	terk ederler	yaratma
+Relation	T14	T13	NoRel	true	İç Savaş	yaratmayı
+Relation	T14	T8	NoRel	true	İç Savaş	karışmaz
+Relation	T3	T9	NoRel	true	görüp	yarattığını
+Relation	T4	T15	NoRel	true	mücadelesinin	aramakla
+Relation	T4	T9	NoRel	true	mücadelesinin	yarattığını
+Relation	T5	T0	NoRel	true	dener	çatışma
+Relation	T6	T3	NoRel	true	parçalanması	görüp
+Relation	T7	T11	NoRel	true	yaratma	geçerler
+Relation	T8	T1	NoRel	true	karışmaz	yapılan
+Relation	T8	T10	NoRel	true	karışmaz	karar veren
+Relation	T9	T10	NoRel	true	yarattığını	karar veren
+Relation	T9	T5	NoRel	true	yarattığını	dener

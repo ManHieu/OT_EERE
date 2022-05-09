@@ -1,0 +1,1432 @@
+{
+  "id": "disasters-week4-isik-1208810_chunk_0.ann.tsvx",
+  "text": "2004 HINT OKYANUSU DEPREMI VE TSUNAMISI , 26 Aral\u0131k 2004 g\u00fcn\u00fc saat 00: 58 : 53 UTC'de meydana gelmi\u015f , merkezi Endonezya'n\u0131n Sumatra adas\u0131n\u0131n bat\u0131 k\u0131y\u0131s\u0131 a\u00e7\u0131klar\u0131nda olan depremdir .\tBatma nedeniyle meydana gelen deprem , Hint Okyanusu'na k\u0131y\u0131s\u0131 olan karalar\u0131 vuran , y\u00fcksekli\u011fi 30 metreye kadar \u00e7\u0131kan tsunamiler \u00fcretti ve bu nedenle on d\u00f6rt \u00fclkede 230 binden fazla ki\u015fi \u00f6ld\u00fc .\tBu , tarihteki en \u00e7ok \u00f6l\u00fcme yol a\u00e7an do\u011fal afetlerden biriydi .\tEndonezya en a\u011f\u0131r zarar\u0131 alan \u00fclkeydi , onu Sri Lanka , Hindistan ve Tayland izledi .\tk\u00fc\u00e7\u00fckresim | sol | 200px | Tsunaminin yay\u0131l\u0131\u015f\u0131 ve etkiledi\u011fi yerler",
+  "event": {
+    "T1": {
+      "id": "T1",
+      "text": "TSUNAMISI",
+      "label": "EVENT",
+      "char_index": 30,
+      "sid": 0,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "gelmi\u015f",
+      "label": "EVENT",
+      "char_index": 94,
+      "sid": 0,
+      "tid": [
+        18,
+        19
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "depremdir",
+      "label": "EVENT",
+      "char_index": 171,
+      "sid": 0,
+      "tid": [
+        28,
+        29
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "Batma",
+      "label": "EVENT",
+      "char_index": 183,
+      "sid": 1,
+      "tid": [
+        0,
+        1
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "deprem",
+      "label": "EVENT",
+      "char_index": 213,
+      "sid": 1,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "vuran",
+      "label": "EVENT",
+      "char_index": 260,
+      "sid": 1,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "\u00fcretti",
+      "label": "EVENT",
+      "char_index": 313,
+      "sid": 1,
+      "tid": [
+        19,
+        20
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "\u00f6ld\u00fc",
+      "label": "EVENT",
+      "char_index": 371,
+      "sid": 1,
+      "tid": [
+        30,
+        31
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "a\u00e7an",
+      "label": "EVENT",
+      "char_index": 410,
+      "sid": 2,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "alan",
+      "label": "EVENT",
+      "char_index": 467,
+      "sid": 3,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "izledi",
+      "label": "EVENT",
+      "char_index": 519,
+      "sid": 3,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "yay\u0131l\u0131\u015f\u0131",
+      "label": "EVENT",
+      "char_index": 566,
+      "sid": 4,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "etkiledi\u011fi",
+      "label": "EVENT",
+      "char_index": 578,
+      "sid": 4,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "2004 HINT OKYANUSU DEPREMI",
+      "label": "EVENT",
+      "char_index": 0,
+      "sid": 0,
+      "tid": [
+        0,
+        6
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "Tsunaminin",
+      "label": "EVENT",
+      "char_index": 555,
+      "sid": 4,
+      "tid": [
+        6,
+        7
+      ]
+    }
+  },
+  "relation": {
+    "T4-T5": "CauseEffect",
+    "T5-T4": "EffectCause",
+    "T4-T14": "CauseEffect",
+    "T14-T4": "EffectCause",
+    "T7-T8": "CauseEffect",
+    "T8-T7": "EffectCause",
+    "T15-T13": "CauseEffect",
+    "T13-T15": "EffectCause",
+    "T1-T3": "NoRel",
+    "T11-T7": "NoRel",
+    "T12-T10": "NoRel",
+    "T12-T13": "NoRel",
+    "T12-T15": "NoRel",
+    "T12-T5": "NoRel",
+    "T13-T14": "NoRel",
+    "T14-T1": "NoRel",
+    "T15-T12": "NoRel",
+    "T15-T9": "NoRel",
+    "T3-T1": "NoRel",
+    "T3-T12": "NoRel",
+    "T4-T3": "NoRel",
+    "T5-T13": "NoRel",
+    "T5-T7": "NoRel",
+    "T6-T10": "NoRel",
+    "T6-T15": "NoRel",
+    "T6-T9": "NoRel",
+    "T7-T10": "NoRel",
+    "T7-T13": "NoRel",
+    "T7-T3": "NoRel",
+    "T7-T6": "NoRel",
+    "T7-T9": "NoRel",
+    "T8-T10": "NoRel",
+    "T8-T3": "NoRel"
+  },
+  "sentence": [
+    [
+      "2004",
+      "HINT",
+      "OKYANUSU",
+      "DEPREMI",
+      "VE",
+      "TSUNAMISI",
+      ",",
+      "26",
+      "Aral\u0131k",
+      "2004",
+      "g\u00fcn\u00fc",
+      "saat",
+      "00:",
+      "58",
+      ":",
+      "53",
+      "UTC'de",
+      "meydana",
+      "gelmi\u015f",
+      ",",
+      "merkezi",
+      "Endonezya'n\u0131n",
+      "Sumatra",
+      "adas\u0131n\u0131n",
+      "bat\u0131",
+      "k\u0131y\u0131s\u0131",
+      "a\u00e7\u0131klar\u0131nda",
+      "olan",
+      "depremdir",
+      "."
+    ],
+    [
+      "Batma",
+      "nedeniyle",
+      "meydana",
+      "gelen",
+      "deprem",
+      ",",
+      "Hint",
+      "Okyanusu'na",
+      "k\u0131y\u0131s\u0131",
+      "olan",
+      "karalar\u0131",
+      "vuran",
+      ",",
+      "y\u00fcksekli\u011fi",
+      "30",
+      "metreye",
+      "kadar",
+      "\u00e7\u0131kan",
+      "tsunamiler",
+      "\u00fcretti",
+      "ve",
+      "bu",
+      "nedenle",
+      "on",
+      "d\u00f6rt",
+      "\u00fclkede",
+      "230",
+      "binden",
+      "fazla",
+      "ki\u015fi",
+      "\u00f6ld\u00fc",
+      "."
+    ],
+    [
+      "Bu",
+      ",",
+      "tarihteki",
+      "en",
+      "\u00e7ok",
+      "\u00f6l\u00fcme",
+      "yol",
+      "a\u00e7an",
+      "do\u011fal",
+      "afetlerden",
+      "biriydi",
+      "."
+    ],
+    [
+      "Endonezya",
+      "en",
+      "a\u011f\u0131r",
+      "zarar\u0131",
+      "alan",
+      "\u00fclkeydi",
+      ",",
+      "onu",
+      "Sri",
+      "Lanka",
+      ",",
+      "Hindistan",
+      "ve",
+      "Tayland",
+      "izledi",
+      "."
+    ],
+    [
+      "k\u00fc\u00e7\u00fckresim",
+      "|",
+      "sol",
+      "|",
+      "200px",
+      "|",
+      "Tsunaminin",
+      "yay\u0131l\u0131\u015f\u0131",
+      "ve",
+      "etkiledi\u011fi",
+      "yerler"
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        17
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        3
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        17
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        10
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        7
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        7
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        17
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        17
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        17
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        12
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        28
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        12
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        11
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        28
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        17
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        28
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        27
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        23
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        23
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        23
+      ],
+      [
+        0,
+        25
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        25
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        26
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        27
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        27
+      ],
+      [
+        0,
+        28
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        29
+      ],
+      [
+        0,
+        28
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        19
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        19
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        8
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        18
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        17
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        17
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        15
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        17
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        15
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        18
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        19
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        19
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        20
+      ],
+      [
+        1,
+        30
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        21
+      ],
+      [
+        1,
+        22
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        22
+      ],
+      [
+        1,
+        30
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        23
+      ],
+      [
+        1,
+        25
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        24
+      ],
+      [
+        1,
+        23
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        25
+      ],
+      [
+        1,
+        30
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        26
+      ],
+      [
+        1,
+        30
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        27
+      ],
+      [
+        1,
+        26
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        28
+      ],
+      [
+        1,
+        26
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        29
+      ],
+      [
+        1,
+        30
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        30
+      ],
+      [
+        1,
+        19
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        31
+      ],
+      [
+        1,
+        30
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        6
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        9
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        5
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        14
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        14
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        14
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        8
+      ],
+      "flat"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        8
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        8
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        5
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        14
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        7
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ]
+  ]
+}

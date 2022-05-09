@@ -1,0 +1,18 @@
+Text	Çatışma teorisyenleri , terörizmi , muhtemelen yanlış yönlendirme , cehalet veya mantıklı olmayan amaçlar nedeniyle teröristlerin kafasında yaratılan ve terör örgütleri tarafından ifade edilen şiddet davranışlarının bireysel hayal kırıklığı , agresiflik veya hazır olma durumunun sonucu olduğu adaletsizliğe bir tepki olarak görürler .	Terör eylemlerinin çoğunluğu dindar insanlar tarafından yapılmaktadır .	1980 ve 2003 yılları arasında dünya çapındaki intihar saldırganlarının % 83'ünde , % 43'ü dindardı .	Hartmann , Douglas ; Uggen , Christopher ( 2012 ) .	Teröristler şiddete başvururlar çünkü eğer şiddet kullanmazlar ise güç çekişmesini kaybederler ki bu bir çok çatışma teorisyeninin zayıfın silahı olarak görmesine yol açacaktır .
+Event	T1	yönlendirme	EVENT	54
+Event	T3	davranışlarının	EVENT	200
+Event	T4	tepki	EVENT	312
+Event	T5	eylemlerinin	EVENT	342
+Event	T6	intihar	EVENT	454
+Event	T7	kaybederler	EVENT	644
+Event	T2	terörizmi	EVENT	24
+Event	T9	dindar	EVENT	365
+Relation	T4	T2	CauseEffect	true	tepki	terörizmi
+Relation	T2	T4	EffectCause	true	terörizmi	tepki
+Relation	T9	T5	CauseEffect	true	dindar	eylemlerinin
+Relation	T5	T9	EffectCause	true	eylemlerinin	dindar
+Relation	T3	T7	NoRel	true	davranışlarının	kaybederler
+Relation	T4	T3	NoRel	true	tepki	davranışlarının
+Relation	T4	T9	NoRel	true	tepki	dindar
+Relation	T7	T6	NoRel	true	kaybederler	intihar
+Relation	T9	T3	NoRel	true	dindar	davranışlarının

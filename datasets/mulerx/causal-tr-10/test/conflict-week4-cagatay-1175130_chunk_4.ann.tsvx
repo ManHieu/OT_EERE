@@ -1,0 +1,46 @@
+Text	Ancak bu açıklamanın zayıf kaldığı yan şehirde yaşayanların İspanyol olması ve Britanya Ordusunun Fransızlara karşı İspanyollarla ittifak halinde olduğu gerçeğidir .	Olayların dinmesinin ardından çok sayıda asker uygunsuz davranışından ötürü kırbaç cezasına çarptırılacak , dar ağaçlarının kurulmasına rağmen kimse asılarak idam edilmeyecektir .	Muharebenin getirdiği kayıplara rağmen Britanya Ordusu Portekiz – İspanya sınırını güvence altına alarak İspanya içlerine doğru ilerlemeye uygun bir konuma geçmiştir .	Bernard Cornwell’in Sharpe's Company adıyla televizyon filmi olarak uyarlanan eserinde Badajoz’da olan olaylar detaylı olarak anlatılır .	Surlara yapılan sayısız girişimin başarısız olmasından sonra Richard Sharpe ve keskin nişancıları direnişi kırarak şehre girmeyi başarırlar .
+Event	T0	ittifak	EVENT	130
+Event	T1	dinmesinin	EVENT	176
+Event	T2	çarptırılacak	EVENT	258
+Event	T3	kayıplara	EVENT	368
+Event	T4	anlatılır	EVENT	640
+Event	T6	kırarak	EVENT	759
+Event	T7	açıklamanın	EVENT	9
+Event	T8	davranışından	EVENT	222
+Event	T10	kurulmasına	EVENT	290
+Event	T9	ilerlemeye	EVENT	474
+Event	T11	geçmiştir	EVENT	502
+Event	T12	uyarlanan	EVENT	582
+Event	T5	girişimin	EVENT	676
+Event	T13	direnişi	EVENT	750
+Event	T14	girmeyi	EVENT	773
+Event	T15	başarısız olmasından	EVENT	686
+Relation	T8	T2	CauseEffect	true	davranışından	çarptırılacak
+Relation	T2	T8	EffectCause	true	çarptırılacak	davranışından
+Relation	T6	T14	CauseEffect	true	kırarak	girmeyi
+Relation	T14	T6	EffectCause	true	girmeyi	kırarak
+Relation	T13	T15	CauseEffect	true	direnişi	başarısız olmasından
+Relation	T15	T13	EffectCause	true	başarısız olmasından	direnişi
+Relation	T0	T13	NoRel	true	ittifak	direnişi
+Relation	T1	T5	NoRel	true	dinmesinin	girişimin
+Relation	T1	T9	NoRel	true	dinmesinin	ilerlemeye
+Relation	T10	T15	NoRel	true	kurulmasına	başarısız olmasından
+Relation	T11	T3	NoRel	true	geçmiştir	kayıplara
+Relation	T11	T8	NoRel	true	geçmiştir	davranışından
+Relation	T12	T3	NoRel	true	uyarlanan	kayıplara
+Relation	T13	T10	NoRel	true	direnişi	kurulmasına
+Relation	T13	T9	NoRel	true	direnişi	ilerlemeye
+Relation	T15	T14	NoRel	true	başarısız olmasından	girmeyi
+Relation	T15	T2	NoRel	true	başarısız olmasından	çarptırılacak
+Relation	T15	T3	NoRel	true	başarısız olmasından	kayıplara
+Relation	T15	T9	NoRel	true	başarısız olmasından	ilerlemeye
+Relation	T2	T5	NoRel	true	çarptırılacak	girişimin
+Relation	T2	T9	NoRel	true	çarptırılacak	ilerlemeye
+Relation	T4	T11	NoRel	true	anlatılır	geçmiştir
+Relation	T4	T12	NoRel	true	anlatılır	uyarlanan
+Relation	T5	T14	NoRel	true	girişimin	girmeyi
+Relation	T6	T7	NoRel	true	kırarak	açıklamanın
+Relation	T7	T15	NoRel	true	açıklamanın	başarısız olmasından
+Relation	T7	T2	NoRel	true	açıklamanın	çarptırılacak
+Relation	T9	T13	NoRel	true	ilerlemeye	direnişi
+Relation	T9	T15	NoRel	true	ilerlemeye	başarısız olmasından

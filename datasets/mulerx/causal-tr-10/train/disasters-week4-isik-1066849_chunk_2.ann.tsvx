@@ -1,0 +1,34 @@
+Text	Depremin merkezi , Maule Bölgesi sahilinde , Curanipe'nin yaklaşık 8 km ( 5 mil ) batısı ve Şili'nin ikinci en büyük şehri Concepción'ın 115 km ( 71 mil ) kuzey - kuzeydoğusu .	Deprem ayrıca , deprem merkezine yaklaşık 4.700 mil ( 7.600 ) km uzaklıktaki Birleşik Devletler New Orleans'ın kuzeyindeki Pontchartrain Gölü'nde durgun dalgaya sebep oldu .	200px | sağ | küçükresim | San Antonio şehrinin Tsunami sonrasındaki durumu 200px | sağ | küçükresim | Depremin kuvvetini ve etkilenen bölgeleri gösteren bir harita 200px | sağ | küçükresim | Tsunaminin ilerleyişini gösteren bir veri haritası	Aşağıdaki veri , Pacific Tsunami Warning Center ve West Coast and Alaska Tsunami Warning Center tarafından yayınlandı .	Tsunaminin ölçüm ve rapor değerleri , tsunami özgü yerlere ulaştığındaki değerlerdir .
+Event	T0	Deprem	EVENT	177
+Event	T1	oldu	EVENT	344
+Event	T3	yayınlandı	EVENT	701
+Event	T4	ölçüm	EVENT	725
+Event	T5	tsunami	EVENT	752
+Event	T6	dalgaya	EVENT	330
+Event	T7	Tsunami	EVENT	399
+Event	T2	Depremin	EVENT	454
+Event	T8	Tsunaminin	EVENT	543
+Event	T9	Tsunami	EVENT	619
+Event	T10	Tsunami	EVENT	667
+Event	T11	Tsunaminin	EVENT	714
+Event	T12	rapor	EVENT	734
+Event	T13	ulaştığındaki	EVENT	773
+Relation	T0	T6	CauseEffect	true	Deprem	dalgaya
+Relation	T6	T0	EffectCause	true	dalgaya	Deprem
+Relation	T5	T13	CauseEffect	true	tsunami	ulaştığındaki
+Relation	T13	T5	EffectCause	true	ulaştığındaki	tsunami
+Relation	T13	T4	CauseEffect	true	ulaştığındaki	ölçüm
+Relation	T4	T13	EffectCause	true	ölçüm	ulaştığındaki
+Relation	T4	T12	CauseEffect	true	ölçüm	rapor
+Relation	T12	T4	EffectCause	true	rapor	ölçüm
+Relation	T11	T0	NoRel	true	Tsunaminin	Deprem
+Relation	T12	T1	NoRel	true	rapor	oldu
+Relation	T13	T6	NoRel	true	ulaştığındaki	dalgaya
+Relation	T2	T5	NoRel	true	Depremin	tsunami
+Relation	T3	T6	NoRel	true	yayınlandı	dalgaya
+Relation	T4	T10	NoRel	true	ölçüm	Tsunami
+Relation	T6	T11	NoRel	true	dalgaya	Tsunaminin
+Relation	T8	T13	NoRel	true	Tsunaminin	ulaştığındaki
+Relation	T8	T9	NoRel	true	Tsunaminin	Tsunami
+Relation	T9	T5	NoRel	true	Tsunami	tsunami
+Relation	T9	T8	NoRel	true	Tsunami	Tsunaminin

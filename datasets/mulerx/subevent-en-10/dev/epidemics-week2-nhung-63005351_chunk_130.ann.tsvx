@@ -1,0 +1,104 @@
+Text	In response to the scandal surrounding anti-African discrimination , provincial authorities in the Chinese province of Guangdong set up a hotline for foreign nationals and laid out measures discouraging businesses and rental houses in Guangzhou from refusing people based on race or nationality .	In response to the rising discrimination against Asian Americans , the Black Lives Matter movement condemned the racism against Asian - Americans via Twitter .	In 2020 , Red Hong Yi ( also referred to as ' Red ' ) , a Malaysian artist , created and released a series of 10 artworks via her Instagram page titled " #IAMNOTAVIRUS " that depicted portraits of numerous Asian personalities out of foodstuff such as matcha leaves that she found in her house during lockdown .	Acting as a response to anti-Asian hate crimes that heightened during the Coronavirus pandemic , she described the importance of " standing up for everyone no matter their skin colour . "	In June 2021 , the City Council of Aurora , Colorado agreed to utilize city funds to supply Asian residents with safety kits and provide AAPI ( Asian American Pacific Islander ) training for Aurora police officers .
+Event	T1	discrimination	EVENT	52
+Event	T10	standing up	EVENT	899
+Event	T11	titled	EVENT	602
+Event	T13	found	EVENT	731
+Event	T14	lockdown	EVENT	757
+Event	T15	Acting	EVENT	768
+Event	T16	response	EVENT	780
+Event	T17	crimes	EVENT	808
+Event	T18	heightened	EVENT	820
+Event	T19	pandemic	EVENT	854
+Event	T2	discouraging	EVENT	190
+Event	T20	described	EVENT	869
+Event	T21	agreed	EVENT	1009
+Event	T22	utilize	EVENT	1019
+Event	T23	supply	EVENT	1041
+Event	T24	provide	EVENT	1085
+Event	T25	training	EVENT	1134
+Event	T26	scandal	EVENT	19
+Event	T27	set up	EVENT	129
+Event	T28	laid out	EVENT	172
+Event	T3	refusing	EVENT	250
+Event	T4	discrimination	EVENT	323
+Event	T5	condemned	EVENT	396
+Event	T6	racism	EVENT	410
+Event	T7	created	EVENT	534
+Event	T8	released	EVENT	546
+Event	T9	depicted	EVENT	632
+Relation	T7	T8	SuperSub	true	created	released
+Relation	T8	T7	SubSuper	true	released	created
+Relation	T1	T10	NoRel	true	discrimination	standing up
+Relation	T11	T1	NoRel	true	titled	discrimination
+Relation	T11	T2	NoRel	true	titled	discouraging
+Relation	T11	T28	NoRel	true	titled	laid out
+Relation	T13	T26	NoRel	true	found	scandal
+Relation	T13	T28	NoRel	true	found	laid out
+Relation	T13	T6	NoRel	true	found	racism
+Relation	T15	T19	NoRel	true	Acting	pandemic
+Relation	T15	T21	NoRel	true	Acting	agreed
+Relation	T15	T27	NoRel	true	Acting	set up
+Relation	T16	T15	NoRel	true	response	Acting
+Relation	T16	T20	NoRel	true	response	described
+Relation	T16	T28	NoRel	true	response	laid out
+Relation	T17	T7	NoRel	true	crimes	created
+Relation	T17	T9	NoRel	true	crimes	depicted
+Relation	T18	T13	NoRel	true	heightened	found
+Relation	T18	T2	NoRel	true	heightened	discouraging
+Relation	T18	T23	NoRel	true	heightened	supply
+Relation	T18	T25	NoRel	true	heightened	training
+Relation	T18	T7	NoRel	true	heightened	created
+Relation	T19	T1	NoRel	true	pandemic	discrimination
+Relation	T19	T2	NoRel	true	pandemic	discouraging
+Relation	T19	T21	NoRel	true	pandemic	agreed
+Relation	T19	T27	NoRel	true	pandemic	set up
+Relation	T2	T10	NoRel	true	discouraging	standing up
+Relation	T2	T25	NoRel	true	discouraging	training
+Relation	T2	T26	NoRel	true	discouraging	scandal
+Relation	T2	T6	NoRel	true	discouraging	racism
+Relation	T2	T8	NoRel	true	discouraging	released
+Relation	T20	T10	NoRel	true	described	standing up
+Relation	T20	T16	NoRel	true	described	response
+Relation	T20	T19	NoRel	true	described	pandemic
+Relation	T20	T22	NoRel	true	described	utilize
+Relation	T20	T8	NoRel	true	described	released
+Relation	T21	T28	NoRel	true	agreed	laid out
+Relation	T22	T1	NoRel	true	utilize	discrimination
+Relation	T22	T14	NoRel	true	utilize	lockdown
+Relation	T22	T25	NoRel	true	utilize	training
+Relation	T22	T26	NoRel	true	utilize	scandal
+Relation	T22	T7	NoRel	true	utilize	created
+Relation	T22	T8	NoRel	true	utilize	released
+Relation	T23	T15	NoRel	true	supply	Acting
+Relation	T23	T8	NoRel	true	supply	released
+Relation	T24	T17	NoRel	true	provide	crimes
+Relation	T24	T27	NoRel	true	provide	set up
+Relation	T24	T3	NoRel	true	provide	refusing
+Relation	T24	T6	NoRel	true	provide	racism
+Relation	T24	T9	NoRel	true	provide	depicted
+Relation	T25	T11	NoRel	true	training	titled
+Relation	T25	T21	NoRel	true	training	agreed
+Relation	T25	T5	NoRel	true	training	condemned
+Relation	T26	T1	NoRel	true	scandal	discrimination
+Relation	T26	T24	NoRel	true	scandal	provide
+Relation	T27	T16	NoRel	true	set up	response
+Relation	T27	T24	NoRel	true	set up	provide
+Relation	T27	T5	NoRel	true	set up	condemned
+Relation	T27	T9	NoRel	true	set up	depicted
+Relation	T28	T24	NoRel	true	laid out	provide
+Relation	T28	T27	NoRel	true	laid out	set up
+Relation	T28	T5	NoRel	true	laid out	condemned
+Relation	T3	T19	NoRel	true	refusing	pandemic
+Relation	T3	T6	NoRel	true	refusing	racism
+Relation	T5	T8	NoRel	true	condemned	released
+Relation	T6	T17	NoRel	true	racism	crimes
+Relation	T7	T14	NoRel	true	created	lockdown
+Relation	T7	T15	NoRel	true	created	Acting
+Relation	T7	T20	NoRel	true	created	described
+Relation	T7	T3	NoRel	true	created	refusing
+Relation	T9	T1	NoRel	true	depicted	discrimination
+Relation	T9	T11	NoRel	true	depicted	titled
+Relation	T9	T17	NoRel	true	depicted	crimes
+Relation	T9	T24	NoRel	true	depicted	provide
+Relation	T9	T5	NoRel	true	depicted	condemned
+Relation	T9	T8	NoRel	true	depicted	released

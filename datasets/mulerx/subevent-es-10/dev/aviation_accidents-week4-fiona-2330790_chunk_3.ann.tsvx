@@ -1,0 +1,25 @@
+Text	Cuando estaban descendiendo , a aproximadamente 1950 pies ( casi 600 metros ) , el valor del radioaltímetro descendió a -8 pies .	El sistema del acelerador automático cambió al modo retardar , y las palancas de empuje se trasladaron a la posición de ralentí y se mantuvo en el modo de retraso .	Normalmente este modo se activa automáticamente durante el aterrizaje , justo antes de tocar tierra .	Los tres pilotos notaron esto al estar a 400 pies de altura ( 120 m )	Ahí el piloto automático fue desconectado y se intentó poner al avión en posición correcta , pero ya era demasiado tarde .
+Event	T0	descendiendo	EVENT	15
+Event	T1	descendió	EVENT	108
+Event	T2	cambió	EVENT	167
+Event	T3	ralentí	EVENT	250
+Event	T4	mantuvo	EVENT	263
+Event	T5	activa	EVENT	320
+Event	T6	aterrizaje	EVENT	354
+Event	T7	tocar	EVENT	382
+Event	T8	notaron	EVENT	414
+Event	T9	desconectado	EVENT	496
+Event	T10	poner	EVENT	522
+Relation	T0	T2	NoRel	true	descendiendo	cambió
+Relation	T0	T7	NoRel	true	descendiendo	tocar
+Relation	T1	T3	NoRel	true	descendió	ralentí
+Relation	T1	T7	NoRel	true	descendió	tocar
+Relation	T2	T0	NoRel	true	cambió	descendiendo
+Relation	T2	T10	NoRel	true	cambió	poner
+Relation	T2	T8	NoRel	true	cambió	notaron
+Relation	T3	T10	NoRel	true	ralentí	poner
+Relation	T3	T7	NoRel	true	ralentí	tocar
+Relation	T6	T1	NoRel	true	aterrizaje	descendió
+Relation	T7	T0	NoRel	true	tocar	descendiendo
+Relation	T9	T10	NoRel	true	desconectado	poner
+Relation	T9	T5	NoRel	true	desconectado	activa

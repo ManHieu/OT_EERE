@@ -1,0 +1,36 @@
+Text	2016 YEMEN SALDIRILARI , 25 Mart 2016'da Yemen'in Aden şehrinde güvenlik noktalarına bomba yüklü araçlarla düzenlenen iki bombalı intihar saldırısı .	Saldırılar sonucunda iki saldırgan ile birlikte 26 kişi öldü .	Aden'in batısındaki el - Berkıyye ilçesinde Suudi Arabistan öncülüğündeki koalisyon güçlerine güvenlik noktalarına karşı düzenlenen iki saldırıda 9 kişi öldü .	Eş - Şaab ilçesindeki güvenlik noktasına ambulansla düzenlenen bir diğer saldırıda ise 10'u kadın ve çocuk 13 kişi öldü .	Kategori : Aden tarihi Kategori : Yemen'deki intihar saldırıları Kategori : Irak ve Şam İslam Devleti tarafından düzenlenen saldırılar Kategori : Yemen'de İslamcılık saldırıları Aden saldırıları Aden saldırıları Aden saldırıları
+Event	T2	saldırısı	EVENT	138
+Event	T3	Saldırılar	EVENT	150
+Event	T4	öldü	EVENT	206
+Event	T6	saldırıda	EVENT	349
+Event	T7	öldü	EVENT	366
+Event	T8	düzenlenen	EVENT	425
+Event	T9	saldırıda	EVENT	446
+Event	T10	öldü	EVENT	488
+Event	T11	saldırıları	EVENT	661
+Event	T12	saldırıları	EVENT	678
+Event	T13	saldırıları	EVENT	695
+Event	T14	2016 YEMEN SALDIRILARI	EVENT	0
+Event	T15	yüklü	EVENT	91
+Event	T16	saldırıları	EVENT	548
+Event	T17	saldırılar	EVENT	619
+Event	T18	saldırıları	EVENT	712
+Relation	T11	T12	NoRel	true	saldırıları	saldırıları
+Relation	T12	T13	NoRel	true	saldırıları	saldırıları
+Relation	T12	T2	NoRel	true	saldırıları	saldırısı
+Relation	T13	T2	NoRel	true	saldırıları	saldırısı
+Relation	T14	T6	NoRel	true	2016 YEMEN SALDIRILARI	saldırıda
+Relation	T14	T7	NoRel	true	2016 YEMEN SALDIRILARI	öldü
+Relation	T16	T4	NoRel	true	saldırıları	öldü
+Relation	T16	T8	NoRel	true	saldırıları	düzenlenen
+Relation	T17	T13	NoRel	true	saldırılar	saldırıları
+Relation	T18	T9	NoRel	true	saldırıları	saldırıda
+Relation	T2	T9	NoRel	true	saldırısı	saldırıda
+Relation	T3	T13	NoRel	true	Saldırılar	saldırıları
+Relation	T4	T18	NoRel	true	öldü	saldırıları
+Relation	T6	T16	NoRel	true	saldırıda	saldırıları
+Relation	T6	T9	NoRel	true	saldırıda	saldırıda
+Relation	T7	T15	NoRel	true	öldü	yüklü
+Relation	T7	T9	NoRel	true	öldü	saldırıda
+Relation	T8	T15	NoRel	true	düzenlenen	yüklü
+Relation	T8	T2	NoRel	true	düzenlenen	saldırısı

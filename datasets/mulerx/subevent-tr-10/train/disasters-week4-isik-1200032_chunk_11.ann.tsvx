@@ -1,0 +1,13 @@
+Text	Saat 09: 45 civarında depremde ölenlerin kimlikleri belirlendi .	Gün içinde bölgeye ulaşımın kolay olması için Yığınçal köyünü Doğubayazıt'a bağlayan yola zift karışımlı toprak döktü .	Ergezen , " yeni bina ve ahır yapımı için para ve projenin hazır olduğu , çalışmalara en yakın zamanda başlayacakları "nı söyledi .	İlin TEDAŞ ve Telekom Müdürlüğü de elektrik ve telefonla ilgili sorunları çözmek amacıyla çalışmalarını hızlandırıdlar .	Doğubayazıt belediye başkanı Mukaddes Kubilay , salgınlara önlem olarak acil su ihtiyacı olduğunu açıkladı .
+Event	T0	belirlendi	EVENT	52
+Event	T1	döktü	EVENT	177
+Event	T2	söyledi	EVENT	307
+Event	T3	ihtiyacı	EVENT	518
+Event	T4	açıkladı	EVENT	536
+Event	T5	ölenlerin	EVENT	31
+Event	T6	depremde	EVENT	22
+Event	T7	sorunları	EVENT	381
+Event	T8	hızlandırıdlar	EVENT	421
+Relation	T3	T0	NoRel	true	ihtiyacı	belirlendi
+Relation	T6	T0	NoRel	true	depremde	belirlendi
+Relation	T7	T4	NoRel	true	sorunları	açıkladı

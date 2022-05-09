@@ -1,0 +1,25 @@
+Text	Bu tutukluluğu 18 yıl sürecektir .	Bütün II. Dünya Savaşı dönemini hapiste geçiren Tokuda , Japonya’nın savaştan yenik ayrılması üzerine adaya çıkan müttefik kuvvetlerinin genel direktifleri sonucu 10 Ekim 1945 günü diğer komünistlerle beraber salıverildi .	Tokuda , Nisan 1945'te parti liderliğine seçilmişti .	1946 yılında yapılan genel seçimlere Japon Komünist Partisi adayı olarak katıldı ve 2 yoldaşıyla beraber Tokyo milletvekili olarak seçildi .	Aynı yıl Tatsu Kanehara ile evlendi .
+Event	T0	tutukluluğu	EVENT	3
+Event	T1	geçiren	EVENT	75
+Event	T2	ayrılması	EVENT	119
+Event	T3	salıverildi	EVENT	244
+Event	T4	seçilmişti	EVENT	299
+Event	T5	katıldı	EVENT	385
+Event	T6	seçildi	EVENT	443
+Event	T7	evlendi	EVENT	481
+Event	T8	II. Dünya Savaşı	EVENT	41
+Event	T9	çıkan	EVENT	143
+Event	T10	direktifleri	EVENT	178
+Event	T11	seçimlere	EVENT	339
+Relation	T0	T11	NoRel	true	tutukluluğu	seçimlere
+Relation	T10	T0	NoRel	true	direktifleri	tutukluluğu
+Relation	T11	T5	NoRel	true	seçimlere	katıldı
+Relation	T2	T0	NoRel	true	ayrılması	tutukluluğu
+Relation	T2	T9	NoRel	true	ayrılması	çıkan
+Relation	T4	T1	NoRel	true	seçilmişti	geçiren
+Relation	T4	T10	NoRel	true	seçilmişti	direktifleri
+Relation	T4	T9	NoRel	true	seçilmişti	çıkan
+Relation	T7	T6	NoRel	true	evlendi	seçildi
+Relation	T8	T0	NoRel	true	II. Dünya Savaşı	tutukluluğu
+Relation	T9	T2	NoRel	true	çıkan	ayrılması
+Relation	T9	T6	NoRel	true	çıkan	seçildi

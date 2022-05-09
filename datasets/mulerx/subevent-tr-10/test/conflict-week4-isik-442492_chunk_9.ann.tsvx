@@ -1,0 +1,28 @@
+Text	İskender Bey bu muharebede kazandığı zaferle hem bölgedeki varlığını sağlamlaştırdı , hem de Osmanlı tehdidiyle karşı karşıya olan Avrupa devletlerine kendisini tanıtmış oldu .	İzleyen iki yıl boyunca Leş Birliği orduları 1445 yılında Prizren yakınlarında savaşılan Mokra Muharebesi'nde ve 1446 yılında savaşılan Otonete Muharebesi'nde Osmanlı Ordularını yenecektir .	Arnavutluk ayaklanması sırasında Venedik Cumhuriyeti İskender Bey'i desteklemiştir .	Venediklilerin desteğinin ardındaki sebep , Arnavutluk bölgesinin Osmanlılarla aralarında tampon bölge olması ve Venedik topraklarına saldırıları engellemesidir .	Leş Birliği'nin kurulduğu topraklar eskiden Venedik denetiminde olmasına rağmen birliğin varlığı Venedik tarafından onay görmüştür .
+Event	T3	yenecektir	EVENT	355
+Event	T4	ayaklanması	EVENT	379
+Event	T5	desteklemiştir	EVENT	436
+Event	T6	engellemesidir	EVENT	599
+Event	T7	muharebede	EVENT	16
+Event	T8	zaferle	EVENT	37
+Event	T9	sağlamlaştırdı	EVENT	69
+Event	T10	oldu	EVENT	170
+Event	T11	Mokra Muharebesi'nde	EVENT	266
+Event	T1	Otonete Muharebesi'nde	EVENT	313
+Event	T2	görmüştür	EVENT	737
+Relation	T1	T9	NoRel	true	Otonete Muharebesi'nde	sağlamlaştırdı
+Relation	T10	T2	NoRel	true	oldu	görmüştür
+Relation	T2	T9	NoRel	true	görmüştür	sağlamlaştırdı
+Relation	T3	T2	NoRel	true	yenecektir	görmüştür
+Relation	T4	T7	NoRel	true	ayaklanması	muharebede
+Relation	T4	T9	NoRel	true	ayaklanması	sağlamlaştırdı
+Relation	T5	T10	NoRel	true	desteklemiştir	oldu
+Relation	T6	T10	NoRel	true	engellemesidir	oldu
+Relation	T6	T9	NoRel	true	engellemesidir	sağlamlaştırdı
+Relation	T8	T10	NoRel	true	zaferle	oldu
+Relation	T8	T3	NoRel	true	zaferle	yenecektir
+Relation	T8	T5	NoRel	true	zaferle	desteklemiştir
+Relation	T9	T1	NoRel	true	sağlamlaştırdı	Otonete Muharebesi'nde
+Relation	T9	T4	NoRel	true	sağlamlaştırdı	ayaklanması
+Relation	T9	T6	NoRel	true	sağlamlaştırdı	engellemesidir
+Relation	T9	T8	NoRel	true	sağlamlaştırdı	zaferle

@@ -1,0 +1,35 @@
+Text	Milli Güvenlik Kurulu toplantısı sırasında Cumhurbaşkanı Ahmet Necdet Sezer'in , Bankacılık Düzenleme ve Denetleme Kurulu'nda başlattığı denetime Başbakan Bülent Ecevit'in tepki göstermesi üzerine tartışma yaşandı .	Bunun üzerine Sezer , Ecevit'e anayasa kitapçığı fırlattı .	Ecevit de bu duruma tepki göstererek toplantıyı terk etti .	Ecevit'in toplantı çıkışında bekleyen gazetecilere , " Bu bir devlet krizidir " yönündeki açıklamalarının ardından piyasalarda sert satışlar yaşandı .	Türkiye , 1990'lı yıllarda çok yüksek enflasyonla boğuşmuş bir ülkeydi .
+Event	T0	denetime	EVENT	137
+Event	T4	açıklamalarının	EVENT	426
+Event	T6	toplantısı	EVENT	22
+Event	T7	tartışma	EVENT	197
+Event	T2	tepki	EVENT	172
+Event	T1	fırlattı	EVENT	265
+Event	T3	terk etti	EVENT	324
+Event	T8	tepki	EVENT	296
+Event	T9	toplantı	EVENT	346
+Event	T10	çıkışında	EVENT	355
+Event	T11	bekleyen	EVENT	365
+Event	T12	satışlar	EVENT	468
+Event	T5	enflasyonla	EVENT	525
+Relation	T6	T0	SuperSub	true	toplantısı	denetime
+Relation	T0	T6	SubSuper	true	denetime	toplantısı
+Relation	T6	T2	SuperSub	true	toplantısı	tepki
+Relation	T2	T6	SubSuper	true	tepki	toplantısı
+Relation	T6	T1	SuperSub	true	toplantısı	fırlattı
+Relation	T1	T6	SubSuper	true	fırlattı	toplantısı
+Relation	T6	T7	SuperSub	true	toplantısı	tartışma
+Relation	T7	T6	SubSuper	true	tartışma	toplantısı
+Relation	T6	T8	SuperSub	true	toplantısı	tepki
+Relation	T8	T6	SubSuper	true	tepki	toplantısı
+Relation	T6	T3	SuperSub	true	toplantısı	terk etti
+Relation	T3	T6	SubSuper	true	terk etti	toplantısı
+Relation	T11	T7	NoRel	true	bekleyen	tartışma
+Relation	T6	T5	NoRel	true	toplantısı	enflasyonla
+Relation	T7	T0	NoRel	true	tartışma	denetime
+Relation	T7	T4	NoRel	true	tartışma	açıklamalarının
+Relation	T8	T5	NoRel	true	tepki	enflasyonla
+Relation	T9	T0	NoRel	true	toplantı	denetime
+Relation	T9	T12	NoRel	true	toplantı	satışlar
+Relation	T9	T7	NoRel	true	toplantı	tartışma
+Relation	T9	T8	NoRel	true	toplantı	tepki

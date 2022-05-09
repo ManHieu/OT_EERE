@@ -1,0 +1,59 @@
+Text	La mayoría de las víctimas fatales se encontraban en los dos vagones delanteros , que eran los que más pasajeros llevaban , debido a la costumbre en trenes y subtes de ubicarse en los primeros coches para ganar tiempo y acceder con más facilidad y rapidez a otros medios de transporte .	[ Miembros de la Policía Federal Argentina ( PFA ) resguardan la zona del accidente en la estación , a fin de preservar a los cuerpos .	] El día del accidente , muchas ambulancias estaban localizadas en el puerto de la ciudad de Buenos Aires , esperando la llegada de un barco con personas enfermas .	Muchas de ellas dejaron el puerto para trabajar en la zona del accidente , rescatando mucha gente herida , y trasladándola al hospital .	Las personas con lesiones menores fueron dejadas en la zona del accidente .
+Event	T0	fatales	EVENT	27
+Event	T1	encontraban	EVENT	38
+Event	T10	localizadas	EVENT	475
+Event	T11	esperando	EVENT	531
+Event	T12	llegada	EVENT	544
+Event	T13	trabajar	EVENT	627
+Event	T14	accidente	EVENT	651
+Event	T15	rescatando	EVENT	663
+Event	T16	herida	EVENT	686
+Event	T17	lesiones	EVENT	742
+Event	T18	dejadas	EVENT	766
+Event	T19	accidente	EVENT	789
+Event	T20	trasladándola	EVENT	697
+Event	T4	ubicarse	EVENT	168
+Event	T5	acceder	EVENT	220
+Event	T6	resguardan	EVENT	338
+Event	T7	accidente	EVENT	361
+Event	T8	preservar	EVENT	397
+Event	T9	accidente	EVENT	436
+Relation	T9	T0	CauseEffect	true	accidente	fatales
+Relation	T0	T9	EffectCause	true	fatales	accidente
+Relation	T10	T11	CauseEffect	true	localizadas	esperando
+Relation	T11	T10	EffectCause	true	esperando	localizadas
+Relation	T19	T17	CauseEffect	true	accidente	lesiones
+Relation	T17	T19	EffectCause	true	lesiones	accidente
+Relation	T10	T15	CauseEffect	true	localizadas	rescatando
+Relation	T15	T10	EffectCause	true	rescatando	localizadas
+Relation	T6	T8	CauseEffect	true	resguardan	preservar
+Relation	T8	T6	EffectCause	true	preservar	resguardan
+Relation	T0	T11	NoRel	true	fatales	esperando
+Relation	T0	T13	NoRel	true	fatales	trabajar
+Relation	T0	T18	NoRel	true	fatales	dejadas
+Relation	T0	T20	NoRel	true	fatales	trasladándola
+Relation	T0	T4	NoRel	true	fatales	ubicarse
+Relation	T1	T13	NoRel	true	encontraban	trabajar
+Relation	T1	T7	NoRel	true	encontraban	accidente
+Relation	T1	T9	NoRel	true	encontraban	accidente
+Relation	T10	T0	NoRel	true	localizadas	fatales
+Relation	T10	T14	NoRel	true	localizadas	accidente
+Relation	T10	T16	NoRel	true	localizadas	herida
+Relation	T11	T15	NoRel	true	esperando	rescatando
+Relation	T11	T8	NoRel	true	esperando	preservar
+Relation	T12	T11	NoRel	true	llegada	esperando
+Relation	T12	T8	NoRel	true	llegada	preservar
+Relation	T14	T0	NoRel	true	accidente	fatales
+Relation	T15	T7	NoRel	true	rescatando	accidente
+Relation	T16	T0	NoRel	true	herida	fatales
+Relation	T17	T15	NoRel	true	lesiones	rescatando
+Relation	T19	T11	NoRel	true	accidente	esperando
+Relation	T19	T5	NoRel	true	accidente	acceder
+Relation	T19	T6	NoRel	true	accidente	resguardan
+Relation	T4	T14	NoRel	true	ubicarse	accidente
+Relation	T4	T8	NoRel	true	ubicarse	preservar
+Relation	T5	T17	NoRel	true	acceder	lesiones
+Relation	T5	T19	NoRel	true	acceder	accidente
+Relation	T7	T0	NoRel	true	accidente	fatales
+Relation	T8	T11	NoRel	true	preservar	esperando
+Relation	T9	T16	NoRel	true	accidente	herida

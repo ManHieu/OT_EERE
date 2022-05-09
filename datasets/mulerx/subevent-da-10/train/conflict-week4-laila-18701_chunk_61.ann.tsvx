@@ -1,0 +1,72 @@
+Text	_ Ypiranga _ formåede at lægge til land i en anden havn og lodse våbnende , hvilket gjorde Wilson meget vred .	ABC-staterne blandede sig og de amerikanske tropper forlod Mexico , men hændelsen havde allerede tilføjet yderligere spændinger til det mexicansk-amerikansk forhold .	I 1916 skete der en gengældelsesaktion for plyndringen af Pancho Villa i Columbus , New Mexico , og 15 amerikanske statsborgeres død , der blev dræbt af en gruppe _ Villistas _ som angreb et tog på Mexico North Western Railway nær Santa Isabel , Chihuahua ,	Præsident Wilson sendte tropper under ledelse af brigadegeneral John J. Pershing til Mexico for at fange Villa .	I perioden 1876-1911 var forholdet mellem den romerskkatolske kirke og den mexicanske regering stabilt , og de anti-gejstlige love i Mexicos Grundlag af 1857 eksisterede stadig , men blev ikke håndhævet , så konflikterne ophørte .
+Event	T0	lodse	EVENT	59
+Event	T1	gjorde	EVENT	84
+Event	T2	blandede	EVENT	124
+Event	T3	forlod	EVENT	163
+Event	T4	hændelsen	EVENT	183
+Event	T5	tilføjet	EVENT	208
+Event	T6	spændinger	EVENT	228
+Event	T7	skete	EVENT	285
+Event	T8	gengældelsesaktion	EVENT	298
+Event	T9	plyndringen	EVENT	321
+Event	T10	død	EVENT	407
+Event	T11	dræbt	EVENT	422
+Event	T12	angreb	EVENT	459
+Event	T13	tog	EVENT	469
+Event	T14	sendte	EVENT	553
+Event	T15	fange	EVENT	635
+Event	T16	eksisterede	EVENT	807
+Event	T17	håndhævet	EVENT	842
+Event	T18	ophørte	EVENT	870
+Event	T19	formåede	EVENT	13
+Event	T20	lægge	EVENT	25
+Event	T21	forhold	EVENT	268
+Event	T22	forholdet	EVENT	674
+Relation	T16	T17	SuperSub	true	eksisterede	håndhævet
+Relation	T17	T16	SubSuper	true	håndhævet	eksisterede
+Relation	T0	T11	NoRel	true	lodse	dræbt
+Relation	T0	T12	NoRel	true	lodse	angreb
+Relation	T0	T19	NoRel	true	lodse	formåede
+Relation	T0	T3	NoRel	true	lodse	forlod
+Relation	T1	T3	NoRel	true	gjorde	forlod
+Relation	T1	T7	NoRel	true	gjorde	skete
+Relation	T1	T9	NoRel	true	gjorde	plyndringen
+Relation	T10	T11	NoRel	true	død	dræbt
+Relation	T10	T13	NoRel	true	død	tog
+Relation	T11	T17	NoRel	true	dræbt	håndhævet
+Relation	T11	T6	NoRel	true	dræbt	spændinger
+Relation	T13	T15	NoRel	true	tog	fange
+Relation	T13	T21	NoRel	true	tog	forhold
+Relation	T14	T10	NoRel	true	sendte	død
+Relation	T14	T13	NoRel	true	sendte	tog
+Relation	T17	T14	NoRel	true	håndhævet	sendte
+Relation	T17	T18	NoRel	true	håndhævet	ophørte
+Relation	T18	T2	NoRel	true	ophørte	blandede
+Relation	T19	T11	NoRel	true	formåede	dræbt
+Relation	T19	T20	NoRel	true	formåede	lægge
+Relation	T19	T21	NoRel	true	formåede	forhold
+Relation	T2	T1	NoRel	true	blandede	gjorde
+Relation	T2	T10	NoRel	true	blandede	død
+Relation	T2	T11	NoRel	true	blandede	dræbt
+Relation	T2	T13	NoRel	true	blandede	tog
+Relation	T2	T14	NoRel	true	blandede	sendte
+Relation	T2	T17	NoRel	true	blandede	håndhævet
+Relation	T2	T21	NoRel	true	blandede	forhold
+Relation	T2	T22	NoRel	true	blandede	forholdet
+Relation	T20	T6	NoRel	true	lægge	spændinger
+Relation	T20	T9	NoRel	true	lægge	plyndringen
+Relation	T21	T5	NoRel	true	forhold	tilføjet
+Relation	T22	T20	NoRel	true	forholdet	lægge
+Relation	T22	T7	NoRel	true	forholdet	skete
+Relation	T4	T5	NoRel	true	hændelsen	tilføjet
+Relation	T5	T12	NoRel	true	tilføjet	angreb
+Relation	T5	T8	NoRel	true	tilføjet	gengældelsesaktion
+Relation	T6	T0	NoRel	true	spændinger	lodse
+Relation	T6	T5	NoRel	true	spændinger	tilføjet
+Relation	T6	T7	NoRel	true	spændinger	skete
+Relation	T7	T14	NoRel	true	skete	sendte
+Relation	T7	T22	NoRel	true	skete	forholdet
+Relation	T8	T9	NoRel	true	gengældelsesaktion	plyndringen
+Relation	T9	T14	NoRel	true	plyndringen	sendte
+Relation	T9	T17	NoRel	true	plyndringen	håndhævet
+Relation	T9	T4	NoRel	true	plyndringen	hændelsen

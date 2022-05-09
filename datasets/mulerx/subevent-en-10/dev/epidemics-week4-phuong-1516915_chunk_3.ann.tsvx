@@ -1,0 +1,72 @@
+Text	Subsequent cases of swine flu were reported in India in 2015 , with over 31,156 positive test cases and 1,841 deaths up to March 2015 .	In pigs , a swine influenza infection produces fever , lethargy , sneezing , coughing , difficulty breathing and decreased appetite .	In some cases the infection can cause miscarriage .	Although mortality is usually low ( around 1 – 4 % ) , the virus can produce weight loss and poor growth , causing economic loss to farmers .	Infected pigs can lose up to 12 pounds of body weight over a three - to four - week period .
+Event	T0	flu	EVENT	26
+Event	T1	reported	EVENT	35
+Event	T2	cases	EVENT	94
+Event	T3	deaths	EVENT	110
+Event	T4	fever	EVENT	183
+Event	T5	lethargy	EVENT	191
+Event	T6	sneezing	EVENT	202
+Event	T7	coughing	EVENT	213
+Event	T9	infection	EVENT	288
+Event	T10	miscarriage	EVENT	308
+Event	T11	mortality	EVENT	331
+Event	T15	Infected	EVENT	464
+Event	T16	infection	EVENT	164
+Event	T8	difficulty breathing	EVENT	224
+Event	T17	decreased appetite .	EVENT	249
+Event	T18	virus	EVENT	381
+Event	T12	weight loss	EVENT	399
+Event	T13	poor growth	EVENT	415
+Event	T14	economic loss	EVENT	437
+Event	T19	lose up to 12 pounds	EVENT	482
+Relation	T0	T10	NoRel	true	flu	miscarriage
+Relation	T0	T14	NoRel	true	flu	economic loss
+Relation	T0	T2	NoRel	true	flu	cases
+Relation	T0	T8	NoRel	true	flu	difficulty breathing
+Relation	T1	T15	NoRel	true	reported	Infected
+Relation	T10	T13	NoRel	true	miscarriage	poor growth
+Relation	T10	T14	NoRel	true	miscarriage	economic loss
+Relation	T10	T19	NoRel	true	miscarriage	lose up to 12 pounds
+Relation	T11	T14	NoRel	true	mortality	economic loss
+Relation	T11	T17	NoRel	true	mortality	decreased appetite .
+Relation	T11	T19	NoRel	true	mortality	lose up to 12 pounds
+Relation	T11	T2	NoRel	true	mortality	cases
+Relation	T11	T5	NoRel	true	mortality	lethargy
+Relation	T12	T8	NoRel	true	weight loss	difficulty breathing
+Relation	T12	T9	NoRel	true	weight loss	infection
+Relation	T13	T10	NoRel	true	poor growth	miscarriage
+Relation	T13	T17	NoRel	true	poor growth	decreased appetite .
+Relation	T13	T19	NoRel	true	poor growth	lose up to 12 pounds
+Relation	T14	T0	NoRel	true	economic loss	flu
+Relation	T14	T19	NoRel	true	economic loss	lose up to 12 pounds
+Relation	T14	T2	NoRel	true	economic loss	cases
+Relation	T14	T3	NoRel	true	economic loss	deaths
+Relation	T14	T4	NoRel	true	economic loss	fever
+Relation	T15	T0	NoRel	true	Infected	flu
+Relation	T15	T11	NoRel	true	Infected	mortality
+Relation	T15	T13	NoRel	true	Infected	poor growth
+Relation	T15	T17	NoRel	true	Infected	decreased appetite .
+Relation	T15	T4	NoRel	true	Infected	fever
+Relation	T15	T8	NoRel	true	Infected	difficulty breathing
+Relation	T16	T11	NoRel	true	infection	mortality
+Relation	T17	T12	NoRel	true	decreased appetite .	weight loss
+Relation	T17	T18	NoRel	true	decreased appetite .	virus
+Relation	T18	T14	NoRel	true	virus	economic loss
+Relation	T18	T6	NoRel	true	virus	sneezing
+Relation	T19	T0	NoRel	true	lose up to 12 pounds	flu
+Relation	T19	T11	NoRel	true	lose up to 12 pounds	mortality
+Relation	T19	T7	NoRel	true	lose up to 12 pounds	coughing
+Relation	T19	T9	NoRel	true	lose up to 12 pounds	infection
+Relation	T2	T10	NoRel	true	cases	miscarriage
+Relation	T2	T19	NoRel	true	cases	lose up to 12 pounds
+Relation	T3	T16	NoRel	true	deaths	infection
+Relation	T3	T17	NoRel	true	deaths	decreased appetite .
+Relation	T3	T18	NoRel	true	deaths	virus
+Relation	T3	T19	NoRel	true	deaths	lose up to 12 pounds
+Relation	T4	T17	NoRel	true	fever	decreased appetite .
+Relation	T5	T10	NoRel	true	lethargy	miscarriage
+Relation	T5	T12	NoRel	true	lethargy	weight loss
+Relation	T7	T16	NoRel	true	coughing	infection
+Relation	T7	T6	NoRel	true	coughing	sneezing
+Relation	T8	T17	NoRel	true	difficulty breathing	decreased appetite .
+Relation	T9	T11	NoRel	true	infection	mortality

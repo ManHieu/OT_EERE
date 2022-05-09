@@ -1,0 +1,18 @@
+Text	Bunu , büyüklük ve süre bakımından benzersiz olarak tanımlar .	Brumalia'nın ( İsimler Festivali ) kutlamaları sırasında , Kış gündönümünden ve Oğlak burcunun işaretine Güneş'in girişinden kısa bir süre önce gerçekleştiğini kaydeder .	Ayrıca şehrin , depremden önce şiddetli bir kıştan etkilendiğini anlatır .	Sarsıntılar , Konstantinopolis sakinlerinin çoğunun uyuduğu gece yarısına doğru başladı .	Sarsıntılar vatandaşları uyandırdı ve binalar sallanıyordu , " çığlıklar ve sesler duyuluyordu " .
+Event	T12	depremden	EVENT	250
+Event	T15	duyuluyordu	EVENT	482
+Event	T2	kaydeder	EVENT	223
+Event	T3	anlatır	EVENT	299
+Event	T4	Sarsıntılar	EVENT	309
+Event	T5	başladı	EVENT	389
+Event	T6	Sarsıntılar	EVENT	399
+Event	T7	uyandırdı	EVENT	424
+Event	T8	sallanıyordu	EVENT	445
+Relation	T12	T4	SuperSub	true	depremden	Sarsıntılar
+Relation	T4	T12	SubSuper	true	Sarsıntılar	depremden
+Relation	T12	T6	SuperSub	true	depremden	Sarsıntılar
+Relation	T6	T12	SubSuper	true	Sarsıntılar	depremden
+Relation	T12	T15	NoRel	true	depremden	duyuluyordu
+Relation	T15	T12	NoRel	true	duyuluyordu	depremden
+Relation	T3	T12	NoRel	true	anlatır	depremden
+Relation	T8	T6	NoRel	true	sallanıyordu	Sarsıntılar

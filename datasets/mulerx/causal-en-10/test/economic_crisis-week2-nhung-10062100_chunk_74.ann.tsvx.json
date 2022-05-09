@@ -1,0 +1,2297 @@
+{
+  "id": "economic_crisis-week2-nhung-10062100_chunk_74.ann.tsvx",
+  "text": "Credit default swaps ( CDS ) are financial instruments used as a hedge and protection for debtholders , in particular MBS investors , from the risk of default , or by speculators to profit from default .\tAs the net worth of banks and other financial institutions deteriorated because of losses related to subprime mortgages , the likelihood increased that those providing the protection would have to pay their counterparties .\tThis created uncertainty across the system , as investors wondered which companies would be required to pay to cover mortgage defaults .\tLike all swaps and other financial derivatives , CDS may either be used to hedge risks ( specifically , to insure creditors against default ) or to profit from speculation .\tThe volume of CDS outstanding increased 100 - fold from 1998 to 2008 , with estimates of the debt covered by CDS contracts , as of November 2008 , ranging from US $ 33 to $ 47 trillion .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "used",
+      "label": "EVENT",
+      "char_index": 55,
+      "sid": 0,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "protection",
+      "label": "EVENT",
+      "char_index": 75,
+      "sid": 0,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "wondered",
+      "label": "EVENT",
+      "char_index": 486,
+      "sid": 2,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "pay",
+      "label": "EVENT",
+      "char_index": 532,
+      "sid": 2,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "defaults",
+      "label": "EVENT",
+      "char_index": 554,
+      "sid": 2,
+      "tid": [
+        20,
+        21
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "used",
+      "label": "EVENT",
+      "char_index": 632,
+      "sid": 3,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "speculation",
+      "label": "EVENT",
+      "char_index": 725,
+      "sid": 3,
+      "tid": [
+        29,
+        30
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "increased",
+      "label": "EVENT",
+      "char_index": 769,
+      "sid": 4,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T16": {
+      "id": "T16",
+      "text": "estimates",
+      "label": "EVENT",
+      "char_index": 815,
+      "sid": 4,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T17": {
+      "id": "T17",
+      "text": "covered",
+      "label": "EVENT",
+      "char_index": 837,
+      "sid": 4,
+      "tid": [
+        19,
+        20
+      ]
+    },
+    "T18": {
+      "id": "T18",
+      "text": "contracts",
+      "label": "EVENT",
+      "char_index": 852,
+      "sid": 4,
+      "tid": [
+        22,
+        23
+      ]
+    },
+    "T19": {
+      "id": "T19",
+      "text": "ranging",
+      "label": "EVENT",
+      "char_index": 886,
+      "sid": 4,
+      "tid": [
+        29,
+        30
+      ]
+    },
+    "T21": {
+      "id": "T21",
+      "text": "losses",
+      "label": "EVENT",
+      "char_index": 287,
+      "sid": 1,
+      "tid": [
+        13,
+        14
+      ]
+    },
+    "T22": {
+      "id": "T22",
+      "text": "mortgages",
+      "label": "EVENT",
+      "char_index": 314,
+      "sid": 1,
+      "tid": [
+        17,
+        18
+      ]
+    },
+    "T23": {
+      "id": "T23",
+      "text": "insure",
+      "label": "EVENT",
+      "char_index": 672,
+      "sid": 3,
+      "tid": [
+        20,
+        21
+      ]
+    },
+    "T24": {
+      "id": "T24",
+      "text": "profit",
+      "label": "EVENT",
+      "char_index": 713,
+      "sid": 3,
+      "tid": [
+        27,
+        28
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "default",
+      "label": "EVENT",
+      "char_index": 151,
+      "sid": 0,
+      "tid": [
+        27,
+        28
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "default",
+      "label": "EVENT",
+      "char_index": 194,
+      "sid": 0,
+      "tid": [
+        35,
+        36
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "deteriorated",
+      "label": "EVENT",
+      "char_index": 263,
+      "sid": 1,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "increased",
+      "label": "EVENT",
+      "char_index": 341,
+      "sid": 1,
+      "tid": [
+        21,
+        22
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "protection",
+      "label": "EVENT",
+      "char_index": 376,
+      "sid": 1,
+      "tid": [
+        26,
+        27
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "pay",
+      "label": "EVENT",
+      "char_index": 401,
+      "sid": 1,
+      "tid": [
+        30,
+        31
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "uncertainty",
+      "label": "EVENT",
+      "char_index": 441,
+      "sid": 2,
+      "tid": [
+        2,
+        3
+      ]
+    }
+  },
+  "relation": {
+    "T1-T3": "CauseEffect",
+    "T3-T1": "EffectCause",
+    "T21-T5": "CauseEffect",
+    "T5-T21": "EffectCause",
+    "T22-T21": "CauseEffect",
+    "T21-T22": "EffectCause",
+    "T5-T6": "CauseEffect",
+    "T6-T5": "EffectCause",
+    "T7-T8": "CauseEffect",
+    "T8-T7": "EffectCause",
+    "T11-T10": "CauseEffect",
+    "T10-T11": "EffectCause",
+    "T24-T13": "CauseEffect",
+    "T13-T24": "EffectCause",
+    "T23-T13": "CauseEffect",
+    "T13-T23": "EffectCause",
+    "T0-T14": "NoRel",
+    "T0-T15": "NoRel",
+    "T0-T19": "NoRel",
+    "T0-T6": "NoRel",
+    "T1-T11": "NoRel",
+    "T1-T13": "NoRel",
+    "T10-T13": "NoRel",
+    "T10-T16": "NoRel",
+    "T10-T22": "NoRel",
+    "T11-T8": "NoRel",
+    "T12-T11": "NoRel",
+    "T13-T10": "NoRel",
+    "T13-T18": "NoRel",
+    "T13-T19": "NoRel",
+    "T13-T8": "NoRel",
+    "T14-T0": "NoRel",
+    "T14-T13": "NoRel",
+    "T14-T19": "NoRel",
+    "T14-T24": "NoRel",
+    "T14-T8": "NoRel",
+    "T15-T19": "NoRel",
+    "T16-T24": "NoRel",
+    "T16-T7": "NoRel",
+    "T16-T8": "NoRel",
+    "T17-T1": "NoRel",
+    "T17-T12": "NoRel",
+    "T18-T19": "NoRel",
+    "T18-T7": "NoRel",
+    "T19-T1": "NoRel",
+    "T19-T6": "NoRel",
+    "T21-T1": "NoRel",
+    "T21-T15": "NoRel",
+    "T21-T19": "NoRel",
+    "T21-T6": "NoRel",
+    "T22-T5": "NoRel",
+    "T24-T16": "NoRel",
+    "T24-T21": "NoRel",
+    "T24-T7": "NoRel",
+    "T3-T13": "NoRel",
+    "T3-T14": "NoRel",
+    "T3-T7": "NoRel",
+    "T4-T1": "NoRel",
+    "T5-T16": "NoRel",
+    "T5-T22": "NoRel",
+    "T6-T14": "NoRel",
+    "T6-T15": "NoRel",
+    "T7-T5": "NoRel",
+    "T8-T17": "NoRel",
+    "T8-T24": "NoRel",
+    "T9-T4": "NoRel"
+  },
+  "sentence": [
+    [
+      "Credit",
+      "default",
+      "swaps",
+      "(",
+      "CDS",
+      ")",
+      "are",
+      "financial",
+      "instruments",
+      "used",
+      "as",
+      "a",
+      "hedge",
+      "and",
+      "protection",
+      "for",
+      "debtholders",
+      ",",
+      "in",
+      "particular",
+      "MBS",
+      "investors",
+      ",",
+      "from",
+      "the",
+      "risk",
+      "of",
+      "default",
+      ",",
+      "or",
+      "by",
+      "speculators",
+      "to",
+      "profit",
+      "from",
+      "default",
+      "."
+    ],
+    [
+      "As",
+      "the",
+      "net",
+      "worth",
+      "of",
+      "banks",
+      "and",
+      "other",
+      "financial",
+      "institutions",
+      "deteriorated",
+      "because",
+      "of",
+      "losses",
+      "related",
+      "to",
+      "subprime",
+      "mortgages",
+      ",",
+      "the",
+      "likelihood",
+      "increased",
+      "that",
+      "those",
+      "providing",
+      "the",
+      "protection",
+      "would",
+      "have",
+      "to",
+      "pay",
+      "their",
+      "counterparties",
+      "."
+    ],
+    [
+      "This",
+      "created",
+      "uncertainty",
+      "across",
+      "the",
+      "system",
+      ",",
+      "as",
+      "investors",
+      "wondered",
+      "which",
+      "companies",
+      "would",
+      "be",
+      "required",
+      "to",
+      "pay",
+      "to",
+      "cover",
+      "mortgage",
+      "defaults",
+      "."
+    ],
+    [
+      "Like",
+      "all",
+      "swaps",
+      "and",
+      "other",
+      "financial",
+      "derivatives",
+      ",",
+      "CDS",
+      "may",
+      "either",
+      "be",
+      "used",
+      "to",
+      "hedge",
+      "risks",
+      "(",
+      "specifically",
+      ",",
+      "to",
+      "insure",
+      "creditors",
+      "against",
+      "default",
+      ")",
+      "or",
+      "to",
+      "profit",
+      "from",
+      "speculation",
+      "."
+    ],
+    [
+      "The",
+      "volume",
+      "of",
+      "CDS",
+      "outstanding",
+      "increased",
+      "100",
+      "-",
+      "fold",
+      "from",
+      "1998",
+      "to",
+      "2008",
+      ",",
+      "with",
+      "estimates",
+      "of",
+      "the",
+      "debt",
+      "covered",
+      "by",
+      "CDS",
+      "contracts",
+      ",",
+      "as",
+      "of",
+      "November",
+      "2008",
+      ",",
+      "ranging",
+      "from",
+      "US",
+      "$",
+      "33",
+      "to",
+      "$",
+      "47",
+      "trillion",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        8
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      "appos"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        8
+      ],
+      "cop"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        8
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        9
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        12
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        16
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        12
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        19
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        21
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        21
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        16
+      ],
+      "appos"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        23
+      ],
+      [
+        0,
+        25
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        25
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        16
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        27
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        27
+      ],
+      [
+        0,
+        25
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        31
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        29
+      ],
+      [
+        0,
+        31
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        30
+      ],
+      [
+        0,
+        31
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        31
+      ],
+      [
+        0,
+        25
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        32
+      ],
+      [
+        0,
+        33
+      ],
+      "mark"
+    ],
+    [
+      [
+        0,
+        33
+      ],
+      [
+        0,
+        31
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        34
+      ],
+      [
+        0,
+        35
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        35
+      ],
+      [
+        0,
+        33
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        36
+      ],
+      [
+        0,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        10
+      ],
+      "mark"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        3
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        9
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        5
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        21
+      ],
+      "advcl"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        13
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        11
+      ],
+      "fixed"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        10
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        13
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        17
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        17
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        14
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        21
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        19
+      ],
+      [
+        1,
+        20
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        20
+      ],
+      [
+        1,
+        21
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        21
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        22
+      ],
+      [
+        1,
+        28
+      ],
+      "mark"
+    ],
+    [
+      [
+        1,
+        23
+      ],
+      [
+        1,
+        28
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        24
+      ],
+      [
+        1,
+        23
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        25
+      ],
+      [
+        1,
+        26
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        26
+      ],
+      [
+        1,
+        24
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        27
+      ],
+      [
+        1,
+        28
+      ],
+      "aux"
+    ],
+    [
+      [
+        1,
+        28
+      ],
+      [
+        1,
+        21
+      ],
+      "ccomp"
+    ],
+    [
+      [
+        1,
+        29
+      ],
+      [
+        1,
+        30
+      ],
+      "mark"
+    ],
+    [
+      [
+        1,
+        30
+      ],
+      [
+        1,
+        28
+      ],
+      "xcomp"
+    ],
+    [
+      [
+        1,
+        31
+      ],
+      [
+        1,
+        32
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        32
+      ],
+      [
+        1,
+        30
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        33
+      ],
+      [
+        1,
+        21
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        1
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        9
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        1
+      ],
+      "advcl"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        14
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        14
+      ],
+      "aux"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        9
+      ],
+      "ccomp"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        16
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        14
+      ],
+      "xcomp"
+    ],
+    [
+      [
+        2,
+        17
+      ],
+      [
+        2,
+        18
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        18
+      ],
+      [
+        2,
+        16
+      ],
+      "advcl"
+    ],
+    [
+      [
+        2,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        20
+      ],
+      [
+        2,
+        18
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        21
+      ],
+      [
+        2,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        12
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        6
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        2
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        12
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        12
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        12
+      ],
+      "aux"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      "cc:preconj"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        12
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        12
+      ],
+      "advcl"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        14
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        20
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        20
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        20
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        20
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        20
+      ],
+      [
+        3,
+        14
+      ],
+      "advcl"
+    ],
+    [
+      [
+        3,
+        21
+      ],
+      [
+        3,
+        20
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        22
+      ],
+      [
+        3,
+        23
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        23
+      ],
+      [
+        3,
+        20
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        24
+      ],
+      [
+        3,
+        20
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        25
+      ],
+      [
+        3,
+        27
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        26
+      ],
+      [
+        3,
+        27
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        27
+      ],
+      [
+        3,
+        20
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        28
+      ],
+      [
+        3,
+        29
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        29
+      ],
+      [
+        3,
+        27
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        30
+      ],
+      [
+        3,
+        12
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        5
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        4
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        1
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        8
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        5
+      ],
+      "obl:npmod"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        5
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        5
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        29
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        29
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        18
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        17
+      ],
+      [
+        4,
+        18
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        18
+      ],
+      [
+        4,
+        15
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        19
+      ],
+      [
+        4,
+        18
+      ],
+      "acl"
+    ],
+    [
+      [
+        4,
+        20
+      ],
+      [
+        4,
+        22
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        21
+      ],
+      [
+        4,
+        22
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        22
+      ],
+      [
+        4,
+        19
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        23
+      ],
+      [
+        4,
+        15
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        24
+      ],
+      [
+        4,
+        26
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        25
+      ],
+      [
+        4,
+        24
+      ],
+      "fixed"
+    ],
+    [
+      [
+        4,
+        26
+      ],
+      [
+        4,
+        29
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        27
+      ],
+      [
+        4,
+        26
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        28
+      ],
+      [
+        4,
+        29
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        29
+      ],
+      [
+        4,
+        5
+      ],
+      "advcl"
+    ],
+    [
+      [
+        4,
+        30
+      ],
+      [
+        4,
+        32
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        31
+      ],
+      [
+        4,
+        32
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        32
+      ],
+      [
+        4,
+        29
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        33
+      ],
+      [
+        4,
+        32
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        34
+      ],
+      [
+        4,
+        35
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        35
+      ],
+      [
+        4,
+        32
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        36
+      ],
+      [
+        4,
+        35
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        37
+      ],
+      [
+        4,
+        35
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        38
+      ],
+      [
+        4,
+        5
+      ],
+      "punct"
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+Text	Erkeklere yönelik şiddet hem erkekler hem de kadınlar tarafından gerçekleştirilirken , ABD Adalet İstatistikleri Bürosu verilerine göre erkeklerin erkekleri öldürdüğü cinayetler , toplam cinayetlerin % 65 ,3'ünü oluşturmaktadır .	Sosyal tutumlar üzerine yapılan araştırmalar , mağdurun ve failin cinsiyetine bağlı olarak şiddetin az ya da çok ciddi olarak algılandığını göstermektedir .	_ Aggressive Behavior _ adlı yayında yer alan bir araştırmaya göre , kadına yönelik şiddetin , saldırganın cinsiyeti ne olursa olsun , üçüncü şahıslar tarafından polise bildirilme olasılığı yaklaşık üçte bir daha yüksekti .	Aynı araştırmaya göre en çok polise bildirilen cinsiyet kombinasyonu erkek fail ve kadın mağdurdu .	Uluslararası hukuk uzmanı Solange Mouthaan'ın iddiasına göre , çatışma senaryolarında erkeklere yönelik cinsel şiddet , kadınlara ve çocuklara yönelik cinsel şiddete odaklanmak adına göz ardı edilmektedir .
+Event	T0	şiddet	EVENT	18
+Event	T1	cinayetler	EVENT	167
+Event	T2	göstermektedir	EVENT	370
+Event	T3	şiddetin	EVENT	471
+Event	T5	iddiasına	EVENT	757
+Event	T6	çatışma	EVENT	774
+Event	T7	şiddet	EVENT	822
+Event	T8	araştırmalar	EVENT	262
+Event	T9	tutumlar	EVENT	237
+Event	T10	Behavior	EVENT	400
+Event	T11	araştırmaya	EVENT	616
+Event	T4	şiddete	EVENT	869
+Event	T12	edilmektedir	EVENT	903
+Relation	T0	T12	NoRel	true	şiddet	edilmektedir
+Relation	T1	T11	NoRel	true	cinayetler	araştırmaya
+Relation	T1	T7	NoRel	true	cinayetler	şiddet
+Relation	T11	T10	NoRel	true	araştırmaya	Behavior
+Relation	T3	T11	NoRel	true	şiddetin	araştırmaya
+Relation	T4	T3	NoRel	true	şiddete	şiddetin
+Relation	T5	T11	NoRel	true	iddiasına	araştırmaya
+Relation	T5	T9	NoRel	true	iddiasına	tutumlar
+Relation	T6	T9	NoRel	true	çatışma	tutumlar
+Relation	T7	T5	NoRel	true	şiddet	iddiasına
+Relation	T7	T6	NoRel	true	şiddet	çatışma
+Relation	T8	T10	NoRel	true	araştırmalar	Behavior
+Relation	T9	T11	NoRel	true	tutumlar	araştırmaya
+Relation	T9	T6	NoRel	true	tutumlar	çatışma

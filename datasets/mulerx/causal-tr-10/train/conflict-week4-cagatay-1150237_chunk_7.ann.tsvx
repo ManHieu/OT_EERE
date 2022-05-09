@@ -1,0 +1,37 @@
+Text	Ayrıca halktan Blackwater ölümleriyle ilgili sorumluların ortaya çıkartılmasına dair işbirliği yapması istenir .	Şehirde çıkan çatışmalar sonrasında 6 Nisan günü askeri kaynaklar şehirde denetimin tam anlamıyla sağlanamayabileceği gerçeğini kabul etmeye başlarlar .	Bu sırada şehir nüfusunun üçte biri çatışmalardan kaçarak şehri terk etmiştir .	Muharebe sırasında şehirdeki iki büyük hastane kapatılmak zorunda kalır .	Felluce’de yoğun yaşanan çarpışmalar sırasında Irak Direnişinin diğer unsurları farklı bölgelerde ABD hedeflerine saldırı yapma fırsatı yakalar .
+Event	T0	ölümleriyle	EVENT	26
+Event	T1	çatışmalar	EVENT	127
+Event	T2	kabul	EVENT	241
+Event	T3	etmiştir	EVENT	335
+Event	T4	Muharebe	EVENT	346
+Event	T5	kapatılmak	EVENT	393
+Event	T6	çarpışmalar	EVENT	445
+Event	T7	yakalar	EVENT	556
+Event	T8	çıkartılmasına	EVENT	65
+Event	T9	işbirliği	EVENT	85
+Event	T10	istenir	EVENT	103
+Event	T11	denetimin	EVENT	187
+Event	T12	kaçarak	EVENT	316
+Event	T13	çatışmalardan	EVENT	302
+Event	T14	saldırı	EVENT	534
+Relation	T1	T2	CauseEffect	true	çatışmalar	kabul
+Relation	T2	T1	EffectCause	true	kabul	çatışmalar
+Relation	T1	T12	CauseEffect	true	çatışmalar	kaçarak
+Relation	T12	T1	EffectCause	true	kaçarak	çatışmalar
+Relation	T13	T12	CauseEffect	true	çatışmalardan	kaçarak
+Relation	T12	T13	EffectCause	true	kaçarak	çatışmalardan
+Relation	T4	T5	CauseEffect	true	Muharebe	kapatılmak
+Relation	T5	T4	EffectCause	true	kapatılmak	Muharebe
+Relation	T0	T1	NoRel	true	ölümleriyle	çatışmalar
+Relation	T10	T11	NoRel	true	istenir	denetimin
+Relation	T10	T6	NoRel	true	istenir	çarpışmalar
+Relation	T12	T14	NoRel	true	kaçarak	saldırı
+Relation	T12	T7	NoRel	true	kaçarak	yakalar
+Relation	T3	T11	NoRel	true	etmiştir	denetimin
+Relation	T4	T6	NoRel	true	Muharebe	çarpışmalar
+Relation	T4	T9	NoRel	true	Muharebe	işbirliği
+Relation	T5	T14	NoRel	true	kapatılmak	saldırı
+Relation	T6	T13	NoRel	true	çarpışmalar	çatışmalardan
+Relation	T6	T14	NoRel	true	çarpışmalar	saldırı
+Relation	T7	T2	NoRel	true	yakalar	kabul
+Relation	T7	T4	NoRel	true	yakalar	Muharebe

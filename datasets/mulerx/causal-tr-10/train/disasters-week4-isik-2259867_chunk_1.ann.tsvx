@@ -1,0 +1,16 @@
+Text	Körfezin kuzey kolunu oluşturan doğu - batı gidişli normal faylar ile ilişkide bulunan ve kara içine doğru genel olarak KD - GB ve KB - GD gidişli normal , doğrultu atım bileşeni olan faylar mevcuttur .	Bodrum , zamanında büyük depremler ve tsunamiler yaşamış bir şehirdir .	Tarih boyunca birçok kez yıkıcı güçte depremler yaşamıştır .	Özellikle Datça , Marmaris ve Rodos civarları , onlarca kez yıkıcı depremlere maruz kalmıştır .	1900'lü yıllar sonrasında bu bölge yakınlarında yaşanılan en büyük deprem ; 1926 yılında Datça'ya çok yakın bir yerde 7.7 büyüklüğünde gerçekleşen depremdir .
+Event	T0	atım	EVENT	165
+Event	T1	depremler	EVENT	228
+Event	T2	yaşamış	EVENT	252
+Event	T3	yaşamıştır	EVENT	323
+Event	T4	kalmıştır	EVENT	420
+Event	T5	deprem	EVENT	499
+Event	T6	depremdir	EVENT	579
+Event	T7	tsunamiler	EVENT	241
+Relation	T1	T7	CauseEffect	true	depremler	tsunamiler
+Relation	T7	T1	EffectCause	true	tsunamiler	depremler
+Relation	T0	T5	NoRel	true	atım	deprem
+Relation	T3	T2	NoRel	true	yaşamıştır	yaşamış
+Relation	T4	T6	NoRel	true	kalmıştır	depremdir
+Relation	T5	T4	NoRel	true	deprem	kalmıştır
+Relation	T6	T0	NoRel	true	depremdir	atım

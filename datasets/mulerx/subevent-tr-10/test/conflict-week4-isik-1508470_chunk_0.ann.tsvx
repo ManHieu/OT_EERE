@@ -1,0 +1,46 @@
+Text	EYLÜL 2012 BEYTÜŞŞEBAP SALDIRISI , 2 Eylül 2012 tarihinde gece saat 22.00'de Beytüşşebap ilçe merkezinde bulunan askeri birliklere yapılan saldırı .	Şırnak Valiliği ilk çatışmada 9 askerin ve 20 saldırganın öldüğünü , 8 askerin yaralandığını açıkladı .	Şırnak Asker Hastanesi'nde tedavi altına alınan askerlerden birinin daha ölmesi üzerine toplamda 10 asker öldü .	Kato Dağı'nda başlatılan operasyonda 2 asker daha hayatını kaybederken 26 militan öldürüldü ve 4'ü sağ olarak yakalandı .	Kategori : PKK tarafından düzenlenen saldırılar Kategori : Beytüşşebap Beytüşşebap saldırısı , Eylül Beytüşşebap saldırısı , Eylül
+Event	T1	saldırı	EVENT	139
+Event	T2	çatışmada	EVENT	169
+Event	T3	öldüğünü	EVENT	207
+Event	T4	açıkladı	EVENT	242
+Event	T5	ölmesi	EVENT	326
+Event	T6	öldü	EVENT	359
+Event	T7	operasyonda	EVENT	391
+Event	T8	kaybederken	EVENT	425
+Event	T9	öldürüldü	EVENT	448
+Event	T10	yakalandı	EVENT	476
+Event	T11	saldırısı	EVENT	571
+Event	T12	saldırısı	EVENT	601
+Event	T13	BEYTÜŞŞEBAP SALDIRISI	EVENT	11
+Event	T14	yaralandığını	EVENT	228
+Event	T15	tedavi	EVENT	280
+Event	T16	saldırılar	EVENT	525
+Relation	T13	T3	SuperSub	true	BEYTÜŞŞEBAP SALDIRISI	öldüğünü
+Relation	T3	T13	SubSuper	true	öldüğünü	BEYTÜŞŞEBAP SALDIRISI
+Relation	T13	T14	SuperSub	true	BEYTÜŞŞEBAP SALDIRISI	yaralandığını
+Relation	T14	T13	SubSuper	true	yaralandığını	BEYTÜŞŞEBAP SALDIRISI
+Relation	T13	T4	SuperSub	true	BEYTÜŞŞEBAP SALDIRISI	açıkladı
+Relation	T4	T13	SubSuper	true	açıkladı	BEYTÜŞŞEBAP SALDIRISI
+Relation	T13	T5	SuperSub	true	BEYTÜŞŞEBAP SALDIRISI	ölmesi
+Relation	T5	T13	SubSuper	true	ölmesi	BEYTÜŞŞEBAP SALDIRISI
+Relation	T7	T9	SuperSub	true	operasyonda	öldürüldü
+Relation	T9	T7	SubSuper	true	öldürüldü	operasyonda
+Relation	T7	T8	SuperSub	true	operasyonda	kaybederken
+Relation	T8	T7	SubSuper	true	kaybederken	operasyonda
+Relation	T7	T10	SuperSub	true	operasyonda	yakalandı
+Relation	T10	T7	SubSuper	true	yakalandı	operasyonda
+Relation	T1	T3	NoRel	true	saldırı	öldüğünü
+Relation	T1	T7	NoRel	true	saldırı	operasyonda
+Relation	T12	T4	NoRel	true	saldırısı	açıkladı
+Relation	T12	T6	NoRel	true	saldırısı	öldü
+Relation	T14	T5	NoRel	true	yaralandığını	ölmesi
+Relation	T14	T6	NoRel	true	yaralandığını	öldü
+Relation	T3	T10	NoRel	true	öldüğünü	yakalandı
+Relation	T3	T12	NoRel	true	öldüğünü	saldırısı
+Relation	T4	T5	NoRel	true	açıkladı	ölmesi
+Relation	T6	T4	NoRel	true	öldü	açıkladı
+Relation	T7	T15	NoRel	true	operasyonda	tedavi
+Relation	T8	T5	NoRel	true	kaybederken	ölmesi
+Relation	T9	T11	NoRel	true	öldürüldü	saldırısı
+Relation	T9	T14	NoRel	true	öldürüldü	yaralandığını
+Relation	T9	T3	NoRel	true	öldürüldü	öldüğünü

@@ -1,0 +1,47 @@
+Text	As a member of No. 2 Squadron in France , Phillipps flew mainly S.E.5 fighters , and was awarded two Military Crosses and the Distinguished Flying Cross for his actions .	He finished the war a major , commanding No. 6 ( Training ) Squadron in England .	Returning to Australia in 1919 , he left the AFC and was managing a rural property when he enlisted in the RAAF soon after the outbreak of World War II .	At his death he was ranked squadron leader , commanding No. 2 Elementary Flying Training School at Archerfield , Queensland .	Phillipps was born on 1 March 1892 in New South Wales ; sources differ on the exact location , which is variously recorded as rural Moree and metropolitan North Sydney .
+Event	T0	flew	EVENT	52
+Event	T1	awarded	EVENT	89
+Event	T2	actions	EVENT	161
+Event	T3	finished	EVENT	174
+Event	T4	commanding	EVENT	201
+Event	T5	Returning	EVENT	253
+Event	T6	left	EVENT	289
+Event	T7	managing	EVENT	310
+Event	T8	enlisted	EVENT	344
+Event	T9	outbreak	EVENT	380
+Event	T10	death	EVENT	414
+Event	T11	ranked	EVENT	427
+Event	T12	commanding	EVENT	452
+Event	T13	born	EVENT	547
+Event	T14	differ	EVENT	597
+Event	T15	recorded	EVENT	647
+Relation	T5	T6	SuperSub	true	Returning	left
+Relation	T6	T5	SubSuper	true	left	Returning
+Relation	T6	T7	SuperSub	true	left	managing
+Relation	T7	T6	SubSuper	true	managing	left
+Relation	T0	T1	NoRel	true	flew	awarded
+Relation	T0	T15	NoRel	true	flew	recorded
+Relation	T1	T2	NoRel	true	awarded	actions
+Relation	T12	T10	NoRel	true	commanding	death
+Relation	T12	T6	NoRel	true	commanding	left
+Relation	T13	T12	NoRel	true	born	commanding
+Relation	T13	T15	NoRel	true	born	recorded
+Relation	T13	T3	NoRel	true	born	finished
+Relation	T13	T8	NoRel	true	born	enlisted
+Relation	T14	T15	NoRel	true	differ	recorded
+Relation	T2	T11	NoRel	true	actions	ranked
+Relation	T2	T8	NoRel	true	actions	enlisted
+Relation	T3	T10	NoRel	true	finished	death
+Relation	T3	T12	NoRel	true	finished	commanding
+Relation	T3	T9	NoRel	true	finished	outbreak
+Relation	T4	T11	NoRel	true	commanding	ranked
+Relation	T4	T8	NoRel	true	commanding	enlisted
+Relation	T5	T12	NoRel	true	Returning	commanding
+Relation	T5	T14	NoRel	true	Returning	differ
+Relation	T5	T7	NoRel	true	Returning	managing
+Relation	T6	T8	NoRel	true	left	enlisted
+Relation	T7	T1	NoRel	true	managing	awarded
+Relation	T7	T10	NoRel	true	managing	death
+Relation	T8	T3	NoRel	true	enlisted	finished
+Relation	T9	T15	NoRel	true	outbreak	recorded
+Relation	T9	T3	NoRel	true	outbreak	finished

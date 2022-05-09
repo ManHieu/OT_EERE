@@ -1,0 +1,39 @@
+Text	Deprem sonucu 32 kişi de yaralandı .	Köyün 800 sakininin 700'ünün deprem anında yaylada olması fazla can kaybını önledi .	Depremin en büyük zararı verdiği Yığınçal köyünün dışında Kutlubulak , Kucak , Sağlıksuyu , Subeşiği , Bozkurt ve Günyolu köylerinde de hasar meydana geldi .	Kandilli Rasathanesi , deprem sonucunda bin binanın hasar gördüğünü belirtti .	Orta büyüklükteki bir depremde bu kadar binanın zarar görmesinin sebebi , binaların moloz taştan örülü yığma yapılar olarak yapılmış olmalarıdır .
+Event	T0	yaralandı	EVENT	25
+Event	T1	deprem	EVENT	66
+Event	T2	önledi	EVENT	113
+Event	T3	Depremin	EVENT	122
+Event	T5	geldi	EVENT	272
+Event	T6	deprem	EVENT	303
+Event	T7	belirtti	EVENT	348
+Event	T8	depremde	EVENT	381
+Event	T10	yapılmış	EVENT	483
+Event	T11	Deprem	EVENT	0
+Event	T12	olması	EVENT	88
+Event	T4	hasar	EVENT	258
+Event	T13	zararı	EVENT	140
+Event	T9	zarar	EVENT	407
+Relation	T11	T0	SuperSub	true	Deprem	yaralandı
+Relation	T0	T11	SubSuper	true	yaralandı	Deprem
+Relation	T11	T5	SuperSub	true	Deprem	geldi
+Relation	T5	T11	SubSuper	true	geldi	Deprem
+Relation	T11	T7	SuperSub	true	Deprem	belirtti
+Relation	T7	T11	SubSuper	true	belirtti	Deprem
+Relation	T0	T3	NoRel	true	yaralandı	Depremin
+Relation	T1	T0	NoRel	true	deprem	yaralandı
+Relation	T1	T10	NoRel	true	deprem	yapılmış
+Relation	T1	T4	NoRel	true	deprem	hasar
+Relation	T10	T3	NoRel	true	yapılmış	Depremin
+Relation	T10	T8	NoRel	true	yapılmış	depremde
+Relation	T11	T10	NoRel	true	Deprem	yapılmış
+Relation	T12	T0	NoRel	true	olması	yaralandı
+Relation	T12	T7	NoRel	true	olması	belirtti
+Relation	T13	T1	NoRel	true	zararı	deprem
+Relation	T13	T11	NoRel	true	zararı	Deprem
+Relation	T13	T8	NoRel	true	zararı	depremde
+Relation	T3	T12	NoRel	true	Depremin	olması
+Relation	T3	T5	NoRel	true	Depremin	geldi
+Relation	T3	T6	NoRel	true	Depremin	deprem
+Relation	T7	T10	NoRel	true	belirtti	yapılmış
+Relation	T7	T3	NoRel	true	belirtti	Depremin
+Relation	T9	T8	NoRel	true	zarar	depremde

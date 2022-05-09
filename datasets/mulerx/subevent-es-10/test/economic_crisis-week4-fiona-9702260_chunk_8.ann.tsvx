@@ -1,0 +1,56 @@
+Text	El 3 de diciembre , trabajadores de la empresa agroindustrial Pedregal en el Distrito de Castilla en Piura iniciaron también un paro agrario exigiendo mejores condiciones laborales .	Durante la madrugada del 4 de diciembre de 2020 , trabajadores de Doe Run bloquearon la Carretera central como medida de protesta para exigir al gobierno de Francisco Sagasti la adjudicación directa de los activos de la empresa .	Los trabajadores bloquearon las carreteras La Oroya_-_Huancayo , La Oroya_-_Lima y La Oroya_-_Tarma .	En la segunda fase de protestas , los manifestantes bloquearon nuevamente las carreteras , esto luego de que los congresistas de la República no aprobaran la nueva Ley agraria .	El 21 de diciembre , luego de que el Congreso de la República no aprobara el nuevo régimen laboral agrario , los trabajadores del sector agrario volvieron a tomar la Panamericana Sur con piquetes y barricadas que impedían el paso de los transportistas .
+Event	T0	iniciaron	EVENT	107
+Event	T1	paro	EVENT	128
+Event	T2	exigiendo	EVENT	141
+Event	T3	bloquearon	EVENT	257
+Event	T4	medida	EVENT	294
+Event	T5	protesta	EVENT	304
+Event	T6	exigir	EVENT	318
+Event	T7	adjudicación	EVENT	361
+Event	T8	bloquearon	EVENT	430
+Event	T9	fase	EVENT	529
+Event	T10	protestas	EVENT	537
+Event	T11	bloquearon	EVENT	567
+Event	T12	aprobaran	EVENT	660
+Event	T13	aprobara	EVENT	758
+Event	T14	volvieron	EVENT	838
+Event	T15	tomar	EVENT	850
+Event	T16	piquetes	EVENT	880
+Event	T17	impedían	EVENT	906
+Event	T18	paso	EVENT	918
+Relation	T5	T3	SuperSub	true	protesta	bloquearon
+Relation	T3	T5	SubSuper	true	bloquearon	protesta
+Relation	T0	T12	NoRel	true	iniciaron	aprobaran
+Relation	T0	T5	NoRel	true	iniciaron	protesta
+Relation	T0	T6	NoRel	true	iniciaron	exigir
+Relation	T0	T8	NoRel	true	iniciaron	bloquearon
+Relation	T1	T16	NoRel	true	paro	piquetes
+Relation	T10	T0	NoRel	true	protestas	iniciaron
+Relation	T10	T16	NoRel	true	protestas	piquetes
+Relation	T11	T2	NoRel	true	bloquearon	exigiendo
+Relation	T12	T1	NoRel	true	aprobaran	paro
+Relation	T12	T13	NoRel	true	aprobaran	aprobara
+Relation	T13	T11	NoRel	true	aprobara	bloquearon
+Relation	T16	T2	NoRel	true	piquetes	exigiendo
+Relation	T17	T16	NoRel	true	impedían	piquetes
+Relation	T18	T1	NoRel	true	paso	paro
+Relation	T18	T14	NoRel	true	paso	volvieron
+Relation	T2	T9	NoRel	true	exigiendo	fase
+Relation	T3	T12	NoRel	true	bloquearon	aprobaran
+Relation	T3	T14	NoRel	true	bloquearon	volvieron
+Relation	T4	T8	NoRel	true	medida	bloquearon
+Relation	T5	T12	NoRel	true	protesta	aprobaran
+Relation	T5	T15	NoRel	true	protesta	tomar
+Relation	T5	T18	NoRel	true	protesta	paso
+Relation	T5	T2	NoRel	true	protesta	exigiendo
+Relation	T5	T9	NoRel	true	protesta	fase
+Relation	T6	T12	NoRel	true	exigir	aprobaran
+Relation	T7	T1	NoRel	true	adjudicación	paro
+Relation	T7	T18	NoRel	true	adjudicación	paso
+Relation	T7	T3	NoRel	true	adjudicación	bloquearon
+Relation	T7	T5	NoRel	true	adjudicación	protesta
+Relation	T7	T9	NoRel	true	adjudicación	fase
+Relation	T8	T0	NoRel	true	bloquearon	iniciaron
+Relation	T8	T16	NoRel	true	bloquearon	piquetes
+Relation	T9	T10	NoRel	true	fase	protestas
+Relation	T9	T17	NoRel	true	fase	impedían

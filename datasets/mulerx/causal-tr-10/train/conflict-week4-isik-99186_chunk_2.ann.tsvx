@@ -1,0 +1,35 @@
+Text	Deniz Gezmiş ilk ve ortaöğrenimini Şarkışla'da , liseyi İstanbul'da Haydarpaşa Lisesinde okudu .	Henüz lise öğrencisiyken sol düşünceyle tanıştı ve kendini döneminin eylemleri içinde buldu .	11 Ekim 1965'te Türkiye İşçi Partisi'nin ( TİP ) Üsküdar ilçe başkanlığına üye oldu .	İlk defa 15 Ağustos - 31 Ağustos 1966 tarihleri_arasında Ankara'dan İstanbul'a yürüyen Çorum Belediyesi temizlik işçilerinin Taksim Anıtı'na çelenk koymaları sırasında işçilerin desteklenip TÜRK - İŞ yöneticilerinin protesto edildiği gösteri sırasında gözaltına alındı .	6 Temmuz 1966 tarihinde girdiği üniversite sınavında hem fen fakültesini hem de hukuk fakültesini kazandı .
+Event	T0	okudu	EVENT	89
+Event	T1	tanıştı	EVENT	137
+Event	T2	eylemleri	EVENT	166
+Event	T3	buldu	EVENT	183
+Event	T4	yürüyen	EVENT	356
+Event	T5	koymaları	EVENT	425
+Event	T6	gösteri	EVENT	511
+Event	T7	alındı	EVENT	539
+Event	T8	kazandı	EVENT	646
+Event	T9	protesto	EVENT	493
+Event	T11	sınavında	EVENT	591
+Event	T10	oldu	EVENT	270
+Relation	T9	T6	CauseEffect	true	protesto	gösteri
+Relation	T6	T9	EffectCause	true	gösteri	protesto
+Relation	T6	T7	CauseEffect	true	gösteri	alındı
+Relation	T7	T6	EffectCause	true	alındı	gösteri
+Relation	T11	T8	CauseEffect	true	sınavında	kazandı
+Relation	T8	T11	EffectCause	true	kazandı	sınavında
+Relation	T1	T3	CauseEffect	true	tanıştı	buldu
+Relation	T3	T1	EffectCause	true	buldu	tanıştı
+Relation	T3	T10	CauseEffect	true	buldu	oldu
+Relation	T10	T3	EffectCause	true	oldu	buldu
+Relation	T1	T11	NoRel	true	tanıştı	sınavında
+Relation	T10	T5	NoRel	true	oldu	koymaları
+Relation	T10	T7	NoRel	true	oldu	alındı
+Relation	T11	T2	NoRel	true	sınavında	eylemleri
+Relation	T2	T0	NoRel	true	eylemleri	okudu
+Relation	T3	T4	NoRel	true	buldu	yürüyen
+Relation	T4	T5	NoRel	true	yürüyen	koymaları
+Relation	T5	T9	NoRel	true	koymaları	protesto
+Relation	T7	T11	NoRel	true	alındı	sınavında
+Relation	T8	T7	NoRel	true	kazandı	alındı
+Relation	T9	T0	NoRel	true	protesto	okudu
+Relation	T9	T8	NoRel	true	protesto	kazandı

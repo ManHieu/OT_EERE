@@ -1,0 +1,40 @@
+Text	Yardımcı pilot ve biri çocuk 13 yolcu , toplam 14 kişi kurtuldu .	Yardımcı pilot ve bir yolcu ağır yaralıydı .	Kazanın ana nedeni yaklaşma kontrolörünün uçağın havalimanından uzaklığını yanlış bildirmesi ve bundan dolayı uçağın erken alçalmaya başlaması ve yaklaşma şemasının ihlal edilmesidir .	Uçağın bulutların içinde uçması ve dağı görememesi ve mürettebatın konumlarını teyit etmemeleri kazanın gerçekleşmesinde bir faktördür .	Kategori : 1970'te Özbekistan Kategori : Özbekistan SSC'deki havacılık kazaları ve olayları Kategori : 1970'te havacılık kazaları ve olayları Kategori : İlyuşin İl - 18 içeren kazalar ve olaylar Kategori : Aeroflot kazaları ve olayları Kategori : Hava trafik kontrolörü hatası nedeniyle gerçekleşen havacılık kazaları ve olayları Kategori : Kontrollü uçuşta yere çarpma
+Event	T0	kurtuldu	EVENT	55
+Event	T1	yaralıydı	EVENT	99
+Event	T2	Kazanın	EVENT	111
+Event	T3	bildirmesi	EVENT	193
+Event	T4	başlaması	EVENT	244
+Event	T6	uçması	EVENT	321
+Event	T7	görememesi	EVENT	336
+Event	T11	hatası	EVENT	703
+Event	T13	kazaları	EVENT	742
+Event	T14	olayları	EVENT	754
+Event	T16	ihlal	EVENT	276
+Event	T5	kazanın	EVENT	392
+Relation	T2	T1	CauseEffect	true	Kazanın	yaralıydı
+Relation	T1	T2	EffectCause	true	yaralıydı	Kazanın
+Relation	T3	T2	CauseEffect	true	bildirmesi	Kazanın
+Relation	T2	T3	EffectCause	true	Kazanın	bildirmesi
+Relation	T3	T4	CauseEffect	true	bildirmesi	başlaması
+Relation	T4	T3	EffectCause	true	başlaması	bildirmesi
+Relation	T4	T16	CauseEffect	true	başlaması	ihlal
+Relation	T16	T4	EffectCause	true	ihlal	başlaması
+Relation	T6	T7	CauseEffect	true	uçması	görememesi
+Relation	T7	T6	EffectCause	true	görememesi	uçması
+Relation	T7	T2	CauseEffect	true	görememesi	Kazanın
+Relation	T2	T7	EffectCause	true	Kazanın	görememesi
+Relation	T7	T5	CauseEffect	true	görememesi	kazanın
+Relation	T5	T7	EffectCause	true	kazanın	görememesi
+Relation	T3	T5	CauseEffect	true	bildirmesi	kazanın
+Relation	T5	T3	EffectCause	true	kazanın	bildirmesi
+Relation	T11	T13	CauseEffect	true	hatası	kazaları
+Relation	T13	T11	EffectCause	true	kazaları	hatası
+Relation	T11	T14	CauseEffect	true	hatası	olayları
+Relation	T14	T11	EffectCause	true	olayları	hatası
+Relation	T0	T4	NoRel	true	kurtuldu	başlaması
+Relation	T13	T1	NoRel	true	kazaları	yaralıydı
+Relation	T13	T4	NoRel	true	kazaları	başlaması
+Relation	T13	T5	NoRel	true	kazaları	kazanın
+Relation	T14	T3	NoRel	true	olayları	bildirmesi
+Relation	T4	T14	NoRel	true	başlaması	olayları
+Relation	T5	T4	NoRel	true	kazanın	başlaması

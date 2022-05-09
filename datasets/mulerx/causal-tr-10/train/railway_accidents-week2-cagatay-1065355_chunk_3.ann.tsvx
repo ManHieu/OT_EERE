@@ -1,0 +1,43 @@
+Text	Kaza arkasında 9 ölü ve 115 yaralı bırakır ve Perus istasyonunu tahrip eder .	- 15 Ağustos , 2000 - Kenya Broadcasting Corporation raporuna göre , Butere - Kisumu hattında çalışan ve 400 yolcusu olan tren Viktorya Gölü sahilinde , Lela , Nyanza , Kenya rayları yarıp geçer , kazaya fren tutmama nedeni sebep olur .	- 17 Ağustos , 2000 – Kisumu’da bir yük treninin bir yüklü otobüse trafiğin yoğun olduğu saatte hemzemin geçitte çarpması sonrası , 6 ölü .	- 19 Ağustos , 2000 - Kenya Television Network raporuna göre sıvılaştırılmış gaz taşıyan bir Mombasa - Nairobi yük treni Eastern , Kenya , Mavoka’da sıvılaştırılmış gazın patlaması ve alev alması ile 25 kişi öldü ve 50_den fazla kişi yaralandı ; kurbanların ve yaralananların çoğu demiryolu hattı yakınındaki evlerde ikamet edenlerdi .	- 17 Ekim , 2000 – Hatfield demiryolu çarpışması , İngiltere , Birleşik Krallık : Londra - Leeds ekpresi 115 mph ( 185 km / h ) ile geçtiğinde , bir hatalı ray , “ rotatif temas yorgunluğu ” olarak bilinen bir durum nedeniyle 300 parçaya kırılır .
+Event	T0	Kaza	EVENT	0
+Event	T1	ölü	EVENT	17
+Event	T10	çarpışması	EVENT	829
+Event	T12	yorgunluğu	EVENT	969
+Event	T13	kırılır	EVENT	1029
+Event	T18	çarpması	EVENT	428
+Event	T2	bırakır	EVENT	35
+Event	T3	eder	EVENT	71
+Event	T4	geçer	EVENT	267
+Event	T5	ölü	EVENT	449
+Event	T6	patlaması	EVENT	626
+Event	T8	öldü	EVENT	663
+Event	T9	yaralandı	EVENT	689
+Relation	T0	T1	CauseEffect	true	Kaza	ölü
+Relation	T1	T0	EffectCause	true	ölü	Kaza
+Relation	T0	T2	CauseEffect	true	Kaza	bırakır
+Relation	T2	T0	EffectCause	true	bırakır	Kaza
+Relation	T0	T3	CauseEffect	true	Kaza	eder
+Relation	T3	T0	EffectCause	true	eder	Kaza
+Relation	T18	T5	CauseEffect	true	çarpması	ölü
+Relation	T5	T18	EffectCause	true	ölü	çarpması
+Relation	T6	T8	CauseEffect	true	patlaması	öldü
+Relation	T8	T6	EffectCause	true	öldü	patlaması
+Relation	T6	T9	CauseEffect	true	patlaması	yaralandı
+Relation	T9	T6	EffectCause	true	yaralandı	patlaması
+Relation	T12	T13	CauseEffect	true	yorgunluğu	kırılır
+Relation	T13	T12	EffectCause	true	kırılır	yorgunluğu
+Relation	T0	T13	NoRel	true	Kaza	kırılır
+Relation	T1	T18	NoRel	true	ölü	çarpması
+Relation	T12	T6	NoRel	true	yorgunluğu	patlaması
+Relation	T13	T1	NoRel	true	kırılır	ölü
+Relation	T18	T12	NoRel	true	çarpması	yorgunluğu
+Relation	T3	T12	NoRel	true	eder	yorgunluğu
+Relation	T3	T13	NoRel	true	eder	kırılır
+Relation	T3	T8	NoRel	true	eder	öldü
+Relation	T4	T13	NoRel	true	geçer	kırılır
+Relation	T6	T0	NoRel	true	patlaması	Kaza
+Relation	T6	T18	NoRel	true	patlaması	çarpması
+Relation	T8	T1	NoRel	true	öldü	ölü
+Relation	T8	T13	NoRel	true	öldü	kırılır
+Relation	T8	T3	NoRel	true	öldü	eder
+Relation	T9	T8	NoRel	true	yaralandı	öldü

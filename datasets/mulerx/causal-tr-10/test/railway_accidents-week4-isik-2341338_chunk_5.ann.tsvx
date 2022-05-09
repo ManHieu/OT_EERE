@@ -1,0 +1,43 @@
+Text	_ Hürriyet Gazetesi 9 Temmuz 2018	https : / / www. sozcu . com. tr / 2018 / gundem / tren - kazasinda - son - dakika - aci - bilanco - 24 - olu - 318 - yarali - 2510122 / : _ Çorlu'da tren kazasında Acı Bilanço , 318 yaralı 24 Ölü ...	_ Sözcü Gazetesi 11 Temmuz 2018	http : / / www. hurriyet . com . tr / gundem / corluda - tren - faciasi - en - az - 10 - olu - 73 - yarali - 40890574 : _ Çorlu'da tren kazası ! Başbakan yardımcısı acı haberi verdi , 24 kişi hayatını kaybetti .	_ Hürriyet Gazetesi 9 Temmuz 2018
+Event	T0	yaralı	EVENT	217
+Event	T1	kazası	EVENT	403
+Event	T2	verdi	EVENT	443
+Event	T3	kaybetti	EVENT	468
+Event	T4	kazasinda	EVENT	92
+Event	T5	olu	EVENT	140
+Event	T6	yarali	EVENT	152
+Event	T7	kazasında	EVENT	189
+Event	T8	Ölü	EVENT	227
+Event	T9	faciasi	EVENT	331
+Event	T10	olu	EVENT	356
+Event	T11	yarali	EVENT	367
+Relation	T4	T5	CauseEffect	true	kazasinda	olu
+Relation	T5	T4	EffectCause	true	olu	kazasinda
+Relation	T4	T6	CauseEffect	true	kazasinda	yarali
+Relation	T6	T4	EffectCause	true	yarali	kazasinda
+Relation	T7	T0	CauseEffect	true	kazasında	yaralı
+Relation	T0	T7	EffectCause	true	yaralı	kazasında
+Relation	T7	T8	CauseEffect	true	kazasında	Ölü
+Relation	T8	T7	EffectCause	true	Ölü	kazasında
+Relation	T9	T10	CauseEffect	true	faciasi	olu
+Relation	T10	T9	EffectCause	true	olu	faciasi
+Relation	T9	T11	CauseEffect	true	faciasi	yarali
+Relation	T11	T9	EffectCause	true	yarali	faciasi
+Relation	T1	T3	CauseEffect	true	kazası	kaybetti
+Relation	T3	T1	EffectCause	true	kaybetti	kazası
+Relation	T3	T2	CauseEffect	true	kaybetti	verdi
+Relation	T2	T3	EffectCause	true	verdi	kaybetti
+Relation	T0	T8	NoRel	true	yaralı	Ölü
+Relation	T0	T9	NoRel	true	yaralı	faciasi
+Relation	T10	T11	NoRel	true	olu	yarali
+Relation	T10	T6	NoRel	true	olu	yarali
+Relation	T2	T0	NoRel	true	verdi	yaralı
+Relation	T2	T5	NoRel	true	verdi	olu
+Relation	T3	T11	NoRel	true	kaybetti	yarali
+Relation	T4	T1	NoRel	true	kazasinda	kazası
+Relation	T4	T2	NoRel	true	kazasinda	verdi
+Relation	T6	T11	NoRel	true	yarali	yarali
+Relation	T6	T9	NoRel	true	yarali	faciasi
+Relation	T8	T10	NoRel	true	Ölü	olu
+Relation	T8	T3	NoRel	true	Ölü	kaybetti
+Relation	T8	T9	NoRel	true	Ölü	faciasi

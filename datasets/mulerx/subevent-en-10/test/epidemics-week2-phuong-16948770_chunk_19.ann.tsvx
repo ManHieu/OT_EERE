@@ -1,0 +1,80 @@
+Text	The ongoing 7th pandemic has affirmed that the severity of cholera is still prevalent in society , an issue recognised by the Global Task Force on Cholera Control ( GTFCC ) .	They convened a high - level meeting with officials from cholera - affected countries , donors and technical partners to announce their strategy “ The Global Roadmap to 2030 ” , an initiative to end cholera as a threat to public health by 2030 .	The three components of the strategy are : “ early detection and quick response to contain the outbreaks ; a multi-sectorial approach to prevent cholera recurrence , and , coordination of technical support and advocacy , resource mobilisation and partnership at the global level .	Category : Cholera pandemics	Category : 20th - century health disasters
+Event	T0	pandemic	EVENT	16
+Event	T1	affirmed	EVENT	29
+Event	T10	threat	EVENT	387
+Event	T11	detection	EVENT	472
+Event	T12	response	EVENT	492
+Event	T13	contain	EVENT	504
+Event	T14	outbreaks	EVENT	516
+Event	T15	approach	EVENT	546
+Event	T16	recurrence	EVENT	574
+Event	T17	coordination	EVENT	593
+Event	T18	mobilisation	EVENT	651
+Event	T19	disasters	EVENT	764
+Event	T2	cholera	EVENT	59
+Event	T20	prevalent	EVENT	76
+Event	T21	prevent	EVENT	558
+Event	T22	support	EVENT	619
+Event	T23	advocacy	EVENT	631
+Event	T3	recognised	EVENT	108
+Event	T4	convened	EVENT	180
+Event	T5	meeting	EVENT	204
+Event	T6	cholera	EVENT	374
+Event	T7	announce	EVENT	296
+Event	T8	strategy	EVENT	311
+Event	T9	initiative	EVENT	356
+Relation	T17	T22	SuperSub	true	coordination	support
+Relation	T22	T17	SubSuper	true	support	coordination
+Relation	T17	T23	SuperSub	true	coordination	advocacy
+Relation	T23	T17	SubSuper	true	advocacy	coordination
+Relation	T8	T9	SuperSub	true	strategy	initiative
+Relation	T9	T8	SubSuper	true	initiative	strategy
+Relation	T17	T18	SuperSub	true	coordination	mobilisation
+Relation	T18	T17	SubSuper	true	mobilisation	coordination
+Relation	T0	T23	NoRel	true	pandemic	advocacy
+Relation	T1	T11	NoRel	true	affirmed	detection
+Relation	T1	T15	NoRel	true	affirmed	approach
+Relation	T1	T21	NoRel	true	affirmed	prevent
+Relation	T1	T22	NoRel	true	affirmed	support
+Relation	T10	T20	NoRel	true	threat	prevalent
+Relation	T10	T22	NoRel	true	threat	support
+Relation	T11	T13	NoRel	true	detection	contain
+Relation	T11	T14	NoRel	true	detection	outbreaks
+Relation	T11	T3	NoRel	true	detection	recognised
+Relation	T11	T9	NoRel	true	detection	initiative
+Relation	T12	T3	NoRel	true	response	recognised
+Relation	T13	T23	NoRel	true	contain	advocacy
+Relation	T14	T3	NoRel	true	outbreaks	recognised
+Relation	T15	T12	NoRel	true	approach	response
+Relation	T15	T7	NoRel	true	approach	announce
+Relation	T16	T12	NoRel	true	recurrence	response
+Relation	T16	T15	NoRel	true	recurrence	approach
+Relation	T16	T20	NoRel	true	recurrence	prevalent
+Relation	T16	T8	NoRel	true	recurrence	strategy
+Relation	T17	T12	NoRel	true	coordination	response
+Relation	T18	T1	NoRel	true	mobilisation	affirmed
+Relation	T18	T22	NoRel	true	mobilisation	support
+Relation	T19	T2	NoRel	true	disasters	cholera
+Relation	T19	T8	NoRel	true	disasters	strategy
+Relation	T2	T4	NoRel	true	cholera	convened
+Relation	T2	T6	NoRel	true	cholera	cholera
+Relation	T2	T8	NoRel	true	cholera	strategy
+Relation	T20	T1	NoRel	true	prevalent	affirmed
+Relation	T20	T18	NoRel	true	prevalent	mobilisation
+Relation	T21	T11	NoRel	true	prevent	detection
+Relation	T21	T2	NoRel	true	prevent	cholera
+Relation	T21	T9	NoRel	true	prevent	initiative
+Relation	T22	T15	NoRel	true	support	approach
+Relation	T23	T7	NoRel	true	advocacy	announce
+Relation	T4	T19	NoRel	true	convened	disasters
+Relation	T4	T7	NoRel	true	convened	announce
+Relation	T5	T1	NoRel	true	meeting	affirmed
+Relation	T6	T13	NoRel	true	cholera	contain
+Relation	T7	T0	NoRel	true	announce	pandemic
+Relation	T7	T1	NoRel	true	announce	affirmed
+Relation	T7	T16	NoRel	true	announce	recurrence
+Relation	T7	T8	NoRel	true	announce	strategy
+Relation	T8	T0	NoRel	true	strategy	pandemic
+Relation	T9	T16	NoRel	true	initiative	recurrence
+Relation	T9	T21	NoRel	true	initiative	prevent
+Relation	T9	T6	NoRel	true	initiative	cholera

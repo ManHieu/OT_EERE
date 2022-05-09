@@ -1,0 +1,38 @@
+Text	El VUELO 9209 DE AVIS-AMUR fue un vuelo nacional de carga que sufrió un accidente el martes 9 de agosto de 2011 en el lejano oriente de Rusia .	El avión , un Antonov An-12 de Avis Amur , se encontraba efectuando un vuelo de cabotaje carguero desde el aeropuerto de Magadan al aeropuerto de Keperveye , transportando nueve tripulantes y dos pasajeros .	Se notificó un fuego en el motor en ruta y el avión se estrelló posteriormente al noreste de Magadan , matando a todos los que viajaban a bordo .	El avión accidentado fue el Antonov AN-12BP registro RA-11125 , c/n 3341006 .	El avión había volado por primera vez en 1963 y en el momento del accidente era el avión registrado en Rusia más antiguo en servicio comercial .
+Event	T0	vuelo	EVENT	34
+Event	T1	sufrió	EVENT	62
+Event	T2	accidente	EVENT	72
+Event	T3	efectuando	EVENT	201
+Event	T4	vuelo	EVENT	215
+Event	T5	transportando	EVENT	302
+Event	T6	notificó	EVENT	355
+Event	T7	fuego	EVENT	367
+Event	T8	estrelló	EVENT	407
+Event	T9	matando	EVENT	455
+Event	T10	accidentado	EVENT	507
+Event	T11	volado	EVENT	591
+Event	T12	accidente	EVENT	642
+Event	T13	registrado	EVENT	665
+Relation	T7	T8	CauseEffect	true	fuego	estrelló
+Relation	T8	T7	EffectCause	true	estrelló	fuego
+Relation	T8	T2	CauseEffect	true	estrelló	accidente
+Relation	T2	T8	EffectCause	true	accidente	estrelló
+Relation	T8	T9	CauseEffect	true	estrelló	matando
+Relation	T9	T8	EffectCause	true	matando	estrelló
+Relation	T1	T6	NoRel	true	sufrió	notificó
+Relation	T10	T0	NoRel	true	accidentado	vuelo
+Relation	T11	T5	NoRel	true	volado	transportando
+Relation	T11	T7	NoRel	true	volado	fuego
+Relation	T12	T0	NoRel	true	accidente	vuelo
+Relation	T13	T0	NoRel	true	registrado	vuelo
+Relation	T2	T0	NoRel	true	accidente	vuelo
+Relation	T3	T10	NoRel	true	efectuando	accidentado
+Relation	T3	T6	NoRel	true	efectuando	notificó
+Relation	T3	T7	NoRel	true	efectuando	fuego
+Relation	T4	T12	NoRel	true	vuelo	accidente
+Relation	T5	T10	NoRel	true	transportando	accidentado
+Relation	T5	T4	NoRel	true	transportando	vuelo
+Relation	T6	T11	NoRel	true	notificó	volado
+Relation	T7	T3	NoRel	true	fuego	efectuando
+Relation	T7	T4	NoRel	true	fuego	vuelo
+Relation	T9	T7	NoRel	true	matando	fuego

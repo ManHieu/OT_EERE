@@ -1,0 +1,88 @@
+Text	La previsión italiana era la de una campaña corta y una rápida capitulación griega , pues el Ejército no estaba preparado para una guerra larga .	La inesperada resistencia griega estuvo a punto de hacerle perder el control de Albania y supuso la humillación de Mussolini ante Hitler , al que llegó a solicitar ayuda para estabilizar el frente .	En enero de 1941 Hitler prometió a Mussolini el envío de tropas alemanas , tanto en apoyo de la guerra contra Grecia como también en África del Norte .	Este hecho marca el fin de la guerra paralela y la progresiva dependencia del Ejército italiano de Alemania .	Tras sofocar un golpe de Estado organizado por los británicos en Yugoslavia , el Ejército italiano reinició la campaña de Grecia .
+Event	T0	previsión	EVENT	3
+Event	T1	capitulación	EVENT	63
+Event	T2	guerra	EVENT	131
+Event	T3	resistencia	EVENT	160
+Event	T4	estuvo	EVENT	179
+Event	T5	perder	EVENT	205
+Event	T6	control	EVENT	215
+Event	T7	supuso	EVENT	236
+Event	T8	humillación	EVENT	246
+Event	T9	llegó	EVENT	292
+Event	T10	ayuda	EVENT	310
+Event	T11	estabilizar	EVENT	321
+Event	T12	prometió	EVENT	369
+Event	T13	envío	EVENT	393
+Event	T14	guerra	EVENT	441
+Event	T15	marca	EVENT	508
+Event	T16	fin	EVENT	517
+Event	T17	guerra	EVENT	527
+Event	T18	dependencia	EVENT	559
+Event	T19	sofocar	EVENT	612
+Event	T20	golpe	EVENT	623
+Event	T21	organizado	EVENT	639
+Event	T22	reinició	EVENT	706
+Event	T23	campaña	EVENT	718
+Relation	T19	T22	SuperSub	true	sofocar	reinició
+Relation	T22	T19	SubSuper	true	reinició	sofocar
+Relation	T0	T1	NoRel	true	previsión	capitulación
+Relation	T0	T22	NoRel	true	previsión	reinició
+Relation	T0	T7	NoRel	true	previsión	supuso
+Relation	T1	T10	NoRel	true	capitulación	ayuda
+Relation	T1	T18	NoRel	true	capitulación	dependencia
+Relation	T1	T2	NoRel	true	capitulación	guerra
+Relation	T1	T7	NoRel	true	capitulación	supuso
+Relation	T10	T18	NoRel	true	ayuda	dependencia
+Relation	T10	T21	NoRel	true	ayuda	organizado
+Relation	T10	T5	NoRel	true	ayuda	perder
+Relation	T10	T9	NoRel	true	ayuda	llegó
+Relation	T11	T20	NoRel	true	estabilizar	golpe
+Relation	T12	T4	NoRel	true	prometió	estuvo
+Relation	T12	T8	NoRel	true	prometió	humillación
+Relation	T13	T0	NoRel	true	envío	previsión
+Relation	T13	T2	NoRel	true	envío	guerra
+Relation	T13	T23	NoRel	true	envío	campaña
+Relation	T13	T6	NoRel	true	envío	control
+Relation	T15	T1	NoRel	true	marca	capitulación
+Relation	T15	T12	NoRel	true	marca	prometió
+Relation	T15	T2	NoRel	true	marca	guerra
+Relation	T15	T21	NoRel	true	marca	organizado
+Relation	T15	T6	NoRel	true	marca	control
+Relation	T16	T15	NoRel	true	fin	marca
+Relation	T17	T18	NoRel	true	guerra	dependencia
+Relation	T17	T20	NoRel	true	guerra	golpe
+Relation	T19	T21	NoRel	true	sofocar	organizado
+Relation	T19	T3	NoRel	true	sofocar	resistencia
+Relation	T2	T19	NoRel	true	guerra	sofocar
+Relation	T2	T21	NoRel	true	guerra	organizado
+Relation	T2	T7	NoRel	true	guerra	supuso
+Relation	T20	T12	NoRel	true	golpe	prometió
+Relation	T20	T16	NoRel	true	golpe	fin
+Relation	T20	T23	NoRel	true	golpe	campaña
+Relation	T21	T0	NoRel	true	organizado	previsión
+Relation	T21	T13	NoRel	true	organizado	envío
+Relation	T21	T18	NoRel	true	organizado	dependencia
+Relation	T21	T2	NoRel	true	organizado	guerra
+Relation	T22	T10	NoRel	true	reinició	ayuda
+Relation	T23	T18	NoRel	true	campaña	dependencia
+Relation	T23	T19	NoRel	true	campaña	sofocar
+Relation	T23	T20	NoRel	true	campaña	golpe
+Relation	T23	T21	NoRel	true	campaña	organizado
+Relation	T23	T3	NoRel	true	campaña	resistencia
+Relation	T23	T6	NoRel	true	campaña	control
+Relation	T3	T10	NoRel	true	resistencia	ayuda
+Relation	T3	T15	NoRel	true	resistencia	marca
+Relation	T3	T17	NoRel	true	resistencia	guerra
+Relation	T3	T22	NoRel	true	resistencia	reinició
+Relation	T5	T12	NoRel	true	perder	prometió
+Relation	T5	T20	NoRel	true	perder	golpe
+Relation	T6	T12	NoRel	true	control	prometió
+Relation	T7	T1	NoRel	true	supuso	capitulación
+Relation	T7	T12	NoRel	true	supuso	prometió
+Relation	T7	T18	NoRel	true	supuso	dependencia
+Relation	T7	T20	NoRel	true	supuso	golpe
+Relation	T7	T23	NoRel	true	supuso	campaña
+Relation	T7	T3	NoRel	true	supuso	resistencia
+Relation	T8	T20	NoRel	true	humillación	golpe
+Relation	T8	T22	NoRel	true	humillación	reinició
+Relation	T9	T2	NoRel	true	llegó	guerra

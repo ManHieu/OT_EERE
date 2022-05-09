@@ -1,0 +1,47 @@
+Text	A las 13:25 el avión estaba en la pista 36L con autorización para despegar cuando la tripulación detectó que la sonda de temperatura RAT ( _ Ram Air Temperature _ ) daba una indicación anormalmente alta .	El comandante avisó de que el avión tenía una avería , suspendió el despegue y regresó a la plataforma para que los técnicos de la compañía la revisaran .	Los pasajeros esperaron dentro del avión .	Los técnicos de mantenimiento confirmaron que el circuito de calefacción de la sonda RAT estaba averiado .	Utilizaron hielo seco para enfriar el sensor .
+Event	T0	autorización	EVENT	48
+Event	T1	despegar	EVENT	66
+Event	T2	detectó	EVENT	97
+Event	T3	daba	EVENT	165
+Event	T4	avisó	EVENT	219
+Event	T5	avería	EVENT	251
+Event	T6	suspendió	EVENT	260
+Event	T7	despegue	EVENT	273
+Event	T8	regresó	EVENT	284
+Event	T9	revisaran	EVENT	348
+Event	T10	esperaron	EVENT	374
+Event	T11	confirmaron	EVENT	433
+Event	T12	averiado	EVENT	499
+Event	T13	Utilizaron	EVENT	510
+Event	T14	enfriar	EVENT	537
+Relation	T5	T6	CauseEffect	true	avería	suspendió
+Relation	T6	T5	EffectCause	true	suspendió	avería
+Relation	T5	T9	CauseEffect	true	avería	revisaran
+Relation	T9	T5	EffectCause	true	revisaran	avería
+Relation	T0	T10	NoRel	true	autorización	esperaron
+Relation	T0	T5	NoRel	true	autorización	avería
+Relation	T0	T8	NoRel	true	autorización	regresó
+Relation	T1	T14	NoRel	true	despegar	enfriar
+Relation	T1	T2	NoRel	true	despegar	detectó
+Relation	T1	T6	NoRel	true	despegar	suspendió
+Relation	T10	T14	NoRel	true	esperaron	enfriar
+Relation	T11	T12	NoRel	true	confirmaron	averiado
+Relation	T12	T11	NoRel	true	averiado	confirmaron
+Relation	T13	T1	NoRel	true	Utilizaron	despegar
+Relation	T14	T1	NoRel	true	enfriar	despegar
+Relation	T14	T10	NoRel	true	enfriar	esperaron
+Relation	T14	T2	NoRel	true	enfriar	detectó
+Relation	T14	T4	NoRel	true	enfriar	avisó
+Relation	T14	T8	NoRel	true	enfriar	regresó
+Relation	T2	T7	NoRel	true	detectó	despegue
+Relation	T3	T1	NoRel	true	daba	despegar
+Relation	T3	T10	NoRel	true	daba	esperaron
+Relation	T4	T14	NoRel	true	avisó	enfriar
+Relation	T5	T10	NoRel	true	avería	esperaron
+Relation	T5	T8	NoRel	true	avería	regresó
+Relation	T6	T4	NoRel	true	suspendió	avisó
+Relation	T7	T11	NoRel	true	despegue	confirmaron
+Relation	T7	T14	NoRel	true	despegue	enfriar
+Relation	T9	T0	NoRel	true	revisaran	autorización
+Relation	T9	T14	NoRel	true	revisaran	enfriar
+Relation	T9	T4	NoRel	true	revisaran	avisó

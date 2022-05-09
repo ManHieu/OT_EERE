@@ -1,0 +1,17 @@
+Text	1940 yılı sırasında Born ve Fuchs dört makale daha yayınladılar ; Rölativitedeki Kütle Merkezi , Karşılık , Bölüm 2 : Yönsüz Dalga Fonksiyonları , Nükleer Teorideki İstatistiksel Yöntemler .	Mayıs 1941’de Fuchs Rudolf Peirels tarafından “ Tüp Alaşımı ” programı – İngiliz atomik bomba projesi - üzerinde çalışması için Birmingham Üniversitesi’ne çağrıldı .	Savaş zamanı katılığına rağmen Fuchs 7 Ağustos 1942’de İngiliz vatandaşlığı aldı ve Official Secrets Act beyannamesini imzaladı .	Savaş zamanı koşullarının korkutucu olmasına rağmen Rudolf ve Genia Peierls ile kaldı .	Fuchs ve Peierls izotop ayırma temeli de dahil olmak üzere birlikte birçok önemli iş yaptılar .
+Event	T0	projesi	EVENT	285
+Event	T2	çağrıldı	EVENT	346
+Event	T3	Savaş	EVENT	357
+Event	T4	aldı	EVENT	433
+Event	T5	imzaladı	EVENT	476
+Event	T6	Savaş	EVENT	487
+Event	T7	kaldı	EVENT	567
+Event	T9	yayınladılar	EVENT	51
+Event	T1	yaptılar	EVENT	660
+Relation	T0	T2	CauseEffect	true	projesi	çağrıldı
+Relation	T2	T0	EffectCause	true	çağrıldı	projesi
+Relation	T4	T2	NoRel	true	aldı	çağrıldı
+Relation	T4	T9	NoRel	true	aldı	yayınladılar
+Relation	T5	T6	NoRel	true	imzaladı	Savaş
+Relation	T5	T7	NoRel	true	imzaladı	kaldı
+Relation	T9	T5	NoRel	true	yayınladılar	imzaladı

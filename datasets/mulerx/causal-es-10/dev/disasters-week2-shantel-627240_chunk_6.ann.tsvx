@@ -1,0 +1,34 @@
+Text	Mientras El Mundo y la Cope , medios que hicieron pública la versión del informe elaborada por los peritos , han apostado por la inocencia de aquellos , ABC y El País lo han hecho por su culpabilidad .	Este último periódico ha señalado que el PP ha utilizado este caso para « resucitar el fantasma del supuesto vínculo entre ETA y la masacre [ tomando ] como base " elucubraciones sin fundamento " [ ... ] de tres peritos químicos » y que el ácido bórico no es más que « un producto para matar cucarachas » .	Según el diario El Mundo y la cadena Cope , el cambio del informe pericial , con el apartamiento de los peritos originales , a que obligó Santano , no era un hecho baladí .	Desde estos medios , se expresó la opinión de que existió la pretensión de eliminar de los informes periciales la referencia a ETA , con independencia de su relevancia .	Entendían que este aspecto — junto a lo que consideraban incongruencias en la investigación de los atentados del 11-M — provocaba dudas y por ello estimaban que había motivos para que se siguieran investigando estos atentados .
+Event	T1	apostado	EVENT	113
+Event	T10	cambio	EVENT	556
+Event	T11	apartamiento	EVENT	593
+Event	T12	obligó	EVENT	640
+Event	T14	expresó	EVENT	706
+Event	T19	investigación	EVENT	930
+Event	T2	hecho	EVENT	174
+Event	T20	atentados	EVENT	951
+Event	T22	atentados	EVENT	1068
+Event	T3	señalado	EVENT	227
+Event	T4	informe	EVENT	73
+Event	T5	caso	EVENT	264
+Event	T6	resucitar	EVENT	276
+Event	T7	masacre	EVENT	334
+Relation	T20	T19	CauseEffect	true	atentados	investigación
+Relation	T19	T20	EffectCause	true	investigación	atentados
+Relation	T1	T11	NoRel	true	apostado	apartamiento
+Relation	T1	T14	NoRel	true	apostado	expresó
+Relation	T1	T19	NoRel	true	apostado	investigación
+Relation	T1	T3	NoRel	true	apostado	señalado
+Relation	T1	T4	NoRel	true	apostado	informe
+Relation	T10	T2	NoRel	true	cambio	hecho
+Relation	T10	T5	NoRel	true	cambio	caso
+Relation	T11	T7	NoRel	true	apartamiento	masacre
+Relation	T12	T10	NoRel	true	obligó	cambio
+Relation	T12	T5	NoRel	true	obligó	caso
+Relation	T14	T5	NoRel	true	expresó	caso
+Relation	T19	T4	NoRel	true	investigación	informe
+Relation	T19	T7	NoRel	true	investigación	masacre
+Relation	T22	T3	NoRel	true	atentados	señalado
+Relation	T5	T12	NoRel	true	caso	obligó
+Relation	T6	T20	NoRel	true	resucitar	atentados
+Relation	T7	T22	NoRel	true	masacre	atentados

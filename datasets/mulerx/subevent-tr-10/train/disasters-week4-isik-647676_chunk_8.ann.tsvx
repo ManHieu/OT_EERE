@@ -1,0 +1,8 @@
+Text	" South China morning post .	" _ Rekor derecedeki yağış iki kişinin ölümüne ve tarım arazilerinin su altında kalmasına neden oldu .	_		
+Event	T0	yağış	EVENT	50
+Event	T1	ölümüne	EVENT	68
+Event	T2	oldu	EVENT	125
+Event	T3	kalmasına	EVENT	109
+Relation	T1	T0	NoRel	true	ölümüne	yağış
+Relation	T1	T2	NoRel	true	ölümüne	oldu
+Relation	T2	T3	NoRel	true	oldu	kalmasına

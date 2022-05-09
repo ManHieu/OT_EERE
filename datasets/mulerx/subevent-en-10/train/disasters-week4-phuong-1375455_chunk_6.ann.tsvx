@@ -1,0 +1,54 @@
+Text	The ensuing Ponting / Brian Lara partnership saw both players reach half - centuries , with Lara 's 50 coming in 76 balls , a relatively slow speed compared with the power - hitting to be seen later .	Lara was dismissed for 52 , due to a well - taken Chaminda Vaas catch in the deep off Anil Kumble .	Ponting , who was closing in on his century , was then forced to play second - fiddle to a whirlwind innings by New Zealand all - rounder Chris Cairns , who at one point had contributed more than 40 runs off a 60 run partnership .	Kumble bore the brunt of this attack , with several balls disappearing into the crowd for 6 .	Cairns also contributed the shot of the match , a straight - driven 6 off Muttiah Muralitharan from halfway down the pitch .
+Event	T0	Ponting	EVENT	12
+Event	T1	saw	EVENT	45
+Event	T2	reach	EVENT	62
+Event	T3	hitting	EVENT	174
+Event	T4	seen	EVENT	188
+Event	T5	dismissed	EVENT	210
+Event	T6	taken	EVENT	245
+Event	T7	forced	EVENT	356
+Event	T8	innings	EVENT	402
+Event	T9	contributed	EVENT	475
+Event	T10	partnership	EVENT	518
+Event	T11	bore	EVENT	539
+Event	T12	brunt	EVENT	548
+Event	T13	attack	EVENT	562
+Event	T14	contributed	EVENT	638
+Event	T15	shot	EVENT	654
+Event	T16	match	EVENT	666
+Relation	T10	T0	NoRel	true	partnership	Ponting
+Relation	T10	T1	NoRel	true	partnership	saw
+Relation	T10	T14	NoRel	true	partnership	contributed
+Relation	T10	T6	NoRel	true	partnership	taken
+Relation	T11	T0	NoRel	true	bore	Ponting
+Relation	T11	T13	NoRel	true	bore	attack
+Relation	T12	T11	NoRel	true	brunt	bore
+Relation	T12	T3	NoRel	true	brunt	hitting
+Relation	T12	T8	NoRel	true	brunt	innings
+Relation	T13	T5	NoRel	true	attack	dismissed
+Relation	T14	T5	NoRel	true	contributed	dismissed
+Relation	T14	T9	NoRel	true	contributed	contributed
+Relation	T15	T1	NoRel	true	shot	saw
+Relation	T15	T5	NoRel	true	shot	dismissed
+Relation	T15	T7	NoRel	true	shot	forced
+Relation	T16	T10	NoRel	true	match	partnership
+Relation	T16	T13	NoRel	true	match	attack
+Relation	T2	T1	NoRel	true	reach	saw
+Relation	T2	T14	NoRel	true	reach	contributed
+Relation	T2	T3	NoRel	true	reach	hitting
+Relation	T2	T5	NoRel	true	reach	dismissed
+Relation	T2	T9	NoRel	true	reach	contributed
+Relation	T3	T0	NoRel	true	hitting	Ponting
+Relation	T3	T15	NoRel	true	hitting	shot
+Relation	T4	T16	NoRel	true	seen	match
+Relation	T5	T1	NoRel	true	dismissed	saw
+Relation	T5	T15	NoRel	true	dismissed	shot
+Relation	T5	T3	NoRel	true	dismissed	hitting
+Relation	T6	T10	NoRel	true	taken	partnership
+Relation	T6	T14	NoRel	true	taken	contributed
+Relation	T6	T3	NoRel	true	taken	hitting
+Relation	T6	T7	NoRel	true	taken	forced
+Relation	T8	T14	NoRel	true	innings	contributed
+Relation	T8	T4	NoRel	true	innings	seen
+Relation	T9	T1	NoRel	true	contributed	saw
+Relation	T9	T14	NoRel	true	contributed	contributed

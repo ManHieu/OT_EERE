@@ -1,0 +1,68 @@
+Text	Kendisine atfedilen suçlamalar nedeniyle _ Afrika'nın Pinochet'si _ unvanın alan Habré'nin yokluğunda N' Djamena mahkemesi kendisini ölüm cezasına çarptırmıştır .	2012 yılında Habré'nin iadesinin mevcut şartlar doğrultusunda mümkün olmadığını açıklayan Dakar mahkemesi , 30 Haziran 2013'te Habré için tutuklama kararı çıkartmış ve tutuklamıştır .	Habré'nin ülkeye girişinden 25 yıl sonra 2015 yılına mahkemenin başlayacağını açıklayan mahkeme , Mayıs 2016'da tecavüz , cinsel kölelik ve 40.000 insanın öldürülmesi emrini vermesi de dahil olmak üzere insan hakları ihlallerinden Habré'yi suçlu bularak ve ömür boyu hapse mahkûm etmiştir .	7 Nisan 2020 tarihinde Senegal yönetimi , Habre’nin tutulduğu hapishanenin Covid - 19 salgınında karantina binası olarak kullanılacağını ve bu gerekçeyle savaş ve cinsel istismar suçlusu Habre’nin serbest bırakıldığını açıkladı .	24 Ağustos 2021'de Coronavirüs nedeniyle tedavi gördüğü hastanede hayatını kaybetti .
+Event	T0	suçlamalar	EVENT	20
+Event	T1	çarptırmıştır	EVENT	147
+Event	T2	iadesinin	EVENT	186
+Event	T3	çıkartmış	EVENT	318
+Event	T4	tutuklamıştır	EVENT	331
+Event	T5	girişinden	EVENT	364
+Event	T6	açıklayan	EVENT	425
+Event	T7	tecavüz	EVENT	459
+Event	T8	vermesi	EVENT	521
+Event	T9	ihlallerinden	EVENT	564
+Event	T10	bularak	EVENT	593
+Event	T11	etmiştir	EVENT	627
+Event	T12	tutulduğu	EVENT	690
+Event	T13	savaş	EVENT	792
+Event	T14	açıkladı	EVENT	857
+Event	T15	kaybetti	EVENT	943
+Event	T16	atfedilen	EVENT	10
+Event	T17	açıklayan	EVENT	243
+Event	T18	başlayacağını	EVENT	411
+Event	T19	öldürülmesi	EVENT	502
+Event	T20	kullanılacağını	EVENT	759
+Event	T21	istismar	EVENT	808
+Event	T22	gördüğü	EVENT	916
+Relation	T9	T8	SuperSub	true	ihlallerinden	vermesi
+Relation	T8	T9	SubSuper	true	vermesi	ihlallerinden
+Relation	T9	T19	SuperSub	true	ihlallerinden	öldürülmesi
+Relation	T19	T9	SubSuper	true	öldürülmesi	ihlallerinden
+Relation	T9	T7	SuperSub	true	ihlallerinden	tecavüz
+Relation	T7	T9	SubSuper	true	tecavüz	ihlallerinden
+Relation	T0	T11	NoRel	true	suçlamalar	etmiştir
+Relation	T10	T20	NoRel	true	bularak	kullanılacağını
+Relation	T10	T6	NoRel	true	bularak	açıklayan
+Relation	T10	T9	NoRel	true	bularak	ihlallerinden
+Relation	T11	T1	NoRel	true	etmiştir	çarptırmıştır
+Relation	T11	T13	NoRel	true	etmiştir	savaş
+Relation	T11	T18	NoRel	true	etmiştir	başlayacağını
+Relation	T11	T22	NoRel	true	etmiştir	gördüğü
+Relation	T12	T4	NoRel	true	tutulduğu	tutuklamıştır
+Relation	T13	T16	NoRel	true	savaş	atfedilen
+Relation	T13	T8	NoRel	true	savaş	vermesi
+Relation	T14	T1	NoRel	true	açıkladı	çarptırmıştır
+Relation	T14	T17	NoRel	true	açıkladı	açıklayan
+Relation	T14	T22	NoRel	true	açıkladı	gördüğü
+Relation	T15	T22	NoRel	true	kaybetti	gördüğü
+Relation	T16	T14	NoRel	true	atfedilen	açıkladı
+Relation	T17	T20	NoRel	true	açıklayan	kullanılacağını
+Relation	T18	T14	NoRel	true	başlayacağını	açıkladı
+Relation	T2	T16	NoRel	true	iadesinin	atfedilen
+Relation	T2	T17	NoRel	true	iadesinin	açıklayan
+Relation	T2	T4	NoRel	true	iadesinin	tutuklamıştır
+Relation	T21	T4	NoRel	true	istismar	tutuklamıştır
+Relation	T21	T9	NoRel	true	istismar	ihlallerinden
+Relation	T22	T15	NoRel	true	gördüğü	kaybetti
+Relation	T3	T14	NoRel	true	çıkartmış	açıkladı
+Relation	T3	T6	NoRel	true	çıkartmış	açıklayan
+Relation	T4	T10	NoRel	true	tutuklamıştır	bularak
+Relation	T4	T12	NoRel	true	tutuklamıştır	tutulduğu
+Relation	T4	T22	NoRel	true	tutuklamıştır	gördüğü
+Relation	T5	T6	NoRel	true	girişinden	açıklayan
+Relation	T6	T12	NoRel	true	açıklayan	tutulduğu
+Relation	T6	T20	NoRel	true	açıklayan	kullanılacağını
+Relation	T7	T12	NoRel	true	tecavüz	tutulduğu
+Relation	T7	T18	NoRel	true	tecavüz	başlayacağını
+Relation	T8	T1	NoRel	true	vermesi	çarptırmıştır
+Relation	T9	T1	NoRel	true	ihlallerinden	çarptırmıştır
+Relation	T9	T12	NoRel	true	ihlallerinden	tutulduğu
+Relation	T9	T22	NoRel	true	ihlallerinden	gördüğü

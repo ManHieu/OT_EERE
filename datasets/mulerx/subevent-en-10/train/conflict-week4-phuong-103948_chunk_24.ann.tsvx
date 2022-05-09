@@ -1,0 +1,71 @@
+Text	At about 17:00 , two thrusts were launched , east and west of the River Orne .	The eastern attack , carried out by II Battalion and supporting units , under Major Hans von Luck , was intended to destroy the 6th Airborne Division 's Orne bridgehead , but was almost immediately stopped in its tracks by intense Allied air attacks and naval gunfire .	To the west , a larger Armoured Group initially fared somewhat better .	Taking advantage of the gap between the Sword and Juno sectors , elements of the 192nd Panzer grenadier Regiment were able to reach the coast at Lion - sur- Mer by 8:00 p.m. ; however , with few flak units and very little support from the _ Luftwaffe _ , they too suffered devastating losses to Allied aircraft .	When 250 Gliders of the British 6th Airlanding Brigade overflew their positions , on their way to reinforce the Orne bridgehead in Operation Mallard , the Germans , believing they were about to be cut off , retired .
+Event	T0	thrusts	EVENT	21
+Event	T1	launched	EVENT	34
+Event	T2	attack	EVENT	91
+Event	T3	intended	EVENT	183
+Event	T4	destroy	EVENT	195
+Event	T5	attacks	EVENT	321
+Event	T6	gunfire	EVENT	339
+Event	T7	fared	EVENT	397
+Event	T8	gap	EVENT	445
+Event	T9	able	EVENT	539
+Event	T10	reach	EVENT	547
+Event	T11	losses	EVENT	706
+Event	T12	overflew	EVENT	789
+Event	T13	reinforce	EVENT	832
+Event	T14	Operation	EVENT	865
+Event	T15	believing	EVENT	899
+Event	T16	retired	EVENT	941
+Event	T17	carried out	EVENT	100
+Event	T18	stopped	EVENT	277
+Event	T19	Taking advantage	EVENT	421
+Event	T20	support	EVENT	643
+Event	T21	cut off	EVENT	931
+Relation	T2	T17	SuperSub	true	attack	carried out
+Relation	T17	T2	SubSuper	true	carried out	attack
+Relation	T13	T12	SuperSub	true	reinforce	overflew
+Relation	T12	T13	SubSuper	true	overflew	reinforce
+Relation	T0	T20	NoRel	true	thrusts	support
+Relation	T0	T4	NoRel	true	thrusts	destroy
+Relation	T0	T5	NoRel	true	thrusts	attacks
+Relation	T1	T11	NoRel	true	launched	losses
+Relation	T1	T14	NoRel	true	launched	Operation
+Relation	T1	T15	NoRel	true	launched	believing
+Relation	T1	T20	NoRel	true	launched	support
+Relation	T10	T19	NoRel	true	reach	Taking advantage
+Relation	T11	T14	NoRel	true	losses	Operation
+Relation	T12	T17	NoRel	true	overflew	carried out
+Relation	T12	T8	NoRel	true	overflew	gap
+Relation	T13	T7	NoRel	true	reinforce	fared
+Relation	T14	T1	NoRel	true	Operation	launched
+Relation	T14	T11	NoRel	true	Operation	losses
+Relation	T15	T10	NoRel	true	believing	reach
+Relation	T15	T11	NoRel	true	believing	losses
+Relation	T15	T17	NoRel	true	believing	carried out
+Relation	T16	T21	NoRel	true	retired	cut off
+Relation	T17	T1	NoRel	true	carried out	launched
+Relation	T17	T19	NoRel	true	carried out	Taking advantage
+Relation	T18	T10	NoRel	true	stopped	reach
+Relation	T18	T12	NoRel	true	stopped	overflew
+Relation	T18	T7	NoRel	true	stopped	fared
+Relation	T19	T2	NoRel	true	Taking advantage	attack
+Relation	T19	T21	NoRel	true	Taking advantage	cut off
+Relation	T2	T21	NoRel	true	attack	cut off
+Relation	T20	T10	NoRel	true	support	reach
+Relation	T21	T9	NoRel	true	cut off	able
+Relation	T3	T1	NoRel	true	intended	launched
+Relation	T4	T14	NoRel	true	destroy	Operation
+Relation	T4	T19	NoRel	true	destroy	Taking advantage
+Relation	T5	T12	NoRel	true	attacks	overflew
+Relation	T5	T19	NoRel	true	attacks	Taking advantage
+Relation	T6	T18	NoRel	true	gunfire	stopped
+Relation	T6	T8	NoRel	true	gunfire	gap
+Relation	T7	T12	NoRel	true	fared	overflew
+Relation	T7	T15	NoRel	true	fared	believing
+Relation	T7	T4	NoRel	true	fared	destroy
+Relation	T8	T15	NoRel	true	gap	believing
+Relation	T8	T19	NoRel	true	gap	Taking advantage
+Relation	T9	T14	NoRel	true	able	Operation
+Relation	T9	T16	NoRel	true	able	retired
+Relation	T9	T6	NoRel	true	able	gunfire
+Relation	T9	T7	NoRel	true	able	fared

@@ -1,0 +1,54 @@
+Text	El gobernador de Oklahoma , Maria Fallin , declaró el estado de emergencia para el condado de Pawnee , donde se localizó el peor de los daños .	Treinta y dos pozos adicionales eran apagado por la Agencia de Protección del Medio Ambiente , ya que se determinó que se encuentra demasiado cerca de la falla recientemente descubierta del terremoto ocurrido .	Una persona resultó herida como consecuencia del sismo : en Pawnee , un hombre fue alcanzado por una chimenea caída .	Categoría : Terremotos de 2016 Categoría : Terremotos en Estados Unidos Categoría : Estados Unidos en 2016 Categoría : Desastres naturales en Oklahoma Categoría : Desastres naturales en Tennessee Categoría : Desastres naturales en Texas	Servicio Geológico de los Estados Unidos , Sismo a 15 km al Noroeste de Pawnee , Oklahoma , Estados Unidos , 3 de septiembre de 2016_- USGS ; 5.8 grados
+Event	T0	declaró	EVENT	43
+Event	T1	emergencia	EVENT	64
+Event	T2	localizó	EVENT	112
+Event	T3	daños	EVENT	136
+Event	T4	apagado	EVENT	181
+Event	T5	determinó	EVENT	249
+Event	T6	falla	EVENT	298
+Event	T7	descubierta	EVENT	318
+Event	T8	ocurrido	EVENT	344
+Event	T9	herida	EVENT	375
+Event	T10	sismo	EVENT	404
+Event	T11	alcanzado	EVENT	438
+Event	T12	caída	EVENT	465
+Event	T13	Terremotos	EVENT	485
+Event	T14	Terremotos	EVENT	516
+Event	T15	Desastres	EVENT	592
+Event	T16	Desastres	EVENT	636
+Event	T17	Desastres	EVENT	681
+Event	T18	Sismo	EVENT	753
+Relation	T10	T9	CauseEffect	true	sismo	herida
+Relation	T9	T10	EffectCause	true	herida	sismo
+Relation	T0	T5	NoRel	true	declaró	determinó
+Relation	T1	T10	NoRel	true	emergencia	sismo
+Relation	T1	T13	NoRel	true	emergencia	Terremotos
+Relation	T1	T16	NoRel	true	emergencia	Desastres
+Relation	T1	T18	NoRel	true	emergencia	Sismo
+Relation	T1	T2	NoRel	true	emergencia	localizó
+Relation	T1	T7	NoRel	true	emergencia	descubierta
+Relation	T10	T1	NoRel	true	sismo	emergencia
+Relation	T10	T18	NoRel	true	sismo	Sismo
+Relation	T10	T4	NoRel	true	sismo	apagado
+Relation	T11	T14	NoRel	true	alcanzado	Terremotos
+Relation	T12	T17	NoRel	true	caída	Desastres
+Relation	T13	T3	NoRel	true	Terremotos	daños
+Relation	T14	T12	NoRel	true	Terremotos	caída
+Relation	T15	T1	NoRel	true	Desastres	emergencia
+Relation	T15	T10	NoRel	true	Desastres	sismo
+Relation	T15	T18	NoRel	true	Desastres	Sismo
+Relation	T15	T3	NoRel	true	Desastres	daños
+Relation	T15	T4	NoRel	true	Desastres	apagado
+Relation	T16	T10	NoRel	true	Desastres	sismo
+Relation	T17	T2	NoRel	true	Desastres	localizó
+Relation	T17	T9	NoRel	true	Desastres	herida
+Relation	T18	T9	NoRel	true	Sismo	herida
+Relation	T2	T11	NoRel	true	localizó	alcanzado
+Relation	T2	T18	NoRel	true	localizó	Sismo
+Relation	T3	T4	NoRel	true	daños	apagado
+Relation	T4	T1	NoRel	true	apagado	emergencia
+Relation	T5	T3	NoRel	true	determinó	daños
+Relation	T5	T4	NoRel	true	determinó	apagado
+Relation	T8	T6	NoRel	true	ocurrido	falla
+Relation	T9	T2	NoRel	true	herida	localizó
+Relation	T9	T8	NoRel	true	herida	ocurrido

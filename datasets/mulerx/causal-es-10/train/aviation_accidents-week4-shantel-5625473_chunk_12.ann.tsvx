@@ -1,0 +1,66 @@
+Text	- No incluir un margen de seguridad en la evaluación de llegada para tener en cuenta las incertidumbres operacionales .	Contribuyó a la gravedad del accidente la ausencia de un sistema de detención de materiales de ingeniería , que era necesario debido al área limitada de seguridad de la pista más allá del extremo de salida de la Pista 31C " .	Ahora la práctica recomendada para la construcción de pistas nuevas con un área despejada de al menos 1000 pies ( 300 m ) de largo en cada extremo , denominada " área de seguridad de la pista " , para permitir espacio adicional para que una aeronave que haya rebasado la pista desacelere y se detenga en relativa seguridad .	Como Midway se construyó antes de que se promulgaran estas reglas , no tenía esta área de seguridad en el momento del accidente .	El accidente renovó los debates sobre la necesidad y la viabilidad de un sistema de detención de materiales de ingeniería . , o EMAS , en Chicago Midway , dada la falta de áreas invadidas adecuadas y los vecindarios residenciales circundantes .
+Event	T0	evaluación	EVENT	42
+Event	T1	llegada	EVENT	56
+Event	T2	Contribuyó	EVENT	120
+Event	T3	accidente	EVENT	149
+Event	T4	ausencia	EVENT	162
+Event	T5	detención	EVENT	188
+Event	T6	salida	EVENT	319
+Event	T7	recomendada	EVENT	364
+Event	T8	construcción	EVENT	384
+Event	T9	despejada	EVENT	426
+Event	T10	rebasado	EVENT	605
+Event	T11	desacelere	EVENT	623
+Event	T12	detenga	EVENT	639
+Event	T13	construyó	EVENT	686
+Event	T14	promulgaran	EVENT	712
+Event	T15	accidente	EVENT	789
+Event	T16	renovó	EVENT	814
+Event	T17	debates	EVENT	825
+Event	T18	detención	EVENT	885
+Event	T19	invadidas	EVENT	979
+Event	T20	accidente	EVENT	804
+Relation	T20	T17	CauseEffect	true	accidente	debates
+Relation	T17	T20	EffectCause	true	debates	accidente
+Relation	T0	T1	NoRel	true	evaluación	llegada
+Relation	T0	T14	NoRel	true	evaluación	promulgaran
+Relation	T0	T15	NoRel	true	evaluación	accidente
+Relation	T0	T4	NoRel	true	evaluación	ausencia
+Relation	T0	T7	NoRel	true	evaluación	recomendada
+Relation	T0	T8	NoRel	true	evaluación	construcción
+Relation	T10	T14	NoRel	true	rebasado	promulgaran
+Relation	T10	T3	NoRel	true	rebasado	accidente
+Relation	T11	T1	NoRel	true	desacelere	llegada
+Relation	T11	T18	NoRel	true	desacelere	detención
+Relation	T11	T3	NoRel	true	desacelere	accidente
+Relation	T11	T7	NoRel	true	desacelere	recomendada
+Relation	T12	T13	NoRel	true	detenga	construyó
+Relation	T12	T15	NoRel	true	detenga	accidente
+Relation	T12	T19	NoRel	true	detenga	invadidas
+Relation	T12	T4	NoRel	true	detenga	ausencia
+Relation	T13	T1	NoRel	true	construyó	llegada
+Relation	T14	T10	NoRel	true	promulgaran	rebasado
+Relation	T14	T9	NoRel	true	promulgaran	despejada
+Relation	T15	T3	NoRel	true	accidente	accidente
+Relation	T16	T10	NoRel	true	renovó	rebasado
+Relation	T16	T11	NoRel	true	renovó	desacelere
+Relation	T16	T18	NoRel	true	renovó	detención
+Relation	T17	T7	NoRel	true	debates	recomendada
+Relation	T18	T7	NoRel	true	detención	recomendada
+Relation	T19	T13	NoRel	true	invadidas	construyó
+Relation	T2	T3	NoRel	true	Contribuyó	accidente
+Relation	T2	T4	NoRel	true	Contribuyó	ausencia
+Relation	T20	T0	NoRel	true	accidente	evaluación
+Relation	T3	T0	NoRel	true	accidente	evaluación
+Relation	T3	T1	NoRel	true	accidente	llegada
+Relation	T3	T8	NoRel	true	accidente	construcción
+Relation	T5	T18	NoRel	true	detención	detención
+Relation	T5	T2	NoRel	true	detención	Contribuyó
+Relation	T6	T12	NoRel	true	salida	detenga
+Relation	T6	T14	NoRel	true	salida	promulgaran
+Relation	T7	T13	NoRel	true	recomendada	construyó
+Relation	T7	T2	NoRel	true	recomendada	Contribuyó
+Relation	T8	T11	NoRel	true	construcción	desacelere
+Relation	T8	T12	NoRel	true	construcción	detenga
+Relation	T9	T3	NoRel	true	despejada	accidente
+Relation	T9	T6	NoRel	true	despejada	salida

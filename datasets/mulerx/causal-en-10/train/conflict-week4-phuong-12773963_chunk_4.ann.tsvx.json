@@ -1,0 +1,1681 @@
+{
+  "id": "conflict-week4-phuong-12773963_chunk_4.ann.tsvx",
+  "text": "In October or November 615 BC , the Medes , another ancient enemy of Assyria , under King Cyaxares entered Assyria and conquered the region around the city Arrapha in preparation for a great final campaign against Sinsharishkun .\tIn July or August of 614 BC , the Medes mounted attacks on the cities of Kalhu and Nineveh and successfully conquered the city Tarbisu .\tThey then besieged Assur .\tThis siege was successful and the Medes captured the ancient heart of Assyria , plundering it and killing many of its inhabitants .\tNabopolassar only arrived at Assur after the plunder had already begun and met with Cyaxares , allying with him and signing an anti-Assyrian pact .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "entered",
+      "label": "EVENT",
+      "char_index": 99,
+      "sid": 0,
+      "tid": [
+        19,
+        20
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "conquered",
+      "label": "EVENT",
+      "char_index": 119,
+      "sid": 0,
+      "tid": [
+        22,
+        23
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "preparation",
+      "label": "EVENT",
+      "char_index": 167,
+      "sid": 0,
+      "tid": [
+        30,
+        31
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "campaign",
+      "label": "EVENT",
+      "char_index": 197,
+      "sid": 0,
+      "tid": [
+        35,
+        36
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "attacks",
+      "label": "EVENT",
+      "char_index": 278,
+      "sid": 1,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "conquered",
+      "label": "EVENT",
+      "char_index": 338,
+      "sid": 1,
+      "tid": [
+        21,
+        22
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "besieged",
+      "label": "EVENT",
+      "char_index": 377,
+      "sid": 2,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "siege",
+      "label": "EVENT",
+      "char_index": 399,
+      "sid": 3,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "successful",
+      "label": "EVENT",
+      "char_index": 409,
+      "sid": 3,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "captured",
+      "label": "EVENT",
+      "char_index": 434,
+      "sid": 3,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "plundering",
+      "label": "EVENT",
+      "char_index": 474,
+      "sid": 3,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "killing",
+      "label": "EVENT",
+      "char_index": 492,
+      "sid": 3,
+      "tid": [
+        17,
+        18
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "arrived",
+      "label": "EVENT",
+      "char_index": 544,
+      "sid": 4,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "plunder",
+      "label": "EVENT",
+      "char_index": 571,
+      "sid": 4,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "begun",
+      "label": "EVENT",
+      "char_index": 591,
+      "sid": 4,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "met",
+      "label": "EVENT",
+      "char_index": 601,
+      "sid": 4,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T16": {
+      "id": "T16",
+      "text": "allying",
+      "label": "EVENT",
+      "char_index": 621,
+      "sid": 4,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T17": {
+      "id": "T17",
+      "text": "signing",
+      "label": "EVENT",
+      "char_index": 642,
+      "sid": 4,
+      "tid": [
+        20,
+        21
+      ]
+    },
+    "T18": {
+      "id": "T18",
+      "text": "pact",
+      "label": "EVENT",
+      "char_index": 667,
+      "sid": 4,
+      "tid": [
+        23,
+        24
+      ]
+    }
+  },
+  "relation": {
+    "T2-T1": "CauseEffect",
+    "T1-T2": "EffectCause",
+    "T4-T5": "CauseEffect",
+    "T5-T4": "EffectCause",
+    "T5-T6": "CauseEffect",
+    "T6-T5": "EffectCause",
+    "T6-T8": "CauseEffect",
+    "T8-T6": "EffectCause",
+    "T15-T12": "CauseEffect",
+    "T12-T15": "EffectCause",
+    "T0-T11": "NoRel",
+    "T1-T18": "NoRel",
+    "T10-T14": "NoRel",
+    "T10-T8": "NoRel",
+    "T12-T11": "NoRel",
+    "T13-T6": "NoRel",
+    "T15-T9": "NoRel",
+    "T16-T14": "NoRel",
+    "T17-T13": "NoRel",
+    "T17-T4": "NoRel",
+    "T18-T4": "NoRel",
+    "T2-T3": "NoRel",
+    "T2-T7": "NoRel",
+    "T3-T0": "NoRel",
+    "T3-T18": "NoRel",
+    "T5-T12": "NoRel",
+    "T5-T17": "NoRel",
+    "T5-T18": "NoRel",
+    "T6-T0": "NoRel",
+    "T6-T17": "NoRel",
+    "T7-T5": "NoRel",
+    "T8-T16": "NoRel",
+    "T9-T3": "NoRel",
+    "T9-T5": "NoRel"
+  },
+  "sentence": [
+    [
+      "In",
+      "October",
+      "or",
+      "November",
+      "615",
+      "BC",
+      ",",
+      "the",
+      "Medes",
+      ",",
+      "another",
+      "ancient",
+      "enemy",
+      "of",
+      "Assyria",
+      ",",
+      "under",
+      "King",
+      "Cyaxares",
+      "entered",
+      "Assyria",
+      "and",
+      "conquered",
+      "the",
+      "region",
+      "around",
+      "the",
+      "city",
+      "Arrapha",
+      "in",
+      "preparation",
+      "for",
+      "a",
+      "great",
+      "final",
+      "campaign",
+      "against",
+      "Sinsharishkun",
+      "."
+    ],
+    [
+      "In",
+      "July",
+      "or",
+      "August",
+      "of",
+      "614",
+      "BC",
+      ",",
+      "the",
+      "Medes",
+      "mounted",
+      "attacks",
+      "on",
+      "the",
+      "cities",
+      "of",
+      "Kalhu",
+      "and",
+      "Nineveh",
+      "and",
+      "successfully",
+      "conquered",
+      "the",
+      "city",
+      "Tarbisu",
+      "."
+    ],
+    [
+      "They",
+      "then",
+      "besieged",
+      "Assur",
+      "."
+    ],
+    [
+      "This",
+      "siege",
+      "was",
+      "successful",
+      "and",
+      "the",
+      "Medes",
+      "captured",
+      "the",
+      "ancient",
+      "heart",
+      "of",
+      "Assyria",
+      ",",
+      "plundering",
+      "it",
+      "and",
+      "killing",
+      "many",
+      "of",
+      "its",
+      "inhabitants",
+      "."
+    ],
+    [
+      "Nabopolassar",
+      "only",
+      "arrived",
+      "at",
+      "Assur",
+      "after",
+      "the",
+      "plunder",
+      "had",
+      "already",
+      "begun",
+      "and",
+      "met",
+      "with",
+      "Cyaxares",
+      ",",
+      "allying",
+      "with",
+      "him",
+      "and",
+      "signing",
+      "an",
+      "anti-Assyrian",
+      "pact",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        19
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        1
+      ],
+      "nummod"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        1
+      ],
+      "appos"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        19
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        19
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        12
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        8
+      ],
+      "appos"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        12
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        19
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        18
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        18
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        19
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        19
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        22
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        19
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        23
+      ],
+      [
+        0,
+        24
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        22
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        27
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        27
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        27
+      ],
+      [
+        0,
+        24
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        27
+      ],
+      "appos"
+    ],
+    [
+      [
+        0,
+        29
+      ],
+      [
+        0,
+        30
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        30
+      ],
+      [
+        0,
+        22
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        31
+      ],
+      [
+        0,
+        35
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        32
+      ],
+      [
+        0,
+        35
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        33
+      ],
+      [
+        0,
+        35
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        34
+      ],
+      [
+        0,
+        35
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        35
+      ],
+      [
+        0,
+        30
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        36
+      ],
+      [
+        0,
+        37
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        37
+      ],
+      [
+        0,
+        35
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        38
+      ],
+      [
+        0,
+        19
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        10
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        1
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        10
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        14
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        14
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        10
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        16
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        14
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        18
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        16
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        19
+      ],
+      [
+        1,
+        21
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        20
+      ],
+      [
+        1,
+        21
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        21
+      ],
+      [
+        1,
+        10
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        22
+      ],
+      [
+        1,
+        23
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        23
+      ],
+      [
+        1,
+        21
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        24
+      ],
+      [
+        1,
+        23
+      ],
+      "appos"
+    ],
+    [
+      [
+        1,
+        25
+      ],
+      [
+        1,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      "cop"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        7
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        3
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        10
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        7
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        7
+      ],
+      "advcl"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        14
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        17
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        14
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        17
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        21
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        20
+      ],
+      [
+        3,
+        21
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        21
+      ],
+      [
+        3,
+        18
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        22
+      ],
+      [
+        3,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        2
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        2
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        10
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        10
+      ],
+      "aux"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        2
+      ],
+      "advcl"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        12
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        2
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        14
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        12
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        12
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        14
+      ],
+      "acl"
+    ],
+    [
+      [
+        4,
+        17
+      ],
+      [
+        4,
+        18
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        18
+      ],
+      [
+        4,
+        16
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        19
+      ],
+      [
+        4,
+        20
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        20
+      ],
+      [
+        4,
+        16
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        21
+      ],
+      [
+        4,
+        23
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        22
+      ],
+      [
+        4,
+        23
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        23
+      ],
+      [
+        4,
+        20
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        24
+      ],
+      [
+        4,
+        2
+      ],
+      "punct"
+    ]
+  ]
+}

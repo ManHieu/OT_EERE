@@ -1,0 +1,36 @@
+Text	" ifadesini kullandı .	- Dışişleri Bakanlığının Twitter hesabında Meksika hükümeti , depremde hayatını kaybedenler için Türk halkı ve hükümetine başsağlığı diliyor , Afetzedelerle dayanışma içinde olduğunu vurguluyor " mesajına yer verdi .	- : Cumhurbaşkanı Arif Alvi , Türkiye'deki depremden kaynaklanan can kaybı ve maddi kayıplar nedeniyle derin üzüntülerini dile getirdi .	- : Ankara Büyükelçiliği depremle alakalı Twitter'dan yayımladığı mesajda , " Elazığ merkezli depremden etkilenen herkese geçmiş olsun .	Hayatını kaybedenlere Allah'tan rahmet , yaralılara acil şifalar diliyoruz .
+Event	T0	kullandı	EVENT	12
+Event	T1	hayatını	EVENT	94
+Event	T2	verdi	EVENT	232
+Event	T3	kaybı	EVENT	309
+Event	T4	getirdi	EVENT	367
+Event	T5	yayımladığı	EVENT	431
+Event	T6	etkilenen	EVENT	481
+Event	T7	geçmiş	EVENT	499
+Event	T8	diliyoruz	EVENT	579
+Event	T9	depremde	EVENT	85
+Event	T10	depremden	EVENT	283
+Event	T11	kayıplar	EVENT	324
+Event	T12	depremden	EVENT	471
+Relation	T9	T2	CauseEffect	true	depremde	verdi
+Relation	T2	T9	EffectCause	true	verdi	depremde
+Relation	T10	T4	CauseEffect	true	depremden	getirdi
+Relation	T4	T10	EffectCause	true	getirdi	depremden
+Relation	T12	T6	CauseEffect	true	depremden	etkilenen
+Relation	T6	T12	EffectCause	true	etkilenen	depremden
+Relation	T12	T5	CauseEffect	true	depremden	yayımladığı
+Relation	T5	T12	EffectCause	true	yayımladığı	depremden
+Relation	T10	T12	NoRel	true	depremden	depremden
+Relation	T10	T2	NoRel	true	depremden	verdi
+Relation	T11	T1	NoRel	true	kayıplar	hayatını
+Relation	T11	T7	NoRel	true	kayıplar	geçmiş
+Relation	T12	T0	NoRel	true	depremden	kullandı
+Relation	T12	T1	NoRel	true	depremden	hayatını
+Relation	T12	T11	NoRel	true	depremden	kayıplar
+Relation	T2	T0	NoRel	true	verdi	kullandı
+Relation	T2	T1	NoRel	true	verdi	hayatını
+Relation	T2	T3	NoRel	true	verdi	kaybı
+Relation	T3	T9	NoRel	true	kaybı	depremde
+Relation	T5	T1	NoRel	true	yayımladığı	hayatını
+Relation	T5	T7	NoRel	true	yayımladığı	geçmiş
+Relation	T8	T12	NoRel	true	diliyoruz	depremden

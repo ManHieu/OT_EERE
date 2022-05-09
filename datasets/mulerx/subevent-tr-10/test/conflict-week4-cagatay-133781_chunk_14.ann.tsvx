@@ -1,0 +1,29 @@
+Text	Tebriz’de bulunan Şah Tahmasb , Padişah’ın Hoy’a geldiğini öğrendiğinde savaşı göze alamayarak Kazvin’e çekildi .	Osmanlı ordusu 27 Temmuz’da dördüncü defa Tebriz’e girdi .	Tebriz’de beş gün kalan Sultan , Van’a gelip önceden muhasara ettirdiği kaleyi almak için harekete geçti .	On gün dayanabilen Van kalesi , 25 Ağustos’da ele geçirildi .	Kaleyi tahkim eden Sultan , buradan Diyarbakır’a , sonra da kışı geçirmek için Haleb’e geçti .
+Event	T0	savaşı	EVENT	72
+Event	T1	çekildi	EVENT	104
+Event	T2	girdi	EVENT	165
+Event	T3	almak	EVENT	252
+Event	T4	geçti	EVENT	272
+Event	T5	geçirildi	EVENT	330
+Event	T6	tahkim	EVENT	349
+Event	T7	geçirmek	EVENT	407
+Event	T8	geçti	EVENT	429
+Event	T9	öğrendiğinde	EVENT	59
+Event	T10	gelip	EVENT	212
+Event	T11	muhasara	EVENT	226
+Event	T12	dayanabilen	EVENT	287
+Relation	T11	T12	NoRel	true	muhasara	dayanabilen
+Relation	T11	T2	NoRel	true	muhasara	girdi
+Relation	T11	T7	NoRel	true	muhasara	geçirmek
+Relation	T12	T9	NoRel	true	dayanabilen	öğrendiğinde
+Relation	T2	T11	NoRel	true	girdi	muhasara
+Relation	T2	T12	NoRel	true	girdi	dayanabilen
+Relation	T2	T4	NoRel	true	girdi	geçti
+Relation	T2	T8	NoRel	true	girdi	geçti
+Relation	T4	T3	NoRel	true	geçti	almak
+Relation	T5	T7	NoRel	true	geçirildi	geçirmek
+Relation	T6	T4	NoRel	true	tahkim	geçti
+Relation	T7	T2	NoRel	true	geçirmek	girdi
+Relation	T7	T5	NoRel	true	geçirmek	geçirildi
+Relation	T8	T9	NoRel	true	geçti	öğrendiğinde
+Relation	T9	T1	NoRel	true	öğrendiğinde	çekildi

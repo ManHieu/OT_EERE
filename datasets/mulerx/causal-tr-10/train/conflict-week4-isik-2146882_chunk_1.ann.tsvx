@@ -1,0 +1,30 @@
+Text	TAK ise 3 yıl aradan sonra yeni dönem saldırılarının başlangıcı olacağını belirttiği Sabiha Gökçen Havalimanı saldırısını düzenledi .	Saldırı aynı zamanda Türkiye'de gerçekleştirilen ikinci havalimanı saldırısı olarak kayıtlara geçti .	Bundan önce 1982 yılında ASALA tarafından Ankara Esenboğa Havalimanı'nda düzenlenen saldırıda 9 kişi hayatını kaybetmişti .	Saldırı , 23 Aralık 2015'te İstanbul'un Pendik ilçesindeki Sabiha Gökçen Havalimanı'nda yerel saatte 02: 05 sıralarında meydana geldi .	Havalimanına 2 km mesafedeki Tuzla'nın Orhanlı mahallesindeki ormanlık alandan havalimanının apron alanına dört adet havan topu atıldı .
+Event	T0	belirttiği	EVENT	74
+Event	T1	düzenledi	EVENT	122
+Event	T2	Saldırı	EVENT	134
+Event	T3	saldırısı	EVENT	201
+Event	T4	geçti	EVENT	228
+Event	T5	saldırıda	EVENT	320
+Event	T6	kaybetmişti	EVENT	346
+Event	T7	Saldırı	EVENT	360
+Event	T8	geldi	EVENT	488
+Event	T9	atıldı	EVENT	624
+Event	T10	saldırılarının	EVENT	38
+Event	T11	saldırısını	EVENT	110
+Relation	T5	T6	CauseEffect	true	saldırıda	kaybetmişti
+Relation	T6	T5	EffectCause	true	kaybetmişti	saldırıda
+Relation	T7	T9	CauseEffect	true	Saldırı	atıldı
+Relation	T9	T7	EffectCause	true	atıldı	Saldırı
+Relation	T9	T6	CauseEffect	true	atıldı	kaybetmişti
+Relation	T6	T9	EffectCause	true	kaybetmişti	atıldı
+Relation	T1	T0	NoRel	true	düzenledi	belirttiği
+Relation	T1	T10	NoRel	true	düzenledi	saldırılarının
+Relation	T1	T6	NoRel	true	düzenledi	kaybetmişti
+Relation	T10	T9	NoRel	true	saldırılarının	atıldı
+Relation	T11	T0	NoRel	true	saldırısını	belirttiği
+Relation	T2	T0	NoRel	true	Saldırı	belirttiği
+Relation	T3	T8	NoRel	true	saldırısı	geldi
+Relation	T4	T9	NoRel	true	geçti	atıldı
+Relation	T5	T8	NoRel	true	saldırıda	geldi
+Relation	T7	T11	NoRel	true	Saldırı	saldırısını
+Relation	T8	T1	NoRel	true	geldi	düzenledi

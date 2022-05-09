@@ -1,0 +1,29 @@
+Text	El maquinista de la locomotora del tren 11 a Pichilemu , José Pino González , señaló haber visualizado luz verde en la señal de entrada de la estación .	De la misma manera , la niebla le impidió notar la presencia del tren 3 detenido en la estación , pudiendo hacer nada para evitar la colisión .	A diferencia de accidentes anteriores y posteriores , los servicios hospitalarios llegaron al instante , dada la cercanía de la estación con el Hospital Parroquial de San Bernardo .	Debido a la gran cantidad de heridos , se enviaron en ambulancias al Hospital Barros Luco-Trudeau , Hospital Arriaran , Jose Joaquin Aguirre , Posta 2 y a la Posta Central de la Asistencia Pública .	También , llegaron para prestar su ayuda bomberos , carabineros , voluntarios de la Cruz Roja Chilena y soldados de la Escuela de Infantería .
+Event	T0	señaló	EVENT	78
+Event	T1	notar	EVENT	195
+Event	T2	presencia	EVENT	204
+Event	T3	detenido	EVENT	225
+Event	T4	hacer	EVENT	260
+Event	T5	colisión	EVENT	286
+Event	T6	accidentes	EVENT	313
+Event	T7	llegaron	EVENT	379
+Event	T8	heridos	EVENT	508
+Event	T9	prestar	EVENT	702
+Event	T10	ayuda	EVENT	713
+Event	T11	enviaron	EVENT	521
+Relation	T8	T11	SuperSub	true	heridos	enviaron
+Relation	T11	T8	SubSuper	true	enviaron	heridos
+Relation	T0	T2	NoRel	true	señaló	presencia
+Relation	T0	T3	NoRel	true	señaló	detenido
+Relation	T0	T6	NoRel	true	señaló	accidentes
+Relation	T1	T10	NoRel	true	notar	ayuda
+Relation	T10	T8	NoRel	true	ayuda	heridos
+Relation	T4	T3	NoRel	true	hacer	detenido
+Relation	T5	T4	NoRel	true	colisión	hacer
+Relation	T6	T1	NoRel	true	accidentes	notar
+Relation	T6	T7	NoRel	true	accidentes	llegaron
+Relation	T7	T6	NoRel	true	llegaron	accidentes
+Relation	T7	T9	NoRel	true	llegaron	prestar
+Relation	T8	T4	NoRel	true	heridos	hacer
+Relation	T9	T11	NoRel	true	prestar	enviaron
+Relation	T9	T2	NoRel	true	prestar	presencia

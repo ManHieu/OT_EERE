@@ -1,0 +1,21 @@
+Text	Etkisi geniş bir alana yayılarak kışın ötesine geçti .	Batı İsviçre'de , 1816 ve 1817 yazları o kadar soğuktu ki Val de Bagnes'deki Giétro Glacier'in dibinin altında bir buz barajının oluştuğu söylendi .	Mühendis Ignaz Venetz'in büyüyen göleti boşaltma çabalarına rağmen buz barajı Haziran 1818'de korkunç bir şekilde çöktü .	Çin'de soğuk hava , özellikle kuzeyde ağaçları , pirinç mahsullerini ve hatta Asya mandalarının ölümüne sebep oldu .	Taşkınlar kalan bitkileri yok etti .
+Event	T0	geçti	EVENT	47
+Event	T1	söylendi	EVENT	193
+Event	T2	çabalarına	EVENT	253
+Event	T3	çöktü	EVENT	318
+Event	T4	oldu	EVENT	436
+Event	T5	etti	EVENT	473
+Event	T6	yayılarak	EVENT	23
+Event	T7	soğuk	EVENT	333
+Event	T8	Taşkınlar	EVENT	443
+Relation	T0	T7	NoRel	true	geçti	soğuk
+Relation	T1	T0	NoRel	true	söylendi	geçti
+Relation	T2	T5	NoRel	true	çabalarına	etti
+Relation	T2	T8	NoRel	true	çabalarına	Taşkınlar
+Relation	T5	T2	NoRel	true	etti	çabalarına
+Relation	T5	T6	NoRel	true	etti	yayılarak
+Relation	T5	T8	NoRel	true	etti	Taşkınlar
+Relation	T6	T4	NoRel	true	yayılarak	oldu
+Relation	T6	T7	NoRel	true	yayılarak	soğuk
+Relation	T7	T6	NoRel	true	soğuk	yayılarak
+Relation	T8	T2	NoRel	true	Taşkınlar	çabalarına

@@ -1,0 +1,35 @@
+Text	Fra slutningen af april og de følgende måneder skete spontane massakrer i Provence og Dauphiné .	I Savoyen herskede den 14-årige grev Amédée VI , der troede , at jøderne var skyldige i giftsammensvægelsen .	Dér blev tortur anvendt til at fremtvinge tilståelser i efteråret 1348 .	Den 1. december 1348 brød en folkemængde ind i fængslet i hovedstaden Chambéry og slog de fleste af de jødiske fanger ihjel .	Fra disse områder bredte jødeforfølgelsen sig .
+Event	T0	massakrer	EVENT	62
+Event	T1	herskede	EVENT	107
+Event	T2	troede	EVENT	150
+Event	T3	giftsammensvægelsen	EVENT	185
+Event	T4	anvendt	EVENT	223
+Event	T5	tilståelser	EVENT	249
+Event	T6	brød	EVENT	301
+Event	T7	fængslet	EVENT	327
+Event	T8	slog	EVENT	362
+Event	T9	jødeforfølgelsen	EVENT	431
+Event	T10	skyldige	EVENT	174
+Event	T11	tortur	EVENT	216
+Event	T12	ihjel	EVENT	398
+Event	T13	slutningen	EVENT	4
+Relation	T11	T5	SuperSub	true	tortur	tilståelser
+Relation	T5	T11	SubSuper	true	tilståelser	tortur
+Relation	T0	T6	NoRel	true	massakrer	brød
+Relation	T0	T7	NoRel	true	massakrer	fængslet
+Relation	T1	T11	NoRel	true	herskede	tortur
+Relation	T1	T9	NoRel	true	herskede	jødeforfølgelsen
+Relation	T11	T2	NoRel	true	tortur	troede
+Relation	T11	T6	NoRel	true	tortur	brød
+Relation	T3	T0	NoRel	true	giftsammensvægelsen	massakrer
+Relation	T3	T11	NoRel	true	giftsammensvægelsen	tortur
+Relation	T4	T9	NoRel	true	anvendt	jødeforfølgelsen
+Relation	T5	T12	NoRel	true	tilståelser	ihjel
+Relation	T5	T7	NoRel	true	tilståelser	fængslet
+Relation	T6	T5	NoRel	true	brød	tilståelser
+Relation	T6	T7	NoRel	true	brød	fængslet
+Relation	T8	T0	NoRel	true	slog	massakrer
+Relation	T8	T3	NoRel	true	slog	giftsammensvægelsen
+Relation	T8	T6	NoRel	true	slog	brød
+Relation	T8	T9	NoRel	true	slog	jødeforfølgelsen
+Relation	T9	T12	NoRel	true	jødeforfølgelsen	ihjel

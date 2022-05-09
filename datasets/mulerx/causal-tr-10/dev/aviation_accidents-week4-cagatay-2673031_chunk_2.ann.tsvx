@@ -1,0 +1,56 @@
+Text	Bir dağ geçidine girdi , alev aldı ve parçalandı .	Uçaktaki 166 kişiden hayatta kalan olmadı .	Sovyet havacılık kurulu kazanın , uçağın yerel koşullar için maksimum kalkış ağırlığına yakınken meydana gelen bir rüzgâr makasından kaynaklandığı sonucuna vardı .	- Archive copy of Sarasota Herald - Tribune _ Soviet Jetliner Crashes ; At Least 163 are Killed _ - Archive of The Bulletin from 17 July 1980 _ 163 reported dead in Soviet jet crash _	Kategori : 1980'de Sovyetler Birliği Kategori : Kazakistan SSC'deki havacılık kazaları ve olayları Kategori : Aeroflot kazaları ve olayları Kategori : 1980'de havacılık kazaları ve olayları Kategori : Kontrol kaybı nedeniyle gerçekleşen havacılık kazaları ve olayları Kategori : Mikropatlama nedeniyle gerçekleşen havacılık kazaları ve olayları Kategori : Tupolev Tu- 154 içeren kazalar ve olaylar
+Event	T0	girdi	EVENT	17
+Event	T1	aldı	EVENT	30
+Event	T2	parçalandı	EVENT	38
+Event	T4	vardı	EVENT	251
+Event	T5	Crashes	EVENT	321
+Event	T6	Killed	EVENT	348
+Event	T7	dead	EVENT	416
+Event	T8	crash	EVENT	435
+Event	T9	kaybı	EVENT	652
+Event	T10	kazaları	EVENT	690
+Event	T11	olayları	EVENT	702
+Event	T12	Mikropatlama	EVENT	722
+Event	T14	kazaları	EVENT	767
+Event	T15	kazalar	EVENT	822
+Event	T16	olaylar	EVENT	833
+Event	T17	makasından	EVENT	217
+Event	T3	olayları	EVENT	779
+Relation	T17	T4	CauseEffect	true	makasından	vardı
+Relation	T4	T17	EffectCause	true	vardı	makasından
+Relation	T9	T10	CauseEffect	true	kaybı	kazaları
+Relation	T10	T9	EffectCause	true	kazaları	kaybı
+Relation	T9	T11	CauseEffect	true	kaybı	olayları
+Relation	T11	T9	EffectCause	true	olayları	kaybı
+Relation	T12	T14	CauseEffect	true	Mikropatlama	kazaları
+Relation	T14	T12	EffectCause	true	kazaları	Mikropatlama
+Relation	T12	T3	CauseEffect	true	Mikropatlama	olayları
+Relation	T3	T12	EffectCause	true	olayları	Mikropatlama
+Relation	T0	T12	NoRel	true	girdi	Mikropatlama
+Relation	T1	T16	NoRel	true	aldı	olaylar
+Relation	T1	T17	NoRel	true	aldı	makasından
+Relation	T10	T17	NoRel	true	kazaları	makasından
+Relation	T10	T8	NoRel	true	kazaları	crash
+Relation	T11	T14	NoRel	true	olayları	kazaları
+Relation	T12	T6	NoRel	true	Mikropatlama	Killed
+Relation	T14	T17	NoRel	true	kazaları	makasından
+Relation	T14	T7	NoRel	true	kazaları	dead
+Relation	T15	T4	NoRel	true	kazalar	vardı
+Relation	T15	T8	NoRel	true	kazalar	crash
+Relation	T17	T11	NoRel	true	makasından	olayları
+Relation	T17	T6	NoRel	true	makasından	Killed
+Relation	T2	T10	NoRel	true	parçalandı	kazaları
+Relation	T2	T14	NoRel	true	parçalandı	kazaları
+Relation	T2	T17	NoRel	true	parçalandı	makasından
+Relation	T3	T1	NoRel	true	olayları	aldı
+Relation	T3	T6	NoRel	true	olayları	Killed
+Relation	T6	T12	NoRel	true	Killed	Mikropatlama
+Relation	T6	T15	NoRel	true	Killed	kazalar
+Relation	T6	T3	NoRel	true	Killed	olayları
+Relation	T6	T5	NoRel	true	Killed	Crashes
+Relation	T6	T8	NoRel	true	Killed	crash
+Relation	T7	T1	NoRel	true	dead	aldı
+Relation	T8	T10	NoRel	true	crash	kazaları
+Relation	T8	T2	NoRel	true	crash	parçalandı
+Relation	T9	T2	NoRel	true	kaybı	parçalandı
+Relation	T9	T4	NoRel	true	kaybı	vardı

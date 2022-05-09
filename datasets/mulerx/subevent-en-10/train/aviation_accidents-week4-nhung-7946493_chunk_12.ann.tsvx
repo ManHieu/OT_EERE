@@ -1,0 +1,73 @@
+Text	The National Transportation Safety Board ( NTSB ) investigated the incident , assisted by the Marine Corps , Federal Aviation Administration ( FAA ) , Hughes Airwest , and the Airline Pilots Association .	Early statements released by the NTSB revealed that the F - 4 B fighter had attempted to swerve away from the DC - 9 immediately prior to impact , and that an additional 10 feet of clearance would have averted the entire collision .	Additionally , the NTSB confirmed that the fighter had impacted the DC - 9 in two places , with its right wing impacting the airliner 's forward passenger cabin and the vertical stabilizer " slicing through " the cockpit .	The DC - 9 carried a primitive flight data recorder that recorded basic information about the aircraft 's air speed , acceleration , heading , and altitude on metal foil tapes .	Additionally , the aircraft was equipped with a simple cockpit voice recorder that recorded all conversations that took place in the cockpit of the aircraft .
+Event	T0	investigated	EVENT	50
+Event	T1	incident	EVENT	67
+Event	T2	assisted	EVENT	78
+Event	T3	released	EVENT	222
+Event	T4	revealed	EVENT	243
+Event	T5	attempted	EVENT	281
+Event	T6	impact	EVENT	343
+Event	T7	clearance	EVENT	386
+Event	T8	averted	EVENT	407
+Event	T9	collision	EVENT	426
+Event	T10	confirmed	EVENT	462
+Event	T11	impacted	EVENT	493
+Event	T12	impacting	EVENT	549
+Event	T13	carried	EVENT	672
+Event	T14	recorded	EVENT	718
+Event	T15	acceleration	EVENT	779
+Event	T16	heading	EVENT	794
+Event	T17	equipped	EVENT	871
+Event	T18	recorded	EVENT	922
+Event	T19	conversations	EVENT	935
+Event	T20	slicing	EVENT	629
+Event	T21	took place	EVENT	954
+Relation	T3	T4	SuperSub	true	released	revealed
+Relation	T4	T3	SubSuper	true	revealed	released
+Relation	T5	T6	SuperSub	true	attempted	impact
+Relation	T6	T5	SubSuper	true	impact	attempted
+Relation	T11	T12	SuperSub	true	impacted	impacting
+Relation	T12	T11	SubSuper	true	impacting	impacted
+Relation	T12	T20	SuperSub	true	impacting	slicing
+Relation	T20	T12	SubSuper	true	slicing	impacting
+Relation	T0	T16	NoRel	true	investigated	heading
+Relation	T1	T10	NoRel	true	incident	confirmed
+Relation	T1	T7	NoRel	true	incident	clearance
+Relation	T11	T19	NoRel	true	impacted	conversations
+Relation	T12	T0	NoRel	true	impacting	investigated
+Relation	T12	T18	NoRel	true	impacting	recorded
+Relation	T14	T1	NoRel	true	recorded	incident
+Relation	T14	T19	NoRel	true	recorded	conversations
+Relation	T14	T20	NoRel	true	recorded	slicing
+Relation	T16	T17	NoRel	true	heading	equipped
+Relation	T16	T5	NoRel	true	heading	attempted
+Relation	T17	T0	NoRel	true	equipped	investigated
+Relation	T17	T1	NoRel	true	equipped	incident
+Relation	T17	T13	NoRel	true	equipped	carried
+Relation	T17	T5	NoRel	true	equipped	attempted
+Relation	T17	T8	NoRel	true	equipped	averted
+Relation	T18	T12	NoRel	true	recorded	impacting
+Relation	T18	T5	NoRel	true	recorded	attempted
+Relation	T19	T10	NoRel	true	conversations	confirmed
+Relation	T19	T21	NoRel	true	conversations	took place
+Relation	T2	T19	NoRel	true	assisted	conversations
+Relation	T20	T17	NoRel	true	slicing	equipped
+Relation	T20	T8	NoRel	true	slicing	averted
+Relation	T21	T2	NoRel	true	took place	assisted
+Relation	T21	T6	NoRel	true	took place	impact
+Relation	T21	T8	NoRel	true	took place	averted
+Relation	T3	T0	NoRel	true	released	investigated
+Relation	T3	T11	NoRel	true	released	impacted
+Relation	T3	T8	NoRel	true	released	averted
+Relation	T4	T19	NoRel	true	revealed	conversations
+Relation	T6	T13	NoRel	true	impact	carried
+Relation	T6	T18	NoRel	true	impact	recorded
+Relation	T6	T20	NoRel	true	impact	slicing
+Relation	T6	T9	NoRel	true	impact	collision
+Relation	T7	T1	NoRel	true	clearance	incident
+Relation	T7	T10	NoRel	true	clearance	confirmed
+Relation	T7	T14	NoRel	true	clearance	recorded
+Relation	T7	T3	NoRel	true	clearance	released
+Relation	T8	T3	NoRel	true	averted	released
+Relation	T8	T5	NoRel	true	averted	attempted
+Relation	T8	T7	NoRel	true	averted	clearance
+Relation	T9	T18	NoRel	true	collision	recorded

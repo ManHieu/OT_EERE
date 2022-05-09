@@ -1,0 +1,32 @@
+Text	Det var ejet og leaset af det Dublin-baserede selskab AerCap .	Flyet fløj første gang den 9. maj 1997 , og blev oprindeligt leveret til Middle East Airlines .	Flyet var altså 18 år og 6 måneder gammel .	Det har været leaset til Saudi Arabian Airlines og Cham Wings Airlines , og også fløjet for Onur Air og Kolavia som så blev til Metrojet i maj 2012 .	Da flyet den 16. november 2001 landede i Kairo lufthavn ramte halen landingsbanen hårdt , hvilket minder om Japan Airlines Flight 123 i 1985 – ellers har flyet ikke været involveret i ulykker før .
+Event	T0	ejet	EVENT	8
+Event	T1	leaset	EVENT	16
+Event	T2	fløj	EVENT	69
+Event	T3	leveret	EVENT	124
+Event	T4	leaset	EVENT	217
+Event	T5	fløjet	EVENT	284
+Event	T6	Metrojet	EVENT	331
+Event	T7	landede	EVENT	384
+Event	T9	minder	EVENT	451
+Event	T10	involveret	EVENT	524
+Event	T11	ulykker	EVENT	537
+Event	T12	var	EVENT	165
+Event	T8	ramte	EVENT	409
+Relation	T1	T8	NoRel	true	leaset	ramte
+Relation	T10	T2	NoRel	true	involveret	fløj
+Relation	T10	T8	NoRel	true	involveret	ramte
+Relation	T12	T10	NoRel	true	var	involveret
+Relation	T12	T9	NoRel	true	var	minder
+Relation	T2	T9	NoRel	true	fløj	minder
+Relation	T4	T0	NoRel	true	leaset	ejet
+Relation	T4	T1	NoRel	true	leaset	leaset
+Relation	T4	T5	NoRel	true	leaset	fløjet
+Relation	T4	T9	NoRel	true	leaset	minder
+Relation	T5	T10	NoRel	true	fløjet	involveret
+Relation	T5	T11	NoRel	true	fløjet	ulykker
+Relation	T5	T3	NoRel	true	fløjet	leveret
+Relation	T6	T11	NoRel	true	Metrojet	ulykker
+Relation	T6	T3	NoRel	true	Metrojet	leveret
+Relation	T7	T2	NoRel	true	landede	fløj
+Relation	T7	T5	NoRel	true	landede	fløjet
+Relation	T8	T1	NoRel	true	ramte	leaset

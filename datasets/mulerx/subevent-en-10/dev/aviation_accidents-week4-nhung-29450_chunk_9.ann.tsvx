@@ -1,0 +1,43 @@
+Text	His term of Chief of Staff was noted for financial and structural reforms of the IDF .	His tenure also saw continued operations in the South Lebanon security zone and the withdrawal from the security zone in 2000 .	But the most significant event in his tenure was the eruption of the Second Intifada in September 2000 .	The tough tactics undertaken by Mofaz drew widespread concern from the international community but were broadly supported by the Israeli public .	Controversy erupted over Israeli actions during the Battle of Jenin , intermittent raids in the Gaza Strip , and the continued isolation of Yasser Arafat .
+Event	T0	term	EVENT	4
+Event	T1	noted	EVENT	31
+Event	T2	reforms	EVENT	66
+Event	T3	tenure	EVENT	91
+Event	T4	operations	EVENT	117
+Event	T5	withdrawal	EVENT	171
+Event	T7	tenure	EVENT	253
+Event	T8	eruption	EVENT	268
+Event	T9	undertaken	EVENT	338
+Event	T10	drew	EVENT	358
+Event	T11	supported	EVENT	432
+Event	T12	erupted	EVENT	478
+Event	T13	actions	EVENT	499
+Event	T14	Battle	EVENT	518
+Event	T15	raids	EVENT	549
+Event	T16	isolation	EVENT	593
+Relation	T0	T15	NoRel	true	term	raids
+Relation	T0	T5	NoRel	true	term	withdrawal
+Relation	T1	T15	NoRel	true	noted	raids
+Relation	T1	T4	NoRel	true	noted	operations
+Relation	T10	T0	NoRel	true	drew	term
+Relation	T10	T3	NoRel	true	drew	tenure
+Relation	T10	T5	NoRel	true	drew	withdrawal
+Relation	T10	T8	NoRel	true	drew	eruption
+Relation	T11	T9	NoRel	true	supported	undertaken
+Relation	T13	T10	NoRel	true	actions	drew
+Relation	T13	T12	NoRel	true	actions	erupted
+Relation	T13	T14	NoRel	true	actions	Battle
+Relation	T14	T12	NoRel	true	Battle	erupted
+Relation	T14	T4	NoRel	true	Battle	operations
+Relation	T16	T2	NoRel	true	isolation	reforms
+Relation	T2	T16	NoRel	true	reforms	isolation
+Relation	T2	T4	NoRel	true	reforms	operations
+Relation	T3	T7	NoRel	true	tenure	tenure
+Relation	T4	T2	NoRel	true	operations	reforms
+Relation	T5	T13	NoRel	true	withdrawal	actions
+Relation	T5	T16	NoRel	true	withdrawal	isolation
+Relation	T7	T14	NoRel	true	tenure	Battle
+Relation	T8	T1	NoRel	true	eruption	noted
+Relation	T8	T15	NoRel	true	eruption	raids
+Relation	T9	T10	NoRel	true	undertaken	drew
+Relation	T9	T4	NoRel	true	undertaken	operations

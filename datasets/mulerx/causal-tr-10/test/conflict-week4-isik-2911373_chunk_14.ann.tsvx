@@ -1,0 +1,44 @@
+Text	Büyük Vatanseverlik Savaşı sırasında ve sonrasında 1991 yılına kadar Komisyon , yağma olayları da dahil olmak üzere SSCB'deki Nazi suçlarıyla ilgili materyaller topladı .	Savaşın hemen ardından Komisyon , 427 hasar görmüş müzeden en değerli 64 Sovyet müzesine verilen zararı ayrıntılı olarak özetledi .	Rus SFSR'sinde , Naziler tarafından 173 müze ile yüzbinlerce nesnenin yağmalanmış olduğu bulundu .	SSCB'nin dağılmasından sonra , Rusya Federasyonu Hükümeti , Sovyet Komisyonu'nun yerine Kültür Değerlerinin İadesi için Devlet Komisyonu'nu kurdu .	Bu Rus kurumunun uzmanları , başlangıçta Sovyet Komisyonu'nun çalışmalarına danışmıştır , ancak müze tarafından savaş müzesi sırasında kaybedilen eserleri kataloglamaya devam etmiştir .
+Event	T1	topladı	EVENT	161
+Event	T2	verilen	EVENT	260
+Event	T3	özetledi	EVENT	292
+Event	T4	yağmalanmış	EVENT	373
+Event	T5	bulundu	EVENT	392
+Event	T6	kurdu	EVENT	542
+Event	T7	kaybedilen	EVENT	685
+Event	T8	Büyük Vatanseverlik Savaşı	EVENT	0
+Event	T9	olayları	EVENT	86
+Event	T10	Savaşın	EVENT	171
+Event	T11	görmüş	EVENT	215
+Event	T12	dağılmasından	EVENT	411
+Event	T13	İadesi	EVENT	510
+Event	T14	çalışmalarına	EVENT	612
+Event	T15	danışmıştır	EVENT	626
+Event	T16	kataloglamaya	EVENT	705
+Event	T17	etmiştir	EVENT	725
+Relation	T8	T9	CauseEffect	true	Büyük Vatanseverlik Savaşı	olayları
+Relation	T9	T8	EffectCause	true	olayları	Büyük Vatanseverlik Savaşı
+Relation	T1	T5	NoRel	true	topladı	bulundu
+Relation	T1	T8	NoRel	true	topladı	Büyük Vatanseverlik Savaşı
+Relation	T10	T11	NoRel	true	Savaşın	görmüş
+Relation	T10	T9	NoRel	true	Savaşın	olayları
+Relation	T11	T6	NoRel	true	görmüş	kurdu
+Relation	T12	T16	NoRel	true	dağılmasından	kataloglamaya
+Relation	T13	T17	NoRel	true	İadesi	etmiştir
+Relation	T13	T7	NoRel	true	İadesi	kaybedilen
+Relation	T14	T8	NoRel	true	çalışmalarına	Büyük Vatanseverlik Savaşı
+Relation	T15	T12	NoRel	true	danışmıştır	dağılmasından
+Relation	T15	T14	NoRel	true	danışmıştır	çalışmalarına
+Relation	T16	T15	NoRel	true	kataloglamaya	danışmıştır
+Relation	T17	T2	NoRel	true	etmiştir	verilen
+Relation	T2	T11	NoRel	true	verilen	görmüş
+Relation	T4	T8	NoRel	true	yağmalanmış	Büyük Vatanseverlik Savaşı
+Relation	T5	T11	NoRel	true	bulundu	görmüş
+Relation	T5	T13	NoRel	true	bulundu	İadesi
+Relation	T5	T15	NoRel	true	bulundu	danışmıştır
+Relation	T5	T4	NoRel	true	bulundu	yağmalanmış
+Relation	T6	T1	NoRel	true	kurdu	topladı
+Relation	T6	T12	NoRel	true	kurdu	dağılmasından
+Relation	T6	T17	NoRel	true	kurdu	etmiştir
+Relation	T6	T2	NoRel	true	kurdu	verilen
+Relation	T8	T2	NoRel	true	Büyük Vatanseverlik Savaşı	verilen

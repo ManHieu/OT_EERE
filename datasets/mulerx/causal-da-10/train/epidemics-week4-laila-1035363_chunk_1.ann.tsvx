@@ -1,0 +1,31 @@
+Text	Imidlertid inficeres mennesker typisk fra kameler , enten under direkte kontakt eller indirekte .	Spredning mellem mennesker kræver typisk tæt kontakt med en inficeret person .	Spredning er usædvanlig uden for hospitaler .	Derfor anses risikoen for den globale befolkning i øjeblikket for at være ret lav .	Diagnosen sker ved rRT-PCR-test ( RT-PCROm udtrykket " rRT-PCR " for _ Reverse transcription polymerase chain reaction _ , en gen-opformeringsteknik , polymerase kædereaktion :
+Event	T0	inficeres	EVENT	11
+Event	T1	kontakt	EVENT	72
+Event	T2	Spredning	EVENT	98
+Event	T3	kontakt	EVENT	143
+Event	T4	Spredning	EVENT	177
+Event	T5	sker	EVENT	317
+Event	T6	udtrykket	EVENT	350
+Event	T7	kædereaktion	EVENT	469
+Event	T8	indirekte	EVENT	86
+Event	T9	kameler	EVENT	42
+Event	T10	inficeret	EVENT	158
+Event	T11	risikoen	EVENT	236
+Relation	T9	T0	CauseEffect	true	kameler	inficeres
+Relation	T0	T9	EffectCause	true	inficeres	kameler
+Relation	T3	T2	CauseEffect	true	kontakt	Spredning
+Relation	T2	T3	EffectCause	true	Spredning	kontakt
+Relation	T0	T2	NoRel	true	inficeres	Spredning
+Relation	T11	T0	NoRel	true	risikoen	inficeres
+Relation	T11	T7	NoRel	true	risikoen	kædereaktion
+Relation	T2	T7	NoRel	true	Spredning	kædereaktion
+Relation	T3	T1	NoRel	true	kontakt	kontakt
+Relation	T5	T0	NoRel	true	sker	inficeres
+Relation	T5	T11	NoRel	true	sker	risikoen
+Relation	T5	T6	NoRel	true	sker	udtrykket
+Relation	T5	T8	NoRel	true	sker	indirekte
+Relation	T6	T0	NoRel	true	udtrykket	inficeres
+Relation	T6	T11	NoRel	true	udtrykket	risikoen
+Relation	T6	T8	NoRel	true	udtrykket	indirekte
+Relation	T8	T1	NoRel	true	indirekte	kontakt
+Relation	T9	T10	NoRel	true	kameler	inficeret

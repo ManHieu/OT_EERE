@@ -1,0 +1,28 @@
+Text	Veganlar , hayvanlardan türetilen , dolayısıyla üretilmesi için hayvanların kullanıldığı yiyecek ürünlerini tüketmediği gibi , yapımında deri , kürk , kemik , jelatin , yün ( koyun yünü , kaşmir , angora ) , ipek gibi hayvansal maddelerin kullanıldığı yiyecek dışı maddeleri de kullanmaz , giyimlerinde pamuk ve keten gibi bitkisel ya da akrilik gibi sentetik kumaşları kullanırlar .	Hayvanlar üzerinde test edilen ve lanolin , propolis gibi hayvansal ürünler içeren kozmetik ve ev temizliği ürünleri de bunlara dahildir .	Bunlara ek olarak veganlar , hayvanların kullanıldığı eğlence biçimlerine ( sirk , boğa güreşi , hayvanat bahçesi , at yarışı vs. ) katılmaz .	Veganlığın yaygınlaşması sonucu büyük metropollerde artık sadece vegan yemekler sunan restoranlar bulunabilmekte , menülerinde bazı yemeklerin vegan olduğunu belirten restoranların sayısı artmakta , vegan süpermarketler açılmaktadır .	küçükresim | 266x266px | Etik veganlar , hayvanların insanlar tarafından kaynak olarak kullanılmasına karşı çıkarlar .
+Event	T1	yaygınlaşması	EVENT	677
+Event	T2	açılmaktadır	EVENT	886
+Event	T3	türetilen	EVENT	24
+Event	T4	kullanıldığı	EVENT	76
+Event	T5	kullanıldığı	EVENT	239
+Event	T6	kullanırlar	EVENT	370
+Event	T7	Veganlar	EVENT	0
+Event	T8	edilen	EVENT	408
+Event	T9	katılmaz	EVENT	655
+Event	T10	bulunabilmekte	EVENT	764
+Event	T11	artmakta	EVENT	854
+Event	T12	kullanılmasına	EVENT	988
+Event	T13	çıkarlar	EVENT	1009
+Relation	T10	T4	NoRel	true	bulunabilmekte	kullanıldığı
+Relation	T10	T8	NoRel	true	bulunabilmekte	edilen
+Relation	T11	T10	NoRel	true	artmakta	bulunabilmekte
+Relation	T11	T3	NoRel	true	artmakta	türetilen
+Relation	T11	T4	NoRel	true	artmakta	kullanıldığı
+Relation	T12	T1	NoRel	true	kullanılmasına	yaygınlaşması
+Relation	T12	T6	NoRel	true	kullanılmasına	kullanırlar
+Relation	T13	T1	NoRel	true	çıkarlar	yaygınlaşması
+Relation	T2	T10	NoRel	true	açılmaktadır	bulunabilmekte
+Relation	T2	T6	NoRel	true	açılmaktadır	kullanırlar
+Relation	T5	T6	NoRel	true	kullanıldığı	kullanırlar
+Relation	T6	T2	NoRel	true	kullanırlar	açılmaktadır
+Relation	T8	T6	NoRel	true	edilen	kullanırlar
+Relation	T9	T4	NoRel	true	katılmaz	kullanıldığı

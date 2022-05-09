@@ -1,0 +1,45 @@
+Text	May : Sumitoshi Nakao becomes the first Japanese aviator to save his life by parachute when he bails out of one of two Mitsubishi 1MF2 Hayabusa - type fighter prototypes when it disintegrates during a diving test during official Army trials at Tokorozawa .	Pilot uninjured .	Because of the accident , further flight evaluations of the type are suspended and the other airframe is statically tested to destruction .	1 May : Curtiss O - 1B Falcon ,__ 27-279_ , assigned at Middletown Air Depot , Pennsylvania , crashes at Whitney Point , New York , this date .	Pilot Lt. Bushrod Hoppin is uninjured , but his passenger , Congressman Thaddeus Campbell Sweet is killed .
+Event	T0	becomes	EVENT	22
+Event	T1	save	EVENT	60
+Event	T2	disintegrates	EVENT	178
+Event	T3	test	EVENT	208
+Event	T4	trials	EVENT	234
+Event	T5	accident	EVENT	290
+Event	T6	evaluations	EVENT	316
+Event	T7	suspended	EVENT	344
+Event	T8	destruction	EVENT	401
+Event	T9	assigned	EVENT	459
+Event	T10	crashes	EVENT	509
+Event	T11	uninjured	EVENT	587
+Event	T12	killed	EVENT	658
+Event	T13	bails	EVENT	95
+Event	T14	uninjured	EVENT	263
+Event	T15	tested	EVENT	391
+Relation	T0	T1	NoRel	true	becomes	save
+Relation	T1	T15	NoRel	true	save	tested
+Relation	T10	T5	NoRel	true	crashes	accident
+Relation	T10	T8	NoRel	true	crashes	destruction
+Relation	T11	T4	NoRel	true	uninjured	trials
+Relation	T11	T9	NoRel	true	uninjured	assigned
+Relation	T13	T1	NoRel	true	bails	save
+Relation	T14	T0	NoRel	true	uninjured	becomes
+Relation	T15	T14	NoRel	true	tested	uninjured
+Relation	T2	T0	NoRel	true	disintegrates	becomes
+Relation	T2	T15	NoRel	true	disintegrates	tested
+Relation	T2	T4	NoRel	true	disintegrates	trials
+Relation	T3	T0	NoRel	true	test	becomes
+Relation	T3	T5	NoRel	true	test	accident
+Relation	T4	T11	NoRel	true	trials	uninjured
+Relation	T4	T8	NoRel	true	trials	destruction
+Relation	T5	T1	NoRel	true	accident	save
+Relation	T5	T11	NoRel	true	accident	uninjured
+Relation	T5	T8	NoRel	true	accident	destruction
+Relation	T5	T9	NoRel	true	accident	assigned
+Relation	T6	T13	NoRel	true	evaluations	bails
+Relation	T7	T13	NoRel	true	suspended	bails
+Relation	T7	T5	NoRel	true	suspended	accident
+Relation	T8	T2	NoRel	true	destruction	disintegrates
+Relation	T8	T4	NoRel	true	destruction	trials
+Relation	T8	T7	NoRel	true	destruction	suspended
+Relation	T9	T1	NoRel	true	assigned	save
+Relation	T9	T8	NoRel	true	assigned	destruction

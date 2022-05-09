@@ -1,0 +1,107 @@
+Text	At 3:00 a.m. , Townsend told Cloud he did not want large groups of blacks congregating in the mess hall , and likened the gathering to a " victory party . "	Townsend and Cloud dispersed the group and met with any sailors who were still upset in the forecastle until 5:00 a.m .	Many white sailors aboard the massive ship were unaware that the incident had occurred , and began to hear rumors when they awoke .	Becoming increasingly angry , about 150 white sailors began to arm themselves and congregated in a berthing compartment , readying themselves for what they thought would be an outright racial battle for control of _ Kitty Hawk _ .	Hearing of the discord , Cloud went to address the group , who dismissed him as being " nothing more than a nigger , like the rest of them . "
+Event	T0	told	EVENT	24
+Event	T1	congregating	EVENT	74
+Event	T10	rumors	EVENT	384
+Event	T11	awoke	EVENT	401
+Event	T12	Becoming	EVENT	409
+Event	T13	angry	EVENT	431
+Event	T14	began	EVENT	463
+Event	T15	arm	EVENT	472
+Event	T16	congregated	EVENT	491
+Event	T17	readying	EVENT	531
+Event	T18	thought	EVENT	565
+Event	T19	battle	EVENT	601
+Event	T2	likened	EVENT	110
+Event	T20	control	EVENT	612
+Event	T21	Hearing	EVENT	640
+Event	T22	went	EVENT	671
+Event	T23	dismissed	EVENT	703
+Event	T25	aboard	EVENT	296
+Event	T26	unaware	EVENT	325
+Event	T28	address	EVENT	679
+Event	T3	gathering	EVENT	122
+Event	T4	dispersed	EVENT	176
+Event	T5	met	EVENT	200
+Event	T6	upset	EVENT	236
+Event	T7	forecastle	EVENT	249
+Event	T8	incident	EVENT	342
+Event	T9	occurred	EVENT	355
+Relation	T9	T11	SuperSub	true	occurred	awoke
+Relation	T11	T9	SubSuper	true	awoke	occurred
+Relation	T16	T15	SuperSub	true	congregated	arm
+Relation	T15	T16	SubSuper	true	arm	congregated
+Relation	T17	T15	SuperSub	true	readying	arm
+Relation	T15	T17	SubSuper	true	arm	readying
+Relation	T0	T25	NoRel	true	told	aboard
+Relation	T0	T3	NoRel	true	told	gathering
+Relation	T0	T5	NoRel	true	told	met
+Relation	T1	T19	NoRel	true	congregating	battle
+Relation	T10	T17	NoRel	true	rumors	readying
+Relation	T11	T25	NoRel	true	awoke	aboard
+Relation	T11	T6	NoRel	true	awoke	upset
+Relation	T12	T22	NoRel	true	Becoming	went
+Relation	T12	T3	NoRel	true	Becoming	gathering
+Relation	T12	T8	NoRel	true	Becoming	incident
+Relation	T13	T17	NoRel	true	angry	readying
+Relation	T13	T20	NoRel	true	angry	control
+Relation	T13	T21	NoRel	true	angry	Hearing
+Relation	T13	T26	NoRel	true	angry	unaware
+Relation	T13	T8	NoRel	true	angry	incident
+Relation	T14	T19	NoRel	true	began	battle
+Relation	T14	T21	NoRel	true	began	Hearing
+Relation	T15	T0	NoRel	true	arm	told
+Relation	T15	T12	NoRel	true	arm	Becoming
+Relation	T15	T21	NoRel	true	arm	Hearing
+Relation	T15	T26	NoRel	true	arm	unaware
+Relation	T16	T0	NoRel	true	congregated	told
+Relation	T16	T25	NoRel	true	congregated	aboard
+Relation	T17	T13	NoRel	true	readying	angry
+Relation	T17	T23	NoRel	true	readying	dismissed
+Relation	T17	T28	NoRel	true	readying	address
+Relation	T18	T13	NoRel	true	thought	angry
+Relation	T18	T14	NoRel	true	thought	began
+Relation	T18	T23	NoRel	true	thought	dismissed
+Relation	T19	T1	NoRel	true	battle	congregating
+Relation	T19	T15	NoRel	true	battle	arm
+Relation	T19	T18	NoRel	true	battle	thought
+Relation	T19	T4	NoRel	true	battle	dispersed
+Relation	T2	T10	NoRel	true	likened	rumors
+Relation	T2	T17	NoRel	true	likened	readying
+Relation	T2	T28	NoRel	true	likened	address
+Relation	T20	T0	NoRel	true	control	told
+Relation	T20	T5	NoRel	true	control	met
+Relation	T21	T15	NoRel	true	Hearing	arm
+Relation	T21	T20	NoRel	true	Hearing	control
+Relation	T21	T7	NoRel	true	Hearing	forecastle
+Relation	T21	T8	NoRel	true	Hearing	incident
+Relation	T22	T13	NoRel	true	went	angry
+Relation	T22	T16	NoRel	true	went	congregated
+Relation	T23	T15	NoRel	true	dismissed	arm
+Relation	T25	T0	NoRel	true	aboard	told
+Relation	T25	T17	NoRel	true	aboard	readying
+Relation	T25	T20	NoRel	true	aboard	control
+Relation	T25	T21	NoRel	true	aboard	Hearing
+Relation	T25	T26	NoRel	true	aboard	unaware
+Relation	T26	T0	NoRel	true	unaware	told
+Relation	T26	T15	NoRel	true	unaware	arm
+Relation	T26	T18	NoRel	true	unaware	thought
+Relation	T26	T20	NoRel	true	unaware	control
+Relation	T26	T7	NoRel	true	unaware	forecastle
+Relation	T28	T17	NoRel	true	address	readying
+Relation	T28	T26	NoRel	true	address	unaware
+Relation	T3	T12	NoRel	true	gathering	Becoming
+Relation	T3	T19	NoRel	true	gathering	battle
+Relation	T4	T10	NoRel	true	dispersed	rumors
+Relation	T4	T26	NoRel	true	dispersed	unaware
+Relation	T4	T3	NoRel	true	dispersed	gathering
+Relation	T4	T9	NoRel	true	dispersed	occurred
+Relation	T5	T10	NoRel	true	met	rumors
+Relation	T5	T4	NoRel	true	met	dispersed
+Relation	T6	T2	NoRel	true	upset	likened
+Relation	T6	T8	NoRel	true	upset	incident
+Relation	T7	T21	NoRel	true	forecastle	Hearing
+Relation	T8	T16	NoRel	true	incident	congregated
+Relation	T8	T20	NoRel	true	incident	control
+Relation	T8	T28	NoRel	true	incident	address
+Relation	T8	T7	NoRel	true	incident	forecastle
+Relation	T9	T5	NoRel	true	occurred	met

@@ -1,0 +1,23 @@
+Text	Normalmente , un vuelo a lo largo de esta ruta dura aproximadamente una hora y media .	La noticia sobre el desastre fue recibida por el Ministerio de Situaciones de Emergencia a las 23:15 hora local ( 18:15 hora de Moscú ) .	El avión cayó a unos cuatro kilómetros del pueblo de Kazachinskoye , desde una altura baja en una isla cerca de un río y en condiciones de densa niebla .	Según datos preliminares , el aparato hizo un segundo círculo en el momento de la caída , intentando aterrizar en condiciones de mala visibilidad .	La Fiscalía de Transportes de Rusia inició una investigación sobre el desastre .
+Event	T0	vuelo	EVENT	17
+Event	T1	noticia	EVENT	90
+Event	T2	desastre	EVENT	107
+Event	T3	recibida	EVENT	120
+Event	T4	cayó	EVENT	234
+Event	T5	hizo	EVENT	417
+Event	T6	círculo	EVENT	433
+Event	T7	caída	EVENT	461
+Event	T8	aterrizar	EVENT	480
+Event	T9	inició	EVENT	563
+Event	T10	investigación	EVENT	574
+Event	T11	desastre	EVENT	597
+Relation	T4	T2	CauseEffect	true	cayó	desastre
+Relation	T2	T4	EffectCause	true	desastre	cayó
+Relation	T7	T2	CauseEffect	true	caída	desastre
+Relation	T2	T7	EffectCause	true	desastre	caída
+Relation	T4	T1	NoRel	true	cayó	noticia
+Relation	T6	T9	NoRel	true	círculo	inició
+Relation	T7	T6	NoRel	true	caída	círculo
+Relation	T8	T7	NoRel	true	aterrizar	caída
+Relation	T8	T9	NoRel	true	aterrizar	inició
+Relation	T9	T2	NoRel	true	inició	desastre

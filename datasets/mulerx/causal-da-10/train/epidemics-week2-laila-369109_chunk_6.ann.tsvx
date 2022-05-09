@@ -1,0 +1,17 @@
+Text	Nogle personer over 52 år kan være immune overfor virussen , fordi virussen i influenzaepidemien i 1957 ligner den nuværende meget .	Dette skulle begrænse antallet af dødsfald blandt ældre personer .	Da det normalt især er svagelige personer der dør ved influenzaepedemi , er det oftest ældre , svagelige personer der dør på grund af influenza .	Og da disse i den nuværende epidemi til dels er immune , burde antallet af døde være lavere end ved andre influenzaepidemier .	[ https://www. statnews .com/2019/06/11/h1n1-swine-flu - 10-years -later /?
+Event	T0	influenzaepidemien	EVENT	78
+Event	T1	dødsfald	EVENT	167
+Event	T2	dør	EVENT	246
+Event	T3	dør	EVENT	318
+Event	T4	influenza	EVENT	334
+Event	T5	epidemi	EVENT	374
+Event	T6	døde	EVENT	421
+Event	T7	influenzaepidemier	EVENT	452
+Relation	T4	T3	CauseEffect	true	influenza	dør
+Relation	T3	T4	EffectCause	true	dør	influenza
+Relation	T4	T2	CauseEffect	true	influenza	dør
+Relation	T2	T4	EffectCause	true	dør	influenza
+Relation	T4	T5	NoRel	true	influenza	epidemi
+Relation	T5	T3	NoRel	true	epidemi	dør
+Relation	T6	T2	NoRel	true	døde	dør
+Relation	T7	T0	NoRel	true	influenzaepidemier	influenzaepidemien

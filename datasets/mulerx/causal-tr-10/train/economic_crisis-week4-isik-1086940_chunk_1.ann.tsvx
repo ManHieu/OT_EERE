@@ -1,0 +1,29 @@
+Text	Çekoslovakya Bilim Akademisi Ekonomi Enstitüsü'nde yüksek lisans öğrenimi gördü .	1971 - 1986 yılları arasında Çekoslovakya Devlet Bankası'nda çeşitli görevler üstledi .	1992 yılında Çek Sosyalist Cumhuriyeti'nde yapılan seçimleri partisi kazandı .	Cumhurbaşkanı Václav Havel tarafından başbakanlığa atandı .	Ülkenin Slovakya ile barışçıl bir şekilde ayrılmasından sonra yeni kurulan Çek Cumhuriyeti'nde yapılan ilk seçimleri kazanarak tekrar başbakanlığa atandı .
+Event	T0	gördü	EVENT	74
+Event	T1	üstledi	EVENT	160
+Event	T2	seçimleri	EVENT	221
+Event	T3	kazandı	EVENT	239
+Event	T4	atandı	EVENT	300
+Event	T5	ayrılmasından	EVENT	351
+Event	T6	kazanarak	EVENT	426
+Event	T7	atandı	EVENT	456
+Event	T8	kurulan	EVENT	376
+Event	T9	seçimleri	EVENT	416
+Relation	T2	T3	CauseEffect	true	seçimleri	kazandı
+Relation	T3	T2	EffectCause	true	kazandı	seçimleri
+Relation	T5	T8	CauseEffect	true	ayrılmasından	kurulan
+Relation	T8	T5	EffectCause	true	kurulan	ayrılmasından
+Relation	T6	T7	CauseEffect	true	kazanarak	atandı
+Relation	T7	T6	EffectCause	true	atandı	kazanarak
+Relation	T8	T9	CauseEffect	true	kurulan	seçimleri
+Relation	T9	T8	EffectCause	true	seçimleri	kurulan
+Relation	T9	T6	CauseEffect	true	seçimleri	kazanarak
+Relation	T6	T9	EffectCause	true	kazanarak	seçimleri
+Relation	T1	T4	NoRel	true	üstledi	atandı
+Relation	T1	T8	NoRel	true	üstledi	kurulan
+Relation	T3	T4	NoRel	true	kazandı	atandı
+Relation	T3	T5	NoRel	true	kazandı	ayrılmasından
+Relation	T3	T6	NoRel	true	kazandı	kazanarak
+Relation	T4	T1	NoRel	true	atandı	üstledi
+Relation	T7	T3	NoRel	true	atandı	kazandı
+Relation	T8	T6	NoRel	true	kurulan	kazanarak

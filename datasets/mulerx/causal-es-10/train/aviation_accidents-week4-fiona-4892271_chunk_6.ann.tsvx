@@ -1,0 +1,52 @@
+Text	Durante la inserción del Ranger esa misma noche , el CH-47D se había acercado desde el sur , esta vez , se acercó desde el noroeste .	El helicóptero hizo su última transmisión de radio indicando que estaba a un minuto de la zona de aterrizaje , luego descendió a una altitud de 100 a 150 pies ( 30 a 46 m ) y redujo la velocidad a 50 nudos ( 58 mph ; 93 km/h ) a medida que se acercaba a la zona de aterrizaje .	Alrededor de las 02:38 , al helicóptero se le lanzó un misil y fue inmediatamente derribado por un grupo de combatientes talibanes que no habían sido detectados anteriormente , aproximadamente a 220 m al sur del helicóptero .	El grupo disparó 2-3 rondas de RPG desde un edificio de dos pisos , el segundo de los cuales golpeó una de las tres palas del rotor de popa del helicóptero .	La explosión resultante destruyó el conjunto del rotor de popa .
+Event	T0	inserción	EVENT	11
+Event	T1	acercado	EVENT	69
+Event	T2	hizo	EVENT	149
+Event	T3	transmisión	EVENT	164
+Event	T4	indicando	EVENT	185
+Event	T5	aterrizaje	EVENT	232
+Event	T6	descendió	EVENT	251
+Event	T7	redujo	EVENT	309
+Event	T8	aterrizaje	EVENT	399
+Event	T9	lanzó	EVENT	458
+Event	T10	derribado	EVENT	494
+Event	T11	detectados	EVENT	562
+Event	T12	disparó	EVENT	647
+Event	T13	rondas	EVENT	659
+Event	T14	RPG	EVENT	669
+Event	T15	golpeó	EVENT	731
+Event	T16	destruyó	EVENT	820
+Event	T17	rotor	EVENT	845
+Relation	T12	T16	CauseEffect	true	disparó	destruyó
+Relation	T16	T12	EffectCause	true	destruyó	disparó
+Relation	T9	T10	CauseEffect	true	lanzó	derribado
+Relation	T10	T9	EffectCause	true	derribado	lanzó
+Relation	T0	T14	NoRel	true	inserción	RPG
+Relation	T0	T15	NoRel	true	inserción	golpeó
+Relation	T0	T4	NoRel	true	inserción	indicando
+Relation	T1	T16	NoRel	true	acercado	destruyó
+Relation	T1	T8	NoRel	true	acercado	aterrizaje
+Relation	T10	T17	NoRel	true	derribado	rotor
+Relation	T11	T10	NoRel	true	detectados	derribado
+Relation	T11	T13	NoRel	true	detectados	rondas
+Relation	T13	T3	NoRel	true	rondas	transmisión
+Relation	T14	T15	NoRel	true	RPG	golpeó
+Relation	T14	T6	NoRel	true	RPG	descendió
+Relation	T15	T10	NoRel	true	golpeó	derribado
+Relation	T15	T11	NoRel	true	golpeó	detectados
+Relation	T17	T5	NoRel	true	rotor	aterrizaje
+Relation	T17	T9	NoRel	true	rotor	lanzó
+Relation	T2	T3	NoRel	true	hizo	transmisión
+Relation	T2	T9	NoRel	true	hizo	lanzó
+Relation	T3	T12	NoRel	true	transmisión	disparó
+Relation	T3	T15	NoRel	true	transmisión	golpeó
+Relation	T3	T6	NoRel	true	transmisión	descendió
+Relation	T4	T10	NoRel	true	indicando	derribado
+Relation	T4	T15	NoRel	true	indicando	golpeó
+Relation	T4	T2	NoRel	true	indicando	hizo
+Relation	T6	T12	NoRel	true	descendió	disparó
+Relation	T7	T1	NoRel	true	redujo	acercado
+Relation	T7	T11	NoRel	true	redujo	detectados
+Relation	T7	T15	NoRel	true	redujo	golpeó
+Relation	T8	T13	NoRel	true	aterrizaje	rondas
+Relation	T9	T15	NoRel	true	lanzó	golpeó

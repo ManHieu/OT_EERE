@@ -1,0 +1,63 @@
+Text	Homer buys the 10 - speed for Bart , but refuses to pay the small assembly fee and builds it himself .	Bart is happy since it looks great and works perfectly at first , but it falls apart when he moons the bullies .	Homer , wanting Bart to be proud of him , tries to build a battle robot for the show _ Robot Rumble _ .	He fails to construct one , but then decides to build a robot with himself in it , which Bart names " Chief Knock - a Homer " .	Unaware of Homer 's ruse , Bart enters the robot in the Rumble .
+Event	T0	buys	EVENT	6
+Event	T1	refuses	EVENT	41
+Event	T2	pay	EVENT	52
+Event	T3	builds	EVENT	83
+Event	T5	moons	EVENT	196
+Event	T6	wanting	EVENT	224
+Event	T7	tries	EVENT	258
+Event	T8	build	EVENT	267
+Event	T9	battle	EVENT	275
+Event	T10	show	EVENT	296
+Event	T11	fails	EVENT	323
+Event	T12	construct	EVENT	332
+Event	T13	decides	EVENT	357
+Event	T14	build	EVENT	368
+Event	T15	ruse	EVENT	468
+Event	T16	enters	EVENT	480
+Event	T17	happy	EVENT	111
+Event	T18	looks great	EVENT	126
+Event	T4	works perfectly	EVENT	142
+Event	T19	falls apart	EVENT	176
+Event	T20	Unaware	EVENT	448
+Relation	T0	T1	SuperSub	true	buys	refuses
+Relation	T1	T0	SubSuper	true	refuses	buys
+Relation	T0	T3	NoRel	true	buys	builds
+Relation	T0	T8	NoRel	true	buys	build
+Relation	T10	T14	NoRel	true	show	build
+Relation	T10	T16	NoRel	true	show	enters
+Relation	T11	T14	NoRel	true	fails	build
+Relation	T11	T17	NoRel	true	fails	happy
+Relation	T11	T9	NoRel	true	fails	battle
+Relation	T12	T8	NoRel	true	construct	build
+Relation	T13	T1	NoRel	true	decides	refuses
+Relation	T13	T6	NoRel	true	decides	wanting
+Relation	T14	T1	NoRel	true	build	refuses
+Relation	T15	T10	NoRel	true	ruse	show
+Relation	T15	T12	NoRel	true	ruse	construct
+Relation	T15	T13	NoRel	true	ruse	decides
+Relation	T15	T18	NoRel	true	ruse	looks great
+Relation	T15	T20	NoRel	true	ruse	Unaware
+Relation	T16	T18	NoRel	true	enters	looks great
+Relation	T17	T10	NoRel	true	happy	show
+Relation	T17	T11	NoRel	true	happy	fails
+Relation	T17	T5	NoRel	true	happy	moons
+Relation	T19	T0	NoRel	true	falls apart	buys
+Relation	T19	T13	NoRel	true	falls apart	decides
+Relation	T19	T8	NoRel	true	falls apart	build
+Relation	T2	T13	NoRel	true	pay	decides
+Relation	T2	T17	NoRel	true	pay	happy
+Relation	T2	T3	NoRel	true	pay	builds
+Relation	T2	T7	NoRel	true	pay	tries
+Relation	T20	T16	NoRel	true	Unaware	enters
+Relation	T3	T11	NoRel	true	builds	fails
+Relation	T3	T5	NoRel	true	builds	moons
+Relation	T4	T10	NoRel	true	works perfectly	show
+Relation	T4	T17	NoRel	true	works perfectly	happy
+Relation	T4	T9	NoRel	true	works perfectly	battle
+Relation	T5	T18	NoRel	true	moons	looks great
+Relation	T6	T1	NoRel	true	wanting	refuses
+Relation	T6	T8	NoRel	true	wanting	build
+Relation	T7	T16	NoRel	true	tries	enters
+Relation	T8	T13	NoRel	true	build	decides
+Relation	T9	T1	NoRel	true	battle	refuses

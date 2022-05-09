@@ -1,0 +1,65 @@
+Text	Hobart Ward blev uddannet ved Trinity College og gik som 18 årig ind i 7. Infanteriregiment .	Han blev forfremmet flere gange i løbet af de næste fire år , og fik rang af chefsergent .	Ward kom mange gang i kamp under den Mexicansk-amerikanske krig , hvor han deltog i kampene under belejringen af Fort Brown og blev såret i Slaget ved Monterrey .	Han blev rask i tide til at deltage i Belejringen af Veracruz .	Ward vendte hjem til sin fødeby New York og gjorde tjeneste som assisterende leder af indkøbet af provisioner fra 1851 til 1855 , hvor han blev leder af indkøbet af provisioner , en post han beholdt indtil 1859 .
+Event	T0	uddannet	EVENT	17
+Event	T1	gik	EVENT	49
+Event	T2	forfremmet	EVENT	103
+Event	T3	kom	EVENT	190
+Event	T4	kamp	EVENT	207
+Event	T5	krig	EVENT	244
+Event	T6	deltog	EVENT	260
+Event	T7	kampene	EVENT	269
+Event	T8	belejringen	EVENT	283
+Event	T9	såret	EVENT	317
+Event	T10	Slaget	EVENT	325
+Event	T11	rask	EVENT	357
+Event	T12	deltage	EVENT	376
+Event	T13	vendte	EVENT	417
+Event	T14	indkøbet	EVENT	498
+Event	T15	indkøbet	EVENT	565
+Event	T16	beholdt	EVENT	603
+Event	T17	fik	EVENT	159
+Event	T18	gjorde	EVENT	456
+Relation	T2	T17	CauseEffect	true	forfremmet	fik
+Relation	T17	T2	EffectCause	true	fik	forfremmet
+Relation	T6	T9	CauseEffect	true	deltog	såret
+Relation	T9	T6	EffectCause	true	såret	deltog
+Relation	T5	T9	CauseEffect	true	krig	såret
+Relation	T9	T5	EffectCause	true	såret	krig
+Relation	T0	T14	NoRel	true	uddannet	indkøbet
+Relation	T0	T15	NoRel	true	uddannet	indkøbet
+Relation	T0	T2	NoRel	true	uddannet	forfremmet
+Relation	T1	T11	NoRel	true	gik	rask
+Relation	T1	T18	NoRel	true	gik	gjorde
+Relation	T10	T17	NoRel	true	Slaget	fik
+Relation	T10	T6	NoRel	true	Slaget	deltog
+Relation	T12	T0	NoRel	true	deltage	uddannet
+Relation	T12	T18	NoRel	true	deltage	gjorde
+Relation	T13	T10	NoRel	true	vendte	Slaget
+Relation	T13	T11	NoRel	true	vendte	rask
+Relation	T13	T5	NoRel	true	vendte	krig
+Relation	T13	T7	NoRel	true	vendte	kampene
+Relation	T14	T11	NoRel	true	indkøbet	rask
+Relation	T14	T16	NoRel	true	indkøbet	beholdt
+Relation	T15	T8	NoRel	true	indkøbet	belejringen
+Relation	T16	T15	NoRel	true	beholdt	indkøbet
+Relation	T16	T2	NoRel	true	beholdt	forfremmet
+Relation	T18	T10	NoRel	true	gjorde	Slaget
+Relation	T18	T12	NoRel	true	gjorde	deltage
+Relation	T18	T2	NoRel	true	gjorde	forfremmet
+Relation	T18	T6	NoRel	true	gjorde	deltog
+Relation	T3	T17	NoRel	true	kom	fik
+Relation	T4	T17	NoRel	true	kamp	fik
+Relation	T4	T18	NoRel	true	kamp	gjorde
+Relation	T4	T7	NoRel	true	kamp	kampene
+Relation	T5	T3	NoRel	true	krig	kom
+Relation	T5	T7	NoRel	true	krig	kampene
+Relation	T6	T16	NoRel	true	deltog	beholdt
+Relation	T7	T0	NoRel	true	kampene	uddannet
+Relation	T7	T10	NoRel	true	kampene	Slaget
+Relation	T7	T13	NoRel	true	kampene	vendte
+Relation	T7	T17	NoRel	true	kampene	fik
+Relation	T7	T4	NoRel	true	kampene	kamp
+Relation	T8	T0	NoRel	true	belejringen	uddannet
+Relation	T8	T12	NoRel	true	belejringen	deltage
+Relation	T8	T18	NoRel	true	belejringen	gjorde
+Relation	T8	T2	NoRel	true	belejringen	forfremmet
+Relation	T8	T4	NoRel	true	belejringen	kamp

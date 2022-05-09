@@ -1,0 +1,44 @@
+Text	El aeropuerto fue cerrado inmediatamente después del accidente aproximadamente a las 11:00 a._m .	Las pistas se reabrieron a partir de las 2:30 pm .	La pista 13 estuvo cerrada hasta las 10:30 a._m. de la mañana siguiente cuando los servicios de emergencia despejaron el lugar del accidente y la aeronave fue trasladada a un hangar .	El 6 de marzo de 2015 , la NTSB informó que la grabadora de voz de la cabina de pilotaje se descargó con éxito , contenía dos horas de grabaciones de buena calidad y capturó todo el vuelo .	Además , se examinó el registrador de datos de vuelo ( un registrador basado en cinta de 25 horas ) y se encontró que había capturado todo el vuelo y aproximadamente 50 parámetros de datos , incluyendo velocidad aérea , altitud , rumbo e información sobre motores y controles de vuelo , entre otros . datos .
+Event	T0	cerrado	EVENT	18
+Event	T1	accidente	EVENT	53
+Event	T2	reabrieron	EVENT	112
+Event	T4	despejaron	EVENT	256
+Event	T5	accidente	EVENT	280
+Event	T6	trasladada	EVENT	308
+Event	T7	informó	EVENT	365
+Event	T8	pilotaje	EVENT	413
+Event	T9	descargó	EVENT	425
+Event	T10	contenía	EVENT	446
+Event	T11	grabaciones	EVENT	468
+Event	T12	capturó	EVENT	499
+Event	T13	vuelo	EVENT	515
+Event	T14	examinó	EVENT	535
+Event	T15	encontró	EVENT	628
+Event	T16	capturado	EVENT	647
+Event	T17	vuelo	EVENT	665
+Event	T18	controles	EVENT	789
+Relation	T13	T11	SuperSub	true	vuelo	grabaciones
+Relation	T11	T13	SubSuper	true	grabaciones	vuelo
+Relation	T13	T14	SuperSub	true	vuelo	examinó
+Relation	T14	T13	SubSuper	true	examinó	vuelo
+Relation	T0	T12	NoRel	true	cerrado	capturó
+Relation	T0	T5	NoRel	true	cerrado	accidente
+Relation	T10	T0	NoRel	true	contenía	cerrado
+Relation	T12	T10	NoRel	true	capturó	contenía
+Relation	T12	T11	NoRel	true	capturó	grabaciones
+Relation	T12	T8	NoRel	true	capturó	pilotaje
+Relation	T13	T16	NoRel	true	vuelo	capturado
+Relation	T13	T18	NoRel	true	vuelo	controles
+Relation	T13	T7	NoRel	true	vuelo	informó
+Relation	T14	T9	NoRel	true	examinó	descargó
+Relation	T17	T8	NoRel	true	vuelo	pilotaje
+Relation	T2	T14	NoRel	true	reabrieron	examinó
+Relation	T2	T8	NoRel	true	reabrieron	pilotaje
+Relation	T4	T9	NoRel	true	despejaron	descargó
+Relation	T5	T13	NoRel	true	accidente	vuelo
+Relation	T5	T18	NoRel	true	accidente	controles
+Relation	T5	T4	NoRel	true	accidente	despejaron
+Relation	T6	T8	NoRel	true	trasladada	pilotaje
+Relation	T8	T11	NoRel	true	pilotaje	grabaciones
+Relation	T8	T17	NoRel	true	pilotaje	vuelo
+Relation	T8	T18	NoRel	true	pilotaje	controles

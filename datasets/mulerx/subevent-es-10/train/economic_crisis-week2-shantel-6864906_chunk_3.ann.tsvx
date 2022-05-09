@@ -1,0 +1,42 @@
+Text	Hubo 18 detenidos .	Por otro lado , se recogieron declaraciones de algunos de los presentes en la calle Carretas y otras aledañas después de la manifestación , en las que denunciaban abuso de autoridad por parte de la policía .	Esa misma noche comenzó en la Puerta del Sol una acampada espontánea de indignados que optaron por seguir protestando al margen de ¡ Democracia Real YA ! .	En Granada acudieron unos 5_000 manifestantes .	Hubo cruce de insultos entre algunos manifestantes y miembros de la cofradía de la Virgen del Rosario , cuya procesión coincidió con el recorrido de la manifestación al retrasarse esta última más de lo esperado .
+Event	T0	detenidos	EVENT	8
+Event	T1	declaraciones	EVENT	50
+Event	T10	insultos	EVENT	446
+Event	T11	coincidió	EVENT	551
+Event	T12	recorrido	EVENT	568
+Event	T13	manifestación	EVENT	584
+Event	T14	retrasarse	EVENT	601
+Event	T2	manifestación	EVENT	144
+Event	T3	abuso	EVENT	183
+Event	T4	comenzó	EVENT	244
+Event	T5	acampada	EVENT	277
+Event	T6	optaron	EVENT	315
+Event	T7	protestando	EVENT	334
+Event	T8	acudieron	EVENT	395
+Event	T9	cruce	EVENT	437
+Relation	T2	T1	SuperSub	true	manifestación	declaraciones
+Relation	T1	T2	SubSuper	true	declaraciones	manifestación
+Relation	T2	T5	SuperSub	true	manifestación	acampada
+Relation	T5	T2	SubSuper	true	acampada	manifestación
+Relation	T2	T10	SuperSub	true	manifestación	insultos
+Relation	T10	T2	SubSuper	true	insultos	manifestación
+Relation	T0	T12	NoRel	true	detenidos	recorrido
+Relation	T0	T13	NoRel	true	detenidos	manifestación
+Relation	T1	T14	NoRel	true	declaraciones	retrasarse
+Relation	T1	T5	NoRel	true	declaraciones	acampada
+Relation	T11	T1	NoRel	true	coincidió	declaraciones
+Relation	T11	T4	NoRel	true	coincidió	comenzó
+Relation	T12	T2	NoRel	true	recorrido	manifestación
+Relation	T12	T8	NoRel	true	recorrido	acudieron
+Relation	T13	T4	NoRel	true	manifestación	comenzó
+Relation	T14	T11	NoRel	true	retrasarse	coincidió
+Relation	T14	T12	NoRel	true	retrasarse	recorrido
+Relation	T3	T11	NoRel	true	abuso	coincidió
+Relation	T3	T6	NoRel	true	abuso	optaron
+Relation	T4	T11	NoRel	true	comenzó	coincidió
+Relation	T4	T9	NoRel	true	comenzó	cruce
+Relation	T5	T8	NoRel	true	acampada	acudieron
+Relation	T6	T0	NoRel	true	optaron	detenidos
+Relation	T7	T3	NoRel	true	protestando	abuso
+Relation	T8	T12	NoRel	true	acudieron	recorrido
+Relation	T8	T13	NoRel	true	acudieron	manifestación

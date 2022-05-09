@@ -1,0 +1,17 @@
+Text	Fakat 1924 yılının Mart ayında kendisinin de ilkokul öğretmeni olan _ Walther Kadow _ örgütün bütün gizli sırlarını açıklamıştı ve öldürülmesi gerekiyordu .	Bormann ve adamları gereken infazı gerçekleştirdi .	Olayın farkına varan polis tarafından tutuklandı ve bir yıl hapis cezası verildi .	Hapishaneden çıktıktan sonra NSDAP'ye katıldı ve üç yıl içerisinde önce Türingiya bölgesi basın müdürü , daha sonra da idari menajer oldu .	1928 ve 1930 yılları arasında SA yüksek komuta merkezinde görev aldı .
+Event	T0	açıklamıştı	EVENT	116
+Event	T1	öldürülmesi	EVENT	131
+Event	T3	Olayın	EVENT	209
+Event	T4	tutuklandı	EVENT	247
+Event	T5	verildi	EVENT	282
+Event	T6	katıldı	EVENT	330
+Event	T2	infazı	EVENT	185
+Event	T8	gerekiyordu	EVENT	143
+Event	T9	oldu	EVENT	425
+Event	T7	görev aldı	EVENT	490
+Relation	T3	T2	SuperSub	true	Olayın	infazı
+Relation	T2	T3	SubSuper	true	infazı	Olayın
+Relation	T4	T0	NoRel	true	tutuklandı	açıklamıştı
+Relation	T4	T3	NoRel	true	tutuklandı	Olayın
+Relation	T5	T7	NoRel	true	verildi	görev aldı
+Relation	T6	T7	NoRel	true	katıldı	görev aldı

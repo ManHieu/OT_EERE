@@ -1,0 +1,53 @@
+Text	Ege Denizi'nde sık sık orta ile büyük depremler yaşanmaktadır ve 30 Ekim 2020 depreminin merkez_üssünün 250 km içindeki bölge , son 100 yıl içinde 6 M _ ( w )’den büyük başka 29 depreme ev sahipliği yapmıştır .	Bölgedeki aletsel olarak belgelenmiş olan en büyük deprem , Temmuz 1956'da Nakşa ve Santorini adaları arasında ve 30 Ekim 2020 tarihinde gerçekleşen depreminin güneybatısında meydana gelen 7,7 M _ ( w ) büyüklüğündeki depremdir .	1956 depremi , 20. yüzyıl Yunanistan'ındaki en büyük depremdir .	Bu 1956 depreminin bir sonucu olarak 13 dakika sonra 7,2 M _ ( w ) büyüklüğünde artçı bir şokla beraber büyük bir tsunami , Amorgos ve yakındaki Santorini'de 53 ölüm , 100 yaralanma , büyük çapta hasarlar meydana gelmiştir .	Daha yakın zamanlarda aynı bölge üzerinde daha önceden 6,9 M _ ( w )'lık 2014 Ege Denizi depremi ve 6,6 M _ ( w )'lık 2017 Ege Denizi depremi meydana gelmişti .
+Event	T0	yaşanmaktadır	EVENT	48
+Event	T1	yapmıştır	EVENT	199
+Event	T2	belgelenmiş	EVENT	236
+Event	T3	deprem	EVENT	262
+Event	T4	depreminin	EVENT	360
+Event	T5	depremdir	EVENT	429
+Event	T6	depremi	EVENT	446
+Event	T7	depremdir	EVENT	494
+Event	T8	depreminin	EVENT	514
+Event	T9	şokla	EVENT	596
+Event	T10	tsunami	EVENT	620
+Event	T11	ölüm	EVENT	667
+Event	T12	yaralanma	EVENT	678
+Event	T13	gelmiştir	EVENT	719
+Event	T14	depremi	EVENT	820
+Event	T15	gelmişti	EVENT	881
+Event	T16	gelen	EVENT	394
+Event	T17	hasarlar	EVENT	702
+Event	T18	depremi	EVENT	865
+Relation	T0	T1	NoRel	true	yaşanmaktadır	yapmıştır
+Relation	T0	T17	NoRel	true	yaşanmaktadır	hasarlar
+Relation	T0	T8	NoRel	true	yaşanmaktadır	depreminin
+Relation	T1	T16	NoRel	true	yapmıştır	gelen
+Relation	T10	T14	NoRel	true	tsunami	depremi
+Relation	T10	T8	NoRel	true	tsunami	depreminin
+Relation	T11	T1	NoRel	true	ölüm	yapmıştır
+Relation	T11	T17	NoRel	true	ölüm	hasarlar
+Relation	T11	T8	NoRel	true	ölüm	depreminin
+Relation	T12	T11	NoRel	true	yaralanma	ölüm
+Relation	T12	T15	NoRel	true	yaralanma	gelmişti
+Relation	T12	T2	NoRel	true	yaralanma	belgelenmiş
+Relation	T12	T4	NoRel	true	yaralanma	depreminin
+Relation	T12	T7	NoRel	true	yaralanma	depremdir
+Relation	T13	T18	NoRel	true	gelmiştir	depremi
+Relation	T13	T2	NoRel	true	gelmiştir	belgelenmiş
+Relation	T14	T17	NoRel	true	depremi	hasarlar
+Relation	T14	T2	NoRel	true	depremi	belgelenmiş
+Relation	T15	T5	NoRel	true	gelmişti	depremdir
+Relation	T16	T17	NoRel	true	gelen	hasarlar
+Relation	T2	T1	NoRel	true	belgelenmiş	yapmıştır
+Relation	T3	T12	NoRel	true	deprem	yaralanma
+Relation	T3	T7	NoRel	true	deprem	depremdir
+Relation	T4	T0	NoRel	true	depreminin	yaşanmaktadır
+Relation	T4	T16	NoRel	true	depreminin	gelen
+Relation	T4	T5	NoRel	true	depreminin	depremdir
+Relation	T5	T1	NoRel	true	depremdir	yapmıştır
+Relation	T5	T14	NoRel	true	depremdir	depremi
+Relation	T7	T1	NoRel	true	depremdir	yapmıştır
+Relation	T7	T15	NoRel	true	depremdir	gelmişti
+Relation	T8	T11	NoRel	true	depreminin	ölüm
+Relation	T8	T12	NoRel	true	depreminin	yaralanma
+Relation	T9	T7	NoRel	true	şokla	depremdir

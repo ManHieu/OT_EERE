@@ -1,0 +1,34 @@
+Text	A causa de esto muchas empresas y pymes españolas tuvieron que recurrir a ERTE para suspender temporalmente el empleo de sus trabajadores .	El anuncio vino seguido de un aumento significativo en la cantidad de casos pasando el 14 de marzo de 3146 a 5232 , aumentando en un 66% .	Según el presidente del Gobierno de España , Pedro Sánchez , esta « decisión extraordinaria » fue necesaria al tratarse de un tema de salud y de una crisis social y económica .	Parte de la población española tuvo dificultad para acatar las medidas de dicha cuarentena , habiéndose levantado a 2 de mayo cerca de por saltarse las medidas de confinamiento .	Entre ese día y el 7 de junio se han propuesto otras y han sido detenidas unas 5000 personas por desobediencia grave a los agentes de la autoridad .
+Event	T0	recurrir	EVENT	63
+Event	T1	suspender	EVENT	84
+Event	T2	seguido	EVENT	156
+Event	T3	pasando	EVENT	216
+Event	T4	aumentando	EVENT	256
+Event	T5	crisis	EVENT	428
+Event	T6	dificultad	EVENT	492
+Event	T7	acatar	EVENT	508
+Event	T8	medidas	EVENT	519
+Event	T9	levantado	EVENT	560
+Event	T10	saltarse	EVENT	595
+Event	T11	medidas	EVENT	608
+Event	T12	confinamiento	EVENT	619
+Event	T13	detenidas	EVENT	699
+Event	T14	desobediencia	EVENT	732
+Relation	T14	T13	CauseEffect	true	desobediencia	detenidas
+Relation	T13	T14	EffectCause	true	detenidas	desobediencia
+Relation	T0	T11	NoRel	true	recurrir	medidas
+Relation	T1	T0	NoRel	true	suspender	recurrir
+Relation	T1	T5	NoRel	true	suspender	crisis
+Relation	T10	T6	NoRel	true	saltarse	dificultad
+Relation	T13	T6	NoRel	true	detenidas	dificultad
+Relation	T2	T0	NoRel	true	seguido	recurrir
+Relation	T3	T14	NoRel	true	pasando	desobediencia
+Relation	T3	T4	NoRel	true	pasando	aumentando
+Relation	T4	T0	NoRel	true	aumentando	recurrir
+Relation	T4	T10	NoRel	true	aumentando	saltarse
+Relation	T4	T12	NoRel	true	aumentando	confinamiento
+Relation	T5	T1	NoRel	true	crisis	suspender
+Relation	T7	T14	NoRel	true	acatar	desobediencia
+Relation	T7	T2	NoRel	true	acatar	seguido
+Relation	T8	T12	NoRel	true	medidas	confinamiento
+Relation	T9	T13	NoRel	true	levantado	detenidas

@@ -1,0 +1,20 @@
+Text	Se informaron 48 heridos inmediatamente después del incidente , aunque el total se actualizó posteriormente a 84 .	Los pasajeros heridos , tres de ellos en estado crítico , fueron llevados a varios hospitales en Ankara .	Un pasajero herido murió después .	Los fiscales completaron la investigación inicial tomando las declaraciones de los tres funcionarios ferroviarios detenidos .	El despachador declaró que " ordenó al conmutador que pusiera el tren de alta velocidad en la vía H1 ya que la locomotora estaba en la vía H2 " .
+Event	T0	informaron	EVENT	3
+Event	T1	heridos	EVENT	17
+Event	T2	incidente	EVENT	52
+Event	T3	actualizó	EVENT	83
+Event	T4	heridos	EVENT	129
+Event	T5	completaron	EVENT	269
+Event	T6	investigación	EVENT	284
+Event	T7	tomando	EVENT	306
+Event	T8	declaraciones	EVENT	318
+Event	T9	detenidos	EVENT	370
+Event	T10	declaró	EVENT	397
+Event	T11	pusiera	EVENT	436
+Relation	T0	T8	NoRel	true	informaron	declaraciones
+Relation	T1	T4	NoRel	true	heridos	heridos
+Relation	T10	T6	NoRel	true	declaró	investigación
+Relation	T5	T9	NoRel	true	completaron	detenidos
+Relation	T6	T4	NoRel	true	investigación	heridos
+Relation	T8	T1	NoRel	true	declaraciones	heridos
+Relation	T9	T5	NoRel	true	detenidos	completaron

@@ -1,0 +1,65 @@
+Text	De kom tidlig ind i samarbejdet med Adolf Hitler og nazistene og blev en forudsætning for den tyske oprustning i mellemkrigstiden .	Under første verdenskrig kaldte de tyske soldater noget respektløst den store kanon med 42 cm kaliber for Tykke Bertha ( tysk : _ Dicke Bertha _ ) , efter Gustav Krupps hustru Bertha Krupp von Bohlen und Halbach , mens jernbanekanonerne under anden verdenskrig blev kaldt _ Gustav _ efter Gustav Krupp selv .	Efter anden verdenskrig blev der rejst krigsforbrydersag i Nürnbergprocessen mod koncernen med anklager om forbrydelser mod menneskeheden , blandt andet på grund af brugen af slavearbejdere .	Gustav Krupp blev anset for at være for dement til at kunne dømmes , mens Alfried Krupp blev dømt til 12 års fængsel .	Han blev løsladt efter tre år .
+Event	T0	kom	EVENT	3
+Event	T1	samarbejdet	EVENT	20
+Event	T2	oprustning	EVENT	100
+Event	T3	kaldte	EVENT	157
+Event	T4	kaldt	EVENT	398
+Event	T5	krigsforbrydersag	EVENT	480
+Event	T6	anklager	EVENT	536
+Event	T7	forbrydelser	EVENT	548
+Event	T8	brugen	EVENT	606
+Event	T9	anset	EVENT	651
+Event	T10	dømmes	EVENT	693
+Event	T11	dømt	EVENT	726
+Event	T12	løsladt	EVENT	761
+Event	T13	forudsætning	EVENT	73
+Event	T14	mellemkrigstiden	EVENT	113
+Event	T15	første verdenskrig	EVENT	138
+Event	T16	anden verdenskrig	EVENT	375
+Event	T17	anden verdenskrig	EVENT	447
+Event	T18	slavearbejdere	EVENT	616
+Event	T19	dement	EVENT	673
+Relation	T18	T6	CauseEffect	true	slavearbejdere	anklager
+Relation	T6	T18	EffectCause	true	anklager	slavearbejdere
+Relation	T0	T19	NoRel	true	kom	dement
+Relation	T1	T11	NoRel	true	samarbejdet	dømt
+Relation	T1	T6	NoRel	true	samarbejdet	anklager
+Relation	T10	T0	NoRel	true	dømmes	kom
+Relation	T10	T13	NoRel	true	dømmes	forudsætning
+Relation	T10	T7	NoRel	true	dømmes	forbrydelser
+Relation	T11	T6	NoRel	true	dømt	anklager
+Relation	T12	T11	NoRel	true	løsladt	dømt
+Relation	T12	T3	NoRel	true	løsladt	kaldte
+Relation	T13	T1	NoRel	true	forudsætning	samarbejdet
+Relation	T13	T5	NoRel	true	forudsætning	krigsforbrydersag
+Relation	T13	T6	NoRel	true	forudsætning	anklager
+Relation	T13	T9	NoRel	true	forudsætning	anset
+Relation	T14	T11	NoRel	true	mellemkrigstiden	dømt
+Relation	T14	T15	NoRel	true	mellemkrigstiden	første verdenskrig
+Relation	T14	T9	NoRel	true	mellemkrigstiden	anset
+Relation	T15	T12	NoRel	true	første verdenskrig	løsladt
+Relation	T15	T14	NoRel	true	første verdenskrig	mellemkrigstiden
+Relation	T15	T18	NoRel	true	første verdenskrig	slavearbejdere
+Relation	T16	T0	NoRel	true	anden verdenskrig	kom
+Relation	T16	T5	NoRel	true	anden verdenskrig	krigsforbrydersag
+Relation	T17	T14	NoRel	true	anden verdenskrig	mellemkrigstiden
+Relation	T17	T16	NoRel	true	anden verdenskrig	anden verdenskrig
+Relation	T17	T8	NoRel	true	anden verdenskrig	brugen
+Relation	T18	T1	NoRel	true	slavearbejdere	samarbejdet
+Relation	T18	T14	NoRel	true	slavearbejdere	mellemkrigstiden
+Relation	T19	T13	NoRel	true	dement	forudsætning
+Relation	T19	T2	NoRel	true	dement	oprustning
+Relation	T2	T6	NoRel	true	oprustning	anklager
+Relation	T3	T11	NoRel	true	kaldte	dømt
+Relation	T3	T6	NoRel	true	kaldte	anklager
+Relation	T4	T13	NoRel	true	kaldt	forudsætning
+Relation	T5	T10	NoRel	true	krigsforbrydersag	dømmes
+Relation	T5	T16	NoRel	true	krigsforbrydersag	anden verdenskrig
+Relation	T5	T7	NoRel	true	krigsforbrydersag	forbrydelser
+Relation	T7	T3	NoRel	true	forbrydelser	kaldte
+Relation	T8	T11	NoRel	true	brugen	dømt
+Relation	T8	T2	NoRel	true	brugen	oprustning
+Relation	T8	T4	NoRel	true	brugen	kaldt
+Relation	T9	T1	NoRel	true	anset	samarbejdet
+Relation	T9	T13	NoRel	true	anset	forudsætning
+Relation	T9	T15	NoRel	true	anset	første verdenskrig

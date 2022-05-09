@@ -1,0 +1,44 @@
+Text	Después de notar lo que el piloto describió más tarde como una " falla catastrófica del motor " mucho antes de la velocidad de despegue , la tripulación de vuelo abortó el despegue usando los frenos de la aeronave y ordenó la evacuación de la aeronave .	Los 170 pasajeros y la tripulación escaparon .	Diecinueve personas sufrieron heridas leves y una persona sufrió heridas graves .	Se cree que la aeronave alcanzó una velocidad de aproximadamente 90 millas por hora ( 78 kN ; 140 km_/_h ) cuando se tomó la decisión de abortar ; muy por debajo de la velocidad de decisión de despegue de la aeronave , que habría sido de al menos 139 millas por hora ( 121 kN ; 224 km_/_h ) .	Los servicios de emergencia del aeropuerto extinguieron el fuego en cinco minutos del la llamada de Mayday .
+Event	T0	notar	EVENT	11
+Event	T1	describió	EVENT	34
+Event	T2	catastrófica	EVENT	71
+Event	T3	despegue	EVENT	127
+Event	T4	abortó	EVENT	162
+Event	T5	ordenó	EVENT	216
+Event	T6	evacuación	EVENT	226
+Event	T7	escaparon	EVENT	289
+Event	T8	cree	EVENT	386
+Event	T9	alcanzó	EVENT	407
+Event	T10	tomó	EVENT	500
+Event	T11	decisión	EVENT	508
+Event	T12	abortar	EVENT	520
+Event	T13	decisión	EVENT	564
+Event	T14	despegue	EVENT	576
+Event	T15	extinguieron	EVENT	719
+Event	T16	fuego	EVENT	735
+Event	T17	llamada	EVENT	765
+Relation	T5	T7	CauseEffect	true	ordenó	escaparon
+Relation	T7	T5	EffectCause	true	escaparon	ordenó
+Relation	T1	T15	NoRel	true	describió	extinguieron
+Relation	T1	T5	NoRel	true	describió	ordenó
+Relation	T10	T9	NoRel	true	tomó	alcanzó
+Relation	T11	T0	NoRel	true	decisión	notar
+Relation	T12	T11	NoRel	true	abortar	decisión
+Relation	T14	T1	NoRel	true	despegue	describió
+Relation	T15	T13	NoRel	true	extinguieron	decisión
+Relation	T15	T17	NoRel	true	extinguieron	llamada
+Relation	T15	T6	NoRel	true	extinguieron	evacuación
+Relation	T16	T1	NoRel	true	fuego	describió
+Relation	T16	T8	NoRel	true	fuego	cree
+Relation	T2	T0	NoRel	true	catastrófica	notar
+Relation	T2	T14	NoRel	true	catastrófica	despegue
+Relation	T3	T8	NoRel	true	despegue	cree
+Relation	T4	T8	NoRel	true	abortó	cree
+Relation	T5	T15	NoRel	true	ordenó	extinguieron
+Relation	T6	T15	NoRel	true	evacuación	extinguieron
+Relation	T6	T16	NoRel	true	evacuación	fuego
+Relation	T6	T17	NoRel	true	evacuación	llamada
+Relation	T8	T3	NoRel	true	cree	despegue
+Relation	T8	T5	NoRel	true	cree	ordenó
+Relation	T8	T9	NoRel	true	cree	alcanzó
+Relation	T9	T14	NoRel	true	alcanzó	despegue

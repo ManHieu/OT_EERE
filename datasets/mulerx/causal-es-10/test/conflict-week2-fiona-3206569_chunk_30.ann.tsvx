@@ -1,0 +1,33 @@
+Text	Tres de las ocho LST ( , y _ LST 973 _ ) recibieron algunos impactos del fuego de morteros y ametralladoras , los que mataron a un marinero e hirieron algunos pocos más .	Los LST completaron la descarga y abandonaron la playa con la marea alta a principios del 16 de septiembre .	Después de neutralizar las defensas norcoreanas en Inchon en la noche del 15 de septiembre , ellos abrieron la calzada elevada a Wolmi-do , permitiendo que el 3.er Batallón del 5. o de Infantería de Marina y los tanques de la Playa Verde entraran a la batalla de Inchon .	A principios de la mañana del 16 de septiembre , el 5. o de Infantería de Marina ( las fuerzas en la Playa Roja y la Playa Verde ) marcharían a través de la ciudad en Inchon , tomándola durante la tarde .	Bajo el mando del entonces coronel Lewis Burwell " Chesty " Puller , el 1.er Regimiento de Marines desembarcó en la Playa Azul que estaba significativamente más al sur de las otras dos playas y llegó a tierra firme al final .
+Event	T0	recibieron	EVENT	41
+Event	T1	impactos	EVENT	60
+Event	T10	entraran	EVENT	518
+Event	T11	batalla	EVENT	532
+Event	T12	marcharían	EVENT	683
+Event	T13	desembarcó	EVENT	856
+Event	T3	mataron	EVENT	118
+Event	T4	hirieron	EVENT	142
+Event	T5	completaron	EVENT	179
+Event	T6	descarga	EVENT	194
+Event	T7	abandonaron	EVENT	205
+Event	T8	neutralizar	EVENT	291
+Event	T9	permitiendo	EVENT	420
+Relation	T1	T3	CauseEffect	true	impactos	mataron
+Relation	T3	T1	EffectCause	true	mataron	impactos
+Relation	T1	T4	CauseEffect	true	impactos	hirieron
+Relation	T4	T1	EffectCause	true	hirieron	impactos
+Relation	T9	T10	CauseEffect	true	permitiendo	entraran
+Relation	T10	T9	EffectCause	true	entraran	permitiendo
+Relation	T5	T7	CauseEffect	true	completaron	abandonaron
+Relation	T7	T5	EffectCause	true	abandonaron	completaron
+Relation	T0	T1	NoRel	true	recibieron	impactos
+Relation	T0	T10	NoRel	true	recibieron	entraran
+Relation	T0	T11	NoRel	true	recibieron	batalla
+Relation	T10	T4	NoRel	true	entraran	hirieron
+Relation	T10	T8	NoRel	true	entraran	neutralizar
+Relation	T3	T13	NoRel	true	mataron	desembarcó
+Relation	T4	T12	NoRel	true	hirieron	marcharían
+Relation	T5	T3	NoRel	true	completaron	mataron
+Relation	T7	T3	NoRel	true	abandonaron	mataron
+Relation	T8	T4	NoRel	true	neutralizar	hirieron
+Relation	T9	T1	NoRel	true	permitiendo	impactos

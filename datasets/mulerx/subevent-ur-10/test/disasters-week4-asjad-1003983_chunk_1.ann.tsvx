@@ -1,0 +1,19 @@
+Text	ضلعی انتظامیہ نے ہدایات جاری کی ہیں کہ مقامی لوگ رات کے وقت گھروں سے باہر نہ نکلیں ، ایمبولینس سروسز ، سیکیورٹی گاڑیوں اور فائر فائٹرز کو الرٹ رہنے کو کہا گیا ہے ۔	-	وزیراعظم عمران خان نے سانحہ مری کی تحقیقات کا حکم دیتے ہوئے کہا کہ لوگوں کی بڑی تعداد موسم کا تعین کیے بغیر مری پہنچ گئی ۔	-	وفاقی وزیر داخلہ شیخ رشید احمد ریسکیو آپریشن کی نگرانی کے لیے مری پہنچ گئے ۔
+Event	T0	تحقیقات	EVENT	201
+Event	T1	کہا	EVENT	226
+Event	T2	تعین	EVENT	260
+Event	T3	آپریشن	EVENT	329
+Event	T4	نگرانی	EVENT	339
+Event	T5	گئے	EVENT	362
+Relation	T0	T1	SuperSub	true	تحقیقات	کہا
+Relation	T1	T0	SubSuper	true	کہا	تحقیقات
+Relation	T0	T2	SuperSub	true	تحقیقات	تعین
+Relation	T2	T0	SubSuper	true	تعین	تحقیقات
+Relation	T3	T4	SuperSub	true	آپریشن	نگرانی
+Relation	T4	T3	SubSuper	true	نگرانی	آپریشن
+Relation	T3	T5	SuperSub	true	آپریشن	گئے
+Relation	T5	T3	SubSuper	true	گئے	آپریشن
+Relation	T0	T4	NoRel	true	تحقیقات	نگرانی
+Relation	T1	T2	NoRel	true	کہا	تعین
+Relation	T5	T0	NoRel	true	گئے	تحقیقات
+Relation	T5	T2	NoRel	true	گئے	تعین

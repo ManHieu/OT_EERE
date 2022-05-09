@@ -1,0 +1,36 @@
+Text	2017 İSTANBUL GECE KULÜBÜ SALDIRISI ya da REINA KATLIAMI , 1 Ocak 2017'de yerel saatle 01: 15'te İstanbul'un Beşiktaş ilçesindeki Ortaköy semtinde bulunan Reina adlı gece kulübüne yeni yıl kutlamaları sırasında düzenlenen silahlı saldırı .	Saldırı sonucunda 39 kişi hayatını kaybetti , 70 kişi ise yaralandı .	Irak ve Şam İslam Devleti ( IŞİD ) bir gün sonra saldırının sorumluluğunu üstlendiğini açıkladı .	Saldırgan ve bazı örgüt militanları 17 Ocak 2017 yerel saatle 00.15'te İstanbul Esenyurt'ta bir sitede güvenlik güçleri tarafından yapılan operasyonla ele geçirildi .	Haziran 2015 Türkiye genel seçimlerinden iki gün önce Halkların Demokratik Partisi'nin bir mitingine düzenlenen saldırıyla başlayan Türkiye'deki silahlı veya bombalı saldırılar bu tarihten sonra hemen hemen her aya yayılarak gittikçe arttı .
+Event	T0	SALDIRISI	EVENT	26
+Event	T2	kutlamaları	EVENT	189
+Event	T3	saldırı	EVENT	230
+Event	T4	kaybetti	EVENT	275
+Event	T5	yaralandı	EVENT	298
+Event	T6	açıkladı	EVENT	397
+Event	T7	geçirildi	EVENT	563
+Event	T8	başlayan	EVENT	698
+Event	T9	saldırılar	EVENT	741
+Event	T10	arttı	EVENT	809
+Event	T11	REINA KATLIAMI	EVENT	42
+Event	T1	Saldırı	EVENT	240
+Event	T12	operasyonla	EVENT	547
+Relation	T11	T4	SuperSub	true	REINA KATLIAMI	kaybetti
+Relation	T4	T11	SubSuper	true	kaybetti	REINA KATLIAMI
+Relation	T11	T5	SuperSub	true	REINA KATLIAMI	yaralandı
+Relation	T5	T11	SubSuper	true	yaralandı	REINA KATLIAMI
+Relation	T11	T6	SuperSub	true	REINA KATLIAMI	açıkladı
+Relation	T6	T11	SubSuper	true	açıkladı	REINA KATLIAMI
+Relation	T11	T12	SuperSub	true	REINA KATLIAMI	operasyonla
+Relation	T12	T11	SubSuper	true	operasyonla	REINA KATLIAMI
+Relation	T0	T11	NoRel	true	SALDIRISI	REINA KATLIAMI
+Relation	T1	T12	NoRel	true	Saldırı	operasyonla
+Relation	T10	T12	NoRel	true	arttı	operasyonla
+Relation	T10	T2	NoRel	true	arttı	kutlamaları
+Relation	T10	T9	NoRel	true	arttı	saldırılar
+Relation	T11	T8	NoRel	true	REINA KATLIAMI	başlayan
+Relation	T12	T8	NoRel	true	operasyonla	başlayan
+Relation	T2	T8	NoRel	true	kutlamaları	başlayan
+Relation	T3	T11	NoRel	true	saldırı	REINA KATLIAMI
+Relation	T4	T5	NoRel	true	kaybetti	yaralandı
+Relation	T4	T9	NoRel	true	kaybetti	saldırılar
+Relation	T7	T8	NoRel	true	geçirildi	başlayan
+Relation	T8	T4	NoRel	true	başlayan	kaybetti
+Relation	T9	T6	NoRel	true	saldırılar	açıkladı

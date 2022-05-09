@@ -1,0 +1,39 @@
+Text	FLYVEPLADS FREDERIKSHAVN var en flyveplads , anlagt af tyskerne under besættelsen , umiddelbart vest for Frederikshavn .	Arbejdet med at anlægge flyvepladsen gik i gang få uger efter at Danmark blev besat .	Flyvepladsen blev anlagt som en del af _ Forsvarsområde Frederikshavn _ der desuden dækkede modstandsreden _ Frederikshavn Havn _ , støttepunktsgrupperne _ Frederikshavn Syd _ og _ Frederikshavn Nord _ samt sperriegelet _ Frederikshavn _ ( i alt blev der anlagt lidt over 100 bunkere i Frederikshavnsområdet ) .	Det tyske luftvåben Luftwaffe havde oprindeligt tiltænkt flyvepladsen som en satellit-plads for den langt_støre plads ved Aalborg .	Valget ved hovedgården Knivholt havde flere grunde : Terrænet var fladt , der var skov og infrastruktur på stedet ( veje og elektricitet ) .
+Event	T0	anlagt	EVENT	45
+Event	T1	Arbejdet	EVENT	121
+Event	T2	anlægge	EVENT	137
+Event	T3	besat	EVENT	199
+Event	T4	anlagt	EVENT	225
+Event	T5	dækkede	EVENT	291
+Event	T6	anlagt	EVENT	462
+Event	T7	tiltænkt	EVENT	567
+Event	T8	Valget	EVENT	651
+Event	T9	satellit-plads	EVENT	596
+Event	T10	infrastruktur	EVENT	741
+Event	T11	fladt	EVENT	717
+Event	T12	skov	EVENT	733
+Event	T13	grunde	EVENT	695
+Relation	T11	T13	CauseEffect	true	fladt	grunde
+Relation	T13	T11	EffectCause	true	grunde	fladt
+Relation	T12	T13	CauseEffect	true	skov	grunde
+Relation	T13	T12	EffectCause	true	grunde	skov
+Relation	T10	T13	CauseEffect	true	infrastruktur	grunde
+Relation	T13	T10	EffectCause	true	grunde	infrastruktur
+Relation	T0	T10	NoRel	true	anlagt	infrastruktur
+Relation	T0	T2	NoRel	true	anlagt	anlægge
+Relation	T10	T8	NoRel	true	infrastruktur	Valget
+Relation	T11	T7	NoRel	true	fladt	tiltænkt
+Relation	T11	T8	NoRel	true	fladt	Valget
+Relation	T13	T2	NoRel	true	grunde	anlægge
+Relation	T13	T3	NoRel	true	grunde	besat
+Relation	T4	T6	NoRel	true	anlagt	anlagt
+Relation	T4	T7	NoRel	true	anlagt	tiltænkt
+Relation	T4	T9	NoRel	true	anlagt	satellit-plads
+Relation	T5	T2	NoRel	true	dækkede	anlægge
+Relation	T5	T7	NoRel	true	dækkede	tiltænkt
+Relation	T5	T8	NoRel	true	dækkede	Valget
+Relation	T6	T10	NoRel	true	anlagt	infrastruktur
+Relation	T7	T11	NoRel	true	tiltænkt	fladt
+Relation	T8	T3	NoRel	true	Valget	besat
+Relation	T8	T7	NoRel	true	Valget	tiltænkt
+Relation	T9	T7	NoRel	true	satellit-plads	tiltænkt

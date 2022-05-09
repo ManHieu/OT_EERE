@@ -1,0 +1,45 @@
+Text	Los 6 heridos ( uno de los cuales murió ) fueron trasladados a hospitales de San Andrés y Bogotá .	Este choque agravó la ya crítica situación que venía afrontando la aerolínea West Caribbean , la cual cesó operaciones tan solo 5 meses después de este accidente , al sufrir de nuevo una tragedia , la del vuelo 708 .	El primer vuelo del día para la tripulación del Let 410 HK-4146 fue de San Andrés ( ADZ ) a Providencia ( PVA ) .	Partieron a las 07:11 y llegaron a Providencia a las 07:30 .	Después de otros cuatro vuelos entre ADZ y PVA , la tripulación del avión se estaba preparando para el vuelo 9955 a ADZ .
+Event	T0	heridos	EVENT	6
+Event	T1	murió	EVENT	34
+Event	T10	vuelo	EVENT	326
+Event	T11	Partieron	EVENT	430
+Event	T12	llegaron	EVENT	454
+Event	T13	vuelos	EVENT	515
+Event	T14	preparando	EVENT	575
+Event	T15	vuelo	EVENT	594
+Event	T2	trasladados	EVENT	49
+Event	T6	accidente	EVENT	251
+Event	T8	tragedia	EVENT	286
+Event	T9	vuelo	EVENT	304
+Event	T3	choque	EVENT	104
+Event	T4	cesó	EVENT	201
+Relation	T0	T1	SuperSub	true	heridos	murió
+Relation	T1	T0	SubSuper	true	murió	heridos
+Relation	T9	T8	SuperSub	true	vuelo	tragedia
+Relation	T8	T9	SubSuper	true	tragedia	vuelo
+Relation	T0	T15	NoRel	true	heridos	vuelo
+Relation	T1	T15	NoRel	true	murió	vuelo
+Relation	T1	T2	NoRel	true	murió	trasladados
+Relation	T10	T15	NoRel	true	vuelo	vuelo
+Relation	T10	T3	NoRel	true	vuelo	choque
+Relation	T12	T1	NoRel	true	llegaron	murió
+Relation	T12	T14	NoRel	true	llegaron	preparando
+Relation	T12	T6	NoRel	true	llegaron	accidente
+Relation	T13	T1	NoRel	true	vuelos	murió
+Relation	T13	T10	NoRel	true	vuelos	vuelo
+Relation	T13	T4	NoRel	true	vuelos	cesó
+Relation	T13	T6	NoRel	true	vuelos	accidente
+Relation	T14	T4	NoRel	true	preparando	cesó
+Relation	T15	T13	NoRel	true	vuelo	vuelos
+Relation	T15	T14	NoRel	true	vuelo	preparando
+Relation	T15	T4	NoRel	true	vuelo	cesó
+Relation	T2	T10	NoRel	true	trasladados	vuelo
+Relation	T2	T14	NoRel	true	trasladados	preparando
+Relation	T2	T15	NoRel	true	trasladados	vuelo
+Relation	T3	T12	NoRel	true	choque	llegaron
+Relation	T3	T15	NoRel	true	choque	vuelo
+Relation	T3	T2	NoRel	true	choque	trasladados
+Relation	T4	T0	NoRel	true	cesó	heridos
+Relation	T4	T11	NoRel	true	cesó	Partieron
+Relation	T4	T15	NoRel	true	cesó	vuelo
+Relation	T9	T14	NoRel	true	vuelo	preparando

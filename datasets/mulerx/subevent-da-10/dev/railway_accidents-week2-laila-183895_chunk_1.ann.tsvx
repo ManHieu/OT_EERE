@@ -1,0 +1,26 @@
+Text	Ved kollisionen kom 9 passagerer lettere til skade .	DSB's havarigruppe konkluderede ifølge en senere pressemeddelelse , at is og sne i bremsesystemet var årsag til kollisionen .	Bremsevirkningen var nedsat på grund af sne mellem bremseskiver og bremsebakker ( men bremsesystemet fungerede altså ) .	Havarigruppen kunne ikke fastslå om uheldet kunne være undgået , hvis lokomotivføreren havde trukket bremsen an under kørsel mellem Sjælør og Ishøj , som det var foreskrevet i betjeningsvejledningen .	
+Event	T0	kom	EVENT	16
+Event	T1	skade	EVENT	45
+Event	T10	trukket	EVENT	393
+Event	T11	kørsel	EVENT	418
+Event	T12	foreskrevet	EVENT	462
+Event	T2	pressemeddelelse	EVENT	102
+Event	T3	kollisionen	EVENT	165
+Event	T4	Bremsevirkningen	EVENT	179
+Event	T5	sne	EVENT	219
+Event	T6	fungerede	EVENT	280
+Event	T7	fastslå	EVENT	325
+Event	T8	uheldet	EVENT	336
+Event	T9	undgået	EVENT	355
+Relation	T3	T2	SuperSub	true	kollisionen	pressemeddelelse
+Relation	T2	T3	SubSuper	true	pressemeddelelse	kollisionen
+Relation	T12	T10	SuperSub	true	foreskrevet	trukket
+Relation	T10	T12	SubSuper	true	trukket	foreskrevet
+Relation	T12	T7	NoRel	true	foreskrevet	fastslå
+Relation	T2	T10	NoRel	true	pressemeddelelse	trukket
+Relation	T3	T9	NoRel	true	kollisionen	undgået
+Relation	T4	T7	NoRel	true	Bremsevirkningen	fastslå
+Relation	T5	T7	NoRel	true	sne	fastslå
+Relation	T6	T11	NoRel	true	fungerede	kørsel
+Relation	T7	T4	NoRel	true	fastslå	Bremsevirkningen
+Relation	T8	T9	NoRel	true	uheldet	undgået

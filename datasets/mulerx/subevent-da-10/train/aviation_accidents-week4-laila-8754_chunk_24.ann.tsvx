@@ -1,0 +1,58 @@
+Text	USA's regering har fastslået , at al-Qaeda , der ledes af Osama bin Laden , alene bar ansvaret for angrebene .	FBI har udgivet følgende forklaring : " beviset , der forbinder al-Qaeda og bin Laden til angrebene den 11. september er klart og uigendriveligt " .	Storbritanniens regering nåede frem til samme konklusion om al-Qaeda og Osama bin Ladens skyld i terrorangrebene den 11. september .	Forfatteren Laurie Mylroie , der skriver i det konservative politiske magasin The American Spectator , meddelte i 2006 , at Khalid Sheikh Mohammed og hans familie er de primære hovedpersoner bag 9/11 og lignende angreb , samt at Khalid Sheikh Mohammeds samarbejde med Osama bin Laden er sekundær , og at al-Qaedas påstande om ansvaret for angrebet er opportunistiske .	Med det modsatte synspunkt er den tidligere CIA-officer Robert Baer .
+Event	T0	fastslået	EVENT	19
+Event	T1	ansvaret	EVENT	86
+Event	T2	angrebene	EVENT	99
+Event	T3	udgivet	EVENT	119
+Event	T4	forklaring	EVENT	136
+Event	T5	beviset	EVENT	151
+Event	T6	angrebene	EVENT	201
+Event	T7	konklusion	EVENT	306
+Event	T8	terrorangrebene	EVENT	357
+Event	T9	skriver	EVENT	426
+Event	T10	meddelte	EVENT	496
+Event	T11	angreb	EVENT	605
+Event	T12	samarbejde	EVENT	646
+Event	T13	påstande	EVENT	707
+Event	T14	ansvaret	EVENT	719
+Event	T15	angrebet	EVENT	732
+Event	T16	synspunkt	EVENT	779
+Relation	T8	T7	SuperSub	true	terrorangrebene	konklusion
+Relation	T7	T8	SubSuper	true	konklusion	terrorangrebene
+Relation	T6	T3	SuperSub	true	angrebene	udgivet
+Relation	T3	T6	SubSuper	true	udgivet	angrebene
+Relation	T2	T0	SuperSub	true	angrebene	fastslået
+Relation	T0	T2	SubSuper	true	fastslået	angrebene
+Relation	T0	T13	NoRel	true	fastslået	påstande
+Relation	T0	T16	NoRel	true	fastslået	synspunkt
+Relation	T0	T7	NoRel	true	fastslået	konklusion
+Relation	T1	T10	NoRel	true	ansvaret	meddelte
+Relation	T1	T15	NoRel	true	ansvaret	angrebet
+Relation	T1	T16	NoRel	true	ansvaret	synspunkt
+Relation	T10	T14	NoRel	true	meddelte	ansvaret
+Relation	T11	T1	NoRel	true	angreb	ansvaret
+Relation	T11	T10	NoRel	true	angreb	meddelte
+Relation	T11	T16	NoRel	true	angreb	synspunkt
+Relation	T12	T13	NoRel	true	samarbejde	påstande
+Relation	T12	T6	NoRel	true	samarbejde	angrebene
+Relation	T13	T9	NoRel	true	påstande	skriver
+Relation	T14	T15	NoRel	true	ansvaret	angrebet
+Relation	T15	T10	NoRel	true	angrebet	meddelte
+Relation	T15	T13	NoRel	true	angrebet	påstande
+Relation	T15	T3	NoRel	true	angrebet	udgivet
+Relation	T15	T5	NoRel	true	angrebet	beviset
+Relation	T2	T12	NoRel	true	angrebene	samarbejde
+Relation	T3	T1	NoRel	true	udgivet	ansvaret
+Relation	T3	T12	NoRel	true	udgivet	samarbejde
+Relation	T3	T15	NoRel	true	udgivet	angrebet
+Relation	T4	T13	NoRel	true	forklaring	påstande
+Relation	T4	T14	NoRel	true	forklaring	ansvaret
+Relation	T4	T5	NoRel	true	forklaring	beviset
+Relation	T5	T11	NoRel	true	beviset	angreb
+Relation	T5	T8	NoRel	true	beviset	terrorangrebene
+Relation	T6	T0	NoRel	true	angrebene	fastslået
+Relation	T6	T11	NoRel	true	angrebene	angreb
+Relation	T6	T15	NoRel	true	angrebene	angrebet
+Relation	T6	T5	NoRel	true	angrebene	beviset
+Relation	T7	T14	NoRel	true	konklusion	ansvaret
+Relation	T8	T16	NoRel	true	terrorangrebene	synspunkt
+Relation	T9	T13	NoRel	true	skriver	påstande

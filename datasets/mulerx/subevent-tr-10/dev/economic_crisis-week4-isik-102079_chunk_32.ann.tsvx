@@ -1,0 +1,17 @@
+Text	Nolte’ye göre faşizm 1917- 1945 arasıyla karakterizedir .	Bu dönemde Sovyetler Birliği'ni ve onun dünya devrimi talebini faşist araçlarla karşılamak gereği doğmuştur .	Nolte 20. yüzyıl Avrupası’ndaki herhangi bir anti - komünist diktatörlüğün amaçladığı ve gerçekleştirdiği her şeyi faşizm kavramı altında toplar .	Faşizan olarak faşizmle ilişkili ya da faşizme benzeyen ama yumuşatılmış bir biçimi ifade eden tutumlar kastedilir .	Bazen bir politik sistemin ya da ideolojinin tekil bileşenleri faşizan olarak değerlendirilir .
+Event	T0	karakterizedir	EVENT	41
+Event	T1	doğmuştur	EVENT	156
+Event	T2	kastedilir	EVENT	419
+Event	T3	değerlendirilir	EVENT	510
+Event	T4	gerçekleştirdiği	EVENT	257
+Event	T5	toplar	EVENT	306
+Event	T6	amaçladığı	EVENT	243
+Event	T7	talebini	EVENT	112
+Event	T8	yumuşatılmış	EVENT	375
+Relation	T1	T2	NoRel	true	doğmuştur	kastedilir
+Relation	T2	T6	NoRel	true	kastedilir	amaçladığı
+Relation	T4	T1	NoRel	true	gerçekleştirdiği	doğmuştur
+Relation	T4	T2	NoRel	true	gerçekleştirdiği	kastedilir
+Relation	T6	T2	NoRel	true	amaçladığı	kastedilir
+Relation	T7	T4	NoRel	true	talebini	gerçekleştirdiği
+Relation	T8	T7	NoRel	true	yumuşatılmış	talebini

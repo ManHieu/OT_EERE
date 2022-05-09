@@ -1,0 +1,38 @@
+Text	اِنمارسَیٹ نامی سیٹلائٹ کمپنی نے بھی تصدیق کیا کہ ان کے نیٹورک پر جہاز کا سگنل وصول کیا گیا ۔	11 مارچ پر فوجی ریڈار کے سابق ڈاٹا کے تجزیے سے معلوم ہوا کہ شہری ریڈار سے رابطہ منقطع کرنے کے بعد ، جہاز نے مغرب کو نازک موڑ لی اور آبنائے ملاکا کی طرف سفر کرنے لگا اور مزید ستر_منٹ کے لیے جہاز ملیشیائی فوجی ریڈار پر نمودار رہا ۔	جہاز نے ملیشیا کی خشکی پار کی اور پُولاؤُ پیراک کے نزدیک فوجی ریڈار سے غائب ہو گیا ۔	یہ مقام شہری ریڈار سے غائب ہونے کے مقام سے 500 کلومیٹر دور تھا ۔	نیو یارک ٹائمز اور روٹرز نے بیان کیا کہ راستے میں تبدیلی دلالت کرتی ہے کہ جہاز اس وقت پائلٹ کے قابو میں تھا ۔
+Event	T0	وصول	EVENT	79
+Event	T1	تجزیے	EVENT	132
+Event	T7	غائب	EVENT	395
+Event	T9	غائب	EVENT	431
+Event	T10	تصدیق	EVENT	37
+Event	T11	معلوم	EVENT	141
+Event	T2	منقطع	EVENT	174
+Event	T3	موڑ	EVENT	215
+Event	T4	سفر	EVENT	246
+Event	T5	نمودار	EVENT	311
+Event	T6	بیان	EVENT	502
+Event	T8	قابو	EVENT	569
+Event	T12	تبدیلی	EVENT	524
+Relation	T1	T11	CauseEffect	true	تجزیے	معلوم
+Relation	T11	T1	EffectCause	true	معلوم	تجزیے
+Relation	T0	T10	CauseEffect	true	وصول	تصدیق
+Relation	T10	T0	EffectCause	true	تصدیق	وصول
+Relation	T8	T12	CauseEffect	true	قابو	تبدیلی
+Relation	T12	T8	EffectCause	true	تبدیلی	قابو
+Relation	T0	T2	NoRel	true	وصول	منقطع
+Relation	T0	T3	NoRel	true	وصول	موڑ
+Relation	T0	T5	NoRel	true	وصول	نمودار
+Relation	T0	T9	NoRel	true	وصول	غائب
+Relation	T1	T9	NoRel	true	تجزیے	غائب
+Relation	T10	T9	NoRel	true	تصدیق	غائب
+Relation	T11	T6	NoRel	true	معلوم	بیان
+Relation	T3	T0	NoRel	true	موڑ	وصول
+Relation	T3	T1	NoRel	true	موڑ	تجزیے
+Relation	T3	T4	NoRel	true	موڑ	سفر
+Relation	T3	T8	NoRel	true	موڑ	قابو
+Relation	T5	T10	NoRel	true	نمودار	تصدیق
+Relation	T5	T3	NoRel	true	نمودار	موڑ
+Relation	T7	T0	NoRel	true	غائب	وصول
+Relation	T7	T10	NoRel	true	غائب	تصدیق
+Relation	T8	T0	NoRel	true	قابو	وصول
+Relation	T8	T2	NoRel	true	قابو	منقطع
+Relation	T8	T3	NoRel	true	قابو	موڑ

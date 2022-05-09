@@ -1,0 +1,59 @@
+Text	Berlin’de metal işçilerin başlattığı grev bir süre sonra genel greve dönüştü .	Bu grevlere polisin yanında bir de nasyonal sosyalistler saldırıyordu .	Çıkan çatışmalarda yüzlerce kişi öldü .	Grevlerin ekonomik talebi olan maaşlarının artırılmasın yanında siyasal taleplerde yükseliyordu .	İşçilerin grevi hükûmet karşıtı bir nitelik alıyordu .
+Event	T0	grev	EVENT	37
+Event	T1	dönüştü	EVENT	69
+Event	T2	grevlere	EVENT	82
+Event	T3	saldırıyordu	EVENT	136
+Event	T4	çatışmalarda	EVENT	157
+Event	T5	öldü	EVENT	184
+Event	T6	talebi	EVENT	210
+Event	T7	yükseliyordu	EVENT	274
+Event	T8	grevi	EVENT	299
+Event	T9	alıyordu	EVENT	333
+Event	T10	Grevlerin	EVENT	191
+Event	T11	taleplerde	EVENT	263
+Relation	T4	T3	SuperSub	true	çatışmalarda	saldırıyordu
+Relation	T3	T4	SubSuper	true	saldırıyordu	çatışmalarda
+Relation	T0	T6	SuperSub	true	grev	talebi
+Relation	T6	T0	SubSuper	true	talebi	grev
+Relation	T2	T6	SuperSub	true	grevlere	talebi
+Relation	T6	T2	SubSuper	true	talebi	grevlere
+Relation	T10	T6	SuperSub	true	Grevlerin	talebi
+Relation	T6	T10	SubSuper	true	talebi	Grevlerin
+Relation	T8	T6	SuperSub	true	grevi	talebi
+Relation	T6	T8	SubSuper	true	talebi	grevi
+Relation	T10	T11	SuperSub	true	Grevlerin	taleplerde
+Relation	T11	T10	SubSuper	true	taleplerde	Grevlerin
+Relation	T10	T7	SuperSub	true	Grevlerin	yükseliyordu
+Relation	T7	T10	SubSuper	true	yükseliyordu	Grevlerin
+Relation	T8	T11	SuperSub	true	grevi	taleplerde
+Relation	T11	T8	SubSuper	true	taleplerde	grevi
+Relation	T8	T7	SuperSub	true	grevi	yükseliyordu
+Relation	T7	T8	SubSuper	true	yükseliyordu	grevi
+Relation	T0	T7	SuperSub	true	grev	yükseliyordu
+Relation	T7	T0	SubSuper	true	yükseliyordu	grev
+Relation	T0	T11	SuperSub	true	grev	taleplerde
+Relation	T11	T0	SubSuper	true	taleplerde	grev
+Relation	T2	T11	SuperSub	true	grevlere	taleplerde
+Relation	T11	T2	SubSuper	true	taleplerde	grevlere
+Relation	T8	T9	SuperSub	true	grevi	alıyordu
+Relation	T9	T8	SubSuper	true	alıyordu	grevi
+Relation	T10	T9	SuperSub	true	Grevlerin	alıyordu
+Relation	T9	T10	SubSuper	true	alıyordu	Grevlerin
+Relation	T0	T9	SuperSub	true	grev	alıyordu
+Relation	T9	T0	SubSuper	true	alıyordu	grev
+Relation	T2	T9	SuperSub	true	grevlere	alıyordu
+Relation	T9	T2	SubSuper	true	alıyordu	grevlere
+Relation	T0	T3	NoRel	true	grev	saldırıyordu
+Relation	T1	T10	NoRel	true	dönüştü	Grevlerin
+Relation	T1	T11	NoRel	true	dönüştü	taleplerde
+Relation	T1	T5	NoRel	true	dönüştü	öldü
+Relation	T10	T0	NoRel	true	Grevlerin	grev
+Relation	T2	T10	NoRel	true	grevlere	Grevlerin
+Relation	T2	T8	NoRel	true	grevlere	grevi
+Relation	T3	T11	NoRel	true	saldırıyordu	taleplerde
+Relation	T5	T3	NoRel	true	öldü	saldırıyordu
+Relation	T7	T2	NoRel	true	yükseliyordu	grevlere
+Relation	T7	T4	NoRel	true	yükseliyordu	çatışmalarda
+Relation	T7	T9	NoRel	true	yükseliyordu	alıyordu
+Relation	T9	T1	NoRel	true	alıyordu	dönüştü
+Relation	T9	T5	NoRel	true	alıyordu	öldü

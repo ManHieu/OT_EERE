@@ -1,0 +1,53 @@
+Text	" Afet yasası " olarak bilinen ve 16 Mayıs 2012 tarihinde kabul edilen 6306 sayılı " Afet Riski Altındaki Alanların Dönüştürülmesi Hakkında Kanun " , 31 Mayıs 2012 tarihinde , 28.309 sayılı Resmî Gazete'de yayımlanarak yürürlüğe girdi .	Kanun ile riskli yapıların bulunduğu arsa ve arazilerdeki iyileştirme , tasfiye ve yenilemelerin usul ve esasları belirlenirken , kanunun uygulama sorumluluğu Çevre_ve Şehircilik Bakanlığı'na verildi .	küçükresim | sağ | İHH İnsani Yardım Vakfı'nın enkazdaki arama kurtarma çalışmaları ( 26 Ekim 2011 ) küçükresim | sağ | Depremden bir hafta sonra afet bölgesi .	küçükresim | sağ | AKUT ekiplerinin arama kurtarma çalışmaları ( 25 Ekim 2011 ) Türk Kızılayı tarafından yapılan açıklamada , bölgedeki kan merkezlerinin yaralılar için gerekli kanı ulaştırma çalışmalarına başladığı ve bölgede arama kurtarma ekibi , iş makinesi ve içme suyu ihtiyacı bulunduğu belirtildi .	Yardım malzemelerinin bölgeye ulaştırılması için tüm hazırlıklar yapıldı .
+Event	T0	girdi	EVENT	229
+Event	T1	iyileştirme	EVENT	295
+Event	T2	tasfiye	EVENT	309
+Event	T3	belirlenirken	EVENT	351
+Event	T4	verildi	EVENT	429
+Event	T5	çalışmaları	EVENT	511
+Event	T6	afet	EVENT	585
+Event	T7	çalışmaları	EVENT	651
+Event	T8	başladığı	EVENT	806
+Event	T9	belirtildi	EVENT	894
+Event	T10	yapıldı	EVENT	972
+Event	T11	edilen	EVENT	64
+Event	T12	Afet yasası	EVENT	2
+Event	T13	yayımlanarak	EVENT	206
+Event	T14	Kanun	EVENT	237
+Event	T15	yenilemelerin	EVENT	320
+Event	T16	Depremden	EVENT	559
+Event	T17	açıklamada	EVENT	713
+Event	T18	ihtiyacı	EVENT	875
+Relation	T0	T16	NoRel	true	girdi	Depremden
+Relation	T1	T14	NoRel	true	iyileştirme	Kanun
+Relation	T1	T7	NoRel	true	iyileştirme	çalışmaları
+Relation	T1	T8	NoRel	true	iyileştirme	başladığı
+Relation	T10	T15	NoRel	true	yapıldı	yenilemelerin
+Relation	T10	T6	NoRel	true	yapıldı	afet
+Relation	T12	T15	NoRel	true	Afet yasası	yenilemelerin
+Relation	T12	T18	NoRel	true	Afet yasası	ihtiyacı
+Relation	T13	T17	NoRel	true	yayımlanarak	açıklamada
+Relation	T13	T18	NoRel	true	yayımlanarak	ihtiyacı
+Relation	T14	T12	NoRel	true	Kanun	Afet yasası
+Relation	T14	T6	NoRel	true	Kanun	afet
+Relation	T14	T7	NoRel	true	Kanun	çalışmaları
+Relation	T15	T6	NoRel	true	yenilemelerin	afet
+Relation	T16	T2	NoRel	true	Depremden	tasfiye
+Relation	T18	T11	NoRel	true	ihtiyacı	edilen
+Relation	T18	T14	NoRel	true	ihtiyacı	Kanun
+Relation	T18	T16	NoRel	true	ihtiyacı	Depremden
+Relation	T2	T10	NoRel	true	tasfiye	yapıldı
+Relation	T2	T11	NoRel	true	tasfiye	edilen
+Relation	T2	T12	NoRel	true	tasfiye	Afet yasası
+Relation	T2	T5	NoRel	true	tasfiye	çalışmaları
+Relation	T3	T17	NoRel	true	belirlenirken	açıklamada
+Relation	T3	T4	NoRel	true	belirlenirken	verildi
+Relation	T4	T13	NoRel	true	verildi	yayımlanarak
+Relation	T4	T16	NoRel	true	verildi	Depremden
+Relation	T5	T1	NoRel	true	çalışmaları	iyileştirme
+Relation	T5	T13	NoRel	true	çalışmaları	yayımlanarak
+Relation	T5	T7	NoRel	true	çalışmaları	çalışmaları
+Relation	T6	T11	NoRel	true	afet	edilen
+Relation	T6	T3	NoRel	true	afet	belirlenirken
+Relation	T7	T18	NoRel	true	çalışmaları	ihtiyacı
+Relation	T9	T7	NoRel	true	belirtildi	çalışmaları

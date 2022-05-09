@@ -1,0 +1,38 @@
+Text	SPD , Alman Halk Partisi ( _ Deutsche Volkspartei _ - DVP ) ile beraber hükûmet kurdu .	SPD daha önceden olduğu gibi yine sınıf hareketini bastırıyordu , işçi sınıfı içinde her şeye rağmen etkili olan SPD grevleri bastırıyordu .	Burjuvazin bütün kararlarına onay verirken devrimin en önemli kazanımlarımdan olan 8 saatlik işgününün kaldırılmasına bile ses çıkarmadı .	Ekim ayına gelindiği zaman KPD işçi sınıfının bu hareketliliğinin tekrar bir devrimci durum yarattığı görüşündeydi .	Bu çerçevede silahlı işçi birlikleri oluşturuyor , devrim hazırlıkları yapıyordu .
+Event	T0	kurdu	EVENT	80
+Event	T1	bastırıyordu	EVENT	139
+Event	T2	bastırıyordu	EVENT	214
+Event	T3	onay	EVENT	258
+Event	T4	kaldırılmasına	EVENT	332
+Event	T5	hareketliliğinin	EVENT	417
+Event	T7	yapıyordu	EVENT	556
+Event	T8	hareketini	EVENT	128
+Event	T9	grevleri	EVENT	205
+Event	T10	devrimin	EVENT	272
+Event	T11	oluşturuyor	EVENT	522
+Event	T12	kazanımlarımdan	EVENT	291
+Event	T6	yarattığı	EVENT	460
+Relation	T3	T6	CauseEffect	true	onay	yarattığı
+Relation	T6	T3	EffectCause	true	yarattığı	onay
+Relation	T4	T6	CauseEffect	true	kaldırılmasına	yarattığı
+Relation	T6	T4	EffectCause	true	yarattığı	kaldırılmasına
+Relation	T0	T12	NoRel	true	kurdu	kazanımlarımdan
+Relation	T0	T2	NoRel	true	kurdu	bastırıyordu
+Relation	T0	T8	NoRel	true	kurdu	hareketini
+Relation	T1	T7	NoRel	true	bastırıyordu	yapıyordu
+Relation	T10	T11	NoRel	true	devrimin	oluşturuyor
+Relation	T3	T0	NoRel	true	onay	kurdu
+Relation	T3	T11	NoRel	true	onay	oluşturuyor
+Relation	T3	T2	NoRel	true	onay	bastırıyordu
+Relation	T3	T5	NoRel	true	onay	hareketliliğinin
+Relation	T3	T7	NoRel	true	onay	yapıyordu
+Relation	T4	T0	NoRel	true	kaldırılmasına	kurdu
+Relation	T4	T5	NoRel	true	kaldırılmasına	hareketliliğinin
+Relation	T5	T0	NoRel	true	hareketliliğinin	kurdu
+Relation	T5	T1	NoRel	true	hareketliliğinin	bastırıyordu
+Relation	T7	T0	NoRel	true	yapıyordu	kurdu
+Relation	T7	T3	NoRel	true	yapıyordu	onay
+Relation	T8	T1	NoRel	true	hareketini	bastırıyordu
+Relation	T8	T5	NoRel	true	hareketini	hareketliliğinin
+Relation	T8	T7	NoRel	true	hareketini	yapıyordu
+Relation	T9	T6	NoRel	true	grevleri	yarattığı

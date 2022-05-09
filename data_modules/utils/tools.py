@@ -34,23 +34,25 @@ def format_time(elapsed):
     return str(datetime.timedelta(seconds=elapsed_rounded))
 
 
-def tokenized_to_origin_span(text, token_list):
+def tokenized_to_origin_span(text: str, token_list: List[str]):
     token_span = []
     pointer = 0
     for token in token_list:
-        while True:
-            if token[0] == text[pointer]:
-                start = pointer
-                end = start + len(token)
-                pointer = end
-                break
-            else:
-                pointer += 1
-        token_span.append([start, end])
+        start = text.find(token, pointer)
+        if start != -1:
+            end = start + len(token)
+            pointer = end
+            token_span.append([start, end])
+            assert text[start: end] == token, f"{token}-{text}"
+        else:
+            token_span.append([-100, -100])
     return token_span
 
 
 def sent_id_lookup(my_dict, start_char, end_char = None):
+    # print(f"my_dict: {my_dict}")
+    # print(f"start: {start_char}")
+    # print(f"end: {end_char}")
     for sent_dict in my_dict['sentences']:
         if end_char is None:
             if start_char >= sent_dict['sent_start_char'] and start_char <= sent_dict['sent_end_char']:
@@ -62,7 +64,8 @@ def sent_id_lookup(my_dict, start_char, end_char = None):
 
 def token_id_lookup(token_span_SENT, start_char, end_char):
     for index, token_span in enumerate(token_span_SENT):
-        if start_char >= token_span[0] and end_char <= token_span[1]:
+        char_ids = range(token_span[0], token_span[1])
+        if start_char in char_ids or (end_char-1) in char_ids:
             return index
 
 
@@ -81,13 +84,17 @@ def span_SENT_to_DOC(token_span_SENT, sent_start):
 def id_lookup(span_SENT, start_char, end_char):
     # this function is applicable to RoBERTa subword or token from ltf/spaCy
     # id: start from 0
-    token_id = -1
-    for token_span in span_SENT:
-        token_id += 1
-        if token_span[0] <= start_char and token_span[1] >= end_char:
-            return token_id
-    raise ValueError("Nothing is found. \n span sentence: {} \n start_char: {}".format(span_SENT, start_char))
+    token_id = []
+    char_range = set(range(start_char, end_char))
+    for i, token_span in enumerate(span_SENT):
+        # if token_span[0] <= start_char or token_span[1] >= end_char:
+        #     return token_id
+        if len(set(range(token_span[0], token_span[1])).intersection(char_range)) > 0:
+            token_id.append(i)
+    if len(token_id) == 0: 
+        raise ValueError("Nothing is found. \n span sentence: {} \n start_char: {} \n end_char: {}".format(span_SENT, start_char, end_char))
 
+    return token_id
 
 def find_common_lowest_ancestor(tree, nodes):
     ancestor = nx.lowest_common_ancestor(tree, nodes[0], nodes[1])
@@ -113,21 +120,26 @@ def get_dep_path(tree, nodes):
         return None
 
 
-def mapping_subtok_id(subtoks: List[str], tokens: List[str]):
-    text = ' '.join(tokens)
+def mapping_subtok_id(subtoks: List[str], tokens: List[str], text: str):
     token_spans = tokenized_to_origin_span(text, tokens)
-    subtok_spans = tokenized_to_origin_span(text, subtoks)
+    subtok_spans = tokenized_to_origin_span(text.lower(), [t.lower() for t in subtoks])
 
     mapping_dict = defaultdict(list)
     for i, subtok_span in enumerate(subtok_spans, start=1):
         tok_id = token_id_lookup(token_spans, start_char=subtok_span[0], end_char=subtok_span[1])
-        mapping_dict[tok_id].append(i)
+        if tok_id != None:
+            if subtoks[i-1].lower() in tokens[tok_id].lower() or tokens[tok_id].lower() in subtoks[i-1].lower():
+                mapping_dict[tok_id].append(i)
+            else:
+                mapping_dict[tok_id].append(i)
+                # print(f"{subtoks[i-1]} - {tokens[tok_id]}") # \n{subtoks} - {subtok_spans}\n{tokens} - {token_spans}
+            
     
     # mapping <unk> token:
     for key in range(len(tokens)):
         if mapping_dict.get(key) == None:
-            print(f"haven't_mapping_tok: {tokens[key]}")
-            mapping_dict[key] = random.randint(0, len(tokens)-1)
+            # print(f"haven't_mapping_tok: {tokens[key]}")
+            mapping_dict[key] = [random.randint(0, len(tokens)-1)]
     
     # print(f"tokens: {tokens} \nsub_tokens: {subtoks} \nmapping_dict: {mapping_dict}")
     
@@ -147,10 +159,36 @@ def compute_sentences_similar(sent_A: List[str], sent_B: List[str], metric: str=
     return score
 
 
-def get_new_poss(poss_in_sent: int, new_sid: int, sent_span: Dict[int, Tuple[int, int, int]]):
+def get_new_poss(poss_in_sent: List[int], new_sid: int, sent_span: Dict[int, Tuple[int, int, int, int]]):
     new_poss = poss_in_sent
     for _new_sid, _, _, sent_len in sent_span.values():
         if _new_sid < new_sid:
-            new_poss += sent_len
+            new_poss = [i + sent_len for i in new_poss]
     return new_poss
+
+
+def find_sent_id(sentences: List[Dict], mention_span: List[int]):
+    """
+    Find sentence id of mention (ESL)
+    """
+    for sent in sentences:
+        token_span_doc = sent['token_span_doc']
+        if set(mention_span) == set(mention_span).intersection(set(token_span_doc)):
+            return sent['sent_id']
+    
+    return None
+
+
+def get_mention_span(span: str) -> List[int]:
+    span = [int(tok.strip()) for tok in span.split('_')]
+    return span
+
+
+def find_m_id(mention: List[int], eventdict:Dict):
+    for m_id, ev in eventdict.items():
+        # print(mention, ev['mention_span'])
+        if mention == ev['mention_span']:
+            return m_id
+    
+    return None
 

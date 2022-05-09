@@ -1,0 +1,59 @@
+Text	Anıt , bulunduğu parkın kapatılmasıyla 2017 yılında başka bir yere taşınmak üzere kaldırıldı .	Her yıl Amerika Birleşik Devletleri'nin Erivan Büyükelçiliği yetkilileri ve Ermenistan Savunma Bakanı , olayda ölenleri anmak adına uçağın düştüğü bölgeyi ziyaret etmektedir .	Dosya : Joint US - Armenian memorial to lost Airmen .jpg | Ermenistan Sasnaşen'de bulunan ortak ABD - Ermenistan anıtı Dosya : 56 - 0528 route .png | C - 130'un ve 3 Sovyet MiG - 17'sinin rotası	Kategori : 1958'de havacılık kazaları ve olayları Kategori : Ermenistan SSC'deki havacılık kazaları ve olayları Kategori : 1958'de Amerika Birleşik Devletleri Kategori : Soğuk Savaş'ta Sovyetler Birliği Kategori : Soğuk Savaş'ta Amerika Birleşik Devletleri Kategori : Amerika Birleşik Devletleri - Sovyetler Birliği ilişkileri Kategori : C -130 Hercules içeren kazalar ve olaylar	Bureau of Aircraft Accidents Archives | erişimtarihi =17 Ekim 2021 | arşivtarihi =17 Ekim 2021 | arşivurl =https : / / web .
+Event	T0	kapatılmasıyla	EVENT	24
+Event	T1	kaldırıldı	EVENT	82
+Event	T2	lost	EVENT	311
+Event	T3	kazaları	EVENT	495
+Event	T4	kazalar	EVENT	827
+Event	T5	olaylar	EVENT	838
+Event	T6	Accidents	EVENT	865
+Event	T7	taşınmak	EVENT	67
+Event	T8	olayda	EVENT	199
+Event	T9	ölenleri	EVENT	206
+Event	T10	etmektedir	EVENT	258
+Event	T11	anmak	EVENT	215
+Event	T12	olayları	EVENT	507
+Event	T13	kazaları	EVENT	557
+Event	T14	olayları	EVENT	569
+Event	T15	Soğuk Savaş'ta	EVENT	636
+Event	T16	Soğuk Savaş'ta	EVENT	680
+Relation	T0	T7	CauseEffect	true	kapatılmasıyla	taşınmak
+Relation	T7	T0	EffectCause	true	taşınmak	kapatılmasıyla
+Relation	T7	T1	CauseEffect	true	taşınmak	kaldırıldı
+Relation	T1	T7	EffectCause	true	kaldırıldı	taşınmak
+Relation	T8	T9	CauseEffect	true	olayda	ölenleri
+Relation	T9	T8	EffectCause	true	ölenleri	olayda
+Relation	T9	T11	CauseEffect	true	ölenleri	anmak
+Relation	T11	T9	EffectCause	true	anmak	ölenleri
+Relation	T11	T10	CauseEffect	true	anmak	etmektedir
+Relation	T10	T11	EffectCause	true	etmektedir	anmak
+Relation	T0	T4	NoRel	true	kapatılmasıyla	kazalar
+Relation	T1	T0	NoRel	true	kaldırıldı	kapatılmasıyla
+Relation	T11	T2	NoRel	true	anmak	lost
+Relation	T13	T0	NoRel	true	kazaları	kapatılmasıyla
+Relation	T13	T14	NoRel	true	kazaları	olayları
+Relation	T13	T4	NoRel	true	kazaları	kazalar
+Relation	T13	T7	NoRel	true	kazaları	taşınmak
+Relation	T14	T16	NoRel	true	olayları	Soğuk Savaş'ta
+Relation	T14	T2	NoRel	true	olayları	lost
+Relation	T15	T0	NoRel	true	Soğuk Savaş'ta	kapatılmasıyla
+Relation	T15	T4	NoRel	true	Soğuk Savaş'ta	kazalar
+Relation	T16	T1	NoRel	true	Soğuk Savaş'ta	kaldırıldı
+Relation	T16	T11	NoRel	true	Soğuk Savaş'ta	anmak
+Relation	T16	T13	NoRel	true	Soğuk Savaş'ta	kazaları
+Relation	T16	T6	NoRel	true	Soğuk Savaş'ta	Accidents
+Relation	T2	T0	NoRel	true	lost	kapatılmasıyla
+Relation	T2	T1	NoRel	true	lost	kaldırıldı
+Relation	T2	T12	NoRel	true	lost	olayları
+Relation	T3	T16	NoRel	true	kazaları	Soğuk Savaş'ta
+Relation	T3	T4	NoRel	true	kazaları	kazalar
+Relation	T4	T13	NoRel	true	kazalar	kazaları
+Relation	T4	T8	NoRel	true	kazalar	olayda
+Relation	T4	T9	NoRel	true	kazalar	ölenleri
+Relation	T5	T11	NoRel	true	olaylar	anmak
+Relation	T5	T12	NoRel	true	olaylar	olayları
+Relation	T5	T8	NoRel	true	olaylar	olayda
+Relation	T6	T8	NoRel	true	Accidents	olayda
+Relation	T8	T2	NoRel	true	olayda	lost
+Relation	T9	T1	NoRel	true	ölenleri	kaldırıldı
+Relation	T9	T12	NoRel	true	ölenleri	olayları
+Relation	T9	T3	NoRel	true	ölenleri	kazaları

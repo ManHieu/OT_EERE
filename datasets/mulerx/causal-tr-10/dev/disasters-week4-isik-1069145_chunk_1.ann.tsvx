@@ -1,0 +1,21 @@
+Text	Kuzeydoğuya dönen fırtına hızlı bir şekilde zayıfladı ve 11 Eylül günü sona erdi .	Fırtınanın karaya giriş yerine aşırı miktarda yağmur düştü ; fakat diğer alanlara düşen yağış miktarı daha küçüktü .	Fırtınanın yol açtığı zarar küçüktü ve doğrudan sonuç olarak hiçbir ölüm vakası bildirilmedi .	küçükresim | sol | 200px | Gabrielle'in rotası .	küçükresim | sağ | 200px | Gabrielle Kuzey Karolina'ya varırken .
+Event	T0	fırtına	EVENT	18
+Event	T1	zayıfladı	EVENT	44
+Event	T2	erdi	EVENT	76
+Event	T4	düştü	EVENT	136
+Event	T5	yağış	EVENT	171
+Event	T7	dönen	EVENT	12
+Event	T3	zarar	EVENT	222
+Event	T8	Fırtınanın	EVENT	200
+Relation	T1	T2	CauseEffect	true	zayıfladı	erdi
+Relation	T2	T1	EffectCause	true	erdi	zayıfladı
+Relation	T7	T1	CauseEffect	true	dönen	zayıfladı
+Relation	T1	T7	EffectCause	true	zayıfladı	dönen
+Relation	T0	T4	CauseEffect	true	fırtına	düştü
+Relation	T4	T0	EffectCause	true	düştü	fırtına
+Relation	T8	T3	CauseEffect	true	Fırtınanın	zarar
+Relation	T3	T8	EffectCause	true	zarar	Fırtınanın
+Relation	T2	T0	NoRel	true	erdi	fırtına
+Relation	T4	T2	NoRel	true	düştü	erdi
+Relation	T5	T4	NoRel	true	yağış	düştü
+Relation	T5	T7	NoRel	true	yağış	dönen

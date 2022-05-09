@@ -1,0 +1,110 @@
+Text	Alexander seems to have been dubious about the plans for Yugoslavia , as throughout the war , he spoke in terms of liberating Serbia .	The introduction of the 14 Points by the American President Woodrow Wilson in January 1918 increased Alexander 's doubts about Yugoslavia as Point 10 spoke of " substantial autonomy " in the Austrian Empire after the war , not breaking it up .	Not willing to antagonise Wilson , Alexander favored a " greater Serbia " that saw the Serbs annex certain provinces of the Austrian Empire .	Though the Crown Prince declared in a speech during a visit to Britain that he was " fighting for Yugoslav unity in a Yugoslav state " , when he addressed his own soldiers he stated he was fighting for " the reestablishment of Serbia , our dear homeland " .	In a sign of the trouble to come , Trumbić demanded to have the right to speak for the South Slavs living under Austrian rule , a demand that Alexander rejected under the grounds that the Serb government represented the South Slavs .
+Event	T0	spoke	EVENT	97
+Event	T1	liberating	EVENT	115
+Event	T10	annex	EVENT	472
+Event	T11	declared	EVENT	545
+Event	T12	speech	EVENT	559
+Event	T13	visit	EVENT	575
+Event	T14	fighting	EVENT	606
+Event	T15	addressed	EVENT	666
+Event	T16	stated	EVENT	696
+Event	T17	fighting	EVENT	710
+Event	T18	reestablishment	EVENT	729
+Event	T2	introduction	EVENT	139
+Event	T20	trouble	EVENT	796
+Event	T21	demanded	EVENT	822
+Event	T22	speak	EVENT	852
+Event	T23	demand	EVENT	909
+Event	T24	rejected	EVENT	931
+Event	T25	represented	EVENT	983
+Event	T26	dubious	EVENT	29
+Event	T3	increased	EVENT	226
+Event	T4	doubts	EVENT	249
+Event	T5	spoke	EVENT	285
+Event	T6	war	EVENT	352
+Event	T7	breaking	EVENT	362
+Event	T8	favored	EVENT	424
+Event	T9	saw	EVENT	458
+Relation	T15	T11	SuperSub	true	addressed	declared
+Relation	T11	T15	SubSuper	true	declared	addressed
+Relation	T0	T1	NoRel	true	spoke	liberating
+Relation	T0	T11	NoRel	true	spoke	declared
+Relation	T0	T21	NoRel	true	spoke	demanded
+Relation	T10	T20	NoRel	true	annex	trouble
+Relation	T10	T22	NoRel	true	annex	speak
+Relation	T10	T23	NoRel	true	annex	demand
+Relation	T10	T24	NoRel	true	annex	rejected
+Relation	T12	T13	NoRel	true	speech	visit
+Relation	T12	T22	NoRel	true	speech	speak
+Relation	T13	T16	NoRel	true	visit	stated
+Relation	T13	T25	NoRel	true	visit	represented
+Relation	T13	T26	NoRel	true	visit	dubious
+Relation	T13	T4	NoRel	true	visit	doubts
+Relation	T14	T3	NoRel	true	fighting	increased
+Relation	T14	T7	NoRel	true	fighting	breaking
+Relation	T15	T14	NoRel	true	addressed	fighting
+Relation	T15	T25	NoRel	true	addressed	represented
+Relation	T16	T13	NoRel	true	stated	visit
+Relation	T16	T2	NoRel	true	stated	introduction
+Relation	T16	T22	NoRel	true	stated	speak
+Relation	T16	T7	NoRel	true	stated	breaking
+Relation	T17	T21	NoRel	true	fighting	demanded
+Relation	T17	T24	NoRel	true	fighting	rejected
+Relation	T17	T3	NoRel	true	fighting	increased
+Relation	T17	T6	NoRel	true	fighting	war
+Relation	T18	T7	NoRel	true	reestablishment	breaking
+Relation	T2	T15	NoRel	true	introduction	addressed
+Relation	T2	T18	NoRel	true	introduction	reestablishment
+Relation	T2	T22	NoRel	true	introduction	speak
+Relation	T2	T3	NoRel	true	introduction	increased
+Relation	T20	T0	NoRel	true	trouble	spoke
+Relation	T20	T14	NoRel	true	trouble	fighting
+Relation	T20	T25	NoRel	true	trouble	represented
+Relation	T20	T9	NoRel	true	trouble	saw
+Relation	T21	T10	NoRel	true	demanded	annex
+Relation	T21	T24	NoRel	true	demanded	rejected
+Relation	T22	T20	NoRel	true	speak	trouble
+Relation	T23	T16	NoRel	true	demand	stated
+Relation	T23	T18	NoRel	true	demand	reestablishment
+Relation	T23	T6	NoRel	true	demand	war
+Relation	T24	T11	NoRel	true	rejected	declared
+Relation	T24	T16	NoRel	true	rejected	stated
+Relation	T24	T22	NoRel	true	rejected	speak
+Relation	T24	T23	NoRel	true	rejected	demand
+Relation	T24	T26	NoRel	true	rejected	dubious
+Relation	T24	T3	NoRel	true	rejected	increased
+Relation	T25	T1	NoRel	true	represented	liberating
+Relation	T25	T15	NoRel	true	represented	addressed
+Relation	T25	T17	NoRel	true	represented	fighting
+Relation	T25	T21	NoRel	true	represented	demanded
+Relation	T25	T23	NoRel	true	represented	demand
+Relation	T25	T6	NoRel	true	represented	war
+Relation	T26	T10	NoRel	true	dubious	annex
+Relation	T26	T18	NoRel	true	dubious	reestablishment
+Relation	T26	T2	NoRel	true	dubious	introduction
+Relation	T26	T22	NoRel	true	dubious	speak
+Relation	T26	T23	NoRel	true	dubious	demand
+Relation	T3	T22	NoRel	true	increased	speak
+Relation	T3	T9	NoRel	true	increased	saw
+Relation	T4	T10	NoRel	true	doubts	annex
+Relation	T4	T18	NoRel	true	doubts	reestablishment
+Relation	T4	T5	NoRel	true	doubts	spoke
+Relation	T4	T9	NoRel	true	doubts	saw
+Relation	T5	T13	NoRel	true	spoke	visit
+Relation	T5	T25	NoRel	true	spoke	represented
+Relation	T6	T22	NoRel	true	war	speak
+Relation	T7	T0	NoRel	true	breaking	spoke
+Relation	T7	T11	NoRel	true	breaking	declared
+Relation	T7	T16	NoRel	true	breaking	stated
+Relation	T7	T2	NoRel	true	breaking	introduction
+Relation	T7	T21	NoRel	true	breaking	demanded
+Relation	T7	T22	NoRel	true	breaking	speak
+Relation	T7	T24	NoRel	true	breaking	rejected
+Relation	T7	T4	NoRel	true	breaking	doubts
+Relation	T8	T1	NoRel	true	favored	liberating
+Relation	T8	T11	NoRel	true	favored	declared
+Relation	T8	T14	NoRel	true	favored	fighting
+Relation	T8	T6	NoRel	true	favored	war
+Relation	T9	T15	NoRel	true	saw	addressed
+Relation	T9	T18	NoRel	true	saw	reestablishment
+Relation	T9	T7	NoRel	true	saw	breaking

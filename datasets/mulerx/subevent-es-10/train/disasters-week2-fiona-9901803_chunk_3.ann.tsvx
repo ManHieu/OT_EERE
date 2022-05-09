@@ -1,0 +1,20 @@
+Text	Huarcatán se encontraba cerca al límite del distrito de Vizcatán del Ene ( Satipo , Junín ) , que forma parte del VRAEM , en donde opera abiertamente el MPCP .	El gobernador del departamento de Ayacucho Carlos Rua Carbajal pidió que se realice una « exhaustiva investigación a fin de dar con los responsables » , se incrementé la presencia del Estado peruano en el lugar del ataque , y comparó la masacre con las realizadas durante la época del terrorismo entre los años 1990 y 2000 .	La Policía Nacional del Perú y el Ejército del Perú iniciaron la Operación Ojo de Águila en el VRAEM para capturar a los responsables de la masacre .	Categoría : Perú en 2021 Categoría : Atentados terroristas en 2021 Categoría : Terrorismo en Perú Categoría : Masacres en Perú	
+Event	T0	opera	EVENT	131
+Event	T12	masacre	EVENT	625
+Event	T13	Masacres	EVENT	745
+Event	T4	ataque	EVENT	375
+Event	T5	comparó	EVENT	386
+Event	T6	masacre	EVENT	397
+Event	T7	realizadas	EVENT	413
+Event	T8	terrorismo	EVENT	445
+Event	T9	iniciaron	EVENT	537
+Event	T1	Operación Ojo de Águila	EVENT	550
+Relation	T0	T12	NoRel	true	opera	masacre
+Relation	T0	T7	NoRel	true	opera	realizadas
+Relation	T1	T6	NoRel	true	Operación Ojo de Águila	masacre
+Relation	T12	T13	NoRel	true	masacre	Masacres
+Relation	T12	T9	NoRel	true	masacre	iniciaron
+Relation	T13	T1	NoRel	true	Masacres	Operación Ojo de Águila
+Relation	T13	T12	NoRel	true	Masacres	masacre
+Relation	T13	T7	NoRel	true	Masacres	realizadas
+Relation	T5	T0	NoRel	true	comparó	opera

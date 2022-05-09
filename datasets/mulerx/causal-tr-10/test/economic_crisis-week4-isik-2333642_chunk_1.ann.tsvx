@@ -1,0 +1,111 @@
+Text	Türk lirasının değer kaybı , yüksek enflasyon , artan borç ve karşılık gelen kredi temerrütleriyle karakterize olup krizin genel olarak , Türkiye ekonomisindeki yüksek cari açık ve yabancı para borcunun , Cumhurbaşkanı Recep Tayyip Erdoğan'ın artan otoriterliği ve faiz politikasına ilişkin alışılmışın dışında fikirleriyle birleştiği düşünülmektedir .	Kriz , liranın dalgalanmalar hâlinde büyük oranda değer kaybetmesiyle görünür olmaya başladı ve sonraki aşamada ödenemeyen borçlar ve ekonomik daralma ile daha derin bir boyuta ulaştı .	Enflasyon oranı çift hanelerde takılıp kalınca stagflasyon ortaya çıktı .	Kriz , kolay kredi ve devlet bütçesiyle desteklenen inşaat sektörü patlamasının yarattığı Erdoğan liderliğindeki ekonomik büyüme döneminin sonunu getirdi .	Yükselen dolar kuru , 11 Ekim 2021 itibarıyla 9₺'yi , , 12 Kasım 2021 itibarıyla 10₺'yi aştı .
+Event	T0	kaybı	EVENT	21
+Event	T1	krizin	EVENT	116
+Event	T2	düşünülmektedir	EVENT	335
+Event	T3	Kriz	EVENT	353
+Event	T4	dalgalanmalar	EVENT	368
+Event	T6	başladı	EVENT	438
+Event	T7	daralma	EVENT	496
+Event	T8	ulaştı	EVENT	530
+Event	T9	çıktı	EVENT	605
+Event	T10	Kriz	EVENT	613
+Event	T12	büyüme	EVENT	735
+Event	T13	getirdi	EVENT	759
+Event	T14	aştı	EVENT	857
+Event	T15	enflasyon	EVENT	36
+Event	T16	borç	EVENT	54
+Event	T17	temerrütleriyle	EVENT	83
+Event	T18	otoriterliği	EVENT	249
+Event	T19	fikirleriyle	EVENT	311
+Event	T5	kaybetmesiyle	EVENT	409
+Event	T20	borçlar	EVENT	476
+Event	T21	kalınca	EVENT	578
+Event	T22	desteklenen	EVENT	653
+Event	T23	patlamasının	EVENT	680
+Event	T11	Yükselen	EVENT	769
+Relation	T15	T0	CauseEffect	true	enflasyon	kaybı
+Relation	T0	T15	EffectCause	true	kaybı	enflasyon
+Relation	T16	T0	CauseEffect	true	borç	kaybı
+Relation	T0	T16	EffectCause	true	kaybı	borç
+Relation	T17	T0	CauseEffect	true	temerrütleriyle	kaybı
+Relation	T0	T17	EffectCause	true	kaybı	temerrütleriyle
+Relation	T18	T1	CauseEffect	true	otoriterliği	krizin
+Relation	T1	T18	EffectCause	true	krizin	otoriterliği
+Relation	T19	T1	CauseEffect	true	fikirleriyle	krizin
+Relation	T1	T19	EffectCause	true	krizin	fikirleriyle
+Relation	T0	T1	CauseEffect	true	kaybı	krizin
+Relation	T1	T0	EffectCause	true	krizin	kaybı
+Relation	T1	T2	CauseEffect	true	krizin	düşünülmektedir
+Relation	T2	T1	EffectCause	true	düşünülmektedir	krizin
+Relation	T5	T6	CauseEffect	true	kaybetmesiyle	başladı
+Relation	T6	T5	EffectCause	true	başladı	kaybetmesiyle
+Relation	T20	T8	CauseEffect	true	borçlar	ulaştı
+Relation	T8	T20	EffectCause	true	ulaştı	borçlar
+Relation	T7	T8	CauseEffect	true	daralma	ulaştı
+Relation	T8	T7	EffectCause	true	ulaştı	daralma
+Relation	T21	T9	CauseEffect	true	kalınca	çıktı
+Relation	T9	T21	EffectCause	true	çıktı	kalınca
+Relation	T10	T13	CauseEffect	true	Kriz	getirdi
+Relation	T13	T10	EffectCause	true	getirdi	Kriz
+Relation	T22	T23	CauseEffect	true	desteklenen	patlamasının
+Relation	T23	T22	EffectCause	true	patlamasının	desteklenen
+Relation	T23	T12	CauseEffect	true	patlamasının	büyüme
+Relation	T12	T23	EffectCause	true	büyüme	patlamasının
+Relation	T0	T12	NoRel	true	kaybı	büyüme
+Relation	T0	T14	NoRel	true	kaybı	aştı
+Relation	T0	T21	NoRel	true	kaybı	kalınca
+Relation	T0	T23	NoRel	true	kaybı	patlamasının
+Relation	T1	T10	NoRel	true	krizin	Kriz
+Relation	T1	T22	NoRel	true	krizin	desteklenen
+Relation	T1	T5	NoRel	true	krizin	kaybetmesiyle
+Relation	T1	T8	NoRel	true	krizin	ulaştı
+Relation	T10	T1	NoRel	true	Kriz	krizin
+Relation	T10	T15	NoRel	true	Kriz	enflasyon
+Relation	T10	T18	NoRel	true	Kriz	otoriterliği
+Relation	T11	T21	NoRel	true	Yükselen	kalınca
+Relation	T12	T7	NoRel	true	büyüme	daralma
+Relation	T12	T9	NoRel	true	büyüme	çıktı
+Relation	T13	T23	NoRel	true	getirdi	patlamasının
+Relation	T13	T8	NoRel	true	getirdi	ulaştı
+Relation	T14	T1	NoRel	true	aştı	krizin
+Relation	T14	T22	NoRel	true	aştı	desteklenen
+Relation	T14	T3	NoRel	true	aştı	Kriz
+Relation	T15	T12	NoRel	true	enflasyon	büyüme
+Relation	T15	T17	NoRel	true	enflasyon	temerrütleriyle
+Relation	T15	T18	NoRel	true	enflasyon	otoriterliği
+Relation	T15	T22	NoRel	true	enflasyon	desteklenen
+Relation	T15	T5	NoRel	true	enflasyon	kaybetmesiyle
+Relation	T16	T8	NoRel	true	borç	ulaştı
+Relation	T16	T9	NoRel	true	borç	çıktı
+Relation	T17	T10	NoRel	true	temerrütleriyle	Kriz
+Relation	T17	T15	NoRel	true	temerrütleriyle	enflasyon
+Relation	T17	T6	NoRel	true	temerrütleriyle	başladı
+Relation	T17	T7	NoRel	true	temerrütleriyle	daralma
+Relation	T18	T10	NoRel	true	otoriterliği	Kriz
+Relation	T18	T11	NoRel	true	otoriterliği	Yükselen
+Relation	T19	T10	NoRel	true	fikirleriyle	Kriz
+Relation	T19	T22	NoRel	true	fikirleriyle	desteklenen
+Relation	T19	T4	NoRel	true	fikirleriyle	dalgalanmalar
+Relation	T2	T17	NoRel	true	düşünülmektedir	temerrütleriyle
+Relation	T20	T2	NoRel	true	borçlar	düşünülmektedir
+Relation	T20	T5	NoRel	true	borçlar	kaybetmesiyle
+Relation	T21	T13	NoRel	true	kalınca	getirdi
+Relation	T22	T13	NoRel	true	desteklenen	getirdi
+Relation	T22	T7	NoRel	true	desteklenen	daralma
+Relation	T22	T8	NoRel	true	desteklenen	ulaştı
+Relation	T23	T14	NoRel	true	patlamasının	aştı
+Relation	T3	T7	NoRel	true	Kriz	daralma
+Relation	T4	T23	NoRel	true	dalgalanmalar	patlamasının
+Relation	T5	T23	NoRel	true	kaybetmesiyle	patlamasının
+Relation	T6	T0	NoRel	true	başladı	kaybı
+Relation	T6	T12	NoRel	true	başladı	büyüme
+Relation	T6	T13	NoRel	true	başladı	getirdi
+Relation	T6	T20	NoRel	true	başladı	borçlar
+Relation	T7	T10	NoRel	true	daralma	Kriz
+Relation	T7	T17	NoRel	true	daralma	temerrütleriyle
+Relation	T7	T18	NoRel	true	daralma	otoriterliği
+Relation	T7	T20	NoRel	true	daralma	borçlar
+Relation	T7	T22	NoRel	true	daralma	desteklenen
+Relation	T8	T14	NoRel	true	ulaştı	aştı
+Relation	T9	T0	NoRel	true	çıktı	kaybı
+Relation	T9	T4	NoRel	true	çıktı	dalgalanmalar

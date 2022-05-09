@@ -1,0 +1,29 @@
+Text	Bu durum üzerine Safevi Hemedan valisi Zeynel Han 40.000 kişilik bir kuvvetle bölgeye geldi .	Sabah başlayan muharebe ikindiye kadar Safevilerin üstünlüğüyle devam etmesine rağmen , kendilerinin dört katı kuvvetlerle çarpışan Osmanlı kuvvetleri Sivas valisi Halil Paşa’nın gayretiyle düşmanı bozdular .	Zeynel Han kaçıp savaş alanını terk etti .	Bu arada İran şahı Abbas ölüp , torunu Sam Mirza , Şah Safi unvanıyla yerine geçti .	Osmanlı ordusu ise yoluna devam edip Hemedan’a girdi .
+Event	T0	durum	EVENT	3
+Event	T1	geldi	EVENT	86
+Event	T3	bozdular	EVENT	292
+Event	T6	geçti	EVENT	423
+Event	T7	girdi	EVENT	478
+Event	T8	muharebe	EVENT	109
+Event	T2	kaçıp	EVENT	314
+Event	T4	terk	EVENT	334
+Event	T5	ölüp	EVENT	371
+Relation	T3	T2	CauseEffect	true	bozdular	kaçıp
+Relation	T2	T3	EffectCause	true	kaçıp	bozdular
+Relation	T3	T4	CauseEffect	true	bozdular	terk
+Relation	T4	T3	EffectCause	true	terk	bozdular
+Relation	T5	T6	CauseEffect	true	ölüp	geçti
+Relation	T6	T5	EffectCause	true	geçti	ölüp
+Relation	T3	T7	CauseEffect	true	bozdular	girdi
+Relation	T7	T3	EffectCause	true	girdi	bozdular
+Relation	T0	T6	NoRel	true	durum	geçti
+Relation	T1	T0	NoRel	true	geldi	durum
+Relation	T1	T3	NoRel	true	geldi	bozdular
+Relation	T2	T0	NoRel	true	kaçıp	durum
+Relation	T4	T2	NoRel	true	terk	kaçıp
+Relation	T6	T7	NoRel	true	geçti	girdi
+Relation	T6	T8	NoRel	true	geçti	muharebe
+Relation	T7	T2	NoRel	true	girdi	kaçıp
+Relation	T7	T6	NoRel	true	girdi	geçti
+Relation	T8	T0	NoRel	true	muharebe	durum
+Relation	T8	T7	NoRel	true	muharebe	girdi

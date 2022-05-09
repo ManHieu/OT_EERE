@@ -1,0 +1,17 @@
+Text	Cesetlerden birinin Hitler’in doktoru Ludwig Stumfegger’e ait olduğu belirlendi .	1973 başlarında yüz kimliklerinin doğrulanması aşamasında testler yapılmıştır .	Kısa bir süre sonra , Batı Alman hükûmeti , Bormann'ın öldüğünü ilan etti .	Aile durumda daha fazla adli inceleme olması gerektiğini belirtip , cesedinin yakılmasına izin vermedi .	1998 tarihinde yapılan genetik testin sonucunda , kafatası ve kemiklerin Martin Bormann'a ait olduğu tespit edildi .
+Event	T0	Cesetlerden	EVENT	0
+Event	T1	belirlendi	EVENT	69
+Event	T2	yapılmıştır	EVENT	148
+Event	T3	etti	EVENT	231
+Event	T4	inceleme	EVENT	267
+Event	T5	belirtip	EVENT	295
+Event	T7	edildi	EVENT	451
+Event	T8	doğrulanması	EVENT	116
+Event	T6	testin	EVENT	374
+Relation	T2	T0	NoRel	true	yapılmıştır	Cesetlerden
+Relation	T2	T4	NoRel	true	yapılmıştır	inceleme
+Relation	T2	T5	NoRel	true	yapılmıştır	belirtip
+Relation	T2	T8	NoRel	true	yapılmıştır	doğrulanması
+Relation	T7	T6	NoRel	true	edildi	testin
+Relation	T8	T1	NoRel	true	doğrulanması	belirlendi
+Relation	T8	T4	NoRel	true	doğrulanması	inceleme

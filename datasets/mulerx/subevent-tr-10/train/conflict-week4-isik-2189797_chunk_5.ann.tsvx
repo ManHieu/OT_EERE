@@ -1,0 +1,26 @@
+Text	Sağlık Bakanı Recep Akdağ ise kimliği belirlenen 20 kişiden 15'inin yabancı uyruklu , 5'inin ise Türk olduğunu ve 4'ü ağır olmak üzere 65 kişinin yaralı olarak hastanelerde olduğunu duyurdu .	Reuters , saldırıyı IŞİD'in üstlendiğini duyurdu .	Irak ve Şam İslam Devleti'nin resmî olmayan medya organı Amaq Haber Ajansı , Türkiye'yi " Hristiyanlık koruyucusu " diye nitelendirdiği bir bildiriyle saldırının IŞİD'e bağlı bir militan tarafından yapıldığını ve " Hristiyanların dinden çıkmış bayramlarını kutladığı en meşhur gece kulüplerinden birini vurduğunu " duyurdu .	4 Ocak'ta Türkiye Hükûmeti , saldırganın kimliğinin belirlendiğini açıkladı .	Saldırganın kimliği 8 Ocak 2017 tarihinde İstanbul Emniyeti'nden alınan bilgi ile basın yayın organlarında duyuruldu ; saldırgan Özbek asıllı , 2011 yılından beri Türkiye'de bulunan , Abdulkadir Mashapirov isimli bir IŞİD militanı .
+Event	T0	duyurdu	EVENT	182
+Event	T1	saldırıyı	EVENT	202
+Event	T2	duyurdu	EVENT	233
+Event	T3	saldırının	EVENT	394
+Event	T4	yapıldığını	EVENT	441
+Event	T6	kutladığı	EVENT	500
+Event	T7	vurduğunu	EVENT	546
+Event	T8	duyurdu	EVENT	558
+Event	T9	açıkladı	EVENT	635
+Event	T10	duyuruldu	EVENT	753
+Event	T11	üstlendiğini	EVENT	220
+Event	T12	yaralı	EVENT	146
+Relation	T0	T2	NoRel	true	duyurdu	duyurdu
+Relation	T0	T4	NoRel	true	duyurdu	yapıldığını
+Relation	T10	T0	NoRel	true	duyuruldu	duyurdu
+Relation	T10	T12	NoRel	true	duyuruldu	yaralı
+Relation	T10	T8	NoRel	true	duyuruldu	duyurdu
+Relation	T12	T10	NoRel	true	yaralı	duyuruldu
+Relation	T12	T11	NoRel	true	yaralı	üstlendiğini
+Relation	T12	T7	NoRel	true	yaralı	vurduğunu
+Relation	T4	T9	NoRel	true	yapıldığını	açıkladı
+Relation	T6	T11	NoRel	true	kutladığı	üstlendiğini
+Relation	T6	T12	NoRel	true	kutladığı	yaralı
+Relation	T6	T4	NoRel	true	kutladığı	yapıldığını
+Relation	T8	T7	NoRel	true	duyurdu	vurduğunu

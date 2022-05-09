@@ -1,0 +1,37 @@
+Text	Rambo , Amerika Birleşik Devletleri'ne döndükten sonra , birçok Amerikalı sivilin Vietnam'dan dönen askerlerden nefret ettiğini görür ve kendisinin ve geri dönen diğer askerlerin savaş karşıtı " hippiler " tarafından küçük düşürüldüğünü ve utandırıldığını iddia eder .	Onlara çöp atan , onlara " bebek katili " diyen ve onları toplumdan dışlayanların olduğunu görür .	Rambo'nun Vietnam'daki ve memleketindeki deneyimleri , aşırı bir travma sonrası stres bozukluğu vakasıyla sonuçlanır .	Aynı zamanda , öz kimliği ve derinlemesine düşünme gibi içsel sorunları , Rambo'nun zor durumları " uygar " bir şekilde ele almaktan ziyade topluma karşı saldırgan olmasına neden olmaya başlamıştır .	Bu sebeple İlk Kan filmi bu noktadan toplanır .
+Event	T0	görür	EVENT	128
+Event	T1	deneyimleri	EVENT	409
+Event	T2	travma	EVENT	433
+Event	T3	sonuçlanır	EVENT	474
+Event	T4	düşünme	EVENT	530
+Event	T5	toplanır	EVENT	724
+Event	T6	döndükten	EVENT	39
+Event	T7	dönen	EVENT	156
+Event	T8	düşürüldüğünü	EVENT	223
+Event	T9	utandırıldığını	EVENT	240
+Event	T10	dışlayanların	EVENT	337
+Event	T11	diyen	EVENT	311
+Event	T12	stres bozukluğu	EVENT	448
+Event	T13	saldırgan	EVENT	641
+Relation	T1	T12	CauseEffect	true	deneyimleri	stres bozukluğu
+Relation	T12	T1	EffectCause	true	stres bozukluğu	deneyimleri
+Relation	T1	T2	CauseEffect	true	deneyimleri	travma
+Relation	T2	T1	EffectCause	true	travma	deneyimleri
+Relation	T13	T5	CauseEffect	true	saldırgan	toplanır
+Relation	T5	T13	EffectCause	true	toplanır	saldırgan
+Relation	T0	T2	NoRel	true	görür	travma
+Relation	T11	T0	NoRel	true	diyen	görür
+Relation	T11	T4	NoRel	true	diyen	düşünme
+Relation	T12	T4	NoRel	true	stres bozukluğu	düşünme
+Relation	T3	T10	NoRel	true	sonuçlanır	dışlayanların
+Relation	T4	T7	NoRel	true	düşünme	dönen
+Relation	T4	T9	NoRel	true	düşünme	utandırıldığını
+Relation	T5	T4	NoRel	true	toplanır	düşünme
+Relation	T5	T9	NoRel	true	toplanır	utandırıldığını
+Relation	T6	T0	NoRel	true	döndükten	görür
+Relation	T6	T1	NoRel	true	döndükten	deneyimleri
+Relation	T7	T0	NoRel	true	dönen	görür
+Relation	T7	T10	NoRel	true	dönen	dışlayanların
+Relation	T8	T0	NoRel	true	düşürüldüğünü	görür
+Relation	T8	T12	NoRel	true	düşürüldüğünü	stres bozukluğu
+Relation	T8	T7	NoRel	true	düşürüldüğünü	dönen

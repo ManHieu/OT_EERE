@@ -1,0 +1,35 @@
+Text	Bazı kaynaklar ise 1964 veya 1965 tarihinde Kuveyt'te , Belucistan kökenli bir aileden doğduğunu belirtmektedir .	İlgili raporda Pakistanlı olan Halid Şeyh Muhammed'in Kuveyt'te yetiştiği , Kuveyt hükûmetine bağlı bir lisede eğitim gördüğü ve ülkedeki basın - yayın kuruluşlarında Müslüman Kardeşler ile ilgili çıkan haberlerden etkilenerek 11-12 yaşlarında cihada katılmak istediği belirtilmektedir .	Rapora göre , Afganistan'daki mücahitlerin lideri Abdül Resul Seyyaf'ın 1982 yılında yaptığı konuşmasından bir süre sonra , 16 yaşında Müslüman Kardeşler'e katıldı .	1983 yılında liseden mezun oldu ve Amerika Birleşik Devletleri'ne hareket ederek , Kuzey Karolina eyaletindeki Murfreesboro kasabasında bulunan Chowan Üniversitesi'ne girdi .	Bir süre sonra Kuzey Karolina Tarım ve Teknik Eyalet Üniversitesi'ne geçti ve 1986'da makine mühendisliğinden Bachelor of Science unvanıyla mezun oldu .
+Event	T0	belirtmektedir	EVENT	97
+Event	T1	yetiştiği	EVENT	178
+Event	T3	çıkan	EVENT	311
+Event	T4	etkilenerek	EVENT	329
+Event	T5	belirtilmektedir	EVENT	383
+Event	T6	katıldı	EVENT	558
+Event	T7	hareket	EVENT	634
+Event	T8	girdi	EVENT	735
+Event	T9	geçti	EVENT	812
+Event	T10	doğduğunu	EVENT	87
+Event	T11	eğitim	EVENT	225
+Event	T2	cihada	EVENT	358
+Event	T12	konuşmasından	EVENT	495
+Event	T13	mezun oldu	EVENT	589
+Event	T14	mezun oldu .	EVENT	883
+Event	T15	istediği	EVENT	374
+Relation	T4	T6	CauseEffect	true	etkilenerek	katıldı
+Relation	T6	T4	EffectCause	true	katıldı	etkilenerek
+Relation	T0	T14	NoRel	true	belirtmektedir	mezun oldu .
+Relation	T0	T4	NoRel	true	belirtmektedir	etkilenerek
+Relation	T1	T0	NoRel	true	yetiştiği	belirtmektedir
+Relation	T10	T6	NoRel	true	doğduğunu	katıldı
+Relation	T11	T7	NoRel	true	eğitim	hareket
+Relation	T13	T11	NoRel	true	mezun oldu	eğitim
+Relation	T13	T7	NoRel	true	mezun oldu	hareket
+Relation	T3	T6	NoRel	true	çıkan	katıldı
+Relation	T4	T11	NoRel	true	etkilenerek	eğitim
+Relation	T4	T13	NoRel	true	etkilenerek	mezun oldu
+Relation	T4	T14	NoRel	true	etkilenerek	mezun oldu .
+Relation	T5	T2	NoRel	true	belirtilmektedir	cihada
+Relation	T6	T14	NoRel	true	katıldı	mezun oldu .
+Relation	T7	T14	NoRel	true	hareket	mezun oldu .
+Relation	T7	T5	NoRel	true	hareket	belirtilmektedir
+Relation	T9	T13	NoRel	true	geçti	mezun oldu

@@ -1,0 +1,121 @@
+Text	thumb|	En sporvognskonduktør i Seattle i 1918 nægter passagerer adgang , fordi de ikke har maske på .	Den spanske syge smittede som alle influenzatyper gennem dråber , aerosoler , fra nys , hoste etc. , men var særligt tilbøjelig til at fremkalde ondartet lungebetændelse med blødning i lungevævet , svær åndenød , ophostning af blodig slim og endelig svigt af lungefunktionen , så de syge på grund af lav iltmætning i blodet i slutstadiet fik en mørkeblå til sort kulør .	Der fandtes ingen helbredende behandling , hverken for virusinfektionen eller den komplicerede lungebetændelse .	Der blev alene givet generelle antibakterielle midler og - for at dæmpe symptomerne - febernedsættende , hostestillende , smertestillende , beroligende og alment stimulerende medicin .
+Event	T0	nægter	EVENT	46
+Event	T1	smittede	EVENT	119
+Event	T2	hoste	EVENT	190
+Event	T3	blødning	EVENT	276
+Event	T4	åndenød	EVENT	305
+Event	T5	ophostning	EVENT	315
+Event	T6	svigt	EVENT	352
+Event	T7	fik	EVENT	440
+Event	T8	fandtes	EVENT	477
+Event	T9	behandling	EVENT	503
+Event	T10	givet	EVENT	601
+Event	T11	dæmpe	EVENT	652
+Event	T12	spanske syge	EVENT	106
+Event	T13	nys	EVENT	184
+Event	T14	lungebetændelse	EVENT	256
+Event	T15	syge	EVENT	385
+Event	T16	lav iltmætning	EVENT	402
+Event	T17	virusinfektionen	EVENT	528
+Event	T18	lungebetændelse	EVENT	568
+Event	T19	febernedsættende	EVENT	672
+Event	T20	hostestillende	EVENT	691
+Event	T21	smertestillende	EVENT	708
+Event	T22	beroligende	EVENT	726
+Event	T23	stimulerende	EVENT	748
+Event	T24	har	EVENT	87
+Event	T25	fremkalde	EVENT	237
+Relation	T11	T19	SuperSub	true	dæmpe	febernedsættende
+Relation	T19	T11	SubSuper	true	febernedsættende	dæmpe
+Relation	T11	T20	SuperSub	true	dæmpe	hostestillende
+Relation	T20	T11	SubSuper	true	hostestillende	dæmpe
+Relation	T11	T21	SuperSub	true	dæmpe	smertestillende
+Relation	T21	T11	SubSuper	true	smertestillende	dæmpe
+Relation	T11	T22	SuperSub	true	dæmpe	beroligende
+Relation	T22	T11	SubSuper	true	beroligende	dæmpe
+Relation	T11	T23	SuperSub	true	dæmpe	stimulerende
+Relation	T23	T11	SubSuper	true	stimulerende	dæmpe
+Relation	T10	T11	SuperSub	true	givet	dæmpe
+Relation	T11	T10	SubSuper	true	dæmpe	givet
+Relation	T2	T1	SuperSub	true	hoste	smittede
+Relation	T1	T2	SubSuper	true	smittede	hoste
+Relation	T14	T3	SuperSub	true	lungebetændelse	blødning
+Relation	T3	T14	SubSuper	true	blødning	lungebetændelse
+Relation	T14	T4	SuperSub	true	lungebetændelse	åndenød
+Relation	T4	T14	SubSuper	true	åndenød	lungebetændelse
+Relation	T14	T5	SuperSub	true	lungebetændelse	ophostning
+Relation	T5	T14	SubSuper	true	ophostning	lungebetændelse
+Relation	T14	T6	SuperSub	true	lungebetændelse	svigt
+Relation	T6	T14	SubSuper	true	svigt	lungebetændelse
+Relation	T0	T18	NoRel	true	nægter	lungebetændelse
+Relation	T0	T4	NoRel	true	nægter	åndenød
+Relation	T0	T7	NoRel	true	nægter	fik
+Relation	T1	T15	NoRel	true	smittede	syge
+Relation	T1	T16	NoRel	true	smittede	lav iltmætning
+Relation	T1	T22	NoRel	true	smittede	beroligende
+Relation	T1	T4	NoRel	true	smittede	åndenød
+Relation	T10	T12	NoRel	true	givet	spanske syge
+Relation	T10	T20	NoRel	true	givet	hostestillende
+Relation	T10	T23	NoRel	true	givet	stimulerende
+Relation	T10	T5	NoRel	true	givet	ophostning
+Relation	T10	T7	NoRel	true	givet	fik
+Relation	T10	T9	NoRel	true	givet	behandling
+Relation	T11	T17	NoRel	true	dæmpe	virusinfektionen
+Relation	T11	T25	NoRel	true	dæmpe	fremkalde
+Relation	T11	T8	NoRel	true	dæmpe	fandtes
+Relation	T12	T14	NoRel	true	spanske syge	lungebetændelse
+Relation	T13	T15	NoRel	true	nys	syge
+Relation	T13	T17	NoRel	true	nys	virusinfektionen
+Relation	T13	T18	NoRel	true	nys	lungebetændelse
+Relation	T13	T21	NoRel	true	nys	smertestillende
+Relation	T13	T23	NoRel	true	nys	stimulerende
+Relation	T13	T25	NoRel	true	nys	fremkalde
+Relation	T14	T2	NoRel	true	lungebetændelse	hoste
+Relation	T15	T0	NoRel	true	syge	nægter
+Relation	T15	T24	NoRel	true	syge	har
+Relation	T16	T3	NoRel	true	lav iltmætning	blødning
+Relation	T16	T6	NoRel	true	lav iltmætning	svigt
+Relation	T16	T8	NoRel	true	lav iltmætning	fandtes
+Relation	T17	T12	NoRel	true	virusinfektionen	spanske syge
+Relation	T17	T21	NoRel	true	virusinfektionen	smertestillende
+Relation	T18	T11	NoRel	true	lungebetændelse	dæmpe
+Relation	T18	T7	NoRel	true	lungebetændelse	fik
+Relation	T18	T9	NoRel	true	lungebetændelse	behandling
+Relation	T19	T4	NoRel	true	febernedsættende	åndenød
+Relation	T2	T22	NoRel	true	hoste	beroligende
+Relation	T2	T5	NoRel	true	hoste	ophostning
+Relation	T20	T0	NoRel	true	hostestillende	nægter
+Relation	T20	T5	NoRel	true	hostestillende	ophostning
+Relation	T21	T18	NoRel	true	smertestillende	lungebetændelse
+Relation	T21	T6	NoRel	true	smertestillende	svigt
+Relation	T22	T17	NoRel	true	beroligende	virusinfektionen
+Relation	T22	T7	NoRel	true	beroligende	fik
+Relation	T23	T18	NoRel	true	stimulerende	lungebetændelse
+Relation	T23	T2	NoRel	true	stimulerende	hoste
+Relation	T23	T21	NoRel	true	stimulerende	smertestillende
+Relation	T23	T22	NoRel	true	stimulerende	beroligende
+Relation	T23	T7	NoRel	true	stimulerende	fik
+Relation	T24	T14	NoRel	true	har	lungebetændelse
+Relation	T24	T15	NoRel	true	har	syge
+Relation	T24	T21	NoRel	true	har	smertestillende
+Relation	T24	T25	NoRel	true	har	fremkalde
+Relation	T25	T12	NoRel	true	fremkalde	spanske syge
+Relation	T25	T17	NoRel	true	fremkalde	virusinfektionen
+Relation	T25	T22	NoRel	true	fremkalde	beroligende
+Relation	T25	T24	NoRel	true	fremkalde	har
+Relation	T25	T3	NoRel	true	fremkalde	blødning
+Relation	T3	T0	NoRel	true	blødning	nægter
+Relation	T3	T16	NoRel	true	blødning	lav iltmætning
+Relation	T5	T15	NoRel	true	ophostning	syge
+Relation	T5	T9	NoRel	true	ophostning	behandling
+Relation	T6	T11	NoRel	true	svigt	dæmpe
+Relation	T6	T12	NoRel	true	svigt	spanske syge
+Relation	T6	T2	NoRel	true	svigt	hoste
+Relation	T6	T5	NoRel	true	svigt	ophostning
+Relation	T6	T9	NoRel	true	svigt	behandling
+Relation	T7	T2	NoRel	true	fik	hoste
+Relation	T7	T21	NoRel	true	fik	smertestillende
+Relation	T8	T17	NoRel	true	fandtes	virusinfektionen
+Relation	T8	T23	NoRel	true	fandtes	stimulerende
+Relation	T9	T24	NoRel	true	behandling	har
+Relation	T9	T3	NoRel	true	behandling	blødning

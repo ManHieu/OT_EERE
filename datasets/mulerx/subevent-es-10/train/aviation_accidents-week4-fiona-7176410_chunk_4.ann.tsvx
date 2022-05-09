@@ -1,0 +1,38 @@
+Text	La tripulación se eyectó y cayeron , según diversos medios , en un terreno ocupado por insurgentes locales de etnia turcomana .	Antes de conocerse que el piloto y el navegante estaban vivos , el cuerpo de uno de los tripulantes fue mostrado aparentemente muerto en un vídeo en el que varias personas se felicitaban por el derribo del avión .	La insignia del uniforme indicaba que se trataba de un piloto integrante de las unidades rusas que operaban desde la base de Latakia .	Posteriormente , en otras imágenes se podía ver caer en paracaídas a los dos miembros de la tripulación mientras se oían disparos .	Los rebeldes sirios les dispararon mientras éstos caían .
+Event	T0	eyectó	EVENT	18
+Event	T1	cayeron	EVENT	27
+Event	T2	ocupado	EVENT	75
+Event	T3	conocerse	EVENT	137
+Event	T4	mostrado	EVENT	232
+Event	T5	muerto	EVENT	255
+Event	T6	felicitaban	EVENT	303
+Event	T7	derribo	EVENT	322
+Event	T8	indicaba	EVENT	367
+Event	T9	operaban	EVENT	441
+Event	T10	caer	EVENT	525
+Event	T11	disparos	EVENT	598
+Event	T12	dispararon	EVENT	633
+Event	T13	caían	EVENT	659
+Relation	T0	T2	NoRel	true	eyectó	ocupado
+Relation	T0	T7	NoRel	true	eyectó	derribo
+Relation	T0	T8	NoRel	true	eyectó	indicaba
+Relation	T1	T5	NoRel	true	cayeron	muerto
+Relation	T1	T8	NoRel	true	cayeron	indicaba
+Relation	T10	T2	NoRel	true	caer	ocupado
+Relation	T10	T6	NoRel	true	caer	felicitaban
+Relation	T11	T2	NoRel	true	disparos	ocupado
+Relation	T11	T6	NoRel	true	disparos	felicitaban
+Relation	T12	T1	NoRel	true	dispararon	cayeron
+Relation	T12	T11	NoRel	true	dispararon	disparos
+Relation	T12	T6	NoRel	true	dispararon	felicitaban
+Relation	T13	T2	NoRel	true	caían	ocupado
+Relation	T4	T1	NoRel	true	mostrado	cayeron
+Relation	T4	T5	NoRel	true	mostrado	muerto
+Relation	T5	T11	NoRel	true	muerto	disparos
+Relation	T5	T12	NoRel	true	muerto	dispararon
+Relation	T7	T11	NoRel	true	derribo	disparos
+Relation	T7	T3	NoRel	true	derribo	conocerse
+Relation	T8	T6	NoRel	true	indicaba	felicitaban
+Relation	T8	T7	NoRel	true	indicaba	derribo
+Relation	T9	T0	NoRel	true	operaban	eyectó
+Relation	T9	T5	NoRel	true	operaban	muerto

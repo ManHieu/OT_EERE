@@ -1,0 +1,29 @@
+Text	Si bien la Administración Federal de Aviación no tiene jurisdicción oficial en Cuba , su asistencia fue voluntaria y bien recibida por los funcionarios cubanos debido a la falta general de experiencia de los investigadores locales con aviones construidos en Estados Unidos .	México proporcionó asistencia adicional , donde se registró la aeronave , y también donde se basaron la aerolínea y la tripulación de vuelo que poseían y operaban la aeronave .	La investigación multinacional finalmente determinó en septiembre de 2019 que la aeronave estaba fuera del centro de gravedad .	Los pilotos no tuvieron éxito en un intento de remediar los problemas relacionados con el desequilibrio de carga / peso del avión .	El anterior accidente aéreo importante en Cuba fue el vuelo 883 de Aero Caribbean en 2010 con 68 fallecidos .
+Event	T0	asistencia	EVENT	89
+Event	T1	recibida	EVENT	122
+Event	T2	construidos	EVENT	243
+Event	T3	asistencia	EVENT	294
+Event	T4	registró	EVENT	326
+Event	T5	basaron	EVENT	368
+Event	T6	investigación	EVENT	455
+Event	T7	determinó	EVENT	494
+Event	T8	éxito	EVENT	604
+Event	T9	intento	EVENT	616
+Event	T10	remediar	EVENT	627
+Event	T11	accidente	EVENT	724
+Event	T12	vuelo	EVENT	766
+Event	T13	fallecidos	EVENT	809
+Relation	T0	T6	NoRel	true	asistencia	investigación
+Relation	T10	T1	NoRel	true	remediar	recibida
+Relation	T12	T6	NoRel	true	vuelo	investigación
+Relation	T13	T1	NoRel	true	fallecidos	recibida
+Relation	T2	T11	NoRel	true	construidos	accidente
+Relation	T2	T7	NoRel	true	construidos	determinó
+Relation	T4	T12	NoRel	true	registró	vuelo
+Relation	T7	T10	NoRel	true	determinó	remediar
+Relation	T7	T11	NoRel	true	determinó	accidente
+Relation	T9	T0	NoRel	true	intento	asistencia
+Relation	T9	T12	NoRel	true	intento	vuelo
+Relation	T9	T2	NoRel	true	intento	construidos
+Relation	T9	T4	NoRel	true	intento	registró
+Relation	T9	T7	NoRel	true	intento	determinó

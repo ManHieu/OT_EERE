@@ -1,0 +1,59 @@
+Text	Sin embargo , horas después empezaron a contabilizarse personas heridas que fueron trasladadas a hospitales locales	El último parte médico afirmó que 181 personas habían sido enviadas a centros médicos , de los cuales 49 estaban en estado crítico y dos habían fallecido .	Tres estudiantes universitarias de nacionalidad china murieron debido al accidente , una de ellas murió en el accidente aéreo , otra falleció días más tarde en un hospital .	La joven que se creyó muerta por atropello de los bomberos se ha confirmado que ya estaba muerta tras el impacto no siendo el camión de bomberos el causante de su muerte .	Un oficial del FBI afirmó que no había pruebas de que el accidente se tratara de un ataque terrorista .
+Event	T0	empezaron	EVENT	28
+Event	T1	contabilizarse	EVENT	40
+Event	T2	heridas	EVENT	64
+Event	T3	trasladadas	EVENT	83
+Event	T4	afirmó	EVENT	139
+Event	T5	enviadas	EVENT	175
+Event	T6	fallecido	EVENT	260
+Event	T7	accidente	EVENT	345
+Event	T8	murió	EVENT	370
+Event	T9	aéreo	EVENT	392
+Event	T10	falleció	EVENT	405
+Event	T11	muerta	EVENT	468
+Event	T12	atropello	EVENT	479
+Event	T13	confirmado	EVENT	511
+Event	T14	muerta	EVENT	536
+Event	T15	impacto	EVENT	551
+Event	T16	muerte	EVENT	609
+Event	T17	afirmó	EVENT	637
+Event	T18	pruebas	EVENT	657
+Event	T19	accidente	EVENT	675
+Event	T20	ataque	EVENT	702
+Relation	T7	T2	CauseEffect	true	accidente	heridas
+Relation	T2	T7	EffectCause	true	heridas	accidente
+Relation	T7	T6	CauseEffect	true	accidente	fallecido
+Relation	T6	T7	EffectCause	true	fallecido	accidente
+Relation	T0	T17	NoRel	true	empezaron	afirmó
+Relation	T0	T2	NoRel	true	empezaron	heridas
+Relation	T1	T19	NoRel	true	contabilizarse	accidente
+Relation	T10	T19	NoRel	true	falleció	accidente
+Relation	T11	T10	NoRel	true	muerta	falleció
+Relation	T11	T17	NoRel	true	muerta	afirmó
+Relation	T11	T19	NoRel	true	muerta	accidente
+Relation	T11	T4	NoRel	true	muerta	afirmó
+Relation	T11	T5	NoRel	true	muerta	enviadas
+Relation	T11	T7	NoRel	true	muerta	accidente
+Relation	T12	T0	NoRel	true	atropello	empezaron
+Relation	T12	T10	NoRel	true	atropello	falleció
+Relation	T13	T17	NoRel	true	confirmado	afirmó
+Relation	T13	T5	NoRel	true	confirmado	enviadas
+Relation	T14	T19	NoRel	true	muerta	accidente
+Relation	T16	T18	NoRel	true	muerte	pruebas
+Relation	T17	T6	NoRel	true	afirmó	fallecido
+Relation	T17	T8	NoRel	true	afirmó	murió
+Relation	T18	T11	NoRel	true	pruebas	muerta
+Relation	T18	T12	NoRel	true	pruebas	atropello
+Relation	T18	T15	NoRel	true	pruebas	impacto
+Relation	T19	T20	NoRel	true	accidente	ataque
+Relation	T2	T13	NoRel	true	heridas	confirmado
+Relation	T2	T6	NoRel	true	heridas	fallecido
+Relation	T3	T0	NoRel	true	trasladadas	empezaron
+Relation	T4	T16	NoRel	true	afirmó	muerte
+Relation	T6	T14	NoRel	true	fallecido	muerta
+Relation	T6	T20	NoRel	true	fallecido	ataque
+Relation	T7	T19	NoRel	true	accidente	accidente
+Relation	T8	T0	NoRel	true	murió	empezaron
+Relation	T8	T7	NoRel	true	murió	accidente
+Relation	T9	T3	NoRel	true	aéreo	trasladadas
+Relation	T9	T7	NoRel	true	aéreo	accidente

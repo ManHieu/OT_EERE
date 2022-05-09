@@ -1,0 +1,26 @@
+Text	A su llegada a Acra , el capitán voló una aproximación acoplada al Sistema de Aterrizaje por Instrumentos ( ILS ) , hasta que vio la pista .	Luego desconectó el piloto automático a 500 pies y voló manualmente la aeronave .	Después de desconectar el piloto automático , entró en condiciones de IMC severas bajo la lluvia .	La aeronave experimentó una aproximación inestable a una alta velocidad de 167kts y aterrizó con un viento de 050_/_15kts a una velocidad de 154kts y alrededor de 5807 pies desde el umbral de la pista 21 y 4000 pies desde el umbral de la pista 03 con visibilidad nula .	La tripulación desplegó inversores de empuje y aplicó los frenos normales , así como los frenos neumáticos de emergencia , pero estas acciones fueron ineficaces para detener la aeronave .
+Event	T0	llegada	EVENT	5
+Event	T1	vio	EVENT	126
+Event	T2	desconectó	EVENT	147
+Event	T3	voló	EVENT	192
+Event	T4	desconectar	EVENT	234
+Event	T5	lluvia	EVENT	313
+Event	T6	experimentó	EVENT	334
+Event	T7	aterrizó	EVENT	406
+Event	T8	desplegó	EVENT	607
+Event	T9	empuje	EVENT	630
+Event	T10	aplicó	EVENT	639
+Event	T11	acciones	EVENT	726
+Event	T12	detener	EVENT	758
+Relation	T0	T1	NoRel	true	llegada	vio
+Relation	T1	T4	NoRel	true	vio	desconectar
+Relation	T11	T7	NoRel	true	acciones	aterrizó
+Relation	T12	T0	NoRel	true	detener	llegada
+Relation	T2	T8	NoRel	true	desconectó	desplegó
+Relation	T5	T1	NoRel	true	lluvia	vio
+Relation	T5	T10	NoRel	true	lluvia	aplicó
+Relation	T6	T10	NoRel	true	experimentó	aplicó
+Relation	T6	T9	NoRel	true	experimentó	empuje
+Relation	T8	T1	NoRel	true	desplegó	vio
+Relation	T8	T9	NoRel	true	desplegó	empuje
+Relation	T9	T5	NoRel	true	empuje	lluvia

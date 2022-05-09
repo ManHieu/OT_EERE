@@ -1,0 +1,17 @@
+Text	Cambridgedeki St. John okulunda eğitim gördü .	Yüksek öğrenimini 1569’da Cambridge tamamlayıp burada kısa bir süre veznedar olarak çalıştıktan sonra tıp eğitimi almak üzere Britanya’ya gitti .	1573’te Royal College of Physicians üyeliğine kabul edildi .	1600’de ise bu birliğin başkanı seçildi .	1601’den I. Elizabeth’in 1603’teki ölümüne kadar onun doktoru olarak çalıştı ve daha sonra I. James’in de doktoru oldu .
+Event	T1	öğrenimini	EVENT	54
+Event	T2	tamamlayıp	EVENT	83
+Event	T3	gitti	EVENT	185
+Event	T5	seçildi	EVENT	286
+Event	T6	ölümüne	EVENT	331
+Event	T7	çalıştı	EVENT	365
+Event	T8	eğitim	EVENT	32
+Event	T9	eğitimi	EVENT	153
+Event	T4	kabul edildi	EVENT	239
+Event	T10	oldu	EVENT	410
+Relation	T1	T8	NoRel	true	öğrenimini	eğitim
+Relation	T2	T8	NoRel	true	tamamlayıp	eğitim
+Relation	T2	T9	NoRel	true	tamamlayıp	eğitimi
+Relation	T3	T10	NoRel	true	gitti	oldu
+Relation	T3	T9	NoRel	true	gitti	eğitimi
+Relation	T4	T7	NoRel	true	kabul edildi	çalıştı

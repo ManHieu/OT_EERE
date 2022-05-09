@@ -1,0 +1,81 @@
+Text	I 2009 fandt et udbrud af svineinfluenza sted i Mexico , og der er beviser for at Mexico allerede havde været i en epidemi i flere måneder før udbruddet blev erkendt .	Straks efter lukkede regeringen de fleste af Mexico Citys offentlige og private kontorer i et forsøg på at begrænse smitten .	Tidligt i juni mens virussen spredtes over hele verden udnævnte WHO den til en _ pandemi_ , men sagde samtidig , at de fleste sygdomstilfælde var af " moderat alvorlighed " .	På samme tidspunkt ændrede WHO sin definition fra 2003 af en _ pandemi_ , sådan at det ikke længere er en forudsætning at en virus forårsager et stort antal døde eller alvorligt syge , for at det skal kaldes en _ pandemi_ .	Det er nu tilstrækkeligt at der dukker et nyt virus op , som befolkningen ikke er immune overfor .
+Event	T0	fandt	EVENT	7
+Event	T1	udbrud	EVENT	16
+Event	T2	epidemi	EVENT	115
+Event	T3	udbruddet	EVENT	143
+Event	T4	erkendt	EVENT	158
+Event	T5	lukkede	EVENT	181
+Event	T6	forsøg	EVENT	262
+Event	T7	smitten	EVENT	284
+Event	T8	spredtes	EVENT	323
+Event	T9	udnævnte	EVENT	349
+Event	T10	sagde	EVENT	390
+Event	T11	sygdomstilfælde	EVENT	420
+Event	T12	ændrede	EVENT	488
+Event	T13	forårsager	EVENT	600
+Event	T14	døde	EVENT	626
+Event	T15	syge	EVENT	647
+Event	T16	dukker	EVENT	725
+Event	T17	svineinfluenza	EVENT	26
+Event	T18	pandemi_	EVENT	375
+Event	T19	pandemi_	EVENT	532
+Event	T20	virus	EVENT	594
+Event	T21	pandemi_	EVENT	682
+Event	T22	nyt virus	EVENT	735
+Event	T23	immune	EVENT	775
+Relation	T5	T7	CauseEffect	true	lukkede	smitten
+Relation	T7	T5	EffectCause	true	smitten	lukkede
+Relation	T6	T5	CauseEffect	true	forsøg	lukkede
+Relation	T5	T6	EffectCause	true	lukkede	forsøg
+Relation	T0	T6	NoRel	true	fandt	forsøg
+Relation	T1	T2	NoRel	true	udbrud	epidemi
+Relation	T1	T6	NoRel	true	udbrud	forsøg
+Relation	T10	T13	NoRel	true	sagde	forårsager
+Relation	T10	T20	NoRel	true	sagde	virus
+Relation	T10	T4	NoRel	true	sagde	erkendt
+Relation	T11	T23	NoRel	true	sygdomstilfælde	immune
+Relation	T12	T2	NoRel	true	ændrede	epidemi
+Relation	T13	T15	NoRel	true	forårsager	syge
+Relation	T13	T9	NoRel	true	forårsager	udnævnte
+Relation	T14	T13	NoRel	true	døde	forårsager
+Relation	T14	T20	NoRel	true	døde	virus
+Relation	T14	T6	NoRel	true	døde	forsøg
+Relation	T15	T16	NoRel	true	syge	dukker
+Relation	T15	T20	NoRel	true	syge	virus
+Relation	T16	T13	NoRel	true	dukker	forårsager
+Relation	T18	T10	NoRel	true	pandemi_	sagde
+Relation	T2	T17	NoRel	true	epidemi	svineinfluenza
+Relation	T2	T4	NoRel	true	epidemi	erkendt
+Relation	T20	T11	NoRel	true	virus	sygdomstilfælde
+Relation	T20	T15	NoRel	true	virus	syge
+Relation	T20	T21	NoRel	true	virus	pandemi_
+Relation	T20	T4	NoRel	true	virus	erkendt
+Relation	T20	T5	NoRel	true	virus	lukkede
+Relation	T20	T7	NoRel	true	virus	smitten
+Relation	T21	T3	NoRel	true	pandemi_	udbruddet
+Relation	T22	T1	NoRel	true	nyt virus	udbrud
+Relation	T22	T12	NoRel	true	nyt virus	ændrede
+Relation	T22	T21	NoRel	true	nyt virus	pandemi_
+Relation	T23	T11	NoRel	true	immune	sygdomstilfælde
+Relation	T23	T15	NoRel	true	immune	syge
+Relation	T23	T8	NoRel	true	immune	spredtes
+Relation	T3	T11	NoRel	true	udbruddet	sygdomstilfælde
+Relation	T3	T2	NoRel	true	udbruddet	epidemi
+Relation	T3	T20	NoRel	true	udbruddet	virus
+Relation	T3	T23	NoRel	true	udbruddet	immune
+Relation	T3	T9	NoRel	true	udbruddet	udnævnte
+Relation	T4	T1	NoRel	true	erkendt	udbrud
+Relation	T4	T15	NoRel	true	erkendt	syge
+Relation	T4	T19	NoRel	true	erkendt	pandemi_
+Relation	T5	T12	NoRel	true	lukkede	ændrede
+Relation	T5	T13	NoRel	true	lukkede	forårsager
+Relation	T6	T9	NoRel	true	forsøg	udnævnte
+Relation	T7	T21	NoRel	true	smitten	pandemi_
+Relation	T7	T23	NoRel	true	smitten	immune
+Relation	T8	T2	NoRel	true	spredtes	epidemi
+Relation	T8	T5	NoRel	true	spredtes	lukkede
+Relation	T9	T12	NoRel	true	udnævnte	ændrede
+Relation	T9	T18	NoRel	true	udnævnte	pandemi_
+Relation	T9	T2	NoRel	true	udnævnte	epidemi
+Relation	T9	T22	NoRel	true	udnævnte	nyt virus
+Relation	T9	T6	NoRel	true	udnævnte	forsøg

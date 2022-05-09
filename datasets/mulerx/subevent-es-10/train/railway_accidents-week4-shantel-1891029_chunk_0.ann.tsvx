@@ -1,0 +1,40 @@
+Text	El ACCIDENTE DE TRENES DE CHATSWORTH EN LOS ÁNGELES fue un accidente ferroviario que ocurrió el 12 de septiembre de 2008 a las 16:23 PDT ( 23:23 GMT ) en el distrito Chatsworth de Los Ángeles , California en los Estados Unidos .	La colisión es el accidente ferroviario más mortífero en los Estados Unidos desde el accidente ferroviario de Big Bayou Canot de 1993 .	Los motivos del choque aún no se han esclarecido pero Tyrell especificó a ABC7 que la locomotora estaba jalando al tren de Metrolink , y que la fuerza de la colisión al parecer empujó a la pesada locomotora al primer vagón de pasajeros , el cual se volcó a un lado .	Los trenes viajaban por la misma vía , y aparentemente los trenes se cambian desde una locación remota .	Tyrell le dijo a la emisora que “ _ claramente algo estuvo mal _ ” .
+Event	T0	ACCIDENTE	EVENT	3
+Event	T2	colisión	EVENT	232
+Event	T3	accidente	EVENT	247
+Event	T4	accidente	EVENT	314
+Event	T5	choque	EVENT	381
+Event	T6	esclarecido	EVENT	402
+Event	T7	especificó	EVENT	426
+Event	T8	jalando	EVENT	469
+Event	T9	colisión	EVENT	522
+Event	T10	empujó	EVENT	542
+Event	T11	volcó	EVENT	614
+Event	T12	viajaban	EVENT	643
+Event	T13	cambian	EVENT	701
+Event	T14	dijo	EVENT	747
+Relation	T0	T10	NoRel	true	ACCIDENTE	empujó
+Relation	T0	T14	NoRel	true	ACCIDENTE	dijo
+Relation	T10	T0	NoRel	true	empujó	ACCIDENTE
+Relation	T10	T12	NoRel	true	empujó	viajaban
+Relation	T11	T4	NoRel	true	volcó	accidente
+Relation	T12	T13	NoRel	true	viajaban	cambian
+Relation	T13	T0	NoRel	true	cambian	ACCIDENTE
+Relation	T13	T10	NoRel	true	cambian	empujó
+Relation	T13	T4	NoRel	true	cambian	accidente
+Relation	T3	T13	NoRel	true	accidente	cambian
+Relation	T4	T10	NoRel	true	accidente	empujó
+Relation	T4	T2	NoRel	true	accidente	colisión
+Relation	T4	T3	NoRel	true	accidente	accidente
+Relation	T5	T12	NoRel	true	choque	viajaban
+Relation	T5	T2	NoRel	true	choque	colisión
+Relation	T5	T4	NoRel	true	choque	accidente
+Relation	T5	T9	NoRel	true	choque	colisión
+Relation	T6	T12	NoRel	true	esclarecido	viajaban
+Relation	T6	T7	NoRel	true	esclarecido	especificó
+Relation	T6	T8	NoRel	true	esclarecido	jalando
+Relation	T7	T11	NoRel	true	especificó	volcó
+Relation	T7	T12	NoRel	true	especificó	viajaban
+Relation	T7	T5	NoRel	true	especificó	choque
+Relation	T8	T0	NoRel	true	jalando	ACCIDENTE
+Relation	T9	T13	NoRel	true	colisión	cambian

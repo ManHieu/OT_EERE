@@ -1,0 +1,62 @@
+Text	Minutos después del aterrizaje , la información que proporcionó el piloto del jet permitió relacionar con más claridad los dos eventos .	El vuelo 1907 había perdido contacto de radio y radar con la torre de control aéreo poco antes de la colisión .	Según informes , la tripulación del Embraer habría atestiguado que volaban a 37.000 pies sobre el nivel del mar cuando sucedió « el evidente impacto » .	También afirmaron que minutos antes de la colisión habían perdido contacto con control aéreo y el sistema de anticolisión no informó de ningún tráfico aéreo cercano .	Algunas fuentes informaron que un testigo presencial , un granjero local , dijo que vio un « avión comercial grande » volar a baja altitud en la montaña de Cachimbo , cerca de Pará .
+Event	T0	aterrizaje	EVENT	20
+Event	T1	proporcionó	EVENT	52
+Event	T2	eventos	EVENT	127
+Event	T4	colisión	EVENT	238
+Event	T5	informes	EVENT	255
+Event	T6	atestiguado	EVENT	300
+Event	T7	volaban	EVENT	316
+Event	T8	sucedió	EVENT	368
+Event	T9	impacto	EVENT	390
+Event	T10	afirmaron	EVENT	410
+Event	T11	colisión	EVENT	444
+Event	T12	contacto	EVENT	468
+Event	T13	anticolisión	EVENT	511
+Event	T14	informó	EVENT	527
+Event	T15	tráfico	EVENT	545
+Event	T16	informaron	EVENT	585
+Event	T17	dijo	EVENT	644
+Event	T18	vio	EVENT	653
+Event	T19	volar	EVENT	687
+Event	T20	vuelo	EVENT	140
+Event	T3	perdido	EVENT	157
+Relation	T1	T0	NoRel	true	proporcionó	aterrizaje
+Relation	T1	T5	NoRel	true	proporcionó	informes
+Relation	T10	T19	NoRel	true	afirmaron	volar
+Relation	T11	T15	NoRel	true	colisión	tráfico
+Relation	T11	T17	NoRel	true	colisión	dijo
+Relation	T11	T20	NoRel	true	colisión	vuelo
+Relation	T11	T8	NoRel	true	colisión	sucedió
+Relation	T13	T11	NoRel	true	anticolisión	colisión
+Relation	T13	T2	NoRel	true	anticolisión	eventos
+Relation	T13	T3	NoRel	true	anticolisión	perdido
+Relation	T13	T8	NoRel	true	anticolisión	sucedió
+Relation	T14	T1	NoRel	true	informó	proporcionó
+Relation	T14	T12	NoRel	true	informó	contacto
+Relation	T14	T19	NoRel	true	informó	volar
+Relation	T14	T2	NoRel	true	informó	eventos
+Relation	T15	T11	NoRel	true	tráfico	colisión
+Relation	T15	T3	NoRel	true	tráfico	perdido
+Relation	T15	T9	NoRel	true	tráfico	impacto
+Relation	T16	T10	NoRel	true	informaron	afirmaron
+Relation	T16	T15	NoRel	true	informaron	tráfico
+Relation	T17	T5	NoRel	true	dijo	informes
+Relation	T18	T15	NoRel	true	vio	tráfico
+Relation	T18	T2	NoRel	true	vio	eventos
+Relation	T18	T4	NoRel	true	vio	colisión
+Relation	T19	T12	NoRel	true	volar	contacto
+Relation	T2	T6	NoRel	true	eventos	atestiguado
+Relation	T2	T7	NoRel	true	eventos	volaban
+Relation	T3	T6	NoRel	true	perdido	atestiguado
+Relation	T4	T7	NoRel	true	colisión	volaban
+Relation	T5	T14	NoRel	true	informes	informó
+Relation	T5	T16	NoRel	true	informes	informaron
+Relation	T5	T2	NoRel	true	informes	eventos
+Relation	T5	T4	NoRel	true	informes	colisión
+Relation	T6	T15	NoRel	true	atestiguado	tráfico
+Relation	T6	T16	NoRel	true	atestiguado	informaron
+Relation	T7	T16	NoRel	true	volaban	informaron
+Relation	T7	T2	NoRel	true	volaban	eventos
+Relation	T7	T6	NoRel	true	volaban	atestiguado
+Relation	T9	T13	NoRel	true	impacto	anticolisión
+Relation	T9	T7	NoRel	true	impacto	volaban

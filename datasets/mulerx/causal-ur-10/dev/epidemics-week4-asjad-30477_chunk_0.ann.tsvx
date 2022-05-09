@@ -1,0 +1,17 @@
+Text	تصغیر|250px |صومالیہ قحط کے دوران بچے خوراک کے منتظر ہیں ۔	قحط غذائی قلت پر محیط ایسی صورت حال ہے ، جس میں کسی بھی جاندار کو خوردنی اشیاء دستیاب نہ ہوں ۔ یا خوردنی اشیاء کی شدید قلت پڑ جائے جو عموما زمینی خرابی ، خشک سالی اور وبائی امراض کی بدولت ہوسکتی ہے ۔	ایسی صورت حال میں بڑے پیمانے پر اموات کا بھی خدشہ ہوتا ہے ۔	ہندوستان کے لوگ غیر متوقع خشک سالی کے نتائج سے بخوبی واقف تھے اور اتنا اناج ذخیرہ کر کے رکھتے تھے کہ بارش نہ ہونے کے باوجود غذا کی کمی نہ ہو ۔	مغلوں کے دور حکومت میں لگان ( ٹیکس ) 10 سے 15 فیصد ہوا کرتا تھا جسے ادا کرنے کے بعد بھی عوام کے پاس کافی غلہ بچ جاتا تھا ۔
+Event	T0	قحط	EVENT	21
+Event	T1	قلت	EVENT	69
+Event	T2	قلت	EVENT	178
+Event	T3	اموات	EVENT	291
+Event	T4	سالی	EVENT	349
+Event	T5	بارش	EVENT	420
+Event	T6	کمی	EVENT	450
+Relation	T1	T3	CauseEffect	true	قلت	اموات
+Relation	T3	T1	EffectCause	true	اموات	قلت
+Relation	T2	T3	CauseEffect	true	قلت	اموات
+Relation	T3	T2	EffectCause	true	اموات	قلت
+Relation	T0	T2	NoRel	true	قحط	قلت
+Relation	T0	T5	NoRel	true	قحط	بارش
+Relation	T0	T6	NoRel	true	قحط	کمی
+Relation	T2	T4	NoRel	true	قلت	سالی
+Relation	T5	T4	NoRel	true	بارش	سالی

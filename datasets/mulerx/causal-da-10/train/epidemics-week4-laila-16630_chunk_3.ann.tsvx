@@ -1,0 +1,35 @@
+Text	Det er uklart hvordan udtrykket " den sorte død " er opstået .	En skribent i 1800-tallet mente det stammede fra symptomerne , de sorte bylder .	En anden skribent , F._A. Gasquet , mente det i stedet henviste til den udbredte sorg og pessimisme .	thumb|	Kort over pestens spredning ved det første udbrud i Europa .
+Event	T1	opstået	EVENT	53
+Event	T2	mente	EVENT	89
+Event	T3	stammede	EVENT	99
+Event	T4	bylder	EVENT	135
+Event	T5	henviste	EVENT	199
+Event	T6	sorg	EVENT	225
+Event	T7	pessimisme	EVENT	233
+Event	T8	spredning	EVENT	271
+Event	T9	udbrud	EVENT	296
+Event	T10	den sorte død	EVENT	34
+Event	T11	pestens	EVENT	263
+Event	T12	udtrykket	EVENT	22
+Relation	T10	T4	CauseEffect	true	den sorte død	bylder
+Relation	T4	T10	EffectCause	true	bylder	den sorte død
+Relation	T10	T6	CauseEffect	true	den sorte død	sorg
+Relation	T6	T10	EffectCause	true	sorg	den sorte død
+Relation	T10	T7	CauseEffect	true	den sorte død	pessimisme
+Relation	T7	T10	EffectCause	true	pessimisme	den sorte død
+Relation	T4	T12	CauseEffect	true	bylder	udtrykket
+Relation	T12	T4	EffectCause	true	udtrykket	bylder
+Relation	T6	T12	CauseEffect	true	sorg	udtrykket
+Relation	T12	T6	EffectCause	true	udtrykket	sorg
+Relation	T7	T12	CauseEffect	true	pessimisme	udtrykket
+Relation	T12	T7	EffectCause	true	udtrykket	pessimisme
+Relation	T1	T10	NoRel	true	opstået	den sorte død
+Relation	T2	T5	NoRel	true	mente	henviste
+Relation	T2	T8	NoRel	true	mente	spredning
+Relation	T2	T9	NoRel	true	mente	udbrud
+Relation	T3	T1	NoRel	true	stammede	opstået
+Relation	T5	T1	NoRel	true	henviste	opstået
+Relation	T5	T4	NoRel	true	henviste	bylder
+Relation	T6	T11	NoRel	true	sorg	pestens
+Relation	T8	T3	NoRel	true	spredning	stammede
+Relation	T9	T5	NoRel	true	udbrud	henviste

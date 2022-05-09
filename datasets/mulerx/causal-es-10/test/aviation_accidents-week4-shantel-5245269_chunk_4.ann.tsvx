@@ -1,0 +1,24 @@
+Text	Derribó la estructura y los soportes del transmisor ILS Localizer , rompió el muro perimetral del aeropuerto .	El avión cruzó Giffard Road , chocó con una minivan Mercedes-Benz TN 207 y mató a las diez personas a bordo .	Arrancó un árbol al lado de la carretera antes de detenerse finalmente en un espacio abierto cerca del estadio deportivo El-Wak .	El lado derecho de un taxi en la carretera fue rozado por escombros voladores de las estructuras del transmisor localizador transportadas por el ala derecha de la aeronave .	El borde de ataque del ala sufrió graves daños .
+Event	T0	Derribó	EVENT	0
+Event	T1	rompió	EVENT	68
+Event	T2	cruzó	EVENT	120
+Event	T3	chocó	EVENT	141
+Event	T4	mató	EVENT	186
+Event	T5	Arrancó	EVENT	221
+Event	T6	detenerse	EVENT	271
+Event	T7	rozado	EVENT	398
+Event	T8	transportadas	EVENT	475
+Event	T9	ataque	EVENT	537
+Event	T10	daños	EVENT	566
+Relation	T3	T4	CauseEffect	true	chocó	mató
+Relation	T4	T3	EffectCause	true	mató	chocó
+Relation	T2	T3	CauseEffect	true	cruzó	chocó
+Relation	T3	T2	EffectCause	true	chocó	cruzó
+Relation	T0	T2	NoRel	true	Derribó	cruzó
+Relation	T0	T4	NoRel	true	Derribó	mató
+Relation	T1	T9	NoRel	true	rompió	ataque
+Relation	T3	T6	NoRel	true	chocó	detenerse
+Relation	T3	T9	NoRel	true	chocó	ataque
+Relation	T4	T6	NoRel	true	mató	detenerse
+Relation	T7	T5	NoRel	true	rozado	Arrancó
+Relation	T9	T2	NoRel	true	ataque	cruzó

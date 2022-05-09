@@ -1,0 +1,20 @@
+Text	1739 ء میں ایران میں مغل دوست صفوی سلطنت کا خاتمہ ہو چکا تھا ۔	ایران کے نئے ترک نژاد سنی بادشاہ " نادر شاہ افشار " نے ایران کے معاشی بحران پر قابو پانے کے لیے ہندوستان پر حملہ کیا اور دہلی کو لوٹ مار اور قتل عام کا سامنا کرنا پڑا ۔	اس قتل عام میں اس کے افغان سالار احمد شاہ ابدالی نے خون کے دریا بہا دیے ۔	1747 ء میں نادر شاہ کے قتل کے بعد اس کے افغان دستے کے سربراہ احمد شاہ ابدالی نے افغانستان نامی نئے ملک کی بنیاد رکھی ۔	1747 ء میں احمد شاہ ابدالی نے دوبارہ دہلی پر حملہ کرنا چاہا تو اس کو سرہند کے مقام پرمغل سلطنت کی طرف سے اودھ کے شیعہ نواب صفدر جنگ نے شکست دی ۔
+Event	T0	خاتمہ	EVENT	44
+Event	T1	پانے	EVENT	147
+Event	T2	کیا	EVENT	176
+Event	T3	پڑا	EVENT	226
+Event	T4	عام	EVENT	239
+Event	T5	دیے	EVENT	300
+Event	T6	قتل	EVENT	329
+Event	T7	حملہ	EVENT	470
+Event	T8	چاہا	EVENT	480
+Relation	T4	T5	SuperSub	true	عام	دیے
+Relation	T5	T4	SubSuper	true	دیے	عام
+Relation	T0	T4	NoRel	true	خاتمہ	عام
+Relation	T0	T8	NoRel	true	خاتمہ	چاہا
+Relation	T2	T6	NoRel	true	کیا	قتل
+Relation	T5	T3	NoRel	true	دیے	پڑا
+Relation	T6	T3	NoRel	true	قتل	پڑا
+Relation	T6	T7	NoRel	true	قتل	حملہ
+Relation	T7	T3	NoRel	true	حملہ	پڑا
+Relation	T7	T4	NoRel	true	حملہ	عام

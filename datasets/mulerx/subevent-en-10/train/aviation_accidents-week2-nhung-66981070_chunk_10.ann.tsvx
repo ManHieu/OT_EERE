@@ -1,0 +1,100 @@
+Text	The online hacktivist group Anonymous and several other groups responded by organizing a human wall to shield the victims ' families .	WBC then left the area without engaging in any protests .	On April 15 , 2013 , WBC posted a press release to its Twitter account in which it thanked God for that day 's Boston Marathon bombing , and announced its plan to " picket the funeral of those killed " .	Pointing out the federal government is classifying the bombing as a terrorist attack , yet is being unclear about whether it is of a " domestic or foreign nature " , the release went on to claim to answer the question with , " Here 's a hint — GOD SENT THE BOMBS !	How many more terrifying ways will you have the LORD injure and kill your fellow countrymen because you insist on nation - dooming filthy fag marriage ? ! "
+Event	T0	responded	EVENT	63
+Event	T1	organizing	EVENT	76
+Event	T10	plan	EVENT	348
+Event	T11	picket	EVENT	358
+Event	T12	funeral	EVENT	369
+Event	T13	killed	EVENT	386
+Event	T14	classifying	EVENT	436
+Event	T15	bombing	EVENT	452
+Event	T16	attack	EVENT	475
+Event	T17	claim	EVENT	586
+Event	T18	answer	EVENT	595
+Event	T19	question	EVENT	606
+Event	T2	shield	EVENT	103
+Event	T20	hint	EVENT	634
+Event	T21	SENT	EVENT	645
+Event	T22	injure	EVENT	715
+Event	T23	kill	EVENT	726
+Event	T24	insist	EVENT	766
+Event	T25	dooming	EVENT	785
+Event	T3	left	EVENT	144
+Event	T4	engaging	EVENT	166
+Event	T5	protests	EVENT	182
+Event	T6	posted	EVENT	218
+Event	T7	thanked	EVENT	276
+Event	T8	bombing	EVENT	320
+Event	T9	announced	EVENT	334
+Relation	T6	T7	SuperSub	true	posted	thanked
+Relation	T7	T6	SubSuper	true	thanked	posted
+Relation	T6	T9	SuperSub	true	posted	announced
+Relation	T9	T6	SubSuper	true	announced	posted
+Relation	T15	T14	SuperSub	true	bombing	classifying
+Relation	T14	T15	SubSuper	true	classifying	bombing
+Relation	T19	T20	SuperSub	true	question	hint
+Relation	T20	T19	SubSuper	true	hint	question
+Relation	T0	T18	NoRel	true	responded	answer
+Relation	T1	T10	NoRel	true	organizing	plan
+Relation	T1	T17	NoRel	true	organizing	claim
+Relation	T1	T20	NoRel	true	organizing	hint
+Relation	T1	T22	NoRel	true	organizing	injure
+Relation	T10	T1	NoRel	true	plan	organizing
+Relation	T11	T2	NoRel	true	picket	shield
+Relation	T11	T20	NoRel	true	picket	hint
+Relation	T11	T6	NoRel	true	picket	posted
+Relation	T11	T9	NoRel	true	picket	announced
+Relation	T12	T15	NoRel	true	funeral	bombing
+Relation	T12	T3	NoRel	true	funeral	left
+Relation	T13	T0	NoRel	true	killed	responded
+Relation	T13	T10	NoRel	true	killed	plan
+Relation	T13	T14	NoRel	true	killed	classifying
+Relation	T13	T17	NoRel	true	killed	claim
+Relation	T13	T5	NoRel	true	killed	protests
+Relation	T13	T9	NoRel	true	killed	announced
+Relation	T14	T21	NoRel	true	classifying	SENT
+Relation	T14	T25	NoRel	true	classifying	dooming
+Relation	T15	T1	NoRel	true	bombing	organizing
+Relation	T15	T22	NoRel	true	bombing	injure
+Relation	T16	T1	NoRel	true	attack	organizing
+Relation	T17	T11	NoRel	true	claim	picket
+Relation	T17	T23	NoRel	true	claim	kill
+Relation	T17	T5	NoRel	true	claim	protests
+Relation	T18	T1	NoRel	true	answer	organizing
+Relation	T18	T22	NoRel	true	answer	injure
+Relation	T19	T10	NoRel	true	question	plan
+Relation	T19	T4	NoRel	true	question	engaging
+Relation	T2	T25	NoRel	true	shield	dooming
+Relation	T2	T9	NoRel	true	shield	announced
+Relation	T20	T5	NoRel	true	hint	protests
+Relation	T21	T1	NoRel	true	SENT	organizing
+Relation	T21	T13	NoRel	true	SENT	killed
+Relation	T21	T2	NoRel	true	SENT	shield
+Relation	T21	T23	NoRel	true	SENT	kill
+Relation	T22	T17	NoRel	true	injure	claim
+Relation	T23	T17	NoRel	true	kill	claim
+Relation	T23	T21	NoRel	true	kill	SENT
+Relation	T24	T10	NoRel	true	insist	plan
+Relation	T24	T11	NoRel	true	insist	picket
+Relation	T24	T16	NoRel	true	insist	attack
+Relation	T24	T8	NoRel	true	insist	bombing
+Relation	T25	T1	NoRel	true	dooming	organizing
+Relation	T25	T7	NoRel	true	dooming	thanked
+Relation	T4	T12	NoRel	true	engaging	funeral
+Relation	T4	T13	NoRel	true	engaging	killed
+Relation	T4	T14	NoRel	true	engaging	classifying
+Relation	T4	T17	NoRel	true	engaging	claim
+Relation	T4	T2	NoRel	true	engaging	shield
+Relation	T4	T6	NoRel	true	engaging	posted
+Relation	T5	T1	NoRel	true	protests	organizing
+Relation	T5	T6	NoRel	true	protests	posted
+Relation	T5	T9	NoRel	true	protests	announced
+Relation	T6	T14	NoRel	true	posted	classifying
+Relation	T6	T17	NoRel	true	posted	claim
+Relation	T7	T10	NoRel	true	thanked	plan
+Relation	T7	T2	NoRel	true	thanked	shield
+Relation	T7	T21	NoRel	true	thanked	SENT
+Relation	T7	T24	NoRel	true	thanked	insist
+Relation	T7	T3	NoRel	true	thanked	left
+Relation	T8	T16	NoRel	true	bombing	attack
+Relation	T8	T2	NoRel	true	bombing	shield
+Relation	T8	T20	NoRel	true	bombing	hint

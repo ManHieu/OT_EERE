@@ -1,0 +1,25 @@
+Text	Uçağın tespit edilmesinden 11 dakika sonra ilk Sovyet savaş uçağı önleme amacıyla havalandı ; bu uçak havalanacak üç Sovyet uçağından ilkiydi .	Uçak tespit edildikten 24 dakika sonra doğuya döndü ve Sovyet hava sahasına girdi .	Uçağın Sovyet hava sahasına girmesinin ardından Sovyet kontrolörler iki MiG- 17 avcı uçağını daha hemen C- 130'a yönlendirdi .	Yönlendirmeden 8 dakika sonra C - 130 , Erivan'ın 55 kilometre kuzeybatısında , irtifada seyrederken Sovyet MiG- 17'ler tarafından düşürüldü .	küçükresim | Düşürülen uçağın enkazı Uçağın istihbarat görevi gerçekleştirdiğini itiraf etmek istemeyen Amerika Birleşik Devletleri , 6 Eylül'e dek Sovyetler Birliği ile görüşmedi .
+Event	T0	tespit	EVENT	7
+Event	T1	havalandı	EVENT	82
+Event	T2	döndü	EVENT	190
+Event	T3	girdi	EVENT	220
+Event	T4	girmesinin	EVENT	256
+Event	T5	yönlendirdi	EVENT	341
+Event	T6	Yönlendirmeden	EVENT	355
+Event	T7	seyrederken	EVENT	444
+Event	T8	düşürüldü	EVENT	486
+Event	T9	Düşürülen	EVENT	511
+Event	T10	itiraf	EVENT	579
+Event	T11	görüşmedi	EVENT	668
+Event	T12	enkazı	EVENT	528
+Relation	T0	T4	NoRel	true	tespit	girmesinin
+Relation	T0	T9	NoRel	true	tespit	Düşürülen
+Relation	T10	T9	NoRel	true	itiraf	Düşürülen
+Relation	T11	T1	NoRel	true	görüşmedi	havalandı
+Relation	T12	T10	NoRel	true	enkazı	itiraf
+Relation	T12	T8	NoRel	true	enkazı	düşürüldü
+Relation	T3	T5	NoRel	true	girdi	yönlendirdi
+Relation	T5	T6	NoRel	true	yönlendirdi	Yönlendirmeden
+Relation	T7	T9	NoRel	true	seyrederken	Düşürülen
+Relation	T8	T0	NoRel	true	düşürüldü	tespit
+Relation	T8	T7	NoRel	true	düşürüldü	seyrederken

@@ -1,0 +1,36 @@
+Text	According to the Dublin Evening Herald , cargo and some mail were destroyed in the resulting fire but it is unclear where the mail had been loaded .	The No. 4 engine suffered a fatigue failure of its No. 1 propeller blade .	According to lab results , the blade had previously been bent which resulted " in the disruption of the compressive stresses in the shot peened area of the propeller blade " being the probable cause because the unbalanced loads on the engine mounts resulted in the separation of the entire engine .	Category : 1959 in Ireland	Category : Accidents and incidents involving the Douglas DC - 6
+Event	T0	destroyed	EVENT	66
+Event	T1	fire	EVENT	93
+Event	T2	loaded	EVENT	140
+Event	T3	suffered	EVENT	166
+Event	T4	failure	EVENT	185
+Event	T5	bent	EVENT	281
+Event	T6	resulted	EVENT	292
+Event	T7	disruption	EVENT	310
+Event	T8	stresses	EVENT	340
+Event	T9	peened	EVENT	361
+Event	T10	loads	EVENT	446
+Event	T11	resulted	EVENT	473
+Event	T12	separation	EVENT	489
+Event	T13	Accidents	EVENT	561
+Relation	T0	T2	NoRel	true	destroyed	loaded
+Relation	T1	T10	NoRel	true	fire	loads
+Relation	T1	T12	NoRel	true	fire	separation
+Relation	T10	T0	NoRel	true	loads	destroyed
+Relation	T10	T13	NoRel	true	loads	Accidents
+Relation	T10	T5	NoRel	true	loads	bent
+Relation	T10	T8	NoRel	true	loads	stresses
+Relation	T13	T0	NoRel	true	Accidents	destroyed
+Relation	T2	T1	NoRel	true	loaded	fire
+Relation	T2	T4	NoRel	true	loaded	failure
+Relation	T3	T8	NoRel	true	suffered	stresses
+Relation	T5	T11	NoRel	true	bent	resulted
+Relation	T5	T12	NoRel	true	bent	separation
+Relation	T5	T3	NoRel	true	bent	suffered
+Relation	T6	T13	NoRel	true	resulted	Accidents
+Relation	T7	T13	NoRel	true	disruption	Accidents
+Relation	T7	T3	NoRel	true	disruption	suffered
+Relation	T8	T0	NoRel	true	stresses	destroyed
+Relation	T8	T7	NoRel	true	stresses	disruption
+Relation	T9	T1	NoRel	true	peened	fire
+Relation	T9	T6	NoRel	true	peened	resulted

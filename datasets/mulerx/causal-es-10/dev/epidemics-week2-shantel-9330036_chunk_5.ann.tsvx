@@ -1,0 +1,72 @@
+Text	Los estudios mediante modelos y simulacros realizado en Estados Unidos sugieren que si el 10_% de los lugares de trabajo afectados se cierran el índice de transmisión de infección global es de alrededor de 11,9_% y el tiempo del pico de la epidemia se retrasa ligeramente .	En contraste , si el 33_% de los lugares de trabajo afectados son cerrados , el índice de ataque disminuye a 4,9_% , y el tiempo del pico es retrasado por 1 semana .	Durante el estallido de SARS del 2003 en Singapur , alrededor de 8,000 personas estuvieron sometidas a cuarentena obligatoria en los hogares y un adicionalmente 4300 estuvieron estuvieron sometidas a un auto-monitoreo de síntomas y un contacto telefónico diario con autoridades de salud como medios de controlar la epidemia .	A pesar de que solo 58 de estos individuos fueron finalmente diagnosticados con SARS , oficiales de salud pública estuvieron satisfechos que esta medida ayudó a impedir que la epidemia se extendiera más .	El auto aislamiento voluntario puede haber ayudado a reducir la transmisión de influenza en Texas en 2009 .
+Event	T0	estudios	EVENT	4
+Event	T1	realizado	EVENT	43
+Event	T13	estallido	EVENT	451
+Event	T14	sometidas	EVENT	531
+Event	T15	sometidas	EVENT	628
+Event	T16	contacto	EVENT	675
+Event	T17	controlar	EVENT	742
+Event	T18	epidemia	EVENT	755
+Event	T19	diagnosticados	EVENT	827
+Event	T2	sugieren	EVENT	71
+Event	T20	satisfechos	EVENT	891
+Event	T21	ayudó	EVENT	919
+Event	T22	epidemia	EVENT	942
+Event	T23	extendiera	EVENT	954
+Event	T27	influenza	EVENT	1050
+Event	T3	afectados	EVENT	121
+Event	T7	epidemia	EVENT	240
+Event	T8	retrasa	EVENT	252
+Event	T9	afectados	EVENT	326
+Event	T4	medida	EVENT	912
+Relation	T7	T0	CauseEffect	true	epidemia	estudios
+Relation	T0	T7	EffectCause	true	estudios	epidemia
+Relation	T13	T14	CauseEffect	true	estallido	sometidas
+Relation	T14	T13	EffectCause	true	sometidas	estallido
+Relation	T18	T15	CauseEffect	true	epidemia	sometidas
+Relation	T15	T18	EffectCause	true	sometidas	epidemia
+Relation	T18	T19	CauseEffect	true	epidemia	diagnosticados
+Relation	T19	T18	EffectCause	true	diagnosticados	epidemia
+Relation	T4	T20	CauseEffect	true	medida	satisfechos
+Relation	T20	T4	EffectCause	true	satisfechos	medida
+Relation	T4	T21	CauseEffect	true	medida	ayudó
+Relation	T21	T4	EffectCause	true	ayudó	medida
+Relation	T0	T15	NoRel	true	estudios	sometidas
+Relation	T1	T13	NoRel	true	realizado	estallido
+Relation	T1	T23	NoRel	true	realizado	extendiera
+Relation	T1	T9	NoRel	true	realizado	afectados
+Relation	T13	T15	NoRel	true	estallido	sometidas
+Relation	T15	T16	NoRel	true	sometidas	contacto
+Relation	T16	T27	NoRel	true	contacto	influenza
+Relation	T17	T1	NoRel	true	controlar	realizado
+Relation	T17	T3	NoRel	true	controlar	afectados
+Relation	T18	T0	NoRel	true	epidemia	estudios
+Relation	T18	T27	NoRel	true	epidemia	influenza
+Relation	T19	T13	NoRel	true	diagnosticados	estallido
+Relation	T19	T23	NoRel	true	diagnosticados	extendiera
+Relation	T19	T27	NoRel	true	diagnosticados	influenza
+Relation	T2	T3	NoRel	true	sugieren	afectados
+Relation	T20	T15	NoRel	true	satisfechos	sometidas
+Relation	T20	T27	NoRel	true	satisfechos	influenza
+Relation	T22	T15	NoRel	true	epidemia	sometidas
+Relation	T22	T4	NoRel	true	epidemia	medida
+Relation	T23	T14	NoRel	true	extendiera	sometidas
+Relation	T23	T20	NoRel	true	extendiera	satisfechos
+Relation	T23	T21	NoRel	true	extendiera	ayudó
+Relation	T27	T16	NoRel	true	influenza	contacto
+Relation	T27	T22	NoRel	true	influenza	epidemia
+Relation	T3	T21	NoRel	true	afectados	ayudó
+Relation	T3	T8	NoRel	true	afectados	retrasa
+Relation	T4	T23	NoRel	true	medida	extendiera
+Relation	T7	T22	NoRel	true	epidemia	epidemia
+Relation	T7	T8	NoRel	true	epidemia	retrasa
+Relation	T7	T9	NoRel	true	epidemia	afectados
+Relation	T8	T1	NoRel	true	retrasa	realizado
+Relation	T8	T13	NoRel	true	retrasa	estallido
+Relation	T8	T17	NoRel	true	retrasa	controlar
+Relation	T8	T21	NoRel	true	retrasa	ayudó
+Relation	T8	T23	NoRel	true	retrasa	extendiera
+Relation	T9	T22	NoRel	true	afectados	epidemia
+Relation	T9	T27	NoRel	true	afectados	influenza
+Relation	T9	T3	NoRel	true	afectados	afectados
+Relation	T9	T4	NoRel	true	afectados	medida

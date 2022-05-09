@@ -1,0 +1,79 @@
+Text	In May 2013 , 31 people were arrested in connection with the theft , and some of the diamonds were recovered .	Charges were brought against 19 of those ( 16 men and 3 women ) .	In contrast to the clockwork execution of the robbery , the arrests came as a result of mistakes made when the suspects tried to sell the stolen goods .	Pascal Pont , a Swiss real estate agent , was given a large sack of diamonds from his friend Marc Bertoldi , a luxury car dealer from the French Riviera , whose car was discovered in the vicinity of the robbery .	Pont was investigated for his relationship with Bertoldi , and by monitoring his phone calls , police uncovered Pont 's unsuccessful attempts to fence the diamonds in Geneva , which is not a city known for its diamond trade .
+Event	T0	arrested	EVENT	29
+Event	T1	theft	EVENT	61
+Event	T2	recovered	EVENT	99
+Event	T3	Charges	EVENT	111
+Event	T4	brought	EVENT	124
+Event	T5	execution	EVENT	206
+Event	T6	robbery	EVENT	223
+Event	T7	came	EVENT	245
+Event	T8	made	EVENT	274
+Event	T9	tried	EVENT	297
+Event	T10	sell	EVENT	306
+Event	T11	stolen	EVENT	315
+Event	T12	given	EVENT	376
+Event	T13	discovered	EVENT	499
+Event	T14	robbery	EVENT	533
+Event	T15	investigated	EVENT	552
+Event	T16	relationship	EVENT	573
+Event	T17	monitoring	EVENT	609
+Event	T18	calls	EVENT	630
+Event	T19	uncovered	EVENT	645
+Event	T20	attempts	EVENT	676
+Event	T21	fence	EVENT	688
+Event	T22	trade	EVENT	761
+Event	T23	connection	EVENT	41
+Relation	T0	T17	NoRel	true	arrested	monitoring
+Relation	T1	T10	NoRel	true	theft	sell
+Relation	T1	T16	NoRel	true	theft	relationship
+Relation	T10	T17	NoRel	true	sell	monitoring
+Relation	T11	T17	NoRel	true	stolen	monitoring
+Relation	T11	T20	NoRel	true	stolen	attempts
+Relation	T12	T18	NoRel	true	given	calls
+Relation	T12	T22	NoRel	true	given	trade
+Relation	T12	T23	NoRel	true	given	connection
+Relation	T12	T3	NoRel	true	given	Charges
+Relation	T13	T12	NoRel	true	discovered	given
+Relation	T14	T10	NoRel	true	robbery	sell
+Relation	T14	T23	NoRel	true	robbery	connection
+Relation	T14	T6	NoRel	true	robbery	robbery
+Relation	T14	T7	NoRel	true	robbery	came
+Relation	T15	T9	NoRel	true	investigated	tried
+Relation	T16	T12	NoRel	true	relationship	given
+Relation	T16	T6	NoRel	true	relationship	robbery
+Relation	T16	T8	NoRel	true	relationship	made
+Relation	T17	T0	NoRel	true	monitoring	arrested
+Relation	T17	T21	NoRel	true	monitoring	fence
+Relation	T17	T3	NoRel	true	monitoring	Charges
+Relation	T17	T7	NoRel	true	monitoring	came
+Relation	T18	T5	NoRel	true	calls	execution
+Relation	T19	T23	NoRel	true	uncovered	connection
+Relation	T2	T16	NoRel	true	recovered	relationship
+Relation	T2	T17	NoRel	true	recovered	monitoring
+Relation	T2	T18	NoRel	true	recovered	calls
+Relation	T2	T22	NoRel	true	recovered	trade
+Relation	T2	T6	NoRel	true	recovered	robbery
+Relation	T2	T8	NoRel	true	recovered	made
+Relation	T20	T0	NoRel	true	attempts	arrested
+Relation	T20	T11	NoRel	true	attempts	stolen
+Relation	T21	T10	NoRel	true	fence	sell
+Relation	T22	T14	NoRel	true	trade	robbery
+Relation	T22	T2	NoRel	true	trade	recovered
+Relation	T22	T21	NoRel	true	trade	fence
+Relation	T23	T14	NoRel	true	connection	robbery
+Relation	T23	T16	NoRel	true	connection	relationship
+Relation	T23	T22	NoRel	true	connection	trade
+Relation	T23	T4	NoRel	true	connection	brought
+Relation	T23	T7	NoRel	true	connection	came
+Relation	T3	T2	NoRel	true	Charges	recovered
+Relation	T3	T4	NoRel	true	Charges	brought
+Relation	T4	T15	NoRel	true	brought	investigated
+Relation	T5	T11	NoRel	true	execution	stolen
+Relation	T5	T19	NoRel	true	execution	uncovered
+Relation	T5	T2	NoRel	true	execution	recovered
+Relation	T6	T8	NoRel	true	robbery	made
+Relation	T7	T1	NoRel	true	came	theft
+Relation	T7	T14	NoRel	true	came	robbery
+Relation	T7	T2	NoRel	true	came	recovered
+Relation	T8	T10	NoRel	true	made	sell
+Relation	T9	T5	NoRel	true	tried	execution

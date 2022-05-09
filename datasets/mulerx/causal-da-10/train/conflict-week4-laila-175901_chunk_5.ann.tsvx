@@ -1,0 +1,84 @@
+Text	Kennan ønskede selv at fastholde hovedvægten på de økonomiske midler som i fx Marshallplanen , men hans synspunkt blev fortrængt af både politikere og diplomater , der ønskede at bruge militære midler i form af NATO .	Koreakrigens udbrud i juni 1950 udløste en kraftig styrkelse af den militære vægtning .	Siden 1910 havde Korea været en del af det Japanske kejserdømme som i sommeren 1945 brød sammen .	Efter Anden Verdenskrig kom Korea under fælles besættelse af sovjetiske og amerikanske styrker , Sovjet besatte den nordlige del og USA den sydlige del .	Moskva og Washington blev uden større vanskeligheder enige om , at den 38. breddegrad , skulle fungere som demarkationslinje , indtil der kunne etableres en samlet koreansk regering , og besættelsesstyrkerne efterfølgende skulle trækkes ud .
+Event	T0	ønskede	EVENT	7
+Event	T1	fortrængt	EVENT	119
+Event	T2	ønskede	EVENT	168
+Event	T3	bruge	EVENT	179
+Event	T4	udbrud	EVENT	231
+Event	T5	udløste	EVENT	250
+Event	T6	styrkelse	EVENT	269
+Event	T7	kom	EVENT	428
+Event	T9	besatte	EVENT	508
+Event	T10	enige	EVENT	611
+Event	T11	fungere	EVENT	653
+Event	T12	fastholde	EVENT	23
+Event	T13	midler	EVENT	62
+Event	T14	Marshallplanen	EVENT	78
+Event	T15	NATO	EVENT	211
+Event	T16	Koreakrigens	EVENT	218
+Event	T17	Anden Verdenskrig	EVENT	410
+Event	T18	etableres	EVENT	702
+Event	T19	demarkationslinje	EVENT	665
+Event	T8	fælles besættelse	EVENT	444
+Event	T20	trækkes	EVENT	787
+Event	T21	brød sammen	EVENT	390
+Event	T22	del	EVENT	338
+Relation	T17	T8	CauseEffect	true	Anden Verdenskrig	fælles besættelse
+Relation	T8	T17	EffectCause	true	fælles besættelse	Anden Verdenskrig
+Relation	T16	T6	CauseEffect	true	Koreakrigens	styrkelse
+Relation	T6	T16	EffectCause	true	styrkelse	Koreakrigens
+Relation	T0	T12	NoRel	true	ønskede	fastholde
+Relation	T0	T17	NoRel	true	ønskede	Anden Verdenskrig
+Relation	T0	T4	NoRel	true	ønskede	udbrud
+Relation	T0	T9	NoRel	true	ønskede	besatte
+Relation	T1	T14	NoRel	true	fortrængt	Marshallplanen
+Relation	T1	T22	NoRel	true	fortrængt	del
+Relation	T1	T5	NoRel	true	fortrængt	udløste
+Relation	T1	T6	NoRel	true	fortrængt	styrkelse
+Relation	T10	T0	NoRel	true	enige	ønskede
+Relation	T10	T17	NoRel	true	enige	Anden Verdenskrig
+Relation	T11	T15	NoRel	true	fungere	NATO
+Relation	T11	T22	NoRel	true	fungere	del
+Relation	T11	T6	NoRel	true	fungere	styrkelse
+Relation	T12	T8	NoRel	true	fastholde	fælles besættelse
+Relation	T13	T11	NoRel	true	midler	fungere
+Relation	T13	T3	NoRel	true	midler	bruge
+Relation	T13	T5	NoRel	true	midler	udløste
+Relation	T13	T7	NoRel	true	midler	kom
+Relation	T14	T0	NoRel	true	Marshallplanen	ønskede
+Relation	T14	T5	NoRel	true	Marshallplanen	udløste
+Relation	T15	T10	NoRel	true	NATO	enige
+Relation	T16	T1	NoRel	true	Koreakrigens	fortrængt
+Relation	T16	T10	NoRel	true	Koreakrigens	enige
+Relation	T16	T2	NoRel	true	Koreakrigens	ønskede
+Relation	T17	T16	NoRel	true	Anden Verdenskrig	Koreakrigens
+Relation	T17	T20	NoRel	true	Anden Verdenskrig	trækkes
+Relation	T17	T5	NoRel	true	Anden Verdenskrig	udløste
+Relation	T19	T1	NoRel	true	demarkationslinje	fortrængt
+Relation	T19	T10	NoRel	true	demarkationslinje	enige
+Relation	T19	T11	NoRel	true	demarkationslinje	fungere
+Relation	T19	T12	NoRel	true	demarkationslinje	fastholde
+Relation	T2	T12	NoRel	true	ønskede	fastholde
+Relation	T2	T13	NoRel	true	ønskede	midler
+Relation	T2	T17	NoRel	true	ønskede	Anden Verdenskrig
+Relation	T20	T1	NoRel	true	trækkes	fortrængt
+Relation	T20	T4	NoRel	true	trækkes	udbrud
+Relation	T20	T5	NoRel	true	trækkes	udløste
+Relation	T21	T0	NoRel	true	brød sammen	ønskede
+Relation	T21	T14	NoRel	true	brød sammen	Marshallplanen
+Relation	T22	T11	NoRel	true	del	fungere
+Relation	T22	T13	NoRel	true	del	midler
+Relation	T3	T16	NoRel	true	bruge	Koreakrigens
+Relation	T3	T18	NoRel	true	bruge	etableres
+Relation	T3	T2	NoRel	true	bruge	ønskede
+Relation	T4	T10	NoRel	true	udbrud	enige
+Relation	T5	T2	NoRel	true	udløste	ønskede
+Relation	T5	T21	NoRel	true	udløste	brød sammen
+Relation	T6	T19	NoRel	true	styrkelse	demarkationslinje
+Relation	T7	T11	NoRel	true	kom	fungere
+Relation	T7	T16	NoRel	true	kom	Koreakrigens
+Relation	T7	T2	NoRel	true	kom	ønskede
+Relation	T7	T20	NoRel	true	kom	trækkes
+Relation	T7	T8	NoRel	true	kom	fælles besættelse
+Relation	T8	T0	NoRel	true	fælles besættelse	ønskede
+Relation	T9	T18	NoRel	true	besatte	etableres
+Relation	T9	T6	NoRel	true	besatte	styrkelse

@@ -1,0 +1,55 @@
+Text	Cohn argues that the medieval and modern plagues were two distinct diseases differing in their symptoms , signs , and epidemiologies .	Cohn 's argument that medieval plague was not rat - based is supported by his claims that the modern and medieval plagues occurred in different seasons ( a claim supported in a 2009 article by Mark Welford and Brian Bossak ) , had unparalleled cycles of recurrence , and varied in the manner in which immunity was acquired .	The modern plague reaches its peak in seasons with high humidity and a temperature of between and , as rats ' fleas thrive in this climate .	In comparison , the Black Death is recorded as occurring in periods during which rats ' fleas could not have survived , i.e. hot Mediterranean summers above .	In terms of recurrence , the Black Death on average did not resurface in an area for between five and fifteen years after it had occurred .
+Event	T0	argues	EVENT	5
+Event	T10	recurrence	EVENT	389
+Event	T11	varied	EVENT	406
+Event	T12	acquired	EVENT	449
+Event	T13	peak	EVENT	490
+Event	T14	thrive	EVENT	576
+Event	T16	recorded	EVENT	636
+Event	T17	occurring	EVENT	648
+Event	T18	survived	EVENT	710
+Event	T19	recurrence	EVENT	772
+Event	T2	differing	EVENT	76
+Event	T21	resurface	EVENT	820
+Event	T22	occurred	EVENT	889
+Event	T3	argument	EVENT	143
+Event	T5	supported	EVENT	196
+Event	T6	claims	EVENT	213
+Event	T7	occurred	EVENT	257
+Event	T8	supported	EVENT	297
+Event	T9	cycles	EVENT	379
+Relation	T0	T16	NoRel	true	argues	recorded
+Relation	T0	T22	NoRel	true	argues	occurred
+Relation	T10	T22	NoRel	true	recurrence	occurred
+Relation	T10	T8	NoRel	true	recurrence	supported
+Relation	T11	T17	NoRel	true	varied	occurring
+Relation	T11	T7	NoRel	true	varied	occurred
+Relation	T12	T14	NoRel	true	acquired	thrive
+Relation	T13	T10	NoRel	true	peak	recurrence
+Relation	T14	T3	NoRel	true	thrive	argument
+Relation	T14	T9	NoRel	true	thrive	cycles
+Relation	T16	T14	NoRel	true	recorded	thrive
+Relation	T16	T18	NoRel	true	recorded	survived
+Relation	T17	T13	NoRel	true	occurring	peak
+Relation	T17	T7	NoRel	true	occurring	occurred
+Relation	T18	T5	NoRel	true	survived	supported
+Relation	T18	T7	NoRel	true	survived	occurred
+Relation	T18	T8	NoRel	true	survived	supported
+Relation	T19	T11	NoRel	true	recurrence	varied
+Relation	T19	T13	NoRel	true	recurrence	peak
+Relation	T19	T3	NoRel	true	recurrence	argument
+Relation	T19	T6	NoRel	true	recurrence	claims
+Relation	T2	T21	NoRel	true	differing	resurface
+Relation	T21	T19	NoRel	true	resurface	recurrence
+Relation	T21	T5	NoRel	true	resurface	supported
+Relation	T21	T7	NoRel	true	resurface	occurred
+Relation	T22	T21	NoRel	true	occurred	resurface
+Relation	T5	T0	NoRel	true	supported	argues
+Relation	T5	T22	NoRel	true	supported	occurred
+Relation	T6	T10	NoRel	true	claims	recurrence
+Relation	T6	T3	NoRel	true	claims	argument
+Relation	T6	T5	NoRel	true	claims	supported
+Relation	T7	T0	NoRel	true	occurred	argues
+Relation	T7	T13	NoRel	true	occurred	peak
+Relation	T8	T0	NoRel	true	supported	argues
+Relation	T9	T19	NoRel	true	cycles	recurrence

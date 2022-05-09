@@ -1,0 +1,37 @@
+Text	حیدراباد کے جس انجینئر کو کورونا کا انفیکشن ہوا تھا وہ 88 لوگوں کے رابطے میں آچکا تھا ۔	حکومت نے ان سبھی کا ٹیسٹ کیا بشمول اس کا شریک سفر جس نے اس کے ساتھ بنگلور کا سفر کیا تھا ۔	حکومت تلنگانہ کے افسران خبر دی کہ اس انجینئر نے جن لوگوں سے ملاقاتیں کی ان میں سے 36 لوگوں میں کورونا کا انفیکشن پایا گیا گوکہ وہ ابھی ابتدائی مراحل میں تھے ۔	بنگلور میں انٹیل کا ملازم جو اس انجینئر سے ملا تھا ، اسے فی الحال الگ کر دیا گیا ہے ۔	دہلی کے جس شخص کی تشخیص ہوئی تھی اس نے ایئر انڈیا میں سفر کیا تھا جس کے عملہ کے 15 افراد کو 14 دنوں کے لیے الگ تھلگ کر دیا گیا ۔
+Event	T2	سفر	EVENT	134
+Event	T5	ملا	EVENT	381
+Event	T7	انفیکشن	EVENT	36
+Event	T8	رابطے	EVENT	67
+Event	T9	ٹیسٹ	EVENT	108
+Event	T10	سفر	EVENT	165
+Event	T1	خبر	EVENT	203
+Event	T11	ملاقاتیں	EVENT	239
+Event	T12	انفیکشن	EVENT	284
+Event	T3	الگ	EVENT	404
+Event	T4	تشخیص	EVENT	442
+Event	T13	سفر	EVENT	478
+Event	T14	الگ	EVENT	531
+Relation	T7	T9	CauseEffect	true	انفیکشن	ٹیسٹ
+Relation	T9	T7	EffectCause	true	ٹیسٹ	انفیکشن
+Relation	T11	T12	CauseEffect	true	ملاقاتیں	انفیکشن
+Relation	T12	T11	EffectCause	true	انفیکشن	ملاقاتیں
+Relation	T9	T1	CauseEffect	true	ٹیسٹ	خبر
+Relation	T1	T9	EffectCause	true	خبر	ٹیسٹ
+Relation	T5	T3	CauseEffect	true	ملا	الگ
+Relation	T3	T5	EffectCause	true	الگ	ملا
+Relation	T4	T14	CauseEffect	true	تشخیص	الگ
+Relation	T14	T4	EffectCause	true	الگ	تشخیص
+Relation	T1	T14	NoRel	true	خبر	الگ
+Relation	T10	T4	NoRel	true	سفر	تشخیص
+Relation	T11	T7	NoRel	true	ملاقاتیں	انفیکشن
+Relation	T13	T3	NoRel	true	سفر	الگ
+Relation	T13	T7	NoRel	true	سفر	انفیکشن
+Relation	T14	T3	NoRel	true	الگ	الگ
+Relation	T2	T5	NoRel	true	سفر	ملا
+Relation	T2	T9	NoRel	true	سفر	ٹیسٹ
+Relation	T5	T12	NoRel	true	ملا	انفیکشن
+Relation	T7	T5	NoRel	true	انفیکشن	ملا
+Relation	T8	T10	NoRel	true	رابطے	سفر
+Relation	T8	T2	NoRel	true	رابطے	سفر
+Relation	T9	T11	NoRel	true	ٹیسٹ	ملاقاتیں

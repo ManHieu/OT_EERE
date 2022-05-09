@@ -1,0 +1,41 @@
+Text	Kasım 1954’te Cezayir devriminin başlamasıyla , Dr. Chaulet’yle bağlantılarının bir sonucu olarak , Ulusal Kurtuluş Cephesine ( Fransızca : Front de Libération Nationale , kısaca FLN ) katıldı .	The Wretched of the Earth ( Yeryüzünün Lanetlileri )’nde , Fanon , derinlemesine olarak , Fransız güçlerinin Cezayirliler’e yaptığı işkencelerin etkilerini tartıştı .	Fransız paraşütçü birimlerinin işkenceye katılmaları gerçeği , işkenceye karıştıkları ileri sürülenlere ‘ olaylar ’ için af çıkarıldığı Fransa’da siyasal çalkantılara neden oldu .	Terörizm zanlılarına işkence yapmayı açıkça onaylayan General Paul Aussaresses’in yaptıkları nedeniyle değil yeterince vicdan azabı sergilememesi nedeniyle yargılanması bundandır .	Fanon , Cezayir boyunca , özellikle Kabyle bölgesinde , Cezayirliler’in kültürel / psikolojik yaşamını çalışmak üzere kapsamlı yolculuklar yaptı .
+Event	T0	katıldı	EVENT	185
+Event	T2	tartıştı	EVENT	351
+Event	T3	olaylar	EVENT	468
+Event	T4	çıkarıldığı	EVENT	486
+Event	T5	yaptıkları	EVENT	624
+Event	T6	yargılanması	EVENT	698
+Event	T7	çalışmak	EVENT	826
+Event	T9	çalkantılara	EVENT	516
+Event	T1	işkencelerin	EVENT	327
+Event	T10	işkenceye	EVENT	393
+Event	T11	işkenceye	EVENT	425
+Event	T12	Terörizm	EVENT	542
+Event	T13	işkence	EVENT	563
+Event	T14	onaylayan	EVENT	586
+Event	T8	yolculuklar	EVENT	850
+Relation	T0	T11	NoRel	true	katıldı	işkenceye
+Relation	T0	T4	NoRel	true	katıldı	çıkarıldığı
+Relation	T1	T10	NoRel	true	işkencelerin	işkenceye
+Relation	T1	T3	NoRel	true	işkencelerin	olaylar
+Relation	T1	T5	NoRel	true	işkencelerin	yaptıkları
+Relation	T1	T9	NoRel	true	işkencelerin	çalkantılara
+Relation	T10	T13	NoRel	true	işkenceye	işkence
+Relation	T10	T3	NoRel	true	işkenceye	olaylar
+Relation	T10	T5	NoRel	true	işkenceye	yaptıkları
+Relation	T11	T0	NoRel	true	işkenceye	katıldı
+Relation	T11	T14	NoRel	true	işkenceye	onaylayan
+Relation	T12	T10	NoRel	true	Terörizm	işkenceye
+Relation	T12	T14	NoRel	true	Terörizm	onaylayan
+Relation	T13	T2	NoRel	true	işkence	tartıştı
+Relation	T13	T4	NoRel	true	işkence	çıkarıldığı
+Relation	T14	T5	NoRel	true	onaylayan	yaptıkları
+Relation	T14	T6	NoRel	true	onaylayan	yargılanması
+Relation	T3	T0	NoRel	true	olaylar	katıldı
+Relation	T3	T10	NoRel	true	olaylar	işkenceye
+Relation	T3	T2	NoRel	true	olaylar	tartıştı
+Relation	T4	T13	NoRel	true	çıkarıldığı	işkence
+Relation	T5	T6	NoRel	true	yaptıkları	yargılanması
+Relation	T7	T0	NoRel	true	çalışmak	katıldı
+Relation	T8	T6	NoRel	true	yolculuklar	yargılanması
+Relation	T8	T9	NoRel	true	yolculuklar	çalkantılara

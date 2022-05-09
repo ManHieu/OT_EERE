@@ -1,0 +1,731 @@
+{
+  "id": "conflict-week4-cagatay-1288486_chunk_52.ann.tsvx",
+  "text": "Berlin\u2019de metal i\u015f\u00e7ilerin ba\u015flatt\u0131\u011f\u0131 grev bir s\u00fcre sonra genel greve d\u00f6n\u00fc\u015ft\u00fc .\tBu grevlere polisin yan\u0131nda bir de nasyonal sosyalistler sald\u0131r\u0131yordu .\t\u00c7\u0131kan \u00e7at\u0131\u015fmalarda y\u00fczlerce ki\u015fi \u00f6ld\u00fc .\tGrevlerin ekonomik talebi olan maa\u015flar\u0131n\u0131n art\u0131r\u0131lmas\u0131n yan\u0131nda siyasal taleplerde y\u00fckseliyordu .\t\u0130\u015f\u00e7ilerin grevi h\u00fck\u00fbmet kar\u015f\u0131t\u0131 bir nitelik al\u0131yordu .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "grev",
+      "label": "EVENT",
+      "char_index": 37,
+      "sid": 0,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "d\u00f6n\u00fc\u015ft\u00fc",
+      "label": "EVENT",
+      "char_index": 69,
+      "sid": 0,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "grevlere",
+      "label": "EVENT",
+      "char_index": 82,
+      "sid": 1,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "sald\u0131r\u0131yordu",
+      "label": "EVENT",
+      "char_index": 136,
+      "sid": 1,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "\u00e7at\u0131\u015fmalarda",
+      "label": "EVENT",
+      "char_index": 157,
+      "sid": 2,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "\u00f6ld\u00fc",
+      "label": "EVENT",
+      "char_index": 184,
+      "sid": 2,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "talebi",
+      "label": "EVENT",
+      "char_index": 210,
+      "sid": 3,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "y\u00fckseliyordu",
+      "label": "EVENT",
+      "char_index": 274,
+      "sid": 3,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "grevi",
+      "label": "EVENT",
+      "char_index": 299,
+      "sid": 4,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "al\u0131yordu",
+      "label": "EVENT",
+      "char_index": 333,
+      "sid": 4,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "Grevlerin",
+      "label": "EVENT",
+      "char_index": 191,
+      "sid": 3,
+      "tid": [
+        0,
+        1
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "taleplerde",
+      "label": "EVENT",
+      "char_index": 263,
+      "sid": 3,
+      "tid": [
+        8,
+        9
+      ]
+    }
+  },
+  "relation": {
+    "T4-T5": "CauseEffect",
+    "T5-T4": "EffectCause",
+    "T0-T1": "NoRel",
+    "T0-T10": "NoRel",
+    "T1-T8": "NoRel",
+    "T10-T0": "NoRel",
+    "T10-T7": "NoRel",
+    "T3-T11": "NoRel",
+    "T4-T2": "NoRel",
+    "T7-T4": "NoRel",
+    "T8-T4": "NoRel",
+    "T8-T5": "NoRel",
+    "T9-T7": "NoRel"
+  },
+  "sentence": [
+    [
+      "Berlin\u2019de",
+      "metal",
+      "i\u015f\u00e7ilerin",
+      "ba\u015flatt\u0131\u011f\u0131",
+      "grev",
+      "bir",
+      "s\u00fcre",
+      "sonra",
+      "genel",
+      "greve",
+      "d\u00f6n\u00fc\u015ft\u00fc",
+      "."
+    ],
+    [
+      "Bu",
+      "grevlere",
+      "polisin",
+      "yan\u0131nda",
+      "bir",
+      "de",
+      "nasyonal",
+      "sosyalistler",
+      "sald\u0131r\u0131yordu",
+      "."
+    ],
+    [
+      "\u00c7\u0131kan",
+      "\u00e7at\u0131\u015fmalarda",
+      "y\u00fczlerce",
+      "ki\u015fi",
+      "\u00f6ld\u00fc",
+      "."
+    ],
+    [
+      "Grevlerin",
+      "ekonomik",
+      "talebi",
+      "olan",
+      "maa\u015flar\u0131n\u0131n",
+      "art\u0131r\u0131lmas\u0131n",
+      "yan\u0131nda",
+      "siyasal",
+      "taleplerde",
+      "y\u00fckseliyordu",
+      "."
+    ],
+    [
+      "\u0130\u015f\u00e7ilerin",
+      "grevi",
+      "h\u00fck\u00fbmet",
+      "kar\u015f\u0131t\u0131",
+      "bir",
+      "nitelik",
+      "al\u0131yordu",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        10
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        10
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        8
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        8
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        8
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      "acl"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        5
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        9
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        6
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        6
+      ],
+      "punct"
+    ]
+  ]
+}

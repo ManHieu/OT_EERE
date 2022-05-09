@@ -1,0 +1,46 @@
+Text	HUGO KASIRGASI , 1989'un eylül ayında , Saffir - Simpson Kasırga Ölçeğine göre 5 şiddetinde ; Guadeloupe , Montserrat , Porto Riko , Saint Croix , Güney Karolina ve Kuzey Karolina'yı vuran ve 82 kişinin ölümüne ve 56.000 kişinin evsiz kalmasına neden olan kasırgadır .	Hugo , Afrika'nın kıyılarından 9 Eylül'de ayrılan tropikal bir dalgadan köken aldı .	Fırtına batı kıyılarını izleyip , 11'inde tropikal bir fırtınaya ve 13'ünde bir kasırgaya dönüştü ve Birleşik Devletler'e doğru yol almaya başladı .	İlk kez Güney Karolina'da 4 şiddetindeyken görüldü .	Kasırga , o zamana kadar kaydedilmiş en yıkıcı kasırgalardan biri olan Frederic Kasırgası'nı geçerek 10 milyar dolar hasara yol açmıştır .
+Event	T0	KASIRGASI	EVENT	5
+Event	T1	vuran	EVENT	183
+Event	T2	ölümüne	EVENT	203
+Event	T3	kasırgadır	EVENT	256
+Event	T4	aldı	EVENT	347
+Event	T5	izleyip	EVENT	378
+Event	T6	fırtınaya	EVENT	409
+Event	T7	dönüştü	EVENT	444
+Event	T8	başladı	EVENT	493
+Event	T9	görüldü	EVENT	546
+Event	T10	kaydedilmiş	EVENT	581
+Event	T11	geçerek	EVENT	649
+Event	T12	açmıştır	EVENT	684
+Event	T13	kalmasına	EVENT	235
+Relation	T0	T2	CauseEffect	true	KASIRGASI	ölümüne
+Relation	T2	T0	EffectCause	true	ölümüne	KASIRGASI
+Relation	T0	T13	CauseEffect	true	KASIRGASI	kalmasına
+Relation	T13	T0	EffectCause	true	kalmasına	KASIRGASI
+Relation	T0	T12	CauseEffect	true	KASIRGASI	açmıştır
+Relation	T12	T0	EffectCause	true	açmıştır	KASIRGASI
+Relation	T12	T11	CauseEffect	true	açmıştır	geçerek
+Relation	T11	T12	EffectCause	true	geçerek	açmıştır
+Relation	T0	T3	NoRel	true	KASIRGASI	kasırgadır
+Relation	T1	T0	NoRel	true	vuran	KASIRGASI
+Relation	T1	T2	NoRel	true	vuran	ölümüne
+Relation	T10	T2	NoRel	true	kaydedilmiş	ölümüne
+Relation	T10	T7	NoRel	true	kaydedilmiş	dönüştü
+Relation	T11	T13	NoRel	true	geçerek	kalmasına
+Relation	T11	T2	NoRel	true	geçerek	ölümüne
+Relation	T11	T8	NoRel	true	geçerek	başladı
+Relation	T12	T8	NoRel	true	açmıştır	başladı
+Relation	T12	T9	NoRel	true	açmıştır	görüldü
+Relation	T2	T9	NoRel	true	ölümüne	görüldü
+Relation	T3	T12	NoRel	true	kasırgadır	açmıştır
+Relation	T3	T13	NoRel	true	kasırgadır	kalmasına
+Relation	T3	T7	NoRel	true	kasırgadır	dönüştü
+Relation	T4	T10	NoRel	true	aldı	kaydedilmiş
+Relation	T4	T3	NoRel	true	aldı	kasırgadır
+Relation	T5	T11	NoRel	true	izleyip	geçerek
+Relation	T5	T4	NoRel	true	izleyip	aldı
+Relation	T6	T11	NoRel	true	fırtınaya	geçerek
+Relation	T7	T9	NoRel	true	dönüştü	görüldü
+Relation	T8	T11	NoRel	true	başladı	geçerek
+Relation	T9	T12	NoRel	true	görüldü	açmıştır
+Relation	T9	T6	NoRel	true	görüldü	fırtınaya

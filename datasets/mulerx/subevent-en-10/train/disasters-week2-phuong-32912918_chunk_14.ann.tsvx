@@ -1,0 +1,33 @@
+Text	[ Tract of trees near the Maitland River decimated by the tornado ]	Crossing Kings Highway 21 , the tornado moved into the easternmost residential areas of Goderich , north of Elgin Street .	More homes sustained significant damage here , with most of those affected receiving some form of roof or window damage .	Those with clapboard siding had pock marks and some of their paint stripped .	Other homes lost vast portions of their roofs and commercial buildings near Oxford Street and Maitland Road had partial roof removal and exterior wall damage .
+Event	T0	decimated	EVENT	41
+Event	T1	tornado	EVENT	58
+Event	T10	removal	EVENT	516
+Event	T11	damage	EVENT	542
+Event	T12	moved into	EVENT	108
+Event	T13	tornado	EVENT	100
+Event	T2	Crossing	EVENT	68
+Event	T3	sustained	EVENT	202
+Event	T4	damage	EVENT	224
+Event	T5	receiving	EVENT	266
+Event	T6	damage	EVENT	304
+Event	T7	siding	EVENT	334
+Event	T8	stripped	EVENT	380
+Event	T9	lost	EVENT	403
+Relation	T2	T12	SuperSub	true	Crossing	moved into
+Relation	T12	T2	SubSuper	true	moved into	Crossing
+Relation	T0	T11	NoRel	true	decimated	damage
+Relation	T0	T4	NoRel	true	decimated	damage
+Relation	T1	T4	NoRel	true	tornado	damage
+Relation	T1	T6	NoRel	true	tornado	damage
+Relation	T10	T6	NoRel	true	removal	damage
+Relation	T11	T0	NoRel	true	damage	decimated
+Relation	T13	T6	NoRel	true	tornado	damage
+Relation	T13	T7	NoRel	true	tornado	siding
+Relation	T2	T11	NoRel	true	Crossing	damage
+Relation	T2	T9	NoRel	true	Crossing	lost
+Relation	T4	T1	NoRel	true	damage	tornado
+Relation	T5	T1	NoRel	true	receiving	tornado
+Relation	T5	T7	NoRel	true	receiving	siding
+Relation	T6	T2	NoRel	true	damage	Crossing
+Relation	T6	T8	NoRel	true	damage	stripped
+Relation	T8	T2	NoRel	true	stripped	Crossing

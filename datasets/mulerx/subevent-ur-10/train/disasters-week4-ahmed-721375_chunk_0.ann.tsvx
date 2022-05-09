@@ -1,0 +1,23 @@
+Text	1934ء نیپال - بہار زلزلہ 1934ء میں بھارت اور نیپال میں محسوس کیا جانے والا شدید ترین زلزلہ تھا ۔	یہ زلزلہ 15 جنوری 1934ء کی دوپہر میں محسوس ہوا ۔	چھ ہزار سے ساڑھے دس ہزار افراد کی موت واقع ہوئی ۔	بیسویں صدی عیسوی میں نیپال میں آنے والا یہ شدید ترین زلزلہ تھا ۔	اِس زلزلہ میں تقریباً دس ہزار سے بارہ ہزار افراد کی اموات ہوئیں ۔
+Event	T0	زلزلہ	EVENT	19
+Event	T1	محسوس	EVENT	55
+Event	T2	زلزلہ	EVENT	85
+Event	T3	زلزلہ	EVENT	100
+Event	T4	ہوا	EVENT	140
+Event	T5	ہوئی	EVENT	189
+Event	T6	آنے	EVENT	227
+Event	T7	زلزلہ	EVENT	249
+Event	T8	زلزلہ	EVENT	265
+Event	T9	ہوئیں	EVENT	319
+Relation	T0	T2	NoRel	true	زلزلہ	زلزلہ
+Relation	T2	T5	NoRel	true	زلزلہ	ہوئی
+Relation	T3	T0	NoRel	true	زلزلہ	زلزلہ
+Relation	T3	T2	NoRel	true	زلزلہ	زلزلہ
+Relation	T3	T4	NoRel	true	زلزلہ	ہوا
+Relation	T3	T9	NoRel	true	زلزلہ	ہوئیں
+Relation	T7	T2	NoRel	true	زلزلہ	زلزلہ
+Relation	T7	T5	NoRel	true	زلزلہ	ہوئی
+Relation	T8	T4	NoRel	true	زلزلہ	ہوا
+Relation	T8	T7	NoRel	true	زلزلہ	زلزلہ
+Relation	T9	T1	NoRel	true	ہوئیں	محسوس
+Relation	T9	T5	NoRel	true	ہوئیں	ہوئی

@@ -1,0 +1,92 @@
+Text	Udenrigsministeriet frarådede alle ikke-nødvendige rejser ( orange ) til resten af Kina uden for Hubei , Hongkong , Macau og Taiwan , resten af Italien , den østrigske delstat Tyrol , Palæstina og de spanske regioner Madrid , La Rioja og Baskerlandet .	Gul markering , det vel sige " vær ekstra forsigtig " , fik så resten af Sydkorea , resten af Østrig og resten af verden .	Flere områder kom dog hurtigt i alvorligere kategorier , og den 13. marts kom alle udenlandske områder i mindst den orange kategori .	Den store efterspørgsel på produkter til håndhygiejne blandt både sundhedsorganisationer og privatpersoner fik i løbet af marts måned flere producenter af især håndsprit til at melde ud , at deres produktion ikke kunne følge med efterspørgslen ; et dansk hospital bruger omkring 1 ton håndsprit i døgnet .	Pr. medio marts omlagde LVMH i Frankrig en del af deres parfumeproduktion til at fremstille håndsprit , som doneredes til franske sundhedsmyndigheder , og Amway i USA begyndte at fremstille hånddesinficering ved siden af deres almindelige produktion , som blev doneret til såvel hospitaler som private hjælpeorganisationer .
+Event	T0	frarådede	EVENT	20
+Event	T1	rejser	EVENT	51
+Event	T2	markering	EVENT	257
+Event	T3	sige	EVENT	277
+Event	T4	kom	EVENT	390
+Event	T5	kom	EVENT	450
+Event	T6	efterspørgsel	EVENT	520
+Event	T7	fik	EVENT	617
+Event	T8	produktion	EVENT	707
+Event	T9	bruger	EVENT	774
+Event	T10	omlagde	EVENT	832
+Event	T11	fremstille	EVENT	897
+Event	T12	doneredes	EVENT	924
+Event	T13	begyndte	EVENT	983
+Event	T14	hånddesinficering	EVENT	1006
+Event	T15	produktion	EVENT	1055
+Event	T16	doneret	EVENT	1077
+Event	T17	forsigtig	EVENT	295
+Event	T18	kategorier	EVENT	420
+Event	T19	kategori	EVENT	499
+Event	T20	håndhygiejne	EVENT	551
+Event	T21	melde ud	EVENT	687
+Event	T22	efterspørgslen	EVENT	739
+Event	T23	parfumeproduktion	EVENT	872
+Event	T24	fremstille	EVENT	995
+Event	T25	følge med	EVENT	729
+Relation	T11	T12	CauseEffect	true	fremstille	doneredes
+Relation	T12	T11	EffectCause	true	doneredes	fremstille
+Relation	T24	T16	CauseEffect	true	fremstille	doneret
+Relation	T16	T24	EffectCause	true	doneret	fremstille
+Relation	T22	T25	CauseEffect	true	efterspørgslen	følge med
+Relation	T25	T22	EffectCause	true	følge med	efterspørgslen
+Relation	T25	T21	CauseEffect	true	følge med	melde ud
+Relation	T21	T25	EffectCause	true	melde ud	følge med
+Relation	T0	T22	NoRel	true	frarådede	efterspørgslen
+Relation	T1	T16	NoRel	true	rejser	doneret
+Relation	T1	T2	NoRel	true	rejser	markering
+Relation	T1	T20	NoRel	true	rejser	håndhygiejne
+Relation	T1	T9	NoRel	true	rejser	bruger
+Relation	T10	T1	NoRel	true	omlagde	rejser
+Relation	T10	T18	NoRel	true	omlagde	kategorier
+Relation	T10	T22	NoRel	true	omlagde	efterspørgslen
+Relation	T10	T6	NoRel	true	omlagde	efterspørgsel
+Relation	T11	T16	NoRel	true	fremstille	doneret
+Relation	T11	T4	NoRel	true	fremstille	kom
+Relation	T11	T9	NoRel	true	fremstille	bruger
+Relation	T13	T12	NoRel	true	begyndte	doneredes
+Relation	T13	T15	NoRel	true	begyndte	produktion
+Relation	T13	T22	NoRel	true	begyndte	efterspørgslen
+Relation	T13	T5	NoRel	true	begyndte	kom
+Relation	T14	T0	NoRel	true	hånddesinficering	frarådede
+Relation	T14	T15	NoRel	true	hånddesinficering	produktion
+Relation	T14	T21	NoRel	true	hånddesinficering	melde ud
+Relation	T14	T25	NoRel	true	hånddesinficering	følge med
+Relation	T15	T24	NoRel	true	produktion	fremstille
+Relation	T16	T13	NoRel	true	doneret	begyndte
+Relation	T17	T2	NoRel	true	forsigtig	markering
+Relation	T17	T21	NoRel	true	forsigtig	melde ud
+Relation	T17	T22	NoRel	true	forsigtig	efterspørgslen
+Relation	T17	T7	NoRel	true	forsigtig	fik
+Relation	T18	T13	NoRel	true	kategorier	begyndte
+Relation	T18	T20	NoRel	true	kategorier	håndhygiejne
+Relation	T18	T3	NoRel	true	kategorier	sige
+Relation	T19	T21	NoRel	true	kategori	melde ud
+Relation	T19	T24	NoRel	true	kategori	fremstille
+Relation	T19	T25	NoRel	true	kategori	følge med
+Relation	T2	T0	NoRel	true	markering	frarådede
+Relation	T2	T23	NoRel	true	markering	parfumeproduktion
+Relation	T2	T8	NoRel	true	markering	produktion
+Relation	T2	T9	NoRel	true	markering	bruger
+Relation	T20	T17	NoRel	true	håndhygiejne	forsigtig
+Relation	T20	T24	NoRel	true	håndhygiejne	fremstille
+Relation	T21	T22	NoRel	true	melde ud	efterspørgslen
+Relation	T21	T23	NoRel	true	melde ud	parfumeproduktion
+Relation	T21	T7	NoRel	true	melde ud	fik
+Relation	T22	T16	NoRel	true	efterspørgslen	doneret
+Relation	T22	T24	NoRel	true	efterspørgslen	fremstille
+Relation	T24	T0	NoRel	true	fremstille	frarådede
+Relation	T25	T20	NoRel	true	følge med	håndhygiejne
+Relation	T3	T2	NoRel	true	sige	markering
+Relation	T3	T22	NoRel	true	sige	efterspørgslen
+Relation	T4	T12	NoRel	true	kom	doneredes
+Relation	T6	T3	NoRel	true	efterspørgsel	sige
+Relation	T7	T16	NoRel	true	fik	doneret
+Relation	T7	T18	NoRel	true	fik	kategorier
+Relation	T7	T9	NoRel	true	fik	bruger
+Relation	T8	T16	NoRel	true	produktion	doneret
+Relation	T8	T17	NoRel	true	produktion	forsigtig
+Relation	T8	T19	NoRel	true	produktion	kategori
+Relation	T8	T6	NoRel	true	produktion	efterspørgsel
+Relation	T9	T25	NoRel	true	bruger	følge med

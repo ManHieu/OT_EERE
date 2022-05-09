@@ -1,0 +1,17 @@
+Text	1945 yılında II. Dünya Savaşı sonunda , Lettow - Vorbeck perişan haldeydi .	İki oğlu , Rüdiger ve Arnd , Wehrmacht'ta hizmet verirken şehit olmuşlardı .	Bremen'deki evi Müttefik güçlerin bombalarıyla tahrip olmuştu .	Ancak , Alman ekonomik mucizesi ile tekrar rahata kavuştu .	1953 yılında , Doğu Afrika'yı ziyaret etti .
+Event	T1	olmuştu	EVENT	207
+Event	T2	mucizesi	EVENT	240
+Event	T3	kavuştu	EVENT	267
+Event	T4	etti	EVENT	315
+Event	T5	II. Dünya Savaşı	EVENT	13
+Event	T6	olmuşlardı	EVENT	140
+Event	T7	hizmet	EVENT	118
+Event	T8	bombalarıyla	EVENT	187
+Event	T9	haldeydi	EVENT	65
+Relation	T2	T3	NoRel	true	mucizesi	kavuştu
+Relation	T3	T1	NoRel	true	kavuştu	olmuştu
+Relation	T3	T7	NoRel	true	kavuştu	hizmet
+Relation	T7	T8	NoRel	true	hizmet	bombalarıyla
+Relation	T9	T3	NoRel	true	haldeydi	kavuştu
+Relation	T9	T6	NoRel	true	haldeydi	olmuşlardı
+Relation	T9	T8	NoRel	true	haldeydi	bombalarıyla

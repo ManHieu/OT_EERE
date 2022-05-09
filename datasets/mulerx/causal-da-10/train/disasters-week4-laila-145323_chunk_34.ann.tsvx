@@ -1,0 +1,43 @@
+Text	Da disse forretninger blev udført , tilbragte han tiden med at læse og gøre uddrag , åbenbart i processen med at fuldføre _ Naturalis Historia _ .	Ingen faktisk post er bedømt i denne , noget han ikke kunne have udført som admiral ved Misenum , forudsat at hans pligter som admiral ikke krævede at han var til stede ved Misenum .	På rene omstændigheder alene var han en officiel agent for kejseren i delvis privat kapacitet .	Måske var han mellem positioner .	Hvordan det end forholder sig , var det hans udnævnelse som præfekt af flåden ved Misenum førte ham til Misenum , hvor han boede sammen med sin søster og sin nevø .
+Event	T0	udført	EVENT	27
+Event	T1	tilbragte	EVENT	36
+Event	T2	læse	EVENT	63
+Event	T3	gøre	EVENT	71
+Event	T4	processen	EVENT	96
+Event	T5	fuldføre	EVENT	113
+Event	T6	bedømt	EVENT	169
+Event	T7	udført	EVENT	212
+Event	T8	krævede	EVENT	287
+Event	T9	udnævnelse	EVENT	505
+Event	T10	førte	EVENT	550
+Event	T11	boede	EVENT	583
+Event	T12	pligter	EVENT	262
+Event	T13	var	EVENT	359
+Event	T14	mellem positioner	EVENT	440
+Event	T15	forholder	EVENT	476
+Relation	T10	T11	CauseEffect	true	førte	boede
+Relation	T11	T10	EffectCause	true	boede	førte
+Relation	T9	T10	CauseEffect	true	udnævnelse	førte
+Relation	T10	T9	EffectCause	true	førte	udnævnelse
+Relation	T11	T7	NoRel	true	boede	udført
+Relation	T11	T8	NoRel	true	boede	krævede
+Relation	T12	T3	NoRel	true	pligter	gøre
+Relation	T12	T5	NoRel	true	pligter	fuldføre
+Relation	T12	T8	NoRel	true	pligter	krævede
+Relation	T12	T9	NoRel	true	pligter	udnævnelse
+Relation	T13	T12	NoRel	true	var	pligter
+Relation	T13	T4	NoRel	true	var	processen
+Relation	T14	T0	NoRel	true	mellem positioner	udført
+Relation	T14	T2	NoRel	true	mellem positioner	læse
+Relation	T15	T2	NoRel	true	forholder	læse
+Relation	T2	T14	NoRel	true	læse	mellem positioner
+Relation	T2	T6	NoRel	true	læse	bedømt
+Relation	T3	T5	NoRel	true	gøre	fuldføre
+Relation	T4	T10	NoRel	true	processen	førte
+Relation	T6	T1	NoRel	true	bedømt	tilbragte
+Relation	T7	T12	NoRel	true	udført	pligter
+Relation	T7	T3	NoRel	true	udført	gøre
+Relation	T7	T4	NoRel	true	udført	processen
+Relation	T7	T8	NoRel	true	udført	krævede
+Relation	T8	T9	NoRel	true	krævede	udnævnelse
+Relation	T9	T12	NoRel	true	udnævnelse	pligter

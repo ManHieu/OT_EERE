@@ -1,0 +1,42 @@
+Text	[ Oprydningsarbejdet efter ulykken ]	SOUTHALL -KOLLISIONEN skete den 19. september 1997 på Great Western Railways strækning ved Southall i det vestlige London .	Seks personer omkom og over 150 blev kvæstet .	Kollisionen skete , da Great Westerns intercitytog nr. 1032 fra Swansea til London Paddington med et defekt AWS-system passerede et stopvisende signal og kolliderede med at godstog .	Det vurderes , at såfremt AWS-systemet havde virket , ville risikoen for at ulykken opstod have været mindre , men ikke helt elimineret , idet AWS er er advarselssystem , der ikke griber ind i lokomotivførerens betjening .
+Event	T0	Oprydningsarbejdet	EVENT	2
+Event	T1	ulykken	EVENT	27
+Event	T2	skete	EVENT	59
+Event	T3	omkom	EVENT	175
+Event	T4	kvæstet	EVENT	198
+Event	T6	passerede	EVENT	327
+Event	T7	signal	EVENT	352
+Event	T8	kolliderede	EVENT	362
+Event	T9	virket	EVENT	436
+Event	T10	opstod	EVENT	475
+Event	T11	betjening	EVENT	602
+Event	T12	SOUTHALL -KOLLISIONEN	EVENT	37
+Event	T5	Kollisionen	EVENT	208
+Event	T13	griber ind	EVENT	571
+Relation	T6	T5	CauseEffect	true	passerede	Kollisionen
+Relation	T5	T6	EffectCause	true	Kollisionen	passerede
+Relation	T6	T8	CauseEffect	true	passerede	kolliderede
+Relation	T8	T6	EffectCause	true	kolliderede	passerede
+Relation	T1	T3	CauseEffect	true	ulykken	omkom
+Relation	T3	T1	EffectCause	true	omkom	ulykken
+Relation	T1	T4	CauseEffect	true	ulykken	kvæstet
+Relation	T4	T1	EffectCause	true	kvæstet	ulykken
+Relation	T12	T3	CauseEffect	true	SOUTHALL -KOLLISIONEN	omkom
+Relation	T3	T12	EffectCause	true	omkom	SOUTHALL -KOLLISIONEN
+Relation	T12	T4	CauseEffect	true	SOUTHALL -KOLLISIONEN	kvæstet
+Relation	T4	T12	EffectCause	true	kvæstet	SOUTHALL -KOLLISIONEN
+Relation	T0	T6	NoRel	true	Oprydningsarbejdet	passerede
+Relation	T10	T3	NoRel	true	opstod	omkom
+Relation	T11	T3	NoRel	true	betjening	omkom
+Relation	T12	T13	NoRel	true	SOUTHALL -KOLLISIONEN	griber ind
+Relation	T12	T2	NoRel	true	SOUTHALL -KOLLISIONEN	skete
+Relation	T12	T5	NoRel	true	SOUTHALL -KOLLISIONEN	Kollisionen
+Relation	T13	T8	NoRel	true	griber ind	kolliderede
+Relation	T2	T5	NoRel	true	skete	Kollisionen
+Relation	T3	T9	NoRel	true	omkom	virket
+Relation	T4	T2	NoRel	true	kvæstet	skete
+Relation	T6	T12	NoRel	true	passerede	SOUTHALL -KOLLISIONEN
+Relation	T7	T1	NoRel	true	signal	ulykken
+Relation	T7	T12	NoRel	true	signal	SOUTHALL -KOLLISIONEN
+Relation	T7	T9	NoRel	true	signal	virket
+Relation	T9	T4	NoRel	true	virket	kvæstet

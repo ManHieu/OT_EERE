@@ -1,0 +1,25 @@
+Text	Den historiske interesse for Plinius' skrifter er stor , da få forfattere fra den tid har beskæftiget sig indgående og alsidigt med naturvidenskabelige områder .	En vigtig kilde til vores viden om Plinius den Ældres liv og død er hans nevø og adoptivsøn Plinius den Yngres breve .	Plinius' alder er afledt fra det faktum , at Vesuv havde et udbrud i august i år 79 , og et udsagn fra hans nevø Plinius den yngre om , at da han døde , var han 56 år , hvilket betyder , at han blev født i år 23 .	Han var søn af en romersk _ equites _ , Gaius Plinius Celer og dennes hustru Marcella .	Hverken den yngre eller den ældre Plinius nævner navnene .
+Event	T0	beskæftiget	EVENT	90
+Event	T1	død	EVENT	223
+Event	T2	afledt	EVENT	299
+Event	T3	faktum	EVENT	314
+Event	T4	udbrud	EVENT	341
+Event	T5	udsagn	EVENT	373
+Event	T6	døde	EVENT	427
+Event	T7	født	EVENT	480
+Event	T8	nævner	EVENT	625
+Event	T9	interesse	EVENT	15
+Event	T10	kilde	EVENT	172
+Event	T11	liv	EVENT	216
+Event	T12	var	EVENT	434
+Event	T13	var	EVENT	499
+Relation	T0	T2	NoRel	true	beskæftiget	afledt
+Relation	T0	T8	NoRel	true	beskæftiget	nævner
+Relation	T1	T13	NoRel	true	død	var
+Relation	T10	T6	NoRel	true	kilde	døde
+Relation	T10	T8	NoRel	true	kilde	nævner
+Relation	T11	T1	NoRel	true	liv	død
+Relation	T11	T2	NoRel	true	liv	afledt
+Relation	T13	T1	NoRel	true	var	død
+Relation	T3	T12	NoRel	true	faktum	var
+Relation	T5	T0	NoRel	true	udsagn	beskæftiget

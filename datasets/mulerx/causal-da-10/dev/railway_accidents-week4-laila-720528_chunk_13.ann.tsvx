@@ -1,0 +1,11 @@
+Text	Det forreste lokomotiv afsporedes men forblev oprejst .	File : Tragedia en Santiago de Compostela ( t ) .	jpg|	En af vognene blev slynget op over baneskråningen og landede på en vej .	- Ulykken filmet af et overvågningskamera ( Berlingske.dk ) - Billedeserie fra mindehøjtideligheden i Santiago de Compostela ( Berlingske.dk )
+Event	T0	afsporedes	EVENT	23
+Event	T1	Tragedia	EVENT	63
+Event	T2	landede	EVENT	164
+Event	T3	filmet	EVENT	194
+Event	T4	slynget op	EVENT	130
+Event	T5	Ulykken	EVENT	186
+Relation	T0	T1	CauseEffect	true	afsporedes	Tragedia
+Relation	T1	T0	EffectCause	true	Tragedia	afsporedes
+Relation	T4	T1	CauseEffect	true	slynget op	Tragedia
+Relation	T1	T4	EffectCause	true	Tragedia	slynget op

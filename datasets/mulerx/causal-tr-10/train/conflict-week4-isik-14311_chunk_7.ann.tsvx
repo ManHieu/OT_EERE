@@ -1,0 +1,32 @@
+Text	1923'te imzalanan Lozan Barış Antlaşması’nın 21. Maddesi gereğince , Birleşik Krallık'a ilhakı tanındı .	1925 yılında Kıbrıs kraliyet kolonisi olarak ilan edildi ve adaya ilk Türkiye Cumhuriyeti konsolosu atandı .	Ekim 1931'de itibaren Rumlar Enosis isteğiyle ayaklandı , Rumlar'ın Birleşik Krallık yönetimine karşı ayaklanması sonucu Birleşik Krallık'ın politikası sertleşti .	Yunan ve Türk tarihinin okutulması , iki ülkenin bayraklarının kullanılması ve Yunan ya da Türk ulusal kahramanlarının resimlerinin sergilenmesi yasaklandı .	Türk topluluğu Enosis’e karşı olduğunu açıkladı .
+Event	T0	tanındı	EVENT	95
+Event	T1	edildi	EVENT	155
+Event	T2	atandı	EVENT	205
+Event	T3	ayaklandı	EVENT	260
+Event	T4	ayaklanması	EVENT	316
+Event	T5	sertleşti	EVENT	366
+Event	T6	okutulması	EVENT	402
+Event	T7	kullanılması	EVENT	441
+Event	T8	yasaklandı	EVENT	523
+Event	T9	açıkladı	EVENT	575
+Event	T10	imzalanan	EVENT	8
+Event	T11	Lozan Barış Antlaşması’nın	EVENT	18
+Event	T12	sergilenmesi	EVENT	510
+Relation	T11	T0	CauseEffect	true	Lozan Barış Antlaşması’nın	tanındı
+Relation	T0	T11	EffectCause	true	tanındı	Lozan Barış Antlaşması’nın
+Relation	T0	T1	CauseEffect	true	tanındı	edildi
+Relation	T1	T0	EffectCause	true	edildi	tanındı
+Relation	T4	T5	CauseEffect	true	ayaklanması	sertleşti
+Relation	T5	T4	EffectCause	true	sertleşti	ayaklanması
+Relation	T5	T8	CauseEffect	true	sertleşti	yasaklandı
+Relation	T8	T5	EffectCause	true	yasaklandı	sertleşti
+Relation	T0	T6	NoRel	true	tanındı	okutulması
+Relation	T1	T8	NoRel	true	edildi	yasaklandı
+Relation	T10	T1	NoRel	true	imzalanan	edildi
+Relation	T10	T11	NoRel	true	imzalanan	Lozan Barış Antlaşması’nın
+Relation	T2	T3	NoRel	true	atandı	ayaklandı
+Relation	T3	T12	NoRel	true	ayaklandı	sergilenmesi
+Relation	T3	T7	NoRel	true	ayaklandı	kullanılması
+Relation	T5	T2	NoRel	true	sertleşti	atandı
+Relation	T7	T0	NoRel	true	kullanılması	tanındı
+Relation	T9	T11	NoRel	true	açıkladı	Lozan Barış Antlaşması’nın

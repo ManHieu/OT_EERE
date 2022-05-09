@@ -1,0 +1,23 @@
+Text	Azerbaycan Devlet Sınır Hizmeti Başkanı Elçin Guliyev , pilotun deneyimli olduğunu ve Birinci Karabağ Savaşı'na katıldığını , helikopterin neredeyse yeni olduğunu ve yakın zamanda tamir edildiğini söyledi .	Guliyev , helikopterin kara kutusunun bulunduğunu belirterek , olaya dış güçlerin karışmadığını kaydetti .	İlk bilgilere göre helikopter kazasında iki albay , beş binbaşı , dört yüzbaşı , iki teğmen ve bir müteahhit hayatını kaybederken , bir albay ve bir kaptan da yaralandı .	DSH'ya göre kazada hayatını kaybedenlerin listesi :	1. Cevadov Füzuli Ali İbrahim oğlu — albay 2. Nazirov Emil Nazir oğlu — yarbay 3. Hasanov Elmir Mircelil oğlu — binbaşı 4.
+Event	T0	tamir	EVENT	180
+Event	T1	söyledi	EVENT	197
+Event	T2	kaydetti	EVENT	303
+Event	T3	kazasında	EVENT	344
+Event	T4	kaybederken	EVENT	432
+Event	T5	yaralandı	EVENT	473
+Event	T6	katıldığını	EVENT	112
+Event	T7	bulunduğunu	EVENT	245
+Event	T8	belirterek	EVENT	257
+Event	T9	kazada	EVENT	497
+Event	T10	kaybedenlerin	EVENT	513
+Relation	T0	T10	NoRel	true	tamir	kaybedenlerin
+Relation	T1	T0	NoRel	true	söyledi	tamir
+Relation	T1	T7	NoRel	true	söyledi	bulunduğunu
+Relation	T2	T10	NoRel	true	kaydetti	kaybedenlerin
+Relation	T5	T3	NoRel	true	yaralandı	kazasında
+Relation	T6	T7	NoRel	true	katıldığını	bulunduğunu
+Relation	T6	T8	NoRel	true	katıldığını	belirterek
+Relation	T7	T10	NoRel	true	bulunduğunu	kaybedenlerin
+Relation	T7	T3	NoRel	true	bulunduğunu	kazasında
+Relation	T9	T6	NoRel	true	kazada	katıldığını
+Relation	T9	T8	NoRel	true	kazada	belirterek

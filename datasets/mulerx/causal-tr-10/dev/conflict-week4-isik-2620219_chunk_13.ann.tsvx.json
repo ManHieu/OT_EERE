@@ -1,0 +1,1087 @@
+{
+  "id": "conflict-week4-isik-2620219_chunk_13.ann.tsvx",
+  "text": "31 Temmuz 1905'te K\u0131r\u0131m'daki Ker\u00e7'de bir pogromda , belediye ba\u015fkan\u0131 , polise Yahudi savunma grubuna ate\u015f etmesini emretti ve iki sava\u015f\u00e7\u0131 \u00f6ld\u00fcr\u00fcld\u00fc .\tPogrom , g\u00f6r\u00fcn\u00fc\u015fte bu ama\u00e7la getirilen liman i\u015f\u00e7ileri taraf\u0131ndan y\u00fcr\u00fct\u00fcld\u00fc .\t17 Ekim 1905 tarihli \u00c7ar Manifestosu'nun yay\u0131nlanmas\u0131n\u0131n ard\u0131ndan , bug\u00fcnk\u00fc Ukrayna'da 660 kasabada , Soluk yerle\u015fim'in G\u00fcney ve G\u00fcneydo\u011fu b\u00f6lgelerinde pogromlar ger\u00e7ekle\u015ftirildi .\tBuna kar\u015f\u0131l\u0131k , g\u00fcn\u00fcm\u00fcz Litvanya's\u0131nda pogrom yoktu .\tAyr\u0131ca Belarus veya Rusya'da \u00e7ok az olay meydana geldi .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "emretti",
+      "label": "EVENT",
+      "char_index": 115,
+      "sid": 0,
+      "tid": [
+        17,
+        18
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "\u00f6ld\u00fcr\u00fcld\u00fc",
+      "label": "EVENT",
+      "char_index": 138,
+      "sid": 0,
+      "tid": [
+        21,
+        22
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "y\u00fcr\u00fct\u00fcld\u00fc",
+      "label": "EVENT",
+      "char_index": 215,
+      "sid": 1,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "ger\u00e7ekle\u015ftirildi",
+      "label": "EVENT",
+      "char_index": 389,
+      "sid": 2,
+      "tid": [
+        21,
+        22
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "geldi",
+      "label": "EVENT",
+      "char_index": 511,
+      "sid": 4,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "pogromda",
+      "label": "EVENT",
+      "char_index": 41,
+      "sid": 0,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "getirilen",
+      "label": "EVENT",
+      "char_index": 179,
+      "sid": 1,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "Pogrom",
+      "label": "EVENT",
+      "char_index": 150,
+      "sid": 1,
+      "tid": [
+        0,
+        1
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "Manifestosu'nun",
+      "label": "EVENT",
+      "char_index": 252,
+      "sid": 2,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "yay\u0131nlanmas\u0131n\u0131n",
+      "label": "EVENT",
+      "char_index": 268,
+      "sid": 2,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "pogromlar",
+      "label": "EVENT",
+      "char_index": 379,
+      "sid": 2,
+      "tid": [
+        20,
+        21
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "pogrom",
+      "label": "EVENT",
+      "char_index": 447,
+      "sid": 3,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "olay",
+      "label": "EVENT",
+      "char_index": 498,
+      "sid": 4,
+      "tid": [
+        6,
+        7
+      ]
+    }
+  },
+  "relation": {
+    "T0-T1": "CauseEffect",
+    "T1-T0": "EffectCause",
+    "T8-T10": "CauseEffect",
+    "T10-T8": "EffectCause",
+    "T0-T3": "NoRel",
+    "T0-T8": "NoRel",
+    "T1-T12": "NoRel",
+    "T10-T1": "NoRel",
+    "T10-T6": "NoRel",
+    "T12-T11": "NoRel",
+    "T12-T3": "NoRel",
+    "T12-T4": "NoRel",
+    "T12-T5": "NoRel",
+    "T12-T7": "NoRel",
+    "T12-T8": "NoRel",
+    "T3-T12": "NoRel",
+    "T3-T4": "NoRel",
+    "T3-T7": "NoRel",
+    "T6-T4": "NoRel",
+    "T6-T8": "NoRel",
+    "T8-T3": "NoRel",
+    "T9-T4": "NoRel"
+  },
+  "sentence": [
+    [
+      "31",
+      "Temmuz",
+      "1905'te",
+      "K\u0131r\u0131m'daki",
+      "Ker\u00e7'de",
+      "bir",
+      "pogromda",
+      ",",
+      "belediye",
+      "ba\u015fkan\u0131",
+      ",",
+      "polise",
+      "Yahudi",
+      "savunma",
+      "grubuna",
+      "ate\u015f",
+      "etmesini",
+      "emretti",
+      "ve",
+      "iki",
+      "sava\u015f\u00e7\u0131",
+      "\u00f6ld\u00fcr\u00fcld\u00fc",
+      "."
+    ],
+    [
+      "Pogrom",
+      ",",
+      "g\u00f6r\u00fcn\u00fc\u015fte",
+      "bu",
+      "ama\u00e7la",
+      "getirilen",
+      "liman",
+      "i\u015f\u00e7ileri",
+      "taraf\u0131ndan",
+      "y\u00fcr\u00fct\u00fcld\u00fc",
+      "."
+    ],
+    [
+      "17",
+      "Ekim",
+      "1905",
+      "tarihli",
+      "\u00c7ar",
+      "Manifestosu'nun",
+      "yay\u0131nlanmas\u0131n\u0131n",
+      "ard\u0131ndan",
+      ",",
+      "bug\u00fcnk\u00fc",
+      "Ukrayna'da",
+      "660",
+      "kasabada",
+      ",",
+      "Soluk",
+      "yerle\u015fim'in",
+      "G\u00fcney",
+      "ve",
+      "G\u00fcneydo\u011fu",
+      "b\u00f6lgelerinde",
+      "pogromlar",
+      "ger\u00e7ekle\u015ftirildi",
+      "."
+    ],
+    [
+      "Buna",
+      "kar\u015f\u0131l\u0131k",
+      ",",
+      "g\u00fcn\u00fcm\u00fcz",
+      "Litvanya's\u0131nda",
+      "pogrom",
+      "yoktu",
+      "."
+    ],
+    [
+      "Ayr\u0131ca",
+      "Belarus",
+      "veya",
+      "Rusya'da",
+      "\u00e7ok",
+      "az",
+      "olay",
+      "meydana",
+      "geldi",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        17
+      ],
+      "nummod"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        0
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        17
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        17
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        17
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        17
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        17
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        17
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        14
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        15
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        17
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        15
+      ],
+      "compound:lvc"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        21
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        20
+      ],
+      "nummod"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        21
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        17
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        21
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        9
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        9
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        7
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      "flat"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      "flat"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        21
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        21
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        21
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        21
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        15
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        19
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        19
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        17
+      ],
+      [
+        2,
+        18
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        18
+      ],
+      [
+        2,
+        16
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        19
+      ],
+      [
+        2,
+        21
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        20
+      ],
+      [
+        2,
+        21
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        21
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        22
+      ],
+      [
+        2,
+        21
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        7
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        7
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        7
+      ],
+      "punct"
+    ]
+  ]
+}

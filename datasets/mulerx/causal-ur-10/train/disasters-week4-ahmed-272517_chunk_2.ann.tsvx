@@ -1,0 +1,19 @@
+Text	اور وہ پھر لافانی ہونے کی دھن میں کوششیں شروع کر دیتا ہے ۔	انکیدو کی موت نے گلگامش کو ایک خدائی لافانی شخصیت بنا دیا ۔	ایرک کی عوام دیوتاؤں سے گلگامش سے متعلق شکایت کرتے ہیں کہ وہ گلگامش بہت سخت ہے ۔	دیوی ارورو جو تخلیق کی دیوی ہے اس نے گلگامش کے مقابل پانی ( تھوک ) اور مٹی سے انکیدو ( یا ان کدو ) کو پیدا کیا ۔	انکیدو کو جانور اٹھا کر ساتھ لے جاتے ہیں اور اسے انسانوں سے دور بڑا کرتے ہیں ۔
+Event	T0	دھن	EVENT	26
+Event	T1	شروع	EVENT	41
+Event	T2	موت	EVENT	69
+Event	T3	تخلیق	EVENT	214
+Event	T4	اٹھا	EVENT	329
+Event	T5	بنا	EVENT	109
+Event	T6	پیدا	EVENT	302
+Event	T7	کرتے	EVENT	381
+Relation	T2	T5	CauseEffect	true	موت	بنا
+Relation	T5	T2	EffectCause	true	بنا	موت
+Relation	T0	T7	NoRel	true	دھن	کرتے
+Relation	T3	T0	NoRel	true	تخلیق	دھن
+Relation	T3	T1	NoRel	true	تخلیق	شروع
+Relation	T3	T2	NoRel	true	تخلیق	موت
+Relation	T5	T1	NoRel	true	بنا	شروع
+Relation	T5	T3	NoRel	true	بنا	تخلیق
+Relation	T7	T0	NoRel	true	کرتے	دھن
+Relation	T7	T2	NoRel	true	کرتے	موت

@@ -1,0 +1,35 @@
+Text	- Türkiye Başbakanı Ahmet Davutoğlu , " Türkiye'nin sınırlarını kim ihlâl ederse ona karşı her türlü tedbiri almanın hakları ve görevi olduğunu " belirtti .	TBMM'deki AK Parti grup toplantısında ise " Angajman kurallarının Rusya dahil tüm dünya tarafından bilindiğini , son hadisede ikazlara rağmen Rus makamlarınca dikkate alınmadığını ve gerekli tedbirleri bu yüzden almaları gerektiğini " söyledi .	Aynı zamanda " Bayırbucak bölgesinde IŞİD unsurlarının bulunmadığını ve bölgedeki masum halka yapılan saldırılara göz yumamayacaklarını " belirtti .	- NATO Genel Sekreteri Jens Stoltenberg , " ellerindeki verilerin Rus uçağının sınır ihlâli yaptığı yönünde olduğunu , Türkiye'nin açıklamalarının doğru olduğunu ve Rusya'nın hedef aldığı yerlerin çoğu IŞİD'in bulunmadığı mekanlar olduğunu " söyledi .	Rusya Genelkurmay sözcüsü Sergey Luskov , olay sonrası Suriye'de faaliyetlerine devam edeceklerini söyleyerek üç adımlık karar metnini açıkladı .
+Event	T0	belirtti	EVENT	146
+Event	T1	söyledi	EVENT	392
+Event	T2	belirtti	EVENT	540
+Event	T4	söyledi	EVENT	793
+Event	T5	olay	EVENT	845
+Event	T6	söyleyerek	EVENT	902
+Event	T7	karar	EVENT	924
+Event	T8	açıkladı	EVENT	938
+Event	T9	ihlâl	EVENT	68
+Event	T10	tedbiri	EVENT	101
+Event	T11	ikazlara	EVENT	283
+Event	T12	toplantısında	EVENT	181
+Event	T13	ihlâli	EVENT	636
+Event	T3	açıklamalarının	EVENT	682
+Relation	T0	T6	NoRel	true	belirtti	söyleyerek
+Relation	T1	T0	NoRel	true	söyledi	belirtti
+Relation	T10	T8	NoRel	true	tedbiri	açıkladı
+Relation	T11	T0	NoRel	true	ikazlara	belirtti
+Relation	T12	T10	NoRel	true	toplantısında	tedbiri
+Relation	T13	T5	NoRel	true	ihlâli	olay
+Relation	T3	T4	NoRel	true	açıklamalarının	söyledi
+Relation	T4	T1	NoRel	true	söyledi	söyledi
+Relation	T4	T10	NoRel	true	söyledi	tedbiri
+Relation	T4	T7	NoRel	true	söyledi	karar
+Relation	T6	T12	NoRel	true	söyleyerek	toplantısında
+Relation	T6	T7	NoRel	true	söyleyerek	karar
+Relation	T7	T11	NoRel	true	karar	ikazlara
+Relation	T7	T4	NoRel	true	karar	söyledi
+Relation	T7	T9	NoRel	true	karar	ihlâl
+Relation	T8	T5	NoRel	true	açıkladı	olay
+Relation	T8	T7	NoRel	true	açıkladı	karar
+Relation	T9	T10	NoRel	true	ihlâl	tedbiri
+Relation	T9	T13	NoRel	true	ihlâl	ihlâli
+Relation	T9	T5	NoRel	true	ihlâl	olay

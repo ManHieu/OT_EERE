@@ -1,0 +1,23 @@
+Text	1222 KIBRIS DEPREMI , 11 Mayıs 1222 tarihinde saat 06:15 sularında merkez_üssü Kıbrıs'ın güneybatısı olan , 7.0 M _ ( s ) ~ 7.5 M _ ( s ) arası bir büyüklükte meydana gelen deprem .	Libya ile İskenderiye'de gözlemlenmiş bir tsunamiye yol açan deprem en şiddetli biçimde Lefkoşa , Limasol ve Baf'ta hissedildi .	Depremin tahmini konumu Kıbrıs'ın güneybatısı olup Kıbrıs arkı üzerinde gerçekleştiği düşünülmektedir .	Kıbrıs arkı , Afrika levhasının Anadolu Levhasıyla olan levha sınırının bir parçasıdır .	Kıbrıs'ın batısında kuzeydoğu - güneybatı doğrultusunda bir gerginlik tespit edilmiştir ve bölgedeki büyük depremlerin sebebinin de bu olduğu düşünülmektedir .
+Event	T1	deprem	EVENT	173
+Event	T2	gözlemlenmiş	EVENT	207
+Event	T3	deprem	EVENT	243
+Event	T4	hissedildi	EVENT	298
+Event	T6	depremlerin	EVENT	611
+Event	T7	1222 KIBRIS DEPREMI	EVENT	0
+Event	T8	tsunamiye	EVENT	224
+Event	T9	Depremin	EVENT	311
+Event	T5	gerginlik	EVENT	564
+Event	T10	tespit edilmiştir	EVENT	574
+Event	T11	düşünülmektedir	EVENT	397
+Event	T12	düşünülmektedir	EVENT	646
+Relation	T1	T5	NoRel	true	deprem	gerginlik
+Relation	T10	T8	NoRel	true	tespit edilmiştir	tsunamiye
+Relation	T12	T3	NoRel	true	düşünülmektedir	deprem
+Relation	T3	T2	NoRel	true	deprem	gözlemlenmiş
+Relation	T3	T9	NoRel	true	deprem	Depremin
+Relation	T5	T7	NoRel	true	gerginlik	1222 KIBRIS DEPREMI
+Relation	T7	T1	NoRel	true	1222 KIBRIS DEPREMI	deprem
+Relation	T7	T6	NoRel	true	1222 KIBRIS DEPREMI	depremlerin
+Relation	T8	T2	NoRel	true	tsunamiye	gözlemlenmiş
+Relation	T9	T3	NoRel	true	Depremin	deprem

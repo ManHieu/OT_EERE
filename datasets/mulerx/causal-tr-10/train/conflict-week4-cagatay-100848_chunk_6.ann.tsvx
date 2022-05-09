@@ -1,0 +1,45 @@
+Text	Kasım 1954’te Cezayir devriminin başlamasıyla , Dr. Chaulet’yle bağlantılarının bir sonucu olarak , Ulusal Kurtuluş Cephesine ( Fransızca : Front de Libération Nationale , kısaca FLN ) katıldı .	The Wretched of the Earth ( Yeryüzünün Lanetlileri )’nde , Fanon , derinlemesine olarak , Fransız güçlerinin Cezayirliler’e yaptığı işkencelerin etkilerini tartıştı .	Fransız paraşütçü birimlerinin işkenceye katılmaları gerçeği , işkenceye karıştıkları ileri sürülenlere ‘ olaylar ’ için af çıkarıldığı Fransa’da siyasal çalkantılara neden oldu .	Terörizm zanlılarına işkence yapmayı açıkça onaylayan General Paul Aussaresses’in yaptıkları nedeniyle değil yeterince vicdan azabı sergilememesi nedeniyle yargılanması bundandır .	Fanon , Cezayir boyunca , özellikle Kabyle bölgesinde , Cezayirliler’in kültürel / psikolojik yaşamını çalışmak üzere kapsamlı yolculuklar yaptı .
+Event	T0	katıldı	EVENT	185
+Event	T2	tartıştı	EVENT	351
+Event	T3	olaylar	EVENT	468
+Event	T4	çıkarıldığı	EVENT	486
+Event	T5	yaptıkları	EVENT	624
+Event	T6	yargılanması	EVENT	698
+Event	T7	çalışmak	EVENT	826
+Event	T9	çalkantılara	EVENT	516
+Event	T1	işkencelerin	EVENT	327
+Event	T10	işkenceye	EVENT	393
+Event	T11	işkenceye	EVENT	425
+Event	T12	Terörizm	EVENT	542
+Event	T13	işkence	EVENT	563
+Event	T14	onaylayan	EVENT	586
+Event	T8	yolculuklar	EVENT	850
+Relation	T4	T9	CauseEffect	true	çıkarıldığı	çalkantılara
+Relation	T9	T4	EffectCause	true	çalkantılara	çıkarıldığı
+Relation	T5	T6	CauseEffect	true	yaptıkları	yargılanması
+Relation	T6	T5	EffectCause	true	yargılanması	yaptıkları
+Relation	T7	T8	CauseEffect	true	çalışmak	yolculuklar
+Relation	T8	T7	EffectCause	true	yolculuklar	çalışmak
+Relation	T0	T7	NoRel	true	katıldı	çalışmak
+Relation	T1	T0	NoRel	true	işkencelerin	katıldı
+Relation	T1	T5	NoRel	true	işkencelerin	yaptıkları
+Relation	T10	T12	NoRel	true	işkenceye	Terörizm
+Relation	T10	T14	NoRel	true	işkenceye	onaylayan
+Relation	T10	T2	NoRel	true	işkenceye	tartıştı
+Relation	T12	T0	NoRel	true	Terörizm	katıldı
+Relation	T12	T2	NoRel	true	Terörizm	tartıştı
+Relation	T12	T4	NoRel	true	Terörizm	çıkarıldığı
+Relation	T14	T0	NoRel	true	onaylayan	katıldı
+Relation	T14	T12	NoRel	true	onaylayan	Terörizm
+Relation	T14	T7	NoRel	true	onaylayan	çalışmak
+Relation	T2	T8	NoRel	true	tartıştı	yolculuklar
+Relation	T4	T5	NoRel	true	çıkarıldığı	yaptıkları
+Relation	T6	T10	NoRel	true	yargılanması	işkenceye
+Relation	T6	T7	NoRel	true	yargılanması	çalışmak
+Relation	T6	T8	NoRel	true	yargılanması	yolculuklar
+Relation	T6	T9	NoRel	true	yargılanması	çalkantılara
+Relation	T8	T4	NoRel	true	yolculuklar	çıkarıldığı
+Relation	T8	T6	NoRel	true	yolculuklar	yargılanması
+Relation	T9	T11	NoRel	true	çalkantılara	işkenceye
+Relation	T9	T7	NoRel	true	çalkantılara	çalışmak
+Relation	T9	T8	NoRel	true	çalkantılara	yolculuklar

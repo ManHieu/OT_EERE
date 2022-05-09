@@ -1,0 +1,56 @@
+Text	- " İstanbul'dan Ankara'ya Deniz Gezmiş için Bağımsızlık Yürüyüşü " , Yurtsever Cephe önderliğinde 1 Mayıs 2007'de İstanbul'dan başlamıştır .	Deniz Gezmişlerin 1972'de idam edildiği Ankara'da , Karşıyaka Mezarlığı'nda sona eren yürüyüşe katılanlar çeşitli duraklarda durarak amaçlarını anlatan şenlikler düzenlediler .	Yürüyüş öncesinde Çanakkale Sulh Mahkemesi , afişlerin üzerinde resimleri yer alan kişilerin idam hükmü giymiş mahkûmlar olduğu gerekçesiyle söz konusu afişlerin toplatılmasına karar verdi .	Cumhuriyet yazarı Uğur Mumcu , 12 Eylül Darbesi'nden sonra 17 Eylül 1980 günü yayımladığı yazısında , 12 Mart dönemini değerlendirerek Deniz Gezmiş , Mahir Çayan gibi isimlerin gerçekleştirdikleri banka soyma , adam kaçırma , fidye isteme gibi eylemleri _ " bireysel terör " _ olarak tanımladı ve silahlı eylemlere karşı çıkılması gerektiğini ifade etti :	_ " Solun başvuracağı tek yöntem yasal çizgiler , anayasal çerçevelerdir .
+Event	T0	Yürüyüşü	EVENT	57
+Event	T1	başlamıştır	EVENT	128
+Event	T3	yürüyüşe	EVENT	228
+Event	T4	düzenlediler	EVENT	304
+Event	T5	Yürüyüş	EVENT	319
+Event	T6	verdi	EVENT	502
+Event	T7	yayımladığı	EVENT	588
+Event	T9	isteme	EVENT	742
+Event	T10	tanımladı	EVENT	794
+Event	T11	eylemlere	EVENT	815
+Event	T12	etti	EVENT	859
+Event	T2	idam	EVENT	168
+Event	T13	12 Eylül Darbesi'nden	EVENT	541
+Event	T8	soyma	EVENT	713
+Event	T14	kaçırma	EVENT	726
+Event	T15	eylemleri	EVENT	754
+Event	T16	çıkılması	EVENT	831
+Relation	T2	T0	CauseEffect	true	idam	Yürüyüşü
+Relation	T0	T2	EffectCause	true	Yürüyüşü	idam
+Relation	T7	T12	CauseEffect	true	yayımladığı	etti
+Relation	T12	T7	EffectCause	true	etti	yayımladığı
+Relation	T8	T10	CauseEffect	true	soyma	tanımladı
+Relation	T10	T8	EffectCause	true	tanımladı	soyma
+Relation	T14	T10	CauseEffect	true	kaçırma	tanımladı
+Relation	T10	T14	EffectCause	true	tanımladı	kaçırma
+Relation	T9	T10	CauseEffect	true	isteme	tanımladı
+Relation	T10	T9	EffectCause	true	tanımladı	isteme
+Relation	T0	T10	NoRel	true	Yürüyüşü	tanımladı
+Relation	T1	T13	NoRel	true	başlamıştır	12 Eylül Darbesi'nden
+Relation	T1	T14	NoRel	true	başlamıştır	kaçırma
+Relation	T1	T3	NoRel	true	başlamıştır	yürüyüşe
+Relation	T10	T15	NoRel	true	tanımladı	eylemleri
+Relation	T11	T4	NoRel	true	eylemlere	düzenlediler
+Relation	T12	T0	NoRel	true	etti	Yürüyüşü
+Relation	T12	T16	NoRel	true	etti	çıkılması
+Relation	T12	T9	NoRel	true	etti	isteme
+Relation	T13	T12	NoRel	true	12 Eylül Darbesi'nden	etti
+Relation	T13	T14	NoRel	true	12 Eylül Darbesi'nden	kaçırma
+Relation	T13	T9	NoRel	true	12 Eylül Darbesi'nden	isteme
+Relation	T14	T15	NoRel	true	kaçırma	eylemleri
+Relation	T14	T2	NoRel	true	kaçırma	idam
+Relation	T14	T3	NoRel	true	kaçırma	yürüyüşe
+Relation	T15	T7	NoRel	true	eylemleri	yayımladığı
+Relation	T15	T9	NoRel	true	eylemleri	isteme
+Relation	T3	T1	NoRel	true	yürüyüşe	başlamıştır
+Relation	T3	T12	NoRel	true	yürüyüşe	etti
+Relation	T3	T16	NoRel	true	yürüyüşe	çıkılması
+Relation	T3	T2	NoRel	true	yürüyüşe	idam
+Relation	T4	T15	NoRel	true	düzenlediler	eylemleri
+Relation	T4	T16	NoRel	true	düzenlediler	çıkılması
+Relation	T4	T9	NoRel	true	düzenlediler	isteme
+Relation	T6	T10	NoRel	true	verdi	tanımladı
+Relation	T7	T1	NoRel	true	yayımladığı	başlamıştır
+Relation	T7	T11	NoRel	true	yayımladığı	eylemlere
+Relation	T8	T11	NoRel	true	soyma	eylemlere

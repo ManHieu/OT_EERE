@@ -1,0 +1,122 @@
+Text	Det er også blevet nævnt , at vægten af de allierede skibe kan have gjort dem mere stabile i vinden ud for kysten af Salamis , og gjort dem mindre følsomme overfor vædring ( eller nærmere : få mindre skader når de blev vædret ) .	Taktisk set ville et slag i åben sø have været at foretrække for perserne med deres overlegne antal og bedre sømandsskab .	For grækerne bestod det eneste realistiske håb om en afgørende sejr i at trække perserne ind på et begrænset område , hvor deres antal ikke betød ret meget .	Slaget ved Artemisium havde set forsøg på at opveje persernes fordel i antal , men til sidst kan de allierede have indset , at de havde brug for en endnu mere snæver kanal for at besejre perserne .	Ved at sejle ind i stræderne ved Salamis for at angribe grækerne spillede perserne grækernes spil .
+Event	T0	nævnt	EVENT	19
+Event	T1	gjort	EVENT	68
+Event	T2	gjort	EVENT	130
+Event	T3	vædring	EVENT	164
+Event	T4	skader	EVENT	200
+Event	T5	vædret	EVENT	219
+Event	T6	slag	EVENT	251
+Event	T7	bestod	EVENT	366
+Event	T8	sejr	EVENT	416
+Event	T9	trække	EVENT	426
+Event	T10	betød	EVENT	493
+Event	T11	Slaget	EVENT	511
+Event	T12	forsøg	EVENT	543
+Event	T13	opveje	EVENT	556
+Event	T14	indset	EVENT	626
+Event	T15	besejre	EVENT	690
+Event	T16	sejle	EVENT	716
+Event	T17	angribe	EVENT	757
+Event	T18	spillede	EVENT	774
+Event	T19	spil	EVENT	802
+Event	T20	vægten	EVENT	30
+Event	T21	stabile	EVENT	83
+Event	T22	følsomme	EVENT	147
+Event	T23	foretrække	EVENT	280
+Event	T24	antal	EVENT	324
+Event	T25	sømandsskab	EVENT	339
+Event	T26	håb	EVENT	396
+Event	T27	område	EVENT	462
+Event	T28	snæver	EVENT	670
+Relation	T20	T21	CauseEffect	true	vægten	stabile
+Relation	T21	T20	EffectCause	true	stabile	vægten
+Relation	T20	T22	CauseEffect	true	vægten	følsomme
+Relation	T22	T20	EffectCause	true	følsomme	vægten
+Relation	T24	T23	CauseEffect	true	antal	foretrække
+Relation	T23	T24	EffectCause	true	foretrække	antal
+Relation	T25	T23	CauseEffect	true	sømandsskab	foretrække
+Relation	T23	T25	EffectCause	true	foretrække	sømandsskab
+Relation	T27	T10	CauseEffect	true	område	betød
+Relation	T10	T27	EffectCause	true	betød	område
+Relation	T27	T26	CauseEffect	true	område	håb
+Relation	T26	T27	EffectCause	true	håb	område
+Relation	T16	T18	CauseEffect	true	sejle	spillede
+Relation	T18	T16	EffectCause	true	spillede	sejle
+Relation	T0	T13	NoRel	true	nævnt	opveje
+Relation	T0	T19	NoRel	true	nævnt	spil
+Relation	T0	T24	NoRel	true	nævnt	antal
+Relation	T1	T24	NoRel	true	gjort	antal
+Relation	T10	T11	NoRel	true	betød	Slaget
+Relation	T10	T23	NoRel	true	betød	foretrække
+Relation	T10	T24	NoRel	true	betød	antal
+Relation	T10	T26	NoRel	true	betød	håb
+Relation	T11	T25	NoRel	true	Slaget	sømandsskab
+Relation	T11	T26	NoRel	true	Slaget	håb
+Relation	T11	T5	NoRel	true	Slaget	vædret
+Relation	T11	T7	NoRel	true	Slaget	bestod
+Relation	T12	T22	NoRel	true	forsøg	følsomme
+Relation	T12	T23	NoRel	true	forsøg	foretrække
+Relation	T13	T0	NoRel	true	opveje	nævnt
+Relation	T13	T21	NoRel	true	opveje	stabile
+Relation	T13	T23	NoRel	true	opveje	foretrække
+Relation	T14	T2	NoRel	true	indset	gjort
+Relation	T15	T20	NoRel	true	besejre	vægten
+Relation	T15	T9	NoRel	true	besejre	trække
+Relation	T16	T27	NoRel	true	sejle	område
+Relation	T17	T23	NoRel	true	angribe	foretrække
+Relation	T17	T24	NoRel	true	angribe	antal
+Relation	T17	T28	NoRel	true	angribe	snæver
+Relation	T18	T11	NoRel	true	spillede	Slaget
+Relation	T18	T19	NoRel	true	spillede	spil
+Relation	T18	T25	NoRel	true	spillede	sømandsskab
+Relation	T18	T6	NoRel	true	spillede	slag
+Relation	T19	T17	NoRel	true	spil	angribe
+Relation	T19	T5	NoRel	true	spil	vædret
+Relation	T2	T0	NoRel	true	gjort	nævnt
+Relation	T2	T1	NoRel	true	gjort	gjort
+Relation	T2	T26	NoRel	true	gjort	håb
+Relation	T2	T3	NoRel	true	gjort	vædring
+Relation	T2	T6	NoRel	true	gjort	slag
+Relation	T2	T8	NoRel	true	gjort	sejr
+Relation	T20	T12	NoRel	true	vægten	forsøg
+Relation	T20	T13	NoRel	true	vægten	opveje
+Relation	T20	T24	NoRel	true	vægten	antal
+Relation	T20	T27	NoRel	true	vægten	område
+Relation	T20	T9	NoRel	true	vægten	trække
+Relation	T21	T16	NoRel	true	stabile	sejle
+Relation	T21	T22	NoRel	true	stabile	følsomme
+Relation	T21	T7	NoRel	true	stabile	bestod
+Relation	T22	T2	NoRel	true	følsomme	gjort
+Relation	T23	T15	NoRel	true	foretrække	besejre
+Relation	T23	T18	NoRel	true	foretrække	spillede
+Relation	T23	T19	NoRel	true	foretrække	spil
+Relation	T24	T10	NoRel	true	antal	betød
+Relation	T24	T13	NoRel	true	antal	opveje
+Relation	T25	T0	NoRel	true	sømandsskab	nævnt
+Relation	T26	T17	NoRel	true	håb	angribe
+Relation	T26	T24	NoRel	true	håb	antal
+Relation	T26	T7	NoRel	true	håb	bestod
+Relation	T26	T8	NoRel	true	håb	sejr
+Relation	T27	T12	NoRel	true	område	forsøg
+Relation	T27	T14	NoRel	true	område	indset
+Relation	T28	T14	NoRel	true	snæver	indset
+Relation	T28	T3	NoRel	true	snæver	vædring
+Relation	T3	T0	NoRel	true	vædring	nævnt
+Relation	T3	T19	NoRel	true	vædring	spil
+Relation	T3	T22	NoRel	true	vædring	følsomme
+Relation	T3	T28	NoRel	true	vædring	snæver
+Relation	T3	T7	NoRel	true	vædring	bestod
+Relation	T4	T27	NoRel	true	skader	område
+Relation	T4	T3	NoRel	true	skader	vædring
+Relation	T5	T17	NoRel	true	vædret	angribe
+Relation	T6	T0	NoRel	true	slag	nævnt
+Relation	T6	T13	NoRel	true	slag	opveje
+Relation	T6	T18	NoRel	true	slag	spillede
+Relation	T7	T11	NoRel	true	bestod	Slaget
+Relation	T7	T20	NoRel	true	bestod	vægten
+Relation	T8	T18	NoRel	true	sejr	spillede
+Relation	T8	T24	NoRel	true	sejr	antal
+Relation	T8	T25	NoRel	true	sejr	sømandsskab
+Relation	T8	T26	NoRel	true	sejr	håb
+Relation	T9	T14	NoRel	true	trække	indset
+Relation	T9	T26	NoRel	true	trække	håb

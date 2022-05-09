@@ -1,0 +1,47 @@
+Text	2021 AZERBAYCAN MIL MI - 17 KAZASI veya KARAHEYBET HELIKOPTER KAZASI ( ) 30 Kasım 2021'de , Azerbaycan Devlet Sınır Hizmetine ( DSH ) ait Mil Mi - 17 askeri helikopterinin Hızı Rayonunda bulunan " Karaheybet " havacılık alanında eğitim uçuşu sırasında meydana gelen olay .	İlk belirlemelere göre helikopter kazasında 14 kişi ölmüş , 2 kişi yaralanmıştır .	Kazanın hemen ardından DSH ve Başsavcılığı temsilcileri olay yerine geldi .	Başsavcılık Başsavcı Yardımcısı Elçin Memmedov öncülüğünde soruşturma başlatıldı .	Kazanın nedeni halen araştırılıyor .
+Event	T0	KAZASI	EVENT	28
+Event	T1	KAZASI	EVENT	62
+Event	T2	uçuşu	EVENT	236
+Event	T3	olay	EVENT	266
+Event	T4	belirlemelere	EVENT	277
+Event	T5	kazasında	EVENT	307
+Event	T6	ölmüş	EVENT	325
+Event	T7	yaralanmıştır	EVENT	340
+Event	T8	Kazanın	EVENT	356
+Event	T10	geldi	EVENT	424
+Event	T12	araştırılıyor	EVENT	536
+Event	T13	soruşturma	EVENT	491
+Event	T9	Kazanın	EVENT	515
+Relation	T5	T6	CauseEffect	true	kazasında	ölmüş
+Relation	T6	T5	EffectCause	true	ölmüş	kazasında
+Relation	T5	T7	CauseEffect	true	kazasında	yaralanmıştır
+Relation	T7	T5	EffectCause	true	yaralanmıştır	kazasında
+Relation	T0	T6	CauseEffect	true	KAZASI	ölmüş
+Relation	T6	T0	EffectCause	true	ölmüş	KAZASI
+Relation	T1	T7	CauseEffect	true	KAZASI	yaralanmıştır
+Relation	T7	T1	EffectCause	true	yaralanmıştır	KAZASI
+Relation	T8	T6	CauseEffect	true	Kazanın	ölmüş
+Relation	T6	T8	EffectCause	true	ölmüş	Kazanın
+Relation	T8	T7	CauseEffect	true	Kazanın	yaralanmıştır
+Relation	T7	T8	EffectCause	true	yaralanmıştır	Kazanın
+Relation	T8	T10	CauseEffect	true	Kazanın	geldi
+Relation	T10	T8	EffectCause	true	geldi	Kazanın
+Relation	T8	T13	CauseEffect	true	Kazanın	soruşturma
+Relation	T13	T8	EffectCause	true	soruşturma	Kazanın
+Relation	T9	T13	CauseEffect	true	Kazanın	soruşturma
+Relation	T13	T9	EffectCause	true	soruşturma	Kazanın
+Relation	T0	T1	NoRel	true	KAZASI	KAZASI
+Relation	T0	T10	NoRel	true	KAZASI	geldi
+Relation	T1	T10	NoRel	true	KAZASI	geldi
+Relation	T1	T9	NoRel	true	KAZASI	Kazanın
+Relation	T10	T6	NoRel	true	geldi	ölmüş
+Relation	T12	T10	NoRel	true	araştırılıyor	geldi
+Relation	T13	T7	NoRel	true	soruşturma	yaralanmıştır
+Relation	T4	T0	NoRel	true	belirlemelere	KAZASI
+Relation	T4	T9	NoRel	true	belirlemelere	Kazanın
+Relation	T5	T0	NoRel	true	kazasında	KAZASI
+Relation	T5	T12	NoRel	true	kazasında	araştırılıyor
+Relation	T6	T10	NoRel	true	ölmüş	geldi
+Relation	T6	T9	NoRel	true	ölmüş	Kazanın
+Relation	T8	T9	NoRel	true	Kazanın	Kazanın
+Relation	T9	T10	NoRel	true	Kazanın	geldi

@@ -1,0 +1,19 @@
+Text	" 20. yüzyılın ' Savaş ve Barış'ı " diye nitelenen hacimli kitap Türkiye'de Can Yayınlarından 2012'de çıktı .	_ Chicago Mezbahaları _ Upton Sinclair Roman Özgün adı _ The Jungle _ olan 1906 tarihli bu ABD romanı , 1956'da Doğu Almanya'da komünizmle uyuşmadığı için yasaklandı .	_ Lolita _ Vladimir Nabokov Roman Rus asıllı yazarın Paris'te İngilizce yazıp yayımladığı roman , müstehcen olduğu gerekçesiyle Fransa , İngiltere , Kanada , Yeni Zelanda , Güney Amerika ve Arjantin'de yasaklandı .	Romanda 12 yaşındaki bir kız çocuğuna ilgi duyan orta yaşlı bir adamın öyküsü anlatılıyordu .	_ Sırça Köşk _ Sabahattin Ali Öykü Yazarın 1947 yılında yayımlandığı bu son öyküsü , devlete bir başkaldırış olduğu iddiasıyla yasaklandı .
+Event	T0	çıktı	EVENT	102
+Event	T1	yasaklandı	EVENT	265
+Event	T2	yayımladığı	EVENT	356
+Event	T3	yasaklandı	EVENT	480
+Event	T4	anlatılıyordu	EVENT	571
+Event	T5	yayımlandığı	EVENT	643
+Event	T6	öyküsü	EVENT	663
+Event	T7	yasaklandı	EVENT	714
+Event	T8	başkaldırış	EVENT	684
+Relation	T3	T7	NoRel	true	yasaklandı	yasaklandı
+Relation	T4	T3	NoRel	true	anlatılıyordu	yasaklandı
+Relation	T5	T4	NoRel	true	yayımlandığı	anlatılıyordu
+Relation	T5	T7	NoRel	true	yayımlandığı	yasaklandı
+Relation	T5	T8	NoRel	true	yayımlandığı	başkaldırış
+Relation	T7	T4	NoRel	true	yasaklandı	anlatılıyordu
+Relation	T7	T6	NoRel	true	yasaklandı	öyküsü
+Relation	T7	T8	NoRel	true	yasaklandı	başkaldırış
+Relation	T8	T3	NoRel	true	başkaldırış	yasaklandı

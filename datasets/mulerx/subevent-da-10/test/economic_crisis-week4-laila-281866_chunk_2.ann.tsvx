@@ -1,0 +1,35 @@
+Text	Næsten samtlige græsmøller er i dag nedlagt , ofret for senere tiders krav om en større produktionskapacitet , som kom med vindmøllerne , men mølledæmninger og gamle historiske udskiftningskort viser ofte , hvor de har ligget .	Mange græsmøller var underfalds- eller strømmøller , som kunne løbe selv for en lille bækkegang ved opstemning af vand .	Ofte kunne der ligge indtil flere møller ved en sådan bæk , se fx Ødis Mølle og Ventthe Mølle .	Efter Kong Christian den 5.'s Danske Lov ( DL ) af 1683 5-11-2 kunne driftsperioden udstrækkes helt indtil den 1. maj , for så vidt vandet ( ikke ) kunne gøre skade .	DL 1683 5-11-2 : ” Hvo som haver Vinter- eller Græs Mølle , hand skal optage stigbord den første Maji , og ej sette det neder igjen , før end alt Høe og Korn er inde af den Stæd eller derhos , så vit Vandet kand skade gjøre . ”
+Event	T0	nedlagt	EVENT	36
+Event	T1	ofret	EVENT	46
+Event	T2	krav	EVENT	70
+Event	T3	kom	EVENT	115
+Event	T4	viser	EVENT	194
+Event	T5	ligget	EVENT	219
+Event	T6	løbe	EVENT	291
+Event	T7	opstemning	EVENT	328
+Event	T8	ligge	EVENT	364
+Event	T9	udstrækkes	EVENT	529
+Event	T10	skade	EVENT	604
+Event	T11	optage	EVENT	682
+Event	T12	sette	EVENT	722
+Event	T13	produktionskapacitet	EVENT	88
+Event	T14	skade	EVENT	824
+Event	T15	inde	EVENT	773
+Relation	T0	T4	NoRel	true	nedlagt	viser
+Relation	T0	T9	NoRel	true	nedlagt	udstrækkes
+Relation	T1	T14	NoRel	true	ofret	skade
+Relation	T10	T5	NoRel	true	skade	ligget
+Relation	T11	T3	NoRel	true	optage	kom
+Relation	T13	T0	NoRel	true	produktionskapacitet	nedlagt
+Relation	T13	T1	NoRel	true	produktionskapacitet	ofret
+Relation	T13	T11	NoRel	true	produktionskapacitet	optage
+Relation	T13	T15	NoRel	true	produktionskapacitet	inde
+Relation	T13	T3	NoRel	true	produktionskapacitet	kom
+Relation	T14	T12	NoRel	true	skade	sette
+Relation	T2	T10	NoRel	true	krav	skade
+Relation	T3	T15	NoRel	true	kom	inde
+Relation	T3	T9	NoRel	true	kom	udstrækkes
+Relation	T5	T2	NoRel	true	ligget	krav
+Relation	T6	T12	NoRel	true	løbe	sette
+Relation	T8	T2	NoRel	true	ligge	krav
+Relation	T8	T3	NoRel	true	ligge	kom

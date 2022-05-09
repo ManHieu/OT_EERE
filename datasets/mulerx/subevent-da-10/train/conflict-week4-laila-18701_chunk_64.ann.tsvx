@@ -1,0 +1,38 @@
+Text	" Kirken repræsenterede en kraft til reaktion , særligt på landet .	" Huerta havde " Gabriel Somellera , præsident for [ Nationale ] Katolske Parti arresteret ; _ La Nación _ , havde protesteret mod kongressens opløsing og de vandsvindel [ i oktober 1913 ] , ligesom andre katolske aviser , og de gik i lag med den officielle presse , og blev til sidst lukket ned .	_ El País _ , der var den primære katolske avis , overlevede i et stykke tid . "	En af de store problemer som Alvaro Obregóns tidlige post-revolutionsregering stod overfor , var at stabilisere landet .	Regionale caciques ( høvdinger ) kæmpede stadig med hinanden i mindre træfninger .
+Event	T0	reaktion	EVENT	37
+Event	T1	arresteret	EVENT	148
+Event	T2	protesteret	EVENT	183
+Event	T3	opløsing	EVENT	211
+Event	T4	vandsvindel	EVENT	226
+Event	T6	overlevede	EVENT	416
+Event	T7	problemer	EVENT	462
+Event	T8	stod	EVENT	525
+Event	T9	stabilisere	EVENT	547
+Event	T10	kæmpede	EVENT	601
+Event	T11	træfninger	EVENT	638
+Event	T12	repræsenterede	EVENT	9
+Event	T5	gik i lag	EVENT	297
+Event	T13	lukket ned	EVENT	353
+Relation	T7	T9	SuperSub	true	problemer	stabilisere
+Relation	T9	T7	SubSuper	true	stabilisere	problemer
+Relation	T7	T10	SuperSub	true	problemer	kæmpede
+Relation	T10	T7	SubSuper	true	kæmpede	problemer
+Relation	T0	T13	NoRel	true	reaktion	lukket ned
+Relation	T1	T2	NoRel	true	arresteret	protesteret
+Relation	T1	T5	NoRel	true	arresteret	gik i lag
+Relation	T10	T5	NoRel	true	kæmpede	gik i lag
+Relation	T10	T6	NoRel	true	kæmpede	overlevede
+Relation	T10	T8	NoRel	true	kæmpede	stod
+Relation	T12	T0	NoRel	true	repræsenterede	reaktion
+Relation	T12	T10	NoRel	true	repræsenterede	kæmpede
+Relation	T12	T8	NoRel	true	repræsenterede	stod
+Relation	T13	T4	NoRel	true	lukket ned	vandsvindel
+Relation	T13	T6	NoRel	true	lukket ned	overlevede
+Relation	T13	T7	NoRel	true	lukket ned	problemer
+Relation	T2	T10	NoRel	true	protesteret	kæmpede
+Relation	T3	T13	NoRel	true	opløsing	lukket ned
+Relation	T4	T1	NoRel	true	vandsvindel	arresteret
+Relation	T5	T13	NoRel	true	gik i lag	lukket ned
+Relation	T5	T4	NoRel	true	gik i lag	vandsvindel
+Relation	T7	T12	NoRel	true	problemer	repræsenterede
+Relation	T8	T1	NoRel	true	stod	arresteret

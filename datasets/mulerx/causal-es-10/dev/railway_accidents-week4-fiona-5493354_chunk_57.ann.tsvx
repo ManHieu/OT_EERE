@@ -1,0 +1,41 @@
+Text	- 19 DE AGOSTO : el choque de dos trenes en la línea de Lisboa a Cascais se salda con seis muertos y un importante número de heridos .	- 19 DE SEPTIEMBRE : Un tren ómnibus choca con otro de mercancías en la línea del Duero a la salida del túnel de Don Luis , proximidades de la estación de Caíde , con el resultado de trece personas heridas , tres de ellas gravemente .	- 1926 -___24 DE ABRIL : en la estación portuense de Campanhã se produce el choque entre un corte de vagones desprendidos de un tren de mercancías y una locomotora .	Se producen varios heridos , tres de ellos graves .	- 1928 -___23 DE ENERO : Descarrila un tren rápido en la estación de Contumil .
+Event	T0	choque	EVENT	20
+Event	T1	muertos	EVENT	91
+Event	T2	heridos	EVENT	125
+Event	T3	choca	EVENT	172
+Event	T4	salida	EVENT	228
+Event	T5	resultado	EVENT	305
+Event	T6	heridas	EVENT	333
+Event	T7	produce	EVENT	435
+Event	T8	choque	EVENT	446
+Event	T9	corte	EVENT	462
+Event	T10	desprendidos	EVENT	479
+Event	T11	producen	EVENT	539
+Event	T12	heridos	EVENT	555
+Event	T13	Descarrila	EVENT	613
+Relation	T0	T1	CauseEffect	true	choque	muertos
+Relation	T1	T0	EffectCause	true	muertos	choque
+Relation	T0	T2	CauseEffect	true	choque	heridos
+Relation	T2	T0	EffectCause	true	heridos	choque
+Relation	T3	T6	CauseEffect	true	choca	heridas
+Relation	T6	T3	EffectCause	true	heridas	choca
+Relation	T8	T12	CauseEffect	true	choque	heridos
+Relation	T12	T8	EffectCause	true	heridos	choque
+Relation	T0	T7	NoRel	true	choque	produce
+Relation	T0	T9	NoRel	true	choque	corte
+Relation	T1	T4	NoRel	true	muertos	salida
+Relation	T1	T8	NoRel	true	muertos	choque
+Relation	T10	T7	NoRel	true	desprendidos	produce
+Relation	T10	T9	NoRel	true	desprendidos	corte
+Relation	T12	T6	NoRel	true	heridos	heridas
+Relation	T2	T6	NoRel	true	heridos	heridas
+Relation	T2	T9	NoRel	true	heridos	corte
+Relation	T3	T12	NoRel	true	choca	heridos
+Relation	T4	T1	NoRel	true	salida	muertos
+Relation	T4	T8	NoRel	true	salida	choque
+Relation	T5	T1	NoRel	true	resultado	muertos
+Relation	T5	T9	NoRel	true	resultado	corte
+Relation	T7	T12	NoRel	true	produce	heridos
+Relation	T7	T13	NoRel	true	produce	Descarrila
+Relation	T7	T5	NoRel	true	produce	resultado
+Relation	T8	T5	NoRel	true	choque	resultado

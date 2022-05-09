@@ -1,0 +1,63 @@
+Text	La línea azul indica la ruta original , la línea roja la ruta seguida .	] El avión realizaba un vuelo desde Santa Cruz de la Sierra ( Bolivia ) hasta Medellín ( Colombia ) , con nueve tripulantes y 68 pasajeros , la mayoría de ellos miembros titulares del equipo brasileño de fútbol Chapecoense , que debían jugar su partido de ida de la final de la Copa Sudamericana 2016 , en Medellín .	La Autoridad Aeronáutica Civil brasileña ( ANAC ) había negado la petición del Chapecoense de volar en un chárter directamente entre São Paulo y Medellín , ya que según el código brasileño de aeronáutica y el convenio de Chicago , únicamente podía realizar un vuelo chárter entre Brasil y Colombia una aeronave perteneciente a alguno de esos dos países .	No obstante el club optó por seguir con LaMia , que ya había transportado a otros clubes de fútbol , y para evadir dicha exigencia realizó una inusual escala y cambio de aviones en Santa Cruz de la Sierra .	Así , los pasajeros salieron del Aeropuerto Internacional de Guarulhos el 28 de noviembre en el vuelo OB_739 de Boliviana de Aviación , que partió a las 14:22 y llegó a su destino en el aeropuerto de Viru Viru en Santa Cruz de la Sierra a las 16:50 ( hora local ; UTC−04:00 ) .
+Event	T0	indica	EVENT	14
+Event	T1	realizaba	EVENT	83
+Event	T2	vuelo	EVENT	96
+Event	T3	jugar	EVENT	308
+Event	T4	partido	EVENT	317
+Event	T5	ida	EVENT	328
+Event	T6	final	EVENT	338
+Event	T7	Copa	EVENT	350
+Event	T8	negado	EVENT	445
+Event	T9	petición	EVENT	455
+Event	T10	volar	EVENT	483
+Event	T11	realizar	EVENT	637
+Event	T12	vuelo	EVENT	649
+Event	T13	seguir	EVENT	773
+Event	T14	transportado	EVENT	805
+Event	T15	evadir	EVENT	852
+Event	T16	realizó	EVENT	875
+Event	T17	escala	EVENT	895
+Event	T18	cambio	EVENT	904
+Event	T19	salieron	EVENT	971
+Event	T20	vuelo	EVENT	1047
+Event	T21	partió	EVENT	1091
+Event	T22	llegó	EVENT	1112
+Relation	T0	T16	NoRel	true	indica	realizó
+Relation	T0	T4	NoRel	true	indica	partido
+Relation	T0	T7	NoRel	true	indica	Copa
+Relation	T10	T17	NoRel	true	volar	escala
+Relation	T10	T9	NoRel	true	volar	petición
+Relation	T11	T20	NoRel	true	realizar	vuelo
+Relation	T12	T11	NoRel	true	vuelo	realizar
+Relation	T12	T15	NoRel	true	vuelo	evadir
+Relation	T12	T3	NoRel	true	vuelo	jugar
+Relation	T13	T7	NoRel	true	seguir	Copa
+Relation	T13	T8	NoRel	true	seguir	negado
+Relation	T14	T10	NoRel	true	transportado	volar
+Relation	T14	T15	NoRel	true	transportado	evadir
+Relation	T14	T4	NoRel	true	transportado	partido
+Relation	T15	T18	NoRel	true	evadir	cambio
+Relation	T15	T21	NoRel	true	evadir	partió
+Relation	T16	T10	NoRel	true	realizó	volar
+Relation	T16	T17	NoRel	true	realizó	escala
+Relation	T16	T4	NoRel	true	realizó	partido
+Relation	T17	T16	NoRel	true	escala	realizó
+Relation	T17	T9	NoRel	true	escala	petición
+Relation	T18	T20	NoRel	true	cambio	vuelo
+Relation	T18	T7	NoRel	true	cambio	Copa
+Relation	T19	T10	NoRel	true	salieron	volar
+Relation	T19	T5	NoRel	true	salieron	ida
+Relation	T19	T7	NoRel	true	salieron	Copa
+Relation	T19	T8	NoRel	true	salieron	negado
+Relation	T2	T17	NoRel	true	vuelo	escala
+Relation	T21	T0	NoRel	true	partió	indica
+Relation	T3	T18	NoRel	true	jugar	cambio
+Relation	T3	T2	NoRel	true	jugar	vuelo
+Relation	T5	T1	NoRel	true	ida	realizaba
+Relation	T5	T20	NoRel	true	ida	vuelo
+Relation	T6	T13	NoRel	true	final	seguir
+Relation	T7	T10	NoRel	true	Copa	volar
+Relation	T7	T14	NoRel	true	Copa	transportado
+Relation	T7	T18	NoRel	true	Copa	cambio
+Relation	T7	T5	NoRel	true	Copa	ida
+Relation	T8	T7	NoRel	true	negado	Copa

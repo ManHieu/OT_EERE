@@ -1,0 +1,54 @@
+Text	By this time , his personal Sopwith Camel ( serial no. B6313 ) had become the most successful fighter aircraft in the history of the RAF , Barker having used it to shoot down 46 aircraft and balloons from September 1917 to September 1918 , for a total of 404 operational flying hours .	It was dismantled in October 1918 , Barker keeping the clock as a memento , although he was asked to return it the following day .	During this time , Barker trialed a series of modifications to B 6313 , to improve its combat performance .	The Clerget rotary engine 's cooling efficiency was poorer in the hotter Italian climate , so several supplementary cooling slots were cut into the cowling .	The poor upward visibility of the Camel resulted in Barker cutting away progressively larger portions of the center - section fabric .
+Event	T0	used	EVENT	153
+Event	T1	flying	EVENT	271
+Event	T2	dismantled	EVENT	293
+Event	T3	keeping	EVENT	329
+Event	T4	asked	EVENT	378
+Event	T5	return	EVENT	387
+Event	T6	trialed	EVENT	443
+Event	T7	series	EVENT	453
+Event	T8	modifications	EVENT	463
+Event	T9	performance	EVENT	511
+Event	T10	cooling	EVENT	641
+Event	T11	cowling	EVENT	673
+Event	T12	resulted	EVENT	723
+Event	T13	become	EVENT	67
+Event	T14	shoot down	EVENT	164
+Event	T15	improve	EVENT	492
+Event	T16	cooling	EVENT	554
+Event	T17	cutting away	EVENT	742
+Relation	T0	T15	NoRel	true	used	improve
+Relation	T0	T5	NoRel	true	used	return
+Relation	T0	T8	NoRel	true	used	modifications
+Relation	T1	T0	NoRel	true	flying	used
+Relation	T1	T15	NoRel	true	flying	improve
+Relation	T1	T16	NoRel	true	flying	cooling
+Relation	T10	T7	NoRel	true	cooling	series
+Relation	T10	T9	NoRel	true	cooling	performance
+Relation	T11	T15	NoRel	true	cowling	improve
+Relation	T11	T2	NoRel	true	cowling	dismantled
+Relation	T11	T5	NoRel	true	cowling	return
+Relation	T12	T0	NoRel	true	resulted	used
+Relation	T12	T9	NoRel	true	resulted	performance
+Relation	T13	T10	NoRel	true	become	cooling
+Relation	T13	T2	NoRel	true	become	dismantled
+Relation	T13	T3	NoRel	true	become	keeping
+Relation	T13	T8	NoRel	true	become	modifications
+Relation	T14	T13	NoRel	true	shoot down	become
+Relation	T14	T17	NoRel	true	shoot down	cutting away
+Relation	T14	T5	NoRel	true	shoot down	return
+Relation	T14	T7	NoRel	true	shoot down	series
+Relation	T15	T14	NoRel	true	improve	shoot down
+Relation	T15	T3	NoRel	true	improve	keeping
+Relation	T2	T3	NoRel	true	dismantled	keeping
+Relation	T3	T1	NoRel	true	keeping	flying
+Relation	T3	T7	NoRel	true	keeping	series
+Relation	T4	T13	NoRel	true	asked	become
+Relation	T4	T5	NoRel	true	asked	return
+Relation	T5	T1	NoRel	true	return	flying
+Relation	T5	T3	NoRel	true	return	keeping
+Relation	T6	T15	NoRel	true	trialed	improve
+Relation	T6	T5	NoRel	true	trialed	return
+Relation	T7	T0	NoRel	true	series	used
+Relation	T7	T11	NoRel	true	series	cowling
+Relation	T9	T8	NoRel	true	performance	modifications

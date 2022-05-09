@@ -1,0 +1,43 @@
+Text	Angrebet kostede mindst 12 fredsbevarende soldater livet og sårede mange flere .	Omkring 50 savnes efter angrebet og formodes at være forsvundet i kamp .	Overfaldet fandt sted kort efter solnedgang , da soldaterne forberedte deres måltid i forbindelse med fejringen af ramadanen , og var et resultat af en øget spænding mellem oprørere og de fremmede fredsstyrker .	_ SLM/A_ har ved flere lejligheder anklaget AMIS-styrken for ikke at optræde neutralt i konflikten , men i stedet støttet centralregeringen ._.	-___Darfur Liberation Front/Sudan_Liberation Movement ( SLM) /Sudan_____Liberation Army , GlobalSecurity.org.
+Event	T0	kostede	EVENT	9
+Event	T1	sårede	EVENT	60
+Event	T2	savnes	EVENT	92
+Event	T3	angrebet	EVENT	105
+Event	T4	forsvundet	EVENT	134
+Event	T5	kamp	EVENT	147
+Event	T6	forberedte	EVENT	214
+Event	T7	måltid	EVENT	231
+Event	T8	fejringen	EVENT	256
+Event	T9	spænding	EVENT	311
+Event	T10	anklaget	EVENT	401
+Event	T11	støttet	EVENT	480
+Event	T12	Angrebet	EVENT	0
+Event	T13	fredsbevarende	EVENT	27
+Event	T14	Overfaldet	EVENT	154
+Relation	T2	T4	SuperSub	true	savnes	forsvundet
+Relation	T4	T2	SubSuper	true	forsvundet	savnes
+Relation	T0	T10	NoRel	true	kostede	anklaget
+Relation	T1	T10	NoRel	true	sårede	anklaget
+Relation	T10	T2	NoRel	true	anklaget	savnes
+Relation	T10	T7	NoRel	true	anklaget	måltid
+Relation	T12	T11	NoRel	true	Angrebet	støttet
+Relation	T12	T7	NoRel	true	Angrebet	måltid
+Relation	T13	T0	NoRel	true	fredsbevarende	kostede
+Relation	T13	T6	NoRel	true	fredsbevarende	forberedte
+Relation	T14	T12	NoRel	true	Overfaldet	Angrebet
+Relation	T14	T8	NoRel	true	Overfaldet	fejringen
+Relation	T14	T9	NoRel	true	Overfaldet	spænding
+Relation	T2	T0	NoRel	true	savnes	kostede
+Relation	T2	T1	NoRel	true	savnes	sårede
+Relation	T2	T6	NoRel	true	savnes	forberedte
+Relation	T3	T2	NoRel	true	angrebet	savnes
+Relation	T3	T9	NoRel	true	angrebet	spænding
+Relation	T4	T10	NoRel	true	forsvundet	anklaget
+Relation	T6	T0	NoRel	true	forberedte	kostede
+Relation	T6	T12	NoRel	true	forberedte	Angrebet
+Relation	T6	T4	NoRel	true	forberedte	forsvundet
+Relation	T7	T10	NoRel	true	måltid	anklaget
+Relation	T7	T9	NoRel	true	måltid	spænding
+Relation	T8	T10	NoRel	true	fejringen	anklaget
+Relation	T8	T12	NoRel	true	fejringen	Angrebet
+Relation	T8	T4	NoRel	true	fejringen	forsvundet

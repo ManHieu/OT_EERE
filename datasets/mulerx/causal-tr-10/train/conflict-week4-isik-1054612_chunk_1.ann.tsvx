@@ -1,0 +1,20 @@
+Text	Kelime büyük ihtimalle bir Yahudi dili olan Yidiş yoluyla Batı dillerine ve Türkçeye girmiştir .	küçükresim | 211x211px | 1931 yılında Selanik'te Yunanlar tarafından Yahudilere karşı yapılan pogrom | alt = MÖ 167 yılında Yahudilerle Yunanlar arasındaki Makabi Ayaklanması tarihte kayda geçmiş ilk pogromlardan biridir .	Haçlı Seferleri sırasında Avrupa'da yaşayan Yahudilere karşı birçok pogrom yapılmıştır : 1096 yılında Fransa ve Almanya'da , 1189 – 1190 yıllarında İngiltere'deki ( Londra ve York ) pogromlar buna örnektir .	1543 yılında Protestan reformcu Martin Luther _ Von den Jüden und iren Lügen _ ( Yahudiler ve Yalanları ) adlı bir kitap yazmış , kitleleri Yahudilere karşı şiddete teşvik etmiştir .	19. ve 20. yüzyılda Rusya'da Yahudilere karşı birçok pogrom yapılmış , o yüzden 1880 ve 1914 yılları arasında 2 milyon civarında Yahudi , Rusya İmparatorluğu'ndan kaçmak zorunda kalmıştır .
+Event	T0	girmiştir	EVENT	85
+Event	T1	pogrom	EVENT	191
+Event	T4	etmiştir	EVENT	700
+Event	T6	pogromlardan	EVENT	297
+Event	T7	Makabi Ayaklanması	EVENT	253
+Event	T2	Haçlı Seferleri	EVENT	320
+Event	T3	pogrom	EVENT	388
+Event	T8	pogromlar	EVENT	502
+Event	T9	yazmış	EVENT	649
+Event	T5	pogrom	EVENT	764
+Event	T10	kalmıştır	EVENT	889
+Relation	T9	T4	CauseEffect	true	yazmış	etmiştir
+Relation	T4	T9	EffectCause	true	etmiştir	yazmış
+Relation	T5	T10	CauseEffect	true	pogrom	kalmıştır
+Relation	T10	T5	EffectCause	true	kalmıştır	pogrom
+Relation	T10	T4	NoRel	true	kalmıştır	etmiştir
+Relation	T4	T0	NoRel	true	etmiştir	girmiştir
+Relation	T7	T1	NoRel	true	Makabi Ayaklanması	pogrom
+Relation	T9	T1	NoRel	true	yazmış	pogrom

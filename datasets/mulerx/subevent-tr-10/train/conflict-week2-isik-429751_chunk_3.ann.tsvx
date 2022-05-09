@@ -1,0 +1,35 @@
+Text	Sovyetler Birliği Başsavcılığı ( 1990 – 1991 ) ve Rusya Federasyonu ( 1991 – 2004 ) tarafından yürütülen soruşturmalarda , Sovyetlerin bu olayda aldığı rol kabul edilmiş ancak bu eylemi bir savaş suçu veya katliam olarak isimlendirmeyi kabul etmemişlerdir .	Olayın faillerinin öldüğü gerekçesiyle Rusya soruşturmayı kapatmış ve Rus hükümeti bu olayda hayatını kaybedenleri Büyük Temizlik kurbanları olarak sınıflandırmamıştır .	Öte yandan , Avrupa İnsan Hakları Mahkemesi buna karşı çıkmış ve Rusya'nın 1940'ta Sovyet gizli polisi ( NKVD ) tarafından öldürülen Polonyalıların akrabalarının haklarını ihlal ettiğini ve Katyn katliamının bir savaş suçu olduğunu beyan etmiştir .	Kasım 2010'da , Rus Devlet Duması katliam emri için Stalin ve diğer Sovyet yetkililerini suçlayan bir bildirgeyi onayladı .	Katyn'de gerçekleşen katliam , birçok Polonyalıya göre Sovyet sisteminin Polonya ulusuna karşı yürüttüğü ceza politikasının bir sembolüdür .
+Event	T1	eylemi	EVENT	179
+Event	T10	suçlayan	EVENT	766
+Event	T11	onayladı	EVENT	790
+Event	T12	katliam	EVENT	822
+Event	T15	soruşturmalarda	EVENT	105
+Event	T17	öldüğü	EVENT	277
+Event	T19	kaybedenleri	EVENT	360
+Event	T21	öldürülen	EVENT	551
+Event	T23	emri	EVENT	719
+Event	T3	Olayın	EVENT	258
+Event	T4	kapatmış	EVENT	316
+Event	T8	Katyn katliamının	EVENT	618
+Relation	T8	T21	SuperSub	true	Katyn katliamının	öldürülen
+Relation	T21	T8	SubSuper	true	öldürülen	Katyn katliamının
+Relation	T8	T15	SuperSub	true	Katyn katliamının	soruşturmalarda
+Relation	T15	T8	SubSuper	true	soruşturmalarda	Katyn katliamının
+Relation	T12	T21	SuperSub	true	katliam	öldürülen
+Relation	T21	T12	SubSuper	true	öldürülen	katliam
+Relation	T1	T11	NoRel	true	eylemi	onayladı
+Relation	T1	T4	NoRel	true	eylemi	kapatmış
+Relation	T11	T15	NoRel	true	onayladı	soruşturmalarda
+Relation	T12	T1	NoRel	true	katliam	eylemi
+Relation	T12	T4	NoRel	true	katliam	kapatmış
+Relation	T17	T19	NoRel	true	öldüğü	kaybedenleri
+Relation	T17	T4	NoRel	true	öldüğü	kapatmış
+Relation	T21	T17	NoRel	true	öldürülen	öldüğü
+Relation	T23	T17	NoRel	true	emri	öldüğü
+Relation	T23	T19	NoRel	true	emri	kaybedenleri
+Relation	T23	T21	NoRel	true	emri	öldürülen
+Relation	T23	T3	NoRel	true	emri	Olayın
+Relation	T3	T1	NoRel	true	Olayın	eylemi
+Relation	T3	T11	NoRel	true	Olayın	onayladı
+Relation	T4	T11	NoRel	true	kapatmış	onayladı
+Relation	T8	T3	NoRel	true	Katyn katliamının	Olayın

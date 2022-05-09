@@ -1,0 +1,58 @@
+Text	Kazanın nedeni hemen açıklanmamıştı .	Bakü'de Sağlık Bakanlığı Adli Tıp Ekspertiz ve Patolojik Anatomi Derneği'ne götürülen kurbanların cenazeleri , yapılan incelemenin ardından ailelerine teslim edildi .	Azerbaycan Devlet Sınır Hizmeti Başkanı Elçin Guliyev , kazada hayatı kaybeden askerlere şehit statüsü verileceğini belirterek , Cumhurbaşkanı İlham Aliyev'in olayın ayrıntılarını netleştirme , hayatını kaybedenleri gömme ve yaralıları tedavi etmek için gereken her şeyi yapma talimatı verdiğini kaydetti .	Guliyev , kazada yaralanan iki askerle telefonda görüştüğünü ve durumlarının normal olduğunu söyledi .	Cenazeler , Bakü'deki Serhatçi Spor Merkezi'nde düzenlenen törenden sonra Şehitler Hiyabanı'na defnedildiler .
+Event	T1	götürülen	EVENT	114
+Event	T2	incelemenin	EVENT	157
+Event	T3	edildi	EVENT	196
+Event	T4	kaybeden	EVENT	275
+Event	T5	belirterek	EVENT	321
+Event	T6	gömme	EVENT	421
+Event	T7	kaydetti	EVENT	501
+Event	T8	yaralanan	EVENT	529
+Event	T9	söyledi	EVENT	605
+Event	T10	defnedildiler	EVENT	710
+Event	T11	Kazanın	EVENT	0
+Event	T12	cenazeleri	EVENT	136
+Event	T13	kazada	EVENT	261
+Event	T14	olayın	EVENT	364
+Event	T15	yaralıları	EVENT	430
+Event	T16	etmek	EVENT	448
+Event	T17	kazada	EVENT	522
+Event	T18	görüştüğünü	EVENT	561
+Relation	T12	T2	CauseEffect	true	cenazeleri	incelemenin
+Relation	T2	T12	EffectCause	true	incelemenin	cenazeleri
+Relation	T4	T5	CauseEffect	true	kaybeden	belirterek
+Relation	T5	T4	EffectCause	true	belirterek	kaybeden
+Relation	T13	T4	CauseEffect	true	kazada	kaybeden
+Relation	T4	T13	EffectCause	true	kaybeden	kazada
+Relation	T15	T7	CauseEffect	true	yaralıları	kaydetti
+Relation	T7	T15	EffectCause	true	kaydetti	yaralıları
+Relation	T6	T7	CauseEffect	true	gömme	kaydetti
+Relation	T7	T6	EffectCause	true	kaydetti	gömme
+Relation	T17	T8	CauseEffect	true	kazada	yaralanan
+Relation	T8	T17	EffectCause	true	yaralanan	kazada
+Relation	T8	T18	CauseEffect	true	yaralanan	görüştüğünü
+Relation	T18	T8	EffectCause	true	görüştüğünü	yaralanan
+Relation	T18	T9	CauseEffect	true	görüştüğünü	söyledi
+Relation	T9	T18	EffectCause	true	söyledi	görüştüğünü
+Relation	T5	T10	CauseEffect	true	belirterek	defnedildiler
+Relation	T10	T5	EffectCause	true	defnedildiler	belirterek
+Relation	T1	T18	NoRel	true	götürülen	görüştüğünü
+Relation	T1	T7	NoRel	true	götürülen	kaydetti
+Relation	T12	T17	NoRel	true	cenazeleri	kazada
+Relation	T16	T2	NoRel	true	etmek	incelemenin
+Relation	T17	T13	NoRel	true	kazada	kazada
+Relation	T18	T13	NoRel	true	görüştüğünü	kazada
+Relation	T18	T5	NoRel	true	görüştüğünü	belirterek
+Relation	T2	T5	NoRel	true	incelemenin	belirterek
+Relation	T2	T7	NoRel	true	incelemenin	kaydetti
+Relation	T4	T8	NoRel	true	kaybeden	yaralanan
+Relation	T5	T1	NoRel	true	belirterek	götürülen
+Relation	T5	T3	NoRel	true	belirterek	edildi
+Relation	T5	T7	NoRel	true	belirterek	kaydetti
+Relation	T5	T9	NoRel	true	belirterek	söyledi
+Relation	T6	T12	NoRel	true	gömme	cenazeleri
+Relation	T6	T17	NoRel	true	gömme	kazada
+Relation	T6	T4	NoRel	true	gömme	kaybeden
+Relation	T8	T10	NoRel	true	yaralanan	defnedildiler
+Relation	T8	T5	NoRel	true	yaralanan	belirterek
+Relation	T9	T11	NoRel	true	söyledi	Kazanın
+Relation	T9	T17	NoRel	true	söyledi	kazada

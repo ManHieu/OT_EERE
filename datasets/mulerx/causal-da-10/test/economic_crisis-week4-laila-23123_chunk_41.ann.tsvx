@@ -1,0 +1,43 @@
+Text	Her støtter Locke den nye ordning med udvidet magt til parlamentet og baserer det på ideen om den sociale kontrakt mellem magthaverne og folket .	I _ An Essay Concerning Human Understanding _ ( " Et essay om den menneskelige forståelse " , 1690 ) fremhæver han empirismens ideer om menneskets sind som tabula rasa .	Den engelske oplysning begyndte tidligere end de andre europæiske lande , og især de franske oplysningsfilosoffer vedkender sig deres gæld til England .	Særligt Voltaire , der i sin bog _ Lettres philosophiques sur les Anglais _ ( " Filosofiske breve om englænderne " , 1734 ) priser England for at være det eneste rigtigt oplyste land i verden .	Inspirationen kunne dog også gå modsat , som det ses med Edward Gibbon .
+Event	T0	støtter	EVENT	4
+Event	T1	baserer	EVENT	70
+Event	T2	fremhæver	EVENT	247
+Event	T3	begyndte	EVENT	339
+Event	T4	gæld	EVENT	450
+Event	T5	priser	EVENT	593
+Event	T6	gå	EVENT	692
+Event	T7	ses	EVENT	712
+Event	T8	kontrakt	EVENT	106
+Event	T9	forståelse	EVENT	225
+Event	T10	Understanding	EVENT	176
+Event	T11	ideer	EVENT	273
+Event	T12	oplysning	EVENT	329
+Event	T13	vedkender	EVENT	430
+Event	T14	eneste	EVENT	624
+Event	T15	Inspirationen	EVENT	663
+Relation	T0	T1	NoRel	true	støtter	baserer
+Relation	T0	T13	NoRel	true	støtter	vedkender
+Relation	T1	T15	NoRel	true	baserer	Inspirationen
+Relation	T10	T8	NoRel	true	Understanding	kontrakt
+Relation	T11	T2	NoRel	true	ideer	fremhæver
+Relation	T11	T5	NoRel	true	ideer	priser
+Relation	T12	T8	NoRel	true	oplysning	kontrakt
+Relation	T13	T4	NoRel	true	vedkender	gæld
+Relation	T13	T8	NoRel	true	vedkender	kontrakt
+Relation	T14	T3	NoRel	true	eneste	begyndte
+Relation	T14	T7	NoRel	true	eneste	ses
+Relation	T15	T14	NoRel	true	Inspirationen	eneste
+Relation	T2	T6	NoRel	true	fremhæver	gå
+Relation	T3	T11	NoRel	true	begyndte	ideer
+Relation	T3	T15	NoRel	true	begyndte	Inspirationen
+Relation	T4	T7	NoRel	true	gæld	ses
+Relation	T4	T8	NoRel	true	gæld	kontrakt
+Relation	T5	T13	NoRel	true	priser	vedkender
+Relation	T6	T15	NoRel	true	gå	Inspirationen
+Relation	T6	T8	NoRel	true	gå	kontrakt
+Relation	T6	T9	NoRel	true	gå	forståelse
+Relation	T7	T15	NoRel	true	ses	Inspirationen
+Relation	T7	T8	NoRel	true	ses	kontrakt
+Relation	T8	T10	NoRel	true	kontrakt	Understanding
+Relation	T8	T15	NoRel	true	kontrakt	Inspirationen
+Relation	T8	T7	NoRel	true	kontrakt	ses

@@ -1,0 +1,20 @@
+Text	Fırtına sırasında acil olmayan tüm devlet hizmetleri de durduruldu .	Diğer kar yağışları ile birlikte , bu fırtına 2011 yılının ocak ayını şehrin tarihindeki en karlı ocak yaptı .	Fırtına sırasında şehirde bir de ölüm gerçekleşti .	64 yaşındaki bir kadın 25 Ocak günü bir kar küreyicisinin çarpması sonucu öldü .	New York Valisi Michael Bloomberg 25 Ocak günü erken saatlerde şehir çapında bir acil durum ilan etti ve okullar ile havalimanlarının kapatılması ile devlet hizmetlerinin geçici bir süre durdurulmasına bu sebep oldu .
+Event	T0	durduruldu	EVENT	56
+Event	T1	fırtına	EVENT	107
+Event	T2	yaptı	EVENT	172
+Event	T4	öldü	EVENT	306
+Event	T6	kapatılması	EVENT	447
+Event	T7	durdurulmasına	EVENT	500
+Event	T9	Fırtına	EVENT	0
+Event	T10	kar yağışları	EVENT	75
+Event	T11	ölüm	EVENT	213
+Event	T3	çarpması	EVENT	290
+Event	T5	ilan etti	EVENT	405
+Relation	T10	T2	NoRel	true	kar yağışları	yaptı
+Relation	T10	T4	NoRel	true	kar yağışları	öldü
+Relation	T10	T5	NoRel	true	kar yağışları	ilan etti
+Relation	T11	T9	NoRel	true	ölüm	Fırtına
+Relation	T3	T10	NoRel	true	çarpması	kar yağışları
+Relation	T5	T11	NoRel	true	ilan etti	ölüm
+Relation	T6	T5	NoRel	true	kapatılması	ilan etti
+Relation	T6	T7	NoRel	true	kapatılması	durdurulmasına

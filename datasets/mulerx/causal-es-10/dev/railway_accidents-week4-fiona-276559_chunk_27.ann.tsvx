@@ -1,0 +1,68 @@
+Text	Vieron la goleta americana _ Porpoise _ , de la Expedición de Exploración de los Estados Unidos ( _ United States Exploring Expedition _ ) , comandada por Charles Wilkes , pero hizo una maniobra evasiva y desapareció en la niebla .	El 1 de febrero Dumont decidió regresar y pusieron rumbo al norte hacia Hobart , que los dos barcos alcanzaron 17 días después .	Estaban presentes en la llegada los dos barcos de la expedición a la Antártida de James Clark Ross .	El 25 de febrero , las goletas zarparon hacia las islas Auckland , donde llevaron a cabo mediciones magnéticas y dejaron una placa conmemorativa de su visita ( como había hecho anteriormente también el comandante de la _ Porpoise _ ) , en la que anunciaron el descubrimiento del Polo Sur Magnético .	Volvieron a través de Nueva Zelanda , vía el estrecho de Torres , Timor , Réunion , Saint Helena y , finalmente , Toulon , regresando el 6 de noviembre de 1840 , siendo la última expedición francesa de exploración a vela .
+Event	T0	Vieron	EVENT	0
+Event	T1	comandada	EVENT	141
+Event	T2	hizo	EVENT	177
+Event	T3	evasiva	EVENT	195
+Event	T4	desapareció	EVENT	205
+Event	T5	regresar	EVENT	263
+Event	T6	alcanzaron	EVENT	332
+Event	T7	llegada	EVENT	385
+Event	T8	zarparon	EVENT	493
+Event	T9	mediciones	EVENT	551
+Event	T10	dejaron	EVENT	575
+Event	T11	visita	EVENT	613
+Event	T12	hecho	EVENT	633
+Event	T13	anunciaron	EVENT	708
+Event	T14	descubrimiento	EVENT	722
+Event	T15	Volvieron	EVENT	762
+Event	T16	regresando	EVENT	885
+Event	T17	expedición	EVENT	941
+Event	T18	exploración	EVENT	964
+Event	T19	decidió	EVENT	255
+Event	T20	pusieron	EVENT	274
+Relation	T19	T20	CauseEffect	true	decidió	pusieron
+Relation	T20	T19	EffectCause	true	pusieron	decidió
+Relation	T0	T17	NoRel	true	Vieron	expedición
+Relation	T1	T5	NoRel	true	comandada	regresar
+Relation	T10	T0	NoRel	true	dejaron	Vieron
+Relation	T10	T4	NoRel	true	dejaron	desapareció
+Relation	T11	T14	NoRel	true	visita	descubrimiento
+Relation	T11	T19	NoRel	true	visita	decidió
+Relation	T11	T8	NoRel	true	visita	zarparon
+Relation	T12	T15	NoRel	true	hecho	Volvieron
+Relation	T12	T16	NoRel	true	hecho	regresando
+Relation	T12	T9	NoRel	true	hecho	mediciones
+Relation	T13	T6	NoRel	true	anunciaron	alcanzaron
+Relation	T14	T13	NoRel	true	descubrimiento	anunciaron
+Relation	T14	T20	NoRel	true	descubrimiento	pusieron
+Relation	T16	T7	NoRel	true	regresando	llegada
+Relation	T17	T8	NoRel	true	expedición	zarparon
+Relation	T18	T1	NoRel	true	exploración	comandada
+Relation	T19	T13	NoRel	true	decidió	anunciaron
+Relation	T19	T14	NoRel	true	decidió	descubrimiento
+Relation	T19	T4	NoRel	true	decidió	desapareció
+Relation	T2	T0	NoRel	true	hizo	Vieron
+Relation	T2	T12	NoRel	true	hizo	hecho
+Relation	T2	T13	NoRel	true	hizo	anunciaron
+Relation	T2	T17	NoRel	true	hizo	expedición
+Relation	T2	T20	NoRel	true	hizo	pusieron
+Relation	T2	T8	NoRel	true	hizo	zarparon
+Relation	T2	T9	NoRel	true	hizo	mediciones
+Relation	T3	T7	NoRel	true	evasiva	llegada
+Relation	T4	T13	NoRel	true	desapareció	anunciaron
+Relation	T4	T14	NoRel	true	desapareció	descubrimiento
+Relation	T4	T16	NoRel	true	desapareció	regresando
+Relation	T4	T18	NoRel	true	desapareció	exploración
+Relation	T4	T8	NoRel	true	desapareció	zarparon
+Relation	T5	T13	NoRel	true	regresar	anunciaron
+Relation	T5	T15	NoRel	true	regresar	Volvieron
+Relation	T5	T9	NoRel	true	regresar	mediciones
+Relation	T7	T12	NoRel	true	llegada	hecho
+Relation	T7	T19	NoRel	true	llegada	decidió
+Relation	T7	T4	NoRel	true	llegada	desapareció
+Relation	T7	T5	NoRel	true	llegada	regresar
+Relation	T8	T12	NoRel	true	zarparon	hecho
+Relation	T8	T14	NoRel	true	zarparon	descubrimiento
+Relation	T9	T16	NoRel	true	mediciones	regresando
+Relation	T9	T3	NoRel	true	mediciones	evasiva
+Relation	T9	T8	NoRel	true	mediciones	zarparon

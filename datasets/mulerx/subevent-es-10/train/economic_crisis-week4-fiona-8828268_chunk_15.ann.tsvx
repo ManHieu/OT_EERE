@@ -1,0 +1,63 @@
+Text	Pese a su bajo debut , los expertos pronosticaron que la película podría recuperarse a largo plazo dada su buena recepción por parte de la crítica y la audiencia .	Sin embargo , en vista de que la pandemia de COVID-19 empeoraba a nivel mundial , la gran mayoría de los cines del mundo cerraron , lo cual paralizó totalmente la taquilla .	Debido a esto , The Walt Disney Company anunció que no revelaría más las cifras de taquilla de ninguna de sus películas , y posteriormente _ Onward _ fue lanzada para descargas y _ streaming _ el 20 de marzo de 2020 .	En términos generales , _ Onward _ fue muy bien recibida por la crítica especializada .	En el sitio web Rotten Tomatoes , tuvo un porcentaje de aprobación del 88% y una puntuación promedio de 7.2 de 10 basado en 322 reseñas profesionales , con lo que recibió la certificación de « fresca » , mientras que entre sus lectores tuvo una aprobación del 95% .
+Event	T0	debut	EVENT	15
+Event	T1	pronosticaron	EVENT	36
+Event	T2	recuperarse	EVENT	73
+Event	T3	recepción	EVENT	113
+Event	T4	pandemia	EVENT	197
+Event	T5	empeoraba	EVENT	218
+Event	T6	cerraron	EVENT	285
+Event	T7	paralizó	EVENT	304
+Event	T8	anunció	EVENT	378
+Event	T9	revelaría	EVENT	393
+Event	T10	lanzada	EVENT	492
+Event	T11	descargas	EVENT	505
+Event	T12	recibida	EVENT	604
+Event	T13	tuvo	EVENT	678
+Event	T14	aprobación	EVENT	700
+Event	T15	puntuación	EVENT	725
+Event	T16	recibió	EVENT	807
+Event	T17	certificación	EVENT	818
+Event	T18	tuvo	EVENT	880
+Event	T19	aprobación	EVENT	889
+Relation	T0	T12	NoRel	true	debut	recibida
+Relation	T0	T6	NoRel	true	debut	cerraron
+Relation	T0	T7	NoRel	true	debut	paralizó
+Relation	T1	T4	NoRel	true	pronosticaron	pandemia
+Relation	T10	T0	NoRel	true	lanzada	debut
+Relation	T10	T3	NoRel	true	lanzada	recepción
+Relation	T11	T14	NoRel	true	descargas	aprobación
+Relation	T11	T3	NoRel	true	descargas	recepción
+Relation	T12	T4	NoRel	true	recibida	pandemia
+Relation	T13	T0	NoRel	true	tuvo	debut
+Relation	T13	T16	NoRel	true	tuvo	recibió
+Relation	T14	T1	NoRel	true	aprobación	pronosticaron
+Relation	T14	T15	NoRel	true	aprobación	puntuación
+Relation	T14	T2	NoRel	true	aprobación	recuperarse
+Relation	T14	T9	NoRel	true	aprobación	revelaría
+Relation	T15	T0	NoRel	true	puntuación	debut
+Relation	T15	T18	NoRel	true	puntuación	tuvo
+Relation	T15	T19	NoRel	true	puntuación	aprobación
+Relation	T15	T2	NoRel	true	puntuación	recuperarse
+Relation	T16	T0	NoRel	true	recibió	debut
+Relation	T16	T1	NoRel	true	recibió	pronosticaron
+Relation	T16	T10	NoRel	true	recibió	lanzada
+Relation	T16	T15	NoRel	true	recibió	puntuación
+Relation	T17	T0	NoRel	true	certificación	debut
+Relation	T17	T3	NoRel	true	certificación	recepción
+Relation	T18	T11	NoRel	true	tuvo	descargas
+Relation	T19	T11	NoRel	true	aprobación	descargas
+Relation	T19	T16	NoRel	true	aprobación	recibió
+Relation	T19	T6	NoRel	true	aprobación	cerraron
+Relation	T2	T19	NoRel	true	recuperarse	aprobación
+Relation	T3	T15	NoRel	true	recepción	puntuación
+Relation	T4	T0	NoRel	true	pandemia	debut
+Relation	T4	T1	NoRel	true	pandemia	pronosticaron
+Relation	T4	T15	NoRel	true	pandemia	puntuación
+Relation	T4	T17	NoRel	true	pandemia	certificación
+Relation	T4	T19	NoRel	true	pandemia	aprobación
+Relation	T5	T0	NoRel	true	empeoraba	debut
+Relation	T5	T19	NoRel	true	empeoraba	aprobación
+Relation	T7	T0	NoRel	true	paralizó	debut
+Relation	T7	T15	NoRel	true	paralizó	puntuación
+Relation	T8	T17	NoRel	true	anunció	certificación
+Relation	T8	T7	NoRel	true	anunció	paralizó

@@ -1,0 +1,64 @@
+Text	The findings of the investigation stated the engines failed following their intake of a large amount of dust .	This occurred as a result of the pilot overshooting the runway and continuing the take - off through a grassy area at the end of the runway .	Following the engine failure the plane rapidly descended into the neighbouring Gwammaja area of Kano ultimately destroying several structures on the ground .	Its crash resulted in the deaths of all but six ( five passengers and one crew member ) of the plane 's occupants in addition to 30 civilians on the ground .	- Viasa Flight 742 , another crash in which a small twinjet aircraft ( a McDonnell Douglas DC - 9 ) crashed into a crowded city area shortly after takeoff , causing a high number of ground fatalities .
+Event	T0	findings	EVENT	4
+Event	T1	stated	EVENT	34
+Event	T2	intake	EVENT	76
+Event	T3	occurred	EVENT	116
+Event	T4	overshooting	EVENT	150
+Event	T5	failure	EVENT	274
+Event	T6	destroying	EVENT	365
+Event	T7	resulted	EVENT	421
+Event	T8	deaths	EVENT	437
+Event	T9	Flight	EVENT	577
+Event	T10	crowded	EVENT	684
+Event	T11	takeoff	EVENT	716
+Event	T12	causing	EVENT	726
+Event	T13	fatalities	EVENT	758
+Event	T14	failed	EVENT	53
+Event	T15	take - off	EVENT	193
+Event	T16	descended	EVENT	300
+Event	T17	crash	EVENT	598
+Event	T18	crashed	EVENT	669
+Relation	T5	T16	SuperSub	true	failure	descended
+Relation	T16	T5	SubSuper	true	descended	failure
+Relation	T11	T18	SuperSub	true	takeoff	crashed
+Relation	T18	T11	SubSuper	true	crashed	takeoff
+Relation	T1	T13	NoRel	true	stated	fatalities
+Relation	T1	T2	NoRel	true	stated	intake
+Relation	T10	T18	NoRel	true	crowded	crashed
+Relation	T11	T17	NoRel	true	takeoff	crash
+Relation	T11	T4	NoRel	true	takeoff	overshooting
+Relation	T11	T5	NoRel	true	takeoff	failure
+Relation	T12	T1	NoRel	true	causing	stated
+Relation	T12	T14	NoRel	true	causing	failed
+Relation	T12	T7	NoRel	true	causing	resulted
+Relation	T13	T8	NoRel	true	fatalities	deaths
+Relation	T14	T4	NoRel	true	failed	overshooting
+Relation	T15	T0	NoRel	true	take - off	findings
+Relation	T15	T5	NoRel	true	take - off	failure
+Relation	T15	T6	NoRel	true	take - off	destroying
+Relation	T16	T11	NoRel	true	descended	takeoff
+Relation	T16	T18	NoRel	true	descended	crashed
+Relation	T17	T1	NoRel	true	crash	stated
+Relation	T17	T13	NoRel	true	crash	fatalities
+Relation	T17	T15	NoRel	true	crash	take - off
+Relation	T17	T2	NoRel	true	crash	intake
+Relation	T17	T8	NoRel	true	crash	deaths
+Relation	T18	T14	NoRel	true	crashed	failed
+Relation	T18	T5	NoRel	true	crashed	failure
+Relation	T18	T8	NoRel	true	crashed	deaths
+Relation	T2	T7	NoRel	true	intake	resulted
+Relation	T3	T11	NoRel	true	occurred	takeoff
+Relation	T3	T15	NoRel	true	occurred	take - off
+Relation	T3	T16	NoRel	true	occurred	descended
+Relation	T3	T4	NoRel	true	occurred	overshooting
+Relation	T5	T4	NoRel	true	failure	overshooting
+Relation	T6	T7	NoRel	true	destroying	resulted
+Relation	T7	T0	NoRel	true	resulted	findings
+Relation	T7	T1	NoRel	true	resulted	stated
+Relation	T7	T16	NoRel	true	resulted	descended
+Relation	T8	T0	NoRel	true	deaths	findings
+Relation	T8	T4	NoRel	true	deaths	overshooting
+Relation	T8	T5	NoRel	true	deaths	failure
+Relation	T9	T11	NoRel	true	Flight	takeoff
+Relation	T9	T4	NoRel	true	Flight	overshooting
+Relation	T9	T5	NoRel	true	Flight	failure

@@ -1,0 +1,44 @@
+Text	شمالی مغربی پاکستان جن میں صوبہ خیبر پختونخوا اور فاٹا شامل ہیں ، میں حکومت پاکستان اور کالعدم تنظیموں ( جیسے تحریک طالبان پاکستان ، ، وغیرہ ) کے درمیان چلنے والی ایک جنگ ہے ۔	اس جنگ کے بڑے ملٹری آپریشنز میں آپریشن ضرب عضب ، آپریشن راہ راست ، آپریشن بلیک تھنڈر سٹورم وغیرہ شام ہیں ۔	اس جنگ میں فریقین کو بھاری نقصانات ہوئے ۔	یہ جنگ پیپلز پارٹی کی حکومت سے شروع ہوئی اور تا حال جاری ہے ۔	اس میں متاثر علاقوں میں شمالی وزیرستان ، جنوبی وزیرستان ، سوات ،دیر زیریں ، بونیر ، شانگلہ اور دیگر علاقہ جات ہیں تاہم دیر زیریں ، سوات ، بونیر ، شانگلہ اور جنوبی وزیرستان میں آپریشن مکمل ہوا ہے ۔
+Event	T0	چلنے	EVENT	153
+Event	T1	جنگ	EVENT	167
+Event	T2	جنگ	EVENT	179
+Event	T3	آپریشنز	EVENT	196
+Event	T4	آپریشن	EVENT	225
+Event	T5	آپریشن	EVENT	243
+Event	T6	جنگ	EVENT	286
+Event	T7	ہوئے	EVENT	318
+Event	T8	جنگ	EVENT	328
+Event	T9	ہوئی	EVENT	361
+Event	T10	ہوا	EVENT	575
+Relation	T2	T3	SuperSub	true	جنگ	آپریشنز
+Relation	T3	T2	SubSuper	true	آپریشنز	جنگ
+Relation	T2	T4	SuperSub	true	جنگ	آپریشن
+Relation	T4	T2	SubSuper	true	آپریشن	جنگ
+Relation	T2	T5	SuperSub	true	جنگ	آپریشن
+Relation	T5	T2	SubSuper	true	آپریشن	جنگ
+Relation	T1	T3	SuperSub	true	جنگ	آپریشنز
+Relation	T3	T1	SubSuper	true	آپریشنز	جنگ
+Relation	T1	T4	SuperSub	true	جنگ	آپریشن
+Relation	T4	T1	SubSuper	true	آپریشن	جنگ
+Relation	T1	T5	SuperSub	true	جنگ	آپریشن
+Relation	T5	T1	SubSuper	true	آپریشن	جنگ
+Relation	T6	T3	SuperSub	true	جنگ	آپریشنز
+Relation	T3	T6	SubSuper	true	آپریشنز	جنگ
+Relation	T6	T4	SuperSub	true	جنگ	آپریشن
+Relation	T4	T6	SubSuper	true	آپریشن	جنگ
+Relation	T6	T5	SuperSub	true	جنگ	آپریشن
+Relation	T5	T6	SubSuper	true	آپریشن	جنگ
+Relation	T8	T3	SuperSub	true	جنگ	آپریشنز
+Relation	T3	T8	SubSuper	true	آپریشنز	جنگ
+Relation	T8	T4	SuperSub	true	جنگ	آپریشن
+Relation	T4	T8	SubSuper	true	آپریشن	جنگ
+Relation	T8	T5	SuperSub	true	جنگ	آپریشن
+Relation	T5	T8	SubSuper	true	آپریشن	جنگ
+Relation	T0	T1	NoRel	true	چلنے	جنگ
+Relation	T0	T2	NoRel	true	چلنے	جنگ
+Relation	T1	T2	NoRel	true	جنگ	جنگ
+Relation	T2	T7	NoRel	true	جنگ	ہوئے
+Relation	T7	T4	NoRel	true	ہوئے	آپریشن
+Relation	T8	T6	NoRel	true	جنگ	جنگ
+Relation	T9	T2	NoRel	true	ہوئی	جنگ
+Relation	T9	T4	NoRel	true	ہوئی	آپریشن

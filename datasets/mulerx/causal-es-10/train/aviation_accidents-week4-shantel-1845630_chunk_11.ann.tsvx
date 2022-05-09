@@ -1,0 +1,127 @@
+Text	El accidente de Spanair es el cuarto peor accidente de la historia de la aviación española , por detrás del accidente de Los Rodeos de 1977 ( 583 fallecidos ) , el mencionado vuelo 11 de Avianca de 1983 y el vuelo 275 de Spantax de 1972 ( 155 fallecidos ) .	El presidente del Gobierno , José Luis Rodríguez Zapatero , tras conocer la tragedia , suspendió sus vacaciones en Doñana y se desplazó al aeropuerto para conocer las labores de rescate de las víctimas .	Posteriormente , se trasladó a IFEMA donde se reunió con los familiares que estaban reconociendo los cuerpos de los fallecidos .	La ministra de Fomento , Magdalena Álvarez anunció que la comisión de investigación comenzaría a trabajar inmediatamente para esclarecer las causas del accidente .	La Familia Real , « consternada » por el accidente , indicó que el rey Juan Carlos I permanecía en contacto con el Gobierno siguiendo la evolución de los hechos .
+Event	T0	accidente	EVENT	3
+Event	T1	accidente	EVENT	42
+Event	T2	accidente	EVENT	108
+Event	T3	fallecidos	EVENT	146
+Event	T4	vuelo	EVENT	175
+Event	T5	vuelo	EVENT	208
+Event	T6	fallecidos	EVENT	243
+Event	T7	conocer	EVENT	323
+Event	T8	tragedia	EVENT	334
+Event	T9	suspendió	EVENT	345
+Event	T10	vacaciones	EVENT	359
+Event	T11	desplazó	EVENT	385
+Event	T12	conocer	EVENT	413
+Event	T13	labores	EVENT	425
+Event	T14	rescate	EVENT	436
+Event	T15	trasladó	EVENT	482
+Event	T16	reunió	EVENT	508
+Event	T17	reconociendo	EVENT	546
+Event	T18	fallecidos	EVENT	578
+Event	T19	anunció	EVENT	634
+Event	T20	comenzaría	EVENT	675
+Event	T21	trabajar	EVENT	688
+Event	T22	esclarecer	EVENT	717
+Event	T23	accidente	EVENT	743
+Event	T24	consternada	EVENT	775
+Event	T25	accidente	EVENT	796
+Event	T26	indicó	EVENT	808
+Event	T27	contacto	EVENT	854
+Event	T28	evolución	EVENT	892
+Event	T29	hechos	EVENT	909
+Relation	T8	T9	CauseEffect	true	tragedia	suspendió
+Relation	T9	T8	EffectCause	true	suspendió	tragedia
+Relation	T1	T18	CauseEffect	true	accidente	fallecidos
+Relation	T18	T1	EffectCause	true	fallecidos	accidente
+Relation	T0	T10	NoRel	true	accidente	vacaciones
+Relation	T0	T13	NoRel	true	accidente	labores
+Relation	T0	T21	NoRel	true	accidente	trabajar
+Relation	T0	T23	NoRel	true	accidente	accidente
+Relation	T1	T0	NoRel	true	accidente	accidente
+Relation	T1	T9	NoRel	true	accidente	suspendió
+Relation	T10	T20	NoRel	true	vacaciones	comenzaría
+Relation	T10	T21	NoRel	true	vacaciones	trabajar
+Relation	T10	T22	NoRel	true	vacaciones	esclarecer
+Relation	T10	T27	NoRel	true	vacaciones	contacto
+Relation	T10	T28	NoRel	true	vacaciones	evolución
+Relation	T10	T9	NoRel	true	vacaciones	suspendió
+Relation	T11	T19	NoRel	true	desplazó	anunció
+Relation	T11	T4	NoRel	true	desplazó	vuelo
+Relation	T11	T5	NoRel	true	desplazó	vuelo
+Relation	T11	T8	NoRel	true	desplazó	tragedia
+Relation	T12	T19	NoRel	true	conocer	anunció
+Relation	T12	T8	NoRel	true	conocer	tragedia
+Relation	T13	T10	NoRel	true	labores	vacaciones
+Relation	T13	T11	NoRel	true	labores	desplazó
+Relation	T13	T12	NoRel	true	labores	conocer
+Relation	T13	T23	NoRel	true	labores	accidente
+Relation	T13	T27	NoRel	true	labores	contacto
+Relation	T13	T8	NoRel	true	labores	tragedia
+Relation	T14	T2	NoRel	true	rescate	accidente
+Relation	T14	T25	NoRel	true	rescate	accidente
+Relation	T14	T8	NoRel	true	rescate	tragedia
+Relation	T15	T26	NoRel	true	trasladó	indicó
+Relation	T16	T2	NoRel	true	reunió	accidente
+Relation	T16	T22	NoRel	true	reunió	esclarecer
+Relation	T16	T25	NoRel	true	reunió	accidente
+Relation	T17	T0	NoRel	true	reconociendo	accidente
+Relation	T17	T15	NoRel	true	reconociendo	trasladó
+Relation	T17	T16	NoRel	true	reconociendo	reunió
+Relation	T17	T28	NoRel	true	reconociendo	evolución
+Relation	T17	T29	NoRel	true	reconociendo	hechos
+Relation	T18	T11	NoRel	true	fallecidos	desplazó
+Relation	T18	T9	NoRel	true	fallecidos	suspendió
+Relation	T19	T10	NoRel	true	anunció	vacaciones
+Relation	T19	T23	NoRel	true	anunció	accidente
+Relation	T2	T0	NoRel	true	accidente	accidente
+Relation	T2	T7	NoRel	true	accidente	conocer
+Relation	T2	T8	NoRel	true	accidente	tragedia
+Relation	T20	T16	NoRel	true	comenzaría	reunió
+Relation	T20	T29	NoRel	true	comenzaría	hechos
+Relation	T21	T20	NoRel	true	trabajar	comenzaría
+Relation	T22	T14	NoRel	true	esclarecer	rescate
+Relation	T22	T15	NoRel	true	esclarecer	trasladó
+Relation	T22	T20	NoRel	true	esclarecer	comenzaría
+Relation	T22	T25	NoRel	true	esclarecer	accidente
+Relation	T23	T11	NoRel	true	accidente	desplazó
+Relation	T23	T2	NoRel	true	accidente	accidente
+Relation	T23	T3	NoRel	true	accidente	fallecidos
+Relation	T23	T8	NoRel	true	accidente	tragedia
+Relation	T24	T20	NoRel	true	consternada	comenzaría
+Relation	T24	T26	NoRel	true	consternada	indicó
+Relation	T25	T11	NoRel	true	accidente	desplazó
+Relation	T25	T12	NoRel	true	accidente	conocer
+Relation	T25	T17	NoRel	true	accidente	reconociendo
+Relation	T26	T16	NoRel	true	indicó	reunió
+Relation	T26	T24	NoRel	true	indicó	consternada
+Relation	T26	T7	NoRel	true	indicó	conocer
+Relation	T27	T17	NoRel	true	contacto	reconociendo
+Relation	T27	T25	NoRel	true	contacto	accidente
+Relation	T28	T21	NoRel	true	evolución	trabajar
+Relation	T28	T22	NoRel	true	evolución	esclarecer
+Relation	T28	T4	NoRel	true	evolución	vuelo
+Relation	T29	T0	NoRel	true	hechos	accidente
+Relation	T29	T24	NoRel	true	hechos	consternada
+Relation	T29	T8	NoRel	true	hechos	tragedia
+Relation	T3	T14	NoRel	true	fallecidos	rescate
+Relation	T3	T21	NoRel	true	fallecidos	trabajar
+Relation	T3	T23	NoRel	true	fallecidos	accidente
+Relation	T4	T22	NoRel	true	vuelo	esclarecer
+Relation	T4	T24	NoRel	true	vuelo	consternada
+Relation	T4	T28	NoRel	true	vuelo	evolución
+Relation	T4	T3	NoRel	true	vuelo	fallecidos
+Relation	T4	T9	NoRel	true	vuelo	suspendió
+Relation	T5	T27	NoRel	true	vuelo	contacto
+Relation	T5	T4	NoRel	true	vuelo	vuelo
+Relation	T5	T9	NoRel	true	vuelo	suspendió
+Relation	T6	T16	NoRel	true	fallecidos	reunió
+Relation	T6	T29	NoRel	true	fallecidos	hechos
+Relation	T7	T8	NoRel	true	conocer	tragedia
+Relation	T8	T12	NoRel	true	tragedia	conocer
+Relation	T8	T13	NoRel	true	tragedia	labores
+Relation	T8	T17	NoRel	true	tragedia	reconociendo
+Relation	T8	T19	NoRel	true	tragedia	anunció
+Relation	T8	T2	NoRel	true	tragedia	accidente
+Relation	T8	T24	NoRel	true	tragedia	consternada
+Relation	T8	T29	NoRel	true	tragedia	hechos
+Relation	T9	T11	NoRel	true	suspendió	desplazó

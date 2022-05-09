@@ -1,0 +1,76 @@
+Text	The gang moved to Chicago but decided to leave because Karpis did not want to work for Al Capone .	Racketeer Jack Peifer suggested that they move to St. Paul , Minnesota which had a reputation at the time as a haven for wanted criminals .	The Barker - Karpis gang 's most infamous crimes were committed after the move to St. Paul , during their residency in a string of rented houses .	The gang operated under the protection of St. Paul 's police chief Thomas " Big Tom " Brown , and they went from being bank robbers to kidnappers under his guidance .	Ma 's common - law husband Arthur Dunlop was said to be loose - lipped when drunk , and he was not trusted by members of the gang ; Karpis described him as a " pain in the ass " .
+Event	T0	moved	EVENT	9
+Event	T1	decided	EVENT	30
+Event	T10	rented	EVENT	370
+Event	T11	operated	EVENT	395
+Event	T12	protection	EVENT	414
+Event	T13	went	EVENT	489
+Event	T14	guidance	EVENT	542
+Event	T15	said	EVENT	598
+Event	T17	drunk	EVENT	629
+Event	T18	trusted	EVENT	652
+Event	T19	described	EVENT	692
+Event	T2	leave	EVENT	41
+Event	T20	pain	EVENT	713
+Event	T22	wanted	EVENT	220
+Event	T3	suggested	EVENT	121
+Event	T4	move	EVENT	141
+Event	T5	reputation	EVENT	182
+Event	T6	crimes	EVENT	281
+Event	T7	committed	EVENT	293
+Event	T8	move	EVENT	313
+Event	T9	residency	EVENT	345
+Relation	T0	T1	SuperSub	true	moved	decided
+Relation	T1	T0	SubSuper	true	decided	moved
+Relation	T0	T2	SuperSub	true	moved	leave
+Relation	T2	T0	SubSuper	true	leave	moved
+Relation	T8	T9	SuperSub	true	move	residency
+Relation	T9	T8	SubSuper	true	residency	move
+Relation	T11	T13	SuperSub	true	operated	went
+Relation	T13	T11	SubSuper	true	went	operated
+Relation	T19	T20	SuperSub	true	described	pain
+Relation	T20	T19	SubSuper	true	pain	described
+Relation	T1	T17	NoRel	true	decided	drunk
+Relation	T1	T2	NoRel	true	decided	leave
+Relation	T1	T5	NoRel	true	decided	reputation
+Relation	T1	T8	NoRel	true	decided	move
+Relation	T10	T1	NoRel	true	rented	decided
+Relation	T10	T11	NoRel	true	rented	operated
+Relation	T10	T15	NoRel	true	rented	said
+Relation	T10	T22	NoRel	true	rented	wanted
+Relation	T10	T6	NoRel	true	rented	crimes
+Relation	T11	T0	NoRel	true	operated	moved
+Relation	T11	T1	NoRel	true	operated	decided
+Relation	T12	T0	NoRel	true	protection	moved
+Relation	T12	T5	NoRel	true	protection	reputation
+Relation	T13	T12	NoRel	true	went	protection
+Relation	T13	T4	NoRel	true	went	move
+Relation	T14	T11	NoRel	true	guidance	operated
+Relation	T14	T18	NoRel	true	guidance	trusted
+Relation	T15	T14	NoRel	true	said	guidance
+Relation	T17	T4	NoRel	true	drunk	move
+Relation	T18	T11	NoRel	true	trusted	operated
+Relation	T18	T2	NoRel	true	trusted	leave
+Relation	T18	T20	NoRel	true	trusted	pain
+Relation	T18	T4	NoRel	true	trusted	move
+Relation	T19	T0	NoRel	true	described	moved
+Relation	T19	T10	NoRel	true	described	rented
+Relation	T2	T18	NoRel	true	leave	trusted
+Relation	T20	T6	NoRel	true	pain	crimes
+Relation	T20	T8	NoRel	true	pain	move
+Relation	T22	T0	NoRel	true	wanted	moved
+Relation	T22	T12	NoRel	true	wanted	protection
+Relation	T22	T13	NoRel	true	wanted	went
+Relation	T22	T3	NoRel	true	wanted	suggested
+Relation	T22	T8	NoRel	true	wanted	move
+Relation	T3	T22	NoRel	true	suggested	wanted
+Relation	T4	T17	NoRel	true	move	drunk
+Relation	T5	T12	NoRel	true	reputation	protection
+Relation	T5	T14	NoRel	true	reputation	guidance
+Relation	T6	T1	NoRel	true	crimes	decided
+Relation	T6	T20	NoRel	true	crimes	pain
+Relation	T7	T20	NoRel	true	committed	pain
+Relation	T8	T11	NoRel	true	move	operated
+Relation	T8	T20	NoRel	true	move	pain
+Relation	T8	T4	NoRel	true	move	move
+Relation	T9	T12	NoRel	true	residency	protection

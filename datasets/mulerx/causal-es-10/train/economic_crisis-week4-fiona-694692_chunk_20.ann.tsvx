@@ -1,0 +1,30 @@
+Text	Sobre las 16:00 el _ Seydlitz _ estaba fuera de peligro inminente , por lo que se detuvo para permitir el desembarco de Bödicker , que embarcó en el buque torpedero _ V28 _ para trasladarse a bordo del _ Lützow _ .	A las 04:50 del 25 de abril los cruceros de batalla germanos se estaban aproximando a Lowestoft cuando los cruceros ligeros _ Rostock _ y _ Elbing _ , que habían estado cubriendo el flanco del sur , divisaron a los cruceros ligeros y destructores de la Fuerza Harwich del comodoro Tyrwhitt .	Bödicker se negó a ser distraído por los buques británicos y en su lugar guió los cañones de sus barcos contra la localidad costera de Lowestoft .	Desde una distancia de 13 km , los cruceros de batalla alemanes destruyeron dos baterías costeras de 150 mm y 200 viviendas de la localidad inglesa .	Sobre las 05:20 los atacantes alemanes tomaron rumbo norte , en dirección a Yarmouth , a donde llegaron unos 20 minutos después .
+Event	T0	detuvo	EVENT	82
+Event	T1	permitir	EVENT	94
+Event	T2	desembarco	EVENT	106
+Event	T3	embarcó	EVENT	135
+Event	T4	trasladarse	EVENT	178
+Event	T5	aproximando	EVENT	287
+Event	T6	cubriendo	EVENT	384
+Event	T7	divisaron	EVENT	414
+Event	T8	negó	EVENT	519
+Event	T9	distraído	EVENT	530
+Event	T10	guió	EVENT	580
+Event	T11	batalla	EVENT	701
+Event	T12	destruyeron	EVENT	718
+Relation	T10	T12	CauseEffect	true	guió	destruyeron
+Relation	T12	T10	EffectCause	true	destruyeron	guió
+Relation	T0	T5	NoRel	true	detuvo	aproximando
+Relation	T1	T3	NoRel	true	permitir	embarcó
+Relation	T10	T2	NoRel	true	guió	desembarco
+Relation	T10	T5	NoRel	true	guió	aproximando
+Relation	T11	T12	NoRel	true	batalla	destruyeron
+Relation	T12	T1	NoRel	true	destruyeron	permitir
+Relation	T12	T6	NoRel	true	destruyeron	cubriendo
+Relation	T2	T3	NoRel	true	desembarco	embarcó
+Relation	T4	T10	NoRel	true	trasladarse	guió
+Relation	T5	T0	NoRel	true	aproximando	detuvo
+Relation	T5	T2	NoRel	true	aproximando	desembarco
+Relation	T5	T8	NoRel	true	aproximando	negó
+Relation	T7	T12	NoRel	true	divisaron	destruyeron
+Relation	T9	T0	NoRel	true	distraído	detuvo

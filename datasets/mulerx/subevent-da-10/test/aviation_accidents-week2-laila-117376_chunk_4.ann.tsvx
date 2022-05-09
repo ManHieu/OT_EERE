@@ -1,0 +1,29 @@
+Text	Som voksen blev han uddannet pilot og flyttede til Tyskland i 1996 , hvor han studerede ved Greifswald Universitet for at lære tysk .	Et år senere flyttede han til Hamborg og begyndte at studere fly- og rumfartsteknik ved Hamborg Universitet for anvendt videnskab .	Mens han boede i Hamborg blev han en from muslim og blev tilknyttet terrorcellen _ Hamburger Terrorzelle _ .	I november 1999 rejste han til Afghanistan , hvor han opholdt sig i tre måneder .	Inden han vendte tilbage til Hamborg i slutningen af januar 2000 , mødtes han med Osama bin Laden . .
+Event	T0	flyttede	EVENT	38
+Event	T1	studerede	EVENT	78
+Event	T10	uddannet	EVENT	20
+Event	T11	rejste	EVENT	391
+Event	T2	lære	EVENT	122
+Event	T3	flyttede	EVENT	147
+Event	T4	studere	EVENT	187
+Event	T5	boede	EVENT	275
+Event	T7	opholdt	EVENT	429
+Event	T9	mødtes	EVENT	524
+Relation	T0	T1	SuperSub	true	flyttede	studerede
+Relation	T1	T0	SubSuper	true	studerede	flyttede
+Relation	T1	T2	SuperSub	true	studerede	lære
+Relation	T2	T1	SubSuper	true	lære	studerede
+Relation	T3	T4	SuperSub	true	flyttede	studere
+Relation	T4	T3	SubSuper	true	studere	flyttede
+Relation	T11	T7	SuperSub	true	rejste	opholdt
+Relation	T7	T11	SubSuper	true	opholdt	rejste
+Relation	T7	T9	SuperSub	true	opholdt	mødtes
+Relation	T9	T7	SubSuper	true	mødtes	opholdt
+Relation	T11	T3	NoRel	true	rejste	flyttede
+Relation	T2	T4	NoRel	true	lære	studere
+Relation	T2	T9	NoRel	true	lære	mødtes
+Relation	T3	T7	NoRel	true	flyttede	opholdt
+Relation	T4	T7	NoRel	true	studere	opholdt
+Relation	T9	T0	NoRel	true	mødtes	flyttede
+Relation	T9	T2	NoRel	true	mødtes	lære
+Relation	T9	T5	NoRel	true	mødtes	boede

@@ -1,0 +1,1361 @@
+{
+  "id": "disasters-week4-isik-1423305_chunk_4.ann.tsvx",
+  "text": "En k\u00f6t\u00fc etkilenen b\u00f6lge olan Evansville , St Louis Chicago olmu\u015f , ancak \u00f6nemli bir hasar ger\u00e7ekle\u015fmemi\u015f ve \u00f6l\u00fcm olmam\u0131\u015ft\u0131r ; .\tSadece bir \u00e7ocuk evinden d\u00fc\u015fen malzemelerle yaralanm\u0131\u015ft\u0131r .\tHasar Illinois , Indiana , Kentucky , Tennessee ve Iowa ile s\u0131n\u0131rl\u0131 kald\u0131 .\tBu b\u00f6lgelerde d\u00fc\u015fm\u00fc\u015f bacalar , temel \u00e7atlaklar\u0131 , y\u0131k\u0131lm\u0131\u015f korkuluklar ve devrik mezar ta\u015flar\u0131 olu\u015fmu\u015ftur .\tKategori : Illinois'daki depremler Kategori : Indiana'daki depremler Kategori : Kentucky'deki depremler Kategori : Tennessee'deki depremler Kategori : 1968'de Amerika Birle\u015fik Devletleri Kategori : 1968'deki depremler Kategori : 37\u00b0 K Kategori : 88\u00b0 B",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "etkilenen",
+      "label": "EVENT",
+      "char_index": 8,
+      "sid": 0,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "ger\u00e7ekle\u015fmemi\u015f",
+      "label": "EVENT",
+      "char_index": 90,
+      "sid": 0,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "yaralanm\u0131\u015ft\u0131r",
+      "label": "EVENT",
+      "char_index": 172,
+      "sid": 1,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "d\u00fc\u015fm\u00fc\u015f",
+      "label": "EVENT",
+      "char_index": 278,
+      "sid": 3,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "y\u0131k\u0131lm\u0131\u015f",
+      "label": "EVENT",
+      "char_index": 314,
+      "sid": 3,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "olmam\u0131\u015ft\u0131r",
+      "label": "EVENT",
+      "char_index": 113,
+      "sid": 0,
+      "tid": [
+        19,
+        20
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "d\u00fc\u015fen",
+      "label": "EVENT",
+      "char_index": 153,
+      "sid": 1,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "kald\u0131",
+      "label": "EVENT",
+      "char_index": 256,
+      "sid": 2,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "\u00e7atlaklar\u0131",
+      "label": "EVENT",
+      "char_index": 301,
+      "sid": 3,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "devrik",
+      "label": "EVENT",
+      "char_index": 338,
+      "sid": 3,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "Hasar",
+      "label": "EVENT",
+      "char_index": 188,
+      "sid": 2,
+      "tid": [
+        0,
+        1
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "depremler",
+      "label": "EVENT",
+      "char_index": 397,
+      "sid": 4,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "depremler",
+      "label": "EVENT",
+      "char_index": 431,
+      "sid": 4,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "depremler",
+      "label": "EVENT",
+      "char_index": 466,
+      "sid": 4,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "depremler",
+      "label": "EVENT",
+      "char_index": 502,
+      "sid": 4,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "depremler",
+      "label": "EVENT",
+      "char_index": 580,
+      "sid": 4,
+      "tid": [
+        25,
+        26
+      ]
+    }
+  },
+  "relation": {
+    "T6-T3": "CauseEffect",
+    "T3-T6": "EffectCause",
+    "T4-T10": "CauseEffect",
+    "T10-T4": "EffectCause",
+    "T8-T10": "CauseEffect",
+    "T10-T8": "EffectCause",
+    "T5-T10": "CauseEffect",
+    "T10-T5": "EffectCause",
+    "T9-T10": "CauseEffect",
+    "T10-T9": "EffectCause",
+    "T0-T1": "NoRel",
+    "T0-T2": "NoRel",
+    "T1-T14": "NoRel",
+    "T1-T15": "NoRel",
+    "T1-T5": "NoRel",
+    "T1-T6": "NoRel",
+    "T1-T9": "NoRel",
+    "T10-T11": "NoRel",
+    "T11-T10": "NoRel",
+    "T12-T0": "NoRel",
+    "T12-T3": "NoRel",
+    "T13-T0": "NoRel",
+    "T13-T5": "NoRel",
+    "T14-T2": "NoRel",
+    "T15-T14": "NoRel",
+    "T15-T3": "NoRel",
+    "T2-T1": "NoRel",
+    "T2-T7": "NoRel",
+    "T3-T5": "NoRel",
+    "T4-T12": "NoRel",
+    "T4-T13": "NoRel",
+    "T5-T1": "NoRel",
+    "T6-T13": "NoRel",
+    "T8-T15": "NoRel",
+    "T9-T1": "NoRel"
+  },
+  "sentence": [
+    [
+      "En",
+      "k\u00f6t\u00fc",
+      "etkilenen",
+      "b\u00f6lge",
+      "olan",
+      "Evansville",
+      ",",
+      "St",
+      "Louis",
+      "Chicago",
+      "olmu\u015f",
+      ",",
+      "ancak",
+      "\u00f6nemli",
+      "bir",
+      "hasar",
+      "ger\u00e7ekle\u015fmemi\u015f",
+      "ve",
+      "\u00f6l\u00fcm",
+      "olmam\u0131\u015ft\u0131r",
+      ";",
+      "."
+    ],
+    [
+      "Sadece",
+      "bir",
+      "\u00e7ocuk",
+      "evinden",
+      "d\u00fc\u015fen",
+      "malzemelerle",
+      "yaralanm\u0131\u015ft\u0131r",
+      "."
+    ],
+    [
+      "Hasar",
+      "Illinois",
+      ",",
+      "Indiana",
+      ",",
+      "Kentucky",
+      ",",
+      "Tennessee",
+      "ve",
+      "Iowa",
+      "ile",
+      "s\u0131n\u0131rl\u0131",
+      "kald\u0131",
+      "."
+    ],
+    [
+      "Bu",
+      "b\u00f6lgelerde",
+      "d\u00fc\u015fm\u00fc\u015f",
+      "bacalar",
+      ",",
+      "temel",
+      "\u00e7atlaklar\u0131",
+      ",",
+      "y\u0131k\u0131lm\u0131\u015f",
+      "korkuluklar",
+      "ve",
+      "devrik",
+      "mezar",
+      "ta\u015flar\u0131",
+      "olu\u015fmu\u015ftur",
+      "."
+    ],
+    [
+      "Kategori",
+      ":",
+      "Illinois'daki",
+      "depremler",
+      "Kategori",
+      ":",
+      "Indiana'daki",
+      "depremler",
+      "Kategori",
+      ":",
+      "Kentucky'deki",
+      "depremler",
+      "Kategori",
+      ":",
+      "Tennessee'deki",
+      "depremler",
+      "Kategori",
+      ":",
+      "1968'de",
+      "Amerika",
+      "Birle\u015fik",
+      "Devletleri",
+      "Kategori",
+      ":",
+      "1968'deki",
+      "depremler",
+      "Kategori",
+      ":",
+      "37\u00b0",
+      "K",
+      "Kategori",
+      ":",
+      "88\u00b0",
+      "B"
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        10
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        5
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        7
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        7
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        16
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        15
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        15
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        16
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        10
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        19
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        19
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        10
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        19
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        19
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        6
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        11
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        11
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        1
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        11
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        11
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        14
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        14
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        3
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        3
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        13
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        12
+      ],
+      "compound"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        3
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        14
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        0
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        4
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        8
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        8
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        12
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        17
+      ],
+      [
+        4,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        18
+      ],
+      [
+        4,
+        16
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        19
+      ],
+      [
+        4,
+        18
+      ],
+      "flat"
+    ],
+    [
+      [
+        4,
+        20
+      ],
+      [
+        4,
+        19
+      ],
+      "flat"
+    ],
+    [
+      [
+        4,
+        21
+      ],
+      [
+        4,
+        19
+      ],
+      "flat"
+    ],
+    [
+      [
+        4,
+        22
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        23
+      ],
+      [
+        4,
+        22
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        24
+      ],
+      [
+        4,
+        25
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        25
+      ],
+      [
+        4,
+        26
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        26
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        27
+      ],
+      [
+        4,
+        26
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        28
+      ],
+      [
+        4,
+        26
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        29
+      ],
+      [
+        4,
+        28
+      ],
+      "flat"
+    ],
+    [
+      [
+        4,
+        30
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        31
+      ],
+      [
+        4,
+        30
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        32
+      ],
+      [
+        4,
+        26
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        33
+      ],
+      [
+        4,
+        32
+      ],
+      "flat"
+    ]
+  ]
+}

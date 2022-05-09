@@ -1,0 +1,88 @@
+Text	Bryant'ın Gianna'nın takımına koçluk yapması planlanan Newbury Park'taki Bryant Mamba Spor Akademisi'nde bir basketbol maçına gidiyorlardı .	Uçuş kayıtları , helikopterin Mamba Spor Akademisi'ne arabayla yaklaşık 20 dakika uzaklıktaki küçük bir havaalanı olan Camarillo Havalimanı'na ( CMA ) olaysız bir gün önce aynı yolculuğa çıktığını gösterdi .	Önceki günün uçuşu sadece 30 dakika sürmüştü ; fakat araba ile Bryant'ın Newport Beach'teki evinden akademiye gitmek en az 30 dakika sürecekti .	Helikopter ağır sis ve aşırı kar altında havalandı , havalandıktan yaklaşık 20 dakika sonra da Calabasas civarında görüş azlığı nedeni ile bir tepeye çarptı .	Kategori : Los Angeles Lakers Kategori : Kobe Bryant Kategori : Kontrollü uçuşta yere çarpma Kategori : 2020'de basketbol Kategori : Sikorsky S - 76 içeren kazalar ve olaylar Kategori : 2020'de havacılık kazaları ve olayları Kategori : Amerika Birleşik Devletleri'ndeki havacılık kazaları ve olayları Kategori : Pilotaj hatası nedeniyle gerçekleşen havacılık kazaları ve olayları
+Event	T1	gidiyorlardı	EVENT	126
+Event	T3	gösterdi	EVENT	338
+Event	T4	uçuşu	EVENT	362
+Event	T5	sürmüştü	EVENT	385
+Event	T6	gitmek	EVENT	459
+Event	T7	havalandı	EVENT	535
+Event	T8	çarptı	EVENT	644
+Event	T9	çarpma	EVENT	739
+Event	T10	kazalar	EVENT	809
+Event	T11	olaylar	EVENT	820
+Event	T12	kazaları	EVENT	857
+Event	T13	olayları	EVENT	869
+Event	T14	kazaları	EVENT	933
+Event	T15	olayları	EVENT	945
+Event	T16	hatası	EVENT	973
+Event	T18	kazaları	EVENT	1012
+Event	T19	olayları	EVENT	1024
+Event	T17	koçluk	EVENT	30
+Event	T21	sis	EVENT	510
+Event	T22	kar	EVENT	523
+Event	T23	azlığı	EVENT	615
+Event	T2	Uçuş	EVENT	141
+Event	T20	uçuşta	EVENT	727
+Relation	T16	T18	CauseEffect	true	hatası	kazaları
+Relation	T18	T16	EffectCause	true	kazaları	hatası
+Relation	T16	T19	CauseEffect	true	hatası	olayları
+Relation	T19	T16	EffectCause	true	olayları	hatası
+Relation	T21	T23	CauseEffect	true	sis	azlığı
+Relation	T23	T21	EffectCause	true	azlığı	sis
+Relation	T23	T8	CauseEffect	true	azlığı	çarptı
+Relation	T8	T23	EffectCause	true	çarptı	azlığı
+Relation	T17	T1	CauseEffect	true	koçluk	gidiyorlardı
+Relation	T1	T17	EffectCause	true	gidiyorlardı	koçluk
+Relation	T1	T2	CauseEffect	true	gidiyorlardı	Uçuş
+Relation	T2	T1	EffectCause	true	Uçuş	gidiyorlardı
+Relation	T1	T7	CauseEffect	true	gidiyorlardı	havalandı
+Relation	T7	T1	EffectCause	true	havalandı	gidiyorlardı
+Relation	T1	T10	NoRel	true	gidiyorlardı	kazalar
+Relation	T1	T9	NoRel	true	gidiyorlardı	çarpma
+Relation	T10	T20	NoRel	true	kazalar	uçuşta
+Relation	T11	T13	NoRel	true	olaylar	olayları
+Relation	T11	T3	NoRel	true	olaylar	gösterdi
+Relation	T12	T1	NoRel	true	kazaları	gidiyorlardı
+Relation	T12	T18	NoRel	true	kazaları	kazaları
+Relation	T12	T20	NoRel	true	kazaları	uçuşta
+Relation	T13	T10	NoRel	true	olayları	kazalar
+Relation	T13	T18	NoRel	true	olayları	kazaları
+Relation	T13	T21	NoRel	true	olayları	sis
+Relation	T13	T9	NoRel	true	olayları	çarpma
+Relation	T14	T6	NoRel	true	kazaları	gitmek
+Relation	T15	T12	NoRel	true	olayları	kazaları
+Relation	T15	T13	NoRel	true	olayları	olayları
+Relation	T15	T19	NoRel	true	olayları	olayları
+Relation	T15	T6	NoRel	true	olayları	gitmek
+Relation	T16	T10	NoRel	true	hatası	kazalar
+Relation	T17	T23	NoRel	true	koçluk	azlığı
+Relation	T18	T11	NoRel	true	kazaları	olaylar
+Relation	T18	T3	NoRel	true	kazaları	gösterdi
+Relation	T18	T6	NoRel	true	kazaları	gitmek
+Relation	T19	T8	NoRel	true	olayları	çarptı
+Relation	T2	T11	NoRel	true	Uçuş	olaylar
+Relation	T2	T6	NoRel	true	Uçuş	gitmek
+Relation	T20	T14	NoRel	true	uçuşta	kazaları
+Relation	T20	T16	NoRel	true	uçuşta	hatası
+Relation	T20	T6	NoRel	true	uçuşta	gitmek
+Relation	T20	T8	NoRel	true	uçuşta	çarptı
+Relation	T21	T20	NoRel	true	sis	uçuşta
+Relation	T22	T19	NoRel	true	kar	olayları
+Relation	T22	T21	NoRel	true	kar	sis
+Relation	T22	T3	NoRel	true	kar	gösterdi
+Relation	T23	T10	NoRel	true	azlığı	kazalar
+Relation	T23	T16	NoRel	true	azlığı	hatası
+Relation	T23	T17	NoRel	true	azlığı	koçluk
+Relation	T23	T19	NoRel	true	azlığı	olayları
+Relation	T3	T10	NoRel	true	gösterdi	kazalar
+Relation	T3	T15	NoRel	true	gösterdi	olayları
+Relation	T3	T2	NoRel	true	gösterdi	Uçuş
+Relation	T3	T9	NoRel	true	gösterdi	çarpma
+Relation	T5	T7	NoRel	true	sürmüştü	havalandı
+Relation	T6	T16	NoRel	true	gitmek	hatası
+Relation	T6	T18	NoRel	true	gitmek	kazaları
+Relation	T7	T13	NoRel	true	havalandı	olayları
+Relation	T7	T17	NoRel	true	havalandı	koçluk
+Relation	T7	T19	NoRel	true	havalandı	olayları
+Relation	T7	T6	NoRel	true	havalandı	gitmek
+Relation	T8	T19	NoRel	true	çarptı	olayları
+Relation	T9	T4	NoRel	true	çarpma	uçuşu

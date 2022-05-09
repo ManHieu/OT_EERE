@@ -1,0 +1,28 @@
+Text	جب کہ سپاہ پاسداران انقلاب اسلامی نے اسرائیل پر الزام لگایا کہ یہ وائرس اس نے بطور کیمیائی ہتھیار ایران میں استعمال کیا ہے ۔	ان بیانات کو ضد سامیت کے طور پر دیکھا گیا ۔	سعودی آرامکو کے ایک جنوبی ایشیائی کارکن کی تصویر بڑے پیمانے پر سماجی روابط کی ویب سائٹ اور عالمی ذرائع ابلاغ میں کورونا وائرس نسل پرستی کی مثال کے طور پر وائرل ہوئی ، اس تصویر میں ایک انسان جس کے چہرے پر حفاظتی نقاب ( ماسک ) ہے اور وہ ہیومن ہاینڈ سینٹائزر بنا ہوا ہے ۔	متعلقہ ادارے نے بعد ازاں اس واقعے پر معذرت کر لی تھی ۔	فروری 2020ء میں ، جنوبی کوریا میں ، سؤل شہر کے مرکز میں واقع ریستوران کے داخلی دروازے پر ، مبینہ طور پر سرخ چینی حروف میں یہ کہتے ہوئے اشارہ کیا گیا تھا : کسی چینی کو اجازت نہیں ہے ۔
+Event	T1	استعمال	EVENT	108
+Event	T2	ہوئی	EVENT	329
+Event	T3	بنا	EVENT	425
+Event	T4	واقعے	EVENT	466
+Event	T5	معذرت	EVENT	475
+Event	T6	کہتے	EVENT	618
+Event	T7	انقلاب	EVENT	20
+Event	T8	الزام	EVENT	48
+Event	T9	دیکھا	EVENT	157
+Event	T10	بیانات	EVENT	128
+Event	T11	اشارہ	EVENT	628
+Relation	T1	T8	CauseEffect	true	استعمال	الزام
+Relation	T8	T1	EffectCause	true	الزام	استعمال
+Relation	T3	T2	CauseEffect	true	بنا	ہوئی
+Relation	T2	T3	EffectCause	true	ہوئی	بنا
+Relation	T2	T5	CauseEffect	true	ہوئی	معذرت
+Relation	T5	T2	EffectCause	true	معذرت	ہوئی
+Relation	T11	T3	NoRel	true	اشارہ	بنا
+Relation	T2	T4	NoRel	true	ہوئی	واقعے
+Relation	T3	T10	NoRel	true	بنا	بیانات
+Relation	T3	T9	NoRel	true	بنا	دیکھا
+Relation	T4	T7	NoRel	true	واقعے	انقلاب
+Relation	T5	T4	NoRel	true	معذرت	واقعے
+Relation	T5	T6	NoRel	true	معذرت	کہتے
+Relation	T6	T10	NoRel	true	کہتے	بیانات
+Relation	T6	T11	NoRel	true	کہتے	اشارہ
+Relation	T7	T6	NoRel	true	انقلاب	کہتے

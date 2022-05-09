@@ -1,0 +1,70 @@
+Text	El accidente fue investigado por la Comisión de Investigación de Accidentes e Incidentes de Aviación Civil ( CIAIAC ) .	Representantes de la National Transportation Safety Board ( NTSB ) de Estados Unidos , del fabricante de aviones Boeing ( como sucesor de McDonnell Douglas , fabricante del avión ) y del fabricante del motor Pratt and Whitney ayudaron en la investigación .	La CIAIAC publicó un informe preliminar en octubre de 2008 , un informe interino en agosto de 2009 , una nota de progreso en agosto de 2010 , y el informe final en julio de 2011 .	El informe final concluye que la causa del accidente fue que la tripulación perdió el control del avión debido a la entrada en pérdida justo después del despegue .	Esta situación se produjo porque los pilotos no desplegaron los flaps y slats del avión , tras no seguir correctamente el procedimiento en tres listas de comprobación diferentes .
+Event	T0	accidente	EVENT	3
+Event	T1	investigado	EVENT	17
+Event	T2	Investigación	EVENT	48
+Event	T3	Incidentes	EVENT	78
+Event	T4	ayudaron	EVENT	346
+Event	T5	investigación	EVENT	361
+Event	T6	publicó	EVENT	387
+Event	T7	informe	EVENT	398
+Event	T8	informe	EVENT	560
+Event	T9	concluye	EVENT	574
+Event	T10	accidente	EVENT	600
+Event	T11	perdió	EVENT	633
+Event	T12	control	EVENT	643
+Event	T13	pérdida	EVENT	684
+Event	T14	despegue	EVENT	710
+Event	T15	situación	EVENT	726
+Event	T16	produjo	EVENT	739
+Event	T17	desplegaron	EVENT	769
+Event	T18	flaps	EVENT	785
+Event	T19	slats	EVENT	793
+Event	T20	procedimiento	EVENT	843
+Event	T21	comprobación	EVENT	875
+Relation	T13	T10	CauseEffect	true	pérdida	accidente
+Relation	T10	T13	EffectCause	true	accidente	pérdida
+Relation	T17	T10	CauseEffect	true	desplegaron	accidente
+Relation	T10	T17	EffectCause	true	accidente	desplegaron
+Relation	T0	T12	NoRel	true	accidente	control
+Relation	T1	T13	NoRel	true	investigado	pérdida
+Relation	T1	T15	NoRel	true	investigado	situación
+Relation	T1	T20	NoRel	true	investigado	procedimiento
+Relation	T1	T6	NoRel	true	investigado	publicó
+Relation	T1	T7	NoRel	true	investigado	informe
+Relation	T10	T15	NoRel	true	accidente	situación
+Relation	T11	T10	NoRel	true	perdió	accidente
+Relation	T12	T14	NoRel	true	control	despegue
+Relation	T12	T4	NoRel	true	control	ayudaron
+Relation	T13	T3	NoRel	true	pérdida	Incidentes
+Relation	T14	T11	NoRel	true	despegue	perdió
+Relation	T14	T12	NoRel	true	despegue	control
+Relation	T16	T11	NoRel	true	produjo	perdió
+Relation	T16	T14	NoRel	true	produjo	despegue
+Relation	T16	T21	NoRel	true	produjo	comprobación
+Relation	T17	T1	NoRel	true	desplegaron	investigado
+Relation	T17	T8	NoRel	true	desplegaron	informe
+Relation	T18	T13	NoRel	true	flaps	pérdida
+Relation	T18	T8	NoRel	true	flaps	informe
+Relation	T19	T15	NoRel	true	slats	situación
+Relation	T19	T2	NoRel	true	slats	Investigación
+Relation	T19	T3	NoRel	true	slats	Incidentes
+Relation	T20	T0	NoRel	true	procedimiento	accidente
+Relation	T20	T12	NoRel	true	procedimiento	control
+Relation	T20	T8	NoRel	true	procedimiento	informe
+Relation	T21	T13	NoRel	true	comprobación	pérdida
+Relation	T21	T19	NoRel	true	comprobación	slats
+Relation	T3	T1	NoRel	true	Incidentes	investigado
+Relation	T3	T11	NoRel	true	Incidentes	perdió
+Relation	T3	T12	NoRel	true	Incidentes	control
+Relation	T3	T13	NoRel	true	Incidentes	pérdida
+Relation	T3	T20	NoRel	true	Incidentes	procedimiento
+Relation	T4	T20	NoRel	true	ayudaron	procedimiento
+Relation	T5	T0	NoRel	true	investigación	accidente
+Relation	T6	T12	NoRel	true	publicó	control
+Relation	T6	T14	NoRel	true	publicó	despegue
+Relation	T7	T13	NoRel	true	informe	pérdida
+Relation	T7	T2	NoRel	true	informe	Investigación
+Relation	T9	T0	NoRel	true	concluye	accidente
+Relation	T9	T1	NoRel	true	concluye	investigado
+Relation	T9	T15	NoRel	true	concluye	situación
+Relation	T9	T4	NoRel	true	concluye	ayudaron

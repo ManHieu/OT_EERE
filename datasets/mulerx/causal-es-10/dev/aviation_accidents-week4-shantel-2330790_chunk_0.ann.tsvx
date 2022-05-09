@@ -1,0 +1,41 @@
+Text	El VUELO 1951 DE TURKISH AIRLINES fue un vuelo que conectaba Estambul ( Turquía ) con Ámsterdam ( Países Bajos ) , operado por Turkish Airlines .	El aparato , un Boeing 737-800 de matrícula TC-JGE , se partió en tres partes tras colisionar con el terreno en un campo agrícola a un kilómetro y medio de la pista 18R del Aeropuerto de Ámsterdam-Schiphol , a las 9:31 UTC del 25 de febrero de 2009 .	Aunque los restos del avión no se incendiaron , una rueda de prensa oficial confirmó la muerte de nueve personas y que otras cincuenta habían resultado heridas .	[ TC-JGE , la aeronave involucrada , aterrizando en el aeropuerto Kiev-Boryspil en agosto de 2008 .	] [ Distribución de los pasajeros y asientos ] El avión de Turkish Airlines , un Boeing 737-800 de matrícula TC-JGE , efectuó su primer vuelo el 24 de enero de 2002 , siendo su número de construcción el 29789 , con MSN 1065 .
+Event	T0	VUELO	EVENT	3
+Event	T1	vuelo	EVENT	41
+Event	T2	conectaba	EVENT	51
+Event	T3	operado	EVENT	115
+Event	T4	partió	EVENT	202
+Event	T5	colisionar	EVENT	229
+Event	T6	incendiaron	EVENT	431
+Event	T7	rueda	EVENT	449
+Event	T8	confirmó	EVENT	473
+Event	T9	muerte	EVENT	485
+Event	T10	heridas	EVENT	549
+Event	T11	involucrada	EVENT	582
+Event	T12	aterrizando	EVENT	596
+Event	T13	efectuó	EVENT	777
+Event	T14	vuelo	EVENT	795
+Event	T15	construcción	EVENT	846
+Relation	T5	T4	CauseEffect	true	colisionar	partió
+Relation	T4	T5	EffectCause	true	partió	colisionar
+Relation	T5	T9	CauseEffect	true	colisionar	muerte
+Relation	T9	T5	EffectCause	true	muerte	colisionar
+Relation	T5	T10	CauseEffect	true	colisionar	heridas
+Relation	T10	T5	EffectCause	true	heridas	colisionar
+Relation	T0	T12	NoRel	true	VUELO	aterrizando
+Relation	T1	T14	NoRel	true	vuelo	vuelo
+Relation	T12	T8	NoRel	true	aterrizando	confirmó
+Relation	T14	T6	NoRel	true	vuelo	incendiaron
+Relation	T15	T1	NoRel	true	construcción	vuelo
+Relation	T15	T6	NoRel	true	construcción	incendiaron
+Relation	T15	T7	NoRel	true	construcción	rueda
+Relation	T2	T3	NoRel	true	conectaba	operado
+Relation	T2	T7	NoRel	true	conectaba	rueda
+Relation	T3	T2	NoRel	true	operado	conectaba
+Relation	T6	T13	NoRel	true	incendiaron	efectuó
+Relation	T6	T5	NoRel	true	incendiaron	colisionar
+Relation	T7	T15	NoRel	true	rueda	construcción
+Relation	T7	T3	NoRel	true	rueda	operado
+Relation	T8	T12	NoRel	true	confirmó	aterrizando
+Relation	T8	T14	NoRel	true	confirmó	vuelo
+Relation	T8	T3	NoRel	true	confirmó	operado
+Relation	T9	T11	NoRel	true	muerte	involucrada

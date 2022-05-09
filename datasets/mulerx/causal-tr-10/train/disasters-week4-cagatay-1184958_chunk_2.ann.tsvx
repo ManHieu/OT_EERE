@@ -1,0 +1,43 @@
+Text	Fransiskan papazlar , Baf'taki kiliselerini depremin ardından terk etti .	Depremden sadece 30 yıl önce inşa edilmiş olan ve limanı gözetleyen Saranda Kolones kalesi deprem sırasında yıkıldı .	Kuruyan limanı gözetlemek artık bir ihtiyaç olmadığından da tekrar inşa edilmedi .	Deprem , Baf kasabasını kalıcı biçimde değiştirdi .	Limanı kullanılmaz hale getiren deprem , kıyıyı denize doğru genişletti ve bu nedenle limanın korunaklı yeri ortadan kayboldu .
+Event	T0	depremin	EVENT	44
+Event	T3	deprem	EVENT	165
+Event	T4	yıkıldı	EVENT	182
+Event	T5	Deprem	EVENT	275
+Event	T6	değiştirdi	EVENT	314
+Event	T7	deprem	EVENT	359
+Event	T8	genişletti	EVENT	388
+Event	T9	kayboldu	EVENT	444
+Event	T10	Depremden	EVENT	74
+Event	T1	terk etti	EVENT	62
+Event	T2	inşa edilmiş	EVENT	103
+Event	T11	gözetleyen	EVENT	131
+Event	T12	Kuruyan	EVENT	192
+Event	T13	getiren	EVENT	351
+Relation	T0	T1	CauseEffect	true	depremin	terk etti
+Relation	T1	T0	EffectCause	true	terk etti	depremin
+Relation	T0	T9	CauseEffect	true	depremin	kayboldu
+Relation	T9	T0	EffectCause	true	kayboldu	depremin
+Relation	T0	T4	CauseEffect	true	depremin	yıkıldı
+Relation	T4	T0	EffectCause	true	yıkıldı	depremin
+Relation	T0	T6	CauseEffect	true	depremin	değiştirdi
+Relation	T6	T0	EffectCause	true	değiştirdi	depremin
+Relation	T0	T13	CauseEffect	true	depremin	getiren
+Relation	T13	T0	EffectCause	true	getiren	depremin
+Relation	T0	T8	CauseEffect	true	depremin	genişletti
+Relation	T8	T0	EffectCause	true	genişletti	depremin
+Relation	T1	T11	NoRel	true	terk etti	gözetleyen
+Relation	T1	T7	NoRel	true	terk etti	deprem
+Relation	T10	T13	NoRel	true	Depremden	getiren
+Relation	T10	T7	NoRel	true	Depremden	deprem
+Relation	T2	T11	NoRel	true	inşa edilmiş	gözetleyen
+Relation	T2	T9	NoRel	true	inşa edilmiş	kayboldu
+Relation	T3	T0	NoRel	true	deprem	depremin
+Relation	T4	T2	NoRel	true	yıkıldı	inşa edilmiş
+Relation	T4	T6	NoRel	true	yıkıldı	değiştirdi
+Relation	T4	T9	NoRel	true	yıkıldı	kayboldu
+Relation	T5	T8	NoRel	true	Deprem	genişletti
+Relation	T6	T10	NoRel	true	değiştirdi	Depremden
+Relation	T6	T3	NoRel	true	değiştirdi	deprem
+Relation	T7	T0	NoRel	true	deprem	depremin
+Relation	T8	T11	NoRel	true	genişletti	gözetleyen
+Relation	T9	T7	NoRel	true	kayboldu	deprem

@@ -1,0 +1,1560 @@
+{
+  "id": "aviation_accidents-week4-nhung-34226_chunk_26.ann.tsvx",
+  "text": "The Soyuz 1 launch was rushed due to implicit political pressures and despite Gagarin 's protests that additional safety precautions were necessary .\tGagarin accompanied Komarov to the rocket before launch and relayed instructions to Komarov from ground control following multiple system failures aboard the spacecraft .\tDespite their best efforts , Soyuz 1 crash landed after its parachutes failed to open , killing Komarov instantly .\tAfter the Soyuz 1 crash , Gagarin was permanently banned from training for and participating in further spaceflights .\tHe was also grounded from flying aircraft solo , a demotion he worked hard to lift .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "launch",
+      "label": "EVENT",
+      "char_index": 12,
+      "sid": 0,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "pressures",
+      "label": "EVENT",
+      "char_index": 56,
+      "sid": 0,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "protests",
+      "label": "EVENT",
+      "char_index": 89,
+      "sid": 0,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "accompanied",
+      "label": "EVENT",
+      "char_index": 158,
+      "sid": 1,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "launch",
+      "label": "EVENT",
+      "char_index": 199,
+      "sid": 1,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "failures",
+      "label": "EVENT",
+      "char_index": 288,
+      "sid": 1,
+      "tid": [
+        19,
+        20
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "efforts",
+      "label": "EVENT",
+      "char_index": 340,
+      "sid": 2,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "landed",
+      "label": "EVENT",
+      "char_index": 364,
+      "sid": 2,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "open",
+      "label": "EVENT",
+      "char_index": 402,
+      "sid": 2,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "killing",
+      "label": "EVENT",
+      "char_index": 409,
+      "sid": 2,
+      "tid": [
+        16,
+        17
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "crash",
+      "label": "EVENT",
+      "char_index": 455,
+      "sid": 3,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "banned",
+      "label": "EVENT",
+      "char_index": 487,
+      "sid": 3,
+      "tid": [
+        9,
+        10
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "spaceflights",
+      "label": "EVENT",
+      "char_index": 541,
+      "sid": 3,
+      "tid": [
+        17,
+        18
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "grounded",
+      "label": "EVENT",
+      "char_index": 568,
+      "sid": 4,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "flying",
+      "label": "EVENT",
+      "char_index": 582,
+      "sid": 4,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "demotion",
+      "label": "EVENT",
+      "char_index": 607,
+      "sid": 4,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T16": {
+      "id": "T16",
+      "text": "lift",
+      "label": "EVENT",
+      "char_index": 634,
+      "sid": 4,
+      "tid": [
+        15,
+        16
+      ]
+    },
+    "T17": {
+      "id": "T17",
+      "text": "rushed",
+      "label": "EVENT",
+      "char_index": 23,
+      "sid": 0,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T18": {
+      "id": "T18",
+      "text": "failed",
+      "label": "EVENT",
+      "char_index": 392,
+      "sid": 2,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T19": {
+      "id": "T19",
+      "text": "training",
+      "label": "EVENT",
+      "char_index": 499,
+      "sid": 3,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T20": {
+      "id": "T20",
+      "text": "participating",
+      "label": "EVENT",
+      "char_index": 516,
+      "sid": 3,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T21": {
+      "id": "T21",
+      "text": "relayed",
+      "label": "EVENT",
+      "char_index": 210,
+      "sid": 1,
+      "tid": [
+        9,
+        10
+      ]
+    }
+  },
+  "relation": {
+    "T18-T7": "CauseEffect",
+    "T7-T18": "EffectCause",
+    "T7-T9": "CauseEffect",
+    "T9-T7": "EffectCause",
+    "T10-T11": "CauseEffect",
+    "T11-T10": "EffectCause",
+    "T10-T13": "CauseEffect",
+    "T13-T10": "EffectCause",
+    "T0-T3": "NoRel",
+    "T1-T0": "NoRel",
+    "T1-T10": "NoRel",
+    "T1-T15": "NoRel",
+    "T10-T17": "NoRel",
+    "T10-T8": "NoRel",
+    "T11-T2": "NoRel",
+    "T11-T20": "NoRel",
+    "T11-T5": "NoRel",
+    "T12-T19": "NoRel",
+    "T12-T5": "NoRel",
+    "T13-T15": "NoRel",
+    "T13-T17": "NoRel",
+    "T13-T9": "NoRel",
+    "T14-T11": "NoRel",
+    "T14-T12": "NoRel",
+    "T15-T6": "NoRel",
+    "T16-T1": "NoRel",
+    "T16-T12": "NoRel",
+    "T16-T3": "NoRel",
+    "T17-T0": "NoRel",
+    "T17-T1": "NoRel",
+    "T17-T10": "NoRel",
+    "T17-T11": "NoRel",
+    "T17-T8": "NoRel",
+    "T18-T10": "NoRel",
+    "T18-T6": "NoRel",
+    "T19-T3": "NoRel",
+    "T19-T8": "NoRel",
+    "T19-T9": "NoRel",
+    "T2-T0": "NoRel",
+    "T2-T14": "NoRel",
+    "T2-T18": "NoRel",
+    "T20-T10": "NoRel",
+    "T21-T1": "NoRel",
+    "T21-T19": "NoRel",
+    "T21-T8": "NoRel",
+    "T3-T1": "NoRel",
+    "T3-T4": "NoRel",
+    "T4-T18": "NoRel",
+    "T4-T9": "NoRel",
+    "T5-T18": "NoRel",
+    "T6-T0": "NoRel",
+    "T6-T1": "NoRel",
+    "T6-T14": "NoRel",
+    "T6-T8": "NoRel",
+    "T8-T14": "NoRel",
+    "T8-T16": "NoRel",
+    "T8-T3": "NoRel",
+    "T9-T16": "NoRel",
+    "T9-T18": "NoRel",
+    "T9-T2": "NoRel"
+  },
+  "sentence": [
+    [
+      "The",
+      "Soyuz",
+      "1",
+      "launch",
+      "was",
+      "rushed",
+      "due",
+      "to",
+      "implicit",
+      "political",
+      "pressures",
+      "and",
+      "despite",
+      "Gagarin",
+      "'s",
+      "protests",
+      "that",
+      "additional",
+      "safety",
+      "precautions",
+      "were",
+      "necessary",
+      "."
+    ],
+    [
+      "Gagarin",
+      "accompanied",
+      "Komarov",
+      "to",
+      "the",
+      "rocket",
+      "before",
+      "launch",
+      "and",
+      "relayed",
+      "instructions",
+      "to",
+      "Komarov",
+      "from",
+      "ground",
+      "control",
+      "following",
+      "multiple",
+      "system",
+      "failures",
+      "aboard",
+      "the",
+      "spacecraft",
+      "."
+    ],
+    [
+      "Despite",
+      "their",
+      "best",
+      "efforts",
+      ",",
+      "Soyuz",
+      "1",
+      "crash",
+      "landed",
+      "after",
+      "its",
+      "parachutes",
+      "failed",
+      "to",
+      "open",
+      ",",
+      "killing",
+      "Komarov",
+      "instantly",
+      "."
+    ],
+    [
+      "After",
+      "the",
+      "Soyuz",
+      "1",
+      "crash",
+      ",",
+      "Gagarin",
+      "was",
+      "permanently",
+      "banned",
+      "from",
+      "training",
+      "for",
+      "and",
+      "participating",
+      "in",
+      "further",
+      "spaceflights",
+      "."
+    ],
+    [
+      "He",
+      "was",
+      "also",
+      "grounded",
+      "from",
+      "flying",
+      "aircraft",
+      "solo",
+      ",",
+      "a",
+      "demotion",
+      "he",
+      "worked",
+      "hard",
+      "to",
+      "lift",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      "nummod"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        10
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        6
+      ],
+      "fixed"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        10
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        5
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        21
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        15
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        15
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        13
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        21
+      ],
+      "mark"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        19
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        19
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        21
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        21
+      ],
+      "cop"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        15
+      ],
+      "acl"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        5
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        1
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        1
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "cc"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        1
+      ],
+      "conj"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        9
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        9
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        15
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        15
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        9
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        19
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        19
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        19
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        19
+      ],
+      [
+        1,
+        9
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        20
+      ],
+      [
+        1,
+        22
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        21
+      ],
+      [
+        1,
+        22
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        22
+      ],
+      [
+        1,
+        19
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        23
+      ],
+      [
+        1,
+        1
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        8
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        12
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        8
+      ],
+      "advcl"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        12
+      ],
+      "xcomp"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        8
+      ],
+      "advcl"
+    ],
+    [
+      [
+        2,
+        17
+      ],
+      [
+        2,
+        16
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        18
+      ],
+      [
+        2,
+        16
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        19
+      ],
+      [
+        2,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        4
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      "compound"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      "nummod"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        9
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        9
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        9
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        9
+      ],
+      "advcl"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        11
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        17
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        17
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        14
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        9
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        3
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        3
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        3
+      ],
+      "advcl"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        10
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        3
+      ],
+      "parataxis"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        12
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        10
+      ],
+      "acl:relcl"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        12
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        15
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        12
+      ],
+      "advcl"
+    ],
+    [
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        3
+      ],
+      "punct"
+    ]
+  ]
+}

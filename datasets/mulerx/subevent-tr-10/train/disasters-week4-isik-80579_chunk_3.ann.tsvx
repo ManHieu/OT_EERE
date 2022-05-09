@@ -1,0 +1,29 @@
+Text	Kasırga yaklaşık 16 Ekim tarihinde Haiti ve Dominik Cumhuriyeti'nin bulunduğu adaların doğusuna ve kuzeyine geçmiş ve yaklaşık olarak 17 Ekim tarihinde Florida'ya ulaşmıştır .	Charleston , Güney Carolina'da kuvvetli rüzgarlar oluşturmaya devam etmiştir .	Bazı kaynaklar Haiti'nin kuzeyinde 16 - 18 Ekim'de Yengeç Dönencesi'nde merkezinin geriye ve aşağıya doğru kaydığını söylemektedirler ; diğerleri ise fırtınanın Florida'ya daha fazla yakınlaştığını söylemektedirler .	Londra'da bulunan Lloyd's List dergisi fırtına hakkında ilk bilgiyi 19 Aralık sayısında yayımlamıştır ve ek bilgileri Nisan 1781 tarihine kadar yayımlamaya devam etmiştir .	Diğer çok sayıda ölüme yol açan Atlantik fırtınaları ; Mitch Kasırgası ve 1900 Galveston Kasırgası .
+Event	T0	geçmiş	EVENT	108
+Event	T1	ulaşmıştır	EVENT	163
+Event	T2	fırtınanın	EVENT	405
+Event	T3	fırtına	EVENT	511
+Event	T4	yayımlamıştır	EVENT	560
+Event	T6	fırtınaları	EVENT	686
+Event	T7	etmiştir	EVENT	244
+Event	T8	Kasırga	EVENT	0
+Event	T9	etmiştir	EVENT	634
+Event	T10	Kasırgası	EVENT	706
+Event	T11	Kasırgası	EVENT	734
+Event	T5	ölüme	EVENT	662
+Relation	T1	T5	NoRel	true	ulaşmıştır	ölüme
+Relation	T10	T11	NoRel	true	Kasırgası	Kasırgası
+Relation	T10	T6	NoRel	true	Kasırgası	fırtınaları
+Relation	T10	T8	NoRel	true	Kasırgası	Kasırga
+Relation	T11	T3	NoRel	true	Kasırgası	fırtına
+Relation	T2	T1	NoRel	true	fırtınanın	ulaşmıştır
+Relation	T2	T9	NoRel	true	fırtınanın	etmiştir
+Relation	T3	T5	NoRel	true	fırtına	ölüme
+Relation	T3	T8	NoRel	true	fırtına	Kasırga
+Relation	T4	T6	NoRel	true	yayımlamıştır	fırtınaları
+Relation	T6	T4	NoRel	true	fırtınaları	yayımlamıştır
+Relation	T7	T2	NoRel	true	etmiştir	fırtınanın
+Relation	T7	T6	NoRel	true	etmiştir	fırtınaları
+Relation	T8	T2	NoRel	true	Kasırga	fırtınanın
+Relation	T9	T0	NoRel	true	etmiştir	geçmiş
+Relation	T9	T11	NoRel	true	etmiştir	Kasırgası

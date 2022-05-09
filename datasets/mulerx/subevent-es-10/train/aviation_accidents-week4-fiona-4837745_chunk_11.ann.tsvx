@@ -1,0 +1,120 @@
+Text	Tras lo ocurrido , comenzó el declive de _ Buenos días a todos _ , entre una serie de renuncias e infortunios , tales como la salida de su locutor Patricio Frez , los decesos de Ricarte Soto y Juan Carlos « el Tata » Díaz , y la renuncia de su director Mauricio Correa .	Esto llevó finalmente una reestructuración del programa en agosto de 2016 , que cambió el nombre del programa a _ Muy buenos días _ .	Dicha acción fue criticada y resistida por sectores científicos y organizaciones de escépticos , como un malgasto de recursos , y porque implicaba una distracción del objetivo principal .	Una de las principales críticas , apuntaba a las diferencias de versiones entre los videntes ( algunos daban a los accidentados como sobrevivientes en una playa o caverna , mientras otros indicaron que « están amarrados al fuselaje » , entre otras versiones ) y los nulos aciertos que la elegida podía mostrar .	Finalmente , el día 9 se informó que , tras revisar los puntos señalados por los videntes en general , se descartó cualquier validez a la información entregada por ellos .
+Event	T0	ocurrido	EVENT	8
+Event	T1	comenzó	EVENT	19
+Event	T2	declive	EVENT	30
+Event	T3	renuncias	EVENT	86
+Event	T4	infortunios	EVENT	98
+Event	T5	salida	EVENT	126
+Event	T6	decesos	EVENT	167
+Event	T7	renuncia	EVENT	229
+Event	T8	llevó	EVENT	276
+Event	T9	reestructuración	EVENT	297
+Event	T10	cambió	EVENT	351
+Event	T11	acción	EVENT	411
+Event	T12	criticada	EVENT	422
+Event	T13	resistida	EVENT	434
+Event	T14	malgasto	EVENT	510
+Event	T15	distracción	EVENT	556
+Event	T16	críticas	EVENT	616
+Event	T17	apuntaba	EVENT	627
+Event	T18	diferencias	EVENT	642
+Event	T19	accidentados	EVENT	708
+Event	T20	indicaron	EVENT	781
+Event	T21	amarrados	EVENT	803
+Event	T22	aciertos	EVENT	865
+Event	T23	elegida	EVENT	881
+Event	T24	mostrar	EVENT	895
+Event	T25	informó	EVENT	930
+Event	T26	revisar	EVENT	949
+Event	T27	señalados	EVENT	968
+Event	T28	descartó	EVENT	1011
+Event	T29	entregada	EVENT	1055
+Relation	T7	T9	SuperSub	true	renuncia	reestructuración
+Relation	T9	T7	SubSuper	true	reestructuración	renuncia
+Relation	T0	T2	NoRel	true	ocurrido	declive
+Relation	T0	T3	NoRel	true	ocurrido	renuncias
+Relation	T0	T6	NoRel	true	ocurrido	decesos
+Relation	T0	T8	NoRel	true	ocurrido	llevó
+Relation	T1	T10	NoRel	true	comenzó	cambió
+Relation	T1	T16	NoRel	true	comenzó	críticas
+Relation	T1	T7	NoRel	true	comenzó	renuncia
+Relation	T10	T18	NoRel	true	cambió	diferencias
+Relation	T11	T12	NoRel	true	acción	criticada
+Relation	T11	T24	NoRel	true	acción	mostrar
+Relation	T12	T1	NoRel	true	criticada	comenzó
+Relation	T12	T13	NoRel	true	criticada	resistida
+Relation	T12	T15	NoRel	true	criticada	distracción
+Relation	T12	T17	NoRel	true	criticada	apuntaba
+Relation	T12	T24	NoRel	true	criticada	mostrar
+Relation	T12	T6	NoRel	true	criticada	decesos
+Relation	T13	T23	NoRel	true	resistida	elegida
+Relation	T13	T29	NoRel	true	resistida	entregada
+Relation	T13	T4	NoRel	true	resistida	infortunios
+Relation	T14	T26	NoRel	true	malgasto	revisar
+Relation	T15	T25	NoRel	true	distracción	informó
+Relation	T16	T11	NoRel	true	críticas	acción
+Relation	T16	T2	NoRel	true	críticas	declive
+Relation	T16	T24	NoRel	true	críticas	mostrar
+Relation	T17	T1	NoRel	true	apuntaba	comenzó
+Relation	T17	T11	NoRel	true	apuntaba	acción
+Relation	T17	T14	NoRel	true	apuntaba	malgasto
+Relation	T17	T21	NoRel	true	apuntaba	amarrados
+Relation	T17	T25	NoRel	true	apuntaba	informó
+Relation	T18	T0	NoRel	true	diferencias	ocurrido
+Relation	T18	T21	NoRel	true	diferencias	amarrados
+Relation	T18	T8	NoRel	true	diferencias	llevó
+Relation	T19	T10	NoRel	true	accidentados	cambió
+Relation	T19	T15	NoRel	true	accidentados	distracción
+Relation	T19	T28	NoRel	true	accidentados	descartó
+Relation	T19	T4	NoRel	true	accidentados	infortunios
+Relation	T19	T5	NoRel	true	accidentados	salida
+Relation	T2	T10	NoRel	true	declive	cambió
+Relation	T2	T20	NoRel	true	declive	indicaron
+Relation	T20	T29	NoRel	true	indicaron	entregada
+Relation	T21	T12	NoRel	true	amarrados	criticada
+Relation	T21	T8	NoRel	true	amarrados	llevó
+Relation	T22	T19	NoRel	true	aciertos	accidentados
+Relation	T22	T2	NoRel	true	aciertos	declive
+Relation	T22	T24	NoRel	true	aciertos	mostrar
+Relation	T23	T7	NoRel	true	elegida	renuncia
+Relation	T23	T9	NoRel	true	elegida	reestructuración
+Relation	T24	T11	NoRel	true	mostrar	acción
+Relation	T24	T12	NoRel	true	mostrar	criticada
+Relation	T24	T29	NoRel	true	mostrar	entregada
+Relation	T24	T4	NoRel	true	mostrar	infortunios
+Relation	T25	T10	NoRel	true	informó	cambió
+Relation	T25	T11	NoRel	true	informó	acción
+Relation	T25	T22	NoRel	true	informó	aciertos
+Relation	T26	T9	NoRel	true	revisar	reestructuración
+Relation	T27	T16	NoRel	true	señalados	críticas
+Relation	T27	T25	NoRel	true	señalados	informó
+Relation	T27	T6	NoRel	true	señalados	decesos
+Relation	T28	T14	NoRel	true	descartó	malgasto
+Relation	T28	T3	NoRel	true	descartó	renuncias
+Relation	T29	T12	NoRel	true	entregada	criticada
+Relation	T29	T18	NoRel	true	entregada	diferencias
+Relation	T29	T26	NoRel	true	entregada	revisar
+Relation	T29	T28	NoRel	true	entregada	descartó
+Relation	T29	T4	NoRel	true	entregada	infortunios
+Relation	T29	T8	NoRel	true	entregada	llevó
+Relation	T3	T24	NoRel	true	renuncias	mostrar
+Relation	T3	T25	NoRel	true	renuncias	informó
+Relation	T3	T26	NoRel	true	renuncias	revisar
+Relation	T3	T29	NoRel	true	renuncias	entregada
+Relation	T4	T21	NoRel	true	infortunios	amarrados
+Relation	T4	T22	NoRel	true	infortunios	aciertos
+Relation	T4	T27	NoRel	true	infortunios	señalados
+Relation	T5	T20	NoRel	true	salida	indicaron
+Relation	T5	T29	NoRel	true	salida	entregada
+Relation	T6	T15	NoRel	true	decesos	distracción
+Relation	T6	T8	NoRel	true	decesos	llevó
+Relation	T7	T1	NoRel	true	renuncia	comenzó
+Relation	T7	T17	NoRel	true	renuncia	apuntaba
+Relation	T7	T23	NoRel	true	renuncia	elegida
+Relation	T7	T8	NoRel	true	renuncia	llevó
+Relation	T8	T12	NoRel	true	llevó	criticada
+Relation	T8	T24	NoRel	true	llevó	mostrar
+Relation	T8	T25	NoRel	true	llevó	informó
+Relation	T8	T4	NoRel	true	llevó	infortunios
+Relation	T9	T24	NoRel	true	reestructuración	mostrar
+Relation	T9	T29	NoRel	true	reestructuración	entregada

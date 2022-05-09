@@ -1,0 +1,42 @@
+Text	Hitler'in seçim kazanımları karşısında küçülen KPD , yasal araçlardan uzaklaştı ve giderek şiddete yöneldi .	Silezya'da sonuçlanan bir çatışma , ordunun sevk edilmesiyle sonuçlandı ve her girişim Almanya'yı potansiyel bir iç savaşa sürükledi .	Bu sırada her iki taraf da bir rekabeti ateşlemek umuduyla birbirlerinin kalelerine yürüdü .	Saldırılar , SA lideri Axel Schaffeld'in 1 Ağustos'ta suikasta kurban gitmesiyle devam etti ve ateşli bir boyuta ulaştı .	Nazi Partisi artık Reichstag'ın en büyük partisi olduğu için , Reichstag Başkanını seçme hakkına sahipti ve göreve kendi adamı Hermann Göring'i seçti .
+Event	T0	uzaklaştı	EVENT	70
+Event	T1	yöneldi	EVENT	99
+Event	T3	çatışma	EVENT	135
+Event	T5	sonuçlandı	EVENT	170
+Event	T6	girişim	EVENT	188
+Event	T7	sürükledi	EVENT	232
+Event	T9	yürüdü	EVENT	328
+Event	T10	Saldırılar	EVENT	337
+Event	T11	etti	EVENT	424
+Event	T12	ulaştı	EVENT	450
+Event	T14	seçti	EVENT	603
+Event	T15	kazanımları	EVENT	16
+Event	T16	küçülen	EVENT	39
+Event	T2	sahipti	EVENT	556
+Event	T4	partisi	EVENT	500
+Relation	T0	T10	NoRel	true	uzaklaştı	Saldırılar
+Relation	T0	T12	NoRel	true	uzaklaştı	ulaştı
+Relation	T0	T16	NoRel	true	uzaklaştı	küçülen
+Relation	T1	T0	NoRel	true	yöneldi	uzaklaştı
+Relation	T1	T3	NoRel	true	yöneldi	çatışma
+Relation	T1	T5	NoRel	true	yöneldi	sonuçlandı
+Relation	T1	T7	NoRel	true	yöneldi	sürükledi
+Relation	T10	T11	NoRel	true	Saldırılar	etti
+Relation	T10	T3	NoRel	true	Saldırılar	çatışma
+Relation	T10	T9	NoRel	true	Saldırılar	yürüdü
+Relation	T11	T6	NoRel	true	etti	girişim
+Relation	T12	T1	NoRel	true	ulaştı	yöneldi
+Relation	T15	T11	NoRel	true	kazanımları	etti
+Relation	T15	T5	NoRel	true	kazanımları	sonuçlandı
+Relation	T16	T7	NoRel	true	küçülen	sürükledi
+Relation	T2	T0	NoRel	true	sahipti	uzaklaştı
+Relation	T2	T12	NoRel	true	sahipti	ulaştı
+Relation	T2	T7	NoRel	true	sahipti	sürükledi
+Relation	T4	T6	NoRel	true	partisi	girişim
+Relation	T4	T7	NoRel	true	partisi	sürükledi
+Relation	T5	T12	NoRel	true	sonuçlandı	ulaştı
+Relation	T5	T3	NoRel	true	sonuçlandı	çatışma
+Relation	T7	T16	NoRel	true	sürükledi	küçülen
+Relation	T9	T15	NoRel	true	yürüdü	kazanımları
+Relation	T9	T5	NoRel	true	yürüdü	sonuçlandı
+Relation	T9	T7	NoRel	true	yürüdü	sürükledi

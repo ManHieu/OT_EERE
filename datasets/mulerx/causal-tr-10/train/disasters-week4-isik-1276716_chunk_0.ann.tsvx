@@ -1,0 +1,18 @@
+Text	1938 BANDA DENIZI DEPREMI , 1 Şubat 1938 günü Banda Denizi'nde meydana gelen bir depremdi .	Büyüklüğü 8.5 M _ ( w ) olarak tahmin edilen deprem , 20. yüzyılın en büyük dokuzuncu depremiydi .	Mercalli şiddet ölçeğinde ise şiddeti VII ( çok güçlü ) olarak ölçülmüştü .	1.5 metrelik tsunami dalgalarına yol açan deprem sonucu can kaybı yaşandığına dair herhangi bir kayıt yoktur .	Kategori : Endonezya'daki depremler Kategori : Banda Denizi Banda Denizi depremi Banda Denizi Kategori : 5 ° G Kategori : 130 ° D
+Event	T1	depremdi	EVENT	81
+Event	T2	depremiydi	EVENT	178
+Event	T3	ölçülmüştü	EVENT	254
+Event	T4	kayıt	EVENT	363
+Event	T5	depremler	EVENT	404
+Event	T6	depremi	EVENT	451
+Event	T7	1938 BANDA DENIZI DEPREMI	EVENT	0
+Event	T8	edilen	EVENT	130
+Event	T9	tsunami	EVENT	280
+Relation	T7	T9	CauseEffect	true	1938 BANDA DENIZI DEPREMI	tsunami
+Relation	T9	T7	EffectCause	true	tsunami	1938 BANDA DENIZI DEPREMI
+Relation	T1	T6	NoRel	true	depremdi	depremi
+Relation	T1	T7	NoRel	true	depremdi	1938 BANDA DENIZI DEPREMI
+Relation	T6	T4	NoRel	true	depremi	kayıt
+Relation	T6	T7	NoRel	true	depremi	1938 BANDA DENIZI DEPREMI
+Relation	T8	T4	NoRel	true	edilen	kayıt
+Relation	T9	T4	NoRel	true	tsunami	kayıt

@@ -1,0 +1,54 @@
+Text	Depremin etkisiyle 2'si otel olmak üzere 25 bina yıkıldı .	23 Ekim'de meydana gelen deprem nedeniyle Van'da olan arama kurtarma ekiplerinin bir kısmı , binaların yıkıldığı bölgeye sevk edilirken ; daha önce kendi bölgelerine dönmüş arama kurtarma ekipleri de tekrar bölgeye gelerek arama kurtarma çalışmalarında bulunmuşlardır .	12 Kasım günü Afet ve Acil Durum Yönetimi Başkanlığı'ndan yapılan açıklamada ; 25 binanın yıkıldığı , 40 kişinin öldüğü ve 30 kişinin enkazlardan sağ kurtarıldığı bilgisi verilmiştir .	Depremde ölenlerden biri de Japon yardım görevlisi Prof. Dr. Atsushi Miyazaki'dir .	Van'da yaşayan binlerce insan bu depremden sonra bölgeyi terk etmiştir , kalanlar ise soğuk kış aylarını yazlık çadırlarda geçirmiştir Van valiliğinin gönüllülerle beraber yürüttüğü çalışmlar sayesinde ağır hasarlı birçok bina kayıt altına alınıp acil tedbir alınması için ilgili makamlara resmi olarak raporlanmıştır .
+Event	T0	yıkıldı	EVENT	49
+Event	T1	deprem	EVENT	84
+Event	T3	dönmüş	EVENT	225
+Event	T4	açıklamada	EVENT	395
+Event	T5	yıkıldığı	EVENT	419
+Event	T6	öldüğü	EVENT	442
+Event	T7	verilmiştir	EVENT	500
+Event	T8	depremden	EVENT	631
+Event	T9	etmiştir	EVENT	660
+Event	T10	geçirmiştir	EVENT	721
+Event	T11	çalışmlar	EVENT	780
+Event	T13	raporlanmıştır	EVENT	901
+Event	T2	gelerek	EVENT	274
+Event	T14	edilirken	EVENT	185
+Event	T15	bulunmuşlardır	EVENT	312
+Event	T16	kurtarıldığı	EVENT	479
+Event	T12	hasarlı	EVENT	805
+Event	T17	alınıp	EVENT	838
+Relation	T1	T0	SuperSub	true	deprem	yıkıldı
+Relation	T0	T1	SubSuper	true	yıkıldı	deprem
+Relation	T1	T5	SuperSub	true	deprem	yıkıldığı
+Relation	T5	T1	SubSuper	true	yıkıldığı	deprem
+Relation	T1	T6	SuperSub	true	deprem	öldüğü
+Relation	T6	T1	SubSuper	true	öldüğü	deprem
+Relation	T1	T4	SuperSub	true	deprem	açıklamada
+Relation	T4	T1	SubSuper	true	açıklamada	deprem
+Relation	T1	T9	SuperSub	true	deprem	etmiştir
+Relation	T9	T1	SubSuper	true	etmiştir	deprem
+Relation	T1	T10	SuperSub	true	deprem	geçirmiştir
+Relation	T10	T1	SubSuper	true	geçirmiştir	deprem
+Relation	T1	T12	SuperSub	true	deprem	hasarlı
+Relation	T12	T1	SubSuper	true	hasarlı	deprem
+Relation	T10	T6	NoRel	true	geçirmiştir	öldüğü
+Relation	T12	T13	NoRel	true	hasarlı	raporlanmıştır
+Relation	T13	T1	NoRel	true	raporlanmıştır	deprem
+Relation	T13	T15	NoRel	true	raporlanmıştır	bulunmuşlardır
+Relation	T13	T17	NoRel	true	raporlanmıştır	alınıp
+Relation	T14	T1	NoRel	true	edilirken	deprem
+Relation	T14	T6	NoRel	true	edilirken	öldüğü
+Relation	T14	T7	NoRel	true	edilirken	verilmiştir
+Relation	T15	T16	NoRel	true	bulunmuşlardır	kurtarıldığı
+Relation	T15	T4	NoRel	true	bulunmuşlardır	açıklamada
+Relation	T16	T2	NoRel	true	kurtarıldığı	gelerek
+Relation	T16	T5	NoRel	true	kurtarıldığı	yıkıldığı
+Relation	T17	T8	NoRel	true	alınıp	depremden
+Relation	T17	T9	NoRel	true	alınıp	etmiştir
+Relation	T2	T12	NoRel	true	gelerek	hasarlı
+Relation	T4	T16	NoRel	true	açıklamada	kurtarıldığı
+Relation	T4	T17	NoRel	true	açıklamada	alınıp
+Relation	T7	T14	NoRel	true	verilmiştir	edilirken
+Relation	T8	T1	NoRel	true	depremden	deprem
+Relation	T8	T10	NoRel	true	depremden	geçirmiştir
+Relation	T8	T12	NoRel	true	depremden	hasarlı

@@ -1,0 +1,59 @@
+Text	Los registros obtenidos por Associated Press ( AP ) mostraron que el capitán Imasuen había vuelto a trabajar como piloto a pesar de haber recibido un disparo en la cabeza años antes en un intento de robo durante un largo descanso del vuelo .	Bellview Airlines lo contrató después de haber trabajado en una lechería durante unos 14 años .	También hubo un informe no verificado de que había sido suspendido durante 2 semanas de la aerolínea por negarse a volar un avión que no era seguro .	La investigación reveló además que el manual de los pilotos incluía páginas en blanco en lugar de información clave de seguridad .	El accidente hizo que Estados Unidos criticara a la Autoridad Federal de Aeropuertos de Nigeria ( FAAN ) por no hacer cumplir las normas de seguridad y la supervisión .
+Event	T0	obtenidos	EVENT	14
+Event	T1	mostraron	EVENT	52
+Event	T2	vuelto	EVENT	91
+Event	T3	trabajar	EVENT	100
+Event	T4	recibido	EVENT	138
+Event	T5	disparo	EVENT	150
+Event	T6	intento	EVENT	188
+Event	T7	robo	EVENT	199
+Event	T8	descanso	EVENT	221
+Event	T9	vuelo	EVENT	234
+Event	T10	contrató	EVENT	263
+Event	T11	trabajado	EVENT	289
+Event	T12	informe	EVENT	354
+Event	T13	verificado	EVENT	365
+Event	T14	suspendido	EVENT	394
+Event	T15	negarse	EVENT	443
+Event	T16	volar	EVENT	453
+Event	T17	reveló	EVENT	505
+Event	T18	incluía	EVENT	548
+Event	T19	hizo	EVENT	632
+Event	T20	criticara	EVENT	656
+Event	T21	supervisión	EVENT	774
+Event	T22	accidente	EVENT	622
+Relation	T22	T20	CauseEffect	true	accidente	criticara
+Relation	T20	T22	EffectCause	true	criticara	accidente
+Relation	T0	T3	NoRel	true	obtenidos	trabajar
+Relation	T0	T8	NoRel	true	obtenidos	descanso
+Relation	T10	T3	NoRel	true	contrató	trabajar
+Relation	T10	T8	NoRel	true	contrató	descanso
+Relation	T12	T10	NoRel	true	informe	contrató
+Relation	T13	T3	NoRel	true	verificado	trabajar
+Relation	T13	T4	NoRel	true	verificado	recibido
+Relation	T13	T9	NoRel	true	verificado	vuelo
+Relation	T14	T18	NoRel	true	suspendido	incluía
+Relation	T16	T14	NoRel	true	volar	suspendido
+Relation	T16	T2	NoRel	true	volar	vuelto
+Relation	T17	T10	NoRel	true	reveló	contrató
+Relation	T17	T6	NoRel	true	reveló	intento
+Relation	T17	T9	NoRel	true	reveló	vuelo
+Relation	T18	T8	NoRel	true	incluía	descanso
+Relation	T19	T14	NoRel	true	hizo	suspendido
+Relation	T19	T20	NoRel	true	hizo	criticara
+Relation	T19	T9	NoRel	true	hizo	vuelo
+Relation	T2	T11	NoRel	true	vuelto	trabajado
+Relation	T20	T15	NoRel	true	criticara	negarse
+Relation	T22	T18	NoRel	true	accidente	incluía
+Relation	T22	T19	NoRel	true	accidente	hizo
+Relation	T3	T15	NoRel	true	trabajar	negarse
+Relation	T3	T9	NoRel	true	trabajar	vuelo
+Relation	T4	T17	NoRel	true	recibido	reveló
+Relation	T5	T13	NoRel	true	disparo	verificado
+Relation	T5	T2	NoRel	true	disparo	vuelto
+Relation	T7	T11	NoRel	true	robo	trabajado
+Relation	T7	T13	NoRel	true	robo	verificado
+Relation	T7	T4	NoRel	true	robo	recibido
+Relation	T8	T14	NoRel	true	descanso	suspendido
+Relation	T8	T16	NoRel	true	descanso	volar
+Relation	T9	T2	NoRel	true	vuelo	vuelto

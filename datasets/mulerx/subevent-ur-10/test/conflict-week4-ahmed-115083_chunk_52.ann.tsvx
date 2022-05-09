@@ -1,0 +1,92 @@
+Text	اب روز عاشورا کو جب شیعہ جلوس تل_کٹورا کے مقام پر " درگاہ امام حسین و کربلا " نامی مشترکہ امامبارگاہ جاتا تو ماتم اور نوحے اور غم کا اظہار کر رہا ہوتا ، جبکہ سنی جلوس میں عید میلاد النبی ؐ کی طرز پر خوشی کا اظہار ہوتا ۔	عاشورا کے دن بچوں کے جھولنے کے لیے پینگیں اور خریداری کے لیے مختلف قسم کے سٹال لگائے جانے لگے ، ایک میلے کا سماں پیدا ہونے لگا ۔	غریب ہندو بھی اس موقعے پر اشیائے خور و نوش بیچنے کے لیے ریڑھیاں لگانے لگے ۔	آج کل بھی یہ عمل جاری ہے ، مثال کے طور پر یوٹیوب پر اورنگ آباد میں عاشورا کے حوالے سے ویڈیوز تلاش کریں تو ہر دو قسم کی ویڈیوز مل جائیں گی ، ایک طرف عزاداری اور ایک طرف جشن ،	یہاں سے پہلی مرتبہ عوامی سطح پر شیعہ سنی فساد ہوا اور انگریز حکومت نے مداخلت کر کے تل_کٹورا میں عاشورمیلے پر پابندی لگا دی ۔
+Event	T0	ماتم	EVENT	109
+Event	T1	اظہار	EVENT	133
+Event	T2	عید	EVENT	171
+Event	T3	خوشی	EVENT	199
+Event	T4	اظہار	EVENT	207
+Event	T5	جھولنے	EVENT	241
+Event	T8	جاری	EVENT	442
+Event	T9	تلاش	EVENT	518
+Event	T10	جشن	EVENT	593
+Event	T12	مداخلت	EVENT	669
+Event	T13	عاشورمیلے	EVENT	695
+Event	T14	جلوس	EVENT	25
+Event	T15	جلوس	EVENT	162
+Event	T16	غم	EVENT	127
+Event	T17	نوحے	EVENT	118
+Event	T18	لگائے	EVENT	299
+Event	T19	پیدا	EVENT	333
+Event	T6	خریداری	EVENT	266
+Event	T20	موقعے	EVENT	366
+Event	T21	لگانے	EVENT	413
+Event	T7	مل	EVENT	551
+Event	T22	عزاداری	EVENT	573
+Event	T23	فساد	EVENT	640
+Event	T11	پابندی	EVENT	708
+Relation	T14	T0	SuperSub	true	جلوس	ماتم
+Relation	T0	T14	SubSuper	true	ماتم	جلوس
+Relation	T14	T1	SuperSub	true	جلوس	اظہار
+Relation	T1	T14	SubSuper	true	اظہار	جلوس
+Relation	T15	T2	SuperSub	true	جلوس	عید
+Relation	T2	T15	SubSuper	true	عید	جلوس
+Relation	T15	T4	SuperSub	true	جلوس	اظہار
+Relation	T4	T15	SubSuper	true	اظہار	جلوس
+Relation	T12	T11	SuperSub	true	مداخلت	پابندی
+Relation	T11	T12	SubSuper	true	پابندی	مداخلت
+Relation	T0	T20	NoRel	true	ماتم	موقعے
+Relation	T0	T21	NoRel	true	ماتم	لگانے
+Relation	T1	T23	NoRel	true	اظہار	فساد
+Relation	T1	T3	NoRel	true	اظہار	خوشی
+Relation	T1	T9	NoRel	true	اظہار	تلاش
+Relation	T10	T0	NoRel	true	جشن	ماتم
+Relation	T10	T16	NoRel	true	جشن	غم
+Relation	T10	T22	NoRel	true	جشن	عزاداری
+Relation	T10	T23	NoRel	true	جشن	فساد
+Relation	T11	T14	NoRel	true	پابندی	جلوس
+Relation	T11	T15	NoRel	true	پابندی	جلوس
+Relation	T11	T16	NoRel	true	پابندی	غم
+Relation	T11	T2	NoRel	true	پابندی	عید
+Relation	T11	T5	NoRel	true	پابندی	جھولنے
+Relation	T13	T1	NoRel	true	عاشورمیلے	اظہار
+Relation	T14	T19	NoRel	true	جلوس	پیدا
+Relation	T14	T20	NoRel	true	جلوس	موقعے
+Relation	T14	T22	NoRel	true	جلوس	عزاداری
+Relation	T15	T21	NoRel	true	جلوس	لگانے
+Relation	T16	T4	NoRel	true	غم	اظہار
+Relation	T16	T8	NoRel	true	غم	جاری
+Relation	T17	T21	NoRel	true	نوحے	لگانے
+Relation	T18	T12	NoRel	true	لگائے	مداخلت
+Relation	T18	T21	NoRel	true	لگائے	لگانے
+Relation	T19	T14	NoRel	true	پیدا	جلوس
+Relation	T19	T7	NoRel	true	پیدا	مل
+Relation	T19	T8	NoRel	true	پیدا	جاری
+Relation	T19	T9	NoRel	true	پیدا	تلاش
+Relation	T2	T18	NoRel	true	عید	لگائے
+Relation	T2	T19	NoRel	true	عید	پیدا
+Relation	T2	T23	NoRel	true	عید	فساد
+Relation	T2	T3	NoRel	true	عید	خوشی
+Relation	T20	T21	NoRel	true	موقعے	لگانے
+Relation	T20	T7	NoRel	true	موقعے	مل
+Relation	T21	T10	NoRel	true	لگانے	جشن
+Relation	T21	T11	NoRel	true	لگانے	پابندی
+Relation	T21	T2	NoRel	true	لگانے	عید
+Relation	T21	T22	NoRel	true	لگانے	عزاداری
+Relation	T21	T23	NoRel	true	لگانے	فساد
+Relation	T21	T9	NoRel	true	لگانے	تلاش
+Relation	T22	T10	NoRel	true	عزاداری	جشن
+Relation	T22	T2	NoRel	true	عزاداری	عید
+Relation	T23	T10	NoRel	true	فساد	جشن
+Relation	T23	T9	NoRel	true	فساد	تلاش
+Relation	T3	T20	NoRel	true	خوشی	موقعے
+Relation	T3	T5	NoRel	true	خوشی	جھولنے
+Relation	T4	T19	NoRel	true	اظہار	پیدا
+Relation	T4	T8	NoRel	true	اظہار	جاری
+Relation	T5	T11	NoRel	true	جھولنے	پابندی
+Relation	T5	T22	NoRel	true	جھولنے	عزاداری
+Relation	T6	T15	NoRel	true	خریداری	جلوس
+Relation	T6	T16	NoRel	true	خریداری	غم
+Relation	T6	T17	NoRel	true	خریداری	نوحے
+Relation	T7	T4	NoRel	true	مل	اظہار
+Relation	T8	T19	NoRel	true	جاری	پیدا
+Relation	T8	T22	NoRel	true	جاری	عزاداری
+Relation	T9	T6	NoRel	true	تلاش	خریداری

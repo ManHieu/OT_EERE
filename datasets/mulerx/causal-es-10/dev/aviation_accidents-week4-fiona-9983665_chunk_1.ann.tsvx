@@ -1,0 +1,56 @@
+Text	Ésta lo tuvo durante un par de décadas hasta 2016 , cuando se le fue dado a otra agencia de paracaidismo , Kalle David Flyg AB , manteniendo el mismo registro .	Después en julio de 2020 , otra vez Skånes Fallskarmsklubb la poseyó alquilándosela a Kalle David Flyg AB .	El aparato despegó del aeropuerto de Örebro , en el municipio y provincia del mismo nombre , en Suecia .	Poco después del despegue , cuando se alzaba , el avión cayó , se estrelló " incontrolablemente " , bajó una colina sin control y se incendió en el impacto más o menos a las 19:23 , dice Lars Hedelin , portavoz de prensa de la policía .	Algunos testigos , como los hermanos João y Diogo Dias que trabajan en el aeropuerto , dijeron que escucharon un sonido estrepitoso y salieron corriendo a la pista con sus colegas cuando escucharon una explosión .
+Event	T0	tuvo	EVENT	8
+Event	T1	dado	EVENT	69
+Event	T2	registro	EVENT	150
+Event	T3	despegó	EVENT	280
+Event	T4	despegue	EVENT	391
+Event	T5	alzaba	EVENT	412
+Event	T6	cayó	EVENT	430
+Event	T7	estrelló	EVENT	440
+Event	T8	bajó	EVENT	474
+Event	T9	incendió	EVENT	507
+Event	T10	impacto	EVENT	522
+Event	T11	dice	EVENT	556
+Event	T12	dijeron	EVENT	698
+Event	T13	escucharon	EVENT	710
+Event	T14	corriendo	EVENT	754
+Event	T15	escucharon	EVENT	798
+Event	T16	explosión	EVENT	813
+Relation	T6	T7	CauseEffect	true	cayó	estrelló
+Relation	T7	T6	EffectCause	true	estrelló	cayó
+Relation	T7	T16	CauseEffect	true	estrelló	explosión
+Relation	T16	T7	EffectCause	true	explosión	estrelló
+Relation	T0	T10	NoRel	true	tuvo	impacto
+Relation	T0	T2	NoRel	true	tuvo	registro
+Relation	T1	T11	NoRel	true	dado	dice
+Relation	T1	T12	NoRel	true	dado	dijeron
+Relation	T10	T14	NoRel	true	impacto	corriendo
+Relation	T10	T16	NoRel	true	impacto	explosión
+Relation	T10	T5	NoRel	true	impacto	alzaba
+Relation	T11	T13	NoRel	true	dice	escucharon
+Relation	T11	T5	NoRel	true	dice	alzaba
+Relation	T12	T14	NoRel	true	dijeron	corriendo
+Relation	T13	T11	NoRel	true	escucharon	dice
+Relation	T13	T8	NoRel	true	escucharon	bajó
+Relation	T14	T6	NoRel	true	corriendo	cayó
+Relation	T15	T3	NoRel	true	escucharon	despegó
+Relation	T16	T0	NoRel	true	explosión	tuvo
+Relation	T16	T13	NoRel	true	explosión	escucharon
+Relation	T16	T14	NoRel	true	explosión	corriendo
+Relation	T16	T6	NoRel	true	explosión	cayó
+Relation	T2	T8	NoRel	true	registro	bajó
+Relation	T2	T9	NoRel	true	registro	incendió
+Relation	T3	T13	NoRel	true	despegó	escucharon
+Relation	T3	T7	NoRel	true	despegó	estrelló
+Relation	T4	T1	NoRel	true	despegue	dado
+Relation	T4	T12	NoRel	true	despegue	dijeron
+Relation	T4	T9	NoRel	true	despegue	incendió
+Relation	T5	T1	NoRel	true	alzaba	dado
+Relation	T6	T1	NoRel	true	cayó	dado
+Relation	T6	T11	NoRel	true	cayó	dice
+Relation	T6	T3	NoRel	true	cayó	despegó
+Relation	T6	T4	NoRel	true	cayó	despegue
+Relation	T8	T0	NoRel	true	bajó	tuvo
+Relation	T8	T11	NoRel	true	bajó	dice
+Relation	T9	T12	NoRel	true	incendió	dijeron
+Relation	T9	T3	NoRel	true	incendió	despegó

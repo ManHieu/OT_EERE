@@ -1,0 +1,40 @@
+Text	En la línea de Madrid a Irún , entre las estaciones de Robledo de Chavela y Santa María de la Alameda se produce el choque entre una doble composición de automotores TER que desde Madrid se dirigía a La Coruña y Vigo y un tractor de maniobras que circulaba aislado .	El accidente tuvo un balance de 28 víctimas mortales y alrededor de 80 heridos .	- 13 de julio de 1968 .	A la salida de la Estación de Medina del Campo ( Valladolid ) el expreso Coruña_–_Madrid choca con un tren de mercancías .	El accidente causa 9 muertos y más de 60 heridos .
+Event	T0	produce	EVENT	105
+Event	T1	choque	EVENT	116
+Event	T2	composición	EVENT	139
+Event	T3	dirigía	EVENT	190
+Event	T4	tuvo	EVENT	280
+Event	T5	balance	EVENT	288
+Event	T6	heridos	EVENT	338
+Event	T7	salida	EVENT	377
+Event	T8	choca	EVENT	461
+Event	T9	muertos	EVENT	516
+Event	T10	heridos	EVENT	536
+Event	T11	accidente	EVENT	270
+Event	T12	víctimas	EVENT	302
+Event	T13	accidente	EVENT	498
+Relation	T11	T12	CauseEffect	true	accidente	víctimas
+Relation	T12	T11	EffectCause	true	víctimas	accidente
+Relation	T11	T6	CauseEffect	true	accidente	heridos
+Relation	T6	T11	EffectCause	true	heridos	accidente
+Relation	T13	T9	CauseEffect	true	accidente	muertos
+Relation	T9	T13	EffectCause	true	muertos	accidente
+Relation	T13	T10	CauseEffect	true	accidente	heridos
+Relation	T10	T13	EffectCause	true	heridos	accidente
+Relation	T1	T10	NoRel	true	choque	heridos
+Relation	T1	T11	NoRel	true	choque	accidente
+Relation	T1	T9	NoRel	true	choque	muertos
+Relation	T10	T11	NoRel	true	heridos	accidente
+Relation	T10	T5	NoRel	true	heridos	balance
+Relation	T11	T0	NoRel	true	accidente	produce
+Relation	T11	T4	NoRel	true	accidente	tuvo
+Relation	T12	T10	NoRel	true	víctimas	heridos
+Relation	T12	T8	NoRel	true	víctimas	choca
+Relation	T3	T10	NoRel	true	dirigía	heridos
+Relation	T5	T1	NoRel	true	balance	choque
+Relation	T5	T6	NoRel	true	balance	heridos
+Relation	T6	T7	NoRel	true	heridos	salida
+Relation	T7	T1	NoRel	true	salida	choque
+Relation	T7	T11	NoRel	true	salida	accidente
+Relation	T8	T4	NoRel	true	choca	tuvo
+Relation	T9	T3	NoRel	true	muertos	dirigía

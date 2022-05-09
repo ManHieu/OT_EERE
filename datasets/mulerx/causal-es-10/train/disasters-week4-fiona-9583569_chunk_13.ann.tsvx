@@ -1,0 +1,42 @@
+Text	El repentino aumento de jugadores sobrecargó el servidor del juego , que según Willard era « un servidor de Amazon totalmente gratuito , y fue terrible » .	Dicha situación lo obligó a trabajar en tiempos de crisis para resolver rápidamente estos problemas , y llevado a ello , a centrarse en una secuela en lugar de expandir el juego original .	En agosto , InnerSloth abrió una tienda de comercialización para _ Among Us _ .	La popularidad del juego inspiró muchos fan arts y memes de Internet , así como un fenómeno de _ crewsonas _ .	Willard expresó que el contenido creado por fanáticos realmente « es la mejor parte » de hacer _ Among Us , _ y Bromander lo llamó « lo que más me gusta ver » .
+Event	T0	aumento	EVENT	13
+Event	T1	sobrecargó	EVENT	34
+Event	T2	situación	EVENT	162
+Event	T3	obligó	EVENT	175
+Event	T4	trabajar	EVENT	184
+Event	T5	crisis	EVENT	207
+Event	T6	resolver	EVENT	219
+Event	T7	centrarse	EVENT	279
+Event	T8	secuela	EVENT	296
+Event	T9	expandir	EVENT	316
+Event	T10	abrió	EVENT	368
+Event	T11	inspiró	EVENT	450
+Event	T12	memes	EVENT	476
+Event	T13	fenómeno	EVENT	508
+Event	T14	expresó	EVENT	544
+Event	T15	creado	EVENT	569
+Relation	T2	T4	CauseEffect	true	situación	trabajar
+Relation	T4	T2	EffectCause	true	trabajar	situación
+Relation	T0	T14	NoRel	true	aumento	expresó
+Relation	T0	T6	NoRel	true	aumento	resolver
+Relation	T1	T13	NoRel	true	sobrecargó	fenómeno
+Relation	T1	T8	NoRel	true	sobrecargó	secuela
+Relation	T10	T4	NoRel	true	abrió	trabajar
+Relation	T13	T1	NoRel	true	fenómeno	sobrecargó
+Relation	T13	T11	NoRel	true	fenómeno	inspiró
+Relation	T13	T2	NoRel	true	fenómeno	situación
+Relation	T14	T13	NoRel	true	expresó	fenómeno
+Relation	T14	T3	NoRel	true	expresó	obligó
+Relation	T15	T0	NoRel	true	creado	aumento
+Relation	T2	T11	NoRel	true	situación	inspiró
+Relation	T3	T5	NoRel	true	obligó	crisis
+Relation	T4	T10	NoRel	true	trabajar	abrió
+Relation	T4	T3	NoRel	true	trabajar	obligó
+Relation	T6	T12	NoRel	true	resolver	memes
+Relation	T6	T2	NoRel	true	resolver	situación
+Relation	T7	T3	NoRel	true	centrarse	obligó
+Relation	T7	T5	NoRel	true	centrarse	crisis
+Relation	T8	T2	NoRel	true	secuela	situación
+Relation	T9	T1	NoRel	true	expandir	sobrecargó
+Relation	T9	T11	NoRel	true	expandir	inspiró
+Relation	T9	T7	NoRel	true	expandir	centrarse

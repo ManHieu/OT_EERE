@@ -1,0 +1,23 @@
+Text	A medida que se extendió la epidemia , se desalentó el uso del saludo de choque de codos a medida que se ampliaron los consejos sobre el distanciamiento físico , como mantenerse al menos a 2 metros de distancia de otras personas , como una forma de disminuir el riesgo de contraer o propagar la enfermedad .	El Director General de la Organización Mundial de la Salud , Tedros Adhanom Ghebreyesus , informó que un choque de codos era demasiado arriesgado porque coloca a las personas demasiado cerca unas de otras ; recomendó usar un saludo sin contacto , como poner la mano sobre el corazón , desde una distancia de separación de al menos un metro .	En 2009 , los médicos universitarios y el galardonado con el Premio Nobel Peter Agre aprobaron el choque de codos .	La Asociación Americana para el Avance de la Ciencia se unió a la Organización Mundial de la Salud para respaldar el saludo .	Sin embargo , algunas de estas recomendaciones estaban destinadas tanto a generar buen humor como a una buena higiene .
+Event	T0	extendió	EVENT	16
+Event	T1	epidemia	EVENT	28
+Event	T11	enfermedad	EVENT	295
+Event	T12	informó	EVENT	398
+Event	T15	recomendó	EVENT	515
+Event	T18	aprobaron	EVENT	735
+Event	T2	desalentó	EVENT	42
+Event	T20	unió	EVENT	822
+Event	T21	respaldar	EVENT	870
+Event	T7	consejos	EVENT	119
+Relation	T1	T0	SuperSub	true	epidemia	extendió
+Relation	T0	T1	SubSuper	true	extendió	epidemia
+Relation	T0	T11	NoRel	true	extendió	enfermedad
+Relation	T0	T12	NoRel	true	extendió	informó
+Relation	T1	T12	NoRel	true	epidemia	informó
+Relation	T11	T15	NoRel	true	enfermedad	recomendó
+Relation	T12	T20	NoRel	true	informó	unió
+Relation	T20	T12	NoRel	true	unió	informó
+Relation	T21	T1	NoRel	true	respaldar	epidemia
+Relation	T21	T15	NoRel	true	respaldar	recomendó
+Relation	T7	T15	NoRel	true	consejos	recomendó
+Relation	T7	T20	NoRel	true	consejos	unió

@@ -1,0 +1,36 @@
+Text	Ana sel bölgesi , Hırvatistan ile Bosna - Hersek arasında sınırı teşkil eden ve Sırbistan'ın başkenti Belgrad'da Tuna Nehri ile birleşen Sava Nehri ile Bosna - Sırbistan sınırının bir bölümünü oluşturan Drina Nehri bölgesi oldu .	14 Mayıs günü , yoğun yağış dağlık bölgelerde toprağın suya doymasına , derelerin taşmasına ve birçok heyelan zincirinin oluşmasına neden oldu .	15 Mayıs perşembe günü Sava nehri ve birkaç kolunun su seviyesi ani ve kontrolsüzce yükseldi ve nehir kıyısındaki köy ve kasabalarda su baskınları ve taşkınların meydana gelmesine neden oldu .	17 Mayıs pazar günü , yağış bir miktar azaldı ve yardım ve kurtarma çalışmalarının kolaylaşmasını sağladı .	18 Mayıs'ta siklon kuzeybatıya yöneldi .
+Event	T0	yağış	EVENT	252
+Event	T1	doymasına	EVENT	290
+Event	T2	taşmasına	EVENT	312
+Event	T3	oldu	EVENT	368
+Event	T4	yükseldi	EVENT	459
+Event	T5	baskınları	EVENT	511
+Event	T6	oldu	EVENT	561
+Event	T7	yağış	EVENT	590
+Event	T8	azaldı	EVENT	607
+Event	T11	sağladı	EVENT	666
+Event	T12	yöneldi	EVENT	707
+Event	T13	oluşmasına	EVENT	351
+Event	T14	taşkınların	EVENT	525
+Relation	T4	T6	SuperSub	true	yükseldi	oldu
+Relation	T6	T4	SubSuper	true	oldu	yükseldi
+Relation	T0	T14	NoRel	true	yağış	taşkınların
+Relation	T0	T3	NoRel	true	yağış	oldu
+Relation	T0	T6	NoRel	true	yağış	oldu
+Relation	T12	T11	NoRel	true	yöneldi	sağladı
+Relation	T12	T6	NoRel	true	yöneldi	oldu
+Relation	T12	T7	NoRel	true	yöneldi	yağış
+Relation	T13	T14	NoRel	true	oluşmasına	taşkınların
+Relation	T14	T13	NoRel	true	taşkınların	oluşmasına
+Relation	T14	T2	NoRel	true	taşkınların	taşmasına
+Relation	T2	T3	NoRel	true	taşmasına	oldu
+Relation	T2	T4	NoRel	true	taşmasına	yükseldi
+Relation	T2	T7	NoRel	true	taşmasına	yağış
+Relation	T3	T14	NoRel	true	oldu	taşkınların
+Relation	T5	T7	NoRel	true	baskınları	yağış
+Relation	T6	T1	NoRel	true	oldu	doymasına
+Relation	T6	T11	NoRel	true	oldu	sağladı
+Relation	T6	T7	NoRel	true	oldu	yağış
+Relation	T8	T0	NoRel	true	azaldı	yağış
+Relation	T8	T13	NoRel	true	azaldı	oluşmasına
+Relation	T8	T7	NoRel	true	azaldı	yağış

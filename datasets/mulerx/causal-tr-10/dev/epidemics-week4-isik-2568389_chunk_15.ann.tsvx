@@ -1,0 +1,29 @@
+Text	123 vaka daha sonra teyit edildi ve toplam sayı 4.335'e ulaştı .	- İspanya 36 davayı daha doğrulayarak toplam sayısını 120'ye çıkardı .	- İsveç bir vakayı daha doğrulayarak toplam sayısını 15'e çıkardı .	- Tayvan bir vaka daha doğruladı ve toplam 41'e ulaştı .	- Tayland bir vaka daha doğruladı ve toplam sayıyı 43'e çıkardı .
+Event	T0	edildi	EVENT	26
+Event	T1	ulaştı	EVENT	56
+Event	T2	çıkardı	EVENT	126
+Event	T3	çıkardı	EVENT	194
+Event	T4	doğruladı	EVENT	227
+Event	T5	ulaştı	EVENT	252
+Event	T6	doğruladı	EVENT	285
+Event	T7	çıkardı	EVENT	317
+Event	T8	doğrulayarak	EVENT	90
+Event	T9	doğrulayarak	EVENT	160
+Relation	T0	T1	CauseEffect	true	edildi	ulaştı
+Relation	T1	T0	EffectCause	true	ulaştı	edildi
+Relation	T8	T2	CauseEffect	true	doğrulayarak	çıkardı
+Relation	T2	T8	EffectCause	true	çıkardı	doğrulayarak
+Relation	T9	T3	CauseEffect	true	doğrulayarak	çıkardı
+Relation	T3	T9	EffectCause	true	çıkardı	doğrulayarak
+Relation	T4	T5	CauseEffect	true	doğruladı	ulaştı
+Relation	T5	T4	EffectCause	true	ulaştı	doğruladı
+Relation	T6	T7	CauseEffect	true	doğruladı	çıkardı
+Relation	T7	T6	EffectCause	true	çıkardı	doğruladı
+Relation	T0	T4	NoRel	true	edildi	doğruladı
+Relation	T0	T6	NoRel	true	edildi	doğruladı
+Relation	T1	T5	NoRel	true	ulaştı	ulaştı
+Relation	T3	T0	NoRel	true	çıkardı	edildi
+Relation	T4	T1	NoRel	true	doğruladı	ulaştı
+Relation	T5	T0	NoRel	true	ulaştı	edildi
+Relation	T7	T5	NoRel	true	çıkardı	ulaştı
+Relation	T9	T6	NoRel	true	doğrulayarak	doğruladı

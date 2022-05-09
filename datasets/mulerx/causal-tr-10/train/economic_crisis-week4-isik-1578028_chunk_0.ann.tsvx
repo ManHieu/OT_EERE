@@ -1,0 +1,27 @@
+Text	küçükresim | 250px | Ruhr Kızılordusu mensubu milisler Dortmund'da , 1920 RUHR KIZILORDUSU ( Almanca : _ Rote Ruhrarmee _ ) , 50.000 ile 80.000 arası mevcuda sahip , Almanya Komünist Partisi'ne üye sol görüşlü Alman işçilerden oluşan bir komünist silahlı örgüttü .	13 Mart 1920 tarihinde Almanya'nın en zengin bölgesi Ruhr'da Kapp Darbesi'ne tepki olarak kurulmuştu .	14 Mart'taki genel grev çağrısından sonra , anti - komünist Freikorps'u ve hükümete bağlı Reichswehr birliklerini yenilgiye uğrattılar ve ardından Almanya'nın en büyük silahlı işçi ayaklanmasını başlattılar .	Ruhr bölgesindeki orta ve zengin sınıf , komünist bir bir darbenin gerçekleşmesinden korkarken , 300.000 maden işçisi ise Ruhr Kızılordusu'nu destekledi .	Ruhr Kızılordusu'na bağlı grevciler Düsseldorf , Elberfeld ve Essen şehirlerinde hakimiyet sağladıktan yakın bir zaman sonra tüm Ruhr bölgesini kontrol altına aldılar .
+Event	T0	tepki	EVENT	342
+Event	T1	kurulmuştu	EVENT	355
+Event	T2	çağrısından	EVENT	392
+Event	T3	uğrattılar	EVENT	492
+Event	T4	başlattılar	EVENT	563
+Event	T5	destekledi	EVENT	719
+Event	T6	sağladıktan	EVENT	823
+Event	T7	aldılar	EVENT	891
+Event	T8	oluşan	EVENT	227
+Event	T9	KIZILORDUSU	EVENT	79
+Event	T10	korkarken	EVENT	662
+Relation	T0	T1	CauseEffect	true	tepki	kurulmuştu
+Relation	T1	T0	EffectCause	true	kurulmuştu	tepki
+Relation	T0	T9	CauseEffect	true	tepki	KIZILORDUSU
+Relation	T9	T0	EffectCause	true	KIZILORDUSU	tepki
+Relation	T10	T5	CauseEffect	true	korkarken	destekledi
+Relation	T5	T10	EffectCause	true	destekledi	korkarken
+Relation	T0	T6	NoRel	true	tepki	sağladıktan
+Relation	T1	T3	NoRel	true	kurulmuştu	uğrattılar
+Relation	T1	T8	NoRel	true	kurulmuştu	oluşan
+Relation	T2	T0	NoRel	true	çağrısından	tepki
+Relation	T2	T10	NoRel	true	çağrısından	korkarken
+Relation	T2	T7	NoRel	true	çağrısından	aldılar
+Relation	T3	T10	NoRel	true	uğrattılar	korkarken
+Relation	T3	T7	NoRel	true	uğrattılar	aldılar
+Relation	T6	T9	NoRel	true	sağladıktan	KIZILORDUSU

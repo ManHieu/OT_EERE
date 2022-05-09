@@ -1,0 +1,47 @@
+Text	ہندوستان میں انگریزوں کے قانون کی مساوات اور بہتر انتظامی اقدامات کی بدولت اس سوچ کو قتل عام کا دائرہ وادی سندھ تک پھیلانے کا موقع نہ مل سکا ۔	کرم ایجنسی کے بعد باقی قبائل نے بھی انگریز حکومت کا حصہ بننے کا فیصلہ کیا ۔	اس تاریخی عمل جس کا آغاز شیعہ دشمنی سے ہوا ، نے مستقبل میں بننے والے ملک پاکستان کی شمال مغربی سرحد کو متعین کیا ۔	اس تاریخ کا ہی نتیجہ ہے کہ ریاض بسرا سے لیکر ملک اسحاق اور داود بادینی تک جیسے تربیت یافتہ قاتلوں کو قندھار کے دیوبندی علاقوں میں پناہ ملتی رہی ہے ۔	بیسویں صدی کا آغاز فرقہ وارانہ کشیدگی سے ہوا ، فرقہ وارانہ منافرت کا جو بیج شاہ ولی اللہ نے امرا کی جنگ کا فریق بن کر بویا تھا ، وہ غربت اور کم علمی کے دور میں تناور درخت بن چکا تھا ۔
+Event	T0	سوچ	EVENT	78
+Event	T1	پھیلانے	EVENT	115
+Event	T4	عمل	EVENT	229
+Event	T5	آغاز	EVENT	239
+Event	T6	دشمنی	EVENT	249
+Event	T8	بننے	EVENT	278
+Event	T10	آغاز	EVENT	497
+Event	T11	کشیدگی	EVENT	514
+Event	T13	جنگ	EVENT	583
+Event	T14	بن	EVENT	595
+Event	T16	قتل عام	EVENT	85
+Event	T15	حصہ	EVENT	195
+Event	T17	فیصلہ	EVENT	207
+Event	T2	متعین	EVENT	322
+Event	T3	پناہ	EVENT	464
+Event	T7	بن	EVENT	654
+Event	T9	بویا	EVENT	601
+Relation	T17	T15	CauseEffect	true	فیصلہ	حصہ
+Relation	T15	T17	EffectCause	true	حصہ	فیصلہ
+Relation	T6	T4	CauseEffect	true	دشمنی	عمل
+Relation	T4	T6	EffectCause	true	عمل	دشمنی
+Relation	T9	T11	CauseEffect	true	بویا	کشیدگی
+Relation	T11	T9	EffectCause	true	کشیدگی	بویا
+Relation	T9	T7	CauseEffect	true	بویا	بن
+Relation	T7	T9	EffectCause	true	بن	بویا
+Relation	T1	T15	NoRel	true	پھیلانے	حصہ
+Relation	T10	T5	NoRel	true	آغاز	آغاز
+Relation	T11	T1	NoRel	true	کشیدگی	پھیلانے
+Relation	T11	T8	NoRel	true	کشیدگی	بننے
+Relation	T13	T6	NoRel	true	جنگ	دشمنی
+Relation	T14	T17	NoRel	true	بن	فیصلہ
+Relation	T14	T7	NoRel	true	بن	بن
+Relation	T15	T16	NoRel	true	حصہ	قتل عام
+Relation	T16	T4	NoRel	true	قتل عام	عمل
+Relation	T4	T17	NoRel	true	عمل	فیصلہ
+Relation	T4	T9	NoRel	true	عمل	بویا
+Relation	T5	T2	NoRel	true	آغاز	متعین
+Relation	T5	T6	NoRel	true	آغاز	دشمنی
+Relation	T6	T14	NoRel	true	دشمنی	بن
+Relation	T6	T3	NoRel	true	دشمنی	پناہ
+Relation	T7	T1	NoRel	true	بن	پھیلانے
+Relation	T7	T14	NoRel	true	بن	بن
+Relation	T8	T0	NoRel	true	بننے	سوچ
+Relation	T8	T13	NoRel	true	بننے	جنگ
+Relation	T9	T16	NoRel	true	بویا	قتل عام
+Relation	T9	T3	NoRel	true	بویا	پناہ

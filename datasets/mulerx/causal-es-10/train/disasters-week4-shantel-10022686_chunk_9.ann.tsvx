@@ -1,0 +1,40 @@
+Text	Un meteorólogo de la NTSB examinó las condiciones climáticas en el momento del accidente para determinar si el clima fue un factor que contribuyó al accidente .	La NTSB también analizó y desarrolló la transcripción de la grabadora de voz de la cabina .	Los investigadores de la NTSB examinaron y probaron los sistemas antideslizante , freno automático e inversor de empuje en la aeronave .	El interruptor selector de freno automático en la cabina se encontró en la posición " máxima " .	La manija del cono de cola en la cabina principal se había accionado , presumiblemente con fines de evacuación , y el cono de cola trasero se había desprendido .
+Event	T0	examinó	EVENT	26
+Event	T1	accidente	EVENT	79
+Event	T2	determinar	EVENT	94
+Event	T3	contribuyó	EVENT	135
+Event	T4	accidente	EVENT	149
+Event	T5	analizó	EVENT	177
+Event	T6	desarrolló	EVENT	187
+Event	T7	transcripción	EVENT	201
+Event	T8	examinaron	EVENT	283
+Event	T9	probaron	EVENT	296
+Event	T10	empuje	EVENT	366
+Event	T11	encontró	EVENT	450
+Event	T12	accionado	EVENT	546
+Event	T13	evacuación	EVENT	587
+Event	T14	desprendido	EVENT	635
+Relation	T0	T10	NoRel	true	examinó	empuje
+Relation	T0	T8	NoRel	true	examinó	examinaron
+Relation	T1	T0	NoRel	true	accidente	examinó
+Relation	T1	T10	NoRel	true	accidente	empuje
+Relation	T1	T5	NoRel	true	accidente	analizó
+Relation	T10	T12	NoRel	true	empuje	accionado
+Relation	T12	T2	NoRel	true	accionado	determinar
+Relation	T13	T11	NoRel	true	evacuación	encontró
+Relation	T13	T12	NoRel	true	evacuación	accionado
+Relation	T13	T9	NoRel	true	evacuación	probaron
+Relation	T2	T10	NoRel	true	determinar	empuje
+Relation	T2	T11	NoRel	true	determinar	encontró
+Relation	T2	T12	NoRel	true	determinar	accionado
+Relation	T2	T7	NoRel	true	determinar	transcripción
+Relation	T3	T14	NoRel	true	contribuyó	desprendido
+Relation	T4	T0	NoRel	true	accidente	examinó
+Relation	T4	T13	NoRel	true	accidente	evacuación
+Relation	T4	T14	NoRel	true	accidente	desprendido
+Relation	T4	T6	NoRel	true	accidente	desarrolló
+Relation	T6	T3	NoRel	true	desarrolló	contribuyó
+Relation	T6	T9	NoRel	true	desarrolló	probaron
+Relation	T7	T10	NoRel	true	transcripción	empuje
+Relation	T8	T2	NoRel	true	examinaron	determinar
+Relation	T9	T0	NoRel	true	probaron	examinó

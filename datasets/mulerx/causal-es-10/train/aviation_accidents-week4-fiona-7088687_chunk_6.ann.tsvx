@@ -1,0 +1,50 @@
+Text	A mediados de noviembre de 2015 Rusia afirmó que el avión ruso que se estrelló en el Sinaí explotó debido a una bomba a bordo colocada por terroristas , según declaró el jefe del Servicio Federal de Seguridad , Alexánder Bortnikov .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil - Anexo : Accidentes aéreos por número de víctimas mortales	- Vuelo 367 de JAT - Vuelo 772 de UTA - Vuelo 858 de Korean Air Lines - Vuelo 182 de Air India - Vuelo 103 de Pan Am - Vuelo 203 de Avianca	Categoría : Accidentes e incidentes aéreos de 2015 Categoría : Accidentes e incidentes aéreos en Egipto Metrojet Categoría : Atentados terroristas en Egipto Categoría : Atentados terroristas en 2015 Categoría : Historia de la aviación de Rusia Categoría : Accidentes e incidentes de Mayday : catástrofes aéreas	Graph based on CSV file published at : http : / / www.flightradar24.com / blog / crash - of - metrojet - flight - 7k9268 /
+Event	T0	afirmó	EVENT	38
+Event	T1	estrelló	EVENT	70
+Event	T2	colocada	EVENT	126
+Event	T3	declaró	EVENT	159
+Event	T4	Accidente	EVENT	235
+Event	T5	Accidentes	EVENT	267
+Event	T6	Accidentes	EVENT	331
+Event	T7	incidentes	EVENT	344
+Event	T8	Accidentes	EVENT	395
+Event	T9	incidentes	EVENT	610
+Event	T10	Accidentes	EVENT	648
+Event	T11	incidentes	EVENT	661
+Event	T12	Atentados	EVENT	710
+Event	T13	Atentados	EVENT	754
+Event	T14	Accidentes	EVENT	841
+Event	T15	incidentes	EVENT	854
+Event	T16	published	EVENT	920
+Event	T17	crash	EVENT	977
+Event	T18	explotó	EVENT	91
+Relation	T2	T18	CauseEffect	true	colocada	explotó
+Relation	T18	T2	EffectCause	true	explotó	colocada
+Relation	T18	T1	CauseEffect	true	explotó	estrelló
+Relation	T1	T18	EffectCause	true	estrelló	explotó
+Relation	T0	T12	NoRel	true	afirmó	Atentados
+Relation	T10	T18	NoRel	true	Accidentes	explotó
+Relation	T10	T2	NoRel	true	Accidentes	colocada
+Relation	T11	T0	NoRel	true	incidentes	afirmó
+Relation	T11	T12	NoRel	true	incidentes	Atentados
+Relation	T11	T13	NoRel	true	incidentes	Atentados
+Relation	T11	T18	NoRel	true	incidentes	explotó
+Relation	T12	T10	NoRel	true	Atentados	Accidentes
+Relation	T13	T14	NoRel	true	Atentados	Accidentes
+Relation	T13	T2	NoRel	true	Atentados	colocada
+Relation	T15	T12	NoRel	true	incidentes	Atentados
+Relation	T15	T2	NoRel	true	incidentes	colocada
+Relation	T16	T5	NoRel	true	published	Accidentes
+Relation	T17	T6	NoRel	true	crash	Accidentes
+Relation	T18	T13	NoRel	true	explotó	Atentados
+Relation	T2	T1	NoRel	true	colocada	estrelló
+Relation	T4	T11	NoRel	true	Accidente	incidentes
+Relation	T4	T7	NoRel	true	Accidente	incidentes
+Relation	T5	T10	NoRel	true	Accidentes	Accidentes
+Relation	T5	T2	NoRel	true	Accidentes	colocada
+Relation	T6	T13	NoRel	true	Accidentes	Atentados
+Relation	T6	T4	NoRel	true	Accidentes	Accidente
+Relation	T7	T12	NoRel	true	incidentes	Atentados
+Relation	T7	T15	NoRel	true	incidentes	incidentes
+Relation	T8	T15	NoRel	true	Accidentes	incidentes
+Relation	T8	T16	NoRel	true	Accidentes	published

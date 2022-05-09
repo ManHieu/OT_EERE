@@ -1,0 +1,41 @@
+Text	Takip eden panikte , birkaç Roma lejyonu , Amida'ya doğru Pers ilerleyişi düzensizce kaçtı .	Bunlara Legio XXX Ulpia Victrix ve Legio X Fretensis dahildir .	Görünen o ki , Sasani planı Nisibis gibi zorlu kaleleri atlamak ve ardından Suriye'ye doğru ilerlemekti .	Güçleri Amida'ya yaklaştığında , Sasaniler şehre saldırmaya teşvik edildi .	Bu , Amida'nın savunmalarını kontrol ederken , Grumbates oğlu şehrin garnizonunun attığı bir okla vurularak öldürülmesi ile ortaya çıktı .
+Event	T0	Takip	EVENT	0
+Event	T1	panikte	EVENT	11
+Event	T2	kaçtı	EVENT	85
+Event	T3	atlamak	EVENT	213
+Event	T4	ilerlemekti	EVENT	249
+Event	T5	attığı	EVENT	421
+Event	T6	öldürülmesi	EVENT	447
+Event	T7	çıktı	EVENT	470
+Event	T8	ilerleyişi	EVENT	63
+Event	T9	yaklaştığında	EVENT	280
+Event	T10	edildi	EVENT	330
+Event	T11	savunmalarını	EVENT	354
+Event	T12	ederken	EVENT	376
+Event	T13	vurularak	EVENT	437
+Relation	T13	T6	CauseEffect	true	vurularak	öldürülmesi
+Relation	T6	T13	EffectCause	true	öldürülmesi	vurularak
+Relation	T0	T10	NoRel	true	Takip	edildi
+Relation	T0	T9	NoRel	true	Takip	yaklaştığında
+Relation	T1	T11	NoRel	true	panikte	savunmalarını
+Relation	T1	T7	NoRel	true	panikte	çıktı
+Relation	T1	T8	NoRel	true	panikte	ilerleyişi
+Relation	T10	T4	NoRel	true	edildi	ilerlemekti
+Relation	T10	T5	NoRel	true	edildi	attığı
+Relation	T10	T8	NoRel	true	edildi	ilerleyişi
+Relation	T12	T5	NoRel	true	ederken	attığı
+Relation	T12	T6	NoRel	true	ederken	öldürülmesi
+Relation	T4	T0	NoRel	true	ilerlemekti	Takip
+Relation	T4	T13	NoRel	true	ilerlemekti	vurularak
+Relation	T6	T0	NoRel	true	öldürülmesi	Takip
+Relation	T6	T1	NoRel	true	öldürülmesi	panikte
+Relation	T6	T7	NoRel	true	öldürülmesi	çıktı
+Relation	T7	T0	NoRel	true	çıktı	Takip
+Relation	T7	T10	NoRel	true	çıktı	edildi
+Relation	T7	T2	NoRel	true	çıktı	kaçtı
+Relation	T7	T6	NoRel	true	çıktı	öldürülmesi
+Relation	T7	T9	NoRel	true	çıktı	yaklaştığında
+Relation	T8	T13	NoRel	true	ilerleyişi	vurularak
+Relation	T8	T5	NoRel	true	ilerleyişi	attığı
+Relation	T9	T2	NoRel	true	yaklaştığında	kaçtı
+Relation	T9	T5	NoRel	true	yaklaştığında	attığı

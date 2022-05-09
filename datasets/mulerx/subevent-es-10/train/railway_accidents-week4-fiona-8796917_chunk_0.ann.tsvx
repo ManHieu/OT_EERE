@@ -1,0 +1,37 @@
+Text	El ACCIDENTE FERROVIARIO DEL PUENTE GREAT BELT se produjo el 2 de enero de 2019 en el enlace fijo de Gran Belt en Dinamarca cuando un tren de pasajeros colisionó con un semirremolque desde o sobre un tren de carga que pasaba .	The Great Belt Fixed Link es una conexión puente-túnel de 18 km ( 11 millas ) entre las islas danesas de Zelanda y Funen , y el accidente ocurrió en el West Bridge , cerca de Funen .	El accidente ocurrió durante una tormenta , que había cerrado el puente para el tráfico rodado , pero no para el tráfico ferroviario .	Ocho pasajeros murieron , todos ellos ciudadanos daneses , y 16 resultaron heridos , lo que lo convierte en el accidente ferroviario más mortal de Dinamarca desde 1988 .	El accidente está bajo investigación , y se desconoce la causa exacta .
+Event	T0	produjo	EVENT	50
+Event	T1	colisionó	EVENT	152
+Event	T2	pasaba	EVENT	218
+Event	T3	conexión	EVENT	260
+Event	T4	ocurrió	EVENT	365
+Event	T5	ocurrió	EVENT	423
+Event	T6	tormenta	EVENT	443
+Event	T7	cerrado	EVENT	464
+Event	T8	murieron	EVENT	560
+Event	T9	heridos	EVENT	620
+Event	T10	convierte	EVENT	640
+Event	T11	accidente	EVENT	656
+Event	T12	mortal	EVENT	682
+Event	T13	accidente	EVENT	718
+Event	T14	investigación	EVENT	738
+Event	T15	ACCIDENTE	EVENT	3
+Relation	T0	T6	NoRel	true	produjo	tormenta
+Relation	T10	T7	NoRel	true	convierte	cerrado
+Relation	T11	T12	NoRel	true	accidente	mortal
+Relation	T13	T1	NoRel	true	accidente	colisionó
+Relation	T13	T2	NoRel	true	accidente	pasaba
+Relation	T15	T2	NoRel	true	ACCIDENTE	pasaba
+Relation	T15	T7	NoRel	true	ACCIDENTE	cerrado
+Relation	T3	T0	NoRel	true	conexión	produjo
+Relation	T3	T9	NoRel	true	conexión	heridos
+Relation	T4	T9	NoRel	true	ocurrió	heridos
+Relation	T5	T0	NoRel	true	ocurrió	produjo
+Relation	T5	T15	NoRel	true	ocurrió	ACCIDENTE
+Relation	T5	T8	NoRel	true	ocurrió	murieron
+Relation	T6	T12	NoRel	true	tormenta	mortal
+Relation	T6	T15	NoRel	true	tormenta	ACCIDENTE
+Relation	T6	T8	NoRel	true	tormenta	murieron
+Relation	T7	T10	NoRel	true	cerrado	convierte
+Relation	T7	T12	NoRel	true	cerrado	mortal
+Relation	T7	T15	NoRel	true	cerrado	ACCIDENTE
+Relation	T9	T13	NoRel	true	heridos	accidente

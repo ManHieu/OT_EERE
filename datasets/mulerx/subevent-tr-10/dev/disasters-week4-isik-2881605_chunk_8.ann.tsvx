@@ -1,0 +1,12 @@
+Text	Şehrin belediye başkanı , şehrin yarısının yıkıldığını söyledi .	Glina yakınlarındaki Majske Poljane'de evleri çöktükten sonra 20 yaşındaki bir adam ve babası öldü .	Majske Poljane , depremden tüm köy ve şehirlerden daha çok etkilenen yer oldu .	Yerel bir kilise yıkıldıktan sonra Žažina'da da bir kişi ölü bulundu .	- - Sırbistan cumhurbaşkanı Aleksandar Vučić , Sırbistan'ın Hırvatistan'a hem mali hem de teknik olarak yardım etmeye hazır olduğunu açıkladı .
+Event	T0	söyledi	EVENT	55
+Event	T1	çöktükten	EVENT	111
+Event	T2	öldü	EVENT	159
+Event	T3	depremden	EVENT	183
+Event	T4	yıkıldıktan	EVENT	263
+Event	T5	bulundu	EVENT	307
+Event	T6	açıkladı	EVENT	450
+Event	T7	oldu	EVENT	239
+Relation	T4	T0	NoRel	true	yıkıldıktan	söyledi
+Relation	T4	T2	NoRel	true	yıkıldıktan	öldü
+Relation	T4	T3	NoRel	true	yıkıldıktan	depremden

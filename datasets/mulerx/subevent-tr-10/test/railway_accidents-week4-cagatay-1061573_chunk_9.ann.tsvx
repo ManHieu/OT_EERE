@@ -1,0 +1,26 @@
+Text	- 12 Haziran , 1985 - Moshav Habonim hemzemin geçit felaketi – Bir yolcu treni , okul çocuklarını taşıyan bir otobüsle çarpıştı .	En az yirmi iki kişi öldü ve on yedi kişi yaralandı .	- 17 Ağustos , 2000 - Kisumu’de altı ölü , bir yük treninin sabahın işlek saatinde hareketli hemzemin geçitte tıka basa dolu bir otobüsle çarpışma sonrası .	- 1975 - Cuautitlan hemzemin geçit kazası — Bir Meksiko - Ciudad Juárez yolcu treni , bir ekspres otobüse çarptı .	En az yirmi dokuz kişi öldü ve otuz iki kişi yaralandı , 8 Şubat , 1975 .
+Event	T0	felaketi	EVENT	52
+Event	T1	çarpıştı	EVENT	119
+Event	T2	öldü	EVENT	151
+Event	T3	yaralandı	EVENT	172
+Event	T4	ölü	EVENT	221
+Event	T5	kazası	EVENT	376
+Event	T6	çarptı	EVENT	447
+Event	T7	öldü	EVENT	479
+Event	T8	yaralandı	EVENT	501
+Event	T9	çarpışma	EVENT	322
+Relation	T0	T1	SuperSub	true	felaketi	çarpıştı
+Relation	T1	T0	SubSuper	true	çarpıştı	felaketi
+Relation	T0	T2	SuperSub	true	felaketi	öldü
+Relation	T2	T0	SubSuper	true	öldü	felaketi
+Relation	T0	T3	SuperSub	true	felaketi	yaralandı
+Relation	T3	T0	SubSuper	true	yaralandı	felaketi
+Relation	T5	T6	SuperSub	true	kazası	çarptı
+Relation	T6	T5	SubSuper	true	çarptı	kazası
+Relation	T0	T8	NoRel	true	felaketi	yaralandı
+Relation	T2	T4	NoRel	true	öldü	ölü
+Relation	T4	T1	NoRel	true	ölü	çarpıştı
+Relation	T5	T9	NoRel	true	kazası	çarpışma
+Relation	T6	T8	NoRel	true	çarptı	yaralandı
+Relation	T6	T9	NoRel	true	çarptı	çarpışma
+Relation	T8	T4	NoRel	true	yaralandı	ölü

@@ -1,0 +1,25 @@
+Text	7 اکتوبر 2001ء کو امریکا نے افغان طالبان پر حملہ کر دیا ۔	پاکستان کی حکومت نے القاعدہ کی جنگ اپنے سر لینے کے بجا_ئے امریکا کو راستہ دینے کا فیصلہ کیا ۔	مفتی نظام الدین شامزئی نے پاکستانی ریاست کے خلاف مسلح جہاد کا فتویٰ جاری کیا	مفتی نظام الدین شامزئی صاحب کا پاکستانی تاریخ کا رخ موڑنے والا فتویٰ حسب ذیل ہے : ۔	أ‌۔ تمام مسلمانوں پر جہاد فرض ہو گیا ہے کیونکہ موجودہ صورت حال میں صرف افغانستان کے آس پاس کے مسلمان امارتِ اسلامی افغانستان کا دفاع نہیں کرسکتے ہیں اور یہودیوں اور امریکا کا اصل ہدف امارتِ اسلامی افغانستان کو ختم کرنا ہے
+Event	T0	حملہ	EVENT	44
+Event	T2	جنگ	EVENT	89
+Event	T3	لینے	EVENT	101
+Event	T4	دینے	EVENT	132
+Event	T5	جہاد	EVENT	206
+Event	T6	موڑنے	EVENT	281
+Event	T7	فتویٰ	EVENT	292
+Event	T8	ختم	EVENT	523
+Event	T1	فیصلہ	EVENT	140
+Event	T9	فتویٰ	EVENT	214
+Event	T10	فرض	EVENT	339
+Event	T11	دفاع	EVENT	441
+Relation	T0	T7	NoRel	true	حملہ	فتویٰ
+Relation	T0	T9	NoRel	true	حملہ	فتویٰ
+Relation	T1	T4	NoRel	true	فیصلہ	دینے
+Relation	T10	T7	NoRel	true	فرض	فتویٰ
+Relation	T2	T10	NoRel	true	جنگ	فرض
+Relation	T2	T5	NoRel	true	جنگ	جہاد
+Relation	T3	T9	NoRel	true	لینے	فتویٰ
+Relation	T5	T1	NoRel	true	جہاد	فیصلہ
+Relation	T6	T5	NoRel	true	موڑنے	جہاد
+Relation	T7	T4	NoRel	true	فتویٰ	دینے
+Relation	T7	T8	NoRel	true	فتویٰ	ختم
+Relation	T8	T4	NoRel	true	ختم	دینے

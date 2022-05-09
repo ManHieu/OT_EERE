@@ -1,0 +1,45 @@
+Text	El ACCIDENTE DE COMPAGNIE AFRICAINE D'AVIATION EN 2013 fue un servicio de carga con Fokker 50 operado para esa aerolínea que se estrelló durante una aproximación con mala meteorología al Aeropuerto de Goma , en la República Democrática del Congo , el 4 de marzo de 2013 .	Había nueve ocupantes a bordo del avón ; seis perecieron en el accidente .	No se registraron muertes en tierra , pese a que el avión se estrelló en una zona muy poblada de la ciudad de Goma .	[ El avión implicado en el accidente visto en aproximación al Aeropuerto de Ámsterdam Schiphol en 2006 portando la librea de KLM Cityhopper ; antes de ser registrado como 9Q-CBD en marzo de 2010 .	] El avión implicado en el accidente era un Fokker 50 bimotor turbohélice , registro 9Q-CBD , que estaba impulsado por dos plantas motoras PWC PW125B y qu efectuó su vuelo inaugural el 9 de diciembre de 1992 con registro PH-LXJ .
+Event	T0	ACCIDENTE	EVENT	3
+Event	T1	servicio	EVENT	62
+Event	T2	carga	EVENT	74
+Event	T3	operado	EVENT	94
+Event	T4	aproximación	EVENT	149
+Event	T5	perecieron	EVENT	318
+Event	T6	accidente	EVENT	335
+Event	T7	muertes	EVENT	365
+Event	T8	estrelló	EVENT	408
+Event	T9	aproximación	EVENT	510
+Event	T10	registrado	EVENT	619
+Event	T11	implicado	EVENT	672
+Event	T12	accidente	EVENT	688
+Event	T13	registro	EVENT	737
+Event	T14	impulsado	EVENT	766
+Event	T15	efectuó	EVENT	816
+Event	T16	inaugural	EVENT	833
+Event	T17	registro	EVENT	873
+Relation	T6	T5	CauseEffect	true	accidente	perecieron
+Relation	T5	T6	EffectCause	true	perecieron	accidente
+Relation	T0	T1	NoRel	true	ACCIDENTE	servicio
+Relation	T0	T12	NoRel	true	ACCIDENTE	accidente
+Relation	T0	T5	NoRel	true	ACCIDENTE	perecieron
+Relation	T1	T0	NoRel	true	servicio	ACCIDENTE
+Relation	T1	T8	NoRel	true	servicio	estrelló
+Relation	T10	T2	NoRel	true	registrado	carga
+Relation	T10	T9	NoRel	true	registrado	aproximación
+Relation	T11	T0	NoRel	true	implicado	ACCIDENTE
+Relation	T11	T15	NoRel	true	implicado	efectuó
+Relation	T15	T10	NoRel	true	efectuó	registrado
+Relation	T15	T13	NoRel	true	efectuó	registro
+Relation	T16	T5	NoRel	true	inaugural	perecieron
+Relation	T17	T5	NoRel	true	registro	perecieron
+Relation	T17	T6	NoRel	true	registro	accidente
+Relation	T17	T7	NoRel	true	registro	muertes
+Relation	T3	T12	NoRel	true	operado	accidente
+Relation	T4	T15	NoRel	true	aproximación	efectuó
+Relation	T4	T7	NoRel	true	aproximación	muertes
+Relation	T5	T8	NoRel	true	perecieron	estrelló
+Relation	T5	T9	NoRel	true	perecieron	aproximación
+Relation	T8	T10	NoRel	true	estrelló	registrado
+Relation	T8	T9	NoRel	true	estrelló	aproximación
+Relation	T9	T14	NoRel	true	aproximación	impulsado
+Relation	T9	T3	NoRel	true	aproximación	operado

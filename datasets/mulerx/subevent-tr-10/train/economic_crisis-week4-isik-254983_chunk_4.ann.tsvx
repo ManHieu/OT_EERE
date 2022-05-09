@@ -1,0 +1,32 @@
+Text	Paul von Hindenburg , 30 Ocak 1933 tarihinde Adolf Hitler'i Şansölye olarak ataması ile hatırlanır .	Bu sayede Nasyonal Sosyalist Alman İşçi Partisi'nin iktidara yükselişinde önemli rol oynamıştır .	Hindenburg şahsen Hitler'i hor görmekte , onu küçümseyerek defalarca " Bohem Onbaşı " olarak söz etmekteydi .	Hitler'in taleplerini defalarca reddetmiş fakat zorla ve baskı ile şansölye olarak Hitler'i tayin etmiştir .	84 yaşında ve sağlık durumu kötü olmasına rağmen Adolf Hitler'i yenebilecek tek aday olarak kabul edildiği gibi , Hindenburg , 1932 yılında SPD'nin ( Sosyal Demokrat Parti ) desteği ile yeniden Cumhurbaşkanı seçildi .
+Event	T1	hatırlanır	EVENT	88
+Event	T3	oynamıştır	EVENT	186
+Event	T4	reddetmiş	EVENT	341
+Event	T5	baskı	EVENT	366
+Event	T7	desteği	EVENT	592
+Event	T8	seçildi	EVENT	626
+Event	T2	ataması	EVENT	76
+Event	T9	etmekteydi	EVENT	296
+Event	T10	görmekte	EVENT	230
+Event	T11	küçümseyerek	EVENT	245
+Event	T12	taleplerini	EVENT	319
+Event	T13	etmiştir	EVENT	407
+Relation	T1	T10	NoRel	true	hatırlanır	görmekte
+Relation	T1	T3	NoRel	true	hatırlanır	oynamıştır
+Relation	T1	T7	NoRel	true	hatırlanır	desteği
+Relation	T10	T12	NoRel	true	görmekte	taleplerini
+Relation	T10	T3	NoRel	true	görmekte	oynamıştır
+Relation	T10	T7	NoRel	true	görmekte	desteği
+Relation	T11	T13	NoRel	true	küçümseyerek	etmiştir
+Relation	T11	T3	NoRel	true	küçümseyerek	oynamıştır
+Relation	T11	T4	NoRel	true	küçümseyerek	reddetmiş
+Relation	T12	T4	NoRel	true	taleplerini	reddetmiş
+Relation	T2	T10	NoRel	true	ataması	görmekte
+Relation	T2	T11	NoRel	true	ataması	küçümseyerek
+Relation	T2	T13	NoRel	true	ataması	etmiştir
+Relation	T2	T4	NoRel	true	ataması	reddetmiş
+Relation	T2	T5	NoRel	true	ataması	baskı
+Relation	T5	T3	NoRel	true	baskı	oynamıştır
+Relation	T7	T9	NoRel	true	desteği	etmekteydi
+Relation	T9	T11	NoRel	true	etmekteydi	küçümseyerek
+Relation	T9	T2	NoRel	true	etmekteydi	ataması

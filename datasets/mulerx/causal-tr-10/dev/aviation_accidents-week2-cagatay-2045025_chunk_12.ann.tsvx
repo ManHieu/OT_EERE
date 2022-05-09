@@ -1,0 +1,33 @@
+Text	Atlayışları sırasında muhalifler tarafından ateş açıldı .	Paraşütle atlayan pilotlardan biri Suriye Türkmen Ordusu kontrolündeki Türkmen Dağı'na düştü .	Ölü bedeni Suriye Türkmen Ordusu'na mensup 10. Tümen tarafından bulundu .	Rusya Genelkurmay Başkanlığı yaptığı açıklama ile Suriye sınırları içerisinde karadan açılan ateş sonucunda paraşütle atlayan iki pilottan birinin öldürüldüğünü onayladı .	Diğer pilot ise Ensar - üş Şam kontrolündeki Kürt Dağı'na düştü .
+Event	T0	Atlayışları	EVENT	0
+Event	T11	öldürüldüğünü	EVENT	374
+Event	T2	düştü	EVENT	145
+Event	T3	Ölü	EVENT	153
+Event	T4	bulundu	EVENT	217
+Event	T5	açıklama	EVENT	264
+Event	T6	atlayan	EVENT	345
+Event	T7	onayladı	EVENT	388
+Event	T8	düştü	EVENT	457
+Event	T9	atlayan	EVENT	68
+Relation	T9	T2	CauseEffect	true	atlayan	düştü
+Relation	T2	T9	EffectCause	true	düştü	atlayan
+Relation	T2	T3	CauseEffect	true	düştü	Ölü
+Relation	T3	T2	EffectCause	true	Ölü	düştü
+Relation	T2	T4	CauseEffect	true	düştü	bulundu
+Relation	T4	T2	EffectCause	true	bulundu	düştü
+Relation	T11	T7	CauseEffect	true	öldürüldüğünü	onayladı
+Relation	T7	T11	EffectCause	true	onayladı	öldürüldüğünü
+Relation	T6	T8	CauseEffect	true	atlayan	düştü
+Relation	T8	T6	EffectCause	true	düştü	atlayan
+Relation	T0	T8	CauseEffect	true	Atlayışları	düştü
+Relation	T8	T0	EffectCause	true	düştü	Atlayışları
+Relation	T0	T2	CauseEffect	true	Atlayışları	düştü
+Relation	T2	T0	EffectCause	true	düştü	Atlayışları
+Relation	T6	T2	CauseEffect	true	atlayan	düştü
+Relation	T2	T6	EffectCause	true	düştü	atlayan
+Relation	T9	T8	CauseEffect	true	atlayan	düştü
+Relation	T8	T9	EffectCause	true	düştü	atlayan
+Relation	T2	T5	NoRel	true	düştü	açıklama
+Relation	T4	T5	NoRel	true	bulundu	açıklama
+Relation	T5	T8	NoRel	true	açıklama	düştü
+Relation	T9	T4	NoRel	true	atlayan	bulundu

@@ -1,0 +1,24 @@
+Text	Ancak Stănculescu , Çavuşesku'nun bilgisi olmadan birliklerin karargahlarına geri dönmesini emretti ve Çavuşesku'yu helikopterle ayrılmaya ikna etti , böylece diktatörü kaçak yaptı .	Aynı anda , öfkeli protestocular Komünist Parti karargahını basmaya başladılar ; Stănculescu ve emrindeki askerler onlara karşı çıkmadı .	Çavuşesku'nun emirlerini yerine getirmeyi reddeden Stănculescu , diktatörlüğün devrilmesinde merkezi bir rol oynadı .	Öğleden sonra , Stănculescu , Ion Iliescu'nun siyasi grubunu , son olayların ardından iktidar için çabalayan diğerleri arasından " seçti " .	Çavuşesku'nun kalabalığa hitap etmeye yönelik ikinci başarısız girişiminin ardından , o ve karısı Elena çatıya giden bir asansöre bindiler .
+Event	T0	emretti	EVENT	92
+Event	T1	etti	EVENT	144
+Event	T2	yaptı	EVENT	175
+Event	T3	devrilmesinde	EVENT	400
+Event	T4	oynadı	EVENT	430
+Event	T5	seçti	EVENT	570
+Event	T7	girişiminin	EVENT	643
+Event	T8	bindiler	EVENT	710
+Event	T9	başladılar	EVENT	251
+Event	T10	emirlerini	EVENT	335
+Event	T11	reddeden	EVENT	363
+Relation	T0	T9	NoRel	true	emretti	başladılar
+Relation	T10	T1	NoRel	true	emirlerini	etti
+Relation	T10	T7	NoRel	true	emirlerini	girişiminin
+Relation	T11	T9	NoRel	true	reddeden	başladılar
+Relation	T2	T1	NoRel	true	yaptı	etti
+Relation	T3	T2	NoRel	true	devrilmesinde	yaptı
+Relation	T3	T4	NoRel	true	devrilmesinde	oynadı
+Relation	T4	T3	NoRel	true	oynadı	devrilmesinde
+Relation	T5	T0	NoRel	true	seçti	emretti
+Relation	T7	T9	NoRel	true	girişiminin	başladılar
+Relation	T9	T10	NoRel	true	başladılar	emirlerini
+Relation	T9	T3	NoRel	true	başladılar	devrilmesinde

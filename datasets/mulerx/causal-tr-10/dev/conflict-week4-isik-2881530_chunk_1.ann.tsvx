@@ -1,0 +1,47 @@
+Text	Aşağıdakiler reddettiklerinde Sovyet askerleri tarafından kanala atılan benzin , pentaeritritol tetranitrat ve trinitrotoluen karışımının yol açtığı patlamada diri diri yakılarak öldürüldüler .	Kanalda saklanan insanlar ya askeriyeye sürülmelerini engellemek ya da Sovyet saldırılarından korktukları için saklanıyorlardı .	Katliamda çocuklar , yaşlılar ve savaşçılar dahil 105 kişi öldürüldü .	Kurbanların 61'i köylülerdi .	Yüzlerce Kızıl Ordu askeri , herhangi bir savaşçının köyü savunmak için müdahale edip etmeyeceğini görmek için köyde kaldı .
+Event	T0	reddettiklerinde	EVENT	13
+Event	T1	atılan	EVENT	65
+Event	T2	öldürüldüler	EVENT	179
+Event	T3	sürülmelerini	EVENT	234
+Event	T4	Katliamda	EVENT	323
+Event	T5	öldürüldü	EVENT	382
+Event	T6	müdahale	EVENT	496
+Event	T7	görmek	EVENT	523
+Event	T8	kaldı	EVENT	541
+Event	T9	patlamada	EVENT	149
+Event	T10	yakılarak	EVENT	169
+Event	T11	saklanan	EVENT	202
+Event	T12	saldırılarından	EVENT	272
+Event	T13	saklanıyorlardı	EVENT	305
+Event	T14	engellemek	EVENT	248
+Relation	T0	T1	CauseEffect	true	reddettiklerinde	atılan
+Relation	T1	T0	EffectCause	true	atılan	reddettiklerinde
+Relation	T1	T9	CauseEffect	true	atılan	patlamada
+Relation	T9	T1	EffectCause	true	patlamada	atılan
+Relation	T9	T10	CauseEffect	true	patlamada	yakılarak
+Relation	T10	T9	EffectCause	true	yakılarak	patlamada
+Relation	T10	T2	CauseEffect	true	yakılarak	öldürüldüler
+Relation	T2	T10	EffectCause	true	öldürüldüler	yakılarak
+Relation	T1	T4	CauseEffect	true	atılan	Katliamda
+Relation	T4	T1	EffectCause	true	Katliamda	atılan
+Relation	T4	T5	CauseEffect	true	Katliamda	öldürüldü
+Relation	T5	T4	EffectCause	true	öldürüldü	Katliamda
+Relation	T0	T10	NoRel	true	reddettiklerinde	yakılarak
+Relation	T0	T11	NoRel	true	reddettiklerinde	saklanan
+Relation	T0	T13	NoRel	true	reddettiklerinde	saklanıyorlardı
+Relation	T0	T14	NoRel	true	reddettiklerinde	engellemek
+Relation	T0	T7	NoRel	true	reddettiklerinde	görmek
+Relation	T1	T8	NoRel	true	atılan	kaldı
+Relation	T10	T6	NoRel	true	yakılarak	müdahale
+Relation	T11	T0	NoRel	true	saklanan	reddettiklerinde
+Relation	T11	T7	NoRel	true	saklanan	görmek
+Relation	T12	T0	NoRel	true	saldırılarından	reddettiklerinde
+Relation	T12	T5	NoRel	true	saldırılarından	öldürüldü
+Relation	T13	T1	NoRel	true	saklanıyorlardı	atılan
+Relation	T2	T3	NoRel	true	öldürüldüler	sürülmelerini
+Relation	T3	T7	NoRel	true	sürülmelerini	görmek
+Relation	T5	T1	NoRel	true	öldürüldü	atılan
+Relation	T7	T8	NoRel	true	görmek	kaldı
+Relation	T8	T12	NoRel	true	kaldı	saldırılarından
+Relation	T8	T3	NoRel	true	kaldı	sürülmelerini
+Relation	T9	T8	NoRel	true	patlamada	kaldı

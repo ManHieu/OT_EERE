@@ -1,0 +1,23 @@
+Text	دوسری طرف دیوبندی علما مولانا نور الحسن بخاری ، مولانا دوست محمد قریشی ، مولانا عبد الستار تونسوی دیوبندی وغیرہ نے پاکستان بھر میں شیعہ مخالف جلسے کیے اور لوگوں کو فسادات کے لیے اکسایا ۔	لہٰذا قیام پاکستان کے بعد ہی شیعوں پر حملے شروع ہو گئے ۔	1948ء میں روزنامہ احسان نے اپنے اداریے میں شیعوں کے عقائد اور ثقافت پر تنقید کی اور ان کو تلقین کی کہ انگریز دور کو بھول کر نئے ملک میں مسلمانوں کی طرح رہنا سیکھیں ۔	اس اخبار کو سرکاری اداروں میں بھی منگوایا جاتا تھا ، چنانچہ اس اداریے کے خلاف شیعوں نے ملک گیر احتجاج کیا جس کے نتیجے میں حکومت نے نفرت پھیلانے کے جرم میں اخبار پر تین ہزار روپیہ جرمانہ عائد کیا ۔	1949ء میں چوٹی زیریں اور 1950ء میں نارووال میں عزاداری پر حملے ہوئے ۔
+Event	T0	کیے	EVENT	147
+Event	T1	فسادات	EVENT	164
+Event	T2	اکسایا	EVENT	178
+Event	T3	قیام	EVENT	193
+Event	T4	شروع	EVENT	230
+Event	T5	گئے	EVENT	238
+Event	T6	جس	EVENT	516
+Event	T7	نتیجے	EVENT	522
+Event	T8	پھیلانے	EVENT	546
+Event	T9	ہوئے	EVENT	670
+Relation	T1	T2	SuperSub	true	فسادات	اکسایا
+Relation	T2	T1	SubSuper	true	اکسایا	فسادات
+Relation	T1	T4	SuperSub	true	فسادات	شروع
+Relation	T4	T1	SubSuper	true	شروع	فسادات
+Relation	T1	T0	NoRel	true	فسادات	کیے
+Relation	T1	T3	NoRel	true	فسادات	قیام
+Relation	T2	T5	NoRel	true	اکسایا	گئے
+Relation	T2	T9	NoRel	true	اکسایا	ہوئے
+Relation	T4	T7	NoRel	true	شروع	نتیجے
+Relation	T5	T1	NoRel	true	گئے	فسادات
+Relation	T6	T1	NoRel	true	جس	فسادات
+Relation	T6	T3	NoRel	true	جس	قیام

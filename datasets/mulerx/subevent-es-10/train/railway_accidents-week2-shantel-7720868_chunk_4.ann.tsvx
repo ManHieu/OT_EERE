@@ -1,0 +1,29 @@
+Text	En el año 2009 se estrenó el documental _ El largo viaje , _ dirigido por el cineasta vasco Sabin Egilior , que relata la historia del accidente .	- Compañía de los Ferrocarriles de Madrid a Zaragoza y Alicante . Libros de Actas del Consejo de Administración , segundo semestre de 1937 , folios 96 y 97 , Expediente L-446 , Archivo Histórico Ferroviario , Fundación de los Ferrocarriles Españoles , Madrid .	- _ La Memoria , _ programa 113 , emitido el 20 de noviembre de 1937 en Radio Andalucía , e información y acceso al audio del programa en los blogs de Canal Sur Radio .	Categoría : Alanís Alanis Categoría : Desastres en 1937 Categoría : España en 1937 Categoría : Guerra civil española en la provincia de Sevilla	Se trataba de una locomotora perteneciente a la serie 1101 -1220 del MZA , renumerada en tiempos de RENFE como 240-2109 .
+Event	T0	estrenó	EVENT	18
+Event	T10	renumerada	EVENT	796
+Event	T2	dirigido	EVENT	61
+Event	T3	relata	EVENT	112
+Event	T4	historia	EVENT	122
+Event	T5	accidente	EVENT	135
+Event	T6	emitido	EVENT	442
+Event	T7	acceso	EVENT	514
+Event	T8	Desastres	EVENT	615
+Event	T9	Guerra	EVENT	672
+Event	T1	documental	EVENT	29
+Relation	T5	T0	SuperSub	true	accidente	estrenó
+Relation	T0	T5	SubSuper	true	estrenó	accidente
+Relation	T10	T2	NoRel	true	renumerada	dirigido
+Relation	T10	T4	NoRel	true	renumerada	historia
+Relation	T10	T8	NoRel	true	renumerada	Desastres
+Relation	T2	T0	NoRel	true	dirigido	estrenó
+Relation	T2	T10	NoRel	true	dirigido	renumerada
+Relation	T3	T2	NoRel	true	relata	dirigido
+Relation	T4	T10	NoRel	true	historia	renumerada
+Relation	T4	T3	NoRel	true	historia	relata
+Relation	T5	T2	NoRel	true	accidente	dirigido
+Relation	T5	T3	NoRel	true	accidente	relata
+Relation	T6	T1	NoRel	true	emitido	documental
+Relation	T6	T8	NoRel	true	emitido	Desastres
+Relation	T8	T3	NoRel	true	Desastres	relata
+Relation	T8	T4	NoRel	true	Desastres	historia
+Relation	T8	T7	NoRel	true	Desastres	acceso

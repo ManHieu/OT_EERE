@@ -1,0 +1,80 @@
+Text	El presidente de Filipinas , Rodrigo Duterte , autorizó el jueves a detener a las personas no vacunadas que salgan de sus casas durante el actual periodo de restricciones impuestas para frenar los contagios de la variante Ómicron del coronavirus .	El presidente de Brasil , Jair Bolsonaro , volvió este jueves a desincentivar la vacunación contra la COVID-19 en niños y minimizó las muertes de ese grupo , un día después de que su Gobierno incluyera a regañadientes a los menores de entre 5 y 11 años en la campaña nacional de inmunización .	Advirtío , sin aportar pruebas , " de posibles efectos colaterales a partir de los 22 , 23 y 24 " .	El presidente de Chile , Sebastián Piñera , anunció este jueves que a partir del lunes 10 de enero se empezará a vacunar a la población con la cuarta dosis de la vacuna contra el covid-19 .	Empezará con los inmunodeprimidos , y el 7 de febrero empezará la vacunación para personas de 55 años a más que hayan completado seis meses de su anterior dosis .
+Event	T0	autorizó	EVENT	47
+Event	T1	detener	EVENT	68
+Event	T2	salgan	EVENT	108
+Event	T3	impuestas	EVENT	171
+Event	T4	frenar	EVENT	186
+Event	T5	contagios	EVENT	197
+Event	T6	volvió	EVENT	291
+Event	T7	desincentivar	EVENT	312
+Event	T8	vacunación	EVENT	329
+Event	T9	minimizó	EVENT	370
+Event	T10	muertes	EVENT	383
+Event	T11	incluyera	EVENT	440
+Event	T12	campaña	EVENT	507
+Event	T13	inmunización	EVENT	527
+Event	T14	Advirtío	EVENT	542
+Event	T15	anunció	EVENT	686
+Event	T16	empezará	EVENT	744
+Event	T17	vacunar	EVENT	755
+Event	T18	covid-19	EVENT	821
+Event	T19	Empezará	EVENT	832
+Event	T20	empezará	EVENT	886
+Event	T21	vacunación	EVENT	898
+Event	T22	completado	EVENT	950
+Event	T23	dosis	EVENT	987
+Relation	T3	T4	CauseEffect	true	impuestas	frenar
+Relation	T4	T3	EffectCause	true	frenar	impuestas
+Relation	T0	T14	NoRel	true	autorizó	Advirtío
+Relation	T10	T0	NoRel	true	muertes	autorizó
+Relation	T10	T9	NoRel	true	muertes	minimizó
+Relation	T11	T0	NoRel	true	incluyera	autorizó
+Relation	T11	T16	NoRel	true	incluyera	empezará
+Relation	T11	T19	NoRel	true	incluyera	Empezará
+Relation	T11	T23	NoRel	true	incluyera	dosis
+Relation	T11	T5	NoRel	true	incluyera	contagios
+Relation	T12	T0	NoRel	true	campaña	autorizó
+Relation	T12	T18	NoRel	true	campaña	covid-19
+Relation	T13	T10	NoRel	true	inmunización	muertes
+Relation	T13	T15	NoRel	true	inmunización	anunció
+Relation	T14	T11	NoRel	true	Advirtío	incluyera
+Relation	T14	T12	NoRel	true	Advirtío	campaña
+Relation	T14	T5	NoRel	true	Advirtío	contagios
+Relation	T15	T9	NoRel	true	anunció	minimizó
+Relation	T16	T17	NoRel	true	empezará	vacunar
+Relation	T16	T18	NoRel	true	empezará	covid-19
+Relation	T16	T3	NoRel	true	empezará	impuestas
+Relation	T17	T13	NoRel	true	vacunar	inmunización
+Relation	T18	T1	NoRel	true	covid-19	detener
+Relation	T18	T10	NoRel	true	covid-19	muertes
+Relation	T18	T15	NoRel	true	covid-19	anunció
+Relation	T18	T16	NoRel	true	covid-19	empezará
+Relation	T18	T2	NoRel	true	covid-19	salgan
+Relation	T18	T8	NoRel	true	covid-19	vacunación
+Relation	T18	T9	NoRel	true	covid-19	minimizó
+Relation	T19	T12	NoRel	true	Empezará	campaña
+Relation	T19	T8	NoRel	true	Empezará	vacunación
+Relation	T2	T1	NoRel	true	salgan	detener
+Relation	T2	T12	NoRel	true	salgan	campaña
+Relation	T2	T14	NoRel	true	salgan	Advirtío
+Relation	T2	T16	NoRel	true	salgan	empezará
+Relation	T2	T18	NoRel	true	salgan	covid-19
+Relation	T2	T21	NoRel	true	salgan	vacunación
+Relation	T2	T23	NoRel	true	salgan	dosis
+Relation	T2	T8	NoRel	true	salgan	vacunación
+Relation	T20	T6	NoRel	true	empezará	volvió
+Relation	T22	T18	NoRel	true	completado	covid-19
+Relation	T23	T14	NoRel	true	dosis	Advirtío
+Relation	T23	T15	NoRel	true	dosis	anunció
+Relation	T23	T21	NoRel	true	dosis	vacunación
+Relation	T23	T3	NoRel	true	dosis	impuestas
+Relation	T23	T6	NoRel	true	dosis	volvió
+Relation	T4	T12	NoRel	true	frenar	campaña
+Relation	T4	T5	NoRel	true	frenar	contagios
+Relation	T4	T9	NoRel	true	frenar	minimizó
+Relation	T6	T14	NoRel	true	volvió	Advirtío
+Relation	T6	T18	NoRel	true	volvió	covid-19
+Relation	T6	T4	NoRel	true	volvió	frenar
+Relation	T6	T9	NoRel	true	volvió	minimizó
+Relation	T8	T10	NoRel	true	vacunación	muertes
+Relation	T8	T20	NoRel	true	vacunación	empezará

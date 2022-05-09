@@ -1,0 +1,48 @@
+Text	thumb|right |Revolutionsgeneralen og præsident af Mexico Alvaro Obregón sad som præsident i hele valgperioden 1920-1924 .	Han forsøgte at blive genvalgt i 1928 og blev valgt , men blev snigmyrdet inden han kunne indtage præsidentembedet , hvilket skabte en krise for rækkefølgen af landets præsidenter .	I forhold til masserne var Obregón konservativ , men stadig en raformator , og han begyndte at lytte til de krav , som befolkningen havde , for at berolige folket .	Obregóns første fokus i 1920 var en jordreform .	Hans guvernører i forskellige stater havde trumfet reformerne igennem , som var kommet med grundloven i 1917 .
+Event	T0	sad	EVENT	72
+Event	T1	forsøgte	EVENT	126
+Event	T2	genvalgt	EVENT	144
+Event	T3	valgt	EVENT	168
+Event	T4	snigmyrdet	EVENT	185
+Event	T5	indtage	EVENT	212
+Event	T6	skabte	EVENT	247
+Event	T7	krise	EVENT	257
+Event	T8	lytte	EVENT	399
+Event	T9	kommet	EVENT	598
+Event	T10	krav	EVENT	412
+Event	T11	berolige	EVENT	451
+Event	T12	fokus	EVENT	485
+Event	T13	jordreform	EVENT	505
+Event	T14	trumfet	EVENT	561
+Event	T15	reformerne	EVENT	569
+Event	T16	konservativ	EVENT	339
+Event	T17	raformator	EVENT	367
+Relation	T12	T13	SuperSub	true	fokus	jordreform
+Relation	T13	T12	SubSuper	true	jordreform	fokus
+Relation	T3	T4	SuperSub	true	valgt	snigmyrdet
+Relation	T4	T3	SubSuper	true	snigmyrdet	valgt
+Relation	T1	T15	NoRel	true	forsøgte	reformerne
+Relation	T10	T17	NoRel	true	krav	raformator
+Relation	T10	T6	NoRel	true	krav	skabte
+Relation	T11	T16	NoRel	true	berolige	konservativ
+Relation	T12	T5	NoRel	true	fokus	indtage
+Relation	T12	T8	NoRel	true	fokus	lytte
+Relation	T13	T6	NoRel	true	jordreform	skabte
+Relation	T14	T17	NoRel	true	trumfet	raformator
+Relation	T15	T13	NoRel	true	reformerne	jordreform
+Relation	T16	T1	NoRel	true	konservativ	forsøgte
+Relation	T16	T13	NoRel	true	konservativ	jordreform
+Relation	T16	T2	NoRel	true	konservativ	genvalgt
+Relation	T17	T11	NoRel	true	raformator	berolige
+Relation	T17	T16	NoRel	true	raformator	konservativ
+Relation	T2	T14	NoRel	true	genvalgt	trumfet
+Relation	T2	T16	NoRel	true	genvalgt	konservativ
+Relation	T2	T3	NoRel	true	genvalgt	valgt
+Relation	T2	T5	NoRel	true	genvalgt	indtage
+Relation	T2	T6	NoRel	true	genvalgt	skabte
+Relation	T3	T17	NoRel	true	valgt	raformator
+Relation	T4	T17	NoRel	true	snigmyrdet	raformator
+Relation	T5	T1	NoRel	true	indtage	forsøgte
+Relation	T6	T5	NoRel	true	skabte	indtage
+Relation	T9	T10	NoRel	true	kommet	krav
+Relation	T9	T6	NoRel	true	kommet	skabte

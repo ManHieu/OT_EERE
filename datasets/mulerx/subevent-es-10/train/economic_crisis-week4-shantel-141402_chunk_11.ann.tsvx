@@ -1,0 +1,39 @@
+Text	La « alienación del trabajo » podría relacionarse con que haya algunas máquinas sin una utilidad reconocible .	El personaje del robot María , representado claramente como malvada , lanza a los trabajadores a la lucha , y como resultado destrozan su medio y sustento , empeorando su situación en lugar de mejorarla .	La colaboración entre clases sociales , en lugar de la lucha de clases , recuerda sin embargo al nacionalsocialismo y su ideología , pues era la estructura económica corporativista que defendía el programa del Partido Nazi ; ideología con el cual Thea von Harbou simpatizaba , contrariamente a Fritz Lang .	Lang dio a entender más tarde que la idea del corazón como mediador entre la mano ( la fuerza del trabajo ) y el cerebro ( la capacidad directora de la sociedad ) era falsa y que por ello ya no le gustaba esta película .	Tras esta opinión se escondía la situación social que se vivía y no un conflicto de orden moral .
+Event	T0	alienación	EVENT	5
+Event	T1	representado	EVENT	142
+Event	T2	lanza	EVENT	181
+Event	T3	lucha	EVENT	211
+Event	T4	destrozan	EVENT	236
+Event	T5	empeorando	EVENT	268
+Event	T6	colaboración	EVENT	319
+Event	T7	lucha	EVENT	371
+Event	T8	recuerda	EVENT	389
+Event	T9	defendía	EVENT	501
+Event	T10	dio	EVENT	628
+Event	T11	opinión	EVENT	854
+Event	T12	escondía	EVENT	865
+Event	T13	vivía	EVENT	901
+Event	T14	conflicto	EVENT	915
+Event	T15	situación	EVENT	877
+Relation	T2	T4	SuperSub	true	lanza	destrozan
+Relation	T4	T2	SubSuper	true	destrozan	lanza
+Relation	T1	T14	NoRel	true	representado	conflicto
+Relation	T1	T6	NoRel	true	representado	colaboración
+Relation	T10	T15	NoRel	true	dio	situación
+Relation	T10	T3	NoRel	true	dio	lucha
+Relation	T11	T4	NoRel	true	opinión	destrozan
+Relation	T12	T1	NoRel	true	escondía	representado
+Relation	T12	T13	NoRel	true	escondía	vivía
+Relation	T14	T13	NoRel	true	conflicto	vivía
+Relation	T14	T3	NoRel	true	conflicto	lucha
+Relation	T14	T7	NoRel	true	conflicto	lucha
+Relation	T15	T4	NoRel	true	situación	destrozan
+Relation	T3	T1	NoRel	true	lucha	representado
+Relation	T3	T12	NoRel	true	lucha	escondía
+Relation	T5	T8	NoRel	true	empeorando	recuerda
+Relation	T6	T12	NoRel	true	colaboración	escondía
+Relation	T7	T11	NoRel	true	lucha	opinión
+Relation	T8	T1	NoRel	true	recuerda	representado
+Relation	T8	T7	NoRel	true	recuerda	lucha
+Relation	T9	T4	NoRel	true	defendía	destrozan
+Relation	T9	T8	NoRel	true	defendía	recuerda

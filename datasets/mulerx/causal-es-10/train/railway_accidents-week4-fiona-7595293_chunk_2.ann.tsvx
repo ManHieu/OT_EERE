@@ -1,0 +1,38 @@
+Text	Los heridos fueron llevados principalmente al Centro Médico de Jersey City y al Centro Médico de la Universidad Hoboken , y al menos uno fue enviado al Christ Hospital .	Los informes de testigos oculares indican que porciones del techo de la estación se derrumbaron , que parte del techo del tren colapsó , y que había agua derramada en el sitio del accidente .	Hubo grandes daños estructurales a la estación .	Tras el desastre , el servicio de trenes hacia y desde la estación Hoboken ( incluyendo el servicio de la Autoridad Portuaria Trans-Hudson ) fue suspendido , y los autobuses y ferries locales comenzaron a aceptar a pasajeros con billetes de tren .	La Junta Nacional de Seguridad del Transporte ( _ National Transportation Safety Board _ , NTSB ) está investigando el accidente .
+Event	T0	heridos	EVENT	4
+Event	T1	llevados	EVENT	19
+Event	T2	enviado	EVENT	141
+Event	T3	informes	EVENT	174
+Event	T4	indican	EVENT	204
+Event	T5	derrumbaron	EVENT	254
+Event	T6	colapsó	EVENT	297
+Event	T7	derramada	EVENT	324
+Event	T8	accidente	EVENT	350
+Event	T9	desastre	EVENT	419
+Event	T10	suspendido	EVENT	556
+Event	T11	comenzaron	EVENT	603
+Event	T12	aceptar	EVENT	616
+Event	T13	investigando	EVENT	762
+Event	T14	accidente	EVENT	778
+Relation	T0	T13	NoRel	true	heridos	investigando
+Relation	T0	T14	NoRel	true	heridos	accidente
+Relation	T10	T0	NoRel	true	suspendido	heridos
+Relation	T13	T8	NoRel	true	investigando	accidente
+Relation	T13	T9	NoRel	true	investigando	desastre
+Relation	T14	T3	NoRel	true	accidente	informes
+Relation	T14	T7	NoRel	true	accidente	derramada
+Relation	T2	T12	NoRel	true	enviado	aceptar
+Relation	T2	T7	NoRel	true	enviado	derramada
+Relation	T4	T10	NoRel	true	indican	suspendido
+Relation	T4	T9	NoRel	true	indican	desastre
+Relation	T5	T1	NoRel	true	derrumbaron	llevados
+Relation	T5	T10	NoRel	true	derrumbaron	suspendido
+Relation	T5	T3	NoRel	true	derrumbaron	informes
+Relation	T5	T8	NoRel	true	derrumbaron	accidente
+Relation	T6	T7	NoRel	true	colapsó	derramada
+Relation	T7	T10	NoRel	true	derramada	suspendido
+Relation	T8	T12	NoRel	true	accidente	aceptar
+Relation	T8	T3	NoRel	true	accidente	informes
+Relation	T8	T7	NoRel	true	accidente	derramada
+Relation	T9	T12	NoRel	true	desastre	aceptar
+Relation	T9	T8	NoRel	true	desastre	accidente

@@ -1,0 +1,36 @@
+Text	( Fırat - Dicle Seferi )	Şah İsmail'in 1524 yılında ölümüyle birlikten yerine oğlu I. Tahmasb geçti .	Şah Tahmasb tahta çıktığında henüz 10 yaşındaydı .	Bu yüzden ilk yılları savaşsız geçen Şah Tahmasp ; tahta çıktıktan 10 yıl sonra Osmanlı İmparatorluğu ile mücadeleye başladı .	1529 yılında İran’ın Bağdad valisi Zülfikar Han’ın Osmanlı Devleti’ne , buna karşılık Osmanlı Bitlis valisi Şeref Han’ın da İran’a iltihak etmeleri ortalığı karıştırdı , İran şahı I. Tahmasb , Osmanlı kuvvetlerinin Avrupa’da sefere çıkmasından istifade ederek Bağdad’a asker gönderip , Zülfikar Han’ı öldürttü ve yeni bir vali tayin etti .
+Event	T0	geçti	EVENT	94
+Event	T3	karıştırdı	EVENT	437
+Event	T4	istifade	EVENT	524
+Event	T5	öldürttü	EVENT	581
+Event	T6	etti	EVENT	613
+Event	T7	ölümüyle	EVENT	52
+Event	T8	çıktığında	EVENT	120
+Event	T9	geçen	EVENT	184
+Event	T10	çıktıktan	EVENT	210
+Event	T11	mücadeleye	EVENT	259
+Event	T1	iltihak	EVENT	411
+Event	T2	çıkmasından	EVENT	512
+Event	T12	gönderip	EVENT	555
+Relation	T7	T0	CauseEffect	true	ölümüyle	geçti
+Relation	T0	T7	EffectCause	true	geçti	ölümüyle
+Relation	T1	T3	CauseEffect	true	iltihak	karıştırdı
+Relation	T3	T1	EffectCause	true	karıştırdı	iltihak
+Relation	T2	T4	CauseEffect	true	çıkmasından	istifade
+Relation	T4	T2	EffectCause	true	istifade	çıkmasından
+Relation	T0	T10	NoRel	true	geçti	çıktıktan
+Relation	T0	T3	NoRel	true	geçti	karıştırdı
+Relation	T1	T9	NoRel	true	iltihak	geçen
+Relation	T10	T12	NoRel	true	çıktıktan	gönderip
+Relation	T11	T7	NoRel	true	mücadeleye	ölümüyle
+Relation	T11	T9	NoRel	true	mücadeleye	geçen
+Relation	T12	T7	NoRel	true	gönderip	ölümüyle
+Relation	T2	T1	NoRel	true	çıkmasından	iltihak
+Relation	T2	T10	NoRel	true	çıkmasından	çıktıktan
+Relation	T4	T0	NoRel	true	istifade	geçti
+Relation	T4	T11	NoRel	true	istifade	mücadeleye
+Relation	T5	T3	NoRel	true	öldürttü	karıştırdı
+Relation	T5	T9	NoRel	true	öldürttü	geçen
+Relation	T6	T10	NoRel	true	etti	çıktıktan
+Relation	T6	T4	NoRel	true	etti	istifade
+Relation	T7	T3	NoRel	true	ölümüyle	karıştırdı

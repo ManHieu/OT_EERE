@@ -1,0 +1,41 @@
+Text	A las 09:47 , el extremo del ala derecha del avión impactó con la pista durante su intento de aterrizaje final , el avión se dio la vuelta , y acabó a doscientos metros de pista invertido , saliéndose de esta e incendiándose .	Seis personas murieron , incluyendo al piloto y al copiloto .	Un testigo dentro de la terminal del aeropuerto sostuvo que la niebla era tan espesa que no fue posible ver el accidente .	Los heridos fueron llevados al Hospital Univesitario de Cork para su tratamiento .	Cuatro fueron heridos graves , mientras que otros dos presentaban una situación crítica .
+Event	T0	impactó	EVENT	51
+Event	T1	intento	EVENT	83
+Event	T2	acabó	EVENT	143
+Event	T3	invertido	EVENT	178
+Event	T4	saliéndose	EVENT	190
+Event	T5	incendiándose	EVENT	211
+Event	T6	murieron	EVENT	241
+Event	T7	sostuvo	EVENT	337
+Event	T8	accidente	EVENT	400
+Event	T9	heridos	EVENT	416
+Event	T10	llevados	EVENT	431
+Event	T11	tratamiento	EVENT	481
+Event	T12	presentaban	EVENT	549
+Relation	T0	T3	CauseEffect	true	impactó	invertido
+Relation	T3	T0	EffectCause	true	invertido	impactó
+Relation	T0	T5	CauseEffect	true	impactó	incendiándose
+Relation	T5	T0	EffectCause	true	incendiándose	impactó
+Relation	T0	T6	CauseEffect	true	impactó	murieron
+Relation	T6	T0	EffectCause	true	murieron	impactó
+Relation	T8	T9	CauseEffect	true	accidente	heridos
+Relation	T9	T8	EffectCause	true	heridos	accidente
+Relation	T0	T2	NoRel	true	impactó	acabó
+Relation	T0	T4	NoRel	true	impactó	saliéndose
+Relation	T1	T0	NoRel	true	intento	impactó
+Relation	T1	T2	NoRel	true	intento	acabó
+Relation	T1	T5	NoRel	true	intento	incendiándose
+Relation	T1	T7	NoRel	true	intento	sostuvo
+Relation	T10	T12	NoRel	true	llevados	presentaban
+Relation	T11	T10	NoRel	true	tratamiento	llevados
+Relation	T11	T4	NoRel	true	tratamiento	saliéndose
+Relation	T11	T9	NoRel	true	tratamiento	heridos
+Relation	T12	T6	NoRel	true	presentaban	murieron
+Relation	T2	T7	NoRel	true	acabó	sostuvo
+Relation	T4	T10	NoRel	true	saliéndose	llevados
+Relation	T5	T12	NoRel	true	incendiándose	presentaban
+Relation	T6	T4	NoRel	true	murieron	saliéndose
+Relation	T7	T0	NoRel	true	sostuvo	impactó
+Relation	T8	T1	NoRel	true	accidente	intento
+Relation	T8	T11	NoRel	true	accidente	tratamiento
+Relation	T8	T7	NoRel	true	accidente	sostuvo

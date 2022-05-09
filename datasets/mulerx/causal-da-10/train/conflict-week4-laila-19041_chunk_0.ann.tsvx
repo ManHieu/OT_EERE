@@ -1,0 +1,40 @@
+Text	thumb|	En laserstyret bombe af type Bolt 117 LGB er en forkortelse for Laser Guided Bomb , en bombe , der kastes fra en flyvemaskine og derpå ledes mod målet ved hjælp af laserstyring .	Bomberne kan enten laves til laserstyring , eller et LGB-kit kan påmonteres 'dumme ' bomber ( konventionelle bomber ) .	Dette kit indeholder styrbare finner og et hoved med en lasersensor .	Belysning af målet ( _tagging_ ) kan også ske af en person på jorden med en _ Laser Designator _ , men normalen er at det sker fra et fly .
+Event	T0	kastes	EVENT	106
+Event	T1	ledes	EVENT	142
+Event	T2	laserstyring	EVENT	171
+Event	T3	laves	EVENT	205
+Event	T4	Belysning	EVENT	376
+Event	T5	ske	EVENT	418
+Event	T6	sker	EVENT	498
+Event	T7	laserstyring	EVENT	215
+Event	T8	påmonteres	EVENT	251
+Event	T9	styrbare	EVENT	327
+Event	T10	lasersensor	EVENT	362
+Event	T11	LGB-kit	EVENT	239
+Event	T12	på jorden	EVENT	435
+Event	T13	laserstyret bombe	EVENT	10
+Relation	T0	T10	NoRel	true	kastes	lasersensor
+Relation	T0	T2	NoRel	true	kastes	laserstyring
+Relation	T0	T6	NoRel	true	kastes	sker
+Relation	T1	T12	NoRel	true	ledes	på jorden
+Relation	T1	T13	NoRel	true	ledes	laserstyret bombe
+Relation	T10	T4	NoRel	true	lasersensor	Belysning
+Relation	T12	T10	NoRel	true	på jorden	lasersensor
+Relation	T13	T0	NoRel	true	laserstyret bombe	kastes
+Relation	T13	T3	NoRel	true	laserstyret bombe	laves
+Relation	T2	T7	NoRel	true	laserstyring	laserstyring
+Relation	T2	T8	NoRel	true	laserstyring	påmonteres
+Relation	T4	T0	NoRel	true	Belysning	kastes
+Relation	T4	T13	NoRel	true	Belysning	laserstyret bombe
+Relation	T5	T7	NoRel	true	ske	laserstyring
+Relation	T5	T9	NoRel	true	ske	styrbare
+Relation	T6	T8	NoRel	true	sker	påmonteres
+Relation	T7	T0	NoRel	true	laserstyring	kastes
+Relation	T7	T2	NoRel	true	laserstyring	laserstyring
+Relation	T7	T4	NoRel	true	laserstyring	Belysning
+Relation	T8	T11	NoRel	true	påmonteres	LGB-kit
+Relation	T8	T2	NoRel	true	påmonteres	laserstyring
+Relation	T9	T12	NoRel	true	styrbare	på jorden
+Relation	T9	T13	NoRel	true	styrbare	laserstyret bombe
+Relation	T9	T3	NoRel	true	styrbare	laves
+Relation	T9	T8	NoRel	true	styrbare	påmonteres

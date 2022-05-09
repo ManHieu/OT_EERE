@@ -1,0 +1,28 @@
+Text	Krugman'a göre Doğu Asya ekonomileri yüksek büyüme hızlarını verimlilik artışına yol açan sermaye yatırımlarına borçluydular .	Ancak , toplam faktör verimliliği çok az artmıştı .	Krugman'a göre sermaye yatırımları değil , toplam faktör verimliliğindeki artış sürdürülebilir büyüme sağlayabilirdi .	Krizden sonra Krugman iyi bir gelecek tahmincisi olarak görüldü ancak kendisi krizi ve büyüklüğünü önceden tahmin etmediğini belirtti .	Bu yıllarda Tayland , Endonezya ve Güney Kore'nin büyük miktarda özel sektör cari hesap açığı vardı ve düşük kur politikası borç almayı teşvik ederek sektörlerin dış dünyaya karşı kırılganlıkları arttırdı .
+Event	T1	artış	EVENT	253
+Event	T2	Krizden	EVENT	298
+Event	T3	görüldü	EVENT	354
+Event	T4	krizi	EVENT	376
+Event	T6	belirtti	EVENT	423
+Event	T9	arttırdı	EVENT	630
+Event	T10	yatırımlarına	EVENT	98
+Event	T11	hızlarını	EVENT	51
+Event	T12	artışına	EVENT	72
+Event	T13	artmıştı	EVENT	168
+Event	T5	vardı	EVENT	528
+Event	T7	ederek	EVENT	577
+Event	T8	politikası	EVENT	547
+Relation	T1	T6	NoRel	true	artış	belirtti
+Relation	T10	T2	NoRel	true	yatırımlarına	Krizden
+Relation	T10	T9	NoRel	true	yatırımlarına	arttırdı
+Relation	T13	T11	NoRel	true	artmıştı	hızlarını
+Relation	T2	T4	NoRel	true	Krizden	krizi
+Relation	T2	T5	NoRel	true	Krizden	vardı
+Relation	T3	T1	NoRel	true	görüldü	artış
+Relation	T3	T13	NoRel	true	görüldü	artmıştı
+Relation	T3	T8	NoRel	true	görüldü	politikası
+Relation	T5	T1	NoRel	true	vardı	artış
+Relation	T6	T13	NoRel	true	belirtti	artmıştı
+Relation	T6	T3	NoRel	true	belirtti	görüldü
+Relation	T7	T10	NoRel	true	ederek	yatırımlarına
+Relation	T8	T12	NoRel	true	politikası	artışına

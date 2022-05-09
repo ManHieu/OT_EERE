@@ -1,0 +1,16 @@
+Text	Depremin ardından depremin Metzamor Nükleer Santrali'nde bir etkisi olacağı kaygısı ortaya çıktı ; fakat Hilmi Güler ölçümlerde bir anormallik olmadığını söyledi .	Deprem sonrasında Doğal Afet Sigortaları Kurumu'nda 18 tane ilgili dosya oluşturuldu ve 29,542 TL ödendi .	Karabulak köyünden 132 kişi hak sahibi olmuş , Ağrı Bayındırlık ve İskan İl Müdürlüğü'nü başvurmuştur .	Bunlardan 39'unun ihalesi 2007 yılında yapılmıştır .	Yığınçal köyünde ise 7 konutun tekrar yapılması için müdürlüğe başvurulmuştur .
+Event	T0	Depremin	EVENT	0
+Event	T1	depremin	EVENT	18
+Event	T2	çıktı	EVENT	91
+Event	T3	söyledi	EVENT	154
+Event	T4	Deprem	EVENT	164
+Event	T5	oluşturuldu	EVENT	237
+Event	T6	ödendi	EVENT	262
+Event	T7	ihalesi	EVENT	393
+Event	T8	yapılması	EVENT	466
+Relation	T0	T2	CauseEffect	true	Depremin	çıktı
+Relation	T2	T0	EffectCause	true	çıktı	Depremin
+Relation	T2	T3	NoRel	true	çıktı	söyledi
+Relation	T3	T1	NoRel	true	söyledi	depremin
+Relation	T6	T1	NoRel	true	ödendi	depremin
+Relation	T7	T6	NoRel	true	ihalesi	ödendi

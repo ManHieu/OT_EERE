@@ -1,0 +1,45 @@
+Text	[ miniaturade imagen | Comercios cerrados en Madrid ( 29 de marzo ) ] Las medidas de confinamiento frente a la pandemia , según la ministra de Trabajo , Yolanda Díaz , provocaron la destrucción de empleos entre el 12 de marzo y el 12 de mayo , 1,14 millones si se consideran los dos últimos meses completos .	Además , a finales de abril unos 3,38 millones de trabajadores se habían visto afectados por un ERTE .	El Consejo de Ministros aprobó el 29 de mayo el Ingreso Mínimo Vital , una prestación no contributiva de la Seguridad Social para mejorar la economía de aquellas familias que no lleguen a unos umbrales mínimos de renta debido a la crisis del coronavirus .	El Servicio Público de Empleo Estatal desembolsó en mayo unos millones de euros , un 236,2% más que el año anterior , para pagar prestaciones por desempleo .	La creación de empresas se desplomó un 73,4_% en abril , su mayor caída desde 1995 .
+Event	T0	cerrados	EVENT	33
+Event	T1	medidas	EVENT	74
+Event	T2	confinamiento	EVENT	85
+Event	T3	pandemia	EVENT	111
+Event	T4	provocaron	EVENT	168
+Event	T5	destrucción	EVENT	182
+Event	T6	consideran	EVENT	264
+Event	T7	afectados	EVENT	388
+Event	T8	aprobó	EVENT	436
+Event	T9	lleguen	EVENT	590
+Event	T10	crisis	EVENT	643
+Event	T11	coronavirus	EVENT	654
+Event	T12	desembolsó	EVENT	706
+Event	T13	creación	EVENT	829
+Event	T14	desplomó	EVENT	853
+Event	T15	caída	EVENT	892
+Relation	T0	T11	NoRel	true	cerrados	coronavirus
+Relation	T0	T8	NoRel	true	cerrados	aprobó
+Relation	T1	T13	NoRel	true	medidas	creación
+Relation	T1	T3	NoRel	true	medidas	pandemia
+Relation	T1	T4	NoRel	true	medidas	provocaron
+Relation	T11	T5	NoRel	true	coronavirus	destrucción
+Relation	T11	T7	NoRel	true	coronavirus	afectados
+Relation	T12	T2	NoRel	true	desembolsó	confinamiento
+Relation	T13	T12	NoRel	true	creación	desembolsó
+Relation	T13	T14	NoRel	true	creación	desplomó
+Relation	T13	T7	NoRel	true	creación	afectados
+Relation	T14	T13	NoRel	true	desplomó	creación
+Relation	T14	T2	NoRel	true	desplomó	confinamiento
+Relation	T14	T8	NoRel	true	desplomó	aprobó
+Relation	T15	T10	NoRel	true	caída	crisis
+Relation	T2	T3	NoRel	true	confinamiento	pandemia
+Relation	T2	T5	NoRel	true	confinamiento	destrucción
+Relation	T3	T12	NoRel	true	pandemia	desembolsó
+Relation	T3	T2	NoRel	true	pandemia	confinamiento
+Relation	T5	T0	NoRel	true	destrucción	cerrados
+Relation	T5	T3	NoRel	true	destrucción	pandemia
+Relation	T6	T14	NoRel	true	consideran	desplomó
+Relation	T6	T9	NoRel	true	consideran	lleguen
+Relation	T7	T12	NoRel	true	afectados	desembolsó
+Relation	T7	T6	NoRel	true	afectados	consideran
+Relation	T7	T8	NoRel	true	afectados	aprobó
+Relation	T8	T5	NoRel	true	aprobó	destrucción
+Relation	T9	T12	NoRel	true	lleguen	desembolsó

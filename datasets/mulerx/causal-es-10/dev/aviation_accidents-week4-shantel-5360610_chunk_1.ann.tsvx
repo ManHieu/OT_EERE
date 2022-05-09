@@ -1,0 +1,29 @@
+Text	Las tripulaciones de tierra y el ingeniero de vuelo , confiando en las lecturas erróneas del nuevo FQI instalado , cargaron el avión con una cantidad inadecuada de combustible para el vuelo .	En el vuelo de Bari a Djerba , ambos motores se apagaron en vuelo .	El motor derecho del avión falló a 23.000 pies ( 7.000 metros ) .	El avión comenzó a descender a 17.000 pies , pero cien segundos después de que el motor derecho fallase , el motor izquierdo también falló .	La tripulación de vuelo no se percató del agotamiento de combustible por el dispositivo del ATR 42 instalado que indicaba una cantidad de combustible correcto en los tanques , incluso después de que todo el combustible hubiese sido consumido .
+Event	T0	lecturas	EVENT	71
+Event	T1	instalado	EVENT	103
+Event	T2	cargaron	EVENT	115
+Event	T3	vuelo	EVENT	184
+Event	T4	vuelo	EVENT	198
+Event	T5	falló	EVENT	287
+Event	T6	comenzó	EVENT	335
+Event	T7	descender	EVENT	345
+Event	T8	fallase	EVENT	422
+Event	T9	falló	EVENT	459
+Event	T10	percató	EVENT	497
+Event	T11	agotamiento	EVENT	509
+Event	T12	indicaba	EVENT	580
+Event	T13	consumido	EVENT	699
+Event	T14	apagaron	EVENT	240
+Relation	T5	T7	CauseEffect	true	falló	descender
+Relation	T7	T5	EffectCause	true	descender	falló
+Relation	T1	T2	NoRel	true	instalado	cargaron
+Relation	T1	T7	NoRel	true	instalado	descender
+Relation	T10	T4	NoRel	true	percató	vuelo
+Relation	T11	T14	NoRel	true	agotamiento	apagaron
+Relation	T12	T0	NoRel	true	indicaba	lecturas
+Relation	T12	T5	NoRel	true	indicaba	falló
+Relation	T13	T12	NoRel	true	consumido	indicaba
+Relation	T2	T3	NoRel	true	cargaron	vuelo
+Relation	T3	T10	NoRel	true	vuelo	percató
+Relation	T4	T8	NoRel	true	vuelo	fallase
+Relation	T6	T10	NoRel	true	comenzó	percató

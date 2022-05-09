@@ -1,0 +1,63 @@
+Text	1907ء اور 1908ء میں عاشورا کے موقعے پر لکھنؤ میں بڑے پیمانے پر فسادات ہوئے ۔	انگریز حکومت نے پیگوٹ کمیٹی کے نام سے انکوئری کمیشن بنایا جس کی سفارشات پر عمل کرتے ہوئے مدح صحابہ کے جلوس کو بد نیتی پر مبنی شرارت قرار دے کر پابندی لگا دی ۔	ساتھ ہی انہوں نے عزاداری کے جلوسوں کو رجسٹر کر کے لائسنس جاری کیے تاکہ حکومت کی پیشگی اجازت کے بغیر کوئی جلوس نہ نکلے ۔	جلوس پر پابندی لگنے کے بعد مولانا نے محرم میں بزم صدیقی ، بزم فاروقی اور بزم عثمانی کے عنوان سے محافل کا انعقاد شروع کر دیا ۔	ان محافل میں مسلہ خلافت جیسے اختلافی مسائل پر تقریریں ہوتیں اور خلافت راشدہ کے زوال کا ملبہ ابن سبا جیسے " گھاگ سازشیوں " پر ڈال کر شیعوں کو اس کا جدید روپ قرار دیا جاتا ۔
+Event	T1	بنایا	EVENT	129
+Event	T2	سفارشات	EVENT	141
+Event	T3	عمل	EVENT	152
+Event	T4	جلوس	EVENT	179
+Event	T6	جلوس	EVENT	341
+Event	T8	جلوس	EVENT	356
+Event	T12	زوال	EVENT	561
+Event	T13	موقعے	EVENT	30
+Event	T14	عاشورا	EVENT	20
+Event	T15	فسادات	EVENT	63
+Event	T16	قرار	EVENT	209
+Event	T17	پابندی	EVENT	220
+Event	T18	جلوسوں	EVENT	264
+Event	T19	رجسٹر	EVENT	274
+Event	T20	جاری	EVENT	293
+Event	T5	پابندی	EVENT	364
+Event	T11	محافل کا انعقاد	EVENT	452
+Event	T7	ڈال	EVENT	607
+Event	T9	قرار	EVENT	638
+Relation	T11	T7	SuperSub	true	محافل کا انعقاد	ڈال
+Relation	T7	T11	SubSuper	true	ڈال	محافل کا انعقاد
+Relation	T11	T9	SuperSub	true	محافل کا انعقاد	قرار
+Relation	T9	T11	SubSuper	true	قرار	محافل کا انعقاد
+Relation	T1	T17	NoRel	true	بنایا	پابندی
+Relation	T1	T19	NoRel	true	بنایا	رجسٹر
+Relation	T1	T2	NoRel	true	بنایا	سفارشات
+Relation	T1	T7	NoRel	true	بنایا	ڈال
+Relation	T12	T18	NoRel	true	زوال	جلوسوں
+Relation	T13	T6	NoRel	true	موقعے	جلوس
+Relation	T14	T13	NoRel	true	عاشورا	موقعے
+Relation	T14	T2	NoRel	true	عاشورا	سفارشات
+Relation	T15	T12	NoRel	true	فسادات	زوال
+Relation	T15	T14	NoRel	true	فسادات	عاشورا
+Relation	T15	T18	NoRel	true	فسادات	جلوسوں
+Relation	T15	T19	NoRel	true	فسادات	رجسٹر
+Relation	T15	T9	NoRel	true	فسادات	قرار
+Relation	T16	T15	NoRel	true	قرار	فسادات
+Relation	T17	T20	NoRel	true	پابندی	جاری
+Relation	T18	T19	NoRel	true	جلوسوں	رجسٹر
+Relation	T18	T9	NoRel	true	جلوسوں	قرار
+Relation	T19	T14	NoRel	true	رجسٹر	عاشورا
+Relation	T2	T7	NoRel	true	سفارشات	ڈال
+Relation	T20	T11	NoRel	true	جاری	محافل کا انعقاد
+Relation	T20	T17	NoRel	true	جاری	پابندی
+Relation	T20	T3	NoRel	true	جاری	عمل
+Relation	T3	T12	NoRel	true	عمل	زوال
+Relation	T3	T15	NoRel	true	عمل	فسادات
+Relation	T4	T19	NoRel	true	جلوس	رجسٹر
+Relation	T4	T3	NoRel	true	جلوس	عمل
+Relation	T5	T19	NoRel	true	پابندی	رجسٹر
+Relation	T5	T4	NoRel	true	پابندی	جلوس
+Relation	T5	T6	NoRel	true	پابندی	جلوس
+Relation	T6	T12	NoRel	true	جلوس	زوال
+Relation	T6	T16	NoRel	true	جلوس	قرار
+Relation	T6	T18	NoRel	true	جلوس	جلوسوں
+Relation	T6	T3	NoRel	true	جلوس	عمل
+Relation	T7	T16	NoRel	true	ڈال	قرار
+Relation	T7	T17	NoRel	true	ڈال	پابندی
+Relation	T8	T17	NoRel	true	جلوس	پابندی
+Relation	T8	T2	NoRel	true	جلوس	سفارشات
+Relation	T9	T2	NoRel	true	قرار	سفارشات
+Relation	T9	T20	NoRel	true	قرار	جاری

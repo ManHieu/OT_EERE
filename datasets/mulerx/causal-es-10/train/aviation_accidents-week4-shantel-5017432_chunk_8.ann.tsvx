@@ -1,0 +1,37 @@
+Text	El informe preliminar , publicado el 16 de marzo , afirmaba que el avión , dirigido por el copiloto , se había desviado del centro de pista durante la aproximación final y la tripulación decidió efectuar un tercer go-around cuatro segundos antes del impacto .	El avión se balanceó a izquierda y derecha , y el ala derecha impactó a continuación en pista .	Una alarma en cabina , que se creía que se trataba de la sirena de advertencia de entrada en pérdida , sonó repetidamente durante los siete segundos previos al impacto .	No se descubrieron deficiencias en el avión o la infraestructura del aeródromo .	La investigación continúa en curso y no se han notificado nuevos descubrimientos .
+Event	T0	informe	EVENT	3
+Event	T1	publicado	EVENT	24
+Event	T2	afirmaba	EVENT	51
+Event	T3	dirigido	EVENT	75
+Event	T4	desviado	EVENT	111
+Event	T5	efectuar	EVENT	195
+Event	T6	go-around	EVENT	214
+Event	T7	impacto	EVENT	250
+Event	T8	balanceó	EVENT	272
+Event	T9	impactó	EVENT	322
+Event	T10	alarma	EVENT	360
+Event	T11	creía	EVENT	386
+Event	T15	sonó	EVENT	459
+Event	T16	impacto	EVENT	516
+Event	T17	deficiencias	EVENT	545
+Relation	T7	T0	CauseEffect	true	impacto	informe
+Relation	T0	T7	EffectCause	true	informe	impacto
+Relation	T8	T9	CauseEffect	true	balanceó	impactó
+Relation	T9	T8	EffectCause	true	impactó	balanceó
+Relation	T10	T16	NoRel	true	alarma	impacto
+Relation	T10	T7	NoRel	true	alarma	impacto
+Relation	T11	T15	NoRel	true	creía	sonó
+Relation	T11	T8	NoRel	true	creía	balanceó
+Relation	T16	T0	NoRel	true	impacto	informe
+Relation	T16	T15	NoRel	true	impacto	sonó
+Relation	T3	T11	NoRel	true	dirigido	creía
+Relation	T4	T5	NoRel	true	desviado	efectuar
+Relation	T6	T7	NoRel	true	go-around	impacto
+Relation	T7	T16	NoRel	true	impacto	impacto
+Relation	T7	T9	NoRel	true	impacto	impactó
+Relation	T8	T15	NoRel	true	balanceó	sonó
+Relation	T8	T2	NoRel	true	balanceó	afirmaba
+Relation	T8	T7	NoRel	true	balanceó	impacto
+Relation	T9	T0	NoRel	true	impactó	informe
+Relation	T9	T17	NoRel	true	impactó	deficiencias
+Relation	T9	T3	NoRel	true	impactó	dirigido

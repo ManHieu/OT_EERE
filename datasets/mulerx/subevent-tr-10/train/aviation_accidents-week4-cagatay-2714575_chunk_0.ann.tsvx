@@ -1,0 +1,22 @@
+Text	26 Aralık 1941 günü Aeroflot tarafından işletilen bir Tupolev TB - 3 ( ANT - 6 modelinin kargo - yolcu versiyonu ) ; Almatı Havalimanı'ndan Abay Havalimanı'na giderken Dmitriyevka , Kazakistan SSC'nin 6 km kuzeybatısına düştü ve bunun sonucunda uçakta bulunan Kazakistan SSC yöneticileri de dahil 34 kişiden 26'sı öldü .	Bu olay , Kazakistan'da belgelenen ilk uçak kazasıdır .	Kaza yapan uçak , Sivil Hava Filosu Kazakistan Bölgesel İdaresi , Aeroflot'a ait bir Tupolev TB - 3 CCCP - L3043 idi .	1939'da üretildi ( fabrika numarası 22182 ) ve aynı yıl Sivil Hava Filosu Kazakistan Bölgesel İdaresi , Aeroflot'a teslim edildi .	Uçak kaza yaptığında 2.150 uçuş saatine sahipti .
+Event	T0	işletilen	EVENT	40
+Event	T1	düştü	EVENT	220
+Event	T2	öldü	EVENT	314
+Event	T3	olay	EVENT	324
+Event	T4	belgelenen	EVENT	345
+Event	T5	kazasıdır	EVENT	365
+Event	T7	üretildi	EVENT	504
+Event	T9	uçuş	EVENT	654
+Event	T10	sahipti	EVENT	667
+Event	T6	Kaza	EVENT	377
+Event	T8	teslim edildi	EVENT	611
+Relation	T0	T5	NoRel	true	işletilen	kazasıdır
+Relation	T0	T6	NoRel	true	işletilen	Kaza
+Relation	T1	T7	NoRel	true	düştü	üretildi
+Relation	T10	T6	NoRel	true	sahipti	Kaza
+Relation	T3	T1	NoRel	true	olay	düştü
+Relation	T3	T4	NoRel	true	olay	belgelenen
+Relation	T3	T5	NoRel	true	olay	kazasıdır
+Relation	T4	T3	NoRel	true	belgelenen	olay
+Relation	T6	T0	NoRel	true	Kaza	işletilen
+Relation	T9	T8	NoRel	true	uçuş	teslim edildi

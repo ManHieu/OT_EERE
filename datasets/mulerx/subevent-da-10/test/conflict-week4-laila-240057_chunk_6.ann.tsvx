@@ -1,0 +1,36 @@
+Text	Mozambiquiske civile var RENAMOs primære mål i krigen , selv om de også angreb styresmagtens installationer og økonomisk infrastruktur .	RENAMO var berygtet for brug af børnesoldater .	FRELIMO-administrationen ledet af præsident Machel blev økonomisk ruineret af RENAMOs oprør .	Den militære og diplomatiske entente med Sovjetunionen kunne ikke lette nationens økonomiske elendighed og tørke .	Resultatet var , at Machel signerede en ikke-aggressionspagt med Sydafrika , kendt som Nkomati-aftalen .
+Event	T0	krigen	EVENT	47
+Event	T1	angreb	EVENT	72
+Event	T2	berygtet	EVENT	148
+Event	T3	brug	EVENT	161
+Event	T4	ruineret	EVENT	251
+Event	T5	oprør	EVENT	271
+Event	T6	entente	EVENT	308
+Event	T7	elendighed	EVENT	372
+Event	T8	tørke	EVENT	386
+Event	T9	signerede	EVENT	421
+Event	T10	mål	EVENT	41
+Event	T11	økonomiske	EVENT	361
+Event	T12	lette	EVENT	345
+Relation	T1	T5	NoRel	true	angreb	oprør
+Relation	T10	T0	NoRel	true	mål	krigen
+Relation	T10	T11	NoRel	true	mål	økonomiske
+Relation	T10	T7	NoRel	true	mål	elendighed
+Relation	T10	T9	NoRel	true	mål	signerede
+Relation	T11	T0	NoRel	true	økonomiske	krigen
+Relation	T11	T8	NoRel	true	økonomiske	tørke
+Relation	T12	T10	NoRel	true	lette	mål
+Relation	T12	T5	NoRel	true	lette	oprør
+Relation	T2	T12	NoRel	true	berygtet	lette
+Relation	T2	T3	NoRel	true	berygtet	brug
+Relation	T3	T2	NoRel	true	brug	berygtet
+Relation	T3	T7	NoRel	true	brug	elendighed
+Relation	T4	T10	NoRel	true	ruineret	mål
+Relation	T4	T11	NoRel	true	ruineret	økonomiske
+Relation	T4	T2	NoRel	true	ruineret	berygtet
+Relation	T4	T7	NoRel	true	ruineret	elendighed
+Relation	T7	T12	NoRel	true	elendighed	lette
+Relation	T8	T11	NoRel	true	tørke	økonomiske
+Relation	T8	T12	NoRel	true	tørke	lette
+Relation	T9	T5	NoRel	true	signerede	oprør
+Relation	T9	T6	NoRel	true	signerede	entente

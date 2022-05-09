@@ -1,0 +1,27 @@
+Text	19. yüzyılda yaygın biçimde Tasmanya yerlilerinin modern insan ( _ Homo sapiens sapiens _ ) ile onun primat ataları arasında bağlantı halkası olduğuna inanılırdı .	Evrim ( _ naturalistic evolution _ ) varsayımları göz önüne alındığında , Tasmanya yerlileri genellikle insandan daha aşağıda görülmüş ve sonuç olarak birçok kişi onlara hayvanlar gibi davranmanın ahlaksız ve yanlış olmadığına kendini inandırmıştır .	150px | küçükresim | sol | 14.000 yıl önce Avrustralya ile Tasmanya'nın Bass Boğazı oluşmadan önceki tahmini birleşik hâli Tasmanya'ya insanların 40.000 yıl önce son buzul çağında Avustralya ile Tasmanya arasında Bass Boğazı'nda bir kara köprüsü yoluyla geldikleri düşünülüyor .	Buzların erimeye başlamasıyla birlikte kara köprüsünün denizin altında kalması sonucu Avrupalıların 18. yüzyıl sonu ile 19. yüzyıl başlarında gelmesine kadar yaklaşık 8.000 yıl boyunca Avustralya'dan izole yaşadıkları genetik araştırmalarla desteklenmektedir .	Diğer insanlardan binlerce yıldır ayrı kalıp izole ada yaşamı sürdüren yerlilerin konuştuğu Tasmanya dilleri hakkında bilinenler azdır ve başka dillerle tatmin_edici bir ilgi kurulamamıştır .
+Event	T0	inanılırdı	EVENT	151
+Event	T1	düşünülüyor	EVENT	680
+Event	T2	kalması	EVENT	765
+Event	T3	gelmesine	EVENT	836
+Event	T4	yaşadıkları	EVENT	900
+Event	T5	desteklenmektedir	EVENT	935
+Event	T6	davranmanın	EVENT	349
+Event	T7	görülmüş	EVENT	290
+Event	T8	başlamasıyla	EVENT	711
+Event	T9	araştırmalarla	EVENT	920
+Relation	T7	T6	CauseEffect	true	görülmüş	davranmanın
+Relation	T6	T7	EffectCause	true	davranmanın	görülmüş
+Relation	T8	T2	CauseEffect	true	başlamasıyla	kalması
+Relation	T2	T8	EffectCause	true	kalması	başlamasıyla
+Relation	T9	T5	CauseEffect	true	araştırmalarla	desteklenmektedir
+Relation	T5	T9	EffectCause	true	desteklenmektedir	araştırmalarla
+Relation	T1	T5	NoRel	true	düşünülüyor	desteklenmektedir
+Relation	T1	T9	NoRel	true	düşünülüyor	araştırmalarla
+Relation	T2	T4	NoRel	true	kalması	yaşadıkları
+Relation	T4	T6	NoRel	true	yaşadıkları	davranmanın
+Relation	T4	T7	NoRel	true	yaşadıkları	görülmüş
+Relation	T4	T8	NoRel	true	yaşadıkları	başlamasıyla
+Relation	T6	T1	NoRel	true	davranmanın	düşünülüyor
+Relation	T6	T3	NoRel	true	davranmanın	gelmesine
+Relation	T9	T1	NoRel	true	araştırmalarla	düşünülüyor
+Relation	T9	T3	NoRel	true	araştırmalarla	gelmesine

@@ -1,0 +1,70 @@
+Text	El Monje de San Denis dejó una crónica muy vívida del evento " cuatro hombres se quemaron vivos , sus genitales llameantes cayeron al suelo ... soltando un chorro de sangre " .	Solo dos bailarines lograron sobrevivir : el rey , gracias a la rápida reacción de la Duquesa de Berry , y el Sieur de Nantouillet , quien se zambulló en una cuba con vino y permaneció allí hasta que se extinguieron las llamas .	El conde de Joigny falleció en la escena ; Yvain de Foix y Aimery Poitiers , hijo del Conde de Valentinois , agonizaron durante dos días con dolorosas quemaduras .	El instigador del evento , Huguet de Guisay , sobrevivió un día más , y según Tuchman ese tiempo lo pasó " maldiciendo e insultando a los otros bailarines , los muertos y los vivos , hasta que expiró " .	Los ciudadanos de París , furiosos por el evento y ante el riesgo que representaba su monarca , le echaban la culpa a los asesores de Carlos .
+Event	T1	crónica	EVENT	31
+Event	T10	permaneció	EVENT	351
+Event	T11	extinguieron	EVENT	380
+Event	T13	falleció	EVENT	425
+Event	T15	agonizaron	EVENT	515
+Event	T16	quemaduras	EVENT	557
+Event	T17	evento	EVENT	588
+Event	T18	sobrevivió	EVENT	616
+Event	T19	maldiciendo	EVENT	677
+Event	T20	insultando	EVENT	691
+Event	T21	expiró	EVENT	763
+Event	T23	evento	EVENT	816
+Event	T24	riesgo	EVENT	833
+Event	T25	echaban	EVENT	873
+Event	T3	evento	EVENT	54
+Event	T4	cayeron	EVENT	123
+Event	T7	sobrevivir	EVENT	206
+Event	T8	reacción	EVENT	248
+Event	T9	zambulló	EVENT	319
+Event	T2	quemaron	EVENT	81
+Relation	T9	T11	CauseEffect	true	zambulló	extinguieron
+Relation	T11	T9	EffectCause	true	extinguieron	zambulló
+Relation	T2	T13	CauseEffect	true	quemaron	falleció
+Relation	T13	T2	EffectCause	true	falleció	quemaron
+Relation	T3	T1	CauseEffect	true	evento	crónica
+Relation	T1	T3	EffectCause	true	crónica	evento
+Relation	T16	T15	CauseEffect	true	quemaduras	agonizaron
+Relation	T15	T16	EffectCause	true	agonizaron	quemaduras
+Relation	T1	T16	NoRel	true	crónica	quemaduras
+Relation	T10	T23	NoRel	true	permaneció	evento
+Relation	T11	T20	NoRel	true	extinguieron	insultando
+Relation	T11	T24	NoRel	true	extinguieron	riesgo
+Relation	T11	T4	NoRel	true	extinguieron	cayeron
+Relation	T13	T23	NoRel	true	falleció	evento
+Relation	T13	T24	NoRel	true	falleció	riesgo
+Relation	T13	T25	NoRel	true	falleció	echaban
+Relation	T16	T23	NoRel	true	quemaduras	evento
+Relation	T16	T24	NoRel	true	quemaduras	riesgo
+Relation	T16	T8	NoRel	true	quemaduras	reacción
+Relation	T17	T2	NoRel	true	evento	quemaron
+Relation	T17	T8	NoRel	true	evento	reacción
+Relation	T18	T16	NoRel	true	sobrevivió	quemaduras
+Relation	T19	T15	NoRel	true	maldiciendo	agonizaron
+Relation	T19	T16	NoRel	true	maldiciendo	quemaduras
+Relation	T19	T23	NoRel	true	maldiciendo	evento
+Relation	T19	T25	NoRel	true	maldiciendo	echaban
+Relation	T2	T1	NoRel	true	quemaron	crónica
+Relation	T20	T1	NoRel	true	insultando	crónica
+Relation	T20	T3	NoRel	true	insultando	evento
+Relation	T20	T9	NoRel	true	insultando	zambulló
+Relation	T23	T13	NoRel	true	evento	falleció
+Relation	T23	T3	NoRel	true	evento	evento
+Relation	T23	T4	NoRel	true	evento	cayeron
+Relation	T24	T3	NoRel	true	riesgo	evento
+Relation	T3	T13	NoRel	true	evento	falleció
+Relation	T3	T16	NoRel	true	evento	quemaduras
+Relation	T3	T8	NoRel	true	evento	reacción
+Relation	T4	T11	NoRel	true	cayeron	extinguieron
+Relation	T4	T13	NoRel	true	cayeron	falleció
+Relation	T4	T16	NoRel	true	cayeron	quemaduras
+Relation	T4	T18	NoRel	true	cayeron	sobrevivió
+Relation	T7	T1	NoRel	true	sobrevivir	crónica
+Relation	T7	T17	NoRel	true	sobrevivir	evento
+Relation	T7	T24	NoRel	true	sobrevivir	riesgo
+Relation	T8	T25	NoRel	true	reacción	echaban
+Relation	T9	T10	NoRel	true	zambulló	permaneció
+Relation	T9	T19	NoRel	true	zambulló	maldiciendo
+Relation	T9	T2	NoRel	true	zambulló	quemaron
+Relation	T9	T25	NoRel	true	zambulló	echaban

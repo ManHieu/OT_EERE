@@ -1,0 +1,13 @@
+Text	" _ diyerek yorumladı .	Müge Anlı'nın ise atv'deki programında sarf ettiği sözler , halkın tepkisini çekti .	Yapılan bu yorumlar üzerine RTÜK , inceleme başlattı .	Bu sözlerin sosyal medyada yayılmasının ardından sunucunun kanaldan istifa etmesi ve kanalın konuyla ilgili açıklama yapması beklendi .	Çağdaş Gazeteciler Derneği ; ırkçılık içerdiğini belirttikleri bu yoruma yer vermenin suç olduğu gerekçesiyle , Türk Ceza Kanunu'nun 216. maddesine ( halkı kin ve düşmanlığa tahrik veya aşağılama ) dayanarak dava açtı .
+Event	T0	çekti	EVENT	101
+Event	T1	yorumlar	EVENT	120
+Event	T2	başlattı	EVENT	153
+Event	T3	yayılmasının	EVENT	191
+Event	T5	beklendi	EVENT	289
+Event	T6	belirttikleri	EVENT	349
+Event	T9	açtı	EVENT	513
+Event	T10	sözler	EVENT	75
+Relation	T6	T5	NoRel	true	belirttikleri	beklendi
+Relation	T9	T2	NoRel	true	açtı	başlattı
+Relation	T9	T5	NoRel	true	açtı	beklendi
+Relation	T9	T6	NoRel	true	açtı	belirttikleri

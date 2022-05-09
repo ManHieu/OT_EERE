@@ -1,0 +1,21 @@
+Text	right | thumb | Oppenheimer og general Groves poserer ved resterne af det tårn , Trinity blev detoneret i , et par uger efter testen .	Denne model var ikke blevet testet , men den simple teknik , bomben var baseret på , gjorde forskerne sikre på , den ville virke .	Desuden var der kun U-235 nok til én bombe .	Den anden bombe , Fat Man , der blev kastet tre dage senere mod Nagasaki , var af samme type som Trinity .	Det var en plutoniumbombe , der baserede sig på ” implosions-designet ” .
+Event	T0	poserer	EVENT	46
+Event	T1	detoneret	EVENT	94
+Event	T2	testen	EVENT	126
+Event	T3	testet	EVENT	163
+Event	T4	gjorde	EVENT	220
+Event	T5	virke	EVENT	258
+Event	T6	kastet	EVENT	348
+Event	T7	baserede	EVENT	450
+Event	T8	teknik	EVENT	187
+Event	T9	sikre	EVENT	237
+Relation	T0	T7	NoRel	true	poserer	baserede
+Relation	T0	T8	NoRel	true	poserer	teknik
+Relation	T1	T8	NoRel	true	detoneret	teknik
+Relation	T2	T5	NoRel	true	testen	virke
+Relation	T2	T6	NoRel	true	testen	kastet
+Relation	T4	T0	NoRel	true	gjorde	poserer
+Relation	T4	T6	NoRel	true	gjorde	kastet
+Relation	T4	T9	NoRel	true	gjorde	sikre
+Relation	T5	T2	NoRel	true	virke	testen
+Relation	T5	T9	NoRel	true	virke	sikre

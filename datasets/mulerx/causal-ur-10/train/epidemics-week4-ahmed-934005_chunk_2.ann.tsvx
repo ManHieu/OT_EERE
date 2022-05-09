@@ -1,0 +1,49 @@
+Text	انفیکشن کے خطرے کے پیش نظر یہاں بھی حکومت نے مارچ 2020ء کے بعد سے لاک ڈاؤن نافذ کر دیا تھا ۔	اس وبا کو پھیلنے سے روکنے کے لیے حکومت نے متعدد پابندیاں بھی عائد کر دی ہیں ۔	لیکن ان سب کے درمیان میں اب نیپال میں ایک نیا چیلنج ابھرتا نظر آتا ہے اور یہ چیلنج ملک کے مذہبی رہنماؤں اور پجاریوں کی جانب سے ہے ۔	اس وقت نیپال کے تمام مندر پابندیوں کے تحت بند ہیں اور زیادہ لوگوں کے لیے ایک جگہ جمع ہونا ممنوع ہے ۔	حکام کا کہنا ہے کہ اکتوبر سے نومبر یعنی دسہرا اور دیوالی تک ان پابندیوں کو رکھا جائے گا ۔
+Event	T0	انفیکشن	EVENT	0
+Event	T1	نافذ	EVENT	75
+Event	T2	پھیلنے	EVENT	103
+Event	T3	روکنے	EVENT	113
+Event	T4	پابندیاں	EVENT	141
+Event	T5	عائد	EVENT	154
+Event	T6	کہنا	EVENT	412
+Event	T7	پابندیوں	EVENT	467
+Event	T9	خطرے	EVENT	11
+Event	T10	پیش	EVENT	19
+Event	T11	لاک ڈاؤن	EVENT	66
+Event	T12	وبا	EVENT	96
+Event	T13	ابھرتا	EVENT	223
+Event	T14	پابندیوں	EVENT	329
+Event	T15	بند	EVENT	345
+Event	T16	جمع	EVENT	384
+Relation	T10	T11	CauseEffect	true	پیش	لاک ڈاؤن
+Relation	T11	T10	EffectCause	true	لاک ڈاؤن	پیش
+Relation	T12	T2	CauseEffect	true	وبا	پھیلنے
+Relation	T2	T12	EffectCause	true	پھیلنے	وبا
+Relation	T0	T7	NoRel	true	انفیکشن	پابندیوں
+Relation	T1	T5	NoRel	true	نافذ	عائد
+Relation	T10	T1	NoRel	true	پیش	نافذ
+Relation	T10	T4	NoRel	true	پیش	پابندیاں
+Relation	T11	T1	NoRel	true	لاک ڈاؤن	نافذ
+Relation	T14	T1	NoRel	true	پابندیوں	نافذ
+Relation	T14	T12	NoRel	true	پابندیوں	وبا
+Relation	T14	T2	NoRel	true	پابندیوں	پھیلنے
+Relation	T15	T16	NoRel	true	بند	جمع
+Relation	T15	T5	NoRel	true	بند	عائد
+Relation	T16	T0	NoRel	true	جمع	انفیکشن
+Relation	T16	T11	NoRel	true	جمع	لاک ڈاؤن
+Relation	T16	T12	NoRel	true	جمع	وبا
+Relation	T16	T7	NoRel	true	جمع	پابندیوں
+Relation	T2	T11	NoRel	true	پھیلنے	لاک ڈاؤن
+Relation	T2	T5	NoRel	true	پھیلنے	عائد
+Relation	T3	T11	NoRel	true	روکنے	لاک ڈاؤن
+Relation	T3	T12	NoRel	true	روکنے	وبا
+Relation	T3	T2	NoRel	true	روکنے	پھیلنے
+Relation	T3	T4	NoRel	true	روکنے	پابندیاں
+Relation	T3	T6	NoRel	true	روکنے	کہنا
+Relation	T4	T3	NoRel	true	پابندیاں	روکنے
+Relation	T5	T1	NoRel	true	عائد	نافذ
+Relation	T5	T13	NoRel	true	عائد	ابھرتا
+Relation	T6	T16	NoRel	true	کہنا	جمع
+Relation	T9	T15	NoRel	true	خطرے	بند
+Relation	T9	T3	NoRel	true	خطرے	روکنے
+Relation	T9	T5	NoRel	true	خطرے	عائد

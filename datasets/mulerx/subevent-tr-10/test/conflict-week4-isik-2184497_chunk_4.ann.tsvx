@@ -1,0 +1,35 @@
+Text	Saldırıdan bir gün sonra PKK'ya yakın internet sitelerinde Midyat saldırısının ' Dirok Amed ' kod adlı İshak Katar tarafından gerçekleştirildiği açıklanarak saldırı üstlenildi .	Midyat İlçe Emniyet Müdürlüğüne düzenlenen saldırıyı takip etmek üzere Diyarbakır'dan ilçeye giden gazeteciler , olay yerinde görüntü ve fotoğraf alırken bir grubun fiziksel saldırısına uğradı .	Çeşitli ajanslara çalışan Mahmut Bozarslan , Sertaç Kayar ve Hatice Kamer adlı gazeteciler yaralandı ve Midyat Devlet Hastanesi'ne götürülerek tedavi altına alındı .	Bu arada saldırıya uğrayan Emniyet Müdürlüğü binası önünde toplanan bir grup , görüntü ve fotoğraf almak isteyen gazetecilere sert tepki gösterip , çalışmalarını engelledi .	Sözlü ve fiziki tepkilere uğrayan gazeteciler bölgeden ayrılmak zorunda kaldı .
+Event	T0	Saldırıdan	EVENT	0
+Event	T1	saldırısının	EVENT	66
+Event	T2	üstlenildi	EVENT	165
+Event	T4	uğradı	EVENT	364
+Event	T5	yaralandı	EVENT	464
+Event	T6	alındı	EVENT	530
+Event	T7	gösterip	EVENT	676
+Event	T8	engelledi	EVENT	701
+Event	T11	açıklanarak	EVENT	145
+Event	T12	alırken	EVENT	324
+Event	T13	giden	EVENT	271
+Event	T3	çalışan	EVENT	391
+Event	T14	götürülerek	EVENT	504
+Event	T9	tepkilere	EVENT	729
+Event	T10	kaldı	EVENT	785
+Relation	T1	T5	NoRel	true	saldırısının	yaralandı
+Relation	T10	T1	NoRel	true	kaldı	saldırısının
+Relation	T11	T14	NoRel	true	açıklanarak	götürülerek
+Relation	T12	T0	NoRel	true	alırken	Saldırıdan
+Relation	T12	T14	NoRel	true	alırken	götürülerek
+Relation	T13	T1	NoRel	true	giden	saldırısının
+Relation	T2	T0	NoRel	true	üstlenildi	Saldırıdan
+Relation	T2	T9	NoRel	true	üstlenildi	tepkilere
+Relation	T3	T1	NoRel	true	çalışan	saldırısının
+Relation	T3	T12	NoRel	true	çalışan	alırken
+Relation	T5	T7	NoRel	true	yaralandı	gösterip
+Relation	T6	T0	NoRel	true	alındı	Saldırıdan
+Relation	T6	T4	NoRel	true	alındı	uğradı
+Relation	T8	T0	NoRel	true	engelledi	Saldırıdan
+Relation	T8	T10	NoRel	true	engelledi	kaldı
+Relation	T8	T4	NoRel	true	engelledi	uğradı
+Relation	T8	T5	NoRel	true	engelledi	yaralandı
+Relation	T8	T9	NoRel	true	engelledi	tepkilere
+Relation	T9	T12	NoRel	true	tepkilere	alırken

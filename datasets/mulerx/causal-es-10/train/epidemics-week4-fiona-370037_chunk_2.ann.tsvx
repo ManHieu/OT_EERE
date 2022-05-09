@@ -1,0 +1,104 @@
+Text	Regresó a Roma en el año 168 , cuando fue convocado por los dos Augustos , y estuvo presente en un brote entre las tropas estacionadas en Aquileia , durante el invierno de 168- 169 .	Sus observaciones directas y la descripción de los síntomas se encuentran en su tratado _ Methodus medendi _ , bastante breve , por lo que hay que recurrir a otras referencias , repartidas entre sus voluminosos escritos .	Describe la plaga como " grande " y de larga duración , y menciona síntomas como la fiebre , la diarrea y la inflamación de la faringe , así como una erupción en la piel , a veces seca y purulenta , que en ocasiones aparece en el noveno día de la enfermedad . .	El historiador William H. McNeill afirma que la peste antonina y la peste de Cipriano posterior ( 251 - alrededor de 270 ) fueron brotes de dos enfermedades diferentes , uno de la viruela y de sarampión la otra , aunque no necesariamente en ese orden .	La devastación severa que sufrió la población europea por las dos plagas puede indicar que la gente no tuvo una exposición previa a cualquiera de estas enfermedades , que proveía a los supervivientes de inmunidad .
+Event	T0	Regresó	EVENT	0
+Event	T1	convocado	EVENT	42
+Event	T2	brote	EVENT	99
+Event	T3	estacionadas	EVENT	122
+Event	T4	observaciones	EVENT	187
+Event	T5	descripción	EVENT	215
+Event	T6	recurrir	EVENT	330
+Event	T7	repartidas	EVENT	361
+Event	T8	escritos	EVENT	394
+Event	T9	Describe	EVENT	405
+Event	T10	plaga	EVENT	417
+Event	T11	fiebre	EVENT	489
+Event	T12	diarrea	EVENT	501
+Event	T13	inflamación	EVENT	514
+Event	T14	erupción	EVENT	555
+Event	T15	aparece	EVENT	621
+Event	T16	enfermedad	EVENT	652
+Event	T17	afirma	EVENT	701
+Event	T18	peste	EVENT	715
+Event	T19	peste	EVENT	735
+Event	T20	brotes	EVENT	797
+Event	T21	enfermedades	EVENT	811
+Event	T22	sufrió	EVENT	946
+Event	T23	plagas	EVENT	986
+Event	T24	indicar	EVENT	999
+Event	T25	exposición	EVENT	1032
+Event	T26	proveía	EVENT	1091
+Relation	T0	T1	NoRel	true	Regresó	convocado
+Relation	T0	T10	NoRel	true	Regresó	plaga
+Relation	T0	T11	NoRel	true	Regresó	fiebre
+Relation	T0	T15	NoRel	true	Regresó	aparece
+Relation	T0	T16	NoRel	true	Regresó	enfermedad
+Relation	T0	T19	NoRel	true	Regresó	peste
+Relation	T1	T18	NoRel	true	convocado	peste
+Relation	T10	T1	NoRel	true	plaga	convocado
+Relation	T10	T12	NoRel	true	plaga	diarrea
+Relation	T10	T5	NoRel	true	plaga	descripción
+Relation	T11	T1	NoRel	true	fiebre	convocado
+Relation	T11	T13	NoRel	true	fiebre	inflamación
+Relation	T11	T2	NoRel	true	fiebre	brote
+Relation	T12	T15	NoRel	true	diarrea	aparece
+Relation	T12	T6	NoRel	true	diarrea	recurrir
+Relation	T13	T11	NoRel	true	inflamación	fiebre
+Relation	T13	T24	NoRel	true	inflamación	indicar
+Relation	T14	T0	NoRel	true	erupción	Regresó
+Relation	T14	T24	NoRel	true	erupción	indicar
+Relation	T14	T26	NoRel	true	erupción	proveía
+Relation	T14	T4	NoRel	true	erupción	observaciones
+Relation	T15	T2	NoRel	true	aparece	brote
+Relation	T15	T21	NoRel	true	aparece	enfermedades
+Relation	T16	T17	NoRel	true	enfermedad	afirma
+Relation	T17	T19	NoRel	true	afirma	peste
+Relation	T18	T14	NoRel	true	peste	erupción
+Relation	T18	T20	NoRel	true	peste	brotes
+Relation	T18	T21	NoRel	true	peste	enfermedades
+Relation	T18	T23	NoRel	true	peste	plagas
+Relation	T19	T15	NoRel	true	peste	aparece
+Relation	T19	T20	NoRel	true	peste	brotes
+Relation	T2	T17	NoRel	true	brote	afirma
+Relation	T2	T20	NoRel	true	brote	brotes
+Relation	T2	T22	NoRel	true	brote	sufrió
+Relation	T2	T23	NoRel	true	brote	plagas
+Relation	T20	T10	NoRel	true	brotes	plaga
+Relation	T21	T17	NoRel	true	enfermedades	afirma
+Relation	T21	T22	NoRel	true	enfermedades	sufrió
+Relation	T21	T4	NoRel	true	enfermedades	observaciones
+Relation	T22	T21	NoRel	true	sufrió	enfermedades
+Relation	T22	T23	NoRel	true	sufrió	plagas
+Relation	T22	T24	NoRel	true	sufrió	indicar
+Relation	T23	T11	NoRel	true	plagas	fiebre
+Relation	T23	T22	NoRel	true	plagas	sufrió
+Relation	T24	T10	NoRel	true	indicar	plaga
+Relation	T24	T11	NoRel	true	indicar	fiebre
+Relation	T24	T13	NoRel	true	indicar	inflamación
+Relation	T24	T15	NoRel	true	indicar	aparece
+Relation	T24	T19	NoRel	true	indicar	peste
+Relation	T24	T21	NoRel	true	indicar	enfermedades
+Relation	T24	T25	NoRel	true	indicar	exposición
+Relation	T25	T10	NoRel	true	exposición	plaga
+Relation	T25	T13	NoRel	true	exposición	inflamación
+Relation	T25	T14	NoRel	true	exposición	erupción
+Relation	T25	T16	NoRel	true	exposición	enfermedad
+Relation	T25	T18	NoRel	true	exposición	peste
+Relation	T25	T19	NoRel	true	exposición	peste
+Relation	T25	T23	NoRel	true	exposición	plagas
+Relation	T26	T21	NoRel	true	proveía	enfermedades
+Relation	T26	T4	NoRel	true	proveía	observaciones
+Relation	T3	T14	NoRel	true	estacionadas	erupción
+Relation	T3	T16	NoRel	true	estacionadas	enfermedad
+Relation	T3	T22	NoRel	true	estacionadas	sufrió
+Relation	T4	T11	NoRel	true	observaciones	fiebre
+Relation	T4	T14	NoRel	true	observaciones	erupción
+Relation	T4	T2	NoRel	true	observaciones	brote
+Relation	T4	T22	NoRel	true	observaciones	sufrió
+Relation	T5	T12	NoRel	true	descripción	diarrea
+Relation	T7	T22	NoRel	true	repartidas	sufrió
+Relation	T7	T26	NoRel	true	repartidas	proveía
+Relation	T8	T13	NoRel	true	escritos	inflamación
+Relation	T8	T21	NoRel	true	escritos	enfermedades
+Relation	T8	T6	NoRel	true	escritos	recurrir
+Relation	T9	T1	NoRel	true	Describe	convocado
+Relation	T9	T3	NoRel	true	Describe	estacionadas
+Relation	T9	T5	NoRel	true	Describe	descripción

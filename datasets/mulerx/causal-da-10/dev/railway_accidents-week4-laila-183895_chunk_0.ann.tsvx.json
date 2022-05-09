@@ -1,0 +1,1411 @@
+{
+  "id": "railway_accidents-week4-laila-183895_chunk_0.ann.tsvx",
+  "text": "Den 6. januar 1986 kl. 22:36 holdt tog 10266 for \" stop \" foran Hundige Station , idet den udl\u00f8ste togvej ikke kunne komme til udf\u00f8relse p\u00e5 grund af manglende kontrol p\u00e5 et sporskifte .\tTog 40266 der fulgte umiddelbart efter tog 10266 fik efter passagen af Ish\u00f8j T HKT-information om 90 km/t .\tI n\u00e6ste afsnit modtog toget information om 50 km/t , hvorfor lokomotivf\u00f8reren indledte en fuldbremsning .\tDa denne viste sig at v\u00e6re utilstr\u00e6kkelig iv\u00e6rksatte HKT-anl\u00e6gget en n\u00f8dbremsning .\tDa denne heller ikke var tilstr\u00e6kkelig kolliderede 40266 med bagenden af det holdende 10266 .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "holdt",
+      "label": "EVENT",
+      "char_index": 29,
+      "sid": 0,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "udl\u00f8ste",
+      "label": "EVENT",
+      "char_index": 91,
+      "sid": 0,
+      "tid": [
+        19,
+        20
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "kontrol",
+      "label": "EVENT",
+      "char_index": 159,
+      "sid": 0,
+      "tid": [
+        30,
+        31
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "sporskifte",
+      "label": "EVENT",
+      "char_index": 173,
+      "sid": 0,
+      "tid": [
+        33,
+        34
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "fulgte",
+      "label": "EVENT",
+      "char_index": 200,
+      "sid": 1,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "fik",
+      "label": "EVENT",
+      "char_index": 235,
+      "sid": 1,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "passagen",
+      "label": "EVENT",
+      "char_index": 245,
+      "sid": 1,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "modtog",
+      "label": "EVENT",
+      "char_index": 309,
+      "sid": 2,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "information",
+      "label": "EVENT",
+      "char_index": 322,
+      "sid": 2,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "indledte",
+      "label": "EVENT",
+      "char_index": 372,
+      "sid": 2,
+      "tid": [
+        12,
+        13
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "fuldbremsning",
+      "label": "EVENT",
+      "char_index": 384,
+      "sid": 2,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "viste",
+      "label": "EVENT",
+      "char_index": 409,
+      "sid": 3,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "iv\u00e6rksatte",
+      "label": "EVENT",
+      "char_index": 442,
+      "sid": 3,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "n\u00f8dbremsning",
+      "label": "EVENT",
+      "char_index": 469,
+      "sid": 3,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "kolliderede",
+      "label": "EVENT",
+      "char_index": 523,
+      "sid": 4,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "udf\u00f8relse",
+      "label": "EVENT",
+      "char_index": 127,
+      "sid": 0,
+      "tid": [
+        25,
+        26
+      ]
+    },
+    "T16": {
+      "id": "T16",
+      "text": "var",
+      "label": "EVENT",
+      "char_index": 505,
+      "sid": 4,
+      "tid": [
+        4,
+        5
+      ]
+    }
+  },
+  "relation": {
+    "T16-T14": "CauseEffect",
+    "T14-T16": "EffectCause",
+    "T11-T14": "CauseEffect",
+    "T14-T11": "EffectCause",
+    "T7-T10": "CauseEffect",
+    "T10-T7": "EffectCause",
+    "T2-T14": "CauseEffect",
+    "T14-T2": "EffectCause",
+    "T0-T15": "NoRel",
+    "T0-T16": "NoRel",
+    "T0-T8": "NoRel",
+    "T1-T16": "NoRel",
+    "T1-T2": "NoRel",
+    "T11-T15": "NoRel",
+    "T14-T12": "NoRel",
+    "T14-T3": "NoRel",
+    "T14-T4": "NoRel",
+    "T14-T8": "NoRel",
+    "T15-T0": "NoRel",
+    "T15-T10": "NoRel",
+    "T16-T13": "NoRel",
+    "T16-T15": "NoRel",
+    "T16-T3": "NoRel",
+    "T2-T11": "NoRel",
+    "T3-T0": "NoRel",
+    "T3-T15": "NoRel",
+    "T3-T2": "NoRel",
+    "T4-T11": "NoRel",
+    "T5-T1": "NoRel",
+    "T5-T12": "NoRel",
+    "T6-T8": "NoRel",
+    "T6-T9": "NoRel",
+    "T8-T1": "NoRel",
+    "T8-T16": "NoRel",
+    "T8-T6": "NoRel",
+    "T8-T9": "NoRel",
+    "T9-T12": "NoRel",
+    "T9-T14": "NoRel"
+  },
+  "sentence": [
+    [
+      "Den",
+      "6.",
+      "januar",
+      "1986",
+      "kl.",
+      "22:36",
+      "holdt",
+      "tog",
+      "10266",
+      "for",
+      "\"",
+      "stop",
+      "\"",
+      "foran",
+      "Hundige",
+      "Station",
+      ",",
+      "idet",
+      "den",
+      "udl\u00f8ste",
+      "togvej",
+      "ikke",
+      "kunne",
+      "komme",
+      "til",
+      "udf\u00f8relse",
+      "p\u00e5",
+      "grund",
+      "af",
+      "manglende",
+      "kontrol",
+      "p\u00e5",
+      "et",
+      "sporskifte",
+      "."
+    ],
+    [
+      "Tog",
+      "40266",
+      "der",
+      "fulgte",
+      "umiddelbart",
+      "efter",
+      "tog",
+      "10266",
+      "fik",
+      "efter",
+      "passagen",
+      "af",
+      "Ish\u00f8j",
+      "T",
+      "HKT-information",
+      "om",
+      "90",
+      "km/t",
+      "."
+    ],
+    [
+      "I",
+      "n\u00e6ste",
+      "afsnit",
+      "modtog",
+      "toget",
+      "information",
+      "om",
+      "50",
+      "km/t",
+      ",",
+      "hvorfor",
+      "lokomotivf\u00f8reren",
+      "indledte",
+      "en",
+      "fuldbremsning",
+      "."
+    ],
+    [
+      "Da",
+      "denne",
+      "viste",
+      "sig",
+      "at",
+      "v\u00e6re",
+      "utilstr\u00e6kkelig",
+      "iv\u00e6rksatte",
+      "HKT-anl\u00e6gget",
+      "en",
+      "n\u00f8dbremsning",
+      "."
+    ],
+    [
+      "Da",
+      "denne",
+      "heller",
+      "ikke",
+      "var",
+      "tilstr\u00e6kkelig",
+      "kolliderede",
+      "40266",
+      "med",
+      "bagenden",
+      "af",
+      "det",
+      "holdende",
+      "10266",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        6
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        7
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        11
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        11
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        11
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        14
+      ],
+      "flat"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        23
+      ],
+      "mark"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        20
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        20
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        23
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        23
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        23
+      ],
+      "aux"
+    ],
+    [
+      [
+        0,
+        23
+      ],
+      [
+        0,
+        6
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        25
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        23
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        30
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        27
+      ],
+      [
+        0,
+        26
+      ],
+      "fixed"
+    ],
+    [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        26
+      ],
+      "fixed"
+    ],
+    [
+      [
+        0,
+        29
+      ],
+      [
+        0,
+        30
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        30
+      ],
+      [
+        0,
+        23
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        31
+      ],
+      [
+        0,
+        33
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        32
+      ],
+      [
+        0,
+        33
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        33
+      ],
+      [
+        0,
+        30
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        34
+      ],
+      [
+        0,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        8
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      "acl:relcl"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      "obl:tmod"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        10
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        8
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        10
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        12
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        12
+      ],
+      "flat"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        17
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        17
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        17
+      ],
+      [
+        1,
+        14
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        18
+      ],
+      [
+        1,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        5
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        7
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        12
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        5
+      ],
+      "acl:relcl"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        12
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        2
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        7
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "cop"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        2
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        7
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        7
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        5
+      ],
+      "mark"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        5
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      "cop"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        6
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        13
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        9
+      ],
+      "nmod"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        11
+      ],
+      "acl:relcl"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        11
+      ],
+      "nummod"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        6
+      ],
+      "punct"
+    ]
+  ]
+}

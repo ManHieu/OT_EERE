@@ -1,0 +1,30 @@
+Text	21 Ekim’de Saksonya İşyeri konseyleri , 140 fabrika konseyi , 120 sendika şubesi , 79 kontrol komitesi , 66 parti şubesi ve SPD’linde dahil olduğu 498 delegeyle bir toplantı gerçekleştirdi .	SPD’nin genel grev ve ayaklanmadan yana olmadığı ortaya çıkınca işçilerin büyük çoğunluğu KPD’den yana olmasına rağmen , KPD tek başına grev çağrısı yapmaya cesaret edemedi .	Saksonya ve Thüringen’deki “ işçi hükûmetleri ” mücadele edilmeksizin yıkıldı .	Sadece merkezin kararırından haberi olmayan KPD’nin Hamburg örgütü 23 Ekim’de ayaklandı .	İşçi sınıfından kopuk girişilen bu ayaklanma başarısızlıkla sonuçlandı .
+Event	T1	grev	EVENT	205
+Event	T2	ayaklanmadan	EVENT	213
+Event	T3	mücadele	EVENT	414
+Event	T4	yıkıldı	EVENT	436
+Event	T5	ayaklandı	EVENT	524
+Event	T6	girişilen	EVENT	558
+Event	T8	toplantı	EVENT	165
+Event	T9	çağrısı	EVENT	332
+Event	T10	kararırından	EVENT	462
+Event	T11	ayaklanma	EVENT	571
+Event	T7	başarısızlıkla	EVENT	581
+Event	T12	ortaya çıkınca	EVENT	240
+Relation	T6	T7	CauseEffect	true	girişilen	başarısızlıkla
+Relation	T7	T6	EffectCause	true	başarısızlıkla	girişilen
+Relation	T1	T12	NoRel	true	grev	ortaya çıkınca
+Relation	T12	T2	NoRel	true	ortaya çıkınca	ayaklanmadan
+Relation	T12	T7	NoRel	true	ortaya çıkınca	başarısızlıkla
+Relation	T2	T1	NoRel	true	ayaklanmadan	grev
+Relation	T2	T4	NoRel	true	ayaklanmadan	yıkıldı
+Relation	T4	T8	NoRel	true	yıkıldı	toplantı
+Relation	T5	T10	NoRel	true	ayaklandı	kararırından
+Relation	T5	T2	NoRel	true	ayaklandı	ayaklanmadan
+Relation	T5	T6	NoRel	true	ayaklandı	girişilen
+Relation	T6	T1	NoRel	true	girişilen	grev
+Relation	T7	T10	NoRel	true	başarısızlıkla	kararırından
+Relation	T7	T12	NoRel	true	başarısızlıkla	ortaya çıkınca
+Relation	T8	T4	NoRel	true	toplantı	yıkıldı
+Relation	T9	T3	NoRel	true	çağrısı	mücadele
+Relation	T9	T6	NoRel	true	çağrısı	girişilen

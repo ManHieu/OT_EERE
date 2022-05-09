@@ -1,0 +1,44 @@
+Text	9 Eylül günü , fırtınanın dış şeridindeki yağmurlar güneydoğu Kuzey Karolina'yı vurmaya başladı .	Kıyı boyunca şiddetli rüzgârlar meydana geldi ve Frisco'da rüzgârın hızı saatte 71 kilometreye ulaştı .	Rüzgâr fırtınaları bazen daha da güçlü bir seviyeye ulaştı , Ocracoke'ta rüzgârın hızı saatte 98 kilometreye ulaştı .	Kuzey Karolina kıyısı boyunca , yükseliği 3.0 metre ile 3.7 metre arasında değişen dalgalar oluştu .	Şiddetli akıntılar yüzünden pek çok yüzücü cankurtarana ihtiyaç duydu .
+Event	T0	fırtınanın	EVENT	15
+Event	T1	yağmurlar	EVENT	42
+Event	T2	başladı	EVENT	88
+Event	T3	geldi	EVENT	138
+Event	T4	ulaştı	EVENT	193
+Event	T5	ulaştı	EVENT	254
+Event	T6	ulaştı	EVENT	311
+Event	T7	oluştu	EVENT	412
+Event	T8	akıntılar	EVENT	430
+Event	T9	duydu	EVENT	485
+Event	T10	rüzgârlar	EVENT	120
+Event	T11	fırtınaları	EVENT	209
+Relation	T0	T1	CauseEffect	true	fırtınanın	yağmurlar
+Relation	T1	T0	EffectCause	true	yağmurlar	fırtınanın
+Relation	T1	T2	CauseEffect	true	yağmurlar	başladı
+Relation	T2	T1	EffectCause	true	başladı	yağmurlar
+Relation	T10	T4	CauseEffect	true	rüzgârlar	ulaştı
+Relation	T4	T10	EffectCause	true	ulaştı	rüzgârlar
+Relation	T10	T11	CauseEffect	true	rüzgârlar	fırtınaları
+Relation	T11	T10	EffectCause	true	fırtınaları	rüzgârlar
+Relation	T11	T5	CauseEffect	true	fırtınaları	ulaştı
+Relation	T5	T11	EffectCause	true	ulaştı	fırtınaları
+Relation	T5	T6	CauseEffect	true	ulaştı	ulaştı
+Relation	T6	T5	EffectCause	true	ulaştı	ulaştı
+Relation	T11	T7	CauseEffect	true	fırtınaları	oluştu
+Relation	T7	T11	EffectCause	true	oluştu	fırtınaları
+Relation	T7	T8	CauseEffect	true	oluştu	akıntılar
+Relation	T8	T7	EffectCause	true	akıntılar	oluştu
+Relation	T8	T9	CauseEffect	true	akıntılar	duydu
+Relation	T9	T8	EffectCause	true	duydu	akıntılar
+Relation	T0	T11	NoRel	true	fırtınanın	fırtınaları
+Relation	T1	T4	NoRel	true	yağmurlar	ulaştı
+Relation	T10	T3	NoRel	true	rüzgârlar	geldi
+Relation	T2	T0	NoRel	true	başladı	fırtınanın
+Relation	T2	T3	NoRel	true	başladı	geldi
+Relation	T2	T7	NoRel	true	başladı	oluştu
+Relation	T2	T8	NoRel	true	başladı	akıntılar
+Relation	T2	T9	NoRel	true	başladı	duydu
+Relation	T4	T8	NoRel	true	ulaştı	akıntılar
+Relation	T6	T4	NoRel	true	ulaştı	ulaştı
+Relation	T7	T3	NoRel	true	oluştu	geldi
+Relation	T8	T11	NoRel	true	akıntılar	fırtınaları
+Relation	T9	T6	NoRel	true	duydu	ulaştı

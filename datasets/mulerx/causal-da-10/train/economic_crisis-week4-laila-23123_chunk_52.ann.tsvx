@@ -1,0 +1,34 @@
+Text	Senere i livet blev Mendelssohn involveret i litterære stridigheder med blandt andet schweizeren Johann Kaspar Lavater omkring Jesus' guddommelighed .	Mendelssohns helbred blev nedbrudt af stridighederne , og han koncentrerede sig om oversættelsen af dele Det gamle Testamente fra hebraisk til tysk , med mange kommentarer .	Den nok mest kendte tyske oplysningsfilosof var Immanuel Kant .	Hans virke faldt i sidste halvdel af århundredet , og han formåede at opleve både højdepunktet og afslutningen af oplysningstiden .	Med sit værk _ Beantwortung der Frage : Was Ist Aufklärung ? _ fra 1784 definerede han oplysningstiden .
+Event	T0	involveret	EVENT	32
+Event	T1	stridigheder	EVENT	55
+Event	T2	nedbrudt	EVENT	177
+Event	T3	stridighederne	EVENT	189
+Event	T4	koncentrerede	EVENT	213
+Event	T5	kommentarer	EVENT	311
+Event	T6	faldt	EVENT	400
+Event	T7	formåede	EVENT	447
+Event	T8	opleve	EVENT	459
+Event	T9	afslutningen	EVENT	487
+Event	T10	definerede	EVENT	593
+Event	T11	livet	EVENT	9
+Event	T12	kendte	EVENT	338
+Relation	T3	T2	CauseEffect	true	stridighederne	nedbrudt
+Relation	T2	T3	EffectCause	true	nedbrudt	stridighederne
+Relation	T0	T10	NoRel	true	involveret	definerede
+Relation	T0	T9	NoRel	true	involveret	afslutningen
+Relation	T1	T5	NoRel	true	stridigheder	kommentarer
+Relation	T1	T6	NoRel	true	stridigheder	faldt
+Relation	T10	T4	NoRel	true	definerede	koncentrerede
+Relation	T11	T6	NoRel	true	livet	faldt
+Relation	T12	T0	NoRel	true	kendte	involveret
+Relation	T12	T11	NoRel	true	kendte	livet
+Relation	T12	T3	NoRel	true	kendte	stridighederne
+Relation	T2	T11	NoRel	true	nedbrudt	livet
+Relation	T3	T4	NoRel	true	stridighederne	koncentrerede
+Relation	T4	T1	NoRel	true	koncentrerede	stridigheder
+Relation	T4	T11	NoRel	true	koncentrerede	livet
+Relation	T4	T9	NoRel	true	koncentrerede	afslutningen
+Relation	T5	T7	NoRel	true	kommentarer	formåede
+Relation	T8	T0	NoRel	true	opleve	involveret
+Relation	T9	T1	NoRel	true	afslutningen	stridigheder
+Relation	T9	T11	NoRel	true	afslutningen	livet

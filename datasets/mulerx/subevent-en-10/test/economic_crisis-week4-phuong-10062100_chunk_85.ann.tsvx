@@ -1,0 +1,116 @@
+Text	Bank writedowns and losses on these investments totaled $ 523 billion .	Critics such as the FCIC argue the mistaken credit ratings stemmed from " flawed computer models , the pressure from financial firms that paid for the ratings , the relentless drive for market share , the lack of resources to do the job despite record profits , and the absence of meaningful public oversight " .	Structured investment was very profitable to the agencies and by 2007 accounted for just under half of Moody 's total ratings revenue and all of the revenue growth .	But profits were not guaranteed , and issuers played the agencies off one another , ' shopping ' around to find the best ratings , sometimes openly threatening to cut off business after insufficiently generous ratings .	Thus there was a conflict of interest between accommodating clients – for whom higher ratings meant higher earnings – and accurately rating the debt for the benefit of the debt buyer / investors – who provided zero revenue to the agencies .
+Event	T0	writedowns	EVENT	5
+Event	T1	losses	EVENT	20
+Event	T2	totaled	EVENT	48
+Event	T3	argue	EVENT	97
+Event	T4	mistaken	EVENT	107
+Event	T5	stemmed	EVENT	131
+Event	T6	pressure	EVENT	175
+Event	T7	paid	EVENT	210
+Event	T9	profits	EVENT	324
+Event	T11	accounted	EVENT	455
+Event	T12	growth	EVENT	542
+Event	T14	played	EVENT	597
+Event	T15	shopping	EVENT	637
+Event	T16	find	EVENT	658
+Event	T17	threatening	EVENT	699
+Event	T18	ratings	EVENT	761
+Event	T19	conflict	EVENT	788
+Event	T20	accommodating	EVENT	817
+Event	T21	meant	EVENT	865
+Event	T22	rating	EVENT	904
+Event	T23	provided	EVENT	972
+Event	T24	flawed computer models	EVENT	146
+Event	T8	relentless drive	EVENT	237
+Event	T25	lack of resources	EVENT	277
+Event	T26	absence	EVENT	342
+Event	T27	profitable	EVENT	416
+Event	T10	Structured investment	EVENT	385
+Event	T13	not guaranteed	EVENT	568
+Event	T28	higher ratings	EVENT	850
+Event	T29	higher earnings	EVENT	871
+Relation	T0	T11	NoRel	true	writedowns	accounted
+Relation	T0	T24	NoRel	true	writedowns	flawed computer models
+Relation	T0	T25	NoRel	true	writedowns	lack of resources
+Relation	T0	T6	NoRel	true	writedowns	pressure
+Relation	T0	T9	NoRel	true	writedowns	profits
+Relation	T1	T15	NoRel	true	losses	shopping
+Relation	T1	T21	NoRel	true	losses	meant
+Relation	T1	T27	NoRel	true	losses	profitable
+Relation	T10	T1	NoRel	true	Structured investment	losses
+Relation	T10	T13	NoRel	true	Structured investment	not guaranteed
+Relation	T11	T4	NoRel	true	accounted	mistaken
+Relation	T11	T8	NoRel	true	accounted	relentless drive
+Relation	T12	T14	NoRel	true	growth	played
+Relation	T12	T3	NoRel	true	growth	argue
+Relation	T12	T6	NoRel	true	growth	pressure
+Relation	T13	T21	NoRel	true	not guaranteed	meant
+Relation	T13	T9	NoRel	true	not guaranteed	profits
+Relation	T14	T0	NoRel	true	played	writedowns
+Relation	T14	T10	NoRel	true	played	Structured investment
+Relation	T14	T12	NoRel	true	played	growth
+Relation	T14	T17	NoRel	true	played	threatening
+Relation	T14	T18	NoRel	true	played	ratings
+Relation	T14	T25	NoRel	true	played	lack of resources
+Relation	T14	T29	NoRel	true	played	higher earnings
+Relation	T14	T4	NoRel	true	played	mistaken
+Relation	T15	T0	NoRel	true	shopping	writedowns
+Relation	T15	T22	NoRel	true	shopping	rating
+Relation	T16	T1	NoRel	true	find	losses
+Relation	T16	T27	NoRel	true	find	profitable
+Relation	T17	T23	NoRel	true	threatening	provided
+Relation	T18	T14	NoRel	true	ratings	played
+Relation	T18	T24	NoRel	true	ratings	flawed computer models
+Relation	T18	T25	NoRel	true	ratings	lack of resources
+Relation	T19	T15	NoRel	true	conflict	shopping
+Relation	T19	T29	NoRel	true	conflict	higher earnings
+Relation	T2	T18	NoRel	true	totaled	ratings
+Relation	T2	T19	NoRel	true	totaled	conflict
+Relation	T2	T20	NoRel	true	totaled	accommodating
+Relation	T20	T14	NoRel	true	accommodating	played
+Relation	T20	T17	NoRel	true	accommodating	threatening
+Relation	T20	T27	NoRel	true	accommodating	profitable
+Relation	T21	T13	NoRel	true	meant	not guaranteed
+Relation	T21	T18	NoRel	true	meant	ratings
+Relation	T21	T2	NoRel	true	meant	totaled
+Relation	T21	T4	NoRel	true	meant	mistaken
+Relation	T22	T14	NoRel	true	rating	played
+Relation	T22	T27	NoRel	true	rating	profitable
+Relation	T22	T6	NoRel	true	rating	pressure
+Relation	T23	T13	NoRel	true	provided	not guaranteed
+Relation	T23	T14	NoRel	true	provided	played
+Relation	T23	T2	NoRel	true	provided	totaled
+Relation	T23	T3	NoRel	true	provided	argue
+Relation	T23	T4	NoRel	true	provided	mistaken
+Relation	T24	T0	NoRel	true	flawed computer models	writedowns
+Relation	T24	T12	NoRel	true	flawed computer models	growth
+Relation	T24	T18	NoRel	true	flawed computer models	ratings
+Relation	T24	T19	NoRel	true	flawed computer models	conflict
+Relation	T24	T26	NoRel	true	flawed computer models	absence
+Relation	T24	T7	NoRel	true	flawed computer models	paid
+Relation	T25	T14	NoRel	true	lack of resources	played
+Relation	T26	T13	NoRel	true	absence	not guaranteed
+Relation	T26	T25	NoRel	true	absence	lack of resources
+Relation	T26	T27	NoRel	true	absence	profitable
+Relation	T27	T11	NoRel	true	profitable	accounted
+Relation	T27	T18	NoRel	true	profitable	ratings
+Relation	T28	T10	NoRel	true	higher ratings	Structured investment
+Relation	T28	T25	NoRel	true	higher ratings	lack of resources
+Relation	T29	T16	NoRel	true	higher earnings	find
+Relation	T3	T19	NoRel	true	argue	conflict
+Relation	T5	T0	NoRel	true	stemmed	writedowns
+Relation	T5	T13	NoRel	true	stemmed	not guaranteed
+Relation	T5	T2	NoRel	true	stemmed	totaled
+Relation	T5	T27	NoRel	true	stemmed	profitable
+Relation	T5	T3	NoRel	true	stemmed	argue
+Relation	T5	T6	NoRel	true	stemmed	pressure
+Relation	T5	T9	NoRel	true	stemmed	profits
+Relation	T6	T0	NoRel	true	pressure	writedowns
+Relation	T6	T12	NoRel	true	pressure	growth
+Relation	T7	T24	NoRel	true	paid	flawed computer models
+Relation	T8	T21	NoRel	true	relentless drive	meant
+Relation	T8	T22	NoRel	true	relentless drive	rating
+Relation	T8	T28	NoRel	true	relentless drive	higher ratings
+Relation	T9	T18	NoRel	true	profits	ratings
+Relation	T9	T21	NoRel	true	profits	meant
+Relation	T9	T6	NoRel	true	profits	pressure

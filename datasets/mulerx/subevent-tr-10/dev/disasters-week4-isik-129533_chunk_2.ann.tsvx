@@ -1,0 +1,35 @@
+Text	Bunların içinde en şiddetli olanları 1744 , 1768 ve 1877'deki patlamalardır .	1877'deki büyük patlama zirvedeki buzulu eritmiş , böylelikle oluşan çamurlu çığ 100 km mesafede taşkına sebebiyet vermiş , Latacunga şehri komple harap olmuştur .	Son büyük patlamayı 1904'te yaşayan Cotopaxi 1975 - 76 aralığında son büyük faaliyetlerini göstermiştir .	Bu zaman aralığında ısı yükselmesi , duman oluşumu ve küçük çapta depremler meydana gelmiştir .	Dağa tırmanmayı deneyen ilk avrupalı , 1902 yılında yaklaşık 4.500 m_ye kadar ulaşan Alexander von Humboldt'du .
+Event	T0	patlamalardır	EVENT	62
+Event	T1	patlama	EVENT	94
+Event	T2	eritmiş	EVENT	119
+Event	T3	vermiş	EVENT	193
+Event	T4	patlamayı	EVENT	252
+Event	T5	yaşayan	EVENT	270
+Event	T6	göstermiştir	EVENT	333
+Event	T7	yükselmesi	EVENT	372
+Event	T8	gelmiştir	EVENT	432
+Event	T9	deneyen	EVENT	460
+Event	T10	çığ	EVENT	155
+Event	T11	olmuştur	EVENT	231
+Event	T12	oluşumu	EVENT	391
+Event	T13	depremler	EVENT	414
+Event	T14	ulaşan	EVENT	522
+Relation	T0	T4	NoRel	true	patlamalardır	patlamayı
+Relation	T1	T2	NoRel	true	patlama	eritmiş
+Relation	T11	T12	NoRel	true	olmuştur	oluşumu
+Relation	T13	T11	NoRel	true	depremler	olmuştur
+Relation	T2	T4	NoRel	true	eritmiş	patlamayı
+Relation	T3	T1	NoRel	true	vermiş	patlama
+Relation	T3	T10	NoRel	true	vermiş	çığ
+Relation	T3	T12	NoRel	true	vermiş	oluşumu
+Relation	T3	T7	NoRel	true	vermiş	yükselmesi
+Relation	T4	T0	NoRel	true	patlamayı	patlamalardır
+Relation	T4	T10	NoRel	true	patlamayı	çığ
+Relation	T4	T7	NoRel	true	patlamayı	yükselmesi
+Relation	T5	T14	NoRel	true	yaşayan	ulaşan
+Relation	T5	T3	NoRel	true	yaşayan	vermiş
+Relation	T6	T1	NoRel	true	göstermiştir	patlama
+Relation	T6	T10	NoRel	true	göstermiştir	çığ
+Relation	T7	T6	NoRel	true	yükselmesi	göstermiştir
+Relation	T7	T9	NoRel	true	yükselmesi	deneyen
+Relation	T8	T12	NoRel	true	gelmiştir	oluşumu

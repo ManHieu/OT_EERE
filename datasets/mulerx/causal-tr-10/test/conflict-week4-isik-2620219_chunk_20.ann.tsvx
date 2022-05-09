@@ -1,0 +1,38 @@
+Text	) .	Adele Wiseman'ın Kurban romanı , kendi ülkelerinde bir pogromdan sonra yerinden edilmiş ve iki oğlunu isyanda kaybettikten sonra Kanada'ya göç eden bir aile ile de ilgilidir ve zorlukla hayatta kalabildiklerini anlatmaktadır .	Oğulların kaybedilmesi ve öldürülmesi tüm hikâyede duygusallık yaratıyor .	Mark Twain , 1906'da yayınlanan Din Üzerine Düşünceler , Bölüm 3'te Rus pogromlarının grafik tanımlarını vermektedir .	Joseph Joffo , annesinin gençliğini , Çar II. Nikolay Rusya'sında bir Yahudi olan biyografide ' Anna ve Orkestrası'_nda anlatıyor .
+Event	T0	edilmiş	EVENT	84
+Event	T1	kaybettikten	EVENT	114
+Event	T2	göç	EVENT	143
+Event	T3	anlatmaktadır	EVENT	215
+Event	T4	kaybedilmesi	EVENT	241
+Event	T5	öldürülmesi	EVENT	257
+Event	T6	yaratıyor	EVENT	294
+Event	T7	yayınlanan	EVENT	327
+Event	T8	vermektedir	EVENT	411
+Event	T9	anlatıyor	EVENT	545
+Event	T10	pogromdan	EVENT	59
+Event	T11	isyanda	EVENT	106
+Event	T12	pogromlarının	EVENT	378
+Relation	T10	T0	CauseEffect	true	pogromdan	edilmiş
+Relation	T0	T10	EffectCause	true	edilmiş	pogromdan
+Relation	T0	T11	CauseEffect	true	edilmiş	isyanda
+Relation	T11	T0	EffectCause	true	isyanda	edilmiş
+Relation	T11	T1	CauseEffect	true	isyanda	kaybettikten
+Relation	T1	T11	EffectCause	true	kaybettikten	isyanda
+Relation	T10	T2	CauseEffect	true	pogromdan	göç
+Relation	T2	T10	EffectCause	true	göç	pogromdan
+Relation	T0	T2	CauseEffect	true	edilmiş	göç
+Relation	T2	T0	EffectCause	true	göç	edilmiş
+Relation	T1	T2	CauseEffect	true	kaybettikten	göç
+Relation	T2	T1	EffectCause	true	göç	kaybettikten
+Relation	T1	T12	NoRel	true	kaybettikten	pogromlarının
+Relation	T10	T6	NoRel	true	pogromdan	yaratıyor
+Relation	T11	T6	NoRel	true	isyanda	yaratıyor
+Relation	T3	T4	NoRel	true	anlatmaktadır	kaybedilmesi
+Relation	T4	T2	NoRel	true	kaybedilmesi	göç
+Relation	T5	T12	NoRel	true	öldürülmesi	pogromlarının
+Relation	T6	T5	NoRel	true	yaratıyor	öldürülmesi
+Relation	T7	T1	NoRel	true	yayınlanan	kaybettikten
+Relation	T8	T10	NoRel	true	vermektedir	pogromdan
+Relation	T8	T5	NoRel	true	vermektedir	öldürülmesi
+Relation	T9	T1	NoRel	true	anlatıyor	kaybettikten
+Relation	T9	T2	NoRel	true	anlatıyor	göç

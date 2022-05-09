@@ -1,0 +1,27 @@
+Text	- - Cumhurbaşkanı Abdullah Gül : " Ümit ederiz can kaybı ve zarar büyük olmaz .	Tabii afetin acısını bilen bir ülke olarak biz daima bu tip durumlarda ihtiyaç olduğunda karşılıklı yardımlaşmaya da önem veririz .	" Dışişleri Bakanı Ahmet Davutoğlu , özel birim olayları izlemek için kurulacak ve yardımlar için Japonya Dışişleri Bakanı Yukio Edano ile görüşeceğini bildirdi .	Türk Kızılayı yazılı bir açıklama ile deprem bölgesine bir ekip göndereceklerini açıkladı .	Kızılay açıklamasında Japonya , Tayvan , Endonezya , Filipinler , Rusya ve Hawaii'ye yardım göndermeye hazır olduğunu belirtti .
+Event	T0	kaybı	EVENT	51
+Event	T1	kurulacak	EVENT	282
+Event	T2	bildirdi	EVENT	364
+Event	T3	açıklama	EVENT	400
+Event	T4	açıkladı	EVENT	456
+Event	T5	belirtti	EVENT	585
+Event	T6	zarar	EVENT	60
+Event	T7	afetin	EVENT	86
+Event	T8	acısını	EVENT	93
+Event	T9	veririz	EVENT	202
+Event	T10	olayları	EVENT	260
+Event	T11	deprem	EVENT	413
+Relation	T0	T3	NoRel	true	kaybı	açıklama
+Relation	T0	T7	NoRel	true	kaybı	afetin
+Relation	T1	T8	NoRel	true	kurulacak	acısını
+Relation	T10	T0	NoRel	true	olayları	kaybı
+Relation	T2	T1	NoRel	true	bildirdi	kurulacak
+Relation	T4	T11	NoRel	true	açıkladı	deprem
+Relation	T4	T5	NoRel	true	açıkladı	belirtti
+Relation	T5	T0	NoRel	true	belirtti	kaybı
+Relation	T5	T8	NoRel	true	belirtti	acısını
+Relation	T6	T7	NoRel	true	zarar	afetin
+Relation	T7	T0	NoRel	true	afetin	kaybı
+Relation	T8	T0	NoRel	true	acısını	kaybı
+Relation	T9	T4	NoRel	true	veririz	açıkladı
+Relation	T9	T5	NoRel	true	veririz	belirtti

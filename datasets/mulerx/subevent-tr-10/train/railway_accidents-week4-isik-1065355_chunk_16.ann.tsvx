@@ -1,0 +1,25 @@
+Text	sol | küçükresim | 180px | Mundo a Vapor em Canela , RS , Brezilya'da 1895 Montparnasse çarpışması tekrar inşası	- 23 Ocak , 2008 – D59 numaralı yüksek hızlı tren Beijing - Solar Flare : RE , devletin sahip olduğu bir inşat bölgesine daldığında , orada ( Fangzi , Weifang , Shandong , Çin ) 16ncı grup işçileri bir ray sermenin bakım günenliğini tesis ediyorlardı ; 18 işçi öldü ve diğer dokuzu yaralandı .	- 1 Ocak , 2009 – Innisfail , Queensland yakınında ne engelleyici bir kapı ne de ikaz işaretinin olmadığı bir hemzemin geçitte bir QR Sunlander treninin aşırı yüklü bir kamyonla çarpışması sonrası bir kişi öldü ve sekiz kişi yaralandı .	- 7 Ocak , 2009 – Queensgate , Cincinnati , Ohio’da bir CSX Transportation treninin raydan çıkması sonrası yarım mil çaplı bir alan boşaltıldı .	İkisi Propan taşıyan dört vagon raydan çıktı , fakat hiç sızıntı yoktu .
+Event	T1	öldü	EVENT	374
+Event	T2	yaralandı	EVENT	395
+Event	T3	öldü	EVENT	613
+Event	T4	yaralandı	EVENT	632
+Event	T5	çıkması	EVENT	735
+Event	T6	boşaltıldı	EVENT	776
+Event	T7	çıktı	EVENT	828
+Event	T8	çarpışması	EVENT	88
+Event	T9	inşası	EVENT	106
+Event	T10	daldığında	EVENT	234
+Event	T11	ediyorlardı	EVENT	352
+Event	T12	yüklü	EVENT	566
+Event	T13	çarpışması	EVENT	585
+Relation	T1	T12	NoRel	true	öldü	yüklü
+Relation	T13	T1	NoRel	true	çarpışması	öldü
+Relation	T3	T5	NoRel	true	öldü	çıkması
+Relation	T3	T8	NoRel	true	öldü	çarpışması
+Relation	T6	T12	NoRel	true	boşaltıldı	yüklü
+Relation	T7	T4	NoRel	true	çıktı	yaralandı
+Relation	T7	T5	NoRel	true	çıktı	çıkması
+Relation	T9	T12	NoRel	true	inşası	yüklü
+Relation	T9	T2	NoRel	true	inşası	yaralandı
+Relation	T9	T4	NoRel	true	inşası	yaralandı
+Relation	T9	T5	NoRel	true	inşası	çıkması

@@ -1,0 +1,38 @@
+Text	Yeni yönetime karşı yapılan isyanın üzerinden 1 ay geçmeden Kurt Eisner istifa mektubunu meclise sunmaya gittiği sırada 21 Şubat 1919 tarihinde Münih'te alnından vurularak suikaste uğradı .	Sebottendorf 1917'deki Bolşevik İhtilali'nden Berlin'e ve İstanbul'a kaçan Ruslarla irtibata geçerek Kampfbunds adlı bir savaş birliği kurdu .	Bu birlik daha sonra _ Free Corps _ ile birleşerek Kahverengi Gömlekliler'i oluşturdu .	Sebottendorf , Thule Cemiyeti'nin haftalık gazetesi _ Münchener Beobachter _ { { ' } }in de sahibiydi .	Gazetenin adını okültizm çalışmalarında kullandığı Völk tabirini kullanarak Völkischer Beobachter olarak değiştirdi .
+Event	T0	isyanın	EVENT	28
+Event	T2	gittiği	EVENT	105
+Event	T3	uğradı	EVENT	181
+Event	T5	kurdu	EVENT	325
+Event	T6	oluşturdu	EVENT	409
+Event	T7	kullandığı	EVENT	565
+Event	T8	değiştirdi	EVENT	630
+Event	T9	yönetime	EVENT	5
+Event	T1	kaçan	EVENT	259
+Event	T10	İhtilali'nden	EVENT	222
+Event	T4	geçerek	EVENT	283
+Event	T11	birleşerek	EVENT	373
+Event	T12	kullanarak	EVENT	590
+Relation	T9	T0	CauseEffect	true	yönetime	isyanın
+Relation	T0	T9	EffectCause	true	isyanın	yönetime
+Relation	T10	T1	CauseEffect	true	İhtilali'nden	kaçan
+Relation	T1	T10	EffectCause	true	kaçan	İhtilali'nden
+Relation	T0	T7	NoRel	true	isyanın	kullandığı
+Relation	T11	T3	NoRel	true	birleşerek	uğradı
+Relation	T11	T6	NoRel	true	birleşerek	oluşturdu
+Relation	T12	T0	NoRel	true	kullanarak	isyanın
+Relation	T12	T10	NoRel	true	kullanarak	İhtilali'nden
+Relation	T12	T7	NoRel	true	kullanarak	kullandığı
+Relation	T2	T5	NoRel	true	gittiği	kurdu
+Relation	T3	T9	NoRel	true	uğradı	yönetime
+Relation	T4	T3	NoRel	true	geçerek	uğradı
+Relation	T5	T10	NoRel	true	kurdu	İhtilali'nden
+Relation	T5	T3	NoRel	true	kurdu	uğradı
+Relation	T5	T6	NoRel	true	kurdu	oluşturdu
+Relation	T5	T8	NoRel	true	kurdu	değiştirdi
+Relation	T6	T1	NoRel	true	oluşturdu	kaçan
+Relation	T7	T12	NoRel	true	kullandığı	kullanarak
+Relation	T8	T1	NoRel	true	değiştirdi	kaçan
+Relation	T8	T2	NoRel	true	değiştirdi	gittiği
+Relation	T8	T7	NoRel	true	değiştirdi	kullandığı
+Relation	T9	T2	NoRel	true	yönetime	gittiği
+Relation	T9	T6	NoRel	true	yönetime	oluşturdu

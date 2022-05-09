@@ -1,0 +1,41 @@
+Text	Her opbyggede han et tæt samarbejde med Talibanregimet , hvor al-Qaeda fik rollen som den væbnede fløj under Taleban-regimets hær .	Terrorgruppen fik etableret egne træningslejre og anså sig som værende Talibans elitesoldater .	Samtidig gav tilflugtsstedet i Afghanistan al-Qaeda mulighed for at udvikle både sin ideologi og militære styrker .	USA affyrede i 1998 missiler mod mål i Sudan og Afghanistan som gengældelse for terrorangreb mod de amerikanske ambassader i Kenya og Tanzania samme år , som bin Laden ifølge USA stod bag .	Det antages at Osama bin Laden og hans netværk , al-Qaeda , stod bag terrorangrebet på New York og Washington , 11. september 2001 .
+Event	T0	opbyggede	EVENT	4
+Event	T1	samarbejde	EVENT	25
+Event	T2	rollen	EVENT	75
+Event	T3	etableret	EVENT	150
+Event	T4	træningslejre	EVENT	165
+Event	T5	anså	EVENT	182
+Event	T6	udvikle	EVENT	296
+Event	T7	affyrede	EVENT	348
+Event	T8	missiler	EVENT	364
+Event	T9	gengældelse	EVENT	408
+Event	T10	terrorangreb	EVENT	424
+Event	T11	antages	EVENT	538
+Event	T12	stod	EVENT	594
+Event	T13	terrorangrebet	EVENT	603
+Relation	T1	T0	SuperSub	true	samarbejde	opbyggede
+Relation	T0	T1	SubSuper	true	opbyggede	samarbejde
+Relation	T4	T3	SuperSub	true	træningslejre	etableret
+Relation	T3	T4	SubSuper	true	etableret	træningslejre
+Relation	T10	T9	SuperSub	true	terrorangreb	gengældelse
+Relation	T9	T10	SubSuper	true	gengældelse	terrorangreb
+Relation	T0	T12	NoRel	true	opbyggede	stod
+Relation	T1	T11	NoRel	true	samarbejde	antages
+Relation	T1	T13	NoRel	true	samarbejde	terrorangrebet
+Relation	T11	T5	NoRel	true	antages	anså
+Relation	T12	T0	NoRel	true	stod	opbyggede
+Relation	T12	T13	NoRel	true	stod	terrorangrebet
+Relation	T12	T9	NoRel	true	stod	gengældelse
+Relation	T2	T8	NoRel	true	rollen	missiler
+Relation	T4	T0	NoRel	true	træningslejre	opbyggede
+Relation	T4	T10	NoRel	true	træningslejre	terrorangreb
+Relation	T4	T7	NoRel	true	træningslejre	affyrede
+Relation	T5	T1	NoRel	true	anså	samarbejde
+Relation	T5	T11	NoRel	true	anså	antages
+Relation	T5	T3	NoRel	true	anså	etableret
+Relation	T5	T8	NoRel	true	anså	missiler
+Relation	T6	T12	NoRel	true	udvikle	stod
+Relation	T6	T13	NoRel	true	udvikle	terrorangrebet
+Relation	T6	T5	NoRel	true	udvikle	anså
+Relation	T8	T3	NoRel	true	missiler	etableret
+Relation	T9	T13	NoRel	true	gengældelse	terrorangrebet

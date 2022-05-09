@@ -1,0 +1,84 @@
+Text	Sidst i marts vurderede eksperter , at den danske strategi om afbødning havde virket , men at tests kunne forbedre det .	Mangel på reagens gjorde dog , at øvrigt test-udstyr ville være nyttesløst .	Sundhedsstyrelsen offentliggjorde en simpel metode til at forberede reagens for RNA og derved øge mængden af mulige tests .	I april udtalte flere danske eksperter , at det var nødvendigt at forsøge at opnå flokimmunitet .	Flokimmunitet kan opnås ved omfattende vaccinationsprogrammer , men da det vurderedes at tage mindst et år , før man vil kunne have sådan et program klar mod coronavirussen , er alternativet , at en tilstrækkelig stor del af befolkningen , formodentlig 60-70 % , bliver smittet og dermed bliver immune , i hvert fald for en tid .
+Event	T0	vurderede	EVENT	14
+Event	T1	afbødning	EVENT	62
+Event	T2	virket	EVENT	78
+Event	T3	tests	EVENT	94
+Event	T4	forbedre	EVENT	106
+Event	T5	gjorde	EVENT	139
+Event	T6	offentliggjorde	EVENT	216
+Event	T7	reagens	EVENT	266
+Event	T8	øge	EVENT	292
+Event	T9	tests	EVENT	314
+Event	T10	udtalte	EVENT	330
+Event	T11	forsøge	EVENT	388
+Event	T12	klar	EVENT	569
+Event	T13	smittet	EVENT	690
+Event	T14	strategi	EVENT	50
+Event	T15	Mangel	EVENT	121
+Event	T16	nyttesløst	EVENT	185
+Event	T17	metode	EVENT	242
+Event	T18	flokimmunitet	EVENT	404
+Event	T19	Flokimmunitet	EVENT	420
+Event	T20	vaccinationsprogrammer	EVENT	459
+Event	T21	vurderedes	EVENT	495
+Event	T22	tage	EVENT	509
+Event	T23	coronavirussen	EVENT	578
+Event	T24	del	EVENT	638
+Event	T25	immune	EVENT	715
+Relation	T16	T6	SuperSub	true	nyttesløst	offentliggjorde
+Relation	T6	T16	SubSuper	true	offentliggjorde	nyttesløst
+Relation	T0	T10	NoRel	true	vurderede	udtalte
+Relation	T0	T4	NoRel	true	vurderede	forbedre
+Relation	T1	T4	NoRel	true	afbødning	forbedre
+Relation	T1	T6	NoRel	true	afbødning	offentliggjorde
+Relation	T1	T7	NoRel	true	afbødning	reagens
+Relation	T10	T13	NoRel	true	udtalte	smittet
+Relation	T10	T23	NoRel	true	udtalte	coronavirussen
+Relation	T10	T9	NoRel	true	udtalte	tests
+Relation	T11	T24	NoRel	true	forsøge	del
+Relation	T12	T0	NoRel	true	klar	vurderede
+Relation	T12	T17	NoRel	true	klar	metode
+Relation	T13	T11	NoRel	true	smittet	forsøge
+Relation	T13	T19	NoRel	true	smittet	Flokimmunitet
+Relation	T13	T2	NoRel	true	smittet	virket
+Relation	T13	T24	NoRel	true	smittet	del
+Relation	T13	T4	NoRel	true	smittet	forbedre
+Relation	T15	T17	NoRel	true	Mangel	metode
+Relation	T15	T21	NoRel	true	Mangel	vurderedes
+Relation	T16	T18	NoRel	true	nyttesløst	flokimmunitet
+Relation	T17	T10	NoRel	true	metode	udtalte
+Relation	T17	T18	NoRel	true	metode	flokimmunitet
+Relation	T17	T3	NoRel	true	metode	tests
+Relation	T18	T19	NoRel	true	flokimmunitet	Flokimmunitet
+Relation	T18	T23	NoRel	true	flokimmunitet	coronavirussen
+Relation	T18	T4	NoRel	true	flokimmunitet	forbedre
+Relation	T19	T4	NoRel	true	Flokimmunitet	forbedre
+Relation	T19	T9	NoRel	true	Flokimmunitet	tests
+Relation	T2	T17	NoRel	true	virket	metode
+Relation	T2	T3	NoRel	true	virket	tests
+Relation	T2	T8	NoRel	true	virket	øge
+Relation	T20	T11	NoRel	true	vaccinationsprogrammer	forsøge
+Relation	T20	T14	NoRel	true	vaccinationsprogrammer	strategi
+Relation	T20	T17	NoRel	true	vaccinationsprogrammer	metode
+Relation	T21	T18	NoRel	true	vurderedes	flokimmunitet
+Relation	T22	T16	NoRel	true	tage	nyttesløst
+Relation	T22	T3	NoRel	true	tage	tests
+Relation	T23	T1	NoRel	true	coronavirussen	afbødning
+Relation	T23	T24	NoRel	true	coronavirussen	del
+Relation	T23	T5	NoRel	true	coronavirussen	gjorde
+Relation	T24	T14	NoRel	true	del	strategi
+Relation	T24	T16	NoRel	true	del	nyttesløst
+Relation	T25	T14	NoRel	true	immune	strategi
+Relation	T25	T5	NoRel	true	immune	gjorde
+Relation	T3	T16	NoRel	true	tests	nyttesløst
+Relation	T3	T9	NoRel	true	tests	tests
+Relation	T4	T13	NoRel	true	forbedre	smittet
+Relation	T4	T24	NoRel	true	forbedre	del
+Relation	T6	T0	NoRel	true	offentliggjorde	vurderede
+Relation	T6	T22	NoRel	true	offentliggjorde	tage
+Relation	T7	T21	NoRel	true	reagens	vurderedes
+Relation	T7	T25	NoRel	true	reagens	immune
+Relation	T7	T9	NoRel	true	reagens	tests
+Relation	T8	T1	NoRel	true	øge	afbødning
+Relation	T8	T20	NoRel	true	øge	vaccinationsprogrammer
+Relation	T9	T14	NoRel	true	tests	strategi

@@ -1,0 +1,29 @@
+Text	SCAT AIRLINES'IN 760 SEFER SAYILI UÇUŞU , çift motorlu bir Bombardier CRJ200 kullanılarak Kökşetau'dan Almatı'ya giden bir tarifeli yolcu uçuşunun 29 Ocak 2013'te düşmesi olayıdır .	Uçakta bulunan 16 yolcu ve 5 mürettebatın tamamı kaza sonucunda ölmüştür .	Soruşturma , uçağın burnunu indirdikten sonra aniden indiğini belirlemiştir , ancak ani manevranın nedenini belirleyememiştir .	Kazaya karışan ( kuyruk numarası : UP - CJ006 , seri numarası : 7413 ) , 2000'de üretilmiştir .	İki General Electric CF34 - 3B1 turbofan motoru ile donatılmıştır .
+Event	T0	UÇUŞU	EVENT	34
+Event	T1	uçuşunun	EVENT	138
+Event	T2	olayıdır	EVENT	171
+Event	T3	kaza	EVENT	231
+Event	T4	ölmüştür	EVENT	246
+Event	T5	indirdikten	EVENT	285
+Event	T6	belirlemiştir	EVENT	319
+Event	T7	karışan	EVENT	392
+Event	T8	üretilmiştir	EVENT	466
+Event	T9	donatılmıştır	EVENT	533
+Event	T10	düşmesi	EVENT	163
+Event	T11	Soruşturma	EVENT	257
+Relation	T3	T4	SuperSub	true	kaza	ölmüştür
+Relation	T4	T3	SubSuper	true	ölmüştür	kaza
+Relation	T3	T11	SuperSub	true	kaza	Soruşturma
+Relation	T11	T3	SubSuper	true	Soruşturma	kaza
+Relation	T1	T11	NoRel	true	uçuşunun	Soruşturma
+Relation	T2	T10	NoRel	true	olayıdır	düşmesi
+Relation	T2	T5	NoRel	true	olayıdır	indirdikten
+Relation	T2	T7	NoRel	true	olayıdır	karışan
+Relation	T2	T9	NoRel	true	olayıdır	donatılmıştır
+Relation	T3	T2	NoRel	true	kaza	olayıdır
+Relation	T4	T11	NoRel	true	ölmüştür	Soruşturma
+Relation	T5	T10	NoRel	true	indirdikten	düşmesi
+Relation	T6	T5	NoRel	true	belirlemiştir	indirdikten
+Relation	T7	T3	NoRel	true	karışan	kaza
+Relation	T8	T7	NoRel	true	üretilmiştir	karışan
+Relation	T9	T1	NoRel	true	donatılmıştır	uçuşunun

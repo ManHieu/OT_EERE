@@ -1,0 +1,33 @@
+Text	Modi anunció un alivio inmediato de ₹10 mil millones ( US $ 132 millones ) para Bengala Occidental y un alivio de ₹ 5 mil millones ( US $ 66,2 millones ) para Odisha .	De antemano , Modi anunció que se proporcionarían ₹200,000 ( US $ 2,650 ) a los familiares de las personas que murieron durante la tormenta , y ₹ 50,000 ( US $ 660 ) se otorgarían a cada persona herida .	El Ministerio de Gestión de Desastres y Socorro en Bangladés aprobó un presupuesto de ৳2,5 –3 mil millones para reparar terraplenes dañados por Amphan .	Se distribuyeron otros ৳ 1.5 mil millones a cada distrito fuertemente afectado por la tormenta , junto con 500 paquetes de láminas de estaño corrugado .	- Ciclón Gonu ( 2007 ) – Ciclón tropical más intenso de Mar Arábigo en junio de 2007 antes de causar estragos en Emiratos Árabes Unidos .
+Event	T0	anunció	EVENT	5
+Event	T1	alivio	EVENT	16
+Event	T2	alivio	EVENT	104
+Event	T3	anunció	EVENT	187
+Event	T4	murieron	EVENT	279
+Event	T5	tormenta	EVENT	299
+Event	T6	otorgarían	EVENT	337
+Event	T7	herida	EVENT	363
+Event	T8	aprobó	EVENT	433
+Event	T9	dañados	EVENT	504
+Event	T10	distribuyeron	EVENT	528
+Event	T11	afectado	EVENT	595
+Event	T12	tormenta	EVENT	611
+Event	T13	corrugado	EVENT	666
+Event	T14	estragos	EVENT	779
+Relation	T1	T11	NoRel	true	alivio	afectado
+Relation	T13	T1	NoRel	true	corrugado	alivio
+Relation	T13	T9	NoRel	true	corrugado	dañados
+Relation	T14	T11	NoRel	true	estragos	afectado
+Relation	T14	T13	NoRel	true	estragos	corrugado
+Relation	T14	T6	NoRel	true	estragos	otorgarían
+Relation	T2	T1	NoRel	true	alivio	alivio
+Relation	T2	T7	NoRel	true	alivio	herida
+Relation	T3	T11	NoRel	true	anunció	afectado
+Relation	T5	T0	NoRel	true	tormenta	anunció
+Relation	T5	T10	NoRel	true	tormenta	distribuyeron
+Relation	T5	T12	NoRel	true	tormenta	tormenta
+Relation	T6	T12	NoRel	true	otorgarían	tormenta
+Relation	T6	T8	NoRel	true	otorgarían	aprobó
+Relation	T7	T1	NoRel	true	herida	alivio
+Relation	T8	T12	NoRel	true	aprobó	tormenta
+Relation	T8	T3	NoRel	true	aprobó	anunció

@@ -1,0 +1,70 @@
+Text	İçişleri Bakanı Nikolay Pavloviç Ignatyev , pogromların devrimci sosyalistlerin neden olduğu teorisini reddetti ve bunun yerine kırsal nüfusun Yahudi sömürüsüne karşı protesto ettikleri fikrini kabul etti .	Bu fikir akılda tutularak , pogromların köylerden kasabalara yayıldığı fikri ile yayılmıştır .	Tarihçiler bugün , kırsal köylülüğün büyük ölçüde pogrom şiddetine katılmasına rağmen , kasabalarda pogromların başladığını ve köylere yayıldığını kabul ediyorlar .	Yeni Çar III. Aleksandr başlangıçta devrimcileri ve Yahudileri ayaklanmalardan sorumlu tuttu ve Mayıs 1882'de Yahudiler üzerinde bir dizi sert kısıtlamalardan oluşan Mayıs Yasalarını yayınladı .	Pogromlar üç yıldan fazla sürdü ve Rus hükûmetinin isyanı sona erdirme girişimleri olmasına rağmen , en azından yetkililerin zımni desteğinden yararlandığı düşünülüyordu .
+Event	T0	reddetti	EVENT	103
+Event	T1	etti	EVENT	200
+Event	T2	yayılmıştır	EVENT	288
+Event	T3	kabul	EVENT	449
+Event	T4	tuttu	EVENT	554
+Event	T5	yayınladı	EVENT	650
+Event	T6	sürdü	EVENT	688
+Event	T8	girişimleri	EVENT	733
+Event	T9	pogromların	EVENT	44
+Event	T10	pogromların	EVENT	235
+Event	T11	yayıldığı	EVENT	268
+Event	T12	pogrom	EVENT	352
+Event	T13	katılmasına	EVENT	369
+Event	T14	pogromların	EVENT	402
+Event	T15	yayıldığını	EVENT	437
+Event	T16	başladığını	EVENT	414
+Event	T17	ayaklanmalardan	EVENT	530
+Event	T18	kısıtlamalardan	EVENT	610
+Event	T19	Yasalarını	EVENT	639
+Event	T20	Pogromlar	EVENT	662
+Event	T21	isyanı	EVENT	713
+Relation	T0	T10	NoRel	true	reddetti	pogromların
+Relation	T0	T12	NoRel	true	reddetti	pogrom
+Relation	T0	T16	NoRel	true	reddetti	başladığını
+Relation	T0	T19	NoRel	true	reddetti	Yasalarını
+Relation	T0	T8	NoRel	true	reddetti	girişimleri
+Relation	T1	T0	NoRel	true	etti	reddetti
+Relation	T10	T1	NoRel	true	pogromların	etti
+Relation	T10	T16	NoRel	true	pogromların	başladığını
+Relation	T10	T4	NoRel	true	pogromların	tuttu
+Relation	T10	T8	NoRel	true	pogromların	girişimleri
+Relation	T11	T15	NoRel	true	yayıldığı	yayıldığını
+Relation	T12	T13	NoRel	true	pogrom	katılmasına
+Relation	T13	T0	NoRel	true	katılmasına	reddetti
+Relation	T13	T1	NoRel	true	katılmasına	etti
+Relation	T13	T16	NoRel	true	katılmasına	başladığını
+Relation	T14	T0	NoRel	true	pogromların	reddetti
+Relation	T14	T1	NoRel	true	pogromların	etti
+Relation	T14	T13	NoRel	true	pogromların	katılmasına
+Relation	T14	T8	NoRel	true	pogromların	girişimleri
+Relation	T15	T9	NoRel	true	yayıldığını	pogromların
+Relation	T16	T12	NoRel	true	başladığını	pogrom
+Relation	T16	T3	NoRel	true	başladığını	kabul
+Relation	T16	T4	NoRel	true	başladığını	tuttu
+Relation	T16	T9	NoRel	true	başladığını	pogromların
+Relation	T17	T1	NoRel	true	ayaklanmalardan	etti
+Relation	T17	T15	NoRel	true	ayaklanmalardan	yayıldığını
+Relation	T18	T13	NoRel	true	kısıtlamalardan	katılmasına
+Relation	T19	T0	NoRel	true	Yasalarını	reddetti
+Relation	T19	T14	NoRel	true	Yasalarını	pogromların
+Relation	T19	T16	NoRel	true	Yasalarını	başladığını
+Relation	T19	T9	NoRel	true	Yasalarını	pogromların
+Relation	T2	T1	NoRel	true	yayılmıştır	etti
+Relation	T2	T14	NoRel	true	yayılmıştır	pogromların
+Relation	T2	T6	NoRel	true	yayılmıştır	sürdü
+Relation	T20	T5	NoRel	true	Pogromlar	yayınladı
+Relation	T21	T20	NoRel	true	isyanı	Pogromlar
+Relation	T3	T14	NoRel	true	kabul	pogromların
+Relation	T4	T15	NoRel	true	tuttu	yayıldığını
+Relation	T4	T17	NoRel	true	tuttu	ayaklanmalardan
+Relation	T5	T10	NoRel	true	yayınladı	pogromların
+Relation	T5	T19	NoRel	true	yayınladı	Yasalarını
+Relation	T5	T21	NoRel	true	yayınladı	isyanı
+Relation	T6	T15	NoRel	true	sürdü	yayıldığını
+Relation	T8	T13	NoRel	true	girişimleri	katılmasına
+Relation	T8	T14	NoRel	true	girişimleri	pogromların
+Relation	T8	T15	NoRel	true	girişimleri	yayıldığını
+Relation	T9	T1	NoRel	true	pogromların	etti
+Relation	T9	T12	NoRel	true	pogromların	pogrom

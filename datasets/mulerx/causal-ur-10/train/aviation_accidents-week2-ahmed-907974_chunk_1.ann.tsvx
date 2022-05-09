@@ -1,0 +1,24 @@
+Text	یہ واقعہ اس وقت شروع ہوا جب طیارہ پرواز کررہا تھا ، جہاز کے عملے کے 5 ممبروں کے ساتھ 33 مسافر سوار تھے ۔	کراچی جانے والی پی آئی اے فوکر ایئرکرافٹ ، فلائٹ پی کے 554 ، کو 25 مئی 1998 کو شام 5 بج کر 35 منٹ پر گوادر سے روانہ ہونے کے فورا بعد ہی ہائی جیک کر لیا گیا ۔	طیارہ رات گئے حیدرآباد پہنچا ۔	ہوائی اڈے کے منیجر نے حیدرآباد کی لائٹس اور نشانات بند کردیئے تھے ۔	بعد ازاں رات کے وقت ، ہائی جیکرز نے اڑان کے انجینئر سجاد چوہدری کو بھارت سے نئی دہلی جانے والے طیارے میں ایندھن کے لئے حکام سے بات کرنے کے لئے رہا کیا ۔
+Event	T0	واقعہ	EVENT	3
+Event	T1	شروع	EVENT	16
+Event	T10	ہائی جیک	EVENT	241
+Event	T2	سوار	EVENT	94
+Event	T3	جانے	EVENT	111
+Event	T4	بند	EVENT	345
+Event	T5	پہنچا	EVENT	286
+Event	T6	رہا	EVENT	505
+Event	T7	بات	EVENT	489
+Event	T8	پرواز	EVENT	34
+Event	T9	روانہ	EVENT	215
+Relation	T7	T6	CauseEffect	true	بات	رہا
+Relation	T6	T7	EffectCause	true	رہا	بات
+Relation	T0	T10	NoRel	true	واقعہ	ہائی جیک
+Relation	T2	T6	NoRel	true	سوار	رہا
+Relation	T3	T2	NoRel	true	جانے	سوار
+Relation	T4	T0	NoRel	true	بند	واقعہ
+Relation	T5	T0	NoRel	true	پہنچا	واقعہ
+Relation	T5	T2	NoRel	true	پہنچا	سوار
+Relation	T6	T10	NoRel	true	رہا	ہائی جیک
+Relation	T7	T4	NoRel	true	بات	بند
+Relation	T8	T6	NoRel	true	پرواز	رہا
+Relation	T9	T0	NoRel	true	روانہ	واقعہ

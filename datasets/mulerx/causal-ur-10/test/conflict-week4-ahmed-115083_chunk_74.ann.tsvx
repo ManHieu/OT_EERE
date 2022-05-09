@@ -1,0 +1,55 @@
+Text	1951ء میں پنجاب اسمبلی کے الیکشن میں شیعہ امیدواروں کے خلاف فرقہ وارانہ بنیادوں پر مہم چلائی گئی اور انھیں کافر قرار دیا گیا ۔	ستم ظریفی یہ کہ 24 جنوری 1951ء میں کراچی میں سب مکاتب فکر بشمول شیعہ کے علما نے پاکستان میں اسلام کے نفاذ کے لیے 22 نکات ترتیب دیے ، جبکہ عملی حقائق کچھ اور ہی بتا رہے تھے ۔	1953ء میں قادیانیوں کے خلاف چلنے والی مہم میں شیعہ رہنما بھی شامل ہوئے ۔	دو سالوں کے لیے دیوبندی علما کی توجہ ختم نبوت کے معاملے پر مرکوز رہنے کی وجہ سے شیعوں پر کوئی حملہ نہ ہوا ۔	شیعہ مخالف حملوں کا دوبارہ آغاز 1955ء میں ہوا جب پنجاب میں پچیس مقامات پر عزاداری کے جلوسوں اور امام بارگاہوں پر حملے کیے گئے جن میں سینکڑوں لوگ زخمی ہوئے ۔
+Event	T0	الیکشن	EVENT	26
+Event	T1	چلنے	EVENT	329
+Event	T3	توجہ	EVENT	406
+Event	T4	حملہ	EVENT	468
+Event	T5	حملوں	EVENT	493
+Event	T6	آغاز	EVENT	509
+Event	T10	قرار	EVENT	112
+Event	T11	مہم	EVENT	83
+Event	T9	نفاذ	EVENT	228
+Event	T12	ترتیب	EVENT	248
+Event	T13	بتا	EVENT	287
+Event	T14	مہم	EVENT	339
+Event	T15	شامل	EVENT	362
+Event	T2	معاملے	EVENT	423
+Event	T16	مرکوز	EVENT	433
+Event	T7	جلوسوں	EVENT	567
+Event	T17	حملے	EVENT	595
+Event	T18	زخمی	EVENT	627
+Relation	T9	T12	CauseEffect	true	نفاذ	ترتیب
+Relation	T12	T9	EffectCause	true	ترتیب	نفاذ
+Relation	T14	T15	CauseEffect	true	مہم	شامل
+Relation	T15	T14	EffectCause	true	شامل	مہم
+Relation	T16	T4	CauseEffect	true	مرکوز	حملہ
+Relation	T4	T16	EffectCause	true	حملہ	مرکوز
+Relation	T17	T18	CauseEffect	true	حملے	زخمی
+Relation	T18	T17	EffectCause	true	زخمی	حملے
+Relation	T0	T3	NoRel	true	الیکشن	توجہ
+Relation	T1	T11	NoRel	true	چلنے	مہم
+Relation	T1	T7	NoRel	true	چلنے	جلوسوں
+Relation	T1	T9	NoRel	true	چلنے	نفاذ
+Relation	T11	T1	NoRel	true	مہم	چلنے
+Relation	T11	T12	NoRel	true	مہم	ترتیب
+Relation	T11	T14	NoRel	true	مہم	مہم
+Relation	T11	T4	NoRel	true	مہم	حملہ
+Relation	T12	T11	NoRel	true	ترتیب	مہم
+Relation	T13	T14	NoRel	true	بتا	مہم
+Relation	T13	T15	NoRel	true	بتا	شامل
+Relation	T16	T1	NoRel	true	مرکوز	چلنے
+Relation	T16	T11	NoRel	true	مرکوز	مہم
+Relation	T16	T7	NoRel	true	مرکوز	جلوسوں
+Relation	T17	T5	NoRel	true	حملے	حملوں
+Relation	T18	T4	NoRel	true	زخمی	حملہ
+Relation	T2	T12	NoRel	true	معاملے	ترتیب
+Relation	T2	T5	NoRel	true	معاملے	حملوں
+Relation	T2	T7	NoRel	true	معاملے	جلوسوں
+Relation	T3	T12	NoRel	true	توجہ	ترتیب
+Relation	T3	T4	NoRel	true	توجہ	حملہ
+Relation	T4	T11	NoRel	true	حملہ	مہم
+Relation	T4	T15	NoRel	true	حملہ	شامل
+Relation	T5	T17	NoRel	true	حملوں	حملے
+Relation	T7	T16	NoRel	true	جلوسوں	مرکوز
+Relation	T7	T17	NoRel	true	جلوسوں	حملے
+Relation	T7	T18	NoRel	true	جلوسوں	زخمی
+Relation	T9	T4	NoRel	true	نفاذ	حملہ

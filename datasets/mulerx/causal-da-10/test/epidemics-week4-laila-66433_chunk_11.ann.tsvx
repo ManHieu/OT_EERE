@@ -1,0 +1,54 @@
+Text	En læge i Bergen fortalte rystet , at han selv i epidemiens sidste måneder ret ofte blev spurgt , om sygdommen virkelig var smitsom .	Som sygdomsforebyggelse fik man anbefalet at stikke en glødende strikkepind i en kop tjære og inhalere røgen .	Det var under forbudstiden i Norge , og nogen fattede mistanke til alkohol som sygdommens virkelige årsag .	En læge havde udskrevet 8.895 recepter på cognac og blev af den grund stillet for retten ( han blev frikendt ) .	Det blev foreslået , at giftgas anvendt under verdenskrigen kunne have forgiftet luften også i det fjerntliggende Norge og angrebet folks lunger .
+Event	T0	rystet	EVENT	26
+Event	T1	epidemiens	EVENT	49
+Event	T2	spurgt	EVENT	89
+Event	T3	sygdommen	EVENT	101
+Event	T4	anbefalet	EVENT	166
+Event	T5	stikke	EVENT	179
+Event	T6	mistanke	EVENT	299
+Event	T7	udskrevet	EVENT	367
+Event	T8	stillet	EVENT	423
+Event	T9	frikendt	EVENT	453
+Event	T10	foreslået	EVENT	475
+Event	T11	anvendt	EVENT	498
+Event	T12	forgiftet	EVENT	537
+Event	T13	angrebet	EVENT	589
+Event	T14	sygdommens	EVENT	324
+Event	T15	sygdomsforebyggelse	EVENT	138
+Event	T16	inhalere	EVENT	228
+Event	T17	årsag	EVENT	345
+Relation	T7	T8	CauseEffect	true	udskrevet	stillet
+Relation	T8	T7	EffectCause	true	stillet	udskrevet
+Relation	T11	T13	CauseEffect	true	anvendt	angrebet
+Relation	T13	T11	EffectCause	true	angrebet	anvendt
+Relation	T6	T8	CauseEffect	true	mistanke	stillet
+Relation	T8	T6	EffectCause	true	stillet	mistanke
+Relation	T0	T6	NoRel	true	rystet	mistanke
+Relation	T1	T7	NoRel	true	epidemiens	udskrevet
+Relation	T10	T16	NoRel	true	foreslået	inhalere
+Relation	T10	T4	NoRel	true	foreslået	anbefalet
+Relation	T10	T5	NoRel	true	foreslået	stikke
+Relation	T11	T0	NoRel	true	anvendt	rystet
+Relation	T11	T4	NoRel	true	anvendt	anbefalet
+Relation	T12	T1	NoRel	true	forgiftet	epidemiens
+Relation	T13	T12	NoRel	true	angrebet	forgiftet
+Relation	T13	T15	NoRel	true	angrebet	sygdomsforebyggelse
+Relation	T13	T3	NoRel	true	angrebet	sygdommen
+Relation	T15	T1	NoRel	true	sygdomsforebyggelse	epidemiens
+Relation	T16	T10	NoRel	true	inhalere	foreslået
+Relation	T17	T10	NoRel	true	årsag	foreslået
+Relation	T17	T15	NoRel	true	årsag	sygdomsforebyggelse
+Relation	T3	T9	NoRel	true	sygdommen	frikendt
+Relation	T4	T5	NoRel	true	anbefalet	stikke
+Relation	T4	T9	NoRel	true	anbefalet	frikendt
+Relation	T5	T4	NoRel	true	stikke	anbefalet
+Relation	T6	T0	NoRel	true	mistanke	rystet
+Relation	T6	T11	NoRel	true	mistanke	anvendt
+Relation	T6	T14	NoRel	true	mistanke	sygdommens
+Relation	T6	T15	NoRel	true	mistanke	sygdomsforebyggelse
+Relation	T6	T17	NoRel	true	mistanke	årsag
+Relation	T6	T5	NoRel	true	mistanke	stikke
+Relation	T7	T13	NoRel	true	udskrevet	angrebet
+Relation	T7	T15	NoRel	true	udskrevet	sygdomsforebyggelse
+Relation	T9	T0	NoRel	true	frikendt	rystet
+Relation	T9	T2	NoRel	true	frikendt	spurgt

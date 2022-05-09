@@ -1,0 +1,55 @@
+Text	It was later discovered that the non-revenue pilot who activated the emergency exit slide had not been adequately trained in its operation .	The handle that was pulled released the slide so it could be used as a raft in the event of a water landing , and the slide subsequently detached from the airplane .	The NTSB conducted a full investigation of the accident .	It found that although the aircraft had encountered a crosswind during landing , the conditions were well within the safe capabilities of the aircraft .	The first officer did not properly line up the plane before touchdown , nor did she slow the plane adequately before touchdown , so that the plane landed excessively hard .
+Event	T0	discovered	EVENT	13
+Event	T1	activated	EVENT	55
+Event	T2	slide	EVENT	84
+Event	T3	trained	EVENT	114
+Event	T4	operation	EVENT	129
+Event	T5	released	EVENT	168
+Event	T6	used	EVENT	202
+Event	T7	landing	EVENT	241
+Event	T8	detached	EVENT	278
+Event	T9	conducted	EVENT	316
+Event	T10	investigation	EVENT	333
+Event	T11	accident	EVENT	354
+Event	T12	found	EVENT	368
+Event	T13	encountered	EVENT	405
+Event	T14	crosswind	EVENT	419
+Event	T15	landing	EVENT	436
+Event	T16	touchdown	EVENT	578
+Event	T17	slow	EVENT	602
+Event	T18	touchdown	EVENT	635
+Event	T19	landed	EVENT	665
+Relation	T3	T2	SuperSub	true	trained	slide
+Relation	T2	T3	SubSuper	true	slide	trained
+Relation	T0	T12	NoRel	true	discovered	found
+Relation	T0	T4	NoRel	true	discovered	operation
+Relation	T0	T5	NoRel	true	discovered	released
+Relation	T0	T7	NoRel	true	discovered	landing
+Relation	T10	T5	NoRel	true	investigation	released
+Relation	T11	T3	NoRel	true	accident	trained
+Relation	T12	T14	NoRel	true	found	crosswind
+Relation	T12	T15	NoRel	true	found	landing
+Relation	T12	T5	NoRel	true	found	released
+Relation	T12	T7	NoRel	true	found	landing
+Relation	T13	T16	NoRel	true	encountered	touchdown
+Relation	T14	T3	NoRel	true	crosswind	trained
+Relation	T14	T8	NoRel	true	crosswind	detached
+Relation	T16	T10	NoRel	true	touchdown	investigation
+Relation	T17	T13	NoRel	true	slow	encountered
+Relation	T17	T2	NoRel	true	slow	slide
+Relation	T19	T9	NoRel	true	landed	conducted
+Relation	T2	T17	NoRel	true	slide	slow
+Relation	T3	T12	NoRel	true	trained	found
+Relation	T3	T19	NoRel	true	trained	landed
+Relation	T5	T12	NoRel	true	released	found
+Relation	T5	T18	NoRel	true	released	touchdown
+Relation	T6	T15	NoRel	true	used	landing
+Relation	T6	T16	NoRel	true	used	touchdown
+Relation	T6	T17	NoRel	true	used	slow
+Relation	T7	T8	NoRel	true	landing	detached
+Relation	T8	T10	NoRel	true	detached	investigation
+Relation	T9	T10	NoRel	true	conducted	investigation
+Relation	T9	T19	NoRel	true	conducted	landed
+Relation	T9	T3	NoRel	true	conducted	trained
+Relation	T9	T6	NoRel	true	conducted	used
+Relation	T9	T8	NoRel	true	conducted	detached

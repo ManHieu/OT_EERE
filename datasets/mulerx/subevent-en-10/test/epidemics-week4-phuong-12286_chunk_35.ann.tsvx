@@ -1,0 +1,69 @@
+Text	It would be endless to speak of what we have seen and heard , of some in their frenzy , rising out of their beds , and leaping about their rooms ; others crying and roaring at their windows ; some coming forth almost naked , and running into the streets .	.. scarcely a day passed over my head for , I think , a month or more together , but I should hear of the death of some one or more that I knew .	The first day that they were smitten , the next day some hopes of recovery , and the third day , that they were dead .	The outbreak was concentrated in London , but it affected other areas as well .	Perhaps the best known example occurred in the village of Eyam in Derbyshire .
+Event	T0	speak	EVENT	23
+Event	T1	seen	EVENT	45
+Event	T2	heard	EVENT	54
+Event	T3	frenzy	EVENT	79
+Event	T4	leaping	EVENT	119
+Event	T5	crying	EVENT	154
+Event	T6	roaring	EVENT	165
+Event	T7	coming	EVENT	197
+Event	T8	naked	EVENT	217
+Event	T9	hear	EVENT	350
+Event	T10	death	EVENT	362
+Event	T11	knew	EVENT	395
+Event	T12	smitten	EVENT	431
+Event	T13	hopes	EVENT	459
+Event	T14	recovery	EVENT	468
+Event	T15	dead	EVENT	514
+Event	T16	outbreak	EVENT	525
+Event	T17	concentrated	EVENT	538
+Event	T18	affected	EVENT	570
+Event	T19	occurred	EVENT	632
+Event	T20	rising out	EVENT	88
+Event	T21	running into	EVENT	229
+Relation	T3	T20	SuperSub	true	frenzy	rising out
+Relation	T20	T3	SubSuper	true	rising out	frenzy
+Relation	T3	T4	SuperSub	true	frenzy	leaping
+Relation	T4	T3	SubSuper	true	leaping	frenzy
+Relation	T8	T21	SuperSub	true	naked	running into
+Relation	T21	T8	SubSuper	true	running into	naked
+Relation	T0	T4	NoRel	true	speak	leaping
+Relation	T1	T5	NoRel	true	seen	crying
+Relation	T1	T8	NoRel	true	seen	naked
+Relation	T10	T20	NoRel	true	death	rising out
+Relation	T10	T3	NoRel	true	death	frenzy
+Relation	T12	T0	NoRel	true	smitten	speak
+Relation	T12	T16	NoRel	true	smitten	outbreak
+Relation	T12	T18	NoRel	true	smitten	affected
+Relation	T12	T4	NoRel	true	smitten	leaping
+Relation	T12	T5	NoRel	true	smitten	crying
+Relation	T12	T6	NoRel	true	smitten	roaring
+Relation	T12	T7	NoRel	true	smitten	coming
+Relation	T12	T8	NoRel	true	smitten	naked
+Relation	T13	T9	NoRel	true	hopes	hear
+Relation	T14	T0	NoRel	true	recovery	speak
+Relation	T15	T11	NoRel	true	dead	knew
+Relation	T15	T20	NoRel	true	dead	rising out
+Relation	T15	T4	NoRel	true	dead	leaping
+Relation	T17	T8	NoRel	true	concentrated	naked
+Relation	T17	T9	NoRel	true	concentrated	hear
+Relation	T19	T10	NoRel	true	occurred	death
+Relation	T19	T13	NoRel	true	occurred	hopes
+Relation	T20	T0	NoRel	true	rising out	speak
+Relation	T20	T14	NoRel	true	rising out	recovery
+Relation	T21	T13	NoRel	true	running into	hopes
+Relation	T4	T0	NoRel	true	leaping	speak
+Relation	T4	T12	NoRel	true	leaping	smitten
+Relation	T4	T21	NoRel	true	leaping	running into
+Relation	T5	T21	NoRel	true	crying	running into
+Relation	T5	T9	NoRel	true	crying	hear
+Relation	T6	T2	NoRel	true	roaring	heard
+Relation	T6	T5	NoRel	true	roaring	crying
+Relation	T7	T10	NoRel	true	coming	death
+Relation	T7	T15	NoRel	true	coming	dead
+Relation	T7	T6	NoRel	true	coming	roaring
+Relation	T8	T14	NoRel	true	naked	recovery
+Relation	T8	T19	NoRel	true	naked	occurred
+Relation	T9	T11	NoRel	true	hear	knew
+Relation	T9	T13	NoRel	true	hear	hopes
+Relation	T9	T21	NoRel	true	hear	running into

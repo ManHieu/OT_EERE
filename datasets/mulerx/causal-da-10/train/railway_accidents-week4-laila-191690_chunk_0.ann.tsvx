@@ -1,0 +1,34 @@
+Text	FRONTAL_KOLLISION PÅ GRØNNEHAVE STATION ( Helsingør ) .	Under indkørsel på Grønnehave Station HHGB den 15. juli 1996 kolliderede tog 136 fra Hornbæk frontalt med det udkørende tog 37 .	Det anslås at tog 37's hastighed var 10-15 km/t medens det modkørende 136 holdt stille eller næsten stille .	Ved kollisionen blev enkelte personer lettere kvæstet og der skete begrænsede materielle skader .	DSB's havarigruppe forestod undersøgelserne på vegne af Tilsynet med privatbanerne .
+Event	T0	indkørsel	EVENT	62
+Event	T1	kolliderede	EVENT	117
+Event	T2	anslås	EVENT	189
+Event	T4	kollisionen	EVENT	298
+Event	T5	kvæstet	EVENT	340
+Event	T6	skader	EVENT	383
+Event	T7	undersøgelserne	EVENT	420
+Event	T8	holdt stille	EVENT	259
+Event	T9	modkørende	EVENT	244
+Event	T10	hastighed	EVENT	208
+Event	T3	FRONTAL_KOLLISION	EVENT	0
+Relation	T4	T5	CauseEffect	true	kollisionen	kvæstet
+Relation	T5	T4	EffectCause	true	kvæstet	kollisionen
+Relation	T4	T6	CauseEffect	true	kollisionen	skader
+Relation	T6	T4	EffectCause	true	skader	kollisionen
+Relation	T1	T5	CauseEffect	true	kolliderede	kvæstet
+Relation	T5	T1	EffectCause	true	kvæstet	kolliderede
+Relation	T1	T6	CauseEffect	true	kolliderede	skader
+Relation	T6	T1	EffectCause	true	skader	kolliderede
+Relation	T3	T5	CauseEffect	true	FRONTAL_KOLLISION	kvæstet
+Relation	T5	T3	EffectCause	true	kvæstet	FRONTAL_KOLLISION
+Relation	T3	T6	CauseEffect	true	FRONTAL_KOLLISION	skader
+Relation	T6	T3	EffectCause	true	skader	FRONTAL_KOLLISION
+Relation	T0	T6	NoRel	true	indkørsel	skader
+Relation	T1	T0	NoRel	true	kolliderede	indkørsel
+Relation	T10	T1	NoRel	true	hastighed	kolliderede
+Relation	T2	T4	NoRel	true	anslås	kollisionen
+Relation	T3	T0	NoRel	true	FRONTAL_KOLLISION	indkørsel
+Relation	T3	T2	NoRel	true	FRONTAL_KOLLISION	anslås
+Relation	T6	T0	NoRel	true	skader	indkørsel
+Relation	T6	T2	NoRel	true	skader	anslås
+Relation	T8	T5	NoRel	true	holdt stille	kvæstet
+Relation	T9	T10	NoRel	true	modkørende	hastighed

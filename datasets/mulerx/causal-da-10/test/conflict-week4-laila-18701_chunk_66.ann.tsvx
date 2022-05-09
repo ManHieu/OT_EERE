@@ -1,0 +1,61 @@
+Text	thumb|right |Revolutionsgeneralen og præsident af Mexico Alvaro Obregón sad som præsident i hele valgperioden 1920-1924 .	Han forsøgte at blive genvalgt i 1928 og blev valgt , men blev snigmyrdet inden han kunne indtage præsidentembedet , hvilket skabte en krise for rækkefølgen af landets præsidenter .	I forhold til masserne var Obregón konservativ , men stadig en raformator , og han begyndte at lytte til de krav , som befolkningen havde , for at berolige folket .	Obregóns første fokus i 1920 var en jordreform .	Hans guvernører i forskellige stater havde trumfet reformerne igennem , som var kommet med grundloven i 1917 .
+Event	T0	sad	EVENT	72
+Event	T1	forsøgte	EVENT	126
+Event	T2	genvalgt	EVENT	144
+Event	T3	valgt	EVENT	168
+Event	T4	snigmyrdet	EVENT	185
+Event	T5	indtage	EVENT	212
+Event	T6	skabte	EVENT	247
+Event	T7	krise	EVENT	257
+Event	T8	lytte	EVENT	399
+Event	T9	kommet	EVENT	598
+Event	T10	krav	EVENT	412
+Event	T11	berolige	EVENT	451
+Event	T12	fokus	EVENT	485
+Event	T13	jordreform	EVENT	505
+Event	T14	trumfet	EVENT	561
+Event	T15	reformerne	EVENT	569
+Event	T16	konservativ	EVENT	339
+Event	T17	raformator	EVENT	367
+Relation	T13	T14	CauseEffect	true	jordreform	trumfet
+Relation	T14	T13	EffectCause	true	trumfet	jordreform
+Relation	T4	T6	CauseEffect	true	snigmyrdet	skabte
+Relation	T6	T4	EffectCause	true	skabte	snigmyrdet
+Relation	T11	T8	CauseEffect	true	berolige	lytte
+Relation	T8	T11	EffectCause	true	lytte	berolige
+Relation	T10	T12	NoRel	true	krav	fokus
+Relation	T10	T15	NoRel	true	krav	reformerne
+Relation	T10	T17	NoRel	true	krav	raformator
+Relation	T10	T2	NoRel	true	krav	genvalgt
+Relation	T10	T8	NoRel	true	krav	lytte
+Relation	T11	T16	NoRel	true	berolige	konservativ
+Relation	T11	T17	NoRel	true	berolige	raformator
+Relation	T12	T15	NoRel	true	fokus	reformerne
+Relation	T12	T5	NoRel	true	fokus	indtage
+Relation	T13	T2	NoRel	true	jordreform	genvalgt
+Relation	T14	T10	NoRel	true	trumfet	krav
+Relation	T14	T3	NoRel	true	trumfet	valgt
+Relation	T15	T11	NoRel	true	reformerne	berolige
+Relation	T15	T6	NoRel	true	reformerne	skabte
+Relation	T15	T8	NoRel	true	reformerne	lytte
+Relation	T15	T9	NoRel	true	reformerne	kommet
+Relation	T16	T5	NoRel	true	konservativ	indtage
+Relation	T17	T1	NoRel	true	raformator	forsøgte
+Relation	T17	T16	NoRel	true	raformator	konservativ
+Relation	T17	T5	NoRel	true	raformator	indtage
+Relation	T17	T9	NoRel	true	raformator	kommet
+Relation	T2	T1	NoRel	true	genvalgt	forsøgte
+Relation	T2	T10	NoRel	true	genvalgt	krav
+Relation	T2	T11	NoRel	true	genvalgt	berolige
+Relation	T3	T11	NoRel	true	valgt	berolige
+Relation	T4	T16	NoRel	true	snigmyrdet	konservativ
+Relation	T4	T3	NoRel	true	snigmyrdet	valgt
+Relation	T5	T12	NoRel	true	indtage	fokus
+Relation	T6	T3	NoRel	true	skabte	valgt
+Relation	T6	T7	NoRel	true	skabte	krise
+Relation	T6	T8	NoRel	true	skabte	lytte
+Relation	T7	T2	NoRel	true	krise	genvalgt
+Relation	T7	T4	NoRel	true	krise	snigmyrdet
+Relation	T8	T6	NoRel	true	lytte	skabte
+Relation	T9	T10	NoRel	true	kommet	krav
+Relation	T9	T5	NoRel	true	kommet	indtage

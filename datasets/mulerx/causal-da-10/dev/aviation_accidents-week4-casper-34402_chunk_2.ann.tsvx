@@ -1,0 +1,14 @@
+Text	Michael Moore blev , i 2006 , sagsøgt af en tidligere amerikansk soldat , som mistede begge sine ben i Irakkrigen .	Soldaten , som havde medvirket i filmen , begrundede med at han til kameraet sagde at han var for Irakkrigen , men lydsporet var lavet sådan at han sagde han fordømte krigen i stedet .	Kategori : Film fra 2004_Kategori : Anti-krigsfilm Kategori : Film instrueret af Michael Moore Kategori : De Gyldne Palmer Kategori : Dokumentarfilm om Terrorangrebet 11. september 2001 Kategori : Dokumentarfilm fra USA		
+Event	T0	sagsøgt	EVENT	30
+Event	T1	mistede	EVENT	78
+Event	T2	medvirket	EVENT	137
+Event	T3	begrundede	EVENT	158
+Event	T4	lavet	EVENT	245
+Event	T5	instrueret	EVENT	368
+Event	T6	Terrorangrebet	EVENT	453
+Relation	T1	T0	CauseEffect	true	mistede	sagsøgt
+Relation	T0	T1	EffectCause	true	sagsøgt	mistede
+Relation	T0	T2	NoRel	true	sagsøgt	medvirket
+Relation	T5	T0	NoRel	true	instrueret	sagsøgt
+Relation	T5	T2	NoRel	true	instrueret	medvirket
+Relation	T6	T4	NoRel	true	Terrorangrebet	lavet

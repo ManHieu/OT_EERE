@@ -1,0 +1,64 @@
+Text	Den sidste WHO opdatering fra 6. Juli 2009 viste 94.512 bekræftede tilfælde i 122 lande , og 429 dødsfald .	Mange epidemiologer har påpeget , at eftersom millioner af mennesker i realiteten har haft svineinfluenza , som regel i en mild form , så er antallet af laboratorie-bekræftede tilfælde faktisk meningsløst .	Delvis som en konsekvens heraf , meddelte WHO den 16. juli at det " ikke længere vil udgive tabeller , som viser bekræftede tilfælde for alle lande " .	I stedet skal nationale sundhedsmyndigheder fra alle lande hver uge informere WHO om deres kvalitative vurderinger af den geografiske spredning , tendensen i tilfældende , intensiteten af sygdomstilfældene , belastning af sundhedsystemerne og dødsfald .	Årlige influenza-epidemier anslåes at ramme 5–15 % af verdens befolkning .
+Event	T0	opdatering	EVENT	15
+Event	T1	viste	EVENT	43
+Event	T2	dødsfald	EVENT	97
+Event	T3	påpeget	EVENT	132
+Event	T4	meddelte	EVENT	348
+Event	T5	viser	EVENT	422
+Event	T6	informere	EVENT	535
+Event	T7	vurderinger	EVENT	570
+Event	T8	spredning	EVENT	601
+Event	T9	belastning	EVENT	675
+Event	T10	dødsfald	EVENT	710
+Event	T11	anslåes	EVENT	748
+Event	T12	ramme	EVENT	759
+Event	T13	bekræftede	EVENT	56
+Event	T14	svineinfluenza	EVENT	199
+Event	T15	meningsløst	EVENT	301
+Event	T16	sygdomstilfældene	EVENT	655
+Event	T17	influenza-epidemier	EVENT	728
+Event	T18	mild form	EVENT	231
+Event	T19	udgive	EVENT	400
+Event	T20	tilfælde	EVENT	439
+Relation	T17	T12	SuperSub	true	influenza-epidemier	ramme
+Relation	T12	T17	SubSuper	true	ramme	influenza-epidemier
+Relation	T0	T19	NoRel	true	opdatering	udgive
+Relation	T1	T16	NoRel	true	viste	sygdomstilfældene
+Relation	T1	T17	NoRel	true	viste	influenza-epidemier
+Relation	T1	T2	NoRel	true	viste	dødsfald
+Relation	T1	T9	NoRel	true	viste	belastning
+Relation	T10	T18	NoRel	true	dødsfald	mild form
+Relation	T10	T3	NoRel	true	dødsfald	påpeget
+Relation	T11	T20	NoRel	true	anslåes	tilfælde
+Relation	T12	T4	NoRel	true	ramme	meddelte
+Relation	T13	T12	NoRel	true	bekræftede	ramme
+Relation	T14	T18	NoRel	true	svineinfluenza	mild form
+Relation	T14	T19	NoRel	true	svineinfluenza	udgive
+Relation	T15	T10	NoRel	true	meningsløst	dødsfald
+Relation	T15	T12	NoRel	true	meningsløst	ramme
+Relation	T16	T0	NoRel	true	sygdomstilfældene	opdatering
+Relation	T16	T19	NoRel	true	sygdomstilfældene	udgive
+Relation	T16	T20	NoRel	true	sygdomstilfældene	tilfælde
+Relation	T16	T8	NoRel	true	sygdomstilfældene	spredning
+Relation	T18	T14	NoRel	true	mild form	svineinfluenza
+Relation	T18	T19	NoRel	true	mild form	udgive
+Relation	T19	T15	NoRel	true	udgive	meningsløst
+Relation	T2	T10	NoRel	true	dødsfald	dødsfald
+Relation	T2	T14	NoRel	true	dødsfald	svineinfluenza
+Relation	T2	T18	NoRel	true	dødsfald	mild form
+Relation	T2	T4	NoRel	true	dødsfald	meddelte
+Relation	T2	T7	NoRel	true	dødsfald	vurderinger
+Relation	T3	T12	NoRel	true	påpeget	ramme
+Relation	T3	T18	NoRel	true	påpeget	mild form
+Relation	T5	T12	NoRel	true	viser	ramme
+Relation	T5	T15	NoRel	true	viser	meningsløst
+Relation	T5	T17	NoRel	true	viser	influenza-epidemier
+Relation	T5	T18	NoRel	true	viser	mild form
+Relation	T5	T3	NoRel	true	viser	påpeget
+Relation	T5	T4	NoRel	true	viser	meddelte
+Relation	T6	T1	NoRel	true	informere	viste
+Relation	T7	T10	NoRel	true	vurderinger	dødsfald
+Relation	T7	T12	NoRel	true	vurderinger	ramme
+Relation	T8	T13	NoRel	true	spredning	bekræftede
+Relation	T8	T15	NoRel	true	spredning	meningsløst
+Relation	T9	T8	NoRel	true	belastning	spredning

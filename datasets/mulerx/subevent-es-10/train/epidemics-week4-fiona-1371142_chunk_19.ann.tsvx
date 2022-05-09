@@ -1,0 +1,68 @@
+Text	Se hicieron esfuerzos para eliminar gatos y perros , pero no ratas , lo que rápidamente las benefició .	] La enfermedad era lo suficientemente infrecuente como para que los médicos no hubiesen tenido la oportunidad para haberla conocido ; la formación médica variaba desde quienes habían asistido a un colegio de médicos hasta boticarios que también actuaban como médicos , incluso no faltaban charlatanes .	Abundaban otras enfermedades , como un brote de viruela del año anterior , y a estas incertidumbres se sumaron las dificultades para identificar el verdadero origen de la epidemia .	Los relatos contemporáneos sugieren que hubo casos de peste durante el invierno de 1664 -1665 , algunos fatales , pero otros no mostraron la virulencia de la epidemia posterior .	En aquel invierno el suelo se congeló de diciembre a marzo y el tráfico fluvial en el Támesis quedó bloqueado dos veces por el hielo ; posiblemente el clima frío haya frenado propagación de la peste .
+Event	T0	eliminar	EVENT	27
+Event	T1	benefició	EVENT	92
+Event	T2	conocido	EVENT	228
+Event	T3	formación	EVENT	242
+Event	T4	variaba	EVENT	259
+Event	T5	asistido	EVENT	288
+Event	T6	actuaban	EVENT	350
+Event	T7	Abundaban	EVENT	408
+Event	T8	brote	EVENT	447
+Event	T9	incertidumbres	EVENT	493
+Event	T10	dificultades	EVENT	523
+Event	T11	identificar	EVENT	541
+Event	T12	epidemia	EVENT	579
+Event	T13	relatos	EVENT	594
+Event	T14	sugieren	EVENT	617
+Event	T15	casos	EVENT	635
+Event	T16	peste	EVENT	644
+Event	T17	mostraron	EVENT	718
+Event	T18	virulencia	EVENT	731
+Event	T19	epidemia	EVENT	748
+Event	T20	congeló	EVENT	799
+Event	T21	bloqueado	EVENT	869
+Event	T22	propagación	EVENT	944
+Event	T23	peste	EVENT	962
+Relation	T0	T12	NoRel	true	eliminar	epidemia
+Relation	T0	T16	NoRel	true	eliminar	peste
+Relation	T0	T4	NoRel	true	eliminar	variaba
+Relation	T0	T6	NoRel	true	eliminar	actuaban
+Relation	T1	T22	NoRel	true	benefició	propagación
+Relation	T1	T3	NoRel	true	benefició	formación
+Relation	T10	T12	NoRel	true	dificultades	epidemia
+Relation	T10	T6	NoRel	true	dificultades	actuaban
+Relation	T12	T10	NoRel	true	epidemia	dificultades
+Relation	T12	T2	NoRel	true	epidemia	conocido
+Relation	T12	T21	NoRel	true	epidemia	bloqueado
+Relation	T12	T6	NoRel	true	epidemia	actuaban
+Relation	T13	T18	NoRel	true	relatos	virulencia
+Relation	T15	T16	NoRel	true	casos	peste
+Relation	T15	T23	NoRel	true	casos	peste
+Relation	T15	T4	NoRel	true	casos	variaba
+Relation	T16	T17	NoRel	true	peste	mostraron
+Relation	T16	T18	NoRel	true	peste	virulencia
+Relation	T16	T23	NoRel	true	peste	peste
+Relation	T16	T4	NoRel	true	peste	variaba
+Relation	T17	T0	NoRel	true	mostraron	eliminar
+Relation	T18	T10	NoRel	true	virulencia	dificultades
+Relation	T19	T0	NoRel	true	epidemia	eliminar
+Relation	T2	T15	NoRel	true	conocido	casos
+Relation	T20	T11	NoRel	true	congeló	identificar
+Relation	T20	T19	NoRel	true	congeló	epidemia
+Relation	T21	T23	NoRel	true	bloqueado	peste
+Relation	T21	T9	NoRel	true	bloqueado	incertidumbres
+Relation	T22	T0	NoRel	true	propagación	eliminar
+Relation	T22	T16	NoRel	true	propagación	peste
+Relation	T22	T3	NoRel	true	propagación	formación
+Relation	T23	T10	NoRel	true	peste	dificultades
+Relation	T23	T16	NoRel	true	peste	peste
+Relation	T23	T8	NoRel	true	peste	brote
+Relation	T3	T13	NoRel	true	formación	relatos
+Relation	T3	T5	NoRel	true	formación	asistido
+Relation	T4	T11	NoRel	true	variaba	identificar
+Relation	T5	T11	NoRel	true	asistido	identificar
+Relation	T5	T13	NoRel	true	asistido	relatos
+Relation	T6	T12	NoRel	true	actuaban	epidemia
+Relation	T8	T0	NoRel	true	brote	eliminar
+Relation	T8	T19	NoRel	true	brote	epidemia
+Relation	T9	T11	NoRel	true	incertidumbres	identificar

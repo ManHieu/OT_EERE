@@ -1,0 +1,50 @@
+Text	Del mismo modo , las cecas en otros lugares como Amiens , San Quintín , Tournai y Renania también tenían poco oro .	Tarde o temprano , la escasez de oro se agravó y provocó que el precio de mercado del oro excediera las tasas legales , lo que obligó a la producción de monedas de oro a cesar en muchos lugares .	La hambruna de los metales llevó a la necesidad de una forma alternativa de adquirir plata .	En 1448 , se exploraron nuevas minas de plata en Schneeberg , Sajonia , Schwaz y Tirol , para satisfacer la creciente demanda de plata .	En 1451 , se descubrió un nuevo proceso conocido como liquidación , el cual permitió que el cobre rico en plata de Europa Central se separara en plata y cobre , y a fines de la década de 1450 , Martin Claus de Gotha encontró una solución al problema de la inundación de minas de plata en Sajonia .
+Event	T0	escasez	EVENT	138
+Event	T1	agravó	EVENT	156
+Event	T2	provocó	EVENT	165
+Event	T3	excediera	EVENT	206
+Event	T4	obligó	EVENT	243
+Event	T5	producción	EVENT	255
+Event	T6	cesar	EVENT	286
+Event	T7	hambruna	EVENT	315
+Event	T8	llevó	EVENT	339
+Event	T9	necesidad	EVENT	350
+Event	T10	exploraron	EVENT	418
+Event	T11	demanda	EVENT	523
+Event	T12	descubrió	EVENT	555
+Event	T13	liquidación	EVENT	596
+Event	T14	permitió	EVENT	618
+Event	T15	separara	EVENT	675
+Event	T16	encontró	EVENT	758
+Event	T17	solución	EVENT	771
+Event	T18	inundación	EVENT	798
+Relation	T0	T16	NoRel	true	escasez	encontró
+Relation	T1	T0	NoRel	true	agravó	escasez
+Relation	T10	T2	NoRel	true	exploraron	provocó
+Relation	T10	T9	NoRel	true	exploraron	necesidad
+Relation	T11	T0	NoRel	true	demanda	escasez
+Relation	T11	T15	NoRel	true	demanda	separara
+Relation	T12	T16	NoRel	true	descubrió	encontró
+Relation	T12	T17	NoRel	true	descubrió	solución
+Relation	T12	T8	NoRel	true	descubrió	llevó
+Relation	T13	T9	NoRel	true	liquidación	necesidad
+Relation	T14	T3	NoRel	true	permitió	excediera
+Relation	T14	T5	NoRel	true	permitió	producción
+Relation	T15	T12	NoRel	true	separara	descubrió
+Relation	T15	T3	NoRel	true	separara	excediera
+Relation	T17	T11	NoRel	true	solución	demanda
+Relation	T17	T15	NoRel	true	solución	separara
+Relation	T18	T14	NoRel	true	inundación	permitió
+Relation	T2	T5	NoRel	true	provocó	producción
+Relation	T2	T6	NoRel	true	provocó	cesar
+Relation	T2	T9	NoRel	true	provocó	necesidad
+Relation	T3	T13	NoRel	true	excediera	liquidación
+Relation	T3	T15	NoRel	true	excediera	separara
+Relation	T5	T10	NoRel	true	producción	exploraron
+Relation	T6	T3	NoRel	true	cesar	excediera
+Relation	T7	T1	NoRel	true	hambruna	agravó
+Relation	T7	T11	NoRel	true	hambruna	demanda
+Relation	T8	T4	NoRel	true	llevó	obligó
+Relation	T9	T12	NoRel	true	necesidad	descubrió
+Relation	T9	T4	NoRel	true	necesidad	obligó
+Relation	T9	T8	NoRel	true	necesidad	llevó

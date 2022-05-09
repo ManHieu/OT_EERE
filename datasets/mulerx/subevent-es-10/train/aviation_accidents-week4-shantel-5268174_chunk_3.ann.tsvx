@@ -1,0 +1,98 @@
+Text	Se rescataron las partes significativas de todas las áreas de la Aeronave ( motores , hélices , trenes de aterrizaje , puerta de carga , puerta de pasajeros , cono de cola , etc . ) , pero los cuerpos de ambos tripulantes nunca fueron encontrados , sólo hallándose partes de ropa que fueron identificadas por los familiares .	Según el reporte de la Comisión Investigadora de Accidentes e Incidentes de Aviación uruguaya , la aeronave resultó totalmente destruida debido al gran impacto contra la superficie del mar , golpeando con un ángulo aproximado de 88º nariz abajo .	El informe relata una omisión del pasaje de la tripulación por la Oficina de Meteorología a recabar la información de la situación climática , la no realización interactiva de listas de chequeo y que los instrumentos alimentados con 115 Volts AC , no se encontraban energizados , siendo este último un factor sumamente influyente para la ocurrencia del accidente .	En conclusión la causa probable del accidente se determina como la Pérdida de Control de la Aeronave por encontrarse volando con indicaciones erróneas de los instrumentos de vuelo , sumado a la posible formación de hielo cristalino sobre su estructura , motivando una pérdida de conciencia situacional de la tripulación , junto a los siguientes factores contribuyentes :	- Falta de información meteorológica aeronáutica para el área en el momento de la operación .
+Event	T0	rescataron	EVENT	3
+Event	T2	identificadas	EVENT	291
+Event	T3	reporte	EVENT	335
+Event	T6	impacto	EVENT	478
+Event	T7	golpeando	EVENT	517
+Event	T8	relata	EVENT	584
+Event	T9	omisión	EVENT	595
+Event	T10	pasaje	EVENT	607
+Event	T11	recabar	EVENT	665
+Event	T12	chequeo	EVENT	759
+Event	T13	alimentados	EVENT	790
+Event	T14	energizados	EVENT	839
+Event	T15	ocurrencia	EVENT	911
+Event	T16	accidente	EVENT	926
+Event	T17	accidente	EVENT	974
+Event	T18	determina	EVENT	987
+Event	T19	Pérdida	EVENT	1005
+Event	T20	volando	EVENT	1055
+Event	T21	indicaciones	EVENT	1067
+Event	T22	vuelo	EVENT	1112
+Event	T23	formación	EVENT	1140
+Event	T24	motivando	EVENT	1192
+Event	T25	pérdida	EVENT	1206
+Event	T26	Falta	EVENT	1311
+Event	T27	operación	EVENT	1391
+Event	T28	destruida	EVENT	453
+Relation	T16	T0	SuperSub	true	accidente	rescataron
+Relation	T0	T16	SubSuper	true	rescataron	accidente
+Relation	T0	T12	NoRel	true	rescataron	chequeo
+Relation	T10	T14	NoRel	true	pasaje	energizados
+Relation	T10	T17	NoRel	true	pasaje	accidente
+Relation	T10	T22	NoRel	true	pasaje	vuelo
+Relation	T10	T8	NoRel	true	pasaje	relata
+Relation	T11	T10	NoRel	true	recabar	pasaje
+Relation	T11	T24	NoRel	true	recabar	motivando
+Relation	T12	T0	NoRel	true	chequeo	rescataron
+Relation	T12	T21	NoRel	true	chequeo	indicaciones
+Relation	T12	T25	NoRel	true	chequeo	pérdida
+Relation	T12	T26	NoRel	true	chequeo	Falta
+Relation	T12	T8	NoRel	true	chequeo	relata
+Relation	T13	T17	NoRel	true	alimentados	accidente
+Relation	T14	T19	NoRel	true	energizados	Pérdida
+Relation	T14	T2	NoRel	true	energizados	identificadas
+Relation	T14	T27	NoRel	true	energizados	operación
+Relation	T14	T28	NoRel	true	energizados	destruida
+Relation	T14	T3	NoRel	true	energizados	reporte
+Relation	T15	T10	NoRel	true	ocurrencia	pasaje
+Relation	T15	T17	NoRel	true	ocurrencia	accidente
+Relation	T15	T3	NoRel	true	ocurrencia	reporte
+Relation	T16	T19	NoRel	true	accidente	Pérdida
+Relation	T16	T2	NoRel	true	accidente	identificadas
+Relation	T16	T9	NoRel	true	accidente	omisión
+Relation	T18	T0	NoRel	true	determina	rescataron
+Relation	T18	T17	NoRel	true	determina	accidente
+Relation	T18	T21	NoRel	true	determina	indicaciones
+Relation	T19	T20	NoRel	true	Pérdida	volando
+Relation	T19	T25	NoRel	true	Pérdida	pérdida
+Relation	T2	T19	NoRel	true	identificadas	Pérdida
+Relation	T20	T17	NoRel	true	volando	accidente
+Relation	T20	T22	NoRel	true	volando	vuelo
+Relation	T20	T28	NoRel	true	volando	destruida
+Relation	T21	T25	NoRel	true	indicaciones	pérdida
+Relation	T22	T15	NoRel	true	vuelo	ocurrencia
+Relation	T22	T19	NoRel	true	vuelo	Pérdida
+Relation	T22	T27	NoRel	true	vuelo	operación
+Relation	T22	T7	NoRel	true	vuelo	golpeando
+Relation	T23	T14	NoRel	true	formación	energizados
+Relation	T23	T20	NoRel	true	formación	volando
+Relation	T23	T3	NoRel	true	formación	reporte
+Relation	T24	T0	NoRel	true	motivando	rescataron
+Relation	T24	T17	NoRel	true	motivando	accidente
+Relation	T24	T3	NoRel	true	motivando	reporte
+Relation	T25	T18	NoRel	true	pérdida	determina
+Relation	T25	T19	NoRel	true	pérdida	Pérdida
+Relation	T25	T7	NoRel	true	pérdida	golpeando
+Relation	T26	T15	NoRel	true	Falta	ocurrencia
+Relation	T27	T10	NoRel	true	operación	pasaje
+Relation	T27	T13	NoRel	true	operación	alimentados
+Relation	T27	T21	NoRel	true	operación	indicaciones
+Relation	T27	T24	NoRel	true	operación	motivando
+Relation	T28	T13	NoRel	true	destruida	alimentados
+Relation	T28	T24	NoRel	true	destruida	motivando
+Relation	T3	T10	NoRel	true	reporte	pasaje
+Relation	T6	T18	NoRel	true	impacto	determina
+Relation	T6	T2	NoRel	true	impacto	identificadas
+Relation	T6	T27	NoRel	true	impacto	operación
+Relation	T6	T8	NoRel	true	impacto	relata
+Relation	T7	T15	NoRel	true	golpeando	ocurrencia
+Relation	T7	T17	NoRel	true	golpeando	accidente
+Relation	T7	T18	NoRel	true	golpeando	determina
+Relation	T7	T21	NoRel	true	golpeando	indicaciones
+Relation	T7	T8	NoRel	true	golpeando	relata
+Relation	T8	T15	NoRel	true	relata	ocurrencia
+Relation	T8	T17	NoRel	true	relata	accidente
+Relation	T8	T23	NoRel	true	relata	formación
+Relation	T8	T26	NoRel	true	relata	Falta
+Relation	T9	T18	NoRel	true	omisión	determina

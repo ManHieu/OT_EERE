@@ -1,0 +1,75 @@
+Text	The first filing was by the family of Keith A. Gabel , which filed a motion to perpetuate testimony in the Central District of California on June 16 , 1971 .	This motion requests that the court issue a court order for a person 's deposition to be taken , and can be done prior to a lawsuit being filed under the Federal Rules of Civil Procedure .	Lawsuits against the United States government were delayed six months by the Federal Tort Claims Act .	In January 1972 , the Gabel family filed a lawsuit against the United States that contained class - action allegations and sought a " declaratory judgment on the issue of liability . "	The Judicial Panel on Multidistrict Litigation decided to move all related court actions to the Central District of California .
+Event	T0	filing	EVENT	10
+Event	T1	filed	EVENT	61
+Event	T2	motion	EVENT	69
+Event	T3	testimony	EVENT	90
+Event	T4	requests	EVENT	170
+Event	T5	issue	EVENT	194
+Event	T6	order	EVENT	208
+Event	T7	deposition	EVENT	230
+Event	T8	taken	EVENT	247
+Event	T9	done	EVENT	266
+Event	T10	lawsuit	EVENT	282
+Event	T11	filed	EVENT	296
+Event	T12	Lawsuits	EVENT	347
+Event	T13	delayed	EVENT	398
+Event	T14	filed	EVENT	485
+Event	T15	lawsuit	EVENT	493
+Event	T16	contained	EVENT	532
+Event	T17	allegations	EVENT	557
+Event	T18	sought	EVENT	573
+Event	T19	judgment	EVENT	596
+Event	T20	decided	EVENT	682
+Event	T21	move	EVENT	693
+Event	T22	actions	EVENT	716
+Relation	T0	T21	NoRel	true	filing	move
+Relation	T1	T21	NoRel	true	filed	move
+Relation	T1	T7	NoRel	true	filed	deposition
+Relation	T10	T0	NoRel	true	lawsuit	filing
+Relation	T10	T1	NoRel	true	lawsuit	filed
+Relation	T10	T17	NoRel	true	lawsuit	allegations
+Relation	T10	T4	NoRel	true	lawsuit	requests
+Relation	T10	T5	NoRel	true	lawsuit	issue
+Relation	T10	T7	NoRel	true	lawsuit	deposition
+Relation	T11	T12	NoRel	true	filed	Lawsuits
+Relation	T12	T0	NoRel	true	Lawsuits	filing
+Relation	T12	T3	NoRel	true	Lawsuits	testimony
+Relation	T12	T5	NoRel	true	Lawsuits	issue
+Relation	T13	T10	NoRel	true	delayed	lawsuit
+Relation	T13	T11	NoRel	true	delayed	filed
+Relation	T13	T15	NoRel	true	delayed	lawsuit
+Relation	T13	T21	NoRel	true	delayed	move
+Relation	T13	T4	NoRel	true	delayed	requests
+Relation	T14	T11	NoRel	true	filed	filed
+Relation	T14	T5	NoRel	true	filed	issue
+Relation	T15	T14	NoRel	true	lawsuit	filed
+Relation	T15	T5	NoRel	true	lawsuit	issue
+Relation	T15	T6	NoRel	true	lawsuit	order
+Relation	T16	T10	NoRel	true	contained	lawsuit
+Relation	T16	T12	NoRel	true	contained	Lawsuits
+Relation	T17	T6	NoRel	true	allegations	order
+Relation	T18	T0	NoRel	true	sought	filing
+Relation	T19	T13	NoRel	true	judgment	delayed
+Relation	T2	T15	NoRel	true	motion	lawsuit
+Relation	T2	T18	NoRel	true	motion	sought
+Relation	T2	T5	NoRel	true	motion	issue
+Relation	T2	T7	NoRel	true	motion	deposition
+Relation	T20	T0	NoRel	true	decided	filing
+Relation	T20	T10	NoRel	true	decided	lawsuit
+Relation	T20	T5	NoRel	true	decided	issue
+Relation	T21	T14	NoRel	true	move	filed
+Relation	T22	T10	NoRel	true	actions	lawsuit
+Relation	T22	T11	NoRel	true	actions	filed
+Relation	T22	T14	NoRel	true	actions	filed
+Relation	T22	T2	NoRel	true	actions	motion
+Relation	T3	T10	NoRel	true	testimony	lawsuit
+Relation	T4	T21	NoRel	true	requests	move
+Relation	T5	T21	NoRel	true	issue	move
+Relation	T6	T21	NoRel	true	order	move
+Relation	T6	T8	NoRel	true	order	taken
+Relation	T8	T0	NoRel	true	taken	filing
+Relation	T8	T14	NoRel	true	taken	filed
+Relation	T8	T5	NoRel	true	taken	issue
+Relation	T9	T1	NoRel	true	done	filed
+Relation	T9	T10	NoRel	true	done	lawsuit
+Relation	T9	T22	NoRel	true	done	actions

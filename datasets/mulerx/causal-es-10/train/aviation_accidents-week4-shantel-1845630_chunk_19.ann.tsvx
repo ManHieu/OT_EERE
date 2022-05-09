@@ -1,0 +1,76 @@
+Text	El mecánico desactivó la calefacción del sensor extrayendo el disyuntor Z-29 porque la lista de equipamiento mínimo MEL ( _ Minimum Equipment List _ ) permitía que estuviera inoperativa , si no se preveía engelamiento .	El 22 de agosto , los investigadores entrevistaron al mecánico ; y Spanair defendió que la desactivación era un procedimiento aceptado y no estaba relacionada con el accidente .	El informe final de la CIAIAC considera que el personal de mantenimiento hizo un análisis incompleto de la avería , que no permitió localizar el fallo , y que fue incorrecto desactivar la sonda RAT para poder aplicar la MEL y despachar el avión .	La lista solamente contemplaba el caso de que la calefacción no funcionase en vuelo , pero no indicaba nada en el caso de que se activase en tierra .	No obstante , el informe también señala que la apertura del disyuntor Z-29 no afecta al funcionamiento del TOWS .
+Event	T0	desactivó	EVENT	12
+Event	T1	calefacción	EVENT	25
+Event	T2	extrayendo	EVENT	48
+Event	T3	engelamiento	EVENT	205
+Event	T4	entrevistaron	EVENT	257
+Event	T5	defendió	EVENT	295
+Event	T6	desactivación	EVENT	311
+Event	T7	aceptado	EVENT	346
+Event	T8	accidente	EVENT	386
+Event	T9	informe	EVENT	401
+Event	T10	considera	EVENT	428
+Event	T11	hizo	EVENT	471
+Event	T12	avería	EVENT	505
+Event	T13	fallo	EVENT	543
+Event	T14	desactivar	EVENT	572
+Event	T15	aplicar	EVENT	607
+Event	T17	despachar	EVENT	624
+Event	T18	contemplaba	EVENT	664
+Event	T21	señala	EVENT	828
+Event	T22	apertura	EVENT	842
+Event	T23	afecta	EVENT	873
+Relation	T13	T8	CauseEffect	true	fallo	accidente
+Relation	T8	T13	EffectCause	true	accidente	fallo
+Relation	T0	T14	NoRel	true	desactivó	desactivar
+Relation	T0	T22	NoRel	true	desactivó	apertura
+Relation	T0	T7	NoRel	true	desactivó	aceptado
+Relation	T1	T10	NoRel	true	calefacción	considera
+Relation	T1	T18	NoRel	true	calefacción	contemplaba
+Relation	T1	T23	NoRel	true	calefacción	afecta
+Relation	T11	T21	NoRel	true	hizo	señala
+Relation	T12	T22	NoRel	true	avería	apertura
+Relation	T12	T6	NoRel	true	avería	desactivación
+Relation	T12	T8	NoRel	true	avería	accidente
+Relation	T13	T14	NoRel	true	fallo	desactivar
+Relation	T13	T2	NoRel	true	fallo	extrayendo
+Relation	T13	T3	NoRel	true	fallo	engelamiento
+Relation	T13	T4	NoRel	true	fallo	entrevistaron
+Relation	T13	T5	NoRel	true	fallo	defendió
+Relation	T14	T0	NoRel	true	desactivar	desactivó
+Relation	T14	T8	NoRel	true	desactivar	accidente
+Relation	T15	T13	NoRel	true	aplicar	fallo
+Relation	T15	T22	NoRel	true	aplicar	apertura
+Relation	T17	T4	NoRel	true	despachar	entrevistaron
+Relation	T17	T7	NoRel	true	despachar	aceptado
+Relation	T18	T6	NoRel	true	contemplaba	desactivación
+Relation	T18	T7	NoRel	true	contemplaba	aceptado
+Relation	T2	T0	NoRel	true	extrayendo	desactivó
+Relation	T2	T21	NoRel	true	extrayendo	señala
+Relation	T2	T8	NoRel	true	extrayendo	accidente
+Relation	T21	T13	NoRel	true	señala	fallo
+Relation	T21	T2	NoRel	true	señala	extrayendo
+Relation	T22	T10	NoRel	true	apertura	considera
+Relation	T22	T3	NoRel	true	apertura	engelamiento
+Relation	T22	T7	NoRel	true	apertura	aceptado
+Relation	T22	T9	NoRel	true	apertura	informe
+Relation	T23	T11	NoRel	true	afecta	hizo
+Relation	T23	T13	NoRel	true	afecta	fallo
+Relation	T23	T14	NoRel	true	afecta	desactivar
+Relation	T23	T2	NoRel	true	afecta	extrayendo
+Relation	T3	T0	NoRel	true	engelamiento	desactivó
+Relation	T3	T1	NoRel	true	engelamiento	calefacción
+Relation	T3	T4	NoRel	true	engelamiento	entrevistaron
+Relation	T4	T21	NoRel	true	entrevistaron	señala
+Relation	T4	T6	NoRel	true	entrevistaron	desactivación
+Relation	T5	T11	NoRel	true	defendió	hizo
+Relation	T5	T12	NoRel	true	defendió	avería
+Relation	T5	T17	NoRel	true	defendió	despachar
+Relation	T8	T12	NoRel	true	accidente	avería
+Relation	T8	T14	NoRel	true	accidente	desactivar
+Relation	T8	T15	NoRel	true	accidente	aplicar
+Relation	T8	T2	NoRel	true	accidente	extrayendo
+Relation	T9	T10	NoRel	true	informe	considera
+Relation	T9	T13	NoRel	true	informe	fallo
+Relation	T9	T18	NoRel	true	informe	contemplaba
+Relation	T9	T22	NoRel	true	informe	apertura

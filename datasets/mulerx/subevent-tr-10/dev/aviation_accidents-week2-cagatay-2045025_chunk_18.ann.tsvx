@@ -1,0 +1,12 @@
+Text	Bundan sonra savaş uçakları koruması altında tüm hava saldırlarının gerçekleştirileceğini , Lazkiye açıklarına Moskva kruvazörünün gönderileceğini belirtti .	Aynı zamanda Moskva kruvazörünün hava savunma sistemi S - 300 füzelerine benzer Fort sistemiyle donatıldığını duyurdu .	Herhangi bir tehlike anında potansiyel tüm tehditleri vurabileceklerini söyledi .	Türkiye ile varolan askeri düzeydeki tüm ilişkileri askıya aldıklarını da vurguladı .	Rusya Savunma Bakanı Sergey Şoygu , Lazkiye'deki Himeymim Hava Üssü'ne S - 400 hava savunma sistemi yerleştirme kararı aldıklarını söyledi .
+Event	T0	belirtti	EVENT	147
+Event	T1	duyurdu	EVENT	268
+Event	T10	donatıldığını	EVENT	254
+Event	T2	tehlike	EVENT	291
+Event	T3	söyledi	EVENT	350
+Event	T4	vurguladı	EVENT	434
+Event	T6	söyledi	EVENT	577
+Event	T8	koruması	EVENT	28
+Relation	T2	T10	NoRel	true	tehlike	donatıldığını
+Relation	T3	T10	NoRel	true	söyledi	donatıldığını
+Relation	T6	T0	NoRel	true	söyledi	belirtti

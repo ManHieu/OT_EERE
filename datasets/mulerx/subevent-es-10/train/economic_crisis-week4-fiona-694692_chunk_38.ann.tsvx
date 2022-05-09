@@ -1,0 +1,42 @@
+Text	Una vez internados , sus cañones fueron inutilizados .	La flota estuvo retenida durante las negociaciones de armisticio que culminaron en el Tratado de Versalles .	Reuter se dio cuenta de que los británicos pretendían apoderarse de los buques alemanes el 21 de junio , fecha límite para que Alemania firmara el tratado de paz .	Sin conocer que esta fecha se había extendido hasta el 23 , Reuter ordenó echar a pique todos los barcos .	En la mañana del 21 de junio la flota británica dejó el fondeadero de Scapa para realizar maniobras , circunstancia que aprovechó el almirante alemán para transmitir la orden a los navíos a las 11:20 .
+Event	T0	internados	EVENT	8
+Event	T1	inutilizados	EVENT	40
+Event	T2	retenida	EVENT	71
+Event	T3	negociaciones	EVENT	92
+Event	T4	culminaron	EVENT	124
+Event	T5	Tratado	EVENT	141
+Event	T6	firmara	EVENT	300
+Event	T7	tratado	EVENT	311
+Event	T8	conocer	EVENT	332
+Event	T9	extendido	EVENT	364
+Event	T10	dejó	EVENT	483
+Event	T11	maniobras	EVENT	525
+Event	T12	circunstancia	EVENT	537
+Event	T13	aprovechó	EVENT	555
+Event	T14	transmitir	EVENT	590
+Event	T15	orden	EVENT	604
+Relation	T0	T1	SuperSub	true	internados	inutilizados
+Relation	T1	T0	SubSuper	true	inutilizados	internados
+Relation	T11	T10	NoRel	true	maniobras	dejó
+Relation	T11	T14	NoRel	true	maniobras	transmitir
+Relation	T11	T9	NoRel	true	maniobras	extendido
+Relation	T12	T0	NoRel	true	circunstancia	internados
+Relation	T12	T8	NoRel	true	circunstancia	conocer
+Relation	T13	T11	NoRel	true	aprovechó	maniobras
+Relation	T13	T15	NoRel	true	aprovechó	orden
+Relation	T13	T8	NoRel	true	aprovechó	conocer
+Relation	T14	T10	NoRel	true	transmitir	dejó
+Relation	T14	T11	NoRel	true	transmitir	maniobras
+Relation	T14	T9	NoRel	true	transmitir	extendido
+Relation	T15	T3	NoRel	true	orden	negociaciones
+Relation	T15	T6	NoRel	true	orden	firmara
+Relation	T4	T13	NoRel	true	culminaron	aprovechó
+Relation	T4	T5	NoRel	true	culminaron	Tratado
+Relation	T4	T6	NoRel	true	culminaron	firmara
+Relation	T5	T11	NoRel	true	Tratado	maniobras
+Relation	T5	T14	NoRel	true	Tratado	transmitir
+Relation	T6	T2	NoRel	true	firmara	retenida
+Relation	T8	T6	NoRel	true	conocer	firmara
+Relation	T9	T10	NoRel	true	extendido	dejó
+Relation	T9	T12	NoRel	true	extendido	circunstancia
+Relation	T9	T7	NoRel	true	extendido	tratado

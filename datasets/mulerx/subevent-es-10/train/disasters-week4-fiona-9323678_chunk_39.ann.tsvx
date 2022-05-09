@@ -1,0 +1,52 @@
+Text	Tailandia entra a la fase 5 de su reapertura : abre escuelas y locales de alto riesgo , y permite el ingreso controlado de extranjeros .	Jair Bolsonaro , presidente de Brasil da positivo al coronavirus , convirtiéndose en el tercer presidente de América contagiado con el virus .	Los casos positivos superan la cantidad de 12 millones , con 4.5_% de fallecidos y 58_% de recuperados , según worldometers.info .	México supera a Italia en cantidad de fallecidos , convirtiéndose en el cuarto país con más muertes por COVID-19 .	Brasil superó los 3 millones de casos y se convirtió en el segundo país en registrar 100.000 muertos por COVID-19 .
+Event	T0	entra	EVENT	10
+Event	T1	fase	EVENT	21
+Event	T2	reapertura	EVENT	34
+Event	T3	abre	EVENT	47
+Event	T4	convirtiéndose	EVENT	204
+Event	T5	contagiado	EVENT	254
+Event	T6	virus	EVENT	272
+Event	T7	superan	EVENT	300
+Event	T8	fallecidos	EVENT	350
+Event	T9	recuperados	EVENT	371
+Event	T10	supera	EVENT	418
+Event	T11	fallecidos	EVENT	449
+Event	T12	convirtiéndose	EVENT	462
+Event	T13	muertes	EVENT	503
+Event	T14	superó	EVENT	533
+Event	T15	casos	EVENT	558
+Event	T16	registrar	EVENT	601
+Event	T17	muertos	EVENT	619
+Relation	T17	T14	SuperSub	true	muertos	superó
+Relation	T14	T17	SubSuper	true	superó	muertos
+Relation	T0	T12	NoRel	true	entra	convirtiéndose
+Relation	T1	T8	NoRel	true	fase	fallecidos
+Relation	T10	T3	NoRel	true	supera	abre
+Relation	T10	T4	NoRel	true	supera	convirtiéndose
+Relation	T11	T0	NoRel	true	fallecidos	entra
+Relation	T12	T11	NoRel	true	convirtiéndose	fallecidos
+Relation	T13	T12	NoRel	true	muertes	convirtiéndose
+Relation	T14	T10	NoRel	true	superó	supera
+Relation	T14	T11	NoRel	true	superó	fallecidos
+Relation	T15	T10	NoRel	true	casos	supera
+Relation	T15	T13	NoRel	true	casos	muertes
+Relation	T15	T16	NoRel	true	casos	registrar
+Relation	T15	T9	NoRel	true	casos	recuperados
+Relation	T16	T4	NoRel	true	registrar	convirtiéndose
+Relation	T16	T8	NoRel	true	registrar	fallecidos
+Relation	T17	T4	NoRel	true	muertos	convirtiéndose
+Relation	T5	T10	NoRel	true	contagiado	supera
+Relation	T5	T11	NoRel	true	contagiado	fallecidos
+Relation	T5	T12	NoRel	true	contagiado	convirtiéndose
+Relation	T6	T1	NoRel	true	virus	fase
+Relation	T6	T10	NoRel	true	virus	supera
+Relation	T6	T2	NoRel	true	virus	reapertura
+Relation	T6	T7	NoRel	true	virus	superan
+Relation	T7	T11	NoRel	true	superan	fallecidos
+Relation	T7	T15	NoRel	true	superan	casos
+Relation	T7	T8	NoRel	true	superan	fallecidos
+Relation	T8	T1	NoRel	true	fallecidos	fase
+Relation	T8	T7	NoRel	true	fallecidos	superan
+Relation	T9	T0	NoRel	true	recuperados	entra
+Relation	T9	T10	NoRel	true	recuperados	supera
+Relation	T9	T11	NoRel	true	recuperados	fallecidos

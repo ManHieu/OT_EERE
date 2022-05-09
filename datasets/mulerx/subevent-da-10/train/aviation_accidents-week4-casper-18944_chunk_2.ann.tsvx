@@ -1,0 +1,45 @@
+Text	Tilbuddet blev afvist , og han flyttede til Sudan , der som et af de få lande i området fastholdt en kritisk politik over for Saudi-Arabien og USA under krigen i Golfen .	I 1992 gennemførte oberst Omar al-Bashir et islamistisk kup i Sudan , og Osama bin Laden bestemte sig for at flytte al-Qaedas hovedkontor til Sudan .	Han var kommet i unåde hos Saudi-Arabien efter at have kritiseret tilstedeværelsen af store amerikanske styrker i landet .	Denne stationering af amerikanske styrker i Saudi-Arabien og den amerikanske støtte til Israel fik stor ideologisk betydning for bin Laden og al-Qaedas fremtidige udvikling .	Den islamistiske bevægelse Taliban tog kontrol over Afghanistan i 1996 , og Osama bin laden bestemte sig for at flytte al-Qaeda tilbage til Afghanistan .
+Event	T0	flyttede	EVENT	31
+Event	T1	fastholdt	EVENT	88
+Event	T2	krigen	EVENT	153
+Event	T3	gennemførte	EVENT	178
+Event	T4	kup	EVENT	227
+Event	T5	bestemte	EVENT	260
+Event	T6	flytte	EVENT	280
+Event	T7	kommet	EVENT	329
+Event	T8	stationering	EVENT	450
+Event	T9	støtte	EVENT	521
+Event	T10	udvikling	EVENT	607
+Event	T11	bestemte	EVENT	711
+Event	T12	flytte	EVENT	731
+Event	T13	blev	EVENT	10
+Event	T14	kontrol	EVENT	658
+Relation	T0	T1	SuperSub	true	flyttede	fastholdt
+Relation	T1	T0	SubSuper	true	fastholdt	flyttede
+Relation	T0	T2	SuperSub	true	flyttede	krigen
+Relation	T2	T0	SubSuper	true	krigen	flyttede
+Relation	T4	T3	SuperSub	true	kup	gennemførte
+Relation	T3	T4	SubSuper	true	gennemførte	kup
+Relation	T4	T5	SuperSub	true	kup	bestemte
+Relation	T5	T4	SubSuper	true	bestemte	kup
+Relation	T6	T7	SuperSub	true	flytte	kommet
+Relation	T7	T6	SubSuper	true	kommet	flytte
+Relation	T0	T6	NoRel	true	flyttede	flytte
+Relation	T0	T9	NoRel	true	flyttede	støtte
+Relation	T1	T8	NoRel	true	fastholdt	stationering
+Relation	T10	T2	NoRel	true	udvikling	krigen
+Relation	T10	T4	NoRel	true	udvikling	kup
+Relation	T11	T7	NoRel	true	bestemte	kommet
+Relation	T12	T1	NoRel	true	flytte	fastholdt
+Relation	T12	T9	NoRel	true	flytte	støtte
+Relation	T14	T8	NoRel	true	kontrol	stationering
+Relation	T3	T2	NoRel	true	gennemførte	krigen
+Relation	T4	T1	NoRel	true	kup	fastholdt
+Relation	T4	T14	NoRel	true	kup	kontrol
+Relation	T5	T14	NoRel	true	bestemte	kontrol
+Relation	T6	T0	NoRel	true	flytte	flyttede
+Relation	T7	T0	NoRel	true	kommet	flyttede
+Relation	T7	T12	NoRel	true	kommet	flytte
+Relation	T8	T10	NoRel	true	stationering	udvikling
+Relation	T8	T12	NoRel	true	stationering	flytte
+Relation	T9	T11	NoRel	true	støtte	bestemte

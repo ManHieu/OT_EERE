@@ -1,0 +1,138 @@
+Text	وبا سے بچاؤ کے لیے ہاتھوں کو بار بار دھونے ، کھانستے وقت منہ کو ڈھانپنے ، دوسروں سے فاصلہ رکھنے اور مکمل علاحدہ رہنے کا مشورہ دیا جا رہا ہے ۔	نیز جو افراد مشکوک ہیں انہیں 14 دن تک گھریلو قرنطینہ میں رکھنا ضروری خیال کیا جاتا ہے ۔	کورونا وائرس کی وبا کی مزید روک تھام کے لیے اسفار پر پابندی ، قرنطینہ ، کرفیو ، تالابندی ، اجتماعات اور تقریبوں کا التوا یا منسوخی ، عبادت گاہوں اور سیاحتی مقامات کو مقفل کر دینے جیسے اقدامات کیے جا رہے ہیں ۔	ان کوششوں میں ہوبئی کا قرنطینہ ، اطالیہ اور یورپ کے تمام علاقوں کی مکمل تالا بندی ، چین اور جنوبی کوریا میں کرفیو ، سرحدوں کی بندش ، ہوائی اڈوں اور ریلوے اسٹیشنوں پر سخت جانچ قابل ذکر ہیں ۔	124 سے زائد ملکوں میں اسکولوں اور جامعات کو بھی بند کر دیا گیا ہے جس کی وجہ سے 120 کروڑ طلبہ کی تعلیم متاثر ہوئی ہے ۔
+Event	T0	پابندی	EVENT	283
+Event	T1	منسوخی	EVENT	354
+Event	T3	کوششوں	EVENT	442
+Event	T4	بندی	EVENT	516
+Event	T5	بندش	EVENT	565
+Event	T6	جانچ	EVENT	609
+Event	T7	ذکر	EVENT	619
+Event	T8	بند	EVENT	677
+Event	T10	وبا	EVENT	0
+Event	T11	بچاؤ	EVENT	7
+Event	T12	دھونے	EVENT	37
+Event	T13	کھانستے	EVENT	45
+Event	T14	ڈھانپنے	EVENT	64
+Event	T15	رکھنے	EVENT	90
+Event	T16	علاحدہ	EVENT	105
+Event	T17	مشورہ	EVENT	120
+Event	T18	قرنطینہ	EVENT	187
+Event	T19	خیال	EVENT	211
+Event	T20	وبا	EVENT	246
+Event	T21	روک	EVENT	258
+Event	T22	قرنطینہ	EVENT	292
+Event	T23	کرفیو	EVENT	302
+Event	T24	تالابندی	EVENT	310
+Event	T25	اجتماعات	EVENT	321
+Event	T26	تقریبوں	EVENT	334
+Event	T29	مقفل	EVENT	396
+Event	T2	اقدامات	EVENT	414
+Event	T30	التوا	EVENT	345
+Event	T27	قرنطینہ	EVENT	462
+Event	T28	کرفیو	EVENT	547
+Event	T31	متاثر	EVENT	731
+Relation	T10	T18	CauseEffect	true	وبا	قرنطینہ
+Relation	T18	T10	EffectCause	true	قرنطینہ	وبا
+Relation	T21	T2	CauseEffect	true	روک	اقدامات
+Relation	T2	T21	EffectCause	true	اقدامات	روک
+Relation	T8	T31	CauseEffect	true	بند	متاثر
+Relation	T31	T8	EffectCause	true	متاثر	بند
+Relation	T0	T2	NoRel	true	پابندی	اقدامات
+Relation	T1	T18	NoRel	true	منسوخی	قرنطینہ
+Relation	T1	T26	NoRel	true	منسوخی	تقریبوں
+Relation	T1	T30	NoRel	true	منسوخی	التوا
+Relation	T10	T17	NoRel	true	وبا	مشورہ
+Relation	T10	T30	NoRel	true	وبا	التوا
+Relation	T10	T4	NoRel	true	وبا	بندی
+Relation	T11	T1	NoRel	true	بچاؤ	منسوخی
+Relation	T11	T14	NoRel	true	بچاؤ	ڈھانپنے
+Relation	T11	T19	NoRel	true	بچاؤ	خیال
+Relation	T11	T28	NoRel	true	بچاؤ	کرفیو
+Relation	T11	T4	NoRel	true	بچاؤ	بندی
+Relation	T11	T8	NoRel	true	بچاؤ	بند
+Relation	T12	T17	NoRel	true	دھونے	مشورہ
+Relation	T13	T18	NoRel	true	کھانستے	قرنطینہ
+Relation	T13	T27	NoRel	true	کھانستے	قرنطینہ
+Relation	T13	T28	NoRel	true	کھانستے	کرفیو
+Relation	T13	T31	NoRel	true	کھانستے	متاثر
+Relation	T13	T7	NoRel	true	کھانستے	ذکر
+Relation	T14	T29	NoRel	true	ڈھانپنے	مقفل
+Relation	T15	T24	NoRel	true	رکھنے	تالابندی
+Relation	T15	T27	NoRel	true	رکھنے	قرنطینہ
+Relation	T15	T31	NoRel	true	رکھنے	متاثر
+Relation	T15	T8	NoRel	true	رکھنے	بند
+Relation	T16	T10	NoRel	true	علاحدہ	وبا
+Relation	T16	T13	NoRel	true	علاحدہ	کھانستے
+Relation	T16	T18	NoRel	true	علاحدہ	قرنطینہ
+Relation	T16	T19	NoRel	true	علاحدہ	خیال
+Relation	T16	T29	NoRel	true	علاحدہ	مقفل
+Relation	T17	T15	NoRel	true	مشورہ	رکھنے
+Relation	T17	T19	NoRel	true	مشورہ	خیال
+Relation	T17	T28	NoRel	true	مشورہ	کرفیو
+Relation	T17	T31	NoRel	true	مشورہ	متاثر
+Relation	T17	T8	NoRel	true	مشورہ	بند
+Relation	T18	T11	NoRel	true	قرنطینہ	بچاؤ
+Relation	T19	T0	NoRel	true	خیال	پابندی
+Relation	T19	T10	NoRel	true	خیال	وبا
+Relation	T19	T27	NoRel	true	خیال	قرنطینہ
+Relation	T2	T23	NoRel	true	اقدامات	کرفیو
+Relation	T2	T25	NoRel	true	اقدامات	اجتماعات
+Relation	T2	T29	NoRel	true	اقدامات	مقفل
+Relation	T2	T3	NoRel	true	اقدامات	کوششوں
+Relation	T20	T2	NoRel	true	وبا	اقدامات
+Relation	T20	T28	NoRel	true	وبا	کرفیو
+Relation	T21	T1	NoRel	true	روک	منسوخی
+Relation	T21	T16	NoRel	true	روک	علاحدہ
+Relation	T21	T26	NoRel	true	روک	تقریبوں
+Relation	T22	T11	NoRel	true	قرنطینہ	بچاؤ
+Relation	T22	T31	NoRel	true	قرنطینہ	متاثر
+Relation	T23	T10	NoRel	true	کرفیو	وبا
+Relation	T23	T17	NoRel	true	کرفیو	مشورہ
+Relation	T23	T25	NoRel	true	کرفیو	اجتماعات
+Relation	T23	T3	NoRel	true	کرفیو	کوششوں
+Relation	T23	T5	NoRel	true	کرفیو	بندش
+Relation	T23	T8	NoRel	true	کرفیو	بند
+Relation	T24	T10	NoRel	true	تالابندی	وبا
+Relation	T24	T18	NoRel	true	تالابندی	قرنطینہ
+Relation	T24	T25	NoRel	true	تالابندی	اجتماعات
+Relation	T24	T26	NoRel	true	تالابندی	تقریبوں
+Relation	T25	T21	NoRel	true	اجتماعات	روک
+Relation	T26	T15	NoRel	true	تقریبوں	رکھنے
+Relation	T26	T3	NoRel	true	تقریبوں	کوششوں
+Relation	T27	T15	NoRel	true	قرنطینہ	رکھنے
+Relation	T27	T31	NoRel	true	قرنطینہ	متاثر
+Relation	T27	T5	NoRel	true	قرنطینہ	بندش
+Relation	T28	T10	NoRel	true	کرفیو	وبا
+Relation	T28	T12	NoRel	true	کرفیو	دھونے
+Relation	T28	T18	NoRel	true	کرفیو	قرنطینہ
+Relation	T29	T10	NoRel	true	مقفل	وبا
+Relation	T29	T15	NoRel	true	مقفل	رکھنے
+Relation	T29	T27	NoRel	true	مقفل	قرنطینہ
+Relation	T29	T28	NoRel	true	مقفل	کرفیو
+Relation	T29	T7	NoRel	true	مقفل	ذکر
+Relation	T3	T19	NoRel	true	کوششوں	خیال
+Relation	T3	T6	NoRel	true	کوششوں	جانچ
+Relation	T3	T7	NoRel	true	کوششوں	ذکر
+Relation	T30	T21	NoRel	true	التوا	روک
+Relation	T30	T22	NoRel	true	التوا	قرنطینہ
+Relation	T30	T29	NoRel	true	التوا	مقفل
+Relation	T31	T1	NoRel	true	متاثر	منسوخی
+Relation	T31	T20	NoRel	true	متاثر	وبا
+Relation	T31	T25	NoRel	true	متاثر	اجتماعات
+Relation	T31	T3	NoRel	true	متاثر	کوششوں
+Relation	T31	T4	NoRel	true	متاثر	بندی
+Relation	T31	T6	NoRel	true	متاثر	جانچ
+Relation	T4	T10	NoRel	true	بندی	وبا
+Relation	T4	T22	NoRel	true	بندی	قرنطینہ
+Relation	T4	T28	NoRel	true	بندی	کرفیو
+Relation	T5	T20	NoRel	true	بندش	وبا
+Relation	T5	T22	NoRel	true	بندش	قرنطینہ
+Relation	T5	T24	NoRel	true	بندش	تالابندی
+Relation	T6	T1	NoRel	true	جانچ	منسوخی
+Relation	T6	T24	NoRel	true	جانچ	تالابندی
+Relation	T6	T25	NoRel	true	جانچ	اجتماعات
+Relation	T6	T28	NoRel	true	جانچ	کرفیو
+Relation	T6	T8	NoRel	true	جانچ	بند
+Relation	T7	T19	NoRel	true	ذکر	خیال
+Relation	T7	T25	NoRel	true	ذکر	اجتماعات
+Relation	T7	T5	NoRel	true	ذکر	بندش
+Relation	T8	T5	NoRel	true	بند	بندش

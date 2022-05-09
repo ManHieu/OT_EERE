@@ -1,0 +1,12 @@
+Text	Resulta muerto el conductor del automóvil y se producen varios heridos entre los ocupantes del convoy .	- 1985 [ miniaturade imagen | 180 px | derecha | Locomotora de la CP Serie 1400 .	] - 30 DE ABRIL en la estación de Cascais , una brigada de vía que reparaba una aguja es arrollada por un convoy .	Mueren dos trabajadores de CP y otros dos más resultan heridos , uno de ellos en estado grave .	- 16 DE MAYO : chocan dos trenes de cercanías a la entrada de la estación lisboeta de Campolide .
+Event	T0	muerto	EVENT	8
+Event	T1	producen	EVENT	47
+Event	T2	heridos	EVENT	63
+Event	T3	reparaba	EVENT	253
+Event	T4	arrollada	EVENT	275
+Event	T5	Mueren	EVENT	301
+Event	T6	heridos	EVENT	356
+Event	T7	chocan	EVENT	412
+Relation	T0	T4	NoRel	true	muerto	arrollada
+Relation	T1	T6	NoRel	true	producen	heridos
+Relation	T5	T4	NoRel	true	Mueren	arrollada

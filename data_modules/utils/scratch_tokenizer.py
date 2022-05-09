@@ -77,9 +77,11 @@ if __name__ == '__main__':
         return examples
 
     tokenizer = ScratchTokenizer()
-    data_name = 'HiEve'
+    data_name = 'ESL'
     if data_name == 'HiEve':
         data_path = './datasets/hievents_v2'
+    if data_name == 'ESL':
+        data_path = 'datasets/EventStoryLine/0'
     train_set = load_data(data_path, 'train')
     dev_set = load_data(data_path, 'val')
     test_set = load_data(data_path, 'test')

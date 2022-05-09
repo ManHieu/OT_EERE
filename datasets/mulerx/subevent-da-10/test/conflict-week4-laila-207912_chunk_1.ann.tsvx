@@ -1,0 +1,93 @@
+Text	Tchad og Sudan er fortsat officielt i krig mod hinanden , men egentlige kamphandlinger er blevet indstillet efter at der blev indgået en våbenhvile i maj 2007 .	Aftalen var et resultat af et saudi arabisk mæglingsforsøg .	Den indeholdt en gensidig garanti om at de to lande ikke ville huse , træne eller finansiere bevæbnede grupper , som var i opposition til regeringen i det andet land .	Ifølge en journalist fra Reuters’ analyse skyldtes aftalen , at Tchads præsident , Déby , formodede at oprørsbevægelsen UFDD i Tchad modtog støtte fra både Sudan og Saudi Arabien , og at han derfor følte sig presset til at underskrive den .	Colin Thomas-Jensen , en ekspert på Tchad og Sudan hos ICG , udtrykte tvivl om , hvorvidt aftalen ville medføre reelle fremskridt i forholdet mellem landene .
+Event	T0	krig	EVENT	38
+Event	T1	kamphandlinger	EVENT	72
+Event	T2	indstillet	EVENT	97
+Event	T3	indgået	EVENT	126
+Event	T4	våbenhvile	EVENT	137
+Event	T5	Aftalen	EVENT	161
+Event	T6	mæglingsforsøg	EVENT	205
+Event	T7	indeholdt	EVENT	226
+Event	T8	træne	EVENT	292
+Event	T9	opposition	EVENT	345
+Event	T10	aftalen	EVENT	441
+Event	T11	støtte	EVENT	530
+Event	T12	følte	EVENT	588
+Event	T13	presset	EVENT	598
+Event	T14	underskrive	EVENT	613
+Event	T15	tvivl	EVENT	701
+Event	T16	fremskridt	EVENT	750
+Event	T17	huse	EVENT	285
+Event	T18	finansiere	EVENT	304
+Event	T19	garanti	EVENT	248
+Event	T20	formodede	EVENT	480
+Event	T21	oprørsbevægelsen	EVENT	493
+Event	T22	aftalen	EVENT	721
+Event	T23	medføre	EVENT	735
+Event	T24	skyldtes	EVENT	432
+Event	T25	analyse	EVENT	424
+Relation	T19	T17	SuperSub	true	garanti	huse
+Relation	T17	T19	SubSuper	true	huse	garanti
+Relation	T19	T8	SuperSub	true	garanti	træne
+Relation	T8	T19	SubSuper	true	træne	garanti
+Relation	T19	T18	SuperSub	true	garanti	finansiere
+Relation	T18	T19	SubSuper	true	finansiere	garanti
+Relation	T0	T14	NoRel	true	krig	underskrive
+Relation	T0	T22	NoRel	true	krig	aftalen
+Relation	T1	T13	NoRel	true	kamphandlinger	presset
+Relation	T1	T18	NoRel	true	kamphandlinger	finansiere
+Relation	T1	T20	NoRel	true	kamphandlinger	formodede
+Relation	T10	T12	NoRel	true	aftalen	følte
+Relation	T10	T16	NoRel	true	aftalen	fremskridt
+Relation	T10	T2	NoRel	true	aftalen	indstillet
+Relation	T11	T13	NoRel	true	støtte	presset
+Relation	T11	T7	NoRel	true	støtte	indeholdt
+Relation	T12	T17	NoRel	true	følte	huse
+Relation	T12	T6	NoRel	true	følte	mæglingsforsøg
+Relation	T12	T9	NoRel	true	følte	opposition
+Relation	T14	T1	NoRel	true	underskrive	kamphandlinger
+Relation	T14	T11	NoRel	true	underskrive	støtte
+Relation	T14	T25	NoRel	true	underskrive	analyse
+Relation	T15	T13	NoRel	true	tvivl	presset
+Relation	T15	T3	NoRel	true	tvivl	indgået
+Relation	T15	T6	NoRel	true	tvivl	mæglingsforsøg
+Relation	T15	T9	NoRel	true	tvivl	opposition
+Relation	T16	T8	NoRel	true	fremskridt	træne
+Relation	T16	T9	NoRel	true	fremskridt	opposition
+Relation	T17	T1	NoRel	true	huse	kamphandlinger
+Relation	T17	T13	NoRel	true	huse	presset
+Relation	T17	T25	NoRel	true	huse	analyse
+Relation	T17	T6	NoRel	true	huse	mæglingsforsøg
+Relation	T18	T0	NoRel	true	finansiere	krig
+Relation	T18	T21	NoRel	true	finansiere	oprørsbevægelsen
+Relation	T19	T1	NoRel	true	garanti	kamphandlinger
+Relation	T19	T21	NoRel	true	garanti	oprørsbevægelsen
+Relation	T2	T18	NoRel	true	indstillet	finansiere
+Relation	T2	T23	NoRel	true	indstillet	medføre
+Relation	T20	T18	NoRel	true	formodede	finansiere
+Relation	T20	T22	NoRel	true	formodede	aftalen
+Relation	T20	T5	NoRel	true	formodede	Aftalen
+Relation	T20	T8	NoRel	true	formodede	træne
+Relation	T21	T1	NoRel	true	oprørsbevægelsen	kamphandlinger
+Relation	T21	T25	NoRel	true	oprørsbevægelsen	analyse
+Relation	T22	T0	NoRel	true	aftalen	krig
+Relation	T22	T12	NoRel	true	aftalen	følte
+Relation	T22	T13	NoRel	true	aftalen	presset
+Relation	T22	T23	NoRel	true	aftalen	medføre
+Relation	T23	T2	NoRel	true	medføre	indstillet
+Relation	T23	T5	NoRel	true	medføre	Aftalen
+Relation	T25	T20	NoRel	true	analyse	formodede
+Relation	T4	T18	NoRel	true	våbenhvile	finansiere
+Relation	T6	T11	NoRel	true	mæglingsforsøg	støtte
+Relation	T6	T16	NoRel	true	mæglingsforsøg	fremskridt
+Relation	T7	T13	NoRel	true	indeholdt	presset
+Relation	T7	T17	NoRel	true	indeholdt	huse
+Relation	T7	T2	NoRel	true	indeholdt	indstillet
+Relation	T8	T2	NoRel	true	træne	indstillet
+Relation	T8	T20	NoRel	true	træne	formodede
+Relation	T8	T21	NoRel	true	træne	oprørsbevægelsen
+Relation	T8	T22	NoRel	true	træne	aftalen
+Relation	T8	T5	NoRel	true	træne	Aftalen
+Relation	T8	T7	NoRel	true	træne	indeholdt
+Relation	T9	T18	NoRel	true	opposition	finansiere
+Relation	T9	T20	NoRel	true	opposition	formodede
+Relation	T9	T5	NoRel	true	opposition	Aftalen

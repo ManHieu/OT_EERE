@@ -1,0 +1,31 @@
+Text	Gelişmiş ülkelerin tamamında ve gelişmekte olan ülkelerin pek çoğunda ortadan kaldırılmış olmasına rağmen Asya ve Afrika kıtalarının bazı bölgelerinde hâlen görülebilmektedir .	Bulaşıcı ve öldürücü bir hastalıktır .	Vebanın farelerden bulaştığı kanısı yaygındır , ancak gerçekte bakteriyi yayan bir tür piredir ve fareler de bu hastalığın kurbanıdırlar .	Tarihte veba salgınlarından önce şehirlerde büyük miktarda fare ölümlerinin meydana geldiği görülmüş , ölü farelerle temas eden insanların , pire ısırması nedeniyle bu hastalığa maruz kaldıkları tespit edilmiştir .	Hastalık , mikrop kapıldıktan 2- 8 gün içerisinde kendini gösterir .
+Event	T0	kaldırılmış	EVENT	78
+Event	T2	salgınlarından	EVENT	368
+Event	T3	görülmüş	EVENT	447
+Event	T4	ısırması	EVENT	501
+Event	T5	edilmiştir	EVENT	557
+Event	T6	kapıldıktan	EVENT	588
+Event	T7	gösterir	EVENT	628
+Event	T8	Vebanın	EVENT	216
+Event	T1	piredir	EVENT	303
+Event	T9	yayan	EVENT	289
+Relation	T1	T9	CauseEffect	true	piredir	yayan
+Relation	T9	T1	EffectCause	true	yayan	piredir
+Relation	T9	T8	CauseEffect	true	yayan	Vebanın
+Relation	T8	T9	EffectCause	true	Vebanın	yayan
+Relation	T4	T3	CauseEffect	true	ısırması	görülmüş
+Relation	T3	T4	EffectCause	true	görülmüş	ısırması
+Relation	T3	T8	CauseEffect	true	görülmüş	Vebanın
+Relation	T8	T3	EffectCause	true	Vebanın	görülmüş
+Relation	T4	T5	CauseEffect	true	ısırması	edilmiştir
+Relation	T5	T4	EffectCause	true	edilmiştir	ısırması
+Relation	T6	T7	CauseEffect	true	kapıldıktan	gösterir
+Relation	T7	T6	EffectCause	true	gösterir	kapıldıktan
+Relation	T1	T4	NoRel	true	piredir	ısırması
+Relation	T2	T3	NoRel	true	salgınlarından	görülmüş
+Relation	T3	T1	NoRel	true	görülmüş	piredir
+Relation	T4	T9	NoRel	true	ısırması	yayan
+Relation	T5	T1	NoRel	true	edilmiştir	piredir
+Relation	T6	T1	NoRel	true	kapıldıktan	piredir
+Relation	T6	T8	NoRel	true	kapıldıktan	Vebanın
+Relation	T8	T7	NoRel	true	Vebanın	gösterir

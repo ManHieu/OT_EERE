@@ -1,0 +1,41 @@
+Text	2010 MENTAWAI DEPREMI VE TSUNAMISI , 25 Ekim 2010'da Sumatra adasının batı kıyısında saat 21: 42 ( yerel saat ile : 14,42 UTC ) moment magnitüd ölçeğiyle 7.8 şiddetinde meydana gelen bir depremdir .	Bu deprem 2004 tsunamisinden sonraki en felaketli depremidir .	Deprem sonrasında Bengkulu ve Batı Sumatra kıyıları ve Mentawai Adaları sularla kaplanmıştır .	Kategori : Endonezya'daki depremler Kategori : Tsunamiler Mentawai depremi ve tsunamisi Mentawai depremi ve tsunamisi	
+Event	T0	DEPREMI	EVENT	14
+Event	T1	TSUNAMISI	EVENT	25
+Event	T2	gelen	EVENT	177
+Event	T3	depremdir	EVENT	187
+Event	T4	deprem	EVENT	202
+Event	T5	Deprem	EVENT	262
+Event	T6	kaplanmıştır	EVENT	342
+Event	T7	depremi	EVENT	424
+Event	T8	tsunamisi	EVENT	435
+Event	T9	depremi	EVENT	454
+Event	T10	tsunamisinden	EVENT	214
+Event	T11	depremler	EVENT	383
+Event	T12	Tsunamiler	EVENT	404
+Event	T13	tsunamisi	EVENT	465
+Relation	T1	T6	CauseEffect	true	TSUNAMISI	kaplanmıştır
+Relation	T6	T1	EffectCause	true	kaplanmıştır	TSUNAMISI
+Relation	T9	T13	CauseEffect	true	depremi	tsunamisi
+Relation	T13	T9	EffectCause	true	tsunamisi	depremi
+Relation	T7	T8	CauseEffect	true	depremi	tsunamisi
+Relation	T8	T7	EffectCause	true	tsunamisi	depremi
+Relation	T1	T3	NoRel	true	TSUNAMISI	depremdir
+Relation	T10	T6	NoRel	true	tsunamisinden	kaplanmıştır
+Relation	T10	T9	NoRel	true	tsunamisinden	depremi
+Relation	T11	T4	NoRel	true	depremler	deprem
+Relation	T12	T10	NoRel	true	Tsunamiler	tsunamisinden
+Relation	T12	T6	NoRel	true	Tsunamiler	kaplanmıştır
+Relation	T12	T7	NoRel	true	Tsunamiler	depremi
+Relation	T13	T4	NoRel	true	tsunamisi	deprem
+Relation	T13	T8	NoRel	true	tsunamisi	tsunamisi
+Relation	T2	T5	NoRel	true	gelen	Deprem
+Relation	T2	T6	NoRel	true	gelen	kaplanmıştır
+Relation	T4	T3	NoRel	true	deprem	depremdir
+Relation	T5	T2	NoRel	true	Deprem	gelen
+Relation	T6	T13	NoRel	true	kaplanmıştır	tsunamisi
+Relation	T6	T4	NoRel	true	kaplanmıştır	deprem
+Relation	T6	T9	NoRel	true	kaplanmıştır	depremi
+Relation	T7	T1	NoRel	true	depremi	TSUNAMISI
+Relation	T7	T11	NoRel	true	depremi	depremler
+Relation	T7	T3	NoRel	true	depremi	depremdir
+Relation	T9	T5	NoRel	true	depremi	Deprem

@@ -1,0 +1,28 @@
+Text	Tres de las ocho LST ( , y _ LST 973 _ ) recibieron algunos impactos del fuego de morteros y ametralladoras , los que mataron a un marinero e hirieron algunos pocos más .	Los LST completaron la descarga y abandonaron la playa con la marea alta a principios del 16 de septiembre .	Después de neutralizar las defensas norcoreanas en Inchon en la noche del 15 de septiembre , ellos abrieron la calzada elevada a Wolmi-do , permitiendo que el 3.er Batallón del 5. o de Infantería de Marina y los tanques de la Playa Verde entraran a la batalla de Inchon .	A principios de la mañana del 16 de septiembre , el 5. o de Infantería de Marina ( las fuerzas en la Playa Roja y la Playa Verde ) marcharían a través de la ciudad en Inchon , tomándola durante la tarde .	Bajo el mando del entonces coronel Lewis Burwell " Chesty " Puller , el 1.er Regimiento de Marines desembarcó en la Playa Azul que estaba significativamente más al sur de las otras dos playas y llegó a tierra firme al final .
+Event	T0	recibieron	EVENT	41
+Event	T1	impactos	EVENT	60
+Event	T10	entraran	EVENT	518
+Event	T11	batalla	EVENT	532
+Event	T12	marcharían	EVENT	683
+Event	T13	desembarcó	EVENT	856
+Event	T3	mataron	EVENT	118
+Event	T4	hirieron	EVENT	142
+Event	T5	completaron	EVENT	179
+Event	T6	descarga	EVENT	194
+Event	T7	abandonaron	EVENT	205
+Event	T8	neutralizar	EVENT	291
+Event	T9	permitiendo	EVENT	420
+Relation	T0	T3	NoRel	true	recibieron	mataron
+Relation	T10	T1	NoRel	true	entraran	impactos
+Relation	T10	T9	NoRel	true	entraran	permitiendo
+Relation	T11	T4	NoRel	true	batalla	hirieron
+Relation	T12	T9	NoRel	true	marcharían	permitiendo
+Relation	T13	T12	NoRel	true	desembarcó	marcharían
+Relation	T3	T10	NoRel	true	mataron	entraran
+Relation	T3	T12	NoRel	true	mataron	marcharían
+Relation	T3	T7	NoRel	true	mataron	abandonaron
+Relation	T5	T0	NoRel	true	completaron	recibieron
+Relation	T5	T1	NoRel	true	completaron	impactos
+Relation	T5	T10	NoRel	true	completaron	entraran
+Relation	T9	T12	NoRel	true	permitiendo	marcharían
+Relation	T9	T13	NoRel	true	permitiendo	desembarcó

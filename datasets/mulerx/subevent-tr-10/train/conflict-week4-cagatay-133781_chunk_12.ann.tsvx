@@ -1,0 +1,32 @@
+Text	Tebriz merkez olmak üzere Azerbaycan valiliğine Ulama Han tayin edildi .	Sonra Bağdad üzerine yürüyen ordu , burayı da mukavemetsiz ele geçirdi .	Kışı Bağdad’da geçiren Kanuni Sultan Süleyman , Tebriz’i işgal edip Van’ı kuşatan Şah Tahmasb üzerine yürüdü .	Şah Tahmasb tekrar geri çekilip İran içlerine gidince , Tebriz’e tekrar girildi .	Uzun süre aranmasına rağmen İran ordusunun ortaya çıkmaması üzerine , ordu , Ağustos 1535'te İstanbul’a döndü .
+Event	T3	geçiren	EVENT	161
+Event	T4	kuşatan	EVENT	220
+Event	T5	yürüdü	EVENT	248
+Event	T6	çekilip	EVENT	281
+Event	T7	gidince	EVENT	303
+Event	T8	girildi	EVENT	329
+Event	T9	aranmasına	EVENT	349
+Event	T10	döndü	EVENT	443
+Event	T11	tayin edildi	EVENT	58
+Event	T12	yürüyen	EVENT	94
+Event	T1	ele geçirdi	EVENT	132
+Event	T2	işgal	EVENT	203
+Relation	T5	T9	SuperSub	true	yürüdü	aranmasına
+Relation	T9	T5	SubSuper	true	aranmasına	yürüdü
+Relation	T5	T8	SuperSub	true	yürüdü	girildi
+Relation	T8	T5	SubSuper	true	girildi	yürüdü
+Relation	T10	T7	NoRel	true	döndü	gidince
+Relation	T11	T1	NoRel	true	tayin edildi	ele geçirdi
+Relation	T11	T3	NoRel	true	tayin edildi	geçiren
+Relation	T11	T7	NoRel	true	tayin edildi	gidince
+Relation	T12	T5	NoRel	true	yürüyen	yürüdü
+Relation	T3	T12	NoRel	true	geçiren	yürüyen
+Relation	T3	T6	NoRel	true	geçiren	çekilip
+Relation	T4	T11	NoRel	true	kuşatan	tayin edildi
+Relation	T4	T6	NoRel	true	kuşatan	çekilip
+Relation	T4	T9	NoRel	true	kuşatan	aranmasına
+Relation	T5	T10	NoRel	true	yürüdü	döndü
+Relation	T5	T7	NoRel	true	yürüdü	gidince
+Relation	T6	T7	NoRel	true	çekilip	gidince
+Relation	T7	T12	NoRel	true	gidince	yürüyen
+Relation	T7	T8	NoRel	true	gidince	girildi

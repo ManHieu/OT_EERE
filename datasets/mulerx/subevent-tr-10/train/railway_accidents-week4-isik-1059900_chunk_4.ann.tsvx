@@ -1,0 +1,9 @@
+Text	Her şeye rağmen vagonlardan biri , Holiday Inn hoteli’nin bürosuna dalarak şiddetli yapısal hasara sebep oldu .	Kayıp yoktu .	Sadece trenin kondüktörü , hiç yolcu taşımıyordu , bir parça yaralandı .	- 4 Ocak 2010 .	Sınıf 66 lokomotifi tarafından çekilen bir yük treni karlı bir havada Carrbridge_‘de raydan çıkarak Highland Main Line_nı kapattı .
+Event	T0	oldu	EVENT	105
+Event	T1	yaralandı	EVENT	187
+Event	T2	çekilen	EVENT	246
+Event	T3	kapattı	EVENT	337
+Event	T4	dalarak	EVENT	67
+Event	T5	çıkarak	EVENT	307
+Event	T6	karlı	EVENT	268
+Relation	T2	T5	NoRel	true	çekilen	çıkarak

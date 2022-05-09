@@ -1,0 +1,20 @@
+Text	ARJANTIN COVID - 19 AŞI SKANDALI ( ) Arjantin Sağlık Bakanlığı'nda COVID - 19 aşılarının uygulanmasına ilişkin siyasi bir skandaldır .	Aşı protokolünde belirlenen sınırlamalar nedeniyle henüz bu aşıları yaptırmaya yetkili olmayan vatandaşlar Cumhurbaşkanı Alberto Fernandez'in partisiyle olan ilişkileri sayesinde aşılan malırını konu edinir .	Skandal ilk olarak kendisine " masanın altında " aşı yapılmasının teklif edildiğini iddia eden , ancak teklif edenlerin kimliğini vermeyi reddeden entelektüel Beatriz Sarlo tarafından ortaya atıldı .	Bu açıklamadan sonra şikayetle karşı karşıya kalan Buenos Aires Özerk Şehri Sağlık Bakanı Fernán Quirós eğer böyle bir yasadışı aşılama kampanyası varsa bunun Buenos Aires Özerk Şehri'nde olmadığını belirtti .	Beatriz Sarlo'dan sonra ikinci açıklama gazeteci Horacio Verbitsky tarafından yapıldı .
+Event	T0	skandaldır	EVENT	122
+Event	T2	edinir	EVENT	335
+Event	T3	Skandal	EVENT	344
+Event	T4	iddia	EVENT	428
+Event	T5	atıldı	EVENT	535
+Event	T6	açıklamadan	EVENT	547
+Event	T8	kampanyası	EVENT	680
+Event	T9	belirtti	EVENT	743
+Event	T10	açıklama	EVENT	785
+Event	T11	yapıldı	EVENT	832
+Event	T12	SKANDALI	EVENT	24
+Relation	T12	T0	NoRel	true	SKANDALI	skandaldır
+Relation	T2	T3	NoRel	true	edinir	Skandal
+Relation	T2	T6	NoRel	true	edinir	açıklamadan
+Relation	T3	T12	NoRel	true	Skandal	SKANDALI
+Relation	T3	T4	NoRel	true	Skandal	iddia
+Relation	T4	T2	NoRel	true	iddia	edinir
+Relation	T6	T12	NoRel	true	açıklamadan	SKANDALI
+Relation	T6	T8	NoRel	true	açıklamadan	kampanyası

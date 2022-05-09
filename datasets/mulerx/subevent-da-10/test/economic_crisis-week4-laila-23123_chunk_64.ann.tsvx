@@ -1,0 +1,63 @@
+Text	Med sit skrift _ Aristokraternes Catechismus _ ( 1796 ) gjorde han grin med hofadelen og regeringens afhængighed af den .	Tidsskriftet _ Politisk og Physisk Magazin _ ( 1793-96 ) udgivet af Rudolph Buchhave , var måske ikke egentligt jakobinsk , men det vedblev at støtte fx Maximilien Robespierres handlinger længe efter at de blodige henrettelser , den såkaldte terrortid .	Jakobinerne dannede kun en ganske lille , men højrøstet gruppe i København , og de udgav i en kort periode tidsskriftet _ Jacobineren _ ( 1796 ) som ytrede fuld tilslutning til revolutionen i Frankrig .	Størstedelen af de mere radikale oplysningsmænd var dog ikke åbenlyst revolutionære .	Peter Andreas Heiberg var stærkt kritisk overfor regeringen i tidsskriftromanen _ Rigdalersedlens Hændelser _ ( 1789 ) der på en satirisk måde tager alle aspekter af samfundet under behandling , fx Klasselotteriets fordærvelse af ungdommen , statstøtte til spekulanter og det systematiske smugleri .
+Event	T0	udgivet	EVENT	179
+Event	T1	vedblev	EVENT	254
+Event	T2	støtte	EVENT	265
+Event	T3	handlinger	EVENT	299
+Event	T4	henrettelser	EVENT	336
+Event	T5	terrortid	EVENT	364
+Event	T6	dannede	EVENT	388
+Event	T7	udgav	EVENT	459
+Event	T8	ytrede	EVENT	525
+Event	T9	tilslutning	EVENT	537
+Event	T10	revolutionen	EVENT	553
+Event	T11	kritisk	EVENT	698
+Event	T12	Hændelser	EVENT	763
+Event	T13	tager	EVENT	808
+Event	T14	behandling	EVENT	847
+Event	T15	fordærvelse	EVENT	880
+Event	T16	smugleri	EVENT	954
+Event	T17	grin	EVENT	67
+Event	T18	gruppe	EVENT	432
+Event	T19	radikale	EVENT	603
+Event	T20	statstøtte	EVENT	907
+Relation	T18	T7	SuperSub	true	gruppe	udgav
+Relation	T7	T18	SubSuper	true	udgav	gruppe
+Relation	T0	T11	NoRel	true	udgivet	kritisk
+Relation	T0	T8	NoRel	true	udgivet	ytrede
+Relation	T1	T20	NoRel	true	vedblev	statstøtte
+Relation	T1	T4	NoRel	true	vedblev	henrettelser
+Relation	T10	T0	NoRel	true	revolutionen	udgivet
+Relation	T11	T14	NoRel	true	kritisk	behandling
+Relation	T11	T15	NoRel	true	kritisk	fordærvelse
+Relation	T11	T17	NoRel	true	kritisk	grin
+Relation	T12	T1	NoRel	true	Hændelser	vedblev
+Relation	T12	T4	NoRel	true	Hændelser	henrettelser
+Relation	T12	T5	NoRel	true	Hændelser	terrortid
+Relation	T13	T2	NoRel	true	tager	støtte
+Relation	T13	T3	NoRel	true	tager	handlinger
+Relation	T14	T19	NoRel	true	behandling	radikale
+Relation	T15	T12	NoRel	true	fordærvelse	Hændelser
+Relation	T15	T16	NoRel	true	fordærvelse	smugleri
+Relation	T15	T17	NoRel	true	fordærvelse	grin
+Relation	T16	T0	NoRel	true	smugleri	udgivet
+Relation	T16	T1	NoRel	true	smugleri	vedblev
+Relation	T16	T9	NoRel	true	smugleri	tilslutning
+Relation	T17	T9	NoRel	true	grin	tilslutning
+Relation	T18	T0	NoRel	true	gruppe	udgivet
+Relation	T19	T11	NoRel	true	radikale	kritisk
+Relation	T19	T12	NoRel	true	radikale	Hændelser
+Relation	T2	T10	NoRel	true	støtte	revolutionen
+Relation	T2	T13	NoRel	true	støtte	tager
+Relation	T2	T6	NoRel	true	støtte	dannede
+Relation	T2	T9	NoRel	true	støtte	tilslutning
+Relation	T20	T14	NoRel	true	statstøtte	behandling
+Relation	T20	T6	NoRel	true	statstøtte	dannede
+Relation	T3	T7	NoRel	true	handlinger	udgav
+Relation	T4	T5	NoRel	true	henrettelser	terrortid
+Relation	T4	T6	NoRel	true	henrettelser	dannede
+Relation	T5	T11	NoRel	true	terrortid	kritisk
+Relation	T5	T18	NoRel	true	terrortid	gruppe
+Relation	T6	T19	NoRel	true	dannede	radikale
+Relation	T6	T9	NoRel	true	dannede	tilslutning
+Relation	T8	T10	NoRel	true	ytrede	revolutionen
+Relation	T9	T17	NoRel	true	tilslutning	grin

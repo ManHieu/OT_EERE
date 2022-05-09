@@ -1,0 +1,30 @@
+Text	İKINCI ÇEÇEN SAVAŞI , 29 Eylül 1999 tarihinde Rus ordusunun Çeçenistan'a girmesiyle başlayan ve Nisan 2009'a kadar süren savaş .	Rusya'nın Çeçenistan'a girme nedeni , Çeçenistan'daki Mashadov hükûmetinin Uluslararası İslami Barış Tugayı adlı örgütün Dağıstan'ı işgal etmeye başlayıp burada Radikal İslamcı bir yönetim kurmasını engellemekte başarısız olmasıydı .	Rusya Çeçenistan'ın ana hatlarına hava saldırısı düzenledikten sonra askeri kara operasyonlarına başladı .	Rus ordusu teçhizat , sayı , askeri araç ve hava gücü bakımından çok daha üstündü , yaklaşık 1,5 yıl içinde Çeçen yerleşimleri Rusların eline geçti .	Şehirlerdeki direnişçiler ve Yabancı Mücahitler dağlarda gerilla savaşı vermeye başladı .
+Event	T2	savaş	EVENT	121
+Event	T3	girme	EVENT	152
+Event	T5	düzenledikten	EVENT	412
+Event	T6	başladı	EVENT	460
+Event	T7	geçti	EVENT	612
+Event	T8	başladı	EVENT	700
+Event	T9	İKINCI ÇEÇEN SAVAŞI	EVENT	0
+Event	T10	girmesiyle	EVENT	73
+Event	T1	etmeye	EVENT	267
+Event	T4	olmasıydı	EVENT	351
+Event	T11	kurmasını	EVENT	318
+Relation	T9	T5	SuperSub	true	İKINCI ÇEÇEN SAVAŞI	düzenledikten
+Relation	T5	T9	SubSuper	true	düzenledikten	İKINCI ÇEÇEN SAVAŞI
+Relation	T9	T6	SuperSub	true	İKINCI ÇEÇEN SAVAŞI	başladı
+Relation	T6	T9	SubSuper	true	başladı	İKINCI ÇEÇEN SAVAŞI
+Relation	T9	T7	SuperSub	true	İKINCI ÇEÇEN SAVAŞI	geçti
+Relation	T7	T9	SubSuper	true	geçti	İKINCI ÇEÇEN SAVAŞI
+Relation	T10	T8	NoRel	true	girmesiyle	başladı
+Relation	T2	T10	NoRel	true	savaş	girmesiyle
+Relation	T3	T5	NoRel	true	girme	düzenledikten
+Relation	T4	T11	NoRel	true	olmasıydı	kurmasını
+Relation	T4	T2	NoRel	true	olmasıydı	savaş
+Relation	T5	T6	NoRel	true	düzenledikten	başladı
+Relation	T6	T10	NoRel	true	başladı	girmesiyle
+Relation	T6	T2	NoRel	true	başladı	savaş
+Relation	T7	T2	NoRel	true	geçti	savaş
+Relation	T7	T8	NoRel	true	geçti	başladı
+Relation	T8	T2	NoRel	true	başladı	savaş
+Relation	T8	T5	NoRel	true	başladı	düzenledikten

@@ -1,0 +1,28 @@
+Text	Ayrıca depremden sonra 3 şiddetinden büyük 13 adet artçı depremin meydana geldiği açıklandı .	Depremin ardından biri ağır olmak üzere 266 kişi yaralandığı bildirildi .	Gökçeada'da hafif hasar meydana geldi .	Kategori : Ege Denizi tarihi Ege Denizi Kategori : Yunanistan'daki depremler Ege Denizi depremi Ege Denizi depremi Ege Denizi depremi Kategori : 40° K Kategori : 25 ° D	
+Event	T0	depremden	EVENT	7
+Event	T1	açıklandı	EVENT	82
+Event	T2	Depremin	EVENT	94
+Event	T3	bildirildi	EVENT	155
+Event	T4	geldi	EVENT	200
+Event	T5	depremler	EVENT	275
+Event	T6	depremi	EVENT	296
+Event	T7	depremi	EVENT	315
+Event	T8	depremi	EVENT	334
+Event	T9	geldiği	EVENT	74
+Relation	T0	T1	CauseEffect	true	depremden	açıklandı
+Relation	T1	T0	EffectCause	true	açıklandı	depremden
+Relation	T2	T3	CauseEffect	true	Depremin	bildirildi
+Relation	T3	T2	EffectCause	true	bildirildi	Depremin
+Relation	T2	T4	CauseEffect	true	Depremin	geldi
+Relation	T4	T2	EffectCause	true	geldi	Depremin
+Relation	T0	T3	CauseEffect	true	depremden	bildirildi
+Relation	T3	T0	EffectCause	true	bildirildi	depremden
+Relation	T0	T4	CauseEffect	true	depremden	geldi
+Relation	T4	T0	EffectCause	true	geldi	depremden
+Relation	T1	T4	NoRel	true	açıklandı	geldi
+Relation	T1	T5	NoRel	true	açıklandı	depremler
+Relation	T5	T4	NoRel	true	depremler	geldi
+Relation	T5	T8	NoRel	true	depremler	depremi
+Relation	T5	T9	NoRel	true	depremler	geldiği
+Relation	T7	T2	NoRel	true	depremi	Depremin
+Relation	T9	T4	NoRel	true	geldiği	geldi

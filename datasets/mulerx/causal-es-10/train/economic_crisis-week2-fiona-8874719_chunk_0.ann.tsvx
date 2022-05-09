@@ -1,0 +1,76 @@
+Text	_ THE SOCIETY _ es una serie de televisión de drama y misterio estadounidense creada por Christopher Keyser que se estrenó en Netflix el 10 de mayo de 2019 .	El 9 de julio de 2019 , se anunció que fue renovada para una segunda temporada .	Sin embargo , el 21 de agosto de 2020 la serie fue cancelada por la pausa de filmación debido a la pandemia de COVID-19 , ya habiendo grabado algunos capítulos .	_ The Society _ trata sobre « un grupo de adolescentes que se ven obligados a tomar el asunto en sus propias manos cuando regresan a su ciudad de un viaje corto para descubrir que todos están desaparecidos y que no hay manera de salir de la ciudad .	Los adolescentes festejarán , entrarán en pánico , sufrirán , pelearán y , en última instancia , se verán obligados a decidir cómo lidiar con lo impensable » .
+Event	T0	serie	EVENT	23
+Event	T1	creada	EVENT	78
+Event	T10	obligados	EVENT	467
+Event	T11	tomar	EVENT	479
+Event	T12	regresan	EVENT	523
+Event	T13	viaje	EVENT	550
+Event	T14	descubrir	EVENT	567
+Event	T15	desaparecidos	EVENT	593
+Event	T16	salir	EVENT	630
+Event	T17	sufrirán	EVENT	702
+Event	T18	pelearán	EVENT	713
+Event	T19	obligados	EVENT	757
+Event	T2	estrenó	EVENT	115
+Event	T20	decidir	EVENT	769
+Event	T21	lidiar	EVENT	782
+Event	T3	anunció	EVENT	185
+Event	T4	renovada	EVENT	201
+Event	T5	cancelada	EVENT	290
+Event	T6	pausa	EVENT	307
+Event	T7	pandemia	EVENT	338
+Event	T8	grabado	EVENT	373
+Relation	T7	T5	CauseEffect	true	pandemia	cancelada
+Relation	T5	T7	EffectCause	true	cancelada	pandemia
+Relation	T1	T2	CauseEffect	true	creada	estrenó
+Relation	T2	T1	EffectCause	true	estrenó	creada
+Relation	T2	T5	CauseEffect	true	estrenó	cancelada
+Relation	T5	T2	EffectCause	true	cancelada	estrenó
+Relation	T2	T4	CauseEffect	true	estrenó	renovada
+Relation	T4	T2	EffectCause	true	renovada	estrenó
+Relation	T0	T15	NoRel	true	serie	desaparecidos
+Relation	T0	T21	NoRel	true	serie	lidiar
+Relation	T0	T6	NoRel	true	serie	pausa
+Relation	T1	T18	NoRel	true	creada	pelearán
+Relation	T10	T13	NoRel	true	obligados	viaje
+Relation	T11	T1	NoRel	true	tomar	creada
+Relation	T11	T21	NoRel	true	tomar	lidiar
+Relation	T11	T3	NoRel	true	tomar	anunció
+Relation	T11	T8	NoRel	true	tomar	grabado
+Relation	T12	T16	NoRel	true	regresan	salir
+Relation	T13	T0	NoRel	true	viaje	serie
+Relation	T13	T5	NoRel	true	viaje	cancelada
+Relation	T13	T6	NoRel	true	viaje	pausa
+Relation	T13	T8	NoRel	true	viaje	grabado
+Relation	T14	T1	NoRel	true	descubrir	creada
+Relation	T14	T11	NoRel	true	descubrir	tomar
+Relation	T14	T4	NoRel	true	descubrir	renovada
+Relation	T14	T5	NoRel	true	descubrir	cancelada
+Relation	T15	T14	NoRel	true	desaparecidos	descubrir
+Relation	T15	T20	NoRel	true	desaparecidos	decidir
+Relation	T15	T4	NoRel	true	desaparecidos	renovada
+Relation	T15	T5	NoRel	true	desaparecidos	cancelada
+Relation	T16	T13	NoRel	true	salir	viaje
+Relation	T16	T14	NoRel	true	salir	descubrir
+Relation	T17	T13	NoRel	true	sufrirán	viaje
+Relation	T17	T14	NoRel	true	sufrirán	descubrir
+Relation	T2	T10	NoRel	true	estrenó	obligados
+Relation	T2	T14	NoRel	true	estrenó	descubrir
+Relation	T2	T21	NoRel	true	estrenó	lidiar
+Relation	T21	T19	NoRel	true	lidiar	obligados
+Relation	T21	T20	NoRel	true	lidiar	decidir
+Relation	T21	T6	NoRel	true	lidiar	pausa
+Relation	T21	T7	NoRel	true	lidiar	pandemia
+Relation	T3	T15	NoRel	true	anunció	desaparecidos
+Relation	T4	T14	NoRel	true	renovada	descubrir
+Relation	T5	T0	NoRel	true	cancelada	serie
+Relation	T5	T13	NoRel	true	cancelada	viaje
+Relation	T5	T14	NoRel	true	cancelada	descubrir
+Relation	T5	T15	NoRel	true	cancelada	desaparecidos
+Relation	T5	T16	NoRel	true	cancelada	salir
+Relation	T5	T19	NoRel	true	cancelada	obligados
+Relation	T5	T20	NoRel	true	cancelada	decidir
+Relation	T6	T10	NoRel	true	pausa	obligados
+Relation	T7	T20	NoRel	true	pandemia	decidir
+Relation	T8	T13	NoRel	true	grabado	viaje
+Relation	T8	T17	NoRel	true	grabado	sufrirán

@@ -1,0 +1,45 @@
+Text	1967 PÜLÜMÜR DEPREMI , 26 Temmuz 1967 tarihinde Türkiye saatiyle 20: 53'te Türkiye'de Tunceli'nin Pülümür ilçesinde meydana gelen deprem .	Depremde 97 kişi öldü , 1282 bina yıkıldı veya hasar gördü .	Depremin olduğu bölgede , Kuzey Anadolu Fayı ve çevresindeki etkin faylar nedeniyle 20. yüzyılda şiddetli depremler oldu .	1939 Erzincan Depremi bunların en büyüğüdür .	1966 tarihli Varto Depremi ve son olarak 1992 tarihli Erzincan Depremi Kuzey Anadolu Fayı'nı takip eden bu bölgedeki depremlerdir .
+Event	T1	deprem	EVENT	130
+Event	T2	Depremde	EVENT	139
+Event	T3	öldü	EVENT	156
+Event	T4	yıkıldı	EVENT	173
+Event	T5	gördü	EVENT	192
+Event	T6	Depremin	EVENT	200
+Event	T7	oldu	EVENT	316
+Event	T8	Depremi	EVENT	388
+Event	T9	Depremi	EVENT	432
+Event	T10	depremlerdir	EVENT	486
+Event	T11	1967 PÜLÜMÜR DEPREMI	EVENT	0
+Event	T12	faylar	EVENT	267
+Event	T13	1939 Erzincan Depremi	EVENT	323
+Relation	T12	T7	CauseEffect	true	faylar	oldu
+Relation	T7	T12	EffectCause	true	oldu	faylar
+Relation	T12	T13	CauseEffect	true	faylar	1939 Erzincan Depremi
+Relation	T13	T12	EffectCause	true	1939 Erzincan Depremi	faylar
+Relation	T12	T8	CauseEffect	true	faylar	Depremi
+Relation	T8	T12	EffectCause	true	Depremi	faylar
+Relation	T12	T9	CauseEffect	true	faylar	Depremi
+Relation	T9	T12	EffectCause	true	Depremi	faylar
+Relation	T12	T11	CauseEffect	true	faylar	1967 PÜLÜMÜR DEPREMI
+Relation	T11	T12	EffectCause	true	1967 PÜLÜMÜR DEPREMI	faylar
+Relation	T11	T10	NoRel	true	1967 PÜLÜMÜR DEPREMI	depremlerdir
+Relation	T11	T8	NoRel	true	1967 PÜLÜMÜR DEPREMI	Depremi
+Relation	T12	T5	NoRel	true	faylar	gördü
+Relation	T13	T10	NoRel	true	1939 Erzincan Depremi	depremlerdir
+Relation	T13	T5	NoRel	true	1939 Erzincan Depremi	gördü
+Relation	T13	T7	NoRel	true	1939 Erzincan Depremi	oldu
+Relation	T3	T10	NoRel	true	öldü	depremlerdir
+Relation	T3	T7	NoRel	true	öldü	oldu
+Relation	T4	T12	NoRel	true	yıkıldı	faylar
+Relation	T4	T9	NoRel	true	yıkıldı	Depremi
+Relation	T5	T11	NoRel	true	gördü	1967 PÜLÜMÜR DEPREMI
+Relation	T5	T2	NoRel	true	gördü	Depremde
+Relation	T5	T3	NoRel	true	gördü	öldü
+Relation	T5	T9	NoRel	true	gördü	Depremi
+Relation	T6	T4	NoRel	true	Depremin	yıkıldı
+Relation	T7	T9	NoRel	true	oldu	Depremi
+Relation	T8	T10	NoRel	true	Depremi	depremlerdir
+Relation	T8	T13	NoRel	true	Depremi	1939 Erzincan Depremi
+Relation	T8	T5	NoRel	true	Depremi	gördü
+Relation	T8	T9	NoRel	true	Depremi	Depremi
+Relation	T9	T13	NoRel	true	Depremi	1939 Erzincan Depremi

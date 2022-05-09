@@ -1,0 +1,45 @@
+Text	Estos sólo se restablecieron en el verano de 1992 y los automotores fueron reforzados con equipos de radiocomunicación para advertir sus problemas .	Sin embargo no se volvió a utilizar el servicio Santiago-Valparaíso , y Merval solo continuó utilizando los automotores en los servicios de trenes entre Los Andes y Valparaíso .	Por otro lado , durante la década de los noventa , fue creado el servicio de cercanía Merval que utilizó el trazado entre Valparaíso y Limache .	Un año y un mes después de este accidente ocurriría una nueva tragedia ferroviaria en Chile , esta vez en el sector de Pelequén el 8 de marzo de 1987 , que tuvo un saldo de 12 muertos y un centenar de heridos .	- Imágenes , extractos de periódicos , testimonios y más sobre el accidente . - - en La Estrella .
+Event	T0	restablecieron	EVENT	14
+Event	T1	reforzados	EVENT	75
+Event	T2	advertir	EVENT	124
+Event	T3	volvió	EVENT	167
+Event	T4	utilizando	EVENT	242
+Event	T5	creado	EVENT	382
+Event	T6	utilizó	EVENT	424
+Event	T7	trazado	EVENT	435
+Event	T8	ocurriría	EVENT	514
+Event	T9	tragedia	EVENT	534
+Event	T10	tuvo	EVENT	628
+Event	T11	saldo	EVENT	636
+Event	T12	muertos	EVENT	648
+Event	T13	heridos	EVENT	673
+Event	T14	accidente	EVENT	749
+Relation	T9	T12	CauseEffect	true	tragedia	muertos
+Relation	T12	T9	EffectCause	true	muertos	tragedia
+Relation	T9	T13	CauseEffect	true	tragedia	heridos
+Relation	T13	T9	EffectCause	true	heridos	tragedia
+Relation	T1	T11	NoRel	true	reforzados	saldo
+Relation	T1	T4	NoRel	true	reforzados	utilizando
+Relation	T1	T5	NoRel	true	reforzados	creado
+Relation	T10	T11	NoRel	true	tuvo	saldo
+Relation	T11	T4	NoRel	true	saldo	utilizando
+Relation	T12	T1	NoRel	true	muertos	reforzados
+Relation	T12	T3	NoRel	true	muertos	volvió
+Relation	T14	T4	NoRel	true	accidente	utilizando
+Relation	T14	T6	NoRel	true	accidente	utilizó
+Relation	T2	T14	NoRel	true	advertir	accidente
+Relation	T2	T8	NoRel	true	advertir	ocurriría
+Relation	T3	T12	NoRel	true	volvió	muertos
+Relation	T3	T14	NoRel	true	volvió	accidente
+Relation	T3	T2	NoRel	true	volvió	advertir
+Relation	T3	T7	NoRel	true	volvió	trazado
+Relation	T3	T9	NoRel	true	volvió	tragedia
+Relation	T4	T14	NoRel	true	utilizando	accidente
+Relation	T4	T6	NoRel	true	utilizando	utilizó
+Relation	T5	T7	NoRel	true	creado	trazado
+Relation	T6	T1	NoRel	true	utilizó	reforzados
+Relation	T6	T10	NoRel	true	utilizó	tuvo
+Relation	T6	T14	NoRel	true	utilizó	accidente
+Relation	T7	T5	NoRel	true	trazado	creado
+Relation	T8	T14	NoRel	true	ocurriría	accidente
+Relation	T8	T4	NoRel	true	ocurriría	utilizando

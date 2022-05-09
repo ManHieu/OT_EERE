@@ -1,0 +1,56 @@
+Text	på trods af sympati for socialismen , begyndte regeringen at indføre nationalisme blandt bønderne .	Dette blev gennemført ved at mindes og hylde revulotionens figurer og skabe antivestlige vægmalerier .	Blandt de kunstnere , der blev ansat til dette , var Diego Rivera , der havde et mexicansk nationalistisk og marxistiske skær i sine vægmalerier for regeringen .	På trods af et antivestlig og prosocialistisk regime , så separerede Obregón ikke den mexicanske økonomi fra udenlandske kapitalister , og han tillod frihandel med visse restriktioner .	Med hensyn til militæret , så var en af hans første skridt at inkorporere nogle af de personer , som havde kæmpet i revolutionen .
+Event	T0	gennemført	EVENT	111
+Event	T1	mindes	EVENT	129
+Event	T2	hylde	EVENT	139
+Event	T3	skabe	EVENT	170
+Event	T4	ansat	EVENT	234
+Event	T5	skær	EVENT	324
+Event	T6	separerede	EVENT	423
+Event	T7	restriktioner	EVENT	535
+Event	T8	kæmpet	EVENT	658
+Event	T9	indføre	EVENT	61
+Event	T10	sympati	EVENT	12
+Event	T11	socialismen	EVENT	24
+Event	T12	nationalisme	EVENT	69
+Event	T13	regime	EVENT	411
+Event	T14	frihandel	EVENT	515
+Event	T15	økonomi	EVENT	462
+Event	T16	skridt	EVENT	603
+Event	T17	inkorporere	EVENT	613
+Relation	T12	T1	SuperSub	true	nationalisme	mindes
+Relation	T1	T12	SubSuper	true	mindes	nationalisme
+Relation	T12	T2	SuperSub	true	nationalisme	hylde
+Relation	T2	T12	SubSuper	true	hylde	nationalisme
+Relation	T12	T3	SuperSub	true	nationalisme	skabe
+Relation	T3	T12	SubSuper	true	skabe	nationalisme
+Relation	T4	T5	SuperSub	true	ansat	skær
+Relation	T5	T4	SubSuper	true	skær	ansat
+Relation	T14	T7	SuperSub	true	frihandel	restriktioner
+Relation	T7	T14	SubSuper	true	restriktioner	frihandel
+Relation	T0	T15	NoRel	true	gennemført	økonomi
+Relation	T0	T5	NoRel	true	gennemført	skær
+Relation	T10	T7	NoRel	true	sympati	restriktioner
+Relation	T10	T9	NoRel	true	sympati	indføre
+Relation	T11	T8	NoRel	true	socialismen	kæmpet
+Relation	T11	T9	NoRel	true	socialismen	indføre
+Relation	T13	T4	NoRel	true	regime	ansat
+Relation	T14	T1	NoRel	true	frihandel	mindes
+Relation	T15	T16	NoRel	true	økonomi	skridt
+Relation	T15	T8	NoRel	true	økonomi	kæmpet
+Relation	T16	T13	NoRel	true	skridt	regime
+Relation	T16	T5	NoRel	true	skridt	skær
+Relation	T2	T6	NoRel	true	hylde	separerede
+Relation	T3	T14	NoRel	true	skabe	frihandel
+Relation	T3	T4	NoRel	true	skabe	ansat
+Relation	T3	T9	NoRel	true	skabe	indføre
+Relation	T4	T0	NoRel	true	ansat	gennemført
+Relation	T4	T16	NoRel	true	ansat	skridt
+Relation	T5	T3	NoRel	true	skær	skabe
+Relation	T5	T9	NoRel	true	skær	indføre
+Relation	T6	T15	NoRel	true	separerede	økonomi
+Relation	T6	T16	NoRel	true	separerede	skridt
+Relation	T7	T1	NoRel	true	restriktioner	mindes
+Relation	T7	T10	NoRel	true	restriktioner	sympati
+Relation	T8	T11	NoRel	true	kæmpet	socialismen
+Relation	T8	T17	NoRel	true	kæmpet	inkorporere
+Relation	T9	T17	NoRel	true	indføre	inkorporere

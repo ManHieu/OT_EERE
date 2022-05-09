@@ -1,0 +1,26 @@
+Text	Harekâtın ardından beş -altı ay geçtikten sonra bu mezarların ayrıldığı ve mücahitlerin ayrı ayrı mezarlara gömüldükleri açıklandı .	Bununla birlikte , 5 Mart 2019'da Cumhurbaşkanlığı girişimi ve Bakanlar Kurulu kararıyla , Kayıp Şahıslar Komitesi tarafından mezarlarda kazı ve bilimsel raporlama gerçekleştirilmesine karar verildi .	Bu çalışmalarda bazı mücahitlerin adı yazılı olan mezarlarda gömülü olmadıkları , bazı mezarlarda beş naaşın beraber bulunduğu tespit edildi .	Tekke Bahçesi Şehitliği'nde Resmi rakamlara göre 155 , Şehitlik girişindeki anıta göre ise 161 kişi yatmaktadır .	Rakamlar arasındaki uyuşmazlık , pek çok kişinin başka yerlerdeki toplu mezarlardan çıkarıldıktan sonra Tekke Bahçesi'ne gömülmüş oldukları için bazı mezarlaraki merhum sayısının tam olarak bilinmemesinden kaynaklanmaktadır .
+Event	T0	Harekâtın	EVENT	0
+Event	T1	açıklandı	EVENT	121
+Event	T2	girişimi	EVENT	184
+Event	T3	kazı	EVENT	270
+Event	T4	verildi	EVENT	324
+Event	T5	edildi	EVENT	468
+Event	T6	gömülmüş	EVENT	712
+Event	T7	ayrıldığı	EVENT	62
+Event	T8	gömüldükleri	EVENT	108
+Event	T9	kararıyla	EVENT	212
+Event	T10	raporlama	EVENT	287
+Event	T11	çalışmalarda	EVENT	337
+Relation	T1	T0	NoRel	true	açıklandı	Harekâtın
+Relation	T1	T9	NoRel	true	açıklandı	kararıyla
+Relation	T10	T11	NoRel	true	raporlama	çalışmalarda
+Relation	T11	T7	NoRel	true	çalışmalarda	ayrıldığı
+Relation	T11	T9	NoRel	true	çalışmalarda	kararıyla
+Relation	T2	T10	NoRel	true	girişimi	raporlama
+Relation	T3	T1	NoRel	true	kazı	açıklandı
+Relation	T3	T4	NoRel	true	kazı	verildi
+Relation	T4	T0	NoRel	true	verildi	Harekâtın
+Relation	T4	T11	NoRel	true	verildi	çalışmalarda
+Relation	T6	T4	NoRel	true	gömülmüş	verildi
+Relation	T8	T2	NoRel	true	gömüldükleri	girişimi
+Relation	T8	T6	NoRel	true	gömüldükleri	gömülmüş

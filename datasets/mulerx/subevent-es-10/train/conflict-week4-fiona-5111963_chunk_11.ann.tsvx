@@ -1,0 +1,61 @@
+Text	- ' ' ' Batalla de Maraksha : ' ' ' tras tres días de combates , el 2 de febrero el Ejército yemení consiguió tomar la ciudad de Markasha en Abyan .	Los enfrentamientos se saldaron con 17 muertes .	- BATALLA DE AL-MUKALLA : habiendo perdido sus últimos feudos en la gobernación de Abyan , Al-Qaeda se lanzó a la conquista de la Gobernación de Hadramaut , donde declaró un nuevo emirato y capturó varios pequeños pueblos	El 24 de mayo inició una ofensiva contra la capital provincial , Al-Mukalla , y conquistó dos de sus distritos : Shahr y Ghail Bawazir , que no fueron liberados por el Ejército hasta principios de junio .	El 7 de agosto de 2013 , las autoridades yemeníes descubrieron y frustraron un plan de Al-Qaeda para conquistar Al-Mukalla y dos terminales de petróleo y gas de forma simultánea .
+Event	T0	combates	EVENT	54
+Event	T1	tomar	EVENT	110
+Event	T2	enfrentamientos	EVENT	153
+Event	T3	saldaron	EVENT	172
+Event	T4	muertes	EVENT	188
+Event	T5	BATALLA	EVENT	200
+Event	T6	perdido	EVENT	233
+Event	T7	feudos	EVENT	253
+Event	T8	gobernación	EVENT	266
+Event	T9	lanzó	EVENT	301
+Event	T10	conquista	EVENT	312
+Event	T11	declaró	EVENT	361
+Event	T12	capturó	EVENT	388
+Event	T13	inició	EVENT	434
+Event	T14	ofensiva	EVENT	445
+Event	T15	conquistó	EVENT	500
+Event	T16	liberados	EVENT	571
+Event	T17	descubrieron	EVENT	675
+Event	T18	frustraron	EVENT	690
+Event	T19	plan	EVENT	704
+Event	T20	conquistar	EVENT	726
+Relation	T9	T12	SuperSub	true	lanzó	capturó
+Relation	T12	T9	SubSuper	true	capturó	lanzó
+Relation	T0	T14	NoRel	true	combates	ofensiva
+Relation	T1	T14	NoRel	true	tomar	ofensiva
+Relation	T10	T11	NoRel	true	conquista	declaró
+Relation	T10	T15	NoRel	true	conquista	conquistó
+Relation	T12	T13	NoRel	true	capturó	inició
+Relation	T12	T6	NoRel	true	capturó	perdido
+Relation	T14	T20	NoRel	true	ofensiva	conquistar
+Relation	T14	T3	NoRel	true	ofensiva	saldaron
+Relation	T15	T13	NoRel	true	conquistó	inició
+Relation	T16	T13	NoRel	true	liberados	inició
+Relation	T17	T16	NoRel	true	descubrieron	liberados
+Relation	T17	T8	NoRel	true	descubrieron	gobernación
+Relation	T18	T15	NoRel	true	frustraron	conquistó
+Relation	T19	T12	NoRel	true	plan	capturó
+Relation	T19	T16	NoRel	true	plan	liberados
+Relation	T2	T1	NoRel	true	enfrentamientos	tomar
+Relation	T2	T10	NoRel	true	enfrentamientos	conquista
+Relation	T2	T13	NoRel	true	enfrentamientos	inició
+Relation	T2	T20	NoRel	true	enfrentamientos	conquistar
+Relation	T2	T4	NoRel	true	enfrentamientos	muertes
+Relation	T3	T1	NoRel	true	saldaron	tomar
+Relation	T3	T10	NoRel	true	saldaron	conquista
+Relation	T3	T6	NoRel	true	saldaron	perdido
+Relation	T4	T12	NoRel	true	muertes	capturó
+Relation	T4	T15	NoRel	true	muertes	conquistó
+Relation	T4	T17	NoRel	true	muertes	descubrieron
+Relation	T4	T7	NoRel	true	muertes	feudos
+Relation	T4	T8	NoRel	true	muertes	gobernación
+Relation	T5	T11	NoRel	true	BATALLA	declaró
+Relation	T5	T9	NoRel	true	BATALLA	lanzó
+Relation	T6	T17	NoRel	true	perdido	descubrieron
+Relation	T6	T18	NoRel	true	perdido	frustraron
+Relation	T6	T4	NoRel	true	perdido	muertes
+Relation	T8	T11	NoRel	true	gobernación	declaró
+Relation	T9	T1	NoRel	true	lanzó	tomar
+Relation	T9	T13	NoRel	true	lanzó	inició
+Relation	T9	T8	NoRel	true	lanzó	gobernación

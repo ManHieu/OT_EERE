@@ -1,0 +1,30 @@
+Text	Siwiec fue censurado de las fotografías oficiales de la Agencia Central de Fotografía ( Centralna Agencja Fotograficzna ) , que tenía el monopolio de la emisión de fotografías para la prensa en la era de la Polonia comunista .	Su acto fue capturado en una película de 7 segundos por una cámara de cine de la _ Polish Film Chronicle _ , pero los noticiarios ( _ newsreels _ o noticieros de cine ) oficiales del festival omitieron cualquier mención del incidente .	Sin embargo , estas imágenes sobrevivieron , mal etiquetadas por accidente o por propósito , hasta que fueron redescubiertas más de veinte años después .	La policía secreta polaca ( Służba Bezpieczeństwa ) realizó una investigación de rutina que terminó rápidamente debido a la " muerte del culpable " , seguida de una vigilancia rutinaria de bajo perfil de sus amigos y familiares , durante la cual interceptó la última carta de Siwiec a su esposa ( entregada décadas más tarde ) .	En general , las autoridades no tuvieron problemas para suprimir el evento , ya que ninguno de los pocos testigos mostró deseo alguno de hacer que el suceso fuera conocido .
+Event	T0	censurado	EVENT	11
+Event	T1	emisión	EVENT	153
+Event	T11	investigación	EVENT	681
+Event	T13	muerte	EVENT	743
+Event	T15	vigilancia	EVENT	782
+Event	T16	interceptó	EVENT	863
+Event	T18	suprimir	EVENT	1002
+Event	T2	capturado	EVENT	239
+Event	T20	suceso	EVENT	1096
+Event	T3	omitieron	EVENT	419
+Event	T4	entregada	EVENT	914
+Event	T5	incidente	EVENT	451
+Event	T6	sobrevivieron	EVENT	492
+Event	T9	redescubiertas	EVENT	573
+Relation	T5	T18	SuperSub	true	incidente	suprimir
+Relation	T18	T5	SubSuper	true	suprimir	incidente
+Relation	T0	T11	NoRel	true	censurado	investigación
+Relation	T0	T16	NoRel	true	censurado	interceptó
+Relation	T11	T1	NoRel	true	investigación	emisión
+Relation	T11	T3	NoRel	true	investigación	omitieron
+Relation	T15	T3	NoRel	true	vigilancia	omitieron
+Relation	T15	T4	NoRel	true	vigilancia	entregada
+Relation	T16	T1	NoRel	true	interceptó	emisión
+Relation	T16	T3	NoRel	true	interceptó	omitieron
+Relation	T18	T15	NoRel	true	suprimir	vigilancia
+Relation	T3	T1	NoRel	true	omitieron	emisión
+Relation	T4	T11	NoRel	true	entregada	investigación
+Relation	T6	T15	NoRel	true	sobrevivieron	vigilancia
+Relation	T9	T18	NoRel	true	redescubiertas	suprimir

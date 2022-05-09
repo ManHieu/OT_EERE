@@ -1,0 +1,49 @@
+Text	Komisyonun başkanı olarak başbakan yardımcısı Abılgaziyev atandı .	IAC'nin kazadan iki ay sonra yayımladığı ön raporunda uçakta herhangi bir arıza bulunamadığına yer verildi .	Ancak raporda uçağın yanlış bir süzülüş hattını yakaladığı açıklandı .	Ayrıca ACT Airlines temsilcileri mürettebatın bu rota boyunca ilk defa uçuş yapmadığını ve mürettebatın bu rotada uçuş deneyimi olduğunu bildirdi .	4 Mart 2020'de IAC'nin yayımladığı nihai final raporunda kazanın ana nedeni , gece vakti ILS ile inişe geçilmesi sırasında mürettebatın uçağın süzülüş yoluna göre uçak pozisyonu üzerindeki kontrolünün eksik olması ve belirlenen iniş şemasından önemli sapmalar varken zamanında pas geçmek için önlemler almamasıdır .
+Event	T0	atandı	EVENT	58
+Event	T1	kazadan	EVENT	75
+Event	T2	yayımladığı	EVENT	96
+Event	T3	arıza	EVENT	141
+Event	T4	verildi	EVENT	166
+Event	T5	açıklandı	EVENT	235
+Event	T6	uçuş	EVENT	318
+Event	T7	bildirdi	EVENT	384
+Event	T8	kazanın	EVENT	452
+Event	T10	iniş	EVENT	623
+Event	T11	sapmalar	EVENT	646
+Event	T12	geçmek	EVENT	676
+Event	T13	yakaladığı	EVENT	224
+Event	T14	uçuş	EVENT	361
+Event	T9	inişe	EVENT	492
+Event	T15	kontrolünün	EVENT	584
+Relation	T15	T8	CauseEffect	true	kontrolünün	kazanın
+Relation	T8	T15	EffectCause	true	kazanın	kontrolünün
+Relation	T11	T8	CauseEffect	true	sapmalar	kazanın
+Relation	T8	T11	EffectCause	true	kazanın	sapmalar
+Relation	T0	T15	NoRel	true	atandı	kontrolünün
+Relation	T0	T8	NoRel	true	atandı	kazanın
+Relation	T1	T6	NoRel	true	kazadan	uçuş
+Relation	T1	T7	NoRel	true	kazadan	bildirdi
+Relation	T10	T0	NoRel	true	iniş	atandı
+Relation	T11	T13	NoRel	true	sapmalar	yakaladığı
+Relation	T11	T5	NoRel	true	sapmalar	açıklandı
+Relation	T11	T7	NoRel	true	sapmalar	bildirdi
+Relation	T12	T1	NoRel	true	geçmek	kazadan
+Relation	T12	T13	NoRel	true	geçmek	yakaladığı
+Relation	T13	T0	NoRel	true	yakaladığı	atandı
+Relation	T13	T12	NoRel	true	yakaladığı	geçmek
+Relation	T13	T15	NoRel	true	yakaladığı	kontrolünün
+Relation	T14	T3	NoRel	true	uçuş	arıza
+Relation	T15	T2	NoRel	true	kontrolünün	yayımladığı
+Relation	T2	T12	NoRel	true	yayımladığı	geçmek
+Relation	T2	T5	NoRel	true	yayımladığı	açıklandı
+Relation	T3	T12	NoRel	true	arıza	geçmek
+Relation	T4	T14	NoRel	true	verildi	uçuş
+Relation	T4	T2	NoRel	true	verildi	yayımladığı
+Relation	T5	T0	NoRel	true	açıklandı	atandı
+Relation	T5	T2	NoRel	true	açıklandı	yayımladığı
+Relation	T5	T3	NoRel	true	açıklandı	arıza
+Relation	T6	T1	NoRel	true	uçuş	kazadan
+Relation	T6	T14	NoRel	true	uçuş	uçuş
+Relation	T6	T2	NoRel	true	uçuş	yayımladığı
+Relation	T8	T2	NoRel	true	kazanın	yayımladığı
+Relation	T9	T3	NoRel	true	inişe	arıza

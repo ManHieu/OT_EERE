@@ -1,0 +1,43 @@
+Text	Sammenstødet havde afbrudt telefon- og telegraflinjerne , og man antog , at ulykken var alvorlig .	En reporter fra Berlingske Tidende lejede en bil og kørte i stor hast mod Vigerslev .	Han ankom 45 minutter efter ulykken og var lamslået af hvad han så .	Næste dag , søndag den 2. november , var en stor menneskemængde samlet ved ulykkesstedet .	De døde og sårede var blevet fjernet , men vognene og lokomotivet lå i en stor vragdynge .
+Event	T0	Sammenstødet	EVENT	0
+Event	T1	afbrudt	EVENT	19
+Event	T2	antog	EVENT	65
+Event	T3	ulykken	EVENT	76
+Event	T4	lejede	EVENT	134
+Event	T5	kørte	EVENT	151
+Event	T6	ulykken	EVENT	213
+Event	T7	lamslået	EVENT	228
+Event	T8	så	EVENT	249
+Event	T9	samlet	EVENT	318
+Event	T10	ulykkesstedet	EVENT	329
+Event	T11	døde	EVENT	348
+Event	T12	sårede	EVENT	356
+Event	T13	fjernet	EVENT	374
+Event	T14	ankom	EVENT	189
+Event	T15	alvorlig	EVENT	88
+Relation	T0	T1	CauseEffect	true	Sammenstødet	afbrudt
+Relation	T1	T0	EffectCause	true	afbrudt	Sammenstødet
+Relation	T15	T4	CauseEffect	true	alvorlig	lejede
+Relation	T4	T15	EffectCause	true	lejede	alvorlig
+Relation	T6	T11	CauseEffect	true	ulykken	døde
+Relation	T11	T6	EffectCause	true	døde	ulykken
+Relation	T6	T12	CauseEffect	true	ulykken	sårede
+Relation	T12	T6	EffectCause	true	sårede	ulykken
+Relation	T1	T11	NoRel	true	afbrudt	døde
+Relation	T10	T6	NoRel	true	ulykkesstedet	ulykken
+Relation	T11	T4	NoRel	true	døde	lejede
+Relation	T12	T5	NoRel	true	sårede	kørte
+Relation	T12	T8	NoRel	true	sårede	så
+Relation	T13	T15	NoRel	true	fjernet	alvorlig
+Relation	T13	T8	NoRel	true	fjernet	så
+Relation	T15	T13	NoRel	true	alvorlig	fjernet
+Relation	T15	T14	NoRel	true	alvorlig	ankom
+Relation	T15	T2	NoRel	true	alvorlig	antog
+Relation	T15	T7	NoRel	true	alvorlig	lamslået
+Relation	T2	T11	NoRel	true	antog	døde
+Relation	T2	T8	NoRel	true	antog	så
+Relation	T3	T0	NoRel	true	ulykken	Sammenstødet
+Relation	T7	T11	NoRel	true	lamslået	døde
+Relation	T8	T10	NoRel	true	så	ulykkesstedet
+Relation	T8	T6	NoRel	true	så	ulykken
+Relation	T9	T6	NoRel	true	samlet	ulykken

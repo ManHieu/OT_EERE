@@ -1,0 +1,23 @@
+Text	Binaların temellerinin olmaması , binaların taban alanları , kat yükseklikleri ve duvar kalınlıklarının yeterli olmaması ve binaların ilgili yönetmeliğe uygun olmaması hasarın sebeplerindendir .	Kullanılan malzemelerin ve binaların yapılış biçimlerinin uygun olmaması hasarı arttırdı .	Bunun dışında binanın yeri gibi etkenler de zararı etkiledi .	Yıkılmayan binalarda da uygunsuz inşaat yöntemleri yüzünden köşelerde kesme çatlaklar oluştu ve duvar yıkılmaları yaşandı .	Yığınçal köyünün okul binasında da çatlaklar meydana geldi .
+Event	T0	arttırdı	EVENT	275
+Event	T1	etkiledi	EVENT	337
+Event	T2	oluştu	EVENT	434
+Event	T4	geldi	EVENT	525
+Event	T5	hasarın	EVENT	168
+Event	T6	hasarı	EVENT	268
+Event	T7	zararı	EVENT	330
+Event	T8	inşaat	EVENT	381
+Event	T3	yıkılmaları	EVENT	450
+Relation	T8	T3	CauseEffect	true	inşaat	yıkılmaları
+Relation	T3	T8	EffectCause	true	yıkılmaları	inşaat
+Relation	T8	T2	CauseEffect	true	inşaat	oluştu
+Relation	T2	T8	EffectCause	true	oluştu	inşaat
+Relation	T8	T0	CauseEffect	true	inşaat	arttırdı
+Relation	T0	T8	EffectCause	true	arttırdı	inşaat
+Relation	T8	T4	CauseEffect	true	inşaat	geldi
+Relation	T4	T8	EffectCause	true	geldi	inşaat
+Relation	T0	T6	NoRel	true	arttırdı	hasarı
+Relation	T1	T6	NoRel	true	etkiledi	hasarı
+Relation	T2	T4	NoRel	true	oluştu	geldi
+Relation	T4	T1	NoRel	true	geldi	etkiledi
+Relation	T7	T6	NoRel	true	zararı	hasarı

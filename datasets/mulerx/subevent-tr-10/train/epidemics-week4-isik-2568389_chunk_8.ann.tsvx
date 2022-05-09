@@ -1,0 +1,23 @@
+Text	- Amerika Birleşik Devletleri Washington eyaletinde teyit edilen ikinci ölümü bildirdi .	Rhode Island , Florida ve New York'taki ilk vakalar doğrulandı .	Yetkililer toplamda 21 vakayı daha doğrulayarak sayıyı 89'a getirdi .	- Andorra ilk vakasını doğruladı .	- Avustralya dört yeni vakayı doğruladı ve ilk insandan insana bulaşma dahil toplam sayıyı 30'a çıkardı .
+Event	T0	bildirdi	EVENT	78
+Event	T1	doğrulandı	EVENT	141
+Event	T2	getirdi	EVENT	214
+Event	T3	doğruladı	EVENT	247
+Event	T4	doğruladı	EVENT	289
+Event	T5	çıkardı	EVENT	355
+Event	T6	edilen	EVENT	58
+Event	T7	vakalar	EVENT	133
+Event	T8	doğrulayarak	EVENT	189
+Event	T9	vakasını	EVENT	238
+Event	T10	vakayı	EVENT	282
+Relation	T6	T0	SuperSub	true	edilen	bildirdi
+Relation	T0	T6	SubSuper	true	bildirdi	edilen
+Relation	T10	T7	NoRel	true	vakayı	vakalar
+Relation	T4	T5	NoRel	true	doğruladı	çıkardı
+Relation	T5	T0	NoRel	true	çıkardı	bildirdi
+Relation	T5	T2	NoRel	true	çıkardı	getirdi
+Relation	T7	T6	NoRel	true	vakalar	edilen
+Relation	T8	T2	NoRel	true	doğrulayarak	getirdi
+Relation	T8	T4	NoRel	true	doğrulayarak	doğruladı
+Relation	T8	T9	NoRel	true	doğrulayarak	vakasını
+Relation	T9	T5	NoRel	true	vakasını	çıkardı

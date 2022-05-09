@@ -1,0 +1,28 @@
+Text	Continuando con lo prometido de Touhyou senbatsusen , DDR CHALLENGE Carnival partió el 19 de diciembre de 2019 .	Como su nombre lo indica , con cada partida se obtiene una estampilla , y si se obtiene todas , se desbloquea las dificultades CHALLENGE de ciertas canciones .	No hay carpetas en la categoría Eventos debido a que , al igual que SUMMER DANCE CAMP , se desbloquean directamente , cada temporada tiene sus fechas de inicio y de cierre , en donde no se puede conseguir dificultades o estampillas fuera de plazo .	Si la dificultad se instala en una canción proveniente de un evento o de FLOOR INFECTION que no fuese desbloqueada , seguirá siendo inaccesible , sin importar el conteo de estampillas .	Por cada versión de la copa de arcades KAC , aparece 2 carpetas divididas .
+Event	T0	prometido	EVENT	19
+Event	T1	partió	EVENT	77
+Event	T12	evento	EVENT	583
+Event	T13	desbloqueada	EVENT	624
+Event	T14	conteo	EVENT	684
+Event	T15	aparece	EVENT	753
+Event	T2	indica	EVENT	131
+Event	T3	partida	EVENT	149
+Event	T4	obtiene	EVENT	160
+Event	T6	desbloquea	EVENT	212
+Event	T7	desbloquean	EVENT	364
+Relation	T0	T13	NoRel	true	prometido	desbloqueada
+Relation	T0	T15	NoRel	true	prometido	aparece
+Relation	T0	T3	NoRel	true	prometido	partida
+Relation	T1	T15	NoRel	true	partió	aparece
+Relation	T1	T7	NoRel	true	partió	desbloquean
+Relation	T13	T15	NoRel	true	desbloqueada	aparece
+Relation	T14	T4	NoRel	true	conteo	obtiene
+Relation	T14	T7	NoRel	true	conteo	desbloquean
+Relation	T15	T13	NoRel	true	aparece	desbloqueada
+Relation	T3	T1	NoRel	true	partida	partió
+Relation	T3	T6	NoRel	true	partida	desbloquea
+Relation	T4	T0	NoRel	true	obtiene	prometido
+Relation	T6	T0	NoRel	true	desbloquea	prometido
+Relation	T6	T1	NoRel	true	desbloquea	partió
+Relation	T6	T12	NoRel	true	desbloquea	evento
+Relation	T7	T14	NoRel	true	desbloquean	conteo

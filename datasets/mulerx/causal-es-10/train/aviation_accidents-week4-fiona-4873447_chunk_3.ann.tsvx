@@ -1,0 +1,23 @@
+Text	La Dirección General de Aviación Civil de Bolivia abrió una investigación para dilucidar las causas del accidente .	La caja negra de la aeronave siniestrada fue recuperada de entre los restos y enviada a Brasil para ser analizada .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil - Anexo : Accidentes por fabricante de la aeronave		
+Event	T0	abrió	EVENT	50
+Event	T1	investigación	EVENT	60
+Event	T2	dilucidar	EVENT	79
+Event	T3	accidente	EVENT	104
+Event	T4	recuperada	EVENT	161
+Event	T5	enviada	EVENT	194
+Event	T6	analizada	EVENT	220
+Event	T7	Accidente	EVENT	234
+Event	T8	Accidentes	EVENT	266
+Event	T9	Accidentes	EVENT	330
+Event	T10	Accidentes	EVENT	394
+Relation	T1	T3	NoRel	true	investigación	accidente
+Relation	T2	T4	NoRel	true	dilucidar	recuperada
+Relation	T2	T8	NoRel	true	dilucidar	Accidentes
+Relation	T2	T9	NoRel	true	dilucidar	Accidentes
+Relation	T4	T2	NoRel	true	recuperada	dilucidar
+Relation	T4	T7	NoRel	true	recuperada	Accidente
+Relation	T4	T8	NoRel	true	recuperada	Accidentes
+Relation	T6	T0	NoRel	true	analizada	abrió
+Relation	T7	T0	NoRel	true	Accidente	abrió
+Relation	T7	T10	NoRel	true	Accidente	Accidentes
+Relation	T9	T1	NoRel	true	Accidentes	investigación

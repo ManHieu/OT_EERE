@@ -1,0 +1,33 @@
+Text	El vUELO 348 DE KOLAVIA fue un vuelo regular de pasajeros desde el aeropuerto Internacional de Surgut , al aeropuerto internacional Domodedovo , Moscú , Rusia .	El sábado 1 de enero de 2011 el avión que operaba el vuelo comenzó a arder mientras rodaba para efectuar el despegue desde Surgut .	Tres personas murieron , y 43 resultaron heridas , cuatro de ellas de gravedad .	El avión quedó destruido en el incendio .	[ izquierda | miniaturade imagen | La aeronave meses antes del accidente ] El avión implicado fue un TupoLev Tu-154B-2 , registro RA-85588 , con número de serie 588 .
+Event	T0	vuelo	EVENT	31
+Event	T1	operaba	EVENT	203
+Event	T2	arder	EVENT	230
+Event	T3	rodaba	EVENT	245
+Event	T4	efectuar	EVENT	257
+Event	T5	despegue	EVENT	269
+Event	T6	murieron	EVENT	307
+Event	T7	heridas	EVENT	334
+Event	T8	incendio	EVENT	405
+Event	T9	accidente	EVENT	479
+Event	T10	implicado	EVENT	500
+Event	T11	registro	EVENT	537
+Event	T12	vUELO	EVENT	3
+Relation	T3	T2	SuperSub	true	rodaba	arder
+Relation	T2	T3	SubSuper	true	arder	rodaba
+Relation	T0	T1	NoRel	true	vuelo	operaba
+Relation	T0	T5	NoRel	true	vuelo	despegue
+Relation	T1	T4	NoRel	true	operaba	efectuar
+Relation	T1	T9	NoRel	true	operaba	accidente
+Relation	T10	T0	NoRel	true	implicado	vuelo
+Relation	T11	T3	NoRel	true	registro	rodaba
+Relation	T11	T5	NoRel	true	registro	despegue
+Relation	T12	T10	NoRel	true	vUELO	implicado
+Relation	T4	T11	NoRel	true	efectuar	registro
+Relation	T4	T2	NoRel	true	efectuar	arder
+Relation	T5	T12	NoRel	true	despegue	vUELO
+Relation	T6	T2	NoRel	true	murieron	arder
+Relation	T7	T1	NoRel	true	heridas	operaba
+Relation	T7	T10	NoRel	true	heridas	implicado
+Relation	T7	T8	NoRel	true	heridas	incendio
+Relation	T8	T4	NoRel	true	incendio	efectuar
+Relation	T9	T5	NoRel	true	accidente	despegue

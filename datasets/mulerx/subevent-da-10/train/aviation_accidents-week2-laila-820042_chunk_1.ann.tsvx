@@ -1,0 +1,30 @@
+Text	Grunden til styrtet er lige nu under undersøgelse af NTSB , som mener at vejrforhold og mekaniske fejl muligvis har bidraget til ulykken .	thumb| left | Flyet involveret i ulykken set i Hartsfield-Jackson Atlanta International Airport i januar 2015 .	Flyet som var involveret var et McDonnell Douglas MD-88 , registreringsnummer N909 DL , serie nummeret 49540 , og linienummer 1395 .	Det var ejet af Wilmington Trust Company of Wilmington , Delaware , og opereret af Delta Air_Lines .	Flyet var bygget i 1987 , og blev registreret for første gang den 19. januar , 1988 .
+Event	T0	styrtet	EVENT	12
+Event	T1	undersøgelse	EVENT	37
+Event	T10	bygget	EVENT	495
+Event	T11	registreret	EVENT	519
+Event	T12	involveret	EVENT	159
+Event	T2	mener	EVENT	64
+Event	T4	bidraget	EVENT	116
+Event	T5	ulykken	EVENT	129
+Event	T6	set	EVENT	180
+Event	T7	involveret	EVENT	265
+Event	T8	ejet	EVENT	392
+Event	T9	opereret	EVENT	455
+Relation	T8	T9	SuperSub	true	ejet	opereret
+Relation	T9	T8	SubSuper	true	opereret	ejet
+Relation	T10	T11	SuperSub	true	bygget	registreret
+Relation	T11	T10	SubSuper	true	registreret	bygget
+Relation	T1	T12	NoRel	true	undersøgelse	involveret
+Relation	T1	T6	NoRel	true	undersøgelse	set
+Relation	T11	T12	NoRel	true	registreret	involveret
+Relation	T11	T7	NoRel	true	registreret	involveret
+Relation	T11	T8	NoRel	true	registreret	ejet
+Relation	T11	T9	NoRel	true	registreret	opereret
+Relation	T4	T10	NoRel	true	bidraget	bygget
+Relation	T4	T5	NoRel	true	bidraget	ulykken
+Relation	T6	T12	NoRel	true	set	involveret
+Relation	T6	T5	NoRel	true	set	ulykken
+Relation	T7	T11	NoRel	true	involveret	registreret
+Relation	T7	T6	NoRel	true	involveret	set
+Relation	T8	T2	NoRel	true	ejet	mener

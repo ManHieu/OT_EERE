@@ -1,0 +1,35 @@
+Text	Skandal aşı_kıtlığı sırasında meydana gelip siyasi parti binaların aşılama için kullanıldığına dair söylentilerin olduğu bir zamanda meydana geldi .	Arjantin'de , Sputnik V COVID - 19 aşısının , ülkenin COVID - 19'a karşı aşılama kampanyasında oluşturulan bir program ve protokol aracılığıyla gerekli veya risk altında olduğu düşünülen popülasyona uygulanacağı belirlendi .	Geçtiğimiz haftalarda , aşıyı almalarına izin verilen ancak aşıyı alan grupların içinde olmayan politikacıların , siyasi aktivistlerin ve diğer kişilerin vakaları ifşa edildi .	Buenos Aires Senatosu İkinci Başkan Yardımcısı Alejandro Cellillo , 400 aşının ortadan kaybolduğunu ve Olavarría Onkoloji Hastanesinde göründüğünü belirterek , bunun " teknik değil ideolojik sağlık sorunları " nedeniyle olduğunu söyledi .	entelektüel Beatriz Sarlo , kendisine " masanın altında " aşı yaptırılması teklif edildiğini kınadı , ancak sorulduğunda kendisine teklif eden kişileri teşhis etmeyi reddetti ve alaycı bir şekilde " bunu bana Mars gezegeninden teklif ettiler " diyerek reddetti .
+Event	T1	aşılama	EVENT	67
+Event	T2	söylentilerin	EVENT	100
+Event	T3	geldi	EVENT	141
+Event	T4	belirlendi	EVENT	361
+Event	T5	edildi	EVENT	542
+Event	T6	kaybolduğunu	EVENT	638
+Event	T7	belirterek	EVENT	698
+Event	T8	söyledi	EVENT	780
+Event	T9	kınadı	EVENT	883
+Event	T10	teklif	EVENT	921
+Event	T11	teşhis	EVENT	942
+Event	T12	reddetti	EVENT	956
+Event	T13	reddetti	EVENT	1042
+Event	T14	Skandal	EVENT	0
+Event	T15	teklif	EVENT	865
+Relation	T1	T12	NoRel	true	aşılama	reddetti
+Relation	T1	T2	NoRel	true	aşılama	söylentilerin
+Relation	T11	T10	NoRel	true	teşhis	teklif
+Relation	T12	T10	NoRel	true	reddetti	teklif
+Relation	T13	T5	NoRel	true	reddetti	edildi
+Relation	T13	T9	NoRel	true	reddetti	kınadı
+Relation	T14	T11	NoRel	true	Skandal	teşhis
+Relation	T15	T14	NoRel	true	teklif	Skandal
+Relation	T15	T8	NoRel	true	teklif	söyledi
+Relation	T2	T1	NoRel	true	söylentilerin	aşılama
+Relation	T3	T2	NoRel	true	geldi	söylentilerin
+Relation	T4	T3	NoRel	true	belirlendi	geldi
+Relation	T4	T5	NoRel	true	belirlendi	edildi
+Relation	T5	T1	NoRel	true	edildi	aşılama
+Relation	T7	T3	NoRel	true	belirterek	geldi
+Relation	T8	T1	NoRel	true	söyledi	aşılama
+Relation	T8	T4	NoRel	true	söyledi	belirlendi
+Relation	T9	T11	NoRel	true	kınadı	teşhis
+Relation	T9	T5	NoRel	true	kınadı	edildi

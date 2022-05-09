@@ -1,0 +1,28 @@
+Text	Es producido y transmitido por el canal Canal 5 .	El programa es presentado por segunda ocasión por Mauricio Barcelata y Tania Vanesa Rincón , y narrado por Carlos Aguilar " El Zar " .	Marco Rodríguez " Chiquimarco " es el referí o juez mientras que Fer Sagreeb se desempeña nuevamente como presentador digital .	Después del deceso de la productora Magda Rodríguez a finales de 2020 , Rosa María Noguerón desempeña dicho cargo .	Debido a que el programa estaba siendo filmado durante la pandemia de COVID-19 , tan solo una semana después de haberse estrenado la segunda temporada , esta fue suspendida el 14 de junio de 2021 debido a contagios por COVID-19 , resultando el 90% de la producción positivo para la enfermedad , incluyendo a algunos participantes además de la presentadora Tania Rincón .
+Event	T0	producido	EVENT	3
+Event	T1	transmitido	EVENT	15
+Event	T2	presentado	EVENT	65
+Event	T3	narrado	EVENT	145
+Event	T4	desempeña	EVENT	265
+Event	T5	deceso	EVENT	325
+Event	T6	filmado	EVENT	468
+Event	T7	pandemia	EVENT	487
+Event	T8	estrenado	EVENT	549
+Event	T9	suspendida	EVENT	591
+Event	T10	contagios	EVENT	634
+Event	T11	resultando	EVENT	659
+Event	T12	enfermedad	EVENT	711
+Relation	T6	T8	CauseEffect	true	filmado	estrenado
+Relation	T8	T6	EffectCause	true	estrenado	filmado
+Relation	T0	T5	NoRel	true	producido	deceso
+Relation	T1	T4	NoRel	true	transmitido	desempeña
+Relation	T10	T2	NoRel	true	contagios	presentado
+Relation	T2	T10	NoRel	true	presentado	contagios
+Relation	T2	T3	NoRel	true	presentado	narrado
+Relation	T3	T6	NoRel	true	narrado	filmado
+Relation	T3	T7	NoRel	true	narrado	pandemia
+Relation	T4	T12	NoRel	true	desempeña	enfermedad
+Relation	T5	T10	NoRel	true	deceso	contagios
+Relation	T7	T11	NoRel	true	pandemia	resultando
+Relation	T7	T6	NoRel	true	pandemia	filmado
+Relation	T9	T1	NoRel	true	suspendida	transmitido

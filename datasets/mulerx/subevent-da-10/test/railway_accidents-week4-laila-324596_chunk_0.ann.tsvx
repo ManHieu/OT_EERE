@@ -1,0 +1,69 @@
+Text	JOHN HENRY HOBART WARD ( 17. juni 1823 – 24. juli 1903 ) , i reglen omtalt som J. H. HOBART WARD , var en karriereofficer i den amerikanske hær , som kæmpede i den Mexicansk-amerikanske krig , gjorde tjeneste i staten New Yorks milits samt som general i den amerikanske borgerkrig .	Under den amerikanske borgerkrig blev han såret flere gange og blev bemærket for sin indsats i slaget ved Gettysburg og for sin uheldige opførsel under Slaget ved the Wilderness .	Efter krigen arbejdede Ward i New Yorks højesteret , og blev også husket for sin død – han blev ramt af et tog .	Ward blev født i New York i en familie af militære veteraner .	Hans bedstefar John Ward havde kæmpet i den amerikanske uafhængighedskrig hvor han var blevet invalid , det samme havde hans far , James Ward i den Britisk-amerikanske krig ( 1812 ) .
+Event	T0	omtalt	EVENT	68
+Event	T1	kæmpede	EVENT	150
+Event	T2	krig	EVENT	186
+Event	T3	tjeneste	EVENT	200
+Event	T4	såret	EVENT	325
+Event	T5	bemærket	EVENT	351
+Event	T6	indsats	EVENT	368
+Event	T7	slaget	EVENT	378
+Event	T8	opførsel	EVENT	420
+Event	T9	Slaget	EVENT	435
+Event	T10	arbejdede	EVENT	476
+Event	T11	husket	EVENT	529
+Event	T12	død	EVENT	544
+Event	T13	tog	EVENT	570
+Event	T14	født	EVENT	586
+Event	T15	kæmpet	EVENT	670
+Event	T16	karriereofficer	EVENT	106
+Event	T17	borgerkrig	EVENT	270
+Event	T18	borgerkrig	EVENT	305
+Event	T19	krigen	EVENT	469
+Event	T20	uafhængighedskrig	EVENT	695
+Event	T21	invalid	EVENT	733
+Event	T22	krig	EVENT	807
+Relation	T18	T5	SuperSub	true	borgerkrig	bemærket
+Relation	T5	T18	SubSuper	true	bemærket	borgerkrig
+Relation	T0	T12	NoRel	true	omtalt	død
+Relation	T1	T14	NoRel	true	kæmpede	født
+Relation	T1	T2	NoRel	true	kæmpede	krig
+Relation	T10	T19	NoRel	true	arbejdede	krigen
+Relation	T11	T15	NoRel	true	husket	kæmpet
+Relation	T11	T21	NoRel	true	husket	invalid
+Relation	T11	T4	NoRel	true	husket	såret
+Relation	T12	T6	NoRel	true	død	indsats
+Relation	T13	T5	NoRel	true	tog	bemærket
+Relation	T13	T8	NoRel	true	tog	opførsel
+Relation	T14	T22	NoRel	true	født	krig
+Relation	T14	T7	NoRel	true	født	slaget
+Relation	T15	T17	NoRel	true	kæmpet	borgerkrig
+Relation	T15	T3	NoRel	true	kæmpet	tjeneste
+Relation	T15	T4	NoRel	true	kæmpet	såret
+Relation	T15	T5	NoRel	true	kæmpet	bemærket
+Relation	T16	T14	NoRel	true	karriereofficer	født
+Relation	T16	T17	NoRel	true	karriereofficer	borgerkrig
+Relation	T17	T14	NoRel	true	borgerkrig	født
+Relation	T17	T18	NoRel	true	borgerkrig	borgerkrig
+Relation	T17	T22	NoRel	true	borgerkrig	krig
+Relation	T17	T3	NoRel	true	borgerkrig	tjeneste
+Relation	T18	T21	NoRel	true	borgerkrig	invalid
+Relation	T18	T9	NoRel	true	borgerkrig	Slaget
+Relation	T19	T7	NoRel	true	krigen	slaget
+Relation	T20	T19	NoRel	true	uafhængighedskrig	krigen
+Relation	T21	T2	NoRel	true	invalid	krig
+Relation	T22	T19	NoRel	true	krig	krigen
+Relation	T3	T0	NoRel	true	tjeneste	omtalt
+Relation	T3	T10	NoRel	true	tjeneste	arbejdede
+Relation	T3	T18	NoRel	true	tjeneste	borgerkrig
+Relation	T3	T7	NoRel	true	tjeneste	slaget
+Relation	T3	T8	NoRel	true	tjeneste	opførsel
+Relation	T4	T21	NoRel	true	såret	invalid
+Relation	T5	T14	NoRel	true	bemærket	født
+Relation	T5	T22	NoRel	true	bemærket	krig
+Relation	T5	T3	NoRel	true	bemærket	tjeneste
+Relation	T6	T17	NoRel	true	indsats	borgerkrig
+Relation	T7	T13	NoRel	true	slaget	tog
+Relation	T7	T4	NoRel	true	slaget	såret
+Relation	T9	T12	NoRel	true	Slaget	død
+Relation	T9	T19	NoRel	true	Slaget	krigen
+Relation	T9	T22	NoRel	true	Slaget	krig

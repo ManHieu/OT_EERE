@@ -1,0 +1,40 @@
+Text	اسی سال مراکش میں بھی زلزلے سے 500 افراد ہلاک ہوئے ۔	2004ء میں سب سے بڑی تباہی 26 دسمبر کو انڈونیشیا کی ریاست سماٹرا میں زیرِ سمندر زلزلے سونامی سے آئی ۔	جس سے اُٹھنے والی لہریں انڈونیشیا ، ملائیشیا ، بنگلہ دیش ، بھارت ، تھائی لینڈ ، سری لنکا ، مینمار ( برما ) ، مالدیپ ، صومالیہ ، کینیا ، تنزانیہ ، سیشلز ( مدغاسکر ) اور جنوبی افریقہ تک گئیں ۔	اس تباہی سے ہونے والی اموات 5 لاکھ سے زائد ہیں جبکہ سرکاری طور پر ہلاکتوں کا اندازہ 2 لاکھ 83 ہزار ایک سو چھ لگایا گیا ہے ۔	2005ء میں انڈونیشا میں زلزلے سے 1313ء افراد ہلاک ہوئے ۔
+Event	T0	زلزلے	EVENT	22
+Event	T1	ہوئے	EVENT	46
+Event	T2	تباہی	EVENT	73
+Event	T3	سونامی	EVENT	138
+Event	T4	آئی	EVENT	148
+Event	T5	لہریں	EVENT	172
+Event	T6	گئیں	EVENT	338
+Event	T7	تباہی	EVENT	348
+Event	T8	ہونے	EVENT	357
+Event	T9	اموات	EVENT	367
+Event	T10	ہلاکتوں	EVENT	411
+Event	T11	زلزلے	EVENT	492
+Event	T12	ہوئے	EVENT	518
+Relation	T0	T1	CauseEffect	true	زلزلے	ہوئے
+Relation	T1	T0	EffectCause	true	ہوئے	زلزلے
+Relation	T0	T3	NoRel	true	زلزلے	سونامی
+Relation	T0	T7	NoRel	true	زلزلے	تباہی
+Relation	T1	T2	NoRel	true	ہوئے	تباہی
+Relation	T1	T9	NoRel	true	ہوئے	اموات
+Relation	T10	T12	NoRel	true	ہلاکتوں	ہوئے
+Relation	T11	T1	NoRel	true	زلزلے	ہوئے
+Relation	T11	T8	NoRel	true	زلزلے	ہونے
+Relation	T12	T1	NoRel	true	ہوئے	ہوئے
+Relation	T12	T7	NoRel	true	ہوئے	تباہی
+Relation	T2	T11	NoRel	true	تباہی	زلزلے
+Relation	T2	T3	NoRel	true	تباہی	سونامی
+Relation	T3	T11	NoRel	true	سونامی	زلزلے
+Relation	T4	T12	NoRel	true	آئی	ہوئے
+Relation	T6	T10	NoRel	true	گئیں	ہلاکتوں
+Relation	T6	T2	NoRel	true	گئیں	تباہی
+Relation	T6	T4	NoRel	true	گئیں	آئی
+Relation	T6	T7	NoRel	true	گئیں	تباہی
+Relation	T7	T11	NoRel	true	تباہی	زلزلے
+Relation	T7	T4	NoRel	true	تباہی	آئی
+Relation	T7	T5	NoRel	true	تباہی	لہریں
+Relation	T8	T1	NoRel	true	ہونے	ہوئے
+Relation	T8	T6	NoRel	true	ہونے	گئیں
+Relation	T9	T2	NoRel	true	اموات	تباہی
+Relation	T9	T3	NoRel	true	اموات	سونامی

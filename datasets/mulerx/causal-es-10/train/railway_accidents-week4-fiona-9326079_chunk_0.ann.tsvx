@@ -1,0 +1,43 @@
+Text	La COLISIÓN DE TRENES EN LA CIUDAD DE MÉXICO DE 2015 fue un accidente ferroviario ocurrido el día lunes , 4 de mayo de ese año , alrededor de las 18:05 ( UTC_-6 ) .	El suceso ocurrió en la estación Oceanía de la Línea 5 del Sistema de Transporte Colectivo , y tuvo como consecuencia un total de 12 personas lesionadas .	El incidente se registró cerca de las 18:00 h .	El tren 05 salía de la estación Terminal Aérea de la Línea 5 del Metro , en dirección a la estación Politécnico .	Ese día se registraba una intensa granizada en la zona cercana al Aeropuerto Internacional de la Ciudad de México , y por indicaciones del Sistema de Transporte Colectivo , todos los trenes debían de cambiar el modo de pilotaje de Automático a Manual , implementando la marcha de tren en caso de lluvia .
+Event	T0	COLISIÓN	EVENT	3
+Event	T1	accidente	EVENT	60
+Event	T2	ocurrido	EVENT	82
+Event	T3	ocurrió	EVENT	175
+Event	T4	tuvo	EVENT	260
+Event	T5	lesionadas	EVENT	307
+Event	T6	incidente	EVENT	323
+Event	T7	registró	EVENT	336
+Event	T8	salía	EVENT	379
+Event	T9	registraba	EVENT	493
+Event	T10	granizada	EVENT	516
+Event	T11	indicaciones	EVENT	604
+Event	T12	cambiar	EVENT	682
+Event	T13	pilotaje	EVENT	701
+Event	T14	implementando	EVENT	735
+Event	T15	marcha	EVENT	752
+Event	T16	lluvia	EVENT	778
+Relation	T0	T1	CauseEffect	true	COLISIÓN	accidente
+Relation	T1	T0	EffectCause	true	accidente	COLISIÓN
+Relation	T1	T5	CauseEffect	true	accidente	lesionadas
+Relation	T5	T1	EffectCause	true	lesionadas	accidente
+Relation	T10	T12	NoRel	true	granizada	cambiar
+Relation	T10	T7	NoRel	true	granizada	registró
+Relation	T11	T1	NoRel	true	indicaciones	accidente
+Relation	T13	T12	NoRel	true	pilotaje	cambiar
+Relation	T13	T9	NoRel	true	pilotaje	registraba
+Relation	T14	T1	NoRel	true	implementando	accidente
+Relation	T14	T16	NoRel	true	implementando	lluvia
+Relation	T14	T4	NoRel	true	implementando	tuvo
+Relation	T15	T5	NoRel	true	marcha	lesionadas
+Relation	T15	T6	NoRel	true	marcha	incidente
+Relation	T16	T13	NoRel	true	lluvia	pilotaje
+Relation	T16	T3	NoRel	true	lluvia	ocurrió
+Relation	T2	T16	NoRel	true	ocurrido	lluvia
+Relation	T2	T6	NoRel	true	ocurrido	incidente
+Relation	T3	T13	NoRel	true	ocurrió	pilotaje
+Relation	T3	T15	NoRel	true	ocurrió	marcha
+Relation	T6	T9	NoRel	true	incidente	registraba
+Relation	T7	T4	NoRel	true	registró	tuvo
+Relation	T8	T0	NoRel	true	salía	COLISIÓN
+Relation	T8	T10	NoRel	true	salía	granizada
+Relation	T9	T11	NoRel	true	registraba	indicaciones

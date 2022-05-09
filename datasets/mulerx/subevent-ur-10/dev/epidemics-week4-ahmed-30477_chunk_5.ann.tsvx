@@ -1,0 +1,15 @@
+Text	They are a beastly people with a beastly religion .	The famine was their own fault for breeding like rabbits .	”	چرچل نہ صرف سفید فاموں کی برتری ( white supremacist ) کا قائل تھا بلکہ وہ انڈیا کے لوگوں کو جانور سمجھتا تھا اور چرچل کی پالیسیوں کی وجہ سے 1940 کی دہائی میں انڈیا میں بڑا قحط رہا ۔	Churchill viewed Indian people as animals , and that his policies regarding India led to mass starvation there in the early 1940s .
+Event	T0	famine	EVENT	56
+Event	T1	fault	EVENT	77
+Event	T2	breeding	EVENT	87
+Event	T4	viewed	EVENT	305
+Event	T5	starvation	EVENT	389
+Event	T6	قحط	EVENT	285
+Event	T3	سمجھتا	EVENT	211
+Relation	T0	T6	NoRel	true	famine	قحط
+Relation	T1	T5	NoRel	true	fault	starvation
+Relation	T2	T4	NoRel	true	breeding	viewed
+Relation	T2	T6	NoRel	true	breeding	قحط
+Relation	T5	T3	NoRel	true	starvation	سمجھتا
+Relation	T6	T0	NoRel	true	قحط	famine
+Relation	T6	T1	NoRel	true	قحط	fault

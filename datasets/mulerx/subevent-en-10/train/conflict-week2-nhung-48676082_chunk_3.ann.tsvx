@@ -1,0 +1,51 @@
+Text	The exact time between each attack varies - Glas places it at six weeks , while John Mercer says one month ; whatever the precise time that elapsed between each attack , both were carried out in a similar fashion within a short time of one another .	It is thought that the second attack was launched by a larger group of privateers - Glas places the number as 200 to 300 men .	Again , as had happened on the first attack , the privateers landed on the bay in Gran Tarajal and again , with drums and banners , marched to the village of Tuineje to loot .	There is a dispute about the exact number of privateers who launched the second attack , and the precise number killed .	John Mercer , in his 1973 book on Fuerteventura , says that the locals killed " fifty [ privateers ] on the spot " .
+Event	T0	varies	EVENT	35
+Event	T1	says	EVENT	92
+Event	T10	marched	EVENT	509
+Event	T11	loot	EVENT	546
+Event	T12	dispute	EVENT	564
+Event	T13	launched	EVENT	613
+Event	T14	attack	EVENT	633
+Event	T15	killed	EVENT	665
+Event	T16	says	EVENT	724
+Event	T17	killed	EVENT	745
+Event	T2	elapsed	EVENT	140
+Event	T3	attack	EVENT	161
+Event	T4	thought	EVENT	256
+Event	T5	attack	EVENT	280
+Event	T6	launched	EVENT	291
+Event	T7	happened	EVENT	392
+Event	T8	attack	EVENT	414
+Event	T9	landed	EVENT	438
+Relation	T9	T8	SuperSub	true	landed	attack
+Relation	T8	T9	SubSuper	true	attack	landed
+Relation	T8	T10	SuperSub	true	attack	marched
+Relation	T10	T8	SubSuper	true	marched	attack
+Relation	T1	T4	NoRel	true	says	thought
+Relation	T10	T4	NoRel	true	marched	thought
+Relation	T11	T2	NoRel	true	loot	elapsed
+Relation	T12	T1	NoRel	true	dispute	says
+Relation	T12	T5	NoRel	true	dispute	attack
+Relation	T13	T11	NoRel	true	launched	loot
+Relation	T14	T13	NoRel	true	attack	launched
+Relation	T14	T3	NoRel	true	attack	attack
+Relation	T15	T12	NoRel	true	killed	dispute
+Relation	T16	T1	NoRel	true	says	says
+Relation	T17	T0	NoRel	true	killed	varies
+Relation	T2	T1	NoRel	true	elapsed	says
+Relation	T2	T10	NoRel	true	elapsed	marched
+Relation	T2	T3	NoRel	true	elapsed	attack
+Relation	T3	T12	NoRel	true	attack	dispute
+Relation	T3	T15	NoRel	true	attack	killed
+Relation	T3	T17	NoRel	true	attack	killed
+Relation	T4	T17	NoRel	true	thought	killed
+Relation	T5	T1	NoRel	true	attack	says
+Relation	T5	T10	NoRel	true	attack	marched
+Relation	T5	T13	NoRel	true	attack	launched
+Relation	T5	T14	NoRel	true	attack	attack
+Relation	T6	T10	NoRel	true	launched	marched
+Relation	T7	T12	NoRel	true	happened	dispute
+Relation	T7	T16	NoRel	true	happened	says
+Relation	T8	T16	NoRel	true	attack	says
+Relation	T9	T3	NoRel	true	landed	attack
+Relation	T9	T4	NoRel	true	landed	thought

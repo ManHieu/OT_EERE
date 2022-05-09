@@ -1,0 +1,89 @@
+Text	- 23. marts 2006 : En soldat blev dræbt og en anden blev såret under kørsel i et let pansret køretøj nord for Basra .	- 23. september 2006 : En soldat blev dræbt , en blev hårdt såret og syv blev lettere såret ved et angreb med en vejsidebombe ved Basra .	For en tilsvarende opgørelse over tab i Afghanistan henvises til : Tabstal for de danske styrker i Afghanistan .	Når en styrke som de fredsbevarende styrker skal forsvare sig mod vejsidebomber , er der flere mulige fremgangsmåder :	- Køretøjer med ekstra kraftig pansring - Afsøgning af ruter , check af kritiske punkter - Hindring af den elektriske impuls , der skal udløse bomben - Efterretninger om hvor bomberne bliver produceret og placeret .
+Event	T0	dræbt	EVENT	34
+Event	T1	dræbt	EVENT	156
+Event	T2	såret	EVENT	178
+Event	T3	såret	EVENT	204
+Event	T4	angreb	EVENT	217
+Event	T5	opgørelse	EVENT	275
+Event	T6	tab	EVENT	290
+Event	T7	Tabstal	EVENT	323
+Event	T8	forsvare	EVENT	418
+Event	T9	pansring	EVENT	519
+Event	T10	Afsøgning	EVENT	530
+Event	T11	check	EVENT	551
+Event	T12	Hindring	EVENT	579
+Event	T13	Efterretninger	EVENT	640
+Event	T14	produceret	EVENT	679
+Event	T15	placeret	EVENT	693
+Event	T16	såret	EVENT	57
+Event	T17	kørsel	EVENT	69
+Event	T18	pansret	EVENT	85
+Event	T19	vejsidebombe	EVENT	231
+Event	T20	fredsbevarende	EVENT	390
+Event	T21	fremgangsmåder	EVENT	471
+Event	T22	impuls	EVENT	606
+Event	T23	udløse	EVENT	624
+Relation	T4	T1	CauseEffect	true	angreb	dræbt
+Relation	T1	T4	EffectCause	true	dræbt	angreb
+Relation	T4	T2	CauseEffect	true	angreb	såret
+Relation	T2	T4	EffectCause	true	såret	angreb
+Relation	T4	T3	CauseEffect	true	angreb	såret
+Relation	T3	T4	EffectCause	true	såret	angreb
+Relation	T9	T8	CauseEffect	true	pansring	forsvare
+Relation	T8	T9	EffectCause	true	forsvare	pansring
+Relation	T10	T8	CauseEffect	true	Afsøgning	forsvare
+Relation	T8	T10	EffectCause	true	forsvare	Afsøgning
+Relation	T11	T8	CauseEffect	true	check	forsvare
+Relation	T8	T11	EffectCause	true	forsvare	check
+Relation	T12	T8	CauseEffect	true	Hindring	forsvare
+Relation	T8	T12	EffectCause	true	forsvare	Hindring
+Relation	T13	T8	CauseEffect	true	Efterretninger	forsvare
+Relation	T8	T13	EffectCause	true	forsvare	Efterretninger
+Relation	T18	T0	CauseEffect	true	pansret	dræbt
+Relation	T0	T18	EffectCause	true	dræbt	pansret
+Relation	T18	T16	CauseEffect	true	pansret	såret
+Relation	T16	T18	EffectCause	true	såret	pansret
+Relation	T0	T17	NoRel	true	dræbt	kørsel
+Relation	T0	T2	NoRel	true	dræbt	såret
+Relation	T1	T17	NoRel	true	dræbt	kørsel
+Relation	T1	T18	NoRel	true	dræbt	pansret
+Relation	T1	T19	NoRel	true	dræbt	vejsidebombe
+Relation	T10	T17	NoRel	true	Afsøgning	kørsel
+Relation	T11	T14	NoRel	true	check	produceret
+Relation	T13	T11	NoRel	true	Efterretninger	check
+Relation	T13	T14	NoRel	true	Efterretninger	produceret
+Relation	T14	T18	NoRel	true	produceret	pansret
+Relation	T14	T21	NoRel	true	produceret	fremgangsmåder
+Relation	T14	T6	NoRel	true	produceret	tab
+Relation	T15	T19	NoRel	true	placeret	vejsidebombe
+Relation	T15	T22	NoRel	true	placeret	impuls
+Relation	T17	T0	NoRel	true	kørsel	dræbt
+Relation	T17	T22	NoRel	true	kørsel	impuls
+Relation	T17	T4	NoRel	true	kørsel	angreb
+Relation	T17	T8	NoRel	true	kørsel	forsvare
+Relation	T18	T6	NoRel	true	pansret	tab
+Relation	T19	T13	NoRel	true	vejsidebombe	Efterretninger
+Relation	T19	T2	NoRel	true	vejsidebombe	såret
+Relation	T20	T13	NoRel	true	fredsbevarende	Efterretninger
+Relation	T20	T17	NoRel	true	fredsbevarende	kørsel
+Relation	T20	T22	NoRel	true	fredsbevarende	impuls
+Relation	T20	T3	NoRel	true	fredsbevarende	såret
+Relation	T21	T23	NoRel	true	fremgangsmåder	udløse
+Relation	T21	T7	NoRel	true	fremgangsmåder	Tabstal
+Relation	T21	T9	NoRel	true	fremgangsmåder	pansring
+Relation	T22	T13	NoRel	true	impuls	Efterretninger
+Relation	T4	T5	NoRel	true	angreb	opgørelse
+Relation	T5	T18	NoRel	true	opgørelse	pansret
+Relation	T6	T13	NoRel	true	tab	Efterretninger
+Relation	T6	T16	NoRel	true	tab	såret
+Relation	T6	T17	NoRel	true	tab	kørsel
+Relation	T6	T18	NoRel	true	tab	pansret
+Relation	T6	T20	NoRel	true	tab	fredsbevarende
+Relation	T7	T3	NoRel	true	Tabstal	såret
+Relation	T7	T4	NoRel	true	Tabstal	angreb
+Relation	T7	T6	NoRel	true	Tabstal	tab
+Relation	T7	T8	NoRel	true	Tabstal	forsvare
+Relation	T8	T1	NoRel	true	forsvare	dræbt
+Relation	T8	T16	NoRel	true	forsvare	såret
+Relation	T8	T6	NoRel	true	forsvare	tab
+Relation	T9	T10	NoRel	true	pansring	Afsøgning

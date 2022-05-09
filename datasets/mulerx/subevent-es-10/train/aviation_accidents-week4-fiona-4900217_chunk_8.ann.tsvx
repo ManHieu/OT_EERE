@@ -1,0 +1,61 @@
+Text	Durante la secuencia del impacto , el ala izquierda y la cola se desprendieron a 33 km al sureste de Madang .	Durante la secuencia del impacto , sufrió graves daños al chocar con árboles y el suelo , y comenzó un intenso incendio alimentado por el combustible .	Los aldeanos que habían escuchado y presenciado la aeronave en las etapas finales de su descenso procedieron al lugar del accidente para encontrar el fuselaje severamente roto y envuelto en llamas .	Ayudaron a los cuatro supervivientes y los llevaron al puesto de primeros auxilios más cercano .	Los restos se detuvieron a 300 metros del punto de impacto inicial y fueron engullidos por el fuego .
+Event	T0	secuencia	EVENT	11
+Event	T1	impacto	EVENT	25
+Event	T2	desprendieron	EVENT	65
+Event	T3	secuencia	EVENT	121
+Event	T4	impacto	EVENT	135
+Event	T5	daños	EVENT	159
+Event	T6	chocar	EVENT	168
+Event	T7	comenzó	EVENT	202
+Event	T9	escuchado	EVENT	286
+Event	T10	presenciado	EVENT	298
+Event	T11	procedieron	EVENT	359
+Event	T12	accidente	EVENT	384
+Event	T13	encontrar	EVENT	399
+Event	T14	roto	EVENT	433
+Event	T15	envuelto	EVENT	440
+Event	T16	Ayudaron	EVENT	461
+Event	T17	llevaron	EVENT	504
+Event	T18	detuvieron	EVENT	572
+Event	T19	impacto	EVENT	609
+Event	T20	engullidos	EVENT	634
+Event	T21	fuego	EVENT	652
+Event	T8	incendio	EVENT	221
+Relation	T0	T16	NoRel	true	secuencia	Ayudaron
+Relation	T0	T3	NoRel	true	secuencia	secuencia
+Relation	T1	T10	NoRel	true	impacto	presenciado
+Relation	T1	T13	NoRel	true	impacto	encontrar
+Relation	T10	T15	NoRel	true	presenciado	envuelto
+Relation	T10	T7	NoRel	true	presenciado	comenzó
+Relation	T11	T8	NoRel	true	procedieron	incendio
+Relation	T12	T1	NoRel	true	accidente	impacto
+Relation	T12	T14	NoRel	true	accidente	roto
+Relation	T12	T17	NoRel	true	accidente	llevaron
+Relation	T12	T2	NoRel	true	accidente	desprendieron
+Relation	T13	T11	NoRel	true	encontrar	procedieron
+Relation	T13	T2	NoRel	true	encontrar	desprendieron
+Relation	T15	T16	NoRel	true	envuelto	Ayudaron
+Relation	T16	T1	NoRel	true	Ayudaron	impacto
+Relation	T16	T10	NoRel	true	Ayudaron	presenciado
+Relation	T17	T0	NoRel	true	llevaron	secuencia
+Relation	T17	T20	NoRel	true	llevaron	engullidos
+Relation	T17	T3	NoRel	true	llevaron	secuencia
+Relation	T17	T5	NoRel	true	llevaron	daños
+Relation	T18	T12	NoRel	true	detuvieron	accidente
+Relation	T19	T18	NoRel	true	impacto	detuvieron
+Relation	T19	T21	NoRel	true	impacto	fuego
+Relation	T2	T1	NoRel	true	desprendieron	impacto
+Relation	T2	T14	NoRel	true	desprendieron	roto
+Relation	T20	T11	NoRel	true	engullidos	procedieron
+Relation	T3	T5	NoRel	true	secuencia	daños
+Relation	T5	T19	NoRel	true	daños	impacto
+Relation	T6	T16	NoRel	true	chocar	Ayudaron
+Relation	T6	T18	NoRel	true	chocar	detuvieron
+Relation	T6	T7	NoRel	true	chocar	comenzó
+Relation	T7	T0	NoRel	true	comenzó	secuencia
+Relation	T7	T14	NoRel	true	comenzó	roto
+Relation	T7	T2	NoRel	true	comenzó	desprendieron
+Relation	T7	T9	NoRel	true	comenzó	escuchado
+Relation	T8	T10	NoRel	true	incendio	presenciado
+Relation	T9	T19	NoRel	true	escuchado	impacto
+Relation	T9	T7	NoRel	true	escuchado	comenzó

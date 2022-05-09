@@ -1,0 +1,64 @@
+Text	Kennan anså selv Marshallhjælpen for den vigtigste del af ” containment ” og har bl.a. vurderet , at ” .. in 1946 the military aspect of our relationship to the Sovjet Union hardly seemed to come into question at all ” .	Kennan forklarede i en artikel i tidsskriftet ” Foreign affairs ” i juli 1947 , som byggede på " Det lange telegram " at Sovjetunionen fortrinsvis virkede tiltrækkende på lande uden for dens politiske indflydelsessfære og at hovedindholdet i den amerikanske politik overfor Sovjetunionen derfor skulle være en ” … langsigtet , tålmodig , fast og årvågen inddæmning af unionens eventuelle fremtidige ekspansion .	På lang sigt kunne USA så fremme en opløsning eller en gradvis nedbrydning af Sovjetunionens magt . ”	Inddæmningspolitikkens midler var indtil 1949 primært økonomisk bistand til genopbygning af de nedslidte økonomier i Europa .	I midlertid satte den Kinesiske revolution i 1949 Asienpolitikken øverst på dagsordenen .
+Event	T0	vurderet	EVENT	87
+Event	T1	seemed	EVENT	181
+Event	T2	come	EVENT	191
+Event	T3	forklarede	EVENT	228
+Event	T4	byggede	EVENT	305
+Event	T5	inddæmning	EVENT	575
+Event	T6	ekspansion	EVENT	620
+Event	T7	opløsning	EVENT	669
+Event	T8	nedbrydning	EVENT	696
+Event	T9	genopbygning	EVENT	811
+Event	T10	satte	EVENT	873
+Event	T12	Marshallhjælpen	EVENT	17
+Event	T13	relationship	EVENT	141
+Event	T14	aspect	EVENT	127
+Event	T15	tiltrækkende	EVENT	376
+Event	T16	fremme	EVENT	659
+Event	T17	økonomier	EVENT	840
+Event	T18	Asienpolitikken	EVENT	911
+Event	T19	dagsordenen	EVENT	937
+Event	T11	Kinesiske revolution	EVENT	883
+Event	T20	politik	EVENT	479
+Relation	T0	T11	NoRel	true	vurderet	Kinesiske revolution
+Relation	T0	T12	NoRel	true	vurderet	Marshallhjælpen
+Relation	T0	T2	NoRel	true	vurderet	come
+Relation	T1	T0	NoRel	true	seemed	vurderet
+Relation	T1	T12	NoRel	true	seemed	Marshallhjælpen
+Relation	T10	T16	NoRel	true	satte	fremme
+Relation	T10	T5	NoRel	true	satte	inddæmning
+Relation	T10	T6	NoRel	true	satte	ekspansion
+Relation	T10	T7	NoRel	true	satte	opløsning
+Relation	T11	T13	NoRel	true	Kinesiske revolution	relationship
+Relation	T11	T17	NoRel	true	Kinesiske revolution	økonomier
+Relation	T11	T4	NoRel	true	Kinesiske revolution	byggede
+Relation	T11	T6	NoRel	true	Kinesiske revolution	ekspansion
+Relation	T12	T18	NoRel	true	Marshallhjælpen	Asienpolitikken
+Relation	T12	T5	NoRel	true	Marshallhjælpen	inddæmning
+Relation	T14	T10	NoRel	true	aspect	satte
+Relation	T14	T4	NoRel	true	aspect	byggede
+Relation	T17	T12	NoRel	true	økonomier	Marshallhjælpen
+Relation	T17	T6	NoRel	true	økonomier	ekspansion
+Relation	T17	T8	NoRel	true	økonomier	nedbrydning
+Relation	T18	T15	NoRel	true	Asienpolitikken	tiltrækkende
+Relation	T18	T3	NoRel	true	Asienpolitikken	forklarede
+Relation	T19	T18	NoRel	true	dagsordenen	Asienpolitikken
+Relation	T19	T2	NoRel	true	dagsordenen	come
+Relation	T19	T3	NoRel	true	dagsordenen	forklarede
+Relation	T2	T16	NoRel	true	come	fremme
+Relation	T3	T13	NoRel	true	forklarede	relationship
+Relation	T3	T19	NoRel	true	forklarede	dagsordenen
+Relation	T3	T8	NoRel	true	forklarede	nedbrydning
+Relation	T4	T1	NoRel	true	byggede	seemed
+Relation	T4	T13	NoRel	true	byggede	relationship
+Relation	T4	T8	NoRel	true	byggede	nedbrydning
+Relation	T6	T12	NoRel	true	ekspansion	Marshallhjælpen
+Relation	T6	T16	NoRel	true	ekspansion	fremme
+Relation	T6	T2	NoRel	true	ekspansion	come
+Relation	T6	T9	NoRel	true	ekspansion	genopbygning
+Relation	T7	T12	NoRel	true	opløsning	Marshallhjælpen
+Relation	T8	T13	NoRel	true	nedbrydning	relationship
+Relation	T9	T16	NoRel	true	genopbygning	fremme
+Relation	T9	T19	NoRel	true	genopbygning	dagsordenen
+Relation	T9	T2	NoRel	true	genopbygning	come
+Relation	T9	T4	NoRel	true	genopbygning	byggede

@@ -1,0 +1,67 @@
+Text	Estaría encabezada por el viceprimer ministro Armen Gevorgyan .	Los funcionarios iraníes culparon del accidente a razones técnicas .	Se alegó que el motivo principal del accidente fue un fallo de motor y destrucción por impacto de un pájaro , lo que resultó en un incendio que provocó la pérdida de control y la caída del avión .	El 23 de diciembre de 2014 se publicó una cronología de eventos : Durante el ascenso a la altitud de 9.700 metros ( 31.800 pies ) , la tripulación envió un mensaje sobre un incendio en el motor número uno .	La subida se detuvo a 8.700 metros ( 28.500 pies ) .
+Event	T0	encabezada	EVENT	8
+Event	T1	culparon	EVENT	89
+Event	T2	accidente	EVENT	102
+Event	T3	alegó	EVENT	136
+Event	T4	accidente	EVENT	170
+Event	T5	fallo	EVENT	187
+Event	T6	destrucción	EVENT	204
+Event	T7	impacto	EVENT	220
+Event	T8	resultó	EVENT	250
+Event	T9	incendio	EVENT	264
+Event	T10	provocó	EVENT	277
+Event	T11	pérdida	EVENT	288
+Event	T12	caída	EVENT	312
+Event	T13	publicó	EVENT	360
+Event	T14	eventos	EVENT	386
+Event	T15	ascenso	EVENT	407
+Event	T16	envió	EVENT	477
+Event	T17	mensaje	EVENT	486
+Event	T18	incendio	EVENT	503
+Event	T19	subida	EVENT	540
+Event	T20	detuvo	EVENT	550
+Relation	T2	T1	SuperSub	true	accidente	culparon
+Relation	T1	T2	SubSuper	true	culparon	accidente
+Relation	T0	T15	NoRel	true	encabezada	ascenso
+Relation	T1	T10	NoRel	true	culparon	provocó
+Relation	T1	T11	NoRel	true	culparon	pérdida
+Relation	T1	T19	NoRel	true	culparon	subida
+Relation	T1	T9	NoRel	true	culparon	incendio
+Relation	T10	T1	NoRel	true	provocó	culparon
+Relation	T11	T16	NoRel	true	pérdida	envió
+Relation	T11	T7	NoRel	true	pérdida	impacto
+Relation	T12	T14	NoRel	true	caída	eventos
+Relation	T12	T6	NoRel	true	caída	destrucción
+Relation	T13	T6	NoRel	true	publicó	destrucción
+Relation	T13	T9	NoRel	true	publicó	incendio
+Relation	T15	T20	NoRel	true	ascenso	detuvo
+Relation	T15	T4	NoRel	true	ascenso	accidente
+Relation	T15	T7	NoRel	true	ascenso	impacto
+Relation	T16	T11	NoRel	true	envió	pérdida
+Relation	T16	T4	NoRel	true	envió	accidente
+Relation	T17	T16	NoRel	true	mensaje	envió
+Relation	T19	T3	NoRel	true	subida	alegó
+Relation	T2	T11	NoRel	true	accidente	pérdida
+Relation	T2	T16	NoRel	true	accidente	envió
+Relation	T2	T7	NoRel	true	accidente	impacto
+Relation	T20	T10	NoRel	true	detuvo	provocó
+Relation	T20	T14	NoRel	true	detuvo	eventos
+Relation	T20	T19	NoRel	true	detuvo	subida
+Relation	T20	T4	NoRel	true	detuvo	accidente
+Relation	T3	T0	NoRel	true	alegó	encabezada
+Relation	T3	T12	NoRel	true	alegó	caída
+Relation	T3	T4	NoRel	true	alegó	accidente
+Relation	T3	T6	NoRel	true	alegó	destrucción
+Relation	T4	T1	NoRel	true	accidente	culparon
+Relation	T4	T5	NoRel	true	accidente	fallo
+Relation	T5	T2	NoRel	true	fallo	accidente
+Relation	T5	T4	NoRel	true	fallo	accidente
+Relation	T7	T10	NoRel	true	impacto	provocó
+Relation	T7	T11	NoRel	true	impacto	pérdida
+Relation	T7	T15	NoRel	true	impacto	ascenso
+Relation	T7	T18	NoRel	true	impacto	incendio
+Relation	T7	T2	NoRel	true	impacto	accidente
+Relation	T7	T8	NoRel	true	impacto	resultó
+Relation	T8	T1	NoRel	true	resultó	culparon
+Relation	T9	T0	NoRel	true	incendio	encabezada
+Relation	T9	T1	NoRel	true	incendio	culparon

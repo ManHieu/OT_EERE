@@ -1,0 +1,75 @@
+Text	The recession officially ended in the second quarter of 2009 , but the nation 's economy continued to be described as in an " economic malaise " during the second quarter of 2011 .	Some economists described the post-recession years as the weakest recovery since the Great Depression and World War II .	The weak economic recovery has led many to call it a " Zombie Economy " , so - called because it is neither dead nor alive .	Household incomes , as of August 2012 , had fallen more since the end of the recession , than during the 18 - month recession , falling an additional 4.8 % since the end of the recession , totally to 7.2 % since the December 2007 level .	Additionally as of September 2012 , the long - term unemployment was the highest it had been since World War II , and the unemployment rate peaked several months after the end of the recession ( 10.1 % in October 2009 ) and was above 8 % until September 2012 ( 7.8 % ) .
+Event	T0	recession	EVENT	4
+Event	T1	ended	EVENT	25
+Event	T2	continued	EVENT	89
+Event	T3	described	EVENT	105
+Event	T4	malaise	EVENT	135
+Event	T5	described	EVENT	197
+Event	T6	recovery	EVENT	247
+Event	T8	led	EVENT	333
+Event	T9	call	EVENT	345
+Event	T10	called	EVENT	381
+Event	T11	fallen	EVENT	471
+Event	T12	recession	EVENT	504
+Event	T13	recession	EVENT	543
+Event	T14	falling	EVENT	555
+Event	T15	recession	EVENT	604
+Event	T16	peaked	EVENT	805
+Event	T17	end	EVENT	837
+Event	T18	recession	EVENT	848
+Event	T7	weak economic recovery	EVENT	306
+Event	T19	" Zombie Economy "	EVENT	355
+Event	T20	neither dead nor alive	EVENT	402
+Event	T21	highest	EVENT	738
+Event	T22	World War II	EVENT	764
+Relation	T11	T14	SuperSub	true	fallen	falling
+Relation	T14	T11	SubSuper	true	falling	fallen
+Relation	T0	T12	NoRel	true	recession	recession
+Relation	T0	T14	NoRel	true	recession	falling
+Relation	T0	T16	NoRel	true	recession	peaked
+Relation	T0	T19	NoRel	true	recession	" Zombie Economy "
+Relation	T0	T6	NoRel	true	recession	recovery
+Relation	T0	T9	NoRel	true	recession	call
+Relation	T1	T21	NoRel	true	ended	highest
+Relation	T10	T6	NoRel	true	called	recovery
+Relation	T11	T20	NoRel	true	fallen	neither dead nor alive
+Relation	T12	T19	NoRel	true	recession	" Zombie Economy "
+Relation	T12	T5	NoRel	true	recession	described
+Relation	T13	T12	NoRel	true	recession	recession
+Relation	T13	T20	NoRel	true	recession	neither dead nor alive
+Relation	T13	T8	NoRel	true	recession	led
+Relation	T14	T6	NoRel	true	falling	recovery
+Relation	T15	T0	NoRel	true	recession	recession
+Relation	T15	T11	NoRel	true	recession	fallen
+Relation	T15	T22	NoRel	true	recession	World War II
+Relation	T15	T7	NoRel	true	recession	weak economic recovery
+Relation	T16	T17	NoRel	true	peaked	end
+Relation	T16	T18	NoRel	true	peaked	recession
+Relation	T16	T19	NoRel	true	peaked	" Zombie Economy "
+Relation	T16	T21	NoRel	true	peaked	highest
+Relation	T16	T22	NoRel	true	peaked	World War II
+Relation	T16	T4	NoRel	true	peaked	malaise
+Relation	T16	T5	NoRel	true	peaked	described
+Relation	T18	T15	NoRel	true	recession	recession
+Relation	T18	T19	NoRel	true	recession	" Zombie Economy "
+Relation	T19	T1	NoRel	true	" Zombie Economy "	ended
+Relation	T19	T21	NoRel	true	" Zombie Economy "	highest
+Relation	T2	T13	NoRel	true	continued	recession
+Relation	T2	T17	NoRel	true	continued	end
+Relation	T20	T19	NoRel	true	neither dead nor alive	" Zombie Economy "
+Relation	T20	T2	NoRel	true	neither dead nor alive	continued
+Relation	T22	T13	NoRel	true	World War II	recession
+Relation	T22	T2	NoRel	true	World War II	continued
+Relation	T4	T0	NoRel	true	malaise	recession
+Relation	T4	T17	NoRel	true	malaise	end
+Relation	T4	T20	NoRel	true	malaise	neither dead nor alive
+Relation	T4	T9	NoRel	true	malaise	call
+Relation	T5	T3	NoRel	true	described	described
+Relation	T7	T0	NoRel	true	weak economic recovery	recession
+Relation	T7	T14	NoRel	true	weak economic recovery	falling
+Relation	T8	T21	NoRel	true	led	highest
+Relation	T8	T9	NoRel	true	led	call
+Relation	T9	T16	NoRel	true	call	peaked
+Relation	T9	T17	NoRel	true	call	end
+Relation	T9	T18	NoRel	true	call	recession
+Relation	T9	T3	NoRel	true	call	described

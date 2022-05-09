@@ -1,0 +1,33 @@
+Text	Dikkate değer tren kazaları , 2000 – günümüz - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 2000s : Ayrıca bakınız — Dış bağlantılar — Kaynakça	- 4 Ocak , 2000 – Åsta kazası , Åsta , Åmot , Norveç : Rørosbanen üzerinde iki dizel yolcu treni çarpışması , 19 ölü .	Yangın çarpışmadan sonra yaklaşık 6 saat sürdü .	- 6 Şubat , 2000 – Brühl , Almanya : Bir gece tren Amsterdam - Basel ekspresi , ana demir yolu üzerinde Köln ve Bonn arasındaki Brühl istasyonunda bir inşaat alanındaki aşırı hız ve raydan çıkma geçerken bir çer çöp ile dolu çöp tenekesine çarptı , 9 kişi öldü .	- 2 Mart , 2000 – Kølkær , Danimarka : İki bölgesel tren , birinin kırmızı sinyalde geçmesinden sonra kafa kafaya çarpıştı .
+Event	T0	kazası	EVENT	210
+Event	T1	çarpışması	EVENT	284
+Event	T2	ölü	EVENT	300
+Event	T3	çarpışmadan	EVENT	313
+Event	T5	geçerken	EVENT	550
+Event	T6	çarptı	EVENT	595
+Event	T7	öldü	EVENT	611
+Event	T8	geçmesinden	EVENT	702
+Event	T9	çarpıştı	EVENT	732
+Event	T10	Yangın	EVENT	306
+Event	T4	çıkma	EVENT	544
+Relation	T1	T2	CauseEffect	true	çarpışması	ölü
+Relation	T2	T1	EffectCause	true	ölü	çarpışması
+Relation	T1	T10	CauseEffect	true	çarpışması	Yangın
+Relation	T10	T1	EffectCause	true	Yangın	çarpışması
+Relation	T4	T6	CauseEffect	true	çıkma	çarptı
+Relation	T6	T4	EffectCause	true	çarptı	çıkma
+Relation	T6	T7	CauseEffect	true	çarptı	öldü
+Relation	T7	T6	EffectCause	true	öldü	çarptı
+Relation	T8	T9	CauseEffect	true	geçmesinden	çarpıştı
+Relation	T9	T8	EffectCause	true	çarpıştı	geçmesinden
+Relation	T0	T8	NoRel	true	kazası	geçmesinden
+Relation	T1	T8	NoRel	true	çarpışması	geçmesinden
+Relation	T10	T5	NoRel	true	Yangın	geçerken
+Relation	T2	T4	NoRel	true	ölü	çıkma
+Relation	T2	T6	NoRel	true	ölü	çarptı
+Relation	T2	T9	NoRel	true	ölü	çarpıştı
+Relation	T4	T8	NoRel	true	çıkma	geçmesinden
+Relation	T5	T7	NoRel	true	geçerken	öldü
+Relation	T5	T8	NoRel	true	geçerken	geçmesinden
+Relation	T7	T5	NoRel	true	öldü	geçerken
+Relation	T8	T1	NoRel	true	geçmesinden	çarpışması

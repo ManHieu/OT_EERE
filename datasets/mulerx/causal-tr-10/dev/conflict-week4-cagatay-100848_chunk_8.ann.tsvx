@@ -1,0 +1,29 @@
+Text	Ömrünün sonuna dek yazacağı ‘ El Mücahit’in yayın kurulunun bir parçası oldu .	Geçici Cezayir Hükümeti’nin Gana Büyükelçisi olarak da hizmet gördü ve Accra , Conakry , Addis Ababa , Leopoldville ( bugün Kinşasa ) , Kahire ve Trablus’ta konferanslara katıldı .	Bu dönemdeki kısa yazılarından çoğu , ölümünden sonra , Toward the African Revolution ( ‘ Afrika Devrimi’ne Doğru ) kitabında toplandı .	Bu kitapta Fanon , savaş stratejisi uzmanı olarak bile belirginleşir ; bir bölümde , savaşa güneyden cephe açmayı ve erzak hattının nasıl oluşturulacağını tartışır .	Tunus Kenti’ne dönüşünde , üçüncü bir cephe açmak için Sahara’daki yorucu yolculuğundan sonra , Fanon’a , kan kanseri tanısı kondu .
+Event	T1	gördü	EVENT	141
+Event	T2	katıldı	EVENT	250
+Event	T3	ölümünden	EVENT	298
+Event	T4	toplandı	EVENT	386
+Event	T5	tartışır	EVENT	552
+Event	T6	açmak	EVENT	607
+Event	T7	yolculuğundan	EVENT	637
+Event	T8	kondu	EVENT	688
+Event	T9	yazacağı	EVENT	19
+Event	T10	konferanslara	EVENT	236
+Event	T11	savaşa	EVENT	482
+Event	T12	belirginleşir	EVENT	452
+Event	T13	dönüşünde	EVENT	578
+Relation	T5	T12	CauseEffect	true	tartışır	belirginleşir
+Relation	T12	T5	EffectCause	true	belirginleşir	tartışır
+Relation	T6	T7	CauseEffect	true	açmak	yolculuğundan
+Relation	T7	T6	EffectCause	true	yolculuğundan	açmak
+Relation	T1	T10	NoRel	true	gördü	konferanslara
+Relation	T10	T5	NoRel	true	konferanslara	tartışır
+Relation	T11	T12	NoRel	true	savaşa	belirginleşir
+Relation	T11	T5	NoRel	true	savaşa	tartışır
+Relation	T13	T7	NoRel	true	dönüşünde	yolculuğundan
+Relation	T2	T1	NoRel	true	katıldı	gördü
+Relation	T2	T11	NoRel	true	katıldı	savaşa
+Relation	T4	T1	NoRel	true	toplandı	gördü
+Relation	T5	T4	NoRel	true	tartışır	toplandı
+Relation	T8	T1	NoRel	true	kondu	gördü
+Relation	T9	T10	NoRel	true	yazacağı	konferanslara

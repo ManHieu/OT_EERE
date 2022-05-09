@@ -1,0 +1,20 @@
+Text	البتہ یہ تینوں مریض اب صحت یاب ہو چکے ہیں اور انہیں انفیکشن سے نجات مل چکی ہے ۔	-	2 مارچ کو وزارت صحت و خاندانی بہبود ، حکومت ہند نے دو مزید مریضوں کی خبر دی :	ایک 45 سال کا شخص دہلی کا تھا جس نے اطالیہ کا سفر کیا تھا اور دوسرا حیدرآباد ، دکن کا 24 سالہ انجینئر تھا جو متحدہ عرب امارات سے لوٹا تھا ۔	اس کے معاً بعد جے پور میں ایک اطالوی سیاح جو پہلے کورونا ٹیسٹ میں منفی پایا گیا تھا بعد میں مثبت پایا گیا اور اس طرح بھارت میں کل 6 معاملے سامنے آئے ۔
+Event	T0	انفیکشن	EVENT	52
+Event	T1	لوٹا	EVENT	289
+Event	T2	ٹیسٹ	EVENT	357
+Event	T6	ہو	EVENT	31
+Event	T7	نجات	EVENT	63
+Event	T8	خبر	EVENT	151
+Event	T9	سفر	EVENT	206
+Event	T10	منفی	EVENT	366
+Event	T3	مثبت	EVENT	392
+Event	T4	معاملے	EVENT	432
+Event	T5	سامنے	EVENT	439
+Relation	T0	T10	NoRel	true	انفیکشن	منفی
+Relation	T0	T8	NoRel	true	انفیکشن	خبر
+Relation	T6	T9	NoRel	true	ہو	سفر
+Relation	T7	T6	NoRel	true	نجات	ہو
+Relation	T7	T8	NoRel	true	نجات	خبر
+Relation	T8	T0	NoRel	true	خبر	انفیکشن
+Relation	T8	T4	NoRel	true	خبر	معاملے
+Relation	T8	T7	NoRel	true	خبر	نجات

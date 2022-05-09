@@ -1,0 +1,31 @@
+Text	1971 BINGÖL DEPREMI , 22 Mayıs 1971 tarihinde merkez_üssü Türkiye'nin Bingöl ili olan deprem .	Depremin büyüklüğü 6,8 M _ ( s ) olarak ölçüldü .	878 kişi öldü , 700 kişi yaralandı , 9111 bina hasar gördü veya yıkıldı .	Depremin merkezi Bingöl merkeze 10 km mesafedeki Göynüksuyu Vadisi ile Çapukçur Ovası'nın kesiştiği yerdir .	Ana depremden bir gün önce orta şiddetli bir yer sarsıntısı meydana geldi , ana depremden sonra 1 ay süreyle artçı sarsıntılar devam etti .
+Event	T1	deprem	EVENT	86
+Event	T2	ölçüldü	EVENT	135
+Event	T3	öldü	EVENT	154
+Event	T4	yaralandı	EVENT	170
+Event	T5	gördü	EVENT	198
+Event	T6	yıkıldı	EVENT	209
+Event	T7	kesiştiği	EVENT	309
+Event	T10	1971 BINGÖL DEPREMI	EVENT	0
+Event	T11	Depremin	EVENT	95
+Event	T12	sarsıntısı	EVENT	377
+Event	T8	depremden	EVENT	408
+Event	T13	depremden	EVENT	332
+Event	T14	sarsıntılar	EVENT	443
+Relation	T1	T12	NoRel	true	deprem	sarsıntısı
+Relation	T1	T3	NoRel	true	deprem	öldü
+Relation	T10	T2	NoRel	true	1971 BINGÖL DEPREMI	ölçüldü
+Relation	T11	T3	NoRel	true	Depremin	öldü
+Relation	T11	T8	NoRel	true	Depremin	depremden
+Relation	T13	T5	NoRel	true	depremden	gördü
+Relation	T14	T1	NoRel	true	sarsıntılar	deprem
+Relation	T14	T13	NoRel	true	sarsıntılar	depremden
+Relation	T14	T2	NoRel	true	sarsıntılar	ölçüldü
+Relation	T2	T5	NoRel	true	ölçüldü	gördü
+Relation	T2	T7	NoRel	true	ölçüldü	kesiştiği
+Relation	T5	T10	NoRel	true	gördü	1971 BINGÖL DEPREMI
+Relation	T5	T6	NoRel	true	gördü	yıkıldı
+Relation	T6	T12	NoRel	true	yıkıldı	sarsıntısı
+Relation	T6	T14	NoRel	true	yıkıldı	sarsıntılar
+Relation	T6	T5	NoRel	true	yıkıldı	gördü
+Relation	T8	T12	NoRel	true	depremden	sarsıntısı

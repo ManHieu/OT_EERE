@@ -1,0 +1,40 @@
+Text	Deprem sonrası padişah tarafından çıkarılan ferman ile dolgu zeminler üzerine yapı yasağı getirildi ve başkentte inşa edilecek tüm yapıların ahşap - karkas malzemeden olması emredildi .	II. Bayezid'in çıkardığı bu ferman aynı zamanda Türkiye’de yapı tipi ve kullanılacak yapı malzemelerine dair kurallar getiren ilk yasal düzenleme olarak kabul edilmektedir .	23 Mart 1510'da başlayan yeniden inşa ve onarım çalışmaları iki ay gibi kısa bir sürede bitirilerek 1 Haziran 1510'da tamamlandı .	Şehrin surları , köprüler , Rumeli ve Anadolu Hisarlarının tahrip olan yerleri , Kız Kulesi , evler , camiler , medreseler , hanlar , çeşmeler yeniden inşa edildi ve tadilattan geçirildi .	Bitmek bilmeyen artçı sarsıntılar ve depremin yarattığı tahribat ve kayıp nedeniyle Osmanlı tarihçileri ile halk başa gelen felaketi _ Kıyamet - i Suğra _ yani " Küçük Kıyamet " olarak nitelendirdiler .
+Event	T0	Deprem	EVENT	0
+Event	T1	getirildi	EVENT	90
+Event	T3	emredildi	EVENT	174
+Event	T7	çalışmaları	EVENT	408
+Event	T8	tamamlandı	EVENT	478
+Event	T10	edildi	EVENT	647
+Event	T11	geçirildi	EVENT	668
+Event	T12	sarsıntılar	EVENT	702
+Event	T13	tahribat	EVENT	736
+Event	T14	kayıp	EVENT	748
+Event	T15	felaketi	EVENT	804
+Event	T16	nitelendirdiler	EVENT	865
+Event	T17	ferman	EVENT	44
+Event	T2	ferman	EVENT	214
+Relation	T0	T12	SuperSub	true	Deprem	sarsıntılar
+Relation	T12	T0	SubSuper	true	sarsıntılar	Deprem
+Relation	T0	T13	SuperSub	true	Deprem	tahribat
+Relation	T13	T0	SubSuper	true	tahribat	Deprem
+Relation	T0	T14	SuperSub	true	Deprem	kayıp
+Relation	T14	T0	SubSuper	true	kayıp	Deprem
+Relation	T1	T13	NoRel	true	getirildi	tahribat
+Relation	T10	T0	NoRel	true	edildi	Deprem
+Relation	T10	T8	NoRel	true	edildi	tamamlandı
+Relation	T13	T11	NoRel	true	tahribat	geçirildi
+Relation	T13	T14	NoRel	true	tahribat	kayıp
+Relation	T13	T15	NoRel	true	tahribat	felaketi
+Relation	T14	T1	NoRel	true	kayıp	getirildi
+Relation	T15	T10	NoRel	true	felaketi	edildi
+Relation	T15	T16	NoRel	true	felaketi	nitelendirdiler
+Relation	T16	T0	NoRel	true	nitelendirdiler	Deprem
+Relation	T17	T3	NoRel	true	ferman	emredildi
+Relation	T3	T11	NoRel	true	emredildi	geçirildi
+Relation	T3	T7	NoRel	true	emredildi	çalışmaları
+Relation	T7	T1	NoRel	true	çalışmaları	getirildi
+Relation	T7	T17	NoRel	true	çalışmaları	ferman
+Relation	T7	T2	NoRel	true	çalışmaları	ferman
+Relation	T8	T10	NoRel	true	tamamlandı	edildi
+Relation	T8	T13	NoRel	true	tamamlandı	tahribat
+Relation	T8	T2	NoRel	true	tamamlandı	ferman

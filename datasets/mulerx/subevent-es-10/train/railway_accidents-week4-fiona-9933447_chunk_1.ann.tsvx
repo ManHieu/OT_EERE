@@ -1,0 +1,49 @@
+Text	Aunque varios gobiernos se han comprometido a arreglarlo , ninguno lo ha hecho .	El primer ministro , Imran Khan , también prometió modernizar los ferrocarriles , pero los accidentes han continuado desde que asumió el cargo de primer ministro en 2018 , incluyendo un incendio en un tren en 2019 en el que murieron más de 70 personas .	El sistema ha tenido poco mantenimiento en los últimos años , mientras que _ The Express Tribune _ ha informado que " los accidentes de trenes mortales ... parecen haber aumentado en frecuencia " .	Habibur Rehman Gilani , presidente de Pakistan Railways , dijo que las vías alrededor del lugar del accidente eran viejas y debían ser reemplazadas .	Un ex funcionario dijo que algunos tramos de ferrocarril todavía utilizan vías que se habían colocado antes de la Partición en 1947 .
+Event	T0	comprometido	EVENT	31
+Event	T1	hecho	EVENT	73
+Event	T2	modernizar	EVENT	132
+Event	T3	accidentes	EVENT	172
+Event	T4	continuado	EVENT	187
+Event	T5	asumió	EVENT	208
+Event	T6	incendio	EVENT	267
+Event	T7	murieron	EVENT	305
+Event	T8	tenido	EVENT	349
+Event	T9	mantenimiento	EVENT	361
+Event	T10	informado	EVENT	437
+Event	T11	accidentes	EVENT	457
+Event	T12	aumentado	EVENT	505
+Event	T13	dijo	EVENT	591
+Event	T14	accidente	EVENT	633
+Event	T15	reemplazadas	EVENT	668
+Event	T16	dijo	EVENT	701
+Event	T17	colocado	EVENT	776
+Event	T18	Partición	EVENT	797
+Relation	T0	T13	NoRel	true	comprometido	dijo
+Relation	T0	T2	NoRel	true	comprometido	modernizar
+Relation	T0	T6	NoRel	true	comprometido	incendio
+Relation	T1	T14	NoRel	true	hecho	accidente
+Relation	T1	T2	NoRel	true	hecho	modernizar
+Relation	T1	T6	NoRel	true	hecho	incendio
+Relation	T10	T5	NoRel	true	informado	asumió
+Relation	T10	T8	NoRel	true	informado	tenido
+Relation	T11	T18	NoRel	true	accidentes	Partición
+Relation	T13	T15	NoRel	true	dijo	reemplazadas
+Relation	T14	T4	NoRel	true	accidente	continuado
+Relation	T14	T6	NoRel	true	accidente	incendio
+Relation	T15	T16	NoRel	true	reemplazadas	dijo
+Relation	T16	T11	NoRel	true	dijo	accidentes
+Relation	T16	T6	NoRel	true	dijo	incendio
+Relation	T17	T15	NoRel	true	colocado	reemplazadas
+Relation	T18	T12	NoRel	true	Partición	aumentado
+Relation	T18	T2	NoRel	true	Partición	modernizar
+Relation	T2	T10	NoRel	true	modernizar	informado
+Relation	T2	T17	NoRel	true	modernizar	colocado
+Relation	T2	T18	NoRel	true	modernizar	Partición
+Relation	T3	T16	NoRel	true	accidentes	dijo
+Relation	T4	T8	NoRel	true	continuado	tenido
+Relation	T6	T11	NoRel	true	incendio	accidentes
+Relation	T6	T13	NoRel	true	incendio	dijo
+Relation	T7	T0	NoRel	true	murieron	comprometido
+Relation	T7	T2	NoRel	true	murieron	modernizar
+Relation	T8	T12	NoRel	true	tenido	aumentado
+Relation	T8	T16	NoRel	true	tenido	dijo

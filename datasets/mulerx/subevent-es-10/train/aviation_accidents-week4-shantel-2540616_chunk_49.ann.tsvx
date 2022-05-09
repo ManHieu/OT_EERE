@@ -1,0 +1,53 @@
+Text	: * La tripulación no tenía entrenamiento práctico en maniobrar la aeronave a alturas elevadas y frente al evento de anomalías en la indicación de velocidad .	: * La mala gestión del factor sorpresa , lo que generó una gran carga emocional sobre los dos copilotos .	: * La ausencia de una pantalla en la cabina que mostrara claramente las inconsistencias en las mediciones de velocidad del aire identificadas por la computadora .	' '' 3 ) La falta de reacción por parte de la tripulación ante el aviso de pérdida , que puede haber sido inducida por :	: * Mala interpretación de las señales de alarmas sonoras , debido a la falta de conciencia , durante el entrenamiento , de los fenómenos de pérdida de sustentación , la alarma de pérdida y de las sacudidas tipo " buffeting "
+Event	T2	evento	EVENT	107
+Event	T4	indicación	EVENT	133
+Event	T7	generó	EVENT	208
+Event	T9	ausencia	EVENT	273
+Event	T10	inconsistencias	EVENT	339
+Event	T11	mediciones	EVENT	362
+Event	T12	identificadas	EVENT	395
+Event	T14	reacción	EVENT	451
+Event	T15	aviso	EVENT	496
+Event	T16	pérdida	EVENT	505
+Event	T17	inducida	EVENT	536
+Event	T18	interpretación	EVENT	560
+Event	T19	entrenamiento	EVENT	656
+Event	T20	fenómenos	EVENT	679
+Event	T21	pérdida	EVENT	692
+Event	T22	pérdida	EVENT	731
+Event	T23	sacudidas	EVENT	748
+Event	T24	buffeting	EVENT	765
+Event	T1	gestión	EVENT	171
+Relation	T1	T12	NoRel	true	gestión	identificadas
+Relation	T1	T17	NoRel	true	gestión	inducida
+Relation	T1	T20	NoRel	true	gestión	fenómenos
+Relation	T1	T24	NoRel	true	gestión	buffeting
+Relation	T10	T11	NoRel	true	inconsistencias	mediciones
+Relation	T10	T15	NoRel	true	inconsistencias	aviso
+Relation	T10	T21	NoRel	true	inconsistencias	pérdida
+Relation	T11	T2	NoRel	true	mediciones	evento
+Relation	T12	T10	NoRel	true	identificadas	inconsistencias
+Relation	T12	T14	NoRel	true	identificadas	reacción
+Relation	T12	T21	NoRel	true	identificadas	pérdida
+Relation	T15	T16	NoRel	true	aviso	pérdida
+Relation	T16	T11	NoRel	true	pérdida	mediciones
+Relation	T16	T20	NoRel	true	pérdida	fenómenos
+Relation	T17	T9	NoRel	true	inducida	ausencia
+Relation	T18	T19	NoRel	true	interpretación	entrenamiento
+Relation	T19	T9	NoRel	true	entrenamiento	ausencia
+Relation	T2	T14	NoRel	true	evento	reacción
+Relation	T2	T16	NoRel	true	evento	pérdida
+Relation	T20	T15	NoRel	true	fenómenos	aviso
+Relation	T20	T23	NoRel	true	fenómenos	sacudidas
+Relation	T20	T4	NoRel	true	fenómenos	indicación
+Relation	T22	T10	NoRel	true	pérdida	inconsistencias
+Relation	T23	T22	NoRel	true	sacudidas	pérdida
+Relation	T23	T9	NoRel	true	sacudidas	ausencia
+Relation	T24	T12	NoRel	true	buffeting	identificadas
+Relation	T24	T23	NoRel	true	buffeting	sacudidas
+Relation	T4	T16	NoRel	true	indicación	pérdida
+Relation	T4	T7	NoRel	true	indicación	generó
+Relation	T7	T16	NoRel	true	generó	pérdida
+Relation	T7	T23	NoRel	true	generó	sacudidas
+Relation	T7	T4	NoRel	true	generó	indicación
+Relation	T9	T1	NoRel	true	ausencia	gestión

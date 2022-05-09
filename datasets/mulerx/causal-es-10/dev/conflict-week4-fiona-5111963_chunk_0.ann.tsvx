@@ -1,0 +1,42 @@
+Text	La INSURGENCIA DE AL-QAEDA EN YEMEN es una serie de enfrentamientos armados entre el Ejército de Yemen , que cuenta con el apoyo de Estados Unidos , y células rebeldes afiliadas a Al-Qaeda .	El conflicto es a veces calificado como una parte de la guerra contra el terror .	La campaña del Gobierno contra Al-Qaeda comenzó en 2001 , y se incrementó el 14 de enero de 2010 , cuando el Ejército yemení declaró la guerra abierta a Al Qaeda .	Además de combatir con Al Qaeda en varias provincias , Yemen también combate con la insurgencia chíita en el norte del país y con los separatistas del sur .	El conflicto entre el Ejército y el grupo terrorista Al-Qaeda tiene lugar desde 2001 , cuando ocurrieron los primeros enfrentamientos entre ambos bandos .
+Event	T0	INSURGENCIA	EVENT	3
+Event	T1	serie	EVENT	43
+Event	T2	armados	EVENT	68
+Event	T3	conflicto	EVENT	194
+Event	T4	calificado	EVENT	215
+Event	T5	guerra	EVENT	247
+Event	T6	campaña	EVENT	276
+Event	T7	comenzó	EVENT	313
+Event	T8	incrementó	EVENT	336
+Event	T9	declaró	EVENT	398
+Event	T10	abierta	EVENT	416
+Event	T11	combatir	EVENT	447
+Event	T12	combate	EVENT	506
+Event	T13	insurgencia	EVENT	521
+Event	T14	conflicto	EVENT	597
+Event	T15	ocurrieron	EVENT	688
+Event	T16	enfrentamientos	EVENT	712
+Relation	T9	T8	CauseEffect	true	declaró	incrementó
+Relation	T8	T9	EffectCause	true	incrementó	declaró
+Relation	T0	T7	NoRel	true	INSURGENCIA	comenzó
+Relation	T1	T12	NoRel	true	serie	combate
+Relation	T1	T2	NoRel	true	serie	armados
+Relation	T1	T3	NoRel	true	serie	conflicto
+Relation	T1	T5	NoRel	true	serie	guerra
+Relation	T10	T9	NoRel	true	abierta	declaró
+Relation	T11	T1	NoRel	true	combatir	serie
+Relation	T13	T0	NoRel	true	insurgencia	INSURGENCIA
+Relation	T13	T10	NoRel	true	insurgencia	abierta
+Relation	T13	T16	NoRel	true	insurgencia	enfrentamientos
+Relation	T13	T2	NoRel	true	insurgencia	armados
+Relation	T13	T3	NoRel	true	insurgencia	conflicto
+Relation	T14	T0	NoRel	true	conflicto	INSURGENCIA
+Relation	T14	T3	NoRel	true	conflicto	conflicto
+Relation	T14	T6	NoRel	true	conflicto	campaña
+Relation	T3	T11	NoRel	true	conflicto	combatir
+Relation	T7	T11	NoRel	true	comenzó	combatir
+Relation	T7	T2	NoRel	true	comenzó	armados
+Relation	T7	T6	NoRel	true	comenzó	campaña
+Relation	T9	T12	NoRel	true	declaró	combate
+Relation	T9	T16	NoRel	true	declaró	enfrentamientos
+Relation	T9	T3	NoRel	true	declaró	conflicto

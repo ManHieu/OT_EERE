@@ -1,0 +1,52 @@
+Text	Marcelo Ebrard , el canciller de México , que fue jefe de gobierno de la Ciudad de México al momento de la construcción de la línea , expresó su solidaridad en la red social Twitter y aseguró estar a disposición de las autoridades para las investigaciones .	Cerca de la medianoche del 4 de mayo , elementos del Ejército Mexicano y de la Marina Armada de México implementaron el Plan DN-III-E y tomaron el control de la zona .	Ellos , al lado del Heroico Cuerpo de Bomberos y de las autoridades capitalinas realizaron tareas de búsqueda de personas e iniciaron obras para retirar el tren siniestrado y los escombros del derrumbe .	Al lugar acudieron la jefa de gobierno Claudia Sheinbaum y la fiscal Ernestina Godoy .	Por la mañana , terminadas las labores de rescate de personas , elementos de corporaciones públicas y privadas se enfocaron en el retiro de los dos vagones siniestrados .
+Event	T0	construcción	EVENT	107
+Event	T1	expresó	EVENT	134
+Event	T2	aseguró	EVENT	184
+Event	T3	investigaciones	EVENT	240
+Event	T4	implementaron	EVENT	361
+Event	T5	tomaron	EVENT	394
+Event	T6	control	EVENT	405
+Event	T7	tareas	EVENT	517
+Event	T8	búsqueda	EVENT	527
+Event	T9	obras	EVENT	560
+Event	T10	retirar	EVENT	571
+Event	T11	siniestrado	EVENT	587
+Event	T12	derrumbe	EVENT	619
+Event	T13	terminadas	EVENT	733
+Event	T14	labores	EVENT	748
+Event	T15	rescate	EVENT	759
+Event	T16	enfocaron	EVENT	831
+Event	T17	retiro	EVENT	847
+Event	T18	siniestrados	EVENT	873
+Relation	T0	T1	NoRel	true	construcción	expresó
+Relation	T0	T10	NoRel	true	construcción	retirar
+Relation	T0	T14	NoRel	true	construcción	labores
+Relation	T0	T15	NoRel	true	construcción	rescate
+Relation	T0	T7	NoRel	true	construcción	tareas
+Relation	T0	T8	NoRel	true	construcción	búsqueda
+Relation	T1	T9	NoRel	true	expresó	obras
+Relation	T10	T0	NoRel	true	retirar	construcción
+Relation	T10	T2	NoRel	true	retirar	aseguró
+Relation	T11	T7	NoRel	true	siniestrado	tareas
+Relation	T13	T4	NoRel	true	terminadas	implementaron
+Relation	T16	T10	NoRel	true	enfocaron	retirar
+Relation	T16	T7	NoRel	true	enfocaron	tareas
+Relation	T17	T13	NoRel	true	retiro	terminadas
+Relation	T17	T6	NoRel	true	retiro	control
+Relation	T18	T13	NoRel	true	siniestrados	terminadas
+Relation	T18	T7	NoRel	true	siniestrados	tareas
+Relation	T2	T11	NoRel	true	aseguró	siniestrado
+Relation	T3	T5	NoRel	true	investigaciones	tomaron
+Relation	T3	T6	NoRel	true	investigaciones	control
+Relation	T3	T7	NoRel	true	investigaciones	tareas
+Relation	T4	T5	NoRel	true	implementaron	tomaron
+Relation	T5	T11	NoRel	true	tomaron	siniestrado
+Relation	T5	T15	NoRel	true	tomaron	rescate
+Relation	T5	T7	NoRel	true	tomaron	tareas
+Relation	T6	T0	NoRel	true	control	construcción
+Relation	T6	T2	NoRel	true	control	aseguró
+Relation	T7	T1	NoRel	true	tareas	expresó
+Relation	T8	T12	NoRel	true	búsqueda	derrumbe
+Relation	T8	T6	NoRel	true	búsqueda	control
+Relation	T9	T13	NoRel	true	obras	terminadas
+Relation	T9	T7	NoRel	true	obras	tareas

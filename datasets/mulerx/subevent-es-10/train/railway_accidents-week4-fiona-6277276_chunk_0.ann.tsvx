@@ -1,0 +1,43 @@
+Text	El ACCIDENTE FERROVIARIO EN KATANGA DE 2014 hace referencia al descarrilamiento de un tren de mercancías cerca del puente Katongola ( República Democrática del Congo ) el 22 de abril de 2014 .	El tren transportaba a cientos de pasajeros en el momento del accidente y dejó al menos 74 muertos y 163 heridos .	El sistema de ferrocarril de la República Democrática del Congo está mal mantenido y ha caído en un total estado de deterioro después de años de conflicto en el país .	Gran parte de la red ferroviaria fue construida durante el período colonial y recibió algunas mejoras desde el fin de la administración belga en 1960 hasta un reciente programa financiado por el Banco Mundial .	Los empleados de la empresa operadora del sistema , _ Société nationale des chemins de fer du Congo _ , a menudo venden billetes ilegales a los pasajeros para aumentar sus ingresos .
+Event	T0	referencia	EVENT	49
+Event	T1	descarrilamiento	EVENT	63
+Event	T2	transportaba	EVENT	201
+Event	T3	accidente	EVENT	255
+Event	T4	dejó	EVENT	267
+Event	T5	muertos	EVENT	284
+Event	T6	heridos	EVENT	298
+Event	T7	caído	EVENT	396
+Event	T8	deterioro	EVENT	424
+Event	T9	conflicto	EVENT	453
+Event	T10	construida	EVENT	513
+Event	T11	recibió	EVENT	554
+Event	T12	mejoras	EVENT	570
+Event	T13	fin	EVENT	587
+Event	T14	financiado	EVENT	653
+Event	T15	venden	EVENT	800
+Relation	T0	T10	NoRel	true	referencia	construida
+Relation	T0	T8	NoRel	true	referencia	deterioro
+Relation	T1	T13	NoRel	true	descarrilamiento	fin
+Relation	T1	T4	NoRel	true	descarrilamiento	dejó
+Relation	T10	T15	NoRel	true	construida	venden
+Relation	T10	T3	NoRel	true	construida	accidente
+Relation	T11	T10	NoRel	true	recibió	construida
+Relation	T11	T13	NoRel	true	recibió	fin
+Relation	T11	T3	NoRel	true	recibió	accidente
+Relation	T13	T1	NoRel	true	fin	descarrilamiento
+Relation	T13	T2	NoRel	true	fin	transportaba
+Relation	T14	T0	NoRel	true	financiado	referencia
+Relation	T14	T9	NoRel	true	financiado	conflicto
+Relation	T15	T13	NoRel	true	venden	fin
+Relation	T15	T5	NoRel	true	venden	muertos
+Relation	T2	T15	NoRel	true	transportaba	venden
+Relation	T2	T8	NoRel	true	transportaba	deterioro
+Relation	T3	T5	NoRel	true	accidente	muertos
+Relation	T4	T5	NoRel	true	dejó	muertos
+Relation	T5	T11	NoRel	true	muertos	recibió
+Relation	T5	T9	NoRel	true	muertos	conflicto
+Relation	T7	T1	NoRel	true	caído	descarrilamiento
+Relation	T7	T3	NoRel	true	caído	accidente
+Relation	T8	T14	NoRel	true	deterioro	financiado
+Relation	T9	T7	NoRel	true	conflicto	caído
+Relation	T9	T8	NoRel	true	conflicto	deterioro

@@ -1,0 +1,30 @@
+Text	200px | küçükresim | sağ | Carmo Rahibe Manastırı 1755'teki depremde harâb olmuştu .	Harâbe , 1755 Depremi'ni hatırlatması için korunmaktadır .	Ekonomi târihçisi Álvaro Pereira , Lizbon'un o esnâda nüfûsunun yaklaşık 200 bin kişi olduğunu ve bunun 30 bin ilâ 40 bin civârında kısmının depremde can verdiğini hesaplamaktadır .	Pereira , depremin yol açtığı binâ yıkımından ayrıca , sebep olduğu yangınlar ve tsunamiden dolayı Portekiz’de , İspanya’da ve Fas’ta toplamda 50 bin civârında insanın öldüğünü tahmin etmektedir .	Bununla birlikte , 2009 yılında yapılan bir çalışma , toplam ölü sayısındaki yüksekliğin sâdece 1 Kasım'daki depremden kaynaklanmadığını , daha sonra meydâna gelen artçı depremlerle ölü sayısının yükselmiş olduğunu göstermektedir .
+Event	T0	hesaplamaktadır	EVENT	308
+Event	T2	yıkımından	EVENT	361
+Event	T4	yangınlar	EVENT	394
+Event	T5	tsunamiden	EVENT	407
+Event	T6	etmektedir	EVENT	510
+Event	T7	çalışma	EVENT	567
+Event	T9	yükselmiş	EVENT	719
+Event	T10	göstermektedir	EVENT	738
+Event	T11	olmuştu	EVENT	75
+Event	T12	depremde	EVENT	60
+Event	T13	depremde	EVENT	285
+Event	T14	depremin	EVENT	336
+Event	T1	depremlerle	EVENT	693
+Relation	T1	T9	NoRel	true	depremlerle	yükselmiş
+Relation	T10	T14	NoRel	true	göstermektedir	depremin
+Relation	T11	T4	NoRel	true	olmuştu	yangınlar
+Relation	T12	T5	NoRel	true	depremde	tsunamiden
+Relation	T13	T5	NoRel	true	depremde	tsunamiden
+Relation	T14	T5	NoRel	true	depremin	tsunamiden
+Relation	T2	T0	NoRel	true	yıkımından	hesaplamaktadır
+Relation	T2	T5	NoRel	true	yıkımından	tsunamiden
+Relation	T4	T10	NoRel	true	yangınlar	göstermektedir
+Relation	T4	T5	NoRel	true	yangınlar	tsunamiden
+Relation	T5	T9	NoRel	true	tsunamiden	yükselmiş
+Relation	T6	T0	NoRel	true	etmektedir	hesaplamaktadır
+Relation	T6	T10	NoRel	true	etmektedir	göstermektedir
+Relation	T6	T4	NoRel	true	etmektedir	yangınlar
+Relation	T7	T2	NoRel	true	çalışma	yıkımından
+Relation	T9	T11	NoRel	true	yükselmiş	olmuştu

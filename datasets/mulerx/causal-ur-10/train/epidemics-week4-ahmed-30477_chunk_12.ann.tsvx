@@ -1,0 +1,41 @@
+Text	-___" یہ بالکل واضح تھا کہ ( ہندوستان میں ) قحط سے نمٹنے کے لیے جس رقم کی ضرورت تھی وہ 1878 ء سے 1880ء کی افغانستان سے جنگ پر خرچ ہو رہی تھی ۔	"	-___" امریکی تاریخ دان میتھیو وائٹ نے ' دا گریٹ بُک آف ہاریبل تھنگز ' کے نام سے ایک کتاب لکھی ہے جس میں انھوں نے تاریخ کی ایک سو بدترین سفاکیوں کا جائزہ پیش کیا ہے جن کے دوران سب سے زیادہ انسانی جانیں ضائع ہوئیں ۔	اس کتاب میں تاریخ کی چوتھی بدترین سفاکی برطانوی دور میں ہندوستان میں آنے والے قحط ہیں جن میں وائٹ کے مطابق دو کروڑ 66 لاکھ ہندوستانیوں کی جانیں ضائع ہوئیں ۔	" اس تعداد میں وائٹ نے دوسری جنگِ عظیم کے دوران بنگال میں آنے والے قحط کو شمار نہیں کیا جس میں 30 سے 50 لاکھ کے قریب لوگ مارے گئے تھے ۔
+Event	T0	جنگ	EVENT	119
+Event	T1	لکھی	EVENT	234
+Event	T2	سفاکیوں	EVENT	281
+Event	T4	سفاکی	EVENT	393
+Event	T6	قحط	EVENT	437
+Event	T8	قحط	EVENT	583
+Event	T9	قحط	EVENT	44
+Event	T10	نمٹنے	EVENT	51
+Event	T11	خرچ	EVENT	126
+Event	T12	پیش	EVENT	298
+Event	T13	ضائع	EVENT	346
+Event	T3	ضائع	EVENT	503
+Event	T5	مارے	EVENT	637
+Relation	T2	T13	CauseEffect	true	سفاکیوں	ضائع
+Relation	T13	T2	EffectCause	true	ضائع	سفاکیوں
+Relation	T6	T3	CauseEffect	true	قحط	ضائع
+Relation	T3	T6	EffectCause	true	ضائع	قحط
+Relation	T8	T5	CauseEffect	true	قحط	مارے
+Relation	T5	T8	EffectCause	true	مارے	قحط
+Relation	T0	T5	NoRel	true	جنگ	مارے
+Relation	T1	T5	NoRel	true	لکھی	مارے
+Relation	T10	T6	NoRel	true	نمٹنے	قحط
+Relation	T11	T13	NoRel	true	خرچ	ضائع
+Relation	T11	T9	NoRel	true	خرچ	قحط
+Relation	T12	T13	NoRel	true	پیش	ضائع
+Relation	T12	T2	NoRel	true	پیش	سفاکیوں
+Relation	T12	T4	NoRel	true	پیش	سفاکی
+Relation	T13	T11	NoRel	true	ضائع	خرچ
+Relation	T13	T12	NoRel	true	ضائع	پیش
+Relation	T2	T12	NoRel	true	سفاکیوں	پیش
+Relation	T3	T0	NoRel	true	ضائع	جنگ
+Relation	T4	T5	NoRel	true	سفاکی	مارے
+Relation	T4	T8	NoRel	true	سفاکی	قحط
+Relation	T5	T11	NoRel	true	مارے	خرچ
+Relation	T6	T1	NoRel	true	قحط	لکھی
+Relation	T6	T5	NoRel	true	قحط	مارے
+Relation	T8	T0	NoRel	true	قحط	جنگ
+Relation	T8	T1	NoRel	true	قحط	لکھی
+Relation	T9	T3	NoRel	true	قحط	ضائع
+Relation	T9	T6	NoRel	true	قحط	قحط

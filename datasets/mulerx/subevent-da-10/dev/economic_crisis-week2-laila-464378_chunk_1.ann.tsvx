@@ -1,0 +1,11 @@
+Text	1903 blev stedet afhændet .	Bygningerne blev revet ned 1905 i forbindelse med anlæggelsen af Prinsesse Maries Allé .	Kategori : Tidligere virksomheder på Frederiksberg Kategori : Danske virksomheder etableret i 1853 Kategori : Ophørt i 1891 Kategori : Forsvundne bygninger , konstruktioner og anlæg i Frederiksberg Kommune Kategori : Bryggerier i København Kategori : Tidligere bryggerier i Danmark		
+Event	T0	afhændet	EVENT	17
+Event	T1	anlæggelsen	EVENT	78
+Event	T2	etableret	EVENT	199
+Event	T3	Ophørt	EVENT	227
+Event	T4	revet ned	EVENT	45
+Relation	T0	T4	SuperSub	true	afhændet	revet ned
+Relation	T4	T0	SubSuper	true	revet ned	afhændet
+Relation	T3	T1	NoRel	true	Ophørt	anlæggelsen
+Relation	T4	T1	NoRel	true	revet ned	anlæggelsen
+Relation	T4	T2	NoRel	true	revet ned	etableret

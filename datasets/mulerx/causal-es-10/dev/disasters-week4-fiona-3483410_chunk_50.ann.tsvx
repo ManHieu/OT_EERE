@@ -1,0 +1,42 @@
+Text	En Backlash , Jinder Mahal derrotó a Randy Orton para ganar su primer Campeonato de la WWE con la ayuda de The Singh Brothers ( Samir y Sunil Singh ) .	En el siguiente episodio de _ SmackDown Live _ , el comisionado Shane McMahon anunció que Orton invocó su revancha por el título para Money in the Bank .	En el episodio del 23 de mayo de _ SmackDown Live _ , el comisionado Shane McMahon presentó a AJ Styles , Shinsuke Nakamura , Dolph Ziggler , Sami Zayn y Baron Corbin como los participantes del _ Money in the Bank Ladder match _ de 2017 .	El Campeón de los Estados Unidos Kevin Owens argumentó que merecía estar en el combate ya que retuvo su título contra Styles en Backlash .	Shane estuvo de acuerdo y agregó a Owens al combate .
+Event	T0	Backlash	EVENT	3
+Event	T1	derrotó	EVENT	27
+Event	T2	ganar	EVENT	54
+Event	T3	Campeonato	EVENT	70
+Event	T4	ayuda	EVENT	98
+Event	T5	anunció	EVENT	230
+Event	T6	invocó	EVENT	248
+Event	T7	revancha	EVENT	258
+Event	T8	episodio	EVENT	312
+Event	T9	presentó	EVENT	389
+Event	T10	match	EVENT	527
+Event	T11	argumentó	EVENT	590
+Event	T12	combate	EVENT	624
+Event	T13	retuvo	EVENT	639
+Event	T14	título	EVENT	649
+Event	T15	agregó	EVENT	710
+Event	T16	combate	EVENT	728
+Relation	T0	T4	NoRel	true	Backlash	ayuda
+Relation	T0	T6	NoRel	true	Backlash	invocó
+Relation	T1	T12	NoRel	true	derrotó	combate
+Relation	T10	T2	NoRel	true	match	ganar
+Relation	T12	T11	NoRel	true	combate	argumentó
+Relation	T12	T6	NoRel	true	combate	invocó
+Relation	T13	T11	NoRel	true	retuvo	argumentó
+Relation	T15	T0	NoRel	true	agregó	Backlash
+Relation	T15	T10	NoRel	true	agregó	match
+Relation	T15	T3	NoRel	true	agregó	Campeonato
+Relation	T15	T6	NoRel	true	agregó	invocó
+Relation	T4	T8	NoRel	true	ayuda	episodio
+Relation	T5	T14	NoRel	true	anunció	título
+Relation	T5	T9	NoRel	true	anunció	presentó
+Relation	T6	T10	NoRel	true	invocó	match
+Relation	T6	T12	NoRel	true	invocó	combate
+Relation	T6	T14	NoRel	true	invocó	título
+Relation	T6	T2	NoRel	true	invocó	ganar
+Relation	T8	T1	NoRel	true	episodio	derrotó
+Relation	T8	T10	NoRel	true	episodio	match
+Relation	T8	T16	NoRel	true	episodio	combate
+Relation	T9	T14	NoRel	true	presentó	título
+Relation	T9	T2	NoRel	true	presentó	ganar
+Relation	T9	T3	NoRel	true	presentó	Campeonato

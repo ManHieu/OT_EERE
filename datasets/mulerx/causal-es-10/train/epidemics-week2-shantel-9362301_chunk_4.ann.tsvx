@@ -1,0 +1,67 @@
+Text	Especificó que los ciudadanos provenientes de las áreas afectadas serían monitorizados durante 14 días y tratados como casos sospechosos .	El 8 de marzo , el gobierno interrumpió todos los vuelos desde el norte de Italia hasta 3 de abril , e interrumpió las clases de todas las escuelas durante dos semanas ; también ordenó lo cancelación de todas las grandes reuniones públicas y pidió a las federaciones deportivas que cancelaran los partidos y torneos programados .	El ministro de Salud de Albania , Ogerta Manastirliu , anunció que cualquier persona que entrara en Albania de áreas en cuarentena de Italia tendría que autoaislarse o sufrir castigo si no lo hiciera .	El 10 de marzo , todos los ciudadanos fueron alertados de la nueva política del estado de bloqueo .	El uso de coches particulares y vehículos de transporte interurbano fue prohibido en Tirana y Durres , y todo el transporte público y privado fue prohibido en Shkodra , Lezha , Elbasani , Lushnja , Fieri y Vlora , siendo los únicos vehículos permitidos las ambulancias y los vehículos de entregas esenciales .
+Event	T0	Especificó	EVENT	0
+Event	T1	afectadas	EVENT	56
+Event	T10	reuniones	EVENT	360
+Event	T11	pidió	EVENT	381
+Event	T12	cancelaran	EVENT	421
+Event	T13	partidos	EVENT	436
+Event	T14	programados	EVENT	455
+Event	T15	anunció	EVENT	524
+Event	T16	entrara	EVENT	558
+Event	T17	castigo	EVENT	644
+Event	T18	alertados	EVENT	716
+Event	T19	prohibido	EVENT	843
+Event	T20	prohibido	EVENT	917
+Event	T4	interrumpió	EVENT	167
+Event	T5	vuelos	EVENT	189
+Event	T6	interrumpió	EVENT	242
+Event	T7	clases	EVENT	258
+Event	T8	ordenó	EVENT	317
+Event	T9	cancelación	EVENT	327
+Event	T2	política	EVENT	738
+Relation	T13	T12	CauseEffect	true	partidos	cancelaran
+Relation	T12	T13	EffectCause	true	cancelaran	partidos
+Relation	T2	T18	CauseEffect	true	política	alertados
+Relation	T18	T2	EffectCause	true	alertados	política
+Relation	T0	T1	NoRel	true	Especificó	afectadas
+Relation	T1	T6	NoRel	true	afectadas	interrumpió
+Relation	T1	T9	NoRel	true	afectadas	cancelación
+Relation	T10	T2	NoRel	true	reuniones	política
+Relation	T11	T0	NoRel	true	pidió	Especificó
+Relation	T11	T10	NoRel	true	pidió	reuniones
+Relation	T11	T14	NoRel	true	pidió	programados
+Relation	T11	T15	NoRel	true	pidió	anunció
+Relation	T11	T19	NoRel	true	pidió	prohibido
+Relation	T12	T19	NoRel	true	cancelaran	prohibido
+Relation	T12	T4	NoRel	true	cancelaran	interrumpió
+Relation	T13	T14	NoRel	true	partidos	programados
+Relation	T13	T18	NoRel	true	partidos	alertados
+Relation	T14	T0	NoRel	true	programados	Especificó
+Relation	T14	T12	NoRel	true	programados	cancelaran
+Relation	T15	T10	NoRel	true	anunció	reuniones
+Relation	T15	T8	NoRel	true	anunció	ordenó
+Relation	T16	T18	NoRel	true	entrara	alertados
+Relation	T17	T0	NoRel	true	castigo	Especificó
+Relation	T17	T19	NoRel	true	castigo	prohibido
+Relation	T17	T7	NoRel	true	castigo	clases
+Relation	T17	T8	NoRel	true	castigo	ordenó
+Relation	T19	T12	NoRel	true	prohibido	cancelaran
+Relation	T19	T14	NoRel	true	prohibido	programados
+Relation	T19	T9	NoRel	true	prohibido	cancelación
+Relation	T2	T9	NoRel	true	política	cancelación
+Relation	T20	T4	NoRel	true	prohibido	interrumpió
+Relation	T4	T17	NoRel	true	interrumpió	castigo
+Relation	T4	T6	NoRel	true	interrumpió	interrumpió
+Relation	T4	T7	NoRel	true	interrumpió	clases
+Relation	T5	T16	NoRel	true	vuelos	entrara
+Relation	T5	T17	NoRel	true	vuelos	castigo
+Relation	T6	T0	NoRel	true	interrumpió	Especificó
+Relation	T7	T9	NoRel	true	clases	cancelación
+Relation	T8	T12	NoRel	true	ordenó	cancelaran
+Relation	T8	T4	NoRel	true	ordenó	interrumpió
+Relation	T8	T6	NoRel	true	ordenó	interrumpió
+Relation	T8	T9	NoRel	true	ordenó	cancelación
+Relation	T9	T14	NoRel	true	cancelación	programados
+Relation	T9	T4	NoRel	true	cancelación	interrumpió
+Relation	T9	T6	NoRel	true	cancelación	interrumpió
+Relation	T9	T7	NoRel	true	cancelación	clases

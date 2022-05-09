@@ -1,0 +1,14 @@
+Text	Bu sürecin sonunda sosyal demokrat görüşleri benimsedi ve çok geçmeden sosyalizmin temsilcisi olarak adlandırıldı .	1905 yılında Almanya Sosyal Demokrat Partisi’nde ( SPD ) genel sekreter olarak görev aldı .	Partiye getirdiği birçok yenilik sayesinde partinin gelişmesinde önemli bir rol oynadı .	1913 yılında parti başkanı August Bebel’in ölmesinin ardından , başkan seçildi .	Ebert , Almanya’nın I. Dünya Savaşı’na girmesi taraftarıydı .
+Event	T0	benimsedi	EVENT	45
+Event	T1	aldı	EVENT	201
+Event	T3	yenilik	EVENT	233
+Event	T4	oynadı	EVENT	288
+Event	T5	ölmesinin	EVENT	340
+Event	T6	seçildi	EVENT	368
+Event	T8	adlandırıldı	EVENT	101
+Event	T2	I. Dünya Savaşı’na	EVENT	398
+Relation	T0	T3	NoRel	true	benimsedi	yenilik
+Relation	T0	T4	NoRel	true	benimsedi	oynadı
+Relation	T6	T1	NoRel	true	seçildi	aldı
+Relation	T6	T5	NoRel	true	seçildi	ölmesinin
+Relation	T8	T2	NoRel	true	adlandırıldı	I. Dünya Savaşı’na

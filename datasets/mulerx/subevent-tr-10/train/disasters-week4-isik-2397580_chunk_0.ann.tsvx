@@ -1,0 +1,54 @@
+Text	2019'un Mart ve Nisan aylarında sel baskınları , İran'ın Gülistan , Fars , Huzistan , Luristan ve diğer illerindeki geniş alanlarını etkiledi ve 6 Nisan itibariye ülke çapında en az 70 kişi ölümüne neden oldu .	İran , iki hafta boyunca üç büyük yağmur dalgası ve sel baskını ile karşı karşıya kaldı .	İlk yağmur dalgası 17 Mart'ta başladı ve kuzey illeri olan Gülistan ve Mazanderan'ı sular altında bıraktı .	Yağışlar o kadar şiddetliydi ki , Gülistan , Mart ayının ortasındaki ilk yağış dalgasında bir günde ortalama yıllık yağışının % 70'ini aldı ve ardışık üç yağış dalgası , İran'ın 31 ilinden 26'sında sel ve taşkınların görülmesine neden oldu .	Sel , İran'ın ulusal bayramı olan Nevruz ile aynı zamana denk geldi .
+Event	T0	baskınları	EVENT	36
+Event	T1	etkiledi	EVENT	133
+Event	T2	oldu	EVENT	204
+Event	T3	dalgası	EVENT	252
+Event	T4	baskını	EVENT	267
+Event	T5	kaldı	EVENT	293
+Event	T6	dalgası	EVENT	312
+Event	T7	başladı	EVENT	331
+Event	T8	bıraktı	EVENT	399
+Event	T9	Yağışlar	EVENT	409
+Event	T10	aldı	EVENT	544
+Event	T11	dalgası	EVENT	569
+Event	T12	sel	EVENT	607
+Event	T13	oldu	EVENT	644
+Event	T14	geldi	EVENT	713
+Event	T15	dalgasında	EVENT	488
+Event	T16	taşkınların	EVENT	614
+Event	T17	Sel	EVENT	651
+Relation	T0	T4	NoRel	true	baskınları	baskını
+Relation	T0	T5	NoRel	true	baskınları	kaldı
+Relation	T0	T8	NoRel	true	baskınları	bıraktı
+Relation	T1	T4	NoRel	true	etkiledi	baskını
+Relation	T10	T17	NoRel	true	aldı	Sel
+Relation	T11	T16	NoRel	true	dalgası	taşkınların
+Relation	T12	T17	NoRel	true	sel	Sel
+Relation	T12	T9	NoRel	true	sel	Yağışlar
+Relation	T13	T2	NoRel	true	oldu	oldu
+Relation	T13	T3	NoRel	true	oldu	dalgası
+Relation	T14	T1	NoRel	true	geldi	etkiledi
+Relation	T14	T10	NoRel	true	geldi	aldı
+Relation	T14	T16	NoRel	true	geldi	taşkınların
+Relation	T14	T17	NoRel	true	geldi	Sel
+Relation	T14	T3	NoRel	true	geldi	dalgası
+Relation	T15	T10	NoRel	true	dalgasında	aldı
+Relation	T16	T17	NoRel	true	taşkınların	Sel
+Relation	T17	T8	NoRel	true	Sel	bıraktı
+Relation	T2	T11	NoRel	true	oldu	dalgası
+Relation	T3	T17	NoRel	true	dalgası	Sel
+Relation	T3	T8	NoRel	true	dalgası	bıraktı
+Relation	T4	T0	NoRel	true	baskını	baskınları
+Relation	T4	T10	NoRel	true	baskını	aldı
+Relation	T4	T14	NoRel	true	baskını	geldi
+Relation	T4	T6	NoRel	true	baskını	dalgası
+Relation	T5	T2	NoRel	true	kaldı	oldu
+Relation	T5	T6	NoRel	true	kaldı	dalgası
+Relation	T6	T1	NoRel	true	dalgası	etkiledi
+Relation	T6	T14	NoRel	true	dalgası	geldi
+Relation	T6	T15	NoRel	true	dalgası	dalgasında
+Relation	T6	T2	NoRel	true	dalgası	oldu
+Relation	T6	T3	NoRel	true	dalgası	dalgası
+Relation	T6	T5	NoRel	true	dalgası	kaldı
+Relation	T7	T12	NoRel	true	başladı	sel
+Relation	T8	T5	NoRel	true	bıraktı	kaldı

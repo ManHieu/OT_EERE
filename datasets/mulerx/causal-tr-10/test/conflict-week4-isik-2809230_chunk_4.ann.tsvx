@@ -1,0 +1,59 @@
+Text	Sikharulidze ayrıca Rustavi 2 televizyonuna isyanın aynı zamanda " askeri bir darbe girişimi " olduğunu da belirtti .	İsyana karşılık Gürcü Ordusu , üsse bazıları zırhlı araçlarla donatılmış Gürcü Polis birimlerinin yanı sıra birlikler , askeri polis , helikopterler ve 30 tank ve zırhlı araç konuşlandırdı .	Gürcistan Cumhurbaşkanı televizyonda yayımlanan bir konuşmasında , isyancılara teslim olmaları için bir süre verildiğini söyledi .	Son teslim tarihinin ne zaman dolacağını belirtmemekle birlikte , müzakerelerin başarısız olması hâlinde kolluk kuvvetlerine " uygun şekilde hareket etme " emri verildiğini söylendi .	Cumhurbaşkanı Saakashvili ayrıca , isyanın , Gürcistan'da 6 Mayıs'ta başlaması planlanan NATO askeri tatbikatlarını " Cooperative Longbow - Cooperative Lancer 09 " ve Gürcistan'ın AB'nin Doğu Ortaklığına katılmasını kesintiye uğratmak için Rusya tarafından yönetilen daha geniş bir planın parçası olduğunu ileri sürdü .
+Event	T0	belirtti	EVENT	107
+Event	T1	konuşlandırdı	EVENT	293
+Event	T2	yayımlanan	EVENT	346
+Event	T3	teslim	EVENT	388
+Event	T4	söyledi	EVENT	430
+Event	T5	teslim	EVENT	444
+Event	T6	hareket	EVENT	581
+Event	T7	söylendi	EVENT	613
+Event	T8	isyanın	EVENT	659
+Event	T9	başlaması	EVENT	693
+Event	T10	tatbikatlarını	EVENT	725
+Event	T11	sürdü	EVENT	936
+Event	T12	isyanın	EVENT	44
+Event	T13	girişimi	EVENT	84
+Event	T14	İsyana	EVENT	118
+Event	T15	donatılmış	EVENT	180
+Event	T16	konuşmasında	EVENT	361
+Event	T17	emri	EVENT	596
+Relation	T12	T16	CauseEffect	true	isyanın	konuşmasında
+Relation	T16	T12	EffectCause	true	konuşmasında	isyanın
+Relation	T12	T1	CauseEffect	true	isyanın	konuşlandırdı
+Relation	T1	T12	EffectCause	true	konuşlandırdı	isyanın
+Relation	T12	T4	CauseEffect	true	isyanın	söyledi
+Relation	T4	T12	EffectCause	true	söyledi	isyanın
+Relation	T12	T7	CauseEffect	true	isyanın	söylendi
+Relation	T7	T12	EffectCause	true	söylendi	isyanın
+Relation	T12	T11	CauseEffect	true	isyanın	sürdü
+Relation	T11	T12	EffectCause	true	sürdü	isyanın
+Relation	T12	T0	CauseEffect	true	isyanın	belirtti
+Relation	T0	T12	EffectCause	true	belirtti	isyanın
+Relation	T0	T10	NoRel	true	belirtti	tatbikatlarını
+Relation	T0	T5	NoRel	true	belirtti	teslim
+Relation	T1	T2	NoRel	true	konuşlandırdı	yayımlanan
+Relation	T1	T9	NoRel	true	konuşlandırdı	başlaması
+Relation	T10	T1	NoRel	true	tatbikatlarını	konuşlandırdı
+Relation	T10	T4	NoRel	true	tatbikatlarını	söyledi
+Relation	T10	T7	NoRel	true	tatbikatlarını	söylendi
+Relation	T11	T17	NoRel	true	sürdü	emri
+Relation	T11	T2	NoRel	true	sürdü	yayımlanan
+Relation	T11	T9	NoRel	true	sürdü	başlaması
+Relation	T13	T11	NoRel	true	girişimi	sürdü
+Relation	T14	T1	NoRel	true	İsyana	konuşlandırdı
+Relation	T14	T15	NoRel	true	İsyana	donatılmış
+Relation	T15	T17	NoRel	true	donatılmış	emri
+Relation	T15	T5	NoRel	true	donatılmış	teslim
+Relation	T15	T8	NoRel	true	donatılmış	isyanın
+Relation	T16	T11	NoRel	true	konuşmasında	sürdü
+Relation	T16	T4	NoRel	true	konuşmasında	söyledi
+Relation	T17	T9	NoRel	true	emri	başlaması
+Relation	T2	T8	NoRel	true	yayımlanan	isyanın
+Relation	T2	T9	NoRel	true	yayımlanan	başlaması
+Relation	T3	T1	NoRel	true	teslim	konuşlandırdı
+Relation	T3	T5	NoRel	true	teslim	teslim
+Relation	T3	T9	NoRel	true	teslim	başlaması
+Relation	T4	T0	NoRel	true	söyledi	belirtti
+Relation	T4	T16	NoRel	true	söyledi	konuşmasında
+Relation	T7	T11	NoRel	true	söylendi	sürdü
+Relation	T9	T6	NoRel	true	başlaması	hareket

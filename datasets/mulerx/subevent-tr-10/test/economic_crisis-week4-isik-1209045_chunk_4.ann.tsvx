@@ -1,0 +1,26 @@
+Text	1998 yılında Asya ekonomilerinde meydana gelen ekonomik kriz , IMF'nin önlemleriyle bir küresel krize dönüşmemiş olsa da yine de dünya ekonomisinde söz sahibi olan Çin , Japonya ve Rusya'yı derinden etkiledi .	Türkiye de bu krizden nasibini aldı ve ülkeyi Uzakdoğu sermayeli şirketler birer birer terk etmeye başladı .	Aynı yılın sonlarına doğru Rusya'daki ekonomik bunalımın yerel bir krize dönüşmesiyle Türkiye ; en önemli ihracat ve turizm partnerlerinden birini kaybetti .	Bavul ticareti azaldı ve ülkenin cari gelirlerinde gözle görülür bir düşme meydana geldi .	Türkiye ekonomisi her ne kadar 1999 yılına Avrupa Birliği tarafından verilen resmi adaylık statüsünün ılık rüzgarlarına girmiş olsa da aynı yılın ortalarında meydana gelen iki depremle yıkılmanın eşiğine geldi .
+Event	T1	kriz	EVENT	56
+Event	T3	etkiledi	EVENT	199
+Event	T4	aldı	EVENT	241
+Event	T5	bunalımın	EVENT	366
+Event	T6	dönüşmesiyle	EVENT	392
+Event	T7	kaybetti	EVENT	466
+Event	T8	azaldı	EVENT	492
+Event	T9	geldi	EVENT	560
+Event	T10	girmiş	EVENT	688
+Event	T12	geldi	EVENT	772
+Event	T2	başladı	EVENT	309
+Event	T13	statüsünün	EVENT	659
+Event	T14	depremle	EVENT	744
+Relation	T1	T5	NoRel	true	kriz	bunalımın
+Relation	T1	T7	NoRel	true	kriz	kaybetti
+Relation	T10	T13	NoRel	true	girmiş	statüsünün
+Relation	T10	T4	NoRel	true	girmiş	aldı
+Relation	T14	T8	NoRel	true	depremle	azaldı
+Relation	T4	T1	NoRel	true	aldı	kriz
+Relation	T4	T14	NoRel	true	aldı	depremle
+Relation	T4	T9	NoRel	true	aldı	geldi
+Relation	T5	T1	NoRel	true	bunalımın	kriz
+Relation	T6	T12	NoRel	true	dönüşmesiyle	geldi
+Relation	T7	T4	NoRel	true	kaybetti	aldı
+Relation	T7	T8	NoRel	true	kaybetti	azaldı

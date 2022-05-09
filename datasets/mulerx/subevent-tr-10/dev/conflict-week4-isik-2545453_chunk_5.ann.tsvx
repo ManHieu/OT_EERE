@@ -1,0 +1,40 @@
+Text	Önemli kaleleri tamir eden ve içlerine dizdar ile hisar eri yerleştiren Fatih Sultan Mehmet , yol boyunca karşılaşılan dirençleri kırarak ilerlemişti .	Sonunda Travnik Kalesini de zapt eden Fatih , ordugâhını buraya kurdurmuş ve Bosna kralının nerede olduğunu soruşturmuş , sonunda Kral Stjepan Tomašević’in Jajce Kalesi’ne sığındığını öğrenmişti .	Kral Stjepan Tomašević çok kuvvetli olan bu kalede batı yardımı gelinceye kadar dayanabileceğini sanıyordu .	Fatih ordunun büyük kısmıyla Travnik’te kalarak 25.000 kişiyle Kralı ele geçirmek üzere Mahmut Paşayı ileri sürmüştü .	Mahmut Paşa emrindeki askerlerle Jajce’ye giderken Kralın Szokol kalesine gittiğini öğrenerek bu kale üzerine yürüdü .
+Event	T0	ilerlemişti	EVENT	138
+Event	T1	zapt	EVENT	180
+Event	T2	geçirmek	EVENT	531
+Event	T3	sürmüştü	EVENT	566
+Event	T4	yürüdü	EVENT	687
+Event	T5	eden	EVENT	22
+Event	T6	yerleştiren	EVENT	60
+Event	T7	dirençleri	EVENT	119
+Event	T8	kırarak	EVENT	130
+Event	T9	kurdurmuş	EVENT	216
+Event	T10	soruşturmuş	EVENT	260
+Event	T11	sığındığını	EVENT	324
+Event	T12	öğrenmişti	EVENT	336
+Event	T13	sanıyordu	EVENT	446
+Event	T14	giderken	EVENT	619
+Event	T15	gittiğini	EVENT	651
+Relation	T0	T9	NoRel	true	ilerlemişti	kurdurmuş
+Relation	T1	T15	NoRel	true	zapt	gittiğini
+Relation	T1	T5	NoRel	true	zapt	eden
+Relation	T1	T9	NoRel	true	zapt	kurdurmuş
+Relation	T11	T15	NoRel	true	sığındığını	gittiğini
+Relation	T11	T3	NoRel	true	sığındığını	sürmüştü
+Relation	T11	T5	NoRel	true	sığındığını	eden
+Relation	T12	T9	NoRel	true	öğrenmişti	kurdurmuş
+Relation	T13	T1	NoRel	true	sanıyordu	zapt
+Relation	T13	T6	NoRel	true	sanıyordu	yerleştiren
+Relation	T14	T11	NoRel	true	giderken	sığındığını
+Relation	T15	T8	NoRel	true	gittiğini	kırarak
+Relation	T2	T6	NoRel	true	geçirmek	yerleştiren
+Relation	T3	T1	NoRel	true	sürmüştü	zapt
+Relation	T4	T12	NoRel	true	yürüdü	öğrenmişti
+Relation	T5	T10	NoRel	true	eden	soruşturmuş
+Relation	T6	T8	NoRel	true	yerleştiren	kırarak
+Relation	T6	T9	NoRel	true	yerleştiren	kurdurmuş
+Relation	T7	T0	NoRel	true	dirençleri	ilerlemişti
+Relation	T7	T1	NoRel	true	dirençleri	zapt
+Relation	T9	T11	NoRel	true	kurdurmuş	sığındığını
+Relation	T9	T14	NoRel	true	kurdurmuş	giderken
+Relation	T9	T7	NoRel	true	kurdurmuş	dirençleri

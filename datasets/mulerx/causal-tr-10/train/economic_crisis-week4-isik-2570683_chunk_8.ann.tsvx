@@ -1,0 +1,27 @@
+Text	Hitler'in kitabının ilk bölümü olan Mein Kampf , Scheubner - Richter ve darbede ölen on beş adama adanmıştır .	Aufbau Vereinigung , Scheubner - Richter'in ölümünden sonra hızla düşüşe geçti ve Rus üyelerinin çoğunun , giderek artan anti - Slavism ve Lebensraum kavramları üzerinde örgütten vazgeçtikleri görülmüştür .	1933'te Nazilerin Almanya'da iktidara gelmesi Scheubner - Richter'in ulusal kahraman olarak saygı gösterilmesine yol açtı .	Scheubner - Richter , NSDAP'ın iktidara yükselmesinden önce öldürülen , Nazi hareketinin şehitleri olarak sayılan ve Naziler için bir terim olan en önemli Blutzeuge'dan ( " kan tanığı " ) biriydi .	Nazi Almanyası'nın dört bir yanındaki şehirlerde çok sayıda sokak , Scheubner - Richter' ismi verilerek yeniden adlandırıldı .
+Event	T0	ölen	EVENT	80
+Event	T1	adanmıştır	EVENT	98
+Event	T2	ölümünden	EVENT	155
+Event	T3	geçti	EVENT	184
+Event	T4	görülmüştür	EVENT	304
+Event	T5	gelmesi	EVENT	356
+Event	T6	açtı	EVENT	435
+Event	T7	yükselmesinden	EVENT	482
+Event	T8	öldürülen	EVENT	502
+Event	T9	adlandırıldı	EVENT	752
+Event	T10	sayılan	EVENT	548
+Relation	T2	T3	CauseEffect	true	ölümünden	geçti
+Relation	T3	T2	EffectCause	true	geçti	ölümünden
+Relation	T3	T4	CauseEffect	true	geçti	görülmüştür
+Relation	T4	T3	EffectCause	true	görülmüştür	geçti
+Relation	T5	T6	CauseEffect	true	gelmesi	açtı
+Relation	T6	T5	EffectCause	true	açtı	gelmesi
+Relation	T0	T1	NoRel	true	ölen	adanmıştır
+Relation	T0	T8	NoRel	true	ölen	öldürülen
+Relation	T2	T10	NoRel	true	ölümünden	sayılan
+Relation	T3	T1	NoRel	true	geçti	adanmıştır
+Relation	T4	T8	NoRel	true	görülmüştür	öldürülen
+Relation	T5	T4	NoRel	true	gelmesi	görülmüştür
+Relation	T6	T3	NoRel	true	açtı	geçti
+Relation	T7	T5	NoRel	true	yükselmesinden	gelmesi
+Relation	T7	T6	NoRel	true	yükselmesinden	açtı

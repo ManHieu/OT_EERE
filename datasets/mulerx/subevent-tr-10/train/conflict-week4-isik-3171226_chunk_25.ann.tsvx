@@ -1,0 +1,27 @@
+Text	1968 darbesi sırasında partiye sadece 5.000 kişi üyeydi ; 1970'lerin sonunda üye sayısı 1, 2 milyona yükseldi .	1974'te Iraklı Baasçılar , hükûmetin girişimlerine desteği genişletmek için Ulusal İlerici Cephe'yi kurdular .	Parti içindeki çekişmeler devam etti ve hükûmet , partinin Bölge Komutanlığının ilk genel sekreteri Fuad er - Rikabi de dahil olmak üzere muhalif üyelerini periyodik olarak tasfiye etti .	Partinin güçlü adamı olarak ortaya çıkan Hüseyin , artan gücünü 1979'da el - Bekir'i bir kenara itmek için kullandı ve 2003 Irak İstilası'na kadar Irak'ı yönetti .	El - Bekir'in görev süresi boyunca Irak , vatandaşlarının sağlık , barınma , eğitim ve kazanç standartlarında Avrupa ülkeleriyle kıyaslanabilir düzeylere sahip olmasıyla en dramatik ve başarılı ekonomik büyüme dönemini yaşadı Ülkenin büyümesine yardımcı olmak için birçok büyük altyapı oluşturuldu ve Irak petrol endüstrisi Sovyetler Birliği'nin yardımıyla kamulaştırıldı .
+Event	T0	yükseldi	EVENT	101
+Event	T1	kurdular	EVENT	212
+Event	T2	etti	EVENT	255
+Event	T3	etti	EVENT	404
+Event	T5	kullandı	EVENT	518
+Event	T6	yönetti	EVENT	565
+Event	T7	yaşadı	EVENT	794
+Event	T8	oluşturuldu	EVENT	861
+Event	T9	kamulaştırıldı	EVENT	932
+Event	T10	darbesi	EVENT	5
+Event	T4	artan	EVENT	462
+Event	T11	yardımıyla	EVENT	921
+Relation	T0	T6	NoRel	true	yükseldi	yönetti
+Relation	T10	T8	NoRel	true	darbesi	oluşturuldu
+Relation	T11	T1	NoRel	true	yardımıyla	kurdular
+Relation	T11	T6	NoRel	true	yardımıyla	yönetti
+Relation	T2	T1	NoRel	true	etti	kurdular
+Relation	T2	T3	NoRel	true	etti	etti
+Relation	T3	T6	NoRel	true	etti	yönetti
+Relation	T4	T11	NoRel	true	artan	yardımıyla
+Relation	T5	T10	NoRel	true	kullandı	darbesi
+Relation	T5	T3	NoRel	true	kullandı	etti
+Relation	T6	T10	NoRel	true	yönetti	darbesi
+Relation	T7	T3	NoRel	true	yaşadı	etti
+Relation	T7	T5	NoRel	true	yaşadı	kullandı
+Relation	T8	T3	NoRel	true	oluşturuldu	etti

@@ -1,0 +1,82 @@
+Text	Bu arada Trabzon valisi olan şehzade Selim , yıllardan beri Anadolu’daki çalışmalarını takib ettiği Şah İsmail’in Osmanlı topraklarından izin almadan geçmesine karşılık olarak süratle harekete geçti .	Azerbaycan’a kadar İran arazisini çiğnedi .	Üzerine gönderilen kuvvetleri mağlub ederek Safevi hanedanından şehzade İbrahim Mirza’yı esir edip Trabzon’a götürdü .	Şah İsmail ve Safeviler'in Anadolu'da Şiilik propagandası yapması ve Anadolu topraklarına göz dikmesi , Şehzade Ahmed , Şehzade Korkud ve Şahkulu İsyanı'na sebep olmaları , Osmanlı ülkesinde casusluk yaparak bilgi sızdırmaları , Osmanlılar'a karşı batıdaki Hristiyan devletlerle ve Memlükler , Dulkadir oğulları Beyliği gibi devlet ve beyliklerle ittifak arayışları vb. birçok sebeple Yavuz Sultan Selim doğu seferine çıkmıştır .	Yavuz Sultan Selim ; ilk önce ağabeyleri olan ŞEHZADE AHMED ve ŞEHZADE KORKUD'un isyanlarını bastırarak ikisini de idam ettirdi .
+Event	T1	geçti	EVENT	193
+Event	T2	çiğnedi	EVENT	235
+Event	T3	götürdü	EVENT	354
+Event	T5	sebep	EVENT	520
+Event	T8	olan	EVENT	24
+Event	T9	çalışmalarını	EVENT	73
+Event	T10	takib ettiği	EVENT	87
+Event	T11	geçmesine	EVENT	150
+Event	T12	gönderilen	EVENT	253
+Event	T13	mağlub ederek	EVENT	275
+Event	T14	esir edip	EVENT	334
+Event	T15	propagandası	EVENT	409
+Event	T4	göz dikmesi	EVENT	454
+Event	T16	İsyanı'na	EVENT	510
+Event	T17	casusluk	EVENT	555
+Event	T18	sızdırmaları	EVENT	578
+Event	T19	arayışları	EVENT	719
+Event	T20	seferine	EVENT	773
+Event	T6	isyanlarını	EVENT	875
+Event	T21	bastırarak	EVENT	887
+Event	T7	idam	EVENT	909
+Relation	T11	T1	CauseEffect	true	geçmesine	geçti
+Relation	T1	T11	EffectCause	true	geçti	geçmesine
+Relation	T1	T2	CauseEffect	true	geçti	çiğnedi
+Relation	T2	T1	EffectCause	true	çiğnedi	geçti
+Relation	T17	T20	CauseEffect	true	casusluk	seferine
+Relation	T20	T17	EffectCause	true	seferine	casusluk
+Relation	T18	T20	CauseEffect	true	sızdırmaları	seferine
+Relation	T20	T18	EffectCause	true	seferine	sızdırmaları
+Relation	T19	T20	CauseEffect	true	arayışları	seferine
+Relation	T20	T19	EffectCause	true	seferine	arayışları
+Relation	T5	T20	CauseEffect	true	sebep	seferine
+Relation	T20	T5	EffectCause	true	seferine	sebep
+Relation	T4	T20	CauseEffect	true	göz dikmesi	seferine
+Relation	T20	T4	EffectCause	true	seferine	göz dikmesi
+Relation	T15	T20	CauseEffect	true	propagandası	seferine
+Relation	T20	T15	EffectCause	true	seferine	propagandası
+Relation	T6	T7	CauseEffect	true	isyanlarını	idam
+Relation	T7	T6	EffectCause	true	idam	isyanlarını
+Relation	T21	T7	CauseEffect	true	bastırarak	idam
+Relation	T7	T21	EffectCause	true	idam	bastırarak
+Relation	T16	T7	CauseEffect	true	İsyanı'na	idam
+Relation	T7	T16	EffectCause	true	idam	İsyanı'na
+Relation	T1	T14	NoRel	true	geçti	esir edip
+Relation	T1	T15	NoRel	true	geçti	propagandası
+Relation	T10	T11	NoRel	true	takib ettiği	geçmesine
+Relation	T10	T4	NoRel	true	takib ettiği	göz dikmesi
+Relation	T11	T20	NoRel	true	geçmesine	seferine
+Relation	T11	T4	NoRel	true	geçmesine	göz dikmesi
+Relation	T12	T13	NoRel	true	gönderilen	mağlub ederek
+Relation	T12	T16	NoRel	true	gönderilen	İsyanı'na
+Relation	T12	T17	NoRel	true	gönderilen	casusluk
+Relation	T12	T4	NoRel	true	gönderilen	göz dikmesi
+Relation	T13	T18	NoRel	true	mağlub ederek	sızdırmaları
+Relation	T14	T3	NoRel	true	esir edip	götürdü
+Relation	T14	T9	NoRel	true	esir edip	çalışmalarını
+Relation	T16	T10	NoRel	true	İsyanı'na	takib ettiği
+Relation	T16	T11	NoRel	true	İsyanı'na	geçmesine
+Relation	T16	T8	NoRel	true	İsyanı'na	olan
+Relation	T18	T5	NoRel	true	sızdırmaları	sebep
+Relation	T19	T17	NoRel	true	arayışları	casusluk
+Relation	T2	T13	NoRel	true	çiğnedi	mağlub ederek
+Relation	T2	T15	NoRel	true	çiğnedi	propagandası
+Relation	T2	T21	NoRel	true	çiğnedi	bastırarak
+Relation	T20	T10	NoRel	true	seferine	takib ettiği
+Relation	T3	T1	NoRel	true	götürdü	geçti
+Relation	T3	T20	NoRel	true	götürdü	seferine
+Relation	T3	T21	NoRel	true	götürdü	bastırarak
+Relation	T5	T10	NoRel	true	sebep	takib ettiği
+Relation	T5	T17	NoRel	true	sebep	casusluk
+Relation	T5	T18	NoRel	true	sebep	sızdırmaları
+Relation	T6	T15	NoRel	true	isyanlarını	propagandası
+Relation	T6	T18	NoRel	true	isyanlarını	sızdırmaları
+Relation	T7	T13	NoRel	true	idam	mağlub ederek
+Relation	T7	T8	NoRel	true	idam	olan
+Relation	T7	T9	NoRel	true	idam	çalışmalarını
+Relation	T8	T11	NoRel	true	olan	geçmesine
+Relation	T8	T20	NoRel	true	olan	seferine
+Relation	T9	T1	NoRel	true	çalışmalarını	geçti
+Relation	T9	T2	NoRel	true	çalışmalarını	çiğnedi
+Relation	T9	T5	NoRel	true	çalışmalarını	sebep

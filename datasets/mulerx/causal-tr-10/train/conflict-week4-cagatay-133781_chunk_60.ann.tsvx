@@ -1,0 +1,53 @@
+Text	Dört sene süren savaşlarda Kerim Han istediğini elde edemedi .	Sadece Basra şehri üç sene kadar İran'ın işgalinde kaldı ; ancak Zend Kerim Han'ın 1779'da ölümüyle İran'da çıkan kargaşadan yararlanan Osmanlı birlikleri karşı bir saldırı ile Basra'yı tekrar ele geçirmeyi başardılar .	1821’de İran tahtında olan Feth Ali Han , Osmanlı Devleti’nin Tepedelenli Ali Paşa ve Mora isyanının alevlendiği en buhranlı bir döneminde , fırsattan istifade ederek Osmanlı hudutlarına tecavüze başladı .	Osmanlı Devleti meşgul olduğu için , veliaht şehzade Abbas Mirza , Doğu Anadolu’ya , diğer İran şehzadesi Mehmed Ali Mirza da Irak taraflarına saldırıp ; Toprakkale , Bayezid , Eleşgird , Bitlis , Muş ve Erciş taraflarını işgal ettiler .	Fakat bu sırada İran ordusunda şiddetli bir kolera salgını başladı .
+Event	T0	ölümüyle	EVENT	154
+Event	T1	saldırı	EVENT	228
+Event	T2	alevlendiği	EVENT	384
+Event	T3	istifade	EVENT	434
+Event	T6	savaşlarda	EVENT	16
+Event	T7	işgalinde	EVENT	104
+Event	T8	kargaşadan	EVENT	177
+Event	T9	ele geçirmeyi	EVENT	256
+Event	T10	yararlanan	EVENT	188
+Event	T11	başardılar	EVENT	270
+Event	T12	tecavüze	EVENT	470
+Event	T4	işgal ettiler	EVENT	711
+Event	T13	saldırıp	EVENT	632
+Event	T14	meşgul	EVENT	505
+Event	T15	salgını	EVENT	778
+Relation	T6	T7	CauseEffect	true	savaşlarda	işgalinde
+Relation	T7	T6	EffectCause	true	işgalinde	savaşlarda
+Relation	T0	T8	CauseEffect	true	ölümüyle	kargaşadan
+Relation	T8	T0	EffectCause	true	kargaşadan	ölümüyle
+Relation	T8	T9	CauseEffect	true	kargaşadan	ele geçirmeyi
+Relation	T9	T8	EffectCause	true	ele geçirmeyi	kargaşadan
+Relation	T10	T11	CauseEffect	true	yararlanan	başardılar
+Relation	T11	T10	EffectCause	true	başardılar	yararlanan
+Relation	T2	T12	CauseEffect	true	alevlendiği	tecavüze
+Relation	T12	T2	EffectCause	true	tecavüze	alevlendiği
+Relation	T14	T13	CauseEffect	true	meşgul	saldırıp
+Relation	T13	T14	EffectCause	true	saldırıp	meşgul
+Relation	T14	T4	CauseEffect	true	meşgul	işgal ettiler
+Relation	T4	T14	EffectCause	true	işgal ettiler	meşgul
+Relation	T0	T6	NoRel	true	ölümüyle	savaşlarda
+Relation	T0	T9	NoRel	true	ölümüyle	ele geçirmeyi
+Relation	T1	T4	NoRel	true	saldırı	işgal ettiler
+Relation	T10	T3	NoRel	true	yararlanan	istifade
+Relation	T10	T4	NoRel	true	yararlanan	işgal ettiler
+Relation	T11	T12	NoRel	true	başardılar	tecavüze
+Relation	T11	T7	NoRel	true	başardılar	işgalinde
+Relation	T11	T9	NoRel	true	başardılar	ele geçirmeyi
+Relation	T12	T14	NoRel	true	tecavüze	meşgul
+Relation	T12	T6	NoRel	true	tecavüze	savaşlarda
+Relation	T14	T12	NoRel	true	meşgul	tecavüze
+Relation	T14	T2	NoRel	true	meşgul	alevlendiği
+Relation	T15	T11	NoRel	true	salgını	başardılar
+Relation	T15	T2	NoRel	true	salgını	alevlendiği
+Relation	T3	T10	NoRel	true	istifade	yararlanan
+Relation	T3	T7	NoRel	true	istifade	işgalinde
+Relation	T4	T6	NoRel	true	işgal ettiler	savaşlarda
+Relation	T6	T12	NoRel	true	savaşlarda	tecavüze
+Relation	T6	T3	NoRel	true	savaşlarda	istifade
+Relation	T7	T12	NoRel	true	işgalinde	tecavüze
+Relation	T7	T13	NoRel	true	işgalinde	saldırıp
+Relation	T8	T14	NoRel	true	kargaşadan	meşgul
+Relation	T9	T1	NoRel	true	ele geçirmeyi	saldırı

@@ -1,0 +1,122 @@
+Text	La batalla armada mientras ambas pandillas contendían por el control de la prisión duró más de cuatro horas , llevando el número total de muertos acumulados a más de _ quinientos _ desde que el gobierno de Venezuela creó en julio de 2011 un ministerio de prisiones con la idea en mente de reformar el sistema carcelario del país .	Cerca de 980 mujeres estaban realizando una visita a la prisión cuando ocurrió el motín y algunas de las mismas decidieron quedarse adentro porque temían cómo reaccionarían las fuerzas de seguridad que estaban fuera de la prisión .	Informes realizados por medios locales indicaron que la tensión dentro de la prisión pudo haber comenzado después de que varios presos fueron transferidos a Yare I desde La Planta , otra superpoblada prisión cerca de la ciudad de Caracas que fue cerrada tras una serie de violentos incidentes que habían tenido lugar tan sólo 3 meses antes , en mayo de 2012 .	Algunos expertos en seguridad creen que el sistema penitenciario de Venezuela sigue siendo un _ caldero de violencia _ porque las pandillas carcelarias dominan las instalaciones , tienen un fácil acceso a las armas y son demasiado poderosas para las corruptas e ineficientes autoridades de las prisiones .	Tras las muertes violentas , la ministra de prisiones venezolana Iris Varela dijo al respecto que “ los haremos responder por esto ” .
+Event	T0	armada	EVENT	11
+Event	T1	contendían	EVENT	43
+Event	T2	control	EVENT	61
+Event	T3	duró	EVENT	83
+Event	T4	acumulados	EVENT	146
+Event	T5	creó	EVENT	216
+Event	T6	reformar	EVENT	289
+Event	T7	realizando	EVENT	360
+Event	T8	visita	EVENT	375
+Event	T9	ocurrió	EVENT	402
+Event	T10	motín	EVENT	413
+Event	T11	quedarse	EVENT	454
+Event	T12	temían	EVENT	478
+Event	T13	reaccionarían	EVENT	490
+Event	T14	realizados	EVENT	572
+Event	T15	indicaron	EVENT	602
+Event	T16	tensión	EVENT	619
+Event	T17	comenzado	EVENT	659
+Event	T18	transferidos	EVENT	705
+Event	T19	cerrada	EVENT	809
+Event	T20	serie	EVENT	826
+Event	T21	incidentes	EVENT	845
+Event	T22	creen	EVENT	953
+Event	T23	violencia	EVENT	1030
+Event	T24	dominan	EVENT	1075
+Event	T25	acceso	EVENT	1119
+Event	T26	violentas	EVENT	1246
+Event	T27	dijo	EVENT	1306
+Event	T28	responder	EVENT	1341
+Relation	T21	T19	CauseEffect	true	incidentes	cerrada
+Relation	T19	T21	EffectCause	true	cerrada	incidentes
+Relation	T5	T6	CauseEffect	true	creó	reformar
+Relation	T6	T5	EffectCause	true	reformar	creó
+Relation	T0	T1	NoRel	true	armada	contendían
+Relation	T0	T14	NoRel	true	armada	realizados
+Relation	T0	T15	NoRel	true	armada	indicaron
+Relation	T0	T23	NoRel	true	armada	violencia
+Relation	T1	T19	NoRel	true	contendían	cerrada
+Relation	T1	T22	NoRel	true	contendían	creen
+Relation	T10	T17	NoRel	true	motín	comenzado
+Relation	T10	T19	NoRel	true	motín	cerrada
+Relation	T10	T8	NoRel	true	motín	visita
+Relation	T12	T19	NoRel	true	temían	cerrada
+Relation	T12	T2	NoRel	true	temían	control
+Relation	T12	T21	NoRel	true	temían	incidentes
+Relation	T12	T28	NoRel	true	temían	responder
+Relation	T13	T14	NoRel	true	reaccionarían	realizados
+Relation	T13	T6	NoRel	true	reaccionarían	reformar
+Relation	T13	T7	NoRel	true	reaccionarían	realizando
+Relation	T13	T8	NoRel	true	reaccionarían	visita
+Relation	T14	T1	NoRel	true	realizados	contendían
+Relation	T14	T22	NoRel	true	realizados	creen
+Relation	T14	T7	NoRel	true	realizados	realizando
+Relation	T15	T6	NoRel	true	indicaron	reformar
+Relation	T16	T15	NoRel	true	tensión	indicaron
+Relation	T16	T25	NoRel	true	tensión	acceso
+Relation	T16	T6	NoRel	true	tensión	reformar
+Relation	T17	T11	NoRel	true	comenzado	quedarse
+Relation	T17	T24	NoRel	true	comenzado	dominan
+Relation	T17	T6	NoRel	true	comenzado	reformar
+Relation	T18	T12	NoRel	true	transferidos	temían
+Relation	T18	T13	NoRel	true	transferidos	reaccionarían
+Relation	T18	T9	NoRel	true	transferidos	ocurrió
+Relation	T19	T0	NoRel	true	cerrada	armada
+Relation	T19	T26	NoRel	true	cerrada	violentas
+Relation	T19	T4	NoRel	true	cerrada	acumulados
+Relation	T19	T5	NoRel	true	cerrada	creó
+Relation	T2	T5	NoRel	true	control	creó
+Relation	T20	T1	NoRel	true	serie	contendían
+Relation	T20	T16	NoRel	true	serie	tensión
+Relation	T20	T19	NoRel	true	serie	cerrada
+Relation	T20	T24	NoRel	true	serie	dominan
+Relation	T21	T1	NoRel	true	incidentes	contendían
+Relation	T21	T11	NoRel	true	incidentes	quedarse
+Relation	T21	T14	NoRel	true	incidentes	realizados
+Relation	T21	T15	NoRel	true	incidentes	indicaron
+Relation	T21	T20	NoRel	true	incidentes	serie
+Relation	T21	T7	NoRel	true	incidentes	realizando
+Relation	T22	T14	NoRel	true	creen	realizados
+Relation	T22	T19	NoRel	true	creen	cerrada
+Relation	T22	T23	NoRel	true	creen	violencia
+Relation	T23	T17	NoRel	true	violencia	comenzado
+Relation	T23	T24	NoRel	true	violencia	dominan
+Relation	T23	T4	NoRel	true	violencia	acumulados
+Relation	T23	T7	NoRel	true	violencia	realizando
+Relation	T25	T21	NoRel	true	acceso	incidentes
+Relation	T25	T23	NoRel	true	acceso	violencia
+Relation	T25	T26	NoRel	true	acceso	violentas
+Relation	T26	T12	NoRel	true	violentas	temían
+Relation	T26	T14	NoRel	true	violentas	realizados
+Relation	T26	T18	NoRel	true	violentas	transferidos
+Relation	T26	T24	NoRel	true	violentas	dominan
+Relation	T26	T27	NoRel	true	violentas	dijo
+Relation	T26	T5	NoRel	true	violentas	creó
+Relation	T27	T12	NoRel	true	dijo	temían
+Relation	T27	T8	NoRel	true	dijo	visita
+Relation	T28	T22	NoRel	true	responder	creen
+Relation	T28	T23	NoRel	true	responder	violencia
+Relation	T28	T24	NoRel	true	responder	dominan
+Relation	T28	T27	NoRel	true	responder	dijo
+Relation	T28	T3	NoRel	true	responder	duró
+Relation	T3	T18	NoRel	true	duró	transferidos
+Relation	T3	T28	NoRel	true	duró	responder
+Relation	T5	T22	NoRel	true	creó	creen
+Relation	T6	T1	NoRel	true	reformar	contendían
+Relation	T6	T16	NoRel	true	reformar	tensión
+Relation	T6	T3	NoRel	true	reformar	duró
+Relation	T7	T18	NoRel	true	realizando	transferidos
+Relation	T7	T21	NoRel	true	realizando	incidentes
+Relation	T7	T23	NoRel	true	realizando	violencia
+Relation	T7	T3	NoRel	true	realizando	duró
+Relation	T7	T5	NoRel	true	realizando	creó
+Relation	T8	T14	NoRel	true	visita	realizados
+Relation	T8	T16	NoRel	true	visita	tensión
+Relation	T8	T18	NoRel	true	visita	transferidos
+Relation	T8	T24	NoRel	true	visita	dominan
+Relation	T8	T25	NoRel	true	visita	acceso
+Relation	T8	T3	NoRel	true	visita	duró
+Relation	T9	T12	NoRel	true	ocurrió	temían
+Relation	T9	T20	NoRel	true	ocurrió	serie
+Relation	T9	T21	NoRel	true	ocurrió	incidentes

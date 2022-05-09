@@ -1,0 +1,56 @@
+Text	One notable discrepancy was that although the planned cruising altitude was 2,000 feet , every position report transmitted by _ Star Tiger _ gave the height as 20,000 feet .	Since 20,000 feet was a more typical cruising altitude for this route , it is possible the crew forgot they were flying at only 2,000 feet and simply flew the aircraft into the sea during the descent phase .	The crew may have been fatigued after the long flight , and contemporary altimeters were prone to misreading of the thousand - foot level .	The aircraft was however also fitted with a radio altimeter .	Twice before on similar flights the _ Star Tiger _ had been forced to divert to Gander , Newfoundland and just two months previously another Tudor IV had found itself landing with less than of fuel left ; less than the amount by which the _ Star Tiger _ was overloaded .
+Event	T0	discrepancy	EVENT	12
+Event	T1	cruising	EVENT	54
+Event	T2	transmitted	EVENT	111
+Event	T3	gave	EVENT	141
+Event	T4	cruising	EVENT	211
+Event	T5	flying	EVENT	287
+Event	T6	flew	EVENT	324
+Event	T7	phase	EVENT	374
+Event	T8	fatigued	EVENT	405
+Event	T9	flight	EVENT	429
+Event	T10	misreading	EVENT	480
+Event	T11	fitted	EVENT	552
+Event	T12	flights	EVENT	608
+Event	T13	forced	EVENT	644
+Event	T14	divert	EVENT	654
+Event	T15	found	EVENT	738
+Event	T16	landing	EVENT	751
+Event	T17	left	EVENT	782
+Event	T18	overloaded	EVENT	842
+Relation	T0	T18	NoRel	true	discrepancy	overloaded
+Relation	T0	T2	NoRel	true	discrepancy	transmitted
+Relation	T0	T3	NoRel	true	discrepancy	gave
+Relation	T1	T4	NoRel	true	cruising	cruising
+Relation	T1	T9	NoRel	true	cruising	flight
+Relation	T10	T3	NoRel	true	misreading	gave
+Relation	T10	T6	NoRel	true	misreading	flew
+Relation	T10	T8	NoRel	true	misreading	fatigued
+Relation	T11	T10	NoRel	true	fitted	misreading
+Relation	T11	T14	NoRel	true	fitted	divert
+Relation	T11	T16	NoRel	true	fitted	landing
+Relation	T11	T3	NoRel	true	fitted	gave
+Relation	T12	T13	NoRel	true	flights	forced
+Relation	T12	T14	NoRel	true	flights	divert
+Relation	T13	T3	NoRel	true	forced	gave
+Relation	T15	T8	NoRel	true	found	fatigued
+Relation	T16	T1	NoRel	true	landing	cruising
+Relation	T16	T10	NoRel	true	landing	misreading
+Relation	T16	T12	NoRel	true	landing	flights
+Relation	T16	T6	NoRel	true	landing	flew
+Relation	T16	T9	NoRel	true	landing	flight
+Relation	T17	T18	NoRel	true	left	overloaded
+Relation	T2	T0	NoRel	true	transmitted	discrepancy
+Relation	T2	T11	NoRel	true	transmitted	fitted
+Relation	T2	T5	NoRel	true	transmitted	flying
+Relation	T2	T6	NoRel	true	transmitted	flew
+Relation	T4	T0	NoRel	true	cruising	discrepancy
+Relation	T4	T13	NoRel	true	cruising	forced
+Relation	T4	T3	NoRel	true	cruising	gave
+Relation	T5	T15	NoRel	true	flying	found
+Relation	T5	T16	NoRel	true	flying	landing
+Relation	T5	T8	NoRel	true	flying	fatigued
+Relation	T7	T12	NoRel	true	phase	flights
+Relation	T7	T16	NoRel	true	phase	landing
+Relation	T8	T1	NoRel	true	fatigued	cruising
+Relation	T9	T14	NoRel	true	flight	divert

@@ -1,0 +1,27 @@
+Text	جس میں قذافی اسٹیڈیم میں چاروں میچ ہونا تھے ، ١٤ ، ١٥ نومبر کو سیمی فائنل جبکہ فائنل ١٧ نومبر کو طے پایا .	لاہور کی فضائی آلودگی کے سبب میچوں کو کراچی نیشنل اسٹیڈیم منتقل کیا گیا جس میں کراچی نے لاہور کو ہرا کر ٹائٹل اپنے نام کر لیا .	-	16 مارچ 2020 تک سکھر میں کورونا وائرس کے متاثرین کی تعداد 100 کے قریب پہنچ گئی ۔	کراچی میں 26 اور حیدرآباد میں ایک مریض سامنے آیا ۔
+Event	T2	فائنل	EVENT	79
+Event	T4	آلودگی	EVENT	122
+Event	T5	میچوں	EVENT	136
+Event	T6	ہرا	EVENT	204
+Event	T10	میچ	EVENT	31
+Event	T11	سیمی فائنل	EVENT	63
+Event	T1	منتقل	EVENT	165
+Event	T3	کر	EVENT	226
+Event	T7	متاثرین	EVENT	278
+Event	T12	پہنچ	EVENT	307
+Event	T8	سامنے	EVENT	357
+Relation	T10	T11	SuperSub	true	میچ	سیمی فائنل
+Relation	T11	T10	SubSuper	true	سیمی فائنل	میچ
+Relation	T10	T2	SuperSub	true	میچ	فائنل
+Relation	T2	T10	SubSuper	true	فائنل	میچ
+Relation	T3	T6	SuperSub	true	کر	ہرا
+Relation	T6	T3	SubSuper	true	ہرا	کر
+Relation	T1	T11	NoRel	true	منتقل	سیمی فائنل
+Relation	T1	T7	NoRel	true	منتقل	متاثرین
+Relation	T10	T8	NoRel	true	میچ	سامنے
+Relation	T11	T1	NoRel	true	سیمی فائنل	منتقل
+Relation	T11	T7	NoRel	true	سیمی فائنل	متاثرین
+Relation	T12	T8	NoRel	true	پہنچ	سامنے
+Relation	T2	T4	NoRel	true	فائنل	آلودگی
+Relation	T3	T4	NoRel	true	کر	آلودگی
+Relation	T5	T8	NoRel	true	میچوں	سامنے

@@ -1,0 +1,47 @@
+Text	HISSÈNE HABRÉ ( Arapça : حسين حبري - [ hiˈsɛn_ˈhabre ] ) ya da bir diğer kullanımı ile HISSEN HABRÉ ; ( 13 Eylül 1942 - 24 Ağustos 2021 ) , Çadlı siyasetçi .	Habré , Afrika kıtasında bulunan Çad'da 1982 ile 1990 yılları arasında devlet başkanlığı makamında bulunmuştur .	İsyancı birlik _ Kuzey Birlikleri Ordusu _ ( Forces Armées du Nord ) lideri olan Habré , 1982 yılında gerçekleştirdiği darbe ile iktidara gelmiştir .	Libya ile yaşanan sorunda Fransa ve ABD kendisini desteklemiş ve eğitim , silah ve finansman sağlamıştır .	Fransa ve ABD'den gelen destekle Muammer Kaddafi önderliğindeki Libya'ya karşı üstünlük kuran Habré , Libya'nın işgal ettiği tüm kuzey bölgelerini işgalde kurtararak , 1987 yılında kazanılan Toyota Savaşı ile birlikte Libya'yı tamamen ülkeden çıkartmıştır .
+Event	T1	darbe	EVENT	390
+Event	T2	gelmiştir	EVENT	409
+Event	T4	desteklemiş	EVENT	471
+Event	T5	işgal	EVENT	640
+Event	T6	kurtararak	EVENT	683
+Event	T7	kazanılan	EVENT	709
+Event	T9	çıkartmıştır	EVENT	771
+Event	T10	bulunmuştur	EVENT	257
+Event	T11	sağlamıştır	EVENT	514
+Event	T3	sorunda	EVENT	439
+Event	T12	destekle	EVENT	552
+Event	T13	kuran	EVENT	616
+Event	T8	Toyota Savaşı	EVENT	719
+Relation	T1	T2	CauseEffect	true	darbe	gelmiştir
+Relation	T2	T1	EffectCause	true	gelmiştir	darbe
+Relation	T2	T10	CauseEffect	true	gelmiştir	bulunmuştur
+Relation	T10	T2	EffectCause	true	bulunmuştur	gelmiştir
+Relation	T3	T4	CauseEffect	true	sorunda	desteklemiş
+Relation	T4	T3	EffectCause	true	desteklemiş	sorunda
+Relation	T4	T11	CauseEffect	true	desteklemiş	sağlamıştır
+Relation	T11	T4	EffectCause	true	sağlamıştır	desteklemiş
+Relation	T11	T13	CauseEffect	true	sağlamıştır	kuran
+Relation	T13	T11	EffectCause	true	kuran	sağlamıştır
+Relation	T12	T13	CauseEffect	true	destekle	kuran
+Relation	T13	T12	EffectCause	true	kuran	destekle
+Relation	T5	T6	CauseEffect	true	işgal	kurtararak
+Relation	T6	T5	EffectCause	true	kurtararak	işgal
+Relation	T13	T6	CauseEffect	true	kuran	kurtararak
+Relation	T6	T13	EffectCause	true	kurtararak	kuran
+Relation	T8	T7	CauseEffect	true	Toyota Savaşı	kazanılan
+Relation	T7	T8	EffectCause	true	kazanılan	Toyota Savaşı
+Relation	T7	T9	CauseEffect	true	kazanılan	çıkartmıştır
+Relation	T9	T7	EffectCause	true	çıkartmıştır	kazanılan
+Relation	T1	T9	NoRel	true	darbe	çıkartmıştır
+Relation	T11	T1	NoRel	true	sağlamıştır	darbe
+Relation	T12	T1	NoRel	true	destekle	darbe
+Relation	T12	T2	NoRel	true	destekle	gelmiştir
+Relation	T12	T4	NoRel	true	destekle	desteklemiş
+Relation	T13	T1	NoRel	true	kuran	darbe
+Relation	T2	T4	NoRel	true	gelmiştir	desteklemiş
+Relation	T4	T10	NoRel	true	desteklemiş	bulunmuştur
+Relation	T5	T2	NoRel	true	işgal	gelmiştir
+Relation	T5	T9	NoRel	true	işgal	çıkartmıştır
+Relation	T7	T11	NoRel	true	kazanılan	sağlamıştır
+Relation	T7	T3	NoRel	true	kazanılan	sorunda
+Relation	T8	T11	NoRel	true	Toyota Savaşı	sağlamıştır

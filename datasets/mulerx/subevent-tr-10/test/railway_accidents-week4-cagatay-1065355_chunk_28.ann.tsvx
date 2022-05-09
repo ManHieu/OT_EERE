@@ -1,0 +1,22 @@
+Text	Olayı tüm okul sınıfı gördü ve olay İsveç ve Norveç TV sinde şiddetli bir şekilde bahsedildi .	- 5 Ekim , 2009 – Bir yolcu treni saat 04: 50 de yerel zamanla ( 21: 50 4 Ekim UTC ) Hua Hin’de raydan çıktı .	En az yedi kişi öldü ve düzinelercesi yaralandı .	Occurs during heavy rain .	- 21 Ekim , 2009 – 21 yolcu öldü ve yaklaşık 17 kişi yaralandı .
+Event	T0	gördü	EVENT	22
+Event	T1	olay	EVENT	31
+Event	T2	bahsedildi	EVENT	82
+Event	T3	çıktı	EVENT	198
+Event	T4	öldü	EVENT	222
+Event	T5	yaralandı	EVENT	244
+Event	T6	Occurs	EVENT	256
+Event	T7	rain	EVENT	276
+Event	T8	öldü	EVENT	311
+Event	T9	yaralandı	EVENT	336
+Event	T10	Olayı	EVENT	0
+Relation	T0	T9	NoRel	true	gördü	yaralandı
+Relation	T10	T3	NoRel	true	Olayı	çıktı
+Relation	T10	T8	NoRel	true	Olayı	öldü
+Relation	T10	T9	NoRel	true	Olayı	yaralandı
+Relation	T2	T6	NoRel	true	bahsedildi	Occurs
+Relation	T2	T8	NoRel	true	bahsedildi	öldü
+Relation	T5	T10	NoRel	true	yaralandı	Olayı
+Relation	T6	T10	NoRel	true	Occurs	Olayı
+Relation	T7	T10	NoRel	true	rain	Olayı
+Relation	T7	T8	NoRel	true	rain	öldü

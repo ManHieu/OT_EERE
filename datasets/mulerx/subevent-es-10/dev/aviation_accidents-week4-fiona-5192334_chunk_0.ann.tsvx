@@ -1,0 +1,25 @@
+Text	El ACCIDENTE DEL BELL 212 DE LA FUERZA AÉREA COLOMBIANA DE 2012 fue un accidente aéreo que tuvo lugar a las 16:30 horas del 30 de abril de 2012 .	El helicóptero siniestrado , un Bell 212 Rapaz perteneciente a la Fuerza Aérea Colombiana , había despegado del Aeropuerto Internacional Ernesto Cortissoz , en la ciudad de Barranquilla .	Su destino era el Aeropuerto Juan H. White , situado en la localidad de Caucasia , realizando un vuelo de transporte y traslado de personal para dar apoyo a la Fuerza de Tarea del Nudo Paramillo .	El siniestro se produjo en el durante el transcurso del vuelo , cuando súbitamente la aeronave se precipitó contra el suelo a las afueras de la localidad de Sabanagrande , en el Departamento de Atlántico , Colombia .	En el accidente fallecieron los 7 integrantes de la Fuerza Aérea Colombiana y los 6 miembros de la Policía Nacional Colombiana .
+Event	T0	ACCIDENTE	EVENT	3
+Event	T1	accidente	EVENT	71
+Event	T2	siniestrado	EVENT	161
+Event	T3	despegado	EVENT	244
+Event	T4	realizando	EVENT	417
+Event	T5	vuelo	EVENT	431
+Event	T6	traslado	EVENT	453
+Event	T7	produjo	EVENT	547
+Event	T9	vuelo	EVENT	587
+Event	T10	precipitó	EVENT	629
+Event	T11	fallecieron	EVENT	764
+Event	T12	siniestro	EVENT	534
+Relation	T10	T3	NoRel	true	precipitó	despegado
+Relation	T11	T10	NoRel	true	fallecieron	precipitó
+Relation	T2	T0	NoRel	true	siniestrado	ACCIDENTE
+Relation	T2	T1	NoRel	true	siniestrado	accidente
+Relation	T2	T11	NoRel	true	siniestrado	fallecieron
+Relation	T3	T11	NoRel	true	despegado	fallecieron
+Relation	T4	T5	NoRel	true	realizando	vuelo
+Relation	T5	T11	NoRel	true	vuelo	fallecieron
+Relation	T5	T6	NoRel	true	vuelo	traslado
+Relation	T6	T3	NoRel	true	traslado	despegado
+Relation	T6	T9	NoRel	true	traslado	vuelo
+Relation	T7	T3	NoRel	true	produjo	despegado

@@ -1,0 +1,44 @@
+Text	Yer titredi ve dört büyük deprem oldu , patlama akşam 20: 48_'da başladı .	15 km uzaklıkta , 09: 35'te kişiler tahliye edilmeye başlandı .	Lava Crater altında başlayan 500 m uzunluğunda çatlak açıldı ve lav çeşmeler ve diğer lav akıntıları oradan fışkırdı .	Patlama sırasında ortaya çıkan kül bulutları fırtınaya neden oldu .	Volkanın gökyüzü ve yeri siyah oldu bu siyah rüzgâr tarafından kuzeye nakledildi .
+Event	T0	titredi	EVENT	4
+Event	T1	oldu	EVENT	33
+Event	T2	patlama	EVENT	40
+Event	T3	başladı	EVENT	65
+Event	T4	başlandı	EVENT	128
+Event	T5	başlayan	EVENT	159
+Event	T6	açıldı	EVENT	193
+Event	T7	fışkırdı	EVENT	247
+Event	T8	Patlama	EVENT	258
+Event	T10	nakledildi	EVENT	396
+Event	T11	deprem	EVENT	26
+Event	T12	oldu	EVENT	319
+Event	T9	rüzgâr	EVENT	371
+Event	T13	oldu	EVENT	357
+Relation	T2	T4	SuperSub	true	patlama	başlandı
+Relation	T4	T2	SubSuper	true	başlandı	patlama
+Relation	T2	T6	SuperSub	true	patlama	açıldı
+Relation	T6	T2	SubSuper	true	açıldı	patlama
+Relation	T2	T11	SuperSub	true	patlama	deprem
+Relation	T11	T2	SubSuper	true	deprem	patlama
+Relation	T2	T0	SuperSub	true	patlama	titredi
+Relation	T0	T2	SubSuper	true	titredi	patlama
+Relation	T2	T12	SuperSub	true	patlama	oldu
+Relation	T12	T2	SubSuper	true	oldu	patlama
+Relation	T0	T10	NoRel	true	titredi	nakledildi
+Relation	T0	T8	NoRel	true	titredi	Patlama
+Relation	T10	T1	NoRel	true	nakledildi	oldu
+Relation	T10	T11	NoRel	true	nakledildi	deprem
+Relation	T10	T12	NoRel	true	nakledildi	oldu
+Relation	T10	T2	NoRel	true	nakledildi	patlama
+Relation	T10	T3	NoRel	true	nakledildi	başladı
+Relation	T10	T7	NoRel	true	nakledildi	fışkırdı
+Relation	T11	T1	NoRel	true	deprem	oldu
+Relation	T11	T12	NoRel	true	deprem	oldu
+Relation	T11	T13	NoRel	true	deprem	oldu
+Relation	T13	T0	NoRel	true	oldu	titredi
+Relation	T13	T4	NoRel	true	oldu	başlandı
+Relation	T3	T5	NoRel	true	başladı	başlayan
+Relation	T5	T11	NoRel	true	başlayan	deprem
+Relation	T5	T12	NoRel	true	başlayan	oldu
+Relation	T6	T11	NoRel	true	açıldı	deprem
+Relation	T9	T13	NoRel	true	rüzgâr	oldu
+Relation	T9	T3	NoRel	true	rüzgâr	başladı

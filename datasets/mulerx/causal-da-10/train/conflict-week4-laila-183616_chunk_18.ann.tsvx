@@ -1,0 +1,49 @@
+Text	Slaget i Hafrsfjord affødte dermed to idéer , nemlig opfatningen af Norge som en nation , og skabelsen af dens historie .	Haralds kamp for et samlet rige dannede grundlaget for en helt unik historieskrivning i international sammenhæng .	Selv var han mest optaget af , at han omsider kunne få sit hår redt og klippet .	Angiveligt havde han aflagt ed til Ragnvald Mørejarl på at lade det være ukæmmet og uklippet i ti år , til han havde samlet riget .	Det var også Ragnvald Mørejarl , der fik æren af at klippe det .
+Event	T0	Slaget	EVENT	0
+Event	T1	affødte	EVENT	20
+Event	T2	skabelsen	EVENT	93
+Event	T3	kamp	EVENT	130
+Event	T4	dannede	EVENT	154
+Event	T5	historieskrivning	EVENT	190
+Event	T6	optaget	EVENT	255
+Event	T7	redt	EVENT	300
+Event	T8	klippet	EVENT	308
+Event	T9	ed	EVENT	346
+Event	T10	lade	EVENT	377
+Event	T11	uklippet	EVENT	402
+Event	T12	klippe	EVENT	502
+Event	T13	opfatningen	EVENT	53
+Event	T14	rige	EVENT	149
+Event	T15	samlet	EVENT	435
+Relation	T0	T13	CauseEffect	true	Slaget	opfatningen
+Relation	T13	T0	EffectCause	true	opfatningen	Slaget
+Relation	T0	T2	CauseEffect	true	Slaget	skabelsen
+Relation	T2	T0	EffectCause	true	skabelsen	Slaget
+Relation	T3	T4	CauseEffect	true	kamp	dannede
+Relation	T4	T3	EffectCause	true	dannede	kamp
+Relation	T9	T11	CauseEffect	true	ed	uklippet
+Relation	T11	T9	EffectCause	true	uklippet	ed
+Relation	T11	T6	CauseEffect	true	uklippet	optaget
+Relation	T6	T11	EffectCause	true	optaget	uklippet
+Relation	T0	T4	NoRel	true	Slaget	dannede
+Relation	T1	T14	NoRel	true	affødte	rige
+Relation	T1	T6	NoRel	true	affødte	optaget
+Relation	T10	T9	NoRel	true	lade	ed
+Relation	T12	T1	NoRel	true	klippe	affødte
+Relation	T13	T5	NoRel	true	opfatningen	historieskrivning
+Relation	T14	T0	NoRel	true	rige	Slaget
+Relation	T14	T11	NoRel	true	rige	uklippet
+Relation	T15	T10	NoRel	true	samlet	lade
+Relation	T2	T3	NoRel	true	skabelsen	kamp
+Relation	T3	T1	NoRel	true	kamp	affødte
+Relation	T3	T14	NoRel	true	kamp	rige
+Relation	T3	T6	NoRel	true	kamp	optaget
+Relation	T4	T13	NoRel	true	dannede	opfatningen
+Relation	T4	T2	NoRel	true	dannede	skabelsen
+Relation	T5	T12	NoRel	true	historieskrivning	klippe
+Relation	T7	T1	NoRel	true	redt	affødte
+Relation	T7	T14	NoRel	true	redt	rige
+Relation	T8	T0	NoRel	true	klippet	Slaget
+Relation	T8	T7	NoRel	true	klippet	redt
+Relation	T9	T1	NoRel	true	ed	affødte
+Relation	T9	T14	NoRel	true	ed	rige

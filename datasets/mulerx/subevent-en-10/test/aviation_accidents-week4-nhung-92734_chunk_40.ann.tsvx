@@ -1,0 +1,34 @@
+Text	The full load of fuel , which had caused the earlier delay , ignited immediately into a fireball that could not be subdued for several hours .	One of the 61 survivors of the Pan Am flight said that sitting in the nose of the plane probably saved his life : " We all settled back , and the next thing an explosion took place and the whole port side , left side of the plane , was just torn wide open . "	Captain Veldhuyzen van Zanten was KLM 's chief of flight training and one of their most senior pilots .	About two months before the accident , he had conducted the Boeing 747 qualification check on the co-pilot of Flight 4805 .	His photograph was used for publicity materials such as magazine advertisements , including the inflight magazine on board PH - BUF .
+Event	T0	caused	EVENT	34
+Event	T1	delay	EVENT	53
+Event	T2	ignited	EVENT	61
+Event	T3	subdued	EVENT	115
+Event	T4	said	EVENT	188
+Event	T5	sitting	EVENT	198
+Event	T6	saved	EVENT	240
+Event	T7	torn	EVENT	384
+Event	T8	accident	EVENT	535
+Event	T9	conducted	EVENT	553
+Event	T10	used	EVENT	650
+Event	T11	load	EVENT	9
+Event	T12	settled	EVENT	266
+Event	T13	explosion	EVENT	303
+Event	T14	training	EVENT	460
+Event	T15	check	EVENT	592
+Relation	T9	T8	SuperSub	true	conducted	accident
+Relation	T8	T9	SubSuper	true	accident	conducted
+Relation	T10	T8	NoRel	true	used	accident
+Relation	T11	T0	NoRel	true	load	caused
+Relation	T11	T10	NoRel	true	load	used
+Relation	T11	T15	NoRel	true	load	check
+Relation	T12	T10	NoRel	true	settled	used
+Relation	T12	T4	NoRel	true	settled	said
+Relation	T13	T4	NoRel	true	explosion	said
+Relation	T15	T12	NoRel	true	check	settled
+Relation	T2	T10	NoRel	true	ignited	used
+Relation	T2	T9	NoRel	true	ignited	conducted
+Relation	T4	T15	NoRel	true	said	check
+Relation	T4	T6	NoRel	true	said	saved
+Relation	T5	T11	NoRel	true	sitting	load
+Relation	T7	T1	NoRel	true	torn	delay
+Relation	T9	T15	NoRel	true	conducted	check

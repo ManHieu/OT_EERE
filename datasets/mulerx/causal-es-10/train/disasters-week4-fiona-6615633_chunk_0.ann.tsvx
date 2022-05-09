@@ -1,0 +1,115 @@
+Text	La ESTAMPIDA DEL CARNAVAL DE HAITÍ DE 2015 fue un desastre que ocurrió en Puerto Príncipe , Haití , el 17 de febrero de 2015 , causando la muerte de 18 personas durante las celebraciones de los carnavales .	El incidente tuvo el lugar en Champ de Mars , un barrio de Puerto Príncipe , donde una multitud estimada en alrededor de 10.000 personas , cuando pasaba la carroza del desfile de carnaval por la cual hizo contacto con un cable de alta tensión provocó una electrocución y posterior a la estampida para salvar las vidas de las asistentes al desfile .	El gobierno haitiano reaccionó y condenó como la peor tragedia en celebración , por la parte el presidente Michel Martelly envió su mensaje a las víctimas y heridos por el desastre .	Mientras la compañía eléctrica lamentó el suceso y dispuso a ayudar a los gastos funerales de las víctimas	Categoría : Desastres en 2015 Categoría : Haití en 2015 Categoría : Estampidas humanas Categoría : Historia de Puerto Príncipe
+Event	T0	ESTAMPIDA	EVENT	3
+Event	T1	CARNAVAL	EVENT	17
+Event	T2	desastre	EVENT	50
+Event	T3	ocurrió	EVENT	63
+Event	T4	causando	EVENT	127
+Event	T5	muerte	EVENT	139
+Event	T6	celebraciones	EVENT	173
+Event	T7	tuvo	EVENT	220
+Event	T8	pasaba	EVENT	353
+Event	T9	desfile	EVENT	375
+Event	T10	contacto	EVENT	412
+Event	T11	provocó	EVENT	450
+Event	T12	electrocución	EVENT	462
+Event	T13	posterior	EVENT	478
+Event	T14	estampida	EVENT	493
+Event	T15	salvar	EVENT	508
+Event	T16	desfile	EVENT	546
+Event	T17	reaccionó	EVENT	577
+Event	T18	condenó	EVENT	589
+Event	T19	tragedia	EVENT	610
+Event	T20	celebración	EVENT	622
+Event	T21	mensaje	EVENT	688
+Event	T22	heridos	EVENT	713
+Event	T23	desastre	EVENT	728
+Event	T24	lamentó	EVENT	770
+Event	T25	suceso	EVENT	781
+Event	T26	dispuso	EVENT	790
+Event	T27	ayudar	EVENT	800
+Event	T28	funerales	EVENT	820
+Event	T29	Desastres	EVENT	858
+Event	T30	Estampidas	EVENT	914
+Relation	T10	T12	CauseEffect	true	contacto	electrocución
+Relation	T12	T10	EffectCause	true	electrocución	contacto
+Relation	T12	T14	CauseEffect	true	electrocución	estampida
+Relation	T14	T12	EffectCause	true	estampida	electrocución
+Relation	T14	T5	CauseEffect	true	estampida	muerte
+Relation	T5	T14	EffectCause	true	muerte	estampida
+Relation	T0	T29	NoRel	true	ESTAMPIDA	Desastres
+Relation	T1	T16	NoRel	true	CARNAVAL	desfile
+Relation	T1	T9	NoRel	true	CARNAVAL	desfile
+Relation	T10	T20	NoRel	true	contacto	celebración
+Relation	T10	T28	NoRel	true	contacto	funerales
+Relation	T11	T22	NoRel	true	provocó	heridos
+Relation	T11	T3	NoRel	true	provocó	ocurrió
+Relation	T12	T17	NoRel	true	electrocución	reaccionó
+Relation	T12	T23	NoRel	true	electrocución	desastre
+Relation	T12	T30	NoRel	true	electrocución	Estampidas
+Relation	T13	T12	NoRel	true	posterior	electrocución
+Relation	T13	T14	NoRel	true	posterior	estampida
+Relation	T14	T11	NoRel	true	estampida	provocó
+Relation	T14	T13	NoRel	true	estampida	posterior
+Relation	T14	T28	NoRel	true	estampida	funerales
+Relation	T14	T7	NoRel	true	estampida	tuvo
+Relation	T15	T1	NoRel	true	salvar	CARNAVAL
+Relation	T15	T19	NoRel	true	salvar	tragedia
+Relation	T15	T23	NoRel	true	salvar	desastre
+Relation	T15	T27	NoRel	true	salvar	ayudar
+Relation	T16	T14	NoRel	true	desfile	estampida
+Relation	T16	T18	NoRel	true	desfile	condenó
+Relation	T16	T28	NoRel	true	desfile	funerales
+Relation	T17	T30	NoRel	true	reaccionó	Estampidas
+Relation	T18	T25	NoRel	true	condenó	suceso
+Relation	T18	T27	NoRel	true	condenó	ayudar
+Relation	T19	T0	NoRel	true	tragedia	ESTAMPIDA
+Relation	T19	T22	NoRel	true	tragedia	heridos
+Relation	T19	T5	NoRel	true	tragedia	muerte
+Relation	T2	T14	NoRel	true	desastre	estampida
+Relation	T2	T29	NoRel	true	desastre	Desastres
+Relation	T2	T7	NoRel	true	desastre	tuvo
+Relation	T20	T15	NoRel	true	celebración	salvar
+Relation	T20	T22	NoRel	true	celebración	heridos
+Relation	T20	T23	NoRel	true	celebración	desastre
+Relation	T21	T1	NoRel	true	mensaje	CARNAVAL
+Relation	T21	T7	NoRel	true	mensaje	tuvo
+Relation	T22	T28	NoRel	true	heridos	funerales
+Relation	T22	T3	NoRel	true	heridos	ocurrió
+Relation	T23	T13	NoRel	true	desastre	posterior
+Relation	T23	T24	NoRel	true	desastre	lamentó
+Relation	T23	T7	NoRel	true	desastre	tuvo
+Relation	T24	T1	NoRel	true	lamentó	CARNAVAL
+Relation	T25	T13	NoRel	true	suceso	posterior
+Relation	T25	T17	NoRel	true	suceso	reaccionó
+Relation	T25	T9	NoRel	true	suceso	desfile
+Relation	T26	T25	NoRel	true	dispuso	suceso
+Relation	T26	T30	NoRel	true	dispuso	Estampidas
+Relation	T26	T9	NoRel	true	dispuso	desfile
+Relation	T28	T14	NoRel	true	funerales	estampida
+Relation	T29	T10	NoRel	true	Desastres	contacto
+Relation	T29	T19	NoRel	true	Desastres	tragedia
+Relation	T3	T0	NoRel	true	ocurrió	ESTAMPIDA
+Relation	T3	T14	NoRel	true	ocurrió	estampida
+Relation	T3	T18	NoRel	true	ocurrió	condenó
+Relation	T3	T22	NoRel	true	ocurrió	heridos
+Relation	T3	T29	NoRel	true	ocurrió	Desastres
+Relation	T30	T14	NoRel	true	Estampidas	estampida
+Relation	T4	T27	NoRel	true	causando	ayudar
+Relation	T4	T8	NoRel	true	causando	pasaba
+Relation	T5	T16	NoRel	true	muerte	desfile
+Relation	T5	T3	NoRel	true	muerte	ocurrió
+Relation	T5	T30	NoRel	true	muerte	Estampidas
+Relation	T5	T4	NoRel	true	muerte	causando
+Relation	T6	T23	NoRel	true	celebraciones	desastre
+Relation	T7	T18	NoRel	true	tuvo	condenó
+Relation	T7	T28	NoRel	true	tuvo	funerales
+Relation	T7	T4	NoRel	true	tuvo	causando
+Relation	T8	T18	NoRel	true	pasaba	condenó
+Relation	T8	T19	NoRel	true	pasaba	tragedia
+Relation	T8	T28	NoRel	true	pasaba	funerales
+Relation	T8	T29	NoRel	true	pasaba	Desastres
+Relation	T9	T12	NoRel	true	desfile	electrocución
+Relation	T9	T15	NoRel	true	desfile	salvar
+Relation	T9	T18	NoRel	true	desfile	condenó
+Relation	T9	T23	NoRel	true	desfile	desastre
+Relation	T9	T4	NoRel	true	desfile	causando

@@ -1,0 +1,30 @@
+Text	- 7 Haziran , 1951 - Nova Iguacu hemzemin geçiti felaketi — Ev ile iş arası çalışan bir tren benzin taşıyan bir kamyona çarptı ; en az elli dört kişi öldü .	.	- 24 Ocak , 2009 – Toronto , Wallace Caddesi’nde bir tren boş bir polis telsizli devriye arabasıyla kavşağın soltarafında çarpıştı .	- 25 Ocak , 2009 – Kebek eyaleti Vanier_‘de bir adam arabası ile son iki hemzemin geçitten birinde bir tren ile çarpıştı ve adam öldü .	- 23 Aralık , 1988 - Qinghemen hemzemin geçidi felaketi – Bir yerel otobüs , Shenyang’da bir yolcu treniyle çarpıştı , en az kırk altı ölü ve altmış üç yaralı .
+Event	T0	felaketi	EVENT	49
+Event	T1	çarptı	EVENT	120
+Event	T2	öldü	EVENT	150
+Event	T3	çarpıştı	EVENT	281
+Event	T4	çarpıştı	EVENT	404
+Event	T5	öldü	EVENT	421
+Event	T6	felaketi	EVENT	475
+Event	T7	çarpıştı	EVENT	536
+Event	T8	ölü	EVENT	563
+Event	T9	yaralı	EVENT	580
+Event	T10	taşıyan	EVENT	100
+Event	T11	çalışan	EVENT	76
+Relation	T0	T5	NoRel	true	felaketi	öldü
+Relation	T0	T9	NoRel	true	felaketi	yaralı
+Relation	T1	T2	NoRel	true	çarptı	öldü
+Relation	T11	T0	NoRel	true	çalışan	felaketi
+Relation	T11	T5	NoRel	true	çalışan	öldü
+Relation	T2	T1	NoRel	true	öldü	çarptı
+Relation	T2	T10	NoRel	true	öldü	taşıyan
+Relation	T2	T3	NoRel	true	öldü	çarpıştı
+Relation	T2	T9	NoRel	true	öldü	yaralı
+Relation	T4	T8	NoRel	true	çarpıştı	ölü
+Relation	T5	T11	NoRel	true	öldü	çalışan
+Relation	T6	T0	NoRel	true	felaketi	felaketi
+Relation	T6	T7	NoRel	true	felaketi	çarpıştı
+Relation	T6	T9	NoRel	true	felaketi	yaralı
+Relation	T7	T3	NoRel	true	çarpıştı	çarpıştı
+Relation	T7	T9	NoRel	true	çarpıştı	yaralı
+Relation	T9	T10	NoRel	true	yaralı	taşıyan

@@ -1,0 +1,62 @@
+Text	La BEA emitió más de 20 recomendaciones en respuesta al accidente , en varios de ellos observó en los accidentes de aviación pasadas , incluyendo Vuelo 708 de West Caribbean , vuelo 447 de Air France , y un grave incidente a bordo del vuelo 970 de Spirit Airlines .	Algunas de las recomendaciones basadas en operaciones de búsqueda y rescate , CVR y recomendación " urgente " a la FAA sobre la formación de hielo en aeronave	- — El Gobierno burkinés anunció un duelo de 48 horas a partir del 25 de julio .	- — Luego de anunciarse que los canadienses fallecidos en el vuelo 5017 eran una mujer y una familia de cuatro miembros de Quebec , el primer ministro Stephen Harper envió un comunicado de condolencias y ofreció ayuda a las autoridades de los países africanos .	- — El presidente del Gobierno , Mariano Rajoy , trasladó el día 25 sus « más sentidas condolencias » a las familias y amigos de todas las personas que fallecieron en el vuelo .
+Event	T0	emitió	EVENT	7
+Event	T1	recomendaciones	EVENT	24
+Event	T2	accidente	EVENT	56
+Event	T3	observó	EVENT	87
+Event	T4	accidentes	EVENT	102
+Event	T5	incidente	EVENT	213
+Event	T6	vuelo	EVENT	235
+Event	T7	basadas	EVENT	297
+Event	T8	operaciones	EVENT	308
+Event	T10	rescate	EVENT	334
+Event	T11	recomendación	EVENT	350
+Event	T13	anunció	EVENT	450
+Event	T14	duelo	EVENT	461
+Event	T15	anunciarse	EVENT	519
+Event	T16	fallecidos	EVENT	550
+Event	T17	vuelo	EVENT	567
+Event	T18	comunicado	EVENT	681
+Event	T19	condolencias	EVENT	695
+Event	T20	ayuda	EVENT	718
+Event	T21	fallecieron	EVENT	920
+Event	T22	vuelo	EVENT	938
+Relation	T1	T10	NoRel	true	recomendaciones	rescate
+Relation	T1	T17	NoRel	true	recomendaciones	vuelo
+Relation	T1	T4	NoRel	true	recomendaciones	accidentes
+Relation	T10	T14	NoRel	true	rescate	duelo
+Relation	T11	T21	NoRel	true	recomendación	fallecieron
+Relation	T11	T7	NoRel	true	recomendación	basadas
+Relation	T13	T11	NoRel	true	anunció	recomendación
+Relation	T13	T21	NoRel	true	anunció	fallecieron
+Relation	T14	T22	NoRel	true	duelo	vuelo
+Relation	T14	T7	NoRel	true	duelo	basadas
+Relation	T15	T20	NoRel	true	anunciarse	ayuda
+Relation	T16	T18	NoRel	true	fallecidos	comunicado
+Relation	T16	T19	NoRel	true	fallecidos	condolencias
+Relation	T17	T20	NoRel	true	vuelo	ayuda
+Relation	T17	T21	NoRel	true	vuelo	fallecieron
+Relation	T17	T22	NoRel	true	vuelo	vuelo
+Relation	T17	T5	NoRel	true	vuelo	incidente
+Relation	T19	T22	NoRel	true	condolencias	vuelo
+Relation	T19	T5	NoRel	true	condolencias	incidente
+Relation	T19	T8	NoRel	true	condolencias	operaciones
+Relation	T21	T1	NoRel	true	fallecieron	recomendaciones
+Relation	T21	T10	NoRel	true	fallecieron	rescate
+Relation	T21	T13	NoRel	true	fallecieron	anunció
+Relation	T22	T10	NoRel	true	vuelo	rescate
+Relation	T22	T14	NoRel	true	vuelo	duelo
+Relation	T22	T21	NoRel	true	vuelo	fallecieron
+Relation	T22	T8	NoRel	true	vuelo	operaciones
+Relation	T3	T14	NoRel	true	observó	duelo
+Relation	T4	T1	NoRel	true	accidentes	recomendaciones
+Relation	T4	T13	NoRel	true	accidentes	anunció
+Relation	T4	T15	NoRel	true	accidentes	anunciarse
+Relation	T4	T20	NoRel	true	accidentes	ayuda
+Relation	T5	T6	NoRel	true	incidente	vuelo
+Relation	T6	T5	NoRel	true	vuelo	incidente
+Relation	T7	T15	NoRel	true	basadas	anunciarse
+Relation	T7	T18	NoRel	true	basadas	comunicado
+Relation	T7	T3	NoRel	true	basadas	observó
+Relation	T8	T0	NoRel	true	operaciones	emitió
+Relation	T8	T5	NoRel	true	operaciones	incidente
+Relation	T8	T7	NoRel	true	operaciones	basadas

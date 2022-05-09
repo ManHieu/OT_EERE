@@ -1,0 +1,34 @@
+Text	En " underfaldsmølle " eller " strømmølle " er en vandmølle , hvor vandstrømmen kun skubber hjulskovlene .	Udnyttelsesgraden af vandkraften er kun 20-30 % .	Strømhjul anvendes kun , hvis opstemning af vand er umulig , det vil sige i fladt terræn .	Underfaldshjul anvendes i Danmark altid , hvis faldet er under 1,5 m .	En " overfaldsmølle " er en vandmølle , hvor vandet ledes i en vandrende ind over hjulet til lidt forbi dets højeste punkt og her falder ned på skovlene , der fyldes med vandet .
+Event	T0	skubber	EVENT	84
+Event	T1	anvendes	EVENT	167
+Event	T2	opstemning	EVENT	187
+Event	T3	anvendes	EVENT	263
+Event	T4	faldet	EVENT	295
+Event	T5	ledes	EVENT	371
+Event	T6	fyldes	EVENT	478
+Event	T7	fladt	EVENT	233
+Event	T8	under	EVENT	305
+Event	T9	Udnyttelsesgraden	EVENT	107
+Event	T10	falder	EVENT	449
+Relation	T7	T1	CauseEffect	true	fladt	anvendes
+Relation	T1	T7	EffectCause	true	anvendes	fladt
+Relation	T10	T6	CauseEffect	true	falder	fyldes
+Relation	T6	T10	EffectCause	true	fyldes	falder
+Relation	T1	T2	NoRel	true	anvendes	opstemning
+Relation	T10	T1	NoRel	true	falder	anvendes
+Relation	T10	T3	NoRel	true	falder	anvendes
+Relation	T2	T1	NoRel	true	opstemning	anvendes
+Relation	T3	T5	NoRel	true	anvendes	ledes
+Relation	T3	T6	NoRel	true	anvendes	fyldes
+Relation	T3	T9	NoRel	true	anvendes	Udnyttelsesgraden
+Relation	T5	T1	NoRel	true	ledes	anvendes
+Relation	T6	T2	NoRel	true	fyldes	opstemning
+Relation	T6	T3	NoRel	true	fyldes	anvendes
+Relation	T7	T4	NoRel	true	fladt	faldet
+Relation	T7	T6	NoRel	true	fladt	fyldes
+Relation	T7	T8	NoRel	true	fladt	under
+Relation	T7	T9	NoRel	true	fladt	Udnyttelsesgraden
+Relation	T8	T2	NoRel	true	under	opstemning
+Relation	T9	T4	NoRel	true	Udnyttelsesgraden	faldet
+Relation	T9	T6	NoRel	true	Udnyttelsesgraden	fyldes
+Relation	T9	T8	NoRel	true	Udnyttelsesgraden	under

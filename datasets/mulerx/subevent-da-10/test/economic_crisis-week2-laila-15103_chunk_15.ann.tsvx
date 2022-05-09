@@ -1,0 +1,20 @@
+Text	Den ældste kendte er Perachora i Grækenland , der dateres til ca. 300 f.Kr.	I et græsk epigram af digteren Antipater fra Thessaloniki fra omkring 85 f.Kr. siges til slavinderne , der har arbejdet med mølleri , at de kan holde op med det , for Demeter har befalet nymferne at overtage arbejdet .	Den græske geograf Strabo skriver som en af de første om en vandmølle i forbindelse med kongen af Pontos' palads .	Der var ingen gear i de tidligste møller , men romerske ingeniører byggede vandmøller med gearing , og den romerske arkitekt og ingeniør Vitruvius beskriver disse typer .	Vandmøllerne bredte sig fra Romerriget til det øvrige Europa i den tidlige middelalder , og især munkene var med til at udbrede kendskabet til denne teknologi , der kom til Norden i 1100–tallet .
+Event	T1	dateres	EVENT	50
+Event	T10	kom	EVENT	746
+Event	T2	siges	EVENT	155
+Event	T3	arbejdet	EVENT	187
+Event	T4	befalet	EVENT	255
+Event	T6	skriver	EVENT	321
+Event	T7	byggede	EVENT	477
+Event	T8	beskriver	EVENT	557
+Relation	T7	T8	SuperSub	true	byggede	beskriver
+Relation	T8	T7	SubSuper	true	beskriver	byggede
+Relation	T3	T4	SuperSub	true	arbejdet	befalet
+Relation	T4	T3	SubSuper	true	befalet	arbejdet
+Relation	T2	T1	NoRel	true	siges	dateres
+Relation	T2	T4	NoRel	true	siges	befalet
+Relation	T2	T8	NoRel	true	siges	beskriver
+Relation	T6	T10	NoRel	true	skriver	kom
+Relation	T6	T8	NoRel	true	skriver	beskriver
+Relation	T8	T1	NoRel	true	beskriver	dateres
+Relation	T8	T3	NoRel	true	beskriver	arbejdet

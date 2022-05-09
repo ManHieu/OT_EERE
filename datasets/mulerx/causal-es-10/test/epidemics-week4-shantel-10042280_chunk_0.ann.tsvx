@@ -1,0 +1,114 @@
+Text	_ BO BURNHAM : INSIDE _ es un especial estadounidense estrenado en Netflix el 30 de mayo de 2021 y en el cine el 22 de julio en los Estados Unidos dirigido , escrito , editado , filmado , musicalizado y protagonizado por Bo Burnham y producido por Josh Mayor grabado en su departamento ubicado en Los Ángeles durante la Pandemia de COVID-19 .	En el transcurso del especial , Bo presenta una variedad de canciones hablando sobre distintos temas , algunos sobre su vida y preocupaciones durante la pandemia ; También nos describe como su salud mental está en deterioro y la relación que tiene con su audiencia .	Otros segmentos tratan sobre hábitos cotidianos de internet , como llamar a su madre en FaceTime , tomar fotos para Instagram , Sexteo y transmisión de juegos .	Continúa a su pasado especial _ Make Happy _ ( 2016 ) , un stand-up estrenado de forma exclusiva en Netflix en el cual Bo burla y bromea con cosas de todo tipo como la música country , la anchura de las latas de Pringles , su propio público , entre otras cosas .	_ Inside _ tuvo un álbum de las canciones utilizadas en el especial , _ Inside ( The Songs ) _ , que fue lanzado digitalmente el 10 de junio de 2021 .
+Event	T0	estrenado	EVENT	54
+Event	T1	dirigido	EVENT	147
+Event	T2	escrito	EVENT	158
+Event	T3	editado	EVENT	168
+Event	T4	filmado	EVENT	178
+Event	T5	musicalizado	EVENT	188
+Event	T6	protagonizado	EVENT	203
+Event	T7	producido	EVENT	234
+Event	T8	grabado	EVENT	259
+Event	T9	Pandemia	EVENT	320
+Event	T10	transcurso	EVENT	349
+Event	T11	presenta	EVENT	378
+Event	T12	hablando	EVENT	413
+Event	T13	preocupaciones	EVENT	470
+Event	T14	pandemia	EVENT	496
+Event	T15	describe	EVENT	519
+Event	T16	tratan	EVENT	626
+Event	T17	llamar	EVENT	677
+Event	T18	tomar	EVENT	709
+Event	T19	transmisión	EVENT	747
+Event	T20	juegos	EVENT	762
+Event	T21	especial	EVENT	792
+Event	T22	estrenado	EVENT	839
+Event	T23	burla	EVENT	893
+Event	T24	bromea	EVENT	901
+Event	T25	tuvo	EVENT	1045
+Event	T26	utilizadas	EVENT	1076
+Event	T27	lanzado	EVENT	1139
+Event	T28	especial	EVENT	30
+Relation	T8	T28	CauseEffect	true	grabado	especial
+Relation	T28	T8	EffectCause	true	especial	grabado
+Relation	T7	T28	CauseEffect	true	producido	especial
+Relation	T28	T7	EffectCause	true	especial	producido
+Relation	T0	T11	NoRel	true	estrenado	presenta
+Relation	T0	T7	NoRel	true	estrenado	producido
+Relation	T1	T7	NoRel	true	dirigido	producido
+Relation	T10	T11	NoRel	true	transcurso	presenta
+Relation	T10	T14	NoRel	true	transcurso	pandemia
+Relation	T10	T25	NoRel	true	transcurso	tuvo
+Relation	T10	T26	NoRel	true	transcurso	utilizadas
+Relation	T11	T18	NoRel	true	presenta	tomar
+Relation	T11	T21	NoRel	true	presenta	especial
+Relation	T11	T26	NoRel	true	presenta	utilizadas
+Relation	T11	T8	NoRel	true	presenta	grabado
+Relation	T12	T0	NoRel	true	hablando	estrenado
+Relation	T12	T3	NoRel	true	hablando	editado
+Relation	T12	T7	NoRel	true	hablando	producido
+Relation	T13	T1	NoRel	true	preocupaciones	dirigido
+Relation	T13	T15	NoRel	true	preocupaciones	describe
+Relation	T13	T18	NoRel	true	preocupaciones	tomar
+Relation	T13	T19	NoRel	true	preocupaciones	transmisión
+Relation	T13	T2	NoRel	true	preocupaciones	escrito
+Relation	T13	T26	NoRel	true	preocupaciones	utilizadas
+Relation	T14	T1	NoRel	true	pandemia	dirigido
+Relation	T14	T8	NoRel	true	pandemia	grabado
+Relation	T15	T2	NoRel	true	describe	escrito
+Relation	T15	T7	NoRel	true	describe	producido
+Relation	T16	T13	NoRel	true	tratan	preocupaciones
+Relation	T16	T27	NoRel	true	tratan	lanzado
+Relation	T17	T12	NoRel	true	llamar	hablando
+Relation	T17	T24	NoRel	true	llamar	bromea
+Relation	T17	T25	NoRel	true	llamar	tuvo
+Relation	T17	T9	NoRel	true	llamar	Pandemia
+Relation	T18	T10	NoRel	true	tomar	transcurso
+Relation	T18	T28	NoRel	true	tomar	especial
+Relation	T18	T5	NoRel	true	tomar	musicalizado
+Relation	T19	T18	NoRel	true	transmisión	tomar
+Relation	T19	T2	NoRel	true	transmisión	escrito
+Relation	T19	T26	NoRel	true	transmisión	utilizadas
+Relation	T19	T8	NoRel	true	transmisión	grabado
+Relation	T2	T12	NoRel	true	escrito	hablando
+Relation	T2	T20	NoRel	true	escrito	juegos
+Relation	T2	T26	NoRel	true	escrito	utilizadas
+Relation	T2	T28	NoRel	true	escrito	especial
+Relation	T20	T22	NoRel	true	juegos	estrenado
+Relation	T21	T0	NoRel	true	especial	estrenado
+Relation	T21	T2	NoRel	true	especial	escrito
+Relation	T21	T22	NoRel	true	especial	estrenado
+Relation	T21	T8	NoRel	true	especial	grabado
+Relation	T22	T6	NoRel	true	estrenado	protagonizado
+Relation	T23	T5	NoRel	true	burla	musicalizado
+Relation	T23	T6	NoRel	true	burla	protagonizado
+Relation	T24	T4	NoRel	true	bromea	filmado
+Relation	T25	T0	NoRel	true	tuvo	estrenado
+Relation	T25	T17	NoRel	true	tuvo	llamar
+Relation	T25	T20	NoRel	true	tuvo	juegos
+Relation	T25	T23	NoRel	true	tuvo	burla
+Relation	T26	T0	NoRel	true	utilizadas	estrenado
+Relation	T26	T3	NoRel	true	utilizadas	editado
+Relation	T27	T15	NoRel	true	lanzado	describe
+Relation	T27	T16	NoRel	true	lanzado	tratan
+Relation	T27	T17	NoRel	true	lanzado	llamar
+Relation	T27	T20	NoRel	true	lanzado	juegos
+Relation	T27	T22	NoRel	true	lanzado	estrenado
+Relation	T28	T12	NoRel	true	especial	hablando
+Relation	T28	T14	NoRel	true	especial	pandemia
+Relation	T28	T16	NoRel	true	especial	tratan
+Relation	T28	T18	NoRel	true	especial	tomar
+Relation	T3	T18	NoRel	true	editado	tomar
+Relation	T3	T19	NoRel	true	editado	transmisión
+Relation	T3	T6	NoRel	true	editado	protagonizado
+Relation	T4	T25	NoRel	true	filmado	tuvo
+Relation	T5	T2	NoRel	true	musicalizado	escrito
+Relation	T5	T26	NoRel	true	musicalizado	utilizadas
+Relation	T7	T3	NoRel	true	producido	editado
+Relation	T8	T0	NoRel	true	grabado	estrenado
+Relation	T8	T10	NoRel	true	grabado	transcurso
+Relation	T8	T22	NoRel	true	grabado	estrenado
+Relation	T8	T5	NoRel	true	grabado	musicalizado
+Relation	T9	T17	NoRel	true	Pandemia	llamar
+Relation	T9	T2	NoRel	true	Pandemia	escrito
+Relation	T9	T25	NoRel	true	Pandemia	tuvo
+Relation	T9	T8	NoRel	true	Pandemia	grabado

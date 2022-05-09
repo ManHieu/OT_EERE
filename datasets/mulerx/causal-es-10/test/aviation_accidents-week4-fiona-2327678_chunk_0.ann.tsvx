@@ -1,0 +1,36 @@
+Text	El VUELO 9955 DE WEST CARIBBEAN fue un vuelo programado el 26 de marzo de 2005 entre la Isla de Providencia y la Isla de San Andrés .	El avión , un Let L-410 Turbolet , recién había despegado a las 9:50 del Aeropuerto El Embrujo , cuando su motor izquierdo se apagó .	La tripulación siguió con el despegue , pero la velocidad de la aeronave disminuyó dramáticamente .	Repentinamente , el avión comenzó a inclinarse hacia la derecha y finalmente se fue en picada contra el suelo , estrellándose contra un manglar , ubicado a tan solo 113 metros de la pista del aeropuerto .	Los dos pilotos y 6 pasajeros murieron en el choque .
+Event	T0	programado	EVENT	45
+Event	T1	despegado	EVENT	182
+Event	T2	apagó	EVENT	260
+Event	T3	siguió	EVENT	283
+Event	T4	despegue	EVENT	297
+Event	T5	disminuyó	EVENT	341
+Event	T6	comenzó	EVENT	394
+Event	T7	inclinarse	EVENT	404
+Event	T8	picada	EVENT	455
+Event	T9	estrellándose	EVENT	480
+Event	T10	choque	EVENT	618
+Event	T11	murieron	EVENT	603
+Relation	T2	T5	CauseEffect	true	apagó	disminuyó
+Relation	T5	T2	EffectCause	true	disminuyó	apagó
+Relation	T2	T7	CauseEffect	true	apagó	inclinarse
+Relation	T7	T2	EffectCause	true	inclinarse	apagó
+Relation	T7	T8	CauseEffect	true	inclinarse	picada
+Relation	T8	T7	EffectCause	true	picada	inclinarse
+Relation	T8	T9	CauseEffect	true	picada	estrellándose
+Relation	T9	T8	EffectCause	true	estrellándose	picada
+Relation	T10	T11	CauseEffect	true	choque	murieron
+Relation	T11	T10	EffectCause	true	murieron	choque
+Relation	T0	T10	NoRel	true	programado	choque
+Relation	T0	T2	NoRel	true	programado	apagó
+Relation	T1	T10	NoRel	true	despegado	choque
+Relation	T1	T3	NoRel	true	despegado	siguió
+Relation	T11	T9	NoRel	true	murieron	estrellándose
+Relation	T2	T9	NoRel	true	apagó	estrellándose
+Relation	T3	T2	NoRel	true	siguió	apagó
+Relation	T4	T7	NoRel	true	despegue	inclinarse
+Relation	T6	T10	NoRel	true	comenzó	choque
+Relation	T7	T11	NoRel	true	inclinarse	murieron
+Relation	T8	T2	NoRel	true	picada	apagó
+Relation	T9	T10	NoRel	true	estrellándose	choque
+Relation	T9	T3	NoRel	true	estrellándose	siguió

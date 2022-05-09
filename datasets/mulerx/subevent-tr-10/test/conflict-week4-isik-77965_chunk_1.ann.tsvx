@@ -1,0 +1,50 @@
+Text	Bu durum özellikle Avrupa ve Osmanlı toprakları üzerinde paylaşım çatışmaları yaşayan Rusya , Fransa ve İngiltere’nin hiçbirinin hoşuna gitmiyordu .	1789 Fransız ihtilali sonrası Avrupa'da Fransız yayılması sonrası başlayan , 1790 -1795 Rumeli Dağlı İsyanları , 1798 Napolyon Bonapart'ın Mısır'ı işgali , 1805 de Kara Yorgi önderliğinde başlayan Sırp isyanı , 1805 İngilizlerin Mısır'ı tahliye etmemesi , 1806 Osmanlı - Rus savaşı , 1807 Osmanlı - İngiliz savaşı ve İngiliz donanmasının İskenderiye’yi işgali , tamamen Osmanlı İmparatorluğunun toprak bütünlüğüne karşı gelişmelerdi .	Bunlara ek olarak içeride de , III. Selim'in kurduğu modern Nizâm -ı Cedîd ordusuna karşı , rahata alışmış yeniçeriler , yerel ayanlar , bu ordu ve diğer yenilikler için ihdas edilen İrad -ı Cedid , bahriye hazinesi gibi yeni koyulan vergilerin mültezimlerde yarattığı isteksizlik gibi nedenler de vardı .	12 Nisan 1807 de Osmanlı ordusu Rusya ile savaşmak üzere yola çıktığında Serdar -ı Ekrem Sadrazam Çelebi Mustafa Paşa yerine kaymakamlık görevine , Nizam -ı Cedid karşıtı Köse Musa Paşa atandı .	Köse Musa Paşa , ordunun yokluğunda asayişi sağlamak üzere Nizam -ı Cedid askerlerini şehirdeki değişik karakollara dağıttı ve ek olarak Trabzon'dan 2000 kadar yamak getirtti .
+Event	T0	durum	EVENT	3
+Event	T1	ihtilali	EVENT	162
+Event	T2	yayılması	EVENT	197
+Event	T4	İsyanları	EVENT	250
+Event	T5	işgali	EVENT	296
+Event	T7	isyanı	EVENT	351
+Event	T9	savaşı	EVENT	424
+Event	T10	savaşı	EVENT	456
+Event	T11	işgali	EVENT	502
+Event	T12	gelişmelerdi	EVENT	569
+Event	T13	savaşmak	EVENT	932
+Event	T14	atandı	EVENT	1076
+Event	T15	dağıttı	EVENT	1201
+Event	T16	getirtti	EVENT	1251
+Event	T17	çatışmaları	EVENT	66
+Event	T3	kurduğu	EVENT	629
+Event	T6	koyulan	EVENT	810
+Event	T8	çıktığında	EVENT	952
+Relation	T1	T12	NoRel	true	ihtilali	gelişmelerdi
+Relation	T1	T14	NoRel	true	ihtilali	atandı
+Relation	T10	T3	NoRel	true	savaşı	kurduğu
+Relation	T11	T1	NoRel	true	işgali	ihtilali
+Relation	T12	T14	NoRel	true	gelişmelerdi	atandı
+Relation	T12	T16	NoRel	true	gelişmelerdi	getirtti
+Relation	T12	T3	NoRel	true	gelişmelerdi	kurduğu
+Relation	T13	T14	NoRel	true	savaşmak	atandı
+Relation	T13	T7	NoRel	true	savaşmak	isyanı
+Relation	T16	T5	NoRel	true	getirtti	işgali
+Relation	T16	T6	NoRel	true	getirtti	koyulan
+Relation	T17	T3	NoRel	true	çatışmaları	kurduğu
+Relation	T2	T12	NoRel	true	yayılması	gelişmelerdi
+Relation	T2	T7	NoRel	true	yayılması	isyanı
+Relation	T3	T16	NoRel	true	kurduğu	getirtti
+Relation	T3	T7	NoRel	true	kurduğu	isyanı
+Relation	T3	T8	NoRel	true	kurduğu	çıktığında
+Relation	T4	T14	NoRel	true	İsyanları	atandı
+Relation	T4	T16	NoRel	true	İsyanları	getirtti
+Relation	T4	T3	NoRel	true	İsyanları	kurduğu
+Relation	T5	T12	NoRel	true	işgali	gelişmelerdi
+Relation	T5	T13	NoRel	true	işgali	savaşmak
+Relation	T6	T10	NoRel	true	koyulan	savaşı
+Relation	T6	T11	NoRel	true	koyulan	işgali
+Relation	T6	T16	NoRel	true	koyulan	getirtti
+Relation	T6	T3	NoRel	true	koyulan	kurduğu
+Relation	T6	T4	NoRel	true	koyulan	İsyanları
+Relation	T7	T12	NoRel	true	isyanı	gelişmelerdi
+Relation	T8	T5	NoRel	true	çıktığında	işgali
+Relation	T8	T7	NoRel	true	çıktığında	isyanı
+Relation	T8	T9	NoRel	true	çıktığında	savaşı

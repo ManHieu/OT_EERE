@@ -1,0 +1,29 @@
+Text	_ Hürriyet Gazetesi 9 Temmuz 2018	https : / / www. sozcu . com. tr / 2018 / gundem / tren - kazasinda - son - dakika - aci - bilanco - 24 - olu - 318 - yarali - 2510122 / : _ Çorlu'da tren kazasında Acı Bilanço , 318 yaralı 24 Ölü ...	_ Sözcü Gazetesi 11 Temmuz 2018	http : / / www. hurriyet . com . tr / gundem / corluda - tren - faciasi - en - az - 10 - olu - 73 - yarali - 40890574 : _ Çorlu'da tren kazası ! Başbakan yardımcısı acı haberi verdi , 24 kişi hayatını kaybetti .	_ Hürriyet Gazetesi 9 Temmuz 2018
+Event	T0	yaralı	EVENT	217
+Event	T1	kazası	EVENT	403
+Event	T2	verdi	EVENT	443
+Event	T3	kaybetti	EVENT	468
+Event	T4	kazasinda	EVENT	92
+Event	T5	olu	EVENT	140
+Event	T6	yarali	EVENT	152
+Event	T7	kazasında	EVENT	189
+Event	T8	Ölü	EVENT	227
+Event	T9	faciasi	EVENT	331
+Event	T10	olu	EVENT	356
+Event	T11	yarali	EVENT	367
+Relation	T10	T1	NoRel	true	olu	kazası
+Relation	T10	T6	NoRel	true	olu	yarali
+Relation	T10	T7	NoRel	true	olu	kazasında
+Relation	T11	T1	NoRel	true	yarali	kazası
+Relation	T11	T2	NoRel	true	yarali	verdi
+Relation	T11	T3	NoRel	true	yarali	kaybetti
+Relation	T11	T8	NoRel	true	yarali	Ölü
+Relation	T2	T11	NoRel	true	verdi	yarali
+Relation	T3	T1	NoRel	true	kaybetti	kazası
+Relation	T5	T2	NoRel	true	olu	verdi
+Relation	T6	T5	NoRel	true	yarali	olu
+Relation	T7	T0	NoRel	true	kazasında	yaralı
+Relation	T7	T10	NoRel	true	kazasında	olu
+Relation	T7	T3	NoRel	true	kazasında	kaybetti
+Relation	T9	T1	NoRel	true	faciasi	kazası
+Relation	T9	T6	NoRel	true	faciasi	yarali

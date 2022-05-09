@@ -1,0 +1,24 @@
+Text	_ Trabzonlu Delikanlı _ Yaşar Miraç Şiir 1979 tarihli kitap 12 Eylül 1980 sonrasında şairin diğer kitaplarıyla birlikte yasaklandı .	Kitap 7 yıl yasaklı kaldı .	_ Pazar Sevişgenleri _ Metin Üstündağ Karikatür Önce toplatılmış , sonra da mahkeme kararı ile yayımlanmasında sakınca görülmemiştir .	_ Çıplak ve Ölü _ Norman Mailer Roman 1948 tarihli roman _ The Naked and the Dead _ , 1949'da müstehcenlik suçlamasıyla Kanada'da yasaklandı .	_ Bülbülü Öldürmek _ Harper Lee Roman 1960 tarihli Pulitzer ödüllü roman 1930'ların Alabama'sında ırkçılığı ve eşitsizliği ele alıyor ve eleştiriyordu ama garip bir biçimde " ırkçılık ve küfür " içerdiği için yasaklandı .
+Event	T0	yasaklandı	EVENT	120
+Event	T1	kaldı	EVENT	153
+Event	T2	toplatılmış	EVENT	214
+Event	T3	kararı	EVENT	245
+Event	T4	yasaklandı	EVENT	426
+Event	T5	Öldürmek	EVENT	449
+Event	T6	alıyor	EVENT	566
+Event	T7	eleştiriyordu	EVENT	576
+Event	T9	yasaklandı	EVENT	648
+Event	T10	suçlamasıyla	EVENT	403
+Relation	T10	T4	CauseEffect	true	suçlamasıyla	yasaklandı
+Relation	T4	T10	EffectCause	true	yasaklandı	suçlamasıyla
+Relation	T0	T2	NoRel	true	yasaklandı	toplatılmış
+Relation	T0	T9	NoRel	true	yasaklandı	yasaklandı
+Relation	T1	T4	NoRel	true	kaldı	yasaklandı
+Relation	T1	T5	NoRel	true	kaldı	Öldürmek
+Relation	T10	T3	NoRel	true	suçlamasıyla	kararı
+Relation	T10	T6	NoRel	true	suçlamasıyla	alıyor
+Relation	T2	T4	NoRel	true	toplatılmış	yasaklandı
+Relation	T2	T9	NoRel	true	toplatılmış	yasaklandı
+Relation	T6	T10	NoRel	true	alıyor	suçlamasıyla
+Relation	T6	T7	NoRel	true	alıyor	eleştiriyordu
+Relation	T9	T6	NoRel	true	yasaklandı	alıyor

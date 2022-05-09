@@ -1,0 +1,20 @@
+Text	Yetkililer ayrıca yabancı gazetecilerin sel alanlarını haber yapmalarını yasakladı .	Ruhani ve Yüksek Lider Ali Hamaney , gecikmeli tepkileri nedeniyle ağır eleştirilere maruz kaldılar .	Ruhani , sel zamanı Basra Körfezi'ndeki Keşmir Adası'nda tatildeydi ve ancak taşkınlar azalmaya başlarken Tehran'a döndü .	Lorestan _ Flood .jpg | Luristan eyaletindeki Poldohter'de sel .	2019 Shiraz Floods 1.jpg | Şiraz'da su altında kalmış bir mahalle .
+Event	T0	sel	EVENT	40
+Event	T1	yasakladı	EVENT	73
+Event	T2	tepkileri	EVENT	132
+Event	T3	sel	EVENT	196
+Event	T4	taşkınlar	EVENT	264
+Event	T5	döndü	EVENT	302
+Event	T6	sel	EVENT	369
+Event	T7	kaldılar	EVENT	176
+Event	T8	kalmış	EVENT	422
+Relation	T2	T7	CauseEffect	true	tepkileri	kaldılar
+Relation	T7	T2	EffectCause	true	kaldılar	tepkileri
+Relation	T5	T7	CauseEffect	true	döndü	kaldılar
+Relation	T7	T5	EffectCause	true	kaldılar	döndü
+Relation	T0	T7	NoRel	true	sel	kaldılar
+Relation	T4	T3	NoRel	true	taşkınlar	sel
+Relation	T4	T5	NoRel	true	taşkınlar	döndü
+Relation	T5	T2	NoRel	true	döndü	tepkileri
+Relation	T6	T5	NoRel	true	sel	döndü
+Relation	T8	T0	NoRel	true	kalmış	sel

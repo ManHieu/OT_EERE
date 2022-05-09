@@ -1,0 +1,35 @@
+Text	Et minut senere blev transponderen slukket , men kontroltårnet i Cleveland fortsatte med at overvåge flyet på radaren .	Herndon Center videresendte oplysningerne om flynummer 93 til den statslige luftfartskontrols hovedkvarter .	Klokken 09:43:03 ringede passageren Joseph Deluca til sin far fra række 26 i flyet for at fortælle ham , at flyet var blevet kapret .	Klokken 09:43:38 forsøgte Todd Beamer at ringe til sin kone fra række 32 , men blev omdirigeret til telefonisten Lisa D. Jefferson .	Todd Beamer fortalte hende , at hans fly var blevet kapret , og at flyets oprindelige piloter lå døde eller døende på gulvet .
+Event	T0	slukket	EVENT	35
+Event	T1	fortsatte	EVENT	75
+Event	T2	overvåge	EVENT	92
+Event	T3	ringede	EVENT	246
+Event	T4	fortælle	EVENT	319
+Event	T5	kapret	EVENT	354
+Event	T6	forsøgte	EVENT	380
+Event	T7	ringe	EVENT	404
+Event	T8	omdirigeret	EVENT	447
+Event	T9	fortalte	EVENT	508
+Event	T10	kapret	EVENT	548
+Event	T11	døde	EVENT	593
+Event	T12	døende	EVENT	604
+Relation	T10	T11	SuperSub	true	kapret	døde
+Relation	T11	T10	SubSuper	true	døde	kapret
+Relation	T10	T12	SuperSub	true	kapret	døende
+Relation	T12	T10	SubSuper	true	døende	kapret
+Relation	T0	T10	NoRel	true	slukket	kapret
+Relation	T1	T10	NoRel	true	fortsatte	kapret
+Relation	T10	T2	NoRel	true	kapret	overvåge
+Relation	T10	T3	NoRel	true	kapret	ringede
+Relation	T11	T0	NoRel	true	døde	slukket
+Relation	T11	T6	NoRel	true	døde	forsøgte
+Relation	T12	T11	NoRel	true	døende	døde
+Relation	T12	T9	NoRel	true	døende	fortalte
+Relation	T2	T1	NoRel	true	overvåge	fortsatte
+Relation	T3	T10	NoRel	true	ringede	kapret
+Relation	T4	T5	NoRel	true	fortælle	kapret
+Relation	T5	T11	NoRel	true	kapret	døde
+Relation	T7	T0	NoRel	true	ringe	slukket
+Relation	T7	T2	NoRel	true	ringe	overvåge
+Relation	T8	T5	NoRel	true	omdirigeret	kapret
+Relation	T9	T11	NoRel	true	fortalte	døde
+Relation	T9	T7	NoRel	true	fortalte	ringe

@@ -1,0 +1,23 @@
+Text	SSCB Bakanlar Konseyi Başkanı Alexey Kosıgin , 1972'de ikili Dostluk ve İşbirliği Antlaşması'nı imzaladı .	Haziran 2003'te , ABD liderliğindeki Geçici Koalisyon Yönetimi Baas Partisi'ni yasakladı ve partinin ilk dört kademesinin tüm üyelerini yeni hükûmetten , devlet okullarından ve kolejlerden yasakladı .	Bu hareket , çok fazla deneyimli insanı yeni hükûmete katılmaya engellediği için çeşitli kişilerin eleştirisini aldı .	Doktorlar , profesörler , okul öğretmenleri ve bürokratlar da dahil olmak üzere binlerce kişi görevlerinden alındı .	Birçok öğretmen işini kaybetti , okullarda ve üniversitelerde protestolara ve gösterilere neden oldu .
+Event	T0	imzaladı	EVENT	96
+Event	T1	yasakladı	EVENT	186
+Event	T2	yasakladı	EVENT	296
+Event	T3	hareket	EVENT	311
+Event	T4	aldı	EVENT	420
+Event	T5	alındı	EVENT	535
+Event	T6	kaybetti	EVENT	566
+Event	T7	oldu	EVENT	640
+Event	T8	Dostluk ve İşbirliği Antlaşması'nı	EVENT	61
+Event	T9	engellediği	EVENT	372
+Relation	T0	T6	NoRel	true	imzaladı	kaybetti
+Relation	T1	T0	NoRel	true	yasakladı	imzaladı
+Relation	T2	T1	NoRel	true	yasakladı	yasakladı
+Relation	T2	T3	NoRel	true	yasakladı	hareket
+Relation	T2	T8	NoRel	true	yasakladı	Dostluk ve İşbirliği Antlaşması'nı
+Relation	T3	T8	NoRel	true	hareket	Dostluk ve İşbirliği Antlaşması'nı
+Relation	T4	T7	NoRel	true	aldı	oldu
+Relation	T6	T0	NoRel	true	kaybetti	imzaladı
+Relation	T6	T4	NoRel	true	kaybetti	aldı
+Relation	T9	T0	NoRel	true	engellediği	imzaladı
+Relation	T9	T6	NoRel	true	engellediği	kaybetti
+Relation	T9	T7	NoRel	true	engellediği	oldu

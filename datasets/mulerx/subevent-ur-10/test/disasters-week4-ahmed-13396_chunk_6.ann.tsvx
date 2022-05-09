@@ -1,0 +1,16 @@
+Text	ہنزہ کے گردو نواح میں ایک دن میں صبح جا کر شام گئے واپس آجانے والے سیر کے مقامات میں سب سے مشہور ڈوئیکر یا ایگل نیسٹ ہے جہاں پیدل یا جیپ کے ذریعے جایا جاسکتاہے ۔۔۔۔۔۔۔	یہ جگہ طلوع آفتاب اور غروب آفتاب کے وقت برف پوش چوٹیوں پر پڑنے والی سورج کی کرنوں کی وجہ سے مشہور ہے ۔۔۔۔۔۔۔۔۔	یہاں سے التر پیک و التر میدان کا خوبصورت ٹریک بھی شروع ہوتا ہے ۔۔۔۔	جیپ پر دریا کے دوسرے کنارے پر واقع وادی نگر بھی جایا جاسکتا ہے جہاں پر گلیشئیرز کا نظارہ دیدہ زیب ہوتا ہے ۔	۔۔۔۔۔۔
+Event	T0	سیر	EVENT	67
+Event	T1	طلوع	EVENT	175
+Event	T2	کرنوں	EVENT	244
+Event	T3	شروع	EVENT	329
+Event	T4	پیدل	EVENT	125
+Event	T5	جایا	EVENT	146
+Event	T6	واقع	EVENT	377
+Relation	T0	T4	SuperSub	true	سیر	پیدل
+Relation	T4	T0	SubSuper	true	پیدل	سیر
+Relation	T0	T2	NoRel	true	سیر	کرنوں
+Relation	T1	T3	NoRel	true	طلوع	شروع
+Relation	T1	T4	NoRel	true	طلوع	پیدل
+Relation	T3	T2	NoRel	true	شروع	کرنوں
+Relation	T4	T1	NoRel	true	پیدل	طلوع
+Relation	T5	T1	NoRel	true	جایا	طلوع

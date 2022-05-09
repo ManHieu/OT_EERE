@@ -1,0 +1,44 @@
+Text	1967 MUDURNU DEPREMI ya da 1967 SAKARYA DEPREMI , 22 Temmuz 1967 tarihinde yerel saatle 18: 56'da Türkiye'de Bolu ilinin Mudurnu ilçesinde meydana gelen deprem .	Büyüklüğü 6,8 M _ ( s ) olan bu depremde 89 kişi öldü , 7116 bina hasar gördü .	Bu depremin 1939 Erzincan Depremi'yle başlayan ve Kuzey Anadolu Fayı'nı takip ederek batıya yönelen deprem hareketliliğin bir parçası olduğu kabul edilmektedir .	Bu deprem sırasında Kuzey Anadolu Fayı'nda 50 km'lik kırılma gözlendi .	Bu bölgede , yine aynı fay hattı üzerinde 1957 yılında Abant Depremi olmuştu .
+Event	T1	deprem	EVENT	153
+Event	T2	depremde	EVENT	194
+Event	T3	öldü	EVENT	211
+Event	T4	gördü	EVENT	234
+Event	T5	depremin	EVENT	245
+Event	T8	deprem	EVENT	407
+Event	T9	gözlendi	EVENT	465
+Event	T10	1967 MUDURNU DEPREMI	EVENT	0
+Event	T11	1967 SAKARYA DEPREMI	EVENT	27
+Event	T7	ederek	EVENT	320
+Event	T6	1939 Erzincan Depremi'yle	EVENT	254
+Event	T12	edilmektedir	EVENT	389
+Event	T13	Abant Depremi	EVENT	531
+Event	T14	hattı	EVENT	503
+Relation	T10	T3	SuperSub	true	1967 MUDURNU DEPREMI	öldü
+Relation	T3	T10	SubSuper	true	öldü	1967 MUDURNU DEPREMI
+Relation	T10	T4	SuperSub	true	1967 MUDURNU DEPREMI	gördü
+Relation	T4	T10	SubSuper	true	gördü	1967 MUDURNU DEPREMI
+Relation	T11	T3	SuperSub	true	1967 SAKARYA DEPREMI	öldü
+Relation	T3	T11	SubSuper	true	öldü	1967 SAKARYA DEPREMI
+Relation	T11	T4	SuperSub	true	1967 SAKARYA DEPREMI	gördü
+Relation	T4	T11	SubSuper	true	gördü	1967 SAKARYA DEPREMI
+Relation	T10	T9	SuperSub	true	1967 MUDURNU DEPREMI	gözlendi
+Relation	T9	T10	SubSuper	true	gözlendi	1967 MUDURNU DEPREMI
+Relation	T1	T10	NoRel	true	deprem	1967 MUDURNU DEPREMI
+Relation	T10	T11	NoRel	true	1967 MUDURNU DEPREMI	1967 SAKARYA DEPREMI
+Relation	T10	T5	NoRel	true	1967 MUDURNU DEPREMI	depremin
+Relation	T12	T3	NoRel	true	edilmektedir	öldü
+Relation	T13	T5	NoRel	true	Abant Depremi	depremin
+Relation	T14	T11	NoRel	true	hattı	1967 SAKARYA DEPREMI
+Relation	T14	T8	NoRel	true	hattı	deprem
+Relation	T2	T8	NoRel	true	depremde	deprem
+Relation	T3	T12	NoRel	true	öldü	edilmektedir
+Relation	T3	T9	NoRel	true	öldü	gözlendi
+Relation	T5	T1	NoRel	true	depremin	deprem
+Relation	T5	T14	NoRel	true	depremin	hattı
+Relation	T5	T4	NoRel	true	depremin	gördü
+Relation	T6	T12	NoRel	true	1939 Erzincan Depremi'yle	edilmektedir
+Relation	T6	T13	NoRel	true	1939 Erzincan Depremi'yle	Abant Depremi
+Relation	T7	T10	NoRel	true	ederek	1967 MUDURNU DEPREMI
+Relation	T7	T11	NoRel	true	ederek	1967 SAKARYA DEPREMI
+Relation	T8	T3	NoRel	true	deprem	öldü
+Relation	T9	T7	NoRel	true	gözlendi	ederek

@@ -1,0 +1,49 @@
+Text	SOVYET - JAPONYA SINIR ÇATIŞMALARI ( ya da diğer adıyla SOVYET - JAPONYA SINIR SAVAŞI ) Sovyet Sosyalist Cumhuriyetleri Birliği ile Japon İmparatorluğu'nun , ayrıca kukla devletleri olan Moğolistan ve Mançukuo'nun arasında gerçekleşen savaşlar ve çatışmalardır .	1932 ve 1939 yılları arasında gerçekleşmiştir , Khasan Gölü Muharebesi haricinde Mayıs 1939'a kadar olan savaşlar , küçük sınır çatışmalarıydı .	Sınır Savaşı , Sovyetlerin Japonlar üzerinde ağır angajmanlar uyguladığı Halkin - Gol'da sona erdi .	Sonucunda Sovyet - Japon Tarafsızlık Anlaşması imzalandı .	Çatışmalar , Ağustos 1945'te Sovyetler Birliği'nin II. Dünya Savaşı'ndaki müttefik ülkelerine destek olarak başlattığı MANÇURYA STRATEJIK SALDIRI OPERASYONU ile karıştırılmamalıdır .
+Event	T2	savaşlar	EVENT	235
+Event	T3	çatışmalardır	EVENT	247
+Event	T4	gerçekleşmiştir	EVENT	293
+Event	T5	çatışmalarıydı	EVENT	391
+Event	T6	Savaşı	EVENT	414
+Event	T8	erdi	EVENT	502
+Event	T9	imzalandı	EVENT	556
+Event	T10	Çatışmalar	EVENT	568
+Event	T11	başlattığı	EVENT	676
+Event	T12	SOVYET - JAPONYA SINIR ÇATIŞMALARI	EVENT	0
+Event	T13	SOVYET - JAPONYA SINIR SAVAŞI	EVENT	56
+Event	T1	savaşlar	EVENT	368
+Event	T14	Khasan Gölü Muharebesi	EVENT	311
+Event	T15	angajmanlar	EVENT	458
+Event	T7	II. Dünya Savaşı'ndaki	EVENT	619
+Event	T16	MANÇURYA STRATEJIK SALDIRI OPERASYONU	EVENT	687
+Relation	T12	T9	SuperSub	true	SOVYET - JAPONYA SINIR ÇATIŞMALARI	imzalandı
+Relation	T9	T12	SubSuper	true	imzalandı	SOVYET - JAPONYA SINIR ÇATIŞMALARI
+Relation	T13	T9	SuperSub	true	SOVYET - JAPONYA SINIR SAVAŞI	imzalandı
+Relation	T9	T13	SubSuper	true	imzalandı	SOVYET - JAPONYA SINIR SAVAŞI
+Relation	T1	T15	NoRel	true	savaşlar	angajmanlar
+Relation	T1	T6	NoRel	true	savaşlar	Savaşı
+Relation	T1	T9	NoRel	true	savaşlar	imzalandı
+Relation	T10	T4	NoRel	true	Çatışmalar	gerçekleşmiştir
+Relation	T11	T12	NoRel	true	başlattığı	SOVYET - JAPONYA SINIR ÇATIŞMALARI
+Relation	T11	T3	NoRel	true	başlattığı	çatışmalardır
+Relation	T11	T9	NoRel	true	başlattığı	imzalandı
+Relation	T12	T13	NoRel	true	SOVYET - JAPONYA SINIR ÇATIŞMALARI	SOVYET - JAPONYA SINIR SAVAŞI
+Relation	T12	T5	NoRel	true	SOVYET - JAPONYA SINIR ÇATIŞMALARI	çatışmalarıydı
+Relation	T13	T1	NoRel	true	SOVYET - JAPONYA SINIR SAVAŞI	savaşlar
+Relation	T15	T4	NoRel	true	angajmanlar	gerçekleşmiştir
+Relation	T2	T1	NoRel	true	savaşlar	savaşlar
+Relation	T2	T14	NoRel	true	savaşlar	Khasan Gölü Muharebesi
+Relation	T2	T16	NoRel	true	savaşlar	MANÇURYA STRATEJIK SALDIRI OPERASYONU
+Relation	T2	T9	NoRel	true	savaşlar	imzalandı
+Relation	T3	T12	NoRel	true	çatışmalardır	SOVYET - JAPONYA SINIR ÇATIŞMALARI
+Relation	T3	T16	NoRel	true	çatışmalardır	MANÇURYA STRATEJIK SALDIRI OPERASYONU
+Relation	T3	T2	NoRel	true	çatışmalardır	savaşlar
+Relation	T3	T4	NoRel	true	çatışmalardır	gerçekleşmiştir
+Relation	T3	T8	NoRel	true	çatışmalardır	erdi
+Relation	T5	T10	NoRel	true	çatışmalarıydı	Çatışmalar
+Relation	T5	T2	NoRel	true	çatışmalarıydı	savaşlar
+Relation	T5	T9	NoRel	true	çatışmalarıydı	imzalandı
+Relation	T7	T16	NoRel	true	II. Dünya Savaşı'ndaki	MANÇURYA STRATEJIK SALDIRI OPERASYONU
+Relation	T7	T4	NoRel	true	II. Dünya Savaşı'ndaki	gerçekleşmiştir
+Relation	T8	T9	NoRel	true	erdi	imzalandı
+Relation	T9	T1	NoRel	true	imzalandı	savaşlar
+Relation	T9	T14	NoRel	true	imzalandı	Khasan Gölü Muharebesi

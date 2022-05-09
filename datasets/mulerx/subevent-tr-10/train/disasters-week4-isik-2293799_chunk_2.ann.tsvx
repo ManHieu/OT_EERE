@@ -1,0 +1,16 @@
+Text	Amerika Birleşik Devletleri Jeoloji Araştırmaları Kurumu ( USGS ) , depremin büyüklüğünü richter ölçeği'ne göre 7.3 M _ ( w ) , merkez_üssünü de Halepçe'nin 30 km güneyi olarak açıkladı .	Iraklı bir meteoroloji yetkilisi ise merkez_üssünü Irak Kürt Bölgesel Yönetimi'nin ( IKBY ) Süleymaniye bölgesine bağlı Penjwin ilçesi olduğunu , depremin büyüklüğünü ise 6.5 M _ ( w ) olarak açıkladı .	USGS'ye göre deprem yerin 19.0 km ( 12 mil ) altında gerçekleşti ve 40 saniye sürdü .	İran Sismoloji Merkezi depremden sonra bölgede 50'den fazla artçı deprem kaydedildiğini açıkladı .	14 Kasım tarihi itibarıyla artçı sarsıntıların sayısı 200'ü buldu .
+Event	T1	açıkladı	EVENT	177
+Event	T2	depremin	EVENT	334
+Event	T3	açıkladı	EVENT	380
+Event	T4	deprem	EVENT	404
+Event	T5	gerçekleşti	EVENT	444
+Event	T6	sürdü	EVENT	469
+Event	T7	depremden	EVENT	500
+Event	T8	açıkladı	EVENT	565
+Event	T9	buldu	EVENT	636
+Relation	T1	T2	NoRel	true	açıkladı	depremin
+Relation	T4	T3	NoRel	true	deprem	açıkladı
+Relation	T4	T8	NoRel	true	deprem	açıkladı
+Relation	T5	T3	NoRel	true	gerçekleşti	açıkladı
+Relation	T5	T4	NoRel	true	gerçekleşti	deprem
+Relation	T6	T3	NoRel	true	sürdü	açıkladı

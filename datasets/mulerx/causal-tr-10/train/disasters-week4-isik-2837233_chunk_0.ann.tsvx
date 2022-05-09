@@ -1,0 +1,69 @@
+Text	2020 EGE DENIZI DEPREMI , 30 Ekim 2020 günü Türkiye saati ile 14.51'de , merkez_üssü Yunanistan'ın Sisam Adası açıklarında Türkiye'nin İzmir ilinin Seferihisar ilçesine 23 km mesafede bulunan , yerin 16 , 5 km altında 6,9 M _ ( w ) büyüklüğünde meydana gelen ve yaklaşık 16 saniye süren depremdir .	Türkiye ve Yunanistan'da toplam 119 kişinin ölümüne ve 1053 kişinin ise yaralanmasına neden olan deprem , 2020 yılında yeryüzünde meydana gelen depremler arasında en ölümcül deprem olarak kayıtlara geçti .	Bölgedeki tektonik hareketler nispeten karmaşıktır ; güneyde Afrika levhası , Helen Çukuru'ndaki Avrasya levhasının altına kuzeye doğru dalmaktadır .	Doğudaki Anadolu Levhası , genellikle batı yönünde hareket ederek kuzey sınırı boyunca sağ - yanal faylanmayı , Kuzey Anadolu Fayı'nı ve Türkiye'nin güneydoğusunda sol - yanal faylanmayı yönlendirir .	30 Ekim depreminin meydana geldiği Ege Denizi bölgesi ( genellikle Türkiye'nin batısı ve Güney Yunanistan ) , Helen Çukuru'nun güneye doğru ilerlemesi ile yönlendirilen kuzey - güney yönlü genişleme yaşamaktadır .
+Event	T0	DEPREMI	EVENT	16
+Event	T2	depremdir	EVENT	287
+Event	T3	ölümüne	EVENT	343
+Event	T4	neden	EVENT	385
+Event	T5	deprem	EVENT	396
+Event	T6	meydana	EVENT	429
+Event	T7	depremler	EVENT	443
+Event	T8	deprem	EVENT	473
+Event	T9	geçti	EVENT	497
+Event	T10	hareketler	EVENT	524
+Event	T11	dalmaktadır	EVENT	641
+Event	T13	yönlendirir	EVENT	842
+Event	T14	geldiği	EVENT	883
+Event	T15	ilerlemesi	EVENT	996
+Event	T16	yaşamaktadır	EVENT	1055
+Event	T1	süren	EVENT	281
+Event	T17	yaralanmasına	EVENT	371
+Event	T12	ederek	EVENT	714
+Relation	T0	T1	CauseEffect	true	DEPREMI	süren
+Relation	T1	T0	EffectCause	true	süren	DEPREMI
+Relation	T0	T3	CauseEffect	true	DEPREMI	ölümüne
+Relation	T3	T0	EffectCause	true	ölümüne	DEPREMI
+Relation	T0	T17	CauseEffect	true	DEPREMI	yaralanmasına
+Relation	T17	T0	EffectCause	true	yaralanmasına	DEPREMI
+Relation	T0	T9	CauseEffect	true	DEPREMI	geçti
+Relation	T9	T0	EffectCause	true	geçti	DEPREMI
+Relation	T12	T13	CauseEffect	true	ederek	yönlendirir
+Relation	T13	T12	EffectCause	true	yönlendirir	ederek
+Relation	T0	T10	NoRel	true	DEPREMI	hareketler
+Relation	T0	T13	NoRel	true	DEPREMI	yönlendirir
+Relation	T0	T2	NoRel	true	DEPREMI	depremdir
+Relation	T1	T13	NoRel	true	süren	yönlendirir
+Relation	T10	T11	NoRel	true	hareketler	dalmaktadır
+Relation	T10	T15	NoRel	true	hareketler	ilerlemesi
+Relation	T10	T17	NoRel	true	hareketler	yaralanmasına
+Relation	T11	T10	NoRel	true	dalmaktadır	hareketler
+Relation	T11	T13	NoRel	true	dalmaktadır	yönlendirir
+Relation	T11	T2	NoRel	true	dalmaktadır	depremdir
+Relation	T11	T8	NoRel	true	dalmaktadır	deprem
+Relation	T12	T11	NoRel	true	ederek	dalmaktadır
+Relation	T12	T3	NoRel	true	ederek	ölümüne
+Relation	T12	T6	NoRel	true	ederek	meydana
+Relation	T13	T14	NoRel	true	yönlendirir	geldiği
+Relation	T14	T7	NoRel	true	geldiği	depremler
+Relation	T15	T7	NoRel	true	ilerlemesi	depremler
+Relation	T16	T1	NoRel	true	yaşamaktadır	süren
+Relation	T16	T15	NoRel	true	yaşamaktadır	ilerlemesi
+Relation	T16	T4	NoRel	true	yaşamaktadır	neden
+Relation	T16	T7	NoRel	true	yaşamaktadır	depremler
+Relation	T17	T15	NoRel	true	yaralanmasına	ilerlemesi
+Relation	T17	T2	NoRel	true	yaralanmasına	depremdir
+Relation	T2	T14	NoRel	true	depremdir	geldiği
+Relation	T4	T0	NoRel	true	neden	DEPREMI
+Relation	T4	T6	NoRel	true	neden	meydana
+Relation	T4	T7	NoRel	true	neden	depremler
+Relation	T4	T8	NoRel	true	neden	deprem
+Relation	T5	T11	NoRel	true	deprem	dalmaktadır
+Relation	T5	T12	NoRel	true	deprem	ederek
+Relation	T5	T4	NoRel	true	deprem	neden
+Relation	T6	T14	NoRel	true	meydana	geldiği
+Relation	T7	T10	NoRel	true	depremler	hareketler
+Relation	T7	T11	NoRel	true	depremler	dalmaktadır
+Relation	T7	T14	NoRel	true	depremler	geldiği
+Relation	T8	T1	NoRel	true	deprem	süren
+Relation	T9	T10	NoRel	true	geçti	hareketler
+Relation	T9	T14	NoRel	true	geçti	geldiği
+Relation	T9	T15	NoRel	true	geçti	ilerlemesi
+Relation	T9	T16	NoRel	true	geçti	yaşamaktadır

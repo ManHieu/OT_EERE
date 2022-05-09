@@ -1,0 +1,62 @@
+Text	Luego se confirmó más tarde en el programa que Shida defenderá el título contra Rosa en _ All Out _ .	El 22 de agosto en _ Dynamite _ , se anunciaba que cuatro equipos participarían en un Tag Team Gauntlet Match en la siguiente edición del programa para determinar quién desafiará a los Campeones Mundiales en Parejas de AEW , " Hangman " Adam Page y Kenny Omega , a un combate por el título en _ All Out _ .	El 27 de agosto en _ Dynamite _ , FTR ( Cash Wheeler & Dax Harwood ) ganó el combate Gauntlet eliminando por última vez a Best Friends ( Chuck Taylor & Trent ) para ganar el combate por el título en _ All Out _ .	The Natural Nightmares ( Dustin Rhodes & QT Marshall ) y The Young Bucks ( Matt Jackson y Nick Jackson ) también participaron en el combate Gauntlet .	Durante el combate , Adam Page traicionó a los Young Bucks al evitar que Nick Jackson rompiera un alfiler con Matt Jackson .
+Event	T0	confirmó	EVENT	9
+Event	T1	defenderá	EVENT	53
+Event	T10	ganó	EVENT	478
+Event	T11	combate	EVENT	486
+Event	T12	eliminando	EVENT	503
+Event	T13	ganar	EVENT	574
+Event	T14	combate	EVENT	583
+Event	T15	título	EVENT	598
+Event	T16	participaron	EVENT	735
+Event	T17	combate	EVENT	784
+Event	T18	traicionó	EVENT	804
+Event	T19	evitar	EVENT	835
+Event	T2	título	EVENT	66
+Event	T20	rompiera	EVENT	859
+Event	T3	anunciaba	EVENT	139
+Event	T4	participarían	EVENT	168
+Event	T5	Match	EVENT	206
+Event	T6	edición	EVENT	228
+Event	T7	determinar	EVENT	254
+Event	T8	desafiará	EVENT	271
+Event	T9	combate	EVENT	370
+Relation	T17	T18	SuperSub	true	combate	traicionó
+Relation	T18	T17	SubSuper	true	traicionó	combate
+Relation	T1	T2	NoRel	true	defenderá	título
+Relation	T1	T20	NoRel	true	defenderá	rompiera
+Relation	T10	T12	NoRel	true	ganó	eliminando
+Relation	T10	T2	NoRel	true	ganó	título
+Relation	T10	T4	NoRel	true	ganó	participarían
+Relation	T11	T14	NoRel	true	combate	combate
+Relation	T11	T19	NoRel	true	combate	evitar
+Relation	T13	T5	NoRel	true	ganar	Match
+Relation	T14	T15	NoRel	true	combate	título
+Relation	T14	T8	NoRel	true	combate	desafiará
+Relation	T16	T0	NoRel	true	participaron	confirmó
+Relation	T16	T19	NoRel	true	participaron	evitar
+Relation	T16	T4	NoRel	true	participaron	participarían
+Relation	T16	T5	NoRel	true	participaron	Match
+Relation	T17	T0	NoRel	true	combate	confirmó
+Relation	T17	T20	NoRel	true	combate	rompiera
+Relation	T18	T12	NoRel	true	traicionó	eliminando
+Relation	T18	T16	NoRel	true	traicionó	participaron
+Relation	T18	T19	NoRel	true	traicionó	evitar
+Relation	T18	T4	NoRel	true	traicionó	participarían
+Relation	T19	T1	NoRel	true	evitar	defenderá
+Relation	T19	T5	NoRel	true	evitar	Match
+Relation	T19	T7	NoRel	true	evitar	determinar
+Relation	T2	T10	NoRel	true	título	ganó
+Relation	T2	T4	NoRel	true	título	participarían
+Relation	T20	T13	NoRel	true	rompiera	ganar
+Relation	T20	T18	NoRel	true	rompiera	traicionó
+Relation	T20	T4	NoRel	true	rompiera	participarían
+Relation	T3	T12	NoRel	true	anunciaba	eliminando
+Relation	T3	T5	NoRel	true	anunciaba	Match
+Relation	T4	T1	NoRel	true	participarían	defenderá
+Relation	T5	T10	NoRel	true	Match	ganó
+Relation	T5	T12	NoRel	true	Match	eliminando
+Relation	T6	T9	NoRel	true	edición	combate
+Relation	T7	T14	NoRel	true	determinar	combate
+Relation	T8	T9	NoRel	true	desafiará	combate
+Relation	T9	T0	NoRel	true	combate	confirmó
+Relation	T9	T13	NoRel	true	combate	ganar

@@ -1,0 +1,27 @@
+Text	Kökeni bilinmemektedir , ancak tarihçi Hanne Blank bu fikrin , şeytanlarla savaşarak saflığı koruma görevi üstlenen bakire şehitlerin olduğu Hristiyan efsanelerinden evrilmiş olabileceğini yazar .	Broadway müzikali _ The Book of Mormon _ { { ' } } da bakire arınma mitine atıfta bulunulur .	Yardımcı karakter Mattumbo , bir bakireyle seks yapmanın AIDS'i iyileştireceği inancıyla bir bebeğe tecavüz etmekten alıkonulur .	" Make Things Up Again " şarkısı sırasında Elder Cunningham , Mattumbo'ya bebeklere tecavüz etmenin Tanrı'nın iradesine aykırı olduğunu söyler ve Mormon Kitabı'nda Tanrı'nın Joseph Smith'e AIDS'ini iyileştirmek için bir kurbağayla seks yapmasını söylediği bir pasaj uydurur .	Kategori : Güney Afrika Cumhuriyeti'nde tecavüz Kategori : HIV / AIDS Kategori : Avrupa mitolojisi Kategori : Hristiyan mitolojisi Kategori : Çocuk cinsel istismarı Kategori : 16. yüzyıl tanıtımları Kategori : İncelenmemiş çeviri içeren sayfalar
+Event	T0	evrilmiş	EVENT	166
+Event	T1	yazar	EVENT	189
+Event	T2	alıkonulur	EVENT	408
+Event	T3	tecavüz	EVENT	505
+Event	T4	söyler	EVENT	557
+Event	T5	söylediği	EVENT	667
+Event	T6	uydurur	EVENT	687
+Event	T7	tecavüz	EVENT	737
+Event	T8	istismarı	EVENT	852
+Event	T9	savaşarak	EVENT	75
+Event	T10	yapmanın	EVENT	339
+Event	T11	iyileştireceği	EVENT	355
+Relation	T10	T11	CauseEffect	true	yapmanın	iyileştireceği
+Relation	T11	T10	EffectCause	true	iyileştireceği	yapmanın
+Relation	T11	T2	CauseEffect	true	iyileştireceği	alıkonulur
+Relation	T2	T11	EffectCause	true	alıkonulur	iyileştireceği
+Relation	T1	T10	NoRel	true	yazar	yapmanın
+Relation	T10	T7	NoRel	true	yapmanın	tecavüz
+Relation	T2	T6	NoRel	true	alıkonulur	uydurur
+Relation	T2	T9	NoRel	true	alıkonulur	savaşarak
+Relation	T4	T9	NoRel	true	söyler	savaşarak
+Relation	T5	T4	NoRel	true	söylediği	söyler
+Relation	T6	T11	NoRel	true	uydurur	iyileştireceği
+Relation	T7	T11	NoRel	true	tecavüz	iyileştireceği
+Relation	T8	T3	NoRel	true	istismarı	tecavüz
+Relation	T9	T1	NoRel	true	savaşarak	yazar

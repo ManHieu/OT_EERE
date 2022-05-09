@@ -1,0 +1,57 @@
+Text	ALLEGHENY AIRLINES FLIGHT 485 was a regularly scheduled domestic passenger flight between Washington , D.C. and Newport News , Virginia , United States , with three stop- overs , two in Connecticut and a third in Pennsylvania .	On June 7 , 1971 , the Allegheny Airlines Convair CV - 580 operating the flight crashed on approach to Tweed New Haven Regional Airport , New Haven County , Connecticut .	The accident was notable in that all but one person survived the initial impact , however 27 people died in the subsequent fire , after failing to open the emergency exit .	Only the first officer and 2 passengers survived .	Poor visibility in the cabin , a lack of emergency lighting , unclear emergency door instructions , and a lack of additional crew personnel to assist in evacuation were all cited as factors in the high death toll .
+Event	T0	flight	EVENT	75
+Event	T1	approach	EVENT	319
+Event	T2	accident	EVENT	403
+Event	T3	notable	EVENT	416
+Event	T4	survived	EVENT	451
+Event	T5	impact	EVENT	472
+Event	T6	died	EVENT	499
+Event	T7	fire	EVENT	522
+Event	T8	failing	EVENT	535
+Event	T9	open	EVENT	546
+Event	T10	exit	EVENT	565
+Event	T11	survived	EVENT	612
+Event	T12	evacuation	EVENT	776
+Event	T13	cited	EVENT	796
+Event	T14	scheduled	EVENT	46
+Event	T15	crashed	EVENT	308
+Event	T16	death	EVENT	825
+Event	T17	visibility	EVENT	628
+Event	T18	emergency	EVENT	664
+Event	T19	instructions	EVENT	708
+Event	T20	assist	EVENT	766
+Relation	T0	T8	NoRel	true	flight	failing
+Relation	T0	T9	NoRel	true	flight	open
+Relation	T1	T10	NoRel	true	approach	exit
+Relation	T1	T14	NoRel	true	approach	scheduled
+Relation	T10	T13	NoRel	true	exit	cited
+Relation	T10	T16	NoRel	true	exit	death
+Relation	T11	T18	NoRel	true	survived	emergency
+Relation	T12	T18	NoRel	true	evacuation	emergency
+Relation	T12	T2	NoRel	true	evacuation	accident
+Relation	T12	T8	NoRel	true	evacuation	failing
+Relation	T13	T15	NoRel	true	cited	crashed
+Relation	T14	T18	NoRel	true	scheduled	emergency
+Relation	T15	T11	NoRel	true	crashed	survived
+Relation	T16	T4	NoRel	true	death	survived
+Relation	T17	T7	NoRel	true	visibility	fire
+Relation	T18	T6	NoRel	true	emergency	died
+Relation	T18	T9	NoRel	true	emergency	open
+Relation	T2	T19	NoRel	true	accident	instructions
+Relation	T20	T4	NoRel	true	assist	survived
+Relation	T20	T7	NoRel	true	assist	fire
+Relation	T3	T18	NoRel	true	notable	emergency
+Relation	T3	T2	NoRel	true	notable	accident
+Relation	T4	T17	NoRel	true	survived	visibility
+Relation	T4	T19	NoRel	true	survived	instructions
+Relation	T5	T1	NoRel	true	impact	approach
+Relation	T6	T1	NoRel	true	died	approach
+Relation	T6	T15	NoRel	true	died	crashed
+Relation	T6	T18	NoRel	true	died	emergency
+Relation	T6	T2	NoRel	true	died	accident
+Relation	T6	T8	NoRel	true	died	failing
+Relation	T7	T17	NoRel	true	fire	visibility
+Relation	T7	T8	NoRel	true	fire	failing
+Relation	T7	T9	NoRel	true	fire	open
+Relation	T8	T19	NoRel	true	failing	instructions
+Relation	T9	T11	NoRel	true	open	survived

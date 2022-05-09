@@ -1,0 +1,74 @@
+Text	La DEPRESIÓN POSNAPOLEÓNICA fue una depresión económica en Europa y Estados Unidos después del final de las guerras napoleónicas en 1815 .	En Gran Bretaña , una depresión agrícola condujo a la aprobación de las Leyes de cereales ( que polarizarían la política británica durante las siguientes tres décadas ) y ejerció una gran presión sobre el sistema de ayuda a los pobres heredado de la época isabelina .	Además , después del final de las guerras napoleónicas en 1815 , un breve auge en la fabricación textil en Inglaterra fue seguido por períodos de depresión económica industrial crónica , particularmente entre los tejedores e hilanderos textiles ( el comercio textil se concentró en Lancashire ) .	Los tejedores que podrían haber esperado ganar 15 chelines por una semana de seis días en 1803 , vieron cómo sus salarios se redujeron a 5 chelines o incluso a 4 chelines y 6 peniques en 1818 .	Los industriales , que estaban recortando salarios sin ofrecer alivio , culparon a las fuerzas del mercado generadas por las réplicas de las guerras napoleónicas .
+Event	T0	DEPRESIÓN	EVENT	3
+Event	T1	depresión	EVENT	36
+Event	T2	final	EVENT	95
+Event	T4	depresión	EVENT	161
+Event	T5	condujo	EVENT	180
+Event	T7	polarizarían	EVENT	235
+Event	T8	ejerció	EVENT	310
+Event	T9	presión	EVENT	327
+Event	T10	final	EVENT	428
+Event	T11	guerras	EVENT	441
+Event	T12	auge	EVENT	481
+Event	T13	seguido	EVENT	529
+Event	T14	períodos	EVENT	541
+Event	T16	concentró	EVENT	676
+Event	T17	ganar	EVENT	745
+Event	T18	vieron	EVENT	801
+Event	T19	redujeron	EVENT	829
+Event	T20	recortando	EVENT	929
+Event	T21	culparon	EVENT	970
+Event	T22	generadas	EVENT	1005
+Event	T23	réplicas	EVENT	1023
+Event	T24	guerras	EVENT	1039
+Event	T3	guerras napoleónicas	EVENT	108
+Event	T6	Leyes de cereales	EVENT	211
+Relation	T3	T1	CauseEffect	true	guerras napoleónicas	depresión
+Relation	T1	T3	EffectCause	true	depresión	guerras napoleónicas
+Relation	T4	T6	CauseEffect	true	depresión	Leyes de cereales
+Relation	T6	T4	EffectCause	true	Leyes de cereales	depresión
+Relation	T0	T18	NoRel	true	DEPRESIÓN	vieron
+Relation	T0	T22	NoRel	true	DEPRESIÓN	generadas
+Relation	T0	T5	NoRel	true	DEPRESIÓN	condujo
+Relation	T0	T7	NoRel	true	DEPRESIÓN	polarizarían
+Relation	T1	T10	NoRel	true	depresión	final
+Relation	T1	T18	NoRel	true	depresión	vieron
+Relation	T10	T4	NoRel	true	final	depresión
+Relation	T12	T0	NoRel	true	auge	DEPRESIÓN
+Relation	T12	T17	NoRel	true	auge	ganar
+Relation	T13	T23	NoRel	true	seguido	réplicas
+Relation	T16	T10	NoRel	true	concentró	final
+Relation	T17	T20	NoRel	true	ganar	recortando
+Relation	T17	T22	NoRel	true	ganar	generadas
+Relation	T17	T5	NoRel	true	ganar	condujo
+Relation	T18	T11	NoRel	true	vieron	guerras
+Relation	T18	T7	NoRel	true	vieron	polarizarían
+Relation	T19	T10	NoRel	true	redujeron	final
+Relation	T19	T16	NoRel	true	redujeron	concentró
+Relation	T19	T23	NoRel	true	redujeron	réplicas
+Relation	T19	T8	NoRel	true	redujeron	ejerció
+Relation	T2	T10	NoRel	true	final	final
+Relation	T2	T19	NoRel	true	final	redujeron
+Relation	T2	T24	NoRel	true	final	guerras
+Relation	T20	T24	NoRel	true	recortando	guerras
+Relation	T21	T11	NoRel	true	culparon	guerras
+Relation	T21	T19	NoRel	true	culparon	redujeron
+Relation	T21	T2	NoRel	true	culparon	final
+Relation	T23	T11	NoRel	true	réplicas	guerras
+Relation	T23	T7	NoRel	true	réplicas	polarizarían
+Relation	T24	T12	NoRel	true	guerras	auge
+Relation	T24	T16	NoRel	true	guerras	concentró
+Relation	T24	T3	NoRel	true	guerras	guerras napoleónicas
+Relation	T24	T5	NoRel	true	guerras	condujo
+Relation	T24	T9	NoRel	true	guerras	presión
+Relation	T3	T11	NoRel	true	guerras napoleónicas	guerras
+Relation	T3	T24	NoRel	true	guerras napoleónicas	guerras
+Relation	T4	T16	NoRel	true	depresión	concentró
+Relation	T4	T5	NoRel	true	depresión	condujo
+Relation	T6	T13	NoRel	true	Leyes de cereales	seguido
+Relation	T6	T5	NoRel	true	Leyes de cereales	condujo
+Relation	T7	T10	NoRel	true	polarizarían	final
+Relation	T7	T2	NoRel	true	polarizarían	final
+Relation	T9	T10	NoRel	true	presión	final
+Relation	T9	T11	NoRel	true	presión	guerras
+Relation	T9	T21	NoRel	true	presión	culparon

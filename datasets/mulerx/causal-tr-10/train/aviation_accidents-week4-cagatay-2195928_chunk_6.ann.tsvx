@@ -1,0 +1,23 @@
+Text	Ölen veya yaralanan olmadı .	Uçak 4 gün içinde hurdaya ayrıldı .	15 Ocak 2017'yi 16 Ocak'a bağlayan gece , Boeing 747 - 412F TC - MCL uçağının mürettebatı , kargo yükünü taşımak için Hong Kong Uluslararası Havalimanı'ndan Manas Havalimanı ( Bişkek ) üzerinden İstanbul'daki Atatürk Havalimanı'na 6491 sefer sayılı uçuşu gerçekleştiriyordu .	85.618 kilo yük uçağa Hong Kong'da yüklenmişti .	Kırgızistan makamlarının ve IAC'nin açıklamalarına göre Manas Havalimanı ise mürettebat değişikliği ve yakıt ikmali için transit havalimanı olarak planlanmıştı .
+Event	T0	Ölen	EVENT	0
+Event	T1	yaralanan	EVENT	10
+Event	T2	ayrıldı	EVENT	55
+Event	T5	yüklenmişti	EVENT	376
+Event	T6	açıklamalarına	EVENT	426
+Event	T7	değişikliği	EVENT	478
+Event	T8	ikmali	EVENT	499
+Event	T9	planlanmıştı	EVENT	537
+Event	T3	uçuşu	EVENT	314
+Relation	T7	T9	CauseEffect	true	değişikliği	planlanmıştı
+Relation	T9	T7	EffectCause	true	planlanmıştı	değişikliği
+Relation	T8	T9	CauseEffect	true	ikmali	planlanmıştı
+Relation	T9	T8	EffectCause	true	planlanmıştı	ikmali
+Relation	T1	T0	NoRel	true	yaralanan	Ölen
+Relation	T1	T2	NoRel	true	yaralanan	ayrıldı
+Relation	T3	T0	NoRel	true	uçuşu	Ölen
+Relation	T5	T2	NoRel	true	yüklenmişti	ayrıldı
+Relation	T7	T0	NoRel	true	değişikliği	Ölen
+Relation	T8	T2	NoRel	true	ikmali	ayrıldı
+Relation	T8	T5	NoRel	true	ikmali	yüklenmişti
+Relation	T8	T6	NoRel	true	ikmali	açıklamalarına
+Relation	T8	T7	NoRel	true	ikmali	değişikliği

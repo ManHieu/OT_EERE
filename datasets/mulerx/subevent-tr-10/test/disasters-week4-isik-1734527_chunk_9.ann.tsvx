@@ -1,0 +1,21 @@
+Text	Obrenovac'te yer alan ve ülkenin % 50'sinin elektriğini sağlayan Nikola Tesla Elektrik Santrali kum torbaları ve oluşturulan setler ile sel sularından korundu .	Birkaç küçük nehrin yer aldığı ve dağlar arasında bir vadide kurulan Maçva İlçesi'nin Krupanj kasabasında sel ve toprak kaymaları nedeniyle 500 hâne ciddi hasar gördü ve 20 tanesi oturulamaz hâle geldi .	Valjevo şehrine bağlı Rebelj köyü , heyelanlar nedeniyle haritadan silindi .	Hırvatistan , Sırbistan ve Bosna - Hersek'e göre sellerden daha az ölçüde etkilendi .	En ciddi hasar güney Slavonya bölgesinde meydana geldi .
+Event	T0	korundu	EVENT	151
+Event	T1	sel	EVENT	267
+Event	T2	kaymaları	EVENT	281
+Event	T3	gördü	EVENT	322
+Event	T4	geldi	EVENT	357
+Event	T5	heyelanlar	EVENT	401
+Event	T6	silindi	EVENT	432
+Event	T7	etkilendi	EVENT	516
+Event	T8	hasar	EVENT	537
+Event	T9	geldi	EVENT	577
+Event	T10	setler	EVENT	125
+Event	T11	sellerden	EVENT	491
+Relation	T0	T9	NoRel	true	korundu	geldi
+Relation	T11	T5	NoRel	true	sellerden	heyelanlar
+Relation	T2	T7	NoRel	true	kaymaları	etkilendi
+Relation	T3	T11	NoRel	true	gördü	sellerden
+Relation	T5	T7	NoRel	true	heyelanlar	etkilendi
+Relation	T8	T10	NoRel	true	hasar	setler
+Relation	T9	T6	NoRel	true	geldi	silindi
+Relation	T9	T7	NoRel	true	geldi	etkilendi

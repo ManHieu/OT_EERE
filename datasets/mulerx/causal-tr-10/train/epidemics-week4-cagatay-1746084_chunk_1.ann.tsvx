@@ -1,0 +1,30 @@
+Text	İngiltere West Sussex'te büyüyen Ravenhill , çocukluğundan itibaren tiyatroya ilgi duymuş , sekiz yaşındayken , kendinden bir yaş küçük kardeşiyle birlikte oyunlar sahnelemiştir .	1984 ile 1987 yılları arasında Bristol Üniversitesi'nde İngilizce ve Drama eğitimleri almış , serbest yönetmen , atölye lideri ve drama öğretmeni olarak çalışmıştır .	1997 yılında , Ravenhill , yeni yazarların oyunlarına yoğunlaşan Paines Plough topluluğunun edebiyat yönetmeni oldu .	2003'te Royal National Theatre'ın sanat yönetmenliğini üstlenen Nicholas Hytner'ın danışman ekibine katıldı .	Partneri doksanların başında AIDS'ten ölen Ravenhill'e , doksanların ortalarında HIV+ teşhisi koyuldu .
+Event	T0	sahnelemiştir	EVENT	164
+Event	T1	çalışmıştır	EVENT	333
+Event	T2	oldu	EVENT	458
+Event	T3	katıldı	EVENT	565
+Event	T4	ölen	EVENT	613
+Event	T5	koyuldu	EVENT	669
+Event	T6	büyüyen	EVENT	25
+Event	T7	ilgi duymuş	EVENT	78
+Event	T8	eğitimleri	EVENT	255
+Event	T9	yoğunlaşan	EVENT	401
+Event	T10	üstlenen	EVENT	520
+Event	T11	AIDS'ten	EVENT	604
+Relation	T7	T0	CauseEffect	true	ilgi duymuş	sahnelemiştir
+Relation	T0	T7	EffectCause	true	sahnelemiştir	ilgi duymuş
+Relation	T8	T1	CauseEffect	true	eğitimleri	çalışmıştır
+Relation	T1	T8	EffectCause	true	çalışmıştır	eğitimleri
+Relation	T11	T4	CauseEffect	true	AIDS'ten	ölen
+Relation	T4	T11	EffectCause	true	ölen	AIDS'ten
+Relation	T11	T5	CauseEffect	true	AIDS'ten	koyuldu
+Relation	T5	T11	EffectCause	true	koyuldu	AIDS'ten
+Relation	T0	T11	NoRel	true	sahnelemiştir	AIDS'ten
+Relation	T1	T10	NoRel	true	çalışmıştır	üstlenen
+Relation	T2	T10	NoRel	true	oldu	üstlenen
+Relation	T2	T8	NoRel	true	oldu	eğitimleri
+Relation	T3	T6	NoRel	true	katıldı	büyüyen
+Relation	T4	T7	NoRel	true	ölen	ilgi duymuş
+Relation	T6	T8	NoRel	true	büyüyen	eğitimleri
+Relation	T8	T0	NoRel	true	eğitimleri	sahnelemiştir
+Relation	T9	T2	NoRel	true	yoğunlaşan	oldu

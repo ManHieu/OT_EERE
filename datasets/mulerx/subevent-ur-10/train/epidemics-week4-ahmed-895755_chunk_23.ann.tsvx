@@ -1,0 +1,79 @@
+Text	اسی طرح مارچ 2020ء میں ڈوئچے ٹیلی کوم نے وفاقی حکومتی ایجنسی ، رابرٹ کوخ انسٹی ٹیوٹ کو نجی موبائل ڈیٹا دیا تاکہ وائرس کے پھیلاؤ سے بچا اور تحقیق کی جا سکے ۔	روس نے چہرے کی شناخت کرنے والی ٹیکنالوجی تیاری کی تاکہ قرنطینہ سے فرار ہونے والوں کا پتا لگایا جائے ۔	اٹلی کے مقامی ہیلتھ کمیشنر جیولیو گالیرا نے کہا کہ ”_40 % لوگ ہر جگہ دندناتے پھر رہے ہیں _“ ، جیسا کہ اُس کمیشنر کو موبائل فون آپریٹروں نے آگاہ کیا ہے ۔	متاثر افراد کو طبی قید ، سفر کی پابندیوں ، علاج کے نقصانات یا انفیکشن کے ڈر سے ذہنی تناؤ ہو سکتا ہے ۔	ان خدشات کو دور کرنے کے لیے چینی قومی صحت کمیشن نے 27 جنوری 2020ء کو نفسیاتی بحران کے علاج کے لیے ایک قومی منصوبہ پیش کیا ۔
+Event	T0	دیا	EVENT	103
+Event	T1	پھیلاؤ	EVENT	121
+Event	T2	تحقیق	EVENT	139
+Event	T3	فرار	EVENT	223
+Event	T5	کہا	EVENT	303
+Event	T6	قید	EVENT	431
+Event	T7	پابندیوں	EVENT	444
+Event	T8	علاج	EVENT	455
+Event	T9	انفیکشن	EVENT	474
+Event	T10	تناؤ	EVENT	496
+Event	T11	علاج	EVENT	600
+Event	T12	بچا	EVENT	131
+Event	T13	شناخت	EVENT	172
+Event	T14	تیاری	EVENT	198
+Event	T15	پتا	EVENT	242
+Event	T4	دندناتے	EVENT	328
+Event	T16	آگاہ	EVENT	398
+Event	T17	متاثر	EVENT	412
+Event	T18	نقصانات	EVENT	463
+Event	T19	ڈر	EVENT	485
+Event	T20	دور	EVENT	526
+Event	T21	پیش	EVENT	628
+Event	T22	بحران	EVENT	591
+Relation	T20	T21	SuperSub	true	دور	پیش
+Relation	T21	T20	SubSuper	true	پیش	دور
+Relation	T1	T12	NoRel	true	پھیلاؤ	بچا
+Relation	T10	T0	NoRel	true	تناؤ	دیا
+Relation	T10	T19	NoRel	true	تناؤ	ڈر
+Relation	T11	T22	NoRel	true	علاج	بحران
+Relation	T12	T4	NoRel	true	بچا	دندناتے
+Relation	T12	T6	NoRel	true	بچا	قید
+Relation	T13	T20	NoRel	true	شناخت	دور
+Relation	T14	T6	NoRel	true	تیاری	قید
+Relation	T14	T7	NoRel	true	تیاری	پابندیوں
+Relation	T15	T17	NoRel	true	پتا	متاثر
+Relation	T15	T20	NoRel	true	پتا	دور
+Relation	T15	T7	NoRel	true	پتا	پابندیوں
+Relation	T16	T10	NoRel	true	آگاہ	تناؤ
+Relation	T17	T21	NoRel	true	متاثر	پیش
+Relation	T17	T6	NoRel	true	متاثر	قید
+Relation	T18	T11	NoRel	true	نقصانات	علاج
+Relation	T18	T2	NoRel	true	نقصانات	تحقیق
+Relation	T18	T6	NoRel	true	نقصانات	قید
+Relation	T19	T0	NoRel	true	ڈر	دیا
+Relation	T19	T5	NoRel	true	ڈر	کہا
+Relation	T2	T14	NoRel	true	تحقیق	تیاری
+Relation	T2	T18	NoRel	true	تحقیق	نقصانات
+Relation	T20	T1	NoRel	true	دور	پھیلاؤ
+Relation	T20	T13	NoRel	true	دور	شناخت
+Relation	T20	T8	NoRel	true	دور	علاج
+Relation	T21	T15	NoRel	true	پیش	پتا
+Relation	T21	T8	NoRel	true	پیش	علاج
+Relation	T22	T13	NoRel	true	بحران	شناخت
+Relation	T22	T6	NoRel	true	بحران	قید
+Relation	T22	T7	NoRel	true	بحران	پابندیوں
+Relation	T3	T0	NoRel	true	فرار	دیا
+Relation	T3	T2	NoRel	true	فرار	تحقیق
+Relation	T3	T9	NoRel	true	فرار	انفیکشن
+Relation	T4	T13	NoRel	true	دندناتے	شناخت
+Relation	T4	T15	NoRel	true	دندناتے	پتا
+Relation	T4	T6	NoRel	true	دندناتے	قید
+Relation	T5	T15	NoRel	true	کہا	پتا
+Relation	T5	T20	NoRel	true	کہا	دور
+Relation	T6	T0	NoRel	true	قید	دیا
+Relation	T6	T12	NoRel	true	قید	بچا
+Relation	T6	T19	NoRel	true	قید	ڈر
+Relation	T6	T22	NoRel	true	قید	بحران
+Relation	T6	T8	NoRel	true	قید	علاج
+Relation	T7	T1	NoRel	true	پابندیوں	پھیلاؤ
+Relation	T7	T10	NoRel	true	پابندیوں	تناؤ
+Relation	T7	T16	NoRel	true	پابندیوں	آگاہ
+Relation	T8	T1	NoRel	true	علاج	پھیلاؤ
+Relation	T8	T11	NoRel	true	علاج	علاج
+Relation	T8	T14	NoRel	true	علاج	تیاری
+Relation	T8	T17	NoRel	true	علاج	متاثر
+Relation	T8	T18	NoRel	true	علاج	نقصانات
+Relation	T8	T2	NoRel	true	علاج	تحقیق
+Relation	T8	T5	NoRel	true	علاج	کہا

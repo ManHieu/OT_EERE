@@ -1,0 +1,79 @@
+Text	Depressurization began when the shuttle forebody separated from the midbody 41 seconds after loss of control .	The crew module pressure vessel was penetrated when it collided with the fuselage , and the " depressurization rate was high enough to incapacitate the crew members within seconds so that they were unable to perform actions such as lowering their visors . "	The crew lost consciousness , suffering massive pulmonary barotrauma , ebullism and cessation of respiration .	The shuttle 's separated nose section rotated unsteadily about all three axes .	The crew ( now unconscious or dead ) were unable to brace against this motion , and were also harmed by aspects of their protective equipment :
+Event	T0	began	EVENT	17
+Event	T1	separated	EVENT	49
+Event	T2	loss	EVENT	93
+Event	T3	penetrated	EVENT	147
+Event	T4	collided	EVENT	166
+Event	T5	rate	EVENT	222
+Event	T6	incapacitate	EVENT	246
+Event	T7	actions	EVENT	327
+Event	T8	lowering	EVENT	343
+Event	T9	barotrauma	EVENT	427
+Event	T10	ebullism	EVENT	440
+Event	T11	cessation	EVENT	453
+Event	T12	respiration	EVENT	466
+Event	T13	separated	EVENT	495
+Event	T14	rotated	EVENT	518
+Event	T15	dead	EVENT	590
+Event	T16	brace	EVENT	612
+Event	T17	motion	EVENT	631
+Event	T18	harmed	EVENT	654
+Event	T19	lost	EVENT	378
+Event	T20	unconscious	EVENT	575
+Relation	T1	T0	SuperSub	true	separated	began
+Relation	T0	T1	SubSuper	true	began	separated
+Relation	T2	T1	SuperSub	true	loss	separated
+Relation	T1	T2	SubSuper	true	separated	loss
+Relation	T4	T3	SuperSub	true	collided	penetrated
+Relation	T3	T4	SubSuper	true	penetrated	collided
+Relation	T6	T8	SuperSub	true	incapacitate	lowering
+Relation	T8	T6	SubSuper	true	lowering	incapacitate
+Relation	T19	T9	SuperSub	true	lost	barotrauma
+Relation	T9	T19	SubSuper	true	barotrauma	lost
+Relation	T19	T10	SuperSub	true	lost	ebullism
+Relation	T10	T19	SubSuper	true	ebullism	lost
+Relation	T19	T11	SuperSub	true	lost	cessation
+Relation	T11	T19	SubSuper	true	cessation	lost
+Relation	T0	T2	NoRel	true	began	loss
+Relation	T1	T18	NoRel	true	separated	harmed
+Relation	T10	T12	NoRel	true	ebullism	respiration
+Relation	T11	T1	NoRel	true	cessation	separated
+Relation	T11	T5	NoRel	true	cessation	rate
+Relation	T11	T9	NoRel	true	cessation	barotrauma
+Relation	T12	T14	NoRel	true	respiration	rotated
+Relation	T13	T11	NoRel	true	separated	cessation
+Relation	T13	T12	NoRel	true	separated	respiration
+Relation	T14	T2	NoRel	true	rotated	loss
+Relation	T14	T4	NoRel	true	rotated	collided
+Relation	T15	T13	NoRel	true	dead	separated
+Relation	T15	T19	NoRel	true	dead	lost
+Relation	T15	T3	NoRel	true	dead	penetrated
+Relation	T15	T8	NoRel	true	dead	lowering
+Relation	T16	T10	NoRel	true	brace	ebullism
+Relation	T16	T5	NoRel	true	brace	rate
+Relation	T16	T9	NoRel	true	brace	barotrauma
+Relation	T17	T20	NoRel	true	motion	unconscious
+Relation	T18	T14	NoRel	true	harmed	rotated
+Relation	T18	T2	NoRel	true	harmed	loss
+Relation	T19	T12	NoRel	true	lost	respiration
+Relation	T19	T13	NoRel	true	lost	separated
+Relation	T19	T15	NoRel	true	lost	dead
+Relation	T19	T18	NoRel	true	lost	harmed
+Relation	T19	T5	NoRel	true	lost	rate
+Relation	T19	T8	NoRel	true	lost	lowering
+Relation	T2	T16	NoRel	true	loss	brace
+Relation	T2	T4	NoRel	true	loss	collided
+Relation	T20	T17	NoRel	true	unconscious	motion
+Relation	T3	T15	NoRel	true	penetrated	dead
+Relation	T4	T0	NoRel	true	collided	began
+Relation	T5	T15	NoRel	true	rate	dead
+Relation	T5	T17	NoRel	true	rate	motion
+Relation	T5	T20	NoRel	true	rate	unconscious
+Relation	T5	T7	NoRel	true	rate	actions
+Relation	T8	T11	NoRel	true	lowering	cessation
+Relation	T8	T14	NoRel	true	lowering	rotated
+Relation	T8	T17	NoRel	true	lowering	motion
+Relation	T8	T19	NoRel	true	lowering	lost
+Relation	T8	T3	NoRel	true	lowering	penetrated
+Relation	T9	T14	NoRel	true	barotrauma	rotated
+Relation	T9	T15	NoRel	true	barotrauma	dead

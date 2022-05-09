@@ -1,0 +1,41 @@
+Text	2004 HINT OKYANUSU DEPREMI VE TSUNAMISI , 26 Aralık 2004 günü saat 00: 58 : 53 UTC'de meydana gelmiş , merkezi Endonezya'nın Sumatra adasının batı kıyısı açıklarında olan depremdir .	Batma nedeniyle meydana gelen deprem , Hint Okyanusu'na kıyısı olan karaları vuran , yüksekliği 30 metreye kadar çıkan tsunamiler üretti ve bu nedenle on dört ülkede 230 binden fazla kişi öldü .	Bu , tarihteki en çok ölüme yol açan doğal afetlerden biriydi .	Endonezya en ağır zararı alan ülkeydi , onu Sri Lanka , Hindistan ve Tayland izledi .	küçükresim | sol | 200px | Tsunaminin yayılışı ve etkilediği yerler
+Event	T1	TSUNAMISI	EVENT	30
+Event	T2	gelmiş	EVENT	94
+Event	T3	depremdir	EVENT	171
+Event	T4	Batma	EVENT	183
+Event	T5	deprem	EVENT	213
+Event	T6	vuran	EVENT	260
+Event	T7	üretti	EVENT	313
+Event	T8	öldü	EVENT	371
+Event	T9	açan	EVENT	410
+Event	T10	alan	EVENT	467
+Event	T11	izledi	EVENT	519
+Event	T12	yayılışı	EVENT	566
+Event	T13	etkilediği	EVENT	578
+Event	T14	2004 HINT OKYANUSU DEPREMI	EVENT	0
+Event	T15	Tsunaminin	EVENT	555
+Relation	T14	T1	SuperSub	true	2004 HINT OKYANUSU DEPREMI	TSUNAMISI
+Relation	T1	T14	SubSuper	true	TSUNAMISI	2004 HINT OKYANUSU DEPREMI
+Relation	T14	T6	SuperSub	true	2004 HINT OKYANUSU DEPREMI	vuran
+Relation	T6	T14	SubSuper	true	vuran	2004 HINT OKYANUSU DEPREMI
+Relation	T14	T7	SuperSub	true	2004 HINT OKYANUSU DEPREMI	üretti
+Relation	T7	T14	SubSuper	true	üretti	2004 HINT OKYANUSU DEPREMI
+Relation	T14	T8	SuperSub	true	2004 HINT OKYANUSU DEPREMI	öldü
+Relation	T8	T14	SubSuper	true	öldü	2004 HINT OKYANUSU DEPREMI
+Relation	T14	T10	SuperSub	true	2004 HINT OKYANUSU DEPREMI	alan
+Relation	T10	T14	SubSuper	true	alan	2004 HINT OKYANUSU DEPREMI
+Relation	T1	T10	NoRel	true	TSUNAMISI	alan
+Relation	T11	T1	NoRel	true	izledi	TSUNAMISI
+Relation	T11	T15	NoRel	true	izledi	Tsunaminin
+Relation	T11	T6	NoRel	true	izledi	vuran
+Relation	T12	T4	NoRel	true	yayılışı	Batma
+Relation	T13	T2	NoRel	true	etkilediği	gelmiş
+Relation	T14	T12	NoRel	true	2004 HINT OKYANUSU DEPREMI	yayılışı
+Relation	T2	T4	NoRel	true	gelmiş	Batma
+Relation	T3	T4	NoRel	true	depremdir	Batma
+Relation	T7	T13	NoRel	true	üretti	etkilediği
+Relation	T8	T2	NoRel	true	öldü	gelmiş
+Relation	T9	T1	NoRel	true	açan	TSUNAMISI
+Relation	T9	T12	NoRel	true	açan	yayılışı
+Relation	T9	T3	NoRel	true	açan	depremdir
+Relation	T9	T8	NoRel	true	açan	öldü

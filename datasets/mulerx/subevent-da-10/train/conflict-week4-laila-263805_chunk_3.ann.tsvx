@@ -1,0 +1,58 @@
+Text	Forsamlingen drog herefter til de lokale kaserner og fik overtalt de fleste soldater til at skifte side til støtte for revolutionen .	Om natten til den 8. november 1918 drog Bayerns kong Ludwig i eksil .	Den 8. november erklærede Eisner Bayern for en fristat - en erklæring , der afskaffede monarkiet , der havde regeret i Bayern i mere end 700 år og Eisner blev af et nedsat arbejder- og soldaterråd udråbt til ministerpræsident i Bayern .	På trods af , at han talte for grundlæggelsen af en socialistisk republik , distancerede han sig fra de russiske bolsjevikker , idet Eisners regering ville respektere den private ejendomsret .	I et forsøg på at opnå bedre betingelser for Bayern i forbindelse med fredsslutningen efter 1. verdenskrig overlod Eisner til England og Frankrig en række fortrolige dokumenter , der pålagde Tyskland skylden for udbruddet af krigen .
+Event	T0	drog	EVENT	13
+Event	T1	overtalt	EVENT	57
+Event	T2	skifte	EVENT	92
+Event	T3	drog	EVENT	169
+Event	T4	erklærede	EVENT	220
+Event	T5	erklæring	EVENT	264
+Event	T6	afskaffede	EVENT	280
+Event	T7	regeret	EVENT	313
+Event	T8	nedsat	EVENT	369
+Event	T9	udråbt	EVENT	401
+Event	T10	talte	EVENT	462
+Event	T11	forsøg	EVENT	639
+Event	T12	fredsslutningen	EVENT	704
+Event	T13	overlod	EVENT	741
+Event	T14	pålagde	EVENT	817
+Event	T15	udbruddet	EVENT	846
+Event	T16	krigen	EVENT	859
+Event	T17	distancerede	EVENT	517
+Event	T18	respektere	EVENT	597
+Event	T19	1. verdenskrig	EVENT	726
+Event	T20	opnå	EVENT	652
+Relation	T0	T13	NoRel	true	drog	overlod
+Relation	T0	T18	NoRel	true	drog	respektere
+Relation	T1	T9	NoRel	true	overtalt	udråbt
+Relation	T10	T13	NoRel	true	talte	overlod
+Relation	T10	T17	NoRel	true	talte	distancerede
+Relation	T10	T18	NoRel	true	talte	respektere
+Relation	T10	T3	NoRel	true	talte	drog
+Relation	T12	T10	NoRel	true	fredsslutningen	talte
+Relation	T14	T12	NoRel	true	pålagde	fredsslutningen
+Relation	T14	T17	NoRel	true	pålagde	distancerede
+Relation	T14	T8	NoRel	true	pålagde	nedsat
+Relation	T15	T1	NoRel	true	udbruddet	overtalt
+Relation	T15	T11	NoRel	true	udbruddet	forsøg
+Relation	T15	T3	NoRel	true	udbruddet	drog
+Relation	T15	T5	NoRel	true	udbruddet	erklæring
+Relation	T15	T6	NoRel	true	udbruddet	afskaffede
+Relation	T17	T8	NoRel	true	distancerede	nedsat
+Relation	T18	T12	NoRel	true	respektere	fredsslutningen
+Relation	T19	T2	NoRel	true	1. verdenskrig	skifte
+Relation	T19	T6	NoRel	true	1. verdenskrig	afskaffede
+Relation	T2	T9	NoRel	true	skifte	udråbt
+Relation	T20	T10	NoRel	true	opnå	talte
+Relation	T20	T11	NoRel	true	opnå	forsøg
+Relation	T3	T12	NoRel	true	drog	fredsslutningen
+Relation	T3	T2	NoRel	true	drog	skifte
+Relation	T3	T4	NoRel	true	drog	erklærede
+Relation	T4	T1	NoRel	true	erklærede	overtalt
+Relation	T4	T14	NoRel	true	erklærede	pålagde
+Relation	T4	T16	NoRel	true	erklærede	krigen
+Relation	T6	T17	NoRel	true	afskaffede	distancerede
+Relation	T6	T7	NoRel	true	afskaffede	regeret
+Relation	T7	T11	NoRel	true	regeret	forsøg
+Relation	T8	T10	NoRel	true	nedsat	talte
+Relation	T8	T2	NoRel	true	nedsat	skifte
+Relation	T8	T9	NoRel	true	nedsat	udråbt
+Relation	T9	T10	NoRel	true	udråbt	talte

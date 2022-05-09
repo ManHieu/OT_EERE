@@ -1,0 +1,32 @@
+Text	En su breve reinado Trajano Decio tuvo que realizar importantes operaciones bélicas contra los godos , quienes cruzaron el Danubio para saquear los territorios de Mesia y Tracia .	Esta es la primera ocasión de importancia en la que los godos , que más tarde tendrían un papel decisivo , aparecen en la documentación histórica .	No se conocen muchos detalles de la campaña y hasta qué punto Trajano Decio y su hijo mayor Herenio Etrusco estuvieron personalmente envueltos .	Los godos bajo el rey Cniva fueron sorprendidos en el asedio de Nicópolis en las orillas del Danubio .	Al acercarse el ejército romano traspasaron las montañas balcánicas , pero entonces regresaron y sorprendieron a los romanos cerca de Beroë ( moderna Stara Zagora ) , saqueando su campamento y dispersando a las tropas romanas .
+Event	T0	reinado	EVENT	12
+Event	T1	tuvo	EVENT	34
+Event	T2	realizar	EVENT	43
+Event	T3	cruzaron	EVENT	111
+Event	T4	saquear	EVENT	136
+Event	T5	ocasión	EVENT	199
+Event	T6	aparecen	EVENT	287
+Event	T7	envueltos	EVENT	461
+Event	T8	sorprendidos	EVENT	508
+Event	T9	asedio	EVENT	527
+Event	T10	sorprendieron	EVENT	673
+Event	T11	saqueando	EVENT	743
+Event	T12	dispersando	EVENT	769
+Relation	T10	T11	CauseEffect	true	sorprendieron	saqueando
+Relation	T11	T10	EffectCause	true	saqueando	sorprendieron
+Relation	T0	T7	NoRel	true	reinado	envueltos
+Relation	T1	T4	NoRel	true	tuvo	saquear
+Relation	T10	T3	NoRel	true	sorprendieron	cruzaron
+Relation	T11	T12	NoRel	true	saqueando	dispersando
+Relation	T11	T7	NoRel	true	saqueando	envueltos
+Relation	T12	T5	NoRel	true	dispersando	ocasión
+Relation	T2	T7	NoRel	true	realizar	envueltos
+Relation	T2	T9	NoRel	true	realizar	asedio
+Relation	T3	T0	NoRel	true	cruzaron	reinado
+Relation	T3	T1	NoRel	true	cruzaron	tuvo
+Relation	T3	T7	NoRel	true	cruzaron	envueltos
+Relation	T4	T12	NoRel	true	saquear	dispersando
+Relation	T5	T10	NoRel	true	ocasión	sorprendieron
+Relation	T5	T9	NoRel	true	ocasión	asedio
+Relation	T8	T11	NoRel	true	sorprendidos	saqueando
+Relation	T8	T6	NoRel	true	sorprendidos	aparecen

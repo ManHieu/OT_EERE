@@ -1,0 +1,21 @@
+Text	Yüzlerce araba ve onlarca TIR Marmara Denizi'ne sürüklendi .	Selde kaybolan bir kişinin cesedi denizin karşı kıyısında bulundu .	Selden sonra , özellikle İkitelli'de yağmalama yaşanmıştır .	12 Eylül 2009'da Selimpaşa'yı ziyaret eden Kadir Topbaş , halktan tepki görmüştür .	1999 Gölcük depreminden bu yana İstanbul'un yaşadığı en büyük afet olarak nitelendirilen olay , 18 ve 27 Temmuz 2017 tarihli iki büyük İstanbul yağmur felaketiyle anımsanmıştır .
+Event	T0	sürüklendi	EVENT	48
+Event	T3	bulundu	EVENT	119
+Event	T4	yaşanmıştır	EVENT	176
+Event	T5	ziyaret	EVENT	220
+Event	T6	görmüştür	EVENT	262
+Event	T7	depreminden	EVENT	286
+Event	T9	afet	EVENT	336
+Event	T10	olay	EVENT	363
+Event	T11	anımsanmıştır	EVENT	437
+Event	T1	Selde	EVENT	61
+Relation	T0	T3	NoRel	true	sürüklendi	bulundu
+Relation	T1	T11	NoRel	true	Selde	anımsanmıştır
+Relation	T10	T3	NoRel	true	olay	bulundu
+Relation	T10	T4	NoRel	true	olay	yaşanmıştır
+Relation	T3	T4	NoRel	true	bulundu	yaşanmıştır
+Relation	T4	T11	NoRel	true	yaşanmıştır	anımsanmıştır
+Relation	T4	T5	NoRel	true	yaşanmıştır	ziyaret
+Relation	T6	T4	NoRel	true	görmüştür	yaşanmıştır
+Relation	T7	T0	NoRel	true	depreminden	sürüklendi
+Relation	T7	T10	NoRel	true	depreminden	olay

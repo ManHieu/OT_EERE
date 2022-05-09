@@ -1,0 +1,20 @@
+Text	Kaza , Arjantin'in başkenti Buenos Aires'in 1170 km kuzeybatısındaki Villa Castelli kasabasında meydana gelmiştir .	Kazada hayatını kaybedenlerden sekizi Fransız uyrukluydu .	Bunlar arasında ünlü sporculardan yelkenci Florence Arthaud , 2012 Yaz Olimpiyatları'nda altın madalya kazanmış yüzücü Camille Muffat ve 2008 Yaz Olimpiyatları'nda bronz madalya kazanmış boksör Alexis Vastine de vardı .	Kazanın gerçekleştiği sırada havanın " iyi " olduğu açıklanmıştır .	Kaza esnasında bir patlama sesinin duyulduğu ve iki helikopterin havada çarpıştığı açıklanmıştır .
+Event	T0	Kaza	EVENT	0
+Event	T3	kazanmış	EVENT	278
+Event	T5	açıklanmıştır	EVENT	447
+Event	T6	Kaza	EVENT	463
+Event	T7	duyulduğu	EVENT	498
+Event	T8	açıklanmıştır	EVENT	546
+Event	T1	meydana gelmiştir	EVENT	96
+Event	T2	kaybedenlerden	EVENT	132
+Event	T9	kazanmış	EVENT	353
+Event	T4	Kazanın	EVENT	395
+Relation	T6	T7	SuperSub	true	Kaza	duyulduğu
+Relation	T7	T6	SubSuper	true	duyulduğu	Kaza
+Relation	T0	T3	NoRel	true	Kaza	kazanmış
+Relation	T2	T4	NoRel	true	kaybedenlerden	Kazanın
+Relation	T2	T6	NoRel	true	kaybedenlerden	Kaza
+Relation	T3	T7	NoRel	true	kazanmış	duyulduğu
+Relation	T6	T1	NoRel	true	Kaza	meydana gelmiştir
+Relation	T6	T9	NoRel	true	Kaza	kazanmış
+Relation	T8	T9	NoRel	true	açıklanmıştır	kazanmış

@@ -1,0 +1,40 @@
+Text	Pero al aterrizar , se sale de pista y se estrella contra la torre de control , y se incendia .	Fallece el piloto , y 41 personas resultan heridas .	El aparato , un ATR-72 , tenía poco más de ocho años , y ya había operado anteriormente para Bangkok Airways .	El fuselaje de la aeronave pasó algunos años en carreteras en diferentes partes de Samui antes de ser hundido en octubre de 2013 como parte del Proyecto de arrecifes artificiales de Majcha Air Samui .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil - Anexo : Accidentes por fabricante de aeronave
+Event	T0	sale	EVENT	23
+Event	T1	estrella	EVENT	42
+Event	T2	incendia	EVENT	85
+Event	T3	Fallece	EVENT	96
+Event	T4	heridas	EVENT	139
+Event	T5	operado	EVENT	215
+Event	T6	fuselaje	EVENT	263
+Event	T7	pasó	EVENT	287
+Event	T8	hundido	EVENT	362
+Event	T9	arrecifes	EVENT	416
+Event	T10	Accidente	EVENT	463
+Event	T11	Accidentes	EVENT	495
+Event	T12	Accidentes	EVENT	559
+Event	T13	Accidentes	EVENT	623
+Relation	T0	T1	CauseEffect	true	sale	estrella
+Relation	T1	T0	EffectCause	true	estrella	sale
+Relation	T1	T2	CauseEffect	true	estrella	incendia
+Relation	T2	T1	EffectCause	true	incendia	estrella
+Relation	T2	T3	CauseEffect	true	incendia	Fallece
+Relation	T3	T2	EffectCause	true	Fallece	incendia
+Relation	T2	T4	CauseEffect	true	incendia	heridas
+Relation	T4	T2	EffectCause	true	heridas	incendia
+Relation	T11	T1	NoRel	true	Accidentes	estrella
+Relation	T11	T6	NoRel	true	Accidentes	fuselaje
+Relation	T11	T9	NoRel	true	Accidentes	arrecifes
+Relation	T12	T10	NoRel	true	Accidentes	Accidente
+Relation	T13	T10	NoRel	true	Accidentes	Accidente
+Relation	T13	T3	NoRel	true	Accidentes	Fallece
+Relation	T13	T6	NoRel	true	Accidentes	fuselaje
+Relation	T4	T1	NoRel	true	heridas	estrella
+Relation	T4	T3	NoRel	true	heridas	Fallece
+Relation	T4	T6	NoRel	true	heridas	fuselaje
+Relation	T4	T9	NoRel	true	heridas	arrecifes
+Relation	T5	T10	NoRel	true	operado	Accidente
+Relation	T7	T10	NoRel	true	pasó	Accidente
+Relation	T7	T13	NoRel	true	pasó	Accidentes
+Relation	T7	T5	NoRel	true	pasó	operado
+Relation	T8	T11	NoRel	true	hundido	Accidentes
+Relation	T9	T10	NoRel	true	arrecifes	Accidente

@@ -1,0 +1,15 @@
+Text	Sunucu Müge Anlı ise , sözlerinin arkasında olduğunu ve sözlerinin yanlış anlaşıldığını belirterek , özür dilemedi .	Van'daki atv kameramanı Hakan Gülte , Müge Anlı'nın sözleri nedeniyle bir arkadaşına saldırıldığını ve kendisinin de tehlikede olduğunu Twitter sayfası üzerinden duyurdu .	CNN Türk , Müge Anlı'ya dava açıldığı konusunda internette yayınladığı habere bir not yazarak , _ " Toplumsal sorumluluk bilinci gereği bu görüntüleri yayınlamadık ve yayınlamayacağız .	" _ dedi .	RTÜK , Müge Anlı'nın yayında söylediği sözler nedeniyle ATV'ye para cezası verdi .
+Event	T1	sözleri	EVENT	169
+Event	T3	duyurdu	EVENT	279
+Event	T4	açıldığı	EVENT	318
+Event	T7	verdi	EVENT	561
+Event	T8	belirterek	EVENT	88
+Event	T2	habere	EVENT	360
+Event	T5	dedi	EVENT	479
+Event	T6	sözler	EVENT	525
+Relation	T3	T4	NoRel	true	duyurdu	açıldığı
+Relation	T4	T8	NoRel	true	açıldığı	belirterek
+Relation	T7	T1	NoRel	true	verdi	sözleri
+Relation	T7	T3	NoRel	true	verdi	duyurdu
+Relation	T8	T1	NoRel	true	belirterek	sözleri
+Relation	T8	T6	NoRel	true	belirterek	sözler

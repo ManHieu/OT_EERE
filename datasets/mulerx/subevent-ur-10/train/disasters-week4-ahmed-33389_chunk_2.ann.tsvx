@@ -1,0 +1,27 @@
+Text	یہ بھی ہو سکتا ہے جس مرکز سے زلزلے کی ابتدا ہو وہاں تو اتنا نقصان نہ ہو لیکن دُور دراز کے علاقے اس زلزلے سے برباد ہوجائیں اور اس کی وجہ ان کی زمینی بناوٹ اور چٹانوں میں فرق ہو ۔	زلزلے کی شدّت معلوم کرنے کے لیے ماہرینِ ارضیات نے جو دوسرا طریقہ استعمال کیا وہ سیسموگراف Seismograph تھا ۔	اس کی ابتدا دو ہزار برس قبل چین میں ہوئی ۔	132 عیسوی میں چین کے ماہرِ ارضیات چنگ ہینگ نے ایک انسٹرومنٹ ایجاد کیا تھا جسے آج Earthquake Weather Cock کہتے ہیں ۔	یہ کانسی سے بنا ہوا ایک پیالہ نما انسٹرومنٹ تھا ، جس کے اطراف اژدہے منہ کھولے بنے ہوئے تھے اور ان کے منہ میں گیندیں پھنسی ہوئی تھیں ۔
+Event	T0	زلزلے	EVENT	29
+Event	T1	نقصان	EVENT	60
+Event	T2	زلزلے	EVENT	99
+Event	T3	ہوجائیں	EVENT	114
+Event	T4	بناوٹ	EVENT	148
+Event	T5	زلزلے	EVENT	178
+Event	T6	کرنے	EVENT	198
+Event	T7	ابتدا	EVENT	292
+Event	T8	ہوئی	EVENT	322
+Event	T9	کہتے	EVENT	434
+Event	T10	بنا	EVENT	457
+Event	T11	بنے	EVENT	523
+Event	T12	پھنسی	EVENT	561
+Relation	T0	T8	NoRel	true	زلزلے	ہوئی
+Relation	T10	T7	NoRel	true	بنا	ابتدا
+Relation	T11	T0	NoRel	true	بنے	زلزلے
+Relation	T11	T12	NoRel	true	بنے	پھنسی
+Relation	T11	T3	NoRel	true	بنے	ہوجائیں
+Relation	T12	T0	NoRel	true	پھنسی	زلزلے
+Relation	T12	T7	NoRel	true	پھنسی	ابتدا
+Relation	T4	T5	NoRel	true	بناوٹ	زلزلے
+Relation	T5	T2	NoRel	true	زلزلے	زلزلے
+Relation	T5	T8	NoRel	true	زلزلے	ہوئی
+Relation	T7	T3	NoRel	true	ابتدا	ہوجائیں
+Relation	T8	T10	NoRel	true	ہوئی	بنا
+Relation	T9	T4	NoRel	true	کہتے	بناوٹ

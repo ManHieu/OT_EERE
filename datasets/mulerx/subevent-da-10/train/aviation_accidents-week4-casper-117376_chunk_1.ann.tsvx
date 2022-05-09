@@ -1,0 +1,21 @@
+Text	Flyet styrtede ned på en mark i nærheden af Shanksville i Pennsylvania , omkring 130 kilometer sydøst for Pittsburgh og 240 km nordvest for Washington D.C.	Alle 44 personer om bord ( inklusiv de fire flykaprere og syv besætningsmedlemmer ) omkom .	Der var mange vidner til nedstyrtningen , og nyhedsmedierne påbegyndte deres rapporteringer inden for en time efter , at flyet var styrtet ned .	Flyet blev slået i stykker ved nedslaget , hvilket efterlod et krater og nogle vragrester , som blev blæst flere meter væk fra nedstyrtningsstedet .	Passagerernes jordiske rester blev senere identificeret .
+Event	T0	omkom	EVENT	240
+Event	T1	nedstyrtningen	EVENT	273
+Event	T2	påbegyndte	EVENT	308
+Event	T3	rapporteringer	EVENT	325
+Event	T4	stykker	EVENT	412
+Event	T5	nedslaget	EVENT	424
+Event	T6	efterlod	EVENT	444
+Event	T7	blæst	EVENT	494
+Event	T8	nedstyrtningsstedet	EVENT	520
+Event	T9	identificeret	EVENT	584
+Event	T10	styrtede	EVENT	6
+Relation	T1	T4	NoRel	true	nedstyrtningen	stykker
+Relation	T10	T7	NoRel	true	styrtede	blæst
+Relation	T2	T6	NoRel	true	påbegyndte	efterlod
+Relation	T2	T7	NoRel	true	påbegyndte	blæst
+Relation	T3	T10	NoRel	true	rapporteringer	styrtede
+Relation	T6	T1	NoRel	true	efterlod	nedstyrtningen
+Relation	T6	T5	NoRel	true	efterlod	nedslaget
+Relation	T9	T10	NoRel	true	identificeret	styrtede
+Relation	T9	T4	NoRel	true	identificeret	stykker

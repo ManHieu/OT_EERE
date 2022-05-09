@@ -1,0 +1,28 @@
+Text	1990ء میں ہی یہ طیارہ چینی سول ایوی ایشن اتھارٹی کے سپرد کیا گیا تھا اور اِس کا رجسٹریشن نمبرB -2622 تھا ۔	اِس پرواز میں عملے کے 11 افراد سوار تھے جن میں فلائٹ افسر ژوئی ماؤ ، مقام تلاش کنندہ لان_ژنگ فینگ ، فلائٹ انجنئیر گوشومنگ بھی شامل تھے ۔	علاوہ ازیں عملے کے باقی سات افراد تھے ۔	24 فروری 1999ء کو یہ پرواز چینگدو کے ہوائی اڈے سے روانہ ہوئی اور اِس کی منزل وین_ژو لونگوان بین الاقوامی ہوائی اڈا تھی ۔	پرواز کی روانگی کے کچھ ہی وقت کے بعد جہاز کے پروں میں تکنیکی خرابی سے گڑبڑ پیدا ہوئی اور جہاز کا ابتدائی حصہ یا نوکیلا حصہ نیچے کی جانب جھکتا چلا گیا ۔
+Event	T0	پرواز	EVENT	111
+Event	T1	پرواز	EVENT	305
+Event	T3	پرواز	EVENT	405
+Event	T4	روانگی	EVENT	414
+Event	T5	خرابی	EVENT	466
+Event	T7	سپرد	EVENT	52
+Event	T8	سوار	EVENT	138
+Event	T9	شامل	EVENT	233
+Event	T10	روانہ	EVENT	334
+Event	T2	پیدا	EVENT	480
+Event	T6	جھکتا	EVENT	541
+Relation	T1	T10	SuperSub	true	پرواز	روانہ
+Relation	T10	T1	SubSuper	true	روانہ	پرواز
+Relation	T3	T4	SuperSub	true	پرواز	روانگی
+Relation	T4	T3	SubSuper	true	روانگی	پرواز
+Relation	T2	T6	SuperSub	true	پیدا	جھکتا
+Relation	T6	T2	SubSuper	true	جھکتا	پیدا
+Relation	T0	T4	NoRel	true	پرواز	روانگی
+Relation	T2	T9	NoRel	true	پیدا	شامل
+Relation	T3	T7	NoRel	true	پرواز	سپرد
+Relation	T3	T8	NoRel	true	پرواز	سوار
+Relation	T5	T1	NoRel	true	خرابی	پرواز
+Relation	T5	T4	NoRel	true	خرابی	روانگی
+Relation	T6	T7	NoRel	true	جھکتا	سپرد
+Relation	T7	T0	NoRel	true	سپرد	پرواز
+Relation	T7	T1	NoRel	true	سپرد	پرواز
+Relation	T7	T3	NoRel	true	سپرد	پرواز

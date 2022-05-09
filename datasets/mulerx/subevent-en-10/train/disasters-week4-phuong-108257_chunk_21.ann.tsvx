@@ -1,0 +1,88 @@
+Text	[ A Soviet Sukhoi Su- 15 interceptor ]	In 1983 , Cold War tensions between the United States and Soviet Union had escalated to a level not seen since the Cuban Missile Crisis because of several factors .	These included the United States ' Strategic Defense Initiative , its planned deployment of the Pershing II weapon system in Europe in March and April , and FleetEx_'83- 1 , the largest naval exercise held to date in the North Pacific .	The military hierarchy of the Soviet Union ( particularly the old guard led by Soviet General Secretary Yuri Andropov and Minister of Defence Dmitry Ustinov ) viewed these actions as bellicose and destabilizing ; they were deeply suspicious of U.S. President Ronald Reagan 's intentions and openly fearful he was planning a pre-emptive nuclear strike against the Soviet Union .	These fears culminated in RYAN , the code name for a secret intelligence - gathering program initiated by Andropov to detect a potential nuclear sneak attack which he believed Reagan was plotting .
+Event	T0	tensions	EVENT	58
+Event	T1	seen	EVENT	139
+Event	T3	included	EVENT	210
+Event	T4	deployment	EVENT	282
+Event	T5	held	EVENT	405
+Event	T6	led	EVENT	513
+Event	T7	viewed	EVENT	600
+Event	T8	actions	EVENT	613
+Event	T9	destabilizing	EVENT	638
+Event	T10	suspicious	EVENT	671
+Event	T11	intentions	EVENT	717
+Event	T12	fearful	EVENT	739
+Event	T13	planning	EVENT	754
+Event	T14	strike	EVENT	785
+Event	T15	culminated	EVENT	831
+Event	T16	initiated	EVENT	912
+Event	T17	detect	EVENT	937
+Event	T18	attack	EVENT	970
+Event	T19	believed	EVENT	986
+Event	T20	plotting	EVENT	1006
+Event	T21	escalated	EVENT	114
+Event	T2	Cuban Missile Crisis	EVENT	154
+Event	T22	factors	EVENT	194
+Event	T23	United States ' Strategic Defense Initiative	EVENT	223
+Event	T24	largest naval exercise	EVENT	382
+Event	T25	bellicose	EVENT	624
+Relation	T22	T23	SuperSub	true	factors	United States ' Strategic Defense Initiative
+Relation	T23	T22	SubSuper	true	United States ' Strategic Defense Initiative	factors
+Relation	T22	T4	SuperSub	true	factors	deployment
+Relation	T4	T22	SubSuper	true	deployment	factors
+Relation	T22	T24	SuperSub	true	factors	largest naval exercise
+Relation	T24	T22	SubSuper	true	largest naval exercise	factors
+Relation	T24	T5	SuperSub	true	largest naval exercise	held
+Relation	T5	T24	SubSuper	true	held	largest naval exercise
+Relation	T7	T10	SuperSub	true	viewed	suspicious
+Relation	T10	T7	SubSuper	true	suspicious	viewed
+Relation	T7	T12	SuperSub	true	viewed	fearful
+Relation	T12	T7	SubSuper	true	fearful	viewed
+Relation	T12	T15	SuperSub	true	fearful	culminated
+Relation	T15	T12	SubSuper	true	culminated	fearful
+Relation	T1	T14	NoRel	true	seen	strike
+Relation	T1	T17	NoRel	true	seen	detect
+Relation	T1	T8	NoRel	true	seen	actions
+Relation	T1	T9	NoRel	true	seen	destabilizing
+Relation	T10	T1	NoRel	true	suspicious	seen
+Relation	T10	T15	NoRel	true	suspicious	culminated
+Relation	T10	T18	NoRel	true	suspicious	attack
+Relation	T10	T24	NoRel	true	suspicious	largest naval exercise
+Relation	T10	T3	NoRel	true	suspicious	included
+Relation	T12	T13	NoRel	true	fearful	planning
+Relation	T13	T2	NoRel	true	planning	Cuban Missile Crisis
+Relation	T13	T9	NoRel	true	planning	destabilizing
+Relation	T14	T1	NoRel	true	strike	seen
+Relation	T14	T15	NoRel	true	strike	culminated
+Relation	T14	T2	NoRel	true	strike	Cuban Missile Crisis
+Relation	T15	T1	NoRel	true	culminated	seen
+Relation	T15	T7	NoRel	true	culminated	viewed
+Relation	T16	T15	NoRel	true	initiated	culminated
+Relation	T16	T20	NoRel	true	initiated	plotting
+Relation	T16	T23	NoRel	true	initiated	United States ' Strategic Defense Initiative
+Relation	T16	T3	NoRel	true	initiated	included
+Relation	T17	T12	NoRel	true	detect	fearful
+Relation	T17	T8	NoRel	true	detect	actions
+Relation	T19	T20	NoRel	true	believed	plotting
+Relation	T2	T4	NoRel	true	Cuban Missile Crisis	deployment
+Relation	T20	T24	NoRel	true	plotting	largest naval exercise
+Relation	T20	T8	NoRel	true	plotting	actions
+Relation	T21	T22	NoRel	true	escalated	factors
+Relation	T22	T6	NoRel	true	factors	led
+Relation	T23	T10	NoRel	true	United States ' Strategic Defense Initiative	suspicious
+Relation	T3	T21	NoRel	true	included	escalated
+Relation	T3	T7	NoRel	true	included	viewed
+Relation	T4	T10	NoRel	true	deployment	suspicious
+Relation	T4	T21	NoRel	true	deployment	escalated
+Relation	T4	T25	NoRel	true	deployment	bellicose
+Relation	T4	T6	NoRel	true	deployment	led
+Relation	T5	T18	NoRel	true	held	attack
+Relation	T5	T22	NoRel	true	held	factors
+Relation	T5	T4	NoRel	true	held	deployment
+Relation	T5	T9	NoRel	true	held	destabilizing
+Relation	T6	T13	NoRel	true	led	planning
+Relation	T6	T16	NoRel	true	led	initiated
+Relation	T7	T1	NoRel	true	viewed	seen
+Relation	T7	T8	NoRel	true	viewed	actions
+Relation	T8	T17	NoRel	true	actions	detect
+Relation	T8	T22	NoRel	true	actions	factors
+Relation	T9	T25	NoRel	true	destabilizing	bellicose

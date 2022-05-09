@@ -1,0 +1,69 @@
+Text	El TERREMOTO DE BUTÁN DE 2009 fue un sismo de 6,1 grados en la escala abierta de Richter que afectó al reino de Bután , el 21 de septiembre de 2009 , causando 12 muertos , 15 heridos y afectó varios monasterios , edificios y escuelas .	La mayoría de las víctimas fallecieron cuando sus casas colapsaron sobre ellas , aunque cuatro trabajadores de carreteras , todos ellos indios , murieron en el distrito de Samdrup Jongkhar de Bután , cerca de la frontera con India , cuando colapsó el camino en que estaban laborando .	Los equipos de rescate realizaron la búsqueda de supervivientes en los distritos de Mongar y Trashigang , los más afectados por el movimiento telúrico , y donde los corrimientos de tierra bloquearon las carreteras .	El epicentro del temblor se localizó a 180 kilómetros al este de Thimbu , la capital , y a una profundidad de 14 kilómetros .	Temblores de alrededor de 20 segundos también se sintieron en varias capitales : Guwahati , del estado indio de Assam , en Daca , de Bangladés , y Lhasa , de la región autónoma del Tíbet .
+Event	T0	TERREMOTO	EVENT	3
+Event	T1	sismo	EVENT	37
+Event	T2	afectó	EVENT	93
+Event	T4	muertos	EVENT	162
+Event	T5	heridos	EVENT	175
+Event	T6	afectó	EVENT	185
+Event	T7	fallecieron	EVENT	263
+Event	T8	colapsaron	EVENT	292
+Event	T9	murieron	EVENT	381
+Event	T10	colapsó	EVENT	476
+Event	T11	laborando	EVENT	509
+Event	T12	realizaron	EVENT	544
+Event	T13	búsqueda	EVENT	558
+Event	T14	afectados	EVENT	635
+Event	T15	corrimientos	EVENT	686
+Event	T16	bloquearon	EVENT	709
+Event	T17	temblor	EVENT	754
+Event	T18	localizó	EVENT	765
+Event	T19	Temblores	EVENT	863
+Event	T20	sintieron	EVENT	912
+Relation	T0	T4	CauseEffect	true	TERREMOTO	muertos
+Relation	T4	T0	EffectCause	true	muertos	TERREMOTO
+Relation	T8	T7	CauseEffect	true	colapsaron	fallecieron
+Relation	T7	T8	EffectCause	true	fallecieron	colapsaron
+Relation	T0	T9	CauseEffect	true	TERREMOTO	murieron
+Relation	T9	T0	EffectCause	true	murieron	TERREMOTO
+Relation	T0	T15	CauseEffect	true	TERREMOTO	corrimientos
+Relation	T15	T0	EffectCause	true	corrimientos	TERREMOTO
+Relation	T0	T16	CauseEffect	true	TERREMOTO	bloquearon
+Relation	T16	T0	EffectCause	true	bloquearon	TERREMOTO
+Relation	T0	T17	NoRel	true	TERREMOTO	temblor
+Relation	T1	T17	NoRel	true	sismo	temblor
+Relation	T1	T18	NoRel	true	sismo	localizó
+Relation	T1	T9	NoRel	true	sismo	murieron
+Relation	T10	T7	NoRel	true	colapsó	fallecieron
+Relation	T11	T20	NoRel	true	laborando	sintieron
+Relation	T11	T8	NoRel	true	laborando	colapsaron
+Relation	T12	T4	NoRel	true	realizaron	muertos
+Relation	T12	T7	NoRel	true	realizaron	fallecieron
+Relation	T12	T9	NoRel	true	realizaron	murieron
+Relation	T13	T17	NoRel	true	búsqueda	temblor
+Relation	T14	T10	NoRel	true	afectados	colapsó
+Relation	T14	T4	NoRel	true	afectados	muertos
+Relation	T14	T5	NoRel	true	afectados	heridos
+Relation	T15	T16	NoRel	true	corrimientos	bloquearon
+Relation	T15	T9	NoRel	true	corrimientos	murieron
+Relation	T16	T10	NoRel	true	bloquearon	colapsó
+Relation	T16	T11	NoRel	true	bloquearon	laborando
+Relation	T16	T12	NoRel	true	bloquearon	realizaron
+Relation	T16	T14	NoRel	true	bloquearon	afectados
+Relation	T16	T5	NoRel	true	bloquearon	heridos
+Relation	T17	T4	NoRel	true	temblor	muertos
+Relation	T18	T8	NoRel	true	localizó	colapsaron
+Relation	T19	T13	NoRel	true	Temblores	búsqueda
+Relation	T2	T9	NoRel	true	afectó	murieron
+Relation	T20	T10	NoRel	true	sintieron	colapsó
+Relation	T20	T2	NoRel	true	sintieron	afectó
+Relation	T20	T7	NoRel	true	sintieron	fallecieron
+Relation	T4	T18	NoRel	true	muertos	localizó
+Relation	T5	T13	NoRel	true	heridos	búsqueda
+Relation	T5	T16	NoRel	true	heridos	bloquearon
+Relation	T5	T18	NoRel	true	heridos	localizó
+Relation	T7	T11	NoRel	true	fallecieron	laborando
+Relation	T7	T5	NoRel	true	fallecieron	heridos
+Relation	T8	T13	NoRel	true	colapsaron	búsqueda
+Relation	T9	T1	NoRel	true	murieron	sismo
+Relation	T9	T5	NoRel	true	murieron	heridos
+Relation	T9	T6	NoRel	true	murieron	afectó

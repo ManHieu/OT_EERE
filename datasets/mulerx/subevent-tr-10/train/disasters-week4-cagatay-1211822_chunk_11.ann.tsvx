@@ -1,0 +1,47 @@
+Text	Tsunami ülkede yaklaşık 470 kilometrekarelik bir alanı sular altında bıraktı .	Deprem , Japonya saati ile ( JSİ ) 14.46'da , Japonya'nın en yakın kıyısının 67 kilmoetre açığında meydana geldi ve dalgaların ilk ulaşacağı bölgeye 10 ile 30 dakika içinde ulaşacağı , sonra da daha kuzeyde ve güneydeki bölgeleri etkileyeceği bildirildi .	Depremin üzerinden bir saat geçmesinden hemen sonra , Japonya saati ile saat 15.55'te , Miyagi ilinin kıyısına yakın olan Sendai Havalimanı'nı dalgaların vurduğu gözlemlendi .	Dalgalar uçak ve arabaları sürükledi , ilerlerken pek çok binayı bastı ve yıktı .	Tsunaminin Sendai Havalimanı'nın içinde ve çevresinde yol açtığı zarar bir NHK Haber helikopteri tarafından görüntülendi , görüntülerde yaklaşan dalgalardan kaçmaya çalışan ve dalgaların içine alınan araçlar görülebilmektedir .
+Event	T0	Tsunami	EVENT	0
+Event	T1	bıraktı	EVENT	69
+Event	T2	Deprem	EVENT	79
+Event	T5	bildirildi	EVENT	322
+Event	T6	Depremin	EVENT	335
+Event	T7	geçmesinden	EVENT	363
+Event	T8	gözlemlendi	EVENT	497
+Event	T9	sürükledi	EVENT	538
+Event	T10	bastı	EVENT	576
+Event	T11	yıktı	EVENT	585
+Event	T12	Tsunaminin	EVENT	593
+Event	T13	zarar	EVENT	658
+Event	T14	görüntülendi	EVENT	701
+Event	T15	çalışan	EVENT	758
+Event	T3	vurduğu	EVENT	489
+Relation	T0	T3	SuperSub	true	Tsunami	vurduğu
+Relation	T3	T0	SubSuper	true	vurduğu	Tsunami
+Relation	T0	T5	NoRel	true	Tsunami	bildirildi
+Relation	T1	T13	NoRel	true	bıraktı	zarar
+Relation	T12	T11	NoRel	true	Tsunaminin	yıktı
+Relation	T12	T13	NoRel	true	Tsunaminin	zarar
+Relation	T12	T14	NoRel	true	Tsunaminin	görüntülendi
+Relation	T12	T15	NoRel	true	Tsunaminin	çalışan
+Relation	T12	T3	NoRel	true	Tsunaminin	vurduğu
+Relation	T12	T8	NoRel	true	Tsunaminin	gözlemlendi
+Relation	T13	T0	NoRel	true	zarar	Tsunami
+Relation	T13	T15	NoRel	true	zarar	çalışan
+Relation	T14	T10	NoRel	true	görüntülendi	bastı
+Relation	T14	T12	NoRel	true	görüntülendi	Tsunaminin
+Relation	T14	T13	NoRel	true	görüntülendi	zarar
+Relation	T14	T6	NoRel	true	görüntülendi	Depremin
+Relation	T14	T7	NoRel	true	görüntülendi	geçmesinden
+Relation	T14	T9	NoRel	true	görüntülendi	sürükledi
+Relation	T15	T11	NoRel	true	çalışan	yıktı
+Relation	T15	T12	NoRel	true	çalışan	Tsunaminin
+Relation	T15	T5	NoRel	true	çalışan	bildirildi
+Relation	T2	T12	NoRel	true	Deprem	Tsunaminin
+Relation	T3	T1	NoRel	true	vurduğu	bıraktı
+Relation	T3	T6	NoRel	true	vurduğu	Depremin
+Relation	T6	T13	NoRel	true	Depremin	zarar
+Relation	T7	T11	NoRel	true	geçmesinden	yıktı
+Relation	T7	T12	NoRel	true	geçmesinden	Tsunaminin
+Relation	T7	T14	NoRel	true	geçmesinden	görüntülendi
+Relation	T7	T3	NoRel	true	geçmesinden	vurduğu
+Relation	T9	T14	NoRel	true	sürükledi	görüntülendi
+Relation	T9	T2	NoRel	true	sürükledi	Deprem

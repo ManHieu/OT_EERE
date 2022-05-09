@@ -1,0 +1,50 @@
+Text	Todos los pasajeros y tripulantes evacuaron el avión de manera satisfactoria .	Sólo se produjeron 43 heridos leves , y no hubo que lamentar ninguna muerte como resultado del accidente .	La caída a un barranco y el posterior incendio destruyeron el avión .	El vuelo aterrizó mientras aparecían informes meteorológicos con un tiempo verdaderamente malo : de fuertes vientos , fuertes precipitaciones , y con tormentas en las proximidades del aeropuerto ( ver meteorología ) , y no tocó tierra hasta haber sobrepasado prácticamente la mitad de la pista .	Algunos pasajeros informaron que el avión se balanceaba de lado a lado antes de aterrizar , posiblemente debido a las turbulencias y a los vientos racheados asociados a los sistemas tormentosos .
+Event	T0	evacuaron	EVENT	34
+Event	T1	produjeron	EVENT	87
+Event	T2	lamentar	EVENT	131
+Event	T3	muerte	EVENT	148
+Event	T4	accidente	EVENT	174
+Event	T5	caída	EVENT	189
+Event	T6	destruyeron	EVENT	233
+Event	T7	aterrizó	EVENT	265
+Event	T8	precipitaciones	EVENT	382
+Event	T9	tormentas	EVENT	406
+Event	T10	sobrepasado	EVENT	503
+Event	T11	informaron	EVENT	570
+Event	T12	balanceaba	EVENT	597
+Event	T13	aterrizar	EVENT	632
+Event	T14	turbulencias	EVENT	670
+Event	T15	incendio	EVENT	224
+Relation	T4	T1	CauseEffect	true	accidente	produjeron
+Relation	T1	T4	EffectCause	true	produjeron	accidente
+Relation	T15	T6	CauseEffect	true	incendio	destruyeron
+Relation	T6	T15	EffectCause	true	destruyeron	incendio
+Relation	T9	T10	CauseEffect	true	tormentas	sobrepasado
+Relation	T10	T9	EffectCause	true	sobrepasado	tormentas
+Relation	T14	T12	CauseEffect	true	turbulencias	balanceaba
+Relation	T12	T14	EffectCause	true	balanceaba	turbulencias
+Relation	T0	T2	NoRel	true	evacuaron	lamentar
+Relation	T1	T10	NoRel	true	produjeron	sobrepasado
+Relation	T10	T2	NoRel	true	sobrepasado	lamentar
+Relation	T11	T13	NoRel	true	informaron	aterrizar
+Relation	T11	T2	NoRel	true	informaron	lamentar
+Relation	T12	T0	NoRel	true	balanceaba	evacuaron
+Relation	T13	T0	NoRel	true	aterrizar	evacuaron
+Relation	T13	T10	NoRel	true	aterrizar	sobrepasado
+Relation	T13	T2	NoRel	true	aterrizar	lamentar
+Relation	T14	T10	NoRel	true	turbulencias	sobrepasado
+Relation	T14	T3	NoRel	true	turbulencias	muerte
+Relation	T14	T4	NoRel	true	turbulencias	accidente
+Relation	T14	T9	NoRel	true	turbulencias	tormentas
+Relation	T15	T1	NoRel	true	incendio	produjeron
+Relation	T15	T2	NoRel	true	incendio	lamentar
+Relation	T15	T3	NoRel	true	incendio	muerte
+Relation	T15	T9	NoRel	true	incendio	tormentas
+Relation	T2	T15	NoRel	true	lamentar	incendio
+Relation	T3	T10	NoRel	true	muerte	sobrepasado
+Relation	T3	T14	NoRel	true	muerte	turbulencias
+Relation	T3	T2	NoRel	true	muerte	lamentar
+Relation	T4	T6	NoRel	true	accidente	destruyeron
+Relation	T4	T9	NoRel	true	accidente	tormentas
+Relation	T5	T2	NoRel	true	caída	lamentar
+Relation	T7	T14	NoRel	true	aterrizó	turbulencias

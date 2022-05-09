@@ -1,0 +1,37 @@
+Text	Depremin merkez_üssü Aşkabat'ın 25 km güneybatısındaki küçük Kara - Kavdan köyü yakınlarındaydı .	Deprem , neredeyse tüm tuğla binaların yıkıldığı , beton yapıların ağır hasar gördüğü ve yük trenlerinin raydan çıktığı Aşkabat ve yakın köylerde büyük ölçüde hasara neden oldu .	Bunun yanı sıra İran'ın Dergez kentinde de hasar ve kayıplar meydana geldi .	Aşkabat'ın kuzeybatısında ve güneydoğusunda yüzey rüptürü gözlendi .	Medya kaynakları , o zamanki Türkmenistan SSC'nin nüfusunun neredeyse % 10'una denk gelen 10, 000 ila 110, 000 arasında ölü sayısı konusunda değişiyor .
+Event	T0	Depremin	EVENT	0
+Event	T1	Deprem	EVENT	98
+Event	T2	yıkıldığı	EVENT	137
+Event	T3	gördüğü	EVENT	176
+Event	T4	çıktığı	EVENT	210
+Event	T5	oldu	EVENT	270
+Event	T6	hasar	EVENT	320
+Event	T7	geldi	EVENT	346
+Event	T8	gözlendi	EVENT	412
+Event	T9	ölü	EVENT	543
+Event	T10	değişiyor	EVENT	564
+Event	T11	hasara	EVENT	257
+Relation	T1	T5	CauseEffect	true	Deprem	oldu
+Relation	T5	T1	EffectCause	true	oldu	Deprem
+Relation	T1	T2	CauseEffect	true	Deprem	yıkıldığı
+Relation	T2	T1	EffectCause	true	yıkıldığı	Deprem
+Relation	T1	T3	CauseEffect	true	Deprem	gördüğü
+Relation	T3	T1	EffectCause	true	gördüğü	Deprem
+Relation	T1	T4	CauseEffect	true	Deprem	çıktığı
+Relation	T4	T1	EffectCause	true	çıktığı	Deprem
+Relation	T1	T6	CauseEffect	true	Deprem	hasar
+Relation	T6	T1	EffectCause	true	hasar	Deprem
+Relation	T1	T7	CauseEffect	true	Deprem	geldi
+Relation	T7	T1	EffectCause	true	geldi	Deprem
+Relation	T1	T8	CauseEffect	true	Deprem	gözlendi
+Relation	T8	T1	EffectCause	true	gözlendi	Deprem
+Relation	T0	T10	NoRel	true	Depremin	değişiyor
+Relation	T1	T11	NoRel	true	Deprem	hasara
+Relation	T10	T7	NoRel	true	değişiyor	geldi
+Relation	T2	T4	NoRel	true	yıkıldığı	çıktığı
+Relation	T3	T4	NoRel	true	gördüğü	çıktığı
+Relation	T4	T5	NoRel	true	çıktığı	oldu
+Relation	T5	T2	NoRel	true	oldu	yıkıldığı
+Relation	T5	T6	NoRel	true	oldu	hasar
+Relation	T8	T3	NoRel	true	gözlendi	gördüğü
+Relation	T9	T5	NoRel	true	ölü	oldu

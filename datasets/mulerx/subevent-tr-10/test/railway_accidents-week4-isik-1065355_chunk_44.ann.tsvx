@@ -1,0 +1,13 @@
+Text	http : / / news . bbc . co . uk / onthisday / hi / dates / stories / march / 11 / newsid _ 4273000 / 4273817 .	stm | 2004 : Many die as bombs destroy Madrid trains 2008 BBC News 31 Mart , 2008	United States National Transportation Safety Board 29 Kasım , 2005http : / / www.ntsb.gov / publictn / 2005 / RAR0504 .htm Report of Railroad Accident : Collision of Norfolk Southern Freight Train 192 with Standing Norfolk Southern Local Train P22 With Subsequent Hazardous Materials Release .	Graniteville , South Carolina ; 6 Ocak , 2005.	NTSB / RAR - 05 / 04 | giriş tarihi = 31 Mart , 2008
+Event	T0	die	EVENT	129
+Event	T1	destroy	EVENT	142
+Event	T2	Report	EVENT	316
+Event	T3	Accident	EVENT	335
+Event	T4	Collision	EVENT	346
+Event	T5	Release	EVENT	477
+Event	T6	bombs	EVENT	136
+Event	T7	giriş	EVENT	557
+Relation	T1	T4	NoRel	true	destroy	Collision
+Relation	T1	T6	NoRel	true	destroy	bombs
+Relation	T3	T1	NoRel	true	Accident	destroy
+Relation	T5	T0	NoRel	true	Release	die

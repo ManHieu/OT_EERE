@@ -1,0 +1,23 @@
+Text	ALAMINYO KATLIAMI , 20 Temmuz 1974 tarihinde EOKA - B tarafından Kıbrıs'ın Alaminyo kasabasında Kıbrıs Türklerine karşı gerçekleştirilen katliam .	Katliamda yaşları 6_ila 80 arasında değişen 13 veya 15 kişi öldürülmüştür .	Bazen 1967'de aynı kasabadan öldürülen 5 Kıbrıs Türkü'de katliama ayrıca dahil edilir .	Katliamdan önce Alaminyo , 183 Türk ve 350 Rum'un yaşadığı bir kasabaydı .	20 Temmuz 1974'te , Kıbrıs Harekâtı'nın başladığı gün , Kıbrıs Ulusal Muhafızları kasabayı bastı .
+Event	T1	katliam	EVENT	137
+Event	T2	Katliamda	EVENT	147
+Event	T3	öldürülmüştür	EVENT	207
+Event	T4	öldürülen	EVENT	252
+Event	T5	katliama	EVENT	280
+Event	T6	başladığı	EVENT	426
+Event	T7	bastı	EVENT	477
+Event	T8	ALAMINYO KATLIAMI	EVENT	0
+Event	T9	Katliamdan	EVENT	311
+Event	T10	edilir	EVENT	302
+Event	T11	Kıbrıs Harekâtı'nın	EVENT	406
+Relation	T11	T7	CauseEffect	true	Kıbrıs Harekâtı'nın	bastı
+Relation	T7	T11	EffectCause	true	bastı	Kıbrıs Harekâtı'nın
+Relation	T1	T9	NoRel	true	katliam	Katliamdan
+Relation	T11	T2	NoRel	true	Kıbrıs Harekâtı'nın	Katliamda
+Relation	T2	T10	NoRel	true	Katliamda	edilir
+Relation	T4	T3	NoRel	true	öldürülen	öldürülmüştür
+Relation	T4	T8	NoRel	true	öldürülen	ALAMINYO KATLIAMI
+Relation	T6	T3	NoRel	true	başladığı	öldürülmüştür
+Relation	T7	T3	NoRel	true	bastı	öldürülmüştür
+Relation	T9	T2	NoRel	true	Katliamdan	Katliamda
+Relation	T9	T4	NoRel	true	Katliamdan	öldürülen

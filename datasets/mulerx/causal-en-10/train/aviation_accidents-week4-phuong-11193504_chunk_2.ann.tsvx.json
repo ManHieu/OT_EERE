@@ -1,0 +1,1413 @@
+{
+  "id": "aviation_accidents-week4-phuong-11193504_chunk_2.ann.tsvx",
+  "text": "The aircraft had previously lost cabin pressure on 5 August ; and earlier on the day of the crash , it had departed Songshan Airport , but the crew aborted the flight 10 minutes later for the same reason .\tAfter repairs were made , the aircraft departed Songshan Airport again bound for Kaohsiung International Airport .\tAt 14 minutes after takeoff , the aircraft suffered an explosive decompression and disintegrated .\tThe wreckage was scattered across an area long , located some south of Taipei .\tThe nose section landed in Sanyi Township , Miaoli County .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "lost",
+      "label": "EVENT",
+      "char_index": 28,
+      "sid": 0,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "crash",
+      "label": "EVENT",
+      "char_index": 92,
+      "sid": 0,
+      "tid": [
+        18,
+        19
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "departed",
+      "label": "EVENT",
+      "char_index": 107,
+      "sid": 0,
+      "tid": [
+        22,
+        23
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "aborted",
+      "label": "EVENT",
+      "char_index": 148,
+      "sid": 0,
+      "tid": [
+        29,
+        30
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "flight",
+      "label": "EVENT",
+      "char_index": 160,
+      "sid": 0,
+      "tid": [
+        31,
+        32
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "repairs",
+      "label": "EVENT",
+      "char_index": 212,
+      "sid": 1,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "made",
+      "label": "EVENT",
+      "char_index": 225,
+      "sid": 1,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "departed",
+      "label": "EVENT",
+      "char_index": 245,
+      "sid": 1,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "bound",
+      "label": "EVENT",
+      "char_index": 277,
+      "sid": 1,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "takeoff",
+      "label": "EVENT",
+      "char_index": 341,
+      "sid": 2,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "suffered",
+      "label": "EVENT",
+      "char_index": 364,
+      "sid": 2,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "decompression",
+      "label": "EVENT",
+      "char_index": 386,
+      "sid": 2,
+      "tid": [
+        11,
+        12
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "disintegrated",
+      "label": "EVENT",
+      "char_index": 404,
+      "sid": 2,
+      "tid": [
+        13,
+        14
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "wreckage",
+      "label": "EVENT",
+      "char_index": 424,
+      "sid": 3,
+      "tid": [
+        1,
+        2
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "scattered",
+      "label": "EVENT",
+      "char_index": 437,
+      "sid": 3,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "landed",
+      "label": "EVENT",
+      "char_index": 517,
+      "sid": 4,
+      "tid": [
+        3,
+        4
+      ]
+    }
+  },
+  "relation": {
+    "T2-T0": "CauseEffect",
+    "T0-T2": "EffectCause",
+    "T0-T3": "CauseEffect",
+    "T3-T0": "EffectCause",
+    "T0-T5": "CauseEffect",
+    "T5-T0": "EffectCause",
+    "T5-T7": "CauseEffect",
+    "T7-T5": "EffectCause",
+    "T7-T11": "CauseEffect",
+    "T11-T7": "EffectCause",
+    "T11-T12": "CauseEffect",
+    "T12-T11": "EffectCause",
+    "T11-T13": "CauseEffect",
+    "T13-T11": "EffectCause",
+    "T11-T15": "CauseEffect",
+    "T15-T11": "EffectCause",
+    "T0-T11": "NoRel",
+    "T0-T7": "NoRel",
+    "T1-T5": "NoRel",
+    "T11-T4": "NoRel",
+    "T12-T2": "NoRel",
+    "T13-T5": "NoRel",
+    "T14-T1": "NoRel",
+    "T14-T11": "NoRel",
+    "T14-T2": "NoRel",
+    "T14-T9": "NoRel",
+    "T2-T5": "NoRel",
+    "T3-T4": "NoRel",
+    "T4-T10": "NoRel",
+    "T4-T13": "NoRel",
+    "T5-T2": "NoRel",
+    "T6-T0": "NoRel",
+    "T6-T2": "NoRel",
+    "T7-T1": "NoRel",
+    "T7-T12": "NoRel",
+    "T8-T11": "NoRel",
+    "T8-T3": "NoRel",
+    "T9-T0": "NoRel",
+    "T9-T5": "NoRel"
+  },
+  "sentence": [
+    [
+      "The",
+      "aircraft",
+      "had",
+      "previously",
+      "lost",
+      "cabin",
+      "pressure",
+      "on",
+      "5",
+      "August",
+      ";",
+      "and",
+      "earlier",
+      "on",
+      "the",
+      "day",
+      "of",
+      "the",
+      "crash",
+      ",",
+      "it",
+      "had",
+      "departed",
+      "Songshan",
+      "Airport",
+      ",",
+      "but",
+      "the",
+      "crew",
+      "aborted",
+      "the",
+      "flight",
+      "10",
+      "minutes",
+      "later",
+      "for",
+      "the",
+      "same",
+      "reason",
+      "."
+    ],
+    [
+      "After",
+      "repairs",
+      "were",
+      "made",
+      ",",
+      "the",
+      "aircraft",
+      "departed",
+      "Songshan",
+      "Airport",
+      "again",
+      "bound",
+      "for",
+      "Kaohsiung",
+      "International",
+      "Airport",
+      "."
+    ],
+    [
+      "At",
+      "14",
+      "minutes",
+      "after",
+      "takeoff",
+      ",",
+      "the",
+      "aircraft",
+      "suffered",
+      "an",
+      "explosive",
+      "decompression",
+      "and",
+      "disintegrated",
+      "."
+    ],
+    [
+      "The",
+      "wreckage",
+      "was",
+      "scattered",
+      "across",
+      "an",
+      "area",
+      "long",
+      ",",
+      "located",
+      "some",
+      "south",
+      "of",
+      "Taipei",
+      "."
+    ],
+    [
+      "The",
+      "nose",
+      "section",
+      "landed",
+      "in",
+      "Sanyi",
+      "Township",
+      ",",
+      "Miaoli",
+      "County",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      "aux"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        4
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      "nummod"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        4
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        22
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        22
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        15
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        15
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        22
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        18
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        18
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        18
+      ],
+      [
+        0,
+        15
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        22
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        22
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        21
+      ],
+      [
+        0,
+        22
+      ],
+      "aux"
+    ],
+    [
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        4
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        23
+      ],
+      [
+        0,
+        24
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        22
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        29
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        29
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        27
+      ],
+      [
+        0,
+        28
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        29
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        29
+      ],
+      [
+        0,
+        22
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        30
+      ],
+      [
+        0,
+        31
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        31
+      ],
+      [
+        0,
+        29
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        32
+      ],
+      [
+        0,
+        33
+      ],
+      "nummod"
+    ],
+    [
+      [
+        0,
+        33
+      ],
+      [
+        0,
+        34
+      ],
+      "obl:npmod"
+    ],
+    [
+      [
+        0,
+        34
+      ],
+      [
+        0,
+        29
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        35
+      ],
+      [
+        0,
+        38
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        36
+      ],
+      [
+        0,
+        38
+      ],
+      "det"
+    ],
+    [
+      [
+        0,
+        37
+      ],
+      [
+        0,
+        38
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        38
+      ],
+      [
+        0,
+        29
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        39
+      ],
+      [
+        0,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        3
+      ],
+      "mark"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        7
+      ],
+      "advcl"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        7
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        11
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        7
+      ],
+      "advcl"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        15
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        15
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        14
+      ],
+      [
+        1,
+        15
+      ],
+      "compound"
+    ],
+    [
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        11
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        7
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      "nummod"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        8
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        11
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        8
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        13
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        8
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        6
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        6
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        9
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        13
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        11
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        6
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      "compound"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        6
+      ],
+      "appos"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        3
+      ],
+      "punct"
+    ]
+  ]
+}

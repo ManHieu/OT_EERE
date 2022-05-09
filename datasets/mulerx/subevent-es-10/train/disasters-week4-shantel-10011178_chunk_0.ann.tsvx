@@ -1,0 +1,35 @@
+Text	EL VUELO 331 DE AMERICAN AIRLINES era un vuelo internacional regular entre el Aeropuerto Nacional Ronald Reagan en Washington , DC y el Aeropuerto Internacional Norman Manley en Kingston , Jamaica , con escala en Miami .	El 22 de diciembre de 2009 , el avión transportaba 148 pasajeros y seis tripulantes y , al aterrizar terminó saliendo de la pista , debido a la lluvia y el mal tiempo , continuando su rumbo hasta que se partió por la mitad .	Algunos de los factores que contribuyeron al accidente incluyen la alta velocidad de la aeronave después de que aterrizó y el aterrizaje del avión en el medio de la pista del aeropuerto .	La información atestigua que un Boeing 747 de Virgin Atlantic aterrizó con éxito en el mismo aeropuerto en condiciones climáticas muy similares , justo antes del vuelo 331 .	El vuelo se originó en el Aeropuerto Nacional Ronald Reagan , en Washington , DC , con escala en el Aeropuerto Internacional de Miami , en Miami , Florida .
+Event	T0	escala	EVENT	203
+Event	T1	transportaba	EVENT	259
+Event	T2	saliendo	EVENT	330
+Event	T3	lluvia	EVENT	365
+Event	T4	continuando	EVENT	390
+Event	T5	rumbo	EVENT	405
+Event	T6	partió	EVENT	424
+Event	T7	contribuyeron	EVENT	474
+Event	T8	aterrizó	EVENT	558
+Event	T9	aterrizaje	EVENT	572
+Event	T10	atestigua	EVENT	649
+Event	T11	aterrizó	EVENT	696
+Event	T12	vuelo	EVENT	796
+Event	T13	vuelo	EVENT	811
+Event	T14	originó	EVENT	820
+Event	T15	escala	EVENT	895
+Relation	T1	T10	NoRel	true	transportaba	atestigua
+Relation	T1	T6	NoRel	true	transportaba	partió
+Relation	T1	T7	NoRel	true	transportaba	contribuyeron
+Relation	T10	T11	NoRel	true	atestigua	aterrizó
+Relation	T10	T14	NoRel	true	atestigua	originó
+Relation	T11	T14	NoRel	true	aterrizó	originó
+Relation	T12	T8	NoRel	true	vuelo	aterrizó
+Relation	T13	T14	NoRel	true	vuelo	originó
+Relation	T15	T0	NoRel	true	escala	escala
+Relation	T15	T11	NoRel	true	escala	aterrizó
+Relation	T15	T7	NoRel	true	escala	contribuyeron
+Relation	T2	T0	NoRel	true	saliendo	escala
+Relation	T3	T9	NoRel	true	lluvia	aterrizaje
+Relation	T4	T9	NoRel	true	continuando	aterrizaje
+Relation	T5	T10	NoRel	true	rumbo	atestigua
+Relation	T5	T7	NoRel	true	rumbo	contribuyeron
+Relation	T6	T1	NoRel	true	partió	transportaba
+Relation	T7	T1	NoRel	true	contribuyeron	transportaba

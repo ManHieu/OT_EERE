@@ -1,0 +1,45 @@
+Text	Den måske nok mest udbredte kontrovers bygger på at de to WTC tvillingetårne samt den noget mindre WTC-7 bygning ikke styrtede sammen som resultat af skader pådraget af passagerflyene og de medfølgende eksplosioner og ildebrande , men at bygninger derimod blev nedrevet ved en bevidst og planlagt kontrolleret proces .	Den oftest gentagne påstand går på at dette skulle have været iværksat ved hjælp af en lang række strategisk placerede sprængladninger i bygningerne i ugerne eller månederne op til den 11. september .	Alternativt foreslås bl.a. rumbaserede energistråler , fokuserede mikrobølger , magnetisk pulsvåben , nukleare sprængladninger eller missiler at have forsaget bygningernes kollaps .	Mistroen til de bredt accepterede forklaringer går på en række forskellige punkter :	1. Bygningerne var konstrueret til at kunne modstå kollision med fly .
+Event	T0	pådraget	EVENT	157
+Event	T1	eksplosioner	EVENT	202
+Event	T2	ildebrande	EVENT	218
+Event	T3	nedrevet	EVENT	261
+Event	T4	proces	EVENT	310
+Event	T5	går	EVENT	347
+Event	T6	iværksat	EVENT	381
+Event	T7	sprængladninger	EVENT	438
+Event	T8	foreslås	EVENT	532
+Event	T9	sprængladninger	EVENT	631
+Event	T10	forsaget	EVENT	670
+Event	T11	kollaps	EVENT	692
+Event	T12	går	EVENT	749
+Event	T13	konstrueret	EVENT	806
+Event	T14	kollision	EVENT	838
+Relation	T4	T6	SuperSub	true	proces	iværksat
+Relation	T6	T4	SubSuper	true	iværksat	proces
+Relation	T4	T7	SuperSub	true	proces	sprængladninger
+Relation	T7	T4	SubSuper	true	sprængladninger	proces
+Relation	T11	T9	SuperSub	true	kollaps	sprængladninger
+Relation	T9	T11	SubSuper	true	sprængladninger	kollaps
+Relation	T8	T14	SuperSub	true	foreslås	kollision
+Relation	T14	T8	SubSuper	true	kollision	foreslås
+Relation	T8	T12	SuperSub	true	foreslås	går
+Relation	T12	T8	SubSuper	true	går	foreslås
+Relation	T0	T10	NoRel	true	pådraget	forsaget
+Relation	T0	T6	NoRel	true	pådraget	iværksat
+Relation	T0	T9	NoRel	true	pådraget	sprængladninger
+Relation	T1	T6	NoRel	true	eksplosioner	iværksat
+Relation	T1	T7	NoRel	true	eksplosioner	sprængladninger
+Relation	T11	T2	NoRel	true	kollaps	ildebrande
+Relation	T11	T3	NoRel	true	kollaps	nedrevet
+Relation	T11	T8	NoRel	true	kollaps	foreslås
+Relation	T12	T9	NoRel	true	går	sprængladninger
+Relation	T13	T2	NoRel	true	konstrueret	ildebrande
+Relation	T3	T1	NoRel	true	nedrevet	eksplosioner
+Relation	T3	T11	NoRel	true	nedrevet	kollaps
+Relation	T3	T13	NoRel	true	nedrevet	konstrueret
+Relation	T3	T14	NoRel	true	nedrevet	kollision
+Relation	T5	T7	NoRel	true	går	sprængladninger
+Relation	T6	T10	NoRel	true	iværksat	forsaget
+Relation	T6	T9	NoRel	true	iværksat	sprængladninger
+Relation	T8	T0	NoRel	true	foreslås	pådraget
+Relation	T8	T7	NoRel	true	foreslås	sprængladninger

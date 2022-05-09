@@ -1,0 +1,30 @@
+Text	ساٹھ اور ستر کی دہائی میں جھنگ ، کراچی ، لاہور ، چکوال ، ڈیرہ غازی خان ، ملتان ، شیخوپورہ ، پاراچنار اور گلگت میں عزاداروں پر حملے ہوئے ۔	اس وقت تک شیعہ دشمنی میں اتنی شدت آ چکی تھی کہ 11 جولائی 1967ء میں محترمہ فاطمہ جناح کے جنازے پر دیوبندی عناصر نے اعتراض کیا اور ایک شدت پسند طلبہ تنظیم نے پتھراؤ شروع کر دیا جس کے خلاف پولیس کو آنسو گیس کا استعمال کرنا پڑا ۔	مادر ملت کے سیاسی مخالف جنرل ایوب خان نے اپنی یاداشتوں میں اس ہنگامے پر افسوس کا اظہار کیا ہے ۔	بات صرف قتل و غارت تک محدود نہیں تھی ، فرقہ وارانہ لٹریچر کا تنور بھی دہک رہا تھا جس میں اکثر شیعوں کو کٹہرے میں کھڑا کیا جاتا ۔	مرزا حیرت دہلوی اور عبد الشکور لکھنؤی کی کتابیں کم تھیں کہ محمود احمد عباسی اور ابو یزید بٹ کی کتابوں نے اشتعال انگیزی کے سابقہ ریکارڈ توڑ دیے ۔
+Event	T0	ہوئے	EVENT	131
+Event	T1	دشمنی	EVENT	153
+Event	T2	جنازے	EVENT	226
+Event	T3	شروع	EVENT	301
+Event	T4	دیا	EVENT	309
+Event	T5	استعمال	EVENT	345
+Event	T6	پڑا	EVENT	358
+Event	T7	ہنگامے	EVENT	426
+Event	T8	قتل	EVENT	468
+Event	T9	تنور	EVENT	521
+Event	T10	کھڑا	EVENT	573
+Event	T11	دیے	EVENT	728
+Relation	T4	T5	CauseEffect	true	دیا	استعمال
+Relation	T5	T4	EffectCause	true	استعمال	دیا
+Relation	T0	T8	NoRel	true	ہوئے	قتل
+Relation	T1	T11	NoRel	true	دشمنی	دیے
+Relation	T1	T5	NoRel	true	دشمنی	استعمال
+Relation	T1	T7	NoRel	true	دشمنی	ہنگامے
+Relation	T10	T11	NoRel	true	کھڑا	دیے
+Relation	T10	T4	NoRel	true	کھڑا	دیا
+Relation	T10	T6	NoRel	true	کھڑا	پڑا
+Relation	T2	T4	NoRel	true	جنازے	دیا
+Relation	T3	T11	NoRel	true	شروع	دیے
+Relation	T5	T10	NoRel	true	استعمال	کھڑا
+Relation	T5	T11	NoRel	true	استعمال	دیے
+Relation	T6	T10	NoRel	true	پڑا	کھڑا
+Relation	T7	T6	NoRel	true	ہنگامے	پڑا
+Relation	T8	T11	NoRel	true	قتل	دیے
+Relation	T9	T6	NoRel	true	تنور	پڑا

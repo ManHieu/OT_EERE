@@ -1,0 +1,48 @@
+Text	119 pasajeros y tripulaciones murieron debido a una alta ingesta de monóxido de carbono , lo que indica que sobrevivieron al impacto inicial pero posteriormente murieron en el incendio .	Se encontró a una asistente de vuelo con un total de 85% de concentración de carboxihemoglobina dentro de su sangre , junto con sus colegas .	Una pasajera murió debido a un trauma severo , combinado con quemaduras en su cuerpo .	Las 78 personas restantes ( 75 pasajeros y 3 auxiliares de vuelo ) sobrevivieron al accidente .	Casi 60 personas fueron trasladadas a un hospital , algunas con heridas críticas , pero otras lograron escapar con pocas heridas y 15 pudieron continuar su viaje .
+Event	T0	ingesta	EVENT	57
+Event	T1	indica	EVENT	97
+Event	T2	sobrevivieron	EVENT	108
+Event	T3	impacto	EVENT	125
+Event	T4	murieron	EVENT	161
+Event	T5	incendio	EVENT	176
+Event	T6	encontró	EVENT	190
+Event	T7	combinado	EVENT	376
+Event	T8	quemaduras	EVENT	390
+Event	T9	accidente	EVENT	500
+Event	T10	trasladadas	EVENT	536
+Event	T11	críticas	EVENT	584
+Event	T12	escapar	EVENT	615
+Event	T13	heridas	EVENT	633
+Event	T14	continuar	EVENT	655
+Event	T15	viaje	EVENT	668
+Event	T16	murieron	EVENT	30
+Relation	T0	T13	NoRel	true	ingesta	heridas
+Relation	T1	T0	NoRel	true	indica	ingesta
+Relation	T1	T16	NoRel	true	indica	murieron
+Relation	T1	T9	NoRel	true	indica	accidente
+Relation	T10	T4	NoRel	true	trasladadas	murieron
+Relation	T11	T5	NoRel	true	críticas	incendio
+Relation	T11	T7	NoRel	true	críticas	combinado
+Relation	T12	T0	NoRel	true	escapar	ingesta
+Relation	T12	T14	NoRel	true	escapar	continuar
+Relation	T13	T1	NoRel	true	heridas	indica
+Relation	T13	T10	NoRel	true	heridas	trasladadas
+Relation	T13	T15	NoRel	true	heridas	viaje
+Relation	T14	T9	NoRel	true	continuar	accidente
+Relation	T16	T4	NoRel	true	murieron	murieron
+Relation	T16	T5	NoRel	true	murieron	incendio
+Relation	T16	T6	NoRel	true	murieron	encontró
+Relation	T16	T7	NoRel	true	murieron	combinado
+Relation	T16	T9	NoRel	true	murieron	accidente
+Relation	T2	T10	NoRel	true	sobrevivieron	trasladadas
+Relation	T2	T8	NoRel	true	sobrevivieron	quemaduras
+Relation	T2	T9	NoRel	true	sobrevivieron	accidente
+Relation	T3	T6	NoRel	true	impacto	encontró
+Relation	T5	T8	NoRel	true	incendio	quemaduras
+Relation	T6	T11	NoRel	true	encontró	críticas
+Relation	T6	T5	NoRel	true	encontró	incendio
+Relation	T7	T0	NoRel	true	combinado	ingesta
+Relation	T7	T12	NoRel	true	combinado	escapar
+Relation	T8	T10	NoRel	true	quemaduras	trasladadas
+Relation	T8	T3	NoRel	true	quemaduras	impacto
+Relation	T9	T15	NoRel	true	accidente	viaje

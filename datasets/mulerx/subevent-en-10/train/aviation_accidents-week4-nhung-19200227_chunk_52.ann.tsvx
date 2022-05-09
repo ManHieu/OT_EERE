@@ -1,0 +1,84 @@
+Text	27 March : A USN Grumman F - 14A Tomcat , BuNo__158995_ , ' NK 106 ' , of VF - 1 , crashes and catapults across scrub grass to come to rest against a concrete highway divider on CA - 163 , the Cabrillo Freeway , on approach to NAS Miramar , San Diego , California , exploding in flames .	Both crew members eject seconds before impact ; one fatality , no civilian deaths . °	26 April : Lockheed P - 3 Orion , BuNo__152724_ , ' LJ - 04 ' , of VP - 23 , crashed at sea on landing approach to Lajes , killing seven .	Cause of the accident was undetermined due to inability to recover aircraft remains from the extreme depths .	4 May : First prototype Lockheed Have Blue stealth test bed , c / n 1001 , on its 37th flight , hit the runway a little too hard at Groom Lake , Nevada , and had to lift off for another pass rather than go into a skid , but had bent the right main gear strut .
+Event	T0	crashes	EVENT	83
+Event	T1	catapults	EVENT	95
+Event	T2	rest	EVENT	135
+Event	T3	divider	EVENT	167
+Event	T4	approach	EVENT	215
+Event	T5	flames	EVENT	279
+Event	T6	eject	EVENT	306
+Event	T7	impact	EVENT	327
+Event	T8	fatality	EVENT	340
+Event	T9	deaths	EVENT	363
+Event	T10	crashed	EVENT	451
+Event	T11	killing	EVENT	497
+Event	T12	accident	EVENT	526
+Event	T13	recover	EVENT	572
+Event	T14	test	EVENT	674
+Event	T15	flight	EVENT	710
+Event	T16	had	EVENT	781
+Event	T17	pass	EVENT	809
+Event	T18	skid	EVENT	836
+Event	T19	bent	EVENT	851
+Event	T20	strut	EVENT	876
+Event	T21	exploding	EVENT	266
+Event	T22	hit	EVENT	719
+Relation	T7	T6	SuperSub	true	impact	eject
+Relation	T6	T7	SubSuper	true	eject	impact
+Relation	T7	T8	SuperSub	true	impact	fatality
+Relation	T8	T7	SubSuper	true	fatality	impact
+Relation	T22	T16	SuperSub	true	hit	had
+Relation	T16	T22	SubSuper	true	had	hit
+Relation	T0	T4	SuperSub	true	crashes	approach
+Relation	T4	T0	SubSuper	true	approach	crashes
+Relation	T1	T4	SuperSub	true	catapults	approach
+Relation	T4	T1	SubSuper	true	approach	catapults
+Relation	T4	T21	SuperSub	true	approach	exploding
+Relation	T21	T4	SubSuper	true	exploding	approach
+Relation	T0	T9	NoRel	true	crashes	deaths
+Relation	T1	T17	NoRel	true	catapults	pass
+Relation	T10	T15	NoRel	true	crashed	flight
+Relation	T11	T7	NoRel	true	killing	impact
+Relation	T11	T8	NoRel	true	killing	fatality
+Relation	T11	T9	NoRel	true	killing	deaths
+Relation	T12	T16	NoRel	true	accident	had
+Relation	T12	T19	NoRel	true	accident	bent
+Relation	T12	T6	NoRel	true	accident	eject
+Relation	T12	T7	NoRel	true	accident	impact
+Relation	T13	T1	NoRel	true	recover	catapults
+Relation	T13	T14	NoRel	true	recover	test
+Relation	T13	T15	NoRel	true	recover	flight
+Relation	T13	T16	NoRel	true	recover	had
+Relation	T13	T22	NoRel	true	recover	hit
+Relation	T14	T13	NoRel	true	test	recover
+Relation	T14	T16	NoRel	true	test	had
+Relation	T15	T13	NoRel	true	flight	recover
+Relation	T15	T20	NoRel	true	flight	strut
+Relation	T15	T6	NoRel	true	flight	eject
+Relation	T16	T5	NoRel	true	had	flames
+Relation	T17	T20	NoRel	true	pass	strut
+Relation	T17	T4	NoRel	true	pass	approach
+Relation	T19	T18	NoRel	true	bent	skid
+Relation	T2	T0	NoRel	true	rest	crashes
+Relation	T20	T21	NoRel	true	strut	exploding
+Relation	T20	T22	NoRel	true	strut	hit
+Relation	T21	T12	NoRel	true	exploding	accident
+Relation	T22	T11	NoRel	true	hit	killing
+Relation	T3	T13	NoRel	true	divider	recover
+Relation	T3	T22	NoRel	true	divider	hit
+Relation	T4	T12	NoRel	true	approach	accident
+Relation	T5	T0	NoRel	true	flames	crashes
+Relation	T5	T12	NoRel	true	flames	accident
+Relation	T5	T4	NoRel	true	flames	approach
+Relation	T5	T6	NoRel	true	flames	eject
+Relation	T5	T9	NoRel	true	flames	deaths
+Relation	T6	T14	NoRel	true	eject	test
+Relation	T6	T16	NoRel	true	eject	had
+Relation	T7	T21	NoRel	true	impact	exploding
+Relation	T7	T22	NoRel	true	impact	hit
+Relation	T8	T17	NoRel	true	fatality	pass
+Relation	T8	T4	NoRel	true	fatality	approach
+Relation	T8	T9	NoRel	true	fatality	deaths
+Relation	T9	T1	NoRel	true	deaths	catapults
+Relation	T9	T17	NoRel	true	deaths	pass
+Relation	T9	T18	NoRel	true	deaths	skid
+Relation	T9	T22	NoRel	true	deaths	hit

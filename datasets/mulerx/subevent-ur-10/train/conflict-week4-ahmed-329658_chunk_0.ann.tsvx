@@ -1,0 +1,69 @@
+Text	شہ مات شطرنج نامی کھیل میں مخالف بادشاہ کو اپنے کسی مہرے کی یوں شہ دینا کہ وہ اس شہ سے کسی صورت نہ نکل سکے شہ مات یعنی بادشاہ کو مات کرنا کہلاتا ہے جس کے ساتھ ہی فوری طور پر کھیل خود بخود شہ مات کرنے والے کی جیت پر ختم ہو جاتا ہے ۔	1 . اگر بادشاہ کو شہ سے نکالنا ممکن نہ ہو تو شہ مات ہو جاتی ہے اور شہ مات کرنے والا جیت جاتا ہے ۔	اور فوری طور پر کھیل خود بخود ختم ہو جاتا ہے ۔	1 . کسی کھلاڑی کا وقت ختم ہو جائے تو مخالف کھلاڑی جیت جاتا ہے ۔	( لیکن اگر مخالف کھلاڑی کے پاس شہ مات کرنے کے لیے مہرے نہ ہوں تو کھیل برابر ہو جاتا ہے ۔
+Event	T0	مات	EVENT	3
+Event	T1	کھیل	EVENT	18
+Event	T2	دینا	EVENT	67
+Event	T3	نکل	EVENT	99
+Event	T4	مات	EVENT	110
+Event	T5	کہلاتا	EVENT	138
+Event	T6	کھیل	EVENT	174
+Event	T7	مات	EVENT	191
+Event	T8	جیت	EVENT	208
+Event	T9	ختم	EVENT	215
+Event	T10	مات	EVENT	280
+Event	T11	جیت	EVENT	316
+Event	T12	ختم	EVENT	360
+Event	T13	ختم	EVENT	399
+Event	T14	جیت	EVENT	427
+Event	T15	کرنے	EVENT	479
+Event	T16	کھیل	EVENT	506
+Event	T17	برابر	EVENT	511
+Event	T18	مات	EVENT	129
+Event	T19	نکالنا	EVENT	256
+Event	T20	مات	EVENT	302
+Relation	T9	T8	SuperSub	true	ختم	جیت
+Relation	T8	T9	SubSuper	true	جیت	ختم
+Relation	T0	T3	NoRel	true	مات	نکل
+Relation	T1	T12	NoRel	true	کھیل	ختم
+Relation	T10	T7	NoRel	true	مات	مات
+Relation	T11	T0	NoRel	true	جیت	مات
+Relation	T11	T20	NoRel	true	جیت	مات
+Relation	T12	T0	NoRel	true	ختم	مات
+Relation	T12	T10	NoRel	true	ختم	مات
+Relation	T12	T14	NoRel	true	ختم	جیت
+Relation	T12	T15	NoRel	true	ختم	کرنے
+Relation	T12	T19	NoRel	true	ختم	نکالنا
+Relation	T13	T17	NoRel	true	ختم	برابر
+Relation	T13	T2	NoRel	true	ختم	دینا
+Relation	T14	T1	NoRel	true	جیت	کھیل
+Relation	T14	T13	NoRel	true	جیت	ختم
+Relation	T14	T5	NoRel	true	جیت	کہلاتا
+Relation	T14	T9	NoRel	true	جیت	ختم
+Relation	T15	T6	NoRel	true	کرنے	کھیل
+Relation	T16	T2	NoRel	true	کھیل	دینا
+Relation	T17	T10	NoRel	true	برابر	مات
+Relation	T17	T20	NoRel	true	برابر	مات
+Relation	T18	T10	NoRel	true	مات	مات
+Relation	T18	T16	NoRel	true	مات	کھیل
+Relation	T18	T17	NoRel	true	مات	برابر
+Relation	T19	T3	NoRel	true	نکالنا	نکل
+Relation	T19	T5	NoRel	true	نکالنا	کہلاتا
+Relation	T2	T15	NoRel	true	دینا	کرنے
+Relation	T20	T13	NoRel	true	مات	ختم
+Relation	T20	T9	NoRel	true	مات	ختم
+Relation	T3	T4	NoRel	true	نکل	مات
+Relation	T4	T0	NoRel	true	مات	مات
+Relation	T4	T1	NoRel	true	مات	کھیل
+Relation	T4	T2	NoRel	true	مات	دینا
+Relation	T4	T20	NoRel	true	مات	مات
+Relation	T5	T11	NoRel	true	کہلاتا	جیت
+Relation	T7	T0	NoRel	true	مات	مات
+Relation	T7	T13	NoRel	true	مات	ختم
+Relation	T7	T4	NoRel	true	مات	مات
+Relation	T7	T6	NoRel	true	مات	کھیل
+Relation	T7	T9	NoRel	true	مات	ختم
+Relation	T8	T14	NoRel	true	جیت	جیت
+Relation	T8	T3	NoRel	true	جیت	نکل
+Relation	T8	T5	NoRel	true	جیت	کہلاتا
+Relation	T8	T6	NoRel	true	جیت	کھیل
+Relation	T9	T17	NoRel	true	ختم	برابر
+Relation	T9	T6	NoRel	true	ختم	کھیل

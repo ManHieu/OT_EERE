@@ -1,0 +1,31 @@
+Text	1983 ERZURUM DEPREMI 30 Ekim 1983’te , Erzurum ve çevresinde büyük hasara ve önemli ölçüde can kaybına neden olan yer sarsıntısı .	Büyüklüğü 6,9 M _ ( s ) olan bu depremde 1.155 kişi ölmüş , 537 kişi yaralanmış , 3.241 konut ağır , 3 bin konut orta ve 4 bin konut hafif hasar görmüş , 30 bini aşkın hayvan telef olmuştur .	Makrosismik hasar değerlendirmelerine göre depremin dış merkezi , Muratbağı Kızlarkale Köyü çevresinde yer almıştır .	Erzurum - Kars depreminin oluştuğu alan Türkiye’nin birinci derece tehlikeli deprem bölgesidir .	Horasan - Narman ilçeleri arasındaki alanı kapsayan deprem bölgesi , çoğunlukla genç kırıklarla ( fay ) belirlenen alüvyon düzlükleriyle parçalanmış , yüksekliği 1.750 -2.500 m arasında değişen engebeli bir topoğrafyaya sahiptir .
+Event	T0	sarsıntısı	EVENT	118
+Event	T1	depremde	EVENT	163
+Event	T2	ölmüş	EVENT	183
+Event	T3	yaralanmış	EVENT	200
+Event	T4	görmüş	EVENT	276
+Event	T5	oluştuğu	EVENT	467
+Event	T7	1983 ERZURUM DEPREMI	EVENT	0
+Event	T8	kaybına	EVENT	95
+Event	T9	hasara	EVENT	67
+Event	T10	telef	EVENT	306
+Event	T11	değerlendirmelerine	EVENT	341
+Relation	T7	T8	CauseEffect	true	1983 ERZURUM DEPREMI	kaybına
+Relation	T8	T7	EffectCause	true	kaybına	1983 ERZURUM DEPREMI
+Relation	T7	T2	CauseEffect	true	1983 ERZURUM DEPREMI	ölmüş
+Relation	T2	T7	EffectCause	true	ölmüş	1983 ERZURUM DEPREMI
+Relation	T7	T3	CauseEffect	true	1983 ERZURUM DEPREMI	yaralanmış
+Relation	T3	T7	EffectCause	true	yaralanmış	1983 ERZURUM DEPREMI
+Relation	T7	T4	CauseEffect	true	1983 ERZURUM DEPREMI	görmüş
+Relation	T4	T7	EffectCause	true	görmüş	1983 ERZURUM DEPREMI
+Relation	T7	T9	CauseEffect	true	1983 ERZURUM DEPREMI	hasara
+Relation	T9	T7	EffectCause	true	hasara	1983 ERZURUM DEPREMI
+Relation	T7	T10	CauseEffect	true	1983 ERZURUM DEPREMI	telef
+Relation	T10	T7	EffectCause	true	telef	1983 ERZURUM DEPREMI
+Relation	T11	T2	NoRel	true	değerlendirmelerine	ölmüş
+Relation	T11	T8	NoRel	true	değerlendirmelerine	kaybına
+Relation	T2	T0	NoRel	true	ölmüş	sarsıntısı
+Relation	T4	T1	NoRel	true	görmüş	depremde
+Relation	T4	T11	NoRel	true	görmüş	değerlendirmelerine
+Relation	T5	T4	NoRel	true	oluştuğu	görmüş
+Relation	T5	T7	NoRel	true	oluştuğu	1983 ERZURUM DEPREMI

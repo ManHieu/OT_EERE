@@ -1,0 +1,54 @@
+Text	2013'te Kanada hükümeti , Kanada'daki altı sanat galerisinin varlıklarını araştırdıkları " Holocaust - era Provenance Research and Best - Practice Guidelines Project "i oluşturdu .	14 Ocak 1992'de tarihçi Marc Jansen , _ NRC Handelsblad'daki _ bir makalesinde , Uluslararası Kadın Hareketi Arşivleri'nin kayıtları da dahil olmak üzere Hollanda'dan çalınan arşiv koleksiyonlarının ( Dutch 1940 yılında yağmalanmış olan ) Rusya'da bulunduğunu açıkladı .	El konulan kayıtlar başlangıçta Berlin'e gönderildi ve daha sonra güvenlik nedeniyle Sudetenland'a taşındı .	Savaşın sonunda Kızıl Ordu belgeleri Alman işgali altındaki Çekoslovakya'dan aldı ve Moskova'da bulunan KGB'nin ( Rusça : Özel Arşiv)'ine kaldırdı .	Anlaşmalar keşiften hemen sonra hazırlansa da bürokratik gecikmeler arşivlerin on bir yıl boyunca iade edilmesini engelledi .
+Event	T0	oluşturdu	EVENT	169
+Event	T1	çalınan	EVENT	348
+Event	T2	yağmalanmış	EVENT	401
+Event	T3	açıkladı	EVENT	441
+Event	T4	gönderildi	EVENT	493
+Event	T5	taşındı	EVENT	551
+Event	T6	işgali	EVENT	604
+Event	T7	aldı	EVENT	638
+Event	T8	kaldırdı	EVENT	699
+Event	T9	keşiften	EVENT	721
+Event	T10	hazırlansa	EVENT	742
+Event	T11	gecikmeler	EVENT	767
+Event	T12	iade	EVENT	808
+Event	T13	engelledi	EVENT	824
+Event	T14	araştırdıkları	EVENT	74
+Event	T15	konulan	EVENT	455
+Event	T16	Savaşın	EVENT	561
+Event	T17	Anlaşmalar	EVENT	710
+Relation	T11	T13	CauseEffect	true	gecikmeler	engelledi
+Relation	T13	T11	EffectCause	true	engelledi	gecikmeler
+Relation	T0	T15	NoRel	true	oluşturdu	konulan
+Relation	T0	T2	NoRel	true	oluşturdu	yağmalanmış
+Relation	T1	T7	NoRel	true	çalınan	aldı
+Relation	T10	T12	NoRel	true	hazırlansa	iade
+Relation	T10	T15	NoRel	true	hazırlansa	konulan
+Relation	T11	T5	NoRel	true	gecikmeler	taşındı
+Relation	T12	T8	NoRel	true	iade	kaldırdı
+Relation	T13	T12	NoRel	true	engelledi	iade
+Relation	T13	T14	NoRel	true	engelledi	araştırdıkları
+Relation	T14	T13	NoRel	true	araştırdıkları	engelledi
+Relation	T14	T5	NoRel	true	araştırdıkları	taşındı
+Relation	T16	T0	NoRel	true	Savaşın	oluşturdu
+Relation	T16	T1	NoRel	true	Savaşın	çalınan
+Relation	T16	T6	NoRel	true	Savaşın	işgali
+Relation	T17	T15	NoRel	true	Anlaşmalar	konulan
+Relation	T17	T16	NoRel	true	Anlaşmalar	Savaşın
+Relation	T17	T3	NoRel	true	Anlaşmalar	açıkladı
+Relation	T17	T7	NoRel	true	Anlaşmalar	aldı
+Relation	T2	T1	NoRel	true	yağmalanmış	çalınan
+Relation	T2	T17	NoRel	true	yağmalanmış	Anlaşmalar
+Relation	T2	T6	NoRel	true	yağmalanmış	işgali
+Relation	T3	T11	NoRel	true	açıkladı	gecikmeler
+Relation	T4	T10	NoRel	true	gönderildi	hazırlansa
+Relation	T4	T7	NoRel	true	gönderildi	aldı
+Relation	T4	T9	NoRel	true	gönderildi	keşiften
+Relation	T5	T0	NoRel	true	taşındı	oluşturdu
+Relation	T5	T6	NoRel	true	taşındı	işgali
+Relation	T6	T13	NoRel	true	işgali	engelledi
+Relation	T7	T17	NoRel	true	aldı	Anlaşmalar
+Relation	T8	T10	NoRel	true	kaldırdı	hazırlansa
+Relation	T8	T9	NoRel	true	kaldırdı	keşiften
+Relation	T9	T11	NoRel	true	keşiften	gecikmeler
+Relation	T9	T16	NoRel	true	keşiften	Savaşın

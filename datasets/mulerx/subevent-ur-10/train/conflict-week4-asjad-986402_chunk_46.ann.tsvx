@@ -1,0 +1,27 @@
+Text	مارچ 1922 میں اتحادیوں نے جنگ بندی کی تجویز پیش کی ۔	یہ محسوس کرتے ہوئے کہ اس نے اسٹریٹجک فائدہ اٹھایا ہے ، مصطفی کمال نے کسی بھی تصفیے سے انکار کر دیا جبکہ یونانی اناطولیہ میں رہے اور یونانیوں کے خلاف حتمی کارروائی کے لیے ترک فوج کو دوبارہ منظم کرنے کی کوششوں کو تیز کر دیا ۔	ایک ہی وقت میں ، یونانیوں نے اپنی دفاعی پوزیشنوں کو مضبوط کیا ، لیکن دفاعی طور پر باقی نہ رہنے اور جنگ کی طوالت کی وجہ سے تیزی سے مایوس ہو رہے تھے ۔	یونانی حکومت انگریزوں کی طرف سے کچھ فوجی مدد حاصل کرنے یا کم از کم قرض حاصل کرنے کے لیے بے چین تھی ، اس لیے اس نے قسطنطنیہ میں اپنی پوزیشنوں کو دھمکیاں دے کر ، برطانوی سفارتی طور پر مجبور کرنے کا ایک سوچا سمجھا منصوبہ تیار کیا ، لیکن یہ کبھی عملی شکل میں نہیں آیا ۔	قسطنطنیہ پر قبضہ کرنا اس وقت ایک آسان کام ہوتا کیونکہ اتحادی فوجیں وہاں گیرسونڈ تھریس ( دو ڈویژن ) میں یونانی افواج کے مقابلے میں بہت کم تھیں ۔
+Event	T0	بندی	EVENT	30
+Event	T1	محسوس	EVENT	56
+Event	T2	اٹھایا	EVENT	96
+Event	T3	تصفیے	EVENT	130
+Event	T4	کارروائی	EVENT	207
+Event	T5	کوششوں	EVENT	254
+Event	T6	رہنے	EVENT	367
+Event	T7	جنگ	EVENT	376
+Event	T8	طوالت	EVENT	383
+Event	T9	کرنے	EVENT	614
+Event	T10	آیا	EVENT	686
+Relation	T4	T5	SuperSub	true	کارروائی	کوششوں
+Relation	T5	T4	SubSuper	true	کوششوں	کارروائی
+Relation	T0	T9	NoRel	true	بندی	کرنے
+Relation	T1	T9	NoRel	true	محسوس	کرنے
+Relation	T10	T5	NoRel	true	آیا	کوششوں
+Relation	T10	T9	NoRel	true	آیا	کرنے
+Relation	T2	T0	NoRel	true	اٹھایا	بندی
+Relation	T2	T10	NoRel	true	اٹھایا	آیا
+Relation	T3	T0	NoRel	true	تصفیے	بندی
+Relation	T3	T7	NoRel	true	تصفیے	جنگ
+Relation	T3	T8	NoRel	true	تصفیے	طوالت
+Relation	T4	T9	NoRel	true	کارروائی	کرنے
+Relation	T6	T8	NoRel	true	رہنے	طوالت
+Relation	T7	T1	NoRel	true	جنگ	محسوس
+Relation	T9	T5	NoRel	true	کرنے	کوششوں

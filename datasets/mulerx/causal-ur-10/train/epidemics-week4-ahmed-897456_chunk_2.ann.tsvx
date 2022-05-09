@@ -1,0 +1,53 @@
+Text	یہ احتیاط وبائی مرض کو روکنے کے لیے کی جاتی ہے ۔	کورونا وائرس جیسی وبا سے نمٹنے کے لیے سماجی فاصلہ گیری پر سختی سے عمل درآمد کی ضرورت پر اکثر زور دیا جاتا ہے ۔	تاہم یہ دیکھا گیا ہے کہ اکثر سیاسی اور عوامی رہنماؤں کو بھی اس مسئلے کی سنگینی کا احساس نہیں اور وہ سماجی رابطے کم کرنے کی بجائے انہیں سرکاری سطح پر بڑھاتے ہوئے نظر آتے ہیں ۔	زمرہ : طبی حفظان صحت زمرہ : عدوی امراض زمرہ : قرنطینہ زمرہ : وبائی امراض زمرہ : وبائیات زمرہ : کورونا وائرس کی عالمی وبا ، 2019ء - 2020ء سے متعلق سدباب کی کوششیں زمرہ : چھوٹے پیغام خانوں کا استعمال کرنے والے مضامین	
+Event	T0	روکنے	EVENT	23
+Event	T1	دیکھا	EVENT	168
+Event	T2	بڑھاتے	EVENT	309
+Event	T3	سدباب	EVENT	481
+Event	T4	مرض	EVENT	16
+Event	T5	کی	EVENT	36
+Event	T6	وبا	EVENT	67
+Event	T7	نمٹنے	EVENT	74
+Event	T8	عمل	EVENT	115
+Event	T9	دیا	EVENT	146
+Event	T10	مسئلے	EVENT	223
+Event	T11	احساس	EVENT	242
+Event	T12	کم	EVENT	272
+Event	T13	امراض	EVENT	368
+Event	T14	امراض	EVENT	402
+Event	T15	وبا	EVENT	452
+Event	T16	کوششیں	EVENT	490
+Event	T17	استعمال	EVENT	525
+Relation	T1	T15	NoRel	true	دیکھا	وبا
+Relation	T10	T17	NoRel	true	مسئلے	استعمال
+Relation	T10	T2	NoRel	true	مسئلے	بڑھاتے
+Relation	T12	T1	NoRel	true	کم	دیکھا
+Relation	T12	T13	NoRel	true	کم	امراض
+Relation	T12	T14	NoRel	true	کم	امراض
+Relation	T12	T2	NoRel	true	کم	بڑھاتے
+Relation	T13	T0	NoRel	true	امراض	روکنے
+Relation	T14	T1	NoRel	true	امراض	دیکھا
+Relation	T14	T11	NoRel	true	امراض	احساس
+Relation	T14	T4	NoRel	true	امراض	مرض
+Relation	T15	T13	NoRel	true	وبا	امراض
+Relation	T15	T7	NoRel	true	وبا	نمٹنے
+Relation	T16	T10	NoRel	true	کوششیں	مسئلے
+Relation	T16	T12	NoRel	true	کوششیں	کم
+Relation	T17	T0	NoRel	true	استعمال	روکنے
+Relation	T2	T15	NoRel	true	بڑھاتے	وبا
+Relation	T2	T16	NoRel	true	بڑھاتے	کوششیں
+Relation	T2	T17	NoRel	true	بڑھاتے	استعمال
+Relation	T4	T0	NoRel	true	مرض	روکنے
+Relation	T4	T12	NoRel	true	مرض	کم
+Relation	T4	T14	NoRel	true	مرض	امراض
+Relation	T4	T17	NoRel	true	مرض	استعمال
+Relation	T5	T15	NoRel	true	کی	وبا
+Relation	T5	T16	NoRel	true	کی	کوششیں
+Relation	T6	T3	NoRel	true	وبا	سدباب
+Relation	T7	T1	NoRel	true	نمٹنے	دیکھا
+Relation	T8	T0	NoRel	true	عمل	روکنے
+Relation	T8	T12	NoRel	true	عمل	کم
+Relation	T8	T14	NoRel	true	عمل	امراض
+Relation	T9	T1	NoRel	true	دیا	دیکھا
+Relation	T9	T12	NoRel	true	دیا	کم
+Relation	T9	T15	NoRel	true	دیا	وبا
+Relation	T9	T6	NoRel	true	دیا	وبا

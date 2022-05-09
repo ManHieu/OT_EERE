@@ -1,0 +1,50 @@
+Text	- Técnica de recuperación inicial de pérdida de sustentación no apropiada a las circunstancias de vuelo , en donde era prioritario disminuir el ángulo de ataque en desmedro de la pérdida de altitud .	- Comportamiento inusual de los comandos de vuelo de alerones , durante la pérdida de control , probablemente por la acumulación de hielo en la superficie anterior a los mismos , que imposibilitaron la recuperación de la aeronave .	- Situación de estrés creciente en la tripulación , que afectó la toma de decisiones operativas " .	El informe expresa además algunas " Condiciones potencialmente peligrosas , no causales del presente suceso " , relacionadas con el " Contexto organizacional y operacional de la empresa " , como :	- Especificaciones de operación del explotador desactualizadas - Cumplimiento parcializado de lo establecido en la RAAC 121.133_– Apéndice A , referente a la mantener actualizados los Manuales de Operación del Explotador .
+Event	T0	recuperación	EVENT	13
+Event	T1	pérdida	EVENT	37
+Event	T2	vuelo	EVENT	98
+Event	T3	disminuir	EVENT	131
+Event	T4	ataque	EVENT	154
+Event	T5	pérdida	EVENT	179
+Event	T6	vuelo	EVENT	244
+Event	T7	pérdida	EVENT	275
+Event	T8	acumulación	EVENT	317
+Event	T9	imposibilitaron	EVENT	383
+Event	T10	recuperación	EVENT	402
+Event	T11	creciente	EVENT	454
+Event	T12	afectó	EVENT	488
+Event	T13	toma	EVENT	498
+Event	T14	expresa	EVENT	543
+Event	T15	suceso	EVENT	633
+Event	T16	operación	EVENT	751
+Event	T17	establecido	EVENT	826
+Relation	T11	T12	SuperSub	true	creciente	afectó
+Relation	T12	T11	SubSuper	true	afectó	creciente
+Relation	T0	T11	NoRel	true	recuperación	creciente
+Relation	T0	T12	NoRel	true	recuperación	afectó
+Relation	T0	T13	NoRel	true	recuperación	toma
+Relation	T0	T9	NoRel	true	recuperación	imposibilitaron
+Relation	T1	T13	NoRel	true	pérdida	toma
+Relation	T1	T17	NoRel	true	pérdida	establecido
+Relation	T1	T3	NoRel	true	pérdida	disminuir
+Relation	T1	T7	NoRel	true	pérdida	pérdida
+Relation	T1	T9	NoRel	true	pérdida	imposibilitaron
+Relation	T10	T17	NoRel	true	recuperación	establecido
+Relation	T10	T3	NoRel	true	recuperación	disminuir
+Relation	T12	T1	NoRel	true	afectó	pérdida
+Relation	T12	T15	NoRel	true	afectó	suceso
+Relation	T12	T7	NoRel	true	afectó	pérdida
+Relation	T13	T0	NoRel	true	toma	recuperación
+Relation	T14	T16	NoRel	true	expresa	operación
+Relation	T16	T1	NoRel	true	operación	pérdida
+Relation	T2	T13	NoRel	true	vuelo	toma
+Relation	T2	T4	NoRel	true	vuelo	ataque
+Relation	T2	T6	NoRel	true	vuelo	vuelo
+Relation	T2	T8	NoRel	true	vuelo	acumulación
+Relation	T3	T2	NoRel	true	disminuir	vuelo
+Relation	T4	T17	NoRel	true	ataque	establecido
+Relation	T5	T14	NoRel	true	pérdida	expresa
+Relation	T6	T3	NoRel	true	vuelo	disminuir
+Relation	T7	T8	NoRel	true	pérdida	acumulación
+Relation	T8	T0	NoRel	true	acumulación	recuperación
+Relation	T8	T1	NoRel	true	acumulación	pérdida
+Relation	T8	T7	NoRel	true	acumulación	pérdida

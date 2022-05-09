@@ -1,0 +1,39 @@
+Text	AEROFLOT FLIGHT 1492 var en planlagt russisk indenrigs flyvning fra Sheremetyevo International Airport i Moskva til Murmansk Airport i Murmansk .	Ruten blev den 5. maj 2019 betjent af et fly af typen Sukhoj Superjet 100 , der efter starten rapporterede problemer for derefter at vende tilbage til lufthavnen , hvor flyet nødlandede ca. en halv time efter starten .	Ved nødlandingen kollapsede flyets understel og vinger og den bagerste del af skroget brød i brand .	41 af de i alt 78 ombordværende omkom .	Flyet lettede fra Sjeremetevo med kurs mod Murmansk kl. 18:02 lokal tid ( kl. 15:02 UTC ) .
+Event	T0	planlagt	EVENT	28
+Event	T1	flyvning	EVENT	55
+Event	T2	betjent	EVENT	173
+Event	T3	problemer	EVENT	253
+Event	T4	nødlandede	EVENT	321
+Event	T5	starten	EVENT	355
+Event	T6	kollapsede	EVENT	382
+Event	T7	omkom	EVENT	498
+Event	T8	lettede	EVENT	512
+Event	T9	kurs	EVENT	540
+Event	T10	vende tilbage	EVENT	279
+Event	T11	brand	EVENT	458
+Relation	T10	T4	SuperSub	true	vende tilbage	nødlandede
+Relation	T4	T10	SubSuper	true	nødlandede	vende tilbage
+Relation	T2	T8	SuperSub	true	betjent	lettede
+Relation	T8	T2	SubSuper	true	lettede	betjent
+Relation	T5	T8	SuperSub	true	starten	lettede
+Relation	T8	T5	SubSuper	true	lettede	starten
+Relation	T0	T8	SuperSub	true	planlagt	lettede
+Relation	T8	T0	SubSuper	true	lettede	planlagt
+Relation	T0	T9	SuperSub	true	planlagt	kurs
+Relation	T9	T0	SubSuper	true	kurs	planlagt
+Relation	T0	T10	NoRel	true	planlagt	vende tilbage
+Relation	T1	T9	NoRel	true	flyvning	kurs
+Relation	T10	T0	NoRel	true	vende tilbage	planlagt
+Relation	T11	T1	NoRel	true	brand	flyvning
+Relation	T11	T2	NoRel	true	brand	betjent
+Relation	T11	T4	NoRel	true	brand	nødlandede
+Relation	T2	T6	NoRel	true	betjent	kollapsede
+Relation	T4	T6	NoRel	true	nødlandede	kollapsede
+Relation	T4	T8	NoRel	true	nødlandede	lettede
+Relation	T5	T11	NoRel	true	starten	brand
+Relation	T6	T10	NoRel	true	kollapsede	vende tilbage
+Relation	T7	T11	NoRel	true	omkom	brand
+Relation	T7	T9	NoRel	true	omkom	kurs
+Relation	T8	T7	NoRel	true	lettede	omkom
+Relation	T8	T9	NoRel	true	lettede	kurs
+Relation	T9	T6	NoRel	true	kurs	kollapsede

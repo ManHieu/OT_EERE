@@ -1,0 +1,86 @@
+Text	On 25 October 2019 , after the release of the final investigation report by NTSC , Boeing President and CEO Dennis Muilenburg responded :	" We are addressing the KNKT 's safety recommendations , and taking actions to enhance the safety of the 737 MAX to prevent the flight control conditions that occurred in this accident from ever happening again .	Safety is an enduring value for everyone at Boeing and the safety of the flying public , our customers , and the crews aboard our airplanes is always our top priority .	We value our long - standing partnership with Lion Air and we look forward to continuing to work together in the future . "	In January 2020 , newly released unredacted internal messages within Boeing employees reveal that they have mocked Lion Air with profanity , belittling the airline for requesting additional simulator training for their Boeing 737 MAX pilots in 2017 citing that Lion 's sister airline ( Malindo Air ) have already operated the type .
+Event	T0	release	EVENT	31
+Event	T1	report	EVENT	66
+Event	T2	responded	EVENT	126
+Event	T3	actions	EVENT	206
+Event	T4	occurred	EVENT	297
+Event	T5	accident	EVENT	314
+Event	T6	happening	EVENT	333
+Event	T7	continuing	EVENT	598
+Event	T8	work	EVENT	612
+Event	T9	unredacted	EVENT	677
+Event	T10	messages	EVENT	697
+Event	T11	reveal	EVENT	730
+Event	T12	mocked	EVENT	752
+Event	T13	belittling	EVENT	785
+Event	T14	requesting	EVENT	812
+Event	T15	training	EVENT	844
+Event	T16	citing	EVENT	893
+Event	T17	operated	EVENT	957
+Event	T18	addressing	EVENT	147
+Event	T19	enhance	EVENT	217
+Event	T20	prevent	EVENT	254
+Event	T21	enduring	EVENT	364
+Event	T22	value	EVENT	523
+Relation	T9	T11	SuperSub	true	unredacted	reveal
+Relation	T11	T9	SubSuper	true	reveal	unredacted
+Relation	T0	T13	NoRel	true	release	belittling
+Relation	T0	T14	NoRel	true	release	requesting
+Relation	T0	T17	NoRel	true	release	operated
+Relation	T0	T7	NoRel	true	release	continuing
+Relation	T1	T0	NoRel	true	report	release
+Relation	T1	T10	NoRel	true	report	messages
+Relation	T1	T17	NoRel	true	report	operated
+Relation	T1	T2	NoRel	true	report	responded
+Relation	T1	T21	NoRel	true	report	enduring
+Relation	T1	T9	NoRel	true	report	unredacted
+Relation	T10	T1	NoRel	true	messages	report
+Relation	T10	T16	NoRel	true	messages	citing
+Relation	T10	T2	NoRel	true	messages	responded
+Relation	T10	T6	NoRel	true	messages	happening
+Relation	T11	T14	NoRel	true	reveal	requesting
+Relation	T11	T16	NoRel	true	reveal	citing
+Relation	T11	T2	NoRel	true	reveal	responded
+Relation	T11	T22	NoRel	true	reveal	value
+Relation	T12	T18	NoRel	true	mocked	addressing
+Relation	T13	T17	NoRel	true	belittling	operated
+Relation	T13	T18	NoRel	true	belittling	addressing
+Relation	T13	T4	NoRel	true	belittling	occurred
+Relation	T14	T21	NoRel	true	requesting	enduring
+Relation	T15	T11	NoRel	true	training	reveal
+Relation	T15	T22	NoRel	true	training	value
+Relation	T16	T14	NoRel	true	citing	requesting
+Relation	T17	T15	NoRel	true	operated	training
+Relation	T17	T18	NoRel	true	operated	addressing
+Relation	T17	T20	NoRel	true	operated	prevent
+Relation	T17	T3	NoRel	true	operated	actions
+Relation	T17	T4	NoRel	true	operated	occurred
+Relation	T18	T3	NoRel	true	addressing	actions
+Relation	T19	T10	NoRel	true	enhance	messages
+Relation	T19	T22	NoRel	true	enhance	value
+Relation	T2	T13	NoRel	true	responded	belittling
+Relation	T2	T21	NoRel	true	responded	enduring
+Relation	T2	T5	NoRel	true	responded	accident
+Relation	T20	T17	NoRel	true	prevent	operated
+Relation	T20	T9	NoRel	true	prevent	unredacted
+Relation	T21	T14	NoRel	true	enduring	requesting
+Relation	T21	T2	NoRel	true	enduring	responded
+Relation	T21	T20	NoRel	true	enduring	prevent
+Relation	T21	T4	NoRel	true	enduring	occurred
+Relation	T21	T9	NoRel	true	enduring	unredacted
+Relation	T22	T0	NoRel	true	value	release
+Relation	T22	T7	NoRel	true	value	continuing
+Relation	T4	T1	NoRel	true	occurred	report
+Relation	T4	T17	NoRel	true	occurred	operated
+Relation	T4	T21	NoRel	true	occurred	enduring
+Relation	T5	T22	NoRel	true	accident	value
+Relation	T5	T4	NoRel	true	accident	occurred
+Relation	T5	T7	NoRel	true	accident	continuing
+Relation	T6	T12	NoRel	true	happening	mocked
+Relation	T6	T21	NoRel	true	happening	enduring
+Relation	T6	T8	NoRel	true	happening	work
+Relation	T7	T10	NoRel	true	continuing	messages
+Relation	T7	T12	NoRel	true	continuing	mocked
+Relation	T8	T1	NoRel	true	work	report
+Relation	T9	T4	NoRel	true	unredacted	occurred
+Relation	T9	T6	NoRel	true	unredacted	happening

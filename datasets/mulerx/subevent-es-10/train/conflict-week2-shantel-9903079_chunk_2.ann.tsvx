@@ -1,0 +1,33 @@
+Text	Las investigaciones resultantes de las llaves encontradas en Farrell llevaron a las autoridades a un segundo automóvil , que contenía una gran cantidad de explosivos , en un estacionamiento en Marbella .	[ miniaturade imagen | Lugar en el que Seán Savage fue abatido ] Casi dos meses después del tiroteo , se emitió en la televisión británica el documental " Death on the Rock " ( " Muerte en la Roca " ) .	Utilizando reconstrucciones y relatos de testigos presenciales , presentó la posibilidad de que los tres miembros del IRA hubieran sido asesinados ilegalmente .	El documental resultó extremadamente controvertido ; varios periódicos británicos lo describieron como " juicio por televisión " .	La investigación sobre las muertes comenzó en septiembre de 1988 .
+Event	T0	encontradas	EVENT	46
+Event	T1	llevaron	EVENT	69
+Event	T10	presentó	EVENT	472
+Event	T11	asesinados	EVENT	543
+Event	T12	resultó	EVENT	582
+Event	T13	juicio	EVENT	673
+Event	T14	investigación	EVENT	702
+Event	T2	abatido	EVENT	259
+Event	T3	tiroteo	EVENT	296
+Event	T4	emitió	EVENT	309
+Event	T5	documental	EVENT	346
+Event	T8	reconstrucciones	EVENT	418
+Event	T9	relatos	EVENT	437
+Relation	T5	T12	SuperSub	true	documental	resultó
+Relation	T12	T5	SubSuper	true	resultó	documental
+Relation	T0	T9	NoRel	true	encontradas	relatos
+Relation	T1	T0	NoRel	true	llevaron	encontradas
+Relation	T1	T2	NoRel	true	llevaron	abatido
+Relation	T10	T0	NoRel	true	presentó	encontradas
+Relation	T11	T3	NoRel	true	asesinados	tiroteo
+Relation	T12	T0	NoRel	true	resultó	encontradas
+Relation	T12	T2	NoRel	true	resultó	abatido
+Relation	T12	T8	NoRel	true	resultó	reconstrucciones
+Relation	T13	T1	NoRel	true	juicio	llevaron
+Relation	T14	T11	NoRel	true	investigación	asesinados
+Relation	T14	T8	NoRel	true	investigación	reconstrucciones
+Relation	T3	T10	NoRel	true	tiroteo	presentó
+Relation	T3	T13	NoRel	true	tiroteo	juicio
+Relation	T4	T3	NoRel	true	emitió	tiroteo
+Relation	T8	T0	NoRel	true	reconstrucciones	encontradas
+Relation	T8	T10	NoRel	true	reconstrucciones	presentó
+Relation	T9	T2	NoRel	true	relatos	abatido

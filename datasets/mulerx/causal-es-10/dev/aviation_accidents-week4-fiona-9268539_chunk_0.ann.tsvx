@@ -1,0 +1,33 @@
+Text	El ACCIDENTE AÉREO DEL SIKORSKY S-76 fue un suceso que ocurrió en la mañana del 26 de enero de 2020 , que cobró notoriedad mundial debido a que entre los nueve pasajeros que abordaron el helicóptero Sikorsky S-76 Spirit se encontraban el baloncestista estadounidense Kobe Bryant de 41 años , junto a su segunda hija Gianna Bryant .	El helicóptero se estrelló en la localidad de Calabasas ( California ) , muriendo todos los ocupantes .	Las causas del accidente aún se siguen investigando , aunque según los indicios la más barajada es debido al mal tiempo ( niebla ) .	Las actualizaciones de investigación publicadas por la Junta Nacional de Seguridad en el Transporte durante la investigación del accidente afirman que :	- El helicóptero no estaba equipado con un registrador de datos de vuelo ( FDR ) o un registrador de voz de cabina ( CVR ) ni se requería que lo tuviera .
+Event	T0	AÉREO	EVENT	13
+Event	T1	suceso	EVENT	44
+Event	T2	ocurrió	EVENT	55
+Event	T3	abordaron	EVENT	174
+Event	T4	estrelló	EVENT	350
+Event	T5	muriendo	EVENT	405
+Event	T6	accidente	EVENT	451
+Event	T7	investigando	EVENT	475
+Event	T8	barajada	EVENT	523
+Event	T9	actualizaciones	EVENT	573
+Event	T10	publicadas	EVENT	606
+Event	T11	investigación	EVENT	680
+Event	T12	afirman	EVENT	708
+Event	T13	requería	EVENT	851
+Relation	T4	T5	CauseEffect	true	estrelló	muriendo
+Relation	T5	T4	EffectCause	true	muriendo	estrelló
+Relation	T1	T2	NoRel	true	suceso	ocurrió
+Relation	T10	T2	NoRel	true	publicadas	ocurrió
+Relation	T10	T7	NoRel	true	publicadas	investigando
+Relation	T11	T5	NoRel	true	investigación	muriendo
+Relation	T12	T6	NoRel	true	afirman	accidente
+Relation	T13	T10	NoRel	true	requería	publicadas
+Relation	T2	T6	NoRel	true	ocurrió	accidente
+Relation	T3	T4	NoRel	true	abordaron	estrelló
+Relation	T4	T0	NoRel	true	estrelló	AÉREO
+Relation	T4	T3	NoRel	true	estrelló	abordaron
+Relation	T5	T1	NoRel	true	muriendo	suceso
+Relation	T5	T11	NoRel	true	muriendo	investigación
+Relation	T5	T8	NoRel	true	muriendo	barajada
+Relation	T5	T9	NoRel	true	muriendo	actualizaciones
+Relation	T7	T0	NoRel	true	investigando	AÉREO
+Relation	T7	T1	NoRel	true	investigando	suceso

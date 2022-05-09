@@ -1,0 +1,48 @@
+Text	El VUELO 183 DE NEPAL AIRLINES fue un vuelo nacional regular de pasajeros en un avión tipo de Havilland Canada DHC-6 Twin Otter , que se estrelló en la selva cerca de Dhikura VDC , unos 74 kilómetros al suroeste de Pokhara , Nepal el 16 de febrero de 2014 .	Un helicóptero avistó los restos carbonizados y todavía en llamas de la aeronave y notificó que el avión se había estrellado en una colina .	El avión partió del aeropuerto de Pokhara en el centro de Nepal con quince pasajeros y tres tripulantes a bordo y fue programado para llegar al aeropuerto de Jumla en el noroeste del país , a las 13:45 hora estándar del Nepal ( 08:00 UTC ) .	El vuelo de 30 minutos estaba tratando de desviarse al aeropuerto de Bhairahawa debido a las condiciones climáticas lo que originó que el contacto con el avión se perdiera .	La última comunicación por radio con la tripulación de la aeronave fue a las 13:13 , cuando la tripulación informó de su posición aproximada a la torre de Bhairahawa .
+Event	T0	VUELO	EVENT	3
+Event	T1	vuelo	EVENT	38
+Event	T2	estrelló	EVENT	137
+Event	T3	avistó	EVENT	273
+Event	T4	carbonizados	EVENT	291
+Event	T5	notificó	EVENT	341
+Event	T6	estrellado	EVENT	372
+Event	T7	partió	EVENT	408
+Event	T8	programado	EVENT	517
+Event	T9	llegar	EVENT	533
+Event	T10	vuelo	EVENT	644
+Event	T11	tratando	EVENT	671
+Event	T12	desviarse	EVENT	683
+Event	T13	originó	EVENT	764
+Event	T14	contacto	EVENT	779
+Event	T15	perdiera	EVENT	804
+Event	T16	comunicación	EVENT	825
+Event	T17	informó	EVENT	922
+Event	T18	condiciones	EVENT	734
+Relation	T18	T15	CauseEffect	true	condiciones	perdiera
+Relation	T15	T18	EffectCause	true	perdiera	condiciones
+Relation	T18	T2	CauseEffect	true	condiciones	estrelló
+Relation	T2	T18	EffectCause	true	estrelló	condiciones
+Relation	T0	T1	NoRel	true	VUELO	vuelo
+Relation	T0	T17	NoRel	true	VUELO	informó
+Relation	T0	T6	NoRel	true	VUELO	estrellado
+Relation	T1	T13	NoRel	true	vuelo	originó
+Relation	T1	T3	NoRel	true	vuelo	avistó
+Relation	T10	T2	NoRel	true	vuelo	estrelló
+Relation	T11	T14	NoRel	true	tratando	contacto
+Relation	T12	T2	NoRel	true	desviarse	estrelló
+Relation	T12	T6	NoRel	true	desviarse	estrellado
+Relation	T12	T9	NoRel	true	desviarse	llegar
+Relation	T13	T18	NoRel	true	originó	condiciones
+Relation	T13	T3	NoRel	true	originó	avistó
+Relation	T15	T2	NoRel	true	perdiera	estrelló
+Relation	T15	T4	NoRel	true	perdiera	carbonizados
+Relation	T16	T15	NoRel	true	comunicación	perdiera
+Relation	T17	T6	NoRel	true	informó	estrellado
+Relation	T2	T16	NoRel	true	estrelló	comunicación
+Relation	T3	T11	NoRel	true	avistó	tratando
+Relation	T3	T5	NoRel	true	avistó	notificó
+Relation	T4	T16	NoRel	true	carbonizados	comunicación
+Relation	T7	T10	NoRel	true	partió	vuelo
+Relation	T7	T13	NoRel	true	partió	originó
+Relation	T8	T5	NoRel	true	programado	notificó
+Relation	T9	T10	NoRel	true	llegar	vuelo

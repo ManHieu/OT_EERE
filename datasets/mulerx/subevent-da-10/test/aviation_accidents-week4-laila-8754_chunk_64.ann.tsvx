@@ -1,0 +1,40 @@
+Text	CIA's inspektør foretog en intern undersøgelse af CIAs undersøgelser for terrorangrebet og han gav en kraftig kritik af højtstående embedsmænd for ikke at forsøge flere muligheder for at konfrontere terrorismen .	Han kritiserede deres oplysninger om , at de to flykaprere Nawaf al-Hazmi og Khalid al-Mihdhar rejste ind i USA og ved et uheld forsøgte at udveksle oplysninger med to mænd fra FBI .	I maj 2007 udarbejdede senatorer fra både Det Demokratiske Parti og Det Republikanske Parti en lovgivning , som åbent ville fremlægge en intern CIA-undersøgelsesrapport .	Rapporten undersøgte ansvaret hos hver enkelte af CIAs ansatte både før og efter den 11. september .	Rapporten var færdig i 2005 , men dens detaljer blev aldrig frigivet til offentligheden .
+Event	T0	foretog	EVENT	16
+Event	T1	undersøgelse	EVENT	34
+Event	T2	undersøgelser	EVENT	55
+Event	T3	terrorangrebet	EVENT	73
+Event	T5	kritik	EVENT	110
+Event	T6	konfrontere	EVENT	187
+Event	T7	kritiserede	EVENT	217
+Event	T8	oplysninger	EVENT	235
+Event	T9	rejste	EVENT	308
+Event	T10	forsøgte	EVENT	341
+Event	T11	fremlægge	EVENT	520
+Event	T13	færdig	EVENT	682
+Event	T14	frigivet	EVENT	728
+Event	T4	undersøgte	EVENT	577
+Event	T12	udarbejdede	EVENT	407
+Relation	T4	T13	SuperSub	true	undersøgte	færdig
+Relation	T13	T4	SubSuper	true	færdig	undersøgte
+Relation	T0	T6	NoRel	true	foretog	konfrontere
+Relation	T1	T13	NoRel	true	undersøgelse	færdig
+Relation	T10	T12	NoRel	true	forsøgte	udarbejdede
+Relation	T11	T10	NoRel	true	fremlægge	forsøgte
+Relation	T12	T8	NoRel	true	udarbejdede	oplysninger
+Relation	T13	T12	NoRel	true	færdig	udarbejdede
+Relation	T14	T11	NoRel	true	frigivet	fremlægge
+Relation	T2	T1	NoRel	true	undersøgelser	undersøgelse
+Relation	T2	T10	NoRel	true	undersøgelser	forsøgte
+Relation	T2	T8	NoRel	true	undersøgelser	oplysninger
+Relation	T3	T4	NoRel	true	terrorangrebet	undersøgte
+Relation	T4	T2	NoRel	true	undersøgte	undersøgelser
+Relation	T4	T7	NoRel	true	undersøgte	kritiserede
+Relation	T5	T1	NoRel	true	kritik	undersøgelse
+Relation	T5	T13	NoRel	true	kritik	færdig
+Relation	T5	T4	NoRel	true	kritik	undersøgte
+Relation	T6	T10	NoRel	true	konfrontere	forsøgte
+Relation	T6	T8	NoRel	true	konfrontere	oplysninger
+Relation	T7	T3	NoRel	true	kritiserede	terrorangrebet
+Relation	T8	T0	NoRel	true	oplysninger	foretog
+Relation	T8	T1	NoRel	true	oplysninger	undersøgelse
+Relation	T8	T3	NoRel	true	oplysninger	terrorangrebet

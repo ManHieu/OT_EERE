@@ -1,0 +1,42 @@
+Text	Polis telsizlerinden geçen anonslara göre kırmızı bir motosiklet ve Doğan model bir otomobil patlamadan hemen sonra olay yerinden hızla uzaklaşmıştır .	Ankara Valisi Kemal Önal'ın yaptığı açıklamada saldırıyı gerçekleştiren kişinin Sivas'ın Zara ilçesine bağlı Çaypınar nüfusuna kayıtlı , 1979 doğumlu Güven Akkuş olduğunu belirtmiştir .	Vali Önal , canlı bombanın kimliğinin kopan iki parmaktan saptandığını açıklamıştır .	Canlı bomba Güven Akkuş , geçmişte " yasa dışı afiş asmak , 1 Mayıs gösterileri sırasında polise mukavemet ve yasa dışı örgüt üyesi olmak "tan 1996 yılında tutuklanmış , iki yıl cezaevinde kalmış ve 1998 yılında tahliye edilmiştir .	Cezaevine girmeden önce Türkiye İhtilalci Komünistler Birliği üyesi olan Akkuş , tahliye olduktan sonra PKK'ya katılmış ve Kuzey Irak'ta canlı bomba olmaya karar vermiştir .
+Event	T0	patlamadan	EVENT	93
+Event	T1	uzaklaşmıştır	EVENT	136
+Event	T2	gerçekleştiren	EVENT	209
+Event	T3	belirtmiştir	EVENT	323
+Event	T4	açıklamıştır	EVENT	409
+Event	T5	asmak	EVENT	476
+Event	T6	tutuklanmış	EVENT	580
+Event	T7	kalmış	EVENT	613
+Event	T8	edilmiştir	EVENT	644
+Event	T9	tahliye	EVENT	738
+Event	T10	katılmış	EVENT	768
+Event	T11	açıklamada	EVENT	188
+Event	T12	mukavemet	EVENT	521
+Event	T13	olmak	EVENT	556
+Event	T14	vermiştir	EVENT	819
+Relation	T0	T11	SuperSub	true	patlamadan	açıklamada
+Relation	T11	T0	SubSuper	true	açıklamada	patlamadan
+Relation	T1	T14	NoRel	true	uzaklaşmıştır	vermiştir
+Relation	T10	T12	NoRel	true	katılmış	mukavemet
+Relation	T10	T13	NoRel	true	katılmış	olmak
+Relation	T11	T1	NoRel	true	açıklamada	uzaklaşmıştır
+Relation	T11	T2	NoRel	true	açıklamada	gerçekleştiren
+Relation	T13	T14	NoRel	true	olmak	vermiştir
+Relation	T13	T6	NoRel	true	olmak	tutuklanmış
+Relation	T14	T11	NoRel	true	vermiştir	açıklamada
+Relation	T2	T12	NoRel	true	gerçekleştiren	mukavemet
+Relation	T3	T0	NoRel	true	belirtmiştir	patlamadan
+Relation	T3	T13	NoRel	true	belirtmiştir	olmak
+Relation	T5	T11	NoRel	true	asmak	açıklamada
+Relation	T5	T7	NoRel	true	asmak	kalmış
+Relation	T6	T0	NoRel	true	tutuklanmış	patlamadan
+Relation	T6	T10	NoRel	true	tutuklanmış	katılmış
+Relation	T6	T11	NoRel	true	tutuklanmış	açıklamada
+Relation	T6	T4	NoRel	true	tutuklanmış	açıklamıştır
+Relation	T7	T9	NoRel	true	kalmış	tahliye
+Relation	T8	T11	NoRel	true	edilmiştir	açıklamada
+Relation	T8	T14	NoRel	true	edilmiştir	vermiştir
+Relation	T8	T7	NoRel	true	edilmiştir	kalmış
+Relation	T9	T0	NoRel	true	tahliye	patlamadan
+Relation	T9	T10	NoRel	true	tahliye	katılmış
+Relation	T9	T13	NoRel	true	tahliye	olmak

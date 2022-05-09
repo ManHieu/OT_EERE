@@ -1,0 +1,68 @@
+Text	- Víctor Altamirano Robles ( 85 ) , murió súbitamente en su hogar , el 11 de diciembre , un par de semanas después de haber sido dado de alta del hospital donde fue atendido por heridas , el 4 de noviembre .	El 18 de noviembre de 2008 , la Secretaría de Comunicaciones y Transportes informó que la caja negra del Learjet 45 que se estrelló en Lomas de Chapultepec no funcionaba desde hacía dos años y , por tanto , no había registro de datos técnicos del percance .	El 8 de diciembre , ingenieros del Instituto Politécnico Nacional , que cuentan con equipo e instalaciones para cotejar hipótesis sobre desplomes de aeronaves , ofrecen recrear el escenario del percance .	La investigación sobre posibles responsabilidades administrativas por el desplome del Learjet 45 en el que murió Juan Camilo Mouriño tomaría meses , aunque nadie ha intentado frenarla , aseguró el secretario de la Función Pública , Salvador Vega Casillas .	Informó que tenían tres expedientes abiertos ; en el CISEN , en la Secretaría de Gobernación y en la Secretaría de Comunicaciones y Transportes que contemplaban 32 líneas de investigación .
+Event	T0	atendido	EVENT	165
+Event	T1	heridas	EVENT	178
+Event	T2	informó	EVENT	283
+Event	T3	estrelló	EVENT	331
+Event	T4	funcionaba	EVENT	367
+Event	T5	registro	EVENT	424
+Event	T6	percance	EVENT	455
+Event	T7	hipótesis	EVENT	586
+Event	T8	desplomes	EVENT	602
+Event	T9	recrear	EVENT	635
+Event	T10	percance	EVENT	660
+Event	T11	investigación	EVENT	674
+Event	T12	desplome	EVENT	744
+Event	T13	murió	EVENT	778
+Event	T14	tomaría	EVENT	804
+Event	T15	aseguró	EVENT	857
+Event	T16	Informó	EVENT	928
+Event	T17	abiertos	EVENT	964
+Event	T18	investigación	EVENT	1102
+Event	T19	murió	EVENT	36
+Relation	T3	T2	SuperSub	true	estrelló	informó
+Relation	T2	T3	SubSuper	true	informó	estrelló
+Relation	T0	T11	NoRel	true	atendido	investigación
+Relation	T0	T13	NoRel	true	atendido	murió
+Relation	T0	T18	NoRel	true	atendido	investigación
+Relation	T1	T18	NoRel	true	heridas	investigación
+Relation	T10	T0	NoRel	true	percance	atendido
+Relation	T10	T15	NoRel	true	percance	aseguró
+Relation	T10	T4	NoRel	true	percance	funcionaba
+Relation	T10	T8	NoRel	true	percance	desplomes
+Relation	T12	T17	NoRel	true	desplome	abiertos
+Relation	T12	T3	NoRel	true	desplome	estrelló
+Relation	T13	T4	NoRel	true	murió	funcionaba
+Relation	T14	T2	NoRel	true	tomaría	informó
+Relation	T15	T0	NoRel	true	aseguró	atendido
+Relation	T15	T10	NoRel	true	aseguró	percance
+Relation	T15	T11	NoRel	true	aseguró	investigación
+Relation	T15	T9	NoRel	true	aseguró	recrear
+Relation	T16	T0	NoRel	true	Informó	atendido
+Relation	T16	T3	NoRel	true	Informó	estrelló
+Relation	T16	T4	NoRel	true	Informó	funcionaba
+Relation	T16	T7	NoRel	true	Informó	hipótesis
+Relation	T17	T2	NoRel	true	abiertos	informó
+Relation	T18	T1	NoRel	true	investigación	heridas
+Relation	T18	T11	NoRel	true	investigación	investigación
+Relation	T2	T18	NoRel	true	informó	investigación
+Relation	T2	T4	NoRel	true	informó	funcionaba
+Relation	T2	T7	NoRel	true	informó	hipótesis
+Relation	T3	T10	NoRel	true	estrelló	percance
+Relation	T3	T19	NoRel	true	estrelló	murió
+Relation	T3	T4	NoRel	true	estrelló	funcionaba
+Relation	T5	T0	NoRel	true	registro	atendido
+Relation	T5	T15	NoRel	true	registro	aseguró
+Relation	T5	T2	NoRel	true	registro	informó
+Relation	T5	T4	NoRel	true	registro	funcionaba
+Relation	T6	T3	NoRel	true	percance	estrelló
+Relation	T7	T1	NoRel	true	hipótesis	heridas
+Relation	T7	T10	NoRel	true	hipótesis	percance
+Relation	T7	T11	NoRel	true	hipótesis	investigación
+Relation	T7	T16	NoRel	true	hipótesis	Informó
+Relation	T7	T19	NoRel	true	hipótesis	murió
+Relation	T7	T2	NoRel	true	hipótesis	informó
+Relation	T7	T4	NoRel	true	hipótesis	funcionaba
+Relation	T8	T1	NoRel	true	desplomes	heridas
+Relation	T8	T14	NoRel	true	desplomes	tomaría
+Relation	T8	T18	NoRel	true	desplomes	investigación
+Relation	T9	T18	NoRel	true	recrear	investigación

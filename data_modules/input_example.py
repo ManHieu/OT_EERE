@@ -66,6 +66,7 @@ class InputExample:
     """
     dataset: Optional[Dataset] = None
     id: Optional[str] = None
+    content: str = None
     triggers: List[Entity] = None
     relations: List[Relation] = None
     heads: List[int] = None

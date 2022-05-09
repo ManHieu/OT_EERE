@@ -1,0 +1,57 @@
+Text	[ Residencia de Leibniz en Hannover ( primera planta del edificio central ) , desde 1698 hasta su muerte Fotocromo realizado hacia 1900 .	]	En 1711 John Keill , al escribir en la revista de la _ Royal Society _ y , con la supuesta bendición de Newton , acusó a Leibniz de haber plagiado el cálculo de Newton , dando inicio de esta manera a la disputa sobre la paternidad del cálculo .	Comenzó una investigación formal por parte de la _ Royal Society _ ( en la cual Newton fue participante reconocido ) en respuesta a la solicitud de retracción de Leibniz , respaldando de esta forma las acusaciones de Keill .	Ese mismo año , durante un viaje por el norte de Europa , el zar ruso Pedro el Grande se detuvo en Hannover y se reunió con Leibniz , quien después mostró interés por los asuntos rusos durante el resto de su vida .
+Event	T0	realizado	EVENT	115
+Event	T1	escribir	EVENT	164
+Event	T2	bendición	EVENT	231
+Event	T3	acusó	EVENT	253
+Event	T4	plagiado	EVENT	278
+Event	T5	cálculo	EVENT	290
+Event	T6	dando	EVENT	310
+Event	T7	disputa	EVENT	343
+Event	T8	paternidad	EVENT	360
+Event	T9	Comenzó	EVENT	385
+Event	T10	investigación	EVENT	397
+Event	T11	reconocido	EVENT	489
+Event	T12	solicitud	EVENT	520
+Event	T13	retracción	EVENT	533
+Event	T14	respaldando	EVENT	557
+Event	T15	acusaciones	EVENT	587
+Event	T16	viaje	EVENT	637
+Event	T17	detuvo	EVENT	699
+Event	T18	reunió	EVENT	723
+Relation	T0	T1	NoRel	true	realizado	escribir
+Relation	T0	T9	NoRel	true	realizado	Comenzó
+Relation	T1	T0	NoRel	true	escribir	realizado
+Relation	T10	T4	NoRel	true	investigación	plagiado
+Relation	T12	T16	NoRel	true	solicitud	viaje
+Relation	T12	T17	NoRel	true	solicitud	detuvo
+Relation	T12	T18	NoRel	true	solicitud	reunió
+Relation	T13	T15	NoRel	true	retracción	acusaciones
+Relation	T15	T13	NoRel	true	acusaciones	retracción
+Relation	T15	T17	NoRel	true	acusaciones	detuvo
+Relation	T15	T18	NoRel	true	acusaciones	reunió
+Relation	T15	T8	NoRel	true	acusaciones	paternidad
+Relation	T16	T5	NoRel	true	viaje	cálculo
+Relation	T16	T9	NoRel	true	viaje	Comenzó
+Relation	T17	T16	NoRel	true	detuvo	viaje
+Relation	T2	T0	NoRel	true	bendición	realizado
+Relation	T2	T16	NoRel	true	bendición	viaje
+Relation	T2	T8	NoRel	true	bendición	paternidad
+Relation	T3	T12	NoRel	true	acusó	solicitud
+Relation	T3	T17	NoRel	true	acusó	detuvo
+Relation	T4	T1	NoRel	true	plagiado	escribir
+Relation	T4	T2	NoRel	true	plagiado	bendición
+Relation	T5	T11	NoRel	true	cálculo	reconocido
+Relation	T5	T4	NoRel	true	cálculo	plagiado
+Relation	T5	T8	NoRel	true	cálculo	paternidad
+Relation	T6	T15	NoRel	true	dando	acusaciones
+Relation	T6	T2	NoRel	true	dando	bendición
+Relation	T6	T5	NoRel	true	dando	cálculo
+Relation	T6	T9	NoRel	true	dando	Comenzó
+Relation	T7	T13	NoRel	true	disputa	retracción
+Relation	T7	T16	NoRel	true	disputa	viaje
+Relation	T8	T10	NoRel	true	paternidad	investigación
+Relation	T8	T16	NoRel	true	paternidad	viaje
+Relation	T8	T18	NoRel	true	paternidad	reunió
+Relation	T8	T6	NoRel	true	paternidad	dando
+Relation	T9	T2	NoRel	true	Comenzó	bendición
+Relation	T9	T5	NoRel	true	Comenzó	cálculo

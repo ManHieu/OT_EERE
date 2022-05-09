@@ -1,0 +1,42 @@
+Text	Los demás , conocidos como los del valle de Ricote por habitar esa parte de la vega del río Segura , encomienda de la Orden de Santiago , quedaron exceptuados debido a los buenos informes de que se disponía sobre su sincera conversión al cristianismo .	Pero justo un año después , el 8 de octubre de 1611 , Felipe III decretó su expulsión y de los demás moriscos _ antiguos _ del reino de Murcia , lo que levantó numerosas protestas por ser considerados auténticos cristianos .	Los moriscos del valle de Ricote , mostraron su rechazo a esta orden realizando procesiones , penitencias , oraciones públicas y otras manifestaciones de piedad cristiana .	La orden fuera aplazada , pero dos años después , en octubre de 1613 , se procedió a la expulsión de los 2500 moriscos de Ricote junto con el resto de los moriscos _ antiguos _ , que sumaron en total unos seis o siete mil .	Fueron embarcados en Cartagena rumbo a Italia y Francia .
+Event	T0	informes	EVENT	179
+Event	T1	disponía	EVENT	198
+Event	T10	orden	EVENT	654
+Event	T11	aplazada	EVENT	666
+Event	T12	procedió	EVENT	725
+Event	T13	expulsión	EVENT	739
+Event	T14	sumaron	EVENT	834
+Event	T15	embarcados	EVENT	882
+Event	T2	conversión	EVENT	224
+Event	T3	decretó	EVENT	318
+Event	T4	expulsión	EVENT	329
+Event	T6	protestas	EVENT	423
+Event	T9	manifestaciones	EVENT	613
+Event	T5	rechazo	EVENT	526
+Relation	T10	T13	CauseEffect	true	orden	expulsión
+Relation	T13	T10	EffectCause	true	expulsión	orden
+Relation	T13	T15	CauseEffect	true	expulsión	embarcados
+Relation	T15	T13	EffectCause	true	embarcados	expulsión
+Relation	T3	T6	CauseEffect	true	decretó	protestas
+Relation	T6	T3	EffectCause	true	protestas	decretó
+Relation	T3	T9	CauseEffect	true	decretó	manifestaciones
+Relation	T9	T3	EffectCause	true	manifestaciones	decretó
+Relation	T3	T5	CauseEffect	true	decretó	rechazo
+Relation	T5	T3	EffectCause	true	rechazo	decretó
+Relation	T0	T12	NoRel	true	informes	procedió
+Relation	T1	T15	NoRel	true	disponía	embarcados
+Relation	T1	T4	NoRel	true	disponía	expulsión
+Relation	T10	T1	NoRel	true	orden	disponía
+Relation	T12	T13	NoRel	true	procedió	expulsión
+Relation	T12	T2	NoRel	true	procedió	conversión
+Relation	T12	T4	NoRel	true	procedió	expulsión
+Relation	T13	T6	NoRel	true	expulsión	protestas
+Relation	T15	T1	NoRel	true	embarcados	disponía
+Relation	T15	T12	NoRel	true	embarcados	procedió
+Relation	T2	T11	NoRel	true	conversión	aplazada
+Relation	T2	T9	NoRel	true	conversión	manifestaciones
+Relation	T4	T11	NoRel	true	expulsión	aplazada
+Relation	T4	T5	NoRel	true	expulsión	rechazo
+Relation	T5	T9	NoRel	true	rechazo	manifestaciones
+Relation	T6	T12	NoRel	true	protestas	procedió
+Relation	T6	T5	NoRel	true	protestas	rechazo

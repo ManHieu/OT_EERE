@@ -1,0 +1,7 @@
+Text	TOGULYKKEN I VARDE fandt sted den 19. juni 2018 .	Et hurtigtkørende Lint_41-togsæt fra Arriva kørte med 120 km/t ind i en minibus lidt nord for landsbyen Sig , på vej til Tistrup .	Bussen krydsede en usikret jernbaneoverskæring .	I bussen sad to mennesker , som døde på stedet .	Toget blev 45 % skadet , og forenden skulle have en hel ny forendekasse .
+Event	T0	kørte	EVENT	94
+Event	T1	krydsede	EVENT	188
+Event	T2	sad	EVENT	239
+Event	T3	døde	EVENT	262
+Event	T4	skadet	EVENT	295
+Relation	T2	T3	NoRel	true	sad	døde

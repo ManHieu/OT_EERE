@@ -1,0 +1,40 @@
+Text	[ Skovbrandene i Brasilien . ]	SKOVBRANDENE I AMAZONAS 2019 er en række skovbrande i Amazonregnskoven , der startede i januar 2019 .	Brasiliens præsident Jair Bolsonaro , der beskylder diverse ngo'er for at være skyld i skovbrandene , beordrede i slutningen af august samme år , at militæret i form af 44.000 soldater skulle sættes ind mod brandene , som der siden starten af året havde været 73.000 af - mod under 40.000 i hele 2018 .	De enkelte delstater skal dog anmode om hjælp , før militæret kan sættes ind mod brandene .	Hvert minut afbrændes et område svarende til en fodboldbane .
+Event	T0	skovbrande	EVENT	72
+Event	T1	startede	EVENT	108
+Event	T2	beskylder	EVENT	175
+Event	T3	beordrede	EVENT	235
+Event	T4	brandene	EVENT	340
+Event	T5	anmode	EVENT	466
+Event	T6	hjælp	EVENT	476
+Event	T7	afbrændes	EVENT	540
+Event	T8	Skovbrandene	EVENT	2
+Event	T9	SKOVBRANDENE	EVENT	31
+Event	T10	skyld	EVENT	212
+Event	T11	været	EVENT	387
+Event	T12	sættes	EVENT	325
+Event	T13	sættes	EVENT	502
+Relation	T5	T13	CauseEffect	true	anmode	sættes
+Relation	T13	T5	EffectCause	true	sættes	anmode
+Relation	T0	T10	NoRel	true	skovbrande	skyld
+Relation	T0	T6	NoRel	true	skovbrande	hjælp
+Relation	T1	T6	NoRel	true	startede	hjælp
+Relation	T11	T13	NoRel	true	været	sættes
+Relation	T11	T9	NoRel	true	været	SKOVBRANDENE
+Relation	T13	T11	NoRel	true	sættes	været
+Relation	T13	T3	NoRel	true	sættes	beordrede
+Relation	T13	T9	NoRel	true	sættes	SKOVBRANDENE
+Relation	T2	T12	NoRel	true	beskylder	sættes
+Relation	T2	T13	NoRel	true	beskylder	sættes
+Relation	T2	T5	NoRel	true	beskylder	anmode
+Relation	T3	T13	NoRel	true	beordrede	sættes
+Relation	T3	T2	NoRel	true	beordrede	beskylder
+Relation	T3	T7	NoRel	true	beordrede	afbrændes
+Relation	T4	T6	NoRel	true	brandene	hjælp
+Relation	T6	T0	NoRel	true	hjælp	skovbrande
+Relation	T6	T1	NoRel	true	hjælp	startede
+Relation	T6	T3	NoRel	true	hjælp	beordrede
+Relation	T6	T7	NoRel	true	hjælp	afbrændes
+Relation	T6	T8	NoRel	true	hjælp	Skovbrandene
+Relation	T7	T6	NoRel	true	afbrændes	hjælp
+Relation	T8	T0	NoRel	true	Skovbrandene	skovbrande
+Relation	T9	T11	NoRel	true	SKOVBRANDENE	været

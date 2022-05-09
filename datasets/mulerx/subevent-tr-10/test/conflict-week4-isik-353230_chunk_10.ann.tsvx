@@ -1,0 +1,11 @@
+Text	Bunu fırsat bilen gençler Yeni Dünya Matbaası’na yürüdüler .	Birkaç dakika içinde bu matbaa da yerle bir edilmişti .	Makineler , mobilyalar , kitaplar , gazeteler , arşivler sokaklara dökülmüş , parça parça edilmişti .	Bu arada tünelde sol neşriyata ait kitaplar satan Berrak Kitabevi de tahrip edilerek , ticaret hayatından silinmişti .	O zaman bazı bakkaliye ve mağazaların isimleri Tan levhalarını taşıyordu .
+Event	T0	yürüdüler	EVENT	49
+Event	T2	edilmişti	EVENT	105
+Event	T3	edilmişti	EVENT	207
+Event	T5	silinmişti	EVENT	325
+Event	T1	dökülmüş	EVENT	184
+Event	T4	edilerek	EVENT	295
+Event	T6	satan	EVENT	263
+Relation	T1	T0	NoRel	true	dökülmüş	yürüdüler
+Relation	T5	T0	NoRel	true	silinmişti	yürüdüler
+Relation	T5	T2	NoRel	true	silinmişti	edilmişti

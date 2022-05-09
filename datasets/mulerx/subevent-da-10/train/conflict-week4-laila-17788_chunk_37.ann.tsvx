@@ -1,0 +1,42 @@
+Text	Richardson's friske tropper slog først .	Forrest i dagens fjerde angreb mod hulvejen var den irske brigade under brigadegeneral Thomas F. Meagher .	Mens de rykkede frem med smaragdgrønne flag blafrende i vinden red en regimentspræst fader William Corby , frem og tilbage langs fronten og råbte tilgivelser , som dem den katolske kirke foreskriver for de som skal dø .	( Corby gjorde noget lignende i Slaget ved Gettysburg i 1863 . )	De primært irske immigranter i brigaden mistede 540 mand til kraftige salver af riffelild inden de blev beordret til at trække sig tilbage .
+Event	T0	angreb	EVENT	65
+Event	T1	blafrende	EVENT	192
+Event	T2	red	EVENT	211
+Event	T3	tilgivelser	EVENT	294
+Event	T4	dø	EVENT	363
+Event	T5	gjorde	EVENT	376
+Event	T6	Slaget	EVENT	400
+Event	T7	mistede	EVENT	473
+Event	T8	salver	EVENT	503
+Event	T9	beordret	EVENT	537
+Event	T10	slog	EVENT	28
+Event	T11	rykkede frem	EVENT	156
+Event	T12	foreskriver	EVENT	335
+Event	T13	immigranter	EVENT	450
+Event	T14	riffelild	EVENT	513
+Event	T15	trække sig	EVENT	553
+Relation	T11	T2	SuperSub	true	rykkede frem	red
+Relation	T2	T11	SubSuper	true	red	rykkede frem
+Relation	T7	T15	SuperSub	true	mistede	trække sig
+Relation	T15	T7	SubSuper	true	trække sig	mistede
+Relation	T1	T13	NoRel	true	blafrende	immigranter
+Relation	T1	T15	NoRel	true	blafrende	trække sig
+Relation	T10	T11	NoRel	true	slog	rykkede frem
+Relation	T10	T12	NoRel	true	slog	foreskriver
+Relation	T10	T14	NoRel	true	slog	riffelild
+Relation	T10	T3	NoRel	true	slog	tilgivelser
+Relation	T11	T10	NoRel	true	rykkede frem	slog
+Relation	T12	T0	NoRel	true	foreskriver	angreb
+Relation	T13	T1	NoRel	true	immigranter	blafrende
+Relation	T14	T6	NoRel	true	riffelild	Slaget
+Relation	T2	T14	NoRel	true	red	riffelild
+Relation	T3	T6	NoRel	true	tilgivelser	Slaget
+Relation	T4	T5	NoRel	true	dø	gjorde
+Relation	T5	T13	NoRel	true	gjorde	immigranter
+Relation	T6	T15	NoRel	true	Slaget	trække sig
+Relation	T7	T10	NoRel	true	mistede	slog
+Relation	T7	T4	NoRel	true	mistede	dø
+Relation	T8	T3	NoRel	true	salver	tilgivelser
+Relation	T8	T4	NoRel	true	salver	dø
+Relation	T9	T3	NoRel	true	beordret	tilgivelser
+Relation	T9	T5	NoRel	true	beordret	gjorde

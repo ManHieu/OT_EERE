@@ -1,0 +1,15 @@
+Text	اس کے بعد طوفان شروع ہوا اور آن واحد میں تمام علاقے کو اپنی لپیٹ میں لے لیا ، حتی کہ پہاڑیاں بھی پانی میں چھپ گئیں ۔	یہ طوفان چالیس دن تک برابر جاری رہا ۔	کئی ماہ تک کشتی سمندر میں بہتی رہی اور آخر سات ماہ بعد کوہ ارارات سے جالگی ۔	قرآن مجید میں کوہ جودی درج ہے ۔	( ہود : 44 ) مفسرین کے مطابق شام میں جودی نام کا جزیرہ واقع ہے ۔
+Event	T0	ہوا	EVENT	21
+Event	T1	جالگی	EVENT	224
+Event	T2	درج	EVENT	255
+Event	T3	طوفان	EVENT	10
+Event	T4	لے	EVENT	69
+Event	T5	چھپ	EVENT	106
+Event	T6	طوفان	EVENT	120
+Event	T7	جاری	EVENT	144
+Event	T8	واقع	EVENT	319
+Relation	T3	T5	CauseEffect	true	طوفان	چھپ
+Relation	T5	T3	EffectCause	true	چھپ	طوفان
+Relation	T2	T7	NoRel	true	درج	جاری
+Relation	T4	T7	NoRel	true	لے	جاری
+Relation	T7	T6	NoRel	true	جاری	طوفان

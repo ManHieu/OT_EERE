@@ -1,0 +1,54 @@
+Text	Poco después de que el vuelo 967 impactara el agua , las señales de radiobaliza , conocidas como transmisor de localización de emergencia ( ELT ) , comenzaron a sonar .	La BEA francesa recuperó la grabadora de voz de cabina ( CVR ) y la grabadora de datos de vuelo ( FDR ) sumergidas en el Mar Negro y descubrió que solo había daños menores en ambas grabadoras .	Posteriormente , la BEA examinó tanto el CVR como el FDR .	Según el examen , el vuelo transcurrió sin incidentes hasta la aproximación .	Sin embargo , durante la etapa de crucero del vuelo , el primer oficial Davtyan declaró : " es improperio quién opera esos vuelos con el nerviosismo y sin dormir lo suficiente " .
+Event	T0	vuelo	EVENT	23
+Event	T1	impactara	EVENT	33
+Event	T2	comenzaron	EVENT	148
+Event	T3	sonar	EVENT	161
+Event	T4	recuperó	EVENT	185
+Event	T5	sumergidas	EVENT	273
+Event	T6	descubrió	EVENT	302
+Event	T7	daños	EVENT	327
+Event	T8	examinó	EVENT	387
+Event	T9	examen	EVENT	431
+Event	T10	transcurrió	EVENT	449
+Event	T11	incidentes	EVENT	465
+Event	T12	aproximación	EVENT	485
+Event	T13	etapa	EVENT	525
+Event	T14	crucero	EVENT	534
+Event	T15	vuelo	EVENT	546
+Event	T16	declaró	EVENT	580
+Event	T17	opera	EVENT	612
+Relation	T0	T15	NoRel	true	vuelo	vuelo
+Relation	T1	T13	NoRel	true	impactara	etapa
+Relation	T1	T14	NoRel	true	impactara	crucero
+Relation	T1	T15	NoRel	true	impactara	vuelo
+Relation	T1	T8	NoRel	true	impactara	examinó
+Relation	T10	T13	NoRel	true	transcurrió	etapa
+Relation	T11	T16	NoRel	true	incidentes	declaró
+Relation	T11	T3	NoRel	true	incidentes	sonar
+Relation	T12	T17	NoRel	true	aproximación	opera
+Relation	T12	T6	NoRel	true	aproximación	descubrió
+Relation	T13	T16	NoRel	true	etapa	declaró
+Relation	T14	T12	NoRel	true	crucero	aproximación
+Relation	T15	T1	NoRel	true	vuelo	impactara
+Relation	T15	T14	NoRel	true	vuelo	crucero
+Relation	T15	T16	NoRel	true	vuelo	declaró
+Relation	T15	T9	NoRel	true	vuelo	examen
+Relation	T16	T2	NoRel	true	declaró	comenzaron
+Relation	T2	T7	NoRel	true	comenzaron	daños
+Relation	T3	T10	NoRel	true	sonar	transcurrió
+Relation	T3	T5	NoRel	true	sonar	sumergidas
+Relation	T4	T1	NoRel	true	recuperó	impactara
+Relation	T4	T2	NoRel	true	recuperó	comenzaron
+Relation	T5	T15	NoRel	true	sumergidas	vuelo
+Relation	T5	T4	NoRel	true	sumergidas	recuperó
+Relation	T6	T5	NoRel	true	descubrió	sumergidas
+Relation	T6	T9	NoRel	true	descubrió	examen
+Relation	T7	T11	NoRel	true	daños	incidentes
+Relation	T7	T13	NoRel	true	daños	etapa
+Relation	T8	T11	NoRel	true	examinó	incidentes
+Relation	T8	T15	NoRel	true	examinó	vuelo
+Relation	T8	T6	NoRel	true	examinó	descubrió
+Relation	T9	T0	NoRel	true	examen	vuelo
+Relation	T9	T11	NoRel	true	examen	incidentes
+Relation	T9	T12	NoRel	true	examen	aproximación
+Relation	T9	T7	NoRel	true	examen	daños

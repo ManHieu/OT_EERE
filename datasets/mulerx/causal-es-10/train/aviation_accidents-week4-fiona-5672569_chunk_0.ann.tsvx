@@ -1,0 +1,51 @@
+Text	[ miniaturade imagen | Globos de aire caliente se preparan para ascender en Lúxor , 2013 . ] El 26 de febrero de 2013 , a las 07:00 hora estándar de Egipto ( 05:00 UTC ) , un globo de aire caliente se estrelló cerca de Lúxor , Egipto .	El accidente resultó en 19 muertes de 21 pasajeros - 18 en el lugar y una en el hospital horas más tarde .	Fue el desastre en globo más mortífero en la historia , superando la caída del globo de aire caliente Alice Springs en Australia , en 1989 .	Temprano el 26 de febrero , un globo Ultramagic N-425 , inscrito como SU-283 , operado por Sky Cruise partió en un vuelo para turistas que llevó veinte pasajeros y un piloto .	De acuerdo con un piloto de un globo cercano , Mohamed Youssef , se inició un incendio en el globo Sky Cruise a pocos metros del suelo , ya que estaba tratando de aterrizar , posiblemente como resultado de la tripulación de tierra los intentos de anclar el globo .
+Event	T0	preparan	EVENT	50
+Event	T1	ascender	EVENT	64
+Event	T2	estrelló	EVENT	201
+Event	T3	resultó	EVENT	249
+Event	T4	muertes	EVENT	263
+Event	T5	Fue	EVENT	343
+Event	T6	desastre	EVENT	350
+Event	T7	superando	EVENT	399
+Event	T8	caída	EVENT	412
+Event	T9	inscrito	EVENT	540
+Event	T10	operado	EVENT	563
+Event	T11	partió	EVENT	586
+Event	T12	vuelo	EVENT	599
+Event	T13	llevó	EVENT	623
+Event	T14	inició	EVENT	728
+Event	T15	incendio	EVENT	738
+Event	T16	tratando	EVENT	811
+Event	T17	aterrizar	EVENT	823
+Event	T18	intentos	EVENT	895
+Event	T19	anclar	EVENT	907
+Relation	T2	T4	CauseEffect	true	estrelló	muertes
+Relation	T4	T2	EffectCause	true	muertes	estrelló
+Relation	T0	T9	NoRel	true	preparan	inscrito
+Relation	T1	T12	NoRel	true	ascender	vuelo
+Relation	T1	T16	NoRel	true	ascender	tratando
+Relation	T1	T19	NoRel	true	ascender	anclar
+Relation	T10	T1	NoRel	true	operado	ascender
+Relation	T10	T7	NoRel	true	operado	superando
+Relation	T11	T14	NoRel	true	partió	inició
+Relation	T11	T18	NoRel	true	partió	intentos
+Relation	T11	T19	NoRel	true	partió	anclar
+Relation	T12	T8	NoRel	true	vuelo	caída
+Relation	T13	T3	NoRel	true	llevó	resultó
+Relation	T13	T7	NoRel	true	llevó	superando
+Relation	T14	T12	NoRel	true	inició	vuelo
+Relation	T16	T7	NoRel	true	tratando	superando
+Relation	T17	T16	NoRel	true	aterrizar	tratando
+Relation	T17	T18	NoRel	true	aterrizar	intentos
+Relation	T17	T2	NoRel	true	aterrizar	estrelló
+Relation	T17	T5	NoRel	true	aterrizar	Fue
+Relation	T18	T19	NoRel	true	intentos	anclar
+Relation	T19	T9	NoRel	true	anclar	inscrito
+Relation	T2	T11	NoRel	true	estrelló	partió
+Relation	T4	T14	NoRel	true	muertes	inició
+Relation	T4	T16	NoRel	true	muertes	tratando
+Relation	T5	T9	NoRel	true	Fue	inscrito
+Relation	T6	T0	NoRel	true	desastre	preparan
+Relation	T6	T15	NoRel	true	desastre	incendio
+Relation	T8	T3	NoRel	true	caída	resultó
+Relation	T9	T11	NoRel	true	inscrito	partió

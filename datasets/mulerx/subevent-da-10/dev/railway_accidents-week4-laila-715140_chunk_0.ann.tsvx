@@ -1,0 +1,36 @@
+Text	GODSTOGSAFSPORINGEN I FARRIS 2012 fandt sted 29. november 2012 , da et godstog fra Hector Rail afsporede under udkørsel fra Farris mod Sommersted og ødelagde 6-7 km spor på Vamdrup-Padborg-banen .	Den enkeltsporede strækning var lukket til 19. december .	Lukningen af strækningen havde væsentlig betydning for den internationale jernbanegodstrafik mellem Danmark/Sverige/Norge og Tyskland , der normalt benytter denne strækning .	Der blev meget hurtigt skabt mulighed for at sende godstogene via Bramming-Tønder , men strækningen havde ikke kapacitet nok til alle planlagte godstog , og desuden måtte persontogstrafikken mellem Bramming og Tønder indstilles for at frigøre kapacitet til godstogene .	Efter krydsning med et modkørende persontog kørte godstoget fra spor 2 gennem sporskiftet i stationens sydlige ende .
+Event	T0	udkørsel	EVENT	111
+Event	T1	ødelagde	EVENT	149
+Event	T3	lukket	EVENT	229
+Event	T4	Lukningen	EVENT	255
+Event	T5	benytter	EVENT	403
+Event	T6	sende	EVENT	475
+Event	T7	indstilles	EVENT	647
+Event	T8	krydsning	EVENT	706
+Event	T9	kørte	EVENT	744
+Event	T10	GODSTOGSAFSPORINGEN	EVENT	0
+Event	T11	afsporede	EVENT	95
+Event	T2	skabt	EVENT	453
+Event	T12	kapacitet	EVENT	541
+Event	T13	betydning	EVENT	296
+Relation	T4	T2	SuperSub	true	Lukningen	skabt
+Relation	T2	T4	SubSuper	true	skabt	Lukningen
+Relation	T0	T11	NoRel	true	udkørsel	afsporede
+Relation	T0	T12	NoRel	true	udkørsel	kapacitet
+Relation	T1	T4	NoRel	true	ødelagde	Lukningen
+Relation	T11	T13	NoRel	true	afsporede	betydning
+Relation	T12	T0	NoRel	true	kapacitet	udkørsel
+Relation	T12	T1	NoRel	true	kapacitet	ødelagde
+Relation	T12	T2	NoRel	true	kapacitet	skabt
+Relation	T4	T11	NoRel	true	Lukningen	afsporede
+Relation	T4	T8	NoRel	true	Lukningen	krydsning
+Relation	T5	T12	NoRel	true	benytter	kapacitet
+Relation	T5	T4	NoRel	true	benytter	Lukningen
+Relation	T6	T8	NoRel	true	sende	krydsning
+Relation	T7	T4	NoRel	true	indstilles	Lukningen
+Relation	T7	T5	NoRel	true	indstilles	benytter
+Relation	T7	T9	NoRel	true	indstilles	kørte
+Relation	T8	T1	NoRel	true	krydsning	ødelagde
+Relation	T9	T13	NoRel	true	kørte	betydning
+Relation	T9	T2	NoRel	true	kørte	skabt
+Relation	T9	T4	NoRel	true	kørte	Lukningen

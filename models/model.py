@@ -16,9 +16,9 @@ class PlOTEERE(pl.LightningModule):
                 model_args: ModelArguments, 
                 training_args: TrainingArguments,
                 datasets: str,
-                scratch_tokenizer: str,
+                # scratch_tokenizer: str,
                 
-                # num_training_step: int
+                num_training_step: int
                 ) -> None:
         super().__init__()
         self.save_hyperparameters()
@@ -29,7 +29,6 @@ class PlOTEERE(pl.LightningModule):
 
         self.model = OTEERE(encoder_model=model_args.encoder_name_or_path,
                             max_seq_len=training_args.max_seq_len,
-                            scratch_tokenizer=scratch_tokenizer,
                             distance_emb_size=model_args.distance_emb_size,
                             hidden_size=model_args.hidden_size,
                             gcn_num_layers=model_args.gcn_num_layers,
@@ -43,10 +42,10 @@ class PlOTEERE(pl.LightningModule):
                             fn_actv=model_args.fn_actv,
                             regular_loss_weight=training_args.regular_loss_weight,
                             OT_loss_weight=training_args.OT_loss_weight,
-                            use_word_emb=model_args.use_pretrained_wemb,
                             tune_encoder=self.tune_encoder,
                             residual_type=model_args.residual_type)
         self.model_results = []
+        self.best_vals = [0, 0, 0]
     
     def training_step(self, batch, batch_idx):
         logits, loss, pred_loss, regu_loss, cost, labels = self.model(*batch)
@@ -75,6 +74,9 @@ class PlOTEERE(pl.LightningModule):
                             pred=predicts,
                             report=True)
         self.log_dict({'f1_dev': f1, 'p_dev': p, 'r_dev': r}, prog_bar=True)
+        if f1 >= self.best_vals[-1]:
+            print((p, r, f1))
+            self.best_vals = [p, r, f1]
         return f1
     
     def test_step(self, batch, batch_idx) -> Optional[STEP_OUTPUT]:
@@ -100,7 +102,7 @@ class PlOTEERE(pl.LightningModule):
     
     def configure_optimizers(self):
         "Prepare optimizer and schedule (linear warmup and decay)"
-        num_batches = self.trainer.max_epochs * len(self.train_dataloader()) / self.trainer.accumulate_grad_batches
+        num_batches = self.hparams.num_training_step / self.trainer.accumulate_grad_batches
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_pretrain_parameters = [
             {

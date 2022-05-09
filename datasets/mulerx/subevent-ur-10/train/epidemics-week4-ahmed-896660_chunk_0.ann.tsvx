@@ -1,0 +1,20 @@
+Text	[ A CDC computer rendering of SARS - CoV-2 ] اس مضمون میں ان صفحات کی فہرست زمانی ترتیب ( بلحاظ ماہ ) سے دی گئ ہے جو سارس - کووی-2 وبا ، وائرس سے متعلق ہیں ،	یہ وائرس کورونا وائرس کی وبا ، 2019ء - 2020ء جو ووہان سے شروع ہوا ، اس کی بھی وجہ ہے ۔	اس فہرست میں اہم عصری ردعمل اور اقدامات شامل نہیں ہوسکتے ہیں ۔	-	کورونا وائرس کی وبا ، 2019ء - 2020ء کا خط زمانی نومبر 2019 ء – جنوری 2020ء -
+Event	T0	rendering	EVENT	17
+Event	T2	ردعمل	EVENT	267
+Event	T3	دی	EVENT	105
+Event	T4	وبا	EVENT	131
+Event	T5	متعلق	EVENT	146
+Event	T6	وبا	EVENT	183
+Event	T7	شروع	EVENT	215
+Event	T1	اقدامات	EVENT	277
+Event	T8	شامل	EVENT	285
+Event	T9	وبا	EVENT	326
+Relation	T6	T7	SuperSub	true	وبا	شروع
+Relation	T7	T6	SubSuper	true	شروع	وبا
+Relation	T2	T3	NoRel	true	ردعمل	دی
+Relation	T3	T4	NoRel	true	دی	وبا
+Relation	T4	T5	NoRel	true	وبا	متعلق
+Relation	T5	T6	NoRel	true	متعلق	وبا
+Relation	T7	T5	NoRel	true	شروع	متعلق
+Relation	T9	T4	NoRel	true	وبا	وبا
+Relation	T9	T7	NoRel	true	وبا	شروع

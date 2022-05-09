@@ -1,0 +1,28 @@
+Text	Debido al creciente número de nuevos casos , el 4 de noviembre de 2020 el gobierno lituano decidió poner al país bajo un bloqueo a nivel nacional , que ve reglas más estrictas que las reglas de la zona roja establecidas .	El bloqueo estaba programado para durar hasta el 29 de noviembre , pero luego se amplió con más restricciones hasta el 1 de febrero de 2021 y el sistema de zonas de riesgo no entrará en vigencia hasta después de que se levanten las restricciones a nivel nacional .	Categoría : Lituania en 2021 Categoría : Lituania en 2020 Categoría : Pandemia de COVID-19 en Europa Categoría : Pandemia de COVID-19 por país Categoría : Wikipedia : Páginas con traducciones sin revisar Categoría : Salud en Lituania	Civinskas , R. , Dvorak , J. , Šumskas , G. ( 2021 ) Medikai ir socialinių paslaugų teikėjai – COVID- 19 sukeltos krizės politikų priešakinėse linijose : darbo salygos , jų poveikis , elgsena , Region Formation and Developmen Studies 33 , no . 1 , 6-16	https : / / www.lrt.lt / naujienos / lietuvoje / 2 / 1310996 / nvsc - patvirtina - per - para - nuo - covid - 19 - nemire - 130 - zmoniu - ligoninems - tikslinant - informacija - priskaiciuotos - ir - ankstesnes - mirtys
+Event	T0	creciente	EVENT	10
+Event	T1	poner	EVENT	99
+Event	T2	establecidas	EVENT	207
+Event	T3	bloqueo	EVENT	225
+Event	T4	programado	EVENT	240
+Event	T5	amplió	EVENT	303
+Event	T6	restricciones	EVENT	318
+Event	T7	levanten	EVENT	441
+Event	T8	restricciones	EVENT	454
+Event	T9	traducciones	EVENT	666
+Event	T10	krizės	EVENT	835
+Event	T11	mirtys	EVENT	1188
+Relation	T0	T7	NoRel	true	creciente	levanten
+Relation	T1	T11	NoRel	true	poner	mirtys
+Relation	T10	T5	NoRel	true	krizės	amplió
+Relation	T11	T10	NoRel	true	mirtys	krizės
+Relation	T11	T4	NoRel	true	mirtys	programado
+Relation	T2	T10	NoRel	true	establecidas	krizės
+Relation	T2	T8	NoRel	true	establecidas	restricciones
+Relation	T2	T9	NoRel	true	establecidas	traducciones
+Relation	T3	T10	NoRel	true	bloqueo	krizės
+Relation	T3	T9	NoRel	true	bloqueo	traducciones
+Relation	T4	T2	NoRel	true	programado	establecidas
+Relation	T4	T7	NoRel	true	programado	levanten
+Relation	T6	T1	NoRel	true	restricciones	poner
+Relation	T7	T5	NoRel	true	levanten	amplió
+Relation	T9	T5	NoRel	true	traducciones	amplió

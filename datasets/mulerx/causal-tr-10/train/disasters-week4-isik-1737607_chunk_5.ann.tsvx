@@ -1,0 +1,18 @@
+Text	Ama genel bir korelasyon vardır .	Hekla uzun bir uykuya gidiyor , daha büyük ve daha yıkıcı bir patlama için bekliyor .	En son patlama 26 Şubat 2000 tarihinde oldu .	küçükresim | sağ | Steam at the summit of Hekla İzlanda en büyük Holosen patlamalar biri 5 onun Volkanik Patlayabilirlik Endeksi ( VEI ) yerleştirerek , atmosfere volkanik kaya yaklaşık 7.3 km³'lük attı ( 950 BC ) ( 1159 BC ) Hekla 3 ( veya H3 ) patlama oldu .	Bunun sonucunda birkaç yıl boyunca Dünya'nın kuzey bölgelerinde sıcaklık artı .
+Event	T0	gidiyor	EVENT	56
+Event	T1	patlama	EVENT	96
+Event	T2	bekliyor	EVENT	109
+Event	T3	patlama	EVENT	127
+Event	T4	patlamalar	EVENT	239
+Event	T5	yerleştirerek	EVENT	303
+Event	T6	oldu	EVENT	420
+Event	T7	artı	EVENT	500
+Event	T8	oldu	EVENT	159
+Relation	T6	T7	CauseEffect	true	oldu	artı
+Relation	T7	T6	EffectCause	true	artı	oldu
+Relation	T0	T3	NoRel	true	gidiyor	patlama
+Relation	T0	T4	NoRel	true	gidiyor	patlamalar
+Relation	T2	T0	NoRel	true	bekliyor	gidiyor
+Relation	T3	T8	NoRel	true	patlama	oldu
+Relation	T4	T6	NoRel	true	patlamalar	oldu
+Relation	T6	T4	NoRel	true	oldu	patlamalar

@@ -1,0 +1,13 @@
+Text	Suriye Devrim Komuta Konseyi , 26 Nisan 1964'te Askeri Birlik Şartı'nı feshederek , Irak ile Suriye arasındaki ikili birleşme sürecini sona erdirdi .	Baas Partisi'ne karşı yürütülen darbenin ardından el - Bekir , partinin baskın itici gücü haline geldi ve 1964'te Bölge Komutanlığı genel sekreteri seçildi .	Saddam Hüseyin , Irak Baas Partisinin Bölge Komutanlığında tam parti üyeliği ve bir koltuk aldı çünkü Hüseyin , el - Bekir'in yakın bir akrabasıydı .	Hüseyin , el - Bekir'in rızasıyla partinin iç güvenliğini geliştirmek için bir girişim başlattı .	1964'te Hüseyin , partideki subaylara karşı bir ağırlık olarak hareket etmek ve ordunun parti üzerindeki kontrolünü zayıflatmak için partinin gizli güvenlik aygıtı olan Cihaz Hanin'i kurdu .
+Event	T0	feshederek	EVENT	71
+Event	T1	erdirdi	EVENT	140
+Event	T3	geldi	EVENT	247
+Event	T4	seçildi	EVENT	298
+Event	T6	başlattı	EVENT	545
+Event	T7	kurdu	EVENT	739
+Event	T2	darbenin	EVENT	182
+Event	T8	aldı	EVENT	399
+Relation	T3	T6	NoRel	true	geldi	başlattı
+Relation	T6	T0	NoRel	true	başlattı	feshederek
+Relation	T7	T1	NoRel	true	kurdu	erdirdi
+Relation	T8	T6	NoRel	true	aldı	başlattı

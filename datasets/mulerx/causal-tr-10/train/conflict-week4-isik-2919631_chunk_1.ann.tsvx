@@ -1,0 +1,36 @@
+Text	Yine de rehinelerin tutulduğu mağaraya girip rehineleri kurtarmaya yönelik kurtarma operasyonu başarısız oldu ve on üç silahsız sivil , PKK militanlarınca öldürüldü .	Operasyonda üç Özel Kuvvetler personeli hayatını kaybetti .	- Cumhurbaşkanı Recep Tayyip Erdoğan katliam sonrasında da sınır ötesi harekâtların devam edeceğini söylemiş , Gara'da katledilen asker ve siviller için " Bir başka ülkenin başına gelse tüm dünyanın ayağa kalkacağı on üç masumun infazı hadisesinde gelen birkaç cılız ses dışında Türkiye'nin yanında kimseyi göremedik .	Ey Batı , neredesiniz ?	Niye sesiniz çıkmıyor ? Neden sustunuz ?
+Event	T0	oldu	EVENT	105
+Event	T1	öldürüldü	EVENT	155
+Event	T2	Operasyonda	EVENT	167
+Event	T3	kaybetti	EVENT	216
+Event	T4	katliam	EVENT	264
+Event	T5	söylemiş	EVENT	327
+Event	T6	katledilen	EVENT	346
+Event	T7	gelen	EVENT	475
+Event	T8	ses	EVENT	494
+Event	T9	sustunuz	EVENT	600
+Event	T10	tutulduğu	EVENT	20
+Event	T11	girip	EVENT	39
+Event	T12	operasyonu	EVENT	84
+Event	T13	harekâtların	EVENT	298
+Relation	T10	T11	CauseEffect	true	tutulduğu	girip
+Relation	T11	T10	EffectCause	true	girip	tutulduğu
+Relation	T10	T12	CauseEffect	true	tutulduğu	operasyonu
+Relation	T12	T10	EffectCause	true	operasyonu	tutulduğu
+Relation	T0	T1	CauseEffect	true	oldu	öldürüldü
+Relation	T1	T0	EffectCause	true	öldürüldü	oldu
+Relation	T2	T3	CauseEffect	true	Operasyonda	kaybetti
+Relation	T3	T2	EffectCause	true	kaybetti	Operasyonda
+Relation	T12	T3	CauseEffect	true	operasyonu	kaybetti
+Relation	T3	T12	EffectCause	true	kaybetti	operasyonu
+Relation	T1	T10	NoRel	true	öldürüldü	tutulduğu
+Relation	T1	T7	NoRel	true	öldürüldü	gelen
+Relation	T10	T9	NoRel	true	tutulduğu	sustunuz
+Relation	T12	T5	NoRel	true	operasyonu	söylemiş
+Relation	T12	T6	NoRel	true	operasyonu	katledilen
+Relation	T13	T5	NoRel	true	harekâtların	söylemiş
+Relation	T3	T4	NoRel	true	kaybetti	katliam
+Relation	T4	T2	NoRel	true	katliam	Operasyonda
+Relation	T5	T13	NoRel	true	söylemiş	harekâtların
+Relation	T6	T1	NoRel	true	katledilen	öldürüldü
+Relation	T7	T0	NoRel	true	gelen	oldu

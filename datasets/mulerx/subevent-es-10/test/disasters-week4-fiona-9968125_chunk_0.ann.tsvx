@@ -1,0 +1,37 @@
+Text	El 9 de julio de 2021 , un incendio en una fábrica de alimentos y bebidas dejó al menos 52 personas muertas y otras 20 resultaron heridas .	El incendio ocurrió en la fábrica de jugo de Shezam en Rupganj , una ciudad industrial en el distrito de Narayan ganj , Bangladés .	El mismo día , el propietario de Sajeeb Group , cuya subsidiaria Hashem Foods es propietaria de la fábrica de jugos , sus cuatro hijos y otros tres ejecutivos de la empresa fueron arrestados en relación con el incendio .	Se enfrentan a varios cargos que incluyen asesinato , intento de asesinato y causar intencionalmente lesiones graves .	La fábrica fue construida ilegalmente , no tenía salidas de emergencia y carecía de las medidas de seguridad adecuadas .
+Event	T0	incendio	EVENT	27
+Event	T1	dejó	EVENT	74
+Event	T2	muertas	EVENT	100
+Event	T3	heridas	EVENT	130
+Event	T4	ocurrió	EVENT	152
+Event	T5	arrestados	EVENT	452
+Event	T6	incendio	EVENT	482
+Event	T7	enfrentan	EVENT	496
+Event	T8	cargos	EVENT	515
+Event	T9	asesinato	EVENT	535
+Event	T10	intento	EVENT	547
+Event	T11	asesinato	EVENT	558
+Event	T12	causar	EVENT	570
+Event	T13	construida	EVENT	627
+Event	T14	salidas	EVENT	661
+Relation	T6	T5	SuperSub	true	incendio	arrestados
+Relation	T5	T6	SubSuper	true	arrestados	incendio
+Relation	T10	T14	NoRel	true	intento	salidas
+Relation	T10	T9	NoRel	true	intento	asesinato
+Relation	T11	T10	NoRel	true	asesinato	intento
+Relation	T11	T7	NoRel	true	asesinato	enfrentan
+Relation	T11	T9	NoRel	true	asesinato	asesinato
+Relation	T12	T14	NoRel	true	causar	salidas
+Relation	T13	T3	NoRel	true	construida	heridas
+Relation	T13	T4	NoRel	true	construida	ocurrió
+Relation	T2	T11	NoRel	true	muertas	asesinato
+Relation	T3	T0	NoRel	true	heridas	incendio
+Relation	T3	T11	NoRel	true	heridas	asesinato
+Relation	T3	T2	NoRel	true	heridas	muertas
+Relation	T4	T6	NoRel	true	ocurrió	incendio
+Relation	T7	T12	NoRel	true	enfrentan	causar
+Relation	T7	T5	NoRel	true	enfrentan	arrestados
+Relation	T8	T1	NoRel	true	cargos	dejó
+Relation	T8	T10	NoRel	true	cargos	intento
+Relation	T9	T11	NoRel	true	asesinato	asesinato
+Relation	T9	T8	NoRel	true	asesinato	cargos

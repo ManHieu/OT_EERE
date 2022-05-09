@@ -1,0 +1,85 @@
+Text	- 8 Temmuz 2018 - Kapıkule'den İstanbul'a doğru hareket eden yolcu treni Çorlu yakınlarından geçerken yağış nedeniyle rayların altındaki toprak menfezin kayması sonucu 5 vagon devrilmiş ve meydana gelen tren kazasında 25 kişi ölmüş 317 kişi yaralanmıştır .	- 13 Aralık 2018 - Ankara - Konya seferini yapan Yüksek Hızlı Tren ( YHT ) Yenimahalle ilçesine bağlı Çiftlik'te bulunan Marşandiz istasyonunda meydana gelen tren kazasında 9 kişi hayatını kaybetti , 84 kişi de yaralandı .	- Demiryolu kazaları sınıflandırması - Ölümlü tren kazaları listesi - Yol kazaları listesi – Hemzemin geçit kazalarını kapsar .	- Hemzemin geçit kazaları listesi - İngiliz demiryolu kazaları listesi - Hindistan demiryolu kazaları listesi - Rusya demiryolu kazaları listesi - Ülkelere göre demiryolu kazaları listesi - Tramvay kazası	http : / / economictimes .
+Event	T0	hareket	EVENT	48
+Event	T1	yağış	EVENT	102
+Event	T2	devrilmiş	EVENT	176
+Event	T4	kazasında	EVENT	208
+Event	T5	ölmüş	EVENT	226
+Event	T6	yaralanmıştır	EVENT	241
+Event	T7	kazasında	EVENT	420
+Event	T8	kaybetti	EVENT	446
+Event	T9	yaralandı	EVENT	468
+Event	T10	kazaları	EVENT	625
+Event	T11	kazaları	EVENT	779
+Event	T12	kayması	EVENT	153
+Event	T3	yapan	EVENT	300
+Event	T13	kazaları	EVENT	492
+Event	T14	kazaları	EVENT	531
+Event	T15	kazaları	EVENT	554
+Event	T16	kazalarını	EVENT	588
+Event	T17	kazaları	EVENT	662
+Event	T18	kazaları	EVENT	701
+Event	T19	kazaları	EVENT	736
+Event	T20	kazası	EVENT	806
+Relation	T1	T12	CauseEffect	true	yağış	kayması
+Relation	T12	T1	EffectCause	true	kayması	yağış
+Relation	T12	T2	CauseEffect	true	kayması	devrilmiş
+Relation	T2	T12	EffectCause	true	devrilmiş	kayması
+Relation	T2	T4	CauseEffect	true	devrilmiş	kazasında
+Relation	T4	T2	EffectCause	true	kazasında	devrilmiş
+Relation	T4	T5	CauseEffect	true	kazasında	ölmüş
+Relation	T5	T4	EffectCause	true	ölmüş	kazasında
+Relation	T4	T6	CauseEffect	true	kazasında	yaralanmıştır
+Relation	T6	T4	EffectCause	true	yaralanmıştır	kazasında
+Relation	T7	T8	CauseEffect	true	kazasında	kaybetti
+Relation	T8	T7	EffectCause	true	kaybetti	kazasında
+Relation	T7	T9	CauseEffect	true	kazasında	yaralandı
+Relation	T9	T7	EffectCause	true	yaralandı	kazasında
+Relation	T0	T18	NoRel	true	hareket	kazaları
+Relation	T0	T6	NoRel	true	hareket	yaralanmıştır
+Relation	T1	T11	NoRel	true	yağış	kazaları
+Relation	T1	T15	NoRel	true	yağış	kazaları
+Relation	T1	T9	NoRel	true	yağış	yaralandı
+Relation	T10	T12	NoRel	true	kazaları	kayması
+Relation	T10	T13	NoRel	true	kazaları	kazaları
+Relation	T10	T16	NoRel	true	kazaları	kazalarını
+Relation	T11	T16	NoRel	true	kazaları	kazalarını
+Relation	T11	T3	NoRel	true	kazaları	yapan
+Relation	T13	T15	NoRel	true	kazaları	kazaları
+Relation	T13	T6	NoRel	true	kazaları	yaralanmıştır
+Relation	T14	T20	NoRel	true	kazaları	kazası
+Relation	T15	T10	NoRel	true	kazaları	kazaları
+Relation	T15	T6	NoRel	true	kazaları	yaralanmıştır
+Relation	T15	T7	NoRel	true	kazaları	kazasında
+Relation	T16	T15	NoRel	true	kazalarını	kazaları
+Relation	T16	T6	NoRel	true	kazalarını	yaralanmıştır
+Relation	T17	T11	NoRel	true	kazaları	kazaları
+Relation	T17	T19	NoRel	true	kazaları	kazaları
+Relation	T17	T5	NoRel	true	kazaları	ölmüş
+Relation	T18	T14	NoRel	true	kazaları	kazaları
+Relation	T18	T3	NoRel	true	kazaları	yapan
+Relation	T18	T7	NoRel	true	kazaları	kazasında
+Relation	T19	T14	NoRel	true	kazaları	kazaları
+Relation	T19	T20	NoRel	true	kazaları	kazası
+Relation	T19	T4	NoRel	true	kazaları	kazasında
+Relation	T2	T0	NoRel	true	devrilmiş	hareket
+Relation	T2	T17	NoRel	true	devrilmiş	kazaları
+Relation	T2	T20	NoRel	true	devrilmiş	kazası
+Relation	T20	T1	NoRel	true	kazası	yağış
+Relation	T20	T16	NoRel	true	kazası	kazalarını
+Relation	T20	T7	NoRel	true	kazası	kazasında
+Relation	T3	T15	NoRel	true	yapan	kazaları
+Relation	T3	T2	NoRel	true	yapan	devrilmiş
+Relation	T4	T11	NoRel	true	kazasında	kazaları
+Relation	T4	T13	NoRel	true	kazasında	kazaları
+Relation	T5	T16	NoRel	true	ölmüş	kazalarını
+Relation	T5	T7	NoRel	true	ölmüş	kazasında
+Relation	T6	T0	NoRel	true	yaralanmıştır	hareket
+Relation	T6	T15	NoRel	true	yaralanmıştır	kazaları
+Relation	T6	T19	NoRel	true	yaralanmıştır	kazaları
+Relation	T6	T3	NoRel	true	yaralanmıştır	yapan
+Relation	T7	T15	NoRel	true	kazasında	kazaları
+Relation	T7	T19	NoRel	true	kazasında	kazaları
+Relation	T7	T4	NoRel	true	kazasında	kazasında
+Relation	T8	T16	NoRel	true	kaybetti	kazalarını
+Relation	T8	T3	NoRel	true	kaybetti	yapan
+Relation	T9	T13	NoRel	true	yaralandı	kazaları

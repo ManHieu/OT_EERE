@@ -1,0 +1,37 @@
+Text	For sin indsats blev han forfremmet til Brigadegeneral i den frivillige hær den 4. oktober 1862 , og fik tildelt kommandoen over det der havde været Birneys brigade i 3. Korps af Army of the Potomac .	( Birney havde efterfulgt generalmajor Philip Kearny , som var blevet dræbt mens han førte sin division ved Chantilly .	)	Ward førte brigaden i Slaget ved Fredericksburg og slaget ved Chancellorsville .	Under Gettysburg-kampagnen fik Wards brigade den 2. juli af generalmajor Daniel Sickles til opgave at holde et stort område fra Wheatfield Road til Devil's Den .
+Event	T0	indsats	EVENT	8
+Event	T1	forfremmet	EVENT	25
+Event	T2	tildelt	EVENT	105
+Event	T3	efterfulgt	EVENT	216
+Event	T4	dræbt	EVENT	271
+Event	T5	førte	EVENT	286
+Event	T6	førte	EVENT	328
+Event	T7	Slaget	EVENT	345
+Event	T8	slaget	EVENT	374
+Event	T9	fik	EVENT	431
+Event	T10	holde	EVENT	506
+Event	T11	kommandoen	EVENT	113
+Event	T12	Gettysburg-kampagnen	EVENT	410
+Relation	T5	T4	CauseEffect	true	førte	dræbt
+Relation	T4	T5	EffectCause	true	dræbt	førte
+Relation	T0	T1	CauseEffect	true	indsats	forfremmet
+Relation	T1	T0	EffectCause	true	forfremmet	indsats
+Relation	T0	T4	NoRel	true	indsats	dræbt
+Relation	T0	T9	NoRel	true	indsats	fik
+Relation	T1	T12	NoRel	true	forfremmet	Gettysburg-kampagnen
+Relation	T1	T9	NoRel	true	forfremmet	fik
+Relation	T10	T1	NoRel	true	holde	forfremmet
+Relation	T10	T8	NoRel	true	holde	slaget
+Relation	T11	T3	NoRel	true	kommandoen	efterfulgt
+Relation	T11	T8	NoRel	true	kommandoen	slaget
+Relation	T12	T11	NoRel	true	Gettysburg-kampagnen	kommandoen
+Relation	T12	T5	NoRel	true	Gettysburg-kampagnen	førte
+Relation	T2	T3	NoRel	true	tildelt	efterfulgt
+Relation	T4	T12	NoRel	true	dræbt	Gettysburg-kampagnen
+Relation	T4	T2	NoRel	true	dræbt	tildelt
+Relation	T7	T0	NoRel	true	Slaget	indsats
+Relation	T7	T9	NoRel	true	Slaget	fik
+Relation	T8	T1	NoRel	true	slaget	forfremmet
+Relation	T8	T3	NoRel	true	slaget	efterfulgt
+Relation	T8	T6	NoRel	true	slaget	førte
+Relation	T9	T8	NoRel	true	fik	slaget

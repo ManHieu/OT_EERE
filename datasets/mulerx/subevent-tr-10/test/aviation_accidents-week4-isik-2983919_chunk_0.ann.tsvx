@@ -1,0 +1,20 @@
+Text	9 Kasım 2020'de Rus Mil Mi - 24 helikopteri 2020 Dağlık Karabağ Savaşı sırasında Azerbaycan Silahlı Kuvvetleri tarafından düşürüldü .	Helikopter taşınabilir hava savunma sisteminin ateşi sonucu Ermenistan sınırları içinde , Nahçıvan Özerk Cumhuriyeti'nin yakınlarına düştü .	Saldırı sonucunda mürettebattan ikisi öldü , biri yaralandı .	Azerbaycanlı yetkililer kısa süre sonra bir özür bildirisi yayınlayarak saldırının yanlışlıkla gerçekleştiğini belirttiler .	Helikopterin düşürülmesi olayı Ermenistan tarafından desteklenen _ de facto _ Dağlık Karabağ Cumhuriyeti , _ de jure _ olarak Azerbaycan yönetiminde olan tartışmalı Dağlık Karabağ bölgesinde gerçekleşti .
+Event	T0	Savaşı	EVENT	64
+Event	T1	düşürüldü	EVENT	122
+Event	T2	düştü	EVENT	267
+Event	T3	öldü	EVENT	313
+Event	T4	yaralandı	EVENT	325
+Event	T5	saldırının	EVENT	409
+Event	T6	belirttiler	EVENT	448
+Event	T7	olayı	EVENT	487
+Event	T8	gerçekleşti	EVENT	653
+Event	T9	ateşi	EVENT	181
+Event	T10	Saldırı	EVENT	275
+Event	T11	yayınlayarak	EVENT	396
+Relation	T10	T6	NoRel	true	Saldırı	belirttiler
+Relation	T11	T10	NoRel	true	yayınlayarak	Saldırı
+Relation	T11	T2	NoRel	true	yayınlayarak	düştü
+Relation	T5	T9	NoRel	true	saldırının	ateşi
+Relation	T6	T9	NoRel	true	belirttiler	ateşi
+Relation	T7	T5	NoRel	true	olayı	saldırının
+Relation	T8	T0	NoRel	true	gerçekleşti	Savaşı

@@ -1,0 +1,38 @@
+Text	30. jan. 2020 , ekstrabladet.dk : WHO erklærer coronavirus en global sundhedskrise .	WHO slår alarm : Virus udgør en international sundhedskrise .	Med WHO alarm pålægges lande i verden at koordinere deres indsats mod den frygtede virussygdom , backup	ncbi.nlm.	nih.gov: Wuhan seafood_market pneumonia virus isolate Wuhan-Hu-1 , complete genome Citat : " ... This sequence has been updated .	
+Event	T0	coronavirus	EVENT	47
+Event	T1	udgør	EVENT	108
+Event	T2	pålægges	EVENT	161
+Event	T3	indsats	EVENT	205
+Event	T4	sequence	EVENT	363
+Event	T5	updated	EVENT	381
+Event	T6	erklærer	EVENT	38
+Event	T7	sundhedskrise	EVENT	69
+Event	T8	slår alarm	EVENT	89
+Event	T9	sundhedskrise	EVENT	131
+Event	T10	alarm	EVENT	155
+Event	T11	virussygdom	EVENT	230
+Event	T12	koordinere	EVENT	188
+Event	T13	virus	EVENT	301
+Relation	T0	T7	CauseEffect	true	coronavirus	sundhedskrise
+Relation	T7	T0	EffectCause	true	sundhedskrise	coronavirus
+Relation	T9	T8	CauseEffect	true	sundhedskrise	slår alarm
+Relation	T8	T9	EffectCause	true	slår alarm	sundhedskrise
+Relation	T10	T12	CauseEffect	true	alarm	koordinere
+Relation	T12	T10	EffectCause	true	koordinere	alarm
+Relation	T0	T11	NoRel	true	coronavirus	virussygdom
+Relation	T10	T11	NoRel	true	alarm	virussygdom
+Relation	T10	T8	NoRel	true	alarm	slår alarm
+Relation	T12	T3	NoRel	true	koordinere	indsats
+Relation	T13	T6	NoRel	true	virus	erklærer
+Relation	T2	T7	NoRel	true	pålægges	sundhedskrise
+Relation	T3	T10	NoRel	true	indsats	alarm
+Relation	T3	T11	NoRel	true	indsats	virussygdom
+Relation	T4	T9	NoRel	true	sequence	sundhedskrise
+Relation	T5	T3	NoRel	true	updated	indsats
+Relation	T6	T11	NoRel	true	erklærer	virussygdom
+Relation	T7	T12	NoRel	true	sundhedskrise	koordinere
+Relation	T7	T4	NoRel	true	sundhedskrise	sequence
+Relation	T8	T2	NoRel	true	slår alarm	pålægges
+Relation	T8	T7	NoRel	true	slår alarm	sundhedskrise
+Relation	T9	T0	NoRel	true	sundhedskrise	coronavirus
+Relation	T9	T12	NoRel	true	sundhedskrise	koordinere

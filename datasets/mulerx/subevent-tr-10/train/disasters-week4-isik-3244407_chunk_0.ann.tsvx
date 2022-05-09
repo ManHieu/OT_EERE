@@ -1,0 +1,34 @@
+Text	1964 ALASKA DEPREMI , 27 Mart 1964 tarihinde merkez_üssü Amerika Birleşik Devletleri'nin Alaska eyaletinin güney kıyılarında 9.2 M _ ( w ) büyüklüğünde meydana gelen deprem .	Saat 17:36'da ( 28 Mart 3: 36 UTC ) meydana gelen deprem , 1960'da yaşanan Şili depreminden sonra yeryüzündeki en büyük ikinci deprem olarak kayıtlara geçti .	Deprem , dört dakika otuz sekiz saniye sürdü ve Alaska kıyılarında 67 metre yüksekliğe kadar ulaşan tsunami meydana getirdi .	131 kişi hayatını kaybetmesine sebep olan deprem yaklaşık 311 milyon dolarlık hasar oluşturdu .	
+Event	T0	DEPREMI	EVENT	12
+Event	T1	deprem	EVENT	166
+Event	T2	deprem	EVENT	225
+Event	T3	yaşanan	EVENT	242
+Event	T4	depreminden	EVENT	255
+Event	T5	deprem	EVENT	302
+Event	T6	geçti	EVENT	326
+Event	T7	Deprem	EVENT	334
+Event	T8	sürdü	EVENT	373
+Event	T9	getirdi	EVENT	450
+Event	T10	deprem	EVENT	502
+Event	T11	oluşturdu	EVENT	544
+Event	T12	kaybetmesine	EVENT	478
+Relation	T0	T12	NoRel	true	DEPREMI	kaybetmesine
+Relation	T0	T2	NoRel	true	DEPREMI	deprem
+Relation	T0	T3	NoRel	true	DEPREMI	yaşanan
+Relation	T1	T3	NoRel	true	deprem	yaşanan
+Relation	T1	T5	NoRel	true	deprem	deprem
+Relation	T10	T4	NoRel	true	deprem	depreminden
+Relation	T10	T8	NoRel	true	deprem	sürdü
+Relation	T11	T3	NoRel	true	oluşturdu	yaşanan
+Relation	T2	T0	NoRel	true	deprem	DEPREMI
+Relation	T2	T10	NoRel	true	deprem	deprem
+Relation	T2	T9	NoRel	true	deprem	getirdi
+Relation	T3	T1	NoRel	true	yaşanan	deprem
+Relation	T3	T5	NoRel	true	yaşanan	deprem
+Relation	T3	T6	NoRel	true	yaşanan	geçti
+Relation	T4	T8	NoRel	true	depreminden	sürdü
+Relation	T4	T9	NoRel	true	depreminden	getirdi
+Relation	T5	T7	NoRel	true	deprem	Deprem
+Relation	T6	T7	NoRel	true	geçti	Deprem
+Relation	T8	T3	NoRel	true	sürdü	yaşanan
+Relation	T9	T8	NoRel	true	getirdi	sürdü

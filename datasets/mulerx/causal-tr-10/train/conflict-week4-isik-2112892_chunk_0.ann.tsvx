@@ -1,0 +1,35 @@
+Text	2011 BINGÖL SALDIRISI , 29 Ekim 2011'de , Türkiye'nin Bingöl ilinin aynı adlı merkezinde gerçekleştirilen intihar saldırısı .	PKK mensubu Nazlı Görer tarafından gerçekleştirilen saldırıda saldırgan da dahil olmak üzere 4 kişi hayatını kaybetti , 20 kişi yaralandı .	29 Ekim Cumhuriyet Bayramı kutlamalarının yapılacağı stadyumu hedef alan saldırgan , törenlerin iptal edilmesinin ardından Genç Caddesi üzerindeki Adalet ve Kalkınma Partisi il binasına yöneldi .	Saat 13.41 ( UTC+02.00 ) civarında bina yakınlarındayken üzerindeki patlayıcıları infilak ettiren saldırgan intihar saldırısı gerçekleştirdi .	Patlamada saldırganın yanı sıra iki sivil öldü .
+Event	T1	saldırısı	EVENT	114
+Event	T2	saldırıda	EVENT	178
+Event	T3	kaybetti	EVENT	235
+Event	T4	yaralandı	EVENT	254
+Event	T5	yöneldi	EVENT	452
+Event	T6	gerçekleştirdi	EVENT	588
+Event	T7	Patlamada	EVENT	605
+Event	T8	öldü	EVENT	647
+Event	T9	2011 BINGÖL SALDIRISI	EVENT	0
+Event	T10	kutlamalarının	EVENT	293
+Event	T11	hedef	EVENT	328
+Event	T12	ettiren	EVENT	552
+Event	T13	iptal	EVENT	362
+Relation	T10	T11	CauseEffect	true	kutlamalarının	hedef
+Relation	T11	T10	EffectCause	true	hedef	kutlamalarının
+Relation	T13	T5	CauseEffect	true	iptal	yöneldi
+Relation	T5	T13	EffectCause	true	yöneldi	iptal
+Relation	T12	T6	CauseEffect	true	ettiren	gerçekleştirdi
+Relation	T6	T12	EffectCause	true	gerçekleştirdi	ettiren
+Relation	T7	T8	CauseEffect	true	Patlamada	öldü
+Relation	T8	T7	EffectCause	true	öldü	Patlamada
+Relation	T2	T8	CauseEffect	true	saldırıda	öldü
+Relation	T8	T2	EffectCause	true	öldü	saldırıda
+Relation	T12	T7	CauseEffect	true	ettiren	Patlamada
+Relation	T7	T12	EffectCause	true	Patlamada	ettiren
+Relation	T10	T9	NoRel	true	kutlamalarının	2011 BINGÖL SALDIRISI
+Relation	T11	T4	NoRel	true	hedef	yaralandı
+Relation	T13	T3	NoRel	true	iptal	kaybetti
+Relation	T2	T1	NoRel	true	saldırıda	saldırısı
+Relation	T2	T3	NoRel	true	saldırıda	kaybetti
+Relation	T4	T5	NoRel	true	yaralandı	yöneldi
+Relation	T6	T9	NoRel	true	gerçekleştirdi	2011 BINGÖL SALDIRISI
+Relation	T8	T3	NoRel	true	öldü	kaybetti
+Relation	T9	T2	NoRel	true	2011 BINGÖL SALDIRISI	saldırıda

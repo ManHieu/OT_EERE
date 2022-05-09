@@ -1,0 +1,37 @@
+Text	El VUELO 804 DE EGYPTAIR ( MS804 ) fue un vuelo internacional operado por EgyptAir que cubría la ruta París-El Cairo y que desapareció de los radares a las 02:45 hora local ( UTC+2 ) el 19 de mayo de 2016 mientras volaba sobre el mar Mediterráneo .	En el avión viajaban 56 pasajeros , 7 miembros de la tripulación y 3 guardias de seguridad .	Por el momento se desconoce si fue un accidente o un atentado terrorista , así como si hay supervivientes .	Supuestamente se habían encontrado restos del avión cerca de la isla griega de Kárpatos , aunque un alto funcionario griego de aeronáutica afirmó que los restos encontrados no son de un avión y el vicepresidente de Egypt Air mantiene la misma postura .	Según la información de los radares militares griegos , el vuelo 804 se desvió de su rumbo poco después de entrar en el FIR de Egipto .
+Event	T0	vuelo	EVENT	42
+Event	T1	operado	EVENT	62
+Event	T2	cubría	EVENT	87
+Event	T3	desapareció	EVENT	123
+Event	T4	volaba	EVENT	214
+Event	T5	accidente	EVENT	380
+Event	T6	atentado	EVENT	395
+Event	T7	encontrado	EVENT	474
+Event	T8	afirmó	EVENT	589
+Event	T9	encontrados	EVENT	611
+Event	T10	postura	EVENT	693
+Event	T11	información	EVENT	712
+Event	T12	desvió	EVENT	775
+Event	T13	entrar	EVENT	810
+Relation	T0	T11	NoRel	true	vuelo	información
+Relation	T0	T7	NoRel	true	vuelo	encontrado
+Relation	T10	T1	NoRel	true	postura	operado
+Relation	T10	T7	NoRel	true	postura	encontrado
+Relation	T13	T12	NoRel	true	entrar	desvió
+Relation	T2	T12	NoRel	true	cubría	desvió
+Relation	T3	T2	NoRel	true	desapareció	cubría
+Relation	T3	T5	NoRel	true	desapareció	accidente
+Relation	T4	T5	NoRel	true	volaba	accidente
+Relation	T5	T4	NoRel	true	accidente	volaba
+Relation	T6	T11	NoRel	true	atentado	información
+Relation	T6	T3	NoRel	true	atentado	desapareció
+Relation	T6	T5	NoRel	true	atentado	accidente
+Relation	T6	T9	NoRel	true	atentado	encontrados
+Relation	T7	T2	NoRel	true	encontrado	cubría
+Relation	T7	T6	NoRel	true	encontrado	atentado
+Relation	T7	T8	NoRel	true	encontrado	afirmó
+Relation	T8	T2	NoRel	true	afirmó	cubría
+Relation	T8	T3	NoRel	true	afirmó	desapareció
+Relation	T8	T6	NoRel	true	afirmó	atentado
+Relation	T9	T5	NoRel	true	encontrados	accidente
+Relation	T9	T8	NoRel	true	encontrados	afirmó

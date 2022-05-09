@@ -1,0 +1,36 @@
+Text	7 جون 2021ء کو صبح ہونے سے قبل پاکستان کے جنوبی صوبہ سندھ کے ضلع گھوٹکی کے ڈھرکی کے قریب دو ٹرینیں آپس میں ٹکرا گئیں ، جس میں کم از کم 65 افراد ہلاک اور 150 کے قریب زخمی ہو گئے ۔	سرگودھا آنے والی ملت ایکسپریس کی بوگیاں پٹری سے اتر کر ڈاؤن ٹریک پر جا گریں جو راولپنڈی سے آنے والی سرسید ایکسپریس سے ٹکرا گئی ۔	تقریباً چھ سے آٹھ بوگیاں " مکمل طور پر تباہ " ہوگئیں ۔	مقامی لوگوں نے زندہ بچ جانے والوں کو بچانے کے لئے اندھیرے میں ہی حادثے والے مقام پر پہنچے ۔	پاک فوج ، نیم فوجی ادارہ پاکستان رینجرز اور ہیلی کاپٹر نے حادثے سے متعلق امدادی سرگرمیوں میں شامل ہوئے ۔
+Event	T1	ہلاک	EVENT	144
+Event	T2	زخمی	EVENT	165
+Event	T4	آنے	EVENT	187
+Event	T5	گریں	EVENT	250
+Event	T7	تباہ	EVENT	347
+Event	T9	بچانے	EVENT	400
+Event	T10	حادثے	EVENT	428
+Event	T11	پہنچے	EVENT	447
+Event	T12	حادثے	EVENT	513
+Event	T13	سرگرمیوں	EVENT	535
+Event	T15	ٹکرا	EVENT	107
+Event	T3	اتر	EVENT	227
+Event	T16	ٹکرا	EVENT	297
+Event	T6	بچ	EVENT	383
+Event	T8	شامل	EVENT	548
+Relation	T5	T3	SuperSub	true	گریں	اتر
+Relation	T3	T5	SubSuper	true	اتر	گریں
+Relation	T1	T13	NoRel	true	ہلاک	سرگرمیوں
+Relation	T10	T9	NoRel	true	حادثے	بچانے
+Relation	T11	T13	NoRel	true	پہنچے	سرگرمیوں
+Relation	T11	T16	NoRel	true	پہنچے	ٹکرا
+Relation	T12	T11	NoRel	true	حادثے	پہنچے
+Relation	T13	T16	NoRel	true	سرگرمیوں	ٹکرا
+Relation	T13	T3	NoRel	true	سرگرمیوں	اتر
+Relation	T13	T5	NoRel	true	سرگرمیوں	گریں
+Relation	T15	T11	NoRel	true	ٹکرا	پہنچے
+Relation	T2	T9	NoRel	true	زخمی	بچانے
+Relation	T4	T10	NoRel	true	آنے	حادثے
+Relation	T4	T11	NoRel	true	آنے	پہنچے
+Relation	T5	T12	NoRel	true	گریں	حادثے
+Relation	T6	T10	NoRel	true	بچ	حادثے
+Relation	T6	T13	NoRel	true	بچ	سرگرمیوں
+Relation	T7	T16	NoRel	true	تباہ	ٹکرا
+Relation	T9	T4	NoRel	true	بچانے	آنے
+Relation	T9	T7	NoRel	true	بچانے	تباہ

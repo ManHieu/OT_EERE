@@ -1,0 +1,43 @@
+Text	En anden strategi går ud på at skabe _ flokimmunitet _ , dvs. at skabe immunitet " ved at store dele af befolkningen bliver smittet under epidemiens første bølge " .	WHO's ekspert i virus Bruce Aylward advarede mod flokimmunitet som strategisk koncept .	" Flokimmunitet betyder , at folk dør .	Og I prøver ikke at stoppe det . "	Den danske ekspert Kåre Mølbak anbefalede på dette tidspunkt foranstaltninger , som " flader kurven ud " for ikke at overbelaste hospitalsvæsenet .
+Event	T0	skabe	EVENT	31
+Event	T1	smittet	EVENT	124
+Event	T2	epidemiens	EVENT	138
+Event	T3	bølge	EVENT	156
+Event	T4	advarede	EVENT	202
+Event	T5	dør	EVENT	288
+Event	T6	anbefalede	EVENT	360
+Event	T7	overbelaste	EVENT	446
+Event	T8	strategi	EVENT	9
+Event	T9	flokimmunitet	EVENT	39
+Event	T10	immunitet	EVENT	71
+Event	T11	Flokimmunitet	EVENT	256
+Event	T13	stoppe	EVENT	314
+Event	T14	foranstaltninger	EVENT	390
+Event	T12	prøver ikke	EVENT	299
+Relation	T11	T5	CauseEffect	true	Flokimmunitet	dør
+Relation	T5	T11	EffectCause	true	dør	Flokimmunitet
+Relation	T12	T4	CauseEffect	true	prøver ikke	advarede
+Relation	T4	T12	EffectCause	true	advarede	prøver ikke
+Relation	T7	T14	CauseEffect	true	overbelaste	foranstaltninger
+Relation	T14	T7	EffectCause	true	foranstaltninger	overbelaste
+Relation	T0	T1	NoRel	true	skabe	smittet
+Relation	T0	T6	NoRel	true	skabe	anbefalede
+Relation	T1	T13	NoRel	true	smittet	stoppe
+Relation	T1	T4	NoRel	true	smittet	advarede
+Relation	T10	T0	NoRel	true	immunitet	skabe
+Relation	T10	T12	NoRel	true	immunitet	prøver ikke
+Relation	T12	T8	NoRel	true	prøver ikke	strategi
+Relation	T13	T9	NoRel	true	stoppe	flokimmunitet
+Relation	T14	T11	NoRel	true	foranstaltninger	Flokimmunitet
+Relation	T2	T0	NoRel	true	epidemiens	skabe
+Relation	T3	T2	NoRel	true	bølge	epidemiens
+Relation	T4	T3	NoRel	true	advarede	bølge
+Relation	T5	T13	NoRel	true	dør	stoppe
+Relation	T6	T2	NoRel	true	anbefalede	epidemiens
+Relation	T6	T7	NoRel	true	anbefalede	overbelaste
+Relation	T6	T9	NoRel	true	anbefalede	flokimmunitet
+Relation	T7	T10	NoRel	true	overbelaste	immunitet
+Relation	T7	T13	NoRel	true	overbelaste	stoppe
+Relation	T9	T0	NoRel	true	flokimmunitet	skabe
+Relation	T9	T12	NoRel	true	flokimmunitet	prøver ikke
+Relation	T9	T7	NoRel	true	flokimmunitet	overbelaste

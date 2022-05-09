@@ -1,0 +1,25 @@
+Text	DELTA AIR_LINES FLIGHT 1086 var en planlagt indenrigs flyvetur mellem Atlanta og New York's LaGuardia Airport .	Den 5. marts , 2015 , røg flyet , McDonnell Douglas MD-88 , ud af landingsbane kort tid efter en ellers succesfuld landing i LaGuardia Lufthavn i New York City .	Flyet løb ud af bolværk og ramte omkredshegnet , glidende langs den for cirka 330 meter før den kom til et stop .	Der var ingen dødsfald , men dog 24 mennesked fik større skader .	Flyet var blevet meget skadet .
+Event	T0	planlagt	EVENT	35
+Event	T1	flyvetur	EVENT	54
+Event	T2	røg	EVENT	134
+Event	T3	landing	EVENT	227
+Event	T4	ramte	EVENT	301
+Event	T5	glidende	EVENT	323
+Event	T6	stop	EVENT	381
+Event	T7	dødsfald	EVENT	402
+Event	T8	fik	EVENT	434
+Event	T9	skader	EVENT	445
+Event	T10	skadet	EVENT	477
+Event	T11	løb	EVENT	280
+Relation	T0	T2	NoRel	true	planlagt	røg
+Relation	T0	T8	NoRel	true	planlagt	fik
+Relation	T1	T3	NoRel	true	flyvetur	landing
+Relation	T10	T3	NoRel	true	skadet	landing
+Relation	T2	T9	NoRel	true	røg	skader
+Relation	T3	T0	NoRel	true	landing	planlagt
+Relation	T6	T0	NoRel	true	stop	planlagt
+Relation	T6	T11	NoRel	true	stop	løb
+Relation	T6	T2	NoRel	true	stop	røg
+Relation	T6	T5	NoRel	true	stop	glidende
+Relation	T7	T10	NoRel	true	dødsfald	skadet
+Relation	T8	T4	NoRel	true	fik	ramte

@@ -1,0 +1,35 @@
+Text	El fenómeno natural ocasionó serias inundaciones , arroyos y oleajes .	El fenómeno también causó que se tuvieran que evacuar varios pueblos , quedando en su mayoría abandonados .	7 vuelos de la aerolínea Avianca que se dirigían hacia La Guajira y la Costa Norte en general fueron cancelados debido al coletazo del huracán .	La aerolínea LATAM presentó retraso en sus vuelos generando congestión en Aeropuerto Internacional el Dorado de Bogotá .	En un principio el gobierno emitió alerta por tormenta tropical , que en ese entonces Matthew no era un huracán .
+Event	T0	inundaciones	EVENT	36
+Event	T1	oleajes	EVENT	61
+Event	T2	fenómeno	EVENT	74
+Event	T3	causó	EVENT	91
+Event	T4	tuvieran	EVENT	104
+Event	T5	evacuar	EVENT	117
+Event	T6	quedando	EVENT	142
+Event	T7	vuelos	EVENT	181
+Event	T8	dirigían	EVENT	219
+Event	T9	coletazo	EVENT	301
+Event	T10	huracán	EVENT	314
+Event	T11	retraso	EVENT	352
+Event	T12	congestión	EVENT	384
+Event	T13	alerta	EVENT	480
+Event	T14	huracán	EVENT	549
+Relation	T11	T12	SuperSub	true	retraso	congestión
+Relation	T12	T11	SubSuper	true	congestión	retraso
+Relation	T0	T12	NoRel	true	inundaciones	congestión
+Relation	T0	T6	NoRel	true	inundaciones	quedando
+Relation	T1	T12	NoRel	true	oleajes	congestión
+Relation	T1	T5	NoRel	true	oleajes	evacuar
+Relation	T1	T8	NoRel	true	oleajes	dirigían
+Relation	T10	T13	NoRel	true	huracán	alerta
+Relation	T11	T13	NoRel	true	retraso	alerta
+Relation	T13	T3	NoRel	true	alerta	causó
+Relation	T3	T6	NoRel	true	causó	quedando
+Relation	T4	T12	NoRel	true	tuvieran	congestión
+Relation	T4	T2	NoRel	true	tuvieran	fenómeno
+Relation	T5	T12	NoRel	true	evacuar	congestión
+Relation	T5	T14	NoRel	true	evacuar	huracán
+Relation	T6	T12	NoRel	true	quedando	congestión
+Relation	T7	T10	NoRel	true	vuelos	huracán
+Relation	T8	T0	NoRel	true	dirigían	inundaciones
+Relation	T8	T6	NoRel	true	dirigían	quedando

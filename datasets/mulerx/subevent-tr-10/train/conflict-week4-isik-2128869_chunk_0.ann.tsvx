@@ -1,0 +1,53 @@
+Text	SIERRA LEONE İÇ SAVAŞI , 1991 – 2002 yılları arasında Sierra Leone hükûmeti ile Liberya destekli Devrimci Birleşik Cephe militanları arasında meydana gelen iç savaştır .	İç savaş 11 yıl sürmüş olup 50, 000 – 300, 000 kişi ölmüş ve 2.5 milyon kişi mülteci statüsüne düşmüştür .	Kategori : 1991'de çatışmalar Kategori : 1992'de çatışmalar Kategori : 1993'te çatışmalar Kategori : 1994'te çatışmalar Kategori : 1995'te çatışmalar Kategori : 1996'da çatışmalar Kategori : 1997'de çatışmalar Kategori : 1998'de çatışmalar Kategori : 1999'da çatışmalar Kategori : 2000'de çatışmalar Kategori : 2001'de çatışmalar Kategori : 2002'de çatışmalar Kategori : Sierra Leone tarihi Kategori : Birleşik Krallık'ın savaşları		
+Event	T1	savaştır	EVENT	159
+Event	T2	savaş	EVENT	173
+Event	T3	sürmüş	EVENT	186
+Event	T4	ölmüş	EVENT	222
+Event	T5	düşmüştür	EVENT	265
+Event	T6	savaşları	EVENT	699
+Event	T7	SIERRA LEONE İÇ SAVAŞI	EVENT	0
+Event	T8	çatışmalar	EVENT	296
+Event	T9	çatışmalar	EVENT	326
+Event	T10	çatışmalar	EVENT	356
+Event	T11	çatışmalar	EVENT	386
+Event	T12	çatışmalar	EVENT	416
+Event	T13	çatışmalar	EVENT	446
+Event	T14	çatışmalar	EVENT	476
+Event	T15	çatışmalar	EVENT	506
+Event	T16	çatışmalar	EVENT	536
+Event	T17	çatışmalar	EVENT	566
+Event	T18	çatışmalar	EVENT	596
+Event	T19	çatışmalar	EVENT	626
+Relation	T7	T4	SuperSub	true	SIERRA LEONE İÇ SAVAŞI	ölmüş
+Relation	T4	T7	SubSuper	true	ölmüş	SIERRA LEONE İÇ SAVAŞI
+Relation	T7	T5	SuperSub	true	SIERRA LEONE İÇ SAVAŞI	düşmüştür
+Relation	T5	T7	SubSuper	true	düşmüştür	SIERRA LEONE İÇ SAVAŞI
+Relation	T10	T11	NoRel	true	çatışmalar	çatışmalar
+Relation	T11	T2	NoRel	true	çatışmalar	savaş
+Relation	T11	T9	NoRel	true	çatışmalar	çatışmalar
+Relation	T12	T11	NoRel	true	çatışmalar	çatışmalar
+Relation	T12	T14	NoRel	true	çatışmalar	çatışmalar
+Relation	T12	T9	NoRel	true	çatışmalar	çatışmalar
+Relation	T16	T17	NoRel	true	çatışmalar	çatışmalar
+Relation	T16	T7	NoRel	true	çatışmalar	SIERRA LEONE İÇ SAVAŞI
+Relation	T18	T1	NoRel	true	çatışmalar	savaştır
+Relation	T18	T12	NoRel	true	çatışmalar	çatışmalar
+Relation	T18	T14	NoRel	true	çatışmalar	çatışmalar
+Relation	T18	T17	NoRel	true	çatışmalar	çatışmalar
+Relation	T18	T19	NoRel	true	çatışmalar	çatışmalar
+Relation	T19	T12	NoRel	true	çatışmalar	çatışmalar
+Relation	T19	T7	NoRel	true	çatışmalar	SIERRA LEONE İÇ SAVAŞI
+Relation	T2	T13	NoRel	true	savaş	çatışmalar
+Relation	T3	T1	NoRel	true	sürmüş	savaştır
+Relation	T3	T12	NoRel	true	sürmüş	çatışmalar
+Relation	T5	T15	NoRel	true	düşmüştür	çatışmalar
+Relation	T5	T2	NoRel	true	düşmüştür	savaş
+Relation	T5	T3	NoRel	true	düşmüştür	sürmüş
+Relation	T5	T6	NoRel	true	düşmüştür	savaşları
+Relation	T6	T14	NoRel	true	savaşları	çatışmalar
+Relation	T7	T15	NoRel	true	SIERRA LEONE İÇ SAVAŞI	çatışmalar
+Relation	T8	T17	NoRel	true	çatışmalar	çatışmalar
+Relation	T8	T19	NoRel	true	çatışmalar	çatışmalar
+Relation	T8	T5	NoRel	true	çatışmalar	düşmüştür
+Relation	T8	T7	NoRel	true	çatışmalar	SIERRA LEONE İÇ SAVAŞI
+Relation	T8	T9	NoRel	true	çatışmalar	çatışmalar

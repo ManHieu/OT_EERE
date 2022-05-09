@@ -1,0 +1,46 @@
+Text	دوسری طرف بھارتی سیکیورٹی فورسز نے پاکستانی رینجرز کی گولہ باری سے تقریبا چودہ شہریوں کی ہلاکت کا دعویٰ کیا ۔	-___- نومبر 19 ، بھارتی بارڈر فورسز کی پانڈو سیکٹر میں فائرنگ سے ایک پاکستانی فوجی ہلاک ہوا ۔	یاد رہے کہ یہ جنگ بندی کی خلاف ورزی کا یہ واقع پاکستان کی طرف سے جذبہ خیر سگالی کے تحت بھارت زیر انتظام جمو و کشمیر کا رہائشی 13 سالہ طالب علم کو بھارت سیکیورٹی انتظامیہ کے حوالے کرنے کے ایک دن بعد پیش آیا ۔	-___- دسمبر 30 ، پاکستانی حکام نے غلطی سے کنٹرول لائن پار کرنی والی 16 سالہ لڑکی کو اس کے خاندان کے حوالے کر دیا ۔	-___- دسمبر 31 ، بی ایس ایف سپاہی ، کانسٹیبل سری رام گواری کو جموں و کشمیر کے سامبا سیکٹر میں پاکستان کی طرف سے گولی مار کر قتل کر دیا گیا ۔
+Event	T0	ہلاکت	EVENT	89
+Event	T2	فائرنگ	EVENT	165
+Event	T4	بندی	EVENT	222
+Event	T5	ورزی	EVENT	235
+Event	T6	واقع	EVENT	246
+Event	T9	غلطی	EVENT	446
+Event	T11	حوالے	EVENT	512
+Event	T13	مار	EVENT	644
+Event	T16	گولہ باری	EVENT	54
+Event	T14	دعویٰ	EVENT	98
+Event	T1	ہلاک	EVENT	193
+Event	T3	حوالے	EVENT	377
+Event	T15	پیش	EVENT	402
+Event	T7	پار	EVENT	466
+Event	T8	قتل	EVENT	651
+Relation	T16	T0	CauseEffect	true	گولہ باری	ہلاکت
+Relation	T0	T16	EffectCause	true	ہلاکت	گولہ باری
+Relation	T0	T14	CauseEffect	true	ہلاکت	دعویٰ
+Relation	T14	T0	EffectCause	true	دعویٰ	ہلاکت
+Relation	T2	T1	CauseEffect	true	فائرنگ	ہلاک
+Relation	T1	T2	EffectCause	true	ہلاک	فائرنگ
+Relation	T7	T11	CauseEffect	true	پار	حوالے
+Relation	T11	T7	EffectCause	true	حوالے	پار
+Relation	T13	T8	CauseEffect	true	مار	قتل
+Relation	T8	T13	EffectCause	true	قتل	مار
+Relation	T0	T3	NoRel	true	ہلاکت	حوالے
+Relation	T1	T0	NoRel	true	ہلاک	ہلاکت
+Relation	T13	T14	NoRel	true	مار	دعویٰ
+Relation	T13	T3	NoRel	true	مار	حوالے
+Relation	T14	T15	NoRel	true	دعویٰ	پیش
+Relation	T15	T11	NoRel	true	پیش	حوالے
+Relation	T15	T14	NoRel	true	پیش	دعویٰ
+Relation	T15	T7	NoRel	true	پیش	پار
+Relation	T16	T14	NoRel	true	گولہ باری	دعویٰ
+Relation	T16	T9	NoRel	true	گولہ باری	غلطی
+Relation	T2	T7	NoRel	true	فائرنگ	پار
+Relation	T2	T9	NoRel	true	فائرنگ	غلطی
+Relation	T3	T6	NoRel	true	حوالے	واقع
+Relation	T4	T11	NoRel	true	بندی	حوالے
+Relation	T5	T16	NoRel	true	ورزی	گولہ باری
+Relation	T6	T14	NoRel	true	واقع	دعویٰ
+Relation	T7	T1	NoRel	true	پار	ہلاک
+Relation	T7	T3	NoRel	true	پار	حوالے
+Relation	T8	T11	NoRel	true	قتل	حوالے
+Relation	T9	T0	NoRel	true	غلطی	ہلاکت

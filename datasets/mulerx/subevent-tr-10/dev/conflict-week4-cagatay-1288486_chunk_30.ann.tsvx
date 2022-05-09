@@ -1,0 +1,26 @@
+Text	İşçi ve asker kitleleri devrimci komitenin kararlarını beklerken 11 Ocak’ta karşı devrim saldırıya geçti .	KPD’nin büroları ordu tarafından işgal ediliyordu .	13 Ocak’ta ise Berlin’e karşıdevrim hâkim oluyordu .	Hükûmet devrimci hareketi tamamen ortadan kaldırmak için Freikorps sayesinde tüm devrimcileri öldürüyordu .	15 Ocak’ta da Rosa Luxemburg ve Karl Liebknecht öldürüldüler .
+Event	T0	beklerken	EVENT	55
+Event	T2	hareketi	EVENT	229
+Event	T3	öldürüyordu	EVENT	306
+Event	T4	öldürüldüler	EVENT	368
+Event	T5	devrim	EVENT	82
+Event	T1	saldırıya	EVENT	89
+Event	T6	işgal ediliyordu	EVENT	140
+Event	T7	karşıdevrim	EVENT	183
+Event	T8	ortadan kaldırmak	EVENT	246
+Relation	T5	T1	SuperSub	true	devrim	saldırıya
+Relation	T1	T5	SubSuper	true	saldırıya	devrim
+Relation	T5	T6	SuperSub	true	devrim	işgal ediliyordu
+Relation	T6	T5	SubSuper	true	işgal ediliyordu	devrim
+Relation	T7	T8	SuperSub	true	karşıdevrim	ortadan kaldırmak
+Relation	T8	T7	SubSuper	true	ortadan kaldırmak	karşıdevrim
+Relation	T7	T3	SuperSub	true	karşıdevrim	öldürüyordu
+Relation	T3	T7	SubSuper	true	öldürüyordu	karşıdevrim
+Relation	T7	T4	SuperSub	true	karşıdevrim	öldürüldüler
+Relation	T4	T7	SubSuper	true	öldürüldüler	karşıdevrim
+Relation	T0	T7	NoRel	true	beklerken	karşıdevrim
+Relation	T1	T8	NoRel	true	saldırıya	ortadan kaldırmak
+Relation	T3	T1	NoRel	true	öldürüyordu	saldırıya
+Relation	T4	T2	NoRel	true	öldürüldüler	hareketi
+Relation	T5	T7	NoRel	true	devrim	karşıdevrim
+Relation	T8	T0	NoRel	true	ortadan kaldırmak	beklerken

@@ -1,0 +1,23 @@
+Text	1921 MASSAVA DEPREMI , 14 Ağustos 1921 günü , günümüzde Eritre'de bulunan Massava yakınlarında , denizde meydana gelmiş olan bir depremdi .	Depremden sonraki ilk artçı şok da ana depreme yakın bir büyüklükteydi .	Massava limanında büyük hasar meydana geldi , çok sayıda kişi öldü .	Artçı şoklar Asmara ve Dekemhare kadar uzakta hissedildi .	Limanın tamamıyla tamir edilmesi ancak 1928 yılında mümkün olabildi .
+Event	T1	depremdi	EVENT	129
+Event	T2	Depremden	EVENT	140
+Event	T3	şok	EVENT	168
+Event	T4	geldi	EVENT	251
+Event	T5	öldü	EVENT	275
+Event	T6	şoklar	EVENT	288
+Event	T7	hissedildi	EVENT	328
+Event	T9	1921 MASSAVA DEPREMI	EVENT	0
+Event	T8	olabildi	EVENT	400
+Relation	T4	T5	CauseEffect	true	geldi	öldü
+Relation	T5	T4	EffectCause	true	öldü	geldi
+Relation	T4	T8	CauseEffect	true	geldi	olabildi
+Relation	T8	T4	EffectCause	true	olabildi	geldi
+Relation	T6	T7	CauseEffect	true	şoklar	hissedildi
+Relation	T7	T6	EffectCause	true	hissedildi	şoklar
+Relation	T1	T5	NoRel	true	depremdi	öldü
+Relation	T2	T1	NoRel	true	Depremden	depremdi
+Relation	T3	T8	NoRel	true	şok	olabildi
+Relation	T6	T8	NoRel	true	şoklar	olabildi
+Relation	T8	T1	NoRel	true	olabildi	depremdi
+Relation	T8	T2	NoRel	true	olabildi	Depremden
+Relation	T8	T5	NoRel	true	olabildi	öldü

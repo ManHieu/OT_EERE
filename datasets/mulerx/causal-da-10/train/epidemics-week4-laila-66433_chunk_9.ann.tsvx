@@ -1,0 +1,45 @@
+Text	Et sted mellem 15.000 og 18.000 danskere døde af den spanske syge , og ca. 80 % af dem var mellem 15 og 45 år gamle .	Henved 2/3 af dødsfaldene skete i anden bølge .	Da den sidste influenzabølge var klinget af i 1920 , var mindst 33 sygeplejersker og 8 elever døde af den spanske syge ifølge dødsannoncerne i Tidsskrift for Sygepleje 1918-20 .	Franske og belgiske soldater , der havde været krigsfanger i Tyskland , blev sejlet til Danmark for at komme til hægterne igen .	Nogle af dem døde under pandemien og er begravet på Assistens Kirkegård .
+Event	T0	døde	EVENT	41
+Event	T3	influenzabølge	EVENT	180
+Event	T4	døde	EVENT	260
+Event	T5	dødsannoncerne	EVENT	292
+Event	T6	sejlet	EVENT	421
+Event	T7	døde	EVENT	486
+Event	T8	pandemien	EVENT	497
+Event	T9	begravet	EVENT	513
+Event	T10	gamle	EVENT	110
+Event	T11	bølge	EVENT	158
+Event	T2	dødsfaldene	EVENT	132
+Event	T12	klinget af	EVENT	199
+Event	T13	spanske syge	EVENT	272
+Event	T1	spanske syge	EVENT	53
+Event	T14	krigsfanger	EVENT	391
+Relation	T1	T0	CauseEffect	true	spanske syge	døde
+Relation	T0	T1	EffectCause	true	døde	spanske syge
+Relation	T11	T2	CauseEffect	true	bølge	dødsfaldene
+Relation	T2	T11	EffectCause	true	dødsfaldene	bølge
+Relation	T3	T4	CauseEffect	true	influenzabølge	døde
+Relation	T4	T3	EffectCause	true	døde	influenzabølge
+Relation	T13	T4	CauseEffect	true	spanske syge	døde
+Relation	T4	T13	EffectCause	true	døde	spanske syge
+Relation	T6	T9	CauseEffect	true	sejlet	begravet
+Relation	T9	T6	EffectCause	true	begravet	sejlet
+Relation	T0	T6	NoRel	true	døde	sejlet
+Relation	T0	T8	NoRel	true	døde	pandemien
+Relation	T1	T5	NoRel	true	spanske syge	dødsannoncerne
+Relation	T10	T0	NoRel	true	gamle	døde
+Relation	T11	T12	NoRel	true	bølge	klinget af
+Relation	T11	T13	NoRel	true	bølge	spanske syge
+Relation	T11	T5	NoRel	true	bølge	dødsannoncerne
+Relation	T12	T3	NoRel	true	klinget af	influenzabølge
+Relation	T12	T6	NoRel	true	klinget af	sejlet
+Relation	T13	T1	NoRel	true	spanske syge	spanske syge
+Relation	T2	T5	NoRel	true	dødsfaldene	dødsannoncerne
+Relation	T2	T6	NoRel	true	dødsfaldene	sejlet
+Relation	T3	T10	NoRel	true	influenzabølge	gamle
+Relation	T5	T1	NoRel	true	dødsannoncerne	spanske syge
+Relation	T5	T13	NoRel	true	dødsannoncerne	spanske syge
+Relation	T7	T11	NoRel	true	døde	bølge
+Relation	T7	T8	NoRel	true	døde	pandemien
+Relation	T7	T9	NoRel	true	døde	begravet
+Relation	T8	T0	NoRel	true	pandemien	døde

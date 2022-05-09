@@ -1,0 +1,34 @@
+Text	Den 21. juli kl. 1 om natten blev grev Stauffenberg , løjtnant Haeften , general Friedrich Olbricht og oberst Albrecht Mertz von Quirnheim efter ordre fra general Friedrich Fromm henrettet ved skydning efter en hastigt gennemført krigsret .	Yderligere 5.000 blev anholdt af Gestapo og de 200 henrettet .	Generalfeltmarskal Erwin Rommel blev mistænkt for at have støttet kupmagerne og fik valget mellem krigsret og selvmord .	Han valgte selvmordet for at redde sin familie , og blev begravet under store hædersbevisninger .	- Fotos af deltagerne - Ulveskansen/Wolfsschanze .
+Event	T0	ordre	EVENT	145
+Event	T1	henrettet	EVENT	179
+Event	T2	skydning	EVENT	193
+Event	T3	krigsret	EVENT	230
+Event	T4	anholdt	EVENT	263
+Event	T5	henrettet	EVENT	292
+Event	T6	mistænkt	EVENT	341
+Event	T7	støttet	EVENT	362
+Event	T8	valget	EVENT	388
+Event	T9	krigsret	EVENT	402
+Event	T10	selvmord	EVENT	414
+Event	T11	selvmordet	EVENT	436
+Event	T12	redde	EVENT	454
+Event	T13	begravet	EVENT	482
+Relation	T11	T13	SuperSub	true	selvmordet	begravet
+Relation	T13	T11	SubSuper	true	begravet	selvmordet
+Relation	T0	T3	NoRel	true	ordre	krigsret
+Relation	T1	T0	NoRel	true	henrettet	ordre
+Relation	T1	T10	NoRel	true	henrettet	selvmord
+Relation	T10	T4	NoRel	true	selvmord	anholdt
+Relation	T11	T2	NoRel	true	selvmordet	skydning
+Relation	T11	T8	NoRel	true	selvmordet	valget
+Relation	T12	T1	NoRel	true	redde	henrettet
+Relation	T13	T8	NoRel	true	begravet	valget
+Relation	T2	T13	NoRel	true	skydning	begravet
+Relation	T2	T3	NoRel	true	skydning	krigsret
+Relation	T2	T8	NoRel	true	skydning	valget
+Relation	T3	T11	NoRel	true	krigsret	selvmordet
+Relation	T4	T0	NoRel	true	anholdt	ordre
+Relation	T5	T13	NoRel	true	henrettet	begravet
+Relation	T7	T13	NoRel	true	støttet	begravet
+Relation	T8	T1	NoRel	true	valget	henrettet
+Relation	T8	T12	NoRel	true	valget	redde

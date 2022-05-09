@@ -1,0 +1,40 @@
+Text	Arregui 10 gün boyunca Emniyet Genel Müdürlüğü'nde _ ( Dirección Genelral de Seguridad ) _ tutulmuş ve kimseyle görüştürülmemişti .	Bunu , Bask bölgesinde genel bir grev ve Kongrede muhalif parlamento grupları arasında acımasız bir tartışma izledi .	Hükûmet daha sonra çeşitli polis şeflerini görevden alırken , İçişleri Bakanlığı'nda işkencecilerle dayanışma kapsamında istifa edenler oldu .	_ El Alcázar _ gazetesi hükûmetin eylemlerini durdurulması gereken bir zayıflık olarak değerlendirdi .	Bu olağanüstü arka plana karşı , 18 Şubat'ta Calvo Sotelo kabine önerisini sundu , ancak ayın 20'sindeki kongre oylamasında başbakan seçilebilmesi için gerekli çoğunluğa ulaşamadı , bu nedenle 23'üne yeni bir oylama planlandı : komplocuların darbe girişimi için seçtiği gün .
+Event	T0	tutulmuş	EVENT	91
+Event	T1	grev	EVENT	165
+Event	T11	girişimi	EVENT	744
+Event	T13	tartışma	EVENT	232
+Event	T2	eylemlerini	EVENT	427
+Event	T3	alırken	EVENT	302
+Event	T4	dayanışma	EVENT	350
+Event	T5	istifa	EVENT	371
+Event	T7	değerlendirdi	EVENT	480
+Event	T8	sundu	EVENT	571
+Event	T9	oylamasında	EVENT	608
+Relation	T4	T5	CauseEffect	true	dayanışma	istifa
+Relation	T5	T4	EffectCause	true	istifa	dayanışma
+Relation	T4	T3	CauseEffect	true	dayanışma	alırken
+Relation	T3	T4	EffectCause	true	alırken	dayanışma
+Relation	T0	T1	CauseEffect	true	tutulmuş	grev
+Relation	T1	T0	EffectCause	true	grev	tutulmuş
+Relation	T0	T13	CauseEffect	true	tutulmuş	tartışma
+Relation	T13	T0	EffectCause	true	tartışma	tutulmuş
+Relation	T8	T3	CauseEffect	true	sundu	alırken
+Relation	T3	T8	EffectCause	true	alırken	sundu
+Relation	T8	T5	CauseEffect	true	sundu	istifa
+Relation	T5	T8	EffectCause	true	istifa	sundu
+Relation	T0	T3	CauseEffect	true	tutulmuş	alırken
+Relation	T3	T0	EffectCause	true	alırken	tutulmuş
+Relation	T2	T11	CauseEffect	true	eylemlerini	girişimi
+Relation	T11	T2	EffectCause	true	girişimi	eylemlerini
+Relation	T0	T7	NoRel	true	tutulmuş	değerlendirdi
+Relation	T1	T11	NoRel	true	grev	girişimi
+Relation	T1	T8	NoRel	true	grev	sundu
+Relation	T11	T13	NoRel	true	girişimi	tartışma
+Relation	T13	T3	NoRel	true	tartışma	alırken
+Relation	T3	T5	NoRel	true	alırken	istifa
+Relation	T4	T7	NoRel	true	dayanışma	değerlendirdi
+Relation	T4	T8	NoRel	true	dayanışma	sundu
+Relation	T5	T11	NoRel	true	istifa	girişimi
+Relation	T7	T3	NoRel	true	değerlendirdi	alırken
+Relation	T7	T4	NoRel	true	değerlendirdi	dayanışma
+Relation	T8	T0	NoRel	true	sundu	tutulmuş

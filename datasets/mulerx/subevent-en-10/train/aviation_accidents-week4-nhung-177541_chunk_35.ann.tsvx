@@ -1,0 +1,53 @@
+Text	Although the crew module remained mostly intact through the breakup , it was damaged enough that it lost pressure at a rate fast " enough to incapacitate the crew within seconds " , and was completely depressurized no later than 09:00:53 .	-____ 09:00:57 ( EI+1008 ) _: The crew module , intact to this point , was seen breaking into small subcomponents .	It disappeared from view at 09:01:10 .	The crew members , if not already dead , were killed no later than this point .	-____ 09:05 _: Residents of north central Texas , particularly near Tyler , reported a loud boom , a small concussion wave , smoke trails and debris in the clear skies above the counties east of Dallas .
+Event	T0	remained	EVENT	25
+Event	T1	intact	EVENT	41
+Event	T2	breakup	EVENT	60
+Event	T3	damaged	EVENT	77
+Event	T4	incapacitate	EVENT	141
+Event	T5	depressurized	EVENT	201
+Event	T6	intact	EVENT	288
+Event	T7	disappeared	EVENT	359
+Event	T8	dead	EVENT	429
+Event	T9	killed	EVENT	441
+Event	T10	reported	EVENT	551
+Event	T11	boom	EVENT	567
+Event	T12	wave	EVENT	593
+Event	T13	debris	EVENT	617
+Event	T14	lost	EVENT	100
+Event	T15	breaking	EVENT	320
+Event	T16	smoke	EVENT	600
+Relation	T2	T15	SuperSub	true	breakup	breaking
+Relation	T15	T2	SubSuper	true	breaking	breakup
+Relation	T2	T7	SuperSub	true	breakup	disappeared
+Relation	T7	T2	SubSuper	true	disappeared	breakup
+Relation	T2	T8	SuperSub	true	breakup	dead
+Relation	T8	T2	SubSuper	true	dead	breakup
+Relation	T2	T9	SuperSub	true	breakup	killed
+Relation	T9	T2	SubSuper	true	killed	breakup
+Relation	T11	T12	SuperSub	true	boom	wave
+Relation	T12	T11	SubSuper	true	wave	boom
+Relation	T12	T16	SuperSub	true	wave	smoke
+Relation	T16	T12	SubSuper	true	smoke	wave
+Relation	T16	T13	SuperSub	true	smoke	debris
+Relation	T13	T16	SubSuper	true	debris	smoke
+Relation	T0	T1	NoRel	true	remained	intact
+Relation	T0	T13	NoRel	true	remained	debris
+Relation	T0	T9	NoRel	true	remained	killed
+Relation	T1	T2	NoRel	true	intact	breakup
+Relation	T10	T1	NoRel	true	reported	intact
+Relation	T10	T4	NoRel	true	reported	incapacitate
+Relation	T12	T4	NoRel	true	wave	incapacitate
+Relation	T12	T9	NoRel	true	wave	killed
+Relation	T13	T12	NoRel	true	debris	wave
+Relation	T2	T16	NoRel	true	breakup	smoke
+Relation	T4	T1	NoRel	true	incapacitate	intact
+Relation	T4	T13	NoRel	true	incapacitate	debris
+Relation	T4	T6	NoRel	true	incapacitate	intact
+Relation	T4	T8	NoRel	true	incapacitate	dead
+Relation	T6	T12	NoRel	true	intact	wave
+Relation	T6	T8	NoRel	true	intact	dead
+Relation	T8	T1	NoRel	true	dead	intact
+Relation	T8	T10	NoRel	true	dead	reported
+Relation	T8	T13	NoRel	true	dead	debris
+Relation	T8	T6	NoRel	true	dead	intact
+Relation	T9	T15	NoRel	true	killed	breaking

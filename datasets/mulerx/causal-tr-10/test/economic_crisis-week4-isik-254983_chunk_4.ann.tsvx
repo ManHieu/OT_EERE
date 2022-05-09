@@ -1,0 +1,38 @@
+Text	Paul von Hindenburg , 30 Ocak 1933 tarihinde Adolf Hitler'i Şansölye olarak ataması ile hatırlanır .	Bu sayede Nasyonal Sosyalist Alman İşçi Partisi'nin iktidara yükselişinde önemli rol oynamıştır .	Hindenburg şahsen Hitler'i hor görmekte , onu küçümseyerek defalarca " Bohem Onbaşı " olarak söz etmekteydi .	Hitler'in taleplerini defalarca reddetmiş fakat zorla ve baskı ile şansölye olarak Hitler'i tayin etmiştir .	84 yaşında ve sağlık durumu kötü olmasına rağmen Adolf Hitler'i yenebilecek tek aday olarak kabul edildiği gibi , Hindenburg , 1932 yılında SPD'nin ( Sosyal Demokrat Parti ) desteği ile yeniden Cumhurbaşkanı seçildi .
+Event	T1	hatırlanır	EVENT	88
+Event	T3	oynamıştır	EVENT	186
+Event	T4	reddetmiş	EVENT	341
+Event	T5	baskı	EVENT	366
+Event	T7	desteği	EVENT	592
+Event	T8	seçildi	EVENT	626
+Event	T2	ataması	EVENT	76
+Event	T9	etmekteydi	EVENT	296
+Event	T10	görmekte	EVENT	230
+Event	T11	küçümseyerek	EVENT	245
+Event	T12	taleplerini	EVENT	319
+Event	T13	etmiştir	EVENT	407
+Relation	T2	T3	CauseEffect	true	ataması	oynamıştır
+Relation	T3	T2	EffectCause	true	oynamıştır	ataması
+Relation	T12	T4	CauseEffect	true	taleplerini	reddetmiş
+Relation	T4	T12	EffectCause	true	reddetmiş	taleplerini
+Relation	T5	T13	CauseEffect	true	baskı	etmiştir
+Relation	T13	T5	EffectCause	true	etmiştir	baskı
+Relation	T7	T8	CauseEffect	true	desteği	seçildi
+Relation	T8	T7	EffectCause	true	seçildi	desteği
+Relation	T10	T11	NoRel	true	görmekte	küçümseyerek
+Relation	T11	T5	NoRel	true	küçümseyerek	baskı
+Relation	T12	T3	NoRel	true	taleplerini	oynamıştır
+Relation	T13	T12	NoRel	true	etmiştir	taleplerini
+Relation	T13	T3	NoRel	true	etmiştir	oynamıştır
+Relation	T13	T8	NoRel	true	etmiştir	seçildi
+Relation	T2	T7	NoRel	true	ataması	desteği
+Relation	T4	T1	NoRel	true	reddetmiş	hatırlanır
+Relation	T4	T10	NoRel	true	reddetmiş	görmekte
+Relation	T5	T2	NoRel	true	baskı	ataması
+Relation	T7	T11	NoRel	true	desteği	küçümseyerek
+Relation	T7	T12	NoRel	true	desteği	taleplerini
+Relation	T7	T4	NoRel	true	desteği	reddetmiş
+Relation	T8	T11	NoRel	true	seçildi	küçümseyerek
+Relation	T8	T12	NoRel	true	seçildi	taleplerini
+Relation	T8	T9	NoRel	true	seçildi	etmekteydi
+Relation	T9	T5	NoRel	true	etmekteydi	baskı

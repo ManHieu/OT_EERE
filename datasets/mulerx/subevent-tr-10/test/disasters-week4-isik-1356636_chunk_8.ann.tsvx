@@ -1,0 +1,18 @@
+Text	Ankara’daki Türk Kızılayı Afet Operasyon Merkezi’nde bir kriz masası oluşturuldu ve en çok ihtiyaç duyulan malzemeler kamuoyu ile paylaşıldı .	Saat 15: 30 sularında enkazlardan çıkarılan yaralılar hastanelere ulaştırılmaya başlandı .	Muradiye Devlet Hastanesi tedbir amacıyla boşaltılırken , il merkezinde jandarma ve çevik kuvvet ekipleri , hasarlı bina veya enkazlara vatandaşların girmesini engellemek için güvenlik önlemleri aldı .	Van Yüzüncü Yıl Tıp Fakültesi Hastanesinde artçı sarsıntıların devam etmesi nedeniyle hastalar bahçeye taşındı .	Acil sağlık hizmetleri ve polisin telefon santralleri , kısa mesaj servisine açıldı .
+Event	T0	oluşturuldu	EVENT	69
+Event	T1	paylaşıldı	EVENT	130
+Event	T2	çıkarılan	EVENT	177
+Event	T3	başlandı	EVENT	223
+Event	T5	boşaltılırken	EVENT	276
+Event	T6	aldı	EVENT	429
+Event	T7	etmesi	EVENT	505
+Event	T8	taşındı	EVENT	539
+Event	T9	açıldı	EVENT	626
+Relation	T1	T5	NoRel	true	paylaşıldı	boşaltılırken
+Relation	T2	T8	NoRel	true	çıkarılan	taşındı
+Relation	T6	T0	NoRel	true	aldı	oluşturuldu
+Relation	T6	T3	NoRel	true	aldı	başlandı
+Relation	T7	T3	NoRel	true	etmesi	başlandı
+Relation	T8	T0	NoRel	true	taşındı	oluşturuldu
+Relation	T8	T9	NoRel	true	taşındı	açıldı
+Relation	T9	T7	NoRel	true	açıldı	etmesi

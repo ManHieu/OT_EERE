@@ -1,0 +1,35 @@
+Text	CIA's inspektør foretog en intern undersøgelse af CIAs undersøgelser for terrorangrebet og han gav en kraftig kritik af højtstående embedsmænd for ikke at forsøge flere muligheder for at konfrontere terrorismen .	Han kritiserede deres oplysninger om , at de to flykaprere Nawaf al-Hazmi og Khalid al-Mihdhar rejste ind i USA og ved et uheld forsøgte at udveksle oplysninger med to mænd fra FBI .	I maj 2007 udarbejdede senatorer fra både Det Demokratiske Parti og Det Republikanske Parti en lovgivning , som åbent ville fremlægge en intern CIA-undersøgelsesrapport .	Rapporten undersøgte ansvaret hos hver enkelte af CIAs ansatte både før og efter den 11. september .	Rapporten var færdig i 2005 , men dens detaljer blev aldrig frigivet til offentligheden .
+Event	T0	foretog	EVENT	16
+Event	T1	undersøgelse	EVENT	34
+Event	T2	undersøgelser	EVENT	55
+Event	T3	terrorangrebet	EVENT	73
+Event	T5	kritik	EVENT	110
+Event	T6	konfrontere	EVENT	187
+Event	T7	kritiserede	EVENT	217
+Event	T8	oplysninger	EVENT	235
+Event	T9	rejste	EVENT	308
+Event	T10	forsøgte	EVENT	341
+Event	T11	fremlægge	EVENT	520
+Event	T13	færdig	EVENT	682
+Event	T14	frigivet	EVENT	728
+Event	T4	undersøgte	EVENT	577
+Event	T12	udarbejdede	EVENT	407
+Relation	T1	T5	CauseEffect	true	undersøgelse	kritik
+Relation	T5	T1	EffectCause	true	kritik	undersøgelse
+Relation	T10	T7	CauseEffect	true	forsøgte	kritiserede
+Relation	T7	T10	EffectCause	true	kritiserede	forsøgte
+Relation	T0	T7	NoRel	true	foretog	kritiserede
+Relation	T1	T8	NoRel	true	undersøgelse	oplysninger
+Relation	T1	T9	NoRel	true	undersøgelse	rejste
+Relation	T11	T3	NoRel	true	fremlægge	terrorangrebet
+Relation	T11	T5	NoRel	true	fremlægge	kritik
+Relation	T12	T1	NoRel	true	udarbejdede	undersøgelse
+Relation	T14	T2	NoRel	true	frigivet	undersøgelser
+Relation	T14	T8	NoRel	true	frigivet	oplysninger
+Relation	T2	T11	NoRel	true	undersøgelser	fremlægge
+Relation	T3	T10	NoRel	true	terrorangrebet	forsøgte
+Relation	T4	T13	NoRel	true	undersøgte	færdig
+Relation	T4	T8	NoRel	true	undersøgte	oplysninger
+Relation	T6	T5	NoRel	true	konfrontere	kritik
+Relation	T6	T7	NoRel	true	konfrontere	kritiserede
+Relation	T8	T1	NoRel	true	oplysninger	undersøgelse

@@ -1,0 +1,130 @@
+Text	DEN ØSTDANSKE EPIDEMI 1831 var en epidemi , der hærgede landdistrikterne i det østlige Danmark i sensommeren og efteråret 1831 .	Kolera havde i 1831 spredt sig uden for Danmark , og i Danmark blev der indført skrappe tiltag for at holde sygdommen ude , blandt andet ved at stationere kystvagter .	Det lykkedes at holde sygdommen ude , men en anden sygdom bredte sig i august 1831 .	Truslen fra kolera betød dog at man havde givet en forordning af 19. juni 1831 , der indeholdt bestemmelser om karantæne , isolation , desinficering og hårde straffe .	Bestemmelserne omkring karantæne kom i brug ved epidemien i 1831 .
+Event	T0	EPIDEMI	EVENT	14
+Event	T1	epidemi	EVENT	34
+Event	T2	hærgede	EVENT	48
+Event	T3	spredt	EVENT	149
+Event	T4	indført	EVENT	201
+Event	T5	tiltag	EVENT	217
+Event	T6	stationere	EVENT	273
+Event	T7	lykkedes	EVENT	301
+Event	T8	Truslen	EVENT	382
+Event	T9	betød	EVENT	401
+Event	T10	givet	EVENT	424
+Event	T11	bestemmelser	EVENT	477
+Event	T12	karantæne	EVENT	493
+Event	T13	isolation	EVENT	505
+Event	T14	desinficering	EVENT	517
+Event	T15	straffe	EVENT	540
+Event	T16	Bestemmelserne	EVENT	550
+Event	T17	epidemien	EVENT	598
+Event	T18	Kolera	EVENT	129
+Event	T19	holde	EVENT	231
+Event	T20	sygdommen	EVENT	237
+Event	T21	holde	EVENT	313
+Event	T22	sygdommen	EVENT	319
+Event	T23	sygdom	EVENT	348
+Event	T24	bredte sig	EVENT	355
+Event	T25	kolera	EVENT	394
+Event	T26	forordning	EVENT	433
+Event	T27	karantæne	EVENT	573
+Event	T28	brug	EVENT	589
+Relation	T5	T6	SuperSub	true	tiltag	stationere
+Relation	T6	T5	SubSuper	true	stationere	tiltag
+Relation	T26	T11	SuperSub	true	forordning	bestemmelser
+Relation	T11	T26	SubSuper	true	bestemmelser	forordning
+Relation	T26	T12	SuperSub	true	forordning	karantæne
+Relation	T12	T26	SubSuper	true	karantæne	forordning
+Relation	T26	T13	SuperSub	true	forordning	isolation
+Relation	T13	T26	SubSuper	true	isolation	forordning
+Relation	T26	T14	SuperSub	true	forordning	desinficering
+Relation	T14	T26	SubSuper	true	desinficering	forordning
+Relation	T26	T15	SuperSub	true	forordning	straffe
+Relation	T15	T26	SubSuper	true	straffe	forordning
+Relation	T26	T28	SuperSub	true	forordning	brug
+Relation	T28	T26	SubSuper	true	brug	forordning
+Relation	T0	T11	NoRel	true	EPIDEMI	bestemmelser
+Relation	T0	T14	NoRel	true	EPIDEMI	desinficering
+Relation	T0	T7	NoRel	true	EPIDEMI	lykkedes
+Relation	T1	T0	NoRel	true	epidemi	EPIDEMI
+Relation	T1	T11	NoRel	true	epidemi	bestemmelser
+Relation	T1	T15	NoRel	true	epidemi	straffe
+Relation	T1	T23	NoRel	true	epidemi	sygdom
+Relation	T1	T7	NoRel	true	epidemi	lykkedes
+Relation	T10	T1	NoRel	true	givet	epidemi
+Relation	T10	T26	NoRel	true	givet	forordning
+Relation	T10	T8	NoRel	true	givet	Truslen
+Relation	T11	T10	NoRel	true	bestemmelser	givet
+Relation	T11	T13	NoRel	true	bestemmelser	isolation
+Relation	T11	T9	NoRel	true	bestemmelser	betød
+Relation	T12	T1	NoRel	true	karantæne	epidemi
+Relation	T12	T5	NoRel	true	karantæne	tiltag
+Relation	T12	T7	NoRel	true	karantæne	lykkedes
+Relation	T13	T1	NoRel	true	isolation	epidemi
+Relation	T13	T16	NoRel	true	isolation	Bestemmelserne
+Relation	T13	T2	NoRel	true	isolation	hærgede
+Relation	T13	T20	NoRel	true	isolation	sygdommen
+Relation	T13	T27	NoRel	true	isolation	karantæne
+Relation	T14	T20	NoRel	true	desinficering	sygdommen
+Relation	T14	T21	NoRel	true	desinficering	holde
+Relation	T14	T25	NoRel	true	desinficering	kolera
+Relation	T14	T27	NoRel	true	desinficering	karantæne
+Relation	T15	T22	NoRel	true	straffe	sygdommen
+Relation	T16	T15	NoRel	true	Bestemmelserne	straffe
+Relation	T16	T2	NoRel	true	Bestemmelserne	hærgede
+Relation	T16	T4	NoRel	true	Bestemmelserne	indført
+Relation	T16	T8	NoRel	true	Bestemmelserne	Truslen
+Relation	T17	T0	NoRel	true	epidemien	EPIDEMI
+Relation	T17	T14	NoRel	true	epidemien	desinficering
+Relation	T17	T6	NoRel	true	epidemien	stationere
+Relation	T18	T0	NoRel	true	Kolera	EPIDEMI
+Relation	T18	T1	NoRel	true	Kolera	epidemi
+Relation	T18	T28	NoRel	true	Kolera	brug
+Relation	T19	T1	NoRel	true	holde	epidemi
+Relation	T19	T18	NoRel	true	holde	Kolera
+Relation	T20	T15	NoRel	true	sygdommen	straffe
+Relation	T20	T24	NoRel	true	sygdommen	bredte sig
+Relation	T20	T27	NoRel	true	sygdommen	karantæne
+Relation	T21	T18	NoRel	true	holde	Kolera
+Relation	T21	T20	NoRel	true	holde	sygdommen
+Relation	T21	T27	NoRel	true	holde	karantæne
+Relation	T22	T10	NoRel	true	sygdommen	givet
+Relation	T22	T12	NoRel	true	sygdommen	karantæne
+Relation	T22	T18	NoRel	true	sygdommen	Kolera
+Relation	T22	T28	NoRel	true	sygdommen	brug
+Relation	T23	T0	NoRel	true	sygdom	EPIDEMI
+Relation	T23	T14	NoRel	true	sygdom	desinficering
+Relation	T23	T18	NoRel	true	sygdom	Kolera
+Relation	T23	T19	NoRel	true	sygdom	holde
+Relation	T23	T21	NoRel	true	sygdom	holde
+Relation	T23	T3	NoRel	true	sygdom	spredt
+Relation	T24	T13	NoRel	true	bredte sig	isolation
+Relation	T25	T13	NoRel	true	kolera	isolation
+Relation	T25	T15	NoRel	true	kolera	straffe
+Relation	T25	T17	NoRel	true	kolera	epidemien
+Relation	T25	T27	NoRel	true	kolera	karantæne
+Relation	T26	T0	NoRel	true	forordning	EPIDEMI
+Relation	T26	T19	NoRel	true	forordning	holde
+Relation	T26	T25	NoRel	true	forordning	kolera
+Relation	T27	T24	NoRel	true	karantæne	bredte sig
+Relation	T28	T14	NoRel	true	brug	desinficering
+Relation	T28	T16	NoRel	true	brug	Bestemmelserne
+Relation	T28	T20	NoRel	true	brug	sygdommen
+Relation	T3	T1	NoRel	true	spredt	epidemi
+Relation	T3	T23	NoRel	true	spredt	sygdom
+Relation	T3	T27	NoRel	true	spredt	karantæne
+Relation	T4	T19	NoRel	true	indført	holde
+Relation	T4	T22	NoRel	true	indført	sygdommen
+Relation	T4	T27	NoRel	true	indført	karantæne
+Relation	T4	T9	NoRel	true	indført	betød
+Relation	T5	T10	NoRel	true	tiltag	givet
+Relation	T5	T18	NoRel	true	tiltag	Kolera
+Relation	T5	T22	NoRel	true	tiltag	sygdommen
+Relation	T6	T10	NoRel	true	stationere	givet
+Relation	T6	T2	NoRel	true	stationere	hærgede
+Relation	T6	T28	NoRel	true	stationere	brug
+Relation	T6	T3	NoRel	true	stationere	spredt
+Relation	T7	T21	NoRel	true	lykkedes	holde
+Relation	T7	T26	NoRel	true	lykkedes	forordning
+Relation	T7	T3	NoRel	true	lykkedes	spredt
+Relation	T9	T12	NoRel	true	betød	karantæne
+Relation	T9	T25	NoRel	true	betød	kolera

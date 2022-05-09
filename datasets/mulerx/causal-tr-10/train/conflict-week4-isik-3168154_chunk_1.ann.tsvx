@@ -1,0 +1,29 @@
+Text	Bu çerçevede , General Aldana saldırı hazırlıklarına Ocak 1552'de başladı ve Arad kalesinde bir savaş konseyi topladı .	Konseyde , taarruz günü belirlendikten sonra , Mihály Tóth'un büyük bölümü hajduklardan oluşan piyade birliğiyle Segedin'e ilerlemesi ve diğer birliklerin süratle onu takip etmesi stratejisi benimsendi .	Toth’un emrinde yaklaşık 5.000 kişilik bir birlik mevcutken , Segedin kalesindeki Türk garnizonu ise 345 askerden ibaretti .	Şubat ortalarında Gyula ( _ Göle _ ) civarında toplanan Alman - Macar ordusu yanıltma harekatı icra ederek güneye doğru yöneldi ve Beçkerek'i geri almaya teşebbüs edecekmiş gibi yaptı .	19 Şubat’ta Tisa'nın doğu yakasına ulaşan ordu 20 Şubat’ta nehrin batı yakasına geçti ve Segedin şehrini yamaladıktan sonra kaleye saldırdı .
+Event	T0	başladı	EVENT	66
+Event	T2	topladı	EVENT	110
+Event	T3	taarruz	EVENT	131
+Event	T4	belirlendikten	EVENT	144
+Event	T5	ilerlemesi	EVENT	243
+Event	T6	benimsendi	EVENT	311
+Event	T9	yöneldi	EVENT	569
+Event	T10	yaptı	EVENT	627
+Event	T11	geçti	EVENT	715
+Event	T12	yamaladıktan	EVENT	740
+Event	T13	saldırdı	EVENT	766
+Event	T1	harekatı	EVENT	535
+Relation	T0	T2	CauseEffect	true	başladı	topladı
+Relation	T2	T0	EffectCause	true	topladı	başladı
+Relation	T2	T4	CauseEffect	true	topladı	belirlendikten
+Relation	T4	T2	EffectCause	true	belirlendikten	topladı
+Relation	T1	T9	CauseEffect	true	harekatı	yöneldi
+Relation	T9	T1	EffectCause	true	yöneldi	harekatı
+Relation	T1	T10	CauseEffect	true	harekatı	yaptı
+Relation	T10	T1	EffectCause	true	yaptı	harekatı
+Relation	T10	T3	NoRel	true	yaptı	taarruz
+Relation	T11	T9	NoRel	true	geçti	yöneldi
+Relation	T12	T3	NoRel	true	yamaladıktan	taarruz
+Relation	T13	T2	NoRel	true	saldırdı	topladı
+Relation	T13	T4	NoRel	true	saldırdı	belirlendikten
+Relation	T3	T10	NoRel	true	taarruz	yaptı
+Relation	T3	T2	NoRel	true	taarruz	topladı
+Relation	T6	T1	NoRel	true	benimsendi	harekatı

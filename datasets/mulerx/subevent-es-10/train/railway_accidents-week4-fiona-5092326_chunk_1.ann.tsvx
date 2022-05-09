@@ -1,0 +1,60 @@
+Text	En el juicio Once I el tribunal dictó sentencia en 2014 , con 21 condenados ( 18 empresarios , 2 funcionarios y el conductor ) , mientras que en 2018 la Cámara absolvió a uno de los condenados y redujo todas las penas restantes , lo que fue apelado ante la Corte Suprema .	El juicio Once II se realizó en 2018 , y la sentencia registró criterios distintos que Once I , absolviendo al principal acusado , el exministro Julio De Vido del estrago ferroviario , aunque condenándolo por administración fraudulenta .	Entre 2011 y 2013 se produjeron cuatro siniestros ferroviarios en la misma línea ( Sarmiento ) .	Dos de ellos se produjeron en la estación Once , uno en Flores y otro en Castelar .	El primer siniestro se produjo el 13 de septiembre de 2011 , provocando la muerte de 11 personas y lesiones a 228 personas .
+Event	T0	juicio	EVENT	6
+Event	T1	sentencia	EVENT	38
+Event	T2	condenados	EVENT	65
+Event	T3	absolvió	EVENT	160
+Event	T4	redujo	EVENT	195
+Event	T5	penas	EVENT	212
+Event	T6	apelado	EVENT	241
+Event	T7	juicio	EVENT	276
+Event	T8	realizó	EVENT	294
+Event	T9	absolviendo	EVENT	369
+Event	T10	estrago	EVENT	436
+Event	T11	condenándolo	EVENT	465
+Event	T12	produjeron	EVENT	532
+Event	T13	siniestros	EVENT	550
+Event	T14	produjeron	EVENT	624
+Event	T15	siniestro	EVENT	702
+Event	T16	produjo	EVENT	715
+Event	T17	provocando	EVENT	753
+Event	T18	muerte	EVENT	767
+Event	T19	lesiones	EVENT	791
+Relation	T0	T1	NoRel	true	juicio	sentencia
+Relation	T0	T12	NoRel	true	juicio	produjeron
+Relation	T0	T2	NoRel	true	juicio	condenados
+Relation	T0	T8	NoRel	true	juicio	realizó
+Relation	T0	T9	NoRel	true	juicio	absolviendo
+Relation	T12	T14	NoRel	true	produjeron	produjeron
+Relation	T12	T16	NoRel	true	produjeron	produjo
+Relation	T12	T17	NoRel	true	produjeron	provocando
+Relation	T12	T5	NoRel	true	produjeron	penas
+Relation	T13	T2	NoRel	true	siniestros	condenados
+Relation	T13	T8	NoRel	true	siniestros	realizó
+Relation	T14	T3	NoRel	true	produjeron	absolvió
+Relation	T14	T6	NoRel	true	produjeron	apelado
+Relation	T15	T10	NoRel	true	siniestro	estrago
+Relation	T16	T11	NoRel	true	produjo	condenándolo
+Relation	T17	T1	NoRel	true	provocando	sentencia
+Relation	T17	T4	NoRel	true	provocando	redujo
+Relation	T18	T15	NoRel	true	muerte	siniestro
+Relation	T18	T9	NoRel	true	muerte	absolviendo
+Relation	T19	T15	NoRel	true	lesiones	siniestro
+Relation	T19	T5	NoRel	true	lesiones	penas
+Relation	T19	T7	NoRel	true	lesiones	juicio
+Relation	T2	T11	NoRel	true	condenados	condenándolo
+Relation	T2	T13	NoRel	true	condenados	siniestros
+Relation	T2	T17	NoRel	true	condenados	provocando
+Relation	T2	T18	NoRel	true	condenados	muerte
+Relation	T3	T1	NoRel	true	absolvió	sentencia
+Relation	T5	T11	NoRel	true	penas	condenándolo
+Relation	T5	T12	NoRel	true	penas	produjeron
+Relation	T5	T19	NoRel	true	penas	lesiones
+Relation	T6	T1	NoRel	true	apelado	sentencia
+Relation	T7	T13	NoRel	true	juicio	siniestros
+Relation	T7	T15	NoRel	true	juicio	siniestro
+Relation	T7	T16	NoRel	true	juicio	produjo
+Relation	T7	T18	NoRel	true	juicio	muerte
+Relation	T7	T3	NoRel	true	juicio	absolvió
+Relation	T8	T18	NoRel	true	realizó	muerte
+Relation	T8	T9	NoRel	true	realizó	absolviendo
+Relation	T9	T8	NoRel	true	absolviendo	realizó

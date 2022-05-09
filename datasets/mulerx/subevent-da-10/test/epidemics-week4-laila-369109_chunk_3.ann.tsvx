@@ -1,0 +1,111 @@
+Text	Selvom de fleste tilfælde er milde , medfører de alligevel alvorlig sygdom for 3–5 millioner mennesker og afstedkommer omkring 250.000 –500.000 dødsfald over hele verden .	I industrialiserede lande forekommer alvorlig sygdom og dødsfald hovedsagelig hos højrisiko-grupper som spædbørn , de ældre og kronisk syge patienter .	Udover disse årlige epidemier , har Influenza A virus-strenge også forårsaget tre globale epidemier i det 20. århundrede : Den Spanske Syge i 1918 , Asiatisk influenza i 1957 og Hong Kong influenza i 1968–69 .	Disse pandemier blev forårsaget af Influenza A vira , som havde undergået en større genetisk forandring , et såkaldt Antigenetisk skift , og for hvilket befolkningen ikke var i besiddelse af tilstrækkelig immunitet .	---------------------------------------- DET 20. ÅR HUNDREDES INFLUENZA PANDEMIER Pandemi Den Spanske Syge Asiatisk influenza Hong Kong influenza Almindelig influenza ----------------------------------------
+Event	T0	tilfælde	EVENT	17
+Event	T1	medfører	EVENT	37
+Event	T2	sygdom	EVENT	68
+Event	T3	afstedkommer	EVENT	106
+Event	T4	dødsfald	EVENT	144
+Event	T5	sygdom	EVENT	218
+Event	T6	dødsfald	EVENT	228
+Event	T7	epidemier	EVENT	344
+Event	T8	forårsaget	EVENT	391
+Event	T9	epidemier	EVENT	414
+Event	T13	forårsaget	EVENT	555
+Event	T14	undergået	EVENT	598
+Event	T15	forandring	EVENT	627
+Event	T16	skift	EVENT	664
+Event	T18	influenza	EVENT	908
+Event	T19	patienter	EVENT	312
+Event	T20	forekommer	EVENT	198
+Event	T21	højrisiko-grupper	EVENT	254
+Event	T22	Influenza A virus	EVENT	360
+Event	T10	Den Spanske Syge	EVENT	447
+Event	T11	Asiatisk influenza	EVENT	473
+Event	T12	Hong Kong influenza	EVENT	502
+Event	T23	pandemier	EVENT	540
+Event	T24	Influenza A vira	EVENT	569
+Event	T25	PANDEMIER	EVENT	823
+Event	T26	Den Spanske Syge	EVENT	841
+Event	T17	Asiatisk influenza	EVENT	858
+Event	T27	Hong Kong influenza	EVENT	877
+Relation	T22	T10	SuperSub	true	Influenza A virus	Den Spanske Syge
+Relation	T10	T22	SubSuper	true	Den Spanske Syge	Influenza A virus
+Relation	T22	T11	SuperSub	true	Influenza A virus	Asiatisk influenza
+Relation	T11	T22	SubSuper	true	Asiatisk influenza	Influenza A virus
+Relation	T22	T12	SuperSub	true	Influenza A virus	Hong Kong influenza
+Relation	T12	T22	SubSuper	true	Hong Kong influenza	Influenza A virus
+Relation	T24	T15	SuperSub	true	Influenza A vira	forandring
+Relation	T15	T24	SubSuper	true	forandring	Influenza A vira
+Relation	T0	T20	NoRel	true	tilfælde	forekommer
+Relation	T0	T3	NoRel	true	tilfælde	afstedkommer
+Relation	T1	T10	NoRel	true	medfører	Den Spanske Syge
+Relation	T1	T17	NoRel	true	medfører	Asiatisk influenza
+Relation	T1	T23	NoRel	true	medfører	pandemier
+Relation	T10	T11	NoRel	true	Den Spanske Syge	Asiatisk influenza
+Relation	T10	T16	NoRel	true	Den Spanske Syge	skift
+Relation	T10	T17	NoRel	true	Den Spanske Syge	Asiatisk influenza
+Relation	T10	T18	NoRel	true	Den Spanske Syge	influenza
+Relation	T10	T20	NoRel	true	Den Spanske Syge	forekommer
+Relation	T11	T18	NoRel	true	Asiatisk influenza	influenza
+Relation	T11	T3	NoRel	true	Asiatisk influenza	afstedkommer
+Relation	T12	T15	NoRel	true	Hong Kong influenza	forandring
+Relation	T12	T24	NoRel	true	Hong Kong influenza	Influenza A vira
+Relation	T12	T9	NoRel	true	Hong Kong influenza	epidemier
+Relation	T13	T18	NoRel	true	forårsaget	influenza
+Relation	T13	T8	NoRel	true	forårsaget	forårsaget
+Relation	T14	T0	NoRel	true	undergået	tilfælde
+Relation	T14	T8	NoRel	true	undergået	forårsaget
+Relation	T15	T14	NoRel	true	forandring	undergået
+Relation	T16	T25	NoRel	true	skift	PANDEMIER
+Relation	T16	T7	NoRel	true	skift	epidemier
+Relation	T17	T8	NoRel	true	Asiatisk influenza	forårsaget
+Relation	T18	T0	NoRel	true	influenza	tilfælde
+Relation	T18	T13	NoRel	true	influenza	forårsaget
+Relation	T18	T22	NoRel	true	influenza	Influenza A virus
+Relation	T18	T24	NoRel	true	influenza	Influenza A vira
+Relation	T18	T27	NoRel	true	influenza	Hong Kong influenza
+Relation	T19	T15	NoRel	true	patienter	forandring
+Relation	T19	T7	NoRel	true	patienter	epidemier
+Relation	T2	T10	NoRel	true	sygdom	Den Spanske Syge
+Relation	T20	T2	NoRel	true	forekommer	sygdom
+Relation	T21	T10	NoRel	true	højrisiko-grupper	Den Spanske Syge
+Relation	T21	T18	NoRel	true	højrisiko-grupper	influenza
+Relation	T22	T0	NoRel	true	Influenza A virus	tilfælde
+Relation	T22	T17	NoRel	true	Influenza A virus	Asiatisk influenza
+Relation	T23	T0	NoRel	true	pandemier	tilfælde
+Relation	T23	T14	NoRel	true	pandemier	undergået
+Relation	T23	T15	NoRel	true	pandemier	forandring
+Relation	T23	T3	NoRel	true	pandemier	afstedkommer
+Relation	T23	T4	NoRel	true	pandemier	dødsfald
+Relation	T24	T20	NoRel	true	Influenza A vira	forekommer
+Relation	T24	T8	NoRel	true	Influenza A vira	forårsaget
+Relation	T25	T18	NoRel	true	PANDEMIER	influenza
+Relation	T25	T3	NoRel	true	PANDEMIER	afstedkommer
+Relation	T25	T4	NoRel	true	PANDEMIER	dødsfald
+Relation	T25	T8	NoRel	true	PANDEMIER	forårsaget
+Relation	T26	T1	NoRel	true	Den Spanske Syge	medfører
+Relation	T26	T17	NoRel	true	Den Spanske Syge	Asiatisk influenza
+Relation	T26	T19	NoRel	true	Den Spanske Syge	patienter
+Relation	T27	T2	NoRel	true	Hong Kong influenza	sygdom
+Relation	T27	T3	NoRel	true	Hong Kong influenza	afstedkommer
+Relation	T3	T25	NoRel	true	afstedkommer	PANDEMIER
+Relation	T3	T9	NoRel	true	afstedkommer	epidemier
+Relation	T4	T26	NoRel	true	dødsfald	Den Spanske Syge
+Relation	T5	T16	NoRel	true	sygdom	skift
+Relation	T5	T4	NoRel	true	sygdom	dødsfald
+Relation	T6	T0	NoRel	true	dødsfald	tilfælde
+Relation	T6	T1	NoRel	true	dødsfald	medfører
+Relation	T6	T5	NoRel	true	dødsfald	sygdom
+Relation	T7	T12	NoRel	true	epidemier	Hong Kong influenza
+Relation	T7	T20	NoRel	true	epidemier	forekommer
+Relation	T7	T9	NoRel	true	epidemier	epidemier
+Relation	T8	T11	NoRel	true	forårsaget	Asiatisk influenza
+Relation	T8	T21	NoRel	true	forårsaget	højrisiko-grupper
+Relation	T8	T26	NoRel	true	forårsaget	Den Spanske Syge
+Relation	T8	T27	NoRel	true	forårsaget	Hong Kong influenza
+Relation	T8	T6	NoRel	true	forårsaget	dødsfald
+Relation	T9	T14	NoRel	true	epidemier	undergået
+Relation	T9	T15	NoRel	true	epidemier	forandring
+Relation	T9	T24	NoRel	true	epidemier	Influenza A vira
+Relation	T9	T25	NoRel	true	epidemier	PANDEMIER
+Relation	T9	T26	NoRel	true	epidemier	Den Spanske Syge
+Relation	T9	T6	NoRel	true	epidemier	dødsfald

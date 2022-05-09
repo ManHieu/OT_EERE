@@ -1,0 +1,58 @@
+Text	Desde el viernes 6 se iniciaron los trabajos de riego para mantener la humedad en el suelo .	En las labores de detención y extinción del incendio participaron más de 660 brigadistas , entre voluntarios de Bomberos , funcionarios de la Corporación Nacional Forestal ( CONAF ) , personal de las empresas forestales de la zona e integrantes de las Brigadas contra Incendios Forestales ( BRIFES ) del Ejército de Chile .	El trabajo fue reforzado por ocho aviones y diecisiete helicópteros dispuestos por empresas locales , CONAF y la ONEMI .	El incendio generó pérdidas importantes en el sector agrícola de la zona , con importantes extensiones de cerezos y viñas quemadas .	De acuerdo a un catastro efectuado _ in situ _ por el Instituto de Desarrollo Agropecuario , las pérdidas tanto forestales como agrícolas producidas por el incendio , han afectado principalmente a los rubros hortícola , frutícola , vitivinícola , aviar , animales menores y flores .
+Event	T0	iniciaron	EVENT	22
+Event	T1	trabajos	EVENT	36
+Event	T2	riego	EVENT	48
+Event	T3	labores	EVENT	100
+Event	T4	detención	EVENT	111
+Event	T5	extinción	EVENT	123
+Event	T6	participaron	EVENT	146
+Event	T7	Incendios	EVENT	361
+Event	T8	trabajo	EVENT	420
+Event	T9	reforzado	EVENT	432
+Event	T10	dispuestos	EVENT	485
+Event	T11	pérdidas	EVENT	557
+Event	T12	quemadas	EVENT	660
+Event	T13	efectuado	EVENT	696
+Event	T14	pérdidas	EVENT	768
+Event	T15	producidas	EVENT	809
+Event	T16	incendio	EVENT	827
+Event	T17	afectado	EVENT	842
+Event	T18	incendio	EVENT	541
+Relation	T18	T11	CauseEffect	true	incendio	pérdidas
+Relation	T11	T18	EffectCause	true	pérdidas	incendio
+Relation	T18	T12	CauseEffect	true	incendio	quemadas
+Relation	T12	T18	EffectCause	true	quemadas	incendio
+Relation	T0	T5	NoRel	true	iniciaron	extinción
+Relation	T1	T9	NoRel	true	trabajos	reforzado
+Relation	T10	T0	NoRel	true	dispuestos	iniciaron
+Relation	T10	T12	NoRel	true	dispuestos	quemadas
+Relation	T11	T0	NoRel	true	pérdidas	iniciaron
+Relation	T12	T1	NoRel	true	quemadas	trabajos
+Relation	T12	T3	NoRel	true	quemadas	labores
+Relation	T13	T8	NoRel	true	efectuado	trabajo
+Relation	T14	T3	NoRel	true	pérdidas	labores
+Relation	T15	T11	NoRel	true	producidas	pérdidas
+Relation	T15	T5	NoRel	true	producidas	extinción
+Relation	T15	T9	NoRel	true	producidas	reforzado
+Relation	T16	T2	NoRel	true	incendio	riego
+Relation	T16	T3	NoRel	true	incendio	labores
+Relation	T16	T6	NoRel	true	incendio	participaron
+Relation	T17	T3	NoRel	true	afectado	labores
+Relation	T2	T18	NoRel	true	riego	incendio
+Relation	T3	T12	NoRel	true	labores	quemadas
+Relation	T3	T9	NoRel	true	labores	reforzado
+Relation	T4	T15	NoRel	true	detención	producidas
+Relation	T4	T18	NoRel	true	detención	incendio
+Relation	T4	T7	NoRel	true	detención	Incendios
+Relation	T5	T14	NoRel	true	extinción	pérdidas
+Relation	T6	T8	NoRel	true	participaron	trabajo
+Relation	T7	T0	NoRel	true	Incendios	iniciaron
+Relation	T7	T11	NoRel	true	Incendios	pérdidas
+Relation	T7	T13	NoRel	true	Incendios	efectuado
+Relation	T8	T10	NoRel	true	trabajo	dispuestos
+Relation	T8	T12	NoRel	true	trabajo	quemadas
+Relation	T8	T6	NoRel	true	trabajo	participaron
+Relation	T9	T14	NoRel	true	reforzado	pérdidas
+Relation	T9	T16	NoRel	true	reforzado	incendio
+Relation	T9	T18	NoRel	true	reforzado	incendio
+Relation	T9	T7	NoRel	true	reforzado	Incendios

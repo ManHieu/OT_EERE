@@ -1,0 +1,44 @@
+Text	Buna göre Gustav , ABD tarihinde en çok zarara yol açan 10. kasırga olacaktır .	Fırtınanın bir tropical depresyona dönüşmesi üzerine , onun tropical fırtına içinde genişliyeceği ve Hispanyola adasını vuracağı bekleniyordu .	Dominik Cumhuriyeti sahili tarafından , Santo Domingo'nun güneyi Port - au - Prince'nin Haiti güney sahiline Tropikal fırtına ikazları yayımlandı .	Bundan sonra bir Tropikal gözlemi , Haiti sahilleri , Port - au - Prince'in kuzeyi ve Dominic Cumhuriyeti kuzey sınırı için yayımlandı .	Saatlaer sonra , Gustav bir Tropikal fırtınaya yükseltildiğinde , Tropikal fırtına ikazı , hurricane ikazına yükseltildi ve Tropikal fırtına gözlemi , hurricane gözlemine yükseltildi .
+Event	T2	bekleniyordu	EVENT	209
+Event	T3	yayımlandı	EVENT	359
+Event	T4	gözlemi	EVENT	398
+Event	T5	yayımlandı	EVENT	496
+Event	T6	yükseltildiğinde	EVENT	556
+Event	T7	ikazı	EVENT	592
+Event	T8	yükseltildi	EVENT	618
+Event	T9	gözlemi	EVENT	650
+Event	T10	yükseltildi	EVENT	680
+Event	T11	zarara	EVENT	40
+Event	T12	kasırga	EVENT	60
+Event	T13	Fırtınanın	EVENT	80
+Event	T14	depresyona	EVENT	104
+Relation	T12	T11	CauseEffect	true	kasırga	zarara
+Relation	T11	T12	EffectCause	true	zarara	kasırga
+Relation	T13	T14	CauseEffect	true	Fırtınanın	depresyona
+Relation	T14	T13	EffectCause	true	depresyona	Fırtınanın
+Relation	T14	T2	CauseEffect	true	depresyona	bekleniyordu
+Relation	T2	T14	EffectCause	true	bekleniyordu	depresyona
+Relation	T13	T3	CauseEffect	true	Fırtınanın	yayımlandı
+Relation	T3	T13	EffectCause	true	yayımlandı	Fırtınanın
+Relation	T13	T5	CauseEffect	true	Fırtınanın	yayımlandı
+Relation	T5	T13	EffectCause	true	yayımlandı	Fırtınanın
+Relation	T6	T8	CauseEffect	true	yükseltildiğinde	yükseltildi
+Relation	T8	T6	EffectCause	true	yükseltildi	yükseltildiğinde
+Relation	T9	T10	CauseEffect	true	gözlemi	yükseltildi
+Relation	T10	T9	EffectCause	true	yükseltildi	gözlemi
+Relation	T13	T4	CauseEffect	true	Fırtınanın	gözlemi
+Relation	T4	T13	EffectCause	true	gözlemi	Fırtınanın
+Relation	T10	T11	NoRel	true	yükseltildi	zarara
+Relation	T10	T6	NoRel	true	yükseltildi	yükseltildiğinde
+Relation	T12	T14	NoRel	true	kasırga	depresyona
+Relation	T13	T10	NoRel	true	Fırtınanın	yükseltildi
+Relation	T13	T6	NoRel	true	Fırtınanın	yükseltildiğinde
+Relation	T14	T3	NoRel	true	depresyona	yayımlandı
+Relation	T2	T4	NoRel	true	bekleniyordu	gözlemi
+Relation	T2	T5	NoRel	true	bekleniyordu	yayımlandı
+Relation	T4	T11	NoRel	true	gözlemi	zarara
+Relation	T5	T4	NoRel	true	yayımlandı	gözlemi
+Relation	T7	T10	NoRel	true	ikazı	yükseltildi
+Relation	T7	T5	NoRel	true	ikazı	yayımlandı
+Relation	T7	T9	NoRel	true	ikazı	gözlemi
+Relation	T8	T7	NoRel	true	yükseltildi	ikazı

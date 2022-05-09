@@ -1,0 +1,16 @@
+Text	Bir subtropikal fırtına olmasının ardından , Gabrielle'in bulunduğu alanın kuzeyinde daha soğuk hava , batısında ve doğusunda ise yağmursuz hava , rüzgâr değişimleri ve kasırganın yolu üzerinde daha soğuk su sıcaklıkları bulunmaktaydı .	Bu durum Gabrielle'in daha da güçlenmesini önledi .	Fakat , kasırganın batı ve kuzey bölümlerinde gök gürültülü fırtınalar meydana geldi .	ve kötü havanın daha da kötüleşmesine sebep oldu .	Daha sonra yağış şeritleri sona erdi ve alçak basınç sisteminin merkezini gök gürültülü fırtınalardan uzakta bıraktı .
+Event	T1	değişimleri	EVENT	154
+Event	T2	önledi	EVENT	280
+Event	T4	erdi	EVENT	459
+Event	T5	bıraktı	EVENT	536
+Event	T6	fırtına	EVENT	16
+Event	T7	kasırganın	EVENT	169
+Event	T8	kasırganın	EVENT	297
+Event	T3	fırtınalar	EVENT	349
+Event	T9	kötüleşmesine	EVENT	400
+Relation	T1	T5	NoRel	true	değişimleri	bıraktı
+Relation	T5	T4	NoRel	true	bıraktı	erdi
+Relation	T6	T5	NoRel	true	fırtına	bıraktı
+Relation	T7	T1	NoRel	true	kasırganın	değişimleri
+Relation	T7	T8	NoRel	true	kasırganın	kasırganın
+Relation	T8	T9	NoRel	true	kasırganın	kötüleşmesine

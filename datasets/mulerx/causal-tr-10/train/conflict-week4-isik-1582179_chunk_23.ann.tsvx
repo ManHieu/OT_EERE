@@ -1,0 +1,44 @@
+Text	»	1826 yılında Tasmanya yerlileri ekonomik ve siyasi mağduriyetlerinin giderilmesi ve intikam olarak umutsuz gerilla savaşına başlarlar .	Oyster Bay boyunun kabile reisi _ Tukalunginta _ ( _ Tongerlongeter , Tongerlongter _ ; Beyaz adı : _ King William _ ; ölümü : 1837 ) vaiz Robinson'a kendilerinin ve atalarının Beyazlar tarafından acımasızca istismar edildiğini , öldürüldüğünü , eş ve kızlarının kaçırılıp uzağa götürüldüğünü söylemiştir .	Britanyalıların askeri stratejisi tökezlerken yerliler üç yıl Beyazlar üzerine saldırılarını yoğunlaştırmışlardır .	1826 ve 1827 yıllarında sömürgeciler ve mülkleri üzerine yerlilerin yüzden fazla saldırısı olmuş ve 42 Beyaz öldürülmüş bir çoğu da yaralanmıştır .
+Event	T0	giderilmesi	EVENT	71
+Event	T1	ölümü	EVENT	257
+Event	T2	öldürüldüğünü	EVENT	368
+Event	T3	kaçırılıp	EVENT	401
+Event	T4	söylemiştir	EVENT	431
+Event	T5	tökezlerken	EVENT	479
+Event	T8	öldürülmüş	EVENT	670
+Event	T9	yaralanmıştır	EVENT	693
+Event	T10	başlarlar	EVENT	126
+Event	T11	intikam	EVENT	86
+Event	T12	edildiğini	EVENT	355
+Event	T13	yoğunlaştırmışlardır	EVENT	538
+Event	T6	saldırısı	EVENT	642
+Relation	T11	T10	CauseEffect	true	intikam	başlarlar
+Relation	T10	T11	EffectCause	true	başlarlar	intikam
+Relation	T5	T13	CauseEffect	true	tökezlerken	yoğunlaştırmışlardır
+Relation	T13	T5	EffectCause	true	yoğunlaştırmışlardır	tökezlerken
+Relation	T10	T13	CauseEffect	true	başlarlar	yoğunlaştırmışlardır
+Relation	T13	T10	EffectCause	true	yoğunlaştırmışlardır	başlarlar
+Relation	T12	T11	CauseEffect	true	edildiğini	intikam
+Relation	T11	T12	EffectCause	true	intikam	edildiğini
+Relation	T2	T11	CauseEffect	true	öldürüldüğünü	intikam
+Relation	T11	T2	EffectCause	true	intikam	öldürüldüğünü
+Relation	T3	T11	CauseEffect	true	kaçırılıp	intikam
+Relation	T11	T3	EffectCause	true	intikam	kaçırılıp
+Relation	T10	T6	CauseEffect	true	başlarlar	saldırısı
+Relation	T6	T10	EffectCause	true	saldırısı	başlarlar
+Relation	T6	T8	CauseEffect	true	saldırısı	öldürülmüş
+Relation	T8	T6	EffectCause	true	öldürülmüş	saldırısı
+Relation	T6	T9	CauseEffect	true	saldırısı	yaralanmıştır
+Relation	T9	T6	EffectCause	true	yaralanmıştır	saldırısı
+Relation	T0	T6	NoRel	true	giderilmesi	saldırısı
+Relation	T0	T9	NoRel	true	giderilmesi	yaralanmıştır
+Relation	T10	T1	NoRel	true	başlarlar	ölümü
+Relation	T13	T11	NoRel	true	yoğunlaştırmışlardır	intikam
+Relation	T13	T12	NoRel	true	yoğunlaştırmışlardır	edildiğini
+Relation	T2	T4	NoRel	true	öldürüldüğünü	söylemiştir
+Relation	T3	T2	NoRel	true	kaçırılıp	öldürüldüğünü
+Relation	T4	T2	NoRel	true	söylemiştir	öldürüldüğünü
+Relation	T5	T10	NoRel	true	tökezlerken	başlarlar
+Relation	T5	T12	NoRel	true	tökezlerken	edildiğini
+Relation	T8	T3	NoRel	true	öldürülmüş	kaçırılıp
+Relation	T9	T13	NoRel	true	yaralanmıştır	yoğunlaştırmışlardır

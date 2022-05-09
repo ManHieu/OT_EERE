@@ -1,0 +1,23 @@
+Text	24 Ekim günü sabah saatlerinde Azerbaycan ve İran'dan gelen toplam 300 arama - kurtarma personeli çalışmalara katıldı .	24 Ekim 2011 gecesi , saat 00: 30'a kadar afet bölgesine toplam 1584 arama kurtarma personeli , 491 sağlık personeli , 10 arama köpeği , 256 iş makinesi ve araç , 7'si hava ambulansı olmak üzere 75 ambulans , 20 jeneratör , 95 seyyar tuvalet , 2546 çadır , 7648 battaniye , 1120 gıda paketi , 10.040 gıda kolisi ve 500 kumanya gönderildi .	24 Ekim günü Türkiye Cumhuriyeti Başbakanlığı tarafından bir yardım kampanyası oluşturuldu ve banka hesap numaraları kamuoyuna duyuruldu .	Deprem bölgesinde çadır ve yardım malzemelerinin dağıtımı sırasında meydana gelen aksaklıklar nedeniyle izdiham oluştu .	Bölgedeki askerlerin havaya ateş açmalarına rağmen vatandaşlar çadırları ve yardım malzemelerini araçtan indirip taşımaya başladılar .
+Event	T0	katıldı	EVENT	110
+Event	T1	gönderildi	EVENT	447
+Event	T2	oluşturuldu	EVENT	539
+Event	T3	duyuruldu	EVENT	587
+Event	T4	dağıtımı	EVENT	648
+Event	T5	aksaklıklar	EVENT	681
+Event	T6	oluştu	EVENT	711
+Event	T7	açmalarına	EVENT	753
+Event	T8	çalışmalara	EVENT	98
+Event	T9	başladılar	EVENT	842
+Relation	T0	T9	NoRel	true	katıldı	başladılar
+Relation	T2	T3	NoRel	true	oluşturuldu	duyuruldu
+Relation	T2	T9	NoRel	true	oluşturuldu	başladılar
+Relation	T3	T7	NoRel	true	duyuruldu	açmalarına
+Relation	T4	T6	NoRel	true	dağıtımı	oluştu
+Relation	T5	T1	NoRel	true	aksaklıklar	gönderildi
+Relation	T5	T2	NoRel	true	aksaklıklar	oluşturuldu
+Relation	T5	T8	NoRel	true	aksaklıklar	çalışmalara
+Relation	T6	T4	NoRel	true	oluştu	dağıtımı
+Relation	T6	T7	NoRel	true	oluştu	açmalarına
+Relation	T9	T2	NoRel	true	başladılar	oluşturuldu
+Relation	T9	T4	NoRel	true	başladılar	dağıtımı

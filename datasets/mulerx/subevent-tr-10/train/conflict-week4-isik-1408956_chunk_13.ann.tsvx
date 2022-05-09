@@ -1,0 +1,23 @@
+Text	İngiltere ve ABD'de de ise antikomünizm , Antisemitizm ve cinsellik temalı yasaklara maruz kalmıştı .	Kitap 1962'deki Küba Füze Krizi sırasında neredeyse ABD ve İngiltere'de de yasaklanıyordu .	_ Kızım Olmadan Asla _ Betty Mahmoody Roman Ülkeyi kötü gösterdiği için İran'da yasaklandı .	Roman aynı adla sinemaya da aktarıldı .	_ Böyle Bir Sevmek _ Attilâ İlhan Şiir 1979'da basılan kitap 1980'de 12 Eylül Darbesi sırasında toplatıldı .
+Event	T0	Krizi	EVENT	128
+Event	T1	yasaklanıyordu	EVENT	177
+Event	T2	gösterdiği	EVENT	250
+Event	T3	yasaklandı	EVENT	274
+Event	T4	aktarıldı	EVENT	315
+Event	T6	toplatıldı	EVENT	423
+Event	T7	yasaklara	EVENT	75
+Event	T8	kalmıştı	EVENT	91
+Event	T9	basılan	EVENT	374
+Event	T10	12 Eylül Darbesi	EVENT	396
+Relation	T0	T4	NoRel	true	Krizi	aktarıldı
+Relation	T0	T8	NoRel	true	Krizi	kalmıştı
+Relation	T1	T10	NoRel	true	yasaklanıyordu	12 Eylül Darbesi
+Relation	T10	T0	NoRel	true	12 Eylül Darbesi	Krizi
+Relation	T10	T7	NoRel	true	12 Eylül Darbesi	yasaklara
+Relation	T3	T4	NoRel	true	yasaklandı	aktarıldı
+Relation	T6	T0	NoRel	true	toplatıldı	Krizi
+Relation	T6	T2	NoRel	true	toplatıldı	gösterdiği
+Relation	T7	T1	NoRel	true	yasaklara	yasaklanıyordu
+Relation	T8	T7	NoRel	true	kalmıştı	yasaklara
+Relation	T9	T3	NoRel	true	basılan	yasaklandı
+Relation	T9	T8	NoRel	true	basılan	kalmıştı

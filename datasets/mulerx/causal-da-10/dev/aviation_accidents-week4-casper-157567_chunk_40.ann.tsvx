@@ -1,0 +1,25 @@
+Text	Det første sammenstød er mere problematisk at tidsansætte efter denne metode , da der er færre optagelser , men tidsangivelsen er stadig nogle sekunder efter de seismologiske måleinstrumenters angivelse .	Disse er imidlertid blevet genanalyseret af Columbia University , og tidspunktet på begge udslag rykket 3 sekunder frem til hhv. 8:46:29 og 9:02:57 – dog stadig med noget usikkerhed .	Der er nu tre sekunders forskel på de to tal , begge behæftet med et par sekunders usikkerhed .	Tidsangivelsen på de seismologiske optagelser og den på fremfundet af _ NIST _ kan antages at være inden for den samme usikkerhedsmargin .	LDEOs seismologiske optagelse for begivenhederne er samlet i en rapport der indeholder en række grafer , men konspirationsteoretikerne vælger kun at beskæftige sig med en af dem .
+Event	T0	sammenstød	EVENT	11
+Event	T1	angivelse	EVENT	193
+Event	T2	genanalyseret	EVENT	232
+Event	T3	rykket	EVENT	302
+Event	T4	forskel	EVENT	413
+Event	T5	behæftet	EVENT	442
+Event	T6	fremfundet	EVENT	541
+Event	T7	optagelse	EVENT	644
+Event	T8	samlet	EVENT	676
+Event	T9	rapport	EVENT	688
+Event	T10	vælger	EVENT	759
+Event	T11	beskæftige	EVENT	773
+Relation	T0	T2	CauseEffect	true	sammenstød	genanalyseret
+Relation	T2	T0	EffectCause	true	genanalyseret	sammenstød
+Relation	T1	T3	NoRel	true	angivelse	rykket
+Relation	T1	T7	NoRel	true	angivelse	optagelse
+Relation	T10	T0	NoRel	true	vælger	sammenstød
+Relation	T11	T6	NoRel	true	beskæftige	fremfundet
+Relation	T4	T5	NoRel	true	forskel	behæftet
+Relation	T5	T7	NoRel	true	behæftet	optagelse
+Relation	T6	T7	NoRel	true	fremfundet	optagelse
+Relation	T6	T8	NoRel	true	fremfundet	samlet
+Relation	T8	T10	NoRel	true	samlet	vælger
+Relation	T8	T2	NoRel	true	samlet	genanalyseret

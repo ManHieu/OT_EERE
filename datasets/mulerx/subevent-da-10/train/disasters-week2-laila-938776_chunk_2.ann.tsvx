@@ -1,0 +1,22 @@
+Text	Der er ifølge CNN ikke kommet tilsvarende advarsler siden Orkanen Katrina 12 år tidligere .	Ved landgangen havde orkanen en vindstyrke på op til 215 km/t ( ca. 59 m/s ) , hvilket svarer til kategori fire på Saffir-Simpson-skalaen , som går til fem .	Efterfølgende er orkanen blevet nedgraderet til en kategori 1-orkan .	I den efterfølgende uge frygtes der at falde op til en meter regn visse steder i Texas .	Der havde ikke været en orkan i Texas med højere vindhastigheder siden 1961 og den overgik Orkanen Katrina fra 2005 i vindstyrke , men denne var overordnet større og forårsagede større oversvømmelser pga. det område den ramte ( New Orleans ) .
+Event	T0	kommet	EVENT	23
+Event	T1	advarsler	EVENT	42
+Event	T2	går	EVENT	236
+Event	T3	nedgraderet	EVENT	282
+Event	T4	frygtes	EVENT	344
+Event	T5	regn	EVENT	381
+Event	T6	overgik	EVENT	492
+Event	T7	forårsagede	EVENT	575
+Event	T9	ramte	EVENT	629
+Relation	T6	T7	SuperSub	true	overgik	forårsagede
+Relation	T7	T6	SubSuper	true	forårsagede	overgik
+Relation	T2	T6	SuperSub	true	går	overgik
+Relation	T6	T2	SubSuper	true	overgik	går
+Relation	T0	T2	NoRel	true	kommet	går
+Relation	T0	T3	NoRel	true	kommet	nedgraderet
+Relation	T1	T4	NoRel	true	advarsler	frygtes
+Relation	T1	T9	NoRel	true	advarsler	ramte
+Relation	T2	T4	NoRel	true	går	frygtes
+Relation	T7	T1	NoRel	true	forårsagede	advarsler
+Relation	T9	T1	NoRel	true	ramte	advarsler
+Relation	T9	T5	NoRel	true	ramte	regn

@@ -1,0 +1,17 @@
+Text	زیادہ تر بچے منہدم ہونے والی سکول کی عمارتوں کے ملبے تلے دب گئے ۔	تفصیلی رپورٹوں کے مطابق شمالی پاکستان میں جہاں یہ زلزلہ رونما ہوا ، تقریباً قصبے اور گاوں صفحہ ہستی سے مٹ گئے ۔	جبکہ مضافاتی علاقوں میں بھی بڑے پیمانے پر مالی نقصان ہوا ۔	اقوام متحدہ کے جنرل سیکرٹری کوفی عنان نے 20 اکتوبر 2005 کو ایک اخباری کانفرنس سے خطاب کرتے ہوئے کہا ،	؀_ایک دوسرا اور بڑے پیمانے پر المیہ رونما ہو سکتا ہے ، اگر ابھی سے ہم نے اپنی تمام تر توانائیاں بچ جانے والوں پر مرکوز نہ کیں ۔_
+Event	T0	گئے	EVENT	60
+Event	T1	رپورٹوں	EVENT	73
+Event	T2	ہوا	EVENT	128
+Event	T3	ہوا	EVENT	231
+Event	T4	خطاب	EVENT	318
+Event	T5	کہا	EVENT	333
+Event	T6	رونما	EVENT	375
+Event	T7	جانے	EVENT	438
+Relation	T5	T4	SuperSub	true	کہا	خطاب
+Relation	T4	T5	SubSuper	true	خطاب	کہا
+Relation	T0	T6	NoRel	true	گئے	رونما
+Relation	T1	T3	NoRel	true	رپورٹوں	ہوا
+Relation	T3	T6	NoRel	true	ہوا	رونما
+Relation	T4	T6	NoRel	true	خطاب	رونما
+Relation	T6	T3	NoRel	true	رونما	ہوا
+Relation	T7	T1	NoRel	true	جانے	رپورٹوں

@@ -1,0 +1,31 @@
+Text	Uçak saat 10.20'ye kadar Domodedovo'dan kalkmadı ve 15.52'de duraklama noktası olan Omsk Havalimanı'na geldi .	Uçağın daha sonra Almatı'ya yapılacak kısa bir uçuş için Omsk'tan kalkması gerekiyordu .	Aynı zamanda , Kazakistan Sivil Havacılık Dairesi Başkanı R. Azakov başka bir Mil Mi- 4 kazasını araştırmaktan yeni dönüyordu ve yolculuğun bir sonraki ayağında İl - 18 mürettebatını gözlemledi .	Almatı Havalimanı'ndaki görüş mesafesi 1. 000 metreden ( 3.300_ft ) az olduğu için uçuş 2 saat 28 dakika ertelendi .	Almatı Havalimanı , görüş mesafesinin düşük olmasından dolayı güvenlik nedeniyle kapanmıştı .
+Event	T1	geldi	EVENT	103
+Event	T2	uçuş	EVENT	158
+Event	T3	kalkması	EVENT	177
+Event	T4	araştırmaktan	EVENT	297
+Event	T5	dönüyordu	EVENT	316
+Event	T6	gözlemledi	EVENT	383
+Event	T7	uçuş	EVENT	479
+Event	T8	ertelendi	EVENT	501
+Event	T9	kapanmıştı	EVENT	594
+Event	T10	kazasını	EVENT	288
+Event	T11	yolculuğun	EVENT	329
+Relation	T2	T3	CauseEffect	true	uçuş	kalkması
+Relation	T3	T2	EffectCause	true	kalkması	uçuş
+Relation	T10	T4	CauseEffect	true	kazasını	araştırmaktan
+Relation	T4	T10	EffectCause	true	araştırmaktan	kazasını
+Relation	T9	T8	CauseEffect	true	kapanmıştı	ertelendi
+Relation	T8	T9	EffectCause	true	ertelendi	kapanmıştı
+Relation	T1	T10	NoRel	true	geldi	kazasını
+Relation	T1	T2	NoRel	true	geldi	uçuş
+Relation	T10	T3	NoRel	true	kazasını	kalkması
+Relation	T10	T8	NoRel	true	kazasını	ertelendi
+Relation	T11	T3	NoRel	true	yolculuğun	kalkması
+Relation	T2	T6	NoRel	true	uçuş	gözlemledi
+Relation	T5	T3	NoRel	true	dönüyordu	kalkması
+Relation	T5	T9	NoRel	true	dönüyordu	kapanmıştı
+Relation	T7	T6	NoRel	true	uçuş	gözlemledi
+Relation	T7	T9	NoRel	true	uçuş	kapanmıştı
+Relation	T8	T1	NoRel	true	ertelendi	geldi
+Relation	T9	T4	NoRel	true	kapanmıştı	araştırmaktan
+Relation	T9	T6	NoRel	true	kapanmıştı	gözlemledi

@@ -1,0 +1,18 @@
+Text	Püskürmeler başladığı günden itibaren olay tüm dünya basınında manşetler ile duyuruldu .	Ada ilk günden başlayarak İzlanda basın yayın ekiplerinin uğrak yeri oldu .	Püskürmeler sürmekteyken olay Avrupa basınında sık sık yer alan haberlerden biri hâline geldi .	Adalıların lavları durdurabilmek için harcadıkları yoğun emek pek çok dergi de kapak oldu .	National Geographic dergisi 1973 yıllı _ Yanardağ bir İzlanda köyünü yok ediyor _ adlı sayısı ile bu olayı okuyucularına duyurmuştur .
+Event	T2	duyuruldu	EVENT	77
+Event	T3	olay	EVENT	190
+Event	T4	geldi	EVENT	253
+Event	T5	ediyor	EVENT	426
+Event	T6	olayı	EVENT	454
+Event	T7	duyurmuştur	EVENT	474
+Event	T1	olay	EVENT	38
+Event	T8	oldu	EVENT	346
+Event	T9	lavları	EVENT	272
+Event	T10	emek	EVENT	318
+Relation	T1	T9	NoRel	true	olay	lavları
+Relation	T10	T6	NoRel	true	emek	olayı
+Relation	T3	T1	NoRel	true	olay	olay
+Relation	T3	T5	NoRel	true	olay	ediyor
+Relation	T6	T5	NoRel	true	olayı	ediyor
+Relation	T7	T10	NoRel	true	duyurmuştur	emek
+Relation	T8	T1	NoRel	true	oldu	olay

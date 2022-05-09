@@ -1,0 +1,103 @@
+Text	Dareios begyndte derfor at rejse en enorm ny hær , som fuldstændig skulle underlægge sig Grækenland , men i 486 f.Kr. gjorde hans undersåtter i Ægypten oprør , hvilket betød en udsættelse af ekspeditionen til Grækenland på ubestemt tid .	Darius døde derpå mens han forberedte sig på at marchere mod Ægypten , og den persiske trone overgik til hans søn Xerxes 1 .	Xerxes knuste det ægyptiske oprør og gik meget hurtigt i gang med forberedelserne til invasionen af Grækenland .	Da dette skulle være en storstilet invasion krævede den lang tids planlægning , oplagring af forsyninger og udskrivning af tropper .	Xerxes besluttede , at der skulle bygges bro ved Hellespont så hæren kunne krydse over til Europa , og at der skulle graves en kanal over tangen ved Athosbjerget ( en persisk flåde var blevet ødelagt ved denne pynt i 492 f.Kr. ) .
+Event	T0	begyndte	EVENT	8
+Event	T1	rejse	EVENT	27
+Event	T2	gjorde	EVENT	118
+Event	T3	oprør	EVENT	152
+Event	T4	betød	EVENT	168
+Event	T5	udsættelse	EVENT	177
+Event	T6	ekspeditionen	EVENT	191
+Event	T7	døde	EVENT	245
+Event	T8	forberedte	EVENT	265
+Event	T9	marchere	EVENT	286
+Event	T10	overgik	EVENT	331
+Event	T11	knuste	EVENT	370
+Event	T12	gik	EVENT	400
+Event	T13	forberedelserne	EVENT	429
+Event	T14	invasionen	EVENT	449
+Event	T15	krævede	EVENT	520
+Event	T16	planlægning	EVENT	542
+Event	T17	oplagring	EVENT	556
+Event	T18	udskrivning	EVENT	584
+Event	T19	besluttede	EVENT	616
+Event	T20	bygges	EVENT	643
+Event	T21	graves	EVENT	726
+Event	T22	ødelagt	EVENT	801
+Event	T23	pynt	EVENT	819
+Event	T24	oprør	EVENT	391
+Event	T25	invasion	EVENT	511
+Event	T26	krydse over	EVENT	684
+Relation	T8	T7	SuperSub	true	forberedte	døde
+Relation	T7	T8	SubSuper	true	døde	forberedte
+Relation	T10	T11	SuperSub	true	overgik	knuste
+Relation	T11	T10	SubSuper	true	knuste	overgik
+Relation	T25	T16	SuperSub	true	invasion	planlægning
+Relation	T16	T25	SubSuper	true	planlægning	invasion
+Relation	T25	T17	SuperSub	true	invasion	oplagring
+Relation	T17	T25	SubSuper	true	oplagring	invasion
+Relation	T25	T18	SuperSub	true	invasion	udskrivning
+Relation	T18	T25	SubSuper	true	udskrivning	invasion
+Relation	T0	T22	NoRel	true	begyndte	ødelagt
+Relation	T0	T25	NoRel	true	begyndte	invasion
+Relation	T10	T21	NoRel	true	overgik	graves
+Relation	T11	T1	NoRel	true	knuste	rejse
+Relation	T11	T14	NoRel	true	knuste	invasionen
+Relation	T11	T9	NoRel	true	knuste	marchere
+Relation	T12	T10	NoRel	true	gik	overgik
+Relation	T12	T22	NoRel	true	gik	ødelagt
+Relation	T12	T24	NoRel	true	gik	oprør
+Relation	T13	T15	NoRel	true	forberedelserne	krævede
+Relation	T13	T16	NoRel	true	forberedelserne	planlægning
+Relation	T13	T2	NoRel	true	forberedelserne	gjorde
+Relation	T13	T6	NoRel	true	forberedelserne	ekspeditionen
+Relation	T14	T16	NoRel	true	invasionen	planlægning
+Relation	T14	T19	NoRel	true	invasionen	besluttede
+Relation	T14	T22	NoRel	true	invasionen	ødelagt
+Relation	T14	T24	NoRel	true	invasionen	oprør
+Relation	T14	T25	NoRel	true	invasionen	invasion
+Relation	T15	T20	NoRel	true	krævede	bygges
+Relation	T15	T21	NoRel	true	krævede	graves
+Relation	T15	T5	NoRel	true	krævede	udsættelse
+Relation	T15	T6	NoRel	true	krævede	ekspeditionen
+Relation	T16	T13	NoRel	true	planlægning	forberedelserne
+Relation	T16	T18	NoRel	true	planlægning	udskrivning
+Relation	T16	T21	NoRel	true	planlægning	graves
+Relation	T17	T26	NoRel	true	oplagring	krydse over
+Relation	T18	T23	NoRel	true	udskrivning	pynt
+Relation	T18	T5	NoRel	true	udskrivning	udsættelse
+Relation	T19	T14	NoRel	true	besluttede	invasionen
+Relation	T19	T25	NoRel	true	besluttede	invasion
+Relation	T19	T8	NoRel	true	besluttede	forberedte
+Relation	T2	T16	NoRel	true	gjorde	planlægning
+Relation	T2	T17	NoRel	true	gjorde	oplagring
+Relation	T2	T19	NoRel	true	gjorde	besluttede
+Relation	T2	T21	NoRel	true	gjorde	graves
+Relation	T2	T8	NoRel	true	gjorde	forberedte
+Relation	T20	T12	NoRel	true	bygges	gik
+Relation	T20	T15	NoRel	true	bygges	krævede
+Relation	T20	T5	NoRel	true	bygges	udsættelse
+Relation	T21	T26	NoRel	true	graves	krydse over
+Relation	T21	T9	NoRel	true	graves	marchere
+Relation	T22	T9	NoRel	true	ødelagt	marchere
+Relation	T23	T18	NoRel	true	pynt	udskrivning
+Relation	T24	T11	NoRel	true	oprør	knuste
+Relation	T24	T20	NoRel	true	oprør	bygges
+Relation	T24	T3	NoRel	true	oprør	oprør
+Relation	T25	T11	NoRel	true	invasion	knuste
+Relation	T25	T26	NoRel	true	invasion	krydse over
+Relation	T25	T4	NoRel	true	invasion	betød
+Relation	T25	T7	NoRel	true	invasion	døde
+Relation	T3	T1	NoRel	true	oprør	rejse
+Relation	T3	T14	NoRel	true	oprør	invasionen
+Relation	T3	T20	NoRel	true	oprør	bygges
+Relation	T3	T6	NoRel	true	oprør	ekspeditionen
+Relation	T5	T16	NoRel	true	udsættelse	planlægning
+Relation	T6	T0	NoRel	true	ekspeditionen	begyndte
+Relation	T6	T20	NoRel	true	ekspeditionen	bygges
+Relation	T6	T22	NoRel	true	ekspeditionen	ødelagt
+Relation	T6	T24	NoRel	true	ekspeditionen	oprør
+Relation	T6	T4	NoRel	true	ekspeditionen	betød
+Relation	T8	T1	NoRel	true	forberedte	rejse
+Relation	T8	T25	NoRel	true	forberedte	invasion
+Relation	T9	T12	NoRel	true	marchere	gik
+Relation	T9	T20	NoRel	true	marchere	bygges
+Relation	T9	T25	NoRel	true	marchere	invasion

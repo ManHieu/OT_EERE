@@ -1,0 +1,84 @@
+Text	WILMA KASIRGASI 16 - 27 Ekim 2005 tarihleri arasında etkinlik gösteren ve Atlantik havzasında kaydedilmiş en şiddetli kasırgadır .	2005 Atlantik kasırga mevsiminin 22. fırtınası ve 13. kasırgası olup Karayip Denizi'nde meydana gelen bir tropikal stresin güneye yönelmesiyle doğmuştur .	Kısa süre içinde gittikçe güçlenen ve 18 Ekim'de kasırgaya dönüşen Wilma'nın hızı düzeyine ulaşmıştır .	Kategori : 2005 Atlantik kasırga mevsimi Kategori : 2005' teki kasırgalar Kategori : 2005'te Meksika Kategori : 2005'te Florida Kategori : Meksika'daki kasırgalar Kategori : Belize'deki kasırgalar Kategori : Kanada'daki kasırgalar Kategori : Küba'daki kasırgalar Kategori : Haiti'deki kasırgalar Kategori : Honduras'taki kasırgalar Kategori : Jamaika'daki kasırgalar Kategori : Florida'daki kasırgalar Kategori : Cayman Adaları'ndaki kasırgalar Kategori : Bahamalar'daki kasırgalar Kategori : Atlantik kasırgaları	
+Event	T0	gösteren	EVENT	62
+Event	T1	kaydedilmiş	EVENT	94
+Event	T2	kasırgadır	EVENT	118
+Event	T3	fırtınası	EVENT	168
+Event	T4	stresin	EVENT	246
+Event	T5	doğmuştur	EVENT	274
+Event	T6	dönüşen	EVENT	345
+Event	T7	ulaşmıştır	EVENT	377
+Event	T9	yönelmesiyle	EVENT	261
+Event	T10	KASIRGASI	EVENT	6
+Event	T8	2005 Atlantik kasırga mevsimi	EVENT	401
+Event	T11	kasırgalar	EVENT	453
+Event	T12	kasırgalar	EVENT	542
+Event	T13	kasırgalar	EVENT	576
+Event	T14	kasırgalar	EVENT	610
+Event	T15	kasırgalar	EVENT	642
+Event	T16	kasırgalar	EVENT	675
+Event	T17	kasırgalar	EVENT	711
+Event	T18	kasırgalar	EVENT	746
+Event	T19	kasırgalar	EVENT	781
+Event	T20	kasırgalar	EVENT	824
+Event	T21	kasırgalar	EVENT	861
+Event	T22	kasırgaları	EVENT	892
+Relation	T4	T9	CauseEffect	true	stresin	yönelmesiyle
+Relation	T9	T4	EffectCause	true	yönelmesiyle	stresin
+Relation	T9	T10	CauseEffect	true	yönelmesiyle	KASIRGASI
+Relation	T10	T9	EffectCause	true	KASIRGASI	yönelmesiyle
+Relation	T9	T5	CauseEffect	true	yönelmesiyle	doğmuştur
+Relation	T5	T9	EffectCause	true	doğmuştur	yönelmesiyle
+Relation	T0	T15	NoRel	true	gösteren	kasırgalar
+Relation	T0	T4	NoRel	true	gösteren	stresin
+Relation	T0	T6	NoRel	true	gösteren	dönüşen
+Relation	T1	T12	NoRel	true	kaydedilmiş	kasırgalar
+Relation	T1	T19	NoRel	true	kaydedilmiş	kasırgalar
+Relation	T10	T19	NoRel	true	KASIRGASI	kasırgalar
+Relation	T10	T6	NoRel	true	KASIRGASI	dönüşen
+Relation	T11	T0	NoRel	true	kasırgalar	gösteren
+Relation	T11	T13	NoRel	true	kasırgalar	kasırgalar
+Relation	T11	T21	NoRel	true	kasırgalar	kasırgalar
+Relation	T11	T6	NoRel	true	kasırgalar	dönüşen
+Relation	T12	T13	NoRel	true	kasırgalar	kasırgalar
+Relation	T13	T12	NoRel	true	kasırgalar	kasırgalar
+Relation	T13	T16	NoRel	true	kasırgalar	kasırgalar
+Relation	T13	T2	NoRel	true	kasırgalar	kasırgadır
+Relation	T14	T21	NoRel	true	kasırgalar	kasırgalar
+Relation	T15	T13	NoRel	true	kasırgalar	kasırgalar
+Relation	T15	T6	NoRel	true	kasırgalar	dönüşen
+Relation	T16	T0	NoRel	true	kasırgalar	gösteren
+Relation	T16	T12	NoRel	true	kasırgalar	kasırgalar
+Relation	T16	T13	NoRel	true	kasırgalar	kasırgalar
+Relation	T16	T17	NoRel	true	kasırgalar	kasırgalar
+Relation	T16	T8	NoRel	true	kasırgalar	2005 Atlantik kasırga mevsimi
+Relation	T17	T9	NoRel	true	kasırgalar	yönelmesiyle
+Relation	T18	T17	NoRel	true	kasırgalar	kasırgalar
+Relation	T18	T6	NoRel	true	kasırgalar	dönüşen
+Relation	T18	T8	NoRel	true	kasırgalar	2005 Atlantik kasırga mevsimi
+Relation	T19	T15	NoRel	true	kasırgalar	kasırgalar
+Relation	T19	T5	NoRel	true	kasırgalar	doğmuştur
+Relation	T2	T16	NoRel	true	kasırgadır	kasırgalar
+Relation	T2	T19	NoRel	true	kasırgadır	kasırgalar
+Relation	T2	T7	NoRel	true	kasırgadır	ulaşmıştır
+Relation	T2	T8	NoRel	true	kasırgadır	2005 Atlantik kasırga mevsimi
+Relation	T20	T17	NoRel	true	kasırgalar	kasırgalar
+Relation	T20	T6	NoRel	true	kasırgalar	dönüşen
+Relation	T21	T2	NoRel	true	kasırgalar	kasırgadır
+Relation	T21	T3	NoRel	true	kasırgalar	fırtınası
+Relation	T21	T7	NoRel	true	kasırgalar	ulaşmıştır
+Relation	T22	T0	NoRel	true	kasırgaları	gösteren
+Relation	T22	T18	NoRel	true	kasırgaları	kasırgalar
+Relation	T3	T16	NoRel	true	fırtınası	kasırgalar
+Relation	T3	T20	NoRel	true	fırtınası	kasırgalar
+Relation	T4	T11	NoRel	true	stresin	kasırgalar
+Relation	T4	T18	NoRel	true	stresin	kasırgalar
+Relation	T4	T2	NoRel	true	stresin	kasırgadır
+Relation	T5	T17	NoRel	true	doğmuştur	kasırgalar
+Relation	T6	T0	NoRel	true	dönüşen	gösteren
+Relation	T6	T17	NoRel	true	dönüşen	kasırgalar
+Relation	T6	T22	NoRel	true	dönüşen	kasırgaları
+Relation	T6	T8	NoRel	true	dönüşen	2005 Atlantik kasırga mevsimi
+Relation	T7	T13	NoRel	true	ulaşmıştır	kasırgalar
+Relation	T7	T21	NoRel	true	ulaşmıştır	kasırgalar
+Relation	T9	T11	NoRel	true	yönelmesiyle	kasırgalar
+Relation	T9	T6	NoRel	true	yönelmesiyle	dönüşen

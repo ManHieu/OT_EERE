@@ -1,0 +1,25 @@
+Text	ان میں سے تقریباً صرف ایک ہزار زلزلے سائنسی آلات کے بغیر ہی انسان محسوس کر سکتا ہے ۔	کم و بیش سو زلزلے تباہ کن قسم کے ہوتے ہیں ۔	جبکہ سال میں ایک زلزلہ تو ایسا آتا ہے جسے بجا طور پر قیامت خیز کہا جاسکتا ہے ۔	سطح زمین پر آنے والے زلزلے تو ہزاروں مکانات اور بلند و بالا عمارتوں کو زمین بوس کردیتے ہیں مگر زیرِآب زلزلے ان سے کہیں زیادہ خطرناک ہوتے ہیں ۔	اے سے زلزلوں کے نتیجے میں سمندر کی لہریں بے قابو ہوجاتی ہیں اور کئی کئی سو فٹ اونچی سمندری لہریں ساحل کی جانب آسیب بن کر دوڑتی ہیں اور دیکھتے ہی دیکھتے پورے شہر کو ڈبو دیتی ہیں ۔
+Event	T0	محسوس	EVENT	66
+Event	T1	تباہ	EVENT	103
+Event	T2	زلزلہ	EVENT	146
+Event	T3	آتا	EVENT	160
+Event	T4	کہا	EVENT	192
+Event	T5	آنے	EVENT	220
+Event	T6	زلزلے	EVENT	229
+Event	T7	کردیتے	EVENT	288
+Event	T8	زلزلے	EVENT	310
+Event	T9	زلزلوں	EVENT	357
+Event	T10	دوڑتی	EVENT	472
+Event	T11	دیتی	EVENT	519
+Event	T12	زلزلے	EVENT	97
+Relation	T6	T7	CauseEffect	true	زلزلے	کردیتے
+Relation	T7	T6	EffectCause	true	کردیتے	زلزلے
+Relation	T1	T0	NoRel	true	تباہ	محسوس
+Relation	T11	T3	NoRel	true	دیتی	آتا
+Relation	T11	T6	NoRel	true	دیتی	زلزلے
+Relation	T4	T0	NoRel	true	کہا	محسوس
+Relation	T4	T9	NoRel	true	کہا	زلزلوں
+Relation	T5	T11	NoRel	true	آنے	دیتی
+Relation	T7	T10	NoRel	true	کردیتے	دوڑتی
+Relation	T7	T4	NoRel	true	کردیتے	کہا
+Relation	T8	T5	NoRel	true	زلزلے	آنے

@@ -1,0 +1,62 @@
+Text	Un resumen técnico para conmemorar los 12 meses desde la tragedia ( 02 /2012 ) puso de manifiesto que el avión tenía un problema en el componente de control del motor n.º 2 que estaba dando hasta un cinco por ciento más de potencia que el motor n.º 1 .	El AAIU registró anomalías en la potencia que daban los dos motores hasta ocho segundos antes de que el avión golpeara el suelo .	El AAIU dijo que también se encontró una anomalía en la presión y los sensores de temperatura del motor n.º 2 que ayudaban a regular el control de combustible .	También se identificó una pérdida en la sección de los fuelles del motor que mantendría la temperatura por debajo de lo normal y que creó un flujo de combustible incorrecto .	La investigación sin embargo sigue abierta , y aún no se ha publicado el informe final .
+Event	T0	resumen	EVENT	3
+Event	T1	conmemorar	EVENT	24
+Event	T2	tragedia	EVENT	57
+Event	T3	puso	EVENT	79
+Event	T4	problema	EVENT	120
+Event	T5	dando	EVENT	184
+Event	T6	anomalías	EVENT	270
+Event	T7	daban	EVENT	299
+Event	T8	golpeara	EVENT	363
+Event	T9	dijo	EVENT	391
+Event	T10	encontró	EVENT	411
+Event	T11	anomalía	EVENT	424
+Event	T12	control	EVENT	519
+Event	T13	identificó	EVENT	555
+Event	T14	pérdida	EVENT	570
+Event	T15	creó	EVENT	677
+Event	T16	flujo	EVENT	685
+Event	T17	investigación	EVENT	722
+Event	T18	abierta	EVENT	754
+Relation	T4	T2	CauseEffect	true	problema	tragedia
+Relation	T2	T4	EffectCause	true	tragedia	problema
+Relation	T2	T17	CauseEffect	true	tragedia	investigación
+Relation	T17	T2	EffectCause	true	investigación	tragedia
+Relation	T0	T16	NoRel	true	resumen	flujo
+Relation	T1	T0	NoRel	true	conmemorar	resumen
+Relation	T1	T11	NoRel	true	conmemorar	anomalía
+Relation	T1	T15	NoRel	true	conmemorar	creó
+Relation	T1	T5	NoRel	true	conmemorar	dando
+Relation	T10	T1	NoRel	true	encontró	conmemorar
+Relation	T10	T2	NoRel	true	encontró	tragedia
+Relation	T10	T9	NoRel	true	encontró	dijo
+Relation	T11	T15	NoRel	true	anomalía	creó
+Relation	T11	T9	NoRel	true	anomalía	dijo
+Relation	T12	T13	NoRel	true	control	identificó
+Relation	T13	T10	NoRel	true	identificó	encontró
+Relation	T13	T16	NoRel	true	identificó	flujo
+Relation	T15	T10	NoRel	true	creó	encontró
+Relation	T15	T5	NoRel	true	creó	dando
+Relation	T15	T7	NoRel	true	creó	daban
+Relation	T16	T13	NoRel	true	flujo	identificó
+Relation	T16	T3	NoRel	true	flujo	puso
+Relation	T16	T7	NoRel	true	flujo	daban
+Relation	T17	T12	NoRel	true	investigación	control
+Relation	T17	T3	NoRel	true	investigación	puso
+Relation	T18	T1	NoRel	true	abierta	conmemorar
+Relation	T2	T14	NoRel	true	tragedia	pérdida
+Relation	T2	T8	NoRel	true	tragedia	golpeara
+Relation	T3	T13	NoRel	true	puso	identificó
+Relation	T4	T10	NoRel	true	problema	encontró
+Relation	T4	T13	NoRel	true	problema	identificó
+Relation	T5	T14	NoRel	true	dando	pérdida
+Relation	T6	T4	NoRel	true	anomalías	problema
+Relation	T6	T7	NoRel	true	anomalías	daban
+Relation	T6	T8	NoRel	true	anomalías	golpeara
+Relation	T7	T1	NoRel	true	daban	conmemorar
+Relation	T8	T16	NoRel	true	golpeara	flujo
+Relation	T8	T4	NoRel	true	golpeara	problema
+Relation	T8	T9	NoRel	true	golpeara	dijo
+Relation	T9	T1	NoRel	true	dijo	conmemorar
+Relation	T9	T14	NoRel	true	dijo	pérdida
+Relation	T9	T7	NoRel	true	dijo	daban

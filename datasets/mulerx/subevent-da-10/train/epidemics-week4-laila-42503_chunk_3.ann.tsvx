@@ -1,0 +1,30 @@
+Text	I september 2005 udgav WHO en fornyet udgave af dens pandemiplan fra 1999 .	Årsagen til denne nye udgave er den tiltagende globale spredning af fugleinfluenza af typen H5N1 .	Planen indeholder seks faser , der hver beskriver et stadie på vejen til en pandemi .	Alt efter hvordan smittesituationen ser ud globalt , bliver det tilhørende mål til den aktuelle fase søgt opfyldt .	+----------------------------------- +-----------------------------------+ | Fase | Mål | +=== ================ ================+= ================ ================ ==+ | FASE 1 Ingen nye influenzatyper |
+Event	T0	udgav	EVENT	17
+Event	T1	spredning	EVENT	131
+Event	T2	beskriver	EVENT	215
+Event	T3	pandemi	EVENT	251
+Event	T4	ser	EVENT	297
+Event	T5	opfyldt	EVENT	367
+Event	T6	pandemiplan	EVENT	53
+Event	T7	fugleinfluenza	EVENT	144
+Event	T8	tiltagende	EVENT	112
+Event	T9	faser	EVENT	198
+Event	T10	Planen	EVENT	175
+Event	T11	smittesituationen	EVENT	279
+Event	T12	mål	EVENT	336
+Event	T13	fase	EVENT	357
+Event	T14	fornyet udgave	EVENT	30
+Relation	T0	T8	NoRel	true	udgav	tiltagende
+Relation	T1	T14	NoRel	true	spredning	fornyet udgave
+Relation	T10	T2	NoRel	true	Planen	beskriver
+Relation	T11	T13	NoRel	true	smittesituationen	fase
+Relation	T11	T7	NoRel	true	smittesituationen	fugleinfluenza
+Relation	T13	T9	NoRel	true	fase	faser
+Relation	T4	T2	NoRel	true	ser	beskriver
+Relation	T4	T8	NoRel	true	ser	tiltagende
+Relation	T6	T12	NoRel	true	pandemiplan	mål
+Relation	T6	T14	NoRel	true	pandemiplan	fornyet udgave
+Relation	T6	T8	NoRel	true	pandemiplan	tiltagende
+Relation	T7	T0	NoRel	true	fugleinfluenza	udgav
+Relation	T9	T13	NoRel	true	faser	fase
+Relation	T9	T4	NoRel	true	faser	ser

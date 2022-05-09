@@ -1,0 +1,27 @@
+Text	El 5 de marzo de 2011 , un Antonov An-148 se estrelló en Garbuzovo , Región de Alxeevsky , Belgorod Oblast , Rusia , matando a los seis tripulantes que viajaban a bordo .	El avión estaba efectuando un vuelo de prueba antes de su entrega a la Fuerza Aérea de Myanmar .	Los testigos relataron que un ala se desprendió del avión en vuelo .	El avión accidentado fue un Antonov An-148-100E , c/n 41-03 , portando el registro de prueba 61708 .	El avión estaba operando su vuelo número 32 .
+Event	T0	estrelló	EVENT	45
+Event	T1	matando	EVENT	117
+Event	T2	efectuando	EVENT	187
+Event	T3	vuelo	EVENT	201
+Event	T6	relataron	EVENT	281
+Event	T7	desprendió	EVENT	305
+Event	T8	vuelo	EVENT	329
+Event	T9	accidentado	EVENT	346
+Event	T10	registro	EVENT	411
+Event	T11	operando	EVENT	454
+Event	T12	vuelo	EVENT	466
+Relation	T7	T6	SuperSub	true	desprendió	relataron
+Relation	T6	T7	SubSuper	true	relataron	desprendió
+Relation	T0	T1	NoRel	true	estrelló	matando
+Relation	T0	T8	NoRel	true	estrelló	vuelo
+Relation	T10	T2	NoRel	true	registro	efectuando
+Relation	T11	T8	NoRel	true	operando	vuelo
+Relation	T12	T1	NoRel	true	vuelo	matando
+Relation	T12	T11	NoRel	true	vuelo	operando
+Relation	T2	T10	NoRel	true	efectuando	registro
+Relation	T3	T10	NoRel	true	vuelo	registro
+Relation	T6	T1	NoRel	true	relataron	matando
+Relation	T6	T9	NoRel	true	relataron	accidentado
+Relation	T7	T2	NoRel	true	desprendió	efectuando
+Relation	T8	T12	NoRel	true	vuelo	vuelo
+Relation	T8	T7	NoRel	true	vuelo	desprendió

@@ -1,0 +1,62 @@
+Text	Depremin etkisiyle 2'si otel olmak üzere 25 bina yıkıldı .	23 Ekim'de meydana gelen deprem nedeniyle Van'da olan arama kurtarma ekiplerinin bir kısmı , binaların yıkıldığı bölgeye sevk edilirken ; daha önce kendi bölgelerine dönmüş arama kurtarma ekipleri de tekrar bölgeye gelerek arama kurtarma çalışmalarında bulunmuşlardır .	12 Kasım günü Afet ve Acil Durum Yönetimi Başkanlığı'ndan yapılan açıklamada ; 25 binanın yıkıldığı , 40 kişinin öldüğü ve 30 kişinin enkazlardan sağ kurtarıldığı bilgisi verilmiştir .	Depremde ölenlerden biri de Japon yardım görevlisi Prof. Dr. Atsushi Miyazaki'dir .	Van'da yaşayan binlerce insan bu depremden sonra bölgeyi terk etmiştir , kalanlar ise soğuk kış aylarını yazlık çadırlarda geçirmiştir Van valiliğinin gönüllülerle beraber yürüttüğü çalışmlar sayesinde ağır hasarlı birçok bina kayıt altına alınıp acil tedbir alınması için ilgili makamlara resmi olarak raporlanmıştır .
+Event	T0	yıkıldı	EVENT	49
+Event	T1	deprem	EVENT	84
+Event	T3	dönmüş	EVENT	225
+Event	T4	açıklamada	EVENT	395
+Event	T5	yıkıldığı	EVENT	419
+Event	T6	öldüğü	EVENT	442
+Event	T7	verilmiştir	EVENT	500
+Event	T8	depremden	EVENT	631
+Event	T9	etmiştir	EVENT	660
+Event	T10	geçirmiştir	EVENT	721
+Event	T11	çalışmlar	EVENT	780
+Event	T13	raporlanmıştır	EVENT	901
+Event	T2	gelerek	EVENT	274
+Event	T14	edilirken	EVENT	185
+Event	T15	bulunmuşlardır	EVENT	312
+Event	T16	kurtarıldığı	EVENT	479
+Event	T12	hasarlı	EVENT	805
+Event	T17	alınıp	EVENT	838
+Relation	T3	T2	CauseEffect	true	dönmüş	gelerek
+Relation	T2	T3	EffectCause	true	gelerek	dönmüş
+Relation	T1	T14	CauseEffect	true	deprem	edilirken
+Relation	T14	T1	EffectCause	true	edilirken	deprem
+Relation	T2	T15	CauseEffect	true	gelerek	bulunmuşlardır
+Relation	T15	T2	EffectCause	true	bulunmuşlardır	gelerek
+Relation	T1	T2	CauseEffect	true	deprem	gelerek
+Relation	T2	T1	EffectCause	true	gelerek	deprem
+Relation	T14	T16	CauseEffect	true	edilirken	kurtarıldığı
+Relation	T16	T14	EffectCause	true	kurtarıldığı	edilirken
+Relation	T15	T16	CauseEffect	true	bulunmuşlardır	kurtarıldığı
+Relation	T16	T15	EffectCause	true	kurtarıldığı	bulunmuşlardır
+Relation	T4	T7	CauseEffect	true	açıklamada	verilmiştir
+Relation	T7	T4	EffectCause	true	verilmiştir	açıklamada
+Relation	T12	T11	CauseEffect	true	hasarlı	çalışmlar
+Relation	T11	T12	EffectCause	true	çalışmlar	hasarlı
+Relation	T11	T17	CauseEffect	true	çalışmlar	alınıp
+Relation	T17	T11	EffectCause	true	alınıp	çalışmlar
+Relation	T17	T13	CauseEffect	true	alınıp	raporlanmıştır
+Relation	T13	T17	EffectCause	true	raporlanmıştır	alınıp
+Relation	T0	T12	NoRel	true	yıkıldı	hasarlı
+Relation	T0	T9	NoRel	true	yıkıldı	etmiştir
+Relation	T1	T3	NoRel	true	deprem	dönmüş
+Relation	T1	T9	NoRel	true	deprem	etmiştir
+Relation	T10	T6	NoRel	true	geçirmiştir	öldüğü
+Relation	T11	T3	NoRel	true	çalışmlar	dönmüş
+Relation	T14	T7	NoRel	true	edilirken	verilmiştir
+Relation	T14	T8	NoRel	true	edilirken	depremden
+Relation	T15	T6	NoRel	true	bulunmuşlardır	öldüğü
+Relation	T16	T7	NoRel	true	kurtarıldığı	verilmiştir
+Relation	T2	T7	NoRel	true	gelerek	verilmiştir
+Relation	T3	T13	NoRel	true	dönmüş	raporlanmıştır
+Relation	T4	T14	NoRel	true	açıklamada	edilirken
+Relation	T5	T14	NoRel	true	yıkıldığı	edilirken
+Relation	T5	T3	NoRel	true	yıkıldığı	dönmüş
+Relation	T5	T9	NoRel	true	yıkıldığı	etmiştir
+Relation	T6	T11	NoRel	true	öldüğü	çalışmlar
+Relation	T6	T15	NoRel	true	öldüğü	bulunmuşlardır
+Relation	T8	T0	NoRel	true	depremden	yıkıldı
+Relation	T8	T13	NoRel	true	depremden	raporlanmıştır
+Relation	T9	T12	NoRel	true	etmiştir	hasarlı
+Relation	T9	T4	NoRel	true	etmiştir	açıklamada
+Relation	T9	T8	NoRel	true	etmiştir	depremden

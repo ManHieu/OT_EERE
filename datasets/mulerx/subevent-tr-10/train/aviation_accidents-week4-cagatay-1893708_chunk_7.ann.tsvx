@@ -1,0 +1,93 @@
+Text	Polonya'da kendisinin tutulduğu yer daha sonraları Stare Kiejkuty olarak tespit edilmişti .	2006'da Uluslararası Kızılhaç Komitesi yetkililerine yaptığı açıklamaya göre eşofman giymiş , gözleri bağlanmış , başına bir başlık geçirilmiş , ses geçirmeyen kulaklık takılmış ve uçak yolculuğu sırasında sandalyeye oturtularak el ve ayak bileklerinden sandalyeye kelepçelenmişti .	Yine belirttiğine göre çıplak bir şekilde tahta duvarlı küçük bir hücreye konulmuş ve kendisini sorgulayan kişi tarafından sorgulayıcı , doktor ve psikolog tarafından 24 saat boyunca kameralarla izlendiği belirtilmişti .	Burada kendisine " 65 yaşın üzerinde , tamamı güçlü ve iyi eğitimli üç tecrübeli CIA ajanı önderliğinde , en sıkı sorgulama teknikleri"nin uygulandığını ve sorgulayıcıların kendisine " Washington'dan yeşil ışık " aldığını ve kendisini " zor zamanlar"ın beklediğini söylediğini ifade etti .	Sorgulayıcıların kendisini hiçbir zaman öldürmekle tehdit etmediğini de söyleyen Muhammed , yaklaşık bir ay boyunca elleri başının üstünde , ayakları ise yere kelepçeli bir şekilde ayakta durduğunu belirtmiş , uyuyakaldığında ise vücudunun tüm yükünün el bileklerine kaldığını ve bu yüzden açık yaralar oluştuğunu söylemişti .
+Event	T0	tutulduğu	EVENT	22
+Event	T1	takılmış	EVENT	261
+Event	T2	yolculuğu	EVENT	278
+Event	T3	kelepçelenmişti	EVENT	357
+Event	T4	belirttiğine	EVENT	380
+Event	T5	konulmuş	EVENT	449
+Event	T6	belirtilmişti	EVENT	580
+Event	T8	tehdit	EVENT	937
+Event	T9	belirtmiş	EVENT	1084
+Event	T10	söylemişti	EVENT	1200
+Event	T11	açıklamaya	EVENT	153
+Event	T12	giymiş	EVENT	177
+Event	T13	bağlanmış	EVENT	194
+Event	T14	geçirilmiş	EVENT	224
+Event	T15	izlendiği	EVENT	570
+Event	T16	sorgulama	EVENT	710
+Event	T17	uygulandığını	EVENT	735
+Event	T18	aldığını	EVENT	809
+Event	T19	söylediğini	EVENT	861
+Event	T7	ifade etti	EVENT	873
+Event	T20	oluştuğunu	EVENT	1189
+Event	T21	uyuyakaldığında	EVENT	1096
+Event	T22	kaldığını	EVENT	1153
+Relation	T2	T12	SuperSub	true	yolculuğu	giymiş
+Relation	T12	T2	SubSuper	true	giymiş	yolculuğu
+Relation	T2	T13	SuperSub	true	yolculuğu	bağlanmış
+Relation	T13	T2	SubSuper	true	bağlanmış	yolculuğu
+Relation	T2	T14	SuperSub	true	yolculuğu	geçirilmiş
+Relation	T14	T2	SubSuper	true	geçirilmiş	yolculuğu
+Relation	T2	T1	SuperSub	true	yolculuğu	takılmış
+Relation	T1	T2	SubSuper	true	takılmış	yolculuğu
+Relation	T2	T3	SuperSub	true	yolculuğu	kelepçelenmişti
+Relation	T3	T2	SubSuper	true	kelepçelenmişti	yolculuğu
+Relation	T0	T5	SuperSub	true	tutulduğu	konulmuş
+Relation	T5	T0	SubSuper	true	konulmuş	tutulduğu
+Relation	T0	T15	SuperSub	true	tutulduğu	izlendiği
+Relation	T15	T0	SubSuper	true	izlendiği	tutulduğu
+Relation	T0	T16	SuperSub	true	tutulduğu	sorgulama
+Relation	T16	T0	SubSuper	true	sorgulama	tutulduğu
+Relation	T0	T17	SuperSub	true	tutulduğu	uygulandığını
+Relation	T17	T0	SubSuper	true	uygulandığını	tutulduğu
+Relation	T0	T19	SuperSub	true	tutulduğu	söylediğini
+Relation	T19	T0	SubSuper	true	söylediğini	tutulduğu
+Relation	T0	T21	SuperSub	true	tutulduğu	uyuyakaldığında
+Relation	T21	T0	SubSuper	true	uyuyakaldığında	tutulduğu
+Relation	T0	T22	SuperSub	true	tutulduğu	kaldığını
+Relation	T22	T0	SubSuper	true	kaldığını	tutulduğu
+Relation	T0	T20	SuperSub	true	tutulduğu	oluştuğunu
+Relation	T20	T0	SubSuper	true	oluştuğunu	tutulduğu
+Relation	T1	T13	NoRel	true	takılmış	bağlanmış
+Relation	T1	T20	NoRel	true	takılmış	oluştuğunu
+Relation	T10	T16	NoRel	true	söylemişti	sorgulama
+Relation	T10	T22	NoRel	true	söylemişti	kaldığını
+Relation	T11	T19	NoRel	true	açıklamaya	söylediğini
+Relation	T12	T13	NoRel	true	giymiş	bağlanmış
+Relation	T12	T17	NoRel	true	giymiş	uygulandığını
+Relation	T12	T20	NoRel	true	giymiş	oluştuğunu
+Relation	T13	T0	NoRel	true	bağlanmış	tutulduğu
+Relation	T14	T17	NoRel	true	geçirilmiş	uygulandığını
+Relation	T14	T22	NoRel	true	geçirilmiş	kaldığını
+Relation	T14	T3	NoRel	true	geçirilmiş	kelepçelenmişti
+Relation	T14	T9	NoRel	true	geçirilmiş	belirtmiş
+Relation	T15	T18	NoRel	true	izlendiği	aldığını
+Relation	T16	T18	NoRel	true	sorgulama	aldığını
+Relation	T16	T9	NoRel	true	sorgulama	belirtmiş
+Relation	T17	T9	NoRel	true	uygulandığını	belirtmiş
+Relation	T18	T1	NoRel	true	aldığını	takılmış
+Relation	T18	T2	NoRel	true	aldığını	yolculuğu
+Relation	T18	T7	NoRel	true	aldığını	ifade etti
+Relation	T18	T9	NoRel	true	aldığını	belirtmiş
+Relation	T2	T17	NoRel	true	yolculuğu	uygulandığını
+Relation	T2	T19	NoRel	true	yolculuğu	söylediğini
+Relation	T2	T6	NoRel	true	yolculuğu	belirtilmişti
+Relation	T20	T15	NoRel	true	oluştuğunu	izlendiği
+Relation	T21	T14	NoRel	true	uyuyakaldığında	geçirilmiş
+Relation	T21	T6	NoRel	true	uyuyakaldığında	belirtilmişti
+Relation	T22	T20	NoRel	true	kaldığını	oluştuğunu
+Relation	T22	T7	NoRel	true	kaldığını	ifade etti
+Relation	T3	T13	NoRel	true	kelepçelenmişti	bağlanmış
+Relation	T3	T15	NoRel	true	kelepçelenmişti	izlendiği
+Relation	T5	T13	NoRel	true	konulmuş	bağlanmış
+Relation	T5	T18	NoRel	true	konulmuş	aldığını
+Relation	T6	T11	NoRel	true	belirtilmişti	açıklamaya
+Relation	T6	T19	NoRel	true	belirtilmişti	söylediğini
+Relation	T7	T22	NoRel	true	ifade etti	kaldığını
+Relation	T7	T8	NoRel	true	ifade etti	tehdit
+Relation	T8	T1	NoRel	true	tehdit	takılmış
+Relation	T8	T12	NoRel	true	tehdit	giymiş
+Relation	T8	T19	NoRel	true	tehdit	söylediğini
+Relation	T8	T21	NoRel	true	tehdit	uyuyakaldığında
+Relation	T9	T4	NoRel	true	belirtmiş	belirttiğine
+Relation	T9	T6	NoRel	true	belirtmiş	belirtilmişti

@@ -1,0 +1,33 @@
+Text	- ¿ 28? DE SEPTIEMBRE : Se produce el choque de dos trenes en la estación de Praia do Ribatejo con el balance de dos heridos .	- ¿ 28 ? DE OCTUBRE : el tren correo procedente de Badajoz descarrila cerca de Lisboa , saldándose el accidente con varios heridos .	- 30 DE OCTUBRE : un tren procedente de Oporto descarrila en la línea de circunvalación de Lisboa .	El accidente arroja un saldo de varios heridos .	- 5 DE NOVIEMBRE : Dos trenes chocan en la estación de Famalicão , línea del Miño , resultando heridas varias personas .
+Event	T0	produce	EVENT	27
+Event	T1	choque	EVENT	38
+Event	T2	balance	EVENT	102
+Event	T3	heridos	EVENT	117
+Event	T4	descarrila	EVENT	186
+Event	T5	saldándose	EVENT	215
+Event	T6	accidente	EVENT	229
+Event	T7	heridos	EVENT	250
+Event	T8	descarrila	EVENT	307
+Event	T9	arroja	EVENT	373
+Event	T10	saldo	EVENT	383
+Event	T11	heridos	EVENT	399
+Event	T12	chocan	EVENT	439
+Event	T13	heridas	EVENT	504
+Event	T14	accidente	EVENT	363
+Relation	T0	T9	NoRel	true	produce	arroja
+Relation	T1	T12	NoRel	true	choque	chocan
+Relation	T1	T9	NoRel	true	choque	arroja
+Relation	T14	T2	NoRel	true	accidente	balance
+Relation	T14	T3	NoRel	true	accidente	heridos
+Relation	T2	T13	NoRel	true	balance	heridas
+Relation	T3	T2	NoRel	true	heridos	balance
+Relation	T4	T10	NoRel	true	descarrila	saldo
+Relation	T4	T12	NoRel	true	descarrila	chocan
+Relation	T4	T13	NoRel	true	descarrila	heridas
+Relation	T4	T14	NoRel	true	descarrila	accidente
+Relation	T4	T8	NoRel	true	descarrila	descarrila
+Relation	T5	T6	NoRel	true	saldándose	accidente
+Relation	T8	T13	NoRel	true	descarrila	heridas
+Relation	T8	T4	NoRel	true	descarrila	descarrila
+Relation	T9	T14	NoRel	true	arroja	accidente
+Relation	T9	T7	NoRel	true	arroja	heridos

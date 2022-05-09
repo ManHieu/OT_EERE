@@ -1,0 +1,10 @@
+Text	1986 VRANCEA DEPREMI , 30 Ağustos 1986 tarihinde Romanya'nın orta bölümünde meydana geldi .	Deprem Richter Ölçeği ile 6.5 şiddetindeydi .	Kuzeyde Polonya'ya , güneyde ise İtalya ve Yunanistan'a kadar uzanan oldukça geniş bir bölgede hissedildi .	Depremin merkez üssünün , Bükreş'in 177 kilometre kuzeyinde , Vrancea ilçesinde , Vrancea Dağları'nda olduğu tespit edildi .	1977 yılında , bölgedeki bir başka güçlü depremle petrol sahaları patladı .
+Event	T0	DEPREMI	EVENT	13
+Event	T1	geldi	EVENT	84
+Event	T2	hissedildi	EVENT	233
+Event	T3	Depremin	EVENT	246
+Event	T4	edildi	EVENT	362
+Event	T5	depremle	EVENT	412
+Event	T6	patladı	EVENT	437
+Relation	T2	T6	NoRel	true	hissedildi	patladı
+Relation	T5	T4	NoRel	true	depremle	edildi

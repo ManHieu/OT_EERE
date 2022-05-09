@@ -1,0 +1,26 @@
+Text	En el cuarto día de la batalla dirigió un grupo de mujeres contra el ejército bizantino y derrotó a su comandante en jefe , siendo más tarde herida durante su lucha contra un soldado griego .	Khawlah era hija de uno de los jefes de la tribu Bani Assad .	Su familia estuvo entre las primeras en convertirse al islam .	El nombre de su padre era Malik o Tariq Bin Awse ; también conocido como al-Azwar .	Su talento apareció por primera vez durante la Batalla de Sanita-al-Uqab en 634 , luchando durante el asedio de Damasco , en que su hermano Zirrar ( o Deraar ) dirigía las fuerzas musulmanas y fue herido y hecho prisionero por el ejército bizantino .
+Event	T0	dirigió	EVENT	31
+Event	T1	derrotó	EVENT	90
+Event	T2	herida	EVENT	141
+Event	T3	lucha	EVENT	159
+Event	T4	apareció	EVENT	412
+Event	T6	luchando	EVENT	483
+Event	T7	asedio	EVENT	503
+Event	T8	dirigía	EVENT	561
+Event	T9	herido	EVENT	598
+Event	T10	prisionero	EVENT	613
+Event	T11	estuvo	EVENT	265
+Event	T5	Batalla de Sanita-al-Uqab	EVENT	448
+Relation	T9	T10	SuperSub	true	herido	prisionero
+Relation	T10	T9	SubSuper	true	prisionero	herido
+Relation	T0	T1	NoRel	true	dirigió	derrotó
+Relation	T0	T6	NoRel	true	dirigió	luchando
+Relation	T1	T3	NoRel	true	derrotó	lucha
+Relation	T1	T9	NoRel	true	derrotó	herido
+Relation	T10	T4	NoRel	true	prisionero	apareció
+Relation	T10	T6	NoRel	true	prisionero	luchando
+Relation	T2	T5	NoRel	true	herida	Batalla de Sanita-al-Uqab
+Relation	T5	T3	NoRel	true	Batalla de Sanita-al-Uqab	lucha
+Relation	T6	T0	NoRel	true	luchando	dirigió
+Relation	T7	T0	NoRel	true	asedio	dirigió
+Relation	T8	T10	NoRel	true	dirigía	prisionero

@@ -1,0 +1,47 @@
+Text	Deutsche Bank-bygningen , som lå tværs gennem Liberty Street , blev senere lukket på grund af de giftige forhold inde i bygningen .	Bydelen Manhattan Community Colleges Fiterman Hall på 30 West Broadway blev også lukket på grund af omfattende skader under terrorangrebet .	Lige efter angrebene mente medierne , at titusinder var blevet dræbt , eftersom der på en almindelig dag arbejdede omkring 50.000 mennesker i tårnene .	I sidste ende var det 2.750 dødsattester , der blev indgivet i forbindelse med angrebene .	Felicia Dunn-Jones blev talt med i det officielle dødstal i maj 2007 , hun døde fem måneder senere efter at hun havde døjet med dårlige lunger .
+Event	T0	lå	EVENT	30
+Event	T1	skader	EVENT	243
+Event	T2	terrorangrebet	EVENT	256
+Event	T3	mente	EVENT	294
+Event	T4	dræbt	EVENT	336
+Event	T5	arbejdede	EVENT	378
+Event	T6	dødsattester	EVENT	453
+Event	T7	indgivet	EVENT	477
+Event	T8	angrebene	EVENT	504
+Event	T9	dødstal	EVENT	566
+Event	T10	døde	EVENT	591
+Event	T11	lukket	EVENT	75
+Event	T12	giftige forhold	EVENT	97
+Event	T13	lukket	EVENT	213
+Relation	T12	T11	CauseEffect	true	giftige forhold	lukket
+Relation	T11	T12	EffectCause	true	lukket	giftige forhold
+Relation	T10	T9	CauseEffect	true	døde	dødstal
+Relation	T9	T10	EffectCause	true	dødstal	døde
+Relation	T10	T6	CauseEffect	true	døde	dødsattester
+Relation	T6	T10	EffectCause	true	dødsattester	døde
+Relation	T8	T6	CauseEffect	true	angrebene	dødsattester
+Relation	T6	T8	EffectCause	true	dødsattester	angrebene
+Relation	T1	T13	CauseEffect	true	skader	lukket
+Relation	T13	T1	EffectCause	true	lukket	skader
+Relation	T2	T1	CauseEffect	true	terrorangrebet	skader
+Relation	T1	T2	EffectCause	true	skader	terrorangrebet
+Relation	T2	T12	CauseEffect	true	terrorangrebet	giftige forhold
+Relation	T12	T2	EffectCause	true	giftige forhold	terrorangrebet
+Relation	T0	T3	NoRel	true	lå	mente
+Relation	T1	T0	NoRel	true	skader	lå
+Relation	T1	T12	NoRel	true	skader	giftige forhold
+Relation	T10	T0	NoRel	true	døde	lå
+Relation	T10	T3	NoRel	true	døde	mente
+Relation	T10	T4	NoRel	true	døde	dræbt
+Relation	T11	T13	NoRel	true	lukket	lukket
+Relation	T11	T7	NoRel	true	lukket	indgivet
+Relation	T11	T9	NoRel	true	lukket	dødstal
+Relation	T12	T0	NoRel	true	giftige forhold	lå
+Relation	T12	T6	NoRel	true	giftige forhold	dødsattester
+Relation	T2	T11	NoRel	true	terrorangrebet	lukket
+Relation	T2	T6	NoRel	true	terrorangrebet	dødsattester
+Relation	T3	T10	NoRel	true	mente	døde
+Relation	T3	T2	NoRel	true	mente	terrorangrebet
+Relation	T3	T7	NoRel	true	mente	indgivet
+Relation	T4	T10	NoRel	true	dræbt	døde
+Relation	T5	T13	NoRel	true	arbejdede	lukket

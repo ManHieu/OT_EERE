@@ -1,0 +1,44 @@
+Text	El VUELO 470 DE LAM AEROLÍNEAS DE MOZAMBIQUE era un vuelo de pasajeros programado del Aeropuerto Internacional de Maputo , Mozambique , que se estrelló en el parque nacional de Bwabwata en Namibia en el camino al Aeropuerto Internacional Quatro de Fevereiro , Angola .	La aeronave despegó a tiempo , pero no pudo llegar a su destino .	Los restos de la aeronave fueron encontrados al día siguiente , el 30 de noviembre de 2013 en el parque nacional de Bwabwata en al norte de Namibia , a medio camino entre su salida y el aeropuerto de su llegada prevista .	Todas las 33 personas , entre ellas 6 tripulantes , que estaban a bordo del avión murieron .	Se informó que el clima era malo en el momento del accidente con fuertes lluvias en las proximidades de la trayectoria de vuelo .
+Event	T0	VUELO	EVENT	3
+Event	T1	vuelo	EVENT	52
+Event	T2	programado	EVENT	71
+Event	T3	estrelló	EVENT	143
+Event	T4	despegó	EVENT	281
+Event	T5	llegar	EVENT	313
+Event	T6	restos	EVENT	339
+Event	T7	encontrados	EVENT	368
+Event	T8	salida	EVENT	509
+Event	T9	prevista	EVENT	546
+Event	T10	murieron	EVENT	639
+Event	T11	informó	EVENT	653
+Event	T12	accidente	EVENT	701
+Event	T13	lluvias	EVENT	723
+Event	T14	trayectoria	EVENT	757
+Event	T15	vuelo	EVENT	772
+Relation	T3	T10	CauseEffect	true	estrelló	murieron
+Relation	T10	T3	EffectCause	true	murieron	estrelló
+Relation	T0	T10	NoRel	true	VUELO	murieron
+Relation	T0	T5	NoRel	true	VUELO	llegar
+Relation	T10	T12	NoRel	true	murieron	accidente
+Relation	T10	T14	NoRel	true	murieron	trayectoria
+Relation	T10	T8	NoRel	true	murieron	salida
+Relation	T11	T6	NoRel	true	informó	restos
+Relation	T11	T9	NoRel	true	informó	prevista
+Relation	T12	T10	NoRel	true	accidente	murieron
+Relation	T13	T12	NoRel	true	lluvias	accidente
+Relation	T13	T3	NoRel	true	lluvias	estrelló
+Relation	T14	T1	NoRel	true	trayectoria	vuelo
+Relation	T14	T2	NoRel	true	trayectoria	programado
+Relation	T15	T11	NoRel	true	vuelo	informó
+Relation	T2	T15	NoRel	true	programado	vuelo
+Relation	T2	T6	NoRel	true	programado	restos
+Relation	T2	T8	NoRel	true	programado	salida
+Relation	T3	T13	NoRel	true	estrelló	lluvias
+Relation	T3	T4	NoRel	true	estrelló	despegó
+Relation	T4	T11	NoRel	true	despegó	informó
+Relation	T4	T2	NoRel	true	despegó	programado
+Relation	T6	T2	NoRel	true	restos	programado
+Relation	T7	T5	NoRel	true	encontrados	llegar
+Relation	T8	T13	NoRel	true	salida	lluvias
+Relation	T9	T3	NoRel	true	prevista	estrelló
+Relation	T9	T8	NoRel	true	prevista	salida

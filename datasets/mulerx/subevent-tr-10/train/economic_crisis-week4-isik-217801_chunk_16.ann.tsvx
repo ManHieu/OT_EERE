@@ -1,0 +1,16 @@
+Text	İnsanları tanıdığınızda , onlara karşı insan gibi davranırsınız " sözüyle , Yahudilerin Nazi Almanyası'nda insan sayılmaması fikrine karşı çıktığını belirtmiştir .	1967'de Schindler , İsrail'de Holokost kurbanlarına adanmış Yad Vaşem anıtında , Yahudi Soykırımı sırasında Yahudilere yardım eden ve Yahudi olmayanları belirten " diğer uluslardan adil kişiler " arasında belirtilmişti .	Bu anıtta ismi yer alanlar , çok büyük kişisel risk alarak Yahudileri kurtaran , Yahudi olmayan kişilerdir .	Schindler'in anısına Yad Vaşem Anıtında bir ağaç dikilmiştir .	Schindler'in , Holokost'tan kurtulan Poldek Pfefferberg tarafından anlatılan hikâyesi , Thomas Keneally'nin kitabı _ Schindler'in Gemisi _ romanının temelidir .
+Event	T0	belirtmiştir	EVENT	149
+Event	T1	belirtilmişti	EVENT	369
+Event	T2	dikilmiştir	EVENT	543
+Event	T3	kurtulan	EVENT	585
+Event	T4	hikâyesi	EVENT	634
+Event	T5	fikrine	EVENT	125
+Event	T6	Soykırımı	EVENT	252
+Event	T7	risk	EVENT	432
+Event	T8	kurtaran	EVENT	455
+Relation	T0	T3	NoRel	true	belirtmiştir	kurtulan
+Relation	T3	T7	NoRel	true	kurtulan	risk
+Relation	T5	T2	NoRel	true	fikrine	dikilmiştir
+Relation	T5	T3	NoRel	true	fikrine	kurtulan
+Relation	T8	T2	NoRel	true	kurtaran	dikilmiştir
+Relation	T8	T6	NoRel	true	kurtaran	Soykırımı

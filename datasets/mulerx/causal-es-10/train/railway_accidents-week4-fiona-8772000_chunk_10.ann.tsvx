@@ -1,0 +1,46 @@
+Text	En su video final , grabado y cargado horas antes de su muerte , explicó que recientemente había eliminado la mayoría de sus videos porque no deseaba " ensuciar " Internet .	A medida que los informes de su muerte aparecían en línea , fue conmemorado por los fanáticos en una serie de tributos publicados en las redes sociales .	Una modificación notable de TempleOS es Shrine , un software operativo basado en TempleOS con algunas modificaciones , como poder conectarse a Internet , algo que Davis decidió excluir de su software .	Categoría : Programadores de Estados Unidos Categoría : Alumnado de la Universidad Estatal de Arizona Categoría : Personas con esquizofrenia Categoría : Fallecidos por accidentes ferroviarios Categoría : Excatólicos Categoría : Conversos al cristianismo desde el ateísmo o agnosticismo Categoría : Nacidos en Wisconsin	
+Event	T0	grabado	EVENT	20
+Event	T1	cargado	EVENT	30
+Event	T2	muerte	EVENT	56
+Event	T3	explicó	EVENT	65
+Event	T4	eliminado	EVENT	97
+Event	T5	ensuciar	EVENT	152
+Event	T6	informes	EVENT	191
+Event	T7	aparecían	EVENT	213
+Event	T8	conmemorado	EVENT	238
+Event	T9	serie	EVENT	275
+Event	T10	publicados	EVENT	293
+Event	T11	modificación	EVENT	332
+Event	T12	modificaciones	EVENT	430
+Event	T13	excluir	EVENT	505
+Event	T14	Fallecidos	EVENT	683
+Event	T15	accidentes	EVENT	698
+Event	T16	Conversos	EVENT	758
+Event	T17	Nacidos	EVENT	828
+Relation	T0	T11	NoRel	true	grabado	modificación
+Relation	T1	T4	NoRel	true	cargado	eliminado
+Relation	T10	T0	NoRel	true	publicados	grabado
+Relation	T10	T7	NoRel	true	publicados	aparecían
+Relation	T12	T10	NoRel	true	modificaciones	publicados
+Relation	T12	T7	NoRel	true	modificaciones	aparecían
+Relation	T13	T7	NoRel	true	excluir	aparecían
+Relation	T13	T8	NoRel	true	excluir	conmemorado
+Relation	T14	T0	NoRel	true	Fallecidos	grabado
+Relation	T14	T10	NoRel	true	Fallecidos	publicados
+Relation	T15	T11	NoRel	true	accidentes	modificación
+Relation	T16	T11	NoRel	true	Conversos	modificación
+Relation	T16	T8	NoRel	true	Conversos	conmemorado
+Relation	T17	T1	NoRel	true	Nacidos	cargado
+Relation	T2	T3	NoRel	true	muerte	explicó
+Relation	T2	T9	NoRel	true	muerte	serie
+Relation	T3	T0	NoRel	true	explicó	grabado
+Relation	T4	T1	NoRel	true	eliminado	cargado
+Relation	T4	T5	NoRel	true	eliminado	ensuciar
+Relation	T4	T7	NoRel	true	eliminado	aparecían
+Relation	T6	T13	NoRel	true	informes	excluir
+Relation	T6	T4	NoRel	true	informes	eliminado
+Relation	T7	T2	NoRel	true	aparecían	muerte
+Relation	T8	T0	NoRel	true	conmemorado	grabado
+Relation	T8	T16	NoRel	true	conmemorado	Conversos
+Relation	T9	T1	NoRel	true	serie	cargado
+Relation	T9	T14	NoRel	true	serie	Fallecidos

@@ -1,0 +1,83 @@
+Text	The final STSB report on the accident , released on 28 January 2021 , indicated that the accident was caused by the two highly experienced pilots flying recklessly , disregarding regulations , who failed to anticipate expected turbulence and who failed to control the aircraft and prevent it from stalling and spinning into the ground .	The report also found that the aircraft was not airworthy at the time of flight , in that the engines were not producing their minimum rated power and that the company had a deficient safety culture of rule breaking .	The aircraft was flying from Locarno Airport to Dübendorf Air Base , on the return leg of a two - day trip .	The weather was unseasonably warm with choppy winds .	At 16:56 local time on 4 August ( 14:56 UTC ) , the Junkers crashed into Piz Segnas mountain , at an elevation of .
+Event	T0	report	EVENT	15
+Event	T1	accident	EVENT	29
+Event	T2	released	EVENT	40
+Event	T3	indicated	EVENT	70
+Event	T4	accident	EVENT	89
+Event	T5	caused	EVENT	102
+Event	T6	flying	EVENT	146
+Event	T7	disregarding	EVENT	166
+Event	T8	failed	EVENT	197
+Event	T9	turbulence	EVENT	227
+Event	T10	failed	EVENT	246
+Event	T11	control	EVENT	256
+Event	T12	stalling	EVENT	297
+Event	T13	found	EVENT	353
+Event	T14	flight	EVENT	410
+Event	T15	producing	EVENT	448
+Event	T16	breaking	EVENT	544
+Event	T17	flying	EVENT	572
+Event	T18	trip	EVENT	657
+Event	T19	winds	EVENT	710
+Event	T20	prevent	EVENT	281
+Event	T21	spinning	EVENT	310
+Event	T22	crashed	EVENT	778
+Relation	T0	T2	NoRel	true	report	released
+Relation	T0	T20	NoRel	true	report	prevent
+Relation	T0	T5	NoRel	true	report	caused
+Relation	T1	T21	NoRel	true	accident	spinning
+Relation	T10	T15	NoRel	true	failed	producing
+Relation	T10	T16	NoRel	true	failed	breaking
+Relation	T11	T15	NoRel	true	control	producing
+Relation	T11	T4	NoRel	true	control	accident
+Relation	T12	T15	NoRel	true	stalling	producing
+Relation	T12	T3	NoRel	true	stalling	indicated
+Relation	T13	T14	NoRel	true	found	flight
+Relation	T13	T20	NoRel	true	found	prevent
+Relation	T14	T13	NoRel	true	flight	found
+Relation	T14	T2	NoRel	true	flight	released
+Relation	T14	T8	NoRel	true	flight	failed
+Relation	T15	T16	NoRel	true	producing	breaking
+Relation	T16	T14	NoRel	true	breaking	flight
+Relation	T16	T2	NoRel	true	breaking	released
+Relation	T17	T1	NoRel	true	flying	accident
+Relation	T17	T13	NoRel	true	flying	found
+Relation	T18	T16	NoRel	true	trip	breaking
+Relation	T18	T8	NoRel	true	trip	failed
+Relation	T19	T11	NoRel	true	winds	control
+Relation	T19	T13	NoRel	true	winds	found
+Relation	T19	T18	NoRel	true	winds	trip
+Relation	T19	T21	NoRel	true	winds	spinning
+Relation	T2	T7	NoRel	true	released	disregarding
+Relation	T2	T8	NoRel	true	released	failed
+Relation	T20	T1	NoRel	true	prevent	accident
+Relation	T20	T14	NoRel	true	prevent	flight
+Relation	T20	T18	NoRel	true	prevent	trip
+Relation	T21	T22	NoRel	true	spinning	crashed
+Relation	T21	T7	NoRel	true	spinning	disregarding
+Relation	T22	T21	NoRel	true	crashed	spinning
+Relation	T3	T17	NoRel	true	indicated	flying
+Relation	T3	T6	NoRel	true	indicated	flying
+Relation	T3	T8	NoRel	true	indicated	failed
+Relation	T4	T10	NoRel	true	accident	failed
+Relation	T4	T5	NoRel	true	accident	caused
+Relation	T4	T6	NoRel	true	accident	flying
+Relation	T4	T8	NoRel	true	accident	failed
+Relation	T4	T9	NoRel	true	accident	turbulence
+Relation	T5	T13	NoRel	true	caused	found
+Relation	T5	T22	NoRel	true	caused	crashed
+Relation	T5	T6	NoRel	true	caused	flying
+Relation	T6	T0	NoRel	true	flying	report
+Relation	T6	T12	NoRel	true	flying	stalling
+Relation	T6	T9	NoRel	true	flying	turbulence
+Relation	T7	T10	NoRel	true	disregarding	failed
+Relation	T7	T15	NoRel	true	disregarding	producing
+Relation	T8	T14	NoRel	true	failed	flight
+Relation	T8	T19	NoRel	true	failed	winds
+Relation	T8	T7	NoRel	true	failed	disregarding
+Relation	T9	T11	NoRel	true	turbulence	control
+Relation	T9	T12	NoRel	true	turbulence	stalling
+Relation	T9	T21	NoRel	true	turbulence	spinning
+Relation	T9	T3	NoRel	true	turbulence	indicated
+Relation	T9	T4	NoRel	true	turbulence	accident
+Relation	T9	T5	NoRel	true	turbulence	caused

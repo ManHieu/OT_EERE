@@ -1,0 +1,29 @@
+Text	لائن ایئر کے مطابق اس فلائٹ کا کپتان ایک بھارتی ہے جس نے لائن ایئر کے لیے سات سال سے زائد عرصہ تک پرواز کی تھی اور تقریباً 6،000 گھنٹوں سے زائد وقت پرواز میں گزارنے کا تجربہ تھا ، ان کے ساتھی پائلٹ ایک انڈونیشیائی تھے جنہیں 5،000 گھنٹوں سے زائد وقت پرواز میں گزارنے کا تجربہ تھا ۔	رپورٹ کے مطابق کئی سرکاری ملازم ، ریاست کے وزیر ، علاقائی پارلیمنٹ رہنما ، عوامی وکلا اور ججز سمیت کئی سرکاری اور کئی نجی تنظیموں کے افراد بھی اس جہاز میں سوار تھے ۔	اس جہاز میں دو غیر ملکی افراد شریک تھے ، جن میں ایک جہاز کا کپتان بھارتی شہری اور دوسرے اطالیہ کے سابق پیشہ ورانہ سائیکل سوار اینڈریا منفریڈی تھے ۔	زمرہ : 2018ء میں فضائی حادثات و واقعات زمرہ : اکتوبر 2018ء کی سرگرمیاں زمرہ : انڈونیشیا میں 2018ء زمرہ : انڈونیشیا میں 2018ء کی آفات زمرہ : انڈونیشیا میں ہوائی حادثات و واقعات زمرہ : بحیرہ جاوا زمرہ : تاریخ مغربی جاوا زمرہ : صفحات مع_گراف	
+Event	T0	پرواز	EVENT	148
+Event	T1	تجربہ	EVENT	168
+Event	T2	پرواز	EVENT	249
+Event	T4	تجربہ	EVENT	269
+Event	T5	رپورٹ	EVENT	281
+Event	T6	سوار	EVENT	436
+Event	T7	حادثات	EVENT	618
+Event	T8	واقعات	EVENT	627
+Event	T9	حادثات	EVENT	755
+Event	T10	واقعات	EVENT	764
+Event	T3	پرواز	EVENT	98
+Event	T11	شریک	EVENT	477
+Relation	T1	T11	NoRel	true	تجربہ	شریک
+Relation	T10	T5	NoRel	true	واقعات	رپورٹ
+Relation	T10	T9	NoRel	true	واقعات	حادثات
+Relation	T11	T6	NoRel	true	شریک	سوار
+Relation	T2	T11	NoRel	true	پرواز	شریک
+Relation	T3	T4	NoRel	true	پرواز	تجربہ
+Relation	T3	T7	NoRel	true	پرواز	حادثات
+Relation	T4	T1	NoRel	true	تجربہ	تجربہ
+Relation	T4	T10	NoRel	true	تجربہ	واقعات
+Relation	T4	T11	NoRel	true	تجربہ	شریک
+Relation	T4	T3	NoRel	true	تجربہ	پرواز
+Relation	T6	T1	NoRel	true	سوار	تجربہ
+Relation	T6	T11	NoRel	true	سوار	شریک
+Relation	T6	T5	NoRel	true	سوار	رپورٹ
+Relation	T7	T11	NoRel	true	حادثات	شریک
+Relation	T8	T10	NoRel	true	واقعات	واقعات

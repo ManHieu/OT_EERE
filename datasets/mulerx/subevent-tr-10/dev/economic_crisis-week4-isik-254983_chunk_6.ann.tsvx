@@ -1,0 +1,21 @@
+Text	Bu kararname , tarihçiler tarafından Almanya'da tek parti Nazi devletinin kurulmasında önemli adımlardan biri olarak kabul edilir .	1933'ün Mart ayında Etkinleştirilme Yasası'nı imzaladı .	Hindenburg , Hitler'in başarılarını gördükçe , Hitler'e giderek daha fazla güven kazandı .	Ayrıca 30 Haziran 1934'te ( Hitler'den önce kendisinin atadığı Şansölye Kurt von Schleicher'in öldürüldüğü ) Röhm darbesinin kanlı bir şekilde bastırılmasını onayladı ve bunun için Hitler'i tebrik etti .	Paul von Hindenburg 1933 sonbaharından itibaren sık sık hastalandı ve güncel politik olaylar üzerinde etkili olamadı .
+Event	T0	edilir	EVENT	123
+Event	T1	imzaladı	EVENT	178
+Event	T3	kazandı	EVENT	270
+Event	T4	öldürüldüğü	EVENT	375
+Event	T5	onayladı	EVENT	438
+Event	T6	etti	EVENT	477
+Event	T7	hastalandı	EVENT	540
+Event	T8	kararname	EVENT	3
+Event	T9	Yasası'nı	EVENT	168
+Event	T2	başarılarını	EVENT	212
+Event	T10	darbesinin	EVENT	394
+Relation	T0	T1	NoRel	true	edilir	imzaladı
+Relation	T1	T10	NoRel	true	imzaladı	darbesinin
+Relation	T10	T0	NoRel	true	darbesinin	edilir
+Relation	T3	T8	NoRel	true	kazandı	kararname
+Relation	T5	T2	NoRel	true	onayladı	başarılarını
+Relation	T5	T9	NoRel	true	onayladı	Yasası'nı
+Relation	T7	T6	NoRel	true	hastalandı	etti
+Relation	T7	T9	NoRel	true	hastalandı	Yasası'nı
+Relation	T9	T6	NoRel	true	Yasası'nı	etti

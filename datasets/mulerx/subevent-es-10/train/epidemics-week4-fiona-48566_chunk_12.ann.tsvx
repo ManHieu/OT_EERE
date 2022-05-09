@@ -1,0 +1,35 @@
+Text	Otra erupción de gripe aviaria en enero de 2005 afectó a 33 de 64 ciudades y provincias en Vietnam , llevando a la matanza de casi 1,2 millones de aves de corral .	Se cree que hasta 140 millones de aves pueden haber muerto o sido sacrificadas por la epidemia .	En Vietnam y Tailandia se han presentado casos aislados en los que se sospecha de transmisión del virus de humano a humano .	En un caso , la niña que recibió el virus de un ave estuvo al cuidado de su madre durante unos 5 días hasta que murió .	Poco después , la madre enfermó y murió también .
+Event	T0	erupción	EVENT	5
+Event	T1	afectó	EVENT	48
+Event	T2	llevando	EVENT	101
+Event	T3	matanza	EVENT	115
+Event	T4	cree	EVENT	167
+Event	T5	muerto	EVENT	216
+Event	T6	sacrificadas	EVENT	230
+Event	T7	epidemia	EVENT	250
+Event	T8	sospecha	EVENT	331
+Event	T9	transmisión	EVENT	343
+Event	T10	recibió	EVENT	411
+Event	T11	virus	EVENT	422
+Event	T12	murió	EVENT	498
+Event	T13	enfermó	EVENT	530
+Event	T14	murió	EVENT	540
+Relation	T10	T7	NoRel	true	recibió	epidemia
+Relation	T11	T0	NoRel	true	virus	erupción
+Relation	T11	T12	NoRel	true	virus	murió
+Relation	T11	T9	NoRel	true	virus	transmisión
+Relation	T12	T13	NoRel	true	murió	enfermó
+Relation	T13	T12	NoRel	true	enfermó	murió
+Relation	T14	T6	NoRel	true	murió	sacrificadas
+Relation	T14	T8	NoRel	true	murió	sospecha
+Relation	T14	T9	NoRel	true	murió	transmisión
+Relation	T3	T1	NoRel	true	matanza	afectó
+Relation	T3	T11	NoRel	true	matanza	virus
+Relation	T3	T6	NoRel	true	matanza	sacrificadas
+Relation	T4	T10	NoRel	true	cree	recibió
+Relation	T5	T6	NoRel	true	muerto	sacrificadas
+Relation	T6	T3	NoRel	true	sacrificadas	matanza
+Relation	T6	T8	NoRel	true	sacrificadas	sospecha
+Relation	T7	T11	NoRel	true	epidemia	virus
+Relation	T8	T5	NoRel	true	sospecha	muerto
+Relation	T9	T10	NoRel	true	transmisión	recibió

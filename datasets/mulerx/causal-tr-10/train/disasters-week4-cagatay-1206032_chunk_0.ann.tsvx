@@ -1,0 +1,39 @@
+Text	25 - 27 OCAK 2011 KUZEY AMERIKA KAR FIRTINASI , Orta - Atlantik'in kuzeydoğusunda oluşup kuzeydoğu ABD ve Kanada'nın bazı bölümlerini etkilemiş olan bir kar fırtınasıydı .	2010- 2011 kışında bölgeyi etkileyen üçüncü büyük kar fırtınasıydı , aynı bölgeleri etkileyen 8 - 13 Ocak Kuzey Amerika kar fırtınasından iki hafta ve Aralık 2010 Kuzey Amerika kar fırtınasından bir ay sonra gerçekleşti .	Fırtına sonucu iki kişi hayatını kaybetti , bu kişilerin ikisi de kar küreyicilerinin kendilerine çarpması sonucu öldü .	Saatte 3 ila 4 inç kar yağan Newark'ta 27 Ocak günü ölçülen kar kalınlığı yaklaşık 20 inçti .	Güney New Jersey'deki kar kalınlığı bölgesine göre değişti .
+Event	T1	etkilemiş	EVENT	134
+Event	T2	fırtınasıydı	EVENT	157
+Event	T3	fırtınasıydı	EVENT	226
+Event	T4	etkileyen	EVENT	256
+Event	T5	fırtınasından	EVENT	296
+Event	T6	fırtınasından	EVENT	353
+Event	T7	gerçekleşti	EVENT	380
+Event	T8	kaybetti	EVENT	427
+Event	T9	öldü	EVENT	508
+Event	T10	yağan	EVENT	538
+Event	T11	değişti	EVENT	660
+Event	T12	25 - 27 OCAK 2011 KUZEY AMERIKA KAR FIRTINASI	EVENT	0
+Event	T13	çarpması	EVENT	492
+Relation	T12	T4	CauseEffect	true	25 - 27 OCAK 2011 KUZEY AMERIKA KAR FIRTINASI	etkileyen
+Relation	T4	T12	EffectCause	true	etkileyen	25 - 27 OCAK 2011 KUZEY AMERIKA KAR FIRTINASI
+Relation	T12	T8	CauseEffect	true	25 - 27 OCAK 2011 KUZEY AMERIKA KAR FIRTINASI	kaybetti
+Relation	T8	T12	EffectCause	true	kaybetti	25 - 27 OCAK 2011 KUZEY AMERIKA KAR FIRTINASI
+Relation	T12	T13	CauseEffect	true	25 - 27 OCAK 2011 KUZEY AMERIKA KAR FIRTINASI	çarpması
+Relation	T13	T12	EffectCause	true	çarpması	25 - 27 OCAK 2011 KUZEY AMERIKA KAR FIRTINASI
+Relation	T13	T9	CauseEffect	true	çarpması	öldü
+Relation	T9	T13	EffectCause	true	öldü	çarpması
+Relation	T11	T4	NoRel	true	değişti	etkileyen
+Relation	T12	T2	NoRel	true	25 - 27 OCAK 2011 KUZEY AMERIKA KAR FIRTINASI	fırtınasıydı
+Relation	T13	T6	NoRel	true	çarpması	fırtınasından
+Relation	T13	T7	NoRel	true	çarpması	gerçekleşti
+Relation	T2	T8	NoRel	true	fırtınasıydı	kaybetti
+Relation	T2	T9	NoRel	true	fırtınasıydı	öldü
+Relation	T3	T11	NoRel	true	fırtınasıydı	değişti
+Relation	T3	T2	NoRel	true	fırtınasıydı	fırtınasıydı
+Relation	T3	T6	NoRel	true	fırtınasıydı	fırtınasından
+Relation	T4	T5	NoRel	true	etkileyen	fırtınasından
+Relation	T4	T8	NoRel	true	etkileyen	kaybetti
+Relation	T5	T1	NoRel	true	fırtınasından	etkilemiş
+Relation	T5	T10	NoRel	true	fırtınasından	yağan
+Relation	T6	T5	NoRel	true	fırtınasından	fırtınasından
+Relation	T8	T7	NoRel	true	kaybetti	gerçekleşti
+Relation	T9	T10	NoRel	true	öldü	yağan
+Relation	T9	T2	NoRel	true	öldü	fırtınasıydı

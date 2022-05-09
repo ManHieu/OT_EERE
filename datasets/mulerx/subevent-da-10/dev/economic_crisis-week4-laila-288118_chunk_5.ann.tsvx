@@ -1,0 +1,23 @@
+Text	- M20 : Modellen blev lanceret i 1920/21 og bragte for alvor Nilfisken ud i de danske hjem .	Motorstørrelsen var cirka 130 Watt .	- R40 : En opdatering af M20 , som fik indført fjederbelastede hægter mellem motorstykke og opsamlingsspand , som lettede tømning .	Motorstørrelsen blev øget lidt til 160 Watt , og modellen fik slange med gevindkobling af en type , som sætter ny standard og genbruges på den næste model .	- S50 /S55 : Det er den mest kendte af alle gamle Nilfisk modeller .
+Event	T0	lanceret	EVENT	22
+Event	T1	bragte	EVENT	44
+Event	T2	opdatering	EVENT	141
+Event	T3	indført	EVENT	169
+Event	T4	tømning	EVENT	252
+Event	T5	øget	EVENT	283
+Event	T6	fik	EVENT	320
+Event	T7	sætter	EVENT	366
+Event	T8	kendte	EVENT	448
+Relation	T0	T1	SuperSub	true	lanceret	bragte
+Relation	T1	T0	SubSuper	true	bragte	lanceret
+Relation	T7	T8	SuperSub	true	sætter	kendte
+Relation	T8	T7	SubSuper	true	kendte	sætter
+Relation	T1	T7	NoRel	true	bragte	sætter
+Relation	T4	T0	NoRel	true	tømning	lanceret
+Relation	T4	T6	NoRel	true	tømning	fik
+Relation	T6	T1	NoRel	true	fik	bragte
+Relation	T6	T2	NoRel	true	fik	opdatering
+Relation	T6	T3	NoRel	true	fik	indført
+Relation	T6	T5	NoRel	true	fik	øget
+Relation	T6	T7	NoRel	true	fik	sætter
+Relation	T8	T5	NoRel	true	kendte	øget

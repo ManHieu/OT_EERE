@@ -1,0 +1,48 @@
+Text	Alrededor de las 6:00 p._m. Lacava le pide a los dirigentes oficialistas en otro audio « rematar el carreteo de gente » para incrementar la participación .	El gobernador oficialista del estado Yaracuy , Julio León Heredia , llamó la atención a su equipo de trabajo y les ordenó buscar a quienes no hubiesen votado para llevarlos a los centros de votación aplicando cualquier método , ya que « en este momento la abstención está muy elevada » .	Durante las elecciones Leocenis García , líder del partido Prociudadanos , informó que atropelló a una mujer al salir de un centro de votación en La Florida , Caracas .	Explicó que la acompañó a la clínica La Florida y aseguró que no fue herida de gravedad .	Representantes del Partido Comunista de Venezuela denunciaron el allanamiento de la sede de su comando de campaña en el estado Zulia por funcionarios de la Guardia Nacional y la policía , sin mostrar orden de allanamiento , y de la detención de cuatro miembros del partido .
+Event	T0	pide	EVENT	38
+Event	T1	incrementar	EVENT	125
+Event	T2	participación	EVENT	140
+Event	T3	buscar	EVENT	278
+Event	T4	votado	EVENT	307
+Event	T5	abstención	EVENT	412
+Event	T6	elecciones	EVENT	456
+Event	T7	informó	EVENT	519
+Event	T8	atropelló	EVENT	531
+Event	T9	salir	EVENT	556
+Event	T10	votación	EVENT	578
+Event	T11	Explicó	EVENT	613
+Event	T12	acompañó	EVENT	628
+Event	T13	aseguró	EVENT	663
+Event	T14	herida	EVENT	682
+Event	T15	denunciaron	EVENT	753
+Event	T16	allanamiento	EVENT	768
+Event	T17	detención	EVENT	935
+Relation	T16	T15	CauseEffect	true	allanamiento	denunciaron
+Relation	T15	T16	EffectCause	true	denunciaron	allanamiento
+Relation	T17	T15	CauseEffect	true	detención	denunciaron
+Relation	T15	T17	EffectCause	true	denunciaron	detención
+Relation	T0	T12	NoRel	true	pide	acompañó
+Relation	T1	T12	NoRel	true	incrementar	acompañó
+Relation	T1	T17	NoRel	true	incrementar	detención
+Relation	T1	T7	NoRel	true	incrementar	informó
+Relation	T10	T0	NoRel	true	votación	pide
+Relation	T10	T4	NoRel	true	votación	votado
+Relation	T10	T9	NoRel	true	votación	salir
+Relation	T11	T13	NoRel	true	Explicó	aseguró
+Relation	T13	T12	NoRel	true	aseguró	acompañó
+Relation	T13	T17	NoRel	true	aseguró	detención
+Relation	T13	T3	NoRel	true	aseguró	buscar
+Relation	T14	T8	NoRel	true	herida	atropelló
+Relation	T14	T9	NoRel	true	herida	salir
+Relation	T15	T14	NoRel	true	denunciaron	herida
+Relation	T15	T2	NoRel	true	denunciaron	participación
+Relation	T15	T5	NoRel	true	denunciaron	abstención
+Relation	T16	T3	NoRel	true	allanamiento	buscar
+Relation	T2	T16	NoRel	true	participación	allanamiento
+Relation	T4	T10	NoRel	true	votado	votación
+Relation	T4	T15	NoRel	true	votado	denunciaron
+Relation	T5	T0	NoRel	true	abstención	pide
+Relation	T5	T11	NoRel	true	abstención	Explicó
+Relation	T5	T12	NoRel	true	abstención	acompañó
+Relation	T8	T1	NoRel	true	atropelló	incrementar
+Relation	T8	T14	NoRel	true	atropelló	herida

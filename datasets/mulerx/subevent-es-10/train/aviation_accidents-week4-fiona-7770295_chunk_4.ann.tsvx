@@ -1,0 +1,44 @@
+Text	El avión sobrepasó el final de la pista , atravesó la cerca perimetral , sufrió graves daños al cruzar una carretera y se detuvo en un campo de arroz cercano .	Se produjo un incendio alimentado por combustible , que no pudo ser alcanzado por los vehículos de extinción de incendios del aeropuerto .	Si bien la mayoría de los pasajeros pudieron escapar , varios pasajeros perecieron dentro del fuselaje en llamas .	El piloto , el capitán Muhammad Marwoto Komar , inicialmente afirmó que hubo una bajada repentina inmediatamente antes del aterrizaje del vuelo , y que las aletas del avión pueden haber funcionado mal .	El accidente fue investigado por el Comité Nacional de Seguridad del Transporte de Indonesia ( NTSC ) .
+Event	T0	sobrepasó	EVENT	9
+Event	T1	atravesó	EVENT	42
+Event	T2	daños	EVENT	87
+Event	T3	cruzar	EVENT	96
+Event	T4	detuvo	EVENT	122
+Event	T5	produjo	EVENT	163
+Event	T7	alcanzado	EVENT	228
+Event	T8	extinción	EVENT	259
+Event	T9	incendios	EVENT	272
+Event	T10	escapar	EVENT	344
+Event	T11	perecieron	EVENT	371
+Event	T12	afirmó	EVENT	475
+Event	T13	aterrizaje	EVENT	537
+Event	T15	funcionado	EVENT	600
+Event	T16	accidente	EVENT	620
+Event	T17	investigado	EVENT	634
+Event	T18	incendio	EVENT	174
+Event	T14	combustible	EVENT	198
+Relation	T16	T17	SuperSub	true	accidente	investigado
+Relation	T17	T16	SubSuper	true	investigado	accidente
+Relation	T1	T17	NoRel	true	atravesó	investigado
+Relation	T10	T8	NoRel	true	escapar	extinción
+Relation	T11	T14	NoRel	true	perecieron	combustible
+Relation	T13	T0	NoRel	true	aterrizaje	sobrepasó
+Relation	T13	T18	NoRel	true	aterrizaje	incendio
+Relation	T15	T18	NoRel	true	funcionado	incendio
+Relation	T16	T2	NoRel	true	accidente	daños
+Relation	T16	T9	NoRel	true	accidente	incendios
+Relation	T18	T12	NoRel	true	incendio	afirmó
+Relation	T18	T4	NoRel	true	incendio	detuvo
+Relation	T2	T12	NoRel	true	daños	afirmó
+Relation	T2	T3	NoRel	true	daños	cruzar
+Relation	T3	T11	NoRel	true	cruzar	perecieron
+Relation	T3	T12	NoRel	true	cruzar	afirmó
+Relation	T3	T14	NoRel	true	cruzar	combustible
+Relation	T3	T7	NoRel	true	cruzar	alcanzado
+Relation	T5	T1	NoRel	true	produjo	atravesó
+Relation	T5	T11	NoRel	true	produjo	perecieron
+Relation	T5	T14	NoRel	true	produjo	combustible
+Relation	T7	T10	NoRel	true	alcanzado	escapar
+Relation	T7	T17	NoRel	true	alcanzado	investigado
+Relation	T8	T14	NoRel	true	extinción	combustible
+Relation	T8	T4	NoRel	true	extinción	detuvo

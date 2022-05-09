@@ -1,0 +1,15 @@
+Text	- : AB Delegasyonu Twitter hesabından yaptığı açıklamada " AB Türkiye Delegasyonu olarak bugün gerçekleşen depremden etkilenen herkese geçmiş olsun dileklerimizi iletiyoruz .	Depremde yaşamını yitirenlerin ailelerine başsağlığı , yaralananlara acil şifalar diliyoruz .	AB , Türkiye'nin yanındadır .	" ifadelerini kullandı .	- : Azerbaycan devlet başkanı İlham Aliyev taziye mesajında " Sayın Cumhurbaşkanı , Sevgili kardeşim .
+Event	T0	etkilenen	EVENT	117
+Event	T2	diliyoruz	EVENT	257
+Event	T3	açıklamada	EVENT	46
+Event	T4	iletiyoruz	EVENT	162
+Event	T5	depremden	EVENT	107
+Event	T6	Depremde	EVENT	175
+Event	T1	yitirenlerin	EVENT	193
+Event	T7	yaralananlara	EVENT	230
+Relation	T1	T7	NoRel	true	yitirenlerin	yaralananlara
+Relation	T3	T4	NoRel	true	açıklamada	iletiyoruz
+Relation	T3	T7	NoRel	true	açıklamada	yaralananlara
+Relation	T4	T3	NoRel	true	iletiyoruz	açıklamada
+Relation	T5	T7	NoRel	true	depremden	yaralananlara
+Relation	T6	T4	NoRel	true	Depremde	iletiyoruz

@@ -1,0 +1,41 @@
+Text	Han reagerede på præsident Abraham Lincolns appel om frivillige ved krigens start og stod for rekrutteringen af 38th New York Infantry .	Han blev udpeget til regimentets første oberst .	Han førte regimentet i det Første slag ved Bull Run , og blev fungerende brigadechef for Brigadegeneral Orlando B. Willcox's brigade da denne blev såret i slaget .	Han kom næste gang i kamp i 1862 under Peninsula_kampagnen i brigadegeneral David B. Birneys brigade i 3. Korps .	Ward fortsatte med at klare sig godt i Nordlige Virginia kampagnen , og kom i kamp ved Andet Bull Run og Chantilly .
+Event	T0	reagerede	EVENT	4
+Event	T1	appel	EVENT	44
+Event	T2	start	EVENT	76
+Event	T3	stod	EVENT	85
+Event	T4	rekrutteringen	EVENT	94
+Event	T5	udpeget	EVENT	146
+Event	T6	førte	EVENT	190
+Event	T7	slag	EVENT	220
+Event	T8	såret	EVENT	333
+Event	T9	slaget	EVENT	341
+Event	T10	kamp	EVENT	371
+Event	T11	fortsatte	EVENT	469
+Event	T12	kamp	EVENT	542
+Event	T13	blev	EVENT	243
+Event	T14	Peninsula_kampagnen	EVENT	389
+Relation	T1	T0	CauseEffect	true	appel	reagerede
+Relation	T0	T1	EffectCause	true	reagerede	appel
+Relation	T5	T6	CauseEffect	true	udpeget	førte
+Relation	T6	T5	EffectCause	true	førte	udpeget
+Relation	T8	T13	CauseEffect	true	såret	blev
+Relation	T13	T8	EffectCause	true	blev	såret
+Relation	T1	T6	NoRel	true	appel	førte
+Relation	T10	T11	NoRel	true	kamp	fortsatte
+Relation	T11	T1	NoRel	true	fortsatte	appel
+Relation	T11	T2	NoRel	true	fortsatte	start
+Relation	T11	T4	NoRel	true	fortsatte	rekrutteringen
+Relation	T13	T14	NoRel	true	blev	Peninsula_kampagnen
+Relation	T3	T10	NoRel	true	stod	kamp
+Relation	T3	T8	NoRel	true	stod	såret
+Relation	T4	T13	NoRel	true	rekrutteringen	blev
+Relation	T4	T3	NoRel	true	rekrutteringen	stod
+Relation	T5	T8	NoRel	true	udpeget	såret
+Relation	T6	T0	NoRel	true	førte	reagerede
+Relation	T6	T11	NoRel	true	førte	fortsatte
+Relation	T6	T2	NoRel	true	førte	start
+Relation	T7	T1	NoRel	true	slag	appel
+Relation	T7	T3	NoRel	true	slag	stod
+Relation	T8	T12	NoRel	true	såret	kamp
+Relation	T9	T1	NoRel	true	slaget	appel
+Relation	T9	T11	NoRel	true	slaget	fortsatte

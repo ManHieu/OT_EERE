@@ -1,0 +1,43 @@
+Text	El Capitán notó que los motores no estaban produciendo suficiente potencia , así que decidió descender a una altura menor , como precaución .	Por desgracia , en ese momento el avión fue golpeado por una corriente de aire ascendente que lo hizo entrar en pérdida .	Finalmente , la tripulación no manejó la situación correctamente y no pudo recuperar el control de la aeronave a tiempo .	El capitán , confundido por el comportamiento inusual de sus motores , pensó que estaban lidiando con una falla de éstos y no con una situación de pérdida .	Las conclusiones del informe destacan que el avión “ se encontraba aeronavegable ” y la tripulación estaba “ apta ” para volar .
+Event	T0	produciendo	EVENT	43
+Event	T1	descender	EVENT	93
+Event	T2	golpeado	EVENT	186
+Event	T3	corriente	EVENT	203
+Event	T4	pérdida	EVENT	254
+Event	T5	manejó	EVENT	295
+Event	T6	situación	EVENT	305
+Event	T7	recuperar	EVENT	339
+Event	T8	control	EVENT	352
+Event	T9	confundido	EVENT	399
+Event	T10	lidiando	EVENT	475
+Event	T11	falla	EVENT	492
+Event	T12	situación	EVENT	520
+Event	T13	pérdida	EVENT	533
+Event	T14	conclusiones	EVENT	547
+Event	T15	destacan	EVENT	572
+Relation	T0	T1	CauseEffect	true	produciendo	descender
+Relation	T1	T0	EffectCause	true	descender	produciendo
+Relation	T2	T4	CauseEffect	true	golpeado	pérdida
+Relation	T4	T2	EffectCause	true	pérdida	golpeado
+Relation	T5	T7	CauseEffect	true	manejó	recuperar
+Relation	T7	T5	EffectCause	true	recuperar	manejó
+Relation	T0	T2	NoRel	true	produciendo	golpeado
+Relation	T1	T2	NoRel	true	descender	golpeado
+Relation	T10	T7	NoRel	true	lidiando	recuperar
+Relation	T11	T7	NoRel	true	falla	recuperar
+Relation	T12	T7	NoRel	true	situación	recuperar
+Relation	T12	T8	NoRel	true	situación	control
+Relation	T13	T6	NoRel	true	pérdida	situación
+Relation	T14	T7	NoRel	true	conclusiones	recuperar
+Relation	T15	T12	NoRel	true	destacan	situación
+Relation	T4	T3	NoRel	true	pérdida	corriente
+Relation	T5	T1	NoRel	true	manejó	descender
+Relation	T6	T0	NoRel	true	situación	produciendo
+Relation	T6	T10	NoRel	true	situación	lidiando
+Relation	T6	T5	NoRel	true	situación	manejó
+Relation	T7	T1	NoRel	true	recuperar	descender
+Relation	T7	T3	NoRel	true	recuperar	corriente
+Relation	T7	T9	NoRel	true	recuperar	confundido
+Relation	T8	T10	NoRel	true	control	lidiando
+Relation	T8	T13	NoRel	true	control	pérdida
+Relation	T9	T0	NoRel	true	confundido	produciendo

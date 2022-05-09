@@ -1,0 +1,65 @@
+Text	New York Times bragte den 25. marts en historie , hvori avisen citerede en unavngiven militærperson , der hævdes at være knyttet til efterforskningen , for at lydoptagelserne skulle vise , at den ene af flyets to piloter var lukket ude af cockpittet under flyets nedstigning .	Den 26. marts meddelte den franske anklagemyndighed på et pressemøde i Marseille , at andenpiloten bevidst havde styret flyet ned i Alperne .	Anklagemyndigheden byggede sin konklusion på , at andenpiloten var ved bevisthed og havde normalt åndedræt indtil styrtet , og idet der ingen anden forklaring er på hændelsesforløbet .	Den tyske avis Bild udtalte sig om , at 2. piloten angiveligt har lidt af større psykiske problemer , og var i medicinsk behandling .	- Current information - Germanwings - " Germanwings-A320-Absturz in Südfrankreich" - _ Der Spiegel _
+Event	T0	bragte	EVENT	15
+Event	T1	historie	EVENT	39
+Event	T2	citerede	EVENT	63
+Event	T3	hævdes	EVENT	106
+Event	T4	efterforskningen	EVENT	133
+Event	T5	lydoptagelserne	EVENT	159
+Event	T6	vise	EVENT	182
+Event	T7	lukket	EVENT	225
+Event	T8	nedstigning	EVENT	263
+Event	T9	meddelte	EVENT	291
+Event	T10	styret	EVENT	390
+Event	T11	byggede	EVENT	438
+Event	T12	konklusion	EVENT	450
+Event	T13	åndedræt	EVENT	517
+Event	T14	styrtet	EVENT	533
+Event	T15	forklaring	EVENT	567
+Event	T16	hændelsesforløbet	EVENT	584
+Event	T17	udtalte	EVENT	624
+Event	T18	behandling	EVENT	725
+Event	T19	bevisthed	EVENT	490
+Event	T20	problemer	EVENT	694
+Relation	T19	T12	CauseEffect	true	bevisthed	konklusion
+Relation	T12	T19	EffectCause	true	konklusion	bevisthed
+Relation	T13	T12	CauseEffect	true	åndedræt	konklusion
+Relation	T12	T13	EffectCause	true	konklusion	åndedræt
+Relation	T15	T12	CauseEffect	true	forklaring	konklusion
+Relation	T12	T15	EffectCause	true	konklusion	forklaring
+Relation	T20	T12	CauseEffect	true	problemer	konklusion
+Relation	T12	T20	EffectCause	true	konklusion	problemer
+Relation	T18	T20	CauseEffect	true	behandling	problemer
+Relation	T20	T18	EffectCause	true	problemer	behandling
+Relation	T0	T1	NoRel	true	bragte	historie
+Relation	T0	T12	NoRel	true	bragte	konklusion
+Relation	T0	T5	NoRel	true	bragte	lydoptagelserne
+Relation	T1	T13	NoRel	true	historie	åndedræt
+Relation	T10	T14	NoRel	true	styret	styrtet
+Relation	T10	T15	NoRel	true	styret	forklaring
+Relation	T10	T9	NoRel	true	styret	meddelte
+Relation	T11	T1	NoRel	true	byggede	historie
+Relation	T11	T13	NoRel	true	byggede	åndedræt
+Relation	T13	T19	NoRel	true	åndedræt	bevisthed
+Relation	T13	T9	NoRel	true	åndedræt	meddelte
+Relation	T14	T2	NoRel	true	styrtet	citerede
+Relation	T14	T4	NoRel	true	styrtet	efterforskningen
+Relation	T15	T10	NoRel	true	forklaring	styret
+Relation	T15	T3	NoRel	true	forklaring	hævdes
+Relation	T16	T1	NoRel	true	hændelsesforløbet	historie
+Relation	T16	T4	NoRel	true	hændelsesforløbet	efterforskningen
+Relation	T18	T12	NoRel	true	behandling	konklusion
+Relation	T18	T16	NoRel	true	behandling	hændelsesforløbet
+Relation	T19	T0	NoRel	true	bevisthed	bragte
+Relation	T19	T14	NoRel	true	bevisthed	styrtet
+Relation	T19	T2	NoRel	true	bevisthed	citerede
+Relation	T2	T13	NoRel	true	citerede	åndedræt
+Relation	T2	T3	NoRel	true	citerede	hævdes
+Relation	T20	T2	NoRel	true	problemer	citerede
+Relation	T3	T10	NoRel	true	hævdes	styret
+Relation	T3	T11	NoRel	true	hævdes	byggede
+Relation	T4	T12	NoRel	true	efterforskningen	konklusion
+Relation	T5	T1	NoRel	true	lydoptagelserne	historie
+Relation	T5	T14	NoRel	true	lydoptagelserne	styrtet
+Relation	T7	T1	NoRel	true	lukket	historie
+Relation	T8	T2	NoRel	true	nedstigning	citerede
+Relation	T9	T5	NoRel	true	meddelte	lydoptagelserne

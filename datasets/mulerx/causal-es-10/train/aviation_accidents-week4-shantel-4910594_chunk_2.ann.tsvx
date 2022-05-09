@@ -1,0 +1,20 @@
+Text	Categoría : Accidentes e incidentes aéreos en Guatemala Categoría : Accidentes e incidentes aéreos de 2008 Categoría : Guatemala en 2008 Categoría : Accidentes e incidentes de Cessna 208 Categoría : Accidentes e incidentes aéreos causados por fallo de motor				
+Event	T0	incidentes	EVENT	25
+Event	T1	Accidentes	EVENT	68
+Event	T2	incidentes	EVENT	81
+Event	T3	Accidentes	EVENT	149
+Event	T4	incidentes	EVENT	162
+Event	T5	Accidentes	EVENT	199
+Event	T6	incidentes	EVENT	212
+Event	T7	causados	EVENT	230
+Event	T8	fallo	EVENT	243
+Relation	T8	T5	CauseEffect	true	fallo	Accidentes
+Relation	T5	T8	EffectCause	true	Accidentes	fallo
+Relation	T2	T0	NoRel	true	incidentes	incidentes
+Relation	T2	T4	NoRel	true	incidentes	incidentes
+Relation	T3	T2	NoRel	true	Accidentes	incidentes
+Relation	T3	T5	NoRel	true	Accidentes	Accidentes
+Relation	T3	T8	NoRel	true	Accidentes	fallo
+Relation	T4	T1	NoRel	true	incidentes	Accidentes
+Relation	T6	T1	NoRel	true	incidentes	Accidentes
+Relation	T7	T4	NoRel	true	causados	incidentes

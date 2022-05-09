@@ -1,0 +1,21 @@
+Text	1943 ADAPAZARI - HENDEK DEPREMI 20 Haziran yerel saat ile 17.32'de meydana geldi .	336 can kaybına yol açan ve 6.6 M _ ( s ) büyüklüğünde meydana gelen deprem .	Mercalli şiddet ölçeğine göre en büyük şiddet IX ( Şiddetli ) olarak hissedildi .	Adapazarı - Hendek , 1943 Kategori : Adapazarı Kategori : Sakarya tarihi Adapazarı - Hendek depremi Adapazarı - Hendek	
+Event	T0	geldi	EVENT	75
+Event	T1	açan	EVENT	103
+Event	T2	deprem	EVENT	152
+Event	T3	şiddet	EVENT	200
+Event	T4	hissedildi	EVENT	230
+Event	T5	1943 ADAPAZARI - HENDEK DEPREMI	EVENT	0
+Event	T6	gelen	EVENT	146
+Event	T7	depremi	EVENT	335
+Relation	T5	T0	SuperSub	true	1943 ADAPAZARI - HENDEK DEPREMI	geldi
+Relation	T0	T5	SubSuper	true	geldi	1943 ADAPAZARI - HENDEK DEPREMI
+Relation	T5	T1	SuperSub	true	1943 ADAPAZARI - HENDEK DEPREMI	açan
+Relation	T1	T5	SubSuper	true	açan	1943 ADAPAZARI - HENDEK DEPREMI
+Relation	T5	T6	SuperSub	true	1943 ADAPAZARI - HENDEK DEPREMI	gelen
+Relation	T6	T5	SubSuper	true	gelen	1943 ADAPAZARI - HENDEK DEPREMI
+Relation	T5	T4	SuperSub	true	1943 ADAPAZARI - HENDEK DEPREMI	hissedildi
+Relation	T4	T5	SubSuper	true	hissedildi	1943 ADAPAZARI - HENDEK DEPREMI
+Relation	T1	T7	NoRel	true	açan	depremi
+Relation	T3	T4	NoRel	true	şiddet	hissedildi
+Relation	T6	T7	NoRel	true	gelen	depremi
+Relation	T7	T1	NoRel	true	depremi	açan

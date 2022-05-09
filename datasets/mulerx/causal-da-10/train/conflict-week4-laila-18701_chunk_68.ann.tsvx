@@ -1,0 +1,58 @@
+Text	på trods af sympati for socialismen , begyndte regeringen at indføre nationalisme blandt bønderne .	Dette blev gennemført ved at mindes og hylde revulotionens figurer og skabe antivestlige vægmalerier .	Blandt de kunstnere , der blev ansat til dette , var Diego Rivera , der havde et mexicansk nationalistisk og marxistiske skær i sine vægmalerier for regeringen .	På trods af et antivestlig og prosocialistisk regime , så separerede Obregón ikke den mexicanske økonomi fra udenlandske kapitalister , og han tillod frihandel med visse restriktioner .	Med hensyn til militæret , så var en af hans første skridt at inkorporere nogle af de personer , som havde kæmpet i revolutionen .
+Event	T0	gennemført	EVENT	111
+Event	T1	mindes	EVENT	129
+Event	T2	hylde	EVENT	139
+Event	T3	skabe	EVENT	170
+Event	T4	ansat	EVENT	234
+Event	T5	skær	EVENT	324
+Event	T6	separerede	EVENT	423
+Event	T7	restriktioner	EVENT	535
+Event	T8	kæmpet	EVENT	658
+Event	T9	indføre	EVENT	61
+Event	T10	sympati	EVENT	12
+Event	T11	socialismen	EVENT	24
+Event	T12	nationalisme	EVENT	69
+Event	T13	regime	EVENT	411
+Event	T14	frihandel	EVENT	515
+Event	T15	økonomi	EVENT	462
+Event	T16	skridt	EVENT	603
+Event	T17	inkorporere	EVENT	613
+Relation	T0	T10	NoRel	true	gennemført	sympati
+Relation	T0	T13	NoRel	true	gennemført	regime
+Relation	T0	T6	NoRel	true	gennemført	separerede
+Relation	T1	T14	NoRel	true	mindes	frihandel
+Relation	T10	T13	NoRel	true	sympati	regime
+Relation	T11	T15	NoRel	true	socialismen	økonomi
+Relation	T11	T3	NoRel	true	socialismen	skabe
+Relation	T12	T11	NoRel	true	nationalisme	socialismen
+Relation	T12	T15	NoRel	true	nationalisme	økonomi
+Relation	T12	T6	NoRel	true	nationalisme	separerede
+Relation	T13	T0	NoRel	true	regime	gennemført
+Relation	T13	T12	NoRel	true	regime	nationalisme
+Relation	T14	T15	NoRel	true	frihandel	økonomi
+Relation	T15	T3	NoRel	true	økonomi	skabe
+Relation	T15	T7	NoRel	true	økonomi	restriktioner
+Relation	T15	T8	NoRel	true	økonomi	kæmpet
+Relation	T16	T0	NoRel	true	skridt	gennemført
+Relation	T16	T1	NoRel	true	skridt	mindes
+Relation	T16	T12	NoRel	true	skridt	nationalisme
+Relation	T16	T17	NoRel	true	skridt	inkorporere
+Relation	T16	T3	NoRel	true	skridt	skabe
+Relation	T2	T13	NoRel	true	hylde	regime
+Relation	T3	T2	NoRel	true	skabe	hylde
+Relation	T4	T0	NoRel	true	ansat	gennemført
+Relation	T4	T15	NoRel	true	ansat	økonomi
+Relation	T4	T5	NoRel	true	ansat	skær
+Relation	T5	T3	NoRel	true	skær	skabe
+Relation	T6	T11	NoRel	true	separerede	socialismen
+Relation	T6	T14	NoRel	true	separerede	frihandel
+Relation	T6	T8	NoRel	true	separerede	kæmpet
+Relation	T7	T0	NoRel	true	restriktioner	gennemført
+Relation	T7	T10	NoRel	true	restriktioner	sympati
+Relation	T7	T13	NoRel	true	restriktioner	regime
+Relation	T7	T3	NoRel	true	restriktioner	skabe
+Relation	T7	T5	NoRel	true	restriktioner	skær
+Relation	T8	T12	NoRel	true	kæmpet	nationalisme
+Relation	T8	T6	NoRel	true	kæmpet	separerede
+Relation	T9	T10	NoRel	true	indføre	sympati
+Relation	T9	T12	NoRel	true	indføre	nationalisme

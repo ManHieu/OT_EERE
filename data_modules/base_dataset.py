@@ -11,7 +11,6 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModel
 import networkx as nx
 from data_modules.input_example import InputExample, InputFeatures
-from data_modules.utils.scratch_tokenizer import ScratchTokenizer
 from data_modules.utils.tools import mapping_subtok_id, padding
 
 
@@ -24,7 +23,6 @@ class BaseDataset(Dataset, ABC):
     def __init__(
         self,
         tokenizer: str,
-        scratch_tokenizer_file: str,
         encoder_model: str,
         data_dir: str,
         max_input_length: int,
@@ -34,8 +32,6 @@ class BaseDataset(Dataset, ABC):
         super().__init__()
 
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer)
-        self.scratch_tokenizer = ScratchTokenizer()
-        self.scratch_tokenizer.from_file(scratch_tokenizer_file)
         
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
         self.encoder.eval()
@@ -108,24 +104,25 @@ class BaseDataset(Dataset, ABC):
         if True:
             features = []
             for example in tqdm(self.examples, desc="Load features"):    
-                input_seq = " ".join(example.tokens)
+                input_seq = example.content
                 input_encoded = self.tokenizer(input_seq)
                 input_ids = input_encoded['input_ids']
                 input_attention_mask = input_encoded['attention_mask']
                 # input_presentation = self.get_doc_emb(input_ids, input_attention_mask)
-
-                _, input_token_ids = self.scratch_tokenizer.tokenize(example.tokens, tokenized=True)
-
                 subwords_no_space = []
                 for index, i in enumerate(input_ids):
                     r_token = self.tokenizer.decode([i])
-                    if r_token != ' ':
+                    r_token = r_token.replace('#', '')
+                    if r_token != ' ' and r_token != '':
                         if r_token[0] == ' ':
                             subwords_no_space.append(r_token[1:])
                         else:
                             subwords_no_space.append(r_token)
+                    else:
+                        subwords_no_space.append('<unk>')
                 
-                mapping = mapping_subtok_id(subwords_no_space[1:-1], example.tokens) # w/o <s>, </s> with RoBERTa
+                # print(subwords_no_space)
+                mapping = mapping_subtok_id(subwords_no_space[1:-1], example.tokens, input_seq) # w/o <s>, </s> with RoBERTa
 
                 dep_tree = nx.DiGraph()
                 for head, tail in zip(example.heads, list(range(len(example.tokens)))):
@@ -149,11 +146,11 @@ class BaseDataset(Dataset, ABC):
                     labels.append(label)
 
                     e1_tok_ids = relation.head.id
-                    assert relation.head.mention in ' '.join(example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1]), \
-                    f"{relation.head.mention} - {' '.join(example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1])}"
+                    if not all(tok in relation.head.mention for tok in example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1]):
+                        print(f"{relation.head.mention} - {example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1]}")
                     e2_tok_ids = relation.tail.id
-                    assert relation.tail.mention in ' '.join(example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1]), \
-                    f"{relation.tail.mention} - {' '.join(example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1])}"
+                    if not all(tok in relation.tail.mention for tok in example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1]):
+                        print(f"{relation.tail.mention} - {example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1]}")
                     trigger_poss = (e1_tok_ids, e2_tok_ids)
                     triggers.append(trigger_poss)
                     
@@ -165,7 +162,7 @@ class BaseDataset(Dataset, ABC):
                     
                 feature = InputFeatures(
                     input_ids=input_ids,
-                    input_token_ids=input_token_ids,
+                    input_token_ids=[],
                     input_attention_mask=input_attention_mask,
                     mapping=mapping,
                     labels=labels,
@@ -178,6 +175,8 @@ class BaseDataset(Dataset, ABC):
                     # input_presentation=input_presentation
                 )
                 features.append(feature)
+                # if len(features) > 16:
+                #     break
             # with open(featured_path, 'wb') as f:
             #     pickle.dump(features, f, pickle.HIGHEST_PROTOCOL)
             

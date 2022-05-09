@@ -1,0 +1,59 @@
+Text	Klokken 14:40 lokal tid den 11. september udsendte USA's forsvarsminister Donald Rumsfeld hurtige ordrer om at finde beviser for Iraks involvering .	NATO's Råd erklærede , at angrebene på USA blev anset for at være et angreb mod NATO-lande .	Efter et officielt besøg i USA af den australske premierminister John Howard på tidspunktet for angrebene påberåbte han en artikel i IV ANZUS traktat .	I kølvandet på angrebene meddelte Bush-administrationen , at der erklæredes krig mod terrorisme med det mål at retsforfølge Osama bin Laden og al-Qaeda samt forhindre fremkomsten af andre terrornetværk .	Disse mål skulle opnås ved økonomiske og militære sanktioner mod stater , som blev opfattet som husly til terrorister samt øget global overvågning og udveksling af efterretninger .
+Event	T0	udsendte	EVENT	42
+Event	T1	ordrer	EVENT	98
+Event	T2	involvering	EVENT	135
+Event	T3	erklærede	EVENT	160
+Event	T4	angrebene	EVENT	175
+Event	T5	anset	EVENT	197
+Event	T6	angreb	EVENT	218
+Event	T7	besøg	EVENT	261
+Event	T8	påberåbte	EVENT	348
+Event	T9	kølvandet	EVENT	396
+Event	T10	meddelte	EVENT	419
+Event	T11	krig	EVENT	470
+Event	T12	retsforfølge	EVENT	505
+Event	T13	fremkomsten	EVENT	561
+Event	T14	sanktioner	EVENT	648
+Event	T16	øget	EVENT	721
+Event	T17	overvågning	EVENT	733
+Event	T18	angrebene	EVENT	338
+Event	T15	husly	EVENT	694
+Event	T19	mål	EVENT	604
+Relation	T4	T6	CauseEffect	true	angrebene	angreb
+Relation	T6	T4	EffectCause	true	angreb	angrebene
+Relation	T18	T8	CauseEffect	true	angrebene	påberåbte
+Relation	T8	T18	EffectCause	true	påberåbte	angrebene
+Relation	T7	T8	CauseEffect	true	besøg	påberåbte
+Relation	T8	T7	EffectCause	true	påberåbte	besøg
+Relation	T4	T11	CauseEffect	true	angrebene	krig
+Relation	T11	T4	EffectCause	true	krig	angrebene
+Relation	T0	T17	NoRel	true	udsendte	overvågning
+Relation	T0	T3	NoRel	true	udsendte	erklærede
+Relation	T1	T15	NoRel	true	ordrer	husly
+Relation	T10	T3	NoRel	true	meddelte	erklærede
+Relation	T11	T14	NoRel	true	krig	sanktioner
+Relation	T13	T18	NoRel	true	fremkomsten	angrebene
+Relation	T13	T19	NoRel	true	fremkomsten	mål
+Relation	T13	T9	NoRel	true	fremkomsten	kølvandet
+Relation	T14	T0	NoRel	true	sanktioner	udsendte
+Relation	T14	T13	NoRel	true	sanktioner	fremkomsten
+Relation	T14	T18	NoRel	true	sanktioner	angrebene
+Relation	T14	T19	NoRel	true	sanktioner	mål
+Relation	T15	T0	NoRel	true	husly	udsendte
+Relation	T15	T18	NoRel	true	husly	angrebene
+Relation	T15	T2	NoRel	true	husly	involvering
+Relation	T17	T7	NoRel	true	overvågning	besøg
+Relation	T18	T12	NoRel	true	angrebene	retsforfølge
+Relation	T18	T9	NoRel	true	angrebene	kølvandet
+Relation	T19	T1	NoRel	true	mål	ordrer
+Relation	T19	T2	NoRel	true	mål	involvering
+Relation	T2	T8	NoRel	true	involvering	påberåbte
+Relation	T3	T2	NoRel	true	erklærede	involvering
+Relation	T4	T13	NoRel	true	angrebene	fremkomsten
+Relation	T4	T5	NoRel	true	angrebene	anset
+Relation	T6	T2	NoRel	true	angreb	involvering
+Relation	T7	T3	NoRel	true	besøg	erklærede
+Relation	T8	T14	NoRel	true	påberåbte	sanktioner
+Relation	T8	T9	NoRel	true	påberåbte	kølvandet
+Relation	T9	T1	NoRel	true	kølvandet	ordrer
+Relation	T9	T19	NoRel	true	kølvandet	mål

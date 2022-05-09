@@ -1,0 +1,83 @@
+Text	Jacinta se quedó aterrada por una visión del infierno supuestamente ocurrida en la tercera aparición .	Se quedó obcecada por la idea de salvar tantos pecadores como fuera posible a través de la penitencia y el sacrificio , como pedía la Virgen María .	Los tres niños , particularmente Jacinta y Francisco , practicaron mortificaciones y penitencias ; motivo por el cual es posible que los prolongados ayunos les hicieran adelgazar hasta el punto de que ambos hermanos sucumbieran a la epidemia de la gripe española que barrió Europa hacia 1918 .	Francisco murió de neumonía en casa el 4 de abril de 1919 a los diez años de edad mientras que Jacinta , que sufría de pleuresía y no podía ser anestesiada debido al mal estado de su corazón , fue asistida en varios hospitales , falleciendo finalmente el 20 de febrero de 1920 a los nueve años de edad .	[ La tumba de Francisco Marto en la basílica del Santuario de Fátima .
+Event	T0	aterrada	EVENT	17
+Event	T1	visión	EVENT	34
+Event	T2	ocurrida	EVENT	68
+Event	T3	aparición	EVENT	91
+Event	T4	obcecada	EVENT	112
+Event	T5	salvar	EVENT	136
+Event	T6	penitencia	EVENT	194
+Event	T7	sacrificio	EVENT	210
+Event	T8	pedía	EVENT	228
+Event	T9	mortificaciones	EVENT	319
+Event	T10	penitencias	EVENT	337
+Event	T11	ayunos	EVENT	401
+Event	T12	adelgazar	EVENT	421
+Event	T13	sucumbieran	EVENT	468
+Event	T14	epidemia	EVENT	485
+Event	T15	gripe	EVENT	500
+Event	T16	barrió	EVENT	519
+Event	T17	murió	EVENT	556
+Event	T18	neumonía	EVENT	565
+Event	T19	sufría	EVENT	655
+Event	T20	pleuresía	EVENT	665
+Event	T21	asistida	EVENT	743
+Event	T22	falleciendo	EVENT	775
+Event	T23	tumba	EVENT	855
+Relation	T1	T0	CauseEffect	true	visión	aterrada
+Relation	T0	T1	EffectCause	true	aterrada	visión
+Relation	T18	T17	CauseEffect	true	neumonía	murió
+Relation	T17	T18	EffectCause	true	murió	neumonía
+Relation	T0	T21	NoRel	true	aterrada	asistida
+Relation	T0	T22	NoRel	true	aterrada	falleciendo
+Relation	T0	T23	NoRel	true	aterrada	tumba
+Relation	T0	T4	NoRel	true	aterrada	obcecada
+Relation	T1	T17	NoRel	true	visión	murió
+Relation	T10	T13	NoRel	true	penitencias	sucumbieran
+Relation	T10	T2	NoRel	true	penitencias	ocurrida
+Relation	T10	T23	NoRel	true	penitencias	tumba
+Relation	T10	T4	NoRel	true	penitencias	obcecada
+Relation	T11	T1	NoRel	true	ayunos	visión
+Relation	T11	T16	NoRel	true	ayunos	barrió
+Relation	T11	T4	NoRel	true	ayunos	obcecada
+Relation	T12	T0	NoRel	true	adelgazar	aterrada
+Relation	T12	T16	NoRel	true	adelgazar	barrió
+Relation	T12	T17	NoRel	true	adelgazar	murió
+Relation	T12	T20	NoRel	true	adelgazar	pleuresía
+Relation	T13	T1	NoRel	true	sucumbieran	visión
+Relation	T14	T11	NoRel	true	epidemia	ayunos
+Relation	T15	T20	NoRel	true	gripe	pleuresía
+Relation	T15	T21	NoRel	true	gripe	asistida
+Relation	T15	T6	NoRel	true	gripe	penitencia
+Relation	T16	T17	NoRel	true	barrió	murió
+Relation	T16	T8	NoRel	true	barrió	pedía
+Relation	T17	T20	NoRel	true	murió	pleuresía
+Relation	T17	T8	NoRel	true	murió	pedía
+Relation	T19	T8	NoRel	true	sufría	pedía
+Relation	T2	T11	NoRel	true	ocurrida	ayunos
+Relation	T2	T22	NoRel	true	ocurrida	falleciendo
+Relation	T2	T6	NoRel	true	ocurrida	penitencia
+Relation	T20	T17	NoRel	true	pleuresía	murió
+Relation	T21	T10	NoRel	true	asistida	penitencias
+Relation	T21	T2	NoRel	true	asistida	ocurrida
+Relation	T21	T23	NoRel	true	asistida	tumba
+Relation	T21	T3	NoRel	true	asistida	aparición
+Relation	T22	T13	NoRel	true	falleciendo	sucumbieran
+Relation	T22	T15	NoRel	true	falleciendo	gripe
+Relation	T22	T6	NoRel	true	falleciendo	penitencia
+Relation	T23	T14	NoRel	true	tumba	epidemia
+Relation	T4	T18	NoRel	true	obcecada	neumonía
+Relation	T4	T2	NoRel	true	obcecada	ocurrida
+Relation	T5	T14	NoRel	true	salvar	epidemia
+Relation	T6	T13	NoRel	true	penitencia	sucumbieran
+Relation	T6	T4	NoRel	true	penitencia	obcecada
+Relation	T6	T5	NoRel	true	penitencia	salvar
+Relation	T7	T5	NoRel	true	sacrificio	salvar
+Relation	T8	T1	NoRel	true	pedía	visión
+Relation	T8	T16	NoRel	true	pedía	barrió
+Relation	T8	T3	NoRel	true	pedía	aparición
+Relation	T8	T5	NoRel	true	pedía	salvar
+Relation	T9	T1	NoRel	true	mortificaciones	visión
+Relation	T9	T11	NoRel	true	mortificaciones	ayunos
+Relation	T9	T16	NoRel	true	mortificaciones	barrió
+Relation	T9	T18	NoRel	true	mortificaciones	neumonía
+Relation	T9	T7	NoRel	true	mortificaciones	sacrificio

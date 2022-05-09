@@ -1,0 +1,35 @@
+Text	La distancia entre los aeropuertos de Santa Cruz de la Sierra y Medellín es de 2972 km , lo que excedía el alcance estándar del Avro RJ85 que operaba el vuelo , de 2962 km , alcance que desciende a 2130km ( 1150nm ) al operar al máximo de carga .	Poco más de 5.000 dólares – entre el valor del combustible y los derechos de aeropuerto – habría costado la parada técnica necesaria para evitar el accidente .	La controladora Yaneth Molina , quien fue la última en comunicarse con el piloto desde la torre de control del Aeropuerto de Rionegro , indicó en un comunicado que se sentía reconfortada por las muestras de apoyo que recibió .	« Por mi familia y por este trabajo que valoro y respeto puedo afirmar con absoluta certeza que de mi parte hice lo humanamente posible y lo técnicamente obligatorio para conservarle la vida a esos usuarios de transporte aéreo .	[ ... ] Lamentablemente mis esfuerzos resultaron infructuosos por las razones que son de todos ustedes conocidas .
+Event	T0	excedía	EVENT	96
+Event	T1	operaba	EVENT	142
+Event	T2	vuelo	EVENT	153
+Event	T3	desciende	EVENT	186
+Event	T4	operar	EVENT	219
+Event	T5	costado	EVENT	344
+Event	T6	parada	EVENT	355
+Event	T7	accidente	EVENT	395
+Event	T8	comunicarse	EVENT	462
+Event	T9	indicó	EVENT	543
+Event	T10	comunicado	EVENT	556
+Event	T11	reconfortada	EVENT	581
+Event	T12	muestras	EVENT	602
+Event	T13	recibió	EVENT	624
+Event	T14	trabajo	EVENT	662
+Event	T15	afirmar	EVENT	697
+Event	T16	hice	EVENT	742
+Relation	T12	T11	SuperSub	true	muestras	reconfortada
+Relation	T11	T12	SubSuper	true	reconfortada	muestras
+Relation	T0	T16	NoRel	true	excedía	hice
+Relation	T10	T12	NoRel	true	comunicado	muestras
+Relation	T10	T9	NoRel	true	comunicado	indicó
+Relation	T11	T4	NoRel	true	reconfortada	operar
+Relation	T12	T2	NoRel	true	muestras	vuelo
+Relation	T15	T2	NoRel	true	afirmar	vuelo
+Relation	T15	T5	NoRel	true	afirmar	costado
+Relation	T2	T14	NoRel	true	vuelo	trabajo
+Relation	T2	T6	NoRel	true	vuelo	parada
+Relation	T5	T9	NoRel	true	costado	indicó
+Relation	T6	T2	NoRel	true	parada	vuelo
+Relation	T6	T8	NoRel	true	parada	comunicarse
+Relation	T7	T14	NoRel	true	accidente	trabajo
+Relation	T7	T8	NoRel	true	accidente	comunicarse
+Relation	T8	T9	NoRel	true	comunicarse	indicó

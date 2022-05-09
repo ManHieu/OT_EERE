@@ -1,0 +1,44 @@
+Text	Reel kur değerlenme eğilimine girdi .	İthalatın hızla artması sonucunda dış açık kaygı verici boyutlarda büyümeye başladı .	Bu gelişmeler aktiflerinin önemli bir bölümü Hazine kağıtlarından oluşan bankaların likidite talebini arttırınca Kasım 2000 sonunda likidite sıkışıklığı had safhaya ulaştı .	Likidite krizi olarak da adlandırılan bu durum sonunda , Ekim'de % 39 olan gecelik faiz Kasım ayında % 95'e , Aralık ayında ise % 183'e kadar çıktı .	Ekonomik beklentilerin olumsuzlaştığı bir ortamda , Hazine'nin yüklü bir borç itfası öncesinde 19 Şubat 2001'de beklenmedik siyasi gerginlikler yaşandı .
+Event	T0	girdi	EVENT	30
+Event	T1	artması	EVENT	54
+Event	T2	başladı	EVENT	114
+Event	T3	arttırınca	EVENT	226
+Event	T4	ulaştı	EVENT	289
+Event	T5	krizi	EVENT	307
+Event	T6	durum	EVENT	339
+Event	T7	çıktı	EVENT	440
+Event	T8	itfası	EVENT	526
+Event	T10	değerlenme	EVENT	9
+Event	T11	gelişmeler	EVENT	127
+Event	T12	olumsuzlaştığı	EVENT	471
+Event	T13	gerginlikler	EVENT	579
+Relation	T1	T2	CauseEffect	true	artması	başladı
+Relation	T2	T1	EffectCause	true	başladı	artması
+Relation	T1	T10	CauseEffect	true	artması	değerlenme
+Relation	T10	T1	EffectCause	true	değerlenme	artması
+Relation	T11	T3	CauseEffect	true	gelişmeler	arttırınca
+Relation	T3	T11	EffectCause	true	arttırınca	gelişmeler
+Relation	T3	T4	CauseEffect	true	arttırınca	ulaştı
+Relation	T4	T3	EffectCause	true	ulaştı	arttırınca
+Relation	T5	T7	CauseEffect	true	krizi	çıktı
+Relation	T7	T5	EffectCause	true	çıktı	krizi
+Relation	T5	T12	CauseEffect	true	krizi	olumsuzlaştığı
+Relation	T12	T5	EffectCause	true	olumsuzlaştığı	krizi
+Relation	T12	T8	CauseEffect	true	olumsuzlaştığı	itfası
+Relation	T8	T12	EffectCause	true	itfası	olumsuzlaştığı
+Relation	T8	T13	CauseEffect	true	itfası	gerginlikler
+Relation	T13	T8	EffectCause	true	gerginlikler	itfası
+Relation	T1	T8	NoRel	true	artması	itfası
+Relation	T10	T11	NoRel	true	değerlenme	gelişmeler
+Relation	T10	T3	NoRel	true	değerlenme	arttırınca
+Relation	T11	T0	NoRel	true	gelişmeler	girdi
+Relation	T11	T1	NoRel	true	gelişmeler	artması
+Relation	T12	T3	NoRel	true	olumsuzlaştığı	arttırınca
+Relation	T13	T12	NoRel	true	gerginlikler	olumsuzlaştığı
+Relation	T13	T7	NoRel	true	gerginlikler	çıktı
+Relation	T2	T4	NoRel	true	başladı	ulaştı
+Relation	T5	T2	NoRel	true	krizi	başladı
+Relation	T6	T12	NoRel	true	durum	olumsuzlaştığı
+Relation	T6	T8	NoRel	true	durum	itfası
+Relation	T7	T2	NoRel	true	çıktı	başladı
+Relation	T8	T1	NoRel	true	itfası	artması

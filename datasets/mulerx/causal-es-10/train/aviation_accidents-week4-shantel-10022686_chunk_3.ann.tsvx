@@ -1,0 +1,24 @@
+Text	Anteriormente se desempeñó como piloto de la Marina de los Estados Unidos de 1991 a 2012 .	Los miembros de la tripulación de vuelo no fueron identificados públicamente .	El vuelo 1086 despegó del Aeropuerto Internacional Hartsfield-Jackson de Atlanta a las 8:45 a._m. EST , y estaba programado para aterrizar en el Aeropuerto LaGuardia a las 10:48 a._m .	El aeropuerto LaGuardia estaba bajo condiciones de nieve cayendo y niebla helada en el momento de la llegada , y el capitán supuestamente les dijo a los pasajeros que los problemas climáticos podrían causar un retraso .	Otro MD-88 de Delta Air Lines había aterrizado en la pista 13 unos tres minutos antes del vuelo 1086 .
+Event	T0	desempeñó	EVENT	17
+Event	T1	identificados	EVENT	141
+Event	T2	vuelo	EVENT	173
+Event	T3	despegó	EVENT	184
+Event	T4	programado	EVENT	283
+Event	T6	cayendo	EVENT	412
+Event	T7	llegada	EVENT	456
+Event	T8	dijo	EVENT	497
+Event	T9	causar	EVENT	555
+Event	T10	retraso	EVENT	565
+Event	T11	aterrizado	EVENT	611
+Event	T12	vuelo	EVENT	665
+Relation	T0	T11	NoRel	true	desempeñó	aterrizado
+Relation	T3	T12	NoRel	true	despegó	vuelo
+Relation	T3	T7	NoRel	true	despegó	llegada
+Relation	T4	T10	NoRel	true	programado	retraso
+Relation	T4	T6	NoRel	true	programado	cayendo
+Relation	T7	T10	NoRel	true	llegada	retraso
+Relation	T7	T2	NoRel	true	llegada	vuelo
+Relation	T8	T0	NoRel	true	dijo	desempeñó
+Relation	T8	T2	NoRel	true	dijo	vuelo
+Relation	T8	T4	NoRel	true	dijo	programado
+Relation	T9	T7	NoRel	true	causar	llegada

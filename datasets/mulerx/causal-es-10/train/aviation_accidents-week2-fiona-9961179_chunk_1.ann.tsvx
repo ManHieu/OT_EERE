@@ -1,0 +1,15 @@
+Text	El vuelo 251 era un vuelo regular de pasajeros doméstica del aeropuerto de Elizovo , en Petropavlovsk-Kamchatsky al aeropuerto de Palana en Palana , Rusia .	El vuelo partió de Petropavlovsk-Kamchatsky a las 12:57 hora local ( 00:57 UTC ) y debía aterrizar en Palana a las 15:05 hora local ( 03:05 UTC ) .	La aeronave pasó de manera segura por los centros de control de área y a las 14:09 fue trasladada al ATC del Distrito de Tigilsky , donde el capitán se comunicó con Palana para obtener información sobre las condiciones climáticas .	Al recibir la información meteorológica , el capitán recibió " coordenadas claras de la ruta " durante el Aproximación final .	El último contacto con la aeronave fue a las 14:50 hora local ( 02:50 UTC ) .
+Event	T0	vuelo	EVENT	3
+Event	T2	partió	EVENT	166
+Event	T3	aterrizar	EVENT	246
+Event	T4	pasó	EVENT	317
+Event	T5	control	EVENT	358
+Event	T6	trasladada	EVENT	392
+Event	T7	comunicó	EVENT	457
+Event	T8	recibir	EVENT	540
+Event	T9	contacto	EVENT	674
+Relation	T0	T4	NoRel	true	vuelo	pasó
+Relation	T2	T9	NoRel	true	partió	contacto
+Relation	T5	T0	NoRel	true	control	vuelo
+Relation	T9	T3	NoRel	true	contacto	aterrizar
+Relation	T9	T5	NoRel	true	contacto	control

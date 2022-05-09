@@ -1,0 +1,39 @@
+Text	Således fortæller en anekdote , at Margaret Thatcher smed hans værk _ The Constitution of Liberty _ på bordet til et ledelsesmøde i Conservative Party og erklærede " _ This is what we believe _ " – " _ Dette er hvad vi tror på _ " .	Hayek var en ledende kritiker af socialismen og kommunismen i 1900-tallet .	Hayek mente , at en hvilken som helst form for kollektivisme ikke kunne undgå at føre til andet end centralisering af magten omkring en enkelt person eller en lille elite .	I sin økonomiske teori byggede Hayek videre på ideer fra andre østrigske økonomer , herunder Ludwig von Mises arbejde under kalkulationsdebatten .	I _ Vejen til Trældom _ og i efterfølgende værker påstod Hayek , at en væsentlig forudsætning for et socialistisk samfund er en centralt planlagt økonomi og at planøkonomi altid vil føre til totalitarisme .
+Event	T0	fortæller	EVENT	8
+Event	T1	smed	EVENT	53
+Event	T2	føre	EVENT	390
+Event	T3	byggede	EVENT	505
+Event	T4	arbejde	EVENT	592
+Event	T5	påstod	EVENT	679
+Event	T6	tror	EVENT	219
+Event	T7	believe	EVENT	184
+Event	T8	kritiker	EVENT	254
+Event	T9	kollektivisme	EVENT	356
+Event	T10	centralisering	EVENT	409
+Event	T11	planøkonomi	EVENT	789
+Event	T12	totalitarisme	EVENT	820
+Event	T13	socialistisk	EVENT	730
+Event	T14	planlagt	EVENT	766
+Relation	T9	T10	CauseEffect	true	kollektivisme	centralisering
+Relation	T10	T9	EffectCause	true	centralisering	kollektivisme
+Relation	T11	T12	CauseEffect	true	planøkonomi	totalitarisme
+Relation	T12	T11	EffectCause	true	totalitarisme	planøkonomi
+Relation	T0	T10	NoRel	true	fortæller	centralisering
+Relation	T1	T7	NoRel	true	smed	believe
+Relation	T10	T1	NoRel	true	centralisering	smed
+Relation	T10	T2	NoRel	true	centralisering	føre
+Relation	T11	T13	NoRel	true	planøkonomi	socialistisk
+Relation	T12	T3	NoRel	true	totalitarisme	byggede
+Relation	T12	T9	NoRel	true	totalitarisme	kollektivisme
+Relation	T13	T2	NoRel	true	socialistisk	føre
+Relation	T13	T8	NoRel	true	socialistisk	kritiker
+Relation	T14	T8	NoRel	true	planlagt	kritiker
+Relation	T2	T3	NoRel	true	føre	byggede
+Relation	T2	T6	NoRel	true	føre	tror
+Relation	T3	T1	NoRel	true	byggede	smed
+Relation	T3	T11	NoRel	true	byggede	planøkonomi
+Relation	T4	T3	NoRel	true	arbejde	byggede
+Relation	T5	T9	NoRel	true	påstod	kollektivisme
+Relation	T6	T5	NoRel	true	tror	påstod
+Relation	T7	T8	NoRel	true	believe	kritiker
+Relation	T8	T0	NoRel	true	kritiker	fortæller

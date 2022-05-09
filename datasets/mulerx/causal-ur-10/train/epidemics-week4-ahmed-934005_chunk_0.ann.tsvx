@@ -1,0 +1,59 @@
+Text	نیپال میں کورونا وائرس کی وبا کے زمرے میں اکتوبر کے اوائل تک کورونا وائرس کے 98 , 617 معاملے اور 590 اموات کی خبروں کی تصدیق کی گئی ۔	ایسے میں کئی منفی پہلو بھی منظر عام پر آئے ، جن میں ملک میں ڈاکٹروں اور صحت سے جڑے ملازمین اور حفاظتی آلات کی کمی کافی نمایاں طور ذرائع ابلاغ میں چرچا کا موضوع بنے ۔	نیپال میں ڈاکٹروں اور نرسوں کو حفاظتی آلات کی کمی بہت متاثر کر رہی ہے ۔	کئی بار انہیں اس کے لیے خود انتظام کرنا ہوتا ہے ۔	کئی بار حفاظتی آلات کی کمی کی وجہ سے یہ لوگ گھنٹوں وہی ماسک ، فیس شیلڈ اور دستانے گھنٹوں پہنے ہوتے ہیں ، اور چونکہ انہیں نکالنے کے بعد انہیں دوبارہ نہیں پہنا جاتا ، اس وجہ سے یہ دن دن بھر کچھ کھائے ، پیے اور بیت الخلا سے فارغ نہیں ہوتے ۔
+Event	T0	معاملے	EVENT	86
+Event	T1	اموات	EVENT	101
+Event	T2	خبروں	EVENT	110
+Event	T4	آئے	EVENT	173
+Event	T5	کمی	EVENT	244
+Event	T7	بنے	EVENT	294
+Event	T8	متاثر	EVENT	354
+Event	T9	انتظام	EVENT	400
+Event	T10	کمی	EVENT	445
+Event	T11	پہنے	EVENT	511
+Event	T12	نکالنے	EVENT	543
+Event	T13	وبا	EVENT	26
+Event	T3	تصدیق	EVENT	119
+Event	T6	کمی	EVENT	346
+Event	T14	پہنا	EVENT	575
+Event	T15	کھائے	EVENT	614
+Event	T16	پیے	EVENT	622
+Event	T17	فارغ	EVENT	643
+Relation	T13	T0	CauseEffect	true	وبا	معاملے
+Relation	T0	T13	EffectCause	true	معاملے	وبا
+Relation	T5	T7	CauseEffect	true	کمی	بنے
+Relation	T7	T5	EffectCause	true	بنے	کمی
+Relation	T6	T8	CauseEffect	true	کمی	متاثر
+Relation	T8	T6	EffectCause	true	متاثر	کمی
+Relation	T10	T11	CauseEffect	true	کمی	پہنے
+Relation	T11	T10	EffectCause	true	پہنے	کمی
+Relation	T14	T17	CauseEffect	true	پہنا	فارغ
+Relation	T17	T14	EffectCause	true	فارغ	پہنا
+Relation	T0	T14	NoRel	true	معاملے	پہنا
+Relation	T0	T15	NoRel	true	معاملے	کھائے
+Relation	T0	T4	NoRel	true	معاملے	آئے
+Relation	T1	T10	NoRel	true	اموات	کمی
+Relation	T1	T12	NoRel	true	اموات	نکالنے
+Relation	T1	T13	NoRel	true	اموات	وبا
+Relation	T1	T2	NoRel	true	اموات	خبروں
+Relation	T10	T14	NoRel	true	کمی	پہنا
+Relation	T11	T1	NoRel	true	پہنے	اموات
+Relation	T11	T4	NoRel	true	پہنے	آئے
+Relation	T11	T7	NoRel	true	پہنے	بنے
+Relation	T11	T8	NoRel	true	پہنے	متاثر
+Relation	T12	T10	NoRel	true	نکالنے	کمی
+Relation	T12	T8	NoRel	true	نکالنے	متاثر
+Relation	T15	T9	NoRel	true	کھائے	انتظام
+Relation	T17	T11	NoRel	true	فارغ	پہنے
+Relation	T17	T6	NoRel	true	فارغ	کمی
+Relation	T2	T6	NoRel	true	خبروں	کمی
+Relation	T2	T8	NoRel	true	خبروں	متاثر
+Relation	T3	T17	NoRel	true	تصدیق	فارغ
+Relation	T4	T11	NoRel	true	آئے	پہنے
+Relation	T5	T1	NoRel	true	کمی	اموات
+Relation	T5	T2	NoRel	true	کمی	خبروں
+Relation	T5	T9	NoRel	true	کمی	انتظام
+Relation	T6	T1	NoRel	true	کمی	اموات
+Relation	T6	T13	NoRel	true	کمی	وبا
+Relation	T6	T3	NoRel	true	کمی	تصدیق
+Relation	T6	T7	NoRel	true	کمی	بنے
+Relation	T8	T11	NoRel	true	متاثر	پہنے
+Relation	T8	T14	NoRel	true	متاثر	پہنا

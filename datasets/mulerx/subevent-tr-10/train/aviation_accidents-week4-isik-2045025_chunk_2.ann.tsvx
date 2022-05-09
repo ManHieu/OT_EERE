@@ -1,0 +1,26 @@
+Text	Diğer pilot sağ olarak Lazkiye'deki Rus üssüne ulaştırıldı .	Helikopterle pilotları arama sırasında muhalifler tarafından bir helikopter düşürüldü ve bir Rus deniz piyadesi vuruldu .	Düşen uçağın parçalarının etrafa savrulmasından dolayı Hatay'ın Yayladağı ilçesinde de iki Türk vatandaşının yaralanmasına sebebiyet verdi .	Rusya Savunma Bakanlığı ise uçağın Türk hava sahasını ihlal etmediği iddiasında bulundu .	ABD öncülüğünde IŞİD'e karşı yapılan Doğal Kararlılık Operasyonu'nun Sözcüsü Albay Steve Warren ise Rus uçağının sınır ihlaline karşı on defa uyarıldığını doğruladı .
+Event	T0	ulaştırıldı	EVENT	47
+Event	T1	arama	EVENT	84
+Event	T2	düşürüldü	EVENT	137
+Event	T3	vuruldu	EVENT	173
+Event	T4	Düşen	EVENT	183
+Event	T5	savrulmasından	EVENT	216
+Event	T6	verdi	EVENT	316
+Event	T7	bulundu	EVENT	404
+Event	T8	ihlaline	EVENT	533
+Event	T9	doğruladı	EVENT	569
+Event	T10	yaralanmasına	EVENT	292
+Event	T11	uyarıldığını	EVENT	556
+Event	T12	Doğal Kararlılık Operasyonu'nun	EVENT	451
+Relation	T10	T1	NoRel	true	yaralanmasına	arama
+Relation	T10	T2	NoRel	true	yaralanmasına	düşürüldü
+Relation	T10	T4	NoRel	true	yaralanmasına	Düşen
+Relation	T11	T8	NoRel	true	uyarıldığını	ihlaline
+Relation	T12	T5	NoRel	true	Doğal Kararlılık Operasyonu'nun	savrulmasından
+Relation	T12	T6	NoRel	true	Doğal Kararlılık Operasyonu'nun	verdi
+Relation	T2	T6	NoRel	true	düşürüldü	verdi
+Relation	T3	T2	NoRel	true	vuruldu	düşürüldü
+Relation	T4	T8	NoRel	true	Düşen	ihlaline
+Relation	T8	T0	NoRel	true	ihlaline	ulaştırıldı
+Relation	T8	T9	NoRel	true	ihlaline	doğruladı
+Relation	T9	T8	NoRel	true	doğruladı	ihlaline

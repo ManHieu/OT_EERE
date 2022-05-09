@@ -1,0 +1,18 @@
+Text	Yetkililer , salgını kontrol altına almak için önlemler aldı , ancak bunlar başlangıçta etkisizdi .	Yayılma ağırlaştı çünkü o sırada hastalığın nedenleri bilinmiyordu , sınırlama önlemleri hemen uygulanmadı , ve bazı insanlar enfekte olanları hükûmet tarafından belirlenmiş depolara transfer etmeyi reddederek direndi .	Salgının veba olarak tanımlanmasından hemen sonra ticaret durdu .	5 Mayıs'ta mahkemeler ve tiyatro da dahil olmak üzere kamu binaları kapatıldı .	Liman bölgesindeki kentsel yerleşimler : Valletta ve banliyösü Floriana ve Üç Şehir , Birgu , Cospicua ve Senglea tıbbi gözlem altına alındı .
+Event	T0	etkisizdi	EVENT	88
+Event	T1	ağırlaştı	EVENT	108
+Event	T3	direndi	EVENT	310
+Event	T4	durdu	EVENT	378
+Event	T5	kapatıldı	EVENT	454
+Event	T6	alındı	EVENT	600
+Event	T7	aldı	EVENT	56
+Event	T2	olanları	EVENT	234
+Event	T8	belirlenmiş	EVENT	262
+Relation	T7	T3	SuperSub	true	aldı	direndi
+Relation	T3	T7	SubSuper	true	direndi	aldı
+Relation	T0	T3	NoRel	true	etkisizdi	direndi
+Relation	T0	T6	NoRel	true	etkisizdi	alındı
+Relation	T3	T0	NoRel	true	direndi	etkisizdi
+Relation	T6	T5	NoRel	true	alındı	kapatıldı
+Relation	T8	T4	NoRel	true	belirlenmiş	durdu
+Relation	T8	T7	NoRel	true	belirlenmiş	aldı

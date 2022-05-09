@@ -1,0 +1,16 @@
+Text	Breslau merkezli _ Abwehr stelle II Komando VIII _ { { ' } } e atandı .	Casusluk suçlamalarıyla Çekoslovak hükûmeti tarafından tutuklandı , ve daha sonra Çek polisine paraya ihtiyacı olduğu için bunu yaptığını söyledi .	1938'deki Münih Anlaşması hükümlerince serbest bırakıldı .	küçük | Schindler'in Brněnec'teki fabrikası , 2004 küçük | Schindler'in , Yahudi çalışanları sıraladığı listesi	Schindler , fırsatları değerlendiren bir iş adamı olarak 1939'daki Polonya işgalinin yaratacağı iş olanaklarını gören birçok kişiden biriydi .
+Event	T0	suçlamalarıyla	EVENT	81
+Event	T1	tutuklandı	EVENT	127
+Event	T2	söyledi	EVENT	210
+Event	T3	bırakıldı	EVENT	267
+Event	T4	gören	EVENT	503
+Event	T5	atandı	EVENT	63
+Event	T7	hükümlerince	EVENT	246
+Event	T6	işgalinin	EVENT	466
+Event	T9	değerlendiren	EVENT	414
+Relation	T1	T5	NoRel	true	tutuklandı	atandı
+Relation	T2	T1	NoRel	true	söyledi	tutuklandı
+Relation	T3	T7	NoRel	true	bırakıldı	hükümlerince
+Relation	T4	T5	NoRel	true	gören	atandı
+Relation	T5	T1	NoRel	true	atandı	tutuklandı
+Relation	T5	T6	NoRel	true	atandı	işgalinin

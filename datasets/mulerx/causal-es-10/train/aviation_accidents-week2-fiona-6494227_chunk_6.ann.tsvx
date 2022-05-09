@@ -1,0 +1,62 @@
+Text	Este accidente fue reseñado en la temporada 18° de la serie Mayday : Catástrofes aéreas , del canal National Geographic Channel en el episodio " Misión Mortal " .	- Choque aeronáutico - Responde Virgin Galactic - 2014 Virgin Galactic crash - Accidente - Nave de turismo sufre accidente - Video sobre el accidente con el dueño de la Compañía - https : / / www.bbc.com / mundo / noticias / 2015 / 07 / 150728 _ tecnologia _ informe _ accidente _ virgin _ galactic _ bd	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil	Categoría : Historia de los vuelos espaciales Categoría : Desastres en California Categoría : Muertes filmadas Categoría : Accidentes e incidentes aéreos en Estados Unidos Categoría : Accidentes e incidentes aéreos de 2014 Categoría : Accidentes e incidentes espaciales de Estados Unidos Categoría : Accidentes e incidentes de Mayday : catástrofes aéreas	
+Event	T0	reseñado	EVENT	19
+Event	T10	vuelos	EVENT	647
+Event	T11	Desastres	EVENT	677
+Event	T12	filmadas	EVENT	721
+Event	T13	incidentes	EVENT	755
+Event	T14	Accidentes	EVENT	803
+Event	T15	incidentes	EVENT	816
+Event	T16	Accidentes	EVENT	854
+Event	T17	incidentes	EVENT	867
+Event	T18	Accidentes	EVENT	919
+Event	T19	incidentes	EVENT	932
+Event	T2	crash	EVENT	234
+Event	T20	accidente	EVENT	5
+Event	T3	Accidente	EVENT	242
+Event	T4	accidente	EVENT	276
+Event	T5	accidente	EVENT	303
+Event	T6	accidente	EVENT	432
+Event	T7	Accidente	EVENT	469
+Event	T8	Accidentes	EVENT	501
+Event	T9	Accidentes	EVENT	565
+Relation	T0	T16	NoRel	true	reseñado	Accidentes
+Relation	T0	T19	NoRel	true	reseñado	incidentes
+Relation	T10	T16	NoRel	true	vuelos	Accidentes
+Relation	T10	T2	NoRel	true	vuelos	crash
+Relation	T10	T4	NoRel	true	vuelos	accidente
+Relation	T11	T19	NoRel	true	Desastres	incidentes
+Relation	T11	T3	NoRel	true	Desastres	Accidente
+Relation	T11	T5	NoRel	true	Desastres	accidente
+Relation	T12	T17	NoRel	true	filmadas	incidentes
+Relation	T12	T2	NoRel	true	filmadas	crash
+Relation	T12	T4	NoRel	true	filmadas	accidente
+Relation	T12	T6	NoRel	true	filmadas	accidente
+Relation	T13	T0	NoRel	true	incidentes	reseñado
+Relation	T14	T15	NoRel	true	Accidentes	incidentes
+Relation	T14	T3	NoRel	true	Accidentes	Accidente
+Relation	T15	T17	NoRel	true	incidentes	incidentes
+Relation	T15	T8	NoRel	true	incidentes	Accidentes
+Relation	T16	T14	NoRel	true	Accidentes	Accidentes
+Relation	T16	T7	NoRel	true	Accidentes	Accidente
+Relation	T17	T20	NoRel	true	incidentes	accidente
+Relation	T18	T15	NoRel	true	Accidentes	incidentes
+Relation	T18	T7	NoRel	true	Accidentes	Accidente
+Relation	T19	T13	NoRel	true	incidentes	incidentes
+Relation	T2	T16	NoRel	true	crash	Accidentes
+Relation	T3	T10	NoRel	true	Accidente	vuelos
+Relation	T3	T2	NoRel	true	Accidente	crash
+Relation	T3	T4	NoRel	true	Accidente	accidente
+Relation	T4	T14	NoRel	true	accidente	Accidentes
+Relation	T4	T5	NoRel	true	accidente	accidente
+Relation	T5	T15	NoRel	true	accidente	incidentes
+Relation	T5	T17	NoRel	true	accidente	incidentes
+Relation	T6	T11	NoRel	true	accidente	Desastres
+Relation	T6	T16	NoRel	true	accidente	Accidentes
+Relation	T6	T17	NoRel	true	accidente	incidentes
+Relation	T6	T3	NoRel	true	accidente	Accidente
+Relation	T7	T10	NoRel	true	Accidente	vuelos
+Relation	T7	T17	NoRel	true	Accidente	incidentes
+Relation	T8	T4	NoRel	true	Accidentes	accidente
+Relation	T9	T15	NoRel	true	Accidentes	incidentes
+Relation	T9	T16	NoRel	true	Accidentes	Accidentes
+Relation	T9	T2	NoRel	true	Accidentes	crash

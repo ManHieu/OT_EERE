@@ -1,0 +1,38 @@
+Text	Mueren quince personas y cuarenta resultan heridas .	- 1912 - 15 DE ENERO : dos trenes mixtos que circulaban por la línea del Duero chocan entre las estaciones de Ermesinde y Valongo .	Cinco ferroviarios resultan heridos .	- 7 DE MARZO : un nuevo choque de dos trenes ocurrido en la línea del Duero entre las estaciones de Ermesinde y Valongo se salda con un balance de un muerto y nueve heridos .	- 1916 -___20 DE FEBRERO : El tren correo de la línea del Duero descarrila cerca de Caidé como consecuencia de haber colisionado con los materiales caídos sobre la vía que se desprendieron de la pared de un talud a causa de la lluvia .
+Event	T0	Mueren	EVENT	0
+Event	T1	heridas	EVENT	43
+Event	T2	circulaban	EVENT	98
+Event	T3	chocan	EVENT	132
+Event	T4	heridos	EVENT	213
+Event	T5	choque	EVENT	247
+Event	T6	ocurrido	EVENT	268
+Event	T7	balance	EVENT	359
+Event	T8	muerto	EVENT	373
+Event	T9	heridos	EVENT	388
+Event	T10	descarrila	EVENT	462
+Event	T11	colisionado	EVENT	515
+Event	T12	caídos	EVENT	546
+Event	T13	desprendieron	EVENT	573
+Event	T14	talud	EVENT	605
+Event	T15	lluvia	EVENT	625
+Relation	T0	T10	NoRel	true	Mueren	descarrila
+Relation	T0	T15	NoRel	true	Mueren	lluvia
+Relation	T10	T5	NoRel	true	descarrila	choque
+Relation	T10	T6	NoRel	true	descarrila	ocurrido
+Relation	T11	T13	NoRel	true	colisionado	desprendieron
+Relation	T12	T9	NoRel	true	caídos	heridos
+Relation	T13	T2	NoRel	true	desprendieron	circulaban
+Relation	T14	T12	NoRel	true	talud	caídos
+Relation	T14	T15	NoRel	true	talud	lluvia
+Relation	T14	T3	NoRel	true	talud	chocan
+Relation	T14	T6	NoRel	true	talud	ocurrido
+Relation	T14	T9	NoRel	true	talud	heridos
+Relation	T15	T0	NoRel	true	lluvia	Mueren
+Relation	T15	T12	NoRel	true	lluvia	caídos
+Relation	T15	T2	NoRel	true	lluvia	circulaban
+Relation	T15	T3	NoRel	true	lluvia	chocan
+Relation	T2	T14	NoRel	true	circulaban	talud
+Relation	T5	T6	NoRel	true	choque	ocurrido
+Relation	T6	T9	NoRel	true	ocurrido	heridos
+Relation	T7	T2	NoRel	true	balance	circulaban
+Relation	T8	T12	NoRel	true	muerto	caídos

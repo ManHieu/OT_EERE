@@ -1,0 +1,51 @@
+Text	- 13 de agosto de 1917 .	A tres kilómetros de Bilbao , en la zona del barrio de la Peña , junto a Ollargán , el correo que cubría la relación entre Barcelona y la capital vizcaína descarriló , según unas fuentes a haber sido levantados los carriles de la vía y otras al arrollar varias piedras de gran tamaño que se hallaban sobre los raíles .	Se produjeron 6 muertos y 18 heridos .	En pleno desarrollo de la huelga general de 1917 , varias personas fueron detenidas tras el suceso , acusadas de provocar deliberadamente el accidente .	No existe la seguridad de si el suceso fue realmente provocado , o , si lo fue , de si hubo una verdadera intencionalidad de hacer descarrilar el convoy o solamente de cortar la vía mediante una barricada o la retirada de varios carriles .
+Event	T0	cubría	EVENT	123
+Event	T1	descarriló	EVENT	180
+Event	T2	levantados	EVENT	225
+Event	T3	arrollar	EVENT	270
+Event	T4	muertos	EVENT	360
+Event	T5	heridos	EVENT	373
+Event	T6	desarrollo	EVENT	392
+Event	T7	huelga	EVENT	409
+Event	T8	detenidas	EVENT	457
+Event	T9	suceso	EVENT	475
+Event	T10	acusadas	EVENT	484
+Event	T11	provocar	EVENT	496
+Event	T12	accidente	EVENT	524
+Event	T13	suceso	EVENT	568
+Event	T14	provocado	EVENT	589
+Event	T15	descarrilar	EVENT	667
+Event	T16	cortar	EVENT	704
+Event	T17	retirada	EVENT	746
+Relation	T0	T9	NoRel	true	cubría	suceso
+Relation	T10	T0	NoRel	true	acusadas	cubría
+Relation	T12	T0	NoRel	true	accidente	cubría
+Relation	T13	T14	NoRel	true	suceso	provocado
+Relation	T14	T4	NoRel	true	provocado	muertos
+Relation	T14	T9	NoRel	true	provocado	suceso
+Relation	T15	T0	NoRel	true	descarrilar	cubría
+Relation	T15	T12	NoRel	true	descarrilar	accidente
+Relation	T16	T7	NoRel	true	cortar	huelga
+Relation	T16	T9	NoRel	true	cortar	suceso
+Relation	T17	T4	NoRel	true	retirada	muertos
+Relation	T3	T11	NoRel	true	arrollar	provocar
+Relation	T3	T5	NoRel	true	arrollar	heridos
+Relation	T3	T6	NoRel	true	arrollar	desarrollo
+Relation	T3	T7	NoRel	true	arrollar	huelga
+Relation	T3	T9	NoRel	true	arrollar	suceso
+Relation	T4	T17	NoRel	true	muertos	retirada
+Relation	T4	T9	NoRel	true	muertos	suceso
+Relation	T5	T11	NoRel	true	heridos	provocar
+Relation	T5	T3	NoRel	true	heridos	arrollar
+Relation	T5	T7	NoRel	true	heridos	huelga
+Relation	T6	T0	NoRel	true	desarrollo	cubría
+Relation	T7	T10	NoRel	true	huelga	acusadas
+Relation	T7	T13	NoRel	true	huelga	suceso
+Relation	T7	T5	NoRel	true	huelga	heridos
+Relation	T8	T13	NoRel	true	detenidas	suceso
+Relation	T8	T14	NoRel	true	detenidas	provocado
+Relation	T8	T3	NoRel	true	detenidas	arrollar
+Relation	T8	T7	NoRel	true	detenidas	huelga
+Relation	T9	T12	NoRel	true	suceso	accidente
+Relation	T9	T4	NoRel	true	suceso	muertos
+Relation	T9	T8	NoRel	true	suceso	detenidas

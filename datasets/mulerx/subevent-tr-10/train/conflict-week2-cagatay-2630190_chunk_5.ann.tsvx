@@ -1,0 +1,24 @@
+Text	Arregui 10 gün boyunca Emniyet Genel Müdürlüğü'nde _ ( Dirección Genelral de Seguridad ) _ tutulmuş ve kimseyle görüştürülmemişti .	Bunu , Bask bölgesinde genel bir grev ve Kongrede muhalif parlamento grupları arasında acımasız bir tartışma izledi .	Hükûmet daha sonra çeşitli polis şeflerini görevden alırken , İçişleri Bakanlığı'nda işkencecilerle dayanışma kapsamında istifa edenler oldu .	_ El Alcázar _ gazetesi hükûmetin eylemlerini durdurulması gereken bir zayıflık olarak değerlendirdi .	Bu olağanüstü arka plana karşı , 18 Şubat'ta Calvo Sotelo kabine önerisini sundu , ancak ayın 20'sindeki kongre oylamasında başbakan seçilebilmesi için gerekli çoğunluğa ulaşamadı , bu nedenle 23'üne yeni bir oylama planlandı : komplocuların darbe girişimi için seçtiği gün .
+Event	T0	tutulmuş	EVENT	91
+Event	T1	grev	EVENT	165
+Event	T11	girişimi	EVENT	744
+Event	T13	tartışma	EVENT	232
+Event	T2	eylemlerini	EVENT	427
+Event	T3	alırken	EVENT	302
+Event	T4	dayanışma	EVENT	350
+Event	T5	istifa	EVENT	371
+Event	T7	değerlendirdi	EVENT	480
+Event	T8	sundu	EVENT	571
+Event	T9	oylamasında	EVENT	608
+Relation	T2	T3	SuperSub	true	eylemlerini	alırken
+Relation	T3	T2	SubSuper	true	alırken	eylemlerini
+Relation	T0	T1	NoRel	true	tutulmuş	grev
+Relation	T0	T7	NoRel	true	tutulmuş	değerlendirdi
+Relation	T1	T7	NoRel	true	grev	değerlendirdi
+Relation	T11	T7	NoRel	true	girişimi	değerlendirdi
+Relation	T13	T9	NoRel	true	tartışma	oylamasında
+Relation	T2	T0	NoRel	true	eylemlerini	tutulmuş
+Relation	T2	T4	NoRel	true	eylemlerini	dayanışma
+Relation	T4	T5	NoRel	true	dayanışma	istifa
+Relation	T7	T4	NoRel	true	değerlendirdi	dayanışma
+Relation	T9	T4	NoRel	true	oylamasında	dayanışma

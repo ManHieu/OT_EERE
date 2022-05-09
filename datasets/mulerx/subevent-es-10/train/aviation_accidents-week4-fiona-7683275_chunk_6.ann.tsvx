@@ -1,0 +1,73 @@
+Text	En 2013 abandonó de forma injustificada la FAB y se unió a LaMia , sin cumplir los años de servicio militar que estipula la ley .	Por este motivo tenía un juicio con la FAB e incluso había un pedido de captura en su contra , si bien no fue detenido porque presentó un recurso legal de amparo .	Sin embargo , su esposa declaró que había renunciado por presiones « de una ministra » por sus conexiones políticas familiares , y que la denuncia de la FAB era falsa .	Estaba casado con Daniela Pinto , hija del senador boliviano opositor Roger Pinto , que se asiló en Brasil alegando persecución del gobierno de Bolivia , donde era investigado por denuncias de malversación de fondos , entre otras .	Esto habría motivado a Quiroga a fundar LaMia junto a otros socios .
+Event	T0	unió	EVENT	52
+Event	T1	estipula	EVENT	112
+Event	T2	juicio	EVENT	155
+Event	T3	pedido	EVENT	192
+Event	T4	captura	EVENT	202
+Event	T5	detenido	EVENT	240
+Event	T6	presentó	EVENT	256
+Event	T7	recurso	EVENT	268
+Event	T8	amparo	EVENT	285
+Event	T9	declaró	EVENT	318
+Event	T10	renunciado	EVENT	336
+Event	T11	presiones	EVENT	351
+Event	T12	conexiones	EVENT	389
+Event	T13	denuncia	EVENT	432
+Event	T14	casado	EVENT	470
+Event	T15	asiló	EVENT	554
+Event	T16	persecución	EVENT	579
+Event	T17	investigado	EVENT	627
+Event	T18	denuncias	EVENT	643
+Event	T19	malversación	EVENT	656
+Event	T20	motivado	EVENT	707
+Event	T21	fundar	EVENT	728
+Event	T22	abandonó	EVENT	8
+Relation	T22	T0	SuperSub	true	abandonó	unió
+Relation	T0	T22	SubSuper	true	unió	abandonó
+Relation	T0	T16	NoRel	true	unió	persecución
+Relation	T0	T19	NoRel	true	unió	malversación
+Relation	T0	T2	NoRel	true	unió	juicio
+Relation	T1	T15	NoRel	true	estipula	asiló
+Relation	T1	T4	NoRel	true	estipula	captura
+Relation	T10	T16	NoRel	true	renunciado	persecución
+Relation	T10	T17	NoRel	true	renunciado	investigado
+Relation	T11	T2	NoRel	true	presiones	juicio
+Relation	T12	T8	NoRel	true	conexiones	amparo
+Relation	T13	T0	NoRel	true	denuncia	unió
+Relation	T13	T7	NoRel	true	denuncia	recurso
+Relation	T14	T1	NoRel	true	casado	estipula
+Relation	T14	T10	NoRel	true	casado	renunciado
+Relation	T14	T20	NoRel	true	casado	motivado
+Relation	T14	T5	NoRel	true	casado	detenido
+Relation	T15	T20	NoRel	true	asiló	motivado
+Relation	T16	T0	NoRel	true	persecución	unió
+Relation	T17	T0	NoRel	true	investigado	unió
+Relation	T17	T19	NoRel	true	investigado	malversación
+Relation	T17	T21	NoRel	true	investigado	fundar
+Relation	T17	T8	NoRel	true	investigado	amparo
+Relation	T19	T20	NoRel	true	malversación	motivado
+Relation	T2	T0	NoRel	true	juicio	unió
+Relation	T2	T16	NoRel	true	juicio	persecución
+Relation	T2	T3	NoRel	true	juicio	pedido
+Relation	T2	T7	NoRel	true	juicio	recurso
+Relation	T20	T7	NoRel	true	motivado	recurso
+Relation	T21	T11	NoRel	true	fundar	presiones
+Relation	T22	T10	NoRel	true	abandonó	renunciado
+Relation	T22	T14	NoRel	true	abandonó	casado
+Relation	T22	T6	NoRel	true	abandonó	presentó
+Relation	T22	T7	NoRel	true	abandonó	recurso
+Relation	T3	T20	NoRel	true	pedido	motivado
+Relation	T3	T9	NoRel	true	pedido	declaró
+Relation	T5	T7	NoRel	true	detenido	recurso
+Relation	T6	T1	NoRel	true	presentó	estipula
+Relation	T6	T10	NoRel	true	presentó	renunciado
+Relation	T6	T12	NoRel	true	presentó	conexiones
+Relation	T6	T5	NoRel	true	presentó	detenido
+Relation	T6	T8	NoRel	true	presentó	amparo
+Relation	T7	T16	NoRel	true	recurso	persecución
+Relation	T7	T4	NoRel	true	recurso	captura
+Relation	T7	T9	NoRel	true	recurso	declaró
+Relation	T8	T18	NoRel	true	amparo	denuncias
+Relation	T9	T0	NoRel	true	declaró	unió
+Relation	T9	T16	NoRel	true	declaró	persecución
+Relation	T9	T17	NoRel	true	declaró	investigado

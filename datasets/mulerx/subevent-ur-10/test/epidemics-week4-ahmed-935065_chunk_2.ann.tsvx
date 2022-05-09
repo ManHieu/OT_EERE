@@ -1,0 +1,22 @@
+Text	اس کے مقابلے میں ، یہ تعداد دوسرے پڑوسی ممالک جیسے کہ پاکستان میں 703 ، بھارت میں 602 ) قریب دو ماہ کے تعطل کے بعد ، سری لنکا میں عام زندگی اور نجی کاروبار اور سرکاری دفاتر دوبارہ کھل گئے ۔	انتظامیہ نے کہا ہے کہ کوڈ۔19 کو کنٹرول میں لایا گیا ہے ۔	تقریباً 2._2.15 کروڑ آبادی والے ملک میں ، صرف 960 معاملات میں کورونا کی تصدیق ہوئی اور نو افراد کی موت واقع ہوئی ۔	اس وبا سے نمٹنے میں اس کامیابی کے پیچھے بہت ساری وجوہات ہیں ، بڑے پیمانے پر ٹرائل پہلے ہیں ۔	30 اپریل تک ، ملک کے 10 لاکھ میں سے 930 افراد کی جانچ کی جارہی تھی ۔
+Event	T0	تعطل	EVENT	103
+Event	T2	کہا	EVENT	202
+Event	T3	کنٹرول	EVENT	222
+Event	T6	نمٹنے	EVENT	372
+Event	T7	کامیابی	EVENT	385
+Event	T8	جانچ	EVENT	504
+Event	T9	کھل	EVENT	180
+Event	T1	معاملات	EVENT	297
+Event	T10	تصدیق	EVENT	319
+Event	T4	موت	EVENT	346
+Event	T5	وبا	EVENT	365
+Relation	T0	T9	NoRel	true	تعطل	کھل
+Relation	T1	T0	NoRel	true	معاملات	تعطل
+Relation	T2	T10	NoRel	true	کہا	تصدیق
+Relation	T4	T7	NoRel	true	موت	کامیابی
+Relation	T5	T10	NoRel	true	وبا	تصدیق
+Relation	T5	T6	NoRel	true	وبا	نمٹنے
+Relation	T7	T5	NoRel	true	کامیابی	وبا
+Relation	T8	T7	NoRel	true	جانچ	کامیابی
+Relation	T9	T10	NoRel	true	کھل	تصدیق
+Relation	T9	T6	NoRel	true	کھل	نمٹنے

@@ -1,0 +1,21 @@
+Text	Efter forklaringer fra det tilfangetagne al-Qaeda-medlem Abu Zubaydah mente talsmænd for den amerikanske regering , at Det Hvide Hus var det påtænkte mål for angrebet .	Under et interview med Sheikh Mohammed og Binalshibh kom det frem , at flynummer 93 var på vej mod Capitol .	Den officielle 9/11 rapport fortolkede besætningen og passagerernes reaktioner sådan , at målet enten måtte have været Det Hvide Hus eller Capitol .	Ifølge en anden forklaring fra Sheikh Mohammed foretrak Osama bin Laden Det Hvide Hus i stedet for Capitol som mål .	Salim Hamdan , bin Ladens chauffør , fortalte sin forhørsleder , at han vidste , at flyet skulle have været til Capitol .
+Event	T0	forklaringer	EVENT	6
+Event	T1	tilfangetagne	EVENT	27
+Event	T2	angrebet	EVENT	158
+Event	T3	interview	EVENT	178
+Event	T4	fortolkede	EVENT	306
+Event	T5	reaktioner	EVENT	346
+Event	T6	forklaring	EVENT	443
+Event	T7	foretrak	EVENT	474
+Event	T8	fortalte	EVENT	581
+Relation	T1	T0	NoRel	true	tilfangetagne	forklaringer
+Relation	T1	T3	NoRel	true	tilfangetagne	interview
+Relation	T1	T7	NoRel	true	tilfangetagne	foretrak
+Relation	T3	T1	NoRel	true	interview	tilfangetagne
+Relation	T5	T3	NoRel	true	reaktioner	interview
+Relation	T6	T4	NoRel	true	forklaring	fortolkede
+Relation	T6	T8	NoRel	true	forklaring	fortalte
+Relation	T7	T5	NoRel	true	foretrak	reaktioner
+Relation	T8	T0	NoRel	true	fortalte	forklaringer
+Relation	T8	T2	NoRel	true	fortalte	angrebet
+Relation	T8	T4	NoRel	true	fortalte	fortolkede

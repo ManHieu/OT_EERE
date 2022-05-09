@@ -1,0 +1,35 @@
+Text	- Hindistan , 15 İtalyan turist dahil 23 vaka daha doğruladı ve toplam sayı 29'a ulaştı .	- Irak ilk ölümünü koronavirüsten doğruladı .	- İtalya 28 ölümü daha doğrulayarak toplamı 107'ye çıkardı .	Bu onu tek bir günde en yüksek artış haline getirdi .	Ülke 587 yeni vakayı onaylayarak toplam vaka sayısını 3.089'a getirdi .
+Event	T0	doğruladı	EVENT	51
+Event	T1	ulaştı	EVENT	81
+Event	T2	ölümünü	EVENT	101
+Event	T3	doğruladı	EVENT	124
+Event	T4	ölümü	EVENT	148
+Event	T5	çıkardı	EVENT	187
+Event	T6	artış	EVENT	228
+Event	T7	getirdi	EVENT	241
+Event	T8	onaylayarak	EVENT	272
+Event	T9	getirdi	EVENT	313
+Event	T10	koronavirüsten	EVENT	109
+Event	T11	doğrulayarak	EVENT	159
+Relation	T0	T1	CauseEffect	true	doğruladı	ulaştı
+Relation	T1	T0	EffectCause	true	ulaştı	doğruladı
+Relation	T10	T2	CauseEffect	true	koronavirüsten	ölümünü
+Relation	T2	T10	EffectCause	true	ölümünü	koronavirüsten
+Relation	T2	T3	CauseEffect	true	ölümünü	doğruladı
+Relation	T3	T2	EffectCause	true	doğruladı	ölümünü
+Relation	T4	T11	CauseEffect	true	ölümü	doğrulayarak
+Relation	T11	T4	EffectCause	true	doğrulayarak	ölümü
+Relation	T11	T5	CauseEffect	true	doğrulayarak	çıkardı
+Relation	T5	T11	EffectCause	true	çıkardı	doğrulayarak
+Relation	T8	T9	CauseEffect	true	onaylayarak	getirdi
+Relation	T9	T8	EffectCause	true	getirdi	onaylayarak
+Relation	T1	T3	NoRel	true	ulaştı	doğruladı
+Relation	T10	T3	NoRel	true	koronavirüsten	doğruladı
+Relation	T10	T5	NoRel	true	koronavirüsten	çıkardı
+Relation	T3	T9	NoRel	true	doğruladı	getirdi
+Relation	T4	T5	NoRel	true	ölümü	çıkardı
+Relation	T4	T9	NoRel	true	ölümü	getirdi
+Relation	T6	T9	NoRel	true	artış	getirdi
+Relation	T7	T0	NoRel	true	getirdi	doğruladı
+Relation	T7	T10	NoRel	true	getirdi	koronavirüsten
+Relation	T8	T4	NoRel	true	onaylayarak	ölümü

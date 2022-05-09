@@ -1,0 +1,47 @@
+Text	The CHELFORD RAIL ACCIDENT occurred on 22 December 1894 at Chelford railway station .	The stationmaster was supervising shunting operations , during which a high - sided wagon was fly - shunted ( i.e. run - off ) into a siding in strong winds and rapidly fading light .	As another six wagons were being run onto an adjoining road , the stationmaster saw the high - sided wagon being blown out of its siding by the wind to meet them .	A collision occurred derailing the runaway in such a way that it fouled the main line just as the 16:15 Manchester to Crewe express approached , drawn by two locomotives , LNWR Waterloo Class 2-4-0 No 418 _Zygia_ and Experiment Class No 518 _Express_ .	The stationmaster ran towards them waving a red lamp but the drivers thought he was signalling to the shunters and did not slacken speed .
+Event	T0	occurred	EVENT	27
+Event	T1	fly - shunted	EVENT	180
+Event	T11	derailing	EVENT	455
+Event	T13	fouled	EVENT	499
+Event	T14	approached	EVENT	566
+Event	T15	drawn	EVENT	579
+Event	T17	ran	EVENT	705
+Event	T18	waving	EVENT	722
+Event	T19	thought	EVENT	756
+Event	T20	signalling	EVENT	771
+Event	T21	speed	EVENT	818
+Event	T3	blown out of	EVENT	383
+Event	T5	winds	EVENT	237
+Event	T6	fading	EVENT	255
+Event	T7	saw	EVENT	350
+Event	T9	wind	EVENT	414
+Relation	T17	T18	SuperSub	true	ran	waving
+Relation	T18	T17	SubSuper	true	waving	ran
+Relation	T1	T5	NoRel	true	fly - shunted	winds
+Relation	T11	T13	NoRel	true	derailing	fouled
+Relation	T11	T14	NoRel	true	derailing	approached
+Relation	T11	T18	NoRel	true	derailing	waving
+Relation	T14	T11	NoRel	true	approached	derailing
+Relation	T14	T15	NoRel	true	approached	drawn
+Relation	T15	T1	NoRel	true	drawn	fly - shunted
+Relation	T15	T17	NoRel	true	drawn	ran
+Relation	T15	T3	NoRel	true	drawn	blown out of
+Relation	T15	T6	NoRel	true	drawn	fading
+Relation	T17	T19	NoRel	true	ran	thought
+Relation	T18	T1	NoRel	true	waving	fly - shunted
+Relation	T18	T3	NoRel	true	waving	blown out of
+Relation	T19	T1	NoRel	true	thought	fly - shunted
+Relation	T19	T13	NoRel	true	thought	fouled
+Relation	T20	T6	NoRel	true	signalling	fading
+Relation	T21	T18	NoRel	true	speed	waving
+Relation	T3	T14	NoRel	true	blown out of	approached
+Relation	T3	T15	NoRel	true	blown out of	drawn
+Relation	T3	T17	NoRel	true	blown out of	ran
+Relation	T5	T20	NoRel	true	winds	signalling
+Relation	T5	T6	NoRel	true	winds	fading
+Relation	T5	T9	NoRel	true	winds	wind
+Relation	T6	T1	NoRel	true	fading	fly - shunted
+Relation	T6	T7	NoRel	true	fading	saw
+Relation	T7	T21	NoRel	true	saw	speed
+Relation	T9	T19	NoRel	true	wind	thought
+Relation	T9	T7	NoRel	true	wind	saw

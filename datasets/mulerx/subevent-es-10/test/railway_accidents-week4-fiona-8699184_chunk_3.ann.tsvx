@@ -1,0 +1,38 @@
+Text	La noche del 19 de octubre , se habían descubierto 50 cadáveres y al menos 50 personas habían ingresado en un hospital cercano , mientras que los otros nueve cadáveres se encontraron al día siguiente .	Debido a la fuerza del impacto del tren , muchas víctimas fueron desmembradas o mutiladas más allá del reconocimiento , lo que retrasó la identificación del cuerpos .	Un funcionario local dijo que la mayoría de las víctimas eran trabajadores migratorios y sus familias de los estados de Uttar Pradesh y Bihar que vivían en el área .	El primer ministro de Punjab , Singh , visitó a algunos de los sobrevivientes y familiares de los muertos en un hospital local , el 20 de octubre .	Durante su visita , dos mujeres se reunieron con él y , según los informes , habían perdido a todas sus familias , incluidos niños , esposos e incluso suegros .
+Event	T0	descubierto	EVENT	39
+Event	T1	ingresado	EVENT	94
+Event	T2	encontraron	EVENT	171
+Event	T3	impacto	EVENT	225
+Event	T4	desmembradas	EVENT	267
+Event	T5	mutiladas	EVENT	282
+Event	T6	reconocimiento	EVENT	305
+Event	T7	retrasó	EVENT	329
+Event	T8	identificación	EVENT	340
+Event	T9	dijo	EVENT	390
+Event	T10	visitó	EVENT	574
+Event	T11	muertos	EVENT	633
+Event	T12	visita	EVENT	694
+Event	T13	reunieron	EVENT	718
+Event	T14	perdido	EVENT	767
+Relation	T0	T10	NoRel	true	descubierto	visitó
+Relation	T0	T5	NoRel	true	descubierto	mutiladas
+Relation	T1	T10	NoRel	true	ingresado	visitó
+Relation	T10	T13	NoRel	true	visitó	reunieron
+Relation	T11	T12	NoRel	true	muertos	visita
+Relation	T11	T6	NoRel	true	muertos	reconocimiento
+Relation	T11	T8	NoRel	true	muertos	identificación
+Relation	T12	T0	NoRel	true	visita	descubierto
+Relation	T13	T11	NoRel	true	reunieron	muertos
+Relation	T14	T1	NoRel	true	perdido	ingresado
+Relation	T2	T1	NoRel	true	encontraron	ingresado
+Relation	T2	T12	NoRel	true	encontraron	visita
+Relation	T3	T10	NoRel	true	impacto	visitó
+Relation	T5	T12	NoRel	true	mutiladas	visita
+Relation	T6	T4	NoRel	true	reconocimiento	desmembradas
+Relation	T6	T5	NoRel	true	reconocimiento	mutiladas
+Relation	T7	T12	NoRel	true	retrasó	visita
+Relation	T7	T2	NoRel	true	retrasó	encontraron
+Relation	T8	T1	NoRel	true	identificación	ingresado
+Relation	T8	T14	NoRel	true	identificación	perdido
+Relation	T8	T5	NoRel	true	identificación	mutiladas
+Relation	T9	T3	NoRel	true	dijo	impacto

@@ -1,0 +1,32 @@
+Text	Esved cinayetinin 2007 yılında 23 Yezidi'nin öldürüldüğü Musul katliamını kıvılcımlandırdığı düşünülmektedir .	Esved'in öldürülmesi ve intikam saldırıları Uluslararası Af Örgütü ve Irak hükümetinden olayların araştırılmasını isteyen Yerel Kürt Yönetimi tarafından kınanmıştır .	Yetkililer Kuzey Irak'ta Aswad cinayeti ile ilgisi olan 4 kişiyi tutuklamıştır .	Taşlama olayının ayrıca Yezidi kasabaları olan Kahtaniye ve Cizre'de 800 kişinin öldüğü bombalı saldırıları da ateşlediği söylenmektedir .	.
+Event	T0	cinayetinin	EVENT	6
+Event	T1	öldürüldüğü	EVENT	45
+Event	T2	katliamını	EVENT	63
+Event	T3	düşünülmektedir	EVENT	93
+Event	T4	öldürülmesi	EVENT	120
+Event	T5	saldırıları	EVENT	143
+Event	T6	kınanmıştır	EVENT	264
+Event	T7	cinayeti	EVENT	309
+Event	T8	tutuklamıştır	EVENT	343
+Event	T10	öldüğü	EVENT	440
+Event	T11	saldırıları	EVENT	455
+Event	T12	söylenmektedir	EVENT	481
+Event	T9	Taşlama	EVENT	359
+Relation	T1	T0	NoRel	true	öldürüldüğü	cinayetinin
+Relation	T1	T3	NoRel	true	öldürüldüğü	düşünülmektedir
+Relation	T1	T4	NoRel	true	öldürüldüğü	öldürülmesi
+Relation	T10	T1	NoRel	true	öldüğü	öldürüldüğü
+Relation	T11	T1	NoRel	true	saldırıları	öldürüldüğü
+Relation	T12	T0	NoRel	true	söylenmektedir	cinayetinin
+Relation	T12	T4	NoRel	true	söylenmektedir	öldürülmesi
+Relation	T12	T5	NoRel	true	söylenmektedir	saldırıları
+Relation	T2	T3	NoRel	true	katliamını	düşünülmektedir
+Relation	T3	T0	NoRel	true	düşünülmektedir	cinayetinin
+Relation	T3	T12	NoRel	true	düşünülmektedir	söylenmektedir
+Relation	T3	T4	NoRel	true	düşünülmektedir	öldürülmesi
+Relation	T5	T3	NoRel	true	saldırıları	düşünülmektedir
+Relation	T5	T9	NoRel	true	saldırıları	Taşlama
+Relation	T6	T3	NoRel	true	kınanmıştır	düşünülmektedir
+Relation	T7	T12	NoRel	true	cinayeti	söylenmektedir
+Relation	T7	T4	NoRel	true	cinayeti	öldürülmesi
+Relation	T9	T6	NoRel	true	Taşlama	kınanmıştır

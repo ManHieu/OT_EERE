@@ -1,0 +1,71 @@
+Text	Kravene kunne de autoritære herskere ikke sidde overhørig , og dannelsen af et parlament i Frankfurt så en overgang ud til at kunne etablere en stor samlet tysk nation med et demokratisk valgt parlament .	Det lykkedes dog i løbet af 1849 de konservative kræfter især ledet af Bismarcks Preussen at slå igen og genetablere ordenen med autoritære herskere i de forskellige stater .	Martsrevolutionen i Tyskland fik også konsekvenser for Danmark , hvor nationalliberale under ledelse af Orla Lehmann krævede mere demokrati .	I forbindelse med Napoleonskrigene i begyndelsen af det 19. århundrede havde flere tusinde tyske studenter og andre meldt sig frivilligt for at kaste franskmændene ud af de tyske områder i de slag , der senere er blevet kaldt _ die Befreiungskriege _ ( Befrielseskrigene ) .	Det fik en stigende nationalisme til at brede sig i samfundet .
+Event	T0	sidde	EVENT	42
+Event	T1	dannelsen	EVENT	63
+Event	T2	etablere	EVENT	132
+Event	T3	valgt	EVENT	187
+Event	T4	lykkedes	EVENT	209
+Event	T5	konsekvenser	EVENT	418
+Event	T6	krævede	EVENT	497
+Event	T7	meldt	EVENT	638
+Event	T8	kaste	EVENT	666
+Event	T9	slag	EVENT	714
+Event	T10	kaldt	EVENT	742
+Event	T11	fik	EVENT	801
+Event	T12	stigende	EVENT	808
+Event	T13	Kravene	EVENT	0
+Event	T14	ledet	EVENT	267
+Event	T15	slå igen	EVENT	298
+Event	T16	genetablere	EVENT	310
+Event	T17	Martsrevolutionen	EVENT	380
+Event	T18	ledelse	EVENT	473
+Event	T19	Napoleonskrigene	EVENT	540
+Event	T20	Befrielseskrigene	EVENT	775
+Event	T21	brede	EVENT	837
+Relation	T7	T8	SuperSub	true	meldt	kaste
+Relation	T8	T7	SubSuper	true	kaste	meldt
+Relation	T0	T7	NoRel	true	sidde	meldt
+Relation	T1	T2	NoRel	true	dannelsen	etablere
+Relation	T10	T21	NoRel	true	kaldt	brede
+Relation	T10	T6	NoRel	true	kaldt	krævede
+Relation	T11	T12	NoRel	true	fik	stigende
+Relation	T11	T14	NoRel	true	fik	ledet
+Relation	T11	T5	NoRel	true	fik	konsekvenser
+Relation	T11	T9	NoRel	true	fik	slag
+Relation	T12	T17	NoRel	true	stigende	Martsrevolutionen
+Relation	T12	T18	NoRel	true	stigende	ledelse
+Relation	T12	T4	NoRel	true	stigende	lykkedes
+Relation	T13	T19	NoRel	true	Kravene	Napoleonskrigene
+Relation	T14	T9	NoRel	true	ledet	slag
+Relation	T15	T19	NoRel	true	slå igen	Napoleonskrigene
+Relation	T15	T9	NoRel	true	slå igen	slag
+Relation	T16	T10	NoRel	true	genetablere	kaldt
+Relation	T16	T5	NoRel	true	genetablere	konsekvenser
+Relation	T16	T6	NoRel	true	genetablere	krævede
+Relation	T16	T7	NoRel	true	genetablere	meldt
+Relation	T17	T11	NoRel	true	Martsrevolutionen	fik
+Relation	T18	T4	NoRel	true	ledelse	lykkedes
+Relation	T19	T1	NoRel	true	Napoleonskrigene	dannelsen
+Relation	T19	T21	NoRel	true	Napoleonskrigene	brede
+Relation	T19	T5	NoRel	true	Napoleonskrigene	konsekvenser
+Relation	T2	T12	NoRel	true	etablere	stigende
+Relation	T2	T14	NoRel	true	etablere	ledet
+Relation	T2	T20	NoRel	true	etablere	Befrielseskrigene
+Relation	T20	T10	NoRel	true	Befrielseskrigene	kaldt
+Relation	T21	T11	NoRel	true	brede	fik
+Relation	T21	T15	NoRel	true	brede	slå igen
+Relation	T21	T2	NoRel	true	brede	etablere
+Relation	T3	T11	NoRel	true	valgt	fik
+Relation	T4	T10	NoRel	true	lykkedes	kaldt
+Relation	T4	T21	NoRel	true	lykkedes	brede
+Relation	T4	T8	NoRel	true	lykkedes	kaste
+Relation	T5	T1	NoRel	true	konsekvenser	dannelsen
+Relation	T5	T21	NoRel	true	konsekvenser	brede
+Relation	T6	T4	NoRel	true	krævede	lykkedes
+Relation	T7	T0	NoRel	true	meldt	sidde
+Relation	T7	T12	NoRel	true	meldt	stigende
+Relation	T7	T18	NoRel	true	meldt	ledelse
+Relation	T8	T11	NoRel	true	kaste	fik
+Relation	T8	T18	NoRel	true	kaste	ledelse
+Relation	T9	T11	NoRel	true	slag	fik
+Relation	T9	T17	NoRel	true	slag	Martsrevolutionen
+Relation	T9	T4	NoRel	true	slag	lykkedes

@@ -1,0 +1,46 @@
+Text	thumb| World Trade Center i marts 2001	Siden TERRORANGREBET DEN 11. SEPTEMBER 2001 er der opstået mange forskellige KONSPIRATIONSTEORIER , som søger andre forklaringer end de generelt accepterede beskrivelser af hændelserne .	Mange af teorierne tager udgangspunkt i , at den amerikanske regering enten kendte til eller direkte stod bag angrebene .	Formålet skulle være skabe en slags afgørende hændelse , som kunne samle den amerikanske befolkning bag en aggressiv udenrigspolitik , i lighed med de politiske virkninger af sænkningen af Lusitania , den tyske rigsdagsbrand eller angrebet på Pearl Harbor .	I andre teorier gøres Israel eller en jødisk sammensværgelse ansvarlig i stedet for den amerikanske regering , eller ansvaret henføres til pan-nationale hemmelige organisationer .
+Event	T0	TERRORANGREBET	EVENT	45
+Event	T1	opstået	EVENT	90
+Event	T2	søger	EVENT	143
+Event	T3	hændelserne	EVENT	212
+Event	T4	tager	EVENT	245
+Event	T5	stod	EVENT	327
+Event	T6	angrebene	EVENT	336
+Event	T7	skabe	EVENT	369
+Event	T8	hændelse	EVENT	394
+Event	T9	samle	EVENT	415
+Event	T10	virkninger	EVENT	509
+Event	T11	sænkningen	EVENT	523
+Event	T12	angrebet	EVENT	579
+Event	T13	henføres	EVENT	732
+Event	T14	kendte	EVENT	302
+Relation	T0	T1	CauseEffect	true	TERRORANGREBET	opstået
+Relation	T1	T0	EffectCause	true	opstået	TERRORANGREBET
+Relation	T0	T3	NoRel	true	TERRORANGREBET	hændelserne
+Relation	T1	T5	NoRel	true	opstået	stod
+Relation	T10	T1	NoRel	true	virkninger	opstået
+Relation	T10	T5	NoRel	true	virkninger	stod
+Relation	T11	T7	NoRel	true	sænkningen	skabe
+Relation	T12	T4	NoRel	true	angrebet	tager
+Relation	T13	T0	NoRel	true	henføres	TERRORANGREBET
+Relation	T13	T4	NoRel	true	henføres	tager
+Relation	T14	T9	NoRel	true	kendte	samle
+Relation	T2	T11	NoRel	true	søger	sænkningen
+Relation	T2	T7	NoRel	true	søger	skabe
+Relation	T3	T14	NoRel	true	hændelserne	kendte
+Relation	T4	T14	NoRel	true	tager	kendte
+Relation	T4	T6	NoRel	true	tager	angrebene
+Relation	T5	T7	NoRel	true	stod	skabe
+Relation	T6	T12	NoRel	true	angrebene	angrebet
+Relation	T6	T13	NoRel	true	angrebene	henføres
+Relation	T6	T2	NoRel	true	angrebene	søger
+Relation	T6	T5	NoRel	true	angrebene	stod
+Relation	T6	T7	NoRel	true	angrebene	skabe
+Relation	T6	T9	NoRel	true	angrebene	samle
+Relation	T7	T1	NoRel	true	skabe	opstået
+Relation	T7	T13	NoRel	true	skabe	henføres
+Relation	T8	T10	NoRel	true	hændelse	virkninger
+Relation	T8	T4	NoRel	true	hændelse	tager
+Relation	T8	T5	NoRel	true	hændelse	stod
+Relation	T9	T1	NoRel	true	samle	opstået
+Relation	T9	T10	NoRel	true	samle	virkninger

@@ -1,0 +1,78 @@
+Text	Limitaba sus actividades a intentar incrementar los beneficios de la venta de crudo a las compañías de Occidente y mejorar el control sobre los niveles de producción .	Sin embargo , a principios de 1971 empezó a mostrar su fortaleza .	El 16 de octubre de 1973 , como parte de la estrategia política derivada de la Guerra del Yom Kippur , la OPEP detuvo la producción de crudo y estableció un embargo para los envíos petrolíferos hacia Occidente , especialmente hacia Estados Unidos y los Países Bajos .	También se acordó un boicot a Israel .	Puesto que en condiciones normales las fluctuaciones en la demanda del petróleo son pequeñas ( cuando sube el precio solo se compra un poco menos ) , los precios tenían que subir drásticamente para conseguir que se redujera notablemente la demanda , y así poder establecer un nuevo nivel de consumo impuesto por la oferta .
+Event	T0	Limitaba	EVENT	0
+Event	T1	actividades	EVENT	13
+Event	T2	incrementar	EVENT	36
+Event	T3	venta	EVENT	69
+Event	T4	control	EVENT	126
+Event	T5	empezó	EVENT	203
+Event	T6	mostrar	EVENT	212
+Event	T7	estrategia	EVENT	279
+Event	T8	derivada	EVENT	299
+Event	T10	detuvo	EVENT	346
+Event	T11	producción	EVENT	356
+Event	T12	estableció	EVENT	378
+Event	T13	embargo	EVENT	392
+Event	T14	envíos	EVENT	409
+Event	T15	acordó	EVENT	514
+Event	T16	boicot	EVENT	524
+Event	T17	fluctuaciones	EVENT	581
+Event	T18	sube	EVENT	644
+Event	T19	compra	EVENT	667
+Event	T20	subir	EVENT	715
+Event	T21	conseguir	EVENT	740
+Event	T22	redujera	EVENT	757
+Event	T23	impuesto	EVENT	841
+Event	T9	Guerra del Yom Kippur	EVENT	314
+Relation	T7	T10	SuperSub	true	estrategia	detuvo
+Relation	T10	T7	SubSuper	true	detuvo	estrategia
+Relation	T7	T12	SuperSub	true	estrategia	estableció
+Relation	T12	T7	SubSuper	true	estableció	estrategia
+Relation	T7	T15	SuperSub	true	estrategia	acordó
+Relation	T15	T7	SubSuper	true	acordó	estrategia
+Relation	T0	T11	NoRel	true	Limitaba	producción
+Relation	T0	T21	NoRel	true	Limitaba	conseguir
+Relation	T0	T6	NoRel	true	Limitaba	mostrar
+Relation	T1	T14	NoRel	true	actividades	envíos
+Relation	T1	T3	NoRel	true	actividades	venta
+Relation	T1	T6	NoRel	true	actividades	mostrar
+Relation	T10	T18	NoRel	true	detuvo	sube
+Relation	T11	T23	NoRel	true	producción	impuesto
+Relation	T11	T8	NoRel	true	producción	derivada
+Relation	T12	T10	NoRel	true	estableció	detuvo
+Relation	T12	T9	NoRel	true	estableció	Guerra del Yom Kippur
+Relation	T14	T21	NoRel	true	envíos	conseguir
+Relation	T15	T21	NoRel	true	acordó	conseguir
+Relation	T16	T15	NoRel	true	boicot	acordó
+Relation	T16	T18	NoRel	true	boicot	sube
+Relation	T16	T20	NoRel	true	boicot	subir
+Relation	T16	T5	NoRel	true	boicot	empezó
+Relation	T17	T11	NoRel	true	fluctuaciones	producción
+Relation	T17	T14	NoRel	true	fluctuaciones	envíos
+Relation	T17	T22	NoRel	true	fluctuaciones	redujera
+Relation	T17	T3	NoRel	true	fluctuaciones	venta
+Relation	T17	T9	NoRel	true	fluctuaciones	Guerra del Yom Kippur
+Relation	T18	T8	NoRel	true	sube	derivada
+Relation	T20	T12	NoRel	true	subir	estableció
+Relation	T20	T15	NoRel	true	subir	acordó
+Relation	T21	T20	NoRel	true	conseguir	subir
+Relation	T21	T8	NoRel	true	conseguir	derivada
+Relation	T22	T10	NoRel	true	redujera	detuvo
+Relation	T22	T20	NoRel	true	redujera	subir
+Relation	T22	T7	NoRel	true	redujera	estrategia
+Relation	T22	T8	NoRel	true	redujera	derivada
+Relation	T23	T5	NoRel	true	impuesto	empezó
+Relation	T3	T18	NoRel	true	venta	sube
+Relation	T3	T21	NoRel	true	venta	conseguir
+Relation	T4	T20	NoRel	true	control	subir
+Relation	T5	T17	NoRel	true	empezó	fluctuaciones
+Relation	T5	T3	NoRel	true	empezó	venta
+Relation	T5	T6	NoRel	true	empezó	mostrar
+Relation	T5	T8	NoRel	true	empezó	derivada
+Relation	T6	T10	NoRel	true	mostrar	detuvo
+Relation	T6	T18	NoRel	true	mostrar	sube
+Relation	T6	T3	NoRel	true	mostrar	venta
+Relation	T6	T7	NoRel	true	mostrar	estrategia
+Relation	T8	T0	NoRel	true	derivada	Limitaba
+Relation	T9	T22	NoRel	true	Guerra del Yom Kippur	redujera
+Relation	T9	T3	NoRel	true	Guerra del Yom Kippur	venta
+Relation	T9	T7	NoRel	true	Guerra del Yom Kippur	estrategia

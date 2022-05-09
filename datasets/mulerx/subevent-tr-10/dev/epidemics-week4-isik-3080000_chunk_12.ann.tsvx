@@ -1,0 +1,18 @@
+Text	Enfekte olan insanların evleri kapatıldı , ancak başlangıçta onları arındırmak için hiçbir girişimde bulunulmadı .	Bu binalardan enfekte olmuş bazı hayvanlar kaçmış ve vebanın yayılmasına katkıda bulunmuş olabilir .	Sonunda , evcil hayvanlar evlerde zaptedildi veya kafeslere konuldu ve daha fazla yayılmayı önlemek için sokak hayvanları öldürülmeye başlandı .	Birçok kişi , yetkililer tarafından imha edilmesini önlemek için kontamine malları sakladı .	19 Haziran'da Valletta , Floriana ve Tree Cities içinde ve çevresinde _ çeşitli bariyerler kuruldu .
+Event	T0	kapatıldı	EVENT	31
+Event	T1	kaçmış	EVENT	158
+Event	T3	zaptedildi	EVENT	250
+Event	T4	konuldu	EVENT	276
+Event	T5	başlandı	EVENT	350
+Event	T6	sakladı	EVENT	444
+Event	T7	kuruldu	EVENT	545
+Event	T8	olan	EVENT	8
+Event	T9	olmuş	EVENT	137
+Event	T2	olabilir	EVENT	205
+Relation	T2	T7	NoRel	true	olabilir	kuruldu
+Relation	T3	T5	NoRel	true	zaptedildi	başlandı
+Relation	T3	T6	NoRel	true	zaptedildi	sakladı
+Relation	T4	T1	NoRel	true	konuldu	kaçmış
+Relation	T5	T6	NoRel	true	başlandı	sakladı
+Relation	T6	T7	NoRel	true	sakladı	kuruldu
+Relation	T8	T3	NoRel	true	olan	zaptedildi

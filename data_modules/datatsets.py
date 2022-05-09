@@ -16,7 +16,6 @@ def register_dataset(dataset_class: BaseDataset):
 
 def load_dataset(name:str,
                 tokenizer: str,
-                scratch_tokenizer: str,
                 encoder: str,
                 data_dir: str,
                 max_input_length: int,
@@ -27,7 +26,6 @@ def load_dataset(name:str,
     '''
     return DATASETS[name](
         tokenizer=tokenizer,
-        scratch_tokenizer_file=scratch_tokenizer,
         encoder_model=encoder,
         data_dir=data_dir,
         max_input_length=max_input_length,
@@ -55,13 +53,13 @@ class EEREDataset(BaseDataset):
             print(f"Loaded {len(data)} for split {split} of {self.name} with the sample rate is {self.sample}")
             for i, datapoint in enumerate(data):
                 # print(f"datapoint: {datapoint}")
-                triggers = [Entity(mention=trigger['mention'], id=trigger['possition']) 
+                triggers = [Entity(mention=trigger['mention'], id=trigger['position']) 
                             for trigger in datapoint['triggers']]
                 
                 relations = []
                 for relation in datapoint['labels']:
                     relation_type = self.relation_types[relation[2]]
-                    if relation_type.short == len(self.natural_relation_types.items()) - 1:
+                    if relation_type.natural == 'NoRel':
                         if random.uniform(0, 1) < self.sample:
                             relations.append(Relation(head=triggers[relation[0]], tail=triggers[relation[1]], type=relation_type))
                     else:
@@ -69,6 +67,7 @@ class EEREDataset(BaseDataset):
                 if len(relations) >= 1:
                     example = InputExample(
                                         id=i,
+                                        content=datapoint['content'],
                                         triggers=triggers,
                                         relations=relations,
                                         heads=datapoint['heads'],
@@ -92,4 +91,27 @@ class HiEveDataset(EEREDataset):
                             1: "SubSuper", 
                             2: "Coref", 
                             3: "NoRel"
+                            }
+
+
+@register_dataset
+class SubEventMulerxDataset(EEREDataset):
+    name = 'subevent_mulerx'
+    sample = 1.0
+
+    natural_relation_types = {
+                            0: "SuperSub", 
+                            1: "SubSuper",  
+                            2: "NoRel"
+                            }
+
+
+@register_dataset
+class ESLDataset(EEREDataset):
+    name = 'ESL'
+    sample = 1.0
+
+    natural_relation_types = {
+                            0: "PRECONDITION", 
+                            1: "NoRel"
                             }

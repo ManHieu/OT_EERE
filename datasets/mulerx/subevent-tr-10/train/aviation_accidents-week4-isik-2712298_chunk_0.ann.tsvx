@@ -1,0 +1,27 @@
+Text	AEROFLOT'UN 20 SEFER SAYILI UÇUŞU _ ( , ) 4 Ocak 1965'te Moskova'dan Almatı'ya yapılan bir tarifeli uçuş sırasında düşük görüş mesafesi koşullarında düşerek uçaktaki 103 kişiden 64'ünün ölmesiyle sonuçlanan bir Aeroflot uçuşudur .	Kaza yapan uçak , Kazakistan Sivil Havacılık Müdürlüğü Aeroflot'a ait bir İlyuşin İl - 18B CCCP - 75685 idi .	Uçak kaza yaptığında 6.802 uçuş saatine sahipti .	- Kaptan pilot Konstantin Sergeviç Artamonov - Gözetmen kaptan ve Kazakistan Sivil Havacılık Dairesi Başkanı Rishat Nurmukhametoviç Azakov - Yardımcı pilot Nikolay Aleksandroviç Slamikhin - Uçuş mühendisi Anatoliy Galiyeviç Şakirov - Seyrüseferci Vladimir Vasiliyeviç Pristavka - Radyo operatörü Nikolay Nikolayeviç Safonov	Uçuşun 4 Ocak'ta saat 07.30'da Domodedovo Havalimanı'ndan kalkması planlanmıştı ancak motor onarımları gerekmesi nedeniyle uçuş ertelendi .
+Event	T0	UÇUŞU	EVENT	28
+Event	T2	uçuş	EVENT	100
+Event	T3	düşerek	EVENT	149
+Event	T5	uçuşudur	EVENT	220
+Event	T7	uçuş	EVENT	368
+Event	T8	Uçuşun	EVENT	715
+Event	T9	planlanmıştı	EVENT	782
+Event	T10	ertelendi	EVENT	843
+Event	T1	ölmesiyle	EVENT	186
+Event	T4	Kaza	EVENT	231
+Event	T6	kaza	EVENT	346
+Event	T11	onarımları	EVENT	807
+Relation	T0	T5	NoRel	true	UÇUŞU	uçuşudur
+Relation	T10	T4	NoRel	true	ertelendi	Kaza
+Relation	T11	T3	NoRel	true	onarımları	düşerek
+Relation	T3	T1	NoRel	true	düşerek	ölmesiyle
+Relation	T3	T10	NoRel	true	düşerek	ertelendi
+Relation	T3	T11	NoRel	true	düşerek	onarımları
+Relation	T3	T2	NoRel	true	düşerek	uçuş
+Relation	T4	T6	NoRel	true	Kaza	kaza
+Relation	T4	T9	NoRel	true	Kaza	planlanmıştı
+Relation	T6	T1	NoRel	true	kaza	ölmesiyle
+Relation	T6	T4	NoRel	true	kaza	Kaza
+Relation	T7	T0	NoRel	true	uçuş	UÇUŞU
+Relation	T9	T1	NoRel	true	planlanmıştı	ölmesiyle
+Relation	T9	T3	NoRel	true	planlanmıştı	düşerek

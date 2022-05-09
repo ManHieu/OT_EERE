@@ -1,0 +1,21 @@
+Text	ٹاورز کے اگائے میں جغرافیائی ہندسی نمونوں اور قرآنی تحریروں پر مشتمل ہے جو بارش اور برف کی نمائش کے ساتھ تیزی سے خراب ہورہے ہیں ۔	وہ مزید آس پاس کی سڑک سے متاثر ہیں اور علاقہ وقفے وقفے سے سیلاب کا نشانہ ہے ۔	فائل: The story of architecture -	an outline of the styles in all countries ( 1896 ) ( 14766244092 ) .jpg| میتھیوز ، چارلس تھامسن ، 1896 میں لکھی گئی " فن تعمیر کی کہانی " میں غزنی مینار کی ایک مثال ۔	فائل: US agencies seek to preserve Ghazni Minarets DVIDS432801 .jpg | جولائی 2011 میں امریکی ہیریٹیج دستاویزی پروگرام مینار کا سروے کررہا ہے ۔
+Event	T0	بارش	EVENT	75
+Event	T1	نمائش	EVENT	91
+Event	T2	ہورہے	EVENT	118
+Event	T3	متاثر	EVENT	155
+Event	T4	سیلاب	EVENT	188
+Event	T5	story	EVENT	218
+Event	T6	لکھی	EVENT	349
+Event	T7	seek	EVENT	427
+Event	T8	preserve	EVENT	435
+Event	T9	کررہا	EVENT	541
+Relation	T0	T1	NoRel	true	بارش	نمائش
+Relation	T0	T3	NoRel	true	بارش	متاثر
+Relation	T1	T2	NoRel	true	نمائش	ہورہے
+Relation	T1	T7	NoRel	true	نمائش	seek
+Relation	T2	T7	NoRel	true	ہورہے	seek
+Relation	T3	T7	NoRel	true	متاثر	seek
+Relation	T4	T5	NoRel	true	سیلاب	story
+Relation	T4	T8	NoRel	true	سیلاب	preserve
+Relation	T8	T1	NoRel	true	preserve	نمائش
+Relation	T8	T4	NoRel	true	preserve	سیلاب

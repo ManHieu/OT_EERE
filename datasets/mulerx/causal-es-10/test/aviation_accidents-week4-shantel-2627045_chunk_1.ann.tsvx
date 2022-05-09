@@ -1,0 +1,29 @@
+Text	La aerolínea Yemenia ya estaba en la mira de las autoridades de seguridad aérea internacional antes que sucediera el siniestro .	Por otra parte , el Secretario de Estado de Transporte francés , Dominique Bussereau , afirmó que el avión había sido retirado de Francia debido a que presentaba varios defectos .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil - Vuelo 961 de Ethiopian Airlines - Vuelo 447 de Air France	- `` Oí voces en la oscuridad ´ ´ , contó la única sobreviviente del avión Airbus .	Cadena 3 Argentina .
+Event	T0	sucediera	EVENT	104
+Event	T1	siniestro	EVENT	117
+Event	T2	afirmó	EVENT	216
+Event	T3	retirado	EVENT	247
+Event	T4	Accidente	EVENT	311
+Event	T5	Accidentes	EVENT	343
+Event	T6	Accidentes	EVENT	407
+Event	T7	Vuelo	EVENT	463
+Event	T8	Vuelo	EVENT	497
+Event	T9	contó	EVENT	557
+Event	T10	sobreviviente	EVENT	572
+Event	T11	estaba	EVENT	24
+Event	T12	presentaba	EVENT	280
+Relation	T12	T3	CauseEffect	true	presentaba	retirado
+Relation	T3	T12	EffectCause	true	retirado	presentaba
+Relation	T0	T9	NoRel	true	sucediera	contó
+Relation	T10	T3	NoRel	true	sobreviviente	retirado
+Relation	T11	T1	NoRel	true	estaba	siniestro
+Relation	T2	T12	NoRel	true	afirmó	presentaba
+Relation	T5	T10	NoRel	true	Accidentes	sobreviviente
+Relation	T5	T2	NoRel	true	Accidentes	afirmó
+Relation	T6	T2	NoRel	true	Accidentes	afirmó
+Relation	T7	T12	NoRel	true	Vuelo	presentaba
+Relation	T7	T8	NoRel	true	Vuelo	Vuelo
+Relation	T8	T6	NoRel	true	Vuelo	Accidentes
+Relation	T8	T9	NoRel	true	Vuelo	contó
+Relation	T9	T2	NoRel	true	contó	afirmó
+Relation	T9	T6	NoRel	true	contó	Accidentes

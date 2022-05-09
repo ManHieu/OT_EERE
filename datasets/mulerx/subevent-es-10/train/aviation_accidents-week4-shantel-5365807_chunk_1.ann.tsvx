@@ -1,0 +1,29 @@
+Text	El avión era un Piper PA-34-200 Seneca I , registro RP-C4431 .	Además de Robredo y Abrazado había dos tripulantes a bordo ; el piloto , quien también era el CEO de Aviatour Air ( la compañía que operaba el avión ) ; y el copiloto , de nacionalidad nepalí .	Durante el vuelo hacia Naga la tripulación de la Seneca solicitó un aterrizaje de emergencia en el aeropuerto de Masbate , mencionando problemas con el motor .	En torno a las 15:30 , Abrazado envió un mensaje de texto , informando a quien les tenía que recoger de que regresaban a Cebú debido a problemas con una de las hélices [ sic ] .	También pidió que se les consiguiesen billetes para el vuelo más próximo a Mactan .
+Event	T0	registro	EVENT	43
+Event	T1	vuelo	EVENT	268
+Event	T2	solicitó	EVENT	313
+Event	T3	aterrizaje	EVENT	325
+Event	T4	emergencia	EVENT	339
+Event	T5	problemas	EVENT	392
+Event	T6	envió	EVENT	449
+Event	T7	informando	EVENT	477
+Event	T8	recoger	EVENT	510
+Event	T9	regresaban	EVENT	525
+Event	T10	problemas	EVENT	552
+Event	T11	consiguiesen	EVENT	620
+Relation	T6	T7	SuperSub	true	envió	informando
+Relation	T7	T6	SubSuper	true	informando	envió
+Relation	T10	T6	SuperSub	true	problemas	envió
+Relation	T6	T10	SubSuper	true	envió	problemas
+Relation	T1	T10	SuperSub	true	vuelo	problemas
+Relation	T10	T1	SubSuper	true	problemas	vuelo
+Relation	T10	T5	NoRel	true	problemas	problemas
+Relation	T10	T8	NoRel	true	problemas	recoger
+Relation	T11	T4	NoRel	true	consiguiesen	emergencia
+Relation	T2	T1	NoRel	true	solicitó	vuelo
+Relation	T2	T5	NoRel	true	solicitó	problemas
+Relation	T3	T6	NoRel	true	aterrizaje	envió
+Relation	T6	T9	NoRel	true	envió	regresaban
+Relation	T8	T3	NoRel	true	recoger	aterrizaje
+Relation	T9	T4	NoRel	true	regresaban	emergencia
+Relation	T9	T6	NoRel	true	regresaban	envió

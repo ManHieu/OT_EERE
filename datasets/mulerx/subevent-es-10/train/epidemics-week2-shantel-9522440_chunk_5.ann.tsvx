@@ -1,0 +1,46 @@
+Text	Luego lanzó un desafío al campeón Drew McIntyre por un combate por el título en SummerSlam .	Más tarde esa noche , McIntyre aceptó el desafío de Orton y luego derrotó a Dolph Ziggler en un Extreme Rules match en una revancha de The Horror Show en Extreme Rules , evitando que Ziggler ganara la oportunidad por el título .	Después del combate , Orton atacó a McIntyre con un _ RKO _ .	El episodio del 20 de julio de _ Raw _ , Andrade & Angel Garza perdieron ante los Campeones en Parejas de Raw The Street Profits ( Angelo Dawkins & Montez Ford ) .	La siguiente semana se pactó un combate entre Andrade & Garza , The Viking Raiders , y Cedric Alexander & Ricochet , donde Andrade y Garza ganaron una oportunidad titular en SummerSlam .
+Event	T1	desafío	EVENT	15
+Event	T10	oportunidad	EVENT	294
+Event	T11	título	EVENT	313
+Event	T12	combate	EVENT	334
+Event	T13	atacó	EVENT	350
+Event	T14	episodio	EVENT	387
+Event	T15	perdieron	EVENT	447
+Event	T16	pactó	EVENT	571
+Event	T17	combate	EVENT	580
+Event	T18	ganaron	EVENT	687
+Event	T4	aceptó	EVENT	124
+Event	T5	desafío	EVENT	134
+Event	T6	derrotó	EVENT	159
+Event	T7	revancha	EVENT	216
+Event	T8	evitando	EVENT	263
+Event	T9	ganara	EVENT	284
+Event	T19	SummerSlam	EVENT	80
+Relation	T1	T11	NoRel	true	desafío	título
+Relation	T10	T16	NoRel	true	oportunidad	pactó
+Relation	T10	T17	NoRel	true	oportunidad	combate
+Relation	T11	T16	NoRel	true	título	pactó
+Relation	T11	T18	NoRel	true	título	ganaron
+Relation	T12	T11	NoRel	true	combate	título
+Relation	T13	T1	NoRel	true	atacó	desafío
+Relation	T14	T1	NoRel	true	episodio	desafío
+Relation	T14	T4	NoRel	true	episodio	aceptó
+Relation	T14	T6	NoRel	true	episodio	derrotó
+Relation	T14	T9	NoRel	true	episodio	ganara
+Relation	T15	T11	NoRel	true	perdieron	título
+Relation	T15	T12	NoRel	true	perdieron	combate
+Relation	T16	T5	NoRel	true	pactó	desafío
+Relation	T18	T10	NoRel	true	ganaron	oportunidad
+Relation	T18	T9	NoRel	true	ganaron	ganara
+Relation	T19	T14	NoRel	true	SummerSlam	episodio
+Relation	T19	T15	NoRel	true	SummerSlam	perdieron
+Relation	T4	T13	NoRel	true	aceptó	atacó
+Relation	T4	T5	NoRel	true	aceptó	desafío
+Relation	T6	T1	NoRel	true	derrotó	desafío
+Relation	T6	T11	NoRel	true	derrotó	título
+Relation	T6	T12	NoRel	true	derrotó	combate
+Relation	T6	T9	NoRel	true	derrotó	ganara
+Relation	T7	T17	NoRel	true	revancha	combate
+Relation	T8	T4	NoRel	true	evitando	aceptó
+Relation	T9	T14	NoRel	true	ganara	episodio
+Relation	T9	T6	NoRel	true	ganara	derrotó

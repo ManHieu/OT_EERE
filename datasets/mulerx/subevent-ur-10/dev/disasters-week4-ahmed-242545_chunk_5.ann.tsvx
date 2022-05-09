@@ -1,0 +1,24 @@
+Text	جموں و کمشیر کے وزیرِ اعلٰی عمر عبد للہ کے مطابق دہلی سے کشتیاں لائی گئیں تاکہ لوگوں کا انخلاء کیا جا سکے اور ہوائی فوج نے شہر میں امدادی کارروائیاں کیں ۔	ریاست بھر میں 50 کے لگ بھگ پلوں کو نقصان پہنچا ہے ۔	تاہم سیلابی پانی کے اترنے کے بعد ہی نقصانات کا درست تخمینہ لگایا جا سکے گا ۔	ریاستی حکومت نے متائثرہ افراد کی امداد کے لیے مرکزی حکومت سے 25٫000 خیمے اور 40٫000 کمبل مانگے ہیں ۔	جموں ڈویژن میں سخت بارش کے بعد تودے گرنے لگ گئے تھے جن سے سڑکوں ، درجنوں پلوں ، عمارات اور فصلوں کو شدید نقصان پہنچا ۔
+Event	T0	انخلاء	EVENT	88
+Event	T1	پہنچا	EVENT	196
+Event	T2	اترنے	EVENT	227
+Event	T3	لگایا	EVENT	266
+Event	T4	بارش	EVENT	404
+Event	T7	کارروائیاں	EVENT	138
+Event	T8	نقصان	EVENT	190
+Event	T9	نقصانات	EVENT	243
+Event	T10	متائثرہ	EVENT	300
+Event	T11	مانگے	EVENT	373
+Event	T12	تودے	EVENT	416
+Event	T13	گرنے	EVENT	421
+Event	T5	نقصان	EVENT	490
+Relation	T10	T2	NoRel	true	متائثرہ	اترنے
+Relation	T11	T9	NoRel	true	مانگے	نقصانات
+Relation	T2	T12	NoRel	true	اترنے	تودے
+Relation	T3	T0	NoRel	true	لگایا	انخلاء
+Relation	T3	T2	NoRel	true	لگایا	اترنے
+Relation	T4	T3	NoRel	true	بارش	لگایا
+Relation	T5	T1	NoRel	true	نقصان	پہنچا
+Relation	T7	T10	NoRel	true	کارروائیاں	متائثرہ
+Relation	T8	T9	NoRel	true	نقصان	نقصانات
+Relation	T9	T11	NoRel	true	نقصانات	مانگے

@@ -1,0 +1,45 @@
+Text	Por ejemplo , en junio de 1980 , se conoció que el gobierno de Perú colaboró con agentes argentinos del Batallón de Inteligencia 601 en el secuestro , tortura y desaparición de un grupo de Montoneros que se encontraban exiliados en Lima .	Los " archivos del terror " también revelaron la cooperación , en mayor o menor grado , de los gobiernos de Colombia y de Venezuela , ( se supone que Luis Posada Carriles se encontraba en la reunión secreta que ordenó el asesinato de Orlando Letelier con un coche bomba ) .	Se ha alegado también que la organización paramilitar colombiana conocida como Alianza Americana Anticomunista puede haber cooperado con la Operación Cóndor .	Brasil firmó el acuerdo más tarde , en junio de 1976 , y se negó a involucrarse en acciones fuera de América Latina .	Durante este período de políticas neoliberales , el nivel de endeudamiento contraído ilegalmente por las dictaduras militares alcanzó aumento considerablemente respecto a los gobiernos anteriores .
+Event	T0	conoció	EVENT	36
+Event	T1	secuestro	EVENT	139
+Event	T2	tortura	EVENT	151
+Event	T3	desaparición	EVENT	161
+Event	T4	exiliados	EVENT	219
+Event	T5	terror	EVENT	258
+Event	T6	revelaron	EVENT	275
+Event	T7	cooperación	EVENT	288
+Event	T8	reunión	EVENT	430
+Event	T9	ordenó	EVENT	450
+Event	T10	asesinato	EVENT	460
+Event	T11	alegado	EVENT	519
+Event	T12	cooperado	EVENT	636
+Event	T13	acuerdo	EVENT	688
+Event	T14	negó	EVENT	732
+Event	T15	acciones	EVENT	755
+Event	T16	contraído	EVENT	865
+Event	T17	aumento	EVENT	924
+Event	T18	colaboró	EVENT	68
+Relation	T1	T6	NoRel	true	secuestro	revelaron
+Relation	T10	T16	NoRel	true	asesinato	contraído
+Relation	T10	T7	NoRel	true	asesinato	cooperación
+Relation	T11	T15	NoRel	true	alegado	acciones
+Relation	T11	T6	NoRel	true	alegado	revelaron
+Relation	T12	T5	NoRel	true	cooperado	terror
+Relation	T13	T11	NoRel	true	acuerdo	alegado
+Relation	T13	T14	NoRel	true	acuerdo	negó
+Relation	T13	T16	NoRel	true	acuerdo	contraído
+Relation	T13	T18	NoRel	true	acuerdo	colaboró
+Relation	T15	T10	NoRel	true	acciones	asesinato
+Relation	T18	T14	NoRel	true	colaboró	negó
+Relation	T2	T16	NoRel	true	tortura	contraído
+Relation	T2	T6	NoRel	true	tortura	revelaron
+Relation	T3	T17	NoRel	true	desaparición	aumento
+Relation	T3	T6	NoRel	true	desaparición	revelaron
+Relation	T3	T7	NoRel	true	desaparición	cooperación
+Relation	T5	T0	NoRel	true	terror	conoció
+Relation	T5	T9	NoRel	true	terror	ordenó
+Relation	T6	T1	NoRel	true	revelaron	secuestro
+Relation	T6	T10	NoRel	true	revelaron	asesinato
+Relation	T9	T0	NoRel	true	ordenó	conoció
+Relation	T9	T12	NoRel	true	ordenó	cooperado
+Relation	T9	T13	NoRel	true	ordenó	acuerdo
+Relation	T9	T3	NoRel	true	ordenó	desaparición

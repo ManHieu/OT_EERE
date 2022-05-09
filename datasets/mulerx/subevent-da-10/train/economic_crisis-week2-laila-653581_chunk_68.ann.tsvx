@@ -1,0 +1,24 @@
+Text	Først fra omkring 1300 kan man se en vis støtte fra byen .	Ordrer til alle magistrater om kun at bære venetianske stoffer betød en vækst i produktionen .	Udviklingen af uldindustrien blev imidlertid bremset af handels- og skatteinteresser .	På den ene side importerede købmændene det fineste uld fra Flandern for at kunne eksportere det til Mellemøsten .	Trods det blev meget af det i Venedig , hvilket skadede den lokale industri .
+Event	T0	se	EVENT	31
+Event	T1	støtte	EVENT	41
+Event	T2	Ordrer	EVENT	59
+Event	T3	bære	EVENT	97
+Event	T4	betød	EVENT	122
+Event	T5	vækst	EVENT	131
+Event	T6	Udviklingen	EVENT	154
+Event	T7	bremset	EVENT	199
+Event	T8	blev	EVENT	365
+Event	T9	skadede	EVENT	403
+Relation	T4	T5	SuperSub	true	betød	vækst
+Relation	T5	T4	SubSuper	true	vækst	betød
+Relation	T2	T3	SuperSub	true	Ordrer	bære
+Relation	T3	T2	SubSuper	true	bære	Ordrer
+Relation	T6	T7	SuperSub	true	Udviklingen	bremset
+Relation	T7	T6	SubSuper	true	bremset	Udviklingen
+Relation	T3	T1	NoRel	true	bære	støtte
+Relation	T3	T7	NoRel	true	bære	bremset
+Relation	T4	T1	NoRel	true	betød	støtte
+Relation	T5	T2	NoRel	true	vækst	Ordrer
+Relation	T5	T3	NoRel	true	vækst	bære
+Relation	T9	T1	NoRel	true	skadede	støtte
+Relation	T9	T4	NoRel	true	skadede	betød

@@ -1,0 +1,34 @@
+Text	Taleplerinin bütününü üretim araçlarının toplumsallaştırılması içeriyordu .	Toplumsallaştırma hareketi özelikle Ruhr bölgesinde ve Halle , Marseburg gibi işçi bölgelerinde ortaya çıkmıştı .	Parlamentodan ve partilerden umudu kesen işçi sınıfı , ekonomik duruma karşı tepkilerinin artmasıyla harekete geçmişti .	SPD’li Noske’nin yönettiği Freikorpslar özellikle Ruhr bölgesi ve işçi sınıfının devrimci eylemin yükseldiği yerlerde karşıdevrim terörünü başlatmışlardı .	Mart 1920’ye kadar karşıdevrim binlerce devrimciyi katletti .
+Event	T0	Taleplerinin	EVENT	0
+Event	T1	içeriyordu	EVENT	63
+Event	T2	hareketi	EVENT	94
+Event	T3	geçmişti	EVENT	300
+Event	T4	yükseldiği	EVENT	409
+Event	T5	başlatmışlardı	EVENT	450
+Event	T6	karşıdevrim	EVENT	486
+Event	T7	katletti	EVENT	518
+Event	T8	çıkmıştı	EVENT	179
+Event	T9	kesen	EVENT	225
+Event	T10	artmasıyla	EVENT	280
+Event	T11	yönettiği	EVENT	328
+Relation	T10	T3	CauseEffect	true	artmasıyla	geçmişti
+Relation	T3	T10	EffectCause	true	geçmişti	artmasıyla
+Relation	T9	T3	CauseEffect	true	kesen	geçmişti
+Relation	T3	T9	EffectCause	true	geçmişti	kesen
+Relation	T4	T5	CauseEffect	true	yükseldiği	başlatmışlardı
+Relation	T5	T4	EffectCause	true	başlatmışlardı	yükseldiği
+Relation	T6	T7	CauseEffect	true	karşıdevrim	katletti
+Relation	T7	T6	EffectCause	true	katletti	karşıdevrim
+Relation	T1	T2	NoRel	true	içeriyordu	hareketi
+Relation	T10	T11	NoRel	true	artmasıyla	yönettiği
+Relation	T10	T8	NoRel	true	artmasıyla	çıkmıştı
+Relation	T11	T3	NoRel	true	yönettiği	geçmişti
+Relation	T2	T0	NoRel	true	hareketi	Taleplerinin
+Relation	T2	T1	NoRel	true	hareketi	içeriyordu
+Relation	T3	T0	NoRel	true	geçmişti	Taleplerinin
+Relation	T4	T9	NoRel	true	yükseldiği	kesen
+Relation	T5	T0	NoRel	true	başlatmışlardı	Taleplerinin
+Relation	T6	T1	NoRel	true	karşıdevrim	içeriyordu
+Relation	T6	T11	NoRel	true	karşıdevrim	yönettiği
+Relation	T7	T5	NoRel	true	katletti	başlatmışlardı
+Relation	T9	T0	NoRel	true	kesen	Taleplerinin

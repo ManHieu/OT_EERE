@@ -1,0 +1,24 @@
+Text	İki yolcu yolculuklarına demiryolu ile devam etmeye karar verdi .	514 sefer sayılı uçuşun yolcuları , uçuş ekibinin yaptıklarından dolayı onurlandırılmasını istedi .	Mürettebat , kaza soruşturmasında yetkililere yardımcı olmak için Ukhta'da kaldı .	Başarılı acil iniş Rus havacılık uzmanları tarafından bir mucize olarak adlandırıldı .	Rusya Ulaştırma Bakanı Igor Levitin mürettebatla bir araya gelerek kazadaki " kahramanca , kararlı ve profesyonel davranışları " için teşekkür etti .
+Event	T1	istedi	EVENT	157
+Event	T11	yaptıklarından	EVENT	116
+Event	T12	onurlandırılmasını	EVENT	138
+Event	T16	kazadaki	EVENT	403
+Event	T2	soruşturmasında	EVENT	184
+Event	T3	kaldı	EVENT	241
+Event	T4	iniş	EVENT	263
+Event	T5	adlandırıldı	EVENT	321
+Event	T6	teşekkür etti	EVENT	470
+Event	T7	yolculuklarına	EVENT	10
+Relation	T16	T11	SuperSub	true	kazadaki	yaptıklarından
+Relation	T11	T16	SubSuper	true	yaptıklarından	kazadaki
+Relation	T7	T4	SuperSub	true	yolculuklarına	iniş
+Relation	T4	T7	SubSuper	true	iniş	yolculuklarına
+Relation	T12	T4	NoRel	true	onurlandırılmasını	iniş
+Relation	T16	T3	NoRel	true	kazadaki	kaldı
+Relation	T2	T12	NoRel	true	soruşturmasında	onurlandırılmasını
+Relation	T3	T16	NoRel	true	kaldı	kazadaki
+Relation	T3	T5	NoRel	true	kaldı	adlandırıldı
+Relation	T4	T5	NoRel	true	iniş	adlandırıldı
+Relation	T6	T11	NoRel	true	teşekkür etti	yaptıklarından
+Relation	T7	T16	NoRel	true	yolculuklarına	kazadaki
+Relation	T7	T5	NoRel	true	yolculuklarına	adlandırıldı

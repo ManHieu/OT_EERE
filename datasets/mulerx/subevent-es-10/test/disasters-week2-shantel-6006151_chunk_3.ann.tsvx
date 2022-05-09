@@ -1,0 +1,13 @@
+Text	Sin embargo , Al Qaeda negó su responsabilidad en la explosión .	Existen diversos rumores que no han sido verificados , como por ejemplo , que se trataría de un complot del gobierno para apaciguar a los manifestantes durante la primavera árabe .	El 28 de octubre de 2011 , en el tribunal de Rabat , Adel al-Othmani fue condenado a muerte por su participación en el atentado .	Hakim Dah recibió una sentencia de cadena perpetua .	A otras cuatro personas se les dieron cuatro años y tres recibieron una condena de dos años por su participación .
+Event	T0	negó	EVENT	23
+Event	T1	explosión	EVENT	53
+Event	T10	sentencia	EVENT	398
+Event	T11	dieron	EVENT	460
+Event	T13	condena	EVENT	501
+Event	T14	participación	EVENT	528
+Event	T7	participación	EVENT	345
+Event	T8	atentado	EVENT	365
+Event	T2	condenado	EVENT	319
+Relation	T10	T8	NoRel	true	sentencia	atentado
+Relation	T11	T8	NoRel	true	dieron	atentado
+Relation	T2	T7	NoRel	true	condenado	participación

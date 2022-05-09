@@ -1,0 +1,45 @@
+Text	En el momento del accidente , la aerolínea se encontraba operando entre Camp Bastion y Dubái por un plazo de un mes .	El vuelo siniestrado partió de Camp Bastion e hizo una escala en la Base Aérea de Bagram para repostar .	El avión había despegado desde la pista 03 de Bagram a las 15:30 hora local ( 11:00 UTC ) y estaba sobrepasando los cuando su morro se elevó rápidamente .	Según una información no confirmada , fue escuchado un miembro de la tripulación por la banda de radio VHF reportando que parte de la carga de cinco vehículos militares pesados de la cabina de carga se habían soltado ; el avión entonces entró en pérdida y se estrelló .	El sitio del siniestro estaba al final de la pista 03 , dentro del perímetro de la base aérea .
+Event	T0	accidente	EVENT	18
+Event	T1	operando	EVENT	57
+Event	T2	partió	EVENT	139
+Event	T3	hizo	EVENT	164
+Event	T4	escala	EVENT	173
+Event	T5	repostar	EVENT	212
+Event	T6	despegado	EVENT	238
+Event	T7	sobrepasando	EVENT	322
+Event	T8	morro	EVENT	349
+Event	T9	elevó	EVENT	358
+Event	T10	confirmada	EVENT	403
+Event	T11	escuchado	EVENT	420
+Event	T12	reportando	EVENT	485
+Event	T13	carga	EVENT	512
+Event	T14	soltado	EVENT	587
+Event	T15	pérdida	EVENT	624
+Event	T16	estrelló	EVENT	637
+Event	T17	siniestro	EVENT	661
+Relation	T15	T16	CauseEffect	true	pérdida	estrelló
+Relation	T16	T15	EffectCause	true	estrelló	pérdida
+Relation	T0	T15	NoRel	true	accidente	pérdida
+Relation	T1	T4	NoRel	true	operando	escala
+Relation	T10	T17	NoRel	true	confirmada	siniestro
+Relation	T10	T4	NoRel	true	confirmada	escala
+Relation	T11	T12	NoRel	true	escuchado	reportando
+Relation	T11	T2	NoRel	true	escuchado	partió
+Relation	T13	T0	NoRel	true	carga	accidente
+Relation	T13	T9	NoRel	true	carga	elevó
+Relation	T14	T13	NoRel	true	soltado	carga
+Relation	T14	T15	NoRel	true	soltado	pérdida
+Relation	T14	T16	NoRel	true	soltado	estrelló
+Relation	T15	T17	NoRel	true	pérdida	siniestro
+Relation	T16	T14	NoRel	true	estrelló	soltado
+Relation	T17	T2	NoRel	true	siniestro	partió
+Relation	T3	T7	NoRel	true	hizo	sobrepasando
+Relation	T4	T2	NoRel	true	escala	partió
+Relation	T5	T8	NoRel	true	repostar	morro
+Relation	T6	T15	NoRel	true	despegado	pérdida
+Relation	T6	T17	NoRel	true	despegado	siniestro
+Relation	T6	T8	NoRel	true	despegado	morro
+Relation	T8	T13	NoRel	true	morro	carga
+Relation	T8	T17	NoRel	true	morro	siniestro
+Relation	T8	T3	NoRel	true	morro	hizo
+Relation	T9	T12	NoRel	true	elevó	reportando

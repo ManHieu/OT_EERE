@@ -1,0 +1,27 @@
+Text	امریکا مخالف جذبات ، اصطلاح سے مراد ہے امریکی پالیسیوں ، ثقافت ، سماج ، معاشیات ، بین الاقوامی یا امریکا کی منفی سپر پاور کردار کی مخالفت یا دشمنی ۔	1. امریکی صدر ہیری ٹرومین نے ہیروشیما ناگاساکی کو جوہری طاقت کا کا نشانہ بنا تھا اور سوا لاکھ جاپانی زندہ جل گئے تھے ۔	2 . ویتنام کے تیرہ فیصد جنگلات اور زرعی زمین کو ایجنٹ اورنج نامی کیمیکل چھڑک کر زہریلا کر ڈالا تھا ۔	3 . ایران عراق جنگ میں عراق کی مدد اور عراق میں حلب جاہ شہر میں صدام حسین نے پانچ ہزار عراقی شہریوں کو گیس کے چھڑکاؤ سے مار ڈالے تھے اس کا الزام بھی امریک مدد پر ہے ۔	4 . واشنگٹن ہی نے بذریعہ اقوامِ متحدہ عراق کی دس برس کی مکمل اقتصادی ناکہ بندی کی جس کے سبب پانچ لاکھ سے زائد بچے مرگئے یا اپاہج ہو گئے ۔
+Event	T0	بنا	EVENT	222
+Event	T1	چھڑک	EVENT	340
+Event	T2	ڈالا	EVENT	358
+Event	T3	مدد	EVENT	400
+Event	T4	چھڑکاؤ	EVENT	479
+Event	T5	ڈالے	EVENT	493
+Event	T6	الزام	EVENT	508
+Event	T7	مرگئے	EVENT	650
+Event	T8	گئے	EVENT	668
+Event	T9	مخالفت	EVENT	131
+Event	T10	جل	EVENT	255
+Relation	T0	T10	CauseEffect	true	بنا	جل
+Relation	T10	T0	EffectCause	true	جل	بنا
+Relation	T4	T5	CauseEffect	true	چھڑکاؤ	ڈالے
+Relation	T5	T4	EffectCause	true	ڈالے	چھڑکاؤ
+Relation	T1	T2	NoRel	true	چھڑک	ڈالا
+Relation	T1	T4	NoRel	true	چھڑک	چھڑکاؤ
+Relation	T1	T7	NoRel	true	چھڑک	مرگئے
+Relation	T3	T2	NoRel	true	مدد	ڈالا
+Relation	T4	T6	NoRel	true	چھڑکاؤ	الزام
+Relation	T6	T2	NoRel	true	الزام	ڈالا
+Relation	T7	T2	NoRel	true	مرگئے	ڈالا
+Relation	T7	T3	NoRel	true	مرگئے	مدد
+Relation	T7	T9	NoRel	true	مرگئے	مخالفت
+Relation	T9	T4	NoRel	true	مخالفت	چھڑکاؤ
+Relation	T9	T7	NoRel	true	مخالفت	مرگئے

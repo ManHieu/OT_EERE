@@ -1,0 +1,11 @@
+Text	Bunun dışında “ sabit “ yıldızların hayali bir küreye sabitleştirilmiş olmasındansa uzak değişken mesafede olduklarını varsayar .	Yıldızların en ince eterde veya hemen göze çarpmayan beşinci özde ya da boşlukta konumlandığını ifade etmiştir – Yıldızlar hiç kimsenin hiçbir şekilde bilmediği bir maddeden oluşan dev kürenin kuvvetli helezonu karşısında konumlarını nasıl korurlar ?	İngilizce bir kelime olan ve Gilbert’in 1600’deki “ koku gibi ” anlamındaki yeni Latin kelimesi electricus dan gelen “ elektrik ” ilk kez 1646’da Thomas Browne tarafından kullanılmıştır .	Bu terim o dönemlerde 13. yüzyıldan beri kullanılmaktaydı , ancak onu ilk defa “ çekici vasıflarında koku gibi ” anlamında kullanan kişi Gilberttir .	Bu nesnelerin sürtünmesinin nesneye karşılık çekim etkisi yaratan sözde istenmeyen kokuları yok ettiğini tanımıştır .
+Event	T1	varsayar	EVENT	119
+Event	T2	kullanılmıştır	EVENT	552
+Event	T3	kullanan	EVENT	692
+Event	T4	sürtünmesinin	EVENT	733
+Event	T7	tanımıştır	EVENT	824
+Relation	T7	T4	SuperSub	true	tanımıştır	sürtünmesinin
+Relation	T4	T7	SubSuper	true	sürtünmesinin	tanımıştır
+Relation	T7	T3	SuperSub	true	tanımıştır	kullanan
+Relation	T3	T7	SubSuper	true	kullanan	tanımıştır
+Relation	T2	T1	NoRel	true	kullanılmıştır	varsayar

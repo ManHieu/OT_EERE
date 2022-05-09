@@ -1,0 +1,32 @@
+Text	14 Kasım 2017'de ise ülke genelinde bir günlük millî yas ilan edildi .	Irak'ta 7 kişi yaşamını yitirdi , 535 kişi ise yaralandı .	Ülkede en fazla zararı Süleymaniye'nin 75 kilometre doğusundaki Derbendihan kasabası gördü .	Depremin etkisiyle dağdan kopan kayaların Derbendihan Barajı gövdesindeki yapılara zarar verdiği , barajda ve çevredeki yollarda çatlakların oluştuğu açıklandı .	Irak Kürt Bölgesel Yönetimi Ziraat ve Su Kaynakları Bakanı Abdulsettar Mecid ise barajda hasar meydana geldiğini , zararın boyutlarının tespiti için çalışma başlatıldığını bildirdi .
+Event	T0	edildi	EVENT	62
+Event	T1	yitirdi	EVENT	95
+Event	T2	yaralandı	EVENT	118
+Event	T3	gördü	EVENT	215
+Event	T4	kopan	EVENT	249
+Event	T5	verdiği	EVENT	312
+Event	T6	açıklandı	EVENT	373
+Event	T9	bildirdi	EVENT	557
+Event	T10	Depremin	EVENT	223
+Event	T7	hasar	EVENT	474
+Relation	T10	T0	CauseEffect	true	Depremin	edildi
+Relation	T0	T10	EffectCause	true	edildi	Depremin
+Relation	T10	T1	CauseEffect	true	Depremin	yitirdi
+Relation	T1	T10	EffectCause	true	yitirdi	Depremin
+Relation	T10	T3	CauseEffect	true	Depremin	gördü
+Relation	T3	T10	EffectCause	true	gördü	Depremin
+Relation	T4	T5	CauseEffect	true	kopan	verdiği
+Relation	T5	T4	EffectCause	true	verdiği	kopan
+Relation	T10	T4	CauseEffect	true	Depremin	kopan
+Relation	T4	T10	EffectCause	true	kopan	Depremin
+Relation	T10	T6	CauseEffect	true	Depremin	açıklandı
+Relation	T6	T10	EffectCause	true	açıklandı	Depremin
+Relation	T10	T9	CauseEffect	true	Depremin	bildirdi
+Relation	T9	T10	EffectCause	true	bildirdi	Depremin
+Relation	T1	T9	NoRel	true	yitirdi	bildirdi
+Relation	T2	T10	NoRel	true	yaralandı	Depremin
+Relation	T2	T5	NoRel	true	yaralandı	verdiği
+Relation	T5	T7	NoRel	true	verdiği	hasar
+Relation	T7	T2	NoRel	true	hasar	yaralandı
+Relation	T9	T3	NoRel	true	bildirdi	gördü
+Relation	T9	T5	NoRel	true	bildirdi	verdiği

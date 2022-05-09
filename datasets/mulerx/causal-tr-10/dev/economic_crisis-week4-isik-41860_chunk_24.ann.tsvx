@@ -1,0 +1,25 @@
+Text	Resmi medyadan bilgi alamayan halk , Timişoara Olayları’nı Voice of America ( Amerika’nın Sesi Radyosu ) ve Radio Free Europe ( Özgür Avrupa Radyosu ) gibi dış kaynaklardan veya ağızdan ağza söylentilerle öğrendiler .	Ertesi gün 21 Aralık’da , büyük bir gösteri sahnelendi .	Resmi medya bu gösteriyi 1968 yılında Çavuşesku’nun Varşova Paktı güçlerinin Çekoslovakya'nın işgali karşı konuşmasından öykünerek Çavuşesku’yu desteklemek amacıyla kendiliğinden toplanan bir gösteri olarak sundu .	21 Aralık’da Devrim Meydanı’daki ( Piata Revolutie ) büyük gösteri , rayından çıkarak kaosa dönüştü .	Halkın konuşmasını yuhalamaya başladığında , olayların ciddiyetini anlamaya başladığını gösteren Çavuşesku’nun yüzünün aldığı şekil , Doğu Bloku’nun çöküşünü tanımlayan anlardan biri olarak kaldı .
+Event	T0	öğrendiler	EVENT	205
+Event	T1	sahnelendi	EVENT	262
+Event	T4	sundu	EVENT	482
+Event	T6	dönüştü	EVENT	582
+Event	T2	çıkarak	EVENT	568
+Event	T3	başladığında	EVENT	622
+Event	T5	başladığını	EVENT	668
+Event	T7	şekil	EVENT	718
+Event	T8	çöküşünü	EVENT	741
+Relation	T2	T6	CauseEffect	true	çıkarak	dönüştü
+Relation	T6	T2	EffectCause	true	dönüştü	çıkarak
+Relation	T3	T5	CauseEffect	true	başladığında	başladığını
+Relation	T5	T3	EffectCause	true	başladığını	başladığında
+Relation	T5	T7	CauseEffect	true	başladığını	şekil
+Relation	T7	T5	EffectCause	true	şekil	başladığını
+Relation	T0	T4	NoRel	true	öğrendiler	sundu
+Relation	T1	T8	NoRel	true	sahnelendi	çöküşünü
+Relation	T2	T0	NoRel	true	çıkarak	öğrendiler
+Relation	T2	T1	NoRel	true	çıkarak	sahnelendi
+Relation	T2	T5	NoRel	true	çıkarak	başladığını
+Relation	T4	T0	NoRel	true	sundu	öğrendiler
+Relation	T4	T1	NoRel	true	sundu	sahnelendi
+Relation	T5	T2	NoRel	true	başladığını	çıkarak
+Relation	T8	T3	NoRel	true	çöküşünü	başladığında

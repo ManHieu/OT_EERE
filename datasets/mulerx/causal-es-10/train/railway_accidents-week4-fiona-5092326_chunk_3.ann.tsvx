@@ -1,0 +1,50 @@
+Text	El miércoles 22 de febrero de 2012 , a las 08:33 a.m. , el tren № 3772 de la línea Sarmiento , identificado con la chapa 16 , que se encontraba llegando a la plataforma número 2 de la estación terminal de Once , no detuvo su marcha y colisionó con los paragolpes de contención .	Los primeros tres coches se aplastaron , ocasionando los heridos más graves .	Según la BBC " uno de los coches se introdujo seis metros dentro del próximo .	"	Muchos pasajeros informaron haber oído el aplastamiento a modo de una gran explosión , provocando una onda expansiva que ocasionó la rotura de todos los vidrios .
+Event	T0	identificado	EVENT	95
+Event	T1	llegando	EVENT	144
+Event	T2	detuvo	EVENT	215
+Event	T3	marcha	EVENT	225
+Event	T4	colisionó	EVENT	234
+Event	T5	contención	EVENT	266
+Event	T6	aplastaron	EVENT	307
+Event	T7	ocasionando	EVENT	320
+Event	T8	heridos	EVENT	336
+Event	T9	introdujo	EVENT	393
+Event	T10	informaron	EVENT	455
+Event	T11	oído	EVENT	472
+Event	T12	aplastamiento	EVENT	480
+Event	T13	explosión	EVENT	513
+Event	T14	provocando	EVENT	525
+Event	T15	expansiva	EVENT	545
+Event	T16	ocasionó	EVENT	559
+Event	T17	rotura	EVENT	571
+Relation	T2	T4	CauseEffect	true	detuvo	colisionó
+Relation	T4	T2	EffectCause	true	colisionó	detuvo
+Relation	T0	T8	NoRel	true	identificado	heridos
+Relation	T1	T9	NoRel	true	llegando	introdujo
+Relation	T10	T16	NoRel	true	informaron	ocasionó
+Relation	T11	T15	NoRel	true	oído	expansiva
+Relation	T11	T2	NoRel	true	oído	detuvo
+Relation	T11	T6	NoRel	true	oído	aplastaron
+Relation	T11	T8	NoRel	true	oído	heridos
+Relation	T13	T5	NoRel	true	explosión	contención
+Relation	T13	T9	NoRel	true	explosión	introdujo
+Relation	T14	T12	NoRel	true	provocando	aplastamiento
+Relation	T15	T16	NoRel	true	expansiva	ocasionó
+Relation	T16	T6	NoRel	true	ocasionó	aplastaron
+Relation	T17	T6	NoRel	true	rotura	aplastaron
+Relation	T17	T8	NoRel	true	rotura	heridos
+Relation	T2	T10	NoRel	true	detuvo	informaron
+Relation	T2	T5	NoRel	true	detuvo	contención
+Relation	T3	T14	NoRel	true	marcha	provocando
+Relation	T3	T4	NoRel	true	marcha	colisionó
+Relation	T3	T6	NoRel	true	marcha	aplastaron
+Relation	T4	T0	NoRel	true	colisionó	identificado
+Relation	T4	T12	NoRel	true	colisionó	aplastamiento
+Relation	T4	T13	NoRel	true	colisionó	explosión
+Relation	T4	T3	NoRel	true	colisionó	marcha
+Relation	T6	T10	NoRel	true	aplastaron	informaron
+Relation	T6	T12	NoRel	true	aplastaron	aplastamiento
+Relation	T6	T16	NoRel	true	aplastaron	ocasionó
+Relation	T7	T8	NoRel	true	ocasionando	heridos
+Relation	T7	T9	NoRel	true	ocasionando	introdujo
+Relation	T8	T7	NoRel	true	heridos	ocasionando

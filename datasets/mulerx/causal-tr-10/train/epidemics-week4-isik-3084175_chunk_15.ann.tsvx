@@ -1,0 +1,21 @@
+Text	Böylece , Washington bu kişilerin geliştirdikleri avantajlarını erkenden fark etti .	Boston'daki bir salgın sırasında Washington , yalnızca daha önce çiçek hastalığına yakalanmış erkeklerden oluşan birlikler oluşturdu .	Bununla , hem askerlerini koruyabildi hem de Mart 1776'daki çiçek hastalığı salgını sırasında Boston ve İngilizlerin hastalık karşısındaki savunmasızlığından faydalanabildi .	Başlangıçta , George Washington birliklerini aşılamak konusunda isteksizdi .	Ancak adamlarının çoğunun çiçek hastalığına kurban gitmesini izlerken Washington , birliklerini sıhhi ve karantina yöntemleriyle sağlıklı tutabileceğine inanıyordu .
+Event	T0	etti	EVENT	78
+Event	T1	salgın	EVENT	101
+Event	T2	yakalanmış	EVENT	168
+Event	T3	oluşturdu	EVENT	208
+Event	T4	salgını	EVENT	296
+Event	T5	hastalık	EVENT	337
+Event	T6	faydalanabildi	EVENT	378
+Event	T7	inanıyordu	EVENT	625
+Event	T8	koruyabildi	EVENT	246
+Event	T9	aşılamak	EVENT	440
+Event	T10	izlerken	EVENT	533
+Relation	T3	T8	CauseEffect	true	oluşturdu	koruyabildi
+Relation	T8	T3	EffectCause	true	koruyabildi	oluşturdu
+Relation	T3	T6	CauseEffect	true	oluşturdu	faydalanabildi
+Relation	T6	T3	EffectCause	true	faydalanabildi	oluşturdu
+Relation	T0	T9	NoRel	true	etti	aşılamak
+Relation	T2	T7	NoRel	true	yakalanmış	inanıyordu
+Relation	T5	T6	NoRel	true	hastalık	faydalanabildi
+Relation	T6	T0	NoRel	true	faydalanabildi	etti
+Relation	T7	T0	NoRel	true	inanıyordu	etti

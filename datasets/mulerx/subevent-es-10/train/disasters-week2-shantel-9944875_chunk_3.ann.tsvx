@@ -1,0 +1,73 @@
+Text	Un accidente similar había ocurrido en el vuelo 80 de FedEx Express el año anterior , donde ambos miembros de la tripulación murieron en un aterrizaje con rebote .	Se sabía que las tripulaciones de vuelo encontraban difíciles de detectar los aterrizajes rebotados del MD-11 .	El informe final hizo varias recomendaciones para mejorar el entrenamiento , los procedimientos y los instrumentos de vuelo para ayudar a las tripulaciones a lidiar con aterrizajes con rebote .	- Vuelo 80 de FedEx Express : un MD-11 que rebotó y se volcó al aterrizar en 2009 - Vuelo 642 de China Airlines : un MD-11 que aterrizó con fuerza y se rompió en 1999 - Vuelo 14 de FedEx Express : un MD-11 que rebotó y volcó al aterrizar en 1997 - Lista de accidentes e incidentes relacionados con aviones comerciales	- Informe con fotografías de la aeronave siniestrada ( en árabe ) - Informe final ( Archivo ) - Autoridad General de Aviación Civil
+Event	T1	vuelo	EVENT	42
+Event	T10	vuelo	EVENT	394
+Event	T14	Vuelo	EVENT	472
+Event	T15	rebotó	EVENT	513
+Event	T16	volcó	EVENT	525
+Event	T17	aterrizar	EVENT	534
+Event	T18	Vuelo	EVENT	554
+Event	T19	aterrizó	EVENT	597
+Event	T2	murieron	EVENT	125
+Event	T20	rompió	EVENT	622
+Event	T21	Vuelo	EVENT	639
+Event	T22	rebotó	EVENT	680
+Event	T23	volcó	EVENT	689
+Event	T24	aterrizar	EVENT	698
+Event	T26	accidentes	EVENT	727
+Event	T27	Informe	EVENT	790
+Event	T28	siniestrada	EVENT	829
+Event	T3	aterrizaje	EVENT	140
+Event	T4	rebote	EVENT	155
+Event	T5	accidente	EVENT	3
+Event	T7	rebotados	EVENT	254
+Event	T9	entrenamiento	EVENT	337
+Event	T6	informe	EVENT	279
+Relation	T1	T19	NoRel	true	vuelo	aterrizó
+Relation	T1	T21	NoRel	true	vuelo	Vuelo
+Relation	T1	T23	NoRel	true	vuelo	volcó
+Relation	T10	T23	NoRel	true	vuelo	volcó
+Relation	T14	T6	NoRel	true	Vuelo	informe
+Relation	T15	T27	NoRel	true	rebotó	Informe
+Relation	T16	T19	NoRel	true	volcó	aterrizó
+Relation	T16	T28	NoRel	true	volcó	siniestrada
+Relation	T17	T16	NoRel	true	aterrizar	volcó
+Relation	T17	T24	NoRel	true	aterrizar	aterrizar
+Relation	T18	T21	NoRel	true	Vuelo	Vuelo
+Relation	T18	T27	NoRel	true	Vuelo	Informe
+Relation	T19	T15	NoRel	true	aterrizó	rebotó
+Relation	T19	T4	NoRel	true	aterrizó	rebote
+Relation	T2	T23	NoRel	true	murieron	volcó
+Relation	T20	T19	NoRel	true	rompió	aterrizó
+Relation	T20	T2	NoRel	true	rompió	murieron
+Relation	T20	T3	NoRel	true	rompió	aterrizaje
+Relation	T21	T17	NoRel	true	Vuelo	aterrizar
+Relation	T21	T2	NoRel	true	Vuelo	murieron
+Relation	T21	T22	NoRel	true	Vuelo	rebotó
+Relation	T22	T17	NoRel	true	rebotó	aterrizar
+Relation	T22	T27	NoRel	true	rebotó	Informe
+Relation	T22	T28	NoRel	true	rebotó	siniestrada
+Relation	T22	T5	NoRel	true	rebotó	accidente
+Relation	T22	T6	NoRel	true	rebotó	informe
+Relation	T23	T21	NoRel	true	volcó	Vuelo
+Relation	T24	T19	NoRel	true	aterrizar	aterrizó
+Relation	T24	T22	NoRel	true	aterrizar	rebotó
+Relation	T26	T17	NoRel	true	accidentes	aterrizar
+Relation	T27	T14	NoRel	true	Informe	Vuelo
+Relation	T27	T15	NoRel	true	Informe	rebotó
+Relation	T27	T19	NoRel	true	Informe	aterrizó
+Relation	T27	T22	NoRel	true	Informe	rebotó
+Relation	T28	T15	NoRel	true	siniestrada	rebotó
+Relation	T28	T20	NoRel	true	siniestrada	rompió
+Relation	T3	T16	NoRel	true	aterrizaje	volcó
+Relation	T3	T24	NoRel	true	aterrizaje	aterrizar
+Relation	T3	T7	NoRel	true	aterrizaje	rebotados
+Relation	T5	T15	NoRel	true	accidente	rebotó
+Relation	T5	T17	NoRel	true	accidente	aterrizar
+Relation	T6	T18	NoRel	true	informe	Vuelo
+Relation	T6	T22	NoRel	true	informe	rebotó
+Relation	T7	T16	NoRel	true	rebotados	volcó
+Relation	T7	T19	NoRel	true	rebotados	aterrizó
+Relation	T7	T27	NoRel	true	rebotados	Informe
+Relation	T9	T20	NoRel	true	entrenamiento	rompió
+Relation	T9	T23	NoRel	true	entrenamiento	volcó
+Relation	T9	T26	NoRel	true	entrenamiento	accidentes

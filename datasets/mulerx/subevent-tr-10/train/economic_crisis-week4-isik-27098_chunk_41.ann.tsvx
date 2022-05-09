@@ -1,0 +1,22 @@
+Text	Nasyonal sosyalizmin gelişmesinde etkili olan tek kişi Adolf Hitler olmamıştır .	Hitler'in 1920'den itibaren yakın ilişki kurduğu dostlarından olan Rudolf Hess onun ilk destekçilerinden olmuştur .	Aynı tarihlerde tanıştığı dostlarından olan ve Birahane Darbesi'nde Hitler'e yardım eden Ernst Röhm , Hermann Göring ve Heinrich Himmler , Nasyonal Sosyalist Alman İşçi Partisi'nin örgütlenmesinde etkili olmuşlardır .	Joseph Goebbels'in 1924'te partiye katılmasıyla NSDAP ivme kazandı ve nasyonal sosyalizm yükselişe geçti .	Zekası ve Hitler kadar başarılı olan etkileme yeteneğiyle parti içinde hızla yükselen Goebbels , propagandayı büyük bir ustalıkla kullandı , bunun sonucunda da NSDAP Almanya'nın en büyük partisi olarak 1933'te iktidara geldi .
+Event	T1	katılmasıyla	EVENT	450
+Event	T2	kazandı	EVENT	474
+Event	T3	geçti	EVENT	514
+Event	T5	kullandı	EVENT	652
+Event	T6	geldi	EVENT	741
+Event	T7	olmuştur	EVENT	186
+Event	T8	Darbesi'nde	EVENT	253
+Event	T9	eden	EVENT	281
+Event	T10	olmuşlardır	EVENT	401
+Event	T4	yükselen	EVENT	599
+Relation	T1	T6	NoRel	true	katılmasıyla	geldi
+Relation	T2	T4	NoRel	true	kazandı	yükselen
+Relation	T3	T2	NoRel	true	geçti	kazandı
+Relation	T3	T7	NoRel	true	geçti	olmuştur
+Relation	T4	T9	NoRel	true	yükselen	eden
+Relation	T5	T9	NoRel	true	kullandı	eden
+Relation	T6	T3	NoRel	true	geldi	geçti
+Relation	T7	T3	NoRel	true	olmuştur	geçti
+Relation	T8	T3	NoRel	true	Darbesi'nde	geçti
+Relation	T8	T9	NoRel	true	Darbesi'nde	eden
+Relation	T9	T5	NoRel	true	eden	kullandı

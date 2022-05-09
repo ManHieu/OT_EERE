@@ -1,0 +1,22 @@
+Text	İşçi konseylerini ağırlıklı olarak orta sınıf “ temsil ediyordu ” .	Kongre tüm yasama ve yürütme yetkilerini Halk Temsilcileri Konseyine devretti .	Seçtiği merkez konseyin görevi ise Halk Temsilcileri Konseyi denetlemekti .	Bu durumu olumsuz karşılayan USPD merkez konseyden çekildi .	Berlin’de savaş sırasında donanmaya alınan işçilerin oluşturduğu Halk Donanma Birliği’nin ( _ Volksmarinedivision _ ) SPD’nin işçi ve asker konseylerin etkisizleştirme politikası çerçevesinde maaşları kesilince 23 Aralık’ta şehir kumandanı Otto Wels’i esir alarak şehir sarayına kapandılar .
+Event	T0	devretti	EVENT	137
+Event	T1	Seçtiği	EVENT	148
+Event	T2	çekildi	EVENT	275
+Event	T3	savaş	EVENT	295
+Event	T4	alınan	EVENT	321
+Event	T5	kesilince	EVENT	486
+Event	T6	kapandılar	EVENT	564
+Event	T7	karşılayan	EVENT	242
+Event	T8	politikası	EVENT	453
+Event	T9	alarak	EVENT	542
+Relation	T2	T3	NoRel	true	çekildi	savaş
+Relation	T3	T8	NoRel	true	savaş	politikası
+Relation	T4	T7	NoRel	true	alınan	karşılayan
+Relation	T4	T8	NoRel	true	alınan	politikası
+Relation	T4	T9	NoRel	true	alınan	alarak
+Relation	T5	T2	NoRel	true	kesilince	çekildi
+Relation	T5	T6	NoRel	true	kesilince	kapandılar
+Relation	T7	T1	NoRel	true	karşılayan	Seçtiği
+Relation	T7	T6	NoRel	true	karşılayan	kapandılar
+Relation	T8	T0	NoRel	true	politikası	devretti
+Relation	T8	T4	NoRel	true	politikası	alınan

@@ -1,0 +1,72 @@
+Text	Den anden alvorlige AFSPORING I VIGERSLEV fandt sted 11. marts 1986 , da godstog 6237 kørte forbi indkørselssignalet fra Vigerslev til Hvidovre Fjern_Station og fortsatte ad afløbssporet og gennem sporstopperen , hvorefter lokomotivet kørte ned på Hvidovrevej og standsede ved den fjerneste støttemur .	Lokomotivføreren forlod førerrummet og blev dræbt ved ulykken , formentlig af nedstyrtende kævler fra forreste vogn i toget .	Det kunne fastslås at såvel signalsystemet som togets bremser var i orden .	Konklusionen blev – ligesom i 1974 – at lokomotivføreren havde overset et stopsignal og derfor bremset for sent .	DSB valgte som følge af denne og den tidligere ulykke at bygge en bro der førte afløbssporet over Hvidovrevej .
+Event	T0	AFSPORING	EVENT	20
+Event	T1	kørte	EVENT	86
+Event	T2	fortsatte	EVENT	161
+Event	T3	standsede	EVENT	263
+Event	T4	forlod	EVENT	320
+Event	T5	dræbt	EVENT	347
+Event	T6	ulykken	EVENT	357
+Event	T7	kævler	EVENT	394
+Event	T8	fastslås	EVENT	439
+Event	T9	overset	EVENT	568
+Event	T10	stopsignal	EVENT	579
+Event	T11	bremset	EVENT	600
+Event	T12	valgte	EVENT	623
+Event	T13	ulykke	EVENT	666
+Event	T14	bygge	EVENT	676
+Event	T15	førte	EVENT	693
+Event	T16	kørte	EVENT	235
+Event	T17	bremser	EVENT	483
+Event	T18	signalsystemet	EVENT	457
+Event	T19	Konklusionen	EVENT	505
+Event	T20	i orden	EVENT	495
+Relation	T4	T7	SuperSub	true	forlod	kævler
+Relation	T7	T4	SubSuper	true	kævler	forlod
+Relation	T16	T3	SuperSub	true	kørte	standsede
+Relation	T3	T16	SubSuper	true	standsede	kørte
+Relation	T20	T19	SuperSub	true	i orden	Konklusionen
+Relation	T19	T20	SubSuper	true	Konklusionen	i orden
+Relation	T0	T11	NoRel	true	AFSPORING	bremset
+Relation	T0	T13	NoRel	true	AFSPORING	ulykke
+Relation	T1	T5	NoRel	true	kørte	dræbt
+Relation	T10	T2	NoRel	true	stopsignal	fortsatte
+Relation	T11	T1	NoRel	true	bremset	kørte
+Relation	T11	T18	NoRel	true	bremset	signalsystemet
+Relation	T12	T17	NoRel	true	valgte	bremser
+Relation	T12	T4	NoRel	true	valgte	forlod
+Relation	T13	T12	NoRel	true	ulykke	valgte
+Relation	T13	T8	NoRel	true	ulykke	fastslås
+Relation	T14	T1	NoRel	true	bygge	kørte
+Relation	T14	T18	NoRel	true	bygge	signalsystemet
+Relation	T14	T2	NoRel	true	bygge	fortsatte
+Relation	T14	T4	NoRel	true	bygge	forlod
+Relation	T14	T5	NoRel	true	bygge	dræbt
+Relation	T15	T13	NoRel	true	førte	ulykke
+Relation	T15	T20	NoRel	true	førte	i orden
+Relation	T16	T4	NoRel	true	kørte	forlod
+Relation	T17	T4	NoRel	true	bremser	forlod
+Relation	T17	T8	NoRel	true	bremser	fastslås
+Relation	T19	T1	NoRel	true	Konklusionen	kørte
+Relation	T19	T6	NoRel	true	Konklusionen	ulykken
+Relation	T2	T8	NoRel	true	fortsatte	fastslås
+Relation	T20	T12	NoRel	true	i orden	valgte
+Relation	T20	T3	NoRel	true	i orden	standsede
+Relation	T3	T10	NoRel	true	standsede	stopsignal
+Relation	T3	T5	NoRel	true	standsede	dræbt
+Relation	T3	T9	NoRel	true	standsede	overset
+Relation	T4	T8	NoRel	true	forlod	fastslås
+Relation	T5	T12	NoRel	true	dræbt	valgte
+Relation	T5	T17	NoRel	true	dræbt	bremser
+Relation	T5	T18	NoRel	true	dræbt	signalsystemet
+Relation	T6	T12	NoRel	true	ulykken	valgte
+Relation	T6	T17	NoRel	true	ulykken	bremser
+Relation	T7	T19	NoRel	true	kævler	Konklusionen
+Relation	T7	T8	NoRel	true	kævler	fastslås
+Relation	T8	T11	NoRel	true	fastslås	bremset
+Relation	T8	T2	NoRel	true	fastslås	fortsatte
+Relation	T8	T20	NoRel	true	fastslås	i orden
+Relation	T8	T3	NoRel	true	fastslås	standsede
+Relation	T8	T6	NoRel	true	fastslås	ulykken
+Relation	T9	T10	NoRel	true	overset	stopsignal
+Relation	T9	T16	NoRel	true	overset	kørte
+Relation	T9	T7	NoRel	true	overset	kævler

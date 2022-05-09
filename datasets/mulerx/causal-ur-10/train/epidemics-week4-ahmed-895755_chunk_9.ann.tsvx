@@ -1,0 +1,133 @@
+Text	چینی سائنس دان کورونا وائرس کے تناؤ کو محدود کرنے کی صلاحت رکھتے تھے اور انہوں نے ایک genetic sequence شائع کیا تاکہ دنیا بھر کی لیبارٹریوں آزادانہ طور پر پولی میریز چین ری ایکشن ( PCR ) ٹیسٹ تیار کر کے وائرس سے انفیکشن کی تشخیص کرسکیں ۔	26 فروری 2020ء تک ، یہاں کوئی اینٹی باڈی ٹیسٹ یا پوائنٹ پوائنٹ آف کیئر ٹیسٹ نہیں تھے تاہم ان کی تیاری کے لیے کوششیں جاری ہیں ۔	ووہان یونیورسٹی کے ژونگنان ہسپتال نے تشخیص کے لیے ہدایات جاری کی ، جس میں مطبی خصوصیات اور وبائی امراض کے خطرے کی بنیاد پر انفیکشن کا پتہ لگانے کے طریقے تجویز کیے گئے ہیں ۔	ان میں وہ افراد شامل تھے جن میں حسب ذیل میں سے کم از کم دو علامات پائی گئیں ، علاوہ ازیں ان کا ووہان جانا ہوا یا متاثر شخص سے تعلق رہا : بخار ، نمونیا کی امیجنگ خصوصیات ، خون کے سفید خلیوں کی تعداد میں کمی یا لمفی خلیہ کی تعداد میں کمی ۔	26 فروری 2020ء کو ووہان کے تونگجی ہسپتال میں ایک ٹیم کے ذریعہ شائع کردہ ایک مطالعے سے معلوم ہوا ہے کہ کووِڈ-19 کے لیے سینہ کا سی ٹی اسکین ، پولی میریز چین ری ایکشن ( 71 % ) کے مقابلے میں زیادہ حساسیت ( 98 % ) رکھتا ہے ۔
+Event	T0	تناؤ	EVENT	31
+Event	T1	تیار	EVENT	192
+Event	T2	انفیکشن	EVENT	212
+Event	T3	ٹیسٹ	EVENT	279
+Event	T4	ٹیسٹ	EVENT	309
+Event	T5	تیاری	EVENT	334
+Event	T6	تشخیص	EVENT	402
+Event	T7	انفیکشن	EVENT	488
+Event	T9	جانا	EVENT	639
+Event	T10	کمی	EVENT	740
+Event	T11	کمی	EVENT	770
+Event	T12	شائع	EVENT	838
+Event	T13	مطالعے	EVENT	852
+Event	T15	محدود	EVENT	39
+Event	T16	صلاحت	EVENT	53
+Event	T17	شائع	EVENT	103
+Event	T18	ٹیسٹ	EVENT	187
+Event	T19	تشخیص	EVENT	223
+Event	T20	کوششیں	EVENT	347
+Event	T21	جاری	EVENT	422
+Event	T22	خطرے	EVENT	471
+Event	T23	پتہ	EVENT	499
+Event	T8	تجویز	EVENT	518
+Event	T24	شامل	EVENT	554
+Event	T25	پائی	EVENT	604
+Event	T26	متاثر	EVENT	651
+Event	T27	تعلق	EVENT	664
+Event	T28	بخار	EVENT	675
+Event	T29	نمونیا	EVENT	682
+Event	T30	معلوم	EVENT	862
+Event	T14	رکھتا	EVENT	985
+Relation	T17	T19	CauseEffect	true	شائع	تشخیص
+Relation	T19	T17	EffectCause	true	تشخیص	شائع
+Relation	T0	T17	CauseEffect	true	تناؤ	شائع
+Relation	T17	T0	EffectCause	true	شائع	تناؤ
+Relation	T6	T21	CauseEffect	true	تشخیص	جاری
+Relation	T21	T6	EffectCause	true	جاری	تشخیص
+Relation	T13	T30	CauseEffect	true	مطالعے	معلوم
+Relation	T30	T13	EffectCause	true	معلوم	مطالعے
+Relation	T0	T15	NoRel	true	تناؤ	محدود
+Relation	T0	T20	NoRel	true	تناؤ	کوششیں
+Relation	T0	T27	NoRel	true	تناؤ	تعلق
+Relation	T1	T13	NoRel	true	تیار	مطالعے
+Relation	T1	T8	NoRel	true	تیار	تجویز
+Relation	T10	T0	NoRel	true	کمی	تناؤ
+Relation	T10	T12	NoRel	true	کمی	شائع
+Relation	T10	T17	NoRel	true	کمی	شائع
+Relation	T10	T26	NoRel	true	کمی	متاثر
+Relation	T10	T29	NoRel	true	کمی	نمونیا
+Relation	T11	T18	NoRel	true	کمی	ٹیسٹ
+Relation	T11	T21	NoRel	true	کمی	جاری
+Relation	T11	T3	NoRel	true	کمی	ٹیسٹ
+Relation	T11	T5	NoRel	true	کمی	تیاری
+Relation	T11	T9	NoRel	true	کمی	جانا
+Relation	T12	T24	NoRel	true	شائع	شامل
+Relation	T12	T27	NoRel	true	شائع	تعلق
+Relation	T12	T7	NoRel	true	شائع	انفیکشن
+Relation	T12	T8	NoRel	true	شائع	تجویز
+Relation	T14	T0	NoRel	true	رکھتا	تناؤ
+Relation	T14	T16	NoRel	true	رکھتا	صلاحت
+Relation	T14	T21	NoRel	true	رکھتا	جاری
+Relation	T15	T14	NoRel	true	محدود	رکھتا
+Relation	T15	T7	NoRel	true	محدود	انفیکشن
+Relation	T16	T10	NoRel	true	صلاحت	کمی
+Relation	T16	T22	NoRel	true	صلاحت	خطرے
+Relation	T17	T16	NoRel	true	شائع	صلاحت
+Relation	T17	T5	NoRel	true	شائع	تیاری
+Relation	T18	T10	NoRel	true	ٹیسٹ	کمی
+Relation	T18	T2	NoRel	true	ٹیسٹ	انفیکشن
+Relation	T18	T25	NoRel	true	ٹیسٹ	پائی
+Relation	T19	T14	NoRel	true	تشخیص	رکھتا
+Relation	T19	T18	NoRel	true	تشخیص	ٹیسٹ
+Relation	T19	T22	NoRel	true	تشخیص	خطرے
+Relation	T19	T29	NoRel	true	تشخیص	نمونیا
+Relation	T2	T13	NoRel	true	انفیکشن	مطالعے
+Relation	T2	T15	NoRel	true	انفیکشن	محدود
+Relation	T2	T5	NoRel	true	انفیکشن	تیاری
+Relation	T20	T10	NoRel	true	کوششیں	کمی
+Relation	T20	T11	NoRel	true	کوششیں	کمی
+Relation	T20	T12	NoRel	true	کوششیں	شائع
+Relation	T20	T25	NoRel	true	کوششیں	پائی
+Relation	T21	T10	NoRel	true	جاری	کمی
+Relation	T21	T13	NoRel	true	جاری	مطالعے
+Relation	T21	T23	NoRel	true	جاری	پتہ
+Relation	T21	T26	NoRel	true	جاری	متاثر
+Relation	T21	T7	NoRel	true	جاری	انفیکشن
+Relation	T22	T25	NoRel	true	خطرے	پائی
+Relation	T22	T27	NoRel	true	خطرے	تعلق
+Relation	T22	T30	NoRel	true	خطرے	معلوم
+Relation	T23	T15	NoRel	true	پتہ	محدود
+Relation	T23	T16	NoRel	true	پتہ	صلاحت
+Relation	T23	T26	NoRel	true	پتہ	متاثر
+Relation	T24	T1	NoRel	true	شامل	تیار
+Relation	T24	T15	NoRel	true	شامل	محدود
+Relation	T24	T18	NoRel	true	شامل	ٹیسٹ
+Relation	T25	T13	NoRel	true	پائی	مطالعے
+Relation	T25	T26	NoRel	true	پائی	متاثر
+Relation	T25	T28	NoRel	true	پائی	بخار
+Relation	T25	T6	NoRel	true	پائی	تشخیص
+Relation	T25	T9	NoRel	true	پائی	جانا
+Relation	T26	T14	NoRel	true	متاثر	رکھتا
+Relation	T26	T20	NoRel	true	متاثر	کوششیں
+Relation	T26	T30	NoRel	true	متاثر	معلوم
+Relation	T28	T30	NoRel	true	بخار	معلوم
+Relation	T28	T4	NoRel	true	بخار	ٹیسٹ
+Relation	T29	T12	NoRel	true	نمونیا	شائع
+Relation	T29	T23	NoRel	true	نمونیا	پتہ
+Relation	T29	T3	NoRel	true	نمونیا	ٹیسٹ
+Relation	T29	T4	NoRel	true	نمونیا	ٹیسٹ
+Relation	T29	T6	NoRel	true	نمونیا	تشخیص
+Relation	T29	T9	NoRel	true	نمونیا	جانا
+Relation	T3	T10	NoRel	true	ٹیسٹ	کمی
+Relation	T30	T20	NoRel	true	معلوم	کوششیں
+Relation	T30	T24	NoRel	true	معلوم	شامل
+Relation	T30	T3	NoRel	true	معلوم	ٹیسٹ
+Relation	T4	T19	NoRel	true	ٹیسٹ	تشخیص
+Relation	T4	T26	NoRel	true	ٹیسٹ	متاثر
+Relation	T4	T28	NoRel	true	ٹیسٹ	بخار
+Relation	T4	T6	NoRel	true	ٹیسٹ	تشخیص
+Relation	T4	T7	NoRel	true	ٹیسٹ	انفیکشن
+Relation	T5	T2	NoRel	true	تیاری	انفیکشن
+Relation	T6	T10	NoRel	true	تشخیص	کمی
+Relation	T6	T2	NoRel	true	تشخیص	انفیکشن
+Relation	T6	T4	NoRel	true	تشخیص	ٹیسٹ
+Relation	T7	T10	NoRel	true	انفیکشن	کمی
+Relation	T7	T25	NoRel	true	انفیکشن	پائی
+Relation	T8	T22	NoRel	true	تجویز	خطرے
+Relation	T8	T3	NoRel	true	تجویز	ٹیسٹ
+Relation	T9	T10	NoRel	true	جانا	کمی
+Relation	T9	T20	NoRel	true	جانا	کوششیں
+Relation	T9	T3	NoRel	true	جانا	ٹیسٹ
+Relation	T9	T5	NoRel	true	جانا	تیاری

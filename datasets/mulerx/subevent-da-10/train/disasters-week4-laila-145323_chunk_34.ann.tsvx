@@ -1,0 +1,47 @@
+Text	Da disse forretninger blev udført , tilbragte han tiden med at læse og gøre uddrag , åbenbart i processen med at fuldføre _ Naturalis Historia _ .	Ingen faktisk post er bedømt i denne , noget han ikke kunne have udført som admiral ved Misenum , forudsat at hans pligter som admiral ikke krævede at han var til stede ved Misenum .	På rene omstændigheder alene var han en officiel agent for kejseren i delvis privat kapacitet .	Måske var han mellem positioner .	Hvordan det end forholder sig , var det hans udnævnelse som præfekt af flåden ved Misenum førte ham til Misenum , hvor han boede sammen med sin søster og sin nevø .
+Event	T0	udført	EVENT	27
+Event	T1	tilbragte	EVENT	36
+Event	T2	læse	EVENT	63
+Event	T3	gøre	EVENT	71
+Event	T4	processen	EVENT	96
+Event	T5	fuldføre	EVENT	113
+Event	T6	bedømt	EVENT	169
+Event	T7	udført	EVENT	212
+Event	T8	krævede	EVENT	287
+Event	T9	udnævnelse	EVENT	505
+Event	T10	førte	EVENT	550
+Event	T11	boede	EVENT	583
+Event	T12	pligter	EVENT	262
+Event	T13	var	EVENT	359
+Event	T14	mellem positioner	EVENT	440
+Event	T15	forholder	EVENT	476
+Relation	T0	T12	NoRel	true	udført	pligter
+Relation	T0	T3	NoRel	true	udført	gøre
+Relation	T0	T6	NoRel	true	udført	bedømt
+Relation	T1	T15	NoRel	true	tilbragte	forholder
+Relation	T10	T11	NoRel	true	førte	boede
+Relation	T10	T12	NoRel	true	førte	pligter
+Relation	T10	T8	NoRel	true	førte	krævede
+Relation	T11	T9	NoRel	true	boede	udnævnelse
+Relation	T13	T5	NoRel	true	var	fuldføre
+Relation	T13	T8	NoRel	true	var	krævede
+Relation	T14	T11	NoRel	true	mellem positioner	boede
+Relation	T15	T4	NoRel	true	forholder	processen
+Relation	T2	T0	NoRel	true	læse	udført
+Relation	T2	T14	NoRel	true	læse	mellem positioner
+Relation	T2	T9	NoRel	true	læse	udnævnelse
+Relation	T4	T5	NoRel	true	processen	fuldføre
+Relation	T4	T8	NoRel	true	processen	krævede
+Relation	T5	T11	NoRel	true	fuldføre	boede
+Relation	T5	T15	NoRel	true	fuldføre	forholder
+Relation	T5	T6	NoRel	true	fuldføre	bedømt
+Relation	T6	T12	NoRel	true	bedømt	pligter
+Relation	T6	T3	NoRel	true	bedømt	gøre
+Relation	T7	T13	NoRel	true	udført	var
+Relation	T7	T14	NoRel	true	udført	mellem positioner
+Relation	T7	T15	NoRel	true	udført	forholder
+Relation	T8	T11	NoRel	true	krævede	boede
+Relation	T9	T1	NoRel	true	udnævnelse	tilbragte
+Relation	T9	T11	NoRel	true	udnævnelse	boede
+Relation	T9	T13	NoRel	true	udnævnelse	var
+Relation	T9	T15	NoRel	true	udnævnelse	forholder

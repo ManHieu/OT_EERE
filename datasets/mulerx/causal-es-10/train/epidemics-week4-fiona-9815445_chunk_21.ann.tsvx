@@ -1,0 +1,80 @@
+Text	La decisión sienta un precedente para mayores límites impuestas a las autoridades de salud pública que tratan de aislar a las poblaciones enfermas .	Entre 1901 y 1902 , el brote de peste continuó empeorando .	En un discurso de 1901 a ambas cámaras de la Legislatura estatal de California , Gage acusó a las autoridades federales , particularmente a Kinyoun , de inyectar bacterias de la peste en cadáveres , falsificando evidencia .	En respuesta a lo que dijo que era un espantapájaros masivo por parte del MHS , Gage impulsó un proyecto de ley de censura para amordazar cualquier informe de los medios de comunicación sobre la infección por peste .	El proyecto de ley fracasó en la Legislatura del Estado de California , sin embargo , las leyes para amordazar los informes entre la comunidad médica lograron ser aprobados y fueron firmados por el gobernador .
+Event	T0	sienta	EVENT	12
+Event	T1	impuestas	EVENT	54
+Event	T2	tratan	EVENT	103
+Event	T3	brote	EVENT	172
+Event	T4	empeorando	EVENT	196
+Event	T5	discurso	EVENT	215
+Event	T6	acusó	EVENT	295
+Event	T7	inyectar	EVENT	362
+Event	T8	peste	EVENT	387
+Event	T9	evidencia	EVENT	421
+Event	T10	respuesta	EVENT	436
+Event	T11	dijo	EVENT	455
+Event	T12	impulsó	EVENT	518
+Event	T13	censura	EVENT	548
+Event	T14	amordazar	EVENT	561
+Event	T15	informe	EVENT	581
+Event	T16	infección	EVENT	628
+Event	T17	peste	EVENT	642
+Event	T18	fracasó	EVENT	669
+Event	T19	amordazar	EVENT	751
+Event	T20	informes	EVENT	765
+Event	T21	lograron	EVENT	800
+Event	T22	aprobados	EVENT	813
+Event	T23	firmados	EVENT	832
+Relation	T21	T23	CauseEffect	true	lograron	firmados
+Relation	T23	T21	EffectCause	true	firmados	lograron
+Relation	T0	T6	NoRel	true	sienta	acusó
+Relation	T10	T4	NoRel	true	respuesta	empeorando
+Relation	T11	T1	NoRel	true	dijo	impuestas
+Relation	T11	T12	NoRel	true	dijo	impulsó
+Relation	T11	T19	NoRel	true	dijo	amordazar
+Relation	T11	T3	NoRel	true	dijo	brote
+Relation	T12	T0	NoRel	true	impulsó	sienta
+Relation	T12	T14	NoRel	true	impulsó	amordazar
+Relation	T12	T9	NoRel	true	impulsó	evidencia
+Relation	T13	T19	NoRel	true	censura	amordazar
+Relation	T13	T4	NoRel	true	censura	empeorando
+Relation	T14	T6	NoRel	true	amordazar	acusó
+Relation	T15	T0	NoRel	true	informe	sienta
+Relation	T15	T10	NoRel	true	informe	respuesta
+Relation	T15	T7	NoRel	true	informe	inyectar
+Relation	T15	T8	NoRel	true	informe	peste
+Relation	T15	T9	NoRel	true	informe	evidencia
+Relation	T16	T6	NoRel	true	infección	acusó
+Relation	T16	T8	NoRel	true	infección	peste
+Relation	T17	T3	NoRel	true	peste	brote
+Relation	T17	T5	NoRel	true	peste	discurso
+Relation	T19	T15	NoRel	true	amordazar	informe
+Relation	T2	T19	NoRel	true	tratan	amordazar
+Relation	T2	T22	NoRel	true	tratan	aprobados
+Relation	T20	T16	NoRel	true	informes	infección
+Relation	T21	T10	NoRel	true	lograron	respuesta
+Relation	T22	T6	NoRel	true	aprobados	acusó
+Relation	T23	T15	NoRel	true	firmados	informe
+Relation	T23	T17	NoRel	true	firmados	peste
+Relation	T3	T0	NoRel	true	brote	sienta
+Relation	T3	T13	NoRel	true	brote	censura
+Relation	T3	T20	NoRel	true	brote	informes
+Relation	T3	T23	NoRel	true	brote	firmados
+Relation	T4	T11	NoRel	true	empeorando	dijo
+Relation	T4	T14	NoRel	true	empeorando	amordazar
+Relation	T4	T16	NoRel	true	empeorando	infección
+Relation	T4	T18	NoRel	true	empeorando	fracasó
+Relation	T4	T9	NoRel	true	empeorando	evidencia
+Relation	T5	T0	NoRel	true	discurso	sienta
+Relation	T5	T1	NoRel	true	discurso	impuestas
+Relation	T5	T15	NoRel	true	discurso	informe
+Relation	T5	T22	NoRel	true	discurso	aprobados
+Relation	T5	T4	NoRel	true	discurso	empeorando
+Relation	T5	T8	NoRel	true	discurso	peste
+Relation	T6	T13	NoRel	true	acusó	censura
+Relation	T6	T14	NoRel	true	acusó	amordazar
+Relation	T7	T13	NoRel	true	inyectar	censura
+Relation	T8	T0	NoRel	true	peste	sienta
+Relation	T8	T13	NoRel	true	peste	censura
+Relation	T8	T20	NoRel	true	peste	informes
+Relation	T9	T11	NoRel	true	evidencia	dijo
+Relation	T9	T21	NoRel	true	evidencia	lograron
+Relation	T9	T5	NoRel	true	evidencia	discurso

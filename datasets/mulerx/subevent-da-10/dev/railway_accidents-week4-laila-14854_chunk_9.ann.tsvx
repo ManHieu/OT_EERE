@@ -1,0 +1,48 @@
+Text	Sammenstødet havde afbrudt telefon- og telegraflinjerne , og man antog , at ulykken var alvorlig .	En reporter fra Berlingske Tidende lejede en bil og kørte i stor hast mod Vigerslev .	Han ankom 45 minutter efter ulykken og var lamslået af hvad han så .	Næste dag , søndag den 2. november , var en stor menneskemængde samlet ved ulykkesstedet .	De døde og sårede var blevet fjernet , men vognene og lokomotivet lå i en stor vragdynge .
+Event	T0	Sammenstødet	EVENT	0
+Event	T1	afbrudt	EVENT	19
+Event	T2	antog	EVENT	65
+Event	T3	ulykken	EVENT	76
+Event	T4	lejede	EVENT	134
+Event	T5	kørte	EVENT	151
+Event	T6	ulykken	EVENT	213
+Event	T7	lamslået	EVENT	228
+Event	T8	så	EVENT	249
+Event	T9	samlet	EVENT	318
+Event	T10	ulykkesstedet	EVENT	329
+Event	T11	døde	EVENT	348
+Event	T12	sårede	EVENT	356
+Event	T13	fjernet	EVENT	374
+Event	T14	ankom	EVENT	189
+Event	T15	alvorlig	EVENT	88
+Relation	T14	T7	SuperSub	true	ankom	lamslået
+Relation	T7	T14	SubSuper	true	lamslået	ankom
+Relation	T5	T14	SuperSub	true	kørte	ankom
+Relation	T14	T5	SubSuper	true	ankom	kørte
+Relation	T1	T2	NoRel	true	afbrudt	antog
+Relation	T1	T9	NoRel	true	afbrudt	samlet
+Relation	T10	T13	NoRel	true	ulykkesstedet	fjernet
+Relation	T10	T2	NoRel	true	ulykkesstedet	antog
+Relation	T10	T6	NoRel	true	ulykkesstedet	ulykken
+Relation	T11	T14	NoRel	true	døde	ankom
+Relation	T11	T2	NoRel	true	døde	antog
+Relation	T12	T1	NoRel	true	sårede	afbrudt
+Relation	T12	T14	NoRel	true	sårede	ankom
+Relation	T12	T6	NoRel	true	sårede	ulykken
+Relation	T13	T11	NoRel	true	fjernet	døde
+Relation	T13	T4	NoRel	true	fjernet	lejede
+Relation	T14	T1	NoRel	true	ankom	afbrudt
+Relation	T14	T6	NoRel	true	ankom	ulykken
+Relation	T3	T12	NoRel	true	ulykken	sårede
+Relation	T3	T14	NoRel	true	ulykken	ankom
+Relation	T5	T0	NoRel	true	kørte	Sammenstødet
+Relation	T5	T12	NoRel	true	kørte	sårede
+Relation	T5	T2	NoRel	true	kørte	antog
+Relation	T5	T9	NoRel	true	kørte	samlet
+Relation	T6	T2	NoRel	true	ulykken	antog
+Relation	T7	T0	NoRel	true	lamslået	Sammenstødet
+Relation	T7	T12	NoRel	true	lamslået	sårede
+Relation	T7	T4	NoRel	true	lamslået	lejede
+Relation	T7	T5	NoRel	true	lamslået	kørte
+Relation	T9	T0	NoRel	true	samlet	Sammenstødet
+Relation	T9	T10	NoRel	true	samlet	ulykkesstedet

@@ -1,0 +1,12 @@
+Text	Som følge af Rumæniens svaghed var det sydlige Rusland nu truet af Centralmagterne .	Interventionen på den rumænske front styrkede således ikke Rusland , for troppeoverførslerne dertil svækkede tyngdepunktet på Østfronten i Galicien og Volhynien .	Ved årets start var der på ingen måde krisestemning indenfor det russiske militær .	Man var tværtimod overbevist om , at man med en ny anstrengelse kunne påvirke den samlede situation i verdenskrigen .	Inden man kunne nå at starte nye tiltag var Rusland imidlertid blevet kastet ud i en revolution .
+Event	T0	truet	EVENT	58
+Event	T1	Interventionen	EVENT	85
+Event	T2	styrkede	EVENT	122
+Event	T3	start	EVENT	258
+Event	T4	krisestemning	EVENT	286
+Event	T6	starte	EVENT	472
+Event	T7	tiltag	EVENT	483
+Event	T8	revolution	EVENT	535
+Relation	T0	T6	NoRel	true	truet	starte
+Relation	T1	T0	NoRel	true	Interventionen	truet
+Relation	T8	T0	NoRel	true	revolution	truet

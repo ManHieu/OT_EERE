@@ -1,0 +1,1118 @@
+{
+  "id": "disasters-week4-laila-130177_chunk_1.ann.tsvx",
+  "text": "Acetoneperoxid kan detonere ved ant\u00e6ndelse eller ved st\u00f8d .\tTATP er et hjemmelavet spr\u00e6ngstof der er popul\u00e6rt blandt terrorister .\tGrundet dets ustabilitet kaldes det ogs\u00e5 for SATANS_MOR .\tOmkring 1993 var det p\u00e5 mode blandt studerende p\u00e5 Danmarks Tekniske Universitet ( det dav\u00e6rende Danmarks Tekniske H\u00f8jskole ) at fremstille bomber af TATP som de l\u00e6rte om p\u00e5 rusture og i _ The Terrorist's Handbook _ hentet via modem .\tI den forbindelse skete flere uheld .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "detonere",
+      "label": "EVENT",
+      "char_index": 19,
+      "sid": 0,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "ant\u00e6ndelse",
+      "label": "EVENT",
+      "char_index": 32,
+      "sid": 0,
+      "tid": [
+        4,
+        5
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "st\u00f8d",
+      "label": "EVENT",
+      "char_index": 53,
+      "sid": 0,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "kaldes",
+      "label": "EVENT",
+      "char_index": 156,
+      "sid": 2,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "l\u00e6rte",
+      "label": "EVENT",
+      "char_index": 350,
+      "sid": 3,
+      "tid": [
+        26,
+        27
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "hentet",
+      "label": "EVENT",
+      "char_index": 404,
+      "sid": 3,
+      "tid": [
+        37,
+        38
+      ]
+    },
+    "T6": {
+      "id": "T6",
+      "text": "skete",
+      "label": "EVENT",
+      "char_index": 441,
+      "sid": 4,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "uheld",
+      "label": "EVENT",
+      "char_index": 453,
+      "sid": 4,
+      "tid": [
+        5,
+        6
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "popul\u00e6rt",
+      "label": "EVENT",
+      "char_index": 101,
+      "sid": 1,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "hjemmelavet",
+      "label": "EVENT",
+      "char_index": 71,
+      "sid": 1,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "ustabilitet",
+      "label": "EVENT",
+      "char_index": 144,
+      "sid": 2,
+      "tid": [
+        2,
+        3
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "fremstille",
+      "label": "EVENT",
+      "char_index": 317,
+      "sid": 3,
+      "tid": [
+        20,
+        21
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "mode",
+      "label": "EVENT",
+      "char_index": 213,
+      "sid": 3,
+      "tid": [
+        5,
+        6
+      ]
+    }
+  },
+  "relation": {
+    "T1-T0": "CauseEffect",
+    "T0-T1": "EffectCause",
+    "T2-T0": "CauseEffect",
+    "T0-T2": "EffectCause",
+    "T10-T3": "CauseEffect",
+    "T3-T10": "EffectCause",
+    "T12-T11": "CauseEffect",
+    "T11-T12": "EffectCause",
+    "T4-T11": "CauseEffect",
+    "T11-T4": "EffectCause",
+    "T5-T11": "CauseEffect",
+    "T11-T5": "EffectCause",
+    "T11-T7": "CauseEffect",
+    "T7-T11": "EffectCause",
+    "T1-T2": "NoRel",
+    "T1-T3": "NoRel",
+    "T11-T10": "NoRel",
+    "T11-T8": "NoRel",
+    "T12-T8": "NoRel",
+    "T2-T8": "NoRel",
+    "T3-T1": "NoRel",
+    "T3-T4": "NoRel",
+    "T4-T0": "NoRel",
+    "T6-T0": "NoRel",
+    "T6-T3": "NoRel",
+    "T7-T2": "NoRel",
+    "T7-T4": "NoRel",
+    "T7-T8": "NoRel",
+    "T8-T9": "NoRel"
+  },
+  "sentence": [
+    [
+      "Acetoneperoxid",
+      "kan",
+      "detonere",
+      "ved",
+      "ant\u00e6ndelse",
+      "eller",
+      "ved",
+      "st\u00f8d",
+      "."
+    ],
+    [
+      "TATP",
+      "er",
+      "et",
+      "hjemmelavet",
+      "spr\u00e6ngstof",
+      "der",
+      "er",
+      "popul\u00e6rt",
+      "blandt",
+      "terrorister",
+      "."
+    ],
+    [
+      "Grundet",
+      "dets",
+      "ustabilitet",
+      "kaldes",
+      "det",
+      "ogs\u00e5",
+      "for",
+      "SATANS_MOR",
+      "."
+    ],
+    [
+      "Omkring",
+      "1993",
+      "var",
+      "det",
+      "p\u00e5",
+      "mode",
+      "blandt",
+      "studerende",
+      "p\u00e5",
+      "Danmarks",
+      "Tekniske",
+      "Universitet",
+      "(",
+      "det",
+      "dav\u00e6rende",
+      "Danmarks",
+      "Tekniske",
+      "H\u00f8jskole",
+      ")",
+      "at",
+      "fremstille",
+      "bomber",
+      "af",
+      "TATP",
+      "som",
+      "de",
+      "l\u00e6rte",
+      "om",
+      "p\u00e5",
+      "rusture",
+      "og",
+      "i",
+      "_",
+      "The",
+      "Terrorist's",
+      "Handbook",
+      "_",
+      "hentet",
+      "via",
+      "modem",
+      "."
+    ],
+    [
+      "I",
+      "den",
+      "forbindelse",
+      "skete",
+      "flere",
+      "uheld",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      "aux"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      "obl"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        3
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        4
+      ],
+      "nmod"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        4
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        4
+      ],
+      "cop"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      "amod"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        7
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      "cop"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        4
+      ],
+      "acl:relcl"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        7
+      ],
+      "obl"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        4
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        3
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      "nummod"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        2
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        2
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        11
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        11
+      ],
+      "nmod:poss"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        7
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        17
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        17
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        15
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        17
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        17
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        11
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        17
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        20
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        20
+      ],
+      [
+        3,
+        3
+      ],
+      "acl:relcl"
+    ],
+    [
+      [
+        3,
+        21
+      ],
+      [
+        3,
+        20
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        22
+      ],
+      [
+        3,
+        23
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        23
+      ],
+      [
+        3,
+        21
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        24
+      ],
+      [
+        3,
+        27
+      ],
+      "compound:prt"
+    ],
+    [
+      [
+        3,
+        25
+      ],
+      [
+        3,
+        26
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        3,
+        26
+      ],
+      [
+        3,
+        21
+      ],
+      "advcl"
+    ],
+    [
+      [
+        3,
+        27
+      ],
+      [
+        3,
+        26
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        28
+      ],
+      [
+        3,
+        29
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        29
+      ],
+      [
+        3,
+        26
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        30
+      ],
+      [
+        3,
+        37
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        31
+      ],
+      [
+        3,
+        37
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        32
+      ],
+      [
+        3,
+        31
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        33
+      ],
+      [
+        3,
+        37
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        34
+      ],
+      [
+        3,
+        33
+      ],
+      "flat"
+    ],
+    [
+      [
+        3,
+        35
+      ],
+      [
+        3,
+        33
+      ],
+      "flat"
+    ],
+    [
+      [
+        3,
+        36
+      ],
+      [
+        3,
+        33
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        37
+      ],
+      [
+        3,
+        26
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        38
+      ],
+      [
+        3,
+        39
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        39
+      ],
+      [
+        3,
+        37
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        40
+      ],
+      [
+        3,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        3
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        3
+      ],
+      "punct"
+    ]
+  ]
+}

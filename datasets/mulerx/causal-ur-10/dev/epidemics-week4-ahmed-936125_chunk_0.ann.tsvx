@@ -1,0 +1,37 @@
+Text	_مالدیپ میں کورونا وائرس کی وبا_' سے اولین موت اپریل 2020ء میں واقع ہوئی تھی ۔	اسی وقت ملک میں کورونا کے 280 مثبت معاملات بھی بتائے گئے ۔	ملک کے وزیر صحت عبد اللہ امین نے بتایا کہ متاثرہ شخص مالدیپ کے دار الحکومت مالے کی ایک 83 سالہ خاتون تھی ۔	اس بحر ہند میں ٹاپوؤں پر مشتمل ملک کے سیاحتی ریزارٹوں میں کورونا وائرس ( COVID-19 ) کے اولین معاملے سامنے آئے ۔	مالدیپ میں کورونا وائرس کے بڑھتے ہوئے پھیلاؤ کے پیش نظر سیاحت کی صنعت پر عارضی طور پر پابندی عائد کردی گئی ۔
+Event	T0	موت	EVENT	43
+Event	T2	معاملات	EVENT	114
+Event	T3	بتایا	EVENT	171
+Event	T5	بڑھتے	EVENT	384
+Event	T6	پھیلاؤ	EVENT	395
+Event	T8	وبا_	EVENT	28
+Event	T1	واقع	EVENT	63
+Event	T9	بتائے	EVENT	126
+Event	T10	متاثرہ	EVENT	180
+Event	T11	معاملے	EVENT	338
+Event	T12	سامنے	EVENT	345
+Event	T4	پیش	EVENT	405
+Event	T13	پابندی	EVENT	443
+Relation	T8	T0	CauseEffect	true	وبا_	موت
+Relation	T0	T8	EffectCause	true	موت	وبا_
+Relation	T8	T10	CauseEffect	true	وبا_	متاثرہ
+Relation	T10	T8	EffectCause	true	متاثرہ	وبا_
+Relation	T4	T13	CauseEffect	true	پیش	پابندی
+Relation	T13	T4	EffectCause	true	پابندی	پیش
+Relation	T0	T6	NoRel	true	موت	پھیلاؤ
+Relation	T1	T13	NoRel	true	واقع	پابندی
+Relation	T1	T5	NoRel	true	واقع	بڑھتے
+Relation	T11	T12	NoRel	true	معاملے	سامنے
+Relation	T11	T3	NoRel	true	معاملے	بتایا
+Relation	T11	T9	NoRel	true	معاملے	بتائے
+Relation	T12	T6	NoRel	true	سامنے	پھیلاؤ
+Relation	T13	T11	NoRel	true	پابندی	معاملے
+Relation	T2	T1	NoRel	true	معاملات	واقع
+Relation	T3	T0	NoRel	true	بتایا	موت
+Relation	T3	T5	NoRel	true	بتایا	بڑھتے
+Relation	T5	T0	NoRel	true	بڑھتے	موت
+Relation	T5	T3	NoRel	true	بڑھتے	بتایا
+Relation	T6	T10	NoRel	true	پھیلاؤ	متاثرہ
+Relation	T8	T2	NoRel	true	وبا_	معاملات
+Relation	T8	T5	NoRel	true	وبا_	بڑھتے
+Relation	T9	T0	NoRel	true	بتائے	موت

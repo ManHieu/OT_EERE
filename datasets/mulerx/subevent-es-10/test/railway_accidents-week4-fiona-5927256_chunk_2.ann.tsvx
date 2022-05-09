@@ -1,0 +1,35 @@
+Text	Los seis agentes que viajaban en la locomotora fueron arrastrados por la corriente , pereciendo cinco de ellos .	La locomotora acudía en auxilio de un tren de mercancías ascendente que había quedado detenido en el kilómetro 5 de la línea a causa de hallarse la vía inundada por la crecida del río Manzanares .	- 16 de septiembre de 1856 .	Una diligencia procedente de Andalucía que era transportada en un vagón del tren correo que cubría la relación Albacete_-_Madrid sufrió un incendio mientras el convoy circulaba entre las estaciones de Huerta de Valdecarábanos y Villasequilla de Yepes , tramo de la línea Madrid_-_Alicante enclavado en la provincia de Toledo .	Murieron cinco de los viajeros que ocupaban dicha diligencia y otro resultó gravemente herido .
+Event	T0	arrastrados	EVENT	54
+Event	T1	pereciendo	EVENT	85
+Event	T2	detenido	EVENT	199
+Event	T3	hallarse	EVENT	249
+Event	T4	inundada	EVENT	265
+Event	T5	crecida	EVENT	281
+Event	T6	transportada	EVENT	386
+Event	T7	sufrió	EVENT	468
+Event	T8	incendio	EVENT	478
+Event	T9	circulaba	EVENT	506
+Event	T10	Murieron	EVENT	666
+Event	T11	resultó	EVENT	734
+Event	T12	herido	EVENT	753
+Relation	T1	T3	NoRel	true	pereciendo	hallarse
+Relation	T1	T5	NoRel	true	pereciendo	crecida
+Relation	T1	T8	NoRel	true	pereciendo	incendio
+Relation	T10	T11	NoRel	true	Murieron	resultó
+Relation	T10	T6	NoRel	true	Murieron	transportada
+Relation	T10	T7	NoRel	true	Murieron	sufrió
+Relation	T10	T8	NoRel	true	Murieron	incendio
+Relation	T11	T0	NoRel	true	resultó	arrastrados
+Relation	T11	T2	NoRel	true	resultó	detenido
+Relation	T11	T4	NoRel	true	resultó	inundada
+Relation	T12	T3	NoRel	true	herido	hallarse
+Relation	T12	T8	NoRel	true	herido	incendio
+Relation	T2	T1	NoRel	true	detenido	pereciendo
+Relation	T2	T5	NoRel	true	detenido	crecida
+Relation	T3	T7	NoRel	true	hallarse	sufrió
+Relation	T4	T3	NoRel	true	inundada	hallarse
+Relation	T5	T4	NoRel	true	crecida	inundada
+Relation	T6	T11	NoRel	true	transportada	resultó
+Relation	T7	T10	NoRel	true	sufrió	Murieron
+Relation	T8	T5	NoRel	true	incendio	crecida
+Relation	T9	T11	NoRel	true	circulaba	resultó

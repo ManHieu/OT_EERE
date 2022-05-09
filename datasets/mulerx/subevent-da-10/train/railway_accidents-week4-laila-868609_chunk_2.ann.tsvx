@@ -1,0 +1,67 @@
+Text	Den tyske jernbanehavarikommission - Eisenbahn-Unfalluntersuchungstelle des Bundes - indledte den 9. februar en undersøgelse af ulykken .	Den 16. februar oplyste politiets efterforskere , at det var en menneskelig fejl , der havde forårsaget ulykken .	Ifølge lederen af efterforskningen , Oberstaatsanwalt Wolfgang Giese , kunne ulykken være undgået , hvis en 39-årig stationsbestyrer havde fulgt reglerne .	Medarbejderen tillod , at de to tog kørte imod hinanden på strækningen og indså for sent sin fejl .	Han foretog et nødopkald kort før kollisionen , men opkaldet blev ikke besvaret .
+Event	T0	indledte	EVENT	85
+Event	T1	undersøgelse	EVENT	112
+Event	T2	ulykken	EVENT	128
+Event	T3	oplyste	EVENT	154
+Event	T4	fejl	EVENT	214
+Event	T5	ulykken	EVENT	242
+Event	T6	ulykken	EVENT	329
+Event	T7	undgået	EVENT	342
+Event	T8	fulgt	EVENT	391
+Event	T9	tillod	EVENT	422
+Event	T10	indså	EVENT	482
+Event	T11	fejl	EVENT	501
+Event	T12	foretog	EVENT	512
+Event	T13	nødopkald	EVENT	523
+Event	T14	kollisionen	EVENT	542
+Event	T15	opkaldet	EVENT	560
+Event	T16	besvaret	EVENT	579
+Event	T17	kørte	EVENT	444
+Relation	T1	T3	SuperSub	true	undersøgelse	oplyste
+Relation	T3	T1	SubSuper	true	oplyste	undersøgelse
+Relation	T9	T17	SuperSub	true	tillod	kørte
+Relation	T17	T9	SubSuper	true	kørte	tillod
+Relation	T0	T14	NoRel	true	indledte	kollisionen
+Relation	T1	T10	NoRel	true	undersøgelse	indså
+Relation	T1	T11	NoRel	true	undersøgelse	fejl
+Relation	T1	T9	NoRel	true	undersøgelse	tillod
+Relation	T10	T15	NoRel	true	indså	opkaldet
+Relation	T10	T16	NoRel	true	indså	besvaret
+Relation	T10	T17	NoRel	true	indså	kørte
+Relation	T11	T6	NoRel	true	fejl	ulykken
+Relation	T12	T0	NoRel	true	foretog	indledte
+Relation	T13	T15	NoRel	true	nødopkald	opkaldet
+Relation	T13	T3	NoRel	true	nødopkald	oplyste
+Relation	T14	T12	NoRel	true	kollisionen	foretog
+Relation	T14	T16	NoRel	true	kollisionen	besvaret
+Relation	T14	T4	NoRel	true	kollisionen	fejl
+Relation	T15	T0	NoRel	true	opkaldet	indledte
+Relation	T15	T14	NoRel	true	opkaldet	kollisionen
+Relation	T16	T14	NoRel	true	besvaret	kollisionen
+Relation	T16	T4	NoRel	true	besvaret	fejl
+Relation	T16	T6	NoRel	true	besvaret	ulykken
+Relation	T17	T1	NoRel	true	kørte	undersøgelse
+Relation	T17	T11	NoRel	true	kørte	fejl
+Relation	T17	T13	NoRel	true	kørte	nødopkald
+Relation	T2	T6	NoRel	true	ulykken	ulykken
+Relation	T3	T15	NoRel	true	oplyste	opkaldet
+Relation	T3	T4	NoRel	true	oplyste	fejl
+Relation	T3	T9	NoRel	true	oplyste	tillod
+Relation	T4	T12	NoRel	true	fejl	foretog
+Relation	T4	T8	NoRel	true	fejl	fulgt
+Relation	T5	T14	NoRel	true	ulykken	kollisionen
+Relation	T5	T2	NoRel	true	ulykken	ulykken
+Relation	T5	T3	NoRel	true	ulykken	oplyste
+Relation	T5	T6	NoRel	true	ulykken	ulykken
+Relation	T6	T0	NoRel	true	ulykken	indledte
+Relation	T6	T8	NoRel	true	ulykken	fulgt
+Relation	T7	T10	NoRel	true	undgået	indså
+Relation	T7	T12	NoRel	true	undgået	foretog
+Relation	T7	T17	NoRel	true	undgået	kørte
+Relation	T7	T9	NoRel	true	undgået	tillod
+Relation	T8	T0	NoRel	true	fulgt	indledte
+Relation	T8	T11	NoRel	true	fulgt	fejl
+Relation	T9	T0	NoRel	true	tillod	indledte
+Relation	T9	T11	NoRel	true	tillod	fejl
+Relation	T9	T15	NoRel	true	tillod	opkaldet
+Relation	T9	T4	NoRel	true	tillod	fejl

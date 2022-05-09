@@ -1,0 +1,38 @@
+Text	El accidente ocurrió en una curva , motivo por el cual ninguno de los maquinistas tuvo oportunidad de ver el otro tren , o intentar una frenada de emergencia , antes de la colisión .	Los dos primeros vagones y la parte delantera del tercer coche ET1016 , y el carro del conductor del ET1021 , se desintegraron en el impacto ; el segundo coche de ET1021 descarriló y fue gravemente dañado ; los otros coches de ambos trenes se mantuvieron casi intactos .	Un hospital de campaña se creó adyacente al lugar del accidente .	Algunos de los heridos fueron transportados por helicóptero a un hospital .	Se hizo un llamamiento a la población local para donar sangre .
+Event	T0	ocurrió	EVENT	13
+Event	T1	intentar	EVENT	123
+Event	T2	frenada	EVENT	136
+Event	T3	colisión	EVENT	172
+Event	T4	desintegraron	EVENT	296
+Event	T5	impacto	EVENT	316
+Event	T6	descarriló	EVENT	353
+Event	T7	dañado	EVENT	381
+Event	T8	mantuvieron	EVENT	426
+Event	T9	accidente	EVENT	508
+Event	T10	heridos	EVENT	535
+Event	T11	transportados	EVENT	550
+Event	T12	hizo	EVENT	599
+Event	T13	llamamiento	EVENT	607
+Relation	T5	T4	CauseEffect	true	impacto	desintegraron
+Relation	T4	T5	EffectCause	true	desintegraron	impacto
+Relation	T6	T7	CauseEffect	true	descarriló	dañado
+Relation	T7	T6	EffectCause	true	dañado	descarriló
+Relation	T0	T12	NoRel	true	ocurrió	hizo
+Relation	T0	T3	NoRel	true	ocurrió	colisión
+Relation	T0	T6	NoRel	true	ocurrió	descarriló
+Relation	T0	T9	NoRel	true	ocurrió	accidente
+Relation	T1	T0	NoRel	true	intentar	ocurrió
+Relation	T1	T4	NoRel	true	intentar	desintegraron
+Relation	T11	T4	NoRel	true	transportados	desintegraron
+Relation	T13	T5	NoRel	true	llamamiento	impacto
+Relation	T13	T6	NoRel	true	llamamiento	descarriló
+Relation	T2	T11	NoRel	true	frenada	transportados
+Relation	T2	T3	NoRel	true	frenada	colisión
+Relation	T3	T10	NoRel	true	colisión	heridos
+Relation	T5	T11	NoRel	true	impacto	transportados
+Relation	T5	T12	NoRel	true	impacto	hizo
+Relation	T6	T9	NoRel	true	descarriló	accidente
+Relation	T8	T11	NoRel	true	mantuvieron	transportados
+Relation	T8	T2	NoRel	true	mantuvieron	frenada
+Relation	T9	T12	NoRel	true	accidente	hizo
+Relation	T9	T7	NoRel	true	accidente	dañado

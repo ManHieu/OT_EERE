@@ -1,0 +1,28 @@
+Text	Bankdirektør Knud Christensen , der havde været Amagerbankens direktør siden 1980 , døde midt under finanskrisen i 2008 .	Han blev afløst af direktør Jørgen Brændstrup med Allan Ottsen som vicedirektør .	Brændstrup havde indtil da været chef for bankens erhvervsafdeling .	Han omgikkes en række af bankens tabsgivende storkunder privat , hvilket ifølge iagttagere var en medvirkende årsag til , at disse kunder også under krisen havde lempelige vilkår i banken .	Siden 1996 havde advokat N.E. Nielsen været bankens bestyrelsesformand .
+Event	T0	finanskrisen	EVENT	100
+Event	T1	afløst	EVENT	131
+Event	T2	omgikkes	EVENT	277
+Event	T3	tabsgivende	EVENT	306
+Event	T4	døde	EVENT	84
+Event	T5	direktør	EVENT	62
+Event	T6	direktør	EVENT	141
+Event	T7	vicedirektør	EVENT	189
+Event	T8	chef	EVENT	237
+Event	T9	årsag	EVENT	383
+Event	T10	lempelige vilkår	EVENT	435
+Event	T11	bestyrelsesformand	EVENT	515
+Relation	T4	T1	CauseEffect	true	døde	afløst
+Relation	T1	T4	EffectCause	true	afløst	døde
+Relation	T2	T10	CauseEffect	true	omgikkes	lempelige vilkår
+Relation	T10	T2	EffectCause	true	lempelige vilkår	omgikkes
+Relation	T0	T9	NoRel	true	finanskrisen	årsag
+Relation	T1	T0	NoRel	true	afløst	finanskrisen
+Relation	T11	T0	NoRel	true	bestyrelsesformand	finanskrisen
+Relation	T11	T9	NoRel	true	bestyrelsesformand	årsag
+Relation	T2	T0	NoRel	true	omgikkes	finanskrisen
+Relation	T2	T3	NoRel	true	omgikkes	tabsgivende
+Relation	T2	T8	NoRel	true	omgikkes	chef
+Relation	T3	T9	NoRel	true	tabsgivende	årsag
+Relation	T4	T3	NoRel	true	døde	tabsgivende
+Relation	T4	T6	NoRel	true	døde	direktør
+Relation	T8	T6	NoRel	true	chef	direktør

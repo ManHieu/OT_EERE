@@ -1,0 +1,16 @@
+Text	YILDIZ SUIKASTI , 21 Temmuz 1905 günü Osmanlı padişahı II. Abdülhamit'e karşı Ermeni Devrimci Federasyonu tarafından Yıldız Hamidiye Camii önünde yapılmış bombalı bir suikast girişimidir .	Doğu Anadolu Bölgesi'nde bağımsız bir Ermeni Devleti kurulmasını isteyen Ermeni Devrimci Federasyonu yanlısı bir grup Ermeni Osmanlı padişahı II. Abdülhamit'i öldürmeyi planladı .	Bu amaçla bir atlı arabaya 120 kg miktarında patlayıcı yerleştirerek padişahın Cuma selamlığından sonra Yıldız Hamidiye Camii önündeki yoluna yerleştirdiler .	Suikast için padişahın kendi arabasına yürüyüş süresi ( 1 dk 42 saniye ) gibi en ince detay dahi hesaplanmıştı .	Patlayıcıların içine konduğu arabaya metal parçaları doldurulup bombanın etkisi artırılmıştı .
+Event	T1	yapılmış	EVENT	146
+Event	T2	girişimidir	EVENT	175
+Event	T3	planladı	EVENT	358
+Event	T4	yerleştirdiler	EVENT	511
+Event	T6	hesaplanmıştı	EVENT	625
+Event	T7	artırılmıştı	EVENT	721
+Event	T8	YILDIZ SUIKASTI	EVENT	0
+Event	T9	yerleştirerek	EVENT	424
+Event	T5	doldurulup	EVENT	694
+Relation	T2	T3	NoRel	true	girişimidir	planladı
+Relation	T3	T4	NoRel	true	planladı	yerleştirdiler
+Relation	T4	T1	NoRel	true	yerleştirdiler	yapılmış
+Relation	T7	T5	NoRel	true	artırılmıştı	doldurulup
+Relation	T7	T6	NoRel	true	artırılmıştı	hesaplanmıştı
+Relation	T8	T7	NoRel	true	YILDIZ SUIKASTI	artırılmıştı

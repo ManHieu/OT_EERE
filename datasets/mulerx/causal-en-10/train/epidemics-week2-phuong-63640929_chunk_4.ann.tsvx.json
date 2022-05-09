@@ -1,0 +1,2054 @@
+{
+  "id": "epidemics-week2-phuong-63640929_chunk_4.ann.tsvx",
+  "text": "Even when school closures are temporary , it carries high social and economic costs .\tHowever , the significance of children in spreading COVID - 19 is unclear .\tWhile the full impact of school closures during the coronavirus pandemic are not yet known , UNESCO advises that school closures have negative impacts on local economies and on learning outcomes for students .\tIn early March 2020 , the sentiment \" Stay The Fuck Home \" was coined by Florian Reifschneider , a German engineer and was quickly echoed by notable celebrities such as Taylor Swift , Ariana Grande and Busy Philipps in hopes of reducing and delaying the peak of the outbreak .\tFacebook , Twitter and Instagram also joined the campaign with similar hashtags , stickers and filters under # staythefhome , # stayhome , # staythefuckhome and began trending across social media .",
+  "event": {
+    "T0": {
+      "id": "T0",
+      "text": "closures",
+      "label": "EVENT",
+      "char_index": 17,
+      "sid": 0,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T1": {
+      "id": "T1",
+      "text": "carries",
+      "label": "EVENT",
+      "char_index": 45,
+      "sid": 0,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T10": {
+      "id": "T10",
+      "text": "sentiment",
+      "label": "EVENT",
+      "char_index": 398,
+      "sid": 3,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T11": {
+      "id": "T11",
+      "text": "coined",
+      "label": "EVENT",
+      "char_index": 435,
+      "sid": 3,
+      "tid": [
+        14,
+        15
+      ]
+    },
+    "T12": {
+      "id": "T12",
+      "text": "echoed",
+      "label": "EVENT",
+      "char_index": 503,
+      "sid": 3,
+      "tid": [
+        25,
+        26
+      ]
+    },
+    "T13": {
+      "id": "T13",
+      "text": "hopes",
+      "label": "EVENT",
+      "char_index": 591,
+      "sid": 3,
+      "tid": [
+        40,
+        41
+      ]
+    },
+    "T14": {
+      "id": "T14",
+      "text": "reducing",
+      "label": "EVENT",
+      "char_index": 600,
+      "sid": 3,
+      "tid": [
+        42,
+        43
+      ]
+    },
+    "T15": {
+      "id": "T15",
+      "text": "delaying",
+      "label": "EVENT",
+      "char_index": 613,
+      "sid": 3,
+      "tid": [
+        44,
+        45
+      ]
+    },
+    "T16": {
+      "id": "T16",
+      "text": "peak",
+      "label": "EVENT",
+      "char_index": 626,
+      "sid": 3,
+      "tid": [
+        46,
+        47
+      ]
+    },
+    "T17": {
+      "id": "T17",
+      "text": "outbreak",
+      "label": "EVENT",
+      "char_index": 638,
+      "sid": 3,
+      "tid": [
+        49,
+        50
+      ]
+    },
+    "T18": {
+      "id": "T18",
+      "text": "joined",
+      "label": "EVENT",
+      "char_index": 687,
+      "sid": 4,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T19": {
+      "id": "T19",
+      "text": "campaign",
+      "label": "EVENT",
+      "char_index": 698,
+      "sid": 4,
+      "tid": [
+        8,
+        9
+      ]
+    },
+    "T2": {
+      "id": "T2",
+      "text": "spreading",
+      "label": "EVENT",
+      "char_index": 128,
+      "sid": 1,
+      "tid": [
+        7,
+        8
+      ]
+    },
+    "T20": {
+      "id": "T20",
+      "text": "trending",
+      "label": "EVENT",
+      "char_index": 816,
+      "sid": 4,
+      "tid": [
+        27,
+        28
+      ]
+    },
+    "T3": {
+      "id": "T3",
+      "text": "impact",
+      "label": "EVENT",
+      "char_index": 177,
+      "sid": 2,
+      "tid": [
+        3,
+        4
+      ]
+    },
+    "T4": {
+      "id": "T4",
+      "text": "closures",
+      "label": "EVENT",
+      "char_index": 194,
+      "sid": 2,
+      "tid": [
+        6,
+        7
+      ]
+    },
+    "T5": {
+      "id": "T5",
+      "text": "pandemic",
+      "label": "EVENT",
+      "char_index": 226,
+      "sid": 2,
+      "tid": [
+        10,
+        11
+      ]
+    },
+    "T7": {
+      "id": "T7",
+      "text": "advises",
+      "label": "EVENT",
+      "char_index": 262,
+      "sid": 2,
+      "tid": [
+        17,
+        18
+      ]
+    },
+    "T8": {
+      "id": "T8",
+      "text": "closures",
+      "label": "EVENT",
+      "char_index": 282,
+      "sid": 2,
+      "tid": [
+        20,
+        21
+      ]
+    },
+    "T9": {
+      "id": "T9",
+      "text": "impacts",
+      "label": "EVENT",
+      "char_index": 305,
+      "sid": 2,
+      "tid": [
+        23,
+        24
+      ]
+    }
+  },
+  "relation": {
+    "T0-T1": "CauseEffect",
+    "T1-T0": "EffectCause",
+    "T5-T4": "CauseEffect",
+    "T4-T5": "EffectCause",
+    "T8-T9": "CauseEffect",
+    "T9-T8": "EffectCause",
+    "T10-T11": "CauseEffect",
+    "T11-T10": "EffectCause",
+    "T10-T12": "CauseEffect",
+    "T12-T10": "EffectCause",
+    "T19-T20": "CauseEffect",
+    "T20-T19": "EffectCause",
+    "T16-T14": "CauseEffect",
+    "T14-T16": "EffectCause",
+    "T16-T15": "CauseEffect",
+    "T15-T16": "EffectCause",
+    "T0-T11": "NoRel",
+    "T0-T4": "NoRel",
+    "T1-T14": "NoRel",
+    "T1-T9": "NoRel",
+    "T10-T13": "NoRel",
+    "T11-T1": "NoRel",
+    "T12-T7": "NoRel",
+    "T13-T5": "NoRel",
+    "T13-T9": "NoRel",
+    "T14-T1": "NoRel",
+    "T14-T9": "NoRel",
+    "T16-T11": "NoRel",
+    "T16-T2": "NoRel",
+    "T17-T1": "NoRel",
+    "T17-T10": "NoRel",
+    "T17-T19": "NoRel",
+    "T17-T3": "NoRel",
+    "T17-T7": "NoRel",
+    "T17-T8": "NoRel",
+    "T18-T12": "NoRel",
+    "T18-T13": "NoRel",
+    "T18-T17": "NoRel",
+    "T18-T19": "NoRel",
+    "T18-T8": "NoRel",
+    "T19-T0": "NoRel",
+    "T19-T10": "NoRel",
+    "T19-T9": "NoRel",
+    "T2-T0": "NoRel",
+    "T2-T15": "NoRel",
+    "T2-T17": "NoRel",
+    "T20-T1": "NoRel",
+    "T3-T0": "NoRel",
+    "T3-T10": "NoRel",
+    "T3-T16": "NoRel",
+    "T4-T11": "NoRel",
+    "T7-T1": "NoRel",
+    "T7-T14": "NoRel",
+    "T7-T17": "NoRel",
+    "T7-T3": "NoRel",
+    "T9-T11": "NoRel",
+    "T9-T14": "NoRel",
+    "T9-T17": "NoRel",
+    "T9-T2": "NoRel",
+    "T9-T5": "NoRel"
+  },
+  "sentence": [
+    [
+      "Even",
+      "when",
+      "school",
+      "closures",
+      "are",
+      "temporary",
+      ",",
+      "it",
+      "carries",
+      "high",
+      "social",
+      "and",
+      "economic",
+      "costs",
+      "."
+    ],
+    [
+      "However",
+      ",",
+      "the",
+      "significance",
+      "of",
+      "children",
+      "in",
+      "spreading",
+      "COVID",
+      "-",
+      "19",
+      "is",
+      "unclear",
+      "."
+    ],
+    [
+      "While",
+      "the",
+      "full",
+      "impact",
+      "of",
+      "school",
+      "closures",
+      "during",
+      "the",
+      "coronavirus",
+      "pandemic",
+      "are",
+      "not",
+      "yet",
+      "known",
+      ",",
+      "UNESCO",
+      "advises",
+      "that",
+      "school",
+      "closures",
+      "have",
+      "negative",
+      "impacts",
+      "on",
+      "local",
+      "economies",
+      "and",
+      "on",
+      "learning",
+      "outcomes",
+      "for",
+      "students",
+      "."
+    ],
+    [
+      "In",
+      "early",
+      "March",
+      "2020",
+      ",",
+      "the",
+      "sentiment",
+      "\"",
+      "Stay",
+      "The",
+      "Fuck",
+      "Home",
+      "\"",
+      "was",
+      "coined",
+      "by",
+      "Florian",
+      "Reifschneider",
+      ",",
+      "a",
+      "German",
+      "engineer",
+      "and",
+      "was",
+      "quickly",
+      "echoed",
+      "by",
+      "notable",
+      "celebrities",
+      "such",
+      "as",
+      "Taylor",
+      "Swift",
+      ",",
+      "Ariana",
+      "Grande",
+      "and",
+      "Busy",
+      "Philipps",
+      "in",
+      "hopes",
+      "of",
+      "reducing",
+      "and",
+      "delaying",
+      "the",
+      "peak",
+      "of",
+      "the",
+      "outbreak",
+      "."
+    ],
+    [
+      "Facebook",
+      ",",
+      "Twitter",
+      "and",
+      "Instagram",
+      "also",
+      "joined",
+      "the",
+      "campaign",
+      "with",
+      "similar",
+      "hashtags",
+      ",",
+      "stickers",
+      "and",
+      "filters",
+      "under",
+      "#",
+      "staythefhome",
+      ",",
+      "#",
+      "stayhome",
+      ",",
+      "#",
+      "staythefuckhome",
+      "and",
+      "began",
+      "trending",
+      "across",
+      "social",
+      "media",
+      "."
+    ]
+  ],
+  "deprel": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        5
+      ],
+      "advmod"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        5
+      ],
+      "mark"
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      "compound"
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      "cop"
+    ],
+    [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        8
+      ],
+      "advcl"
+    ],
+    [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        13
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        13
+      ],
+      "amod"
+    ],
+    [
+      [
+        0,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      "cc"
+    ],
+    [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        10
+      ],
+      "conj"
+    ],
+    [
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        8
+      ],
+      "obj"
+    ],
+    [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        12
+      ],
+      "advmod"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        12
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      "det"
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        12
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      "case"
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        3
+      ],
+      "nmod"
+    ],
+    [
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      "mark"
+    ],
+    [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        3
+      ],
+      "acl"
+    ],
+    [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        7
+      ],
+      "obj"
+    ],
+    [
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        8
+      ],
+      "nummod"
+    ],
+    [
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      "cop"
+    ],
+    [
+      [
+        1,
+        12
+      ],
+      [
+        1,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        1,
+        13
+      ],
+      [
+        1,
+        12
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        14
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        14
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        10
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        10
+      ],
+      "det"
+    ],
+    [
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        6
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        14
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        14
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        14
+      ],
+      "advmod"
+    ],
+    [
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        17
+      ],
+      "advcl"
+    ],
+    [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        17
+      ],
+      "punct"
+    ],
+    [
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        17
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        17
+      ],
+      [
+        2,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        2,
+        18
+      ],
+      [
+        2,
+        21
+      ],
+      "mark"
+    ],
+    [
+      [
+        2,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        20
+      ],
+      [
+        2,
+        21
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        2,
+        21
+      ],
+      [
+        2,
+        17
+      ],
+      "ccomp"
+    ],
+    [
+      [
+        2,
+        22
+      ],
+      [
+        2,
+        23
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        23
+      ],
+      [
+        2,
+        21
+      ],
+      "obj"
+    ],
+    [
+      [
+        2,
+        24
+      ],
+      [
+        2,
+        26
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        25
+      ],
+      [
+        2,
+        26
+      ],
+      "amod"
+    ],
+    [
+      [
+        2,
+        26
+      ],
+      [
+        2,
+        23
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        27
+      ],
+      [
+        2,
+        30
+      ],
+      "cc"
+    ],
+    [
+      [
+        2,
+        28
+      ],
+      [
+        2,
+        30
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        29
+      ],
+      [
+        2,
+        30
+      ],
+      "compound"
+    ],
+    [
+      [
+        2,
+        30
+      ],
+      [
+        2,
+        26
+      ],
+      "conj"
+    ],
+    [
+      [
+        2,
+        31
+      ],
+      [
+        2,
+        32
+      ],
+      "case"
+    ],
+    [
+      [
+        2,
+        32
+      ],
+      [
+        2,
+        30
+      ],
+      "nmod"
+    ],
+    [
+      [
+        2,
+        33
+      ],
+      [
+        2,
+        17
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        2
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        14
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      "nummod"
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        14
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        14
+      ],
+      "nsubj:pass"
+    ],
+    [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        6
+      ],
+      "appos"
+    ],
+    [
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        8
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        8
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        8
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        3,
+        15
+      ],
+      [
+        3,
+        16
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        16
+      ],
+      [
+        3,
+        14
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        17
+      ],
+      [
+        3,
+        16
+      ],
+      "flat"
+    ],
+    [
+      [
+        3,
+        18
+      ],
+      [
+        3,
+        16
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        19
+      ],
+      [
+        3,
+        21
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        20
+      ],
+      [
+        3,
+        21
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        21
+      ],
+      [
+        3,
+        16
+      ],
+      "appos"
+    ],
+    [
+      [
+        3,
+        22
+      ],
+      [
+        3,
+        25
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        23
+      ],
+      [
+        3,
+        25
+      ],
+      "aux:pass"
+    ],
+    [
+      [
+        3,
+        24
+      ],
+      [
+        3,
+        25
+      ],
+      "advmod"
+    ],
+    [
+      [
+        3,
+        25
+      ],
+      [
+        3,
+        14
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        26
+      ],
+      [
+        3,
+        28
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        27
+      ],
+      [
+        3,
+        28
+      ],
+      "amod"
+    ],
+    [
+      [
+        3,
+        28
+      ],
+      [
+        3,
+        25
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        29
+      ],
+      [
+        3,
+        31
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        30
+      ],
+      [
+        3,
+        29
+      ],
+      "fixed"
+    ],
+    [
+      [
+        3,
+        31
+      ],
+      [
+        3,
+        28
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        32
+      ],
+      [
+        3,
+        31
+      ],
+      "flat"
+    ],
+    [
+      [
+        3,
+        33
+      ],
+      [
+        3,
+        34
+      ],
+      "punct"
+    ],
+    [
+      [
+        3,
+        34
+      ],
+      [
+        3,
+        31
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        35
+      ],
+      [
+        3,
+        34
+      ],
+      "flat"
+    ],
+    [
+      [
+        3,
+        36
+      ],
+      [
+        3,
+        37
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        37
+      ],
+      [
+        3,
+        34
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        38
+      ],
+      [
+        3,
+        37
+      ],
+      "flat"
+    ],
+    [
+      [
+        3,
+        39
+      ],
+      [
+        3,
+        40
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        40
+      ],
+      [
+        3,
+        25
+      ],
+      "obl"
+    ],
+    [
+      [
+        3,
+        41
+      ],
+      [
+        3,
+        42
+      ],
+      "mark"
+    ],
+    [
+      [
+        3,
+        42
+      ],
+      [
+        3,
+        40
+      ],
+      "acl"
+    ],
+    [
+      [
+        3,
+        43
+      ],
+      [
+        3,
+        44
+      ],
+      "cc"
+    ],
+    [
+      [
+        3,
+        44
+      ],
+      [
+        3,
+        42
+      ],
+      "conj"
+    ],
+    [
+      [
+        3,
+        45
+      ],
+      [
+        3,
+        46
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        46
+      ],
+      [
+        3,
+        42
+      ],
+      "obj"
+    ],
+    [
+      [
+        3,
+        47
+      ],
+      [
+        3,
+        49
+      ],
+      "case"
+    ],
+    [
+      [
+        3,
+        48
+      ],
+      [
+        3,
+        49
+      ],
+      "det"
+    ],
+    [
+      [
+        3,
+        49
+      ],
+      [
+        3,
+        46
+      ],
+      "nmod"
+    ],
+    [
+      [
+        3,
+        50
+      ],
+      [
+        3,
+        14
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        6
+      ],
+      "nsubj"
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        0
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      "advmod"
+    ],
+    [
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        -1
+      ],
+      "root"
+    ],
+    [
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      "det"
+    ],
+    [
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        6
+      ],
+      "obj"
+    ],
+    [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        11
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        11
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        6
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        12
+      ],
+      [
+        4,
+        13
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        11
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        14
+      ],
+      [
+        4,
+        15
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        11
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        18
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        17
+      ],
+      [
+        4,
+        18
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        18
+      ],
+      [
+        4,
+        11
+      ],
+      "appos"
+    ],
+    [
+      [
+        4,
+        19
+      ],
+      [
+        4,
+        21
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        21
+      ],
+      [
+        4,
+        18
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        22
+      ],
+      [
+        4,
+        24
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        23
+      ],
+      [
+        4,
+        18
+      ],
+      "punct"
+    ],
+    [
+      [
+        4,
+        24
+      ],
+      [
+        4,
+        18
+      ],
+      "list"
+    ],
+    [
+      [
+        4,
+        25
+      ],
+      [
+        4,
+        26
+      ],
+      "cc"
+    ],
+    [
+      [
+        4,
+        26
+      ],
+      [
+        4,
+        6
+      ],
+      "conj"
+    ],
+    [
+      [
+        4,
+        27
+      ],
+      [
+        4,
+        26
+      ],
+      "xcomp"
+    ],
+    [
+      [
+        4,
+        28
+      ],
+      [
+        4,
+        30
+      ],
+      "case"
+    ],
+    [
+      [
+        4,
+        29
+      ],
+      [
+        4,
+        30
+      ],
+      "amod"
+    ],
+    [
+      [
+        4,
+        30
+      ],
+      [
+        4,
+        27
+      ],
+      "obl"
+    ],
+    [
+      [
+        4,
+        31
+      ],
+      [
+        4,
+        6
+      ],
+      "punct"
+    ]
+  ]
+}

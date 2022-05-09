@@ -1,0 +1,31 @@
+Text	Talha ve Zübeyr’i de yanına aldı ve birlikte Ali’nin hilâfetinden memnun olmayanların çoğunlukta olduğunu düşündükleri Basra şehrine gittiler .	Aişe , Osman’ın öldürülmesinden önce Osman için “ O kitabın hükmünü çiğnemiştir ” derken Osman’ın öldürülüp yerine Ali’nin seçildiğini duyunca “ Mazlum olarak öldürülmüştür " dedi .	Talha ve Zübeyr ise Osman hayatta iken onu eleştirmişler ve aleyhinde bulunmuşlar , başlangıçta Ali’ye biat etmişler , fakat umdukları valilik taleplerine olumlu cevap alamayınca ona karşı tavır almışlardı .	Basra Valisi Abdullah ile Talha ve Zübeyr’in Mekke’ye gidip hac dolayısıyla burada bulunan Aişe’ye katılmaları ve Osman’ın kanını talep etmek üzere bir araya gelmeleri , Emevi Oğulları için bulunmaz bir fırsattı .	Bu arada Ali , kendisine ilk tepki Muaviye’den geldiğinden ona karşı savaş hazırlığı yapıyordu .
+Event	T1	talep	EVENT	664
+Event	T10	öldürülüp	EVENT	242
+Event	T11	seçildiğini	EVENT	267
+Event	T13	eleştirmişler	EVENT	369
+Event	T18	gidip	EVENT	588
+Event	T2	tepki	EVENT	777
+Event	T20	katılmaları	EVENT	633
+Event	T3	yapıyordu	EVENT	833
+Event	T4	aldı	EVENT	28
+Event	T8	gittiler	EVENT	133
+Event	T9	çiğnemiştir	EVENT	212
+Relation	T10	T11	CauseEffect	true	öldürülüp	seçildiğini
+Relation	T11	T10	EffectCause	true	seçildiğini	öldürülüp
+Relation	T1	T20	CauseEffect	true	talep	katılmaları
+Relation	T20	T1	EffectCause	true	katılmaları	talep
+Relation	T2	T3	CauseEffect	true	tepki	yapıyordu
+Relation	T3	T2	EffectCause	true	yapıyordu	tepki
+Relation	T13	T18	CauseEffect	true	eleştirmişler	gidip
+Relation	T18	T13	EffectCause	true	gidip	eleştirmişler
+Relation	T13	T20	CauseEffect	true	eleştirmişler	katılmaları
+Relation	T20	T13	EffectCause	true	katılmaları	eleştirmişler
+Relation	T10	T2	NoRel	true	öldürülüp	tepki
+Relation	T10	T4	NoRel	true	öldürülüp	aldı
+Relation	T11	T3	NoRel	true	seçildiğini	yapıyordu
+Relation	T18	T20	NoRel	true	gidip	katılmaları
+Relation	T2	T13	NoRel	true	tepki	eleştirmişler
+Relation	T20	T18	NoRel	true	katılmaları	gidip
+Relation	T4	T11	NoRel	true	aldı	seçildiğini
+Relation	T4	T20	NoRel	true	aldı	katılmaları
+Relation	T9	T13	NoRel	true	çiğnemiştir	eleştirmişler

@@ -1,0 +1,39 @@
+Text	Derudover blev 18.000 boliger svært beskadiget og 81.000 let beskadiget .	30 % af virksomheder var ødelagt deriblandt tre stormagasiner i Altstadt og markedshallen Weisseritzstrasse , Antonsplatz og det indre Neustadt , hvor handelen med frugt og grøntsager var koncentreret .	Det første telegram fra Churchill viser hans beundring for bombeangrebet .	Det blev revideret og nu betonede han , at det havde været i Storbritanniens interesse at begrænse ødelæggelserne af beboelsesområder , da de skulle genopbygges efter krigen .	Dresden var centrum for ammunition , et intakt forvaltningscentrum og et trafikknudepunkt mod øst .
+Event	T0	beskadiget	EVENT	36
+Event	T1	beskadiget	EVENT	61
+Event	T2	ødelagt	EVENT	99
+Event	T3	telegram	EVENT	288
+Event	T4	viser	EVENT	311
+Event	T5	beundring	EVENT	322
+Event	T6	bombeangrebet	EVENT	336
+Event	T7	revideret	EVENT	361
+Event	T8	betonede	EVENT	377
+Event	T9	ødelæggelserne	EVENT	451
+Event	T10	genopbygges	EVENT	501
+Event	T11	krigen	EVENT	519
+Event	T12	handelen	EVENT	225
+Event	T13	var	EVENT	536
+Event	T14	begrænse	EVENT	442
+Relation	T14	T10	CauseEffect	true	begrænse	genopbygges
+Relation	T10	T14	EffectCause	true	genopbygges	begrænse
+Relation	T1	T2	NoRel	true	beskadiget	ødelagt
+Relation	T1	T3	NoRel	true	beskadiget	telegram
+Relation	T1	T9	NoRel	true	beskadiget	ødelæggelserne
+Relation	T10	T1	NoRel	true	genopbygges	beskadiget
+Relation	T11	T12	NoRel	true	krigen	handelen
+Relation	T12	T0	NoRel	true	handelen	beskadiget
+Relation	T12	T6	NoRel	true	handelen	bombeangrebet
+Relation	T2	T12	NoRel	true	ødelagt	handelen
+Relation	T2	T13	NoRel	true	ødelagt	var
+Relation	T2	T7	NoRel	true	ødelagt	revideret
+Relation	T3	T0	NoRel	true	telegram	beskadiget
+Relation	T3	T5	NoRel	true	telegram	beundring
+Relation	T3	T6	NoRel	true	telegram	bombeangrebet
+Relation	T4	T0	NoRel	true	viser	beskadiget
+Relation	T4	T14	NoRel	true	viser	begrænse
+Relation	T5	T1	NoRel	true	beundring	beskadiget
+Relation	T5	T6	NoRel	true	beundring	bombeangrebet
+Relation	T6	T11	NoRel	true	bombeangrebet	krigen
+Relation	T6	T7	NoRel	true	bombeangrebet	revideret
+Relation	T9	T10	NoRel	true	ødelæggelserne	genopbygges
+Relation	T9	T4	NoRel	true	ødelæggelserne	viser

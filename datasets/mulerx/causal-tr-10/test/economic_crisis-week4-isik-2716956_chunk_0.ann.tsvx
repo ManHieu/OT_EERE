@@ -1,0 +1,11 @@
+Text	_ DEUTSCHES REICH _ 1871'den 1945'e kadar olan Alman ulus devletinde Alman dilinde anayasal isimdi .	Reich , otoritesini ve egemenliğini bütünüyle sürekli bir üniter Alman “ ulusal halkından ” türettiği anlaşılır ; bu yetki ve egemenlik , herhangi bir zamanda birleşik Alman “ devlet bölgesi ” üzerinde değişken sınırlar ve kapsamda uygulandı .	Her ne kadar yaygın olarak " Alman İmparatorluğu " olarak çevrilse de , burada Reich kelimesi " bölge " ya da bölgesel " erişim " olarak daha iyi tercüme edilir , çünkü terimin kendi başına monarşik çağrışımları yoktur .	_ Kaiserreich _ kelimesi bir imparatorla bir imparatorluğu belirtmek için uygulanır ; dolayısıyla 1871 - 1918 Alman İmparatorluğu standart referans eserlerinde _ Deutsches Kaiserreich _ olarak adlandırılmıştır .	1943'ten 1945'e kadar , Almanya'nın resmi adı , İkinci Dünya Savaşı öncesinde ve sırasında devlet yönetimine eklenen ek Alman halkları ve ilgili bölgeler nedeniyle _ Großdeutsches Reich _ ( " Büyük Alman Reich " ) oldu .
+Event	T0	türettiği	EVENT	193
+Event	T1	uygulandı	EVENT	333
+Event	T2	uygulanır	EVENT	640
+Event	T3	adlandırılmıştır	EVENT	759
+Event	T4	İkinci Dünya Savaşı	EVENT	826
+Event	T5	oldu	EVENT	992
+Event	T6	eklenen	EVENT	887
+Relation	T6	T5	CauseEffect	true	eklenen	oldu
+Relation	T5	T6	EffectCause	true	oldu	eklenen
+Relation	T1	T4	NoRel	true	uygulandı	İkinci Dünya Savaşı

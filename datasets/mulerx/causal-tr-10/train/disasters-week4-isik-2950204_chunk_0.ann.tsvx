@@ -1,0 +1,28 @@
+Text	1157 HAMA DEPREMI , bir yıl süren ön sarsıntılardan sonra 12 Ağustos'ta meydana geldi .	İsmini , en çok can kaybının yaşandığı batı - orta Suriye'deki ( daha sonra Selçuklu egemenliği altındaki ) Hama şehrinden almıştır .	Suriye'nin doğusunda , Fırat yakınında , eski el - Rahba kalesinin yok etti ve daha sonra aynı stratejik bölgede yeniden inşa edildi .	Deprem , Kudüs çevresindeki Hristiyan manastırlarını ve kiliselerini de etkiledi .	Kategori : Suriye'deki depremler Kategori : 12. yüzyılda depremler Kategori : 12. yüzyılda Kudüs Krallığı Kategori : 12. yüzyılda Büyük Selçuklu İmparatorluğu Hama depremi , 1157
+Event	T0	DEPREMI	EVENT	10
+Event	T1	sarsıntılardan	EVENT	37
+Event	T2	geldi	EVENT	80
+Event	T3	yaşandığı	EVENT	117
+Event	T4	etti	EVENT	293
+Event	T5	edildi	EVENT	348
+Event	T6	Deprem	EVENT	357
+Event	T7	etkiledi	EVENT	429
+Event	T8	depremi	EVENT	604
+Event	T9	depremler	EVENT	463
+Event	T10	depremler	EVENT	497
+Relation	T0	T4	CauseEffect	true	DEPREMI	etti
+Relation	T4	T0	EffectCause	true	etti	DEPREMI
+Relation	T0	T5	CauseEffect	true	DEPREMI	edildi
+Relation	T5	T0	EffectCause	true	edildi	DEPREMI
+Relation	T0	T7	CauseEffect	true	DEPREMI	etkiledi
+Relation	T7	T0	EffectCause	true	etkiledi	DEPREMI
+Relation	T6	T7	CauseEffect	true	Deprem	etkiledi
+Relation	T7	T6	EffectCause	true	etkiledi	Deprem
+Relation	T0	T8	NoRel	true	DEPREMI	depremi
+Relation	T1	T0	NoRel	true	sarsıntılardan	DEPREMI
+Relation	T1	T6	NoRel	true	sarsıntılardan	Deprem
+Relation	T2	T3	NoRel	true	geldi	yaşandığı
+Relation	T5	T3	NoRel	true	edildi	yaşandığı
+Relation	T6	T8	NoRel	true	Deprem	depremi
+Relation	T7	T4	NoRel	true	etkiledi	etti
+Relation	T9	T6	NoRel	true	depremler	Deprem

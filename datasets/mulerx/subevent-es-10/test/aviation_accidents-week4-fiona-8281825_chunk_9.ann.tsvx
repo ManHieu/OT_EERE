@@ -1,0 +1,72 @@
+Text	Todas las palas de las turbinas eléctricas se fracturaron y se recuperaron varios fragmentos de palas dentro del escape del motor .	Las puntas recuperadas exhibieron roces y muchas de las cuchillas exhibieron flexión en la dirección opuesta a la rotación .	El gobierno de Costa Rica no facilitó a la NTSB los informes completos de las autopsias de los ocupantes , sin embargo , el resumen apuntó a lesiones traumáticas como la causa de muerte de todos en el aparato .	La NTSB encontró que el piloto fue sujeto de tres visitas para evaluación psiquiátrica en noviembre y diciembre de 2011 , ya que había sido diagnosticado con enfermedad bipolar tipo I y trastorno por déficit de atención con problemas de memoria , lo cual fue tratado con Seroquel ( un antipsicótico sedante y antidepresivo ) .	El expediente médico no contenía pruebas para el trastorno por déficit de atención o la lista de verificación de síntomas , confirmación del diagnóstico ni efectividad del tratamiento .
+Event	T0	fracturaron	EVENT	46
+Event	T1	recuperaron	EVENT	63
+Event	T2	escape	EVENT	113
+Event	T3	roces	EVENT	166
+Event	T4	flexión	EVENT	209
+Event	T5	rotación	EVENT	246
+Event	T6	autopsias	EVENT	335
+Event	T7	apuntó	EVENT	389
+Event	T8	muerte	EVENT	436
+Event	T9	encontró	EVENT	476
+Event	T10	visitas	EVENT	518
+Event	T11	evaluación	EVENT	531
+Event	T12	diagnosticado	EVENT	608
+Event	T13	enfermedad	EVENT	626
+Event	T14	tratado	EVENT	727
+Event	T15	pruebas	EVENT	828
+Event	T16	verificación	EVENT	892
+Event	T17	confirmación	EVENT	919
+Event	T18	diagnóstico	EVENT	936
+Event	T19	tratamiento	EVENT	967
+Event	T20	lesiones	EVENT	398
+Relation	T0	T17	NoRel	true	fracturaron	confirmación
+Relation	T0	T2	NoRel	true	fracturaron	escape
+Relation	T1	T13	NoRel	true	recuperaron	enfermedad
+Relation	T1	T18	NoRel	true	recuperaron	diagnóstico
+Relation	T1	T3	NoRel	true	recuperaron	roces
+Relation	T10	T14	NoRel	true	visitas	tratado
+Relation	T10	T19	NoRel	true	visitas	tratamiento
+Relation	T11	T17	NoRel	true	evaluación	confirmación
+Relation	T11	T20	NoRel	true	evaluación	lesiones
+Relation	T11	T5	NoRel	true	evaluación	rotación
+Relation	T11	T6	NoRel	true	evaluación	autopsias
+Relation	T12	T10	NoRel	true	diagnosticado	visitas
+Relation	T12	T11	NoRel	true	diagnosticado	evaluación
+Relation	T12	T4	NoRel	true	diagnosticado	flexión
+Relation	T12	T6	NoRel	true	diagnosticado	autopsias
+Relation	T13	T16	NoRel	true	enfermedad	verificación
+Relation	T13	T18	NoRel	true	enfermedad	diagnóstico
+Relation	T13	T6	NoRel	true	enfermedad	autopsias
+Relation	T13	T9	NoRel	true	enfermedad	encontró
+Relation	T14	T13	NoRel	true	tratado	enfermedad
+Relation	T14	T5	NoRel	true	tratado	rotación
+Relation	T15	T14	NoRel	true	pruebas	tratado
+Relation	T15	T16	NoRel	true	pruebas	verificación
+Relation	T15	T2	NoRel	true	pruebas	escape
+Relation	T15	T3	NoRel	true	pruebas	roces
+Relation	T16	T17	NoRel	true	verificación	confirmación
+Relation	T16	T19	NoRel	true	verificación	tratamiento
+Relation	T16	T5	NoRel	true	verificación	rotación
+Relation	T17	T19	NoRel	true	confirmación	tratamiento
+Relation	T17	T9	NoRel	true	confirmación	encontró
+Relation	T18	T10	NoRel	true	diagnóstico	visitas
+Relation	T18	T7	NoRel	true	diagnóstico	apuntó
+Relation	T19	T12	NoRel	true	tratamiento	diagnosticado
+Relation	T19	T6	NoRel	true	tratamiento	autopsias
+Relation	T2	T11	NoRel	true	escape	evaluación
+Relation	T2	T12	NoRel	true	escape	diagnosticado
+Relation	T2	T16	NoRel	true	escape	verificación
+Relation	T2	T17	NoRel	true	escape	confirmación
+Relation	T20	T13	NoRel	true	lesiones	enfermedad
+Relation	T20	T18	NoRel	true	lesiones	diagnóstico
+Relation	T3	T1	NoRel	true	roces	recuperaron
+Relation	T3	T18	NoRel	true	roces	diagnóstico
+Relation	T3	T2	NoRel	true	roces	escape
+Relation	T4	T2	NoRel	true	flexión	escape
+Relation	T6	T1	NoRel	true	autopsias	recuperaron
+Relation	T6	T7	NoRel	true	autopsias	apuntó
+Relation	T7	T5	NoRel	true	apuntó	rotación
+Relation	T8	T17	NoRel	true	muerte	confirmación
+Relation	T9	T14	NoRel	true	encontró	tratado
+Relation	T9	T18	NoRel	true	encontró	diagnóstico

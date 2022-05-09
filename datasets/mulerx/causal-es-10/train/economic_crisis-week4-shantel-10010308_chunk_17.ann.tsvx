@@ -1,0 +1,68 @@
+Text	El participante ingresó a la competencia para sustituir a un guerrero debido a múltiples contagios de COVID-19 .	El participante ingresó a la competencia para sustituir a un guerrero debido a múltiples contagios de COVID-19 .	El participante ingresó a la competencia para sustituir a un guerrero debido a múltiples contagios de COVID-19 .	El participante ingresó a la competencia para sustituir a un guerrero debido a múltiples contagios de COVID-19 .	El participante ingresó a la competencia para sustituir a un guerrero debido a múltiples contagios de COVID-19 .
+Event	T0	ingresó	EVENT	16
+Event	T1	competencia	EVENT	29
+Event	T2	sustituir	EVENT	46
+Event	T3	contagios	EVENT	89
+Event	T4	ingresó	EVENT	129
+Event	T5	competencia	EVENT	142
+Event	T6	sustituir	EVENT	159
+Event	T7	contagios	EVENT	202
+Event	T8	ingresó	EVENT	242
+Event	T9	competencia	EVENT	255
+Event	T10	sustituir	EVENT	272
+Event	T11	contagios	EVENT	315
+Event	T12	ingresó	EVENT	355
+Event	T13	competencia	EVENT	368
+Event	T14	sustituir	EVENT	385
+Event	T15	contagios	EVENT	428
+Event	T16	ingresó	EVENT	468
+Event	T17	competencia	EVENT	481
+Event	T18	sustituir	EVENT	498
+Event	T19	contagios	EVENT	541
+Relation	T3	T2	CauseEffect	true	contagios	sustituir
+Relation	T2	T3	EffectCause	true	sustituir	contagios
+Relation	T7	T6	CauseEffect	true	contagios	sustituir
+Relation	T6	T7	EffectCause	true	sustituir	contagios
+Relation	T11	T10	CauseEffect	true	contagios	sustituir
+Relation	T10	T11	EffectCause	true	sustituir	contagios
+Relation	T15	T14	CauseEffect	true	contagios	sustituir
+Relation	T14	T15	EffectCause	true	sustituir	contagios
+Relation	T19	T18	CauseEffect	true	contagios	sustituir
+Relation	T18	T19	EffectCause	true	sustituir	contagios
+Relation	T0	T10	NoRel	true	ingresó	sustituir
+Relation	T0	T13	NoRel	true	ingresó	competencia
+Relation	T0	T16	NoRel	true	ingresó	ingresó
+Relation	T0	T7	NoRel	true	ingresó	contagios
+Relation	T1	T0	NoRel	true	competencia	ingresó
+Relation	T1	T14	NoRel	true	competencia	sustituir
+Relation	T10	T16	NoRel	true	sustituir	ingresó
+Relation	T10	T19	NoRel	true	sustituir	contagios
+Relation	T10	T2	NoRel	true	sustituir	sustituir
+Relation	T11	T0	NoRel	true	contagios	ingresó
+Relation	T12	T15	NoRel	true	ingresó	contagios
+Relation	T12	T4	NoRel	true	ingresó	ingresó
+Relation	T13	T10	NoRel	true	competencia	sustituir
+Relation	T13	T6	NoRel	true	competencia	sustituir
+Relation	T14	T1	NoRel	true	sustituir	competencia
+Relation	T14	T4	NoRel	true	sustituir	ingresó
+Relation	T15	T19	NoRel	true	contagios	contagios
+Relation	T15	T5	NoRel	true	contagios	competencia
+Relation	T15	T6	NoRel	true	contagios	sustituir
+Relation	T16	T13	NoRel	true	ingresó	competencia
+Relation	T16	T18	NoRel	true	ingresó	sustituir
+Relation	T18	T9	NoRel	true	sustituir	competencia
+Relation	T3	T14	NoRel	true	contagios	sustituir
+Relation	T3	T18	NoRel	true	contagios	sustituir
+Relation	T3	T6	NoRel	true	contagios	sustituir
+Relation	T4	T1	NoRel	true	ingresó	competencia
+Relation	T4	T14	NoRel	true	ingresó	sustituir
+Relation	T4	T3	NoRel	true	ingresó	contagios
+Relation	T5	T10	NoRel	true	competencia	sustituir
+Relation	T5	T3	NoRel	true	competencia	contagios
+Relation	T6	T3	NoRel	true	sustituir	contagios
+Relation	T7	T0	NoRel	true	contagios	ingresó
+Relation	T8	T12	NoRel	true	ingresó	ingresó
+Relation	T8	T17	NoRel	true	ingresó	competencia
+Relation	T8	T7	NoRel	true	ingresó	contagios
+Relation	T9	T16	NoRel	true	competencia	ingresó
+Relation	T9	T7	NoRel	true	competencia	contagios

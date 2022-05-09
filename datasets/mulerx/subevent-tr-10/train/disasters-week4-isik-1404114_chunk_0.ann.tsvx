@@ -1,0 +1,43 @@
+Text	115 ANTAKYA DEPREMI , 13 Aralık 115 tarihinde meydana gelen ve Yüzey dalga büyüklüğü ölçeğinde tahmini büyüklüğü 7.5M _ ( s ) ve Mercalli şiddet ölçeğinde tahmini maksimum XI ( Ekstrem ) yoğunlukta yaşanmış Türkiye coğrafyasında en çok ölüme sebep olan deprem .	Antakya ve çevresinde çok büyük can ve mal kaybına sebep olmuştur .	Tetiklediği tsunami dalgaları Caesarea Maritima limanında çok ciddi hasarlar vermiştir .	Depremde yaklaşık 260.000 kişi ölmüştür .	Dönemin Roma İmparatoru Trajan , halefi Hadrianus ve konsül Marcus Pedo Vergilianus Perslere karşı yaptıkları seferde kışı geçirmek için konakladıkları sırada yakalanmıştır .
+Event	T1	gelen	EVENT	54
+Event	T2	yaşanmış	EVENT	198
+Event	T4	deprem	EVENT	253
+Event	T7	vermiştir	EVENT	407
+Event	T8	Depremde	EVENT	419
+Event	T9	ölmüştür	EVENT	450
+Event	T11	yakalanmıştır	EVENT	620
+Event	T12	115 ANTAKYA DEPREMI	EVENT	0
+Event	T3	olan	EVENT	248
+Event	T5	olmuştur	EVENT	319
+Event	T6	tsunami	EVENT	342
+Event	T13	seferde	EVENT	571
+Event	T10	konakladıkları	EVENT	598
+Relation	T12	T1	SuperSub	true	115 ANTAKYA DEPREMI	gelen
+Relation	T1	T12	SubSuper	true	gelen	115 ANTAKYA DEPREMI
+Relation	T12	T2	SuperSub	true	115 ANTAKYA DEPREMI	yaşanmış
+Relation	T2	T12	SubSuper	true	yaşanmış	115 ANTAKYA DEPREMI
+Relation	T12	T3	SuperSub	true	115 ANTAKYA DEPREMI	olan
+Relation	T3	T12	SubSuper	true	olan	115 ANTAKYA DEPREMI
+Relation	T12	T5	SuperSub	true	115 ANTAKYA DEPREMI	olmuştur
+Relation	T5	T12	SubSuper	true	olmuştur	115 ANTAKYA DEPREMI
+Relation	T12	T6	SuperSub	true	115 ANTAKYA DEPREMI	tsunami
+Relation	T6	T12	SubSuper	true	tsunami	115 ANTAKYA DEPREMI
+Relation	T6	T7	SuperSub	true	tsunami	vermiştir
+Relation	T7	T6	SubSuper	true	vermiştir	tsunami
+Relation	T12	T9	SuperSub	true	115 ANTAKYA DEPREMI	ölmüştür
+Relation	T9	T12	SubSuper	true	ölmüştür	115 ANTAKYA DEPREMI
+Relation	T12	T11	SuperSub	true	115 ANTAKYA DEPREMI	yakalanmıştır
+Relation	T11	T12	SubSuper	true	yakalanmıştır	115 ANTAKYA DEPREMI
+Relation	T10	T2	NoRel	true	konakladıkları	yaşanmış
+Relation	T10	T6	NoRel	true	konakladıkları	tsunami
+Relation	T11	T13	NoRel	true	yakalanmıştır	seferde
+Relation	T11	T6	NoRel	true	yakalanmıştır	tsunami
+Relation	T11	T8	NoRel	true	yakalanmıştır	Depremde
+Relation	T12	T10	NoRel	true	115 ANTAKYA DEPREMI	konakladıkları
+Relation	T12	T4	NoRel	true	115 ANTAKYA DEPREMI	deprem
+Relation	T5	T1	NoRel	true	olmuştur	gelen
+Relation	T5	T6	NoRel	true	olmuştur	tsunami
+Relation	T5	T8	NoRel	true	olmuştur	Depremde
+Relation	T6	T9	NoRel	true	tsunami	ölmüştür
+Relation	T8	T2	NoRel	true	Depremde	yaşanmış
+Relation	T9	T2	NoRel	true	ölmüştür	yaşanmış

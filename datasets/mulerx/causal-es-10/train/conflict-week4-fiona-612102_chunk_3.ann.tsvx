@@ -1,0 +1,49 @@
+Text	Esa experiencia la narró en su autobiografía ‘ Borstal Boy ’ ( 1958 ) .	En 1942 , mientras el IRA emprendía la Campaña del Norte , Behan fue juzgado por el intento de asesinato de dos policías en Dublín que habían acudido a la ceremonia conmemorativa del aniversario de Theobald Wolfe Tone , padre del Republicanismo irlandés .	Condenado a 14 años de prisión , fue encarcelado en la prisión de Mountjoy y en el Curragh .	Esta etapa la narra en su libro póstumo ‘ Confessions of an Irish Rebel ’ [ ‘ Confesiones de un rebelde irlandés ’ , Txalaparta , 1999 ; traducción de Maite Mujika ] .	Liberado por la amnistía de 1946 , Behan dio por acabada su militancia armada a los 23 años y , aunque abandonó el IRA , mantuvo allí grandes amigos , como el futuro jefe de estado mayor Cathal Goulding .
+Event	T0	experiencia	EVENT	4
+Event	T1	narró	EVENT	19
+Event	T2	emprendía	EVENT	98
+Event	T3	juzgado	EVENT	141
+Event	T4	intento	EVENT	156
+Event	T5	asesinato	EVENT	167
+Event	T6	acudido	EVENT	214
+Event	T7	conmemorativa	EVENT	237
+Event	T8	Condenado	EVENT	328
+Event	T9	encarcelado	EVENT	365
+Event	T10	etapa	EVENT	426
+Event	T11	narra	EVENT	435
+Event	T12	Confessions	EVENT	463
+Event	T13	Liberado	EVENT	589
+Event	T14	dio	EVENT	630
+Event	T15	acabada	EVENT	638
+Event	T16	militancia	EVENT	649
+Event	T17	mantuvo	EVENT	710
+Relation	T0	T13	NoRel	true	experiencia	Liberado
+Relation	T0	T16	NoRel	true	experiencia	militancia
+Relation	T0	T8	NoRel	true	experiencia	Condenado
+Relation	T10	T14	NoRel	true	etapa	dio
+Relation	T10	T4	NoRel	true	etapa	intento
+Relation	T12	T13	NoRel	true	Confessions	Liberado
+Relation	T13	T3	NoRel	true	Liberado	juzgado
+Relation	T13	T8	NoRel	true	Liberado	Condenado
+Relation	T14	T0	NoRel	true	dio	experiencia
+Relation	T14	T16	NoRel	true	dio	militancia
+Relation	T14	T3	NoRel	true	dio	juzgado
+Relation	T15	T1	NoRel	true	acabada	narró
+Relation	T15	T10	NoRel	true	acabada	etapa
+Relation	T15	T3	NoRel	true	acabada	juzgado
+Relation	T15	T4	NoRel	true	acabada	intento
+Relation	T16	T17	NoRel	true	militancia	mantuvo
+Relation	T16	T6	NoRel	true	militancia	acudido
+Relation	T17	T2	NoRel	true	mantuvo	emprendía
+Relation	T17	T5	NoRel	true	mantuvo	asesinato
+Relation	T17	T7	NoRel	true	mantuvo	conmemorativa
+Relation	T2	T10	NoRel	true	emprendía	etapa
+Relation	T2	T3	NoRel	true	emprendía	juzgado
+Relation	T4	T15	NoRel	true	intento	acabada
+Relation	T6	T10	NoRel	true	acudido	etapa
+Relation	T7	T8	NoRel	true	conmemorativa	Condenado
+Relation	T8	T15	NoRel	true	Condenado	acabada
+Relation	T8	T2	NoRel	true	Condenado	emprendía
+Relation	T8	T7	NoRel	true	Condenado	conmemorativa
+Relation	T9	T16	NoRel	true	encarcelado	militancia
+Relation	T9	T7	NoRel	true	encarcelado	conmemorativa

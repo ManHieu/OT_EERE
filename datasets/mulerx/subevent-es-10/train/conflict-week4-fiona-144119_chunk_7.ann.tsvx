@@ -1,0 +1,56 @@
+Text	Los seguidores cristianos que rechazaron ofrecer un sacrificio pagano por el emperador y el bienestar del imperio a una fecha determinada se arriesgaban a la tortura y a la ejecución .	Una serie de destacados cristianos de hecho rechazaron hacer sacrificios y fueron asesinados en el proceso , incluyendo al propio obispo de Roma , Fabián , en 250 y « los sentimientos anticristianos llevaron a la cacería de los fieles en Cartago y Alejandría » .	En realidad , sin embargo , hacia el final del segundo año del reinado de Decio , « la ferocidad de la persecución [ anticristiana ] había disminuido , y la tradición precedente de tolerancia había comenzado a reafirmarse » .	La Iglesia cristiana sin embargo nunca olvidó el reinado de Decio a quien motejaron como « ese feroz tirano » .	En esta época , hubo un segundo estallido de la peste antonina , que en su punto álgido en 251 a 266 se llevó las vidas de 5000 personas diarias en Roma .
+Event	T0	ofrecer	EVENT	41
+Event	T1	sacrificio	EVENT	52
+Event	T2	arriesgaban	EVENT	141
+Event	T3	tortura	EVENT	158
+Event	T4	ejecución	EVENT	173
+Event	T5	sacrificios	EVENT	246
+Event	T6	asesinados	EVENT	267
+Event	T7	proceso	EVENT	284
+Event	T8	sentimientos	EVENT	356
+Event	T9	llevaron	EVENT	384
+Event	T10	cacería	EVENT	398
+Event	T11	reinado	EVENT	511
+Event	T12	persecución	EVENT	551
+Event	T13	disminuido	EVENT	587
+Event	T14	comenzado	EVENT	646
+Event	T15	reafirmarse	EVENT	658
+Event	T16	reinado	EVENT	723
+Event	T17	estallido	EVENT	818
+Event	T18	peste	EVENT	834
+Event	T19	llevó	EVENT	890
+Relation	T0	T8	NoRel	true	ofrecer	sentimientos
+Relation	T1	T11	NoRel	true	sacrificio	reinado
+Relation	T1	T14	NoRel	true	sacrificio	comenzado
+Relation	T1	T16	NoRel	true	sacrificio	reinado
+Relation	T11	T2	NoRel	true	reinado	arriesgaban
+Relation	T11	T4	NoRel	true	reinado	ejecución
+Relation	T12	T6	NoRel	true	persecución	asesinados
+Relation	T13	T16	NoRel	true	disminuido	reinado
+Relation	T13	T6	NoRel	true	disminuido	asesinados
+Relation	T13	T8	NoRel	true	disminuido	sentimientos
+Relation	T14	T11	NoRel	true	comenzado	reinado
+Relation	T15	T0	NoRel	true	reafirmarse	ofrecer
+Relation	T15	T1	NoRel	true	reafirmarse	sacrificio
+Relation	T15	T11	NoRel	true	reafirmarse	reinado
+Relation	T15	T14	NoRel	true	reafirmarse	comenzado
+Relation	T15	T5	NoRel	true	reafirmarse	sacrificios
+Relation	T16	T6	NoRel	true	reinado	asesinados
+Relation	T18	T0	NoRel	true	peste	ofrecer
+Relation	T19	T10	NoRel	true	llevó	cacería
+Relation	T19	T12	NoRel	true	llevó	persecución
+Relation	T19	T14	NoRel	true	llevó	comenzado
+Relation	T19	T3	NoRel	true	llevó	tortura
+Relation	T3	T15	NoRel	true	tortura	reafirmarse
+Relation	T3	T19	NoRel	true	tortura	llevó
+Relation	T3	T6	NoRel	true	tortura	asesinados
+Relation	T4	T11	NoRel	true	ejecución	reinado
+Relation	T4	T9	NoRel	true	ejecución	llevaron
+Relation	T5	T2	NoRel	true	sacrificios	arriesgaban
+Relation	T5	T3	NoRel	true	sacrificios	tortura
+Relation	T6	T13	NoRel	true	asesinados	disminuido
+Relation	T7	T2	NoRel	true	proceso	arriesgaban
+Relation	T7	T6	NoRel	true	proceso	asesinados
+Relation	T9	T0	NoRel	true	llevaron	ofrecer
+Relation	T9	T14	NoRel	true	llevaron	comenzado
+Relation	T9	T7	NoRel	true	llevaron	proceso

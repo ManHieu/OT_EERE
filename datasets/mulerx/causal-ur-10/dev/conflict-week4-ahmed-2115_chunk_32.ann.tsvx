@@ -1,0 +1,58 @@
+Text	thumb| آخری امریکی فوجی 30 اگست 2021 افغانستان سے جاتے ہوئے انیس سال تک جنگ میں ناکامی کے بعد امریکہ نے طالبان سے 29 فروری 2020 کو دوحہ میں امن معاہدہ کرلیا جس کے مطابق تمام غیر ملکی افواج نے چودہ ماہ میں افغانستان سے انخلا کرنا تھا اور طالبان نے غیر ملکی افواج پر حملے بند کرنے تھے ۔	دوحہ معاہدے کے چودہ ماہ بعد کافی حد تک غیر ملکی افواج انخلا کرچکی تھی ۔	یکم مئی 2021 کو طالبان نے کٹھ پتلی افغان حکومت کے خلاف ایک مسلح کاروائی شروع کی اور بمشکل ساڑھے تین ماہ میں بیشتر افغان علاقوں کو فتح کرلیا اور 15 اگست 2021ء کو طالبان نے بغیر کسی مزاحمت کے کابل دوبارہ فتح کر کے اسلامی امارت افغانستان کو بحال کر دیا ۔۔	30 اگست کو بقیہ غیر ملکی افواج بھی انخلا کرگئیں ۔	17 اگست کو بقیا افغان فوج اور حکومتی عہدیداروں نے صوبہ پنجشیر میں امراللہ صالح اور احمد مسعود کی قیادت میں ایک حکومت قائم کی اور طالبان کے خلاف مسلح کارروائیوں کا آغاز کیا اور 6 ستمبر تک شکست کھا گئے اور طالبان پنجشیر میں داخل ہوگئے ۔
+Event	T0	جنگ	EVENT	72
+Event	T1	ناکامی	EVENT	80
+Event	T3	انخلا	EVENT	339
+Event	T5	مزاحمت	EVENT	537
+Event	T6	فتح	EVENT	559
+Event	T7	بحال	EVENT	595
+Event	T10	کارروائیوں	EVENT	809
+Event	T13	جاتے	EVENT	50
+Event	T14	معاہدہ	EVENT	144
+Event	T2	انخلا	EVENT	218
+Event	T15	حملے	EVENT	265
+Event	T16	کاروائی	EVENT	421
+Event	T17	فتح	EVENT	487
+Event	T4	انخلا	EVENT	645
+Event	T8	قائم	EVENT	777
+Event	T9	آغاز	EVENT	823
+Event	T18	شکست	EVENT	847
+Event	T11	داخل	EVENT	882
+Relation	T1	T14	CauseEffect	true	ناکامی	معاہدہ
+Relation	T14	T1	EffectCause	true	معاہدہ	ناکامی
+Relation	T14	T2	CauseEffect	true	معاہدہ	انخلا
+Relation	T2	T14	EffectCause	true	انخلا	معاہدہ
+Relation	T14	T15	CauseEffect	true	معاہدہ	حملے
+Relation	T15	T14	EffectCause	true	حملے	معاہدہ
+Relation	T14	T3	CauseEffect	true	معاہدہ	انخلا
+Relation	T3	T14	EffectCause	true	انخلا	معاہدہ
+Relation	T14	T4	CauseEffect	true	معاہدہ	انخلا
+Relation	T4	T14	EffectCause	true	انخلا	معاہدہ
+Relation	T18	T11	CauseEffect	true	شکست	داخل
+Relation	T11	T18	EffectCause	true	داخل	شکست
+Relation	T10	T1	NoRel	true	کارروائیوں	ناکامی
+Relation	T13	T15	NoRel	true	جاتے	حملے
+Relation	T14	T18	NoRel	true	معاہدہ	شکست
+Relation	T14	T6	NoRel	true	معاہدہ	فتح
+Relation	T15	T13	NoRel	true	حملے	جاتے
+Relation	T15	T18	NoRel	true	حملے	شکست
+Relation	T15	T7	NoRel	true	حملے	بحال
+Relation	T16	T11	NoRel	true	کاروائی	داخل
+Relation	T16	T4	NoRel	true	کاروائی	انخلا
+Relation	T16	T7	NoRel	true	کاروائی	بحال
+Relation	T18	T4	NoRel	true	شکست	انخلا
+Relation	T2	T10	NoRel	true	انخلا	کارروائیوں
+Relation	T2	T15	NoRel	true	انخلا	حملے
+Relation	T2	T9	NoRel	true	انخلا	آغاز
+Relation	T3	T10	NoRel	true	انخلا	کارروائیوں
+Relation	T3	T8	NoRel	true	انخلا	قائم
+Relation	T4	T11	NoRel	true	انخلا	داخل
+Relation	T4	T18	NoRel	true	انخلا	شکست
+Relation	T5	T1	NoRel	true	مزاحمت	ناکامی
+Relation	T5	T15	NoRel	true	مزاحمت	حملے
+Relation	T5	T2	NoRel	true	مزاحمت	انخلا
+Relation	T6	T15	NoRel	true	فتح	حملے
+Relation	T6	T18	NoRel	true	فتح	شکست
+Relation	T8	T10	NoRel	true	قائم	کارروائیوں
+Relation	T8	T17	NoRel	true	قائم	فتح
+Relation	T9	T15	NoRel	true	آغاز	حملے
+Relation	T9	T4	NoRel	true	آغاز	انخلا

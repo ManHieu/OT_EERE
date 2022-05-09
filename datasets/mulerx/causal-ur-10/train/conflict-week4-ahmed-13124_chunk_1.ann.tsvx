@@ -1,0 +1,50 @@
+Text	سقوط بغداد کے ساتھ ہی ملک بھر میں خانہ جنگی کی صورت حال پیدا ہو گئی اور عراق کے شہروں کوت اور ناصریہ نے تو ایک دوسرے کے خلاف جنگ تک کا اعلان کر دیا ۔	عراق کی یہ صورت حال آج تک قائم ہے جہاں اب تک لاکھوں افراد مارے جاچکے ہیں ۔	سقوط بغداد کے وقت فرار ہونے والے عراقی صدر صدام حسین اور ان کے صاحبزادے عودے اور قوصے حسین بعد ازاں گرفتار اور قتل ہوئے ۔	عودے اور قوصے 22 جولائی 2003ء کو ایک چھاپے میں مارے گئے جبکہ صدام حسین 13 دسمبر 2003ء کو تکریت کے نواح میں ( امریکی ذرائع کے مطابق ) ایک زیر زمین پناہ گاہ سے گرفتار ہوئے ۔	مبصرین کے مطابق امریکی حملے کا مقصد مسرق وسطٰی کے تیل کے زخائر پر قبضہ کرنا تھا ۔
+Event	T0	سقوط	EVENT	0
+Event	T1	جنگی	EVENT	39
+Event	T2	اعلان	EVENT	135
+Event	T4	سقوط	EVENT	225
+Event	T5	فرار	EVENT	243
+Event	T6	گرفتار	EVENT	325
+Event	T9	حملے	EVENT	542
+Event	T10	قبضہ	EVENT	585
+Event	T11	پیدا	EVENT	56
+Event	T12	جنگ	EVENT	125
+Event	T13	مارے	EVENT	208
+Event	T3	وقت	EVENT	239
+Event	T14	قتل	EVENT	336
+Event	T7	چھاپے	EVENT	384
+Event	T15	مارے	EVENT	394
+Event	T16	گرفتار	EVENT	505
+Relation	T0	T1	CauseEffect	true	سقوط	جنگی
+Relation	T1	T0	EffectCause	true	جنگی	سقوط
+Relation	T12	T13	CauseEffect	true	جنگ	مارے
+Relation	T13	T12	EffectCause	true	مارے	جنگ
+Relation	T4	T5	CauseEffect	true	سقوط	فرار
+Relation	T5	T4	EffectCause	true	فرار	سقوط
+Relation	T7	T15	CauseEffect	true	چھاپے	مارے
+Relation	T15	T7	EffectCause	true	مارے	چھاپے
+Relation	T7	T16	CauseEffect	true	چھاپے	گرفتار
+Relation	T16	T7	EffectCause	true	گرفتار	چھاپے
+Relation	T10	T9	CauseEffect	true	قبضہ	حملے
+Relation	T9	T10	EffectCause	true	حملے	قبضہ
+Relation	T1	T3	NoRel	true	جنگی	وقت
+Relation	T1	T6	NoRel	true	جنگی	گرفتار
+Relation	T11	T0	NoRel	true	پیدا	سقوط
+Relation	T11	T16	NoRel	true	پیدا	گرفتار
+Relation	T12	T9	NoRel	true	جنگ	حملے
+Relation	T13	T5	NoRel	true	مارے	فرار
+Relation	T14	T2	NoRel	true	قتل	اعلان
+Relation	T15	T11	NoRel	true	مارے	پیدا
+Relation	T15	T12	NoRel	true	مارے	جنگ
+Relation	T15	T14	NoRel	true	مارے	قتل
+Relation	T16	T12	NoRel	true	گرفتار	جنگ
+Relation	T3	T0	NoRel	true	وقت	سقوط
+Relation	T3	T5	NoRel	true	وقت	فرار
+Relation	T4	T7	NoRel	true	سقوط	چھاپے
+Relation	T5	T13	NoRel	true	فرار	مارے
+Relation	T5	T14	NoRel	true	فرار	قتل
+Relation	T5	T15	NoRel	true	فرار	مارے
+Relation	T6	T12	NoRel	true	گرفتار	جنگ
+Relation	T6	T16	NoRel	true	گرفتار	گرفتار
+Relation	T6	T9	NoRel	true	گرفتار	حملے
+Relation	T9	T16	NoRel	true	حملے	گرفتار

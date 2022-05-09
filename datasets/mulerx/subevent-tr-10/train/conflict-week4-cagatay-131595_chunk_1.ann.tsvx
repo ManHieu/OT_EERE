@@ -1,0 +1,58 @@
+Text	Almanya'nın güçlendirilerek kendisine karşı kullanılacağını düşünen Stalin , Batı birliklerinin hepsini Batı Berlin'den çıkarmak için harekete geçti .	Şehrin batı bölümüne tüm demir ve kara yolları kesilerek abluka uygulanmaya başlandı .	Sovyet işgal alanı içinde bir parça olarak kalan Batı Berlin'e abluka uygulanması şehrin kara ikmal yollarının tamamen kapanmasına neden olunca erzaksız kalan şehre 26 Haziran 1948 ile 30 Eylül 1949 arasında yiyecek yardımları Batılı ülkelerin uçaklarıyla hava köprüsü kurularak yapıldı .	Bu ikmal sırasında ABD'nin savaştan kalmış birçok ikmal ve bombardıman uçağı kullanıldı .	Özellikle C- 47 ve C- 54 gibi sayısı çok olan uçaklar gün aşırı sortiler yaptı .
+Event	T0	geçti	EVENT	143
+Event	T2	işgal	EVENT	245
+Event	T5	ikmal	EVENT	530
+Event	T6	kullanıldı	EVENT	604
+Event	T7	yaptı	EVENT	690
+Event	T8	güçlendirilerek	EVENT	12
+Event	T9	kullanılacağını	EVENT	44
+Event	T10	çıkarmak	EVENT	120
+Event	T11	düşünen	EVENT	60
+Event	T12	kesilerek	EVENT	198
+Event	T13	abluka	EVENT	208
+Event	T1	abluka	EVENT	301
+Event	T3	kapanmasına	EVENT	357
+Event	T14	kalan	EVENT	281
+Event	T15	yardımları	EVENT	454
+Event	T16	kurularak	EVENT	507
+Relation	T13	T12	SuperSub	true	abluka	kesilerek
+Relation	T12	T13	SubSuper	true	kesilerek	abluka
+Relation	T2	T13	SuperSub	true	işgal	abluka
+Relation	T13	T2	SubSuper	true	abluka	işgal
+Relation	T2	T1	SuperSub	true	işgal	abluka
+Relation	T1	T2	SubSuper	true	abluka	işgal
+Relation	T15	T5	SuperSub	true	yardımları	ikmal
+Relation	T5	T15	SubSuper	true	ikmal	yardımları
+Relation	T15	T6	SuperSub	true	yardımları	kullanıldı
+Relation	T6	T15	SubSuper	true	kullanıldı	yardımları
+Relation	T15	T16	SuperSub	true	yardımları	kurularak
+Relation	T16	T15	SubSuper	true	kurularak	yardımları
+Relation	T15	T7	SuperSub	true	yardımları	yaptı
+Relation	T7	T15	SubSuper	true	yaptı	yardımları
+Relation	T0	T1	NoRel	true	geçti	abluka
+Relation	T0	T16	NoRel	true	geçti	kurularak
+Relation	T0	T8	NoRel	true	geçti	güçlendirilerek
+Relation	T1	T10	NoRel	true	abluka	çıkarmak
+Relation	T1	T13	NoRel	true	abluka	abluka
+Relation	T1	T7	NoRel	true	abluka	yaptı
+Relation	T1	T9	NoRel	true	abluka	kullanılacağını
+Relation	T10	T0	NoRel	true	çıkarmak	geçti
+Relation	T10	T14	NoRel	true	çıkarmak	kalan
+Relation	T10	T16	NoRel	true	çıkarmak	kurularak
+Relation	T10	T3	NoRel	true	çıkarmak	kapanmasına
+Relation	T10	T7	NoRel	true	çıkarmak	yaptı
+Relation	T12	T16	NoRel	true	kesilerek	kurularak
+Relation	T13	T15	NoRel	true	abluka	yardımları
+Relation	T14	T3	NoRel	true	kalan	kapanmasına
+Relation	T15	T1	NoRel	true	yardımları	abluka
+Relation	T15	T8	NoRel	true	yardımları	güçlendirilerek
+Relation	T15	T9	NoRel	true	yardımları	kullanılacağını
+Relation	T16	T11	NoRel	true	kurularak	düşünen
+Relation	T16	T6	NoRel	true	kurularak	kullanıldı
+Relation	T16	T9	NoRel	true	kurularak	kullanılacağını
+Relation	T2	T15	NoRel	true	işgal	yardımları
+Relation	T3	T0	NoRel	true	kapanmasına	geçti
+Relation	T7	T11	NoRel	true	yaptı	düşünen
+Relation	T8	T16	NoRel	true	güçlendirilerek	kurularak
+Relation	T9	T0	NoRel	true	kullanılacağını	geçti
+Relation	T9	T11	NoRel	true	kullanılacağını	düşünen

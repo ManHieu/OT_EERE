@@ -1,0 +1,30 @@
+Text	2020 JAMAIKA DEPREMI , 28 Ocak'ta Jamaika ve Küba arasında gerçekleşen 7,7 M _ ( w ) büyüklüğünde deprem .	Depremin merkez üssü Montego Bay'in 83 mil kuzeyindeydi .	Pasifik Tsunami Uyarı Merkezi tarafından bir tsunami uyarısı verildi ancak bu uyarı daha sonra geri çekildi .	Meksika'daki Yucatán Yarımadası'nda da hafif sarsıntı hissedildiği bildirildi .	Bu deprem , 1946'dan beri Karayipler'de gerçekleşen en büyük deprem oldu .
+Event	T0	gerçekleşen	EVENT	59
+Event	T1	deprem	EVENT	98
+Event	T2	Depremin	EVENT	107
+Event	T3	verildi	EVENT	226
+Event	T4	uyarı	EVENT	243
+Event	T5	çekildi	EVENT	265
+Event	T6	bildirildi	EVENT	342
+Event	T7	deprem	EVENT	358
+Event	T8	gerçekleşen	EVENT	395
+Event	T9	deprem	EVENT	416
+Event	T10	DEPREMI	EVENT	13
+Event	T11	tsunami	EVENT	210
+Relation	T10	T3	CauseEffect	true	DEPREMI	verildi
+Relation	T3	T10	EffectCause	true	verildi	DEPREMI
+Relation	T3	T5	CauseEffect	true	verildi	çekildi
+Relation	T5	T3	EffectCause	true	çekildi	verildi
+Relation	T10	T6	CauseEffect	true	DEPREMI	bildirildi
+Relation	T6	T10	EffectCause	true	bildirildi	DEPREMI
+Relation	T1	T8	NoRel	true	deprem	gerçekleşen
+Relation	T10	T0	NoRel	true	DEPREMI	gerçekleşen
+Relation	T10	T5	NoRel	true	DEPREMI	çekildi
+Relation	T2	T7	NoRel	true	Depremin	deprem
+Relation	T3	T11	NoRel	true	verildi	tsunami
+Relation	T4	T1	NoRel	true	uyarı	deprem
+Relation	T4	T8	NoRel	true	uyarı	gerçekleşen
+Relation	T5	T1	NoRel	true	çekildi	deprem
+Relation	T6	T1	NoRel	true	bildirildi	deprem
+Relation	T7	T6	NoRel	true	deprem	bildirildi
+Relation	T9	T4	NoRel	true	deprem	uyarı

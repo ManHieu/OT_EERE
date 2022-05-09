@@ -1,0 +1,32 @@
+Text	ہوائی اڈے کی تمام لائٹس بند کردی گئی تھیں اور ہوائی اڈے سے ملنے والے روڈ لنک سیل کردیئے گئے تھے ۔	پانی اور کھانا پہنچانے کے لئے ، پاکستان پولیس گورچانی اور انور نے رضاکارانہ خدمات انجام دیں اور اس طرح پولیس غیر مسلح ہونے کے باوجود طیارے تک پہنچنے میں کامیاب ہوگئی ۔	جب افسران ہائی جیکرز کو مشغول کرنے کے لئے طیارے میں موجود تھے ، اسپیشل سروس گروپ نے مشن کے لئے تیار کیا ۔	اس دوران میں ، افسروں نے ایک دوسرے سے ہندی بولی اور ہائی جیکرز کو راضی کیا کہ وہ ہندوستانی شہری ہیں ، جیسا کہ اغوا کاروں نے سوچا تھا کہ وہ ہندوستانی ہوائی اڈے پر ہیں ۔	وہ دو ہائی جیکرز جنہوں نے اپنی شناخت صابر اور شبیر کے نام سے کی تھی ان کے جسموں پر دستی بم باندھے باہر آئے تھے ۔
+Event	T0	پہنچنے	EVENT	240
+Event	T3	سوچا	EVENT	496
+Event	T4	شناخت	EVENT	571
+Event	T5	بند	EVENT	24
+Event	T6	سیل	EVENT	77
+Event	T7	کامیاب	EVENT	251
+Event	T1	پہنچانے	EVENT	113
+Event	T8	رضاکارانہ	EVENT	164
+Event	T9	مشغول	EVENT	290
+Event	T2	تیار	EVENT	361
+Event	T10	بولی	EVENT	415
+Event	T11	راضی	EVENT	438
+Event	T12	آئے	EVENT	643
+Relation	T1	T8	CauseEffect	true	پہنچانے	رضاکارانہ
+Relation	T8	T1	EffectCause	true	رضاکارانہ	پہنچانے
+Relation	T0	T10	NoRel	true	پہنچنے	بولی
+Relation	T11	T4	NoRel	true	راضی	شناخت
+Relation	T11	T5	NoRel	true	راضی	بند
+Relation	T12	T5	NoRel	true	آئے	بند
+Relation	T2	T11	NoRel	true	تیار	راضی
+Relation	T2	T5	NoRel	true	تیار	بند
+Relation	T2	T6	NoRel	true	تیار	سیل
+Relation	T2	T9	NoRel	true	تیار	مشغول
+Relation	T3	T10	NoRel	true	سوچا	بولی
+Relation	T5	T9	NoRel	true	بند	مشغول
+Relation	T6	T2	NoRel	true	سیل	تیار
+Relation	T7	T10	NoRel	true	کامیاب	بولی
+Relation	T7	T11	NoRel	true	کامیاب	راضی
+Relation	T7	T4	NoRel	true	کامیاب	شناخت
+Relation	T8	T10	NoRel	true	رضاکارانہ	بولی
+Relation	T8	T3	NoRel	true	رضاکارانہ	سوچا

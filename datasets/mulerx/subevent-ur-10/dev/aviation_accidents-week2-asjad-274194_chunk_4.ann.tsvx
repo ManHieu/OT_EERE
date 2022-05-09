@@ -1,0 +1,22 @@
+Text	تائی ‌پے فائر ڈیپارٹمنٹ اور واؤلنٹری ریسکیو ورکر منٹوں میں ہی جائے حادثہ پر پہنچ گئے اور نیم ڈوبے ہوئے جہاز سے لوگوں کو نکال کر کشتیوں کی مدد سے کناروں تک پہنچانا شروع کر دیا -	غوطہ خور بھی ریسکیو مشن میں شامل تھے لیکن ملبہ اور پانی میں کم حدنگاہ ان کے آڑے آ رہی تھی -	ریسکیو ورکرز کے بیان کے مطابق جہاز کا کیبن مکمل طور پر تباہ ہو چکا تھا ، سیٹ بیلٹس خاص کر اگلے حصے میں جڑ چکی تھیں مسافروں کو نکالنے کے لیے انہیں کاٹا گیا -	بچنے والوں میں سے زیادہ تر پچھلے حصے میں سوار تھے -	جہاز کا فلائٹ رکارڈر اسی دن رات8 بجے ڈھونڈ لیا گیا تھا -
+Event	T1	ڈوبے	EVENT	93
+Event	T12	جڑ	EVENT	372
+Event	T13	آڑے آ رہی	EVENT	253
+Event	T14	سوار	EVENT	467
+Event	T2	نکال	EVENT	120
+Event	T3	شامل	EVENT	205
+Event	T4	بیان	EVENT	285
+Event	T5	تباہ	EVENT	324
+Event	T6	پہنچانا	EVENT	155
+Event	T7	نکالنے	EVENT	395
+Event	T9	مدد	EVENT	138
+Relation	T6	T2	SuperSub	true	پہنچانا	نکال
+Relation	T2	T6	SubSuper	true	نکال	پہنچانا
+Relation	T6	T9	SuperSub	true	پہنچانا	مدد
+Relation	T9	T6	SubSuper	true	مدد	پہنچانا
+Relation	T1	T7	NoRel	true	ڈوبے	نکالنے
+Relation	T12	T14	NoRel	true	جڑ	سوار
+Relation	T14	T12	NoRel	true	سوار	جڑ
+Relation	T5	T9	NoRel	true	تباہ	مدد
+Relation	T9	T1	NoRel	true	مدد	ڈوبے
+Relation	T9	T4	NoRel	true	مدد	بیان

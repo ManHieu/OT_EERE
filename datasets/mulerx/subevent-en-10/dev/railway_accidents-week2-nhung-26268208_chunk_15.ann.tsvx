@@ -1,0 +1,45 @@
+Text	All the injured were taken to the West Kent Hospital in Maidstone , apart from one person who was taken by a passing motorist to Ashford Hospital .	Amongst the rescuers were three teenagers who had heard the crash , Steven Nye , Peter Judge and Christopher Peen .	They went to Marden station where the clerk on duty had not heard of the crash , and seemed not to believe them when they told him they had heard it .	Peen 's father was in the Fire Brigade , so they went to the fire station where they found that the fire engines had been called out to a train crash at Brook Farm .	The trio returned to the railway station , where the clerk had by now been informed of the crash .
+Event	T0	injured	EVENT	8
+Event	T1	taken	EVENT	98
+Event	T10	found	EVENT	500
+Event	T12	crash	EVENT	559
+Event	T13	returned	EVENT	590
+Event	T14	informed	EVENT	656
+Event	T15	crash	EVENT	672
+Event	T17	went	EVENT	269
+Event	T18	went	EVENT	464
+Event	T19	called out	EVENT	537
+Event	T2	passing	EVENT	109
+Event	T3	heard	EVENT	198
+Event	T4	crash	EVENT	208
+Event	T5	heard	EVENT	324
+Event	T6	crash	EVENT	337
+Event	T7	seemed	EVENT	349
+Event	T8	told	EVENT	386
+Event	T9	heard	EVENT	404
+Relation	T0	T2	NoRel	true	injured	passing
+Relation	T1	T0	NoRel	true	taken	injured
+Relation	T10	T0	NoRel	true	found	injured
+Relation	T12	T18	NoRel	true	crash	went
+Relation	T13	T1	NoRel	true	returned	taken
+Relation	T14	T3	NoRel	true	informed	heard
+Relation	T14	T6	NoRel	true	informed	crash
+Relation	T15	T18	NoRel	true	crash	went
+Relation	T15	T4	NoRel	true	crash	crash
+Relation	T17	T5	NoRel	true	went	heard
+Relation	T18	T13	NoRel	true	went	returned
+Relation	T18	T14	NoRel	true	went	informed
+Relation	T19	T12	NoRel	true	called out	crash
+Relation	T19	T3	NoRel	true	called out	heard
+Relation	T19	T7	NoRel	true	called out	seemed
+Relation	T2	T6	NoRel	true	passing	crash
+Relation	T3	T7	NoRel	true	heard	seemed
+Relation	T4	T3	NoRel	true	crash	heard
+Relation	T5	T2	NoRel	true	heard	passing
+Relation	T6	T13	NoRel	true	crash	returned
+Relation	T7	T18	NoRel	true	seemed	went
+Relation	T7	T3	NoRel	true	seemed	heard
+Relation	T7	T6	NoRel	true	seemed	crash
+Relation	T8	T3	NoRel	true	told	heard
+Relation	T8	T6	NoRel	true	told	crash
+Relation	T9	T19	NoRel	true	heard	called out

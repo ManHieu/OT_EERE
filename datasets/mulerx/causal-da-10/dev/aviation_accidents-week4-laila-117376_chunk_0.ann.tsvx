@@ -1,0 +1,36 @@
+Text	UNITED AIRLINES' FLYNUMMER 93 ( engelsk : UNITED AIRLINES FLIGHT 93 ) var det fjerde fly , der blev kapret som en del af terrorangrebet den 11. september 2001 .	Flyet skulle ifølge hjernen bag terrorangrebet , Khalid Sheikh Mohammed , have ramt United States Capitol , hovedsædet for USAs Kongres .	Flyet havde fløjet i cirka 40 minutter , da besætningen i cockpittet blev overmandet af terrorister , som overtog kontrollen med flyet og fløj det mod den amerikanske hovedstad Washington D.C.	Flere af flyets passagerer og kabinebesætningsmedlemmer ringede til deres familiemedlemmer og repræsentanter fra United Airlines for at informere dem om kapringen af flyet .	I sidste ende besluttede passagererne sig for at gøre modstand mod terroristerne , hvilket resulterede i flyets nedstyrtning .
+Event	T0	kapret	EVENT	100
+Event	T1	terrorangrebet	EVENT	121
+Event	T3	terrorangrebet	EVENT	193
+Event	T6	overmandet	EVENT	373
+Event	T8	fløj	EVENT	437
+Event	T9	ringede	EVENT	548
+Event	T11	kapringen	EVENT	645
+Event	T14	nedstyrtning	EVENT	778
+Event	T2	gøre modstand	EVENT	715
+Event	T4	ramt	EVENT	240
+Event	T5	fløjet	EVENT	311
+Event	T7	overtog	EVENT	405
+Event	T10	informere	EVENT	628
+Event	T12	besluttede	EVENT	680
+Relation	T6	T8	CauseEffect	true	overmandet	fløj
+Relation	T8	T6	EffectCause	true	fløj	overmandet
+Relation	T0	T8	CauseEffect	true	kapret	fløj
+Relation	T8	T0	EffectCause	true	fløj	kapret
+Relation	T11	T9	CauseEffect	true	kapringen	ringede
+Relation	T9	T11	EffectCause	true	ringede	kapringen
+Relation	T2	T14	CauseEffect	true	gøre modstand	nedstyrtning
+Relation	T14	T2	EffectCause	true	nedstyrtning	gøre modstand
+Relation	T1	T9	NoRel	true	terrorangrebet	ringede
+Relation	T10	T1	NoRel	true	informere	terrorangrebet
+Relation	T14	T8	NoRel	true	nedstyrtning	fløj
+Relation	T2	T1	NoRel	true	gøre modstand	terrorangrebet
+Relation	T2	T8	NoRel	true	gøre modstand	fløj
+Relation	T3	T6	NoRel	true	terrorangrebet	overmandet
+Relation	T4	T1	NoRel	true	ramt	terrorangrebet
+Relation	T5	T11	NoRel	true	fløjet	kapringen
+Relation	T5	T7	NoRel	true	fløjet	overtog
+Relation	T6	T1	NoRel	true	overmandet	terrorangrebet
+Relation	T7	T1	NoRel	true	overtog	terrorangrebet
+Relation	T8	T14	NoRel	true	fløj	nedstyrtning
+Relation	T9	T12	NoRel	true	ringede	besluttede
