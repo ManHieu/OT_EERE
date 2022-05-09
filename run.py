@@ -41,6 +41,9 @@ def run(defaults: Dict, random_state):
         defaults['loss_weights'] = [5.0/6, 1.0/6]
     elif job == 'subevent_mulerx':
         defaults['loss_weights'] = [4062/146.0, 4062/146.0, 4062/3770.0]
+        defaults['tokenizer'] = '/vinai/hieumdt/pretrained_models/tokenizers/mBERT-base'
+        defaults['encoder_name_or_path'] = '/vinai/hieumdt/pretrained_models/models/mBERT-base'
+        defaults['data_dir'] = 'datasets/mulerx/subevent-da-10'
     
     # parse remaining arguments and divide them into three categories
     second_parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
@@ -52,6 +55,13 @@ def run(defaults: Dict, random_state):
     # print(second_parser.parse_args_into_dataclasses(remaining_args))
     model_args, data_args, training_args = second_parser.parse_args_into_dataclasses(remaining_args)
     data_args.datasets = job
+
+    if data_args.train_data == None:
+        data_args.train_data = data_args.data_dir
+    if data_args.dev_data == None:
+        data_args.dev_data = data_args.data_dir
+    if data_args.test_data == None:
+        data_args.test_data = data_args.data_dir
 
     if args.tuning:
         training_args.output_dir = './tuning_experiments'
@@ -68,16 +78,21 @@ def run(defaults: Dict, random_state):
     val_rs = []
     for i in range(data_args.n_fold):
         print(f"TRAINING AND TESTING IN FOLD {i}: ")
-        fold_dir = f'{data_args.data_dir}/{i}' if data_args.n_fold != 1 else data_args.data_dir
+        train_fold_dir = f'{data_args.train_data}/{i}' if data_args.n_fold != 1 else data_args.train_data
+        test_fold_dir = f'{data_args.test_data}/{i}' if data_args.n_fold != 1 else data_args.test_data
+        dev_fold_dir = f'{data_args.dev_data}/{i}' if data_args.n_fold != 1 else data_args.dev_data
         dm = load_data_module(module_name = 'EERE',
                             data_args=data_args,
-                            fold_dir=fold_dir)
+                            train_fold_dir=train_fold_dir,
+                            dev_fold_dir=dev_fold_dir,
+                            test_fold_dir=test_fold_dir)
         
         number_step_in_epoch = len(dm.train_dataloader())/training_args.gradient_accumulation_steps
         # construct name for the output directory
         output_dir = os.path.join(
             training_args.output_dir,
             f'{args.job}'
+            f'-{model_args.encoder_name_or_path.split("/")[-1]}'
             f'-random_state{random_state}'
             f'-{model_args.residual_type}'
             f'-lr{training_args.lr}'
@@ -168,12 +183,12 @@ def run(defaults: Dict, random_state):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [5e-5, 8e-5, 1e-4, 2e-4, 5e-4]),
+        'lr': trial.suggest_categorical('lr', [1e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [8e-7, 1e-6, 3e-6]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [3e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [15]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [20]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),

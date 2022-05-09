@@ -122,12 +122,18 @@ def get_dep_path(tree, nodes):
 
 def mapping_subtok_id(subtoks: List[str], tokens: List[str], text: str):
     token_spans = tokenized_to_origin_span(text, tokens)
-    subtok_spans = tokenized_to_origin_span(text.lower(), subtoks)
+    subtok_spans = tokenized_to_origin_span(text.lower(), [t.lower() for t in subtoks])
 
     mapping_dict = defaultdict(list)
     for i, subtok_span in enumerate(subtok_spans, start=1):
         tok_id = token_id_lookup(token_spans, start_char=subtok_span[0], end_char=subtok_span[1])
-        mapping_dict[tok_id].append(i)
+        if tok_id != None:
+            if subtoks[i-1].lower() in tokens[tok_id].lower() or tokens[tok_id].lower() in subtoks[i-1].lower():
+                mapping_dict[tok_id].append(i)
+            else:
+                mapping_dict[tok_id].append(i)
+                # print(f"{subtoks[i-1]} - {tokens[tok_id]}") # \n{subtoks} - {subtok_spans}\n{tokens} - {token_spans}
+            
     
     # mapping <unk> token:
     for key in range(len(tokens)):

@@ -118,7 +118,10 @@ class BaseDataset(Dataset, ABC):
                             subwords_no_space.append(r_token[1:])
                         else:
                             subwords_no_space.append(r_token)
+                    else:
+                        subwords_no_space.append('<unk>')
                 
+                # print(subwords_no_space)
                 mapping = mapping_subtok_id(subwords_no_space[1:-1], example.tokens, input_seq) # w/o <s>, </s> with RoBERTa
 
                 dep_tree = nx.DiGraph()

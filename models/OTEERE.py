@@ -38,6 +38,7 @@ class OTEERE(nn.Module):
         self.drop_out = nn.Dropout(dropout)
 
         # Encoding layers
+        print(f"Load pretrain model from: {encoder_model}")
         self.encoder = AutoModel.from_pretrained(encoder_model, output_hidden_states=True)
         self.tune_encoder = tune_encoder
         self.word_embedding_size = 0

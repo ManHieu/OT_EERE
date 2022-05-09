@@ -18,6 +18,21 @@ class DataTrainingArguments:
         default=None,
         metadata={"help": "Path to data directory"}
     )
+
+    train_data: Optional[str] = field(
+        default=None,
+        metadata={"help": "Path to train data"}
+    )
+
+    dev_data: Optional[str] = field(
+        default=None,
+        metadata={"help": "Path to dev data"}
+    )
+
+    test_data: Optional[str] = field(
+        default=None,
+        metadata={"help": "Path to test data"}
+    )
     
     tokenizer: str = field(
         default = None,
