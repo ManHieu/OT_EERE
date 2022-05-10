@@ -1,0 +1,37 @@
+Text	I 2021 sendte den amerikanske flåde flere fartøjer ind i Sortehavet som led i en NATO-øvelse .	Patruljeringen fandt sted samtidig med , at Ukraines præsident Vladimir Zelenskij pressede på for Ukraines optagesle i NATO .	Rusland sendte en række ubåde og flådefartøjer til havs , og flyttede flådefartøjer fra det Kaspiske Hav til Sortehavet , ligesom der blev foretaget en troppeopbygning nær Ukraines grænse som led i en militærøvelse , der faldt sammen med uro i de østlige Ukrainske områder kontrolleret af pro-russiske separatister .	Den 23. juni 2021 sejlede den britiske destroyer HMS _ Defender _ på en patrulje i havet omkring Krim .	Det russiske forsvarsministerium meddelte , at HMS _ Defencer _ havde sejlet ind i russisk farvand , og at der var blevte affyret varselsskud .
+Event	T0	sendte	EVENT	7
+Event	T1	optagesle	EVENT	202
+Event	T2	sendte	EVENT	229
+Event	T3	flyttede	EVENT	282
+Event	T4	foretaget	EVENT	360
+Event	T5	troppeopbygning	EVENT	373
+Event	T6	militærøvelse	EVENT	422
+Event	T7	uro	EVENT	459
+Event	T8	kontrolleret	EVENT	494
+Event	T9	sejlede	EVENT	556
+Event	T10	meddelte	EVENT	675
+Event	T11	varselsskud	EVENT	772
+Event	T12	NATO-øvelse	EVENT	81
+Event	T13	Patruljeringen	EVENT	95
+Event	T14	pressede	EVENT	177
+Event	T15	sejlet	EVENT	712
+Event	T16	patrulje	EVENT	610
+Relation	T6	T2	SuperSub	true	militærøvelse	sendte
+Relation	T2	T6	SubSuper	true	sendte	militærøvelse
+Relation	T6	T3	SuperSub	true	militærøvelse	flyttede
+Relation	T3	T6	SubSuper	true	flyttede	militærøvelse
+Relation	T6	T5	SuperSub	true	militærøvelse	troppeopbygning
+Relation	T5	T6	SubSuper	true	troppeopbygning	militærøvelse
+Relation	T1	T3	NoRel	true	optagesle	flyttede
+Relation	T13	T9	NoRel	true	Patruljeringen	sejlede
+Relation	T14	T12	NoRel	true	pressede	NATO-øvelse
+Relation	T14	T5	NoRel	true	pressede	troppeopbygning
+Relation	T15	T3	NoRel	true	sejlet	flyttede
+Relation	T16	T15	NoRel	true	patrulje	sejlet
+Relation	T16	T8	NoRel	true	patrulje	kontrolleret
+Relation	T2	T4	NoRel	true	sendte	foretaget
+Relation	T6	T0	NoRel	true	militærøvelse	sendte
+Relation	T6	T11	NoRel	true	militærøvelse	varselsskud
+Relation	T6	T15	NoRel	true	militærøvelse	sejlet
+Relation	T8	T13	NoRel	true	kontrolleret	Patruljeringen
+Relation	T8	T4	NoRel	true	kontrolleret	foretaget

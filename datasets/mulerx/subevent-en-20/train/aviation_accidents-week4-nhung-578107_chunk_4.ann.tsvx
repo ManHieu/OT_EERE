@@ -1,0 +1,47 @@
+Text	The landing gear could have been manually lowered , nonetheless .	The pilots cycled the landing gear , but still failed to get the confirmation light .	Loft , who was working the radio during this leg of the flight , told the tower that they would discontinue their approach to their airport and requested to enter a holding pattern .	The approach controller cleared the flight to climb to , and then hold west over the Everglades .	The cockpit crew removed the light assembly , and Second Officer Repo was dispatched to the avionics bay beneath the flight deck to confirm via a small porthole if the landing gear was indeed down .
+Event	T0	lowered	EVENT	42
+Event	T1	cycled	EVENT	77
+Event	T2	failed	EVENT	113
+Event	T3	get	EVENT	123
+Event	T4	working	EVENT	167
+Event	T5	leg	EVENT	197
+Event	T6	flight	EVENT	208
+Event	T7	told	EVENT	217
+Event	T8	discontinue	EVENT	248
+Event	T9	approach	EVENT	266
+Event	T10	requested	EVENT	296
+Event	T11	enter	EVENT	309
+Event	T12	approach	EVENT	339
+Event	T13	cleared	EVENT	359
+Event	T14	flight	EVENT	371
+Event	T15	climb	EVENT	381
+Event	T16	hold	EVENT	401
+Event	T17	removed	EVENT	450
+Event	T18	dispatched	EVENT	507
+Event	T19	confirm	EVENT	565
+Event	T20	landing	EVENT	601
+Relation	T13	T16	SuperSub	true	cleared	hold
+Relation	T16	T13	SubSuper	true	hold	cleared
+Relation	T0	T18	NoRel	true	lowered	dispatched
+Relation	T1	T15	NoRel	true	cycled	climb
+Relation	T1	T18	NoRel	true	cycled	dispatched
+Relation	T1	T19	NoRel	true	cycled	confirm
+Relation	T11	T0	NoRel	true	enter	lowered
+Relation	T11	T4	NoRel	true	enter	working
+Relation	T12	T1	NoRel	true	approach	cycled
+Relation	T15	T17	NoRel	true	climb	removed
+Relation	T15	T3	NoRel	true	climb	get
+Relation	T17	T3	NoRel	true	removed	get
+Relation	T18	T5	NoRel	true	dispatched	leg
+Relation	T2	T12	NoRel	true	failed	approach
+Relation	T20	T18	NoRel	true	landing	dispatched
+Relation	T3	T9	NoRel	true	get	approach
+Relation	T4	T11	NoRel	true	working	enter
+Relation	T4	T8	NoRel	true	working	discontinue
+Relation	T5	T13	NoRel	true	leg	cleared
+Relation	T6	T10	NoRel	true	flight	requested
+Relation	T7	T8	NoRel	true	told	discontinue
+Relation	T8	T0	NoRel	true	discontinue	lowered
+Relation	T8	T17	NoRel	true	discontinue	removed
+Relation	T9	T0	NoRel	true	approach	lowered
+Relation	T9	T10	NoRel	true	approach	requested

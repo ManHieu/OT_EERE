@@ -1,0 +1,34 @@
+Text	Det var ikke primært sammenstødet med flyene der bevirkede at tårnene styrtede sammen , men derimod den efterfølgende brand der underminerede bygningernes stålskelet evnen til at bære .	Men stål smelter ved 1.525 grader ( celsius ) , og jetbrændstof frigiver ved afbrænding kun 825 grader .	Dette anses som bevis på at sammenbruddet ikke kunne skyldes brand , men må skyldes sprængninger .	NIST bemærker at stålet havde mistet sin ildisolerende kappe ved sammenstødet og stod nøgen overfor ilden og varmen .	Bygningseksperter er enige i at det ikke er påkrævet at stålet smelter helt for at skabe de omstændigheder der bevirkede sammenstyrtningen .
+Event	T0	sammenstødet	EVENT	21
+Event	T10	sammenbruddet	EVENT	319
+Event	T11	sprængninger	EVENT	375
+Event	T13	mistet	EVENT	420
+Event	T14	sammenstødet	EVENT	455
+Event	T16	skabe	EVENT	591
+Event	T18	styrtede sammen	EVENT	70
+Event	T19	brand	EVENT	352
+Event	T2	brand	EVENT	118
+Event	T3	underminerede	EVENT	128
+Event	T4	bære	EVENT	179
+Event	T5	smelter	EVENT	195
+Event	T6	frigiver	EVENT	250
+Event	T7	afbrænding	EVENT	263
+Relation	T2	T3	SuperSub	true	brand	underminerede
+Relation	T3	T2	SubSuper	true	underminerede	brand
+Relation	T3	T4	SuperSub	true	underminerede	bære
+Relation	T4	T3	SubSuper	true	bære	underminerede
+Relation	T0	T16	NoRel	true	sammenstødet	skabe
+Relation	T0	T3	NoRel	true	sammenstødet	underminerede
+Relation	T14	T19	NoRel	true	sammenstødet	brand
+Relation	T14	T5	NoRel	true	sammenstødet	smelter
+Relation	T18	T11	NoRel	true	styrtede sammen	sprængninger
+Relation	T18	T3	NoRel	true	styrtede sammen	underminerede
+Relation	T19	T14	NoRel	true	brand	sammenstødet
+Relation	T19	T7	NoRel	true	brand	afbrænding
+Relation	T2	T19	NoRel	true	brand	brand
+Relation	T2	T4	NoRel	true	brand	bære
+Relation	T3	T10	NoRel	true	underminerede	sammenbruddet
+Relation	T5	T18	NoRel	true	smelter	styrtede sammen
+Relation	T7	T11	NoRel	true	afbrænding	sprængninger
+Relation	T7	T13	NoRel	true	afbrænding	mistet
+Relation	T7	T2	NoRel	true	afbrænding	brand

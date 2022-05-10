@@ -1,0 +1,40 @@
+Text	AFAD tarafından Kastamonu'ya 5 milyon lira , Sinop'a 3 milyon lira , Bartın'a ise 2 milyon lira acil yardım ödeneğinin gönderilirken , Aile ve Sosyal Hizmetler Bakanlığı tarafından ise Kastamonu'ya 5 milyon lira , Sinop'a 3 milyon lira , Bartın'a da 2 milyon lira ödenek gönderildi .	AFAD , Eylül 2021'de yaptığı açıklamada 2021 orman yangınları ve sel felaketi için başlatılan yardım kampanyasında toplam 902 milyon 863 bin lira bağış yapıldığını , ayrıca Katar'ın 265 milyon lira bağış yaptığını duyurdu .	Afet ve Acil Durum Yönetimi Başkanlığı ( AFAD ) 21 Ağustos 2021'de yaptığı açıklamada sel nedeniyle Kastamonu'da 71 , Sinop'ta 10 ve Bartın'da ise 1 kişinin hayatını kaybettiğini duyurdu .	Ayrıca , Kastamonu'da 10 , Sinop'ta 6 olmak üzere toplam 16 kişi için kayıp başvurusu yapıldığını , hastanelerde ise 2 kişinin ise tedavi altında olduğunu belirtti .	Sel felaketi nedeniyle Kastamonu'da ; Çatalzeytin Köprüsü , Küre İkiçay Köprüsü , Azdavay Köprüsü yıkılırken , Valay - 1 Köprüsü'nün ayaklarında ve Kanlıçay Köprüsü'nün yaklaşım dolgularında hasar meydana geldi .
+Event	T0	gönderildi	EVENT	271
+Event	T1	açıklamada	EVENT	313
+Event	T3	felaketi	EVENT	353
+Event	T4	duyurdu	EVENT	498
+Event	T5	sel	EVENT	594
+Event	T6	duyurdu	EVENT	687
+Event	T7	belirtti	EVENT	852
+Event	T8	felaketi	EVENT	867
+Event	T9	yıkılırken	EVENT	961
+Event	T10	geldi	EVENT	1068
+Event	T11	gönderilirken	EVENT	119
+Event	T12	kampanyasında	EVENT	385
+Event	T13	yapıldığını	EVENT	436
+Event	T2	yangınları	EVENT	335
+Event	T14	yaptığını	EVENT	488
+Event	T15	açıklamada	EVENT	583
+Event	T16	kaybettiğini	EVENT	674
+Event	T17	yapıldığını	EVENT	783
+Event	T18	olduğunu	EVENT	843
+Relation	T0	T16	NoRel	true	gönderildi	kaybettiğini
+Relation	T0	T5	NoRel	true	gönderildi	sel
+Relation	T1	T11	NoRel	true	açıklamada	gönderilirken
+Relation	T1	T13	NoRel	true	açıklamada	yapıldığını
+Relation	T1	T16	NoRel	true	açıklamada	kaybettiğini
+Relation	T1	T5	NoRel	true	açıklamada	sel
+Relation	T10	T1	NoRel	true	geldi	açıklamada
+Relation	T11	T0	NoRel	true	gönderilirken	gönderildi
+Relation	T14	T11	NoRel	true	yaptığını	gönderilirken
+Relation	T14	T9	NoRel	true	yaptığını	yıkılırken
+Relation	T15	T18	NoRel	true	açıklamada	olduğunu
+Relation	T16	T3	NoRel	true	kaybettiğini	felaketi
+Relation	T18	T15	NoRel	true	olduğunu	açıklamada
+Relation	T18	T2	NoRel	true	olduğunu	yangınları
+Relation	T3	T15	NoRel	true	felaketi	açıklamada
+Relation	T4	T8	NoRel	true	duyurdu	felaketi
+Relation	T6	T8	NoRel	true	duyurdu	felaketi
+Relation	T7	T2	NoRel	true	belirtti	yangınları
+Relation	T8	T7	NoRel	true	felaketi	belirtti
+Relation	T9	T14	NoRel	true	yıkılırken	yaptığını

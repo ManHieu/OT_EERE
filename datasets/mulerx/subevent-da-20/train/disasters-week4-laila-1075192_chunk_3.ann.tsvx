@@ -1,0 +1,31 @@
+Text	I dag minder et fællesmonument på Fredshøj Kirkegård i Flensborg om de dræbte børn .	Selvom byen med sin størrelse , beliggenhed og skibsværftet har været et primært bombemål , undslap den dog de voldsomme områdebombninger , som så mange andre tyske byer led under .	Det viste sig senere , at to større bombeangreb allerede var iværksat , men i sidste øjeblik blev forhindret på grund af dårlige vejrforhold og navigationsfejl .	Det første større angreb skulle finde sted natten mellem den 18. og 19. august 1942 med deltagelse af 118 britiske bomberfly .	I en første angrebsbølge skulle målene i den centrale by markeres med lys- , spræng- og brandbomber .
+Event	T0	minder	EVENT	6
+Event	T1	dræbte	EVENT	71
+Event	T2	undslap	EVENT	177
+Event	T3	viste	EVENT	271
+Event	T4	bombeangreb	EVENT	303
+Event	T5	iværksat	EVENT	328
+Event	T6	navigationsfejl	EVENT	411
+Event	T7	angreb	EVENT	447
+Event	T8	angrebsbølge	EVENT	568
+Event	T9	led	EVENT	255
+Event	T10	områdebombninger	EVENT	206
+Event	T11	dårlige	EVENT	388
+Event	T12	forhindret	EVENT	365
+Event	T13	markeres	EVENT	613
+Relation	T5	T12	SuperSub	true	iværksat	forhindret
+Relation	T12	T5	SubSuper	true	forhindret	iværksat
+Relation	T0	T1	NoRel	true	minder	dræbte
+Relation	T10	T7	NoRel	true	områdebombninger	angreb
+Relation	T12	T7	NoRel	true	forhindret	angreb
+Relation	T2	T10	NoRel	true	undslap	områdebombninger
+Relation	T2	T11	NoRel	true	undslap	dårlige
+Relation	T2	T5	NoRel	true	undslap	iværksat
+Relation	T2	T6	NoRel	true	undslap	navigationsfejl
+Relation	T2	T7	NoRel	true	undslap	angreb
+Relation	T3	T2	NoRel	true	viste	undslap
+Relation	T4	T2	NoRel	true	bombeangreb	undslap
+Relation	T6	T8	NoRel	true	navigationsfejl	angrebsbølge
+Relation	T7	T13	NoRel	true	angreb	markeres
+Relation	T8	T13	NoRel	true	angrebsbølge	markeres
+Relation	T9	T2	NoRel	true	led	undslap

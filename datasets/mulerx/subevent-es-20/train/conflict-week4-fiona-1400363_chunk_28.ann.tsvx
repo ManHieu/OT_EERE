@@ -1,0 +1,43 @@
+Text	Irak .- Irán califica de " inaceptables " las acusaciones de EEUU según las cuales ha armado a la insurgencia iraquí	BUSH CALIFICÓ DE “ PURA CHÁCHARA ” LAS DECLARACIONES SOBRE LOS PREPARATIVOS DE EE.UU. PARA ATACAR A IRÁN	_ « Un escenario posible para un enfrentamiento militar con Irán implica que el fracaso iraquí alcance los límites americanos ; seguido de acusaciones americanas que hagan a Irán responsable de ese fracaso ; después , por algunas provocaciones en Irak o un acto terrorista en suelo americano [ , acto ] del cual se haría responsable a Irán .	Esto pudiera culminar con una acción militar americana “ defensiva ” contra Irán que sumergiría a una América aislada en un profundo lodazal en el que estarían incluidos Irán , Irak , Afganistán y Pakistán .	» _ ver más en Brzezinski afirma que Estados Unidos puede organizar atentados contra su propio territorio
+Event	T0	califica	EVENT	13
+Event	T1	acusaciones	EVENT	46
+Event	T2	armado	EVENT	86
+Event	T3	insurgencia	EVENT	98
+Event	T4	CALIFICÓ	EVENT	122
+Event	T5	DECLARACIONES	EVENT	156
+Event	T6	enfrentamiento	EVENT	255
+Event	T7	fracaso	EVENT	302
+Event	T8	alcance	EVENT	317
+Event	T9	acusaciones	EVENT	361
+Event	T10	hagan	EVENT	388
+Event	T11	fracaso	EVENT	420
+Event	T12	provocaciones	EVENT	452
+Event	T13	acto	EVENT	479
+Event	T14	acto	EVENT	518
+Event	T15	culminar	EVENT	577
+Event	T16	acción	EVENT	594
+Event	T17	sumergiría	EVENT	649
+Event	T18	afirma	EVENT	798
+Event	T19	atentados	EVENT	840
+Relation	T1	T0	SuperSub	true	acusaciones	califica
+Relation	T0	T1	SubSuper	true	califica	acusaciones
+Relation	T1	T17	NoRel	true	acusaciones	sumergiría
+Relation	T11	T13	NoRel	true	fracaso	acto
+Relation	T12	T14	NoRel	true	provocaciones	acto
+Relation	T13	T10	NoRel	true	acto	hagan
+Relation	T13	T14	NoRel	true	acto	acto
+Relation	T14	T4	NoRel	true	acto	CALIFICÓ
+Relation	T15	T8	NoRel	true	culminar	alcance
+Relation	T16	T8	NoRel	true	acción	alcance
+Relation	T18	T1	NoRel	true	afirma	acusaciones
+Relation	T18	T2	NoRel	true	afirma	armado
+Relation	T2	T1	NoRel	true	armado	acusaciones
+Relation	T2	T15	NoRel	true	armado	culminar
+Relation	T2	T4	NoRel	true	armado	CALIFICÓ
+Relation	T3	T18	NoRel	true	insurgencia	afirma
+Relation	T4	T15	NoRel	true	CALIFICÓ	culminar
+Relation	T5	T3	NoRel	true	DECLARACIONES	insurgencia
+Relation	T6	T11	NoRel	true	enfrentamiento	fracaso
+Relation	T7	T13	NoRel	true	fracaso	acto
+Relation	T9	T17	NoRel	true	acusaciones	sumergiría
+Relation	T9	T18	NoRel	true	acusaciones	afirma

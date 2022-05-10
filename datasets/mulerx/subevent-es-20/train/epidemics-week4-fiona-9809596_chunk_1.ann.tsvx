@@ -1,0 +1,41 @@
+Text	Algunos de sus tripulantes habían contraído la enfermedad y habían muerto , y aunque la embarcación y la tripulación estaban en cuarentena , la enfermedad se extendió a la población local desde que la carga infectada de la embarcación fue robada y vendida en La Valeta .	La enfermedad apareció en la ciudad a mediados de abril , y el brote fue grave a mediados de mayo .	El gobierno colonial británico tomó medidas estrictas para contener la plaga , aunque esto se hizo demasiado tarde para evitar que el brote se propagara en sus primeras etapas .	El área urbana alrededor del Gran Puerto estaba aislada del resto de la isla , y los asentamientos con altas tasas de mortalidad fueron acordonados .	Las violaciones de estas regulaciones fueron recibidas con duras penas , incluida la muerte , y varias personas fueron ejecutadas por ocultar su infección .
+Event	T0	contraído	EVENT	34
+Event	T1	enfermedad	EVENT	47
+Event	T2	muerto	EVENT	67
+Event	T3	extendió	EVENT	158
+Event	T4	infectada	EVENT	207
+Event	T5	robada	EVENT	239
+Event	T6	vendida	EVENT	248
+Event	T7	apareció	EVENT	285
+Event	T8	grave	EVENT	344
+Event	T9	contener	EVENT	430
+Event	T10	plaga	EVENT	442
+Event	T11	hizo	EVENT	465
+Event	T12	brote	EVENT	505
+Event	T13	propagara	EVENT	514
+Event	T14	acordonados	EVENT	685
+Event	T15	violaciones	EVENT	703
+Event	T16	recibidas	EVENT	744
+Event	T17	muerte	EVENT	784
+Event	T18	ejecutadas	EVENT	818
+Event	T19	ocultar	EVENT	833
+Event	T20	infección	EVENT	844
+Relation	T0	T1	NoRel	true	contraído	enfermedad
+Relation	T0	T6	NoRel	true	contraído	vendida
+Relation	T1	T20	NoRel	true	enfermedad	infección
+Relation	T11	T5	NoRel	true	hizo	robada
+Relation	T11	T6	NoRel	true	hizo	vendida
+Relation	T13	T5	NoRel	true	propagara	robada
+Relation	T13	T7	NoRel	true	propagara	apareció
+Relation	T16	T1	NoRel	true	recibidas	enfermedad
+Relation	T17	T1	NoRel	true	muerte	enfermedad
+Relation	T17	T19	NoRel	true	muerte	ocultar
+Relation	T19	T17	NoRel	true	ocultar	muerte
+Relation	T19	T5	NoRel	true	ocultar	robada
+Relation	T2	T13	NoRel	true	muerto	propagara
+Relation	T3	T10	NoRel	true	extendió	plaga
+Relation	T3	T16	NoRel	true	extendió	recibidas
+Relation	T4	T17	NoRel	true	infectada	muerte
+Relation	T5	T0	NoRel	true	robada	contraído
+Relation	T8	T1	NoRel	true	grave	enfermedad
+Relation	T9	T2	NoRel	true	contener	muerto

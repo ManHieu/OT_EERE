@@ -1,0 +1,54 @@
+Text	On 28 September 1987 Carlsson was interviewed in the _ World In Action _ TV documentary The Case of the Disappearing Diamonds when he warned that the UN would take action against those who were illegally exploiting Namibia 's natural resources .	A year later , he convened a meeting in Stockholm between the SWAPO leadership ( Sam Nujoma , Hage Geingob and Hidipo Hamutenya ) , and a delegation of whites from Namibia to discuss developments in the independence process .	Namibia 's independence had been expected to take place soon after United Nations Security Council Resolution 435 was agreed in September 1978 .	However , it took over 10 years for UNSCR 435 to be implemented .	The delay was blamed by author and journalist Christopher Hitchens on Chester Crocker 's ' procrastination ' and on President Ronald Reagan 's ' attempt to change the subject to the presence of Cuban forces in Angola ' as well as the ' flagrant bias ' in America 's Namibia policy in favour of apartheid South Africa .
+Event	T0	interviewed	EVENT	34
+Event	T1	documentary	EVENT	76
+Event	T2	Case	EVENT	92
+Event	T3	warned	EVENT	134
+Event	T4	action	EVENT	164
+Event	T5	exploiting	EVENT	204
+Event	T6	convened	EVENT	264
+Event	T7	meeting	EVENT	275
+Event	T8	developments	EVENT	429
+Event	T9	independence	EVENT	483
+Event	T10	expected	EVENT	505
+Event	T11	agreed	EVENT	590
+Event	T12	took	EVENT	630
+Event	T13	implemented	EVENT	669
+Event	T14	delay	EVENT	687
+Event	T15	blamed	EVENT	697
+Event	T16	procrastination	EVENT	774
+Event	T17	attempt	EVENT	828
+Event	T18	change	EVENT	839
+Event	T19	presence	EVENT	865
+Event	T20	bias	EVENT	928
+Event	T21	discuss	EVENT	421
+Event	T22	take place	EVENT	517
+Relation	T11	T22	SuperSub	true	agreed	take place
+Relation	T22	T11	SubSuper	true	take place	agreed
+Relation	T1	T17	NoRel	true	documentary	attempt
+Relation	T1	T7	NoRel	true	documentary	meeting
+Relation	T10	T14	NoRel	true	expected	delay
+Relation	T12	T19	NoRel	true	took	presence
+Relation	T14	T13	NoRel	true	delay	implemented
+Relation	T14	T2	NoRel	true	delay	Case
+Relation	T14	T3	NoRel	true	delay	warned
+Relation	T16	T10	NoRel	true	procrastination	expected
+Relation	T16	T20	NoRel	true	procrastination	bias
+Relation	T17	T16	NoRel	true	attempt	procrastination
+Relation	T19	T7	NoRel	true	presence	meeting
+Relation	T19	T9	NoRel	true	presence	independence
+Relation	T2	T1	NoRel	true	Case	documentary
+Relation	T2	T11	NoRel	true	Case	agreed
+Relation	T2	T22	NoRel	true	Case	take place
+Relation	T20	T0	NoRel	true	bias	interviewed
+Relation	T20	T11	NoRel	true	bias	agreed
+Relation	T21	T16	NoRel	true	discuss	procrastination
+Relation	T21	T20	NoRel	true	discuss	bias
+Relation	T3	T6	NoRel	true	warned	convened
+Relation	T4	T5	NoRel	true	action	exploiting
+Relation	T6	T15	NoRel	true	convened	blamed
+Relation	T6	T5	NoRel	true	convened	exploiting
+Relation	T7	T21	NoRel	true	meeting	discuss
+Relation	T7	T4	NoRel	true	meeting	action
+Relation	T9	T0	NoRel	true	independence	interviewed
+Relation	T9	T17	NoRel	true	independence	attempt
+Relation	T9	T22	NoRel	true	independence	take place

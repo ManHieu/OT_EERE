@@ -1,0 +1,62 @@
+Text	DEN OFFICIELLE 9/11-RAPPORT , ( Engelsk : THE 9/11 COMMISSION REPORT ) , formelt kaldet _ Final Report of the National Commission on Terrorist Attacks Upon the United States _ , er den officielle rapport om de begivenheder , som førte til terrorangrebet 11. september 2001 .	Den blev skrevet af _ National Commission on Terrorist Attacks Upon the United States _ ( informelt undertiden kendt som _ 9/11 Commission _ eller _ Kean/Zelikow Commission _ ) på anmodning fra USAs præsident og USAs Kongres , og den er til rådighed for offentligheden som gratis download .	Kommissionen trådte sammen den 2. november 2002 ( 441 dage efter angrebet ) , og dens endelige rapport blev udgivet den 22. juli 2004 .	Det var oprindeligt meningen at rapporten skulle frigives den 27. maj 2004 , men et kompromis indgået mellem kommissionen og talsmanden for Repræsentanternes Hus , Dennis Hastert , tillod en 60 dages forlængelse , indtil den 26. juli 2004 .	Kommissionen interviewede mere end 1.200 mennesker i 10 lande , og gennemlæste mere end 2½ million sider med dokumenter , inklusive visse hemmeligstemplede .
+Event	T0	kaldet	EVENT	81
+Event	T1	Attacks	EVENT	143
+Event	T2	rapport	EVENT	196
+Event	T3	begivenheder	EVENT	210
+Event	T4	førte	EVENT	229
+Event	T5	terrorangrebet	EVENT	239
+Event	T6	skrevet	EVENT	284
+Event	T7	Attacks	EVENT	330
+Event	T8	kendt	EVENT	386
+Event	T9	anmodning	EVENT	455
+Event	T10	download	EVENT	555
+Event	T11	trådte	EVENT	579
+Event	T12	angrebet	EVENT	631
+Event	T13	rapport	EVENT	661
+Event	T14	udgivet	EVENT	674
+Event	T15	frigives	EVENT	751
+Event	T16	indgået	EVENT	796
+Event	T17	tillod	EVENT	883
+Event	T18	forlængelse	EVENT	902
+Event	T19	interviewede	EVENT	956
+Event	T20	gennemlæste	EVENT	1010
+Relation	T2	T3	SuperSub	true	rapport	begivenheder
+Relation	T3	T2	SubSuper	true	begivenheder	rapport
+Relation	T2	T5	SuperSub	true	rapport	terrorangrebet
+Relation	T5	T2	SubSuper	true	terrorangrebet	rapport
+Relation	T14	T16	SuperSub	true	udgivet	indgået
+Relation	T16	T14	SubSuper	true	indgået	udgivet
+Relation	T14	T18	SuperSub	true	udgivet	forlængelse
+Relation	T18	T14	SubSuper	true	forlængelse	udgivet
+Relation	T14	T19	SuperSub	true	udgivet	interviewede
+Relation	T19	T14	SubSuper	true	interviewede	udgivet
+Relation	T14	T20	SuperSub	true	udgivet	gennemlæste
+Relation	T20	T14	SubSuper	true	gennemlæste	udgivet
+Relation	T0	T13	NoRel	true	kaldet	rapport
+Relation	T1	T11	NoRel	true	Attacks	trådte
+Relation	T10	T1	NoRel	true	download	Attacks
+Relation	T15	T3	NoRel	true	frigives	begivenheder
+Relation	T15	T8	NoRel	true	frigives	kendt
+Relation	T15	T9	NoRel	true	frigives	anmodning
+Relation	T16	T6	NoRel	true	indgået	skrevet
+Relation	T17	T0	NoRel	true	tillod	kaldet
+Relation	T17	T7	NoRel	true	tillod	Attacks
+Relation	T17	T8	NoRel	true	tillod	kendt
+Relation	T18	T12	NoRel	true	forlængelse	angrebet
+Relation	T18	T4	NoRel	true	forlængelse	førte
+Relation	T2	T0	NoRel	true	rapport	kaldet
+Relation	T2	T20	NoRel	true	rapport	gennemlæste
+Relation	T20	T10	NoRel	true	gennemlæste	download
+Relation	T20	T11	NoRel	true	gennemlæste	trådte
+Relation	T3	T9	NoRel	true	begivenheder	anmodning
+Relation	T4	T16	NoRel	true	førte	indgået
+Relation	T4	T2	NoRel	true	førte	rapport
+Relation	T5	T0	NoRel	true	terrorangrebet	kaldet
+Relation	T5	T1	NoRel	true	terrorangrebet	Attacks
+Relation	T5	T17	NoRel	true	terrorangrebet	tillod
+Relation	T5	T6	NoRel	true	terrorangrebet	skrevet
+Relation	T6	T7	NoRel	true	skrevet	Attacks
+Relation	T7	T13	NoRel	true	Attacks	rapport
+Relation	T7	T3	NoRel	true	Attacks	begivenheder
+Relation	T7	T6	NoRel	true	Attacks	skrevet
+Relation	T9	T11	NoRel	true	anmodning	trådte

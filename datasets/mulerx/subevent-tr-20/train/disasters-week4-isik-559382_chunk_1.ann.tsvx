@@ -1,0 +1,14 @@
+Text	Yılın 300 günü dağdan dumanların yükseldiği gözlemlenmesine rağmen , birkaç kez faliyete geçip ölümlere sebep oldu .	1994 yılında yaşanan patlama sonrası , yanardağın batısında çoğunukla Muntilan şehrinde , zehirli gazdan 43 kişi hayatını kaybetti .	Yogyakarta depreminden kısa süre önce 2006'da diğer büyük patlama yaşandı .	Merapi , güney Java'nın en genç yanardağlarından biridir .	Hint - Avustralya Levhası'nın Avrasya Levhası'nun altına doğru kaydığı bir dalım bölgesinde bulunur .
+Event	T0	gözlemlenmesine	EVENT	44
+Event	T1	oldu	EVENT	110
+Event	T2	patlama	EVENT	138
+Event	T3	kaybetti	EVENT	239
+Event	T4	depreminden	EVENT	261
+Event	T5	yaşandı	EVENT	316
+Event	T6	kaydığı	EVENT	448
+Event	T7	geçip	EVENT	89
+Event	T8	gazdan	EVENT	215
+Relation	T2	T6	NoRel	true	patlama	kaydığı
+Relation	T3	T0	NoRel	true	kaybetti	gözlemlenmesine
+Relation	T5	T7	NoRel	true	yaşandı	geçip
+Relation	T7	T6	NoRel	true	geçip	kaydığı

@@ -1,0 +1,27 @@
+Text	کترينہ نامی اس سمندری طوفان نے ساحلی کناروں کو عبور کيا اور شہر کے شہر روند ڈالے ۔	يہقيامت خيز طوفان امريکہ کی جنوبی رياست لوزيانہ کے بڑے ميٹروپوليٹن شہر نيواورلينز کے ساحلوں سے داخل ہوا اور ديکھتے ہی ديکھتے مزيد دس امريکی رياستوں کو بھی اپنی لپيٹ ميں لے_ليا ۔	اس طوفان نے مِسی سپّی ، لوزيانا اور البامہ ميں بھی قيامت برپا کردی اور يہاں بے پناہ جانی اور مالی نقصان ہوا ۔	طوفانی لہريں پلوں اور ڈيم کو بہاکر لے گئيں ، نيواورلينز کا حفاظتی پشتہ ٹوٹ گيا ۔	بندرگاہ پر واقع شہر بلوکسی مکمل طور پر متاثر ہوا ۔
+Event	T0	طوفان	EVENT	22
+Event	T2	ڈالے	EVENT	76
+Event	T3	طوفان	EVENT	95
+Event	T4	ہوا	EVENT	183
+Event	T5	ديکھتے	EVENT	191
+Event	T6	طوفان	EVENT	264
+Event	T7	کردی	EVENT	323
+Event	T9	لہريں	EVENT	378
+Event	T10	گئيں	EVENT	409
+Event	T12	عبور	EVENT	47
+Event	T1	ٹوٹ	EVENT	442
+Event	T13	متاثر	EVENT	491
+Event	T11	طوفانی	EVENT	371
+Event	T14	نقصان	EVENT	359
+Relation	T1	T12	NoRel	true	ٹوٹ	عبور
+Relation	T10	T12	NoRel	true	گئيں	عبور
+Relation	T10	T4	NoRel	true	گئيں	ہوا
+Relation	T11	T3	NoRel	true	طوفانی	طوفان
+Relation	T12	T11	NoRel	true	عبور	طوفانی
+Relation	T13	T6	NoRel	true	متاثر	طوفان
+Relation	T14	T6	NoRel	true	نقصان	طوفان
+Relation	T3	T5	NoRel	true	طوفان	ديکھتے
+Relation	T4	T1	NoRel	true	ہوا	ٹوٹ
+Relation	T5	T14	NoRel	true	ديکھتے	نقصان
+Relation	T9	T12	NoRel	true	لہريں	عبور
+Relation	T9	T4	NoRel	true	لہريں	ہوا

@@ -1,0 +1,27 @@
+Text	Avrupa'da yaşanan bu hareketlilik işçi sınıfının mücadelesini giderek şekillendiriyordu .	Ocak 1918'de özellikle Berlin , Kiel , Hamburg , Ruhr bölgesi ve Münih gibi şehirlerde grevler iyice yaygınlaştı .	Berlin'de greve çıkan işçi sayısı 500.000 , bütün Almanya'da ise 1 milyondu .	Bu grevler sırasında Berlin'de Büyük Berlin İşçi Konseyi ( _ Arbeiterrat von Gross - Berlin _ ) kuruldu .	Hükûmet bu hareketliliği dağıtmak için elinden gelen her şeyi yapıyordu .
+Event	T1	hareketlilik	EVENT	21
+Event	T2	mücadelesini	EVENT	49
+Event	T3	şekillendiriyordu	EVENT	70
+Event	T4	grevler	EVENT	177
+Event	T5	çıkan	EVENT	221
+Event	T6	grevler	EVENT	286
+Event	T7	kuruldu	EVENT	379
+Event	T8	dağıtmak	EVENT	414
+Event	T9	yaygınlaştı	EVENT	191
+Event	T10	yapıyordu	EVENT	451
+Relation	T2	T4	SuperSub	true	mücadelesini	grevler
+Relation	T4	T2	SubSuper	true	grevler	mücadelesini
+Relation	T2	T5	SuperSub	true	mücadelesini	çıkan
+Relation	T5	T2	SubSuper	true	çıkan	mücadelesini
+Relation	T2	T6	SuperSub	true	mücadelesini	grevler
+Relation	T6	T2	SubSuper	true	grevler	mücadelesini
+Relation	T2	T7	SuperSub	true	mücadelesini	kuruldu
+Relation	T7	T2	SubSuper	true	kuruldu	mücadelesini
+Relation	T2	T8	SuperSub	true	mücadelesini	dağıtmak
+Relation	T8	T2	SubSuper	true	dağıtmak	mücadelesini
+Relation	T2	T10	SuperSub	true	mücadelesini	yapıyordu
+Relation	T10	T2	SubSuper	true	yapıyordu	mücadelesini
+Relation	T10	T4	NoRel	true	yapıyordu	grevler
+Relation	T3	T2	NoRel	true	şekillendiriyordu	mücadelesini
+Relation	T4	T8	NoRel	true	grevler	dağıtmak
+Relation	T6	T10	NoRel	true	grevler	yapıyordu

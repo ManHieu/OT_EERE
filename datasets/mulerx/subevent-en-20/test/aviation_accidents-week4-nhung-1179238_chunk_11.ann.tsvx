@@ -1,0 +1,29 @@
+Text	On 9 August , Beauchamp - Proctor was leading No. 84 Squadron on a patrol over their base at Bertangles , with Boudwin and six - foot - four tall , fellow South African Hugh Saunders as wingmen .	The threesome got involved in a heated engagement at 2:00 pm , that involved them in combat against Fokker D. VII fighters of JG I , led that day by the future Nazi _ Reichsmarschall _ Hermann Göring .	Unsuccessful at increasing his total that day , Beauchamp - Proctor would claim an additional 14 aircraft , and end the month with his claims list extended to 43 .	One memorable day was 22 August ; he attacked a line of six enemy balloon over the British 3rd Corps front .	He set the first one afire with his machine guns and forced the other five to the ground , the observers taking to their parachutes .
+Event	T0	leading	EVENT	38
+Event	T1	patrol	EVENT	67
+Event	T2	involved	EVENT	214
+Event	T3	engagement	EVENT	235
+Event	T4	involved	EVENT	264
+Event	T5	combat	EVENT	281
+Event	T6	led	EVENT	329
+Event	T7	Unsuccessful	EVENT	398
+Event	T8	increasing	EVENT	414
+Event	T10	claim	EVENT	472
+Event	T11	end	EVENT	510
+Event	T12	attacked	EVENT	599
+Event	T13	set	EVENT	674
+Event	T14	forced	EVENT	724
+Relation	T0	T2	SuperSub	true	leading	involved
+Relation	T2	T0	SubSuper	true	involved	leading
+Relation	T0	T4	SuperSub	true	leading	involved
+Relation	T4	T0	SubSuper	true	involved	leading
+Relation	T10	T11	SuperSub	true	claim	end
+Relation	T11	T10	SubSuper	true	end	claim
+Relation	T12	T13	SuperSub	true	attacked	set
+Relation	T13	T12	SubSuper	true	set	attacked
+Relation	T12	T14	SuperSub	true	attacked	forced
+Relation	T14	T12	SubSuper	true	forced	attacked
+Relation	T11	T13	NoRel	true	end	set
+Relation	T4	T14	NoRel	true	involved	forced
+Relation	T6	T1	NoRel	true	led	patrol
+Relation	T6	T2	NoRel	true	led	involved

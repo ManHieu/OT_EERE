@@ -1,0 +1,25 @@
+Text	On 25 April 1917 during the Arras Offensive , Barker , flying an R.E.8 with observer Lt. Goodfellow , spotted over 1,000 German troops sheltering in support trenches .	The duo directed artillery fire into the positions , thereby avoiding a counter-attack .	[ Barker stands next to his Sopwith Camel , 1918 .	He preferred flying the Camel over the standard aircraft flown by his squadron . ]	After being awarded a bar to his MC in July , Barker was wounded in the head by anti-aircraft fire in August 1917 .
+Event	T1	flying	EVENT	55
+Event	T2	spotted	EVENT	102
+Event	T3	sheltering	EVENT	135
+Event	T4	directed	EVENT	176
+Event	T5	avoiding	EVENT	229
+Event	T6	counter-attack	EVENT	240
+Event	T7	flying	EVENT	321
+Event	T8	flown	EVENT	365
+Event	T9	awarded	EVENT	403
+Event	T10	fire	EVENT	485
+Event	T11	stands	EVENT	266
+Event	T12	wounded	EVENT	448
+Relation	T9	T12	SuperSub	true	awarded	wounded
+Relation	T12	T9	SubSuper	true	wounded	awarded
+Relation	T1	T2	SuperSub	true	flying	spotted
+Relation	T2	T1	SubSuper	true	spotted	flying
+Relation	T10	T4	NoRel	true	fire	directed
+Relation	T2	T8	NoRel	true	spotted	flown
+Relation	T4	T12	NoRel	true	directed	wounded
+Relation	T6	T8	NoRel	true	counter-attack	flown
+Relation	T8	T12	NoRel	true	flown	wounded
+Relation	T8	T3	NoRel	true	flown	sheltering
+Relation	T9	T6	NoRel	true	awarded	counter-attack
+Relation	T9	T8	NoRel	true	awarded	flown

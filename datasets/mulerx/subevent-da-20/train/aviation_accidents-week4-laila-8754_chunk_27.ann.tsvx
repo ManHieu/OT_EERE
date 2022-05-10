@@ -1,0 +1,13 @@
+Text	Teksten lød på følgende : " Ulema er igennem islamisk historie blevet enstemmigt enige om , at jihad er en individuel told , hvis fjenden ødelægger de muslimske lande " .	thumb|	Flykapreren Mohamed Atta var den taktiske leder bag plottet .	Idéen til den 11. september kom fra Khalid Sheikh Mohammed , der først præsenterede idéen for Osama bin Laden i 1996 .	På det tidspunkt var bin Laden og al-Qaeda i en overgangsperiode , hvor de netop var flyttet tilbage til Afghanistan fra Sudan .
+Event	T0	lød	EVENT	8
+Event	T1	jihad	EVENT	95
+Event	T2	ødelægger	EVENT	138
+Event	T3	plottet	EVENT	230
+Event	T4	kom	EVENT	268
+Event	T5	præsenterede	EVENT	311
+Event	T6	flyttet	EVENT	444
+Relation	T4	T5	SuperSub	true	kom	præsenterede
+Relation	T5	T4	SubSuper	true	præsenterede	kom
+Relation	T1	T0	NoRel	true	jihad	lød
+Relation	T3	T4	NoRel	true	plottet	kom
+Relation	T6	T1	NoRel	true	flyttet	jihad

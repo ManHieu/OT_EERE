@@ -1,0 +1,20 @@
+Text	2020 mevsiminde bu rekor , 30 Temmuz günü tropikal kasırga olarak sınıflandırılan Isaias Kasırgası'na geçti .	Bu kasırga aynı zamanda , Atlantik'te doğan tropikal siklonlar arasında _ Irene _ adını taşıyan beşinci oluşumdu .	- Ulusal Kasırga Merkezinin Irene Kasırgası ile ilgili arşivi - Ulusal Kasırga Merkezinin Irene Kasırgası Üzerine Tropikal Siklon Raporu - Kuzey Karolina'dan , Irene Kasırgası'nın oluşturduğu dalgalarla gerçekleştirilen sörf faaliyetlerinden fotoğraflar - Irene Kasırgası'nın bıraktığı yağışlarla ilgili NASA makalesi	Kategori : 2005 Atlantik kasırga mevsimi Kategori : Yeşil Burun kasırgaları Kategori : Kategori 2 Atlantik kasırgaları Kategori : New Jersey'deki kasırgalar Kategori : 2005'teki kasırgalar	
+Event	T0	geçti	EVENT	102
+Event	T1	doğan	EVENT	148
+Event	T2	oluşumdu	EVENT	214
+Event	T3	Raporu	EVENT	355
+Event	T6	makalesi	EVENT	534
+Event	T7	Kasırgası'nın	EVENT	391
+Event	T8	dalgalarla	EVENT	417
+Event	T9	sörf	EVENT	445
+Event	T4	yağışlarla	EVENT	511
+Event	T5	Kasırgası'nın	EVENT	487
+Event	T10	kasırga	EVENT	568
+Event	T11	kasırgaları	EVENT	607
+Event	T12	kasırgaları	EVENT	650
+Event	T13	kasırgalar	EVENT	689
+Event	T14	kasırgalar	EVENT	721
+Relation	T10	T14	NoRel	true	kasırga	kasırgalar
+Relation	T11	T2	NoRel	true	kasırgaları	oluşumdu
+Relation	T13	T4	NoRel	true	kasırgalar	yağışlarla
+Relation	T8	T4	NoRel	true	dalgalarla	yağışlarla

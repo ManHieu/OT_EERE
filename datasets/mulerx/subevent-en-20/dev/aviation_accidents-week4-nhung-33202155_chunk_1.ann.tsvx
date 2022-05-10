@@ -1,0 +1,30 @@
+Text	Air traffic controllers and members of the investigation team claim the reason for the crash was pilot error .	The sixteen passengers included ten Indian nationals , one Japanese , two Americans and three Nepalese .	All but one of the passengers and the three crew died at the scene of the accident ; one Nepalese passenger was rescued but died on the way to hospital .	Category : Aviation accidents and incidents in 2011 Category : Accidents and incidents involving the Beechcraft 1900	Category : Aviation accidents and incidents in Nepal
+Event	T0	investigation	EVENT	43
+Event	T1	claim	EVENT	62
+Event	T2	crash	EVENT	87
+Event	T3	error	EVENT	103
+Event	T4	included	EVENT	134
+Event	T5	died	EVENT	265
+Event	T6	accident	EVENT	290
+Event	T7	rescued	EVENT	328
+Event	T8	accidents	EVENT	390
+Event	T9	incidents	EVENT	404
+Event	T10	Accidents	EVENT	433
+Event	T11	accidents	EVENT	507
+Event	T12	incidents	EVENT	521
+Event	T13	died	EVENT	340
+Event	T14	incidents	EVENT	447
+Relation	T0	T1	SuperSub	true	investigation	claim
+Relation	T1	T0	SubSuper	true	claim	investigation
+Relation	T7	T13	SuperSub	true	rescued	died
+Relation	T13	T7	SubSuper	true	died	rescued
+Relation	T1	T3	NoRel	true	claim	error
+Relation	T10	T13	NoRel	true	Accidents	died
+Relation	T12	T11	NoRel	true	incidents	accidents
+Relation	T12	T14	NoRel	true	incidents	incidents
+Relation	T14	T8	NoRel	true	incidents	accidents
+Relation	T4	T12	NoRel	true	included	incidents
+Relation	T4	T7	NoRel	true	included	rescued
+Relation	T5	T1	NoRel	true	died	claim
+Relation	T7	T3	NoRel	true	rescued	error
+Relation	T7	T5	NoRel	true	rescued	died

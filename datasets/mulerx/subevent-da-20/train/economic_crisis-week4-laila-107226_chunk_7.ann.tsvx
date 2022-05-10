@@ -1,0 +1,22 @@
+Text	Derfor faldt sedlernes værdi markant i forhold til sølvværdien .	På blot 6 år var mængden af sedler i omløb blevet femdoblet ved indgangen til 1813 .	Dette problem forsøgtes løst ved forordningen af 5. januar 1813 om " forandring af pengevæsenet " .	Oprustningen de foregående år , den engelske erobring af flåden og senere blokade af handelsskibene i Østersøen og Kattegat havde både reduceret statens indtægter og forøget dens udgifter .	I denne periode var valutakurserne primært baseret på sølvlagrene , og den nyoprettede bank , Rigsbanken , skulle tilvejebringe en sølvbeholdning , som blev opnået ved beskatning på 6 % af værdien af al fast ejendom .
+Event	T0	faldt	EVENT	7
+Event	T1	løst	EVENT	174
+Event	T2	Oprustningen	EVENT	250
+Event	T3	erobring	EVENT	295
+Event	T4	blokade	EVENT	324
+Event	T5	reduceret	EVENT	385
+Event	T6	forøget	EVENT	416
+Event	T7	opnået	EVENT	597
+Event	T8	beskatning	EVENT	608
+Event	T9	femdoblet	EVENT	115
+Event	T10	forordningen	EVENT	183
+Event	T11	valutakurserne	EVENT	460
+Event	T12	sølvlagrene	EVENT	494
+Event	T13	tilvejebringe	EVENT	554
+Relation	T9	T0	SuperSub	true	femdoblet	faldt
+Relation	T0	T9	SubSuper	true	faldt	femdoblet
+Relation	T13	T5	NoRel	true	tilvejebringe	reduceret
+Relation	T5	T3	NoRel	true	reduceret	erobring
+Relation	T6	T3	NoRel	true	forøget	erobring
+Relation	T7	T3	NoRel	true	opnået	erobring
+Relation	T7	T9	NoRel	true	opnået	femdoblet

@@ -1,0 +1,26 @@
+Text	A bordo había 36 pasajeros , así como 4 miembros de la tripulación y un asistente de vuelo .	A las 01:11 ( UTC ) , cuando iban en la ruta de vuelo , la tripulación despegó del aeropuerto de Chita , la primera escala .	El vuelo se realizó en condiciones climáticas difíciles .	Antes del inicio del descenso a las 03:32 , la tripulación escuchó la información del ATIS del aeródromo de Blagovéshchensk , en la segunda escala .	La aproximación de aterrizaje se realizó a alrededor de las 14:00 ( hora local ) en condiciones de actividad de tormenta , con un rumbo magnético de 360° utilizando un sistema de rumbo planeo .
+Event	T0	vuelo	EVENT	141
+Event	T1	despegó	EVENT	164
+Event	T2	escala	EVENT	209
+Event	T3	vuelo	EVENT	221
+Event	T4	realizó	EVENT	230
+Event	T5	inicio	EVENT	286
+Event	T6	descenso	EVENT	297
+Event	T7	escuchó	EVENT	335
+Event	T8	información	EVENT	346
+Event	T9	aproximación	EVENT	428
+Event	T10	aterrizaje	EVENT	444
+Event	T11	realizó	EVENT	458
+Event	T12	actividad	EVENT	524
+Event	T13	condiciones	EVENT	241
+Relation	T3	T13	SuperSub	true	vuelo	condiciones
+Relation	T13	T3	SubSuper	true	condiciones	vuelo
+Relation	T3	T6	SuperSub	true	vuelo	descenso
+Relation	T6	T3	SubSuper	true	descenso	vuelo
+Relation	T1	T5	NoRel	true	despegó	inicio
+Relation	T1	T6	NoRel	true	despegó	descenso
+Relation	T12	T3	NoRel	true	actividad	vuelo
+Relation	T13	T2	NoRel	true	condiciones	escala
+Relation	T13	T8	NoRel	true	condiciones	información
+Relation	T5	T7	NoRel	true	inicio	escuchó
+Relation	T9	T4	NoRel	true	aproximación	realizó

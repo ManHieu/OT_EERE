@@ -1,0 +1,12 @@
+Text	Başta İstanbul olmak üzere Kocaeli , Sakarya , Yalova , Tekirdağ , Düzce , Balıkesir , Çanakkale ve Bursa'da yüz yüze eğitime bir gün ara verildi .	İstanbul Valisi Ali Yerlikaya , trafik seyir ve can güvenliği için 29 Kasım saat 23:00'dan 30 Kasım 18:00'a kadar şehir genelinde motokuryelik yapılamayacağını , motorsiklet ve elektrikli scooterlerın kullanılmasının yasaklandığını ilan etti .	Getir ve Yemeksepeti , fırtına nedeniyle İstanbul'daki tüm motosikletli teslimat hizmetlerini durdurduğunu açıkladı .	İstanbul Üniversitesi ve Marmara Üniversitesi olumsuz hava koşulları nedeniyle yüz yüze eğitime bir gün ara verildiğini , 30 Kasım'daki tüm sınavların iptal edildiğini ve eğitime uzaktan öğretim yöntemiyle devam edileceğini duyurdu .	30 Kasım'da Türk Hava Yolları lodos fırtınası nedeniyle Anadolu'dan İstanbul Havalimanı'na yapılan tüm yurtiçi uçuş seferlerini geçici olarak durdurduğunu duyurdu .
+Event	T1	verildi	EVENT	138
+Event	T3	etti	EVENT	385
+Event	T4	fırtına	EVENT	415
+Event	T5	açıkladı	EVENT	499
+Event	T6	verildiğini	EVENT	618
+Event	T8	duyurdu	EVENT	734
+Event	T9	fırtınası	EVENT	780
+Event	T10	duyurdu	EVENT	899
+Event	T2	edildiğini	EVENT	667
+Relation	T1	T8	NoRel	true	verildi	duyurdu
+Relation	T1	T9	NoRel	true	verildi	fırtınası

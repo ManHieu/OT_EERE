@@ -1,0 +1,12 @@
+Text	Retrieved August 17, 2005.	- Holbrook , Stewart Hall , _ The Story of American Railroads _ , Bonanza Books , New_York , 1947 , ISBN 0 - 517 - 00100 - 4 .	- IOL Asia ( May 19, 2005 ) , _ Hundreds injured in train accident _ .	Retrieved May 20 , 2005.	- Molloy , Tim ; Associated Press ( January 26, 2005 ) Suicide try triggers California commuter_rail tragedy , police say .
+Event	T0	Retrieved	EVENT	0
+Event	T2	injured	EVENT	195
+Event	T3	accident	EVENT	212
+Event	T4	Retrieved	EVENT	225
+Event	T5	triggers	EVENT	317
+Event	T6	tragedy	EVENT	351
+Event	T7	say	EVENT	368
+Event	T1	try	EVENT	313
+Relation	T1	T6	NoRel	true	try	tragedy
+Relation	T7	T2	NoRel	true	say	injured
+Relation	T7	T6	NoRel	true	say	tragedy

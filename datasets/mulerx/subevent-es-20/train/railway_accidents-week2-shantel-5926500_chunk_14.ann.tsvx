@@ -1,0 +1,31 @@
+Text	Las cajas negras también registraron 4 km antes de la curva , poco más de un minuto antes del accidente , una señal acústica ASFA de _ vía libre _ ( semáforo en verde , punto kilométrico 80,33 ) , que indica circulación normal , sin requerir al maquinista ninguna acción .	Otros accidentes ferroviarios en España de años recientes en los que una señal errónea de _ vía libre _ ha estado también implicada han sido los de Arévalo ( 2010 ) , Villada ( 2006 ) , Chinchilla ( 2003 ) , y Huarte-Araquil ( 1997 ) .	A causa del descarrilamiento , la vía quedó interceptada y el tráfico ferroviario fue suspendido en el tramo afectado perteneciente a la línea de alta velocidad Olmedo-Zamora-Galicia .	Una decena de trenes modificaron su itinerario el 25 de julio de 2013 circulando por otras líneas férreas o se habilitó un transporte alternativo por carretera .	[ El entonces presidente del Gobierno , Mariano Rajoy , y el presidente de la Junta de Galicia , Alberto Núñez Feijóo , visitando el lugar del accidente ]
+Event	T0	registraron	EVENT	25
+Event	T1	curva	EVENT	54
+Event	T10	suspendido	EVENT	595
+Event	T11	modificaron	EVENT	715
+Event	T12	habilitó	EVENT	805
+Event	T13	visitando	EVENT	976
+Event	T14	accidente	EVENT	999
+Event	T2	accidente	EVENT	94
+Event	T3	señal	EVENT	110
+Event	T4	requerir	EVENT	233
+Event	T5	acción	EVENT	264
+Event	T6	accidentes	EVENT	279
+Event	T7	descarrilamiento	EVENT	521
+Event	T8	interceptada	EVENT	553
+Event	T9	tráfico	EVENT	571
+Relation	T7	T12	SuperSub	true	descarrilamiento	habilitó
+Relation	T12	T7	SubSuper	true	habilitó	descarrilamiento
+Relation	T0	T12	NoRel	true	registraron	habilitó
+Relation	T0	T14	NoRel	true	registraron	accidente
+Relation	T10	T6	NoRel	true	suspendido	accidentes
+Relation	T13	T0	NoRel	true	visitando	registraron
+Relation	T13	T2	NoRel	true	visitando	accidente
+Relation	T13	T6	NoRel	true	visitando	accidentes
+Relation	T13	T7	NoRel	true	visitando	descarrilamiento
+Relation	T14	T1	NoRel	true	accidente	curva
+Relation	T2	T13	NoRel	true	accidente	visitando
+Relation	T2	T14	NoRel	true	accidente	accidente
+Relation	T4	T1	NoRel	true	requerir	curva
+Relation	T5	T11	NoRel	true	acción	modificaron
+Relation	T5	T6	NoRel	true	acción	accidentes

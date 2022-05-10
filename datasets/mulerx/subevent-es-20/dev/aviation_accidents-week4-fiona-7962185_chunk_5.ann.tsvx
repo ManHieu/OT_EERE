@@ -1,0 +1,39 @@
+Text	" El accidente ocurrió debido a la pérdida de control después de experimentar un clima adverso que causó que el avión se parase ... lo que provocó una caída en picada " , dijeron medios estatales .	Después de estudiar los datos de la caja negra , los investigadores decidieron que la colisión " no fue por un acto de sabotaje , explosión o falla del motor " .	El avión volaba desde Myeik a Rangún y los restos se encontraron en el mar frente a la ciudad costera de Dawei .	Todavía no está claro por qué el piloto voló a la tormenta , dado que el radar meteorológico normalmente permite evitar tales nubes .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación militar
+Event	T0	pérdida	EVENT	35
+Event	T1	experimentar	EVENT	65
+Event	T2	causó	EVENT	99
+Event	T3	parase	EVENT	121
+Event	T4	provocó	EVENT	139
+Event	T6	dijeron	EVENT	171
+Event	T7	estudiar	EVENT	209
+Event	T8	colisión	EVENT	284
+Event	T9	acto	EVENT	309
+Event	T10	sabotaje	EVENT	317
+Event	T11	explosión	EVENT	328
+Event	T12	falla	EVENT	340
+Event	T13	volaba	EVENT	369
+Event	T14	encontraron	EVENT	413
+Event	T15	voló	EVENT	513
+Event	T16	tormenta	EVENT	523
+Event	T17	nubes	EVENT	599
+Event	T18	Accidente	EVENT	609
+Event	T19	Accidentes	EVENT	641
+Event	T20	Accidentes	EVENT	705
+Event	T21	accidente	EVENT	5
+Event	T22	caída	EVENT	151
+Relation	T10	T11	NoRel	true	sabotaje	explosión
+Relation	T10	T18	NoRel	true	sabotaje	Accidente
+Relation	T10	T4	NoRel	true	sabotaje	provocó
+Relation	T13	T9	NoRel	true	volaba	acto
+Relation	T17	T0	NoRel	true	nubes	pérdida
+Relation	T17	T19	NoRel	true	nubes	Accidentes
+Relation	T18	T6	NoRel	true	Accidente	dijeron
+Relation	T2	T7	NoRel	true	causó	estudiar
+Relation	T20	T12	NoRel	true	Accidentes	falla
+Relation	T20	T8	NoRel	true	Accidentes	colisión
+Relation	T21	T20	NoRel	true	accidente	Accidentes
+Relation	T3	T6	NoRel	true	parase	dijeron
+Relation	T4	T17	NoRel	true	provocó	nubes
+Relation	T7	T14	NoRel	true	estudiar	encontraron
+Relation	T9	T10	NoRel	true	acto	sabotaje
+Relation	T9	T6	NoRel	true	acto	dijeron

@@ -1,0 +1,77 @@
+Text	The WALLACHIAN REVOLUTION OF 1848 was a Romanian liberal and nationalist uprising in the Principality of Wallachia .	Part of the Revolutions of 1848 , and closely connected with the unsuccessful revolt in the Principality of Moldavia , it sought to overturn the administration imposed by Imperial Russian authorities under the _ Regulamentul Organic _ regime , and , through many of its leaders , demanded the abolition of boyar privilege .	Led by a group of young intellectuals and officers in the Wallachian Militia , the movement succeeded in toppling the ruling Prince Gheorghe Bibescu , whom it replaced with a Provisional Government and a Regency , and in passing a series of major progressive reforms , first announced in the Proclamation of Islaz .	Despite its rapid gains and popular backing , the new administration was marked by conflicts between the radical wing and more conservative forces , especially over the issue of land reform .	Two successive abortive coups were able to weaken the Government , and its international status was always contested by Russia .
+Event	T0	REVOLUTION	EVENT	15
+Event	T1	uprising	EVENT	73
+Event	T2	Revolutions	EVENT	129
+Event	T3	connected	EVENT	163
+Event	T4	revolt	EVENT	195
+Event	T5	sought	EVENT	239
+Event	T6	overturn	EVENT	249
+Event	T7	imposed	EVENT	277
+Event	T8	demanded	EVENT	397
+Event	T9	abolition	EVENT	410
+Event	T10	Led	EVENT	441
+Event	T11	succeeded	EVENT	533
+Event	T12	toppling	EVENT	546
+Event	T13	ruling	EVENT	559
+Event	T14	replaced	EVENT	600
+Event	T15	passing	EVENT	662
+Event	T16	series	EVENT	672
+Event	T17	reforms	EVENT	700
+Event	T18	announced	EVENT	716
+Event	T19	Proclamation	EVENT	733
+Event	T20	gains	EVENT	775
+Event	T21	backing	EVENT	793
+Event	T22	marked	EVENT	830
+Event	T23	conflicts	EVENT	840
+Event	T25	able	EVENT	984
+Event	T26	weaken	EVENT	992
+Event	T27	contested	EVENT	1056
+Event	T24	abortive coup	EVENT	964
+Relation	T17	T18	SuperSub	true	reforms	announced
+Relation	T18	T17	SubSuper	true	announced	reforms
+Relation	T0	T11	NoRel	true	REVOLUTION	succeeded
+Relation	T0	T15	NoRel	true	REVOLUTION	passing
+Relation	T0	T7	NoRel	true	REVOLUTION	imposed
+Relation	T10	T15	NoRel	true	Led	passing
+Relation	T11	T5	NoRel	true	succeeded	sought
+Relation	T11	T8	NoRel	true	succeeded	demanded
+Relation	T13	T1	NoRel	true	ruling	uprising
+Relation	T13	T21	NoRel	true	ruling	backing
+Relation	T13	T27	NoRel	true	ruling	contested
+Relation	T14	T19	NoRel	true	replaced	Proclamation
+Relation	T15	T19	NoRel	true	passing	Proclamation
+Relation	T15	T7	NoRel	true	passing	imposed
+Relation	T16	T11	NoRel	true	series	succeeded
+Relation	T16	T21	NoRel	true	series	backing
+Relation	T16	T3	NoRel	true	series	connected
+Relation	T17	T19	NoRel	true	reforms	Proclamation
+Relation	T18	T24	NoRel	true	announced	abortive coup
+Relation	T18	T4	NoRel	true	announced	revolt
+Relation	T19	T24	NoRel	true	Proclamation	abortive coup
+Relation	T19	T27	NoRel	true	Proclamation	contested
+Relation	T19	T5	NoRel	true	Proclamation	sought
+Relation	T19	T7	NoRel	true	Proclamation	imposed
+Relation	T2	T10	NoRel	true	Revolutions	Led
+Relation	T2	T3	NoRel	true	Revolutions	connected
+Relation	T2	T7	NoRel	true	Revolutions	imposed
+Relation	T20	T0	NoRel	true	gains	REVOLUTION
+Relation	T20	T27	NoRel	true	gains	contested
+Relation	T22	T15	NoRel	true	marked	passing
+Relation	T22	T3	NoRel	true	marked	connected
+Relation	T23	T2	NoRel	true	conflicts	Revolutions
+Relation	T23	T24	NoRel	true	conflicts	abortive coup
+Relation	T23	T3	NoRel	true	conflicts	connected
+Relation	T25	T16	NoRel	true	able	series
+Relation	T25	T4	NoRel	true	able	revolt
+Relation	T26	T11	NoRel	true	weaken	succeeded
+Relation	T26	T14	NoRel	true	weaken	replaced
+Relation	T26	T27	NoRel	true	weaken	contested
+Relation	T26	T3	NoRel	true	weaken	connected
+Relation	T3	T11	NoRel	true	connected	succeeded
+Relation	T4	T23	NoRel	true	revolt	conflicts
+Relation	T5	T10	NoRel	true	sought	Led
+Relation	T5	T11	NoRel	true	sought	succeeded
+Relation	T5	T19	NoRel	true	sought	Proclamation
+Relation	T7	T4	NoRel	true	imposed	revolt
+Relation	T8	T1	NoRel	true	demanded	uprising
+Relation	T9	T5	NoRel	true	abolition	sought

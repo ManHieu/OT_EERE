@@ -1,0 +1,29 @@
+Text	Ocak ayının sonuna gelindiğinde yanardağın ortaya çıkardığı malzeme ve küller yer yer 5 metre derinliğe ulaşıyordu .	Düşen küllerin yanı sıra pek çok ev de patlama biçiminde oluşan püskürmeler sonucu uzak yerlere fırlayan ateş parçacıkları nedeniyle ve hız kesmeden ilerleyen lav akıntıları ile yanarak yok oldu .	Şubat ayının başlarında , ağır malzeme ve kül çıkışı hızını kesmişti ; ancak bu kez de akan lavlar ciddi zararlara neden olmaya başladı .	Yarığın hemen kuzeyinde denizaltında gerçekleşen hareketlilikler adaya İzlanda anakarasından elektrik getirmekte olan bir kablo hattını ve su borularını kopardı ve lavlar adanın limanına doğru akmaya başladı .	Bunun üzerine hemen harekete geçildi ve adanın tek limanını kurtarmak için çalışmalar başlatıldı .
+Event	T0	Düşen	EVENT	117
+Event	T1	patlama	EVENT	156
+Event	T2	püskürmeler	EVENT	181
+Event	T4	akıntıları	EVENT	280
+Event	T5	oldu	EVENT	307
+Event	T6	çıkışı	EVENT	360
+Event	T7	kesmişti	EVENT	374
+Event	T8	hareketlilikler	EVENT	501
+Event	T9	kopardı	EVENT	605
+Event	T10	başladı	EVENT	652
+Event	T11	ulaşıyordu	EVENT	104
+Event	T12	yanarak	EVENT	295
+Event	T13	parçacıkları	EVENT	227
+Event	T3	lavlar	EVENT	406
+Event	T14	başladı	EVENT	442
+Event	T15	geçildi	EVENT	691
+Event	T16	başlatıldı	EVENT	748
+Relation	T1	T2	SuperSub	true	patlama	püskürmeler
+Relation	T2	T1	SubSuper	true	püskürmeler	patlama
+Relation	T12	T8	NoRel	true	yanarak	hareketlilikler
+Relation	T13	T6	NoRel	true	parçacıkları	çıkışı
+Relation	T15	T4	NoRel	true	geçildi	akıntıları
+Relation	T15	T7	NoRel	true	geçildi	kesmişti
+Relation	T2	T0	NoRel	true	püskürmeler	Düşen
+Relation	T7	T6	NoRel	true	kesmişti	çıkışı
+Relation	T8	T16	NoRel	true	hareketlilikler	başlatıldı
+Relation	T9	T10	NoRel	true	kopardı	başladı
+Relation	T9	T8	NoRel	true	kopardı	hareketlilikler

@@ -1,0 +1,29 @@
+Text	Rescue crews reached the crash site while the fire continued to burn but no survivors were found .	Crash investigators found traces of acid that led them to believe a bomb in the lavatory was involved .	Traces of potassium nitrate and carbon , consistent with a " low - velocity explosion " were found .	Gunpowder or stumping powder causes a low - velocity explosion .	The explosion damaged bulkheads in the lavatory , severed pipes in the tail and tore a metre - wide hole in the side of the fuselage .
+Event	T0	reached	EVENT	13
+Event	T1	crash	EVENT	25
+Event	T2	burn	EVENT	64
+Event	T3	found	EVENT	91
+Event	T4	traces	EVENT	125
+Event	T5	led	EVENT	145
+Event	T6	explosion	EVENT	279
+Event	T7	found	EVENT	296
+Event	T8	stumping	EVENT	317
+Event	T9	causes	EVENT	333
+Event	T10	explosion	EVENT	357
+Event	T11	damaged	EVENT	383
+Event	T12	severed	EVENT	419
+Event	T13	tore	EVENT	449
+Event	T14	bomb	EVENT	167
+Relation	T10	T12	NoRel	true	explosion	severed
+Relation	T10	T14	NoRel	true	explosion	bomb
+Relation	T11	T6	NoRel	true	damaged	explosion
+Relation	T12	T0	NoRel	true	severed	reached
+Relation	T14	T1	NoRel	true	bomb	crash
+Relation	T4	T8	NoRel	true	traces	stumping
+Relation	T4	T9	NoRel	true	traces	causes
+Relation	T6	T13	NoRel	true	explosion	tore
+Relation	T8	T1	NoRel	true	stumping	crash
+Relation	T8	T10	NoRel	true	stumping	explosion
+Relation	T8	T14	NoRel	true	stumping	bomb
+Relation	T9	T5	NoRel	true	causes	led
+Relation	T9	T7	NoRel	true	causes	found

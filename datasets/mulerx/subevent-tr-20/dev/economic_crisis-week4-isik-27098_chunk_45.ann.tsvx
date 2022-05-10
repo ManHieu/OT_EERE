@@ -1,0 +1,18 @@
+Text	Bu sırada I. Dünya Savaşı'nın getirdiği büyük altüstlüklere , haksızlıklar ve savaştan yenik çıkmanın vermiş olduğu manevi eziklik de eklenmişti .	Bu durumdaki yeni Alman Cumhuriyeti daha sonraları Weimar Cumhuriyeti adıyla anılacaktı .	Nasyonal sosyalistler , veya siyasi rakiplerinin ve daha sonra ise tüm dünyanın onlara vereceği kısa isimleriyle Naziler , bu koşullarda savaşı izleyen işsizlik , yoksulluk ve enflasyondan demokratik kurumların , komünistlerin ve beceriksiz siyaset adamlarının sorumlu olduğunu öne sürüyorlardı .	I. Dünya Savaşı'nın sonunda sömürgelerini kaybeden , ordusu dağıtılıp yerine " Reichswehr " isimli yalnızca gönüllülerden oluşan küçük bir kara ve deniz askeri birliği bulundurmasına izin verilen Almanya , savaş sonrasında bir türlü aşamadığı bu siyasal ve ekonomik bunalım nedeniyle daha da güç durumda kaldı .	Böyle bir ortamda ortaya çıkan nasyonal sosyalistler , yenilginin verdiği ezikliği üzerinden atamayan ve ekonomik durumu iyice bozulan Alman halkına iş , ekmek ve güçlü bir Almanya vadettiler .
+Event	T3	eklenmişti	EVENT	134
+Event	T4	kaybeden	EVENT	576
+Event	T5	savaş	EVENT	740
+Event	T7	bunalım	EVENT	800
+Event	T8	kaldı	EVENT	838
+Event	T9	vadettiler	EVENT	1027
+Event	T10	I. Dünya Savaşı'nın	EVENT	10
+Event	T1	sürüyorlardı	EVENT	519
+Event	T2	I. Dünya Savaşı'nın	EVENT	534
+Event	T11	oluşan	EVENT	656
+Event	T6	verilen	EVENT	722
+Relation	T1	T10	NoRel	true	sürüyorlardı	I. Dünya Savaşı'nın
+Relation	T10	T3	NoRel	true	I. Dünya Savaşı'nın	eklenmişti
+Relation	T11	T10	NoRel	true	oluşan	I. Dünya Savaşı'nın
+Relation	T2	T3	NoRel	true	I. Dünya Savaşı'nın	eklenmişti
+Relation	T3	T6	NoRel	true	eklenmişti	verilen
+Relation	T4	T7	NoRel	true	kaybeden	bunalım

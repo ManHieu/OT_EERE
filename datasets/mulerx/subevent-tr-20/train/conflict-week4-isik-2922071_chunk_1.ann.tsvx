@@ -1,0 +1,17 @@
+Text	1860'larda Smithies , birkaç cilt halinde yayınlanan A Mother's Lessons on Kindness to Animals'ı yazdı .	1870'de Angela Burdett - Coutts ile birlikte RSPCA'da ( Royal Society for the Prevention of Cruelty to Animals ) Kadınlar Komitesi'ni kurdu .	1875'te ilk Merhamet Grubu'nu ( _ Band of Mercy _ ) kurdu .	Smithies 1877'de öldü ; ölüm döşeğinde şöyle dedi : " _ Çocuklara Tanrı'nın alt yaratıklarına karşı nazik ve merhametli olmayı öğretmek , Mesih'in müjdesine giden yolu hazırlıyor .	_ " Stoke Newington'da 1883'te ölen oğlu Thomas ile birlikte Abney Park Mezarlığı'na gömüldü .
+Event	T0	yazdı	EVENT	97
+Event	T1	Cruelty	EVENT	197
+Event	T2	kurdu	EVENT	239
+Event	T3	kurdu	EVENT	299
+Event	T4	öldü	EVENT	324
+Event	T6	dedi	EVENT	352
+Event	T7	hazırlıyor	EVENT	475
+Event	T8	ölen	EVENT	519
+Event	T9	gömüldü	EVENT	573
+Event	T10	yayınlanan	EVENT	42
+Relation	T0	T3	NoRel	true	yazdı	kurdu
+Relation	T3	T10	NoRel	true	kurdu	yayınlanan
+Relation	T3	T2	NoRel	true	kurdu	kurdu
+Relation	T3	T8	NoRel	true	kurdu	ölen
+Relation	T4	T6	NoRel	true	öldü	dedi
+Relation	T6	T9	NoRel	true	dedi	gömüldü

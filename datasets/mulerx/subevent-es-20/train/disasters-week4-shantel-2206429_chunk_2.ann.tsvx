@@ -1,0 +1,32 @@
+Text	Sin embargo hay muchas más víctimas que se desconoce la causa de su deceso .	El 9 de enero el número de muertos por el terremoto ascendió a 15 , después de que se encontraran los cadáveres de diez personas el viernes 9 de enero de la madrugada en la zona del epicentro del sismo .	Socorristas de la Cruz Roja Costarricense trabajaron buscando víctimas en la zona más devastada cercana a San José , durante toda la noche .	A las 04:30 AM ( hora local ) , una patrulla confirmó que en el sector de Cataratas había diez personas muertas , dijo un portavoz de la entidad .	El gobierno costarricense también activó un programa de emergencia para evacuar a los turistas que se encontraban en la zona de Vara Blanca y otras del centro del país golpeadas por el temblor , aunque no se reportaron hasta ahora personas muertes o heridas sufridas por algún turista en el terremoto .
+Event	T0	deceso	EVENT	68
+Event	T1	muertos	EVENT	104
+Event	T3	encontraran	EVENT	163
+Event	T4	cadáveres	EVENT	179
+Event	T5	sismo	EVENT	273
+Event	T6	devastada	EVENT	367
+Event	T7	confirmó	EVENT	467
+Event	T8	muertas	EVENT	526
+Event	T9	dijo	EVENT	536
+Event	T10	activó	EVENT	603
+Event	T12	evacuar	EVENT	641
+Event	T13	golpeadas	EVENT	737
+Event	T14	temblor	EVENT	754
+Event	T18	terremoto	EVENT	860
+Event	T19	terremoto	EVENT	119
+Event	T2	programa	EVENT	613
+Relation	T19	T3	SuperSub	true	terremoto	encontraran
+Relation	T3	T19	SubSuper	true	encontraran	terremoto
+Relation	T19	T7	SuperSub	true	terremoto	confirmó
+Relation	T7	T19	SubSuper	true	confirmó	terremoto
+Relation	T19	T2	SuperSub	true	terremoto	programa
+Relation	T2	T19	SubSuper	true	programa	terremoto
+Relation	T0	T19	NoRel	true	deceso	terremoto
+Relation	T1	T2	NoRel	true	muertos	programa
+Relation	T12	T19	NoRel	true	evacuar	terremoto
+Relation	T13	T18	NoRel	true	golpeadas	terremoto
+Relation	T18	T13	NoRel	true	terremoto	golpeadas
+Relation	T6	T8	NoRel	true	devastada	muertas
+Relation	T7	T1	NoRel	true	confirmó	muertos
+Relation	T8	T1	NoRel	true	muertas	muertos
+Relation	T8	T5	NoRel	true	muertas	sismo

@@ -1,0 +1,18 @@
+Text	20 Ekim 1989 günü Tapu ve Kadastro Genel Müdürlüğü'ne ait bir Britten - Norman BN - 2A - 3 Islander tipi uçak , Suriye sınırında kadastro çalışmaları yaparken Suriye Hava Kuvvetleri tarafından vurularak düşürüldü .	Uçakta bulunan beş kişinin tamamı olay sonucunda öldü .	Tapu ve Kadastro Genel Müdürlüğü'ne ait TC - KUN kuyruk numaralı Britten - Norman BN - 2A - 3 Islander tipi uçak , Hatay ilindeki ormanlık bir araziyi haritalandırmak için Adana Şakirpaşa Havalimanı'ndan 5 kişilik mürettebatı ile kalkış yaptı .	Uçak , Suriye sınırına yaklaşık 20 km uzaklıkta Türkiye hava sahası üzerinde seyrederken , Suriye Hava Kuvvetleri'ne ait iki MiG - 21 savaş uçağı tarafından vuruldu .	Vurulmanın etkisiyle kontörlünü kaybeden uçak Antakya yakınlarına düştü ve uçakta bulunan beş kişinin tamamı öldü .
+Event	T0	yaparken	EVENT	150
+Event	T1	düşürüldü	EVENT	203
+Event	T2	öldü	EVENT	264
+Event	T4	seyrederken	EVENT	593
+Event	T5	vuruldu	EVENT	673
+Event	T6	kaybeden	EVENT	715
+Event	T7	düştü	EVENT	749
+Event	T8	öldü	EVENT	792
+Event	T9	haritalandırmak	EVENT	422
+Event	T10	kalkış	EVENT	501
+Relation	T0	T1	SuperSub	true	yaparken	düşürüldü
+Relation	T1	T0	SubSuper	true	düşürüldü	yaparken
+Relation	T4	T1	SuperSub	true	seyrederken	düşürüldü
+Relation	T1	T4	SubSuper	true	düşürüldü	seyrederken
+Relation	T4	T5	SuperSub	true	seyrederken	vuruldu
+Relation	T5	T4	SubSuper	true	vuruldu	seyrederken
+Relation	T8	T10	NoRel	true	öldü	kalkış

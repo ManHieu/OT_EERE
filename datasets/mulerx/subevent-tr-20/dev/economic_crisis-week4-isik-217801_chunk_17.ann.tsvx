@@ -1,0 +1,19 @@
+Text	Roman daha sonra _ Schindler'in Listesi _ olarak yeniden adlandırılmıştır ve bu kitap , 1993'te _ Schindler'in Listesi _ başlığıyla , Amerikan Yahudi yönetmen Steven Spielberg tarafından beyaz perdeye uyarlanmıştır .	Filmde , Schindler Liam Neeson tarafından canlandırılmıştır .	Neeson , bu filmdeki performansı ile En İyi Aktör kategorisinde Oskar adayı olmuş , filmse En İyi Film Ödülü'nü kazanmıştır .	Spielberg'in filminin getirdiği_ün , Schindler'i popüler kültüre taşıdı .	Spielberg'in filmi , popüler kültürde Schindler'in bilinirliğinin temelini oluşturdu : kâr amaçlı , etik değerlere çok önem vermeyen bir endüstricinin , bir noktada verdiği sessiz ama bilinçli kararla tüm varlığını , gerektiğinde Nazilerin göz ardı etmesini sağlamak için bile olsa işçilerinin hayatlarını kurtarmaya harcamasının hikâyesi .
+Event	T0	uyarlanmıştır	EVENT	201
+Event	T1	canlandırılmıştır	EVENT	259
+Event	T2	kazanmıştır	EVENT	391
+Event	T4	taşıdı	EVENT	470
+Event	T5	oluşturdu	EVENT	554
+Event	T6	hikâyesi	EVENT	809
+Event	T7	adlandırılmıştır	EVENT	57
+Event	T8	olmuş	EVENT	355
+Event	T9	performansı	EVENT	300
+Event	T3	kararla	EVENT	672
+Event	T10	harcamasının	EVENT	796
+Relation	T0	T2	SuperSub	true	uyarlanmıştır	kazanmıştır
+Relation	T2	T0	SubSuper	true	kazanmıştır	uyarlanmıştır
+Relation	T0	T5	SuperSub	true	uyarlanmıştır	oluşturdu
+Relation	T5	T0	SubSuper	true	oluşturdu	uyarlanmıştır
+Relation	T1	T9	NoRel	true	canlandırılmıştır	performansı
+Relation	T4	T9	NoRel	true	taşıdı	performansı
+Relation	T8	T4	NoRel	true	olmuş	taşıdı

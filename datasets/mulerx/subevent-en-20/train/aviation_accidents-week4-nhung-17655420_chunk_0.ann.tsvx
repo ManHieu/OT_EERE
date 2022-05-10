@@ -1,0 +1,47 @@
+Text	AMERICAN AIRLINES FLIGHT 11 was a domestic passenger flight that was hijacked by five al - Qaeda terrorists on September 11 , 2001 , as part of the September &nbsp; 11 attacks .	Lead hijacker Mohamed Atta deliberately crashed the plane into the North Tower of the World Trade Center in New York City , killing all 92 people aboard and ensuring the deaths of 1,402 people at and above the aircraft 's impact zone .	The aircraft involved , a Boeing 767 - 223ER , registration was flying American Airlines ' daily scheduled morning transcontinental service from Logan International Airport in Boston to Los Angeles International Airport in Los Angeles .	Fifteen minutes into the flight , the hijackers injured at least three people ( possibly killing one ) , forcibly breached the cockpit , and overpowered the captain and first officer .	Atta , an al - Qaeda member and licensed commercial pilot , took over the controls .
+Event	T0	flight	EVENT	53
+Event	T1	hijacked	EVENT	69
+Event	T2	attacks	EVENT	168
+Event	T3	crashed	EVENT	218
+Event	T4	killing	EVENT	302
+Event	T5	ensuring	EVENT	335
+Event	T6	deaths	EVENT	348
+Event	T7	impact	EVENT	400
+Event	T8	involved	EVENT	427
+Event	T9	flying	EVENT	478
+Event	T10	scheduled	EVENT	511
+Event	T11	service	EVENT	546
+Event	T12	flight	EVENT	676
+Event	T13	injured	EVENT	699
+Event	T14	killing	EVENT	740
+Event	T15	breached	EVENT	765
+Event	T16	overpowered	EVENT	792
+Event	T17	controls	EVENT	910
+Relation	T2	T1	SuperSub	true	attacks	hijacked
+Relation	T1	T2	SubSuper	true	hijacked	attacks
+Relation	T12	T13	SuperSub	true	flight	injured
+Relation	T13	T12	SubSuper	true	injured	flight
+Relation	T12	T15	SuperSub	true	flight	breached
+Relation	T15	T12	SubSuper	true	breached	flight
+Relation	T12	T16	SuperSub	true	flight	overpowered
+Relation	T16	T12	SubSuper	true	overpowered	flight
+Relation	T0	T14	NoRel	true	flight	killing
+Relation	T0	T3	NoRel	true	flight	crashed
+Relation	T1	T9	NoRel	true	hijacked	flying
+Relation	T10	T5	NoRel	true	scheduled	ensuring
+Relation	T10	T7	NoRel	true	scheduled	impact
+Relation	T13	T1	NoRel	true	injured	hijacked
+Relation	T14	T13	NoRel	true	killing	injured
+Relation	T14	T6	NoRel	true	killing	deaths
+Relation	T15	T2	NoRel	true	breached	attacks
+Relation	T15	T4	NoRel	true	breached	killing
+Relation	T3	T11	NoRel	true	crashed	service
+Relation	T3	T15	NoRel	true	crashed	breached
+Relation	T3	T8	NoRel	true	crashed	involved
+Relation	T4	T6	NoRel	true	killing	deaths
+Relation	T5	T2	NoRel	true	ensuring	attacks
+Relation	T6	T11	NoRel	true	deaths	service
+Relation	T6	T17	NoRel	true	deaths	controls
+Relation	T6	T4	NoRel	true	deaths	killing
+Relation	T8	T13	NoRel	true	involved	injured
+Relation	T9	T17	NoRel	true	flying	controls

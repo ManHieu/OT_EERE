@@ -1,0 +1,21 @@
+Text	1554 yılında Kanuni Sultan Süleyman komutasındaki Türk ordusunun İran seferi sürerken , Macaristan cephesi bir önceki yılda olduğu gibi Eyalet askerlerine bırakılmıştı .	Bununla birlikte , 1553'e oranla daha faal bir sefer mevsimi geçiren Budin eyalet ordusu Haziran'a kadar Papa , Zigetvar ve Eğri civarına akınlar düzenlerken , 16 Haziran'da ( bugün Slovakya'daki ) Filek kalesini , Eylül'de ( elden çıkmış bulunan ) Salgotaryan'ı ve 7 Ekim'de Balaton Gölü civarında Vazsoly’yi fethetti .	Osmanlı donanması ise Napoli Krallığı'na bağlı Pulya kıyılarını yağmalayarak Viesta'yı , ardından ise Floransa Cumhuriyeti'ne bağlı Toskana kıyılarını bombardımana tutarak Orbetello'yu istila etti .	Bununla birlikte , Osmanlı donanması Fransız donanmasıyla buluşamadı ve Korsika üzerine planlanan ortak harekattan vazgeçerek mevsimin ilerlemesi nedeniyle geri döndü .	küçükresim | rgiht | 175px | Augsburg Barışı 1555 Ocak ayında diplomatik müzakerelere fırsat tanımak amacıyla altı aylık bir ateşkes yapıldı .
+Event	T1	bırakılmıştı	EVENT	155
+Event	T2	geçiren	EVENT	231
+Event	T3	düzenlerken	EVENT	316
+Event	T4	çıkmış	EVENT	402
+Event	T5	fethetti	EVENT	480
+Event	T6	yağmalayarak	EVENT	555
+Event	T7	tutarak	EVENT	655
+Event	T8	etti	EVENT	683
+Event	T10	ilerlemesi	EVENT	825
+Event	T11	döndü	EVENT	851
+Event	T12	yapıldı	EVENT	992
+Event	T9	vazgeçerek	EVENT	805
+Event	T13	Augsburg Barışı	EVENT	888
+Event	T14	müzakerelere	EVENT	932
+Relation	T11	T12	NoRel	true	döndü	yapıldı
+Relation	T12	T14	NoRel	true	yapıldı	müzakerelere
+Relation	T12	T2	NoRel	true	yapıldı	geçiren
+Relation	T2	T6	NoRel	true	geçiren	yağmalayarak
+Relation	T6	T10	NoRel	true	yağmalayarak	ilerlemesi
+Relation	T9	T14	NoRel	true	vazgeçerek	müzakerelere

@@ -1,0 +1,19 @@
+Text	.	Kaliforniya ve Oregon'da bazı bölgeleri 2, 4 metreye kadar varan dalgalar vurdu , bunlar limanlar ve iskelelere zarar verip 10 milyon dolarlık zarara yol açtı .	Kanada'daki Vancouver Adası'nı bir metrelik dalgalar vurdu ; bu kıyıdaki bazı bölgelerin boşaltılmasına ve deniz ulaşımının 12 saatliğine yasaklanmasına yol açtı , bu da ada sakinlerinin işlerine gidememelerine neden oldu .	küçükresim | sol | Tsunamiye önlem olarak Şili'de kıyıdan daha yüksek yerlere çekilmiş tekneler Filipinler'de 0, 5 metreye kadar ulaşan dalgalar ülkenin doğusunu vurdu .	Endonezya'daki Jayapura'da bazı evler hasar gördü .
+Event	T0	vurdu	EVENT	76
+Event	T1	verip	EVENT	120
+Event	T2	açtı	EVENT	156
+Event	T3	vurdu	EVENT	216
+Event	T5	açtı	EVENT	320
+Event	T6	oldu	EVENT	380
+Event	T7	çekilmiş	EVENT	465
+Event	T8	vurdu	EVENT	549
+Event	T9	gördü	EVENT	601
+Event	T4	Tsunamiye	EVENT	406
+Event	T10	önlem	EVENT	416
+Event	T11	dalgalar	EVENT	523
+Relation	T0	T9	NoRel	true	vurdu	gördü
+Relation	T1	T5	NoRel	true	verip	açtı
+Relation	T2	T9	NoRel	true	açtı	gördü
+Relation	T3	T5	NoRel	true	vurdu	açtı
+Relation	T6	T10	NoRel	true	oldu	önlem
+Relation	T8	T0	NoRel	true	vurdu	vurdu

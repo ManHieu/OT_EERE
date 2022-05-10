@@ -1,0 +1,35 @@
+Text	تیز رفتار ریل کی تین بوگیاں پٹری سے اترگئیں اور ریلوے لائن کے اوپر سے گزرنے والی ایک پیدل پل ریل کے دو ڈبوں پر گر گئی ۔	آٹھ لوگ جن میں تین ریلوے انجینئر بھی شامل تھے جائے حادثہ پر ہی فوت ہو گئے ۔	حادثہ کے شکار لوگوں میں ایک جرمن شہری بھی ہے ۔	ابتدائی رپورٹ کے مطابق 48 لوگ زخمی ہوئے تھے لیکن تازہ معلومات کے مطابق یہ تعداد 84 تک پہنچ گئی ہے ۔	زخمیوں کو انقرہ کے مختلف ہسپتالوں میں داخل کیا گیا ہے جن میں تین کی حالت نازک ہے اور ہسپتال میں داخل کرنے کے بعد ایک کی موت ہو گئی ہے ۔
+Event	T0	اترگئیں	EVENT	36
+Event	T2	حادثہ	EVENT	171
+Event	T3	فوت	EVENT	183
+Event	T5	حادثہ	EVENT	196
+Event	T6	شکار	EVENT	205
+Event	T7	رپورٹ	EVENT	251
+Event	T11	گر	EVENT	111
+Event	T1	شامل	EVENT	157
+Event	T4	زخمی	EVENT	273
+Event	T12	پہنچ	EVENT	329
+Event	T8	زخمیوں	EVENT	343
+Event	T13	داخل	EVENT	381
+Event	T14	داخل	EVENT	439
+Event	T9	نازک	EVENT	416
+Event	T15	موت	EVENT	463
+Relation	T3	T1	SuperSub	true	فوت	شامل
+Relation	T1	T3	SubSuper	true	شامل	فوت
+Relation	T8	T9	SuperSub	true	زخمیوں	نازک
+Relation	T9	T8	SubSuper	true	نازک	زخمیوں
+Relation	T0	T7	NoRel	true	اترگئیں	رپورٹ
+Relation	T12	T0	NoRel	true	پہنچ	اترگئیں
+Relation	T12	T14	NoRel	true	پہنچ	داخل
+Relation	T13	T11	NoRel	true	داخل	گر
+Relation	T13	T12	NoRel	true	داخل	پہنچ
+Relation	T13	T14	NoRel	true	داخل	داخل
+Relation	T14	T5	NoRel	true	داخل	حادثہ
+Relation	T2	T12	NoRel	true	حادثہ	پہنچ
+Relation	T2	T8	NoRel	true	حادثہ	زخمیوں
+Relation	T3	T8	NoRel	true	فوت	زخمیوں
+Relation	T5	T1	NoRel	true	حادثہ	شامل
+Relation	T5	T13	NoRel	true	حادثہ	داخل
+Relation	T5	T6	NoRel	true	حادثہ	شکار
+Relation	T7	T11	NoRel	true	رپورٹ	گر
+Relation	T9	T0	NoRel	true	نازک	اترگئیں

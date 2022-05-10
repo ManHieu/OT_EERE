@@ -1,0 +1,31 @@
+Text	El Boeing 777 tiene una buena reputación por su seguridad .	Este fue su primer accidente con consecuencias fatales , el segundo accidente ( después del Vuelo 38 de British Airways ) , y la tercera pérdida total desde que el 777 comenzó a operar comercialmente en 1995 .	Pasadas las ( hora del Pacífico ) del 6 de julio de 2013 , se informó que el vuelo 214 de Asiana Airlines se había estrellado al intentar realizar su aterrizaje en una de las pistas del Aeropuerto Internacional de San Francisco .	Según la investigación preliminar , el avión habría aterrizado antes del umbral de la pista , haciendo que la cola de la aeronave se estrellara contra el suelo y causase una explosión .	El humo del incendio pudo divisarse desde varios kilómetros .
+Event	T0	accidente	EVENT	79
+Event	T1	accidente	EVENT	128
+Event	T2	Vuelo	EVENT	152
+Event	T3	pérdida	EVENT	197
+Event	T4	comenzó	EVENT	228
+Event	T5	operar	EVENT	238
+Event	T6	informó	EVENT	332
+Event	T7	estrellado	EVENT	385
+Event	T8	realizar	EVENT	408
+Event	T9	aterrizaje	EVENT	420
+Event	T10	investigación	EVENT	509
+Event	T11	aterrizado	EVENT	552
+Event	T12	haciendo	EVENT	594
+Event	T13	estrellara	EVENT	633
+Event	T14	causase	EVENT	662
+Event	T15	explosión	EVENT	674
+Event	T16	humo	EVENT	689
+Event	T17	divisarse	EVENT	712
+Relation	T12	T11	NoRel	true	haciendo	aterrizado
+Relation	T12	T9	NoRel	true	haciendo	aterrizaje
+Relation	T13	T9	NoRel	true	estrellara	aterrizaje
+Relation	T14	T5	NoRel	true	causase	operar
+Relation	T15	T3	NoRel	true	explosión	pérdida
+Relation	T4	T2	NoRel	true	comenzó	Vuelo
+Relation	T5	T3	NoRel	true	operar	pérdida
+Relation	T5	T6	NoRel	true	operar	informó
+Relation	T6	T5	NoRel	true	informó	operar
+Relation	T7	T6	NoRel	true	estrellado	informó
+Relation	T9	T1	NoRel	true	aterrizaje	accidente
+Relation	T9	T16	NoRel	true	aterrizaje	humo

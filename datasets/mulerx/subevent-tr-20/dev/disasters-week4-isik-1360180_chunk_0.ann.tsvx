@@ -1,0 +1,32 @@
+Text	1912 MÜREFTE DEPREMI , 9 Ağustos 1912'de Tekirdağ ilinin Şarköy ilçesinin Mürefte beldesinde 7,3 M _ ( S ) büyüklüğünde gece 3 sularında meydana gelen deprem .	Depremde 216 kişi yaşamını yitirmiş , 466 kişi yaralanmış ve 450 bina hasar görmüştür .	Depremle ilgili önemli ayrıntılardan biri de Balkan Savaşları'dır .	Çünkü savaşa hazırlanan askeri birliklerin , kışlaların , ikmal depolarının ve köprülerin görmüş olduğu zarardır .	Yıkım ve kayıplar yüzünden Ekim ayında savaşa giden askerler uzun bir süre yiyeceksiz kalmıştır .
+Event	T1	deprem	EVENT	151
+Event	T2	Depremde	EVENT	160
+Event	T3	yitirmiş	EVENT	187
+Event	T4	yaralanmış	EVENT	207
+Event	T6	Yıkım	EVENT	431
+Event	T7	kayıplar	EVENT	440
+Event	T8	1912 MÜREFTE DEPREMI	EVENT	0
+Event	T9	görmüştür	EVENT	236
+Event	T5	zarardır	EVENT	420
+Event	T10	Balkan Savaşları'dır	EVENT	293
+Event	T11	hazırlanan	EVENT	329
+Event	T12	kalmıştır	EVENT	517
+Event	T13	giden	EVENT	477
+Relation	T8	T3	SuperSub	true	1912 MÜREFTE DEPREMI	yitirmiş
+Relation	T3	T8	SubSuper	true	yitirmiş	1912 MÜREFTE DEPREMI
+Relation	T8	T4	SuperSub	true	1912 MÜREFTE DEPREMI	yaralanmış
+Relation	T4	T8	SubSuper	true	yaralanmış	1912 MÜREFTE DEPREMI
+Relation	T8	T9	SuperSub	true	1912 MÜREFTE DEPREMI	görmüştür
+Relation	T9	T8	SubSuper	true	görmüştür	1912 MÜREFTE DEPREMI
+Relation	T8	T5	SuperSub	true	1912 MÜREFTE DEPREMI	zarardır
+Relation	T5	T8	SubSuper	true	zarardır	1912 MÜREFTE DEPREMI
+Relation	T8	T7	SuperSub	true	1912 MÜREFTE DEPREMI	kayıplar
+Relation	T7	T8	SubSuper	true	kayıplar	1912 MÜREFTE DEPREMI
+Relation	T1	T10	NoRel	true	deprem	Balkan Savaşları'dır
+Relation	T10	T2	NoRel	true	Balkan Savaşları'dır	Depremde
+Relation	T12	T9	NoRel	true	kalmıştır	görmüştür
+Relation	T13	T6	NoRel	true	giden	Yıkım
+Relation	T4	T5	NoRel	true	yaralanmış	zarardır
+Relation	T7	T12	NoRel	true	kayıplar	kalmıştır
+Relation	T8	T12	NoRel	true	1912 MÜREFTE DEPREMI	kalmıştır
+Relation	T9	T3	NoRel	true	görmüştür	yitirmiş

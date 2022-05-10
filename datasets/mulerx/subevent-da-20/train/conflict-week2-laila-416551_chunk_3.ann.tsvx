@@ -1,0 +1,37 @@
+Text	Der er nogle misforståelser om måden man detekterer neddykkede ubåde ved hjælp af MAD-systemet .	Magnetisk moment forskydelse er angiveligt den største forstyrrelse af magnetfeltet , alligevel er ubåde detekterbare når de er orienteret parallelt med jordens magnetfelt på trods af at være bygget med et amagnetisk materiale .	Eksempelvis den sovjetisk/russisk-byggede Alfa-klasse , hvis skrog er bygget af titanium for at give gode dykkeegenskaber og beskyttelse mod MAD-sensorer er stadig detekterbar .	At Alfa'en stadig er detekterbar har ført til analytikere har udledt at navnet på MAD er en bevidst vildledning der har vist sig så effektiv at Sovjetunionen besluttede at bygge Alfa-klassen og en overgang endda overvejede at bygge den store Typhoon-klasse af titanium .	Siden titaniumskrog kan spores , opfanger MAD-sensorer ikke direkte afvigelserne i jordens magnetfelt .
+Event	T0	forskydelse	EVENT	114
+Event	T1	forstyrrelse	EVENT	152
+Event	T10	besluttede	EVENT	662
+Event	T11	bygge	EVENT	676
+Event	T12	overvejede	EVENT	716
+Event	T13	bygge	EVENT	730
+Event	T14	opfanger	EVENT	808
+Event	T15	detekterer	EVENT	41
+Event	T2	detekterbare	EVENT	202
+Event	T3	bygget	EVENT	289
+Event	T4	bygget	EVENT	396
+Event	T5	beskyttelse	EVENT	451
+Event	T6	ført	EVENT	541
+Event	T7	udledt	EVENT	566
+Event	T8	vildledning	EVENT	604
+Event	T9	vist	EVENT	624
+Relation	T0	T1	SuperSub	true	forskydelse	forstyrrelse
+Relation	T1	T0	SubSuper	true	forstyrrelse	forskydelse
+Relation	T3	T2	SuperSub	true	bygget	detekterbare
+Relation	T2	T3	SubSuper	true	detekterbare	bygget
+Relation	T8	T9	SuperSub	true	vildledning	vist
+Relation	T9	T8	SubSuper	true	vist	vildledning
+Relation	T6	T7	SuperSub	true	ført	udledt
+Relation	T7	T6	SubSuper	true	udledt	ført
+Relation	T7	T8	SuperSub	true	udledt	vildledning
+Relation	T8	T7	SubSuper	true	vildledning	udledt
+Relation	T0	T7	NoRel	true	forskydelse	udledt
+Relation	T13	T1	NoRel	true	bygge	forstyrrelse
+Relation	T13	T10	NoRel	true	bygge	besluttede
+Relation	T14	T13	NoRel	true	opfanger	bygge
+Relation	T15	T1	NoRel	true	detekterer	forstyrrelse
+Relation	T15	T6	NoRel	true	detekterer	ført
+Relation	T3	T6	NoRel	true	bygget	ført
+Relation	T4	T14	NoRel	true	bygget	opfanger
+Relation	T6	T3	NoRel	true	ført	bygget
+Relation	T8	T10	NoRel	true	vildledning	besluttede

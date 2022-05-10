@@ -1,0 +1,38 @@
+Text	] Alrededor de 150 bomberos , que describieron el área afectada como una " zona de guerra " fueron desplegados en el lugar .	Algunos servicios fueron llamados desde lugares tan lejanos como la ciudad de Sherbrooke y ocho camiones con 30 bomberos fueron enviados desde distintas localidades del Condado de Franklin , del estado de Maine ( Estados Unidos ) .	El fuego fue contenido y se evitó que se propagase aún más .	El hospital local , se declaró en _ código naranja _ , anticipando un alto número de víctimas y pidiendo refuerzos de otros centros médicos , aunque no recibió los pacientes gravemente heridos .	La Cruz Roja Canadiense dijo que no había heridos , dando el dato que sólo esperan víctimas mortales .
+Event	T0	afectada	EVENT	55
+Event	T1	desplegados	EVENT	99
+Event	T2	llamados	EVENT	150
+Event	T3	enviados	EVENT	253
+Event	T4	fuego	EVENT	360
+Event	T5	contenido	EVENT	370
+Event	T6	evitó	EVENT	385
+Event	T7	propagase	EVENT	398
+Event	T8	declaró	EVENT	441
+Event	T9	anticipando	EVENT	473
+Event	T10	refuerzos	EVENT	523
+Event	T11	recibió	EVENT	570
+Event	T12	heridos	EVENT	603
+Event	T13	dijo	EVENT	637
+Event	T14	heridos	EVENT	655
+Event	T15	dando	EVENT	665
+Event	T16	dato	EVENT	674
+Event	T17	esperan	EVENT	688
+Relation	T0	T13	NoRel	true	afectada	dijo
+Relation	T1	T9	NoRel	true	desplegados	anticipando
+Relation	T10	T1	NoRel	true	refuerzos	desplegados
+Relation	T12	T13	NoRel	true	heridos	dijo
+Relation	T13	T3	NoRel	true	dijo	enviados
+Relation	T13	T9	NoRel	true	dijo	anticipando
+Relation	T14	T17	NoRel	true	heridos	esperan
+Relation	T15	T13	NoRel	true	dando	dijo
+Relation	T15	T9	NoRel	true	dando	anticipando
+Relation	T16	T1	NoRel	true	dato	desplegados
+Relation	T16	T15	NoRel	true	dato	dando
+Relation	T16	T2	NoRel	true	dato	llamados
+Relation	T16	T4	NoRel	true	dato	fuego
+Relation	T2	T17	NoRel	true	llamados	esperan
+Relation	T5	T8	NoRel	true	contenido	declaró
+Relation	T6	T17	NoRel	true	evitó	esperan
+Relation	T6	T3	NoRel	true	evitó	enviados
+Relation	T8	T15	NoRel	true	declaró	dando
+Relation	T9	T8	NoRel	true	anticipando	declaró

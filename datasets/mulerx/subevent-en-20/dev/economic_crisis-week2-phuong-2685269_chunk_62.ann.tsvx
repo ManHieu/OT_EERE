@@ -1,0 +1,40 @@
+Text	Employment in the private sector recovered to the level of the 1936 and continued to increase until the war came and manufacturing employment leaped from 11 million in 1940 to 18 million in 1943 .	Another response to the 1937 deepening of the Great Depression had more tangible results .	Ignoring the pleas of the Treasury Department , Roosevelt embarked on an antidote to the depression , reluctantly abandoning his efforts to balance the budget and launching a $ 5 billion spending program in the spring of 1938 in an effort to increase mass purchasing power .	Business - oriented observers explained the recession and recovery in very different terms from the Keynesian economists .	They argued the New Deal had been very hostile to business expansion in 1935 – 37 .
+Event	T0	increase	EVENT	85
+Event	T1	came	EVENT	108
+Event	T10	efforts	EVENT	417
+Event	T11	balance	EVENT	428
+Event	T12	launching	EVENT	451
+Event	T13	effort	EVENT	520
+Event	T14	increase	EVENT	530
+Event	T15	explained	EVENT	593
+Event	T16	recession	EVENT	607
+Event	T17	recovery	EVENT	621
+Event	T18	argued	EVENT	691
+Event	T2	leaped	EVENT	142
+Event	T23	expansion	EVENT	745
+Event	T3	response	EVENT	205
+Event	T4	deepening	EVENT	226
+Event	T5	Ignoring	EVENT	288
+Event	T6	pleas	EVENT	301
+Event	T7	antidote	EVENT	361
+Event	T8	depression	EVENT	377
+Event	T9	abandoning	EVENT	402
+Relation	T0	T1	SuperSub	true	increase	came
+Relation	T1	T0	SubSuper	true	came	increase
+Relation	T2	T1	SuperSub	true	leaped	came
+Relation	T1	T2	SubSuper	true	came	leaped
+Relation	T15	T18	SuperSub	true	explained	argued
+Relation	T18	T15	SubSuper	true	argued	explained
+Relation	T1	T17	NoRel	true	came	recovery
+Relation	T10	T17	NoRel	true	efforts	recovery
+Relation	T11	T15	NoRel	true	balance	explained
+Relation	T12	T13	NoRel	true	launching	effort
+Relation	T13	T18	NoRel	true	effort	argued
+Relation	T18	T7	NoRel	true	argued	antidote
+Relation	T2	T15	NoRel	true	leaped	explained
+Relation	T23	T14	NoRel	true	expansion	increase
+Relation	T4	T1	NoRel	true	deepening	came
+Relation	T5	T4	NoRel	true	Ignoring	deepening
+Relation	T6	T7	NoRel	true	pleas	antidote
+Relation	T7	T15	NoRel	true	antidote	explained
+Relation	T9	T11	NoRel	true	abandoning	balance

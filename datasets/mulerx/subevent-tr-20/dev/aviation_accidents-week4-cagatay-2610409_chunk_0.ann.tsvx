@@ -1,0 +1,22 @@
+Text	PEGASUS HAVA YOLLARI'NIN 8622 SEFER SAYILI UÇUŞU , 14 Ocak 2018 tarihinde Pegasus Hava Yolları'na ait Boeing 737 - 86J tipi yolcu uçağının pistten çıkması ile sonuçlanan uçuştur .	Ankara - Trabzon seferini yapan ve Ankara Esenboğa Havalimanı'ndan kalkan uçak , Trabzon Havalimanı'na indikten sonra pistten çıkmış fakat uçakta bulunan kimse yaralanmamıştır .	Uçak Karadeniz'e 25 metre kala durmuştur .	Kullanılamaz hale gelen uçağın enkazı önce Trabzon’un Yomra ilçesine taşındı .	2021 yılında uçak enkazının pide salonuna çevrilmesi için çalışmalar başladı .
+Event	T0	UÇUŞU	EVENT	43
+Event	T1	çıkması	EVENT	147
+Event	T2	uçuştur	EVENT	170
+Event	T3	indikten	EVENT	283
+Event	T4	çıkmış	EVENT	306
+Event	T5	yaralanmamıştır	EVENT	340
+Event	T6	durmuştur	EVENT	389
+Event	T7	taşındı	EVENT	470
+Event	T8	çevrilmesi	EVENT	522
+Event	T9	başladı	EVENT	549
+Event	T10	gelen	EVENT	419
+Relation	T3	T4	SuperSub	true	indikten	çıkmış
+Relation	T4	T3	SubSuper	true	çıkmış	indikten
+Relation	T3	T1	SuperSub	true	indikten	çıkması
+Relation	T1	T3	SubSuper	true	çıkması	indikten
+Relation	T0	T1	NoRel	true	UÇUŞU	çıkması
+Relation	T2	T9	NoRel	true	uçuştur	başladı
+Relation	T5	T0	NoRel	true	yaralanmamıştır	UÇUŞU
+Relation	T5	T2	NoRel	true	yaralanmamıştır	uçuştur
+Relation	T8	T4	NoRel	true	çevrilmesi	çıkmış
+Relation	T9	T0	NoRel	true	başladı	UÇUŞU

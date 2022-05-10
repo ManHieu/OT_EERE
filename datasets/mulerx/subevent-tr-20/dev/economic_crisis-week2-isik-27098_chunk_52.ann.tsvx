@@ -1,0 +1,19 @@
+Text	1 Aralık 1933'te çıkarılan kanun ile Nasyonal Sosyalist Alman İşçi Partisi dışındaki tüm partiler kapatıldı .	Nasyonal sosyalist devrim , NSDAP yöneticilerinin ve sivil nasyonal sosyalist Almanların desteği ile sürdü ve 1933- 1934 yılları içerisinde , hızlı bir süreç halinde gerçekleşti .	Toplum , bireylerin çoğunun desteklediği ve yürürlüğe girmesini beklediği nasyonal sosyalist sisteme kendisini adapte etti .	Devlet kurumları nasyonal sosyalist sistemin ön gördüğü şekilde düzenlendi .	Ulusal semboller ve bayrak değiştirildi .
+Event	T0	kapatıldı	EVENT	98
+Event	T1	devrim	EVENT	129
+Event	T10	desteklediği	EVENT	318
+Event	T2	sürdü	EVENT	211
+Event	T4	gerçekleşti	EVENT	276
+Event	T6	düzenlendi	EVENT	479
+Event	T7	değiştirildi	EVENT	519
+Event	T8	çıkarılan	EVENT	17
+Event	T9	desteği	EVENT	199
+Relation	T1	T6	SuperSub	true	devrim	düzenlendi
+Relation	T6	T1	SubSuper	true	düzenlendi	devrim
+Relation	T1	T7	SuperSub	true	devrim	değiştirildi
+Relation	T7	T1	SubSuper	true	değiştirildi	devrim
+Relation	T1	T8	SuperSub	true	devrim	çıkarılan
+Relation	T8	T1	SubSuper	true	çıkarılan	devrim
+Relation	T0	T2	NoRel	true	kapatıldı	sürdü
+Relation	T8	T7	NoRel	true	çıkarılan	değiştirildi
+Relation	T9	T2	NoRel	true	desteği	sürdü

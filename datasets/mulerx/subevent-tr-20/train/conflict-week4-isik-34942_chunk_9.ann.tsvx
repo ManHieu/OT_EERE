@@ -1,0 +1,14 @@
+Text	Haziran ayının sonunda Haçlı ordusu Kudüs'e gitmek için yürüyüşe başladı .	Fransız soylu asillerinden Blois kontu Stephen karısına gönderebildiği nadir bir mektupta bu geçişin 5 hafta süreceğini belirtmişti .	Ancak bu geçiş 2 yıl sürdü .	10 Nisan'da Haçlılar yürüyüşe başlayıp önce Anadolu Selçuklu Devleti başkenti İznik'i kuşattılar .	Anadolu Selçuklu Sultanı I. Kılıç Arslan Haçlılar’ın ciddi bir tehlike olabileceğini hesap edememiş ve 1097 ilkbaharında bütün ordusu ile Ermeni Gabriel’in elindeki Malatya’yı kuşatmaya gitmişti .
+Event	T0	gitmek	EVENT	44
+Event	T1	başladı	EVENT	65
+Event	T2	geçişin	EVENT	168
+Event	T3	belirtmişti	EVENT	195
+Event	T4	geçiş	EVENT	218
+Event	T5	sürdü	EVENT	230
+Event	T6	kuşattılar	EVENT	324
+Event	T8	başlayıp	EVENT	268
+Event	T7	gitmişti	EVENT	523
+Event	T9	edememiş	EVENT	428
+Relation	T4	T1	NoRel	true	geçiş	başladı
+Relation	T9	T1	NoRel	true	edememiş	başladı
+Relation	T9	T6	NoRel	true	edememiş	kuşattılar

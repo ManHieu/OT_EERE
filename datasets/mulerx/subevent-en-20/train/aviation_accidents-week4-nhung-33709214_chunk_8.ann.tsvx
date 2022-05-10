@@ -1,0 +1,28 @@
+Text	| group= Note }} laid a foam blanket around the burning wreckage and sprayed foam on the fire .	He used all the foam without extinguishing the flames .	Two other fire tenders from neighbouring areas arrived to assist .	It was 90 minutes before the fire was extinguished .	After sunrise , police , firemen and undertakers worked for an hour to remove the bodies of the 18 people killed in the accident .
+Event	T0	laid	EVENT	17
+Event	T1	used	EVENT	99
+Event	T2	extinguishing	EVENT	125
+Event	T3	fire	EVENT	162
+Event	T4	arrived	EVENT	199
+Event	T5	assist	EVENT	210
+Event	T6	fire	EVENT	248
+Event	T7	extinguished	EVENT	257
+Event	T8	worked	EVENT	321
+Event	T9	remove	EVENT	343
+Event	T10	killed	EVENT	378
+Event	T11	accident	EVENT	392
+Event	T12	burning	EVENT	48
+Event	T13	fire	EVENT	89
+Event	T14	tenders	EVENT	167
+Event	T15	sunrise	EVENT	278
+Relation	T15	T8	SuperSub	true	sunrise	worked
+Relation	T8	T15	SubSuper	true	worked	sunrise
+Relation	T11	T6	NoRel	true	accident	fire
+Relation	T12	T11	NoRel	true	burning	accident
+Relation	T12	T15	NoRel	true	burning	sunrise
+Relation	T12	T6	NoRel	true	burning	fire
+Relation	T12	T9	NoRel	true	burning	remove
+Relation	T15	T11	NoRel	true	sunrise	accident
+Relation	T2	T4	NoRel	true	extinguishing	arrived
+Relation	T6	T0	NoRel	true	fire	laid
+Relation	T8	T4	NoRel	true	worked	arrived

@@ -1,0 +1,11 @@
+Text	9/ 11 KOMISYONU , 11 Eylül saldırılarını incelemek amacıyla 27 Kasım 2002'de Amerika Birleşik Devletleri'nde kurulan komisyondur .	10 ülkeden 1200'den fazla insanla konuşmuş , iki buçuk milyon sayfadan fazla belge incelemiş ve sonunda 24 Temmuz 2004'te çalışmalarını tamamlayarak raporunu hazırlamıştır .	küçükresim | sağ | 320px | 9 / 11 Komisyonu üyeleri .	Soldan sağa ayaktakiler : Ben - Veniste , Lehman , Roemer , Thompson , Kerrey , Gorton .	Oturanlar : Fielding , Hamilton ( Başkan yardımcısı ) , Kean ( Başkan ) , Gorelick .
+Event	T0	incelemek	EVENT	41
+Event	T1	kurulan	EVENT	109
+Event	T2	incelemiş	EVENT	214
+Event	T4	hazırlamıştır	EVENT	289
+Event	T5	saldırılarını	EVENT	27
+Event	T6	konuşmuş	EVENT	165
+Event	T7	çalışmalarını	EVENT	253
+Relation	T0	T1	NoRel	true	incelemek	kurulan
+Relation	T4	T6	NoRel	true	hazırlamıştır	konuşmuş
+Relation	T5	T2	NoRel	true	saldırılarını	incelemiş

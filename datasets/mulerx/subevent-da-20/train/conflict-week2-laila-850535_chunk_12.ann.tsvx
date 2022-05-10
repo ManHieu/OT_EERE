@@ -1,0 +1,29 @@
+Text	De mistænkte havde ved udgangen af september ( 2017 ) været til 13 retsmøder , militærets advokat erklærede , at 447 vidner skal interviewes , før en dom kan afgives .	Næsten et år senere var kun otte vidner afhørt .	Den langsomme sagbehandling skyldtes dels , at det var en militærdomstol , dels at hvert vidnet blev afhørt ad flere gange , og dels at de tiltalte kun ville acceptgere tolke , de i forvejen havde tillid til , hvorfor det var vanskeligt at skaffe tolke .	Retssagen skønnedes at kunne komme til at vare til 2020 .	De fleste analytikere har konkluderet , at bombeangrebet var uighur-militantes arbejde som hævn for , at militærregeringen nogle måneder tidligere med tvang havde hjemsendt flere end hundrede uighurer til Kina , mod deres vilje .
+Event	T0	erklærede	EVENT	98
+Event	T1	interviewes	EVENT	129
+Event	T10	arbejde	EVENT	609
+Event	T11	tvang	EVENT	681
+Event	T12	hjemsendt	EVENT	693
+Event	T2	dom	EVENT	150
+Event	T3	afgives	EVENT	158
+Event	T4	afhørt	EVENT	208
+Event	T5	skyldtes	EVENT	245
+Event	T6	afhørt	EVENT	318
+Event	T7	skønnedes	EVENT	482
+Event	T8	konkluderet	EVENT	556
+Event	T9	bombeangrebet	EVENT	573
+Relation	T1	T2	SuperSub	true	interviewes	dom
+Relation	T2	T1	SubSuper	true	dom	interviewes
+Relation	T10	T0	NoRel	true	arbejde	erklærede
+Relation	T2	T0	NoRel	true	dom	erklærede
+Relation	T3	T9	NoRel	true	afgives	bombeangrebet
+Relation	T5	T1	NoRel	true	skyldtes	interviewes
+Relation	T5	T2	NoRel	true	skyldtes	dom
+Relation	T5	T9	NoRel	true	skyldtes	bombeangrebet
+Relation	T6	T0	NoRel	true	afhørt	erklærede
+Relation	T6	T7	NoRel	true	afhørt	skønnedes
+Relation	T7	T12	NoRel	true	skønnedes	hjemsendt
+Relation	T7	T6	NoRel	true	skønnedes	afhørt
+Relation	T8	T2	NoRel	true	konkluderet	dom
+Relation	T8	T7	NoRel	true	konkluderet	skønnedes
+Relation	T9	T10	NoRel	true	bombeangrebet	arbejde

@@ -1,0 +1,18 @@
+Text	Han blev øjeblikkeligt tilbageholdt i Guantanamo-lejren .	Under USA's retsmøder i marts 2007 tilstod Sheikh Mohammed igen sit ansvar for angrebene : " Jeg var ansvarlig for 9/11 , fra A til Z " .	Mohammed aflagde tilståelse efter at være blevet tortureret med waterboarding .	I november 2009 meddelte den amerikanske justitsminister Eric Holder , at Mohammed og de fire anklagede medsammensvorne vil blive flyttet fra Guantanamo-lejren , for at blive stillet for en civil domstol nær Ground Zero i New York .	Ingen retssagsdato blev givet .
+Event	T0	tilbageholdt	EVENT	23
+Event	T1	retsmøder	EVENT	70
+Event	T2	angrebene	EVENT	137
+Event	T4	tortureret	EVENT	245
+Event	T5	meddelte	EVENT	292
+Event	T6	flyttet	EVENT	406
+Event	T7	stillet	EVENT	451
+Event	T8	givet	EVENT	533
+Event	T9	tilstod	EVENT	93
+Relation	T0	T1	SuperSub	true	tilbageholdt	retsmøder
+Relation	T1	T0	SubSuper	true	retsmøder	tilbageholdt
+Relation	T6	T7	SuperSub	true	flyttet	stillet
+Relation	T7	T6	SubSuper	true	stillet	flyttet
+Relation	T0	T4	SuperSub	true	tilbageholdt	tortureret
+Relation	T4	T0	SubSuper	true	tortureret	tilbageholdt
+Relation	T5	T4	NoRel	true	meddelte	tortureret
+Relation	T5	T9	NoRel	true	meddelte	tilstod

@@ -1,0 +1,32 @@
+Text	- Türkiye Başbakanı Ahmet Davutoğlu , " Türkiye'nin sınırlarını kim ihlâl ederse ona karşı her türlü tedbiri almanın hakları ve görevi olduğunu " belirtti .	TBMM'deki AK Parti grup toplantısında ise " Angajman kurallarının Rusya dahil tüm dünya tarafından bilindiğini , son hadisede ikazlara rağmen Rus makamlarınca dikkate alınmadığını ve gerekli tedbirleri bu yüzden almaları gerektiğini " söyledi .	Aynı zamanda " Bayırbucak bölgesinde IŞİD unsurlarının bulunmadığını ve bölgedeki masum halka yapılan saldırılara göz yumamayacaklarını " belirtti .	- NATO Genel Sekreteri Jens Stoltenberg , " ellerindeki verilerin Rus uçağının sınır ihlâli yaptığı yönünde olduğunu , Türkiye'nin açıklamalarının doğru olduğunu ve Rusya'nın hedef aldığı yerlerin çoğu IŞİD'in bulunmadığı mekanlar olduğunu " söyledi .	Rusya Genelkurmay sözcüsü Sergey Luskov , olay sonrası Suriye'de faaliyetlerine devam edeceklerini söyleyerek üç adımlık karar metnini açıkladı .
+Event	T0	belirtti	EVENT	146
+Event	T1	söyledi	EVENT	392
+Event	T2	belirtti	EVENT	540
+Event	T4	söyledi	EVENT	793
+Event	T5	olay	EVENT	845
+Event	T6	söyleyerek	EVENT	902
+Event	T7	karar	EVENT	924
+Event	T8	açıkladı	EVENT	938
+Event	T9	ihlâl	EVENT	68
+Event	T10	tedbiri	EVENT	101
+Event	T11	ikazlara	EVENT	283
+Event	T12	toplantısında	EVENT	181
+Event	T13	ihlâli	EVENT	636
+Event	T3	açıklamalarının	EVENT	682
+Relation	T12	T1	SuperSub	true	toplantısında	söyledi
+Relation	T1	T12	SubSuper	true	söyledi	toplantısında
+Relation	T12	T2	SuperSub	true	toplantısında	belirtti
+Relation	T2	T12	SubSuper	true	belirtti	toplantısında
+Relation	T1	T5	NoRel	true	söyledi	olay
+Relation	T12	T5	NoRel	true	toplantısında	olay
+Relation	T12	T6	NoRel	true	toplantısında	söyleyerek
+Relation	T12	T7	NoRel	true	toplantısında	karar
+Relation	T2	T3	NoRel	true	belirtti	açıklamalarının
+Relation	T3	T12	NoRel	true	açıklamalarının	toplantısında
+Relation	T5	T0	NoRel	true	olay	belirtti
+Relation	T5	T2	NoRel	true	olay	belirtti
+Relation	T7	T10	NoRel	true	karar	tedbiri
+Relation	T8	T11	NoRel	true	açıkladı	ikazlara
+Relation	T8	T13	NoRel	true	açıkladı	ihlâli
+Relation	T8	T2	NoRel	true	açıkladı	belirtti
+Relation	T9	T13	NoRel	true	ihlâl	ihlâli

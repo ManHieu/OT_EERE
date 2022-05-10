@@ -1,0 +1,44 @@
+Text	Også Danmark blev alvorligt ramt af krisen med kraftige fald på aktiemarkedet og boligmarkedet , flere bankkrak og konkurser og en stærkt stigende arbejdsløshed .	Fra et niveau for bruttoledigheden på 2,6 % i 2008 steg den til 6,1 % i 2010 .	Også i Danmark lempede man finanspolitikken i 2008-09 , men skiftede bagefter kurs med en mere kontraktiv politik , bl.a. ved den såkaldte " genopretningspakke " i 2010 .	I Danmark har efterdønningerne efter krisen som i andre europæiske lande været langvarig , og i 2015 forventes det stadig , at der vil gå nogle år , inden beskæftigelsen igen når op på sit strukturelle niveau , og man derved kan siges at være helt ovre krisens eftervirkninger .	En række danske bankpakker i årene 2008-12 har medvirket til at genoprette roen på de hjemlige finansielle markeder .
+Event	T0	fald	EVENT	56
+Event	T1	bankkrak	EVENT	103
+Event	T2	konkurser	EVENT	115
+Event	T3	steg	EVENT	214
+Event	T4	lempede	EVENT	257
+Event	T5	skiftede	EVENT	302
+Event	T6	efterdønningerne	EVENT	427
+Event	T7	krisen	EVENT	450
+Event	T8	siges	EVENT	642
+Event	T9	medvirket	EVENT	739
+Event	T10	ramt	EVENT	28
+Event	T11	arbejdsløshed	EVENT	147
+Event	T12	bruttoledigheden	EVENT	181
+Event	T13	langvarig	EVENT	492
+Event	T14	forventes	EVENT	514
+Event	T15	inden	EVENT	562
+Event	T16	ovre	EVENT	661
+Event	T17	genoprette	EVENT	756
+Event	T18	bankpakker	EVENT	708
+Relation	T4	T5	SuperSub	true	lempede	skiftede
+Relation	T5	T4	SubSuper	true	skiftede	lempede
+Relation	T0	T14	NoRel	true	fald	forventes
+Relation	T1	T0	NoRel	true	bankkrak	fald
+Relation	T1	T4	NoRel	true	bankkrak	lempede
+Relation	T1	T6	NoRel	true	bankkrak	efterdønningerne
+Relation	T10	T18	NoRel	true	ramt	bankpakker
+Relation	T10	T7	NoRel	true	ramt	krisen
+Relation	T12	T11	NoRel	true	bruttoledigheden	arbejdsløshed
+Relation	T13	T2	NoRel	true	langvarig	konkurser
+Relation	T13	T4	NoRel	true	langvarig	lempede
+Relation	T14	T4	NoRel	true	forventes	lempede
+Relation	T14	T8	NoRel	true	forventes	siges
+Relation	T16	T18	NoRel	true	ovre	bankpakker
+Relation	T16	T2	NoRel	true	ovre	konkurser
+Relation	T17	T16	NoRel	true	genoprette	ovre
+Relation	T17	T8	NoRel	true	genoprette	siges
+Relation	T18	T11	NoRel	true	bankpakker	arbejdsløshed
+Relation	T18	T12	NoRel	true	bankpakker	bruttoledigheden
+Relation	T4	T15	NoRel	true	lempede	inden
+Relation	T5	T15	NoRel	true	skiftede	inden
+Relation	T5	T2	NoRel	true	skiftede	konkurser
+Relation	T7	T15	NoRel	true	krisen	inden
+Relation	T9	T14	NoRel	true	medvirket	forventes

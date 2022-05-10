@@ -1,0 +1,18 @@
+Text	AEROFLOT'UN 93 SEFER SAYILI UÇUŞU , 1 Temmuz 1990 Cumartesi günü bir İlyuşin Il - 62M ile gerçekleştirilen ve Yakutsk Havalimanı'na inerken 6 kişinin yaralanmasıyla sonuçlanan kazadır .	86456 kuyruk numaralı Il - 62M , 22 Haziran 1976'da Kazan Uçak Fabrikası tarafından üretildi .	30 Ağustos 1982'da , Moskova bölgesel Sivil Havacılık İdaresi Domodedovo Airlines'a transfer edildi .	Aeroflot'un 93 sefer sayılı uçuşu , yerel saatle 12: 37'de Moskova'daki Domodedovo Havalimanı'ndan Yakutsk Havalimanı'na gitmek için kalktı .	Uçakta kaptan pilot F. A. Fefelov liderliğindeki 9 mürettebat üyesi ( toplam 10 ) ve 5'i çocuk olmak üzere 99 yolcu vardı .
+Event	T0	UÇUŞU	EVENT	28
+Event	T1	gerçekleştirilen	EVENT	90
+Event	T2	kazadır	EVENT	176
+Event	T3	üretildi	EVENT	270
+Event	T5	uçuşu	EVENT	411
+Event	T6	gitmek	EVENT	504
+Event	T7	kalktı	EVENT	516
+Event	T8	yaralanmasıyla	EVENT	150
+Event	T4	transfer	EVENT	365
+Relation	T0	T7	SuperSub	true	UÇUŞU	kalktı
+Relation	T7	T0	SubSuper	true	kalktı	UÇUŞU
+Relation	T5	T7	SuperSub	true	uçuşu	kalktı
+Relation	T7	T5	SubSuper	true	kalktı	uçuşu
+Relation	T0	T1	NoRel	true	UÇUŞU	gerçekleştirilen
+Relation	T1	T0	NoRel	true	gerçekleştirilen	UÇUŞU
+Relation	T1	T2	NoRel	true	gerçekleştirilen	kazadır
+Relation	T1	T3	NoRel	true	gerçekleştirilen	üretildi

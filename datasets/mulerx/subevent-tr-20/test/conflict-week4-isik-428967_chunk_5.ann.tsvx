@@ -1,0 +1,22 @@
+Text	Francione'a göre , zorunda olmadığımız halde hayvanları zarar vermenin ve onları öldürmenin ahlaken yanlış olduğunu kabul ettiğimizde ve damak zevki , giyim kuşam anlayışı ya da alışkanlık gibi gerekçelerin de zorunluluk olarak sayılamayacağı da göz önünde bulundurulduğunda , veganlık bir tercih değil ahlaki bir yükümlülük teşkil etmektedir .	Francione'a göre hayvan kullanımını tamamen ortadan kaldırma yönündeki bu yükümlülüğü yerine getirmek yerine hayvanlar için daha iyi koşulların tesis edilmesi yönündeki düşüncelere karşı çıkar , bu tarz girişimleri kurbanlarına işkence etmeden tecavüz edecek " bilinçli tecavüzcüler " için kampanya yapmaya benzetir .	Francione'a göre hayvan refahı paradigması ya da faydacı yaklaşım , hayvanların mülk statüsünü sorgulamamakta , aksine insanların hayvanları tüketmek konusunda kendilerini daha iyi hissetmelerinin önünü açmaktadır .	Faydacı yaklaşımın ya da hayvan refahının temsilcisi olan Peter Singer ise etik boyutta kararlar verirken hayvanların çektikleri acıyı göz ardı etmemiz için hiçbir mantıklı sebep olmadığını öne sürer , hissedebilirliğin " başkalarının çıkarlarını gözetirken göz önünde bulundurulabilecek tek kriter " olduğunu öne süren Singer , yaşamak için zorunlu olmadığı müddetçe hayvanların öldürülmesini reddetmemiz gerektiğini savunur .	Buna rağmen Singer " Paris İstisnası " olarak bilinen senaryoyu da destekler , buna göre eğer vegan yiyecek bulamadığınız bir restorandaysanız ve jetaryen de beslenebilirsiniz .
+Event	T0	öldürmenin	EVENT	81
+Event	T5	benzetir	EVENT	652
+Event	T7	öldürülmesini	EVENT	1259
+Event	T8	savunur	EVENT	1297
+Event	T9	destekler	EVENT	1374
+Event	T10	vermenin	EVENT	62
+Event	T1	kaldırma	EVENT	397
+Event	T2	getirmek	EVENT	438
+Event	T3	çıkar	EVENT	532
+Event	T4	tüketmek	EVENT	804
+Event	T11	açmaktadır	EVENT	866
+Event	T12	verirken	EVENT	976
+Event	T6	reddetmemiz	EVENT	1273
+Event	T13	beslenebilirsiniz	EVENT	1465
+Relation	T3	T5	SuperSub	true	çıkar	benzetir
+Relation	T5	T3	SubSuper	true	benzetir	çıkar
+Relation	T0	T12	NoRel	true	öldürmenin	verirken
+Relation	T0	T8	NoRel	true	öldürmenin	savunur
+Relation	T6	T0	NoRel	true	reddetmemiz	öldürmenin
+Relation	T6	T10	NoRel	true	reddetmemiz	vermenin
+Relation	T7	T9	NoRel	true	öldürülmesini	destekler

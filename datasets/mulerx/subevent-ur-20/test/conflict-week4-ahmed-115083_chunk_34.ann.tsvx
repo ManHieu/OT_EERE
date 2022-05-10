@@ -1,0 +1,26 @@
+Text	1857ء میں ہندو اور مسلمان سپاہیوں کی غیرت نئے کارتوسوں پر لگی گائے اور سور کی چربی کو چکھ کر بیدار ہو گئی جس سے برصغیر میں انگریزوں کے خلاف غیر منظم جنگ کا آغاز ہوا ۔	لکھنؤ اور دہلی کے شیعہ سنی علما نے جہاد کا مشترکہ فتویٰ دیا ۔	شاہ عبد العزیز کے دار الحرب والے فتوے کے برعکس یہ فتویٰ ایک حقیقی خطرہ بن کر سامنے آیا کیوں کہ یہ واضح اور روشن سیاسی ہدف رکھتا تھا ۔	ہندوستان ایسٹ انڈیا کمپنی کے ہاتھوں سے پھسلا تو برطانیہ کی حکومت نے گود لے لیا ۔	رنگون سے آنے والے انگریز فوج کے دستے نے لاکھوں لوگ قتل کر کے چنگیز خان کی سی دھاک بٹھا دی ۔
+Event	T0	لگی	EVENT	58
+Event	T1	چکھ	EVENT	86
+Event	T2	بیدار	EVENT	93
+Event	T3	جنگ	EVENT	149
+Event	T5	جہاد	EVENT	202
+Event	T7	خطرہ	EVENT	295
+Event	T8	پھسلا	EVENT	402
+Event	T9	آنے	EVENT	453
+Event	T10	قتل	EVENT	495
+Event	T4	فتویٰ	EVENT	217
+Event	T6	فتوے	EVENT	262
+Event	T11	فتویٰ	EVENT	279
+Event	T12	رکھتا	EVENT	351
+Event	T13	گود	EVENT	431
+Event	T14	بٹھا	EVENT	526
+Relation	T5	T4	SuperSub	true	جہاد	فتویٰ
+Relation	T4	T5	SubSuper	true	فتویٰ	جہاد
+Relation	T10	T9	SuperSub	true	قتل	آنے
+Relation	T9	T10	SubSuper	true	آنے	قتل
+Relation	T0	T4	NoRel	true	لگی	فتویٰ
+Relation	T11	T1	NoRel	true	فتویٰ	چکھ
+Relation	T4	T9	NoRel	true	فتویٰ	آنے
+Relation	T5	T10	NoRel	true	جہاد	قتل
+Relation	T5	T13	NoRel	true	جہاد	گود
+Relation	T6	T3	NoRel	true	فتوے	جنگ

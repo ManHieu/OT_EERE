@@ -1,0 +1,32 @@
+Text	_	Las celebridades se enfrentaron en cinco sets , en cada set dos concursantes realizaron el mismo estilo de baile con diferentes canciones , bailando junto al mismo bailarín profesional .	La celebridad ganadora obtuvo un lugar en la competencia , mientras que la perdedora quedó en la « zona de fuego » , donde tuvo que disputar su permanencia en la siguiente semana .	Los empates se evitaron por el voto decisivo de los comentaristas .	Por decisión de los comentaristas , Brenda Carvalho y Gabriela Herrera fueron las dos , de las cinco participantes ganadoras , que ingresaron definitivamente a la competencia .
+Event	T0	enfrentaron	EVENT	22
+Event	T1	sets	EVENT	43
+Event	T2	realizaron	EVENT	79
+Event	T3	baile	EVENT	109
+Event	T4	bailando	EVENT	142
+Event	T5	obtuvo	EVENT	212
+Event	T6	competencia	EVENT	234
+Event	T7	quedó	EVENT	274
+Event	T8	tuvo	EVENT	312
+Event	T9	disputar	EVENT	321
+Event	T10	permanencia	EVENT	333
+Event	T11	empates	EVENT	374
+Event	T12	evitaron	EVENT	385
+Event	T13	decisión	EVENT	442
+Event	T14	ingresaron	EVENT	569
+Event	T15	competencia	EVENT	601
+Relation	T0	T4	SuperSub	true	enfrentaron	bailando
+Relation	T4	T0	SubSuper	true	bailando	enfrentaron
+Relation	T6	T7	SuperSub	true	competencia	quedó
+Relation	T7	T6	SubSuper	true	quedó	competencia
+Relation	T7	T9	SuperSub	true	quedó	disputar
+Relation	T9	T7	SubSuper	true	disputar	quedó
+Relation	T0	T10	NoRel	true	enfrentaron	permanencia
+Relation	T1	T12	NoRel	true	sets	evitaron
+Relation	T13	T3	NoRel	true	decisión	baile
+Relation	T15	T9	NoRel	true	competencia	disputar
+Relation	T3	T15	NoRel	true	baile	competencia
+Relation	T6	T8	NoRel	true	competencia	tuvo
+Relation	T7	T13	NoRel	true	quedó	decisión
+Relation	T8	T11	NoRel	true	tuvo	empates
+Relation	T9	T11	NoRel	true	disputar	empates

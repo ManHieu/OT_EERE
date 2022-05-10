@@ -1,0 +1,26 @@
+Text	- 3 January 2011 – Goods train derailment at Dadri area of Ghaziabad district .	- 7 July 2011 – A Mathura – Chhapra Express hit a bus at an unmanned level crossing in Thanagaon , Kanshiram Nagar district , Uttar Pradesh , killing 38 and injuring 30 .	- 10 July 2011 – The Fatehpur derailment occurred when the Kalka Mail derailed near Fatehpur , Uttar Pradesh , killing 70 people and injuring more than 300 .	- 10 July 2011 – The Guwahati – Puri Express derailed in Nalbari district , Assam , with the engine and four coaches rolling over in a rivulet , injuring more than 100 .	The derailment was determined to have been the result of a bomb attack by local militants .
+Event	T0	derailment	EVENT	31
+Event	T1	hit	EVENT	124
+Event	T2	crossing	EVENT	155
+Event	T3	killing	EVENT	222
+Event	T4	injuring	EVENT	237
+Event	T6	derailed	EVENT	321
+Event	T7	killing	EVENT	362
+Event	T8	injuring	EVENT	384
+Event	T9	derailed	EVENT	454
+Event	T10	rivulet	EVENT	544
+Event	T11	injuring	EVENT	554
+Event	T12	derailment	EVENT	583
+Event	T13	determined	EVENT	598
+Event	T5	Fatehpur derailment	EVENT	272
+Event	T14	bomb attack	EVENT	638
+Relation	T1	T7	NoRel	true	hit	killing
+Relation	T10	T4	NoRel	true	rivulet	injuring
+Relation	T11	T12	NoRel	true	injuring	derailment
+Relation	T11	T2	NoRel	true	injuring	crossing
+Relation	T11	T3	NoRel	true	injuring	killing
+Relation	T4	T10	NoRel	true	injuring	rivulet
+Relation	T5	T13	NoRel	true	Fatehpur derailment	determined
+Relation	T6	T4	NoRel	true	derailed	injuring
+Relation	T8	T12	NoRel	true	injuring	derailment
+Relation	T9	T8	NoRel	true	derailed	injuring

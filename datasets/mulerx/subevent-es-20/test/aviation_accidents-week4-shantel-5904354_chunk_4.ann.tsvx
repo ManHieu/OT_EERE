@@ -1,0 +1,44 @@
+Text	Sin embargo , horas después empezaron a contabilizarse personas heridas que fueron trasladadas a hospitales locales	El último parte médico afirmó que 181 personas habían sido enviadas a centros médicos , de los cuales 49 estaban en estado crítico y dos habían fallecido .	Tres estudiantes universitarias de nacionalidad china murieron debido al accidente , una de ellas murió en el accidente aéreo , otra falleció días más tarde en un hospital .	La joven que se creyó muerta por atropello de los bomberos se ha confirmado que ya estaba muerta tras el impacto no siendo el camión de bomberos el causante de su muerte .	Un oficial del FBI afirmó que no había pruebas de que el accidente se tratara de un ataque terrorista .
+Event	T0	empezaron	EVENT	28
+Event	T1	contabilizarse	EVENT	40
+Event	T2	heridas	EVENT	64
+Event	T3	trasladadas	EVENT	83
+Event	T4	afirmó	EVENT	139
+Event	T5	enviadas	EVENT	175
+Event	T6	fallecido	EVENT	260
+Event	T7	accidente	EVENT	345
+Event	T8	murió	EVENT	370
+Event	T9	aéreo	EVENT	392
+Event	T10	falleció	EVENT	405
+Event	T11	muerta	EVENT	468
+Event	T12	atropello	EVENT	479
+Event	T13	confirmado	EVENT	511
+Event	T14	muerta	EVENT	536
+Event	T15	impacto	EVENT	551
+Event	T16	muerte	EVENT	609
+Event	T17	afirmó	EVENT	637
+Event	T18	pruebas	EVENT	657
+Event	T19	accidente	EVENT	675
+Event	T20	ataque	EVENT	702
+Relation	T2	T3	SuperSub	true	heridas	trasladadas
+Relation	T3	T2	SubSuper	true	trasladadas	heridas
+Relation	T2	T1	SuperSub	true	heridas	contabilizarse
+Relation	T1	T2	SubSuper	true	contabilizarse	heridas
+Relation	T0	T13	NoRel	true	empezaron	confirmado
+Relation	T0	T14	NoRel	true	empezaron	muerta
+Relation	T0	T18	NoRel	true	empezaron	pruebas
+Relation	T11	T12	NoRel	true	muerta	atropello
+Relation	T11	T4	NoRel	true	muerta	afirmó
+Relation	T13	T6	NoRel	true	confirmado	fallecido
+Relation	T13	T9	NoRel	true	confirmado	aéreo
+Relation	T15	T19	NoRel	true	impacto	accidente
+Relation	T17	T4	NoRel	true	afirmó	afirmó
+Relation	T2	T19	NoRel	true	heridas	accidente
+Relation	T3	T14	NoRel	true	trasladadas	muerta
+Relation	T3	T6	NoRel	true	trasladadas	fallecido
+Relation	T4	T11	NoRel	true	afirmó	muerta
+Relation	T6	T15	NoRel	true	fallecido	impacto
+Relation	T6	T8	NoRel	true	fallecido	murió
+Relation	T7	T4	NoRel	true	accidente	afirmó
+Relation	T7	T6	NoRel	true	accidente	fallecido
+Relation	T9	T16	NoRel	true	aéreo	muerte

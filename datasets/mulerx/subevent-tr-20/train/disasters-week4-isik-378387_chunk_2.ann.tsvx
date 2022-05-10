@@ -1,0 +1,16 @@
+Text	Kyrill Batı Avrupa'da , özellikle Büyük Britanya ve Almanya'da büyük zararlara yol açtı .	19 Ocak itibarıyla 47 ölüm saptandı .	Toplu taşıma sistemleri zarar gördü , yüz binin üzerinde evde elektrikler kesildi , kamuya ait ve özel binalar zarar ciddi gördü , ormanlarda ağaçlar devrildi .	Alman meteoroloji uzmanları , Kyrill'in on yılda bir gerçekleşen şiddette bir doğa olayı olduğunu açıkladı .	Almanya'yı bu ölçüde etkileyen bir önceki fırtına , 1999'daki Lothar'dı .
+Event	T0	açtı	EVENT	83
+Event	T1	saptandı	EVENT	117
+Event	T2	gördü	EVENT	158
+Event	T3	kesildi	EVENT	202
+Event	T4	gördü	EVENT	251
+Event	T5	devrildi	EVENT	278
+Event	T7	açıkladı	EVENT	387
+Event	T8	etkileyen	EVENT	419
+Event	T9	fırtına	EVENT	440
+Event	T10	Kyrill	EVENT	0
+Relation	T0	T1	NoRel	true	açtı	saptandı
+Relation	T10	T0	NoRel	true	Kyrill	açtı
+Relation	T2	T8	NoRel	true	gördü	etkileyen
+Relation	T4	T5	NoRel	true	gördü	devrildi
+Relation	T5	T0	NoRel	true	devrildi	açtı

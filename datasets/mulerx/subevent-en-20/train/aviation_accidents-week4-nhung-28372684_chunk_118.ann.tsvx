@@ -1,0 +1,37 @@
+Text	He was rushed to the McCready Hospital at Crisfield , suffering from a fractured skull and internal damages . "	He had departed Newark at 1600 hours after flights to the west had been suspended for several hours because of bad weather over the mountains with more coming in from that direction .	22 February : " Lieut. R._M. Barton , speeding along the Jacksonville - Richmond route , was forced to land at Cocoa , Fla. , by a heavy fog .	He made a safe landing . "	23 February : A US Army Air Corps Curtiss O-39 Falcon ,__ 32-219_ , assigned to the air mail service crashes in bad weather near Fremont , Ohio , with pilot Lt. Norman R. Burnett suffering a fractured leg upon descending by parachute .
+Event	T0	rushed	EVENT	7
+Event	T1	suffering	EVENT	54
+Event	T2	fractured	EVENT	71
+Event	T3	damages	EVENT	100
+Event	T4	departed	EVENT	119
+Event	T5	flights	EVENT	155
+Event	T6	suspended	EVENT	184
+Event	T7	speeding	EVENT	334
+Event	T8	forced	EVENT	389
+Event	T9	land	EVENT	399
+Event	T10	fog	EVENT	433
+Event	T11	made	EVENT	442
+Event	T12	landing	EVENT	454
+Event	T13	suffering	EVENT	645
+Event	T14	descending	EVENT	676
+Event	T15	assigned	EVENT	534
+Event	T16	crashes	EVENT	567
+Relation	T5	T4	SuperSub	true	flights	departed
+Relation	T4	T5	SubSuper	true	departed	flights
+Relation	T10	T11	SuperSub	true	fog	made
+Relation	T11	T10	SubSuper	true	made	fog
+Relation	T14	T13	SuperSub	true	descending	suffering
+Relation	T13	T14	SubSuper	true	suffering	descending
+Relation	T0	T13	NoRel	true	rushed	suffering
+Relation	T10	T8	NoRel	true	fog	forced
+Relation	T11	T12	NoRel	true	made	landing
+Relation	T11	T15	NoRel	true	made	assigned
+Relation	T11	T5	NoRel	true	made	flights
+Relation	T12	T13	NoRel	true	landing	suffering
+Relation	T14	T11	NoRel	true	descending	made
+Relation	T14	T4	NoRel	true	descending	departed
+Relation	T2	T14	NoRel	true	fractured	descending
+Relation	T3	T1	NoRel	true	damages	suffering
+Relation	T5	T12	NoRel	true	flights	landing
+Relation	T5	T7	NoRel	true	flights	speeding
+Relation	T7	T1	NoRel	true	speeding	suffering

@@ -1,0 +1,24 @@
+Text	Her tutuklanmasından sonra genellikle rüşvet ile soruşturmayı engelleyerek serbest kalmayı başarmıştır .	Kızıl Ordu'nun Auschwitz ve doğudaki diğer toplama kamplarının yakınlarına gelmesiyle SS kalan esirleri batıya doğru göndermeye başlamıştı .	Schindler SS subaylarını ikna ederek 1100 Yahudi işçisinin Nazi işgali altındaki Çekoslovakya'da , dönemin Sudetanland eyaletinde yer alan Brněnec - Brünnlitz'e gönderilmesini sağlamış , bu sayede ölüm kamplarından kurtarmıştır .	Brněnec'de bir diğer Yahudi fabrikasını aynı şekilde ele alarak 37 mm mühimmat bileşenleri üretmeye başlamıştır .	küçük | sol | Schindler'in kabri Schindler , İkinci Dünya Harbi'nin Avrupa kolundaki çatışmaların bitmesine dek işçilerinin öldürülmemesi için SS yetkililerine rüşvet vermeye devam etti ve bu süre zarfında tüm servetini işçileri için karaborsadan mal almak için harcadı .
+Event	T0	tutuklanmasından	EVENT	4
+Event	T1	gelmesiyle	EVENT	180
+Event	T2	sağlamış	EVENT	422
+Event	T4	kurtarmıştır	EVENT	461
+Event	T7	etti	EVENT	771
+Event	T8	başarmıştır	EVENT	91
+Event	T9	engelleyerek	EVENT	62
+Event	T10	rüşvet	EVENT	38
+Event	T11	başlamıştı	EVENT	233
+Event	T12	ederek	EVENT	276
+Event	T3	başlamıştır	EVENT	576
+Event	T13	İkinci Dünya Harbi'nin	EVENT	635
+Event	T6	harcadı	EVENT	852
+Event	T14	çatışmaların	EVENT	675
+Relation	T10	T12	NoRel	true	rüşvet	ederek
+Relation	T13	T6	NoRel	true	İkinci Dünya Harbi'nin	harcadı
+Relation	T14	T4	NoRel	true	çatışmaların	kurtarmıştır
+Relation	T2	T11	NoRel	true	sağlamış	başlamıştı
+Relation	T3	T13	NoRel	true	başlamıştır	İkinci Dünya Harbi'nin
+Relation	T3	T9	NoRel	true	başlamıştır	engelleyerek
+Relation	T6	T10	NoRel	true	harcadı	rüşvet
+Relation	T7	T10	NoRel	true	etti	rüşvet
+Relation	T9	T10	NoRel	true	engelleyerek	rüşvet

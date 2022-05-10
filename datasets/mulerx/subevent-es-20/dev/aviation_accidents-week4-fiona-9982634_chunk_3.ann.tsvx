@@ -1,0 +1,26 @@
+Text	El avión fue identificado como Twin Turbo Jet Challenger 605 que se acercaba al aeropuerto de Truckee Tahoe cuando impactó en una zona de bosque .	No hubo daños estructurales ni a personas que estuvieran en tierra " .	Se dijo que fue una suerte que el avión no golpeara ninguna casa .	Un video de una cámara de vigilancia cercana capturó el momento en que el avión cayó .	También , según algunos testigos , se escuchó el sonido del avión segundos antes de desplomarse en el campo de golf , y otros dijeron haberlo visto descender con el ala izquierda hacia abajo y con un giro muy brusco antes del impacto .
+Event	T0	identificado	EVENT	13
+Event	T1	daños	EVENT	155
+Event	T2	dijo	EVENT	221
+Event	T3	suerte	EVENT	238
+Event	T4	golpeara	EVENT	261
+Event	T5	capturó	EVENT	330
+Event	T6	cayó	EVENT	365
+Event	T7	escuchó	EVENT	410
+Event	T8	sonido	EVENT	421
+Event	T9	desplomarse	EVENT	456
+Event	T10	dijeron	EVENT	498
+Event	T11	descender	EVENT	520
+Event	T12	giro	EVENT	572
+Event	T13	impacto	EVENT	598
+Event	T14	impactó	EVENT	115
+Relation	T1	T2	NoRel	true	daños	dijo
+Relation	T13	T10	NoRel	true	impacto	dijeron
+Relation	T13	T11	NoRel	true	impacto	descender
+Relation	T2	T4	NoRel	true	dijo	golpeara
+Relation	T4	T1	NoRel	true	golpeara	daños
+Relation	T5	T11	NoRel	true	capturó	descender
+Relation	T6	T11	NoRel	true	cayó	descender
+Relation	T6	T3	NoRel	true	cayó	suerte
+Relation	T6	T8	NoRel	true	cayó	sonido
+Relation	T9	T11	NoRel	true	desplomarse	descender

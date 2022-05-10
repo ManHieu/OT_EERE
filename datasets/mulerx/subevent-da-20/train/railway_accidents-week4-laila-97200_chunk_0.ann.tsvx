@@ -1,0 +1,29 @@
+Text	[ Oprydningsarbejdet efter ulykken ]	SOUTHALL -KOLLISIONEN skete den 19. september 1997 på Great Western Railways strækning ved Southall i det vestlige London .	Seks personer omkom og over 150 blev kvæstet .	Kollisionen skete , da Great Westerns intercitytog nr. 1032 fra Swansea til London Paddington med et defekt AWS-system passerede et stopvisende signal og kolliderede med at godstog .	Det vurderes , at såfremt AWS-systemet havde virket , ville risikoen for at ulykken opstod have været mindre , men ikke helt elimineret , idet AWS er er advarselssystem , der ikke griber ind i lokomotivførerens betjening .
+Event	T0	Oprydningsarbejdet	EVENT	2
+Event	T1	ulykken	EVENT	27
+Event	T2	skete	EVENT	59
+Event	T3	omkom	EVENT	175
+Event	T4	kvæstet	EVENT	198
+Event	T6	passerede	EVENT	327
+Event	T7	signal	EVENT	352
+Event	T8	kolliderede	EVENT	362
+Event	T9	virket	EVENT	436
+Event	T10	opstod	EVENT	475
+Event	T11	betjening	EVENT	602
+Event	T12	SOUTHALL -KOLLISIONEN	EVENT	37
+Event	T5	Kollisionen	EVENT	208
+Event	T13	griber ind	EVENT	571
+Relation	T1	T5	SuperSub	true	ulykken	Kollisionen
+Relation	T5	T1	SubSuper	true	Kollisionen	ulykken
+Relation	T1	T12	SuperSub	true	ulykken	SOUTHALL -KOLLISIONEN
+Relation	T12	T1	SubSuper	true	SOUTHALL -KOLLISIONEN	ulykken
+Relation	T0	T4	NoRel	true	Oprydningsarbejdet	kvæstet
+Relation	T11	T7	NoRel	true	betjening	signal
+Relation	T12	T7	NoRel	true	SOUTHALL -KOLLISIONEN	signal
+Relation	T13	T6	NoRel	true	griber ind	passerede
+Relation	T2	T10	NoRel	true	skete	opstod
+Relation	T5	T7	NoRel	true	Kollisionen	signal
+Relation	T5	T9	NoRel	true	Kollisionen	virket
+Relation	T6	T2	NoRel	true	passerede	skete
+Relation	T7	T1	NoRel	true	signal	ulykken
+Relation	T9	T11	NoRel	true	virket	betjening

@@ -1,0 +1,49 @@
+Text	Until his body was identified in a morgue , Ruggiero had been listed as a fugitive from justice , a member of the Gambino crime family , a large scale heroin trafficker and a key customer of Vito Rizzuto 's drug operation .	When the Learjet carrying Salvatore nose dived into the Atlantic Ocean , Salvatore had been on the run for six years .	Being a fugitive had not slowed his drug - dealing activities ; at the time of his death , he had yet another shipment of heroin , taken on credit from George Sciascia , stored in his house awaiting resale .	After Angelo was notified of his brother 's death , he , along with Gene Gotti and John Carneglia , went to Salvatore 's hideout in Franklin Lakes , New Jersey , searching for a yet - to - be - sold shipment of heroin and cash .	A few months earlier however , hoping to catch up with his elusive brother and to gain evidence to indict John Gotti , the FBI 's Gambino Squad had thoroughly wired Angelo 's home .
+Event	T0	identified	EVENT	19
+Event	T1	listed	EVENT	62
+Event	T2	operation	EVENT	212
+Event	T3	carrying	EVENT	241
+Event	T4	slowed	EVENT	368
+Event	T5	activities	EVENT	394
+Event	T6	death	EVENT	426
+Event	T7	stored	EVENT	513
+Event	T8	resale	EVENT	542
+Event	T9	notified	EVENT	568
+Event	T10	death	EVENT	595
+Event	T11	went	EVENT	651
+Event	T12	hideout	EVENT	672
+Event	T13	searching	EVENT	713
+Event	T14	hoping	EVENT	811
+Event	T15	gain	EVENT	862
+Event	T16	indict	EVENT	879
+Event	T17	wired	EVENT	939
+Event	T18	dived	EVENT	265
+Event	T19	shipment	EVENT	453
+Event	T20	taken	EVENT	474
+Relation	T19	T6	SuperSub	true	shipment	death
+Relation	T6	T19	SubSuper	true	death	shipment
+Relation	T19	T20	SuperSub	true	shipment	taken
+Relation	T20	T19	SubSuper	true	taken	shipment
+Relation	T20	T7	SuperSub	true	taken	stored
+Relation	T7	T20	SubSuper	true	stored	taken
+Relation	T1	T10	NoRel	true	listed	death
+Relation	T10	T1	NoRel	true	death	listed
+Relation	T11	T4	NoRel	true	went	slowed
+Relation	T13	T16	NoRel	true	searching	indict
+Relation	T15	T17	NoRel	true	gain	wired
+Relation	T17	T12	NoRel	true	wired	hideout
+Relation	T18	T14	NoRel	true	dived	hoping
+Relation	T2	T1	NoRel	true	operation	listed
+Relation	T2	T10	NoRel	true	operation	death
+Relation	T2	T5	NoRel	true	operation	activities
+Relation	T20	T1	NoRel	true	taken	listed
+Relation	T3	T9	NoRel	true	carrying	notified
+Relation	T4	T0	NoRel	true	slowed	identified
+Relation	T4	T15	NoRel	true	slowed	gain
+Relation	T4	T7	NoRel	true	slowed	stored
+Relation	T5	T14	NoRel	true	activities	hoping
+Relation	T5	T17	NoRel	true	activities	wired
+Relation	T8	T0	NoRel	true	resale	identified
+Relation	T9	T0	NoRel	true	notified	identified
+Relation	T9	T12	NoRel	true	notified	hideout
+Relation	T9	T3	NoRel	true	notified	carrying

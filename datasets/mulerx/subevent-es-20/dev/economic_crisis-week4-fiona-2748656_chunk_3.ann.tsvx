@@ -1,0 +1,26 @@
+Text	Al aumentar la demanda de la divisa estadounidense , el peso se devaluó .	En diciembre de 2008 la depreciación del peso mexicano alcanzó 26,70% , con una cotización de 14 pesos por dólar .	La situación llegó al extremo que el Congreso de la Unión solicitó a Guillermo Ortiz , gobernador del Banco de México ( Banxico ) , aclarar el modo en que se pretendía enfrentar la devaluación de la moneda nacional .	Como una medida precautoria , el Banco de México había venido " inyectando " fuertes cantidades de dólares al mercado cambiario con el propósito de contener la devaluación del peso .	Hacia febrero de 2009 , la reserva de dólares de Banxico había perdido 20 mil 62 millones de dólares , que fueron destinados a aminorar la presión sobre el peso .
+Event	T0	aumentar	EVENT	3
+Event	T1	demanda	EVENT	15
+Event	T2	devaluó	EVENT	64
+Event	T3	depreciación	EVENT	98
+Event	T4	alcanzó	EVENT	129
+Event	T5	cotización	EVENT	154
+Event	T6	llegó	EVENT	202
+Event	T7	enfrentar	EVENT	357
+Event	T8	devaluación	EVENT	370
+Event	T9	inyectando	EVENT	470
+Event	T10	contener	EVENT	554
+Event	T11	devaluación	EVENT	566
+Event	T12	perdido	EVENT	652
+Event	T13	destinados	EVENT	703
+Event	T14	aminorar	EVENT	716
+Event	T15	presión	EVENT	728
+Relation	T0	T4	NoRel	true	aumentar	alcanzó
+Relation	T10	T0	NoRel	true	contener	aumentar
+Relation	T12	T2	NoRel	true	perdido	devaluó
+Relation	T13	T0	NoRel	true	destinados	aumentar
+Relation	T14	T6	NoRel	true	aminorar	llegó
+Relation	T2	T5	NoRel	true	devaluó	cotización
+Relation	T3	T10	NoRel	true	depreciación	contener
+Relation	T4	T9	NoRel	true	alcanzó	inyectando
+Relation	T6	T8	NoRel	true	llegó	devaluación

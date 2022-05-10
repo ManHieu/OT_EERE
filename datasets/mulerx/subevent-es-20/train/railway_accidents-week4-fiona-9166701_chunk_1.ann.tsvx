@@ -1,0 +1,25 @@
+Text	El jeque Rasheed Ahmad , ministro federal de ferrocarriles de Pakistán , informó que dos estufas de gas explotaron y prendieron fuego al tren .	Sin embargo , otros informes , junto con los testimonios de los sobrevivientes , sugirieron que un problema eléctrico fue la causa del incendio .	El tren transportaba a 933 personas , 207 de las cuales estaban en los tres vagones que fueron destripados .	Se enviaron diez camiones de bomberos a la escena del incendio y las tropas del ejército paquistaní ayudaron en la operación de rescate .	Los heridos más graves fueron trasladados al Hospital Bahawal Victoria en Bahawalpur y al Hospital Nishtar en Multan .
+Event	T0	informó	EVENT	73
+Event	T1	explotaron	EVENT	104
+Event	T2	sugirieron	EVENT	225
+Event	T3	incendio	EVENT	279
+Event	T4	transportaba	EVENT	298
+Event	T5	destripados	EVENT	385
+Event	T6	enviaron	EVENT	402
+Event	T7	incendio	EVENT	453
+Event	T8	ayudaron	EVENT	499
+Event	T9	operación	EVENT	514
+Event	T10	rescate	EVENT	527
+Event	T11	heridos	EVENT	541
+Event	T12	trasladados	EVENT	567
+Event	T13	fuego	EVENT	128
+Relation	T11	T12	SuperSub	true	heridos	trasladados
+Relation	T12	T11	SubSuper	true	trasladados	heridos
+Relation	T0	T5	NoRel	true	informó	destripados
+Relation	T1	T3	NoRel	true	explotaron	incendio
+Relation	T12	T3	NoRel	true	trasladados	incendio
+Relation	T12	T5	NoRel	true	trasladados	destripados
+Relation	T13	T10	NoRel	true	fuego	rescate
+Relation	T4	T10	NoRel	true	transportaba	rescate
+Relation	T4	T2	NoRel	true	transportaba	sugirieron
+Relation	T5	T10	NoRel	true	destripados	rescate

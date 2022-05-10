@@ -1,0 +1,15 @@
+Text	Reichskolonialbund'un maksadı , Almanya'nın , I. Dünya Savaşı'nın sonunda Versailles Barış Antlaşması'nın sonucu olarak kaybetmiş olduğu denizaşırı sömürgelerini geri almaktı .	Almanya'da Alman sömürgeci imparatorluğun tekrar kuruluşu için destek toplanması yönünde ilk gayretler , 1923'te izlenebilir .	Sonuç olarak birkaç destekçi - sömürgeci organizasyon muhafazakâr Almanlar tarafından milliyetçilere ek olarak desteklendi ve Almanya'nın farklı bölgelerinde kuruldu .	En önde geleni , Koloniale Reichsarbeitsgemeinschaft'tı ( KORAG ) , 1925'te kuruldu .	Bu organizasyon , diğer gruplarla beraber 1933'te Reichskolonialbund'un kuruluşuna götürdü .
+Event	T0	kaybetmiş	EVENT	120
+Event	T1	almaktı	EVENT	167
+Event	T2	izlenebilir	EVENT	290
+Event	T3	desteklendi	EVENT	415
+Event	T4	kuruldu	EVENT	462
+Event	T5	kuruldu	EVENT	548
+Event	T6	götürdü	EVENT	641
+Event	T7	I. Dünya Savaşı	EVENT	46
+Event	T8	Versailles Barış Antlaşması	EVENT	74
+Event	T9	kuruluşu	EVENT	226
+Event	T10	toplanması	EVENT	247
+Event	T11	gayretler	EVENT	270
+Relation	T2	T5	NoRel	true	izlenebilir	kuruldu
+Relation	T2	T8	NoRel	true	izlenebilir	Versailles Barış Antlaşması

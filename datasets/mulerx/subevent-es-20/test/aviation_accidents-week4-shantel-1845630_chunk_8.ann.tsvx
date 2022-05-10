@@ -1,0 +1,35 @@
+Text	En la grabación de la caja negra se escucha al copiloto que pregunta : « ¿ Fallo de motor ? » y el comandante dice : « Vuela el avión . Me cagüen la mar . Vuélalo » .	El avión se desvió a la derecha , perdió altitud y se estrelló en las inmediaciones de la pista , partiéndose en varios pedazos que fueron destrozados por la posterior explosión .	De las 172 personas que viajaban a bordo , 154 murieron en el choque o inmediatamente después en el violento incendio , incluyendo los 6 tripulantes .	Entre los fallecidos , 135 eran españoles y 19 eran de otras doce nacionalidades , entre ellas : Alemania , Francia , Mauritania , Turquía , Bulgaria , Gambia , Italia , Indonesia y Brasil .	Sobrevivieron al accidente 18 personas aunque con lesiones graves , 16 de ellos de nacionalidad española .
+Event	T0	grabación	EVENT	6
+Event	T1	escucha	EVENT	36
+Event	T2	pregunta	EVENT	60
+Event	T3	desvió	EVENT	179
+Event	T4	estrelló	EVENT	221
+Event	T5	partiéndose	EVENT	265
+Event	T6	destrozados	EVENT	306
+Event	T7	explosión	EVENT	335
+Event	T8	murieron	EVENT	394
+Event	T9	choque	EVENT	409
+Event	T10	incendio	EVENT	456
+Event	T11	fallecidos	EVENT	508
+Event	T12	Sobrevivieron	EVENT	689
+Event	T13	accidente	EVENT	706
+Event	T14	perdió	EVENT	201
+Relation	T4	T7	SuperSub	true	estrelló	explosión
+Relation	T7	T4	SubSuper	true	explosión	estrelló
+Relation	T13	T12	SuperSub	true	accidente	Sobrevivieron
+Relation	T12	T13	SubSuper	true	Sobrevivieron	accidente
+Relation	T0	T3	NoRel	true	grabación	desvió
+Relation	T10	T13	NoRel	true	incendio	accidente
+Relation	T10	T5	NoRel	true	incendio	partiéndose
+Relation	T12	T4	NoRel	true	Sobrevivieron	estrelló
+Relation	T13	T1	NoRel	true	accidente	escucha
+Relation	T13	T14	NoRel	true	accidente	perdió
+Relation	T13	T7	NoRel	true	accidente	explosión
+Relation	T14	T1	NoRel	true	perdió	escucha
+Relation	T3	T2	NoRel	true	desvió	pregunta
+Relation	T3	T4	NoRel	true	desvió	estrelló
+Relation	T4	T2	NoRel	true	estrelló	pregunta
+Relation	T4	T3	NoRel	true	estrelló	desvió
+Relation	T6	T14	NoRel	true	destrozados	perdió
+Relation	T6	T4	NoRel	true	destrozados	estrelló
+Relation	T7	T5	NoRel	true	explosión	partiéndose

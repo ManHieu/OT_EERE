@@ -1,0 +1,47 @@
+Text	El gobierno federal creó una comisión para investigar el accidente .	Tanto la grabadora de voz como la de datos fueron recuperadas y entregadas a la Oficina de Investigación de Accidentes .	Dado que el avión había sido fabricado en Estados Unidos , la NTSB envió un observador a la investigación .	El daño tras el accidente era tan elevado que resultaba imposible obtener ninguna información del lugar , si bien si se pudieron rescatar las grabadoras .	El capitán informó del encendido de la luz de alerta de motor y posteriormente de un fallo de los dos motores durante la aproximación , con el tren desplegado y los flaps totalmente extendidos .
+Event	T0	creó	EVENT	20
+Event	T1	investigar	EVENT	43
+Event	T2	accidente	EVENT	57
+Event	T3	recuperadas	EVENT	119
+Event	T4	entregadas	EVENT	133
+Event	T5	fabricado	EVENT	219
+Event	T6	envió	EVENT	257
+Event	T7	investigación	EVENT	282
+Event	T8	daño	EVENT	301
+Event	T9	accidente	EVENT	314
+Event	T10	rescatar	EVENT	427
+Event	T11	informó	EVENT	464
+Event	T12	encendido	EVENT	476
+Event	T13	alerta	EVENT	499
+Event	T14	fallo	EVENT	538
+Event	T15	aproximación	EVENT	574
+Event	T16	desplegado	EVENT	601
+Event	T17	flaps	EVENT	618
+Event	T18	extendidos	EVENT	635
+Relation	T2	T0	SuperSub	true	accidente	creó
+Relation	T0	T2	SubSuper	true	creó	accidente
+Relation	T9	T10	SuperSub	true	accidente	rescatar
+Relation	T10	T9	SubSuper	true	rescatar	accidente
+Relation	T0	T12	NoRel	true	creó	encendido
+Relation	T0	T15	NoRel	true	creó	aproximación
+Relation	T0	T9	NoRel	true	creó	accidente
+Relation	T10	T0	NoRel	true	rescatar	creó
+Relation	T10	T11	NoRel	true	rescatar	informó
+Relation	T10	T2	NoRel	true	rescatar	accidente
+Relation	T11	T1	NoRel	true	informó	investigar
+Relation	T12	T0	NoRel	true	encendido	creó
+Relation	T12	T4	NoRel	true	encendido	entregadas
+Relation	T13	T3	NoRel	true	alerta	recuperadas
+Relation	T14	T11	NoRel	true	fallo	informó
+Relation	T14	T3	NoRel	true	fallo	recuperadas
+Relation	T14	T4	NoRel	true	fallo	entregadas
+Relation	T16	T4	NoRel	true	desplegado	entregadas
+Relation	T18	T1	NoRel	true	extendidos	investigar
+Relation	T18	T2	NoRel	true	extendidos	accidente
+Relation	T2	T8	NoRel	true	accidente	daño
+Relation	T3	T0	NoRel	true	recuperadas	creó
+Relation	T4	T7	NoRel	true	entregadas	investigación
+Relation	T5	T7	NoRel	true	fabricado	investigación
+Relation	T6	T14	NoRel	true	envió	fallo
+Relation	T6	T17	NoRel	true	envió	flaps
+Relation	T8	T17	NoRel	true	daño	flaps

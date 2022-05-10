@@ -1,0 +1,67 @@
+Text	La mayoría de los pacientes afectados forman parte de grupos en riesgo como personas extremadamente jóvenes o ancianas , enfermos y mujeres embarazadas , siendo un gran porcentaje de las muertes producto de complicaciones derivadas como neumonías .	Investigadores médicos de todo el planeta han admitido que los virus de gripe porcina podrían mutar en algo tan letal como la pandemia de gripe de 1918 y están vigilando cuidadosamente el último brote de gripe porcina de 2009 en aras de crear un plan de contingencia ante una posible e inminente pandemia global .	Muchos países han tomado medidas de precaución y educación para reducir las posibilidades de que esto ocurra .	Los animales pasan por un cuadro respiratorio caracterizado por tos , estornudos , temperatura basal elevada , descargas nasales , letargia , dificultades respiratorias ( frecuencia de respiración elevada además de respiración bucal ) y apetito reducido .	En algunos casos pueden producirse abortos en hembras grávidas .
+Event	T0	afectados	EVENT	28
+Event	T1	neumonías	EVENT	237
+Event	T2	admitido	EVENT	295
+Event	T3	gripe	EVENT	321
+Event	T4	mutar	EVENT	343
+Event	T5	pandemia	EVENT	375
+Event	T6	gripe	EVENT	387
+Event	T7	vigilando	EVENT	409
+Event	T8	brote	EVENT	444
+Event	T9	gripe	EVENT	453
+Event	T10	crear	EVENT	486
+Event	T11	contingencia	EVENT	503
+Event	T12	pandemia	EVENT	545
+Event	T13	educación	EVENT	612
+Event	T14	ocurra	EVENT	665
+Event	T15	pasan	EVENT	687
+Event	T16	caracterizado	EVENT	720
+Event	T17	tos	EVENT	738
+Event	T18	estornudos	EVENT	744
+Event	T19	descargas	EVENT	785
+Event	T20	letargia	EVENT	805
+Event	T21	respiración	EVENT	859
+Event	T22	respiración	EVENT	889
+Event	T23	reducido	EVENT	919
+Event	T24	abortos	EVENT	965
+Relation	T0	T1	SuperSub	true	afectados	neumonías
+Relation	T1	T0	SubSuper	true	neumonías	afectados
+Relation	T0	T21	NoRel	true	afectados	respiración
+Relation	T0	T8	NoRel	true	afectados	brote
+Relation	T1	T24	NoRel	true	neumonías	abortos
+Relation	T10	T14	NoRel	true	crear	ocurra
+Relation	T11	T16	NoRel	true	contingencia	caracterizado
+Relation	T11	T24	NoRel	true	contingencia	abortos
+Relation	T11	T7	NoRel	true	contingencia	vigilando
+Relation	T11	T9	NoRel	true	contingencia	gripe
+Relation	T12	T11	NoRel	true	pandemia	contingencia
+Relation	T12	T18	NoRel	true	pandemia	estornudos
+Relation	T13	T18	NoRel	true	educación	estornudos
+Relation	T13	T20	NoRel	true	educación	letargia
+Relation	T15	T10	NoRel	true	pasan	crear
+Relation	T15	T14	NoRel	true	pasan	ocurra
+Relation	T15	T18	NoRel	true	pasan	estornudos
+Relation	T15	T7	NoRel	true	pasan	vigilando
+Relation	T16	T1	NoRel	true	caracterizado	neumonías
+Relation	T17	T0	NoRel	true	tos	afectados
+Relation	T17	T18	NoRel	true	tos	estornudos
+Relation	T17	T7	NoRel	true	tos	vigilando
+Relation	T18	T5	NoRel	true	estornudos	pandemia
+Relation	T2	T12	NoRel	true	admitido	pandemia
+Relation	T2	T15	NoRel	true	admitido	pasan
+Relation	T2	T8	NoRel	true	admitido	brote
+Relation	T20	T7	NoRel	true	letargia	vigilando
+Relation	T21	T1	NoRel	true	respiración	neumonías
+Relation	T21	T11	NoRel	true	respiración	contingencia
+Relation	T22	T6	NoRel	true	respiración	gripe
+Relation	T23	T1	NoRel	true	reducido	neumonías
+Relation	T23	T6	NoRel	true	reducido	gripe
+Relation	T3	T11	NoRel	true	gripe	contingencia
+Relation	T5	T2	NoRel	true	pandemia	admitido
+Relation	T5	T20	NoRel	true	pandemia	letargia
+Relation	T6	T2	NoRel	true	gripe	admitido
+Relation	T6	T24	NoRel	true	gripe	abortos
+Relation	T7	T14	NoRel	true	vigilando	ocurra
+Relation	T7	T9	NoRel	true	vigilando	gripe
+Relation	T9	T16	NoRel	true	gripe	caracterizado
+Relation	T9	T3	NoRel	true	gripe	gripe

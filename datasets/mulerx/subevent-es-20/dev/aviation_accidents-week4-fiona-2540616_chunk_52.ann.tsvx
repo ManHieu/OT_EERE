@@ -1,0 +1,32 @@
+Text	] En total se encontraron 50 cadáveres de entre los 228 ocupantes .	Las autoridades de Brasil informaron que la búsqueda continuaría hasta el 19 de junio , con la posibilidad de extenderse , pero sería muy poco probable encontrar a todos los ocupantes del Airbus A330 .	La búsqueda continuó hasta el día 26 , finalizada ante la imposibilidad de encontrar los demás cuerpos .	Los exámenes de los primeros cuerpos rescatados indican que el Airbus A330 pudo haberse partido en el aire , ya que los cuerpos no presentan quemaduras , pero sí muestran fracturas en todo su cuerpo .	Además , los cuerpos recuperados del Atlántico en su mayoría estaban sin sus ropas ( por la acción del viento ) y no presentan signos de ahogamiento .
+Event	T0	encontraron	EVENT	14
+Event	T1	informaron	EVENT	94
+Event	T2	continuaría	EVENT	121
+Event	T3	extenderse	EVENT	178
+Event	T4	continuó	EVENT	282
+Event	T5	finalizada	EVENT	309
+Event	T6	encontrar	EVENT	345
+Event	T7	exámenes	EVENT	379
+Event	T8	indican	EVENT	423
+Event	T9	partido	EVENT	463
+Event	T10	quemaduras	EVENT	516
+Event	T11	fracturas	EVENT	546
+Event	T12	recuperados	EVENT	597
+Event	T13	acción	EVENT	668
+Event	T14	ahogamiento	EVENT	713
+Event	T15	cadáveres	EVENT	29
+Relation	T0	T14	NoRel	true	encontraron	ahogamiento
+Relation	T0	T3	NoRel	true	encontraron	extenderse
+Relation	T1	T14	NoRel	true	informaron	ahogamiento
+Relation	T1	T15	NoRel	true	informaron	cadáveres
+Relation	T1	T6	NoRel	true	informaron	encontrar
+Relation	T10	T0	NoRel	true	quemaduras	encontraron
+Relation	T10	T8	NoRel	true	quemaduras	indican
+Relation	T13	T14	NoRel	true	acción	ahogamiento
+Relation	T3	T1	NoRel	true	extenderse	informaron
+Relation	T5	T6	NoRel	true	finalizada	encontrar
+Relation	T5	T7	NoRel	true	finalizada	exámenes
+Relation	T6	T13	NoRel	true	encontrar	acción
+Relation	T7	T9	NoRel	true	exámenes	partido
+Relation	T8	T7	NoRel	true	indican	exámenes
+Relation	T9	T7	NoRel	true	partido	exámenes

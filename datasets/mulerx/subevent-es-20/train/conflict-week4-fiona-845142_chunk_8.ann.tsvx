@@ -1,0 +1,22 @@
+Text	- Sujeción a la vigilancia y orientación permanente de un delegado por el tiempo fijada para la medida , debiendo cumplir las normas de conducta e instrucciones que este le imparta .	- Ejercer una profesión , oficio o empleo .	- Satisfacer indemnización civil , costas y multas impuestas por la sentencia ( el tribunal puede obviar esta obligación en caso de impedimento justificado ) .	- Reparar , en proporción racional , los daños causados por el delito ( el tribunal puede establer una regulación prudencial de pago ) .	- Por orden del tribunal ante quebrantamiento de alguna de las condiciones impuestas por el tribunal o desobediencia grave o reiterada de las normas de conducta e instrucciones impartidas por el delegado .
+Event	T0	Sujeción	EVENT	2
+Event	T1	vigilancia	EVENT	16
+Event	T2	imparta	EVENT	173
+Event	T3	indemnización	EVENT	240
+Event	T4	impuestas	EVENT	278
+Event	T5	sentencia	EVENT	295
+Event	T6	Reparar	EVENT	389
+Event	T7	causados	EVENT	434
+Event	T8	delito	EVENT	450
+Event	T9	establer	EVENT	477
+Event	T10	regulación	EVENT	490
+Event	T11	pago	EVENT	515
+Event	T12	quebrantamiento	EVENT	554
+Event	T13	impuestas	EVENT	599
+Event	T14	impartidas	EVENT	701
+Relation	T13	T5	NoRel	true	impuestas	sentencia
+Relation	T2	T11	NoRel	true	imparta	pago
+Relation	T4	T14	NoRel	true	impuestas	impartidas
+Relation	T5	T2	NoRel	true	sentencia	imparta
+Relation	T7	T10	NoRel	true	causados	regulación
+Relation	T7	T6	NoRel	true	causados	Reparar

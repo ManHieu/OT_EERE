@@ -1,0 +1,21 @@
+Text	Hayatta kalanların 17'si yaralandı .	1. hava koşullarının iniş için gereken minimum güvenlik koşulların altına inmesi rağmen mürettebatı bu durumdan haberdar etmeyen hava trafik kontrolörü ; 2. yaklaşımı uygularken ve güvensiz havalarda uçarken mürettebat hatası .	Kazanın ikincil bir nedeni , METAR'ın kötü hava yoğunlaştığında 20.00 , 20.15 ve 20.30'da hava durumu raporları sağlamamasıydı ve bu da yaklaşımla devam etmesi gerekip gerekmediğini belirlemek için mürettebata yardımcı olacaktı .	Kazakistan Sivil Havacılık Müdürlüğü başkanının , o gün on beş saat çalıştığı ve uçuş için sağlık sertifikası olmadığı için mürettebata uçuşta yardımcı olmaması gerektiği de belirtildi .	Kategori : 1965'te Sovyetler Birliği Kategori : Aeroflot kazaları ve olayları Kategori : Kazakistan SSC'deki havacılık kazaları ve olayları Kategori : İncelenmemiş çeviri içeren sayfalar Kategori : 1965'te havacılık kazaları ve olayları Kategori : İlyuşin İl - 18 içeren kazalar ve olaylar
+Event	T0	yaralandı	EVENT	25
+Event	T1	iniş	EVENT	58
+Event	T2	inmesi	EVENT	111
+Event	T3	uygularken	EVENT	204
+Event	T4	hatası	EVENT	256
+Event	T5	etmesi	EVENT	418
+Event	T6	çalıştığı	EVENT	563
+Event	T7	uçuş	EVENT	576
+Event	T8	belirtildi	EVENT	669
+Event	T9	kazalar	EVENT	953
+Event	T10	olaylar	EVENT	964
+Event	T11	Kazanın	EVENT	265
+Event	T12	yardımcı	EVENT	475
+Relation	T10	T12	NoRel	true	olaylar	yardımcı
+Relation	T10	T8	NoRel	true	olaylar	belirtildi
+Relation	T12	T3	NoRel	true	yardımcı	uygularken
+Relation	T4	T10	NoRel	true	hatası	olaylar
+Relation	T6	T1	NoRel	true	çalıştığı	iniş
+Relation	T6	T10	NoRel	true	çalıştığı	olaylar
+Relation	T7	T3	NoRel	true	uçuş	uygularken

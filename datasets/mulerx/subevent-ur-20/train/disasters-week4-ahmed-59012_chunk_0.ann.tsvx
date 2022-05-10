@@ -1,0 +1,22 @@
+Text	تصغیر| 400px| پاکستان کے زلزلہ والے علاقے صوبہ پنجاب ، آزاد کشمیر اور خیبر پختونخوا میں 7.6 ریکٹر اسکیل کی شدت سے آنے والا زلزلہ پاکستان کی تاریخ کا بدترین اور 2005ء میں دنیا کا چوتھا بڑا زلزلہ تھا ۔	جب کہ اس سے قبل دسمبر 2004ء میں 9.0 ریکٹر اسکیل کی شدت سے انڈونیشیا کے زیر سمندر زلزلے کے باعث اٹھنے والی سونامی کی لہر کے نتیجے میں لاکھوں ہلاکتیں ہوئی تھیں ۔	جب کہ ایران کے شہر بام میں 2003ء میں زلزلے سے 30ہزار سے زائد افراد ہلاک ہو گئے تھے ۔	اس کی شدت 6.7 تھی ۔	جنوری 2001میں بھارتی صوبے گجرات میں 20ہزار افراد ہلاک ہو گئے تھے ۔
+Event	T0	زلزلہ	EVENT	25
+Event	T1	آنے	EVENT	114
+Event	T2	زلزلہ	EVENT	123
+Event	T3	زلزلہ	EVENT	188
+Event	T4	زلزلے	EVENT	281
+Event	T5	اٹھنے	EVENT	295
+Event	T6	سونامی	EVENT	306
+Event	T7	لہر	EVENT	316
+Event	T8	ہوئی	EVENT	348
+Event	T9	زلزلے	EVENT	397
+Event	T10	ہلاک	EVENT	427
+Event	T11	گئے	EVENT	435
+Event	T12	ہلاک	EVENT	514
+Event	T13	گئے	EVENT	522
+Relation	T0	T5	NoRel	true	زلزلہ	اٹھنے
+Relation	T1	T6	NoRel	true	آنے	سونامی
+Relation	T2	T4	NoRel	true	زلزلہ	زلزلے
+Relation	T3	T8	NoRel	true	زلزلہ	ہوئی
+Relation	T7	T1	NoRel	true	لہر	آنے
+Relation	T8	T12	NoRel	true	ہوئی	ہلاک
+Relation	T8	T4	NoRel	true	ہوئی	زلزلے

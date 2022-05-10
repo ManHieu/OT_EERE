@@ -1,0 +1,17 @@
+Text	Den 9. juni gik marinesoldater i land på øen Agunijima .	I fortsættelse af Operation Oboe gik næsten 30.000 australske soldater den 10. juni i land i Brunei-bugten efter forudgående artilleribeskydning .	Den 14. juni gennemførte briterne et angreb med 48 Seafires , 21 Avengers og 11 Fireflies fra hangarskibe til neutralisering af de japanske enheder på Truk ( Operation Inmate ) , som blev gentaget den følgende dag .	Desuden beskød de atollen med skibsartilleri .	thumb | left | upright | B-29 bombefly kaster bomber over Japan
+Event	T0	gik	EVENT	12
+Event	T1	fortsættelse	EVENT	59
+Event	T10	beskød	EVENT	428
+Event	T2	Operation	EVENT	75
+Event	T3	gik	EVENT	90
+Event	T4	artilleribeskydning	EVENT	182
+Event	T5	gennemførte	EVENT	217
+Event	T6	angreb	EVENT	241
+Event	T7	neutralisering	EVENT	314
+Event	T9	gentaget	EVENT	392
+Relation	T6	T10	SuperSub	true	angreb	beskød
+Relation	T10	T6	SubSuper	true	beskød	angreb
+Relation	T0	T1	NoRel	true	gik	fortsættelse
+Relation	T2	T0	NoRel	true	Operation	gik
+Relation	T3	T0	NoRel	true	gik	gik
+Relation	T3	T9	NoRel	true	gik	gentaget

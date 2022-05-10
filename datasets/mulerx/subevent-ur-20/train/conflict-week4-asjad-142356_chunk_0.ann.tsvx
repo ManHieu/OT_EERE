@@ -1,0 +1,36 @@
+Text	جنگ_ِ بدر کے بعد مکہ کے ہر گھر میں سرداران قریش کے قتل ہو جانے کا ماتم برپا تھا اور اپنے مقتولوں کا بدلہ لینے کے لیے مکہ کا بچہ بچہ مضطرب اور بے قرار تھا ۔	چنانچہ غزوه ٔ سویق اور جنگ_ِاُحد وغیرہ کی لڑائیاں مکہ والوں کے اسی جوشِ انتقام کا نتیجہ ہیں ۔	عتبہ اور ابو_جہل کے قتل ہو جانے کے بعد اب قریش کا سردارِ اعظم ابوسفیان تھا اور اس منصب کا سب سے بڑا کام غزوه ٔ بدر کا انتقام تھا ۔	ابوسفیان نے نذر مانی تھی کہ جب تک محمد ﷺ سے غزوہ بدر کے مقتولوں کا بدلہ نہ لوں گا نہ غسل جنابت کروں گانہ سر میں تیل ڈالوں گا ۔	جنگ_ِ بدر کے دو ماہ بعد ذوالحجہ 2ھ میں ابو سفیان دو سو_شترسواروں کا لشکر لے کر مدینہ کی طرف بڑھا ۔
+Event	T0	قتل	EVENT	51
+Event	T1	جانے	EVENT	58
+Event	T2	غزوه	EVENT	163
+Event	T3	لڑائیاں	EVENT	198
+Event	T4	انتقام	EVENT	228
+Event	T5	قتل	EVENT	270
+Event	T6	جانے	EVENT	277
+Event	T7	غزوه	EVENT	354
+Event	T8	انتقام	EVENT	368
+Event	T9	مانی	EVENT	397
+Event	T10	غزوہ	EVENT	425
+Event	T11	لے	EVENT	581
+Event	T12	بڑھا	EVENT	600
+Relation	T3	T2	SuperSub	true	لڑائیاں	غزوه
+Relation	T2	T3	SubSuper	true	غزوه	لڑائیاں
+Relation	T3	T0	SuperSub	true	لڑائیاں	قتل
+Relation	T0	T3	SubSuper	true	قتل	لڑائیاں
+Relation	T3	T5	SuperSub	true	لڑائیاں	قتل
+Relation	T5	T3	SubSuper	true	قتل	لڑائیاں
+Relation	T3	T7	SuperSub	true	لڑائیاں	غزوه
+Relation	T7	T3	SubSuper	true	غزوه	لڑائیاں
+Relation	T3	T8	SuperSub	true	لڑائیاں	انتقام
+Relation	T8	T3	SubSuper	true	انتقام	لڑائیاں
+Relation	T3	T10	SuperSub	true	لڑائیاں	غزوہ
+Relation	T10	T3	SubSuper	true	غزوہ	لڑائیاں
+Relation	T3	T11	SuperSub	true	لڑائیاں	لے
+Relation	T11	T3	SubSuper	true	لے	لڑائیاں
+Relation	T3	T12	SuperSub	true	لڑائیاں	بڑھا
+Relation	T12	T3	SubSuper	true	بڑھا	لڑائیاں
+Relation	T11	T8	NoRel	true	لے	انتقام
+Relation	T12	T11	NoRel	true	بڑھا	لے
+Relation	T4	T2	NoRel	true	انتقام	غزوه
+Relation	T4	T5	NoRel	true	انتقام	قتل
+Relation	T4	T9	NoRel	true	انتقام	مانی
+Relation	T7	T10	NoRel	true	غزوه	غزوہ

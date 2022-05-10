@@ -1,0 +1,13 @@
+Text	Çatışmanın kökeni , 20. yüzyılın başlarında ortaya çıktı .	Sovyetler Birliği döneminde , Josef Stalin Dağlık Karabağ bölgesini , tarihsel olarak Ermeni ve çoğunluğu Ermeni nüfusu olan Sovyet Azerbaycan'da bir özerk oblast haline getirmeye karar verdi .	Mevcut çatışma , 1988'de Karabağ Ermenilerinin , Karabağ'ın Sovyet Azerbaycan'dan Sovyet Ermenistan'a devredilmesini talep ettiği zaman başladı .	Çatışma , 1990'lı yılların başlarında , geniş çaplı bir savaşa dönüştü .	1994 yılında imzalanan bir ateşkes , Bakü'nün statüko ile olan sıkıntılarını artırmasının yanı sıra , Erivan'ın sağlamlaştırma çabalarıyla çelişen yirmi yıllık göreceli istikrar sağladı .
+Event	T0	Çatışmanın	EVENT	0
+Event	T1	çıktı	EVENT	51
+Event	T3	çatışma	EVENT	260
+Event	T5	başladı	EVENT	389
+Event	T6	Çatışma	EVENT	399
+Event	T7	dönüştü	EVENT	462
+Event	T8	ateşkes	EVENT	499
+Event	T9	sağladı	EVENT	650
+Event	T2	karar verdi	EVENT	239
+Event	T4	talep ettiği	EVENT	370
+Relation	T0	T4	NoRel	true	Çatışmanın	talep ettiği
+Relation	T2	T0	NoRel	true	karar verdi	Çatışmanın

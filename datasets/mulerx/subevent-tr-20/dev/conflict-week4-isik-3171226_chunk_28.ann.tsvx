@@ -1,0 +1,18 @@
+Text	Bu , Irak'taki siyasi çoğulculuğun bir parçası olmayabilir .	"	Irak Baas Partisi'ndeki tasfiye edilen ve görevden alınan üyelerinin bir kısmı veya çoğu , daha sonraları İslam Devleti'ne dönüşen Irak el - Kaidesi'ne katıldı .	31 Aralık 2006'da , Saddam Hüseyin'in asılarak infazından bir gün sonra , daha önce bilinmeyen Bağdat Vatandaşları Buluşması adlı bir grup tarafından , Ürdün'ün Amman şehrinde Baas Partisi'nin Ürdün Bölge Şubesinde , İzzet İbrahim ed - Duri , Saddam'ın ölümünün ardından Irak'ın yeni cumhurbaşkanı ve partinin genel sekreteri ilan edildi .	İran'la 1980 - 88 savaşında , 1991'de Kuveyt'e karşı yapılan Körfez Savaşı'nda ve sonrasındaki 13 yıllık yaptırımlarda öldürülen Iraklılara atıfta bulunulan açıklamada , " Ülkemizi hain suçlulardan , neo - Siyonistlerden ve Persler'den , Irak'ın birliğini yeniden sağlamak için kurtarmaya yemin ediyoruz " denildi .
+Event	T1	katıldı	EVENT	215
+Event	T2	infazından	EVENT	272
+Event	T3	ölümünün	EVENT	478
+Event	T4	edildi	EVENT	556
+Event	T5	öldürülen	EVENT	684
+Event	T6	alınan	EVENT	114
+Event	T7	edilen	EVENT	95
+Event	T8	savaşında	EVENT	583
+Event	T9	Körfez Savaşı'nda	EVENT	626
+Event	T10	yaptırımlarda	EVENT	670
+Event	T11	açıklamada	EVENT	722
+Relation	T10	T2	NoRel	true	yaptırımlarda	infazından
+Relation	T10	T8	NoRel	true	yaptırımlarda	savaşında
+Relation	T3	T6	NoRel	true	ölümünün	alınan
+Relation	T5	T3	NoRel	true	öldürülen	ölümünün
+Relation	T6	T2	NoRel	true	alınan	infazından
+Relation	T8	T2	NoRel	true	savaşında	infazından

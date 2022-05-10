@@ -1,0 +1,25 @@
+Text	Thermopylæ havde vist , at et frontalangreb mod en velbefæstet græsk stilling var omsonst .	Med grækerne forskanset på Korinthtangen var der ikke store chancer for at erobre resten af Grækenland ad landvejen .	Men , som det også var vist ved Thermopylæ , hvis grækerne kunne omgås , kunne deres mindre styrker besejres .	En sådan omgåelse af tangen involverede brug af den persiske flåde .	Kort sagt , hvis Xerxes kunne ødelægge den allierede flåde , ville han være i en stærk position til at gennemtvinge en græsk overgivelse .
+Event	T0	vist	EVENT	17
+Event	T1	frontalangreb	EVENT	30
+Event	T10	gennemtvinge	EVENT	493
+Event	T11	overgivelse	EVENT	515
+Event	T3	forskanset	EVENT	105
+Event	T4	erobre	EVENT	167
+Event	T5	vist	EVENT	233
+Event	T6	besejres	EVENT	310
+Event	T7	omgåelse	EVENT	330
+Event	T8	brug	EVENT	361
+Event	T9	ødelægge	EVENT	420
+Relation	T8	T7	SuperSub	true	brug	omgåelse
+Relation	T7	T8	SubSuper	true	omgåelse	brug
+Relation	T0	T10	NoRel	true	vist	gennemtvinge
+Relation	T0	T8	NoRel	true	vist	brug
+Relation	T11	T3	NoRel	true	overgivelse	forskanset
+Relation	T3	T0	NoRel	true	forskanset	vist
+Relation	T5	T4	NoRel	true	vist	erobre
+Relation	T5	T7	NoRel	true	vist	omgåelse
+Relation	T6	T10	NoRel	true	besejres	gennemtvinge
+Relation	T7	T3	NoRel	true	omgåelse	forskanset
+Relation	T8	T0	NoRel	true	brug	vist
+Relation	T8	T4	NoRel	true	brug	erobre
+Relation	T9	T0	NoRel	true	ødelægge	vist

@@ -1,0 +1,25 @@
+Text	Deprem sonrası Kos Adası'nda iki kişi öldü , 300'den fazla kişi yaralandı .	Bodrum'da deprem sırasında elektrikler kesildi , eski binalarda ufak çatlaklar oluştu , Devlet Hastanesi hasar gördü ve hastane boşaltıldı .	Bir caminin minaresi zarara uğradı , yollarda çökmeler ve toprak kaymaları oldu .	Burada can kaybı olmazken , onlarca kişi deprem sırasında balkonlardan veya pencerelerden atlayıp hafif bir şekilde yaralandı .	Datça ve köylerinde ise 15 ev hasar gördü .
+Event	T0	öldü	EVENT	38
+Event	T1	yaralandı	EVENT	64
+Event	T2	deprem	EVENT	86
+Event	T3	kesildi	EVENT	115
+Event	T4	oluştu	EVENT	155
+Event	T5	gördü	EVENT	187
+Event	T6	boşaltıldı	EVENT	204
+Event	T7	uğradı	EVENT	245
+Event	T9	oldu	EVENT	292
+Event	T10	kaybı	EVENT	310
+Event	T11	deprem	EVENT	340
+Event	T12	yaralandı	EVENT	415
+Event	T13	gördü	EVENT	463
+Event	T14	Deprem	EVENT	0
+Relation	T10	T11	NoRel	true	kaybı	deprem
+Relation	T10	T2	NoRel	true	kaybı	deprem
+Relation	T10	T7	NoRel	true	kaybı	uğradı
+Relation	T12	T1	NoRel	true	yaralandı	yaralandı
+Relation	T12	T6	NoRel	true	yaralandı	boşaltıldı
+Relation	T3	T14	NoRel	true	kesildi	Deprem
+Relation	T4	T12	NoRel	true	oluştu	yaralandı
+Relation	T4	T3	NoRel	true	oluştu	kesildi
+Relation	T6	T4	NoRel	true	boşaltıldı	oluştu
+Relation	T9	T12	NoRel	true	oldu	yaralandı

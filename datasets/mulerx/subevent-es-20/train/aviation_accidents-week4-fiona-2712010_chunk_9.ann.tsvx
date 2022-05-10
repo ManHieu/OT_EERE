@@ -1,0 +1,38 @@
+Text	El informe encontró que el accidente había sido causado por fallas por fatiga . del rotor de la primera etapa del compresor de baja presión en el motor No. 1 , que resultó en la desintegración del disco del rotor .	Los fragmentos del disco del rotor destruyeron el motor No. 1 , cortaron los sistemas hidráulicos No. 1 y No. 3 , y cortaron parcialmente las líneas de combustible al motor No. 2 .	Los componentes calientes y el fluido hidráulico encendieron el combustible que se derramaba de las líneas de combustible dañadas , y provocó rápidamente un gran incendio en la sección de cola del avión .	Este incendio , a su vez , destruyó las varillas que accionaban las superficies de control traseras ( elevadores y timón ) resultando en que los pilotos perdieran el control de la aeronave .	Antes del accidente , el fabricante de la aeronave , Tupolev , había publicado un boletín de servicio que requería pruebas más estrictas de los componentes del compresor de baja presión .
+Event	T0	encontró	EVENT	11
+Event	T1	accidente	EVENT	27
+Event	T2	causado	EVENT	48
+Event	T3	fallas	EVENT	60
+Event	T4	fatiga	EVENT	71
+Event	T5	desintegración	EVENT	178
+Event	T6	destruyeron	EVENT	250
+Event	T7	cortaron	EVENT	279
+Event	T8	cortaron	EVENT	331
+Event	T9	encendieron	EVENT	445
+Event	T10	derramaba	EVENT	479
+Event	T11	dañadas	EVENT	518
+Event	T12	provocó	EVENT	530
+Event	T13	incendio	EVENT	558
+Event	T14	incendio	EVENT	606
+Event	T15	destruyó	EVENT	628
+Event	T16	accionaban	EVENT	654
+Event	T17	resultando	EVENT	724
+Event	T18	perdieran	EVENT	754
+Event	T19	control	EVENT	767
+Event	T20	accidente	EVENT	802
+Event	T21	publicado	EVENT	861
+Event	T22	pruebas	EVENT	907
+Relation	T10	T0	NoRel	true	derramaba	encontró
+Relation	T10	T17	NoRel	true	derramaba	resultando
+Relation	T13	T7	NoRel	true	incendio	cortaron
+Relation	T13	T9	NoRel	true	incendio	encendieron
+Relation	T15	T3	NoRel	true	destruyó	fallas
+Relation	T16	T17	NoRel	true	accionaban	resultando
+Relation	T16	T20	NoRel	true	accionaban	accidente
+Relation	T3	T2	NoRel	true	fallas	causado
+Relation	T3	T6	NoRel	true	fallas	destruyeron
+Relation	T3	T9	NoRel	true	fallas	encendieron
+Relation	T4	T17	NoRel	true	fatiga	resultando
+Relation	T4	T3	NoRel	true	fatiga	fallas
+Relation	T5	T13	NoRel	true	desintegración	incendio
+Relation	T8	T3	NoRel	true	cortaron	fallas

@@ -1,0 +1,39 @@
+Text	Those tests established that the damage to the wing 's leading edge and retraction of the slats increased the stall speed of the left wing from to .	The DC - 10 incorporates two warning devices that might have alerted the pilots to the impending stall : the slat disagreement warning light , which should have illuminated after the uncommanded retraction of the slats , and the stick shaker on the captain 's control column , which activates close to the stall speed .	Both of these warning devices were powered by an electric generator driven by the number - one engine .	Both systems became inoperative after the loss of that engine .	The first officer 's control column was not equipped with a stick shaker ; the device was offered by McDonnell Douglas as an option for the first officer , but American Airlines chose not to have it installed on its DC - 10 fleet .
+Event	T0	established	EVENT	12
+Event	T1	damage	EVENT	33
+Event	T2	retraction	EVENT	72
+Event	T3	increased	EVENT	96
+Event	T4	incorporates	EVENT	161
+Event	T5	warning	EVENT	178
+Event	T6	alerted	EVENT	210
+Event	T7	stall	EVENT	246
+Event	T8	illuminated	EVENT	310
+Event	T9	retraction	EVENT	344
+Event	T10	powered	EVENT	504
+Event	T11	driven	EVENT	537
+Event	T12	loss	EVENT	615
+Event	T13	equipped	EVENT	681
+Event	T14	offered	EVENT	727
+Event	T15	chose	EVENT	815
+Event	T16	installed	EVENT	836
+Event	T17	activates	EVENT	432
+Event	T18	inoperative	EVENT	593
+Relation	T14	T15	SuperSub	true	offered	chose
+Relation	T15	T14	SubSuper	true	chose	offered
+Relation	T0	T8	NoRel	true	established	illuminated
+Relation	T1	T17	NoRel	true	damage	activates
+Relation	T10	T12	NoRel	true	powered	loss
+Relation	T10	T18	NoRel	true	powered	inoperative
+Relation	T10	T2	NoRel	true	powered	retraction
+Relation	T11	T10	NoRel	true	driven	powered
+Relation	T11	T13	NoRel	true	driven	equipped
+Relation	T12	T1	NoRel	true	loss	damage
+Relation	T13	T16	NoRel	true	equipped	installed
+Relation	T15	T12	NoRel	true	chose	loss
+Relation	T15	T17	NoRel	true	chose	activates
+Relation	T15	T2	NoRel	true	chose	retraction
+Relation	T18	T11	NoRel	true	inoperative	driven
+Relation	T3	T13	NoRel	true	increased	equipped
+Relation	T4	T0	NoRel	true	incorporates	established
+Relation	T8	T3	NoRel	true	illuminated	increased
+Relation	T9	T6	NoRel	true	retraction	alerted

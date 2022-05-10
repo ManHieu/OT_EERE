@@ -1,0 +1,18 @@
+Text	جسے جذبہ خیر سگالی کے تحت 8 اگست کو بھارتی عہدیدی داران کے حوالے کر دیا گیا ۔	-___- اگست 23 ، سیالکوٹ کے چارواہ سیکٹر میں بھارتی گولہ باری سے تین پاکستانی شہری ہلاک اور 9 شہری زخمی ہوئے ۔	-___- اکتوبر 2 ، سرحدی فائر بندی کی خلاف ورزی کے واقع میں بھارتی مقبوضہ کشمیر میں پاکستانی گولہ باری سے دو خواتین سمیت چھ شہری زخمی ہوئے ۔	-___-	عید الالضحیٰ کے موقع پر بھارتی بلا_اشتعال گولہ باری سے سیالکوٹ سیکٹرز میں دس سے زائد شہری ہلاک جبکہ بیالیس شہری زخمی ہوئے ۔
+Event	T0	حوالے	EVENT	59
+Event	T1	ہلاک	EVENT	160
+Event	T2	ہوئے	EVENT	181
+Event	T3	واقع	EVENT	237
+Event	T4	باری	EVENT	284
+Event	T5	ہوئے	EVENT	320
+Event	T6	عید	EVENT	333
+Event	T7	ہلاک	EVENT	423
+Event	T8	ہوئے	EVENT	450
+Relation	T3	T4	SuperSub	true	واقع	باری
+Relation	T4	T3	SubSuper	true	باری	واقع
+Relation	T3	T5	SuperSub	true	واقع	ہوئے
+Relation	T5	T3	SubSuper	true	ہوئے	واقع
+Relation	T2	T7	NoRel	true	ہوئے	ہلاک
+Relation	T6	T1	NoRel	true	عید	ہلاک
+Relation	T6	T7	NoRel	true	عید	ہلاک
+Relation	T8	T7	NoRel	true	ہوئے	ہلاک

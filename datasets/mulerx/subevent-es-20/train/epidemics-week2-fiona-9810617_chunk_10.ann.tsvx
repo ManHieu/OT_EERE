@@ -1,0 +1,43 @@
+Text	La Hudson Bay Company tuvo la mejor respuesta .	Los rumores sobre la propagación de la enfermedad llevaron a los comerciantes a actuar rápidamente , ya que una reducción de la población indígena significó una reducción en las ganancias de las pieles que trajeron .	Una buena red de información , un suministro de vacunas en los puestos y una disposición entre todos a la vacunación significaron que sus esfuerzos fueron mucho más exitosos que las respuestas estadounidenses .	La vacunación realizada por los trabajadores de Hudson Bay Company y los indígenas capacitados fueron fundamentales para limitar la propagación de la viruela en Canadá .	Después de la epidemia , la compañía implementó un programa de vacunación en todo el territorio que redujo aún más las muertes por viruela .
+Event	T0	tuvo	EVENT	22
+Event	T1	respuesta	EVENT	36
+Event	T10	trajeron	EVENT	254
+Event	T11	significaron	EVENT	382
+Event	T12	esfuerzos	EVENT	403
+Event	T13	respuestas	EVENT	447
+Event	T14	realizada	EVENT	490
+Event	T15	propagación	EVENT	608
+Event	T16	epidemia	EVENT	660
+Event	T17	implementó	EVENT	683
+Event	T18	vacunación	EVENT	709
+Event	T19	redujo	EVENT	746
+Event	T2	rumores	EVENT	52
+Event	T20	muertes	EVENT	765
+Event	T4	llevaron	EVENT	98
+Event	T5	actuar	EVENT	128
+Event	T6	reducción	EVENT	160
+Event	T7	significó	EVENT	195
+Event	T8	reducción	EVENT	209
+Event	T9	ganancias	EVENT	226
+Event	T3	vacunación	EVENT	479
+Event	T21	limitar	EVENT	597
+Relation	T12	T13	SuperSub	true	esfuerzos	respuestas
+Relation	T13	T12	SubSuper	true	respuestas	esfuerzos
+Relation	T1	T2	NoRel	true	respuesta	rumores
+Relation	T10	T19	NoRel	true	trajeron	redujo
+Relation	T10	T7	NoRel	true	trajeron	significó
+Relation	T11	T2	NoRel	true	significaron	rumores
+Relation	T11	T4	NoRel	true	significaron	llevaron
+Relation	T12	T10	NoRel	true	esfuerzos	trajeron
+Relation	T15	T5	NoRel	true	propagación	actuar
+Relation	T18	T13	NoRel	true	vacunación	respuestas
+Relation	T18	T14	NoRel	true	vacunación	realizada
+Relation	T19	T1	NoRel	true	redujo	respuesta
+Relation	T20	T18	NoRel	true	muertes	vacunación
+Relation	T21	T11	NoRel	true	limitar	significaron
+Relation	T21	T20	NoRel	true	limitar	muertes
+Relation	T3	T0	NoRel	true	vacunación	tuvo
+Relation	T4	T17	NoRel	true	llevaron	implementó
+Relation	T5	T0	NoRel	true	actuar	tuvo
+Relation	T5	T6	NoRel	true	actuar	reducción
+Relation	T6	T18	NoRel	true	reducción	vacunación

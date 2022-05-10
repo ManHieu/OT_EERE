@@ -1,0 +1,27 @@
+Text	اِنمارسَیٹ نامی سیٹلائٹ کمپنی نے بھی تصدیق کیا کہ ان کے نیٹورک پر جہاز کا سگنل وصول کیا گیا ۔	11 مارچ پر فوجی ریڈار کے سابق ڈاٹا کے تجزیے سے معلوم ہوا کہ شہری ریڈار سے رابطہ منقطع کرنے کے بعد ، جہاز نے مغرب کو نازک موڑ لی اور آبنائے ملاکا کی طرف سفر کرنے لگا اور مزید ستر_منٹ کے لیے جہاز ملیشیائی فوجی ریڈار پر نمودار رہا ۔	جہاز نے ملیشیا کی خشکی پار کی اور پُولاؤُ پیراک کے نزدیک فوجی ریڈار سے غائب ہو گیا ۔	یہ مقام شہری ریڈار سے غائب ہونے کے مقام سے 500 کلومیٹر دور تھا ۔	نیو یارک ٹائمز اور روٹرز نے بیان کیا کہ راستے میں تبدیلی دلالت کرتی ہے کہ جہاز اس وقت پائلٹ کے قابو میں تھا ۔
+Event	T0	وصول	EVENT	79
+Event	T1	تجزیے	EVENT	132
+Event	T7	غائب	EVENT	395
+Event	T9	غائب	EVENT	431
+Event	T10	تصدیق	EVENT	37
+Event	T11	معلوم	EVENT	141
+Event	T2	منقطع	EVENT	174
+Event	T3	موڑ	EVENT	215
+Event	T4	سفر	EVENT	246
+Event	T5	نمودار	EVENT	311
+Event	T6	بیان	EVENT	502
+Event	T8	قابو	EVENT	569
+Event	T12	تبدیلی	EVENT	524
+Relation	T0	T12	NoRel	true	وصول	تبدیلی
+Relation	T0	T8	NoRel	true	وصول	قابو
+Relation	T11	T5	NoRel	true	معلوم	نمودار
+Relation	T12	T0	NoRel	true	تبدیلی	وصول
+Relation	T12	T11	NoRel	true	تبدیلی	معلوم
+Relation	T2	T7	NoRel	true	منقطع	غائب
+Relation	T3	T2	NoRel	true	موڑ	منقطع
+Relation	T4	T3	NoRel	true	سفر	موڑ
+Relation	T4	T9	NoRel	true	سفر	غائب
+Relation	T7	T11	NoRel	true	غائب	معلوم
+Relation	T7	T9	NoRel	true	غائب	غائب
+Relation	T8	T11	NoRel	true	قابو	معلوم
+Relation	T8	T3	NoRel	true	قابو	موڑ

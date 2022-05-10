@@ -1,0 +1,19 @@
+Text	The winds were calm .	The Coast Guard and other searchers sighted the wreckage around dawn in Lake Pontchartrain , about northeast of New Orleans .	The subsequent investigation concluded that the jet crashed into Lake Pontchartrain en route due to " degradation of aircraft stability characteristics in turbulence , because of abnormal longitudinal trim component positions . "	The water was only deep , yet only 60 percent of the wreckage was recovered because the breakup was so extensive .	The flight data recorder tape was too damaged to help the investigation .
+Event	T0	winds	EVENT	4
+Event	T1	calm	EVENT	15
+Event	T2	sighted	EVENT	58
+Event	T3	wreckage	EVENT	70
+Event	T4	concluded	EVENT	177
+Event	T5	degradation	EVENT	250
+Event	T6	turbulence	EVENT	303
+Event	T7	wreckage	EVENT	431
+Event	T8	recovered	EVENT	444
+Event	T9	breakup	EVENT	466
+Event	T10	damaged	EVENT	531
+Event	T11	investigation	EVENT	551
+Event	T12	crashed	EVENT	200
+Relation	T11	T2	NoRel	true	investigation	sighted
+Relation	T2	T11	NoRel	true	sighted	investigation
+Relation	T3	T10	NoRel	true	wreckage	damaged
+Relation	T5	T6	NoRel	true	degradation	turbulence
+Relation	T7	T1	NoRel	true	wreckage	calm

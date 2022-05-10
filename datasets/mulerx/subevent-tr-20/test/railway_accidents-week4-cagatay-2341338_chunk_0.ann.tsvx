@@ -1,0 +1,36 @@
+Text	ÇORLU TREN_KAZASI , 8 Temmuz 2018 tarihinde meydana gelmiş olan tren kazasıdır .	Kaza esnasında Uzunköprü'den İstanbul'a doğru hareket eden yolcu treni Çorlu yakınlarından geçerken yağış nedeniyle rayların altındaki toprak menfezin kayması sonucu 5 vagon devrilmiştir .	Kazada 25 kişi ölmüş 317 kişi de yaralanmıştır .	8 Temmuz 2018'de İstanbul - Halkalı seferini yapan yolcu treninin 5 vagonu , saat 17:00 civarında Tekirdağ'ın Muratlı ile Çorlu ilçeleri arasındaki Sarılar Mahallesi'nde raydan çıkarak devrildi .	Kaza aşırı yağışa bağlı rayların üzerinden geçtiği ve denetiminin yapılmadığı menfezin kayması sonucu gerçekleşmiştir .
+Event	T0	kazasıdır	EVENT	69
+Event	T1	hareket	EVENT	127
+Event	T2	yağış	EVENT	181
+Event	T3	devrilmiştir	EVENT	255
+Event	T4	Kazada	EVENT	270
+Event	T5	ölmüş	EVENT	285
+Event	T6	yaralanmıştır	EVENT	303
+Event	T7	devrildi	EVENT	504
+Event	T8	geçtiği	EVENT	558
+Event	T10	ÇORLU TREN_KAZASI	EVENT	0
+Event	T11	kayması	EVENT	232
+Event	T12	çıkarak	EVENT	496
+Event	T13	yağışa	EVENT	526
+Event	T14	Kaza	EVENT	515
+Event	T15	kayması	EVENT	602
+Relation	T10	T11	SuperSub	true	ÇORLU TREN_KAZASI	kayması
+Relation	T11	T10	SubSuper	true	kayması	ÇORLU TREN_KAZASI
+Relation	T10	T3	SuperSub	true	ÇORLU TREN_KAZASI	devrilmiştir
+Relation	T3	T10	SubSuper	true	devrilmiştir	ÇORLU TREN_KAZASI
+Relation	T14	T7	SuperSub	true	Kaza	devrildi
+Relation	T7	T14	SubSuper	true	devrildi	Kaza
+Relation	T14	T12	SuperSub	true	Kaza	çıkarak
+Relation	T12	T14	SubSuper	true	çıkarak	Kaza
+Relation	T1	T14	NoRel	true	hareket	Kaza
+Relation	T1	T7	NoRel	true	hareket	devrildi
+Relation	T10	T15	NoRel	true	ÇORLU TREN_KAZASI	kayması
+Relation	T12	T10	NoRel	true	çıkarak	ÇORLU TREN_KAZASI
+Relation	T12	T3	NoRel	true	çıkarak	devrilmiştir
+Relation	T14	T2	NoRel	true	Kaza	yağış
+Relation	T2	T14	NoRel	true	yağış	Kaza
+Relation	T2	T15	NoRel	true	yağış	kayması
+Relation	T2	T7	NoRel	true	yağış	devrildi
+Relation	T3	T12	NoRel	true	devrilmiştir	çıkarak
+Relation	T4	T6	NoRel	true	Kazada	yaralanmıştır
+Relation	T7	T13	NoRel	true	devrildi	yağışa

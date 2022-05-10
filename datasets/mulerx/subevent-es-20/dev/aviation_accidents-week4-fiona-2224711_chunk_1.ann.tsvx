@@ -1,0 +1,40 @@
+Text	La justificación de la entrega del premio rezaba " Este amerizaje y evacuación forzosos , sin pérdidas de vidas , fue un logro heroico y único en la historia de la aviación " .	El incidente fue calificado por la NTSB como " el amerizaje más exitoso de la historia de la aeronáutica " .	El avión había despegado del Aeropuerto LaGuardia a las 3:24 p.m. hora local con 150 pasajeros y cinco tripulantes .	A menos de dos minutos de vuelo y en plena maniobra de ascenso , a una altura de 850m , el Airbus A320 fue impactado de frente por una densa bandada de gansos canadienses dañando ambos motores y dejándolo sin propulsión .	El comandante Chesley Sullenberger y su copiloto Jeffrey Skiles mantuvieron la calma profesional y empezaron a analizar rápidamente la situación consultando los protocolos de emergencia .
+Event	T0	justificación	EVENT	3
+Event	T1	entrega	EVENT	23
+Event	T2	rezaba	EVENT	42
+Event	T3	amerizaje	EVENT	56
+Event	T4	evacuación	EVENT	68
+Event	T5	pérdidas	EVENT	94
+Event	T6	calificado	EVENT	194
+Event	T7	amerizaje	EVENT	227
+Event	T8	despegado	EVENT	301
+Event	T9	vuelo	EVENT	429
+Event	T10	maniobra	EVENT	446
+Event	T11	ascenso	EVENT	458
+Event	T12	impactado	EVENT	510
+Event	T13	bandada	EVENT	544
+Event	T14	dañando	EVENT	574
+Event	T15	calma	EVENT	704
+Event	T16	empezaron	EVENT	724
+Event	T17	analizar	EVENT	736
+Event	T18	consultando	EVENT	770
+Event	T19	emergencia	EVENT	800
+Event	T20	incidente	EVENT	180
+Relation	T8	T11	SuperSub	true	despegado	ascenso
+Relation	T11	T8	SubSuper	true	ascenso	despegado
+Relation	T0	T10	NoRel	true	justificación	maniobra
+Relation	T10	T13	NoRel	true	maniobra	bandada
+Relation	T10	T3	NoRel	true	maniobra	amerizaje
+Relation	T11	T6	NoRel	true	ascenso	calificado
+Relation	T18	T19	NoRel	true	consultando	emergencia
+Relation	T19	T5	NoRel	true	emergencia	pérdidas
+Relation	T20	T1	NoRel	true	incidente	entrega
+Relation	T20	T4	NoRel	true	incidente	evacuación
+Relation	T4	T6	NoRel	true	evacuación	calificado
+Relation	T5	T1	NoRel	true	pérdidas	entrega
+Relation	T5	T7	NoRel	true	pérdidas	amerizaje
+Relation	T6	T5	NoRel	true	calificado	pérdidas
+Relation	T6	T9	NoRel	true	calificado	vuelo
+Relation	T7	T0	NoRel	true	amerizaje	justificación
+Relation	T7	T12	NoRel	true	amerizaje	impactado
+Relation	T9	T18	NoRel	true	vuelo	consultando

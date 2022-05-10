@@ -1,0 +1,52 @@
+Text	Bryant'ın Gianna'nın takımına koçluk yapması planlanan Newbury Park'taki Bryant Mamba Spor Akademisi'nde bir basketbol maçına gidiyorlardı .	Uçuş kayıtları , helikopterin Mamba Spor Akademisi'ne arabayla yaklaşık 20 dakika uzaklıktaki küçük bir havaalanı olan Camarillo Havalimanı'na ( CMA ) olaysız bir gün önce aynı yolculuğa çıktığını gösterdi .	Önceki günün uçuşu sadece 30 dakika sürmüştü ; fakat araba ile Bryant'ın Newport Beach'teki evinden akademiye gitmek en az 30 dakika sürecekti .	Helikopter ağır sis ve aşırı kar altında havalandı , havalandıktan yaklaşık 20 dakika sonra da Calabasas civarında görüş azlığı nedeni ile bir tepeye çarptı .	Kategori : Los Angeles Lakers Kategori : Kobe Bryant Kategori : Kontrollü uçuşta yere çarpma Kategori : 2020'de basketbol Kategori : Sikorsky S - 76 içeren kazalar ve olaylar Kategori : 2020'de havacılık kazaları ve olayları Kategori : Amerika Birleşik Devletleri'ndeki havacılık kazaları ve olayları Kategori : Pilotaj hatası nedeniyle gerçekleşen havacılık kazaları ve olayları
+Event	T1	gidiyorlardı	EVENT	126
+Event	T3	gösterdi	EVENT	338
+Event	T4	uçuşu	EVENT	362
+Event	T5	sürmüştü	EVENT	385
+Event	T6	gitmek	EVENT	459
+Event	T7	havalandı	EVENT	535
+Event	T8	çarptı	EVENT	644
+Event	T9	çarpma	EVENT	739
+Event	T10	kazalar	EVENT	809
+Event	T11	olaylar	EVENT	820
+Event	T12	kazaları	EVENT	857
+Event	T13	olayları	EVENT	869
+Event	T14	kazaları	EVENT	933
+Event	T15	olayları	EVENT	945
+Event	T16	hatası	EVENT	973
+Event	T18	kazaları	EVENT	1012
+Event	T19	olayları	EVENT	1024
+Event	T17	koçluk	EVENT	30
+Event	T21	sis	EVENT	510
+Event	T22	kar	EVENT	523
+Event	T23	azlığı	EVENT	615
+Event	T2	Uçuş	EVENT	141
+Event	T20	uçuşta	EVENT	727
+Relation	T22	T23	SuperSub	true	kar	azlığı
+Relation	T23	T22	SubSuper	true	azlığı	kar
+Relation	T1	T9	NoRel	true	gidiyorlardı	çarpma
+Relation	T10	T17	NoRel	true	kazalar	koçluk
+Relation	T10	T2	NoRel	true	kazalar	Uçuş
+Relation	T10	T23	NoRel	true	kazalar	azlığı
+Relation	T12	T13	NoRel	true	kazaları	olayları
+Relation	T13	T3	NoRel	true	olayları	gösterdi
+Relation	T13	T7	NoRel	true	olayları	havalandı
+Relation	T14	T16	NoRel	true	kazaları	hatası
+Relation	T15	T10	NoRel	true	olayları	kazalar
+Relation	T15	T21	NoRel	true	olayları	sis
+Relation	T16	T14	NoRel	true	hatası	kazaları
+Relation	T2	T18	NoRel	true	Uçuş	kazaları
+Relation	T2	T20	NoRel	true	Uçuş	uçuşta
+Relation	T2	T7	NoRel	true	Uçuş	havalandı
+Relation	T20	T5	NoRel	true	uçuşta	sürmüştü
+Relation	T21	T9	NoRel	true	sis	çarpma
+Relation	T22	T13	NoRel	true	kar	olayları
+Relation	T3	T15	NoRel	true	gösterdi	olayları
+Relation	T3	T19	NoRel	true	gösterdi	olayları
+Relation	T6	T21	NoRel	true	gitmek	sis
+Relation	T6	T4	NoRel	true	gitmek	uçuşu
+Relation	T6	T5	NoRel	true	gitmek	sürmüştü
+Relation	T7	T17	NoRel	true	havalandı	koçluk
+Relation	T8	T15	NoRel	true	çarptı	olayları
+Relation	T8	T3	NoRel	true	çarptı	gösterdi
+Relation	T9	T8	NoRel	true	çarpma	çarptı

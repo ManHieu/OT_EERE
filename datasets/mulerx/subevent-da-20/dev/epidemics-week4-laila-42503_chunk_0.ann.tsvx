@@ -1,0 +1,29 @@
+Text	thumb| Udbredelsen af Den sorte død i Europa ( 1346–53 ) En PANDEMI ( fra græsk _ pan__–_alle ,__demos__–_folk ) eller GLOBAL EPIDEMI er en infektionssygdom , der påvirker mennesker og dyr i et stort geografisk område ; en hel eller flere verdensdele .	Udrykket " global pandemi " bruges fejlagtigt i medierne .	Ifølge Verdenssundhedsorganisationen WHO skal tre betingelser være opfyldt , før man kan tale om en pandemi :	- Introduktion af en for populationen hidtil ukendt sygdom .	- Smitten spredes til mennesker .
+Event	T0	Udbredelsen	EVENT	7
+Event	T2	infektionssygdom	EVENT	140
+Event	T3	påvirker	EVENT	163
+Event	T4	Udrykket	EVENT	253
+Event	T5	pandemi	EVENT	271
+Event	T6	tale	EVENT	401
+Event	T7	pandemi	EVENT	412
+Event	T8	Introduktion	EVENT	424
+Event	T9	spredes	EVENT	493
+Event	T1	Den sorte død	EVENT	22
+Event	T10	PANDEMI	EVENT	60
+Event	T11	GLOBAL EPIDEMI	EVENT	119
+Event	T12	fejlagtigt	EVENT	288
+Event	T13	betingelser	EVENT	362
+Event	T14	ukendt sygdom	EVENT	467
+Relation	T13	T14	SuperSub	true	betingelser	ukendt sygdom
+Relation	T14	T13	SubSuper	true	ukendt sygdom	betingelser
+Relation	T13	T9	SuperSub	true	betingelser	spredes
+Relation	T9	T13	SubSuper	true	spredes	betingelser
+Relation	T0	T5	NoRel	true	Udbredelsen	pandemi
+Relation	T1	T0	NoRel	true	Den sorte død	Udbredelsen
+Relation	T11	T0	NoRel	true	GLOBAL EPIDEMI	Udbredelsen
+Relation	T12	T7	NoRel	true	fejlagtigt	pandemi
+Relation	T13	T10	NoRel	true	betingelser	PANDEMI
+Relation	T14	T12	NoRel	true	ukendt sygdom	fejlagtigt
+Relation	T3	T4	NoRel	true	påvirker	Udrykket
+Relation	T3	T8	NoRel	true	påvirker	Introduktion
+Relation	T8	T1	NoRel	true	Introduktion	Den sorte død

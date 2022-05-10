@@ -1,0 +1,30 @@
+Text	پائلٹ نے لینڈنگ کا سگنل بھی دے دیا تھا ۔	لیکن طیارے کا لینڈنگ سے ایک منٹ قبل کنٹرول روم سے رابطہ منقطع ہو گیا اور ماڈل کالونی کی آبادی میں گر کر تباہ ہو گیا ۔	ماڈل کالونی کے رہائشی بھی حادثے کا شکار ہوئے ۔	حادثے کے بعد موقع پر پہنچ کر میڈیا سے بات کرتے ہوئے وزیر صحت سندھ عذرا پیچوہو کا کہنا تھا کہ گھروں پر طیارہ گرنے سے زخمیوں کی تعداد زیادہ ہے ۔	کراچی کے مئیر وسیم اختر کا کہنا تھا کہ اس سانحہ میں کوئی بھی افراد نہیں بچا ۔
+Event	T0	لینڈنگ	EVENT	9
+Event	T1	لینڈنگ	EVENT	55
+Event	T2	منقطع	EVENT	97
+Event	T3	گیا	EVENT	106
+Event	T4	گر	EVENT	139
+Event	T5	گیا	EVENT	153
+Event	T6	حادثے	EVENT	185
+Event	T7	ہوئے	EVENT	199
+Event	T8	حادثے	EVENT	206
+Event	T9	بات	EVENT	244
+Event	T10	کہنا	EVENT	287
+Event	T11	گرنے	EVENT	314
+Event	T12	کہنا	EVENT	376
+Event	T13	سانحہ	EVENT	391
+Event	T14	بچا	EVENT	421
+Relation	T6	T4	SuperSub	true	حادثے	گر
+Relation	T4	T6	SubSuper	true	گر	حادثے
+Relation	T6	T5	SuperSub	true	حادثے	گیا
+Relation	T5	T6	SubSuper	true	گیا	حادثے
+Relation	T8	T4	SuperSub	true	حادثے	گر
+Relation	T4	T8	SubSuper	true	گر	حادثے
+Relation	T8	T5	SuperSub	true	حادثے	گیا
+Relation	T5	T8	SubSuper	true	گیا	حادثے
+Relation	T0	T6	NoRel	true	لینڈنگ	حادثے
+Relation	T12	T2	NoRel	true	کہنا	منقطع
+Relation	T14	T6	NoRel	true	بچا	حادثے
+Relation	T5	T14	NoRel	true	گیا	بچا
+Relation	T5	T4	NoRel	true	گیا	گر
+Relation	T5	T9	NoRel	true	گیا	بات

@@ -1,0 +1,53 @@
+Text	No obstante , durante el viaje fue capturado por un navío de guerra inglés .	Hecho prisionero de guerra , no sería liberado hasta 1801 .	A su regreso Napoleón le asciende a comandante de París y contrae matrimonio con Laura Permon .	Sin embargo , sus desavenencias con el cónsul Bonaparte son cada vez más acuciantes y llegan a su clímax tras la proclamación del Imperio en 1804 , ya que Napoleón le niega el ascenso a mariscal que sí concede a otros militares , como Berthier y Murat .	Tras un enfrentamiento , Napoleón le destituye y le envía a Arras a reclutar e instruir un nuevo cuerpo de granaderos .
+Event	T0	capturado	EVENT	35
+Event	T2	liberado	EVENT	115
+Event	T3	regreso	EVENT	142
+Event	T4	asciende	EVENT	162
+Event	T5	desavenencias	EVENT	251
+Event	T6	llegan	EVENT	319
+Event	T7	clímax	EVENT	331
+Event	T8	proclamación	EVENT	346
+Event	T9	niega	EVENT	400
+Event	T10	ascenso	EVENT	409
+Event	T11	concede	EVENT	435
+Event	T12	enfrentamiento	EVENT	495
+Event	T13	destituye	EVENT	524
+Event	T14	envía	EVENT	539
+Event	T15	reclutar	EVENT	555
+Event	T16	instruir	EVENT	566
+Event	T1	Hecho	EVENT	77
+Event	T17	matrimonio	EVENT	203
+Relation	T1	T2	SuperSub	true	Hecho	liberado
+Relation	T2	T1	SubSuper	true	liberado	Hecho
+Relation	T3	T4	SuperSub	true	regreso	asciende
+Relation	T4	T3	SubSuper	true	asciende	regreso
+Relation	T3	T17	SuperSub	true	regreso	matrimonio
+Relation	T17	T3	SubSuper	true	matrimonio	regreso
+Relation	T13	T14	SuperSub	true	destituye	envía
+Relation	T14	T13	SubSuper	true	envía	destituye
+Relation	T14	T15	SuperSub	true	envía	reclutar
+Relation	T15	T14	SubSuper	true	reclutar	envía
+Relation	T14	T16	SuperSub	true	envía	instruir
+Relation	T16	T14	SubSuper	true	instruir	envía
+Relation	T0	T9	NoRel	true	capturado	niega
+Relation	T1	T12	NoRel	true	Hecho	enfrentamiento
+Relation	T12	T0	NoRel	true	enfrentamiento	capturado
+Relation	T14	T4	NoRel	true	envía	asciende
+Relation	T14	T9	NoRel	true	envía	niega
+Relation	T15	T5	NoRel	true	reclutar	desavenencias
+Relation	T3	T14	NoRel	true	regreso	envía
+Relation	T5	T11	NoRel	true	desavenencias	concede
+Relation	T5	T2	NoRel	true	desavenencias	liberado
+Relation	T5	T3	NoRel	true	desavenencias	regreso
+Relation	T5	T9	NoRel	true	desavenencias	niega
+Relation	T6	T0	NoRel	true	llegan	capturado
+Relation	T6	T13	NoRel	true	llegan	destituye
+Relation	T6	T15	NoRel	true	llegan	reclutar
+Relation	T6	T3	NoRel	true	llegan	regreso
+Relation	T6	T4	NoRel	true	llegan	asciende
+Relation	T6	T9	NoRel	true	llegan	niega
+Relation	T7	T17	NoRel	true	clímax	matrimonio
+Relation	T7	T5	NoRel	true	clímax	desavenencias
+Relation	T8	T17	NoRel	true	proclamación	matrimonio
+Relation	T9	T11	NoRel	true	niega	concede
+Relation	T9	T16	NoRel	true	niega	instruir

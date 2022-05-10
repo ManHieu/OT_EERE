@@ -1,0 +1,22 @@
+Text	TAM TRANSPORTES AÉREOS REGIONAIS FLIGHT 402 var en planlagt indenrigsflyvning fra Congonhas-São Paulo International Lufthavn i São Paulo , Brasilien til Recife International Airport i Recife via Santos Dumont Lufthavn i Rio de Janeiro .	Den 31. oktober 1996 kl. 08:27 ændrede flyets styrbordsmotor udstødningsretning , mens flyet var ved at lette fra startbanen .	Flyet svingede og rullede ud af kontrol til højre og ramte derefter to bygninger og styrtede ned i flere huse i et tætbefolket område kun 25 sekunder efter start .	Alle 95 personer ombord samt de to piloter og 4 andre personer på jorden blev dræbt .	Dette er den fjerdemest dødbringende ulykke i den brasilianske luftfartshistorie .
+Event	T0	ændrede	EVENT	268
+Event	T1	lette	EVENT	341
+Event	T2	svingede	EVENT	370
+Event	T3	ramte	EVENT	417
+Event	T4	start	EVENT	520
+Event	T5	dræbt	EVENT	606
+Event	T6	ulykke	EVENT	651
+Event	T7	indenrigsflyvning	EVENT	60
+Event	T8	rullede	EVENT	382
+Event	T9	styrtede ned	EVENT	448
+Relation	T1	T0	SuperSub	true	lette	ændrede
+Relation	T0	T1	SubSuper	true	ændrede	lette
+Relation	T3	T9	SuperSub	true	ramte	styrtede ned
+Relation	T9	T3	SubSuper	true	styrtede ned	ramte
+Relation	T4	T1	SuperSub	true	start	lette
+Relation	T1	T4	SubSuper	true	lette	start
+Relation	T0	T7	NoRel	true	ændrede	indenrigsflyvning
+Relation	T3	T7	NoRel	true	ramte	indenrigsflyvning
+Relation	T4	T3	NoRel	true	start	ramte
+Relation	T6	T2	NoRel	true	ulykke	svingede
+Relation	T7	T1	NoRel	true	indenrigsflyvning	lette

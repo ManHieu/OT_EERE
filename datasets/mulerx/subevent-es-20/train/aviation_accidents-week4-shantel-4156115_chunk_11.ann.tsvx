@@ -1,0 +1,36 @@
+Text	Tanto la Administración de Aviación Civil de China ( CAAC ) como el fabricante de la aeronave , Embraer , enviaron equipos de investigadores al lugar del accidente .	La Junta Nacional de Seguridad en el Transporte de EE.UU. Designó un representante acreditado , ya que los motores General Electric CF34 de la aeronave se fabricaron en EE.UU .	Los registradores de vuelo se recuperaron en el lugar y se enviaron a Beijing para su análisis .	Al principio de la investigación , el foco de la investigación fueron las calificaciones del piloto , ya que se supo que más de un centenar de pilotos que volaban para Shenzhen Airlines , la empresa matriz de Henan Airlines , habían falsificado sus afirmaciones de experiencia de vuelo .	Los investigadores de la Administración Estatal de Seguridad Laboral concluyeron que el capitán , en su primer vuelo a Yichun , apagó el piloto automático y se acercó a la pista cubierta por niebla de radiación a pesar de que una visibilidad de 2.800 m ( 9.200 pies ) estaba por debajo del mínimo de 3.600 m ( 11.800 pies ) .
+Event	T0	enviaron	EVENT	106
+Event	T1	accidente	EVENT	154
+Event	T2	Designó	EVENT	224
+Event	T3	fabricaron	EVENT	321
+Event	T4	vuelo	EVENT	364
+Event	T5	recuperaron	EVENT	373
+Event	T6	enviaron	EVENT	402
+Event	T7	análisis	EVENT	429
+Event	T8	investigación	EVENT	459
+Event	T9	investigación	EVENT	489
+Event	T10	calificaciones	EVENT	514
+Event	T11	supo	EVENT	552
+Event	T12	volaban	EVENT	595
+Event	T13	falsificado	EVENT	673
+Event	T14	afirmaciones	EVENT	689
+Event	T15	concluyeron	EVENT	797
+Event	T16	vuelo	EVENT	839
+Event	T17	apagó	EVENT	856
+Event	T18	acercó	EVENT	888
+Relation	T5	T6	SuperSub	true	recuperaron	enviaron
+Relation	T6	T5	SubSuper	true	enviaron	recuperaron
+Relation	T17	T18	SuperSub	true	apagó	acercó
+Relation	T18	T17	SubSuper	true	acercó	apagó
+Relation	T0	T12	NoRel	true	enviaron	volaban
+Relation	T1	T7	NoRel	true	accidente	análisis
+Relation	T10	T16	NoRel	true	calificaciones	vuelo
+Relation	T13	T4	NoRel	true	falsificado	vuelo
+Relation	T17	T15	NoRel	true	apagó	concluyeron
+Relation	T18	T5	NoRel	true	acercó	recuperaron
+Relation	T2	T6	NoRel	true	Designó	enviaron
+Relation	T2	T7	NoRel	true	Designó	análisis
+Relation	T4	T15	NoRel	true	vuelo	concluyeron
+Relation	T5	T18	NoRel	true	recuperaron	acercó
+Relation	T6	T18	NoRel	true	enviaron	acercó
+Relation	T7	T17	NoRel	true	análisis	apagó

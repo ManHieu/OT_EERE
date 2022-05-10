@@ -1,0 +1,32 @@
+Text	LUFTHANSA'NIN 2904 SEFER SAYILI UÇUŞU , 14 Eylül 1993'te Okęcie Uluslararası Havaalanı'ndaki pistte zamanında duramayan Lufthansa havayollarına ait Airbus A320 - 200 uçağı kaza yaptı .	Frankfurt'tan Varşova'ya gerçekleştirilen bir uçuştu .	sağ | küçükresim | Kaza uçağına benzer bir Lufthansa Airbus A320 uçağı .	sol | küçükresim | İlk önce ana destek ve sonrasında ikinci desteğin yere konması ile frenlerin devreye girmesi arasında geçen sürenin ilüstrasyonu .	Lufthansa Uçuş 2904 , Okęcie Uluslararası Havaalanı Pist 11'e iniş izni verildi ve uçak piste yaklaşırken pilotlar rüzgar kesmesinin varlığından haberdar edildi .
+Event	T2	uçuştu	EVENT	231
+Event	T3	konması	EVENT	387
+Event	T4	girmesi	EVENT	417
+Event	T5	geçen	EVENT	434
+Event	T6	verildi	EVENT	535
+Event	T7	edildi	EVENT	617
+Event	T8	kaza	EVENT	172
+Event	T9	UÇUŞU	EVENT	32
+Event	T1	Kaza	EVENT	259
+Event	T10	destek	EVENT	345
+Event	T11	desteğin	EVENT	373
+Event	T12	iniş	EVENT	525
+Relation	T2	T12	SuperSub	true	uçuştu	iniş
+Relation	T12	T2	SubSuper	true	iniş	uçuştu
+Relation	T12	T10	SuperSub	true	iniş	destek
+Relation	T10	T12	SubSuper	true	destek	iniş
+Relation	T12	T11	SuperSub	true	iniş	desteğin
+Relation	T11	T12	SubSuper	true	desteğin	iniş
+Relation	T12	T3	SuperSub	true	iniş	konması
+Relation	T3	T12	SubSuper	true	konması	iniş
+Relation	T12	T4	SuperSub	true	iniş	girmesi
+Relation	T4	T12	SubSuper	true	girmesi	iniş
+Relation	T12	T5	SuperSub	true	iniş	geçen
+Relation	T5	T12	SubSuper	true	geçen	iniş
+Relation	T6	T7	SuperSub	true	verildi	edildi
+Relation	T7	T6	SubSuper	true	edildi	verildi
+Relation	T12	T1	NoRel	true	iniş	Kaza
+Relation	T12	T7	NoRel	true	iniş	edildi
+Relation	T3	T11	NoRel	true	konması	desteğin
+Relation	T5	T1	NoRel	true	geçen	Kaza
+Relation	T9	T2	NoRel	true	UÇUŞU	uçuştu

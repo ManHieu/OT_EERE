@@ -1,0 +1,11 @@
+Text	küçükresim | 300px | 2005 Atlantik kasırga mevsimindeki hava hareketleri 2005 ATLANTIK KASIRGA MEVSIMI 8 Haziran 2005'te başlayıp 6 Ocak 2006'ya dek süren ve yazılı tarihin en etkin Atlantik kasırga mevsimi olarak bilinen döneme verilen addır .	3.913 kişinin ölümü ve 180 ,7 milyar dolarlık maddi hasarla sonuçlanan mevsimde Dennis , Emily , Katrina , Rita ve Wilma kasırgaları etkili olmuştur .	Amerika Birleşik Devletleri'nin Florida ve Louisiana ; Meksika'nın Quintana Roo ve Yucatán eyaletleri mevsimde etkinlik gösteren iki kasırgaya maruz kalmış ; Küba , Bahamalar , Haiti , Mississippi , Teksas , Alabama ve Tamaulipas ise mevsimdeki diğer hava hareketlerinden etkilenen bölgeler arasına girmiştir .		
+Event	T0	hareketleri	EVENT	61
+Event	T1	ölümü	EVENT	259
+Event	T2	olmuştur	EVENT	385
+Event	T3	kalmış	EVENT	545
+Event	T4	girmiştir	EVENT	695
+Event	T5	2005 ATLANTIK KASIRGA MEVSIMI	EVENT	73
+Event	T6	hasarla	EVENT	297
+Event	T7	etkilenen	EVENT	668
+Relation	T0	T6	NoRel	true	hareketleri	hasarla
+Relation	T7	T0	NoRel	true	etkilenen	hareketleri

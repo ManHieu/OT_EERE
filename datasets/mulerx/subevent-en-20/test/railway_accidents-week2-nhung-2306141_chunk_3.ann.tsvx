@@ -1,0 +1,31 @@
+Text	His fiancée , Fardosa Abdullah , was arrested on 4 October 2006 .	She was charged with assisting Omar in evading arrest and with failing to disclose information which could have led to Omar 's arrest or conviction " as soon as reasonably practicable " .	She was subsequently jailed for three years .	On 9 July 2007 , Yasin Hassan Omar was found guilty at Woolwich Crown Court of conspiracy to murder and sentenced to life imprisonment , with a minimum of 40 years before being considered for release .	In April 2008 , the court of appeal judges dismissed a challenge by Ibrahim , Omar , Mohammed and Osman to their convictions .
+Event	T0	arrested	EVENT	37
+Event	T1	charged	EVENT	74
+Event	T10	conspiracy	EVENT	379
+Event	T11	murder	EVENT	393
+Event	T12	imprisonment	EVENT	422
+Event	T14	release	EVENT	492
+Event	T15	dismissed	EVENT	545
+Event	T16	challenge	EVENT	557
+Event	T17	convictions	EVENT	615
+Event	T2	assisting	EVENT	87
+Event	T3	arrest	EVENT	113
+Event	T4	failing	EVENT	129
+Event	T5	disclose	EVENT	140
+Event	T6	arrest	EVENT	193
+Event	T7	conviction	EVENT	203
+Event	T8	jailed	EVENT	275
+Event	T9	guilty	EVENT	345
+Relation	T0	T2	NoRel	true	arrested	assisting
+Relation	T1	T15	NoRel	true	charged	dismissed
+Relation	T12	T0	NoRel	true	imprisonment	arrested
+Relation	T17	T8	NoRel	true	convictions	jailed
+Relation	T2	T11	NoRel	true	assisting	murder
+Relation	T2	T3	NoRel	true	assisting	arrest
+Relation	T4	T8	NoRel	true	failing	jailed
+Relation	T5	T14	NoRel	true	disclose	release
+Relation	T6	T5	NoRel	true	arrest	disclose
+Relation	T7	T3	NoRel	true	conviction	arrest
+Relation	T8	T7	NoRel	true	jailed	conviction
+Relation	T9	T12	NoRel	true	guilty	imprisonment
+Relation	T9	T16	NoRel	true	guilty	challenge

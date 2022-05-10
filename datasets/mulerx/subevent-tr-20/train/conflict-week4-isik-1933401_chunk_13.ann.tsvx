@@ -1,0 +1,32 @@
+Text	İlk beş madde ; Bulgaristan’ın savaş katılmasına izin verilmemesi ve ülkeye gelen işgalci kuvvetleri çıkarılması ; faşist devletlere yiyecek ve ham madde satışının durdurulması ve başta Sovyetler Birliği olmak üzere Balkan halkları ve barış yanlısı devletlerle dostluk ve dayanışma kurulmasına ilişkin konular yer alıyordu .	Son yedi maddede ise ; faşizme karşı savaşta esir alınanların serbest bırakılmaları , halkın siyasi hak ve özgürlüklerinin geri verilmesi , ordunun faşizmin bir askeri gücü olmaktan çıkarılması , bütün sivil - faşist örgütlerin kapatılması , Bulgaristan’ın ve Bulgar halkının özgürlük ve bağımsızlığının sağlanması gibi maddelere yer veriliyordu .	2 Eylül 1944 yılında Kızıl Ordu'nun ilerlemesi üzerine Alman yanlısı İvan Bagryanov istifa etti .	Bunun üzerine batı yanlısı bir iktidar kuruldu .	Hükûmet orduya Kızıl Ordu ile mücadele etmemesini emretti .
+Event	T0	çıkarılması	EVENT	101
+Event	T1	durdurulması	EVENT	164
+Event	T2	esir	EVENT	370
+Event	T3	ilerlemesi	EVENT	709
+Event	T4	etti	EVENT	764
+Event	T5	kuruldu	EVENT	810
+Event	T7	emretti	EVENT	870
+Event	T8	satışının	EVENT	154
+Event	T9	kurulmasına	EVENT	282
+Event	T10	alıyordu	EVENT	314
+Event	T11	bırakılmaları	EVENT	395
+Event	T12	verilmesi	EVENT	453
+Event	T13	çıkarılması	EVENT	507
+Event	T14	kapatılması	EVENT	553
+Event	T15	veriliyordu	EVENT	659
+Event	T16	sağlanması	EVENT	629
+Relation	T1	T15	NoRel	true	durdurulması	veriliyordu
+Relation	T1	T8	NoRel	true	durdurulması	satışının
+Relation	T10	T3	NoRel	true	alıyordu	ilerlemesi
+Relation	T13	T3	NoRel	true	çıkarılması	ilerlemesi
+Relation	T13	T7	NoRel	true	çıkarılması	emretti
+Relation	T15	T7	NoRel	true	veriliyordu	emretti
+Relation	T16	T10	NoRel	true	sağlanması	alıyordu
+Relation	T16	T4	NoRel	true	sağlanması	etti
+Relation	T2	T16	NoRel	true	esir	sağlanması
+Relation	T3	T1	NoRel	true	ilerlemesi	durdurulması
+Relation	T3	T4	NoRel	true	ilerlemesi	etti
+Relation	T4	T0	NoRel	true	etti	çıkarılması
+Relation	T4	T12	NoRel	true	etti	verilmesi
+Relation	T4	T7	NoRel	true	etti	emretti
+Relation	T7	T10	NoRel	true	emretti	alıyordu

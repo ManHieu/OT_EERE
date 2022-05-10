@@ -1,0 +1,26 @@
+Text	Fra starten af 1965 gennemgik et antal B-52D__ Big Belly _ modifikationer for at forøge bombekapaciteten til tæppebombning .	Mens der fortsat var 24×500 punds eller 750 punds bomber i ydre ophæng blev kapaciteten i bomberummet forøget fra 27 til 84×500 punds bomber eller fra 27 til 42×750 punds bomber .	Big Belly-ændringen skabte tilstrækkelig plads til i alt 108 bomber med en samlet vægt på 60.000 pund ( 27,2 ton ) .	Med disse modifikationer kunne B-52D'er fremføre 22.000 pund mere end B-52F'er .	I stedet for B-52F'er gik de ændrede B-52D'er i kamp i april 1966 med udgangspunkt på Andersen Air Force Base på Guam .
+Event	T0	gennemgik	EVENT	20
+Event	T1	tæppebombning	EVENT	109
+Event	T2	forøget	EVENT	227
+Event	T3	modifikationer	EVENT	432
+Event	T4	fremføre	EVENT	462
+Event	T5	gik	EVENT	525
+Event	T6	ændrede	EVENT	532
+Event	T7	kamp	EVENT	551
+Event	T8	modifikationer	EVENT	59
+Event	T9	forøge bombekapaciteten	EVENT	81
+Event	T10	var	EVENT	142
+Event	T11	kapaciteten	EVENT	201
+Relation	T8	T2	SuperSub	true	modifikationer	forøget
+Relation	T2	T8	SubSuper	true	forøget	modifikationer
+Relation	T8	T1	SuperSub	true	modifikationer	tæppebombning
+Relation	T1	T8	SubSuper	true	tæppebombning	modifikationer
+Relation	T2	T0	NoRel	true	forøget	gennemgik
+Relation	T2	T10	NoRel	true	forøget	var
+Relation	T2	T6	NoRel	true	forøget	ændrede
+Relation	T3	T0	NoRel	true	modifikationer	gennemgik
+Relation	T3	T5	NoRel	true	modifikationer	gik
+Relation	T6	T1	NoRel	true	ændrede	tæppebombning
+Relation	T7	T0	NoRel	true	kamp	gennemgik
+Relation	T8	T6	NoRel	true	modifikationer	ændrede
+Relation	T9	T4	NoRel	true	forøge bombekapaciteten	fremføre

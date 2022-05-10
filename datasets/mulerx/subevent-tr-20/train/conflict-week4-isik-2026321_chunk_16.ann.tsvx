@@ -1,0 +1,40 @@
+Text	Kaidenin hemen üstünde 2, 5 m çapında Zafer Nişanı simgesi bulunur ve etrafında Stalin'in Ekim Devrimi'nin 27. yıl dönümünde yaptığı konuşmadan bir bölüm Rusça ve Almanca olarak yer alır .	Metinde şu ifadeler yazılıdır : küçükresim | sağ | 200px | 1938 yılında Hitler tarafından inşa ettirilen Reichskanzlei binası .	Kızıl Ordu'nun zaferini anmak adına , savaş sırasında yıkılan bu binanın taş ve giranitleri Treptower Parkı'nın inşasında kullanılmıştır .	Parkın yapımında 1938 yılında Adolf Hitler tarafından inşa ettirilen ve savaşta Kızıl Ordu tarafından yıkılan Yeni Reichskanzlei Binası'ndan arda kalan taş ve granitler kullanılmıştır .	Tarihî bir olayı temsil etmesinin yanı sıra , bulunduğu arazide Berlin Muharebesi'nde ölen yaklaşık 7 bin asker için inşa edilen mezarlıkları da içerir .
+Event	T0	inşa	EVENT	279
+Event	T1	savaş	EVENT	355
+Event	T2	yıkılan	EVENT	371
+Event	T3	kullanılmıştır	EVENT	439
+Event	T4	inşa	EVENT	510
+Event	T5	yıkılan	EVENT	558
+Event	T6	temsil	EVENT	659
+Event	T7	ölen	EVENT	728
+Event	T8	Devrimi'nin	EVENT	95
+Event	T9	konuşmadan	EVENT	133
+Event	T10	zaferini	EVENT	332
+Event	T11	inşasında	EVENT	429
+Event	T12	anmak	EVENT	341
+Event	T13	yapımında	EVENT	463
+Event	T14	kullanılmıştır	EVENT	625
+Event	T15	edilen	EVENT	764
+Event	T16	olayı	EVENT	653
+Event	T17	Muharebesi'nde	EVENT	713
+Relation	T0	T16	NoRel	true	inşa	olayı
+Relation	T0	T3	NoRel	true	inşa	kullanılmıştır
+Relation	T10	T2	NoRel	true	zaferini	yıkılan
+Relation	T11	T9	NoRel	true	inşasında	konuşmadan
+Relation	T12	T16	NoRel	true	anmak	olayı
+Relation	T12	T6	NoRel	true	anmak	temsil
+Relation	T13	T7	NoRel	true	yapımında	ölen
+Relation	T14	T15	NoRel	true	kullanılmıştır	edilen
+Relation	T14	T5	NoRel	true	kullanılmıştır	yıkılan
+Relation	T15	T12	NoRel	true	edilen	anmak
+Relation	T15	T17	NoRel	true	edilen	Muharebesi'nde
+Relation	T15	T4	NoRel	true	edilen	inşa
+Relation	T17	T4	NoRel	true	Muharebesi'nde	inşa
+Relation	T2	T10	NoRel	true	yıkılan	zaferini
+Relation	T3	T1	NoRel	true	kullanılmıştır	savaş
+Relation	T3	T11	NoRel	true	kullanılmıştır	inşasında
+Relation	T4	T5	NoRel	true	inşa	yıkılan
+Relation	T8	T16	NoRel	true	Devrimi'nin	olayı
+Relation	T9	T10	NoRel	true	konuşmadan	zaferini
+Relation	T9	T11	NoRel	true	konuşmadan	inşasında
+Relation	T9	T15	NoRel	true	konuşmadan	edilen

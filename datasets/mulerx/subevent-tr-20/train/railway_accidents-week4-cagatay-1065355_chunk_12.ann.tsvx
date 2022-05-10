@@ -1,0 +1,35 @@
+Text	- 10 Mayıs , 2002 – Potters Bar demiryolu çarpışması , Kuzey Londra , İngiltere , Birleşik Krallık : Bir kuzey sınırı treni yüksek hızda raydan çıkar ; 7 ölü , 11 ciddi yaralı .	- 3 Ocak , 2003 – Ghatnandur tren çarpışması , Ghatnandur , Maharashtra , iki trenin çarpışmasında 18 kişi öldü .	- 31 Ocak , 2003 – Waterfall tren felaketi , Waterfall , New South Wales , Avustralya : Bir güney sınırı yolcu treni makinisti Kalp krizi geçirir ve ölür .	Trenin hızı kontolden çıkar ve bir virajda raydan çıkar .	Birçok vagonu devrilir ve 6 yolcu ölür .
+Event	T0	çarpışması	EVENT	42
+Event	T1	çıkar	EVENT	144
+Event	T2	ölü	EVENT	154
+Event	T3	yaralı	EVENT	169
+Event	T4	çarpışması	EVENT	212
+Event	T5	çarpışmasında	EVENT	263
+Event	T6	öldü	EVENT	285
+Event	T7	felaketi	EVENT	326
+Event	T8	geçirir	EVENT	430
+Event	T9	ölür	EVENT	441
+Event	T10	çıkar	EVENT	470
+Event	T12	çıkar	EVENT	498
+Event	T13	devrilir	EVENT	520
+Event	T14	ölür	EVENT	540
+Relation	T7	T8	SuperSub	true	felaketi	geçirir
+Relation	T8	T7	SubSuper	true	geçirir	felaketi
+Relation	T7	T9	SuperSub	true	felaketi	ölür
+Relation	T9	T7	SubSuper	true	ölür	felaketi
+Relation	T7	T10	SuperSub	true	felaketi	çıkar
+Relation	T10	T7	SubSuper	true	çıkar	felaketi
+Relation	T7	T12	SuperSub	true	felaketi	çıkar
+Relation	T12	T7	SubSuper	true	çıkar	felaketi
+Relation	T7	T13	SuperSub	true	felaketi	devrilir
+Relation	T13	T7	SubSuper	true	devrilir	felaketi
+Relation	T7	T14	SuperSub	true	felaketi	ölür
+Relation	T14	T7	SubSuper	true	ölür	felaketi
+Relation	T0	T13	NoRel	true	çarpışması	devrilir
+Relation	T12	T1	NoRel	true	çıkar	çıkar
+Relation	T13	T8	NoRel	true	devrilir	geçirir
+Relation	T4	T3	NoRel	true	çarpışması	yaralı
+Relation	T5	T2	NoRel	true	çarpışmasında	ölü
+Relation	T6	T12	NoRel	true	öldü	çıkar
+Relation	T6	T4	NoRel	true	öldü	çarpışması
+Relation	T6	T8	NoRel	true	öldü	geçirir

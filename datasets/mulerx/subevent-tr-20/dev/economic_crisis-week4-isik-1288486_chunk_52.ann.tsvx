@@ -1,0 +1,14 @@
+Text	Berlin’de metal işçilerin başlattığı grev bir süre sonra genel greve dönüştü .	Bu grevlere polisin yanında bir de nasyonal sosyalistler saldırıyordu .	Çıkan çatışmalarda yüzlerce kişi öldü .	Grevlerin ekonomik talebi olan maaşlarının artırılmasın yanında siyasal taleplerde yükseliyordu .	İşçilerin grevi hükûmet karşıtı bir nitelik alıyordu .
+Event	T0	grev	EVENT	37
+Event	T1	dönüştü	EVENT	69
+Event	T2	grevlere	EVENT	82
+Event	T3	saldırıyordu	EVENT	136
+Event	T4	çatışmalarda	EVENT	157
+Event	T5	öldü	EVENT	184
+Event	T6	talebi	EVENT	210
+Event	T7	yükseliyordu	EVENT	274
+Event	T8	grevi	EVENT	299
+Event	T9	alıyordu	EVENT	333
+Relation	T1	T3	NoRel	true	dönüştü	saldırıyordu
+Relation	T1	T8	NoRel	true	dönüştü	grevi
+Relation	T2	T5	NoRel	true	grevlere	öldü

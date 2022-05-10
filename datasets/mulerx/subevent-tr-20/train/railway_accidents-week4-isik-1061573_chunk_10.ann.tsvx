@@ -1,0 +1,12 @@
+Text	- 17 Ocak , 1977 - Tianepantla hemzemin geçit kazası — Bir yolcu treni , yerel bir otobüse çarptı .	En az kırk iki kişi öldü .	- 15 Ağustos , 1982 - Tula hemzemin geçit felaketi — bir ekspres otobüs , Nuevo Laredo - Mexico City yolcu treniyle çarpıştı .	En az yirmi üç kişi öldü ve otuz iki kişi yaralandı .	- 25 Şubat , 1989 - Saltillo hemzemin geçit felaketi — Bir yolcu treni yerel bir otobüse çarptı .
+Event	T0	kazası	EVENT	46
+Event	T1	çarptı	EVENT	91
+Event	T2	öldü	EVENT	120
+Event	T3	felaketi	EVENT	169
+Event	T4	çarpıştı	EVENT	243
+Event	T5	öldü	EVENT	274
+Event	T6	yaralandı	EVENT	296
+Event	T7	felaketi	EVENT	352
+Event	T8	çarptı	EVENT	397
+Relation	T4	T0	NoRel	true	çarpıştı	kazası
+Relation	T6	T5	NoRel	true	yaralandı	öldü

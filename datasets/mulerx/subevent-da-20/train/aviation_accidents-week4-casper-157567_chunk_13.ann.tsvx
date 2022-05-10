@@ -1,0 +1,65 @@
+Text	- San Franciscos borgmester Willie Brown meddelte dagen efter angrebet at han måske havde fået en svag advarsel om angrebet , da han i forbindelse med et flyrejse havde kontaktet lufthavnen for at få en update på sikkerhedssituationen og her var blevet informeret af " lufthavns sikkerhedspersonel " om , at " amerikanere skal være forsigtige med deres flyrejser . " .	Brown var altid opmærksom på flysikkerhed , når han skulle rejse og opfattede ikke selv oplysningerne som besynderlige eller synderligt oprørende og aflyste ikke sine rejser af den grund .	Hvorfor lige netop San Franciscos borgmester skulle være vigtig nok til at risikere en mulig afsløring af en stor sammensværgelse forklarer teorierne ikke .	Det er stadig ikke helt redegjort for hvor opkaldet stammer fra ( om end rygtet og bl.a. holocaustbenægtere David Irving siger Condoleezza Rice – fuldkommen grundløs myte siger Brown ) .	Advarslen kan muligvis hænge sammen med , at et lidet bemærket memo fra det amerikanske udenrigsministerie en uge forinden havde advaret om , at amerikanske militærbaser i Japan og Sydkorea måske kunne blive angrebet af en ekstremistisk gruppe med bånd til Osama bin Ladens al Qaeda organisation .
+Event	T0	meddelte	EVENT	41
+Event	T1	angrebet	EVENT	62
+Event	T2	fået	EVENT	90
+Event	T3	angrebet	EVENT	115
+Event	T4	flyrejse	EVENT	154
+Event	T5	kontaktet	EVENT	169
+Event	T6	update	EVENT	203
+Event	T7	informeret	EVENT	253
+Event	T8	rejse	EVENT	428
+Event	T9	opfattede	EVENT	437
+Event	T10	aflyste	EVENT	518
+Event	T11	rejser	EVENT	536
+Event	T12	risikere	EVENT	633
+Event	T13	afsløring	EVENT	651
+Event	T14	forklarer	EVENT	688
+Event	T15	redegjort	EVENT	739
+Event	T16	opkaldet	EVENT	758
+Event	T17	rygtet	EVENT	788
+Event	T18	siger	EVENT	836
+Event	T19	siger	EVENT	886
+Event	T20	Advarslen	EVENT	902
+Event	T21	hænge	EVENT	925
+Event	T22	advaret	EVENT	1031
+Event	T23	angrebet	EVENT	1110
+Event	T24	advarsel	EVENT	103
+Relation	T14	T13	SuperSub	true	forklarer	afsløring
+Relation	T13	T14	SubSuper	true	afsløring	forklarer
+Relation	T14	T12	SuperSub	true	forklarer	risikere
+Relation	T12	T14	SubSuper	true	risikere	forklarer
+Relation	T23	T22	SuperSub	true	angrebet	advaret
+Relation	T22	T23	SubSuper	true	advaret	angrebet
+Relation	T1	T10	NoRel	true	angrebet	aflyste
+Relation	T1	T5	NoRel	true	angrebet	kontaktet
+Relation	T11	T15	NoRel	true	rejser	redegjort
+Relation	T11	T22	NoRel	true	rejser	advaret
+Relation	T11	T7	NoRel	true	rejser	informeret
+Relation	T12	T19	NoRel	true	risikere	siger
+Relation	T13	T10	NoRel	true	afsløring	aflyste
+Relation	T13	T21	NoRel	true	afsløring	hænge
+Relation	T14	T3	NoRel	true	forklarer	angrebet
+Relation	T15	T1	NoRel	true	redegjort	angrebet
+Relation	T15	T5	NoRel	true	redegjort	kontaktet
+Relation	T16	T12	NoRel	true	opkaldet	risikere
+Relation	T16	T6	NoRel	true	opkaldet	update
+Relation	T17	T11	NoRel	true	rygtet	rejser
+Relation	T18	T10	NoRel	true	siger	aflyste
+Relation	T18	T4	NoRel	true	siger	flyrejse
+Relation	T18	T8	NoRel	true	siger	rejse
+Relation	T19	T17	NoRel	true	siger	rygtet
+Relation	T20	T9	NoRel	true	Advarslen	opfattede
+Relation	T21	T20	NoRel	true	hænge	Advarslen
+Relation	T22	T6	NoRel	true	advaret	update
+Relation	T24	T22	NoRel	true	advarsel	advaret
+Relation	T3	T20	NoRel	true	angrebet	Advarslen
+Relation	T3	T24	NoRel	true	angrebet	advarsel
+Relation	T5	T14	NoRel	true	kontaktet	forklarer
+Relation	T5	T21	NoRel	true	kontaktet	hænge
+Relation	T6	T4	NoRel	true	update	flyrejse
+Relation	T7	T17	NoRel	true	informeret	rygtet
+Relation	T7	T18	NoRel	true	informeret	siger
+Relation	T7	T8	NoRel	true	informeret	rejse
+Relation	T8	T6	NoRel	true	rejse	update
+Relation	T9	T18	NoRel	true	opfattede	siger
+Relation	T9	T24	NoRel	true	opfattede	advarsel

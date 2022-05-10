@@ -1,0 +1,26 @@
+Text	El 4 de mayo , las fuerzas de seguridad tomaron el control de la carretera que comunica las provincias de Hadramout , Shabwa y Abyan .	Otras operaciones en Shabwa lograron además lograron eliminar a los terroristas de Mefraq al Said , Hesat al Labn , Al Karif y Al Naqaba .	Además , se abatieron a al menos 37 combatientes en la localidad de Yul Reda .	El 6 de mayo la ofensiva consiguió lograr uno de sus objetivos principales al tomar la zona montañosa de Al Mahfad , en una batalla en la que se cobró varias decenas de muertos entre los yihadistas , que abandonaron el área al amanecer .	Además tomaron posesión de otro bastión del grupo terrorista de Haban y Qarn al-Sawad , en la zona de Shabwa .
+Event	T0	tomaron	EVENT	40
+Event	T1	control	EVENT	51
+Event	T2	comunica	EVENT	79
+Event	T3	operaciones	EVENT	141
+Event	T4	lograron	EVENT	163
+Event	T5	eliminar	EVENT	188
+Event	T6	abatieron	EVENT	286
+Event	T7	lograr	EVENT	388
+Event	T8	tomar	EVENT	431
+Event	T9	cobró	EVENT	498
+Event	T10	muertos	EVENT	522
+Event	T11	abandonaron	EVENT	557
+Event	T12	amanecer	EVENT	580
+Event	T13	ofensiva	EVENT	369
+Relation	T0	T12	NoRel	true	tomaron	amanecer
+Relation	T1	T6	NoRel	true	control	abatieron
+Relation	T10	T13	NoRel	true	muertos	ofensiva
+Relation	T10	T4	NoRel	true	muertos	lograron
+Relation	T13	T8	NoRel	true	ofensiva	tomar
+Relation	T3	T1	NoRel	true	operaciones	control
+Relation	T5	T8	NoRel	true	eliminar	tomar
+Relation	T6	T7	NoRel	true	abatieron	lograr
+Relation	T7	T0	NoRel	true	lograr	tomaron
+Relation	T7	T4	NoRel	true	lograr	lograron
+Relation	T9	T4	NoRel	true	cobró	lograron

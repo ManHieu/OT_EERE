@@ -1,0 +1,16 @@
+Text	küçükresim | Avezzano'dan geriye kalan harabeler 1915 AVEZZANO DEPREMI , 30 Ağustos 1915 günü saat 8:00'da İtalya'da , L ' Aquila yakınlarındaki Avezzano kasabasında meydana gelmiştir .	Avezzano'nun çok büyük hasar gördüğü depremde yaklaşık 30,000 kişi ölmüştür .	küçükresim | Avezzano'da bulunan Orsini Kalesi'nin harabeleri Deprem bir dakika sürmesine rağmen etkileri çok büyük olmuştur .	Depremde tüm Avezzano kasabası yıkıldı .	Yalnızca Via XX . Settembre üzerinde bulunan birçok katlı bina ve Orsini Kalesi ayakta kaldı .
+Event	T0	gelmiştir	EVENT	174
+Event	T1	depremde	EVENT	223
+Event	T2	ölmüştür	EVENT	253
+Event	T3	Deprem	EVENT	326
+Event	T5	yıkıldı	EVENT	422
+Event	T6	DEPREMI	EVENT	63
+Event	T7	hasar	EVENT	209
+Event	T4	kaldı	EVENT	519
+Event	T8	olmuştur	EVENT	380
+Relation	T2	T7	NoRel	true	ölmüştür	hasar
+Relation	T4	T2	NoRel	true	kaldı	ölmüştür
+Relation	T5	T2	NoRel	true	yıkıldı	ölmüştür
+Relation	T6	T0	NoRel	true	DEPREMI	gelmiştir
+Relation	T8	T0	NoRel	true	olmuştur	gelmiştir
+Relation	T8	T1	NoRel	true	olmuştur	depremde

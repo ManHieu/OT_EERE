@@ -1,0 +1,52 @@
+Text	The founders of the scheme engaged in insider trading , by using their advance knowledge of the timings of national debt consolidations to make large profits from purchasing debt in advance .	Huge bribes were given to politicians to support the Acts of Parliament necessary for the scheme .	Company money was used to deal in its own shares , and selected individuals purchasing shares were given cash loans backed by those same shares to spend on purchasing more shares .	The expectation of profits from trade with South America was talked up to encourage the public to purchase shares , but the bubble prices reached far beyond what the actual profits of the business ( namely the slave trade ) could justify .	A parliamentary inquiry was held after the bursting of the bubble to discover its causes .
+Event	T0	engaged	EVENT	27
+Event	T1	trading	EVENT	46
+Event	T10	backed	EVENT	407
+Event	T11	spend	EVENT	438
+Event	T12	purchasing	EVENT	447
+Event	T13	justify	EVENT	702
+Event	T14	trade	EVENT	504
+Event	T15	encourage	EVENT	546
+Event	T16	reached	EVENT	610
+Event	T18	held	EVENT	740
+Event	T19	bursting	EVENT	755
+Event	T2	using	EVENT	59
+Event	T20	bubble	EVENT	771
+Event	T21	discover	EVENT	781
+Event	T22	purchasing	EVENT	163
+Event	T23	support	EVENT	233
+Event	T24	purchase	EVENT	570
+Event	T3	consolidations	EVENT	121
+Event	T4	make	EVENT	139
+Event	T5	given	EVENT	209
+Event	T6	used	EVENT	309
+Event	T7	deal	EVENT	317
+Event	T8	purchasing	EVENT	367
+Event	T9	given	EVENT	390
+Relation	T2	T22	SuperSub	true	using	purchasing
+Relation	T22	T2	SubSuper	true	purchasing	using
+Relation	T11	T9	SuperSub	true	spend	given
+Relation	T9	T11	SubSuper	true	given	spend
+Relation	T11	T12	SuperSub	true	spend	purchasing
+Relation	T12	T11	SubSuper	true	purchasing	spend
+Relation	T5	T23	SuperSub	true	given	support
+Relation	T23	T5	SubSuper	true	support	given
+Relation	T0	T15	NoRel	true	engaged	encourage
+Relation	T0	T7	NoRel	true	engaged	deal
+Relation	T10	T18	NoRel	true	backed	held
+Relation	T11	T16	NoRel	true	spend	reached
+Relation	T12	T3	NoRel	true	purchasing	consolidations
+Relation	T14	T2	NoRel	true	trade	using
+Relation	T15	T19	NoRel	true	encourage	bursting
+Relation	T16	T24	NoRel	true	reached	purchase
+Relation	T18	T2	NoRel	true	held	using
+Relation	T23	T1	NoRel	true	support	trading
+Relation	T23	T14	NoRel	true	support	trade
+Relation	T23	T9	NoRel	true	support	given
+Relation	T3	T11	NoRel	true	consolidations	spend
+Relation	T4	T13	NoRel	true	make	justify
+Relation	T4	T21	NoRel	true	make	discover
+Relation	T5	T11	NoRel	true	given	spend
+Relation	T5	T2	NoRel	true	given	using
+Relation	T7	T8	NoRel	true	deal	purchasing
+Relation	T8	T11	NoRel	true	purchasing	spend

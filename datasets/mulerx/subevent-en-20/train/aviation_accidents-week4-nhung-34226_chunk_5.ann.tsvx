@@ -1,0 +1,57 @@
+Text	On the land behind their house , the family was allowed to build a mud hut measuring approximately , where they spent 21 months until the end of the occupation .	During this period , Yuri became a saboteur , especially after one of the German soldiers , who the children called " the Devil " , tried to hang his younger brother Boris on an apple tree using the boy 's scarf .	In retaliation , Yuri sabotaged the soldier 's work ; he poured soil into the tank batteries gathered to be recharged and randomly mixed the different chemical supplies intended for the task .	In early 1943 , his two older siblings were deported by the Germans to Poland for slave labour .	They escaped and were found by Soviet soldiers who conscripted them into helping with the war effort .
+Event	T0	allowed	EVENT	48
+Event	T1	build	EVENT	59
+Event	T2	measuring	EVENT	75
+Event	T3	spent	EVENT	112
+Event	T4	occupation	EVENT	149
+Event	T5	called	EVENT	271
+Event	T6	tried	EVENT	294
+Event	T7	hang	EVENT	303
+Event	T8	using	EVENT	351
+Event	T9	retaliation	EVENT	379
+Event	T10	sabotaged	EVENT	398
+Event	T11	work	EVENT	423
+Event	T12	poured	EVENT	433
+Event	T13	gathered	EVENT	469
+Event	T14	recharged	EVENT	484
+Event	T15	mixed	EVENT	507
+Event	T16	intended	EVENT	545
+Event	T17	task	EVENT	562
+Event	T18	deported	EVENT	613
+Event	T19	escaped	EVENT	671
+Event	T20	found	EVENT	688
+Event	T21	conscripted	EVENT	717
+Event	T22	helping	EVENT	739
+Event	T23	became	EVENT	188
+Relation	T9	T10	SuperSub	true	retaliation	sabotaged
+Relation	T10	T9	SubSuper	true	sabotaged	retaliation
+Relation	T10	T12	SuperSub	true	sabotaged	poured
+Relation	T12	T10	SubSuper	true	poured	sabotaged
+Relation	T19	T20	SuperSub	true	escaped	found
+Relation	T20	T19	SubSuper	true	found	escaped
+Relation	T0	T1	NoRel	true	allowed	build
+Relation	T0	T17	NoRel	true	allowed	task
+Relation	T10	T11	NoRel	true	sabotaged	work
+Relation	T10	T21	NoRel	true	sabotaged	conscripted
+Relation	T12	T15	NoRel	true	poured	mixed
+Relation	T12	T18	NoRel	true	poured	deported
+Relation	T12	T19	NoRel	true	poured	escaped
+Relation	T13	T19	NoRel	true	gathered	escaped
+Relation	T13	T20	NoRel	true	gathered	found
+Relation	T16	T19	NoRel	true	intended	escaped
+Relation	T17	T1	NoRel	true	task	build
+Relation	T17	T13	NoRel	true	task	gathered
+Relation	T19	T0	NoRel	true	escaped	allowed
+Relation	T2	T6	NoRel	true	measuring	tried
+Relation	T21	T8	NoRel	true	conscripted	using
+Relation	T23	T0	NoRel	true	became	allowed
+Relation	T23	T8	NoRel	true	became	using
+Relation	T3	T4	NoRel	true	spent	occupation
+Relation	T4	T1	NoRel	true	occupation	build
+Relation	T5	T1	NoRel	true	called	build
+Relation	T5	T11	NoRel	true	called	work
+Relation	T6	T15	NoRel	true	tried	mixed
+Relation	T6	T7	NoRel	true	tried	hang
+Relation	T7	T15	NoRel	true	hang	mixed
+Relation	T7	T19	NoRel	true	hang	escaped
+Relation	T8	T19	NoRel	true	using	escaped

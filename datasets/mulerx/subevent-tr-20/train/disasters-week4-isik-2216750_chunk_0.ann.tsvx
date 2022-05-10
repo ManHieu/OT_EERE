@@ -1,0 +1,31 @@
+Text	küçükresim | sağ | Depremin merkez_üssü ve etki alanın gösteren Amerika Birleşik Devletleri Jeoloji Araştırmaları Kurumu haritası 2013 BELUCISTAN DEPREMLERI Eylül 2013'te güneybatı Pakistan'da , Belucistan eyaletinde meydana gelen depremlerdir .	Ana şok , 24 Eylül 2013 tarihinde Pakistan'ın güneybatısındaki Awaran şehri yakınlarında 7.7 M _ ( l ) büyüklüğünde olan çok kuvvetli depremdi .	En az 825 kişi öldüğü gibi , yüzlerce kişi de yaralandı .	1 dakika süren deprem Karachi'den , Lahor'a ve Hyderabad'a kadar geniş bir bölgede hissedildi ve panik yarattı .	28 Eylül 2013 tarihinde bu sefer 6.8 M _ ( l ) büyüklüğünde bir deprem 14 kilometre kadar kuzeyde oldu ve 22 kişi öldü .
+Event	T0	Depremin	EVENT	19
+Event	T1	DEPREMLERI	EVENT	146
+Event	T2	depremlerdir	EVENT	231
+Event	T3	şok	EVENT	250
+Event	T4	depremdi	EVENT	380
+Event	T5	öldüğü	EVENT	406
+Event	T6	yaralandı	EVENT	437
+Event	T8	hissedildi	EVENT	532
+Event	T9	yarattı	EVENT	552
+Event	T10	deprem	EVENT	626
+Event	T11	oldu	EVENT	660
+Event	T12	öldü	EVENT	676
+Event	T7	süren	EVENT	458
+Relation	T1	T5	SuperSub	true	DEPREMLERI	öldüğü
+Relation	T5	T1	SubSuper	true	öldüğü	DEPREMLERI
+Relation	T1	T6	SuperSub	true	DEPREMLERI	yaralandı
+Relation	T6	T1	SubSuper	true	yaralandı	DEPREMLERI
+Relation	T1	T8	SuperSub	true	DEPREMLERI	hissedildi
+Relation	T8	T1	SubSuper	true	hissedildi	DEPREMLERI
+Relation	T1	T9	SuperSub	true	DEPREMLERI	yarattı
+Relation	T9	T1	SubSuper	true	yarattı	DEPREMLERI
+Relation	T1	T12	SuperSub	true	DEPREMLERI	öldü
+Relation	T12	T1	SubSuper	true	öldü	DEPREMLERI
+Relation	T12	T0	NoRel	true	öldü	Depremin
+Relation	T12	T4	NoRel	true	öldü	depremdi
+Relation	T3	T6	NoRel	true	şok	yaralandı
+Relation	T4	T11	NoRel	true	depremdi	oldu
+Relation	T7	T0	NoRel	true	süren	Depremin
+Relation	T7	T10	NoRel	true	süren	deprem
+Relation	T8	T7	NoRel	true	hissedildi	süren

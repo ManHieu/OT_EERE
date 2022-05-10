@@ -1,0 +1,14 @@
+Text	El VUELO 178 DE URAL AIRLINES fue un vuelo regular de pasajeros desde Aeropuerto Internacional de Moscú-Sheremétievo en Moscú ( Rusia ) al Aeropuerto Internacional de Simferópol en Simferópol , Crimea , Rusia .	El 15 de agosto de 2019 , el Airbus A321 que operaba el vuelo sufrió un choque contra una bandada de pájaros que paralizaron los motores , provocando que el piloto tuviera que aterrizar de emergencia en un campo de maíz .	Sin víctimas mortales de los 233 ocupantes , 74 necesitaron asistencia médica y solo una persona fue hospitalizada .	[ La aeronave accidentada en junio de 2018 .	] El avión era un Airbus A321-211 , registrado en Bermudas como VQ-BOZ , msn 2117 .
+Event	T0	VUELO	EVENT	3
+Event	T1	operaba	EVENT	256
+Event	T2	sufrió	EVENT	273
+Event	T3	choque	EVENT	283
+Event	T4	paralizaron	EVENT	324
+Event	T5	provocando	EVENT	350
+Event	T6	aterrizar	EVENT	387
+Event	T7	emergencia	EVENT	400
+Event	T8	hospitalizada	EVENT	534
+Event	T9	accidentada	EVENT	564
+Event	T10	registrado	EVENT	631
+Relation	T1	T4	NoRel	true	operaba	paralizaron
+Relation	T5	T7	NoRel	true	provocando	emergencia

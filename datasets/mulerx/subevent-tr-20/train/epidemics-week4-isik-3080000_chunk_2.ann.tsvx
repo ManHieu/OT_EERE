@@ -1,0 +1,24 @@
+Text	Salgın özellikle başkent Valletta ve banliyösü Floriana'da ve Birkirkara , Qormi ve Żebbuġ köylerinde şiddetliydi .	Salgın 1813'ün sonlarında azalmaya başladı ve Ocak 1814'e kadar bittiğine inanılıyordu .	Bununla birlikte , hastalık Şubat ayında kontamine giysiler yoluyla Gozo'ya istemeden bulaştı ve Xagħra köyünde başka bir salgın meydana geldi .	Sınırlama önlemleri derhal uygulandı , yayılmayı sınırladı ve Gozo'da çok daha düşük bir ölüm oranıyla sonuçlandı .	İkinci veba salgını , 14. yüzyılda Kara Ölüm ile başladı ve 19. yüzyıla kadar tekrarlamaya devam etti .
+Event	T0	Salgın	EVENT	0
+Event	T1	Salgın	EVENT	116
+Event	T2	başladı	EVENT	151
+Event	T3	hastalık	EVENT	224
+Event	T4	bulaştı	EVENT	291
+Event	T5	geldi	EVENT	342
+Event	T6	uygulandı	EVENT	377
+Event	T7	sınırladı	EVENT	399
+Event	T8	ölüm	EVENT	439
+Event	T9	sonuçlandı	EVENT	453
+Event	T10	Ölüm	EVENT	506
+Event	T11	başladı	EVENT	515
+Event	T12	etti	EVENT	563
+Event	T13	inanılıyordu	EVENT	190
+Event	T14	kontamine	EVENT	246
+Event	T15	salgını	EVENT	478
+Relation	T11	T3	NoRel	true	başladı	hastalık
+Relation	T11	T9	NoRel	true	başladı	sonuçlandı
+Relation	T13	T12	NoRel	true	inanılıyordu	etti
+Relation	T15	T11	NoRel	true	salgını	başladı
+Relation	T2	T13	NoRel	true	başladı	inanılıyordu
+Relation	T6	T11	NoRel	true	uygulandı	başladı
+Relation	T7	T2	NoRel	true	sınırladı	başladı

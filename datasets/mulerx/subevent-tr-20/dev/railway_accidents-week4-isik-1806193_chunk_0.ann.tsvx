@@ -1,0 +1,28 @@
+Text	GREG PLITT ( 3 Kasım 1977 - 17 Ocak 2015 ) , Amerikalı oyuncu , model ve vücut geliştirme sporcusu .	YouTube videolarıyla bilinen Plitt , _ Terminatör 4 : Kurtuluş _ , _ Kirli Sırlar _ , _ Hesaplaşma Zamanı _ gibi birçok filmde rol almış , televizyon şovlarıyla izleyici karşısına çıkmıştır .	Amerikalı fitness modeli ve oyuncu Greg Plitt Burbank , Kaliforniyada 3 arkadaşıyla birlikte tren yolunda video çekerken gelen bir banliyö treni altında kalarak 37 yaşında öldü .	Fitness modelliğinin yanında aynı zamanda oyunculük de yapan Greg Plitt , videolarıyla pek çok insanın vücut geliştirme sporuna başlamasına önayak olmuştu .	Kategori : 1977 doğumlular Kategori : Maryland doğumlu erkek oyuncular Kategori : 2015 yılında ölenler Kategori : 21. yüzyılda Amerikalı erkek oyuncular Kategori : Amerikalı erkek sinema oyuncuları Kategori : Amerikalı erkek modeller Kategori : Amerikalı vücut geliştirmeciler Kategori : Amerikalı karacı subaylar Kategori : Birleşik Devletler Askerî Akademisinde öğrenim görenler Kategori : Kaliforniya'da kazalarda ölenler Kategori : Amerika Birleşik Devletleri'nde demiryolu kazalarında ölenler
+Event	T0	almış	EVENT	232
+Event	T1	şovlarıyla	EVENT	251
+Event	T2	çıkmıştır	EVENT	281
+Event	T3	gelen	EVENT	414
+Event	T4	öldü	EVENT	465
+Event	T5	başlamasına	EVENT	600
+Event	T6	çekerken	EVENT	405
+Event	T7	yapan	EVENT	527
+Event	T8	olmuştu	EVENT	619
+Event	T9	videolarıyla	EVENT	546
+Event	T10	ölenler	EVENT	724
+Event	T11	kalarak	EVENT	446
+Event	T12	kazalarda	EVENT	1036
+Event	T13	ölenler	EVENT	1046
+Event	T14	kazalarında	EVENT	1107
+Event	T15	ölenler	EVENT	1119
+Relation	T10	T12	NoRel	true	ölenler	kazalarda
+Relation	T11	T13	NoRel	true	kalarak	ölenler
+Relation	T11	T15	NoRel	true	kalarak	ölenler
+Relation	T12	T7	NoRel	true	kazalarda	yapan
+Relation	T14	T11	NoRel	true	kazalarında	kalarak
+Relation	T3	T2	NoRel	true	gelen	çıkmıştır
+Relation	T3	T9	NoRel	true	gelen	videolarıyla
+Relation	T4	T0	NoRel	true	öldü	almış
+Relation	T5	T13	NoRel	true	başlamasına	ölenler
+Relation	T7	T2	NoRel	true	yapan	çıkmıştır
+Relation	T8	T15	NoRel	true	olmuştu	ölenler

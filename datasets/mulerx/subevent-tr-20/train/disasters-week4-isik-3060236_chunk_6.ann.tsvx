@@ -1,0 +1,13 @@
+Text	Selden Bartın ili'nin Ulus ilçesi , Kastamonu ili'nin Azdavay , İnebolu , Bozkurt , Küre ve Pınarbaşı ilçeleri ile Sinop ili'nin Ayancık ve Türkeli ilçeleri etkilendi .	Sellerin başlangıcından bu yana Bartın'da 359 , Kastamonu'da 1. 480 , Sinop'ta ise 633 olmak üzere toplam 2.472 kişi helikopterler ve botlarla güvenli bölgelere tahliye edildi .	Afet ve Acil Durum Yönetimi Başkanlığı ( AFAD ) , Bartın genelinde 4 köye , Kastamonu genelinde 180 köye ve Sinop'ta ise Ayancık ve Türkeli ilçelerine bağlı 87 köye elektrik verilemediğini duyurdu .	13 Ağustos'ta bölgeyi ziyaret eden Cumhurbaşkanı Recep Tayyip Erdoğan , Kastamonu , Sinop ve Bartın'ın Genel Hayata Etkili Afet Bölgesi ilan edildiğini açıkladı .	Çevre ve Şehircilik Bakanı Murat Kurum , tüm afet bölgelerinde selden etkilenen yaklaşık 454 tane ağır hasarlı ve yıkık bina olduğunu belirtti .
+Event	T0	etkilendi	EVENT	157
+Event	T1	Sellerin	EVENT	169
+Event	T2	edildi	EVENT	338
+Event	T3	duyurdu	EVENT	536
+Event	T4	ziyaret	EVENT	568
+Event	T5	açıkladı	EVENT	698
+Event	T7	etkilenen	EVENT	779
+Event	T8	belirtti	EVENT	843
+Event	T9	Selden	EVENT	0
+Relation	T1	T8	NoRel	true	Sellerin	belirtti
+Relation	T8	T1	NoRel	true	belirtti	Sellerin
+Relation	T8	T9	NoRel	true	belirtti	Selden

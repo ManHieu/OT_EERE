@@ -1,0 +1,25 @@
+Text	El accidente ocurrió en una curva , motivo por el cual ninguno de los maquinistas tuvo oportunidad de ver el otro tren , o intentar una frenada de emergencia , antes de la colisión .	Los dos primeros vagones y la parte delantera del tercer coche ET1016 , y el carro del conductor del ET1021 , se desintegraron en el impacto ; el segundo coche de ET1021 descarriló y fue gravemente dañado ; los otros coches de ambos trenes se mantuvieron casi intactos .	Un hospital de campaña se creó adyacente al lugar del accidente .	Algunos de los heridos fueron transportados por helicóptero a un hospital .	Se hizo un llamamiento a la población local para donar sangre .
+Event	T0	ocurrió	EVENT	13
+Event	T1	intentar	EVENT	123
+Event	T2	frenada	EVENT	136
+Event	T3	colisión	EVENT	172
+Event	T4	desintegraron	EVENT	296
+Event	T5	impacto	EVENT	316
+Event	T6	descarriló	EVENT	353
+Event	T7	dañado	EVENT	381
+Event	T8	mantuvieron	EVENT	426
+Event	T9	accidente	EVENT	508
+Event	T10	heridos	EVENT	535
+Event	T11	transportados	EVENT	550
+Event	T12	hizo	EVENT	599
+Event	T13	llamamiento	EVENT	607
+Relation	T10	T11	SuperSub	true	heridos	transportados
+Relation	T11	T10	SubSuper	true	transportados	heridos
+Relation	T0	T1	NoRel	true	ocurrió	intentar
+Relation	T1	T10	NoRel	true	intentar	heridos
+Relation	T11	T13	NoRel	true	transportados	llamamiento
+Relation	T2	T9	NoRel	true	frenada	accidente
+Relation	T4	T11	NoRel	true	desintegraron	transportados
+Relation	T7	T8	NoRel	true	dañado	mantuvieron
+Relation	T8	T9	NoRel	true	mantuvieron	accidente
+Relation	T9	T7	NoRel	true	accidente	dañado

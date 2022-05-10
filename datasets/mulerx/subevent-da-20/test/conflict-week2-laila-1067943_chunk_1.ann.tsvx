@@ -1,0 +1,30 @@
+Text	Sygeplejerskerne blev også lovet en lignende ligelønskommission i 2008 , hvor de strejkede sammen med flere faggrupper i forbindelse med overenskomstforhandlingerne .	Strejken blev afsluttet , efter at et flertal af Folketingets partier bestående af regeringen , Venstre , Radikale Venstre , Konservative Folkeparti , Nye Borgerlige og Liberal Alliance ved en debat i Folketingssalen d. 27. august vedtog et lovindgreb .	Loven var L240 i Samling 2020/2021 og blev vedtaget i Folketingets sommerferie som en hastelov .	Den 8. september nedlagde sygeplejerske arbejdet på en række af landets hospitaler i en time om morgenen .	Arbejdsnedlæggelsen skete som følge af frustration over lovindgrebet , og den fik Danske Regioner til at indgive et klageskrift til Arbejdsretten .
+Event	T0	lovet	EVENT	27
+Event	T1	ligelønskommission	EVENT	45
+Event	T10	skete	EVENT	645
+Event	T11	frustration	EVENT	664
+Event	T12	lovindgrebet	EVENT	681
+Event	T13	fik	EVENT	703
+Event	T14	indgive	EVENT	730
+Event	T15	klageskrift	EVENT	741
+Event	T2	strejkede	EVENT	81
+Event	T3	afsluttet	EVENT	181
+Event	T4	debat	EVENT	360
+Event	T5	vedtog	EVENT	398
+Event	T6	lovindgreb	EVENT	408
+Event	T8	nedlagde	EVENT	535
+Event	T9	arbejdet	EVENT	558
+Relation	T5	T6	SuperSub	true	vedtog	lovindgreb
+Relation	T6	T5	SubSuper	true	lovindgreb	vedtog
+Relation	T4	T5	SuperSub	true	debat	vedtog
+Relation	T5	T4	SubSuper	true	vedtog	debat
+Relation	T0	T5	NoRel	true	lovet	vedtog
+Relation	T1	T13	NoRel	true	ligelønskommission	fik
+Relation	T11	T10	NoRel	true	frustration	skete
+Relation	T12	T4	NoRel	true	lovindgrebet	debat
+Relation	T13	T4	NoRel	true	fik	debat
+Relation	T14	T3	NoRel	true	indgive	afsluttet
+Relation	T3	T0	NoRel	true	afsluttet	lovet
+Relation	T6	T1	NoRel	true	lovindgreb	ligelønskommission
+Relation	T6	T8	NoRel	true	lovindgreb	nedlagde
+Relation	T8	T1	NoRel	true	nedlagde	ligelønskommission

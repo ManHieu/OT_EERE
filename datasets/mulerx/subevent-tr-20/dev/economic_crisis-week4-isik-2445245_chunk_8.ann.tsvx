@@ -1,0 +1,13 @@
+Text	Ayrıca , Hitler'in bizzat verdiği emirle Fransa'da bulunan ve I. Dünya Savaşı zamanında yapılan anıtlar Wehrmacht tarafından yok edildi .	Eyfel kulesi fotoğrafları ve antlaşmanın çekilen videoları Almanya'da hızla yayılmaya başladı .	Büyük propaganda örneği sonrası Hitler , artık Alman halkının kurtarıcısı oldu ve 1945 yılına kadar Alman halkı Hitler'i eşi görülmemiş bir şekilde destekledi .	Nazilerin Sovyet savaş esirlerine karşı işledikleri suçlar Nazi propagandası ile ilişkiliydi , zira Naziler düşman askerlerde korku uyandırması amacıyla mümkün olduğu kadar çok öldürmeyi teşvik etti .	21 Haziran 1941 yılında başlatılan Barbarossa Harekâtı ile birlikte , artık hedefte sadece Alman halkı değil , dünya halkları vardı .
+Event	T1	edildi	EVENT	129
+Event	T3	başladı	EVENT	224
+Event	T4	destekledi	EVENT	382
+Event	T5	etti	EVENT	589
+Event	T6	I. Dünya Savaşı	EVENT	62
+Event	T7	emirle	EVENT	34
+Event	T8	anıtlar	EVENT	96
+Event	T9	oldu	EVENT	308
+Event	T2	Harekâtı	EVENT	642
+Relation	T2	T4	NoRel	true	Harekâtı	destekledi
+Relation	T4	T8	NoRel	true	destekledi	anıtlar
+Relation	T8	T9	NoRel	true	anıtlar	oldu

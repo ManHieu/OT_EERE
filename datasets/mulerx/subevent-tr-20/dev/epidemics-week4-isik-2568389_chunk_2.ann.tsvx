@@ -1,0 +1,22 @@
+Text	- Çek Cumhuriyeti ülkedeki ilk üç vakanın Kuzey İtalya'dan seyahat eden bireyler olduğunu doğruladı .	- Dominik Cumhuriyeti , 62 yaşındaki İtalyan bir turist olan ilk vakasını doğruladı .	- Ekvador beş vakayı daha teyit ederek toplamı vaka sayısını altıya çıkardı .	- Mısır bir vaka daha doğruladı ve toplam vaka sayısını 2'ye getirdi .	- Finlandiya , 27 Şubat'ta teşhis edilen kadınla ilgili iki vakayı daha doğrulayarak toplam sayıyı 6'ya getirdi .
+Event	T0	seyahat	EVENT	59
+Event	T1	doğruladı	EVENT	90
+Event	T2	doğruladı	EVENT	176
+Event	T3	çıkardı	EVENT	256
+Event	T4	doğruladı	EVENT	288
+Event	T5	getirdi	EVENT	327
+Event	T6	teşhis	EVENT	364
+Event	T7	getirdi	EVENT	441
+Event	T8	vakanın	EVENT	34
+Event	T9	vakasını	EVENT	167
+Event	T10	ederek	EVENT	220
+Event	T11	doğrulayarak	EVENT	409
+Relation	T10	T9	NoRel	true	ederek	vakasını
+Relation	T11	T6	NoRel	true	doğrulayarak	teşhis
+Relation	T2	T8	NoRel	true	doğruladı	vakanın
+Relation	T4	T5	NoRel	true	doğruladı	getirdi
+Relation	T4	T9	NoRel	true	doğruladı	vakasını
+Relation	T5	T9	NoRel	true	getirdi	vakasını
+Relation	T7	T1	NoRel	true	getirdi	doğruladı
+Relation	T9	T11	NoRel	true	vakasını	doğrulayarak
+Relation	T9	T6	NoRel	true	vakasını	teşhis

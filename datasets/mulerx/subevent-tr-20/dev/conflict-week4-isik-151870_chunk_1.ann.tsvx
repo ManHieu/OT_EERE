@@ -1,0 +1,12 @@
+Text	1863 anayasası federal sistem yanlılarının aşırılıklarının bir sonucu olarak liberal radikallerin iktidarda oldukları süre içerinden eleştirildi .	Yenilenme ve 1886 anayasasının oluşturulması sürecinde merkezi yönetim sadece siyasi sorunların şiddetlenmesine yardımcı oldu .	Bazı departmanlar çok geçmeden bu sorunlar hakkında merkezi hükûmete şikâyette bulunmaya başladı .	Ekonomik alanda zayıf siyasi kararlar ekonomik sorunların baş göstermesine yol açtı .	Savaşı başlatan esas faktör basitçe liberal ve muhafazakâr partilerin kendi aralarında oldukları kadar , birbirleri ile olan anlaşmazlıklarına dayanır .
+Event	T0	eleştirildi	EVENT	133
+Event	T1	Yenilenme	EVENT	147
+Event	T2	oluşturulması	EVENT	178
+Event	T3	açtı	EVENT	453
+Event	T4	oldu	EVENT	268
+Event	T5	başladı	EVENT	364
+Event	T6	kararlar	EVENT	403
+Event	T7	Savaşı	EVENT	460
+Event	T8	anlaşmazlıklarına	EVENT	585
+Relation	T4	T7	NoRel	true	oldu	Savaşı
+Relation	T5	T7	NoRel	true	başladı	Savaşı

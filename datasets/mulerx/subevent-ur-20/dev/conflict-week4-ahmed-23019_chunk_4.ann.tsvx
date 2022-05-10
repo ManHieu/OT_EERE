@@ -1,0 +1,26 @@
+Text	اس کارروائی میں نیٹو فوجوں نے ہوائی طاقت کا بےشمار استعمال کرتے ہوئے فرضی دہشت گردوں کو نشانہ بناتے ہوئے انگنت بم افغانستان کے علاقہ پر گرائے ۔	افغانستان میں امریکی اور نیٹو فوج انوکھے انداز سے جنگ لڑ رہی ہے ۔	اگر امریکی فوجی فائرنگ کی زد میں آ جائیں تو فوراً بمبار لڑاکا ہوائی جہازوں کی مدد مانگ لیتے ہیں ۔	لڑاکا جہاز سارے علاقے پر اندھا_دھند بمباری کر کے سینکڑوں رہائشیوں کو ہلاک کر دیتے ہیں ۔	ویڈٰیو گیم کی طرح لوگوں کو فضا سے نشانہ بنا کر قتل کیا جا رہا ہے ۔
+Event	T0	کارروائی	EVENT	3
+Event	T1	استعمال	EVENT	51
+Event	T2	بناتے	EVENT	94
+Event	T3	گرائے	EVENT	136
+Event	T5	فائرنگ	EVENT	226
+Event	T6	ہلاک	EVENT	377
+Event	T8	گیم	EVENT	403
+Event	T9	بنا	EVENT	436
+Event	T10	قتل	EVENT	443
+Event	T11	جنگ	EVENT	194
+Event	T4	مانگ	EVENT	292
+Event	T12	بمباری	EVENT	344
+Relation	T0	T1	SuperSub	true	کارروائی	استعمال
+Relation	T1	T0	SubSuper	true	استعمال	کارروائی
+Relation	T3	T2	SuperSub	true	گرائے	بناتے
+Relation	T2	T3	SubSuper	true	بناتے	گرائے
+Relation	T10	T9	SuperSub	true	قتل	بنا
+Relation	T9	T10	SubSuper	true	بنا	قتل
+Relation	T0	T5	NoRel	true	کارروائی	فائرنگ
+Relation	T10	T8	NoRel	true	قتل	گیم
+Relation	T11	T4	NoRel	true	جنگ	مانگ
+Relation	T12	T10	NoRel	true	بمباری	قتل
+Relation	T4	T1	NoRel	true	مانگ	استعمال
+Relation	T5	T10	NoRel	true	فائرنگ	قتل
+Relation	T9	T0	NoRel	true	بنا	کارروائی

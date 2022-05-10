@@ -1,0 +1,9 @@
+Text	Tip II de kadından erkeğe bulaşma ihtimali , Tip I de ise erkekten kadına bulaşma ihtimali daha yüksektir .	Afrika da ikinci tip Avrupa ve Amerika'da ise birinci tip daha sık görülür .	HIV ile yaşayan birisiyle kontamine bir iğne paylaşılırsa , virüs bulaşabilir .	( Bu intravenöz ( damardan ) uyuşturucu bağımlıları arasında HIV'in en önemli bulaşma yoludur .	) Dövme ve vücuda piercing yaptırma işlemlerinde kullanılan iğneler , kontamine ise HIV bulaşabilir .
+Event	T0	görülür	EVENT	175
+Event	T1	paylaşılırsa	EVENT	230
+Event	T2	bulaşma	EVENT	343
+Event	T3	bulaşabilir	EVENT	251
+Event	T4	bulaşabilir	EVENT	449
+Event	T5	işlemlerinde	EVENT	397
+Relation	T0	T4	NoRel	true	görülür	bulaşabilir
+Relation	T4	T0	NoRel	true	bulaşabilir	görülür

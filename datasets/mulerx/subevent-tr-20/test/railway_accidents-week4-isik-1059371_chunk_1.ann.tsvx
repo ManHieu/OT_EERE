@@ -1,0 +1,16 @@
+Text	Bir trenin sürücüsü ölürken , yedi yolcu da yaralandı .	İki tren de İstanbul'dan Eskişehir'e gidiyordu .	İkinci tren sinyalde geçti ve öndeki tren hareketsiz dururken ona arkadan çarptı .	Kategori : Türkiye'de demiryolu kazaları Kategori : Bilecik tarihi Kategori : 2010'da Türkiye Kategori : 2010'da demiryolu kazaları	http : / / news . bbc . co . uk / 1 / hi / world / europe / 8438277 . stm Türkiye kuzeyinde trenler çarpıştı BBC News Online 3 Ocak 2010
+Event	T0	ölürken	EVENT	20
+Event	T1	yaralandı	EVENT	44
+Event	T2	geçti	EVENT	126
+Event	T3	çarptı	EVENT	179
+Event	T4	kazaları	EVENT	311
+Event	T5	çarpıştı	EVENT	420
+Event	T6	gidiyordu	EVENT	93
+Event	T7	dururken	EVENT	158
+Event	T8	kazaları	EVENT	220
+Relation	T2	T1	NoRel	true	geçti	yaralandı
+Relation	T2	T5	NoRel	true	geçti	çarpıştı
+Relation	T6	T7	NoRel	true	gidiyordu	dururken
+Relation	T7	T2	NoRel	true	dururken	geçti
+Relation	T7	T4	NoRel	true	dururken	kazaları
+Relation	T8	T7	NoRel	true	kazaları	dururken

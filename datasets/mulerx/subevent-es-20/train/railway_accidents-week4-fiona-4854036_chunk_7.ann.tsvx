@@ -1,0 +1,9 @@
+Text	Consultado el 06/04/2012 .	« Errores y negligencia provocaron la tragedia » , artículo en el diario _ Clarín _ .	Consultado el 06/04/2012 .	« Por las críticas , el Gobierno salió a mostrar la máquina que hará el túnel » , artículo en el diario _ Clarín _ .	Consultado el 06/04/2012 .
+Event	T0	Errores	EVENT	29
+Event	T1	provocaron	EVENT	51
+Event	T2	tragedia	EVENT	65
+Event	T3	críticas	EVENT	150
+Event	T4	salió	EVENT	173
+Event	T5	mostrar	EVENT	181
+Relation	T3	T5	SuperSub	true	críticas	mostrar
+Relation	T5	T3	SubSuper	true	mostrar	críticas

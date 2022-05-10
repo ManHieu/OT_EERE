@@ -1,0 +1,16 @@
+Text	Radbaz Responsa 691 : " Under the dome on the Temple Mount , which the Arabs call El-Sakhrah , without a doubt , is the location of the Foundation Stone .	" ; Ya 'ari , Avraham :__Igrot Eretz Yisrael__by Obadiah ben Abraham ، رمات_گان 1971 : " I sought the place of the Foundation Stone where the تابوت سکینہ was placed , and many people told me it is under a tall and beautiful dome which the Arabs built in the Temple precinct .	"	Sternbuch , Moishe__Teshuvos Ve-hanhagos__Vol._3 , Ch._39 : “ In truth they have erred , thinking that the stone upon they built their dome was in fact the Foundation Stone , however , most possibly , the Stone is located further to the south in the open space opposite the exposed section of the Western Wall .	”
+Event	T0	call	EVENT	77
+Event	T1	sought	EVENT	246
+Event	T2	placed	EVENT	313
+Event	T3	told	EVENT	338
+Event	T4	built	EVENT	400
+Event	T5	erred	EVENT	514
+Event	T6	thinking	EVENT	522
+Event	T7	built	EVENT	556
+Event	T8	located	EVENT	647
+Relation	T4	T6	SuperSub	true	built	thinking
+Relation	T6	T4	SubSuper	true	thinking	built
+Relation	T7	T6	SuperSub	true	built	thinking
+Relation	T6	T7	SubSuper	true	thinking	built
+Relation	T1	T5	NoRel	true	sought	erred
+Relation	T3	T1	NoRel	true	told	sought

@@ -1,0 +1,22 @@
+Text	Kaza , Güney Çin Denizi'ndeki ABD ordusunun da karıştığı ikinci kaza .	2021 Ekim ayında , nükleer enerji ile çalışan denizaltı , USS Connecticticut , bir sualtı dağına çarpmış ve 11 mürettebatın yaralanıp balast tanklarına zarar vermişti .	Kategori : Amerika Birleşik Devletleri askerî tarihi Kategori : Amerika Birleşik Devletleri'ndeki havacılık kazaları ve olayları Kategori : 2022'de havacılık kazaları ve olayları Kategori : 2022'de Amerika Birleşik Devletleri Kategori : Lockheed Martin F - 35 Lightning II içeren kazalar ve olaylar		
+Event	T0	Kaza	EVENT	0
+Event	T1	kaza	EVENT	64
+Event	T2	çarpmış	EVENT	168
+Event	T3	yaralanıp	EVENT	195
+Event	T4	vermişti	EVENT	229
+Event	T5	kazalar	EVENT	520
+Event	T6	olaylar	EVENT	531
+Event	T7	kazaları	EVENT	348
+Event	T8	olayları	EVENT	360
+Event	T9	kazaları	EVENT	398
+Event	T10	olayları	EVENT	410
+Relation	T2	T3	SuperSub	true	çarpmış	yaralanıp
+Relation	T3	T2	SubSuper	true	yaralanıp	çarpmış
+Relation	T2	T4	SuperSub	true	çarpmış	vermişti
+Relation	T4	T2	SubSuper	true	vermişti	çarpmış
+Relation	T10	T5	NoRel	true	olayları	kazalar
+Relation	T10	T8	NoRel	true	olayları	olayları
+Relation	T4	T1	NoRel	true	vermişti	kaza
+Relation	T5	T6	NoRel	true	kazalar	olaylar
+Relation	T6	T10	NoRel	true	olaylar	olayları
+Relation	T9	T3	NoRel	true	kazaları	yaralanıp

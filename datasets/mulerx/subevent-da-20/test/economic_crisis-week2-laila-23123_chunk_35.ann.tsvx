@@ -1,0 +1,16 @@
+Text	Det skyldtes en stor del statsmanden de Malesherbes , der besad den vigtige post som øverste censor i Paris .	Han havde sympati for mange af oplysningstidens radikale tanker og gjorde meget for at se igennem fingrne med mange af de forbudte skrifter .	thumb | left | Jean-Jacques Rousseau .	Jean-Jacques Rousseau var en anden af Frankrigs oplysningsfilosoffer , som fik stor betydning for eftertiden .	Rousseau mente , at den europæiske civilisation havde fordærvet og ødelagt menneskenes sind , og han agiterede for , at mennesket burde vende dette samfunds liv ryggen .
+Event	T0	skyldtes	EVENT	4
+Event	T1	besad	EVENT	58
+Event	T2	gjorde	EVENT	177
+Event	T3	fik	EVENT	366
+Event	T4	fordærvet	EVENT	456
+Event	T5	ødelagt	EVENT	469
+Event	T6	vende	EVENT	538
+Relation	T1	T2	SuperSub	true	besad	gjorde
+Relation	T2	T1	SubSuper	true	gjorde	besad
+Relation	T3	T4	SuperSub	true	fik	fordærvet
+Relation	T4	T3	SubSuper	true	fordærvet	fik
+Relation	T3	T5	SuperSub	true	fik	ødelagt
+Relation	T5	T3	SubSuper	true	ødelagt	fik
+Relation	T3	T2	NoRel	true	fik	gjorde
+Relation	T5	T4	NoRel	true	ødelagt	fordærvet

@@ -1,0 +1,9 @@
+Text	Kasırganın sigorta sektörüne getirdiği tazminat ödeme yükü , Swiss Re reasürans şirketi tarafından 3,5 milyar Euro olarak tahmin edildi .	Bunun 530 milyar Avrosu Birleşik Krallık'taki hasarlardan kaynaklanıyordu .	Alp Dağlarında yüksek irtifa rüzgârlarının esmesi nedeniyle Avusturya hükûmeti dağcıları ve kayakçıları sığınak aramaları için uyardı .	Fırtınaya _ Kyrill _ adını Berlin Özgür Üniversitesi'nin meteoroloji enstitüsü verdi .	İsim , üniversiteye bağışta bulunan ve Berlin civarında yaşayan Bulgar kökenli bir hayırsevere aitti .
+Event	T1	edildi	EVENT	129
+Event	T4	uyardı	EVENT	341
+Event	T5	verdi	EVENT	429
+Event	T6	aitti	EVENT	532
+Event	T7	Kasırganın	EVENT	0
+Event	T8	rüzgârlarının	EVENT	243
+Relation	T4	T5	NoRel	true	uyardı	verdi
+Relation	T8	T4	NoRel	true	rüzgârlarının	uyardı

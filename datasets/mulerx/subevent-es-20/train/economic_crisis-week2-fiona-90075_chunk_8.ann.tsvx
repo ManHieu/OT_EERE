@@ -1,0 +1,34 @@
+Text	Por solicitud de su padre , fue trasladado a un hospital más cercano a su hogar , llegando a Alexandersbad el 25 de octubre .	Aún convaleciente , solicitó que se le permitiera inscribirse para entrenar como piloto , por lo que después de unas vacaciones navideñas con su familia , se reportó a Múnich .	Recibió adiestramiento básico de vuelo en las bases aéreas de Oberschleissheim y Lechfeld de marzo a junio de 1918 y entrenamiento avanzado en Valenciennes en Francia en octubre .	El 14 de octubre fue asignado al _ Jagdstaffel _ 35b , un escuadrón de combate bávaro equipado con biplanos Fokker D. VII .	No vio ninguna acción con el _ Jagdstaffel _ 35b , ya que la guerra terminó el 11 de noviembre , antes de que tuviera la oportunidad .
+Event	T0	solicitud	EVENT	4
+Event	T1	trasladado	EVENT	32
+Event	T10	avanzado	EVENT	434
+Event	T11	asignado	EVENT	504
+Event	T12	combate	EVENT	554
+Event	T13	equipado	EVENT	569
+Event	T15	acción	EVENT	622
+Event	T16	terminó	EVENT	675
+Event	T2	llegando	EVENT	82
+Event	T3	solicitó	EVENT	146
+Event	T4	inscribirse	EVENT	176
+Event	T5	entrenar	EVENT	193
+Event	T6	vacaciones	EVENT	243
+Event	T7	reportó	EVENT	284
+Event	T8	adiestramiento	EVENT	311
+Event	T9	vuelo	EVENT	336
+Relation	T1	T3	SuperSub	true	trasladado	solicitó
+Relation	T3	T1	SubSuper	true	solicitó	trasladado
+Relation	T1	T11	SuperSub	true	trasladado	asignado
+Relation	T11	T1	SubSuper	true	asignado	trasladado
+Relation	T1	T6	NoRel	true	trasladado	vacaciones
+Relation	T10	T0	NoRel	true	avanzado	solicitud
+Relation	T10	T12	NoRel	true	avanzado	combate
+Relation	T12	T13	NoRel	true	combate	equipado
+Relation	T12	T2	NoRel	true	combate	llegando
+Relation	T13	T1	NoRel	true	equipado	trasladado
+Relation	T13	T12	NoRel	true	equipado	combate
+Relation	T13	T8	NoRel	true	equipado	adiestramiento
+Relation	T5	T6	NoRel	true	entrenar	vacaciones
+Relation	T7	T1	NoRel	true	reportó	trasladado
+Relation	T8	T1	NoRel	true	adiestramiento	trasladado
+Relation	T9	T11	NoRel	true	vuelo	asignado
+Relation	T9	T12	NoRel	true	vuelo	combate

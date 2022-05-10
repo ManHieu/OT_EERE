@@ -1,0 +1,43 @@
+Text	En primer lugar , la decisión del juez es contradictoria con la orden de julio de 2004 , que le dio la propia Sección Cuarta de la Sala de lo Penal , para que investigase el siniestro .	Además , tachó de " incorrecto procesalmente " el auto , reconoce la existencia de un delito y , al mismo tiempo , ordena el sobreseimiento libre , en lugar de provisional , lo que provocaría el cierre total , sin posibilidad de reapertura .	El tercero , es que se vulnera el derecho a la tutela judicial efectiva , al no acordar ninguna de las solicitudes de las víctimas .	_ Desde el principio , se ha cercenado la investigación y se han denegado diligencias que eran necesarias para el esclarecimiento de los hechos _ , alegó .	Pido _ una investigación con profundidad y sin límites , para saber qué responsabilidades hay que exigir y a qué niveles _ , concluyó el Fiscal Javier Zaragoza .
+Event	T0	decisión	EVENT	21
+Event	T1	dio	EVENT	96
+Event	T2	investigase	EVENT	159
+Event	T3	siniestro	EVENT	174
+Event	T4	tachó	EVENT	195
+Event	T5	reconoce	EVENT	243
+Event	T6	delito	EVENT	272
+Event	T7	ordena	EVENT	301
+Event	T8	provocaría	EVENT	367
+Event	T9	cierre	EVENT	381
+Event	T10	reapertura	EVENT	415
+Event	T11	vulnera	EVENT	451
+Event	T12	cercenado	EVENT	590
+Event	T13	investigación	EVENT	603
+Event	T14	diligencias	EVENT	635
+Event	T15	esclarecimiento	EVENT	675
+Event	T16	hechos	EVENT	698
+Event	T17	alegó	EVENT	709
+Event	T18	Pido	EVENT	717
+Event	T19	investigación	EVENT	728
+Event	T20	concluyó	EVENT	842
+Event	T21	orden	EVENT	64
+Relation	T3	T21	SuperSub	true	siniestro	orden
+Relation	T21	T3	SubSuper	true	orden	siniestro
+Relation	T1	T16	NoRel	true	dio	hechos
+Relation	T1	T21	NoRel	true	dio	orden
+Relation	T11	T20	NoRel	true	vulnera	concluyó
+Relation	T11	T21	NoRel	true	vulnera	orden
+Relation	T13	T6	NoRel	true	investigación	delito
+Relation	T14	T19	NoRel	true	diligencias	investigación
+Relation	T15	T8	NoRel	true	esclarecimiento	provocaría
+Relation	T16	T1	NoRel	true	hechos	dio
+Relation	T16	T19	NoRel	true	hechos	investigación
+Relation	T16	T2	NoRel	true	hechos	investigase
+Relation	T16	T20	NoRel	true	hechos	concluyó
+Relation	T19	T8	NoRel	true	investigación	provocaría
+Relation	T20	T5	NoRel	true	concluyó	reconoce
+Relation	T5	T21	NoRel	true	reconoce	orden
+Relation	T7	T21	NoRel	true	ordena	orden
+Relation	T7	T4	NoRel	true	ordena	tachó
+Relation	T9	T3	NoRel	true	cierre	siniestro
+Relation	T9	T5	NoRel	true	cierre	reconoce

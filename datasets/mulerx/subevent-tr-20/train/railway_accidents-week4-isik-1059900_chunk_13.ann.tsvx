@@ -1,0 +1,15 @@
+Text	indiatimes. com / news / news - by - industry / transportation / railways / Trains - collide - in - dense - fog - in - Uttar- Pradesh / articleshow / 5404290 .	cms Trains collide in dense fog in Uttar_Pradesh The Economic Times 4 Ocak 2010	http : / / www. google . com / hosted news / afp / article / ALeqM5j1xL6 - j0Zlckb6UVmFvNJlSkTpFA 10 die as trains collide in fog - bound northern India Google News 4 Ocak 2010	http : / / www.	washingtonpost. com / wp - dyn / content / article / 2010 / 01 / 02 / AR2010010200133 .html 5 dead , 50 injured in train accidents in India Washington Post 4 Ocak 2010
+Event	T0	collide	EVENT	85
+Event	T1	fog	EVENT	188
+Event	T2	die	EVENT	341
+Event	T3	dead	EVENT	527
+Event	T4	injured	EVENT	537
+Event	T5	accidents	EVENT	554
+Event	T6	fog	EVENT	108
+Event	T7	collide	EVENT	171
+Event	T8	collide	EVENT	355
+Event	T9	fog	EVENT	366
+Relation	T1	T6	NoRel	true	fog	fog
+Relation	T5	T6	NoRel	true	accidents	fog
+Relation	T8	T3	NoRel	true	collide	dead
+Relation	T9	T0	NoRel	true	fog	collide

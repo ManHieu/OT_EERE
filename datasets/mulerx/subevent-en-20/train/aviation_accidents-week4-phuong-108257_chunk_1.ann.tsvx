@@ -1,0 +1,50 @@
+Text	All 269 passengers and crew aboard were killed , including Larry McDonald , a United States Representative from Georgia .	The Soviet Union found the wreckage under the sea two weeks later on September 15 , and found the flight recorders in October , but this information was kept secret until 1992 .	The Soviet Union initially denied knowledge of the incident , but later admitted shooting down the aircraft , claiming that it was on a MASINT spy mission .	The Politburo of the Communist Party of the Soviet Union said it was a deliberate provocation by the United States to probe the Soviet Union 's military preparedness , or even to provoke a war .	The White House accused the Soviet Union of obstructing search and rescue operations .
+Event	T0	killed	EVENT	40
+Event	T1	found	EVENT	139
+Event	T2	wreckage	EVENT	149
+Event	T3	found	EVENT	210
+Event	T5	incident	EVENT	351
+Event	T6	claiming	EVENT	410
+Event	T7	mission	EVENT	447
+Event	T8	said	EVENT	514
+Event	T9	provocation	EVENT	539
+Event	T10	probe	EVENT	575
+Event	T11	preparedness	EVENT	610
+Event	T12	provoke	EVENT	636
+Event	T13	war	EVENT	646
+Event	T14	accused	EVENT	668
+Event	T15	search	EVENT	708
+Event	T16	operations	EVENT	726
+Event	T17	kept secret	EVENT	275
+Event	T4	flight recorders	EVENT	220
+Event	T18	denied	EVENT	327
+Event	T19	admitted	EVENT	372
+Event	T20	shooting down	EVENT	381
+Event	T21	obstructing	EVENT	696
+Relation	T21	T15	SuperSub	true	obstructing	search
+Relation	T15	T21	SubSuper	true	search	obstructing
+Relation	T21	T16	SuperSub	true	obstructing	operations
+Relation	T16	T21	SubSuper	true	operations	obstructing
+Relation	T0	T10	NoRel	true	killed	probe
+Relation	T1	T13	NoRel	true	found	war
+Relation	T1	T21	NoRel	true	found	obstructing
+Relation	T1	T6	NoRel	true	found	claiming
+Relation	T10	T13	NoRel	true	probe	war
+Relation	T10	T4	NoRel	true	probe	flight recorders
+Relation	T12	T17	NoRel	true	provoke	kept secret
+Relation	T16	T0	NoRel	true	operations	killed
+Relation	T16	T5	NoRel	true	operations	incident
+Relation	T17	T11	NoRel	true	kept secret	preparedness
+Relation	T17	T3	NoRel	true	kept secret	found
+Relation	T18	T9	NoRel	true	denied	provocation
+Relation	T19	T11	NoRel	true	admitted	preparedness
+Relation	T2	T0	NoRel	true	wreckage	killed
+Relation	T2	T6	NoRel	true	wreckage	claiming
+Relation	T2	T9	NoRel	true	wreckage	provocation
+Relation	T20	T15	NoRel	true	shooting down	search
+Relation	T20	T21	NoRel	true	shooting down	obstructing
+Relation	T4	T7	NoRel	true	flight recorders	mission
+Relation	T4	T8	NoRel	true	flight recorders	said
+Relation	T5	T9	NoRel	true	incident	provocation
+Relation	T6	T8	NoRel	true	claiming	said
+Relation	T7	T1	NoRel	true	mission	found

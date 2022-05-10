@@ -1,0 +1,53 @@
+Text	When announcing the distance remaining to Maputo the navigator was apparently referring to the Doppler navigation system , which was not accurate , rather than the DME equipment available on board which correctly displayed the distance to the Maputo DME beacon .	The crew were criticized for failing to perform any checklist items or navigational aid identification , as well as for the distractions and non-essential conversations in the cockpit during the descent into Maputo .	As a consequence of not announcing to the other crew members which navigational aids were being used , or the frequencies being set , mistakes could not be corrected by others through " cross-checking " .	Regarding it essential that the relatively large crew in the cockpit work as a well - integrated team , the board concluded that " demonstrably they had not " .	The board found that use of non-standard phraseology between the Maputo controller and the crew led to confusion about the status of the ILS signal and whether the runway lights were on .
+Event	T0	announcing	EVENT	5
+Event	T1	remaining	EVENT	29
+Event	T2	referring	EVENT	78
+Event	T3	displayed	EVENT	213
+Event	T4	criticized	EVENT	277
+Event	T5	failing	EVENT	292
+Event	T6	perform	EVENT	303
+Event	T7	distractions	EVENT	387
+Event	T8	conversations	EVENT	418
+Event	T9	descent	EVENT	458
+Event	T10	announcing	EVENT	504
+Event	T11	used	EVENT	576
+Event	T12	set	EVENT	608
+Event	T13	mistakes	EVENT	614
+Event	T14	corrected	EVENT	636
+Event	T15	Regarding	EVENT	685
+Event	T16	work	EVENT	754
+Event	T17	concluded	EVENT	799
+Event	T18	found	EVENT	856
+Event	T19	use	EVENT	867
+Event	T20	confusion	EVENT	949
+Event	T21	signal	EVENT	987
+Event	T22	cross-checking	EVENT	666
+Relation	T9	T5	SuperSub	true	descent	failing
+Relation	T5	T9	SubSuper	true	failing	descent
+Relation	T0	T19	NoRel	true	announcing	use
+Relation	T0	T20	NoRel	true	announcing	confusion
+Relation	T1	T12	NoRel	true	remaining	set
+Relation	T1	T20	NoRel	true	remaining	confusion
+Relation	T1	T4	NoRel	true	remaining	criticized
+Relation	T15	T9	NoRel	true	Regarding	descent
+Relation	T17	T0	NoRel	true	concluded	announcing
+Relation	T17	T14	NoRel	true	concluded	corrected
+Relation	T17	T5	NoRel	true	concluded	failing
+Relation	T18	T16	NoRel	true	found	work
+Relation	T18	T3	NoRel	true	found	displayed
+Relation	T19	T17	NoRel	true	use	concluded
+Relation	T2	T3	NoRel	true	referring	displayed
+Relation	T20	T8	NoRel	true	confusion	conversations
+Relation	T21	T22	NoRel	true	signal	cross-checking
+Relation	T21	T4	NoRel	true	signal	criticized
+Relation	T21	T7	NoRel	true	signal	distractions
+Relation	T22	T11	NoRel	true	cross-checking	used
+Relation	T3	T1	NoRel	true	displayed	remaining
+Relation	T3	T4	NoRel	true	displayed	criticized
+Relation	T5	T3	NoRel	true	failing	displayed
+Relation	T6	T18	NoRel	true	perform	found
+Relation	T6	T8	NoRel	true	perform	conversations
+Relation	T7	T19	NoRel	true	distractions	use
+Relation	T8	T17	NoRel	true	conversations	concluded
+Relation	T9	T0	NoRel	true	descent	announcing
+Relation	T9	T7	NoRel	true	descent	distractions

@@ -1,0 +1,46 @@
+Text	In this area of rural Arkansas there was no controlled airspace below 18,000 feet ( 5,486 m ) .	Further , according to Federal Aviation Regulations the airline dispatcher should have been notified the flight was proceeding under VFR .	The captain also could have contacted controllers in Fort Worth to open their flight plan or receive radar vectoring in the area .	From the conversation of the crew on the recorder the board concluded the flight encountered inclement weather conditions during the flight and was likely in inclement weather conditions when it crashed .	The board concluded that the cause of the accident was the captain {{'}} s decision to continue flying into inclement weather at night , his not taking advantage of the nearby navigational aids to get a fix on their position , and his decision to descend despite the first officer { {'}} s concerns about position and terrain .
+Event	T0	notified	EVENT	188
+Event	T1	flight	EVENT	201
+Event	T2	contacted	EVENT	263
+Event	T3	open	EVENT	302
+Event	T4	receive	EVENT	328
+Event	T5	vectoring	EVENT	342
+Event	T6	conversation	EVENT	375
+Event	T7	concluded	EVENT	426
+Event	T8	flight	EVENT	499
+Event	T9	crashed	EVENT	561
+Event	T10	concluded	EVENT	581
+Event	T11	accident	EVENT	613
+Event	T12	decision	EVENT	646
+Event	T13	fix	EVENT	774
+Event	T14	decision	EVENT	806
+Event	T15	descend	EVENT	818
+Event	T16	concerns	EVENT	861
+Event	T17	proceeding	EVENT	212
+Event	T18	encountered	EVENT	447
+Relation	T8	T18	SuperSub	true	flight	encountered
+Relation	T18	T8	SubSuper	true	encountered	flight
+Relation	T0	T17	NoRel	true	notified	proceeding
+Relation	T0	T3	NoRel	true	notified	open
+Relation	T1	T10	NoRel	true	flight	concluded
+Relation	T10	T13	NoRel	true	concluded	fix
+Relation	T11	T9	NoRel	true	accident	crashed
+Relation	T12	T10	NoRel	true	decision	concluded
+Relation	T13	T15	NoRel	true	fix	descend
+Relation	T14	T8	NoRel	true	decision	flight
+Relation	T16	T13	NoRel	true	concerns	fix
+Relation	T16	T17	NoRel	true	concerns	proceeding
+Relation	T16	T3	NoRel	true	concerns	open
+Relation	T18	T13	NoRel	true	encountered	fix
+Relation	T18	T15	NoRel	true	encountered	descend
+Relation	T18	T2	NoRel	true	encountered	contacted
+Relation	T2	T1	NoRel	true	contacted	flight
+Relation	T2	T13	NoRel	true	contacted	fix
+Relation	T2	T4	NoRel	true	contacted	receive
+Relation	T3	T18	NoRel	true	open	encountered
+Relation	T4	T7	NoRel	true	receive	concluded
+Relation	T5	T11	NoRel	true	vectoring	accident
+Relation	T6	T0	NoRel	true	conversation	notified
+Relation	T7	T14	NoRel	true	concluded	decision
+Relation	T8	T15	NoRel	true	flight	descend
+Relation	T9	T12	NoRel	true	crashed	decision

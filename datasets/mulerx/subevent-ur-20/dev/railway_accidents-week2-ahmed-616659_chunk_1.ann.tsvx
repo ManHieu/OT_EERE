@@ -1,0 +1,22 @@
+Text	اس سے پہلے کہ پہلی ٹرین کے مسئلے کو حل کیا جاتا ، لینڈ آپریٹر کی شفٹ تبدیل ہو گئی ۔	اسی وقت دوسری ٹرین نے اپنے سفر کو شروع کرنے کی اجازت مانگی تو لینڈ آپریٹر نے منظوری دے دی ۔	دوسری ٹرین نے پوری رفتار کے ساتھ پہلی ٹرین کو پیچھے سے ٹکر مار دی ۔	تصادم کے نتیجے میں چار بوگیاں اتر گئیں ، جن میں سے دو کو آگ لگ گئی ۔	دونوں بوگیوں میں موجود چوالیس افراد اور عملہ جاں بحق اور سو سے زائد زخمی قرار دے دیے گئے تھے ۔
+Event	T0	مسئلے	EVENT	27
+Event	T10	زخمی	EVENT	381
+Event	T12	ٹکر	EVENT	231
+Event	T13	جاں بحق	EVENT	358
+Event	T2	تبدیل	EVENT	69
+Event	T3	منظوری	EVENT	161
+Event	T4	سفر	EVENT	111
+Event	T5	شروع	EVENT	118
+Event	T6	مانگی	EVENT	137
+Event	T8	تصادم	EVENT	244
+Event	T9	آگ	EVENT	301
+Relation	T4	T5	SuperSub	true	سفر	شروع
+Relation	T5	T4	SubSuper	true	شروع	سفر
+Relation	T10	T3	NoRel	true	زخمی	منظوری
+Relation	T10	T4	NoRel	true	زخمی	سفر
+Relation	T12	T3	NoRel	true	ٹکر	منظوری
+Relation	T12	T9	NoRel	true	ٹکر	آگ
+Relation	T3	T9	NoRel	true	منظوری	آگ
+Relation	T8	T12	NoRel	true	تصادم	ٹکر
+Relation	T8	T2	NoRel	true	تصادم	تبدیل
+Relation	T9	T3	NoRel	true	آگ	منظوری

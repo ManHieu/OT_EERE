@@ -1,0 +1,35 @@
+Text	Similar girders collapsed that night . ]	On 3 May 2021 at 22:25 CDT ( UTC−5 ) , an eastward - bound train was passing on the elevated section of track between Olivos and Tezonco stations in Tláhuac .	Around before reaching Olivos station , the section between columns 12 and 13 collapsed when a beam supporting two girders failed , causing the last two train cars to fall off the track .	The fallen cars ended up suspended in a V - shape with one train car hitting the ground and the other left dangling .	Debris fell onto an automobile traveling on Tláhuac Avenue , killing the driver and injuring his wife .
+Event	T0	collapsed	EVENT	16
+Event	T1	reaching	EVENT	214
+Event	T10	killing	EVENT	567
+Event	T11	injuring	EVENT	590
+Event	T13	fall off	EVENT	367
+Event	T14	ended up	EVENT	404
+Event	T15	hitting	EVENT	457
+Event	T16	fell onto	EVENT	513
+Event	T2	section	EVENT	244
+Event	T3	collapsed	EVENT	278
+Event	T4	failed	EVENT	323
+Event	T5	causing	EVENT	332
+Event	T6	fallen	EVENT	392
+Event	T7	suspended	EVENT	413
+Event	T8	dangling	EVENT	495
+Event	T9	traveling	EVENT	537
+Relation	T1	T3	SuperSub	true	reaching	collapsed
+Relation	T3	T1	SubSuper	true	collapsed	reaching
+Relation	T3	T4	SuperSub	true	collapsed	failed
+Relation	T4	T3	SubSuper	true	failed	collapsed
+Relation	T13	T6	SuperSub	true	fall off	fallen
+Relation	T6	T13	SubSuper	true	fallen	fall off
+Relation	T0	T3	NoRel	true	collapsed	collapsed
+Relation	T1	T0	NoRel	true	reaching	collapsed
+Relation	T10	T11	NoRel	true	killing	injuring
+Relation	T13	T9	NoRel	true	fall off	traveling
+Relation	T15	T9	NoRel	true	hitting	traveling
+Relation	T2	T10	NoRel	true	section	killing
+Relation	T4	T7	NoRel	true	failed	suspended
+Relation	T6	T15	NoRel	true	fallen	hitting
+Relation	T8	T2	NoRel	true	dangling	section
+Relation	T9	T10	NoRel	true	traveling	killing
+Relation	T9	T16	NoRel	true	traveling	fell onto
+Relation	T9	T7	NoRel	true	traveling	suspended

@@ -1,0 +1,41 @@
+Text	کراچی واپسی کے لیے وہ پرواز 8303 پر سوار تھیں جو حادثے کا شکار ہو گئی ۔	24 نیوز سے تعلق رکھنے والے نیوز ڈائریکٹر انصار نقوی بھی پرواز 8303 میں جاں بحق ہو گئے ۔	حادثے کے بعد ہوائی جہاز کے تیار کنندہ ، ایئربس نے اعلان کیا کہ وہ تفتیش میں مدد فراہم کریں گے ۔	حادثے کے بعد ، فلائٹ ڈیٹا ریکارڈر ( ایف ڈی آر ) اور کاک_پٹ وائس ریکارڈر ( سی وی آر ) دونوں مل گئے اور تحقیقات کمیٹی کے حوالے کر دیے گئے ۔	ایئربس کی تفتیشی ٹیم کراچی پہنچی اور اس نے پی آئی اے طیارے کے حادثے کی ابتدائی تحقیقات مکمل کیں .
+Event	T0	واپسی	EVENT	6
+Event	T1	حادثے	EVENT	49
+Event	T4	پرواز	EVENT	128
+Event	T6	حادثے	EVENT	160
+Event	T8	تفتیش	EVENT	226
+Event	T9	حادثے	EVENT	256
+Event	T10	تحقیقات	EVENT	358
+Event	T11	حوالے	EVENT	375
+Event	T12	پہنچی	EVENT	421
+Event	T13	حادثے	EVENT	456
+Event	T2	پرواز	EVENT	22
+Event	T14	جاں بحق	EVENT	143
+Event	T3	اعلان	EVENT	210
+Event	T5	فراہم	EVENT	240
+Event	T7	مل	EVENT	347
+Event	T15	تحقیقات	EVENT	473
+Event	T16	مکمل	EVENT	481
+Relation	T2	T0	SuperSub	true	پرواز	واپسی
+Relation	T0	T2	SubSuper	true	واپسی	پرواز
+Relation	T15	T12	SuperSub	true	تحقیقات	پہنچی
+Relation	T12	T15	SubSuper	true	پہنچی	تحقیقات
+Relation	T12	T8	NoRel	true	پہنچی	تفتیش
+Relation	T13	T11	NoRel	true	حادثے	حوالے
+Relation	T13	T12	NoRel	true	حادثے	پہنچی
+Relation	T15	T0	NoRel	true	تحقیقات	واپسی
+Relation	T16	T15	NoRel	true	مکمل	تحقیقات
+Relation	T16	T8	NoRel	true	مکمل	تفتیش
+Relation	T2	T12	NoRel	true	پرواز	پہنچی
+Relation	T2	T5	NoRel	true	پرواز	فراہم
+Relation	T3	T1	NoRel	true	اعلان	حادثے
+Relation	T3	T16	NoRel	true	اعلان	مکمل
+Relation	T4	T0	NoRel	true	پرواز	واپسی
+Relation	T4	T1	NoRel	true	پرواز	حادثے
+Relation	T4	T14	NoRel	true	پرواز	جاں بحق
+Relation	T4	T9	NoRel	true	پرواز	حادثے
+Relation	T5	T1	NoRel	true	فراہم	حادثے
+Relation	T6	T10	NoRel	true	حادثے	تحقیقات
+Relation	T6	T12	NoRel	true	حادثے	پہنچی
+Relation	T7	T0	NoRel	true	مل	واپسی
+Relation	T7	T15	NoRel	true	مل	تحقیقات

@@ -1,0 +1,24 @@
+Text	1932ء اور 1933ء کا سال دوبارہ چین و جاپان کے لیے بُرا ثابت ہوا جس میں دو زلزلوں سے چین کے 70 ہزار اور جاپان کے تقریباً 3 ہزار افراد جان سے ہاتھ دھو بیٹھے ۔	1933ء میں ہی کیلیفورنیا میں معمولی شدت کے زلزلے سے 115 افراد موت کا شکار ہوئے ۔	1934ء میں ہندوستان کے صوبہ بہار میں زلزلے سے 13 ہزار افراد لقمہ اجل بنے ۔	1935ء میں تائیوان میں زلزلے سے 3279 افراد ہلاک ہوئے ۔	1935ء میں پاکستان کے شہر کوئٹہ میں تباہ کن زلزلہ آیا ، جس سے کوئٹہ شہر بُری طرح تباہ ہو گیا ۔
+Event	T0	ہوا	EVENT	59
+Event	T1	زلزلوں	EVENT	73
+Event	T2	بیٹھے	EVENT	148
+Event	T3	زلزلے	EVENT	198
+Event	T4	موت	EVENT	217
+Event	T5	ہوئے	EVENT	229
+Event	T6	زلزلے	EVENT	272
+Event	T7	بنے	EVENT	304
+Event	T8	زلزلے	EVENT	332
+Event	T9	ہوئے	EVENT	357
+Event	T10	آیا	EVENT	413
+Event	T11	تباہ	EVENT	444
+Event	T12	گیا	EVENT	452
+Relation	T0	T12	NoRel	true	ہوا	گیا
+Relation	T1	T12	NoRel	true	زلزلوں	گیا
+Relation	T11	T3	NoRel	true	تباہ	زلزلے
+Relation	T12	T0	NoRel	true	گیا	ہوا
+Relation	T12	T10	NoRel	true	گیا	آیا
+Relation	T2	T3	NoRel	true	بیٹھے	زلزلے
+Relation	T5	T6	NoRel	true	ہوئے	زلزلے
+Relation	T5	T7	NoRel	true	ہوئے	بنے
+Relation	T7	T6	NoRel	true	بنے	زلزلے
+Relation	T9	T3	NoRel	true	ہوئے	زلزلے

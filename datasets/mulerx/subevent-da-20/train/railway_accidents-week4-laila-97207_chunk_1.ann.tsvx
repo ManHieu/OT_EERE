@@ -1,0 +1,22 @@
+Text	Kollisionen skete med en samlet hastighed på ca. 205 km/t.	Ved kollisionen blev den forreste vogn i Thames Train 0806 fra Paddington til Bedwyn , Wiltshire fuldstændig knust .	Togets dieseloliebeholdning blev antændt og forårsagede flere brande i vragene , især i den forreste vogn i det modkørende tog .	Vognen udbrændte fuldstændigt .	Som den umiddelbare årsag til ulykken blev det fastslået , at lokomotivføreren på Thames Train 0806 blot 563 meter før kollisionen passerede signal SN109 , mens dette viste rødt lys ( " stop " ) .
+Event	T1	knust	EVENT	168
+Event	T2	antændt	EVENT	209
+Event	T3	forårsagede	EVENT	220
+Event	T4	brande	EVENT	238
+Event	T5	ulykken	EVENT	367
+Event	T6	fastslået	EVENT	384
+Event	T7	viste	EVENT	504
+Event	T8	kollisionen	EVENT	63
+Event	T9	udbrændte	EVENT	312
+Event	T10	kollisionen	EVENT	456
+Event	T11	stop	EVENT	523
+Event	T12	passerede	EVENT	468
+Event	T13	Kollisionen	EVENT	0
+Relation	T5	T10	SuperSub	true	ulykken	kollisionen
+Relation	T10	T5	SubSuper	true	kollisionen	ulykken
+Relation	T10	T9	NoRel	true	kollisionen	udbrændte
+Relation	T12	T7	NoRel	true	passerede	viste
+Relation	T13	T5	NoRel	true	Kollisionen	ulykken
+Relation	T13	T9	NoRel	true	Kollisionen	udbrændte
+Relation	T4	T6	NoRel	true	brande	fastslået
+Relation	T9	T4	NoRel	true	udbrændte	brande

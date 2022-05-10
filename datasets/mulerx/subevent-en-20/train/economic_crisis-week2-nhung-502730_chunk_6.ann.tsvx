@@ -1,0 +1,39 @@
+Text	Power was not fully restored until late the following day .	Among the outcomes of the blackout were detailed restoration procedures that are well documented and used in operator training to reduce restoration time .	The blackout occurred when the city was facing a severe financial crisis and its residents were terrified by the Son of Sam murders .	The nation as a whole , especially New York City , was suffering from a protracted economic downturn , and commentators have contrasted the event with the good - natured " Where Were You When the Lights Went Out ? " atmosphere of 1965 .	Some pointed to the financial crisis as a root cause of the disorder ; others noted the hot July weather , as the East Coast was in the middle of a brutal heat wave .
+Event	T0	restored	EVENT	20
+Event	T1	outcomes	EVENT	70
+Event	T10	terrified	EVENT	312
+Event	T11	murders	EVENT	340
+Event	T12	suffering	EVENT	405
+Event	T13	downturn	EVENT	442
+Event	T14	contrasted	EVENT	475
+Event	T15	event	EVENT	490
+Event	T17	pointed	EVENT	592
+Event	T18	crisis	EVENT	617
+Event	T19	disorder	EVENT	647
+Event	T2	blackout	EVENT	86
+Event	T20	noted	EVENT	665
+Event	T21	wave	EVENT	747
+Event	T24	procedures	EVENT	121
+Event	T4	documented	EVENT	146
+Event	T5	used	EVENT	161
+Event	T6	training	EVENT	178
+Event	T7	occurred	EVENT	229
+Event	T8	facing	EVENT	256
+Event	T9	crisis	EVENT	282
+Relation	T24	T4	SuperSub	true	procedures	documented
+Relation	T4	T24	SubSuper	true	documented	procedures
+Relation	T24	T5	SuperSub	true	procedures	used
+Relation	T5	T24	SubSuper	true	used	procedures
+Relation	T10	T17	NoRel	true	terrified	pointed
+Relation	T10	T18	NoRel	true	terrified	crisis
+Relation	T14	T4	NoRel	true	contrasted	documented
+Relation	T17	T10	NoRel	true	pointed	terrified
+Relation	T18	T8	NoRel	true	crisis	facing
+Relation	T19	T12	NoRel	true	disorder	suffering
+Relation	T20	T13	NoRel	true	noted	downturn
+Relation	T5	T21	NoRel	true	used	wave
+Relation	T6	T13	NoRel	true	training	downturn
+Relation	T6	T2	NoRel	true	training	blackout
+Relation	T6	T5	NoRel	true	training	used
+Relation	T8	T0	NoRel	true	facing	restored
+Relation	T8	T13	NoRel	true	facing	downturn

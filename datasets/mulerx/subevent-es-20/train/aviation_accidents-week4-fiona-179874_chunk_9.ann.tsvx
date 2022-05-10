@@ -1,0 +1,16 @@
+Text	Los pasajeros y la tripulación pudieron respirar normalmente pero solo doce minutos , pues la provisión es limitada .	En condiciones normales , los pilotos hubieran realizado un descenso de emergencia hasta una altura en la que el aire fuera respirable .	Sin embargo , los pilotos estaban afectados por la falta de oxígeno y no fueron capaces de reaccionar adecuadamente .	El avión siguió su ascenso y la escasez de oxígeno dejó inconscientes a los pilotos y a los pasajeros , produciéndose daño cerebral minutos más tarde en la mayoría de ellos .	Se cree que uno de los pasajeros envió un mensaje con el teléfono móvil indicando las condiciones de la cabina .
+Event	T0	respirar	EVENT	40
+Event	T1	provisión	EVENT	94
+Event	T2	realizado	EVENT	165
+Event	T3	descenso	EVENT	178
+Event	T4	emergencia	EVENT	190
+Event	T5	afectados	EVENT	289
+Event	T6	reaccionar	EVENT	346
+Event	T7	siguió	EVENT	382
+Event	T8	ascenso	EVENT	392
+Event	T9	escasez	EVENT	405
+Event	T10	envió	EVENT	581
+Relation	T2	T5	NoRel	true	realizado	afectados
+Relation	T5	T0	NoRel	true	afectados	respirar
+Relation	T5	T2	NoRel	true	afectados	realizado
+Relation	T7	T2	NoRel	true	siguió	realizado

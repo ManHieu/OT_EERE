@@ -1,0 +1,38 @@
+Text	En cuestión de minutos empezaron a llegar socorristas , médicos y policías para iniciar las tareas de rescate , labores que se vieron dificultadas pues muchos de los cadáveres y heridos habían caído hasta las aguas del río o se encontraban colgados sobre los árboles y la vegetación de la pendiente .	El rescate se extendió durante todo el día domingo , toda la noche y el día lunes .	Muchos de los heridos fueron trasladados en otros trenes a hospitales en Heredia y Alajuela .	Los cadáveres , en cambio , fueron alineados a orillas del río para su posterior reconocimiento .	El gobierno declaró tres días de duelo nacional debido a la dimensión de la tragedia .
+Event	T0	empezaron	EVENT	23
+Event	T1	iniciar	EVENT	80
+Event	T2	tareas	EVENT	92
+Event	T3	rescate	EVENT	102
+Event	T4	labores	EVENT	112
+Event	T5	dificultadas	EVENT	134
+Event	T6	heridos	EVENT	178
+Event	T7	caído	EVENT	193
+Event	T8	colgados	EVENT	240
+Event	T9	rescate	EVENT	304
+Event	T10	extendió	EVENT	315
+Event	T11	heridos	EVENT	399
+Event	T12	trasladados	EVENT	414
+Event	T13	alineados	EVENT	514
+Event	T14	reconocimiento	EVENT	560
+Event	T15	declaró	EVENT	589
+Event	T16	duelo	EVENT	610
+Event	T17	tragedia	EVENT	653
+Event	T18	llegar	EVENT	35
+Relation	T7	T5	SuperSub	true	caído	dificultadas
+Relation	T5	T7	SubSuper	true	dificultadas	caído
+Relation	T11	T12	SuperSub	true	heridos	trasladados
+Relation	T12	T11	SubSuper	true	trasladados	heridos
+Relation	T0	T10	NoRel	true	empezaron	extendió
+Relation	T1	T17	NoRel	true	iniciar	tragedia
+Relation	T1	T5	NoRel	true	iniciar	dificultadas
+Relation	T10	T18	NoRel	true	extendió	llegar
+Relation	T12	T5	NoRel	true	trasladados	dificultadas
+Relation	T14	T8	NoRel	true	reconocimiento	colgados
+Relation	T14	T9	NoRel	true	reconocimiento	rescate
+Relation	T16	T1	NoRel	true	duelo	iniciar
+Relation	T16	T6	NoRel	true	duelo	heridos
+Relation	T2	T7	NoRel	true	tareas	caído
+Relation	T4	T1	NoRel	true	labores	iniciar
+Relation	T4	T16	NoRel	true	labores	duelo
+Relation	T4	T2	NoRel	true	labores	tareas
+Relation	T4	T5	NoRel	true	labores	dificultadas

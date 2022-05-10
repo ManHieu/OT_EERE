@@ -1,0 +1,13 @@
+Text	Anadolu'daki faaliyetiniz sırasında yakalandığınız sıtmadan Beyoğlu Hastanesi'nde yattığınızı hatırlarsınız .	Birçok Türk devlet adamından daha fazla çalıştığınızı biliyoruz .	1908'den itibaren dünya millet borçları arasında ( Yükselen Hilal ) i keşfettiğiniz zaman başlayan samimi anlayışınız karşısında Türkler şükran duymaktadır .	"	Ölümünden bir sene önce , 1958 yılında , Türkiye'ye ilk gelişinin 50. yıldönümü sebebiyle Ankara Üniversitesi Siyasal Bilgiler Fakültesi tarafından kendisine fahri doktora unvanı verilmiştir .
+Event	T0	faaliyetiniz	EVENT	13
+Event	T1	yattığınızı	EVENT	82
+Event	T2	Ölümünden	EVENT	336
+Event	T3	verilmiştir	EVENT	515
+Event	T4	sıtmadan	EVENT	51
+Event	T5	çalıştığınızı	EVENT	150
+Event	T6	anlayışınız	EVENT	282
+Event	T7	duymaktadır	EVENT	320
+Event	T8	yıldönümü	EVENT	406
+Relation	T0	T2	NoRel	true	faaliyetiniz	Ölümünden
+Relation	T4	T1	NoRel	true	sıtmadan	yattığınızı
+Relation	T7	T6	NoRel	true	duymaktadır	anlayışınız

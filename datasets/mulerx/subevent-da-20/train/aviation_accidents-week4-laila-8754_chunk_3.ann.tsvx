@@ -1,0 +1,27 @@
+Text	Selv om ingen - i første omgang - tog ansvar for angrebene slog USA fast , at man ville gå i krig mod terroristerne og dem , der beskyttede dem .	Blandt konsekvenser af angrebet var indførelsen af USA PATRIOT Act og Homeland Security Act .	Som følge af terrorangrebet styrkede mange af verdens lande deres antiterrorlovgivning .	Nogle af de amerikanske børser lukkede resten af ugen efter terrorangrebet , og havde ved genåbningen lidt et enormt tab , især i luftfarts- og forsikringsbranchen .	Ødelæggelsen af flere milliard-dyre kontorbygninger forvoldte en alvorlig skade for økonomien i Lower Manhattan .
+Event	T0	slog	EVENT	59
+Event	T1	gå	EVENT	88
+Event	T2	krig	EVENT	93
+Event	T3	beskyttede	EVENT	129
+Event	T4	konsekvenser	EVENT	153
+Event	T5	angrebet	EVENT	169
+Event	T6	indførelsen	EVENT	182
+Event	T7	styrkede	EVENT	268
+Event	T8	lukkede	EVENT	360
+Event	T9	terrorangrebet	EVENT	389
+Event	T10	tab	EVENT	446
+Event	T11	Ødelæggelsen	EVENT	495
+Event	T12	forvoldte	EVENT	547
+Event	T13	skade	EVENT	569
+Event	T14	terrorangrebet	EVENT	253
+Event	T15	angrebene	EVENT	49
+Relation	T5	T6	SuperSub	true	angrebet	indførelsen
+Relation	T6	T5	SubSuper	true	indførelsen	angrebet
+Relation	T0	T2	NoRel	true	slog	krig
+Relation	T10	T13	NoRel	true	tab	skade
+Relation	T11	T15	NoRel	true	Ødelæggelsen	angrebene
+Relation	T11	T9	NoRel	true	Ødelæggelsen	terrorangrebet
+Relation	T13	T6	NoRel	true	skade	indførelsen
+Relation	T3	T9	NoRel	true	beskyttede	terrorangrebet
+Relation	T4	T5	NoRel	true	konsekvenser	angrebet
+Relation	T7	T5	NoRel	true	styrkede	angrebet

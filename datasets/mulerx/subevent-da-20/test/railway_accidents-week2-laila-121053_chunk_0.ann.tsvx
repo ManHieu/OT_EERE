@@ -1,0 +1,14 @@
+Text	Under rangering på Næstved station påkørte et rangerende godstog en sporstopper i sydenden af stationen omkring kl. 05.40 .	Da kørslen fortsatte afsporedes og væltede en række af de bageste vogne ud over hovedsporene .	Her blev de ramt af et sydfra indkørende regionaltog med ca. 100 km/t .	De 4 forreste vogne – herunder styrevognen – afsporedes .	Rangertrækket bestod af 9 tomme , åbne godsvogne – fladvogne – der blev skubbet af et My-lokomotiv .
+Event	T0	rangering	EVENT	6
+Event	T1	påkørte	EVENT	35
+Event	T2	afsporedes	EVENT	145
+Event	T3	væltede	EVENT	159
+Event	T4	ramt	EVENT	231
+Event	T5	bestod	EVENT	363
+Event	T6	skubbet	EVENT	421
+Relation	T5	T6	SuperSub	true	bestod	skubbet
+Relation	T6	T5	SubSuper	true	skubbet	bestod
+Relation	T2	T3	SuperSub	true	afsporedes	væltede
+Relation	T3	T2	SubSuper	true	væltede	afsporedes
+Relation	T3	T1	NoRel	true	væltede	påkørte
+Relation	T5	T0	NoRel	true	bestod	rangering

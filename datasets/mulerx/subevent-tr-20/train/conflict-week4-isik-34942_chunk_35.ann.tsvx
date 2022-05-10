@@ -1,0 +1,17 @@
+Text	Hemen pusudan hücuma geçen bu süvari ordusu Haclı ordusunun hemen hepsini savaş alanında öldürüp imha etmek imkânını buldu .	Sadece Toros dağlarına doğru kaçan az sayıdaki kişi canını kurtarabildi .	Bu ordunun komutanı Neversli Giyom bir Türk asıllı bir Bizans askerinden ( _ Türkopol _ ) kılavuz bularak Antakya'ya erişmeyi başardı .	Bu orduyu bir hafta zaman gecikmesiyle Bavyera Dükü Wolf komutasına Almanlardan oluşan üçüncü bir Haçlı sefer ordusu takip etmekte idi .	Yine Birinci Haçlı Seferi ordusunun ve 1101 Haçlı Seferi'nin Fransızlardan oluşan ikinci ordusu bu güzergahtan geçmiş ve etraftaki insan ve hayvan yiyecek maddelerini sanki sömürüp bitirmişlerdi .
+Event	T0	geçen	EVENT	21
+Event	T3	buldu	EVENT	117
+Event	T4	kaçan	EVENT	154
+Event	T5	kurtarabildi	EVENT	184
+Event	T6	başardı	EVENT	325
+Event	T8	etmekte	EVENT	458
+Event	T9	geçmiş	EVENT	583
+Event	T10	bitirmişlerdi	EVENT	653
+Event	T1	bularak	EVENT	297
+Relation	T10	T1	NoRel	true	bitirmişlerdi	bularak
+Relation	T10	T3	NoRel	true	bitirmişlerdi	buldu
+Relation	T4	T9	NoRel	true	kaçan	geçmiş
+Relation	T5	T9	NoRel	true	kurtarabildi	geçmiş
+Relation	T6	T8	NoRel	true	başardı	etmekte
+Relation	T8	T1	NoRel	true	etmekte	bularak
+Relation	T8	T3	NoRel	true	etmekte	buldu

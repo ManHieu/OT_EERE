@@ -1,0 +1,22 @@
+Text	1933'ten önce veya 1933'ten önce Parti'nin hizmetinde ağır yaralanmış ; daha sonra , 1934 Şubat Ayaklanması veya Temmuz Darbesi'ne katılan veya Nazi faaliyetleri nedeniyle önemli ölçüde hapis cezası veya yaralanan Avusturya Nazi Partisi üyelerine verilmiştir .	Ayrıca bu nişan Adolf Hitler'in takdirine bağlı olarak son kez Reinhard Heydrich ( ölümünden sonra ) gibi bazı diğer kişilere de verildi .	Bu müteakip madalyalar 1500'ün üzerinde seri numaraları ile % 80 gümüşle basıldı ve Tip I madalyaların yaptığı gibi üreticinin adını ( J. FUESS MÜNCHEN ) taşımadı .	Bu madalyanın sahibi partiden ayrılırsa , madalyayı iade etmesi gerekiyordu .	İkisi Altreich'den ( Eleonore Baur ve Emma Schneider ) ve 14'ü Avusturya'dan olmak üzere toplam 16 kadın bu nişanı aldı .
+Event	T0	yaralanmış	EVENT	59
+Event	T1	faaliyetleri	EVENT	149
+Event	T2	cezası	EVENT	192
+Event	T3	yaralanan	EVENT	204
+Event	T4	verilmiştir	EVENT	247
+Event	T5	verildi	EVENT	390
+Event	T6	basıldı	EVENT	473
+Event	T8	aldı	EVENT	758
+Event	T9	Ayaklanması	EVENT	96
+Event	T10	Darbesi'ne	EVENT	120
+Event	T11	madalyalar	EVENT	412
+Event	T7	gerekiyordu	EVENT	629
+Event	T12	katılan	EVENT	131
+Relation	T0	T7	NoRel	true	yaralanmış	gerekiyordu
+Relation	T12	T10	NoRel	true	katılan	Darbesi'ne
+Relation	T12	T5	NoRel	true	katılan	verildi
+Relation	T3	T0	NoRel	true	yaralanan	yaralanmış
+Relation	T3	T12	NoRel	true	yaralanan	katılan
+Relation	T5	T7	NoRel	true	verildi	gerekiyordu
+Relation	T8	T1	NoRel	true	aldı	faaliyetleri
+Relation	T8	T6	NoRel	true	aldı	basıldı

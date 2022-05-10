@@ -1,0 +1,99 @@
+Text	Countering the analysis of Krugman and members of the FCIC , Peter Wallison argues that the crisis was caused by the bursting of a real estate bubble that was _ supported largely by low or no - down - payment loans _ , which was uniquely the case for U.S. _ residential _ housing loans .	He states : " It is not true that every bubble – even a large bubble – has the potential to cause a financial crisis when it deflates . "	As an example , Wallison notes that other developed countries had " large bubbles during the 1997 – 2007 period " but " the losses associated with mortgage delinquencies and defaults when these bubbles deflated were far lower than the losses suffered in the United States when the 1997 – 2007 [ bubble ] deflated . "	Other analysis calls into question the validity of comparing the residential loan crisis to the commercial loan crisis .	After researching the default of commercial loans during the financial crisis , Xudong An and Anthony B. Sanders reported ( in December 2010 ) : " We find limited evidence that substantial deterioration in CMBS [ commercial mortgage - backed securities ] loan underwriting occurred prior to the crisis . "
+Event	T0	Countering	EVENT	0
+Event	T1	analysis	EVENT	15
+Event	T2	argues	EVENT	76
+Event	T3	crisis	EVENT	92
+Event	T4	caused	EVENT	103
+Event	T5	bursting	EVENT	117
+Event	T7	supported	EVENT	161
+Event	T8	states	EVENT	291
+Event	T9	cause	EVENT	380
+Event	T10	crisis	EVENT	398
+Event	T11	deflates	EVENT	413
+Event	T12	notes	EVENT	451
+Event	T13	bubbles	EVENT	500
+Event	T14	associated	EVENT	557
+Event	T15	delinquencies	EVENT	582
+Event	T16	defaults	EVENT	600
+Event	T17	deflated	EVENT	628
+Event	T18	suffered	EVENT	668
+Event	T19	deflated	EVENT	730
+Event	T20	calls	EVENT	758
+Event	T21	comparing	EVENT	794
+Event	T22	crisis	EVENT	825
+Event	T23	crisis	EVENT	855
+Event	T24	researching	EVENT	870
+Event	T25	default	EVENT	886
+Event	T26	crisis	EVENT	935
+Event	T27	reported	EVENT	977
+Event	T28	deterioration	EVENT	1053
+Event	T29	occurred	EVENT	1137
+Event	T30	crisis	EVENT	1159
+Event	T6	estate bubble	EVENT	136
+Event	T31	losses	EVENT	550
+Event	T32	far lower	EVENT	642
+Event	T33	find	EVENT	1014
+Relation	T6	T7	SuperSub	true	estate bubble	supported
+Relation	T7	T6	SubSuper	true	supported	estate bubble
+Relation	T0	T13	NoRel	true	Countering	bubbles
+Relation	T0	T30	NoRel	true	Countering	crisis
+Relation	T0	T7	NoRel	true	Countering	supported
+Relation	T1	T14	NoRel	true	analysis	associated
+Relation	T1	T21	NoRel	true	analysis	comparing
+Relation	T10	T13	NoRel	true	crisis	bubbles
+Relation	T11	T26	NoRel	true	deflates	crisis
+Relation	T11	T29	NoRel	true	deflates	occurred
+Relation	T12	T31	NoRel	true	notes	losses
+Relation	T13	T28	NoRel	true	bubbles	deterioration
+Relation	T14	T15	NoRel	true	associated	delinquencies
+Relation	T14	T20	NoRel	true	associated	calls
+Relation	T14	T21	NoRel	true	associated	comparing
+Relation	T14	T23	NoRel	true	associated	crisis
+Relation	T14	T29	NoRel	true	associated	occurred
+Relation	T14	T4	NoRel	true	associated	caused
+Relation	T14	T8	NoRel	true	associated	states
+Relation	T15	T28	NoRel	true	delinquencies	deterioration
+Relation	T16	T13	NoRel	true	defaults	bubbles
+Relation	T16	T5	NoRel	true	defaults	bursting
+Relation	T17	T23	NoRel	true	deflated	crisis
+Relation	T17	T33	NoRel	true	deflated	find
+Relation	T17	T4	NoRel	true	deflated	caused
+Relation	T18	T31	NoRel	true	suffered	losses
+Relation	T19	T14	NoRel	true	deflated	associated
+Relation	T19	T32	NoRel	true	deflated	far lower
+Relation	T2	T12	NoRel	true	argues	notes
+Relation	T2	T27	NoRel	true	argues	reported
+Relation	T2	T31	NoRel	true	argues	losses
+Relation	T20	T0	NoRel	true	calls	Countering
+Relation	T20	T11	NoRel	true	calls	deflates
+Relation	T20	T16	NoRel	true	calls	defaults
+Relation	T21	T25	NoRel	true	comparing	default
+Relation	T22	T29	NoRel	true	crisis	occurred
+Relation	T23	T11	NoRel	true	crisis	deflates
+Relation	T24	T17	NoRel	true	researching	deflated
+Relation	T25	T13	NoRel	true	default	bubbles
+Relation	T25	T16	NoRel	true	default	defaults
+Relation	T25	T17	NoRel	true	default	deflated
+Relation	T26	T3	NoRel	true	crisis	crisis
+Relation	T26	T32	NoRel	true	crisis	far lower
+Relation	T27	T9	NoRel	true	reported	cause
+Relation	T28	T1	NoRel	true	deterioration	analysis
+Relation	T28	T5	NoRel	true	deterioration	bursting
+Relation	T29	T5	NoRel	true	occurred	bursting
+Relation	T29	T9	NoRel	true	occurred	cause
+Relation	T3	T11	NoRel	true	crisis	deflates
+Relation	T30	T31	NoRel	true	crisis	losses
+Relation	T31	T11	NoRel	true	losses	deflates
+Relation	T31	T22	NoRel	true	losses	crisis
+Relation	T31	T25	NoRel	true	losses	default
+Relation	T32	T0	NoRel	true	far lower	Countering
+Relation	T32	T27	NoRel	true	far lower	reported
+Relation	T32	T5	NoRel	true	far lower	bursting
+Relation	T4	T18	NoRel	true	caused	suffered
+Relation	T4	T2	NoRel	true	caused	argues
+Relation	T4	T24	NoRel	true	caused	researching
+Relation	T6	T1	NoRel	true	estate bubble	analysis
+Relation	T7	T0	NoRel	true	supported	Countering
+Relation	T7	T3	NoRel	true	supported	crisis
+Relation	T8	T12	NoRel	true	states	notes
+Relation	T9	T30	NoRel	true	cause	crisis

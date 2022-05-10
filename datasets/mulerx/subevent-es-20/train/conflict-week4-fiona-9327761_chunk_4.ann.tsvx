@@ -1,0 +1,34 @@
+Text	Apoyado por una intensa campaña internacional , finalmente fue perdonada , luego liberada en 1962 en el marco de los acuerdos de Evian .	Tras su liberación , Djamila Bouhired trabajó con Jacques Vergès , con quien se casó en 1965 - en _ Révolution africaine _ , una revista centrada en las revoluciones nacionalistas africanas .	De su matrimonio con Vergès , tiene dos hijos , Meriem y Liess Vergès .	En noviembre de 2015 se rumoreó su muerte e incluso se llegó a recitar una oración mortuoria ( fatiha ) en su memoria en el Parlamento tunecino .	El 11 de marzo de 2019 , Djamila Bouhired participó en Argel en la manifestación para protestar contra la nueva candidatura de Abdelaziz Bouteflika en las elecciones presidenciales de previstas para el mes abril .
+Event	T0	Apoyado	EVENT	0
+Event	T1	campaña	EVENT	24
+Event	T2	perdonada	EVENT	63
+Event	T3	liberada	EVENT	81
+Event	T4	acuerdos	EVENT	117
+Event	T5	liberación	EVENT	145
+Event	T6	trabajó	EVENT	175
+Event	T7	casó	EVENT	217
+Event	T8	centrada	EVENT	274
+Event	T9	matrimonio	EVENT	335
+Event	T10	rumoreó	EVENT	425
+Event	T11	muerte	EVENT	436
+Event	T12	llegó	EVENT	456
+Event	T13	recitar	EVENT	464
+Event	T14	participó	EVENT	589
+Event	T15	manifestación	EVENT	614
+Event	T16	protestar	EVENT	633
+Event	T17	previstas	EVENT	731
+Relation	T1	T10	NoRel	true	campaña	rumoreó
+Relation	T1	T8	NoRel	true	campaña	centrada
+Relation	T10	T9	NoRel	true	rumoreó	matrimonio
+Relation	T11	T6	NoRel	true	muerte	trabajó
+Relation	T12	T5	NoRel	true	llegó	liberación
+Relation	T13	T10	NoRel	true	recitar	rumoreó
+Relation	T14	T7	NoRel	true	participó	casó
+Relation	T15	T3	NoRel	true	manifestación	liberada
+Relation	T16	T13	NoRel	true	protestar	recitar
+Relation	T16	T7	NoRel	true	protestar	casó
+Relation	T17	T11	NoRel	true	previstas	muerte
+Relation	T5	T12	NoRel	true	liberación	llegó
+Relation	T6	T4	NoRel	true	trabajó	acuerdos
+Relation	T8	T11	NoRel	true	centrada	muerte
+Relation	T9	T14	NoRel	true	matrimonio	participó

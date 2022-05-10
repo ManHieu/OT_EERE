@@ -1,0 +1,22 @@
+Text	Som ung hjælpelæge oplevede han epidemien omkring Faxe .	Emil Hornemann oplevede som ung epidemien på første hånd , da han blev sendt ud som hjælpelæge og arbejdede fra Turebyholm ved Faxe .	Han skrev senere i 1800-tallet at epidemien var " Den betydeligste og alvorligste epidemi , der i dette århundrede har hjemsøgt vort fødeland " .	Det var efter at han også havde oplevet koleraepidemien i 1853 .	Fra Sorø oplevede digteren B.S. Ingemann også epidemien .
+Event	T0	oplevede	EVENT	19
+Event	T1	epidemien	EVENT	32
+Event	T10	epidemien	EVENT	448
+Event	T2	oplevede	EVENT	72
+Event	T3	epidemien	EVENT	89
+Event	T4	arbejdede	EVENT	155
+Event	T5	skrev	EVENT	195
+Event	T6	epidemi	EVENT	273
+Event	T7	hjemsøgt	EVENT	310
+Event	T8	koleraepidemien	EVENT	377
+Event	T9	oplevede	EVENT	411
+Relation	T6	T7	SuperSub	true	epidemi	hjemsøgt
+Relation	T7	T6	SubSuper	true	hjemsøgt	epidemi
+Relation	T8	T5	SuperSub	true	koleraepidemien	skrev
+Relation	T5	T8	SubSuper	true	skrev	koleraepidemien
+Relation	T1	T4	NoRel	true	epidemien	arbejdede
+Relation	T1	T8	NoRel	true	epidemien	koleraepidemien
+Relation	T10	T0	NoRel	true	epidemien	oplevede
+Relation	T10	T5	NoRel	true	epidemien	skrev
+Relation	T2	T7	NoRel	true	oplevede	hjemsøgt
+Relation	T5	T4	NoRel	true	skrev	arbejdede

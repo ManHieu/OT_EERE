@@ -1,0 +1,15 @@
+Text	Güvenlik nedeniyle önemli bir alana doğalgaz verilememesi nedeniyle bölgeye kömür sevkiyatı başlatıldı .	Genelkurmay Başkanlığı'nın Ankara Güvercinlik Askeri Havaalanı'ndaki iki , Diyarbakır'daki bir uçağı Afet ve Acil Durum Yönetimi Başkanlığı'nın koordinasyonunda tıbbi yardım ile arama kurtarma malzeme ve personeli taşıdı .	Ayrıca , Genelkurmay Özel Kuvvetler Komutanlığı'ndan bir Doğal Afet Arama Kurtarma ( DAK ) Taburu ve Jandarma Genel Komutanlığından bir Jandarma Özel Arama Kurtarma ( JÖAK ) Taburu deprem bölgesine gönderildi .	Bu yardım faaliyetlerine ilave olarak ; iki tabur ile Van'da arama - kurtarma ve çadır kurma faaliyetleri ; dört Doğal Afet Yardım Taburu ile Erciş bölgesinde arama - kurtarma faaliyetleri başlatıldı .	Van ve Erciş bölgesine 24 Ekim 2011 günü beş tabur daha sevk edildi .
+Event	T0	başlatıldı	EVENT	92
+Event	T2	taşıdı	EVENT	319
+Event	T4	gönderildi	EVENT	526
+Event	T5	yardım	EVENT	542
+Event	T7	başlatıldı	EVENT	728
+Event	T8	edildi	EVENT	802
+Event	T9	Güvenlik	EVENT	0
+Event	T10	verilememesi	EVENT	45
+Relation	T0	T8	NoRel	true	başlatıldı	edildi
+Relation	T10	T0	NoRel	true	verilememesi	başlatıldı
+Relation	T2	T5	NoRel	true	taşıdı	yardım
+Relation	T4	T8	NoRel	true	gönderildi	edildi
+Relation	T9	T10	NoRel	true	Güvenlik	verilememesi
+Relation	T9	T8	NoRel	true	Güvenlik	edildi

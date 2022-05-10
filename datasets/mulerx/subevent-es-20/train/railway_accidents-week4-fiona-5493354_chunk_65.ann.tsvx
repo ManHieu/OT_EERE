@@ -1,0 +1,28 @@
+Text	El accidente deja un muerto y cincuenta heridos .	- 19 DE OCTUBRE : el choque de dos trenes en la estación de Caxarias deja un muerto y cinco heridos .	- 1952 -___06 DE MARZO : En la estación de Rossio de Lisboa se produce el choque entre un tren de viajeros y otra composición vacía en maniobras , produciéndose cincuenta heridos leves .	- 31 DE MARZO : TRAGÉDIA DE GIBALTA -	Un corrimiento de tierras sobre la vía , junto al Faro de Gibalta , provoca el descarrilamiento de una composición en la Línea de Cascais , habiendo diez muertos y treinta y ocho heridos .
+Event	T0	deja	EVENT	13
+Event	T1	muerto	EVENT	21
+Event	T2	heridos	EVENT	40
+Event	T3	choque	EVENT	71
+Event	T4	deja	EVENT	119
+Event	T5	muerto	EVENT	127
+Event	T6	heridos	EVENT	142
+Event	T7	produce	EVENT	215
+Event	T8	choque	EVENT	226
+Event	T9	maniobras	EVENT	287
+Event	T10	corrimiento	EVENT	380
+Event	T11	provoca	EVENT	445
+Event	T12	descarrilamiento	EVENT	456
+Event	T13	composición	EVENT	480
+Event	T14	muertos	EVENT	531
+Event	T15	heridos	EVENT	556
+Event	T16	accidente	EVENT	3
+Relation	T0	T7	NoRel	true	deja	produce
+Relation	T12	T1	NoRel	true	descarrilamiento	muerto
+Relation	T16	T14	NoRel	true	accidente	muertos
+Relation	T16	T15	NoRel	true	accidente	heridos
+Relation	T16	T8	NoRel	true	accidente	choque
+Relation	T16	T9	NoRel	true	accidente	maniobras
+Relation	T5	T0	NoRel	true	muerto	deja
+Relation	T6	T7	NoRel	true	heridos	produce
+Relation	T7	T0	NoRel	true	produce	deja
+Relation	T9	T16	NoRel	true	maniobras	accidente

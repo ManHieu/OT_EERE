@@ -1,0 +1,30 @@
+Text	- Kaptan Amerika , vatana ihanetten yargılanmak üzere mahkemeye götürülürken Cross Bones tarafından suikasta uğrar ve öldürülür .	- Amerika Başkanı , tasarıya karşı olup da teslim olan tüm süper kahramanlara genel af ilan eder .	Bazı karakterler bunu kabul edip tasarıyı kabul ederken , bazıları ülkeyi terk etmeye karar veriler .	( Çoğu Kanada'ya kaçar .	) Bazıları ise yeraltına inerler .
+Event	T0	yargılanmak	EVENT	36
+Event	T1	götürülürken	EVENT	64
+Event	T2	uğrar	EVENT	109
+Event	T3	öldürülür	EVENT	118
+Event	T5	kabul	EVENT	251
+Event	T6	terk	EVENT	303
+Event	T7	kaçar	EVENT	348
+Event	T8	ihanetten	EVENT	26
+Event	T9	mahkemeye	EVENT	54
+Event	T10	suikasta	EVENT	100
+Event	T12	teslim olan	EVENT	173
+Event	T13	af	EVENT	214
+Event	T11	kabul	EVENT	271
+Event	T14	karar veriler	EVENT	315
+Event	T15	inerler	EVENT	381
+Event	T4	ilan	EVENT	217
+Relation	T1	T15	NoRel	true	götürülürken	inerler
+Relation	T1	T7	NoRel	true	götürülürken	kaçar
+Relation	T11	T15	NoRel	true	kabul	inerler
+Relation	T13	T5	NoRel	true	af	kabul
+Relation	T2	T1	NoRel	true	uğrar	götürülürken
+Relation	T2	T15	NoRel	true	uğrar	inerler
+Relation	T2	T4	NoRel	true	uğrar	ilan
+Relation	T3	T11	NoRel	true	öldürülür	kabul
+Relation	T3	T6	NoRel	true	öldürülür	terk
+Relation	T4	T7	NoRel	true	ilan	kaçar
+Relation	T6	T11	NoRel	true	terk	kabul
+Relation	T6	T8	NoRel	true	terk	ihanetten
+Relation	T9	T4	NoRel	true	mahkemeye	ilan

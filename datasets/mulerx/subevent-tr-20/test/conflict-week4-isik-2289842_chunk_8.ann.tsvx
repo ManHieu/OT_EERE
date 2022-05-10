@@ -1,0 +1,21 @@
+Text	610'da Nicetas , yardımıyla seçilen İskenderiye Patrik'i İoannis Almsgiver'in yardımıyla eyaleti ele geçirerek , bir güç_üssü kurmayı başardı .	Yeni imparator olacak genç Herakleios tarafından yönetilen ana isyan kuvveti , Konstantinopolis'un denizden istilası ile görevlendirildi .	Herakleios'a karşı örgütlü direnme kısa süre çöktü ve Phocas , Patrici Probos ( Photius ) tarafından ona teslim alındı .	Phocas idam edildi , ancak bundan hemen önce kendisiyle halefi arasındaki ünlü görüşme oldu :	Yaşlı Herakleios , kaynaklardan kısa süre sonra kaybolur , ölüm tarihi belirsiz olmasına rağmen öldüğü tahmin edilmektedir .
+Event	T0	başardı	EVENT	134
+Event	T1	istilası	EVENT	252
+Event	T2	görevlendirildi	EVENT	265
+Event	T3	direnme	EVENT	310
+Event	T4	çöktü	EVENT	328
+Event	T5	alındı	EVENT	395
+Event	T6	edildi	EVENT	416
+Event	T7	kaybolur	EVENT	546
+Event	T8	ölüm	EVENT	557
+Event	T9	seçilen	EVENT	28
+Event	T10	geçirerek	EVENT	101
+Event	T11	yönetilen	EVENT	193
+Event	T12	görüşme	EVENT	483
+Relation	T10	T3	NoRel	true	geçirerek	direnme
+Relation	T10	T4	NoRel	true	geçirerek	çöktü
+Relation	T12	T6	NoRel	true	görüşme	edildi
+Relation	T2	T6	NoRel	true	görevlendirildi	edildi
+Relation	T3	T5	NoRel	true	direnme	alındı
+Relation	T6	T8	NoRel	true	edildi	ölüm
+Relation	T7	T1	NoRel	true	kaybolur	istilası

@@ -1,0 +1,20 @@
+Text	Afløbssporet endte fortsat i en sporstopper , placeret mellem de to fjerntogsspor , men omkring år 2000 blev det fjernet , og de to spor løber nu sammen efter broerne over Hvidovrevej .	Sikkerheden i tilfælde af signalforbikørsler baserer sig nu på at ATC kan nødbremse toget før det når sporsammenløbet .			
+Event	T0	fjernet	EVENT	113
+Event	T1	løber	EVENT	137
+Event	T2	baserer	EVENT	231
+Event	T3	nødbremse	EVENT	260
+Event	T4	sporsammenløbet	EVENT	288
+Event	T5	endte	EVENT	13
+Event	T6	placeret	EVENT	46
+Event	T7	Sikkerheden	EVENT	186
+Event	T8	signalforbikørsler	EVENT	212
+Relation	T6	T0	SuperSub	true	placeret	fjernet
+Relation	T0	T6	SubSuper	true	fjernet	placeret
+Relation	T7	T3	SuperSub	true	Sikkerheden	nødbremse
+Relation	T3	T7	SubSuper	true	nødbremse	Sikkerheden
+Relation	T0	T5	NoRel	true	fjernet	endte
+Relation	T1	T0	NoRel	true	løber	fjernet
+Relation	T1	T8	NoRel	true	løber	signalforbikørsler
+Relation	T4	T2	NoRel	true	sporsammenløbet	baserer
+Relation	T5	T1	NoRel	true	endte	løber
+Relation	T8	T6	NoRel	true	signalforbikørsler	placeret

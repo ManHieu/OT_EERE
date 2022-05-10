@@ -1,0 +1,20 @@
+Text	Büyükelçi Tansuğ Bleda'nın görüştüğü Dışişleri Bakanlığı Genel Sekreteri Kamuran Gürün , Bolu'dan bir komando timinin Yüksekova'ya getirildiğini , İran hükûmeti sokağa hakim olamazsa , Büyükelçiliğin talebi halinde " Türkiye'nin güvenliğinin sağlanacağını " söyledi .	Sekiz saat süren gösteri , İran polisinin göz yaşartıcı gaz kullanmak suretiyle kalabalığı dağıtmasıyla son buldu .	Olayın ardından İran Hükümeti , Türk Büyükelçiliği'nin etrafına ordu birlikleri yerleştirdi ve makineli tüfek yuvaları kurmak üzere siperler kazdı .		
+Event	T0	görüştüğü	EVENT	27
+Event	T1	talebi	EVENT	200
+Event	T2	söyledi	EVENT	258
+Event	T3	gösteri	EVENT	285
+Event	T4	kullanmak	EVENT	328
+Event	T5	buldu	EVENT	376
+Event	T6	Olayın	EVENT	384
+Event	T7	yerleştirdi	EVENT	464
+Event	T8	kazdı	EVENT	525
+Event	T9	getirildiğini	EVENT	131
+Event	T10	dağıtmasıyla	EVENT	359
+Event	T11	kurmak	EVENT	503
+Relation	T10	T9	NoRel	true	dağıtmasıyla	getirildiğini
+Relation	T11	T0	NoRel	true	kurmak	görüştüğü
+Relation	T11	T3	NoRel	true	kurmak	gösteri
+Relation	T11	T7	NoRel	true	kurmak	yerleştirdi
+Relation	T4	T2	NoRel	true	kullanmak	söyledi
+Relation	T7	T11	NoRel	true	yerleştirdi	kurmak
+Relation	T8	T7	NoRel	true	kazdı	yerleştirdi

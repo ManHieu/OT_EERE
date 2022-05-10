@@ -1,0 +1,45 @@
+Text	] Antes de iniciar el procedimiento de aproximación a la pista 05 derecha del Aeropuerto Internacional de la Ciudad de México , el piloto del Learjet 45 no redujo la velocidad de su aeronave a 180 nudos antes de cruzar el VOR Mateo , como se lo instruyó el controlador aéreo .	Se mantuvo arriba de los 250 nudos , muy alta para el corredor aéreo .	Pese a que el piloto confirmó la instrucción de reducir su velocidad , nunca la cumplió .	La alta velocidad que registró el Learjet , pilotado por el capitán Álvaro Sánchez Jiménez , ocasionó que se acercara peligrosamente a un avión pesado de pasajeros Boeing 767-300 de Mexicana , procedente de Buenos Aires , y que entrara en la estela de turbulencia , desestabilizando y derribando a la pequeña aeronave .	Esa misma noche , el entonces procurador de justicia del Distrito Federal , Miguel Ángel Mancera , informaba que por el momento eran trece los cadáveres que se encontraban en el Servicio Médico Forense como resultado del accidente .
+Event	T0	iniciar	EVENT	11
+Event	T1	procedimiento	EVENT	22
+Event	T2	aproximación	EVENT	39
+Event	T3	redujo	EVENT	156
+Event	T4	cruzar	EVENT	212
+Event	T5	instruyó	EVENT	245
+Event	T6	mantuvo	EVENT	280
+Event	T7	confirmó	EVENT	369
+Event	T8	instrucción	EVENT	381
+Event	T9	reducir	EVENT	396
+Event	T10	cumplió	EVENT	428
+Event	T11	registró	EVENT	460
+Event	T12	pilotado	EVENT	482
+Event	T13	ocasionó	EVENT	531
+Event	T15	turbulencia	EVENT	690
+Event	T16	desestabilizando	EVENT	704
+Event	T17	derribando	EVENT	723
+Event	T18	accidente	EVENT	979
+Event	T19	cadáveres	EVENT	901
+Event	T20	entrara	EVENT	666
+Relation	T0	T17	NoRel	true	iniciar	derribando
+Relation	T1	T4	NoRel	true	procedimiento	cruzar
+Relation	T10	T11	NoRel	true	cumplió	registró
+Relation	T10	T3	NoRel	true	cumplió	redujo
+Relation	T13	T12	NoRel	true	ocasionó	pilotado
+Relation	T13	T2	NoRel	true	ocasionó	aproximación
+Relation	T16	T1	NoRel	true	desestabilizando	procedimiento
+Relation	T17	T18	NoRel	true	derribando	accidente
+Relation	T18	T20	NoRel	true	accidente	entrara
+Relation	T19	T3	NoRel	true	cadáveres	redujo
+Relation	T19	T6	NoRel	true	cadáveres	mantuvo
+Relation	T2	T17	NoRel	true	aproximación	derribando
+Relation	T2	T18	NoRel	true	aproximación	accidente
+Relation	T20	T4	NoRel	true	entrara	cruzar
+Relation	T4	T0	NoRel	true	cruzar	iniciar
+Relation	T4	T9	NoRel	true	cruzar	reducir
+Relation	T5	T12	NoRel	true	instruyó	pilotado
+Relation	T5	T17	NoRel	true	instruyó	derribando
+Relation	T5	T4	NoRel	true	instruyó	cruzar
+Relation	T6	T10	NoRel	true	mantuvo	cumplió
+Relation	T6	T3	NoRel	true	mantuvo	redujo
+Relation	T7	T12	NoRel	true	confirmó	pilotado
+Relation	T7	T19	NoRel	true	confirmó	cadáveres
+Relation	T8	T4	NoRel	true	instrucción	cruzar

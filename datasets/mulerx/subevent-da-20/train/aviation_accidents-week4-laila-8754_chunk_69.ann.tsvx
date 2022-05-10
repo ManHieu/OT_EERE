@@ -1,0 +1,27 @@
+Text	Der er stadig planer om at opføre et museum på stedet som en reaktion på klager fra de omkomnes familiemedlemmer .	Pentagon Memorial blev afsluttet og åbnet for offentligheden på syvårsdagen for angrebene , den 11. september 2008 .	Pentagon Memorial består af en park med 184 bænke overfor Pentagon .	Da Pentagon var under sin genopførelse i perioden 2001-2002 blev et privatkapel og et indendørs mindesmærke midlertidigt placeret på det sted , hvor Flight 77 ramte bygningen .	I Shanksville , hvor Flight 93 styrtede ned , blev et spontant mindesmærke i form af hilsner fra de efterladte og besøgende etableret i dagene efter angrebene .
+Event	T0	opføre	EVENT	27
+Event	T1	reaktion	EVENT	61
+Event	T2	klager	EVENT	73
+Event	T3	afsluttet	EVENT	138
+Event	T4	åbnet	EVENT	151
+Event	T5	angrebene	EVENT	195
+Event	T6	genopførelse	EVENT	327
+Event	T7	placeret	EVENT	422
+Event	T8	ramte	EVENT	460
+Event	T9	etableret	EVENT	602
+Event	T10	angrebene	EVENT	627
+Event	T11	består	EVENT	250
+Event	T12	styrtede ned	EVENT	509
+Event	T13	mindesmærke	EVENT	541
+Relation	T6	T7	SuperSub	true	genopførelse	placeret
+Relation	T7	T6	SubSuper	true	placeret	genopførelse
+Relation	T0	T12	NoRel	true	opføre	styrtede ned
+Relation	T1	T7	NoRel	true	reaktion	placeret
+Relation	T11	T8	NoRel	true	består	ramte
+Relation	T13	T6	NoRel	true	mindesmærke	genopførelse
+Relation	T2	T8	NoRel	true	klager	ramte
+Relation	T4	T0	NoRel	true	åbnet	opføre
+Relation	T5	T2	NoRel	true	angrebene	klager
+Relation	T5	T6	NoRel	true	angrebene	genopførelse
+Relation	T7	T3	NoRel	true	placeret	afsluttet
+Relation	T9	T3	NoRel	true	etableret	afsluttet

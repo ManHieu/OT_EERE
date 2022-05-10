@@ -1,0 +1,20 @@
+Text	1 ve 3 Ekim 1815'te Kalküta yakınındaki Hint Okyanusu'nda bir ponza yığını bulundu .	23 Nisan'da zirve hâlâ yoğun kül bulutuyla kaplı bir hâldeydi .	Patlama 15 Temmuz'da sona erdi ancak duman emisyonları 23 Ağustos'a kadar sürdü .	Patlamanın üzerinden dört yıl sonra Ağustos 1819'a kadar alev ve sarsıntılı gibi artçı olaylar yaşanmaya devam etti .	Orta büyüklükte bir tsunami , saat 10 civarında Sanggar'da 4 metreye kadar yükselerek 10 Nisan'da Endonezya takımadalarındaki çeşitli adaların kıyılarına çarptı .
+Event	T0	bulundu	EVENT	75
+Event	T1	zirve	EVENT	97
+Event	T2	Patlama	EVENT	149
+Event	T3	erdi	EVENT	175
+Event	T4	emisyonları	EVENT	192
+Event	T5	sürdü	EVENT	223
+Event	T6	Patlamanın	EVENT	231
+Event	T7	sarsıntılı	EVENT	296
+Event	T8	etti	EVENT	342
+Event	T9	tsunami	EVENT	369
+Event	T10	yükselerek	EVENT	424
+Event	T11	çarptı	EVENT	503
+Relation	T1	T11	NoRel	true	zirve	çarptı
+Relation	T10	T7	NoRel	true	yükselerek	sarsıntılı
+Relation	T3	T0	NoRel	true	erdi	bulundu
+Relation	T5	T3	NoRel	true	sürdü	erdi
+Relation	T6	T10	NoRel	true	Patlamanın	yükselerek
+Relation	T6	T7	NoRel	true	Patlamanın	sarsıntılı
+Relation	T7	T2	NoRel	true	sarsıntılı	Patlama

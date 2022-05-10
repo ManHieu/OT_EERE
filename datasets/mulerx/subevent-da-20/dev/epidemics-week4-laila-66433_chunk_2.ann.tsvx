@@ -1,0 +1,20 @@
+Text	Måske i marts hos rekrutter i øvelseslejren Funston i Kansas .	Nogle få uger efter blev en halv million amerikanske soldater sejlet over Atlanterhavet til Vestfronten i Europa .	De første sygdomsudbrud i Europa opstod i april 1918 i Bordeaux og Brest , der var Frankrigs hovedhavne for allierede soldater .	Sygdommen udviklede sig i bølger fra 1918 til 1920 , og det vurderes , at den tog livet af omkring 50 millioner mennesker .	I USA døde 675.000 , og kistesnedkerne kunne ikke holde trit med efterspørgslen .
+Event	T0	sejlet	EVENT	125
+Event	T1	sygdomsudbrud	EVENT	188
+Event	T2	opstod	EVENT	211
+Event	T3	udviklede	EVENT	317
+Event	T4	bølger	EVENT	333
+Event	T5	vurderes	EVENT	367
+Event	T6	døde	EVENT	437
+Event	T7	trit	EVENT	487
+Event	T8	tog livet	EVENT	385
+Event	T9	Sygdommen	EVENT	307
+Relation	T0	T1	SuperSub	true	sejlet	sygdomsudbrud
+Relation	T1	T0	SubSuper	true	sygdomsudbrud	sejlet
+Relation	T9	T4	SuperSub	true	Sygdommen	bølger
+Relation	T4	T9	SubSuper	true	bølger	Sygdommen
+Relation	T5	T6	NoRel	true	vurderes	døde
+Relation	T5	T9	NoRel	true	vurderes	Sygdommen
+Relation	T6	T1	NoRel	true	døde	sygdomsudbrud
+Relation	T6	T8	NoRel	true	døde	tog livet
+Relation	T6	T9	NoRel	true	døde	Sygdommen

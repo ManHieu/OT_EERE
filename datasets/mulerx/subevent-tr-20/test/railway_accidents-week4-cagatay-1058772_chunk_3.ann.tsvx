@@ -1,0 +1,21 @@
+Text	Kurtarıcılar çarpışan iki trenden hala daha fazla hayatta kalan kişi bulmanın azaldığını söylediler ve kazaya uğrayanları arama işlemi yarın sabah yeniden başlamak üzere akşam vakti durduruldu .	Bir savcılık bürosu sözcüsü , çarpişmada yirmi kişinin ciddi şekilde yaralandığını söyledi .	Flemish Brabant valisi , Lode De Witte , 162 kişinin yaralandığını bunun , 55 kişisinin hastanaye yatırıldığını ve 11 kişinin _ çok ciddi _ durumda olduğunu söyledi .	Kategori : Belçika'da demiryolu kazaları Kategori : 2010'da demiryolu kazaları Kategori : 2010'da Belçika Kategori : 50 ° K Kategori : 4 ° D	
+Event	T0	çarpışan	EVENT	13
+Event	T2	söylediler	EVENT	89
+Event	T3	kazaya	EVENT	103
+Event	T5	durduruldu	EVENT	182
+Event	T6	çarpişmada	EVENT	225
+Event	T7	söyledi	EVENT	278
+Event	T8	yaralandığını	EVENT	341
+Event	T9	söyledi	EVENT	445
+Event	T1	arama	EVENT	122
+Event	T4	yaralandığını	EVENT	264
+Relation	T3	T0	SuperSub	true	kazaya	çarpışan
+Relation	T0	T3	SubSuper	true	çarpışan	kazaya
+Relation	T3	T6	SuperSub	true	kazaya	çarpişmada
+Relation	T6	T3	SubSuper	true	çarpişmada	kazaya
+Relation	T3	T8	NoRel	true	kazaya	yaralandığını
+Relation	T4	T3	NoRel	true	yaralandığını	kazaya
+Relation	T5	T2	NoRel	true	durduruldu	söylediler
+Relation	T5	T6	NoRel	true	durduruldu	çarpişmada
+Relation	T7	T1	NoRel	true	söyledi	arama
+Relation	T7	T9	NoRel	true	söyledi	söyledi

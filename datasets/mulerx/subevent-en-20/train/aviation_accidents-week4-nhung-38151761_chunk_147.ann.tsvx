@@ -1,0 +1,68 @@
+Text	18 October : En route to Ukraine with paratroopers , Soviet Air Force Ilyushin Il - 76MD__CCCP -76569_ , c / n 0033448421 , crashes in the Caspian Sea some off Nasosnaya Air Base , Azerbaijan following an in - flight fire and resultant wing separation , killing all 57 on board .	Five minutes after take off , the number one engine failed , caught fire and fell off , but debris from the engine punctured the fuel tank , starting a fire .	The crew attempted to return to the airport , but the fire had weakened the left wing and it separated .	A loss of control resulted and the aircraft crashed .	The accident remains the deadliest in Azerbaijan .
+Event	T0	crashes	EVENT	124
+Event	T1	following	EVENT	192
+Event	T2	fire	EVENT	217
+Event	T3	separation	EVENT	241
+Event	T4	killing	EVENT	254
+Event	T5	failed	EVENT	332
+Event	T6	punctured	EVENT	395
+Event	T7	starting	EVENT	421
+Event	T8	fire	EVENT	432
+Event	T9	attempted	EVENT	448
+Event	T10	return	EVENT	461
+Event	T11	fire	EVENT	493
+Event	T12	weakened	EVENT	502
+Event	T13	separated	EVENT	532
+Event	T14	loss	EVENT	546
+Event	T15	resulted	EVENT	562
+Event	T16	crashed	EVENT	588
+Event	T17	remains	EVENT	611
+Event	T18	deadliest	EVENT	623
+Event	T19	take off	EVENT	299
+Event	T20	fire	EVENT	348
+Event	T21	fell off	EVENT	357
+Relation	T0	T2	SuperSub	true	crashes	fire
+Relation	T2	T0	SubSuper	true	fire	crashes
+Relation	T0	T3	SuperSub	true	crashes	separation
+Relation	T3	T0	SubSuper	true	separation	crashes
+Relation	T19	T5	SuperSub	true	take off	failed
+Relation	T5	T19	SubSuper	true	failed	take off
+Relation	T5	T20	SuperSub	true	failed	fire
+Relation	T20	T5	SubSuper	true	fire	failed
+Relation	T20	T21	SuperSub	true	fire	fell off
+Relation	T21	T20	SubSuper	true	fell off	fire
+Relation	T6	T7	SuperSub	true	punctured	starting
+Relation	T7	T6	SubSuper	true	starting	punctured
+Relation	T12	T13	SuperSub	true	weakened	separated
+Relation	T13	T12	SubSuper	true	separated	weakened
+Relation	T0	T14	NoRel	true	crashes	loss
+Relation	T0	T17	NoRel	true	crashes	remains
+Relation	T0	T18	NoRel	true	crashes	deadliest
+Relation	T10	T21	NoRel	true	return	fell off
+Relation	T11	T0	NoRel	true	fire	crashes
+Relation	T11	T6	NoRel	true	fire	punctured
+Relation	T12	T1	NoRel	true	weakened	following
+Relation	T14	T13	NoRel	true	loss	separated
+Relation	T14	T2	NoRel	true	loss	fire
+Relation	T14	T3	NoRel	true	loss	separation
+Relation	T14	T7	NoRel	true	loss	starting
+Relation	T15	T7	NoRel	true	resulted	starting
+Relation	T16	T8	NoRel	true	crashed	fire
+Relation	T18	T4	NoRel	true	deadliest	killing
+Relation	T19	T14	NoRel	true	take off	loss
+Relation	T19	T18	NoRel	true	take off	deadliest
+Relation	T19	T21	NoRel	true	take off	fell off
+Relation	T20	T1	NoRel	true	fire	following
+Relation	T20	T3	NoRel	true	fire	separation
+Relation	T3	T14	NoRel	true	separation	loss
+Relation	T3	T4	NoRel	true	separation	killing
+Relation	T4	T14	NoRel	true	killing	loss
+Relation	T5	T0	NoRel	true	failed	crashes
+Relation	T5	T14	NoRel	true	failed	loss
+Relation	T6	T0	NoRel	true	punctured	crashes
+Relation	T6	T13	NoRel	true	punctured	separated
+Relation	T6	T5	NoRel	true	punctured	failed
+Relation	T6	T8	NoRel	true	punctured	fire
+Relation	T7	T17	NoRel	true	starting	remains
+Relation	T8	T3	NoRel	true	fire	separation
+Relation	T9	T16	NoRel	true	attempted	crashed

@@ -1,0 +1,19 @@
+Text	Entre los muertos se encuentra el miembro del Consejo de Administración de Surgutneftegas Nikolai Medvedev .	También se encuentran los tripulantes Sergei Anstin ( Capitán , 27 años de edad ) , Nikita Chekhlov ( Copiloto , 24 años de edad ) , Marina Berdikovna ( Asistente de vuelo ) y Liubov Boldireva ( Asistente de vuelo ) .	El capitán Anstin regresaba a Surgut , su ciudad natal , para celebrar su cumpleaños número 28 al día siguiente , mientras que el copiloto iba a casarse en menos de un mes .	[ miniaturade imagen | derecha | 250px | Restos del avión accidentado . ] Actualmente no se ha iniciado ninguna investigación , pero las autoridades rusas han interrogado a los controladores aéreos y estos han indicado que la comunicación con el avión se perdió pocos minutos después el despegue .	Las autoridades recuperaron las cajas negras horas después del accidente .
+Event	T0	muertos	EVENT	10
+Event	T1	celebrar	EVENT	389
+Event	T2	casarse	EVENT	472
+Event	T3	accidentado	EVENT	559
+Event	T4	iniciado	EVENT	596
+Event	T5	investigación	EVENT	613
+Event	T6	interrogado	EVENT	660
+Event	T7	indicado	EVENT	711
+Event	T8	comunicación	EVENT	727
+Event	T9	perdió	EVENT	756
+Event	T10	despegue	EVENT	788
+Event	T11	recuperaron	EVENT	815
+Event	T12	accidente	EVENT	862
+Relation	T0	T11	NoRel	true	muertos	recuperaron
+Relation	T1	T10	NoRel	true	celebrar	despegue
+Relation	T10	T6	NoRel	true	despegue	interrogado
+Relation	T4	T10	NoRel	true	iniciado	despegue
+Relation	T4	T2	NoRel	true	iniciado	casarse

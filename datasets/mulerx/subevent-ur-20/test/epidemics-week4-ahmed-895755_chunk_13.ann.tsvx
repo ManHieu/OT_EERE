@@ -1,0 +1,146 @@
+Text	" اگر یہی اصول دسمبر 2019 میں اپنائے جاتے تو دنیا میں کورونا وائرس کی عالمی وبا کبھی نہ آتی " To be clear : If these new policies had been the global approach to “ Covid ” since دسمبر 2019 , there would never have been a pandemic at all .	2021ء تک یا جلد سارس -کووی-2 کے خلاف کوئی ویکسین تیار کرنا متوقع نہیں ہے ، کووِڈ 19 کی عالمگیر وبا کو قابو کرنے کا کلیدی حصہ وبائی لہر کو کم کرنا ہے ، جسے وبائی موڑ ( epidemic curve ) کہتے ہیں ، جس کے ذریعے انفیکشنوں کی شرح کو کم کرنے والے اقدامات میں مدد مل سکتی ہے ۔	انفیکشن کی شرح مدہم کرنے سے صحت کی سہولیات کو زیر کرنیوالے جوکہم کو کم کرنے ، موجودہ کیسوں کے بہتر علاج کرنے اور ویکسین اور علاج کی تیاری کے لیے مزید وقت پانے میں مدد حاصل ہوتی ہے ۔	مقامات میں انفیکشن کے منتقل ہونے کے مواقع کو کم کرنے کی احتیاطی تدابير میں گھر میں قیام کرانا ، سفر اور عوامی سرگرمیوں کو ترک کرنا ، صابن سے ہاتھ دھونا عمومًا گرم پانی سے کم سے کم بیس سیکنڈوں تک ، بغیر دھلے ہاتھوں سے آنکھوں ، ناک اور منھ کو چھونے کو ترک کرنا شامل ہیں ۔	بیماریوں سے بچاؤ اور کنٹرول کے مراکز ( سی ڈی سی ) نے تجویز دی ہے کہ کھانسی یا چھینک کے دوران منھ اور ناک کو ٹِشو سے ڈھانپ لیں یا ٹشو نہ ہونے کی صورت میں کہنی رکھ کر کھانسا یا چھینکا جائے ۔
+Event	T0	pandemic	EVENT	221
+Event	T1	تیار	EVENT	288
+Event	T2	اقدامات	EVENT	479
+Event	T3	انفیکشن	EVENT	508
+Event	T4	کرنے	EVENT	528
+Event	T5	علاج	EVENT	607
+Event	T6	علاج	EVENT	632
+Event	T7	تیاری	EVENT	640
+Event	T8	پانے	EVENT	662
+Event	T9	انفیکشن	EVENT	701
+Event	T11	سفر	EVENT	786
+Event	T12	چھونے	EVENT	931
+Event	T13	چھینک	EVENT	1038
+Event	T14	کھانسا	EVENT	1125
+Event	T15	چھینکا	EVENT	1135
+Event	T16	policies	EVENT	121
+Event	T17	approach	EVENT	150
+Event	T18	اصول	EVENT	10
+Event	T19	اپنائے	EVENT	30
+Event	T20	وبا	EVENT	76
+Event	T21	متوقع	EVENT	298
+Event	T22	وبا	EVENT	334
+Event	T23	قابو	EVENT	341
+Event	T24	کم	EVENT	377
+Event	T25	epidemic curve	EVENT	406
+Event	T26	کہتے	EVENT	423
+Event	T27	انفیکشنوں	EVENT	446
+Event	T28	کم	EVENT	466
+Event	T29	مدد	EVENT	491
+Event	T30	کم	EVENT	576
+Event	T31	مدد	EVENT	671
+Event	T33	منتقل	EVENT	712
+Event	T34	کم	EVENT	735
+Event	T10	تدابير	EVENT	754
+Event	T32	قیام	EVENT	773
+Event	T35	ترک	EVENT	812
+Event	T36	دھونا	EVENT	836
+Event	T37	ترک	EVENT	940
+Event	T38	شامل	EVENT	949
+Event	T39	سرگرمیوں	EVENT	800
+Event	T40	تجویز	EVENT	1013
+Event	T41	کھانسی	EVENT	1028
+Event	T42	ڈھانپ	EVENT	1076
+Relation	T17	T16	SuperSub	true	approach	policies
+Relation	T16	T17	SubSuper	true	policies	approach
+Relation	T19	T18	SuperSub	true	اپنائے	اصول
+Relation	T18	T19	SubSuper	true	اصول	اپنائے
+Relation	T2	T1	SuperSub	true	اقدامات	تیار
+Relation	T1	T2	SubSuper	true	تیار	اقدامات
+Relation	T10	T32	SuperSub	true	تدابير	قیام
+Relation	T32	T10	SubSuper	true	قیام	تدابير
+Relation	T10	T35	SuperSub	true	تدابير	ترک
+Relation	T35	T10	SubSuper	true	ترک	تدابير
+Relation	T10	T36	SuperSub	true	تدابير	دھونا
+Relation	T36	T10	SubSuper	true	دھونا	تدابير
+Relation	T10	T37	SuperSub	true	تدابير	ترک
+Relation	T37	T10	SubSuper	true	ترک	تدابير
+Relation	T40	T42	SuperSub	true	تجویز	ڈھانپ
+Relation	T42	T40	SubSuper	true	ڈھانپ	تجویز
+Relation	T0	T12	NoRel	true	pandemic	چھونے
+Relation	T0	T14	NoRel	true	pandemic	کھانسا
+Relation	T0	T2	NoRel	true	pandemic	اقدامات
+Relation	T0	T23	NoRel	true	pandemic	قابو
+Relation	T0	T40	NoRel	true	pandemic	تجویز
+Relation	T1	T3	NoRel	true	تیار	انفیکشن
+Relation	T1	T35	NoRel	true	تیار	ترک
+Relation	T10	T24	NoRel	true	تدابير	کم
+Relation	T11	T13	NoRel	true	سفر	چھینک
+Relation	T11	T14	NoRel	true	سفر	کھانسا
+Relation	T13	T34	NoRel	true	چھینک	کم
+Relation	T14	T12	NoRel	true	کھانسا	چھونے
+Relation	T14	T16	NoRel	true	کھانسا	policies
+Relation	T14	T42	NoRel	true	کھانسا	ڈھانپ
+Relation	T14	T5	NoRel	true	کھانسا	علاج
+Relation	T16	T20	NoRel	true	policies	وبا
+Relation	T16	T25	NoRel	true	policies	epidemic curve
+Relation	T16	T34	NoRel	true	policies	کم
+Relation	T17	T33	NoRel	true	approach	منتقل
+Relation	T18	T31	NoRel	true	اصول	مدد
+Relation	T18	T33	NoRel	true	اصول	منتقل
+Relation	T19	T13	NoRel	true	اپنائے	چھینک
+Relation	T19	T25	NoRel	true	اپنائے	epidemic curve
+Relation	T19	T28	NoRel	true	اپنائے	کم
+Relation	T19	T34	NoRel	true	اپنائے	کم
+Relation	T2	T11	NoRel	true	اقدامات	سفر
+Relation	T2	T6	NoRel	true	اقدامات	علاج
+Relation	T20	T16	NoRel	true	وبا	policies
+Relation	T20	T37	NoRel	true	وبا	ترک
+Relation	T21	T38	NoRel	true	متوقع	شامل
+Relation	T22	T0	NoRel	true	وبا	pandemic
+Relation	T22	T2	NoRel	true	وبا	اقدامات
+Relation	T22	T6	NoRel	true	وبا	علاج
+Relation	T23	T33	NoRel	true	قابو	منتقل
+Relation	T24	T17	NoRel	true	کم	approach
+Relation	T24	T20	NoRel	true	کم	وبا
+Relation	T25	T1	NoRel	true	epidemic curve	تیار
+Relation	T25	T10	NoRel	true	epidemic curve	تدابير
+Relation	T25	T16	NoRel	true	epidemic curve	policies
+Relation	T25	T28	NoRel	true	epidemic curve	کم
+Relation	T25	T31	NoRel	true	epidemic curve	مدد
+Relation	T25	T40	NoRel	true	epidemic curve	تجویز
+Relation	T25	T5	NoRel	true	epidemic curve	علاج
+Relation	T26	T10	NoRel	true	کہتے	تدابير
+Relation	T26	T19	NoRel	true	کہتے	اپنائے
+Relation	T26	T27	NoRel	true	کہتے	انفیکشنوں
+Relation	T27	T7	NoRel	true	انفیکشنوں	تیاری
+Relation	T28	T30	NoRel	true	کم	کم
+Relation	T29	T12	NoRel	true	مدد	چھونے
+Relation	T29	T32	NoRel	true	مدد	قیام
+Relation	T29	T8	NoRel	true	مدد	پانے
+Relation	T3	T11	NoRel	true	انفیکشن	سفر
+Relation	T3	T21	NoRel	true	انفیکشن	متوقع
+Relation	T30	T11	NoRel	true	کم	سفر
+Relation	T30	T40	NoRel	true	کم	تجویز
+Relation	T30	T7	NoRel	true	کم	تیاری
+Relation	T35	T7	NoRel	true	ترک	تیاری
+Relation	T36	T19	NoRel	true	دھونا	اپنائے
+Relation	T36	T37	NoRel	true	دھونا	ترک
+Relation	T36	T8	NoRel	true	دھونا	پانے
+Relation	T37	T1	NoRel	true	ترک	تیار
+Relation	T38	T19	NoRel	true	شامل	اپنائے
+Relation	T4	T10	NoRel	true	کرنے	تدابير
+Relation	T41	T11	NoRel	true	کھانسی	سفر
+Relation	T41	T21	NoRel	true	کھانسی	متوقع
+Relation	T41	T24	NoRel	true	کھانسی	کم
+Relation	T41	T3	NoRel	true	کھانسی	انفیکشن
+Relation	T41	T8	NoRel	true	کھانسی	پانے
+Relation	T42	T17	NoRel	true	ڈھانپ	approach
+Relation	T42	T28	NoRel	true	ڈھانپ	کم
+Relation	T5	T0	NoRel	true	علاج	pandemic
+Relation	T5	T1	NoRel	true	علاج	تیار
+Relation	T5	T17	NoRel	true	علاج	approach
+Relation	T6	T39	NoRel	true	علاج	سرگرمیوں
+Relation	T6	T9	NoRel	true	علاج	انفیکشن
+Relation	T7	T20	NoRel	true	تیاری	وبا
+Relation	T7	T21	NoRel	true	تیاری	متوقع
+Relation	T7	T25	NoRel	true	تیاری	epidemic curve
+Relation	T8	T0	NoRel	true	پانے	pandemic
+Relation	T8	T12	NoRel	true	پانے	چھونے
+Relation	T8	T15	NoRel	true	پانے	چھینکا
+Relation	T8	T26	NoRel	true	پانے	کہتے
+Relation	T8	T28	NoRel	true	پانے	کم
+Relation	T8	T41	NoRel	true	پانے	کھانسی
+Relation	T8	T9	NoRel	true	پانے	انفیکشن
+Relation	T9	T21	NoRel	true	انفیکشن	متوقع

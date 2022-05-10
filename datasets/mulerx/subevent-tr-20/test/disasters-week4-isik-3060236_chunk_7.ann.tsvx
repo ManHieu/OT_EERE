@@ -1,0 +1,13 @@
+Text	Hazine ve Maliye Bakanlığı afet bölgesi ilan edilen illerde mücbir sebep hali ilan ederek her türlü vergi , ceza ve gecikme faizi ödeme sürelerinin uzatıldığını açıkladı .	Mücbir sebep döneminde verilmesi gereken beyanname ve bildirimler 17 Ocak 2022'ye kadar ertelendi .	17 Ağustos 2021'de İçişleri Bakanlığı kararı ile Bozkurt kaymakamı Okan Yenidünya görevden alınarak yerine Giresun'un Dereli ilçesi kaymakamı Murat Atıcı atandı .	Yenidünya ise Dereli kaymakamı olarak görevlendirildi .	Bakanlık gerekçe olarak , Atıcı'nın daha önce meydana gelen afetlerdeki tecrübesi gösterildi .
+Event	T3	açıkladı	EVENT	161
+Event	T6	ertelendi	EVENT	260
+Event	T7	kararı	EVENT	310
+Event	T8	alınarak	EVENT	363
+Event	T9	atandı	EVENT	426
+Event	T10	görevlendirildi	EVENT	473
+Event	T12	gösterildi	EVENT	573
+Event	T1	edilen	EVENT	45
+Relation	T8	T10	SuperSub	true	alınarak	görevlendirildi
+Relation	T10	T8	SubSuper	true	görevlendirildi	alınarak
+Relation	T10	T9	NoRel	true	görevlendirildi	atandı
+Relation	T6	T9	NoRel	true	ertelendi	atandı

@@ -1,0 +1,22 @@
+Text	Pero el Representante Jane Harman ( D-Calif. ) , Presidente del House Homeland Security Subcommittee on Intelligence , Information Sharing , and Terrorism Risk Assessment , dijo el siguiente día a un oficial federal sobre " fuertes sugerencias de conexiones con Yemen-al Qaeda " con el sospechoso .	Abdulmutallab dijo que obtuvo el artefacto en Yemen , y las instrucciones de al-Qaeda de como usarlo y detonarlo cuando el avión se encontrase en tierra estadounidense .	A pesar de eso , las autoridades no lo confirmaron .	Sin embargo , él viajó recientemente a Yemen , lugar donde su madre vive .	Como medidas de seguridad debido al incidente del vuelo 253 , los principales aeropuertos europeos incrementaron las medidas de seguridad en los vuelos hacia los EE._UU. .
+Event	T0	dijo	EVENT	173
+Event	T1	sugerencias	EVENT	232
+Event	T2	conexiones	EVENT	247
+Event	T3	dijo	EVENT	313
+Event	T4	obtuvo	EVENT	322
+Event	T5	encontrase	EVENT	431
+Event	T6	viajó	EVENT	539
+Event	T7	incidente	EVENT	633
+Event	T8	vuelo	EVENT	647
+Event	T9	incrementaron	EVENT	696
+Event	T10	medidas	EVENT	714
+Event	T11	vuelos	EVENT	742
+Relation	T7	T9	SuperSub	true	incidente	incrementaron
+Relation	T9	T7	SubSuper	true	incrementaron	incidente
+Relation	T0	T11	NoRel	true	dijo	vuelos
+Relation	T1	T7	NoRel	true	sugerencias	incidente
+Relation	T11	T2	NoRel	true	vuelos	conexiones
+Relation	T4	T6	NoRel	true	obtuvo	viajó
+Relation	T6	T8	NoRel	true	viajó	vuelo
+Relation	T7	T4	NoRel	true	incidente	obtuvo
+Relation	T9	T5	NoRel	true	incrementaron	encontrase

@@ -1,0 +1,13 @@
+Text	LEBLANC YÖNTEMI , 19. yüzyıl boyunca kullanılan ve mucidi Nicolas Leblanc'ın adını taşıyan _ soda külü _ ( sodyum karbonat ) üretimi için erken bir endüstriyel yöntemdi .	İki aşamayı içeriyordu : sodyum klorürden sodyum sülfat üretimi , ardından sodyum sülfatın kömür ve kalsiyum karbonat ile reaksiyona sokulmasıyla sodyum karbonat üretilmesi .	Solvay işlemi geliştirilmesinden sonra yöntem yavaş yavaş geçersiz hale geldi .	Kategori : Kimyasal işlemler Kategori : Sanayi Devrimi Kategori : Fransız icatları Kategori : İsim reaksiyonları Kategori : Endüstriyel süreçler	
+Event	T0	kullanılan	EVENT	37
+Event	T1	üretimi	EVENT	125
+Event	T2	yöntemdi	EVENT	160
+Event	T3	reaksiyona	EVENT	293
+Event	T4	üretimi	EVENT	227
+Event	T6	üretilmesi	EVENT	333
+Event	T7	geliştirilmesinden	EVENT	360
+Relation	T2	T1	SuperSub	true	yöntemdi	üretimi
+Relation	T1	T2	SubSuper	true	üretimi	yöntemdi
+Relation	T2	T6	SuperSub	true	yöntemdi	üretilmesi
+Relation	T6	T2	SubSuper	true	üretilmesi	yöntemdi
+Relation	T4	T0	NoRel	true	üretimi	kullanılan

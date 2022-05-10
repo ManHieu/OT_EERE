@@ -1,0 +1,15 @@
+Text	Gösteriye sert şekilde müdahale edildi .	küçükresim | sağ | Haft - i Tir bombalama olayı kurbanlarının anısına yapılan mozole .	Mir Hüseyin Musavi tarafından dizayn edilmiştir .	28 Haziran 1981'deki bu bombalama eylemi sonucunda , parti sekreteri ve Yargıtay Başkanı Ayetullah Muhammed Beheşti , dört bakan ( Sağlık , Ulaştırma , Telekomünikasyon ve Enerji bakanları ) ve aralarında Muhammed Muntazeri'nin de bulunduğu 27 Meclis üyesi ve hükûmet ileri geleni hayatlarını kaybetti .	Humeyni , saldırıdan HMÖ'yü sorumlu tuttu .
+Event	T0	edildi	EVENT	32
+Event	T2	yapılan	EVENT	111
+Event	T3	edilmiştir	EVENT	165
+Event	T5	kaybetti	EVENT	471
+Event	T6	saldırıdan	EVENT	492
+Event	T7	tuttu	EVENT	518
+Event	T8	Gösteriye	EVENT	0
+Event	T1	bombalama	EVENT	73
+Event	T9	kurbanlarının	EVENT	89
+Event	T4	bombalama	EVENT	202
+Relation	T4	T9	NoRel	true	bombalama	kurbanlarının
+Relation	T5	T8	NoRel	true	kaybetti	Gösteriye
+Relation	T7	T8	NoRel	true	tuttu	Gösteriye
+Relation	T7	T9	NoRel	true	tuttu	kurbanlarının

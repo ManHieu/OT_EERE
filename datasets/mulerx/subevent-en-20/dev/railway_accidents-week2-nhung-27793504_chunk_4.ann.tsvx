@@ -1,0 +1,43 @@
+Text	One misunderstanding that contributed in large part to the disaster was that Takoma Park station was closed between 6:30 pm and 6:30 am each day , when no signals would have been displayed ; in these circumstances the previous block ( controlled by signals at Silver Spring ) extends beyond Terra Cotta .	No. 2120 had received a clear signal from Silver Spring , so the engineer believed he was cleared through to University .	Further inquiries also revealed that the engineer had been on almost continuous duty for 33 hours and had not had a full night 's sleep for 57 hours .	Four men were charged with manslaughter — the engineer , conductor , brakeman and fireman of train 2120 — but after a lengthy trial all were found not guilty due to lack of evidence .	Nonetheless , the Interstate Commerce Commission blamed them , claiming all were negligent .
+Event	T0	misunderstanding	EVENT	4
+Event	T1	contributed	EVENT	26
+Event	T10	inquiries	EVENT	435
+Event	T11	revealed	EVENT	450
+Event	T12	sleep	EVENT	557
+Event	T13	charged	EVENT	592
+Event	T14	manslaughter	EVENT	605
+Event	T15	trial	EVENT	704
+Event	T16	blamed	EVENT	811
+Event	T17	claiming	EVENT	825
+Event	T18	negligent	EVENT	843
+Event	T19	cleared	EVENT	395
+Event	T2	disaster	EVENT	59
+Event	T20	duty	EVENT	507
+Event	T21	lack	EVENT	743
+Event	T3	closed	EVENT	101
+Event	T4	displayed	EVENT	179
+Event	T5	controlled	EVENT	235
+Event	T6	extends	EVENT	276
+Event	T7	received	EVENT	318
+Event	T8	signal	EVENT	335
+Event	T9	believed	EVENT	379
+Relation	T1	T6	NoRel	true	contributed	extends
+Relation	T11	T8	NoRel	true	revealed	signal
+Relation	T12	T10	NoRel	true	sleep	inquiries
+Relation	T12	T21	NoRel	true	sleep	lack
+Relation	T14	T2	NoRel	true	manslaughter	disaster
+Relation	T15	T17	NoRel	true	trial	claiming
+Relation	T17	T21	NoRel	true	claiming	lack
+Relation	T18	T19	NoRel	true	negligent	cleared
+Relation	T19	T21	NoRel	true	cleared	lack
+Relation	T2	T11	NoRel	true	disaster	revealed
+Relation	T2	T9	NoRel	true	disaster	believed
+Relation	T20	T13	NoRel	true	duty	charged
+Relation	T21	T1	NoRel	true	lack	contributed
+Relation	T3	T10	NoRel	true	closed	inquiries
+Relation	T3	T2	NoRel	true	closed	disaster
+Relation	T6	T10	NoRel	true	extends	inquiries
+Relation	T6	T8	NoRel	true	extends	signal
+Relation	T7	T11	NoRel	true	received	revealed
+Relation	T8	T18	NoRel	true	signal	negligent
+Relation	T9	T12	NoRel	true	believed	sleep

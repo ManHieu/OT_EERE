@@ -1,0 +1,10 @@
+Text	Bygningen blev nedrevet i 2007 .	Borough of Manhattan Community College's Fiterman Hall på 30 West Broadway er ligeledes dømt til nedrivning på grund af omfattende skader fra angrebene .	Andre nærliggende bygninger , herunder 90 West Street og Verizon Building , har lidt større skade , men er siden blevet restaureret .	World Financial Center-bygninger , One Liberty Plaza , Millenium Hilton , og 90 Church Street havde moderate skader .	De er siden blevet restaureret .
+Event	T0	nedrevet	EVENT	15
+Event	T1	skader	EVENT	164
+Event	T2	angrebene	EVENT	175
+Event	T3	skade	EVENT	279
+Event	T4	restaureret	EVENT	307
+Event	T5	skader	EVENT	430
+Event	T6	restaureret	EVENT	458
+Event	T7	dømt	EVENT	121
+Relation	T7	T4	NoRel	true	dømt	restaureret

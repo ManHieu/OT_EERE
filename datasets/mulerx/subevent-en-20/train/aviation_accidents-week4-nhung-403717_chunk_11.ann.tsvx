@@ -1,0 +1,37 @@
+Text	Although there was no damage to the secondary O- ring , this indicated that the primary O- ring was not creating a reliable seal and was allowing hot gas to pass .	The amount of O- ring erosion was insufficient to prevent the O- ring from sealing , and investigators concluded that the soot between the O-rings resulted from non-uniform pressure at the time of ignition .	The January 1985 launch of was the coldest Space Shuttle launch to date .	The air temperature was at the time of launch , and the calculated O- ring temperature was .	Post-flight analysis revealed erosion in primary O-rings in both SRBs .
+Event	T0	damage	EVENT	22
+Event	T1	indicated	EVENT	61
+Event	T2	creating	EVENT	104
+Event	T3	seal	EVENT	124
+Event	T4	pass	EVENT	157
+Event	T5	erosion	EVENT	186
+Event	T6	sealing	EVENT	239
+Event	T7	concluded	EVENT	267
+Event	T8	soot	EVENT	286
+Event	T9	resulted	EVENT	311
+Event	T10	ignition	EVENT	361
+Event	T11	launch	EVENT	389
+Event	T12	launch	EVENT	429
+Event	T13	launch	EVENT	485
+Event	T14	calculated	EVENT	502
+Event	T15	erosion	EVENT	569
+Event	T16	prevent	EVENT	214
+Relation	T0	T6	NoRel	true	damage	sealing
+Relation	T1	T12	NoRel	true	indicated	launch
+Relation	T11	T8	NoRel	true	launch	soot
+Relation	T14	T6	NoRel	true	calculated	sealing
+Relation	T14	T8	NoRel	true	calculated	soot
+Relation	T15	T13	NoRel	true	erosion	launch
+Relation	T2	T16	NoRel	true	creating	prevent
+Relation	T3	T10	NoRel	true	seal	ignition
+Relation	T3	T12	NoRel	true	seal	launch
+Relation	T4	T3	NoRel	true	pass	seal
+Relation	T4	T5	NoRel	true	pass	erosion
+Relation	T5	T13	NoRel	true	erosion	launch
+Relation	T7	T11	NoRel	true	concluded	launch
+Relation	T7	T3	NoRel	true	concluded	seal
+Relation	T7	T5	NoRel	true	concluded	erosion
+Relation	T8	T12	NoRel	true	soot	launch
+Relation	T8	T2	NoRel	true	soot	creating
+Relation	T9	T1	NoRel	true	resulted	indicated
+Relation	T9	T2	NoRel	true	resulted	creating

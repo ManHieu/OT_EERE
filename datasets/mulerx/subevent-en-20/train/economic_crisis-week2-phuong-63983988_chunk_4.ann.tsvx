@@ -1,0 +1,84 @@
+Text	Tommy is compensated for his help and offered a position in Don Salieri 's organization , which he initially refuses , but is forced to accept after being attacked by two Morello gangsters who trash his cab in an act of revenge .	After exacting retribution upon his attackers , Tommy begins to assist with running Salieri 's rackets across Lost Heaven , overseen by his _ consigliere _ Frank Colletti .	He befriends Paulie and Sam during the jobs they perform together while earning Salieri 's respect for thwarting Don Morello 's attempts to take over his businesses .	In 1932 , Tommy , now a made man , begins a relationship with Sarah Marino , the daughter of Salieri 's bartender Luigi , after protecting her from a gang of street thugs .	On Salieri 's orders , Tommy and Paulie retaliate against the gang , but quickly learn that their leader , whom Paulie killed , was the son of corrupt city councillor Roberto Ghillotti , who vows revenge .
+Event	T0	compensated	EVENT	9
+Event	T1	help	EVENT	29
+Event	T10	retribution	EVENT	245
+Event	T11	begins	EVENT	284
+Event	T12	assist	EVENT	294
+Event	T13	running	EVENT	306
+Event	T14	rackets	EVENT	325
+Event	T15	overseen	EVENT	354
+Event	T16	befriends	EVENT	406
+Event	T17	jobs	EVENT	442
+Event	T18	perform	EVENT	452
+Event	T19	earning	EVENT	475
+Event	T2	offered	EVENT	38
+Event	T20	thwarting	EVENT	506
+Event	T21	attempts	EVENT	531
+Event	T22	made	EVENT	594
+Event	T23	begins	EVENT	605
+Event	T24	relationship	EVENT	614
+Event	T25	protecting	EVENT	698
+Event	T26	orders	EVENT	757
+Event	T27	retaliate	EVENT	783
+Event	T28	learn	EVENT	824
+Event	T29	killed	EVENT	862
+Event	T3	refuses	EVENT	109
+Event	T30	revenge	EVENT	939
+Event	T31	take over	EVENT	543
+Event	T4	forced	EVENT	126
+Event	T5	accept	EVENT	136
+Event	T6	attacked	EVENT	155
+Event	T7	trash	EVENT	193
+Event	T9	revenge	EVENT	220
+Relation	T16	T18	SuperSub	true	befriends	perform
+Relation	T18	T16	SubSuper	true	perform	befriends
+Relation	T18	T19	SuperSub	true	perform	earning
+Relation	T19	T18	SubSuper	true	earning	perform
+Relation	T27	T28	SuperSub	true	retaliate	learn
+Relation	T28	T27	SubSuper	true	learn	retaliate
+Relation	T0	T12	NoRel	true	compensated	assist
+Relation	T0	T17	NoRel	true	compensated	jobs
+Relation	T1	T10	NoRel	true	help	retribution
+Relation	T1	T19	NoRel	true	help	earning
+Relation	T11	T17	NoRel	true	begins	jobs
+Relation	T11	T27	NoRel	true	begins	retaliate
+Relation	T12	T29	NoRel	true	assist	killed
+Relation	T13	T28	NoRel	true	running	learn
+Relation	T14	T25	NoRel	true	rackets	protecting
+Relation	T15	T26	NoRel	true	overseen	orders
+Relation	T15	T5	NoRel	true	overseen	accept
+Relation	T16	T22	NoRel	true	befriends	made
+Relation	T19	T1	NoRel	true	earning	help
+Relation	T19	T23	NoRel	true	earning	begins
+Relation	T20	T5	NoRel	true	thwarting	accept
+Relation	T21	T24	NoRel	true	attempts	relationship
+Relation	T21	T29	NoRel	true	attempts	killed
+Relation	T22	T14	NoRel	true	made	rackets
+Relation	T22	T21	NoRel	true	made	attempts
+Relation	T23	T10	NoRel	true	begins	retribution
+Relation	T23	T21	NoRel	true	begins	attempts
+Relation	T24	T0	NoRel	true	relationship	compensated
+Relation	T24	T14	NoRel	true	relationship	rackets
+Relation	T24	T2	NoRel	true	relationship	offered
+Relation	T24	T25	NoRel	true	relationship	protecting
+Relation	T24	T26	NoRel	true	relationship	orders
+Relation	T24	T29	NoRel	true	relationship	killed
+Relation	T24	T5	NoRel	true	relationship	accept
+Relation	T25	T0	NoRel	true	protecting	compensated
+Relation	T25	T22	NoRel	true	protecting	made
+Relation	T26	T23	NoRel	true	orders	begins
+Relation	T27	T26	NoRel	true	retaliate	orders
+Relation	T28	T23	NoRel	true	learn	begins
+Relation	T28	T4	NoRel	true	learn	forced
+Relation	T30	T31	NoRel	true	revenge	take over
+Relation	T31	T27	NoRel	true	take over	retaliate
+Relation	T4	T12	NoRel	true	forced	assist
+Relation	T4	T23	NoRel	true	forced	begins
+Relation	T5	T16	NoRel	true	accept	befriends
+Relation	T5	T30	NoRel	true	accept	revenge
+Relation	T5	T9	NoRel	true	accept	revenge
+Relation	T6	T1	NoRel	true	attacked	help
+Relation	T6	T14	NoRel	true	attacked	rackets
+Relation	T7	T11	NoRel	true	trash	begins
+Relation	T7	T17	NoRel	true	trash	jobs
+Relation	T9	T31	NoRel	true	revenge	take over

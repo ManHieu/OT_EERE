@@ -1,0 +1,44 @@
+Text	The impact was so powerful that the strongest part of the aircraft was obliterated .	The NTSC also stated that the engines of Flight 610 were still running when it crashed into the sea , indicated by the high RPM .	Further examination of the aircraft 's instruments revealed that one of the aircraft 's airspeed indicators had malfunctioned for its last four flights , including the flight to Denpasar .	On 7 November , the NTSC confirmed that there had been problems with Flight 610 's angle of attack ( AoA ) sensors .	Thinking that it would fix the problem , the engineers in Bali then replaced one of the aircraft 's AoA sensors , but the problem persisted on the penultimate flight , from Denpasar to Jakarta .
+Event	T0	impact	EVENT	4
+Event	T1	obliterated	EVENT	71
+Event	T2	stated	EVENT	99
+Event	T3	running	EVENT	148
+Event	T4	indicated	EVENT	187
+Event	T5	examination	EVENT	223
+Event	T6	revealed	EVENT	266
+Event	T7	malfunctioned	EVENT	327
+Event	T8	flights	EVENT	359
+Event	T9	flight	EVENT	383
+Event	T10	confirmed	EVENT	429
+Event	T11	problems	EVENT	459
+Event	T12	attack	EVENT	496
+Event	T13	Thinking	EVENT	521
+Event	T14	fix	EVENT	544
+Event	T15	problem	EVENT	552
+Event	T16	replaced	EVENT	589
+Event	T17	persisted	EVENT	651
+Event	T18	flight	EVENT	680
+Event	T19	crashed	EVENT	164
+Relation	T0	T15	NoRel	true	impact	problem
+Relation	T0	T17	NoRel	true	impact	persisted
+Relation	T1	T12	NoRel	true	obliterated	attack
+Relation	T10	T12	NoRel	true	confirmed	attack
+Relation	T11	T19	NoRel	true	problems	crashed
+Relation	T12	T14	NoRel	true	attack	fix
+Relation	T12	T4	NoRel	true	attack	indicated
+Relation	T16	T17	NoRel	true	replaced	persisted
+Relation	T17	T13	NoRel	true	persisted	Thinking
+Relation	T17	T16	NoRel	true	persisted	replaced
+Relation	T18	T11	NoRel	true	flight	problems
+Relation	T18	T6	NoRel	true	flight	revealed
+Relation	T19	T13	NoRel	true	crashed	Thinking
+Relation	T19	T17	NoRel	true	crashed	persisted
+Relation	T2	T1	NoRel	true	stated	obliterated
+Relation	T3	T11	NoRel	true	running	problems
+Relation	T3	T6	NoRel	true	running	revealed
+Relation	T4	T3	NoRel	true	indicated	running
+Relation	T4	T9	NoRel	true	indicated	flight
+Relation	T5	T6	NoRel	true	examination	revealed
+Relation	T7	T0	NoRel	true	malfunctioned	impact
+Relation	T7	T12	NoRel	true	malfunctioned	attack
+Relation	T9	T2	NoRel	true	flight	stated

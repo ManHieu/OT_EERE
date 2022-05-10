@@ -1,0 +1,24 @@
+Text	Rusya’nın Paris Büyükelçisi Aleksandr Orlov , Europe 1 adlı radyoya yaptığı açıklamada paraşütle atlamayı başaran diğer pilotun Suriye Silahlı Kuvvetleri tarafından sağ olarak bulunduğunu söyledi .	Kürt Dağı'na paraşütle inen asker , bölgedeki muhaliflerden kaçmayı başardı .	Lazkiye'deki Rusya'ya ait hava_üssüne getirildiğini belirtti .	Rusya Savunma Bakanı Sergey Şoygu'da pilotun Hmeymim Hava Üssü'ne sağ olarak getirildiğini onayladı .	Suriye Türkmen Ordusu'na bağlı 2. Sahil Tümen Komutanı Yardımcısı Alparslan Çelik ise pilotlara paraşütle yere inerlerken ateş açıldığı ve ikisinin de ölü olarak ele geçirildiğini iddia etmişti .
+Event	T0	söyledi	EVENT	188
+Event	T1	inen	EVENT	221
+Event	T3	belirtti	EVENT	328
+Event	T4	onayladı	EVENT	430
+Event	T5	açıldığı	EVENT	568
+Event	T7	açıklamada	EVENT	76
+Event	T8	atlamayı	EVENT	97
+Event	T9	bulunduğunu	EVENT	176
+Event	T10	kaçmayı	EVENT	258
+Event	T2	getirildiğini	EVENT	314
+Event	T11	getirildiğini	EVENT	416
+Event	T12	inerlerken	EVENT	552
+Event	T13	ele geçirildiğini	EVENT	603
+Event	T6	iddia etmişti	EVENT	621
+Relation	T7	T3	SuperSub	true	açıklamada	belirtti
+Relation	T3	T7	SubSuper	true	belirtti	açıklamada
+Relation	T1	T13	NoRel	true	inen	ele geçirildiğini
+Relation	T10	T3	NoRel	true	kaçmayı	belirtti
+Relation	T11	T7	NoRel	true	getirildiğini	açıklamada
+Relation	T2	T13	NoRel	true	getirildiğini	ele geçirildiğini
+Relation	T4	T6	NoRel	true	onayladı	iddia etmişti
+Relation	T6	T13	NoRel	true	iddia etmişti	ele geçirildiğini
+Relation	T8	T9	NoRel	true	atlamayı	bulunduğunu

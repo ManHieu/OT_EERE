@@ -1,0 +1,17 @@
+Text	SS , Holokost sırasında 5 , 5 ila 6 milyon Yahudi'nin ve milyonlarca diğer kurbanın soykırımındaki rolü en büyük olan örgüttü .	II. Dünya Savaşı ( 1939 - 45 ) sırasında örgütün bütün birimlerinin üyeleri savaş suçları ve insanlığa karşı suçlar işledi .	SS ayrıca ticari işletmelerde yer aldı ve toplama kampı mahkûmlarını köle işçi olarak kullandı .	Nazi Almanyası'nın yenilgisinden sonra SS ve NSDAP Nürnberg Uluslararası Askerî Ceza Mahkemesi tarafından suç örgütleri olarak yargılandı .	SS yönetimi içerisinde hayatta kalanlar arasında en yüksek rütbeye sahip olan Ernst Kaltenbrunner , Nürnberg davaları sırasında insanlığa karşı suçlardan suçlu bulundu ve 1946'da asılarak idam edildi .
+Event	T1	işledi	EVENT	244
+Event	T2	aldı	EVENT	287
+Event	T3	kullandı	EVENT	339
+Event	T4	yenilgisinden	EVENT	369
+Event	T5	yargılandı	EVENT	477
+Event	T6	bulundu	EVENT	650
+Event	T7	edildi	EVENT	683
+Event	T8	Holokost	EVENT	5
+Event	T9	II. Dünya Savaşı	EVENT	128
+Relation	T9	T4	SuperSub	true	II. Dünya Savaşı	yenilgisinden
+Relation	T4	T9	SubSuper	true	yenilgisinden	II. Dünya Savaşı
+Relation	T8	T5	SuperSub	true	Holokost	yargılandı
+Relation	T5	T8	SubSuper	true	yargılandı	Holokost
+Relation	T3	T4	NoRel	true	kullandı	yenilgisinden
+Relation	T7	T2	NoRel	true	edildi	aldı
+Relation	T8	T6	NoRel	true	Holokost	bulundu

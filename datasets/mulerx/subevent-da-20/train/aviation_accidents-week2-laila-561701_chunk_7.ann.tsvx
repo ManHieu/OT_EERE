@@ -1,0 +1,12 @@
+Text	Efter ulykken blev en eftersøgning sat i gang af den svenske redningstjeneste , men sne , vind og dårlig sigtbarhed , forhindrede en rekognoscering fra helikoptere .	Den 17. marts blev søgningen efter overlevende afblæst .	Herefter blev der alarmeret dels mandskab på landjorden , men også danske og svenske redningshelikoptere , samt et norsk P-3 Orion og amerikansk AWACS blev anvendt til at søge efter flyet i området .	Området blev under eftersøgningen karakteriseret som svært tilgængeligt med ca. 40 km til nærmeste farbare vej , mange klipper , gletsjere og desuden lavinefare .	Desuden blæste det kraftigt med snefygning til følge .
+Event	T0	forhindrede	EVENT	118
+Event	T1	rekognoscering	EVENT	133
+Event	T2	søgningen	EVENT	185
+Event	T3	afblæst	EVENT	213
+Event	T4	alarmeret	EVENT	241
+Event	T5	anvendt	EVENT	379
+Event	T6	søge	EVENT	394
+Event	T7	karakteriseret	EVENT	457
+Event	T8	blæste	EVENT	594
+Relation	T3	T4	SuperSub	true	afblæst	alarmeret
+Relation	T4	T3	SubSuper	true	alarmeret	afblæst

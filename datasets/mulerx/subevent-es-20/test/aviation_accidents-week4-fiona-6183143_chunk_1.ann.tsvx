@@ -1,0 +1,40 @@
+Text	Condiciones meteorológicas desfavorables con una tormenta de nieve serían las causas del accidente .	Es el peor siniestro aéreo ocurrido en Argelia desde que un avión de Air Algerie se estrelló en 2003 dejando un total de 102 fallecidos .	Sobrevivió un pasajero solamente , que fue trasladado inmediatamente al hospital de Constantina , la ciudad más próxima al siniestro .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación militar - Accidente en 2018 del Il-76 de la Fuerza Aérea de Argelia	Categoría : Accidentes e incidentes aéreos en Argelia Categoría : Accidentes e incidentes de Lockheed Hercules Categoría : Accidentes e incidentes aéreos de 2014 Categoría : Argelia en 2014 Categoría : Accidentes e incidentes aéreos causados por meteorología adversa
+Event	T0	tormenta	EVENT	49
+Event	T1	accidente	EVENT	89
+Event	T2	ocurrido	EVENT	128
+Event	T3	estrelló	EVENT	185
+Event	T4	dejando	EVENT	202
+Event	T5	fallecidos	EVENT	226
+Event	T6	Sobrevivió	EVENT	239
+Event	T7	trasladado	EVENT	282
+Event	T8	siniestro	EVENT	362
+Event	T9	Accidente	EVENT	376
+Event	T10	Accidentes	EVENT	408
+Event	T11	Accidentes	EVENT	472
+Event	T12	Accidente	EVENT	530
+Event	T13	incidentes	EVENT	613
+Event	T14	Accidentes	EVENT	654
+Event	T15	incidentes	EVENT	667
+Event	T16	Accidentes	EVENT	711
+Event	T17	incidentes	EVENT	724
+Event	T18	Accidentes	EVENT	790
+Event	T19	causados	EVENT	821
+Relation	T0	T1	NoRel	true	tormenta	accidente
+Relation	T0	T13	NoRel	true	tormenta	incidentes
+Relation	T0	T19	NoRel	true	tormenta	causados
+Relation	T1	T9	NoRel	true	accidente	Accidente
+Relation	T10	T17	NoRel	true	Accidentes	incidentes
+Relation	T11	T8	NoRel	true	Accidentes	siniestro
+Relation	T12	T16	NoRel	true	Accidente	Accidentes
+Relation	T12	T9	NoRel	true	Accidente	Accidente
+Relation	T14	T11	NoRel	true	Accidentes	Accidentes
+Relation	T14	T7	NoRel	true	Accidentes	trasladado
+Relation	T15	T8	NoRel	true	incidentes	siniestro
+Relation	T16	T15	NoRel	true	Accidentes	incidentes
+Relation	T18	T8	NoRel	true	Accidentes	siniestro
+Relation	T19	T12	NoRel	true	causados	Accidente
+Relation	T3	T11	NoRel	true	estrelló	Accidentes
+Relation	T4	T11	NoRel	true	dejando	Accidentes
+Relation	T4	T2	NoRel	true	dejando	ocurrido
+Relation	T6	T1	NoRel	true	Sobrevivió	accidente
+Relation	T7	T9	NoRel	true	trasladado	Accidente

@@ -1,0 +1,16 @@
+Text	Kazaya karışan trenden biri Quiévrain'den Liège'e uzun mesafeli yolcu treni olup , Halle tren istasyonundan kuzeye gitmek üzere henüz yeni hareket etmişti .	Diğer tren ise Leuven’den Braine - le - Comte’ye hizmet veren bir banliyö yolcu treni olup , Buizingen tren istasyonundan güneye doğru gitmek üzere yeni hareket etmişti .	Çarpışmada trenlerden birinin ilk iki vagonu , diğer trenin ilk vagonu üzerine çıktı .	Görgü tanıkları , çarpışmayı , yolcuların vagonlarda ‘ ’ çok kötü ’’ bir şekilde fırlatıldığı şeklinde açıkladılar .	Tren hizmetleri , çarpışmanın olduğu hat boyunca durduruldu .
+Event	T1	etmişti	EVENT	147
+Event	T3	etmişti	EVENT	318
+Event	T4	çıktı	EVENT	407
+Event	T5	çarpışmayı	EVENT	433
+Event	T6	çarpışmanın	EVENT	550
+Event	T7	durduruldu	EVENT	581
+Event	T8	karışan	EVENT	7
+Event	T9	veren	EVENT	213
+Event	T2	Çarpışmada	EVENT	328
+Event	T10	tanıkları	EVENT	421
+Event	T11	açıkladılar	EVENT	518
+Relation	T1	T7	NoRel	true	etmişti	durduruldu
+Relation	T7	T3	NoRel	true	durduruldu	etmişti
+Relation	T7	T6	NoRel	true	durduruldu	çarpışmanın
+Relation	T9	T3	NoRel	true	veren	etmişti

@@ -1,0 +1,30 @@
+Text	He left the service in 1952 to join the Republic Aviation Corporation .	Ardery became an experimental and production test pilot for Republic Aviation , eventually being assigned to the F - 105 Thunderchief project as one of the principal test pilots for the fighter - bomber from its maiden flight in 1955 .	As the design was improved , he flew the newer variants , including the advanced D - model , specializing in checkout flights " on the sophisticated electronic units which make the jet literally ' automatic ' . "	In early 1960 , he successfully completed a 300 - mile roundtrip flight with " hands - off " or all on instruments except for take - off and landing .	" It was the longest instrument - controlled flight of the F - 105 D to date . "
+Event	T0	left	EVENT	3
+Event	T1	service	EVENT	12
+Event	T2	join	EVENT	31
+Event	T3	became	EVENT	79
+Event	T4	flight	EVENT	291
+Event	T5	design	EVENT	315
+Event	T6	improved	EVENT	326
+Event	T7	flew	EVENT	340
+Event	T8	specializing	EVENT	401
+Event	T9	flights	EVENT	426
+Event	T10	completed	EVENT	553
+Event	T11	flight	EVENT	586
+Event	T12	landing	EVENT	662
+Event	T13	flight	EVENT	717
+Event	T14	assigned	EVENT	169
+Event	T15	make	EVENT	480
+Event	T16	take - off	EVENT	647
+Relation	T3	T14	SuperSub	true	became	assigned
+Relation	T14	T3	SubSuper	true	assigned	became
+Relation	T10	T5	NoRel	true	completed	design
+Relation	T12	T16	NoRel	true	landing	take - off
+Relation	T13	T15	NoRel	true	flight	make
+Relation	T15	T11	NoRel	true	make	flight
+Relation	T2	T16	NoRel	true	join	take - off
+Relation	T2	T7	NoRel	true	join	flew
+Relation	T3	T11	NoRel	true	became	flight
+Relation	T4	T12	NoRel	true	flight	landing
+Relation	T5	T3	NoRel	true	design	became
+Relation	T7	T1	NoRel	true	flew	service

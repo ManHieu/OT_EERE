@@ -1,0 +1,17 @@
+Text	Elsje flygtede og sprang i Damrak , men den tilløbende mængde fik hende op igen .	Byens magistrat dømte hende til døden , og hun blev henrettet ved kvælning på Dam .	Hendes lig blev hængt op i Volewijk på IJs nordlige bred .	Øksen hang ved siden af hendes hoved .	Den 57-årige Rembrandt lod sig ro over til Volewijk for at tegne hende .
+Event	T0	flygtede	EVENT	6
+Event	T1	sprang	EVENT	18
+Event	T2	fik	EVENT	62
+Event	T3	dømte	EVENT	98
+Event	T4	døden	EVENT	114
+Event	T5	henrettet	EVENT	134
+Event	T6	kvælning	EVENT	148
+Event	T7	hang	EVENT	231
+Event	T8	lod	EVENT	287
+Event	T9	tegne	EVENT	323
+Event	T10	op	EVENT	72
+Event	T11	hængt	EVENT	182
+Relation	T11	T8	SuperSub	true	hængt	lod
+Relation	T8	T11	SubSuper	true	lod	hængt
+Relation	T1	T6	NoRel	true	sprang	kvælning
+Relation	T9	T5	NoRel	true	tegne	henrettet

@@ -1,0 +1,46 @@
+Text	150 px | thumb | left | En amerikansk BLU-3 klyngebombe fra Vietnam krigen	Mange af granaterne detonerer ikke ved nedfald og er derfor livsfarlige lang tid efter krigens ophør .	De typer klyngebomber , Danmark har på lager , er udstyret med selvdestruktionsmekanismer , der skal få granaterne til at destruere sig selv , hvis de ikke eksploderer , når de rammer jorden .	En norsk rapport har dog vist , at selv de mest avancerede klyngebomber har en fejlprocent på 10 % .	Det internationale samfund med Norge i front forsøger at forbyde klyngebomber , Danmark forsinker et sådant forbud og kritiseres af blandt andet Folkekirkens Nødhjælp for ikke at slutte sig til Norge holding .
+Event	T0	detonerer	EVENT	95
+Event	T1	nedfald	EVENT	114
+Event	T2	ophør	EVENT	170
+Event	T3	udstyret	EVENT	228
+Event	T4	destruere	EVENT	300
+Event	T5	eksploderer	EVENT	334
+Event	T6	rammer	EVENT	355
+Event	T7	vist	EVENT	396
+Event	T8	fejlprocent	EVENT	450
+Event	T9	forsøger	EVENT	517
+Event	T10	forbud	EVENT	580
+Event	T11	kritiseres	EVENT	590
+Event	T12	slutte	EVENT	651
+Event	T13	livsfarlige	EVENT	135
+Event	T14	har	EVENT	210
+Event	T15	selvdestruktionsmekanismer	EVENT	241
+Event	T16	rapport	EVENT	380
+Event	T17	forbyde	EVENT	529
+Event	T18	forsinker	EVENT	560
+Relation	T15	T4	SuperSub	true	selvdestruktionsmekanismer	destruere
+Relation	T4	T15	SubSuper	true	destruere	selvdestruktionsmekanismer
+Relation	T15	T8	SuperSub	true	selvdestruktionsmekanismer	fejlprocent
+Relation	T8	T15	SubSuper	true	fejlprocent	selvdestruktionsmekanismer
+Relation	T17	T18	SuperSub	true	forbyde	forsinker
+Relation	T18	T17	SubSuper	true	forsinker	forbyde
+Relation	T0	T4	NoRel	true	detonerer	destruere
+Relation	T0	T5	NoRel	true	detonerer	eksploderer
+Relation	T1	T12	NoRel	true	nedfald	slutte
+Relation	T1	T17	NoRel	true	nedfald	forbyde
+Relation	T10	T17	NoRel	true	forbud	forbyde
+Relation	T10	T3	NoRel	true	forbud	udstyret
+Relation	T12	T16	NoRel	true	slutte	rapport
+Relation	T13	T16	NoRel	true	livsfarlige	rapport
+Relation	T15	T18	NoRel	true	selvdestruktionsmekanismer	forsinker
+Relation	T16	T10	NoRel	true	rapport	forbud
+Relation	T16	T4	NoRel	true	rapport	destruere
+Relation	T2	T14	NoRel	true	ophør	har
+Relation	T3	T0	NoRel	true	udstyret	detonerer
+Relation	T4	T11	NoRel	true	destruere	kritiseres
+Relation	T4	T7	NoRel	true	destruere	vist
+Relation	T5	T2	NoRel	true	eksploderer	ophør
+Relation	T7	T10	NoRel	true	vist	forbud
+Relation	T7	T12	NoRel	true	vist	slutte
+Relation	T9	T1	NoRel	true	forsøger	nedfald
+Relation	T9	T3	NoRel	true	forsøger	udstyret

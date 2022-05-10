@@ -1,0 +1,25 @@
+Text	اس انسٹرومنٹ کے اندر ایک پینڈولم نصب تھا جسے اژدہے کے جبڑوں سے تاروں کے ذریعے باندھ دیا گیا تھا ۔	جب بھی زلزلہ آتا تو پنڈولم حرکت میں آجاتا اور کسی ایک اژدہے کے جبڑے میں پھنسی گیند گرجاتی	یوں ناصرف زلزلے کی آمد کا بھی پتہ چل جاتا بلکہ سمت کا بھی اندازہ کیا جاسکتا تھا ۔	تصغیر|240px |بائیں |جان ملنے کا افقی پینڈلم سیسموگراف ، جاپان کے اہم ثقافتی ورثہ میں سے ایک ۔	نیشنل میوزیم آف نیچر اینڈ سائنس ٹوکیو ، جاپان میں نمائش کے موقع پر زلزلوں سے متعلق علم کو Seismology کہا جاتا ہے اور اس انسٹرومنٹ کو جو زلزلوں کی آمد ، سمت اور اس کی شدت کی درجہ بندی کو ریکارڈ کرتا ہے سیسمو_گراف Seismograph کہلاتا ہے ، جس کے ذریعے زمین میں آنے والے ارتعاش کو ریکارڈ کیا جاتا تھا ۔
+Event	T0	نصب	EVENT	33
+Event	T1	حرکت	EVENT	125
+Event	T2	گرجاتی	EVENT	181
+Event	T3	زلزلے	EVENT	198
+Event	T4	آمد	EVENT	207
+Event	T5	ملنے	EVENT	294
+Event	T6	نمائش	EVENT	414
+Event	T7	کہا	EVENT	465
+Event	T8	آمد	EVENT	510
+Event	T9	بندی	EVENT	542
+Event	T10	کرتا	EVENT	557
+Event	T11	آنے	EVENT	621
+Event	T12	ارتعاش	EVENT	630
+Event	T13	باندھ	EVENT	78
+Event	T14	زلزلہ	EVENT	105
+Relation	T10	T0	NoRel	true	کرتا	نصب
+Relation	T10	T12	NoRel	true	کرتا	ارتعاش
+Relation	T11	T0	NoRel	true	آنے	نصب
+Relation	T14	T1	NoRel	true	زلزلہ	حرکت
+Relation	T14	T5	NoRel	true	زلزلہ	ملنے
+Relation	T5	T10	NoRel	true	ملنے	کرتا
+Relation	T5	T3	NoRel	true	ملنے	زلزلے
+Relation	T6	T7	NoRel	true	نمائش	کہا
+Relation	T7	T3	NoRel	true	کہا	زلزلے

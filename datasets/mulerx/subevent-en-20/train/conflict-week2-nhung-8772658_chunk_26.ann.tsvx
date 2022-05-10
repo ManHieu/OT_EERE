@@ -1,0 +1,47 @@
+Text	Some issues of contention were divisions over the advisability of committing more troops versus complete withdrawal , the ' winnability ' of the Iraq War regardless of a surge , and framing of the issue .	_ The New York Times _ reported that former Massachusetts Governor Mitt Romney and former New York City Mayor Rudolph Giuliani backed Bush on the troop increase .	McCain did the same , saying on January 12 that " The presence of additional coalition forces would allow the Iraqi government to do what it cannot accomplish today on its own : impose its rule throughout the country . "	Immediately following Bush 's January 10 speech announcing the plan , Democratic politicians , including Ted Kennedy , Harry Reid and Dennis Kucinich , called on Congress to reject the surge .	Senator Dick Durbin issued the Democratic response which called upon Iraqis to " disband the militias and death squads . "
+Event	T0	contention	EVENT	15
+Event	T1	divisions	EVENT	31
+Event	T10	rule	EVENT	557
+Event	T11	announcing	EVENT	637
+Event	T12	reject	EVENT	763
+Event	T13	surge	EVENT	774
+Event	T14	issued	EVENT	802
+Event	T15	response	EVENT	824
+Event	T16	called	EVENT	839
+Event	T17	disband	EVENT	863
+Event	T18	death	EVENT	888
+Event	T19	allow	EVENT	468
+Event	T2	committing	EVENT	66
+Event	T20	presence	EVENT	422
+Event	T21	impose	EVENT	546
+Event	T22	speech	EVENT	630
+Event	T3	withdrawal	EVENT	105
+Event	T4	surge	EVENT	170
+Event	T5	framing	EVENT	182
+Event	T6	reported	EVENT	228
+Event	T7	backed	EVENT	332
+Event	T8	increase	EVENT	357
+Event	T9	saying	EVENT	390
+Relation	T11	T12	SuperSub	true	announcing	reject
+Relation	T12	T11	SubSuper	true	reject	announcing
+Relation	T3	T1	SuperSub	true	withdrawal	divisions
+Relation	T1	T3	SubSuper	true	divisions	withdrawal
+Relation	T1	T10	NoRel	true	divisions	rule
+Relation	T1	T15	NoRel	true	divisions	response
+Relation	T1	T20	NoRel	true	divisions	presence
+Relation	T10	T18	NoRel	true	rule	death
+Relation	T12	T14	NoRel	true	reject	issued
+Relation	T14	T10	NoRel	true	issued	rule
+Relation	T15	T22	NoRel	true	response	speech
+Relation	T16	T14	NoRel	true	called	issued
+Relation	T20	T14	NoRel	true	presence	issued
+Relation	T21	T0	NoRel	true	impose	contention
+Relation	T22	T19	NoRel	true	speech	allow
+Relation	T3	T10	NoRel	true	withdrawal	rule
+Relation	T3	T5	NoRel	true	withdrawal	framing
+Relation	T4	T17	NoRel	true	surge	disband
+Relation	T6	T3	NoRel	true	reported	withdrawal
+Relation	T7	T13	NoRel	true	backed	surge
+Relation	T7	T14	NoRel	true	backed	issued
+Relation	T7	T15	NoRel	true	backed	response
+Relation	T9	T4	NoRel	true	saying	surge

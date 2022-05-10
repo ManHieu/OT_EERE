@@ -1,0 +1,63 @@
+Text	El saldo final fue de doce muertos y 50 heridos de diversa consideración .	El acceso desde el sur a la estación de Pelequén tiene una pequeña pendiente , aunado a que el maquinista del tren de carga no vio la luz roja que está a 600 metros antes de la llegada a la estación .	Estos factores no le dieron la oportunidad de frenar la locomotora a tiempo , a pesar de las advertencias — haciendo sonar repetidamente el pito — que le hizo al Rápido de la Frontera y a que este último de tratara de reiniciar la marcha , a pesar del paso del otro convoy que venia en dirección contraria .	Los primeros en acudir al rescate fueron los lugareños cercanos a la estación , quienes se percataron del incidente cuando escucharon un sonido similar a una explosión .	Debido a la magnitud del hecho y a los precarios instrumentos de rescate que poseían , el Cuerpo de Bomberos de Pelequén solicitó ayuda a los cuerpos de bomberos de Rancagua , San Fernando , Rengo y Santiago .
+Event	T0	muertos	EVENT	27
+Event	T1	heridos	EVENT	40
+Event	T2	acceso	EVENT	78
+Event	T3	vio	EVENT	202
+Event	T4	llegada	EVENT	252
+Event	T5	frenar	EVENT	322
+Event	T6	advertencias	EVENT	369
+Event	T7	sonar	EVENT	393
+Event	T8	pito	EVENT	416
+Event	T9	hizo	EVENT	430
+Event	T10	tratara	EVENT	483
+Event	T11	reiniciar	EVENT	494
+Event	T12	marcha	EVENT	507
+Event	T13	paso	EVENT	528
+Event	T14	venia	EVENT	553
+Event	T15	acudir	EVENT	600
+Event	T16	rescate	EVENT	610
+Event	T17	percataron	EVENT	675
+Event	T18	incidente	EVENT	690
+Event	T19	escucharon	EVENT	707
+Event	T20	explosión	EVENT	742
+Event	T21	hecho	EVENT	779
+Event	T22	rescate	EVENT	819
+Event	T23	ayuda	EVENT	884
+Relation	T0	T11	NoRel	true	muertos	reiniciar
+Relation	T0	T13	NoRel	true	muertos	paso
+Relation	T1	T17	NoRel	true	heridos	percataron
+Relation	T1	T19	NoRel	true	heridos	escucharon
+Relation	T1	T4	NoRel	true	heridos	llegada
+Relation	T1	T5	NoRel	true	heridos	frenar
+Relation	T11	T15	NoRel	true	reiniciar	acudir
+Relation	T11	T2	NoRel	true	reiniciar	acceso
+Relation	T12	T15	NoRel	true	marcha	acudir
+Relation	T13	T12	NoRel	true	paso	marcha
+Relation	T13	T2	NoRel	true	paso	acceso
+Relation	T13	T6	NoRel	true	paso	advertencias
+Relation	T13	T8	NoRel	true	paso	pito
+Relation	T14	T10	NoRel	true	venia	tratara
+Relation	T14	T12	NoRel	true	venia	marcha
+Relation	T15	T0	NoRel	true	acudir	muertos
+Relation	T15	T5	NoRel	true	acudir	frenar
+Relation	T16	T4	NoRel	true	rescate	llegada
+Relation	T17	T2	NoRel	true	percataron	acceso
+Relation	T17	T21	NoRel	true	percataron	hecho
+Relation	T17	T23	NoRel	true	percataron	ayuda
+Relation	T19	T18	NoRel	true	escucharon	incidente
+Relation	T19	T6	NoRel	true	escucharon	advertencias
+Relation	T21	T22	NoRel	true	hecho	rescate
+Relation	T22	T19	NoRel	true	rescate	escucharon
+Relation	T22	T3	NoRel	true	rescate	vio
+Relation	T23	T3	NoRel	true	ayuda	vio
+Relation	T3	T13	NoRel	true	vio	paso
+Relation	T3	T14	NoRel	true	vio	venia
+Relation	T3	T19	NoRel	true	vio	escucharon
+Relation	T4	T23	NoRel	true	llegada	ayuda
+Relation	T5	T18	NoRel	true	frenar	incidente
+Relation	T5	T2	NoRel	true	frenar	acceso
+Relation	T6	T4	NoRel	true	advertencias	llegada
+Relation	T7	T15	NoRel	true	sonar	acudir
+Relation	T7	T2	NoRel	true	sonar	acceso
+Relation	T8	T23	NoRel	true	pito	ayuda
+Relation	T9	T2	NoRel	true	hizo	acceso

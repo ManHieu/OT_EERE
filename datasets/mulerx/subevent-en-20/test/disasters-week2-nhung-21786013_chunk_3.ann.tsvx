@@ -1,0 +1,32 @@
+Text	They started firing at the bus when it crossed the road .	The Pakistan police escorting the team returned fire ; in the ensuing fighting , six policemen and two civilians died .	After about 20 minutes , the militants fled , leaving behind rocket launchers and grenades .	The gunmen first shot at the wheels of the bus , and then fired at the bus itself and its occupants .	The attackers had fired a rocket at the bus , which missed and hit a nearby electric pole .
+Event	T0	firing	EVENT	13
+Event	T1	crossed	EVENT	39
+Event	T10	missed	EVENT	425
+Event	T11	hit	EVENT	436
+Event	T12	leaving	EVENT	224
+Event	T2	escorting	EVENT	78
+Event	T3	fighting	EVENT	128
+Event	T4	died	EVENT	171
+Event	T5	fled	EVENT	217
+Event	T6	shot	EVENT	288
+Event	T7	fired	EVENT	329
+Event	T8	fired	EVENT	391
+Event	T9	rocket	EVENT	399
+Relation	T1	T0	SuperSub	true	crossed	firing
+Relation	T0	T1	SubSuper	true	firing	crossed
+Relation	T3	T2	SuperSub	true	fighting	escorting
+Relation	T2	T3	SubSuper	true	escorting	fighting
+Relation	T12	T5	SuperSub	true	leaving	fled
+Relation	T5	T12	SubSuper	true	fled	leaving
+Relation	T7	T6	SuperSub	true	fired	shot
+Relation	T6	T7	SubSuper	true	shot	fired
+Relation	T8	T10	SuperSub	true	fired	missed
+Relation	T10	T8	SubSuper	true	missed	fired
+Relation	T8	T11	SuperSub	true	fired	hit
+Relation	T11	T8	SubSuper	true	hit	fired
+Relation	T0	T11	NoRel	true	firing	hit
+Relation	T10	T5	NoRel	true	missed	fled
+Relation	T3	T12	NoRel	true	fighting	leaving
+Relation	T3	T7	NoRel	true	fighting	fired
+Relation	T5	T9	NoRel	true	fled	rocket
+Relation	T9	T0	NoRel	true	rocket	firing

@@ -1,0 +1,34 @@
+Text	Un resumen técnico para conmemorar los 12 meses desde la tragedia ( 02 /2012 ) puso de manifiesto que el avión tenía un problema en el componente de control del motor n.º 2 que estaba dando hasta un cinco por ciento más de potencia que el motor n.º 1 .	El AAIU registró anomalías en la potencia que daban los dos motores hasta ocho segundos antes de que el avión golpeara el suelo .	El AAIU dijo que también se encontró una anomalía en la presión y los sensores de temperatura del motor n.º 2 que ayudaban a regular el control de combustible .	También se identificó una pérdida en la sección de los fuelles del motor que mantendría la temperatura por debajo de lo normal y que creó un flujo de combustible incorrecto .	La investigación sin embargo sigue abierta , y aún no se ha publicado el informe final .
+Event	T0	resumen	EVENT	3
+Event	T1	conmemorar	EVENT	24
+Event	T2	tragedia	EVENT	57
+Event	T3	puso	EVENT	79
+Event	T4	problema	EVENT	120
+Event	T5	dando	EVENT	184
+Event	T6	anomalías	EVENT	270
+Event	T7	daban	EVENT	299
+Event	T8	golpeara	EVENT	363
+Event	T9	dijo	EVENT	391
+Event	T10	encontró	EVENT	411
+Event	T11	anomalía	EVENT	424
+Event	T12	control	EVENT	519
+Event	T13	identificó	EVENT	555
+Event	T14	pérdida	EVENT	570
+Event	T15	creó	EVENT	677
+Event	T16	flujo	EVENT	685
+Event	T17	investigación	EVENT	722
+Event	T18	abierta	EVENT	754
+Relation	T2	T1	SuperSub	true	tragedia	conmemorar
+Relation	T1	T2	SubSuper	true	conmemorar	tragedia
+Relation	T11	T0	NoRel	true	anomalía	resumen
+Relation	T12	T2	NoRel	true	control	tragedia
+Relation	T13	T2	NoRel	true	identificó	tragedia
+Relation	T15	T1	NoRel	true	creó	conmemorar
+Relation	T15	T9	NoRel	true	creó	dijo
+Relation	T16	T15	NoRel	true	flujo	creó
+Relation	T16	T7	NoRel	true	flujo	daban
+Relation	T18	T3	NoRel	true	abierta	puso
+Relation	T5	T0	NoRel	true	dando	resumen
+Relation	T6	T7	NoRel	true	anomalías	daban
+Relation	T6	T8	NoRel	true	anomalías	golpeara
+Relation	T9	T1	NoRel	true	dijo	conmemorar

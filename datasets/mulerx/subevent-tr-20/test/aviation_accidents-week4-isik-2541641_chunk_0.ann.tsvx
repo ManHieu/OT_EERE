@@ -1,0 +1,13 @@
+Text	AZERBAYCAN HAVA YOLLARI'NIN 56 SEFER SAYILI UÇUŞU , 5 Aralık 1995'ta Azerbaycan Hava Yolları'nı ait Tu - 134 model bir uçağın Nahçıvan - Bakü seferini yaparken düşmesi olayıdır .	Uçağın inmesine birkaç dakika kala , sol motorda bir arıza meydana geldi ve mühendis pilot , yanlışlıkla sağ motoru kapattı .	Pilot , uçağı kötü araziye indirmeye karar verdi .	Uçak , yüksek voltajlı bir elektrik hattına çarptı .	82 kişiden 52'si öldü .
+Event	T0	UÇUŞU	EVENT	44
+Event	T1	olayıdır	EVENT	168
+Event	T2	inmesine	EVENT	186
+Event	T4	kapattı	EVENT	295
+Event	T5	verdi	EVENT	348
+Event	T6	çarptı	EVENT	400
+Event	T7	öldü	EVENT	426
+Event	T8	düşmesi	EVENT	160
+Event	T3	arıza	EVENT	232
+Relation	T1	T5	NoRel	true	olayıdır	verdi
+Relation	T3	T4	NoRel	true	arıza	kapattı
+Relation	T7	T8	NoRel	true	öldü	düşmesi

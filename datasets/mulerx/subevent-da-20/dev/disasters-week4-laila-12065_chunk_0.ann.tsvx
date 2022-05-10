@@ -1,0 +1,10 @@
+Text	[ En prototype af en MOAB ]	MASSIVE ORDNANCE AIR BLAST BOMB ( forkortet MOAB ) også kaldet GBU-43/B er en 10.750 kilogram konventionel bombe .	Bomben som også kaldes " alle bombers mor " ( Mother Of All Bombs ) er efterfølger til " Daisy Cutter"-bomben , som blev brugt i Vietnam og Afghanistan .	GBU-43/B er med en estimeret sprængkraft på 11 TNT-ækvivalent den kraftigste konventionelle bombe i historien .	Rusland har dog testet en termobarisk bombe med tilnavnet Father of All Bombs , der hævdes at være fire gange så kraftig .
+Event	T0	brugt	EVENT	264
+Event	T1	testet	EVENT	425
+Event	T2	bombe	EVENT	447
+Event	T3	hævdes	EVENT	493
+Event	T4	kaldet	EVENT	84
+Event	T5	Bomben	EVENT	143
+Event	T6	kraftigste	EVENT	363
+Relation	T6	T3	SuperSub	true	kraftigste	hævdes
+Relation	T3	T6	SubSuper	true	hævdes	kraftigste

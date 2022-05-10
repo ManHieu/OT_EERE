@@ -1,0 +1,47 @@
+Text	El Monje de San Denis dejó una crónica muy vívida del evento " cuatro hombres se quemaron vivos , sus genitales llameantes cayeron al suelo ... soltando un chorro de sangre " .	Solo dos bailarines lograron sobrevivir : el rey , gracias a la rápida reacción de la Duquesa de Berry , y el Sieur de Nantouillet , quien se zambulló en una cuba con vino y permaneció allí hasta que se extinguieron las llamas .	El conde de Joigny falleció en la escena ; Yvain de Foix y Aimery Poitiers , hijo del Conde de Valentinois , agonizaron durante dos días con dolorosas quemaduras .	El instigador del evento , Huguet de Guisay , sobrevivió un día más , y según Tuchman ese tiempo lo pasó " maldiciendo e insultando a los otros bailarines , los muertos y los vivos , hasta que expiró " .	Los ciudadanos de París , furiosos por el evento y ante el riesgo que representaba su monarca , le echaban la culpa a los asesores de Carlos .
+Event	T1	crónica	EVENT	31
+Event	T10	permaneció	EVENT	351
+Event	T11	extinguieron	EVENT	380
+Event	T13	falleció	EVENT	425
+Event	T15	agonizaron	EVENT	515
+Event	T16	quemaduras	EVENT	557
+Event	T17	evento	EVENT	588
+Event	T18	sobrevivió	EVENT	616
+Event	T19	maldiciendo	EVENT	677
+Event	T20	insultando	EVENT	691
+Event	T21	expiró	EVENT	763
+Event	T23	evento	EVENT	816
+Event	T24	riesgo	EVENT	833
+Event	T25	echaban	EVENT	873
+Event	T3	evento	EVENT	54
+Event	T4	cayeron	EVENT	123
+Event	T7	sobrevivir	EVENT	206
+Event	T8	reacción	EVENT	248
+Event	T9	zambulló	EVENT	319
+Event	T2	quemaron	EVENT	81
+Relation	T10	T9	SuperSub	true	permaneció	zambulló
+Relation	T9	T10	SubSuper	true	zambulló	permaneció
+Relation	T4	T2	SuperSub	true	cayeron	quemaron
+Relation	T2	T4	SubSuper	true	quemaron	cayeron
+Relation	T18	T19	SuperSub	true	sobrevivió	maldiciendo
+Relation	T19	T18	SubSuper	true	maldiciendo	sobrevivió
+Relation	T18	T20	SuperSub	true	sobrevivió	insultando
+Relation	T20	T18	SubSuper	true	insultando	sobrevivió
+Relation	T10	T15	NoRel	true	permaneció	agonizaron
+Relation	T10	T4	NoRel	true	permaneció	cayeron
+Relation	T17	T10	NoRel	true	evento	permaneció
+Relation	T17	T21	NoRel	true	evento	expiró
+Relation	T17	T24	NoRel	true	evento	riesgo
+Relation	T17	T4	NoRel	true	evento	cayeron
+Relation	T19	T11	NoRel	true	maldiciendo	extinguieron
+Relation	T19	T25	NoRel	true	maldiciendo	echaban
+Relation	T2	T8	NoRel	true	quemaron	reacción
+Relation	T21	T1	NoRel	true	expiró	crónica
+Relation	T21	T8	NoRel	true	expiró	reacción
+Relation	T23	T15	NoRel	true	evento	agonizaron
+Relation	T24	T1	NoRel	true	riesgo	crónica
+Relation	T24	T15	NoRel	true	riesgo	agonizaron
+Relation	T3	T15	NoRel	true	evento	agonizaron
+Relation	T7	T23	NoRel	true	sobrevivir	evento
+Relation	T8	T3	NoRel	true	reacción	evento
+Relation	T9	T8	NoRel	true	zambulló	reacción

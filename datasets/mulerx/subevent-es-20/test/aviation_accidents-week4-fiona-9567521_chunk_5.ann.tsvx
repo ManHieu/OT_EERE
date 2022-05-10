@@ -1,0 +1,26 @@
+Text	Aproximadamente 260 rescatistas arribaron al lugar , que fue bloqueado por las autoridades .	El campo de escombros y cuerpos tenía unos 400 metros ( 1.300 pies ) de largo .	El miércoles , el personal de los servicios de emergencia de Ucrania concluyó su búsqueda de cadáveres y confirmó que las 170 personas a bordo habían fallecido .	Debido a la gran cantidad de fuerzas del choque y los incendios posteriores al accidente , los rescatistas creyeron que sería muy difícil identificar a la mayoría de las víctimas en el sitio .	El avión se desplomó en un área pantanosa y se desintegró con el impacto .
+Event	T0	arribaron	EVENT	32
+Event	T1	bloqueado	EVENT	61
+Event	T2	concluyó	EVENT	242
+Event	T3	búsqueda	EVENT	254
+Event	T4	confirmó	EVENT	278
+Event	T5	fallecido	EVENT	323
+Event	T6	choque	EVENT	376
+Event	T7	accidente	EVENT	414
+Event	T8	creyeron	EVENT	442
+Event	T9	identificar	EVENT	473
+Event	T10	desplomó	EVENT	540
+Event	T11	desintegró	EVENT	575
+Event	T12	impacto	EVENT	593
+Relation	T0	T10	NoRel	true	arribaron	desplomó
+Relation	T0	T2	NoRel	true	arribaron	concluyó
+Relation	T1	T6	NoRel	true	bloqueado	choque
+Relation	T10	T11	NoRel	true	desplomó	desintegró
+Relation	T11	T6	NoRel	true	desintegró	choque
+Relation	T11	T7	NoRel	true	desintegró	accidente
+Relation	T3	T4	NoRel	true	búsqueda	confirmó
+Relation	T4	T3	NoRel	true	confirmó	búsqueda
+Relation	T4	T8	NoRel	true	confirmó	creyeron
+Relation	T5	T10	NoRel	true	fallecido	desplomó
+Relation	T7	T0	NoRel	true	accidente	arribaron
+Relation	T8	T7	NoRel	true	creyeron	accidente

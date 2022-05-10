@@ -1,0 +1,42 @@
+Text	Daha ilk çatışma sırasında gerçek olmadığı aslında Bay Fantastik tarafından yapılan bir robot olduğu belli olan Thor , Kaptan Amerika'nın tarafındakilerden Bill Foster'ı ( Goliath ) öldürür .	Şaşkına dönen Kaptan ve arkadaşları savaş alanını terk ederler .	Kocasının ne tür bir canavar yarattığını görüp , Kaptan'ın mücadelesinin daha onurlu olduğuna karar veren Sue Richards ( Görünmez Kadın ) ve Human Torch ( Johnny Storm ) Kaptan'ın tarafına geçerler .	Demirr Adam Thor'un DNA'sından onun bir klonunu yaratmayı dener .	( Gerçek Thor'sa o sırada Yggdrasill'in parçalanması sonrası olan olaylarla Asgard'ı dünyada yeniden yaratma ve dünyaya düşen Asgardlı ailesi ve arkadaşlarını aramakla meşgul olduğu için İç Savaş olaylarına karışmaz .
+Event	T0	çatışma	EVENT	9
+Event	T1	yapılan	EVENT	76
+Event	T2	öldürür	EVENT	182
+Event	T3	görüp	EVENT	298
+Event	T4	mücadelesinin	EVENT	316
+Event	T5	dener	EVENT	515
+Event	T6	parçalanması	EVENT	563
+Event	T7	yaratma	EVENT	624
+Event	T8	karışmaz	EVENT	730
+Event	T9	yarattığını	EVENT	286
+Event	T10	karar veren	EVENT	351
+Event	T11	geçerler	EVENT	446
+Event	T12	terk ederler	EVENT	242
+Event	T13	yaratmayı	EVENT	505
+Event	T14	İç Savaş	EVENT	710
+Event	T15	aramakla	EVENT	682
+Relation	T14	T11	SuperSub	true	İç Savaş	geçerler
+Relation	T11	T14	SubSuper	true	geçerler	İç Savaş
+Relation	T14	T4	SuperSub	true	İç Savaş	mücadelesinin
+Relation	T4	T14	SubSuper	true	mücadelesinin	İç Savaş
+Relation	T14	T12	SuperSub	true	İç Savaş	terk ederler
+Relation	T12	T14	SubSuper	true	terk ederler	İç Savaş
+Relation	T14	T0	SuperSub	true	İç Savaş	çatışma
+Relation	T0	T14	SubSuper	true	çatışma	İç Savaş
+Relation	T14	T2	SuperSub	true	İç Savaş	öldürür
+Relation	T2	T14	SubSuper	true	öldürür	İç Savaş
+Relation	T0	T3	NoRel	true	çatışma	görüp
+Relation	T10	T11	NoRel	true	karar veren	geçerler
+Relation	T11	T15	NoRel	true	geçerler	aramakla
+Relation	T11	T4	NoRel	true	geçerler	mücadelesinin
+Relation	T12	T13	NoRel	true	terk ederler	yaratmayı
+Relation	T12	T7	NoRel	true	terk ederler	yaratma
+Relation	T13	T12	NoRel	true	yaratmayı	terk ederler
+Relation	T14	T13	NoRel	true	İç Savaş	yaratmayı
+Relation	T15	T12	NoRel	true	aramakla	terk ederler
+Relation	T3	T0	NoRel	true	görüp	çatışma
+Relation	T3	T13	NoRel	true	görüp	yaratmayı
+Relation	T3	T15	NoRel	true	görüp	aramakla
+Relation	T4	T9	NoRel	true	mücadelesinin	yarattığını
+Relation	T7	T11	NoRel	true	yaratma	geçerler
+Relation	T7	T14	NoRel	true	yaratma	İç Savaş

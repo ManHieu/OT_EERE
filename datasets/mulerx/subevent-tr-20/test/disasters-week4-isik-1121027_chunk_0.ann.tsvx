@@ -1,0 +1,36 @@
+Text	10 MAYIS 1556 MARMARA DENIZI DEPREMI orta Marmara Denizi'nin kuzey sahilleri , İstanbul ve Bursa'da hissedilmişti	Deprem , Marmara Denizi'nin doğu kısmında , Orta Sırt Kuzey Fayı'nda meydana gelmiş ve Richter ölçeğine göre 7.4 büyüklüğünde olduğu hesaplanmıştır .	Aynı fay üzerinde 200 -300 yıl aralıklarla depremler meydana gelmiş , fayın o noktasında meydana gelen bu deprem dizisinin bir evvelkisi 1346 depremine , bir sonraki ise 1766 Büyük İstanbul Depremi'ne neden olmuştur .	Deprem , güneşin batmasından sonra çok şiddetli bir rüzgarla birlikte gerçekleşmiş , İstanbul'daki zararlar arasında Fatih Camii , Ayasofya Camii ve surlarda hasar olduğu kaydedilmiştir .	Tarihî kayıtlarda anlatılan hasar miktarı bu depremin şiddetinin Mercalli şiddet ölçeği'nde VIII'e karşılık geldiğini göstermektedir .
+Event	T1	hissedilmişti	EVENT	100
+Event	T2	Deprem	EVENT	114
+Event	T3	gelmiş	EVENT	191
+Event	T4	hesaplanmıştır	EVENT	247
+Event	T5	gelmiş	EVENT	325
+Event	T7	deprem	EVENT	370
+Event	T8	depremine	EVENT	406
+Event	T9	Deprem	EVENT	482
+Event	T10	batmasından	EVENT	499
+Event	T11	gerçekleşmiş	EVENT	552
+Event	T12	kaydedilmiştir	EVENT	653
+Event	T13	hasar	EVENT	698
+Event	T14	10 MAYIS 1556 MARMARA DENIZI DEPREMI	EVENT	0
+Event	T6	olmuştur	EVENT	471
+Event	T15	göstermektedir	EVENT	788
+Event	T16	kayıtlarda	EVENT	677
+Relation	T14	T1	SuperSub	true	10 MAYIS 1556 MARMARA DENIZI DEPREMI	hissedilmişti
+Relation	T1	T14	SubSuper	true	hissedilmişti	10 MAYIS 1556 MARMARA DENIZI DEPREMI
+Relation	T14	T4	SuperSub	true	10 MAYIS 1556 MARMARA DENIZI DEPREMI	hesaplanmıştır
+Relation	T4	T14	SubSuper	true	hesaplanmıştır	10 MAYIS 1556 MARMARA DENIZI DEPREMI
+Relation	T14	T12	SuperSub	true	10 MAYIS 1556 MARMARA DENIZI DEPREMI	kaydedilmiştir
+Relation	T12	T14	SubSuper	true	kaydedilmiştir	10 MAYIS 1556 MARMARA DENIZI DEPREMI
+Relation	T1	T7	NoRel	true	hissedilmişti	deprem
+Relation	T10	T4	NoRel	true	batmasından	hesaplanmıştır
+Relation	T13	T2	NoRel	true	hasar	Deprem
+Relation	T14	T11	NoRel	true	10 MAYIS 1556 MARMARA DENIZI DEPREMI	gerçekleşmiş
+Relation	T14	T3	NoRel	true	10 MAYIS 1556 MARMARA DENIZI DEPREMI	gelmiş
+Relation	T2	T1	NoRel	true	Deprem	hissedilmişti
+Relation	T3	T14	NoRel	true	gelmiş	10 MAYIS 1556 MARMARA DENIZI DEPREMI
+Relation	T3	T5	NoRel	true	gelmiş	gelmiş
+Relation	T6	T10	NoRel	true	olmuştur	batmasından
+Relation	T6	T12	NoRel	true	olmuştur	kaydedilmiştir
+Relation	T6	T15	NoRel	true	olmuştur	göstermektedir
+Relation	T6	T7	NoRel	true	olmuştur	deprem
+Relation	T6	T8	NoRel	true	olmuştur	depremine

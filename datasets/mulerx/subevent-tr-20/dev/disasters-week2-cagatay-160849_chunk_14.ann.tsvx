@@ -1,0 +1,11 @@
+Text	Adanın oluşmasını izleyen 20 yıl içinde yirmi bitki türü saptanmış , ancak bunların sadece onu adanın verimi düşük , kumlu toprağında kalıcı olabilmiştir .	Adayı yavaş yavaş kuşların yuva edinmeye başlamasıyla toprak koşullarında iyileşme gözlenmiş ve daha gelişmiş bitki türleri adada yaşamaya başlamıştır .	1998 yılında adada dört metreye kadar büyüyebilen çay yapraklı söğüt ( _ _ ) adlı ilk çalı türü bitki bulunmuştur .	Toplamda Surtsey üzerinde bulunan bitki türlerinin sayısı altmışı bulmuş , bunlardan yaklaşık otuzu adanın ekosisteminde kalıcı olabilmiştir .	Adaya her yıl ortalama 2 - 5 yeni tür giriş yapmaktadır .
+Event	T0	saptanmış	EVENT	57
+Event	T2	gözlenmiş	EVENT	239
+Event	T4	bulunmuştur	EVENT	411
+Event	T5	bulmuş	EVENT	491
+Event	T6	oluşmasını	EVENT	7
+Relation	T2	T4	SuperSub	true	gözlenmiş	bulunmuştur
+Relation	T4	T2	SubSuper	true	bulunmuştur	gözlenmiş
+Relation	T2	T5	SuperSub	true	gözlenmiş	bulmuş
+Relation	T5	T2	SubSuper	true	bulmuş	gözlenmiş
+Relation	T0	T2	NoRel	true	saptanmış	gözlenmiş

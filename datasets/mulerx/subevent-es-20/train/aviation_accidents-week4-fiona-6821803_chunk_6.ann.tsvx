@@ -1,0 +1,12 @@
+Text	Falla en motor y baja altura habrían causado accidente , dijo comandante .	Diario El País ( de Montevideo ) , 20 de marzo de 2015 .	Tragedia en Laguna del Sauce : un avión cayó al agua y se incendió ; no encuentran sobrevivientes .	Diario El Observador ( de Montevideo ) , 20 de marzo de 2015 .	Cae un avión en Punta del Este y hay 10 muertos .
+Event	T0	Falla	EVENT	0
+Event	T1	accidente	EVENT	45
+Event	T2	dijo	EVENT	57
+Event	T3	Tragedia	EVENT	132
+Event	T4	incendió	EVENT	190
+Event	T5	Cae	EVENT	295
+Event	T6	muertos	EVENT	335
+Relation	T2	T0	NoRel	true	dijo	Falla
+Relation	T4	T6	NoRel	true	incendió	muertos
+Relation	T6	T4	NoRel	true	muertos	incendió
+Relation	T6	T5	NoRel	true	muertos	Cae

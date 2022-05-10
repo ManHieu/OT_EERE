@@ -1,0 +1,12 @@
+Text	Flyet fløj fra Pokhara Airport til Jomsom Airport , med 18 passagerer , to piloter og en stewardesse om bord .	Klokken 09:30 lokaltid ( 03:45 UTC ) , blev det første landingsforsøg afbrudt af piloterne .	Under en af de efterfølgende go-around , ramte en af vingerne en klippe , og flyet styrtede ned .	+--------------+-----------+------------+-------------+ | Nationalitet | Dødsfald | Overlevede | Total | + ==============+= ==========+============+= ============+ | Passagerer | Besætning | Passagerer | Besætning | +--------------+-----------+------------+-------------+ | Nepal | 0 | 2 | 0 | +--------------+-----------+------------+-------------+ | Indien | 13 |_-__________| 3 | +--------------+-----------+------------+-------------+ | Danmark | 0_________|_-__________| 2___________| +--------------+-----------+------------+-------------+	Et dansk par , som var på trekkingtur og som sad bagest i flyet , Andreas Rasch og Emilie Frijs Jørgensen , overlevede det dramatiske styrt .
+Event	T0	fløj	EVENT	6
+Event	T1	afbrudt	EVENT	181
+Event	T2	go-around	EVENT	233
+Event	T3	ramte	EVENT	245
+Event	T4	Dødsfald	EVENT	375
+Event	T5	trekkingtur	EVENT	874
+Event	T6	sad	EVENT	893
+Event	T7	overlevede	EVENT	956
+Relation	T2	T1	NoRel	true	go-around	afbrudt
+Relation	T6	T1	NoRel	true	sad	afbrudt
+Relation	T6	T3	NoRel	true	sad	ramte

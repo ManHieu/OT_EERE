@@ -1,0 +1,35 @@
+Text	El vuelo 5007 de Angara Airlines despegó del aeropuerto de Tomsk a las 10:10 hora local , con destino a Surgut .	Una hora y 26 minutos de vuelo , cuando volaba a una altitud de crucero de 6000 m , la luz " chips in oil " del motor izquierdo se activó .	Los parámetros del motor se mantuvieron normales y la tripulación continuó el vuelo .	A las 10:44 , el capitán , sintiendo el olor a quemado en la cabina , informó a la tripulación sobre esto y decidió dirigirse al aeródromo alternativo Nizhnevartovsk .	Se autorizó el vuelo para descender a 4.800 my se puso el motor izquierdo en modo inactivo de vuelo .
+Event	T0	vuelo	EVENT	3
+Event	T1	despegó	EVENT	33
+Event	T2	vuelo	EVENT	138
+Event	T3	volaba	EVENT	153
+Event	T4	activó	EVENT	244
+Event	T5	continuó	EVENT	319
+Event	T6	vuelo	EVENT	331
+Event	T7	sintiendo	EVENT	366
+Event	T9	informó	EVENT	409
+Event	T10	dirigirse	EVENT	455
+Event	T11	autorizó	EVENT	510
+Event	T12	vuelo	EVENT	522
+Event	T13	descender	EVENT	533
+Event	T14	puso	EVENT	557
+Relation	T0	T1	SuperSub	true	vuelo	despegó
+Relation	T1	T0	SubSuper	true	despegó	vuelo
+Relation	T7	T9	SuperSub	true	sintiendo	informó
+Relation	T9	T7	SubSuper	true	informó	sintiendo
+Relation	T7	T14	SuperSub	true	sintiendo	puso
+Relation	T14	T7	SubSuper	true	puso	sintiendo
+Relation	T1	T9	NoRel	true	despegó	informó
+Relation	T10	T1	NoRel	true	dirigirse	despegó
+Relation	T10	T2	NoRel	true	dirigirse	vuelo
+Relation	T10	T6	NoRel	true	dirigirse	vuelo
+Relation	T11	T6	NoRel	true	autorizó	vuelo
+Relation	T12	T1	NoRel	true	vuelo	despegó
+Relation	T13	T1	NoRel	true	descender	despegó
+Relation	T13	T6	NoRel	true	descender	vuelo
+Relation	T14	T6	NoRel	true	puso	vuelo
+Relation	T2	T10	NoRel	true	vuelo	dirigirse
+Relation	T2	T6	NoRel	true	vuelo	vuelo
+Relation	T5	T13	NoRel	true	continuó	descender
+Relation	T5	T9	NoRel	true	continuó	informó
+Relation	T6	T5	NoRel	true	vuelo	continuó

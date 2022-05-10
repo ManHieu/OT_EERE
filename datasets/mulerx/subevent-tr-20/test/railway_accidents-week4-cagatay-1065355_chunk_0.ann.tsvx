@@ -1,0 +1,18 @@
+Text	Dikkate değer tren kazaları , 2000 – günümüz - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 2000s : Ayrıca bakınız — Dış bağlantılar — Kaynakça	- 4 Ocak , 2000 – Åsta kazası , Åsta , Åmot , Norveç : Rørosbanen üzerinde iki dizel yolcu treni çarpışması , 19 ölü .	Yangın çarpışmadan sonra yaklaşık 6 saat sürdü .	- 6 Şubat , 2000 – Brühl , Almanya : Bir gece tren Amsterdam - Basel ekspresi , ana demir yolu üzerinde Köln ve Bonn arasındaki Brühl istasyonunda bir inşaat alanındaki aşırı hız ve raydan çıkma geçerken bir çer çöp ile dolu çöp tenekesine çarptı , 9 kişi öldü .	- 2 Mart , 2000 – Kølkær , Danimarka : İki bölgesel tren , birinin kırmızı sinyalde geçmesinden sonra kafa kafaya çarpıştı .
+Event	T0	kazası	EVENT	210
+Event	T1	çarpışması	EVENT	284
+Event	T2	ölü	EVENT	300
+Event	T3	çarpışmadan	EVENT	313
+Event	T5	geçerken	EVENT	550
+Event	T6	çarptı	EVENT	595
+Event	T7	öldü	EVENT	611
+Event	T8	geçmesinden	EVENT	702
+Event	T9	çarpıştı	EVENT	732
+Event	T10	Yangın	EVENT	306
+Event	T4	çıkma	EVENT	544
+Relation	T0	T1	SuperSub	true	kazası	çarpışması
+Relation	T1	T0	SubSuper	true	çarpışması	kazası
+Relation	T2	T6	NoRel	true	ölü	çarptı
+Relation	T3	T10	NoRel	true	çarpışmadan	Yangın
+Relation	T6	T3	NoRel	true	çarptı	çarpışmadan
+Relation	T7	T10	NoRel	true	öldü	Yangın

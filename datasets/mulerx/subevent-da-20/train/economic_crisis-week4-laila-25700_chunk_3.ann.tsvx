@@ -1,0 +1,18 @@
+Text	Den franske billedhugger Auguste Rodin har udtalt at , " Sammenlign mig med Rembrandt ! Hvilket helligbrøde ! Med Rembrandt , kunstens kolos !	Vi bør lægge os for Rembrandts fødder og aldrig sammenligne nogen med ham ! "	Han blev født som søn af en møller i Leiden .	Som 14-årig blev han indskrevet som student på Universitetet i Leiden , men forlod studiet efter et halvt år for at forfølge en karriere som maler .	I 1624 stod han i lære som kunstmaler hos Pieter Lastman i Amsterdam .
+Event	T0	udtalt	EVENT	43
+Event	T1	Sammenlign	EVENT	57
+Event	T2	født	EVENT	230
+Event	T3	indskrevet	EVENT	288
+Event	T4	studiet	EVENT	350
+Event	T5	forfølge	EVENT	383
+Event	T6	karriere	EVENT	395
+Event	T7	stod	EVENT	423
+Event	T8	lære	EVENT	434
+Event	T9	bør	EVENT	146
+Event	T10	aldrig	EVENT	184
+Event	T11	søn	EVENT	239
+Relation	T10	T2	NoRel	true	aldrig	født
+Relation	T10	T3	NoRel	true	aldrig	indskrevet
+Relation	T2	T4	NoRel	true	født	studiet
+Relation	T3	T4	NoRel	true	indskrevet	studiet
+Relation	T5	T11	NoRel	true	forfølge	søn

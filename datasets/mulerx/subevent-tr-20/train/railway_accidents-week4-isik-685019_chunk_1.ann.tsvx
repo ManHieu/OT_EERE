@@ -1,0 +1,22 @@
+Text	Kazada 8 kişi öldü , 88 kişi yaralandı .	- 2008 , 27 Ocak - İstanbul - Denizli seferini yapan Pamukkale Ekspresi Çöğürler - Değirmenözü ( Kütahya ) istasyonları arasında seyrederken raydan çıktı .	Kaza sonucunda 9 kişi yaşamını yitirdi , 37 kişi yaralandı .	- 2018 , 8 Temmuz - Uzunköprü - İstanbul - Halkalı seferini yapan yolcu treni , Çorlu yakınlarından geçerken , yağış nedeniyle rayların altındaki toprak menfezin kayması sonucu 5 vagon devrildi .	Kazada 25 kişi öldü , 317 kişi de yaralandı .
+Event	T0	öldü	EVENT	14
+Event	T1	yaralandı	EVENT	29
+Event	T2	seyrederken	EVENT	170
+Event	T3	çıktı	EVENT	189
+Event	T4	yitirdi	EVENT	228
+Event	T5	yaralandı	EVENT	246
+Event	T6	geçerken	EVENT	358
+Event	T7	yağış	EVENT	369
+Event	T8	devrildi	EVENT	443
+Event	T9	öldü	EVENT	469
+Event	T10	yaralandı	EVENT	488
+Event	T11	yapan	EVENT	318
+Event	T12	kayması	EVENT	420
+Event	T13	Kazada	EVENT	454
+Relation	T1	T12	NoRel	true	yaralandı	kayması
+Relation	T11	T5	NoRel	true	yapan	yaralandı
+Relation	T12	T2	NoRel	true	kayması	seyrederken
+Relation	T2	T0	NoRel	true	seyrederken	öldü
+Relation	T2	T13	NoRel	true	seyrederken	Kazada
+Relation	T3	T9	NoRel	true	çıktı	öldü
+Relation	T4	T9	NoRel	true	yitirdi	öldü

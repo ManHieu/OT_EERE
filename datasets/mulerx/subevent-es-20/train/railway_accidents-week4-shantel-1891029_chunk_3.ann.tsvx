@@ -1,0 +1,36 @@
+Text	Sin embargo , la Junta Nacional de Seguridad en el Transporte ( NTSB ) y un sindicato que representa a los empleados ferroviarios dijeron que era demasiado temprano para hacer conclusiones sobre la causa del choque .	La mañana del lunes , Denise Tyrrell - la vocera - anunció su renuncia .	Los investigadores también están examinando reportes que afirman que el maquinista pudo haber estado distraído por mensajes de texto minutos antes de la tragedia , informó la NTSB .	La emisora CBS2 reportó que el ingeniero pudo haber estado enviado textos a un amigo poco antes del choque , aunque los investigadores de la NTSB dijeron que establecer la causa de la colisión podría tardar hasta un año .	Un entusiasta de trenes de 15 años de edad le dijo a la estación que recibió un mensaje de texto del maquinista aproximadamente un minuto antes del accidente .
+Event	T0	dijeron	EVENT	130
+Event	T1	conclusiones	EVENT	176
+Event	T2	choque	EVENT	208
+Event	T3	anunció	EVENT	268
+Event	T4	renuncia	EVENT	279
+Event	T5	reportes	EVENT	334
+Event	T6	afirman	EVENT	347
+Event	T7	distraído	EVENT	391
+Event	T8	tragedia	EVENT	443
+Event	T9	informó	EVENT	454
+Event	T10	reportó	EVENT	488
+Event	T11	choque	EVENT	572
+Event	T12	dijeron	EVENT	618
+Event	T13	establecer	EVENT	630
+Event	T14	colisión	EVENT	656
+Event	T15	dijo	EVENT	740
+Event	T16	recibió	EVENT	763
+Event	T17	mensaje	EVENT	774
+Event	T18	accidente	EVENT	842
+Relation	T2	T3	SuperSub	true	choque	anunció
+Relation	T3	T2	SubSuper	true	anunció	choque
+Relation	T0	T2	NoRel	true	dijeron	choque
+Relation	T10	T11	NoRel	true	reportó	choque
+Relation	T10	T17	NoRel	true	reportó	mensaje
+Relation	T12	T3	NoRel	true	dijeron	anunció
+Relation	T14	T6	NoRel	true	colisión	afirman
+Relation	T15	T3	NoRel	true	dijo	anunció
+Relation	T15	T4	NoRel	true	dijo	renuncia
+Relation	T16	T18	NoRel	true	recibió	accidente
+Relation	T2	T9	NoRel	true	choque	informó
+Relation	T3	T10	NoRel	true	anunció	reportó
+Relation	T3	T14	NoRel	true	anunció	colisión
+Relation	T4	T13	NoRel	true	renuncia	establecer
+Relation	T6	T14	NoRel	true	afirman	colisión
+Relation	T7	T16	NoRel	true	distraído	recibió

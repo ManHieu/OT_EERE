@@ -1,0 +1,32 @@
+Text	A special case is heat related BUCKLING : in hot weather the rail steel expands .	This is managed by stressing continuously welded rails ( they are tensioned mechanically to be stress neutral at a moderate temperature ) and by providing proper expansion gaps at joints and ensuring that fishplates are properly lubricated .	In addition , lateral restraint is provided by an adequate ballast shoulder .	If any of these measures are inadequate , the track may buckle ; a large lateral distortion takes place , which trains are unable to negotiate .	( In nine years 2000/1 to 2008/ 9 there were 429 track buckle incidents in Great Britain ) .
+Event	T0	BUCKLING	EVENT	31
+Event	T1	expands	EVENT	72
+Event	T2	managed	EVENT	90
+Event	T3	stressing	EVENT	101
+Event	T4	welded	EVENT	124
+Event	T6	providing	EVENT	227
+Event	T7	ensuring	EVENT	273
+Event	T8	lubricated	EVENT	311
+Event	T9	provided	EVENT	359
+Event	T10	buckle	EVENT	458
+Event	T11	negotiate	EVENT	535
+Event	T12	incidents	EVENT	609
+Event	T13	hot weather	EVENT	45
+Event	T14	stress neutral	EVENT	177
+Event	T5	tensioned mechanically	EVENT	148
+Event	T15	inadequate	EVENT	431
+Relation	T6	T7	SuperSub	true	providing	ensuring
+Relation	T7	T6	SubSuper	true	ensuring	providing
+Relation	T0	T8	NoRel	true	BUCKLING	lubricated
+Relation	T12	T9	NoRel	true	incidents	provided
+Relation	T14	T10	NoRel	true	stress neutral	buckle
+Relation	T15	T12	NoRel	true	inadequate	incidents
+Relation	T2	T10	NoRel	true	managed	buckle
+Relation	T2	T15	NoRel	true	managed	inadequate
+Relation	T3	T14	NoRel	true	stressing	stress neutral
+Relation	T3	T6	NoRel	true	stressing	providing
+Relation	T4	T7	NoRel	true	welded	ensuring
+Relation	T7	T10	NoRel	true	ensuring	buckle
+Relation	T7	T5	NoRel	true	ensuring	tensioned mechanically
+Relation	T8	T10	NoRel	true	lubricated	buckle
+Relation	T9	T5	NoRel	true	provided	tensioned mechanically

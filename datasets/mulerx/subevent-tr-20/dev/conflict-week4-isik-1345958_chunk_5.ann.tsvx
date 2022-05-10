@@ -1,0 +1,32 @@
+Text	_ Sith'in İntikamı '' olayları sırasında geçen ikinci hikayede , Ahsoha Anakin'le yeniden bir araya gelip Rex'in komuta ettiği ordu ile Mandolaria da bulunan eski Sith lordu Maul'u yakalamaya gitmesini anlatır .	Maul'la yüzleştiğinde Maul kendisine Darth Sidious'un Anakin's kendisinin yeni çırağı yapmak niyetinde olduğunu ve bunu önlemek için güçlerini birleştirme teklifinde bulunuyor ancak Ahsoka ona inanmıyor ve dövüşmeye başlıyorlar .	Ahsoka , Maul'u yener ve yakalar , ama onu Coruscant'a götürmeye hazırlanırken , Emir 66 verilir ve Rex de dahil olmak üzere klon askerlerinin ona sırtını döndüğünü görür .	Kaçar ve Rex'in çipini çıkarmayı başarır ve aynı zamanda Maul'u dikkat dağıtmak için serbest bırakır .	Uzay gemisi ile küçük bir aya çarptıklarında , Ahsoka ve Rex hayatta kalır ve yollarını ayırmadan önce eski ışın kılıcıyla birlikte tüm ölen klon askerlerini gömerler .
+Event	T0	İntikamı	EVENT	10
+Event	T1	olayları	EVENT	22
+Event	T2	geçen	EVENT	41
+Event	T3	anlatır	EVENT	202
+Event	T4	yüzleştiğinde	EVENT	220
+Event	T5	yener	EVENT	458
+Event	T6	yakalar	EVENT	467
+Event	T7	verilir	EVENT	531
+Event	T8	görür	EVENT	607
+Event	T9	Kaçar	EVENT	615
+Event	T10	başarır	EVENT	648
+Event	T11	bırakır	EVENT	708
+Event	T12	çarptıklarında	EVENT	748
+Event	T13	kalır	EVENT	787
+Event	T14	ölen	EVENT	854
+Event	T15	ettiği	EVENT	120
+Event	T16	başlıyorlar	EVENT	428
+Event	T17	gömerler	EVENT	876
+Relation	T0	T8	NoRel	true	İntikamı	görür
+Relation	T10	T9	NoRel	true	başarır	Kaçar
+Relation	T11	T6	NoRel	true	bırakır	yakalar
+Relation	T12	T0	NoRel	true	çarptıklarında	İntikamı
+Relation	T14	T13	NoRel	true	ölen	kalır
+Relation	T14	T16	NoRel	true	ölen	başlıyorlar
+Relation	T16	T14	NoRel	true	başlıyorlar	ölen
+Relation	T17	T1	NoRel	true	gömerler	olayları
+Relation	T8	T12	NoRel	true	görür	çarptıklarında
+Relation	T8	T14	NoRel	true	görür	ölen
+Relation	T8	T2	NoRel	true	görür	geçen
+Relation	T9	T5	NoRel	true	Kaçar	yener
+Relation	T9	T6	NoRel	true	Kaçar	yakalar

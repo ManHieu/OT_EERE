@@ -1,0 +1,31 @@
+Text	Det er ingen nedtegnelser som angiver nogen hentydning om etniske sondring i Plinius' samtid .	Befolkningen selv tog stolthed i at være romerske borgere .	Plinius den ældre giftede sig ikke og havde ingen børn .	I sit testamente adopterede han sin nevø , hvilket gav nevøen ret til arve alle hans ejendomme .	Denne form for adoption er kaldt for " testamentarisk adoption " af dem , som har skrevet om emnet og den sikrede kun navneændring , men romersk retsvidenskab anerkender ingen sådan kategori .
+Event	T0	hentydning	EVENT	44
+Event	T1	sondring	EVENT	66
+Event	T2	tog	EVENT	113
+Event	T3	giftede	EVENT	173
+Event	T4	adopterede	EVENT	229
+Event	T5	gav	EVENT	263
+Event	T6	adoption	EVENT	324
+Event	T7	kaldt	EVENT	336
+Event	T8	skrevet	EVENT	391
+Event	T9	sikrede	EVENT	415
+Event	T10	anerkender	EVENT	468
+Event	T11	ingen	EVENT	199
+Event	T12	ret	EVENT	274
+Event	T13	arve	EVENT	282
+Event	T14	navneændring	EVENT	427
+Relation	T11	T4	SuperSub	true	ingen	adopterede
+Relation	T4	T11	SubSuper	true	adopterede	ingen
+Relation	T0	T3	NoRel	true	hentydning	giftede
+Relation	T0	T9	NoRel	true	hentydning	sikrede
+Relation	T1	T2	NoRel	true	sondring	tog
+Relation	T10	T7	NoRel	true	anerkender	kaldt
+Relation	T11	T1	NoRel	true	ingen	sondring
+Relation	T11	T3	NoRel	true	ingen	giftede
+Relation	T12	T4	NoRel	true	ret	adopterede
+Relation	T6	T9	NoRel	true	adoption	sikrede
+Relation	T7	T4	NoRel	true	kaldt	adopterede
+Relation	T7	T5	NoRel	true	kaldt	gav
+Relation	T9	T12	NoRel	true	sikrede	ret
+Relation	T9	T13	NoRel	true	sikrede	arve
+Relation	T9	T2	NoRel	true	sikrede	tog

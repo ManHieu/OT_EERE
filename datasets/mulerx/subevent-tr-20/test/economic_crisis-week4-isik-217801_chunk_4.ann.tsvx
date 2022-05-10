@@ -1,0 +1,15 @@
+Text	Daha sonra Schindler'in anne ve babasının bulunduğu binaya taşındılar ve sonraki yedi yıl boyunca üst katta ikamet ettiler .	Evlendikten sonra Schindler , babası için çalışmayı bıraktı .	Moravian Electrotechnic'te bir pozisyonda yer aldı ve bir sürücü kursunda yöneticilik yaptı .	Çek Ordusuna bağlı 31'nci Tabur'un 10'uncu Piyade Alayı'nda kıdemsiz onbaşı rütbesine yükseldiği 18 aylık bir görevden sonra Schindler , kısa bir süre sonra iflas edecek olan Moravian Electrotechnic'e geri döndü .	Babasının tarım makineleri işi aynı anda kapandı ve bu durum Schindler'in bir yıl boyunca işsiz kalmasına yol açtı .
+Event	T0	Evlendikten	EVENT	125
+Event	T1	bıraktı	EVENT	177
+Event	T2	aldı	EVENT	233
+Event	T3	yaptı	EVENT	273
+Event	T5	döndü	EVENT	487
+Event	T7	kapandı	EVENT	536
+Event	T9	açtı	EVENT	605
+Event	T10	taşındılar	EVENT	59
+Event	T11	ettiler	EVENT	115
+Event	T6	iflas	EVENT	438
+Relation	T1	T5	NoRel	true	bıraktı	döndü
+Relation	T10	T6	NoRel	true	taşındılar	iflas
+Relation	T11	T6	NoRel	true	ettiler	iflas
+Relation	T3	T5	NoRel	true	yaptı	döndü

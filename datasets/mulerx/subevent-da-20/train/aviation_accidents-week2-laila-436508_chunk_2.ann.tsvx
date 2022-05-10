@@ -1,0 +1,14 @@
+Text	Hun spillede sammen med Anthony Perkins i 1978 filmen _ Remember My Name _ af Alan Rudolph og i 1979-filmen _ Winter Kills _ sammen Jeff Bridges	Den 9. august 1973 , Cape Cod , Massachusetts , giftede Berenson sig med skuespilleren Anthony Perkins .	De fik to sønner : Skuespilleren -musiker Oz Perkins ( født 2. februar 1974 ) og folk_/_rock musiker Elvis Perkins ( født 9. februar 1976 ) .	De forblev gift indtil Perkins død af aids den 12. september 1992 .	Berenson døde i en alder af 53 den 11. september , 2001 om bord American Airlines' flynummer 11 .
+Event	T0	spillede	EVENT	4
+Event	T1	Kills	EVENT	117
+Event	T2	giftede	EVENT	193
+Event	T3	fik	EVENT	253
+Event	T4	født	EVENT	367
+Event	T6	død	EVENT	423
+Event	T7	aids	EVENT	430
+Event	T8	døde	EVENT	469
+Relation	T2	T3	SuperSub	true	giftede	fik
+Relation	T3	T2	SubSuper	true	fik	giftede
+Relation	T0	T6	NoRel	true	spillede	død
+Relation	T1	T8	NoRel	true	Kills	døde
+Relation	T2	T4	NoRel	true	giftede	født

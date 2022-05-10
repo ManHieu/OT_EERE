@@ -1,0 +1,15 @@
+Text	Sillamäe'deki seçmenlerin % 89'u referandumda evet oyu kullanmıştır .	Parti , 1991 Sovyetler Birliği darbe girişiminde Devlet Olağanüstü Hal Komitesi başkanı Gennadi Yanayev'i destekledi .	Darbenin yenilgisinden sonra , parti Estonya hükûmeti tarafından 22 Ağustos 1991'de yasadışı ilan edildi .	Bu dönemde Merkez Komitesi sekreteri Pavel Panfilov idi .	Kategori : Yasa dışı komünist partiler Kategori : 1991'de kapatılan siyasi partiler Kategori : 1990'da kurulan siyasi partiler Kategori : 1990'da Estonya'da kurulan oluşumlar Kategori : Estonya'daki komünist partiler Kategori : Sovyetler Birliği'ndeki komünist partiler Kategori : Estonya'daki eski siyasi partiler Kategori : Şarkı Devrimi
+Event	T0	kullanmıştır	EVENT	55
+Event	T1	destekledi	EVENT	176
+Event	T2	yenilgisinden	EVENT	198
+Event	T3	edildi	EVENT	287
+Event	T4	kurulan	EVENT	511
+Event	T5	Devrimi	EVENT	686
+Event	T6	girişiminde	EVENT	107
+Event	T7	Darbenin	EVENT	189
+Event	T8	kapatılan	EVENT	412
+Event	T9	kurulan	EVENT	457
+Relation	T1	T6	NoRel	true	destekledi	girişiminde
+Relation	T2	T0	NoRel	true	yenilgisinden	kullanmıştır
+Relation	T3	T7	NoRel	true	edildi	Darbenin
+Relation	T9	T2	NoRel	true	kurulan	yenilgisinden

@@ -1,0 +1,17 @@
+Text	Han nævnte , at en af flykaprerne havde et rødt bælte med en bombe_spændt om sin talje .	En United-ansat i San Francisco , Californien , sendte en besked til flyet klokken 09:46 .	Linda Gronlund ringede til sin søster Elsa Strong klokken 09:46:05 og lagde en besked om , at der var " mænd med en bombe . "	Klokken 09:47:57 ringede stewardessen CeeCee Lyles til sin mand og lagde en besked , hvor hun fortalte om kapringen af flyet .	Passageren Marion Britton ringede til sin ven Fred Fiumano klokken 09:49:12 .
+Event	T0	nævnte	EVENT	4
+Event	T1	bombe_spændt	EVENT	61
+Event	T2	sendte	EVENT	137
+Event	T3	besked	EVENT	147
+Event	T4	ringede	EVENT	195
+Event	T5	lagde	EVENT	250
+Event	T6	besked	EVENT	259
+Event	T7	ringede	EVENT	323
+Event	T8	lagde	EVENT	373
+Event	T9	besked	EVENT	382
+Event	T10	fortalte	EVENT	400
+Event	T11	kapringen	EVENT	412
+Event	T12	ringede	EVENT	459
+Relation	T0	T3	NoRel	true	nævnte	besked
+Relation	T10	T3	NoRel	true	fortalte	besked
+Relation	T8	T11	NoRel	true	lagde	kapringen

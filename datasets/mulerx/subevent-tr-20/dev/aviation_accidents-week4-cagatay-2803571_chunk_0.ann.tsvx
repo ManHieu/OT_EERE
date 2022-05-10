@@ -1,0 +1,20 @@
+Text	31 Temmuz 2020 yerel saatle sabah 08.27 civarında , bir de Havilland DHC - 2 Beaver ile bir Piper PA - 12 Super Cruiser ; Alaska'daki Kenai Yarımadası üzerinde çarpıştı .	Beaver'da bulunan altı kişi de kaza anında öldü .	Beşi kaza sırasında öldü , altıncı kişi hastaneye götürülürken yaralarından dolayı öldü .	Soldotna Aircraft & Equipment Leasing LLC'den kiralanarak High Adventure Air Charter tarafından işletilen 64 yaşındaki Beaver Longmere Gölü'nden Cook Inlet'e gidiyordu .	Kategori : 2020'de havacılık kazaları ve olayları Kategori : Temmuz 2020'de olaylar Kategori : Amerika Birleşik Devletleri'ndeki havacılık kazaları ve olayları Kategori : Hava aracı çarpışmaları
+Event	T0	çarpıştı	EVENT	160
+Event	T1	kaza	EVENT	202
+Event	T2	öldü	EVENT	214
+Event	T3	kaza	EVENT	226
+Event	T4	öldü	EVENT	241
+Event	T5	öldü	EVENT	304
+Event	T6	işletilen	EVENT	407
+Event	T7	gidiyordu	EVENT	469
+Event	T11	yaralarından	EVENT	284
+Event	T8	çarpışmaları	EVENT	663
+Relation	T1	T0	SuperSub	true	kaza	çarpıştı
+Relation	T0	T1	SubSuper	true	çarpıştı	kaza
+Relation	T1	T3	NoRel	true	kaza	kaza
+Relation	T1	T8	NoRel	true	kaza	çarpışmaları
+Relation	T2	T11	NoRel	true	öldü	yaralarından
+Relation	T2	T4	NoRel	true	öldü	öldü
+Relation	T2	T6	NoRel	true	öldü	işletilen
+Relation	T6	T2	NoRel	true	işletilen	öldü
+Relation	T8	T7	NoRel	true	çarpışmaları	gidiyordu

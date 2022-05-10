@@ -1,0 +1,15 @@
+Text	NÜRNBERG SALDIRISI , İkinci Dünya Savaşı'nda Kraliyet Hava Kuvvetleri'nin Almanya'nın Nürnberg şehrine yönelik yaptığı ve tarihteki en ağır uçak kaybı ile sonuçlanan hava saldırısıdır .	Nürnberg Almanya için önemli bir elektronik fabrika şehri idi .	Şehirde elektronik malzemeler üreten fabrikalar ve silah yapımında kullanılan madenler çıkarılıyordu .	Şehir Naziler için ideolojik başkent idi zira Adolf Hitler en kalabalık mitinglerini bu şehirde yapmıştır .	Şehirde 350.000 kişi yaşıyordu .
+Event	T1	yaptığı	EVENT	111
+Event	T2	kaybı	EVENT	145
+Event	T3	saldırısıdır	EVENT	171
+Event	T4	mitinglerini	EVENT	425
+Event	T5	yapmıştır	EVENT	449
+Event	T6	yaşıyordu	EVENT	482
+Event	T7	NÜRNBERG SALDIRISI	EVENT	0
+Event	T8	İkinci Dünya Savaşı'nda	EVENT	21
+Event	T9	üreten	EVENT	280
+Event	T10	çıkarılıyordu	EVENT	337
+Event	T11	kullanılan	EVENT	317
+Relation	T10	T5	NoRel	true	çıkarılıyordu	yapmıştır
+Relation	T11	T9	NoRel	true	kullanılan	üreten
+Relation	T8	T7	NoRel	true	İkinci Dünya Savaşı'nda	NÜRNBERG SALDIRISI

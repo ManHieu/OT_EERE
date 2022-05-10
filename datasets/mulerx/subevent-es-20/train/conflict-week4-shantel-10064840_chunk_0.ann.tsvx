@@ -1,0 +1,36 @@
+Text	Los ATENTADOS EN ADÉN ocurrieron entre el 10 al 13 de octubre de 2021 y estaban dirigidos a miembros del Estado yemení , los ataques dejaron 18 fallecidos .	El 10 de octubre de 2021 , un coche bomba en Adén ( Yemen ) mató a seis personas e hirió a otras siete .	La agencia de noticias estatal dijo que la bomba fue un intento de asesinato terrorista dirigido al gobernador de Adén Ahmed Lamlas y al ministro de agricultura Salem al-Suqatri .	El 30 de octubre de 2021 , un coche bomba cerca del Aeropuerto Internacional de Adén mató al menos a 12 civiles e hirió a varios más .	El primer ministro Mueeen Abdulmalek Saeed lo describió como un atentado terrorista con bomba .
+Event	T0	ATENTADOS	EVENT	4
+Event	T1	ocurrieron	EVENT	22
+Event	T2	dirigidos	EVENT	80
+Event	T4	fallecidos	EVENT	144
+Event	T5	mató	EVENT	217
+Event	T6	hirió	EVENT	240
+Event	T7	dijo	EVENT	293
+Event	T8	bomba	EVENT	305
+Event	T9	intento	EVENT	318
+Event	T10	asesinato	EVENT	329
+Event	T11	dirigido	EVENT	350
+Event	T12	mató	EVENT	527
+Event	T13	hirió	EVENT	556
+Event	T14	atentado	EVENT	641
+Event	T3	bomba	EVENT	193
+Event	T15	bomba	EVENT	478
+Event	T16	describió	EVENT	623
+Relation	T3	T7	SuperSub	true	bomba	dijo
+Relation	T7	T3	SubSuper	true	dijo	bomba
+Relation	T14	T16	SuperSub	true	atentado	describió
+Relation	T16	T14	SubSuper	true	describió	atentado
+Relation	T0	T8	NoRel	true	ATENTADOS	bomba
+Relation	T12	T0	NoRel	true	mató	ATENTADOS
+Relation	T12	T13	NoRel	true	mató	hirió
+Relation	T13	T16	NoRel	true	hirió	describió
+Relation	T13	T2	NoRel	true	hirió	dirigidos
+Relation	T13	T6	NoRel	true	hirió	hirió
+Relation	T13	T7	NoRel	true	hirió	dijo
+Relation	T16	T9	NoRel	true	describió	intento
+Relation	T3	T1	NoRel	true	bomba	ocurrieron
+Relation	T3	T15	NoRel	true	bomba	bomba
+Relation	T5	T15	NoRel	true	mató	bomba
+Relation	T7	T5	NoRel	true	dijo	mató
+Relation	T9	T14	NoRel	true	intento	atentado
+Relation	T9	T16	NoRel	true	intento	describió

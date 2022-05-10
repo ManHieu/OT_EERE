@@ -1,0 +1,35 @@
+Text	Un pasajero informó de que el sospechoso , aunque se había quemado " algo grave " en la pierna , parecía " muy tranquilo " y como una " persona normal " .	Cuando el ataque sucedió , una luz indicando fuego se activó en la cabina , por lo que el piloto pidió rescate y refuerzos .	El incidente fue inicialmente declarado como una emergencia en vuelo , antes de ser considerada como un intento de ataque terrorista .	El avión hizo un aterrizaje de emergencia en el Aeropuerto Metropolitano del Condado de Wayne en Detroit , Romulus , Míchigan ( un suburbio de Detroit ) justo antes de la 1 p.m. hora local .	Umar Farouk Abdulmutallab , licenciado en ingeniería en Londres , donde vivió en un apartamento de un barrio residencial , fue acusado el 26 de diciembre de 2009 formalmente de introducir un artefacto explosivo en el vuelo que recorría la ruta Ámsterdam-Detroit y de tratar de hacer explotar el aparato .
+Event	T0	informó	EVENT	12
+Event	T1	quemado	EVENT	59
+Event	T2	sucedió	EVENT	172
+Event	T3	activó	EVENT	209
+Event	T4	rescate	EVENT	258
+Event	T5	incidente	EVENT	283
+Event	T6	declarado	EVENT	310
+Event	T7	emergencia	EVENT	329
+Event	T8	considerada	EVENT	364
+Event	T9	intento	EVENT	384
+Event	T11	hizo	EVENT	424
+Event	T12	aterrizaje	EVENT	432
+Event	T14	acusado	EVENT	733
+Event	T15	introducir	EVENT	783
+Event	T17	vuelo	EVENT	823
+Event	T18	recorría	EVENT	833
+Event	T19	tratar	EVENT	873
+Relation	T9	T1	SuperSub	true	intento	quemado
+Relation	T1	T9	SubSuper	true	quemado	intento
+Relation	T0	T15	NoRel	true	informó	introducir
+Relation	T11	T15	NoRel	true	hizo	introducir
+Relation	T12	T0	NoRel	true	aterrizaje	informó
+Relation	T12	T5	NoRel	true	aterrizaje	incidente
+Relation	T14	T15	NoRel	true	acusado	introducir
+Relation	T14	T4	NoRel	true	acusado	rescate
+Relation	T15	T4	NoRel	true	introducir	rescate
+Relation	T15	T7	NoRel	true	introducir	emergencia
+Relation	T19	T12	NoRel	true	tratar	aterrizaje
+Relation	T19	T6	NoRel	true	tratar	declarado
+Relation	T2	T19	NoRel	true	sucedió	tratar
+Relation	T2	T9	NoRel	true	sucedió	intento
+Relation	T4	T8	NoRel	true	rescate	considerada
+Relation	T6	T4	NoRel	true	declarado	rescate
+Relation	T9	T3	NoRel	true	intento	activó

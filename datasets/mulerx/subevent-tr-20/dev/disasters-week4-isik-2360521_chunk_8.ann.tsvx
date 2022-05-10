@@ -1,0 +1,16 @@
+Text	I. Justinianus , kısa bir yas dönemine başlattı .	Depremini takip eden kırk gün boyunca tacını takmadı .	Deprem daha sonra yıllık yalvarışın liturjisinde anıldı .	Agathias ayrıca nüfusun tutumu üzerinde kısa süreli bir etki yarattığını iddia eder : zenginler yardımseverliğe yöneldi , şüpheliler dua etmeye yöneldi ve kötülük görünür bir çabası içinde erdeme yönlendirildi .	Agathias , kısa sürede herkesin eski tutumlarına döndüğünü bildirir .
+Event	T0	başlattı	EVENT	39
+Event	T2	takmadı	EVENT	95
+Event	T3	Deprem	EVENT	105
+Event	T4	anıldı	EVENT	154
+Event	T5	eder	EVENT	242
+Event	T8	yönlendirildi	EVENT	359
+Event	T9	bildirir	EVENT	434
+Event	T1	Depremini	EVENT	50
+Event	T10	yöneldi	EVENT	275
+Event	T6	yöneldi	EVENT	307
+Relation	T0	T10	NoRel	true	başlattı	yöneldi
+Relation	T10	T2	NoRel	true	yöneldi	takmadı
+Relation	T4	T5	NoRel	true	anıldı	eder
+Relation	T6	T3	NoRel	true	yöneldi	Deprem
+Relation	T9	T3	NoRel	true	bildirir	Deprem

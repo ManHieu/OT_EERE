@@ -1,0 +1,18 @@
+Text	Tüm bu işlemler yaklaşık bir saat boyunca tekrarlandı .	Nefes alamıyor olmanın verdiği panikle el ve ayaklarımı hareket ettirmeye çalıştığımdan bileklerimde yaralar oluşmuştu .	" ifadelerini kullanmıştı .	Kendisinin bu uygulamaya kaç kez maruz kaldığı yönünde ise farklı iddialar mevcuttur .	Muhammed bu tekniğin kendisine beş kez uygulandığını ifade ederken , 2007'de NBC News'te çıkan haberde birkaç CIA yetkilisinin Muhammed'in konuşmaya başlamasından önce en az iki seans waterboarding ve diğer aşırı tekniklerin uygulandığını belirtildi .
+Event	T0	işlemler	EVENT	7
+Event	T1	tekrarlandı	EVENT	42
+Event	T2	hareket	EVENT	112
+Event	T3	oluşmuştu	EVENT	165
+Event	T4	çıkan	EVENT	381
+Event	T5	belirtildi	EVENT	531
+Event	T6	panikle	EVENT	87
+Event	T7	uygulamaya	EVENT	219
+Event	T8	uygulandığını	EVENT	331
+Event	T9	konuşmaya	EVENT	431
+Event	T10	waterboarding	EVENT	476
+Relation	T0	T5	NoRel	true	işlemler	belirtildi
+Relation	T1	T8	NoRel	true	tekrarlandı	uygulandığını
+Relation	T10	T3	NoRel	true	waterboarding	oluşmuştu
+Relation	T2	T1	NoRel	true	hareket	tekrarlandı
+Relation	T4	T3	NoRel	true	çıkan	oluşmuştu
+Relation	T7	T10	NoRel	true	uygulamaya	waterboarding

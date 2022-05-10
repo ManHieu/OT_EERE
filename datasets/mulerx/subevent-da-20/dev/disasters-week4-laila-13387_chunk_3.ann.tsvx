@@ -1,0 +1,14 @@
+Text	Desuden er alt fyrværkeri købt i udlandet ulovligt at bruge i Danmark .	Visse fyrværkerityper må kun håndteres af professionelle fyrværkere .	Krysantemumbomber og kanonslag er generelt ulovlige i Danmark .	I Danmark er det lovligt at købe fyrværkeri fra 15. december til 31. december , og at afskyde det fra den 27. december til og med 1. januar året efter .	- Fyrværkeriulykken i Seest_- Krysantemumbombe -___Krudt_-___Netto Eksplosivstof Mængde_-___Nytår
+Event	T0	købt	EVENT	26
+Event	T1	købe	EVENT	234
+Event	T2	Fyrværkeriulykken	EVENT	361
+Event	T3	ulovligt	EVENT	42
+Event	T4	håndteres	EVENT	101
+Event	T5	fyrværkerityper	EVENT	78
+Event	T6	ulovlige	EVENT	185
+Event	T7	lovligt	EVENT	223
+Event	T8	afskyde	EVENT	292
+Relation	T0	T8	NoRel	true	købt	afskyde
+Relation	T4	T6	NoRel	true	håndteres	ulovlige
+Relation	T5	T7	NoRel	true	fyrværkerityper	lovligt
+Relation	T7	T0	NoRel	true	lovligt	købt

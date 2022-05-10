@@ -1,0 +1,39 @@
+Text	Recordando los procesos soviéticos llevados a cabo durante el gobierno de Stalin , especialmente los Procesos de Moscú , los acusados se declararon culpables ; uno de ellos declaró : _ Nosotros merecemos ser ajusticiados dos veces pero , pese a todo , pedimos perdón _ .	Los 300 testigos estaban vigilados por los guardias de seguridad y nadie podía acercarse a ellos .	Durante la noche del lunes 2 al martes 3 de octubre de 2005 , la Unión Europea ( UE ) decretó un embargo de las exportaciones de armas al Uzbekistán , motivado por el rechazo de Tashkent a autorizar una investigación internacional e independiente acerca de lo ocurrido durante la represión de Andiyán los días 12 y 13 de mayo .	El 14 de noviembre , los quince acusados fueron condenados a penas de 14 a 20 años de cárcel .	Después de este veredicto , la UE prohibió que , durante un año , ninguno de los altos responsables uzbekos , incluidos los ministros de Interior y de Defensa , pisaran suelo Europeo .
+Event	T0	procesos	EVENT	15
+Event	T1	Procesos	EVENT	101
+Event	T2	declaró	EVENT	173
+Event	T3	ajusticiados	EVENT	208
+Event	T4	vigilados	EVENT	296
+Event	T5	decretó	EVENT	456
+Event	T6	embargo	EVENT	467
+Event	T7	motivado	EVENT	521
+Event	T8	rechazo	EVENT	537
+Event	T9	autorizar	EVENT	559
+Event	T10	investigación	EVENT	573
+Event	T11	ocurrido	EVENT	630
+Event	T12	represión	EVENT	650
+Event	T14	veredicto	EVENT	809
+Event	T15	acusados	EVENT	730
+Event	T13	condenados	EVENT	746
+Relation	T0	T2	SuperSub	true	procesos	declaró
+Relation	T2	T0	SubSuper	true	declaró	procesos
+Relation	T10	T8	SuperSub	true	investigación	rechazo
+Relation	T8	T10	SubSuper	true	rechazo	investigación
+Relation	T0	T12	NoRel	true	procesos	represión
+Relation	T10	T12	NoRel	true	investigación	represión
+Relation	T12	T10	NoRel	true	represión	investigación
+Relation	T12	T2	NoRel	true	represión	declaró
+Relation	T12	T6	NoRel	true	represión	embargo
+Relation	T12	T7	NoRel	true	represión	motivado
+Relation	T13	T7	NoRel	true	condenados	motivado
+Relation	T15	T12	NoRel	true	acusados	represión
+Relation	T15	T2	NoRel	true	acusados	declaró
+Relation	T15	T8	NoRel	true	acusados	rechazo
+Relation	T15	T9	NoRel	true	acusados	autorizar
+Relation	T4	T1	NoRel	true	vigilados	Procesos
+Relation	T7	T0	NoRel	true	motivado	procesos
+Relation	T7	T2	NoRel	true	motivado	declaró
+Relation	T7	T3	NoRel	true	motivado	ajusticiados
+Relation	T8	T12	NoRel	true	rechazo	represión
+Relation	T8	T2	NoRel	true	rechazo	declaró
+Relation	T9	T0	NoRel	true	autorizar	procesos

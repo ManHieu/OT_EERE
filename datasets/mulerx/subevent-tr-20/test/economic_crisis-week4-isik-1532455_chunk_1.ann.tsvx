@@ -1,0 +1,18 @@
+Text	Wels önderliğindeki Almanya Sosyal Demokrat Partisi ; Nasyonal Sosyalist Alman İşçi Partisi ( NSDAP ) ve Almanya Komünist Partisi ( KPD ) ile beraber Weimar Cumhuriyeti dönemi Almanya'sının en önemli 3 partisinden biri olmuştu .	Wels , komünistlere ve nasyonal sosyalistlere karşı bir propaganda yürütmekteydi , çünkü ona göre fazlasıyla radikal olan komünistler ve nasyonal sosyalistler cumhuriyetin varlığı için birer tehlikeydi .	SPD Temmuz 1932 , Kasım 1932 ve Mart 1933 seçimlerinde sırasıyla % 21.58 , % 20.43 ve % 18.25 oranında oy alarak ana muhalefet konumunda yer aldı .	1933'te NSDAP'nin iktidara gelmesiyle çıkan Yetki Yasası'na karşı konuşma yapan tek Reichstag üyesiydi .	Haziran 1933'te Milletler Cemiyeti kontrolünde olan Saar gebiet'e sürgüne gönderildi .
+Event	T0	aldı	EVENT	574
+Event	T2	konuşma	EVENT	647
+Event	T3	gönderildi	EVENT	760
+Event	T4	olmuştu	EVENT	219
+Event	T5	yürütmekteydi	EVENT	296
+Event	T6	tehlikeydi	EVENT	420
+Event	T7	seçimlerinde	EVENT	475
+Event	T8	alarak	EVENT	539
+Event	T9	Yasası'na	EVENT	631
+Event	T1	gelmesiyle	EVENT	608
+Relation	T0	T7	NoRel	true	aldı	seçimlerinde
+Relation	T1	T0	NoRel	true	gelmesiyle	aldı
+Relation	T5	T3	NoRel	true	yürütmekteydi	gönderildi
+Relation	T8	T4	NoRel	true	alarak	olmuştu
+Relation	T8	T5	NoRel	true	alarak	yürütmekteydi
+Relation	T9	T4	NoRel	true	Yasası'na	olmuştu
+Relation	T9	T6	NoRel	true	Yasası'na	tehlikeydi

@@ -1,0 +1,16 @@
+Text	Uofficielle tekniske rapporter antyder , at toget kørte mere end dobbelt så hurtigt som tilladt , da det kom ind i kurven .	Ifølge Madrid dagbladet El País blev 78 mennesker dræbt og 145 såret , heraf over 30 alvorligt sårede .	Den spanske havarikommission angiver antallet af dræbte til 79 , heraf 2 af togpersonalet .	Desuden 33 alvorligt kvæstede og 54 lettere kvæstede .	Santiago_de Compostela-ulykken er den værste togulykke i Spanien i 40 år og Spaniens første ulykke nogensinde på en højhastighedsstrækning .
+Event	T0	antyder	EVENT	31
+Event	T1	kørte	EVENT	50
+Event	T2	dræbt	EVENT	174
+Event	T3	såret	EVENT	187
+Event	T4	sårede	EVENT	219
+Event	T5	dræbte	EVENT	277
+Event	T6	Compostela-ulykken	EVENT	387
+Event	T7	kom	EVENT	105
+Event	T8	kvæstede	EVENT	341
+Event	T9	kvæstede	EVENT	364
+Event	T10	ulykke	EVENT	467
+Relation	T10	T0	NoRel	true	ulykke	antyder
+Relation	T2	T1	NoRel	true	dræbt	kørte
+Relation	T2	T9	NoRel	true	dræbt	kvæstede
+Relation	T7	T5	NoRel	true	kom	dræbte

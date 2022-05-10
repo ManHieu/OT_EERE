@@ -1,0 +1,16 @@
+Text	Aynı zamanda , pilot Solovyov'un yoğun siste ( " kör " ) aletlerle uçmak için gerekli deneyime sahip olmadığı ve diğer pilot Tupçiy'in bu tip uçaklarda uçma deneyimi olmadığı rapor edildi .	Kazanın diğer bir nedeni ise uçuş rotası boyunca hatalı meteorolojik tahmin idi .	Kazanın ana suçlusu , GVF departmanı Gatuşkin olarak belirlenmiş , böyle bir şey için yetkisi olmamasına rağmen eğitimsiz mürettebatın uçmasına izin vermişti .	Uçuşun iptal edilmesini talep etmeyen Almatı Havalimanı başkanı da suçlu gösterildi .	Kategori : 1941'de havacılık kazaları ve olayları Kategori : Kazakistan SSC'deki havacılık kazaları ve olayları Kategori : 1941'de Sovyetler Birliği Kategori : Aeroflot kazaları ve olayları Kategori : Tupolev TB - 3 içeren kazalar ve olaylar
+Event	T0	edildi	EVENT	181
+Event	T1	tahmin	EVENT	259
+Event	T2	iptal	EVENT	439
+Event	T4	gösterildi	EVENT	505
+Event	T5	kazalar	EVENT	741
+Event	T6	olaylar	EVENT	752
+Event	T7	uçmak	EVENT	67
+Event	T8	Kazanın	EVENT	190
+Event	T9	Kazanın	EVENT	272
+Event	T10	belirlenmiş	EVENT	325
+Event	T11	vermişti	EVENT	421
+Relation	T0	T8	NoRel	true	edildi	Kazanın
+Relation	T2	T0	NoRel	true	iptal	edildi
+Relation	T2	T6	NoRel	true	iptal	olaylar
+Relation	T6	T4	NoRel	true	olaylar	gösterildi

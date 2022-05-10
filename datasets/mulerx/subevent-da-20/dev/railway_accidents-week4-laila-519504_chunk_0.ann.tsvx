@@ -1,0 +1,27 @@
+Text	TOGKOLLISIONEN I WENZHOU skete den 23. juli 2011 , hvor to højhastighedstog kolliderede i Shuangyu nær byen Wenzhou i provinsen Zhejiang i Kina .	39 mennesker døde og 192 blev kvæstet heraf 12 alvorligt .	Cirka klokken 20.00 mistede et tog af typen CRH1 strøm pga lynnedslag og stod stille på en viadukt 20 meter over jorden .	Kort tid efter kom et tog af typen CRH2 og kørte ind i det første tog hvorved de fire første togvogne i det kørende tog blev afsporet og faldt ned fra viadukten .	Timer efter at søgning efter overlevende blev stoppet og man havde begyndt at skære de ødelagte togvogne i stykke blev en 2-årig pige fundet i live i vragdelene .
+Event	T0	TOGKOLLISIONEN	EVENT	0
+Event	T1	skete	EVENT	25
+Event	T2	kolliderede	EVENT	76
+Event	T3	døde	EVENT	159
+Event	T4	kvæstet	EVENT	176
+Event	T5	mistede	EVENT	225
+Event	T6	lynnedslag	EVENT	264
+Event	T7	afsporet	EVENT	452
+Event	T8	søgning	EVENT	505
+Event	T9	stoppet	EVENT	536
+Event	T10	begyndt	EVENT	557
+Event	T11	skære	EVENT	568
+Event	T12	stod stille	EVENT	278
+Event	T13	overlevende	EVENT	519
+Event	T14	fundet	EVENT	624
+Event	T15	kom	EVENT	342
+Event	T16	kørte ind i	EVENT	370
+Relation	T0	T2	NoRel	true	TOGKOLLISIONEN	kolliderede
+Relation	T0	T7	NoRel	true	TOGKOLLISIONEN	afsporet
+Relation	T1	T2	NoRel	true	skete	kolliderede
+Relation	T13	T15	NoRel	true	overlevende	kom
+Relation	T14	T11	NoRel	true	fundet	skære
+Relation	T3	T10	NoRel	true	døde	begyndt
+Relation	T5	T0	NoRel	true	mistede	TOGKOLLISIONEN
+Relation	T6	T8	NoRel	true	lynnedslag	søgning
+Relation	T8	T10	NoRel	true	søgning	begyndt

@@ -1,0 +1,13 @@
+Text	Dalgaların yüksekliği Tarō'da ise 37,9_m , Ōfunato'da ise 23 metre olarak kaydedildi .	Tsunami tüm Pasifik'e yayıldı , Güney ve Kuzey Amerika'da , Alaska'dan Şili'ye kadar olan bölgede tsunami uyarıları verildi , bu bölgelerde tsunami görülmesine karşın etkileri küçüktü .	Şili'nin Pasifik kıyısı 17.000 kilometrelik uzaklıkla en uzak yerlerden biriydi , buna rağmen ülkede yüksekliği iki metreye varan dalgalar görüldü .	Japonya Meteoroloji Ajansı tarafından verilen tsunami uyarısı en yüksek seviyeydi , en az 3 m yüksekliğindeki bir " büyük tsunami " olarak nitelendirilmişti .	Gerçek yüksekliğine ilişkin tahminler değişmekteydi , en yüksek tahmin 10 m ile Miyagi'deydi .
+Event	T0	kaydedildi	EVENT	74
+Event	T1	Tsunami	EVENT	87
+Event	T2	yayıldı	EVENT	109
+Event	T3	verildi	EVENT	203
+Event	T4	görülmesine	EVENT	235
+Event	T5	görüldü	EVENT	412
+Event	T6	uyarısı	EVENT	476
+Event	T8	nitelendirilmişti	EVENT	561
+Event	T9	tahmin	EVENT	645
+Relation	T3	T5	NoRel	true	verildi	görüldü
+Relation	T5	T3	NoRel	true	görüldü	verildi
+Relation	T9	T8	NoRel	true	tahmin	nitelendirilmişti

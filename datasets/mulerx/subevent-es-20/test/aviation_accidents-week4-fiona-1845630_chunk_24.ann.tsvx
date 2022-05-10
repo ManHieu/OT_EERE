@@ -1,0 +1,33 @@
+Text	La CIAIAC no pudo determinar fehacientemente cuál fue el modo de fallo exacto del TOWS .	Una teoría inicial de las causas del accidente era que el sistema de reversa del motor n.º 2 ( lado derecho ) se pudiera haber activado durante el ascenso , haciendo que el avión virara bruscamente hacia la derecha .	Esta teoría surgió debido a que en los restos del accidente se encontró uno de los motores con el sistema de reversa desplegado .	Estos inversores de empuje se emplean normalmente justo después del aterrizaje para reducir las distancias de frenado .	Sin embargo , como el MD-82 tiene los motores instalados en la cola , bastante cerca uno del otro y cerca del eje longitudinal del avión , la activación de un inversor no habría producido un viraje incontrolable .
+Event	T0	determinar	EVENT	18
+Event	T1	fallo	EVENT	65
+Event	T2	accidente	EVENT	126
+Event	T3	activado	EVENT	216
+Event	T4	ascenso	EVENT	236
+Event	T5	haciendo	EVENT	246
+Event	T6	virara	EVENT	268
+Event	T7	restos	EVENT	345
+Event	T8	accidente	EVENT	356
+Event	T9	encontró	EVENT	369
+Event	T10	desplegado	EVENT	423
+Event	T11	emplean	EVENT	466
+Event	T12	aterrizaje	EVENT	504
+Event	T13	frenado	EVENT	546
+Event	T14	instalados	EVENT	602
+Event	T15	activación	EVENT	698
+Event	T16	producido	EVENT	734
+Relation	T3	T6	SuperSub	true	activado	virara
+Relation	T6	T3	SubSuper	true	virara	activado
+Relation	T0	T13	NoRel	true	determinar	frenado
+Relation	T1	T3	NoRel	true	fallo	activado
+Relation	T10	T13	NoRel	true	desplegado	frenado
+Relation	T10	T16	NoRel	true	desplegado	producido
+Relation	T10	T2	NoRel	true	desplegado	accidente
+Relation	T11	T10	NoRel	true	emplean	desplegado
+Relation	T12	T11	NoRel	true	aterrizaje	emplean
+Relation	T14	T6	NoRel	true	instalados	virara
+Relation	T15	T4	NoRel	true	activación	ascenso
+Relation	T15	T7	NoRel	true	activación	restos
+Relation	T16	T1	NoRel	true	producido	fallo
+Relation	T3	T10	NoRel	true	activado	desplegado
+Relation	T8	T13	NoRel	true	accidente	frenado

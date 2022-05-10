@@ -1,0 +1,14 @@
+Text	Bu gezi neticesinde Falkenhayn , ordularının Bağdat'ın geri alınması için Irak Cephesinde kullanılması fikrinden cayarak durumu İstanbul ve Berlin'e bildirmiştir .	Savaştan sonra Almanya'ya dönerek siyasi yaşama atıldı .	1921 - 1932 arasında Reichstag ( Parlamento ) üyeliğinde bulundu .	Katolik Merkez Partisi'nin aşırı sağ kanadından olan Papen'in kralcılar , eski soylular , büyük iş çevreleri ve Alman ordusu ile bağları olmakla birlikte siyasi yandaşı yoktu .	Bu nedenle Cumhurbaşkanı Paul von Hindenburg'un danışmanı General Kurt von Schleicher'in entrikaları sonucunda başbakanlığa getirilmesi ( 1 Haziran 1932 ) kamuoyunda tam bir şaşkınlık yarattı .
+Event	T0	gezi	EVENT	3
+Event	T1	alınması	EVENT	60
+Event	T2	kullanılması	EVENT	90
+Event	T3	bildirmiştir	EVENT	149
+Event	T4	atıldı	EVENT	212
+Event	T5	bulundu	EVENT	278
+Event	T6	getirilmesi	EVENT	589
+Event	T7	yarattı	EVENT	649
+Event	T8	dönerek	EVENT	190
+Event	T9	entrikaları	EVENT	554
+Relation	T2	T9	NoRel	true	kullanılması	entrikaları
+Relation	T6	T0	NoRel	true	getirilmesi	gezi
+Relation	T8	T6	NoRel	true	dönerek	getirilmesi

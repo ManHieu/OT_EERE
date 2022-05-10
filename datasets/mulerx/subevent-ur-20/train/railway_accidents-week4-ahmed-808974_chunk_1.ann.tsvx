@@ -1,0 +1,23 @@
+Text	ٹرین کے آٹھ ڈبے آپس میں ٹکرا گئے اور " W " جیسی شکل بن گئی ۔	سب سے زیادہ ہلاکتیں سامنے والا ڈبے میں ہوئیں ۔	تائیوان میں 1991ء کے میاؤلی شہر کے حادثے جس میں 30 افراد ہلاک ہوئے تھے ، کے بعد یہ سب سے خوف_ناک ریل حادثہ تھا ۔	زندہ بچ جانے والے ایک شخص کے مطابق ڈرائیور نے حادثے ہونے سے پہلے کئی بار ایمرجنسی بریک لگائی اور ایک دوسرے شخص کا کہنا ہے کہ ٹرین مڑنے کے بعد اس کی رفتار تیز ہو گئی تھی ۔	ریل انتظامیہ کے مطابق حادثے کی اصل وجہ اب تک معلوم نہیں ہو سکی ۔
+Event	T2	ہلاکتیں	EVENT	73
+Event	T3	حادثے	EVENT	143
+Event	T4	ہلاک	EVENT	165
+Event	T5	حادثہ	EVENT	209
+Event	T6	جانے	EVENT	229
+Event	T7	لگائی	EVENT	308
+Event	T8	کہنا	EVENT	335
+Event	T9	مڑنے	EVENT	351
+Event	T10	حادثے	EVENT	414
+Event	T11	ٹکرا	EVENT	24
+Event	T12	بن	EVENT	52
+Event	T1	حادثے	EVENT	267
+Event	T13	تیز	EVENT	375
+Event	T14	معلوم	EVENT	437
+Relation	T1	T2	NoRel	true	حادثے	ہلاکتیں
+Relation	T13	T4	NoRel	true	تیز	ہلاک
+Relation	T14	T12	NoRel	true	معلوم	بن
+Relation	T14	T5	NoRel	true	معلوم	حادثہ
+Relation	T2	T9	NoRel	true	ہلاکتیں	مڑنے
+Relation	T4	T10	NoRel	true	ہلاک	حادثے
+Relation	T6	T10	NoRel	true	جانے	حادثے
+Relation	T8	T12	NoRel	true	کہنا	بن

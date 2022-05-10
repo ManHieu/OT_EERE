@@ -1,0 +1,22 @@
+Text	Den 11. marts 2020 annoncerede Danmarks statsminister Mette Frederiksen , at regeringen havde valgt at " lukke Danmark ned " .	For at begrænse smitten lukkedes alle folkeskoler og daginstitutioner mandag 16. marts , og privatskoler opfordredes samtidig til at lukke ned .	Derudover sendes alle offentligt ansatte , der ikke varetager kritiske funktioner , hjem .	Dem , der ikke sendes hjem , er dem , der har en kritisk rolle for samfundet altså blandt andet dem , der arbejder i sundhedssektoren , i politiet og med ældre .	Kort efter pressemødet oplevede supermarkederne usædvanligt mange kunder og store indkøb af basisvarer som rugbrød , pasta og wc-papir , og efterladte ferskvarer måtte smides ud .
+Event	T0	annoncerede	EVENT	19
+Event	T1	valgt	EVENT	94
+Event	T2	lukke	EVENT	105
+Event	T3	lukkedes	EVENT	151
+Event	T4	opfordredes	EVENT	232
+Event	T5	sendes	EVENT	282
+Event	T6	sendes	EVENT	378
+Event	T7	oplevede	EVENT	548
+Event	T8	indkøb	EVENT	607
+Relation	T2	T5	SuperSub	true	lukke	sendes
+Relation	T5	T2	SubSuper	true	sendes	lukke
+Relation	T2	T3	SuperSub	true	lukke	lukkedes
+Relation	T3	T2	SubSuper	true	lukkedes	lukke
+Relation	T2	T4	SuperSub	true	lukke	opfordredes
+Relation	T4	T2	SubSuper	true	opfordredes	lukke
+Relation	T0	T2	SuperSub	true	annoncerede	lukke
+Relation	T2	T0	SubSuper	true	lukke	annoncerede
+Relation	T7	T8	SuperSub	true	oplevede	indkøb
+Relation	T8	T7	SubSuper	true	indkøb	oplevede
+Relation	T8	T0	NoRel	true	indkøb	annoncerede
+Relation	T8	T6	NoRel	true	indkøb	sendes

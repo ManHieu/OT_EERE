@@ -1,0 +1,46 @@
+Text	Another press report said that the pilot had failed five prior tests , and also alleged " flirtatious " conversation in the cockpit between the pilot and the much younger first officer .	In response to questioning from the NTSB , Colgan Air officials acknowledged both pilots apparently were not paying close attention to the aircraft 's instruments , and did not properly follow the airline 's procedures for handling an impending stall .	" I believe Capt. Renslow did have intentions of landing safely at Buffalo , as well as first officer Shaw , but obviously in those last few moments ... the flight instruments were not being monitored , and that 's an indication of a lack of situational awareness , " said John Barrett , Colgan 's director of flight standards .	The official transcript of the crew 's communication , obtained from the CVR , as well as an animated depiction of the crash , constructed using data from the FDR , were made available to the public on May 12 , 2009 .	Some of the crew 's communication violated federal rules banning nonessential conversation .
+Event	T0	said	EVENT	21
+Event	T1	failed	EVENT	45
+Event	T2	tests	EVENT	63
+Event	T3	alleged	EVENT	80
+Event	T4	conversation	EVENT	104
+Event	T5	questioning	EVENT	202
+Event	T6	acknowledged	EVENT	251
+Event	T7	paying	EVENT	296
+Event	T8	procedures	EVENT	395
+Event	T9	handling	EVENT	410
+Event	T10	stall	EVENT	432
+Event	T11	landing	EVENT	489
+Event	T12	monitored	EVENT	631
+Event	T13	said	EVENT	708
+Event	T14	communication	EVENT	808
+Event	T15	obtained	EVENT	824
+Event	T16	depiction	EVENT	871
+Event	T17	crash	EVENT	888
+Event	T18	violated	EVENT	1021
+Event	T19	banning	EVENT	1044
+Event	T20	conversation	EVENT	1065
+Event	T21	constructed	EVENT	896
+Relation	T0	T3	SuperSub	true	said	alleged
+Relation	T3	T0	SubSuper	true	alleged	said
+Relation	T5	T6	SuperSub	true	questioning	acknowledged
+Relation	T6	T5	SubSuper	true	acknowledged	questioning
+Relation	T10	T5	NoRel	true	stall	questioning
+Relation	T11	T3	NoRel	true	landing	alleged
+Relation	T12	T0	NoRel	true	monitored	said
+Relation	T13	T2	NoRel	true	said	tests
+Relation	T14	T5	NoRel	true	communication	questioning
+Relation	T17	T0	NoRel	true	crash	said
+Relation	T17	T18	NoRel	true	crash	violated
+Relation	T17	T9	NoRel	true	crash	handling
+Relation	T18	T12	NoRel	true	violated	monitored
+Relation	T18	T6	NoRel	true	violated	acknowledged
+Relation	T19	T18	NoRel	true	banning	violated
+Relation	T19	T2	NoRel	true	banning	tests
+Relation	T20	T0	NoRel	true	conversation	said
+Relation	T20	T14	NoRel	true	conversation	communication
+Relation	T20	T7	NoRel	true	conversation	paying
+Relation	T21	T5	NoRel	true	constructed	questioning
+Relation	T3	T12	NoRel	true	alleged	monitored
+Relation	T3	T13	NoRel	true	alleged	said
+Relation	T7	T12	NoRel	true	paying	monitored

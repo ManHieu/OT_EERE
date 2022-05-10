@@ -1,0 +1,13 @@
+Text	Med dette radarudstyr fik en Blenheim fra Fighter Interception Unit ( FIU ) på RAF Ford sin første nedskydning om natten mellem 2. og 3. juli 1940 , hvor den nedskød en Dornier Do 17 .	Flere nedskydninger fulgte og inden længe havde Blenheimflyene vist sig uvurderlige som natjagere .	Gradvist , med introduktionen af Bristol Beaufighter i 1940-1941 , blev denne opgave overtaget af dens hurtigere og bedre bevæbnede slægtning .	Blenheimfly fortsatte med at operere mange steder og i mange roller indtil omkring 1943 .	Der var Blenheim-eskadriller i Storbritannien og på britiske baser i Egypten , Irak , Aden , Indien , Malaya , Singapore og Hollandsk Ostindien .
+Event	T0	fik	EVENT	22
+Event	T1	nedskydning	EVENT	99
+Event	T2	nedskød	EVENT	158
+Event	T3	fulgte	EVENT	205
+Event	T5	overtaget	EVENT	370
+Event	T6	fortsatte	EVENT	441
+Event	T7	operere	EVENT	458
+Relation	T5	T6	SuperSub	true	overtaget	fortsatte
+Relation	T6	T5	SubSuper	true	fortsatte	overtaget
+Relation	T6	T0	NoRel	true	fortsatte	fik
+Relation	T7	T2	NoRel	true	operere	nedskød
+Relation	T7	T6	NoRel	true	operere	fortsatte

@@ -1,0 +1,33 @@
+Text	- 2 Şubat , 2003 – Dete ten çarpışması , Zimbabve : İki tren çarpışır , raydan çıkar ve alev alır , 40ın üzerinde ölü .	- 3 Şubat , 2003 – Broadmeadows train runaway & crash , Melbourne , Victoria , Avustrayia : Bir insansız elektrikli banliyö treni Broadmeadows İstasyonu’ndan kurtularak ayrılır ve saatte 100 km den fazla bir hızla Southern Cross Station tren istasyonunda durmakata olan bir dizel yolcu treniyle çarpışmadan önce pek çok yolcuya ve hemzemin geçidine doğru gider .	Çarpışma sonrası iki tren de raydan çıkar .	Bu kazadan dolayı hiç kimse yaralanmaz .	- 18 Şubat , 2003 – Daegu tünel yangını , Güney Kore : Zihinsel hastalıklı bir adam yangın başlatır ve iki metro treni girdap içinde yutulur , 200_den fazla ölü .
+Event	T1	çarpışır	EVENT	61
+Event	T2	çıkar	EVENT	79
+Event	T3	alır	EVENT	93
+Event	T4	ölü	EVENT	114
+Event	T5	runaway	EVENT	158
+Event	T6	crash	EVENT	168
+Event	T7	ayrılır	EVENT	289
+Event	T8	çarpışmadan	EVENT	415
+Event	T9	gider	EVENT	475
+Event	T10	Çarpışma	EVENT	483
+Event	T11	çıkar	EVENT	519
+Event	T13	yangını	EVENT	600
+Event	T14	başlatır	EVENT	659
+Event	T16	yutulur	EVENT	701
+Event	T17	ölü	EVENT	725
+Event	T18	Dete ten çarpışması	EVENT	19
+Relation	T18	T1	SuperSub	true	Dete ten çarpışması	çarpışır
+Relation	T1	T18	SubSuper	true	çarpışır	Dete ten çarpışması
+Relation	T18	T2	SuperSub	true	Dete ten çarpışması	çıkar
+Relation	T2	T18	SubSuper	true	çıkar	Dete ten çarpışması
+Relation	T18	T3	SuperSub	true	Dete ten çarpışması	alır
+Relation	T3	T18	SubSuper	true	alır	Dete ten çarpışması
+Relation	T10	T13	NoRel	true	Çarpışma	yangını
+Relation	T17	T10	NoRel	true	ölü	Çarpışma
+Relation	T17	T2	NoRel	true	ölü	çıkar
+Relation	T3	T16	NoRel	true	alır	yutulur
+Relation	T4	T11	NoRel	true	ölü	çıkar
+Relation	T6	T2	NoRel	true	crash	çıkar
+Relation	T6	T8	NoRel	true	crash	çarpışmadan
+Relation	T6	T9	NoRel	true	crash	gider
+Relation	T8	T9	NoRel	true	çarpışmadan	gider
+Relation	T9	T18	NoRel	true	gider	Dete ten çarpışması

@@ -1,0 +1,12 @@
+Text	Çamaşır suyu madensel eşyaya zarar verir .	Ultraviyole ile ışınlama ( mavi ışık ) HIV'in yok edilmesi için önerilmeyen bir yöntemdir .	Ultraviyole ışını doğrudan temas ettiği yüzeydeki mikropları öldürür .	Cismin altında kalan mikropları öldürmez .	Su ve sabunla iyice yıkama ile ( en az 15 saniye ) bütün mikroplar gibi HIV de deriden uzaklaştırılabilir .
+Event	T0	verir	EVENT	35
+Event	T2	öldürür	EVENT	196
+Event	T3	öldürmez	EVENT	238
+Event	T4	yıkama	EVENT	269
+Event	T5	uzaklaştırılabilir	EVENT	336
+Event	T6	temas	EVENT	162
+Event	T1	yok edilmesi	EVENT	89
+Relation	T0	T2	NoRel	true	verir	öldürür
+Relation	T2	T0	NoRel	true	öldürür	verir
+Relation	T3	T4	NoRel	true	öldürmez	yıkama
+Relation	T4	T0	NoRel	true	yıkama	verir

@@ -1,0 +1,18 @@
+Text	SARS ( Akut luftvejssyndrom eller Severe Acute Respiratory Syndrome på engelsk ) er en sygdom der opstod i Kina ( Guangdong ) i 2002 .	I dette område er der en række gunstige betingelser for at virus kan overføres fra dyr til mennesker , jf. zoonose , og nye virussygdomme kan opstå , blandt andet fordi mennesker , fjerkræ og grise lever tæt opad hinanden .	Det er nu efter al sandsynlighed fastslået at sygdommen skyldes coronavirussen SARS-CoV .	Den nye virus ligner dog ikke de almindelige humane coronavira ; den stammer derimod sandsynligvis fra dyr , muligvis fugle .	SARS-virussen er usædvanlig bestandig og muterer ikke i så høj grad som almindelig influenzavirus .
+Event	T0	sygdom	EVENT	87
+Event	T1	opstod	EVENT	98
+Event	T2	overføres	EVENT	204
+Event	T3	zoonose	EVENT	242
+Event	T4	virussygdomme	EVENT	259
+Event	T5	opstå	EVENT	277
+Event	T6	lever	EVENT	333
+Event	T7	fastslået	EVENT	392
+Event	T8	muterer	EVENT	616
+Relation	T0	T1	SuperSub	true	sygdom	opstod
+Relation	T1	T0	SubSuper	true	opstod	sygdom
+Relation	T5	T2	SuperSub	true	opstå	overføres
+Relation	T2	T5	SubSuper	true	overføres	opstå
+Relation	T1	T7	NoRel	true	opstod	fastslået
+Relation	T2	T8	NoRel	true	overføres	muterer
+Relation	T3	T1	NoRel	true	zoonose	opstod
+Relation	T4	T6	NoRel	true	virussygdomme	lever

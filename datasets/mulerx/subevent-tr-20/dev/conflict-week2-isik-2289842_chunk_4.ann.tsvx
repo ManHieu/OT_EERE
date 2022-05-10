@@ -1,0 +1,22 @@
+Text	602'deki son isyan , Mauricius'un Balkanlar'daki birliklerini kış boyunca sahada kalmasını emretmesinden kaynaklanıyordu .	Ordu , Trak Centurio olan Phocas'ı imparator ilan etti .	Mauricius , Hipodrom'un iki büyük savaş arabası takımı taraftarını destekleyen Maviler ve Yeşiller'i silahlandırarak Konstantinopolis'u savunmaya çalıştı ancak etkisiz kaldılar .	Mauricius kaçtı ancak kısa sürede Phocas askerleri tarafından yakalandı ve öldürüldü .	küçükresim | sol | 350px | 600 yılında Bizans ve Sasani İmparatorlukları Bizans Mezopotamya valisi Narses , Mauricius'un öldürülmesiyle birlikte , Phocas'a isyan etti ve eyaletin önemli bir şehri olan Edessa'yı ele geçirdi .
+Event	T0	isyan	EVENT	13
+Event	T1	ilan etti	EVENT	168
+Event	T10	emretmesinden	EVENT	91
+Event	T2	silahlandırarak	EVENT	281
+Event	T4	kaçtı	EVENT	369
+Event	T5	yakalandı	EVENT	421
+Event	T6	öldürüldü	EVENT	434
+Event	T7	öldürülmesiyle	EVENT	567
+Relation	T0	T4	SuperSub	true	isyan	kaçtı
+Relation	T4	T0	SubSuper	true	kaçtı	isyan
+Relation	T0	T2	SuperSub	true	isyan	silahlandırarak
+Relation	T2	T0	SubSuper	true	silahlandırarak	isyan
+Relation	T0	T1	SuperSub	true	isyan	ilan etti
+Relation	T1	T0	SubSuper	true	ilan etti	isyan
+Relation	T0	T5	SuperSub	true	isyan	yakalandı
+Relation	T5	T0	SubSuper	true	yakalandı	isyan
+Relation	T0	T6	SuperSub	true	isyan	öldürüldü
+Relation	T6	T0	SubSuper	true	öldürüldü	isyan
+Relation	T5	T6	NoRel	true	yakalandı	öldürüldü
+Relation	T7	T1	NoRel	true	öldürülmesiyle	ilan etti
+Relation	T7	T2	NoRel	true	öldürülmesiyle	silahlandırarak

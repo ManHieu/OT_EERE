@@ -1,0 +1,43 @@
+Text	- May 19 , 2004 –__ United States __– near Gunter , Texas : One person dies and four are injured when a BNSF Railway train fails to adhere to an after - arrival track warrant and collides with another train .	- June 1 , 2004 –__ Denmark __– Holstebro : Two regional trains enter the same track and collide head - on .	24 people were injured , 2 more seriously injured .	- June 17 , 2004_–__ India __– KARANJADI TRAIN_CRASH : 20 people die and 100 are injured when 10 carriages fall off a bridge during a monsoon - induced landslide .	- June 28 , 2004_–__ United States __– Macdona , Texas , near San Antonio : 4 people die and 51 are injured when a Union Pacific Railroad train fails to stop at a signal and collides with another train , causing lethal chlorine gas to leak out of a train car .
+Event	T0	dies	EVENT	71
+Event	T1	injured	EVENT	89
+Event	T10	landslide	EVENT	522
+Event	T11	die	EVENT	619
+Event	T12	injured	EVENT	634
+Event	T13	fails	EVENT	678
+Event	T14	stop	EVENT	687
+Event	T15	signal	EVENT	697
+Event	T16	collides	EVENT	708
+Event	T17	collide	EVENT	298
+Event	T19	fall off	EVENT	477
+Event	T2	fails	EVENT	123
+Event	T20	leak	EVENT	769
+Event	T3	warrant	EVENT	167
+Event	T4	collides	EVENT	179
+Event	T5	enter	EVENT	273
+Event	T6	injured	EVENT	333
+Event	T7	injured	EVENT	360
+Event	T8	die	EVENT	435
+Event	T9	injured	EVENT	451
+Relation	T2	T4	SuperSub	true	fails	collides
+Relation	T4	T2	SubSuper	true	collides	fails
+Relation	T13	T16	SuperSub	true	fails	collides
+Relation	T16	T13	SubSuper	true	collides	fails
+Relation	T16	T20	SuperSub	true	collides	leak
+Relation	T20	T16	SubSuper	true	leak	collides
+Relation	T0	T7	NoRel	true	dies	injured
+Relation	T1	T4	NoRel	true	injured	collides
+Relation	T11	T13	NoRel	true	die	fails
+Relation	T11	T14	NoRel	true	die	stop
+Relation	T12	T0	NoRel	true	injured	dies
+Relation	T13	T12	NoRel	true	fails	injured
+Relation	T15	T19	NoRel	true	signal	fall off
+Relation	T16	T9	NoRel	true	collides	injured
+Relation	T17	T19	NoRel	true	collide	fall off
+Relation	T19	T9	NoRel	true	fall off	injured
+Relation	T20	T11	NoRel	true	leak	die
+Relation	T4	T6	NoRel	true	collides	injured
+Relation	T6	T10	NoRel	true	injured	landslide
+Relation	T7	T3	NoRel	true	injured	warrant
+Relation	T7	T9	NoRel	true	injured	injured
+Relation	T8	T12	NoRel	true	die	injured

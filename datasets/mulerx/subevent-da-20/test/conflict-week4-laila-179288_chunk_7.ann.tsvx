@@ -1,0 +1,29 @@
+Text	Senere , i år 904 betød et arabisk angreb voldsomme plyndringer .	I forbindelse med korsridderes erobring af Konstantinopel under det 4. korstog i 1200-tallet oprettedes kongeriget Thessaloniki – det tysk-romerske kejserriges største vasal – som dog kun overlevede i 20 år , da det i 1224 blev generobret af efterkommere af Byzans' kejser , som udråbte området til kejserriget Thessaloniki med en udstrækning som nutidens Nordgrækenland .	Blot seks år senere blev dette regime så fjernet , og regionen blev vasal under det 2. bulgarske kejserdømme .	Allerede i 1246 overgik magten til endnu et hold efterkommere af Byzans .	Fra da af og frem til 1423 nu hed det det nikæanske kejserrige .
+Event	T0	betød	EVENT	18
+Event	T1	plyndringer	EVENT	52
+Event	T2	erobring	EVENT	97
+Event	T3	korstog	EVENT	137
+Event	T4	oprettedes	EVENT	159
+Event	T5	overlevede	EVENT	254
+Event	T6	generobret	EVENT	294
+Event	T7	udråbte	EVENT	345
+Event	T8	fjernet	EVENT	480
+Event	T9	hed	EVENT	654
+Event	T10	angreb	EVENT	35
+Event	T11	udstrækning	EVENT	397
+Event	T12	overgik	EVENT	566
+Event	T13	vasal	EVENT	507
+Relation	T6	T7	SuperSub	true	generobret	udråbte
+Relation	T7	T6	SubSuper	true	udråbte	generobret
+Relation	T11	T6	NoRel	true	udstrækning	generobret
+Relation	T12	T13	NoRel	true	overgik	vasal
+Relation	T12	T5	NoRel	true	overgik	overlevede
+Relation	T13	T12	NoRel	true	vasal	overgik
+Relation	T2	T11	NoRel	true	erobring	udstrækning
+Relation	T2	T3	NoRel	true	erobring	korstog
+Relation	T3	T4	NoRel	true	korstog	oprettedes
+Relation	T3	T7	NoRel	true	korstog	udråbte
+Relation	T3	T9	NoRel	true	korstog	hed
+Relation	T6	T10	NoRel	true	generobret	angreb
+Relation	T6	T13	NoRel	true	generobret	vasal
+Relation	T7	T0	NoRel	true	udråbte	betød

@@ -1,0 +1,21 @@
+Text	15 جون : کو رات کو پہلے حملے میں 120 دہشت گرد مارے گئے اور بارود کا ایک بڑا ذخیرہ تباہ کیا گيا ۔	-___: فضائی حملے میں 25 دہشت گرد مارے گئے ، اس طرح مارے جانے والے دہشت گردوں کی تعداد 215 ہو گئی ۔	-___: کوبرا ہیلی کاپٹروں نے رات گئے میران شاہ کے مشرق میں واقع زراتا تنگی کی پہاڑیوں پر شدت پسندوں کے مواصلاتی مراکز کو نشانہ بنایا جس میں 15 شدت پسند ہلاک ہو گئے ۔	-	شمالی وزیرستان کے علاقے حسو خیل کے علاقے میں بمباری کی گئی ، جس میں شدت پسندوں کے تین ٹھکانے تباہ کیے گئے اور 20 عسکریت پسند مارے گئے ۔
+Event	T0	حملے	EVENT	24
+Event	T1	گئے	EVENT	51
+Event	T2	کیا	EVENT	87
+Event	T3	حملے	EVENT	109
+Event	T4	گئے	EVENT	135
+Event	T5	جانے	EVENT	153
+Event	T6	گئی	EVENT	190
+Event	T7	ہلاک	EVENT	347
+Event	T8	گئے	EVENT	355
+Event	T9	گئی	EVENT	418
+Event	T10	گئے	EVENT	465
+Event	T11	گئے	EVENT	493
+Relation	T0	T11	NoRel	true	حملے	گئے
+Relation	T11	T7	NoRel	true	گئے	ہلاک
+Relation	T3	T9	NoRel	true	حملے	گئی
+Relation	T6	T5	NoRel	true	گئی	جانے
+Relation	T7	T8	NoRel	true	ہلاک	گئے
+Relation	T8	T3	NoRel	true	گئے	حملے
+Relation	T9	T1	NoRel	true	گئی	گئے
+Relation	T9	T10	NoRel	true	گئی	گئے

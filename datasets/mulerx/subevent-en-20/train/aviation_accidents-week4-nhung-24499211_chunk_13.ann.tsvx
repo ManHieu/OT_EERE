@@ -1,0 +1,27 @@
+Text	Excitement mounted in New Zealand during the day , and by early evening an estimated 10,000 people had arrived at Trentham to greet the airmen , including Dorothy Moncrieff and Laura Hood , the aviators ' wives .	[ Search activity for Hood and Moncrieff drawn on 1885 map of New Zealand ]	At 17:22 NZ time , when the aircraft had been in the air for just over 12 hours , and should have been within about off New Zealand 's coast , signals from the _ Aotearoa _ ceased abruptly .	With the cessation of radio signals hopefulness gave way to anxiety , although the relatively poor reliability of airborne radio at the time did not necessarily mean that loss of signal equalled the loss of the aircraft .	Searchlights were used to illuminate the clouds that were building up , and rockets were still being sent up at 01:40 on 11 January , but the crowd waited in vain .
+Event	T0	mounted	EVENT	11
+Event	T1	arrived	EVENT	103
+Event	T2	greet	EVENT	126
+Event	T3	activity	EVENT	222
+Event	T4	drawn	EVENT	254
+Event	T5	signals	EVENT	432
+Event	T6	ceased	EVENT	462
+Event	T7	cessation	EVENT	489
+Event	T8	anxiety	EVENT	540
+Event	T9	loss	EVENT	651
+Event	T10	equalled	EVENT	666
+Event	T11	loss	EVENT	679
+Event	T12	used	EVENT	720
+Event	T13	illuminate	EVENT	728
+Event	T14	waited	EVENT	850
+Event	T15	building up	EVENT	760
+Event	T16	sent up	EVENT	803
+Relation	T0	T6	NoRel	true	mounted	ceased
+Relation	T12	T8	NoRel	true	used	anxiety
+Relation	T14	T3	NoRel	true	waited	activity
+Relation	T15	T14	NoRel	true	building up	waited
+Relation	T16	T14	NoRel	true	sent up	waited
+Relation	T16	T6	NoRel	true	sent up	ceased
+Relation	T3	T9	NoRel	true	activity	loss
+Relation	T5	T11	NoRel	true	signals	loss
+Relation	T9	T10	NoRel	true	loss	equalled

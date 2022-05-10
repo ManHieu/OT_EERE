@@ -1,0 +1,19 @@
+Text	HOHENLINDEN MUHAREBESI 3 Aralık 1800'de Fransız Devrim Savaşları sırasında gerçekleşen muharebe .	Jean Victor Marie Moreau yönetimindeki Fransız ordusu , Avusturyalı Arşidük John liderliğindeki Avusturyalılar ve Bavyeralılar karşısında kesin bir zafer kazandı .	Avusturya güçleri geri çekilmeye zorlandıktan sonra , müttefikler İkinci Koalisyon Savaşı'nı etkili bir şekilde sona erdiren bir ateşkes talebinde bulunmak zorunda kaldılar .	Hohenlinden , günümüzde Almanya'nın Münih kentinin 33 km doğusundadır .	- Arnold , James R . _ Marengo & Hohenlinden .
+Event	T0	muharebe	EVENT	87
+Event	T1	kazandı	EVENT	252
+Event	T2	erdiren	EVENT	379
+Event	T3	bulunmak	EVENT	409
+Event	T4	HOHENLINDEN MUHAREBESI	EVENT	0
+Event	T5	Devrim	EVENT	48
+Event	T6	çekilmeye	EVENT	285
+Event	T7	zorlandıktan	EVENT	295
+Event	T8	Savaşı'nı	EVENT	345
+Event	T9	kaldılar	EVENT	426
+Event	T10	ateşkes	EVENT	391
+Relation	T0	T5	NoRel	true	muharebe	Devrim
+Relation	T10	T2	NoRel	true	ateşkes	erdiren
+Relation	T3	T4	NoRel	true	bulunmak	HOHENLINDEN MUHAREBESI
+Relation	T4	T6	NoRel	true	HOHENLINDEN MUHAREBESI	çekilmeye
+Relation	T7	T8	NoRel	true	zorlandıktan	Savaşı'nı
+Relation	T9	T0	NoRel	true	kaldılar	muharebe
+Relation	T9	T2	NoRel	true	kaldılar	erdiren

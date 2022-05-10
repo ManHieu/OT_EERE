@@ -1,0 +1,12 @@
+Text	Bunu fırsat bilen Karçakay Han’ın emri altındaki İran ordusu Bağdad’ı kuşattı .	Üç ay süreyle şiddetli bir savunma savaşı veren Bekir Subaşı , oğlunun ihanet edip , kale kapılarını açması sebebiyle esir düştü ve Bağdad Safeviler tarafından işgal edildi ( 28 Kasım 1623 ) .	Şii olmayı kabul etmeyen Bekir Paşa yedi gün İşkence yapıldıktan sonra , Dicle üzerinde petrol dolu bir kayığa bindirilip yakıldı .	Bağdad kadısı Ömer Nuri Efendi , Ulu Cami hatibi Mehmed Efendi , yüzlerce Osmanlı subay ve memuru , sünni eşraf aynı akıbete uğradı .	Kadınlar ve kızlar İran umumhanelerine gönderildi .
+Event	T0	kuşattı	EVENT	70
+Event	T1	açması	EVENT	181
+Event	T2	düştü	EVENT	203
+Event	T3	edildi	EVENT	246
+Event	T4	yakıldı	EVENT	395
+Event	T5	uğradı	EVENT	530
+Event	T6	gönderildi	EVENT	578
+Event	T7	veren	EVENT	122
+Event	T8	İşkence	EVENT	318
+Relation	T1	T5	NoRel	true	açması	uğradı
+Relation	T2	T0	NoRel	true	düştü	kuşattı

@@ -1,0 +1,36 @@
+Text	El área fue despejada de manifestantes por la policía de Seattle el 1 de julio de 2020 después de que la alcaldesa emitió una orden ejecutiva .	Capitol Hill es un distrito en el centro de Seattle .	El distrito fue previamente el centro de otras protestas masivas , como las manifestaciones contra la cumbre de la OMC en Seattle en 1999 .	El 29 de mayo de 2020 , comenzaron las protestas en Seattle tras el asesinato de George Floyd .	Después de días de protestas en conmemoración a George Floyd y condenando la brutalidad policial fuera del Recinto Este del departamento de policía de Seattle , la alcaldesa Jenny Durkan anunció su intento de " reducir las interacciones " y limitar la presencia policial en el barrio de Capitol Hill .
+Event	T0	despejada	EVENT	12
+Event	T1	emitió	EVENT	115
+Event	T2	ejecutiva	EVENT	132
+Event	T3	protestas	EVENT	245
+Event	T4	manifestaciones	EVENT	274
+Event	T5	cumbre	EVENT	300
+Event	T6	comenzaron	EVENT	362
+Event	T7	protestas	EVENT	377
+Event	T8	asesinato	EVENT	406
+Event	T9	conmemoración	EVENT	466
+Event	T10	condenando	EVENT	497
+Event	T11	brutalidad	EVENT	511
+Event	T12	anunció	EVENT	621
+Event	T13	intento	EVENT	632
+Event	T14	reducir	EVENT	645
+Event	T15	interacciones	EVENT	657
+Event	T16	limitar	EVENT	675
+Event	T17	presencia	EVENT	686
+Relation	T8	T7	SuperSub	true	asesinato	protestas
+Relation	T7	T8	SubSuper	true	protestas	asesinato
+Relation	T1	T15	NoRel	true	emitió	interacciones
+Relation	T10	T1	NoRel	true	condenando	emitió
+Relation	T10	T17	NoRel	true	condenando	presencia
+Relation	T13	T16	NoRel	true	intento	limitar
+Relation	T13	T5	NoRel	true	intento	cumbre
+Relation	T14	T0	NoRel	true	reducir	despejada
+Relation	T14	T17	NoRel	true	reducir	presencia
+Relation	T15	T13	NoRel	true	interacciones	intento
+Relation	T15	T16	NoRel	true	interacciones	limitar
+Relation	T16	T2	NoRel	true	limitar	ejecutiva
+Relation	T17	T11	NoRel	true	presencia	brutalidad
+Relation	T3	T15	NoRel	true	protestas	interacciones
+Relation	T4	T12	NoRel	true	manifestaciones	anunció
+Relation	T6	T0	NoRel	true	comenzaron	despejada
+Relation	T8	T1	NoRel	true	asesinato	emitió

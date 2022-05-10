@@ -1,0 +1,46 @@
+Text	It was gradually becoming apparent that the British would not be able to make the hook - up with the 3rd Canadian Infantry Division necessary to protect its right flank in an immediate assault on Caen .	Troops of the King 's Shropshire Light Infantry continued down the Hermanville - Caen road , reaching Biéville - Beuville , close to Caen , but were supported by only a few self - propelled guns , their flanks exposed .	The issue was fully rendered moot when , on the afternoon of 6 June , the 21st Panzer Division , based around Caen , launched the only major German counterattack of D - Day .	The 21st Panzer Division , with its formidable inventory of some 127 Panzer IV tanks , was intended for use as a rapid response force ; on the morning of 6 June , however , its commander , _ Generalmajor _ Edgar Feuchtinger , was in Paris , and Rommel was in Germany .	The division was unable to finalize orders and preparations for a counterattack until late in the day .
+Event	T0	apparent	EVENT	26
+Event	T1	make	EVENT	73
+Event	T2	protect	EVENT	145
+Event	T3	assault	EVENT	185
+Event	T4	reaching	EVENT	296
+Event	T5	supported	EVENT	352
+Event	T6	exposed	EVENT	413
+Event	T7	issue	EVENT	427
+Event	T8	moot	EVENT	452
+Event	T9	launched	EVENT	540
+Event	T10	counterattack	EVENT	571
+Event	T11	intended	EVENT	689
+Event	T12	use	EVENT	702
+Event	T13	orders	EVENT	903
+Event	T14	counterattack	EVENT	933
+Event	T15	close	EVENT	327
+Event	T16	down	EVENT	261
+Event	T17	based around	EVENT	520
+Event	T18	rendered	EVENT	443
+Event	T19	rapid response	EVENT	711
+Event	T20	preparations	EVENT	914
+Relation	T16	T4	SuperSub	true	down	reaching
+Relation	T4	T16	SubSuper	true	reaching	down
+Relation	T4	T15	SuperSub	true	reaching	close
+Relation	T15	T4	SubSuper	true	close	reaching
+Relation	T15	T5	SuperSub	true	close	supported
+Relation	T5	T15	SubSuper	true	supported	close
+Relation	T10	T15	NoRel	true	counterattack	close
+Relation	T10	T5	NoRel	true	counterattack	supported
+Relation	T14	T11	NoRel	true	counterattack	intended
+Relation	T16	T10	NoRel	true	down	counterattack
+Relation	T17	T7	NoRel	true	based around	issue
+Relation	T2	T13	NoRel	true	protect	orders
+Relation	T2	T18	NoRel	true	protect	rendered
+Relation	T2	T20	NoRel	true	protect	preparations
+Relation	T20	T15	NoRel	true	preparations	close
+Relation	T3	T12	NoRel	true	assault	use
+Relation	T3	T13	NoRel	true	assault	orders
+Relation	T3	T16	NoRel	true	assault	down
+Relation	T4	T19	NoRel	true	reaching	rapid response
+Relation	T5	T14	NoRel	true	supported	counterattack
+Relation	T5	T16	NoRel	true	supported	down
+Relation	T6	T1	NoRel	true	exposed	make
+Relation	T7	T2	NoRel	true	issue	protect
+Relation	T9	T3	NoRel	true	launched	assault

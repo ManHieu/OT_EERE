@@ -1,0 +1,50 @@
+Text	Seeing Spencer 's progress in subduing the terrorist , Alek , Anthony , and other passengers join the effort to try to further overwhelm the terrorist , finally knocking him out .	Spencer then stanches the bleeding by plugging the exit wound in Moogalian 's neck with his fingers .	The police at the next station enter the train fully armed , discovering that Spencer has subdued the terrorist , and the paramedics begin to treat his wounds and the more serious ones of the shot passenger .	Paramedics take Moogalian to the emergency room at a local hospital and he survives .	In a formal ceremony , Spencer , Alek and Anthony are recognized as heroes of France for their gallantry and bravery .
+Event	T0	Seeing	EVENT	0
+Event	T1	progress	EVENT	18
+Event	T10	wound	EVENT	236
+Event	T11	enter	EVENT	313
+Event	T12	armed	EVENT	335
+Event	T13	discovering	EVENT	343
+Event	T14	subdued	EVENT	372
+Event	T15	begin	EVENT	415
+Event	T16	treat	EVENT	424
+Event	T17	wounds	EVENT	434
+Event	T18	shot	EVENT	474
+Event	T19	take	EVENT	502
+Event	T2	subduing	EVENT	30
+Event	T20	survives	EVENT	566
+Event	T21	recognized	EVENT	631
+Event	T22	bravery	EVENT	686
+Event	T23	knocking	EVENT	161
+Event	T3	join	EVENT	93
+Event	T5	try	EVENT	112
+Event	T6	overwhelm	EVENT	127
+Event	T7	stanches	EVENT	193
+Event	T8	bleeding	EVENT	206
+Event	T9	plugging	EVENT	218
+Relation	T0	T20	NoRel	true	Seeing	survives
+Relation	T0	T5	NoRel	true	Seeing	try
+Relation	T1	T12	NoRel	true	progress	armed
+Relation	T1	T16	NoRel	true	progress	treat
+Relation	T10	T11	NoRel	true	wound	enter
+Relation	T10	T7	NoRel	true	wound	stanches
+Relation	T11	T7	NoRel	true	enter	stanches
+Relation	T13	T2	NoRel	true	discovering	subduing
+Relation	T13	T3	NoRel	true	discovering	join
+Relation	T13	T7	NoRel	true	discovering	stanches
+Relation	T14	T0	NoRel	true	subdued	Seeing
+Relation	T15	T17	NoRel	true	begin	wounds
+Relation	T15	T19	NoRel	true	begin	take
+Relation	T17	T21	NoRel	true	wounds	recognized
+Relation	T18	T11	NoRel	true	shot	enter
+Relation	T18	T2	NoRel	true	shot	subduing
+Relation	T19	T17	NoRel	true	take	wounds
+Relation	T19	T8	NoRel	true	take	bleeding
+Relation	T21	T5	NoRel	true	recognized	try
+Relation	T22	T16	NoRel	true	bravery	treat
+Relation	T22	T19	NoRel	true	bravery	take
+Relation	T5	T2	NoRel	true	try	subduing
+Relation	T6	T13	NoRel	true	overwhelm	discovering
+Relation	T7	T11	NoRel	true	stanches	enter
+Relation	T7	T21	NoRel	true	stanches	recognized
+Relation	T8	T7	NoRel	true	bleeding	stanches

@@ -1,0 +1,17 @@
+Text	sağ | küçükresim | 250px | Şehitliğin tören alanı TEKKE BAHÇESI ŞEHITLIĞI , Lefkoşa'nın kuzeyinde yer alan askerî bir mezarlık .	21 Aralık 1963'te başlayan toplumlararası çatışmalardan sonra inşa edilen ilk şehitlik alanıdır .	Şehitlik adını batısında bulunduğu Lefkoşa Mevlevihanesi'nden almaktadır .	Şehitliğe ilk kez Ocak 1964'te Ayvasıl ( Türkeli ) katliamında öldüğüne inanılan 24 kişi , kimlik tespiti yapılmadan defnedilmişti .	Şehitlik ilerleyen yıllarda Lefkoşa çevresinde öldürülen Kıbrıslı Türkleri defnetmek için kullanılmıştır .
+Event	T0	başlayan	EVENT	147
+Event	T1	çatışmalardan	EVENT	171
+Event	T2	inşa	EVENT	191
+Event	T3	öldüğüne	EVENT	365
+Event	T4	tespiti	EVENT	400
+Event	T5	defnedilmişti	EVENT	419
+Event	T6	öldürülen	EVENT	482
+Event	T7	defnetmek	EVENT	510
+Event	T8	kullanılmıştır	EVENT	525
+Event	T9	katliamında	EVENT	353
+Relation	T2	T1	NoRel	true	inşa	çatışmalardan
+Relation	T6	T4	NoRel	true	öldürülen	tespiti
+Relation	T6	T5	NoRel	true	öldürülen	defnedilmişti
+Relation	T7	T9	NoRel	true	defnetmek	katliamında
+Relation	T8	T0	NoRel	true	kullanılmıştır	başlayan
+Relation	T9	T7	NoRel	true	katliamında	defnetmek

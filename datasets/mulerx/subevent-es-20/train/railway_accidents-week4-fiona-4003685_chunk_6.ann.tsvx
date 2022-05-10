@@ -1,0 +1,20 @@
+Text	Tras la salida del cercanías un grupo de unas treinta personas optó por cruzar por las vías a pie .	A esa misma hora , tenía previsto recorrer sin parada por la otra vía un tren de viajeros de larga distancia Alaris 1202 procedente de Alicante y con destino Barcelona .	Era un Serie 490 de Renfe , que circulaba en hora a una velocidad de 139 km/h , inferior a la permitida de 150 km/h .	El Alaris se cruzó a unos ciento cincuenta metros del apeadero con el cercanías que salía en dirección contraria , por lo que bajó la intensidad de los focos para no deslumbrar al otro tren , según declaraciones del propio maquinista .	A las 23:23 llegó al apeadero y descubrió al grupo de personas cruzando la vía , por lo que activó la bocina y el freno de emergencia .
+Event	T0	salida	EVENT	8
+Event	T1	optó	EVENT	63
+Event	T2	cruzar	EVENT	72
+Event	T3	recorrer	EVENT	134
+Event	T4	parada	EVENT	147
+Event	T5	circulaba	EVENT	302
+Event	T6	cruzó	EVENT	401
+Event	T7	bajó	EVENT	514
+Event	T9	declaraciones	EVENT	586
+Event	T10	llegó	EVENT	636
+Event	T11	descubrió	EVENT	656
+Event	T12	cruzando	EVENT	687
+Event	T13	activó	EVENT	716
+Relation	T10	T3	NoRel	true	llegó	recorrer
+Relation	T4	T2	NoRel	true	parada	cruzar
+Relation	T4	T9	NoRel	true	parada	declaraciones
+Relation	T6	T0	NoRel	true	cruzó	salida
+Relation	T6	T5	NoRel	true	cruzó	circulaba
+Relation	T9	T0	NoRel	true	declaraciones	salida

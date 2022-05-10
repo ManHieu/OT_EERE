@@ -1,0 +1,30 @@
+Text	Las imágenes revelaban que el avión se estrelló contra el suelo e inmediatamente estalló en llamas .	La fiscalía rusa inició un proceso penal por presuntas violaciones a las normas de seguridad de tránsito aéreo .	Se encontraron informes de que se le había prohibido a la aerolínea operar rutas internacionales en 2015 , y que estas se reanudaron en 2016 después de un cambio en las políticas .	El Servicio Federal Ruso para la Supervisión del Transporte ( Rostransnadzor ) declaró que durante un examen al avión siniestrado , la aerolínea había violado los procedimientos para cambiar el aceite en las cajas de cambio , y para lavar el filtro de arranque de aire .	De acuerdo con el manifiesto de vuelo , en el avión viajaban 65 pasajeros y 6 miembros de la tripulación .
+Event	T0	revelaban	EVENT	13
+Event	T1	estrelló	EVENT	39
+Event	T2	inició	EVENT	118
+Event	T3	penal	EVENT	136
+Event	T4	violaciones	EVENT	156
+Event	T5	informes	EVENT	229
+Event	T6	prohibido	EVENT	257
+Event	T7	operar	EVENT	282
+Event	T8	reanudaron	EVENT	336
+Event	T9	cambio	EVENT	369
+Event	T10	declaró	EVENT	474
+Event	T11	examen	EVENT	497
+Event	T12	siniestrado	EVENT	513
+Event	T13	violado	EVENT	546
+Event	T14	procedimientos	EVENT	558
+Event	T15	cambiar	EVENT	578
+Event	T16	lavar	EVENT	628
+Event	T17	arranque	EVENT	647
+Event	T18	vuelo	EVENT	698
+Relation	T10	T1	NoRel	true	declaró	estrelló
+Relation	T11	T16	NoRel	true	examen	lavar
+Relation	T15	T5	NoRel	true	cambiar	informes
+Relation	T16	T18	NoRel	true	lavar	vuelo
+Relation	T18	T0	NoRel	true	vuelo	revelaban
+Relation	T2	T7	NoRel	true	inició	operar
+Relation	T5	T10	NoRel	true	informes	declaró
+Relation	T7	T3	NoRel	true	operar	penal
+Relation	T8	T9	NoRel	true	reanudaron	cambio
+Relation	T9	T3	NoRel	true	cambio	penal

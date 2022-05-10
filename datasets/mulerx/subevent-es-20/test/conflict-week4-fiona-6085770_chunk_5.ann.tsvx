@@ -1,0 +1,29 @@
+Text	Montenegro tomó Scutari ese mismo día pero , cuando la guerra hubo terminado , las grandes potencias se la arrebataron ; Montenegro fue obligado a evacuarla en mayo de 1913 , según lo decidido en la Conferencia de Embajadores celebrada en Londres ( llamada « conferencia de Londres » ) .	La presencia de una pequeña flotilla naval de cañoneras británicas e italianas que recorría el río Bojana y la costa del Adriático aceleró la retirada montenegrina .	Antes de la declaración de la independencia de Albania en Vlorë , el Ejército griego controlaba parte del territorio que más tarde se incorporaría al Estado albanés .	El 18 de noviembre de 1912 , después de una revuelta exitosa y diez días antes de la declaración de independencia de Albania , el mayor Spyros Spyromilios expulsó a los otomanos de la región de Himara .	La Armada griega también bombardeó la ciudad de Vlorë el 3 de diciembre de 1912 .
+Event	T0	tomó	EVENT	11
+Event	T1	guerra	EVENT	55
+Event	T2	terminado	EVENT	67
+Event	T3	arrebataron	EVENT	107
+Event	T4	obligado	EVENT	136
+Event	T5	evacuarla	EVENT	147
+Event	T6	decidido	EVENT	184
+Event	T7	celebrada	EVENT	226
+Event	T8	presencia	EVENT	291
+Event	T9	recorría	EVENT	371
+Event	T10	aceleró	EVENT	419
+Event	T11	retirada	EVENT	430
+Event	T12	declaración	EVENT	466
+Event	T13	independencia	EVENT	484
+Event	T14	controlaba	EVENT	539
+Event	T15	incorporaría	EVENT	588
+Event	T16	declaración	EVENT	706
+Event	T17	expulsó	EVENT	776
+Event	T18	bombardeó	EVENT	849
+Relation	T10	T15	NoRel	true	aceleró	incorporaría
+Relation	T11	T6	NoRel	true	retirada	decidido
+Relation	T12	T6	NoRel	true	declaración	decidido
+Relation	T14	T5	NoRel	true	controlaba	evacuarla
+Relation	T15	T5	NoRel	true	incorporaría	evacuarla
+Relation	T16	T2	NoRel	true	declaración	terminado
+Relation	T17	T16	NoRel	true	expulsó	declaración
+Relation	T17	T8	NoRel	true	expulsó	presencia
+Relation	T4	T9	NoRel	true	obligado	recorría

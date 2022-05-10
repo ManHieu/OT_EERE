@@ -1,0 +1,25 @@
+Text	Rus hükûmeti ise bölgede IŞİD ve IŞİD destekçisi gruplar olduğunu iddia ederek Esad hükûmetinin gerçekleştirdiği operasyona doğrudan destek verdi .	küçükresim | 300px| Olayın ardından Türk Silahlı Kuvvetleri Genelkurmay Başkanlığı resmi sitesinden radar iz haritası yayınlanmış , haritada maviyle gösterilen hat Türkiye sınırı , kırmızı hat ise Rus uçağının Türkiye sınırını ihlal ederek izlediği yol olup , Türkiye sınırları içinde Türk F- 16'larınca vurulmuş .	Söz konusu sınır ihlâlinin giriş ve çıkış noktaları da pembe ile gösterilmiş .	küçükresim | 300px | Harita , Rusya Savunma Bakanlığı tarafından yayınlandı .	İddiaya göre haritadaki kırmızı çizgi Rus Su - 24M'lerin takip ettiği güzergahı ve mavi çizgi ise Türk F-16'ların takip ettiği güzergahı göstermektedir .
+Event	T0	operasyona	EVENT	113
+Event	T1	verdi	EVENT	140
+Event	T2	Olayın	EVENT	168
+Event	T3	yayınlanmış	EVENT	266
+Event	T4	ihlal	EVENT	375
+Event	T5	izlediği	EVENT	388
+Event	T6	vurulmuş	EVENT	452
+Event	T7	gösterilmiş	EVENT	528
+Event	T8	yayınlandı	EVENT	607
+Event	T9	takip	EVENT	734
+Event	T10	göstermektedir	EVENT	757
+Event	T11	gösterilen	EVENT	297
+Event	T12	iddia	EVENT	66
+Event	T13	ihlâlinin	EVENT	480
+Event	T14	İddiaya	EVENT	620
+Relation	T3	T11	SuperSub	true	yayınlanmış	gösterilen
+Relation	T11	T3	SubSuper	true	gösterilen	yayınlanmış
+Relation	T8	T7	SuperSub	true	yayınlandı	gösterilmiş
+Relation	T7	T8	SubSuper	true	gösterilmiş	yayınlandı
+Relation	T1	T3	NoRel	true	verdi	yayınlanmış
+Relation	T11	T5	NoRel	true	gösterilen	izlediği
+Relation	T3	T9	NoRel	true	yayınlanmış	takip
+Relation	T6	T2	NoRel	true	vurulmuş	Olayın
+Relation	T8	T9	NoRel	true	yayınlandı	takip

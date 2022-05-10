@@ -1,0 +1,34 @@
+Text	Poco después de que el vuelo 967 impactara el agua , las señales de radiobaliza , conocidas como transmisor de localización de emergencia ( ELT ) , comenzaron a sonar .	La BEA francesa recuperó la grabadora de voz de cabina ( CVR ) y la grabadora de datos de vuelo ( FDR ) sumergidas en el Mar Negro y descubrió que solo había daños menores en ambas grabadoras .	Posteriormente , la BEA examinó tanto el CVR como el FDR .	Según el examen , el vuelo transcurrió sin incidentes hasta la aproximación .	Sin embargo , durante la etapa de crucero del vuelo , el primer oficial Davtyan declaró : " es improperio quién opera esos vuelos con el nerviosismo y sin dormir lo suficiente " .
+Event	T0	vuelo	EVENT	23
+Event	T1	impactara	EVENT	33
+Event	T2	comenzaron	EVENT	148
+Event	T3	sonar	EVENT	161
+Event	T4	recuperó	EVENT	185
+Event	T5	sumergidas	EVENT	273
+Event	T6	descubrió	EVENT	302
+Event	T7	daños	EVENT	327
+Event	T8	examinó	EVENT	387
+Event	T9	examen	EVENT	431
+Event	T10	transcurrió	EVENT	449
+Event	T11	incidentes	EVENT	465
+Event	T12	aproximación	EVENT	485
+Event	T13	etapa	EVENT	525
+Event	T14	crucero	EVENT	534
+Event	T15	vuelo	EVENT	546
+Event	T16	declaró	EVENT	580
+Event	T17	opera	EVENT	612
+Relation	T1	T2	SuperSub	true	impactara	comenzaron
+Relation	T2	T1	SubSuper	true	comenzaron	impactara
+Relation	T0	T9	NoRel	true	vuelo	examen
+Relation	T11	T9	NoRel	true	incidentes	examen
+Relation	T12	T0	NoRel	true	aproximación	vuelo
+Relation	T13	T1	NoRel	true	etapa	impactara
+Relation	T14	T0	NoRel	true	crucero	vuelo
+Relation	T14	T10	NoRel	true	crucero	transcurrió
+Relation	T14	T2	NoRel	true	crucero	comenzaron
+Relation	T15	T11	NoRel	true	vuelo	incidentes
+Relation	T3	T4	NoRel	true	sonar	recuperó
+Relation	T3	T5	NoRel	true	sonar	sumergidas
+Relation	T4	T6	NoRel	true	recuperó	descubrió
+Relation	T4	T9	NoRel	true	recuperó	examen
+Relation	T7	T13	NoRel	true	daños	etapa

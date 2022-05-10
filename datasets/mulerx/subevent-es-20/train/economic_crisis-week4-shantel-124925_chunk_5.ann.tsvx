@@ -1,0 +1,30 @@
+Text	Gracias al embargo se consiguió este objetivo .	El control del gobierno estadounidense , pensado para mantener el precio a unos niveles aceptables , acabó aumentando el impacto económico debido a los cortes de suministro .	Como consecuencia , se inició una prolongada recesión y aumentó notablemente la inflación .	Esta situación duraría hasta principios de los años 80 .	Los efectos del embargo son claros : se duplicó el precio real del crudo a la entrada de la refinería y se produjeron cortes de suministro .
+Event	T0	embargo	EVENT	11
+Event	T1	consiguió	EVENT	22
+Event	T2	control	EVENT	51
+Event	T3	pensado	EVENT	89
+Event	T4	aumentando	EVENT	155
+Event	T5	impacto	EVENT	169
+Event	T6	cortes	EVENT	200
+Event	T7	inició	EVENT	246
+Event	T8	recesión	EVENT	268
+Event	T9	aumentó	EVENT	279
+Event	T10	inflación	EVENT	303
+Event	T11	duraría	EVENT	330
+Event	T12	efectos	EVENT	376
+Event	T13	embargo	EVENT	388
+Event	T14	duplicó	EVENT	412
+Event	T16	cortes	EVENT	490
+Relation	T10	T2	NoRel	true	inflación	control
+Relation	T10	T4	NoRel	true	inflación	aumentando
+Relation	T11	T12	NoRel	true	duraría	efectos
+Relation	T14	T2	NoRel	true	duplicó	control
+Relation	T3	T1	NoRel	true	pensado	consiguió
+Relation	T3	T5	NoRel	true	pensado	impacto
+Relation	T4	T11	NoRel	true	aumentando	duraría
+Relation	T5	T1	NoRel	true	impacto	consiguió
+Relation	T5	T10	NoRel	true	impacto	inflación
+Relation	T6	T2	NoRel	true	cortes	control
+Relation	T7	T8	NoRel	true	inició	recesión
+Relation	T8	T9	NoRel	true	recesión	aumentó
+Relation	T9	T6	NoRel	true	aumentó	cortes

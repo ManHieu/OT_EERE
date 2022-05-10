@@ -1,0 +1,28 @@
+Text	Dahası , Kutsal Roma Cermen İmparatorluğu 1525 - 1555 arasında Katolikler ve Lutherciler arasındaki iç savaş sonucunda kendi içinde dahi önemli bir sarsıntıya uğramıştı .	Diğer taraftan , 1550- 1562 savaşı Osmanlı İmparatorluğu'nun Macaristan'da geniş topraklar fethettikleri son savaş oldu .	Esasen 1552'de Eğri'de , 1556'da ise Zigetvar'da sinyallerini veren duraklama , 1566 - 1568 , 1593 - 1606 ve 1663 - 64 savaşlarında genel bir kurala dönüştü ve Osmanlılar çok büyük fedakarlıklara katlandıkları bu üç savaş sonucunda sadece dört büyük kalenin ( Zigetvar , Eğri , Kanije ve Uyvar ) fethiyle yetindiler .	Öte yandan , 1550- 1562 Savaşında Osmanlılar Akdeniz'de İspanya Krallığı ve bağlaşıkları Ceneviz Cumhuriyeti , Napoli Krallığı , Floransa Dükalığı ve Malta Şövalyeleri'yle de eşzamanlı olarak harp ettiler ve mücadeleyi tamamen Batı Akdeniz'e taşıdılar .	Bu suretle , Savaş boyunca özellikle Cerbe Zaferi'yle ( 1560 ) İnebahtı yenilgisine ( 1571 ) kadarki üstünlüklerini pekiştirdiler .
+Event	T0	savaş	EVENT	103
+Event	T1	uğramıştı	EVENT	159
+Event	T2	fethettikleri	EVENT	262
+Event	T3	dönüştü	EVENT	442
+Event	T4	katlandıkları	EVENT	489
+Event	T5	savaş	EVENT	509
+Event	T6	yetindiler	EVENT	598
+Event	T7	taşıdılar	EVENT	853
+Event	T8	yenilgisine	EVENT	937
+Event	T9	pekiştirdiler	EVENT	981
+Event	T10	savaşı	EVENT	199
+Event	T11	duraklama	EVENT	361
+Event	T12	Savaşında	EVENT	635
+Event	T13	ettiler	EVENT	808
+Event	T14	Savaş	EVENT	878
+Event	T15	Cerbe Zaferi'yle	EVENT	902
+Relation	T0	T14	NoRel	true	savaş	Savaş
+Relation	T10	T11	NoRel	true	savaşı	duraklama
+Relation	T12	T10	NoRel	true	Savaşında	savaşı
+Relation	T13	T9	NoRel	true	ettiler	pekiştirdiler
+Relation	T2	T8	NoRel	true	fethettikleri	yenilgisine
+Relation	T3	T12	NoRel	true	dönüştü	Savaşında
+Relation	T3	T6	NoRel	true	dönüştü	yetindiler
+Relation	T4	T9	NoRel	true	katlandıkları	pekiştirdiler
+Relation	T9	T3	NoRel	true	pekiştirdiler	dönüştü
+Relation	T9	T4	NoRel	true	pekiştirdiler	katlandıkları
+Relation	T9	T5	NoRel	true	pekiştirdiler	savaş

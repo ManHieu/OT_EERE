@@ -1,0 +1,26 @@
+Text	Azerbaycan Cumhurbaşkanı İlham Aliyev ve Cumhurbaşkanı Yardımcısı Mehriban Aliyeva , Türkiye cumhurbaşkanı Recep Tayyip Erdoğan ve ülkedeki diğer siyasiler , Azerbaycan'daki yabancı büyükelçiliklerin yanı sıra uluslararası kuruluşlar da kurbanlara taziyelerini iletti .	Olay , Azerbaycan ile Ermenistan arasında geçen yıl Karabağ'da gerçekleşen savaştan bu yana yaşanan en kanlı çatışmadan iki hafta sonra gerçekleşmiştir .	1994 yılında sona eren birinci savaştan sonra Dağlık Karabağ ve çevresi Ermenistan Silahlı Kuvvetleri tarafından işgal edilmiştir .	İkinci Karabağ Savaşı sonucunda 6 binden fazla insan hayatını kaybetti ve Kasım ayında Azerbaycan zafer ilan etti .	Rusya'nın arabuluculuğunda imzalanan ateşkes bildirisine göre , Karabağ'ın bir kısmı Azerbaycan'a geri verildi ve Azerbaycan geçmiş Dağlık Karabağ Özerk Oblastı sınırları içindeki arazilerde yaptığı ilerilemeleri korudu .
+Event	T0	iletti	EVENT	261
+Event	T1	Olay	EVENT	270
+Event	T2	savaştan	EVENT	345
+Event	T3	yaşanan	EVENT	362
+Event	T4	çatışmadan	EVENT	379
+Event	T5	gerçekleşmiştir	EVENT	406
+Event	T6	edilmiştir	EVENT	543
+Event	T8	kaybetti	EVENT	618
+Event	T9	etti	EVENT	665
+Event	T11	verildi	EVENT	775
+Event	T12	korudu	EVENT	885
+Event	T13	arabuluculuğunda	EVENT	682
+Event	T10	imzalanan	EVENT	699
+Event	T7	İkinci Karabağ Savaşı	EVENT	556
+Event	T14	savaştan	EVENT	455
+Relation	T14	T6	SuperSub	true	savaştan	edilmiştir
+Relation	T6	T14	SubSuper	true	edilmiştir	savaştan
+Relation	T11	T14	NoRel	true	verildi	savaştan
+Relation	T12	T2	NoRel	true	korudu	savaştan
+Relation	T13	T14	NoRel	true	arabuluculuğunda	savaştan
+Relation	T13	T4	NoRel	true	arabuluculuğunda	çatışmadan
+Relation	T14	T11	NoRel	true	savaştan	verildi
+Relation	T14	T8	NoRel	true	savaştan	kaybetti
+Relation	T6	T4	NoRel	true	edilmiştir	çatışmadan
+Relation	T8	T3	NoRel	true	kaybetti	yaşanan

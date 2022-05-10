@@ -1,0 +1,32 @@
+Text	- — El presidente de Ucrania , Petró Poroshenko , calificó de « atentado terrorista » el derribo del avión .	Ciudadanos ucranianos marcharon y colocaron flores en apoyo a los fallecidos en las embajadas de Malasia y los Países Bajos en Kiev .	El presidente ucraniano dijo en una entrevista a Christiane Amanpour , de _ CNN _ , que no vio « ninguna diferencia entre los ataques del 11 de septiembre de 2001 en Nueva York , el bombardeo de Lockerbie y el ataque al vuelo 17 » .	También pidió la « solidaridad internacional » en contra de los prorrusos .	- — El consejo de Seguridad de la ONU anunció la celebración de una reunión con carácter de emergencia el 18 de julio para abordar la situación en Ucrania .
+Event	T0	calificó	EVENT	50
+Event	T1	atentado	EVENT	64
+Event	T2	derribo	EVENT	89
+Event	T3	marcharon	EVENT	131
+Event	T4	colocaron	EVENT	143
+Event	T5	fallecidos	EVENT	175
+Event	T6	dijo	EVENT	267
+Event	T7	entrevista	EVENT	279
+Event	T8	ataques	EVENT	369
+Event	T9	bombardeo	EVENT	425
+Event	T10	ataque	EVENT	453
+Event	T11	anunció	EVENT	590
+Event	T12	celebración	EVENT	601
+Event	T13	reunión	EVENT	620
+Event	T14	emergencia	EVENT	644
+Event	T15	abordar	EVENT	675
+Relation	T2	T0	SuperSub	true	derribo	calificó
+Relation	T0	T2	SubSuper	true	calificó	derribo
+Relation	T5	T3	SuperSub	true	fallecidos	marcharon
+Relation	T3	T5	SubSuper	true	marcharon	fallecidos
+Relation	T5	T4	SuperSub	true	fallecidos	colocaron
+Relation	T4	T5	SubSuper	true	colocaron	fallecidos
+Relation	T1	T5	NoRel	true	atentado	fallecidos
+Relation	T11	T0	NoRel	true	anunció	calificó
+Relation	T13	T3	NoRel	true	reunión	marcharon
+Relation	T15	T0	NoRel	true	abordar	calificó
+Relation	T15	T4	NoRel	true	abordar	colocaron
+Relation	T5	T6	NoRel	true	fallecidos	dijo
+Relation	T6	T8	NoRel	true	dijo	ataques
+Relation	T8	T3	NoRel	true	ataques	marcharon
+Relation	T9	T10	NoRel	true	bombardeo	ataque

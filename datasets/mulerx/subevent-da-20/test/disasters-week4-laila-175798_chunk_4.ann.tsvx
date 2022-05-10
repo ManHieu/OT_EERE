@@ -1,0 +1,29 @@
+Text	For de vestallierede var koncentrationen af deres militær rettet mod Ruhrområdet .	Det var naturligt for de allierede at udnytte den overlegenhed , de besad i luftrummet til at forberede den militære indmarch på landjorden .	Angrebene var rettet mod militær- og infrastruktur og mod_forvaltningsenheder samt produktionssteder for at ødelægge moralen blandt befolkning og politikere .	Talrige store som små tyske byer blev derfor udsat for bombardementer i marts og april 1945 .	Fra sommeren 1944 havde den britiske _ Bomber Command _ planlagt at rette et angreb for at stække den tyske befolkning udholdenhed og modstandsdygtighed endeligt .	
+Event	T0	koncentrationen	EVENT	25
+Event	T1	udnytte	EVENT	121
+Event	T2	besad	EVENT	151
+Event	T3	forberede	EVENT	177
+Event	T4	indmarch	EVENT	200
+Event	T5	Angrebene	EVENT	225
+Event	T6	rettet	EVENT	239
+Event	T7	ødelægge	EVENT	333
+Event	T8	udsat	EVENT	429
+Event	T9	bombardementer	EVENT	439
+Event	T10	rette	EVENT	546
+Event	T11	angreb	EVENT	555
+Event	T12	stække	EVENT	569
+Event	T13	rettet	EVENT	58
+Event	T14	planlagt	EVENT	534
+Relation	T0	T9	NoRel	true	koncentrationen	bombardementer
+Relation	T10	T0	NoRel	true	rette	koncentrationen
+Relation	T10	T12	NoRel	true	rette	stække
+Relation	T11	T13	NoRel	true	angreb	rettet
+Relation	T11	T7	NoRel	true	angreb	ødelægge
+Relation	T13	T11	NoRel	true	rettet	angreb
+Relation	T14	T3	NoRel	true	planlagt	forberede
+Relation	T2	T0	NoRel	true	besad	koncentrationen
+Relation	T2	T13	NoRel	true	besad	rettet
+Relation	T3	T11	NoRel	true	forberede	angreb
+Relation	T5	T12	NoRel	true	Angrebene	stække
+Relation	T6	T11	NoRel	true	rettet	angreb
+Relation	T7	T12	NoRel	true	ødelægge	stække

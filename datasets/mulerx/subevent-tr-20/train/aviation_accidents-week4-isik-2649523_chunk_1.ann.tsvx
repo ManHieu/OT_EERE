@@ -1,0 +1,14 @@
+Text	Uçak hasar gördü lakin hala iniş takımlarının üstündeydi .	514 sefer sayılı uçuşun mürettebatı daha sonra yaptıkları için takdir edildi .	Uçak kazanın ardından başarıyla onarıldı ve havalimanından Alrosa tarafından kullanılmaya devam etmek üzere kalktı .	514 sefer sayılı uçuşta sorunun ilk belirtileri yerel saatle 06: 59'da ( 02 : 59 UTC ) fark edildiğinde 10. 600 m ( FL 348 , 34.800 fit ) irtifada ve Usinsk civarındaydılar .	Kısa bir süre sonra , uçakğın elektrik sistemi tamamen arızalandı ve bu da navigasyon ve elektrikli yakıt pompaları gibi sistemlerin devre dışı kalmasıyla sonuçlandı .
+Event	T0	gördü	EVENT	11
+Event	T1	yaptıkları	EVENT	106
+Event	T2	edildi	EVENT	129
+Event	T3	kazanın	EVENT	143
+Event	T4	onarıldı	EVENT	170
+Event	T5	kalktı	EVENT	246
+Event	T6	sorunun	EVENT	279
+Event	T7	belirtileri	EVENT	291
+Event	T9	arızalandı	EVENT	485
+Event	T10	sonuçlandı	EVENT	585
+Relation	T0	T7	NoRel	true	gördü	belirtileri
+Relation	T2	T7	NoRel	true	edildi	belirtileri
+Relation	T7	T5	NoRel	true	belirtileri	kalktı

@@ -1,0 +1,63 @@
+Text	Yeraltından gelen lavların doğrudan deniz suyu ile birleşmesinden kaynaklanan ve şiddetli patlamalar biçiminde oluşan püskürmeler taş ve kaya parçalarını bir kilometre uzaklığa kadar fırlatmış , kül bulutları atmosferde 10 kilometre yüksekliğe ulaşmıştır .	Yeraltından çıkan ve henüz katılaşmamış olan malzemelerin dalgalarca hızla taşınmış olması taze magmanın miktarını azaltmış ve adada bunlardan çıkan büyük kül ve duman bulutları volkanik hareketlenmenin sonuna dek sık sık görülmüştür .	1964 başlarında süregelen püskürmelerden dolayı adanın boyutları iyiden iyiye büyümüştü ve artık deniz suları , lavların yeryüzüne çıktığı noktaya ulaşamıyordu ; bu nedenle deniz suyu ile lavların buluşmasında ortaya çıkan şiddetli patlamalar büyük ölçüde azaldı .	Bunların yerine akan lavlar ve diğer püskürükler , adanın oluşumunda etkili olmaya başladı .	Gevşek volkanik arazinin üzerini büyük ölçüde kaplayan , kraterin etrafı başta olmak üzere adanın büyük bir bölümünde aşınmaya dayanıklı sert bir tabaka oluşunca adanın rüzgâr ya da dalgalar nedeniyle küçülmesini azaldı .
+Event	T1	birleşmesinden	EVENT	51
+Event	T2	patlamalar	EVENT	90
+Event	T3	püskürmeler	EVENT	118
+Event	T4	fırlatmış	EVENT	183
+Event	T5	çıkan	EVENT	269
+Event	T6	çıkan	EVENT	400
+Event	T7	hareketlenmenin	EVENT	444
+Event	T8	görülmüştür	EVENT	479
+Event	T9	püskürmelerden	EVENT	519
+Event	T10	büyümüştü	EVENT	571
+Event	T11	çıktığı	EVENT	624
+Event	T12	patlamalar	EVENT	725
+Event	T13	azaldı	EVENT	749
+Event	T15	azaldı	EVENT	1064
+Event	T16	lavların	EVENT	18
+Event	T17	ulaşmıştır	EVENT	244
+Event	T18	bulutları	EVENT	199
+Event	T19	dalgalarca	EVENT	315
+Event	T20	taşınmış	EVENT	332
+Event	T21	azaltmış	EVENT	372
+Event	T22	ulaşamıyordu	EVENT	640
+Event	T23	buluşmasında	EVENT	690
+Event	T14	başladı	EVENT	841
+Event	T24	lavlar	EVENT	779
+Event	T25	püskürükler	EVENT	795
+Event	T26	oluşunca	EVENT	1004
+Relation	T1	T17	NoRel	true	birleşmesinden	ulaşmıştır
+Relation	T1	T22	NoRel	true	birleşmesinden	ulaşamıyordu
+Relation	T11	T25	NoRel	true	çıktığı	püskürükler
+Relation	T12	T8	NoRel	true	patlamalar	görülmüştür
+Relation	T13	T16	NoRel	true	azaldı	lavların
+Relation	T13	T20	NoRel	true	azaldı	taşınmış
+Relation	T13	T6	NoRel	true	azaldı	çıkan
+Relation	T14	T25	NoRel	true	başladı	püskürükler
+Relation	T15	T19	NoRel	true	azaldı	dalgalarca
+Relation	T16	T20	NoRel	true	lavların	taşınmış
+Relation	T16	T25	NoRel	true	lavların	püskürükler
+Relation	T18	T11	NoRel	true	bulutları	çıktığı
+Relation	T18	T17	NoRel	true	bulutları	ulaşmıştır
+Relation	T19	T10	NoRel	true	dalgalarca	büyümüştü
+Relation	T19	T13	NoRel	true	dalgalarca	azaldı
+Relation	T19	T14	NoRel	true	dalgalarca	başladı
+Relation	T19	T2	NoRel	true	dalgalarca	patlamalar
+Relation	T20	T4	NoRel	true	taşınmış	fırlatmış
+Relation	T21	T24	NoRel	true	azaltmış	lavlar
+Relation	T22	T17	NoRel	true	ulaşamıyordu	ulaşmıştır
+Relation	T22	T20	NoRel	true	ulaşamıyordu	taşınmış
+Relation	T24	T21	NoRel	true	lavlar	azaltmış
+Relation	T25	T12	NoRel	true	püskürükler	patlamalar
+Relation	T25	T20	NoRel	true	püskürükler	taşınmış
+Relation	T25	T9	NoRel	true	püskürükler	püskürmelerden
+Relation	T26	T15	NoRel	true	oluşunca	azaldı
+Relation	T26	T23	NoRel	true	oluşunca	buluşmasında
+Relation	T3	T10	NoRel	true	püskürmeler	büyümüştü
+Relation	T3	T23	NoRel	true	püskürmeler	buluşmasında
+Relation	T6	T1	NoRel	true	çıkan	birleşmesinden
+Relation	T6	T12	NoRel	true	çıkan	patlamalar
+Relation	T7	T14	NoRel	true	hareketlenmenin	başladı
+Relation	T8	T16	NoRel	true	görülmüştür	lavların
+Relation	T8	T4	NoRel	true	görülmüştür	fırlatmış
+Relation	T9	T13	NoRel	true	püskürmelerden	azaldı
+Relation	T9	T21	NoRel	true	püskürmelerden	azaltmış

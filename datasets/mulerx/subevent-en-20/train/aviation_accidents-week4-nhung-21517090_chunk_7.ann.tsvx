@@ -1,0 +1,58 @@
+Text	The airspeed continued to slow to .	Six seconds later , the aircraft 's stick shaker activated , warning of an impending stall , as the speed continued to slow to .	The captain responded by abruptly pulling back on the control column , followed by increasing thrust to 75 % power , instead of lowering the nose and applying full power , which was the proper stall - recovery technique .	That improper action pitched the nose up even further , increasing both the g - load and the stall speed .	The stick pusher activated ( The Q400 stick pusher applies an airplane - nose - down control column input to decrease the wing 's angle of attack ( AOA ) after an aerodynamic stall ) , but the captain overrode the stick pusher and continued pulling back on the control column .
+Event	T0	continued	EVENT	13
+Event	T1	slow	EVENT	26
+Event	T2	activated	EVENT	85
+Event	T3	warning	EVENT	97
+Event	T4	stall	EVENT	121
+Event	T5	continued	EVENT	142
+Event	T6	responded	EVENT	177
+Event	T7	followed	EVENT	236
+Event	T8	thrust	EVENT	259
+Event	T9	lowering	EVENT	293
+Event	T10	applying	EVENT	315
+Event	T11	technique	EVENT	375
+Event	T12	pitched	EVENT	408
+Event	T13	increasing	EVENT	443
+Event	T14	activated	EVENT	511
+Event	T15	applies	EVENT	545
+Event	T16	input	EVENT	594
+Event	T17	decrease	EVENT	603
+Event	T18	attack	EVENT	633
+Event	T19	stall	EVENT	669
+Event	T20	overrode	EVENT	695
+Event	T21	pulling	EVENT	199
+Event	T22	pulling	EVENT	735
+Relation	T2	T3	SuperSub	true	activated	warning
+Relation	T3	T2	SubSuper	true	warning	activated
+Relation	T6	T7	SuperSub	true	responded	followed
+Relation	T7	T6	SubSuper	true	followed	responded
+Relation	T12	T13	SuperSub	true	pitched	increasing
+Relation	T13	T12	SubSuper	true	increasing	pitched
+Relation	T14	T20	SuperSub	true	activated	overrode
+Relation	T20	T14	SubSuper	true	overrode	activated
+Relation	T20	T22	SuperSub	true	overrode	pulling
+Relation	T22	T20	SubSuper	true	pulling	overrode
+Relation	T0	T8	NoRel	true	continued	thrust
+Relation	T11	T16	NoRel	true	technique	input
+Relation	T12	T2	NoRel	true	pitched	activated
+Relation	T13	T18	NoRel	true	increasing	attack
+Relation	T13	T8	NoRel	true	increasing	thrust
+Relation	T14	T11	NoRel	true	activated	technique
+Relation	T14	T22	NoRel	true	activated	pulling
+Relation	T14	T7	NoRel	true	activated	followed
+Relation	T15	T0	NoRel	true	applies	continued
+Relation	T15	T10	NoRel	true	applies	applying
+Relation	T15	T12	NoRel	true	applies	pitched
+Relation	T18	T9	NoRel	true	attack	lowering
+Relation	T20	T21	NoRel	true	overrode	pulling
+Relation	T21	T7	NoRel	true	pulling	followed
+Relation	T22	T1	NoRel	true	pulling	slow
+Relation	T3	T16	NoRel	true	warning	input
+Relation	T3	T17	NoRel	true	warning	decrease
+Relation	T4	T16	NoRel	true	stall	input
+Relation	T5	T14	NoRel	true	continued	activated
+Relation	T5	T17	NoRel	true	continued	decrease
+Relation	T6	T0	NoRel	true	responded	continued
+Relation	T6	T11	NoRel	true	responded	technique
+Relation	T6	T16	NoRel	true	responded	input
+Relation	T9	T19	NoRel	true	lowering	stall

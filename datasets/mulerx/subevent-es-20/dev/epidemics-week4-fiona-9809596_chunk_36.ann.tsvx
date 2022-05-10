@@ -1,0 +1,43 @@
+Text	En 1991 , una calle de Xagḥra fue nombrada _ Triq George McAdam _ en honor al médico militar que murió en la peste .	Una calle en Qormi se llama _ Triq il-Barrakki _ después de las cabañas construidas para albergar a los infectados en la epidemia .	Se escribieron varios relatos de la peste , como _ el Ragguaglio storico della pestilenza che afflisse le isole di Malta e Gozo negli anni 1813 y 1814 _ de Güéolo que fue publicado en Livorno en 1833 .	Gioacchino Ermolao Barbaro , que había perdido tres hijos en la peste , escribió tres sonetos y un poema en italiano sobre la epidemia .	Todos ellos se titulan _ Per la peste di Malta nell'anno 1813 _ y fueron publicados en 1843 .
+Event	T0	nombrada	EVENT	34
+Event	T1	murió	EVENT	97
+Event	T2	peste	EVENT	109
+Event	T3	llama	EVENT	139
+Event	T4	construidas	EVENT	189
+Event	T5	infectados	EVENT	221
+Event	T6	epidemia	EVENT	238
+Event	T7	relatos	EVENT	271
+Event	T8	peste	EVENT	285
+Event	T9	pestilenza	EVENT	328
+Event	T10	afflisse	EVENT	343
+Event	T11	publicado	EVENT	420
+Event	T12	perdido	EVENT	490
+Event	T13	peste	EVENT	515
+Event	T14	escribió	EVENT	523
+Event	T15	sonetos	EVENT	537
+Event	T16	epidemia	EVENT	577
+Event	T17	titulan	EVENT	603
+Event	T18	peste	EVENT	620
+Event	T19	publicados	EVENT	661
+Relation	T6	T4	SuperSub	true	epidemia	construidas
+Relation	T4	T6	SubSuper	true	construidas	epidemia
+Relation	T13	T12	SuperSub	true	peste	perdido
+Relation	T12	T13	SubSuper	true	perdido	peste
+Relation	T1	T10	NoRel	true	murió	afflisse
+Relation	T12	T3	NoRel	true	perdido	llama
+Relation	T15	T2	NoRel	true	sonetos	peste
+Relation	T17	T0	NoRel	true	titulan	nombrada
+Relation	T17	T11	NoRel	true	titulan	publicado
+Relation	T19	T0	NoRel	true	publicados	nombrada
+Relation	T2	T14	NoRel	true	peste	escribió
+Relation	T2	T7	NoRel	true	peste	relatos
+Relation	T2	T9	NoRel	true	peste	pestilenza
+Relation	T3	T9	NoRel	true	llama	pestilenza
+Relation	T4	T2	NoRel	true	construidas	peste
+Relation	T4	T5	NoRel	true	construidas	infectados
+Relation	T5	T16	NoRel	true	infectados	epidemia
+Relation	T5	T3	NoRel	true	infectados	llama
+Relation	T5	T6	NoRel	true	infectados	epidemia
+Relation	T6	T7	NoRel	true	epidemia	relatos
+Relation	T8	T13	NoRel	true	peste	peste
+Relation	T8	T4	NoRel	true	peste	construidas

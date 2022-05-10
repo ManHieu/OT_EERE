@@ -1,0 +1,61 @@
+Text	The pilot then retards the throttle levers to a point below idle speed and that directs the electric mechanisms in the propeller hub to rotate the blades to a position in which they will provide reverse thrust .	Should the pilot need to perform a go - around , he moves the thrust levers forward to a positive position again and that will produce forward thrust , enabling the pilot to execute a go - around maneuver .	The Douglas Aircraft Company designed a system that would prevent the accidental reversal of propeller blades in - flight .	During development of the DC - 6 , the company installed a system that cut electrical power to the mechanisms which rotated the blades while the airplane was in the air .	When there was enough weight on the landing gear ( which would only be the case when the aircraft was on the ground ) , a switch which supplied electrical power to the mechanisms was closed — meaning that when the aircraft touched down the blades could be reversed and thus the airplane could be slowed .
+Event	T0	retards	EVENT	15
+Event	T1	directs	EVENT	80
+Event	T2	rotate	EVENT	136
+Event	T3	thrust	EVENT	203
+Event	T4	perform	EVENT	237
+Event	T5	moves	EVENT	264
+Event	T6	thrust	EVENT	355
+Event	T7	enabling	EVENT	364
+Event	T8	execute	EVENT	386
+Event	T9	maneuver	EVENT	408
+Event	T10	designed	EVENT	448
+Event	T11	reversal	EVENT	500
+Event	T12	flight	EVENT	534
+Event	T13	development	EVENT	550
+Event	T14	installed	EVENT	590
+Event	T15	rotated	EVENT	659
+Event	T17	closed	EVENT	897
+Event	T18	reversed	EVENT	970
+Event	T19	slowed	EVENT	1010
+Event	T20	provide	EVENT	187
+Event	T21	produce	EVENT	339
+Event	T22	prevent	EVENT	477
+Event	T23	cut	EVENT	614
+Event	T24	supplied	EVENT	849
+Event	T16	touched	EVENT	937
+Relation	T0	T1	SuperSub	true	retards	directs
+Relation	T1	T0	SubSuper	true	directs	retards
+Relation	T13	T14	SuperSub	true	development	installed
+Relation	T14	T13	SubSuper	true	installed	development
+Relation	T0	T12	NoRel	true	retards	flight
+Relation	T0	T24	NoRel	true	retards	supplied
+Relation	T1	T3	NoRel	true	directs	thrust
+Relation	T1	T6	NoRel	true	directs	thrust
+Relation	T1	T9	NoRel	true	directs	maneuver
+Relation	T10	T12	NoRel	true	designed	flight
+Relation	T10	T18	NoRel	true	designed	reversed
+Relation	T13	T20	NoRel	true	development	provide
+Relation	T14	T18	NoRel	true	installed	reversed
+Relation	T15	T17	NoRel	true	rotated	closed
+Relation	T18	T0	NoRel	true	reversed	retards
+Relation	T18	T3	NoRel	true	reversed	thrust
+Relation	T18	T9	NoRel	true	reversed	maneuver
+Relation	T19	T13	NoRel	true	slowed	development
+Relation	T20	T12	NoRel	true	provide	flight
+Relation	T20	T14	NoRel	true	provide	installed
+Relation	T20	T2	NoRel	true	provide	rotate
+Relation	T22	T17	NoRel	true	prevent	closed
+Relation	T22	T21	NoRel	true	prevent	produce
+Relation	T23	T15	NoRel	true	cut	rotated
+Relation	T24	T16	NoRel	true	supplied	touched
+Relation	T3	T11	NoRel	true	thrust	reversal
+Relation	T3	T7	NoRel	true	thrust	enabling
+Relation	T4	T13	NoRel	true	perform	development
+Relation	T4	T15	NoRel	true	perform	rotated
+Relation	T4	T16	NoRel	true	perform	touched
+Relation	T6	T12	NoRel	true	thrust	flight
+Relation	T6	T15	NoRel	true	thrust	rotated
+Relation	T6	T20	NoRel	true	thrust	provide
+Relation	T8	T1	NoRel	true	execute	directs
+Relation	T8	T13	NoRel	true	execute	development

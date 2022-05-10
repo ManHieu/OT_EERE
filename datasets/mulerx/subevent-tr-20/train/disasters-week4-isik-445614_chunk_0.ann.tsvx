@@ -1,0 +1,13 @@
+Text	1966 VARTO DEPREMI , 19 Ağustos 1966 tarihinde Türkiye'nin Doğu Anadolu Bölgesi'nde yer alan Muş ilinin Varto kazasında meydana geldi .	Büyüklüğü 6,9 M _ ( s ) olan deprem sonucunda 2.394 kişi öldü .	Varto'da 1966 yılında iki deprem oldu .	İlk deprem , 7 Mart 1966 tarihinde Türkiye saatiyle 03: 16'da 5.6 M _ ( s ) büyüklüğünde oldu .	14 kişinin ölümüne ve 75 kişinin de yaralanmasına yol açtı .
+Event	T0	DEPREMI	EVENT	11
+Event	T1	geldi	EVENT	128
+Event	T2	deprem	EVENT	165
+Event	T3	öldü	EVENT	193
+Event	T4	deprem	EVENT	244
+Event	T5	ölümüne	EVENT	347
+Event	T6	açtı	EVENT	390
+Event	T7	oldu	EVENT	233
+Event	T8	yaralanmasına	EVENT	372
+Relation	T1	T7	NoRel	true	geldi	oldu
+Relation	T2	T5	NoRel	true	deprem	ölümüne
+Relation	T3	T1	NoRel	true	öldü	geldi

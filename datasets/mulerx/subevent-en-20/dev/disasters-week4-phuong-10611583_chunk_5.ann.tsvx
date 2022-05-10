@@ -1,0 +1,44 @@
+Text	However , public prosecutor showed the court that they had , in fact , acted in cold blood and planned their attacks well .	_ When a gelatin blast at Ghatkopar in 28 July 2003 , claimed just two lives , they decided to use RDX to take a heavier toll in the twin blasts a month later _ , he said .	_ They enjoyed the act of killing and deserve no mercy . _	The Pota court rejected all pleas of leniency and held that the brazen terror attack fell under the _ rarest of rare _ category of cases where the death sentence was well deserved .	-
+Event	T0	showed	EVENT	28
+Event	T1	acted	EVENT	71
+Event	T2	planned	EVENT	95
+Event	T3	attacks	EVENT	109
+Event	T4	blast	EVENT	141
+Event	T5	claimed	EVENT	178
+Event	T6	decided	EVENT	208
+Event	T7	use	EVENT	219
+Event	T8	take	EVENT	230
+Event	T9	blasts	EVENT	262
+Event	T10	said	EVENT	290
+Event	T11	enjoyed	EVENT	304
+Event	T12	act	EVENT	316
+Event	T13	killing	EVENT	323
+Event	T14	rejected	EVENT	371
+Event	T15	pleas	EVENT	384
+Event	T16	held	EVENT	406
+Event	T17	fell	EVENT	441
+Event	T18	sentence	EVENT	509
+Event	T19	deserved	EVENT	527
+Relation	T1	T2	SuperSub	true	acted	planned
+Relation	T2	T1	SubSuper	true	planned	acted
+Relation	T5	T7	SuperSub	true	claimed	use
+Relation	T7	T5	SubSuper	true	use	claimed
+Relation	T1	T4	NoRel	true	acted	blast
+Relation	T12	T0	NoRel	true	act	showed
+Relation	T12	T3	NoRel	true	act	attacks
+Relation	T13	T14	NoRel	true	killing	rejected
+Relation	T13	T16	NoRel	true	killing	held
+Relation	T13	T4	NoRel	true	killing	blast
+Relation	T13	T9	NoRel	true	killing	blasts
+Relation	T14	T12	NoRel	true	rejected	act
+Relation	T15	T6	NoRel	true	pleas	decided
+Relation	T15	T7	NoRel	true	pleas	use
+Relation	T18	T16	NoRel	true	sentence	held
+Relation	T3	T11	NoRel	true	attacks	enjoyed
+Relation	T4	T11	NoRel	true	blast	enjoyed
+Relation	T5	T10	NoRel	true	claimed	said
+Relation	T5	T4	NoRel	true	claimed	blast
+Relation	T6	T12	NoRel	true	decided	act
+Relation	T6	T13	NoRel	true	decided	killing
+Relation	T6	T7	NoRel	true	decided	use
+Relation	T9	T3	NoRel	true	blasts	attacks

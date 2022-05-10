@@ -1,0 +1,30 @@
+Text	1951 ÇANKIRI DEPREMI , merkezi Çankırı'nın Kurşunlu ilçesi olan 6, 9 M _ ( s ) büyüklüğünde bir depremdir .	Çankırı'nın 40 km kuzeybatısında ve Kuzey Anadolu Fay Hattı üzerinde yer alan Kurşunlu ilçesinde 13 Ağustos 1951 tarihinde saat 20: 33'te meydana gelen depremde 50 kişi ölmüş , 3.354 bina yıkılmış ve 13.373 bina da hasar görmüştür .	Bu deprem , Çankırı'nın haricinde Sinop , Eskişehir , Kayseri , İnegöl , Samsun , Merzifon , Amasya , Çerkeş ve Çorum'da hissedilmiş ama büyük bir hasar görülmemiştir .	Kurşunlu ilçesinin Yeşilöz , Çatkese , Sivricek ve Hocahasan köyleri en fazla hasara uğrayan yerler olmuş , köylerdeki binaların neredeyse tamamı yıkılmıştır .	Ilgaz da en çok hasara uğrayan ilçelerden birisi olmuş ; Belören köyünde 100 ev , Çörekçiler köyünde ise 50 ev yıkılmıştır .
+Event	T0	DEPREMI	EVENT	13
+Event	T1	depremdir	EVENT	96
+Event	T2	depremde	EVENT	260
+Event	T3	ölmüş	EVENT	277
+Event	T4	yıkılmış	EVENT	296
+Event	T5	deprem	EVENT	344
+Event	T6	hissedilmiş	EVENT	462
+Event	T8	yıkılmıştır	EVENT	656
+Event	T9	yıkılmıştır	EVENT	781
+Event	T10	görmüştür	EVENT	329
+Event	T7	olmuş	EVENT	610
+Event	T11	olmuş	EVENT	719
+Relation	T0	T9	NoRel	true	DEPREMI	yıkılmıştır
+Relation	T1	T7	NoRel	true	depremdir	olmuş
+Relation	T11	T0	NoRel	true	olmuş	DEPREMI
+Relation	T2	T7	NoRel	true	depremde	olmuş
+Relation	T3	T1	NoRel	true	ölmüş	depremdir
+Relation	T3	T7	NoRel	true	ölmüş	olmuş
+Relation	T4	T5	NoRel	true	yıkılmış	deprem
+Relation	T4	T8	NoRel	true	yıkılmış	yıkılmıştır
+Relation	T4	T9	NoRel	true	yıkılmış	yıkılmıştır
+Relation	T5	T0	NoRel	true	deprem	DEPREMI
+Relation	T5	T7	NoRel	true	deprem	olmuş
+Relation	T5	T9	NoRel	true	deprem	yıkılmıştır
+Relation	T6	T8	NoRel	true	hissedilmiş	yıkılmıştır
+Relation	T8	T0	NoRel	true	yıkılmıştır	DEPREMI
+Relation	T8	T3	NoRel	true	yıkılmıştır	ölmüş
+Relation	T9	T11	NoRel	true	yıkılmıştır	olmuş
+Relation	T9	T4	NoRel	true	yıkılmıştır	yıkılmış

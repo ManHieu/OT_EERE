@@ -1,0 +1,18 @@
+Text	Haşhaşilerden alınmasının imkansız olduğu düşünülen Alamut Kalesini almak için sefere çıktı ancak kaleler çok sert bir şekilde direniyordu .	Haşhaşilerin lideri olan Rükeneddin Hürşah Maymundiz kalesinde bulunuyordu .	Hülagu kaleyi 4 gün boyunca kuşattı ise kaleyi alamadı .	Hayatından endişe eden Rükneddin Hürşah Hülagu'ya elçi göndererek eğer kendisinin ve ailesinin canını bağışlarsa bütün kaleleri teslim edeceğini söyledi .	Hülagu teklifi kabul etti .
+Event	T0	almak	EVENT	68
+Event	T1	çıktı	EVENT	86
+Event	T2	direniyordu	EVENT	127
+Event	T3	kuşattı	EVENT	246
+Event	T6	teslim	EVENT	403
+Event	T7	söyledi	EVENT	420
+Event	T8	etti	EVENT	451
+Event	T4	göndererek	EVENT	330
+Event	T5	endişe	EVENT	286
+Event	T9	teklifi	EVENT	437
+Relation	T1	T0	NoRel	true	çıktı	almak
+Relation	T2	T8	NoRel	true	direniyordu	etti
+Relation	T6	T7	NoRel	true	teslim	söyledi
+Relation	T6	T9	NoRel	true	teslim	teklifi
+Relation	T7	T3	NoRel	true	söyledi	kuşattı
+Relation	T8	T0	NoRel	true	etti	almak
+Relation	T9	T1	NoRel	true	teklifi	çıktı

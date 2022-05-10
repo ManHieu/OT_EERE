@@ -1,0 +1,41 @@
+Text	El juzgado de Ponferrada levantó el acta con una cifra de 58 cadáveres , mientras que en la sentencia del juicio al maquinista del tren correo se estableció un total de 83 muertos y 64 heridos .	Por su parte RENFE informó de 78 muertos y 75 heridos .	Esto habría coincidido con la cifra judicial si se supone que 5 de las víctimas murieran en días posteriores al accidente .	En todo caso parece evidente que gran parte de las víctimas mortales fueran viajeros de 1. ªclase , aparte de media docena de trabajadores de RENFE y de Correos , mientras que inversamente una gran proporción de los pasajeros de 3. ªclase resultarían ilesos o heridos leves .	En el tren correo también viajaba el equipo de fútbol del Betanzos Club , que regresaba de jugar un partido en Palencia ; resultaron muertos dos de los jugadores y herido grave un tercero .
+Event	T0	levantó	EVENT	25
+Event	T1	acta	EVENT	36
+Event	T2	sentencia	EVENT	92
+Event	T3	juicio	EVENT	106
+Event	T4	estableció	EVENT	146
+Event	T5	muertos	EVENT	172
+Event	T6	heridos	EVENT	185
+Event	T7	informó	EVENT	214
+Event	T8	muertos	EVENT	228
+Event	T9	heridos	EVENT	241
+Event	T10	coincidido	EVENT	263
+Event	T11	judicial	EVENT	287
+Event	T12	murieran	EVENT	331
+Event	T13	accidente	EVENT	363
+Event	T14	ilesos	EVENT	626
+Event	T15	viajaba	EVENT	677
+Event	T16	regresaba	EVENT	729
+Event	T17	jugar	EVENT	742
+Event	T18	partido	EVENT	751
+Event	T19	muertos	EVENT	784
+Event	T20	grave	EVENT	822
+Relation	T13	T12	SuperSub	true	accidente	murieran
+Relation	T12	T13	SubSuper	true	murieran	accidente
+Relation	T10	T20	NoRel	true	coincidido	grave
+Relation	T10	T3	NoRel	true	coincidido	juicio
+Relation	T12	T17	NoRel	true	murieran	jugar
+Relation	T12	T2	NoRel	true	murieran	sentencia
+Relation	T12	T8	NoRel	true	murieran	muertos
+Relation	T13	T20	NoRel	true	accidente	grave
+Relation	T14	T3	NoRel	true	ilesos	juicio
+Relation	T15	T10	NoRel	true	viajaba	coincidido
+Relation	T20	T9	NoRel	true	grave	heridos
+Relation	T3	T18	NoRel	true	juicio	partido
+Relation	T3	T2	NoRel	true	juicio	sentencia
+Relation	T3	T6	NoRel	true	juicio	heridos
+Relation	T4	T12	NoRel	true	estableció	murieran
+Relation	T4	T2	NoRel	true	estableció	sentencia
+Relation	T8	T2	NoRel	true	muertos	sentencia
+Relation	T8	T6	NoRel	true	muertos	heridos
+Relation	T9	T14	NoRel	true	heridos	ilesos

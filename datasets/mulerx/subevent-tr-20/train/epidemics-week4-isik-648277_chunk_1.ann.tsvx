@@ -1,0 +1,19 @@
+Text	ABD'deki kariyeri , izleyici rekoru kıran 2008'in sonlarındaki _ Saturday Night Live _ bölümü ile yükseldi .	2009 Grammy Ödülleri'nde En İyi Yeni Sanatçı ile En İyi Kadın Vokal Pop Performansı dallarında ödül kazandı .	İkinci stüdyo albümü _ 21 _ , 2011'in başlarında piyasaya sürüldü .	Albüm , iyi eleştiriler aldı ve çıkış albümünün elde ettiği başarıyı geçti .	Bu albümle Adele , Yılın Albümü dahil olmak üzere altı Grammy Ödülü kazandı ve böylece bir gecede en çok Grammy Ödülü kazanan kadın şarkıcı olarak Beyoncé ile eşit oldu .
+Event	T0	kariyeri	EVENT	9
+Event	T1	kıran	EVENT	36
+Event	T2	yükseldi	EVENT	98
+Event	T3	kazandı	EVENT	209
+Event	T4	sürüldü	EVENT	277
+Event	T5	aldı	EVENT	311
+Event	T6	çıkış	EVENT	319
+Event	T7	geçti	EVENT	356
+Event	T8	kazandı	EVENT	432
+Event	T9	oldu	EVENT	528
+Relation	T0	T4	NoRel	true	kariyeri	sürüldü
+Relation	T0	T8	NoRel	true	kariyeri	kazandı
+Relation	T1	T4	NoRel	true	kıran	sürüldü
+Relation	T1	T6	NoRel	true	kıran	çıkış
+Relation	T1	T7	NoRel	true	kıran	geçti
+Relation	T6	T7	NoRel	true	çıkış	geçti
+Relation	T8	T5	NoRel	true	kazandı	aldı
+Relation	T9	T0	NoRel	true	oldu	kariyeri

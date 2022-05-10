@@ -1,0 +1,41 @@
+Text	Nuestros corazones están con las familias de todas las víctimas de este trágico accidente . la muerte de tantas personas comprometidas que trabajan contra el VIH será una gran pérdida para la respuesta al sida » .	- [ OSCE _ LOGO . SVG ] ORGANIZACIÓN PARA LA SEGURIDAD Y LA COOPERACIÓN EN EUROPA — Los representantes de la OSCE , que se encontraban en la región por la guerra en el Donbáss , se dirigieron al lugar de la catástrofe , según el servicio de prensa de la República Popular de Lugansk .	El 18 de julio , el presidente de turno de la OSCE , el suizo Thomas Greminger , convocó a un encuentro urgente del Consejo Permanente de esa entidad para debatir lo relacionado con la catástrofe .	También se anunció el envío de 30 observadores del organismo a la localidad del accidente .	- — El secretario general de la OTAN , Anders Fogh Rasmussen , urgió a una « investigación internacional completa y sin interferencias » que esclarezca lo ocurrido con el avión malayo « para que los responsables sean llevados ante la justicia » .
+Event	T0	accidente	EVENT	80
+Event	T1	muerte	EVENT	95
+Event	T2	trabajan	EVENT	139
+Event	T3	pérdida	EVENT	176
+Event	T4	respuesta	EVENT	192
+Event	T5	guerra	EVENT	369
+Event	T6	dirigieron	EVENT	395
+Event	T7	catástrofe	EVENT	421
+Event	T8	convocó	EVENT	580
+Event	T9	encuentro	EVENT	593
+Event	T10	debatir	EVENT	654
+Event	T11	catástrofe	EVENT	684
+Event	T12	anunció	EVENT	708
+Event	T13	envío	EVENT	719
+Event	T14	accidente	EVENT	777
+Event	T15	urgió	EVENT	852
+Event	T16	investigación	EVENT	866
+Event	T17	esclarezca	EVENT	930
+Event	T18	ocurrido	EVENT	944
+Event	T19	llevados	EVENT	1006
+Relation	T14	T13	SuperSub	true	accidente	envío
+Relation	T13	T14	SubSuper	true	envío	accidente
+Relation	T0	T6	NoRel	true	accidente	dirigieron
+Relation	T0	T7	NoRel	true	accidente	catástrofe
+Relation	T1	T19	NoRel	true	muerte	llevados
+Relation	T1	T3	NoRel	true	muerte	pérdida
+Relation	T1	T5	NoRel	true	muerte	guerra
+Relation	T10	T5	NoRel	true	debatir	guerra
+Relation	T13	T8	NoRel	true	envío	convocó
+Relation	T16	T12	NoRel	true	investigación	anunció
+Relation	T16	T13	NoRel	true	investigación	envío
+Relation	T18	T3	NoRel	true	ocurrido	pérdida
+Relation	T19	T7	NoRel	true	llevados	catástrofe
+Relation	T2	T1	NoRel	true	trabajan	muerte
+Relation	T3	T1	NoRel	true	pérdida	muerte
+Relation	T5	T17	NoRel	true	guerra	esclarezca
+Relation	T6	T0	NoRel	true	dirigieron	accidente
+Relation	T6	T5	NoRel	true	dirigieron	guerra
+Relation	T6	T8	NoRel	true	dirigieron	convocó
+Relation	T9	T15	NoRel	true	encuentro	urgió

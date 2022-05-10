@@ -1,0 +1,44 @@
+Text	Las medidas gubernamentales de 1924 para atajar la inflación causaron este notable aumento del desempleo que afectó al país durante casi un lustro .	Inmediatamente después del golpe de Estado del mariscal las huelgas mineras británicas de 1926 , que duraron de mayo a septiembre , dieron un gran impulso a las exportaciones de carbón polaco , que se mantuvieron altas .	El aumento del comercio del carbón permitió un intenso desarrollo industrial temporal .	Este impulso de la exportación y de la industria coincidió además con un periodo de aumento de precios agrícolas entre 1926 y 1929 , lo que atrajo inversiones extranjeras que permitieron estabilizar la moneda y sobrevivir al conflicto arancelario con Alemania .	La relativa bonanza económica favoreció al nuevo régimen autoritario de Pilsudski que , además , daba una imagen de fuerza del país .
+Event	T1	causaron	EVENT	61
+Event	T10	aumento	EVENT	373
+Event	T12	desarrollo	EVENT	425
+Event	T13	impulso	EVENT	463
+Event	T14	coincidió	EVENT	507
+Event	T15	aumento	EVENT	542
+Event	T16	inversiones	EVENT	605
+Event	T17	estabilizar	EVENT	645
+Event	T18	sobrevivir	EVENT	669
+Event	T19	conflicto	EVENT	683
+Event	T20	bonanza	EVENT	732
+Event	T21	favoreció	EVENT	750
+Event	T22	daba	EVENT	817
+Event	T3	afectó	EVENT	109
+Event	T4	golpe	EVENT	176
+Event	T5	huelgas	EVENT	209
+Event	T8	impulso	EVENT	296
+Event	T2	desempleo	EVENT	95
+Relation	T3	T2	SuperSub	true	afectó	desempleo
+Relation	T2	T3	SubSuper	true	desempleo	afectó
+Relation	T13	T14	SuperSub	true	impulso	coincidió
+Relation	T14	T13	SubSuper	true	coincidió	impulso
+Relation	T19	T18	SuperSub	true	conflicto	sobrevivir
+Relation	T18	T19	SubSuper	true	sobrevivir	conflicto
+Relation	T20	T22	SuperSub	true	bonanza	daba
+Relation	T22	T20	SubSuper	true	daba	bonanza
+Relation	T10	T21	NoRel	true	aumento	favoreció
+Relation	T15	T14	NoRel	true	aumento	coincidió
+Relation	T16	T2	NoRel	true	inversiones	desempleo
+Relation	T16	T20	NoRel	true	inversiones	bonanza
+Relation	T16	T8	NoRel	true	inversiones	impulso
+Relation	T18	T3	NoRel	true	sobrevivir	afectó
+Relation	T19	T15	NoRel	true	conflicto	aumento
+Relation	T19	T3	NoRel	true	conflicto	afectó
+Relation	T19	T8	NoRel	true	conflicto	impulso
+Relation	T2	T12	NoRel	true	desempleo	desarrollo
+Relation	T20	T13	NoRel	true	bonanza	impulso
+Relation	T20	T5	NoRel	true	bonanza	huelgas
+Relation	T21	T10	NoRel	true	favoreció	aumento
+Relation	T21	T3	NoRel	true	favoreció	afectó
+Relation	T22	T16	NoRel	true	daba	inversiones
+Relation	T3	T22	NoRel	true	afectó	daba
+Relation	T5	T1	NoRel	true	huelgas	causaron

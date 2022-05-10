@@ -1,0 +1,45 @@
+Text	Even when school closures are temporary , it carries high social and economic costs .	However , the significance of children in spreading COVID - 19 is unclear .	While the full impact of school closures during the coronavirus pandemic are not yet known , UNESCO advises that school closures have negative impacts on local economies and on learning outcomes for students .	In early March 2020 , the sentiment " Stay The Fuck Home " was coined by Florian Reifschneider , a German engineer and was quickly echoed by notable celebrities such as Taylor Swift , Ariana Grande and Busy Philipps in hopes of reducing and delaying the peak of the outbreak .	Facebook , Twitter and Instagram also joined the campaign with similar hashtags , stickers and filters under # staythefhome , # stayhome , # staythefuckhome and began trending across social media .
+Event	T0	closures	EVENT	17
+Event	T1	carries	EVENT	45
+Event	T10	sentiment	EVENT	398
+Event	T11	coined	EVENT	435
+Event	T12	echoed	EVENT	503
+Event	T13	hopes	EVENT	591
+Event	T14	reducing	EVENT	600
+Event	T15	delaying	EVENT	613
+Event	T16	peak	EVENT	626
+Event	T17	outbreak	EVENT	638
+Event	T18	joined	EVENT	687
+Event	T19	campaign	EVENT	698
+Event	T2	spreading	EVENT	128
+Event	T20	trending	EVENT	816
+Event	T3	impact	EVENT	177
+Event	T4	closures	EVENT	194
+Event	T5	pandemic	EVENT	226
+Event	T7	advises	EVENT	262
+Event	T8	closures	EVENT	282
+Event	T9	impacts	EVENT	305
+Relation	T1	T13	NoRel	true	carries	hopes
+Relation	T1	T8	NoRel	true	carries	closures
+Relation	T10	T1	NoRel	true	sentiment	carries
+Relation	T11	T0	NoRel	true	coined	closures
+Relation	T12	T13	NoRel	true	echoed	hopes
+Relation	T12	T19	NoRel	true	echoed	campaign
+Relation	T14	T11	NoRel	true	reducing	coined
+Relation	T16	T1	NoRel	true	peak	carries
+Relation	T16	T7	NoRel	true	peak	advises
+Relation	T17	T15	NoRel	true	outbreak	delaying
+Relation	T17	T7	NoRel	true	outbreak	advises
+Relation	T18	T12	NoRel	true	joined	echoed
+Relation	T2	T17	NoRel	true	spreading	outbreak
+Relation	T2	T5	NoRel	true	spreading	pandemic
+Relation	T20	T2	NoRel	true	trending	spreading
+Relation	T20	T5	NoRel	true	trending	pandemic
+Relation	T3	T19	NoRel	true	impact	campaign
+Relation	T4	T1	NoRel	true	closures	carries
+Relation	T4	T19	NoRel	true	closures	campaign
+Relation	T5	T16	NoRel	true	pandemic	peak
+Relation	T7	T19	NoRel	true	advises	campaign
+Relation	T8	T0	NoRel	true	closures	closures
+Relation	T8	T11	NoRel	true	closures	coined
+Relation	T9	T8	NoRel	true	impacts	closures

@@ -1,0 +1,45 @@
+Text	Ella dijo que había abandonado el sitio poco antes de que ocurriera el accidente , pero que regresó tan pronto como se enteró de ello .	Sidhu también dijo que la celebración se celebraba allí todos los años y que las autoridades ferroviarias fueron alertadas antes de la necesidad de moderar su velocidad .	El conductor denunció el accidente inmediatamente al jefe de la estación de Amritsar Junction y fue detenido por la policía para ser interrogado .	El ministro de Estado de Ferrocarriles , Manoj Sinha , negó cualquier negligencia por parte del conductor y declaró que no se tomaron medidas contra él .	Un funcionario dijo a los periodistas que los funcionarios electos confirmaron que al menos 59 personas murieron en el accidente .
+Event	T0	dijo	EVENT	5
+Event	T1	ocurriera	EVENT	58
+Event	T2	accidente	EVENT	71
+Event	T3	enteró	EVENT	119
+Event	T4	dijo	EVENT	150
+Event	T5	celebración	EVENT	162
+Event	T6	celebraba	EVENT	177
+Event	T7	alertadas	EVENT	249
+Event	T8	necesidad	EVENT	271
+Event	T9	moderar	EVENT	284
+Event	T10	denunció	EVENT	320
+Event	T11	accidente	EVENT	332
+Event	T12	detenido	EVENT	407
+Event	T13	interrogado	EVENT	440
+Event	T14	negligencia	EVENT	524
+Event	T15	declaró	EVENT	562
+Event	T16	medidas	EVENT	588
+Event	T17	dijo	EVENT	623
+Event	T18	confirmaron	EVENT	675
+Event	T19	murieron	EVENT	712
+Event	T20	accidente	EVENT	727
+Relation	T0	T14	NoRel	true	dijo	negligencia
+Relation	T0	T9	NoRel	true	dijo	moderar
+Relation	T1	T19	NoRel	true	ocurriera	murieron
+Relation	T10	T11	NoRel	true	denunció	accidente
+Relation	T10	T7	NoRel	true	denunció	alertadas
+Relation	T11	T20	NoRel	true	accidente	accidente
+Relation	T12	T19	NoRel	true	detenido	murieron
+Relation	T14	T10	NoRel	true	negligencia	denunció
+Relation	T14	T18	NoRel	true	negligencia	confirmaron
+Relation	T15	T18	NoRel	true	declaró	confirmaron
+Relation	T16	T0	NoRel	true	medidas	dijo
+Relation	T17	T15	NoRel	true	dijo	declaró
+Relation	T18	T1	NoRel	true	confirmaron	ocurriera
+Relation	T19	T11	NoRel	true	murieron	accidente
+Relation	T19	T5	NoRel	true	murieron	celebración
+Relation	T19	T7	NoRel	true	murieron	alertadas
+Relation	T20	T4	NoRel	true	accidente	dijo
+Relation	T4	T7	NoRel	true	dijo	alertadas
+Relation	T5	T12	NoRel	true	celebración	detenido
+Relation	T5	T14	NoRel	true	celebración	negligencia
+Relation	T5	T9	NoRel	true	celebración	moderar
+Relation	T6	T13	NoRel	true	celebraba	interrogado
+Relation	T9	T0	NoRel	true	moderar	dijo

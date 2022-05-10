@@ -1,0 +1,37 @@
+Text	افغانستان مسلسل جنگ کا شکار رہا ہے اور اسے معاشی ترقی کی مہلت ہی نہیں ملی ۔	افغانستان کی خاصی آبادی ایران اور پاکستان کو ہجرت کر گئی تھی جن میں سے کچھ اب واپس آنا شروع ہوئے ہیں مگر ہجرت نے ان کی معیشت کو تباہ کر دیا ہے اور نئی پود کو پڑھنے لکھنے اور کوئی ہنر سیکھنے کے مواقع بھی کم ہی ملے ہیں ۔	افغانستان میں جن لوگوں نے ہجرت نہیں بھی کی انھیں جنگ نے مصروف رکھا ۔	مجبوراً اسلحہ کی تجارت ، جنگ بطور سلسلہ روزگار اور افیم و پوست کی تجارت ہی ان کا مقدر بنی ۔	ایک بڑی تعداد سمگلنگ سے بھی وابستہ ہوئی ۔
+Event	T0	جنگ	EVENT	16
+Event	T1	ترقی	EVENT	49
+Event	T2	ہجرت	EVENT	121
+Event	T3	ہجرت	EVENT	181
+Event	T4	تباہ	EVENT	204
+Event	T5	ہجرت	EVENT	321
+Event	T6	جنگ	EVENT	344
+Event	T8	تجارت	EVENT	381
+Event	T9	جنگ	EVENT	389
+Event	T10	تجارت	EVENT	430
+Event	T11	شکار	EVENT	23
+Event	T12	شروع	EVENT	163
+Event	T13	پڑھنے	EVENT	234
+Event	T14	لکھنے	EVENT	240
+Event	T15	سیکھنے	EVENT	259
+Event	T16	ملے	EVENT	285
+Event	T17	مصروف	EVENT	351
+Event	T7	روزگار	EVENT	404
+Event	T18	وابستہ	EVENT	484
+Relation	T4	T16	SuperSub	true	تباہ	ملے
+Relation	T16	T4	SubSuper	true	ملے	تباہ
+Relation	T1	T17	NoRel	true	ترقی	مصروف
+Relation	T10	T7	NoRel	true	تجارت	روزگار
+Relation	T10	T9	NoRel	true	تجارت	جنگ
+Relation	T11	T0	NoRel	true	شکار	جنگ
+Relation	T11	T1	NoRel	true	شکار	ترقی
+Relation	T13	T0	NoRel	true	پڑھنے	جنگ
+Relation	T13	T15	NoRel	true	پڑھنے	سیکھنے
+Relation	T14	T2	NoRel	true	لکھنے	ہجرت
+Relation	T15	T10	NoRel	true	سیکھنے	تجارت
+Relation	T15	T16	NoRel	true	سیکھنے	ملے
+Relation	T16	T5	NoRel	true	ملے	ہجرت
+Relation	T3	T13	NoRel	true	ہجرت	پڑھنے
+Relation	T5	T11	NoRel	true	ہجرت	شکار
+Relation	T5	T17	NoRel	true	ہجرت	مصروف
+Relation	T9	T14	NoRel	true	جنگ	لکھنے

@@ -1,0 +1,64 @@
+Text	- 23. marts 2006 : En soldat blev dræbt og en anden blev såret under kørsel i et let pansret køretøj nord for Basra .	- 23. september 2006 : En soldat blev dræbt , en blev hårdt såret og syv blev lettere såret ved et angreb med en vejsidebombe ved Basra .	For en tilsvarende opgørelse over tab i Afghanistan henvises til : Tabstal for de danske styrker i Afghanistan .	Når en styrke som de fredsbevarende styrker skal forsvare sig mod vejsidebomber , er der flere mulige fremgangsmåder :	- Køretøjer med ekstra kraftig pansring - Afsøgning af ruter , check af kritiske punkter - Hindring af den elektriske impuls , der skal udløse bomben - Efterretninger om hvor bomberne bliver produceret og placeret .
+Event	T0	dræbt	EVENT	34
+Event	T1	dræbt	EVENT	156
+Event	T2	såret	EVENT	178
+Event	T3	såret	EVENT	204
+Event	T4	angreb	EVENT	217
+Event	T5	opgørelse	EVENT	275
+Event	T6	tab	EVENT	290
+Event	T7	Tabstal	EVENT	323
+Event	T8	forsvare	EVENT	418
+Event	T9	pansring	EVENT	519
+Event	T10	Afsøgning	EVENT	530
+Event	T11	check	EVENT	551
+Event	T12	Hindring	EVENT	579
+Event	T13	Efterretninger	EVENT	640
+Event	T14	produceret	EVENT	679
+Event	T15	placeret	EVENT	693
+Event	T16	såret	EVENT	57
+Event	T17	kørsel	EVENT	69
+Event	T18	pansret	EVENT	85
+Event	T19	vejsidebombe	EVENT	231
+Event	T20	fredsbevarende	EVENT	390
+Event	T21	fremgangsmåder	EVENT	471
+Event	T22	impuls	EVENT	606
+Event	T23	udløse	EVENT	624
+Relation	T0	T8	NoRel	true	dræbt	forsvare
+Relation	T1	T21	NoRel	true	dræbt	fremgangsmåder
+Relation	T1	T4	NoRel	true	dræbt	angreb
+Relation	T1	T9	NoRel	true	dræbt	pansring
+Relation	T10	T5	NoRel	true	Afsøgning	opgørelse
+Relation	T11	T21	NoRel	true	check	fremgangsmåder
+Relation	T11	T7	NoRel	true	check	Tabstal
+Relation	T12	T1	NoRel	true	Hindring	dræbt
+Relation	T12	T3	NoRel	true	Hindring	såret
+Relation	T13	T22	NoRel	true	Efterretninger	impuls
+Relation	T14	T17	NoRel	true	produceret	kørsel
+Relation	T15	T8	NoRel	true	placeret	forsvare
+Relation	T17	T1	NoRel	true	kørsel	dræbt
+Relation	T17	T15	NoRel	true	kørsel	placeret
+Relation	T17	T16	NoRel	true	kørsel	såret
+Relation	T17	T5	NoRel	true	kørsel	opgørelse
+Relation	T17	T8	NoRel	true	kørsel	forsvare
+Relation	T17	T9	NoRel	true	kørsel	pansring
+Relation	T19	T1	NoRel	true	vejsidebombe	dræbt
+Relation	T19	T10	NoRel	true	vejsidebombe	Afsøgning
+Relation	T19	T17	NoRel	true	vejsidebombe	kørsel
+Relation	T19	T4	NoRel	true	vejsidebombe	angreb
+Relation	T2	T4	NoRel	true	såret	angreb
+Relation	T2	T8	NoRel	true	såret	forsvare
+Relation	T2	T9	NoRel	true	såret	pansring
+Relation	T20	T0	NoRel	true	fredsbevarende	dræbt
+Relation	T20	T7	NoRel	true	fredsbevarende	Tabstal
+Relation	T21	T13	NoRel	true	fremgangsmåder	Efterretninger
+Relation	T22	T17	NoRel	true	impuls	kørsel
+Relation	T3	T13	NoRel	true	såret	Efterretninger
+Relation	T3	T7	NoRel	true	såret	Tabstal
+Relation	T6	T13	NoRel	true	tab	Efterretninger
+Relation	T6	T21	NoRel	true	tab	fremgangsmåder
+Relation	T7	T13	NoRel	true	Tabstal	Efterretninger
+Relation	T7	T5	NoRel	true	Tabstal	opgørelse
+Relation	T8	T20	NoRel	true	forsvare	fredsbevarende
+Relation	T9	T11	NoRel	true	pansring	check
+Relation	T9	T12	NoRel	true	pansring	Hindring
+Relation	T9	T14	NoRel	true	pansring	produceret

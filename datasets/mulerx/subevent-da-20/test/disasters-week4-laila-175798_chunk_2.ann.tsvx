@@ -1,0 +1,33 @@
+Text	Det lykkedes at koncentrere tyske tropper i forbindelse med Ardenneroffensiven .	Sovjetiske tropper havde nået Østpreussen og Ungarn i 1944 , inden de blev stoppet ved Oder i februar 1945 ; tyskerne holdt fast i stærke fæstningsbyer som Breslau og Königsberg .	Tyskerne havde stor interesse i også at lade andre byer fungere som fæstningsbyer .	I begyndelsen af 1945 var udfaldet af krigen slet ikke så entydig , som det ofte bliver fremstillet i dag .	Nazisternes Gauleiter i Dresden Martin Mutschmann glædede sig i julen 1944 over på ny at se sit folk i angreb ( _ ” … Volk wieder im Angriff zu sehen … ” _ ) .
+Event	T0	lykkedes	EVENT	4
+Event	T1	koncentrere	EVENT	16
+Event	T2	nået	EVENT	106
+Event	T3	stoppet	EVENT	156
+Event	T4	fungere	EVENT	317
+Event	T5	udfaldet	EVENT	371
+Event	T6	fremstillet	EVENT	433
+Event	T7	glædede	EVENT	503
+Event	T8	se	EVENT	542
+Event	T9	angreb	EVENT	556
+Event	T10	Angriff	EVENT	586
+Event	T11	sehen	EVENT	597
+Event	T12	Ardenneroffensiven	EVENT	60
+Event	T13	holdt fast	EVENT	199
+Event	T14	interesse	EVENT	281
+Event	T15	entydig	EVENT	403
+Relation	T15	T7	SuperSub	true	entydig	glædede
+Relation	T7	T15	SubSuper	true	glædede	entydig
+Relation	T0	T10	NoRel	true	lykkedes	Angriff
+Relation	T0	T14	NoRel	true	lykkedes	interesse
+Relation	T10	T11	NoRel	true	Angriff	sehen
+Relation	T10	T8	NoRel	true	Angriff	se
+Relation	T11	T4	NoRel	true	sehen	fungere
+Relation	T14	T1	NoRel	true	interesse	koncentrere
+Relation	T2	T14	NoRel	true	nået	interesse
+Relation	T5	T11	NoRel	true	udfaldet	sehen
+Relation	T6	T3	NoRel	true	fremstillet	stoppet
+Relation	T7	T8	NoRel	true	glædede	se
+Relation	T7	T9	NoRel	true	glædede	angreb
+Relation	T9	T0	NoRel	true	angreb	lykkedes
+Relation	T9	T10	NoRel	true	angreb	Angriff
+Relation	T9	T5	NoRel	true	angreb	udfaldet

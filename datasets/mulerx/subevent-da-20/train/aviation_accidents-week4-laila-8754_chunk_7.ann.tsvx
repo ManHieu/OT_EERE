@@ -1,0 +1,46 @@
+Text	Optagelserne fra United Airlines Flight 93s sorte boks viste , at besætningen og passagererne desperat forsøgte at genvinde kontrollen over flyet , efter at de igennem telefonopkald var blevet informeret om kapringen af de andre fly .	I henhold til optagelserne fra Flight 93 gav en af flykaprerne ordre til at vippe flyet rundt når det blev klart , at de ville miste kontrollen med flyet til passagererne .	Kort tid efter , klokken 10:03:11 , styrtede flyet ned på en mark nær Shanksville i Pennsylvania .	Angrebets arkitekt , Khalid Sheikh Mohammed , nævnte under et interview i 2002 sammen med Yosri Fouda , at Flight 93s mål var United States Capitol , hvilket fik kodenavnet " the Faculty of Law " .	Tre af bygningerne i World Trade_Center-komplekset kollapsede fordi deres konstruktion ikke kunne klare varmen fra brandene som følge af angrebet .
+Event	T0	Optagelserne	EVENT	0
+Event	T1	viste	EVENT	55
+Event	T2	forsøgte	EVENT	103
+Event	T3	kontrollen	EVENT	124
+Event	T4	telefonopkald	EVENT	168
+Event	T5	informeret	EVENT	193
+Event	T6	kapringen	EVENT	207
+Event	T7	optagelserne	EVENT	249
+Event	T8	gav	EVENT	276
+Event	T9	ordre	EVENT	298
+Event	T10	vippe	EVENT	311
+Event	T11	styrtede	EVENT	444
+Event	T12	Angrebets	EVENT	507
+Event	T13	nævnte	EVENT	553
+Event	T14	interview	EVENT	569
+Event	T15	kollapsede	EVENT	756
+Event	T16	klare	EVENT	803
+Event	T17	brandene	EVENT	820
+Event	T18	angrebet	EVENT	842
+Event	T19	miste	EVENT	362
+Event	T20	mål	EVENT	625
+Relation	T2	T11	SuperSub	true	forsøgte	styrtede
+Relation	T11	T2	SubSuper	true	styrtede	forsøgte
+Relation	T19	T11	SuperSub	true	miste	styrtede
+Relation	T11	T19	SubSuper	true	styrtede	miste
+Relation	T1	T14	NoRel	true	viste	interview
+Relation	T10	T20	NoRel	true	vippe	mål
+Relation	T12	T1	NoRel	true	Angrebets	viste
+Relation	T12	T16	NoRel	true	Angrebets	klare
+Relation	T12	T6	NoRel	true	Angrebets	kapringen
+Relation	T13	T11	NoRel	true	nævnte	styrtede
+Relation	T13	T14	NoRel	true	nævnte	interview
+Relation	T13	T4	NoRel	true	nævnte	telefonopkald
+Relation	T14	T19	NoRel	true	interview	miste
+Relation	T14	T3	NoRel	true	interview	kontrollen
+Relation	T15	T3	NoRel	true	kollapsede	kontrollen
+Relation	T17	T14	NoRel	true	brandene	interview
+Relation	T17	T3	NoRel	true	brandene	kontrollen
+Relation	T18	T14	NoRel	true	angrebet	interview
+Relation	T18	T17	NoRel	true	angrebet	brandene
+Relation	T18	T5	NoRel	true	angrebet	informeret
+Relation	T19	T14	NoRel	true	miste	interview
+Relation	T20	T12	NoRel	true	mål	Angrebets
+Relation	T4	T6	NoRel	true	telefonopkald	kapringen
+Relation	T7	T9	NoRel	true	optagelserne	ordre

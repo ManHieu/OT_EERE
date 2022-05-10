@@ -1,0 +1,19 @@
+Text	Debido a las malas condiciones meteorológicas la búsqueda fue suspendida en horas de la tarde siendo reprogramado su inicio para la mañana del día siguiente .	En paralelo , el Alto Mando de la FAP había dispuesto el inmediato traslado de un avión con personal de Fuerzas Especiales calificado en búsqueda y rescate con destino a Amazonas para intensificar las labores de búsqueda .	[ miniaturade imagen | Honores fúnebres de la Fuerza Aérea del Perú a los fallecidos en el accidente .	] La tripulación de la aeronave estaba conformada por el Comandante FAP Luis Manuel Humberto Flores Muñoz , Capitán FAP Bryan Steve Calleja Martins , Técnico de 1ra FAP Ronal Wilton Cortéz Miñope y Técnico de 2da FAP Nicolás Estrada Orejón .	Con ellos además viajaban Elmer Herrera Chuquimes , Reu Wisum Piitug y Sabino Shawit Najamtai .
+Event	T0	suspendida	EVENT	62
+Event	T1	reprogramado	EVENT	101
+Event	T2	inicio	EVENT	117
+Event	T3	dispuesto	EVENT	203
+Event	T4	traslado	EVENT	226
+Event	T5	búsqueda	EVENT	296
+Event	T6	rescate	EVENT	307
+Event	T7	intensificar	EVENT	343
+Event	T8	labores	EVENT	360
+Event	T9	búsqueda	EVENT	371
+Event	T10	fallecidos	EVENT	456
+Event	T11	accidente	EVENT	473
+Relation	T3	T9	NoRel	true	dispuesto	búsqueda
+Relation	T5	T2	NoRel	true	búsqueda	inicio
+Relation	T5	T3	NoRel	true	búsqueda	dispuesto
+Relation	T6	T1	NoRel	true	rescate	reprogramado
+Relation	T6	T11	NoRel	true	rescate	accidente
+Relation	T8	T2	NoRel	true	labores	inicio

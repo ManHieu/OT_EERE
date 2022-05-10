@@ -1,0 +1,97 @@
+Text	The flyer was later traced to a printing shop operated by two anarchists , typesetter Andrea Salsedo and compositor Roberto Elia , who were both Galleanists according to the later memoirs of other members .	Salsedo committed suicide and Elia refused an offer to cancel deportation proceedings if he would testify about his role in the Galleanist organization .	Unable to secure enough evidence for criminal trials , authorities continued to use the Anarchist Exclusion Act and related statutes to deport known Galleanists .	Fueled by labor unrest and the anarchist bombings and then spurred on by Attorney General A. Mitchell Palmer 's attempt to suppress radical and non-radical labor organizations , the response to the bombings was characterized by exaggerated rhetoric , illegal search and seizures , unwarranted arrests and detentions and the deportation of several hundred suspected radicals and anarchists .	Palmer , twice targeted by anarchist bombs , organized the nationwide series of police actions known as the Palmer raids in November 1919 and January 1920 .
+Event	T0	traced	EVENT	20
+Event	T1	operated	EVENT	46
+Event	T2	memoirs	EVENT	180
+Event	T3	suicide	EVENT	225
+Event	T4	refused	EVENT	242
+Event	T5	offer	EVENT	253
+Event	T6	proceedings	EVENT	281
+Event	T7	testify	EVENT	305
+Event	T8	secure	EVENT	371
+Event	T9	trials	EVENT	407
+Event	T10	continued	EVENT	428
+Event	T11	use	EVENT	441
+Event	T12	deport	EVENT	497
+Event	T13	Fueled	EVENT	524
+Event	T14	unrest	EVENT	540
+Event	T15	bombings	EVENT	565
+Event	T16	attempt	EVENT	636
+Event	T17	suppress	EVENT	647
+Event	T18	response	EVENT	706
+Event	T19	bombings	EVENT	722
+Event	T20	characterized	EVENT	735
+Event	T21	rhetoric	EVENT	764
+Event	T22	search	EVENT	783
+Event	T23	seizures	EVENT	794
+Event	T24	arrests	EVENT	817
+Event	T25	detentions	EVENT	829
+Event	T26	deportation	EVENT	848
+Event	T27	targeted	EVENT	930
+Event	T28	bombs	EVENT	952
+Event	T29	organized	EVENT	960
+Event	T30	raids	EVENT	1030
+Event	T31	spurred	EVENT	583
+Relation	T27	T29	SuperSub	true	targeted	organized
+Relation	T29	T27	SubSuper	true	organized	targeted
+Relation	T0	T26	NoRel	true	traced	deportation
+Relation	T1	T23	NoRel	true	operated	seizures
+Relation	T11	T24	NoRel	true	use	arrests
+Relation	T12	T11	NoRel	true	deport	use
+Relation	T12	T13	NoRel	true	deport	Fueled
+Relation	T12	T24	NoRel	true	deport	arrests
+Relation	T12	T27	NoRel	true	deport	targeted
+Relation	T13	T29	NoRel	true	Fueled	organized
+Relation	T13	T3	NoRel	true	Fueled	suicide
+Relation	T14	T29	NoRel	true	unrest	organized
+Relation	T16	T25	NoRel	true	attempt	detentions
+Relation	T17	T0	NoRel	true	suppress	traced
+Relation	T18	T17	NoRel	true	response	suppress
+Relation	T18	T2	NoRel	true	response	memoirs
+Relation	T18	T20	NoRel	true	response	characterized
+Relation	T19	T6	NoRel	true	bombings	proceedings
+Relation	T2	T31	NoRel	true	memoirs	spurred
+Relation	T2	T7	NoRel	true	memoirs	testify
+Relation	T20	T26	NoRel	true	characterized	deportation
+Relation	T20	T3	NoRel	true	characterized	suicide
+Relation	T21	T19	NoRel	true	rhetoric	bombings
+Relation	T21	T24	NoRel	true	rhetoric	arrests
+Relation	T22	T11	NoRel	true	search	use
+Relation	T22	T27	NoRel	true	search	targeted
+Relation	T23	T7	NoRel	true	seizures	testify
+Relation	T24	T19	NoRel	true	arrests	bombings
+Relation	T24	T29	NoRel	true	arrests	organized
+Relation	T25	T15	NoRel	true	detentions	bombings
+Relation	T26	T27	NoRel	true	deportation	targeted
+Relation	T27	T22	NoRel	true	targeted	search
+Relation	T27	T28	NoRel	true	targeted	bombs
+Relation	T27	T30	NoRel	true	targeted	raids
+Relation	T27	T4	NoRel	true	targeted	refused
+Relation	T27	T7	NoRel	true	targeted	testify
+Relation	T28	T1	NoRel	true	bombs	operated
+Relation	T28	T15	NoRel	true	bombs	bombings
+Relation	T28	T9	NoRel	true	bombs	trials
+Relation	T29	T14	NoRel	true	organized	unrest
+Relation	T29	T19	NoRel	true	organized	bombings
+Relation	T29	T4	NoRel	true	organized	refused
+Relation	T3	T23	NoRel	true	suicide	seizures
+Relation	T3	T29	NoRel	true	suicide	organized
+Relation	T30	T20	NoRel	true	raids	characterized
+Relation	T30	T25	NoRel	true	raids	detentions
+Relation	T30	T5	NoRel	true	raids	offer
+Relation	T31	T15	NoRel	true	spurred	bombings
+Relation	T31	T19	NoRel	true	spurred	bombings
+Relation	T31	T24	NoRel	true	spurred	arrests
+Relation	T31	T7	NoRel	true	spurred	testify
+Relation	T31	T8	NoRel	true	spurred	secure
+Relation	T31	T9	NoRel	true	spurred	trials
+Relation	T4	T17	NoRel	true	refused	suppress
+Relation	T4	T31	NoRel	true	refused	spurred
+Relation	T4	T7	NoRel	true	refused	testify
+Relation	T5	T7	NoRel	true	offer	testify
+Relation	T6	T12	NoRel	true	proceedings	deport
+Relation	T6	T19	NoRel	true	proceedings	bombings
+Relation	T6	T20	NoRel	true	proceedings	characterized
+Relation	T7	T28	NoRel	true	testify	bombs
+Relation	T7	T31	NoRel	true	testify	spurred
+Relation	T8	T11	NoRel	true	secure	use
+Relation	T8	T9	NoRel	true	secure	trials

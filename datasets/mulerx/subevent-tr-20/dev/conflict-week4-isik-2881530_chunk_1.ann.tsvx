@@ -1,0 +1,29 @@
+Text	Aşağıdakiler reddettiklerinde Sovyet askerleri tarafından kanala atılan benzin , pentaeritritol tetranitrat ve trinitrotoluen karışımının yol açtığı patlamada diri diri yakılarak öldürüldüler .	Kanalda saklanan insanlar ya askeriyeye sürülmelerini engellemek ya da Sovyet saldırılarından korktukları için saklanıyorlardı .	Katliamda çocuklar , yaşlılar ve savaşçılar dahil 105 kişi öldürüldü .	Kurbanların 61'i köylülerdi .	Yüzlerce Kızıl Ordu askeri , herhangi bir savaşçının köyü savunmak için müdahale edip etmeyeceğini görmek için köyde kaldı .
+Event	T0	reddettiklerinde	EVENT	13
+Event	T1	atılan	EVENT	65
+Event	T2	öldürüldüler	EVENT	179
+Event	T3	sürülmelerini	EVENT	234
+Event	T4	Katliamda	EVENT	323
+Event	T5	öldürüldü	EVENT	382
+Event	T6	müdahale	EVENT	496
+Event	T7	görmek	EVENT	523
+Event	T8	kaldı	EVENT	541
+Event	T9	patlamada	EVENT	149
+Event	T10	yakılarak	EVENT	169
+Event	T11	saklanan	EVENT	202
+Event	T12	saldırılarından	EVENT	272
+Event	T13	saklanıyorlardı	EVENT	305
+Event	T14	engellemek	EVENT	248
+Relation	T0	T4	NoRel	true	reddettiklerinde	Katliamda
+Relation	T0	T6	NoRel	true	reddettiklerinde	müdahale
+Relation	T1	T3	NoRel	true	atılan	sürülmelerini
+Relation	T12	T0	NoRel	true	saldırılarından	reddettiklerinde
+Relation	T14	T0	NoRel	true	engellemek	reddettiklerinde
+Relation	T14	T12	NoRel	true	engellemek	saldırılarından
+Relation	T2	T0	NoRel	true	öldürüldüler	reddettiklerinde
+Relation	T6	T12	NoRel	true	müdahale	saldırılarından
+Relation	T6	T2	NoRel	true	müdahale	öldürüldüler
+Relation	T7	T3	NoRel	true	görmek	sürülmelerini
+Relation	T8	T1	NoRel	true	kaldı	atılan
+Relation	T8	T3	NoRel	true	kaldı	sürülmelerini
+Relation	T9	T4	NoRel	true	patlamada	Katliamda

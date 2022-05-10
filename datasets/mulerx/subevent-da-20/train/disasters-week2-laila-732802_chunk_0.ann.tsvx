@@ -1,0 +1,13 @@
+Text	thumb| NASA-satellitbillede klokken 12:10 UTC af stormen .	thumb| Mange træer blev væltet eller skadet , her i Beder syd for Århus .	thumb| Væltet træ ved cykelsti i London .	OKTOBERORKANEN 2013 var en kortvarig , men yderst kraftig storm , der ramte dele af Nordvesteuropa den 27. –_30. oktober 2013 og forårsagede mindst 19 dødsfald .	Der var forudsagt vindstyrker på op til 130-145 km/t over Sydengland , men der blev om eftermiddagen den 28. målt vindstød i Sønderjylland på 53 m/s svarende til 193 km/t eller 103 knob , hvilket er rekorden for Danmark .
+Event	T0	stormen	EVENT	49
+Event	T1	væltet	EVENT	83
+Event	T2	skadet	EVENT	96
+Event	T3	storm	EVENT	233
+Event	T4	ramte	EVENT	245
+Event	T5	forårsagede	EVENT	304
+Event	T6	dødsfald	EVENT	326
+Relation	T4	T5	NoRel	true	ramte	forårsagede
+Relation	T5	T3	NoRel	true	forårsagede	storm
+Relation	T5	T6	NoRel	true	forårsagede	dødsfald
+Relation	T6	T0	NoRel	true	dødsfald	stormen
+Relation	T6	T5	NoRel	true	dødsfald	forårsagede

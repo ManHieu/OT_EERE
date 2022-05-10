@@ -1,0 +1,23 @@
+Text	Rossio meydânında yer alan ve devrinin en büyük hastanelerinden birisi olan Bütün Azizler Kraliyet Hastanesi yangınla yok oldu .	Halk kahramanı Nuno Álvares Pereira’nın mezarı kayboldu .	Depremde harâbeye dönen bir başka yer olan Carmo Rahibe Manastırı’nın çatısı çökmüş kalıntısı , depremi hatırlatması için korunmuş durumdadır .	Lizbon depremi Avrupa tarihinde hem teolojik hem felsefi hem de doğa bilimleri açısından bir dönüm noktası ifade etmektedir .	Leibniz'in iddia ettiği dünyanın yaşanılacak en güzel yer olduğu , tanrının bütün kötülüklere rağmen en iyi tanrı olduğu inancı yara aldı .
+Event	T0	oldu	EVENT	122
+Event	T1	kayboldu	EVENT	176
+Event	T2	dönen	EVENT	205
+Event	T3	çökmüş	EVENT	264
+Event	T4	hatırlatması	EVENT	291
+Event	T5	depremi	EVENT	338
+Event	T8	aldı	EVENT	590
+Event	T9	yangınla	EVENT	109
+Event	T10	Depremde	EVENT	187
+Event	T6	etmektedir	EVENT	444
+Event	T7	ettiği	EVENT	474
+Relation	T0	T10	NoRel	true	oldu	Depremde
+Relation	T10	T0	NoRel	true	Depremde	oldu
+Relation	T10	T6	NoRel	true	Depremde	etmektedir
+Relation	T10	T7	NoRel	true	Depremde	ettiği
+Relation	T2	T9	NoRel	true	dönen	yangınla
+Relation	T3	T2	NoRel	true	çökmüş	dönen
+Relation	T5	T1	NoRel	true	depremi	kayboldu
+Relation	T6	T0	NoRel	true	etmektedir	oldu
+Relation	T6	T3	NoRel	true	etmektedir	çökmüş
+Relation	T7	T4	NoRel	true	ettiği	hatırlatması
+Relation	T9	T7	NoRel	true	yangınla	ettiği

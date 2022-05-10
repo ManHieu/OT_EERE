@@ -1,0 +1,68 @@
+Text	At 18:27:20 , ICAO graphing of Digital Flight Data Recorder tapes showed that after a descent phase and a 10 second " nose - up " , KAL 007 was leveled out at pre-missile detonation altitude of , forward acceleration was back to pre-missile detonation rate of zero acceleration , and air speed had returned to pre-detonation velocity .	Yaw ( oscillations ) , begun at the time of missile detonation , continued decreasingly until the end of the 1 minute 44 second section of the tape .	The Boeing did not break up , explode or plummet immediately after the attack ; it continued its gradual descent for four minutes , then leveled off at ( 18:30 – 18:31 UTC ) , rather than continuing to descend to as previously reported to Tokyo Area Control Center .	It continued at this altitude for almost five more minutes ( 18:35 UTC ) .	The last cockpit voice recorder entry occurred at 18:27:46 while in this phase of the descent .
+Event	T0	graphing	EVENT	19
+Event	T1	showed	EVENT	66
+Event	T2	phase	EVENT	94
+Event	T3	acceleration	EVENT	204
+Event	T4	acceleration	EVENT	265
+Event	T5	oscillations	EVENT	342
+Event	T6	begun	EVENT	359
+Event	T7	detonation	EVENT	388
+Event	T8	explode	EVENT	516
+Event	T9	plummet	EVENT	527
+Event	T10	attack	EVENT	557
+Event	T11	continued	EVENT	569
+Event	T12	descent	EVENT	591
+Event	T13	continuing	EVENT	674
+Event	T14	descend	EVENT	688
+Event	T15	reported	EVENT	713
+Event	T16	continued	EVENT	756
+Event	T17	occurred	EVENT	866
+Event	T18	descent	EVENT	914
+Event	T19	descent	EVENT	86
+Event	T20	10 second " nose - up "	EVENT	106
+Event	T21	leveled out	EVENT	144
+Event	T22	returned	EVENT	298
+Event	T23	back	EVENT	221
+Event	T24	did not break up	EVENT	497
+Event	T25	leveled off	EVENT	623
+Relation	T5	T6	SuperSub	true	oscillations	begun
+Relation	T6	T5	SubSuper	true	begun	oscillations
+Relation	T5	T7	SuperSub	true	oscillations	detonation
+Relation	T7	T5	SubSuper	true	detonation	oscillations
+Relation	T25	T12	SuperSub	true	leveled off	descent
+Relation	T12	T25	SubSuper	true	descent	leveled off
+Relation	T25	T16	SuperSub	true	leveled off	continued
+Relation	T16	T25	SubSuper	true	continued	leveled off
+Relation	T10	T11	NoRel	true	attack	continued
+Relation	T10	T15	NoRel	true	attack	reported
+Relation	T10	T4	NoRel	true	attack	acceleration
+Relation	T11	T10	NoRel	true	continued	attack
+Relation	T12	T24	NoRel	true	descent	did not break up
+Relation	T13	T2	NoRel	true	continuing	phase
+Relation	T13	T22	NoRel	true	continuing	returned
+Relation	T13	T25	NoRel	true	continuing	leveled off
+Relation	T14	T4	NoRel	true	descend	acceleration
+Relation	T15	T11	NoRel	true	reported	continued
+Relation	T16	T21	NoRel	true	continued	leveled out
+Relation	T16	T6	NoRel	true	continued	begun
+Relation	T17	T9	NoRel	true	occurred	plummet
+Relation	T18	T2	NoRel	true	descent	phase
+Relation	T2	T11	NoRel	true	phase	continued
+Relation	T2	T6	NoRel	true	phase	begun
+Relation	T21	T10	NoRel	true	leveled out	attack
+Relation	T22	T24	NoRel	true	returned	did not break up
+Relation	T23	T0	NoRel	true	back	graphing
+Relation	T23	T1	NoRel	true	back	showed
+Relation	T23	T3	NoRel	true	back	acceleration
+Relation	T24	T10	NoRel	true	did not break up	attack
+Relation	T24	T2	NoRel	true	did not break up	phase
+Relation	T25	T10	NoRel	true	leveled off	attack
+Relation	T25	T21	NoRel	true	leveled off	leveled out
+Relation	T3	T11	NoRel	true	acceleration	continued
+Relation	T3	T22	NoRel	true	acceleration	returned
+Relation	T3	T7	NoRel	true	acceleration	detonation
+Relation	T7	T2	NoRel	true	detonation	phase
+Relation	T7	T25	NoRel	true	detonation	leveled off
+Relation	T7	T4	NoRel	true	detonation	acceleration
+Relation	T7	T9	NoRel	true	detonation	plummet
+Relation	T8	T18	NoRel	true	explode	descent

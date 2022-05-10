@@ -1,0 +1,32 @@
+Text	La rápida caída de temperatura con poco viento proporciona las condiciones para una formación de niebla conocida como niebla de radiación , caracterizada por una niebla espesa y baja que impacta significativamente las operaciones .	En septiembre de 2009 , un mes después del inicio de operaciones en el aeropuerto de Yichun , China Southern Airlines decidió no operar de noche en ese aeropuerto debido a preocupaciones con la seguridad de las operaciones .	La noche del accidente , el observatorio meteorológico del aeropuerto emitió boletines indicando las condiciones de visibilidad .	A las 19:00 , la visibilidad era de 1,0 km ( 0,62 mi ) , a las 21:00 era de 8,0 km ( 5,0 mi ) .	A las 21:08 , el aeropuerto emitió un boletín especial informando que la visibilidad se redujo a 2,8 km ( 1,7 millas ) y disminuyó rápidamente .
+Event	T0	caída	EVENT	10
+Event	T1	proporciona	EVENT	47
+Event	T2	formación	EVENT	84
+Event	T4	impacta	EVENT	187
+Event	T5	operaciones	EVENT	218
+Event	T6	inicio	EVENT	275
+Event	T7	operaciones	EVENT	285
+Event	T8	decidió	EVENT	350
+Event	T9	operar	EVENT	361
+Event	T10	preocupaciones	EVENT	404
+Event	T11	operaciones	EVENT	443
+Event	T12	accidente	EVENT	470
+Event	T13	indicando	EVENT	544
+Event	T14	emitió	EVENT	711
+Event	T15	boletín	EVENT	721
+Event	T16	informando	EVENT	738
+Event	T17	redujo	EVENT	771
+Event	T18	disminuyó	EVENT	804
+Event	T3	boletines	EVENT	534
+Relation	T0	T10	NoRel	true	caída	preocupaciones
+Relation	T1	T3	NoRel	true	proporciona	boletines
+Relation	T11	T10	NoRel	true	operaciones	preocupaciones
+Relation	T11	T15	NoRel	true	operaciones	boletín
+Relation	T11	T4	NoRel	true	operaciones	impacta
+Relation	T12	T1	NoRel	true	accidente	proporciona
+Relation	T13	T7	NoRel	true	indicando	operaciones
+Relation	T14	T1	NoRel	true	emitió	proporciona
+Relation	T15	T7	NoRel	true	boletín	operaciones
+Relation	T16	T0	NoRel	true	informando	caída
+Relation	T6	T12	NoRel	true	inicio	accidente
+Relation	T8	T14	NoRel	true	decidió	emitió

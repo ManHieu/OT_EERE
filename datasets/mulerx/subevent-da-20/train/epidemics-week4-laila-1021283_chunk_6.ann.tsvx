@@ -1,0 +1,30 @@
+Text	Isolatet _ Wuhan-Hu-1 _ ( GenBank-nummer MN908947 ) af 2019-nCoV viser store fylogenetiske ligheder med to coronavirus-isolater fra kinesiske flagermus , som blev karakteriseret i 2015 og 2017 .	Isolatets virusgenom omfatter 29.875 bp med 281 bp henholdsvis 325 bp lange uoversatte områder ved 5'-enden og henholdsvis 3'-enden .	De formodede kodende områder fordeler sig på 10 proteiner : en 7096 lang aminosyre ( AS ) ORF1ab-polyprotein , en 1282 AS lang overflade-glykoprotein ( S ) , et 75 AS hylsterprotein ( E ) , 222 AS membranglykoprotein ( M ) , en 419 AS nukleokapsid-fosfoprotein og yderligere 5 proteiner ( ORF3a , ORF6 , ORF7a , ORF8 og ORF10 ) .	Disse udgør genfølgen i SARS-virus og alle coronavira .	Diagnose af COVID-19 kunne foretages på et hospital ved svælgpodning med en vatpind , der derefter kunne sendes til undersøgelse med teknikken _ Real-Time Reverse Transcription–Polymerase Chain_Reaction _ ( RT-PCR ) .
+Event	T0	Isolatet	EVENT	0
+Event	T1	viser	EVENT	65
+Event	T2	karakteriseret	EVENT	163
+Event	T3	omfatter	EVENT	216
+Event	T4	kodende	EVENT	342
+Event	T5	fordeler	EVENT	358
+Event	T6	Diagnose	EVENT	715
+Event	T7	foretages	EVENT	742
+Event	T8	svælgpodning	EVENT	771
+Event	T9	undersøgelse	EVENT	831
+Event	T10	ligheder	EVENT	91
+Event	T11	coronavirus-isolater	EVENT	107
+Event	T12	SARS-virus	EVENT	683
+Event	T13	coronavira	EVENT	702
+Event	T14	COVID-19	EVENT	727
+Relation	T8	T9	SuperSub	true	svælgpodning	undersøgelse
+Relation	T9	T8	SubSuper	true	undersøgelse	svælgpodning
+Relation	T0	T7	NoRel	true	Isolatet	foretages
+Relation	T10	T11	NoRel	true	ligheder	coronavirus-isolater
+Relation	T11	T0	NoRel	true	coronavirus-isolater	Isolatet
+Relation	T11	T7	NoRel	true	coronavirus-isolater	foretages
+Relation	T13	T12	NoRel	true	coronavira	SARS-virus
+Relation	T14	T7	NoRel	true	COVID-19	foretages
+Relation	T14	T9	NoRel	true	COVID-19	undersøgelse
+Relation	T3	T7	NoRel	true	omfatter	foretages
+Relation	T4	T3	NoRel	true	kodende	omfatter
+Relation	T6	T3	NoRel	true	Diagnose	omfatter
+Relation	T7	T5	NoRel	true	foretages	fordeler
+Relation	T9	T3	NoRel	true	undersøgelse	omfatter

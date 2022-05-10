@@ -1,0 +1,28 @@
+Text	- Falta de confianza en el Radar Meteorológico de la Aeronave ( el PF había tomado varias notas en el RTV sobre su operatividad ) .	- De acuerdo a los diferentes análisis , se pudo determinar que el sistema eléctrico de 115 Voltios AC no estaba energizado , por lo que se presume que el checklist no se realizó correctamente en diferentes procedimientos , lo que llevó a evitar elementos de control para el funcionamiento de la navegación .	instrumentos .	( El control de encendido de los inversores está marcado con un asterisco en las listas de verificación de la aeronave , lo que determina que el elemento debe realizarse con la ayuda del NFP ) .	- El PF había realizado sus últimos cinco vuelos en otra aeronave , en la que aunque es el mismo modelo que el accidente , los inversores no energizan los Instrumentos de Navegación .
+Event	T0	tomado	EVENT	76
+Event	T1	análisis	EVENT	162
+Event	T2	determinar	EVENT	181
+Event	T4	checklist	EVENT	287
+Event	T6	llevó	EVENT	363
+Event	T7	control	EVENT	391
+Event	T8	navegación	EVENT	428
+Event	T9	control	EVENT	461
+Event	T10	encendido	EVENT	472
+Event	T11	marcado	EVENT	505
+Event	T12	verificación	EVENT	547
+Event	T13	determina	EVENT	584
+Event	T14	realizado	EVENT	665
+Event	T15	vuelos	EVENT	693
+Event	T16	accidente	EVENT	762
+Event	T17	energizan	EVENT	792
+Relation	T1	T2	SuperSub	true	análisis	determinar
+Relation	T2	T1	SubSuper	true	determinar	análisis
+Relation	T1	T14	NoRel	true	análisis	realizado
+Relation	T1	T7	NoRel	true	análisis	control
+Relation	T11	T12	NoRel	true	marcado	verificación
+Relation	T11	T6	NoRel	true	marcado	llevó
+Relation	T16	T11	NoRel	true	accidente	marcado
+Relation	T2	T12	NoRel	true	determinar	verificación
+Relation	T7	T6	NoRel	true	control	llevó
+Relation	T8	T12	NoRel	true	navegación	verificación
+Relation	T8	T2	NoRel	true	navegación	determinar

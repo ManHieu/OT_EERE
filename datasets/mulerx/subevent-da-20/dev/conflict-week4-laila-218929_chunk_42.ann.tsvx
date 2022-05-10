@@ -1,0 +1,38 @@
+Text	Desuden ville de være blevet klar over , at den græske flåde langt fra var i opløsning , men i stedet havde formeret en kamplinje og klar til angreb .	Men i stedet for at angribe straks , lod de allierede til i starten at bakke deres skibe væk , som om de var bange .	Ifølge Plutark var dette for at blive bedre placeret , og også for at vinde tid indtil morgenvinden kom .	Herodot fortæller legenden om , at da flåden bakkede havde de set skikkelsen af en kvinde , som spurgte dem : _ " Galninge , hvor langt vil I yderligere bakke jeres skibe ? " _	Mere plausibelt fortæller han , at mens de allierede bakkede , skød et enkelt skib frem for at vædre det nærmeste persiske fartøj .
+Event	T0	opløsning	EVENT	77
+Event	T1	formeret	EVENT	108
+Event	T2	angreb	EVENT	142
+Event	T3	angribe	EVENT	171
+Event	T4	vinde	EVENT	338
+Event	T5	kom	EVENT	368
+Event	T6	bakkede	EVENT	419
+Event	T7	set	EVENT	436
+Event	T8	spurgte	EVENT	470
+Event	T9	bakke	EVENT	527
+Event	T10	fortæller	EVENT	567
+Event	T11	bakkede	EVENT	604
+Event	T12	skød	EVENT	614
+Event	T13	vædre	EVENT	646
+Event	T14	blevet	EVENT	22
+Event	T15	bakke	EVENT	222
+Event	T16	placeret	EVENT	312
+Relation	T11	T12	SuperSub	true	bakkede	skød
+Relation	T12	T11	SubSuper	true	skød	bakkede
+Relation	T0	T1	NoRel	true	opløsning	formeret
+Relation	T0	T3	NoRel	true	opløsning	angribe
+Relation	T1	T0	NoRel	true	formeret	opløsning
+Relation	T1	T12	NoRel	true	formeret	skød
+Relation	T1	T4	NoRel	true	formeret	vinde
+Relation	T1	T9	NoRel	true	formeret	bakke
+Relation	T10	T8	NoRel	true	fortæller	spurgte
+Relation	T12	T0	NoRel	true	skød	opløsning
+Relation	T12	T13	NoRel	true	skød	vædre
+Relation	T15	T0	NoRel	true	bakke	opløsning
+Relation	T15	T10	NoRel	true	bakke	fortæller
+Relation	T15	T5	NoRel	true	bakke	kom
+Relation	T2	T11	NoRel	true	angreb	bakkede
+Relation	T2	T9	NoRel	true	angreb	bakke
+Relation	T3	T4	NoRel	true	angribe	vinde
+Relation	T4	T10	NoRel	true	vinde	fortæller
+Relation	T4	T14	NoRel	true	vinde	blevet
+Relation	T8	T13	NoRel	true	spurgte	vædre

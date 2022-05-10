@@ -1,0 +1,12 @@
+Text	Habertürk Ankara Temsilcisi Bülent Aydemir , Van’da 38 kişinin yaşamını yitirdiği çığ felaketleri hakkında konuşurken Cumhurbaşkanı Başdanışmanı Gülşen Orhan’ın “ çığ konusunda uyarıldığını ancak yine de bölgeye iş makinelerini alıp gittiğini ” öne sürdü .	Orhan ise iddiaları yalanladı , bölgeye ilk çığ düştüğünde Ankara’da olduğunu söyledi .	[ http : / / www. independent turkish . com / node / 128396 / haber / cumhurbaşkanı - danışmanı - çığ - konusunda - uyarılmıştı - iddiasına - gülşen - orhandan - yanıt .	“ Habertürk Ankara Temsilcisi Aydemir : Cumhurbaşkanı Danışmanı , Çığ Konusunda Uyarılmıştı .	” ] Independent Türkçe .
+Event	T0	yitirdiği	EVENT	72
+Event	T1	felaketleri	EVENT	86
+Event	T2	sürdü	EVENT	249
+Event	T3	yalanladı	EVENT	277
+Event	T4	söyledi	EVENT	335
+Event	T5	konuşurken	EVENT	107
+Event	T6	uyarılmıştı	EVENT	461
+Event	T7	iddiasına	EVENT	475
+Event	T8	yanıt	EVENT	507
+Relation	T0	T6	NoRel	true	yitirdiği	uyarılmıştı
+Relation	T8	T4	NoRel	true	yanıt	söyledi

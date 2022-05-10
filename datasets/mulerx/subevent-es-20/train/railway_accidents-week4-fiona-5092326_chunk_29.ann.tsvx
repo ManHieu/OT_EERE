@@ -1,0 +1,49 @@
+Text	Leandro Despouy indicó : “ no hay ninguna duda de que el Estado tiene una responsabilidad mayúscula en lo que concierne a la concesión de un servicio público , que sigue estando en manos del Estado : sólo se concede en la medida en que la empresa cumpla estrictamente con las condiciones que el propio Estado establece en el contrato de concesión ” .	La Auditoría General de la Nación presentó un informe el 2 de marzo de 2012 recomendando “ intimar a TBA para que dé cumplimiento a las tareas de mantenimiento , que garanticen la correcta conservación de los bienes concesionados y la seguridad operativa del sistema , contemplando la totalidad de las rutinas establecidas para el material rodante ” .	Desde su privatización en 1995 , TBA recibía subsidios .	El día del accidente , por la tarde , Juan Pablo Schiavi dio una conferencia de prensa sin responder preguntas .	Mencionó que no sabían aún qué pasó en los últimos 40 metros , ni por qué no paró el tren , y precisó que la formación ingresó al andén con una velocidad habitual .
+Event	T0	indicó	EVENT	16
+Event	T1	concesión	EVENT	125
+Event	T2	concede	EVENT	208
+Event	T3	cumpla	EVENT	247
+Event	T4	establece	EVENT	309
+Event	T5	concesión	EVENT	337
+Event	T6	presentó	EVENT	385
+Event	T7	recomendando	EVENT	427
+Event	T8	intimar	EVENT	442
+Event	T9	tareas	EVENT	487
+Event	T10	garanticen	EVENT	517
+Event	T11	conservación	EVENT	540
+Event	T12	establecidas	EVENT	661
+Event	T13	privatización	EVENT	712
+Event	T14	accidente	EVENT	771
+Event	T15	dio	EVENT	817
+Event	T16	conferencia	EVENT	825
+Event	T17	Mencionó	EVENT	873
+Event	T18	pasó	EVENT	904
+Event	T19	precisó	EVENT	967
+Event	T20	ingresó	EVENT	992
+Event	T21	responsabilidad	EVENT	74
+Relation	T1	T21	SuperSub	true	concesión	responsabilidad
+Relation	T21	T1	SubSuper	true	responsabilidad	concesión
+Relation	T14	T16	SuperSub	true	accidente	conferencia
+Relation	T16	T14	SubSuper	true	conferencia	accidente
+Relation	T0	T7	NoRel	true	indicó	recomendando
+Relation	T1	T0	NoRel	true	concesión	indicó
+Relation	T1	T20	NoRel	true	concesión	ingresó
+Relation	T1	T7	NoRel	true	concesión	recomendando
+Relation	T11	T21	NoRel	true	conservación	responsabilidad
+Relation	T12	T8	NoRel	true	establecidas	intimar
+Relation	T13	T10	NoRel	true	privatización	garanticen
+Relation	T15	T10	NoRel	true	dio	garanticen
+Relation	T15	T16	NoRel	true	dio	conferencia
+Relation	T17	T13	NoRel	true	Mencionó	privatización
+Relation	T18	T10	NoRel	true	pasó	garanticen
+Relation	T18	T8	NoRel	true	pasó	intimar
+Relation	T19	T11	NoRel	true	precisó	conservación
+Relation	T20	T10	NoRel	true	ingresó	garanticen
+Relation	T3	T8	NoRel	true	cumpla	intimar
+Relation	T5	T20	NoRel	true	concesión	ingresó
+Relation	T6	T4	NoRel	true	presentó	establece
+Relation	T7	T11	NoRel	true	recomendando	conservación
+Relation	T8	T10	NoRel	true	intimar	garanticen
+Relation	T8	T14	NoRel	true	intimar	accidente
+Relation	T8	T7	NoRel	true	intimar	recomendando
+Relation	T9	T20	NoRel	true	tareas	ingresó

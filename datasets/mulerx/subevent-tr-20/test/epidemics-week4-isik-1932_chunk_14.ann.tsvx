@@ -1,0 +1,15 @@
+Text	Bazı kuruluşların ' pencere dönemi ' ile ilgili olarak verdikleri süreler , " Üçüncü Ay"ın _ maksimum _ sınır olarak düşünülmesi gerektiğini kanıtlamaktadır :	- New York Sağlık Müdürlüğü’nün hazırladığı broşüre göre " New York’ta kullanılan HIV antikor testlerinde , enfekte olmuş insanların neredeyse tümü bir ayda pozitif çıkmaktadır .	Hatta bunların çoğunluğu , daha kısa surede bile pozitif sonuc vermektedir .	" - Kaliforniya AIDS Merkezi'nin 1998'de yayınladığı rehber % 96'dan daha fazla sayıda insanın , 2 ile 12 hafta arasında pozitif sonucu eline alacağını söylüyor .	Çok nadir bazı durumlarda , bunun altı aya uzayabileceği belirtiliyor .
+Event	T3	vermektedir	EVENT	401
+Event	T5	söylüyor	EVENT	567
+Event	T6	belirtiliyor	EVENT	635
+Event	T7	çıkmaktadır	EVENT	324
+Event	T1	testlerinde	EVENT	253
+Event	T2	olmuş	EVENT	275
+Event	T4	rehber	EVENT	468
+Event	T8	durumlarda	EVENT	593
+Event	T9	broşüre	EVENT	203
+Relation	T1	T7	NoRel	true	testlerinde	çıkmaktadır
+Relation	T3	T7	NoRel	true	vermektedir	çıkmaktadır
+Relation	T5	T8	NoRel	true	söylüyor	durumlarda
+Relation	T6	T4	NoRel	true	belirtiliyor	rehber
+Relation	T7	T3	NoRel	true	çıkmaktadır	vermektedir

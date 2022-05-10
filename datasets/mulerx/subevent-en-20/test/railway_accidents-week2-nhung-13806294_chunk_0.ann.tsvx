@@ -1,0 +1,40 @@
+Text	A RUNAWAY TRAIN is a type of railroad incident in which unattended rolling stock is accidentally allowed to roll onto the main line , a moving train loses enough braking power to be unable to stop in safety , or a train operates at unsafe speeds due to loss of operator control .	If the uncontrolled rolling stock derails or hits another train , it will result in a train wreck .	A railway air brake can fail if valves on the pipe between each wagon are accidentally closed ; the 1953 Pennsylvania Railroad train wreck and the 1988 Gare de Lyon train accident were results of a valve accidentally closed by the crew , reducing braking power .	A parked train or cut of cars may also run away if not properly tied down with a sufficient number of hand brakes .	Date Location Cause Details References
+Event	T0	incident	EVENT	38
+Event	T1	allowed	EVENT	97
+Event	T10	wreck	EVENT	372
+Event	T12	fail	EVENT	404
+Event	T13	closed	EVENT	467
+Event	T14	wreck	EVENT	513
+Event	T15	accident	EVENT	551
+Event	T16	results	EVENT	565
+Event	T17	closed	EVENT	597
+Event	T18	parked	EVENT	645
+Event	T19	cut	EVENT	661
+Event	T2	moving	EVENT	136
+Event	T3	loses	EVENT	149
+Event	T4	stop	EVENT	192
+Event	T5	operates	EVENT	220
+Event	T6	loss	EVENT	253
+Event	T7	derails	EVENT	314
+Event	T8	hits	EVENT	325
+Event	T9	result	EVENT	354
+Relation	T0	T14	NoRel	true	incident	wreck
+Relation	T10	T9	NoRel	true	wreck	result
+Relation	T12	T19	NoRel	true	fail	cut
+Relation	T14	T12	NoRel	true	wreck	fail
+Relation	T14	T3	NoRel	true	wreck	loses
+Relation	T15	T13	NoRel	true	accident	closed
+Relation	T16	T14	NoRel	true	results	wreck
+Relation	T16	T2	NoRel	true	results	moving
+Relation	T17	T13	NoRel	true	closed	closed
+Relation	T17	T14	NoRel	true	closed	wreck
+Relation	T17	T2	NoRel	true	closed	moving
+Relation	T18	T2	NoRel	true	parked	moving
+Relation	T2	T13	NoRel	true	moving	closed
+Relation	T2	T15	NoRel	true	moving	accident
+Relation	T5	T7	NoRel	true	operates	derails
+Relation	T5	T9	NoRel	true	operates	result
+Relation	T6	T17	NoRel	true	loss	closed
+Relation	T6	T7	NoRel	true	loss	derails
+Relation	T8	T2	NoRel	true	hits	moving
+Relation	T9	T19	NoRel	true	result	cut

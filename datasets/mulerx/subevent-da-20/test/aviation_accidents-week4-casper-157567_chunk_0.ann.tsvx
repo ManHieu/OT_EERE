@@ -1,0 +1,44 @@
+Text	thumb| World Trade Center i marts 2001	Siden TERRORANGREBET DEN 11. SEPTEMBER 2001 er der opstået mange forskellige KONSPIRATIONSTEORIER , som søger andre forklaringer end de generelt accepterede beskrivelser af hændelserne .	Mange af teorierne tager udgangspunkt i , at den amerikanske regering enten kendte til eller direkte stod bag angrebene .	Formålet skulle være skabe en slags afgørende hændelse , som kunne samle den amerikanske befolkning bag en aggressiv udenrigspolitik , i lighed med de politiske virkninger af sænkningen af Lusitania , den tyske rigsdagsbrand eller angrebet på Pearl Harbor .	I andre teorier gøres Israel eller en jødisk sammensværgelse ansvarlig i stedet for den amerikanske regering , eller ansvaret henføres til pan-nationale hemmelige organisationer .
+Event	T0	TERRORANGREBET	EVENT	45
+Event	T1	opstået	EVENT	90
+Event	T2	søger	EVENT	143
+Event	T3	hændelserne	EVENT	212
+Event	T4	tager	EVENT	245
+Event	T5	stod	EVENT	327
+Event	T6	angrebene	EVENT	336
+Event	T7	skabe	EVENT	369
+Event	T8	hændelse	EVENT	394
+Event	T9	samle	EVENT	415
+Event	T10	virkninger	EVENT	509
+Event	T11	sænkningen	EVENT	523
+Event	T12	angrebet	EVENT	579
+Event	T13	henføres	EVENT	732
+Event	T14	kendte	EVENT	302
+Relation	T1	T3	SuperSub	true	opstået	hændelserne
+Relation	T3	T1	SubSuper	true	hændelserne	opstået
+Relation	T6	T5	SuperSub	true	angrebene	stod
+Relation	T5	T6	SubSuper	true	stod	angrebene
+Relation	T6	T14	SuperSub	true	angrebene	kendte
+Relation	T14	T6	SubSuper	true	kendte	angrebene
+Relation	T1	T6	SuperSub	true	opstået	angrebene
+Relation	T6	T1	SubSuper	true	angrebene	opstået
+Relation	T7	T4	SuperSub	true	skabe	tager
+Relation	T4	T7	SubSuper	true	tager	skabe
+Relation	T9	T7	SuperSub	true	samle	skabe
+Relation	T7	T9	SubSuper	true	skabe	samle
+Relation	T10	T11	SuperSub	true	virkninger	sænkningen
+Relation	T11	T10	SubSuper	true	sænkningen	virkninger
+Relation	T10	T12	SuperSub	true	virkninger	angrebet
+Relation	T12	T10	SubSuper	true	angrebet	virkninger
+Relation	T11	T2	NoRel	true	sænkningen	søger
+Relation	T12	T9	NoRel	true	angrebet	samle
+Relation	T14	T1	NoRel	true	kendte	opstået
+Relation	T2	T10	NoRel	true	søger	virkninger
+Relation	T2	T14	NoRel	true	søger	kendte
+Relation	T2	T7	NoRel	true	søger	skabe
+Relation	T3	T0	NoRel	true	hændelserne	TERRORANGREBET
+Relation	T3	T4	NoRel	true	hændelserne	tager
+Relation	T5	T12	NoRel	true	stod	angrebet
+Relation	T6	T8	NoRel	true	angrebene	hændelse
+Relation	T8	T9	NoRel	true	hændelse	samle
+Relation	T9	T6	NoRel	true	samle	angrebene

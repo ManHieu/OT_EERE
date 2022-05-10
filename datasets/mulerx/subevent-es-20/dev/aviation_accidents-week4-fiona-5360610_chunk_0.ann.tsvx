@@ -1,0 +1,16 @@
+Text	El VUELO 1153 DE TUNINTER fue un vuelo de Tuninter Airlines desde el Aeropuerto Internacional de Bari en Bari , Italia , al Aeropuerto de Djerba-Zarzis en Djerba , Túnez .	El 6 de agosto de 2005 , el ATR 72 de Tuninter se precipitó sobre el Mar Mediterráneo a unas 18 millas ( 29 km ) de la ciudad de Palermo .	Dieciséis de las 39 personas a bordo murieron .	El accidente se produjo debido al agotamiento del combustible del motor a causa de la instalación de indicadores de cantidad de combustible para el ATR 42 , en el ATR 72 que es más largo .	El avión , un ATR 72 , había reemplazado su indicador de cantidad de combustible ( FQI ) la noche anterior al accidente , pero los técnicos habían instalado sin querer un FQI diseñado para el ATR 42 , un avión similar pero con tanques más pequeños .
+Event	T0	vuelo	EVENT	33
+Event	T1	precipitó	EVENT	222
+Event	T2	murieron	EVENT	348
+Event	T3	agotamiento	EVENT	393
+Event	T4	instalación	EVENT	445
+Event	T5	reemplazado	EVENT	577
+Event	T6	accidente	EVENT	658
+Event	T7	instalado	EVENT	695
+Event	T8	diseñado	EVENT	723
+Event	T9	accidente	EVENT	362
+Relation	T0	T8	NoRel	true	vuelo	diseñado
+Relation	T3	T5	NoRel	true	agotamiento	reemplazado
+Relation	T4	T9	NoRel	true	instalación	accidente
+Relation	T6	T8	NoRel	true	accidente	diseñado
+Relation	T9	T8	NoRel	true	accidente	diseñado

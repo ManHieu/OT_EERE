@@ -1,0 +1,53 @@
+Text	It is suspected that she contracted the disease from the semen of an Ebola survivor who had been discharged in March 2015 .	On 27 September a new 42 - day countdown began to declare the country Ebola - free , which eventually occurred on 7 November 2015 ; thereafter , the country increased its vigilance on the Guinean border .	Sierra Leone had entered a 90 - day period of enhanced surveillance that was scheduled to end on 5 February 2016 , when , on 14 January , a new Ebola death was reported in the Tonkolili District .	Prior to this case , the WHO had advised that " we still anticipate more flare - ups and must be prepared for them .	A massive effort is underway to ensure robust prevention , surveillance and response capacity across all three countries by the end of March . "
+Event	T0	suspected	EVENT	6
+Event	T1	contracted	EVENT	25
+Event	T10	surveillance	EVENT	384
+Event	T11	scheduled	EVENT	406
+Event	T12	end	EVENT	419
+Event	T13	death	EVENT	479
+Event	T14	reported	EVENT	489
+Event	T15	advised	EVENT	559
+Event	T16	anticipate	EVENT	583
+Event	T17	prepared	EVENT	623
+Event	T18	effort	EVENT	653
+Event	T19	underway	EVENT	663
+Event	T2	disease	EVENT	40
+Event	T20	prevention	EVENT	689
+Event	T21	surveillance	EVENT	702
+Event	T22	response	EVENT	719
+Event	T23	ensure	EVENT	675
+Event	T3	discharged	EVENT	97
+Event	T4	began	EVENT	165
+Event	T5	declare	EVENT	174
+Event	T6	occurred	EVENT	226
+Event	T7	increased	EVENT	281
+Event	T8	vigilance	EVENT	295
+Event	T9	entered	EVENT	346
+Relation	T9	T11	SuperSub	true	entered	scheduled
+Relation	T11	T9	SubSuper	true	scheduled	entered
+Relation	T11	T12	SuperSub	true	scheduled	end
+Relation	T12	T11	SubSuper	true	end	scheduled
+Relation	T0	T15	NoRel	true	suspected	advised
+Relation	T0	T18	NoRel	true	suspected	effort
+Relation	T10	T8	NoRel	true	surveillance	vigilance
+Relation	T11	T3	NoRel	true	scheduled	discharged
+Relation	T13	T20	NoRel	true	death	prevention
+Relation	T13	T4	NoRel	true	death	began
+Relation	T14	T0	NoRel	true	reported	suspected
+Relation	T14	T8	NoRel	true	reported	vigilance
+Relation	T15	T0	NoRel	true	advised	suspected
+Relation	T15	T16	NoRel	true	advised	anticipate
+Relation	T16	T14	NoRel	true	anticipate	reported
+Relation	T16	T17	NoRel	true	anticipate	prepared
+Relation	T16	T7	NoRel	true	anticipate	increased
+Relation	T19	T22	NoRel	true	underway	response
+Relation	T2	T11	NoRel	true	disease	scheduled
+Relation	T2	T13	NoRel	true	disease	death
+Relation	T2	T8	NoRel	true	disease	vigilance
+Relation	T20	T10	NoRel	true	prevention	surveillance
+Relation	T23	T16	NoRel	true	ensure	anticipate
+Relation	T4	T22	NoRel	true	began	response
+Relation	T5	T12	NoRel	true	declare	end
+Relation	T6	T18	NoRel	true	occurred	effort
+Relation	T8	T18	NoRel	true	vigilance	effort
+Relation	T9	T5	NoRel	true	entered	declare

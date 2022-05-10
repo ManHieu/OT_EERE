@@ -1,0 +1,13 @@
+Text	Hoffmann hükûmeti konseyleri tamamen reddetti hükûmetin denetimdeki askeri birliklerle 13 Nisan’da saldırıya geçti .	Konsey yanlıları bu saldırıyı durdu .	Hükûmet bu yenilgi karşısında Bavyera’ya asker yollanması talebinde bulundu .	Bavyera’da da Freikorps birlikleri oluşturulmaya başlandı .	Bu güçler kısa sürede birleşip Münih’i kuşatma altına aldı .
+Event	T0	konseyleri	EVENT	18
+Event	T1	reddetti	EVENT	37
+Event	T3	durdu	EVENT	147
+Event	T4	yenilgi	EVENT	166
+Event	T7	birleşip	EVENT	315
+Event	T2	saldırıya	EVENT	99
+Event	T9	oluşturulmaya	EVENT	268
+Event	T5	talebinde	EVENT	213
+Event	T6	kuşatma	EVENT	332
+Relation	T0	T7	NoRel	true	konseyleri	birleşip
+Relation	T4	T1	NoRel	true	yenilgi	reddetti
+Relation	T9	T6	NoRel	true	oluşturulmaya	kuşatma

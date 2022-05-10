@@ -1,0 +1,37 @@
+Text	Moriarty var en af de første , der blev dræbt , mens han stormede ud af sit telt og skød tre zuluer med sin revolver .	De få overlevende flygtede ud i floden , mens soldaterne på den anden side gav så meget dækild som muligt .	Da de overlevende var nået i land på den anden side af floden , gav løjtnant _ Henry Harward _ , Moriartys næstkommanderende , ordre til tilbagetrækning , da flere hundrede zuluer begyndte at krydse floden .	Efter han havde givet denne ordre , flygtede han fra sine mænd på den nærmeste hest , han kunne finde .	De overlevende var derfor nu under _ sergent _ _ Anthony Booths _ kommando .
+Event	T0	dræbt	EVENT	40
+Event	T1	skød	EVENT	84
+Event	T2	gav	EVENT	194
+Event	T3	nået	EVENT	249
+Event	T4	gav	EVENT	291
+Event	T5	tilbagetrækning	EVENT	364
+Event	T6	begyndte	EVENT	407
+Event	T7	krydse	EVENT	419
+Event	T8	givet	EVENT	451
+Event	T9	flygtede	EVENT	471
+Event	T10	finde	EVENT	531
+Event	T11	kommando	EVENT	605
+Event	T12	stormede	EVENT	57
+Event	T13	overlevende	EVENT	125
+Event	T14	flygtede	EVENT	137
+Event	T15	dækild	EVENT	207
+Event	T16	overlevende	EVENT	233
+Event	T17	overlevende	EVENT	542
+Event	T18	ordre	EVENT	354
+Relation	T18	T9	SuperSub	true	ordre	flygtede
+Relation	T9	T18	SubSuper	true	flygtede	ordre
+Relation	T1	T14	NoRel	true	skød	flygtede
+Relation	T10	T11	NoRel	true	finde	kommando
+Relation	T11	T10	NoRel	true	kommando	finde
+Relation	T13	T2	NoRel	true	overlevende	gav
+Relation	T15	T0	NoRel	true	dækild	dræbt
+Relation	T16	T0	NoRel	true	overlevende	dræbt
+Relation	T16	T13	NoRel	true	overlevende	overlevende
+Relation	T16	T2	NoRel	true	overlevende	gav
+Relation	T3	T11	NoRel	true	nået	kommando
+Relation	T4	T14	NoRel	true	gav	flygtede
+Relation	T4	T7	NoRel	true	gav	krydse
+Relation	T5	T8	NoRel	true	tilbagetrækning	givet
+Relation	T7	T16	NoRel	true	krydse	overlevende
+Relation	T8	T0	NoRel	true	givet	dræbt
+Relation	T9	T16	NoRel	true	flygtede	overlevende

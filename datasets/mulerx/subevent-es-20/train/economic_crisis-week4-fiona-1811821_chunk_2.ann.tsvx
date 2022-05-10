@@ -1,0 +1,25 @@
+Text	El desplazamiento del buque , era de 22.616 toneladas estándar y 25_300 a plena carga .	El _ Moltke _ se movía gracias a cuatro hélices movidas por turbinas parsons , que recibían el vapor de 24 calderas Schulz-Thornycroft , lo que le daba una potencia total de 52_000 CV y una velocidad máxima de combate de 25,5 nudos .	Sin embargo , en sus pruebas de mar llegó a los 85_780 CV , con una velocidad máxima de 28,4 nudos .	El armamento fue aumentado a 10 cañones de 280 mm ( 11 ” ) en cinco torres gemelas , de las cuales dos se situaban a proa de manera superpuesta , otra a popa , y las dos restantes se situaban una en cada banda .	Inicialmente las torres permitían una elevación de 13 ° para un alcance máximo de 18 100 metros , aunque en 1916 se le dotó de los mecanismos necesarios para permitir una elevación de 16 ° , que permitían un alcance de 19 100 metros .
+Event	T0	desplazamiento	EVENT	3
+Event	T1	movía	EVENT	105
+Event	T2	movidas	EVENT	136
+Event	T3	recibían	EVENT	171
+Event	T4	daba	EVENT	235
+Event	T5	combate	EVENT	298
+Event	T6	pruebas	EVENT	343
+Event	T7	llegó	EVENT	358
+Event	T8	aumentado	EVENT	440
+Event	T9	situaban	EVENT	529
+Event	T10	situaban	EVENT	606
+Event	T11	permitían	EVENT	659
+Event	T12	elevación	EVENT	673
+Event	T13	dotó	EVENT	754
+Event	T14	elevación	EVENT	806
+Relation	T0	T12	NoRel	true	desplazamiento	elevación
+Relation	T1	T5	NoRel	true	movía	combate
+Relation	T11	T0	NoRel	true	permitían	desplazamiento
+Relation	T11	T5	NoRel	true	permitían	combate
+Relation	T12	T11	NoRel	true	elevación	permitían
+Relation	T13	T8	NoRel	true	dotó	aumentado
+Relation	T2	T1	NoRel	true	movidas	movía
+Relation	T6	T10	NoRel	true	pruebas	situaban
+Relation	T6	T3	NoRel	true	pruebas	recibían

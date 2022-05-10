@@ -1,0 +1,11 @@
+Text	Struensee var både inspireret af den tyske kameralisme og mange af de franske oplysningstænkere som d'Alembert og Diderot .	Det betød en fuldkommen omordning af adminstrationen , hæren og økonomien , foruden at han indførte fuldkommen trykkefrihed .	Struensees tid ved magten blev kort , og størstedelen af hans reformer blev fjernet af Guldbergs regering .	Ved Regeringsforandringen 14. april 1784 begyndte en ny periode i dansk oplysningstids historie .	Den unge kronprins Frederik kom til magten , og hans tidlige regeringsperiode var under stærk indflydelse af statsmanden Andreas Peter Bernstorff , som på mange punkter var liberal i sine holdninger .
+Event	T0	inspireret	EVENT	19
+Event	T1	betød	EVENT	128
+Event	T2	indførte	EVENT	215
+Event	T3	tid	EVENT	261
+Event	T4	fjernet	EVENT	326
+Event	T5	Regeringsforandringen	EVENT	362
+Event	T6	begyndte	EVENT	399
+Relation	T0	T2	SuperSub	true	inspireret	indførte
+Relation	T2	T0	SubSuper	true	indførte	inspireret
+Relation	T2	T3	NoRel	true	indførte	tid

@@ -1,0 +1,12 @@
+Text	El ministro de Transportes de Polonia , Slawomir Nowak , considera este accidente como _ Uno de los peores siniestros ferroviarios de los últimos años _ .	En declaraciones a la televisión polaca TVN24 , Nowak ha sostenido que aún se desconocen las causas de la colisión .	Los pasajeros ilesos fueron alojados en una escuela cercana al lugar del siniestro y posteriormente se les trasladó en autobús a Cracovia .	https : / / archive . is / 20120904212622 / www.google .com / hosted news / afp / article / ALeqM5iey R8OUAoAitDprUi2H0zpnq5Q2w ? docId = CNG .	f60383a827fe42093e0003bf49ab8a9d .
+Event	T0	considera	EVENT	57
+Event	T1	accidente	EVENT	72
+Event	T2	siniestros	EVENT	107
+Event	T3	declaraciones	EVENT	158
+Event	T4	sostenido	EVENT	212
+Event	T5	colisión	EVENT	261
+Event	T6	ilesos	EVENT	286
+Event	T7	alojados	EVENT	300
+Event	T8	siniestro	EVENT	345
+Relation	T2	T4	NoRel	true	siniestros	sostenido
+Relation	T7	T3	NoRel	true	alojados	declaraciones

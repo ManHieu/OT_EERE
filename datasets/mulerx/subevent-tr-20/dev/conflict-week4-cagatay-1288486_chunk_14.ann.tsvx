@@ -1,0 +1,16 @@
+Text	Başta tersane işçileri olmak üzere binlerce Kiel’li işçi gösteri düzenledi .	Subaylar göstericilere ateş edince askerlerde ayaklanarak asker konseyleri kurdular .	20.000 denizcinin kurduğu asker konseylerini , çoğunluğunu tersane işçilerinin oluşturduğu işçi konseyleri takip etti .	4 Kasım’da tüm Kiel şehrinin denetimi işçi ve asker konseylerinin elindeydi .	Ayaklanma 5 ve 6 Kasım’da Lübeck , Brunsbüttel’e daha sonra da Altona , Bremen , Bremenhaven , Cuxhaven , Flensburg , Hamburg , Neümünster , Oldenburg , Kendsburg ve Rostock şehirlerine yayılarak buralarda da işçi ve asker konseyleri kuruldu .
+Event	T0	düzenledi	EVENT	65
+Event	T1	ateş	EVENT	100
+Event	T2	kurdular	EVENT	152
+Event	T3	etti	EVENT	276
+Event	T4	denetimi	EVENT	312
+Event	T5	Ayaklanma	EVENT	361
+Event	T6	kuruldu	EVENT	595
+Event	T7	ayaklanarak	EVENT	123
+Event	T8	kurduğu	EVENT	181
+Event	T9	oluşturduğu	EVENT	242
+Event	T10	yayılarak	EVENT	547
+Relation	T10	T7	NoRel	true	yayılarak	ayaklanarak
+Relation	T4	T1	NoRel	true	denetimi	ateş
+Relation	T6	T8	NoRel	true	kuruldu	kurduğu
+Relation	T8	T7	NoRel	true	kurduğu	ayaklanarak

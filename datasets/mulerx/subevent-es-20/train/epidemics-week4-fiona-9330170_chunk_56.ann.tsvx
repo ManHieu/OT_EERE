@@ -1,0 +1,47 @@
+Text	[ miniaturadeimagen | Control policial en Vitoria durante el estado de alarma ( 17 de marzo ) ] Con el fin del estado de alarma , un total de más de 9.000 detenidos y casi 1,2 millones de sanciones fueron realizadas durante la pandemia .	Las comunidades de Madrid , Andalucía y Comunitat Valenciana han acaparado casi la mitad de todas las infracciones .	La Guardia Civil realizó 50_000 acciones humanitarias y desplegó 900.000 dispositivos para evitar reuniones y desplazamientos injustificados y ha protagonizado 91_000 intervenciones en casos de violencia de género .	Los casos de maltratos a personas mayores en la provincia de Barcelona se duplicaron durante el confinamiento según la Diputación de Barcelona .	Tras decretarse el estado de alarma , cerca de 10 millones de estudiantes de todos los ciclos educativos se vieron obligados a seguir con su formación a distancia mediante clases en línea .
+Event	T0	miniaturadeimagen	EVENT	2
+Event	T1	Control	EVENT	22
+Event	T2	alarma	EVENT	121
+Event	T3	detenidos	EVENT	155
+Event	T4	pandemia	EVENT	227
+Event	T5	acaparado	EVENT	303
+Event	T6	infracciones	EVENT	340
+Event	T7	realizó	EVENT	372
+Event	T8	desplegó	EVENT	411
+Event	T9	reuniones	EVENT	453
+Event	T10	protagonizado	EVENT	501
+Event	T11	intervenciones	EVENT	522
+Event	T12	violencia	EVENT	549
+Event	T13	casos	EVENT	575
+Event	T14	maltratos	EVENT	584
+Event	T15	duplicaron	EVENT	645
+Event	T16	decretarse	EVENT	721
+Event	T17	alarma	EVENT	745
+Event	T18	clases	EVENT	888
+Event	T19	sanciones	EVENT	188
+Relation	T4	T3	SuperSub	true	pandemia	detenidos
+Relation	T3	T4	SubSuper	true	detenidos	pandemia
+Relation	T4	T19	SuperSub	true	pandemia	sanciones
+Relation	T19	T4	SubSuper	true	sanciones	pandemia
+Relation	T0	T8	NoRel	true	miniaturadeimagen	desplegó
+Relation	T1	T14	NoRel	true	Control	maltratos
+Relation	T10	T1	NoRel	true	protagonizado	Control
+Relation	T11	T5	NoRel	true	intervenciones	acaparado
+Relation	T14	T12	NoRel	true	maltratos	violencia
+Relation	T15	T11	NoRel	true	duplicaron	intervenciones
+Relation	T15	T6	NoRel	true	duplicaron	infracciones
+Relation	T16	T14	NoRel	true	decretarse	maltratos
+Relation	T16	T15	NoRel	true	decretarse	duplicaron
+Relation	T17	T6	NoRel	true	alarma	infracciones
+Relation	T18	T2	NoRel	true	clases	alarma
+Relation	T2	T11	NoRel	true	alarma	intervenciones
+Relation	T3	T0	NoRel	true	detenidos	miniaturadeimagen
+Relation	T3	T10	NoRel	true	detenidos	protagonizado
+Relation	T3	T7	NoRel	true	detenidos	realizó
+Relation	T4	T18	NoRel	true	pandemia	clases
+Relation	T4	T9	NoRel	true	pandemia	reuniones
+Relation	T5	T11	NoRel	true	acaparado	intervenciones
+Relation	T5	T4	NoRel	true	acaparado	pandemia
+Relation	T6	T12	NoRel	true	infracciones	violencia
+Relation	T6	T18	NoRel	true	infracciones	clases
+Relation	T7	T14	NoRel	true	realizó	maltratos

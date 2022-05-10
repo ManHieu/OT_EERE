@@ -1,0 +1,30 @@
+Text	Following Zambia 's surprise defeat to Madagascar in a World Cup Qualifier in Antananarivo in December 1992 , coach Samuel Ndhlovu was sacked and Godfrey Chitalu was appointed national team coach with Chola as his assistant .	The two put together an exciting team which was tipped to make it all the way to the 1994 World Cup , but on their way to Senegal the team met its fate in the horrific air disaster off the coast of Gabon .	On 27 April 1993 , the Zambia national team traveled to Senegal for the first of their 1994 FIFA World Cup qualification games in the group stage .	The team 's mode of transportation was a Zambian Air Force plane .	After refueling in Libreville , Gabon , the plane developed problems and plunged into the sea .
+Event	T0	Following	EVENT	0
+Event	T1	defeat	EVENT	29
+Event	T2	Qualifier	EVENT	65
+Event	T3	sacked	EVENT	135
+Event	T4	appointed	EVENT	166
+Event	T5	tipped	EVENT	274
+Event	T6	fate	EVENT	373
+Event	T7	disaster	EVENT	398
+Event	T8	traveled	EVENT	476
+Event	T9	games	EVENT	553
+Event	T10	stage	EVENT	572
+Event	T11	transportation	EVENT	600
+Event	T12	refueling	EVENT	653
+Event	T13	problems	EVENT	707
+Event	T14	plunged	EVENT	720
+Event	T15	put together	EVENT	234
+Relation	T12	T13	SuperSub	true	refueling	problems
+Relation	T13	T12	SubSuper	true	problems	refueling
+Relation	T12	T14	SuperSub	true	refueling	plunged
+Relation	T14	T12	SubSuper	true	plunged	refueling
+Relation	T8	T7	SuperSub	true	traveled	disaster
+Relation	T7	T8	SubSuper	true	disaster	traveled
+Relation	T0	T14	NoRel	true	Following	plunged
+Relation	T0	T2	NoRel	true	Following	Qualifier
+Relation	T1	T2	NoRel	true	defeat	Qualifier
+Relation	T10	T1	NoRel	true	stage	defeat
+Relation	T12	T0	NoRel	true	refueling	Following
+Relation	T14	T0	NoRel	true	plunged	Following
+Relation	T3	T9	NoRel	true	sacked	games

@@ -1,0 +1,55 @@
+Text	Hudson and Reckard cited interviews and court statements by 32 former Ameriquest employees who said the company had abused its customers and broken the law , " deceiving borrowers about the terms of their loans , forging documents , falsifying appraisals and fabricating borrowers ' income to qualify them for loans they couldn't afford " .	Ameriquest later agreed to pay a $ 325 million predatory lending settlement with state authorities across the nation .	Some subprime lending advocates , such as the National Home Equity Mortgage Association ( NHEMA ) , say many practices commonly called " predatory , " particularly the practice of risk - based pricing , are not actually predatory , and that many laws aimed at reducing " predatory lending " significantly restrict the availability of mortgage finance to lower - income borrowers .	Such parties consider _ predatory lending _ a pejorative term .	- JUDICIAL PRACTICES : Some argue that much of the problem arises from a tendency of the courts to favor lenders , and to shift the burden of proof of compliance with the terms of the debt instrument to the debtor .
+Event	T0	interviews	EVENT	25
+Event	T1	statements	EVENT	46
+Event	T11	pay	EVENT	368
+Event	T12	lending	EVENT	398
+Event	T13	say	EVENT	560
+Event	T15	practice	EVENT	628
+Event	T16	pricing	EVENT	653
+Event	T17	aimed	EVENT	711
+Event	T18	reducing	EVENT	720
+Event	T19	lending	EVENT	741
+Event	T2	said	EVENT	95
+Event	T20	restrict	EVENT	765
+Event	T21	consider	EVENT	854
+Event	T22	PRACTICES	EVENT	916
+Event	T23	argue	EVENT	933
+Event	T24	arises	EVENT	964
+Event	T25	favor	EVENT	1004
+Event	T26	shift	EVENT	1027
+Event	T27	falsifying	EVENT	233
+Event	T3	abused	EVENT	116
+Event	T4	broken	EVENT	141
+Event	T5	deceiving	EVENT	160
+Event	T6	forging	EVENT	213
+Event	T7	loans	EVENT	310
+Event	T8	fabricating	EVENT	259
+Event	T9	qualify	EVENT	293
+Relation	T5	T6	SuperSub	true	deceiving	forging
+Relation	T6	T5	SubSuper	true	forging	deceiving
+Relation	T5	T27	SuperSub	true	deceiving	falsifying
+Relation	T27	T5	SubSuper	true	falsifying	deceiving
+Relation	T5	T8	SuperSub	true	deceiving	fabricating
+Relation	T8	T5	SubSuper	true	fabricating	deceiving
+Relation	T0	T17	NoRel	true	interviews	aimed
+Relation	T0	T20	NoRel	true	interviews	restrict
+Relation	T1	T9	NoRel	true	statements	qualify
+Relation	T11	T20	NoRel	true	pay	restrict
+Relation	T12	T11	NoRel	true	lending	pay
+Relation	T16	T11	NoRel	true	pricing	pay
+Relation	T16	T25	NoRel	true	pricing	favor
+Relation	T2	T11	NoRel	true	said	pay
+Relation	T2	T4	NoRel	true	said	broken
+Relation	T22	T18	NoRel	true	PRACTICES	reducing
+Relation	T24	T1	NoRel	true	arises	statements
+Relation	T24	T11	NoRel	true	arises	pay
+Relation	T26	T3	NoRel	true	shift	abused
+Relation	T3	T22	NoRel	true	abused	PRACTICES
+Relation	T4	T9	NoRel	true	broken	qualify
+Relation	T5	T12	NoRel	true	deceiving	lending
+Relation	T5	T2	NoRel	true	deceiving	said
+Relation	T7	T16	NoRel	true	loans	pricing
+Relation	T7	T25	NoRel	true	loans	favor
+Relation	T8	T25	NoRel	true	fabricating	favor
+Relation	T9	T15	NoRel	true	qualify	practice
+Relation	T9	T18	NoRel	true	qualify	reducing

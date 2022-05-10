@@ -1,0 +1,35 @@
+Text	The Flight Data Recorder was recovered intact from the wreckage , but the Cockpit Voice Recorder had been damaged in the post-crash fire and was unusable .	The weather at Glens Falls at the time of the accident was reported as " 2,100 ( feet ) overcast , visibility 7 ( miles ) in light rain , wind 180 ( degrees ) at 12 ( knots ) , peak gusts 22 ( knots ) , altimeter 2980 , runway 19 in use " .	The surface temperature was 54 degrees Fahrenheit ( 12 degrees Celsius ) .	The investigation revealed that ATC cleared the flight to " the VOR approach " , without actually specifying which specific VOR approach procedure was to be used , possibly leaving it to the flight crew 's discretion .	According to the radio communication transcript , the flight crew did not inquire as to which specific approach was in effect .
+Event	T0	intact	EVENT	39
+Event	T1	wreckage	EVENT	55
+Event	T2	damaged	EVENT	106
+Event	T3	fire	EVENT	132
+Event	T4	accident	EVENT	202
+Event	T5	reported	EVENT	215
+Event	T6	gusts	EVENT	338
+Event	T7	use	EVENT	389
+Event	T8	revealed	EVENT	490
+Event	T9	cleared	EVENT	508
+Event	T10	flight	EVENT	520
+Event	T11	specifying	EVENT	570
+Event	T12	used	EVENT	629
+Event	T13	leaving	EVENT	645
+Event	T14	inquire	EVENT	765
+Event	T15	approach	EVENT	794
+Event	T16	rain	EVENT	287
+Event	T17	approach	EVENT	540
+Event	T18	communication	EVENT	714
+Relation	T0	T14	NoRel	true	intact	inquire
+Relation	T1	T6	NoRel	true	wreckage	gusts
+Relation	T13	T17	NoRel	true	leaving	approach
+Relation	T14	T1	NoRel	true	inquire	wreckage
+Relation	T14	T18	NoRel	true	inquire	communication
+Relation	T17	T13	NoRel	true	approach	leaving
+Relation	T2	T1	NoRel	true	damaged	wreckage
+Relation	T2	T12	NoRel	true	damaged	used
+Relation	T2	T15	NoRel	true	damaged	approach
+Relation	T3	T17	NoRel	true	fire	approach
+Relation	T6	T5	NoRel	true	gusts	reported
+Relation	T7	T10	NoRel	true	use	flight
+Relation	T7	T3	NoRel	true	use	fire
+Relation	T8	T13	NoRel	true	revealed	leaving
+Relation	T8	T16	NoRel	true	revealed	rain

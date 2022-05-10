@@ -1,0 +1,29 @@
+Text	] [ miniaturadeimagen | 180 px | derecha | Automotor de la CP Serie 9500 .	] 28 DE OCTUBRE : La colisión entre un vehículo y un automotor de la CP Serie 0450 en un paso a nivel sin guardia junto a Leiría , en la Línea del Oeste , provoca tres muertos y un herido .	- 2007_____-___12 DE FEBRERO : Un automotor de la CP Serie 9500 descarrila y cae al río en la Línea del Túa cerca de Castanheiro , resultando en tres víctimas mortales y dos heridos .	- 2008_____-___11 DE MARZO : Una furgoneta de transporte de pacientes es alcanzada por una composición en un paso a nivel en la localidad de Montijos , en Leiría , provocando la muerte de cuatro personas .	- 4 DE MAYO : una composición del Metro de Porto descarriló después de una colisión con un automóvil en una rotonda junto al Hospital Pedro Hispano , en Matosinhos , provocando catorce heridos leves .
+Event	T0	colisión	EVENT	96
+Event	T1	paso	EVENT	164
+Event	T2	muertos	EVENT	243
+Event	T3	herido	EVENT	256
+Event	T4	descarrila	EVENT	329
+Event	T5	heridos	EVENT	439
+Event	T6	alcanzada	EVENT	522
+Event	T7	composición	EVENT	540
+Event	T8	paso	EVENT	558
+Event	T9	provocando	EVENT	613
+Event	T10	muerte	EVENT	627
+Event	T11	composición	EVENT	673
+Event	T12	colisión	EVENT	730
+Event	T13	cae	EVENT	342
+Event	T14	víctimas	EVENT	415
+Relation	T0	T10	NoRel	true	colisión	muerte
+Relation	T0	T11	NoRel	true	colisión	composición
+Relation	T10	T5	NoRel	true	muerte	heridos
+Relation	T10	T7	NoRel	true	muerte	composición
+Relation	T11	T3	NoRel	true	composición	herido
+Relation	T13	T7	NoRel	true	cae	composición
+Relation	T2	T4	NoRel	true	muertos	descarrila
+Relation	T4	T8	NoRel	true	descarrila	paso
+Relation	T5	T1	NoRel	true	heridos	paso
+Relation	T7	T2	NoRel	true	composición	muertos
+Relation	T8	T11	NoRel	true	paso	composición
+Relation	T9	T6	NoRel	true	provocando	alcanzada
+Relation	T9	T8	NoRel	true	provocando	paso

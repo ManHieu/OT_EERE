@@ -1,0 +1,43 @@
+Text	Facts showed that there had been misinterpretations and false assumptions before the accident .	Analysis of the CVR transcript showed that the KLM pilot thought that he had been cleared for take off , while the Tenerife control tower believed that the KLM 747 was stationary at the end of the runway , awaiting take off clearance .	It appears that KLM 's co-pilot was not as certain about take - off clearance as the captain .	The investigation concluded that the fundamental cause of the accident was that captain Veldhuyzen van Zanten attempted to take off without clearance .	The investigators suggested the reason for this was a desire to leave as soon as possible in order to comply with KLM 's duty - time regulations ( which went in place earlier that year ) and before the weather deteriorated further .
+Event	T0	showed	EVENT	6
+Event	T1	misinterpretations	EVENT	33
+Event	T2	accident	EVENT	85
+Event	T3	Analysis	EVENT	96
+Event	T4	showed	EVENT	127
+Event	T5	thought	EVENT	153
+Event	T6	cleared	EVENT	178
+Event	T7	believed	EVENT	234
+Event	T8	clearance	EVENT	320
+Event	T9	appears	EVENT	335
+Event	T10	concluded	EVENT	445
+Event	T11	accident	EVENT	489
+Event	T12	attempted	EVENT	537
+Event	T13	suggested	EVENT	597
+Event	T14	desire	EVENT	633
+Event	T15	leave	EVENT	643
+Event	T16	take off	EVENT	190
+Event	T17	assumptions	EVENT	62
+Event	T18	clearance	EVENT	400
+Event	T19	comply	EVENT	681
+Event	T20	deteriorated	EVENT	789
+Relation	T11	T2	NoRel	true	accident	accident
+Relation	T13	T20	NoRel	true	suggested	deteriorated
+Relation	T13	T5	NoRel	true	suggested	thought
+Relation	T14	T11	NoRel	true	desire	accident
+Relation	T14	T20	NoRel	true	desire	deteriorated
+Relation	T14	T3	NoRel	true	desire	Analysis
+Relation	T16	T14	NoRel	true	take off	desire
+Relation	T18	T4	NoRel	true	clearance	showed
+Relation	T19	T1	NoRel	true	comply	misinterpretations
+Relation	T19	T11	NoRel	true	comply	accident
+Relation	T19	T5	NoRel	true	comply	thought
+Relation	T20	T1	NoRel	true	deteriorated	misinterpretations
+Relation	T20	T9	NoRel	true	deteriorated	appears
+Relation	T3	T15	NoRel	true	Analysis	leave
+Relation	T4	T10	NoRel	true	showed	concluded
+Relation	T5	T0	NoRel	true	thought	showed
+Relation	T5	T3	NoRel	true	thought	Analysis
+Relation	T7	T10	NoRel	true	believed	concluded
+Relation	T8	T16	NoRel	true	clearance	take off
+Relation	T9	T15	NoRel	true	appears	leave
+Relation	T9	T17	NoRel	true	appears	assumptions

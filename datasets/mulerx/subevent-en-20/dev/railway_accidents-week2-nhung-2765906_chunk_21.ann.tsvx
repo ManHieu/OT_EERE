@@ -1,0 +1,24 @@
+Text	_ " The master of a vessel approaching the Bridge to navigate it through a span must ( a ) have the vessel fully under control ; and ( b ) navigate the vessel with all possible care at the minimum speed required to pass safely under the bridge " ._	Vessels above a certain size are required to be piloted , and vehicle movements on the bridge are temporarily halted when large vessels are to pass underneath the bridge .	As an added precaution , it is now mandatory for most large vessels to have a tug in attendance as they transit the bridge in the event that assistance with steerage may be required .	thumb | center | upright =2 | 2005 panorama of Hobart illustrating the extent of the city 's reliance on the Tasman Bridge	The disaster stimulated development in Kingborough , a municipality south of Hobart on the western shore , because of the reduced travel times for western shore workers compared to the eastern shore .
+Event	T0	approaching	EVENT	27
+Event	T1	navigate	EVENT	53
+Event	T10	illustrating	EVENT	659
+Event	T11	reliance	EVENT	698
+Event	T12	development	EVENT	752
+Event	T13	reduced	EVENT	850
+Event	T15	attendance	EVENT	506
+Event	T17	tug	EVENT	499
+Event	T2	navigate	EVENT	139
+Event	T3	pass	EVENT	215
+Event	T4	required	EVENT	282
+Event	T5	piloted	EVENT	297
+Event	T6	movements	EVENT	319
+Event	T7	halted	EVENT	359
+Event	T8	pass	EVENT	392
+Event	T9	transit	EVENT	525
+Relation	T7	T8	SuperSub	true	halted	pass
+Relation	T8	T7	SubSuper	true	pass	halted
+Relation	T11	T4	NoRel	true	reliance	required
+Relation	T2	T11	NoRel	true	navigate	reliance
+Relation	T4	T11	NoRel	true	required	reliance
+Relation	T6	T17	NoRel	true	movements	tug
+Relation	T9	T5	NoRel	true	transit	piloted

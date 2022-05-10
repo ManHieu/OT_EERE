@@ -1,0 +1,37 @@
+Text	El TERREMOTO DE LAS ISLAS SALOMÓN DE 2016 fue un sismo de magnitud 7.8 M _ ( w ) ocurrido a las 04:38:46 horas UTC +11 del 9 de diciembre de 2016 ( 17:38 UTC del 8 de diciembre ) , con epicentro a 68 kilómetros al oeste-suroeste de Kirakira , provincia de Makira-Ulawa , Islas Salomón .	El movimiento sísmico tuvo una profundidad de 41 kilómetros y alcanzó una intensidad máxima de VIII Mercalli _ ( Severo ) _ en Kirakira .	El terremoto causó la muerte de una niña en Guadalcanal , en el derrumbe de una casa , y daños en diversos edificios .	Se declaró una alerta de tsunami para las Islas Salomón , Papúa Nueva Guinea , Vanuatu , Tonga , Nauru , Nueva Caledonia , Tuvalu , Nueva Zelanda y Hawái .	Finalmente fueron canceladas y la alerta solo permaneció para las islas involucradas en el epicentro , registrando una altura máxima de 30 centímetros , sin que se produjeran mayores daños .
+Event	T0	TERREMOTO	EVENT	3
+Event	T1	sismo	EVENT	49
+Event	T2	ocurrido	EVENT	81
+Event	T3	tuvo	EVENT	309
+Event	T4	alcanzó	EVENT	349
+Event	T5	causó	EVENT	438
+Event	T6	muerte	EVENT	447
+Event	T7	derrumbe	EVENT	489
+Event	T8	daños	EVENT	514
+Event	T9	declaró	EVENT	547
+Event	T10	alerta	EVENT	559
+Event	T11	tsunami	EVENT	569
+Event	T12	canceladas	EVENT	718
+Event	T13	alerta	EVENT	734
+Event	T14	permaneció	EVENT	746
+Event	T15	registrando	EVENT	803
+Event	T16	produjeran	EVENT	864
+Event	T17	daños	EVENT	883
+Event	T18	terremoto	EVENT	428
+Relation	T0	T10	NoRel	true	TERREMOTO	alerta
+Relation	T0	T9	NoRel	true	TERREMOTO	declaró
+Relation	T1	T6	NoRel	true	sismo	muerte
+Relation	T10	T2	NoRel	true	alerta	ocurrido
+Relation	T11	T0	NoRel	true	tsunami	TERREMOTO
+Relation	T12	T13	NoRel	true	canceladas	alerta
+Relation	T13	T17	NoRel	true	alerta	daños
+Relation	T15	T11	NoRel	true	registrando	tsunami
+Relation	T16	T18	NoRel	true	produjeran	terremoto
+Relation	T4	T15	NoRel	true	alcanzó	registrando
+Relation	T5	T18	NoRel	true	causó	terremoto
+Relation	T5	T7	NoRel	true	causó	derrumbe
+Relation	T7	T3	NoRel	true	derrumbe	tuvo
+Relation	T7	T9	NoRel	true	derrumbe	declaró
+Relation	T8	T17	NoRel	true	daños	daños
+Relation	T8	T2	NoRel	true	daños	ocurrido
+Relation	T8	T9	NoRel	true	daños	declaró

@@ -1,0 +1,11 @@
+Text	2003 yılından beri uçaklara kapalı olan havalimanı artık havacılık çizelgelerinde belirtilmemektedir .	Yolcular uçağın önüne götürüldü .	Elektrik arızası ayrıca radyo sisteminin , flapların ve slatların kaybına neden oldu .	Üç kere iniş denemesi yapıldı .	İlk iki iniş denemesinde pist pas geçildi , üçüncü denemede yerel saatle 07: 55'de başarılı bir acil iniş gerçekleştirildi .
+Event	T0	kapalı	EVENT	28
+Event	T1	götürüldü	EVENT	125
+Event	T2	arızası	EVENT	146
+Event	T3	yapıldı	EVENT	246
+Event	T4	geçildi	EVENT	290
+Event	T5	gerçekleştirildi	EVENT	362
+Event	T6	kaybına	EVENT	203
+Relation	T0	T2	NoRel	true	kapalı	arızası
+Relation	T4	T0	NoRel	true	geçildi	kapalı
+Relation	T6	T1	NoRel	true	kaybına	götürüldü

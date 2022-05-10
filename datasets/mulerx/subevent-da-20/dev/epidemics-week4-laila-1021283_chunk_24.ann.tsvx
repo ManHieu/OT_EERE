@@ -1,0 +1,25 @@
+Text	Her var det første tilfælde den 13. december .	Franske læger ved Albert Schweitzer-hospitalet i Colmar i Alsace har ved analyse af røntgenbilleder fundet , at det første tilfælde i Europa muligvis allerede var til stede den 16. november 2019 .	Dette førte i første omgang ikke til registrerede sygdomstilfælde .	Her hed det sig først , at en 61-årig mand var død af lungebetændelse i Wuhan som følge at en ny virus .	Yderligere 41 personer var smittet , og 739 var i karantæne , og der ikke var flere smittede siden den 3. januar ifølge de kinesiske sundhedsmyndigheder .
+Event	T0	tilfælde	EVENT	19
+Event	T1	analyse	EVENT	120
+Event	T2	fundet	EVENT	147
+Event	T3	tilfælde	EVENT	170
+Event	T4	stede	EVENT	214
+Event	T5	førte	EVENT	250
+Event	T6	hed	EVENT	316
+Event	T7	død	EVENT	359
+Event	T8	lungebetændelse	EVENT	366
+Event	T9	virus	EVENT	409
+Event	T10	smittet	EVENT	444
+Event	T11	karantæne	EVENT	467
+Event	T12	smittede	EVENT	501
+Event	T13	sygdomstilfælde	EVENT	294
+Relation	T9	T10	SuperSub	true	virus	smittet
+Relation	T10	T9	SubSuper	true	smittet	virus
+Relation	T9	T11	SuperSub	true	virus	karantæne
+Relation	T11	T9	SubSuper	true	karantæne	virus
+Relation	T0	T10	NoRel	true	tilfælde	smittet
+Relation	T1	T10	NoRel	true	analyse	smittet
+Relation	T10	T0	NoRel	true	smittet	tilfælde
+Relation	T3	T11	NoRel	true	tilfælde	karantæne
+Relation	T5	T3	NoRel	true	førte	tilfælde
+Relation	T8	T13	NoRel	true	lungebetændelse	sygdomstilfælde

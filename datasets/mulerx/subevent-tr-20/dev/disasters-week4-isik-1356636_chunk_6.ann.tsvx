@@ -1,0 +1,12 @@
+Text	Van M Tipi Cezaevi'nden 160 mahkûm firar etti .	Mahkûmlardan 74'ü güvenlik güçlerinin yaptığı çalışmalar neticesinde cezaevine geri döndü .	Dönmeyen mahkûmların ise aileleriyle görüşülerek ikna edilmelerinin sağlanmasına çalışıldı .	Yapılan son açıklamada ; 5 Kasım günü TSİ 09: 00 itibarıyla 604 ölü olduğu belirtildi .	Daha önceki açıklamalarda belirtilen 4152 yaralı sayısı ise değişmedi .
+Event	T0	etti	EVENT	41
+Event	T1	çalışmalar	EVENT	94
+Event	T2	döndü	EVENT	132
+Event	T3	Dönmeyen	EVENT	140
+Event	T4	çalışıldı	EVENT	221
+Event	T5	belirtildi	EVENT	308
+Event	T6	değişmedi	EVENT	381
+Event	T7	açıklamada	EVENT	245
+Relation	T0	T7	NoRel	true	etti	açıklamada
+Relation	T4	T2	NoRel	true	çalışıldı	döndü
+Relation	T7	T0	NoRel	true	açıklamada	etti

@@ -1,0 +1,22 @@
+Text	Particularmente , la pestaña de ajuste derecha había sido fijada en su lugar .	Si ambas lengüetas de ajuste estuvieran operativas , la pérdida de la pestaña de ajuste izquierda sola puede no haber causado la pérdida de control .	Cuando la lengüeta de ajuste falló , Leeward experimentó una fuerza de 17 g que rápidamente lo incapacitaron y probablemente lo dejaron inconsciente .	Este accidente fue reseñado en la temporada 19° de la serie Mayday : Catástrofes aéreas , del canal National Geographic Channel en el episodio " Carrera Mortal " y en Mayday : Informe Especial en el episodio " Muerte En Las Nubes " .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil - Anexo : Accidentes por fabricante de aeronave
+Event	T0	fijada	EVENT	58
+Event	T1	pérdida	EVENT	135
+Event	T3	pérdida	EVENT	208
+Event	T4	falló	EVENT	258
+Event	T5	experimentó	EVENT	274
+Event	T6	incapacitaron	EVENT	324
+Event	T7	reseñado	EVENT	399
+Event	T8	Muerte	EVENT	590
+Event	T9	Accidente	EVENT	616
+Event	T10	Accidentes	EVENT	648
+Event	T11	Accidentes	EVENT	712
+Event	T12	Accidentes	EVENT	776
+Event	T2	accidente	EVENT	385
+Relation	T2	T7	SuperSub	true	accidente	reseñado
+Relation	T7	T2	SubSuper	true	reseñado	accidente
+Relation	T0	T8	NoRel	true	fijada	Muerte
+Relation	T10	T4	NoRel	true	Accidentes	falló
+Relation	T12	T11	NoRel	true	Accidentes	Accidentes
+Relation	T3	T7	NoRel	true	pérdida	reseñado
+Relation	T8	T9	NoRel	true	Muerte	Accidente
+Relation	T9	T1	NoRel	true	Accidente	pérdida

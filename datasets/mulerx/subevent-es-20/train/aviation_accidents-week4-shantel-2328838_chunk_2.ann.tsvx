@@ -1,0 +1,29 @@
+Text	El accidente del vuelo 358 de Air France fue la mayor crisis que sufrió Toronto Pearson desde la implicación de su aeropuerto en la Operación Yellow Ribbon .	Jean Lapierre , el ministro de transporte de Canadá , se refirió al vuelo 358 como un " milagro " porque todos los ocupantes sobrevivieron .	Otras fuentes de prensa se refirieron al accidente como el " MILAGRO EN TORONTO " , el " MILAGRO TORONTO " o el " MILAGRO DE LA PISTA 24L " .	El accidente se produjo el 2 de agosto de 2005 a las 20:03 UTC ( 16:03 hora local ) .	El vuelo 358 de Air France , un Airbus A340-313X , con 297 pasajeros y doce tripulantes , se pasó del final de la pista 24L en el Aeropuerto Internacional Toronto Pearson ( en Mississauga , Ontario ) y acabó deteniéndose en un pequeño barranco a 300 metros del final de pista .
+Event	T0	accidente	EVENT	3
+Event	T1	vuelo	EVENT	17
+Event	T2	crisis	EVENT	54
+Event	T3	sufrió	EVENT	65
+Event	T4	implicación	EVENT	97
+Event	T6	refirió	EVENT	215
+Event	T7	vuelo	EVENT	226
+Event	T8	sobrevivieron	EVENT	283
+Event	T9	refirieron	EVENT	326
+Event	T10	accidente	EVENT	340
+Event	T11	accidente	EVENT	444
+Event	T12	produjo	EVENT	457
+Event	T13	vuelo	EVENT	530
+Event	T14	pasó	EVENT	620
+Event	T15	deteniéndose	EVENT	735
+Event	T5	Operación Yellow Ribbon	EVENT	132
+Relation	T1	T0	SuperSub	true	vuelo	accidente
+Relation	T0	T1	SubSuper	true	accidente	vuelo
+Relation	T0	T8	SuperSub	true	accidente	sobrevivieron
+Relation	T8	T0	SubSuper	true	sobrevivieron	accidente
+Relation	T0	T6	NoRel	true	accidente	refirió
+Relation	T12	T8	NoRel	true	produjo	sobrevivieron
+Relation	T15	T0	NoRel	true	deteniéndose	accidente
+Relation	T5	T0	NoRel	true	Operación Yellow Ribbon	accidente
+Relation	T6	T11	NoRel	true	refirió	accidente
+Relation	T6	T2	NoRel	true	refirió	crisis
+Relation	T6	T9	NoRel	true	refirió	refirieron
+Relation	T9	T11	NoRel	true	refirieron	accidente

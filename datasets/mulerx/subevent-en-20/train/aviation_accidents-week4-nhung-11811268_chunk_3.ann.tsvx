@@ -1,0 +1,66 @@
+Text	The credits page of Robert Greenwald 's viral videos series , _ The REAL RUDY ,_ offer " very special thanks to Regenhard .	In recent years , Regenhard has become one of the most vocal and visible critics of Rudolph Giuliani , who was Mayor of New York City at the time of the attacks .	Riding on a wave of popularity for his handling of the crisis , Giuliani became a household name throughout the world .	With plenty of media coverage and high public approval ratings , he became a major candidate to win the Republican nomination for the 2008 presidential race .	She made national headlines in May 2004 , when during a televised public hearing on the National Commission on Terrorist Attacks , she interrupted Giuliani while he was giving a speech .
+Event	T0	viral	EVENT	40
+Event	T1	series	EVENT	53
+Event	T2	offer	EVENT	81
+Event	T3	thanks	EVENT	102
+Event	T4	attacks	EVENT	277
+Event	T5	wave	EVENT	299
+Event	T6	handling	EVENT	326
+Event	T7	crisis	EVENT	342
+Event	T8	became	EVENT	360
+Event	T9	coverage	EVENT	428
+Event	T10	ratings	EVENT	462
+Event	T11	became	EVENT	475
+Event	T12	win	EVENT	503
+Event	T13	nomination	EVENT	522
+Event	T14	race	EVENT	559
+Event	T15	made	EVENT	570
+Event	T16	headlines	EVENT	584
+Event	T17	televised	EVENT	622
+Event	T18	hearing	EVENT	639
+Event	T19	Attacks	EVENT	687
+Event	T20	interrupted	EVENT	701
+Event	T21	giving	EVENT	735
+Event	T22	speech	EVENT	744
+Event	T23	become	EVENT	156
+Relation	T21	T20	SuperSub	true	giving	interrupted
+Relation	T20	T21	SubSuper	true	interrupted	giving
+Relation	T17	T15	SuperSub	true	televised	made
+Relation	T15	T17	SubSuper	true	made	televised
+Relation	T0	T21	NoRel	true	viral	giving
+Relation	T10	T7	NoRel	true	ratings	crisis
+Relation	T12	T0	NoRel	true	win	viral
+Relation	T12	T17	NoRel	true	win	televised
+Relation	T12	T8	NoRel	true	win	became
+Relation	T13	T2	NoRel	true	nomination	offer
+Relation	T15	T22	NoRel	true	made	speech
+Relation	T16	T17	NoRel	true	headlines	televised
+Relation	T16	T18	NoRel	true	headlines	hearing
+Relation	T16	T21	NoRel	true	headlines	giving
+Relation	T16	T5	NoRel	true	headlines	wave
+Relation	T16	T8	NoRel	true	headlines	became
+Relation	T17	T3	NoRel	true	televised	thanks
+Relation	T19	T0	NoRel	true	Attacks	viral
+Relation	T19	T20	NoRel	true	Attacks	interrupted
+Relation	T2	T0	NoRel	true	offer	viral
+Relation	T2	T11	NoRel	true	offer	became
+Relation	T2	T12	NoRel	true	offer	win
+Relation	T2	T22	NoRel	true	offer	speech
+Relation	T20	T19	NoRel	true	interrupted	Attacks
+Relation	T20	T4	NoRel	true	interrupted	attacks
+Relation	T20	T5	NoRel	true	interrupted	wave
+Relation	T21	T17	NoRel	true	giving	televised
+Relation	T21	T4	NoRel	true	giving	attacks
+Relation	T22	T10	NoRel	true	speech	ratings
+Relation	T23	T17	NoRel	true	become	televised
+Relation	T23	T19	NoRel	true	become	Attacks
+Relation	T4	T15	NoRel	true	attacks	made
+Relation	T4	T5	NoRel	true	attacks	wave
+Relation	T5	T1	NoRel	true	wave	series
+Relation	T6	T21	NoRel	true	handling	giving
+Relation	T7	T14	NoRel	true	crisis	race
+Relation	T7	T23	NoRel	true	crisis	become
+Relation	T8	T14	NoRel	true	became	race
+Relation	T8	T21	NoRel	true	became	giving
+Relation	T8	T4	NoRel	true	became	attacks
+Relation	T9	T10	NoRel	true	coverage	ratings

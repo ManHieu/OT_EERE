@@ -1,0 +1,27 @@
+Text	Patlamayla meydana gelen kül , dünya genelinde dağıldı ve sıcaklıkların düşmesine neden oldu .	Böylece 1816'da Yaz Yaşanmayan Yıl olarak bilinen küresel bir hasat kıtlığı oluştu .	Patlama , kısa bir süre önemli iklim değişikliğine neden oldu , bu da çeşitli aşırı hava koşullarını doğurdu .	Çeşitli iklim zorlamaları , Taş Devri'nin başlangıcından bu yana meydana gelen diğer büyük patlamalara rağmen bu patlamadan beri gözlemlenmeyen , sistematik bir şekilde çakıştı ve etkileşime girdi .	Patlama sonrası iklim değişikliği ile Tambora olayı arasındaki bağlantı çeşitli biliminsanları tarafından kurulmuş olsa da ilgili süreçlerin anlaşılması tamamlanmamıştır .
+Event	T0	kül	EVENT	25
+Event	T1	dağıldı	EVENT	47
+Event	T2	oldu	EVENT	88
+Event	T3	oluştu	EVENT	171
+Event	T4	Patlama	EVENT	180
+Event	T5	doğurdu	EVENT	281
+Event	T6	zorlamaları	EVENT	305
+Event	T8	patlamalara	EVENT	382
+Event	T9	çakıştı	EVENT	460
+Event	T10	girdi	EVENT	482
+Event	T11	Patlama	EVENT	490
+Event	T12	değişikliği	EVENT	512
+Event	T13	olayı	EVENT	536
+Event	T14	kurulmuş	EVENT	596
+Event	T15	Patlamayla	EVENT	0
+Event	T16	oldu	EVENT	237
+Relation	T0	T11	NoRel	true	kül	Patlama
+Relation	T1	T8	NoRel	true	dağıldı	patlamalara
+Relation	T13	T15	NoRel	true	olayı	Patlamayla
+Relation	T14	T2	NoRel	true	kurulmuş	oldu
+Relation	T14	T3	NoRel	true	kurulmuş	oluştu
+Relation	T15	T16	NoRel	true	Patlamayla	oldu
+Relation	T4	T3	NoRel	true	Patlama	oluştu
+Relation	T4	T9	NoRel	true	Patlama	çakıştı
+Relation	T5	T15	NoRel	true	doğurdu	Patlamayla
+Relation	T8	T16	NoRel	true	patlamalara	oldu

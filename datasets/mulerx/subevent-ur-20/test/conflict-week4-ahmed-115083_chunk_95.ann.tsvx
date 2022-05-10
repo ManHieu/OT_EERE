@@ -1,0 +1,36 @@
+Text	ان منصوبہ سازوں نے اس حقیقت کو فراموش کر دیا تھا کہ کسی بھی فوج کی آخری دفاعی لکیر عوام ہوتے ہیں نہ کہ مسلح گروہ ، دنیا بھر میں قابض افواج کے خلاف عام عوام نے ہی مزاحمت کی ہے ، نیز اس وقت پاکستان ایٹمی صلاحیت حاصل کر چکا تھا اور اس قسم کے کسی منصوبے کی کوئی ضرورت نہ تھی ۔	1971ء میں مشرقی پاکستان میں تشکیل دیے گئے " البدر " اور " الشمس " جیسے مذہبی لشکر_وں کے ناکام تجربے سے سبق سیکھا گیا ہوتا تو یہ غلطی نہ دہرائی جاتی ۔	شیعوں کے لیے یہ سوچ بھٹو اور ضیاء کے فیصلوں سے زیادہ خطرناک ثابت ہوئی اور اس کے نتیجے میں شیعہ کشی کا عمل پاکستان کے ہر ضلعے میں تیز ہو گیا ۔	سپاہ صحابہ جیسے مسلح گروہوں نے اس مبہم منصوبے کا بھرپور فائدہ اٹھا کر بہاولپور اور رحیم یار خان سے لے کر ملتان اور ڈیرہ غازی خان تک اپنے اثر و نفوذ میں بے پناہ اضافہ کیا ۔	بعد کے سالوں میں پاکستان کو اس جاہلانہ تصور کی بہت بھاری قیمت چکانا پڑی ۔
+Event	T0	حاصل	EVENT	209
+Event	T1	غلطی	EVENT	401
+Event	T2	سوچ	EVENT	439
+Event	T3	کشی	EVENT	518
+Event	T4	عمل	EVENT	525
+Event	T5	اٹھا	EVENT	627
+Event	T6	نفوذ	EVENT	708
+Event	T7	فراموش	EVENT	31
+Event	T8	ضرورت	EVENT	258
+Event	T9	تشکیل	EVENT	301
+Event	T10	ناکام	EVENT	361
+Event	T11	سیکھا	EVENT	380
+Event	T12	دہرائی	EVENT	409
+Event	T13	فیصلوں	EVENT	460
+Event	T14	ثابت	EVENT	483
+Event	T15	تیز	EVENT	552
+Event	T16	اضافہ	EVENT	725
+Event	T17	چکانا	EVENT	799
+Relation	T0	T2	NoRel	true	حاصل	سوچ
+Relation	T1	T0	NoRel	true	غلطی	حاصل
+Relation	T10	T1	NoRel	true	ناکام	غلطی
+Relation	T11	T16	NoRel	true	سیکھا	اضافہ
+Relation	T13	T9	NoRel	true	فیصلوں	تشکیل
+Relation	T15	T12	NoRel	true	تیز	دہرائی
+Relation	T15	T16	NoRel	true	تیز	اضافہ
+Relation	T15	T5	NoRel	true	تیز	اٹھا
+Relation	T15	T7	NoRel	true	تیز	فراموش
+Relation	T17	T10	NoRel	true	چکانا	ناکام
+Relation	T3	T9	NoRel	true	کشی	تشکیل
+Relation	T4	T14	NoRel	true	عمل	ثابت
+Relation	T4	T9	NoRel	true	عمل	تشکیل
+Relation	T6	T16	NoRel	true	نفوذ	اضافہ
+Relation	T8	T16	NoRel	true	ضرورت	اضافہ
+Relation	T8	T4	NoRel	true	ضرورت	عمل
+Relation	T8	T6	NoRel	true	ضرورت	نفوذ

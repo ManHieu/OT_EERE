@@ -1,0 +1,13 @@
+Text	مغلوں کے دور حکومت میں قحط کے زمانے میں لگان ( ٹیکس ) کم کر دیا جاتا تھا مگر ایسٹ انڈیا کمپنی نے قحط کے زمانے میں لگان بڑھا کر 60 فیصد کر دیا ۔	1770 - 1771 ء کے قحط کے باوجود ایسٹ انڈیا کمپنی کو 1771 ء میں 1768ء سے زیادہ منافع ہوا ۔	وارن ہیسٹنگز ( Warren Hastings ) کے مطابق بنگال کے قحط میں لگ بھگ ایک کروڑ افراد بھوک سے مر گئے جو کل آبادی کا ایک تہائی تھے ۔	لوگ روٹی کی خاطر اپنے بچے بیچنے لگے تھے ۔	[ تصغیر | 300px | 1876 – 1878 ء کے جنوبی ہندوستان کے قحط زدگان ۔
+Event	T0	قحط	EVENT	97
+Event	T1	بڑھا	EVENT	119
+Event	T2	قحط	EVENT	161
+Event	T3	ہوا	EVENT	227
+Event	T4	قحط	EVENT	284
+Event	T5	گئے	EVENT	325
+Relation	T0	T1	SuperSub	true	قحط	بڑھا
+Relation	T1	T0	SubSuper	true	بڑھا	قحط
+Relation	T2	T3	SuperSub	true	قحط	ہوا
+Relation	T3	T2	SubSuper	true	ہوا	قحط
+Relation	T0	T5	NoRel	true	قحط	گئے
+Relation	T5	T1	NoRel	true	گئے	بڑھا

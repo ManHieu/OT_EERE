@@ -1,0 +1,15 @@
+Text	Yerel yetkililer ise askerlerin aşılanmasının çiçek hastalığının siviller arasında kazara yayılmasına yol açacağından endişe duyuyorlardı .	Ancak Washington kararında ısrar etti ve askerlerinin çoğuna aşı yaptırmayı başardı .	Uygulamanın popülaritesinin artmasıyla birlikte Washington bu salgının askerleri üzerindeki derin etkisini fark edebildi .	Bağışıklık başlangıçta İngiliz erkekler arasında Amerikalılardan daha yaygındı .	Bunun nedeni , Avrupa'da daha fazla kabul gören aşı uygulaması ve bağışıklıkla sonuçlanan çocuklukda geçirilmiş vakalarının yüksek oranıydı .
+Event	T0	aşılanmasının	EVENT	32
+Event	T1	etti	EVENT	173
+Event	T2	başardı	EVENT	216
+Event	T3	artmasıyla	EVENT	254
+Event	T4	uygulaması	EVENT	482
+Event	T5	geçirilmiş	EVENT	531
+Event	T6	duyuyorlardı	EVENT	125
+Event	T7	yaygındı	EVENT	419
+Event	T8	bağışıklıkla	EVENT	496
+Relation	T2	T6	NoRel	true	başardı	duyuyorlardı
+Relation	T4	T1	NoRel	true	uygulaması	etti
+Relation	T4	T7	NoRel	true	uygulaması	yaygındı
+Relation	T6	T8	NoRel	true	duyuyorlardı	bağışıklıkla
+Relation	T7	T1	NoRel	true	yaygındı	etti

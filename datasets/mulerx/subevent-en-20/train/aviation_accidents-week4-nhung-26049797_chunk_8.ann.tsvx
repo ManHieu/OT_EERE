@@ -1,0 +1,39 @@
+Text	On 27 March , Phillipps achieved two more victories , a Triplane that he sent down in flames near Albert and another German fighter over Méaulte .	He was recommended for a bar to his Military Cross on 31 March , and the award was gazetted on 22 June :	thumb | left | upright =1.08 | Major Phillipps with his daughter Helen in England , c. 1918 | alt = Informal full - length portrait of man in military uniform holding an infant	During April 1918 , No. 2 Squadron began operating in wide - ranging offensive " circus " patrols made up of large formations of fighters , often drawn from several squadrons .	Phillipps destroyed a Pfalz near Bapaume on 16 May , before achieving his greatest success on 12 June when he shot down four German fighters in a single patrol over Ribécourt .
+Event	T0	achieved	EVENT	24
+Event	T1	victories	EVENT	42
+Event	T2	recommended	EVENT	154
+Event	T3	award	EVENT	220
+Event	T4	gazetted	EVENT	230
+Event	T5	portrait	EVENT	375
+Event	T6	holding	EVENT	411
+Event	T7	operating	EVENT	470
+Event	T8	drawn	EVENT	575
+Event	T9	destroyed	EVENT	616
+Event	T10	achieving	EVENT	666
+Event	T11	success	EVENT	689
+Event	T12	patrol	EVENT	759
+Event	T13	sent	EVENT	73
+Event	T14	made up of	EVENT	527
+Event	T15	shot down	EVENT	716
+Relation	T10	T9	SuperSub	true	achieving	destroyed
+Relation	T9	T10	SubSuper	true	destroyed	achieving
+Relation	T1	T13	SuperSub	true	victories	sent
+Relation	T13	T1	SubSuper	true	sent	victories
+Relation	T0	T1	NoRel	true	achieved	victories
+Relation	T0	T10	NoRel	true	achieved	achieving
+Relation	T12	T10	NoRel	true	patrol	achieving
+Relation	T12	T14	NoRel	true	patrol	made up of
+Relation	T14	T12	NoRel	true	made up of	patrol
+Relation	T15	T7	NoRel	true	shot down	operating
+Relation	T3	T2	NoRel	true	award	recommended
+Relation	T3	T6	NoRel	true	award	holding
+Relation	T4	T13	NoRel	true	gazetted	sent
+Relation	T5	T0	NoRel	true	portrait	achieved
+Relation	T5	T1	NoRel	true	portrait	victories
+Relation	T6	T14	NoRel	true	holding	made up of
+Relation	T6	T7	NoRel	true	holding	operating
+Relation	T7	T11	NoRel	true	operating	success
+Relation	T8	T11	NoRel	true	drawn	success
+Relation	T8	T15	NoRel	true	drawn	shot down
+Relation	T8	T5	NoRel	true	drawn	portrait
+Relation	T8	T6	NoRel	true	drawn	holding

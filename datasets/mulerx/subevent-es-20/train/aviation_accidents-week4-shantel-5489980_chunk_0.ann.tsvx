@@ -1,0 +1,55 @@
+Text	El VUELO 32 DE QANTAS fue un vuelo de pasajeros de Qantas que sufrió un fallo del motor el 4 de noviembre de 2010 y realizó un aterrizaje de emergencia en el Aeropuerto Internacional Changi de Singapur , sin víctimas .	La habilidad de los pilotos en tomar las acciones en forma rápida y acertada condujo a que no se transformara en una tragedia .	El incidente fue el primero de su tipo para el Airbus A380 , el avión de pasajeros más grande del mundo .	En la inspección se encontró que el motor N.° 2 del avión ( en el puerto más cercano lateral del fuselaje ) , un Rolls-Royce Trent 900 , tenía un disco de turbina que faltaba y otro dilatado por el calor producido por el aceite vertido desde un caño roto debido a defectos en su fabricación .	El disco se calentó hasta explotar , produciendo daños graves en la góndola , el ala , el sistema de combustible , el tren de aterrizaje , los mandos de vuelo , los controles para el motor N.º1 y un fuego desapercibido en el tanque de combustible del ala interior izquierda que eventualmente se auto-extinguió .
+Event	T0	vuelo	EVENT	29
+Event	T1	fallo	EVENT	72
+Event	T2	realizó	EVENT	116
+Event	T3	aterrizaje	EVENT	127
+Event	T4	emergencia	EVENT	141
+Event	T6	tomar	EVENT	250
+Event	T7	acciones	EVENT	260
+Event	T8	condujo	EVENT	296
+Event	T11	incidente	EVENT	350
+Event	T12	inspección	EVENT	459
+Event	T13	encontró	EVENT	473
+Event	T14	dilatado	EVENT	635
+Event	T15	producido	EVENT	657
+Event	T16	vertido	EVENT	681
+Event	T17	defectos	EVENT	717
+Event	T18	fabricación	EVENT	732
+Event	T19	calentó	EVENT	758
+Event	T20	explotar	EVENT	772
+Event	T21	aterrizaje	EVENT	872
+Event	T22	vuelo	EVENT	899
+Event	T23	controles	EVENT	911
+Event	T24	desapercibido	EVENT	951
+Event	T25	auto-extinguió	EVENT	1041
+Relation	T0	T1	SuperSub	true	vuelo	fallo
+Relation	T1	T0	SubSuper	true	fallo	vuelo
+Relation	T0	T11	NoRel	true	vuelo	incidente
+Relation	T0	T18	NoRel	true	vuelo	fabricación
+Relation	T0	T22	NoRel	true	vuelo	vuelo
+Relation	T0	T8	NoRel	true	vuelo	condujo
+Relation	T1	T19	NoRel	true	fallo	calentó
+Relation	T1	T4	NoRel	true	fallo	emergencia
+Relation	T11	T1	NoRel	true	incidente	fallo
+Relation	T11	T22	NoRel	true	incidente	vuelo
+Relation	T12	T22	NoRel	true	inspección	vuelo
+Relation	T13	T3	NoRel	true	encontró	aterrizaje
+Relation	T14	T4	NoRel	true	dilatado	emergencia
+Relation	T16	T1	NoRel	true	vertido	fallo
+Relation	T19	T8	NoRel	true	calentó	condujo
+Relation	T2	T14	NoRel	true	realizó	dilatado
+Relation	T2	T20	NoRel	true	realizó	explotar
+Relation	T2	T3	NoRel	true	realizó	aterrizaje
+Relation	T2	T6	NoRel	true	realizó	tomar
+Relation	T21	T3	NoRel	true	aterrizaje	aterrizaje
+Relation	T22	T0	NoRel	true	vuelo	vuelo
+Relation	T23	T16	NoRel	true	controles	vertido
+Relation	T23	T17	NoRel	true	controles	defectos
+Relation	T23	T4	NoRel	true	controles	emergencia
+Relation	T24	T22	NoRel	true	desapercibido	vuelo
+Relation	T24	T4	NoRel	true	desapercibido	emergencia
+Relation	T3	T17	NoRel	true	aterrizaje	defectos
+Relation	T3	T23	NoRel	true	aterrizaje	controles
+Relation	T6	T13	NoRel	true	tomar	encontró
+Relation	T7	T0	NoRel	true	acciones	vuelo
+Relation	T8	T20	NoRel	true	condujo	explotar

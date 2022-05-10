@@ -1,0 +1,18 @@
+Text	Platformdaki insanlar arasında yaralanan olmadı .	Görgü tanıkları , makinistin lokomotifin camından dışarı eğilerek platformdaki insanları trenin freninin tutmadığını şeklinde uyardığını ve trenin platformun sonunda çarpacağı uyarısını yaptığını söylediler ..	- 20 Aralık , 2009 – bir Paris bölgesel ekspres tren Paris’in güney bölgesi Choisy - le - Roi’de , bir beton bloğa çarptı ve devrildi .	On yedi yaralı .	- Demiryolu kazaları sınıflaması - Yol kazaları listesi - Hemzemin geçit kazalarını kapsar .
+Event	T1	çarptı	EVENT	375
+Event	T2	devrildi	EVENT	385
+Event	T3	yaralı	EVENT	404
+Event	T5	kazaları	EVENT	425
+Event	T6	tanıkları	EVENT	56
+Event	T7	eğilerek	EVENT	107
+Event	T8	uyardığını	EVENT	176
+Event	T9	söylediler	EVENT	246
+Event	T10	yaptığını	EVENT	236
+Event	T4	kazaları	EVENT	452
+Event	T11	kazalarını	EVENT	486
+Relation	T1	T11	NoRel	true	çarptı	kazalarını
+Relation	T10	T9	NoRel	true	yaptığını	söylediler
+Relation	T11	T8	NoRel	true	kazalarını	uyardığını
+Relation	T4	T1	NoRel	true	kazaları	çarptı
+Relation	T4	T8	NoRel	true	kazaları	uyardığını
+Relation	T8	T4	NoRel	true	uyardığını	kazaları

@@ -1,0 +1,23 @@
+Text	40 ایمبولینس ، 20 فائر ٹرک ، پولیس ، نیشنل میڈیکل بچاؤ ٹیمیں ، فائر اور بچاؤ ٹیمیں جائے حادثے پر پہونچ چکی ہیں ۔	ملبے کو ہٹانے کا کام جلد ہی شروع ہو گیا جبکہ حادثے کی جگہ کے ارد گرد بھاری کرینیں 16 : 00 بجے مقامی وقت کے مطابق نصب کی گئی تھیں ۔	ریلوے لائن کو دوبارہ کھولنے کے لیے فائر فائٹرز اور ریلوے کارکنوں کی ٹیموں نے بھاری برفباری کے باوجود رات کو کاٹنے اور ہٹانے کا کام جاری رکھا ۔	انقرہ کے چیف پراسیکیوٹر نے حادثہ کی وجہ معلوم کرنے کے لیے تحقیقات شروع کردی ہیں اور اس مقصد کے لیے اپنے معاون اور تین مزید پراسیکیوٹر مقرر کیے ہیں ۔	ریلوے اہلکار ، ایک انسپکٹر ، ایک ٹرین کو روانہ کرنے والا اور ایک سوئچ مین ، جو ٹرینوں کی سمت کے ذمہ دار تھے ، غفلت برتنے کے شک میں گرفتار کیے جا چکے ہیں ۔
+Event	T0	حادثے	EVENT	88
+Event	T1	ہٹانے	EVENT	121
+Event	T11	حادثہ	EVENT	414
+Event	T12	شک	EVENT	660
+Event	T2	کام	EVENT	130
+Event	T4	حادثے	EVENT	158
+Event	T5	نصب	EVENT	226
+Event	T6	کھولنے	EVENT	265
+Event	T7	برفباری	EVENT	327
+Event	T8	کاٹنے	EVENT	352
+Event	T9	ہٹانے	EVENT	362
+Relation	T6	T8	SuperSub	true	کھولنے	کاٹنے
+Relation	T8	T6	SubSuper	true	کاٹنے	کھولنے
+Relation	T6	T9	SuperSub	true	کھولنے	ہٹانے
+Relation	T9	T6	SubSuper	true	ہٹانے	کھولنے
+Relation	T2	T1	SuperSub	true	کام	ہٹانے
+Relation	T1	T2	SubSuper	true	ہٹانے	کام
+Relation	T2	T5	SuperSub	true	کام	نصب
+Relation	T5	T2	SubSuper	true	نصب	کام
+Relation	T1	T0	NoRel	true	ہٹانے	حادثے
+Relation	T8	T7	NoRel	true	کاٹنے	برفباری
+Relation	T9	T11	NoRel	true	ہٹانے	حادثہ

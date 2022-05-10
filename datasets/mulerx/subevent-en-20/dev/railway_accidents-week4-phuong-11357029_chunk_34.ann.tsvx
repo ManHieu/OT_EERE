@@ -1,0 +1,30 @@
+Text	Terrorist sabotage was blamed .	- 15 May 2003 – The Golden Temple Mail caught on fire in the early morning between Ludhiana and Ladhowal stations , killing 36 and injuring 15 .	- 22 June 2003 – The engine and first four coaches of Karwar – Mumbai Central Holiday Special derailed , killing 52 and injuring 26 .	- 2 July 2003 – The Golconda Express derailed at Warangal station , killing 21 and injuring 24 .	- 16 June 2004 – The Matsyagandha Express ( Mangalore – Mumbai ) derailed when it struck a boulder on the line , killing 14 .
+Event	T0	sabotage	EVENT	10
+Event	T1	blamed	EVENT	23
+Event	T2	killing	EVENT	148
+Event	T3	injuring	EVENT	163
+Event	T4	derailed	EVENT	271
+Event	T5	killing	EVENT	282
+Event	T6	injuring	EVENT	297
+Event	T7	derailed	EVENT	348
+Event	T8	killing	EVENT	379
+Event	T9	injuring	EVENT	394
+Event	T10	derailed	EVENT	473
+Event	T11	struck	EVENT	490
+Event	T12	boulder	EVENT	499
+Event	T13	killing	EVENT	521
+Event	T14	fire	EVENT	81
+Relation	T0	T2	NoRel	true	sabotage	killing
+Relation	T10	T7	NoRel	true	derailed	derailed
+Relation	T11	T6	NoRel	true	struck	injuring
+Relation	T13	T2	NoRel	true	killing	killing
+Relation	T2	T8	NoRel	true	killing	killing
+Relation	T3	T8	NoRel	true	injuring	killing
+Relation	T4	T0	NoRel	true	derailed	sabotage
+Relation	T5	T7	NoRel	true	killing	derailed
+Relation	T7	T1	NoRel	true	derailed	blamed
+Relation	T8	T14	NoRel	true	killing	fire
+Relation	T8	T5	NoRel	true	killing	killing
+Relation	T9	T13	NoRel	true	injuring	killing
+Relation	T9	T2	NoRel	true	injuring	killing
+Relation	T9	T7	NoRel	true	injuring	derailed

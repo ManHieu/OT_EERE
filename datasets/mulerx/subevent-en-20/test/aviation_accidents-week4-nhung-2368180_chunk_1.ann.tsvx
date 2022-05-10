@@ -1,0 +1,56 @@
+Text	Government officials denied that Vreeland ever served in the Navy .	Vreeland 's various claims have included knowing the cause of death of a Canadian Embassy employee before it was officially released , working as an undercover American naval officer , and being the victim of a conspiracy of government officials attempting to keep him quiet .	Police officers have reportedly characterized Vreeland as " a skilled con " .	In 2008 , Vreeland was sentenced in Colorado to 336 years to life in prison after he was convicted of inducement of child prostitution , sexual assault , sexual exploitation of children and distribution of cocaine following his luring of two boys to perform sexual acts on - camera in exchange for cocaine , money and the promise of a drum kit .	Category : People associated with the September 11 attacks
+Event	T0	denied	EVENT	21
+Event	T1	served	EVENT	47
+Event	T2	claims	EVENT	88
+Event	T3	knowing	EVENT	109
+Event	T4	death	EVENT	130
+Event	T5	released	EVENT	192
+Event	T6	working	EVENT	203
+Event	T7	victim	EVENT	267
+Event	T8	conspiracy	EVENT	279
+Event	T9	attempting	EVENT	314
+Event	T10	keep	EVENT	328
+Event	T11	characterized	EVENT	377
+Event	T12	sentenced	EVENT	446
+Event	T13	convicted	EVENT	512
+Event	T14	inducement	EVENT	525
+Event	T15	prostitution	EVENT	545
+Event	T16	assault	EVENT	567
+Event	T17	exploitation	EVENT	584
+Event	T18	distribution	EVENT	613
+Event	T19	luring	EVENT	651
+Event	T20	acts	EVENT	688
+Event	T21	promise	EVENT	745
+Event	T22	associated	EVENT	787
+Relation	T0	T13	NoRel	true	denied	convicted
+Relation	T0	T15	NoRel	true	denied	prostitution
+Relation	T1	T10	NoRel	true	served	keep
+Relation	T1	T4	NoRel	true	served	death
+Relation	T10	T2	NoRel	true	keep	claims
+Relation	T11	T8	NoRel	true	characterized	conspiracy
+Relation	T12	T10	NoRel	true	sentenced	keep
+Relation	T12	T13	NoRel	true	sentenced	convicted
+Relation	T12	T18	NoRel	true	sentenced	distribution
+Relation	T12	T20	NoRel	true	sentenced	acts
+Relation	T13	T18	NoRel	true	convicted	distribution
+Relation	T14	T10	NoRel	true	inducement	keep
+Relation	T14	T6	NoRel	true	inducement	working
+Relation	T16	T22	NoRel	true	assault	associated
+Relation	T17	T8	NoRel	true	exploitation	conspiracy
+Relation	T18	T17	NoRel	true	distribution	exploitation
+Relation	T18	T21	NoRel	true	distribution	promise
+Relation	T19	T20	NoRel	true	luring	acts
+Relation	T2	T9	NoRel	true	claims	attempting
+Relation	T20	T15	NoRel	true	acts	prostitution
+Relation	T22	T4	NoRel	true	associated	death
+Relation	T4	T11	NoRel	true	death	characterized
+Relation	T4	T14	NoRel	true	death	inducement
+Relation	T4	T8	NoRel	true	death	conspiracy
+Relation	T5	T16	NoRel	true	released	assault
+Relation	T6	T11	NoRel	true	working	characterized
+Relation	T6	T7	NoRel	true	working	victim
+Relation	T7	T9	NoRel	true	victim	attempting
+Relation	T8	T0	NoRel	true	conspiracy	denied
+Relation	T8	T16	NoRel	true	conspiracy	assault
+Relation	T8	T20	NoRel	true	conspiracy	acts
+Relation	T9	T1	NoRel	true	attempting	served

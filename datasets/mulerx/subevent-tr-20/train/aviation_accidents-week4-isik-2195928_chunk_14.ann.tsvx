@@ -1,0 +1,48 @@
+Text	17 Ocak 2017'de Kırgızistan basını ACT Airlines'ın web sitesinde yaptığı bir basın açıklamasından ötürü mağdurlara tüm maddi ve maddi olmayan kayıplar için tazminat ödemeyi amaçladığını bildirdi .	Ekim 2017'de tüm etkilenen kişilere ve yakınlarına ( 135 kişi ) ACT Airlines tarafından tazminat ödendiği açıklandı ancak tazminatın miktarı açıklanmadı .	Başbakan Yardımcısı Muhammedkalıy Abılgaziyev kaza günü sabahın sonlarına doğru olay yerinde 1000'den fazla kurtarma görevlisinin bulunduğunu bildirdi .	Sağlık Bakanı Talantbek Batyraliyev yerel saatle 23.46'ya kadar yaklaşık 56 doktor ve psikolog ile 14 ambulans ekibinin olay yerine gönderildiğini bildirdi .	Görgü tanıkları bazı acil müdahale ekiplerinin ve yerlilerin uçağın kargo_bölmesinde bulunan elektronik cihazları aldığını gördü .
+Event	T1	kayıplar	EVENT	142
+Event	T3	bildirdi	EVENT	186
+Event	T4	açıklandı	EVENT	303
+Event	T5	tazminatın	EVENT	319
+Event	T6	açıklanmadı	EVENT	338
+Event	T7	kaza	EVENT	398
+Event	T8	olay	EVENT	432
+Event	T9	bildirdi	EVENT	494
+Event	T10	olay	EVENT	625
+Event	T11	bildirdi	EVENT	652
+Event	T12	müdahale	EVENT	689
+Event	T13	gördü	EVENT	786
+Event	T14	açıklamasından	EVENT	83
+Event	T2	tazminat	EVENT	156
+Event	T15	mağdurlara	EVENT	104
+Event	T16	tazminat	EVENT	285
+Event	T17	etkilenen	EVENT	214
+Relation	T7	T9	SuperSub	true	kaza	bildirdi
+Relation	T9	T7	SubSuper	true	bildirdi	kaza
+Relation	T7	T1	SuperSub	true	kaza	kayıplar
+Relation	T1	T7	SubSuper	true	kayıplar	kaza
+Relation	T7	T15	SuperSub	true	kaza	mağdurlara
+Relation	T15	T7	SubSuper	true	mağdurlara	kaza
+Relation	T7	T11	SuperSub	true	kaza	bildirdi
+Relation	T11	T7	SubSuper	true	bildirdi	kaza
+Relation	T7	T12	SuperSub	true	kaza	müdahale
+Relation	T12	T7	SubSuper	true	müdahale	kaza
+Relation	T10	T1	NoRel	true	olay	kayıplar
+Relation	T10	T13	NoRel	true	olay	gördü
+Relation	T12	T2	NoRel	true	müdahale	tazminat
+Relation	T13	T5	NoRel	true	gördü	tazminatın
+Relation	T13	T6	NoRel	true	gördü	açıklanmadı
+Relation	T13	T8	NoRel	true	gördü	olay
+Relation	T14	T12	NoRel	true	açıklamasından	müdahale
+Relation	T15	T2	NoRel	true	mağdurlara	tazminat
+Relation	T15	T9	NoRel	true	mağdurlara	bildirdi
+Relation	T17	T2	NoRel	true	etkilenen	tazminat
+Relation	T17	T8	NoRel	true	etkilenen	olay
+Relation	T3	T1	NoRel	true	bildirdi	kayıplar
+Relation	T3	T11	NoRel	true	bildirdi	bildirdi
+Relation	T3	T15	NoRel	true	bildirdi	mağdurlara
+Relation	T3	T9	NoRel	true	bildirdi	bildirdi
+Relation	T4	T1	NoRel	true	açıklandı	kayıplar
+Relation	T4	T3	NoRel	true	açıklandı	bildirdi
+Relation	T5	T4	NoRel	true	tazminatın	açıklandı
+Relation	T6	T13	NoRel	true	açıklanmadı	gördü
+Relation	T9	T5	NoRel	true	bildirdi	tazminatın

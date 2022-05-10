@@ -1,0 +1,34 @@
+Text	Este incidente fue reportado al control de tráfico aéreo , la rueda de aterrizaje se retrajo normalmente y el vuelo continuó con normalidad .	Durante la toma en la pista 25R del Aeropuerto de Barcelona , el avión comenzó a desviarse a la izquierda del eje de pista .	La tripulación aplicó desviación derecha , frenado y giro de la rueda de morro pero no consiguieron mantener el avión en pista .	Tras salirse de la superficie pavimentada de pista a unos cien nudos , el avión se internó en una zona de arena blanda donde se estaban efectuando trabajos de construcción .	La pata del tren de morro se colapsó y el tren principal izquierdo se retrajo parcialmente poco antes de que el avión se detuviese en el borde de un canal de drenaje .
+Event	T0	reportado	EVENT	19
+Event	T1	aterrizaje	EVENT	71
+Event	T2	retrajo	EVENT	85
+Event	T3	continuó	EVENT	116
+Event	T4	toma	EVENT	153
+Event	T5	comenzó	EVENT	213
+Event	T6	desviarse	EVENT	223
+Event	T7	desviación	EVENT	289
+Event	T8	frenado	EVENT	310
+Event	T9	giro	EVENT	320
+Event	T10	salirse	EVENT	401
+Event	T11	internó	EVENT	479
+Event	T12	trabajos	EVENT	543
+Event	T13	construcción	EVENT	555
+Event	T14	colapsó	EVENT	599
+Event	T15	retrajo	EVENT	640
+Event	T16	detuviese	EVENT	691
+Event	T17	drenaje	EVENT	728
+Relation	T1	T16	NoRel	true	aterrizaje	detuviese
+Relation	T1	T3	NoRel	true	aterrizaje	continuó
+Relation	T1	T6	NoRel	true	aterrizaje	desviarse
+Relation	T15	T11	NoRel	true	retrajo	internó
+Relation	T16	T2	NoRel	true	detuviese	retrajo
+Relation	T16	T7	NoRel	true	detuviese	desviación
+Relation	T17	T16	NoRel	true	drenaje	detuviese
+Relation	T4	T5	NoRel	true	toma	comenzó
+Relation	T5	T1	NoRel	true	comenzó	aterrizaje
+Relation	T5	T13	NoRel	true	comenzó	construcción
+Relation	T5	T2	NoRel	true	comenzó	retrajo
+Relation	T7	T2	NoRel	true	desviación	retrajo
+Relation	T8	T10	NoRel	true	frenado	salirse
+Relation	T8	T11	NoRel	true	frenado	internó
+Relation	T9	T1	NoRel	true	giro	aterrizaje

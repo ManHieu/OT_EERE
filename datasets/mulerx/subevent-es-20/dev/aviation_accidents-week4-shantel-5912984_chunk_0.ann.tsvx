@@ -1,0 +1,33 @@
+Text	El VUELO 102 DE NATIONAL AIRLINES fue un vuelo de carga entre la base militar británica Camp Bastion en Afganistán y el aeropuerto Al Maktoum en Dubái , con una parada de repostaje en la Base Aérea de Bagram en Afganistán .	El 29 de abril de 2013 , el Boeing 747-400 que operaba el vuelo se estrelló momentos después de despegar desde Bagram , matando a las siete personas a bordo .	El avión implicado fue un Boeing 747-428BCF , matrícula N 949CA , número de serie 25630 .	Fue fabricado en 1993 como un avión de pasajeros y más tarde convertido para su servicio como carguero antes de ser vendido a la compañía National Airlines .	En el momento del accidente , el avión volaba a través del Mando de Movilidad Aérea de la USAF .
+Event	T0	VUELO	EVENT	3
+Event	T1	vuelo	EVENT	41
+Event	T2	parada	EVENT	161
+Event	T3	repostaje	EVENT	171
+Event	T4	operaba	EVENT	271
+Event	T5	vuelo	EVENT	282
+Event	T6	estrelló	EVENT	291
+Event	T7	despegar	EVENT	320
+Event	T8	matando	EVENT	344
+Event	T9	implicado	EVENT	392
+Event	T10	fabricado	EVENT	477
+Event	T11	convertido	EVENT	534
+Event	T12	vendido	EVENT	589
+Event	T13	accidente	EVENT	649
+Event	T14	volaba	EVENT	670
+Relation	T1	T2	SuperSub	true	vuelo	parada
+Relation	T2	T1	SubSuper	true	parada	vuelo
+Relation	T1	T6	SuperSub	true	vuelo	estrelló
+Relation	T6	T1	SubSuper	true	estrelló	vuelo
+Relation	T10	T1	SuperSub	true	fabricado	vuelo
+Relation	T1	T10	SubSuper	true	vuelo	fabricado
+Relation	T10	T12	SuperSub	true	fabricado	vendido
+Relation	T12	T10	SubSuper	true	vendido	fabricado
+Relation	T14	T13	SuperSub	true	volaba	accidente
+Relation	T13	T14	SubSuper	true	accidente	volaba
+Relation	T0	T7	NoRel	true	VUELO	despegar
+Relation	T12	T0	NoRel	true	vendido	VUELO
+Relation	T13	T4	NoRel	true	accidente	operaba
+Relation	T4	T9	NoRel	true	operaba	implicado
+Relation	T5	T8	NoRel	true	vuelo	matando
+Relation	T7	T0	NoRel	true	despegar	VUELO
+Relation	T9	T3	NoRel	true	implicado	repostaje

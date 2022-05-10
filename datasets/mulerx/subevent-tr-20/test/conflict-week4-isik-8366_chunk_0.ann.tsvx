@@ -1,0 +1,25 @@
+Text	küçükresim | sağ | 320px | Boğa güreşi BOĞA GÜREŞI ( ) , iki boğanın çeşitli amaçlarla güreştirilmesini ya da matador adı verilen bir insanın boğayı gittikçe yorup öldürmesini esas alan eğlence ve yarışma biçimi .	Eski Çağ'da Girit halkı , bir takım törenler ile boğalarla güreşirlerdi .	Tesalya bölgesinde ( Taurocatapsia isminde bir çeşit boğa güreşinde ) , boğa at ile kovalanır , daha sonra boynuzlarıdan yakalanarak yere yıldırılırdı .	18. yüzyıl'a kadar İspanya ve Portekiz'de boğa ile güreş , daima at sırtında yapılıdı .	Bu karşılaşmaların yıldızı , ata binen kişi olurdu ( _ Caballero en plaza _ veya _ Rejoneador _ ) .
+Event	T0	küçükresim	EVENT	0
+Event	T2	güreştirilmesini	EVENT	87
+Event	T3	eğlence	EVENT	186
+Event	T4	kovalanır	EVENT	372
+Event	T5	yakalanarak	EVENT	409
+Event	T6	yıldırılırdı	EVENT	426
+Event	T7	güreş	EVENT	492
+Event	T1	Boğa güreşi	EVENT	27
+Event	T8	BOĞA GÜREŞI	EVENT	39
+Event	T10	öldürmesini	EVENT	164
+Event	T9	güreşirlerdi	EVENT	273
+Event	T11	törenler	EVENT	250
+Event	T12	yapılıdı	EVENT	518
+Event	T13	karşılaşmaların	EVENT	532
+Event	T14	binen	EVENT	562
+Relation	T1	T13	NoRel	true	Boğa güreşi	karşılaşmaların
+Relation	T1	T2	NoRel	true	Boğa güreşi	güreştirilmesini
+Relation	T10	T8	NoRel	true	öldürmesini	BOĞA GÜREŞI
+Relation	T11	T2	NoRel	true	törenler	güreştirilmesini
+Relation	T13	T7	NoRel	true	karşılaşmaların	güreş
+Relation	T2	T7	NoRel	true	güreştirilmesini	güreş
+Relation	T3	T8	NoRel	true	eğlence	BOĞA GÜREŞI
+Relation	T5	T1	NoRel	true	yakalanarak	Boğa güreşi
+Relation	T6	T7	NoRel	true	yıldırılırdı	güreş

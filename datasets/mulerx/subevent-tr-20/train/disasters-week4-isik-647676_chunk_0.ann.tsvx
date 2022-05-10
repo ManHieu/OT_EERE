@@ -1,0 +1,29 @@
+Text	2008 GÜNEY ÇIN SU TAŞKINLARI 26 Mayıs 2008'de başladı .	Dört dalga halinde yağan sağanak yağmur 20 gün sürdü ve toprak kaymaları ve su taşkınlarına neden oldu .	Yağış , Çin'in güney ve doğu kesimindeki 15 eyaleti etkilemiştir .	İlk su taşkını dalgası on iki eyaleti etkilemiş ve 30 Mayıs itibarıyla 93 kişinin ölümüne yol açmıştır .	İkinci su taşkını dalgası 6 Haziran'da başladı ve dokuz eyalette 55 kişinin ölümüne ve 6 kişinin kaybolmasına neden oldu .
+Event	T0	başladı	EVENT	46
+Event	T1	yağmur	EVENT	89
+Event	T2	sürdü	EVENT	103
+Event	T3	kaymaları	EVENT	119
+Event	T4	oldu	EVENT	154
+Event	T5	Yağış	EVENT	161
+Event	T6	etkilemiştir	EVENT	213
+Event	T7	dalgası	EVENT	243
+Event	T8	etkilemiş	EVENT	266
+Event	T9	açmıştır	EVENT	322
+Event	T10	dalgası	EVENT	351
+Event	T11	başladı	EVENT	372
+Event	T12	ölümüne	EVENT	409
+Event	T13	oldu	EVENT	449
+Event	T14	TAŞKINLARI	EVENT	18
+Event	T15	taşkınlarına	EVENT	135
+Event	T16	kaybolmasına	EVENT	430
+Relation	T0	T11	NoRel	true	başladı	başladı
+Relation	T11	T16	NoRel	true	başladı	kaybolmasına
+Relation	T11	T8	NoRel	true	başladı	etkilemiş
+Relation	T12	T0	NoRel	true	ölümüne	başladı
+Relation	T12	T1	NoRel	true	ölümüne	yağmur
+Relation	T12	T8	NoRel	true	ölümüne	etkilemiş
+Relation	T15	T3	NoRel	true	taşkınlarına	kaymaları
+Relation	T16	T2	NoRel	true	kaybolmasına	sürdü
+Relation	T3	T14	NoRel	true	kaymaları	TAŞKINLARI
+Relation	T6	T12	NoRel	true	etkilemiştir	ölümüne
+Relation	T6	T3	NoRel	true	etkilemiştir	kaymaları

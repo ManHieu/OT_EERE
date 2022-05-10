@@ -1,0 +1,31 @@
+Text	Pony 1'in çarptığı Pony 2 ise daha pilotu hiçbir şey yapamadan sert bir şekilde yere çarptı .	Çarpmanın etkisiyle pilotu yanan bir alev topu içinde kaldı ve vahşice canını verdi .	Ayrıca Pony 10 yere çarpmasıyla beraber patlama yaptı ve yakın seyircilere zarar verirken uzak seyircilere dehşeti tam anlamıyla yaşattı .	Kaza anından iki dakika sonra itfaiye ekipleri oraya vardı .	İtfaiye ekiplerinden hemen sonraysa ilk ambulans ve ilk ambulans helikopter seyircilere ulaştırıldı .
+Event	T0	çarptığı	EVENT	10
+Event	T1	çarptı	EVENT	85
+Event	T2	yanan	EVENT	121
+Event	T3	kaldı	EVENT	148
+Event	T4	verdi	EVENT	172
+Event	T5	çarpmasıyla	EVENT	200
+Event	T6	yaptı	EVENT	228
+Event	T7	zarar	EVENT	255
+Event	T8	yaşattı	EVENT	309
+Event	T9	Kaza	EVENT	319
+Event	T10	ulaştırıldı	EVENT	468
+Event	T11	Çarpmanın	EVENT	94
+Event	T12	vardı	EVENT	372
+Relation	T9	T12	SuperSub	true	Kaza	vardı
+Relation	T12	T9	SubSuper	true	vardı	Kaza
+Relation	T9	T10	SuperSub	true	Kaza	ulaştırıldı
+Relation	T10	T9	SubSuper	true	ulaştırıldı	Kaza
+Relation	T0	T1	NoRel	true	çarptığı	çarptı
+Relation	T1	T3	NoRel	true	çarptı	kaldı
+Relation	T10	T1	NoRel	true	ulaştırıldı	çarptı
+Relation	T10	T3	NoRel	true	ulaştırıldı	kaldı
+Relation	T11	T0	NoRel	true	Çarpmanın	çarptığı
+Relation	T2	T12	NoRel	true	yanan	vardı
+Relation	T2	T4	NoRel	true	yanan	verdi
+Relation	T3	T11	NoRel	true	kaldı	Çarpmanın
+Relation	T3	T2	NoRel	true	kaldı	yanan
+Relation	T3	T5	NoRel	true	kaldı	çarpmasıyla
+Relation	T4	T8	NoRel	true	verdi	yaşattı
+Relation	T8	T0	NoRel	true	yaşattı	çarptığı
+Relation	T9	T7	NoRel	true	Kaza	zarar

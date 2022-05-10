@@ -1,0 +1,33 @@
+Text	Güçlü bir kasırganın meydana gelmesi için fırtına merkezinin etrafında gök gürültülü fırtınaların olması gerekir .	Daha sonra , Gabrielle güç kazanmaya başladı ve 7 Eylül günü , Lookout Burnu'ndan 300 km uzaktayken Gabrielle Tropikal Fırtınası olarak adlandırıldı .	Fırtına Gulf_Stream'i geçtiği zaman rüzgâr değişimi yavaşladı , güçlü gök gürültülü fırtınaların merkez etrafında oluşmasına izin verdi , ve 15:45 UTC civarında , Gabrielle Kuzey Karolina kıyısına ulaştı .	Saatte 95 kilometre hıza ulaşan rüzgârları vardı .	Fırtına kuzey ve kuzeydoğuya doğru döndü ve 10 Eylül günü yeniden okyanusa döndü .
+Event	T0	gelmesi	EVENT	29
+Event	T1	başladı	EVENT	152
+Event	T2	adlandırıldı	EVENT	251
+Event	T3	geçtiği	EVENT	288
+Event	T4	yavaşladı	EVENT	318
+Event	T5	verdi	EVENT	396
+Event	T6	ulaştı	EVENT	463
+Event	T7	döndü	EVENT	558
+Event	T8	döndü	EVENT	598
+Event	T9	kasırganın	EVENT	10
+Event	T10	fırtınaların	EVENT	85
+Event	T11	Gabrielle Tropikal Fırtınası	EVENT	215
+Event	T12	rüzgârları	EVENT	504
+Event	T13	Fırtına	EVENT	523
+Event	T14	Fırtına	EVENT	266
+Relation	T1	T5	NoRel	true	başladı	verdi
+Relation	T10	T1	NoRel	true	fırtınaların	başladı
+Relation	T10	T9	NoRel	true	fırtınaların	kasırganın
+Relation	T12	T0	NoRel	true	rüzgârları	gelmesi
+Relation	T13	T11	NoRel	true	Fırtına	Gabrielle Tropikal Fırtınası
+Relation	T13	T3	NoRel	true	Fırtına	geçtiği
+Relation	T13	T5	NoRel	true	Fırtına	verdi
+Relation	T14	T7	NoRel	true	Fırtına	döndü
+Relation	T14	T8	NoRel	true	Fırtına	döndü
+Relation	T2	T1	NoRel	true	adlandırıldı	başladı
+Relation	T2	T10	NoRel	true	adlandırıldı	fırtınaların
+Relation	T2	T4	NoRel	true	adlandırıldı	yavaşladı
+Relation	T3	T7	NoRel	true	geçtiği	döndü
+Relation	T4	T13	NoRel	true	yavaşladı	Fırtına
+Relation	T4	T6	NoRel	true	yavaşladı	ulaştı
+Relation	T5	T4	NoRel	true	verdi	yavaşladı
+Relation	T7	T11	NoRel	true	döndü	Gabrielle Tropikal Fırtınası

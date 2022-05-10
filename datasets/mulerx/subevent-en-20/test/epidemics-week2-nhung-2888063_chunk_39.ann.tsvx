@@ -1,0 +1,51 @@
+Text	In PHASE 2 an animal influenza virus circulating among domesticated or wild animals is known to have caused infection in humans , and is therefore considered a potential pandemic threat .	In PHASE 3 , an animal or human - animal influenza reassortant virus has caused sporadic cases or small clusters of disease in people , but has not resulted in human - to - human transmission sufficient to sustain community - level outbreaks .	Limited human - to - human transmission may occur under some circumstances , for example , when there is close contact between an infected person and an unprotected caregiver .	However , limited transmission under such restricted circumstances does not indicate that the virus has gained the level of transmissibility among humans necessary to cause a pandemic .	PHASE 4 is characterized by verified human - to - human transmission of an animal or human - animal influenza reassortant virus able to cause " community - level outbreaks " .
+Event	T0	circulating	EVENT	37
+Event	T1	known	EVENT	87
+Event	T10	infected	EVENT	562
+Event	T11	transmission	EVENT	627
+Event	T12	indicate	EVENT	685
+Event	T13	gained	EVENT	713
+Event	T14	cause	EVENT	776
+Event	T15	pandemic	EVENT	784
+Event	T16	characterized	EVENT	806
+Event	T17	verified	EVENT	823
+Event	T18	transmission	EVENT	851
+Event	T19	cause	EVENT	931
+Event	T2	infection	EVENT	108
+Event	T20	outbreaks	EVENT	957
+Event	T23	caused	EVENT	261
+Event	T24	unprotected	EVENT	585
+Event	T3	considered	EVENT	147
+Event	T4	threat	EVENT	179
+Event	T5	resulted	EVENT	336
+Event	T6	outbreaks	EVENT	420
+Event	T7	transmission	EVENT	459
+Event	T8	occur	EVENT	476
+Event	T9	contact	EVENT	543
+Relation	T23	T5	SuperSub	true	caused	resulted
+Relation	T5	T23	SubSuper	true	resulted	caused
+Relation	T0	T23	NoRel	true	circulating	caused
+Relation	T10	T12	NoRel	true	infected	indicate
+Relation	T11	T12	NoRel	true	transmission	indicate
+Relation	T13	T14	NoRel	true	gained	cause
+Relation	T14	T15	NoRel	true	cause	pandemic
+Relation	T14	T5	NoRel	true	cause	resulted
+Relation	T15	T10	NoRel	true	pandemic	infected
+Relation	T17	T6	NoRel	true	verified	outbreaks
+Relation	T19	T2	NoRel	true	cause	infection
+Relation	T20	T1	NoRel	true	outbreaks	known
+Relation	T23	T19	NoRel	true	caused	cause
+Relation	T23	T7	NoRel	true	caused	transmission
+Relation	T24	T13	NoRel	true	unprotected	gained
+Relation	T3	T0	NoRel	true	considered	circulating
+Relation	T3	T18	NoRel	true	considered	transmission
+Relation	T3	T5	NoRel	true	considered	resulted
+Relation	T4	T14	NoRel	true	threat	cause
+Relation	T4	T23	NoRel	true	threat	caused
+Relation	T4	T7	NoRel	true	threat	transmission
+Relation	T5	T9	NoRel	true	resulted	contact
+Relation	T6	T18	NoRel	true	outbreaks	transmission
+Relation	T6	T4	NoRel	true	outbreaks	threat
+Relation	T6	T5	NoRel	true	outbreaks	resulted
+Relation	T9	T23	NoRel	true	contact	caused
+Relation	T9	T4	NoRel	true	contact	threat

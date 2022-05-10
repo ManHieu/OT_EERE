@@ -1,0 +1,58 @@
+Text	The accident was investigated by the Indonesian NTSC , which was assisted by expert groups from the US , Singapore , and Australia .	Around 73 % of the wreckage ( by weight ) was recovered , partially reconstructed , and examined .	Both of the aircraft recorders , the CVR and the FDR , were retrieved from the river and their data were extracted and analyzed .	The investigators tested 20 different simulations for various equipment - failure scenarios , and found that the only scenario that matched the actual radar trajectory of the descent and crash of the flight was a high - speed steep dive commanded by one of the pilots .	Furthermore , the investigators had found the trim jack screw for the horizontal stabilizer , which revealed that flight inputs from one of the pilots had moved the stabilizer from level flight to a full nose - down descent .
+Event	T0	accident	EVENT	4
+Event	T1	investigated	EVENT	17
+Event	T2	assisted	EVENT	65
+Event	T3	wreckage	EVENT	152
+Event	T4	recovered	EVENT	179
+Event	T5	reconstructed	EVENT	201
+Event	T6	examined	EVENT	221
+Event	T7	retrieved	EVENT	292
+Event	T8	extracted	EVENT	337
+Event	T9	analyzed	EVENT	351
+Event	T10	tested	EVENT	380
+Event	T11	simulations	EVENT	400
+Event	T12	found	EVENT	460
+Event	T13	matched	EVENT	494
+Event	T14	descent	EVENT	537
+Event	T15	crash	EVENT	549
+Event	T16	flight	EVENT	562
+Event	T17	commanded	EVENT	599
+Event	T18	found	EVENT	668
+Event	T19	revealed	EVENT	732
+Event	T20	inputs	EVENT	753
+Event	T21	moved	EVENT	787
+Event	T22	flight	EVENT	819
+Event	T23	descent	EVENT	848
+Event	T24	high - speed steep dive	EVENT	575
+Relation	T1	T2	SuperSub	true	investigated	assisted
+Relation	T2	T1	SubSuper	true	assisted	investigated
+Relation	T0	T1	NoRel	true	accident	investigated
+Relation	T0	T16	NoRel	true	accident	flight
+Relation	T0	T21	NoRel	true	accident	moved
+Relation	T1	T4	NoRel	true	investigated	recovered
+Relation	T1	T7	NoRel	true	investigated	retrieved
+Relation	T10	T1	NoRel	true	tested	investigated
+Relation	T10	T17	NoRel	true	tested	commanded
+Relation	T11	T12	NoRel	true	simulations	found
+Relation	T11	T19	NoRel	true	simulations	revealed
+Relation	T11	T4	NoRel	true	simulations	recovered
+Relation	T12	T13	NoRel	true	found	matched
+Relation	T12	T15	NoRel	true	found	crash
+Relation	T16	T6	NoRel	true	flight	examined
+Relation	T17	T1	NoRel	true	commanded	investigated
+Relation	T17	T18	NoRel	true	commanded	found
+Relation	T17	T9	NoRel	true	commanded	analyzed
+Relation	T18	T5	NoRel	true	found	reconstructed
+Relation	T18	T8	NoRel	true	found	extracted
+Relation	T22	T1	NoRel	true	flight	investigated
+Relation	T22	T13	NoRel	true	flight	matched
+Relation	T23	T21	NoRel	true	descent	moved
+Relation	T24	T15	NoRel	true	high - speed steep dive	crash
+Relation	T3	T2	NoRel	true	wreckage	assisted
+Relation	T3	T4	NoRel	true	wreckage	recovered
+Relation	T3	T8	NoRel	true	wreckage	extracted
+Relation	T8	T2	NoRel	true	extracted	assisted
+Relation	T8	T3	NoRel	true	extracted	wreckage
+Relation	T9	T11	NoRel	true	analyzed	simulations
+Relation	T9	T3	NoRel	true	analyzed	wreckage
+Relation	T9	T7	NoRel	true	analyzed	retrieved

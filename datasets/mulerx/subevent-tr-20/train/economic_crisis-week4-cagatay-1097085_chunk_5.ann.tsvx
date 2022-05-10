@@ -1,0 +1,28 @@
+Text	Zamanla , okuduğu kitaplardan gelişi güzel şekilde Yahudi tarihini öğrendi ve daha önceden Avrupalı sandığı birçok aydının aslında Yahudi olduğu , ve tarih boyunca Yahudilerin hep ayrımcılıklara maruz kaldığı gibi bilgileri öğrendi .	Bir süre sonra , beraberindeki birkaç Alman subayı meslektaşıyla birlikte sempati duyduğu Yahudilere karşı , yetkilerini kullanarak önemli yardımlarda bulunmaya başladı .	Aynı dönemlerde Hosenfeld , Polonyalı - Yahudilerle iyi iletişim kurabilmek için Lehçe konuşma kılavuzları satın aldı ve boş vakitinde Lehçe öğrenmeye gayret etti .	Bir gün Władysław Szpilman , saklandığı binanın alt katında çıkarttığı seslerden dolayı Hosenfeld'ın onu farketmesine sebep oldu .	Başlangıçta onu öldüreceğini sandığı için korkan Szpilman , Hosenfeld'ın " Kimsin ? " , " N' apıyorsun ? " , " Mesleğin nedir ? " sorularından sonra karşısındaki bu Alman subayının kötü niyete sahip olmadığını anlayıp bir nebzede olsa rahatlamıştır .
+Event	T0	öğrendi	EVENT	67
+Event	T1	öğrendi	EVENT	224
+Event	T2	rahatlamıştır	EVENT	936
+Event	T3	okuduğu	EVENT	10
+Event	T4	sandığı	EVENT	100
+Event	T5	duyduğu	EVENT	316
+Event	T6	yardımlarda	EVENT	373
+Event	T7	satın aldı	EVENT	512
+Event	T8	öğrenmeye	EVENT	546
+Event	T9	gayret etti	EVENT	556
+Event	T10	saklandığı	EVENT	599
+Event	T11	farketmesine	EVENT	675
+Event	T12	çıkarttığı	EVENT	630
+Event	T13	korkan	EVENT	743
+Event	T14	sandığı	EVENT	730
+Event	T15	sorularından	EVENT	831
+Event	T16	anlayıp	EVENT	911
+Relation	T1	T8	NoRel	true	öğrendi	öğrenmeye
+Relation	T11	T0	NoRel	true	farketmesine	öğrendi
+Relation	T13	T9	NoRel	true	korkan	gayret etti
+Relation	T16	T11	NoRel	true	anlayıp	farketmesine
+Relation	T2	T7	NoRel	true	rahatlamıştır	satın aldı
+Relation	T4	T3	NoRel	true	sandığı	okuduğu
+Relation	T7	T1	NoRel	true	satın aldı	öğrendi
+Relation	T7	T8	NoRel	true	satın aldı	öğrenmeye
+Relation	T8	T9	NoRel	true	öğrenmeye	gayret etti
+Relation	T9	T16	NoRel	true	gayret etti	anlayıp

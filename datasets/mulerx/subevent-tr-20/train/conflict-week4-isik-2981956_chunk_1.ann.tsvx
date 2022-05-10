@@ -1,0 +1,16 @@
+Text	Ancak Kaşgar Uygurları , Hotan'dan gelen Uygur mültecilerden Ma hakkında düşmanca haberler duydular .	Muhiti , 2 Nisan 1937'de az sayıda astı ve bir miktar altınla Yenihisar ve Yarkent üzerinden Britanya Hindistanı'na kaçtı .	Ayrılmasından kısa bir süre önce , Ma Hushan'a Hotan'a varış teklifiyle ilgili bir mesaj göndermişti .	Muhiti'nin kaçışı , Uygur birliklerinin Yenihisar , Yarkent ve Artuç'ta ayaklanmasına neden oldu , bu da tüm Sovyet yanlısı yetkililerin ve bir dizi Sovyet danışmanının idam edilmesiyle sonuçlandı .	Bağımsız bir Türk yönetimi , Artuş'taki birliklere komuta eden Küçük Ahund ile Yarkand ve Yenihisar'daki birliklere komuta eden Abdül Niyaz olmak üzere iki subay tarafından kuruldu .
+Event	T0	kaçtı	EVENT	218
+Event	T2	göndermişti	EVENT	315
+Event	T3	kaçışı	EVENT	340
+Event	T4	sonuçlandı	EVENT	515
+Event	T5	kuruldu	EVENT	701
+Event	T6	gelen	EVENT	35
+Event	T7	duydular	EVENT	91
+Event	T1	oldu	EVENT	421
+Event	T8	eden	EVENT	586
+Event	T9	eden	EVENT	651
+Relation	T1	T7	NoRel	true	oldu	duydular
+Relation	T5	T6	NoRel	true	kuruldu	gelen
+Relation	T7	T2	NoRel	true	duydular	göndermişti
+Relation	T8	T9	NoRel	true	eden	eden
+Relation	T9	T2	NoRel	true	eden	göndermişti

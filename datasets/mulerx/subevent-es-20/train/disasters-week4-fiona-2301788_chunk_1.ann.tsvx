@@ -1,0 +1,55 @@
+Text	Tras el despegue del avión el piloto expresó a los controladores de tráfico aéreo que regresaría a Coari debido a las malas condiciones climáticas , pero cerca de las 13.50 hora local impactó la copa de un árbol antes de caer en picada al río Manacapuru .	Aunque la en la lista oficial de pasajeros se incluían a 20 personas , el portavoz de la compañía aérea que operaba el avión , Manaus Aerotáxi , indicó que en el avión viajaban 24 pasajeros incluyendo a la tripulación , cifra que finalmente aumentó a 26 tras esclarecerse los hechos .	Posteriormente un sobreviviente declararía a medios locales que uno de los motores del avión falló durante el vuelo , y se investiga la relación de este hecho con el mal clima reportado por el piloto .	El Centro de Investigación y Prevención de Accidentes Aeronáuticos ( Cenipa ) de Brasil llegó hasta el lugar del accidente con el objeto de investigar las causas de este .	Se han señalado como posibles detonantes de la caída del avión el sobrepeso , la falta de combustible o el uso de queroseno en malas condiciones .
+Event	T0	despegue	EVENT	8
+Event	T1	expresó	EVENT	37
+Event	T2	regresaría	EVENT	86
+Event	T3	impactó	EVENT	184
+Event	T4	picada	EVENT	229
+Event	T5	operaba	EVENT	364
+Event	T6	indicó	EVENT	401
+Event	T7	viajaban	EVENT	424
+Event	T8	aumentó	EVENT	497
+Event	T9	esclarecerse	EVENT	515
+Event	T10	hechos	EVENT	532
+Event	T11	declararía	EVENT	573
+Event	T12	falló	EVENT	634
+Event	T13	vuelo	EVENT	651
+Event	T14	investiga	EVENT	664
+Event	T15	hecho	EVENT	694
+Event	T16	reportado	EVENT	717
+Event	T17	llegó	EVENT	831
+Event	T18	accidente	EVENT	856
+Event	T19	investigar	EVENT	883
+Event	T20	señalado	EVENT	922
+Event	T21	caída	EVENT	962
+Event	T22	uso	EVENT	1022
+Relation	T0	T20	NoRel	true	despegue	señalado
+Relation	T1	T12	NoRel	true	expresó	falló
+Relation	T1	T16	NoRel	true	expresó	reportado
+Relation	T10	T7	NoRel	true	hechos	viajaban
+Relation	T11	T20	NoRel	true	declararía	señalado
+Relation	T12	T15	NoRel	true	falló	hecho
+Relation	T12	T6	NoRel	true	falló	indicó
+Relation	T14	T1	NoRel	true	investiga	expresó
+Relation	T14	T5	NoRel	true	investiga	operaba
+Relation	T15	T10	NoRel	true	hecho	hechos
+Relation	T16	T10	NoRel	true	reportado	hechos
+Relation	T17	T15	NoRel	true	llegó	hecho
+Relation	T17	T21	NoRel	true	llegó	caída
+Relation	T17	T6	NoRel	true	llegó	indicó
+Relation	T17	T7	NoRel	true	llegó	viajaban
+Relation	T18	T16	NoRel	true	accidente	reportado
+Relation	T18	T3	NoRel	true	accidente	impactó
+Relation	T19	T0	NoRel	true	investigar	despegue
+Relation	T19	T11	NoRel	true	investigar	declararía
+Relation	T2	T21	NoRel	true	regresaría	caída
+Relation	T20	T1	NoRel	true	señalado	expresó
+Relation	T20	T12	NoRel	true	señalado	falló
+Relation	T21	T17	NoRel	true	caída	llegó
+Relation	T22	T4	NoRel	true	uso	picada
+Relation	T22	T6	NoRel	true	uso	indicó
+Relation	T22	T9	NoRel	true	uso	esclarecerse
+Relation	T3	T18	NoRel	true	impactó	accidente
+Relation	T5	T1	NoRel	true	operaba	expresó
+Relation	T6	T21	NoRel	true	indicó	caída
+Relation	T6	T9	NoRel	true	indicó	esclarecerse
+Relation	T9	T4	NoRel	true	esclarecerse	picada

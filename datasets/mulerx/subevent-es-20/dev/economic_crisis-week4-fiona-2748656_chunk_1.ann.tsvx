@@ -1,0 +1,44 @@
+Text	Está relacionada directamente con la crisis ocurrida de manera simultánea en varios países del mundo .	La desaceleración de Estados Unidos y la dependencia económica de México hacia su vecino del norte contribuyeron a aumentar los efectos de la crisis .	A este cuadro se suman otros hechos internos , especialmente la epidemia de gripe A ( H1N1 ) que afectó al país desde abril de 2009 .	La contracción del producto interno bruto mexicano es una de las mayores caídas no solo en Iberoamérica sino en todo el mundo en el panorama de crisis generalizada .	Las posturas oficiales relacionan esta caída con el episodio de la epidemia de gripe A , pero hay indicios de que el comportamiento negativo de la economía mexicana en 2009 es resultado de procesos que se venían gestando años atrás .
+Event	T0	ocurrida	EVENT	44
+Event	T1	desaceleración	EVENT	106
+Event	T2	dependencia	EVENT	144
+Event	T3	contribuyeron	EVENT	202
+Event	T4	aumentar	EVENT	218
+Event	T5	efectos	EVENT	231
+Event	T6	crisis	EVENT	245
+Event	T7	hechos	EVENT	283
+Event	T8	epidemia	EVENT	318
+Event	T9	gripe	EVENT	330
+Event	T10	afectó	EVENT	351
+Event	T11	contracción	EVENT	391
+Event	T12	caídas	EVENT	461
+Event	T13	posturas	EVENT	558
+Event	T14	relacionan	EVENT	577
+Event	T15	caída	EVENT	593
+Event	T16	episodio	EVENT	606
+Event	T17	epidemia	EVENT	621
+Event	T18	procesos	EVENT	743
+Event	T19	gestando	EVENT	766
+Relation	T2	T4	SuperSub	true	dependencia	aumentar
+Relation	T4	T2	SubSuper	true	aumentar	dependencia
+Relation	T1	T4	SuperSub	true	desaceleración	aumentar
+Relation	T4	T1	SubSuper	true	aumentar	desaceleración
+Relation	T0	T11	NoRel	true	ocurrida	contracción
+Relation	T0	T6	NoRel	true	ocurrida	crisis
+Relation	T10	T3	NoRel	true	afectó	contribuyeron
+Relation	T11	T2	NoRel	true	contracción	dependencia
+Relation	T11	T6	NoRel	true	contracción	crisis
+Relation	T12	T17	NoRel	true	caídas	epidemia
+Relation	T13	T1	NoRel	true	posturas	desaceleración
+Relation	T13	T5	NoRel	true	posturas	efectos
+Relation	T14	T13	NoRel	true	relacionan	posturas
+Relation	T15	T11	NoRel	true	caída	contracción
+Relation	T16	T14	NoRel	true	episodio	relacionan
+Relation	T18	T1	NoRel	true	procesos	desaceleración
+Relation	T18	T17	NoRel	true	procesos	epidemia
+Relation	T2	T14	NoRel	true	dependencia	relacionan
+Relation	T2	T5	NoRel	true	dependencia	efectos
+Relation	T5	T18	NoRel	true	efectos	procesos
+Relation	T6	T11	NoRel	true	crisis	contracción
+Relation	T6	T17	NoRel	true	crisis	epidemia
+Relation	T8	T10	NoRel	true	epidemia	afectó

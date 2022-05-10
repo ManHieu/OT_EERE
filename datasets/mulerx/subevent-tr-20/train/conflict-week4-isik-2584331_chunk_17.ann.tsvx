@@ -1,0 +1,21 @@
+Text	Protestoların bastırılmasının rağmen , 1956 olayları sonunda Gürcistan halkı Sovyetler Birliği'ne olan sadakatinin ciddi şekilde sorgulamaya başladı .	Tarihçi Ronald Grigor Suny , " Sovyet hükûmetinden gelen hızlı ve acımasız tepki , Sovyet sisteminin ne kadarının değişeceğine ve Stalin'in otoriterizminin ne kadarını koruyacağına dair ikilemi çözemediğini açıkça gösterdi .	Hükûmetin Tiflis'teki kafa karışıklığı , reformun partinin temel iktidar tekelini koruma kararlılığıyla sınırlı olacağının kanlı bir işaretiydi .	" yorumunu yaptı .	1956 olayının hemen ardından Sovyetler Birliği'nden açıkça ayrılma çağrısı yapan ilk Gürcü yeraltı grupları ortaya çıktı .
+Event	T0	olayları	EVENT	44
+Event	T1	tepki	EVENT	226
+Event	T3	gösterdi	EVENT	365
+Event	T5	işaretiydi	EVENT	509
+Event	T6	yaptı	EVENT	533
+Event	T7	çıktı	EVENT	656
+Event	T8	Protestoların	EVENT	0
+Event	T9	bastırılmasının	EVENT	14
+Event	T10	başladı	EVENT	141
+Event	T2	reformun	EVENT	417
+Event	T4	olayının	EVENT	546
+Event	T11	çağrısı	EVENT	608
+Relation	T0	T4	NoRel	true	olayları	olayının
+Relation	T10	T6	NoRel	true	başladı	yaptı
+Relation	T5	T3	NoRel	true	işaretiydi	gösterdi
+Relation	T6	T9	NoRel	true	yaptı	bastırılmasının
+Relation	T7	T8	NoRel	true	çıktı	Protestoların
+Relation	T8	T2	NoRel	true	Protestoların	reformun
+Relation	T9	T10	NoRel	true	bastırılmasının	başladı
+Relation	T9	T4	NoRel	true	bastırılmasının	olayının

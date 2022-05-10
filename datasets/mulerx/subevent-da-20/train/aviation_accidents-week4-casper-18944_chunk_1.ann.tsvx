@@ -1,0 +1,28 @@
+Text	Abdullah Azzam og Osama bin Laden var enige om , at den globale kamp for islam skulle fortsætte og oprettede al-Qaeda i løbet af 1988/1989 .	I 1989 døde Abdullah Azzam , og Osama bin Laden bestemte sig for at videreføre arven .	Han støttede blandt andet islamiske jihadister , der rejste til Bosnien for at slås mod Serbien , såvel som islamister der sloges mod russerne i Kaukasus .	I 1990 tilbød han den saudi-arabiske konge at tvinge Irak ud af Kuwait ved hjælp af det netværk af soldater , han havde opbygget under krigen i Afghanistan .	Ikke fordi han gerne ville føre krig mod Irak , men for at overtage amerikanernes rolle .
+Event	T0	enige	EVENT	38
+Event	T1	kamp	EVENT	64
+Event	T2	fortsætte	EVENT	86
+Event	T3	oprettede	EVENT	99
+Event	T4	døde	EVENT	148
+Event	T5	bestemte	EVENT	189
+Event	T6	støttede	EVENT	232
+Event	T7	rejste	EVENT	281
+Event	T8	slås	EVENT	307
+Event	T9	sloges	EVENT	351
+Event	T10	tvinge	EVENT	430
+Event	T11	opbygget	EVENT	504
+Event	T12	krigen	EVENT	519
+Event	T13	overtage	EVENT	601
+Relation	T1	T2	SuperSub	true	kamp	fortsætte
+Relation	T2	T1	SubSuper	true	fortsætte	kamp
+Relation	T1	T3	SuperSub	true	kamp	oprettede
+Relation	T3	T1	SubSuper	true	oprettede	kamp
+Relation	T1	T0	SuperSub	true	kamp	enige
+Relation	T0	T1	SubSuper	true	enige	kamp
+Relation	T6	T8	SuperSub	true	støttede	slås
+Relation	T8	T6	SubSuper	true	slås	støttede
+Relation	T6	T9	SuperSub	true	støttede	sloges
+Relation	T9	T6	SubSuper	true	sloges	støttede
+Relation	T13	T10	SuperSub	true	overtage	tvinge
+Relation	T10	T13	SubSuper	true	tvinge	overtage
+Relation	T4	T2	NoRel	true	døde	fortsætte

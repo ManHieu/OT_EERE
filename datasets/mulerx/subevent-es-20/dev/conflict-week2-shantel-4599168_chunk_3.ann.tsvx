@@ -1,0 +1,42 @@
+Text	Entran en una " guerra de súper villanos " para ganar el Globo Dorado de Poder del Lama Negro , pero todos son derrotados .	Látigo Negro se reincorpora a Maggia y lucha contra los héroes Spider-Man y Iron Man en Nueva Jersey , y finalmente es derrotado por el vigilante Wraith .	El cerebro criminal Justin Hammer contrata a Látigo Negro , y con Fundidor y Ventisca intentan robar un casino en Atlantic City , pero Iron Man los detiene .	Látigo Negro es liberado de la prisión por Hammer y lucha contra Iron Man nuevamente como uno de los operativos disfrazados de Hammer , y a pesar de las probabilidades abrumadoras , el héroe derrota a los villanos .	Scarlotti es reempleado por un consorcio anónimo , financiado por Hammer , para matar al empleado de Stark Vic Martinelli , y se le proporciona un vestuario y armamento mejorados y el nuevo alias Latigazo .
+Event	T0	guerra	EVENT	16
+Event	T1	ganar	EVENT	48
+Event	T10	lucha	EVENT	489
+Event	T11	disfrazados	EVENT	549
+Event	T12	derrota	EVENT	628
+Event	T13	reempleado	EVENT	666
+Event	T14	financiado	EVENT	704
+Event	T15	matar	EVENT	733
+Event	T16	proporciona	EVENT	785
+Event	T2	derrotados	EVENT	111
+Event	T3	reincorpora	EVENT	140
+Event	T4	lucha	EVENT	163
+Event	T5	derrotado	EVENT	243
+Event	T6	contrata	EVENT	313
+Event	T8	detiene	EVENT	427
+Event	T9	liberado	EVENT	453
+Event	T7	intentan	EVENT	365
+Relation	T11	T10	SuperSub	true	disfrazados	lucha
+Relation	T10	T11	SubSuper	true	lucha	disfrazados
+Relation	T13	T14	SuperSub	true	reempleado	financiado
+Relation	T14	T13	SubSuper	true	financiado	reempleado
+Relation	T13	T16	SuperSub	true	reempleado	proporciona
+Relation	T16	T13	SubSuper	true	proporciona	reempleado
+Relation	T10	T13	NoRel	true	lucha	reempleado
+Relation	T10	T7	NoRel	true	lucha	intentan
+Relation	T11	T5	NoRel	true	disfrazados	derrotado
+Relation	T13	T0	NoRel	true	reempleado	guerra
+Relation	T13	T3	NoRel	true	reempleado	reincorpora
+Relation	T13	T4	NoRel	true	reempleado	lucha
+Relation	T14	T16	NoRel	true	financiado	proporciona
+Relation	T14	T5	NoRel	true	financiado	derrotado
+Relation	T15	T13	NoRel	true	matar	reempleado
+Relation	T15	T16	NoRel	true	matar	proporciona
+Relation	T15	T8	NoRel	true	matar	detiene
+Relation	T16	T0	NoRel	true	proporciona	guerra
+Relation	T16	T10	NoRel	true	proporciona	lucha
+Relation	T2	T5	NoRel	true	derrotados	derrotado
+Relation	T6	T13	NoRel	true	contrata	reempleado
+Relation	T8	T2	NoRel	true	detiene	derrotados
+Relation	T9	T10	NoRel	true	liberado	lucha
+Relation	T9	T8	NoRel	true	liberado	detiene

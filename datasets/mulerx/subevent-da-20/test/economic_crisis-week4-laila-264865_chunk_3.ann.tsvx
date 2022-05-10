@@ -1,0 +1,34 @@
+Text	Først til nogle midlertidige lokaler i Tuborg Havn , og senere til egen fabrik i Sydhavnen .	Anden Verdenskrig havde gjort produktionen besværlig under besættelsesmagten , som forbød privat luftfart .	SAI konstruerede i 1943 en prototype til en svæveflyver , KZ G-I , der dog ikke kom i produktion .	Året efter blev to eksemplarer af ambulanceflyet KZ IV , der var specialdesignet til redningskorpset Zonen , færdiggjort , og de kom i brug fra maj 1944 .	Sideløbende blev der lavet planer for konstruktionen af KZ III , et nybrud i ingeniør Zeuthens designs , da III´eren var højvinget .
+Event	T0	forbød	EVENT	176
+Event	T1	konstruerede	EVENT	205
+Event	T2	kom	EVENT	281
+Event	T3	produktion	EVENT	287
+Event	T4	færdiggjort	EVENT	409
+Event	T5	kom	EVENT	429
+Event	T6	brug	EVENT	435
+Event	T7	nybrud	EVENT	523
+Event	T8	højvinget	EVENT	576
+Event	T9	midlertidige	EVENT	16
+Event	T10	egen	EVENT	67
+Event	T11	Anden Verdenskrig	EVENT	93
+Event	T12	produktionen	EVENT	123
+Event	T13	besværlig	EVENT	136
+Event	T14	specialdesignet	EVENT	365
+Event	T15	blev	EVENT	311
+Event	T16	planer	EVENT	482
+Relation	T0	T6	NoRel	true	forbød	brug
+Relation	T11	T12	NoRel	true	Anden Verdenskrig	produktionen
+Relation	T11	T15	NoRel	true	Anden Verdenskrig	blev
+Relation	T16	T4	NoRel	true	planer	færdiggjort
+Relation	T3	T4	NoRel	true	produktion	færdiggjort
+Relation	T3	T8	NoRel	true	produktion	højvinget
+Relation	T4	T2	NoRel	true	færdiggjort	kom
+Relation	T6	T14	NoRel	true	brug	specialdesignet
+Relation	T6	T3	NoRel	true	brug	produktion
+Relation	T6	T4	NoRel	true	brug	færdiggjort
+Relation	T6	T7	NoRel	true	brug	nybrud
+Relation	T6	T8	NoRel	true	brug	højvinget
+Relation	T7	T0	NoRel	true	nybrud	forbød
+Relation	T8	T15	NoRel	true	højvinget	blev
+Relation	T9	T12	NoRel	true	midlertidige	produktionen
+Relation	T9	T16	NoRel	true	midlertidige	planer

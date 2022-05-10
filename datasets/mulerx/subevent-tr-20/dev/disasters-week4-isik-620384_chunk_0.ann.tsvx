@@ -1,0 +1,14 @@
+Text	küçükresim | Gümrü'deki Kutsal Kurtarıcı Kilisesi'nin depremden sonraki görünümü GÜMRÜ DEPREMI olarak da adlandırılan SPITAK DEPREMI , o tarihte Sovyetler Birliği bünyesinde bulunan Ermenistan'ın Spitak bölgesinde 7 Aralık 1988 günü yerel saatle 11:41 ( UTC itibarıyla 07:41 ) 'de meydana gelen 7.2 büyüklüğünde bir sarsıntıdır .	Yerel binalar ( özellikle okullar ve hastaneler ) depreme dayanamamış ve bu durum 20.000 insanın yaşamına mal olmuştur .	Tahminlere göre depremin 5 dakika sonra meydana gelmesi durumunda çocuklar , okullarının zayıf binalarından çıkmış olacaklardı .	Bu denli küçük bir gecikme birçok insanın yaşamını kurtarabilirdi .	Fakat olayda 1000 kadar çocuk hayatını kaybetti .
+Event	T0	görünümü	EVENT	72
+Event	T1	DEPREMI	EVENT	125
+Event	T2	sarsıntıdır	EVENT	316
+Event	T3	depremin	EVENT	467
+Event	T4	gelmesi	EVENT	499
+Event	T7	kaybetti	EVENT	687
+Event	T8	DEPREMI	EVENT	87
+Event	T9	gelen	EVENT	289
+Event	T10	olmuştur	EVENT	440
+Relation	T1	T7	NoRel	true	DEPREMI	kaybetti
+Relation	T1	T8	NoRel	true	DEPREMI	DEPREMI
+Relation	T4	T9	NoRel	true	gelmesi	gelen
+Relation	T9	T3	NoRel	true	gelen	depremin

@@ -1,0 +1,14 @@
+Text	Nitekim bu konuda verdiği maddi desteğin , savaş bütçesine çok büyük yararı oldu .	Ancak büyük yenilgi ardından imparatorluğun da yıkılması üzerine , Ebert zor durumda kaldı .	Ebert’in karşısındaki sol yanlı grup partiden ayrıldı ve kendilerince Almanya Bağımsız Sosyal Demokrat Partisi’ni ( USPD ) kurdu .	Partiden bir grup daha ayrılarak da Almanya Komünist Partisi’ni ( KPD ) oluşturdu .	Sosyal Demokrat Parti , Demokrat Parti ve Katolik Merkez Partisi birleştiler ve isimlerinin Siyah - Kırmızı - Altın Koalisyonu olduğunu ilan ettiler .
+Event	T0	yenilgi	EVENT	95
+Event	T1	yıkılması	EVENT	130
+Event	T2	ayrıldı	EVENT	222
+Event	T3	kurdu	EVENT	299
+Event	T4	oluşturdu	EVENT	379
+Event	T5	kaldı	EVENT	168
+Event	T6	desteğin	EVENT	32
+Event	T7	oldu	EVENT	76
+Event	T8	ayrılarak	EVENT	330
+Event	T9	ettiler	EVENT	532
+Relation	T0	T6	NoRel	true	yenilgi	desteğin
+Relation	T2	T6	NoRel	true	ayrıldı	desteğin
+Relation	T3	T8	NoRel	true	kurdu	ayrılarak

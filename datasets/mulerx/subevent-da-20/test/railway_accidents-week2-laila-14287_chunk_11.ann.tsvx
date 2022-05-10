@@ -1,0 +1,20 @@
+Text	Mindestenen til ære for Peter Sabroe blev rejst i anledning af 100 årsdagen for ulykken , der kostede Peter Sabroe livet .	Den 26. juli 1913 kørte et tog galt i en frygtelig ulykke ved Bramming .	Hele 15 mennesker mistede livet , og en af dem var Peter Sabroe .	En af dem som deltog i mindeceremonien , var Peter Sabroes oldebarn Peter Storm .	Juleaftensdag 1898 i Skejby , nord for Århus omkom fem børn fra fattige familier ved kulilteforgiftning , da forældrene blev nødt til at efterlade dem alene hjemme .
+Event	T0	Mindestenen	EVENT	0
+Event	T1	rejst	EVENT	42
+Event	T10	efterlade	EVENT	481
+Event	T2	ulykken	EVENT	80
+Event	T3	kostede	EVENT	94
+Event	T4	kørte	EVENT	141
+Event	T5	ulykke	EVENT	174
+Event	T6	deltog	EVENT	276
+Event	T7	mindeceremonien	EVENT	285
+Event	T8	omkom	EVENT	389
+Event	T9	kulilteforgiftning	EVENT	429
+Relation	T3	T1	SuperSub	true	kostede	rejst
+Relation	T1	T3	SubSuper	true	rejst	kostede
+Relation	T7	T0	SuperSub	true	mindeceremonien	Mindestenen
+Relation	T0	T7	SubSuper	true	Mindestenen	mindeceremonien
+Relation	T7	T1	SuperSub	true	mindeceremonien	rejst
+Relation	T1	T7	SubSuper	true	rejst	mindeceremonien
+Relation	T3	T8	NoRel	true	kostede	omkom
+Relation	T5	T9	NoRel	true	ulykke	kulilteforgiftning

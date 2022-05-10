@@ -1,0 +1,25 @@
+Text	En 1937 , los nazis aprobaron la Ley del Gran Hamburgo , en virtud de la cual la cercana ciudad hanseática de Hamburgo se amplió para incluir ciudades que anteriormente pertenecían a la provincia prusiana de Schleswig -Holstein .	Para compensar a Prusia por estas pérdidas ( y en parte porque Adolf Hitler tenía una aversión personal por Lübeck después de que se negara a permitirle hacer campaña allí en 1932 y porque la bandera de Lübeck era extremadamente similar a la bandera de Polonia , que Hitler odiaba después de 1935 debido a la muerte de Józef Piłsudski ) .	El estado de Lübeck , de 711 años de duración , llegó a su fin y casi todo su territorio se incorporó a Schleswig -Holstein .	Lübeck fue ocupado por el ejército británico en los últimos días de la Segunda Guerra Mundial .	El ejército soviético luego ocupó todo el territorio al este de la ciudad , según lo acordado por las potencias aliadas .
+Event	T0	aprobaron	EVENT	20
+Event	T1	amplió	EVENT	122
+Event	T2	compensar	EVENT	235
+Event	T3	pérdidas	EVENT	264
+Event	T4	aversión	EVENT	316
+Event	T5	negara	EVENT	363
+Event	T6	muerte	EVENT	539
+Event	T7	llegó	EVENT	617
+Event	T8	incorporó	EVENT	661
+Event	T9	ocupado	EVENT	706
+Event	T10	ocupó	EVENT	819
+Event	T11	acordado	EVENT	876
+Event	T12	Ley del Gran Hamburgo	EVENT	33
+Event	T13	Segunda Guerra Mundial	EVENT	766
+Relation	T13	T9	SuperSub	true	Segunda Guerra Mundial	ocupado
+Relation	T9	T13	SubSuper	true	ocupado	Segunda Guerra Mundial
+Relation	T13	T10	SuperSub	true	Segunda Guerra Mundial	ocupó
+Relation	T10	T13	SubSuper	true	ocupó	Segunda Guerra Mundial
+Relation	T13	T11	SuperSub	true	Segunda Guerra Mundial	acordado
+Relation	T11	T13	SubSuper	true	acordado	Segunda Guerra Mundial
+Relation	T0	T11	NoRel	true	aprobaron	acordado
+Relation	T0	T12	NoRel	true	aprobaron	Ley del Gran Hamburgo
+Relation	T9	T10	NoRel	true	ocupado	ocupó
+Relation	T9	T2	NoRel	true	ocupado	compensar

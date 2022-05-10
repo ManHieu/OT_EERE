@@ -1,0 +1,20 @@
+Text	Las personas LGBTQ_+ tienen menos probabilidades de tener seguro médico .	Muchos informaron discriminación , prejuicio y rechazo al intentar buscar atención médica .	La discriminación , el estigma o las barreras financieras en la atención médica pueden hacer que las personas LGBTQ_+ eviten buscar atención ante un contagio de COVID-19 .	A nivel mundial , las demoras hospitalarias causadas por la enfermedad de COVID-19 también han retrasado aún más las cirugías de afirmación de género y la atención para grupos de minorías , repercutiendo incluso esta situación en su salud mental .	Con base en datos , las personas de la comunidad tienen más probabilidades de estar inmunodeprimidas y discapacitadas en comparación con la población general .
+Event	T0	discriminación	EVENT	92
+Event	T1	discriminación	EVENT	169
+Event	T3	contagio	EVENT	315
+Event	T4	causadas	EVENT	382
+Event	T5	enfermedad	EVENT	398
+Event	T6	retrasado	EVENT	433
+Event	T7	cirugías	EVENT	455
+Event	T8	afirmación	EVENT	467
+Event	T9	atención	EVENT	493
+Event	T10	repercutiendo	EVENT	528
+Event	T11	rechazo	EVENT	121
+Relation	T5	T10	SuperSub	true	enfermedad	repercutiendo
+Relation	T10	T5	SubSuper	true	repercutiendo	enfermedad
+Relation	T0	T4	NoRel	true	discriminación	causadas
+Relation	T1	T7	NoRel	true	discriminación	cirugías
+Relation	T3	T9	NoRel	true	contagio	atención
+Relation	T7	T1	NoRel	true	cirugías	discriminación
+Relation	T9	T5	NoRel	true	atención	enfermedad
+Relation	T9	T6	NoRel	true	atención	retrasado

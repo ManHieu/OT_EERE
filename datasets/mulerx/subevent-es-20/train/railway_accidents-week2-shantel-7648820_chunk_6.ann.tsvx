@@ -1,0 +1,20 @@
+Text	En el lado del paso por el que llegó al mismo el autobús , existían , no obstante , dos pequeñas edificaciones situadas junto a la vía - el refugio del apeadero de Muñoz y un pequeño almacén de material del servicio de vías y obras de Renfe - .	Ambas se hallaban del lado de la vía por el cual se aproximó a la misma el autobús , la primera de ellas a unos cuarenta metros de la carretera y la segunda a unos veinte .	Su distancia mínima al carril más próximo de la vía férrea era de unos cinco metros .	Se apuntó por ello en un principio como causa posible del accidente que dichas construcciones pudiesen haber impedido al conductor del autobús advertir la llegada de la locomotora , especialmente la segunda .	Aunque lo cierto es que dichas edificaciones sí restaban cierta visibilidad al paso , teniendo en cuenta su posición a priori resultaba posible detenerse ante el mismo sin invadir la vía férrea en un punto en que las referidas no condicionasen la correcta visión de ésta en bastantes metros por el lado por el que llegó la locomotora .
+Event	T0	llegó	EVENT	31
+Event	T1	apuntó	EVENT	507
+Event	T10	llegó	EVENT	1027
+Event	T2	accidente	EVENT	562
+Event	T3	construcciones	EVENT	583
+Event	T4	impedido	EVENT	613
+Event	T5	advertir	EVENT	647
+Event	T6	llegada	EVENT	659
+Event	T7	invadir	EVENT	885
+Event	T8	condicionasen	EVENT	943
+Event	T9	visión	EVENT	969
+Relation	T0	T3	NoRel	true	llegó	construcciones
+Relation	T10	T1	NoRel	true	llegó	apuntó
+Relation	T10	T6	NoRel	true	llegó	llegada
+Relation	T4	T8	NoRel	true	impedido	condicionasen
+Relation	T6	T9	NoRel	true	llegada	visión
+Relation	T8	T0	NoRel	true	condicionasen	llegó
+Relation	T8	T1	NoRel	true	condicionasen	apuntó
+Relation	T8	T5	NoRel	true	condicionasen	advertir

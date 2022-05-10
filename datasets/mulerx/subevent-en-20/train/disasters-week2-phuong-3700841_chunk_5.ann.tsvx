@@ -1,0 +1,37 @@
+Text	After the casualties had been removed , the Saudi government used bulldozers to clear the area so the ceremony could continue .	The Saudi government had invested in improving crowd flow at Jamaraat Bridge , by widening it to eight lanes .	Plans for the bridge to be demolished and rebuilt as a four - storey structure with air - conditioning were approved in 2005 .	This work went ahead immediately after the January 2006 Hajj and was completed prior to the 2009 Hajj .	These infrastructure improvements were not accompanied by adequate signage telling pilgrims which direction to travel , a problem given that most Hajjis have never visited before .
+Event	T0	casualties	EVENT	10
+Event	T1	removed	EVENT	30
+Event	T10	rebuilt	EVENT	281
+Event	T11	went	EVENT	376
+Event	T12	approved	EVENT	347
+Event	T13	completed	EVENT	435
+Event	T15	accompanied	EVENT	513
+Event	T16	telling	EVENT	545
+Event	T17	travel	EVENT	581
+Event	T18	visited	EVENT	634
+Event	T19	widening	EVENT	210
+Event	T2	used	EVENT	61
+Event	T3	clear	EVENT	80
+Event	T4	ceremony	EVENT	102
+Event	T5	continue	EVENT	117
+Event	T6	invested	EVENT	153
+Event	T7	improving	EVENT	165
+Event	T8	flow	EVENT	181
+Event	T9	demolished	EVENT	266
+Relation	T2	T1	SuperSub	true	used	removed
+Relation	T1	T2	SubSuper	true	removed	used
+Relation	T19	T7	SuperSub	true	widening	improving
+Relation	T7	T19	SubSuper	true	improving	widening
+Relation	T0	T15	NoRel	true	casualties	accompanied
+Relation	T11	T0	NoRel	true	went	casualties
+Relation	T11	T18	NoRel	true	went	visited
+Relation	T12	T17	NoRel	true	approved	travel
+Relation	T12	T6	NoRel	true	approved	invested
+Relation	T15	T6	NoRel	true	accompanied	invested
+Relation	T16	T12	NoRel	true	telling	approved
+Relation	T18	T13	NoRel	true	visited	completed
+Relation	T2	T15	NoRel	true	used	accompanied
+Relation	T3	T18	NoRel	true	clear	visited
+Relation	T4	T11	NoRel	true	ceremony	went
+Relation	T7	T15	NoRel	true	improving	accompanied
+Relation	T8	T5	NoRel	true	flow	continue

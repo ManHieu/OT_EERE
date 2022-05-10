@@ -1,0 +1,28 @@
+Text	1550 - 1562 OSMANLI - ALMAN SAVAŞI , Osmanlı İmparatorluğu ve Kutsal Roma Cermen İmparatorluğu arasında Macaristan ve Erdel'in hakimiyeti konusundaki çekişme nedeniyle başlayan ve gerek Macaristan gerek Akdeniz'de büyük bir mücadeleye dönüştükten sonra karada ve denizdeki Osmanlı zaferleri üzerine 1555 ve 1559'daki iki ateşkesin ardından 1562 yılında İstanbul Antlaşması'yla sonuçlanan savaştır .	Osmanlı İmparatorluğu 19 Haziran 1547 tarihinde İstanbul Antlaşmasıyla Kutsal Roma Cermen İmparatorluğu'yla 1540'tan beri süren savaş halini sonlandırmış ; bu suretle doğudaki hasımı olan Safevi Devleti'ne yönelme olanağı bulmuştu .	Kanuni Sultan Süleyman 29 Mart 1548'de bir yıl sürecek olan ve Tebriz ( geçici olarak ) ile Van'ın alınmasıyla sonuçlanacak ikinci İran seferi'ne çıktı .	Eşzamanlı olarak İkinci Vezir Kara Ahmed Paşa komutasındaki ikinci bir Türk ordusu ise Gürcistan üzerine yürüyerek Samtshe Atabeyliği'nin topraklarının büyük bölümünü fethetmeyi başardı .	Bununla birlikte , 1549 yılında doğu cephesine odaklanmış olan Osmanlı İmparatorluğu ile Kutsal Roma Cermen İmparatorluğu arasında 1547'de sağlanan barış hali çok uzun sürmedi .
+Event	T1	çekişme	EVENT	150
+Event	T2	başlayan	EVENT	168
+Event	T3	dönüştükten	EVENT	235
+Event	T4	zaferleri	EVENT	281
+Event	T5	ateşkesin	EVENT	321
+Event	T6	savaştır	EVENT	388
+Event	T7	savaş	EVENT	527
+Event	T8	sonlandırmış	EVENT	540
+Event	T10	bulmuştu	EVENT	621
+Event	T11	çıktı	EVENT	778
+Event	T12	başardı	EVENT	964
+Event	T14	1550 - 1562 OSMANLI - ALMAN SAVAŞI	EVENT	0
+Event	T15	İstanbul Antlaşması'yla	EVENT	353
+Event	T9	yürüyerek	EVENT	891
+Relation	T14	T4	SuperSub	true	1550 - 1562 OSMANLI - ALMAN SAVAŞI	zaferleri
+Relation	T4	T14	SubSuper	true	zaferleri	1550 - 1562 OSMANLI - ALMAN SAVAŞI
+Relation	T14	T15	SuperSub	true	1550 - 1562 OSMANLI - ALMAN SAVAŞI	İstanbul Antlaşması'yla
+Relation	T15	T14	SubSuper	true	İstanbul Antlaşması'yla	1550 - 1562 OSMANLI - ALMAN SAVAŞI
+Relation	T1	T5	NoRel	true	çekişme	ateşkesin
+Relation	T1	T6	NoRel	true	çekişme	savaştır
+Relation	T2	T11	NoRel	true	başlayan	çıktı
+Relation	T3	T2	NoRel	true	dönüştükten	başlayan
+Relation	T5	T14	NoRel	true	ateşkesin	1550 - 1562 OSMANLI - ALMAN SAVAŞI
+Relation	T6	T1	NoRel	true	savaştır	çekişme
+Relation	T8	T10	NoRel	true	sonlandırmış	bulmuştu
+Relation	T8	T9	NoRel	true	sonlandırmış	yürüyerek
+Relation	T9	T8	NoRel	true	yürüyerek	sonlandırmış

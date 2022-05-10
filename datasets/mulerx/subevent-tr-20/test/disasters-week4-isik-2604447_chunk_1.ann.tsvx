@@ -1,0 +1,18 @@
+Text	Depremin merkez_üssü Aşkabat'ın 25 km güneybatısındaki küçük Kara - Kavdan köyü yakınlarındaydı .	Deprem , neredeyse tüm tuğla binaların yıkıldığı , beton yapıların ağır hasar gördüğü ve yük trenlerinin raydan çıktığı Aşkabat ve yakın köylerde büyük ölçüde hasara neden oldu .	Bunun yanı sıra İran'ın Dergez kentinde de hasar ve kayıplar meydana geldi .	Aşkabat'ın kuzeybatısında ve güneydoğusunda yüzey rüptürü gözlendi .	Medya kaynakları , o zamanki Türkmenistan SSC'nin nüfusunun neredeyse % 10'una denk gelen 10, 000 ila 110, 000 arasında ölü sayısı konusunda değişiyor .
+Event	T0	Depremin	EVENT	0
+Event	T1	Deprem	EVENT	98
+Event	T2	yıkıldığı	EVENT	137
+Event	T3	gördüğü	EVENT	176
+Event	T4	çıktığı	EVENT	210
+Event	T5	oldu	EVENT	270
+Event	T6	hasar	EVENT	320
+Event	T7	geldi	EVENT	346
+Event	T8	gözlendi	EVENT	412
+Event	T9	ölü	EVENT	543
+Event	T10	değişiyor	EVENT	564
+Event	T11	hasara	EVENT	257
+Relation	T1	T2	NoRel	true	Deprem	yıkıldığı
+Relation	T10	T1	NoRel	true	değişiyor	Deprem
+Relation	T5	T7	NoRel	true	oldu	geldi
+Relation	T6	T9	NoRel	true	hasar	ölü
+Relation	T8	T5	NoRel	true	gözlendi	oldu

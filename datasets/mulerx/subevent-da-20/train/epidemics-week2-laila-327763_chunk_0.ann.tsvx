@@ -1,0 +1,30 @@
+Text	250 px | thumb| right | Kort som viser spredningen af kolera i Zimbabwe pr. 6. december 2008 , ved brug af information fra flere kilder .	Kommuner hvor der er rapporteret om koleratilfælde er afmærket med orange .	KOLERAUDBRUDDET I ZIMBABWE 2008-2009 var en koleraepidemi i Zimbabwe , som begyndte i august 2008 som fejede igennem landet og spredte sig til Botswana , Mozambique , Sydafrika og Zambia .	Inden 31. december 2008 var der meldt om 30.938 tilfælde , hvoraf 1.551 dødsfald .	Den zimbabwiske regering erklærede undtagelsestilstand efter udbruddet , og efterspurgte international bistand .
+Event	T0	spredningen	EVENT	39
+Event	T1	brug	EVENT	99
+Event	T10	dødsfald	EVENT	475
+Event	T11	undtagelsestilstand	EVENT	521
+Event	T12	udbruddet	EVENT	547
+Event	T13	efterspurgte	EVENT	562
+Event	T3	afmærket	EVENT	192
+Event	T4	KOLERAUDBRUDDET	EVENT	214
+Event	T5	koleraepidemi	EVENT	258
+Event	T6	begyndte	EVENT	289
+Event	T7	fejede	EVENT	316
+Event	T9	tilfælde	EVENT	451
+Relation	T1	T0	SuperSub	true	brug	spredningen
+Relation	T0	T1	SubSuper	true	spredningen	brug
+Relation	T11	T13	SuperSub	true	undtagelsestilstand	efterspurgte
+Relation	T13	T11	SubSuper	true	efterspurgte	undtagelsestilstand
+Relation	T0	T3	SuperSub	true	spredningen	afmærket
+Relation	T3	T0	SubSuper	true	afmærket	spredningen
+Relation	T5	T7	SuperSub	true	koleraepidemi	fejede
+Relation	T7	T5	SubSuper	true	fejede	koleraepidemi
+Relation	T4	T7	SuperSub	true	KOLERAUDBRUDDET	fejede
+Relation	T7	T4	SubSuper	true	fejede	KOLERAUDBRUDDET
+Relation	T0	T7	NoRel	true	spredningen	fejede
+Relation	T10	T13	NoRel	true	dødsfald	efterspurgte
+Relation	T11	T0	NoRel	true	undtagelsestilstand	spredningen
+Relation	T11	T4	NoRel	true	undtagelsestilstand	KOLERAUDBRUDDET
+Relation	T12	T9	NoRel	true	udbruddet	tilfælde
+Relation	T3	T11	NoRel	true	afmærket	undtagelsestilstand
+Relation	T9	T11	NoRel	true	tilfælde	undtagelsestilstand

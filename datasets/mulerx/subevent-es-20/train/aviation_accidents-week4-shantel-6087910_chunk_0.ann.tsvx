@@ -1,0 +1,29 @@
+Text	El VUELO 470 DE LAM AEROLÍNEAS DE MOZAMBIQUE era un vuelo de pasajeros programado del Aeropuerto Internacional de Maputo , Mozambique , que se estrelló en el parque nacional de Bwabwata en Namibia en el camino al Aeropuerto Internacional Quatro de Fevereiro , Angola .	La aeronave despegó a tiempo , pero no pudo llegar a su destino .	Los restos de la aeronave fueron encontrados al día siguiente , el 30 de noviembre de 2013 en el parque nacional de Bwabwata en al norte de Namibia , a medio camino entre su salida y el aeropuerto de su llegada prevista .	Todas las 33 personas , entre ellas 6 tripulantes , que estaban a bordo del avión murieron .	Se informó que el clima era malo en el momento del accidente con fuertes lluvias en las proximidades de la trayectoria de vuelo .
+Event	T0	VUELO	EVENT	3
+Event	T1	vuelo	EVENT	52
+Event	T2	programado	EVENT	71
+Event	T3	estrelló	EVENT	143
+Event	T4	despegó	EVENT	281
+Event	T5	llegar	EVENT	313
+Event	T6	restos	EVENT	339
+Event	T7	encontrados	EVENT	368
+Event	T8	salida	EVENT	509
+Event	T9	prevista	EVENT	546
+Event	T10	murieron	EVENT	639
+Event	T11	informó	EVENT	653
+Event	T12	accidente	EVENT	701
+Event	T13	lluvias	EVENT	723
+Event	T14	trayectoria	EVENT	757
+Event	T15	vuelo	EVENT	772
+Relation	T1	T3	SuperSub	true	vuelo	estrelló
+Relation	T3	T1	SubSuper	true	estrelló	vuelo
+Relation	T1	T4	SuperSub	true	vuelo	despegó
+Relation	T4	T1	SubSuper	true	despegó	vuelo
+Relation	T15	T14	NoRel	true	vuelo	trayectoria
+Relation	T4	T7	NoRel	true	despegó	encontrados
+Relation	T5	T0	NoRel	true	llegar	VUELO
+Relation	T6	T2	NoRel	true	restos	programado
+Relation	T6	T5	NoRel	true	restos	llegar
+Relation	T6	T7	NoRel	true	restos	encontrados
+Relation	T8	T4	NoRel	true	salida	despegó
+Relation	T9	T4	NoRel	true	prevista	despegó

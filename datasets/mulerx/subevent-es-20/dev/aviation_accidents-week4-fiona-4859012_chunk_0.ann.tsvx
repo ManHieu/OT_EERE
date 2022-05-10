@@ -1,0 +1,25 @@
+Text	El ACCIDENTE EN LAS CARRERAS AÉREAS DE RENO DE 2011 , fue un accidente aéreo que tuvo lugar el 16 de septiembre de 2011 .	El avión , un North American P-51D Mustang , matriculado _ NX79111 _ y conocido como _ Galloping Ghost _ , había despegado del Aeropuerto de Reno-Stead , en Reno , Nevada , para participar en las Carreras Aéreas de Reno .	El siniestro se produjo después de que el piloto Jimmy Leeward , una vez completada una vuelta al circuito , dio señal de mayday retirándose de la carrera .	La aeronave acabó impactando contra una zona donde se sentaban los espectadores , situada cerca de la pista de aterrizaje .	Debido a la gravedad del accidente , la organización decidió cancelar el evento durante el fin de semana .
+Event	T0	ACCIDENTE	EVENT	3
+Event	T1	accidente	EVENT	61
+Event	T2	despegado	EVENT	235
+Event	T3	participar	EVENT	300
+Event	T4	Carreras	EVENT	318
+Event	T5	completada	EVENT	417
+Event	T6	vuelta	EVENT	432
+Event	T7	retirándose	EVENT	473
+Event	T8	carrera	EVENT	491
+Event	T9	impactando	EVENT	519
+Event	T10	sentaban	EVENT	555
+Event	T11	aterrizaje	EVENT	612
+Event	T12	accidente	EVENT	650
+Event	T13	cancelar	EVENT	686
+Event	T14	evento	EVENT	698
+Relation	T0	T9	NoRel	true	ACCIDENTE	impactando
+Relation	T10	T3	NoRel	true	sentaban	participar
+Relation	T11	T3	NoRel	true	aterrizaje	participar
+Relation	T11	T4	NoRel	true	aterrizaje	Carreras
+Relation	T12	T1	NoRel	true	accidente	accidente
+Relation	T12	T2	NoRel	true	accidente	despegado
+Relation	T3	T4	NoRel	true	participar	Carreras
+Relation	T8	T9	NoRel	true	carrera	impactando
+Relation	T9	T3	NoRel	true	impactando	participar

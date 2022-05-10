@@ -1,0 +1,24 @@
+Text	thumb | left | Romersk port i Trier .	Den sidste position som prokurator er usikker , men var i tilfælde i Gallia Belgica .	Antagelsen er baseret på Plinius' kendskab til provinsen .	Hovedstaden var Augusta Treverorum ( Trier ) , navngivet efter den galliske stammen af trevererne som omgav den .	Plinius siger at " året før denne " dræbte en frygtelig vinter den første høst , som var plantet ; de såede igen i marts og havde " en meget rigelig høst " .
+Event	T0	Antagelsen	EVENT	124
+Event	T1	navngivet	EVENT	230
+Event	T2	omgav	EVENT	285
+Event	T3	siger	EVENT	305
+Event	T4	dræbte	EVENT	333
+Event	T5	høst	EVENT	371
+Event	T6	plantet	EVENT	386
+Event	T7	såede	EVENT	399
+Event	T8	høst	EVENT	446
+Event	T9	baseret	EVENT	138
+Event	T10	frygtelig	EVENT	343
+Relation	T6	T4	SuperSub	true	plantet	dræbte
+Relation	T4	T6	SubSuper	true	dræbte	plantet
+Relation	T7	T8	SuperSub	true	såede	høst
+Relation	T8	T7	SubSuper	true	høst	såede
+Relation	T0	T3	NoRel	true	Antagelsen	siger
+Relation	T0	T5	NoRel	true	Antagelsen	høst
+Relation	T10	T2	NoRel	true	frygtelig	omgav
+Relation	T2	T3	NoRel	true	omgav	siger
+Relation	T5	T1	NoRel	true	høst	navngivet
+Relation	T5	T8	NoRel	true	høst	høst
+Relation	T7	T6	NoRel	true	såede	plantet
+Relation	T8	T9	NoRel	true	høst	baseret

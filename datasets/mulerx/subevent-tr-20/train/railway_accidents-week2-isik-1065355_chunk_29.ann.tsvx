@@ -1,0 +1,16 @@
+Text	Daha sonra araştırmada kanıtlandı ki sinyal sistemi yumuşatılmıştı .	Goa ekspresi , durmakta olan Mewar Ekpresinin sonuncu gezi otobüsüne çarpmıştı .	- 24 Ekim , 2009 – Bir yolcu treni , Giza bölgesi al Ayyat’da su mandasına çarpması sonrası durdu .	Aynı yönde seyretmekte olan diğer yolcu treni , daha sonra durmakta olan trene akadan çarpması sonucunda en az 18 kişi öldü .	- 4 Kasım , 2009 – Pakistan , Karaçi şehrinin dış mahallesinde bir yolcu treni Allama Iqbal Ekspres , bir yük treniyle kafa kafaya çarpıştı .
+Event	T0	kanıtlandı	EVENT	23
+Event	T1	yumuşatılmıştı	EVENT	52
+Event	T2	çarpması	EVENT	225
+Event	T3	çarpmıştı	EVENT	138
+Event	T4	durdu	EVENT	242
+Event	T5	çarpması	EVENT	336
+Event	T6	öldü	EVENT	369
+Event	T7	çarpıştı	EVENT	507
+Event	T8	araştırmada	EVENT	11
+Event	T9	seyretmekte	EVENT	261
+Relation	T0	T1	NoRel	true	kanıtlandı	yumuşatılmıştı
+Relation	T0	T2	NoRel	true	kanıtlandı	çarpması
+Relation	T4	T8	NoRel	true	durdu	araştırmada
+Relation	T6	T0	NoRel	true	öldü	kanıtlandı
+Relation	T7	T1	NoRel	true	çarpıştı	yumuşatılmıştı

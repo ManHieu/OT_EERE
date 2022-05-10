@@ -1,0 +1,23 @@
+Text	Annesinin ölümünden sonra , Hitler'in tek isteği Güzel Sanatlar Akademisi’ne girebilmekti .	1908’de bir kez daha başvurduğu akademinin , onu yeniden reddetmesinin ardından umutlarını da yitirmiş bir şekilde tamamen parasız kaldı .	Yetim maaşının kendi payına düşen kısmını da kardeşi Paula’ya veren Hitler , 21 yaşındayken halasından kalan az miktardaki miras parasının da bitmesiyle 1909’da evsizler yurduna yerleşti .	Posta kartlarından kopyaladığı manzara resimlerini , dükkanlara ve turistlere satarak geçinmeye çalışan Hitler , 1910 yılında , çalışan fakir adamların kaldığı bir eve yerleşti .	Hitler Viyana’dayken , ilk kez içinde Doğu Avrupa’daki birçok Ortodoks Yahudi ( Hitler’e göre ırkçı teorilerle karışık , geleneksel dinci ve önyargılı , geniş bir Yahudi kitlesi ) için antisemitist düşünceler barındırmaya başladı .
+Event	T0	ölümünden	EVENT	10
+Event	T1	reddetmesinin	EVENT	149
+Event	T2	yitirmiş	EVENT	186
+Event	T3	kaldı	EVENT	223
+Event	T4	bitmesiyle	EVENT	373
+Event	T5	yerleşti	EVENT	409
+Event	T6	yerleşti	EVENT	588
+Event	T7	başvurduğu	EVENT	113
+Event	T8	veren	EVENT	293
+Event	T9	maaşının	EVENT	237
+Event	T10	kopyaladığı	EVENT	439
+Event	T11	çalışan	EVENT	516
+Event	T12	başladı	EVENT	821
+Relation	T2	T6	NoRel	true	yitirmiş	yerleşti
+Relation	T5	T1	NoRel	true	yerleşti	reddetmesinin
+Relation	T5	T3	NoRel	true	yerleşti	kaldı
+Relation	T7	T10	NoRel	true	başvurduğu	kopyaladığı
+Relation	T7	T11	NoRel	true	başvurduğu	çalışan
+Relation	T7	T8	NoRel	true	başvurduğu	veren
+Relation	T7	T9	NoRel	true	başvurduğu	maaşının
+Relation	T9	T1	NoRel	true	maaşının	reddetmesinin
+Relation	T9	T11	NoRel	true	maaşının	çalışan

@@ -1,0 +1,14 @@
+Text	50 m²'lik alanları ile bomba bir kilometre uzaklıktaki yamaçlara düştü .	Patlama başladı 51 saat sonra kül Finlandiya'da görüldi .	Bu süre içinde patlama yerinden 2860 km uzakta olan Helsinki'ye kül düştü .	Patlama ilk 30 dakika içinde volkanın üretim oranı sonraki yarım saat boyunca 22.000 m³ - 1 bırakarak , 75.000 m³ - 1 idi .	İlk aşama kara ve deniz 3.130 km²'lik katı kaya 4,5 × 107m3 , denk , volkanın 0, 18 km³'lük üretti .
+Event	T0	düştü	EVENT	65
+Event	T1	başladı	EVENT	81
+Event	T2	görüldi	EVENT	121
+Event	T3	patlama	EVENT	146
+Event	T4	düştü	EVENT	199
+Event	T5	Patlama	EVENT	207
+Event	T6	üretim	EVENT	245
+Event	T7	üretti	EVENT	423
+Event	T8	bomba	EVENT	23
+Relation	T1	T7	NoRel	true	başladı	üretti
+Relation	T3	T7	NoRel	true	patlama	üretti
+Relation	T3	T8	NoRel	true	patlama	bomba
+Relation	T5	T0	NoRel	true	Patlama	düştü

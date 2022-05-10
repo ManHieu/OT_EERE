@@ -1,0 +1,15 @@
+Text	Undersøgelser af togets sorte boks viste efterfølgende , at lokomotivføreren fik tre advarselssignaler kl. 20.39 , 20.40 og 20.41 omkring det tidspunkt , hvor han talte i telefon med en togbetjent om , hvilken perron toget ville køre ind på senere på ruten .	Føreren bremsede op kl. 20.40 , da toget kørte med 195 km/t til trods for , at hastighedsgrænsen på den del af strækningen var 80 km/t .	Toget kørte med 192 km/t ganske kort tid inden afsporingen og forulykkede med en hastighed på 153 km/t .	Spanien har Europas mest omfattende højhastighedsjernbanenet på 2441 km og verdens tredjemest omfattende efter Kina og Japan .	Den første højhastighedsjernbane i Spanien åbnede i 1992 .
+Event	T0	Undersøgelser	EVENT	0
+Event	T1	viste	EVENT	35
+Event	T2	fik	EVENT	77
+Event	T3	talte	EVENT	163
+Event	T4	kørte	EVENT	300
+Event	T5	kørte	EVENT	402
+Event	T6	afsporingen	EVENT	443
+Event	T7	forulykkede	EVENT	458
+Event	T8	åbnede	EVENT	671
+Relation	T1	T2	SuperSub	true	viste	fik
+Relation	T2	T1	SubSuper	true	fik	viste
+Relation	T0	T6	NoRel	true	Undersøgelser	afsporingen
+Relation	T4	T8	NoRel	true	kørte	åbnede
+Relation	T5	T8	NoRel	true	kørte	åbnede

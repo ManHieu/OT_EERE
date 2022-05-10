@@ -1,0 +1,24 @@
+Text	Uçak sağa 90 °'den daha büyük bir açıyla döndü , uçağın gövdesi parçalandı ve kokpit gövdeden ayrıldı .	Yere ilk dokunduğu noktadan yaklaşık 440 m mesafede , uçağın kokpiti tuğla bir eve çarptı .	Uçağın hareketi , kokpitin ayrıldığı yerden yaklaşık 60 m uzakta tamamen durdu .	Uçağın kuyruk bölümü ve bazı parçalar uçağın yere ilk dokunduğu noktadan yaklaşık 470 m uzakta bulundu .	Uçak tamamen parçalandı ve uçağın önemli bir kısmı yangın yüzünden hasar gördü .
+Event	T0	döndü	EVENT	41
+Event	T1	parçalandı	EVENT	64
+Event	T2	ayrıldı	EVENT	94
+Event	T3	çarptı	EVENT	187
+Event	T4	hareketi	EVENT	203
+Event	T5	durdu	EVENT	269
+Event	T6	bulundu	EVENT	372
+Event	T7	parçalandı	EVENT	395
+Event	T8	yangın	EVENT	433
+Event	T9	gördü	EVENT	455
+Event	T10	dokunduğu	EVENT	113
+Event	T11	dokunduğu	EVENT	331
+Event	T12	ayrıldığı	EVENT	223
+Relation	T1	T10	NoRel	true	parçalandı	dokunduğu
+Relation	T10	T5	NoRel	true	dokunduğu	durdu
+Relation	T11	T10	NoRel	true	dokunduğu	dokunduğu
+Relation	T12	T8	NoRel	true	ayrıldığı	yangın
+Relation	T3	T0	NoRel	true	çarptı	döndü
+Relation	T3	T6	NoRel	true	çarptı	bulundu
+Relation	T8	T10	NoRel	true	yangın	dokunduğu
+Relation	T8	T2	NoRel	true	yangın	ayrıldı
+Relation	T8	T5	NoRel	true	yangın	durdu
+Relation	T9	T3	NoRel	true	gördü	çarptı

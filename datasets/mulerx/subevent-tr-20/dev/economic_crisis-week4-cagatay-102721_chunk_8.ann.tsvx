@@ -1,0 +1,26 @@
+Text	Cesetlerinden biri Wehrmacht üniforması giymiş ve diğerinin ise üstünde sadece iç çamaşırı olduğunu söyledi .	Axmann ve Krumnow tarafından belirtilen yerlerde 20 - 21 Temmuz 1965 tarihlerinde yapılan kazılarda cesetleri arama çalışmaları başarısızlıkla sonuçlandı .	Artur Axmann , Bormann'ın intiharı ile ilgili haklı çıktı .	7 Aralık 1972 tarihinde , Krumnow'un onları gömdüğünü iddia ettiği Lehrter İstasyonu'nun yapımı sırasında inşaat işçileri , iki adet ceset buldu .	Yapılan Otopsi sırasında iki cesedinde iskeletlerinin çenelerinde cam kırıklarının olduğu ve siyanür içerek öldüğü saptandı .
+Event	T0	giymiş	EVENT	40
+Event	T1	söyledi	EVENT	100
+Event	T2	kazılarda	EVENT	200
+Event	T3	sonuçlandı	EVENT	253
+Event	T4	intiharı	EVENT	292
+Event	T5	çıktı	EVENT	318
+Event	T6	yapımı	EVENT	415
+Event	T7	buldu	EVENT	465
+Event	T8	Otopsi	EVENT	481
+Event	T9	saptandı	EVENT	588
+Event	T11	içerek	EVENT	574
+Event	T12	öldüğü	EVENT	581
+Relation	T2	T3	SuperSub	true	kazılarda	sonuçlandı
+Relation	T3	T2	SubSuper	true	sonuçlandı	kazılarda
+Relation	T0	T11	NoRel	true	giymiş	içerek
+Relation	T0	T5	NoRel	true	giymiş	çıktı
+Relation	T11	T3	NoRel	true	içerek	sonuçlandı
+Relation	T11	T9	NoRel	true	içerek	saptandı
+Relation	T3	T6	NoRel	true	sonuçlandı	yapımı
+Relation	T4	T9	NoRel	true	intiharı	saptandı
+Relation	T5	T2	NoRel	true	çıktı	kazılarda
+Relation	T6	T11	NoRel	true	yapımı	içerek
+Relation	T6	T3	NoRel	true	yapımı	sonuçlandı
+Relation	T9	T1	NoRel	true	saptandı	söyledi
+Relation	T9	T11	NoRel	true	saptandı	içerek

@@ -1,0 +1,34 @@
+Text	By Eric Pinkard ._Fall , 1999 .__Vermont Law Review .__" In 1994 Congress enacted the Federal Death Penalty Act ( FDPA ) with provisions permitting the imposition of the death penalty on Drug Kingpins .	The FDPA is unprecedented in American legal history in that the death penalty can be imposed in cases where the Drug Kingpin does not take a human life .	" See also : Violent Crime Control and Law Enforcement Act .	The death penalty for drug kingpins : Constitutional and international implications .	By Eric Pinkard ._Fall , 1999 .__Vermont Law Review .__" In 1994 Congress enacted the Federal Death Penalty Act ( FDPA ) with provisions permitting the imposition of the death penalty on Drug Kingpins .
+Event	T0	enacted	EVENT	74
+Event	T1	permitting	EVENT	137
+Event	T2	imposition	EVENT	152
+Event	T3	penalty	EVENT	176
+Event	T4	penalty	EVENT	273
+Event	T5	imposed	EVENT	288
+Event	T6	take	EVENT	337
+Event	T7	penalty	EVENT	428
+Event	T8	enacted	EVENT	578
+Event	T9	permitting	EVENT	641
+Event	T10	imposition	EVENT	656
+Event	T11	penalty	EVENT	680
+Relation	T0	T1	SuperSub	true	enacted	permitting
+Relation	T1	T0	SubSuper	true	permitting	enacted
+Relation	T0	T2	SuperSub	true	enacted	imposition
+Relation	T2	T0	SubSuper	true	imposition	enacted
+Relation	T4	T5	SuperSub	true	penalty	imposed
+Relation	T5	T4	SubSuper	true	imposed	penalty
+Relation	T4	T6	SuperSub	true	penalty	take
+Relation	T6	T4	SubSuper	true	take	penalty
+Relation	T8	T9	SuperSub	true	enacted	permitting
+Relation	T9	T8	SubSuper	true	permitting	enacted
+Relation	T8	T10	SuperSub	true	enacted	imposition
+Relation	T10	T8	SubSuper	true	imposition	enacted
+Relation	T0	T10	NoRel	true	enacted	imposition
+Relation	T0	T7	NoRel	true	enacted	penalty
+Relation	T11	T1	NoRel	true	penalty	permitting
+Relation	T11	T6	NoRel	true	penalty	take
+Relation	T11	T9	NoRel	true	penalty	permitting
+Relation	T2	T1	NoRel	true	imposition	permitting
+Relation	T4	T9	NoRel	true	penalty	permitting
+Relation	T5	T1	NoRel	true	imposed	permitting
+Relation	T9	T3	NoRel	true	permitting	penalty

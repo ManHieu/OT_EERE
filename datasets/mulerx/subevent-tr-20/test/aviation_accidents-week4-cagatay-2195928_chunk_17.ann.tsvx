@@ -1,0 +1,29 @@
+Text	18 Ocak 2017'de Kırgızistan'daki Türkiye Büyükelçiliği temsilcisi , tanımlamak ve daha sonra Türkiye'ye geri götürmek için Cumhuriyet Adli Tıp Uzmanlık Merkezinden uçak mürettebatının cesetlerini aldı .	24 Ocak 2017'de , mürettebatın dördüncü üyesinin kimliğini belirlemek üzere Türkiye'den bir DNA inceleme uzmanı Cumhuriyet Adli Tıp Uzmanlık Merkezine geldi .	13 Ocak 2018'de , kazadan yaklaşık bir yıl sonra kazanın gerçekleştiği Daça - Su yerleşim yerine ölenlerin anısına törenle bir anıt açıldı .	Açılışı Kırgızistan Cumhurbaşkanlığı İdaresi Başkan Birinci Yardımcısı Muhammedkalıy Abılgaziyev yaptı .	Abılgaziyev yaptığı konuşmada ölen yerlilerin ailelerine ACT Airlines tarafından tazminat ödendiğini açıkladı .
+Event	T0	aldı	EVENT	196
+Event	T1	geldi	EVENT	354
+Event	T2	kazadan	EVENT	380
+Event	T4	törenle	EVENT	477
+Event	T5	açıldı	EVENT	494
+Event	T6	yaptı	EVENT	600
+Event	T7	ölen	EVENT	638
+Event	T8	açıkladı	EVENT	709
+Event	T9	tanımlamak	EVENT	68
+Event	T10	götürmek	EVENT	109
+Event	T11	belirlemek	EVENT	262
+Event	T3	kazanın	EVENT	411
+Event	T12	Açılışı	EVENT	503
+Event	T13	konuşmada	EVENT	628
+Event	T14	ödendiğini	EVENT	698
+Relation	T4	T13	SuperSub	true	törenle	konuşmada
+Relation	T13	T4	SubSuper	true	konuşmada	törenle
+Relation	T4	T12	SuperSub	true	törenle	Açılışı
+Relation	T12	T4	SubSuper	true	Açılışı	törenle
+Relation	T13	T8	SuperSub	true	konuşmada	açıkladı
+Relation	T8	T13	SubSuper	true	açıkladı	konuşmada
+Relation	T0	T10	NoRel	true	aldı	götürmek
+Relation	T0	T13	NoRel	true	aldı	konuşmada
+Relation	T13	T6	NoRel	true	konuşmada	yaptı
+Relation	T13	T9	NoRel	true	konuşmada	tanımlamak
+Relation	T3	T2	NoRel	true	kazanın	kazadan
+Relation	T5	T1	NoRel	true	açıldı	geldi
+Relation	T9	T10	NoRel	true	tanımlamak	götürmek

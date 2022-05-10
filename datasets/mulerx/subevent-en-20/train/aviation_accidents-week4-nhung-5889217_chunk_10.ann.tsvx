@@ -1,0 +1,25 @@
+Text	A flight attendant was suspended by her seatbelts as the floor beneath her was destroyed .	When she unfastened her seatbelts , she fell to the ground and received severe burn injuries .	The forward entry door was destroyed shortly after the fire .	The left central door could not be opened as an intense fire was burning right below it .	The right rear door and a flight attendant , who was sitting near it , were blocked by metal food containers that had fallen as a result of the airplane 's collision with the barriers .
+Event	T0	suspended	EVENT	23
+Event	T1	destroyed	EVENT	79
+Event	T2	unfastened	EVENT	100
+Event	T3	injuries	EVENT	175
+Event	T4	destroyed	EVENT	213
+Event	T5	fire	EVENT	241
+Event	T6	opened	EVENT	283
+Event	T7	fire	EVENT	304
+Event	T8	burning	EVENT	313
+Event	T9	sitting	EVENT	391
+Event	T10	blocked	EVENT	414
+Event	T11	fallen	EVENT	456
+Event	T12	collision	EVENT	494
+Event	T13	fell	EVENT	131
+Relation	T2	T13	SuperSub	true	unfastened	fell
+Relation	T13	T2	SubSuper	true	fell	unfastened
+Relation	T5	T4	SuperSub	true	fire	destroyed
+Relation	T4	T5	SubSuper	true	destroyed	fire
+Relation	T0	T6	NoRel	true	suspended	opened
+Relation	T2	T5	NoRel	true	unfastened	fire
+Relation	T5	T10	NoRel	true	fire	blocked
+Relation	T6	T8	NoRel	true	opened	burning
+Relation	T7	T0	NoRel	true	fire	suspended
+Relation	T7	T2	NoRel	true	fire	unfastened

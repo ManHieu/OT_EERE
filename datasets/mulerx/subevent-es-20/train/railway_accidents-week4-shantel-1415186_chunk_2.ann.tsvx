@@ -1,0 +1,26 @@
+Text	El coche circuló volcado hacia su izquierda y apoyado en una pared del túnel durante unos metros .	Cuando la pared terminó , justo donde se produce el enlace con el túnel de la línea 5 ( actualmente ramal de la línea 7 ) el coche terminó volcando , produciendo un violento impacto contra el suelo y produciendo el fatal desenlace .	El sistema de seguridad de esta línea era el denominado Frenado Automático Puntual ( FAP ) , que se acabó de instalar año 1999 .	Se trata de un sistema de balizas que actúan como puntos de información al maquinista , ya que el tren y la baliza interaccionan electromagnéticamente , que avisan al conductor o incluso detienen el tren si es necesario con la información que le proporciona cada captador del FAP .	Sin embargo , este sistema solo está en los puntos críticos de la vía como en los cambios de agujas .
+Event	T0	volcado	EVENT	17
+Event	T1	apoyado	EVENT	46
+Event	T3	enlace	EVENT	151
+Event	T4	volcando	EVENT	238
+Event	T5	produciendo	EVENT	249
+Event	T6	impacto	EVENT	273
+Event	T7	produciendo	EVENT	299
+Event	T8	desenlace	EVENT	320
+Event	T9	acabó	EVENT	432
+Event	T10	instalar	EVENT	441
+Event	T11	actúan	EVENT	499
+Event	T12	interaccionan	EVENT	576
+Event	T13	avisan	EVENT	618
+Event	T14	detienen	EVENT	648
+Event	T15	proporciona	EVENT	707
+Event	T16	cambios	EVENT	825
+Relation	T0	T14	NoRel	true	volcado	detienen
+Relation	T15	T1	NoRel	true	proporciona	apoyado
+Relation	T16	T15	NoRel	true	cambios	proporciona
+Relation	T16	T4	NoRel	true	cambios	volcando
+Relation	T3	T11	NoRel	true	enlace	actúan
+Relation	T4	T11	NoRel	true	volcando	actúan
+Relation	T7	T4	NoRel	true	produciendo	volcando
+Relation	T7	T8	NoRel	true	produciendo	desenlace
+Relation	T9	T6	NoRel	true	acabó	impacto

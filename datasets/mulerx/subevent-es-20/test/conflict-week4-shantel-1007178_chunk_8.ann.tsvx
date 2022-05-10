@@ -1,0 +1,39 @@
+Text	Mientras tanto en Qatar , Scorponok lleva a cabo un ataque sorpresivo al equipo de soldados comandado por el Capitán Lennox , matando a Donnelly e hiriendo a Figueroa .	Durante la batalla , Scorponok es forzado a retirarse cuando es herido por rondas de sabot disparados a él por las fuerzas armadas de EE._UU .	Luego , Lennox y su equipo regresan al Pentágono y reportan su encuentro con los Decepticons .	Sam y Mikaela pronto conocen a Optimus Prime , quien en su modo alterno es un camión tráiler ( Peterbilt 379 ) y a sus otros compañeros Autobots Jazz ( un Pontiac Solstice 2006 ) , Ironhide ( un GMC Topkick Pickup ) y Ratchet ( un Hummer H2 ) .	Ellos explican sus orígenes a los dos humanos e insisten en la urgencia de conseguir la Chispa Suprema antes que los Decepticons , sabiendo que estos planean usarla para convertir toda la tecnología terrestre en un nuevo ejército de Decepticons y dejar a los humanos extintos .
+Event	T1	matando	EVENT	126
+Event	T2	hiriendo	EVENT	147
+Event	T3	batalla	EVENT	180
+Event	T4	forzado	EVENT	203
+Event	T5	retirarse	EVENT	213
+Event	T6	herido	EVENT	233
+Event	T7	rondas	EVENT	244
+Event	T8	disparados	EVENT	260
+Event	T9	regresan	EVENT	339
+Event	T10	reportan	EVENT	363
+Event	T11	encuentro	EVENT	375
+Event	T12	conocen	EVENT	428
+Event	T13	insisten	EVENT	700
+Event	T14	urgencia	EVENT	715
+Event	T15	conseguir	EVENT	727
+Event	T16	sabiendo	EVENT	783
+Event	T18	dejar	EVENT	899
+Event	T19	extintos	EVENT	919
+Event	T20	ataque	EVENT	52
+Relation	T10	T1	NoRel	true	reportan	matando
+Relation	T10	T8	NoRel	true	reportan	disparados
+Relation	T12	T2	NoRel	true	conocen	hiriendo
+Relation	T12	T8	NoRel	true	conocen	disparados
+Relation	T13	T20	NoRel	true	insisten	ataque
+Relation	T13	T3	NoRel	true	insisten	batalla
+Relation	T14	T20	NoRel	true	urgencia	ataque
+Relation	T16	T14	NoRel	true	sabiendo	urgencia
+Relation	T16	T2	NoRel	true	sabiendo	hiriendo
+Relation	T19	T1	NoRel	true	extintos	matando
+Relation	T19	T10	NoRel	true	extintos	reportan
+Relation	T19	T3	NoRel	true	extintos	batalla
+Relation	T2	T11	NoRel	true	hiriendo	encuentro
+Relation	T2	T3	NoRel	true	hiriendo	batalla
+Relation	T3	T1	NoRel	true	batalla	matando
+Relation	T3	T5	NoRel	true	batalla	retirarse
+Relation	T3	T9	NoRel	true	batalla	regresan
+Relation	T6	T1	NoRel	true	herido	matando
+Relation	T9	T6	NoRel	true	regresan	herido

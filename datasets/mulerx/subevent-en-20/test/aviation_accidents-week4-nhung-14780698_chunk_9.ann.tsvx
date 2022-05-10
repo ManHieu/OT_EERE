@@ -1,0 +1,54 @@
+Text	However , the two returned home in July 1984 and it turned out that a major sponsor of Africa Sports had pulled out so this changed the fortunes of the club and they decided to return to Zambia .	The duo arrived just in time to lend a hand to Dynamos final push for the league championship .	Chola missed a penalty when Dynamos suffered their only league loss in October 1984 , a 2- 0 defeat to eventual runners - up Mufulira Wanderers but Dynamos avenged this a week later when they whipped Wanderers 4 - 1 in the reverse fixture at Arthur Davies Stadium .	This helped Dynamos to the title for the first time in their history .	Dynamos were not finished as they crushed Kabwe Warriors 4 - 2 in the semi-final of the Champion of Champions with Chola grabbing a hat - trick , and when they met Wanderers in the final , Dynamos prevailed 2 - 0 .
+Event	T0	returned	EVENT	18
+Event	T1	changed	EVENT	124
+Event	T2	decided	EVENT	166
+Event	T3	return	EVENT	177
+Event	T4	arrived	EVENT	204
+Event	T5	lend	EVENT	228
+Event	T6	push	EVENT	257
+Event	T7	missed	EVENT	298
+Event	T8	penalty	EVENT	307
+Event	T9	suffered	EVENT	328
+Event	T10	loss	EVENT	355
+Event	T11	defeat	EVENT	385
+Event	T12	avenged	EVENT	448
+Event	T13	whipped	EVENT	484
+Event	T14	fixture	EVENT	523
+Event	T15	helped	EVENT	563
+Event	T16	finished	EVENT	646
+Event	T17	crushed	EVENT	663
+Event	T18	semi-final	EVENT	699
+Event	T19	grabbing	EVENT	750
+Event	T20	met	EVENT	789
+Event	T21	pulled out	EVENT	105
+Event	T22	prevailed	EVENT	826
+Relation	T4	T5	SuperSub	true	arrived	lend
+Relation	T5	T4	SubSuper	true	lend	arrived
+Relation	T0	T1	NoRel	true	returned	changed
+Relation	T10	T16	NoRel	true	loss	finished
+Relation	T11	T21	NoRel	true	defeat	pulled out
+Relation	T11	T22	NoRel	true	defeat	prevailed
+Relation	T12	T3	NoRel	true	avenged	return
+Relation	T13	T5	NoRel	true	whipped	lend
+Relation	T15	T10	NoRel	true	helped	loss
+Relation	T17	T11	NoRel	true	crushed	defeat
+Relation	T18	T15	NoRel	true	semi-final	helped
+Relation	T18	T5	NoRel	true	semi-final	lend
+Relation	T18	T8	NoRel	true	semi-final	penalty
+Relation	T19	T0	NoRel	true	grabbing	returned
+Relation	T19	T17	NoRel	true	grabbing	crushed
+Relation	T19	T6	NoRel	true	grabbing	push
+Relation	T2	T14	NoRel	true	decided	fixture
+Relation	T20	T13	NoRel	true	met	whipped
+Relation	T20	T18	NoRel	true	met	semi-final
+Relation	T21	T2	NoRel	true	pulled out	decided
+Relation	T21	T22	NoRel	true	pulled out	prevailed
+Relation	T3	T22	NoRel	true	return	prevailed
+Relation	T4	T1	NoRel	true	arrived	changed
+Relation	T4	T19	NoRel	true	arrived	grabbing
+Relation	T6	T11	NoRel	true	push	defeat
+Relation	T7	T21	NoRel	true	missed	pulled out
+Relation	T7	T4	NoRel	true	missed	arrived
+Relation	T7	T9	NoRel	true	missed	suffered
+Relation	T8	T17	NoRel	true	penalty	crushed
+Relation	T9	T14	NoRel	true	suffered	fixture

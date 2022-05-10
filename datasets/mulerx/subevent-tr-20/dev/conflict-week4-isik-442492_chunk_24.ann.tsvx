@@ -1,0 +1,13 @@
+Text	İskender Bey’i çok değerli bir müttefik olarak gören Venedikliler 20 Ağustos 1463 tarihinde iki ülke arasında barış antlaşması imzalarlar .	Antlaşmaya göre Arnavutluk karasularında Venedik donanmasının bulunmasına izin verilirken , Venediklilerin Osmanlılarla yapacakları herhangi bir antlaşmada Arnavutluk bağımsızlığının garanti edileceği karar altına alınır .	Osmanlılara karşı yeni bir haçlı seferi girişiminde bulunan Papa II . Pius 1464 yılı Ağustos ayında ölünce Ohri’de Osmanlılara saldırmış olan İskender Bey yalnız kalır .	1465 yılı Nisan ayındaki Vaikal Muharebesi’nde İskender Bey Balaban Paşa’ya karşı pirus zaferi olarak tanımlanabilecek bir galibiyet alır .	Savaşta yenilen Osmanlılar çok önemli Arnavut asillerini ele geçirmeyi başarır .
+Event	T0	alınır	EVENT	354
+Event	T2	ölünce	EVENT	463
+Event	T3	saldırmış	EVENT	490
+Event	T4	zaferi	EVENT	621
+Event	T5	alır	EVENT	666
+Event	T6	yenilen	EVENT	681
+Event	T7	başarır	EVENT	744
+Event	T8	imzalarlar	EVENT	127
+Event	T9	gören	EVENT	47
+Event	T10	kalır	EVENT	525
+Event	T1	Vaikal Muharebesi’nde	EVENT	558
+Relation	T4	T7	NoRel	true	zaferi	başarır

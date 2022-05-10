@@ -1,0 +1,34 @@
+Text	Flight 1406 departed from Memphis International Airport at 3:42 am , en route to Logan International Airport , Boston , Massachusetts , with an estimated time of arrival ( ETA ) of 7:42 am .	At 5:42 am , Flight 1406 was cruising at above the state of New York when the _ Cabin Smoke Fire Alarm _ sounded in the cockpit .	Smoke detectors for several zones of the aircraft 's main deck cargo compartment alerted the pilots of suspected smoke , prompting the crew members and passengers to don their smoke masks .	Aircraft systems began to fail and the crew also noticed that smoke was entering the cockpit .	The crew informed Boston Air Traffic Control ( ATC ) about the fire situation ; ATC suggested that Flight 1406 could make an emergency landing at Albany County Airport , ahead , or to land at Stewart International Airport in New Windsor , behind .
+Event	T0	departed	EVENT	12
+Event	T1	arrival	EVENT	162
+Event	T2	cruising	EVENT	220
+Event	T3	sounded	EVENT	296
+Event	T4	alerted	EVENT	402
+Event	T5	smoke	EVENT	434
+Event	T6	prompting	EVENT	442
+Event	T7	began	EVENT	528
+Event	T8	fail	EVENT	537
+Event	T9	noticed	EVENT	560
+Event	T10	smoke	EVENT	573
+Event	T11	entering	EVENT	583
+Event	T12	informed	EVENT	615
+Event	T14	suggested	EVENT	690
+Event	T15	make	EVENT	723
+Event	T16	landing	EVENT	741
+Event	T17	land	EVENT	790
+Event	T13	fire	EVENT	669
+Relation	T2	T3	SuperSub	true	cruising	sounded
+Relation	T3	T2	SubSuper	true	sounded	cruising
+Relation	T0	T6	NoRel	true	departed	prompting
+Relation	T1	T12	NoRel	true	arrival	informed
+Relation	T10	T7	NoRel	true	smoke	began
+Relation	T12	T0	NoRel	true	informed	departed
+Relation	T12	T14	NoRel	true	informed	suggested
+Relation	T13	T2	NoRel	true	fire	cruising
+Relation	T14	T15	NoRel	true	suggested	make
+Relation	T14	T4	NoRel	true	suggested	alerted
+Relation	T15	T7	NoRel	true	make	began
+Relation	T17	T1	NoRel	true	land	arrival
+Relation	T3	T16	NoRel	true	sounded	landing
+Relation	T6	T4	NoRel	true	prompting	alerted
+Relation	T9	T10	NoRel	true	noticed	smoke

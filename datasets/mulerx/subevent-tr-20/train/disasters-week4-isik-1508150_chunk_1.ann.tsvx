@@ -1,0 +1,27 @@
+Text	Kuvvetli yer hareketi depremin dış merkezinden 360 km ( 220 mil ) uzaktaki Las Vegas'ta da hissedilmiştir .	Rinaldi istasyonunda kaydedilen 183 cm / s'lik ( 6.59 km / saat veya 4.09 mil / saat ) değer o zamana kadar kaydedilmiş en hızlı pik yer hızı ( PGV ) değeridir .	Depremde 57 kişi hayatını kaybetmiş , 8700'den fazla kişi yaralanmıştır .	Tahminlere göre 20 milyar $'lık hasara neden olan deprem bu nedenle ABD tarihinde en fazla zarara neden olan doğal afetlerden biri olmuştur .	Deprem Los Angeles şehir merkezinin 31 km ( 20 mil ) kuzeybatısındaki San Fernando Vadisi'nde , Northridge bölgesinin yakınlarında meydana gelmiştir .
+Event	T1	hissedilmiştir	EVENT	91
+Event	T2	kaydedilen	EVENT	129
+Event	T3	kaydedilmiş	EVENT	216
+Event	T4	Depremde	EVENT	270
+Event	T5	kaybetmiş	EVENT	296
+Event	T6	yaralanmıştır	EVENT	328
+Event	T7	deprem	EVENT	394
+Event	T9	Deprem	EVENT	486
+Event	T10	gelmiştir	EVENT	625
+Event	T11	hareketi	EVENT	13
+Event	T12	olan	EVENT	389
+Event	T8	olmuştur	EVENT	475
+Relation	T9	T11	SuperSub	true	Deprem	hareketi
+Relation	T11	T9	SubSuper	true	hareketi	Deprem
+Relation	T9	T5	SuperSub	true	Deprem	kaybetmiş
+Relation	T5	T9	SubSuper	true	kaybetmiş	Deprem
+Relation	T9	T6	SuperSub	true	Deprem	yaralanmıştır
+Relation	T6	T9	SubSuper	true	yaralanmıştır	Deprem
+Relation	T9	T8	SuperSub	true	Deprem	olmuştur
+Relation	T8	T9	SubSuper	true	olmuştur	Deprem
+Relation	T12	T8	NoRel	true	olan	olmuştur
+Relation	T2	T1	NoRel	true	kaydedilen	hissedilmiştir
+Relation	T2	T4	NoRel	true	kaydedilen	Depremde
+Relation	T6	T11	NoRel	true	yaralanmıştır	hareketi
+Relation	T8	T4	NoRel	true	olmuştur	Depremde
+Relation	T9	T4	NoRel	true	Deprem	Depremde

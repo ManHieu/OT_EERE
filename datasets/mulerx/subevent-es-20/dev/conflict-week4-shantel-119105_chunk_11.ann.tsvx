@@ -1,0 +1,30 @@
+Text	Los heridos fueron repasados y otros prisioneros , fusilados .	Los comandantes chilenos ordenaron prender fuego a los depósitos de alcohol para evitar mayores desmanes de la tropa , pero , en el caos general , aquella orden no fue totalmente cumplida .	En Miraflores , el subteniente chileno Byssivinger fue muerto por sus soldados cuando defendía la vida de un oficial peruano prisionero .	El teniente coronel Baldomero Dublé Almeyda , que intentó imponer el orden a los soldados dispersos , fue herido por una bala extraviada .	Los chilenos muertos fueron enterrados en tumbas cavadas por prisioneros peruanos en los cementerios que existían en el pueblo .
+Event	T0	heridos	EVENT	4
+Event	T1	repasados	EVENT	19
+Event	T2	fusilados	EVENT	51
+Event	T3	desmanes	EVENT	159
+Event	T4	caos	EVENT	195
+Event	T5	orden	EVENT	218
+Event	T7	muerto	EVENT	308
+Event	T8	defendía	EVENT	339
+Event	T9	imponer	EVENT	449
+Event	T10	herido	EVENT	497
+Event	T11	extraviada	EVENT	517
+Event	T12	muertos	EVENT	543
+Event	T13	enterrados	EVENT	558
+Event	T14	cavadas	EVENT	579
+Event	T15	ordenaron	EVENT	88
+Relation	T12	T13	SuperSub	true	muertos	enterrados
+Relation	T13	T12	SubSuper	true	enterrados	muertos
+Relation	T8	T7	SuperSub	true	defendía	muerto
+Relation	T7	T8	SubSuper	true	muerto	defendía
+Relation	T11	T7	NoRel	true	extraviada	muerto
+Relation	T12	T2	NoRel	true	muertos	fusilados
+Relation	T14	T1	NoRel	true	cavadas	repasados
+Relation	T14	T4	NoRel	true	cavadas	caos
+Relation	T14	T8	NoRel	true	cavadas	defendía
+Relation	T3	T1	NoRel	true	desmanes	repasados
+Relation	T5	T14	NoRel	true	orden	cavadas
+Relation	T5	T2	NoRel	true	orden	fusilados
+Relation	T5	T3	NoRel	true	orden	desmanes
+Relation	T9	T1	NoRel	true	imponer	repasados

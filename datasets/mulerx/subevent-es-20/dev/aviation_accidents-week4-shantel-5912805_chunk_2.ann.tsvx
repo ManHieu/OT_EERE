@@ -1,0 +1,30 @@
+Text	El piloto del avión culpó al mal tiempo del accidente ; mientras que el operador del avión , South Airlines , afirmó que el avión estaba en buen estado y el piloto no debería haber aterrizado con la niebla presente y debería haberse desviado a otro aeropuerto .	Un pasajero mencionó " fallo de motores durante el aterrizaje " .	Categoría : Ucrania en 2013 South Airlines South Airlines Categoría : Accidentes e incidentes de Antonov An-24 Categoría : Historia de Donetsk	( en ucraniano ) Кількість жертв аварійної посадки літака в Донецьку збільшилася до п'яти _ Number of victims emergency landing in Donetsk to five _ , Interfax Ukraine ( 13 de febrero de 2013 )	Accident : South AN24 at Donetsk on Feb 13th 2013 , aircraft burst into flames on landing , The Aviation Herald ( 13 February 2013 )
+Event	T1	accidente	EVENT	44
+Event	T2	afirmó	EVENT	110
+Event	T3	aterrizado	EVENT	181
+Event	T4	desviado	EVENT	233
+Event	T5	mencionó	EVENT	274
+Event	T6	fallo	EVENT	285
+Event	T7	aterrizaje	EVENT	313
+Event	T8	Accidentes	EVENT	398
+Event	T9	incidentes	EVENT	411
+Event	T10	посадки	EVENT	514
+Event	T11	збільшилася	EVENT	540
+Event	T12	landing	EVENT	591
+Event	T13	Accident	EVENT	665
+Event	T14	landing	EVENT	747
+Event	T15	mal tiempo	EVENT	29
+Event	T16	culpó	EVENT	20
+Relation	T1	T16	SuperSub	true	accidente	culpó
+Relation	T16	T1	SubSuper	true	culpó	accidente
+Relation	T1	T5	SuperSub	true	accidente	mencionó
+Relation	T5	T1	SubSuper	true	mencionó	accidente
+Relation	T10	T1	NoRel	true	посадки	accidente
+Relation	T16	T4	NoRel	true	culpó	desviado
+Relation	T3	T1	NoRel	true	aterrizado	accidente
+Relation	T5	T14	NoRel	true	mencionó	landing
+Relation	T8	T1	NoRel	true	Accidentes	accidente
+Relation	T8	T12	NoRel	true	Accidentes	landing
+Relation	T8	T15	NoRel	true	Accidentes	mal tiempo
+Relation	T8	T16	NoRel	true	Accidentes	culpó
+Relation	T9	T8	NoRel	true	incidentes	Accidentes

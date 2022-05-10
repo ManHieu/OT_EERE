@@ -1,0 +1,18 @@
+Text	Münih’e gitmesi , bir süreliğine Avusturya’daki askerlik görevinden de kaçmasını sağladı fakat sonrasında Avusturya ordusu tarafından tutuklandı .	Yapılan fiziksel inceleme ve pişmanlık savunması sonrasında askerlik için elverişsiz sayıldı ve Münih’e dönmesine izin verildi .	Buna rağmen Ağustos 1914’te Almanya I. Dünya Savaşı’na girdiğinde acilen Bavyera Kralı III . Ludwig’den Bavyera alayında savaşmak için izin ricasında bulundu .	İsteği kabul edildi ve Hitler gönüllü olarak Bavyera ordusuna katılmış oldu .	] ] [ [ Dosya : Bundesarchiv Bild 146 - 1974 - 082 - 44 , Adolf Hitler im Ersten Weltkrieg.jpg | küçükresim | sağ | 220px |
+Event	T1	sağladı	EVENT	81
+Event	T2	tutuklandı	EVENT	134
+Event	T4	inceleme	EVENT	164
+Event	T5	savunması	EVENT	186
+Event	T6	sayıldı	EVENT	232
+Event	T7	verildi	EVENT	266
+Event	T8	bulundu	EVENT	426
+Event	T9	edildi	EVENT	449
+Event	T3	gitmesi	EVENT	8
+Event	T11	girdiğinde	EVENT	331
+Event	T10	oldu	EVENT	507
+Relation	T1	T6	NoRel	true	sağladı	sayıldı
+Relation	T10	T2	NoRel	true	oldu	tutuklandı
+Relation	T2	T1	NoRel	true	tutuklandı	sağladı
+Relation	T7	T8	NoRel	true	verildi	bulundu
+Relation	T8	T4	NoRel	true	bulundu	inceleme
+Relation	T9	T6	NoRel	true	edildi	sayıldı

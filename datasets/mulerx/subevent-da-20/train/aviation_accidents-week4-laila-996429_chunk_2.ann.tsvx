@@ -1,0 +1,27 @@
+Text	Flyet udbrændte .	Ruslands myndigheder har oplyst , at der var 5 besætningsmedlemmer og 73 passagerer ombord på flyet , hvoraf 41 omkom ved ulykken , heraf ét besætningsmedlem .	De to sorte bokse er blevet fundet .	Den ene ( CVR indeholdende kommunikation ) er i god behold , men den anden ( FDR indeholdende data om flyvningen ) er beskadiget af den voldsomme varme i forbindelse med branden .	Der pågår udlæsning af data fra de sorte bokse .
+Event	T0	udbrændte	EVENT	6
+Event	T1	oplyst	EVENT	43
+Event	T2	omkom	EVENT	130
+Event	T3	ulykken	EVENT	140
+Event	T4	fundet	EVENT	206
+Event	T5	kommunikation	EVENT	242
+Event	T6	flyvningen	EVENT	317
+Event	T7	beskadiget	EVENT	333
+Event	T8	varme	EVENT	361
+Event	T9	branden	EVENT	385
+Event	T10	udlæsning	EVENT	405
+Event	T11	ombord	EVENT	102
+Relation	T4	T10	SuperSub	true	fundet	udlæsning
+Relation	T10	T4	SubSuper	true	udlæsning	fundet
+Relation	T4	T7	SuperSub	true	fundet	beskadiget
+Relation	T7	T4	SubSuper	true	beskadiget	fundet
+Relation	T0	T2	NoRel	true	udbrændte	omkom
+Relation	T1	T2	NoRel	true	oplyst	omkom
+Relation	T10	T9	NoRel	true	udlæsning	branden
+Relation	T2	T4	NoRel	true	omkom	fundet
+Relation	T6	T0	NoRel	true	flyvningen	udbrændte
+Relation	T7	T6	NoRel	true	beskadiget	flyvningen
+Relation	T8	T11	NoRel	true	varme	ombord
+Relation	T8	T3	NoRel	true	varme	ulykken
+Relation	T9	T2	NoRel	true	branden	omkom
+Relation	T9	T4	NoRel	true	branden	fundet

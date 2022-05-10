@@ -1,0 +1,84 @@
+Text	A Fletcher test pilot and an engineer provided expert testimony at the inquest that raised doubts about the conclusions reached in the TAIC 's final report .	The coroner 's final report , released in May 2013 , was critical of the way that the investigation had been conducted by the TAIC , and challenged the conclusions reached in the commission 's final report .	The investigators had ordered the wreckage of the aircraft to be buried only three days after the accident , which prevented any further investigation into possible mechanical failures or inadvertent pilot errors that may have led to or contributed to the crash .	The coroner 's report felt that it was unlikely that there was any load shift in the aircraft , and that although weight and balance issues may have contributed to the accident , it was likely that some other unknown factor caused the crash .	After the publication of the coroner 's report , investigators from the TV3 _ Third Degree _ series became interested in profiling the story .
+Event	T1	provided	EVENT	38
+Event	T10	conducted	EVENT	267
+Event	T11	challenged	EVENT	295
+Event	T13	ordered	EVENT	388
+Event	T14	wreckage	EVENT	400
+Event	T15	buried	EVENT	431
+Event	T16	accident	EVENT	464
+Event	T17	prevented	EVENT	481
+Event	T18	investigation	EVENT	503
+Event	T19	failures	EVENT	542
+Event	T2	testimony	EVENT	54
+Event	T20	errors	EVENT	572
+Event	T21	crash	EVENT	622
+Event	T23	shift	EVENT	702
+Event	T24	accident	EVENT	798
+Event	T26	crash	EVENT	865
+Event	T27	publication	EVENT	883
+Event	T28	report	EVENT	913
+Event	T29	interested	EVENT	980
+Event	T3	inquest	EVENT	71
+Event	T30	profiling	EVENT	994
+Event	T31	story	EVENT	1008
+Event	T32	report	EVENT	179
+Event	T4	doubts	EVENT	91
+Event	T5	reached	EVENT	120
+Event	T6	report	EVENT	149
+Event	T7	released	EVENT	188
+Event	T8	critical	EVENT	215
+Event	T9	investigation	EVENT	244
+Relation	T4	T6	SuperSub	true	doubts	report
+Relation	T6	T4	SubSuper	true	report	doubts
+Relation	T32	T7	SuperSub	true	report	released
+Relation	T7	T32	SubSuper	true	released	report
+Relation	T32	T8	SuperSub	true	report	critical
+Relation	T8	T32	SubSuper	true	critical	report
+Relation	T18	T19	SuperSub	true	investigation	failures
+Relation	T19	T18	SubSuper	true	failures	investigation
+Relation	T18	T20	SuperSub	true	investigation	errors
+Relation	T20	T18	SubSuper	true	errors	investigation
+Relation	T32	T11	SuperSub	true	report	challenged
+Relation	T11	T32	SubSuper	true	challenged	report
+Relation	T24	T26	SuperSub	true	accident	crash
+Relation	T26	T24	SubSuper	true	crash	accident
+Relation	T10	T4	NoRel	true	conducted	doubts
+Relation	T11	T26	NoRel	true	challenged	crash
+Relation	T11	T30	NoRel	true	challenged	profiling
+Relation	T14	T1	NoRel	true	wreckage	provided
+Relation	T14	T2	NoRel	true	wreckage	testimony
+Relation	T15	T1	NoRel	true	buried	provided
+Relation	T15	T32	NoRel	true	buried	report
+Relation	T17	T1	NoRel	true	prevented	provided
+Relation	T17	T30	NoRel	true	prevented	profiling
+Relation	T19	T2	NoRel	true	failures	testimony
+Relation	T19	T29	NoRel	true	failures	interested
+Relation	T19	T7	NoRel	true	failures	released
+Relation	T19	T8	NoRel	true	failures	critical
+Relation	T2	T15	NoRel	true	testimony	buried
+Relation	T2	T27	NoRel	true	testimony	publication
+Relation	T20	T11	NoRel	true	errors	challenged
+Relation	T20	T24	NoRel	true	errors	accident
+Relation	T20	T31	NoRel	true	errors	story
+Relation	T20	T5	NoRel	true	errors	reached
+Relation	T21	T11	NoRel	true	crash	challenged
+Relation	T24	T19	NoRel	true	accident	failures
+Relation	T26	T7	NoRel	true	crash	released
+Relation	T27	T10	NoRel	true	publication	conducted
+Relation	T28	T10	NoRel	true	report	conducted
+Relation	T29	T15	NoRel	true	interested	buried
+Relation	T29	T23	NoRel	true	interested	shift
+Relation	T29	T27	NoRel	true	interested	publication
+Relation	T3	T19	NoRel	true	inquest	failures
+Relation	T3	T20	NoRel	true	inquest	errors
+Relation	T3	T7	NoRel	true	inquest	released
+Relation	T30	T4	NoRel	true	profiling	doubts
+Relation	T30	T8	NoRel	true	profiling	critical
+Relation	T31	T27	NoRel	true	story	publication
+Relation	T31	T3	NoRel	true	story	inquest
+Relation	T4	T5	NoRel	true	doubts	reached
+Relation	T5	T30	NoRel	true	reached	profiling
+Relation	T7	T3	NoRel	true	released	inquest
+Relation	T8	T10	NoRel	true	critical	conducted
+Relation	T8	T6	NoRel	true	critical	report
+Relation	T9	T16	NoRel	true	investigation	accident

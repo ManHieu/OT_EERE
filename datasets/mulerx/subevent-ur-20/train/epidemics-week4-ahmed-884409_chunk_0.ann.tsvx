@@ -1,0 +1,22 @@
+Text	upright =1.5_|_legend1_=_|_map2 = COVID -19 Outbreak World Map per Capita .	svg {{ ! } } upright =1.46_|_legend2_=	| image = Covid-19 _SP_-_UTI_V._Nova_Cachoeirinha .jpg | image_upright = 1.35 |_caption = مئی 2020 میں ساؤ پالو کے ایک آئی سی یو میں ایک COVID-19 مریض کا علاج کر رہے |_disease = کورونا وائرس ( COVID -19 ) | virus_strain = Severe acute respiratory syndrome coronavirus 2 ( SARS ‑CoV‑2 ) | location = ساری دنیا | index_case = وہان ، چین |_date_=_–	تاحال ( ) | source = Bats , likely indirectly | confirmed_cases_= 346,798,389 | suspected_cases_= | deaths = 5,586,815 ( اطلاع دی گئی ) 13.4 –22.7 ملین ( اندازہ لگایا گیا ) }} کورونا وائرس کی عالمی وبا ایک عالمگیر وبا ہے جو کورونا وائرس مرض کے پھیلنے سے دنیا بھر میں پھوٹ پڑی ہے ۔	اس وبا کا باعث سارس کووی 2 نامی وائرس ہے جس کی بنا پر انسانوں کا نظام تنفس شدید خرابی سے دوچار ہو جاتا ہے ۔
+Event	T0	Outbreak	EVENT	44
+Event	T1	علاج	EVENT	269
+Event	T2	deaths	EVENT	561
+Event	T3	لگایا	EVENT	622
+Event	T4	مرض	EVENT	698
+Event	T5	پھیلنے	EVENT	705
+Event	T6	پڑی	EVENT	733
+Event	T7	confirmed_cases_	EVENT	509
+Event	T8	suspected_cases_	EVENT	541
+Event	T9	وبا	EVENT	659
+Event	T10	وبا	EVENT	675
+Event	T11	وبا	EVENT	745
+Event	T12	ہو	EVENT	837
+Relation	T1	T2	NoRel	true	علاج	deaths
+Relation	T11	T3	NoRel	true	وبا	لگایا
+Relation	T12	T3	NoRel	true	ہو	لگایا
+Relation	T12	T7	NoRel	true	ہو	confirmed_cases_
+Relation	T2	T1	NoRel	true	deaths	علاج
+Relation	T3	T5	NoRel	true	لگایا	پھیلنے
+Relation	T3	T8	NoRel	true	لگایا	suspected_cases_
+Relation	T5	T2	NoRel	true	پھیلنے	deaths

@@ -1,0 +1,40 @@
+Text	اس تنازع کو مزید ہوا اس وقت ملی جب جمہوریہ قبرص کے آئین میں ترمیم کی 13 تجاویز دی گئی ۔	ترک قبرصیوں نے ان کی شدید مخالفت کی اور انہوں نے ریاست کے شریک_بانی کی بجائے خود کو اقلیت قرار دیا ۔	انہوں نے ترامیم کو یونان کے ساتھ الحاق کی جانب اہم قدم قرار دیا ۔	21 دسمبر 1963 ء کو ترک قبرصیوں اور وزارت داخلہ کے سادہ اہلکاروں میں ملبوس اہلکاروں کے درمیان ہونے والی جھڑپ میں دو ترک قبرصی اور ایک یونانی قبرصی پولیس اہلکار ہلاک ہو گیا ۔	اس کے ساتھ ہی دونوں اقوام کے درمیان جنگی صورت پیدا ہو گئی اور یونانی قبرصیوں نے یونان کی شہ پر ترک قبرصیوں کے خلاف " جدوجہد " کا آغاز کر دیا ۔
+Event	T0	تنازع	EVENT	3
+Event	T3	ترمیم	EVENT	60
+Event	T4	الحاق	EVENT	222
+Event	T6	جھڑپ	EVENT	358
+Event	T7	ہلاک	EVENT	414
+Event	T9	پیدا	EVENT	474
+Event	T11	جدوجہد	EVENT	545
+Event	T12	آغاز	EVENT	557
+Event	T13	مزید	EVENT	12
+Event	T1	وقت	EVENT	24
+Event	T2	تجاویز	EVENT	72
+Event	T14	مخالفت	EVENT	114
+Event	T16	قرار	EVENT	178
+Event	T15	ترامیم	EVENT	198
+Event	T17	قرار	EVENT	244
+Event	T18	قدم	EVENT	240
+Event	T5	جنگی	EVENT	464
+Event	T8	شہ	EVENT	517
+Relation	T3	T2	SuperSub	true	ترمیم	تجاویز
+Relation	T2	T3	SubSuper	true	تجاویز	ترمیم
+Relation	T14	T16	SuperSub	true	مخالفت	قرار
+Relation	T16	T14	SubSuper	true	قرار	مخالفت
+Relation	T18	T15	SuperSub	true	قدم	ترامیم
+Relation	T15	T18	SubSuper	true	ترامیم	قدم
+Relation	T0	T9	NoRel	true	تنازع	پیدا
+Relation	T12	T16	NoRel	true	آغاز	قرار
+Relation	T14	T9	NoRel	true	مخالفت	پیدا
+Relation	T18	T0	NoRel	true	قدم	تنازع
+Relation	T18	T16	NoRel	true	قدم	قرار
+Relation	T2	T8	NoRel	true	تجاویز	شہ
+Relation	T3	T12	NoRel	true	ترمیم	آغاز
+Relation	T4	T13	NoRel	true	الحاق	مزید
+Relation	T4	T18	NoRel	true	الحاق	قدم
+Relation	T4	T5	NoRel	true	الحاق	جنگی
+Relation	T6	T11	NoRel	true	جھڑپ	جدوجہد
+Relation	T8	T0	NoRel	true	شہ	تنازع
+Relation	T9	T13	NoRel	true	پیدا	مزید
+Relation	T9	T16	NoRel	true	پیدا	قرار
+Relation	T9	T17	NoRel	true	پیدا	قرار

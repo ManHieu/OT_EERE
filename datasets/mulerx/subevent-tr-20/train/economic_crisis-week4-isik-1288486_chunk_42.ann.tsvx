@@ -1,0 +1,18 @@
+Text	Bu süre zarfında işçi sınıfının hareketliliğini geriletme çabası içerisindeydi .	Ocak 1919’un bir tekrarı yaşanıyordu .	Direnişe devam eden işçilere hükûmet saldırmaya devam etti .	Ordu tarafından Ruhr Kızıl Ordusu dağıtıldı .	KPD Kapp Darbesi karşısında pasif bir tutum sergilemesi daha sonrasında da grevi desteklemekte tereddüt etmesi işçi sınıfının bu hareketi sırasında etkisiz kalmasını sağladı .
+Event	T0	yaşanıyordu	EVENT	106
+Event	T1	etti	EVENT	174
+Event	T2	dağıtıldı	EVENT	215
+Event	T3	sergilemesi	EVENT	271
+Event	T4	etmesi	EVENT	331
+Event	T6	sağladı	EVENT	393
+Event	T7	içerisindeydi	EVENT	65
+Event	T8	hareketliliğini	EVENT	32
+Event	T9	Direnişe	EVENT	120
+Event	T5	Kapp Darbesi	EVENT	231
+Relation	T0	T2	NoRel	true	yaşanıyordu	dağıtıldı
+Relation	T1	T0	NoRel	true	etti	yaşanıyordu
+Relation	T5	T8	NoRel	true	Kapp Darbesi	hareketliliğini
+Relation	T5	T9	NoRel	true	Kapp Darbesi	Direnişe
+Relation	T6	T0	NoRel	true	sağladı	yaşanıyordu
+Relation	T7	T4	NoRel	true	içerisindeydi	etmesi
+Relation	T8	T7	NoRel	true	hareketliliğini	içerisindeydi

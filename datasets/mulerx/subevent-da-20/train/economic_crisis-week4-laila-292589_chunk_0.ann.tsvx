@@ -1,0 +1,32 @@
+Text	LÆBÆLTE betegner det område , som i henhold til lovgivning eller købstadsrettigheder var forbeholdt en given købstad eller handelsplads , indtil disse blev indskrænket , senere ophævet , ved næringsfrihedens indførelse .	Ordbog over det danske Sprog : _ ( jf. Høkerbælte ; især emb. ( foræld. ) ) landomraade uden om en købstad , hvor visse arter af handel og haandværk if. Lov 29/12 1857 ( ophævet ved Lov Nr. 46 11/2 1920 ) ikke var tilladt .	LandmB. III. 429 .	Læbæltet omkring de danske Købstæder skulde skabe et Vindstille , hvori Konkurrencen ikke kunde rejse sin Blæst .	Pol. 8/11 1903.
+Event	T0	betegner	EVENT	8
+Event	T1	indskrænket	EVENT	156
+Event	T2	ophævet	EVENT	177
+Event	T3	indførelse	EVENT	208
+Event	T4	ophævet	EVENT	391
+Event	T5	tilladt	EVENT	435
+Event	T6	skabe	EVENT	508
+Event	T7	rejse	EVENT	560
+Event	T8	forbeholdt	EVENT	89
+Event	T9	LÆBÆLTE	EVENT	0
+Event	T10	Læbæltet	EVENT	464
+Event	T11	Konkurrencen	EVENT	536
+Event	T12	arter	EVENT	341
+Event	T13	Vindstille	EVENT	517
+Event	T14	Blæst	EVENT	570
+Relation	T9	T8	SuperSub	true	LÆBÆLTE	forbeholdt
+Relation	T8	T9	SubSuper	true	forbeholdt	LÆBÆLTE
+Relation	T0	T9	NoRel	true	betegner	LÆBÆLTE
+Relation	T1	T14	NoRel	true	indskrænket	Blæst
+Relation	T10	T1	NoRel	true	Læbæltet	indskrænket
+Relation	T10	T3	NoRel	true	Læbæltet	indførelse
+Relation	T11	T9	NoRel	true	Konkurrencen	LÆBÆLTE
+Relation	T12	T4	NoRel	true	arter	ophævet
+Relation	T13	T0	NoRel	true	Vindstille	betegner
+Relation	T14	T0	NoRel	true	Blæst	betegner
+Relation	T2	T5	NoRel	true	ophævet	tilladt
+Relation	T3	T11	NoRel	true	indførelse	Konkurrencen
+Relation	T4	T9	NoRel	true	ophævet	LÆBÆLTE
+Relation	T6	T9	NoRel	true	skabe	LÆBÆLTE
+Relation	T7	T3	NoRel	true	rejse	indførelse
+Relation	T9	T1	NoRel	true	LÆBÆLTE	indskrænket

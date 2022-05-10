@@ -1,0 +1,39 @@
+Text	It was in these conditions of total blockade that Azerbaijan subjected Stepanakert to shelling and bombardment .	During the winter of 1991 – 92 , Stepanakert was hit by artillery and aerial bombardment by Azerbaijani forces .	In May 1992 , when Helsinki Watch arrived to Stepanakert , the city had already suffered heavy destruction .	On August 22 – 24 alone , Azerbaijani bombings had caused at least 40 civilian deaths and left 100 people wounded .	Helsinki Watch 's report stated that the " Azerbaijani shelling and bombing were reckless and indiscriminate , and aimed at terrorizing and forcing out Armenian civilians .
+Event	T0	blockade	EVENT	36
+Event	T1	subjected	EVENT	61
+Event	T10	deaths	EVENT	414
+Event	T11	forcing	EVENT	591
+Event	T12	wounded	EVENT	441
+Event	T13	stated	EVENT	476
+Event	T14	shelling	EVENT	506
+Event	T15	bombing	EVENT	519
+Event	T17	aimed	EVENT	566
+Event	T18	terrorizing	EVENT	575
+Event	T2	shelling	EVENT	86
+Event	T3	bombardment	EVENT	99
+Event	T4	hit	EVENT	162
+Event	T5	bombardment	EVENT	190
+Event	T6	arrived	EVENT	260
+Event	T7	destruction	EVENT	321
+Event	T8	bombings	EVENT	373
+Event	T9	caused	EVENT	386
+Relation	T4	T5	SuperSub	true	hit	bombardment
+Relation	T5	T4	SubSuper	true	bombardment	hit
+Relation	T15	T18	SuperSub	true	bombing	terrorizing
+Relation	T18	T15	SubSuper	true	terrorizing	bombing
+Relation	T0	T15	NoRel	true	blockade	bombing
+Relation	T0	T3	NoRel	true	blockade	bombardment
+Relation	T10	T12	NoRel	true	deaths	wounded
+Relation	T11	T2	NoRel	true	forcing	shelling
+Relation	T12	T4	NoRel	true	wounded	hit
+Relation	T14	T15	NoRel	true	shelling	bombing
+Relation	T14	T18	NoRel	true	shelling	terrorizing
+Relation	T15	T3	NoRel	true	bombing	bombardment
+Relation	T17	T2	NoRel	true	aimed	shelling
+Relation	T17	T8	NoRel	true	aimed	bombings
+Relation	T3	T2	NoRel	true	bombardment	shelling
+Relation	T3	T8	NoRel	true	bombardment	bombings
+Relation	T4	T18	NoRel	true	hit	terrorizing
+Relation	T7	T2	NoRel	true	destruction	shelling
+Relation	T9	T5	NoRel	true	caused	bombardment
+Relation	T9	T8	NoRel	true	caused	bombings

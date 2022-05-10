@@ -1,0 +1,23 @@
+Text	- 1869_____-___30 DE ENERO : descarrilamiento de un tren de viajeros procedente de Lisboa y con destino Oporto en las cercanías de Espinho .	El accidente fue causado por la acumulación de arena sobre la vía debido a la intensa lluvia que afectó a dicho punto de la línea en el momento en que pasaba el convoy .	- 1870_____-___4 DE DICIEMBRE : descarrilamiento de un tren correo a su paso por el puente de Reguengo a causa de haber sido levantados varios carriles de la línea .	- 4 DE DICIEMBRE : descarrilamiento de un tren de mercancías a su paso por el puente de Santa Anna debido a haber sido levantados varios carriles de la línea .	- 1871_____-___17 DE ENERO : descarrilamiento de un tren de mercancías a su paso por el puente de Asseca , en la línea del Norte .
+Event	T0	descarrilamiento	EVENT	29
+Event	T1	accidente	EVENT	144
+Event	T2	causado	EVENT	158
+Event	T3	acumulación	EVENT	173
+Event	T4	lluvia	EVENT	227
+Event	T5	afectó	EVENT	238
+Event	T6	pasaba	EVENT	292
+Event	T7	descarrilamiento	EVENT	343
+Event	T8	paso	EVENT	383
+Event	T9	levantados	EVENT	436
+Event	T10	descarrilamiento	EVENT	496
+Event	T11	paso	EVENT	543
+Event	T12	levantados	EVENT	596
+Event	T13	descarrilamiento	EVENT	666
+Event	T14	paso	EVENT	713
+Relation	T11	T10	NoRel	true	paso	descarrilamiento
+Relation	T12	T1	NoRel	true	levantados	accidente
+Relation	T12	T13	NoRel	true	levantados	descarrilamiento
+Relation	T12	T14	NoRel	true	levantados	paso
+Relation	T14	T13	NoRel	true	paso	descarrilamiento
+Relation	T6	T9	NoRel	true	pasaba	levantados
+Relation	T7	T1	NoRel	true	descarrilamiento	accidente

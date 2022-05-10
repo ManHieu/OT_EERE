@@ -1,0 +1,78 @@
+Text	If the signal is fitted with TPWS , the driver resets the Driver Reminder Appliance , pushes the TPWS Trainstop Override button in the cab , and proceeds cautiously through the section .	If the train reaches the next signal without finding an obstruction , they must obey its aspect , at which point they can revert to normal working .	If contact with the signaller cannot be made then the driver must not move the train , unless it is standing at one of the following signals :	- An Intermediate Block Home signal - A signal controlled from a signal box that is closed - An automatic signal where local instructions permit it , e.g. signals within tunnels on the Northern City Line .	After passing a signal at danger under his own authority , the driver must stop at the next signal ( even if it is showing a proceed aspect ) and inform the signaller of what they have done .
+Event	T0	signal	EVENT	7
+Event	T1	fitted	EVENT	17
+Event	T2	resets	EVENT	47
+Event	T3	pushes	EVENT	86
+Event	T5	section	EVENT	177
+Event	T6	reaches	EVENT	200
+Event	T7	signal	EVENT	217
+Event	T9	obstruction	EVENT	243
+Event	T10	obey	EVENT	267
+Event	T12	contact	EVENT	339
+Event	T13	made	EVENT	376
+Event	T14	move	EVENT	406
+Event	T15	standing	EVENT	436
+Event	T16	signals	EVENT	469
+Event	T17	signal	EVENT	508
+Event	T18	controlled	EVENT	526
+Event	T19	closed	EVENT	563
+Event	T21	permit	EVENT	617
+Event	T22	signals	EVENT	634
+Event	T23	passing	EVENT	691
+Event	T24	signal	EVENT	701
+Event	T25	danger	EVENT	711
+Event	T26	stop	EVENT	760
+Event	T27	showing	EVENT	800
+Event	T28	inform	EVENT	831
+Event	T29	done	EVENT	870
+Event	T4	proceeds cautiously	EVENT	145
+Event	T11	normal working	EVENT	319
+Event	T8	without finding	EVENT	224
+Event	T20	automatic signal	EVENT	575
+Relation	T2	T3	SuperSub	true	resets	pushes
+Relation	T3	T2	SubSuper	true	pushes	resets
+Relation	T2	T4	SuperSub	true	resets	proceeds cautiously
+Relation	T4	T2	SubSuper	true	proceeds cautiously	resets
+Relation	T26	T28	SuperSub	true	stop	inform
+Relation	T28	T26	SubSuper	true	inform	stop
+Relation	T1	T15	NoRel	true	fitted	standing
+Relation	T1	T26	NoRel	true	fitted	stop
+Relation	T10	T21	NoRel	true	obey	permit
+Relation	T10	T24	NoRel	true	obey	signal
+Relation	T12	T2	NoRel	true	contact	resets
+Relation	T13	T16	NoRel	true	made	signals
+Relation	T13	T4	NoRel	true	made	proceeds cautiously
+Relation	T14	T20	NoRel	true	move	automatic signal
+Relation	T14	T26	NoRel	true	move	stop
+Relation	T15	T25	NoRel	true	standing	danger
+Relation	T16	T22	NoRel	true	signals	signals
+Relation	T17	T6	NoRel	true	signal	reaches
+Relation	T18	T11	NoRel	true	controlled	normal working
+Relation	T19	T17	NoRel	true	closed	signal
+Relation	T2	T21	NoRel	true	resets	permit
+Relation	T2	T23	NoRel	true	resets	passing
+Relation	T20	T15	NoRel	true	automatic signal	standing
+Relation	T20	T16	NoRel	true	automatic signal	signals
+Relation	T20	T2	NoRel	true	automatic signal	resets
+Relation	T20	T26	NoRel	true	automatic signal	stop
+Relation	T20	T4	NoRel	true	automatic signal	proceeds cautiously
+Relation	T21	T25	NoRel	true	permit	danger
+Relation	T23	T5	NoRel	true	passing	section
+Relation	T24	T25	NoRel	true	signal	danger
+Relation	T24	T9	NoRel	true	signal	obstruction
+Relation	T25	T5	NoRel	true	danger	section
+Relation	T26	T20	NoRel	true	stop	automatic signal
+Relation	T27	T4	NoRel	true	showing	proceeds cautiously
+Relation	T28	T24	NoRel	true	inform	signal
+Relation	T29	T11	NoRel	true	done	normal working
+Relation	T29	T2	NoRel	true	done	resets
+Relation	T3	T29	NoRel	true	pushes	done
+Relation	T3	T6	NoRel	true	pushes	reaches
+Relation	T4	T11	NoRel	true	proceeds cautiously	normal working
+Relation	T4	T16	NoRel	true	proceeds cautiously	signals
+Relation	T5	T23	NoRel	true	section	passing
+Relation	T7	T25	NoRel	true	signal	danger
+Relation	T8	T4	NoRel	true	without finding	proceeds cautiously
+Relation	T9	T1	NoRel	true	obstruction	fitted
+Relation	T9	T17	NoRel	true	obstruction	signal
+Relation	T9	T29	NoRel	true	obstruction	done

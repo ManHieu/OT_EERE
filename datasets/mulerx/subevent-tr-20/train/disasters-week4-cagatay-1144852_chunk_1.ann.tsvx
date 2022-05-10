@@ -1,0 +1,20 @@
+Text	Kaplıca su kaynaklarının da bulunduğu tektonik çöküntü özelliğine sahip bu bölgede tarih boyunca önemli depremler yaşandı .	Deprem sırasında Sakarya'da elektrik ve telefon hatları kesildi , tren ve karayollarındaki kaymalar sebebiyle ulaşımda aksamalar yaşandı .	Çok katlı binaların yıkılması ölü sayısının artmasına sebep oldu .	Ölümlerin büyük kısmı Sakarya'da olmak üzere , Bolu , İstanbul , Kocaeli ve Bursa'da meydana geldi .	Deprem , Eskişehir ve Ankara'da da hissedildi .
+Event	T0	çöküntü	EVENT	47
+Event	T2	Deprem	EVENT	124
+Event	T3	kesildi	EVENT	180
+Event	T4	kaymalar	EVENT	215
+Event	T5	yaşandı	EVENT	253
+Event	T6	ölü	EVENT	293
+Event	T8	Ölümlerin	EVENT	330
+Event	T10	Deprem	EVENT	431
+Event	T11	hissedildi	EVENT	466
+Event	T12	depremler	EVENT	104
+Event	T1	yıkılması	EVENT	283
+Relation	T0	T10	NoRel	true	çöküntü	Deprem
+Relation	T11	T2	NoRel	true	hissedildi	Deprem
+Relation	T11	T3	NoRel	true	hissedildi	kesildi
+Relation	T12	T1	NoRel	true	depremler	yıkılması
+Relation	T3	T10	NoRel	true	kesildi	Deprem
+Relation	T6	T1	NoRel	true	ölü	yıkılması
+Relation	T6	T2	NoRel	true	ölü	Deprem
+Relation	T6	T8	NoRel	true	ölü	Ölümlerin

@@ -1,0 +1,11 @@
+Text	Komünistler ve Nasyonal Sosyalistler , aralarındaki koltukların yarısından fazlasını elinde tutuyorlardı , ancak birbirleriyle veya diğer partilerle işbirliği yapmıyorlardı .	Böylece , politik olarak gerçekçi bir alternatif hükümet mümkün değildi ve Braun liderliğindeki koalisyon görevde kaldı .	Ancak Papen , Reichstag'da çoğunluk desteğinden de yoksundu .	Yönetimi ele almak için tek yolu , 48. Maddenin olağanüstü hal hükümleri ve dolayısıyla Papen'in üzerinde büyük etkiye sahip olduğu _ Reichspräsident _ Hindenburg tarafından çıkarılan kararnameler aracılığıylaydı .	20 Temmuz tarihli olağanüstü hal kararnamesi , Braun hükümetini görevden aldı ve _ Prusya için Papen Reichskommissar'ı _ ( Reich Komiseri ) ilan etti , ona Prusya bakanlıklarının tüm yetkilerini verdi ve ona Prusya hükümeti üzerinde doğrudan kontrol verdi .
+Event	T0	kaldı	EVENT	289
+Event	T1	yoksundu	EVENT	348
+Event	T2	kararnamesi	EVENT	607
+Event	T3	aldı	EVENT	647
+Event	T4	etti	EVENT	719
+Event	T5	verdi	EVENT	769
+Event	T6	verdi	EVENT	824
+Event	T7	tutuyorlardı	EVENT	92
+Relation	T0	T2	NoRel	true	kaldı	kararnamesi
+Relation	T1	T6	NoRel	true	yoksundu	verdi

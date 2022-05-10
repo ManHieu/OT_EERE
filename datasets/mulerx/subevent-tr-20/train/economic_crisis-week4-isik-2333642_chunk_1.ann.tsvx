@@ -1,0 +1,52 @@
+Text	Türk lirasının değer kaybı , yüksek enflasyon , artan borç ve karşılık gelen kredi temerrütleriyle karakterize olup krizin genel olarak , Türkiye ekonomisindeki yüksek cari açık ve yabancı para borcunun , Cumhurbaşkanı Recep Tayyip Erdoğan'ın artan otoriterliği ve faiz politikasına ilişkin alışılmışın dışında fikirleriyle birleştiği düşünülmektedir .	Kriz , liranın dalgalanmalar hâlinde büyük oranda değer kaybetmesiyle görünür olmaya başladı ve sonraki aşamada ödenemeyen borçlar ve ekonomik daralma ile daha derin bir boyuta ulaştı .	Enflasyon oranı çift hanelerde takılıp kalınca stagflasyon ortaya çıktı .	Kriz , kolay kredi ve devlet bütçesiyle desteklenen inşaat sektörü patlamasının yarattığı Erdoğan liderliğindeki ekonomik büyüme döneminin sonunu getirdi .	Yükselen dolar kuru , 11 Ekim 2021 itibarıyla 9₺'yi , , 12 Kasım 2021 itibarıyla 10₺'yi aştı .
+Event	T0	kaybı	EVENT	21
+Event	T1	krizin	EVENT	116
+Event	T2	düşünülmektedir	EVENT	335
+Event	T3	Kriz	EVENT	353
+Event	T4	dalgalanmalar	EVENT	368
+Event	T6	başladı	EVENT	438
+Event	T7	daralma	EVENT	496
+Event	T8	ulaştı	EVENT	530
+Event	T9	çıktı	EVENT	605
+Event	T10	Kriz	EVENT	613
+Event	T12	büyüme	EVENT	735
+Event	T13	getirdi	EVENT	759
+Event	T14	aştı	EVENT	857
+Event	T15	enflasyon	EVENT	36
+Event	T16	borç	EVENT	54
+Event	T17	temerrütleriyle	EVENT	83
+Event	T18	otoriterliği	EVENT	249
+Event	T19	fikirleriyle	EVENT	311
+Event	T5	kaybetmesiyle	EVENT	409
+Event	T20	borçlar	EVENT	476
+Event	T21	kalınca	EVENT	578
+Event	T22	desteklenen	EVENT	653
+Event	T23	patlamasının	EVENT	680
+Event	T11	Yükselen	EVENT	769
+Relation	T0	T10	NoRel	true	kaybı	Kriz
+Relation	T0	T16	NoRel	true	kaybı	borç
+Relation	T1	T4	NoRel	true	krizin	dalgalanmalar
+Relation	T10	T19	NoRel	true	Kriz	fikirleriyle
+Relation	T11	T2	NoRel	true	Yükselen	düşünülmektedir
+Relation	T12	T13	NoRel	true	büyüme	getirdi
+Relation	T13	T1	NoRel	true	getirdi	krizin
+Relation	T13	T15	NoRel	true	getirdi	enflasyon
+Relation	T13	T18	NoRel	true	getirdi	otoriterliği
+Relation	T14	T10	NoRel	true	aştı	Kriz
+Relation	T14	T11	NoRel	true	aştı	Yükselen
+Relation	T19	T1	NoRel	true	fikirleriyle	krizin
+Relation	T19	T16	NoRel	true	fikirleriyle	borç
+Relation	T20	T10	NoRel	true	borçlar	Kriz
+Relation	T21	T17	NoRel	true	kalınca	temerrütleriyle
+Relation	T22	T6	NoRel	true	desteklenen	başladı
+Relation	T23	T11	NoRel	true	patlamasının	Yükselen
+Relation	T23	T22	NoRel	true	patlamasının	desteklenen
+Relation	T5	T11	NoRel	true	kaybetmesiyle	Yükselen
+Relation	T6	T18	NoRel	true	başladı	otoriterliği
+Relation	T6	T5	NoRel	true	başladı	kaybetmesiyle
+Relation	T7	T14	NoRel	true	daralma	aştı
+Relation	T7	T19	NoRel	true	daralma	fikirleriyle
+Relation	T7	T23	NoRel	true	daralma	patlamasının
+Relation	T8	T22	NoRel	true	ulaştı	desteklenen
+Relation	T8	T3	NoRel	true	ulaştı	Kriz
+Relation	T8	T4	NoRel	true	ulaştı	dalgalanmalar

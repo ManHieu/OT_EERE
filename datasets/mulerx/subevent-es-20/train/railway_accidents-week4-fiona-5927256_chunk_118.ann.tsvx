@@ -1,0 +1,12 @@
+Text	- El 3 de julio de 1990 el choque de un tren Intercity que unía Zaragoza con la capital de España con una viga metálica desprendida de un tren de mercancías que circulaba en sentido contrario se saldó con 6 personas muertas y otras 8 heridas .	Los hechos sucedieron entre Alcalá de Henares y Torrejón , cerca de Madrid .	- 26 de julio de 1992 .	Mueren tres jóvenes arrollados por un tren de viajeros de FEVE en el interior de un túnel de la línea Ferrol_-_____Gijón situado en la localidad asturiana de Perlora .	- El 2 de agosto de 1993 , en un túnel próximo a la localidad asturiana de Vega de Anzo dos trenes de FEVE colisionan falleciendo 12 personas .
+Event	T0	choque	EVENT	27
+Event	T1	desprendida	EVENT	120
+Event	T2	circulaba	EVENT	161
+Event	T3	muertas	EVENT	216
+Event	T4	heridas	EVENT	234
+Event	T5	sucedieron	EVENT	255
+Event	T6	Mueren	EVENT	345
+Event	T7	arrollados	EVENT	365
+Event	T8	falleciendo	EVENT	631
+Event	T9	colisionan	EVENT	620
+Relation	T4	T9	NoRel	true	heridas	colisionan

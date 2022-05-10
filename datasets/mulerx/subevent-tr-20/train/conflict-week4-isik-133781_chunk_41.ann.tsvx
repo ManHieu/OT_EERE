@@ -1,0 +1,26 @@
+Text	Buradan İran’ın merkezi Kazvin üzerine gitmek isteyen Hüsrev Paşa , Dergüzin’e geldi .	Burada toplanan savaş meclisinde , Kazvin üzerine yapılacak harekât görüşüldü .	Mesafenin uzaklığı Safevilerin bütün yol boyunu tahliye ve tahrib ettikleri , iaşe tedariki zorluğu ve bilhassa su_kıtlığı olabileceği gibi sebeplerle ordunun Bağdad üzerine yürümesi kararlaştırıldı .	14 Temmuz’da Nihavend civarındaki Cemhal ovasına gelen Hüsrev Paşa , Luristan hakimi Hüseyin Han’ın 12.000 kişilik bir kuvvetle mevzi alıp bir kısım kuvvetiyle de pusu kurduğu haberini alınca , Anadolu ve Rumeli beylerbeyilerini bir kısım kuvvetle bunların üzerine gönderdi .	Yapılan çetin muharebe sonunda Safaviler mağlup edildi ve Hüseyin Han güçlükle kaçıp kurtuldu .
+Event	T0	geldi	EVENT	79
+Event	T1	görüşüldü	EVENT	155
+Event	T2	tahliye	EVENT	215
+Event	T3	ettikleri	EVENT	233
+Event	T4	kararlaştırıldı	EVENT	350
+Event	T5	alıp	EVENT	502
+Event	T6	alınca	EVENT	553
+Event	T7	gönderdi	EVENT	633
+Event	T8	muharebe	EVENT	658
+Event	T9	edildi	EVENT	692
+Event	T10	kurtuldu	EVENT	729
+Event	T11	toplanan	EVENT	94
+Event	T12	gelen	EVENT	417
+Event	T13	kaçıp	EVENT	723
+Relation	T1	T10	NoRel	true	görüşüldü	kurtuldu
+Relation	T11	T2	NoRel	true	toplanan	tahliye
+Relation	T11	T9	NoRel	true	toplanan	edildi
+Relation	T12	T9	NoRel	true	gelen	edildi
+Relation	T13	T2	NoRel	true	kaçıp	tahliye
+Relation	T13	T6	NoRel	true	kaçıp	alınca
+Relation	T2	T11	NoRel	true	tahliye	toplanan
+Relation	T2	T4	NoRel	true	tahliye	kararlaştırıldı
+Relation	T2	T9	NoRel	true	tahliye	edildi
+Relation	T6	T0	NoRel	true	alınca	geldi
+Relation	T8	T11	NoRel	true	muharebe	toplanan

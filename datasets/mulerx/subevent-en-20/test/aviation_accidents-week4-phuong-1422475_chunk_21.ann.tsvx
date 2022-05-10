@@ -1,0 +1,39 @@
+Text	This was confirmed by the fact that the tail surfaces of the private plane were found later to have been completely severed and by markings found on the propeller of the Navy plane .	After the propeller of the Navy plane severed the tail surfaces , the private plane pulled ahead for an instant .	The Navy plane swung slightly then overtook the private plane , again cutting one of its wings causing it to immediately spin to the waters below .	An inspection of the Navy plane revealed that the leading edges of both blades of the propeller had been gouged and nicked , apparently at the time the ...	In 1941 Gretchen appealed to Congress to pay for the funeral , which totaled $ 365 .
+Event	T0	confirmed	EVENT	9
+Event	T1	found	EVENT	80
+Event	T2	severed	EVENT	116
+Event	T3	found	EVENT	140
+Event	T4	severed	EVENT	221
+Event	T5	swung	EVENT	312
+Event	T6	overtook	EVENT	332
+Event	T7	cutting	EVENT	367
+Event	T8	causing	EVENT	392
+Event	T9	inspection	EVENT	448
+Event	T10	revealed	EVENT	477
+Event	T11	gouged	EVENT	550
+Event	T12	nicked	EVENT	561
+Event	T13	appealed	EVENT	618
+Event	T14	pay	EVENT	642
+Event	T15	funeral	EVENT	654
+Event	T16	totaled	EVENT	670
+Event	T17	pulled ahead	EVENT	267
+Event	T18	spin	EVENT	418
+Relation	T0	T15	NoRel	true	confirmed	funeral
+Relation	T10	T15	NoRel	true	revealed	funeral
+Relation	T10	T3	NoRel	true	revealed	found
+Relation	T10	T4	NoRel	true	revealed	severed
+Relation	T11	T5	NoRel	true	gouged	swung
+Relation	T13	T18	NoRel	true	appealed	spin
+Relation	T13	T4	NoRel	true	appealed	severed
+Relation	T17	T13	NoRel	true	pulled ahead	appealed
+Relation	T17	T14	NoRel	true	pulled ahead	pay
+Relation	T17	T4	NoRel	true	pulled ahead	severed
+Relation	T18	T11	NoRel	true	spin	gouged
+Relation	T18	T6	NoRel	true	spin	overtook
+Relation	T2	T7	NoRel	true	severed	cutting
+Relation	T3	T0	NoRel	true	found	confirmed
+Relation	T5	T11	NoRel	true	swung	gouged
+Relation	T6	T10	NoRel	true	overtook	revealed
+Relation	T9	T15	NoRel	true	inspection	funeral
+Relation	T9	T16	NoRel	true	inspection	totaled
+Relation	T9	T7	NoRel	true	inspection	cutting

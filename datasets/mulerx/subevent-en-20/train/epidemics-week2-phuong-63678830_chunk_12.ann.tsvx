@@ -1,0 +1,55 @@
+Text	Many protesters argued for monetary relief from the countries slumping economy after weeks of the lockdown .	At least one demonstrator died after soldiers used tear gas , batons , and live bullets to disperse a protesters in Tripoli who were throwing molotov cocktails .	Protesters also congregated in Beirut outside the central bank and threw rocks at the building , and took over major roads as they claimed there wasn't enough done to protect the economy and those that would suffer the most economically .	On 31 July 2021 , hundreds of protesters attempted to gather in Merdeka Square , Kuala Lumpur , calling for the resignation of Prime Minister Muhyiddin Yassin over his and the Malaysian government 's handling of the COVID - 19 pandemic .	The protests took place despite Movement Control Order ( MCO ) restrictions being in place , and Malaysian police blocking access to Merdeka Square itself .
+Event	T0	argued	EVENT	16
+Event	T1	relief	EVENT	36
+Event	T10	claimed	EVENT	402
+Event	T11	done	EVENT	430
+Event	T12	protect	EVENT	438
+Event	T13	suffer	EVENT	479
+Event	T14	attempted	EVENT	551
+Event	T15	gather	EVENT	564
+Event	T16	calling	EVENT	606
+Event	T17	resignation	EVENT	622
+Event	T18	handling	EVENT	710
+Event	T19	pandemic	EVENT	737
+Event	T2	slumping	EVENT	62
+Event	T20	live	EVENT	184
+Event	T21	threw	EVENT	338
+Event	T3	lockdown	EVENT	98
+Event	T4	died	EVENT	135
+Event	T5	used	EVENT	155
+Event	T6	disperse	EVENT	200
+Event	T7	throwing	EVENT	242
+Event	T8	congregated	EVENT	287
+Event	T9	took over	EVENT	372
+Relation	T8	T21	SuperSub	true	congregated	threw
+Relation	T21	T8	SubSuper	true	threw	congregated
+Relation	T8	T9	SuperSub	true	congregated	took over
+Relation	T9	T8	SubSuper	true	took over	congregated
+Relation	T1	T5	NoRel	true	relief	used
+Relation	T10	T2	NoRel	true	claimed	slumping
+Relation	T10	T8	NoRel	true	claimed	congregated
+Relation	T12	T2	NoRel	true	protect	slumping
+Relation	T12	T5	NoRel	true	protect	used
+Relation	T14	T1	NoRel	true	attempted	relief
+Relation	T14	T9	NoRel	true	attempted	took over
+Relation	T15	T17	NoRel	true	gather	resignation
+Relation	T15	T7	NoRel	true	gather	throwing
+Relation	T16	T12	NoRel	true	calling	protect
+Relation	T17	T12	NoRel	true	resignation	protect
+Relation	T2	T4	NoRel	true	slumping	died
+Relation	T2	T9	NoRel	true	slumping	took over
+Relation	T20	T21	NoRel	true	live	threw
+Relation	T20	T7	NoRel	true	live	throwing
+Relation	T20	T9	NoRel	true	live	took over
+Relation	T21	T1	NoRel	true	threw	relief
+Relation	T21	T13	NoRel	true	threw	suffer
+Relation	T21	T17	NoRel	true	threw	resignation
+Relation	T3	T17	NoRel	true	lockdown	resignation
+Relation	T5	T15	NoRel	true	used	gather
+Relation	T6	T11	NoRel	true	disperse	done
+Relation	T6	T19	NoRel	true	disperse	pandemic
+Relation	T7	T13	NoRel	true	throwing	suffer
+Relation	T8	T19	NoRel	true	congregated	pandemic
+Relation	T9	T0	NoRel	true	took over	argued
+Relation	T9	T16	NoRel	true	took over	calling
+Relation	T9	T3	NoRel	true	took over	lockdown

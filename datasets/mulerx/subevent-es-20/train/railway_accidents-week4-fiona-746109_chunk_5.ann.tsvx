@@ -1,0 +1,37 @@
+Text	Inmediatamente telefoneó a la estación de Torre del Bierzo para anunciar que el Correo 421 había perdido los frenos .	El jefe de Torre del Bierzo mandó poner traviesas en la vía intentando frenarlo , pero no dio tiempo : en menos de 5 minutos el correo entraba en la estación haciendo sonar el silbato en señal de alarma y continuó hasta entrar en el túnel número 20 , hoy desmontado y convertido en trinchera , situado exactamente en la coordenada 42.595889 , -6.331000	En dicho túnel se encontraba una locomotora de maniobras 4421 con 3 vagones .	El maquinista , advertido por el jefe de estación , estaba tratando de alejarse de la estación en el mismo sentido cuando el correo le alcanzó dentro del túnel .	Debido a la violencia del choque , los dos últimos vagones de la locomotora de maniobras se quedaron dentro del túnel , mientras que la máquina y el vagón restante salieron por el otro lado del túnel .
+Event	T0	telefoneó	EVENT	15
+Event	T1	anunciar	EVENT	64
+Event	T2	perdido	EVENT	97
+Event	T3	poner	EVENT	152
+Event	T4	dio	EVENT	208
+Event	T5	entraba	EVENT	253
+Event	T6	sonar	EVENT	285
+Event	T7	silbato	EVENT	294
+Event	T8	continuó	EVENT	323
+Event	T9	entrar	EVENT	338
+Event	T10	desmontado	EVENT	373
+Event	T11	convertido	EVENT	386
+Event	T12	advertido	EVENT	565
+Event	T13	tratando	EVENT	608
+Event	T14	alcanzó	EVENT	684
+Event	T15	violencia	EVENT	723
+Event	T16	choque	EVENT	737
+Event	T17	maniobras	EVENT	790
+Event	T18	quedaron	EVENT	803
+Event	T19	salieron	EVENT	875
+Relation	T2	T0	SuperSub	true	perdido	telefoneó
+Relation	T0	T2	SubSuper	true	telefoneó	perdido
+Relation	T0	T18	NoRel	true	telefoneó	quedaron
+Relation	T12	T15	NoRel	true	advertido	violencia
+Relation	T13	T7	NoRel	true	tratando	silbato
+Relation	T17	T11	NoRel	true	maniobras	convertido
+Relation	T4	T6	NoRel	true	dio	sonar
+Relation	T5	T12	NoRel	true	entraba	advertido
+Relation	T5	T4	NoRel	true	entraba	dio
+Relation	T6	T1	NoRel	true	sonar	anunciar
+Relation	T6	T12	NoRel	true	sonar	advertido
+Relation	T6	T19	NoRel	true	sonar	salieron
+Relation	T7	T5	NoRel	true	silbato	entraba
+Relation	T8	T14	NoRel	true	continuó	alcanzó
+Relation	T9	T0	NoRel	true	entrar	telefoneó
+Relation	T9	T13	NoRel	true	entrar	tratando

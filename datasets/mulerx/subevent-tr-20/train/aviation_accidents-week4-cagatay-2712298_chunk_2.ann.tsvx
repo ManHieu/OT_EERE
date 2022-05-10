@@ -1,0 +1,18 @@
+Text	Saat 19.30'da Omsk'tan Almatı'ya doğru yola çıktı ve 7.000 m ( 23.000_ft ) seyir irtifasında gitti .	20.15'te Almatı'da 3. 000 metre ( 9. 800_ft ) görüş mesafesi olduğu , rüzgarın zayıf estiği ve atmosfer basıncının 710 ,5 mmHg olduğu bildirildi .	20.32'de , CCCP - 75689 kuyruk numaralı farklı bir İl - 18 , Almatı pistini iki kez pas geçmek zorunda kaldıktan sonra piste indi .	İndikten sonra havalimanında taksi yapmaya başlayan İl - 18'e kontrolör hava koşullarının iniş yapacak başka bir İl - 18 için güvenli olup olmadığını sordu .	Pilot , herhangi bir İl - 18'in mevcut koşullara güvenli bir şekilde inebileceğini kategorik olarak reddederek cevap verdi .
+Event	T0	çıktı	EVENT	44
+Event	T1	seyir	EVENT	75
+Event	T2	gitti	EVENT	93
+Event	T3	estiği	EVENT	186
+Event	T4	bildirildi	EVENT	235
+Event	T5	geçmek	EVENT	336
+Event	T6	indi	EVENT	373
+Event	T7	sordu	EVENT	530
+Event	T8	verdi	EVENT	655
+Event	T9	yapmaya	EVENT	415
+Event	T10	reddederek	EVENT	638
+Relation	T8	T10	SuperSub	true	verdi	reddederek
+Relation	T10	T8	SubSuper	true	reddederek	verdi
+Relation	T0	T2	NoRel	true	çıktı	gitti
+Relation	T5	T7	NoRel	true	geçmek	sordu
+Relation	T6	T5	NoRel	true	indi	geçmek
+Relation	T7	T5	NoRel	true	sordu	geçmek

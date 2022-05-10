@@ -1,0 +1,48 @@
+Text	He began his career as a camera assistant at Gaumont British Studios at Shepherd 's Bush .	He developed a very close relationship with Balcon which lasted for the rest of his life ; Balcon 's children both later commented that their father " regarded him as a son " .	At Gaumont , he was assigned to assist Hitchcock on his original version of _ The Man Who Knew Too Much _ ( 1934 ) , on which he met his future wife .	He also assisted Hitchcock on _ The 39 Steps _ ( 1935 ) with Robert Donat and Madeleine Carroll ; during filming , Hitchcock reportedly humiliated Tennyson by pretending that Carroll had refused to be carried across the Scottish marsh set by Donat , and he forced Tennyson to don Carroll 's wig and costume and double for her in the scene .	Tennyson followed Balcon when he was appointed head of production at the former Associated Talking Pictures , newly renamed as Ealing Studios .
+Event	T0	began	EVENT	3
+Event	T1	career	EVENT	13
+Event	T2	developed	EVENT	94
+Event	T3	lasted	EVENT	148
+Event	T4	commented	EVENT	212
+Event	T5	regarded	EVENT	242
+Event	T6	assigned	EVENT	288
+Event	T7	assist	EVENT	300
+Event	T8	met	EVENT	397
+Event	T9	assisted	EVENT	427
+Event	T10	filming	EVENT	524
+Event	T11	humiliated	EVENT	555
+Event	T12	pretending	EVENT	578
+Event	T13	refused	EVENT	606
+Event	T14	carried	EVENT	620
+Event	T15	set	EVENT	654
+Event	T16	forced	EVENT	676
+Event	T17	double	EVENT	730
+Event	T18	followed	EVENT	769
+Event	T19	appointed	EVENT	797
+Event	T20	renamed	EVENT	876
+Relation	T2	T3	SuperSub	true	developed	lasted
+Relation	T3	T2	SubSuper	true	lasted	developed
+Relation	T4	T5	SuperSub	true	commented	regarded
+Relation	T5	T4	SubSuper	true	regarded	commented
+Relation	T7	T8	SuperSub	true	assist	met
+Relation	T8	T7	SubSuper	true	met	assist
+Relation	T12	T13	SuperSub	true	pretending	refused
+Relation	T13	T12	SubSuper	true	refused	pretending
+Relation	T19	T18	SuperSub	true	appointed	followed
+Relation	T18	T19	SubSuper	true	followed	appointed
+Relation	T0	T9	NoRel	true	began	assisted
+Relation	T1	T6	NoRel	true	career	assigned
+Relation	T11	T0	NoRel	true	humiliated	began
+Relation	T13	T14	NoRel	true	refused	carried
+Relation	T13	T9	NoRel	true	refused	assisted
+Relation	T14	T20	NoRel	true	carried	renamed
+Relation	T15	T3	NoRel	true	set	lasted
+Relation	T17	T15	NoRel	true	double	set
+Relation	T2	T13	NoRel	true	developed	refused
+Relation	T2	T20	NoRel	true	developed	renamed
+Relation	T20	T13	NoRel	true	renamed	refused
+Relation	T3	T4	NoRel	true	lasted	commented
+Relation	T3	T8	NoRel	true	lasted	met
+Relation	T7	T18	NoRel	true	assist	followed
+Relation	T8	T3	NoRel	true	met	lasted
+Relation	T9	T3	NoRel	true	assisted	lasted

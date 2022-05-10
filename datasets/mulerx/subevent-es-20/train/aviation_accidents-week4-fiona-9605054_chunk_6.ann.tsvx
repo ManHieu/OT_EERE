@@ -1,0 +1,60 @@
+Text	Al día siguiente , el presidente de Ucrania , Volodímir Zelenski , ordenó suspender los vuelos de todos los An-26 hasta que se aclaren las causas del accidente aéreo .	Según la oficina adjunta del presidente Oleg Tatarov , también en nombre de Zelensky , los organismos encargados de hacer cumplir la ley revisarán los contratos de defensa y fortalecerán el control sobre la investigación de delitos en el campo de la defensa para la compra y mantenimiento de equipo militar .	La Oficina Estatal de Investigaciones y la Fiscalía General han iniciado una investigación previa al juicio sobre el accidente de un avión militar por violar las reglas de vuelo y prepararse para ellas , lo que provocó una catástrofe y graves consecuencias ( artículo 416 del Código Penal de Ucrania ) .	La Oficina de Investigaciones del Estado está considerando 4 causas probables del accidente : un mal funcionamiento técnico , un error del piloto , errores en el control de vuelo y el mantenimiento inadecuado de la aeronave .	Según la información preliminar del Servicio de Seguridad de Ucrania , los cadetes no controlaban directamente la aeronave : el comandante de la tripulación estaba a cargo .
+Event	T0	suspender	EVENT	74
+Event	T1	vuelos	EVENT	88
+Event	T2	aclaren	EVENT	127
+Event	T3	accidente	EVENT	150
+Event	T4	revisarán	EVENT	305
+Event	T5	contratos	EVENT	319
+Event	T6	fortalecerán	EVENT	342
+Event	T7	control	EVENT	358
+Event	T8	investigación	EVENT	375
+Event	T9	delitos	EVENT	392
+Event	T10	compra	EVENT	434
+Event	T11	iniciado	EVENT	541
+Event	T12	juicio	EVENT	578
+Event	T13	accidente	EVENT	594
+Event	T14	violar	EVENT	628
+Event	T15	prepararse	EVENT	657
+Event	T16	provocó	EVENT	688
+Event	T17	catástrofe	EVENT	700
+Event	T18	considerando	EVENT	827
+Event	T19	accidente	EVENT	863
+Event	T20	error	EVENT	910
+Event	T21	errores	EVENT	929
+Event	T22	vuelo	EVENT	954
+Event	T23	información	EVENT	1016
+Event	T24	controlaban	EVENT	1093
+Relation	T3	T0	SuperSub	true	accidente	suspender
+Relation	T0	T3	SubSuper	true	suspender	accidente
+Relation	T0	T6	NoRel	true	suspender	fortalecerán
+Relation	T1	T0	NoRel	true	vuelos	suspender
+Relation	T11	T16	NoRel	true	iniciado	provocó
+Relation	T11	T6	NoRel	true	iniciado	fortalecerán
+Relation	T11	T7	NoRel	true	iniciado	control
+Relation	T12	T13	NoRel	true	juicio	accidente
+Relation	T12	T20	NoRel	true	juicio	error
+Relation	T13	T20	NoRel	true	accidente	error
+Relation	T13	T24	NoRel	true	accidente	controlaban
+Relation	T14	T12	NoRel	true	violar	juicio
+Relation	T14	T7	NoRel	true	violar	control
+Relation	T15	T1	NoRel	true	prepararse	vuelos
+Relation	T15	T10	NoRel	true	prepararse	compra
+Relation	T15	T11	NoRel	true	prepararse	iniciado
+Relation	T15	T22	NoRel	true	prepararse	vuelo
+Relation	T15	T4	NoRel	true	prepararse	revisarán
+Relation	T16	T23	NoRel	true	provocó	información
+Relation	T18	T11	NoRel	true	considerando	iniciado
+Relation	T19	T1	NoRel	true	accidente	vuelos
+Relation	T19	T12	NoRel	true	accidente	juicio
+Relation	T19	T15	NoRel	true	accidente	prepararse
+Relation	T20	T10	NoRel	true	error	compra
+Relation	T21	T14	NoRel	true	errores	violar
+Relation	T23	T2	NoRel	true	información	aclaren
+Relation	T24	T19	NoRel	true	controlaban	accidente
+Relation	T4	T3	NoRel	true	revisarán	accidente
+Relation	T5	T17	NoRel	true	contratos	catástrofe
+Relation	T6	T12	NoRel	true	fortalecerán	juicio
+Relation	T6	T17	NoRel	true	fortalecerán	catástrofe
+Relation	T7	T0	NoRel	true	control	suspender
+Relation	T7	T13	NoRel	true	control	accidente
+Relation	T8	T1	NoRel	true	investigación	vuelos

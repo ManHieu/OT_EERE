@@ -1,0 +1,17 @@
+Text	DELIGRAD SAVAŞI ( DELIGRAD MUHAREBESI ) , 1806 yılının aralık ayında bugünkü Sırbistan'da yer alan Deligrad köyü ve civarında Sırbistan isyancı birlikleri ile Osmanlı İmparatorluğu ordusu arasında yapılan savaştır .	İlk ayaklanma , bölgedeki ipleri tamamen ele geçiren ve İstanbul hükümetinin söz geçiremediği yeniçeri seçkin tabakasının kovulmaya başlandığı 1804 başlamıştı .	İhtilalin lideri Kara Yorgi elde etmiş olduğu birkaç ufak tefek başarıdan sonra hedefini Sırbistan'ın özgürlüğü olarak belirledi .	Sırbistan'da suların bir türlü durulmaması üzerine Osmanlı padişahı III. Selim bölgeye büyük bir ordu gönderdi .	Sırplar Türk kuvvetlerini Deligrad'da karşılamaya karar verdiler .
+Event	T1	savaştır	EVENT	205
+Event	T2	ayaklanma	EVENT	220
+Event	T4	başlamıştı	EVENT	364
+Event	T6	belirledi	EVENT	496
+Event	T7	gönderdi	EVENT	610
+Event	T8	DELIGRAD SAVAŞI	EVENT	0
+Event	T9	DELIGRAD MUHAREBESI	EVENT	18
+Event	T3	kovulmaya	EVENT	338
+Event	T10	verdiler	EVENT	677
+Relation	T1	T10	NoRel	true	savaştır	verdiler
+Relation	T1	T9	NoRel	true	savaştır	DELIGRAD MUHAREBESI
+Relation	T10	T8	NoRel	true	verdiler	DELIGRAD SAVAŞI
+Relation	T2	T7	NoRel	true	ayaklanma	gönderdi
+Relation	T3	T4	NoRel	true	kovulmaya	başlamıştı
+Relation	T3	T6	NoRel	true	kovulmaya	belirledi
+Relation	T8	T7	NoRel	true	DELIGRAD SAVAŞI	gönderdi

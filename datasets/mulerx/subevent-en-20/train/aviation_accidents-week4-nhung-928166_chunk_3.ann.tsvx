@@ -1,0 +1,65 @@
+Text	A monument to the victims was built in Ben Shemen forest in Israel .	Occurring less than a month after the September 11 attacks in the United States , the crash was initially suspected by Russian officials to be an act of terrorism , and they denied American reports that it was caused by an S - 200 missile .	Later , the Moscow - based Interstate Aviation Committee ruled that the crash was caused by an accidental Ukrainian S - 200 missile strike during military training exercises staged off Cape Opuk in Crimea .	Initial private assessments by American military officials determined that the crash was caused by a S - 200 missile that had overshot its target drone — which had been destroyed successfully by an S - 300 fired at the same time — and instead of self - destructing , locked on the passenger plane about further away and detonated over the plane .	Russian officials dismissed the American claim as " unworthy of attention , " and Russian president Vladimir Putin told the press the next day that " the weapons used in those exercises had such characteristics that make it impossible for them to reach the air corridor through which the plane was moving . "
+Event	T0	built	EVENT	30
+Event	T1	Occurring	EVENT	69
+Event	T2	attacks	EVENT	120
+Event	T3	crash	EVENT	155
+Event	T4	suspected	EVENT	175
+Event	T5	act	EVENT	215
+Event	T6	denied	EVENT	243
+Event	T7	reports	EVENT	259
+Event	T8	caused	EVENT	279
+Event	T9	ruled	EVENT	367
+Event	T10	crash	EVENT	382
+Event	T11	caused	EVENT	392
+Event	T13	strike	EVENT	442
+Event	T14	assessments	EVENT	533
+Event	T15	determined	EVENT	576
+Event	T16	crash	EVENT	596
+Event	T17	caused	EVENT	606
+Event	T18	overshot	EVENT	643
+Event	T19	destroyed	EVENT	686
+Event	T20	fired	EVENT	723
+Event	T22	dismissed	EVENT	882
+Event	T23	claim	EVENT	905
+Event	T24	told	EVENT	979
+Event	T25	used	EVENT	1026
+Event	T26	exercises	EVENT	1040
+Event	T27	reach	EVENT	1111
+Event	T28	moving	EVENT	1162
+Event	T29	make	EVENT	1080
+Event	T12	self - destructing	EVENT	763
+Relation	T22	T24	SuperSub	true	dismissed	told
+Relation	T24	T22	SubSuper	true	told	dismissed
+Relation	T14	T15	SuperSub	true	assessments	determined
+Relation	T15	T14	SubSuper	true	determined	assessments
+Relation	T0	T2	NoRel	true	built	attacks
+Relation	T0	T23	NoRel	true	built	claim
+Relation	T1	T0	NoRel	true	Occurring	built
+Relation	T1	T17	NoRel	true	Occurring	caused
+Relation	T10	T23	NoRel	true	crash	claim
+Relation	T11	T2	NoRel	true	caused	attacks
+Relation	T12	T15	NoRel	true	self - destructing	determined
+Relation	T12	T2	NoRel	true	self - destructing	attacks
+Relation	T14	T7	NoRel	true	assessments	reports
+Relation	T15	T8	NoRel	true	determined	caused
+Relation	T16	T20	NoRel	true	crash	fired
+Relation	T18	T0	NoRel	true	overshot	built
+Relation	T18	T15	NoRel	true	overshot	determined
+Relation	T18	T25	NoRel	true	overshot	used
+Relation	T18	T3	NoRel	true	overshot	crash
+Relation	T19	T16	NoRel	true	destroyed	crash
+Relation	T19	T6	NoRel	true	destroyed	denied
+Relation	T20	T1	NoRel	true	fired	Occurring
+Relation	T25	T5	NoRel	true	used	act
+Relation	T26	T8	NoRel	true	exercises	caused
+Relation	T27	T13	NoRel	true	reach	strike
+Relation	T27	T22	NoRel	true	reach	dismissed
+Relation	T28	T26	NoRel	true	moving	exercises
+Relation	T29	T17	NoRel	true	make	caused
+Relation	T4	T1	NoRel	true	suspected	Occurring
+Relation	T6	T0	NoRel	true	denied	built
+Relation	T7	T24	NoRel	true	reports	told
+Relation	T8	T17	NoRel	true	caused	caused
+Relation	T8	T19	NoRel	true	caused	destroyed
+Relation	T8	T4	NoRel	true	caused	suspected
+Relation	T9	T7	NoRel	true	ruled	reports

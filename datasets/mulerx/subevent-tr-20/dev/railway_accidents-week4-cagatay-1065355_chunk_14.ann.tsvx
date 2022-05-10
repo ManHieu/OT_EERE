@@ -1,0 +1,61 @@
+Text	- 1 Mart , 2003 – Chiayi , Tayvan : Alishan Forest Railway’deki bir trenin fren sistemi bozulunca makinist kontrolü kaybeder , 17 ölü ve 173 yaralı .	- 11 Mart , 2004_– 2004 Madrid tren bombolamaları : Madrid’de dört banliyö treninde bombalar patlatıldığında 191 kişi öldü .	- 6 Ocak , 2005 – Graniteville tren felaketi , Graniteville , Güney Karolanya , Birleşik Devletler : Bir 42 - vagon Norfolk Southern yük treni Grantileville’de Avondale Mills atölyesi yakınında duran trenle kafa kafaya çarpıştığında ; 9 kişi öldü ( makinist de dahil ) ve 250’nin üzerinde kişi yaralandı .	Bu kazada 16 vagon raydan çıktı , bunlar içinde 90 ton klor gazı taşıyan tank kırılır ve havaya yayılır ki bu kaza esnasında ölümlere ve yaralanmalara sebep olu .	NTSB , kazanın ana hat çalışma tarzının yeni bir hatta geçirmede başarısızlığı olduğuna karar verir .
+Event	T0	bozulunca	EVENT	88
+Event	T1	kaybeder	EVENT	116
+Event	T2	ölü	EVENT	130
+Event	T3	bombolamaları	EVENT	186
+Event	T4	patlatıldığında	EVENT	243
+Event	T5	öldü	EVENT	268
+Event	T6	felaketi	EVENT	311
+Event	T7	çarpıştığında	EVENT	494
+Event	T8	öldü	EVENT	517
+Event	T9	yaralandı	EVENT	569
+Event	T10	çıktı	EVENT	607
+Event	T11	kırılır	EVENT	659
+Event	T12	yayılır	EVENT	677
+Event	T13	kaza	EVENT	691
+Event	T14	ölümlere	EVENT	706
+Event	T15	kazanın	EVENT	751
+Event	T16	verir	EVENT	838
+Event	T17	yaralı	EVENT	141
+Event	T18	kazada	EVENT	584
+Event	T19	yaralanmalara	EVENT	718
+Relation	T3	T4	SuperSub	true	bombolamaları	patlatıldığında
+Relation	T4	T3	SubSuper	true	patlatıldığında	bombolamaları
+Relation	T6	T7	SuperSub	true	felaketi	çarpıştığında
+Relation	T7	T6	SubSuper	true	çarpıştığında	felaketi
+Relation	T6	T8	SuperSub	true	felaketi	öldü
+Relation	T8	T6	SubSuper	true	öldü	felaketi
+Relation	T6	T9	SuperSub	true	felaketi	yaralandı
+Relation	T9	T6	SubSuper	true	yaralandı	felaketi
+Relation	T6	T10	SuperSub	true	felaketi	çıktı
+Relation	T10	T6	SubSuper	true	çıktı	felaketi
+Relation	T6	T11	SuperSub	true	felaketi	kırılır
+Relation	T11	T6	SubSuper	true	kırılır	felaketi
+Relation	T6	T12	SuperSub	true	felaketi	yayılır
+Relation	T12	T6	SubSuper	true	yayılır	felaketi
+Relation	T6	T14	SuperSub	true	felaketi	ölümlere
+Relation	T14	T6	SubSuper	true	ölümlere	felaketi
+Relation	T6	T19	SuperSub	true	felaketi	yaralanmalara
+Relation	T19	T6	SubSuper	true	yaralanmalara	felaketi
+Relation	T0	T16	NoRel	true	bozulunca	verir
+Relation	T1	T16	NoRel	true	kaybeder	verir
+Relation	T1	T2	NoRel	true	kaybeder	ölü
+Relation	T10	T2	NoRel	true	çıktı	ölü
+Relation	T10	T3	NoRel	true	çıktı	bombolamaları
+Relation	T11	T10	NoRel	true	kırılır	çıktı
+Relation	T12	T19	NoRel	true	yayılır	yaralanmalara
+Relation	T13	T0	NoRel	true	kaza	bozulunca
+Relation	T13	T5	NoRel	true	kaza	öldü
+Relation	T13	T6	NoRel	true	kaza	felaketi
+Relation	T15	T3	NoRel	true	kazanın	bombolamaları
+Relation	T15	T5	NoRel	true	kazanın	öldü
+Relation	T16	T5	NoRel	true	verir	öldü
+Relation	T17	T15	NoRel	true	yaralı	kazanın
+Relation	T17	T6	NoRel	true	yaralı	felaketi
+Relation	T19	T3	NoRel	true	yaralanmalara	bombolamaları
+Relation	T2	T16	NoRel	true	ölü	verir
+Relation	T2	T3	NoRel	true	ölü	bombolamaları
+Relation	T3	T12	NoRel	true	bombolamaları	yayılır
+Relation	T7	T11	NoRel	true	çarpıştığında	kırılır
+Relation	T8	T16	NoRel	true	öldü	verir
+Relation	T9	T17	NoRel	true	yaralandı	yaralı

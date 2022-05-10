@@ -1,0 +1,11 @@
+Text	AVUSTURYA'DA COVID - 19 PANDEMISI , devam eden küresel koronavirüs hastalığı 2019 ( COVID - 19 ) viral pandemisinin bir parçasıdır .	12 Ocak 2020'de Dünya Sağlık Örgütü ( WHO ) , 31 Aralık 2019'da Vuhan şehrindeki bir grup insanda yeni bir koronavirüsün solunum hastalıklarına neden olduğunu doğruladı .	Dünya Sağlık Örgütü tarafından 30 Ocak 2020'de Uluslararası Halk Sağlığı Acil Durumu ilan edildi ve 11 Mart'ta bir pandemi olarak kabul edildi .		
+Event	T1	pandemisinin	EVENT	103
+Event	T2	doğruladı	EVENT	292
+Event	T3	edildi	EVENT	394
+Event	T4	pandemi	EVENT	419
+Event	T5	edildi	EVENT	440
+Event	T6	PANDEMISI	EVENT	24
+Event	T7	hastalıklarına	EVENT	262
+Relation	T1	T5	NoRel	true	pandemisinin	edildi
+Relation	T6	T1	NoRel	true	PANDEMISI	pandemisinin
+Relation	T7	T6	NoRel	true	hastalıklarına	PANDEMISI

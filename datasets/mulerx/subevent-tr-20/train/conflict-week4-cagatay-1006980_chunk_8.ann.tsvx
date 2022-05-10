@@ -1,0 +1,38 @@
+Text	Rambo , Amerika Birleşik Devletleri'ne döndükten sonra , birçok Amerikalı sivilin Vietnam'dan dönen askerlerden nefret ettiğini görür ve kendisinin ve geri dönen diğer askerlerin savaş karşıtı " hippiler " tarafından küçük düşürüldüğünü ve utandırıldığını iddia eder .	Onlara çöp atan , onlara " bebek katili " diyen ve onları toplumdan dışlayanların olduğunu görür .	Rambo'nun Vietnam'daki ve memleketindeki deneyimleri , aşırı bir travma sonrası stres bozukluğu vakasıyla sonuçlanır .	Aynı zamanda , öz kimliği ve derinlemesine düşünme gibi içsel sorunları , Rambo'nun zor durumları " uygar " bir şekilde ele almaktan ziyade topluma karşı saldırgan olmasına neden olmaya başlamıştır .	Bu sebeple İlk Kan filmi bu noktadan toplanır .
+Event	T0	görür	EVENT	128
+Event	T1	deneyimleri	EVENT	409
+Event	T2	travma	EVENT	433
+Event	T3	sonuçlanır	EVENT	474
+Event	T4	düşünme	EVENT	530
+Event	T5	toplanır	EVENT	724
+Event	T6	döndükten	EVENT	39
+Event	T7	dönen	EVENT	156
+Event	T8	düşürüldüğünü	EVENT	223
+Event	T9	utandırıldığını	EVENT	240
+Event	T10	dışlayanların	EVENT	337
+Event	T11	diyen	EVENT	311
+Event	T12	stres bozukluğu	EVENT	448
+Event	T13	saldırgan	EVENT	641
+Relation	T10	T9	SuperSub	true	dışlayanların	utandırıldığını
+Relation	T9	T10	SubSuper	true	utandırıldığını	dışlayanların
+Relation	T10	T8	SuperSub	true	dışlayanların	düşürüldüğünü
+Relation	T8	T10	SubSuper	true	düşürüldüğünü	dışlayanların
+Relation	T10	T11	SuperSub	true	dışlayanların	diyen
+Relation	T11	T10	SubSuper	true	diyen	dışlayanların
+Relation	T0	T3	NoRel	true	görür	sonuçlanır
+Relation	T0	T8	NoRel	true	görür	düşürüldüğünü
+Relation	T0	T9	NoRel	true	görür	utandırıldığını
+Relation	T1	T0	NoRel	true	deneyimleri	görür
+Relation	T1	T11	NoRel	true	deneyimleri	diyen
+Relation	T1	T12	NoRel	true	deneyimleri	stres bozukluğu
+Relation	T11	T5	NoRel	true	diyen	toplanır
+Relation	T12	T7	NoRel	true	stres bozukluğu	dönen
+Relation	T2	T5	NoRel	true	travma	toplanır
+Relation	T4	T1	NoRel	true	düşünme	deneyimleri
+Relation	T4	T13	NoRel	true	düşünme	saldırgan
+Relation	T4	T2	NoRel	true	düşünme	travma
+Relation	T7	T12	NoRel	true	dönen	stres bozukluğu
+Relation	T7	T4	NoRel	true	dönen	düşünme
+Relation	T7	T8	NoRel	true	dönen	düşürüldüğünü
+Relation	T9	T11	NoRel	true	utandırıldığını	diyen
+Relation	T9	T13	NoRel	true	utandırıldığını	saldırgan

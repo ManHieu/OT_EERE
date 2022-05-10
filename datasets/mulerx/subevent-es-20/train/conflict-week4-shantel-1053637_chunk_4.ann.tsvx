@@ -1,0 +1,20 @@
+Text	- Se deben revisar que las pestañas de los empaques tetra pack no tengan residuos de pegamento	- Las etiquetas deben estar en buen estado , al frotarse no deben soltar tinta .	- La estampilla de la tapa , debe tener el mismo nombre del licor de la etiqueta .	- Se debe revisar el contenido a contraluz : no debe tener objetos extraños , ni partículas en suspensión .	El consumo de este puede ocasionar síntomas como : dolor de cabeza , mareo , náuseas , vómitos , daño grave en nervio óptico ( ceguera o pérdida de la visión ) , daños al hígado , cirrosis e incluso puede llevar a la muerte prematura .
+Event	T0	revisar	EVENT	11
+Event	T1	soltar	EVENT	161
+Event	T2	revisar	EVENT	269
+Event	T3	consumo	EVENT	370
+Event	T4	síntomas	EVENT	402
+Event	T5	dolor	EVENT	418
+Event	T6	mareo	EVENT	436
+Event	T7	náuseas	EVENT	444
+Event	T8	ceguera	EVENT	494
+Event	T9	pérdida	EVENT	504
+Event	T10	daños	EVENT	529
+Event	T11	cirrosis	EVENT	547
+Event	T12	muerte	EVENT	584
+Relation	T1	T5	NoRel	true	soltar	dolor
+Relation	T10	T12	NoRel	true	daños	muerte
+Relation	T2	T11	NoRel	true	revisar	cirrosis
+Relation	T7	T0	NoRel	true	náuseas	revisar
+Relation	T8	T12	NoRel	true	ceguera	muerte
+Relation	T9	T7	NoRel	true	pérdida	náuseas

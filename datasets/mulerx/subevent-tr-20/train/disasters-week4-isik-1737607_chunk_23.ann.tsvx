@@ -1,0 +1,15 @@
+Text	Patlamaaltı ay sonra durmuştu .	Lav akışı 21 Nisan 40 km² kaplı olan 13 ay sonra ve 100 m maksimum derinliği ile durduruldu .	Üretilen lav yatakları esas lav türü with Pāhoehoe ve lav bir budella ( lav tüpleri ) alanlar vardı .	Nisan ve Mayıs ayında toprağa çatlaklardan yayılan 1948 CO2 Hekla 15 koyun ve bâzı vahşi hayvanlar ve kuşlar ölüm çukurların da toplandı .	küçükresim | sağ | Hekla with Þjórsá in the foreground Hekla 1970 patlama 5 Mayıs 1970 tarihinde 21: 23'te başladı ve 5 Temmuz yılına kadar sürdü .
+Event	T0	Patlamaaltı	EVENT	0
+Event	T1	akışı	EVENT	36
+Event	T2	durduruldu	EVENT	113
+Event	T3	yayılan	EVENT	271
+Event	T4	toplandı	EVENT	356
+Event	T5	patlama	EVENT	433
+Event	T6	başladı	EVENT	474
+Event	T7	sürdü	EVENT	507
+Event	T8	durmuştu	EVENT	21
+Relation	T0	T1	NoRel	true	Patlamaaltı	akışı
+Relation	T2	T0	NoRel	true	durduruldu	Patlamaaltı
+Relation	T3	T7	NoRel	true	yayılan	sürdü
+Relation	T8	T0	NoRel	true	durmuştu	Patlamaaltı
+Relation	T8	T5	NoRel	true	durmuştu	patlama

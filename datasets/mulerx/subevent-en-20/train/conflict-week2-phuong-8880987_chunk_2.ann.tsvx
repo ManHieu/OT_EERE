@@ -1,0 +1,49 @@
+Text	It also expanded the committee to include certain government officials including Cabinet secretaries and former Vice President Salvador Laurel .	- Revive love of country ; - Restore appreciation for the true Filipino identity - Relearn the values of the country 's historic struggle for independence and use these for the development of the future - Generate greater and active participation in centennial commemorative celebration to accelerate nation - building	A commemorative banknote was issued as part of the centennial celebrations in 1998 .	The banknote is the highest ever currency denomination issued by the Bangko Sentral ng Pilipinas , the Philippines ' central bank .	In December 1998 , another Centennial commemorative banknote were issued by the BSP , the 2,000 - Piso Banknote and they issued for the limited amount of 300,000 pieces and they also issued the smaller version in 2001 , but it was halted for the circulation as legal tender after the ouster of President Joseph Estrada by Second EDSA Revolution .
+Event	T0	expanded	EVENT	8
+Event	T1	Revive	EVENT	147
+Event	T11	issued	EVENT	493
+Event	T12	celebrations	EVENT	526
+Event	T13	issued	EVENT	604
+Event	T14	issued	EVENT	747
+Event	T15	issued	EVENT	802
+Event	T16	issued	EVENT	864
+Event	T17	halted	EVENT	912
+Event	T18	circulation	EVENT	927
+Event	T19	tender	EVENT	948
+Event	T2	Restore	EVENT	174
+Event	T20	ouster	EVENT	965
+Event	T22	include	EVENT	34
+Event	T23	Relearn	EVENT	228
+Event	T3	struggle	EVENT	274
+Event	T4	use	EVENT	304
+Event	T5	development	EVENT	322
+Event	T6	Generate	EVENT	350
+Event	T7	participation	EVENT	378
+Event	T8	celebration	EVENT	420
+Event	T9	accelerate	EVENT	435
+Relation	T0	T15	NoRel	true	expanded	issued
+Relation	T0	T4	NoRel	true	expanded	use
+Relation	T1	T18	NoRel	true	Revive	circulation
+Relation	T13	T0	NoRel	true	issued	expanded
+Relation	T13	T9	NoRel	true	issued	accelerate
+Relation	T14	T11	NoRel	true	issued	issued
+Relation	T15	T0	NoRel	true	issued	expanded
+Relation	T15	T2	NoRel	true	issued	Restore
+Relation	T15	T8	NoRel	true	issued	celebration
+Relation	T17	T20	NoRel	true	halted	ouster
+Relation	T17	T22	NoRel	true	halted	include
+Relation	T18	T1	NoRel	true	circulation	Revive
+Relation	T19	T12	NoRel	true	tender	celebrations
+Relation	T19	T23	NoRel	true	tender	Relearn
+Relation	T2	T14	NoRel	true	Restore	issued
+Relation	T20	T23	NoRel	true	ouster	Relearn
+Relation	T22	T3	NoRel	true	include	struggle
+Relation	T23	T4	NoRel	true	Relearn	use
+Relation	T3	T14	NoRel	true	struggle	issued
+Relation	T4	T17	NoRel	true	use	halted
+Relation	T6	T22	NoRel	true	Generate	include
+Relation	T7	T1	NoRel	true	participation	Revive
+Relation	T7	T6	NoRel	true	participation	Generate
+Relation	T8	T20	NoRel	true	celebration	ouster
+Relation	T8	T4	NoRel	true	celebration	use
+Relation	T8	T9	NoRel	true	celebration	accelerate

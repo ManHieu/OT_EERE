@@ -1,0 +1,7 @@
+Text	Haiti'de hükûmet acil durum barınakları hazırlanmasını emretti .	Ülke , Hispanyola adasının batı yarısında ikmet etmekte ve bu bölgeler de dağ yüzeylerinin büyü öçüde ağaçtan yoksun olması nedeniyle taşkınlardan ve toprak kaymalarından etkilenebilir durumda .	Hükûmet kırmızı alarm yayınladı .	Ve yaşayanlara tedbir almalarını önerdi fakat pek az Haiti'li buna özen gösterdi .	Havanın iyi olması , bir hurricane'nin yaklaşmakta olduğu şüphesine izin veriyor .
+Event	T0	emretti	EVENT	55
+Event	T1	yayınladı	EVENT	282
+Event	T2	veriyor	EVENT	450
+Event	T3	önerdi	EVENT	327
+Event	T4	gösterdi	EVENT	366
+Relation	T1	T2	NoRel	true	yayınladı	veriyor

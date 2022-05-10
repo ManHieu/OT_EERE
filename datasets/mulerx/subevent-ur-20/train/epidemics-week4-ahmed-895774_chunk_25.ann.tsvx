@@ -1,0 +1,15 @@
+Text	22 مارچ کو حکومت ہند نے 75 ضلعوں 31 مارچ تک ملک بھر میں تالہ بندی کا فیصلہ کیا ہے ۔	یہ تمام وہ ضلعے ہیں جہاں کورونا کے مریض پائے گیے ہیں ۔	23 مارچ کو دہلی میں 31 مارچ تک تالہ بندی کردی گئی ہے ۔	صرف ضروری اشیا اور خدمات مہیا رہیں گی ۔	2021ء کے تیسرے مہینے مارچ سے کورونا کی دوسری لہر کا آغاز ہوا جس کی شدت پہلی دو لہروں سے بھی تیز رہی ۔
+Event	T0	بندی	EVENT	61
+Event	T2	پائے	EVENT	124
+Event	T4	لہر	EVENT	279
+Event	T5	فیصلہ	EVENT	69
+Event	T1	بندی	EVENT	175
+Event	T3	مہیا	EVENT	219
+Event	T6	آغاز	EVENT	286
+Event	T7	لہروں	EVENT	313
+Event	T8	تیز	EVENT	326
+Relation	T0	T5	SuperSub	true	بندی	فیصلہ
+Relation	T5	T0	SubSuper	true	فیصلہ	بندی
+Relation	T4	T3	NoRel	true	لہر	مہیا
+Relation	T5	T1	NoRel	true	فیصلہ	بندی
+Relation	T6	T1	NoRel	true	آغاز	بندی

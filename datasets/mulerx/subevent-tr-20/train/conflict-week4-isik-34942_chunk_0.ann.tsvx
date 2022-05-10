@@ -1,0 +1,14 @@
+Text	küçükresim | 300px | Üstte : Kiliselerin tahrip edilmesi .	Ortada : Yahudilerin başlarının kesilmesi .	Altta : Şövalyelerin Hristiyan bölgelerini yağmalaması HAÇLI SEFERLERI ya da HAÇLI AKINLARI , 1096 - 1272 yılları arasında , Avrupalı Katolik Hristiyanların , Papa'nın isteği ve çeşitli vaatleri üzerine , genellikle Müslümanların elindeki Orta Doğu toprakları ( Kutsal Topraklar kabul edilir ) üzerinde askeri ve siyasi kontrol kurmak için düzenledikleri akınlar bütünüdür .	Haçlı Seferleri’nin fikir babası aslında İspanya ve Portekiz’den Müslümanların atılması için başlatılan Reconquista ( Yeniden Fetih ) hareketidir .	Müslümanlar İspanya ve Sicilya’da hakimiyet kurmuşlardı .
+Event	T0	edilmesi	EVENT	48
+Event	T1	kesilmesi	EVENT	91
+Event	T2	yağmalaması	EVENT	146
+Event	T4	isteği	EVENT	271
+Event	T5	atılması	EVENT	557
+Event	T6	hareketidir	EVENT	612
+Event	T7	HAÇLI SEFERLERI	EVENT	158
+Event	T3	HAÇLI AKINLARI	EVENT	180
+Event	T8	akınlar	EVENT	458
+Event	T9	Haçlı Seferleri’nin	EVENT	478
+Event	T10	kurmuşlardı	EVENT	670
+Relation	T1	T2	NoRel	true	kesilmesi	yağmalaması
+Relation	T9	T3	NoRel	true	Haçlı Seferleri’nin	HAÇLI AKINLARI

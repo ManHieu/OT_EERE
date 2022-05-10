@@ -1,0 +1,21 @@
+Text	Myndighederne beordrede , at der skulle brænde bål nat og dag , i det håb at luften blev renset .	Stoffer , der afgav stærke lugte , som peber , humle og røgelse blev også afbrændt for at forhindre infektioner .	Indbyggerne i London , også små børn , blev kraftigt opfordret til at ryge tobak .	Pesten var koncentreret i London , men også andre dele af landet var berørt .	Det måske berømteste eksempel var landsbyen Eyam i Derbyshire .
+Event	T0	brænde	EVENT	40
+Event	T1	renset	EVENT	89
+Event	T2	afgav	EVENT	112
+Event	T3	lugte	EVENT	125
+Event	T4	afbrændt	EVENT	172
+Event	T5	infektioner	EVENT	198
+Event	T6	Pesten	EVENT	295
+Event	T7	koncentreret	EVENT	306
+Event	T8	berørt	EVENT	364
+Event	T9	beordrede	EVENT	14
+Event	T10	opfordret	EVENT	265
+Event	T11	berømteste	EVENT	383
+Event	T12	forhindre	EVENT	188
+Event	T13	ryge	EVENT	282
+Relation	T0	T8	NoRel	true	brænde	berørt
+Relation	T1	T9	NoRel	true	renset	beordrede
+Relation	T3	T1	NoRel	true	lugte	renset
+Relation	T5	T4	NoRel	true	infektioner	afbrændt
+Relation	T5	T6	NoRel	true	infektioner	Pesten
+Relation	T9	T4	NoRel	true	beordrede	afbrændt

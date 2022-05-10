@@ -1,0 +1,13 @@
+Text	TIPPECANOE MUHAREBESI , 7 Kasım 1811 tarihinde Indiana Toprakları ( : en : Indiana Territory ) Valisi William Henry Harrison kumandasındaki Birleşik Devletler kuvvetleri ve Shawnee kabilesinin lideri Tecumseh ile bağlantılı Kızılderili savaşçılar arasında yapılan bir muharebedir .	Tecumseh ve kardeşi Tenskwatawa ( " Peygamber " ) , ABD'nin yerli topraklarına yayılmasına karşı çıkan çeşitli Kızılderili kabilelerden oluşan bir konfederasyonun liderleriydiler .	Gerilim ve şiddet arttıkça , Vali Harrison konfederasyonun Prophetstown'daki merkezini dağıtmak için yaklaşık 1.000 kişilik bir orduyla Tippecanoe ve Wabash nehirlerinin birleştiği noktaya yürüdü .	Harrison'un ordusu geldiğinde , henüz Birleşik Devletler'e güçle karşı gelecek durumda olmayan Tecumseh müttefik toplamak için uzaktaydı .	Ruhani bir lider olan ama asker olmayan Tenskwatawa baştaydı .
+Event	T2	muharebedir	EVENT	268
+Event	T4	arttıkça	EVENT	481
+Event	T5	dağıtmak	EVENT	550
+Event	T6	yürüdü	EVENT	652
+Event	T8	TIPPECANOE MUHAREBESI	EVENT	0
+Event	T9	yayılmasına	EVENT	361
+Event	T10	çıkan	EVENT	379
+Event	T1	geldiğinde	EVENT	680
+Relation	T1	T8	NoRel	true	geldiğinde	TIPPECANOE MUHAREBESI
+Relation	T10	T2	NoRel	true	çıkan	muharebedir
+Relation	T4	T9	NoRel	true	arttıkça	yayılmasına
+Relation	T9	T10	NoRel	true	yayılmasına	çıkan

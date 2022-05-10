@@ -1,0 +1,29 @@
+Text	La Junta Nacional de Seguridad en el Transporte ( NTSB ) anunció originalmente que enviaría a siete investigadores inmediatamente después del abandono , pero lo actualizó para decir que estaban desplegando un equipo relativamente grande de diez investigadores a Oahu .	Dos investigadores llegaron más tarde ese día y comenzaron la coordinación en el lugar , y el resto llegó al día siguiente .	Las especialidades del equipo incluyeron control de tráfico aéreo , sistemas , registros de mantenimiento , desempeño humano , operaciones , centrales eléctricas y recuperación de restos .	[ Sección central del fuselaje y alas en el lecho marino una semana después del accidente .	] La NTSB también anunció que los fabricantes de la estructura del avión y los motores , Boeing y Pratt y Whitney respectivamente , estarían entre las partes de la investigación .
+Event	T0	anunció	EVENT	57
+Event	T1	enviaría	EVENT	83
+Event	T2	abandono	EVENT	142
+Event	T3	actualizó	EVENT	161
+Event	T4	decir	EVENT	176
+Event	T5	desplegando	EVENT	194
+Event	T7	coordinación	EVENT	331
+Event	T8	llegó	EVENT	369
+Event	T9	control	EVENT	435
+Event	T10	operaciones	EVENT	521
+Event	T11	recuperación	EVENT	558
+Event	T12	fuselaje	EVENT	605
+Event	T13	accidente	EVENT	663
+Event	T14	anunció	EVENT	693
+Event	T15	investigación	EVENT	839
+Relation	T2	T0	SuperSub	true	abandono	anunció
+Relation	T0	T2	SubSuper	true	anunció	abandono
+Relation	T1	T15	NoRel	true	enviaría	investigación
+Relation	T10	T1	NoRel	true	operaciones	enviaría
+Relation	T10	T13	NoRel	true	operaciones	accidente
+Relation	T12	T0	NoRel	true	fuselaje	anunció
+Relation	T12	T1	NoRel	true	fuselaje	enviaría
+Relation	T12	T10	NoRel	true	fuselaje	operaciones
+Relation	T12	T11	NoRel	true	fuselaje	recuperación
+Relation	T13	T15	NoRel	true	accidente	investigación
+Relation	T2	T8	NoRel	true	abandono	llegó
+Relation	T3	T0	NoRel	true	actualizó	anunció
+Relation	T9	T1	NoRel	true	control	enviaría

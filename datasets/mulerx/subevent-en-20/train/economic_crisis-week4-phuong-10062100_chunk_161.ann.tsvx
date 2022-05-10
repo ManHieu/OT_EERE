@@ -1,0 +1,59 @@
+Text	For a summary of U.S. government financial commitments and investments related to the crisis , see CNN – Bailout Scorecard .	[ People queuing outside a Northern Rock bank branch in Birmingham , United Kingdom , on September 15 , 2007 , to withdraw their savings because of the subprime crisis . ]	Several major financial institutions either failed , were bailed out by governments , or merged ( voluntarily or otherwise ) during the crisis .	While the specific circumstances varied , in general the decline in the value of mortgage - backed securities held by these companies resulted in either their insolvency , the equivalent of bank runs as investors pulled funds from them , or inability to secure new funding in the credit markets .	These firms had typically borrowed and invested large sums of money relative to their cash or equity capital , meaning they were highly leveraged and vulnerable to unanticipated credit market disruptions .
+Event	T0	crisis	EVENT	86
+Event	T1	queuing	EVENT	134
+Event	T2	withdraw	EVENT	239
+Event	T3	crisis	EVENT	286
+Event	T4	failed	EVENT	341
+Event	T5	merged	EVENT	386
+Event	T6	crisis	EVENT	433
+Event	T7	varied	EVENT	475
+Event	T8	decline	EVENT	499
+Event	T9	held	EVENT	552
+Event	T10	resulted	EVENT	576
+Event	T11	insolvency	EVENT	601
+Event	T12	equivalent	EVENT	618
+Event	T13	runs	EVENT	637
+Event	T14	pulled	EVENT	655
+Event	T15	secure	EVENT	696
+Event	T16	borrowed	EVENT	765
+Event	T17	invested	EVENT	778
+Event	T18	leveraged	EVENT	875
+Event	T19	disruptions	EVENT	931
+Event	T20	bailed out	EVENT	355
+Event	T21	mortgage - backed securities	EVENT	523
+Event	T22	inability	EVENT	683
+Event	T23	vulnerable	EVENT	889
+Relation	T18	T23	SuperSub	true	leveraged	vulnerable
+Relation	T23	T18	SubSuper	true	vulnerable	leveraged
+Relation	T1	T16	NoRel	true	queuing	borrowed
+Relation	T11	T22	NoRel	true	insolvency	inability
+Relation	T11	T23	NoRel	true	insolvency	vulnerable
+Relation	T12	T0	NoRel	true	equivalent	crisis
+Relation	T12	T18	NoRel	true	equivalent	leveraged
+Relation	T12	T7	NoRel	true	equivalent	varied
+Relation	T14	T20	NoRel	true	pulled	bailed out
+Relation	T15	T23	NoRel	true	secure	vulnerable
+Relation	T15	T8	NoRel	true	secure	decline
+Relation	T16	T10	NoRel	true	borrowed	resulted
+Relation	T16	T21	NoRel	true	borrowed	mortgage - backed securities
+Relation	T18	T0	NoRel	true	leveraged	crisis
+Relation	T19	T13	NoRel	true	disruptions	runs
+Relation	T19	T15	NoRel	true	disruptions	secure
+Relation	T19	T5	NoRel	true	disruptions	merged
+Relation	T2	T19	NoRel	true	withdraw	disruptions
+Relation	T20	T0	NoRel	true	bailed out	crisis
+Relation	T20	T19	NoRel	true	bailed out	disruptions
+Relation	T21	T19	NoRel	true	mortgage - backed securities	disruptions
+Relation	T21	T8	NoRel	true	mortgage - backed securities	decline
+Relation	T22	T1	NoRel	true	inability	queuing
+Relation	T4	T10	NoRel	true	failed	resulted
+Relation	T5	T22	NoRel	true	merged	inability
+Relation	T5	T9	NoRel	true	merged	held
+Relation	T6	T19	NoRel	true	crisis	disruptions
+Relation	T6	T2	NoRel	true	crisis	withdraw
+Relation	T6	T5	NoRel	true	crisis	merged
+Relation	T7	T11	NoRel	true	varied	insolvency
+Relation	T7	T12	NoRel	true	varied	equivalent
+Relation	T8	T1	NoRel	true	decline	queuing
+Relation	T8	T3	NoRel	true	decline	crisis
+Relation	T9	T7	NoRel	true	held	varied

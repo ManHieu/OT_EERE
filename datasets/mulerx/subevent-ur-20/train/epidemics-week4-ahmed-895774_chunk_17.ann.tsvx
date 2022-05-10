@@ -1,0 +1,13 @@
+Text	11 مارچ جے پور کا 85 سالہ شخص دبئی سے لوٹا تھا جو مثبت پایا گیا ممبئی میں دو مریض سامنے آئے ۔	وزیر اعلیٰ ادھو_ٹھاکرے نے ریاست میں 8 نئے معاملات کا انکشاف کیا جن میں 6 پونے سے اور 2 ممبئی سے تھے ۔	اس کے بعد ناگپور کا ایک شخص امریکا سے لوٹا تھا جو مثبت پایا گیا ۔	-	12 مارچ بھارت میں COVID-19 کی وجہ سے پہلی موت ایک 76 سالہ شخص کی گلبرگہ ، کرناٹک میں ہوئی ۔
+Event	T0	لوٹا	EVENT	38
+Event	T2	معاملات	EVENT	136
+Event	T3	لوٹا	EVENT	234
+Event	T4	موت	EVENT	306
+Event	T6	مثبت	EVENT	50
+Event	T7	سامنے	EVENT	82
+Event	T1	انکشاف	EVENT	147
+Event	T8	مثبت	EVENT	246
+Relation	T0	T4	NoRel	true	لوٹا	موت
+Relation	T4	T3	NoRel	true	موت	لوٹا
+Relation	T6	T7	NoRel	true	مثبت	سامنے
+Relation	T8	T1	NoRel	true	مثبت	انکشاف

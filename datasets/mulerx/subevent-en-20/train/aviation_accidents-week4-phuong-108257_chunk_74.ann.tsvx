@@ -1,0 +1,45 @@
+Text	In the Cold War context of Operation RYAN , the Strategic Defence Initiative , Pershing II missile deployment in Europe , and the upcoming Exercise Able Archer , the Soviet Government perceived the incident with the South Korean airliner to be a portent of war .	The Soviet hierarchy took the official line that KAL Flight 007 was on a spy mission , as it " flew deep into Soviet territory for several hundred kilometres [ miles ] , without responding to signals and disobeying the orders of interceptor fighter planes " .	They claimed its purpose was to probe the air defences of highly sensitive Soviet military sites in the Kamchatka Peninsula and Sakhalin Island .	The Soviet government expressed regret over the loss of life , but offered no apology and did not respond to demands for compensation .	Instead , the Soviet Union blamed the CIA for this " criminal , provocative act " .
+Event	T0	Operation	EVENT	27
+Event	T1	deployment	EVENT	99
+Event	T2	Exercise	EVENT	139
+Event	T3	perceived	EVENT	184
+Event	T4	incident	EVENT	198
+Event	T5	portent	EVENT	246
+Event	T6	war	EVENT	257
+Event	T7	took	EVENT	284
+Event	T8	mission	EVENT	340
+Event	T10	signals	EVENT	455
+Event	T11	disobeying	EVENT	467
+Event	T12	orders	EVENT	482
+Event	T13	claimed	EVENT	528
+Event	T14	probe	EVENT	555
+Event	T15	defences	EVENT	569
+Event	T16	regret	EVENT	701
+Event	T17	loss	EVENT	717
+Event	T18	offered	EVENT	736
+Event	T19	demands	EVENT	778
+Event	T20	compensation	EVENT	790
+Event	T21	blamed	EVENT	832
+Event	T22	Cold War	EVENT	7
+Event	T9	flew deep into	EVENT	358
+Relation	T22	T3	SuperSub	true	Cold War	perceived
+Relation	T3	T22	SubSuper	true	perceived	Cold War
+Relation	T0	T1	NoRel	true	Operation	deployment
+Relation	T11	T20	NoRel	true	disobeying	compensation
+Relation	T12	T5	NoRel	true	orders	portent
+Relation	T12	T7	NoRel	true	orders	took
+Relation	T14	T0	NoRel	true	probe	Operation
+Relation	T14	T7	NoRel	true	probe	took
+Relation	T15	T9	NoRel	true	defences	flew deep into
+Relation	T16	T1	NoRel	true	regret	deployment
+Relation	T16	T15	NoRel	true	regret	defences
+Relation	T17	T0	NoRel	true	loss	Operation
+Relation	T18	T11	NoRel	true	offered	disobeying
+Relation	T18	T15	NoRel	true	offered	defences
+Relation	T20	T17	NoRel	true	compensation	loss
+Relation	T20	T22	NoRel	true	compensation	Cold War
+Relation	T22	T21	NoRel	true	Cold War	blamed
+Relation	T6	T0	NoRel	true	war	Operation
+Relation	T6	T10	NoRel	true	war	signals
+Relation	T6	T17	NoRel	true	war	loss
+Relation	T9	T8	NoRel	true	flew deep into	mission

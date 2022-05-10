@@ -1,0 +1,28 @@
+Text	El participante ingresó a la competencia para sustituir a un guerrero debido a múltiples contagios de COVID-19 .	En la octava semana , se anunció que Agustín Fernández , Asaf Torres y Nicola Porcella incumplieron con los protocolos de cuarentena , por lo que fueron suspendidos del programa , siendo temporalmente sustituidos por los refuerzos Aldo De Nigris , Jorge Losa y Miguel Montaño ( sustituyendo en ese orden a Agustín , Asaf y Nicola ) .	Al inicio de la undécima semana Jorge Losa estuvo sustituyendo a Jesús " Chuy " Almada debido a compromisos personales .	Jorge Losa , Diego Montu y Paola Peña fueron repechados por sus respectivos equipos al final de la undécima semana , regresando formalmente a la competencia en la duodécima semana .	El participante ingresó a la competencia para sustituir a un guerrero debido a múltiples contagios de COVID-19 , sin embargo , más adelante fue nombrado competidor a tiempo completo .
+Event	T0	ingresó	EVENT	16
+Event	T1	competencia	EVENT	29
+Event	T10	repechados	EVENT	613
+Event	T11	regresando	EVENT	685
+Event	T12	competencia	EVENT	713
+Event	T13	ingresó	EVENT	766
+Event	T14	competencia	EVENT	779
+Event	T15	sustituir	EVENT	796
+Event	T16	contagios	EVENT	839
+Event	T2	sustituir	EVENT	46
+Event	T3	contagios	EVENT	89
+Event	T4	anunció	EVENT	138
+Event	T5	incumplieron	EVENT	200
+Event	T6	suspendidos	EVENT	266
+Event	T7	sustituidos	EVENT	314
+Event	T8	sustituyendo	EVENT	391
+Event	T9	sustituyendo	EVENT	497
+Relation	T10	T15	NoRel	true	repechados	sustituir
+Relation	T11	T0	NoRel	true	regresando	ingresó
+Relation	T11	T8	NoRel	true	regresando	sustituyendo
+Relation	T15	T0	NoRel	true	sustituir	ingresó
+Relation	T15	T8	NoRel	true	sustituir	sustituyendo
+Relation	T16	T10	NoRel	true	contagios	repechados
+Relation	T4	T6	NoRel	true	anunció	suspendidos
+Relation	T5	T4	NoRel	true	incumplieron	anunció
+Relation	T7	T9	NoRel	true	sustituidos	sustituyendo
+Relation	T8	T16	NoRel	true	sustituyendo	contagios

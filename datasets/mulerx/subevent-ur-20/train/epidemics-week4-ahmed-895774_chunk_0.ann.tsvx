@@ -1,0 +1,15 @@
+Text	| total_ili_=_| website =_}} بھارت میں کورونا وائرس کی وبا ، 2019ء - 2020ء کا پہلا مریض 30 جنوری 2020ء کو سامنے آیا ۔	یہ بیماری چین سے ساری دنیا میں پھیلی ہے ۔	بھارت میں وزارت صحت و خاندانی بہبود ، حکومت ہند اس کی مکمل نگرانی کر رہی ہے اور وقتا فوقتا ہدایات جاری کر رہی ہے ۔	وزارت صحت کی ویب سائٹ کے مطابق 26 جون 2020ء تک کل 490,401 لوگ کورونا سے متاثر پائے گئے ہیں اور 15,301 کی موت ہو چکی ہے ۔	285,636 لوگ صحتیاب ہو چکے ہیں
+Event	T1	بیماری	EVENT	121
+Event	T2	پھیلی	EVENT	149
+Event	T3	نگرانی	EVENT	219
+Event	T4	جاری	EVENT	258
+Event	T6	وبا	EVENT	55
+Event	T7	سامنے	EVENT	106
+Event	T8	متاثر	EVENT	347
+Event	T5	صحتیاب	EVENT	408
+Relation	T6	T7	SuperSub	true	وبا	سامنے
+Relation	T7	T6	SubSuper	true	سامنے	وبا
+Relation	T3	T4	SuperSub	true	نگرانی	جاری
+Relation	T4	T3	SubSuper	true	جاری	نگرانی
+Relation	T5	T2	NoRel	true	صحتیاب	پھیلی
+Relation	T8	T1	NoRel	true	متاثر	بیماری

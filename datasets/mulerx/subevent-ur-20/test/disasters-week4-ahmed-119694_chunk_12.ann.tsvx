@@ -1,0 +1,32 @@
+Text	مشہور مورخ ابن خلدون کے خیال کے مطابق یہ طوفان عراق کے علاقوں میں آیا تھا اور اس کا پانی صرف عقب حلوان تک پہنچا تھا ۔	آج بھی لوگ کوشش کر رہے ہیں کہ کسی طرح سے کوہ ارارات پر چڑھ کر کشتی نوح کا پتا چلایا جائے ۔	1829ء میں جرمنی کے پروفیسر پٹ نے سب سے پہلے آراراط پر چڑھ کر دیکھا تو چوٹی کو گول چبوترے کی مانند پایا جو ٹھوس داگی برف سے دبا ہوا تھا ۔	ایک ہوا باز کا کہنا ہے کہ اسے برف کے نیچے بہت دور ایک سیاہ دھبہ دکھائی دیا ہے اور شاید اس میں ” آرک " ہے ( مزید دیکھیں ارارات )	کشتی نوح زمرہ : ابراہیمی علم الاساطیر زمرہ : کتاب پیدائش زمرہ : طوفان کی اساطیر زمرہ : طوفان نوح زمرہ : کامنز زمرہ جس کا ربط ویکی ڈیٹا پر ہے زمرہ : چھوٹے پیغام خانوں کا استعمال کرنے والے مضامین
+Event	T0	خیال	EVENT	24
+Event	T1	طوفان	EVENT	41
+Event	T2	آیا	EVENT	66
+Event	T3	پہنچا	EVENT	106
+Event	T4	چڑھ	EVENT	173
+Event	T6	چڑھ	EVENT	263
+Event	T7	دیکھا	EVENT	270
+Event	T8	پایا	EVENT	307
+Event	T9	کہنا	EVENT	361
+Event	T10	دیکھیں	EVENT	458
+Event	T11	طوفان	EVENT	538
+Event	T12	کوشش	EVENT	129
+Event	T13	پتا	EVENT	192
+Event	T5	دبا	EVENT	332
+Event	T14	دھبہ	EVENT	405
+Event	T15	دکھائی	EVENT	410
+Event	T16	طوفان	EVENT	561
+Event	T17	ربط	EVENT	595
+Event	T18	استعمال	EVENT	643
+Relation	T4	T12	SuperSub	true	چڑھ	کوشش
+Relation	T12	T4	SubSuper	true	کوشش	چڑھ
+Relation	T0	T1	NoRel	true	خیال	طوفان
+Relation	T0	T18	NoRel	true	خیال	استعمال
+Relation	T11	T2	NoRel	true	طوفان	آیا
+Relation	T11	T9	NoRel	true	طوفان	کہنا
+Relation	T13	T18	NoRel	true	پتا	استعمال
+Relation	T14	T1	NoRel	true	دھبہ	طوفان
+Relation	T14	T4	NoRel	true	دھبہ	چڑھ
+Relation	T14	T6	NoRel	true	دھبہ	چڑھ
+Relation	T3	T8	NoRel	true	پہنچا	پایا
+Relation	T9	T5	NoRel	true	کہنا	دبا

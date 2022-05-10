@@ -1,0 +1,27 @@
+Text	Disse kunne være sorte , men det vides ikke med sikkerhed .	Da SJS fik tyske lokomotiver fra ME , overtoges gradvist den tyske bemaling af alle SJS lokomotiver .	Det har tidligere været antaget , at hjulstjerner og nav var rødmalede , men i anskaffelsesspecifikationerne for 1864 af lokomotiver står der ganske tydeligt :	" _ Locomotiverne og Tenderne skulle males og lakeres paa det Omhyggeligste og Varigste .	Kjedlen , Domen , Røgkassen ( Røgkassen er den oprindelige betegnelse for røgkammer ved SJS og DSB-S ) , Veirhuset o.s.v. ved Locomotiverne og Tenderne males sort og forsynes paa tilsvarende steder med smalde 1/8 " à 1/4 " brede carminrøde streger , Locomotivernes Længderammer saavelsom alle Hjulene males brune _" .
+Event	T0	fik	EVENT	67
+Event	T1	overtoges	EVENT	98
+Event	T2	bemaling	EVENT	127
+Event	T3	antaget	EVENT	186
+Event	T4	lakeres	EVENT	368
+Event	T5	males	EVENT	564
+Event	T6	forsynes	EVENT	578
+Event	T7	males	EVENT	713
+Event	T8	kunne	EVENT	6
+Event	T9	rødmalede	EVENT	223
+Event	T10	anskaffelsesspecifikationerne	EVENT	241
+Event	T11	males	EVENT	359
+Event	T12	oprindelige	EVENT	459
+Event	T13	carminrøde	EVENT	641
+Relation	T1	T5	NoRel	true	overtoges	males
+Relation	T10	T6	NoRel	true	anskaffelsesspecifikationerne	forsynes
+Relation	T10	T9	NoRel	true	anskaffelsesspecifikationerne	rødmalede
+Relation	T11	T2	NoRel	true	males	bemaling
+Relation	T12	T5	NoRel	true	oprindelige	males
+Relation	T13	T9	NoRel	true	carminrøde	rødmalede
+Relation	T2	T1	NoRel	true	bemaling	overtoges
+Relation	T2	T4	NoRel	true	bemaling	lakeres
+Relation	T3	T0	NoRel	true	antaget	fik
+Relation	T5	T10	NoRel	true	males	anskaffelsesspecifikationerne
+Relation	T6	T1	NoRel	true	forsynes	overtoges
+Relation	T7	T12	NoRel	true	males	oprindelige

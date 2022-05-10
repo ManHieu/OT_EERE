@@ -1,0 +1,38 @@
+Text	Selvom langt de fleste har en fælles opfattelse af hændelserne den 11. september 2001 er der fremkommet mange konspirationsteorier .	De kredser normalt omkring den påstand , at den amerikanske regering enten kendte til , eller selv direkte stod bag , angrebene .	En del hæfter sig i den forbindelse ved forløbet og omfanget af World Trade_Centers sammenstyrtning .	Fælles for mange af teorierne gælder imidlertid , at de strider mod fysikkens love , tekniske fakta og /eller almindelig logik og generelt ikke anerkendes af den almindelige fagkundskab .	Mange af teorierne tager udgangspunkt i , at den amerikanske regering enten kendte til , eller direkte stod bag , angrebene .
+Event	T1	kredser	EVENT	136
+Event	T2	angrebene	EVENT	251
+Event	T3	hæfter	EVENT	270
+Event	T4	forløbet	EVENT	303
+Event	T5	sammenstyrtning	EVENT	347
+Event	T6	strider	EVENT	421
+Event	T8	angrebene	EVENT	667
+Event	T9	hændelserne	EVENT	51
+Event	T10	kendte	EVENT	208
+Event	T11	kendte	EVENT	629
+Event	T12	stod bag	EVENT	656
+Event	T13	stod bag	EVENT	240
+Event	T14	konspirationsteorier	EVENT	110
+Event	T7	teorierne	EVENT	562
+Relation	T14	T10	SuperSub	true	konspirationsteorier	kendte
+Relation	T10	T14	SubSuper	true	kendte	konspirationsteorier
+Relation	T14	T13	SuperSub	true	konspirationsteorier	stod bag
+Relation	T13	T14	SubSuper	true	stod bag	konspirationsteorier
+Relation	T14	T4	SuperSub	true	konspirationsteorier	forløbet
+Relation	T4	T14	SubSuper	true	forløbet	konspirationsteorier
+Relation	T14	T5	SuperSub	true	konspirationsteorier	sammenstyrtning
+Relation	T5	T14	SubSuper	true	sammenstyrtning	konspirationsteorier
+Relation	T7	T11	SuperSub	true	teorierne	kendte
+Relation	T11	T7	SubSuper	true	kendte	teorierne
+Relation	T7	T12	SuperSub	true	teorierne	stod bag
+Relation	T12	T7	SubSuper	true	stod bag	teorierne
+Relation	T1	T13	NoRel	true	kredser	stod bag
+Relation	T10	T8	NoRel	true	kendte	angrebene
+Relation	T11	T12	NoRel	true	kendte	stod bag
+Relation	T11	T3	NoRel	true	kendte	hæfter
+Relation	T11	T4	NoRel	true	kendte	forløbet
+Relation	T12	T1	NoRel	true	stod bag	kredser
+Relation	T5	T12	NoRel	true	sammenstyrtning	stod bag
+Relation	T8	T10	NoRel	true	angrebene	kendte
+Relation	T9	T11	NoRel	true	hændelserne	kendte
+Relation	T9	T4	NoRel	true	hændelserne	forløbet
+Relation	T9	T6	NoRel	true	hændelserne	strider

@@ -1,0 +1,38 @@
+Text	CARL DREGA ( January 19 , 1935 – August 19 , 1997 ) was a man from Bow , New Hampshire , who killed two state troopers , a judge and a newspaper editor and wounded four other law enforcement officers before being shot to death in a gunfight with police .	Drega had a long history of conflict with government officials over code enforcement issues , starting in the 1970s over whether he could use tarpaper to side his vacation house in Columbia , New Hampshire .	He claimed that in 1981 , of the riverbank along his property collapsed during a rainstorm .	Drega decided to dump and pack enough dirt to repair the erosion damage , saying this would restore his lot along the Connecticut River to its original size .	State officials , on the other hand , contested that Drega was trying to change the course of the river .
+Event	T0	killed	EVENT	93
+Event	T1	wounded	EVENT	156
+Event	T2	death	EVENT	221
+Event	T3	gunfight	EVENT	232
+Event	T4	conflict	EVENT	283
+Event	T5	starting	EVENT	349
+Event	T6	use	EVENT	393
+Event	T7	side	EVENT	409
+Event	T8	claimed	EVENT	466
+Event	T9	collapsed	EVENT	525
+Event	T10	rainstorm	EVENT	544
+Event	T11	decided	EVENT	562
+Event	T12	dump	EVENT	573
+Event	T13	pack	EVENT	582
+Event	T14	repair	EVENT	602
+Event	T15	damage	EVENT	621
+Event	T16	saying	EVENT	630
+Event	T17	restore	EVENT	648
+Event	T18	contested	EVENT	753
+Event	T19	trying	EVENT	778
+Event	T20	change	EVENT	788
+Relation	T0	T1	NoRel	true	killed	wounded
+Relation	T11	T19	NoRel	true	decided	trying
+Relation	T12	T15	NoRel	true	dump	damage
+Relation	T13	T6	NoRel	true	pack	use
+Relation	T16	T18	NoRel	true	saying	contested
+Relation	T16	T9	NoRel	true	saying	collapsed
+Relation	T19	T11	NoRel	true	trying	decided
+Relation	T2	T1	NoRel	true	death	wounded
+Relation	T2	T15	NoRel	true	death	damage
+Relation	T2	T18	NoRel	true	death	contested
+Relation	T3	T4	NoRel	true	gunfight	conflict
+Relation	T4	T9	NoRel	true	conflict	collapsed
+Relation	T6	T18	NoRel	true	use	contested
+Relation	T7	T17	NoRel	true	side	restore
+Relation	T8	T3	NoRel	true	claimed	gunfight
+Relation	T9	T11	NoRel	true	collapsed	decided

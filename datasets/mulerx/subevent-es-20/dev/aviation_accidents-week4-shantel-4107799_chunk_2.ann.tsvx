@@ -1,0 +1,43 @@
+Text	Los informes iniciales sugirieron que los controladores aéreos del aeropuerto Internacional Benazir Bhutto en Islamabad - lugar de destino - perdieron el contacto con el avión a las 09:43 hora local ( 03:43 UTC ) , minutos antes de la hora programada para su aterrizaje .	Media hora antes los controladores se habían visto obligados a desviar otro avión que intentaba aterrizar debido a las malas condiciones meteorológicas .	Mientras la BBC informaba que los controladores declararon que las conversaciones con el avión no señalaban que nada estuviera mal , el New York Times aseguró todo lo contrario , afirmando que los pilotos fueron advertidos de que estaban lejos de la pista , a pesar de que el piloto afirmara que podía verla .	Según el periódico neoyorquino , el controlador pidió al vuelo 202 que virara hacia la izquierda , ya que tenía las colinas de Margalla delante , lo cual el piloto se encargó de confirmar .	Un funcionario de la aerolínea pakistaní dijo que los pilotos no enviaron ninguna señal de emergencia antes del accidente .
+Event	T0	informes	EVENT	4
+Event	T1	sugirieron	EVENT	23
+Event	T2	perdieron	EVENT	141
+Event	T3	contacto	EVENT	154
+Event	T4	programada	EVENT	240
+Event	T5	aterrizaje	EVENT	259
+Event	T7	desviar	EVENT	335
+Event	T8	declararon	EVENT	474
+Event	T9	conversaciones	EVENT	493
+Event	T10	aseguró	EVENT	577
+Event	T11	afirmando	EVENT	605
+Event	T12	advertidos	EVENT	638
+Event	T13	afirmara	EVENT	709
+Event	T14	pidió	EVENT	784
+Event	T15	virara	EVENT	807
+Event	T16	encargó	EVENT	903
+Event	T17	confirmar	EVENT	914
+Event	T18	dijo	EVENT	967
+Event	T21	accidente	EVENT	1038
+Event	T19	condiciones	EVENT	397
+Event	T6	informaba	EVENT	442
+Relation	T13	T1	NoRel	true	afirmara	sugirieron
+Relation	T13	T8	NoRel	true	afirmara	declararon
+Relation	T14	T0	NoRel	true	pidió	informes
+Relation	T14	T10	NoRel	true	pidió	aseguró
+Relation	T15	T8	NoRel	true	virara	declararon
+Relation	T16	T11	NoRel	true	encargó	afirmando
+Relation	T16	T2	NoRel	true	encargó	perdieron
+Relation	T17	T15	NoRel	true	confirmar	virara
+Relation	T17	T3	NoRel	true	confirmar	contacto
+Relation	T18	T1	NoRel	true	dijo	sugirieron
+Relation	T19	T0	NoRel	true	condiciones	informes
+Relation	T2	T4	NoRel	true	perdieron	programada
+Relation	T21	T18	NoRel	true	accidente	dijo
+Relation	T3	T7	NoRel	true	contacto	desviar
+Relation	T5	T14	NoRel	true	aterrizaje	pidió
+Relation	T6	T1	NoRel	true	informaba	sugirieron
+Relation	T7	T13	NoRel	true	desviar	afirmara
+Relation	T8	T10	NoRel	true	declararon	aseguró
+Relation	T8	T18	NoRel	true	declararon	dijo
+Relation	T9	T0	NoRel	true	conversaciones	informes
+Relation	T9	T2	NoRel	true	conversaciones	perdieron

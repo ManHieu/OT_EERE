@@ -1,0 +1,13 @@
+Text	NØRRESUNDBY BANK A/S var en dansk lokalbank med hovedsæde i Nørresundby .	Banken fusionerede med Nordjyske Bank den 1. april 2015 .	Banken havde inden sammenlægningen 13 afdelinger i og omkring Aalborg og ca. 65.000 kunder ( 2012 ) .	Nørresundby Bank blev stiftet 29. december 1897 som _ Banken for Nørresundby og Omegn _ og første afdeling åbnede 3. juni 1898 .	Den 10. oktober 2014 offentliggjorde bestyrelsen , at der var indgået aftale med bestyrelsen i Nordjyske Bank om en fusion af de to pengeinstitutter under navnet Nordbank A/S med Nordjyske Bank som fortsættende selskab .
+Event	T0	fusionerede	EVENT	81
+Event	T1	stiftet	EVENT	256
+Event	T2	åbnede	EVENT	341
+Event	T3	offentliggjorde	EVENT	384
+Event	T4	aftale	EVENT	433
+Event	T5	fusion	EVENT	479
+Event	T6	fortsættende	EVENT	561
+Event	T7	under	EVENT	512
+Event	T8	sammenlægningen	EVENT	151
+Event	T9	hovedsæde	EVENT	48
+Relation	T6	T1	NoRel	true	fortsættende	stiftet
+Relation	T6	T9	NoRel	true	fortsættende	hovedsæde

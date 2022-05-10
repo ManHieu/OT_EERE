@@ -1,0 +1,43 @@
+Text	El 24 de septiembre de 1676 , el fin de la epidemia se celebró con el despeje de barricadas , disparos de armas , el zumbido de campanas y procesiones .	La peste es causada por microbios en ratas , que se propagan a los seres humanos a través de pulgas infectadas de las ratas .	Las pulgas también pueden transmitir la enfermedad entre las personas .	La epidemia consistía principalmente en peste bubónica , pero algunos casos también eran neumónicos o septicémicos .	Los síntomas incluían fiebre , dolores de cabeza y bubones .
+Event	T0	fin	EVENT	33
+Event	T1	epidemia	EVENT	43
+Event	T10	infectadas	EVENT	253
+Event	T11	transmitir	EVENT	305
+Event	T12	enfermedad	EVENT	319
+Event	T13	consistía	EVENT	363
+Event	T14	peste	EVENT	391
+Event	T15	fiebre	EVENT	490
+Event	T16	dolores	EVENT	499
+Event	T2	celebró	EVENT	55
+Event	T3	despeje	EVENT	70
+Event	T4	disparos	EVENT	94
+Event	T5	zumbido	EVENT	117
+Event	T6	procesiones	EVENT	139
+Event	T7	peste	EVENT	156
+Event	T8	causada	EVENT	165
+Event	T9	propagan	EVENT	205
+Relation	T9	T7	SuperSub	true	propagan	peste
+Relation	T7	T9	SubSuper	true	peste	propagan
+Relation	T1	T0	SuperSub	true	epidemia	fin
+Relation	T0	T1	SubSuper	true	fin	epidemia
+Relation	T2	T4	SuperSub	true	celebró	disparos
+Relation	T4	T2	SubSuper	true	disparos	celebró
+Relation	T2	T5	SuperSub	true	celebró	zumbido
+Relation	T5	T2	SubSuper	true	zumbido	celebró
+Relation	T0	T11	NoRel	true	fin	transmitir
+Relation	T1	T11	NoRel	true	epidemia	transmitir
+Relation	T11	T1	NoRel	true	transmitir	epidemia
+Relation	T11	T13	NoRel	true	transmitir	consistía
+Relation	T12	T13	NoRel	true	enfermedad	consistía
+Relation	T15	T10	NoRel	true	fiebre	infectadas
+Relation	T16	T6	NoRel	true	dolores	procesiones
+Relation	T2	T1	NoRel	true	celebró	epidemia
+Relation	T2	T11	NoRel	true	celebró	transmitir
+Relation	T2	T14	NoRel	true	celebró	peste
+Relation	T5	T9	NoRel	true	zumbido	propagan
+Relation	T6	T0	NoRel	true	procesiones	fin
+Relation	T6	T8	NoRel	true	procesiones	causada
+Relation	T7	T16	NoRel	true	peste	dolores
+Relation	T7	T4	NoRel	true	peste	disparos
+Relation	T9	T14	NoRel	true	propagan	peste
+Relation	T9	T15	NoRel	true	propagan	fiebre

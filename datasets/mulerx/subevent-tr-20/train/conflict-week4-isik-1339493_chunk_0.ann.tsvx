@@ -1,0 +1,18 @@
+Text	KUREKDERE MUHAREBESI , 1854 yılında Kırım Savaşı esnasında gerçekleşmiştir .	Kars üzerinden Gümrü'deki Rus kuvvetlerine saldıran Osmanlı güçleri şiddetli çarpışmalar sonucu Rus kuvvetleri arafından bozguna uğatılmıştır .	Ruslar topyekûn saldıran yaklaşık 40, 000 Osmanlı kuvvetine yarısı kadar bir kuvvetle karşı koymuşlardır .	Osmanlı ordusundaki yönetim aksaklıkları ve üst üste yapılan stratejik hatalar muharebeyi kaybettirmiş savaşın süresi uzamıştır .	Daha sonra başarısız olan yöneticiler görevden alınacaktır .
+Event	T0	Savaşı	EVENT	42
+Event	T1	gerçekleşmiştir	EVENT	59
+Event	T2	saldıran	EVENT	120
+Event	T3	çarpışmalar	EVENT	154
+Event	T4	uğatılmıştır	EVENT	206
+Event	T5	saldıran	EVENT	237
+Event	T6	hatalar	EVENT	399
+Event	T7	uzamıştır	EVENT	446
+Event	T8	alınacaktır	EVENT	505
+Event	T9	KUREKDERE MUHAREBESI	EVENT	0
+Relation	T1	T6	NoRel	true	gerçekleşmiştir	hatalar
+Relation	T3	T4	NoRel	true	çarpışmalar	uğatılmıştır
+Relation	T4	T6	NoRel	true	uğatılmıştır	hatalar
+Relation	T5	T8	NoRel	true	saldıran	alınacaktır
+Relation	T6	T3	NoRel	true	hatalar	çarpışmalar
+Relation	T8	T1	NoRel	true	alınacaktır	gerçekleşmiştir
+Relation	T8	T2	NoRel	true	alınacaktır	saldıran

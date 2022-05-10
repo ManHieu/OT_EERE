@@ -1,0 +1,31 @@
+Text	Det nordamerikanske luftrum holdt lukket i flere dage efter angrebene , hvilket førte til en nedskæring på næsten 20 % i lufttrafikkens kapacitet .	Som følge af tvillingetårnenes kollaps blev mere end 2.500 forurenende stoffer , herunder kendte kræftfremkaldende stoffer , spredt ud over Manhattan .	Dette har ført til invaliderende sygdomme blandt redningsarbejderne .	For eksempel døde NYPD-officeren Frank Macrì af lungekræft , der havde bredt sig i hele hans krop , den 3. september 2007 ; hans familie har taget hans kræftsygdom som et resultat af den lange arbejdstid , som han har haft på stedet .	Effekter på helbredet udvidede sig ligeledes til nogle beboere , studerende og kontorarbejdere i Lower Manhattan samt i nærheden af Chinatown .
+Event	T0	lukket	EVENT	34
+Event	T1	angrebene	EVENT	60
+Event	T10	udvidede	EVENT	627
+Event	T11	spredt	EVENT	273
+Event	T12	kollaps	EVENT	179
+Event	T13	bredt sig	EVENT	441
+Event	T2	nedskæring	EVENT	93
+Event	T3	ført	EVENT	310
+Event	T4	sygdomme	EVENT	333
+Event	T5	døde	EVENT	383
+Event	T6	taget	EVENT	511
+Event	T7	kræftsygdom	EVENT	522
+Event	T8	haft	EVENT	588
+Event	T9	Effekter	EVENT	605
+Relation	T3	T4	SuperSub	true	ført	sygdomme
+Relation	T4	T3	SubSuper	true	sygdomme	ført
+Relation	T9	T10	SuperSub	true	Effekter	udvidede
+Relation	T10	T9	SubSuper	true	udvidede	Effekter
+Relation	T7	T13	SuperSub	true	kræftsygdom	bredt sig
+Relation	T13	T7	SubSuper	true	bredt sig	kræftsygdom
+Relation	T0	T1	NoRel	true	lukket	angrebene
+Relation	T0	T7	NoRel	true	lukket	kræftsygdom
+Relation	T1	T0	NoRel	true	angrebene	lukket
+Relation	T12	T8	NoRel	true	kollaps	haft
+Relation	T2	T4	NoRel	true	nedskæring	sygdomme
+Relation	T3	T7	NoRel	true	ført	kræftsygdom
+Relation	T4	T13	NoRel	true	sygdomme	bredt sig
+Relation	T4	T8	NoRel	true	sygdomme	haft
+Relation	T5	T2	NoRel	true	døde	nedskæring
+Relation	T6	T11	NoRel	true	taget	spredt

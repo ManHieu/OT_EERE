@@ -1,0 +1,34 @@
+Text	Alrededor de las 6:00 p._m. Lacava le pide a los dirigentes oficialistas en otro audio « rematar el carreteo de gente » para incrementar la participación .	El gobernador oficialista del estado Yaracuy , Julio León Heredia , llamó la atención a su equipo de trabajo y les ordenó buscar a quienes no hubiesen votado para llevarlos a los centros de votación aplicando cualquier método , ya que « en este momento la abstención está muy elevada » .	Durante las elecciones Leocenis García , líder del partido Prociudadanos , informó que atropelló a una mujer al salir de un centro de votación en La Florida , Caracas .	Explicó que la acompañó a la clínica La Florida y aseguró que no fue herida de gravedad .	Representantes del Partido Comunista de Venezuela denunciaron el allanamiento de la sede de su comando de campaña en el estado Zulia por funcionarios de la Guardia Nacional y la policía , sin mostrar orden de allanamiento , y de la detención de cuatro miembros del partido .
+Event	T0	pide	EVENT	38
+Event	T1	incrementar	EVENT	125
+Event	T2	participación	EVENT	140
+Event	T3	buscar	EVENT	278
+Event	T4	votado	EVENT	307
+Event	T5	abstención	EVENT	412
+Event	T6	elecciones	EVENT	456
+Event	T7	informó	EVENT	519
+Event	T8	atropelló	EVENT	531
+Event	T9	salir	EVENT	556
+Event	T10	votación	EVENT	578
+Event	T11	Explicó	EVENT	613
+Event	T12	acompañó	EVENT	628
+Event	T13	aseguró	EVENT	663
+Event	T14	herida	EVENT	682
+Event	T15	denunciaron	EVENT	753
+Event	T16	allanamiento	EVENT	768
+Event	T17	detención	EVENT	935
+Relation	T16	T15	SuperSub	true	allanamiento	denunciaron
+Relation	T15	T16	SubSuper	true	denunciaron	allanamiento
+Relation	T0	T11	NoRel	true	pide	Explicó
+Relation	T11	T1	NoRel	true	Explicó	incrementar
+Relation	T15	T6	NoRel	true	denunciaron	elecciones
+Relation	T16	T3	NoRel	true	allanamiento	buscar
+Relation	T2	T11	NoRel	true	participación	Explicó
+Relation	T4	T7	NoRel	true	votado	informó
+Relation	T5	T14	NoRel	true	abstención	herida
+Relation	T5	T3	NoRel	true	abstención	buscar
+Relation	T5	T7	NoRel	true	abstención	informó
+Relation	T6	T11	NoRel	true	elecciones	Explicó
+Relation	T7	T12	NoRel	true	informó	acompañó
+Relation	T7	T14	NoRel	true	informó	herida
+Relation	T8	T6	NoRel	true	atropelló	elecciones

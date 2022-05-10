@@ -1,0 +1,32 @@
+Text	Esa experiencia la narró en su autobiografía ‘ Borstal Boy ’ ( 1958 ) .	En 1942 , mientras el IRA emprendía la Campaña del Norte , Behan fue juzgado por el intento de asesinato de dos policías en Dublín que habían acudido a la ceremonia conmemorativa del aniversario de Theobald Wolfe Tone , padre del Republicanismo irlandés .	Condenado a 14 años de prisión , fue encarcelado en la prisión de Mountjoy y en el Curragh .	Esta etapa la narra en su libro póstumo ‘ Confessions of an Irish Rebel ’ [ ‘ Confesiones de un rebelde irlandés ’ , Txalaparta , 1999 ; traducción de Maite Mujika ] .	Liberado por la amnistía de 1946 , Behan dio por acabada su militancia armada a los 23 años y , aunque abandonó el IRA , mantuvo allí grandes amigos , como el futuro jefe de estado mayor Cathal Goulding .
+Event	T0	experiencia	EVENT	4
+Event	T1	narró	EVENT	19
+Event	T2	emprendía	EVENT	98
+Event	T3	juzgado	EVENT	141
+Event	T4	intento	EVENT	156
+Event	T5	asesinato	EVENT	167
+Event	T6	acudido	EVENT	214
+Event	T7	conmemorativa	EVENT	237
+Event	T8	Condenado	EVENT	328
+Event	T9	encarcelado	EVENT	365
+Event	T10	etapa	EVENT	426
+Event	T11	narra	EVENT	435
+Event	T12	Confessions	EVENT	463
+Event	T13	Liberado	EVENT	589
+Event	T14	dio	EVENT	630
+Event	T15	acabada	EVENT	638
+Event	T16	militancia	EVENT	649
+Event	T17	mantuvo	EVENT	710
+Relation	T4	T3	SuperSub	true	intento	juzgado
+Relation	T3	T4	SubSuper	true	juzgado	intento
+Relation	T0	T16	NoRel	true	experiencia	militancia
+Relation	T1	T7	NoRel	true	narró	conmemorativa
+Relation	T10	T0	NoRel	true	etapa	experiencia
+Relation	T10	T11	NoRel	true	etapa	narra
+Relation	T11	T13	NoRel	true	narra	Liberado
+Relation	T13	T17	NoRel	true	Liberado	mantuvo
+Relation	T16	T1	NoRel	true	militancia	narró
+Relation	T16	T4	NoRel	true	militancia	intento
+Relation	T17	T16	NoRel	true	mantuvo	militancia
+Relation	T5	T11	NoRel	true	asesinato	narra
+Relation	T6	T5	NoRel	true	acudido	asesinato

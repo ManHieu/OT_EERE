@@ -1,0 +1,15 @@
+Text	1944 fik fabrikkerne en filial i København .	Foruden telefonerne omfattede Kirk-koncernen fabrikation af elektronisk_udstyr , maskiner og fiskemel samt handel med fotoudstyr , papir , bøger og legetøj .	Efter store tab hos en afdeling i Glostrup , Haka-Kirk Husholdningsmaskiner , trådte koncernen i 1970 i likvidation .	Telefonfabriken blev efterfølgende overtaget og videreført af det US-amerikanske selskab ITT under navnet Standard Electric Kirk .	I 1986 solgte ITT alle sine telefonfabriker i Europa til den franske telekoncern Alcatel , og telefonfabriken i Horsens tog navneforandring til Alcatel Kirk A/S .
+Event	T0	omfattede	EVENT	65
+Event	T1	tab	EVENT	215
+Event	T2	trådte	EVENT	281
+Event	T3	likvidation	EVENT	307
+Event	T4	overtaget	EVENT	356
+Event	T5	videreført	EVENT	369
+Event	T6	solgte	EVENT	459
+Event	T7	navneforandring	EVENT	576
+Relation	T0	T1	SuperSub	true	omfattede	tab
+Relation	T1	T0	SubSuper	true	tab	omfattede
+Relation	T3	T5	NoRel	true	likvidation	videreført
+Relation	T5	T1	NoRel	true	videreført	tab
+Relation	T6	T3	NoRel	true	solgte	likvidation
+Relation	T6	T4	NoRel	true	solgte	overtaget

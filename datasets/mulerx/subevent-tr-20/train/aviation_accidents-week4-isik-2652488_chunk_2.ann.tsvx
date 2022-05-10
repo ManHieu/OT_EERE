@@ -1,0 +1,16 @@
+Text	Yunkyur Havaalanı'na son yaklaşımı sırasında Veretenov gaz kollarıyla motorun gücünü arttırmaya çalıştı ancak motor buna tepki vermedi ve düşük güçte çalışmaya devam etti .	Bu da hızın ve irtifanın azalmasına neden oldu .	Zorunlu iniş yapmak zorunda kaldılar ve havalimanı yakınlarındaki bir bataklık arazisine indiler .	küçükresim | 300px | Motor kontrol sistemi arızası Yakutsk Devlet Havacılık İdaresi tarafından olayı araştırmak için 5 kişilik bir komisyon kuruldu :	- Egorov P. I. - pilot - müfettiş , komisyon başkanı ; - Litovçenko I. G. - komutan , pilot - Kordova A. G. - kıdemli navigatör - Vasilyeva M. S. - Batagai Havalimanı Başkan Yardımcısı - Koçetkova A. V. - Yakutsk Devlet Havacılık İdaresi uçuş güvenliği uzmanı
+Event	T0	yaklaşımı	EVENT	25
+Event	T1	çalıştı	EVENT	96
+Event	T2	vermedi	EVENT	127
+Event	T3	etti	EVENT	166
+Event	T5	indiler	EVENT	311
+Event	T6	arızası	EVENT	364
+Event	T7	araştırmak	EVENT	422
+Event	T8	kuruldu	EVENT	461
+Event	T9	oldu	EVENT	215
+Event	T4	iniş	EVENT	230
+Relation	T0	T7	NoRel	true	yaklaşımı	araştırmak
+Relation	T2	T0	NoRel	true	vermedi	yaklaşımı
+Relation	T5	T2	NoRel	true	indiler	vermedi
+Relation	T6	T0	NoRel	true	arızası	yaklaşımı
+Relation	T8	T7	NoRel	true	kuruldu	araştırmak

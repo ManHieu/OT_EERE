@@ -1,0 +1,19 @@
+Text	Página Web oficial del periódico Mexicano El Universal " Suplementos . Brote se propaga " Gráfico consultado el 26-04-2009	Página Web oficial del periódico Mexicano El Universal " Querétaro detecta tres casos de influenza porcina " Nota consultada el 27.04.2009	Página Web oficial del periódico Mexicano mexico no fue tan afectdo El Universal " Costa Rica confirma primer caso de gripe porcina " Nota consultada el 28-04-2009	Página Web oficial del periódico Costarricense La Nación " Muere primer tico contagiado de gripe AH1N1 " Nota consultada el 09-05-2009	_ Como resultado de la nueva directriz las estadísticas de infectados y casos probables ya no reflejará el total de personas infectadas ya que las pruebas para detectar el virus solo se realizarán en los casos con factores de riesgo y los casos críticos _ .
+Event	T0	propaga	EVENT	80
+Event	T1	consultado	EVENT	98
+Event	T2	influenza	EVENT	212
+Event	T3	consultada	EVENT	237
+Event	T4	gripe	EVENT	380
+Event	T5	consultada	EVENT	401
+Event	T6	Muere	EVENT	485
+Event	T7	contagiado	EVENT	503
+Event	T8	consultada	EVENT	536
+Event	T9	infectados	EVENT	620
+Event	T10	infectadas	EVENT	686
+Event	T11	pruebas	EVENT	708
+Event	T12	detectar	EVENT	721
+Event	T13	realizarán	EVENT	747
+Relation	T11	T9	NoRel	true	pruebas	infectados
+Relation	T13	T8	NoRel	true	realizarán	consultada
+Relation	T5	T4	NoRel	true	consultada	gripe
+Relation	T8	T4	NoRel	true	consultada	gripe

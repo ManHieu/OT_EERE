@@ -1,0 +1,18 @@
+Text	Ravenhill , 1990'larda ve 2000'lerde yeni İngiliz oyun yazarlığının merkezinde yer almasına karşın , eski tiyatroya saygı duyar .	Yönetmenlerin klasik eserlere daha fazla odaklandıklarını ve anlamı , önemi olmayan yeni oyunlar çıkarmayı kestiklerini görmek istediğini söylemiştir .	Aynı makalede , Ravenhill , yönetmenlerin , farklı kültürlere ve seçim yapmak zorunda oldukları geçmiş türlere erişmeye çalışmak yerine , kendilerini “ ebedi mevcudiyete ” zorladıklarını belirtmiştir .	Ravenhill geleneksel pantomim sanatına büyük bir sevgi beslemektedir ; Radio 4 kanalında bu formla ilgili bir belgesel sunmuş ve 2006 yılında Barbican Theatre için _ Dick Whittington _'ı yazmıştır .	Ravenhill'in 2000'lerdeki çalışmalarında büyük değişim vardır .
+Event	T0	söylemiştir	EVENT	268
+Event	T1	belirtmiştir	EVENT	469
+Event	T2	sunmuş	EVENT	603
+Event	T3	yazmıştır	EVENT	671
+Event	T4	değişim	EVENT	730
+Event	T5	yer almasına	EVENT	79
+Event	T6	saygı duyar	EVENT	116
+Event	T7	çıkarmayı	EVENT	227
+Event	T8	odaklandıklarını	EVENT	171
+Event	T9	istediğini	EVENT	257
+Event	T10	beslemektedir	EVENT	539
+Relation	T0	T1	NoRel	true	söylemiştir	belirtmiştir
+Relation	T0	T3	NoRel	true	söylemiştir	yazmıştır
+Relation	T5	T4	NoRel	true	yer almasına	değişim
+Relation	T5	T6	NoRel	true	yer almasına	saygı duyar
+Relation	T5	T9	NoRel	true	yer almasına	istediğini
+Relation	T8	T6	NoRel	true	odaklandıklarını	saygı duyar

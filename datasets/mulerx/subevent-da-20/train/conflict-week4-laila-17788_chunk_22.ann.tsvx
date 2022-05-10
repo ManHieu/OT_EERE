@@ -1,0 +1,42 @@
+Text	Da de modstod kraftig ild fra 225 meters afstand og da mangelen på forstærkninger betød at de ikke vandt terræn beordrede Duryée tilbagetrækning .	Forstærkningerne , som Duryée havde ventet — brigader under brigadegeneral George L. Hartsuff og oberst William A. Christian — havde vanskeligheder med at nå frem .	Hartsuff blev såret af en granat , og Christian sprang af sin hest og flygtede bagud i rædsel .	Da soldaterne var blevet samlet og var rykket ind i majsmarken blev de mødt af den samme artilleri og infanteriild som deres forgængere .	Da Unionens større antal begyndte at gøre sig gældende greb Louisiana " Tiger " Brigaden under Harry Hays ind i kampen og trængte Unionens soldater tilbage til East Woods .
+Event	T0	modstod	EVENT	6
+Event	T1	ild	EVENT	22
+Event	T2	betød	EVENT	82
+Event	T3	beordrede	EVENT	112
+Event	T4	tilbagetrækning	EVENT	129
+Event	T5	ventet	EVENT	183
+Event	T6	såret	EVENT	326
+Event	T7	granat	EVENT	338
+Event	T8	sprang	EVENT	360
+Event	T9	rædsel	EVENT	399
+Event	T10	samlet	EVENT	433
+Event	T11	mødt	EVENT	479
+Event	T12	begyndte	EVENT	571
+Event	T13	greb	EVENT	601
+Event	T14	kampen	EVENT	658
+Event	T15	trængte	EVENT	668
+Event	T16	mangelen	EVENT	55
+Event	T17	vandt	EVENT	99
+Event	T18	Forstærkningerne	EVENT	147
+Event	T19	vanskeligheder	EVENT	280
+Event	T20	rykket	EVENT	447
+Event	T21	gøre	EVENT	583
+Relation	T6	T8	SuperSub	true	såret	sprang
+Relation	T8	T6	SubSuper	true	sprang	såret
+Relation	T0	T18	NoRel	true	modstod	Forstærkningerne
+Relation	T1	T17	NoRel	true	ild	vandt
+Relation	T10	T19	NoRel	true	samlet	vanskeligheder
+Relation	T10	T20	NoRel	true	samlet	rykket
+Relation	T11	T19	NoRel	true	mødt	vanskeligheder
+Relation	T11	T6	NoRel	true	mødt	såret
+Relation	T13	T21	NoRel	true	greb	gøre
+Relation	T16	T14	NoRel	true	mangelen	kampen
+Relation	T16	T21	NoRel	true	mangelen	gøre
+Relation	T18	T13	NoRel	true	Forstærkningerne	greb
+Relation	T19	T21	NoRel	true	vanskeligheder	gøre
+Relation	T19	T6	NoRel	true	vanskeligheder	såret
+Relation	T21	T11	NoRel	true	gøre	mødt
+Relation	T3	T11	NoRel	true	beordrede	mødt
+Relation	T6	T12	NoRel	true	såret	begyndte
+Relation	T7	T0	NoRel	true	granat	modstod
+Relation	T8	T21	NoRel	true	sprang	gøre

@@ -1,0 +1,53 @@
+Text	Birthe Rønn Hornbechs ministertid var præget af en række kontroverser , og hun blev både før og under ministertiden kendt for sin , ofte bramfrie , facon og sin indædte kamp for sine synspunkter , der , i nogle tilfælde , er anderledes end VK-regeringens .	Blandt andet har Hornbech stemt med oppositionen i spørgsmålet om øget overvågning .	En kronik i dagbladet _ Politiken _ den 14. maj 2008 _ Dommertørklædet og de to regimenter _ harmonerede ikke med regeringens synspunkter angående brug af tørklæder blandt dommere .	I februar 2011 blev Birthe Rønn Hornbechs stilling som integrationsminister belastet af oplysninger om , at hun siden oktober 2008 skulle have været vidende om , at den danske stat handlede i strid med 2 FN_konventioner : Børnekonventionen og konventionen om statsløshed .	Mens Børnekonventionen giver børn ( 0_–_18 år ) født i Danmark med statsløse forældre ret til dansk statsborgerskab , efter ansøgning , giver FN´s konvention om statsløse statsløse unge mellem 18 og 21 år ret til at blive danske statsborgere , hvis de er født og opvokset i Danmark og ikke har begået alvorlig kriminalitet .
+Event	T0	præget	EVENT	38
+Event	T1	kontroverser	EVENT	57
+Event	T2	kendt	EVENT	116
+Event	T3	kamp	EVENT	169
+Event	T4	stemt	EVENT	283
+Event	T5	harmonerede	EVENT	435
+Event	T6	brug	EVENT	489
+Event	T7	belastet	EVENT	600
+Event	T8	oplysninger	EVENT	612
+Event	T9	handlede	EVENT	705
+Event	T10	født	EVENT	845
+Event	T11	født	EVENT	1052
+Event	T12	opvokset	EVENT	1060
+Event	T13	begået	EVENT	1091
+Event	T14	kriminalitet	EVENT	1107
+Event	T15	kronik	EVENT	345
+Event	T16	ministertiden	EVENT	102
+Event	T17	facon	EVENT	148
+Event	T18	strid	EVENT	716
+Event	T19	vidende	EVENT	673
+Event	T20	ansøgning	EVENT	921
+Event	T21	ret	EVENT	883
+Event	T22	statsløse	EVENT	968
+Event	T23	ret	EVENT	1002
+Event	T24	statsløse	EVENT	864
+Relation	T1	T4	SuperSub	true	kontroverser	stemt
+Relation	T4	T1	SubSuper	true	stemt	kontroverser
+Relation	T10	T3	NoRel	true	født	kamp
+Relation	T11	T10	NoRel	true	født	født
+Relation	T12	T1	NoRel	true	opvokset	kontroverser
+Relation	T12	T2	NoRel	true	opvokset	kendt
+Relation	T13	T0	NoRel	true	begået	præget
+Relation	T13	T5	NoRel	true	begået	harmonerede
+Relation	T14	T3	NoRel	true	kriminalitet	kamp
+Relation	T15	T1	NoRel	true	kronik	kontroverser
+Relation	T16	T19	NoRel	true	ministertiden	vidende
+Relation	T17	T22	NoRel	true	facon	statsløse
+Relation	T18	T1	NoRel	true	strid	kontroverser
+Relation	T19	T13	NoRel	true	vidende	begået
+Relation	T20	T2	NoRel	true	ansøgning	kendt
+Relation	T20	T9	NoRel	true	ansøgning	handlede
+Relation	T21	T3	NoRel	true	ret	kamp
+Relation	T22	T8	NoRel	true	statsløse	oplysninger
+Relation	T23	T13	NoRel	true	ret	begået
+Relation	T23	T19	NoRel	true	ret	vidende
+Relation	T3	T23	NoRel	true	kamp	ret
+Relation	T6	T17	NoRel	true	brug	facon
+Relation	T6	T19	NoRel	true	brug	vidende
+Relation	T9	T1	NoRel	true	handlede	kontroverser
+Relation	T9	T19	NoRel	true	handlede	vidende
+Relation	T9	T23	NoRel	true	handlede	ret
+Relation	T9	T7	NoRel	true	handlede	belastet

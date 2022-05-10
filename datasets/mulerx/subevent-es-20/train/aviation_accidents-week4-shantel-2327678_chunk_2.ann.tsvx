@@ -1,0 +1,21 @@
+Text	Rodaron hasta la pista 35 para la salida a las 09:48 y se les autorizó el despegue dos minutos más tarde .	Durante el despegue , cerca de V1 , falló el motor número uno .	El despegue continuó pero la velocidad disminuyó .	El avión se ladeó a la derecha y giró 135 grados .	Descendió en posición invertida , en un ángulo de 40 grados y se estrelló contra árboles , ubicados a unos 113 m del umbral de la pista 17 .
+Event	T0	Rodaron	EVENT	0
+Event	T1	salida	EVENT	34
+Event	T2	autorizó	EVENT	62
+Event	T3	despegue	EVENT	74
+Event	T4	despegue	EVENT	118
+Event	T5	falló	EVENT	143
+Event	T6	continuó	EVENT	183
+Event	T7	disminuyó	EVENT	210
+Event	T8	ladeó	EVENT	234
+Event	T9	giró	EVENT	255
+Event	T10	Descendió	EVENT	273
+Event	T11	estrelló	EVENT	338
+Relation	T4	T5	SuperSub	true	despegue	falló
+Relation	T5	T4	SubSuper	true	falló	despegue
+Relation	T0	T4	NoRel	true	Rodaron	despegue
+Relation	T11	T7	NoRel	true	estrelló	disminuyó
+Relation	T3	T2	NoRel	true	despegue	autorizó
+Relation	T4	T3	NoRel	true	despegue	despegue
+Relation	T5	T1	NoRel	true	falló	salida
+Relation	T7	T5	NoRel	true	disminuyó	falló

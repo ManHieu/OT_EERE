@@ -1,0 +1,35 @@
+Text	- June 25 : An Indian Airlines Douglas C - 47A ( registration VT - COJ ) crashed near Mohanbari while on a Mohanbari - Damroh supply drop mission due to loss of control after the left wing grazed a hillside , killing five of seven on board .	- July 9 : An Indian Airlines Douglas C - 47A ( registration VT - CYM ) broke apart in mid-air and crashed near Dhaka while on an Agartala - Dhaka cargo service , killing all three crew .	- July 13 : Five Quebecair aircraft ( four Douglas C - 47A's and a Douglas C - 48 ) were destroyed in a hangar fire while parked at Rimouski Airport ; there were no casualties .	- August 12 : Argentine Air Force Douglas C - 47B _ T - 19 _ struck terrain after take off from Trelew Airport and crashed , killing all 12 on board .	- August 12 : All Nippon Airways Flight 025 ( a Douglas C - 53 , registration JA 5045 ) crashed off the Izu Islands en route to Nagoya from Tokyo , killing all 33 on board .
+Event	T0	crashed	EVENT	73
+Event	T1	loss	EVENT	153
+Event	T2	grazed	EVENT	189
+Event	T3	killing	EVENT	209
+Event	T4	crashed	EVENT	341
+Event	T5	service	EVENT	395
+Event	T6	killing	EVENT	405
+Event	T7	destroyed	EVENT	519
+Event	T8	fire	EVENT	541
+Event	T9	parked	EVENT	552
+Event	T10	casualties	EVENT	595
+Event	T11	crashed	EVENT	723
+Event	T12	killing	EVENT	733
+Event	T14	killing	EVENT	907
+Event	T15	broke	EVENT	314
+Event	T16	struck	EVENT	669
+Event	T17	take off	EVENT	690
+Event	T18	crashed	EVENT	847
+Relation	T15	T4	SuperSub	true	broke	crashed
+Relation	T4	T15	SubSuper	true	crashed	broke
+Relation	T17	T16	SuperSub	true	take off	struck
+Relation	T16	T17	SubSuper	true	struck	take off
+Relation	T17	T11	SuperSub	true	take off	crashed
+Relation	T11	T17	SubSuper	true	crashed	take off
+Relation	T0	T4	NoRel	true	crashed	crashed
+Relation	T1	T14	NoRel	true	loss	killing
+Relation	T14	T12	NoRel	true	killing	killing
+Relation	T15	T16	NoRel	true	broke	struck
+Relation	T16	T0	NoRel	true	struck	crashed
+Relation	T18	T17	NoRel	true	crashed	take off
+Relation	T18	T3	NoRel	true	crashed	killing
+Relation	T3	T2	NoRel	true	killing	grazed
+Relation	T5	T8	NoRel	true	service	fire
+Relation	T8	T18	NoRel	true	fire	crashed

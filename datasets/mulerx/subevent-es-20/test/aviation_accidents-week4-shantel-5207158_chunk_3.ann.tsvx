@@ -1,0 +1,58 @@
+Text	Originalmente la aeronave se encontraba en calidad de desaparecido hasta que elementos de rescate encontraron los restos en el monte Salak .	El especialista en accidentes aéreos Alan Covian habla sobre que la aeronave descendió más de lo autorizado y por la posición de los restos asegura se estrelló de frente con la montaña en condiciones de baja visibilidad .	Al darse cuenta , los pilotos trataron de salvar la aeronave haciendo un ángulo casi recto pero fue demasiado tarde y se estrelló de lleno con el Monte Salak .	Covian se pregunta si se pudo tratar de una falla en los instrumentos de vuelo ya que los pilotos conocían el terreno .	Según afirmaron las autoridades indonesias el accidente se debió a factores humanos , así pues en las conclusiones de la investigación que llevó a cabo el gobierno indonesio la tripulación perdió el control de la nave antes de que ocurriera el fatal accidente haciendo hincapié en que la tripulación no reaccionó al sistema de alerta automática de la nave .
+Event	T0	desaparecido	EVENT	54
+Event	T1	encontraron	EVENT	98
+Event	T2	accidentes	EVENT	160
+Event	T3	habla	EVENT	190
+Event	T4	descendió	EVENT	218
+Event	T5	autorizado	EVENT	238
+Event	T6	asegura	EVENT	281
+Event	T7	estrelló	EVENT	292
+Event	T8	trataron	EVENT	393
+Event	T9	salvar	EVENT	405
+Event	T10	haciendo	EVENT	424
+Event	T11	estrelló	EVENT	484
+Event	T12	pregunta	EVENT	533
+Event	T13	tratar	EVENT	553
+Event	T14	falla	EVENT	567
+Event	T15	afirmaron	EVENT	649
+Event	T16	accidente	EVENT	689
+Event	T17	debió	EVENT	702
+Event	T18	conclusiones	EVENT	745
+Event	T19	investigación	EVENT	764
+Event	T20	perdió	EVENT	832
+Event	T21	control	EVENT	842
+Event	T22	ocurriera	EVENT	874
+Event	T23	reaccionó	EVENT	946
+Event	T24	alerta	EVENT	970
+Event	T25	accidente	EVENT	893
+Relation	T9	T11	SuperSub	true	salvar	estrelló
+Relation	T11	T9	SubSuper	true	estrelló	salvar
+Relation	T0	T2	NoRel	true	desaparecido	accidentes
+Relation	T1	T9	NoRel	true	encontraron	salvar
+Relation	T10	T12	NoRel	true	haciendo	pregunta
+Relation	T10	T19	NoRel	true	haciendo	investigación
+Relation	T10	T22	NoRel	true	haciendo	ocurriera
+Relation	T15	T0	NoRel	true	afirmaron	desaparecido
+Relation	T15	T12	NoRel	true	afirmaron	pregunta
+Relation	T16	T17	NoRel	true	accidente	debió
+Relation	T17	T9	NoRel	true	debió	salvar
+Relation	T18	T11	NoRel	true	conclusiones	estrelló
+Relation	T19	T13	NoRel	true	investigación	tratar
+Relation	T19	T25	NoRel	true	investigación	accidente
+Relation	T2	T15	NoRel	true	accidentes	afirmaron
+Relation	T20	T22	NoRel	true	perdió	ocurriera
+Relation	T20	T3	NoRel	true	perdió	habla
+Relation	T21	T23	NoRel	true	control	reaccionó
+Relation	T23	T8	NoRel	true	reaccionó	trataron
+Relation	T24	T1	NoRel	true	alerta	encontraron
+Relation	T24	T16	NoRel	true	alerta	accidente
+Relation	T25	T22	NoRel	true	accidente	ocurriera
+Relation	T25	T5	NoRel	true	accidente	autorizado
+Relation	T3	T16	NoRel	true	habla	accidente
+Relation	T3	T4	NoRel	true	habla	descendió
+Relation	T5	T24	NoRel	true	autorizado	alerta
+Relation	T5	T9	NoRel	true	autorizado	salvar
+Relation	T6	T3	NoRel	true	asegura	habla
+Relation	T7	T18	NoRel	true	estrelló	conclusiones
+Relation	T8	T16	NoRel	true	trataron	accidente
+Relation	T9	T14	NoRel	true	salvar	falla

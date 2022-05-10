@@ -1,0 +1,52 @@
+Text	The investigation carried out by the USAF found the root cause of the crash to be pilot s error following an engine malfunction .	During the takeoff roll , engine number 1 ( the left outboard engine ) experienced performance fluctuations which went unnoticed until after takeoff .	The engine power dropped from nearly to under 300 , causing the aircraft to pull to the left , nearly departing the runway .	The investigation found that the takeoff should have been aborted but was not .	Furthermore , the investigation determined that the flight crew had failed to adequately prepare for emergency actions , and the maintenance technicians failed to properly diagnose and repair the malfunctioning engine before flight .
+Event	T0	found	EVENT	42
+Event	T1	crash	EVENT	70
+Event	T2	malfunction	EVENT	116
+Event	T3	roll	EVENT	149
+Event	T4	unnoticed	EVENT	249
+Event	T5	takeoff	EVENT	271
+Event	T6	dropped	EVENT	298
+Event	T7	causing	EVENT	333
+Event	T8	departing	EVENT	383
+Event	T9	found	EVENT	424
+Event	T10	takeoff	EVENT	439
+Event	T11	aborted	EVENT	464
+Event	T12	determined	EVENT	518
+Event	T13	failed	EVENT	554
+Event	T14	prepare	EVENT	575
+Event	T15	actions	EVENT	597
+Event	T16	failed	EVENT	639
+Event	T17	diagnose	EVENT	658
+Event	T18	repair	EVENT	671
+Event	T19	malfunctioning	EVENT	682
+Event	T20	flight	EVENT	711
+Event	T21	carried out	EVENT	18
+Event	T22	pull	EVENT	357
+Relation	T5	T4	SuperSub	true	takeoff	unnoticed
+Relation	T4	T5	SubSuper	true	unnoticed	takeoff
+Relation	T0	T12	NoRel	true	found	determined
+Relation	T1	T7	NoRel	true	crash	causing
+Relation	T12	T1	NoRel	true	determined	crash
+Relation	T12	T4	NoRel	true	determined	unnoticed
+Relation	T12	T7	NoRel	true	determined	causing
+Relation	T12	T8	NoRel	true	determined	departing
+Relation	T14	T22	NoRel	true	prepare	pull
+Relation	T14	T6	NoRel	true	prepare	dropped
+Relation	T15	T19	NoRel	true	actions	malfunctioning
+Relation	T15	T4	NoRel	true	actions	unnoticed
+Relation	T16	T21	NoRel	true	failed	carried out
+Relation	T16	T7	NoRel	true	failed	causing
+Relation	T17	T0	NoRel	true	diagnose	found
+Relation	T18	T11	NoRel	true	repair	aborted
+Relation	T2	T18	NoRel	true	malfunction	repair
+Relation	T2	T4	NoRel	true	malfunction	unnoticed
+Relation	T20	T15	NoRel	true	flight	actions
+Relation	T21	T12	NoRel	true	carried out	determined
+Relation	T21	T18	NoRel	true	carried out	repair
+Relation	T22	T2	NoRel	true	pull	malfunction
+Relation	T4	T20	NoRel	true	unnoticed	flight
+Relation	T5	T13	NoRel	true	takeoff	failed
+Relation	T5	T22	NoRel	true	takeoff	pull
+Relation	T6	T21	NoRel	true	dropped	carried out
+Relation	T7	T11	NoRel	true	causing	aborted
+Relation	T7	T12	NoRel	true	causing	determined

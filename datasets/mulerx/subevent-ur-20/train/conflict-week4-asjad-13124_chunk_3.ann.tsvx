@@ -1,0 +1,25 @@
+Text	امریکی تاجروں کا درینہ مطالبہ تھا کہ ان قدیم تہذیبوں کے نوادرات کو عراق سے باہر لے جانے اور ان کی تجارت پر صدر صدام حسین کی لگائی گئی پابندی ختم ہونی چاہیے ۔	قبضہ کے بعد پوری پوری فیکٹریاں اکھاڑ کر لوہا ، تانبا اور دوسری معدنیات ٹرکوں کے ذریعہ عراق سے چوری کر کے اردن کے راستے باہر بھیج دی گئیں ، جس کی اقوام متحدہ نے تصدیق کی ۔	قیمتی یورینیم 550 میٹرک ٹن 2008ء میں چوری کر کے انٹاریو پہنچایا گیا ۔	امریکی حملے کے نتیجے میں ہلاک ہونے والے عراقیوں کی تعداد کا تخمینہ ساڑھے سات ( 7.5 ) لاکھ لگایا گیا ہے ۔	اس کے علاوہ اسی ( 80 ) لاکھ افراد زندگی کی بنیادی سہولتوں سے محروم ہو گئے ہیں ۔
+Event	T0	مطالبہ	EVENT	23
+Event	T1	تجارت	EVENT	98
+Event	T2	لگائی	EVENT	124
+Event	T3	ختم	EVENT	141
+Event	T4	قبضہ	EVENT	158
+Event	T5	اکھاڑ	EVENT	189
+Event	T6	چوری	EVENT	252
+Event	T7	چوری	EVENT	366
+Event	T8	حملے	EVENT	406
+Event	T9	لگایا	EVENT	489
+Event	T10	گئے	EVENT	574
+Relation	T0	T3	SuperSub	true	مطالبہ	ختم
+Relation	T3	T0	SubSuper	true	ختم	مطالبہ
+Relation	T0	T2	SuperSub	true	مطالبہ	لگائی
+Relation	T2	T0	SubSuper	true	لگائی	مطالبہ
+Relation	T4	T5	SuperSub	true	قبضہ	اکھاڑ
+Relation	T5	T4	SubSuper	true	اکھاڑ	قبضہ
+Relation	T4	T6	SuperSub	true	قبضہ	چوری
+Relation	T6	T4	SubSuper	true	چوری	قبضہ
+Relation	T4	T7	SuperSub	true	قبضہ	چوری
+Relation	T7	T4	SubSuper	true	چوری	قبضہ
+Relation	T2	T5	NoRel	true	لگائی	اکھاڑ
+Relation	T3	T10	NoRel	true	ختم	گئے
+Relation	T7	T10	NoRel	true	چوری	گئے

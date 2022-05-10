@@ -1,0 +1,28 @@
+Text	De allierede undveg slag med Villars , skønt denne kun rådede over 80.000 mand mod deres 140.000 mand , der senere endog forstærkedes med 20.000 .	Felttoget løb ud i kampe om de nordfranske fæstninger .	I Spanien forefaldt der forskellige kampe .	I begyndelsen . var disse uheldige for kong Filip , der en tid kun rådede over spanske tropper , idet Ludvig 14. havde brug for sine andetsteds .	Men da Filip senere på ny fik franske hjælpetropper under Vendome , vendte bladet sig , ærkehertug Karl blev slået ved Villa-viciosa ( 10. december 1710 ) og trak sig tilbage til Katalonien .
+Event	T0	slag	EVENT	20
+Event	T1	rådede	EVENT	55
+Event	T2	forstærkedes	EVENT	121
+Event	T3	kampe	EVENT	166
+Event	T4	forefaldt	EVENT	213
+Event	T5	kampe	EVENT	239
+Event	T6	rådede	EVENT	314
+Event	T7	brug	EVENT	366
+Event	T8	fik	EVENT	419
+Event	T9	vendte	EVENT	461
+Event	T10	slået	EVENT	502
+Event	T11	trak	EVENT	551
+Event	T12	undveg	EVENT	13
+Event	T13	uheldige	EVENT	273
+Relation	T5	T13	SuperSub	true	kampe	uheldige
+Relation	T13	T5	SubSuper	true	uheldige	kampe
+Relation	T9	T10	SuperSub	true	vendte	slået
+Relation	T10	T9	SubSuper	true	slået	vendte
+Relation	T1	T12	NoRel	true	rådede	undveg
+Relation	T11	T1	NoRel	true	trak	rådede
+Relation	T11	T7	NoRel	true	trak	brug
+Relation	T12	T0	NoRel	true	undveg	slag
+Relation	T12	T5	NoRel	true	undveg	kampe
+Relation	T2	T0	NoRel	true	forstærkedes	slag
+Relation	T4	T10	NoRel	true	forefaldt	slået
+Relation	T5	T12	NoRel	true	kampe	undveg
+Relation	T8	T3	NoRel	true	fik	kampe

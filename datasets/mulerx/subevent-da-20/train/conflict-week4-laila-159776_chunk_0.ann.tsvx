@@ -1,0 +1,49 @@
+Text	SLAGET VED THERMOPYLÆ i år 480 f.Kr. stod mellem et forbund af græske bystater og den invaderende persiske hær ved Thermopylæ-passet .	Selv om grækerne var i undertal , formåede de at standse fjenden i et af de mest berømte slag i historien .	En styrke på ca. 7000 krigere fra de græske bystater , anført af kong Leonidas , formåede at spærre den eneste vej , som den enorme persiske hær kunne passere .	Perserne led uhyre tab , før det lykkedes dem at omgå spærringen , og det skete kun , fordi grækeren Ephialtes forrådte de kæmpende grækere og afslørede en bjergvej , der gik bag om grækernes forsvarslinjer .	Kong Leonidas blev tilbage i passet med 300 spartanske elitesoldater og omkring 700 thespiatiske frivillige for at forsinke den persiske hær .
+Event	T0	SLAGET	EVENT	0
+Event	T1	stod	EVENT	37
+Event	T2	invaderende	EVENT	86
+Event	T3	standse	EVENT	184
+Event	T4	slag	EVENT	224
+Event	T5	anført	EVENT	298
+Event	T6	formåede	EVENT	324
+Event	T7	spærre	EVENT	336
+Event	T8	passere	EVENT	394
+Event	T9	led	EVENT	413
+Event	T10	tab	EVENT	423
+Event	T11	lykkedes	EVENT	437
+Event	T12	skete	EVENT	478
+Event	T13	forrådte	EVENT	515
+Event	T14	kæmpende	EVENT	527
+Event	T15	afslørede	EVENT	547
+Event	T16	gik	EVENT	575
+Event	T17	tilbage	EVENT	632
+Event	T18	passet	EVENT	642
+Event	T19	forsinke	EVENT	728
+Event	T20	formåede	EVENT	169
+Event	T21	omgå	EVENT	453
+Event	T22	styrke	EVENT	246
+Relation	T13	T15	SuperSub	true	forrådte	afslørede
+Relation	T15	T13	SubSuper	true	afslørede	forrådte
+Relation	T10	T13	NoRel	true	tab	forrådte
+Relation	T10	T22	NoRel	true	tab	styrke
+Relation	T11	T17	NoRel	true	lykkedes	tilbage
+Relation	T11	T19	NoRel	true	lykkedes	forsinke
+Relation	T14	T13	NoRel	true	kæmpende	forrådte
+Relation	T14	T15	NoRel	true	kæmpende	afslørede
+Relation	T15	T14	NoRel	true	afslørede	kæmpende
+Relation	T15	T18	NoRel	true	afslørede	passet
+Relation	T16	T10	NoRel	true	gik	tab
+Relation	T16	T12	NoRel	true	gik	skete
+Relation	T16	T18	NoRel	true	gik	passet
+Relation	T16	T8	NoRel	true	gik	passere
+Relation	T17	T12	NoRel	true	tilbage	skete
+Relation	T17	T3	NoRel	true	tilbage	standse
+Relation	T18	T0	NoRel	true	passet	SLAGET
+Relation	T18	T7	NoRel	true	passet	spærre
+Relation	T22	T17	NoRel	true	styrke	tilbage
+Relation	T22	T6	NoRel	true	styrke	formåede
+Relation	T5	T18	NoRel	true	anført	passet
+Relation	T6	T3	NoRel	true	formåede	standse
+Relation	T7	T20	NoRel	true	spærre	formåede
+Relation	T9	T1	NoRel	true	led	stod
+Relation	T9	T8	NoRel	true	led	passere

@@ -1,0 +1,32 @@
+Text	Organizations such as the Knights of Labor had little power in confronting owners .	Miners demanding better working conditions or wage increases were often fired .	When local unions sought such changes , they were easily driven out of the mining districts .	During the 1896 - 97 strike of the Cloud City Miners ' Union in Leadville , Colorado , mine owners formed a secret verbal agreement among themselves that none of them would recognize the union or negotiate with it , an arrangement later revealed in a report by the Colorado State Legislature .	Mine owners went a step further and formed a Mine Owners ' Association in response to union organizing in the mining district of Coeur d' Alene , Idaho during the 1880s .
+Event	T0	confronting	EVENT	63
+Event	T1	demanding	EVENT	91
+Event	T2	increases	EVENT	135
+Event	T3	fired	EVENT	156
+Event	T4	sought	EVENT	182
+Event	T5	changes	EVENT	194
+Event	T6	strike	EVENT	279
+Event	T7	formed	EVENT	357
+Event	T8	agreement	EVENT	380
+Event	T9	negotiate	EVENT	454
+Event	T10	arrangement	EVENT	477
+Event	T11	revealed	EVENT	495
+Event	T12	report	EVENT	509
+Event	T13	went	EVENT	564
+Event	T14	formed	EVENT	588
+Event	T15	response	EVENT	626
+Event	T16	organizing	EVENT	644
+Event	T17	driven out	EVENT	221
+Relation	T8	T11	SuperSub	true	agreement	revealed
+Relation	T11	T8	SubSuper	true	revealed	agreement
+Relation	T10	T12	NoRel	true	arrangement	report
+Relation	T10	T15	NoRel	true	arrangement	response
+Relation	T10	T16	NoRel	true	arrangement	organizing
+Relation	T13	T3	NoRel	true	went	fired
+Relation	T15	T13	NoRel	true	response	went
+Relation	T15	T7	NoRel	true	response	formed
+Relation	T4	T13	NoRel	true	sought	went
+Relation	T4	T8	NoRel	true	sought	agreement
+Relation	T5	T9	NoRel	true	changes	negotiate
+Relation	T6	T5	NoRel	true	strike	changes
+Relation	T7	T1	NoRel	true	formed	demanding

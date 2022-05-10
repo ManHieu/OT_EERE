@@ -1,0 +1,17 @@
+Text	Sonraki kuşatmalara destek amacıyla İl - basan adında bir kale inşa ettirir .	Kuşatma sürmekteyken İskender Bey mali destek sağlamak için İtalya’ya gider .	Döndüğünde 1467 yılı Nisan ayında Leka Dukagin ile birlikte önce bölgedeki Osmanlı birliklerine sonra da Krujë kuşatmasını sürdüren Balaban Paşa’ya saldırır .	Kuşatma kırılacak ve muharebe sırasında Balaban Paşa da Cerc Aleksi adındaki bir arkebüzcünün ateşi sonucu öldürülecektir .	Duruma hakim olan İskender Bey , Osmanlılar tarafından inşa edilen İlbasan kalesini kuşatır .
+Event	T0	ettirir	EVENT	68
+Event	T1	gider	EVENT	148
+Event	T3	saldırır	EVENT	304
+Event	T4	kırılacak	EVENT	323
+Event	T5	muharebe	EVENT	336
+Event	T6	öldürülecektir	EVENT	422
+Event	T8	kuşatır	EVENT	523
+Event	T9	Kuşatma	EVENT	78
+Event	T2	Krujë kuşatmasını	EVENT	261
+Event	T10	Kuşatma	EVENT	315
+Event	T11	ateşi	EVENT	409
+Relation	T9	T1	SuperSub	true	Kuşatma	gider
+Relation	T1	T9	SubSuper	true	gider	Kuşatma
+Relation	T10	T6	NoRel	true	Kuşatma	öldürülecektir
+Relation	T6	T3	NoRel	true	öldürülecektir	saldırır
+Relation	T6	T4	NoRel	true	öldürülecektir	kırılacak

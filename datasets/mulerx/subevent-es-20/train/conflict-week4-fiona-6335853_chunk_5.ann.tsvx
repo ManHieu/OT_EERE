@@ -1,0 +1,48 @@
+Text	En él se reconocían y respetaban los límites vigentes entre ambas naciones , a la espera de la celebración de un convenio de arreglo de límites .	Ello implicaba que ambas partes consideraban ya sin validez al Tratado Larrea-Gual de 1829 .	Fue recién entre 1841 y 1842 cuando Ecuador inició públicamente su reclamo al Perú de los territorios de Jaén y Maynas , incitado por el derrocado gobernante peruano-boliviano Andrés de Santa Cruz y algunos de sus partidarios refugiados en Guayaquil , tras el fin de la Confederación Perú-Boliviana .	Para sustentar su reclamo , el Ecuador hizo una interpretación tergiversada de diversos artículos del Tratado de 1829 , que ahora reclamaba como vigente .	Este reclamo lo hizo aprovechando la coyuntura de la guerra entre Perú y Bolivia ; una vez finalizada esta guerra , cesó temporalmente en su reclamo .
+Event	T0	reconocían	EVENT	9
+Event	T1	espera	EVENT	82
+Event	T2	celebración	EVENT	95
+Event	T3	arreglo	EVENT	125
+Event	T4	implicaba	EVENT	151
+Event	T5	inició	EVENT	283
+Event	T6	reclamo	EVENT	306
+Event	T7	incitado	EVENT	360
+Event	T8	derrocado	EVENT	376
+Event	T9	fin	EVENT	499
+Event	T10	sustentar	EVENT	545
+Event	T11	reclamo	EVENT	558
+Event	T12	hizo	EVENT	579
+Event	T13	reclamaba	EVENT	670
+Event	T14	reclamo	EVENT	700
+Event	T15	aprovechando	EVENT	716
+Event	T16	coyuntura	EVENT	732
+Event	T17	guerra	EVENT	748
+Event	T18	finalizada	EVENT	786
+Event	T19	guerra	EVENT	802
+Event	T20	cesó	EVENT	811
+Event	T21	reclamo	EVENT	836
+Relation	T18	T20	SuperSub	true	finalizada	cesó
+Relation	T20	T18	SubSuper	true	cesó	finalizada
+Relation	T10	T16	NoRel	true	sustentar	coyuntura
+Relation	T10	T5	NoRel	true	sustentar	inició
+Relation	T11	T0	NoRel	true	reclamo	reconocían
+Relation	T11	T4	NoRel	true	reclamo	implicaba
+Relation	T13	T15	NoRel	true	reclamaba	aprovechando
+Relation	T13	T20	NoRel	true	reclamaba	cesó
+Relation	T14	T11	NoRel	true	reclamo	reclamo
+Relation	T17	T7	NoRel	true	guerra	incitado
+Relation	T18	T11	NoRel	true	finalizada	reclamo
+Relation	T19	T15	NoRel	true	guerra	aprovechando
+Relation	T2	T12	NoRel	true	celebración	hizo
+Relation	T2	T18	NoRel	true	celebración	finalizada
+Relation	T21	T1	NoRel	true	reclamo	espera
+Relation	T3	T5	NoRel	true	arreglo	inició
+Relation	T4	T0	NoRel	true	implicaba	reconocían
+Relation	T5	T18	NoRel	true	inició	finalizada
+Relation	T6	T18	NoRel	true	reclamo	finalizada
+Relation	T6	T19	NoRel	true	reclamo	guerra
+Relation	T6	T20	NoRel	true	reclamo	cesó
+Relation	T7	T10	NoRel	true	incitado	sustentar
+Relation	T7	T14	NoRel	true	incitado	reclamo
+Relation	T8	T16	NoRel	true	derrocado	coyuntura
+Relation	T9	T0	NoRel	true	fin	reconocían

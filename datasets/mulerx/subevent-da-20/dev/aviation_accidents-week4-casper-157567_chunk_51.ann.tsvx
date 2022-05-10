@@ -1,0 +1,40 @@
+Text	I virkeligheden var omkring 10-15 % af de der døde i WTC jøder , hvilket ligger en smule over gennemsnittet for hele New York , hvor 9 % er jøder .	De nye informationer har fået visse tilhængere af sammensværgelsesteorierne til at vende 180º og hævde at jøderne bevidst ikke var blevet informeret om angrebene for at " mudre vandet ” og " forvrænge helhedsbilledet " .	En anden konspirationsteori går på at det israelske efterretningsvæsen Mossad var involveret i og delvis eller fuldstændig ansvarlig .	Motiverne er mange , men en ofte gentaget er at Israel derved angiveligt kunne snyde USA til at involverer sig i en krig mod Israels fjende Irak .	Gerne formuleret i neonazistiske kredse som en plan der skulle få " hvide mennesker til at dø for zionisterne " eller i venstreorienterede demonstrationer ved kollager af tvillingetårnene og en davidstjerne – det sidste ses også ofte i arabiske medier .
+Event	T0	døde	EVENT	46
+Event	T1	fået	EVENT	173
+Event	T2	vende	EVENT	231
+Event	T3	hævde	EVENT	245
+Event	T4	informeret	EVENT	286
+Event	T5	angrebene	EVENT	300
+Event	T6	mudre	EVENT	319
+Event	T7	går	EVENT	397
+Event	T8	gentaget	EVENT	537
+Event	T9	snyde	EVENT	583
+Event	T10	krig	EVENT	620
+Event	T11	formuleret	EVENT	657
+Event	T12	dø	EVENT	742
+Event	T13	demonstrationer	EVENT	790
+Event	T14	kollager	EVENT	810
+Event	T15	ses	EVENT	871
+Relation	T5	T4	SuperSub	true	angrebene	informeret
+Relation	T4	T5	SubSuper	true	informeret	angrebene
+Relation	T5	T0	SuperSub	true	angrebene	døde
+Relation	T0	T5	SubSuper	true	døde	angrebene
+Relation	T10	T9	SuperSub	true	krig	snyde
+Relation	T9	T10	SubSuper	true	snyde	krig
+Relation	T10	T7	SuperSub	true	krig	går
+Relation	T7	T10	SubSuper	true	går	krig
+Relation	T9	T11	SuperSub	true	snyde	formuleret
+Relation	T11	T9	SubSuper	true	formuleret	snyde
+Relation	T9	T13	SuperSub	true	snyde	demonstrationer
+Relation	T13	T9	SubSuper	true	demonstrationer	snyde
+Relation	T9	T15	SuperSub	true	snyde	ses
+Relation	T15	T9	SubSuper	true	ses	snyde
+Relation	T10	T1	NoRel	true	krig	fået
+Relation	T13	T15	NoRel	true	demonstrationer	ses
+Relation	T2	T6	NoRel	true	vende	mudre
+Relation	T4	T3	NoRel	true	informeret	hævde
+Relation	T5	T10	NoRel	true	angrebene	krig
+Relation	T6	T11	NoRel	true	mudre	formuleret
+Relation	T7	T13	NoRel	true	går	demonstrationer
+Relation	T7	T2	NoRel	true	går	vende
+Relation	T9	T2	NoRel	true	snyde	vende

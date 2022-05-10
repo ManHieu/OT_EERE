@@ -1,0 +1,15 @@
+Text	Yanardağdan çıkan volkanik külün doğu yönünde 300 km uzaklığa eriştiği gözümlendi .	20. yüzyılda ABD'de bulunan akrif ve sönmüş görünümlü yanardağlardan sadece ikisi ; Lassen Zirvesi ve St. Helena Dağı büyük volkanik patlama ve diğer faaliyet göstermişlerdir .	Lassen Zirvesi aktif yanardağı olarak volkanik faaliyet göstermeye başladıktan hemen sonra 9 Ağustos 1914'te çıkartılan bir ABD Kongresi kanunu ile Kaliforniya eayaletini Shasta ilçesinde bulunan Lassen Zirvesi ve etrafında 430 km²'lik bir alanda Lassen Volkanik Ulusal Parkı kurulmuştur .	Lassen Zirvesi Kaliforniya eyaleti içinde zirveye ve yamamaçlara yağan kar hacmi bakımından en çok kara yağışı gören arazidir .	Dağın bazında 2515 m rakımlı Helen Golü meteroloji istasyonnu gözlemlerine göre ortalama yıllık kar yağışı 1.676 cm olmaktadır ve bazı yıllar 2.550 cm yıllık kar yağışı gözümlenmiştir .
+Event	T0	külün	EVENT	27
+Event	T1	gözümlendi	EVENT	71
+Event	T2	patlama	EVENT	217
+Event	T3	kurulmuştur	EVENT	537
+Event	T6	gözlemlerine	EVENT	741
+Event	T7	yağışı	EVENT	779
+Event	T8	gözümlenmiştir	EVENT	848
+Event	T9	göstermişlerdir	EVENT	243
+Event	T10	başladıktan	EVENT	328
+Event	T11	kanunu	EVENT	398
+Relation	T0	T10	NoRel	true	külün	başladıktan
+Relation	T10	T7	NoRel	true	başladıktan	yağışı
+Relation	T2	T7	NoRel	true	patlama	yağışı
+Relation	T8	T9	NoRel	true	gözümlenmiştir	göstermişlerdir

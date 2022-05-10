@@ -1,0 +1,29 @@
+Text	American millionaire philanthropist Lewis Katz and six others were killed in a Gulfstream IV crash in Bedford , Massachusetts , on 31 May 2014 .	Katz , the co-owner of _ The Philadelphia Inquirer _ and several major sports teams , had chartered the twinjet for a day trip from Atlantic City , New Jersey , to Concord , Massachusetts .	In addition to several personal friends , he had also invited Edward G. Rendell , a former governor of Pennsylvania , who was unable to accept .	The flight crew consisted of pilot - in - command James McDowell , of Georgetown , Delaware ; co-pilot Bauke " Mike " de Vries , of Marlton , New Jersey ; and one flight attendant .	The pilots attempted to take off with the airplane 's gust lock inadvertently engaged , which resulted in the plane overrunning the runway and crashing into a ravine .
+Event	T0	crash	EVENT	93
+Event	T1	chartered	EVENT	235
+Event	T2	trip	EVENT	267
+Event	T3	invited	EVENT	389
+Event	T4	accept	EVENT	471
+Event	T5	consisted	EVENT	496
+Event	T6	attempted	EVENT	673
+Event	T7	engaged	EVENT	740
+Event	T8	resulted	EVENT	756
+Event	T9	overrunning	EVENT	778
+Event	T10	killed	EVENT	67
+Event	T11	take off	EVENT	686
+Event	T12	crashing	EVENT	805
+Relation	T11	T8	SuperSub	true	take off	resulted
+Relation	T8	T11	SubSuper	true	resulted	take off
+Relation	T1	T8	NoRel	true	chartered	resulted
+Relation	T11	T3	NoRel	true	take off	invited
+Relation	T12	T8	NoRel	true	crashing	resulted
+Relation	T12	T9	NoRel	true	crashing	overrunning
+Relation	T2	T4	NoRel	true	trip	accept
+Relation	T4	T1	NoRel	true	accept	chartered
+Relation	T4	T12	NoRel	true	accept	crashing
+Relation	T4	T7	NoRel	true	accept	engaged
+Relation	T4	T9	NoRel	true	accept	overrunning
+Relation	T5	T0	NoRel	true	consisted	crash
+Relation	T6	T10	NoRel	true	attempted	killed
+Relation	T6	T9	NoRel	true	attempted	overrunning
+Relation	T8	T1	NoRel	true	resulted	chartered

@@ -1,0 +1,41 @@
+Text	The plane and house burn and both crew are killed .	Six escape from the house but one man is burned when he returns inside to retrieve hidden money .	The plane had departed from the 32d Division hangar , Illinois National Guard , at the Municipal Airport , and although pre-flight showed no problems , the fuel feed line apparently failed as witnesses reported seeing gas streaming from the plane before the crash .	Lt. Fargo was a Chicago native whose family is well known in society , while Lt. Sandusky was a wartime combat pilot and a salesman for an automobile concern .	10 May : Sole Lockheed Y1C - 12 Vega ,__ 31- 405_ , c / n 158 , of the 59th Service Squadron , a Lockheed DL - 1 Vega acquired by the Army Air Corps for service tests and evaluation , is moderately damaged at Langley Field , Virginia , while piloted by Thomas D. Ferguson .
+Event	T0	burn	EVENT	20
+Event	T1	killed	EVENT	43
+Event	T2	escape	EVENT	56
+Event	T3	burned	EVENT	93
+Event	T4	returns	EVENT	108
+Event	T5	retrieve	EVENT	126
+Event	T6	departed	EVENT	164
+Event	T7	showed	EVENT	281
+Event	T8	problems	EVENT	291
+Event	T9	failed	EVENT	332
+Event	T10	seeing	EVENT	361
+Event	T11	streaming	EVENT	372
+Event	T12	crash	EVENT	408
+Event	T13	acquired	EVENT	694
+Event	T14	tests	EVENT	737
+Event	T15	evaluation	EVENT	747
+Event	T16	damaged	EVENT	774
+Event	T17	piloted	EVENT	818
+Relation	T2	T3	SuperSub	true	escape	burned
+Relation	T3	T2	SubSuper	true	burned	escape
+Relation	T6	T9	SuperSub	true	departed	failed
+Relation	T9	T6	SubSuper	true	failed	departed
+Relation	T11	T12	SuperSub	true	streaming	crash
+Relation	T12	T11	SubSuper	true	crash	streaming
+Relation	T0	T4	NoRel	true	burn	returns
+Relation	T10	T3	NoRel	true	seeing	burned
+Relation	T11	T9	NoRel	true	streaming	failed
+Relation	T13	T0	NoRel	true	acquired	burn
+Relation	T13	T11	NoRel	true	acquired	streaming
+Relation	T16	T8	NoRel	true	damaged	problems
+Relation	T17	T13	NoRel	true	piloted	acquired
+Relation	T17	T8	NoRel	true	piloted	problems
+Relation	T4	T11	NoRel	true	returns	streaming
+Relation	T6	T1	NoRel	true	departed	killed
+Relation	T7	T1	NoRel	true	showed	killed
+Relation	T7	T16	NoRel	true	showed	damaged
+Relation	T7	T17	NoRel	true	showed	piloted
+Relation	T9	T14	NoRel	true	failed	tests
+Relation	T9	T15	NoRel	true	failed	evaluation
+Relation	T9	T7	NoRel	true	failed	showed

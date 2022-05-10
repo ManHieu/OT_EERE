@@ -1,0 +1,16 @@
+Text	Böylece Ali , 20.000 kişilik ordusu ile Aişe’nin karşısına çıktı .	Halife Osman’ın öldürülmesi ve yerine Ali’nin halife seçilmesi ile birlikte Emevî - Hâşimî mücadelesi yeniden başladı .	Şam Valisi Muaviye , öldürülen akrabası Halife Osman’ın kanını Ali’den talep ederek onun ölümünden Ali’yi mes'ul tuttu .	MUAVIYE , Ali halife seçildiğinde ilk iş olarak Osman zamanında tayin edilmiş olan valileri görevden aldı ve böylece valileri değiştirmede acele etmemesi kendisine tavsiye edilmiş olmasına rağmen bunu dikkate almamış oldu .	Görevden alınan ve çoğu Emevi sülalesinden olan valiler , yeni halifeye tepkilerini gösterdiler .
+Event	T0	çıktı	EVENT	59
+Event	T1	öldürülmesi	EVENT	83
+Event	T2	seçilmesi	EVENT	120
+Event	T4	başladı	EVENT	177
+Event	T5	öldürülen	EVENT	208
+Event	T8	tuttu	EVENT	300
+Event	T9	seçildiğinde	EVENT	329
+Event	T3	ederek	EVENT	264
+Event	T6	aldı	EVENT	409
+Event	T7	edilmiş	EVENT	378
+Event	T10	gösterdiler	EVENT	616
+Relation	T10	T8	NoRel	true	gösterdiler	tuttu
+Relation	T3	T5	NoRel	true	ederek	öldürülen
+Relation	T5	T9	NoRel	true	öldürülen	seçildiğinde
+Relation	T8	T7	NoRel	true	tuttu	edilmiş

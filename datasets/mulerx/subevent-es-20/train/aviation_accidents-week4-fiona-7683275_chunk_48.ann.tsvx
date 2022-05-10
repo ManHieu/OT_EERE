@@ -1,0 +1,50 @@
+Text	En Uruguay , el Club Nacional de Football jugó , ante Juventud por la fecha 14 del Campeonato Uruguayo 2016 , luciendo una camiseta con el escudo del equipo brasileño , mientras que el Club Atlético Peñarol se presentó ante River Plate luciendo una equipación color verde que además portaba el escudo del equipo .	Danubio también se sumó a esta iniciativa , por lo que salió al campo frente a Fénix con una equipación especial conmemorativa .	En Perú , en las semifinales del campeonato , el partido de Sporting Cristal debutaría una camiseta color verde por única vez en su historia ante Deportivo Municipal en homenaje a las víctimas del vuelo de Chapecoense , de igual modo el duelo entre Universitario y F. B. C. Melgar se le otorgó un minuto de silencio .	Al ser recibidos en la Casa Rosada , los integrantes del plantel argentino de tenis que obtuvo la Copa Davis junto al presidente Mauricio Macri realizaron un minuto de silencio por la tragedia .	También se rindieron homenajes en varios partidos de la NBA .
+Event	T0	jugó	EVENT	42
+Event	T1	luciendo	EVENT	110
+Event	T2	presentó	EVENT	210
+Event	T3	luciendo	EVENT	236
+Event	T4	equipación	EVENT	249
+Event	T5	sumó	EVENT	333
+Event	T6	iniciativa	EVENT	345
+Event	T7	salió	EVENT	369
+Event	T8	semifinales	EVENT	460
+Event	T9	partido	EVENT	492
+Event	T10	debutaría	EVENT	520
+Event	T11	homenaje	EVENT	612
+Event	T12	víctimas	EVENT	627
+Event	T13	vuelo	EVENT	640
+Event	T14	duelo	EVENT	680
+Event	T15	otorgó	EVENT	730
+Event	T16	silencio	EVENT	750
+Event	T17	recibidos	EVENT	768
+Event	T18	obtuvo	EVENT	849
+Event	T19	realizaron	EVENT	905
+Event	T20	tragedia	EVENT	945
+Event	T21	homenajes	EVENT	977
+Relation	T16	T14	SuperSub	true	silencio	duelo
+Relation	T14	T16	SubSuper	true	duelo	silencio
+Relation	T12	T21	SuperSub	true	víctimas	homenajes
+Relation	T21	T12	SubSuper	true	homenajes	víctimas
+Relation	T10	T17	NoRel	true	debutaría	recibidos
+Relation	T12	T4	NoRel	true	víctimas	equipación
+Relation	T14	T19	NoRel	true	duelo	realizaron
+Relation	T14	T4	NoRel	true	duelo	equipación
+Relation	T17	T11	NoRel	true	recibidos	homenaje
+Relation	T17	T9	NoRel	true	recibidos	partido
+Relation	T18	T10	NoRel	true	obtuvo	debutaría
+Relation	T18	T9	NoRel	true	obtuvo	partido
+Relation	T19	T13	NoRel	true	realizaron	vuelo
+Relation	T2	T11	NoRel	true	presentó	homenaje
+Relation	T2	T4	NoRel	true	presentó	equipación
+Relation	T20	T21	NoRel	true	tragedia	homenajes
+Relation	T21	T2	NoRel	true	homenajes	presentó
+Relation	T21	T7	NoRel	true	homenajes	salió
+Relation	T3	T15	NoRel	true	luciendo	otorgó
+Relation	T4	T3	NoRel	true	equipación	luciendo
+Relation	T7	T11	NoRel	true	salió	homenaje
+Relation	T7	T13	NoRel	true	salió	vuelo
+Relation	T7	T18	NoRel	true	salió	obtuvo
+Relation	T7	T21	NoRel	true	salió	homenajes
+Relation	T7	T6	NoRel	true	salió	iniciativa
+Relation	T8	T17	NoRel	true	semifinales	recibidos
+Relation	T8	T3	NoRel	true	semifinales	luciendo

@@ -1,0 +1,15 @@
+Text	جب اس مرد ضعیف نے اور اس کی بیوی پیرو نے جہاز میں داخل ہو کر دروازہ بند کر لیا تو زیوس نے طوفان برپا کر دیا ۔	چالیس رات مینہ برسا ۔	آخرکشی پر_ناک کی چوٹیوں سے آن گئی ۔	امریکی قبائل نہوا میں بھی بابلی ، سیری داستانوں سے ملتی جلتی داستانیں موجود ہیں ۔	ان کے دیوتا ططلان نے نتا نامی ایک شخص کو صنوبر کا درخت کھوکھلا کر کے ایک کشتی بنانے کو کہا تاکہ نتا اپنی بیوی نینا سمیت آنے والے طوفان سے پچ سکیں ۔
+Event	T0	برپا	EVENT	96
+Event	T1	آخرکشی	EVENT	132
+Event	T2	گئی	EVENT	162
+Event	T3	بنانے	EVENT	328
+Event	T4	کہا	EVENT	337
+Event	T5	آنے	EVENT	370
+Event	T6	طوفان	EVENT	379
+Event	T7	پچ	EVENT	388
+Event	T8	داخل	EVENT	50
+Relation	T3	T4	SuperSub	true	بنانے	کہا
+Relation	T4	T3	SubSuper	true	کہا	بنانے
+Relation	T1	T6	NoRel	true	آخرکشی	طوفان
+Relation	T7	T1	NoRel	true	پچ	آخرکشی
+Relation	T8	T2	NoRel	true	داخل	گئی

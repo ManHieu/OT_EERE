@@ -1,0 +1,44 @@
+Text	- Un perro de trabajo militar estadounidense .	Los treinta estadounidenses muertos representan la mayor pérdida de vidas militares estadounidenses en un único incidente en la década de duración de la Guerra de Afganistán que comenzó en 2001 .	En ese mismo día por la tarde , una inundación repentina barrió la zona arrasando con partes de los restos .	Los primeros informes de los medios sugirieron que el ejército había tardado en recuperar las grabadoras de vuelo del Chinook derribado y , como consecuencia , las grabadoras habían sido arrastradas por la inundación .	Estos informes eran erróneos , pues la estructura del CH-47D no contiene cajas negras ( aunque el variante MH-47 tienen un registrador de datos de vuelo y voces de cabina ) .
+Event	T0	representan	EVENT	83
+Event	T1	pérdida	EVENT	104
+Event	T2	incidente	EVENT	159
+Event	T3	Guerra	EVENT	200
+Event	T4	comenzó	EVENT	225
+Event	T5	barrió	EVENT	300
+Event	T6	arrasando	EVENT	315
+Event	T7	informes	EVENT	365
+Event	T8	sugirieron	EVENT	388
+Event	T9	tardado	EVENT	421
+Event	T10	recuperar	EVENT	432
+Event	T11	vuelo	EVENT	460
+Event	T12	derribado	EVENT	478
+Event	T13	arrastradas	EVENT	539
+Event	T14	inundación	EVENT	558
+Event	T15	informes	EVENT	577
+Event	T16	inundación	EVENT	279
+Relation	T3	T2	SuperSub	true	Guerra	incidente
+Relation	T2	T3	SubSuper	true	incidente	Guerra
+Relation	T5	T6	SuperSub	true	barrió	arrasando
+Relation	T6	T5	SubSuper	true	arrasando	barrió
+Relation	T2	T16	SuperSub	true	incidente	inundación
+Relation	T16	T2	SubSuper	true	inundación	incidente
+Relation	T1	T2	NoRel	true	pérdida	incidente
+Relation	T10	T0	NoRel	true	recuperar	representan
+Relation	T12	T11	NoRel	true	derribado	vuelo
+Relation	T12	T3	NoRel	true	derribado	Guerra
+Relation	T12	T9	NoRel	true	derribado	tardado
+Relation	T13	T0	NoRel	true	arrastradas	representan
+Relation	T15	T1	NoRel	true	informes	pérdida
+Relation	T15	T14	NoRel	true	informes	inundación
+Relation	T15	T6	NoRel	true	informes	arrasando
+Relation	T16	T4	NoRel	true	inundación	comenzó
+Relation	T2	T13	NoRel	true	incidente	arrastradas
+Relation	T2	T6	NoRel	true	incidente	arrasando
+Relation	T3	T0	NoRel	true	Guerra	representan
+Relation	T3	T11	NoRel	true	Guerra	vuelo
+Relation	T4	T1	NoRel	true	comenzó	pérdida
+Relation	T4	T7	NoRel	true	comenzó	informes
+Relation	T5	T8	NoRel	true	barrió	sugirieron
+Relation	T8	T16	NoRel	true	sugirieron	inundación
+Relation	T9	T16	NoRel	true	tardado	inundación
+Relation	T9	T7	NoRel	true	tardado	informes

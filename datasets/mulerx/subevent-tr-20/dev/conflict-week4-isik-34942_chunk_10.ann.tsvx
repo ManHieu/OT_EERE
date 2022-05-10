@@ -1,0 +1,16 @@
+Text	Haçlılar bu sırada Bizans gemileriyle Yalova’ya oradan da İznik önlerine gelerek şehri kuşattılar .	I. Kılıç Arslan durumun önemini geç de olsa anladı ve derhal İznik yakınına döndüyse de şehir kuşatılmıştı ve büyük Haçlı ordusuyla baş edemeyeceğine karar vererek geri çekildi .	Beş hafta kuşatmaya dayanan İznik 17 Haziran 1097’de Bizans’a teslim edildi .	I. Kılıç Arslan'da 1097 yılında başkent'i İznik'den Konya'ya taşımak zorunda kaldı .	Anadolu içlerine çekilen Kılıç Arslan Dânişmend Gazi ve Kayseri emiri Hasan ile ittifak yaptı .
+Event	T0	kuşattılar	EVENT	87
+Event	T1	döndüyse	EVENT	176
+Event	T2	kuşatılmıştı	EVENT	194
+Event	T4	çekildi	EVENT	269
+Event	T5	kuşatmaya	EVENT	289
+Event	T6	edildi	EVENT	348
+Event	T8	çekilen	EVENT	459
+Event	T9	yaptı	EVENT	530
+Event	T3	anladı	EVENT	144
+Event	T10	kaldı	EVENT	434
+Relation	T2	T0	NoRel	true	kuşatılmıştı	kuşattılar
+Relation	T3	T5	NoRel	true	anladı	kuşatmaya
+Relation	T6	T8	NoRel	true	edildi	çekilen
+Relation	T9	T10	NoRel	true	yaptı	kaldı
+Relation	T9	T3	NoRel	true	yaptı	anladı

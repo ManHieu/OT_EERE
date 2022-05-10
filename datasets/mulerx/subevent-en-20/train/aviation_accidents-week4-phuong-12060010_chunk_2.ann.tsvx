@@ -1,0 +1,36 @@
+Text	Next he came with an idea of flying around the world in PWS - 52 aircraft , but it was abandoned due to lack of funding .	From March 1933 he worked in Aviation Technical Research Institute in Warsaw as a test pilot .	On 11 September 1933 Józef Lewoniewski with Colonel Czesław Filipowicz , attempted at breaking world 's record of flight distance in tourist planes category , on Warsaw - Krasnoyarsk route , flying modified PZL. 19 plane .	After 8 and a half hours , the plane went into a spin due to an air turbulence , it was brought under control , but it was too low and it hit the ground near Kazan .	Lewoniewski was killed , while Filipowicz was slightly injured .
+Event	T0	came	EVENT	8
+Event	T1	idea	EVENT	21
+Event	T2	flying	EVENT	29
+Event	T3	worked	EVENT	141
+Event	T4	attempted	EVENT	290
+Event	T5	breaking	EVENT	303
+Event	T6	modified	EVENT	415
+Event	T7	turbulence	EVENT	508
+Event	T8	killed	EVENT	622
+Event	T9	injured	EVENT	661
+Event	T10	lack of funding	EVENT	104
+Event	T11	abandoned	EVENT	87
+Event	T12	spin	EVENT	489
+Event	T13	under control	EVENT	536
+Event	T14	too low	EVENT	563
+Event	T15	hit	EVENT	578
+Relation	T0	T7	NoRel	true	came	turbulence
+Relation	T0	T8	NoRel	true	came	killed
+Relation	T1	T0	NoRel	true	idea	came
+Relation	T11	T0	NoRel	true	abandoned	came
+Relation	T11	T2	NoRel	true	abandoned	flying
+Relation	T11	T3	NoRel	true	abandoned	worked
+Relation	T12	T1	NoRel	true	spin	idea
+Relation	T12	T3	NoRel	true	spin	worked
+Relation	T13	T1	NoRel	true	under control	idea
+Relation	T13	T9	NoRel	true	under control	injured
+Relation	T14	T1	NoRel	true	too low	idea
+Relation	T2	T13	NoRel	true	flying	under control
+Relation	T2	T15	NoRel	true	flying	hit
+Relation	T3	T6	NoRel	true	worked	modified
+Relation	T4	T3	NoRel	true	attempted	worked
+Relation	T5	T3	NoRel	true	breaking	worked
+Relation	T8	T7	NoRel	true	killed	turbulence
+Relation	T9	T14	NoRel	true	injured	too low
+Relation	T9	T4	NoRel	true	injured	attempted

@@ -1,0 +1,25 @@
+Text	El tren pasó por la aguja de desvío con exceso de velocidad y fue encaminado hacia la vía 3 .	Sin embargo tras recorrer 44 metros descarriló y se salió de la vía siguiendo la tangente del desvío .	La cabeza de la composición impactó contra el paso superior de la carretera N-120 , que desvió la composición de nuevo hacia las vías haciendo que el tren finalmente se detuviera encima de la vía 5 .	En el accidente fallecieron cuatro personas : el maquinista , el interventor y dos pasajeros .	Resultaron heridos 47 pasajeros , 13 de ellos graves .
+Event	T0	pasó	EVENT	8
+Event	T1	desvío	EVENT	29
+Event	T2	encaminado	EVENT	66
+Event	T3	recorrer	EVENT	111
+Event	T4	descarriló	EVENT	130
+Event	T5	salió	EVENT	146
+Event	T6	desvío	EVENT	188
+Event	T7	impactó	EVENT	225
+Event	T8	desvió	EVENT	285
+Event	T9	haciendo	EVENT	331
+Event	T10	detuviera	EVENT	366
+Event	T11	fallecieron	EVENT	413
+Event	T12	heridos	EVENT	503
+Event	T13	accidente	EVENT	403
+Relation	T11	T0	NoRel	true	fallecieron	pasó
+Relation	T13	T7	NoRel	true	accidente	impactó
+Relation	T2	T3	NoRel	true	encaminado	recorrer
+Relation	T3	T12	NoRel	true	recorrer	heridos
+Relation	T3	T8	NoRel	true	recorrer	desvió
+Relation	T4	T2	NoRel	true	descarriló	encaminado
+Relation	T6	T1	NoRel	true	desvío	desvío
+Relation	T7	T0	NoRel	true	impactó	pasó
+Relation	T8	T6	NoRel	true	desvió	desvío
+Relation	T9	T8	NoRel	true	haciendo	desvió

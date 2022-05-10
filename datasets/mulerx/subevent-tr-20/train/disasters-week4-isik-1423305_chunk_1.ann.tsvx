@@ -1,0 +1,19 @@
+Text	Fay hattının bulunduğu kesimde milyonlarca yırtılma tespit edildi .	Illinois'daki ilk yer sarsıntısı 1795 yılında gerçekleşti .	Bu deprem küçük ölçekli bir sarsıntıya yol açtı ve fazla bir hasara neden olmadı .	1909 yılının mayıs ve temmuz aylarında orta ölçekli depremler yaşan bölge 1968 yılında da orta şiddetli bir yer sarsıntısıyla sallanmıştır .	Bu bölgede kayıtlara geçen depremlerin tarihleri sırası ile : 1838 , 1857 , 1876 , 1881 , 1882 , 1883 , 1887 , 1891 , 1903 , 1905 , 1912 , 1917 , 1922 , 1934 , 1939 , 1947 , 1953 , 1955 , ve 1958 depremleridir .
+Event	T0	edildi	EVENT	59
+Event	T1	sarsıntısı	EVENT	90
+Event	T2	gerçekleşti	EVENT	114
+Event	T3	deprem	EVENT	131
+Event	T4	açtı	EVENT	171
+Event	T5	sallanmıştır	EVENT	337
+Event	T6	depremleridir	EVENT	548
+Event	T7	Fay	EVENT	0
+Event	T8	olmadı	EVENT	202
+Event	T9	depremler	EVENT	263
+Event	T10	sarsıntısıyla	EVENT	323
+Event	T11	depremlerin	EVENT	379
+Relation	T10	T4	NoRel	true	sarsıntısıyla	açtı
+Relation	T11	T3	NoRel	true	depremlerin	deprem
+Relation	T2	T5	NoRel	true	gerçekleşti	sallanmıştır
+Relation	T3	T7	NoRel	true	deprem	Fay
+Relation	T4	T7	NoRel	true	açtı	Fay
+Relation	T7	T5	NoRel	true	Fay	sallanmıştır

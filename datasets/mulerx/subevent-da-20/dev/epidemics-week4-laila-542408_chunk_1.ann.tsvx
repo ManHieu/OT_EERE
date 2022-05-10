@@ -1,0 +1,84 @@
+Text	Spillet ændrede sig drastisk som følge heraf , da spillere gjorde hvad de kunne for at undgå at blive inficerede .	På trods af forholdsregler som programmør-skabte karantæner , samt spilleres valg om at holde sig væk fra tæt befolkede områder ( eller blot helt undlade at spille spillet i en periode ) blev epidemien i sidste ende kun bragt under kontrol via en kombination af patches og ved at genstarte den virtuelle verden .	Betingelserne og reaktionerne ved hændelsen tiltrak sig opmærksomhed fra epidemiologer , da den kunne tjene som eksempel på hvordan mennesker i den virkelige verden ville reagere på en ægte epidemi .	Folk der arbejder med anti-terrorisme holdt ligeledes øje med begivenheden , da visse spillere planlagde og udførte tiltag , der spredte epidemien .	
+Event	T0	ændrede	EVENT	8
+Event	T1	gjorde	EVENT	59
+Event	T2	inficerede	EVENT	102
+Event	T3	karantæner	EVENT	164
+Event	T4	valg	EVENT	192
+Event	T5	undlade	EVENT	261
+Event	T6	epidemien	EVENT	307
+Event	T7	kontrol	EVENT	347
+Event	T8	kombination	EVENT	362
+Event	T9	patches	EVENT	377
+Event	T10	genstarte	EVENT	395
+Event	T11	tiltrak	EVENT	472
+Event	T12	reagere	EVENT	599
+Event	T13	epidemi	EVENT	618
+Event	T14	holdt	EVENT	666
+Event	T15	planlagde	EVENT	723
+Event	T16	tiltag	EVENT	744
+Event	T17	epidemien	EVENT	765
+Event	T18	Spillet	EVENT	0
+Event	T19	undgå	EVENT	87
+Event	T20	holde sig væk	EVENT	203
+Event	T21	spille	EVENT	272
+Event	T22	Betingelserne	EVENT	428
+Event	T23	reaktionerne	EVENT	445
+Event	T24	tjene	EVENT	530
+Event	T25	arbejder	EVENT	637
+Event	T26	hændelsen	EVENT	462
+Event	T27	spredte	EVENT	757
+Event	T28	opmærksomhed	EVENT	484
+Relation	T26	T28	SuperSub	true	hændelsen	opmærksomhed
+Relation	T28	T26	SubSuper	true	opmærksomhed	hændelsen
+Relation	T0	T14	NoRel	true	ændrede	holdt
+Relation	T0	T21	NoRel	true	ændrede	spille
+Relation	T0	T23	NoRel	true	ændrede	reaktionerne
+Relation	T1	T18	NoRel	true	gjorde	Spillet
+Relation	T10	T12	NoRel	true	genstarte	reagere
+Relation	T11	T0	NoRel	true	tiltrak	ændrede
+Relation	T11	T22	NoRel	true	tiltrak	Betingelserne
+Relation	T12	T2	NoRel	true	reagere	inficerede
+Relation	T14	T11	NoRel	true	holdt	tiltrak
+Relation	T14	T2	NoRel	true	holdt	inficerede
+Relation	T14	T21	NoRel	true	holdt	spille
+Relation	T15	T16	NoRel	true	planlagde	tiltag
+Relation	T15	T23	NoRel	true	planlagde	reaktionerne
+Relation	T15	T24	NoRel	true	planlagde	tjene
+Relation	T16	T13	NoRel	true	tiltag	epidemi
+Relation	T17	T28	NoRel	true	epidemien	opmærksomhed
+Relation	T18	T19	NoRel	true	Spillet	undgå
+Relation	T18	T8	NoRel	true	Spillet	kombination
+Relation	T2	T26	NoRel	true	inficerede	hændelsen
+Relation	T20	T0	NoRel	true	holde sig væk	ændrede
+Relation	T20	T22	NoRel	true	holde sig væk	Betingelserne
+Relation	T21	T10	NoRel	true	spille	genstarte
+Relation	T21	T2	NoRel	true	spille	inficerede
+Relation	T21	T20	NoRel	true	spille	holde sig væk
+Relation	T21	T22	NoRel	true	spille	Betingelserne
+Relation	T23	T9	NoRel	true	reaktionerne	patches
+Relation	T24	T10	NoRel	true	tjene	genstarte
+Relation	T24	T23	NoRel	true	tjene	reaktionerne
+Relation	T25	T13	NoRel	true	arbejder	epidemi
+Relation	T25	T2	NoRel	true	arbejder	inficerede
+Relation	T25	T24	NoRel	true	arbejder	tjene
+Relation	T26	T1	NoRel	true	hændelsen	gjorde
+Relation	T26	T19	NoRel	true	hændelsen	undgå
+Relation	T26	T20	NoRel	true	hændelsen	holde sig væk
+Relation	T27	T1	NoRel	true	spredte	gjorde
+Relation	T27	T17	NoRel	true	spredte	epidemien
+Relation	T27	T9	NoRel	true	spredte	patches
+Relation	T28	T10	NoRel	true	opmærksomhed	genstarte
+Relation	T3	T2	NoRel	true	karantæner	inficerede
+Relation	T4	T0	NoRel	true	valg	ændrede
+Relation	T4	T10	NoRel	true	valg	genstarte
+Relation	T4	T18	NoRel	true	valg	Spillet
+Relation	T5	T15	NoRel	true	undlade	planlagde
+Relation	T5	T25	NoRel	true	undlade	arbejder
+Relation	T6	T1	NoRel	true	epidemien	gjorde
+Relation	T7	T10	NoRel	true	kontrol	genstarte
+Relation	T7	T12	NoRel	true	kontrol	reagere
+Relation	T7	T24	NoRel	true	kontrol	tjene
+Relation	T8	T11	NoRel	true	kombination	tiltrak
+Relation	T8	T22	NoRel	true	kombination	Betingelserne
+Relation	T8	T23	NoRel	true	kombination	reaktionerne
+Relation	T9	T8	NoRel	true	patches	kombination

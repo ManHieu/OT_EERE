@@ -1,0 +1,35 @@
+Text	Yedinci Haçlı Seferi , Fransa Kralı IX. Louis tarafından sevk ve idare edildi .	Mısır'da Dimyat'ı zapteden IX. Louis buradan Kahire üzerine yürüdü .	Ama Mansure kalesi õnünde yapılan Mansure Muharebesi'ni kaybetti .	Dimyat'a geri çekilmekte iken Fariskur Muharebesi'nde Haçlı ordusu tamamiyle bozguna uğratılıp elemine edildi ve Fransız Kralı esir düştü .	Dimyat'ı geri vermek kaydıyla ve büyük bir fidye ödedikten sonra serbest bırakıldı ve 4 yıl sonra ülkesine geri döndü .
+Event	T0	sevk	EVENT	57
+Event	T1	edildi	EVENT	71
+Event	T2	zapteden	EVENT	98
+Event	T3	yürüdü	EVENT	140
+Event	T5	kaybetti	EVENT	205
+Event	T6	çekilmekte	EVENT	230
+Event	T7	edildi	EVENT	319
+Event	T8	düştü	EVENT	348
+Event	T10	ödedikten	EVENT	405
+Event	T11	döndü	EVENT	468
+Event	T12	Yedinci Haçlı Seferi	EVENT	0
+Event	T4	Mansure Muharebesi'ni	EVENT	183
+Event	T13	bırakıldı	EVENT	429
+Event	T9	kaydıyla	EVENT	377
+Event	T14	Fariskur Muharebesi'nde	EVENT	246
+Relation	T12	T3	SuperSub	true	Yedinci Haçlı Seferi	yürüdü
+Relation	T3	T12	SubSuper	true	yürüdü	Yedinci Haçlı Seferi
+Relation	T12	T4	SuperSub	true	Yedinci Haçlı Seferi	Mansure Muharebesi'ni
+Relation	T4	T12	SubSuper	true	Mansure Muharebesi'ni	Yedinci Haçlı Seferi
+Relation	T12	T14	SuperSub	true	Yedinci Haçlı Seferi	Fariskur Muharebesi'nde
+Relation	T14	T12	SubSuper	true	Fariskur Muharebesi'nde	Yedinci Haçlı Seferi
+Relation	T0	T13	NoRel	true	sevk	bırakıldı
+Relation	T1	T7	NoRel	true	edildi	edildi
+Relation	T10	T4	NoRel	true	ödedikten	Mansure Muharebesi'ni
+Relation	T12	T13	NoRel	true	Yedinci Haçlı Seferi	bırakıldı
+Relation	T13	T9	NoRel	true	bırakıldı	kaydıyla
+Relation	T2	T10	NoRel	true	zapteden	ödedikten
+Relation	T2	T3	NoRel	true	zapteden	yürüdü
+Relation	T3	T1	NoRel	true	yürüdü	edildi
+Relation	T5	T7	NoRel	true	kaybetti	edildi
+Relation	T6	T10	NoRel	true	çekilmekte	ödedikten
+Relation	T7	T8	NoRel	true	edildi	düştü
+Relation	T8	T1	NoRel	true	düştü	edildi
+Relation	T9	T8	NoRel	true	kaydıyla	düştü

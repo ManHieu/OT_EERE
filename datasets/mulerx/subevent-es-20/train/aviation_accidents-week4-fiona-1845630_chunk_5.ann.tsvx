@@ -1,0 +1,31 @@
+Text	A las 13:25 el avión estaba en la pista 36L con autorización para despegar cuando la tripulación detectó que la sonda de temperatura RAT ( _ Ram Air Temperature _ ) daba una indicación anormalmente alta .	El comandante avisó de que el avión tenía una avería , suspendió el despegue y regresó a la plataforma para que los técnicos de la compañía la revisaran .	Los pasajeros esperaron dentro del avión .	Los técnicos de mantenimiento confirmaron que el circuito de calefacción de la sonda RAT estaba averiado .	Utilizaron hielo seco para enfriar el sensor .
+Event	T0	autorización	EVENT	48
+Event	T1	despegar	EVENT	66
+Event	T2	detectó	EVENT	97
+Event	T3	daba	EVENT	165
+Event	T4	avisó	EVENT	219
+Event	T5	avería	EVENT	251
+Event	T6	suspendió	EVENT	260
+Event	T7	despegue	EVENT	273
+Event	T8	regresó	EVENT	284
+Event	T9	revisaran	EVENT	348
+Event	T10	esperaron	EVENT	374
+Event	T11	confirmaron	EVENT	433
+Event	T12	averiado	EVENT	499
+Event	T13	Utilizaron	EVENT	510
+Event	T14	enfriar	EVENT	537
+Relation	T6	T8	SuperSub	true	suspendió	regresó
+Relation	T8	T6	SubSuper	true	regresó	suspendió
+Relation	T9	T11	SuperSub	true	revisaran	confirmaron
+Relation	T11	T9	SubSuper	true	confirmaron	revisaran
+Relation	T0	T13	NoRel	true	autorización	Utilizaron
+Relation	T1	T10	NoRel	true	despegar	esperaron
+Relation	T10	T8	NoRel	true	esperaron	regresó
+Relation	T11	T4	NoRel	true	confirmaron	avisó
+Relation	T12	T6	NoRel	true	averiado	suspendió
+Relation	T13	T4	NoRel	true	Utilizaron	avisó
+Relation	T4	T14	NoRel	true	avisó	enfriar
+Relation	T4	T2	NoRel	true	avisó	detectó
+Relation	T4	T6	NoRel	true	avisó	suspendió
+Relation	T6	T5	NoRel	true	suspendió	avería
+Relation	T8	T14	NoRel	true	regresó	enfriar

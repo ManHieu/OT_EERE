@@ -1,0 +1,45 @@
+Text	thumb| آخری امریکی فوجی 30 اگست 2021 افغانستان سے جاتے ہوئے انیس سال تک جنگ میں ناکامی کے بعد امریکہ نے طالبان سے 29 فروری 2020 کو دوحہ میں امن معاہدہ کرلیا جس کے مطابق تمام غیر ملکی افواج نے چودہ ماہ میں افغانستان سے انخلا کرنا تھا اور طالبان نے غیر ملکی افواج پر حملے بند کرنے تھے ۔	دوحہ معاہدے کے چودہ ماہ بعد کافی حد تک غیر ملکی افواج انخلا کرچکی تھی ۔	یکم مئی 2021 کو طالبان نے کٹھ پتلی افغان حکومت کے خلاف ایک مسلح کاروائی شروع کی اور بمشکل ساڑھے تین ماہ میں بیشتر افغان علاقوں کو فتح کرلیا اور 15 اگست 2021ء کو طالبان نے بغیر کسی مزاحمت کے کابل دوبارہ فتح کر کے اسلامی امارت افغانستان کو بحال کر دیا ۔۔	30 اگست کو بقیہ غیر ملکی افواج بھی انخلا کرگئیں ۔	17 اگست کو بقیا افغان فوج اور حکومتی عہدیداروں نے صوبہ پنجشیر میں امراللہ صالح اور احمد مسعود کی قیادت میں ایک حکومت قائم کی اور طالبان کے خلاف مسلح کارروائیوں کا آغاز کیا اور 6 ستمبر تک شکست کھا گئے اور طالبان پنجشیر میں داخل ہوگئے ۔
+Event	T0	جنگ	EVENT	72
+Event	T1	ناکامی	EVENT	80
+Event	T3	انخلا	EVENT	339
+Event	T5	مزاحمت	EVENT	537
+Event	T6	فتح	EVENT	559
+Event	T7	بحال	EVENT	595
+Event	T10	کارروائیوں	EVENT	809
+Event	T13	جاتے	EVENT	50
+Event	T14	معاہدہ	EVENT	144
+Event	T2	انخلا	EVENT	218
+Event	T15	حملے	EVENT	265
+Event	T16	کاروائی	EVENT	421
+Event	T17	فتح	EVENT	487
+Event	T4	انخلا	EVENT	645
+Event	T8	قائم	EVENT	777
+Event	T9	آغاز	EVENT	823
+Event	T18	شکست	EVENT	847
+Event	T11	داخل	EVENT	882
+Relation	T14	T13	SuperSub	true	معاہدہ	جاتے
+Relation	T13	T14	SubSuper	true	جاتے	معاہدہ
+Relation	T7	T6	SuperSub	true	بحال	فتح
+Relation	T6	T7	SubSuper	true	فتح	بحال
+Relation	T7	T17	SuperSub	true	بحال	فتح
+Relation	T17	T7	SubSuper	true	فتح	بحال
+Relation	T1	T10	NoRel	true	ناکامی	کارروائیوں
+Relation	T1	T3	NoRel	true	ناکامی	انخلا
+Relation	T10	T1	NoRel	true	کارروائیوں	ناکامی
+Relation	T10	T16	NoRel	true	کارروائیوں	کاروائی
+Relation	T11	T0	NoRel	true	داخل	جنگ
+Relation	T11	T1	NoRel	true	داخل	ناکامی
+Relation	T14	T9	NoRel	true	معاہدہ	آغاز
+Relation	T15	T11	NoRel	true	حملے	داخل
+Relation	T18	T15	NoRel	true	شکست	حملے
+Relation	T18	T5	NoRel	true	شکست	مزاحمت
+Relation	T5	T11	NoRel	true	مزاحمت	داخل
+Relation	T5	T18	NoRel	true	مزاحمت	شکست
+Relation	T5	T4	NoRel	true	مزاحمت	انخلا
+Relation	T6	T4	NoRel	true	فتح	انخلا
+Relation	T6	T5	NoRel	true	فتح	مزاحمت
+Relation	T7	T16	NoRel	true	بحال	کاروائی
+Relation	T7	T18	NoRel	true	بحال	شکست
+Relation	T7	T5	NoRel	true	بحال	مزاحمت
+Relation	T8	T4	NoRel	true	قائم	انخلا
+Relation	T9	T6	NoRel	true	آغاز	فتح

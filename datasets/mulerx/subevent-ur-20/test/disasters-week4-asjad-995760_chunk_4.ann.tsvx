@@ -1,0 +1,37 @@
+Text	صوبائی ڈیزاسٹر مینجمنٹ اتھارٹی ( خیبر پختونخوا ) ( پی ڈی ایم اے ) کے مطابق ضلع ہرنائی اور شاہراگ کے علاقے میں شدید نقصان کی اطلاع ملی ، جہاں 100 سے زائد کچے گھر تباہ ہوئے ۔	سبی اور کوئٹہ میں بھی نقصان کی اطلاع ملی ۔	صوبائی وزیر میر ضیاء اللہ لانگاؤ نے کہا کہ لینڈ سلائیڈنگ نے متاثرہ علاقے کی طرف جانے والی سڑکیں بند کر دی ہیں ، جس سے امدادی اور بحالی کی کوششیں متاثر ہو رہی ہیں ۔	متاثرہ علاقے میں گھروں کی اکثریت مٹی اور پتھر سے بنی ہوئی ہے جس کی وجہ سے وہ زلزلے سے گرنے یا شدید نقصان کا زیادہ خطرہ بنتے ہیں ۔	حکومت بلوچستان کے ڈپٹی کمشنر سہیل انور ہاشمی نے بتایا کہ زیادہ تر اموات چھت اور دیوار گرنے سے ہوئیں ۔
+Event	T0	نقصان	EVENT	115
+Event	T1	ملی	EVENT	130
+Event	T2	ہوئے	EVENT	166
+Event	T3	نقصان	EVENT	195
+Event	T4	ملی	EVENT	210
+Event	T5	کہا	EVENT	252
+Event	T6	سلائیڈنگ	EVENT	264
+Event	T7	بند	EVENT	312
+Event	T8	بحالی	EVENT	345
+Event	T9	متاثر	EVENT	361
+Event	T10	زلزلے	EVENT	457
+Event	T11	گرنے	EVENT	466
+Event	T12	بتایا	EVENT	558
+Event	T13	اموات	EVENT	576
+Event	T14	گرنے	EVENT	596
+Event	T15	ہوئیں	EVENT	604
+Relation	T0	T1	SuperSub	true	نقصان	ملی
+Relation	T1	T0	SubSuper	true	ملی	نقصان
+Relation	T3	T4	SuperSub	true	نقصان	ملی
+Relation	T4	T3	SubSuper	true	ملی	نقصان
+Relation	T6	T7	SuperSub	true	سلائیڈنگ	بند
+Relation	T7	T6	SubSuper	true	بند	سلائیڈنگ
+Relation	T0	T2	SuperSub	true	نقصان	ہوئے
+Relation	T2	T0	SubSuper	true	ہوئے	نقصان
+Relation	T0	T13	NoRel	true	نقصان	اموات
+Relation	T10	T11	NoRel	true	زلزلے	گرنے
+Relation	T11	T12	NoRel	true	گرنے	بتایا
+Relation	T12	T0	NoRel	true	بتایا	نقصان
+Relation	T12	T14	NoRel	true	بتایا	گرنے
+Relation	T14	T5	NoRel	true	گرنے	کہا
+Relation	T15	T1	NoRel	true	ہوئیں	ملی
+Relation	T2	T11	NoRel	true	ہوئے	گرنے
+Relation	T2	T14	NoRel	true	ہوئے	گرنے
+Relation	T3	T0	NoRel	true	نقصان	نقصان
+Relation	T3	T15	NoRel	true	نقصان	ہوئیں
+Relation	T7	T8	NoRel	true	بند	بحالی

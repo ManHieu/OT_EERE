@@ -1,0 +1,22 @@
+Text	El 9 de marzo se capturó las villas de Kajla , Jabar Minkal , Gubar .	EE.UU. anuncia el envío de 1000 soldados para la operación en Raqa , así como el despliegue de tropas en Manbij para disuadir a las FSA de asaltar al ciudad .	El 10 de marzo se liberó las granjas de al-Hajaj y al-Wedyan en Bīr al-Hiba y la villa de Mashhouri cerca de Jazra , así como las villas de Mat'ab and Al-Hajjaj .	El 15 de marzo continua la lucha interna en las SDF se acusa a las PYD de dinamitar un centro de la KNC que es un grupo opositor .	El 16 de marzo se anuncia la captura de Hamad a 40km de Raqa mientras continua el avance siguiendo la carretera que conecta con Deir ez Zor .
+Event	T0	capturó	EVENT	17
+Event	T1	anuncia	EVENT	77
+Event	T2	envío	EVENT	88
+Event	T3	operación	EVENT	119
+Event	T4	despliegue	EVENT	151
+Event	T5	disuadir	EVENT	187
+Event	T6	asaltar	EVENT	209
+Event	T7	liberó	EVENT	247
+Event	T8	continua	EVENT	407
+Event	T9	acusa	EVENT	447
+Event	T10	dinamitar	EVENT	466
+Event	T11	anuncia	EVENT	541
+Event	T12	captura	EVENT	552
+Event	T13	continua	EVENT	593
+Event	T14	conecta	EVENT	639
+Relation	T10	T0	NoRel	true	dinamitar	capturó
+Relation	T11	T7	NoRel	true	anuncia	liberó
+Relation	T12	T13	NoRel	true	captura	continua
+Relation	T13	T1	NoRel	true	continua	anuncia
+Relation	T2	T8	NoRel	true	envío	continua
+Relation	T3	T0	NoRel	true	operación	capturó

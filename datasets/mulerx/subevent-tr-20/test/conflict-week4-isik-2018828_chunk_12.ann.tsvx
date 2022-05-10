@@ -1,0 +1,26 @@
+Text	Mart ayında Musul'u IŞİD'den temizlemeye yönelik Peşmerge - Irak Ordusu ortaklığında bir operasyon başlatılmıştır .	ABD destekli koalisyon da havadan destek vermektedir .	Peşmerge , Irak Ordusu'nu IŞİD'e karşı yeterince çaba sarfetmemekle suçlamıştır .	Irak Ordusu'nun isteksizce savaştığı iddia edilmiştir .	Kategori : 2014'te çatışmalar Kategori : 2015'te çatışmalar Kategori : 2016'da çatışmalar Direniş , ABD'nin çekilmesi sonrası Direniş , ABD'nin çekilmesi sonrası Kategori : Din ve şiddet ABD'nin çekilmesi sonrası
+Event	T0	başlatılmıştır	EVENT	99
+Event	T1	vermektedir	EVENT	157
+Event	T2	suçlamıştır	EVENT	239
+Event	T3	edilmiştir	EVENT	296
+Event	T4	çekilmesi	EVENT	417
+Event	T5	Direniş	EVENT	435
+Event	T6	çekilmesi	EVENT	453
+Event	T7	şiddet	EVENT	489
+Event	T8	temizlemeye	EVENT	29
+Event	T9	operasyon	EVENT	89
+Event	T10	savaştığı	EVENT	280
+Event	T11	çatışmalar	EVENT	328
+Event	T12	çatışmalar	EVENT	358
+Event	T13	çatışmalar	EVENT	388
+Event	T14	Direniş	EVENT	399
+Event	T15	çekilmesi	EVENT	504
+Relation	T13	T7	NoRel	true	çatışmalar	şiddet
+Relation	T14	T13	NoRel	true	Direniş	çatışmalar
+Relation	T2	T13	NoRel	true	suçlamıştır	çatışmalar
+Relation	T3	T6	NoRel	true	edilmiştir	çekilmesi
+Relation	T4	T6	NoRel	true	çekilmesi	çekilmesi
+Relation	T6	T14	NoRel	true	çekilmesi	Direniş
+Relation	T6	T9	NoRel	true	çekilmesi	operasyon
+Relation	T7	T15	NoRel	true	şiddet	çekilmesi
+Relation	T8	T2	NoRel	true	temizlemeye	suçlamıştır

@@ -1,0 +1,48 @@
+Text	Los Autobots llevan de vuelta a los humanos a la casa de Sam a buscar los anteojos y casi revelan su existencia a los padres de Sam por accidente .	Sin embargo , el agente del sector 7 Seymour Simmons y su equipo encuentran a Sam y lo arrestan a él y a su familia , incluida Mikaela , para llevarlos a una localización clasificada después de enterarse de que Sam estuvo en contacto con los Autobots .	Optimus y los Autobots intentan rescatar a los dos humanos , pero fracasan y Bumblebee termina siendo capturado junto con ellos .	Los Autobots , sin embargo , recuperan los anteojos y los usan para encontrar la localización de la Chispa Suprema y planean llegar antes de que los Decepticons la encuentren .	Sam y Mikaela son llevados a la presa Hoover , junto con Maggie Madsen y Glen Whitmann , dos piratas informáticos capturados por el FBI por tratar de descifrar la información robada por Frenzy mientras trabajaban en el Pentágono .
+Event	T0	llevan	EVENT	13
+Event	T1	revelan	EVENT	90
+Event	T2	accidente	EVENT	136
+Event	T3	encuentran	EVENT	213
+Event	T4	arrestan	EVENT	235
+Event	T5	clasificada	EVENT	319
+Event	T6	enterarse	EVENT	342
+Event	T7	contacto	EVENT	373
+Event	T8	rescatar	EVENT	433
+Event	T9	fracasan	EVENT	467
+Event	T10	termina	EVENT	488
+Event	T11	capturado	EVENT	503
+Event	T12	usan	EVENT	589
+Event	T13	encontrar	EVENT	599
+Event	T14	llegar	EVENT	656
+Event	T15	encuentren	EVENT	695
+Event	T16	llevados	EVENT	726
+Event	T17	capturados	EVENT	822
+Event	T18	tratar	EVENT	848
+Event	T19	descifrar	EVENT	858
+Event	T20	robada	EVENT	883
+Event	T21	trabajaban	EVENT	910
+Relation	T3	T4	SuperSub	true	encuentran	arrestan
+Relation	T4	T3	SubSuper	true	arrestan	encuentran
+Relation	T1	T5	NoRel	true	revelan	clasificada
+Relation	T1	T7	NoRel	true	revelan	contacto
+Relation	T1	T8	NoRel	true	revelan	rescatar
+Relation	T11	T6	NoRel	true	capturado	enterarse
+Relation	T15	T2	NoRel	true	encuentren	accidente
+Relation	T17	T1	NoRel	true	capturados	revelan
+Relation	T17	T11	NoRel	true	capturados	capturado
+Relation	T17	T2	NoRel	true	capturados	accidente
+Relation	T19	T5	NoRel	true	descifrar	clasificada
+Relation	T2	T18	NoRel	true	accidente	tratar
+Relation	T20	T15	NoRel	true	robada	encuentren
+Relation	T3	T7	NoRel	true	encuentran	contacto
+Relation	T4	T0	NoRel	true	arrestan	llevan
+Relation	T4	T16	NoRel	true	arrestan	llevados
+Relation	T4	T6	NoRel	true	arrestan	enterarse
+Relation	T6	T5	NoRel	true	enterarse	clasificada
+Relation	T7	T14	NoRel	true	contacto	llegar
+Relation	T8	T12	NoRel	true	rescatar	usan
+Relation	T8	T19	NoRel	true	rescatar	descifrar
+Relation	T9	T15	NoRel	true	fracasan	encuentren
+Relation	T9	T2	NoRel	true	fracasan	accidente
+Relation	T9	T20	NoRel	true	fracasan	robada
+Relation	T9	T5	NoRel	true	fracasan	clasificada

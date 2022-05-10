@@ -1,0 +1,19 @@
+Text	HOOVER BARAJI , Arizona ve Nevada eyalet sınırında bulunan kendi kendine çalışabilme kabiliyetine sahip beton - kemer barajdır .	20. yüzyılın ilk yıllarından beri , Black kanyon ( : en : Black Canyon of the Colorado ) ve hemen yanındaki Boulder kanyon'un ( : en : Boulder Canyon ( Colorado River ) ) etrafındaki bölge , hidroelektrik ve sulama amaçlı kullanılabilecek suyun kontrolünü sağlayabilecek bir baraj için yeterli bir potansiyele sahip olup olmadığı araştırılmaktaydı .	1928 yılında , ABD Kongresi'nin projeyi onaylaması üzerine , en iyi fiyat teklifini veren Six Companies adlı konsorsiyum ihaleyi kazanmış ve Hoover barajı inşaatına başlamıştır .	Kolorado Nehrinin Black kanyon bölgesinde inşa edilmiştir .	1931 yılında başlayan baraj inşaatı , 1 Mart 1936 tarihinde , Hükümetin barajı resmen kabulü ile tamamlanmıştır .
+Event	T0	onaylaması	EVENT	519
+Event	T1	kazanmış	EVENT	608
+Event	T2	başlamıştır	EVENT	644
+Event	T3	edilmiştir	EVENT	705
+Event	T4	kabulü	EVENT	804
+Event	T5	tamamlanmıştır	EVENT	815
+Event	T6	çalışabilme	EVENT	73
+Event	T8	araştırılmaktaydı	EVENT	459
+Event	T7	veren	EVENT	563
+Event	T9	ihaleyi	EVENT	600
+Relation	T0	T3	NoRel	true	onaylaması	edilmiştir
+Relation	T0	T4	NoRel	true	onaylaması	kabulü
+Relation	T1	T6	NoRel	true	kazanmış	çalışabilme
+Relation	T2	T7	NoRel	true	başlamıştır	veren
+Relation	T4	T5	NoRel	true	kabulü	tamamlanmıştır
+Relation	T5	T8	NoRel	true	tamamlanmıştır	araştırılmaktaydı
+Relation	T7	T9	NoRel	true	veren	ihaleyi
+Relation	T8	T4	NoRel	true	araştırılmaktaydı	kabulü

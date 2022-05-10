@@ -1,0 +1,39 @@
+Text	Los testigos presentes temían de que los pasajeros se quedaran atrapados en dos de los vagones descarrilados .	Médicos y equipos de rescate de Bhubaneshwar del East Coast Railway convergieron en la escena del accidente y colocaron luces de emergencia para acelerar el esfuerzo de rescate , que había sido obstaculizado por la oscuridad de la noche .	La población local ayudó a los servicios de emergencia en su esfuerzo de rescate .	Un ciudadano describió el accidente como " terrible y grave " .	R. Velu ( ministro de Estado de la State For Railways ) llegó al lugar el sábado 14 de febrero para hacer un balance de la situación .
+Event	T0	temían	EVENT	23
+Event	T1	atrapados	EVENT	63
+Event	T2	descarrilados	EVENT	95
+Event	T3	rescate	EVENT	132
+Event	T4	convergieron	EVENT	179
+Event	T5	escena	EVENT	198
+Event	T6	accidente	EVENT	209
+Event	T7	acelerar	EVENT	256
+Event	T8	esfuerzo	EVENT	268
+Event	T9	rescate	EVENT	280
+Event	T10	obstaculizado	EVENT	305
+Event	T11	ayudó	EVENT	369
+Event	T12	esfuerzo	EVENT	411
+Event	T13	rescate	EVENT	423
+Event	T14	accidente	EVENT	459
+Event	T15	llegó	EVENT	553
+Event	T16	hacer	EVENT	597
+Event	T17	balance	EVENT	606
+Relation	T6	T3	SuperSub	true	accidente	rescate
+Relation	T3	T6	SubSuper	true	rescate	accidente
+Relation	T9	T10	SuperSub	true	rescate	obstaculizado
+Relation	T10	T9	SubSuper	true	obstaculizado	rescate
+Relation	T1	T12	NoRel	true	atrapados	esfuerzo
+Relation	T1	T17	NoRel	true	atrapados	balance
+Relation	T13	T12	NoRel	true	rescate	esfuerzo
+Relation	T14	T13	NoRel	true	accidente	rescate
+Relation	T14	T2	NoRel	true	accidente	descarrilados
+Relation	T15	T10	NoRel	true	llegó	obstaculizado
+Relation	T15	T14	NoRel	true	llegó	accidente
+Relation	T16	T2	NoRel	true	hacer	descarrilados
+Relation	T16	T4	NoRel	true	hacer	convergieron
+Relation	T2	T11	NoRel	true	descarrilados	ayudó
+Relation	T2	T13	NoRel	true	descarrilados	rescate
+Relation	T4	T16	NoRel	true	convergieron	hacer
+Relation	T4	T3	NoRel	true	convergieron	rescate
+Relation	T5	T10	NoRel	true	escena	obstaculizado
+Relation	T7	T17	NoRel	true	acelerar	balance
+Relation	T8	T0	NoRel	true	esfuerzo	temían

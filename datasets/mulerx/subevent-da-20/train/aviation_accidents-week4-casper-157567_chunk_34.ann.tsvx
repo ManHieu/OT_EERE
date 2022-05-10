@@ -1,0 +1,21 @@
+Text	Dette bevirkede at stålet blev bøjet ud af form .	Ved en gennemgang af optagelserne af de sammenstyrtende bygninger ses en række støvskyer der blæser ud af vinduerne hvilket tolkes som bevis på eksplosioner .	WTC-tårnene består , som alle skyskrabere , hovedsagligt af luft .	I takt med at etagerne kollapsede blev denne luft presset sammen og skudt ud langs siderne .	Blandet med støv og pulveriseret beton er det hvad der observeres på videoerne .
+Event	T0	bevirkede	EVENT	6
+Event	T1	gennemgang	EVENT	57
+Event	T2	ses	EVENT	116
+Event	T3	tolkes	EVENT	174
+Event	T4	bevis	EVENT	185
+Event	T5	eksplosioner	EVENT	194
+Event	T6	består	EVENT	221
+Event	T7	kollapsede	EVENT	299
+Event	T8	observeres	EVENT	424
+Relation	T1	T2	SuperSub	true	gennemgang	ses
+Relation	T2	T1	SubSuper	true	ses	gennemgang
+Relation	T7	T6	SuperSub	true	kollapsede	består
+Relation	T6	T7	SubSuper	true	består	kollapsede
+Relation	T7	T8	SuperSub	true	kollapsede	observeres
+Relation	T8	T7	SubSuper	true	observeres	kollapsede
+Relation	T3	T5	NoRel	true	tolkes	eksplosioner
+Relation	T4	T1	NoRel	true	bevis	gennemgang
+Relation	T5	T1	NoRel	true	eksplosioner	gennemgang
+Relation	T5	T2	NoRel	true	eksplosioner	ses
+Relation	T6	T5	NoRel	true	består	eksplosioner

@@ -1,0 +1,19 @@
+Text	İKI ARTI DÖRT ANTLAŞMASI ( ) , 1990'da Batı Almanya ve Doğu Almanya ile Fransa , SSCB , ABD ve Birleşik Krallık arasında müzakere edilen antlaşma .	Bunun sonucunda adı geçen dört ülke , Almanya'daki tüm haklarından vazgeçti ve Almanya birleşerek bağımsız bir devlet oldu .	2005 yılında akademisyen Stephen F. Cohen , NATO'nun asla doğuya genişlemeyeceği konusunda söz verildiğini öne sürdü , fakat o zamanlar İki Artı Dört görüşmelerinde yer almış bir Dışişleri Bakanlığı çalışanı olan Robert Zoellick'e göre , bu bir yanlış algıydı ve bu tarz bir resmî söz verilmemişti .	Eski Sovyetler Birliği Cumhurbaşkanı Mihail Gorbaçov , Mayıs 2008'de böyle bir söz verildiği yönündeki görüşünü yineledi ve " Amerikalılar Soğuk Savaş sonrasında NATO'nun Almanya sınırlarını aşmayacağına söz verdi .	" ifadelerini kullandı .
+Event	T0	antlaşma	EVENT	137
+Event	T1	vazgeçti	EVENT	215
+Event	T2	sürdü	EVENT	384
+Event	T3	yineledi	EVENT	685
+Event	T4	verdi	EVENT	781
+Event	T5	ANTLAŞMASI	EVENT	14
+Event	T6	birleşerek	EVENT	235
+Event	T7	oldu	EVENT	266
+Event	T8	görüşmelerinde	EVENT	423
+Event	T9	almış	EVENT	442
+Event	T10	Soğuk Savaş	EVENT	712
+Event	T11	kullandı	EVENT	803
+Relation	T0	T5	NoRel	true	antlaşma	ANTLAŞMASI
+Relation	T10	T11	NoRel	true	Soğuk Savaş	kullandı
+Relation	T11	T4	NoRel	true	kullandı	verdi
+Relation	T4	T5	NoRel	true	verdi	ANTLAŞMASI
+Relation	T8	T1	NoRel	true	görüşmelerinde	vazgeçti
+Relation	T9	T8	NoRel	true	almış	görüşmelerinde

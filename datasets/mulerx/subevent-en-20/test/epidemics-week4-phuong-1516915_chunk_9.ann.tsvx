@@ -1,0 +1,54 @@
+Text	The direct transfer of the virus probably occurs either by pigs touching noses , or through dried mucus .	Airborne transmission through the aerosols produced by pigs coughing or sneezing are also an important means of infection .	The virus usually spreads quickly through a herd , infecting all the pigs within just a few days .	Transmission may also occur through wild animals , such as wild boar , which can spread the disease between farms .	People who work with poultry and swine , especially those with intense exposures , are at increased risk of zoonotic infection with influenza virus endemic in these animals , and constitute a population of human hosts in which zoonosis and reassortment can co-occur .
+Event	T0	transfer	EVENT	11
+Event	T1	occurs	EVENT	42
+Event	T2	touching	EVENT	64
+Event	T5	produced	EVENT	149
+Event	T6	coughing	EVENT	166
+Event	T7	sneezing	EVENT	178
+Event	T8	infection	EVENT	218
+Event	T9	spreads	EVENT	248
+Event	T10	infecting	EVENT	281
+Event	T11	Transmission	EVENT	329
+Event	T12	occur	EVENT	351
+Event	T13	spread	EVENT	410
+Event	T14	disease	EVENT	421
+Event	T15	work	EVENT	456
+Event	T16	exposures	EVENT	516
+Event	T17	infection	EVENT	562
+Event	T18	zoonosis	EVENT	672
+Event	T19	reassortment	EVENT	685
+Event	T3	dried mucus	EVENT	92
+Event	T4	Airborne transmission	EVENT	106
+Event	T20	herd	EVENT	274
+Event	T21	wild animals	EVENT	365
+Event	T22	constitute	EVENT	624
+Relation	T8	T4	SuperSub	true	infection	Airborne transmission
+Relation	T4	T8	SubSuper	true	Airborne transmission	infection
+Relation	T0	T10	NoRel	true	transfer	infecting
+Relation	T0	T13	NoRel	true	transfer	spread
+Relation	T1	T14	NoRel	true	occurs	disease
+Relation	T1	T17	NoRel	true	occurs	infection
+Relation	T1	T20	NoRel	true	occurs	herd
+Relation	T10	T5	NoRel	true	infecting	produced
+Relation	T11	T18	NoRel	true	Transmission	zoonosis
+Relation	T15	T20	NoRel	true	work	herd
+Relation	T15	T6	NoRel	true	work	coughing
+Relation	T16	T11	NoRel	true	exposures	Transmission
+Relation	T17	T16	NoRel	true	infection	exposures
+Relation	T17	T8	NoRel	true	infection	infection
+Relation	T18	T10	NoRel	true	zoonosis	infecting
+Relation	T19	T22	NoRel	true	reassortment	constitute
+Relation	T2	T0	NoRel	true	touching	transfer
+Relation	T2	T11	NoRel	true	touching	Transmission
+Relation	T2	T19	NoRel	true	touching	reassortment
+Relation	T20	T2	NoRel	true	herd	touching
+Relation	T20	T3	NoRel	true	herd	dried mucus
+Relation	T21	T7	NoRel	true	wild animals	sneezing
+Relation	T22	T11	NoRel	true	constitute	Transmission
+Relation	T3	T10	NoRel	true	dried mucus	infecting
+Relation	T4	T10	NoRel	true	Airborne transmission	infecting
+Relation	T4	T14	NoRel	true	Airborne transmission	disease
+Relation	T6	T10	NoRel	true	coughing	infecting
+Relation	T6	T22	NoRel	true	coughing	constitute
+Relation	T7	T3	NoRel	true	sneezing	dried mucus
+Relation	T9	T17	NoRel	true	spreads	infection

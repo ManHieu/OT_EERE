@@ -1,0 +1,23 @@
+Text	Todos los pasajeros y tripulantes evacuaron el avión de manera satisfactoria .	Sólo se produjeron 43 heridos leves , y no hubo que lamentar ninguna muerte como resultado del accidente .	La caída a un barranco y el posterior incendio destruyeron el avión .	El vuelo aterrizó mientras aparecían informes meteorológicos con un tiempo verdaderamente malo : de fuertes vientos , fuertes precipitaciones , y con tormentas en las proximidades del aeropuerto ( ver meteorología ) , y no tocó tierra hasta haber sobrepasado prácticamente la mitad de la pista .	Algunos pasajeros informaron que el avión se balanceaba de lado a lado antes de aterrizar , posiblemente debido a las turbulencias y a los vientos racheados asociados a los sistemas tormentosos .
+Event	T0	evacuaron	EVENT	34
+Event	T1	produjeron	EVENT	87
+Event	T2	lamentar	EVENT	131
+Event	T3	muerte	EVENT	148
+Event	T4	accidente	EVENT	174
+Event	T5	caída	EVENT	189
+Event	T6	destruyeron	EVENT	233
+Event	T7	aterrizó	EVENT	265
+Event	T8	precipitaciones	EVENT	382
+Event	T9	tormentas	EVENT	406
+Event	T10	sobrepasado	EVENT	503
+Event	T11	informaron	EVENT	570
+Event	T12	balanceaba	EVENT	597
+Event	T13	aterrizar	EVENT	632
+Event	T14	turbulencias	EVENT	670
+Event	T15	incendio	EVENT	224
+Relation	T11	T3	NoRel	true	informaron	muerte
+Relation	T13	T2	NoRel	true	aterrizar	lamentar
+Relation	T15	T5	NoRel	true	incendio	caída
+Relation	T4	T8	NoRel	true	accidente	precipitaciones
+Relation	T8	T10	NoRel	true	precipitaciones	sobrepasado
+Relation	T9	T15	NoRel	true	tormentas	incendio

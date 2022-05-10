@@ -1,0 +1,24 @@
+Text	UDAAN TRUST , Hindistan'ın Maharaştra faaliyet gösteren bir Hint sivil toplum kuruluşudur .	HIV / AIDS pozitif eşcinseller tarafından kurulmuş olan ilk HIV / AIDS örgütüdür .	Udaan temel olarak eşcinsel ve transseksüel toplulukların cinsel sağlığını korumayı ve öncelikli olarak da HIV / AIDS'in bulaşmasını engellemeyi hedefler .	Bu hedefler doğrultusunda yaptıkları çalışmalar arasında ; risk altındaki nüfus için prezervatif dağıtımı , cinsel eğitim , danışmanlık ve tıbbi destek hizmetleri yer almaktadır .	Udaan Trust ayrıca HIV / AIDS ile yaşayan eşcinsel ve transseksüel bireylerin insani haklarıyla ilgili konularda farkındalığı artırmak için çalışır .
+Event	T0	kurulmuş	EVENT	134
+Event	T1	hedefler	EVENT	320
+Event	T2	çalışır	EVENT	651
+Event	T3	gösteren	EVENT	47
+Event	T4	engellemeyi	EVENT	308
+Event	T5	çalışmalar	EVENT	368
+Event	T6	dağıtımı	EVENT	428
+Event	T7	eğitim	EVENT	446
+Event	T8	danışmanlık	EVENT	455
+Event	T9	destek	EVENT	476
+Event	T10	artırmak	EVENT	637
+Relation	T5	T6	SuperSub	true	çalışmalar	dağıtımı
+Relation	T6	T5	SubSuper	true	dağıtımı	çalışmalar
+Relation	T5	T7	SuperSub	true	çalışmalar	eğitim
+Relation	T7	T5	SubSuper	true	eğitim	çalışmalar
+Relation	T5	T8	SuperSub	true	çalışmalar	danışmanlık
+Relation	T8	T5	SubSuper	true	danışmanlık	çalışmalar
+Relation	T5	T9	SuperSub	true	çalışmalar	destek
+Relation	T9	T5	SubSuper	true	destek	çalışmalar
+Relation	T5	T10	SuperSub	true	çalışmalar	artırmak
+Relation	T10	T5	SubSuper	true	artırmak	çalışmalar
+Relation	T2	T1	NoRel	true	çalışır	hedefler
+Relation	T3	T10	NoRel	true	gösteren	artırmak

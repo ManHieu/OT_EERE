@@ -1,0 +1,30 @@
+Text	Un juez del Tribunal Superior de París , se encargó de la investigación penal por homicidio iniciada el 5 de junio de 2009 .	El juez trabajó con la asistencia de la Gendarmería Nacional ( gendarmería de transporte aéreo ) 10 ;	- La otra fue una investigación técnica , para la prevención de accidentes en el futuro .	Como el accidente se produjo en aguas internacionales , la investigación técnica estuvo a cargo de las autoridades de aviación del país de matrícula de la aeronave , es decir , la Oficina de Investigación y Análisis ( BEA ) , de Francia .	El 12 de marzo de 2010 , un tribunal en Río de Janeiro fue el primero en condenar a Air France a pagar una indemnización .
+Event	T0	encargó	EVENT	44
+Event	T1	iniciada	EVENT	92
+Event	T2	trabajó	EVENT	133
+Event	T3	asistencia	EVENT	148
+Event	T4	investigación	EVENT	245
+Event	T5	accidentes	EVENT	291
+Event	T6	accidente	EVENT	325
+Event	T7	produjo	EVENT	338
+Event	T8	investigación	EVENT	376
+Event	T9	estuvo	EVENT	398
+Event	T10	condenar	EVENT	629
+Event	T11	pagar	EVENT	653
+Event	T12	indemnización	EVENT	663
+Event	T13	investigación	EVENT	58
+Relation	T6	T9	SuperSub	true	accidente	estuvo
+Relation	T9	T6	SubSuper	true	estuvo	accidente
+Relation	T6	T12	SuperSub	true	accidente	indemnización
+Relation	T12	T6	SubSuper	true	indemnización	accidente
+Relation	T0	T1	NoRel	true	encargó	iniciada
+Relation	T10	T8	NoRel	true	condenar	investigación
+Relation	T11	T6	NoRel	true	pagar	accidente
+Relation	T13	T9	NoRel	true	investigación	estuvo
+Relation	T2	T4	NoRel	true	trabajó	investigación
+Relation	T2	T5	NoRel	true	trabajó	accidentes
+Relation	T3	T11	NoRel	true	asistencia	pagar
+Relation	T6	T0	NoRel	true	accidente	encargó
+Relation	T6	T11	NoRel	true	accidente	pagar
+Relation	T8	T10	NoRel	true	investigación	condenar
+Relation	T9	T13	NoRel	true	estuvo	investigación

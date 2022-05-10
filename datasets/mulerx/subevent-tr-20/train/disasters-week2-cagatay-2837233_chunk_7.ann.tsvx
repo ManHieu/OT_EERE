@@ -1,0 +1,14 @@
+Text	Ayrıca Türkiye'ye her türlü yardımı göndermeye hazır olduklarını da belirtti .	- Azerbaycan Millî Meclisi Başkanı Sahibe Gafarova da TBMM Başkanı Mustafa Şentop'a taziye dileklerini iletti .	- - Birleşik Krallık Büyükelçisi Dominick Chilcott , taziye mesajını ileterek " Birleşik Krallık , her zaman olduğu gibi , bu zor zamanda da Türkiye'nin yanındadır .	" açıklamasında bulundu .	- - Danimarka Büyükelçisi Danny Annan , depremde hayatını kaybedenler için üzüntü duyduğunu belirterek " Hayatını kaybedenlerin yakınlarına başsağlığı , yararılara acil şifalar diliyorum .
+Event	T0	belirtti	EVENT	68
+Event	T1	iletti	EVENT	182
+Event	T10	yararılara	EVENT	536
+Event	T11	diliyorum	EVENT	560
+Event	T2	kaybedenler	EVENT	441
+Event	T5	ileterek	EVENT	260
+Event	T8	belirterek	EVENT	475
+Relation	T0	T2	NoRel	true	belirtti	kaybedenler
+Relation	T1	T11	NoRel	true	iletti	diliyorum
+Relation	T1	T2	NoRel	true	iletti	kaybedenler
+Relation	T11	T5	NoRel	true	diliyorum	ileterek
+Relation	T2	T5	NoRel	true	kaybedenler	ileterek
+Relation	T8	T1	NoRel	true	belirterek	iletti

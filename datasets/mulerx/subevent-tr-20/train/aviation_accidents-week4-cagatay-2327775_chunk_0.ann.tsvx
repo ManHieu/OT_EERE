@@ -1,0 +1,47 @@
+Text	NORTHWEST AIRLINES'IN 253 SAYILI UÇUŞU , Amerika Birleşik Devletleri'ndeki Detroit Metropoliten Havalimanı'na gitmek üzere Hollanda'daki Amsterdam Schiphol Havalimanı'ndan kalkan ve 25 Aralık 2009'da , bir el - Kaide mensubu tarafından başarısızlıkla sonuçlanan bir bombalı saldırı girişimi yapılan Northwest Airlines uçuşudur .	İç çamaşırına sakladığı plastik patlayıcılarla uçağa giren 23 yaşındaki Nijeryalı Umar Farouk Abdulmutallab , patlayıcıları infilak ettirememesinin ardından , Hollandalı yolcu Jasper Schuringa tarafından etkisiz hâle getirildi .	Abdulmutallab'ın kelepçelenmesinin ardından uçak , varış noktasına iniş yaptı .	Arap Yarımadası el - Kaidesi , 28 Aralık'ta yaptığı açıklamayla saldırı girişimini üstlendi .	Kategori : Amerika Birleşik Devletleri'ndeki havacılık kazaları ve olayları Kategori : El - Kaide'nin saldırıları Kategori : Michigan'daki afetler Kategori : Airbus A330 içeren kazalar ve olaylar Kategori : Anwar al - Awlaki 253 sayılı uçuşu Kategori : 2009'da Michigan Kategori : 2009'da Amerika Birleşik Devletleri'nde suçlar Kategori : 2009'da havacılık kazaları ve olayları
+Event	T0	UÇUŞU	EVENT	33
+Event	T1	gitmek	EVENT	110
+Event	T2	kalkan	EVENT	172
+Event	T3	sonuçlanan	EVENT	251
+Event	T5	uçuşudur	EVENT	318
+Event	T6	giren	EVENT	382
+Event	T7	ettirememesinin	EVENT	461
+Event	T9	getirildi	EVENT	546
+Event	T10	kelepçelenmesinin	EVENT	575
+Event	T12	üstlendi	EVENT	721
+Event	T13	kazaları	EVENT	787
+Event	T14	afetler	EVENT	871
+Event	T15	kazalar	EVENT	909
+Event	T16	olaylar	EVENT	920
+Event	T17	uçuşu	EVENT	968
+Event	T18	kazaları	EVENT	1089
+Event	T19	olayları	EVENT	1101
+Event	T8	iniş	EVENT	625
+Event	T11	girişimini	EVENT	710
+Event	T20	girişimi	EVENT	282
+Relation	T5	T8	SuperSub	true	uçuşudur	iniş
+Relation	T8	T5	SubSuper	true	iniş	uçuşudur
+Relation	T5	T2	SuperSub	true	uçuşudur	kalkan
+Relation	T2	T5	SubSuper	true	kalkan	uçuşudur
+Relation	T20	T7	SuperSub	true	girişimi	ettirememesinin
+Relation	T7	T20	SubSuper	true	ettirememesinin	girişimi
+Relation	T11	T7	SuperSub	true	girişimini	ettirememesinin
+Relation	T7	T11	SubSuper	true	ettirememesinin	girişimini
+Relation	T0	T18	NoRel	true	UÇUŞU	kazaları
+Relation	T0	T6	NoRel	true	UÇUŞU	giren
+Relation	T0	T9	NoRel	true	UÇUŞU	getirildi
+Relation	T1	T6	NoRel	true	gitmek	giren
+Relation	T10	T19	NoRel	true	kelepçelenmesinin	olayları
+Relation	T10	T7	NoRel	true	kelepçelenmesinin	ettirememesinin
+Relation	T11	T1	NoRel	true	girişimini	gitmek
+Relation	T11	T18	NoRel	true	girişimini	kazaları
+Relation	T12	T9	NoRel	true	üstlendi	getirildi
+Relation	T15	T17	NoRel	true	kazalar	uçuşu
+Relation	T17	T20	NoRel	true	uçuşu	girişimi
+Relation	T18	T1	NoRel	true	kazaları	gitmek
+Relation	T2	T18	NoRel	true	kalkan	kazaları
+Relation	T2	T3	NoRel	true	kalkan	sonuçlanan
+Relation	T3	T0	NoRel	true	sonuçlanan	UÇUŞU
+Relation	T3	T20	NoRel	true	sonuçlanan	girişimi
+Relation	T7	T5	NoRel	true	ettirememesinin	uçuşudur
+Relation	T9	T2	NoRel	true	getirildi	kalkan

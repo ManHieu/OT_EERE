@@ -1,0 +1,13 @@
+Text	VIGERSLEV-ULYKKEN er en jernbaneulykke , som skete 1. november 1919 .	[ Vigerslevulykken 1919 ( af | thumb | De ødelagte vogne og lokomotivet morgenen efter ulykken .	Fotografi af pressefotograf Holger Damgaard ]	Tredjeklassesvognene bagest i tog 168 fra Kalundborg var fyldt med unge mennesker med penge på lommen og i godt humør på vej til hovedstaden for at møde venner og familie og måske have et lille selskab .	Toget , der var forsinket på grund af den megen trafik , skulle have passeret Vigerslev blokpost 20:35 , men var der ikke før 20:50 .
+Event	T0	jernbaneulykke	EVENT	24
+Event	T1	skete	EVENT	45
+Event	T2	ødelagte	EVENT	112
+Event	T3	ulykken	EVENT	157
+Event	T4	fyldt	EVENT	270
+Event	T5	møde	EVENT	361
+Event	T6	forsinket	EVENT	433
+Event	T7	passeret	EVENT	486
+Relation	T6	T7	SuperSub	true	forsinket	passeret
+Relation	T7	T6	SubSuper	true	passeret	forsinket
+Relation	T4	T7	NoRel	true	fyldt	passeret
+Relation	T7	T1	NoRel	true	passeret	skete

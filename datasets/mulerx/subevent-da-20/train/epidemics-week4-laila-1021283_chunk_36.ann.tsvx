@@ -1,0 +1,48 @@
+Text	Denne beslutning mødte kritik , da Sundhedsstyrelsen ikke havde anbefalet det , og beslutningen var derfor udelukkende politisk .	Den danske professor Lone Simonsen fra Roskilde Universitet udtalte , at tiltaget ikke ville bidrage _ til at begrænse spredningen af coronavirus på nuværende tidspunkt , hvor epidemien allerede har ramt Danmark _ .	Omkring 100.000 danskere forventes desuden at komme fra udlandet til Danmark .	Den 15. marts blev det udmeldt , at Tyskland ville lukke grænsen til Danmark fra den 16. marts kl. 6:00 .	Den 19. marts blev en bekendtgørelse om nødundervisning vedtaget , der angav at skoleaktiviteterne skulle gennemføres online med eleverne hjemme .
+Event	T0	kritik	EVENT	23
+Event	T1	anbefalet	EVENT	64
+Event	T2	udtalte	EVENT	190
+Event	T3	tiltaget	EVENT	203
+Event	T4	spredningen	EVENT	249
+Event	T5	epidemien	EVENT	306
+Event	T6	ramt	EVENT	329
+Event	T7	komme	EVENT	392
+Event	T8	udmeldt	EVENT	448
+Event	T9	lukke	EVENT	476
+Event	T10	bekendtgørelse	EVENT	553
+Event	T11	vedtaget	EVENT	587
+Event	T12	angav	EVENT	602
+Event	T13	beslutning	EVENT	6
+Event	T14	beslutningen	EVENT	83
+Event	T15	coronavirus	EVENT	264
+Event	T16	forventes	EVENT	371
+Event	T17	nødundervisning	EVENT	571
+Event	T18	skoleaktiviteterne	EVENT	611
+Event	T19	gennemføres	EVENT	637
+Event	T20	hjemme	EVENT	669
+Event	T21	politisk	EVENT	119
+Event	T22	online	EVENT	649
+Relation	T13	T21	SuperSub	true	beslutning	politisk
+Relation	T21	T13	SubSuper	true	politisk	beslutning
+Relation	T0	T19	NoRel	true	kritik	gennemføres
+Relation	T10	T9	NoRel	true	bekendtgørelse	lukke
+Relation	T11	T1	NoRel	true	vedtaget	anbefalet
+Relation	T11	T12	NoRel	true	vedtaget	angav
+Relation	T12	T13	NoRel	true	angav	beslutning
+Relation	T13	T16	NoRel	true	beslutning	forventes
+Relation	T13	T8	NoRel	true	beslutning	udmeldt
+Relation	T14	T21	NoRel	true	beslutningen	politisk
+Relation	T15	T3	NoRel	true	coronavirus	tiltaget
+Relation	T15	T5	NoRel	true	coronavirus	epidemien
+Relation	T16	T8	NoRel	true	forventes	udmeldt
+Relation	T17	T16	NoRel	true	nødundervisning	forventes
+Relation	T18	T11	NoRel	true	skoleaktiviteterne	vedtaget
+Relation	T19	T12	NoRel	true	gennemføres	angav
+Relation	T20	T0	NoRel	true	hjemme	kritik
+Relation	T22	T4	NoRel	true	online	spredningen
+Relation	T5	T15	NoRel	true	epidemien	coronavirus
+Relation	T6	T10	NoRel	true	ramt	bekendtgørelse
+Relation	T7	T19	NoRel	true	komme	gennemføres
+Relation	T7	T9	NoRel	true	komme	lukke
+Relation	T8	T18	NoRel	true	udmeldt	skoleaktiviteterne
+Relation	T8	T20	NoRel	true	udmeldt	hjemme

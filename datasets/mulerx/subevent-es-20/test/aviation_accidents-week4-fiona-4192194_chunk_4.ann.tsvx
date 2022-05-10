@@ -1,0 +1,22 @@
+Text	El capitán realiza su primer contacto con torre de Puerto Ordaz y anuncia que tiene problemas para controlar la aeronave .	El avión se estrelló en un campo de desechos de Sidor a las 10:30 aproximadamente matando a 17 de las 51 personas a bordo , los dos pilotos fallecieron en el accidente .	El 30 de agosto de 2008 del aeropuerto de Maiquetía despegó el Boeing 737-200 , YV-102T arrendado a Conviasa por la empresa hondureña Atlantic Air .	Esa noche , minutos antes de aterrizar se estrelló en el aeropuerto de Latacunga , Ecuador .	La tripulación que murió en el siniestro , estaba integrada por el piloto Pedro Gustavo Mendiri Rangel , de 32 años de edad ; el copiloto Gerardo José Rangel , de 41 años de edad , y el mecánico hondureño José Rosales .
+Event	T0	realiza	EVENT	11
+Event	T1	contacto	EVENT	29
+Event	T2	anuncia	EVENT	66
+Event	T3	estrelló	EVENT	135
+Event	T4	matando	EVENT	205
+Event	T5	fallecieron	EVENT	263
+Event	T6	accidente	EVENT	281
+Event	T7	despegó	EVENT	345
+Event	T8	arrendado	EVENT	381
+Event	T9	aterrizar	EVENT	471
+Event	T10	estrelló	EVENT	484
+Event	T11	murió	EVENT	554
+Event	T12	siniestro	EVENT	566
+Relation	T0	T10	NoRel	true	realiza	estrelló
+Relation	T0	T3	NoRel	true	realiza	estrelló
+Relation	T11	T6	NoRel	true	murió	accidente
+Relation	T2	T9	NoRel	true	anuncia	aterrizar
+Relation	T4	T11	NoRel	true	matando	murió
+Relation	T5	T1	NoRel	true	fallecieron	contacto
+Relation	T7	T12	NoRel	true	despegó	siniestro
+Relation	T8	T3	NoRel	true	arrendado	estrelló

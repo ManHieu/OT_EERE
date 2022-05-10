@@ -1,0 +1,34 @@
+Text	Kazadan sonra Türkiye Dışişleri Bakanlığı Suriye'nin Ankara Büyükelçisi'ne nota vererek Suriye'den tazminat ve ayrıntılı açıklama talep etti .	Suriye yetkilileri ilk başta uçağın Suriye sınırı ihlal ederek Suriye hava sahasına girdiğini söylediler .	17 Kasım 1989'da Türkiye , yaşanan olay için Suriye'den 14 milyon 651 bin Amerikan doları tutarında tazminat talep etti .	8 Aralık 1989'da Suriyeli yetkililer olayın sorumlusu iki pilot ile bir yer sorumlusunun tutuklandığını açıkladılar .	Kazadan yaklaşık bir yıl sonra , 17 Ekim 1990 günü , Suriye Türkiye ile imzaladığı bir protokolle 3 milyon 430 bin dolar tazminat ödemeyi kabul etti .
+Event	T0	Kazadan	EVENT	0
+Event	T1	etti	EVENT	136
+Event	T2	ihlal	EVENT	193
+Event	T3	olay	EVENT	285
+Event	T4	etti	EVENT	365
+Event	T5	olayın	EVENT	409
+Event	T6	Kazadan	EVENT	490
+Event	T7	etti	EVENT	634
+Event	T8	vererek	EVENT	80
+Event	T9	söylediler	EVENT	237
+Event	T10	açıkladılar	EVENT	476
+Event	T11	tutuklandığını	EVENT	461
+Event	T12	imzaladığı	EVENT	562
+Relation	T0	T8	SuperSub	true	Kazadan	vererek
+Relation	T8	T0	SubSuper	true	vererek	Kazadan
+Relation	T0	T1	SuperSub	true	Kazadan	etti
+Relation	T1	T0	SubSuper	true	etti	Kazadan
+Relation	T0	T4	SuperSub	true	Kazadan	etti
+Relation	T4	T0	SubSuper	true	etti	Kazadan
+Relation	T0	T10	SuperSub	true	Kazadan	açıkladılar
+Relation	T10	T0	SubSuper	true	açıkladılar	Kazadan
+Relation	T0	T11	SuperSub	true	Kazadan	tutuklandığını
+Relation	T11	T0	SubSuper	true	tutuklandığını	Kazadan
+Relation	T0	T7	SuperSub	true	Kazadan	etti
+Relation	T7	T0	SubSuper	true	etti	Kazadan
+Relation	T0	T12	SuperSub	true	Kazadan	imzaladığı
+Relation	T12	T0	SubSuper	true	imzaladığı	Kazadan
+Relation	T10	T4	NoRel	true	açıkladılar	etti
+Relation	T11	T2	NoRel	true	tutuklandığını	ihlal
+Relation	T2	T11	NoRel	true	ihlal	tutuklandığını
+Relation	T5	T12	NoRel	true	olayın	imzaladığı
+Relation	T5	T4	NoRel	true	olayın	etti
+Relation	T7	T11	NoRel	true	etti	tutuklandığını

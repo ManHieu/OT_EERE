@@ -1,0 +1,15 @@
+Text	1930 HAKKÂRI DEPREMI , 7 Mayıs 1930 tarihinde Türkiye saatiyle 00.34'te Türkiye - İran sınırında meydana gelen deprem .	Sınırın Türkiye tarafında Hakkâri bu depremden etkilendi .	Büyüklüğü 7,2 M _ ( s ) olan bu depremde 2514 kişi öldü , yaklaşık 3000 bina hasar gördü .		
+Event	T1	deprem	EVENT	111
+Event	T2	etkilendi	EVENT	167
+Event	T3	depremde	EVENT	211
+Event	T4	öldü	EVENT	230
+Event	T5	gördü	EVENT	262
+Event	T6	1930 HAKKÂRI DEPREMI	EVENT	0
+Relation	T6	T2	SuperSub	true	1930 HAKKÂRI DEPREMI	etkilendi
+Relation	T2	T6	SubSuper	true	etkilendi	1930 HAKKÂRI DEPREMI
+Relation	T6	T4	SuperSub	true	1930 HAKKÂRI DEPREMI	öldü
+Relation	T4	T6	SubSuper	true	öldü	1930 HAKKÂRI DEPREMI
+Relation	T6	T5	SuperSub	true	1930 HAKKÂRI DEPREMI	gördü
+Relation	T5	T6	SubSuper	true	gördü	1930 HAKKÂRI DEPREMI
+Relation	T2	T1	NoRel	true	etkilendi	deprem
+Relation	T4	T3	NoRel	true	öldü	depremde

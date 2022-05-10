@@ -1,0 +1,28 @@
+Text	El 24 de junio de 2005 , una corte militar sentenció a los pilotos de la aeronave , Toponar y Yegorov , a 14 y 8 años de cárcel respectivamente .	La corte encontró culpables a los pilotos y a otros tres oficiales por negligencia y violación de las reglas de vuelo .	Los tres oficiales condenados fueron sometidos a penas de entre 6 y 4 años de prisión .	Aunque los pilotos han sido condenados ( Toponar ha apelado la sentencia ) , queda la pregunta de si hubieran podido evitar algo dada la secuencia de fallos implícitos en el accidente .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes por fabricante de la aeronave - Anexo : Accidentes e incidentes notables en la aviación militar
+Event	T0	corte	EVENT	29
+Event	T1	sentenció	EVENT	43
+Event	T2	negligencia	EVENT	217
+Event	T3	violación	EVENT	231
+Event	T4	penas	EVENT	315
+Event	T5	condenados	EVENT	382
+Event	T6	apelado	EVENT	406
+Event	T7	sentencia	EVENT	417
+Event	T8	pregunta	EVENT	440
+Event	T9	secuencia	EVENT	491
+Event	T10	implícitos	EVENT	511
+Event	T11	accidente	EVENT	528
+Event	T12	Accidente	EVENT	542
+Event	T13	Accidentes	EVENT	574
+Event	T14	Accidentes	EVENT	638
+Event	T15	Accidentes	EVENT	689
+Relation	T11	T5	SuperSub	true	accidente	condenados
+Relation	T5	T11	SubSuper	true	condenados	accidente
+Relation	T1	T0	NoRel	true	sentenció	corte
+Relation	T1	T15	NoRel	true	sentenció	Accidentes
+Relation	T10	T2	NoRel	true	implícitos	negligencia
+Relation	T11	T10	NoRel	true	accidente	implícitos
+Relation	T2	T4	NoRel	true	negligencia	penas
+Relation	T5	T12	NoRel	true	condenados	Accidente
+Relation	T5	T7	NoRel	true	condenados	sentencia
+Relation	T6	T8	NoRel	true	apelado	pregunta
+Relation	T7	T1	NoRel	true	sentencia	sentenció

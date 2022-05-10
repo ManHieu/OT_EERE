@@ -1,0 +1,30 @@
+Text	جہاز کے ملبے کو نکلالنے کے لیے کرینز کا استعمال کیا گیا 5 فروری کو پائلٹ ، کو پائلٹ اور آبزرور کی لاشیں ڈھونڈ لی گئیں -	پائلٹ اور کو پائلٹ کی لاشیں کاک_پٹ میں ملیں ان دونوں کی ٹانگیں ٹوٹی ہوئیں تھیں پائلٹ کے ہاتھ اس وقت بھی کنٹرولز پر ہی تھیں دو میں سے ایک فلائٹ اٹینڈنٹس ( خدمت گزار ) اس حادثے میں زندہ بچ گیا -	تصغیر| B-22816 ، جہاز جو حادثے کا شکار ہوا کی جنوری 2015ء کی تصویر حادثے کا شکار ہوئے جہاز کا ماڈل ATR 72-600 تھا جہاز کا رجسٹریشن نمبر B-22816 اور مینوفیکچرر سیریل نمبر 1141 تھا -	اس نے 28 مارچ 2014ء کو پہلی اڑان لی تھی اور 15 اپریل 2014ء کو ٹرانس ایشیاایئرویز کو سونپ دیا گیا تھا -	جہاز کے دونوں انجنوں کو تکنیکی خرابیوں کے باعث 19 اپریل 2014ء کو بدلا گیا تھا
+Event	T0	نکلالنے	EVENT	16
+Event	T1	استعمال	EVENT	40
+Event	T3	ملیں	EVENT	159
+Event	T4	ٹوٹی	EVENT	183
+Event	T6	حادثے	EVENT	289
+Event	T8	حادثے	EVENT	338
+Event	T10	حادثے	EVENT	380
+Event	T12	خرابیوں	EVENT	628
+Event	T14	ڈھونڈ	EVENT	104
+Event	T2	بچ	EVENT	304
+Event	T5	تھیں	EVENT	238
+Event	T7	اڑان	EVENT	522
+Event	T9	سونپ	EVENT	578
+Event	T11	بدلا	EVENT	662
+Relation	T0	T1	SuperSub	true	نکلالنے	استعمال
+Relation	T1	T0	SubSuper	true	استعمال	نکلالنے
+Relation	T14	T3	SuperSub	true	ڈھونڈ	ملیں
+Relation	T3	T14	SubSuper	true	ملیں	ڈھونڈ
+Relation	T1	T12	NoRel	true	استعمال	خرابیوں
+Relation	T1	T6	NoRel	true	استعمال	حادثے
+Relation	T12	T11	NoRel	true	خرابیوں	بدلا
+Relation	T12	T4	NoRel	true	خرابیوں	ٹوٹی
+Relation	T14	T10	NoRel	true	ڈھونڈ	حادثے
+Relation	T2	T7	NoRel	true	بچ	اڑان
+Relation	T3	T4	NoRel	true	ملیں	ٹوٹی
+Relation	T4	T1	NoRel	true	ٹوٹی	استعمال
+Relation	T5	T9	NoRel	true	تھیں	سونپ
+Relation	T6	T1	NoRel	true	حادثے	استعمال
+Relation	T8	T5	NoRel	true	حادثے	تھیں

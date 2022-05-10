@@ -1,0 +1,22 @@
+Text	1990ء میں صدام حسین کے زمانی صدارت میں عراق نے کویت پر حملہ کر قبضہ کر لیا جو سات ماہ جاری رہا ۔	کویتی حکمران رات کو سعودی عرب فرار ہو گئے ۔	عراق کا الزام تھا کہ کویت اس کا تیل چوری کر رہا ہے ۔	حملے سے پہلے امریکی سفیر نے صدام حسین کو یقین دلایا کہ عرب تنازاعات میں امریکہ نہیں پڑے گا ۔	سقوط کے بعد جارج بش کی صدارت میں امریکہ نے سعودی عرب میں اپنی فوجیں جمع کیں اور حملہ کر کے کویت کو عراق سے آزاد کرا لیا ۔
+Event	T0	حملہ	EVENT	55
+Event	T1	قبضہ	EVENT	63
+Event	T10	جمع	EVENT	355
+Event	T11	آزاد	EVENT	394
+Event	T2	فرار	EVENT	127
+Event	T4	الزام	EVENT	149
+Event	T5	چوری	EVENT	177
+Event	T6	حملے	EVENT	194
+Event	T7	سقوط	EVENT	287
+Event	T8	حملہ	EVENT	367
+Event	T9	یقین	EVENT	235
+Relation	T0	T1	SuperSub	true	حملہ	قبضہ
+Relation	T1	T0	SubSuper	true	قبضہ	حملہ
+Relation	T8	T10	SuperSub	true	حملہ	جمع
+Relation	T10	T8	SubSuper	true	جمع	حملہ
+Relation	T4	T8	NoRel	true	الزام	حملہ
+Relation	T7	T1	NoRel	true	سقوط	قبضہ
+Relation	T7	T11	NoRel	true	سقوط	آزاد
+Relation	T8	T7	NoRel	true	حملہ	سقوط
+Relation	T9	T2	NoRel	true	یقین	فرار
+Relation	T9	T8	NoRel	true	یقین	حملہ

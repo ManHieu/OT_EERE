@@ -1,0 +1,13 @@
+Text	sağ | küçükresim | Uzun vadeli faiz oranları AVRUPA BORÇ KRIZI , 2009 yılının sonundan bu yana Avrupa Birliği'nde yaşanan bir borç krizidir .	Birkaç euro bölgesi üyesi devlet ( Yunanistan , Portekiz , İrlanda , İspanya ve Kıbrıs Cumhuriyeti ) kendi borçlarını tek başlarına ödeyemez hale geldi ve diğer euro bölgesi ülkeler , Avrupa Merkez Bankası ( ECB ) ile Uluslararası Para Fonu'ndan ( IMF ) yardım istemek zorunda kaldılar .	- The EU Crisis Pocket Guide by the Transnational Institute in English ( 2012 ) – Italian ( 2012 ) – Spanish ( 2011 )	Kategori : Avrupa Birliği ekonomisi Kategori : Finansal krizler Kategori : Ekonomi tarihi Kategori : 2010'larda Avrupa Birliği	
+Event	T0	KRIZI	EVENT	57
+Event	T1	yaşanan	EVENT	114
+Event	T2	krizidir	EVENT	131
+Event	T4	Crisis	EVENT	439
+Event	T6	geldi	EVENT	288
+Event	T7	borçlarını	EVENT	249
+Event	T3	kaldılar	EVENT	419
+Event	T8	krizler	EVENT	604
+Relation	T0	T2	NoRel	true	KRIZI	krizidir
+Relation	T1	T3	NoRel	true	yaşanan	kaldılar
+Relation	T1	T6	NoRel	true	yaşanan	geldi
+Relation	T8	T7	NoRel	true	krizler	borçlarını

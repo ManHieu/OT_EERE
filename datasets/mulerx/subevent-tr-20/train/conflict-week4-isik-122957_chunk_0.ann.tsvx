@@ -1,0 +1,24 @@
+Text	_ İÇ SAVAŞ _ ( İngilizce özgün adıyla _ Civil War _ ) , Mark Miller tarafından kaleme alınmış ve Steve McNiven tarafından çizilmiş 2006 yazında sınırlı sayıda tasarlanmış , bir yol kesişimi öyküsüdür .	“ Avengers Disassembled ” ve “ House of M ” gibi önceki Marvel hikâyelerindeki öyküler üzerine kurulmuştur .	Dizinin sloganı ise _ “ Hangi taraftasınız ? _ ”	“ The New Warriors ” adlı süper grubun bir TV şovunu seri olarak çekmesiyle başlar .	Süper kötülerle canlı yayında kapışmaları sırasında Nitro isimli süper kötü , gerçekleştirdiği patlamayla yerel bir ilkokulun havaya uçmasına neden olur .
+Event	T0	alınmış	EVENT	86
+Event	T1	çizilmiş	EVENT	122
+Event	T2	tasarlanmış	EVENT	159
+Event	T3	öyküsüdür	EVENT	190
+Event	T4	Disassembled	EVENT	213
+Event	T5	başlar	EVENT	436
+Event	T6	kapışmaları	EVENT	475
+Event	T7	patlamayla	EVENT	540
+Event	T8	İÇ SAVAŞ	EVENT	2
+Event	T9	Civil War	EVENT	40
+Event	T10	kurulmuştur	EVENT	297
+Event	T11	şovunu	EVENT	406
+Event	T12	uçmasına	EVENT	578
+Relation	T0	T10	NoRel	true	alınmış	kurulmuştur
+Relation	T0	T7	NoRel	true	alınmış	patlamayla
+Relation	T0	T9	NoRel	true	alınmış	Civil War
+Relation	T2	T6	NoRel	true	tasarlanmış	kapışmaları
+Relation	T2	T9	NoRel	true	tasarlanmış	Civil War
+Relation	T3	T7	NoRel	true	öyküsüdür	patlamayla
+Relation	T4	T10	NoRel	true	Disassembled	kurulmuştur
+Relation	T5	T2	NoRel	true	başlar	tasarlanmış
+Relation	T6	T9	NoRel	true	kapışmaları	Civil War
+Relation	T7	T4	NoRel	true	patlamayla	Disassembled

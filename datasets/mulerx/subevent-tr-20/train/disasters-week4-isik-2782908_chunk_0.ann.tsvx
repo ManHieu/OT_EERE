@@ -1,0 +1,13 @@
+Text	1919 SOMA DEPREMI Manisa'nın Soma ilçesinde 18 Kasım 1919 tarihinde meydana gelen 7, 0 büyüklüğündeki depremdir .	Soma , Bergama , Ayvalık , Midilli , Edremit ve Balıkesir'deki birçok evin , minarelerin ve kamuya ait binaların hasara uğradığından veya çöktüğünden eski kaynaklarda bahsedilmektedir .	Depremde yaklaşık olarak 3 bine yakın kişi hayatını kaybetmiş ve 16 bine yakın ağır hasarlı bina tespit edilmiştir .	Depremle birlikte demir yollarında da hasarlar meydana geldiği bilinmektedir .	Kategori : 1919'daki doğal afetler Kategori : 1910'lardaki depremler Kategori : Soma tarihi Kategori : 1919'da Osmanlı İmparatorluğu
+Event	T0	depremdir	EVENT	102
+Event	T1	çöktüğünden	EVENT	252
+Event	T2	bahsedilmektedir	EVENT	281
+Event	T3	Depremde	EVENT	300
+Event	T4	kaybetmiş	EVENT	352
+Event	T5	edilmiştir	EVENT	404
+Event	T6	afetler	EVENT	523
+Event	T7	depremler	EVENT	555
+Event	T8	DEPREMI	EVENT	10
+Event	T9	bilinmektedir	EVENT	480
+Relation	T2	T6	NoRel	true	bahsedilmektedir	afetler
+Relation	T9	T6	NoRel	true	bilinmektedir	afetler

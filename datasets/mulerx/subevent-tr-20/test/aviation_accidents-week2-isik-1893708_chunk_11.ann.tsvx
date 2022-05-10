@@ -1,0 +1,32 @@
+Text	Aynı yıl ABC News'te çıkan haberde Muhammed'in dosyası hakkında bilgi sahibi olan eski bir CIA yetkilisinin " Muhammed , waterboarding altında en uzun süre dayanan kişi oldu .	Bir buçuk dakika kadar dayanan Muhammed'e , konuşmaya başladıktan sonra bu teknik bir daha uygulanmadı .	" açıklaması yer aldı .	2007'de _ The New Yorker _ { { ' } } da , Muhammed'in beş kez waterboarding tekniğine uğradığı yönündeki beyanını gören iki CIA yetkilisinin kendisine yalnızca bir kez bu tekniğin uygulandığını belirten açıklaması yer aldı .	Amerika Birleşik Devletleri Adalet Bakanlığı tarafından 2005 yılında hazırlanan ve CIA'in terörizm şüphesiyle tutuklanan kişilere uyguladığı sorgulama tekniklerini içeren belgeler 16 Nisan 2009'da kamuoyuna açıklandı .
+Event	T0	çıkan	EVENT	21
+Event	T1	waterboarding	EVENT	121
+Event	T10	tutuklanan	EVENT	640
+Event	T11	sorgulama	EVENT	671
+Event	T12	açıklandı	EVENT	737
+Event	T14	dayanan	EVENT	156
+Event	T16	başladıktan	EVENT	230
+Event	T17	waterboarding	EVENT	367
+Event	T18	beyanını	EVENT	410
+Event	T19	terörizm	EVENT	620
+Event	T3	açıklaması	EVENT	283
+Event	T4	yer aldı	EVENT	294
+Event	T6	gören	EVENT	419
+Event	T7	açıklaması	EVENT	508
+Event	T8	yer aldı	EVENT	519
+Event	T9	hazırlanan	EVENT	599
+Relation	T19	T10	SuperSub	true	terörizm	tutuklanan
+Relation	T10	T19	SubSuper	true	tutuklanan	terörizm
+Relation	T19	T11	SuperSub	true	terörizm	sorgulama
+Relation	T11	T19	SubSuper	true	sorgulama	terörizm
+Relation	T0	T3	NoRel	true	çıkan	açıklaması
+Relation	T1	T6	NoRel	true	waterboarding	gören
+Relation	T11	T6	NoRel	true	sorgulama	gören
+Relation	T12	T8	NoRel	true	açıklandı	yer aldı
+Relation	T16	T9	NoRel	true	başladıktan	hazırlanan
+Relation	T18	T0	NoRel	true	beyanını	çıkan
+Relation	T3	T11	NoRel	true	açıklaması	sorgulama
+Relation	T3	T12	NoRel	true	açıklaması	açıklandı
+Relation	T3	T6	NoRel	true	açıklaması	gören
+Relation	T3	T8	NoRel	true	açıklaması	yer aldı
+Relation	T7	T10	NoRel	true	açıklaması	tutuklanan

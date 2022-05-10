@@ -1,0 +1,22 @@
+Text	Dette skabte en stor udenlandsk efterspørgsel på jernvarer , særlig blev det Russiske Kejserrige en af de store kunder .	Fabrikken udvidedes og de mange nye arbejdere som skulle bo nær fabrikken krævede også opførelsen af nye arbejderboliger .	Desuden byggede man en skole i bebyggelsen til arbejdernes børn .	Den Russiske revolution i 1917 stoppede eventyret , og efter nogle års nedgang blev firmaet sat i likvidation i 1921 .	Af resterne dannede man selskabet A/S Scania-Vabis og Raadvaddam , som styrede driften af værket gennem datterselskabet A/S Raadvad Knivfabrik .
+Event	T0	skabte	EVENT	6
+Event	T1	efterspørgsel	EVENT	32
+Event	T10	dannede	EVENT	441
+Event	T2	udvidedes	EVENT	131
+Event	T3	krævede	EVENT	195
+Event	T4	opførelsen	EVENT	208
+Event	T5	byggede	EVENT	252
+Event	T6	revolution	EVENT	323
+Event	T8	nedgang	EVENT	381
+Event	T9	likvidation	EVENT	408
+Relation	T3	T4	SuperSub	true	krævede	opførelsen
+Relation	T4	T3	SubSuper	true	opførelsen	krævede
+Relation	T4	T5	SuperSub	true	opførelsen	byggede
+Relation	T5	T4	SubSuper	true	byggede	opførelsen
+Relation	T9	T10	SuperSub	true	likvidation	dannede
+Relation	T10	T9	SubSuper	true	dannede	likvidation
+Relation	T2	T3	NoRel	true	udvidedes	krævede
+Relation	T5	T1	NoRel	true	byggede	efterspørgsel
+Relation	T5	T3	NoRel	true	byggede	krævede
+Relation	T6	T10	NoRel	true	revolution	dannede
+Relation	T9	T6	NoRel	true	likvidation	revolution

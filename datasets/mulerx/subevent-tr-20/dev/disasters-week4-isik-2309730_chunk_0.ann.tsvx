@@ -1,0 +1,22 @@
+Text	HATEPE PATLAMASI , Taupo Gölü'nün MS 180 yılında meydana gelen patlamasına verilen isimdir .	Hatepe Plinian ponza tefra tabakasından ötürü bu adı almıştır ve bazen TAUPO PATLAMASI olarak anılmaktadır .	Son 20 bin yıl içinde Yeni Zelanda'da gerçekleşen en büyük patlama olarak kabul edilir .	VEI 7 patlama olarak sınıflandırılan patlama sonucu 120 kilometreküplük bir fışkırma meydana geldi ve bunun 30 kilometreküpü ise ilk birkaç dakikada fışkırtıldı .	Böylece , son 5000 yılda meydana gelen en şiddetli patlamalardan biri olmuştur ve M. Ö. 2. bin yıldaki Minoan patlaması , Paektu Dağının 946'daki patlaması ve Tambora Dağı'nın 1815'teki patlaması ile karşılaştırılabilir .
+Event	T1	almıştır	EVENT	146
+Event	T2	patlama	EVENT	261
+Event	T3	edilir	EVENT	282
+Event	T4	patlama	EVENT	297
+Event	T5	geldi	EVENT	384
+Event	T6	fışkırtıldı	EVENT	440
+Event	T7	meydana	EVENT	479
+Event	T8	patlamalardan	EVENT	505
+Event	T9	patlaması	EVENT	564
+Event	T10	patlaması	EVENT	600
+Event	T11	patlaması	EVENT	640
+Event	T12	karşılaştırılabilir	EVENT	654
+Event	T13	TAUPO PATLAMASI	EVENT	164
+Event	T14	HATEPE PATLAMASI	EVENT	0
+Relation	T1	T10	NoRel	true	almıştır	patlaması
+Relation	T12	T14	NoRel	true	karşılaştırılabilir	HATEPE PATLAMASI
+Relation	T12	T8	NoRel	true	karşılaştırılabilir	patlamalardan
+Relation	T13	T8	NoRel	true	TAUPO PATLAMASI	patlamalardan
+Relation	T3	T10	NoRel	true	edilir	patlaması
+Relation	T3	T7	NoRel	true	edilir	meydana
+Relation	T3	T9	NoRel	true	edilir	patlaması

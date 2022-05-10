@@ -1,0 +1,25 @@
+Text	Veinte personas murieron en los combates .	Los gobiernos rivales se enfrentaron militarmente en Dachau el 18 de abril cuando los 8.000 soldados de Hoffman se encontraron con los 30.000 de la República Soviética .	Después de un golpe de estado de seis días en el régimen de Toller , la República Soviética ahora estaba liderada por tres emigrantes judíos rusos , incluido Eugen Leviné .	Las fuerzas BSR — encabezados por , de todas las personas , Ernst Toller — obtuvo la victoria en la primera batalla en Dachau , pero Hoffman llegaron a un acuerdo que le dio a los servicios de 20.000 hombres de los _ Frei korps _ bajo el Teniente General Burghard von Oven .	Oven y los _ Frie korps _ tomaron Dachau y rodearon Múnich , aterrorizados a Egilhofer , quien hizo ejecutar a los rehenes que mantenía , a pesar de los esfuerzos de Toller por evitarlo .
+Event	T0	murieron	EVENT	16
+Event	T1	combates	EVENT	32
+Event	T11	tomaron	EVENT	687
+Event	T12	rodearon	EVENT	704
+Event	T13	aterrorizados	EVENT	722
+Event	T14	ejecutar	EVENT	761
+Event	T15	esfuerzos	EVENT	814
+Event	T2	enfrentaron	EVENT	68
+Event	T3	encontraron	EVENT	158
+Event	T4	golpe	EVENT	227
+Event	T5	obtuvo	EVENT	461
+Event	T6	victoria	EVENT	471
+Event	T7	batalla	EVENT	494
+Event	T8	llegaron	EVENT	527
+Event	T9	acuerdo	EVENT	541
+Relation	T11	T13	SuperSub	true	tomaron	aterrorizados
+Relation	T13	T11	SubSuper	true	aterrorizados	tomaron
+Relation	T0	T12	NoRel	true	murieron	rodearon
+Relation	T11	T1	NoRel	true	tomaron	combates
+Relation	T14	T8	NoRel	true	ejecutar	llegaron
+Relation	T15	T7	NoRel	true	esfuerzos	batalla
+Relation	T5	T3	NoRel	true	obtuvo	encontraron
+Relation	T6	T7	NoRel	true	victoria	batalla
+Relation	T8	T5	NoRel	true	llegaron	obtuvo

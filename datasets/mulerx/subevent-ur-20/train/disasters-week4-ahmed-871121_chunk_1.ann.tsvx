@@ -1,0 +1,29 @@
+Text	اِس زلزلے سے ضلع میرپور اور ضلع بھمبر میں 135 مکانات منہدم ہوئے اور 319 مکانات کو جزوی نقصان پہنچا ۔	دینہ سے میرپور جانے والے قومی شاہراہ جاتلاں روڈ 14 کلومیٹر تک اِس زلزلے میں مکمل طور پر تباہ ہوگئی ۔	قومی ادارہ برائے بندوبستی ٔ آفات کے مطابق اِس زلزلے سے زیادہ نقصان جہلم اور ضلع میرپور میں ہوا ۔	جہلم میں اپر_جہلم نہر کے بند ٹوٹ جانے کے باعث نہر کا پانی مختلف دیہات میں داخل ہوگیا ۔	لیکن جلد ہی پاک فوج کے دستوں نے اِس نہر کی مرمت کردی جس سے اُس نہر کا پانی دیہات میں داخل ہونے سے رک گیا سرکاری اطلاعات کے مطابق اِس زلزلے میں منگلا ڈیم محفوظ رہا لیکن اُس کا پاور ہاؤس ( بجلی گھر ) بند کردیا گیا جس سے قومی ادارہ بجلی کو 900 میگاواٹ کا نقصان اُٹھانا پڑا ۔
+Event	T0	زلزلے	EVENT	4
+Event	T1	ہوئے	EVENT	59
+Event	T2	پہنچا	EVENT	93
+Event	T3	زلزلے	EVENT	167
+Event	T4	ہوگئی	EVENT	194
+Event	T5	زلزلے	EVENT	248
+Event	T6	نقصان	EVENT	263
+Event	T7	ہوا	EVENT	293
+Event	T8	جانے	EVENT	332
+Event	T9	ہوگیا	EVENT	378
+Event	T10	کردی	EVENT	434
+Event	T11	گیا	EVENT	487
+Event	T12	زلزلے	EVENT	519
+Event	T13	پڑا	EVENT	652
+Relation	T10	T5	NoRel	true	کردی	زلزلے
+Relation	T12	T13	NoRel	true	زلزلے	پڑا
+Relation	T2	T12	NoRel	true	پہنچا	زلزلے
+Relation	T2	T5	NoRel	true	پہنچا	زلزلے
+Relation	T5	T2	NoRel	true	زلزلے	پہنچا
+Relation	T5	T6	NoRel	true	زلزلے	نقصان
+Relation	T5	T7	NoRel	true	زلزلے	ہوا
+Relation	T6	T12	NoRel	true	نقصان	زلزلے
+Relation	T6	T7	NoRel	true	نقصان	ہوا
+Relation	T6	T8	NoRel	true	نقصان	جانے
+Relation	T8	T6	NoRel	true	جانے	نقصان
+Relation	T8	T7	NoRel	true	جانے	ہوا
+Relation	T9	T10	NoRel	true	ہوگیا	کردی
+Relation	T9	T2	NoRel	true	ہوگیا	پہنچا

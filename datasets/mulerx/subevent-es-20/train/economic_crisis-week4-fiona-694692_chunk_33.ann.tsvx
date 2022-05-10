@@ -1,0 +1,31 @@
+Text	En el transcurso de la batalla el _ Derfflinger _ recibió el impacto de 17 proyectiles de grueso calibre y fue nueve veces tocado por salvas de baterías secundarias .	Permaneció en el dique para reparaciones hasta el 15 de octubre .	Por el contrario , disparó 385 proyectiles de su batería principal , 235 de las secundarias y un torpedo .	Su tripulación sufrió 157 muertos y 26 heridos , la mayor cantidad de bajas en cualquier buque no hundido durante la batalla .	Debido a su extraordinaria resistencia en Jutlandia , los británicos bautizaron al poderoso crucero de batalla alemán como « Perro de Hierro » .
+Event	T0	transcurso	EVENT	6
+Event	T1	batalla	EVENT	23
+Event	T2	recibió	EVENT	50
+Event	T3	impacto	EVENT	61
+Event	T4	tocado	EVENT	123
+Event	T5	salvas	EVENT	134
+Event	T6	Permaneció	EVENT	167
+Event	T7	reparaciones	EVENT	195
+Event	T8	disparó	EVENT	252
+Event	T9	torpedo	EVENT	330
+Event	T10	sufrió	EVENT	355
+Event	T11	muertos	EVENT	366
+Event	T12	heridos	EVENT	379
+Event	T13	bajas	EVENT	410
+Event	T14	hundido	EVENT	438
+Event	T15	batalla	EVENT	457
+Event	T16	resistencia	EVENT	494
+Event	T17	bautizaron	EVENT	536
+Relation	T0	T8	NoRel	true	transcurso	disparó
+Relation	T10	T0	NoRel	true	sufrió	transcurso
+Relation	T10	T3	NoRel	true	sufrió	impacto
+Relation	T11	T2	NoRel	true	muertos	recibió
+Relation	T12	T9	NoRel	true	heridos	torpedo
+Relation	T14	T1	NoRel	true	hundido	batalla
+Relation	T14	T4	NoRel	true	hundido	tocado
+Relation	T16	T3	NoRel	true	resistencia	impacto
+Relation	T4	T0	NoRel	true	tocado	transcurso
+Relation	T4	T12	NoRel	true	tocado	heridos
+Relation	T5	T4	NoRel	true	salvas	tocado
+Relation	T8	T0	NoRel	true	disparó	transcurso

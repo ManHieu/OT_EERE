@@ -1,0 +1,34 @@
+Text	Sherman estuvo de acuerdo en apoyar la operación en Incheon , dejando a Doyle furioso .	A pesar de estos obstáculos , en septiembre MacArthur entregó un plan revisado del asalto en Incheon : el Plan 100-B , con el nombre código de _ Operación Chromite _ .	MacArthur pasó 45 minutos después de la reunión explicando sus razones para seleccionar Incheon .	Él dijo que debido a que estaba tan fuertemente defendido , el enemigo no esperaría un ataque allí , que la victoria en Incheon evitaría una brutal campaña invernal y que , al invadir un punto fuerte en el norte , las fuerzas de las Naciones Unidas cortarían las líneas de abastecimientos y de comunicaciones de los norcoreanos .	Él también escogió Incheon debido a su proximidad a Seúl .
+Event	T0	acuerdo	EVENT	18
+Event	T1	apoyar	EVENT	29
+Event	T2	operación	EVENT	39
+Event	T3	dejando	EVENT	62
+Event	T4	obstáculos	EVENT	105
+Event	T5	entregó	EVENT	142
+Event	T6	revisado	EVENT	158
+Event	T7	asalto	EVENT	171
+Event	T8	explicando	EVENT	304
+Event	T9	seleccionar	EVENT	332
+Event	T10	dijo	EVENT	357
+Event	T11	defendido	EVENT	402
+Event	T12	ataque	EVENT	441
+Event	T13	victoria	EVENT	462
+Event	T14	invadir	EVENT	530
+Event	T15	cortarían	EVENT	603
+Event	T16	escogió	EVENT	695
+Event	T17	proximidad	EVENT	723
+Relation	T11	T13	NoRel	true	defendido	victoria
+Relation	T11	T4	NoRel	true	defendido	obstáculos
+Relation	T13	T10	NoRel	true	victoria	dijo
+Relation	T14	T4	NoRel	true	invadir	obstáculos
+Relation	T15	T4	NoRel	true	cortarían	obstáculos
+Relation	T16	T3	NoRel	true	escogió	dejando
+Relation	T17	T1	NoRel	true	proximidad	apoyar
+Relation	T17	T4	NoRel	true	proximidad	obstáculos
+Relation	T2	T5	NoRel	true	operación	entregó
+Relation	T5	T11	NoRel	true	entregó	defendido
+Relation	T6	T17	NoRel	true	revisado	proximidad
+Relation	T7	T17	NoRel	true	asalto	proximidad
+Relation	T8	T2	NoRel	true	explicando	operación
+Relation	T9	T4	NoRel	true	seleccionar	obstáculos
+Relation	T9	T5	NoRel	true	seleccionar	entregó

@@ -1,0 +1,35 @@
+Text	1995 BAKÜ METRO YANGINI , 28 Ekim 1995 tarihinde Bakü metrosu'nun Ulduz ve Neriman Nerimanov metro istasyonları arasında çıkan ve 289 kişinin ölümüne 270 kişinin ise yaralanmasına sebep olan yangındır .	Bu yangın , dünyanın en fazla ölüme sebebiyet veren metro faciasıdır .	Yangının elektrik hatlarındaki teknik bir sorundan ötürü çıktığı düşünülmektedir .	Facia sonrasında olayı araştırmak üzere kurulan komisyonun başkanı olan Başbakan Yardımcısı Abbas Abbasov yangının sebebini eskimiş Sovyet ekipmanlarının hâlen kullanılması olarak göstermiştir .	Facianın ardından devlet başkanı Haydar Aliyev Amerikalı bir yetkiliye öncelikle edinilen bilginin teknik bir arıza sonucu facianın gerçekleştiğini gösterdiği ancak sabotaj ihtimalinin de değerlendirildiğini bildirmiştir .
+Event	T0	çıkan	EVENT	121
+Event	T1	ölümüne	EVENT	142
+Event	T2	yangındır	EVENT	191
+Event	T3	yangın	EVENT	206
+Event	T4	faciasıdır	EVENT	261
+Event	T5	Yangının	EVENT	274
+Event	T6	Facia	EVENT	357
+Event	T7	araştırmak	EVENT	380
+Event	T8	yangının	EVENT	463
+Event	T9	kullanılması	EVENT	517
+Event	T10	göstermiştir	EVENT	537
+Event	T11	Facianın	EVENT	552
+Event	T12	gösterdiği	EVENT	700
+Event	T13	bildirmiştir	EVENT	760
+Event	T14	1995 BAKÜ METRO YANGINI	EVENT	0
+Event	T15	düşünülmektedir	EVENT	339
+Event	T16	değerlendirildiğini	EVENT	740
+Relation	T4	T1	SuperSub	true	faciasıdır	ölümüne
+Relation	T1	T4	SubSuper	true	ölümüne	faciasıdır
+Relation	T4	T2	SuperSub	true	faciasıdır	yangındır
+Relation	T2	T4	SubSuper	true	yangındır	faciasıdır
+Relation	T4	T3	SuperSub	true	faciasıdır	yangın
+Relation	T3	T4	SubSuper	true	yangın	faciasıdır
+Relation	T4	T14	SuperSub	true	faciasıdır	1995 BAKÜ METRO YANGINI
+Relation	T14	T4	SubSuper	true	1995 BAKÜ METRO YANGINI	faciasıdır
+Relation	T4	T0	SuperSub	true	faciasıdır	çıkan
+Relation	T0	T4	SubSuper	true	çıkan	faciasıdır
+Relation	T1	T7	NoRel	true	ölümüne	araştırmak
+Relation	T11	T8	NoRel	true	Facianın	yangının
+Relation	T12	T3	NoRel	true	gösterdiği	yangın
+Relation	T16	T3	NoRel	true	değerlendirildiğini	yangın
+Relation	T2	T5	NoRel	true	yangındır	Yangının
+Relation	T4	T12	NoRel	true	faciasıdır	gösterdiği
+Relation	T9	T7	NoRel	true	kullanılması	araştırmak

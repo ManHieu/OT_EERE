@@ -1,0 +1,25 @@
+Text	جبکہ ایک 5 سالہ بچے ، مرسلین سیالکوٹ کے شکرگڑھ سیکٹر میں زخمی ہو گیا ۔	-___- جنوری 2 ، پاکستانی فوج کی گولی سے دو بھارتی فوجی اور ایک خاتون شہری ہلاک ، اس کے ساتھ ساتھ 11 شہری زخمی ۔	دا ہندو نے خبر دی کہ 2 پاکستانی اہلکار رات کو 9 : 30 پاکستانی وقت کے مطابق تبدیلی کے وقت بھارتی فائرنگ سے ہلاک ہوئے ۔	-___- جنوری5 ، چار شہری پاکستانی رہائشی علاقوں پر بھارتی فائرنگ اور شیلنگ کی وجہ سے ہلاک ہو گئے ۔	بوری چک کے 18 سالہ عظیم اور ظقروال سیکٹر کے گاؤں میں ایک خاتون اور دو دیگر شہری ہلاک ۔
+Event	T0	زخمی	EVENT	57
+Event	T1	گیا	EVENT	65
+Event	T2	گولی	EVENT	103
+Event	T3	ہلاک	EVENT	145
+Event	T4	زخمی	EVENT	176
+Event	T5	دی	EVENT	198
+Event	T6	تبدیلی	EVENT	258
+Event	T7	فائرنگ	EVENT	279
+Event	T8	ہوئے	EVENT	294
+Event	T9	فائرنگ	EVENT	358
+Event	T10	شیلنگ	EVENT	369
+Event	T11	گئے	EVENT	393
+Event	T12	ہلاک	EVENT	479
+Relation	T1	T9	NoRel	true	گیا	فائرنگ
+Relation	T10	T11	NoRel	true	شیلنگ	گئے
+Relation	T11	T4	NoRel	true	گئے	زخمی
+Relation	T12	T0	NoRel	true	ہلاک	زخمی
+Relation	T12	T3	NoRel	true	ہلاک	ہلاک
+Relation	T3	T7	NoRel	true	ہلاک	فائرنگ
+Relation	T4	T1	NoRel	true	زخمی	گیا
+Relation	T4	T5	NoRel	true	زخمی	دی
+Relation	T5	T0	NoRel	true	دی	زخمی
+Relation	T6	T4	NoRel	true	تبدیلی	زخمی
+Relation	T7	T3	NoRel	true	فائرنگ	ہلاک

@@ -1,0 +1,55 @@
+Text	Este accede a pagar sus deudas pero , irritado , le envía a Parma a reprimir una insurrección provocada por el nuevo sistema de servicio militar impuesto en la zona .	A las órdenes del gobernador Huges Nardon soluciona eficazmente el problema , por lo que Napoleón vuelve a darle otra oportunidad y le restituye en el cargo de comandante de París .	Pero Junot volverá a las andadas : su ritmo de vida le suponía unos gastos que no podía asumir y se ve envuelto , además , en numerosas peleas y conflictos , haciendo gala de un carácter cada vez más desequilibrado .	Por si fuese poco , mientras Napoleón y el Gran Ejército luchaban en Polonia , Junot hace la corte a Carolina Bonaparte , hermana del emperador y esposa del mariscal Murat , convirtiéndose en su amante .	Al regreso del Ejército a Francia , un indignado Murat reta a Junot a un duelo , pero este nunca llegará a celebrarse por prohibición expresa de Napoleón .
+Event	T0	accede	EVENT	5
+Event	T1	pagar	EVENT	14
+Event	T2	deudas	EVENT	24
+Event	T3	irritado	EVENT	38
+Event	T4	envía	EVENT	52
+Event	T5	reprimir	EVENT	68
+Event	T6	provocada	EVENT	94
+Event	T7	impuesto	EVENT	145
+Event	T8	soluciona	EVENT	209
+Event	T9	vuelve	EVENT	265
+Event	T10	restituye	EVENT	302
+Event	T11	volverá	EVENT	360
+Event	T12	gastos	EVENT	417
+Event	T13	envuelto	EVENT	452
+Event	T14	peleas	EVENT	485
+Event	T15	conflictos	EVENT	494
+Event	T16	luchaban	EVENT	623
+Event	T17	hace	EVENT	651
+Event	T18	corte	EVENT	659
+Event	T19	convirtiéndose	EVENT	740
+Event	T20	reta	EVENT	825
+Event	T23	prohibición	EVENT	892
+Relation	T9	T10	SuperSub	true	vuelve	restituye
+Relation	T10	T9	SubSuper	true	restituye	vuelve
+Relation	T0	T12	NoRel	true	accede	gastos
+Relation	T1	T0	NoRel	true	pagar	accede
+Relation	T1	T3	NoRel	true	pagar	irritado
+Relation	T10	T16	NoRel	true	restituye	luchaban
+Relation	T11	T10	NoRel	true	volverá	restituye
+Relation	T11	T15	NoRel	true	volverá	conflictos
+Relation	T11	T17	NoRel	true	volverá	hace
+Relation	T12	T17	NoRel	true	gastos	hace
+Relation	T12	T20	NoRel	true	gastos	reta
+Relation	T13	T12	NoRel	true	envuelto	gastos
+Relation	T13	T14	NoRel	true	envuelto	peleas
+Relation	T14	T23	NoRel	true	peleas	prohibición
+Relation	T15	T17	NoRel	true	conflictos	hace
+Relation	T16	T10	NoRel	true	luchaban	restituye
+Relation	T17	T19	NoRel	true	hace	convirtiéndose
+Relation	T17	T20	NoRel	true	hace	reta
+Relation	T18	T1	NoRel	true	corte	pagar
+Relation	T18	T14	NoRel	true	corte	peleas
+Relation	T19	T14	NoRel	true	convirtiéndose	peleas
+Relation	T2	T13	NoRel	true	deudas	envuelto
+Relation	T2	T18	NoRel	true	deudas	corte
+Relation	T20	T2	NoRel	true	reta	deudas
+Relation	T20	T7	NoRel	true	reta	impuesto
+Relation	T23	T11	NoRel	true	prohibición	volverá
+Relation	T23	T20	NoRel	true	prohibición	reta
+Relation	T4	T9	NoRel	true	envía	vuelve
+Relation	T5	T9	NoRel	true	reprimir	vuelve
+Relation	T7	T14	NoRel	true	impuesto	peleas
+Relation	T8	T10	NoRel	true	soluciona	restituye
+Relation	T8	T4	NoRel	true	soluciona	envía

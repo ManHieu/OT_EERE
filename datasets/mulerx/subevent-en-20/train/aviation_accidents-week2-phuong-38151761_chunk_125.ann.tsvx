@@ -1,0 +1,29 @@
+Text	He broke his arm , elbow and ribs , exploded a vertebra and collapsed a lung .	Col. Cadick survived and retired from the Marine Corps .	The F /A - 18 remained largely intact but was beyond repair .	6 May : Royal Air Force Boeing Chinook HC. 1__ ZA 672_ hits a pier at Hanover Airport while taxiing and was destroyed , Three crew killed .	11 June : U.S. Navy Lockheed S - 3A Viking , BuNo__160164_ aircraft crashes immediately after launching .
+Event	T0	broke	EVENT	3
+Event	T1	exploded	EVENT	36
+Event	T10	killed	EVENT	329
+Event	T11	crashes	EVENT	406
+Event	T12	launching	EVENT	432
+Event	T2	collapsed	EVENT	60
+Event	T3	survived	EVENT	91
+Event	T4	retired	EVENT	104
+Event	T6	repair	EVENT	189
+Event	T7	hits	EVENT	253
+Event	T8	taxiing	EVENT	290
+Event	T9	destroyed	EVENT	306
+Relation	T4	T3	SuperSub	true	retired	survived
+Relation	T3	T4	SubSuper	true	survived	retired
+Relation	T3	T0	SuperSub	true	survived	broke
+Relation	T0	T3	SubSuper	true	broke	survived
+Relation	T3	T1	SuperSub	true	survived	exploded
+Relation	T1	T3	SubSuper	true	exploded	survived
+Relation	T3	T2	SuperSub	true	survived	collapsed
+Relation	T2	T3	SubSuper	true	collapsed	survived
+Relation	T9	T8	SuperSub	true	destroyed	taxiing
+Relation	T8	T9	SubSuper	true	taxiing	destroyed
+Relation	T10	T3	NoRel	true	killed	survived
+Relation	T10	T8	NoRel	true	killed	taxiing
+Relation	T10	T9	NoRel	true	killed	destroyed
+Relation	T12	T2	NoRel	true	launching	collapsed
+Relation	T12	T6	NoRel	true	launching	repair
+Relation	T3	T8	NoRel	true	survived	taxiing

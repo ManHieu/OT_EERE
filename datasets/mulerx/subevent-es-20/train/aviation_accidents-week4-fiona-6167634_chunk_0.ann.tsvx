@@ -1,0 +1,24 @@
+Text	El VUELO 407 DE EMIRATES era un vuelo de Emirates desde Melbourne a Dubái con un Airbus A340-500 .	El 20 de marzo de 2009 , el vuelo no logró despegar correctamente en el aeropuerto de Melbourne , golpeando varias estructuras en el extremo de la pista antes de finalmente escalar lo suficiente para volver al aeropuerto para un aterrizaje seguro .	Aunque no se produjeron muertes ni heridos , el daño a la aeronave fue lo suficientemente grave como para que la Oficina de Seguridad del Transporte de Australia clasificara el evento como un " accidente " .	Los funcionarios de aviación lo han descrito como " lo más cerca que hemos estado nunca de una gran catástrofe de aviación en Australia " .	El vuelo programado partió de Melbourne según lo planeado a las 22:30 utilizando la pista 16 de 3657 m de largo ( 11.998 pies ) .
+Event	T0	vuelo	EVENT	32
+Event	T1	despegar	EVENT	142
+Event	T2	golpeando	EVENT	197
+Event	T3	escalar	EVENT	272
+Event	T4	volver	EVENT	299
+Event	T5	muertes	EVENT	372
+Event	T6	heridos	EVENT	383
+Event	T7	daño	EVENT	396
+Event	T8	clasificara	EVENT	510
+Event	T9	evento	EVENT	525
+Event	T10	accidente	EVENT	542
+Event	T11	descrito	EVENT	592
+Event	T12	catástrofe	EVENT	656
+Event	T13	partió	EVENT	716
+Event	T14	planeado	EVENT	745
+Relation	T0	T1	NoRel	true	vuelo	despegar
+Relation	T0	T10	NoRel	true	vuelo	accidente
+Relation	T13	T7	NoRel	true	partió	daño
+Relation	T14	T11	NoRel	true	planeado	descrito
+Relation	T2	T9	NoRel	true	golpeando	evento
+Relation	T5	T1	NoRel	true	muertes	despegar
+Relation	T6	T5	NoRel	true	heridos	muertes
+Relation	T6	T7	NoRel	true	heridos	daño

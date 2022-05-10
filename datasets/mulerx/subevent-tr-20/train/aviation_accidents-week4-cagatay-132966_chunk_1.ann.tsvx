@@ -1,0 +1,16 @@
+Text	sol | küçükresim | 231x231px | Dünya Ticaret Merkezi'nin 11 Eylül 2001 tarihindeki saldırı sonrası yıkılmadan az önceki görüntüsü küçükresim | none | WTC Illumination , 2006 New York'taki Dünya Ticaret Merkezi 1973'te inşa edildikten sonra Manhattan'ın çehresini değiştiren dünyanın en yüksek ikiz kuleleri oldu .	Kulelerden birinin 107. katında bulunan _ The Windows on the World _ isimli restoran , müşterilerine akşam yemeklerinde New York ve Hudson Nehri'ni izletme fırsatını veren dünyanın en büyük restoranıydı .	2015_te tamamlanan yeni Dünya Ticaret Merkezi ve Kulesi yerini aldı .	New York silüeti / World Trade Center - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - küçükresim | 800px | none | New York silüeti , 1992	Yeni komplekste iki ikiz kulenin eşleri olan 1 Dünya Ticaret Merkezi ve 2 Dünya Ticaret Merkezi binalarının inşasının yanındaki diğer binalar arasında Marriott Dünya Ticaret Merkezi ( 3 Dünya Ticaret Merkezi ) , 4 Dünya Ticaret Merkezi , 5 Dünya Ticaret Merkezi , 6 Dünya Ticaret Merkezi ve 7 Dünya Ticaret Merkezi yer almaktadır .
+Event	T0	saldırı	EVENT	83
+Event	T1	yıkılmadan	EVENT	99
+Event	T2	değiştiren	EVENT	263
+Event	T3	izletme	EVENT	462
+Event	T4	aldı	EVENT	582
+Event	T5	inşa	EVENT	218
+Event	T6	yemeklerinde	EVENT	421
+Event	T7	veren	EVENT	480
+Event	T8	tamamlanan	EVENT	527
+Event	T9	inşasının	EVENT	879
+Relation	T0	T6	NoRel	true	saldırı	yemeklerinde
+Relation	T1	T7	NoRel	true	yıkılmadan	veren
+Relation	T3	T5	NoRel	true	izletme	inşa
+Relation	T7	T4	NoRel	true	veren	aldı
+Relation	T9	T4	NoRel	true	inşasının	aldı

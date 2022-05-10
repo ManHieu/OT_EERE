@@ -1,0 +1,13 @@
+Text	Toplam lav hacmi 0,8 km³ volkanın 0, 21 km³ ile üretilmiştir .	1947 patlama uygun Heklason patlama 1104 yılından bu yana en uzun uyuyan döneminden beri bir yüzyıldan fazla oldu .	Patlama önce yanardağ çevresinde görünür olmuş , ama olağanüstü bir şey fark edilmemiştir .	Patlama yüksek bir kükreme ile 3 dk ±06 : 41'de oluştu .	Sonraki patlamalar İzlanda boyunca duyulmuş olabilir .
+Event	T0	üretilmiştir	EVENT	48
+Event	T1	patlama	EVENT	68
+Event	T2	patlama	EVENT	91
+Event	T3	Patlama	EVENT	179
+Event	T4	görünür	EVENT	212
+Event	T6	Patlama	EVENT	271
+Event	T7	oluştu	EVENT	319
+Event	T8	patlamalar	EVENT	336
+Event	T9	duyulmuş	EVENT	363
+Relation	T2	T3	NoRel	true	patlama	Patlama
+Relation	T7	T1	NoRel	true	oluştu	patlama
+Relation	T8	T4	NoRel	true	patlamalar	görünür

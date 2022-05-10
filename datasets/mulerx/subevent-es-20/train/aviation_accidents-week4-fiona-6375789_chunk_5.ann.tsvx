@@ -1,0 +1,25 @@
+Text	Un momento de silencio fue realizado por 19 diplomáticos en Taipéi .	- REPÚBLICA POPULAR CHINA — Xi Jinping , secretario general del Partido Comunista de China , expresó sus condolencias tras el accidente de avión , según informó un comunicado de la Oficina de Asuntos de Taiwán del Consejo de Estado de la República Popular China .	- — El cardenal Pietro Parolin , secretario de Estado de la Santa Sede , envió sus condolencias en nombre del Papa Francisco al arzobispo John Hung Shan-chuan de Taipéi .	- Accidente de aviación - Anexo : Accidentes más graves de aviación ( 1943 - presente ) - Anexo : Accidentes e incidentes notables en la aviación civil - Vuelo 235 de TransAsia Airways	- Declaración de ATR del vuelo 222 de TransAsia ( Archivo ) , ATR Aircraft , 23 de julio de 2014 .
+Event	T0	silencio	EVENT	14
+Event	T1	realizado	EVENT	27
+Event	T2	expresó	EVENT	162
+Event	T3	accidente	EVENT	195
+Event	T4	informó	EVENT	222
+Event	T5	comunicado	EVENT	233
+Event	T6	envió	EVENT	406
+Event	T7	condolencias	EVENT	416
+Event	T8	Accidente	EVENT	506
+Event	T9	Accidentes	EVENT	538
+Event	T10	Accidentes	EVENT	602
+Event	T11	Vuelo	EVENT	658
+Event	T12	Declaración	EVENT	691
+Event	T13	vuelo	EVENT	714
+Relation	T3	T6	SuperSub	true	accidente	envió
+Relation	T6	T3	SubSuper	true	envió	accidente
+Relation	T10	T12	NoRel	true	Accidentes	Declaración
+Relation	T12	T1	NoRel	true	Declaración	realizado
+Relation	T13	T11	NoRel	true	vuelo	Vuelo
+Relation	T3	T11	NoRel	true	accidente	Vuelo
+Relation	T4	T13	NoRel	true	informó	vuelo
+Relation	T4	T7	NoRel	true	informó	condolencias
+Relation	T7	T1	NoRel	true	condolencias	realizado
+Relation	T7	T2	NoRel	true	condolencias	expresó

@@ -1,0 +1,18 @@
+Text	Verilen karar daha sonra Türkiye Büyük Millet Meclisine getirildi .	24 Nisan 1972 Pazartesi günü yapılan Meclis oturumunda CHP lideri İsmet İnönü , _ " 27 Mayıs'tan sonra idama mahkûm edilenlerin idam edilmemeleri için parti olarak var güçleriyle çalıştıklarını , siyasi suçlardan dolayı idam olmamasını , yeni bir kanun çıkarılmasını " _ önerdi ve şöyle devam etti :	_ " Suçluların cezaları müebbet hapse çevrilmelidir .	Nihayet bunlar genç , tecrübesiz , taşkın insanlardır .	Taşkınlıklarının hiçbir netice veremeyeceği kendilerine ve emsallerine öğretilmiştir .
+Event	T0	karar	EVENT	8
+Event	T1	getirildi	EVENT	56
+Event	T4	önerdi	EVENT	339
+Event	T5	etti	EVENT	361
+Event	T6	çevrilmelidir	EVENT	406
+Event	T3	oturumunda	EVENT	112
+Event	T7	idama	EVENT	171
+Event	T8	suçlardan	EVENT	271
+Event	T9	çalıştıklarını	EVENT	247
+Event	T10	çıkarılmasını	EVENT	321
+Relation	T1	T10	NoRel	true	getirildi	çıkarılmasını
+Relation	T1	T8	NoRel	true	getirildi	suçlardan
+Relation	T3	T8	NoRel	true	oturumunda	suçlardan
+Relation	T4	T10	NoRel	true	önerdi	çıkarılmasını
+Relation	T5	T6	NoRel	true	etti	çevrilmelidir
+Relation	T7	T5	NoRel	true	idama	etti
+Relation	T9	T7	NoRel	true	çalıştıklarını	idama

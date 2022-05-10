@@ -1,0 +1,13 @@
+Text	Açığa çıkan lavlar yoğun ve tıkayıcıydı .	İzlanda dilinde _ apalhraun _ adı verilen bu tip lavlar biriktiği alanlarda yer yer 40 metre derinliğe ulaştı .	Püskürmelerin ilerleyen aşamalarında büyük bir lav kütlesi adada bulunan bir balık yetiştirme çiftliğini yok etti ve ikisine de büyük zarar verdi .	Adanın enerji dağıtım merkezi de lavlar içinde kalarak yok oldu .	Yanardağ kasabaya ve evlerin bulunduğu yerlere çok yakın bir noktada bulunmasına rağmen , bu felakette yalnızca bir kişi yaşamını yitirmiştir .
+Event	T0	tıkayıcıydı	EVENT	28
+Event	T1	biriktiği	EVENT	98
+Event	T2	ulaştı	EVENT	145
+Event	T3	etti	EVENT	263
+Event	T4	verdi	EVENT	294
+Event	T5	oldu	EVENT	361
+Event	T6	felakette	EVENT	461
+Event	T7	yitirmiştir	EVENT	498
+Event	T8	lavlar	EVENT	12
+Relation	T2	T0	NoRel	true	ulaştı	tıkayıcıydı
+Relation	T3	T8	NoRel	true	etti	lavlar
+Relation	T4	T8	NoRel	true	verdi	lavlar

@@ -1,0 +1,12 @@
+Text	Uçak , pisti yaklaşık 160 metre aştı ve bir miktar hasar gördü .	Uçak , flapların çalışmaması nedeniyle saatte 350 -380 kilometre hızda - normalden daha hızlı - indi .	Flaplara hidrolik güç sağlansa da , bunları çalıştıran anahtarlar elektriklidir .	72 yolcu ve 9 mürettebatın tamamı uçağın tahliye kaydırakları ile tahliye edildi .	Yaralanan olmadığı açıklandı .
+Event	T0	aştı	EVENT	32
+Event	T1	gördü	EVENT	57
+Event	T2	çalışmaması	EVENT	82
+Event	T3	indi	EVENT	161
+Event	T4	tahliye	EVENT	291
+Event	T5	edildi	EVENT	324
+Event	T6	açıklandı	EVENT	352
+Relation	T0	T2	NoRel	true	aştı	çalışmaması
+Relation	T3	T5	NoRel	true	indi	edildi
+Relation	T3	T6	NoRel	true	indi	açıklandı
+Relation	T5	T2	NoRel	true	edildi	çalışmaması

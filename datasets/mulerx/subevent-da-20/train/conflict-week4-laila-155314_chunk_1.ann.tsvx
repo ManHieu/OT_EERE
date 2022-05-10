@@ -1,0 +1,28 @@
+Text	Delinkventen går med bar overkrop og bundet på hænderne trukket af to soldater mellem to rækker menige soldater , der prygler ham med hasselkæppe .	Bag hver række soldater står officerer , der prygler de soldater , der ikke prygler delinkventen .	Spidsrod var nævnt i den militære straffelov indtil 1846 .	Straffen blev idømt for forskellige diciplinære forseelser som udeblivelse fra tjeneste eller desertering .	En strafudmåling på tre gange spidsrod mellem 300 mand var hyppig .
+Event	T0	går	EVENT	13
+Event	T1	trukket	EVENT	56
+Event	T2	prygler	EVENT	118
+Event	T3	prygler	EVENT	193
+Event	T4	prygler	EVENT	224
+Event	T5	nævnt	EVENT	260
+Event	T6	idømt	EVENT	320
+Event	T7	forseelser	EVENT	354
+Event	T8	udeblivelse	EVENT	369
+Event	T9	desertering	EVENT	400
+Event	T10	strafudmåling	EVENT	417
+Event	T11	bundet	EVENT	37
+Event	T12	står	EVENT	172
+Event	T13	Spidsrod	EVENT	247
+Event	T14	Straffen	EVENT	306
+Event	T15	spidsrod	EVENT	444
+Relation	T0	T3	NoRel	true	går	prygler
+Relation	T10	T12	NoRel	true	strafudmåling	står
+Relation	T10	T13	NoRel	true	strafudmåling	Spidsrod
+Relation	T12	T9	NoRel	true	står	desertering
+Relation	T13	T1	NoRel	true	Spidsrod	trukket
+Relation	T13	T12	NoRel	true	Spidsrod	står
+Relation	T14	T12	NoRel	true	Straffen	står
+Relation	T3	T2	NoRel	true	prygler	prygler
+Relation	T3	T4	NoRel	true	prygler	prygler
+Relation	T4	T7	NoRel	true	prygler	forseelser
+Relation	T9	T13	NoRel	true	desertering	Spidsrod

@@ -1,0 +1,41 @@
+Text	Ante ello , el gobierno de George Bush seguía preparando una opción militar a la controversia .	Esto se sucedía a la vez que el gobierno iraní anunciaba su decisión de cambiar al dólar por el euro como moneda de transacción en la comercialización del petróleo y otros bienes y servicios .	Ante las sanciones dictadas por el Consejo de Seguridad , parlamentarios iraníes aprobaron una ley por la cual se disponía que el gobierno de Irán revisase su participación en el Tratado de No Proliferación Nuclear	Recientemente Roger Stern publicó un estudio que indica que la necesidad de Irán de desarrollar su programa nuclear es genuina , ya que en cinco años - a partir de comienzos del 2007 - sus exportaciones de petróleo serían solo de la mitad y para el año 2015 llegarían al nivel cero .	Las exportaciones de petróleo representan el 70% del ingreso del Estado iraní .
+Event	T0	preparando	EVENT	46
+Event	T1	controversia	EVENT	81
+Event	T2	sucedía	EVENT	104
+Event	T3	anunciaba	EVENT	143
+Event	T4	decisión	EVENT	156
+Event	T5	cambiar	EVENT	168
+Event	T6	transacción	EVENT	212
+Event	T7	comercialización	EVENT	230
+Event	T8	dictadas	EVENT	308
+Event	T9	aprobaron	EVENT	370
+Event	T10	disponía	EVENT	403
+Event	T11	revisase	EVENT	436
+Event	T12	participación	EVENT	448
+Event	T13	Tratado	EVENT	468
+Event	T14	publicó	EVENT	530
+Event	T15	estudio	EVENT	541
+Event	T16	indica	EVENT	553
+Event	T17	necesidad	EVENT	567
+Event	T18	desarrollar	EVENT	588
+Event	T19	exportaciones	EVENT	693
+Event	T20	ingreso	EVENT	841
+Event	T21	exportaciones	EVENT	792
+Relation	T0	T11	NoRel	true	preparando	revisase
+Relation	T1	T3	NoRel	true	controversia	anunciaba
+Relation	T12	T18	NoRel	true	participación	desarrollar
+Relation	T13	T18	NoRel	true	Tratado	desarrollar
+Relation	T14	T0	NoRel	true	publicó	preparando
+Relation	T15	T11	NoRel	true	estudio	revisase
+Relation	T16	T2	NoRel	true	indica	sucedía
+Relation	T19	T17	NoRel	true	exportaciones	necesidad
+Relation	T19	T6	NoRel	true	exportaciones	transacción
+Relation	T2	T4	NoRel	true	sucedía	decisión
+Relation	T20	T10	NoRel	true	ingreso	disponía
+Relation	T20	T18	NoRel	true	ingreso	desarrollar
+Relation	T21	T1	NoRel	true	exportaciones	controversia
+Relation	T3	T12	NoRel	true	anunciaba	participación
+Relation	T3	T16	NoRel	true	anunciaba	indica
+Relation	T4	T16	NoRel	true	decisión	indica
+Relation	T5	T1	NoRel	true	cambiar	controversia
+Relation	T5	T15	NoRel	true	cambiar	estudio

@@ -1,0 +1,29 @@
+Text	Antibiyotiklerle erken tedavi , mortalite oranını yüzde 4- 15 arasında azaltır .	Pnömonik veba formu , akciğerlerin enfeksiyonundan kaynaklanır .	Öksürme ve hapşırmaya neden olur ve böylece bakteriyel hücreler içeren ve bunları teneffüs eden herkesi enfekte etmesi muhtemel havadaki damlacıklar üretir .	Pnömonik veba için kuluçka süresi kısa , genellikle iki ila dört gün , ancak bazen sadece birkaç saattir .	İlk belirtiler diğer bazı solunum yolu hastalıklarından ayırt edilemez ; baş ağrısı , halsizlik ve kan tükürme veya kusmayı içerir .
+Event	T0	tedavi	EVENT	23
+Event	T1	Öksürme	EVENT	146
+Event	T3	üretir	EVENT	295
+Event	T4	belirtiler	EVENT	415
+Event	T5	ağrısı	EVENT	488
+Event	T6	tükürme	EVENT	514
+Event	T7	azaltır	EVENT	71
+Event	T8	veba	EVENT	90
+Event	T9	enfeksiyonundan	EVENT	116
+Event	T10	hapşırmaya	EVENT	157
+Event	T2	eden	EVENT	237
+Event	T11	etmesi	EVENT	258
+Event	T12	halsizlik	EVENT	497
+Event	T13	kusmayı	EVENT	527
+Relation	T8	T5	SuperSub	true	veba	ağrısı
+Relation	T5	T8	SubSuper	true	ağrısı	veba
+Relation	T8	T12	SuperSub	true	veba	halsizlik
+Relation	T12	T8	SubSuper	true	halsizlik	veba
+Relation	T8	T6	SuperSub	true	veba	tükürme
+Relation	T6	T8	SubSuper	true	tükürme	veba
+Relation	T8	T13	SuperSub	true	veba	kusmayı
+Relation	T13	T8	SubSuper	true	kusmayı	veba
+Relation	T0	T5	NoRel	true	tedavi	ağrısı
+Relation	T1	T7	NoRel	true	Öksürme	azaltır
+Relation	T11	T2	NoRel	true	etmesi	eden
+Relation	T11	T3	NoRel	true	etmesi	üretir
+Relation	T12	T3	NoRel	true	halsizlik	üretir
+Relation	T4	T10	NoRel	true	belirtiler	hapşırmaya

@@ -1,0 +1,43 @@
+Text	Det fjerde fly , United Airlines' flynummer 93 , styrtede ned nær Shanksville i Pennsylvania , efter at der opstod en kamp mellem de ombordværende passagerer og flykaprerne .	Flyets endelige mål antages at have været enten United States Capitol ( mødestedet for den amerikanske kongres ) eller Det Hvide Hus .	Under et interview i september 2002 , foretaget af Yosri Fouda , erklærede Khalid Sheikh Mohammed og Ramzi Binalshibh , at det fjerde kaprede fly var på vej mod United States Capitol , og altså ikke Det Hvide Hus .	De anførte endvidere , at al-Qaeda oprindeligt planlagde at flyve kaprede jetfly ind i atomkraftværker i stedet for World Trade Center og Pentagon , men det blev besluttet ikke at angribe atomkraftværker " for øjeblikket " på grund af frygten for , at de kunne " komme ud af kontrol " .	Under kapringen af flyene anvendte kaprerne både våben til at stikke og /eller dræbe piloter , kabinepersonale og passagerer .
+Event	T0	opstod	EVENT	108
+Event	T1	kamp	EVENT	118
+Event	T3	interview	EVENT	319
+Event	T4	foretaget	EVENT	348
+Event	T5	erklærede	EVENT	375
+Event	T6	kaprede	EVENT	444
+Event	T7	anførte	EVENT	528
+Event	T8	planlagde	EVENT	572
+Event	T9	kaprede	EVENT	591
+Event	T10	besluttet	EVENT	687
+Event	T11	angribe	EVENT	705
+Event	T12	frygten	EVENT	760
+Event	T13	kapringen	EVENT	818
+Event	T14	anvendte	EVENT	838
+Event	T15	stikke	EVENT	874
+Event	T16	dræbe	EVENT	891
+Event	T17	styrtede ned	EVENT	49
+Event	T2	mål	EVENT	191
+Event	T18	på vej	EVENT	460
+Event	T19	antages	EVENT	195
+Relation	T13	T15	SuperSub	true	kapringen	stikke
+Relation	T15	T13	SubSuper	true	stikke	kapringen
+Relation	T13	T16	SuperSub	true	kapringen	dræbe
+Relation	T16	T13	SubSuper	true	dræbe	kapringen
+Relation	T1	T17	SuperSub	true	kamp	styrtede ned
+Relation	T17	T1	SubSuper	true	styrtede ned	kamp
+Relation	T3	T4	SuperSub	true	interview	foretaget
+Relation	T4	T3	SubSuper	true	foretaget	interview
+Relation	T3	T5	SuperSub	true	interview	erklærede
+Relation	T5	T3	SubSuper	true	erklærede	interview
+Relation	T11	T0	NoRel	true	angribe	opstod
+Relation	T12	T4	NoRel	true	frygten	foretaget
+Relation	T13	T9	NoRel	true	kapringen	kaprede
+Relation	T14	T7	NoRel	true	anvendte	anførte
+Relation	T15	T0	NoRel	true	stikke	opstod
+Relation	T16	T10	NoRel	true	dræbe	besluttet
+Relation	T16	T9	NoRel	true	dræbe	kaprede
+Relation	T18	T16	NoRel	true	på vej	dræbe
+Relation	T3	T6	NoRel	true	interview	kaprede
+Relation	T8	T14	NoRel	true	planlagde	anvendte
+Relation	T8	T3	NoRel	true	planlagde	interview
+Relation	T9	T14	NoRel	true	kaprede	anvendte

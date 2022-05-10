@@ -1,0 +1,24 @@
+Text	Sultan IV. Murad , 12.000 sipahiyi İran içlerine sokup Şehriban bölgesini çiğnettiği halde Şah’ı savaşa çekemedi .	Şah , Bağdad’daki büyük kuvvetine güveniyor , Sultan IV. Murad’ın kuşatmadan bıkınca çekilip gideceğini zannediyordu .	Padişah’ın ve 86 yaşındaki şeyhülislam Yahya Efendi’nin de ön safta olduğu bu savaşta dehşetli vuruşmalar oldu .	Kuşatmanın 37. gününde ön saflarda yalın kılıç çarpışarak askeri coşturan Tayyar Mehmed Paşa , birkaç kuleyi ele geçirdiği sırada alnından yediği bir kurşunla öldü .	Yerine sadrazam yapılan Kemankeş Mustafa Paşa , selefi gibi gayret edip birkaç kuleyi daha ele geçirdi .
+Event	T0	sokup	EVENT	49
+Event	T1	çiğnettiği	EVENT	74
+Event	T3	zannediyordu	EVENT	219
+Event	T4	oldu	EVENT	340
+Event	T5	Kuşatmanın	EVENT	347
+Event	T6	çarpışarak	EVENT	394
+Event	T7	coşturan	EVENT	412
+Event	T8	geçirdiği	EVENT	460
+Event	T9	yediği	EVENT	486
+Event	T10	öldü	EVENT	506
+Event	T11	gayret	EVENT	573
+Event	T12	geçirdi	EVENT	608
+Event	T2	kuşatmadan	EVENT	181
+Event	T13	yapılan	EVENT	529
+Relation	T0	T12	NoRel	true	sokup	geçirdi
+Relation	T10	T13	NoRel	true	öldü	yapılan
+Relation	T11	T7	NoRel	true	gayret	coşturan
+Relation	T3	T10	NoRel	true	zannediyordu	öldü
+Relation	T5	T2	NoRel	true	Kuşatmanın	kuşatmadan
+Relation	T5	T8	NoRel	true	Kuşatmanın	geçirdiği
+Relation	T6	T8	NoRel	true	çarpışarak	geçirdiği
+Relation	T8	T12	NoRel	true	geçirdiği	geçirdi
+Relation	T9	T4	NoRel	true	yediği	oldu

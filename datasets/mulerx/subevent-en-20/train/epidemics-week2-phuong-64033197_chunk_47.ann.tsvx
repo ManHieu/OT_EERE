@@ -1,0 +1,38 @@
+Text	The law applies to Hong Kong permanent residents as well as non-residents , and those outside Hong Kong who violate the law .	It has six chapters and a total of 66 articles , published in the Hong Kong Government Gazette solely in Chinese .	These cover the four crimes ( secession , subversion , terrorism , collusion ) , which are all punishable with a maximum sentence of life in prison .	The minimum sentence for " active participants " is set at 3 years , and under 3 years of detention or restriction for other participants or those that voluntarily surrender .	The areas of treason , sedition and theft of state secrets are not covered by the new law , and remain to be implemented by the Hong Kong legislature .
+Event	T0	applies	EVENT	8
+Event	T1	violate	EVENT	108
+Event	T10	set	EVENT	443
+Event	T11	detention	EVENT	481
+Event	T12	restriction	EVENT	494
+Event	T13	surrender	EVENT	555
+Event	T14	treason	EVENT	580
+Event	T15	sedition	EVENT	590
+Event	T16	theft	EVENT	603
+Event	T17	covered	EVENT	634
+Event	T18	implemented	EVENT	676
+Event	T2	published	EVENT	175
+Event	T20	crimes	EVENT	262
+Event	T3	cover	EVENT	247
+Event	T4	secession	EVENT	271
+Event	T5	subversion	EVENT	283
+Event	T6	collusion	EVENT	308
+Event	T7	punishable	EVENT	336
+Event	T8	sentence	EVENT	362
+Event	T9	sentence	EVENT	403
+Relation	T0	T14	NoRel	true	applies	treason
+Relation	T0	T16	NoRel	true	applies	theft
+Relation	T1	T13	NoRel	true	violate	surrender
+Relation	T10	T0	NoRel	true	set	applies
+Relation	T12	T1	NoRel	true	restriction	violate
+Relation	T12	T20	NoRel	true	restriction	crimes
+Relation	T12	T6	NoRel	true	restriction	collusion
+Relation	T14	T12	NoRel	true	treason	restriction
+Relation	T16	T13	NoRel	true	theft	surrender
+Relation	T18	T13	NoRel	true	implemented	surrender
+Relation	T2	T5	NoRel	true	published	subversion
+Relation	T4	T16	NoRel	true	secession	theft
+Relation	T5	T13	NoRel	true	subversion	surrender
+Relation	T5	T15	NoRel	true	subversion	sedition
+Relation	T8	T7	NoRel	true	sentence	punishable
+Relation	T9	T2	NoRel	true	sentence	published
+Relation	T9	T3	NoRel	true	sentence	cover

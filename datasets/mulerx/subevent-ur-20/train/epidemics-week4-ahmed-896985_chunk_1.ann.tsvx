@@ -1,0 +1,19 @@
+Text	فروری میں اٹلی کے لمبارڈی پریس آفس نے چند گاؤں اور ٹاؤن کی فہرست جاری کی جن کی تالہ بندی کی گئی ۔	6 فروری کو چین کے شہر ووہان سے آئے اطالوی شہری میں کورونا وائرس کی تصدیق ہوئی اور کورونا کیسوں کی تعداد 3 ہو گئی ۔	-	21 فروری کو اٹلی میں کورونا وائرس کے 16 کیس سامنے آئے ، 22 فروری کو پہلی ہلاکت سامنے آئی ۔	-
+Event	T1	کیسوں	EVENT	187
+Event	T5	فہرست	EVENT	59
+Event	T6	بندی	EVENT	84
+Event	T7	آئے	EVENT	129
+Event	T8	تصدیق	EVENT	165
+Event	T2	ہو	EVENT	204
+Event	T9	کیس	EVENT	255
+Event	T10	ہلاکت	EVENT	288
+Event	T11	سامنے	EVENT	294
+Event	T12	سامنے	EVENT	259
+Relation	T9	T10	SuperSub	true	کیس	ہلاکت
+Relation	T10	T9	SubSuper	true	ہلاکت	کیس
+Relation	T11	T5	NoRel	true	سامنے	فہرست
+Relation	T12	T2	NoRel	true	سامنے	ہو
+Relation	T5	T6	NoRel	true	فہرست	بندی
+Relation	T7	T11	NoRel	true	آئے	سامنے
+Relation	T7	T12	NoRel	true	آئے	سامنے
+Relation	T9	T8	NoRel	true	کیس	تصدیق

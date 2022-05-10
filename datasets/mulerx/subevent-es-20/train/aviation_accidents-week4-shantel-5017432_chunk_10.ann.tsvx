@@ -1,0 +1,32 @@
+Text	Debido al accidente , Manx2 concluyó su contrato con Flightline BCN , por lo cual no continuó operando para Manx2 .	En abril de 2011 , se anunció que la EASA había iniciado un proceso con el fin de suprimir el certificado de operador aéreo de Flightline .	El 4 de mayo de 2011 , el programa de BBC Radio 4 Face the Facts investigó las circunstancias del accidente .	Se sostuvo que la tripulación se había saltado las regulaciones de seguridad aérea en las tres aproximaciones al descender por debajo de la altura de decisión de 200 pies antes de iniciar los procedimientos de frustrada .	El 6 de mayo , la CAA del Reino Unido publicó una circular de seguridad advirtiendo a todos los operadores del Reino Unido de las nuevas reglas que rigen las aproximaciones de no precisión y las altitudes mínimas de descenso , a aplicar desde el 16 de julio de 2011 .
+Event	T0	accidente	EVENT	10
+Event	T1	concluyó	EVENT	28
+Event	T2	contrato	EVENT	40
+Event	T4	anunció	EVENT	138
+Event	T6	proceso	EVENT	176
+Event	T8	investigó	EVENT	321
+Event	T9	accidente	EVENT	354
+Event	T10	sostuvo	EVENT	369
+Event	T12	aproximaciones	EVENT	461
+Event	T13	descender	EVENT	479
+Event	T14	decisión	EVENT	516
+Event	T16	procedimientos	EVENT	558
+Event	T18	publicó	EVENT	626
+Event	T19	circular	EVENT	638
+Event	T20	advirtiendo	EVENT	660
+Event	T21	reglas	EVENT	725
+Event	T22	rigen	EVENT	736
+Relation	T9	T8	SuperSub	true	accidente	investigó
+Relation	T8	T9	SubSuper	true	investigó	accidente
+Relation	T9	T18	SuperSub	true	accidente	publicó
+Relation	T18	T9	SubSuper	true	publicó	accidente
+Relation	T0	T1	NoRel	true	accidente	concluyó
+Relation	T0	T21	NoRel	true	accidente	reglas
+Relation	T0	T8	NoRel	true	accidente	investigó
+Relation	T10	T18	NoRel	true	sostuvo	publicó
+Relation	T10	T4	NoRel	true	sostuvo	anunció
+Relation	T12	T10	NoRel	true	aproximaciones	sostuvo
+Relation	T20	T1	NoRel	true	advirtiendo	concluyó
+Relation	T22	T13	NoRel	true	rigen	descender
+Relation	T22	T9	NoRel	true	rigen	accidente
+Relation	T9	T19	NoRel	true	accidente	circular

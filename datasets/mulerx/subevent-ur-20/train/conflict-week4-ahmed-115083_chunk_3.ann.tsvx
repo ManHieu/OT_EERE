@@ -1,0 +1,37 @@
+Text	آصف زرداری شیعہ ہونے کے باوجود اپنے دور صدارت میں کیمرے کے لیے ہاتھ باندھ کر نماز عید پڑھتا ہے ۔	اگرچہ شیعہ امرا کو شیعہ عوام کے مسائل سے کوئی غرض نہ تھی ، لیکن مسلکی بنیادوں پر شیعہ امرا کو نشانہ بنانے کی کوششوں نے شیعہ عوام کی زندگی کو بھی متاثر کیا ۔	اٹھارویں صدی عیسوی جہاں مغل سلطنت کے مغرب میں افغان حملہ آوروں اور مشرق و جنوب میں انگریزوں کے سامنے عسکری کمزوری دکھانے سے عبارت ہے ، وہیں دہلی میں شیعہ اور سنی امرا کے بیچ سرد جنگ اس سلطنت کے زوال کا دوسرا اہم عامل ہے ۔	ہندوستان میں مسلمانوں کے اقتدار کی شکست و ریخت کے زمانے میں دہلی میں جامعہ رحیمیہ کے گدی_نشین شاہ ولی اللہ محدث دہلوی ( 1703 ء ۔ 1762 ء ) نے اہلسنت میں بہت مقام پیدا کیا ۔	شاہ ولی اللہ 1731ء میں حج کرنے گئے اور وہاں شیخ محمد بن عبد الوہاب کی تحریک " توحید والعدل " ، جس کو عرف عام میں وہابیت کہا جاتا ہے ، کے اثرات اپنے ساتھ لائے ۔
+Event	T1	کوششوں	EVENT	206
+Event	T2	دکھانے	EVENT	368
+Event	T3	عبارت	EVENT	378
+Event	T4	جنگ	EVENT	432
+Event	T5	زوال	EVENT	448
+Event	T6	شکست	EVENT	511
+Event	T7	ریخت	EVENT	518
+Event	T8	کہا	EVENT	768
+Event	T9	لائے	EVENT	801
+Event	T10	ہونے	EVENT	16
+Event	T11	باندھ	EVENT	68
+Event	T12	پڑھتا	EVENT	86
+Event	T13	متاثر	EVENT	242
+Event	T14	نشانہ	EVENT	191
+Event	T15	غرض	EVENT	143
+Event	T16	حملہ	EVENT	306
+Event	T17	پیدا	EVENT	637
+Event	T18	حج	EVENT	671
+Event	T19	تحریک	EVENT	718
+Relation	T14	T1	SuperSub	true	نشانہ	کوششوں
+Relation	T1	T14	SubSuper	true	کوششوں	نشانہ
+Relation	T1	T12	NoRel	true	کوششوں	پڑھتا
+Relation	T10	T11	NoRel	true	ہونے	باندھ
+Relation	T10	T16	NoRel	true	ہونے	حملہ
+Relation	T13	T1	NoRel	true	متاثر	کوششوں
+Relation	T16	T12	NoRel	true	حملہ	پڑھتا
+Relation	T17	T15	NoRel	true	پیدا	غرض
+Relation	T17	T4	NoRel	true	پیدا	جنگ
+Relation	T18	T15	NoRel	true	حج	غرض
+Relation	T2	T11	NoRel	true	دکھانے	باندھ
+Relation	T3	T7	NoRel	true	عبارت	ریخت
+Relation	T4	T10	NoRel	true	جنگ	ہونے
+Relation	T5	T1	NoRel	true	زوال	کوششوں
+Relation	T5	T13	NoRel	true	زوال	متاثر
+Relation	T6	T4	NoRel	true	شکست	جنگ
+Relation	T8	T6	NoRel	true	کہا	شکست

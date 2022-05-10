@@ -1,0 +1,25 @@
+Text	Det oprindelige formål var at kæmpe mod den sovjetiske okkupation af Afghanistan , og de modtog støtte fra Inter-Services Intelligence og senere også fra CIA .	Han var med i kampene mod besættelsesmagten og oprettede træningslejre , som bl.a. blev finansieret af amerikanske økonomiske midler .	Her bevæbnede han arabiske frivillige og finansierede deres rejse til Afghanistan .	Det var i denne periode , han formodes at have opbygget forbindelser til arabiske bevægelser i dele af den muslimske verden .	I 1994 mistede bin Laden sit statsborgerskab i Saudi-Arabien og blev desuden formelt udstødt af familien .
+Event	T0	kæmpe	EVENT	30
+Event	T1	okkupation	EVENT	55
+Event	T10	oprettede	EVENT	207
+Event	T11	opbygget	EVENT	426
+Event	T3	finansieret	EVENT	248
+Event	T4	bevæbnede	EVENT	299
+Event	T5	finansierede	EVENT	336
+Event	T6	rejse	EVENT	355
+Event	T7	mistede	EVENT	512
+Event	T8	udstødt	EVENT	590
+Event	T9	kampene	EVENT	174
+Relation	T7	T8	SuperSub	true	mistede	udstødt
+Relation	T8	T7	SubSuper	true	udstødt	mistede
+Relation	T3	T10	SuperSub	true	finansieret	oprettede
+Relation	T10	T3	SubSuper	true	oprettede	finansieret
+Relation	T5	T6	SuperSub	true	finansierede	rejse
+Relation	T6	T5	SubSuper	true	rejse	finansierede
+Relation	T10	T11	SuperSub	true	oprettede	opbygget
+Relation	T11	T10	SubSuper	true	opbygget	oprettede
+Relation	T5	T0	NoRel	true	finansierede	kæmpe
+Relation	T5	T3	NoRel	true	finansierede	finansieret
+Relation	T6	T3	NoRel	true	rejse	finansieret
+Relation	T7	T9	NoRel	true	mistede	kampene
+Relation	T8	T1	NoRel	true	udstødt	okkupation

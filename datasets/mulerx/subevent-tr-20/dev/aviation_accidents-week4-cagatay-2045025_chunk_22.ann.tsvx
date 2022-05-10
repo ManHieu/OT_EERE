@@ -1,0 +1,58 @@
+Text	" Katil Rusya " , " Katil Çin " ve " Katil Eset " pankartları taşıyan grup , " Dünya , Bayırbucak Türkmenleri'ne yapılan zulme sessiz kalmamalı , seyirci olmamalı " diye açıklama yaptıktan sonra olaysız bir şekilde dağıldı .	27 Haziran 2016 günü Türkiye Cumhurbaşkanı Erdoğan'ın , Türkiye'nin Rus uçağını düşürmesi sonucu uçağın pilotunun hayatını kaybetmiş olması nedeniyle ' özür dilediğini ' ifade ettiği belirtildi .	Rusya'nın resmî özür beklentisinin Türkiye tarafınca karşılanmamasını takip eden süreçte Rusya Türk malı ürünlerin ithalatında kısıtlama , Türk vatandaşlarının Rus şirketlerinde işe alımında kısıtlama , Rus turistlerin Türkiye tatil paketlerinin iptali , Türklerin Rusya'ya vizesiz girişinin askıya alınması gibi bazı yaptırımlar uyguladı .	Zamanla yaptırımlarda hafifletmeye giden Rusya ile ilişkiler Türkiye'nin özür dilemesiyle normalleşme evresine girmiştir .	15 Temmuz 2016 tarihli darbe girişimi sonrasında Rus uçağını düşüren pilotların darbeye karıştıkları gerekçesiyle tutuklanmaları uçağın Türkiye hükûmetinden habersiz olarak düşürülmüş olabileceği ihtimalini ortaya çıkarmıştır .
+Event	T0	zulme	EVENT	121
+Event	T1	dağıldı	EVENT	215
+Event	T2	belirtildi	EVENT	408
+Event	T4	kısıtlama	EVENT	548
+Event	T5	kısıtlama	EVENT	612
+Event	T6	iptali	EVENT	667
+Event	T7	alınması	EVENT	720
+Event	T10	girmiştir	EVENT	873
+Event	T11	girişimi	EVENT	914
+Event	T12	düşüren	EVENT	946
+Event	T13	karıştıkları	EVENT	973
+Event	T14	tutuklanmaları	EVENT	999
+Event	T15	taşıyan	EVENT	62
+Event	T16	açıklama	EVENT	170
+Event	T17	düşürmesi	EVENT	305
+Event	T18	kaybetmiş	EVENT	348
+Event	T19	özür	EVENT	377
+Event	T3	yaptırımlar	EVENT	739
+Event	T8	yaptırımlarda	EVENT	770
+Event	T9	hafifletmeye	EVENT	784
+Event	T20	özür	EVENT	835
+Event	T21	düşürülmüş	EVENT	1058
+Event	T22	ortaya çıkarmıştır	EVENT	1092
+Relation	T3	T7	SuperSub	true	yaptırımlar	alınması
+Relation	T7	T3	SubSuper	true	alınması	yaptırımlar
+Relation	T3	T6	SuperSub	true	yaptırımlar	iptali
+Relation	T6	T3	SubSuper	true	iptali	yaptırımlar
+Relation	T3	T4	SuperSub	true	yaptırımlar	kısıtlama
+Relation	T4	T3	SubSuper	true	kısıtlama	yaptırımlar
+Relation	T3	T5	SuperSub	true	yaptırımlar	kısıtlama
+Relation	T5	T3	SubSuper	true	kısıtlama	yaptırımlar
+Relation	T11	T13	SuperSub	true	girişimi	karıştıkları
+Relation	T13	T11	SubSuper	true	karıştıkları	girişimi
+Relation	T0	T12	NoRel	true	zulme	düşüren
+Relation	T0	T9	NoRel	true	zulme	hafifletmeye
+Relation	T12	T5	NoRel	true	düşüren	kısıtlama
+Relation	T13	T0	NoRel	true	karıştıkları	zulme
+Relation	T15	T11	NoRel	true	taşıyan	girişimi
+Relation	T15	T2	NoRel	true	taşıyan	belirtildi
+Relation	T15	T8	NoRel	true	taşıyan	yaptırımlarda
+Relation	T17	T7	NoRel	true	düşürmesi	alınması
+Relation	T18	T10	NoRel	true	kaybetmiş	girmiştir
+Relation	T19	T18	NoRel	true	özür	kaybetmiş
+Relation	T2	T1	NoRel	true	belirtildi	dağıldı
+Relation	T2	T15	NoRel	true	belirtildi	taşıyan
+Relation	T20	T14	NoRel	true	özür	tutuklanmaları
+Relation	T21	T11	NoRel	true	düşürülmüş	girişimi
+Relation	T22	T16	NoRel	true	ortaya çıkarmıştır	açıklama
+Relation	T3	T12	NoRel	true	yaptırımlar	düşüren
+Relation	T3	T22	NoRel	true	yaptırımlar	ortaya çıkarmıştır
+Relation	T3	T8	NoRel	true	yaptırımlar	yaptırımlarda
+Relation	T3	T9	NoRel	true	yaptırımlar	hafifletmeye
+Relation	T4	T12	NoRel	true	kısıtlama	düşüren
+Relation	T4	T20	NoRel	true	kısıtlama	özür
+Relation	T7	T21	NoRel	true	alınması	düşürülmüş
+Relation	T8	T0	NoRel	true	yaptırımlarda	zulme
+Relation	T9	T21	NoRel	true	hafifletmeye	düşürülmüş

@@ -1,0 +1,23 @@
+Text	En forudsætning for lånet var , at landet gennemførte økonomiske stramninger , strukturreformer og privatiseringer .	Allerede året efter var recessionen forværret , samtidig med at den græske regering ikke i forventet omfang havde gennemført de aftalte stramninger .	Der var behov for at tilføre yderligere 130 mia. EUR , medregnet en kapitaltilførsel på 48 mia. EUR til de private banker .	Samtidig måtte private kreditorer indgå en aftale , der indebar forlængelse af løbetiderne , lavere renter og en nedskrivning af den nominelle gæld med 53,3 % .	Det samlede program blev vedtaget og underskrevet i februar 2012 .
+Event	T0	lånet	EVENT	20
+Event	T1	gennemførte	EVENT	42
+Event	T10	nedskrivning	EVENT	504
+Event	T11	vedtaget	EVENT	577
+Event	T12	underskrevet	EVENT	589
+Event	T3	privatiseringer	EVENT	99
+Event	T4	forværret	EVENT	153
+Event	T5	gennemført	EVENT	231
+Event	T6	stramninger	EVENT	253
+Event	T7	indgå	EVENT	425
+Event	T8	aftale	EVENT	434
+Event	T9	forlængelse	EVENT	455
+Relation	T8	T9	SuperSub	true	aftale	forlængelse
+Relation	T9	T8	SubSuper	true	forlængelse	aftale
+Relation	T8	T10	SuperSub	true	aftale	nedskrivning
+Relation	T10	T8	SubSuper	true	nedskrivning	aftale
+Relation	T11	T12	SuperSub	true	vedtaget	underskrevet
+Relation	T12	T11	SubSuper	true	underskrevet	vedtaget
+Relation	T10	T4	NoRel	true	nedskrivning	forværret
+Relation	T12	T3	NoRel	true	underskrevet	privatiseringer
+Relation	T6	T11	NoRel	true	stramninger	vedtaget
+Relation	T7	T6	NoRel	true	indgå	stramninger

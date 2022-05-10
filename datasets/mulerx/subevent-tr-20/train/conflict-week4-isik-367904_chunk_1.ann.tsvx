@@ -1,0 +1,19 @@
+Text	Diğer Hint liderler arasında Mahatma Gandhi , yasayı çok eleştirdi ve basın özgürlüğü hakkını kullanan herkesin siyasi suçlara karşılık olarak cezalandırılmaması gerektiğini savundu .	Bu tasarının kabul olması üzerine halk protesto ve miting faaliyetlerine hız verdi .	Pencap'ta protesto hareketleri çok fazla etki gösteriyordu .	Bunun üzerine 10 Nisan'da kongrenin iki lideri Dr. Satya Pal ve Dr. Saifuddin Kitchlew tutuklandı ve Dharamsala'ya gizlice götürüldü .	Ordu Pencap'a çağrıldı .
+Event	T0	eleştirdi	EVENT	57
+Event	T1	savundu	EVENT	174
+Event	T3	verdi	EVENT	261
+Event	T4	hareketleri	EVENT	288
+Event	T5	gösteriyordu	EVENT	315
+Event	T6	tutuklandı	EVENT	417
+Event	T7	götürüldü	EVENT	453
+Event	T8	çağrıldı	EVENT	479
+Event	T9	yasayı	EVENT	46
+Event	T10	olması	EVENT	203
+Event	T11	tasarının	EVENT	187
+Relation	T10	T3	NoRel	true	olması	verdi
+Relation	T3	T6	NoRel	true	verdi	tutuklandı
+Relation	T4	T5	NoRel	true	hareketleri	gösteriyordu
+Relation	T5	T8	NoRel	true	gösteriyordu	çağrıldı
+Relation	T5	T9	NoRel	true	gösteriyordu	yasayı
+Relation	T6	T0	NoRel	true	tutuklandı	eleştirdi
+Relation	T9	T7	NoRel	true	yasayı	götürüldü

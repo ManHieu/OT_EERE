@@ -1,0 +1,24 @@
+Text	Zavidoviçi kentinde bir köprü Bosna Nehri üzerine yıkıldı .	Saraybosna'daki Miljacka Nehri tarihinin en yüksek seviyesine yükseldi .	Hrasno Donje köyü'nün Parići mezrası ve Kalesija kasabası toprak kaymaları sebebiyle altyapı ciddi zarar gördü ve birçok ev yıkıldı .	Bosna Hersek Mayınları Kaldırma Merkezi ( BH MAC ) , yaşanan heyelânlar ve suların taşınması sonucu , 1991- 1999 yılları arasında yaşanan Yugoslavya Savaşları ve Bosna Savaşı döneminde yerleştirilen bir milyon civarında kara mayınınından 120.000 tanesinin 900 kilometrekarelik bir alana yayıldığı yer değiştirdiğini açıkladı .	küçükresim | sol | Selin ardından Krupanj şehri , Sırbistan , 19 Mayıs 2014 Sırbistan , sel felaketinde en büyük tahribatı yaşayan ülke oldu .
+Event	T0	yıkıldı	EVENT	50
+Event	T1	yükseldi	EVENT	122
+Event	T2	kaymaları	EVENT	198
+Event	T3	gördü	EVENT	238
+Event	T4	yıkıldı	EVENT	257
+Event	T5	heyelânlar	EVENT	328
+Event	T6	taşınması	EVENT	350
+Event	T8	Savaşı	EVENT	435
+Event	T9	yerleştirilen	EVENT	452
+Event	T10	yayıldığı	EVENT	554
+Event	T11	açıkladı	EVENT	583
+Event	T12	felaketinde	EVENT	686
+Event	T13	oldu	EVENT	730
+Event	T14	Savaşları	EVENT	416
+Relation	T0	T14	NoRel	true	yıkıldı	Savaşları
+Relation	T0	T4	NoRel	true	yıkıldı	yıkıldı
+Relation	T1	T5	NoRel	true	yükseldi	heyelânlar
+Relation	T10	T9	NoRel	true	yayıldığı	yerleştirilen
+Relation	T11	T2	NoRel	true	açıkladı	kaymaları
+Relation	T12	T10	NoRel	true	felaketinde	yayıldığı
+Relation	T2	T12	NoRel	true	kaymaları	felaketinde
+Relation	T5	T8	NoRel	true	heyelânlar	Savaşı
+Relation	T9	T14	NoRel	true	yerleştirilen	Savaşları

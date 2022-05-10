@@ -1,0 +1,9 @@
+Text	Güçlendirilmiş duvarların ötesinde Seksen Altı cumhuriyet bölgesini koruyan ve varolmayan Seksen Altı bölgesi yer almaktadır .	Terk edilmiş bu bölgenin genç erkek ve kadınları Seksen Altı olarak damgalanır ve insanlıklarından sıyrılıp savaşta bu insansız hava araçlarına pilotluk yapmaya mecmur bırakılırlar .	Shinei Nouzen , savaş alanında genç Seksen Altılıların bir müfrezesinin harekâtlarını yönetmektedir .	Vladilena " Lena " Milizé ise özel haberleşme denetimcisidir .	Hikâye ilerledikçe Shinei ve Lena karanlık bir sır öğrenirler .
+Event	T0	damgalanır	EVENT	195
+Event	T1	savaşta	EVENT	235
+Event	T2	yönetmektedir	EVENT	396
+Event	T3	öğrenirler	EVENT	526
+Event	T4	Güçlendirilmiş	EVENT	0
+Event	T5	edilmiş	EVENT	132
+Event	T6	bırakılırlar	EVENT	295
+Relation	T2	T4	NoRel	true	yönetmektedir	Güçlendirilmiş

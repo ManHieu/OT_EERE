@@ -1,0 +1,26 @@
+Text	El 13 de julio de 2009 , un efectivo de paz de las Naciones Unidas se convirtió en el primer caso de gripe A ( H1N1 ) confirmado en Haití .	David Wimhurst , portavoz de la misión de la ONU , dijo que el soldado llegó el 2 de julio y fue puesto en cuarentena , con síntomas de un resfriado , antes de que se confirmara que había contraído el virus H1N1 .	Después de 10 días de tratamiento , el soldado se reintegró a su unidad .	Hasta el 27 de abril de 2010 ( fecha de la última actualización ) , Haití confirmó 91 casos de gripe A ( H1N1 ) .	_ El virus de la INFLUENZA A ( H1N1 ) entró en Honduras el 21 de mayo de 2009 .
+Event	T0	caso	EVENT	93
+Event	T1	confirmado	EVENT	118
+Event	T2	dijo	EVENT	191
+Event	T3	llegó	EVENT	211
+Event	T4	resfriado	EVENT	279
+Event	T5	confirmara	EVENT	307
+Event	T6	contraído	EVENT	328
+Event	T7	tratamiento	EVENT	376
+Event	T8	reintegró	EVENT	404
+Event	T9	actualización	EVENT	478
+Event	T10	confirmó	EVENT	502
+Event	T11	entró	EVENT	580
+Event	T12	gripe	EVENT	101
+Relation	T12	T1	SuperSub	true	gripe	confirmado
+Relation	T1	T12	SubSuper	true	confirmado	gripe
+Relation	T12	T0	SuperSub	true	gripe	caso
+Relation	T0	T12	SubSuper	true	caso	gripe
+Relation	T1	T5	NoRel	true	confirmado	confirmara
+Relation	T1	T7	NoRel	true	confirmado	tratamiento
+Relation	T1	T8	NoRel	true	confirmado	reintegró
+Relation	T10	T6	NoRel	true	confirmó	contraído
+Relation	T11	T3	NoRel	true	entró	llegó
+Relation	T12	T7	NoRel	true	gripe	tratamiento
+Relation	T7	T1	NoRel	true	tratamiento	confirmado
+Relation	T9	T1	NoRel	true	actualización	confirmado

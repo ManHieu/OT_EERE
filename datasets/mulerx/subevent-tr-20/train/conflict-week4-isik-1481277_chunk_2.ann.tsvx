@@ -1,0 +1,15 @@
+Text	Kurbanları için çok daha fazla pişmanlık gösterir ( Leo veya James Earl Cash'in aksine ) .	İlk infazından sonra kusması buna ispat olarak gösterilebilir .	Ayrıca bazı noktalarda Leo'ya karşı öfkeyi ifade eder : Örneğin , bir seviyede birçok Watchdogs ajanlarını öldürdükten sonra , öldürmekten bıktığını iddia ederek silahını atar .	Ne var ki , oyun ilerledikçe , öldürmeye daha fazla bağımlı hale gelir - Leo'nun Daniel'ın zihnini ele geçirdiğine dair bir işaret - Dr. Whyte'ı oyunun sonunda anılarını temizlemeye zorlar .	Ailesinin uğruna bir deney için gönüllü olduğunu hatırlar .
+Event	T0	infazından	EVENT	95
+Event	T1	kusması	EVENT	112
+Event	T2	öldürdükten	EVENT	262
+Event	T3	iddia	EVENT	304
+Event	T4	atar	EVENT	326
+Event	T5	gelir	EVENT	398
+Event	T6	işaret	EVENT	457
+Event	T7	zorlar	EVENT	515
+Event	T8	deney	EVENT	545
+Event	T9	hatırlar	EVENT	573
+Relation	T3	T9	NoRel	true	iddia	hatırlar
+Relation	T4	T6	NoRel	true	atar	işaret
+Relation	T5	T8	NoRel	true	gelir	deney
+Relation	T6	T3	NoRel	true	işaret	iddia

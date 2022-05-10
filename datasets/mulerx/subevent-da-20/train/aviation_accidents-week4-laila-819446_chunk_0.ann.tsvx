@@ -1,0 +1,13 @@
+Text	GERMANWINGS FLIGHT 9525 ( 4U9525 ) var en planlagt flyvning fra Barcelona til Düsseldorf fløjet af Germanwings , et lavprisselskab ejet af Lufthansa .	Den 24. marts 2015 forulykkede flyet , en Airbus A320-211 med registreringsnummer D-AIPX , nær byen Prads-Haute-Bléone cirka 30 km ( 19 mil ) nordøst fra Digne-Les-Bains i de Franske alper og omkring 100 kilometer ( 62 mil ) nord for Nice med 144 passagerer og seks besætningsmedlemmer ombord .	Alle ombordværende er bekræftet omkommet .	Baseret på information modtaget fra radarovervågning steg flyet efter start til sin planlagte flyvehøjde .	Kort tid efter at flyet nåede den planlagte flyvehøjde , påbegyndte det imidlertid en nedstigning med konstant fart .
+Event	T0	flyvning	EVENT	51
+Event	T1	fløjet	EVENT	89
+Event	T2	forulykkede	EVENT	170
+Event	T3	omkommet	EVENT	478
+Event	T4	modtaget	EVENT	512
+Event	T5	nåede	EVENT	620
+Event	T6	påbegyndte	EVENT	653
+Event	T7	steg	EVENT	542
+Event	T8	nedstigning	EVENT	682
+Relation	T2	T3	NoRel	true	forulykkede	omkommet
+Relation	T3	T7	NoRel	true	omkommet	steg
+Relation	T5	T3	NoRel	true	nåede	omkommet

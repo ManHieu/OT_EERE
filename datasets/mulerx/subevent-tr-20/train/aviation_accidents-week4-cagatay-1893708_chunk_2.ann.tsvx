@@ -1,0 +1,36 @@
+Text	Mezun olmasının ardından , vize süresinin dolmasıyla birlikte Pakistan'ın Peşaver şehrine gitti .	Şiddete dayalı cihadı desteklemediği için Müslüman Kardeşler'den ayrılmak zorunda olduğu belirtilen Amerika Birleşik Devletleri federal hükûmetine ait rapora göre Afganistan'a geçerek Sovyetler Birliği'ne karşı girişilen savaşta , kardeşleri Zahid ve Abid ile birlikte mücahitlere katıldı .	Abdullah Azzam tarafından yönetilen Seda eğitim kampına katıldığını belirten Halid Şeyh Muhammed , buradaki eğitimini 1987'de tamamlamasının ardından Seyyaf'ın liderliğini üstlendiği Afganistan İslami Dava Örgütü tarafından yayımlanan _ el - Bünyan el - Mersus _ adlı dergide çalıştı .	1987 yılının sonları ve 1988 yılının başlarında Japonya merkezli Maruzen adlı şirket adına hidrolik mühendisi olarak Japonya'da çalışmasından yaklaşık bir ay sonra Afganistan'a dönerek mağara ve siper kazımı , bozuk hidrolik kazıcıların tamiri gibi görevleri üstlendi .	Dört ay kadar sonra kardeşi Abid ile birlikte Pakistan'a gitti .
+Event	T0	dolmasıyla	EVENT	42
+Event	T1	gitti	EVENT	90
+Event	T2	ayrılmak	EVENT	163
+Event	T3	geçerek	EVENT	274
+Event	T4	savaşta	EVENT	319
+Event	T5	katıldı	EVENT	379
+Event	T6	eğitimini	EVENT	497
+Event	T7	tamamlamasının	EVENT	515
+Event	T8	çalıştı	EVENT	665
+Event	T9	tamiri	EVENT	912
+Event	T10	üstlendi	EVENT	934
+Event	T11	gitti	EVENT	1002
+Event	T12	cihadı	EVENT	113
+Event	T13	desteklemediği	EVENT	120
+Event	T14	yönetilen	EVENT	415
+Event	T15	katıldığını	EVENT	445
+Event	T16	yayımlanan	EVENT	613
+Event	T17	çalışmasından	EVENT	803
+Event	T18	dönerek	EVENT	852
+Relation	T1	T8	NoRel	true	gitti	çalıştı
+Relation	T10	T14	NoRel	true	üstlendi	yönetilen
+Relation	T11	T17	NoRel	true	gitti	çalışmasından
+Relation	T12	T4	NoRel	true	cihadı	savaşta
+Relation	T12	T6	NoRel	true	cihadı	eğitimini
+Relation	T14	T3	NoRel	true	yönetilen	geçerek
+Relation	T16	T12	NoRel	true	yayımlanan	cihadı
+Relation	T3	T11	NoRel	true	geçerek	gitti
+Relation	T3	T6	NoRel	true	geçerek	eğitimini
+Relation	T4	T1	NoRel	true	savaşta	gitti
+Relation	T4	T12	NoRel	true	savaşta	cihadı
+Relation	T6	T8	NoRel	true	eğitimini	çalıştı
+Relation	T8	T7	NoRel	true	çalıştı	tamamlamasının
+Relation	T9	T17	NoRel	true	tamiri	çalışmasından
+Relation	T9	T2	NoRel	true	tamiri	ayrılmak
+Relation	T9	T4	NoRel	true	tamiri	savaşta

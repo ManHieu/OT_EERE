@@ -1,0 +1,29 @@
+Text	Dicha barrera no funcionaba correctamente ya que se encontraba trabada con un palo a 45 grados con señales sonoras y auditivas permanentes , cuyo funcionamiento no estaba relacionado con la aproximación de formaciones .	La empresa responsable de que la barrera funcionara correctamente era TBA del grupo Cirigliano .	En el momento de la rotura de la barrera , se encontraba en sitio un banderillero que permitió el paso del camión a pesar de la anomalía de la situación .	La Policía Metropolitana de la Ciudad de Buenos Aires a cargo de la seguridad vial en Buenos Aires tampoco dio aviso de la situación ni tomo acción alguna a pesar de que el hecho estaba siendo monitoreado en vivo .	Dicha fuerza de seguridad no colocó " en consigna " de uno de sus agentes en el lugar pese a haber tenido filmada la maniobra .
+Event	T0	funcionaba	EVENT	17
+Event	T1	trabada	EVENT	63
+Event	T2	funcionamiento	EVENT	146
+Event	T3	aproximación	EVENT	190
+Event	T4	funcionara	EVENT	261
+Event	T5	rotura	EVENT	337
+Event	T6	permitió	EVENT	403
+Event	T7	paso	EVENT	415
+Event	T8	situación	EVENT	595
+Event	T9	acción	EVENT	613
+Event	T10	hecho	EVENT	645
+Event	T11	monitoreado	EVENT	665
+Event	T12	colocó	EVENT	716
+Event	T13	filmada	EVENT	793
+Event	T14	maniobra	EVENT	804
+Relation	T0	T14	NoRel	true	funcionaba	maniobra
+Relation	T10	T4	NoRel	true	hecho	funcionara
+Relation	T10	T8	NoRel	true	hecho	situación
+Relation	T11	T14	NoRel	true	monitoreado	maniobra
+Relation	T13	T1	NoRel	true	filmada	trabada
+Relation	T13	T9	NoRel	true	filmada	acción
+Relation	T14	T13	NoRel	true	maniobra	filmada
+Relation	T3	T5	NoRel	true	aproximación	rotura
+Relation	T3	T8	NoRel	true	aproximación	situación
+Relation	T5	T11	NoRel	true	rotura	monitoreado
+Relation	T8	T0	NoRel	true	situación	funcionaba
+Relation	T8	T12	NoRel	true	situación	colocó
+Relation	T8	T13	NoRel	true	situación	filmada

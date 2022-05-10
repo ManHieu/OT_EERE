@@ -1,0 +1,17 @@
+Text	Daça - Su köyündeki kaza yerinde toplam 19 ev yıkıldı ve 7 ev hasar gördü .	Köyde toplam 427 hane bulunuyordu ve 1.434 kişi yaşıyordu .	alt = | küçükresim | upright =1.25 | Kazadan altı ay sonra enkaz alanı Kazadan sonra araştırmacıların pistte yaptığı muayene sırasında , pist yüzeyinde uçakla alakalı bir iz ya da parça bulunamadı .	Uçağın inişi , pistin sonundan yaklaşık 900 m uzaklıkta gerçekleşmişti .	Uçağın civardaki nesnelere verdiği hasardan uçağın iniş sırasında yavaşça alçaldığı anlaşılıyordu .
+Event	T0	kaza	EVENT	20
+Event	T1	yıkıldı	EVENT	46
+Event	T2	gördü	EVENT	68
+Event	T3	muayene	EVENT	253
+Event	T4	inişi	EVENT	342
+Event	T5	gerçekleşmişti	EVENT	391
+Event	T6	iniş	EVENT	459
+Event	T7	anlaşılıyordu	EVENT	492
+Event	T8	Kazadan	EVENT	173
+Event	T9	Kazadan	EVENT	207
+Event	T10	hasardan	EVENT	443
+Relation	T1	T2	NoRel	true	yıkıldı	gördü
+Relation	T4	T7	NoRel	true	inişi	anlaşılıyordu
+Relation	T5	T6	NoRel	true	gerçekleşmişti	iniş
+Relation	T8	T10	NoRel	true	Kazadan	hasardan
+Relation	T8	T4	NoRel	true	Kazadan	inişi

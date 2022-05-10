@@ -1,0 +1,57 @@
+Text	کورونا وائرس مرض 2019 ( COVID-19 ) ایک متعدی بیماری ہے جو انتہائی مہلک تنفسی سینڈروم کورونا وائرس 2 ( SARS - CoV-2 ) سے ہوتی ہے ۔	یہ مرض دنیا بھر میں 2019ء سے پھیلا اور جلد ہی عالمگیر وبا کی شکل اختیار کر گیا ۔	اس کی عمومی علامات میں بخار ، کھانسی اور سانس میں گھٹن شامل ہیں ۔	پٹھوں کا درد ، تھوک کا آنا اور گلے کی سوزش ذرا نادر علامتیں ہیں ۔	اکثر کیسوں میں کم علامتیں دیکھی گئیں ، کچھ معاملات میں مریض نمونیا اور متعدد اعضاء کے ناکارہ پن کا شکار بھی ہو جاتا ہے ۔
+Event	T0	بیماری	EVENT	45
+Event	T1	مرض	EVENT	133
+Event	T4	درد	EVENT	286
+Event	T5	سوزش	EVENT	315
+Event	T7	شکار	EVENT	442
+Event	T8	ہوتی	EVENT	120
+Event	T9	وبا	EVENT	184
+Event	T10	اختیار	EVENT	195
+Event	T2	شامل	EVENT	266
+Event	T3	بخار	EVENT	234
+Event	T11	کھانسی	EVENT	241
+Event	T12	گھٹن	EVENT	261
+Event	T13	علامات	EVENT	223
+Event	T14	آنا	EVENT	300
+Event	T15	علامتیں	EVENT	329
+Event	T16	کیسوں	EVENT	348
+Event	T17	علامتیں	EVENT	361
+Event	T18	دیکھی	EVENT	369
+Event	T6	نمونیا	EVENT	403
+Event	T19	متعدد	EVENT	414
+Relation	T13	T3	SuperSub	true	علامات	بخار
+Relation	T3	T13	SubSuper	true	بخار	علامات
+Relation	T13	T11	SuperSub	true	علامات	کھانسی
+Relation	T11	T13	SubSuper	true	کھانسی	علامات
+Relation	T13	T12	SuperSub	true	علامات	گھٹن
+Relation	T12	T13	SubSuper	true	گھٹن	علامات
+Relation	T15	T4	SuperSub	true	علامتیں	درد
+Relation	T4	T15	SubSuper	true	درد	علامتیں
+Relation	T15	T14	SuperSub	true	علامتیں	آنا
+Relation	T14	T15	SubSuper	true	آنا	علامتیں
+Relation	T15	T5	SuperSub	true	علامتیں	سوزش
+Relation	T5	T15	SubSuper	true	سوزش	علامتیں
+Relation	T16	T18	SuperSub	true	کیسوں	دیکھی
+Relation	T18	T16	SubSuper	true	دیکھی	کیسوں
+Relation	T16	T7	SuperSub	true	کیسوں	شکار
+Relation	T7	T16	SubSuper	true	شکار	کیسوں
+Relation	T0	T5	NoRel	true	بیماری	سوزش
+Relation	T1	T11	NoRel	true	مرض	کھانسی
+Relation	T1	T2	NoRel	true	مرض	شامل
+Relation	T1	T7	NoRel	true	مرض	شکار
+Relation	T10	T5	NoRel	true	اختیار	سوزش
+Relation	T10	T7	NoRel	true	اختیار	شکار
+Relation	T12	T19	NoRel	true	گھٹن	متعدد
+Relation	T13	T8	NoRel	true	علامات	ہوتی
+Relation	T14	T17	NoRel	true	آنا	علامتیں
+Relation	T14	T18	NoRel	true	آنا	دیکھی
+Relation	T15	T13	NoRel	true	علامتیں	علامات
+Relation	T15	T6	NoRel	true	علامتیں	نمونیا
+Relation	T17	T10	NoRel	true	علامتیں	اختیار
+Relation	T17	T18	NoRel	true	علامتیں	دیکھی
+Relation	T2	T17	NoRel	true	شامل	علامتیں
+Relation	T4	T19	NoRel	true	درد	متعدد
+Relation	T4	T3	NoRel	true	درد	بخار
+Relation	T6	T3	NoRel	true	نمونیا	بخار
+Relation	T7	T19	NoRel	true	شکار	متعدد
+Relation	T8	T9	NoRel	true	ہوتی	وبا

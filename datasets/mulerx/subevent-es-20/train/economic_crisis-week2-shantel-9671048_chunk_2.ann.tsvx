@@ -1,0 +1,34 @@
+Text	En Ambo , la ciudad natal de Hachalu , tres policías y 78 civiles murieron en el " caos " que rodeó su funeral , incluido uno de los tíos de Hachalu .	Al menos nueve de los civiles fueron asesinados por las fuerzas de seguridad .	En Shashamane , la violencia fue particularmente generalizada , con " hasta 150 " personas asesinadas allí solo , según el subcomisionado regional de policía , Girma Gelan .	Los informes de testigos presenciales afirmaron que " todos menos 4 o 5 edificios " en el centro de la ciudad habían sido incendiados , y que la comunidad rastafari había sido atacada debido a su asociación con el emperador Haile Selassie .	Testigos que hablaron con Voice of America describieron cómo fueron atacados los centros comerciales , restaurantes , residencias y hoteles propiedad de " forasteros " , incluido uno propiedad del célebre corredor Haile Gebrselassie .
+Event	T0	murieron	EVENT	66
+Event	T1	caos	EVENT	83
+Event	T10	asociación	EVENT	600
+Event	T11	hablaron	EVENT	658
+Event	T12	atacados	EVENT	713
+Event	T2	rodeó	EVENT	94
+Event	T3	funeral	EVENT	103
+Event	T4	asesinados	EVENT	188
+Event	T5	violencia	EVENT	249
+Event	T6	asesinadas	EVENT	321
+Event	T7	informes	EVENT	408
+Event	T8	afirmaron	EVENT	442
+Event	T9	incendiados	EVENT	526
+Relation	T3	T1	SuperSub	true	funeral	caos
+Relation	T1	T3	SubSuper	true	caos	funeral
+Relation	T7	T8	SuperSub	true	informes	afirmaron
+Relation	T8	T7	SubSuper	true	afirmaron	informes
+Relation	T0	T11	NoRel	true	murieron	hablaron
+Relation	T0	T6	NoRel	true	murieron	asesinadas
+Relation	T1	T10	NoRel	true	caos	asociación
+Relation	T10	T2	NoRel	true	asociación	rodeó
+Relation	T10	T7	NoRel	true	asociación	informes
+Relation	T11	T12	NoRel	true	hablaron	atacados
+Relation	T12	T4	NoRel	true	atacados	asesinados
+Relation	T2	T9	NoRel	true	rodeó	incendiados
+Relation	T3	T2	NoRel	true	funeral	rodeó
+Relation	T4	T10	NoRel	true	asesinados	asociación
+Relation	T4	T3	NoRel	true	asesinados	funeral
+Relation	T5	T9	NoRel	true	violencia	incendiados
+Relation	T6	T9	NoRel	true	asesinadas	incendiados
+Relation	T7	T12	NoRel	true	informes	atacados
+Relation	T7	T2	NoRel	true	informes	rodeó
+Relation	T8	T3	NoRel	true	afirmaron	funeral

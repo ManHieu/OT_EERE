@@ -1,0 +1,10 @@
+Text	Sağ kanada sipahileri yığdı , sol kanadına ise sipahi - piyade ağırlıklı birliklerini yerleştirdi .	Birliğin ikinci hattını oluşturan ihtiyat birlikleri ile kanatlarını silahtarlarla kuvvetlendirilmiş vagonlarla korumaya aldı .	İmparatorluk ordusu ise şaşkınlık içinde düzen almaya çalıştı .	Muharebenin başlamasına az bir zaman kala , kuşatmadaki ya da işgal altındaki şehre yayılmış askerler hâlâ keşmekeş halinde ana orduya katılmaya çalışıyordu .	Kaledeki Türk garnizonunun toplarını ve tüfeklerini ateşlemeleri bu keşmekeşi daha da artırdı .
+Event	T0	yığdı	EVENT	22
+Event	T1	yerleştirdi	EVENT	86
+Event	T2	aldı	EVENT	221
+Event	T3	çalıştı	EVENT	282
+Event	T5	çalışıyordu	EVENT	437
+Event	T6	ateşlemeleri	EVENT	503
+Event	T7	artırdı	EVENT	537
+Relation	T0	T5	NoRel	true	yığdı	çalışıyordu
+Relation	T6	T2	NoRel	true	ateşlemeleri	aldı

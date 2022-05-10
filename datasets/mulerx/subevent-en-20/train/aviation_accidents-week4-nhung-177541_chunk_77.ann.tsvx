@@ -1,0 +1,40 @@
+Text	Columbia Elementary school opened in August 2004 , and is located in Perris , California .	Following the loss of _ Columbia _ , the space shuttle program was suspended .	The further construction of the International Space Station ( ISS ) was also delayed , as the space shuttles were the only available delivery vehicle for station modules .	The station was supplied using Russian uncrewed _ Progress _ ships , and crews were exchanged using Russian - crewed _ Soyuz _ spacecraft , and forced to operate on a skeleton crew of two .	Less than a year after the accident , President Bush announced the Vision for Space Exploration , calling for the space shuttle fleet to complete the ISS , with retirement by 2010 following the completion of the ISS , to be replaced by a newly developed Crew Exploration Vehicle for travel to the Moon and Mars .
+Event	T0	opened	EVENT	27
+Event	T1	Following	EVENT	91
+Event	T2	loss	EVENT	105
+Event	T3	suspended	EVENT	158
+Event	T4	construction	EVENT	182
+Event	T5	delayed	EVENT	247
+Event	T6	supplied	EVENT	358
+Event	T7	exchanged	EVENT	426
+Event	T8	forced	EVENT	486
+Event	T9	accident	EVENT	559
+Event	T10	announced	EVENT	585
+Event	T11	calling	EVENT	630
+Event	T12	complete	EVENT	669
+Event	T13	retirement	EVENT	693
+Event	T14	completion	EVENT	726
+Event	T15	replaced	EVENT	756
+Event	T16	developed	EVENT	776
+Event	T17	travel	EVENT	815
+Event	T18	located	EVENT	58
+Relation	T3	T5	SuperSub	true	suspended	delayed
+Relation	T5	T3	SubSuper	true	delayed	suspended
+Relation	T9	T10	SuperSub	true	accident	announced
+Relation	T10	T9	SubSuper	true	announced	accident
+Relation	T10	T11	SuperSub	true	announced	calling
+Relation	T11	T10	SubSuper	true	calling	announced
+Relation	T0	T5	NoRel	true	opened	delayed
+Relation	T10	T14	NoRel	true	announced	completion
+Relation	T14	T2	NoRel	true	completion	loss
+Relation	T14	T7	NoRel	true	completion	exchanged
+Relation	T15	T0	NoRel	true	replaced	opened
+Relation	T18	T13	NoRel	true	located	retirement
+Relation	T2	T5	NoRel	true	loss	delayed
+Relation	T4	T0	NoRel	true	construction	opened
+Relation	T4	T10	NoRel	true	construction	announced
+Relation	T7	T11	NoRel	true	exchanged	calling
+Relation	T8	T1	NoRel	true	forced	Following
+Relation	T8	T14	NoRel	true	forced	completion
+Relation	T9	T0	NoRel	true	accident	opened
+Relation	T9	T4	NoRel	true	accident	construction

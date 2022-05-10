@@ -1,0 +1,32 @@
+Text	Den 24. august 2008 meddelte Nationalbanken officielt at den sammen med Det Private Beredskab til Afvikling af Nødlidende Banker , Sparekasser og Andelskasser overtager banken , da den er insolvent og der ikke kunne findes en køber .	Det er første gang siden 1928 ( _ Landmandsbanken _ ) at staten og Nationalbanken overtager en bank , og overtagelsen kaldes af den grund _ historisk _ af professor på Copenhagen Business School , Per H. Hansen .	Professoren mener , at det efter alt at dømme bliver en dyr fornøjelse for skatteyderne – hvor dyrt , afhænger af , hvor meget eventuelle fremtidige købere er villige til at betale for banken .	Tabet antages at ligge mellem 3-6 milliarder kr, men der cirkulerer påstande om at tabet i værste fald kan løbe op i 37 milliarder kr.	Dertil kommer at 33.000 aktionærer står til at miste deres penge .
+Event	T0	meddelte	EVENT	20
+Event	T1	overtager	EVENT	159
+Event	T2	overtager	EVENT	316
+Event	T3	kaldes	EVENT	352
+Event	T4	mener	EVENT	459
+Event	T6	betale	EVENT	621
+Event	T7	antages	EVENT	647
+Event	T8	påstande	EVENT	709
+Event	T9	tabet	EVENT	724
+Event	T10	kommer	EVENT	783
+Event	T11	miste	EVENT	823
+Event	T12	insolvent	EVENT	188
+Event	T13	findes	EVENT	216
+Event	T14	historisk	EVENT	374
+Event	T15	første gang	EVENT	241
+Event	T16	villige	EVENT	606
+Event	T5	dyr fornøjelse	EVENT	503
+Relation	T1	T11	NoRel	true	overtager	miste
+Relation	T1	T7	NoRel	true	overtager	antages
+Relation	T1	T9	NoRel	true	overtager	tabet
+Relation	T13	T15	NoRel	true	findes	første gang
+Relation	T13	T3	NoRel	true	findes	kaldes
+Relation	T13	T9	NoRel	true	findes	tabet
+Relation	T14	T12	NoRel	true	historisk	insolvent
+Relation	T15	T0	NoRel	true	første gang	meddelte
+Relation	T4	T6	NoRel	true	mener	betale
+Relation	T5	T16	NoRel	true	dyr fornøjelse	villige
+Relation	T6	T11	NoRel	true	betale	miste
+Relation	T6	T15	NoRel	true	betale	første gang
+Relation	T6	T16	NoRel	true	betale	villige
+Relation	T9	T8	NoRel	true	tabet	påstande

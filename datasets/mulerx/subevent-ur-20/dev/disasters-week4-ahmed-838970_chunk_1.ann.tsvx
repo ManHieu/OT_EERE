@@ -1,0 +1,29 @@
+Text	دیہی چینی زندگیوں میں تبدیلی لانے کے لیے لازمی اجتماعی زراعت کو متعارف کروایا گیا ۔	نجی زراعت ممنوع تھی اور اس سے وابستہ افراد پر تشدد اور ردانقلابی کا لیبل لگایا گیا ۔	عوامی جدوجہد کے سیشن اور سماجی دباؤ کے ذریعے دیہی لوگوں پر پابندیاں نافذ کی گئیں اگرچہ لوگوں پر جبری مشقت بھی لاگو کی گئی ۔	دیہی صنعتی سازی ، سرکاری طور پر مہم کی ترجیح ہے ، " اس کی ترقی ... عظیم لیپ آگے بڑھنے کے غلطیوں کی طرف سے بدترین " دیکھا .	بڑے پیمانے پر مورخین کی جانب سے یہ سمجھا جاتا ہے کہ عظیم پھلانگ کے نتیجے میں لاکھوں اموات ہوئیں جس کا تخمینہ 18 ملین لگایا گیا ہے جبکہ چینی مورخ یو_زی جیاج نے تحقیق سے ثابت کیا کہ اموت کی تعداد 56 ملین کے قریب ہے ۔
+Event	T0	لانے	EVENT	29
+Event	T1	تشدد	EVENT	130
+Event	T2	سیشن	EVENT	185
+Event	T3	دباؤ	EVENT	200
+Event	T4	مشقت	EVENT	270
+Event	T5	سازی	EVENT	304
+Event	T6	مہم	EVENT	325
+Event	T7	ترقی	EVENT	351
+Event	T8	دیکھا	EVENT	408
+Event	T9	سمجھا	EVENT	451
+Event	T10	پھلانگ	EVENT	473
+Event	T11	نتیجے	EVENT	483
+Event	T12	ہوئیں	EVENT	506
+Event	T13	لگایا	EVENT	533
+Event	T14	تحقیق	EVENT	575
+Event	T15	اموت	EVENT	596
+Relation	T0	T9	NoRel	true	لانے	سمجھا
+Relation	T1	T10	NoRel	true	تشدد	پھلانگ
+Relation	T10	T7	NoRel	true	پھلانگ	ترقی
+Relation	T11	T0	NoRel	true	نتیجے	لانے
+Relation	T11	T10	NoRel	true	نتیجے	پھلانگ
+Relation	T14	T2	NoRel	true	تحقیق	سیشن
+Relation	T15	T4	NoRel	true	اموت	مشقت
+Relation	T3	T4	NoRel	true	دباؤ	مشقت
+Relation	T4	T12	NoRel	true	مشقت	ہوئیں
+Relation	T5	T6	NoRel	true	سازی	مہم
+Relation	T6	T11	NoRel	true	مہم	نتیجے
+Relation	T8	T13	NoRel	true	دیکھا	لگایا

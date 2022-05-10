@@ -1,0 +1,34 @@
+Text	At 21:47 , approximately 90 seconds before the start of the planned holding pattern , the controller cleared the crew to descend to and to continue the approach .	Shortly after , the autopilot captured the ILS localizer , which is an instrument landing system that is used to guide the aircraft along the axis of the runway , and the crew prepared for landing .	The controller stated that he would clear the aircraft to land after the crew reported their position .	[ Brest Airport Runway 26L , the runway intended by Flight 5672 to land ]	At 21:48 , the First Officer extended the flaps and the aircraft was stabilized at 2,000 ft .
+Event	T0	start	EVENT	47
+Event	T1	pattern	EVENT	76
+Event	T10	landing	EVENT	352
+Event	T11	stated	EVENT	377
+Event	T12	clear	EVENT	398
+Event	T13	reported	EVENT	440
+Event	T14	intended	EVENT	506
+Event	T15	extended	EVENT	569
+Event	T16	stabilized	EVENT	609
+Event	T2	cleared	EVENT	101
+Event	T3	continue	EVENT	139
+Event	T4	approach	EVENT	152
+Event	T5	captured	EVENT	193
+Event	T6	landing	EVENT	245
+Event	T8	guide	EVENT	276
+Relation	T6	T10	SuperSub	true	landing	landing
+Relation	T10	T6	SubSuper	true	landing	landing
+Relation	T4	T2	SuperSub	true	approach	cleared
+Relation	T2	T4	SubSuper	true	cleared	approach
+Relation	T0	T16	NoRel	true	start	stabilized
+Relation	T1	T13	NoRel	true	pattern	reported
+Relation	T11	T2	NoRel	true	stated	cleared
+Relation	T11	T6	NoRel	true	stated	landing
+Relation	T12	T0	NoRel	true	clear	start
+Relation	T13	T4	NoRel	true	reported	approach
+Relation	T14	T5	NoRel	true	intended	captured
+Relation	T15	T14	NoRel	true	extended	intended
+Relation	T16	T4	NoRel	true	stabilized	approach
+Relation	T2	T16	NoRel	true	cleared	stabilized
+Relation	T4	T3	NoRel	true	approach	continue
+Relation	T5	T1	NoRel	true	captured	pattern
+Relation	T6	T3	NoRel	true	landing	continue
+Relation	T8	T5	NoRel	true	guide	captured

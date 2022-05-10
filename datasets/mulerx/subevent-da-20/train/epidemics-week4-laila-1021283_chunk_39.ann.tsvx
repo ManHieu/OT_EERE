@@ -1,0 +1,18 @@
+Text	Den officielle fødselsdagsfejring var aflyst pga. nedlukningen .	På blot 2-3 uger faldt trafikken drastisk på vejene og i offentlig trafik .	På Køge Bugt Motorvejen var der 55 % færre biler , og de øvrige motorveje havde også mindre trafik end normalt .	Københavns Metro havde 90 % færre passagerer trods myldretidsdrift hele dagen , og der var 75 % færre i forlængede S-tog .	Samme dag annoncerede sundhedsminister Magnus Heunicke en mere offensiv teststrategi .
+Event	T0	fødselsdagsfejring	EVENT	15
+Event	T1	aflyst	EVENT	38
+Event	T2	nedlukningen	EVENT	50
+Event	T3	myldretidsdrift	EVENT	305
+Event	T4	annoncerede	EVENT	387
+Event	T5	teststrategi	EVENT	449
+Event	T6	faldt trafikken	EVENT	82
+Event	T7	færre	EVENT	178
+Event	T8	mindre	EVENT	226
+Event	T9	færre	EVENT	282
+Event	T10	færre	EVENT	350
+Relation	T2	T5	SuperSub	true	nedlukningen	teststrategi
+Relation	T5	T2	SubSuper	true	teststrategi	nedlukningen
+Relation	T1	T9	NoRel	true	aflyst	færre
+Relation	T5	T3	NoRel	true	teststrategi	myldretidsdrift
+Relation	T5	T9	NoRel	true	teststrategi	færre
+Relation	T8	T3	NoRel	true	mindre	myldretidsdrift

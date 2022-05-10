@@ -1,0 +1,21 @@
+Text	Det er uklart hvordan udtrykket " den sorte død " er opstået .	En skribent i 1800-tallet mente det stammede fra symptomerne , de sorte bylder .	En anden skribent , F._A. Gasquet , mente det i stedet henviste til den udbredte sorg og pessimisme .	thumb|	Kort over pestens spredning ved det første udbrud i Europa .
+Event	T1	opstået	EVENT	53
+Event	T2	mente	EVENT	89
+Event	T3	stammede	EVENT	99
+Event	T4	bylder	EVENT	135
+Event	T5	henviste	EVENT	199
+Event	T6	sorg	EVENT	225
+Event	T7	pessimisme	EVENT	233
+Event	T8	spredning	EVENT	271
+Event	T9	udbrud	EVENT	296
+Event	T10	den sorte død	EVENT	34
+Event	T11	pestens	EVENT	263
+Event	T12	udtrykket	EVENT	22
+Relation	T1	T5	NoRel	true	opstået	henviste
+Relation	T10	T3	NoRel	true	den sorte død	stammede
+Relation	T10	T5	NoRel	true	den sorte død	henviste
+Relation	T12	T1	NoRel	true	udtrykket	opstået
+Relation	T5	T10	NoRel	true	henviste	den sorte død
+Relation	T5	T2	NoRel	true	henviste	mente
+Relation	T5	T6	NoRel	true	henviste	sorg
+Relation	T7	T6	NoRel	true	pessimisme	sorg

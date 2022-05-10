@@ -1,0 +1,13 @@
+Text	Fariskur Savaşı Yedinci Haçlı Seferi'nin son büyük savaşıdır .	Savaş , 6 Nisan 1250'de Fransa Kralı IX. Louis ( daha sonra Saint Louis ) liderliğindeki Haçlılar ile Eyyubi hanedanından Turanşah liderliğindeki Mısır kuvvetleri arasında yapıldı .	Al Mansurah Muharebesi'nde daha önceki bir Haçlı yenilgisinin ardından , Fariskur , haçlı ordusunun tamamen yenilgisiyle ve IX. Louis'in ele geçirilmesiyle sonuçlandı .	Kategori : Haçlı Seferleri Kategori : 13. yüzyıl Kategori : 13. yüzyılda Afrika	
+Event	T1	savaşıdır	EVENT	51
+Event	T2	Savaş	EVENT	63
+Event	T3	yapıldı	EVENT	235
+Event	T4	yenilgisinin	EVENT	294
+Event	T5	yenilgisiyle	EVENT	353
+Event	T6	sonuçlandı	EVENT	401
+Event	T7	Fariskur Savaşı	EVENT	0
+Event	T8	Yedinci Haçlı Seferi'nin	EVENT	16
+Event	T9	Al Mansurah Muharebesi'nde	EVENT	245
+Event	T10	Haçlı Seferleri	EVENT	425
+Relation	T3	T5	NoRel	true	yapıldı	yenilgisiyle
+Relation	T6	T10	NoRel	true	sonuçlandı	Haçlı Seferleri

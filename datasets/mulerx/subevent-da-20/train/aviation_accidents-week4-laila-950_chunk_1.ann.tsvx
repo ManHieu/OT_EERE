@@ -1,0 +1,21 @@
+Text	Da havnemyndighederne i New York og New Jersey fik godkendelse til byggeprojektet , besluttede de sig for samtidigt at overtage New Yorks metrosystem og ændre navnet fra Hudson & Manhattan Railroad til Port Authority Trans-Hudson ( PATH ) .	Opførelsen af World Trade Center begyndte den 5. august 1966 .	Det nordlige tårn stod færdigt i december 1970 og det sydlige tårn blev færdigbygget i juli 1971 .	Opførelsen af World Trade Center medførte en stor udgravning af en mængde materiale , som blev anvendt i Battery Park City vest for Lower Manhattan .	Komplekset lå i midten af New Yorks finansdistrikt og indeholdt 13,4 mio. kvadratmeter kontorlokaler .
+Event	T0	godkendelse	EVENT	51
+Event	T1	besluttede	EVENT	84
+Event	T2	overtage	EVENT	119
+Event	T3	ændre	EVENT	153
+Event	T4	Opførelsen	EVENT	241
+Event	T5	begyndte	EVENT	274
+Event	T6	færdigt	EVENT	327
+Event	T7	færdigbygget	EVENT	376
+Event	T8	Opførelsen	EVENT	403
+Event	T9	medførte	EVENT	436
+Event	T10	udgravning	EVENT	453
+Event	T11	anvendt	EVENT	498
+Event	T12	indeholdt	EVENT	607
+Event	T13	lå	EVENT	564
+Relation	T1	T3	SuperSub	true	besluttede	ændre
+Relation	T3	T1	SubSuper	true	ændre	besluttede
+Relation	T11	T10	NoRel	true	anvendt	udgravning
+Relation	T4	T0	NoRel	true	Opførelsen	godkendelse
+Relation	T8	T6	NoRel	true	Opførelsen	færdigt
+Relation	T9	T7	NoRel	true	medførte	færdigbygget

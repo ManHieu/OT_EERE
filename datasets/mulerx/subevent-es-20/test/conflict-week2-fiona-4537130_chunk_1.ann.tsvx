@@ -1,0 +1,20 @@
+Text	Además de diseñar el barco de rescate de alta tecnología y su dispositivo de izaje único en su tipo , Estados Unidos debió diseñar un equipamiento de estabilización de precisión para mantener al barco prácticamente fijo sobre su blanco mientras se realizaba el descenso de casi 4,5 km de tubería .	Los científicos también desarrollaron métodos para conservar el papel que había permanecido sumergido por muchos años con la esperanza de poder recuperar y leer los libros de claves secretas del submarino .	Dado que la Unión Soviética no sabía dónde se encontraba su submarino , la operación de rescate pudo ser realizada en forma desapercibida ( en aguas internacionales ) con un fin supuestamente comercial : realizar minería del fondo marino para recuperar nódulos de Manganeso .	[ Submarino ruso Clase Golf II . ] En abril de 1968 , la flota soviética del Pacífico y sus unidades de aire fueron detectados realizando un gran despliegue y operaciones inusuales en la zona norte del Pacífico , lo que la Inteligencia Naval de Estados Unidos evaluó podía ser una reacción frente al extravío de un submarino soviético .	Las búsquedas de las naves de superficie soviéticas se concentraban en una zona asociada con los submarinos diésel estratégicos soviéticos que llevan misiles balísticos : los GOLF II Clase SSB soviéticos , que llevaban tres misiles nucleares en su torreta modificada , que eran rutinariamente ubicados a una distancia que permitía que sus misiles alcanzaran la costa oeste de Estados Unidos .
+Event	T0	diseñar	EVENT	10
+Event	T11	operación	EVENT	580
+Event	T16	evaluó	EVENT	1041
+Event	T18	extravío	EVENT	1081
+Event	T19	búsquedas	EVENT	1122
+Event	T2	diseñar	EVENT	123
+Event	T20	concentraban	EVENT	1173
+Event	T21	modificada	EVENT	1374
+Event	T5	descenso	EVENT	261
+Event	T6	desarrollaron	EVENT	322
+Event	T7	conservar	EVENT	349
+Event	T8	sumergido	EVENT	390
+Event	T9	recuperar	EVENT	442
+Relation	T19	T20	SuperSub	true	búsquedas	concentraban
+Relation	T20	T19	SubSuper	true	concentraban	búsquedas
+Relation	T11	T5	NoRel	true	operación	descenso
+Relation	T11	T6	NoRel	true	operación	desarrollaron
+Relation	T11	T8	NoRel	true	operación	sumergido
+Relation	T5	T19	NoRel	true	descenso	búsquedas

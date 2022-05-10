@@ -1,0 +1,31 @@
+Text	El 6 de marzo de 2021 , el Gobierno de Chile , liderado por su presidente , Sebastián Piñera , entregó la donación al gobierno paraguayo de 20 mil dosis de la vacuna china Sinovac , con el fin de que sean inoculadas para inmunizar al personal sanitario nacional .	El 12 de marzo , mediante la cooperación con el Gobierno de Emiratos Árabes Unidos , Paraguay recibe 3 mil dosis de la vacuna china Sinopharm .	El 19 de marzo , arriban las primeras vacunas del cuestionado mecanismo COVAX , de unas 36_000 dosis de la vacuna AstraZeneca .	El 29 de marzo , arriban las dosis de la vacuna india Covaxin , donadas por el Gobierno de la India , aunque no ha sido usado de forma inmediata , hasta esperar que una entidad regulatoria de alto nivel apruebe su uso de emergencia .	El 6 de abril , la Comisión Federal para la Protección contra Riesgos Sanitarios ( Cofepris ) de México aprueba para su uso de Emergencia la vacuna Covaxin , con lo que así el Paraguay pudo utilizar estas vacunas en su población .
+Event	T0	entregó	EVENT	95
+Event	T1	donación	EVENT	106
+Event	T2	inmunizar	EVENT	221
+Event	T3	cooperación	EVENT	293
+Event	T4	recibe	EVENT	358
+Event	T5	arriban	EVENT	425
+Event	T6	vacunas	EVENT	446
+Event	T7	arriban	EVENT	553
+Event	T8	donadas	EVENT	600
+Event	T9	usado	EVENT	656
+Event	T10	esperar	EVENT	689
+Event	T11	apruebe	EVENT	739
+Event	T12	uso	EVENT	750
+Event	T13	aprueba	EVENT	874
+Event	T14	uso	EVENT	890
+Event	T15	Emergencia	EVENT	897
+Event	T16	utilizar	EVENT	960
+Relation	T0	T9	NoRel	true	entregó	usado
+Relation	T1	T3	NoRel	true	donación	cooperación
+Relation	T15	T1	NoRel	true	Emergencia	donación
+Relation	T2	T9	NoRel	true	inmunizar	usado
+Relation	T3	T1	NoRel	true	cooperación	donación
+Relation	T3	T2	NoRel	true	cooperación	inmunizar
+Relation	T4	T7	NoRel	true	recibe	arriban
+Relation	T5	T6	NoRel	true	arriban	vacunas
+Relation	T6	T11	NoRel	true	vacunas	apruebe
+Relation	T6	T3	NoRel	true	vacunas	cooperación
+Relation	T7	T10	NoRel	true	arriban	esperar
+Relation	T7	T14	NoRel	true	arriban	uso
+Relation	T9	T5	NoRel	true	usado	arriban

@@ -1,0 +1,36 @@
+Text	Muchos murieron de hambre y sed en circunstancias miserables por el caluroso verano que se avecinó .	[ miniaturade imagen | izquierda | Un cartel de la mortandad de 1665 .	] En la última semana de julio , los carteles de la mortandad mostraban 3014 muertes , de las cuales 2020 habían sido a causa de la peste .	El número de fallecidos como resultado de la peste pudo haberse infraestimado , ya que en otros años en el mismo período las cifras fueron mucho más bajas , alrededor de 300 .	A medida que el número de víctimas afectadas aumentó , los cementerios se llenaron demasiado y se cavaron fosas para acomodar a los muertos .
+Event	T0	murieron	EVENT	7
+Event	T1	sed	EVENT	28
+Event	T2	avecinó	EVENT	91
+Event	T3	mortandad	EVENT	152
+Event	T4	mostraban	EVENT	234
+Event	T5	muertes	EVENT	249
+Event	T6	peste	EVENT	304
+Event	T7	fallecidos	EVENT	325
+Event	T8	resultado	EVENT	341
+Event	T9	peste	EVENT	357
+Event	T10	infraestimado	EVENT	376
+Event	T11	aumentó	EVENT	533
+Event	T12	llenaron	EVENT	562
+Event	T13	cavaron	EVENT	586
+Event	T14	muertos	EVENT	620
+Event	T15	verano	EVENT	77
+Relation	T14	T13	SuperSub	true	muertos	cavaron
+Relation	T13	T14	SubSuper	true	cavaron	muertos
+Relation	T1	T0	NoRel	true	sed	murieron
+Relation	T1	T11	NoRel	true	sed	aumentó
+Relation	T1	T7	NoRel	true	sed	fallecidos
+Relation	T11	T1	NoRel	true	aumentó	sed
+Relation	T11	T5	NoRel	true	aumentó	muertes
+Relation	T13	T11	NoRel	true	cavaron	aumentó
+Relation	T14	T10	NoRel	true	muertos	infraestimado
+Relation	T2	T11	NoRel	true	avecinó	aumentó
+Relation	T2	T13	NoRel	true	avecinó	cavaron
+Relation	T2	T6	NoRel	true	avecinó	peste
+Relation	T4	T10	NoRel	true	mostraban	infraestimado
+Relation	T5	T12	NoRel	true	muertes	llenaron
+Relation	T5	T3	NoRel	true	muertes	mortandad
+Relation	T6	T2	NoRel	true	peste	avecinó
+Relation	T8	T9	NoRel	true	resultado	peste
+Relation	T9	T14	NoRel	true	peste	muertos
+Relation	T9	T6	NoRel	true	peste	peste

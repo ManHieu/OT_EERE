@@ -1,0 +1,21 @@
+Text	thumb| 300 px | Kanonslag under eksplosion	Et KANONSLAG er en kraftig pap/papirbeholder med krudt .	Det er cirka 10 til 15 centimeter langt , ofte sort og har en cirka 4 til 5 centimeter lang lunte .	Når kanonslaget antændes , brænder krudtet inde i røret , og det kraftige tryk får beholderen til at eksplodere .	Der lyder et meget højt knald , som når en kanon affyres .
+Event	T0	antændes	EVENT	216
+Event	T1	får	EVENT	279
+Event	T2	eksplodere	EVENT	301
+Event	T3	lyder	EVENT	318
+Event	T4	knald	EVENT	338
+Event	T5	affyres	EVENT	363
+Event	T6	Kanonslag	EVENT	16
+Event	T7	eksplosion	EVENT	32
+Event	T8	KANONSLAG	EVENT	46
+Event	T9	kanonslaget	EVENT	204
+Event	T10	brænder	EVENT	227
+Event	T11	tryk	EVENT	274
+Relation	T10	T11	SuperSub	true	brænder	tryk
+Relation	T11	T10	SubSuper	true	tryk	brænder
+Relation	T0	T10	NoRel	true	antændes	brænder
+Relation	T1	T6	NoRel	true	får	Kanonslag
+Relation	T2	T8	NoRel	true	eksplodere	KANONSLAG
+Relation	T4	T8	NoRel	true	knald	KANONSLAG
+Relation	T6	T8	NoRel	true	Kanonslag	KANONSLAG
+Relation	T8	T11	NoRel	true	KANONSLAG	tryk

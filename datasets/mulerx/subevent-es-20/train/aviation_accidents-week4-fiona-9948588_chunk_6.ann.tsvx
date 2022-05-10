@@ -1,0 +1,42 @@
+Text	El primer oficial ordenó que los camiones de bomberos fueran enviados a la aeronave .	El capitán pidió la lista de verificación de incendios del motor , se apagó el motor derecho y se activó el extintor .	Luego , el capitán pidió la lista de verificación de evacuación , durante la cual los auxiliares de vuelo ya habían iniciado una evacuación , a pesar de que no se había dado la orden ( que no es obligatoria ) .	Después de apagar el motor izquierdo , el capitán finalmente dio la orden de evacuación y sonó la alarma de evacuación .	La primera salida de emergencia ( la salida de la ventana superior izquierda ) se abrió de 8 a 12 segundos después de que la aeronave se detuvo .
+Event	T0	ordenó	EVENT	18
+Event	T1	enviados	EVENT	61
+Event	T2	pidió	EVENT	97
+Event	T3	verificación	EVENT	115
+Event	T4	incendios	EVENT	131
+Event	T5	apagó	EVENT	156
+Event	T6	activó	EVENT	184
+Event	T7	pidió	EVENT	224
+Event	T9	evacuación	EVENT	258
+Event	T10	iniciado	EVENT	321
+Event	T11	evacuación	EVENT	334
+Event	T12	dado	EVENT	374
+Event	T13	apagar	EVENT	427
+Event	T14	dio	EVENT	477
+Event	T15	evacuación	EVENT	493
+Event	T16	sonó	EVENT	506
+Event	T17	alarma	EVENT	514
+Event	T18	evacuación	EVENT	524
+Event	T19	salida	EVENT	548
+Event	T20	salida	EVENT	574
+Event	T21	abrió	EVENT	619
+Event	T22	detuvo	EVENT	674
+Relation	T13	T15	SuperSub	true	apagar	evacuación
+Relation	T15	T13	SubSuper	true	evacuación	apagar
+Relation	T10	T19	NoRel	true	iniciado	salida
+Relation	T10	T3	NoRel	true	iniciado	verificación
+Relation	T10	T9	NoRel	true	iniciado	evacuación
+Relation	T11	T12	NoRel	true	evacuación	dado
+Relation	T11	T13	NoRel	true	evacuación	apagar
+Relation	T11	T14	NoRel	true	evacuación	dio
+Relation	T16	T17	NoRel	true	sonó	alarma
+Relation	T17	T12	NoRel	true	alarma	dado
+Relation	T18	T19	NoRel	true	evacuación	salida
+Relation	T21	T18	NoRel	true	abrió	evacuación
+Relation	T22	T12	NoRel	true	detuvo	dado
+Relation	T22	T15	NoRel	true	detuvo	evacuación
+Relation	T22	T19	NoRel	true	detuvo	salida
+Relation	T4	T17	NoRel	true	incendios	alarma
+Relation	T4	T3	NoRel	true	incendios	verificación
+Relation	T6	T13	NoRel	true	activó	apagar
+Relation	T9	T5	NoRel	true	evacuación	apagó

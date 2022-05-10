@@ -1,0 +1,29 @@
+Text	Sistemin etkinlik zamanının öncesinde ve sonrasında sıcaklığın değişmemiş olması da bu savı desteklemektedir .	Uzay fotoğrafları , hava hareketinin bir sıcak merkez oluşturduğu sırada tropikal fırtına durumuna geldiği izlenimi uyandırmış ; ancak , rüzgâr alanının genişliği ve üst tabaka enerjisi sistemin subtropikal özelliğini kanıtlamıştır .	Azorlar'ın doğu yakasında fırtınanın neden olduğu rüzgarlara rastlanmış ; Santa Maria Adası'nı etkileyen sürekli rüzgârların hızı saatte 94 kilometreyi bulmuştur .	Ponta Delgada'daki en yüksek rüzgâr hızı 85 km / sa olarak kaydedilmiş , bölgede herhangi bir maddi hasar ya da can kaybı yaşanmamıştır .	Hava hareketinin bir subtropikal fırtına olarak adlandırılması Ulusal Kasırga Merkezi tarafından yapılan genel değerlendirmede Jack Beven ve Eric Blake adlı tahmincilerin fırtınayı fark etmesi sonucunda 10 Nisan 2006 tarihinde gerçekleşmiştir .
+Event	T1	hareketinin	EVENT	136
+Event	T2	geldiği	EVENT	210
+Event	T3	uyandırmış	EVENT	227
+Event	T4	kanıtlamıştır	EVENT	329
+Event	T5	rastlanmış	EVENT	406
+Event	T6	bulmuştur	EVENT	497
+Event	T7	kaydedilmiş	EVENT	568
+Event	T8	hasar	EVENT	609
+Event	T9	hareketinin	EVENT	652
+Event	T10	fırtına	EVENT	680
+Event	T11	adlandırılması	EVENT	695
+Event	T12	değerlendirmede	EVENT	758
+Event	T13	etmesi	EVENT	833
+Event	T14	gerçekleşmiştir	EVENT	874
+Event	T15	oluşturduğu	EVENT	165
+Event	T16	fırtınanın	EVENT	371
+Event	T17	kaybı	EVENT	625
+Relation	T1	T15	NoRel	true	hareketinin	oluşturduğu
+Relation	T10	T14	NoRel	true	fırtına	gerçekleşmiştir
+Relation	T10	T15	NoRel	true	fırtına	oluşturduğu
+Relation	T11	T9	NoRel	true	adlandırılması	hareketinin
+Relation	T14	T5	NoRel	true	gerçekleşmiştir	rastlanmış
+Relation	T16	T5	NoRel	true	fırtınanın	rastlanmış
+Relation	T17	T16	NoRel	true	kaybı	fırtınanın
+Relation	T2	T8	NoRel	true	geldiği	hasar
+Relation	T4	T13	NoRel	true	kanıtlamıştır	etmesi
+Relation	T4	T17	NoRel	true	kanıtlamıştır	kaybı
+Relation	T9	T8	NoRel	true	hareketinin	hasar

@@ -1,0 +1,26 @@
+Text	ایک لاکھ 95 ہزار یونانی قبرصی جزیرے کے جنوبی جانب جبکہ 50 ہزار ترک قبرصی جزیرے کی شمالی جانب ہجرت کر گئے ۔	جنگی صورت حال کے خاتمے تک ہزاروں ترک اور یونانی قبرصیوں لاپتہ ہو گئے ۔	1975ء میں ترک وفاقی ریاست شمالی قبرص کا قیام جزیرہ قبرص پر ترک قبرصیوں کی ریاست کی حیثیت سے عالمی سطح پر شناخت حاصل کرنے کے لیے پہلا قدم تھا ۔ جسے جمہوریہ قبرص ، اقوام متحدہ اور بین الاقوامی برادری نے تسلیم نہ کیا ۔	یونانی قبرصی قیادت کے ساتھ آٹھ سال کے ناکام مذاکرات کے بعد شمالی قبرص نے 15 نومبر 1983ء کو اپنی آزادی کا اعلان کر دیا اور یوں ترک جمہوریہ شمالی قبرص معرض وجود میں آیا ۔	تاہم آج تک ترکی کے علاوہ دنیا کا کوئی ملک اسے تسلیم نہیں کرتا ۔
+Event	T0	ہجرت	EVENT	93
+Event	T2	خاتمے	EVENT	124
+Event	T3	لاپتہ	EVENT	163
+Event	T5	قیام	EVENT	218
+Event	T6	تسلیم	EVENT	379
+Event	T7	مذاکرات	EVENT	438
+Event	T8	آزادی	EVENT	490
+Event	T9	اعلان	EVENT	499
+Event	T10	آیا	EVENT	557
+Event	T1	جنگی	EVENT	107
+Event	T4	شناخت	EVENT	283
+Event	T11	قدم	EVENT	311
+Event	T12	تسلیم	EVENT	609
+Relation	T11	T4	SuperSub	true	قدم	شناخت
+Relation	T4	T11	SubSuper	true	شناخت	قدم
+Relation	T8	T9	SuperSub	true	آزادی	اعلان
+Relation	T9	T8	SubSuper	true	اعلان	آزادی
+Relation	T1	T11	NoRel	true	جنگی	قدم
+Relation	T1	T4	NoRel	true	جنگی	شناخت
+Relation	T10	T11	NoRel	true	آیا	قدم
+Relation	T10	T4	NoRel	true	آیا	شناخت
+Relation	T2	T0	NoRel	true	خاتمے	ہجرت
+Relation	T2	T1	NoRel	true	خاتمے	جنگی
+Relation	T3	T10	NoRel	true	لاپتہ	آیا
+Relation	T6	T7	NoRel	true	تسلیم	مذاکرات

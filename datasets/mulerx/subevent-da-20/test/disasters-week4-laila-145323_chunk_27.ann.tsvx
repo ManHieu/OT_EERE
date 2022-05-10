@@ -1,0 +1,26 @@
+Text	Romerriget havde stadig mangler på disse , og søgte stadig efter folk til at fylde disse ansvarlige positioner .	En gennemgående undersøgelse af prokuratorskaberne for Plinius blev foretaget af den klassiske forsker Friedrich Münzer , og de blev gennemgået på ny af Ronald Syme og er blevet standard referencepunkter .	Münzer fremmet fire prokuratorskaber , hvoraf to er bevidnet med sikkerhed og to er sandsynlige , men ikke beviste .	De to tilfredsstiller dog ikke Suetonius' beskrivelse af en jævnlig efterfølge .	Af den grund præsenterer forskere af Plinius to til fire .
+Event	T0	mangler	EVENT	24
+Event	T1	søgte	EVENT	46
+Event	T2	undersøgelse	EVENT	129
+Event	T3	foretaget	EVENT	181
+Event	T4	gennemgået	EVENT	246
+Event	T5	fremmet	EVENT	326
+Event	T6	tilfredsstiller	EVENT	442
+Event	T7	præsenterer	EVENT	530
+Event	T8	fylde	EVENT	77
+Event	T9	referencepunkter	EVENT	300
+Event	T10	bevidnet	EVENT	371
+Event	T11	beskrivelse	EVENT	478
+Relation	T1	T8	SuperSub	true	søgte	fylde
+Relation	T8	T1	SubSuper	true	fylde	søgte
+Relation	T0	T4	NoRel	true	mangler	gennemgået
+Relation	T11	T2	NoRel	true	beskrivelse	undersøgelse
+Relation	T2	T10	NoRel	true	undersøgelse	bevidnet
+Relation	T2	T4	NoRel	true	undersøgelse	gennemgået
+Relation	T3	T7	NoRel	true	foretaget	præsenterer
+Relation	T3	T9	NoRel	true	foretaget	referencepunkter
+Relation	T5	T9	NoRel	true	fremmet	referencepunkter
+Relation	T6	T7	NoRel	true	tilfredsstiller	præsenterer
+Relation	T7	T10	NoRel	true	præsenterer	bevidnet
+Relation	T8	T3	NoRel	true	fylde	foretaget
+Relation	T9	T1	NoRel	true	referencepunkter	søgte

@@ -1,0 +1,36 @@
+Text	DIMYAT'IN YAĞMALANMASI , 22 - 24 Mayıs 853'te Nil Deltası'ndaki liman kenti Dimyat'a Bizans donanması tarafından yapılan başarılı bir baskındır .	O sırada garnizonu bulunmayan şehir yağmalandı .	Hem çok sayıda esir verdi , hem de Girit Emirliği'ne yönelik büyük miktarlarda silah ve malzeme de elde edildi .	Sonraki yıllarda tekrarlanan Bizans saldırısı , Abbasi makamlarını şaşkına uğrattı ve kıyıları yeniden düzenlemek ve yerel filoyu güçlendirmek için acil önlemler alınarak , Tolunoğulları ve Fatımiler dönemlerinde doruğa çıkan Mısır donanmasının canlanmasına başlandı .	820'lerde Bizans İmparatorluğu , Akdeniz'deki deniz üstünlüğünü yok eden iki büyük kayıp yaşadı : Müslümanların Sicilya'yı fethinin başlaması ve Girit'in Endülüslere kaybı .
+Event	T0	baskındır	EVENT	134
+Event	T1	yağmalandı	EVENT	182
+Event	T2	verdi	EVENT	215
+Event	T3	edildi	EVENT	299
+Event	T4	tekrarlanan	EVENT	325
+Event	T5	saldırısı	EVENT	344
+Event	T6	uğrattı	EVENT	383
+Event	T7	düzenlemek	EVENT	411
+Event	T8	güçlendirmek	EVENT	438
+Event	T9	çıkan	EVENT	528
+Event	T10	başlandı	EVENT	566
+Event	T12	yaşadı	EVENT	666
+Event	T13	başlaması	EVENT	709
+Event	T14	kaybı	EVENT	743
+Event	T15	DIMYAT'IN YAĞMALANMASI	EVENT	0
+Event	T16	alınarak	EVENT	470
+Event	T17	fethinin	EVENT	700
+Relation	T15	T2	SuperSub	true	DIMYAT'IN YAĞMALANMASI	verdi
+Relation	T2	T15	SubSuper	true	verdi	DIMYAT'IN YAĞMALANMASI
+Relation	T15	T3	SuperSub	true	DIMYAT'IN YAĞMALANMASI	edildi
+Relation	T3	T15	SubSuper	true	edildi	DIMYAT'IN YAĞMALANMASI
+Relation	T0	T5	NoRel	true	baskındır	saldırısı
+Relation	T10	T0	NoRel	true	başlandı	baskındır
+Relation	T14	T13	NoRel	true	kaybı	başlaması
+Relation	T14	T4	NoRel	true	kaybı	tekrarlanan
+Relation	T16	T0	NoRel	true	alınarak	baskındır
+Relation	T17	T13	NoRel	true	fethinin	başlaması
+Relation	T3	T16	NoRel	true	edildi	alınarak
+Relation	T3	T5	NoRel	true	edildi	saldırısı
+Relation	T4	T17	NoRel	true	tekrarlanan	fethinin
+Relation	T5	T6	NoRel	true	saldırısı	uğrattı
+Relation	T6	T15	NoRel	true	uğrattı	DIMYAT'IN YAĞMALANMASI
+Relation	T7	T0	NoRel	true	düzenlemek	baskındır
+Relation	T7	T13	NoRel	true	düzenlemek	başlaması
+Relation	T7	T8	NoRel	true	düzenlemek	güçlendirmek

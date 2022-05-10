@@ -1,0 +1,23 @@
+Text	En " underfaldsmølle " eller " strømmølle " er en vandmølle , hvor vandstrømmen kun skubber hjulskovlene .	Udnyttelsesgraden af vandkraften er kun 20-30 % .	Strømhjul anvendes kun , hvis opstemning af vand er umulig , det vil sige i fladt terræn .	Underfaldshjul anvendes i Danmark altid , hvis faldet er under 1,5 m .	En " overfaldsmølle " er en vandmølle , hvor vandet ledes i en vandrende ind over hjulet til lidt forbi dets højeste punkt og her falder ned på skovlene , der fyldes med vandet .
+Event	T0	skubber	EVENT	84
+Event	T1	anvendes	EVENT	167
+Event	T2	opstemning	EVENT	187
+Event	T3	anvendes	EVENT	263
+Event	T4	faldet	EVENT	295
+Event	T5	ledes	EVENT	371
+Event	T6	fyldes	EVENT	478
+Event	T7	fladt	EVENT	233
+Event	T8	under	EVENT	305
+Event	T9	Udnyttelsesgraden	EVENT	107
+Event	T10	falder	EVENT	449
+Relation	T7	T4	SuperSub	true	fladt	faldet
+Relation	T4	T7	SubSuper	true	faldet	fladt
+Relation	T0	T9	SuperSub	true	skubber	Udnyttelsesgraden
+Relation	T9	T0	SubSuper	true	Udnyttelsesgraden	skubber
+Relation	T5	T10	SuperSub	true	ledes	falder
+Relation	T10	T5	SubSuper	true	falder	ledes
+Relation	T1	T7	NoRel	true	anvendes	fladt
+Relation	T2	T10	NoRel	true	opstemning	falder
+Relation	T3	T8	NoRel	true	anvendes	under
+Relation	T6	T2	NoRel	true	fyldes	opstemning
+Relation	T6	T7	NoRel	true	fyldes	fladt

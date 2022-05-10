@@ -1,0 +1,35 @@
+Text	Den græske flåde greb chancen og sikrede sig en afgørende sejr ved at sænke eller erobre mindst 300 persiske skibe .	Som følge af nederlaget trak Xerxes sig tilbage til Asien med størstedelen af sin hær , og overlod det til Mardonius at fuldføre erobringen af Grækenland .	Det følgende år blev resten af den persiske hær imidlertid afgørende slået i slaget ved Platæa og den persiske flåde blev slået i slaget ved Mycale .	Herefter forsøgte perserne ikke igen at erobre det græske fastland .	Disse slag ved Salamis og Platæa udgjorde således et vendepunkt i Perserkrigene .
+Event	T0	chancen	EVENT	22
+Event	T1	sikrede	EVENT	33
+Event	T2	sejr	EVENT	58
+Event	T3	sænke	EVENT	70
+Event	T4	erobre	EVENT	82
+Event	T5	trak	EVENT	141
+Event	T6	overlod	EVENT	208
+Event	T7	erobringen	EVENT	246
+Event	T8	slået	EVENT	342
+Event	T9	slaget	EVENT	350
+Event	T10	slået	EVENT	395
+Event	T11	slaget	EVENT	403
+Event	T12	forsøgte	EVENT	432
+Event	T13	slag	EVENT	498
+Event	T14	udgjorde	EVENT	525
+Event	T15	vendepunkt	EVENT	545
+Event	T16	nederlaget	EVENT	130
+Event	T17	erobre	EVENT	463
+Relation	T6	T8	SuperSub	true	overlod	slået
+Relation	T8	T6	SubSuper	true	slået	overlod
+Relation	T6	T10	SuperSub	true	overlod	slået
+Relation	T10	T6	SubSuper	true	slået	overlod
+Relation	T0	T7	NoRel	true	chancen	erobringen
+Relation	T1	T10	NoRel	true	sikrede	slået
+Relation	T11	T0	NoRel	true	slaget	chancen
+Relation	T11	T9	NoRel	true	slaget	slaget
+Relation	T14	T16	NoRel	true	udgjorde	nederlaget
+Relation	T16	T10	NoRel	true	nederlaget	slået
+Relation	T17	T12	NoRel	true	erobre	forsøgte
+Relation	T17	T2	NoRel	true	erobre	sejr
+Relation	T17	T6	NoRel	true	erobre	overlod
+Relation	T4	T3	NoRel	true	erobre	sænke
+Relation	T6	T13	NoRel	true	overlod	slag
+Relation	T9	T6	NoRel	true	slaget	overlod

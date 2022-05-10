@@ -1,0 +1,30 @@
+Text	- Ekim 1987 - Moro hemzemin geçit felaketi — Bir yolcu treni otobüse çarptığında , en az elli kişi öldü ve kırk kişi yaralandı .	- Eylül 2003 - Malikwal hemzemin geçit felaketi — Bir otobüs , Lalamusa - Surghuda yerel treniyle çarpıştı .	En az yirmi yedi kişi öldü ve altı kişi yaralandı .	- Mian Channun kasabası , yaklaşık Punjab bölgesindeki Mutlan şehri merkezinin yaklaşık 100 kilometre doğusu - sisli - Okul otobüsü - 9 ölü ve 18 yaralı .	- Voronezhskay hemzemin geçit felaketi — 21 Ocak 2006 , fabrika işçilerini taşıyan bir otobüs , Mineralnye Vody - Krasnodar yolcu treniyle çarpıştı .
+Event	T0	felaketi	EVENT	34
+Event	T1	çarptığında	EVENT	69
+Event	T2	öldü	EVENT	99
+Event	T3	yaralandı	EVENT	117
+Event	T4	felaketi	EVENT	168
+Event	T5	çarpıştı	EVENT	227
+Event	T6	öldü	EVENT	260
+Event	T7	yaralandı	EVENT	278
+Event	T8	ölü	EVENT	426
+Event	T9	felaketi	EVENT	475
+Event	T10	çarpıştı	EVENT	584
+Event	T11	yaralı	EVENT	436
+Event	T12	sisli	EVENT	401
+Event	T13	taşıyan	EVENT	520
+Relation	T0	T10	NoRel	true	felaketi	çarpıştı
+Relation	T0	T11	NoRel	true	felaketi	yaralı
+Relation	T1	T7	NoRel	true	çarptığında	yaralandı
+Relation	T10	T1	NoRel	true	çarpıştı	çarptığında
+Relation	T11	T8	NoRel	true	yaralı	ölü
+Relation	T11	T9	NoRel	true	yaralı	felaketi
+Relation	T12	T7	NoRel	true	sisli	yaralandı
+Relation	T13	T2	NoRel	true	taşıyan	öldü
+Relation	T13	T8	NoRel	true	taşıyan	ölü
+Relation	T2	T4	NoRel	true	öldü	felaketi
+Relation	T2	T9	NoRel	true	öldü	felaketi
+Relation	T5	T13	NoRel	true	çarpıştı	taşıyan
+Relation	T7	T6	NoRel	true	yaralandı	öldü
+Relation	T9	T12	NoRel	true	felaketi	sisli
+Relation	T9	T13	NoRel	true	felaketi	taşıyan

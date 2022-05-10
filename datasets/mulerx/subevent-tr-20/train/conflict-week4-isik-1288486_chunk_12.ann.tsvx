@@ -1,0 +1,19 @@
+Text	Konseye katılan SPD yöneticisi katılma sebebinin , ülkeye zarar gelmesini engellemek ve grevleri hızla sonlandırabilmek olduğunu açıkladı .	İşçi sınıfı ise her türlü olumsuz duruma karşın , yine de SPD’yi kendi partileri gibi görmeye devam ediyordu .	1918’in sonbaharında ordu , savaşı kaybettiğini anlayınca hükûmete ateşkes görüşmelerinin başlaması ve SPD’nin de hükûmete katılması yolunda bir ültimatom verdi .	Alman hükûmeti de savaş sonrası durumun yarattığı sorunlara daha geniş kesimleri ortak etmek ve yaşanan işçi sınıfının hareketliliklerinden dolayı bu hareketlilikleri bastırabilmek için SPD’ye hükûmette yer alması teklifinde bulundu .	Eylül 1918’de SPD teklife olumlu cevap verdiğinde , devrimcilerin bakış açısına göre yine işçi sınıfına ihanet ediyordu .
+Event	T1	grevleri	EVENT	88
+Event	T2	açıkladı	EVENT	129
+Event	T4	verdi	EVENT	406
+Event	T5	savaş	EVENT	432
+Event	T6	hareketlilikleri	EVENT	564
+Event	T7	bulundu	EVENT	639
+Event	T8	katılan	EVENT	8
+Event	T9	savaşı	EVENT	279
+Event	T10	anlayınca	EVENT	299
+Event	T3	sorunlara	EVENT	464
+Event	T11	verdiğinde	EVENT	688
+Event	T12	ediyordu	EVENT	760
+Relation	T1	T2	NoRel	true	grevleri	açıkladı
+Relation	T10	T4	NoRel	true	anlayınca	verdi
+Relation	T12	T9	NoRel	true	ediyordu	savaşı
+Relation	T5	T12	NoRel	true	savaş	ediyordu
+Relation	T5	T7	NoRel	true	savaş	bulundu
+Relation	T6	T12	NoRel	true	hareketlilikleri	ediyordu

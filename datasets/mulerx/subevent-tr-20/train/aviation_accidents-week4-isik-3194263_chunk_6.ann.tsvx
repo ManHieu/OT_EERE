@@ -1,0 +1,44 @@
+Text	Kazanın nedeni hemen açıklanmamıştı .	Bakü'de Sağlık Bakanlığı Adli Tıp Ekspertiz ve Patolojik Anatomi Derneği'ne götürülen kurbanların cenazeleri , yapılan incelemenin ardından ailelerine teslim edildi .	Azerbaycan Devlet Sınır Hizmeti Başkanı Elçin Guliyev , kazada hayatı kaybeden askerlere şehit statüsü verileceğini belirterek , Cumhurbaşkanı İlham Aliyev'in olayın ayrıntılarını netleştirme , hayatını kaybedenleri gömme ve yaralıları tedavi etmek için gereken her şeyi yapma talimatı verdiğini kaydetti .	Guliyev , kazada yaralanan iki askerle telefonda görüştüğünü ve durumlarının normal olduğunu söyledi .	Cenazeler , Bakü'deki Serhatçi Spor Merkezi'nde düzenlenen törenden sonra Şehitler Hiyabanı'na defnedildiler .
+Event	T1	götürülen	EVENT	114
+Event	T2	incelemenin	EVENT	157
+Event	T3	edildi	EVENT	196
+Event	T4	kaybeden	EVENT	275
+Event	T5	belirterek	EVENT	321
+Event	T6	gömme	EVENT	421
+Event	T7	kaydetti	EVENT	501
+Event	T8	yaralanan	EVENT	529
+Event	T9	söyledi	EVENT	605
+Event	T10	defnedildiler	EVENT	710
+Event	T11	Kazanın	EVENT	0
+Event	T12	cenazeleri	EVENT	136
+Event	T13	kazada	EVENT	261
+Event	T14	olayın	EVENT	364
+Event	T15	yaralıları	EVENT	430
+Event	T16	etmek	EVENT	448
+Event	T17	kazada	EVENT	522
+Event	T18	görüştüğünü	EVENT	561
+Relation	T11	T2	SuperSub	true	Kazanın	incelemenin
+Relation	T2	T11	SubSuper	true	incelemenin	Kazanın
+Relation	T11	T12	SuperSub	true	Kazanın	cenazeleri
+Relation	T12	T11	SubSuper	true	cenazeleri	Kazanın
+Relation	T11	T4	SuperSub	true	Kazanın	kaybeden
+Relation	T4	T11	SubSuper	true	kaybeden	Kazanın
+Relation	T11	T5	SuperSub	true	Kazanın	belirterek
+Relation	T5	T11	SubSuper	true	belirterek	Kazanın
+Relation	T15	T16	SuperSub	true	yaralıları	etmek
+Relation	T16	T15	SubSuper	true	etmek	yaralıları
+Relation	T11	T7	SuperSub	true	Kazanın	kaydetti
+Relation	T7	T11	SubSuper	true	kaydetti	Kazanın
+Relation	T11	T8	SuperSub	true	Kazanın	yaralanan
+Relation	T8	T11	SubSuper	true	yaralanan	Kazanın
+Relation	T1	T14	NoRel	true	götürülen	olayın
+Relation	T1	T3	NoRel	true	götürülen	edildi
+Relation	T1	T7	NoRel	true	götürülen	kaydetti
+Relation	T10	T12	NoRel	true	defnedildiler	cenazeleri
+Relation	T15	T8	NoRel	true	yaralıları	yaralanan
+Relation	T18	T8	NoRel	true	görüştüğünü	yaralanan
+Relation	T3	T12	NoRel	true	edildi	cenazeleri
+Relation	T4	T3	NoRel	true	kaybeden	edildi
+Relation	T5	T3	NoRel	true	belirterek	edildi
+Relation	T8	T14	NoRel	true	yaralanan	olayın
+Relation	T9	T10	NoRel	true	söyledi	defnedildiler

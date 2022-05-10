@@ -1,0 +1,35 @@
+Text	برطانیہ نے طالب علم محمود ہاشمی کو کسی ملزم کے اس بیان پر کہ وہ ایک رات محمود کے گھر ٹھیرا تھا ، دہشت کے الزام میں گرفتار کر کے امریکہ کے حوالے کر دیا ۔	برطانیہ نے عراق اور افغانستان پر امریکی حملے میں اپنی افواج سے حصہ لیا ۔	برطانوی شاہی خاندان کے شہزادے ہیری نے افغانستان میں بم برسانے میں بطور معاون کچھ ہفتے گزارے اور مغربی دنیا میں بے تحاشا داد پائی ۔	2006ء میں اٹھارا مسلمانوں کو جن میں بچے بھی شامل تھے ، پولیس نے دہشت گردی کی منصوبہ بندی کے الزام میں گرفتار کر لیا جو اب تک قید ہیں ۔	مقدمے کی تفصیلات شائع کرنے پر عدالت نے پابندی لگائی ہوئی ہے ۔
+Event	T0	بیان	EVENT	50
+Event	T1	ٹھیرا	EVENT	85
+Event	T2	الزام	EVENT	105
+Event	T3	گرفتار	EVENT	115
+Event	T4	حوالے	EVENT	138
+Event	T6	حملے	EVENT	193
+Event	T7	برسانے	EVENT	281
+Event	T8	گزارے	EVENT	312
+Event	T9	پائی	EVENT	350
+Event	T10	گرفتار	EVENT	459
+Event	T12	قید	EVENT	482
+Event	T5	لیا	EVENT	220
+Event	T14	شامل	EVENT	401
+Event	T15	الزام	EVENT	449
+Event	T11	شائع	EVENT	509
+Event	T16	پابندی	EVENT	531
+Relation	T4	T3	SuperSub	true	حوالے	گرفتار
+Relation	T3	T4	SubSuper	true	گرفتار	حوالے
+Relation	T0	T8	NoRel	true	بیان	گزارے
+Relation	T1	T15	NoRel	true	ٹھیرا	الزام
+Relation	T1	T6	NoRel	true	ٹھیرا	حملے
+Relation	T10	T14	NoRel	true	گرفتار	شامل
+Relation	T10	T5	NoRel	true	گرفتار	لیا
+Relation	T11	T12	NoRel	true	شائع	قید
+Relation	T12	T1	NoRel	true	قید	ٹھیرا
+Relation	T12	T3	NoRel	true	قید	گرفتار
+Relation	T14	T4	NoRel	true	شامل	حوالے
+Relation	T16	T14	NoRel	true	پابندی	شامل
+Relation	T3	T16	NoRel	true	گرفتار	پابندی
+Relation	T3	T2	NoRel	true	گرفتار	الزام
+Relation	T4	T6	NoRel	true	حوالے	حملے
+Relation	T6	T2	NoRel	true	حملے	الزام
+Relation	T8	T9	NoRel	true	گزارے	پائی
+Relation	T9	T5	NoRel	true	پائی	لیا

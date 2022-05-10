@@ -1,0 +1,12 @@
+Text	OKEECHOBEE KASIRGASI veya SAN FELIPE SEGUNDO KASIRGASI , ölümlü kasırga .	1928 Atlantik kasırga sezonunda meydana gelen kasırga , Rüzgâraltı Adaları , Porto Riko , Bahamalar ve Florida'yı vurmuş ve büyük kayıba neden olmuştur .			
+Event	T1	kasırga	EVENT	64
+Event	T2	kasırga	EVENT	120
+Event	T3	vurmuş	EVENT	188
+Event	T4	OKEECHOBEE KASIRGASI	EVENT	0
+Event	T5	SAN FELIPE SEGUNDO KASIRGASI	EVENT	26
+Event	T6	olmuştur	EVENT	217
+Relation	T4	T6	SuperSub	true	OKEECHOBEE KASIRGASI	olmuştur
+Relation	T6	T4	SubSuper	true	olmuştur	OKEECHOBEE KASIRGASI
+Relation	T5	T6	SuperSub	true	SAN FELIPE SEGUNDO KASIRGASI	olmuştur
+Relation	T6	T5	SubSuper	true	olmuştur	SAN FELIPE SEGUNDO KASIRGASI
+Relation	T2	T5	NoRel	true	kasırga	SAN FELIPE SEGUNDO KASIRGASI

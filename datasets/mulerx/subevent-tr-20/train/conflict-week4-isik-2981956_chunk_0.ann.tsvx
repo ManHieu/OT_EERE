@@ -1,0 +1,17 @@
+Text	SINCAN İSLAM AYAKLANMASI ( ‎) , 1937 yılında Sincan'ın güneyinde çıkan bir ayaklanmaydı .	Ayaklanma , Sovyet yanlısı Sheng Shicai yönetimine karşı Ulusal Devrimci Ordu'nun 36. Tümeni tarafından kısmen desteklenen Küçük Ahund liderliğindeki 1. 500 Uygur Müslüman tarafından çıkarıldı .	Sheng Shicai , 6. Uygur Tümeni komutanı ve Kaşgar Askeri Bölgesi Başkan Yardımcısı Tümgeneral Mahmut Muhiti'ye karşı harekete geçti .	Muhiti , artan Dociet etkisinden rahatsız olarak çevresinde gizli bir grup oluşturdu .	Sheng , Muhiti'nin bir Çinli Müslüman General Ma Hushan ile ittifak kurmasından korkuyordu .
+Event	T0	çıkan	EVENT	65
+Event	T1	ayaklanmaydı	EVENT	75
+Event	T2	çıkarıldı	EVENT	273
+Event	T3	geçti	EVENT	411
+Event	T4	rahatsız	EVENT	452
+Event	T5	oluşturdu	EVENT	494
+Event	T6	korkuyordu	EVENT	586
+Event	T7	SINCAN İSLAM AYAKLANMASI	EVENT	0
+Event	T8	Ayaklanma	EVENT	90
+Event	T9	desteklenen	EVENT	201
+Event	T10	artan	EVENT	428
+Relation	T1	T2	NoRel	true	ayaklanmaydı	çıkarıldı
+Relation	T2	T10	NoRel	true	çıkarıldı	artan
+Relation	T3	T6	NoRel	true	geçti	korkuyordu
+Relation	T8	T10	NoRel	true	Ayaklanma	artan
+Relation	T8	T5	NoRel	true	Ayaklanma	oluşturdu

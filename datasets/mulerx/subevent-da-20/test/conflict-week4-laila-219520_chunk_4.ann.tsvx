@@ -1,0 +1,51 @@
+Text	Medlemsbilledet fremstillede _ Tordenskjolds Hukkert i Kamp med en svensk Fregat _ ; det blev antaget , men vandt i det hele mindre bifald end kunstnerens behandlinger af mere fremmedartede motiver .	thumb| Niels Simonsen , _ Episode fra Slaget ved Slesvig 23. april 1848 .	Ritmester Würtzens dragoner tilbageerobrer to danske kanoner _ , 1849 , Det Nationalhistoriske Museum på Frederiksborg Slot .	Under felttogene 1848-50 var Simonsen stærkt optaget som militærmaler , og mange af de til dels meget omfangsrige krigsbilleder , han udførte , virkede stærkt til at øge hans popularitet .	Rækken indlededes af _ Bivouak efter Slaget ved Slesvig _ , der blev købt til Statens Malerisamling , som senere ved gave fra kong Frederik 7 også kom i besiddelse af _ Stormen paa Mølleskansen ved Frederiksstad _ og af ; andre af Simonsens slagstykker er senere blevne indlemmede i museet på Frederiksborg .
+Event	T0	fremstillede	EVENT	16
+Event	T1	Kamp	EVENT	55
+Event	T2	antaget	EVENT	94
+Event	T3	vandt	EVENT	108
+Event	T4	bifald	EVENT	132
+Event	T5	behandlinger	EVENT	155
+Event	T6	Episode	EVENT	226
+Event	T7	Slaget	EVENT	238
+Event	T8	tilbageerobrer	EVENT	302
+Event	T9	optaget	EVENT	445
+Event	T10	udførte	EVENT	534
+Event	T11	virkede	EVENT	544
+Event	T12	øge	EVENT	566
+Event	T13	indlededes	EVENT	596
+Event	T14	Slaget	EVENT	626
+Event	T15	købt	EVENT	658
+Event	T16	gave	EVENT	706
+Event	T17	kom	EVENT	736
+Event	T18	Stormen	EVENT	758
+Event	T19	indlemmede	EVENT	859
+Event	T20	militærmaler	EVENT	457
+Event	T21	omfangsrige	EVENT	502
+Relation	T1	T15	NoRel	true	Kamp	købt
+Relation	T1	T5	NoRel	true	Kamp	behandlinger
+Relation	T1	T6	NoRel	true	Kamp	Episode
+Relation	T10	T16	NoRel	true	udførte	gave
+Relation	T10	T7	NoRel	true	udførte	Slaget
+Relation	T11	T14	NoRel	true	virkede	Slaget
+Relation	T11	T15	NoRel	true	virkede	købt
+Relation	T12	T5	NoRel	true	øge	behandlinger
+Relation	T14	T6	NoRel	true	Slaget	Episode
+Relation	T15	T20	NoRel	true	købt	militærmaler
+Relation	T15	T9	NoRel	true	købt	optaget
+Relation	T18	T21	NoRel	true	Stormen	omfangsrige
+Relation	T18	T3	NoRel	true	Stormen	vandt
+Relation	T19	T12	NoRel	true	indlemmede	øge
+Relation	T2	T1	NoRel	true	antaget	Kamp
+Relation	T2	T19	NoRel	true	antaget	indlemmede
+Relation	T2	T20	NoRel	true	antaget	militærmaler
+Relation	T20	T18	NoRel	true	militærmaler	Stormen
+Relation	T20	T2	NoRel	true	militærmaler	antaget
+Relation	T20	T8	NoRel	true	militærmaler	tilbageerobrer
+Relation	T21	T16	NoRel	true	omfangsrige	gave
+Relation	T3	T5	NoRel	true	vandt	behandlinger
+Relation	T4	T18	NoRel	true	bifald	Stormen
+Relation	T5	T2	NoRel	true	behandlinger	antaget
+Relation	T7	T10	NoRel	true	Slaget	udførte
+Relation	T7	T19	NoRel	true	Slaget	indlemmede
+Relation	T7	T6	NoRel	true	Slaget	Episode
+Relation	T9	T0	NoRel	true	optaget	fremstillede

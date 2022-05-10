@@ -1,0 +1,39 @@
+Text	Deprem sebebiyle bazı binalarda hasar oluştuğu , bölgede bulunan iki caminin minaresinin yıkıldığı bildirildi .	Deprem bölgesinde bulunan ve panik yaşayan birçok vatandaş geceyi evlerinden dışarıda geçirdi .	20 Mayıs'ta da devam eden artçılar sebebiyle evlerine giremeyen ve bölgeden ayrılmak isteyen kişiler otogarlara yöneldi .	Cuma namazı vaktinde artçıların ve tehlikenin devam etmesi sebebiyle namaz , camiler yerine belirlenmiş meydanlarda kılındı .	Halkın yoğun olarak bulunduğu ve kentten ayrılmak için beklediği otogarda depremde hayatını kaybedenler için gıyabi cenaze namazı kılındı .
+Event	T0	Deprem	EVENT	0
+Event	T2	bildirildi	EVENT	99
+Event	T3	panik	EVENT	141
+Event	T4	geçirdi	EVENT	198
+Event	T5	artçılar	EVENT	234
+Event	T7	yöneldi	EVENT	320
+Event	T8	etmesi	EVENT	382
+Event	T10	kılındı	EVENT	446
+Event	T13	kılındı	EVENT	586
+Event	T1	oluştuğu	EVENT	38
+Event	T14	yıkıldığı	EVENT	89
+Event	T6	isteyen	EVENT	293
+Event	T15	giremeyen	EVENT	262
+Event	T16	artçıların	EVENT	351
+Event	T17	tehlikenin	EVENT	365
+Event	T9	beklediği	EVENT	511
+Event	T11	depremde	EVENT	530
+Event	T12	kaybedenler	EVENT	548
+Relation	T3	T4	SuperSub	true	panik	geçirdi
+Relation	T4	T3	SubSuper	true	geçirdi	panik
+Relation	T10	T17	NoRel	true	kılındı	tehlikenin
+Relation	T10	T2	NoRel	true	kılındı	bildirildi
+Relation	T10	T9	NoRel	true	kılındı	beklediği
+Relation	T12	T7	NoRel	true	kaybedenler	yöneldi
+Relation	T13	T7	NoRel	true	kılındı	yöneldi
+Relation	T14	T16	NoRel	true	yıkıldığı	artçıların
+Relation	T15	T12	NoRel	true	giremeyen	kaybedenler
+Relation	T2	T8	NoRel	true	bildirildi	etmesi
+Relation	T3	T5	NoRel	true	panik	artçılar
+Relation	T3	T8	NoRel	true	panik	etmesi
+Relation	T4	T2	NoRel	true	geçirdi	bildirildi
+Relation	T5	T17	NoRel	true	artçılar	tehlikenin
+Relation	T6	T12	NoRel	true	isteyen	kaybedenler
+Relation	T6	T13	NoRel	true	isteyen	kılındı
+Relation	T6	T8	NoRel	true	isteyen	etmesi
+Relation	T7	T2	NoRel	true	yöneldi	bildirildi
+Relation	T8	T10	NoRel	true	etmesi	kılındı
+Relation	T9	T14	NoRel	true	beklediği	yıkıldığı

@@ -1,0 +1,30 @@
+Text	La ESTAMPIDA DE TURÍN ocurrió el 3 de junio de 2017 cuando un petardo causó el pánico durante la proyección de la Final de la Liga de Campeones de la UEFA 2016-17 , en Turín , Italia .	Al menos 1.527 personas resultaron heridas .	La causa del pánico fue , cuando una persona gritó tras el estallido de un petardo , que se trataba de una bomba , y ocurrió la estampida .	El resultado causó temor por otras posibles explosiones y disparos , aunque fueron desestimados por las autoridades .	Después de la estampida y la evacuación , en el suelo de la plaza estaban esparcidas las zapatillas de deporte de las personas que huyeron despavoridas .
+Event	T1	ocurrió	EVENT	22
+Event	T10	estampida	EVENT	358
+Event	T11	temor	EVENT	389
+Event	T14	desestimados	EVENT	453
+Event	T15	estampida	EVENT	502
+Event	T16	evacuación	EVENT	517
+Event	T2	pánico	EVENT	79
+Event	T3	proyección	EVENT	97
+Event	T4	Final	EVENT	114
+Event	T5	heridas	EVENT	220
+Event	T6	pánico	EVENT	243
+Event	T7	gritó	EVENT	275
+Event	T8	estallido	EVENT	289
+Event	T9	ESTAMPIDA DE TURÍN	EVENT	3
+Event	T12	huyeron	EVENT	619
+Relation	T1	T4	NoRel	true	ocurrió	Final
+Relation	T1	T6	NoRel	true	ocurrió	pánico
+Relation	T10	T12	NoRel	true	estampida	huyeron
+Relation	T10	T2	NoRel	true	estampida	pánico
+Relation	T11	T16	NoRel	true	temor	evacuación
+Relation	T12	T4	NoRel	true	huyeron	Final
+Relation	T15	T5	NoRel	true	estampida	heridas
+Relation	T4	T8	NoRel	true	Final	estallido
+Relation	T4	T9	NoRel	true	Final	ESTAMPIDA DE TURÍN
+Relation	T6	T11	NoRel	true	pánico	temor
+Relation	T7	T4	NoRel	true	gritó	Final
+Relation	T7	T6	NoRel	true	gritó	pánico
+Relation	T8	T6	NoRel	true	estallido	pánico
+Relation	T9	T3	NoRel	true	ESTAMPIDA DE TURÍN	proyección

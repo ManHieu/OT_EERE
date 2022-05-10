@@ -1,0 +1,34 @@
+Text	Cerca de 500 mil viviendas están con daño severo y se estiman un total de 2 millones de damnificados , en la peor tragedia natural vivida en Chile desde 1960 .	La presidenta Michelle Bachelet declaró “ estado de excepción constitucional de catástrofe ” en las regiones del Maule y Biobío .	Un fuerte TSUNAMI impactó las costas chilenas como producto del terremoto , destruyendo varias localidades ya devastadas por el impacto telúrico .	El archipiélago de Juan Fernández , pese a no sentir el sismo , fue impactado por las marejadas que arrasaron con su único poblado , San Juan Bautista , en la Isla Robinson Crusoe .	La alerta de tsunami generada para el océano Pacífico se extendió posteriormente a 53 países ubicados a lo largo de gran parte de su cuenca , llegando a Perú , Ecuador , Colombia , Panamá , Costa Rica , la Antártida , Nueva Zelanda , la Polinesia Francesa y las costas de Hawái .
+Event	T0	damnificados	EVENT	88
+Event	T1	tragedia	EVENT	114
+Event	T2	vivida	EVENT	131
+Event	T3	declaró	EVENT	192
+Event	T4	catástrofe	EVENT	240
+Event	T6	terremoto	EVENT	354
+Event	T7	destruyendo	EVENT	366
+Event	T8	devastadas	EVENT	400
+Event	T9	sentir	EVENT	483
+Event	T10	sismo	EVENT	493
+Event	T11	impactado	EVENT	505
+Event	T12	marejadas	EVENT	523
+Event	T13	arrasaron	EVENT	537
+Event	T14	alerta	EVENT	622
+Event	T15	generada	EVENT	640
+Event	T16	extendió	EVENT	676
+Event	T17	llegando	EVENT	761
+Event	T18	TSUNAMI	EVENT	300
+Relation	T1	T3	SuperSub	true	tragedia	declaró
+Relation	T3	T1	SubSuper	true	declaró	tragedia
+Relation	T11	T16	NoRel	true	impactado	extendió
+Relation	T12	T18	NoRel	true	marejadas	TSUNAMI
+Relation	T13	T14	NoRel	true	arrasaron	alerta
+Relation	T14	T18	NoRel	true	alerta	TSUNAMI
+Relation	T16	T0	NoRel	true	extendió	damnificados
+Relation	T16	T6	NoRel	true	extendió	terremoto
+Relation	T17	T14	NoRel	true	llegando	alerta
+Relation	T17	T15	NoRel	true	llegando	generada
+Relation	T17	T4	NoRel	true	llegando	catástrofe
+Relation	T18	T16	NoRel	true	TSUNAMI	extendió
+Relation	T3	T14	NoRel	true	declaró	alerta
+Relation	T4	T18	NoRel	true	catástrofe	TSUNAMI
+Relation	T8	T16	NoRel	true	devastadas	extendió

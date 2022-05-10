@@ -1,0 +1,46 @@
+Text	Following the Yamasee War , these Tuscarora were asked by South Carolina officials to remain in South Carolina as their allies and to protect the colony from Spain and its Native American allies .	As part of the arrangement , South Carolina would return to the Tuscarora one slave taken during the Tuscarora War for each Tuscarora killed in the line of duty and for each enemy Native American they captured .	During this time , the Tuscarora came to be so well respected by the South Carolina government that they were given land in the colony .	The Yamasee War and other conflicts between the remaining Tuscarora and other Native American groups in the region are examples of how the Tuscarora War destabilized relationships among southern Native Americans .	The Tuscarora War and the Yamasee War were turning points in the Carolinas ' slave trade .
+Event	T0	Following	EVENT	0
+Event	T1	War	EVENT	22
+Event	T2	asked	EVENT	49
+Event	T3	protect	EVENT	134
+Event	T4	arrangement	EVENT	212
+Event	T5	return	EVENT	247
+Event	T6	taken	EVENT	281
+Event	T7	War	EVENT	308
+Event	T8	killed	EVENT	331
+Event	T9	captured	EVENT	398
+Event	T10	came	EVENT	442
+Event	T11	respected	EVENT	461
+Event	T12	given	EVENT	519
+Event	T13	War	EVENT	558
+Event	T14	conflicts	EVENT	572
+Event	T15	War	EVENT	774
+Event	T16	War	EVENT	794
+Event	T17	turning	EVENT	803
+Event	T18	destabilized	EVENT	699
+Event	T19	Tuscarora War	EVENT	685
+Relation	T0	T12	NoRel	true	Following	given
+Relation	T0	T3	NoRel	true	Following	protect
+Relation	T0	T4	NoRel	true	Following	arrangement
+Relation	T10	T17	NoRel	true	came	turning
+Relation	T12	T13	NoRel	true	given	War
+Relation	T13	T15	NoRel	true	War	War
+Relation	T16	T13	NoRel	true	War	War
+Relation	T16	T14	NoRel	true	War	conflicts
+Relation	T16	T7	NoRel	true	War	War
+Relation	T16	T9	NoRel	true	War	captured
+Relation	T17	T12	NoRel	true	turning	given
+Relation	T18	T0	NoRel	true	destabilized	Following
+Relation	T18	T13	NoRel	true	destabilized	War
+Relation	T18	T4	NoRel	true	destabilized	arrangement
+Relation	T19	T12	NoRel	true	Tuscarora War	given
+Relation	T19	T14	NoRel	true	Tuscarora War	conflicts
+Relation	T2	T4	NoRel	true	asked	arrangement
+Relation	T3	T10	NoRel	true	protect	came
+Relation	T5	T19	NoRel	true	return	Tuscarora War
+Relation	T6	T10	NoRel	true	taken	came
+Relation	T6	T19	NoRel	true	taken	Tuscarora War
+Relation	T6	T5	NoRel	true	taken	return
+Relation	T8	T12	NoRel	true	killed	given
+Relation	T9	T3	NoRel	true	captured	protect
+Relation	T9	T7	NoRel	true	captured	War

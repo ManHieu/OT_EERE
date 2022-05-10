@@ -1,0 +1,40 @@
+Text	Anıtın üstünde ölen 39 kişinin adı ve kaza yapan uçağın bir tasviri vardır .	Acil Durum Bakanı Kubatbek Boronov ; kazadan 2 gün sonra , 19 Ocak 2017'de uçağın taşıdığı kargonun Kırgızistan'a ait olmadığını ve İstanbul'da boşaltılmasının planlandığını ve tüm kargoların yandığını açıkladı .	Ayrıca Kırgızistan Hükûmeti , uçağın yakıt ikmali yapmak için Bişkek'e geldiğini açıkladı .	ACT Airlines , yaptığı bir basın açıklamasında uçağın Hong Kong'dan İstanbul'a aktarmasız uçmak için yeterli yakıtı olduğunu açıkladı .	Aynı gün ACT Airlines genel müdür yardımcısı Hamza Tiglay , yakıt ikmali ve mürettebat değişikliği için Bişkek'e inildiğini söyledi .
+Event	T0	ölen	EVENT	15
+Event	T1	boşaltılmasının	EVENT	221
+Event	T2	açıkladı	EVENT	279
+Event	T4	açıkladı	EVENT	371
+Event	T6	açıklamasında	EVENT	415
+Event	T7	uçmak	EVENT	472
+Event	T8	açıkladı	EVENT	507
+Event	T9	değişikliği	EVENT	605
+Event	T10	söyledi	EVENT	642
+Event	T11	kaza	EVENT	38
+Event	T12	kazadan	EVENT	114
+Event	T13	taşıdığı	EVENT	159
+Event	T14	yandığını	EVENT	269
+Event	T15	geldiğini	EVENT	361
+Event	T3	ikmali	EVENT	333
+Event	T5	ikmali	EVENT	584
+Event	T16	inildiğini	EVENT	631
+Relation	T12	T14	SuperSub	true	kazadan	yandığını
+Relation	T14	T12	SubSuper	true	yandığını	kazadan
+Relation	T11	T14	SuperSub	true	kaza	yandığını
+Relation	T14	T11	SubSuper	true	yandığını	kaza
+Relation	T6	T8	SuperSub	true	açıklamasında	açıkladı
+Relation	T8	T6	SubSuper	true	açıkladı	açıklamasında
+Relation	T0	T3	NoRel	true	ölen	ikmali
+Relation	T1	T10	NoRel	true	boşaltılmasının	söyledi
+Relation	T13	T0	NoRel	true	taşıdığı	ölen
+Relation	T13	T11	NoRel	true	taşıdığı	kaza
+Relation	T13	T12	NoRel	true	taşıdığı	kazadan
+Relation	T13	T6	NoRel	true	taşıdığı	açıklamasında
+Relation	T14	T10	NoRel	true	yandığını	söyledi
+Relation	T15	T2	NoRel	true	geldiğini	açıkladı
+Relation	T16	T3	NoRel	true	inildiğini	ikmali
+Relation	T16	T8	NoRel	true	inildiğini	açıkladı
+Relation	T2	T0	NoRel	true	açıkladı	ölen
+Relation	T2	T10	NoRel	true	açıkladı	söyledi
+Relation	T4	T7	NoRel	true	açıkladı	uçmak
+Relation	T6	T5	NoRel	true	açıklamasında	ikmali
+Relation	T7	T2	NoRel	true	uçmak	açıkladı
+Relation	T7	T3	NoRel	true	uçmak	ikmali

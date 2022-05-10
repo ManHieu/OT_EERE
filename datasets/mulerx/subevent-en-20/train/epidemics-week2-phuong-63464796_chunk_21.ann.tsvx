@@ -1,0 +1,50 @@
+Text	The season 's poor harvests and hunger in the Spanish population , as well as negligent medical care , likely contributed to the severity of the influenza pandemic in Spain .	Flu symptoms could be so intense that the region 's physicians often distinguished it from other contagious , seasonal pneumonias that spread from East Europe .	Sixteenth century Spaniards frequently referred to any mass outbreak of deadly disease generically as a _ pestilencia _ , and " plagues " are recognized as occurring in Valencia and Granada during the years 1557 – 59 , despite pathological records of true plague ( like descriptions of buboes ) occurring in the area at the time being scant .	Influenza hit the Kingdom of Portugal at the same time as it spread throughout Spain , with an impact that spread across the Atlantic Ocean .	The kingdom had just suffered food shortages due to 1556 - 57 's poor harvest , which would have exacerbated the effects of the flu on hungry patients .
+Event	T0	harvests	EVENT	19
+Event	T1	hunger	EVENT	32
+Event	T10	plague	EVENT	592
+Event	T11	Influenza	EVENT	679
+Event	T12	occurring	EVENT	631
+Event	T13	scant	EVENT	671
+Event	T14	hit	EVENT	689
+Event	T15	spread	EVENT	740
+Event	T16	impact	EVENT	774
+Event	T17	spread	EVENT	786
+Event	T18	suffered	EVENT	842
+Event	T19	harvest	EVENT	891
+Event	T2	pandemic	EVENT	155
+Event	T20	exacerbated	EVENT	918
+Event	T21	effects	EVENT	934
+Event	T22	flu	EVENT	949
+Event	T4	distinguished	EVENT	244
+Event	T5	pneumonias	EVENT	294
+Event	T6	spread	EVENT	310
+Event	T7	outbreak	EVENT	396
+Event	T8	recognized	EVENT	478
+Event	T9	occurring	EVENT	492
+Relation	T14	T15	SuperSub	true	hit	spread
+Relation	T15	T14	SubSuper	true	spread	hit
+Relation	T19	T18	SuperSub	true	harvest	suffered
+Relation	T18	T19	SubSuper	true	suffered	harvest
+Relation	T0	T18	NoRel	true	harvests	suffered
+Relation	T0	T20	NoRel	true	harvests	exacerbated
+Relation	T11	T0	NoRel	true	Influenza	harvests
+Relation	T12	T4	NoRel	true	occurring	distinguished
+Relation	T13	T4	NoRel	true	scant	distinguished
+Relation	T15	T1	NoRel	true	spread	hunger
+Relation	T15	T19	NoRel	true	spread	harvest
+Relation	T16	T10	NoRel	true	impact	plague
+Relation	T16	T20	NoRel	true	impact	exacerbated
+Relation	T16	T7	NoRel	true	impact	outbreak
+Relation	T18	T14	NoRel	true	suffered	hit
+Relation	T2	T1	NoRel	true	pandemic	hunger
+Relation	T20	T18	NoRel	true	exacerbated	suffered
+Relation	T21	T13	NoRel	true	effects	scant
+Relation	T21	T19	NoRel	true	effects	harvest
+Relation	T21	T2	NoRel	true	effects	pandemic
+Relation	T6	T13	NoRel	true	spread	scant
+Relation	T6	T7	NoRel	true	spread	outbreak
+Relation	T7	T12	NoRel	true	outbreak	occurring
+Relation	T7	T19	NoRel	true	outbreak	harvest
+Relation	T9	T1	NoRel	true	occurring	hunger
+Relation	T9	T10	NoRel	true	occurring	plague
+Relation	T9	T16	NoRel	true	occurring	impact

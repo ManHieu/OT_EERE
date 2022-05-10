@@ -1,0 +1,20 @@
+Text	Tsunamiden ölenlerin sayısının bu denli fazla olmasınının bir sebebi de , dalgaların beklenmedik derecede yüksek olan boyutlarıydı .	Tsunaminin vurduğu pek çok şehirdeki tsunami setleri dalgaların yüksekliğinden daha küçüktü .	Ayrıca dalgalara yakalanan pek çok kişi dalgalardan kaçabilmek için yeterince yüksekte olduklarını düşünümüştü .	Kuji ve Ōfunato " tamamen yıkılmış ve orada bir kasaba olduğunu dair hiçbir işaret kalmamıştı " .	Gelen haberlere göre dalgaların üç katlı bir bina yüksekliğinde olduğu Rikuzentakata kasabası da yıkılmıştı .
+Event	T0	vurduğu	EVENT	144
+Event	T1	setleri	EVENT	178
+Event	T2	düşünümüştü	EVENT	326
+Event	T3	yıkılmış	EVENT	366
+Event	T4	yıkılmıştı	EVENT	535
+Event	T5	Tsunamiden	EVENT	0
+Event	T6	ölenlerin	EVENT	11
+Event	T7	yakalanan	EVENT	244
+Event	T8	kaçabilmek	EVENT	279
+Event	T9	Gelen	EVENT	438
+Relation	T5	T0	SuperSub	true	Tsunamiden	vurduğu
+Relation	T0	T5	SubSuper	true	vurduğu	Tsunamiden
+Relation	T0	T6	NoRel	true	vurduğu	ölenlerin
+Relation	T4	T3	NoRel	true	yıkılmıştı	yıkılmış
+Relation	T4	T5	NoRel	true	yıkılmıştı	Tsunamiden
+Relation	T6	T2	NoRel	true	ölenlerin	düşünümüştü
+Relation	T8	T3	NoRel	true	kaçabilmek	yıkılmış
+Relation	T9	T0	NoRel	true	Gelen	vurduğu
+Relation	T9	T5	NoRel	true	Gelen	Tsunamiden

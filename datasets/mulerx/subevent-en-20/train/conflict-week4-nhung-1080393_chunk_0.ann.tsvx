@@ -1,0 +1,31 @@
+Text	THE BATTLE OF GLENMALURE ( ) took place in Ireland on 25 August 1580 during the Desmond Rebellions .	An Irish Catholic force made up of the Gaelic clans from the Wicklow Mountains led by Fiach MacHugh O'Byrne and James Eustace , 3rd Viscount Baltinglass of the Pale , defeated an English army under Arthur Grey , 14th Baron Grey de Wilton , at the O'Byrnes ' mountain stronghold of Glenmalure .	Grey had landed in Ireland with reinforcements from England to put down the rebellion .	His strategy was to meet O'Byrne 's threat to the English heartland of Dublin and the Pale by attacking through the highlands to the south of the city .	Against the advice of veteran commanders , he chose to lead his army ( around 3,000 strong ) through lowland Kildare and into the Wicklow Mountains , with the aim of taking the fastness at Balinacor in the Glenmalure Valley .
+Event	T0	BATTLE	EVENT	4
+Event	T1	Rebellions	EVENT	88
+Event	T2	led	EVENT	180
+Event	T3	defeated	EVENT	268
+Event	T4	landed	EVENT	404
+Event	T5	reinforcements	EVENT	427
+Event	T6	rebellion	EVENT	471
+Event	T7	meet	EVENT	503
+Event	T8	threat	EVENT	519
+Event	T9	attacking	EVENT	577
+Event	T10	chose	EVENT	682
+Event	T11	lead	EVENT	691
+Event	T12	taking	EVENT	802
+Event	T13	fastness	EVENT	813
+Event	T14	took place	EVENT	29
+Event	T15	put down	EVENT	458
+Relation	T10	T12	SuperSub	true	chose	taking
+Relation	T12	T10	SubSuper	true	taking	chose
+Relation	T10	T14	NoRel	true	chose	took place
+Relation	T10	T6	NoRel	true	chose	rebellion
+Relation	T11	T14	NoRel	true	lead	took place
+Relation	T12	T13	NoRel	true	taking	fastness
+Relation	T12	T14	NoRel	true	taking	took place
+Relation	T13	T1	NoRel	true	fastness	Rebellions
+Relation	T15	T8	NoRel	true	put down	threat
+Relation	T3	T13	NoRel	true	defeated	fastness
+Relation	T4	T9	NoRel	true	landed	attacking
+Relation	T5	T3	NoRel	true	reinforcements	defeated
+Relation	T9	T15	NoRel	true	attacking	put down
+Relation	T9	T4	NoRel	true	attacking	landed

@@ -1,0 +1,25 @@
+Text	Papua Yeni Gine'nin Doğu Sepik ilindeki Wewak kasabasındaki Boram Hastanesi tsunamiden zarar gördü , 4 milyon dolarlık zarara uğrayan hastanedeki yüz hasta dalgalar ulaşmadan önce tahliye edildi .	Hawaii'de sadece altyapı 3 milyon dolarlık zarar gördü , oteller gibi özel mülklere gelen zararlarla birlikte toplam zararın on milyonlarca dolara ulaştığı tahmin edildi .	Midway Atolü'ndeki bazı adacıkları tamamen sular altına gömen 1, 5 metre yüksekliğindeki bir tsunami adacıklarda kuluçkaya yatmış olan 110 bin su kuşunu öldürdü .	Güney Pasifik'teki Tonga , Yeni Zelanda gibi ülkeler ve Amerikan Samoası ile Guam gibi bazı adalarda beklenenden büyük dalgalar gözlemlendi ; fakat bunlar büyük bir zarara yol açmadı .	Buna rağmen Guam'da bazı yollar kapatıldı ve düşük rakımlı bölgeler tahliye edildi .
+Event	T0	gördü	EVENT	93
+Event	T1	edildi	EVENT	188
+Event	T2	gördü	EVENT	246
+Event	T4	edildi	EVENT	360
+Event	T5	gömen	EVENT	425
+Event	T6	tsunami	EVENT	462
+Event	T7	yatmış	EVENT	492
+Event	T8	öldürdü	EVENT	522
+Event	T9	gözlemlendi	EVENT	660
+Event	T10	kapatıldı	EVENT	749
+Event	T11	edildi	EVENT	793
+Event	T12	tsunamiden	EVENT	76
+Event	T13	uğrayan	EVENT	126
+Event	T3	dalgalar	EVENT	651
+Relation	T1	T12	NoRel	true	edildi	tsunamiden
+Relation	T10	T13	NoRel	true	kapatıldı	uğrayan
+Relation	T11	T0	NoRel	true	edildi	gördü
+Relation	T11	T13	NoRel	true	edildi	uğrayan
+Relation	T11	T8	NoRel	true	edildi	öldürdü
+Relation	T12	T8	NoRel	true	tsunamiden	öldürdü
+Relation	T13	T12	NoRel	true	uğrayan	tsunamiden
+Relation	T5	T2	NoRel	true	gömen	gördü
+Relation	T6	T5	NoRel	true	tsunami	gömen
+Relation	T8	T9	NoRel	true	öldürdü	gözlemlendi

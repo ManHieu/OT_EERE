@@ -1,0 +1,56 @@
+Text	7,8 milliarder dollars blev betalt tilbage til USA i form af tjenester , så som leje af flyvestationer , men udover det blev ingen af forsyningerne betalt tilbage senere .	Canada modtog ingen hjælp fra Lend-Lease programmet , men drev selv et lignende program med materiel for 4,7 milliarder dollars til Storbritannien og Sovjet .	Programmet var et afgørende skridt væk fra den amerikanske isolationistiske politik der havde været fremherskende siden 1. verdenskrig , og hen imod en aktivistisk udenrigspolitik .	Lend-Lease blev startet med vedtagelsen af Lend-Lease_loven 11. marts 1941 , der gav USA's præsident tilladelse til at yde materiel støtte til lande hvis forsvar han så som vital i forsvaret af USA .	Præsident Franklin D. Roosevelt godkendte hjælp for en milliard dollars til Storbritannien i slutningen af oktober 1941 .
+Event	T0	betalt	EVENT	28
+Event	T1	modtog	EVENT	179
+Event	T2	hjælp	EVENT	192
+Event	T3	drev	EVENT	230
+Event	T4	skridt	EVENT	359
+Event	T5	startet	EVENT	529
+Event	T6	vedtagelsen	EVENT	541
+Event	T7	gav	EVENT	594
+Event	T8	yde	EVENT	632
+Event	T9	hjælp	EVENT	755
+Event	T10	tjenester	EVENT	61
+Event	T11	leje	EVENT	80
+Event	T12	betalt	EVENT	148
+Event	T13	programmet	EVENT	213
+Event	T14	program	EVENT	252
+Event	T15	Programmet	EVENT	331
+Event	T16	1. verdenskrig	EVENT	451
+Event	T17	isolationistiske politik	EVENT	390
+Event	T18	forsvar	EVENT	667
+Event	T19	vital	EVENT	686
+Event	T20	forsvaret	EVENT	694
+Event	T21	godkendte	EVENT	745
+Event	T22	tilladelse	EVENT	614
+Event	T23	Lend-Lease_loven	EVENT	556
+Event	T24	så	EVENT	679
+Relation	T10	T11	SuperSub	true	tjenester	leje
+Relation	T11	T10	SubSuper	true	leje	tjenester
+Relation	T16	T17	SuperSub	true	1. verdenskrig	isolationistiske politik
+Relation	T17	T16	SubSuper	true	isolationistiske politik	1. verdenskrig
+Relation	T22	T24	SuperSub	true	tilladelse	så
+Relation	T24	T22	SubSuper	true	så	tilladelse
+Relation	T0	T12	NoRel	true	betalt	betalt
+Relation	T1	T10	NoRel	true	modtog	tjenester
+Relation	T1	T16	NoRel	true	modtog	1. verdenskrig
+Relation	T1	T18	NoRel	true	modtog	forsvar
+Relation	T1	T3	NoRel	true	modtog	drev
+Relation	T12	T1	NoRel	true	betalt	modtog
+Relation	T12	T21	NoRel	true	betalt	godkendte
+Relation	T13	T22	NoRel	true	programmet	tilladelse
+Relation	T14	T1	NoRel	true	program	modtog
+Relation	T17	T7	NoRel	true	isolationistiske politik	gav
+Relation	T18	T9	NoRel	true	forsvar	hjælp
+Relation	T20	T24	NoRel	true	forsvaret	så
+Relation	T22	T5	NoRel	true	tilladelse	startet
+Relation	T24	T17	NoRel	true	så	isolationistiske politik
+Relation	T3	T22	NoRel	true	drev	tilladelse
+Relation	T4	T13	NoRel	true	skridt	programmet
+Relation	T4	T16	NoRel	true	skridt	1. verdenskrig
+Relation	T4	T2	NoRel	true	skridt	hjælp
+Relation	T4	T23	NoRel	true	skridt	Lend-Lease_loven
+Relation	T6	T22	NoRel	true	vedtagelsen	tilladelse
+Relation	T6	T24	NoRel	true	vedtagelsen	så
+Relation	T7	T22	NoRel	true	gav	tilladelse
+Relation	T8	T2	NoRel	true	yde	hjælp
+Relation	T8	T24	NoRel	true	yde	så

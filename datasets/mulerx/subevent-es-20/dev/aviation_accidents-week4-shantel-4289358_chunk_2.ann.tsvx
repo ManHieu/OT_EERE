@@ -1,0 +1,28 @@
+Text	Fue el último vuelo que salió del aeropuerto de Santiago de Cuba antes de que se cerrara debido a la aproximación del huracán Tomás	A las 17:42 , la aeronave se estrelló cerca de la aldea de Guasimal en la provincia de Sancti Spíritus , a unas 210 millas ( 340 km ) al sureste de La Habana , luego de emitir una llamada de socorro .	Testigos dijeron que el avión " volaba bajo y parecía inestable ... derramando humo y fuego " , antes de escuchar una explosión .	Las instalaciones médicas de Guasimal se pusieron en alerta para prepararse para los pacientes de emergencia .	Sin embargo , a la medianoche se les dijo que se retiraran porque no se esperaban supervivientes .
+Event	T0	vuelo	EVENT	14
+Event	T1	salió	EVENT	24
+Event	T2	aproximación	EVENT	101
+Event	T3	huracán	EVENT	118
+Event	T4	estrelló	EVENT	161
+Event	T5	emitir	EVENT	301
+Event	T6	llamada	EVENT	312
+Event	T7	socorro	EVENT	323
+Event	T8	dijeron	EVENT	342
+Event	T9	volaba	EVENT	365
+Event	T10	derramando	EVENT	401
+Event	T11	escuchar	EVENT	438
+Event	T12	explosión	EVENT	451
+Event	T13	alerta	EVENT	516
+Event	T14	dijo	EVENT	611
+Event	T15	retiraran	EVENT	623
+Relation	T0	T1	SuperSub	true	vuelo	salió
+Relation	T1	T0	SubSuper	true	salió	vuelo
+Relation	T10	T1	NoRel	true	derramando	salió
+Relation	T10	T2	NoRel	true	derramando	aproximación
+Relation	T12	T15	NoRel	true	explosión	retiraran
+Relation	T12	T6	NoRel	true	explosión	llamada
+Relation	T13	T12	NoRel	true	alerta	explosión
+Relation	T13	T4	NoRel	true	alerta	estrelló
+Relation	T3	T13	NoRel	true	huracán	alerta
+Relation	T3	T15	NoRel	true	huracán	retiraran
+Relation	T3	T5	NoRel	true	huracán	emitir

@@ -1,0 +1,47 @@
+Text	MØLLEKROEN som begreb er opstået som følge af den foretagsomhed , hvormed møllerne i ældre tid drev deres møllerfæste .	Når møllegæsterne drog til mølle , var de vant til at blive beværtet med en dram , mens de ventede på , at kornet blev malet .	Så blev de bænket i møllerstuen , der gerne lå i umiddelbar forlængelse af møllerhuset , hvor kværnen lå .	Fæstebrevene forbød al den krovirksomhed , der kunne komme bonden _ til skade _ , men der var altså et sted midt imellem , hvor det alligevel var acceptabelt , at mølleren beværtede sine kunder .	Desuden var det en del af møllerens næringsret , møllerprivilegiet og fristende var det jo , når kunderne kom lige til døren .
+Event	T0	opstået	EVENT	25
+Event	T1	drev	EVENT	95
+Event	T2	drog	EVENT	138
+Event	T3	beværtet	EVENT	180
+Event	T4	ventede	EVENT	211
+Event	T5	malet	EVENT	239
+Event	T6	bænket	EVENT	258
+Event	T7	forbød	EVENT	367
+Event	T8	beværtede	EVENT	526
+Event	T9	MØLLEKROEN	EVENT	0
+Event	T10	foretagsomhed	EVENT	50
+Event	T11	forlængelse	EVENT	307
+Event	T12	lå	EVENT	349
+Event	T13	skade	EVENT	426
+Event	T14	midt	EVENT	462
+Event	T15	acceptabelt	EVENT	500
+Event	T16	næringsret	EVENT	586
+Event	T17	fristende	EVENT	620
+Event	T18	kom	EVENT	656
+Relation	T2	T3	SuperSub	true	drog	beværtet
+Relation	T3	T2	SubSuper	true	beværtet	drog
+Relation	T3	T6	SuperSub	true	beværtet	bænket
+Relation	T6	T3	SubSuper	true	bænket	beværtet
+Relation	T14	T15	SuperSub	true	midt	acceptabelt
+Relation	T15	T14	SubSuper	true	acceptabelt	midt
+Relation	T1	T6	NoRel	true	drev	bænket
+Relation	T10	T13	NoRel	true	foretagsomhed	skade
+Relation	T10	T5	NoRel	true	foretagsomhed	malet
+Relation	T10	T9	NoRel	true	foretagsomhed	MØLLEKROEN
+Relation	T11	T14	NoRel	true	forlængelse	midt
+Relation	T11	T9	NoRel	true	forlængelse	MØLLEKROEN
+Relation	T13	T14	NoRel	true	skade	midt
+Relation	T16	T1	NoRel	true	næringsret	drev
+Relation	T16	T2	NoRel	true	næringsret	drog
+Relation	T17	T2	NoRel	true	fristende	drog
+Relation	T17	T6	NoRel	true	fristende	bænket
+Relation	T18	T15	NoRel	true	kom	acceptabelt
+Relation	T18	T17	NoRel	true	kom	fristende
+Relation	T18	T6	NoRel	true	kom	bænket
+Relation	T2	T0	NoRel	true	drog	opstået
+Relation	T2	T14	NoRel	true	drog	midt
+Relation	T3	T5	NoRel	true	beværtet	malet
+Relation	T4	T17	NoRel	true	ventede	fristende
+Relation	T5	T14	NoRel	true	malet	midt
+Relation	T6	T9	NoRel	true	bænket	MØLLEKROEN
+Relation	T9	T2	NoRel	true	MØLLEKROEN	drog

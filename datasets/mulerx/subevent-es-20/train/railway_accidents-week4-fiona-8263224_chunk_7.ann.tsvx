@@ -1,0 +1,24 @@
+Text	Alaska Airlines anunció que había limitado las tarifas de los vuelos entre Seattle y Portland los días 18 y 19 de diciembre .	La Junta Nacional de Seguridad del Transporte ( NTSB ) abrió una investigación sobre el accidente .	Un equipo de NTSB Go Team de 20 miembros fue enviado al sitio del accidente .	NTSB anunció en su hallazgo preliminar que el registrador de datos del motor trasero mostraba que el tren viajaba a 80 millas por hora ( 130 km/h ) a través de la zona de 30 millas por hora ( 48 km/h ) .	Se espera que la investigación en el sitio tome de siete a diez días para completarse .
+Event	T0	anunció	EVENT	16
+Event	T1	limitado	EVENT	34
+Event	T2	abrió	EVENT	181
+Event	T3	investigación	EVENT	191
+Event	T4	accidente	EVENT	214
+Event	T5	enviado	EVENT	271
+Event	T6	accidente	EVENT	292
+Event	T7	anunció	EVENT	309
+Event	T8	mostraba	EVENT	389
+Event	T9	viajaba	EVENT	410
+Event	T10	espera	EVENT	511
+Event	T11	investigación	EVENT	525
+Event	T12	tome	EVENT	551
+Relation	T4	T2	SuperSub	true	accidente	abrió
+Relation	T2	T4	SubSuper	true	abrió	accidente
+Relation	T0	T10	NoRel	true	anunció	espera
+Relation	T0	T12	NoRel	true	anunció	tome
+Relation	T0	T2	NoRel	true	anunció	abrió
+Relation	T10	T5	NoRel	true	espera	enviado
+Relation	T2	T3	NoRel	true	abrió	investigación
+Relation	T4	T12	NoRel	true	accidente	tome
+Relation	T8	T12	NoRel	true	mostraba	tome
+Relation	T8	T4	NoRel	true	mostraba	accidente

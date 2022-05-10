@@ -1,0 +1,17 @@
+Text	El VUELO 821 DE AEROFLOT , operado por la aerolínea Aeroflot-Nord , se estrelló el durante su aproximación al aeropuerto Bolshoe Savino de la ciudad de Perm , Rusia .	Este desastre aéreo provocó el cambio de marca de Aeroflot-Nord en Nordavia , efectivo el 1 de diciembre de 2009 .	Todos los 83 pasajeros y 5 miembros de la tripulación fallecieron .	La aeronave , un Boeing 737 con registro VP-BKO , despegó del aeropuerto de Moscú-Sheremetyevo con destino a la ciudad de Perm , al pie de los montes Urales .	La causa principal del accidente fue que ambos pilotos habían perdido la orientación espacial debido a su inexperiencia con el tipo de indicador de actitud occidental en el avión .
+Event	T0	operado	EVENT	27
+Event	T1	estrelló	EVENT	71
+Event	T2	aproximación	EVENT	94
+Event	T4	cambio	EVENT	198
+Event	T5	fallecieron	EVENT	336
+Event	T6	registro	EVENT	382
+Event	T7	despegó	EVENT	400
+Event	T8	accidente	EVENT	532
+Event	T9	perdido	EVENT	571
+Event	T10	inexperiencia	EVENT	615
+Event	T11	desastre	EVENT	172
+Relation	T11	T10	NoRel	true	desastre	inexperiencia
+Relation	T5	T2	NoRel	true	fallecieron	aproximación
+Relation	T5	T7	NoRel	true	fallecieron	despegó
+Relation	T8	T10	NoRel	true	accidente	inexperiencia
+Relation	T9	T10	NoRel	true	perdido	inexperiencia

@@ -1,0 +1,23 @@
+Text	Polis topluluğu dağıtmaya çalıştı , ancak başarısız oldu ve protestocular Stalin anıtında yeniden toplandılar .	Protestocular yetkililere taleplerini ilettiler .	Talepler arasında Stalin'in doğum günü olan 18 Aralık'ın resmi bir tatil günü sayılması , Stalin'in hayatına ayrılan makalelerin tüm yerel gazetelerde yayınlanması , Mikheil Chiaureli'nin Stalin'i övdüğü _ Berlin'in Düşüşü _ ve _ Unutulmaz Yıl 1919 _ filmlerinin sinemalarda gösterilmesi ve o sırada Gürcistan'ı ziyaret eden Çinli mareşal Zhu De'nin gösteri alanına davet edilmesi vardı .	Gün sonunda göstericilerin sayısı 70.000'e ulaştı .	Sovyetler Birliği İçişleri Bakanlığı başlangıçta protestoların ölçeğini küçümsedi ve bakan Janjghava'ya dayanan bilgiler 8 Mart'ta Merkez Komite'ye ulaştı .
+Event	T0	çalıştı	EVENT	26
+Event	T1	ilettiler	EVENT	150
+Event	T2	Talepler	EVENT	162
+Event	T4	sayılması	EVENT	240
+Event	T5	yayınlanması	EVENT	313
+Event	T6	övdüğü	EVENT	359
+Event	T7	Düşüşü	EVENT	378
+Event	T8	gösterilmesi	EVENT	437
+Event	T9	ziyaret	EVENT	474
+Event	T11	edilmesi	EVENT	534
+Event	T12	ulaştı	EVENT	594
+Event	T13	küçümsedi	EVENT	675
+Event	T14	ulaştı	EVENT	751
+Event	T15	toplandılar	EVENT	98
+Event	T3	protestoların	EVENT	652
+Relation	T15	T1	SuperSub	true	toplandılar	ilettiler
+Relation	T1	T15	SubSuper	true	ilettiler	toplandılar
+Relation	T0	T2	NoRel	true	çalıştı	Talepler
+Relation	T13	T12	NoRel	true	küçümsedi	ulaştı
+Relation	T15	T11	NoRel	true	toplandılar	edilmesi
+Relation	T4	T12	NoRel	true	sayılması	ulaştı
+Relation	T7	T8	NoRel	true	Düşüşü	gösterilmesi

@@ -1,0 +1,20 @@
+Text	Amerikan / Rus komisyonu 1993'te enkaz sahasında araştırma gerçekleştirildi ve neticesinde oluşturulan raporda altı kişinin kalıntıları doğrulandı .	Ayrıca raporda , başka kişilerin de kalıntılarının olabileceği ancak uçağın düşmesinin ardından çıkan yangının kalıntıların kimliğinin tespit edilmesini engellediği belirtildi .	Bir görgü tanığı olan General Sozinov , enkazın sekiz saat yandığını söyledi .	Ayrıca Sovyet avcı uçağı mürettebatının ve görgü tanıklarının tamamı vurulan uçaktan paraşütle atlayan kimseyi görmediğini söyledi .	Uçağın neden Sovyet hava sahasına girdiği kesin olarak bilinmiyor .
+Event	T1	doğrulandı	EVENT	136
+Event	T2	düşmesinin	EVENT	225
+Event	T3	yangının	EVENT	251
+Event	T4	tespit	EVENT	284
+Event	T5	belirtildi	EVENT	314
+Event	T6	söyledi	EVENT	396
+Event	T7	vurulan	EVENT	475
+Event	T8	söyledi	EVENT	529
+Event	T9	araştırma	EVENT	49
+Event	T10	engellediği	EVENT	302
+Event	T11	yandığını	EVENT	386
+Event	T12	girdiği	EVENT	573
+Relation	T9	T4	SuperSub	true	araştırma	tespit
+Relation	T4	T9	SubSuper	true	tespit	araştırma
+Relation	T5	T8	NoRel	true	belirtildi	söyledi
+Relation	T7	T2	NoRel	true	vurulan	düşmesinin
+Relation	T8	T1	NoRel	true	söyledi	doğrulandı
+Relation	T8	T6	NoRel	true	söyledi	söyledi
+Relation	T9	T10	NoRel	true	araştırma	engellediği

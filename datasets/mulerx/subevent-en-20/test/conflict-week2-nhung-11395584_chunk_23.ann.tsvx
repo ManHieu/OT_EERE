@@ -1,0 +1,61 @@
+Text	Neofit reluctantly agreed to preside over the ceremony and to issue a curse on both pieces of legislation .	On , Ottoman troops headed by Omar Pasha and assisted by Fuat Pasha stormed into Bucharest , partly as an attempt to prevent the extension of Russian presence over the Milcov River .	On the morning of that day , Fuat met with local public figures at his headquarters in Cotroceni , proclaiming the reestablishment of the _ Regulament _ and appointing Constantin Cantacuzino as _ Kaymakam _ of Wallachia .	While all revolutionaries who attended the meeting were placed under arrest , Ion Heliade Rădulescu and Christian Tell sought refuge at the British consulate in Bucharest , where they were received by Robert Gilmour Colquhoun in exchange for a sum of Austrian florins .	The radical faction around Nicolae Bălcescu and Gheorghe Magheru had planned resistance on the Danube , but their opinion had failed to rally significant appeal .
+Event	T0	agreed	EVENT	19
+Event	T1	preside	EVENT	29
+Event	T10	proclaiming	EVENT	390
+Event	T11	reestablishment	EVENT	406
+Event	T12	appointing	EVENT	448
+Event	T13	attended	EVENT	543
+Event	T14	meeting	EVENT	556
+Event	T15	received	EVENT	702
+Event	T16	resistance	EVENT	860
+Event	T17	opinion	EVENT	897
+Event	T18	failed	EVENT	909
+Event	T19	rally	EVENT	919
+Event	T2	issue	EVENT	62
+Event	T20	appeal	EVENT	937
+Event	T3	curse	EVENT	70
+Event	T4	headed	EVENT	128
+Event	T5	assisted	EVENT	153
+Event	T6	stormed	EVENT	176
+Event	T7	prevent	EVENT	225
+Event	T8	extension	EVENT	237
+Event	T9	met	EVENT	325
+Relation	T7	T6	SuperSub	true	prevent	stormed
+Relation	T6	T7	SubSuper	true	stormed	prevent
+Relation	T7	T4	SuperSub	true	prevent	headed
+Relation	T4	T7	SubSuper	true	headed	prevent
+Relation	T7	T5	SuperSub	true	prevent	assisted
+Relation	T5	T7	SubSuper	true	assisted	prevent
+Relation	T11	T12	SuperSub	true	reestablishment	appointing
+Relation	T12	T11	SubSuper	true	appointing	reestablishment
+Relation	T0	T5	NoRel	true	agreed	assisted
+Relation	T0	T7	NoRel	true	agreed	prevent
+Relation	T1	T0	NoRel	true	preside	agreed
+Relation	T1	T12	NoRel	true	preside	appointing
+Relation	T1	T19	NoRel	true	preside	rally
+Relation	T1	T4	NoRel	true	preside	headed
+Relation	T1	T5	NoRel	true	preside	assisted
+Relation	T10	T6	NoRel	true	proclaiming	stormed
+Relation	T11	T10	NoRel	true	reestablishment	proclaiming
+Relation	T11	T19	NoRel	true	reestablishment	rally
+Relation	T11	T7	NoRel	true	reestablishment	prevent
+Relation	T12	T2	NoRel	true	appointing	issue
+Relation	T12	T5	NoRel	true	appointing	assisted
+Relation	T13	T1	NoRel	true	attended	preside
+Relation	T13	T12	NoRel	true	attended	appointing
+Relation	T13	T3	NoRel	true	attended	curse
+Relation	T14	T10	NoRel	true	meeting	proclaiming
+Relation	T14	T12	NoRel	true	meeting	appointing
+Relation	T15	T5	NoRel	true	received	assisted
+Relation	T16	T5	NoRel	true	resistance	assisted
+Relation	T16	T7	NoRel	true	resistance	prevent
+Relation	T19	T3	NoRel	true	rally	curse
+Relation	T2	T3	NoRel	true	issue	curse
+Relation	T2	T8	NoRel	true	issue	extension
+Relation	T3	T10	NoRel	true	curse	proclaiming
+Relation	T3	T12	NoRel	true	curse	appointing
+Relation	T3	T14	NoRel	true	curse	meeting
+Relation	T3	T18	NoRel	true	curse	failed
+Relation	T4	T16	NoRel	true	headed	resistance
+Relation	T6	T15	NoRel	true	stormed	received
+Relation	T7	T17	NoRel	true	prevent	opinion

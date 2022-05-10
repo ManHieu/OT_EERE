@@ -1,0 +1,57 @@
+Text	- til den store hær , som en udvidelseslysten krigs- og kolonialpolitik nødvendiggjorde , - til et stort og kostbart hofhold , - til den nye , lønnede embedsstand .	At skaffe penge til staten og at bevare pengene i landet blev derfor merkantilismens første og sidste bud , dens løsen i at opbygge et nationalt mønt- og finansvæsen indad og udad en gunstig handelsbalance med et overskud af rede penge ved opgørelsen af landets samlede handelsomsætning med udlandet .	Foruden opbygningen af en stærk centraliseret statsmagt var der andre træk i tiden som fremmede merkantilistisk tankegang .	Således skete en stærk teknologisk udvikling af skibsfarten og ligeledes en kraftig vækst i byområder , hvilke begge virkede til fremme af den internationale samhandel .	Det var – set i dette lys – naturligt , at merkantilisterne lagde vægt på at udvikle på hvilken måde en sådan stigende samhandel kunne tjene statens interesser .
+Event	T0	nødvendiggjorde	EVENT	72
+Event	T1	løsen	EVENT	278
+Event	T2	opbygge	EVENT	289
+Event	T3	opgørelsen	EVENT	405
+Event	T4	træk	EVENT	537
+Event	T5	skete	EVENT	599
+Event	T6	udvikling	EVENT	626
+Event	T7	vækst	EVENT	675
+Event	T8	virkede	EVENT	708
+Event	T9	set	EVENT	771
+Event	T10	udvikle	EVENT	838
+Event	T11	kostbart	EVENT	108
+Event	T12	lønnede	EVENT	143
+Event	T13	skaffe	EVENT	168
+Event	T14	bevare	EVENT	198
+Event	T15	rede	EVENT	390
+Event	T16	handelsomsætning	EVENT	435
+Event	T17	gunstig	EVENT	348
+Event	T18	overskud	EVENT	378
+Event	T19	opbygningen	EVENT	475
+Event	T20	bud	EVENT	267
+Event	T21	centraliseret	EVENT	499
+Event	T22	stigende	EVENT	871
+Event	T23	vægt	EVENT	827
+Relation	T20	T13	SuperSub	true	bud	skaffe
+Relation	T13	T20	SubSuper	true	skaffe	bud
+Relation	T20	T14	SuperSub	true	bud	bevare
+Relation	T14	T20	SubSuper	true	bevare	bud
+Relation	T0	T20	NoRel	true	nødvendiggjorde	bud
+Relation	T1	T0	NoRel	true	løsen	nødvendiggjorde
+Relation	T1	T22	NoRel	true	løsen	stigende
+Relation	T10	T5	NoRel	true	udvikle	skete
+Relation	T11	T17	NoRel	true	kostbart	gunstig
+Relation	T11	T23	NoRel	true	kostbart	vægt
+Relation	T12	T14	NoRel	true	lønnede	bevare
+Relation	T13	T10	NoRel	true	skaffe	udvikle
+Relation	T14	T23	NoRel	true	bevare	vægt
+Relation	T15	T11	NoRel	true	rede	kostbart
+Relation	T16	T10	NoRel	true	handelsomsætning	udvikle
+Relation	T16	T15	NoRel	true	handelsomsætning	rede
+Relation	T17	T3	NoRel	true	gunstig	opgørelsen
+Relation	T17	T5	NoRel	true	gunstig	skete
+Relation	T18	T1	NoRel	true	overskud	løsen
+Relation	T19	T7	NoRel	true	opbygningen	vækst
+Relation	T2	T0	NoRel	true	opbygge	nødvendiggjorde
+Relation	T2	T14	NoRel	true	opbygge	bevare
+Relation	T2	T5	NoRel	true	opbygge	skete
+Relation	T20	T12	NoRel	true	bud	lønnede
+Relation	T23	T13	NoRel	true	vægt	skaffe
+Relation	T4	T1	NoRel	true	træk	løsen
+Relation	T4	T19	NoRel	true	træk	opbygningen
+Relation	T5	T15	NoRel	true	skete	rede
+Relation	T5	T2	NoRel	true	skete	opbygge
+Relation	T7	T11	NoRel	true	vækst	kostbart
+Relation	T7	T17	NoRel	true	vækst	gunstig
+Relation	T8	T3	NoRel	true	virkede	opgørelsen

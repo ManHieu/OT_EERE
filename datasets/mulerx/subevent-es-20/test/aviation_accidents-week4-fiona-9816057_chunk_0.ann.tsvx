@@ -1,0 +1,38 @@
+Text	El VUELO 328 DE UNITED AIRLINES fue un vuelo nacional estadounidense programado desde Denver ( Colorado ) a Honolulu , ( Hawái ) el 20 de febrero de 2021 .	El Boeing 777-222 que operaba la ruta sufrió una falla en el motor aparentemente contenida poco después del despegue , lo que resultó en un campo de escombros al menos 1 milla ( 1,6 km ) de ancho sobre el Parque Commons circundante de Broomfield en Colorado y sus alrededores .	Los testigos registraron la caída de escombros del motor utilizando cámaras de teléfonos y una cámara para salpicadero .	El vuelo aterrizó de manera segura , sin reportar nadie herido de los que estaban en la aeronave o en tierra , pero la falla del motor resultó en un incendio del motor en vuelo , daños extensos a la góndola del motor y daños menores al fuselaje .	El motor averiado era un turbofan Pratt & Whitney modelo PW4077 .
+Event	T0	vuelo	EVENT	39
+Event	T1	programado	EVENT	69
+Event	T2	operaba	EVENT	178
+Event	T3	sufrió	EVENT	194
+Event	T4	falla	EVENT	205
+Event	T5	contenida	EVENT	237
+Event	T6	despegue	EVENT	264
+Event	T7	resultó	EVENT	282
+Event	T8	registraron	EVENT	447
+Event	T9	caída	EVENT	462
+Event	T10	aterrizó	EVENT	564
+Event	T11	reportar	EVENT	596
+Event	T12	herido	EVENT	611
+Event	T13	falla	EVENT	674
+Event	T14	incendio	EVENT	704
+Event	T15	vuelo	EVENT	726
+Event	T16	daños	EVENT	774
+Event	T17	averiado	EVENT	811
+Event	T18	daños	EVENT	734
+Relation	T11	T12	NoRel	true	reportar	herido
+Relation	T11	T16	NoRel	true	reportar	daños
+Relation	T13	T1	NoRel	true	falla	programado
+Relation	T13	T18	NoRel	true	falla	daños
+Relation	T14	T0	NoRel	true	incendio	vuelo
+Relation	T15	T17	NoRel	true	vuelo	averiado
+Relation	T15	T5	NoRel	true	vuelo	contenida
+Relation	T16	T10	NoRel	true	daños	aterrizó
+Relation	T16	T14	NoRel	true	daños	incendio
+Relation	T16	T4	NoRel	true	daños	falla
+Relation	T18	T16	NoRel	true	daños	daños
+Relation	T18	T3	NoRel	true	daños	sufrió
+Relation	T2	T6	NoRel	true	operaba	despegue
+Relation	T3	T1	NoRel	true	sufrió	programado
+Relation	T3	T11	NoRel	true	sufrió	reportar
+Relation	T3	T12	NoRel	true	sufrió	herido
+Relation	T5	T7	NoRel	true	contenida	resultó
+Relation	T6	T15	NoRel	true	despegue	vuelo

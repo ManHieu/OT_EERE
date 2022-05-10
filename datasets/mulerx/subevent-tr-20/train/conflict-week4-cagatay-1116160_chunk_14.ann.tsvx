@@ -1,0 +1,13 @@
+Text	Moğollar Macaristan’da Büyük Kağan adına para bastırarak hakimiyetlerini ilan ederler .	Bölge Batu Han tarafından Orda Han’ın denetimine verilir .	İstilacı ordunun yağma ve katliamlarının yanı sıra salgın hastalıklardan dolayı Macar halkı çok büyük kayıplar verir .	Bölgedeki hâkimiyetlerine rağmen Moğollar kaleli şehirleri ele geçiremezler .	Saldırıya uğrayan ancak ele geçirilemeyen şehirler arasında Fehérvár , Esztergom , Veszprém , Tihany , Győr , Pannonhalma , Moson , Sopron , Vasvár , Újhely , Zala , Lockenhaus , Bratislava , Nitra , Komárom , Fiľakovo ve Abaújvár sayılabilir .
+Event	T0	verilir	EVENT	137
+Event	T1	yağma	EVENT	164
+Event	T2	katliamlarının	EVENT	173
+Event	T3	verir	EVENT	258
+Event	T5	sayılabilir	EVENT	575
+Event	T6	bastırarak	EVENT	46
+Event	T7	ilan	EVENT	73
+Event	T8	salgın	EVENT	198
+Event	T9	Saldırıya uğrayan	EVENT	344
+Relation	T6	T7	NoRel	true	bastırarak	ilan
+Relation	T9	T0	NoRel	true	Saldırıya uğrayan	verilir
+Relation	T9	T7	NoRel	true	Saldırıya uğrayan	ilan

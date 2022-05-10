@@ -1,0 +1,24 @@
+Text	Sin embargo , no podía recordar si había confirmado su acción de cambio .	Agregó que " no recibió cualquier entrenamiento en manejo de la placa , que se usó cuatro días antes de controlar el interruptor del ferrocarril eléctrico " .	Acusó a sus superiores diciendo que " a pesar de que sabían que no estaba entrenado , fue asignado al turno de noche " .	El fiscal envió El personal acusado al tribunal penal de turno , que dictaminó su arresto .	Categoría : Turquía en 2018 Categoría : Desastres en 2018 Categoría : Accidentes ferroviarios Categoría : Desastres en Turquía
+Event	T1	acción	EVENT	55
+Event	T10	asignado	EVENT	323
+Event	T11	dictaminó	EVENT	423
+Event	T12	arresto	EVENT	436
+Event	T13	Desastres	EVENT	486
+Event	T14	Accidentes	EVENT	516
+Event	T15	Desastres	EVENT	552
+Event	T3	entrenamiento	EVENT	108
+Event	T5	usó	EVENT	153
+Event	T6	controlar	EVENT	178
+Event	T7	Acusó	EVENT	233
+Event	T8	diciendo	EVENT	256
+Event	T9	entrenado	EVENT	307
+Relation	T1	T15	NoRel	true	acción	Desastres
+Relation	T12	T11	NoRel	true	arresto	dictaminó
+Relation	T14	T8	NoRel	true	Accidentes	diciendo
+Relation	T3	T10	NoRel	true	entrenamiento	asignado
+Relation	T6	T1	NoRel	true	controlar	acción
+Relation	T6	T15	NoRel	true	controlar	Desastres
+Relation	T7	T3	NoRel	true	Acusó	entrenamiento
+Relation	T8	T6	NoRel	true	diciendo	controlar
+Relation	T9	T15	NoRel	true	entrenado	Desastres
+Relation	T9	T8	NoRel	true	entrenado	diciendo

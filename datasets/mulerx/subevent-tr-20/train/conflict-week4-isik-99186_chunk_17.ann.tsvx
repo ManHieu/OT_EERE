@@ -1,0 +1,13 @@
+Text	İdam yaftaları :	Deniz Gezmiş ve arkadaşlarının , 1969'da öldürülen Taylan Özgür'ün yanına gömülme istekleri yerine getirilmedi .	Deniz Gezmiş , idamından sonra bayraklaşarak " solun devrim mücadelesi "nin çok önemli bir sembolü oldu .	Birçok sol örgütün , başka konularda farklı fikirlerde olmalarına rağmen mutabık kaldıkları nadir konulardan birisi de Gezmiş'in devrim önderliğidir .	Olaydan 15 yıl sonra Süleyman Demirel , bir gazeteciye verdiği demeçte idamlar için , _ " Soğuk savaşın talihsiz olaylarından biri .
+Event	T0	öldürülen	EVENT	58
+Event	T1	istekleri	EVENT	99
+Event	T2	idamından	EVENT	145
+Event	T5	idamlar	EVENT	458
+Event	T6	İdam	EVENT	0
+Event	T3	Olaydan	EVENT	387
+Event	T4	savaşın	EVENT	483
+Event	T7	olaylarından	EVENT	500
+Event	T8	demeçte	EVENT	450
+Relation	T2	T7	NoRel	true	idamından	olaylarından
+Relation	T3	T5	NoRel	true	Olaydan	idamlar
+Relation	T8	T3	NoRel	true	demeçte	Olaydan

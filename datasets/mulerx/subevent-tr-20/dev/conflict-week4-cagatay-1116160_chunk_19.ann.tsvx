@@ -1,0 +1,16 @@
+Text	Ögeday’ın ölümü üzerine Moğollar geri çekilince Hırvat asilleri ve kentleri bağlılıklarından dolayı kral tarafından ödüllendirilecektir .	Moğol istilaları önce Macar topraklarının parçası olan doğu Karpatya bölgesindeki Moldova ve Eflak topraklarında yaşanır .	Bölgedeki onbinlerce Rumen , topraklarını Altın Orda saldırılarına karşı korurken hayatını kaybedecektir .	Bu dönemde yaşanan imha o kadar büyüktür ki , bölgedeki Rumenlere ait yazılı tüm tarih bilgisi kaybolmuştur .	Ana hedefi Macar toprakları olan istila sırasında Rumenler tutunamamış ve ormanlara , dağlara çekilmişlerdir .
+Event	T0	ölümü	EVENT	10
+Event	T1	çekilince	EVENT	38
+Event	T2	ödüllendirilecektir	EVENT	116
+Event	T3	istilaları	EVENT	144
+Event	T4	yaşanır	EVENT	251
+Event	T5	saldırılarına	EVENT	314
+Event	T6	kaybedecektir	EVENT	352
+Event	T7	imha	EVENT	387
+Event	T8	kaybolmuştur	EVENT	463
+Event	T9	istila	EVENT	511
+Event	T10	çekilmişlerdir	EVENT	572
+Event	T11	korurken	EVENT	334
+Relation	T1	T7	NoRel	true	çekilince	imha
+Relation	T10	T1	NoRel	true	çekilmişlerdir	çekilince
+Relation	T4	T1	NoRel	true	yaşanır	çekilince

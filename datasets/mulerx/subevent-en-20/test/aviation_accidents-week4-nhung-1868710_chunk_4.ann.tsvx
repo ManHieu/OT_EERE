@@ -1,0 +1,40 @@
+Text	Father Joseph Cuyt , a local priest who had been observing the airplane as it came in to land , rushed to the scene but was driven back by the intense heat of the fire .	Airport rescue vehicles arrived at the crash site almost immediately but the plane was already a blazing fire .	Baudouin I , King of the Belgians , and his consort , Queen Fabiola , travelled to the scene of the disaster to provide comfort to the bereaved families .	They donated oak coffins bearing the royal seal to transport the bodies back home .	All eighteen members of the 1961 U.S. Figure Skating team lost their lives , as well as sixteen other people who were accompanying them , including family members , professional coaches , and skating officials .
+Event	T0	observing	EVENT	49
+Event	T1	heat	EVENT	151
+Event	T2	fire	EVENT	163
+Event	T3	rescue	EVENT	178
+Event	T4	arrived	EVENT	194
+Event	T5	crash	EVENT	209
+Event	T6	travelled	EVENT	352
+Event	T7	disaster	EVENT	382
+Event	T8	bereaved	EVENT	417
+Event	T9	donated	EVENT	442
+Event	T10	bearing	EVENT	462
+Event	T11	transport	EVENT	488
+Event	T12	lost	EVENT	579
+Event	T13	accompanying	EVENT	639
+Event	T14	land	EVENT	89
+Event	T15	rushed	EVENT	96
+Event	T16	driven back	EVENT	124
+Event	T17	blazing	EVENT	267
+Event	T18	provide	EVENT	394
+Relation	T14	T15	SuperSub	true	land	rushed
+Relation	T15	T14	SubSuper	true	rushed	land
+Relation	T0	T13	NoRel	true	observing	accompanying
+Relation	T1	T4	NoRel	true	heat	arrived
+Relation	T11	T3	NoRel	true	transport	rescue
+Relation	T11	T6	NoRel	true	transport	travelled
+Relation	T12	T11	NoRel	true	lost	transport
+Relation	T12	T6	NoRel	true	lost	travelled
+Relation	T13	T0	NoRel	true	accompanying	observing
+Relation	T13	T10	NoRel	true	accompanying	bearing
+Relation	T13	T12	NoRel	true	accompanying	lost
+Relation	T18	T16	NoRel	true	provide	driven back
+Relation	T2	T4	NoRel	true	fire	arrived
+Relation	T3	T6	NoRel	true	rescue	travelled
+Relation	T4	T12	NoRel	true	arrived	lost
+Relation	T4	T16	NoRel	true	arrived	driven back
+Relation	T6	T10	NoRel	true	travelled	bearing
+Relation	T7	T10	NoRel	true	disaster	bearing
+Relation	T8	T12	NoRel	true	bereaved	lost
+Relation	T8	T6	NoRel	true	bereaved	travelled

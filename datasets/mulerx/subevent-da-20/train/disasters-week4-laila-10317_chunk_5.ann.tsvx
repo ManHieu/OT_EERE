@@ -1,0 +1,23 @@
+Text	Som et forsøg , blev der udviklet kapsler der kunne bæres på oversiden af vingerne .	Hver kunne indeholde to mand og skulle kunne nedkastes med faldskærm .	Forsøget blev opgivet og agenter blev i stedet anbragt i et DFS 230 svævefly , trukket af en Ju-87D .	Totalt set blev mere end 5.700 fly bygget i perioden fra 1935 til 1945 .	Dens ry var større end realiteterne og aldrig var mere end 400 af dem operationsklare ad gangen .
+Event	T0	forsøg	EVENT	7
+Event	T1	udviklet	EVENT	25
+Event	T2	nedkastes	EVENT	130
+Event	T3	Forsøget	EVENT	156
+Event	T4	opgivet	EVENT	170
+Event	T5	anbragt	EVENT	203
+Event	T6	trukket	EVENT	235
+Event	T7	bygget	EVENT	293
+Event	T8	ry	EVENT	336
+Event	T9	operationsklare	EVENT	401
+Event	T10	indeholde	EVENT	96
+Event	T11	bæres	EVENT	52
+Relation	T0	T1	SuperSub	true	forsøg	udviklet
+Relation	T1	T0	SubSuper	true	udviklet	forsøg
+Relation	T1	T10	SuperSub	true	udviklet	indeholde
+Relation	T10	T1	SubSuper	true	indeholde	udviklet
+Relation	T1	T2	SuperSub	true	udviklet	nedkastes
+Relation	T2	T1	SubSuper	true	nedkastes	udviklet
+Relation	T0	T7	NoRel	true	forsøg	bygget
+Relation	T10	T6	NoRel	true	indeholde	trukket
+Relation	T5	T3	NoRel	true	anbragt	Forsøget
+Relation	T5	T4	NoRel	true	anbragt	opgivet

@@ -1,0 +1,20 @@
+Text	Onun için çok daha bilinçli olarak tabiata , doğaya uyum içerisinde , onu anlayarak ve büyük perspektifler içerisinde , 100 , 200 yıllık , geçmişi ve geleceği düşünerek planlamalar yapmamız lazım .	Bunu acı bir şekilde gördük , görüyoruz .	" özeleştirisinde bulundu .	Sel felaketinden sonra , 13 Ağustos 2021'de Resmî Gazete'de yayınlanan Cumhurbaşkanı kararına göre , yakın zamanda meydana gelen yangın ve sel afetleri ile bundan sonra meydana gelebilecek afet durumlarında , hayatı olumsuz etkileyen şartların iyileştirilmesine katkı sağlanması amacıyla insani yardım kampanyası düzenleneceğini ve koordinasyonun yürütülmesi için Afet ve Acil Durum Yönetimi Başkanlığı ( AFAD)'ın görevlendirildiği ifade edildi .	Halka IBAN numarası verilerek yardım istenmesi kamuoyu ve muhalefet partileri tarafından tepkiyle karşılandı .
+Event	T0	gördük	EVENT	219
+Event	T1	görüyoruz	EVENT	228
+Event	T2	bulundu	EVENT	258
+Event	T3	felaketinden	EVENT	272
+Event	T4	yayınlanan	EVENT	328
+Event	T5	kararına	EVENT	353
+Event	T6	yangın	EVENT	397
+Event	T7	afetleri	EVENT	411
+Event	T8	düzenleneceğini	EVENT	581
+Event	T9	edildi	EVENT	706
+Event	T10	istenmesi	EVENT	752
+Event	T11	karşılandı	EVENT	813
+Relation	T0	T3	NoRel	true	gördük	felaketinden
+Relation	T1	T4	NoRel	true	görüyoruz	yayınlanan
+Relation	T2	T7	NoRel	true	bulundu	afetleri
+Relation	T2	T9	NoRel	true	bulundu	edildi
+Relation	T5	T9	NoRel	true	kararına	edildi
+Relation	T7	T8	NoRel	true	afetleri	düzenleneceğini
+Relation	T9	T10	NoRel	true	edildi	istenmesi

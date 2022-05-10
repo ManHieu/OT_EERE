@@ -1,0 +1,32 @@
+Text	Mange politifolk og reddere rundt omkring i landet tog orlov for at rejse til New York for at hjælpe med oprydningen efter angrebet .	Bloddonationer på tværs af hele USA blev mere populære i ugerne efter terrorangrebet .	For første gang i historien blev SCATANA forpligtet til , at alle fly i USA og flere andre lande , herunder Canada , skulle blive på jorden i flere dage , hvilket førte til problemer for over titusinder af rejsende i hele verden .	Alle internationale flyveruter blev midlertidigt udelukket fra det amerikanske luftrum .	Canada fik omdirigeret 226 fly og lancerede Operation Yellow Ribbon til at håndtere det store antal fly og strandede passagerer .
+Event	T0	rejse	EVENT	68
+Event	T1	hjælpe	EVENT	94
+Event	T2	oprydningen	EVENT	105
+Event	T3	angrebet	EVENT	123
+Event	T4	Bloddonationer	EVENT	134
+Event	T5	populære	EVENT	180
+Event	T6	terrorangrebet	EVENT	204
+Event	T7	forpligtet	EVENT	262
+Event	T8	førte	EVENT	384
+Event	T9	problemer	EVENT	394
+Event	T10	udelukket	EVENT	501
+Event	T11	omdirigeret	EVENT	552
+Event	T12	Operation	EVENT	585
+Event	T13	håndtere	EVENT	616
+Event	T14	strandede	EVENT	648
+Event	T15	blive	EVENT	345
+Relation	T12	T13	SuperSub	true	Operation	håndtere
+Relation	T13	T12	SubSuper	true	håndtere	Operation
+Relation	T12	T14	SuperSub	true	Operation	strandede
+Relation	T14	T12	SubSuper	true	strandede	Operation
+Relation	T10	T6	NoRel	true	udelukket	terrorangrebet
+Relation	T11	T15	NoRel	true	omdirigeret	blive
+Relation	T14	T10	NoRel	true	strandede	udelukket
+Relation	T14	T4	NoRel	true	strandede	Bloddonationer
+Relation	T14	T5	NoRel	true	strandede	populære
+Relation	T15	T9	NoRel	true	blive	problemer
+Relation	T3	T13	NoRel	true	angrebet	håndtere
+Relation	T4	T15	NoRel	true	Bloddonationer	blive
+Relation	T4	T6	NoRel	true	Bloddonationer	terrorangrebet
+Relation	T7	T3	NoRel	true	forpligtet	angrebet
+Relation	T8	T12	NoRel	true	førte	Operation

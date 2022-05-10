@@ -1,0 +1,25 @@
+Text	It was led by the South Saskatchewan Regiment , with supporting units from the Queen 's Own Cameron Highlanders of Canada .	In the early hours of 20 July , the Camerons secured a position in Saint - André - sur - Orne but were quickly pinned down by German infantry and tanks .	At the same time , the South Saskatchewan Regiment moved directly up the slopes of Verrières Ridge , supported by tanks and Hawker Typhoon ground attack aircraft .	The Canadian attack faltered in torrential rain , which rendered air support useless and turned the ground into mud .	Counter-attacks by two divisions threw the South Saskatchewans back past their support lines and their supporting battalion — the Essex Scottish — came under attack .
+Event	T0	led	EVENT	7
+Event	T1	secured	EVENT	169
+Event	T2	position	EVENT	179
+Event	T3	moved	EVENT	329
+Event	T4	supported	EVENT	379
+Event	T5	attack	EVENT	424
+Event	T6	rain	EVENT	485
+Event	T7	Counter-attacks	EVENT	560
+Event	T8	threw	EVENT	593
+Event	T9	attack	EVENT	718
+Event	T10	pinned down	EVENT	235
+Event	T11	faltered	EVENT	462
+Event	T12	rendered	EVENT	498
+Event	T13	turned	EVENT	531
+Relation	T0	T1	NoRel	true	led	secured
+Relation	T0	T13	NoRel	true	led	turned
+Relation	T10	T2	NoRel	true	pinned down	position
+Relation	T11	T12	NoRel	true	faltered	rendered
+Relation	T3	T13	NoRel	true	moved	turned
+Relation	T3	T9	NoRel	true	moved	attack
+Relation	T5	T3	NoRel	true	attack	moved
+Relation	T7	T11	NoRel	true	Counter-attacks	faltered
+Relation	T8	T11	NoRel	true	threw	faltered
+Relation	T8	T2	NoRel	true	threw	position

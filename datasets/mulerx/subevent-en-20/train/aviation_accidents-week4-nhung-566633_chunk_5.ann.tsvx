@@ -1,0 +1,27 @@
+Text	- March 22 – Philippine Airlines Flight 137 , an Airbus A320 - 214 with 127 people on board , overshoots the end of the runway while landing at Bacolod City Domestic Airport in Bacolod in the Philippines , plowing through several houses .	All on board the airliner survive , but three people on the ground die ; 89 people are injured in the accident .	- April 2 – The Government of Slovakia establishes the Civil Aviation Authority of the Slovak Republic as Slovakia ′s national civil aviation authority .	- SATA International – the future Azores Airlines – which had not flown since 1994 when it was known as OceanAir , resumes flight operations .	- April 20 – Air France Flight 422 , a Boeing 727 , crashes into a mountain near Bogotá , Colombia , in foggy weather shortly after take off from El Dorado International Airport , killing all 53 people on board .
+Event	T0	overshoots	EVENT	94
+Event	T1	landing	EVENT	133
+Event	T2	survive	EVENT	265
+Event	T3	die	EVENT	306
+Event	T4	injured	EVENT	326
+Event	T5	accident	EVENT	341
+Event	T6	establishes	EVENT	391
+Event	T7	flown	EVENT	572
+Event	T8	operations	EVENT	636
+Event	T9	killing	EVENT	829
+Event	T10	plowing	EVENT	206
+Event	T11	crashes	EVENT	701
+Event	T12	take off	EVENT	781
+Relation	T1	T0	SuperSub	true	landing	overshoots
+Relation	T0	T1	SubSuper	true	overshoots	landing
+Relation	T12	T11	SuperSub	true	take off	crashes
+Relation	T11	T12	SubSuper	true	crashes	take off
+Relation	T10	T2	NoRel	true	plowing	survive
+Relation	T2	T4	NoRel	true	survive	injured
+Relation	T3	T0	NoRel	true	die	overshoots
+Relation	T5	T7	NoRel	true	accident	flown
+Relation	T5	T8	NoRel	true	accident	operations
+Relation	T6	T7	NoRel	true	establishes	flown
+Relation	T6	T8	NoRel	true	establishes	operations
+Relation	T7	T2	NoRel	true	flown	survive
+Relation	T7	T8	NoRel	true	flown	operations

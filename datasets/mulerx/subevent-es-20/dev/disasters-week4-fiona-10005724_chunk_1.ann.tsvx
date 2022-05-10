@@ -1,0 +1,47 @@
+Text	- Agosto de 2021 , estalló el incendio de la montaña Dokan en el lugar llamado bosque “ Abuskikin ” en el municipio de White Water en el estado de Tebessa .	- El 9 de agosto de 2021 , se produjeron múltiples incendios simultáneos en Tizi Ouzou , con seis muertes registradas en su primer día .	Un gran número de ciudadanos del municipio de Arbaa Nath Irathan , una de las zonas afectadas por los incendios que estallaron en el estado de Provincia de Tizi Uzu , quemaron a una persona que sospechaban que había incendiado los bosques después de que lo arrestaran .	Unas horas después parecía que un músico llamado Jamal Ben Ismail de Miliana , de 38 años , viajó a la zona afectada para brindar asistencia , y los activistas circularon sus declaraciones pidiendo a las personas que mostraran fuerza y coraje y se unieran a la región de Tizi Ouzou para brindar Asistencia en la extinción de incendios .	El Ministerio de Justicia argelino dijo , en un comunicado , que la Fiscalía ordenó la apertura de una investigación sobre las circunstancias del asesinato del joven Jamal Ben Ismail .
+Event	T0	estalló	EVENT	19
+Event	T1	incendio	EVENT	30
+Event	T2	produjeron	EVENT	187
+Event	T3	registradas	EVENT	263
+Event	T4	afectadas	EVENT	378
+Event	T5	incendios	EVENT	396
+Event	T6	estallaron	EVENT	410
+Event	T7	quemaron	EVENT	461
+Event	T8	sospechaban	EVENT	488
+Event	T9	incendiado	EVENT	510
+Event	T10	arrestaran	EVENT	551
+Event	T11	parecía	EVENT	583
+Event	T12	viajó	EVENT	656
+Event	T13	afectada	EVENT	672
+Event	T14	asistencia	EVENT	694
+Event	T15	circularon	EVENT	724
+Event	T16	pidiendo	EVENT	753
+Event	T17	unieran	EVENT	812
+Event	T18	extinción	EVENT	876
+Event	T19	incendios	EVENT	889
+Event	T20	dijo	EVENT	936
+Event	T21	comunicado	EVENT	949
+Event	T22	ordenó	EVENT	978
+Event	T23	apertura	EVENT	988
+Event	T24	investigación	EVENT	1004
+Event	T25	asesinato	EVENT	1047
+Relation	T0	T12	NoRel	true	estalló	viajó
+Relation	T10	T16	NoRel	true	arrestaran	pidiendo
+Relation	T10	T24	NoRel	true	arrestaran	investigación
+Relation	T11	T12	NoRel	true	parecía	viajó
+Relation	T11	T25	NoRel	true	parecía	asesinato
+Relation	T12	T5	NoRel	true	viajó	incendios
+Relation	T14	T13	NoRel	true	asistencia	afectada
+Relation	T16	T11	NoRel	true	pidiendo	parecía
+Relation	T16	T12	NoRel	true	pidiendo	viajó
+Relation	T16	T19	NoRel	true	pidiendo	incendios
+Relation	T17	T22	NoRel	true	unieran	ordenó
+Relation	T21	T13	NoRel	true	comunicado	afectada
+Relation	T24	T0	NoRel	true	investigación	estalló
+Relation	T24	T10	NoRel	true	investigación	arrestaran
+Relation	T25	T5	NoRel	true	asesinato	incendios
+Relation	T3	T1	NoRel	true	registradas	incendio
+Relation	T5	T11	NoRel	true	incendios	parecía
+Relation	T5	T20	NoRel	true	incendios	dijo
+Relation	T5	T7	NoRel	true	incendios	quemaron
+Relation	T8	T14	NoRel	true	sospechaban	asistencia

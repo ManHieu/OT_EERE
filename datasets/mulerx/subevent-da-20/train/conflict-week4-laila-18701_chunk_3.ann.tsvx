@@ -1,0 +1,72 @@
+Text	Det lykkedes PNM at overbevise de fleste af de tilbageværende revolutionære generaler om at opløse deres personlige hære og oprette den mexicanske hær , hvorfor dens dannelse af nogle betragtes som den reelle afslutning på den mexicanske revolution .	Endelig gennemførte præsident Lázaro Cárdenas ( 1934-40 ) en række hårdt tiltrængte jordreformer , som afbødede de værste af fortidens sociale skævheder .	Revolutionen medførte også den politiske tradition med loyalitet ( nogle hævder underlegenhed ) overfor den siddende præsident , en tradition der varede omkring 60 år .	Den væbnede konflikt bliver ofte karakteriseret som den vigtigste sociopolitiske begivenhed i Mexico og en af de største omvæltninger i 1900-tallet ; den resulterede i et vigtigt program med eksperimenter og reformer af den sociale struktur .	PORFIRIATO er den periode i slutningen af det nittende århundredes mexicanske historie , som domineres af general Porfirio Díaz .
+Event	T0	lykkedes	EVENT	4
+Event	T1	overbevise	EVENT	20
+Event	T2	opløse	EVENT	92
+Event	T3	oprette	EVENT	124
+Event	T4	dannelse	EVENT	166
+Event	T5	betragtes	EVENT	184
+Event	T6	afslutning	EVENT	209
+Event	T7	revolution	EVENT	238
+Event	T8	gennemførte	EVENT	259
+Event	T9	afbødede	EVENT	354
+Event	T10	skævheder	EVENT	394
+Event	T11	medførte	EVENT	419
+Event	T12	hævder	EVENT	479
+Event	T13	varede	EVENT	552
+Event	T14	konflikt	EVENT	587
+Event	T15	karakteriseret	EVENT	608
+Event	T16	begivenhed	EVENT	656
+Event	T17	omvæltninger	EVENT	696
+Event	T18	resulterede	EVENT	729
+Event	T19	eksperimenter	EVENT	766
+Event	T20	tilbageværende	EVENT	47
+Event	T21	jordreformer	EVENT	335
+Event	T22	loyalitet	EVENT	461
+Event	T23	siddende	EVENT	514
+Event	T24	program	EVENT	754
+Event	T25	reformer	EVENT	783
+Event	T26	PORFIRIATO	EVENT	818
+Event	T27	domineres	EVENT	911
+Event	T28	historie	EVENT	896
+Relation	T14	T16	SuperSub	true	konflikt	begivenhed
+Relation	T16	T14	SubSuper	true	begivenhed	konflikt
+Relation	T14	T17	SuperSub	true	konflikt	omvæltninger
+Relation	T17	T14	SubSuper	true	omvæltninger	konflikt
+Relation	T14	T25	SuperSub	true	konflikt	reformer
+Relation	T25	T14	SubSuper	true	reformer	konflikt
+Relation	T26	T27	SuperSub	true	PORFIRIATO	domineres
+Relation	T27	T26	SubSuper	true	domineres	PORFIRIATO
+Relation	T0	T17	NoRel	true	lykkedes	omvæltninger
+Relation	T10	T13	NoRel	true	skævheder	varede
+Relation	T10	T15	NoRel	true	skævheder	karakteriseret
+Relation	T10	T27	NoRel	true	skævheder	domineres
+Relation	T11	T22	NoRel	true	medførte	loyalitet
+Relation	T12	T8	NoRel	true	hævder	gennemførte
+Relation	T13	T21	NoRel	true	varede	jordreformer
+Relation	T13	T6	NoRel	true	varede	afslutning
+Relation	T13	T8	NoRel	true	varede	gennemførte
+Relation	T14	T19	NoRel	true	konflikt	eksperimenter
+Relation	T15	T17	NoRel	true	karakteriseret	omvæltninger
+Relation	T15	T20	NoRel	true	karakteriseret	tilbageværende
+Relation	T17	T23	NoRel	true	omvæltninger	siddende
+Relation	T18	T23	NoRel	true	resulterede	siddende
+Relation	T19	T17	NoRel	true	eksperimenter	omvæltninger
+Relation	T19	T18	NoRel	true	eksperimenter	resulterede
+Relation	T2	T13	NoRel	true	opløse	varede
+Relation	T2	T26	NoRel	true	opløse	PORFIRIATO
+Relation	T2	T27	NoRel	true	opløse	domineres
+Relation	T21	T0	NoRel	true	jordreformer	lykkedes
+Relation	T21	T11	NoRel	true	jordreformer	medførte
+Relation	T21	T2	NoRel	true	jordreformer	opløse
+Relation	T22	T24	NoRel	true	loyalitet	program
+Relation	T23	T22	NoRel	true	siddende	loyalitet
+Relation	T24	T10	NoRel	true	program	skævheder
+Relation	T24	T26	NoRel	true	program	PORFIRIATO
+Relation	T28	T1	NoRel	true	historie	overbevise
+Relation	T4	T1	NoRel	true	dannelse	overbevise
+Relation	T4	T10	NoRel	true	dannelse	skævheder
+Relation	T4	T27	NoRel	true	dannelse	domineres
+Relation	T6	T24	NoRel	true	afslutning	program
+Relation	T8	T2	NoRel	true	gennemførte	opløse
+Relation	T8	T4	NoRel	true	gennemførte	dannelse
+Relation	T9	T10	NoRel	true	afbødede	skævheder

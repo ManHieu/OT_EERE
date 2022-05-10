@@ -1,0 +1,20 @@
+Text	Dört kişi öldü ve 102 kişi yaralandı .	- 11 Kasım , 2000 – Kaprun disaster , Avustrya : Bir funicular tren , tünelde emniyetsiz bir şekilde ısıtıcı yüklenmesi nedeniyle alev aldı .	155 ölü .	- 2 Aralık , 2000 – Sarai Banjara demiryolu felaketi , kalabalık bir banliyö treni Hindistan , Punjab’da bir raydan çıkmış bir yük trenine çarpştı .	45_den fazla ölü .
+Event	T0	öldü	EVENT	10
+Event	T1	yaralandı	EVENT	27
+Event	T2	yüklenmesi	EVENT	148
+Event	T3	aldı	EVENT	174
+Event	T4	ölü	EVENT	185
+Event	T5	felaketi	EVENT	235
+Event	T6	çıkmış	EVENT	307
+Event	T7	çarpştı	EVENT	330
+Event	T8	ölü	EVENT	353
+Relation	T5	T6	SuperSub	true	felaketi	çıkmış
+Relation	T6	T5	SubSuper	true	çıkmış	felaketi
+Relation	T5	T7	SuperSub	true	felaketi	çarpştı
+Relation	T7	T5	SubSuper	true	çarpştı	felaketi
+Relation	T5	T8	SuperSub	true	felaketi	ölü
+Relation	T8	T5	SubSuper	true	ölü	felaketi
+Relation	T1	T4	NoRel	true	yaralandı	ölü
+Relation	T3	T2	NoRel	true	aldı	yüklenmesi
+Relation	T6	T8	NoRel	true	çıkmış	ölü
+Relation	T8	T0	NoRel	true	ölü	öldü

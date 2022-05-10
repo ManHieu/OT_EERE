@@ -1,0 +1,13 @@
+Text	Mütevekkil ikinci halifelik dönemi sonunda ölünce , Burji Hanedanı'ndan Memlûk Sultanı olan Farac'ın hükümdarlık döneminde , Abbasi Halifesi oldu .	1412'de Memlûklu Sultanı Farac Abbasi Halifesi olan Mustain ile birlikte , Suriye'ye , orada isyan etmiş olan emirler üzerine , özellikle Halep valisi olan emir El - Muavyed Ebu an - Nasir Seyh el - Mahmudi üzerine bir sefere başladı .	Sultan Farac Gazze'ye geldiğinde orada birkaç gün istirahat etmek niyetindeydi .	Fakat ordusundan bir grubun düşmanları tarafına geçmesi üzerine hemen Şam üzerine yürüyerek şehre girdi ve şehir kapılarını kapattırdı .	İsyancı emirlerin orduları çok geçmeden şehri kuşatmaya aldı ve Sultan Farac uzun bir kuşatmaya hazır beklemekteydi .
+Event	T0	ölünce	EVENT	43
+Event	T1	oldu	EVENT	141
+Event	T2	başladı	EVENT	374
+Event	T3	geçmesi	EVENT	513
+Event	T4	kapattırdı	EVENT	589
+Event	T5	aldı	EVENT	658
+Event	T6	etmiş	EVENT	247
+Event	T7	girdi	EVENT	563
+Event	T8	yürüyerek	EVENT	547
+Relation	T3	T2	NoRel	true	geçmesi	başladı
+Relation	T4	T7	NoRel	true	kapattırdı	girdi
+Relation	T7	T3	NoRel	true	girdi	geçmesi

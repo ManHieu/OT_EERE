@@ -1,0 +1,13 @@
+Text	O desastre ferroviario que se verificou esta madrugada no Vale de Santarem , artículo en el _ Diario de Lisboa _ , 22 de agosto de 1965 , páginas 10 y última , en Archivo digital de la Fundación Mario Soares ( en portugués ) .	« Veintidos muertos y una treintena de heridos al chocar un tren de pasajeros con un mercancías cerca de Lisboa » , artículo en _ ABC _ , edición Madrid , 21 de diciembre de 1965 , página 69 .	Hemeroteca digital del diario ABC	Acidente na linha de Sintra_-_1965 , articulo dedicado al accidente en el blog Algueirão-Mem Martins ( En Portugués ) .	Outro choque de comboios , uno deles com emigrantes , na Praia do Ribatejo , artículo en el _ Diario de Lisboa _ , 21 de diciembre de 1965 , página 16 , en Archivo digital de la Fundación Mario Soares ( en portugués ) .
+Event	T0	desastre	EVENT	2
+Event	T1	verificou	EVENT	30
+Event	T2	muertos	EVENT	239
+Event	T3	heridos	EVENT	266
+Event	T4	chocar	EVENT	277
+Event	T5	Acidente	EVENT	454
+Event	T6	dedicado	EVENT	500
+Event	T7	accidente	EVENT	512
+Event	T8	choque	EVENT	580
+Relation	T0	T6	NoRel	true	desastre	dedicado
+Relation	T1	T6	NoRel	true	verificou	dedicado
+Relation	T8	T0	NoRel	true	choque	desastre

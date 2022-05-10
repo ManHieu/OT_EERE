@@ -1,0 +1,36 @@
+Text	Alemania quedó en bancarrota .	La inflación acrecentó las dudas sobre la eficacia de las instituciones liberales , especialmente entre la clase media que había perdido gran parte de su riqueza al ser ésta expresada en depósitos bancarios y bonos gubernamentales , víctimas de las peores devaluaciones .	Asimismo , produjo un fuerte resentimiento hacia los banqueros alemanes y los especuladores , muchos de ellos judíos , a los que el gobierno y la prensa culparon de la inflación .	La prosperidad de los especuladores en metales preciosos e inmuebles , y la ruina financiera de los ahorristas que conservaban dinero en efectivo , hizo que muchos de estos últimos empezaran a perder la fe en los mecanismos de la democracia y el capitalismo , que no habían podido protegerlos del desastre .	Lo que demuestra la hiperinflación en la República de Weimar , es que la pérdida de confianza en los medios convencionales de intercambio económico rompe con el orden social .
+Event	T0	bancarrota	EVENT	18
+Event	T1	acrecentó	EVENT	44
+Event	T2	dudas	EVENT	58
+Event	T3	perdido	EVENT	160
+Event	T4	expresada	EVENT	205
+Event	T5	víctimas	EVENT	264
+Event	T6	devaluaciones	EVENT	287
+Event	T7	produjo	EVENT	314
+Event	T8	resentimiento	EVENT	332
+Event	T9	culparon	EVENT	456
+Event	T10	inflación	EVENT	471
+Event	T11	prosperidad	EVENT	486
+Event	T12	ruina	EVENT	559
+Event	T13	hizo	EVENT	631
+Event	T14	empezaran	EVENT	664
+Event	T15	perder	EVENT	676
+Event	T16	desastre	EVENT	780
+Event	T17	demuestra	EVENT	798
+Event	T18	hiperinflación	EVENT	811
+Event	T19	pérdida	EVENT	864
+Event	T20	rompe	EVENT	939
+Relation	T10	T16	NoRel	true	inflación	desastre
+Relation	T11	T19	NoRel	true	prosperidad	pérdida
+Relation	T13	T16	NoRel	true	hizo	desastre
+Relation	T13	T19	NoRel	true	hizo	pérdida
+Relation	T13	T3	NoRel	true	hizo	perdido
+Relation	T15	T17	NoRel	true	perder	demuestra
+Relation	T18	T0	NoRel	true	hiperinflación	bancarrota
+Relation	T2	T12	NoRel	true	dudas	ruina
+Relation	T4	T0	NoRel	true	expresada	bancarrota
+Relation	T4	T14	NoRel	true	expresada	empezaran
+Relation	T4	T17	NoRel	true	expresada	demuestra
+Relation	T7	T8	NoRel	true	produjo	resentimiento
+Relation	T9	T13	NoRel	true	culparon	hizo
+Relation	T9	T20	NoRel	true	culparon	rompe

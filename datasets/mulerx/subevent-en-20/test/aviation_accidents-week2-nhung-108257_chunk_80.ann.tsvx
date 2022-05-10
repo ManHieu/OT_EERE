@@ -1,0 +1,60 @@
+Text	It is customary for the Air Force to impound radar trackings involving possible litigation in cases of aviation accidents .	In the civil litigation for damages , the United States Department of Justice explained that the tapes from the Air Force radar installation at King Salmon , Alaska pertinent to KAL 007 's flight in the Bethel area had been destroyed and could therefore not be supplied to the plaintiffs .	At first Justice Department lawyer Jan Van Flatern stated that they were destroyed 15 days after the shootdown .	Later , he said he had " misspoken " and changed the time of destruction to 30 hours after the event .	A Pentagon spokesman concurred , saying that the tapes are re-cycled for reuse from 24 – 30 hours afterwards ; the fate of KAL 007 was known inside this timeframe .
+Event	T0	impound	EVENT	37
+Event	T1	litigation	EVENT	80
+Event	T10	stated	EVENT	465
+Event	T11	destroyed	EVENT	487
+Event	T12	shootdown	EVENT	515
+Event	T13	said	EVENT	538
+Event	T14	changed	EVENT	568
+Event	T15	destruction	EVENT	588
+Event	T16	event	EVENT	622
+Event	T17	concurred	EVENT	651
+Event	T18	saying	EVENT	663
+Event	T19	re-cycled	EVENT	689
+Event	T2	accidents	EVENT	112
+Event	T20	reuse	EVENT	703
+Event	T22	known	EVENT	765
+Event	T23	installation	EVENT	252
+Event	T3	litigation	EVENT	137
+Event	T4	damages	EVENT	152
+Event	T5	explained	EVENT	202
+Event	T6	pertinent	EVENT	289
+Event	T7	flight	EVENT	313
+Event	T8	destroyed	EVENT	348
+Event	T9	supplied	EVENT	385
+Relation	T1	T2	SuperSub	true	litigation	accidents
+Relation	T2	T1	SubSuper	true	accidents	litigation
+Relation	T4	T5	SuperSub	true	damages	explained
+Relation	T5	T4	SubSuper	true	explained	damages
+Relation	T3	T14	SuperSub	true	litigation	changed
+Relation	T14	T3	SubSuper	true	changed	litigation
+Relation	T3	T12	SuperSub	true	litigation	shootdown
+Relation	T12	T3	SubSuper	true	shootdown	litigation
+Relation	T3	T11	SuperSub	true	litigation	destroyed
+Relation	T11	T3	SubSuper	true	destroyed	litigation
+Relation	T3	T10	SuperSub	true	litigation	stated
+Relation	T10	T3	SubSuper	true	stated	litigation
+Relation	T3	T6	SuperSub	true	litigation	pertinent
+Relation	T6	T3	SubSuper	true	pertinent	litigation
+Relation	T3	T23	SuperSub	true	litigation	installation
+Relation	T23	T3	SubSuper	true	installation	litigation
+Relation	T0	T9	NoRel	true	impound	supplied
+Relation	T1	T5	NoRel	true	litigation	explained
+Relation	T11	T0	NoRel	true	destroyed	impound
+Relation	T12	T16	NoRel	true	shootdown	event
+Relation	T13	T1	NoRel	true	said	litigation
+Relation	T13	T20	NoRel	true	said	reuse
+Relation	T14	T12	NoRel	true	changed	shootdown
+Relation	T14	T16	NoRel	true	changed	event
+Relation	T14	T4	NoRel	true	changed	damages
+Relation	T16	T17	NoRel	true	event	concurred
+Relation	T16	T23	NoRel	true	event	installation
+Relation	T18	T0	NoRel	true	saying	impound
+Relation	T19	T15	NoRel	true	re-cycled	destruction
+Relation	T19	T2	NoRel	true	re-cycled	accidents
+Relation	T2	T13	NoRel	true	accidents	said
+Relation	T22	T23	NoRel	true	known	installation
+Relation	T22	T8	NoRel	true	known	destroyed
+Relation	T23	T12	NoRel	true	installation	shootdown
+Relation	T6	T22	NoRel	true	pertinent	known
+Relation	T8	T12	NoRel	true	destroyed	shootdown

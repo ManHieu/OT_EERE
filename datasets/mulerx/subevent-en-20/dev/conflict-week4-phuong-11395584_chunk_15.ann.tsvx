@@ -1,0 +1,52 @@
+Text	Support for the Provisional Government began to be tested when the issue of land reform and corvées was again brought to the forefront .	Aside from the important conservative forces , opponents of the measure were to be found inside the leadership body itself , and included the moderates Heliade Rădulescu and Ioan Odobescu .	Revolutionaries who favored passing land into the property of peasants were divided over the amount that was to be ceded , as well as over the issue of compensation to be paid to boyars .	A compromise was reached through postponing , with a decision taken to submit all proposals to the vote of the Assembly , which was yet to be convened , instead of drafting a decree .	Nevertheless , a Proclamation to estate - holders was issued ( June 28 , 1848 ) , indicating that the reform was to be eventually enforced in exchange for unspecified sums , and calling on peasants to fulfill their corvées until autumn of the same year .
+Event	T0	began	EVENT	39
+Event	T1	tested	EVENT	51
+Event	T2	found	EVENT	220
+Event	T3	included	EVENT	266
+Event	T4	passing	EVENT	355
+Event	T5	divided	EVENT	403
+Event	T6	ceded	EVENT	442
+Event	T7	issue	EVENT	470
+Event	T8	paid	EVENT	498
+Event	T9	compromise	EVENT	517
+Event	T10	reached	EVENT	532
+Event	T11	postponing	EVENT	548
+Event	T12	taken	EVENT	577
+Event	T13	submit	EVENT	586
+Event	T14	convened	EVENT	657
+Event	T15	drafting	EVENT	679
+Event	T16	decree	EVENT	690
+Event	T17	Proclamation	EVENT	716
+Event	T18	issued	EVENT	753
+Event	T19	indicating	EVENT	781
+Event	T20	reform	EVENT	801
+Event	T21	enforced	EVENT	829
+Event	T22	fulfill	EVENT	900
+Event	T23	exchange	EVENT	841
+Event	T24	calling on	EVENT	877
+Relation	T0	T19	NoRel	true	began	indicating
+Relation	T1	T3	NoRel	true	tested	included
+Relation	T10	T1	NoRel	true	reached	tested
+Relation	T11	T16	NoRel	true	postponing	decree
+Relation	T11	T5	NoRel	true	postponing	divided
+Relation	T12	T16	NoRel	true	taken	decree
+Relation	T12	T24	NoRel	true	taken	calling on
+Relation	T12	T3	NoRel	true	taken	included
+Relation	T13	T0	NoRel	true	submit	began
+Relation	T13	T7	NoRel	true	submit	issue
+Relation	T14	T18	NoRel	true	convened	issued
+Relation	T15	T2	NoRel	true	drafting	found
+Relation	T15	T6	NoRel	true	drafting	ceded
+Relation	T16	T21	NoRel	true	decree	enforced
+Relation	T19	T22	NoRel	true	indicating	fulfill
+Relation	T2	T17	NoRel	true	found	Proclamation
+Relation	T20	T10	NoRel	true	reform	reached
+Relation	T20	T7	NoRel	true	reform	issue
+Relation	T22	T17	NoRel	true	fulfill	Proclamation
+Relation	T24	T11	NoRel	true	calling on	postponing
+Relation	T24	T8	NoRel	true	calling on	paid
+Relation	T4	T0	NoRel	true	passing	began
+Relation	T5	T0	NoRel	true	divided	began
+Relation	T5	T8	NoRel	true	divided	paid
+Relation	T6	T20	NoRel	true	ceded	reform
+Relation	T7	T16	NoRel	true	issue	decree

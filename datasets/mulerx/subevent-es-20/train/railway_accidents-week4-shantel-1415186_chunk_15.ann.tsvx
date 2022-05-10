@@ -1,0 +1,47 @@
+Text	Se abrió una investigación judicial para determinar las posibles responsabilidades penales y finalmente archivó el caso por considerar al fallecido conductor del tren , el único responsable del accidente .	En mayo de 2013 la fiscalía reabrió la investigación sobre el accidente .	La primera diligencia se inició a instancias de la denuncia presentada por la diputada del PSPV-PSOE Ana Barceló que apuntaba a la posible existencia de un delito de falso testimonio por parte de los técnicos y directivos de la FGV en su comparecencia ante la comisión de investigación abierta en su día por las Cortes valencianas .	En la segunda , abierta a instancias de los escritos presentados por dos ciudadanos , se investigaron de nuevo las causas del accidente para determinar las posibles responsabilidades penales .	Entre las pruebas que aportaron estaba la grabación del programa de La Sexta _ Salvados _ del 28 de abril .
+Event	T1	determinar	EVENT	41
+Event	T2	archivó	EVENT	104
+Event	T3	considerar	EVENT	124
+Event	T4	fallecido	EVENT	138
+Event	T5	accidente	EVENT	194
+Event	T6	reabrió	EVENT	234
+Event	T7	investigación	EVENT	245
+Event	T8	accidente	EVENT	268
+Event	T9	inició	EVENT	305
+Event	T10	presentada	EVENT	340
+Event	T11	apuntaba	EVENT	397
+Event	T12	delito	EVENT	436
+Event	T13	comparecencia	EVENT	518
+Event	T14	abierta	EVENT	566
+Event	T15	abierta	EVENT	629
+Event	T16	presentados	EVENT	666
+Event	T17	investigaron	EVENT	702
+Event	T18	accidente	EVENT	739
+Event	T19	pruebas	EVENT	816
+Event	T20	aportaron	EVENT	828
+Event	T21	grabación	EVENT	848
+Event	T22	investigación	EVENT	13
+Relation	T5	T22	SuperSub	true	accidente	investigación
+Relation	T22	T5	SubSuper	true	investigación	accidente
+Relation	T18	T21	SuperSub	true	accidente	grabación
+Relation	T21	T18	SubSuper	true	grabación	accidente
+Relation	T1	T13	NoRel	true	determinar	comparecencia
+Relation	T1	T5	NoRel	true	determinar	accidente
+Relation	T10	T3	NoRel	true	presentada	considerar
+Relation	T12	T13	NoRel	true	delito	comparecencia
+Relation	T13	T21	NoRel	true	comparecencia	grabación
+Relation	T13	T8	NoRel	true	comparecencia	accidente
+Relation	T14	T20	NoRel	true	abierta	aportaron
+Relation	T16	T1	NoRel	true	presentados	determinar
+Relation	T16	T17	NoRel	true	presentados	investigaron
+Relation	T17	T1	NoRel	true	investigaron	determinar
+Relation	T17	T21	NoRel	true	investigaron	grabación
+Relation	T19	T3	NoRel	true	pruebas	considerar
+Relation	T2	T4	NoRel	true	archivó	fallecido
+Relation	T22	T8	NoRel	true	investigación	accidente
+Relation	T3	T10	NoRel	true	considerar	presentada
+Relation	T4	T10	NoRel	true	fallecido	presentada
+Relation	T4	T17	NoRel	true	fallecido	investigaron
+Relation	T5	T12	NoRel	true	accidente	delito
+Relation	T8	T3	NoRel	true	accidente	considerar
+Relation	T9	T13	NoRel	true	inició	comparecencia

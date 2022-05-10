@@ -1,0 +1,11 @@
+Text	Özellikle köylerdeki yapı malzemesinin kerpiç olması ölü sayısının artmasına sebep oldu .	Depremin ardından ulaşım yetersizlikleri nedeniyle kırsal bölgelere yardımların ulaştırılması gecikti .	Deprem sonucu Lice , Hani , Hazro , Kulp , Dicle , Silvan , Ergani ve Diyarbakır çevresindeki yapıların 8.159’u ağır , 4.550’si orta ve 7.283’ü hafif hasar gördü ve ölümler meydana geldi .	Elazığ , Şanlıurfa , Mardin , Muş , Siirt'te maddi hasar meydana geldi .	Dönemin başbakanı Süleyman Demirel ve Cumhuriyet Halk Partisi başkanı Bülent Ecevit afet bölgesini ziyaret etti .
+Event	T0	ölü	EVENT	53
+Event	T1	Depremin	EVENT	90
+Event	T2	gecikti	EVENT	184
+Event	T3	gördü	EVENT	350
+Event	T5	hasar	EVENT	434
+Event	T8	artmasına	EVENT	67
+Event	T9	Deprem	EVENT	194
+Event	T4	ölümler	EVENT	359
+Event	T6	ziyaret etti	EVENT	555
+Relation	T5	T9	NoRel	true	hasar	Deprem

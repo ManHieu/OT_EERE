@@ -1,0 +1,30 @@
+Text	Fue entonces cuando pasó a ser una tormenta tropical y nombrado como Ketsana antes de pasar sobre la isla de Luzón en las Filipinas .	A medida que avanzaba en el mar del sur de China , después el sistema dramáticamente se movió hacia el oeste .	Ketsana trajo las peores lluvias a Manila entre los tifones registrados desde el inicio del registro de precipitaciones de mantenimiento de acuerdo por PAGASA , produciendo , sólo vientos moderados , pero trajo consigo lluvias fuertes .	La presidenta Gloria Macapagal Arroyo declaró un " estado de calamidad " que abarca la mayor parte de Luzón , después de que al menos 86 personas fueron inicialmente reportadas muertas en deslizamientos de tierra y otros incidentes .	Los niveles de la inundación alcanzó un récord de 20 pies de alto en las zonas rurales .
+Event	T0	pasó	EVENT	20
+Event	T1	nombrado	EVENT	55
+Event	T2	pasar	EVENT	86
+Event	T3	avanzaba	EVENT	147
+Event	T4	movió	EVENT	222
+Event	T5	trajo	EVENT	253
+Event	T6	lluvias	EVENT	270
+Event	T7	registrados	EVENT	305
+Event	T8	registro	EVENT	337
+Event	T9	produciendo	EVENT	406
+Event	T10	declaró	EVENT	520
+Event	T11	muertas	EVENT	659
+Event	T12	deslizamientos	EVENT	670
+Event	T13	incidentes	EVENT	703
+Event	T14	alcanzó	EVENT	745
+Event	T15	récord	EVENT	756
+Relation	T1	T13	NoRel	true	nombrado	incidentes
+Relation	T10	T2	NoRel	true	declaró	pasar
+Relation	T12	T15	NoRel	true	deslizamientos	récord
+Relation	T12	T7	NoRel	true	deslizamientos	registrados
+Relation	T14	T12	NoRel	true	alcanzó	deslizamientos
+Relation	T3	T12	NoRel	true	avanzaba	deslizamientos
+Relation	T4	T13	NoRel	true	movió	incidentes
+Relation	T5	T7	NoRel	true	trajo	registrados
+Relation	T6	T14	NoRel	true	lluvias	alcanzó
+Relation	T6	T8	NoRel	true	lluvias	registro
+Relation	T8	T1	NoRel	true	registro	nombrado
+Relation	T9	T12	NoRel	true	produciendo	deslizamientos
+Relation	T9	T4	NoRel	true	produciendo	movió

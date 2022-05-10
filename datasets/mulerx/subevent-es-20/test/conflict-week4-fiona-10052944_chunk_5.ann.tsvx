@@ -1,0 +1,61 @@
+Text	La Real Audiencia de Charcas decidió relevar del mando militar a Albornoz y reemplazarlo por Antonio de Ulloa , que además reemplazaría al gobernador por un año en sus funciones civiles .	A fines de marzo de 1633 , Ulloa hizo una entrada con 270 españoles y 500 indios yanaconas a los Valles Calchaquíes , donde logró causar algunos daños y destruir sus propias cabalgaduras , por lo que se vio obligado a regresar a Salta .	Por su parte , Cabrera atacó desde La Rioja los pueblos del oeste de la sierra de Ambato , logrando someter a Saujil , Pisapanaco , Mutquín y Colpes .	El 15 de septiembre de 1633 refundó la ciudad de Londres , en Pomán , con todas las formalidades de la ley , y donde obligó a asentarse a quienes habían huido de la ciudad anterior hacia La Rioja .	Para retomar posesión del territorio , los españoles aplicaron una política de terror , colocando en los caminos de cuerpos ahorcados y mutilados , cabezas cortadas en picas y ejecuciones públicas atroces , con descuartizamientos y exhibición de miembros mutilados .
+Event	T0	relevar	EVENT	37
+Event	T1	reemplazarlo	EVENT	76
+Event	T2	reemplazaría	EVENT	123
+Event	T3	hizo	EVENT	221
+Event	T4	entrada	EVENT	230
+Event	T5	causar	EVENT	318
+Event	T6	daños	EVENT	333
+Event	T7	destruir	EVENT	341
+Event	T8	obligado	EVENT	395
+Event	T9	regresar	EVENT	406
+Event	T10	atacó	EVENT	448
+Event	T11	someter	EVENT	525
+Event	T12	refundó	EVENT	604
+Event	T13	obligó	EVENT	693
+Event	T14	asentarse	EVENT	702
+Event	T15	huido	EVENT	729
+Event	T16	aplicaron	EVENT	827
+Event	T17	terror	EVENT	853
+Event	T18	colocando	EVENT	862
+Event	T19	mutilados	EVENT	910
+Event	T20	cortadas	EVENT	930
+Event	T21	ejecuciones	EVENT	950
+Event	T22	descuartizamientos	EVENT	985
+Event	T23	exhibición	EVENT	1006
+Event	T24	mutilados	EVENT	1029
+Relation	T7	T8	SuperSub	true	destruir	obligado
+Relation	T8	T7	SubSuper	true	obligado	destruir
+Relation	T0	T11	NoRel	true	relevar	someter
+Relation	T0	T7	NoRel	true	relevar	destruir
+Relation	T0	T9	NoRel	true	relevar	regresar
+Relation	T10	T0	NoRel	true	atacó	relevar
+Relation	T10	T12	NoRel	true	atacó	refundó
+Relation	T10	T18	NoRel	true	atacó	colocando
+Relation	T11	T9	NoRel	true	someter	regresar
+Relation	T12	T10	NoRel	true	refundó	atacó
+Relation	T12	T2	NoRel	true	refundó	reemplazaría
+Relation	T13	T16	NoRel	true	obligó	aplicaron
+Relation	T13	T2	NoRel	true	obligó	reemplazaría
+Relation	T14	T10	NoRel	true	asentarse	atacó
+Relation	T15	T10	NoRel	true	huido	atacó
+Relation	T15	T20	NoRel	true	huido	cortadas
+Relation	T16	T21	NoRel	true	aplicaron	ejecuciones
+Relation	T19	T0	NoRel	true	mutilados	relevar
+Relation	T2	T3	NoRel	true	reemplazaría	hizo
+Relation	T20	T0	NoRel	true	cortadas	relevar
+Relation	T20	T13	NoRel	true	cortadas	obligó
+Relation	T20	T15	NoRel	true	cortadas	huido
+Relation	T23	T14	NoRel	true	exhibición	asentarse
+Relation	T24	T16	NoRel	true	mutilados	aplicaron
+Relation	T24	T2	NoRel	true	mutilados	reemplazaría
+Relation	T3	T14	NoRel	true	hizo	asentarse
+Relation	T3	T23	NoRel	true	hizo	exhibición
+Relation	T4	T14	NoRel	true	entrada	asentarse
+Relation	T5	T17	NoRel	true	causar	terror
+Relation	T5	T9	NoRel	true	causar	regresar
+Relation	T6	T24	NoRel	true	daños	mutilados
+Relation	T7	T21	NoRel	true	destruir	ejecuciones
+Relation	T8	T1	NoRel	true	obligado	reemplazarlo
+Relation	T8	T3	NoRel	true	obligado	hizo
+Relation	T9	T24	NoRel	true	regresar	mutilados

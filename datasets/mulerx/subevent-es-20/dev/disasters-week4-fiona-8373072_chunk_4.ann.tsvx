@@ -1,0 +1,39 @@
+Text	La mina de oro Porgera sufrió daños en su infraestructura de gas y electricidad , mientras que los deslizamientos de tierra bloquearon el camino de acceso a la mina Ok Tedi y dañaron partes de la carretera entre Tabubil y Kiunga en la provincia occidental .	Tras el terremoto principal de 7.5 , hubo más réplicas , la más grande de 7.5 que se dio el 7 de marzo de 2018 , fue la réplica más grave en una zona gravemente dañada por un primer sismo magnitud 7.5 que arrasó aldeas , generó deslizamientos de tierra y dejó al menos 75 muertos .	Categoría : Terremotos de 2018 Categoría : Terremotos en Papúa Nueva Guinea Categoría : Papúa Nueva Guinea en 2018	Segundo terremoto en Papúa Nueva Guinea deja más muertos , Excelsior , consultado el 8 de marzo de 2018 .	
+Event	T0	daños	EVENT	30
+Event	T1	deslizamientos	EVENT	99
+Event	T2	bloquearon	EVENT	124
+Event	T3	dañaron	EVENT	175
+Event	T4	réplicas	EVENT	304
+Event	T5	dio	EVENT	343
+Event	T6	réplica	EVENT	378
+Event	T7	dañada	EVENT	419
+Event	T8	arrasó	EVENT	463
+Event	T9	deslizamientos	EVENT	486
+Event	T10	dejó	EVENT	513
+Event	T11	muertos	EVENT	530
+Event	T12	Terremotos	EVENT	552
+Event	T13	Terremotos	EVENT	583
+Event	T14	terremoto	EVENT	663
+Event	T15	deja	EVENT	695
+Event	T16	muertos	EVENT	704
+Event	T17	consultado	EVENT	726
+Event	T18	terremoto	EVENT	266
+Relation	T0	T11	NoRel	true	daños	muertos
+Relation	T0	T17	NoRel	true	daños	consultado
+Relation	T10	T11	NoRel	true	dejó	muertos
+Relation	T10	T3	NoRel	true	dejó	dañaron
+Relation	T12	T2	NoRel	true	Terremotos	bloquearon
+Relation	T13	T10	NoRel	true	Terremotos	dejó
+Relation	T13	T14	NoRel	true	Terremotos	terremoto
+Relation	T14	T15	NoRel	true	terremoto	deja
+Relation	T15	T13	NoRel	true	deja	Terremotos
+Relation	T15	T3	NoRel	true	deja	dañaron
+Relation	T17	T11	NoRel	true	consultado	muertos
+Relation	T18	T13	NoRel	true	terremoto	Terremotos
+Relation	T2	T18	NoRel	true	bloquearon	terremoto
+Relation	T4	T16	NoRel	true	réplicas	muertos
+Relation	T4	T5	NoRel	true	réplicas	dio
+Relation	T5	T10	NoRel	true	dio	dejó
+Relation	T5	T9	NoRel	true	dio	deslizamientos
+Relation	T8	T13	NoRel	true	arrasó	Terremotos
+Relation	T8	T17	NoRel	true	arrasó	consultado

@@ -1,0 +1,33 @@
+Text	Den 27. december 2020 blev de første danskere vaccineret mod COVID-19 .	Det blev beboere og ansatte på nogle af landets plejehjem , der modtog de første vaccinationer , der var fra Pfizer og BioNTechs .	På det tidspunkt var antallet af smittede i Danmark 151.167 og antal af personer der var døde med COVID-19 i Danmark var 1.153 .	Den 23. juni 2020 besluttede Folketinget at få grundlaget for de beslutninger , der lå bag 11. marts 2020 nedlukningen af Danmark , undersøgt af en uvildig udredningsgruppe .	Udredningsgruppens rapport blev fremlagt for Folketinget den 29. januar 2021 .
+Event	T0	vaccineret	EVENT	46
+Event	T1	modtog	EVENT	136
+Event	T2	smittede	EVENT	236
+Event	T3	døde	EVENT	292
+Event	T4	besluttede	EVENT	350
+Event	T5	beslutninger	EVENT	397
+Event	T6	lå	EVENT	416
+Event	T7	nedlukningen	EVENT	438
+Event	T8	undersøgt	EVENT	464
+Event	T9	rapport	EVENT	526
+Event	T10	fremlagt	EVENT	539
+Event	T11	COVID-19	EVENT	61
+Event	T12	blev	EVENT	76
+Event	T13	vaccinationer	EVENT	153
+Event	T14	COVID-19	EVENT	301
+Event	T15	var	EVENT	173
+Relation	T0	T12	SuperSub	true	vaccineret	blev
+Relation	T12	T0	SubSuper	true	blev	vaccineret
+Relation	T8	T10	SuperSub	true	undersøgt	fremlagt
+Relation	T10	T8	SubSuper	true	fremlagt	undersøgt
+Relation	T0	T13	NoRel	true	vaccineret	vaccinationer
+Relation	T10	T7	NoRel	true	fremlagt	nedlukningen
+Relation	T14	T7	NoRel	true	COVID-19	nedlukningen
+Relation	T15	T13	NoRel	true	var	vaccinationer
+Relation	T15	T3	NoRel	true	var	døde
+Relation	T15	T5	NoRel	true	var	beslutninger
+Relation	T2	T1	NoRel	true	smittede	modtog
+Relation	T2	T4	NoRel	true	smittede	besluttede
+Relation	T4	T0	NoRel	true	besluttede	vaccineret
+Relation	T7	T13	NoRel	true	nedlukningen	vaccinationer
+Relation	T9	T10	NoRel	true	rapport	fremlagt
+Relation	T9	T14	NoRel	true	rapport	COVID-19

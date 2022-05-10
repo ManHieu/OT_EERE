@@ -1,0 +1,24 @@
+Text	Havadaki bu parçacıkların varlığı ve zayıf görüş , La Palma ve La Gomera adalarının havalimanlarındaki tüm ticari operasyonların askıya alınmasına yol açtı .	İspanya Başbakanı Pedro Sánchez , patlamadan kısa bir süre sonra La Palma'daki durumu , sistemin koordinasyonunu ve devreye giren protokolleri ilk elden görmek için takımadalara gitti ve Birleşmiş Milletler Genel Kurulu oturumuna katılımını erteledi .	Pedro Sánchez 24 Eylül'de , bir sonraki bakanlar kurulu toplantısında , adanın afet bölgesi ilan edileceğini , hükümetin evleri yıkılan ailelere , bir yeniden yapılanma planı ve barınma sağlamak için bir dizi acil önlem hazırladığını duyurdu .	Kral Felipe VI , patlamanın olduğu gün öğleden sonra Kanarya Adaları başkanı Ángel Víctor Torres'i durum hakkında bilgi almak için aradı .	Kral Felipe , ertesi gün Córdoba'da üniversite yılı açılış töreninde , " evlerini boşaltanlara " destek mesajı göndererek acil servislere çalışmalarından dolayı teşekkür etti .
+Event	T0	görüş	EVENT	43
+Event	T1	açtı	EVENT	151
+Event	T2	patlamadan	EVENT	192
+Event	T3	gitti	EVENT	336
+Event	T4	erteledi	EVENT	399
+Event	T5	afet	EVENT	489
+Event	T7	yıkılan	EVENT	538
+Event	T8	duyurdu	EVENT	644
+Event	T9	patlamanın	EVENT	671
+Event	T10	aradı	EVENT	785
+Event	T11	etti	EVENT	963
+Event	T12	varlığı	EVENT	26
+Event	T6	planı	EVENT	579
+Event	T13	göndererek	EVENT	904
+Relation	T9	T13	SuperSub	true	patlamanın	göndererek
+Relation	T13	T9	SubSuper	true	göndererek	patlamanın
+Relation	T12	T9	NoRel	true	varlığı	patlamanın
+Relation	T13	T7	NoRel	true	göndererek	yıkılan
+Relation	T2	T0	NoRel	true	patlamadan	görüş
+Relation	T2	T10	NoRel	true	patlamadan	aradı
+Relation	T2	T7	NoRel	true	patlamadan	yıkılan
+Relation	T3	T13	NoRel	true	gitti	göndererek
+Relation	T8	T10	NoRel	true	duyurdu	aradı

@@ -1,0 +1,18 @@
+Text	Yanardağdan çıkarak ilerlemeyi sürdüren lavları soğutmak için bir işbirliği başlatılmış ve deniz suyu akmakta olan lavlar üzerine pompalanmıştır .	Uygulamaya konan bu plan başarıya ulaşmış ve kasabanın limanının yitirilmesinin önüne geçilmiştir .	Püskürmelerin bitiminin sonrasında adalılar yavaş yavaş soğumakta olan lavlardan , sıcak su sağlamak ve elektrik enerjisi üretmek için yararlanmışlardır .	Ayrıca volkandan yayılan püskürüklerin bir bölümü adanın küçük havaalanının uçak pistini genişletmek için bir bölümüyse üzerinde 200 yeni ev inşa edilecek bir alan yaratmak için kullanmıştır .	İzlanda , Orta Atlantik yükselimi üzerinde , Kuzey Amerika ve Avrasya levhalarının birbirinden ayrılma yönünde hareket ettiği bir bölgede bulunmasından dolayı sık sık volkanik hareketlenmelerin yaşandığı bir yerdir .
+Event	T0	başlatılmış	EVENT	76
+Event	T1	pompalanmıştır	EVENT	130
+Event	T2	ulaşmış	EVENT	181
+Event	T4	soğumakta	EVENT	303
+Event	T5	püskürüklerin	EVENT	427
+Event	T6	kullanmıştır	EVENT	580
+Event	T7	yaşandığı	EVENT	789
+Event	T3	geçilmiştir	EVENT	233
+Event	T8	yararlanmışlardır	EVENT	382
+Event	T9	ettiği	EVENT	714
+Relation	T3	T2	NoRel	true	geçilmiştir	ulaşmış
+Relation	T4	T1	NoRel	true	soğumakta	pompalanmıştır
+Relation	T6	T2	NoRel	true	kullanmıştır	ulaşmış
+Relation	T6	T9	NoRel	true	kullanmıştır	ettiği
+Relation	T7	T6	NoRel	true	yaşandığı	kullanmıştır
+Relation	T8	T2	NoRel	true	yararlanmışlardır	ulaşmış
+Relation	T9	T4	NoRel	true	ettiği	soğumakta

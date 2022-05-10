@@ -1,0 +1,13 @@
+Text	Bu etkiyi hayvan deneklerde ortaya koyan deneyler bulunmaktadır .	Yine başka deneyler görsel aramanın hız ve kesinliğini etkileyen uyaran faktörlerinin doğasını keşfetmiştir .	Örneğin , tek bir hedefi bulmak için gereken süre , görsel alandaki şeylerin sayısıyla yükselmektedir .	Tepki süresindeki bu artış eğer dikkat dağıtıcılar hedefe benzerse daha keskinleşirken , farklıysa daha hafif seyretmektedir .	Eğer dikkat dağıtıcılar hedeften biçim ve renk olarak çok farklıysa süre artışı hiç görülmeyebilir .
+Event	T0	deneyler	EVENT	41
+Event	T1	keşfetmiştir	EVENT	161
+Event	T2	yükselmektedir	EVENT	263
+Event	T3	artış	EVENT	301
+Event	T4	seyretmektedir	EVENT	390
+Event	T5	artışı	EVENT	480
+Event	T6	deneyler	EVENT	77
+Event	T7	aramanın	EVENT	93
+Event	T8	etkileyen	EVENT	121
+Event	T9	keskinleşirken	EVENT	352
+Relation	T4	T5	NoRel	true	seyretmektedir	artışı
+Relation	T6	T1	NoRel	true	deneyler	keşfetmiştir

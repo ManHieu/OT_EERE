@@ -1,0 +1,35 @@
+Text	عینی شاہدین کے مطابق جہاز گرنے سے پہلے غالباً اس پر بجلی گری جس سے فضاء میں ایک آگ کا گولا نظر آیا ۔	جہاز پر سوار تمام 12 افراد ہلاک ہو گئے ۔	ابتدائی تحقیقات کے مطابق پائلٹ نے شدید بارش اور طوفان میں جہاز اتارنے کی کوشش کی اور ہوا کے شدید تناؤ کی وجہ سے جہاز زمین پر آگرا ۔	اس حادثہ کے پانچ منٹ بعد ائیر بلو کی پرواز نے اسلام آباد کے ائیر پورٹ پر کامیاب لینڈنگ کری ۔	حادثہ کے باعث اسلام آباد کا ائیر پورٹ آگ بجھانے کے انتظامات کی کمی کیوجہ سے عارزی طور پر بند کر دیا گیا ۔
+Event	T0	گرنے	EVENT	26
+Event	T1	گری	EVENT	57
+Event	T2	آیا	EVENT	95
+Event	T3	ہلاک	EVENT	128
+Event	T4	گئے	EVENT	136
+Event	T5	تحقیقات	EVENT	150
+Event	T6	بارش	EVENT	181
+Event	T7	طوفان	EVENT	190
+Event	T8	اتارنے	EVENT	205
+Event	T9	تناؤ	EVENT	239
+Event	T10	آگرا	EVENT	267
+Event	T11	حادثہ	EVENT	277
+Event	T12	پرواز	EVENT	311
+Event	T13	کری	EVENT	361
+Event	T14	حادثہ	EVENT	367
+Event	T15	بجھانے	EVENT	408
+Event	T16	انتظامات	EVENT	418
+Event	T17	کمی	EVENT	430
+Event	T18	بند	EVENT	456
+Relation	T10	T0	NoRel	true	آگرا	گرنے
+Relation	T12	T4	NoRel	true	پرواز	گئے
+Relation	T14	T10	NoRel	true	حادثہ	آگرا
+Relation	T15	T0	NoRel	true	بجھانے	گرنے
+Relation	T15	T6	NoRel	true	بجھانے	بارش
+Relation	T15	T9	NoRel	true	بجھانے	تناؤ
+Relation	T16	T7	NoRel	true	انتظامات	طوفان
+Relation	T18	T14	NoRel	true	بند	حادثہ
+Relation	T18	T5	NoRel	true	بند	تحقیقات
+Relation	T4	T15	NoRel	true	گئے	بجھانے
+Relation	T5	T14	NoRel	true	تحقیقات	حادثہ
+Relation	T5	T6	NoRel	true	تحقیقات	بارش
+Relation	T7	T13	NoRel	true	طوفان	کری
+Relation	T7	T9	NoRel	true	طوفان	تناؤ
+Relation	T8	T17	NoRel	true	اتارنے	کمی

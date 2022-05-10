@@ -1,0 +1,36 @@
+Text	AVRUPA’NIN MOĞOLLAR TARAFINDAN ISTILASI , 13._yüzyılda Moğol İmparatorluğu'na bağlı Subutay komutasındaki orduların Doğu Avrupa’dan başlayarak gerçekleştirdiği seferlerin tamamıdır .	Kiev Knezliği'ne karşı başlayan ilk seferlerin ardından Mohi Muharebesi ile Macaristan Krallığı ve Legnica Muharebesi ile Lehistan Krallığı ( Polonya ) işgal edilir .	Seferlerde ordu komutanları Cengiz Han’ın torunları Batu ile Kadan olsa da Sübedey’in genel komutası belirleyici olmuştur .	Moğol istilalarına bakıldığında Avrupa’nın istilası Orta Doğu ve Çin seferlerinden sonra en büyük seferlerden sayılır .	1235 yılında Moğol İmparatorluğunun Büyük Hanı Ögeday , Batu’dan Rus topraklarını fethetmesini istemiştir .
+Event	T3	ISTILASI	EVENT	31
+Event	T4	seferlerin	EVENT	160
+Event	T5	seferlerin	EVENT	219
+Event	T1	Mohi Muharebesi	EVENT	239
+Event	T6	Legnica Muharebesi	EVENT	282
+Event	T7	işgal	EVENT	335
+Event	T2	Seferlerde	EVENT	350
+Event	T8	istilalarına	EVENT	480
+Event	T9	istilası	EVENT	517
+Event	T10	seferlerden	EVENT	572
+Event	T11	istemiştir	EVENT	689
+Relation	T5	T1	SuperSub	true	seferlerin	Mohi Muharebesi
+Relation	T1	T5	SubSuper	true	Mohi Muharebesi	seferlerin
+Relation	T5	T6	SuperSub	true	seferlerin	Legnica Muharebesi
+Relation	T6	T5	SubSuper	true	Legnica Muharebesi	seferlerin
+Relation	T5	T7	SuperSub	true	seferlerin	işgal
+Relation	T7	T5	SubSuper	true	işgal	seferlerin
+Relation	T4	T1	SuperSub	true	seferlerin	Mohi Muharebesi
+Relation	T1	T4	SubSuper	true	Mohi Muharebesi	seferlerin
+Relation	T4	T6	SuperSub	true	seferlerin	Legnica Muharebesi
+Relation	T6	T4	SubSuper	true	Legnica Muharebesi	seferlerin
+Relation	T4	T7	SuperSub	true	seferlerin	işgal
+Relation	T7	T4	SubSuper	true	işgal	seferlerin
+Relation	T2	T6	SuperSub	true	Seferlerde	Legnica Muharebesi
+Relation	T6	T2	SubSuper	true	Legnica Muharebesi	Seferlerde
+Relation	T2	T1	SuperSub	true	Seferlerde	Mohi Muharebesi
+Relation	T1	T2	SubSuper	true	Mohi Muharebesi	Seferlerde
+Relation	T2	T7	SuperSub	true	Seferlerde	işgal
+Relation	T7	T2	SubSuper	true	işgal	Seferlerde
+Relation	T1	T9	NoRel	true	Mohi Muharebesi	istilası
+Relation	T11	T7	NoRel	true	istemiştir	işgal
+Relation	T3	T1	NoRel	true	ISTILASI	Mohi Muharebesi
+Relation	T3	T10	NoRel	true	ISTILASI	seferlerden
+Relation	T9	T11	NoRel	true	istilası	istemiştir
+Relation	T9	T3	NoRel	true	istilası	ISTILASI

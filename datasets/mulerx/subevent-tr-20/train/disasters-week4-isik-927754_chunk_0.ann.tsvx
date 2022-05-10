@@ -1,0 +1,14 @@
+Text	1989 LOMA PRIETA DEPREMI ya da bilinen diğer adıyla 89 SARSINTISI , 17 Ekim 1989'da Amerika Birleşik Devletleri'nin Kaliforniya Eyaleti San Francisco Körfez Bölgesi'ni yerel saate göre 17: 04'te vuran depremdir .	Depremin sebebi San Andreas Fay Hattı'dır .	Deprem 15 saniye sürerken Moment magnitüd ölçeği'ne göre şiddeti 6,9 olmuştur .	Deprem nedeniyle 63 kişi hayatını kaybetmiş ve 3.757 kişi yaralanmıştır .	Deprem sonucunda yaklaşık 12.000 insan evsiz kalmıştır .
+Event	T0	DEPREMI	EVENT	17
+Event	T1	depremdir	EVENT	201
+Event	T2	Deprem	EVENT	257
+Event	T3	Deprem	EVENT	337
+Event	T4	kaybetmiş	EVENT	371
+Event	T5	yaralanmıştır	EVENT	395
+Event	T6	Deprem	EVENT	411
+Event	T7	kalmıştır	EVENT	456
+Event	T8	SARSINTISI	EVENT	55
+Event	T9	Hattı'dır	EVENT	245
+Relation	T2	T9	NoRel	true	Deprem	Hattı'dır
+Relation	T4	T2	NoRel	true	kaybetmiş	Deprem
+Relation	T9	T0	NoRel	true	Hattı'dır	DEPREMI

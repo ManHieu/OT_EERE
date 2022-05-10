@@ -1,0 +1,26 @@
+Text	Det blev antaget at lokomotivføreren havde iagttaget udkørselssignalet skifte først fra rødt til et grønt lys og derefter til to grønne lys i forbindelse gennemkørselssignalgivningen for " Englænderen " , men at han ikke havde iagttaget PU-signalet i spor 2 , der med to hvide lys ved siden af hinanden havde vist signal " forbikørsel forbudt " .	Ulykken og undersøgelsesresultatet var stærkt medvirkende til , at DSB indførte krav om , at anvende rødt lys i PU-signaler når disse skulle sikre mod at tog fejlagtigt satte i gang som følge af signalgivning i samme retning for tog i nabospor .	Ved ulykken blev fem personer kvæstet , heraf en alvorligt .	To af personvognene i " Englænderen " væltede om på siden og seks vogne i godstoget blev afsporet .	
+Event	T1	iagttaget	EVENT	43
+Event	T10	ulykken	EVENT	597
+Event	T11	kvæstet	EVENT	623
+Event	T12	afsporet	EVENT	743
+Event	T2	skifte	EVENT	71
+Event	T4	forbudt	EVENT	335
+Event	T5	Ulykken	EVENT	347
+Event	T6	undersøgelsesresultatet	EVENT	358
+Event	T7	krav	EVENT	427
+Event	T8	anvende	EVENT	440
+Event	T9	signalgivning	EVENT	542
+Relation	T2	T1	SuperSub	true	skifte	iagttaget
+Relation	T1	T2	SubSuper	true	iagttaget	skifte
+Relation	T7	T8	SuperSub	true	krav	anvende
+Relation	T8	T7	SubSuper	true	anvende	krav
+Relation	T5	T6	SuperSub	true	Ulykken	undersøgelsesresultatet
+Relation	T6	T5	SubSuper	true	undersøgelsesresultatet	Ulykken
+Relation	T10	T11	NoRel	true	ulykken	kvæstet
+Relation	T11	T6	NoRel	true	kvæstet	undersøgelsesresultatet
+Relation	T11	T8	NoRel	true	kvæstet	anvende
+Relation	T12	T2	NoRel	true	afsporet	skifte
+Relation	T12	T9	NoRel	true	afsporet	signalgivning
+Relation	T2	T12	NoRel	true	skifte	afsporet
+Relation	T4	T9	NoRel	true	forbudt	signalgivning
+Relation	T7	T9	NoRel	true	krav	signalgivning

@@ -1,0 +1,34 @@
+Text	Militærpolitiets tropper blev i marts 1945 rykket østpå til fronten .	Helt frem til april 1945 gav gauleiter Martin Mutschmann devisen ” byen skal forsvares med alle midler og til sidste mand ” og et opråb til byen : ” fjenden truer vores hjemstavn – kæmp til det sidste ” .	Truslen om luftangreb var ikke borgerne i Dresden fremmed , da nabobyen Leipzig ( 120 km væk ) blev bombarderet kraftigt i foråret 1943 .	Ifølge lokalhistorikeren Neutzner havde borgerne i Dresden levet i angst , som var integreret i hverdagen i krigsårene .	Denne angst og frygt er dokumenteret i dagbøger og breve .
+Event	T0	rykket	EVENT	43
+Event	T1	opråb	EVENT	200
+Event	T2	truer	EVENT	227
+Event	T3	Truslen	EVENT	275
+Event	T4	luftangreb	EVENT	286
+Event	T5	bombarderet	EVENT	375
+Event	T6	levet	EVENT	472
+Event	T7	angst	EVENT	480
+Event	T8	integreret	EVENT	496
+Event	T9	angst	EVENT	540
+Event	T10	dokumenteret	EVENT	558
+Event	T11	forsvares	EVENT	147
+Event	T12	gav	EVENT	95
+Event	T13	kæmp	EVENT	251
+Event	T14	fremmed	EVENT	325
+Event	T15	frygt	EVENT	549
+Relation	T9	T10	SuperSub	true	angst	dokumenteret
+Relation	T10	T9	SubSuper	true	dokumenteret	angst
+Relation	T15	T10	SuperSub	true	frygt	dokumenteret
+Relation	T10	T15	SubSuper	true	dokumenteret	frygt
+Relation	T7	T10	SuperSub	true	angst	dokumenteret
+Relation	T10	T7	SubSuper	true	dokumenteret	angst
+Relation	T10	T14	NoRel	true	dokumenteret	fremmed
+Relation	T11	T5	NoRel	true	forsvares	bombarderet
+Relation	T13	T15	NoRel	true	kæmp	frygt
+Relation	T14	T8	NoRel	true	fremmed	integreret
+Relation	T15	T11	NoRel	true	frygt	forsvares
+Relation	T15	T5	NoRel	true	frygt	bombarderet
+Relation	T3	T9	NoRel	true	Truslen	angst
+Relation	T5	T14	NoRel	true	bombarderet	fremmed
+Relation	T5	T4	NoRel	true	bombarderet	luftangreb
+Relation	T8	T1	NoRel	true	integreret	opråb
+Relation	T9	T3	NoRel	true	angst	Truslen

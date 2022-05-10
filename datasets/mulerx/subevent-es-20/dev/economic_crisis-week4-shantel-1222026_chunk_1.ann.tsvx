@@ -1,0 +1,41 @@
+Text	La serie originalmente se centró casi exclusivamente en los detectives de la Unidad de víctimas especiales en una versión ficticia del distrito 16 del Departamento de Policía de la ciudad de Nueva York .	A medida que avanzaba la serie , se añadieron personajes secundarios adicionales como aliados de los detectives en la Fiscalía del Distrito de Manhattan del Condado de Nueva York ( conocidos como asesores del Buró de delitos sexuales ) y la oficina del médico forense .	Ciertos episodios entrarán en detalles sobre la vida personal de los detectives y cómo pueden o no vincularse con los crímenes tratados durante el programa .	Episodios típicos siguen a los detectives y sus colegas mientras investigan y procesan delitos de base sexual , abuso infantil y crímenes contra los ancianos .	El show fue originalmente protagonizado por Mariska Hargitay como la Detective Olivia Benson y Christopher Meloni como el Detective Elliot Stabler , durante sus primeras doce temporadas , hasta que este último abandonó la serie , sin poder llegar a un acuerdo sobre su contrato .
+Event	T0	serie	EVENT	3
+Event	T1	centró	EVENT	26
+Event	T2	avanzaba	EVENT	217
+Event	T3	serie	EVENT	229
+Event	T4	añadieron	EVENT	240
+Event	T5	tratados	EVENT	601
+Event	T6	Episodios	EVENT	632
+Event	T7	siguen	EVENT	650
+Event	T8	investigan	EVENT	697
+Event	T9	delitos	EVENT	719
+Event	T10	abuso	EVENT	744
+Event	T11	crímenes	EVENT	761
+Event	T12	show	EVENT	795
+Event	T13	protagonizado	EVENT	818
+Event	T14	abandonó	EVENT	1002
+Event	T15	serie	EVENT	1014
+Event	T16	llegar	EVENT	1032
+Event	T17	acuerdo	EVENT	1044
+Relation	T0	T4	SuperSub	true	serie	añadieron
+Relation	T4	T0	SubSuper	true	añadieron	serie
+Relation	T12	T13	SuperSub	true	show	protagonizado
+Relation	T13	T12	SubSuper	true	protagonizado	show
+Relation	T0	T12	NoRel	true	serie	show
+Relation	T0	T17	NoRel	true	serie	acuerdo
+Relation	T1	T10	NoRel	true	centró	abuso
+Relation	T10	T13	NoRel	true	abuso	protagonizado
+Relation	T14	T16	NoRel	true	abandonó	llegar
+Relation	T14	T5	NoRel	true	abandonó	tratados
+Relation	T14	T7	NoRel	true	abandonó	siguen
+Relation	T16	T9	NoRel	true	llegar	delitos
+Relation	T17	T10	NoRel	true	acuerdo	abuso
+Relation	T17	T14	NoRel	true	acuerdo	abandonó
+Relation	T17	T15	NoRel	true	acuerdo	serie
+Relation	T17	T3	NoRel	true	acuerdo	serie
+Relation	T3	T15	NoRel	true	serie	serie
+Relation	T6	T17	NoRel	true	Episodios	acuerdo
+Relation	T6	T7	NoRel	true	Episodios	siguen
+Relation	T7	T2	NoRel	true	siguen	avanzaba
+Relation	T8	T2	NoRel	true	investigan	avanzaba
+Relation	T9	T0	NoRel	true	delitos	serie

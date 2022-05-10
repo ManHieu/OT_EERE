@@ -1,0 +1,33 @@
+Text	Dropping the façade , Wendy reveals that she had been to the lake before , where the murderer slaughtered all of her friends , leaving her as the only survivor .	She notes that the police did not believe her when she said that the killer could be in two places at once .	Wendy then tells Joey that she lured all three of them to the woods to use as bait , so that she can find and kill the Glitch .	As the two talk , the Glitch walks up behind Joey and slits his throat .	Wendy runs away , luring the Glitch into a pit trap , then into a bear trap , which traps it momentarily .
+Event	T0	Dropping	EVENT	0
+Event	T1	reveals	EVENT	28
+Event	T10	find	EVENT	372
+Event	T11	kill	EVENT	381
+Event	T12	talk	EVENT	410
+Event	T13	slits	EVENT	453
+Event	T14	luring	EVENT	490
+Event	T15	traps	EVENT	556
+Event	T18	runs away	EVENT	478
+Event	T2	slaughtered	EVENT	94
+Event	T3	leaving	EVENT	127
+Event	T4	notes	EVENT	166
+Event	T5	believe	EVENT	196
+Event	T6	said	EVENT	217
+Event	T7	tells	EVENT	282
+Event	T8	lured	EVENT	302
+Event	T9	use	EVENT	342
+Relation	T2	T3	SuperSub	true	slaughtered	leaving
+Relation	T3	T2	SubSuper	true	leaving	slaughtered
+Relation	T9	T10	SuperSub	true	use	find
+Relation	T10	T9	SubSuper	true	find	use
+Relation	T10	T11	SuperSub	true	find	kill
+Relation	T11	T10	SubSuper	true	kill	find
+Relation	T12	T13	SuperSub	true	talk	slits
+Relation	T13	T12	SubSuper	true	slits	talk
+Relation	T18	T14	SuperSub	true	runs away	luring
+Relation	T14	T18	SubSuper	true	luring	runs away
+Relation	T3	T15	NoRel	true	leaving	traps
+Relation	T3	T5	NoRel	true	leaving	believe
+Relation	T6	T10	NoRel	true	said	find
+Relation	T6	T4	NoRel	true	said	notes
+Relation	T8	T2	NoRel	true	lured	slaughtered

@@ -1,0 +1,71 @@
+Text	Mei Liang , una experta de la Administración de Aviación Civil de China ( CAAC en inglés ) , dijo el 2 de junio , que más de 400 tripulantes de 32 vuelos habían sido puestos en cuarentena hasta el 31 de mayo desde que se inició el brote de la gripe A ( H1N1 ) a fines de abril .	El 12 de junio , China anunció que redoblaría su vigilancia en las fronteras para frenar la extensión de la pandemia en su territorio .	" Siguiendo las recomendaciones de la Organización Mundial de la Salud ( OMS ) , vamos a ajustar los niveles de control , con mayores medidas preventivas en las fronteras " , dijo el portavoz del Ministerio de Sanidad chino , Mao Qun’an , luego de que la OMS declara el 11 de junio pandemia mudnial .	El 1 de mayo , llega el virus por primera vez a Hong Kong , convirtiéndose en el primer caso reportado en el continente asiático .	El primer caso se trató pasajero mexicano , procedente de Shanghái en el vuelo 505 de China Eastern , por lo que él se declaró estado de emergencia sanitaria después de que la Universidad de Hong Kong confirmara el caso de influenza AH1N1 .
+Event	T0	dijo	EVENT	93
+Event	T1	inició	EVENT	221
+Event	T2	brote	EVENT	231
+Event	T3	gripe	EVENT	243
+Event	T4	anunció	EVENT	302
+Event	T5	redoblaría	EVENT	314
+Event	T6	vigilancia	EVENT	328
+Event	T7	frenar	EVENT	361
+Event	T8	extensión	EVENT	371
+Event	T9	pandemia	EVENT	387
+Event	T10	control	EVENT	527
+Event	T11	dijo	EVENT	590
+Event	T12	declara	EVENT	674
+Event	T13	llega	EVENT	731
+Event	T14	virus	EVENT	740
+Event	T15	convirtiéndose	EVENT	776
+Event	T16	reportado	EVENT	809
+Event	T17	caso	EVENT	857
+Event	T18	trató	EVENT	865
+Event	T19	vuelo	EVENT	920
+Event	T20	confirmara	EVENT	1048
+Event	T21	caso	EVENT	1062
+Event	T22	influenza	EVENT	1070
+Event	T23	cuarentena	EVENT	177
+Event	T24	vuelos	EVENT	147
+Relation	T24	T23	SuperSub	true	vuelos	cuarentena
+Relation	T23	T24	SubSuper	true	cuarentena	vuelos
+Relation	T3	T6	SuperSub	true	gripe	vigilancia
+Relation	T6	T3	SubSuper	true	vigilancia	gripe
+Relation	T3	T10	SuperSub	true	gripe	control
+Relation	T10	T3	SubSuper	true	control	gripe
+Relation	T1	T24	NoRel	true	inició	vuelos
+Relation	T1	T9	NoRel	true	inició	pandemia
+Relation	T10	T15	NoRel	true	control	convirtiéndose
+Relation	T10	T8	NoRel	true	control	extensión
+Relation	T11	T14	NoRel	true	dijo	virus
+Relation	T11	T16	NoRel	true	dijo	reportado
+Relation	T13	T23	NoRel	true	llega	cuarentena
+Relation	T14	T21	NoRel	true	virus	caso
+Relation	T15	T12	NoRel	true	convirtiéndose	declara
+Relation	T15	T24	NoRel	true	convirtiéndose	vuelos
+Relation	T15	T5	NoRel	true	convirtiéndose	redoblaría
+Relation	T16	T18	NoRel	true	reportado	trató
+Relation	T16	T6	NoRel	true	reportado	vigilancia
+Relation	T17	T10	NoRel	true	caso	control
+Relation	T17	T24	NoRel	true	caso	vuelos
+Relation	T17	T4	NoRel	true	caso	anunció
+Relation	T18	T3	NoRel	true	trató	gripe
+Relation	T18	T6	NoRel	true	trató	vigilancia
+Relation	T19	T13	NoRel	true	vuelo	llega
+Relation	T2	T4	NoRel	true	brote	anunció
+Relation	T20	T3	NoRel	true	confirmara	gripe
+Relation	T21	T19	NoRel	true	caso	vuelo
+Relation	T21	T9	NoRel	true	caso	pandemia
+Relation	T24	T3	NoRel	true	vuelos	gripe
+Relation	T24	T4	NoRel	true	vuelos	anunció
+Relation	T3	T14	NoRel	true	gripe	virus
+Relation	T3	T2	NoRel	true	gripe	brote
+Relation	T3	T9	NoRel	true	gripe	pandemia
+Relation	T4	T10	NoRel	true	anunció	control
+Relation	T4	T7	NoRel	true	anunció	frenar
+Relation	T4	T8	NoRel	true	anunció	extensión
+Relation	T5	T12	NoRel	true	redoblaría	declara
+Relation	T5	T22	NoRel	true	redoblaría	influenza
+Relation	T6	T1	NoRel	true	vigilancia	inició
+Relation	T7	T0	NoRel	true	frenar	dijo
+Relation	T7	T10	NoRel	true	frenar	control
+Relation	T7	T23	NoRel	true	frenar	cuarentena
+Relation	T8	T12	NoRel	true	extensión	declara
+Relation	T8	T24	NoRel	true	extensión	vuelos

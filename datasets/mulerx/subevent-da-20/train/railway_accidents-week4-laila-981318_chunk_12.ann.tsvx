@@ -1,0 +1,31 @@
+Text	I oktober 2019 blev den nu tidligere medarbejder idømt 20 dages betinget fængsel for at forvanske beviser i forbindelse med efterforskningen af ulykken .	Medarbejderen , der var tillidsmand for stationsbetjentene på terminalen i Høje Taastrup , valgte at slette et navn og en dato fra et dokument , som ledelsen havde bedt om at få udleveret umiddelbart efter ulykken .	De otte dræbte var fem kvinder og tre mænd , alle voksne .	Alle var danske statsborgere , og ingen var i familie med hinanden .	Af de 16 tilskadekomne blev 14 let såret og to moderat såret .
+Event	T0	idømt	EVENT	49
+Event	T1	efterforskningen	EVENT	124
+Event	T2	ulykken	EVENT	144
+Event	T3	valgte	EVENT	245
+Event	T4	slette	EVENT	255
+Event	T5	bedt	EVENT	318
+Event	T6	udleveret	EVENT	332
+Event	T7	ulykken	EVENT	360
+Event	T8	dræbte	EVENT	378
+Event	T9	såret	EVENT	533
+Event	T10	såret	EVENT	553
+Event	T11	fængsel	EVENT	73
+Event	T12	forvanske	EVENT	88
+Event	T13	tillidsmand	EVENT	178
+Event	T14	var	EVENT	434
+Event	T15	tilskadekomne	EVENT	507
+Relation	T15	T9	SuperSub	true	tilskadekomne	såret
+Relation	T9	T15	SubSuper	true	såret	tilskadekomne
+Relation	T15	T10	SuperSub	true	tilskadekomne	såret
+Relation	T10	T15	SubSuper	true	såret	tilskadekomne
+Relation	T1	T3	NoRel	true	efterforskningen	valgte
+Relation	T10	T12	NoRel	true	såret	forvanske
+Relation	T14	T2	NoRel	true	var	ulykken
+Relation	T15	T4	NoRel	true	tilskadekomne	slette
+Relation	T2	T0	NoRel	true	ulykken	idømt
+Relation	T2	T1	NoRel	true	ulykken	efterforskningen
+Relation	T3	T0	NoRel	true	valgte	idømt
+Relation	T6	T15	NoRel	true	udleveret	tilskadekomne
+Relation	T6	T9	NoRel	true	udleveret	såret
+Relation	T8	T0	NoRel	true	dræbte	idømt

@@ -1,0 +1,35 @@
+Text	I dagene umiddelbart efter angrebene blev der opsat mindesmærker og vist global medfølelse .	Desuden blev der opsat billeder af de mange forsvundne og savnede på Ground Zero .	Et vidne har beskrevet , at han var ude af stand til at " komme væk fra ansigterne af de uskyldige ofre , som blev dræbt .	Deres billeder er at se overalt , på telefonbokse , gadebelysningen , og på væggene i metrostationerne .	Alt mindede om en enorm begravelse , folk stod stille og triste .
+Event	T1	vist	EVENT	68
+Event	T2	opsat	EVENT	110
+Event	T3	forsvundne	EVENT	137
+Event	T4	savnede	EVENT	151
+Event	T5	beskrevet	EVENT	189
+Event	T6	dræbt	EVENT	291
+Event	T7	se	EVENT	320
+Event	T8	mindede	EVENT	408
+Event	T9	begravelse	EVENT	428
+Event	T10	angrebene	EVENT	27
+Event	T11	mindesmærker	EVENT	52
+Relation	T10	T11	SuperSub	true	angrebene	mindesmærker
+Relation	T11	T10	SubSuper	true	mindesmærker	angrebene
+Relation	T10	T1	SuperSub	true	angrebene	vist
+Relation	T1	T10	SubSuper	true	vist	angrebene
+Relation	T10	T2	SuperSub	true	angrebene	opsat
+Relation	T2	T10	SubSuper	true	opsat	angrebene
+Relation	T2	T5	SuperSub	true	opsat	beskrevet
+Relation	T5	T2	SubSuper	true	beskrevet	opsat
+Relation	T10	T6	SuperSub	true	angrebene	dræbt
+Relation	T6	T10	SubSuper	true	dræbt	angrebene
+Relation	T2	T7	SuperSub	true	opsat	se
+Relation	T7	T2	SubSuper	true	se	opsat
+Relation	T7	T8	SuperSub	true	se	mindede
+Relation	T8	T7	SubSuper	true	mindede	se
+Relation	T10	T3	NoRel	true	angrebene	forsvundne
+Relation	T10	T7	NoRel	true	angrebene	se
+Relation	T11	T7	NoRel	true	mindesmærker	se
+Relation	T4	T3	NoRel	true	savnede	forsvundne
+Relation	T7	T1	NoRel	true	se	vist
+Relation	T7	T11	NoRel	true	se	mindesmærker
+Relation	T7	T5	NoRel	true	se	beskrevet
+Relation	T8	T11	NoRel	true	mindede	mindesmærker
+Relation	T9	T8	NoRel	true	begravelse	mindede

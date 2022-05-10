@@ -1,0 +1,12 @@
+Text	Fransa Kralı IX. Louis kardeşinin kışkırtmalarıyla son Haçlı Seferine çıktı .	O sırada Tunus'tan kalkan Arap korsanları doğuya giden Hristiyan gemilerine zarar veriyordu .	Bu yüzden Tunus'a sefer düzenleyen IX. Louis ve ordusunun yarısı veba salgını nedeniyle öldü .	Sonradan İngiltere Kralı olacak olan Prens Edward ve Fransa Kralı IX. Louis Tunus'a karşı Sekizinci Haçlı seferine girişmiş ve bu sefer salgın sebebiyle sonuçsuz kalmıştır .	IX. Louis Kendi komutanlığı altında Haçlı Seferi yapmaya yemin etmişti .
+Event	T0	çıktı	EVENT	70
+Event	T1	veriyordu	EVENT	160
+Event	T2	düzenleyen	EVENT	196
+Event	T3	salgını	EVENT	242
+Event	T4	öldü	EVENT	260
+Event	T5	girişmiş	EVENT	382
+Event	T6	salgın	EVENT	403
+Event	T7	etmişti	EVENT	504
+Relation	T0	T2	NoRel	true	çıktı	düzenleyen
+Relation	T2	T1	NoRel	true	düzenleyen	veriyordu
+Relation	T4	T2	NoRel	true	öldü	düzenleyen

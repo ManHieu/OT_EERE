@@ -1,0 +1,17 @@
+Text	یہ وائرل بیماریاں اتنی تیزی سے پھیل گئیں کیونکہ وہ " ناول " یا " جدید " ہیں ۔	لوگوں کے مدافعتی نظام نے انہیں پہلے نہیں دیکھا تھا اور انہیں ان سے بہت کم استثنیٰ حاصل ہے ۔	ان بیماریوں کے پھیلاؤ میں مشتبہ مجرموں میں سے ایک چمگادڑ ہے ۔	اس کے علاوہ اس وائرس کے تیزی سے پھیلنے کی صلاحیت اور اس کا ہوا میں چھا جانا ایک نیا چیلنج دنیا کے آگے پیش کرتا ہے ۔	
+Event	T0	بیماریاں	EVENT	9
+Event	T1	دیکھا	EVENT	119
+Event	T2	پھیلاؤ	EVENT	185
+Event	T3	پھیلنے	EVENT	264
+Event	T4	جانا	EVENT	303
+Event	T5	پھیل	EVENT	31
+Event	T6	حاصل	EVENT	160
+Event	T7	پیش	EVENT	334
+Event	T8	دنیا	EVENT	322
+Relation	T8	T3	SuperSub	true	دنیا	پھیلنے
+Relation	T3	T8	SubSuper	true	پھیلنے	دنیا
+Relation	T8	T4	SuperSub	true	دنیا	جانا
+Relation	T4	T8	SubSuper	true	جانا	دنیا
+Relation	T6	T4	NoRel	true	حاصل	جانا
+Relation	T6	T8	NoRel	true	حاصل	دنیا
+Relation	T7	T5	NoRel	true	پیش	پھیل

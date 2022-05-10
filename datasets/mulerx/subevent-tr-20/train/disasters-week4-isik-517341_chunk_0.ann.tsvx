@@ -1,0 +1,26 @@
+Text	HUGO KASIRGASI , 1989'un eylül ayında , Saffir - Simpson Kasırga Ölçeğine göre 5 şiddetinde ; Guadeloupe , Montserrat , Porto Riko , Saint Croix , Güney Karolina ve Kuzey Karolina'yı vuran ve 82 kişinin ölümüne ve 56.000 kişinin evsiz kalmasına neden olan kasırgadır .	Hugo , Afrika'nın kıyılarından 9 Eylül'de ayrılan tropikal bir dalgadan köken aldı .	Fırtına batı kıyılarını izleyip , 11'inde tropikal bir fırtınaya ve 13'ünde bir kasırgaya dönüştü ve Birleşik Devletler'e doğru yol almaya başladı .	İlk kez Güney Karolina'da 4 şiddetindeyken görüldü .	Kasırga , o zamana kadar kaydedilmiş en yıkıcı kasırgalardan biri olan Frederic Kasırgası'nı geçerek 10 milyar dolar hasara yol açmıştır .
+Event	T0	KASIRGASI	EVENT	5
+Event	T1	vuran	EVENT	183
+Event	T2	ölümüne	EVENT	203
+Event	T3	kasırgadır	EVENT	256
+Event	T4	aldı	EVENT	347
+Event	T5	izleyip	EVENT	378
+Event	T6	fırtınaya	EVENT	409
+Event	T7	dönüştü	EVENT	444
+Event	T8	başladı	EVENT	493
+Event	T9	görüldü	EVENT	546
+Event	T10	kaydedilmiş	EVENT	581
+Event	T11	geçerek	EVENT	649
+Event	T12	açmıştır	EVENT	684
+Event	T13	kalmasına	EVENT	235
+Relation	T10	T0	NoRel	true	kaydedilmiş	KASIRGASI
+Relation	T10	T11	NoRel	true	kaydedilmiş	geçerek
+Relation	T10	T5	NoRel	true	kaydedilmiş	izleyip
+Relation	T11	T6	NoRel	true	geçerek	fırtınaya
+Relation	T2	T13	NoRel	true	ölümüne	kalmasına
+Relation	T2	T4	NoRel	true	ölümüne	aldı
+Relation	T3	T11	NoRel	true	kasırgadır	geçerek
+Relation	T4	T8	NoRel	true	aldı	başladı
+Relation	T7	T13	NoRel	true	dönüştü	kalmasına
+Relation	T7	T8	NoRel	true	dönüştü	başladı
+Relation	T9	T3	NoRel	true	görüldü	kasırgadır

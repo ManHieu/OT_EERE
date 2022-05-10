@@ -1,0 +1,52 @@
+Text	Det var indbygget i traktaten , at det skulle arrangeres en stor nedrustningskonference for at begrænse rustningen hos alle nationer .	Denne konference startede i 1932 , efter det internationale samfund havde været ude af stand til at reagere på brud på Folkeforbundets regler og andre aftaler .	Nationalsocialistene var også i færd med at styrke grebet i Tyskland .	Konferencen var resultatløs , indtil den tyske delegat meddelte , at Tyskland ikke ville være med , før konferencen vedtog , at alle nationer havde samme ret til at opruste .	Det betød , at Tyskland ikke længere interesserede sig så meget for de andre_landes nedrustning som for sin egen oprustning .
+Event	T0	indbygget	EVENT	8
+Event	T1	rustningen	EVENT	104
+Event	T2	startede	EVENT	152
+Event	T3	reagere	EVENT	235
+Event	T4	brud	EVENT	246
+Event	T5	færd	EVENT	328
+Event	T6	grebet	EVENT	347
+Event	T7	meddelte	EVENT	422
+Event	T8	vedtog	EVENT	483
+Event	T9	opruste	EVENT	532
+Event	T10	betød	EVENT	546
+Event	T11	oprustning	EVENT	655
+Event	T12	traktaten	EVENT	20
+Event	T13	arrangeres	EVENT	46
+Event	T14	nedrustningskonference	EVENT	65
+Event	T15	begrænse	EVENT	95
+Event	T16	Konferencen	EVENT	367
+Event	T17	resultatløs	EVENT	383
+Event	T18	med	EVENT	461
+Event	T19	nedrustning	EVENT	626
+Relation	T12	T13	SuperSub	true	traktaten	arrangeres
+Relation	T13	T12	SubSuper	true	arrangeres	traktaten
+Relation	T14	T17	SuperSub	true	nedrustningskonference	resultatløs
+Relation	T17	T14	SubSuper	true	resultatløs	nedrustningskonference
+Relation	T16	T17	SuperSub	true	Konferencen	resultatløs
+Relation	T17	T16	SubSuper	true	resultatløs	Konferencen
+Relation	T8	T10	SuperSub	true	vedtog	betød
+Relation	T10	T8	SubSuper	true	betød	vedtog
+Relation	T0	T13	NoRel	true	indbygget	arrangeres
+Relation	T0	T14	NoRel	true	indbygget	nedrustningskonference
+Relation	T0	T17	NoRel	true	indbygget	resultatløs
+Relation	T11	T12	NoRel	true	oprustning	traktaten
+Relation	T11	T14	NoRel	true	oprustning	nedrustningskonference
+Relation	T11	T16	NoRel	true	oprustning	Konferencen
+Relation	T12	T16	NoRel	true	traktaten	Konferencen
+Relation	T14	T5	NoRel	true	nedrustningskonference	færd
+Relation	T14	T8	NoRel	true	nedrustningskonference	vedtog
+Relation	T17	T15	NoRel	true	resultatløs	begrænse
+Relation	T18	T10	NoRel	true	med	betød
+Relation	T18	T7	NoRel	true	med	meddelte
+Relation	T18	T8	NoRel	true	med	vedtog
+Relation	T19	T11	NoRel	true	nedrustning	oprustning
+Relation	T19	T6	NoRel	true	nedrustning	grebet
+Relation	T2	T17	NoRel	true	startede	resultatløs
+Relation	T3	T10	NoRel	true	reagere	betød
+Relation	T3	T19	NoRel	true	reagere	nedrustning
+Relation	T3	T5	NoRel	true	reagere	færd
+Relation	T3	T9	NoRel	true	reagere	opruste
+Relation	T6	T13	NoRel	true	grebet	arrangeres
+Relation	T8	T4	NoRel	true	vedtog	brud
+Relation	T9	T4	NoRel	true	opruste	brud

@@ -1,0 +1,5 @@
+Text	Trods at dette ikke var den stærkeste storm havde den meget fatale følger .	Dens styrke nåede nogenlunde en høj kategori 3 .			
+Event	T0	storm	EVENT	38
+Event	T2	nåede	EVENT	88
+Relation	T0	T2	SuperSub	true	storm	nåede
+Relation	T2	T0	SubSuper	true	nåede	storm

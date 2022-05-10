@@ -1,0 +1,54 @@
+Text	The authorities reopened Gran Canaria airport once the bomb threat had been contained .	The Pan Am plane was ready to depart from Tenerife , but access to the runway was obstructed by the KLM plane and a refueling vehicle ; the KLM captain had decided to fully refuel at Los Rodeos instead of Las Palmas , apparently to save time .	The Pan Am aircraft was unable to maneuver around the refueling KLM in order to reach the runway for takeoff , due to a lack of safe clearance between the two planes , which was just .	The refueling took about 35 minutes , after which the passengers were brought back to the aircraft .	The search for a missing Dutch family of four , who had not returned to the waiting KLM plane , delayed the flight even further .
+Event	T0	reopened	EVENT	16
+Event	T1	threat	EVENT	60
+Event	T2	contained	EVENT	76
+Event	T3	depart	EVENT	118
+Event	T4	obstructed	EVENT	170
+Event	T5	refueling	EVENT	204
+Event	T6	decided	EVENT	244
+Event	T7	refuel	EVENT	261
+Event	T8	maneuver	EVENT	366
+Event	T9	refueling	EVENT	386
+Event	T10	reach	EVENT	412
+Event	T11	takeoff	EVENT	433
+Event	T12	lack	EVENT	452
+Event	T13	took	EVENT	531
+Event	T14	search	EVENT	622
+Event	T15	missing	EVENT	635
+Event	T16	returned	EVENT	678
+Event	T17	waiting	EVENT	694
+Event	T18	delayed	EVENT	714
+Event	T19	flight	EVENT	726
+Event	T20	save	EVENT	320
+Event	T21	brought	EVENT	587
+Relation	T3	T4	SuperSub	true	depart	obstructed
+Relation	T4	T3	SubSuper	true	obstructed	depart
+Relation	T13	T21	SuperSub	true	took	brought
+Relation	T21	T13	SubSuper	true	brought	took
+Relation	T1	T17	NoRel	true	threat	waiting
+Relation	T1	T19	NoRel	true	threat	flight
+Relation	T1	T9	NoRel	true	threat	refueling
+Relation	T10	T9	NoRel	true	reach	refueling
+Relation	T11	T12	NoRel	true	takeoff	lack
+Relation	T15	T12	NoRel	true	missing	lack
+Relation	T15	T18	NoRel	true	missing	delayed
+Relation	T15	T2	NoRel	true	missing	contained
+Relation	T16	T1	NoRel	true	returned	threat
+Relation	T16	T11	NoRel	true	returned	takeoff
+Relation	T16	T7	NoRel	true	returned	refuel
+Relation	T17	T16	NoRel	true	waiting	returned
+Relation	T17	T2	NoRel	true	waiting	contained
+Relation	T17	T21	NoRel	true	waiting	brought
+Relation	T18	T2	NoRel	true	delayed	contained
+Relation	T19	T0	NoRel	true	flight	reopened
+Relation	T19	T5	NoRel	true	flight	refueling
+Relation	T2	T0	NoRel	true	contained	reopened
+Relation	T21	T16	NoRel	true	brought	returned
+Relation	T21	T3	NoRel	true	brought	depart
+Relation	T3	T1	NoRel	true	depart	threat
+Relation	T6	T11	NoRel	true	decided	takeoff
+Relation	T6	T14	NoRel	true	decided	search
+Relation	T8	T1	NoRel	true	maneuver	threat
+Relation	T8	T2	NoRel	true	maneuver	contained
+Relation	T8	T6	NoRel	true	maneuver	decided
+Relation	T9	T10	NoRel	true	refueling	reach

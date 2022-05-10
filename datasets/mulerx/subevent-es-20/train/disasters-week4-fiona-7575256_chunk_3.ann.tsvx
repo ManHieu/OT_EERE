@@ -1,0 +1,49 @@
+Text	El gobernador de Oklahoma , Maria Fallin , declaró el estado de emergencia para el condado de Pawnee , donde se localizó el peor de los daños .	Treinta y dos pozos adicionales eran apagado por la Agencia de Protección del Medio Ambiente , ya que se determinó que se encuentra demasiado cerca de la falla recientemente descubierta del terremoto ocurrido .	Una persona resultó herida como consecuencia del sismo : en Pawnee , un hombre fue alcanzado por una chimenea caída .	Categoría : Terremotos de 2016 Categoría : Terremotos en Estados Unidos Categoría : Estados Unidos en 2016 Categoría : Desastres naturales en Oklahoma Categoría : Desastres naturales en Tennessee Categoría : Desastres naturales en Texas	Servicio Geológico de los Estados Unidos , Sismo a 15 km al Noroeste de Pawnee , Oklahoma , Estados Unidos , 3 de septiembre de 2016_- USGS ; 5.8 grados
+Event	T0	declaró	EVENT	43
+Event	T1	emergencia	EVENT	64
+Event	T2	localizó	EVENT	112
+Event	T3	daños	EVENT	136
+Event	T4	apagado	EVENT	181
+Event	T5	determinó	EVENT	249
+Event	T6	falla	EVENT	298
+Event	T7	descubierta	EVENT	318
+Event	T8	ocurrido	EVENT	344
+Event	T9	herida	EVENT	375
+Event	T10	sismo	EVENT	404
+Event	T11	alcanzado	EVENT	438
+Event	T12	caída	EVENT	465
+Event	T13	Terremotos	EVENT	485
+Event	T14	Terremotos	EVENT	516
+Event	T15	Desastres	EVENT	592
+Event	T16	Desastres	EVENT	636
+Event	T17	Desastres	EVENT	681
+Event	T18	Sismo	EVENT	753
+Relation	T0	T10	NoRel	true	declaró	sismo
+Relation	T0	T13	NoRel	true	declaró	Terremotos
+Relation	T0	T18	NoRel	true	declaró	Sismo
+Relation	T0	T2	NoRel	true	declaró	localizó
+Relation	T1	T14	NoRel	true	emergencia	Terremotos
+Relation	T1	T8	NoRel	true	emergencia	ocurrido
+Relation	T10	T18	NoRel	true	sismo	Sismo
+Relation	T10	T7	NoRel	true	sismo	descubierta
+Relation	T11	T7	NoRel	true	alcanzado	descubierta
+Relation	T12	T10	NoRel	true	caída	sismo
+Relation	T12	T17	NoRel	true	caída	Desastres
+Relation	T12	T6	NoRel	true	caída	falla
+Relation	T13	T10	NoRel	true	Terremotos	sismo
+Relation	T13	T15	NoRel	true	Terremotos	Desastres
+Relation	T14	T18	NoRel	true	Terremotos	Sismo
+Relation	T15	T0	NoRel	true	Desastres	declaró
+Relation	T17	T1	NoRel	true	Desastres	emergencia
+Relation	T17	T11	NoRel	true	Desastres	alcanzado
+Relation	T17	T14	NoRel	true	Desastres	Terremotos
+Relation	T17	T6	NoRel	true	Desastres	falla
+Relation	T18	T14	NoRel	true	Sismo	Terremotos
+Relation	T2	T5	NoRel	true	localizó	determinó
+Relation	T2	T8	NoRel	true	localizó	ocurrido
+Relation	T4	T6	NoRel	true	apagado	falla
+Relation	T5	T11	NoRel	true	determinó	alcanzado
+Relation	T5	T17	NoRel	true	determinó	Desastres
+Relation	T7	T18	NoRel	true	descubierta	Sismo
+Relation	T9	T0	NoRel	true	herida	declaró
+Relation	T9	T18	NoRel	true	herida	Sismo

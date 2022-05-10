@@ -1,0 +1,19 @@
+Text	Det første fly , American Airlines Flight 11 , ramte det nordlige tårn klokken 08:46 ( lokal tid ) .	Sytten minutter senere styrede et andet hold terrorister United Airliens Flight 175 ind mellem den 77. og 85. etage i det sydlige tårn .	Skaderne i det nordlige tårn førte til ødelæggelse af de mulige flugtveje fra området .	Omkring 1.344 personer i det nordlige tårn blev fanget og havde kun få muligheder til at slippe ud af tårnet .	Nogle personer valgte at blive på deres kontorer og vente på hjælp , mens andre valgte at begå selvmord ved at knuse vinduerne i bygningerne og hoppe ud .
+Event	T0	ramte	EVENT	47
+Event	T1	styrede	EVENT	124
+Event	T2	Skaderne	EVENT	238
+Event	T4	ødelæggelse	EVENT	277
+Event	T5	fanget	EVENT	374
+Event	T6	valgte	EVENT	452
+Event	T7	hjælp	EVENT	498
+Event	T8	valgte	EVENT	517
+Event	T9	selvmord	EVENT	532
+Event	T10	knuse	EVENT	548
+Event	T11	slippe ud	EVENT	415
+Relation	T5	T6	SuperSub	true	fanget	valgte
+Relation	T6	T5	SubSuper	true	valgte	fanget
+Relation	T5	T8	SuperSub	true	fanget	valgte
+Relation	T8	T5	SubSuper	true	valgte	fanget
+Relation	T11	T2	NoRel	true	slippe ud	Skaderne
+Relation	T2	T7	NoRel	true	Skaderne	hjælp
+Relation	T4	T2	NoRel	true	ødelæggelse	Skaderne

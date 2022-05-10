@@ -1,0 +1,73 @@
+Text	The trial was scheduled to begin in September 2017 , but it was delayed because Bertoldi was serving a sentence in a French prison for kidnapping and could not be extradited .	Bertoldi admitted to having received diamonds stolen in the robbery , but denied any involvement .	In May 2018 , 18 of those tried in connection to the heist were acquitted .	The case against Bertoldi , the suspected mastermind , was yet to be heard , pending the outcome of his appeal over his kidnapping conviction .	In June 2019 , the correctional tribunal of Brussels sentenced Bertoldi to five years of imprisonment and a fine for being a co-conspirator in the heist , for being part of a criminal organisation and for money laundering .
+Event	T0	trial	EVENT	4
+Event	T1	scheduled	EVENT	14
+Event	T2	begin	EVENT	27
+Event	T3	delayed	EVENT	64
+Event	T4	serving	EVENT	93
+Event	T5	sentence	EVENT	103
+Event	T6	kidnapping	EVENT	135
+Event	T7	extradited	EVENT	163
+Event	T8	admitted	EVENT	185
+Event	T9	received	EVENT	204
+Event	T10	stolen	EVENT	222
+Event	T11	robbery	EVENT	236
+Event	T12	denied	EVENT	250
+Event	T13	involvement	EVENT	261
+Event	T14	tried	EVENT	301
+Event	T15	heist	EVENT	328
+Event	T16	acquitted	EVENT	339
+Event	T17	case	EVENT	355
+Event	T18	heard	EVENT	420
+Event	T19	outcome	EVENT	440
+Event	T20	appeal	EVENT	455
+Event	T21	conviction	EVENT	482
+Event	T22	sentenced	EVENT	548
+Event	T23	imprisonment	EVENT	584
+Event	T24	fine	EVENT	603
+Event	T25	heist	EVENT	642
+Event	T26	laundering	EVENT	706
+Event	T27	criminal	EVENT	670
+Relation	T8	T12	SuperSub	true	admitted	denied
+Relation	T12	T8	SubSuper	true	denied	admitted
+Relation	T14	T16	SuperSub	true	tried	acquitted
+Relation	T16	T14	SubSuper	true	acquitted	tried
+Relation	T0	T13	NoRel	true	trial	involvement
+Relation	T0	T24	NoRel	true	trial	fine
+Relation	T0	T8	NoRel	true	trial	admitted
+Relation	T1	T17	NoRel	true	scheduled	case
+Relation	T1	T22	NoRel	true	scheduled	sentenced
+Relation	T1	T27	NoRel	true	scheduled	criminal
+Relation	T11	T18	NoRel	true	robbery	heard
+Relation	T11	T7	NoRel	true	robbery	extradited
+Relation	T13	T12	NoRel	true	involvement	denied
+Relation	T13	T15	NoRel	true	involvement	heist
+Relation	T14	T5	NoRel	true	tried	sentence
+Relation	T16	T26	NoRel	true	acquitted	laundering
+Relation	T17	T16	NoRel	true	case	acquitted
+Relation	T18	T0	NoRel	true	heard	trial
+Relation	T18	T12	NoRel	true	heard	denied
+Relation	T18	T15	NoRel	true	heard	heist
+Relation	T19	T17	NoRel	true	outcome	case
+Relation	T19	T6	NoRel	true	outcome	kidnapping
+Relation	T20	T21	NoRel	true	appeal	conviction
+Relation	T20	T27	NoRel	true	appeal	criminal
+Relation	T20	T3	NoRel	true	appeal	delayed
+Relation	T21	T24	NoRel	true	conviction	fine
+Relation	T22	T11	NoRel	true	sentenced	robbery
+Relation	T22	T18	NoRel	true	sentenced	heard
+Relation	T23	T26	NoRel	true	imprisonment	laundering
+Relation	T24	T20	NoRel	true	fine	appeal
+Relation	T24	T3	NoRel	true	fine	delayed
+Relation	T24	T7	NoRel	true	fine	extradited
+Relation	T25	T27	NoRel	true	heist	criminal
+Relation	T26	T10	NoRel	true	laundering	stolen
+Relation	T26	T11	NoRel	true	laundering	robbery
+Relation	T27	T11	NoRel	true	criminal	robbery
+Relation	T27	T26	NoRel	true	criminal	laundering
+Relation	T3	T13	NoRel	true	delayed	involvement
+Relation	T3	T14	NoRel	true	delayed	tried
+Relation	T3	T7	NoRel	true	delayed	extradited
+Relation	T4	T0	NoRel	true	serving	trial
+Relation	T4	T8	NoRel	true	serving	admitted
+Relation	T5	T3	NoRel	true	sentence	delayed
+Relation	T9	T6	NoRel	true	received	kidnapping

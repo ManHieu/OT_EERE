@@ -1,0 +1,24 @@
+Text	El vUELO 277 DE IRAN AIR fue un servicio doméstico de pasajeros programado desde Teherán a Urmía , Irán , que el domingo 9 de enero de 2011 se estrelló después de abortar su aproximación al aeropuerto de Urmía con mal tiempo .	78 de las 105 personas a bordo murieron .	La investigación oficial concluyó que las condiciones de engelamiento y el manejo incorrecto del motor por parte de la tripulación provocaron un doble apagado del motor , pérdida de altitud e impacto con el suelo .	El avión implicado en fue un Boeing 727-286 construido en 1974 y registrado como EP-IRP .	El avión estuvo parado mucho tiempo durante su vida operativa .
+Event	T0	programado	EVENT	64
+Event	T1	abortar	EVENT	163
+Event	T2	aproximación	EVENT	174
+Event	T3	murieron	EVENT	258
+Event	T4	investigación	EVENT	272
+Event	T5	concluyó	EVENT	294
+Event	T6	engelamiento	EVENT	326
+Event	T7	manejo	EVENT	344
+Event	T8	provocaron	EVENT	400
+Event	T9	apagado	EVENT	420
+Event	T10	pérdida	EVENT	440
+Event	T11	impacto	EVENT	461
+Event	T12	implicado	EVENT	493
+Event	T13	construido	EVENT	528
+Event	T14	registrado	EVENT	549
+Event	T15	parado	EVENT	590
+Event	T16	estrelló	EVENT	143
+Relation	T11	T9	NoRel	true	impacto	apagado
+Relation	T14	T3	NoRel	true	registrado	murieron
+Relation	T2	T10	NoRel	true	aproximación	pérdida
+Relation	T3	T6	NoRel	true	murieron	engelamiento
+Relation	T4	T0	NoRel	true	investigación	programado
+Relation	T9	T3	NoRel	true	apagado	murieron

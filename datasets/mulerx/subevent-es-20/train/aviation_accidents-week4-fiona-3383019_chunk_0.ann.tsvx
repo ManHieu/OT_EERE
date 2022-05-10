@@ -1,0 +1,38 @@
+Text	El ACCIDENTE AÉREO DEL CESSNA 310 EN CALIFORNIA DE 2010 fue un accidente aéreo de un Cessna 310 que se estrelló en unas casas ocurrido el 18 de febrero de 2010 a las hora local , en la cual tres personas murieron , todos empleados de Tesla Motors .	El avión estaba registrado por Air Unique , empresa propiedad de Tesla employee Doug Bourn .	De acuerdo con los primeros reportes en tierra no hubo heridos ni muertes al momento del impacto de la avioneta que se dirigía al Aeropuerto Municipal de Hawthorne , localizado en el Sur de California .	Sin embargo se desconocían las causas del accidente que ocurrió a las 07:55 hora local y sólo testigos presenciales señalaron que la avioneta causó varios incendios tras pegar en una línea eléctrica .	Harold Schapelhouman , jefe de bomberos de Menlo Park , dijo que los bomberos sofocaron incendios en dos casas en la mañana del 17 de febrero , y no hubo informes de lesionados en esas viviendas .
+Event	T0	estrelló	EVENT	103
+Event	T1	ocurrido	EVENT	126
+Event	T2	murieron	EVENT	204
+Event	T3	registrado	EVENT	265
+Event	T4	heridos	EVENT	397
+Event	T5	muertes	EVENT	408
+Event	T6	impacto	EVENT	431
+Event	T7	dirigía	EVENT	461
+Event	T8	accidente	EVENT	587
+Event	T9	ocurrió	EVENT	601
+Event	T10	señalaron	EVENT	661
+Event	T11	causó	EVENT	687
+Event	T12	incendios	EVENT	700
+Event	T13	dijo	EVENT	802
+Event	T14	incendios	EVENT	834
+Event	T15	informes	EVENT	900
+Event	T16	lesionados	EVENT	912
+Relation	T0	T2	NoRel	true	estrelló	murieron
+Relation	T1	T3	NoRel	true	ocurrido	registrado
+Relation	T10	T15	NoRel	true	señalaron	informes
+Relation	T10	T16	NoRel	true	señalaron	lesionados
+Relation	T10	T4	NoRel	true	señalaron	heridos
+Relation	T12	T1	NoRel	true	incendios	ocurrido
+Relation	T12	T11	NoRel	true	incendios	causó
+Relation	T12	T2	NoRel	true	incendios	murieron
+Relation	T13	T14	NoRel	true	dijo	incendios
+Relation	T13	T8	NoRel	true	dijo	accidente
+Relation	T14	T16	NoRel	true	incendios	lesionados
+Relation	T14	T4	NoRel	true	incendios	heridos
+Relation	T15	T2	NoRel	true	informes	murieron
+Relation	T16	T10	NoRel	true	lesionados	señalaron
+Relation	T2	T0	NoRel	true	murieron	estrelló
+Relation	T2	T1	NoRel	true	murieron	ocurrido
+Relation	T3	T1	NoRel	true	registrado	ocurrido
+Relation	T4	T6	NoRel	true	heridos	impacto
+Relation	T7	T11	NoRel	true	dirigía	causó
+Relation	T9	T7	NoRel	true	ocurrió	dirigía

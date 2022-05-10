@@ -1,0 +1,31 @@
+Text	LUIZ CARLOS SAROLLI ( 8 March 1965 – 28 November 2016 ) , known as CAIO JÚNIOR or CAIO JR. , was a Brazilian football forward and manager .	He spent his 14 - year professional career in Brazil and Portugal , notably amassing Primeira Liga totals of 140 games and 31 goals in the latter nation in representation of three teams , mainly Vitória de Guimarães .	Caio Júnior started working as a manager in 2002 , going on to be in charge of a host of clubs .	In 2016 , whilst at the service of Chapecoense , he died in an aviation incident in Colombia .	Born in Cascavel , Paraná , Caio Júnior 's Série A input consisted of 37 games and nine goals combined for Grêmio Foot - Ball Porto Alegrense , Sport Club Internacional and Paraná Clube , during four seasons .
+Event	T0	spent	EVENT	143
+Event	T1	career	EVENT	176
+Event	T2	amassing	EVENT	216
+Event	T3	totals	EVENT	239
+Event	T4	games	EVENT	253
+Event	T5	goals	EVENT	266
+Event	T6	representation	EVENT	296
+Event	T7	working	EVENT	378
+Event	T8	died	EVENT	507
+Event	T9	incident	EVENT	527
+Event	T10	Born	EVENT	550
+Event	T11	consisted	EVENT	607
+Event	T12	games	EVENT	623
+Event	T13	combined	EVENT	644
+Event	T14	seasons	EVENT	750
+Relation	T0	T3	NoRel	true	spent	totals
+Relation	T12	T8	NoRel	true	games	died
+Relation	T13	T11	NoRel	true	combined	consisted
+Relation	T2	T0	NoRel	true	amassing	spent
+Relation	T3	T1	NoRel	true	totals	career
+Relation	T3	T14	NoRel	true	totals	seasons
+Relation	T3	T7	NoRel	true	totals	working
+Relation	T4	T5	NoRel	true	games	goals
+Relation	T5	T12	NoRel	true	goals	games
+Relation	T5	T8	NoRel	true	goals	died
+Relation	T7	T4	NoRel	true	working	games
+Relation	T7	T6	NoRel	true	working	representation
+Relation	T7	T9	NoRel	true	working	incident
+Relation	T8	T0	NoRel	true	died	spent
+Relation	T9	T2	NoRel	true	incident	amassing

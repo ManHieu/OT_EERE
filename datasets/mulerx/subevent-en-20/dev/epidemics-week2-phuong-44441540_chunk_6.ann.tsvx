@@ -1,0 +1,46 @@
+Text	Millions of children worldwide do not receive all of the routine vaccinations as per their national schedule .	As immunization is a powerful public health strategy for improving child survival , it is important to determine what strategies work best to increase coverage .	A Cochrane review assessed the effectiveness of intervention strategies to boost and sustain high childhood immunization coverage in low - and middle - income countries .	Fourteen trials were included but most of the evidence was of low quality .	Providing parents and other community members with information on immunization , health education at facilities in combination with redesigned immunization reminder cards , regular immunization outreach with and without household incentives , home visits , and integration of immunization with other services may improve childhood immunization coverage in low - and middle - income countries .
+Event	T0	receive	EVENT	38
+Event	T1	vaccinations	EVENT	65
+Event	T11	trials	EVENT	453
+Event	T12	included	EVENT	465
+Event	T14	information	EVENT	571
+Event	T15	education	EVENT	608
+Event	T16	visits	EVENT	768
+Event	T17	integration	EVENT	781
+Event	T18	immunization	EVENT	796
+Event	T19	improve	EVENT	833
+Event	T2	immunization	EVENT	114
+Event	T20	coverage	EVENT	864
+Event	T21	determine	EVENT	214
+Event	T22	increase	EVENT	253
+Event	T23	Providing	EVENT	520
+Event	T3	improving	EVENT	168
+Event	T4	survival	EVENT	184
+Event	T5	work	EVENT	240
+Event	T6	sustain	EVENT	358
+Event	T7	assessed	EVENT	291
+Event	T8	intervention	EVENT	321
+Event	T9	boost	EVENT	348
+Relation	T0	T16	NoRel	true	receive	visits
+Relation	T0	T3	NoRel	true	receive	improving
+Relation	T1	T15	NoRel	true	vaccinations	education
+Relation	T11	T0	NoRel	true	trials	receive
+Relation	T11	T4	NoRel	true	trials	survival
+Relation	T12	T19	NoRel	true	included	improve
+Relation	T14	T19	NoRel	true	information	improve
+Relation	T14	T22	NoRel	true	information	increase
+Relation	T15	T19	NoRel	true	education	improve
+Relation	T19	T15	NoRel	true	improve	education
+Relation	T2	T9	NoRel	true	immunization	boost
+Relation	T20	T22	NoRel	true	coverage	increase
+Relation	T20	T9	NoRel	true	coverage	boost
+Relation	T21	T14	NoRel	true	determine	information
+Relation	T21	T6	NoRel	true	determine	sustain
+Relation	T3	T0	NoRel	true	improving	receive
+Relation	T3	T1	NoRel	true	improving	vaccinations
+Relation	T4	T7	NoRel	true	survival	assessed
+Relation	T5	T7	NoRel	true	work	assessed
+Relation	T6	T17	NoRel	true	sustain	integration
+Relation	T6	T23	NoRel	true	sustain	Providing
+Relation	T6	T9	NoRel	true	sustain	boost
+Relation	T9	T7	NoRel	true	boost	assessed

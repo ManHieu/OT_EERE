@@ -1,0 +1,30 @@
+Text	Protestocular binaların pencerelerini kırdı ve vandallık yaptı .	Gare du Nord ve Place de la République yakınlarında çıkan huzursuzlukların çoğuyla benzer davranışlarda bulunulduktan sonra 15 Kasım gecesi Paris'te 49 kişi tutuklandı .	Aynı gece Rouen'de 21 kişi tutuklandı .	Ayaklanmaların " Gece Ayakta " olarak bilinen Nuit debout protestolarıyla zamanlaması dikkat çekmiştir .	Ülke genelinde süren protestolara karşı polis müdahalesi sürmüş , gösterici , polis ve medya mensupları sık sık karşı karşıya gelmiş , polis göstericilere sık sık biber gazı , göz yaşartıcı gaz , plastik mermi ve cop ile müdahalelerde bulunmaktadır .
+Event	T0	kırdı	EVENT	38
+Event	T1	yaptı	EVENT	57
+Event	T2	çıkan	EVENT	117
+Event	T3	tutuklandı	EVENT	222
+Event	T4	tutuklandı	EVENT	262
+Event	T5	çekmiştir	EVENT	368
+Event	T7	gelmiş	EVENT	506
+Event	T8	müdahalelerde	EVENT	601
+Event	T9	Ayaklanmaların	EVENT	275
+Event	T10	protestolarıyla	EVENT	333
+Event	T11	protestolara	EVENT	401
+Event	T12	müdahalesi	EVENT	426
+Relation	T11	T0	SuperSub	true	protestolara	kırdı
+Relation	T0	T11	SubSuper	true	kırdı	protestolara
+Relation	T11	T1	SuperSub	true	protestolara	yaptı
+Relation	T1	T11	SubSuper	true	yaptı	protestolara
+Relation	T11	T3	SuperSub	true	protestolara	tutuklandı
+Relation	T3	T11	SubSuper	true	tutuklandı	protestolara
+Relation	T11	T4	SuperSub	true	protestolara	tutuklandı
+Relation	T4	T11	SubSuper	true	tutuklandı	protestolara
+Relation	T11	T12	SuperSub	true	protestolara	müdahalesi
+Relation	T12	T11	SubSuper	true	müdahalesi	protestolara
+Relation	T0	T12	NoRel	true	kırdı	müdahalesi
+Relation	T0	T8	NoRel	true	kırdı	müdahalelerde
+Relation	T1	T3	NoRel	true	yaptı	tutuklandı
+Relation	T2	T7	NoRel	true	çıkan	gelmiş
+Relation	T3	T10	NoRel	true	tutuklandı	protestolarıyla
+Relation	T8	T5	NoRel	true	müdahalelerde	çekmiştir
+Relation	T9	T11	NoRel	true	Ayaklanmaların	protestolara

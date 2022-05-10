@@ -1,0 +1,31 @@
+Text	El avión se estrelló contra el suelo , arrastrando sus restos contra aviones estacionados y espectadores .	Ambos pilotos sobrevivieron con heridas leves y aterrizaron muy cerca del lugar del accidente .	Los reportes iniciales indicaban como posibles causas del accidente el impacto de pájaros contra la aeronave y fallo en el motor .	En algunos videos del accidente se puede escuchar cómo justo antes del accidente los motores del avión se silencian de repente .	Otros videos , sin embargo , muestran los motores encendidos en todo momento .
+Event	T0	estrelló	EVENT	12
+Event	T1	arrastrando	EVENT	39
+Event	T2	restos	EVENT	55
+Event	T3	sobrevivieron	EVENT	121
+Event	T4	aterrizaron	EVENT	155
+Event	T5	accidente	EVENT	191
+Event	T6	reportes	EVENT	207
+Event	T7	indicaban	EVENT	226
+Event	T8	accidente	EVENT	261
+Event	T9	impacto	EVENT	274
+Event	T10	fallo	EVENT	314
+Event	T11	accidente	EVENT	356
+Event	T12	escuchar	EVENT	375
+Event	T13	accidente	EVENT	405
+Event	T14	silencian	EVENT	440
+Event	T15	muestran	EVENT	492
+Event	T16	encendidos	EVENT	513
+Relation	T5	T6	SuperSub	true	accidente	reportes
+Relation	T6	T5	SubSuper	true	reportes	accidente
+Relation	T0	T10	NoRel	true	estrelló	fallo
+Relation	T0	T4	NoRel	true	estrelló	aterrizaron
+Relation	T12	T3	NoRel	true	escuchar	sobrevivieron
+Relation	T13	T16	NoRel	true	accidente	encendidos
+Relation	T13	T8	NoRel	true	accidente	accidente
+Relation	T2	T1	NoRel	true	restos	arrastrando
+Relation	T2	T7	NoRel	true	restos	indicaban
+Relation	T3	T6	NoRel	true	sobrevivieron	reportes
+Relation	T6	T7	NoRel	true	reportes	indicaban
+Relation	T7	T2	NoRel	true	indicaban	restos
+Relation	T8	T9	NoRel	true	accidente	impacto

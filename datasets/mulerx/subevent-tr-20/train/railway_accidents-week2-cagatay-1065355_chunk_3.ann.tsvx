@@ -1,0 +1,21 @@
+Text	Kaza arkasında 9 ölü ve 115 yaralı bırakır ve Perus istasyonunu tahrip eder .	- 15 Ağustos , 2000 - Kenya Broadcasting Corporation raporuna göre , Butere - Kisumu hattında çalışan ve 400 yolcusu olan tren Viktorya Gölü sahilinde , Lela , Nyanza , Kenya rayları yarıp geçer , kazaya fren tutmama nedeni sebep olur .	- 17 Ağustos , 2000 – Kisumu’da bir yük treninin bir yüklü otobüse trafiğin yoğun olduğu saatte hemzemin geçitte çarpması sonrası , 6 ölü .	- 19 Ağustos , 2000 - Kenya Television Network raporuna göre sıvılaştırılmış gaz taşıyan bir Mombasa - Nairobi yük treni Eastern , Kenya , Mavoka’da sıvılaştırılmış gazın patlaması ve alev alması ile 25 kişi öldü ve 50_den fazla kişi yaralandı ; kurbanların ve yaralananların çoğu demiryolu hattı yakınındaki evlerde ikamet edenlerdi .	- 17 Ekim , 2000 – Hatfield demiryolu çarpışması , İngiltere , Birleşik Krallık : Londra - Leeds ekpresi 115 mph ( 185 km / h ) ile geçtiğinde , bir hatalı ray , “ rotatif temas yorgunluğu ” olarak bilinen bir durum nedeniyle 300 parçaya kırılır .
+Event	T0	Kaza	EVENT	0
+Event	T1	ölü	EVENT	17
+Event	T10	çarpışması	EVENT	829
+Event	T12	yorgunluğu	EVENT	969
+Event	T13	kırılır	EVENT	1029
+Event	T18	çarpması	EVENT	428
+Event	T2	bırakır	EVENT	35
+Event	T3	eder	EVENT	71
+Event	T4	geçer	EVENT	267
+Event	T5	ölü	EVENT	449
+Event	T6	patlaması	EVENT	626
+Event	T8	öldü	EVENT	663
+Event	T9	yaralandı	EVENT	689
+Relation	T10	T12	SuperSub	true	çarpışması	yorgunluğu
+Relation	T12	T10	SubSuper	true	yorgunluğu	çarpışması
+Relation	T10	T13	SuperSub	true	çarpışması	kırılır
+Relation	T13	T10	SubSuper	true	kırılır	çarpışması
+Relation	T1	T4	NoRel	true	ölü	geçer
+Relation	T4	T13	NoRel	true	geçer	kırılır
+Relation	T9	T18	NoRel	true	yaralandı	çarpması

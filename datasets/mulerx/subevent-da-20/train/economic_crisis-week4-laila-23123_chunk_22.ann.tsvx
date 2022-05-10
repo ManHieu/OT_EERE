@@ -1,0 +1,23 @@
+Text	Alle bestræbelser på at fremme naturvidenskaben bar frugt i løbet af århundredet .	Først og fremmest oplevedes et begyndende befolkningsoverskud i de europæiske lande som følge af forbedrede produktions- og distributionsmetoder og den gradvise forbedring af lægevidenskaben .	Opfindelsen af vaccinationen , den såkaldte inokulation , mod kopper var et stort skridt i kampen mod børnedødeligheden .	Med John Harrisons opfindelse af det maritime kronometer kunne man for første gang præcist bestemme angivelsen af længdegradden .	Det forbedrede mulighederne for langdistancesøfart betydeligt .
+Event	T0	frugt	EVENT	52
+Event	T1	oplevedes	EVENT	101
+Event	T2	forbedring	EVENT	244
+Event	T3	Opfindelsen	EVENT	276
+Event	T4	vaccinationen	EVENT	291
+Event	T5	inokulation	EVENT	320
+Event	T6	skridt	EVENT	358
+Event	T7	kampen	EVENT	367
+Event	T8	opfindelse	EVENT	417
+Event	T9	angivelsen	EVENT	498
+Event	T10	forbedrede	EVENT	532
+Event	T11	befolkningsoverskud	EVENT	125
+Event	T12	forbedrede	EVENT	180
+Event	T13	præcist	EVENT	481
+Event	T14	langdistancesøfart	EVENT	560
+Relation	T11	T9	NoRel	true	befolkningsoverskud	angivelsen
+Relation	T12	T0	NoRel	true	forbedrede	frugt
+Relation	T13	T11	NoRel	true	præcist	befolkningsoverskud
+Relation	T13	T14	NoRel	true	præcist	langdistancesøfart
+Relation	T14	T10	NoRel	true	langdistancesøfart	forbedrede
+Relation	T2	T1	NoRel	true	forbedring	oplevedes
+Relation	T9	T8	NoRel	true	angivelsen	opfindelse

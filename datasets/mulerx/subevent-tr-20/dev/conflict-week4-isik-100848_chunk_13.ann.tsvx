@@ -1,0 +1,20 @@
+Text	Son yapıtı Les damnés de la terre ( İngilizce’ye Constance Farrington tarafından The Wretched of the Earth , ‘ Yeryüzünün Lanetlileri ’ olarak çevrildi ) onlara yönelikti .	Ezilenlere , kolonisizleştirme kasırgasında ve yeni - kolonici / küreselleşmiş dünyada karşılaşacakları tehlikelere karşı uyarı niteliği taşır .	Fanon’un kolonicilik - karşıtı hareketlere ve özgürlük hareketlerine esin verici bir etkisi olmuştur .	Özellikle , Les damnés de la terre , İran’da Ali Şeriati , Güney Afrika’da Steve Biko ve Küba’da Ernesto Che Guevara gibi devrimci önderlerin yapıtlarında başlıca bir etkidir .	Bunların içinden yalnızca Guevara , Fanon’un şiddet kuramlarıyla ilgilenmiştir ; Şeriati ve Biko için Fanon’a temel ilgi , sırasıyla , ‘ yeni insan ’ ve ‘ siyah bilinci ’ dolayısıyladır .
+Event	T0	yapıtı	EVENT	4
+Event	T1	Wretched	EVENT	85
+Event	T2	çevrildi	EVENT	143
+Event	T3	uyarı	EVENT	295
+Event	T4	etkisi	EVENT	403
+Event	T5	ilgilenmiştir	EVENT	663
+Event	T6	Lanetlileri	EVENT	122
+Event	T7	kolonicilik	EVENT	327
+Event	T8	hareketlere	EVENT	349
+Event	T9	hareketlerine	EVENT	373
+Event	T10	kolonici	EVENT	227
+Event	T11	tehlikelere	EVENT	277
+Event	T12	yapıtlarında	EVENT	563
+Relation	T10	T3	NoRel	true	kolonici	uyarı
+Relation	T11	T9	NoRel	true	tehlikelere	hareketlerine
+Relation	T12	T8	NoRel	true	yapıtlarında	hareketlere
+Relation	T2	T7	NoRel	true	çevrildi	kolonicilik
+Relation	T2	T8	NoRel	true	çevrildi	hareketlere
+Relation	T8	T7	NoRel	true	hareketlere	kolonicilik

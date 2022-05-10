@@ -1,0 +1,22 @@
+Text	I 1331 brød der pest ud i Hubei-provinsen centralt i Kina .	Kilden var sandsynligvis en latent smitte blandt smågnavere i Yunnan og Burma , 800 km længere mod syd .	De næste tyve år spredte smitten sig til resten af Kina .	At dømme efter folketællinger omkom mindst 20 millioner .	Kamelkaravanerne langs Silkevejen bragte smitten mod vest .
+Event	T0	brød	EVENT	7
+Event	T1	smitte	EVENT	95
+Event	T2	smitten	EVENT	190
+Event	T3	omkom	EVENT	253
+Event	T4	smitten	EVENT	322
+Event	T5	pest	EVENT	16
+Event	T6	Kilden	EVENT	60
+Event	T7	spredte	EVENT	182
+Event	T8	dømme	EVENT	226
+Event	T9	Kamelkaravanerne	EVENT	281
+Event	T10	bragte	EVENT	315
+Relation	T0	T7	SuperSub	true	brød	spredte
+Relation	T7	T0	SubSuper	true	spredte	brød
+Relation	T0	T10	NoRel	true	brød	bragte
+Relation	T0	T9	NoRel	true	brød	Kamelkaravanerne
+Relation	T10	T9	NoRel	true	bragte	Kamelkaravanerne
+Relation	T3	T2	NoRel	true	omkom	smitten
+Relation	T6	T1	NoRel	true	Kilden	smitte
+Relation	T7	T4	NoRel	true	spredte	smitten
+Relation	T8	T6	NoRel	true	dømme	Kilden
+Relation	T9	T1	NoRel	true	Kamelkaravanerne	smitte

@@ -1,0 +1,19 @@
+Text	Bu başarı IMF ve Dünya Bankası gibi çeşitli uluslararası kurumlar tarafından sahiplenildi ve Asya mucizesinin bir parçası olarak görüldü .	1990'ların belli bir döneminden sonra ticaretin dışa dönük kısmında ve cari açıklarda büyüme yaşandı .	Cari açıklar finanse edilmeye başlandığında kontrol altına alındığı düşünülmüş olsa da açıklar büyüdükçe kontrolü zorlaşmaktaydı .	Ülkeye giren yabancı fonlar nedeniyle kısa vadeli borçlar krizi çıkmaza sürüklemişti .	Kriz sürecinde yeterince güçlü finans sektörü gözetimi olmaması , sektörün yeterince şeffaf olmaması ve kuralların uygulanmamasından dolayı durum daha da kötüleşmiştir .
+Event	T0	sahiplenildi	EVENT	77
+Event	T1	görüldü	EVENT	129
+Event	T2	yaşandı	EVENT	232
+Event	T4	düşünülmüş	EVENT	310
+Event	T6	sürüklemişti	EVENT	445
+Event	T7	Kriz	EVENT	460
+Event	T8	kötüleşmiştir	EVENT	614
+Event	T9	başarı	EVENT	3
+Event	T3	zorlaşmaktaydı	EVENT	356
+Event	T10	büyüdükçe	EVENT	337
+Event	T11	başlandığında	EVENT	272
+Event	T5	fonlar	EVENT	394
+Relation	T1	T0	NoRel	true	görüldü	sahiplenildi
+Relation	T11	T3	NoRel	true	başlandığında	zorlaşmaktaydı
+Relation	T4	T5	NoRel	true	düşünülmüş	fonlar
+Relation	T5	T1	NoRel	true	fonlar	görüldü
+Relation	T8	T10	NoRel	true	kötüleşmiştir	büyüdükçe
+Relation	T8	T7	NoRel	true	kötüleşmiştir	Kriz

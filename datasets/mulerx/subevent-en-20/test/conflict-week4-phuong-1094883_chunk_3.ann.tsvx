@@ -1,0 +1,48 @@
+Text	As soon as the Congress was over , the party launched a wave of weapon snatches , attacks on police , prison escapes and annihilation campaigns .	By 1973 - 74 10 policemen in West Bengal were killed by the party and there were 39 incidents of gun snatching .	But when the state machinery came down on the revolutionaries heavily , the party had to face a serious setback .	Most of the leaders were either incarcerated or killed .	The reorganisation process , therefore , began after August 1977 when the detainees were released .
+Event	T0	launched	EVENT	45
+Event	T1	wave	EVENT	56
+Event	T2	snatches	EVENT	71
+Event	T3	attacks	EVENT	82
+Event	T4	escapes	EVENT	109
+Event	T5	campaigns	EVENT	134
+Event	T6	killed	EVENT	192
+Event	T7	incidents	EVENT	230
+Event	T8	snatching	EVENT	247
+Event	T9	face	EVENT	348
+Event	T10	setback	EVENT	363
+Event	T11	incarcerated	EVENT	405
+Event	T12	killed	EVENT	421
+Event	T13	began	EVENT	471
+Event	T14	released	EVENT	519
+Event	T15	over	EVENT	28
+Event	T16	came down	EVENT	288
+Event	T17	revolutionaries	EVENT	305
+Event	T18	reorganisation	EVENT	434
+Relation	T1	T2	SuperSub	true	wave	snatches
+Relation	T2	T1	SubSuper	true	snatches	wave
+Relation	T1	T3	SuperSub	true	wave	attacks
+Relation	T3	T1	SubSuper	true	attacks	wave
+Relation	T1	T4	SuperSub	true	wave	escapes
+Relation	T4	T1	SubSuper	true	escapes	wave
+Relation	T1	T5	SuperSub	true	wave	campaigns
+Relation	T5	T1	SubSuper	true	campaigns	wave
+Relation	T10	T11	SuperSub	true	setback	incarcerated
+Relation	T11	T10	SubSuper	true	incarcerated	setback
+Relation	T10	T12	SuperSub	true	setback	killed
+Relation	T12	T10	SubSuper	true	killed	setback
+Relation	T1	T10	NoRel	true	wave	setback
+Relation	T10	T5	NoRel	true	setback	campaigns
+Relation	T12	T5	NoRel	true	killed	campaigns
+Relation	T12	T8	NoRel	true	killed	snatching
+Relation	T13	T14	NoRel	true	began	released
+Relation	T13	T18	NoRel	true	began	reorganisation
+Relation	T14	T11	NoRel	true	released	incarcerated
+Relation	T16	T9	NoRel	true	came down	face
+Relation	T18	T6	NoRel	true	reorganisation	killed
+Relation	T2	T11	NoRel	true	snatches	incarcerated
+Relation	T2	T14	NoRel	true	snatches	released
+Relation	T2	T6	NoRel	true	snatches	killed
+Relation	T5	T10	NoRel	true	campaigns	setback
+Relation	T7	T9	NoRel	true	incidents	face
+Relation	T8	T3	NoRel	true	snatching	attacks
+Relation	T9	T6	NoRel	true	face	killed

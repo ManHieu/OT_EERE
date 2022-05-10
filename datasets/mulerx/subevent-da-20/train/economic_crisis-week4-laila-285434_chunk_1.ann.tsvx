@@ -1,0 +1,43 @@
+Text	Hensigten var at centralisere ledelsen af samtlige statens materielle anliggender , hvilket medførte , at man nedlagde Kommercekollegiet og andre hidtil selvstændige institutioner inden for finansstyrelsen , ligesom Finanskollegiet overtog forskellige forretninger , dels af finansiel natur , dels af anden art , som hidtil havde været administreret af kancellierne .	Kollegiet lededes af 4 deputerede og var organiseret i 3 afdelinger ( danske , norske og tyske kammer ) .	Efter Struensees fald i 1772 ændredes Finanskollegiet hurtigt ; forskellige administrationsgrene blev snart efter udskilte fra Kollegiets bestyrelse , og ved Forordningen af 14. januar 1773 gennemførtes en fuldstændig omorganisation .	Herefter oprettede man ved siden af Finanskollegiet følgende 4 institutioner : et rentekammer , et toldkammer , et økonomi- og kommercekollegium og et bjergværks-direktorium , idet forretningerne fordeltes således , at Finanskollegiet kun fik ledelsen af penge- , bank- og møntvæsenet .	Dette kollegium , der var sideordnet med de andre nysnævnte 4 afdelinger , og bestyredes af de deputerede fra Rentekammeret og Toldkammeret , skiftede ved resolution af 2. juni 1784 navn og kaldtes derefter for Finanskassedirektionen .
+Event	T0	medførte	EVENT	92
+Event	T1	nedlagde	EVENT	110
+Event	T2	overtog	EVENT	232
+Event	T3	administreret	EVENT	336
+Event	T4	lededes	EVENT	378
+Event	T5	fald	EVENT	491
+Event	T6	ændredes	EVENT	503
+Event	T7	udskilte	EVENT	588
+Event	T8	gennemførtes	EVENT	664
+Event	T9	omorganisation	EVENT	692
+Event	T10	oprettede	EVENT	718
+Event	T11	fordeltes	EVENT	905
+Event	T12	skiftede	EVENT	1138
+Event	T13	resolution	EVENT	1151
+Event	T14	kaldtes	EVENT	1186
+Event	T15	centralisere	EVENT	17
+Event	T16	Hensigten	EVENT	0
+Event	T17	organiseret	EVENT	409
+Event	T18	Forordningen	EVENT	632
+Event	T19	ledelsen	EVENT	952
+Event	T20	sideordnet	EVENT	1022
+Event	T21	bestyredes	EVENT	1074
+Relation	T6	T7	SuperSub	true	ændredes	udskilte
+Relation	T7	T6	SubSuper	true	udskilte	ændredes
+Relation	T1	T9	NoRel	true	nedlagde	omorganisation
+Relation	T10	T6	NoRel	true	oprettede	ændredes
+Relation	T11	T19	NoRel	true	fordeltes	ledelsen
+Relation	T12	T11	NoRel	true	skiftede	fordeltes
+Relation	T12	T13	NoRel	true	skiftede	resolution
+Relation	T12	T6	NoRel	true	skiftede	ændredes
+Relation	T14	T9	NoRel	true	kaldtes	omorganisation
+Relation	T16	T18	NoRel	true	Hensigten	Forordningen
+Relation	T17	T11	NoRel	true	organiseret	fordeltes
+Relation	T17	T14	NoRel	true	organiseret	kaldtes
+Relation	T19	T21	NoRel	true	ledelsen	bestyredes
+Relation	T21	T0	NoRel	true	bestyredes	medførte
+Relation	T4	T18	NoRel	true	lededes	Forordningen
+Relation	T5	T10	NoRel	true	fald	oprettede
+Relation	T5	T20	NoRel	true	fald	sideordnet
+Relation	T8	T20	NoRel	true	gennemførtes	sideordnet
+Relation	T9	T2	NoRel	true	omorganisation	overtog
+Relation	T9	T5	NoRel	true	omorganisation	fald

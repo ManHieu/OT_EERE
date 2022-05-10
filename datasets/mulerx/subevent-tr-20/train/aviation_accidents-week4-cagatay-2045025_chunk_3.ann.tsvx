@@ -1,0 +1,26 @@
+Text	NATO ise ellerindeki verilerin Rus uçağının Türk hava sahasını ihlâl ettiği yönünde olduğunu açıkladı .	22 Haziran 2012 tarihinde Suriye tarafından ihtar yapılmadan Türk Hava Kuvvetleri'ne ait RF - 4E Phantom keşif uçağı düşürüldü .	Olay çerçevesinde Türk Silahlı Kuvvetleri , Suriye'ye karşı angajman kurallarını değiştirdi ve Suriye sınırı boyunca askeri hazırlık yaptı .	Yeni angajman kuralları gereği , Suriye tarafından sınıra yaklaşan her askeri unsur tehdit olarak değerlendirilerek askeri hedef muamelesi görmeye başladı .	Rusya , Suriye İç Savaşı'na doğrudan müdahil olan birkaç ülkeden biri olmakla birlikte , 30 Eylül 2015 tarihinden itibaren Suriye'de Esad hükûmetinin yanında , IŞİD ve hükûmet karşıtı gruplara karşı hava saldırısına başladı .
+Event	T0	açıkladı	EVENT	93
+Event	T1	ihtar	EVENT	148
+Event	T2	düşürüldü	EVENT	221
+Event	T3	Olay	EVENT	233
+Event	T4	değiştirdi	EVENT	314
+Event	T5	yaptı	EVENT	366
+Event	T6	tehdit	EVENT	458
+Event	T7	başladı	EVENT	521
+Event	T9	ihlâl	EVENT	63
+Event	T10	yaklaşan	EVENT	432
+Event	T11	değerlendirilerek	EVENT	472
+Event	T12	müdahil	EVENT	568
+Event	T8	saldırısına	EVENT	735
+Relation	T1	T12	NoRel	true	ihtar	müdahil
+Relation	T1	T6	NoRel	true	ihtar	tehdit
+Relation	T11	T12	NoRel	true	değerlendirilerek	müdahil
+Relation	T11	T7	NoRel	true	değerlendirilerek	başladı
+Relation	T12	T1	NoRel	true	müdahil	ihtar
+Relation	T3	T0	NoRel	true	Olay	açıkladı
+Relation	T5	T12	NoRel	true	yaptı	müdahil
+Relation	T5	T6	NoRel	true	yaptı	tehdit
+Relation	T6	T11	NoRel	true	tehdit	değerlendirilerek
+Relation	T8	T2	NoRel	true	saldırısına	düşürüldü
+Relation	T9	T12	NoRel	true	ihlâl	müdahil
+Relation	T9	T7	NoRel	true	ihlâl	başladı

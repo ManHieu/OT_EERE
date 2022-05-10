@@ -1,0 +1,31 @@
+Text	El caudal del río estaba muy crecido respecto a su modesto curso en circunstancias normales debido a las lluvias caídas en los días anteriores .	El desastre se cobró 59 fallecidos , 54 de ellos soldados del regimiento de infantería « Castilla » y 3 soldados del regimiento de infantería « Granada » , así como dos civiles .	Hubo 56 heridos , que fueron trasladados al hospital de Almadén ( los críticos ) y a Almadenejos .	El informe del incidente fue conjuntamente redactado por ingenieros empleados por el Estado y por MZA .	Los peritos determinaron que uno de las tres pilares del puente había sido cortado , incitando a la prensa contemporánea a hablar de un presunto sabotaje premeditado .
+Event	T0	caudal	EVENT	3
+Event	T1	crecido	EVENT	29
+Event	T2	caídas	EVENT	113
+Event	T3	desastre	EVENT	148
+Event	T4	cobró	EVENT	160
+Event	T5	fallecidos	EVENT	169
+Event	T6	heridos	EVENT	332
+Event	T7	trasladados	EVENT	353
+Event	T8	informe	EVENT	426
+Event	T9	incidente	EVENT	438
+Event	T10	redactado	EVENT	466
+Event	T11	determinaron	EVENT	539
+Event	T12	cortado	EVENT	602
+Event	T13	incitando	EVENT	612
+Event	T14	hablar	EVENT	650
+Event	T15	premeditado	EVENT	681
+Relation	T0	T13	NoRel	true	caudal	incitando
+Relation	T0	T8	NoRel	true	caudal	informe
+Relation	T12	T2	NoRel	true	cortado	caídas
+Relation	T13	T0	NoRel	true	incitando	caudal
+Relation	T13	T11	NoRel	true	incitando	determinaron
+Relation	T2	T12	NoRel	true	caídas	cortado
+Relation	T5	T7	NoRel	true	fallecidos	trasladados
+Relation	T6	T14	NoRel	true	heridos	hablar
+Relation	T6	T15	NoRel	true	heridos	premeditado
+Relation	T6	T5	NoRel	true	heridos	fallecidos
+Relation	T8	T11	NoRel	true	informe	determinaron
+Relation	T8	T7	NoRel	true	informe	trasladados
+Relation	T9	T4	NoRel	true	incidente	cobró
+Relation	T9	T5	NoRel	true	incidente	fallecidos

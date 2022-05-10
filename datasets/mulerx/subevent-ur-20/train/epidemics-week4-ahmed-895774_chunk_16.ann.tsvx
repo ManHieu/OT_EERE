@@ -1,0 +1,16 @@
+Text	10 مارچ کو انڈین کونسل آف میڈیکل ریسرچ نے کرناٹک میں 3 معاملوں کی تصدیق کی ۔	وزیر اعلیٰ کیرلا پینارائے وجئے_ین نے مزید 6 معاملات کی تصدیق کی ۔	یہ سارے نئے وائرس سے متاثر زدہ پیتانامیتا کے تھے جہاں پہلے ہی 5 مریض موجود تھے ۔	پونے میں مزید تین مریض سامنے آئے ۔	-
+Event	T0	معاملات	EVENT	121
+Event	T2	تصدیق	EVENT	66
+Event	T3	تصدیق	EVENT	132
+Event	T4	معاملوں	EVENT	55
+Event	T5	متاثر	EVENT	164
+Event	T6	موجود	EVENT	212
+Event	T7	سامنے	EVENT	247
+Relation	T0	T5	SuperSub	true	معاملات	متاثر
+Relation	T5	T0	SubSuper	true	متاثر	معاملات
+Relation	T4	T5	SuperSub	true	معاملوں	متاثر
+Relation	T5	T4	SubSuper	true	متاثر	معاملوں
+Relation	T0	T2	NoRel	true	معاملات	تصدیق
+Relation	T2	T3	NoRel	true	تصدیق	تصدیق
+Relation	T3	T6	NoRel	true	تصدیق	موجود
+Relation	T7	T6	NoRel	true	سامنے	موجود

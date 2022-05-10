@@ -1,0 +1,65 @@
+Text	If , however , the plane was more than from the flight - planned course line when the pilot turned the autopilot mode selector from HEADING to INS , the plane would continue to track the heading selected in HEADING mode as long as the actual position of the plane was more than from the programmed INS course line .	The autopilot computer software commanded the INS mode to remain in the " armed " condition until the plane had moved to a position less than from the desired course line .	Once that happened , the INS mode would change from " armed " to " capture " and the plane would track the flight - planned course from then on .	The HEADING mode of the autopilot would normally be engaged sometime after take off to comply with vectors from ATC , and then after receiving appropriate ATC clearance , to guide the plane to intercept the desired INS course line .	The Anchorage VOR beacon was not operational because of maintenance .
+Event	T1	turned	EVENT	92
+Event	T2	selector	EVENT	118
+Event	T3	track	EVENT	177
+Event	T4	selected	EVENT	195
+Event	T6	commanded	EVENT	348
+Event	T7	happened	EVENT	499
+Event	T8	change	EVENT	529
+Event	T9	track	EVENT	586
+Event	T11	engaged	EVENT	687
+Event	T12	receiving	EVENT	768
+Event	T13	clearance	EVENT	794
+Event	T14	guide	EVENT	809
+Event	T15	intercept	EVENT	828
+Event	T16	desired	EVENT	842
+Event	T17	maintenance	EVENT	924
+Event	T18	more than	EVENT	29
+Event	T19	more than	EVENT	268
+Event	T20	flight - planned course line	EVENT	48
+Event	T5	programmed INS course line	EVENT	287
+Event	T21	remain	EVENT	374
+Event	T22	" armed " condition	EVENT	388
+Event	T23	moved	EVENT	428
+Event	T24	desired course line	EVENT	467
+Event	T25	armed	EVENT	543
+Event	T26	capture	EVENT	556
+Event	T10	flight - planned course	EVENT	596
+Event	T27	take off	EVENT	710
+Event	T28	comply	EVENT	722
+Event	T29	not operational	EVENT	897
+Relation	T18	T1	SuperSub	true	more than	turned
+Relation	T1	T18	SubSuper	true	turned	more than
+Relation	T4	T3	SuperSub	true	selected	track
+Relation	T3	T4	SubSuper	true	track	selected
+Relation	T19	T5	SuperSub	true	more than	programmed INS course line
+Relation	T5	T19	SubSuper	true	programmed INS course line	more than
+Relation	T22	T23	SuperSub	true	" armed " condition	moved
+Relation	T23	T22	SubSuper	true	moved	" armed " condition
+Relation	T12	T14	SuperSub	true	receiving	guide
+Relation	T14	T12	SubSuper	true	guide	receiving
+Relation	T1	T23	NoRel	true	turned	moved
+Relation	T1	T28	NoRel	true	turned	comply
+Relation	T1	T6	NoRel	true	turned	commanded
+Relation	T10	T25	NoRel	true	flight - planned course	armed
+Relation	T12	T23	NoRel	true	receiving	moved
+Relation	T13	T25	NoRel	true	clearance	armed
+Relation	T17	T27	NoRel	true	maintenance	take off
+Relation	T17	T28	NoRel	true	maintenance	comply
+Relation	T18	T15	NoRel	true	more than	intercept
+Relation	T19	T27	NoRel	true	more than	take off
+Relation	T2	T21	NoRel	true	selector	remain
+Relation	T20	T16	NoRel	true	flight - planned course line	desired
+Relation	T21	T15	NoRel	true	remain	intercept
+Relation	T21	T28	NoRel	true	remain	comply
+Relation	T21	T4	NoRel	true	remain	selected
+Relation	T23	T6	NoRel	true	moved	commanded
+Relation	T26	T22	NoRel	true	capture	" armed " condition
+Relation	T27	T5	NoRel	true	take off	programmed INS course line
+Relation	T4	T10	NoRel	true	selected	flight - planned course
+Relation	T4	T11	NoRel	true	selected	engaged
+Relation	T4	T22	NoRel	true	selected	" armed " condition
+Relation	T5	T12	NoRel	true	programmed INS course line	receiving
+Relation	T8	T12	NoRel	true	change	receiving
+Relation	T8	T3	NoRel	true	change	track
+Relation	T9	T23	NoRel	true	track	moved

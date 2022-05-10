@@ -1,0 +1,21 @@
+Text	Haydar , Uzun Hasan’ın kızı Halime Begüm Âlemşah’la evlendi .	Bu evlilikten Şah İsmail dünyaya geldi .	Âkkoyunlularla akrabalık bağlarını pekiştirip gücünü arttıran Haydar , babasının öcünü almak için Şirvan hükümdarı Ferruh Yesar üzerine yürüdüyse de 1488’de yapılan savaşta öldürüldü .	Bundan bir müddet sonra hareketin başına geçen İsmail , Akkoyunlu Devleti’nin içinde bulunduğu karışıklıktan istifade ederek , çoğu Anadolu’da bulunan birçok Türkmen kabilesini etrafında topladı .	Karabağ ve Şirvan’ın bir kısmını ele geçirerek Azerbaycan üzerine yürüdü .
+Event	T0	evlendi	EVENT	52
+Event	T1	geldi	EVENT	95
+Event	T4	yürüdüyse	EVENT	239
+Event	T5	öldürüldü	EVENT	276
+Event	T7	istifade	EVENT	397
+Event	T8	topladı	EVENT	475
+Event	T9	yürüdü	EVENT	551
+Event	T2	arttıran	EVENT	156
+Event	T3	savaşta	EVENT	268
+Event	T6	geçen	EVENT	329
+Event	T10	karışıklıktan	EVENT	383
+Event	T11	geçirerek	EVENT	522
+Relation	T0	T1	NoRel	true	evlendi	geldi
+Relation	T0	T2	NoRel	true	evlendi	arttıran
+Relation	T0	T8	NoRel	true	evlendi	topladı
+Relation	T10	T11	NoRel	true	karışıklıktan	geçirerek
+Relation	T11	T4	NoRel	true	geçirerek	yürüdüyse
+Relation	T2	T6	NoRel	true	arttıran	geçen
+Relation	T3	T6	NoRel	true	savaşta	geçen
+Relation	T3	T9	NoRel	true	savaşta	yürüdü

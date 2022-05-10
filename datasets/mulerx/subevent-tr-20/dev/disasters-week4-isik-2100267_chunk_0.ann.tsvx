@@ -1,0 +1,19 @@
+Text	küçükresim 2010 EYJAFJALLAJÖKULL YANARDAĞ PATLAMASI , İzlanda'da yer alan bir yanardağ olan Eyjafjallajökull yanardağının patlama olayıdır .	Yanardağın patlaması sonucunda Avrupa'da uçak ulaşımı durmuştur .	İlk yanardağın hareketliliği Aralık 2009'a doğru başlamış ve 20 Mart 2010 günü patlamaya başlamış ve 23 Haziran 2010 tarihine kadar patlamaya devam etmiştir .	Kategori : İzlanda'da volkanizma Kategori : Eyjafjallajökull Eyjafjallajökull yanardağ patlaması Kategori : 2010'daki doğal afetler	
+Event	T0	PATLAMASI	EVENT	42
+Event	T1	olayıdır	EVENT	130
+Event	T2	durmuştur	EVENT	195
+Event	T3	hareketliliği	EVENT	222
+Event	T4	başlamış	EVENT	256
+Event	T5	başlamış	EVENT	296
+Event	T6	patlaması	EVENT	453
+Event	T7	afetler	EVENT	490
+Event	T8	etmiştir	EVENT	355
+Relation	T0	T2	SuperSub	true	PATLAMASI	durmuştur
+Relation	T2	T0	SubSuper	true	durmuştur	PATLAMASI
+Relation	T0	T5	SuperSub	true	PATLAMASI	başlamış
+Relation	T5	T0	SubSuper	true	başlamış	PATLAMASI
+Relation	T0	T8	SuperSub	true	PATLAMASI	etmiştir
+Relation	T8	T0	SubSuper	true	etmiştir	PATLAMASI
+Relation	T0	T6	NoRel	true	PATLAMASI	patlaması
+Relation	T4	T2	NoRel	true	başlamış	durmuştur
+Relation	T8	T2	NoRel	true	etmiştir	durmuştur

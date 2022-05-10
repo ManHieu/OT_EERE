@@ -1,0 +1,15 @@
+Text	شامی میڈیا نے تمام 30 شامی ہلاک شدہ فوجیوں کے ناموں کی فہرست جاری کردی ہے -	سوہر کے مطابق ہلاک شدہ افراد میں 13 شامی آفیسرز بھی شامل تھے -	زمرہ : 2015 میں شام زمرہ : 2015ء کے فضائی حادثات و واقعات زمرہ : برہنگی زمرہ : جنسی جرائم زمرہ : شام میں ہوائی حادثات و واقعات		
+Event	T0	کردی	EVENT	66
+Event	T2	حادثات	EVENT	181
+Event	T3	جرائم	EVENT	223
+Event	T4	حادثات	EVENT	250
+Event	T5	واقعات	EVENT	259
+Event	T6	ہلاک	EVENT	27
+Event	T7	ہلاک	EVENT	90
+Event	T1	شامل	EVENT	128
+Event	T8	واقعات	EVENT	190
+Relation	T3	T4	NoRel	true	جرائم	حادثات
+Relation	T3	T7	NoRel	true	جرائم	ہلاک
+Relation	T5	T1	NoRel	true	واقعات	شامل
+Relation	T6	T0	NoRel	true	ہلاک	کردی
+Relation	T7	T2	NoRel	true	ہلاک	حادثات

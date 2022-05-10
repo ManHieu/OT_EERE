@@ -1,0 +1,25 @@
+Text	Ömrünün sonuna dek yazacağı ‘ El Mücahit’in yayın kurulunun bir parçası oldu .	Geçici Cezayir Hükümeti’nin Gana Büyükelçisi olarak da hizmet gördü ve Accra , Conakry , Addis Ababa , Leopoldville ( bugün Kinşasa ) , Kahire ve Trablus’ta konferanslara katıldı .	Bu dönemdeki kısa yazılarından çoğu , ölümünden sonra , Toward the African Revolution ( ‘ Afrika Devrimi’ne Doğru ) kitabında toplandı .	Bu kitapta Fanon , savaş stratejisi uzmanı olarak bile belirginleşir ; bir bölümde , savaşa güneyden cephe açmayı ve erzak hattının nasıl oluşturulacağını tartışır .	Tunus Kenti’ne dönüşünde , üçüncü bir cephe açmak için Sahara’daki yorucu yolculuğundan sonra , Fanon’a , kan kanseri tanısı kondu .
+Event	T1	gördü	EVENT	141
+Event	T2	katıldı	EVENT	250
+Event	T3	ölümünden	EVENT	298
+Event	T4	toplandı	EVENT	386
+Event	T5	tartışır	EVENT	552
+Event	T6	açmak	EVENT	607
+Event	T7	yolculuğundan	EVENT	637
+Event	T8	kondu	EVENT	688
+Event	T9	yazacağı	EVENT	19
+Event	T10	konferanslara	EVENT	236
+Event	T11	savaşa	EVENT	482
+Event	T12	belirginleşir	EVENT	452
+Event	T13	dönüşünde	EVENT	578
+Relation	T13	T6	SuperSub	true	dönüşünde	açmak
+Relation	T6	T13	SubSuper	true	açmak	dönüşünde
+Relation	T13	T7	SuperSub	true	dönüşünde	yolculuğundan
+Relation	T7	T13	SubSuper	true	yolculuğundan	dönüşünde
+Relation	T1	T8	NoRel	true	gördü	kondu
+Relation	T10	T12	NoRel	true	konferanslara	belirginleşir
+Relation	T10	T9	NoRel	true	konferanslara	yazacağı
+Relation	T11	T7	NoRel	true	savaşa	yolculuğundan
+Relation	T12	T7	NoRel	true	belirginleşir	yolculuğundan
+Relation	T2	T10	NoRel	true	katıldı	konferanslara
+Relation	T5	T12	NoRel	true	tartışır	belirginleşir

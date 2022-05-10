@@ -1,0 +1,20 @@
+Text	El DESASTRE DE LEÓPOLIS ocurrió el sábado 27 de julio de 2002 cuando un avión caza Sukhoi Su-27 que realizaba maniobras en una exhibición aérea en Leópolis , Ucrania , se fue a tierra en donde se encontraban los espectadores .	Murieron 77 personas y 543 quedaron heridas .	Es el peor accidente aéreo durante una exhibición acrobática en la historia .	La aeronave , pilotada por dos experimentados pilotos , realizaba maniobras a baja altura y en una de ellas el ala izquierda rozó el suelo .	Milésimas de segundo después , los dos pilotos se eyectaron .
+Event	T0	DESASTRE	EVENT	3
+Event	T1	ocurrió	EVENT	24
+Event	T2	caza	EVENT	78
+Event	T3	maniobras	EVENT	110
+Event	T4	exhibición	EVENT	127
+Event	T5	fue	EVENT	171
+Event	T6	Murieron	EVENT	227
+Event	T7	heridas	EVENT	263
+Event	T8	exhibición	EVENT	312
+Event	T9	pilotada	EVENT	365
+Event	T10	maniobras	EVENT	417
+Event	T11	rozó	EVENT	476
+Event	T12	eyectaron	EVENT	542
+Relation	T4	T1	NoRel	true	exhibición	ocurrió
+Relation	T6	T9	NoRel	true	Murieron	pilotada
+Relation	T7	T2	NoRel	true	heridas	caza
+Relation	T7	T5	NoRel	true	heridas	fue
+Relation	T7	T6	NoRel	true	heridas	Murieron
+Relation	T9	T10	NoRel	true	pilotada	maniobras

@@ -1,0 +1,18 @@
+Text	Hüsrev , Pers generali Şahrbaraz'ın önderliğindeki Herakleios'un generallerinin beceriksizliğini Bizans Suriye'sine saldırmak için kullandı .	Herakleios , Antakya'daki istilayı durdurmaya çalıştı ancak Aziz Syacion'lu Theodorus'un kutsamasına rağmen , Herakleios ve Nicetas komutasında Bizans güçleri Şahin'in elinde ciddi bir yenilgi yaşadı .	Savaşın ayrıntıları bilinmiyor .	Bu zaferden sonra Persler şehri yağmaladı , Antakya Patriğini öldürdü ve birçok vatandaşı tehcir ettiler .	Roma kuvvetleri , başlangıçtaki başarısına rağmen , bölgeyi hemen Antakya'nın kuzeyinde Gülek Boğazı'nda savunmaya çalışırken kaybetti .
+Event	T0	saldırmak	EVENT	116
+Event	T1	kullandı	EVENT	131
+Event	T2	çalıştı	EVENT	188
+Event	T3	kutsamasına	EVENT	231
+Event	T4	yaşadı	EVENT	335
+Event	T5	Savaşın	EVENT	344
+Event	T6	bilinmiyor	EVENT	364
+Event	T7	yağmaladı	EVENT	409
+Event	T8	öldürdü	EVENT	439
+Event	T9	ettiler	EVENT	474
+Event	T10	kaybetti	EVENT	610
+Event	T11	zaferden	EVENT	380
+Event	T12	başarısına	EVENT	516
+Relation	T0	T1	NoRel	true	saldırmak	kullandı
+Relation	T2	T10	NoRel	true	çalıştı	kaybetti
+Relation	T3	T5	NoRel	true	kutsamasına	Savaşın
+Relation	T3	T9	NoRel	true	kutsamasına	ettiler

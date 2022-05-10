@@ -1,0 +1,38 @@
+Text	Siwiec planeó su autoinmolación con meses de anticipación , redactando un último testamento en abril y dejando declaraciones escritas y grabadas que explicaban su repulsión ante la invasión de Checoslovaquia por el Pacto de Varsovia y la participación de la República Popular de Polonia en el mismo .	Siwiec obtuvo pases para un festival nacional de la cosecha que tuvo lugar el 8 de septiembre de 1968 en el Estadio del 10. º Aniversario en Varsovia .	Su objetivo era que su acto fuera presenciado por cerca de 100.000 espectadores , entre ellos numerosos periodistas y la dirección nacional del Partido de los Trabajadores Polacos .	Se prendió fuego durante uno de los bailes del festival con un solvente inflamable .	Este método de protesta probablemente se inspiró en una serie reciente de protestas similares de monjes budistas en Vietnam , especialmente el de Thích Quảng Đức .
+Event	T0	planeó	EVENT	7
+Event	T1	autoinmolación	EVENT	17
+Event	T2	redactando	EVENT	60
+Event	T3	escritas	EVENT	125
+Event	T4	grabadas	EVENT	136
+Event	T5	explicaban	EVENT	149
+Event	T6	repulsión	EVENT	163
+Event	T7	invasión	EVENT	181
+Event	T8	participación	EVENT	238
+Event	T9	pases	EVENT	315
+Event	T10	festival	EVENT	329
+Event	T11	cosecha	EVENT	353
+Event	T12	acto	EVENT	476
+Event	T13	presenciado	EVENT	487
+Event	T14	bailes	EVENT	671
+Event	T15	protesta	EVENT	735
+Event	T16	inspiró	EVENT	761
+Event	T17	protestas	EVENT	794
+Event	T18	fuego	EVENT	646
+Relation	T17	T16	SuperSub	true	protestas	inspiró
+Relation	T16	T17	SubSuper	true	inspiró	protestas
+Relation	T1	T14	NoRel	true	autoinmolación	bailes
+Relation	T11	T6	NoRel	true	cosecha	repulsión
+Relation	T12	T1	NoRel	true	acto	autoinmolación
+Relation	T13	T2	NoRel	true	presenciado	redactando
+Relation	T15	T10	NoRel	true	protesta	festival
+Relation	T15	T5	NoRel	true	protesta	explicaban
+Relation	T16	T0	NoRel	true	inspiró	planeó
+Relation	T17	T13	NoRel	true	protestas	presenciado
+Relation	T18	T10	NoRel	true	fuego	festival
+Relation	T18	T2	NoRel	true	fuego	redactando
+Relation	T4	T18	NoRel	true	grabadas	fuego
+Relation	T5	T11	NoRel	true	explicaban	cosecha
+Relation	T5	T6	NoRel	true	explicaban	repulsión
+Relation	T7	T6	NoRel	true	invasión	repulsión
+Relation	T8	T4	NoRel	true	participación	grabadas
+Relation	T9	T17	NoRel	true	pases	protestas

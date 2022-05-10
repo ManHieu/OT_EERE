@@ -1,0 +1,27 @@
+Text	Moğollara karşı koyabilecek önemli süvari kuvveti oluşturan Kumanlar Balkanlara kaçar ve geçtikleri yerleri yağmalarlar .	Macar kırsal hayatını etkileyen bu iç karışıklık sonucunda artık Macar ordusu Moğollar karşısında yapayalnız kalmıştır .	Hernád Nehri kıyılarında 11 Nisan 1241 tarihinde yapılan Mohi Muharebesinde Moğollar üstünlük sağlar .	Kral Béla muhafızlarıyla kaçar ancak ordusu Moğollar tarafından tamamen imha edilir .	Bundan sonra Moğollar Macar ovasını , Karpatları ve Transilvanya’yı işgal ederler .
+Event	T0	kaçar	EVENT	80
+Event	T1	geçtikleri	EVENT	89
+Event	T2	yağmalarlar	EVENT	108
+Event	T3	etkileyen	EVENT	144
+Event	T4	karışıklık	EVENT	160
+Event	T7	sağlar	EVENT	337
+Event	T8	kaçar	EVENT	371
+Event	T9	edilir	EVENT	423
+Event	T10	kalmıştır	EVENT	231
+Event	T6	Mohi Muharebesinde	EVENT	300
+Event	T11	işgal	EVENT	500
+Relation	T0	T2	SuperSub	true	kaçar	yağmalarlar
+Relation	T2	T0	SubSuper	true	yağmalarlar	kaçar
+Relation	T0	T1	SuperSub	true	kaçar	geçtikleri
+Relation	T1	T0	SubSuper	true	geçtikleri	kaçar
+Relation	T6	T9	SuperSub	true	Mohi Muharebesinde	edilir
+Relation	T9	T6	SubSuper	true	edilir	Mohi Muharebesinde
+Relation	T6	T7	SuperSub	true	Mohi Muharebesinde	sağlar
+Relation	T7	T6	SubSuper	true	sağlar	Mohi Muharebesinde
+Relation	T6	T8	SuperSub	true	Mohi Muharebesinde	kaçar
+Relation	T8	T6	SubSuper	true	kaçar	Mohi Muharebesinde
+Relation	T6	T11	SuperSub	true	Mohi Muharebesinde	işgal
+Relation	T11	T6	SubSuper	true	işgal	Mohi Muharebesinde
+Relation	T10	T6	NoRel	true	kalmıştır	Mohi Muharebesinde
+Relation	T11	T3	NoRel	true	işgal	etkileyen
+Relation	T2	T6	NoRel	true	yağmalarlar	Mohi Muharebesinde

@@ -1,0 +1,44 @@
+Text	While the Congonhas runway was under renovation , the 2006 – 07 Brazilian aviation crisis continued to advance , meaning that the runway was open for use despite the incomplete refit .	On July 16 , the day before the crash , four pilots who landed at the airport reported poor braking , including a TAM pilot , who managed to stop his aircraft just a few metres before the end of the runway .	Between 12:25 pm and 12:28 pm , Infraero suspended operations at the airport to examine the runway conditions , and cleared it after reporting " no puddles and water slides . "	At 12:42 local time the same day , Pantanal Linhas Aéreas Flight 4763 , an ATR 42- 300 , hydroplaned after touching down on runway 17 R .	The aircraft veered to the left , struck a concrete box and a small light pole , and entered the grass between the runway and taxiway .
+Event	T0	renovation	EVENT	37
+Event	T1	advance	EVENT	103
+Event	T2	refit	EVENT	177
+Event	T3	crash	EVENT	217
+Event	T4	landed	EVENT	241
+Event	T6	managed	EVENT	315
+Event	T7	stop	EVENT	326
+Event	T8	operations	EVENT	444
+Event	T9	examine	EVENT	473
+Event	T10	cleared	EVENT	509
+Event	T11	reporting	EVENT	526
+Event	T12	puddles	EVENT	541
+Event	T13	slides	EVENT	559
+Event	T14	hydroplaned	EVENT	659
+Event	T15	veered	EVENT	721
+Event	T16	struck	EVENT	742
+Event	T17	entered	EVENT	793
+Event	T18	2006 – 07 Brazilian aviation crisis	EVENT	54
+Event	T19	open	EVENT	141
+Event	T5	poor braking	EVENT	272
+Event	T20	suspended	EVENT	434
+Relation	T9	T20	SuperSub	true	examine	suspended
+Relation	T20	T9	SubSuper	true	suspended	examine
+Relation	T1	T6	NoRel	true	advance	managed
+Relation	T11	T3	NoRel	true	reporting	crash
+Relation	T11	T9	NoRel	true	reporting	examine
+Relation	T12	T3	NoRel	true	puddles	crash
+Relation	T13	T16	NoRel	true	slides	struck
+Relation	T14	T3	NoRel	true	hydroplaned	crash
+Relation	T16	T19	NoRel	true	struck	open
+Relation	T17	T12	NoRel	true	entered	puddles
+Relation	T17	T13	NoRel	true	entered	slides
+Relation	T17	T7	NoRel	true	entered	stop
+Relation	T18	T15	NoRel	true	2006 – 07 Brazilian aviation crisis	veered
+Relation	T19	T15	NoRel	true	open	veered
+Relation	T3	T11	NoRel	true	crash	reporting
+Relation	T3	T6	NoRel	true	crash	managed
+Relation	T4	T14	NoRel	true	landed	hydroplaned
+Relation	T5	T14	NoRel	true	poor braking	hydroplaned
+Relation	T5	T6	NoRel	true	poor braking	managed
+Relation	T7	T14	NoRel	true	stop	hydroplaned
+Relation	T9	T17	NoRel	true	examine	entered
+Relation	T9	T8	NoRel	true	examine	operations

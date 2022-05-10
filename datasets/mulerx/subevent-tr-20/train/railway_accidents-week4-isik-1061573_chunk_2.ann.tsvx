@@ -1,0 +1,17 @@
+Text	- 25px 11 Ağustos 2005 – Otomobil kullanan Horsham’da parlayan ışıkları dikkate almadı .	- 25px 25 May 2006 - Lismore level crossing accident – tren ve kamyon siste korunmasız hemzemin geçitte çarpıştı .	Tren yığıldı .	Kamyon sürücüsü öldü .	- 25px 5 Haziran 2007 - Kerang tren çarpışması — - Kamyon tarafından vagonlar dilimlendiğinde 11 tren yolcusu öldü .
+Event	T0	kullanan	EVENT	34
+Event	T1	accident	EVENT	133
+Event	T2	çarpıştı	EVENT	193
+Event	T3	yığıldı	EVENT	209
+Event	T4	öldü	EVENT	235
+Event	T5	çarpışması	EVENT	278
+Event	T6	dilimlendiğinde	EVENT	320
+Event	T7	öldü	EVENT	352
+Event	T8	parlayan	EVENT	54
+Event	T9	siste	EVENT	159
+Relation	T2	T1	NoRel	true	çarpıştı	accident
+Relation	T2	T8	NoRel	true	çarpıştı	parlayan
+Relation	T5	T3	NoRel	true	çarpışması	yığıldı
+Relation	T6	T2	NoRel	true	dilimlendiğinde	çarpıştı
+Relation	T6	T5	NoRel	true	dilimlendiğinde	çarpışması
+Relation	T9	T6	NoRel	true	siste	dilimlendiğinde

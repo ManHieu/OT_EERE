@@ -1,0 +1,11 @@
+Text	En homenaje a los caídos , la estación Alpatacal cambió su nombre por el de « estación Cadetes de Chile » .	Esta tragedia ha calado hondo tanto en Argentina como en Chile .	Por ejemplo en Argentina hasta hay un club de fútbol denominado Cadetes de Chile .	También se ha hecho un documental llamado _ Caballos en llamas _ del director argentino Daniel Pacheco .	Alpatacal Categoría : Argentina en 1927 Categoría : Chile en 1927 Categoría : Departamento La Paz ( Mendoza ) Categoría : Desastres en 1927 Categoría : Historia de la provincia de Mendoza
+Event	T0	homenaje	EVENT	3
+Event	T1	caídos	EVENT	18
+Event	T2	cambió	EVENT	49
+Event	T3	tragedia	EVENT	113
+Event	T4	calado	EVENT	125
+Event	T5	hecho	EVENT	270
+Event	T7	Desastres	EVENT	483
+Relation	T0	T2	SuperSub	true	homenaje	cambió
+Relation	T2	T0	SubSuper	true	cambió	homenaje
+Relation	T2	T5	NoRel	true	cambió	hecho

@@ -1,0 +1,38 @@
+Text	- 17 Ocak , 1989 - Huinan hemzemin geçidi felaketi – Bir yerel otobüs yolcu treniyle çarpıştı , en az otuz iki ölü .	- 16 Eylül , 1999 - Yibin hemzemin geçidi felaketi – Bir yolcu treni , bir okul otobüsüne çarptığında , en az yirmi beş ölü ve yirmi dört yaralı .	- 24 Aralık , 2001 - Artux hemzemin geçidi felaketi - Xinjiang Uygur da bir minibüs Ürümqi - Kashi yolcu treniyle çarpıştı , en az yirmi sekiz ölü ve on bir yaralı .	- 7 Kasım , 1997 - Holguin hemzemin geçidi felaketi - Havana - Santiago de Cuba’da bir yerel otobüs , yolcu trenin çarptı , en az elli altı ölü ve altı yaralı .	- October 6 , 2007 - Yara hemzemin geçit felaketi - Bir yerel otobüs Santiago de Cuba - Manzanillo yolcu treniyle çarpıştı , en az yirmi sekiz ölü ve yetmiş üç yaralı .
+Event	T0	felaketi	EVENT	42
+Event	T1	çarpıştı	EVENT	85
+Event	T2	ölü	EVENT	111
+Event	T3	felaketi	EVENT	159
+Event	T4	çarptığında	EVENT	207
+Event	T5	ölü	EVENT	237
+Event	T6	yaralı	EVENT	255
+Event	T7	felaketi	EVENT	307
+Event	T8	çarpıştı	EVENT	378
+Event	T9	ölü	EVENT	407
+Event	T10	yaralı	EVENT	421
+Event	T11	felaketi	EVENT	473
+Event	T12	çarptı	EVENT	545
+Event	T13	ölü	EVENT	570
+Event	T14	yaralı	EVENT	582
+Event	T15	felaketi	EVENT	632
+Event	T16	çarpıştı	EVENT	705
+Event	T17	ölü	EVENT	734
+Event	T18	yaralı	EVENT	751
+Relation	T0	T2	NoRel	true	felaketi	ölü
+Relation	T11	T10	NoRel	true	felaketi	yaralı
+Relation	T11	T4	NoRel	true	felaketi	çarptığında
+Relation	T11	T6	NoRel	true	felaketi	yaralı
+Relation	T12	T2	NoRel	true	çarptı	ölü
+Relation	T12	T7	NoRel	true	çarptı	felaketi
+Relation	T15	T5	NoRel	true	felaketi	ölü
+Relation	T16	T0	NoRel	true	çarpıştı	felaketi
+Relation	T16	T3	NoRel	true	çarpıştı	felaketi
+Relation	T18	T7	NoRel	true	yaralı	felaketi
+Relation	T3	T13	NoRel	true	felaketi	ölü
+Relation	T4	T0	NoRel	true	çarptığında	felaketi
+Relation	T4	T10	NoRel	true	çarptığında	yaralı
+Relation	T5	T1	NoRel	true	ölü	çarpıştı
+Relation	T6	T14	NoRel	true	yaralı	yaralı
+Relation	T6	T3	NoRel	true	yaralı	felaketi
+Relation	T7	T10	NoRel	true	felaketi	yaralı
+Relation	T7	T3	NoRel	true	felaketi	felaketi

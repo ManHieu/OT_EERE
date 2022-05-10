@@ -1,0 +1,34 @@
+Text	ہندوستان میں انگریزوں کے قانون کی مساوات اور بہتر انتظامی اقدامات کی بدولت اس سوچ کو قتل عام کا دائرہ وادی سندھ تک پھیلانے کا موقع نہ مل سکا ۔	کرم ایجنسی کے بعد باقی قبائل نے بھی انگریز حکومت کا حصہ بننے کا فیصلہ کیا ۔	اس تاریخی عمل جس کا آغاز شیعہ دشمنی سے ہوا ، نے مستقبل میں بننے والے ملک پاکستان کی شمال مغربی سرحد کو متعین کیا ۔	اس تاریخ کا ہی نتیجہ ہے کہ ریاض بسرا سے لیکر ملک اسحاق اور داود بادینی تک جیسے تربیت یافتہ قاتلوں کو قندھار کے دیوبندی علاقوں میں پناہ ملتی رہی ہے ۔	بیسویں صدی کا آغاز فرقہ وارانہ کشیدگی سے ہوا ، فرقہ وارانہ منافرت کا جو بیج شاہ ولی اللہ نے امرا کی جنگ کا فریق بن کر بویا تھا ، وہ غربت اور کم علمی کے دور میں تناور درخت بن چکا تھا ۔
+Event	T0	سوچ	EVENT	78
+Event	T1	پھیلانے	EVENT	115
+Event	T4	عمل	EVENT	229
+Event	T5	آغاز	EVENT	239
+Event	T6	دشمنی	EVENT	249
+Event	T8	بننے	EVENT	278
+Event	T10	آغاز	EVENT	497
+Event	T11	کشیدگی	EVENT	514
+Event	T13	جنگ	EVENT	583
+Event	T14	بن	EVENT	595
+Event	T16	قتل عام	EVENT	85
+Event	T15	حصہ	EVENT	195
+Event	T17	فیصلہ	EVENT	207
+Event	T2	متعین	EVENT	322
+Event	T3	پناہ	EVENT	464
+Event	T7	بن	EVENT	654
+Event	T9	بویا	EVENT	601
+Relation	T4	T2	SuperSub	true	عمل	متعین
+Relation	T2	T4	SubSuper	true	متعین	عمل
+Relation	T1	T3	NoRel	true	پھیلانے	پناہ
+Relation	T1	T4	NoRel	true	پھیلانے	عمل
+Relation	T1	T9	NoRel	true	پھیلانے	بویا
+Relation	T14	T5	NoRel	true	بن	آغاز
+Relation	T16	T14	NoRel	true	قتل عام	بن
+Relation	T2	T0	NoRel	true	متعین	سوچ
+Relation	T2	T6	NoRel	true	متعین	دشمنی
+Relation	T3	T15	NoRel	true	پناہ	حصہ
+Relation	T5	T17	NoRel	true	آغاز	فیصلہ
+Relation	T6	T14	NoRel	true	دشمنی	بن
+Relation	T7	T8	NoRel	true	بن	بننے
+Relation	T8	T3	NoRel	true	بننے	پناہ
+Relation	T8	T6	NoRel	true	بننے	دشمنی
+Relation	T9	T13	NoRel	true	بویا	جنگ

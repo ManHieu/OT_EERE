@@ -1,0 +1,39 @@
+Text	Heiberg udgav også denne sags akter , det skete i skriftet _ Procedure og Dom ved Hof- og Stads-Retten i den af Generalfiskalen anlagde Sag angaaende Visen " Vor Klub er dog en herlig Sag etc " _ ( 1795 ) , denne gang med udførlige kommentarer og indledning , hvor Heiberg ofte satirisk og spøgefuldt giver sin opfattelse af sagen .	Fra nu af synes Heiberg at have besluttet ikke mere at optræde som offentlig skribent .	Forholdene medførte dog , at han ikke vedblivende kunne holde sig tilbage .	Den vindige unge republikaner Malthe Conrad Bruun , der som dramaturg støttedes af Rahbek , havde i tidskriftet _ Svada _ væltet sig ind på Heiberg , fordi denne forfægtede madame Preislers ret til at spille Sigbrit i Samsøes tragedie _ Dyveke _ .	Heiberg var ikke sen til at give den unge mand svar på tiltale , og Bruun replicerede atter på en uforskammet måde .
+Event	T0	udgav	EVENT	8
+Event	T1	skete	EVENT	42
+Event	T10	medførte	EVENT	432
+Event	T11	støttedes	EVENT	567
+Event	T12	væltet	EVENT	619
+Event	T13	forfægtede	EVENT	659
+Event	T14	ret	EVENT	687
+Event	T15	spille	EVENT	698
+Event	T16	tragedie	EVENT	723
+Event	T17	give	EVENT	773
+Event	T19	replicerede	EVENT	819
+Event	T2	Dom	EVENT	74
+Event	T3	kommentarer	EVENT	232
+Event	T4	indledning	EVENT	247
+Event	T5	giver	EVENT	301
+Event	T6	opfattelse	EVENT	311
+Event	T7	synes	EVENT	343
+Event	T8	besluttet	EVENT	365
+Event	T9	optræde	EVENT	388
+Relation	T0	T6	SuperSub	true	udgav	opfattelse
+Relation	T6	T0	SubSuper	true	opfattelse	udgav
+Relation	T0	T19	NoRel	true	udgav	replicerede
+Relation	T10	T1	NoRel	true	medførte	skete
+Relation	T11	T17	NoRel	true	støttedes	give
+Relation	T12	T5	NoRel	true	væltet	giver
+Relation	T13	T10	NoRel	true	forfægtede	medførte
+Relation	T16	T8	NoRel	true	tragedie	besluttet
+Relation	T17	T16	NoRel	true	give	tragedie
+Relation	T19	T0	NoRel	true	replicerede	udgav
+Relation	T4	T1	NoRel	true	indledning	skete
+Relation	T4	T15	NoRel	true	indledning	spille
+Relation	T5	T8	NoRel	true	giver	besluttet
+Relation	T6	T19	NoRel	true	opfattelse	replicerede
+Relation	T7	T13	NoRel	true	synes	forfægtede
+Relation	T8	T1	NoRel	true	besluttet	skete
+Relation	T8	T14	NoRel	true	besluttet	ret
+Relation	T8	T7	NoRel	true	besluttet	synes
+Relation	T9	T6	NoRel	true	optræde	opfattelse

@@ -1,0 +1,35 @@
+Text	Bu sırada Osmanlıların teslim çağrısı 25 Haziran'da Negroponte kalesindeki Venedikliler tarafından reddedildi ve topçular kaleyi şiddetle dövmeye başladılar .	2.000 atlı da adaya yayılarak tüm yerleşimleri istila ettiler .	27 Haziran , 30 Haziran ve 5 Temmuz'daki üç taarruz savunmacılar tarafından püskürtülürken , garnizon Türk hatlarını geçen ulaklar sayesinde Niccolo da Canale'ye haber ulaştırarak yardım istemeyi başardıysa da , Venedik donanması yardıma gelmedi .	Bu arada 8 Temmuz'daki dördüncü taarruz da püskürtüldüyse de , ağır kayıplara uğrayan Venedik garnizonu direnme gücünün sonuna gelmişti .	11 Temmuz'da genel taarruz için tüm birliklerini karaya çıkaran Fatih Sultan Mehmet 12 Temmuz'da saldırı emrini verdi .
+Event	T0	çağrısı	EVENT	30
+Event	T1	reddedildi	EVENT	99
+Event	T2	ettiler	EVENT	213
+Event	T3	taarruz	EVENT	267
+Event	T4	püskürtülürken	EVENT	299
+Event	T5	geçen	EVENT	340
+Event	T6	başardıysa	EVENT	419
+Event	T8	taarruz	EVENT	503
+Event	T9	püskürtüldüyse	EVENT	514
+Event	T10	kayıplara	EVENT	539
+Event	T11	direnme	EVENT	575
+Event	T12	gelmişti	EVENT	598
+Event	T13	taarruz	EVENT	628
+Event	T14	saldırı	EVENT	706
+Event	T15	verdi	EVENT	721
+Event	T16	başladılar	EVENT	146
+Event	T17	yayılarak	EVENT	179
+Event	T18	ulaştırarak	EVENT	391
+Event	T7	çıkaran	EVENT	665
+Relation	T0	T16	NoRel	true	çağrısı	başladılar
+Relation	T10	T12	NoRel	true	kayıplara	gelmişti
+Relation	T12	T18	NoRel	true	gelmişti	ulaştırarak
+Relation	T14	T17	NoRel	true	saldırı	yayılarak
+Relation	T14	T2	NoRel	true	saldırı	ettiler
+Relation	T15	T11	NoRel	true	verdi	direnme
+Relation	T15	T9	NoRel	true	verdi	püskürtüldüyse
+Relation	T16	T10	NoRel	true	başladılar	kayıplara
+Relation	T16	T5	NoRel	true	başladılar	geçen
+Relation	T18	T3	NoRel	true	ulaştırarak	taarruz
+Relation	T18	T4	NoRel	true	ulaştırarak	püskürtülürken
+Relation	T2	T16	NoRel	true	ettiler	başladılar
+Relation	T2	T7	NoRel	true	ettiler	çıkaran
+Relation	T4	T17	NoRel	true	püskürtülürken	yayılarak
+Relation	T9	T14	NoRel	true	püskürtüldüyse	saldırı

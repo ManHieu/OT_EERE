@@ -1,0 +1,28 @@
+Text	Los socialistas votaron en contra porque consideraban que una comisión parlamentaria no podía señalar responsabilidades jurídicas .	La Asociación de Afectados del Vuelo JK5022 y el Colegio Oficial de Pilotos de la Aviación Comercial ( COPAC ) valoraron positivamente las conclusiones de la comisión .	En 2010 , el canal de televisión privada Telecinco produjo y emitió una miniserie de dos capítulos con el título « Vuelo IL8714 » que pretendía reflejar este accidente .	Fue recibida con gran oposición por las familias afectadas .	La emisión obtuvo un 11% de cuota de pantalla y 1.755.000 espectadores .
+Event	T0	votaron	EVENT	16
+Event	T1	señalar	EVENT	94
+Event	T2	Vuelo	EVENT	163
+Event	T3	conclusiones	EVENT	271
+Event	T4	produjo	EVENT	352
+Event	T5	emitió	EVENT	362
+Event	T6	miniserie	EVENT	373
+Event	T7	reflejar	EVENT	445
+Event	T8	accidente	EVENT	459
+Event	T9	recibida	EVENT	475
+Event	T10	oposición	EVENT	493
+Event	T11	afectadas	EVENT	520
+Event	T12	obtuvo	EVENT	543
+Relation	T8	T6	SuperSub	true	accidente	miniserie
+Relation	T6	T8	SubSuper	true	miniserie	accidente
+Relation	T6	T9	SuperSub	true	miniserie	recibida
+Relation	T9	T6	SubSuper	true	recibida	miniserie
+Relation	T10	T2	NoRel	true	oposición	Vuelo
+Relation	T10	T9	NoRel	true	oposición	recibida
+Relation	T11	T6	NoRel	true	afectadas	miniserie
+Relation	T12	T2	NoRel	true	obtuvo	Vuelo
+Relation	T2	T6	NoRel	true	Vuelo	miniserie
+Relation	T2	T7	NoRel	true	Vuelo	reflejar
+Relation	T5	T4	NoRel	true	emitió	produjo
+Relation	T6	T12	NoRel	true	miniserie	obtuvo
+Relation	T6	T4	NoRel	true	miniserie	produjo
+Relation	T9	T5	NoRel	true	recibida	emitió

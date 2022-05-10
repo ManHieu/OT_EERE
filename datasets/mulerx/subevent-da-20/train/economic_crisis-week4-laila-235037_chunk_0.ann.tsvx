@@ -1,0 +1,28 @@
+Text	FLYVEPLADS FREDERIKSHAVN var en flyveplads , anlagt af tyskerne under besættelsen , umiddelbart vest for Frederikshavn .	Arbejdet med at anlægge flyvepladsen gik i gang få uger efter at Danmark blev besat .	Flyvepladsen blev anlagt som en del af _ Forsvarsområde Frederikshavn _ der desuden dækkede modstandsreden _ Frederikshavn Havn _ , støttepunktsgrupperne _ Frederikshavn Syd _ og _ Frederikshavn Nord _ samt sperriegelet _ Frederikshavn _ ( i alt blev der anlagt lidt over 100 bunkere i Frederikshavnsområdet ) .	Det tyske luftvåben Luftwaffe havde oprindeligt tiltænkt flyvepladsen som en satellit-plads for den langt_støre plads ved Aalborg .	Valget ved hovedgården Knivholt havde flere grunde : Terrænet var fladt , der var skov og infrastruktur på stedet ( veje og elektricitet ) .
+Event	T0	anlagt	EVENT	45
+Event	T1	Arbejdet	EVENT	121
+Event	T2	anlægge	EVENT	137
+Event	T3	besat	EVENT	199
+Event	T4	anlagt	EVENT	225
+Event	T5	dækkede	EVENT	291
+Event	T6	anlagt	EVENT	462
+Event	T7	tiltænkt	EVENT	567
+Event	T8	Valget	EVENT	651
+Event	T9	satellit-plads	EVENT	596
+Event	T10	infrastruktur	EVENT	741
+Event	T11	fladt	EVENT	717
+Event	T12	skov	EVENT	733
+Event	T13	grunde	EVENT	695
+Relation	T3	T2	SuperSub	true	besat	anlægge
+Relation	T2	T3	SubSuper	true	anlægge	besat
+Relation	T1	T0	NoRel	true	Arbejdet	anlagt
+Relation	T1	T3	NoRel	true	Arbejdet	besat
+Relation	T1	T7	NoRel	true	Arbejdet	tiltænkt
+Relation	T10	T0	NoRel	true	infrastruktur	anlagt
+Relation	T12	T8	NoRel	true	skov	Valget
+Relation	T4	T12	NoRel	true	anlagt	skov
+Relation	T5	T1	NoRel	true	dækkede	Arbejdet
+Relation	T5	T12	NoRel	true	dækkede	skov
+Relation	T6	T7	NoRel	true	anlagt	tiltænkt
+Relation	T7	T2	NoRel	true	tiltænkt	anlægge
+Relation	T9	T5	NoRel	true	satellit-plads	dækkede

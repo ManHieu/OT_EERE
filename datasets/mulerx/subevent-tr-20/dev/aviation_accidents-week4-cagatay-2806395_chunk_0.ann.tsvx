@@ -1,0 +1,46 @@
+Text	15 Temmuz 2020'de Emniyet Genel Müdürlüğü tarafından işletilen bir Super King Air 350i uçağı , Van Ferit Melen Havalimanı'nın güneybatısında Artos Dağı'nda düştü .	Uçak bir inceleme , araştırma uçuşu gerçekleştiriyordu .	Uçaktaki 2 mürettebat ve 5 yolcunun tamamı kaza sonucunda öldü .	İlk uçuşunu 2015'te yapan ve EM - 809 kuyruk numaralı Super King Air 350i ( üretici seri numarası FL - 896 ) , Emniyet Genel Müdürlüğü tarafından işletiliyordu .	Uçak ; bir inceleme , araştırma uçuşu için yerel saatle ( UDAS ) 18.34'te Van Ferit Melen Havalimanı'ndan kalkış yaptı .
+Event	T0	işletilen	EVENT	53
+Event	T1	düştü	EVENT	156
+Event	T2	inceleme	EVENT	173
+Event	T4	öldü	EVENT	279
+Event	T5	uçuşunu	EVENT	290
+Event	T6	yapan	EVENT	306
+Event	T7	işletiliyordu	EVENT	432
+Event	T8	inceleme	EVENT	459
+Event	T9	uçuşu	EVENT	480
+Event	T11	araştırma	EVENT	184
+Event	T12	uçuşu	EVENT	194
+Event	T3	kaza	EVENT	264
+Event	T13	araştırma	EVENT	470
+Event	T14	kalkış	EVENT	554
+Relation	T12	T11	SuperSub	true	uçuşu	araştırma
+Relation	T11	T12	SubSuper	true	araştırma	uçuşu
+Relation	T12	T2	SuperSub	true	uçuşu	inceleme
+Relation	T2	T12	SubSuper	true	inceleme	uçuşu
+Relation	T12	T1	SuperSub	true	uçuşu	düştü
+Relation	T1	T12	SubSuper	true	düştü	uçuşu
+Relation	T9	T13	SuperSub	true	uçuşu	araştırma
+Relation	T13	T9	SubSuper	true	araştırma	uçuşu
+Relation	T9	T8	SuperSub	true	uçuşu	inceleme
+Relation	T8	T9	SubSuper	true	inceleme	uçuşu
+Relation	T9	T14	SuperSub	true	uçuşu	kalkış
+Relation	T14	T9	SubSuper	true	kalkış	uçuşu
+Relation	T9	T11	SuperSub	true	uçuşu	araştırma
+Relation	T11	T9	SubSuper	true	araştırma	uçuşu
+Relation	T9	T2	SuperSub	true	uçuşu	inceleme
+Relation	T2	T9	SubSuper	true	inceleme	uçuşu
+Relation	T12	T8	SuperSub	true	uçuşu	inceleme
+Relation	T8	T12	SubSuper	true	inceleme	uçuşu
+Relation	T12	T13	SuperSub	true	uçuşu	araştırma
+Relation	T13	T12	SubSuper	true	araştırma	uçuşu
+Relation	T12	T14	SuperSub	true	uçuşu	kalkış
+Relation	T14	T12	SubSuper	true	kalkış	uçuşu
+Relation	T9	T1	SuperSub	true	uçuşu	düştü
+Relation	T1	T9	SubSuper	true	düştü	uçuşu
+Relation	T1	T11	NoRel	true	düştü	araştırma
+Relation	T11	T2	NoRel	true	araştırma	inceleme
+Relation	T13	T0	NoRel	true	araştırma	işletilen
+Relation	T2	T1	NoRel	true	inceleme	düştü
+Relation	T2	T7	NoRel	true	inceleme	işletiliyordu
+Relation	T5	T7	NoRel	true	uçuşunu	işletiliyordu
+Relation	T8	T1	NoRel	true	inceleme	düştü

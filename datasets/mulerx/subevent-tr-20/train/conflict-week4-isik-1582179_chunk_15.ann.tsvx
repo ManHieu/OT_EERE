@@ -1,0 +1,30 @@
+Text	Evrim ( _ naturalistic evolution _ ) varsayımları göz önüne alındığında , Tasmanya yerlileri genellikle insandan daha aşağıda görülmüş ve sonuç olarak birçok kişi onlara hayvanlar gibi davranmanın ahlaksız ve yanlış olmadığına kendini inandırmıştır .	Tasmanya Soykırımı , modern çağda evrimsel natüralizmin ( _ evolutionary naturalism _ ) ürettiği çok sayıdaki trajedinin birçok örneğinden biridir .	1890 yılında Royal Society of Tasmania başkan yardımcısı James Barnard « imha süreci , evrim yasalarının bir aksiyomu ve en güçlünün hayatta kalmasıdır » ( _ the process of extermination is an axiom of the law of evolution and survival of the fittest _ ) biçiminde yazmıştır .	_ HMS Beagle _ gemisinin ikinci yolculuğunun sonuna doğru 1836 Şubat ayında ( Flinders Adasındaki toplama kampı açıldıktan bir yıl sonra ) Charles Darwin Tasmanya'ya uğramıştır :	İngiliz bilimkurgu yazarı Herbert George Wells 1898 yılında yayımladığı _ Dünyaların Savaşı _ romanında önce şöyle demiş , tartışmalar üzerine bir sonraki sürümünde kaldırmıştır :
+Event	T1	ürettiği	EVENT	339
+Event	T2	trajedinin	EVENT	361
+Event	T3	extermination	EVENT	573
+Event	T4	evolution	EVENT	613
+Event	T5	survival	EVENT	627
+Event	T6	yolculuğunun	EVENT	709
+Event	T7	uğramıştır	EVENT	843
+Event	T8	Savaşı	EVENT	941
+Event	T9	demiş	EVENT	971
+Event	T10	kaldırmıştır	EVENT	1021
+Event	T11	Tasmanya Soykırımı	EVENT	251
+Event	T12	imha	EVENT	473
+Event	T13	evrim	EVENT	487
+Event	T14	kalmasıdır	EVENT	541
+Event	T15	yazmıştır	EVENT	665
+Event	T16	açıldıktan	EVENT	789
+Event	T17	yayımladığı	EVENT	916
+Event	T18	tartışmalar	EVENT	979
+Relation	T11	T14	NoRel	true	Tasmanya Soykırımı	kalmasıdır
+Relation	T11	T4	NoRel	true	Tasmanya Soykırımı	evolution
+Relation	T12	T13	NoRel	true	imha	evrim
+Relation	T12	T2	NoRel	true	imha	trajedinin
+Relation	T15	T14	NoRel	true	yazmıştır	kalmasıdır
+Relation	T16	T6	NoRel	true	açıldıktan	yolculuğunun
+Relation	T18	T12	NoRel	true	tartışmalar	imha
+Relation	T18	T13	NoRel	true	tartışmalar	evrim
+Relation	T3	T4	NoRel	true	extermination	evolution
+Relation	T5	T7	NoRel	true	survival	uğramıştır
+Relation	T9	T2	NoRel	true	demiş	trajedinin

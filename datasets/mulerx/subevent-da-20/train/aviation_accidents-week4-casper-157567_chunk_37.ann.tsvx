@@ -1,0 +1,21 @@
+Text	Lignende skete i øvrigt da B-25 flyet ramte Empire State Building i 1945 .	Angrebet den 11/9 i New York blev registreret af seismografer ved Columbia University _ Lamont-Doherty Earth Observatory _ ( LDEO ) i Palisades , New York 33 kilometer nord for WTC .	Men angiveligt skulle de seismografiske optagelser registrere store udsving før det tidspunkt som 9-11 kommissionen angav som kollisionstidspunktet .	Ifølge teorierne er der tale om en forskel på hhv. 14 sekunder ( Flight 11 ) og 17 sekunder ( Flight 175 ) .	De seismologiske data giver hhv. tidspunktet 8:46:26 og 9:02:54 – hvor kommissionsrapporten giver tidspunkterne 8:46:40 og 9:03:11 ( UTC-4 ) .
+Event	T0	skete	EVENT	9
+Event	T1	ramte	EVENT	38
+Event	T2	Angrebet	EVENT	75
+Event	T3	registreret	EVENT	109
+Event	T4	registrere	EVENT	309
+Event	T5	udsving	EVENT	326
+Event	T6	angav	EVENT	374
+Event	T7	kollisionstidspunktet	EVENT	384
+Event	T8	tale	EVENT	432
+Event	T9	forskel	EVENT	443
+Event	T10	giver	EVENT	539
+Event	T11	giver	EVENT	609
+Relation	T9	T10	SuperSub	true	forskel	giver
+Relation	T10	T9	SubSuper	true	giver	forskel
+Relation	T9	T11	SuperSub	true	forskel	giver
+Relation	T11	T9	SubSuper	true	giver	forskel
+Relation	T1	T11	NoRel	true	ramte	giver
+Relation	T6	T4	NoRel	true	angav	registrere
+Relation	T7	T2	NoRel	true	kollisionstidspunktet	Angrebet
+Relation	T9	T7	NoRel	true	forskel	kollisionstidspunktet

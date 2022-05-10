@@ -1,0 +1,41 @@
+Text	Den kan derfor let forveksles med influenza .	Der findes ingen specifik behandling af sygdommen , så behandlingen kan alene rettes mod symptomerne .	10-20 % af de personer som rammes får så svære symptomer , at de risikerer at dø af sygdommen .	Specielt ældre mennesker over 65 år risikerer at dø af SARS , i denne aldersgruppe er dødeligheden 50 % .	Sygdommen smitter som almindelig influenza via dråbesmitte på tæt hold fra menneske til menneske .
+Event	T0	behandlingen	EVENT	101
+Event	T1	får	EVENT	183
+Event	T2	risikerer	EVENT	214
+Event	T3	dø	EVENT	227
+Event	T4	risikerer	EVENT	281
+Event	T5	dø	EVENT	294
+Event	T6	dødeligheden	EVENT	331
+Event	T7	smitter	EVENT	361
+Event	T8	influenza	EVENT	384
+Event	T9	forveksles	EVENT	19
+Event	T10	influenza	EVENT	34
+Event	T11	behandling	EVENT	72
+Event	T12	sygdommen	EVENT	86
+Event	T13	symptomerne	EVENT	135
+Event	T14	rammes	EVENT	176
+Event	T15	symptomer	EVENT	196
+Event	T16	sygdommen	EVENT	233
+Event	T17	SARS	EVENT	300
+Event	T18	Sygdommen	EVENT	351
+Event	T19	dråbesmitte	EVENT	398
+Relation	T0	T2	NoRel	true	behandlingen	risikerer
+Relation	T1	T11	NoRel	true	får	behandling
+Relation	T10	T14	NoRel	true	influenza	rammes
+Relation	T10	T3	NoRel	true	influenza	dø
+Relation	T11	T17	NoRel	true	behandling	SARS
+Relation	T11	T5	NoRel	true	behandling	dø
+Relation	T11	T6	NoRel	true	behandling	dødeligheden
+Relation	T12	T17	NoRel	true	sygdommen	SARS
+Relation	T12	T4	NoRel	true	sygdommen	risikerer
+Relation	T14	T5	NoRel	true	rammes	dø
+Relation	T16	T1	NoRel	true	sygdommen	får
+Relation	T18	T15	NoRel	true	Sygdommen	symptomer
+Relation	T19	T10	NoRel	true	dråbesmitte	influenza
+Relation	T19	T18	NoRel	true	dråbesmitte	Sygdommen
+Relation	T3	T6	NoRel	true	dø	dødeligheden
+Relation	T4	T5	NoRel	true	risikerer	dø
+Relation	T4	T6	NoRel	true	risikerer	dødeligheden
+Relation	T4	T8	NoRel	true	risikerer	influenza
+Relation	T8	T2	NoRel	true	influenza	risikerer
+Relation	T9	T17	NoRel	true	forveksles	SARS

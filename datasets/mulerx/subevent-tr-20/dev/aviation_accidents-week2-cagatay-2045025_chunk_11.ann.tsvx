@@ -1,0 +1,23 @@
+Text	Rusya Savunma Bakanlığı'nın yaptığı açıklamaya göre ise Hmeymim Hava Üssü'ne geri dönüş rotasında olan Su - 24 saldırı uçağı , Türk sınırından bir kilometre uzaklıkta ve 6 bin metre yükseklikte olduğu sırada Türk F- 16'ları tarafından Suriye sınırları içerisinde düşürüldü .	Yaptıkları analizler sonucunda ise kesinlikle Türk sınırını ihlâl etmediklerini iddia etti .	İlk açıklamalarında ise uçağın büyük ihtimal Suriye sınırları içerisinden karadan edilen ateş sonucunda düşürüldüğü söylenmişti .	Ateş edilen uçaktan atlayarak Kürt Dağı'na düşen ve Esad hükûmetine bağlı askerler tarafından sağ olarak bulunarak Lazkiye'deki Rus üssüne ulaştırılan Rus pilot Konstantin Murachtin , Türk uçakları tarafından " telsiz ya da göz teması olarak hiçbir ikaz almadıklarını ve Türk hava sahasını ihlâl etmediklerini " iddia etti .	İki pilot uçağın ateş alması ile birlikte paraşütle atladı .
+Event	T0	açıklamaya	EVENT	36
+Event	T10	atladı	EVENT	875
+Event	T12	olduğu	EVENT	194
+Event	T13	açıklamalarında	EVENT	372
+Event	T14	düşürüldüğü	EVENT	472
+Event	T17	bulunarak	EVENT	603
+Event	T18	ulaştırılan	EVENT	637
+Event	T2	düşürüldü	EVENT	263
+Event	T3	analizler	EVENT	286
+Event	T4	iddia etti	EVENT	355
+Event	T6	atlayarak	EVENT	518
+Event	T7	düşen	EVENT	541
+Event	T8	iddia etti	EVENT	810
+Relation	T10	T2	NoRel	true	atladı	düşürüldü
+Relation	T10	T4	NoRel	true	atladı	iddia etti
+Relation	T12	T8	NoRel	true	olduğu	iddia etti
+Relation	T18	T13	NoRel	true	ulaştırılan	açıklamalarında
+Relation	T18	T7	NoRel	true	ulaştırılan	düşen
+Relation	T2	T10	NoRel	true	düşürüldü	atladı
+Relation	T2	T7	NoRel	true	düşürüldü	düşen
+Relation	T4	T3	NoRel	true	iddia etti	analizler
+Relation	T7	T4	NoRel	true	düşen	iddia etti

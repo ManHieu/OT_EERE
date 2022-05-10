@@ -1,0 +1,82 @@
+Text	One conclusion determined that both the captain and the first officer were fatigued at the time of the accident , but the NTSB could not determine how much it degraded their performance .	Among those conclusions were the fact that both the captain and the first officer responded to the stall warning in a manner contrary to their training .	The NTSB could not explain why the first officer retracted the flaps and suggested that the landing gear should also be retracted , though it did find that the current approach - stall training was not adequate :	NTSB Chairman Deborah Hersman , while concurring , made it clear that she considered fatigue to be a contributing factor .	She compared the 20 years that fatigue had remained on the NTSB 's Most Wanted List of transportation safety improvements , during which no meaningful action was taken by regulators in response , to the changes in tolerance for alcohol over the same period , noting that the impact on performance from fatigue and alcohol were similar .
+Event	T0	determined	EVENT	15
+Event	T1	fatigued	EVENT	75
+Event	T2	accident	EVENT	103
+Event	T3	degraded	EVENT	159
+Event	T4	performance	EVENT	174
+Event	T5	warning	EVENT	293
+Event	T6	training	EVENT	331
+Event	T7	retracted	EVENT	391
+Event	T8	suggested	EVENT	415
+Event	T9	retracted	EVENT	462
+Event	T10	find	EVENT	488
+Event	T11	training	EVENT	527
+Event	T12	concurring	EVENT	593
+Event	T13	made	EVENT	606
+Event	T14	compared	EVENT	682
+Event	T15	fatigue	EVENT	709
+Event	T16	remained	EVENT	721
+Event	T17	improvements	EVENT	787
+Event	T18	action	EVENT	829
+Event	T19	taken	EVENT	840
+Event	T20	changes	EVENT	881
+Event	T21	noting	EVENT	937
+Event	T22	impact	EVENT	953
+Event	T23	performance	EVENT	963
+Event	T24	fatigue	EVENT	980
+Event	T25	responded	EVENT	270
+Event	T26	fatigue	EVENT	640
+Relation	T0	T20	NoRel	true	determined	changes
+Relation	T0	T25	NoRel	true	determined	responded
+Relation	T1	T12	NoRel	true	fatigued	concurring
+Relation	T1	T3	NoRel	true	fatigued	degraded
+Relation	T1	T5	NoRel	true	fatigued	warning
+Relation	T10	T15	NoRel	true	find	fatigue
+Relation	T10	T26	NoRel	true	find	fatigue
+Relation	T11	T25	NoRel	true	training	responded
+Relation	T12	T23	NoRel	true	concurring	performance
+Relation	T13	T24	NoRel	true	made	fatigue
+Relation	T14	T12	NoRel	true	compared	concurring
+Relation	T14	T5	NoRel	true	compared	warning
+Relation	T16	T23	NoRel	true	remained	performance
+Relation	T16	T6	NoRel	true	remained	training
+Relation	T17	T20	NoRel	true	improvements	changes
+Relation	T17	T5	NoRel	true	improvements	warning
+Relation	T18	T16	NoRel	true	action	remained
+Relation	T18	T2	NoRel	true	action	accident
+Relation	T18	T21	NoRel	true	action	noting
+Relation	T18	T9	NoRel	true	action	retracted
+Relation	T19	T13	NoRel	true	taken	made
+Relation	T19	T21	NoRel	true	taken	noting
+Relation	T2	T0	NoRel	true	accident	determined
+Relation	T2	T16	NoRel	true	accident	remained
+Relation	T20	T0	NoRel	true	changes	determined
+Relation	T20	T22	NoRel	true	changes	impact
+Relation	T20	T26	NoRel	true	changes	fatigue
+Relation	T21	T11	NoRel	true	noting	training
+Relation	T21	T2	NoRel	true	noting	accident
+Relation	T21	T6	NoRel	true	noting	training
+Relation	T22	T1	NoRel	true	impact	fatigued
+Relation	T23	T10	NoRel	true	performance	find
+Relation	T23	T25	NoRel	true	performance	responded
+Relation	T23	T4	NoRel	true	performance	performance
+Relation	T23	T9	NoRel	true	performance	retracted
+Relation	T24	T0	NoRel	true	fatigue	determined
+Relation	T24	T19	NoRel	true	fatigue	taken
+Relation	T24	T7	NoRel	true	fatigue	retracted
+Relation	T24	T9	NoRel	true	fatigue	retracted
+Relation	T25	T2	NoRel	true	responded	accident
+Relation	T25	T20	NoRel	true	responded	changes
+Relation	T26	T17	NoRel	true	fatigue	improvements
+Relation	T3	T2	NoRel	true	degraded	accident
+Relation	T4	T26	NoRel	true	performance	fatigue
+Relation	T5	T17	NoRel	true	warning	improvements
+Relation	T6	T25	NoRel	true	training	responded
+Relation	T7	T1	NoRel	true	retracted	fatigued
+Relation	T7	T12	NoRel	true	retracted	concurring
+Relation	T7	T3	NoRel	true	retracted	degraded
+Relation	T7	T8	NoRel	true	retracted	suggested
+Relation	T8	T20	NoRel	true	suggested	changes
+Relation	T8	T21	NoRel	true	suggested	noting
+Relation	T9	T19	NoRel	true	retracted	taken
+Relation	T9	T5	NoRel	true	retracted	warning

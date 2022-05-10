@@ -1,0 +1,16 @@
+Text	Banka işlemleri önümüzdeki birkaç yıl boyunca ABD'yi rahatsız etmeye devam etti .	Şehir çapındaki koşular arasında Boston ( Aralık 1931 ) , Chicago ( Haziran 1931 ve Haziran 1932 ) , Toledo ( Haziran 1931 ) ve St. Louis ( Ocak 1933 ) bulunur .	Depresyon sırasında uygulamaya konan kurumlar , ABD ticari bankalarında 1930'lardan bu yana , 1980'lerin ve 1990'ların ABD tasarrufları ve kredi krizi gibi koşullar altında bile kaçmasını engellemiştir .	2007'de başlayan küresel mali kriz , bir banka işlemiyle karşılaştırılabilir piyasa likidite başarısızlıkları etrafında toplanmıştır .	Kriz , İngiltere'nin Kuzey Kayası ve ABD'nin IndyMac'ı ile ilişkili olanlar da dahil olmak üzere bir banka kamulaştırması dalgası içeriyordu .
+Event	T0	işlemleri	EVENT	6
+Event	T1	etti	EVENT	75
+Event	T2	koşular	EVENT	98
+Event	T3	Depresyon	EVENT	244
+Event	T5	engellemiştir	EVENT	432
+Event	T7	kriz	EVENT	478
+Event	T9	toplanmıştır	EVENT	568
+Event	T10	Kriz	EVENT	583
+Event	T11	içeriyordu	EVENT	713
+Relation	T1	T9	NoRel	true	etti	toplanmıştır
+Relation	T11	T5	NoRel	true	içeriyordu	engellemiştir
+Relation	T11	T9	NoRel	true	içeriyordu	toplanmıştır
+Relation	T2	T3	NoRel	true	koşular	Depresyon
+Relation	T5	T0	NoRel	true	engellemiştir	işlemleri
+Relation	T9	T2	NoRel	true	toplanmıştır	koşular

@@ -1,0 +1,22 @@
+Text	Kramme og Zeuthen´ , samt en række af deres venner , byggede denne første KZ I i deres fritid , og opnåede første flyvning i februar 1937 .	Kramme og Zeuthen fik hjælp af en anden flyinteresseret , civilingeniør Gunnar Larsen der dengang var administrende direktør og storaktionær i FLSmidth & Co. A/S .	Den 1. august 1937 blev firmaet Skandinavisk Aero Industri stiftet med Kramme og Zeuthen i spidsen .	Samme år blev næste projekt , KZ II Kupé , sat i gang og året efter blev en åben variant – KZ II Sport – sat i produktion .	Grundet Gunnar Larsens indflydelse hos F._L. Smidth , blev produktionen en overgang flyttet til dette firmas faciliteter i Aalborg , men i 1943 flyttede man tilbage til København .
+Event	T0	byggede	EVENT	53
+Event	T1	opnåede	EVENT	99
+Event	T2	flyvning	EVENT	114
+Event	T3	hjælp	EVENT	162
+Event	T4	stiftet	EVENT	363
+Event	T5	indflydelse	EVENT	552
+Event	T6	flyttet	EVENT	613
+Event	T7	flyttede	EVENT	673
+Event	T8	produktion	EVENT	516
+Event	T9	projekt	EVENT	425
+Event	T10	gang	EVENT	454
+Event	T11	produktionen	EVENT	588
+Relation	T0	T5	NoRel	true	byggede	indflydelse
+Relation	T1	T6	NoRel	true	opnåede	flyttet
+Relation	T2	T7	NoRel	true	flyvning	flyttede
+Relation	T3	T5	NoRel	true	hjælp	indflydelse
+Relation	T4	T0	NoRel	true	stiftet	byggede
+Relation	T4	T1	NoRel	true	stiftet	opnåede
+Relation	T4	T10	NoRel	true	stiftet	gang
+Relation	T4	T8	NoRel	true	stiftet	produktion
+Relation	T8	T1	NoRel	true	produktion	opnåede

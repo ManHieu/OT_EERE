@@ -1,0 +1,33 @@
+Text	Anıt , bulunduğu parkın kapatılmasıyla 2017 yılında başka bir yere taşınmak üzere kaldırıldı .	Her yıl Amerika Birleşik Devletleri'nin Erivan Büyükelçiliği yetkilileri ve Ermenistan Savunma Bakanı , olayda ölenleri anmak adına uçağın düştüğü bölgeyi ziyaret etmektedir .	Dosya : Joint US - Armenian memorial to lost Airmen .jpg | Ermenistan Sasnaşen'de bulunan ortak ABD - Ermenistan anıtı Dosya : 56 - 0528 route .png | C - 130'un ve 3 Sovyet MiG - 17'sinin rotası	Kategori : 1958'de havacılık kazaları ve olayları Kategori : Ermenistan SSC'deki havacılık kazaları ve olayları Kategori : 1958'de Amerika Birleşik Devletleri Kategori : Soğuk Savaş'ta Sovyetler Birliği Kategori : Soğuk Savaş'ta Amerika Birleşik Devletleri Kategori : Amerika Birleşik Devletleri - Sovyetler Birliği ilişkileri Kategori : C -130 Hercules içeren kazalar ve olaylar	Bureau of Aircraft Accidents Archives | erişimtarihi =17 Ekim 2021 | arşivtarihi =17 Ekim 2021 | arşivurl =https : / / web .
+Event	T0	kapatılmasıyla	EVENT	24
+Event	T1	kaldırıldı	EVENT	82
+Event	T2	lost	EVENT	311
+Event	T3	kazaları	EVENT	495
+Event	T4	kazalar	EVENT	827
+Event	T5	olaylar	EVENT	838
+Event	T6	Accidents	EVENT	865
+Event	T7	taşınmak	EVENT	67
+Event	T8	olayda	EVENT	199
+Event	T9	ölenleri	EVENT	206
+Event	T10	etmektedir	EVENT	258
+Event	T11	anmak	EVENT	215
+Event	T12	olayları	EVENT	507
+Event	T13	kazaları	EVENT	557
+Event	T14	olayları	EVENT	569
+Event	T15	Soğuk Savaş'ta	EVENT	636
+Event	T16	Soğuk Savaş'ta	EVENT	680
+Relation	T0	T15	NoRel	true	kapatılmasıyla	Soğuk Savaş'ta
+Relation	T0	T16	NoRel	true	kapatılmasıyla	Soğuk Savaş'ta
+Relation	T0	T6	NoRel	true	kapatılmasıyla	Accidents
+Relation	T1	T12	NoRel	true	kaldırıldı	olayları
+Relation	T1	T14	NoRel	true	kaldırıldı	olayları
+Relation	T1	T3	NoRel	true	kaldırıldı	kazaları
+Relation	T1	T7	NoRel	true	kaldırıldı	taşınmak
+Relation	T10	T1	NoRel	true	etmektedir	kaldırıldı
+Relation	T10	T11	NoRel	true	etmektedir	anmak
+Relation	T15	T12	NoRel	true	Soğuk Savaş'ta	olayları
+Relation	T2	T12	NoRel	true	lost	olayları
+Relation	T3	T12	NoRel	true	kazaları	olayları
+Relation	T4	T10	NoRel	true	kazalar	etmektedir
+Relation	T8	T2	NoRel	true	olayda	lost
+Relation	T8	T6	NoRel	true	olayda	Accidents

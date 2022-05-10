@@ -1,0 +1,45 @@
+Text	_ THE SOCIETY _ es una serie de televisión de drama y misterio estadounidense creada por Christopher Keyser que se estrenó en Netflix el 10 de mayo de 2019 .	El 9 de julio de 2019 , se anunció que fue renovada para una segunda temporada .	Sin embargo , el 21 de agosto de 2020 la serie fue cancelada por la pausa de filmación debido a la pandemia de COVID-19 , ya habiendo grabado algunos capítulos .	_ The Society _ trata sobre « un grupo de adolescentes que se ven obligados a tomar el asunto en sus propias manos cuando regresan a su ciudad de un viaje corto para descubrir que todos están desaparecidos y que no hay manera de salir de la ciudad .	Los adolescentes festejarán , entrarán en pánico , sufrirán , pelearán y , en última instancia , se verán obligados a decidir cómo lidiar con lo impensable » .
+Event	T0	serie	EVENT	23
+Event	T1	creada	EVENT	78
+Event	T10	obligados	EVENT	467
+Event	T11	tomar	EVENT	479
+Event	T12	regresan	EVENT	523
+Event	T13	viaje	EVENT	550
+Event	T14	descubrir	EVENT	567
+Event	T15	desaparecidos	EVENT	593
+Event	T16	salir	EVENT	630
+Event	T17	sufrirán	EVENT	702
+Event	T18	pelearán	EVENT	713
+Event	T19	obligados	EVENT	757
+Event	T2	estrenó	EVENT	115
+Event	T20	decidir	EVENT	769
+Event	T21	lidiar	EVENT	782
+Event	T3	anunció	EVENT	185
+Event	T4	renovada	EVENT	201
+Event	T5	cancelada	EVENT	290
+Event	T6	pausa	EVENT	307
+Event	T7	pandemia	EVENT	338
+Event	T8	grabado	EVENT	373
+Relation	T0	T15	NoRel	true	serie	desaparecidos
+Relation	T10	T0	NoRel	true	obligados	serie
+Relation	T10	T3	NoRel	true	obligados	anunció
+Relation	T11	T10	NoRel	true	tomar	obligados
+Relation	T14	T15	NoRel	true	descubrir	desaparecidos
+Relation	T15	T0	NoRel	true	desaparecidos	serie
+Relation	T15	T8	NoRel	true	desaparecidos	grabado
+Relation	T16	T0	NoRel	true	salir	serie
+Relation	T16	T7	NoRel	true	salir	pandemia
+Relation	T17	T5	NoRel	true	sufrirán	cancelada
+Relation	T2	T10	NoRel	true	estrenó	obligados
+Relation	T20	T1	NoRel	true	decidir	creada
+Relation	T20	T12	NoRel	true	decidir	regresan
+Relation	T20	T6	NoRel	true	decidir	pausa
+Relation	T21	T0	NoRel	true	lidiar	serie
+Relation	T21	T14	NoRel	true	lidiar	descubrir
+Relation	T21	T3	NoRel	true	lidiar	anunció
+Relation	T3	T0	NoRel	true	anunció	serie
+Relation	T5	T20	NoRel	true	cancelada	decidir
+Relation	T5	T7	NoRel	true	cancelada	pandemia
+Relation	T5	T8	NoRel	true	cancelada	grabado
+Relation	T7	T15	NoRel	true	pandemia	desaparecidos
+Relation	T7	T6	NoRel	true	pandemia	pausa

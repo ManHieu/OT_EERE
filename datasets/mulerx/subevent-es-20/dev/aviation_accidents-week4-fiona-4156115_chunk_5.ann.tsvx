@@ -1,0 +1,49 @@
+Text	Algunos pasajeros escaparon a través de huecos en el fuselaje de la cabina .	Los detalles que rodearon el accidente no estaban claros inmediatamente después del incidente ; un funcionario local informó que la aeronave se partió en dos cuando aterrizaba y que los pasajeros fueron arrojados de la aeronave , aunque algunos sobrevivientes dijeron que permaneció intacta hasta que se detuvo lejos de la pista .	Investigaciones posteriores concluyeron que el primer impacto fue con árboles , a 1.100 m ( 3.600 pies ) del umbral de la pista , a las 21:38:08 .	A partir de entonces , la aeronave golpeó el suelo con las ruedas del tren de aterrizaje principal , a 1.080 m ( 3.540 pies ) del umbral de la pista de aterrizaje , corriendo en el suelo una distancia de 870 m ( 2.850 pies ) , cuando los motores chocaron con el suelo .	Con este impacto , los tanques de combustible de las alas se rompieron , derramando combustible y provocando el incendio .
+Event	T0	escaparon	EVENT	18
+Event	T1	rodearon	EVENT	94
+Event	T2	accidente	EVENT	106
+Event	T3	incidente	EVENT	161
+Event	T4	informó	EVENT	194
+Event	T5	aterrizaba	EVENT	242
+Event	T6	arrojados	EVENT	280
+Event	T7	dijeron	EVENT	337
+Event	T8	detuvo	EVENT	381
+Event	T9	Investigaciones	EVENT	408
+Event	T10	concluyeron	EVENT	436
+Event	T11	impacto	EVENT	462
+Event	T12	golpeó	EVENT	590
+Event	T13	corriendo	EVENT	720
+Event	T14	chocaron	EVENT	801
+Event	T15	impacto	EVENT	834
+Event	T16	rompieron	EVENT	886
+Event	T17	derramando	EVENT	898
+Event	T18	provocando	EVENT	923
+Event	T19	incendio	EVENT	937
+Relation	T0	T1	NoRel	true	escaparon	rodearon
+Relation	T1	T2	NoRel	true	rodearon	accidente
+Relation	T11	T1	NoRel	true	impacto	rodearon
+Relation	T11	T8	NoRel	true	impacto	detuvo
+Relation	T12	T13	NoRel	true	golpeó	corriendo
+Relation	T12	T15	NoRel	true	golpeó	impacto
+Relation	T12	T5	NoRel	true	golpeó	aterrizaba
+Relation	T14	T1	NoRel	true	chocaron	rodearon
+Relation	T16	T4	NoRel	true	rompieron	informó
+Relation	T16	T9	NoRel	true	rompieron	Investigaciones
+Relation	T17	T10	NoRel	true	derramando	concluyeron
+Relation	T17	T14	NoRel	true	derramando	chocaron
+Relation	T18	T15	NoRel	true	provocando	impacto
+Relation	T18	T7	NoRel	true	provocando	dijeron
+Relation	T18	T8	NoRel	true	provocando	detuvo
+Relation	T19	T17	NoRel	true	incendio	derramando
+Relation	T19	T18	NoRel	true	incendio	provocando
+Relation	T3	T12	NoRel	true	incidente	golpeó
+Relation	T3	T13	NoRel	true	incidente	corriendo
+Relation	T4	T17	NoRel	true	informó	derramando
+Relation	T6	T17	NoRel	true	arrojados	derramando
+Relation	T6	T9	NoRel	true	arrojados	Investigaciones
+Relation	T7	T14	NoRel	true	dijeron	chocaron
+Relation	T7	T9	NoRel	true	dijeron	Investigaciones
+Relation	T9	T10	NoRel	true	Investigaciones	concluyeron
+Relation	T9	T12	NoRel	true	Investigaciones	golpeó
+Relation	T9	T15	NoRel	true	Investigaciones	impacto
+Relation	T9	T4	NoRel	true	Investigaciones	informó

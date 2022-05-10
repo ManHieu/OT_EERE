@@ -1,0 +1,47 @@
+Text	La administración citó como razones de su decisión que el nombre de Henan Airlines había causado un malentendido público y dañó enormemente la imagen de la provincia , que no tiene participación en el operador de la aerolínea .	Esta medida fue recibida de inmediato con críticas de los medios , que cuestionaron la validez de la interferencia de la administración con los derechos de Henan Airlines a elegir el nombre .	También se reveló que la provincia había ofrecido condiciones favorables para atraer al operador de la aerolínea a adoptar su nombre actual , y luego celebró el cambio de nombre .	El 31 de agosto , Henan Airlines anunció que pagaría 960.000 yuanes ( alrededor de $ 140.000 USD ) a los familiares de cada persona muerta en el accidente .	El pago fue requerido por la ley de aviación civil de la República Popular China .
+Event	T0	citó	EVENT	18
+Event	T1	decisión	EVENT	42
+Event	T2	causado	EVENT	89
+Event	T3	malentendido	EVENT	100
+Event	T4	dañó	EVENT	123
+Event	T6	recibida	EVENT	244
+Event	T7	críticas	EVENT	270
+Event	T8	cuestionaron	EVENT	299
+Event	T9	interferencia	EVENT	329
+Event	T10	elegir	EVENT	401
+Event	T11	reveló	EVENT	431
+Event	T12	ofrecido	EVENT	461
+Event	T13	atraer	EVENT	498
+Event	T14	adoptar	EVENT	535
+Event	T15	celebró	EVENT	570
+Event	T16	cambio	EVENT	581
+Event	T17	anunció	EVENT	633
+Event	T18	pagaría	EVENT	645
+Event	T19	muerta	EVENT	732
+Event	T20	accidente	EVENT	745
+Event	T21	pago	EVENT	760
+Event	T22	requerido	EVENT	769
+Relation	T20	T18	SuperSub	true	accidente	pagaría
+Relation	T18	T20	SubSuper	true	pagaría	accidente
+Relation	T16	T15	SuperSub	true	cambio	celebró
+Relation	T15	T16	SubSuper	true	celebró	cambio
+Relation	T0	T11	NoRel	true	citó	reveló
+Relation	T0	T7	NoRel	true	citó	críticas
+Relation	T0	T8	NoRel	true	citó	cuestionaron
+Relation	T1	T14	NoRel	true	decisión	adoptar
+Relation	T11	T16	NoRel	true	reveló	cambio
+Relation	T12	T10	NoRel	true	ofrecido	elegir
+Relation	T16	T3	NoRel	true	cambio	malentendido
+Relation	T17	T19	NoRel	true	anunció	muerta
+Relation	T17	T3	NoRel	true	anunció	malentendido
+Relation	T2	T19	NoRel	true	causado	muerta
+Relation	T2	T9	NoRel	true	causado	interferencia
+Relation	T20	T3	NoRel	true	accidente	malentendido
+Relation	T21	T22	NoRel	true	pago	requerido
+Relation	T4	T17	NoRel	true	dañó	anunció
+Relation	T4	T20	NoRel	true	dañó	accidente
+Relation	T7	T22	NoRel	true	críticas	requerido
+Relation	T7	T6	NoRel	true	críticas	recibida
+Relation	T8	T10	NoRel	true	cuestionaron	elegir
+Relation	T8	T4	NoRel	true	cuestionaron	dañó
+Relation	T9	T6	NoRel	true	interferencia	recibida

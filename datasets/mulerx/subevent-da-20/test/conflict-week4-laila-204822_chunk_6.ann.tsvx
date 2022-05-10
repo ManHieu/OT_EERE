@@ -1,0 +1,31 @@
+Text	Dette synspunkt , som ikke kun var begrænset til pacifistiske og pro-tyske organisationer , blev videre understøttet af tyske og mexicanske diplomater såvel som flere amerikanske aviser , specielt fra Hearsts medieimperium .	Men den 29. marts 1917 holdt telegrammets oprindelige forfatter , den tyske udenrigsminister Arthur Zimmermann en tale hvori han bekræftede telegrammets indhold hvorved spekulationerne om fabrikation ophørte .	Anti-mexicanske og anti-tyske følelser var allerede udbredte i USA på dette tidspunkt .	Dels fordi den mexicanske revolutionsgeneral Pancho Villa løbende havde foretaget flere togter ind i USA , dels fordi tyske ubåde havde angrebet flere amerikanske skibe og sænket flere britiske civile fartøjer med store tab af menneskeliv til følge .	Ikke mindst sænkningen af RMS Lusitania den 7. maj 1915 havde vakt forargelse .
+Event	T0	understøttet	EVENT	104
+Event	T1	holdt	EVENT	248
+Event	T2	tale	EVENT	339
+Event	T3	bekræftede	EVENT	354
+Event	T4	spekulationerne	EVENT	394
+Event	T5	ophørte	EVENT	425
+Event	T6	udbredte	EVENT	487
+Event	T7	foretaget	EVENT	595
+Event	T8	angrebet	EVENT	659
+Event	T9	sænket	EVENT	695
+Event	T10	tab	EVENT	743
+Event	T11	sænkningen	EVENT	786
+Event	T12	synspunkt	EVENT	6
+Event	T13	begrænset	EVENT	35
+Event	T14	følelser	EVENT	465
+Event	T15	togter	EVENT	611
+Relation	T11	T2	NoRel	true	sænkningen	tale
+Relation	T12	T8	NoRel	true	synspunkt	angrebet
+Relation	T13	T1	NoRel	true	begrænset	holdt
+Relation	T13	T3	NoRel	true	begrænset	bekræftede
+Relation	T13	T5	NoRel	true	begrænset	ophørte
+Relation	T15	T12	NoRel	true	togter	synspunkt
+Relation	T2	T1	NoRel	true	tale	holdt
+Relation	T3	T1	NoRel	true	bekræftede	holdt
+Relation	T4	T12	NoRel	true	spekulationerne	synspunkt
+Relation	T4	T5	NoRel	true	spekulationerne	ophørte
+Relation	T6	T12	NoRel	true	udbredte	synspunkt
+Relation	T6	T8	NoRel	true	udbredte	angrebet
+Relation	T7	T1	NoRel	true	foretaget	holdt
+Relation	T9	T15	NoRel	true	sænket	togter

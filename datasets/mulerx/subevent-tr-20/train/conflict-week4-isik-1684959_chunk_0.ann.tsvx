@@ -1,0 +1,15 @@
+Text	MANUEL DA COSTA ( d. 6 Mayıs 1986 ; Saint - Max , Fransa ) , defans pozisyonunda oynayan Portekiz asıllı Fas millî futbol takımı futbolcusu .	Fransa'nın şehrinse dünyaya gelen Da Costa , ilk olarak futbola yerel lig takımlarından Jarville - la - Malgrange da başladı .	Bu takımdaki performansı onu Fransa'nın köklü kulüplerinden AS Nancy'e transfer olmasını sağladı .	İlk profesyonel maçına AS Nancy forması ile 2005 - 06 sezonun 21. hafta maçında FC Lens karşısında çıkan Costa , Nancy forması ile sadece yarım sezon forma giymiş ve 9 maç forma giymiştir .	Bu kısa süredeki performansı ile Hollanda devi PSVa 1.5 milyon € bonservis bedeli karşılığında transfer oldu .
+Event	T0	başladı	EVENT	259
+Event	T1	performansı	EVENT	282
+Event	T2	sağladı	EVENT	358
+Event	T3	çıkan	EVENT	467
+Event	T4	giymiş	EVENT	524
+Event	T5	giymiştir	EVENT	546
+Event	T6	performansı	EVENT	575
+Event	T7	oldu	EVENT	662
+Event	T8	oynayan	EVENT	81
+Event	T9	gelen	EVENT	170
+Relation	T3	T2	NoRel	true	çıkan	sağladı
+Relation	T4	T0	NoRel	true	giymiş	başladı
+Relation	T7	T0	NoRel	true	oldu	başladı
+Relation	T7	T2	NoRel	true	oldu	sağladı

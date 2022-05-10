@@ -1,0 +1,17 @@
+Text	Gelişmiş ülkelerin tamamında ve gelişmekte olan ülkelerin pek çoğunda ortadan kaldırılmış olmasına rağmen Asya ve Afrika kıtalarının bazı bölgelerinde hâlen görülebilmektedir .	Bulaşıcı ve öldürücü bir hastalıktır .	Vebanın farelerden bulaştığı kanısı yaygındır , ancak gerçekte bakteriyi yayan bir tür piredir ve fareler de bu hastalığın kurbanıdırlar .	Tarihte veba salgınlarından önce şehirlerde büyük miktarda fare ölümlerinin meydana geldiği görülmüş , ölü farelerle temas eden insanların , pire ısırması nedeniyle bu hastalığa maruz kaldıkları tespit edilmiştir .	Hastalık , mikrop kapıldıktan 2- 8 gün içerisinde kendini gösterir .
+Event	T0	kaldırılmış	EVENT	78
+Event	T2	salgınlarından	EVENT	368
+Event	T3	görülmüş	EVENT	447
+Event	T4	ısırması	EVENT	501
+Event	T5	edilmiştir	EVENT	557
+Event	T6	kapıldıktan	EVENT	588
+Event	T7	gösterir	EVENT	628
+Event	T8	Vebanın	EVENT	216
+Event	T1	piredir	EVENT	303
+Event	T9	yayan	EVENT	289
+Relation	T0	T7	NoRel	true	kaldırılmış	gösterir
+Relation	T0	T9	NoRel	true	kaldırılmış	yayan
+Relation	T4	T8	NoRel	true	ısırması	Vebanın
+Relation	T5	T6	NoRel	true	edilmiştir	kapıldıktan
+Relation	T6	T7	NoRel	true	kapıldıktan	gösterir
+Relation	T7	T2	NoRel	true	gösterir	salgınlarından

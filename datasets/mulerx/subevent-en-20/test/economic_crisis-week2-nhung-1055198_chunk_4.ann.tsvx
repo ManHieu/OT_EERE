@@ -1,0 +1,53 @@
+Text	Unfortunately the bootlegger 's twin brother is the local sheriff , and he quickly arrests Addie and Moze .	Addie hides their money in her hat , steals back the key to their car , and the pair escape .	To elude pursuit , they trade their new car for a decrepit Model T farm truck after Moze beats a hillbilly , Leroy , in a " rasslin ' match " .	Moze and Addie make it across the state line to Missouri , where Moze sets up another swindle , only to be caught again by the sheriff and his deputies ; outside of their jurisdiction and unable to make an arrest , they beat Moze and rob him of his and Addie 's savings .	Humiliated and defeated , Moze drops Addie at the house of her aunt in St. Joseph , but a disappointed Addie rejoins him on the road .
+Event	T0	arrests	EVENT	83
+Event	T1	hides	EVENT	114
+Event	T10	arrest	EVENT	552
+Event	T11	beat	EVENT	566
+Event	T12	rob	EVENT	580
+Event	T13	Humiliated	EVENT	618
+Event	T14	defeated	EVENT	633
+Event	T15	drops	EVENT	649
+Event	T16	disappointed	EVENT	708
+Event	T17	rejoins	EVENT	727
+Event	T18	steals	EVENT	145
+Event	T19	elude	EVENT	205
+Event	T2	escape	EVENT	193
+Event	T20	make	EVENT	361
+Event	T21	sets up	EVENT	416
+Event	T3	pursuit	EVENT	211
+Event	T4	trade	EVENT	226
+Event	T5	beats	EVENT	291
+Event	T6	match	EVENT	336
+Event	T7	swindle	EVENT	432
+Event	T8	caught	EVENT	453
+Event	T9	make	EVENT	544
+Relation	T1	T18	SuperSub	true	hides	steals
+Relation	T18	T1	SubSuper	true	steals	hides
+Relation	T1	T2	SuperSub	true	hides	escape
+Relation	T2	T1	SubSuper	true	escape	hides
+Relation	T21	T20	SuperSub	true	sets up	make
+Relation	T20	T21	SubSuper	true	make	sets up
+Relation	T15	T17	SuperSub	true	drops	rejoins
+Relation	T17	T15	SubSuper	true	rejoins	drops
+Relation	T0	T14	NoRel	true	arrests	defeated
+Relation	T0	T18	NoRel	true	arrests	steals
+Relation	T10	T2	NoRel	true	arrest	escape
+Relation	T10	T5	NoRel	true	arrest	beats
+Relation	T12	T1	NoRel	true	rob	hides
+Relation	T14	T13	NoRel	true	defeated	Humiliated
+Relation	T14	T7	NoRel	true	defeated	swindle
+Relation	T15	T16	NoRel	true	drops	disappointed
+Relation	T15	T8	NoRel	true	drops	caught
+Relation	T17	T20	NoRel	true	rejoins	make
+Relation	T19	T0	NoRel	true	elude	arrests
+Relation	T2	T19	NoRel	true	escape	elude
+Relation	T2	T8	NoRel	true	escape	caught
+Relation	T20	T10	NoRel	true	make	arrest
+Relation	T20	T2	NoRel	true	make	escape
+Relation	T21	T4	NoRel	true	sets up	trade
+Relation	T21	T8	NoRel	true	sets up	caught
+Relation	T3	T1	NoRel	true	pursuit	hides
+Relation	T3	T9	NoRel	true	pursuit	make
+Relation	T5	T8	NoRel	true	beats	caught
+Relation	T8	T7	NoRel	true	caught	swindle
+Relation	T9	T8	NoRel	true	make	caught

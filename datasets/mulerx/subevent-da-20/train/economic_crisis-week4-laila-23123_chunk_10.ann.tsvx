@@ -1,0 +1,17 @@
+Text	Især to retninger af antikkens filosofi tiltalte oplysningstænkerne : epikuræismen og stoicismen .	Med hensyn til epikuræismen var det især digteren Lukrets' digt _ De Rerum Natura _ ( " Tingenes Natur " ) , der var populært .	Digtet forklarede , hvordan verden er skabt af atomer , og at guderne kun har skabt den for derefter at iagttage ; det var et synspunkt , der tiltalte deisterne og til en vis grad også ateisterne , som inspirerede mange af dem .	Med hensyn til stoicismen var det især Cicero der var den foretrukne tænker .	I sit skrift _ De Natura Deorum _ ( " Gudernes Natur " ) gennemgår Cicero de mange forskellige filosofiske retninger og afslører sin egen kynisk realistiske holdning til romernes religion .
+Event	T0	tiltalte	EVENT	40
+Event	T1	forklarede	EVENT	234
+Event	T2	skabt	EVENT	265
+Event	T3	skabt	EVENT	305
+Event	T4	tiltalte	EVENT	369
+Event	T5	inspirerede	EVENT	429
+Event	T6	gennemgår	EVENT	591
+Event	T7	afslører	EVENT	654
+Event	T8	retninger	EVENT	8
+Event	T9	populært	EVENT	216
+Event	T10	iagttage	EVENT	331
+Event	T11	foretrukne	EVENT	514
+Relation	T2	T6	NoRel	true	skabt	gennemgår
+Relation	T3	T9	NoRel	true	skabt	populært
+Relation	T5	T0	NoRel	true	inspirerede	tiltalte
+Relation	T7	T4	NoRel	true	afslører	tiltalte

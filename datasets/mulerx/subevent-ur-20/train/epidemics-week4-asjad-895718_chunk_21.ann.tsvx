@@ -1,0 +1,79 @@
+Text	1 مئی 2021 : یومیہ اموات +146 ، کل اموات 17, 957 ، کل کیس 825 , 519 ، نئے کیس +4,696 ، کل ٹیسٹ 11,836,866 ، کل صحتیاب 717,009 ، زیر علاج 90,553_-	7 مئی 2021 : یومیہ اموات +140 ، کل اموات 18,677 ، کل کیس 850, 131 ، نئے کیس +4,298 ، کل ٹیسٹ 12, 101, 832 ، کل صحتیاب 747,755 ، زیر علاج 83, 699 -	16 مئی 2021 : یومیہ اموات +83 ، کل اموات 19,467 ، کل کیس 874 , 751 ، نئے کیس +1, 531 ، کل ٹیسٹ 12, 410, 924 ، کل صحتیاب 783, 480 ، زیر علاج 71, 804 -	17 مئی 2021 : یومیہ اموات +76 ، کل اموات 19,543 ، کل کیس 877, 130 ، نئے کیس +2,379 ، کل ٹیسٹ 12,444, 042 ، کل صحتیاب 788,768 ، زیر علاج 68, 819 -	23 مئی 2021 : یومیہ اموات +88 ، کل اموات 20, 177 ، کل کیس 897 ,468 ، نئے کیس +4,007 ، کل ٹیسٹ 12, 717 , 235 ، کل صحتیاب 813,855 ، زیر علاج 63,436 -
+Event	T0	اموات	EVENT	19
+Event	T1	اموات	EVENT	35
+Event	T2	کیس	EVENT	54
+Event	T3	کیس	EVENT	74
+Event	T4	ٹیسٹ	EVENT	90
+Event	T5	علاج	EVENT	132
+Event	T6	اموات	EVENT	165
+Event	T7	کیس	EVENT	218
+Event	T8	ٹیسٹ	EVENT	234
+Event	T9	علاج	EVENT	278
+Event	T10	اموات	EVENT	313
+Event	T11	اموات	EVENT	328
+Event	T12	کیس	EVENT	346
+Event	T13	کیس	EVENT	366
+Event	T14	ٹیسٹ	EVENT	383
+Event	T15	علاج	EVENT	428
+Event	T16	اموات	EVENT	463
+Event	T17	اموات	EVENT	478
+Event	T18	کیس	EVENT	496
+Event	T19	کیس	EVENT	515
+Event	T20	ٹیسٹ	EVENT	531
+Event	T21	علاج	EVENT	574
+Event	T22	اموات	EVENT	609
+Event	T23	اموات	EVENT	624
+Event	T24	کیس	EVENT	662
+Event	T25	ٹیسٹ	EVENT	678
+Event	T26	علاج	EVENT	723
+Relation	T2	T0	SuperSub	true	کیس	اموات
+Relation	T0	T2	SubSuper	true	اموات	کیس
+Relation	T2	T1	SuperSub	true	کیس	اموات
+Relation	T1	T2	SubSuper	true	اموات	کیس
+Relation	T2	T3	SuperSub	true	کیس	کیس
+Relation	T3	T2	SubSuper	true	کیس	کیس
+Relation	T2	T4	SuperSub	true	کیس	ٹیسٹ
+Relation	T4	T2	SubSuper	true	ٹیسٹ	کیس
+Relation	T12	T10	SuperSub	true	کیس	اموات
+Relation	T10	T12	SubSuper	true	اموات	کیس
+Relation	T12	T11	SuperSub	true	کیس	اموات
+Relation	T11	T12	SubSuper	true	اموات	کیس
+Relation	T12	T13	SuperSub	true	کیس	کیس
+Relation	T13	T12	SubSuper	true	کیس	کیس
+Relation	T12	T14	SuperSub	true	کیس	ٹیسٹ
+Relation	T14	T12	SubSuper	true	ٹیسٹ	کیس
+Relation	T18	T16	SuperSub	true	کیس	اموات
+Relation	T16	T18	SubSuper	true	اموات	کیس
+Relation	T18	T17	SuperSub	true	کیس	اموات
+Relation	T17	T18	SubSuper	true	اموات	کیس
+Relation	T18	T19	SuperSub	true	کیس	کیس
+Relation	T19	T18	SubSuper	true	کیس	کیس
+Relation	T18	T20	SuperSub	true	کیس	ٹیسٹ
+Relation	T20	T18	SubSuper	true	ٹیسٹ	کیس
+Relation	T1	T5	NoRel	true	اموات	علاج
+Relation	T11	T4	NoRel	true	اموات	ٹیسٹ
+Relation	T12	T1	NoRel	true	کیس	اموات
+Relation	T13	T25	NoRel	true	کیس	ٹیسٹ
+Relation	T13	T3	NoRel	true	کیس	کیس
+Relation	T15	T24	NoRel	true	علاج	کیس
+Relation	T18	T1	NoRel	true	کیس	اموات
+Relation	T18	T26	NoRel	true	کیس	علاج
+Relation	T19	T0	NoRel	true	کیس	اموات
+Relation	T19	T9	NoRel	true	کیس	علاج
+Relation	T2	T13	NoRel	true	کیس	کیس
+Relation	T2	T25	NoRel	true	کیس	ٹیسٹ
+Relation	T20	T2	NoRel	true	ٹیسٹ	کیس
+Relation	T21	T14	NoRel	true	علاج	ٹیسٹ
+Relation	T22	T23	NoRel	true	اموات	اموات
+Relation	T24	T12	NoRel	true	کیس	کیس
+Relation	T24	T13	NoRel	true	کیس	کیس
+Relation	T3	T0	NoRel	true	کیس	اموات
+Relation	T3	T24	NoRel	true	کیس	کیس
+Relation	T3	T7	NoRel	true	کیس	کیس
+Relation	T5	T0	NoRel	true	علاج	اموات
+Relation	T6	T17	NoRel	true	اموات	اموات
+Relation	T6	T26	NoRel	true	اموات	علاج
+Relation	T8	T15	NoRel	true	ٹیسٹ	علاج
+Relation	T9	T1	NoRel	true	علاج	اموات
+Relation	T9	T16	NoRel	true	علاج	اموات
+Relation	T9	T6	NoRel	true	علاج	اموات

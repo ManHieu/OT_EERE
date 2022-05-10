@@ -1,0 +1,22 @@
+Text	En 1978 , Chile aceptó entregar Townley a los EE.UU. , a fin de reducir la tensión sobre el asesinato de Letelier .	Townley , sin embargo , fue liberado en el marco del programa de protección de testigos .	La justicia de EE._UU. está a la espera de Manuel Contreras y Pedro Espinoza a ser extraditado .	En un artículo publicado 17 de diciembre de 2004 en el Los Angeles Times , Francisco Letelier , hijo de Orlando Letelier , escribió que el asesinato de su padre fue parte de la Operación Cóndor , que se describe como " un intercambio de inteligencia de red utilizado por seis dictadores del Sur de la época para eliminar a los disidentes " .	Francisco Letelier , declaró : " El asesinato de mi padre era parte del Cóndor .
+Event	T0	entregar	EVENT	23
+Event	T1	reducir	EVENT	64
+Event	T10	asesinato	EVENT	442
+Event	T11	describe	EVENT	506
+Event	T12	intercambio	EVENT	525
+Event	T13	utilizado	EVENT	560
+Event	T14	eliminar	EVENT	615
+Event	T15	declaró	EVENT	666
+Event	T16	asesinato	EVENT	681
+Event	T3	asesinato	EVENT	92
+Event	T4	liberado	EVENT	144
+Event	T7	extraditado	EVENT	289
+Event	T8	publicado	EVENT	318
+Event	T9	escribió	EVENT	426
+Event	T2	Operación Cóndor	EVENT	480
+Relation	T1	T9	NoRel	true	reducir	escribió
+Relation	T10	T15	NoRel	true	asesinato	declaró
+Relation	T11	T10	NoRel	true	describe	asesinato
+Relation	T12	T7	NoRel	true	intercambio	extraditado
+Relation	T4	T15	NoRel	true	liberado	declaró
+Relation	T9	T10	NoRel	true	escribió	asesinato

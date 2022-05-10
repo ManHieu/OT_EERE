@@ -1,0 +1,36 @@
+Text	گایوں کی حمل و نقل کے دوران کچھ جگہوں پر لوگوں بلا لحاظ مذہب و ملت پیٹا گیا ۔	3 . جے شری رام کا تعرہ بطور خاص 2019ء سے حب الوطنی کے اظہار کا موضوع بن گیا ۔	اسے کہنے سے انکار کرنے والے بھی تشدد کا شکار ہو گئے ۔	پاکستان میں نسلی فرقہ وارانہ حملے ، فسادات ، سرکاری اور عوامی ملکیت کا نقصان اور مسلمان اور غیر مسلم اقلیتوں کے قتل کے واقعات رو_نما ہوئے ہیں ۔	اس کے علاوہ ناموسی قتل ، اجتماعی آبرو ریزی اور توہین مذہب کی وجہ سے بھی کئی قتل اور زد و کوب کے واقعات رونما ہو چکے ہیں ۔
+Event	T0	حمل	EVENT	9
+Event	T1	تعرہ	EVENT	96
+Event	T2	اظہار	EVENT	132
+Event	T3	گیا	EVENT	150
+Event	T4	کہنے	EVENT	160
+Event	T5	تشدد	EVENT	188
+Event	T6	شکار	EVENT	196
+Event	T7	گئے	EVENT	204
+Event	T8	فسادات	EVENT	246
+Event	T9	نقصان	EVENT	281
+Event	T10	قتل	EVENT	322
+Event	T11	قتل	EVENT	373
+Event	T12	ریزی	EVENT	392
+Event	T13	توہین	EVENT	401
+Event	T14	قتل	EVENT	430
+Event	T15	زد	EVENT	438
+Event	T16	رونما	EVENT	457
+Relation	T1	T16	NoRel	true	تعرہ	رونما
+Relation	T10	T14	NoRel	true	قتل	قتل
+Relation	T11	T4	NoRel	true	قتل	کہنے
+Relation	T13	T12	NoRel	true	توہین	ریزی
+Relation	T13	T3	NoRel	true	توہین	گیا
+Relation	T15	T16	NoRel	true	زد	رونما
+Relation	T15	T6	NoRel	true	زد	شکار
+Relation	T16	T14	NoRel	true	رونما	قتل
+Relation	T16	T4	NoRel	true	رونما	کہنے
+Relation	T2	T14	NoRel	true	اظہار	قتل
+Relation	T3	T1	NoRel	true	گیا	تعرہ
+Relation	T3	T6	NoRel	true	گیا	شکار
+Relation	T5	T8	NoRel	true	تشدد	فسادات
+Relation	T6	T14	NoRel	true	شکار	قتل
+Relation	T7	T9	NoRel	true	گئے	نقصان
+Relation	T8	T0	NoRel	true	فسادات	حمل
+Relation	T9	T10	NoRel	true	نقصان	قتل
+Relation	T9	T8	NoRel	true	نقصان	فسادات

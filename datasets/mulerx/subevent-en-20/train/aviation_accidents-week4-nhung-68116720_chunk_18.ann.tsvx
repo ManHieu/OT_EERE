@@ -1,0 +1,54 @@
+Text	The recovery is somewhat unusual in that the aircraft did not break up into small pieces .	On November 2 , the NTSB recovered both flight recorders as well as the aircraft 's fuselage and engines .	- US Airways Flight 1549 :_2009 Airbus A320 water landing after dual engine failure caused by a bird strike during initial climb - Garuda Indonesia Flight 421 :_2002 Boeing 737 - 300 forced landing in shallow water after both engines flamed out in hail and heavy rain	- Ethiopian Airlines Flight 961 :_1996 ditching after dual engine failure caused by Fuel exhaustion during a hijacking	- ALM Flight 980 :_1970 DC - 9 ditching after dual engine failure caused by fuel exhaustion after a diversion - 1963 Aeroflot Tupolev Tu - 124 Neva river ditching : dual engine failure caused by fuel exhaustion after a diversion
+Event	T0	recovery	EVENT	4
+Event	T1	recovered	EVENT	116
+Event	T2	landing	EVENT	248
+Event	T4	strike	EVENT	299
+Event	T5	climb	EVENT	321
+Event	T6	Flight	EVENT	346
+Event	T7	caused	EVENT	540
+Event	T8	exhaustion	EVENT	555
+Event	T9	Flight	EVENT	591
+Event	T10	ditching	EVENT	616
+Event	T11	caused	EVENT	651
+Event	T12	diversion	EVENT	685
+Event	T13	ditching	EVENT	739
+Event	T14	caused	EVENT	770
+Event	T15	exhaustion	EVENT	785
+Event	T16	break up	EVENT	62
+Event	T3	failure	EVENT	274
+Event	T17	landing	EVENT	388
+Event	T18	flamed	EVENT	432
+Event	T19	rain	EVENT	461
+Event	T20	hijacking	EVENT	575
+Event	T21	ditching	EVENT	505
+Event	T22	failure	EVENT	532
+Event	T23	failure	EVENT	643
+Event	T24	exhaustion	EVENT	666
+Event	T25	failure	EVENT	762
+Relation	T5	T4	SuperSub	true	climb	strike
+Relation	T4	T5	SubSuper	true	strike	climb
+Relation	T10	T0	NoRel	true	ditching	recovery
+Relation	T11	T6	NoRel	true	caused	Flight
+Relation	T14	T5	NoRel	true	caused	climb
+Relation	T14	T7	NoRel	true	caused	caused
+Relation	T15	T7	NoRel	true	exhaustion	caused
+Relation	T16	T18	NoRel	true	break up	flamed
+Relation	T16	T19	NoRel	true	break up	rain
+Relation	T16	T22	NoRel	true	break up	failure
+Relation	T17	T20	NoRel	true	landing	hijacking
+Relation	T18	T25	NoRel	true	flamed	failure
+Relation	T18	T8	NoRel	true	flamed	exhaustion
+Relation	T2	T0	NoRel	true	landing	recovery
+Relation	T20	T15	NoRel	true	hijacking	exhaustion
+Relation	T22	T16	NoRel	true	failure	break up
+Relation	T23	T20	NoRel	true	failure	hijacking
+Relation	T24	T5	NoRel	true	exhaustion	climb
+Relation	T25	T3	NoRel	true	failure	failure
+Relation	T3	T25	NoRel	true	failure	failure
+Relation	T5	T15	NoRel	true	climb	exhaustion
+Relation	T6	T14	NoRel	true	Flight	caused
+Relation	T7	T20	NoRel	true	caused	hijacking
+Relation	T7	T25	NoRel	true	caused	failure
+Relation	T8	T7	NoRel	true	exhaustion	caused
+Relation	T9	T1	NoRel	true	Flight	recovered
+Relation	T9	T22	NoRel	true	Flight	failure

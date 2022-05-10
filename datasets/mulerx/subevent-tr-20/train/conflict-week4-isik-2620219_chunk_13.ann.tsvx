@@ -1,0 +1,29 @@
+Text	31 Temmuz 1905'te Kırım'daki Kerç'de bir pogromda , belediye başkanı , polise Yahudi savunma grubuna ateş etmesini emretti ve iki savaşçı öldürüldü .	Pogrom , görünüşte bu amaçla getirilen liman işçileri tarafından yürütüldü .	17 Ekim 1905 tarihli Çar Manifestosu'nun yayınlanmasının ardından , bugünkü Ukrayna'da 660 kasabada , Soluk yerleşim'in Güney ve Güneydoğu bölgelerinde pogromlar gerçekleştirildi .	Buna karşılık , günümüz Litvanya'sında pogrom yoktu .	Ayrıca Belarus veya Rusya'da çok az olay meydana geldi .
+Event	T0	emretti	EVENT	115
+Event	T1	öldürüldü	EVENT	138
+Event	T2	yürütüldü	EVENT	215
+Event	T3	gerçekleştirildi	EVENT	389
+Event	T4	geldi	EVENT	511
+Event	T5	pogromda	EVENT	41
+Event	T6	getirilen	EVENT	179
+Event	T7	Pogrom	EVENT	150
+Event	T8	Manifestosu'nun	EVENT	252
+Event	T9	yayınlanmasının	EVENT	268
+Event	T10	pogromlar	EVENT	379
+Event	T11	pogrom	EVENT	447
+Event	T12	olay	EVENT	498
+Relation	T5	T0	SuperSub	true	pogromda	emretti
+Relation	T0	T5	SubSuper	true	emretti	pogromda
+Relation	T5	T6	SuperSub	true	pogromda	getirilen
+Relation	T6	T5	SubSuper	true	getirilen	pogromda
+Relation	T0	T10	NoRel	true	emretti	pogromlar
+Relation	T0	T8	NoRel	true	emretti	Manifestosu'nun
+Relation	T1	T2	NoRel	true	öldürüldü	yürütüldü
+Relation	T10	T5	NoRel	true	pogromlar	pogromda
+Relation	T10	T8	NoRel	true	pogromlar	Manifestosu'nun
+Relation	T11	T2	NoRel	true	pogrom	yürütüldü
+Relation	T12	T9	NoRel	true	olay	yayınlanmasının
+Relation	T4	T2	NoRel	true	geldi	yürütüldü
+Relation	T8	T10	NoRel	true	Manifestosu'nun	pogromlar
+Relation	T8	T6	NoRel	true	Manifestosu'nun	getirilen
+Relation	T8	T9	NoRel	true	Manifestosu'nun	yayınlanmasının

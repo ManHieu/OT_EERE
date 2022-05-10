@@ -1,0 +1,56 @@
+Text	Halid Şeyh Muhammed'e komplo kurmak , sivillere saldırmak , kamu malına saldırmak , kasıtlı olarak adam yaralamak , savaş hukukuna aykırı cinayet işlemek , savaş hukukuna aykırı olacak şekilde mülke zarar vermek , hava veya deniz taşıtı kaçırmak , terörizm ve terörizme malzeme desteği sağlamak suçları yöneltilirken , sanıkların tamamı ölüm cezasıyla yargılanacaktı .	Bush , 11 Nisan 2008'de yaptığı açıklamayla Ulusal Güvenlik Konseyi Yöneticiler Komitesinin terörizm şüphelilerine sert sorgulama yöntemleri uygulandığı konusunda görüşmeler yaptığını , bu yöntemlerin kullanılmasının onaylandığı hakkında bilgi sahibi olduğunu ve 2006 yılına kadar bu yöntemlerin CIA tarafından kullanıldığını kabul etti .	Bu yöntemlerin Muhammed'e de uygulanmış olmasını destekleyen Bush , " Bunları gerçekleştirmek için önümüzde yasal seçenekler vardı .	Hayır , Halid Şeyh Muhammed'in bildiklerini öğrenmek için yaptıklarımız konusunda herhangi bir sorunum yok ...	Bence Amerikan halkının Halid Şeyh Muhammed'in kim olduğunu anlaması konusu çok önemli .
+Event	T0	yaralamak	EVENT	104
+Event	T2	yöneltilirken	EVENT	303
+Event	T3	yargılanacaktı	EVENT	352
+Event	T4	sorgulama	EVENT	489
+Event	T5	uygulandığı	EVENT	510
+Event	T7	uygulanmış	EVENT	737
+Event	T8	komplo	EVENT	22
+Event	T9	saldırmak	EVENT	48
+Event	T10	saldırmak	EVENT	72
+Event	T1	cinayet	EVENT	138
+Event	T11	zarar vermek	EVENT	199
+Event	T12	kaçırmak	EVENT	237
+Event	T13	terörizm	EVENT	248
+Event	T14	desteği	EVENT	278
+Event	T15	terörizm	EVENT	461
+Event	T16	onaylandığı	EVENT	586
+Event	T6	kabul etti	EVENT	695
+Event	T17	destekleyen	EVENT	757
+Event	T18	öğrenmek	EVENT	885
+Event	T19	anlaması	EVENT	1012
+Relation	T2	T8	SuperSub	true	yöneltilirken	komplo
+Relation	T8	T2	SubSuper	true	komplo	yöneltilirken
+Relation	T2	T9	SuperSub	true	yöneltilirken	saldırmak
+Relation	T9	T2	SubSuper	true	saldırmak	yöneltilirken
+Relation	T2	T10	SuperSub	true	yöneltilirken	saldırmak
+Relation	T10	T2	SubSuper	true	saldırmak	yöneltilirken
+Relation	T2	T0	SuperSub	true	yöneltilirken	yaralamak
+Relation	T0	T2	SubSuper	true	yaralamak	yöneltilirken
+Relation	T2	T1	SuperSub	true	yöneltilirken	cinayet
+Relation	T1	T2	SubSuper	true	cinayet	yöneltilirken
+Relation	T2	T11	SuperSub	true	yöneltilirken	zarar vermek
+Relation	T11	T2	SubSuper	true	zarar vermek	yöneltilirken
+Relation	T2	T12	SuperSub	true	yöneltilirken	kaçırmak
+Relation	T12	T2	SubSuper	true	kaçırmak	yöneltilirken
+Relation	T2	T13	SuperSub	true	yöneltilirken	terörizm
+Relation	T13	T2	SubSuper	true	terörizm	yöneltilirken
+Relation	T2	T14	SuperSub	true	yöneltilirken	desteği
+Relation	T14	T2	SubSuper	true	desteği	yöneltilirken
+Relation	T18	T7	SuperSub	true	öğrenmek	uygulanmış
+Relation	T7	T18	SubSuper	true	uygulanmış	öğrenmek
+Relation	T4	T5	SuperSub	true	sorgulama	uygulandığı
+Relation	T5	T4	SubSuper	true	uygulandığı	sorgulama
+Relation	T1	T5	NoRel	true	cinayet	uygulandığı
+Relation	T13	T1	NoRel	true	terörizm	cinayet
+Relation	T14	T12	NoRel	true	desteği	kaçırmak
+Relation	T14	T15	NoRel	true	desteği	terörizm
+Relation	T15	T18	NoRel	true	terörizm	öğrenmek
+Relation	T17	T19	NoRel	true	destekleyen	anlaması
+Relation	T17	T6	NoRel	true	destekleyen	kabul etti
+Relation	T19	T14	NoRel	true	anlaması	desteği
+Relation	T3	T14	NoRel	true	yargılanacaktı	desteği
+Relation	T4	T18	NoRel	true	sorgulama	öğrenmek
+Relation	T6	T15	NoRel	true	kabul etti	terörizm
+Relation	T8	T14	NoRel	true	komplo	desteği
+Relation	T8	T6	NoRel	true	komplo	kabul etti

@@ -1,0 +1,33 @@
+Text	Ésta lo tuvo durante un par de décadas hasta 2016 , cuando se le fue dado a otra agencia de paracaidismo , Kalle David Flyg AB , manteniendo el mismo registro .	Después en julio de 2020 , otra vez Skånes Fallskarmsklubb la poseyó alquilándosela a Kalle David Flyg AB .	El aparato despegó del aeropuerto de Örebro , en el municipio y provincia del mismo nombre , en Suecia .	Poco después del despegue , cuando se alzaba , el avión cayó , se estrelló " incontrolablemente " , bajó una colina sin control y se incendió en el impacto más o menos a las 19:23 , dice Lars Hedelin , portavoz de prensa de la policía .	Algunos testigos , como los hermanos João y Diogo Dias que trabajan en el aeropuerto , dijeron que escucharon un sonido estrepitoso y salieron corriendo a la pista con sus colegas cuando escucharon una explosión .
+Event	T0	tuvo	EVENT	8
+Event	T1	dado	EVENT	69
+Event	T2	registro	EVENT	150
+Event	T3	despegó	EVENT	280
+Event	T4	despegue	EVENT	391
+Event	T5	alzaba	EVENT	412
+Event	T6	cayó	EVENT	430
+Event	T7	estrelló	EVENT	440
+Event	T8	bajó	EVENT	474
+Event	T9	incendió	EVENT	507
+Event	T10	impacto	EVENT	522
+Event	T11	dice	EVENT	556
+Event	T12	dijeron	EVENT	698
+Event	T13	escucharon	EVENT	710
+Event	T14	corriendo	EVENT	754
+Event	T15	escucharon	EVENT	798
+Event	T16	explosión	EVENT	813
+Relation	T0	T16	NoRel	true	tuvo	explosión
+Relation	T12	T0	NoRel	true	dijeron	tuvo
+Relation	T13	T1	NoRel	true	escucharon	dado
+Relation	T13	T12	NoRel	true	escucharon	dijeron
+Relation	T14	T1	NoRel	true	corriendo	dado
+Relation	T14	T12	NoRel	true	corriendo	dijeron
+Relation	T15	T1	NoRel	true	escucharon	dado
+Relation	T16	T11	NoRel	true	explosión	dice
+Relation	T3	T4	NoRel	true	despegó	despegue
+Relation	T4	T9	NoRel	true	despegue	incendió
+Relation	T6	T11	NoRel	true	cayó	dice
+Relation	T6	T4	NoRel	true	cayó	despegue
+Relation	T8	T3	NoRel	true	bajó	despegó
+Relation	T8	T5	NoRel	true	bajó	alzaba
+Relation	T9	T10	NoRel	true	incendió	impacto

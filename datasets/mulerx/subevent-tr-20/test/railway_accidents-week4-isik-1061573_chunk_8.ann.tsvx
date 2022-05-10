@@ -1,0 +1,19 @@
+Text	- 11 Eylül , 1986 - Pathali Pahar hemzemin geçit felaketi — Bir yerel otobüs , Assam’da bir yolcu treniyle çarpıştı ; en az yirmi sekiz kişi öldü ve altmış kişi yaralandı .	- 20 Mart , 1991 - Annupur hemzemin geçit felaketi — Madhya Pradeş’de bir otobüs pek çok araçla çarpıştı ve takiben yolcu trenine çarptı .	En az otuz beş kişi öldü ve yirmi yedi kişi yaralandı .	- Nisan 1999 - Jhukia hemzemin geçit felaketi — Düğün partili bir otobüs , yolcu treniyle çarpıştı .	En az 45 kişi öldü .
+Event	T0	felaketi	EVENT	49
+Event	T1	çarpıştı	EVENT	107
+Event	T2	öldü	EVENT	141
+Event	T3	yaralandı	EVENT	161
+Event	T4	felaketi	EVENT	215
+Event	T5	çarpıştı	EVENT	269
+Event	T6	çarptı	EVENT	303
+Event	T7	öldü	EVENT	332
+Event	T8	yaralandı	EVENT	356
+Event	T9	felaketi	EVENT	405
+Event	T10	çarpıştı	EVENT	458
+Event	T11	öldü	EVENT	483
+Relation	T0	T11	NoRel	true	felaketi	öldü
+Relation	T0	T6	NoRel	true	felaketi	çarptı
+Relation	T1	T5	NoRel	true	çarpıştı	çarpıştı
+Relation	T2	T7	NoRel	true	öldü	öldü
+Relation	T5	T3	NoRel	true	çarpıştı	yaralandı
+Relation	T9	T2	NoRel	true	felaketi	öldü

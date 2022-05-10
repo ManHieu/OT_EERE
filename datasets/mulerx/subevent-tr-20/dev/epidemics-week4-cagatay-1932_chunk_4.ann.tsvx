@@ -1,0 +1,13 @@
+Text	1	- İlk defa Leopoldville , Belçika Kongo'sunda yaşamış bir kişiden 1959 alınan kanda tespit edildi .	O tarihten beri dolapta saklanan kanın , 1998'de geliştirilen HIV testi ile hastalığı taşıdığı onaylandı .	- Dünyayı dolaşmış , 1961'de Batı Afrika'da uzun yolculuk yapmış Norveçli bir gemici bağışıklık yetersizliği ile 1966 öldü .	Karısı ve kızı da ertesi yıl aynı sebeple öldü .
+Event	T0	alınan	EVENT	73
+Event	T1	edildi	EVENT	93
+Event	T2	testi	EVENT	168
+Event	T3	onaylandı	EVENT	197
+Event	T4	öldü	EVENT	327
+Event	T5	öldü	EVENT	376
+Event	T6	saklanan	EVENT	126
+Event	T7	taşıdığı	EVENT	188
+Event	T8	dolaşmış	EVENT	219
+Event	T9	yapmış	EVENT	267
+Relation	T1	T0	NoRel	true	edildi	alınan
+Relation	T6	T4	NoRel	true	saklanan	öldü

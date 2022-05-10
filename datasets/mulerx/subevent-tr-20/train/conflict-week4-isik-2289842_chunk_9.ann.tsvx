@@ -1,0 +1,31 @@
+Text	Yeğeni Martina ile evlenip Konstantinopolis Patriki tarafından taçlandırıldıktan sonra , 35 yaşındaki Herakleios imparator olarak çalışmalarını sürdürmeye başladı .	Phocas'ın kardeşi Comentiolus'un , Orta Anadolu'da büyük bir güç emri altındaydı ancak Ermeni komutanı Justinus tarafından öldürüldü ve Herakleios'un hükümdarlığı için büyük bir tehdit ortadan kaldırıldı .	Yine de , Comentiolus'un komuta ettiği güçlerin transferi geciktirildi ve bu Perslerin Anadolu'da ilerlemesine yol açtı .	Herakleios gelirleri arttırmaya ve maliyetleri düşürmeye çalışırken , Konstantinopolis'teki devlet destekli kilisenin personel sayısını , imparatorluk hazinesinden yeni personel almayarak sınırladı .	Hanedanlığını meşrulaştırmak için törenler gerçekleştirdi ve adalet için kazandığı itibar ile iktidarını güçlendirmiştir .
+Event	T0	evlenip	EVENT	19
+Event	T1	öldürüldü	EVENT	288
+Event	T2	kaldırıldı	EVENT	358
+Event	T3	geciktirildi	EVENT	429
+Event	T4	açtı	EVENT	486
+Event	T5	sınırladı	EVENT	681
+Event	T6	meşrulaştırmak	EVENT	707
+Event	T7	gerçekleştirdi	EVENT	736
+Event	T8	güçlendirmiştir	EVENT	798
+Event	T9	taçlandırıldıktan	EVENT	63
+Event	T10	başladı	EVENT	155
+Event	T11	ettiği	EVENT	403
+Event	T12	ilerlemesine	EVENT	469
+Event	T13	arttırmaya	EVENT	514
+Event	T14	düşürmeye	EVENT	540
+Event	T15	çalışırken	EVENT	550
+Relation	T0	T9	NoRel	true	evlenip	taçlandırıldıktan
+Relation	T1	T4	NoRel	true	öldürüldü	açtı
+Relation	T10	T15	NoRel	true	başladı	çalışırken
+Relation	T13	T12	NoRel	true	arttırmaya	ilerlemesine
+Relation	T13	T2	NoRel	true	arttırmaya	kaldırıldı
+Relation	T14	T10	NoRel	true	düşürmeye	başladı
+Relation	T15	T7	NoRel	true	çalışırken	gerçekleştirdi
+Relation	T3	T10	NoRel	true	geciktirildi	başladı
+Relation	T3	T14	NoRel	true	geciktirildi	düşürmeye
+Relation	T3	T4	NoRel	true	geciktirildi	açtı
+Relation	T4	T9	NoRel	true	açtı	taçlandırıldıktan
+Relation	T5	T6	NoRel	true	sınırladı	meşrulaştırmak
+Relation	T9	T15	NoRel	true	taçlandırıldıktan	çalışırken
+Relation	T9	T4	NoRel	true	taçlandırıldıktan	açtı

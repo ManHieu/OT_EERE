@@ -1,0 +1,21 @@
+Text	- 11 Aralık , 1987 – Mısır hükümetine göre Gize hayvanat bahçesinden dönmekte olan yerel ilkokul öğrencilerini taşımakta olan bir otobüs Mısır , Kahire eteklerinde Ein Sham’da işaretlenmemiş bir hemzemin geçidinde hızlı tren ile çarpıştı , 62 çocuk öldü , 67_si yaralandı .	- 16 Nisan , 1995 - Al Minufiyah memzemin giçit felaketi ; Bir otobüs ekspres tren ile çarpıştığında , sonuç en az kırk dokuz tekstil işçisi öldü .	- 16 Temmuz 2008 Marsa Matruh bir kamyon , tren yolu içindeki durmalı kalkmalı trafikte durmayı başaramadı .	En az 40 ölü .	- 20 Haziran 1959 – Kalabalık bir otobüs , Batı Almanya , Lauffen hemzemin geçidinde bir trenle çarpıştı .
+Event	T0	çarpıştı	EVENT	229
+Event	T1	öldü	EVENT	249
+Event	T10	taşımakta	EVENT	111
+Event	T2	yaralandı	EVENT	262
+Event	T3	felaketi	EVENT	322
+Event	T4	çarpıştığında	EVENT	361
+Event	T5	öldü	EVENT	415
+Event	T6	başaramadı	EVENT	518
+Event	T7	ölü	EVENT	540
+Event	T8	çarpıştı	EVENT	642
+Event	T9	dönmekte	EVENT	69
+Relation	T3	T4	SuperSub	true	felaketi	çarpıştığında
+Relation	T4	T3	SubSuper	true	çarpıştığında	felaketi
+Relation	T3	T5	SuperSub	true	felaketi	öldü
+Relation	T5	T3	SubSuper	true	öldü	felaketi
+Relation	T0	T2	NoRel	true	çarpıştı	yaralandı
+Relation	T0	T4	NoRel	true	çarpıştı	çarpıştığında
+Relation	T2	T1	NoRel	true	yaralandı	öldü
+Relation	T3	T9	NoRel	true	felaketi	dönmekte
+Relation	T7	T9	NoRel	true	ölü	dönmekte

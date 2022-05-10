@@ -1,0 +1,39 @@
+Text	One flight attendant was found with a total of 85 % of carboxyhemoglobin concentration inside her blood , along with her colleagues .	One female passenger was killed due to severe trauma , combined with burns on her body .	The remaining 78 people ( 75 passengers and 3 flight attendants ) survived the crash .	Nearly 60 people were taken to a hospital , some with critical injuries , but others managed to escape with few injuries and 15 were able to continue their journeys .	Some survivors said they owed their lives to the flight attendant who managed to open the emergency exit in the rear of the aircraft .
+Event	T0	found	EVENT	25
+Event	T1	trauma	EVENT	180
+Event	T2	combined	EVENT	189
+Event	T3	burns	EVENT	203
+Event	T4	survived	EVENT	289
+Event	T5	crash	EVENT	302
+Event	T6	injuries	EVENT	373
+Event	T7	managed	EVENT	395
+Event	T8	escape	EVENT	406
+Event	T9	injuries	EVENT	422
+Event	T10	continue	EVENT	451
+Event	T11	journeys	EVENT	466
+Event	T12	said	EVENT	492
+Event	T13	owed	EVENT	502
+Event	T14	managed	EVENT	547
+Event	T15	open	EVENT	558
+Event	T16	exit	EVENT	577
+Event	T17	killed	EVENT	159
+Event	T18	taken	EVENT	332
+Relation	T5	T4	SuperSub	true	crash	survived
+Relation	T4	T5	SubSuper	true	survived	crash
+Relation	T1	T15	NoRel	true	trauma	open
+Relation	T11	T8	NoRel	true	journeys	escape
+Relation	T12	T1	NoRel	true	said	trauma
+Relation	T12	T14	NoRel	true	said	managed
+Relation	T13	T18	NoRel	true	owed	taken
+Relation	T14	T0	NoRel	true	managed	found
+Relation	T15	T12	NoRel	true	open	said
+Relation	T17	T10	NoRel	true	killed	continue
+Relation	T2	T0	NoRel	true	combined	found
+Relation	T3	T5	NoRel	true	burns	crash
+Relation	T4	T9	NoRel	true	survived	injuries
+Relation	T5	T1	NoRel	true	crash	trauma
+Relation	T7	T5	NoRel	true	managed	crash
+Relation	T7	T9	NoRel	true	managed	injuries
+Relation	T8	T0	NoRel	true	escape	found
+Relation	T8	T14	NoRel	true	escape	managed
+Relation	T9	T3	NoRel	true	injuries	burns

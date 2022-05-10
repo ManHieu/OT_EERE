@@ -1,0 +1,26 @@
+Text	Under udkørsel fra Haslev spor 1 mod Tureby den 23. december 1971 blev lokomotivføreren ca. 150 m fra det nordlige indgangssporskifte klar over , at de bageste vogne i tog 5129 , der holdt i spor 2 , ikke var sporfri .	Kollision med vognene var uundgåelig .	På grund af den bro der var styrtet sammen ved Kværkeby 22. december var Vestbanen fortsat spærret og en del tog blev ledt over Køge og Næstved .	Tog 5129 var oprindelig på 140 aksler og stationsbestyreren i Køge fik af Haslev oplyst , at der kunne være 88 aksler i spor 2 .	Toget var derfor afsendt med 84 aksler og stationsbestyreren i Haslev gik derfor ud fra , at toget kunne være i spor 2 .
+Event	T0	udkørsel	EVENT	6
+Event	T1	klar	EVENT	134
+Event	T2	holdt	EVENT	183
+Event	T3	Kollision	EVENT	219
+Event	T4	spærret	EVENT	349
+Event	T5	ledt	EVENT	376
+Event	T6	oplyst	EVENT	485
+Event	T7	afsendt	EVENT	550
+Event	T8	gik	EVENT	603
+Event	T9	sporfri	EVENT	209
+Event	T10	uundgåelig	EVENT	245
+Event	T11	styrtet sammen	EVENT	286
+Event	T12	være	EVENT	507
+Event	T13	være	EVENT	638
+Relation	T0	T3	NoRel	true	udkørsel	Kollision
+Relation	T0	T8	NoRel	true	udkørsel	gik
+Relation	T10	T0	NoRel	true	uundgåelig	udkørsel
+Relation	T11	T7	NoRel	true	styrtet sammen	afsendt
+Relation	T11	T9	NoRel	true	styrtet sammen	sporfri
+Relation	T12	T7	NoRel	true	være	afsendt
+Relation	T4	T0	NoRel	true	spærret	udkørsel
+Relation	T4	T10	NoRel	true	spærret	uundgåelig
+Relation	T4	T6	NoRel	true	spærret	oplyst
+Relation	T5	T8	NoRel	true	ledt	gik
+Relation	T8	T11	NoRel	true	gik	styrtet sammen

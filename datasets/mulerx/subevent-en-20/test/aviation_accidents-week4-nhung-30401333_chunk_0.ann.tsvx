@@ -1,0 +1,32 @@
+Text	TWA FLIGHT 541 was a domestic passenger flight hijacked in the United States by Robin Oswald in an attempt to free Garrett Brock Trapnell , who was a prisoner at the United States Penitentiary , Marion ( USP Marion ) .	The hijacking was successfully resolved when a Federal Bureau of Investigation ( F.B.I. ) negotiating team had her release the passengers and then surrender .	On January 29 , 1972 , Garrett B. Trapnell hijacked a TWA plane flying from Los Angeles to New York .	He demanded $ 306,800 ( ) , the release of the imprisoned Angela Davis and a conversation with President Nixon .	The hijacking was resolved when Trapnell was disarmed after being shot by an F.B.I. agent who pretended to be a negotiator .
+Event	T0	hijacked	EVENT	47
+Event	T1	attempt	EVENT	99
+Event	T2	free	EVENT	110
+Event	T3	hijacking	EVENT	223
+Event	T4	resolved	EVENT	250
+Event	T5	release	EVENT	334
+Event	T6	surrender	EVENT	366
+Event	T7	hijacked	EVENT	421
+Event	T8	flying	EVENT	442
+Event	T9	demanded	EVENT	483
+Event	T10	release	EVENT	512
+Event	T11	imprisoned	EVENT	527
+Event	T12	conversation	EVENT	557
+Event	T13	hijacking	EVENT	597
+Event	T14	resolved	EVENT	611
+Event	T15	disarmed	EVENT	638
+Event	T16	shot	EVENT	659
+Event	T17	pretended	EVENT	687
+Relation	T5	T6	SuperSub	true	release	surrender
+Relation	T6	T5	SubSuper	true	surrender	release
+Relation	T8	T7	SuperSub	true	flying	hijacked
+Relation	T7	T8	SubSuper	true	hijacked	flying
+Relation	T0	T15	NoRel	true	hijacked	disarmed
+Relation	T1	T6	NoRel	true	attempt	surrender
+Relation	T12	T0	NoRel	true	conversation	hijacked
+Relation	T13	T4	NoRel	true	hijacking	resolved
+Relation	T4	T9	NoRel	true	resolved	demanded
+Relation	T5	T14	NoRel	true	release	resolved
+Relation	T5	T3	NoRel	true	release	hijacking
+Relation	T7	T10	NoRel	true	hijacked	release
+Relation	T9	T13	NoRel	true	demanded	hijacking

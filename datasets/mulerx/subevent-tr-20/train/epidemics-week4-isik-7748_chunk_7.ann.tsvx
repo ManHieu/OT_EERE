@@ -1,0 +1,15 @@
+Text	Çift 1894'te Weber’in Freiburg Üniversitesi'ne Ekonomi Profesörü olarak atanması üzerine , Freiburg'a gittiler .	Bundan iki yıl sonra , aynı görevle Heidelberg Üniversitesi atandı .	1 yıl sonra , oğluyla sert bir anlaşmazlığa düşmelerinden iki ay sonra baba Weber vefat etti .	Bu olayın ardından , Weber artarak uyku problemine ve sinirliliğe düçar oldu .	Bu durum , Weber'in profesörlük görevini sürdürmesini zorlaştırdı .
+Event	T0	atanması	EVENT	72
+Event	T1	atandı	EVENT	173
+Event	T2	düşmelerinden	EVENT	226
+Event	T3	etti	EVENT	270
+Event	T4	olayın	EVENT	280
+Event	T5	durum	EVENT	359
+Event	T6	zorlaştırdı	EVENT	410
+Event	T7	gittiler	EVENT	102
+Event	T8	oldu	EVENT	349
+Relation	T4	T8	NoRel	true	olayın	oldu
+Relation	T5	T4	NoRel	true	durum	olayın
+Relation	T6	T4	NoRel	true	zorlaştırdı	olayın
+Relation	T6	T7	NoRel	true	zorlaştırdı	gittiler
+Relation	T7	T4	NoRel	true	gittiler	olayın

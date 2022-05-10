@@ -1,0 +1,16 @@
+Text	34	El 19 DE FEBRERO DE 2013 , el Tribunal Constitucional rechazó el recurso de las familias por infracción de ley para reabrir la tragedia .	Dijo haber " _ la manifiesta inexistencia _ " de la violación de un derecho fundamental tutelable .	35	Finalmente el 3 DE DICIEMBRE DE 2014 el Tribunal Europeo de Derechos Humanos , no aceptó la demanda de las familias contra España , para que se le condenase por negarse a juzgar una tragedia con seis imputados que solicitaba incluso el Ministerio Público .
+Event	T0	rechazó	EVENT	57
+Event	T1	recurso	EVENT	68
+Event	T2	infracción	EVENT	96
+Event	T3	reabrir	EVENT	119
+Event	T4	tragedia	EVENT	130
+Event	T5	Dijo	EVENT	141
+Event	T8	demanda	EVENT	336
+Event	T12	tragedia	EVENT	426
+Event	T13	solicitaba	EVENT	458
+Event	T6	no aceptó	EVENT	323
+Relation	T12	T13	SuperSub	true	tragedia	solicitaba
+Relation	T13	T12	SubSuper	true	solicitaba	tragedia
+Relation	T2	T13	NoRel	true	infracción	solicitaba
+Relation	T3	T5	NoRel	true	reabrir	Dijo
+Relation	T5	T13	NoRel	true	Dijo	solicitaba

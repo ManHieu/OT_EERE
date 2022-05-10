@@ -1,0 +1,34 @@
+Text	At approximately 2:30 pm while the Viking was in the airport 's safety area levelling off to land , a Soviet Yak - 3 approached from behind .	Eyewitnesses testified that as the Viking made a left - hand turn prior to its approach to land , the fighter dived beneath it , climbed sharply , and clipped the port wing of the airliner with its starboard wing .	The impact ripped off both colliding wings and the Viking crashed inside the Soviet Sector , at , Staaken , just outside the British Sector ( about northwest of Gatow ) , and exploded .	The Yak - 3 crashed near a farmhouse on Heerstrasse just inside the British sector .	All the occupants of both aircraft died on impact .
+Event	T0	land	EVENT	93
+Event	T1	approached	EVENT	117
+Event	T2	testified	EVENT	155
+Event	T3	made	EVENT	184
+Event	T4	approach	EVENT	221
+Event	T5	dived	EVENT	252
+Event	T6	climbed	EVENT	271
+Event	T7	clipped	EVENT	293
+Event	T8	colliding	EVENT	384
+Event	T9	crashed	EVENT	415
+Event	T10	exploded	EVENT	532
+Event	T11	crashed	EVENT	555
+Event	T12	impact	EVENT	671
+Event	T13	died	EVENT	663
+Relation	T0	T1	SuperSub	true	land	approached
+Relation	T1	T0	SubSuper	true	approached	land
+Relation	T5	T6	SuperSub	true	dived	climbed
+Relation	T6	T5	SubSuper	true	climbed	dived
+Relation	T6	T7	SuperSub	true	climbed	clipped
+Relation	T7	T6	SubSuper	true	clipped	climbed
+Relation	T4	T3	SuperSub	true	approach	made
+Relation	T3	T4	SubSuper	true	made	approach
+Relation	T9	T10	SuperSub	true	crashed	exploded
+Relation	T10	T9	SubSuper	true	exploded	crashed
+Relation	T10	T0	NoRel	true	exploded	land
+Relation	T10	T1	NoRel	true	exploded	approached
+Relation	T12	T4	NoRel	true	impact	approach
+Relation	T2	T3	NoRel	true	testified	made
+Relation	T3	T1	NoRel	true	made	approached
+Relation	T3	T12	NoRel	true	made	impact
+Relation	T3	T13	NoRel	true	made	died
+Relation	T7	T8	NoRel	true	clipped	colliding
+Relation	T9	T7	NoRel	true	crashed	clipped

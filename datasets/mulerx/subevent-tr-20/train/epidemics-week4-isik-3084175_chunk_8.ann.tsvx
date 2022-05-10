@@ -1,0 +1,12 @@
+Text	Bu yasa , hane reislerini çiçek hastalığı için zorunlu raportör yaptı .	Yani bu kişilerin evlerinde çiçek hastalığını Massachusetts Körfezi Kolonisi'nin seçkinlerine bildirmeleri gerekiyordu .	Enfekte olan haneler daha sonra kırmızı bir bayrak yerleştirilerek tanımlanacaktı .	Güney Carolina'da bu uyarılar enfekte hanelerin dışına asılacaktı ve bildirimler zounluydu .	Birçok kolonide , gemiyle gelen kişileri karantinaya almak için adalar kuruldu .
+Event	T0	hastalığı	EVENT	32
+Event	T1	yaptı	EVENT	64
+Event	T2	tanımlanacaktı	EVENT	260
+Event	T3	asılacaktı	EVENT	332
+Event	T4	kuruldu	EVENT	441
+Event	T5	yasa	EVENT	3
+Event	T6	gerekiyordu	EVENT	179
+Event	T7	gelen	EVENT	396
+Relation	T4	T7	NoRel	true	kuruldu	gelen
+Relation	T6	T5	NoRel	true	gerekiyordu	yasa
+Relation	T7	T5	NoRel	true	gelen	yasa

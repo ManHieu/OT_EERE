@@ -1,0 +1,44 @@
+Text	When KAL 007 did not reach Bethel at 50 minutes after take off , a military radar at King Salmon , Alaska , tracked KAL 007 at north of where it should have been .	There is no evidence to indicate that civil air traffic controllers or military radar personnel at Elmendorf Air Force Base ( who were in a position to receive the King Salmon radar output ) were aware of KAL 007 's deviation in real - time , and therefore able to warn the aircraft .	It had exceeded its expected maximum deviation six fold , of error being the maximum expected drift from course if the inertial navigation system was activated .	KAL_007 's divergence prevented the aircraft from transmitting its position via shorter range very high frequency radio ( VHF ) .	It therefore requested KAL 015 , also en route to Seoul , to relay reports to air traffic control on its behalf .
+Event	T0	reach	EVENT	21
+Event	T1	tracked	EVENT	108
+Event	T2	indicate	EVENT	188
+Event	T3	receive	EVENT	316
+Event	T4	deviation	EVENT	380
+Event	T5	warn	EVENT	429
+Event	T6	exceeded	EVENT	456
+Event	T7	deviation	EVENT	486
+Event	T8	error	EVENT	510
+Event	T9	drift	EVENT	543
+Event	T10	activated	EVENT	599
+Event	T11	prevented	EVENT	633
+Event	T12	transmitting	EVENT	661
+Event	T13	requested	EVENT	754
+Event	T14	reports	EVENT	808
+Event	T15	aware	EVENT	360
+Event	T16	divergence	EVENT	622
+Relation	T4	T6	SuperSub	true	deviation	exceeded
+Relation	T6	T4	SubSuper	true	exceeded	deviation
+Relation	T11	T12	SuperSub	true	prevented	transmitting
+Relation	T12	T11	SubSuper	true	transmitting	prevented
+Relation	T11	T13	SuperSub	true	prevented	requested
+Relation	T13	T11	SubSuper	true	requested	prevented
+Relation	T13	T14	SuperSub	true	requested	reports
+Relation	T14	T13	SubSuper	true	reports	requested
+Relation	T1	T2	NoRel	true	tracked	indicate
+Relation	T1	T4	NoRel	true	tracked	deviation
+Relation	T10	T11	NoRel	true	activated	prevented
+Relation	T10	T15	NoRel	true	activated	aware
+Relation	T11	T6	NoRel	true	prevented	exceeded
+Relation	T12	T6	NoRel	true	transmitting	exceeded
+Relation	T14	T11	NoRel	true	reports	prevented
+Relation	T14	T12	NoRel	true	reports	transmitting
+Relation	T14	T4	NoRel	true	reports	deviation
+Relation	T16	T15	NoRel	true	divergence	aware
+Relation	T2	T12	NoRel	true	indicate	transmitting
+Relation	T4	T2	NoRel	true	deviation	indicate
+Relation	T5	T11	NoRel	true	warn	prevented
+Relation	T5	T8	NoRel	true	warn	error
+Relation	T6	T10	NoRel	true	exceeded	activated
+Relation	T6	T12	NoRel	true	exceeded	transmitting
+Relation	T6	T15	NoRel	true	exceeded	aware
+Relation	T6	T5	NoRel	true	exceeded	warn

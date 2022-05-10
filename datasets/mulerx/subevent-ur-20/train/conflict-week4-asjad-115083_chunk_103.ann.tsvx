@@ -1,0 +1,28 @@
+Text	ادھر 2002 ء کے الیکشن میں خیبر پختون خواہ کی صوبائی حکومت اور کراچی کی شہری حکومت متحدہ مجلس عمل کے ہاتھ میں آ گئی تھی ۔	ان حکومتوں نے سرکاری نوکریاں ایسے مذہبی مہم جو افراد کو دیں جو دہشت گردی کی کارروائیوں میں طالبان کے سہولت کار بنے ۔	اس جنگ کے ماحول میں شیعہ مخالف تنظیموں نے شیعہ کشی میں خودکش دھماکے کا استعمال شروع کیا جس کے نتیجے میں اعداد و شمار کے مطابق 2000ء سے 2017 ء تک تقریباً تین ہزار شیعہ قتل ہوئے جبکہ ہزاروں زخمی اور معذور ہو کر زندہ لاش بن چکے ہیں ۔	سب سے زیادہ متاثر ہونے والا طبقہ کوئٹہ ، کراچی اور ڈیرہ اسماعیل خان کے شیعہ ہیں ۔	مفتی شامزئی صاحب کے فتوے کے بعد پنجاب اور سندھ میں متشدد مدارس نے مسلح ہونے کا عمل شروع کر رکھا ہے ۔
+Event	T0	کارروائیوں	EVENT	197
+Event	T1	بنے	EVENT	232
+Event	T2	جنگ	EVENT	241
+Event	T3	کشی	EVENT	285
+Event	T4	دھماکے	EVENT	299
+Event	T5	ہوئے	EVENT	409
+Event	T6	زخمی	EVENT	426
+Event	T7	بن	EVENT	456
+Event	T8	فتوے	EVENT	571
+Event	T9	ہونے	EVENT	622
+Event	T10	شروع	EVENT	634
+Relation	T0	T1	SuperSub	true	کارروائیوں	بنے
+Relation	T1	T0	SubSuper	true	بنے	کارروائیوں
+Relation	T2	T3	SuperSub	true	جنگ	کشی
+Relation	T3	T2	SubSuper	true	کشی	جنگ
+Relation	T2	T4	SuperSub	true	جنگ	دھماکے
+Relation	T4	T2	SubSuper	true	دھماکے	جنگ
+Relation	T2	T7	SuperSub	true	جنگ	بن
+Relation	T7	T2	SubSuper	true	بن	جنگ
+Relation	T0	T8	NoRel	true	کارروائیوں	فتوے
+Relation	T1	T4	NoRel	true	بنے	دھماکے
+Relation	T1	T5	NoRel	true	بنے	ہوئے
+Relation	T1	T6	NoRel	true	بنے	زخمی
+Relation	T5	T8	NoRel	true	ہوئے	فتوے
+Relation	T7	T5	NoRel	true	بن	ہوئے
+Relation	T7	T6	NoRel	true	بن	زخمی
+Relation	T9	T2	NoRel	true	ہونے	جنگ

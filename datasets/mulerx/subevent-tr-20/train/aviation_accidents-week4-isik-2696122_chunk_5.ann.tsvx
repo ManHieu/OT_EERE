@@ -1,0 +1,27 @@
+Text	Mukashev ayrıca şunları söyledi : " Kazadan sonra uçağın tek bir kısmı bile sağlam kalmadı .	"	2 Mart 2015'te Devletler Arası Havacılık Komitesi , hava koşullarının minimumun gereksinimlerin altında olması nedeniyle başlatılan kaçırılan yaklaşım prosedürü sırasında , irtifâ dümeninin sapmasının kaydedildiğini ve bunun da dik bir dalışa ve uçağın düşmesiyle sonuçlandığını belirten nihai kaza raporunu yayınladı .	Soruşturmada herhangi bir sistem arızası veya dış faktör olduğuna dair bir kanıt bulamadı ve irtifâ dümeninin sapmasının nedenini belirleyemedi .	Kazakistan Cumhurbaşkanı Nursultan Nazarbayev , kazada ölenlerin ailelerine ve arkadaşlarına başsağlığı dileklerini ifade ederek , mağdurların ailelerine gerekli yardımın verileceğini söyledi .
+Event	T0	prosedürü	EVENT	246
+Event	T1	kaydedildiğini	EVENT	296
+Event	T2	dalışa	EVENT	331
+Event	T3	yayınladı	EVENT	403
+Event	T4	sapmasının	EVENT	525
+Event	T5	belirleyemedi	EVENT	545
+Event	T6	söyledi	EVENT	745
+Event	T7	Kazadan	EVENT	36
+Event	T8	düşmesiyle	EVENT	348
+Event	T9	sapmasının	EVENT	285
+Event	T10	Soruşturmada	EVENT	415
+Event	T11	kazada	EVENT	609
+Event	T12	ölenlerin	EVENT	616
+Relation	T7	T10	SuperSub	true	Kazadan	Soruşturmada
+Relation	T10	T7	SubSuper	true	Soruşturmada	Kazadan
+Relation	T7	T12	SuperSub	true	Kazadan	ölenlerin
+Relation	T12	T7	SubSuper	true	ölenlerin	Kazadan
+Relation	T7	T6	SuperSub	true	Kazadan	söyledi
+Relation	T6	T7	SubSuper	true	söyledi	Kazadan
+Relation	T0	T7	NoRel	true	prosedürü	Kazadan
+Relation	T10	T9	NoRel	true	Soruşturmada	sapmasının
+Relation	T12	T10	NoRel	true	ölenlerin	Soruşturmada
+Relation	T2	T6	NoRel	true	dalışa	söyledi
+Relation	T4	T2	NoRel	true	sapmasının	dalışa
+Relation	T4	T7	NoRel	true	sapmasının	Kazadan
+Relation	T9	T6	NoRel	true	sapmasının	söyledi

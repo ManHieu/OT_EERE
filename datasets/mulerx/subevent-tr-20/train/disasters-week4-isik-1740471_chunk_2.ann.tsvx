@@ -1,0 +1,28 @@
+Text	1859’daki jeomanyetik fırtınanın etkileri hakkında , dünya çapındaki raporlar , Carrington ve Stewart’ın gözlemlerini destekleyen Elias Loomis tarafından derlenip basıldı .	1- 2 Eylül 1859’da kaydedilen en büyük jeomanyetik fırtına meydana geldi .	Aurorae , kuzey yarımkürede Karayipler’den bile olmak üzere tüm dünyada görüldü ; Rocky Dağları üzerindekiler o kadar parlaktı ki , parlaması sabah olduğunu zannettiklerinden kahvaltı hazırlamaya başlamalarına sebep olan altın madencilerini uyandırdı .	Kuzeydoğu Amerika’da uyanan insanlar aurora’nın ışığı sayesinde gazete okuyabiliyorlardı .	Aurora , Küba ve Hawaii gibi kutuplardan bile görünürdü .
+Event	T0	basıldı	EVENT	163
+Event	T1	kaydedilen	EVENT	192
+Event	T2	geldi	EVENT	240
+Event	T3	görüldü	EVENT	320
+Event	T4	parlaktı	EVENT	366
+Event	T5	parlaması	EVENT	380
+Event	T6	uyandırdı	EVENT	489
+Event	T7	görünürdü	EVENT	638
+Event	T8	fırtınanın	EVENT	22
+Event	T9	raporlar	EVENT	69
+Event	T10	etkileri	EVENT	33
+Event	T11	fırtına	EVENT	224
+Event	T12	zannettiklerinden	EVENT	405
+Event	T13	olan	EVENT	464
+Event	T14	uyanan	EVENT	522
+Event	T15	okuyabiliyorlardı	EVENT	572
+Relation	T0	T11	NoRel	true	basıldı	fırtına
+Relation	T0	T5	NoRel	true	basıldı	parlaması
+Relation	T10	T15	NoRel	true	etkileri	okuyabiliyorlardı
+Relation	T11	T10	NoRel	true	fırtına	etkileri
+Relation	T12	T0	NoRel	true	zannettiklerinden	basıldı
+Relation	T14	T13	NoRel	true	uyanan	olan
+Relation	T14	T15	NoRel	true	uyanan	okuyabiliyorlardı
+Relation	T3	T5	NoRel	true	görüldü	parlaması
+Relation	T4	T8	NoRel	true	parlaktı	fırtınanın
+Relation	T5	T3	NoRel	true	parlaması	görüldü
+Relation	T8	T2	NoRel	true	fırtınanın	geldi

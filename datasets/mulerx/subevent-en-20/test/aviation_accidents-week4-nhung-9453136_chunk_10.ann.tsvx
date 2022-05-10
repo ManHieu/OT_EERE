@@ -1,0 +1,32 @@
+Text	Captain Lehmann recounts his personal experiences as a zeppelin captain in war and peace in _	Auf Luft patrouille und Welt fahrt : Erlebnisse eines Zeppelin Fuhrers in Krieg und Frieden _.	Captain Lehmann 's last book , _ Zeppelin : The Story of Lighter - than - air Craft _ , was being translated by Leonhard Adelt , who was on board with Lehmann as a guest during the _ Hindenburg _{{'} } s last flight .	The book had recently been published in German when the _ Hindenburg _ was destroyed .	The English translation , completed by Jay Dratler , was published later in 1937 with a preface and closing chapter by the American airship captain Charles E. Rosendahl , who had interviewed Lehmann on his deathbed .
+Event	T0	recounts	EVENT	16
+Event	T1	experiences	EVENT	38
+Event	T2	war	EVENT	75
+Event	T3	Erlebnisse	EVENT	131
+Event	T4	Krieg	EVENT	168
+Event	T5	Story	EVENT	237
+Event	T6	translated	EVENT	287
+Event	T7	flight	EVENT	398
+Event	T8	published	EVENT	434
+Event	T9	destroyed	EVENT	482
+Event	T10	translation	EVENT	506
+Event	T11	completed	EVENT	520
+Event	T12	published	EVENT	551
+Event	T13	interviewed	EVENT	673
+Event	T14	deathbed	EVENT	700
+Relation	T8	T9	SuperSub	true	published	destroyed
+Relation	T9	T8	SubSuper	true	destroyed	published
+Relation	T10	T12	SuperSub	true	translation	published
+Relation	T12	T10	SubSuper	true	published	translation
+Relation	T14	T13	SuperSub	true	deathbed	interviewed
+Relation	T13	T14	SubSuper	true	interviewed	deathbed
+Relation	T1	T0	NoRel	true	experiences	recounts
+Relation	T11	T6	NoRel	true	completed	translated
+Relation	T12	T7	NoRel	true	published	flight
+Relation	T12	T8	NoRel	true	published	published
+Relation	T13	T0	NoRel	true	interviewed	recounts
+Relation	T13	T12	NoRel	true	interviewed	published
+Relation	T2	T4	NoRel	true	war	Krieg
+Relation	T7	T3	NoRel	true	flight	Erlebnisse
+Relation	T7	T8	NoRel	true	flight	published
+Relation	T9	T0	NoRel	true	destroyed	recounts

@@ -1,0 +1,24 @@
+Text	AFAD'ın son açıklamasında , enkaz altından 40 kişinin sağ olarak kurtarıldığı bildirildi .	Elazığ'da 655 , Malatya'da 226 , Diyarbakır'da 32 , Adıyaman'da 25 , Batman'da 6 , Kahramanmaraş'ta 37 , Şanlıurfa'da 50 olmak üzere toplamda 1.103 kişi hastaneye başvurduğu belirtildi .	AFAD , Elazığ'da meydana gelen depremde 41 kişinin hayatını kaybettiğini , enkazdan sağ kurtarılan kişi sayısının 45 olduğunu , 1.607 kişinin ise hastanelere başvurduğunu açıkladı .	Kahramanmaraş'ta bir kişi , Adıyaman'da bir kişi ve Diyarbakır'ın Bismil ilçesinde bir kişi deprem sebebiyle kalp krizi sonucu öldü .	Çevre_ve Şehircilik Bakanı Murat Kurum'un açıklamalarına göre Elazığ'da 5 , Malatya'da 25 bina yıkıldı .
+Event	T0	açıklamasında	EVENT	12
+Event	T1	enkaz	EVENT	28
+Event	T2	bildirildi	EVENT	78
+Event	T3	belirtildi	EVENT	265
+Event	T4	depremde	EVENT	309
+Event	T5	kaybettiğini	EVENT	338
+Event	T6	kurtarılan	EVENT	366
+Event	T7	açıkladı	EVENT	449
+Event	T8	deprem	EVENT	552
+Event	T9	öldü	EVENT	587
+Event	T10	yıkıldı	EVENT	689
+Event	T11	olduğunu	EVENT	395
+Event	T12	başvurduğunu	EVENT	436
+Event	T13	açıklamalarına	EVENT	636
+Relation	T1	T12	NoRel	true	enkaz	başvurduğunu
+Relation	T10	T1	NoRel	true	yıkıldı	enkaz
+Relation	T10	T6	NoRel	true	yıkıldı	kurtarılan
+Relation	T12	T4	NoRel	true	başvurduğunu	depremde
+Relation	T3	T2	NoRel	true	belirtildi	bildirildi
+Relation	T4	T2	NoRel	true	depremde	bildirildi
+Relation	T5	T3	NoRel	true	kaybettiğini	belirtildi
+Relation	T6	T8	NoRel	true	kurtarılan	deprem
+Relation	T8	T10	NoRel	true	deprem	yıkıldı

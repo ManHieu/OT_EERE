@@ -1,0 +1,13 @@
+Text	Şans eseri seyrek olarak yerleşilmiş bölge , tamamen tahrip olmakla kalmamış ayrıca tabiat da tamamen değişmiştir .	Aralarında , o sırada gaz salımı ölçümleri yapan volkanolog David A. Johnston'ın da olduğu 57 kişi bu patlamada hayatını kaybeder .	Yaklaşık 3 km³ kayaç , bu patlamada harekete geçer .	Küller ve gaz bulutları , 18 km yüksekliğe kadar yükselerek , Troposferi geçer ve Stratosfer'e ulaşır .	Kül atımı 9 saat sürer ve 3 gün sonra ABD'nin doğusunda kaydedilir .
+Event	T1	değişmiştir	EVENT	102
+Event	T2	kaybeder	EVENT	237
+Event	T3	geçer	EVENT	293
+Event	T4	geçer	EVENT	374
+Event	T5	ulaşır	EVENT	396
+Event	T6	atımı	EVENT	409
+Event	T7	sürer	EVENT	422
+Event	T8	kaydedilir	EVENT	461
+Event	T9	patlamada	EVENT	218
+Event	T10	yükselerek	EVENT	350
+Relation	T2	T3	NoRel	true	kaybeder	geçer
+Relation	T8	T2	NoRel	true	kaydedilir	kaybeder

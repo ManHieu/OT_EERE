@@ -1,0 +1,14 @@
+Text	Lassen Zirvesi 27.000 yıl faaliyet göstermeden sönmüş bir volkan görünüşunde iken 30 Mayıs 1914'te bir istim patlaması gösterek aktif faaliyete geçti .	En çok volkanik faaliyet gösterdiği bir dönem böylece başladı ve bu büyük faaliyet 7 yıl kadar sürdü .	1915 Mayıs ortasına kadar tüm sayısı 180'e varan istim infilakı ile Lessen Zirvesi'nde 300 m genişliğinde bir krater açılmış oldu .	22 Mayıs 1916'de meydana gelen büyük volkanik infilak etrafına volkanik kul , istim , erimiş kar suyu ile karışık kül , tüf ve kaya parçacıkları ve akar sıvı halinde lahar yayıp 20. yüzyılda ancak 1980'de St Helena Dağı'nın infilakına kadar ABD'de görülmeyen büyük volkanik faaliyet gösterdi .	Sonra bu faaliyet hafifledi ama günümüzde de Lessan Zirvesi etrafında kaynayan çamur kazanları , duman saçan fümeroller , kaynar sular havuzları ve çamur gayzerleri bulunmaktadır .
+Event	T0	geçti	EVENT	144
+Event	T2	başladı	EVENT	206
+Event	T3	faaliyet	EVENT	226
+Event	T4	sürdü	EVENT	247
+Event	T7	yayıp	EVENT	559
+Event	T8	gösterdi	EVENT	670
+Event	T9	hafifledi	EVENT	699
+Event	T10	patlaması	EVENT	109
+Event	T1	infilakı	EVENT	310
+Event	T5	oldu	EVENT	380
+Event	T6	bulunmaktadır	EVENT	846
+Relation	T6	T0	NoRel	true	bulunmaktadır	geçti
+Relation	T9	T5	NoRel	true	hafifledi	oldu

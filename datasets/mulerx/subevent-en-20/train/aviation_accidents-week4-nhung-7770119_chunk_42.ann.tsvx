@@ -1,0 +1,31 @@
+Text	Macri 's lungs were filled with dust when the towers collapsed and he later spent two months working on the site .	The long hours on the site gave him vomiting spells and he was diagnosed with an already rapidly progressing stage four cancer only one year after the attack , despite being a non-smoker and cancer free before the attacks .	In 2011 , a lower court ruled that 9/11 toxins were the likely cause of Macri 's death .	In 2012 , the New York Supreme Court ruled that Macri 's widow is entitled to line - of - duty death benefits of his full salary .	On December 12 , 2017 , NYPD Captain Douglas Greenwood took his own life after a long battle with lung disease , brought on by deadly chemicals in the air while working alongside other officers at Ground Zero .
+Event	T0	filled	EVENT	20
+Event	T1	dust	EVENT	32
+Event	T2	collapsed	EVENT	53
+Event	T3	spent	EVENT	76
+Event	T4	gave	EVENT	142
+Event	T5	spells	EVENT	160
+Event	T6	diagnosed	EVENT	178
+Event	T7	cancer	EVENT	235
+Event	T8	attack	EVENT	266
+Event	T9	attacks	EVENT	329
+Event	T10	ruled	EVENT	363
+Event	T11	death	EVENT	420
+Event	T12	ruled	EVENT	465
+Event	T13	took	EVENT	614
+Event	T14	battle	EVENT	645
+Event	T15	disease	EVENT	662
+Event	T16	working	EVENT	720
+Event	T17	working	EVENT	93
+Event	T18	benefits	EVENT	529
+Relation	T2	T3	SuperSub	true	collapsed	spent
+Relation	T3	T2	SubSuper	true	spent	collapsed
+Relation	T5	T6	SuperSub	true	spells	diagnosed
+Relation	T6	T5	SubSuper	true	diagnosed	spells
+Relation	T6	T7	SuperSub	true	diagnosed	cancer
+Relation	T7	T6	SubSuper	true	cancer	diagnosed
+Relation	T8	T7	SuperSub	true	attack	cancer
+Relation	T7	T8	SubSuper	true	cancer	attack
+Relation	T18	T13	NoRel	true	benefits	took
+Relation	T3	T18	NoRel	true	spent	benefits
+Relation	T4	T13	NoRel	true	gave	took

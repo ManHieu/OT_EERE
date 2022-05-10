@@ -1,0 +1,25 @@
+Text	Kocaeli'de meydana gelen olayda 11621 sefer sayılı _ Adapazarı Ekspresi _'nin raydan çıkmasıyla karşı yönden gelen 11620 sefer sayılı diğer trenin bu trene çarpması sonucu 1'i ağır 32 kişi yaralandı .	- 24 Temmuz 2013 - İspanya'da son 40 yılın en büyük kazası meydana geldi içerisinde 218 yolcu bulunan treninin tüm vagonları raydan çıktı .	Galiçya'da 80 kişi öldü .	150'nin üzerinde kişide yaralandı .	Kazanın suçlusu 80 kilometre yapması gereken yerde 190 kilometre hız yapan makinist olarak belirlendi .
+Event	T0	olayda	EVENT	25
+Event	T1	yaralandı	EVENT	189
+Event	T3	çıktı	EVENT	333
+Event	T4	öldü	EVENT	360
+Event	T5	yaralandı	EVENT	391
+Event	T6	yapması	EVENT	432
+Event	T7	belirlendi	EVENT	494
+Event	T8	çıkmasıyla	EVENT	85
+Event	T9	çarpması	EVENT	156
+Event	T10	kazası	EVENT	253
+Event	T2	Kazanın	EVENT	403
+Event	T11	hız yapan	EVENT	468
+Relation	T0	T8	SuperSub	true	olayda	çıkmasıyla
+Relation	T8	T0	SubSuper	true	çıkmasıyla	olayda
+Relation	T0	T9	SuperSub	true	olayda	çarpması
+Relation	T9	T0	SubSuper	true	çarpması	olayda
+Relation	T0	T1	SuperSub	true	olayda	yaralandı
+Relation	T1	T0	SubSuper	true	yaralandı	olayda
+Relation	T10	T3	SuperSub	true	kazası	çıktı
+Relation	T3	T10	SubSuper	true	çıktı	kazası
+Relation	T1	T10	NoRel	true	yaralandı	kazası
+Relation	T3	T9	NoRel	true	çıktı	çarpması
+Relation	T5	T9	NoRel	true	yaralandı	çarpması
+Relation	T9	T4	NoRel	true	çarpması	öldü

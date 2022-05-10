@@ -1,0 +1,43 @@
+Text	En el verano de 249 se encontró con el ejército de Filipo cerca de Verona , Italia , y tuvo lugar una batalla entre el anterior emperador y el nuevo , siendo aquel derrotado y muerto .	El Senado reconoció a Decio como emperador , dándole el atributo _ Traianus , _ una referencia al emperador Trajano .	El historiador bizantino Zósimo escribió así la escena :	El programa político de Decio se centró en la restauración de la fuerza del Estado , tanto oponiéndose militarmente a las amenazas externas como restaurando la piedad pública con un programa de renovación de la religión estatal .	Consideraba que el Imperio atravesaba por graves problemas de corrupción y decadencia .
+Event	T0	encontró	EVENT	23
+Event	T1	batalla	EVENT	102
+Event	T2	derrotado	EVENT	164
+Event	T3	muerto	EVENT	176
+Event	T4	reconoció	EVENT	195
+Event	T5	referencia	EVENT	269
+Event	T6	escribió	EVENT	335
+Event	T7	centró	EVENT	393
+Event	T8	restauración	EVENT	406
+Event	T9	oponiéndose	EVENT	451
+Event	T10	amenazas	EVENT	482
+Event	T11	restaurando	EVENT	505
+Event	T12	piedad	EVENT	520
+Event	T13	renovación	EVENT	554
+Event	T14	Consideraba	EVENT	590
+Event	T15	atravesaba	EVENT	617
+Event	T16	corrupción	EVENT	652
+Event	T17	decadencia	EVENT	665
+Event	T18	Traianus	EVENT	252
+Relation	T1	T2	SuperSub	true	batalla	derrotado
+Relation	T2	T1	SubSuper	true	derrotado	batalla
+Relation	T2	T3	SuperSub	true	derrotado	muerto
+Relation	T3	T2	SubSuper	true	muerto	derrotado
+Relation	T1	T16	NoRel	true	batalla	corrupción
+Relation	T10	T5	NoRel	true	amenazas	referencia
+Relation	T12	T7	NoRel	true	piedad	centró
+Relation	T13	T8	NoRel	true	renovación	restauración
+Relation	T14	T12	NoRel	true	Consideraba	piedad
+Relation	T14	T8	NoRel	true	Consideraba	restauración
+Relation	T15	T17	NoRel	true	atravesaba	decadencia
+Relation	T15	T7	NoRel	true	atravesaba	centró
+Relation	T16	T8	NoRel	true	corrupción	restauración
+Relation	T17	T0	NoRel	true	decadencia	encontró
+Relation	T18	T17	NoRel	true	Traianus	decadencia
+Relation	T2	T8	NoRel	true	derrotado	restauración
+Relation	T4	T12	NoRel	true	reconoció	piedad
+Relation	T4	T13	NoRel	true	reconoció	renovación
+Relation	T5	T2	NoRel	true	referencia	derrotado
+Relation	T6	T2	NoRel	true	escribió	derrotado
+Relation	T7	T4	NoRel	true	centró	reconoció
+Relation	T7	T8	NoRel	true	centró	restauración
+Relation	T9	T6	NoRel	true	oponiéndose	escribió

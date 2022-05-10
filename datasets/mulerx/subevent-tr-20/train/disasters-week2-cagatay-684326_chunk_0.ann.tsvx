@@ -1,0 +1,11 @@
+Text	2008 ÇEÇENISTAN DEPREMI , 11 Ekim 2008 tarihinde UTC saat dilimine göre , 09.06'da meydana gelmiş olup , büyüklüğü 5.8 M _ ( w ) olarak ölçülmüştür .	40 saniye süren deprem Çeçenistan ve Rusya'yı etkilemiştir .	Deprem Gürcistan ve Ermenistan'dan da hissedilmiştir .	Deprem meydana geldikten 16 dakika sonra 5.3'lük bir artçı - sarsıntı meydana gelmiştir .	Çeçenistan Cumhurbaşkanı pek çok bölgeden zarar bilgileri aldıklarını ve en kısa zamanda gerekli yardımın ihtiyaç duyulan bölgelere gönderileceğini bildirmiştir .
+Event	T1	ölçülmüştür	EVENT	136
+Event	T11	Deprem	EVENT	266
+Event	T2	deprem	EVENT	166
+Event	T3	etkilemiştir	EVENT	196
+Event	T4	Deprem	EVENT	211
+Event	T5	hissedilmiştir	EVENT	249
+Event	T7	aldıklarını	EVENT	414
+Event	T9	bildirmiştir	EVENT	504
+Relation	T2	T3	SuperSub	true	deprem	etkilemiştir
+Relation	T3	T2	SubSuper	true	etkilemiştir	deprem

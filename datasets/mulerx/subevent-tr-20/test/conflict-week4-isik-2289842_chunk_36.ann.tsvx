@@ -1,0 +1,36 @@
+Text	" Sarus Muharebesi , methiyeler ile abartan Bizanslar için başarılı bir geri çekilme olmuştur .	Savaşın ardından Bizans ordusu Trebizond'da kışladı .	küçükresim | sağ | 300px | Birleşik Sasani , Avar ve Slav kuvvetlerinin yaptığı 626 yılı Konstantinopolis Kuşatmasını tasvir eden Duvar resmi , Moldovița Manastırı , Romanya Bizans'ı yenmek için kararlı bir karşı saldırının gerekli olduğunu gören Hüsrev , yabancılar da dahil olmak üzere tüm gücü yeten insanlardan iki yeni ordu kurdu .	Şahin , Herakleios'un Pers'i işgal etmesini önlemek için 50.000 asker ile Mezopotamya ve Ermenistan'da kaldı ; Şahrbaraz'ın komutasında daha küçük bir ordu arılar gibi Herakleios'un kanatlarından kayarak ve Konstantinopolis'in karşısında , Boğaziçi'nin kenarında Pers_üssü Kalkedon'da toplandılar .	Hüsrev ayrıca Avarların Kağan'ıyla eş güdümlü Konstantinopolis'un Avrupa ve Asya taraflarından beraber bir saldırı başlattı .
+Event	T0	çekilme	EVENT	77
+Event	T1	kışladı	EVENT	140
+Event	T2	yaptığı	EVENT	222
+Event	T3	tasvir	EVENT	268
+Event	T4	yenmek	EVENT	333
+Event	T5	gören	EVENT	391
+Event	T6	kurdu	EVENT	479
+Event	T7	önlemek	EVENT	531
+Event	T8	başlattı	EVENT	901
+Event	T9	Sarus Muharebesi	EVENT	2
+Event	T10	Savaşın	EVENT	96
+Event	T11	Konstantinopolis Kuşatmasını	EVENT	239
+Event	T12	saldırının	EVENT	363
+Event	T13	işgal	EVENT	516
+Event	T14	kaldı	EVENT	590
+Event	T15	kayarak	EVENT	683
+Event	T16	toplandılar	EVENT	772
+Relation	T0	T9	NoRel	true	çekilme	Sarus Muharebesi
+Relation	T1	T11	NoRel	true	kışladı	Konstantinopolis Kuşatmasını
+Relation	T1	T13	NoRel	true	kışladı	işgal
+Relation	T1	T4	NoRel	true	kışladı	yenmek
+Relation	T10	T14	NoRel	true	Savaşın	kaldı
+Relation	T11	T16	NoRel	true	Konstantinopolis Kuşatmasını	toplandılar
+Relation	T13	T3	NoRel	true	işgal	tasvir
+Relation	T15	T9	NoRel	true	kayarak	Sarus Muharebesi
+Relation	T16	T7	NoRel	true	toplandılar	önlemek
+Relation	T2	T1	NoRel	true	yaptığı	kışladı
+Relation	T2	T15	NoRel	true	yaptığı	kayarak
+Relation	T3	T8	NoRel	true	tasvir	başlattı
+Relation	T4	T12	NoRel	true	yenmek	saldırının
+Relation	T5	T11	NoRel	true	gören	Konstantinopolis Kuşatmasını
+Relation	T7	T16	NoRel	true	önlemek	toplandılar
+Relation	T8	T12	NoRel	true	başlattı	saldırının
+Relation	T8	T15	NoRel	true	başlattı	kayarak
+Relation	T9	T5	NoRel	true	Sarus Muharebesi	gören

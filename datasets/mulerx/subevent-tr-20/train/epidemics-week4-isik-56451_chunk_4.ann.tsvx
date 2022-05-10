@@ -1,0 +1,26 @@
+Text	" Hıyarcıklı veba " ( bubonik veba ) veba hastalığının en yaygın biçimidir .	Hastalığa _ Yersinia pestis _ adı verilen enterobakteri neden olur .	Bakteri vücuda girdikten sonra 3 ila 8 gün içinde etkisini gösterir .	Belirtileri , yüksek ateş , üşüme duygusu , başağrısı , ishal ve bubo adı verilen , lenf bezi şişmeleridir .	Deri altında ve iç organlarda kanama başladığı zaman da , akan kanın birikmesi sonucu ciltte siyah lekeler oluşur .
+Event	T0	girdikten	EVENT	161
+Event	T1	gösterir	EVENT	205
+Event	T2	üşüme	EVENT	244
+Event	T3	ishal	EVENT	272
+Event	T4	şişmeleridir	EVENT	310
+Event	T6	birikmesi	EVENT	394
+Event	T7	oluşur	EVENT	432
+Event	T8	veba	EVENT	13
+Event	T9	veba	EVENT	30
+Event	T10	ateş	EVENT	237
+Event	T11	başağrısı	EVENT	260
+Event	T5	kanama	EVENT	355
+Event	T12	enterobakteri	EVENT	119
+Event	T13	Hastalığa	EVENT	77
+Relation	T0	T11	NoRel	true	girdikten	başağrısı
+Relation	T0	T7	NoRel	true	girdikten	oluşur
+Relation	T1	T3	NoRel	true	gösterir	ishal
+Relation	T10	T6	NoRel	true	ateş	birikmesi
+Relation	T13	T12	NoRel	true	Hastalığa	enterobakteri
+Relation	T5	T12	NoRel	true	kanama	enterobakteri
+Relation	T5	T2	NoRel	true	kanama	üşüme
+Relation	T6	T13	NoRel	true	birikmesi	Hastalığa
+Relation	T7	T6	NoRel	true	oluşur	birikmesi
+Relation	T8	T1	NoRel	true	veba	gösterir
+Relation	T9	T11	NoRel	true	veba	başağrısı

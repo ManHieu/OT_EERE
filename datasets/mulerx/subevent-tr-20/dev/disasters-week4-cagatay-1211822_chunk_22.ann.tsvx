@@ -1,0 +1,23 @@
+Text	Çoğunluğu tsunamiden dolayı meydana gelen zarar çok büyük boyutlardaydı .	En kötü biçimde etkilenen kasabaların görüntülerinde neredeyse sadece enkaz yığınları görülebilmekteydi .	İlk günlerdeki tahminler sadece depremden kaynaklanan zararın 14 ,5 ila 34 ,6 milyar Amerikan doları olduğunu ortaya koydu .	İlerleyen günlerde zararın 300 milyar doları bulabileceği ve bunun felaketi dünya tarihindeki en fazla mali zarara yol açan felaket yapacağı tahmin edildi .	- Birleşmiş Milletler - İnsani Yardım Koordinasyon Bürosu sözcüsü Elisabeth Byrs , " 30 uluslararası arama ve kurtarma ekibi gerektiğinde yardımı sağlamak için Japonya'ya gitmek için hazırlar .
+Event	T0	tsunamiden	EVENT	10
+Event	T1	zarar	EVENT	42
+Event	T2	etkilenen	EVENT	90
+Event	T3	tahminler	EVENT	195
+Event	T5	felaketi	EVENT	372
+Event	T6	edildi	EVENT	453
+Event	T7	gitmek	EVENT	633
+Event	T8	hazırlar	EVENT	645
+Event	T9	depremden	EVENT	212
+Event	T10	zararın	EVENT	234
+Event	T4	bulabileceği	EVENT	350
+Event	T11	zarara	EVENT	413
+Event	T12	felaket	EVENT	429
+Relation	T5	T9	SuperSub	true	felaketi	depremden
+Relation	T9	T5	SubSuper	true	depremden	felaketi
+Relation	T5	T0	SuperSub	true	felaketi	tsunamiden
+Relation	T0	T5	SubSuper	true	tsunamiden	felaketi
+Relation	T1	T7	NoRel	true	zarar	gitmek
+Relation	T12	T0	NoRel	true	felaket	tsunamiden
+Relation	T4	T0	NoRel	true	bulabileceği	tsunamiden
+Relation	T5	T3	NoRel	true	felaketi	tahminler
+Relation	T8	T1	NoRel	true	hazırlar	zarar

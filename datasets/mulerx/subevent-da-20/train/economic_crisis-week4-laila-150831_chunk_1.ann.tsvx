@@ -1,0 +1,11 @@
+Text	I 2011 overtog Sparekassen Lolland banken Eik Bank Danmark fra Finansiel Stabilitet .	Finanstilsynet krævede ved en inspektion så skrappe krav til nedskrivninger , at egenkapital i Spar Lolland helt ville forsvinde .	Bankens markedsværdi var inden krakket på 81 millioner kroner fordelt på 12 millioner aktier .	Spar Lolland havde 45.000 kunder , mens FinansNetbanken havde 70.000 kunder .	Balancen var på 12,9 milliarder kroner , og udlånet udgjorde 7,1 milliarder kroner og indlån 9,7 milliarder kroner .
+Event	T0	overtog	EVENT	7
+Event	T1	krævede	EVENT	101
+Event	T2	inspektion	EVENT	116
+Event	T3	nedskrivninger	EVENT	147
+Event	T4	forsvinde	EVENT	205
+Event	T5	krakket	EVENT	248
+Event	T6	udgjorde	EVENT	442
+Event	T7	krav	EVENT	138
+Relation	T4	T7	NoRel	true	forsvinde	krav
+Relation	T7	T3	NoRel	true	krav	nedskrivninger

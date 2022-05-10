@@ -1,0 +1,28 @@
+Text	Aunque Constantinopla quedaba en manos turcas , los estrechos se internacionalizaban .	Se volvía al control financiero de las potencias , que se repartían zonas de influencia en Anatolia , reduciendo notablemente la zona bajo control total turco .	En 1920 Kazım Karabekir había eliminado el Estado independiente armenio , que se dividió en Armenia Oriental , convertida en una de las Repúblicas de la URSS , y Armenia Occidental , que pasó a Turquía ( Paz de Gümrü ) .	Entre 1920 y 1921 los nacionalistas turcos acabaron con el nacionalismo armenio con mano dura , masacrando miles de personas y obligando a los demás a huir a los países vecinos en largas marchas .	Tras enfrentamientos con los franceses , especialmente en Aintab ( hoy Gaziantep ) , estos abandonaron su ocupación militar en el sur ( Tratado de Ankara ) .
+Event	T0	internacionalizaban	EVENT	65
+Event	T1	volvía	EVENT	90
+Event	T2	control	EVENT	100
+Event	T3	reduciendo	EVENT	189
+Event	T4	eliminado	EVENT	278
+Event	T5	dividió	EVENT	329
+Event	T6	convertida	EVENT	359
+Event	T7	pasó	EVENT	435
+Event	T8	acabaron	EVENT	512
+Event	T9	masacrando	EVENT	565
+Event	T10	obligando	EVENT	596
+Event	T11	huir	EVENT	620
+Event	T12	marchas	EVENT	656
+Event	T13	enfrentamientos	EVENT	671
+Event	T14	abandonaron	EVENT	757
+Event	T15	ocupación	EVENT	772
+Relation	T13	T14	SuperSub	true	enfrentamientos	abandonaron
+Relation	T14	T13	SubSuper	true	abandonaron	enfrentamientos
+Relation	T1	T13	NoRel	true	volvía	enfrentamientos
+Relation	T12	T7	NoRel	true	marchas	pasó
+Relation	T13	T8	NoRel	true	enfrentamientos	acabaron
+Relation	T2	T3	NoRel	true	control	reduciendo
+Relation	T2	T7	NoRel	true	control	pasó
+Relation	T6	T9	NoRel	true	convertida	masacrando
+Relation	T7	T15	NoRel	true	pasó	ocupación
+Relation	T8	T1	NoRel	true	acabaron	volvía
+Relation	T9	T1	NoRel	true	masacrando	volvía

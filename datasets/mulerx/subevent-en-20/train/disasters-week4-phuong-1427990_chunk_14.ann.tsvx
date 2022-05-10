@@ -1,0 +1,39 @@
+Text	Due to timely reports and warnings , the storm was reportedly forecast with " exceptional accuracy " .	In Florida , damage was minor , amounting to uprooted trees , broken windows , moderate crop damage , and downed power lines .	A few flimsy structures and small watercraft also sustained damage .	Along the Florida Panhandle , the storm 's winds impacted power , telephone , and telegraph lines , and inflicted $ 2,000 worth of damage to a dock warehouse .	A man in Cedar Key , Florida , drowned after rough surf overturned his rowboat , and at least two other people suffered minor storm - related injuries .
+Event	T0	reports	EVENT	14
+Event	T1	warnings	EVENT	26
+Event	T2	storm	EVENT	41
+Event	T3	forecast	EVENT	62
+Event	T4	damage	EVENT	116
+Event	T5	uprooted	EVENT	148
+Event	T6	broken	EVENT	165
+Event	T8	damage	EVENT	290
+Event	T9	storm	EVENT	333
+Event	T10	inflicted	EVENT	403
+Event	T11	damage	EVENT	430
+Event	T12	drowned	EVENT	490
+Event	T13	overturned	EVENT	515
+Event	T14	suffered	EVENT	570
+Event	T15	injuries	EVENT	601
+Event	T7	crop damage	EVENT	191
+Event	T16	downed	EVENT	209
+Event	T17	winds	EVENT	342
+Relation	T4	T5	SuperSub	true	damage	uprooted
+Relation	T5	T4	SubSuper	true	uprooted	damage
+Relation	T4	T6	SuperSub	true	damage	broken
+Relation	T6	T4	SubSuper	true	broken	damage
+Relation	T4	T7	SuperSub	true	damage	crop damage
+Relation	T7	T4	SubSuper	true	crop damage	damage
+Relation	T1	T15	NoRel	true	warnings	injuries
+Relation	T10	T16	NoRel	true	inflicted	downed
+Relation	T12	T10	NoRel	true	drowned	inflicted
+Relation	T15	T3	NoRel	true	injuries	forecast
+Relation	T15	T9	NoRel	true	injuries	storm
+Relation	T16	T2	NoRel	true	downed	storm
+Relation	T16	T5	NoRel	true	downed	uprooted
+Relation	T5	T1	NoRel	true	uprooted	warnings
+Relation	T5	T7	NoRel	true	uprooted	crop damage
+Relation	T5	T8	NoRel	true	uprooted	damage
+Relation	T5	T9	NoRel	true	uprooted	storm
+Relation	T6	T3	NoRel	true	broken	forecast
+Relation	T7	T16	NoRel	true	crop damage	downed
+Relation	T8	T16	NoRel	true	damage	downed

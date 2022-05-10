@@ -1,0 +1,46 @@
+Text	Esto hizo que el humo se propagara rápidamente mientras se agolpaban por salir , así que la mayoría de los pasajeros murieron asfixiados .	Los que si pudieron huir lo hicieron de forma atropellada , en un espacio estrecho y oscurecido , y algunos de ellos fallecieron electrocutados al tocar cables de alta tensión .	El sistema de ventilación se había activado para intentar absorber el humo de la estación de Ulduz , pero a los quince minutos empezó a desplazarlo por el túnel hacia Nariman Narimanov , de modo que los trabajadores del metro y los bomberos que habían entrado para evacuar la zona también se vieron afectados .	Por último , se avisó tarde a los servicios de rescate y hubo problemas de coordinación en el despliegue del dispositivo .	Los bomberos de Bakú tardaron horas en sofocar las llamas debido a la compleja situación .
+Event	T0	hizo	EVENT	5
+Event	T1	humo	EVENT	17
+Event	T2	propagara	EVENT	25
+Event	T3	agolpaban	EVENT	59
+Event	T4	salir	EVENT	73
+Event	T5	asfixiados	EVENT	126
+Event	T6	huir	EVENT	159
+Event	T9	electrocutados	EVENT	268
+Event	T10	tocar	EVENT	286
+Event	T11	activado	EVENT	352
+Event	T13	empezó	EVENT	444
+Event	T14	desplazarlo	EVENT	453
+Event	T15	entrado	EVENT	569
+Event	T16	evacuar	EVENT	582
+Event	T17	afectados	EVENT	616
+Event	T18	avisó	EVENT	644
+Event	T19	rescate	EVENT	675
+Event	T20	problemas	EVENT	690
+Event	T21	coordinación	EVENT	703
+Event	T22	despliegue	EVENT	722
+Event	T23	tardaron	EVENT	772
+Event	T24	sofocar	EVENT	790
+Event	T25	situación	EVENT	830
+Relation	T1	T6	NoRel	true	humo	huir
+Relation	T10	T14	NoRel	true	tocar	desplazarlo
+Relation	T11	T10	NoRel	true	activado	tocar
+Relation	T13	T14	NoRel	true	empezó	desplazarlo
+Relation	T13	T24	NoRel	true	empezó	sofocar
+Relation	T15	T4	NoRel	true	entrado	salir
+Relation	T17	T0	NoRel	true	afectados	hizo
+Relation	T17	T20	NoRel	true	afectados	problemas
+Relation	T21	T1	NoRel	true	coordinación	humo
+Relation	T21	T16	NoRel	true	coordinación	evacuar
+Relation	T21	T24	NoRel	true	coordinación	sofocar
+Relation	T21	T25	NoRel	true	coordinación	situación
+Relation	T22	T17	NoRel	true	despliegue	afectados
+Relation	T24	T13	NoRel	true	sofocar	empezó
+Relation	T25	T10	NoRel	true	situación	tocar
+Relation	T25	T13	NoRel	true	situación	empezó
+Relation	T3	T1	NoRel	true	agolpaban	humo
+Relation	T4	T15	NoRel	true	salir	entrado
+Relation	T6	T10	NoRel	true	huir	tocar
+Relation	T6	T24	NoRel	true	huir	sofocar
+Relation	T9	T19	NoRel	true	electrocutados	rescate
+Relation	T9	T6	NoRel	true	electrocutados	huir

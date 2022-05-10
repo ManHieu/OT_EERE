@@ -1,0 +1,19 @@
+Text	1936'da inşa edilmiş köprünün onarımı 2011'de başladı .	Ilinden Bulvarı'nı Goce Delčev Bulvarı'na bağlayan Goce Delčev Köprüsü'nün onarımım 11 Nisan 2011'de başladı ve aynı yıl içinde tamamlandı .	Onarım sırasında altın renkli çitler ve 26 sokak lambası eklendi .	Proje 500bin avroya maloldu Köprünün her iki başına 2010'da dört aslan heykeli yerleştirilmişti .	Batı tarafındakiler Floransa'da dökülmüş ve 1,5milyon avorya malolmuştur .
+Event	T0	inşa	EVENT	8
+Event	T1	onarımı	EVENT	30
+Event	T2	başladı	EVENT	46
+Event	T3	onarımım	EVENT	131
+Event	T4	başladı	EVENT	157
+Event	T5	tamamlandı	EVENT	184
+Event	T6	Onarım	EVENT	197
+Event	T7	eklendi	EVENT	254
+Event	T8	yerleştirilmişti	EVENT	343
+Event	T9	dökülmüş	EVENT	394
+Event	T10	maloldu	EVENT	284
+Event	T11	malolmuştur	EVENT	423
+Relation	T11	T6	NoRel	true	malolmuştur	Onarım
+Relation	T2	T3	NoRel	true	başladı	onarımım
+Relation	T3	T2	NoRel	true	onarımım	başladı
+Relation	T4	T3	NoRel	true	başladı	onarımım
+Relation	T4	T6	NoRel	true	başladı	Onarım
+Relation	T9	T4	NoRel	true	dökülmüş	başladı

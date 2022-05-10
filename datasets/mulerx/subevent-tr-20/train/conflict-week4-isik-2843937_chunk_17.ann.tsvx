@@ -1,0 +1,30 @@
+Text	Gemi , seferin geri kalanında etkisizdi .	Bombardıman 75 dakika sürdükten sonra Tilghman , yakın mesafeli bir bombardıman için 400 yarda ( 370 m ) yakınlık içinde kapanan Foote'nin filosuna teslim oldu .	Savaştan önce Tilghman , adamlarına kaçmaları için ek süre tanımak için bir saatlik direniş teklif edeceğini söyledi .	Barut deposunun su altında olması ve silahların geri kalanı imha edilmesi veya devrilmesi nedeniyle son birkaç tura kadar sadece bir top hala çalışırken Tilghman , Fort Henry'deki Konfederasyon bayrağının indirilmesini ve kalenin bayrak direğine beyaz bir çarşafın kaldırılmasını emretti .	Beyaz bayrağı gördükten sonra , Birlik savaş gemileri ateşi hemen kesti .
+Event	T1	Bombardıman	EVENT	42
+Event	T2	sürdükten	EVENT	64
+Event	T3	bombardıman	EVENT	110
+Event	T4	oldu	EVENT	197
+Event	T5	teklif	EVENT	296
+Event	T6	söyledi	EVENT	313
+Event	T7	edilmesi	EVENT	388
+Event	T8	devrilmesi	EVENT	402
+Event	T9	indirilmesini	EVENT	528
+Event	T10	emretti	EVENT	603
+Event	T11	kesti	EVENT	679
+Event	T12	seferin	EVENT	7
+Event	T13	Savaştan	EVENT	204
+Event	T14	direniş	EVENT	288
+Event	T15	çalışırken	EVENT	465
+Event	T16	kaldırılmasını	EVENT	588
+Event	T17	gördükten	EVENT	627
+Relation	T1	T17	NoRel	true	Bombardıman	gördükten
+Relation	T14	T1	NoRel	true	direniş	Bombardıman
+Relation	T15	T17	NoRel	true	çalışırken	gördükten
+Relation	T16	T10	NoRel	true	kaldırılmasını	emretti
+Relation	T16	T7	NoRel	true	kaldırılmasını	edilmesi
+Relation	T3	T12	NoRel	true	bombardıman	seferin
+Relation	T3	T7	NoRel	true	bombardıman	edilmesi
+Relation	T4	T2	NoRel	true	oldu	sürdükten
+Relation	T6	T10	NoRel	true	söyledi	emretti
+Relation	T7	T13	NoRel	true	edilmesi	Savaştan
+Relation	T7	T4	NoRel	true	edilmesi	oldu
+Relation	T9	T11	NoRel	true	indirilmesini	kesti

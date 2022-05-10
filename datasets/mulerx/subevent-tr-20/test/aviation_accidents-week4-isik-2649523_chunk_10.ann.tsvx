@@ -1,0 +1,20 @@
+Text	Onarım çalışmaları Haziran 2011'de tamamlandı .	Daha sonra RA - 85684 uçağa Izhma adı verildi ve Alrosa tarafından kullanılmaya devam etti .	Uçuşa elverişlilik sertifikasının süresinin dolduğu Eylül 2018'e kadar hizmette kaldı .	29 Eylül 2018'de uçak , Alrosa'nın merkezi Mirnet Havalimanı'nından yerel bir havacılık müzesi koleksiyonunun bir parçası olması için Sibirya'daki Novosibirsk Uluslararası Havalimanı'na götürüldü .	Kategori : 2010'da havacılık kazaları ve olayları Kategori : Yakutistan'daki havacılık kazaları ve olayları Kategori : Tupolev Tu- 154 içeren kazalar ve olaylar Kategori : 2010'da Rusya
+Event	T0	çalışmaları	EVENT	7
+Event	T1	tamamlandı	EVENT	35
+Event	T2	verildi	EVENT	86
+Event	T3	etti	EVENT	134
+Event	T4	kaldı	EVENT	221
+Event	T5	götürüldü	EVENT	415
+Event	T6	kazalar	EVENT	569
+Event	T7	olaylar	EVENT	580
+Event	T8	dolduğu	EVENT	185
+Event	T9	kazaları	EVENT	456
+Event	T10	olayları	EVENT	468
+Event	T11	kazaları	EVENT	514
+Event	T12	olayları	EVENT	526
+Relation	T0	T12	NoRel	true	çalışmaları	olayları
+Relation	T0	T4	NoRel	true	çalışmaları	kaldı
+Relation	T10	T4	NoRel	true	olayları	kaldı
+Relation	T4	T0	NoRel	true	kaldı	çalışmaları
+Relation	T8	T1	NoRel	true	dolduğu	tamamlandı
+Relation	T8	T11	NoRel	true	dolduğu	kazaları

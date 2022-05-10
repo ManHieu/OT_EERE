@@ -1,0 +1,29 @@
+Text	Passageren Tom Burnett foretog flere opkald til sin kone fra klokken 09:30:32 fra række 24 og 25 , skønt han havde plads på række fire .	Han fortalte hende , at flyet var blevet kapret af mænd , der hævdede , at de havde en bombe om bord .	Han nævnte også , at en passager var blevet stukket med en kniv , og at han mente , at bombetruslen var en taktik fra kaprerne , så de kunne holde styr på passagererne .	I et af opkaldene fortalte Tom Burnetts kone ham om angrebene på World Trade Center i New York , hvorefter han svarede at flykaprerne " taler om , at få flyet til at styrte ned ...	Åh min Gud .
+Event	T0	foretog	EVENT	23
+Event	T1	opkald	EVENT	37
+Event	T2	fortalte	EVENT	141
+Event	T3	kapret	EVENT	178
+Event	T4	hævdede	EVENT	199
+Event	T5	nævnte	EVENT	244
+Event	T6	stukket	EVENT	284
+Event	T7	fortalte	EVENT	428
+Event	T8	angrebene	EVENT	462
+Event	T9	svarede	EVENT	521
+Event	T10	taler	EVENT	546
+Event	T11	bombetruslen	EVENT	327
+Relation	T3	T6	SuperSub	true	kapret	stukket
+Relation	T6	T3	SubSuper	true	stukket	kapret
+Relation	T3	T11	SuperSub	true	kapret	bombetruslen
+Relation	T11	T3	SubSuper	true	bombetruslen	kapret
+Relation	T8	T7	SuperSub	true	angrebene	fortalte
+Relation	T7	T8	SubSuper	true	fortalte	angrebene
+Relation	T8	T9	SuperSub	true	angrebene	svarede
+Relation	T9	T8	SubSuper	true	svarede	angrebene
+Relation	T10	T1	NoRel	true	taler	opkald
+Relation	T10	T9	NoRel	true	taler	svarede
+Relation	T11	T7	NoRel	true	bombetruslen	fortalte
+Relation	T3	T7	NoRel	true	kapret	fortalte
+Relation	T5	T1	NoRel	true	nævnte	opkald
+Relation	T5	T4	NoRel	true	nævnte	hævdede
+Relation	T5	T8	NoRel	true	nævnte	angrebene
+Relation	T9	T10	NoRel	true	svarede	taler

@@ -1,0 +1,44 @@
+Text	MIDDLE EAST RESPIRATORY SYNDROME ( MERS ,_' kamelinfluenza ' , ( en :_' camel flu ' ) er en viral luftvejs infektion forårsaget af MERS-CoV , MERS-coronavirus .	Symptomerne kan variere fra ingen , til milde , til svære symptomer .	Typiske symptomer inkluderer feber , hoste , diarré og åndenød .	Sygdommen er sædvanligvis alvorligere hos personer med andre sundhedsmæssige problemer .	MERS-CoV er en coronavirus , der antages at stamme fra flagermus .
+Event	T0	forårsaget	EVENT	117
+Event	T1	hoste	EVENT	268
+Event	T2	Sygdommen	EVENT	296
+Event	T3	antages	EVENT	418
+Event	T4	MERS	EVENT	35
+Event	T5	SYNDROME	EVENT	24
+Event	T6	kamelinfluenza	EVENT	44
+Event	T7	camel flu	EVENT	72
+Event	T8	infektion	EVENT	107
+Event	T9	MERS-CoV	EVENT	131
+Event	T10	MERS-coronavirus	EVENT	142
+Event	T11	Symptomerne	EVENT	161
+Event	T12	symptomer	EVENT	239
+Event	T13	feber	EVENT	260
+Event	T14	diarré	EVENT	276
+Event	T15	åndenød	EVENT	286
+Event	T16	problemer	EVENT	373
+Event	T17	MERS-CoV	EVENT	385
+Event	T18	coronavirus	EVENT	400
+Event	T19	alvorligere	EVENT	322
+Relation	T12	T13	SuperSub	true	symptomer	feber
+Relation	T13	T12	SubSuper	true	feber	symptomer
+Relation	T12	T1	SuperSub	true	symptomer	hoste
+Relation	T1	T12	SubSuper	true	hoste	symptomer
+Relation	T12	T14	SuperSub	true	symptomer	diarré
+Relation	T14	T12	SubSuper	true	diarré	symptomer
+Relation	T12	T15	SuperSub	true	symptomer	åndenød
+Relation	T15	T12	SubSuper	true	åndenød	symptomer
+Relation	T0	T13	NoRel	true	forårsaget	feber
+Relation	T1	T2	NoRel	true	hoste	Sygdommen
+Relation	T10	T5	NoRel	true	MERS-coronavirus	SYNDROME
+Relation	T11	T1	NoRel	true	Symptomerne	hoste
+Relation	T11	T13	NoRel	true	Symptomerne	feber
+Relation	T12	T4	NoRel	true	symptomer	MERS
+Relation	T15	T1	NoRel	true	åndenød	hoste
+Relation	T15	T11	NoRel	true	åndenød	Symptomerne
+Relation	T15	T13	NoRel	true	åndenød	feber
+Relation	T19	T15	NoRel	true	alvorligere	åndenød
+Relation	T4	T3	NoRel	true	MERS	antages
+Relation	T5	T6	NoRel	true	SYNDROME	kamelinfluenza
+Relation	T7	T12	NoRel	true	camel flu	symptomer
+Relation	T7	T18	NoRel	true	camel flu	coronavirus
+Relation	T8	T11	NoRel	true	infektion	Symptomerne

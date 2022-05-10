@@ -1,0 +1,34 @@
+Text	El 6 de febrero , el ministro de Transporte Ali Ahmed Jamac confirmó que la explosión fue causada por una bomba « para matar a todos a bordo » .	Las autoridades de Somalia identificaron al pasajero fallecido como Abdullahi Abdisalam Borleh , un hombre de 55 años de edad , originario de Hargeisa , capital de Somalilandia , pero no confirmaron que era sospechoso de ser el atacante suicida .	Los investigadores de Estados Unidos creen que el ataque fue llevado a cabo por el grupo islamista Al-Shabbaab , pero esto no fue confirmado , y el grupo no se atribuyó la responsabilidad del ataque .	Una cámara de seguridad del aeropuerto grabó a dos hombres , aparentemente trabajadores del aeropuerto , dándole un ordenador portátil a Borleh .	Las autoridades estadounidenses han dicho que los investigadores creen que el atacante tenía algún tipo de conexión con la aerolínea o el personal del aeropuerto .
+Event	T0	confirmó	EVENT	60
+Event	T1	explosión	EVENT	76
+Event	T2	causada	EVENT	90
+Event	T3	matar	EVENT	119
+Event	T4	identificaron	EVENT	172
+Event	T5	fallecido	EVENT	198
+Event	T6	confirmaron	EVENT	332
+Event	T7	suicida	EVENT	382
+Event	T8	creen	EVENT	429
+Event	T9	ataque	EVENT	442
+Event	T10	confirmado	EVENT	522
+Event	T11	atribuyó	EVENT	552
+Event	T12	ataque	EVENT	584
+Event	T13	grabó	EVENT	632
+Event	T14	dándole	EVENT	698
+Event	T15	dicho	EVENT	775
+Event	T16	creen	EVENT	804
+Event	T17	conexión	EVENT	846
+Event	T18	bomba	EVENT	106
+Relation	T1	T13	NoRel	true	explosión	grabó
+Relation	T1	T4	NoRel	true	explosión	identificaron
+Relation	T11	T15	NoRel	true	atribuyó	dicho
+Relation	T12	T9	NoRel	true	ataque	ataque
+Relation	T13	T0	NoRel	true	grabó	confirmó
+Relation	T13	T17	NoRel	true	grabó	conexión
+Relation	T15	T13	NoRel	true	dicho	grabó
+Relation	T15	T3	NoRel	true	dicho	matar
+Relation	T17	T11	NoRel	true	conexión	atribuyó
+Relation	T5	T12	NoRel	true	fallecido	ataque
+Relation	T6	T16	NoRel	true	confirmaron	creen
+Relation	T7	T16	NoRel	true	suicida	creen
+Relation	T8	T5	NoRel	true	creen	fallecido
+Relation	T9	T18	NoRel	true	ataque	bomba

@@ -1,0 +1,46 @@
+Text	On the night of November 24 , 2001 , shortly after the final performance in Leipzig , Thornton was among the 24 people that were killed in the crash of Swiss airline 's Crossair Flight 3597 in Bassersdorf , Switzerland .	Thornton was born in Charleston , South Carolina and began studying voice from the age of six , as well as learning to play the piano and the clarinet .	Inspired by singers whom she idolized and grew up listening to such as Aretha Franklin and Roberta Flack Thornton would mimic the female vocalists she watched on television and / or heard on radio .	Later on she financed her college studies with appearances in talent shows and smaller band concerts .	Throughout that period she frequented a club called The Peacock Lounge , getting up and doing jam sessions when the live band invited people up to sing .
+Event	T0	performance	EVENT	61
+Event	T1	killed	EVENT	129
+Event	T2	crash	EVENT	143
+Event	T3	Flight	EVENT	178
+Event	T4	born	EVENT	234
+Event	T5	studying	EVENT	280
+Event	T6	learning	EVENT	328
+Event	T7	play	EVENT	340
+Event	T8	Inspired	EVENT	374
+Event	T9	idolized	EVENT	403
+Event	T10	mimic	EVENT	494
+Event	T11	watched	EVENT	525
+Event	T12	heard	EVENT	556
+Event	T13	financed	EVENT	586
+Event	T14	studies	EVENT	607
+Event	T15	appearances	EVENT	620
+Event	T16	concerts	EVENT	665
+Event	T17	frequented	EVENT	703
+Event	T18	sessions	EVENT	774
+Event	T19	invited	EVENT	802
+Event	T20	sing	EVENT	823
+Event	T21	shows	EVENT	642
+Relation	T0	T13	NoRel	true	performance	financed
+Relation	T0	T16	NoRel	true	performance	concerts
+Relation	T11	T10	NoRel	true	watched	mimic
+Relation	T11	T5	NoRel	true	watched	studying
+Relation	T12	T5	NoRel	true	heard	studying
+Relation	T12	T8	NoRel	true	heard	Inspired
+Relation	T13	T6	NoRel	true	financed	learning
+Relation	T14	T11	NoRel	true	studies	watched
+Relation	T14	T16	NoRel	true	studies	concerts
+Relation	T14	T21	NoRel	true	studies	shows
+Relation	T14	T6	NoRel	true	studies	learning
+Relation	T18	T12	NoRel	true	sessions	heard
+Relation	T18	T3	NoRel	true	sessions	Flight
+Relation	T18	T7	NoRel	true	sessions	play
+Relation	T2	T10	NoRel	true	crash	mimic
+Relation	T2	T7	NoRel	true	crash	play
+Relation	T21	T4	NoRel	true	shows	born
+Relation	T5	T12	NoRel	true	studying	heard
+Relation	T6	T13	NoRel	true	learning	financed
+Relation	T7	T19	NoRel	true	play	invited
+Relation	T8	T10	NoRel	true	Inspired	mimic
+Relation	T8	T20	NoRel	true	Inspired	sing
+Relation	T8	T7	NoRel	true	Inspired	play

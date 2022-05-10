@@ -1,0 +1,54 @@
+Text	Døden indtrådte få timer senere .	I 1918 anede ingen , at influenza er en virus .	thumb| Plakat fra USA : Influenza og tuberkulose spredes ved spytten , nys og hoste .	En stærkt medvirkende faktor i den verdensomspændende influenzaudbredelse var den større rejseaktivitet : moderne transportsystemer gjorde det nemmere for soldater , søfolk og civile at sprede smitten hurtigt til samfund over hele verden .	De massive troppesamlinger og troppebevægelser under første verdenskrig fik sygdommen til at sprede sig , og den større udbredelse fremmede mutation og kan have øget dødeligheden .
+Event	T0	indtrådte	EVENT	6
+Event	T1	anede	EVENT	41
+Event	T2	influenza	EVENT	58
+Event	T3	spredes	EVENT	131
+Event	T4	hoste	EVENT	160
+Event	T5	influenzaudbredelse	EVENT	222
+Event	T6	rejseaktivitet	EVENT	257
+Event	T7	gjorde	EVENT	300
+Event	T8	smitten	EVENT	361
+Event	T9	troppebevægelser	EVENT	438
+Event	T10	sygdommen	EVENT	484
+Event	T11	mutation	EVENT	548
+Event	T12	dødeligheden	EVENT	574
+Event	T13	virus	EVENT	74
+Event	T14	Influenza	EVENT	106
+Event	T15	tuberkulose	EVENT	119
+Event	T16	faktor	EVENT	190
+Event	T17	sprede	EVENT	354
+Event	T18	troppesamlinger	EVENT	419
+Event	T19	første verdenskrig	EVENT	461
+Event	T20	sprede sig	EVENT	501
+Event	T21	udbredelse	EVENT	528
+Event	T22	spytten	EVENT	143
+Event	T23	nys	EVENT	153
+Event	T24	transportsystemer	EVENT	282
+Relation	T0	T20	NoRel	true	indtrådte	sprede sig
+Relation	T1	T18	NoRel	true	anede	troppesamlinger
+Relation	T1	T2	NoRel	true	anede	influenza
+Relation	T10	T18	NoRel	true	sygdommen	troppesamlinger
+Relation	T10	T19	NoRel	true	sygdommen	første verdenskrig
+Relation	T11	T0	NoRel	true	mutation	indtrådte
+Relation	T11	T22	NoRel	true	mutation	spytten
+Relation	T13	T2	NoRel	true	virus	influenza
+Relation	T13	T22	NoRel	true	virus	spytten
+Relation	T13	T4	NoRel	true	virus	hoste
+Relation	T16	T20	NoRel	true	faktor	sprede sig
+Relation	T16	T21	NoRel	true	faktor	udbredelse
+Relation	T17	T20	NoRel	true	sprede	sprede sig
+Relation	T18	T23	NoRel	true	troppesamlinger	nys
+Relation	T18	T7	NoRel	true	troppesamlinger	gjorde
+Relation	T19	T18	NoRel	true	første verdenskrig	troppesamlinger
+Relation	T19	T2	NoRel	true	første verdenskrig	influenza
+Relation	T19	T3	NoRel	true	første verdenskrig	spredes
+Relation	T20	T13	NoRel	true	sprede sig	virus
+Relation	T22	T3	NoRel	true	spytten	spredes
+Relation	T22	T8	NoRel	true	spytten	smitten
+Relation	T24	T0	NoRel	true	transportsystemer	indtrådte
+Relation	T3	T5	NoRel	true	spredes	influenzaudbredelse
+Relation	T4	T9	NoRel	true	hoste	troppebevægelser
+Relation	T6	T23	NoRel	true	rejseaktivitet	nys
+Relation	T6	T7	NoRel	true	rejseaktivitet	gjorde
+Relation	T7	T12	NoRel	true	gjorde	dødeligheden
+Relation	T9	T12	NoRel	true	troppebevægelser	dødeligheden

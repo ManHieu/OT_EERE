@@ -1,0 +1,39 @@
+Text	استرداد ( ہسپانوی : Reconquista اور انگریزی : Reconquest ) مسیحیوں کی ساڑھے سات سو سال طویل ان کوششوں کو کہا جاتا ہے جو انہوں نے جزیرہ نما آئبیریا سے مسلمانوں کو نکالنے اور ان کی حکومت کے خاتمے کے لیے کیں ۔	8_ویں صدی میں بنو امیہ کے ہاتھوں اسپین کی فتح کے بعد استرداد کا آغاز 722ء میں معرکہ کوواڈونگا سے جبکہ اختتام 1492ء میں سقوط غرناطہ کے ساتھ ہوا ۔	1236 ء میں محمد بن الاحمر کی زیر قیادت اسپین میں مسلمانوں کے آخری مضبوط گڑھ غرناطہ کو قشتالہ کی مملکت کی ملکہ کا خاوند فرڈیننڈ سوم کے ہاتھوں شکست ہوئی اور غرناطہ اگلے 250 سالوں تک مسیحی سلطنت کا باجگذار بنا رہا ۔	2 جنوری 1492 ء کو آخری مسلم حکمران ابو عبداللہ محمد نے فرڈیننڈ اور ملکہ آئزابیلا کے سامنے ہتھیار ڈال دیے ۔	جس کے نتیجے میں متحدہ رومن کیتھولک قوم وجود میں آئی ۔
+Event	T0	استرداد	EVENT	0
+Event	T1	Reconquest	EVENT	46
+Event	T2	کہا	EVENT	105
+Event	T3	نکالنے	EVENT	162
+Event	T4	خاتمے	EVENT	188
+Event	T5	فتح	EVENT	249
+Event	T6	استرداد	EVENT	260
+Event	T7	آغاز	EVENT	271
+Event	T8	معرکہ	EVENT	285
+Event	T9	اختتام	EVENT	309
+Event	T10	سقوط	EVENT	326
+Event	T11	ہوا	EVENT	346
+Event	T12	ہوئی	EVENT	498
+Event	T13	رہا	EVENT	559
+Event	T14	دیے	EVENT	666
+Event	T15	آئی	EVENT	720
+Relation	T4	T3	SuperSub	true	خاتمے	نکالنے
+Relation	T3	T4	SubSuper	true	نکالنے	خاتمے
+Relation	T4	T1	SuperSub	true	خاتمے	Reconquest
+Relation	T1	T4	SubSuper	true	Reconquest	خاتمے
+Relation	T4	T0	SuperSub	true	خاتمے	استرداد
+Relation	T0	T4	SubSuper	true	استرداد	خاتمے
+Relation	T4	T5	SuperSub	true	خاتمے	فتح
+Relation	T5	T4	SubSuper	true	فتح	خاتمے
+Relation	T4	T6	SuperSub	true	خاتمے	استرداد
+Relation	T6	T4	SubSuper	true	استرداد	خاتمے
+Relation	T4	T8	SuperSub	true	خاتمے	معرکہ
+Relation	T8	T4	SubSuper	true	معرکہ	خاتمے
+Relation	T0	T12	NoRel	true	استرداد	ہوئی
+Relation	T10	T12	NoRel	true	سقوط	ہوئی
+Relation	T11	T10	NoRel	true	ہوا	سقوط
+Relation	T13	T9	NoRel	true	رہا	اختتام
+Relation	T15	T11	NoRel	true	آئی	ہوا
+Relation	T2	T6	NoRel	true	کہا	استرداد
+Relation	T3	T11	NoRel	true	نکالنے	ہوا
+Relation	T6	T11	NoRel	true	استرداد	ہوا
+Relation	T7	T9	NoRel	true	آغاز	اختتام
+Relation	T9	T11	NoRel	true	اختتام	ہوا

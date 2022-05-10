@@ -1,0 +1,33 @@
+Text	El VUELO 760 DE SCAT AIRLINES fue un vuelo de cabotaje regular desde Kokshetau a Almaty , Kazajistán , que se estrelló en una intensa niebla cerca de Kyzyltu el 29 de enero de 2013 , matando a los 16 pasajeros y 5 tripulantes que viajaban a bordo .	La aeronave Bombardier CRJ200 estaba en ruta desde Kokshetau a Almaty cuando se estrelló a del aeropuerto principal de Almaty cerca de la villa de Kyzyltu a las 13:13 hora local ( 07:13 UTC ) .	SCAT Airlines afirmó en un comunicado que no creía que nadie hubiese sobrevivido al accidente .	Poco después del accidente , una comisión liderada por Bakytzhan Sagintayev , el vicepresidente de Kazajistán , fue designada por el Primer Ministro Serik Akhmetov para investigar la causa del accidente .	Maulen Mukashev , el alcalde de Almaty , visitó el lugar del accidente y relató a los periodistas que la probable causa del accidente fue la mala meteorología .
+Event	T0	vuelo	EVENT	37
+Event	T1	estrelló	EVENT	110
+Event	T2	matando	EVENT	183
+Event	T3	estrelló	EVENT	329
+Event	T4	afirmó	EVENT	457
+Event	T5	comunicado	EVENT	470
+Event	T6	sobrevivido	EVENT	512
+Event	T7	accidente	EVENT	527
+Event	T8	accidente	EVENT	556
+Event	T9	liderada	EVENT	581
+Event	T10	designada	EVENT	655
+Event	T11	investigar	EVENT	708
+Event	T12	accidente	EVENT	732
+Event	T13	accidente	EVENT	805
+Event	T14	relató	EVENT	817
+Event	T15	accidente	EVENT	868
+Relation	T0	T2	NoRel	true	vuelo	matando
+Relation	T1	T10	NoRel	true	estrelló	designada
+Relation	T1	T4	NoRel	true	estrelló	afirmó
+Relation	T1	T6	NoRel	true	estrelló	sobrevivido
+Relation	T10	T2	NoRel	true	designada	matando
+Relation	T11	T2	NoRel	true	investigar	matando
+Relation	T11	T6	NoRel	true	investigar	sobrevivido
+Relation	T13	T6	NoRel	true	accidente	sobrevivido
+Relation	T2	T9	NoRel	true	matando	liderada
+Relation	T4	T15	NoRel	true	afirmó	accidente
+Relation	T4	T6	NoRel	true	afirmó	sobrevivido
+Relation	T5	T6	NoRel	true	comunicado	sobrevivido
+Relation	T7	T14	NoRel	true	accidente	relató
+Relation	T8	T13	NoRel	true	accidente	accidente
+Relation	T8	T7	NoRel	true	accidente	accidente
+Relation	T9	T3	NoRel	true	liderada	estrelló

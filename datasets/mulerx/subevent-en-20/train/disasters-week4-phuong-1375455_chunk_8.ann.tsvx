@@ -1,0 +1,39 @@
+Text	The final over featured a partnership between spinners Daniel Vettori ( 27 not out ) and Shane Warne ( 2 not out ) , with Warne 's comeback to limited - overs cricket being greeting rapturously by the fans .	The innings ended on a somewhat farcical note , as Warne miscounted the number of balls left in the final over and began leaving the field with Vaas having one delivery left .	Rising to the occasion , umpire Bowden issued Warne with a " yellow card " , to cheers from the crowd .	Warne was recalled to the wicket and the World XI finished with a total of 344 for 8 .	As match sponsors Travelex were pledging a donation of A $ 1,000 per run , and Toyota A $ 50,000 for each for the six sixes , the World XI had earned A $ 644,000 .
+Event	T0	featured	EVENT	15
+Event	T1	partnership	EVENT	26
+Event	T2	comeback	EVENT	131
+Event	T3	rapturously	EVENT	182
+Event	T4	ended	EVENT	220
+Event	T5	miscounted	EVENT	265
+Event	T6	left	EVENT	296
+Event	T7	leaving	EVENT	329
+Event	T8	left	EVENT	377
+Event	T9	Rising	EVENT	384
+Event	T10	issued	EVENT	423
+Event	T11	recalled	EVENT	498
+Event	T12	finished	EVENT	538
+Event	T13	pledging	EVENT	607
+Event	T14	donation	EVENT	618
+Event	T15	run	EVENT	644
+Event	T16	earned	EVENT	718
+Event	T17	greeting	EVENT	173
+Event	T18	farcical note	EVENT	240
+Relation	T10	T2	NoRel	true	issued	comeback
+Relation	T13	T16	NoRel	true	pledging	earned
+Relation	T13	T4	NoRel	true	pledging	ended
+Relation	T13	T6	NoRel	true	pledging	left
+Relation	T15	T9	NoRel	true	run	Rising
+Relation	T16	T15	NoRel	true	earned	run
+Relation	T16	T7	NoRel	true	earned	leaving
+Relation	T18	T4	NoRel	true	farcical note	ended
+Relation	T18	T7	NoRel	true	farcical note	leaving
+Relation	T2	T10	NoRel	true	comeback	issued
+Relation	T2	T11	NoRel	true	comeback	recalled
+Relation	T3	T13	NoRel	true	rapturously	pledging
+Relation	T4	T17	NoRel	true	ended	greeting
+Relation	T5	T10	NoRel	true	miscounted	issued
+Relation	T5	T18	NoRel	true	miscounted	farcical note
+Relation	T6	T16	NoRel	true	left	earned
+Relation	T6	T8	NoRel	true	left	left
+Relation	T8	T12	NoRel	true	left	finished
+Relation	T9	T4	NoRel	true	Rising	ended

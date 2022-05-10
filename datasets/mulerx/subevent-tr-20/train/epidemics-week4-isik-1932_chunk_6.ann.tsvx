@@ -1,0 +1,14 @@
+Text	- 1984'te HIV için ELISA testi geliştirildi .	HIV'iv enfekte olabilmesi için , virüsün dış ortam koşullarında bozulmayacağı kadar kısa bir süre içinde bir kişiden diğerine nakledilmesi gerekir .	Bu da virüsün diğer vücut sıvılarının içinde bir kişiden diğerine iletilmesi ile gerçekleşebilir .	HIV , korunmasız cinsel ilişki , direkt kan teması , organ nakilleri ve anneden bebeğine olmak üzere dört yolla bulaşabilir .	HIV ile enfekte kişinin spermi , anal , oral ya da vajinal yoldan yapılacak cinsel ilişki sırasındaki vücut sıvıları ve kan yoluyla bulaşabilir .
+Event	T0	geliştirildi	EVENT	31
+Event	T3	ilişki	EVENT	318
+Event	T4	teması	EVENT	338
+Event	T5	ilişki	EVENT	503
+Event	T1	gerçekleşebilir	EVENT	276
+Event	T2	iletilmesi	EVENT	261
+Event	T6	nakilleri	EVENT	353
+Event	T7	bulaşabilir	EVENT	406
+Event	T8	enfekte	EVENT	428
+Event	T9	bulaşabilir	EVENT	552
+Relation	T1	T7	NoRel	true	gerçekleşebilir	bulaşabilir
+Relation	T3	T7	NoRel	true	ilişki	bulaşabilir
+Relation	T8	T2	NoRel	true	enfekte	iletilmesi

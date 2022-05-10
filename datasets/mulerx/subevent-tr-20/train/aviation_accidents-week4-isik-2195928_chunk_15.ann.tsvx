@@ -1,0 +1,18 @@
+Text	Bazı kişiler enkazı yağmaladıkları gerekçesiyle tutuklandı .	Bağımsız Devletler Topluluğu , Rusya devlet başkanı , Türkiye başbakanı , İran Dış İşleri Bakanı , ABD başkanı , Beyaz Rusya devlet başkanı ve Papa Franciscus başsağlığı diledi .	Cumhurbaşkanı Atambayev 17 Ocak Salı günü Kırgızistan'da ulusal yas ilan etti .	Ayrıca Çin'e yapacağı ziyareti iptal ederek Bişkek'e geri döndü .	Kırgızistan otoriteleri mürettebatın inişi durdurup pas geçmek yerine inmek için kararlı bir girişimde bulunduklarını belirttiler .
+Event	T0	tutuklandı	EVENT	48
+Event	T1	diledi	EVENT	231
+Event	T2	etti	EVENT	313
+Event	T3	döndü	EVENT	378
+Event	T4	geçmek	EVENT	442
+Event	T5	inmek	EVENT	456
+Event	T6	yağmaladıkları	EVENT	20
+Event	T7	enkazı	EVENT	13
+Event	T8	iptal	EVENT	351
+Event	T9	belirttiler	EVENT	504
+Relation	T1	T7	NoRel	true	diledi	enkazı
+Relation	T5	T0	NoRel	true	inmek	tutuklandı
+Relation	T5	T3	NoRel	true	inmek	döndü
+Relation	T6	T0	NoRel	true	yağmaladıkları	tutuklandı
+Relation	T6	T9	NoRel	true	yağmaladıkları	belirttiler
+Relation	T7	T0	NoRel	true	enkazı	tutuklandı
+Relation	T8	T1	NoRel	true	iptal	diledi

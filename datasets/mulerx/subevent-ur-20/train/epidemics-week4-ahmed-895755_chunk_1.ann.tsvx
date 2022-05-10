@@ -1,0 +1,29 @@
+Text	تشخیص شدہ معاملات میں اموات کا تناسب 1 فیصد اور 5 فیصد کے درمیان میں ہے ۔	لیکن عمر اور صحت کی دوسری نوعیتوں کے لحاظ سے تبدیل بھی ہوسکتا ہے ۔	انفیکشن ایک شخص سے دوسرے میں سانس کے ذریعے منتقل ہوتا ہے ، جو عموماً کھانسی اور چھینکنے سے ہوتا ہے ۔	عموماً دو اور چودہ ایام کے درمیان میں علامات ظاہر ہونا شروع ہو جاتی ہیں ، اوسطًا پانچ دن ۔	تشخیص کرنے کا معیاری طریقہ نیزوفیرینجیئل سویب ( nasopharyngeal swab ) سے رِیورس ٹرانس ‌کِرِپشن پولی ‌مِیریز چین ری ‌ایکشن ( rRT - PCR ) کے ذریعہ ہے ۔
+Event	T1	اموات	EVENT	22
+Event	T2	انفیکشن	EVENT	141
+Event	T3	چھینکنے	EVENT	221
+Event	T4	شروع	EVENT	297
+Event	T6	تشخیص	EVENT	0
+Event	T7	تبدیل	EVENT	119
+Event	T8	منتقل	EVENT	184
+Event	T9	کھانسی	EVENT	210
+Event	T10	تشخیص	EVENT	333
+Event	T5	nasopharyngeal swab	EVENT	381
+Event	T11	rRT - PCR	EVENT	457
+Relation	T6	T1	SuperSub	true	تشخیص	اموات
+Relation	T1	T6	SubSuper	true	اموات	تشخیص
+Relation	T8	T9	SuperSub	true	منتقل	کھانسی
+Relation	T9	T8	SubSuper	true	کھانسی	منتقل
+Relation	T8	T3	SuperSub	true	منتقل	چھینکنے
+Relation	T3	T8	SubSuper	true	چھینکنے	منتقل
+Relation	T2	T4	SuperSub	true	انفیکشن	شروع
+Relation	T4	T2	SubSuper	true	شروع	انفیکشن
+Relation	T10	T5	SuperSub	true	تشخیص	nasopharyngeal swab
+Relation	T5	T10	SubSuper	true	nasopharyngeal swab	تشخیص
+Relation	T10	T11	SuperSub	true	تشخیص	rRT - PCR
+Relation	T11	T10	SubSuper	true	rRT - PCR	تشخیص
+Relation	T11	T5	NoRel	true	rRT - PCR	nasopharyngeal swab
+Relation	T11	T6	NoRel	true	rRT - PCR	تشخیص
+Relation	T3	T9	NoRel	true	چھینکنے	کھانسی
+Relation	T4	T7	NoRel	true	شروع	تبدیل
+Relation	T7	T9	NoRel	true	تبدیل	کھانسی

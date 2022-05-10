@@ -1,0 +1,36 @@
+Text	In extreme situations these lateral forces may be enough to produce derailment .	A special case of train handling problems is OVERSPEED ON SHARP CURVES .	This generally arises when a driver fails to slow the train for a sharp curved section in a route that otherwise has higher speed conditions .	In the extreme this results in the train entering a curve at a speed at which it cannot negotiate the curve , and gross derailment takes place .	The specific mechanism of this may involve bodily tipping ( rotation ) but is likely to involve disruption of the track structure and derailment as the primary failure event , followed by overturning .
+Event	T0	derailment	EVENT	68
+Event	T1	arises	EVENT	169
+Event	T2	fails	EVENT	190
+Event	T3	slow	EVENT	199
+Event	T4	results	EVENT	317
+Event	T5	entering	EVENT	338
+Event	T6	curve	EVENT	349
+Event	T7	negotiate	EVENT	385
+Event	T8	tipping	EVENT	492
+Event	T9	rotation	EVENT	502
+Event	T10	disruption	EVENT	538
+Event	T11	derailment	EVENT	576
+Event	T12	event	EVENT	610
+Event	T13	followed	EVENT	618
+Event	T14	overturning	EVENT	630
+Event	T15	lateral forces	EVENT	28
+Event	T16	OVERSPEED ON SHARP CURVES	EVENT	126
+Event	T17	gross derailment	EVENT	411
+Event	T18	specific mechanism	EVENT	446
+Relation	T0	T16	NoRel	true	derailment	OVERSPEED ON SHARP CURVES
+Relation	T1	T3	NoRel	true	arises	slow
+Relation	T1	T6	NoRel	true	arises	curve
+Relation	T11	T14	NoRel	true	derailment	overturning
+Relation	T12	T10	NoRel	true	event	disruption
+Relation	T14	T15	NoRel	true	overturning	lateral forces
+Relation	T15	T4	NoRel	true	lateral forces	results
+Relation	T16	T18	NoRel	true	OVERSPEED ON SHARP CURVES	specific mechanism
+Relation	T17	T10	NoRel	true	gross derailment	disruption
+Relation	T17	T7	NoRel	true	gross derailment	negotiate
+Relation	T18	T12	NoRel	true	specific mechanism	event
+Relation	T18	T5	NoRel	true	specific mechanism	entering
+Relation	T3	T14	NoRel	true	slow	overturning
+Relation	T4	T0	NoRel	true	results	derailment
+Relation	T4	T5	NoRel	true	results	entering
+Relation	T7	T14	NoRel	true	negotiate	overturning

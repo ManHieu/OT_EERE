@@ -1,0 +1,18 @@
+Text	Después de la muerte de su padre cuando tenía seis años , el hermano de su madre , el abad de Croisilles , desempeñó el papel de padre y desde 1798 estuvo a cargo de su educación .	El abad le enseñó latín , griego , retórica y filosofía .	Desde 1804 Dumont estudió en el Liceo Imperial de Caen .	En la biblioteca de Caen , empezó a leer los enciclopedistas y los informes de los viajes de Bougainville , Cook y Anson , y llegó a ser un apasionado acerca de estas cuestiones .	A la edad de 17 años suspendió las pruebas físicas del examen de ingreso en la École Polytechnique y decidió alistarse en la marina .
+Event	T0	muerte	EVENT	14
+Event	T1	desempeñó	EVENT	107
+Event	T2	educación	EVENT	169
+Event	T3	enseñó	EVENT	192
+Event	T4	estudió	EVENT	257
+Event	T5	viajes	EVENT	379
+Event	T6	suspendió	EVENT	497
+Event	T7	examen	EVENT	531
+Event	T8	ingreso	EVENT	541
+Event	T9	alistarse	EVENT	585
+Relation	T6	T9	SuperSub	true	suspendió	alistarse
+Relation	T9	T6	SubSuper	true	alistarse	suspendió
+Relation	T0	T8	NoRel	true	muerte	ingreso
+Relation	T3	T4	NoRel	true	enseñó	estudió
+Relation	T4	T8	NoRel	true	estudió	ingreso
+Relation	T7	T0	NoRel	true	examen	muerte
+Relation	T7	T2	NoRel	true	examen	educación

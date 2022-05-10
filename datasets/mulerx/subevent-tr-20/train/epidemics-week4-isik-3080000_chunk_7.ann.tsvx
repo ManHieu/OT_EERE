@@ -1,0 +1,21 @@
+Text	Kız öldükten kısa bir süre sonra annesinin de ateşi yükseldi , durumu yetkililere bildiren doktorlar arasında alarma geçti .	Kadın 3 Mayıs'ta öldü ve kocası Salvatore de hastalandı ve sonunda öldü .	4 Mayıs'ta Sağlık Kurulu , halk sağlığının tehlikede olduğuna dair bir uyarı yayınladı ve bir gün sonra hastalığın veba olduğunu doğruladı .	Panik Valetta'ya yayıldı ve birçok insan şehri terk etti ve adaları terk etmek için kırsal bölgelere gitti veya gemilere bindi .	İngilizlerin çoğu ve bazı Maltalılar kendilerini evlerinde izole ettiler .
+Event	T0	öldükten	EVENT	4
+Event	T1	yükseldi	EVENT	52
+Event	T2	geçti	EVENT	117
+Event	T3	öldü	EVENT	142
+Event	T4	hastalandı	EVENT	170
+Event	T5	öldü	EVENT	192
+Event	T6	yayınladı	EVENT	276
+Event	T7	doğruladı	EVENT	328
+Event	T8	Panik	EVENT	340
+Event	T9	yayıldı	EVENT	357
+Event	T10	etti	EVENT	392
+Event	T11	gitti	EVENT	441
+Event	T12	bindi	EVENT	461
+Event	T13	ettiler	EVENT	534
+Relation	T1	T5	NoRel	true	yükseldi	öldü
+Relation	T10	T6	NoRel	true	etti	yayınladı
+Relation	T11	T9	NoRel	true	gitti	yayıldı
+Relation	T2	T11	NoRel	true	geçti	gitti
+Relation	T5	T1	NoRel	true	öldü	yükseldi
+Relation	T5	T3	NoRel	true	öldü	öldü

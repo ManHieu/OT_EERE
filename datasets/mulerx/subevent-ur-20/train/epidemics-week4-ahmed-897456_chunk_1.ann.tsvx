@@ -1,0 +1,25 @@
+Text	اس مرض میں سماجی فاصلہ گیری صرف ان دو معاملوں سے دوری شامل ہو سکتی ہے ۔	تاہم کچھ معاملے میں چھونے اور پاس بیٹھنا بھی مرض کو دعوت دینا ہوتا ہوتا ہے ۔	ایسے میں چھونے کے علاوہ متاثرہ شخص سے کم از کم دو میٹر یا تین میٹر کی دوری بنائے رکھنے کی ضرورت پڑ سکتی ہے ۔	اسی بنا پر سارس وائرس اور کورونا وائرس جیسے وبائی امراض کے وقت لوگوں کو ہدایت دی جاتی ہے ۔	لوگوں کو ہاتھوں کے بار بار دھونے اور ہاتھ ملانے اور گلے ملنے سے روکا جاتا ہے ۔
+Event	T0	مرض	EVENT	3
+Event	T1	دعوت	EVENT	124
+Event	T2	چھونے	EVENT	158
+Event	T3	امراض	EVENT	308
+Event	T4	دھونے	EVENT	376
+Event	T5	ملنے	EVENT	405
+Event	T6	روکا	EVENT	413
+Event	T7	معاملوں	EVENT	38
+Event	T8	چھونے	EVENT	92
+Event	T9	بیٹھنا	EVENT	106
+Event	T10	مرض	EVENT	117
+Event	T11	متاثرہ	EVENT	173
+Event	T12	رکھنے	EVENT	230
+Event	T14	ہدایت	EVENT	330
+Event	T13	ملانے	EVENT	391
+Relation	T14	T4	SuperSub	true	ہدایت	دھونے
+Relation	T4	T14	SubSuper	true	دھونے	ہدایت
+Relation	T14	T6	SuperSub	true	ہدایت	روکا
+Relation	T6	T14	SubSuper	true	روکا	ہدایت
+Relation	T10	T14	NoRel	true	مرض	ہدایت
+Relation	T12	T4	NoRel	true	رکھنے	دھونے
+Relation	T2	T3	NoRel	true	چھونے	امراض
+Relation	T6	T13	NoRel	true	روکا	ملانے
+Relation	T8	T4	NoRel	true	چھونے	دھونے

@@ -1,0 +1,37 @@
+Text	Vieron la goleta americana _ Porpoise _ , de la Expedición de Exploración de los Estados Unidos ( _ United States Exploring Expedition _ ) , comandada por Charles Wilkes , pero hizo una maniobra evasiva y desapareció en la niebla .	El 1 de febrero Dumont decidió regresar y pusieron rumbo al norte hacia Hobart , que los dos barcos alcanzaron 17 días después .	Estaban presentes en la llegada los dos barcos de la expedición a la Antártida de James Clark Ross .	El 25 de febrero , las goletas zarparon hacia las islas Auckland , donde llevaron a cabo mediciones magnéticas y dejaron una placa conmemorativa de su visita ( como había hecho anteriormente también el comandante de la _ Porpoise _ ) , en la que anunciaron el descubrimiento del Polo Sur Magnético .	Volvieron a través de Nueva Zelanda , vía el estrecho de Torres , Timor , Réunion , Saint Helena y , finalmente , Toulon , regresando el 6 de noviembre de 1840 , siendo la última expedición francesa de exploración a vela .
+Event	T0	Vieron	EVENT	0
+Event	T1	comandada	EVENT	141
+Event	T2	hizo	EVENT	177
+Event	T3	evasiva	EVENT	195
+Event	T4	desapareció	EVENT	205
+Event	T5	regresar	EVENT	263
+Event	T6	alcanzaron	EVENT	332
+Event	T7	llegada	EVENT	385
+Event	T8	zarparon	EVENT	493
+Event	T9	mediciones	EVENT	551
+Event	T10	dejaron	EVENT	575
+Event	T11	visita	EVENT	613
+Event	T12	hecho	EVENT	633
+Event	T13	anunciaron	EVENT	708
+Event	T14	descubrimiento	EVENT	722
+Event	T15	Volvieron	EVENT	762
+Event	T16	regresando	EVENT	885
+Event	T17	expedición	EVENT	941
+Event	T18	exploración	EVENT	964
+Event	T19	decidió	EVENT	255
+Event	T20	pusieron	EVENT	274
+Relation	T8	T10	SuperSub	true	zarparon	dejaron
+Relation	T10	T8	SubSuper	true	dejaron	zarparon
+Relation	T0	T10	NoRel	true	Vieron	dejaron
+Relation	T0	T17	NoRel	true	Vieron	expedición
+Relation	T11	T19	NoRel	true	visita	decidió
+Relation	T11	T2	NoRel	true	visita	hizo
+Relation	T11	T3	NoRel	true	visita	evasiva
+Relation	T11	T6	NoRel	true	visita	alcanzaron
+Relation	T16	T10	NoRel	true	regresando	dejaron
+Relation	T16	T12	NoRel	true	regresando	hecho
+Relation	T2	T12	NoRel	true	hizo	hecho
+Relation	T5	T20	NoRel	true	regresar	pusieron
+Relation	T6	T0	NoRel	true	alcanzaron	Vieron
+Relation	T6	T19	NoRel	true	alcanzaron	decidió
+Relation	T7	T10	NoRel	true	llegada	dejaron

@@ -1,0 +1,30 @@
+Text	İlk saldırı , uçakta bulunan 92 kişinin tamamının ve saldırının etkilediği bölgedeki 1000'den fazla kişinin ölmesiyle sonuçlandı .	17 dakika sonrasında , saat 9.03'de , Ticaret Merkezi'nin güney kulesine United Airlines'ın 175 sefer sayılı uçuşu çarptı .	İkinci saldırı , uçaktaki 65 kişinin tamamının ve etkilenen bölgede yer alan tahmini 1000'den fazla kişinin ölmesiyle sonuçlandı .	İki saat içinde 110 katlı her iki bina da çökerken 7 Dünya Ticaret Merkezi'nin de arasında bulunduğu çevre yapıların bazısı yıkıldı , bazılarıysa hasar gördü .	Dulles Uluslararası Havalimanı'ndan kalkan üçüncü uçak , American Airlines'ın 77 sefer sayılı uçuşu , Ohio üzerindeyken kaçırıldı .
+Event	T0	saldırı	EVENT	4
+Event	T1	etkilediği	EVENT	64
+Event	T10	uçuşu	EVENT	640
+Event	T11	kaçırıldı	EVENT	666
+Event	T13	ölmesiyle	EVENT	108
+Event	T14	ölmesiyle	EVENT	363
+Event	T2	uçuşu	EVENT	240
+Event	T3	çarptı	EVENT	246
+Event	T4	saldırı	EVENT	262
+Event	T5	etkilenen	EVENT	305
+Event	T7	çökerken	EVENT	428
+Event	T8	yıkıldı	EVENT	510
+Relation	T0	T13	SuperSub	true	saldırı	ölmesiyle
+Relation	T13	T0	SubSuper	true	ölmesiyle	saldırı
+Relation	T0	T3	SuperSub	true	saldırı	çarptı
+Relation	T3	T0	SubSuper	true	çarptı	saldırı
+Relation	T4	T14	SuperSub	true	saldırı	ölmesiyle
+Relation	T14	T4	SubSuper	true	ölmesiyle	saldırı
+Relation	T4	T8	SuperSub	true	saldırı	yıkıldı
+Relation	T8	T4	SubSuper	true	yıkıldı	saldırı
+Relation	T4	T7	SuperSub	true	saldırı	çökerken
+Relation	T7	T4	SubSuper	true	çökerken	saldırı
+Relation	T4	T5	SuperSub	true	saldırı	etkilenen
+Relation	T5	T4	SubSuper	true	etkilenen	saldırı
+Relation	T1	T3	NoRel	true	etkilediği	çarptı
+Relation	T14	T10	NoRel	true	ölmesiyle	uçuşu
+Relation	T14	T11	NoRel	true	ölmesiyle	kaçırıldı
+Relation	T3	T13	NoRel	true	çarptı	ölmesiyle
+Relation	T5	T7	NoRel	true	etkilenen	çökerken

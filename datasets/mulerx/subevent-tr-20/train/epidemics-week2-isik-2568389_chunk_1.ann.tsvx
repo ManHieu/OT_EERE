@@ -1,0 +1,11 @@
+Text	- Bahreyn altı vakayı daha doğrulayarak toplam sayısını 47'ye çıkardı .	- Kanada , Ontario'da dört yeni vakayı onaylayarak toplam sayısını 24'e çıkardı .	Dört hastanın da İran ve Mısır'a seyahat geçmişi olduğu açıklandı .	- Çin 573 yeni vakayı doğruladı ; 570'si Hubei eyaletindeydi ve toplam sayı 79.824'e ulaştı .	Ölümler 35 artarak toplam 2.870'e yükseldi .
+Event	T0	çıkardı	EVENT	62
+Event	T1	onaylayarak	EVENT	111
+Event	T10	artarak	EVENT	327
+Event	T2	çıkardı	EVENT	144
+Event	T3	açıklandı	EVENT	210
+Event	T4	doğruladı	EVENT	244
+Event	T5	ulaştı	EVENT	307
+Event	T6	yükseldi	EVENT	350
+Event	T7	doğrulayarak	EVENT	27
+Relation	T4	T1	NoRel	true	doğruladı	onaylayarak

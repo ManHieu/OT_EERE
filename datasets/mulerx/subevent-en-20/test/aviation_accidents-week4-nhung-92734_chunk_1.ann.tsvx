@@ -1,0 +1,62 @@
+Text	Patches of thick fog were drifting across the airfield ; hence visibility was greatly reduced for pilots and the control tower .	The collision occurred when the KLM airliner initiated its take off run while the Pan Am airliner , shrouded in fog , was still on the runway and about to turn off onto the taxiway .	The impact and resulting fire killed everyone on board KLM 4805 and most of the occupants of Pan Am 1736 , with only 61 survivors in the front section of the aircraft .	The subsequent investigation by Spanish authorities concluded that the primary cause of the accident was the KLM captain 's decision to take off in the mistaken belief that a take off clearance from air traffic control ( ATC ) had been issued .	Dutch investigators placed a greater emphasis on a mutual misunderstanding in radio communications between the KLM crew and ATC , but ultimately KLM admitted that their crew was responsible for the accident and the airline agreed to financially compensate the relatives of all of the victims .
+Event	T0	fog	EVENT	17
+Event	T1	drifting	EVENT	26
+Event	T2	reduced	EVENT	86
+Event	T3	occurred	EVENT	143
+Event	T4	shrouded	EVENT	229
+Event	T5	fog	EVENT	241
+Event	T6	impact	EVENT	316
+Event	T7	killed	EVENT	342
+Event	T8	investigation	EVENT	496
+Event	T9	concluded	EVENT	533
+Event	T10	accident	EVENT	573
+Event	T11	decision	EVENT	605
+Event	T12	belief	EVENT	642
+Event	T13	issued	EVENT	717
+Event	T14	placed	EVENT	746
+Event	T15	misunderstanding	EVENT	784
+Event	T16	communications	EVENT	810
+Event	T17	admitted	EVENT	875
+Event	T18	accident	EVENT	924
+Event	T19	agreed	EVENT	949
+Event	T20	compensate	EVENT	971
+Event	T21	collision	EVENT	133
+Event	T22	initiated	EVENT	174
+Event	T23	turn off	EVENT	284
+Event	T24	fire	EVENT	337
+Relation	T22	T21	SuperSub	true	initiated	collision
+Relation	T21	T22	SubSuper	true	collision	initiated
+Relation	T21	T4	SuperSub	true	collision	shrouded
+Relation	T4	T21	SubSuper	true	shrouded	collision
+Relation	T4	T23	SuperSub	true	shrouded	turn off
+Relation	T23	T4	SubSuper	true	turn off	shrouded
+Relation	T8	T9	SuperSub	true	investigation	concluded
+Relation	T9	T8	SubSuper	true	concluded	investigation
+Relation	T0	T19	NoRel	true	fog	agreed
+Relation	T1	T12	NoRel	true	drifting	belief
+Relation	T1	T22	NoRel	true	drifting	initiated
+Relation	T1	T3	NoRel	true	drifting	occurred
+Relation	T12	T21	NoRel	true	belief	collision
+Relation	T14	T12	NoRel	true	placed	belief
+Relation	T16	T12	NoRel	true	communications	belief
+Relation	T16	T24	NoRel	true	communications	fire
+Relation	T20	T22	NoRel	true	compensate	initiated
+Relation	T20	T6	NoRel	true	compensate	impact
+Relation	T21	T18	NoRel	true	collision	accident
+Relation	T22	T12	NoRel	true	initiated	belief
+Relation	T22	T20	NoRel	true	initiated	compensate
+Relation	T23	T10	NoRel	true	turn off	accident
+Relation	T24	T2	NoRel	true	fire	reduced
+Relation	T3	T1	NoRel	true	occurred	drifting
+Relation	T3	T19	NoRel	true	occurred	agreed
+Relation	T5	T20	NoRel	true	fog	compensate
+Relation	T6	T23	NoRel	true	impact	turn off
+Relation	T6	T24	NoRel	true	impact	fire
+Relation	T7	T1	NoRel	true	killed	drifting
+Relation	T7	T14	NoRel	true	killed	placed
+Relation	T7	T17	NoRel	true	killed	admitted
+Relation	T7	T24	NoRel	true	killed	fire
+Relation	T7	T4	NoRel	true	killed	shrouded
+Relation	T7	T8	NoRel	true	killed	investigation
+Relation	T8	T10	NoRel	true	investigation	accident
+Relation	T8	T4	NoRel	true	investigation	shrouded

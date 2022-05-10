@@ -1,0 +1,25 @@
+Text	Kontrolör , mürettebata inişi iptal etmesini ve etrafta dolaşmasını tavsiye etti , ancak mürettebat bu tavsiyeyi görmezden geldi ve inişe devam etti .	Yaklaşım sırasında , gözetmen pilot Azakov , kaptan pilot Artamonov'a yaklaşma ve aletli yaklaşma talimatı verirken , Azakov diğer iniş görevlerini üstlendi .	Mürettebat arasında karar irtifasında ( 130 m ) kararsızlık vardı ; çünkü kontrolör görüş mesafesi nedeniyle etrafta dolaşmalarını söyledi , ancak iki kokpit üyesi pist ışıklarını gördüklerini söyledi ve kaptan inişe devam etti .	Kısa bir süre sonra mürettebat ışıkları görememeye başladı ancak kaptan bunun farkında değildi .	Kaptan inişe az kala ışıkları görebilmek için dikkatini aletlerinden çekip dışarıya verdi ancak uçağın rotadan çıkmasına neden oldu .
+Event	T0	etti	EVENT	144
+Event	T1	Yaklaşım	EVENT	151
+Event	T2	üstlendi	EVENT	299
+Event	T4	söyledi	EVENT	503
+Event	T5	etti	EVENT	533
+Event	T6	verdi	EVENT	721
+Event	T7	tavsiye	EVENT	68
+Event	T8	iptal	EVENT	30
+Event	T9	dolaşmasını	EVENT	56
+Event	T10	geldi	EVENT	123
+Event	T11	talimatı	EVENT	249
+Event	T3	söyledi	EVENT	441
+Event	T12	başladı	EVENT	591
+Event	T13	çıkmasına	EVENT	748
+Relation	T0	T1	NoRel	true	etti	Yaklaşım
+Relation	T0	T2	NoRel	true	etti	üstlendi
+Relation	T11	T2	NoRel	true	talimatı	üstlendi
+Relation	T12	T0	NoRel	true	başladı	etti
+Relation	T12	T2	NoRel	true	başladı	üstlendi
+Relation	T3	T10	NoRel	true	söyledi	geldi
+Relation	T4	T0	NoRel	true	söyledi	etti
+Relation	T4	T8	NoRel	true	söyledi	iptal
+Relation	T6	T5	NoRel	true	verdi	etti
+Relation	T7	T1	NoRel	true	tavsiye	Yaklaşım

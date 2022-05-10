@@ -1,0 +1,65 @@
+Text	These institutions as well as certain regulated banks had also assumed significant debt burdens while providing the loans described above and did not have a financial cushion sufficient to absorb large loan defaults or MBS losses .	The losses experienced by financial institutions on their mortgage - related securities impacted their ability to lend , slowing economic activity .	Interbank lending dried - up initially and then loans to non-financial firms were affected .	Concerns regarding the stability of key financial institutions drove central banks to take action to provide funds to encourage lending and to restore faith in the commercial paper markets , which are integral to funding business operations .	Governments also bailed out key financial institutions , assuming significant additional financial commitments .
+Event	T0	assumed	EVENT	63
+Event	T2	providing	EVENT	102
+Event	T3	described	EVENT	122
+Event	T4	absorb	EVENT	189
+Event	T5	defaults	EVENT	207
+Event	T6	losses	EVENT	223
+Event	T7	experienced	EVENT	243
+Event	T8	impacted	EVENT	320
+Event	T9	lend	EVENT	346
+Event	T10	loans	EVENT	429
+Event	T11	affected	EVENT	463
+Event	T12	Concerns	EVENT	474
+Event	T13	drove	EVENT	537
+Event	T14	action	EVENT	565
+Event	T15	provide	EVENT	575
+Event	T16	lending	EVENT	602
+Event	T17	funding	EVENT	687
+Event	T18	assuming	EVENT	774
+Event	T1	debt burdens	EVENT	83
+Event	T19	losses	EVENT	236
+Event	T20	mortgage - related securities	EVENT	290
+Event	T21	slowing	EVENT	353
+Event	T22	dried - up	EVENT	399
+Event	T23	encourage	EVENT	592
+Event	T24	restore	EVENT	617
+Event	T25	bailed out	EVENT	734
+Relation	T25	T18	SuperSub	true	bailed out	assuming
+Relation	T18	T25	SubSuper	true	assuming	bailed out
+Relation	T0	T4	NoRel	true	assumed	absorb
+Relation	T1	T22	NoRel	true	debt burdens	dried - up
+Relation	T1	T3	NoRel	true	debt burdens	described
+Relation	T10	T13	NoRel	true	loans	drove
+Relation	T10	T17	NoRel	true	loans	funding
+Relation	T11	T21	NoRel	true	affected	slowing
+Relation	T12	T0	NoRel	true	Concerns	assumed
+Relation	T12	T15	NoRel	true	Concerns	provide
+Relation	T13	T11	NoRel	true	drove	affected
+Relation	T13	T20	NoRel	true	drove	mortgage - related securities
+Relation	T14	T8	NoRel	true	action	impacted
+Relation	T15	T9	NoRel	true	provide	lend
+Relation	T16	T15	NoRel	true	lending	provide
+Relation	T16	T2	NoRel	true	lending	providing
+Relation	T16	T23	NoRel	true	lending	encourage
+Relation	T16	T8	NoRel	true	lending	impacted
+Relation	T18	T21	NoRel	true	assuming	slowing
+Relation	T18	T7	NoRel	true	assuming	experienced
+Relation	T2	T5	NoRel	true	providing	defaults
+Relation	T2	T6	NoRel	true	providing	losses
+Relation	T20	T13	NoRel	true	mortgage - related securities	drove
+Relation	T21	T19	NoRel	true	slowing	losses
+Relation	T22	T25	NoRel	true	dried - up	bailed out
+Relation	T22	T9	NoRel	true	dried - up	lend
+Relation	T23	T10	NoRel	true	encourage	loans
+Relation	T23	T19	NoRel	true	encourage	losses
+Relation	T23	T20	NoRel	true	encourage	mortgage - related securities
+Relation	T23	T3	NoRel	true	encourage	described
+Relation	T23	T5	NoRel	true	encourage	defaults
+Relation	T24	T10	NoRel	true	restore	loans
+Relation	T25	T1	NoRel	true	bailed out	debt burdens
+Relation	T25	T7	NoRel	true	bailed out	experienced
+Relation	T4	T20	NoRel	true	absorb	mortgage - related securities
+Relation	T5	T7	NoRel	true	defaults	experienced
+Relation	T8	T3	NoRel	true	impacted	described
+Relation	T8	T9	NoRel	true	impacted	lend

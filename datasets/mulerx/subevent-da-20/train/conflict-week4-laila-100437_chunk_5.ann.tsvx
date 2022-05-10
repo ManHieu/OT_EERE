@@ -1,0 +1,44 @@
+Text	Både københavnerne og svenskerne var godt orienterede om hinandens planer og troppeflytninger .	Derfor omgik man hinanden med en vis mistro og mistænkte spioner blev omgående sat fast eller henrettet .	Som tiden gik blev stemningen i byen mere og mere anstrengt og dalede yderligere den 12. september , da man erfarede at svenskerne havde erobret Kronborg .	Svenskernes bombardementer blev intensiveret i september , men deres flåde måtte dog forlade Københavns Red for at imødegå en hollandsk undsættelsesflåde som var undervejs .	Den 8. oktober lykkedes det for den svenske konge at foretage en landsætning på Amager og svenskerne erobrede Dragør og Kastrup .
+Event	T0	orienterede	EVENT	42
+Event	T1	troppeflytninger	EVENT	77
+Event	T2	omgik	EVENT	103
+Event	T3	mistro	EVENT	133
+Event	T4	henrettet	EVENT	190
+Event	T5	dalede	EVENT	265
+Event	T6	erfarede	EVENT	310
+Event	T7	erobret	EVENT	339
+Event	T8	bombardementer	EVENT	370
+Event	T9	intensiveret	EVENT	390
+Event	T10	lykkedes	EVENT	547
+Event	T11	foretage	EVENT	585
+Event	T12	landsætning	EVENT	597
+Event	T13	erobrede	EVENT	633
+Event	T14	planer	EVENT	67
+Event	T15	mistænkte spioner	EVENT	143
+Event	T16	sat fast	EVENT	175
+Event	T17	stemningen	EVENT	221
+Event	T18	gik	EVENT	212
+Event	T19	anstrengt	EVENT	252
+Event	T20	flåde	EVENT	427
+Event	T21	forlade	EVENT	443
+Event	T22	imødegå	EVENT	473
+Event	T23	undsættelsesflåde	EVENT	494
+Relation	T1	T12	NoRel	true	troppeflytninger	landsætning
+Relation	T1	T21	NoRel	true	troppeflytninger	forlade
+Relation	T10	T20	NoRel	true	lykkedes	flåde
+Relation	T12	T9	NoRel	true	landsætning	intensiveret
+Relation	T14	T0	NoRel	true	planer	orienterede
+Relation	T14	T15	NoRel	true	planer	mistænkte spioner
+Relation	T14	T8	NoRel	true	planer	bombardementer
+Relation	T17	T20	NoRel	true	stemningen	flåde
+Relation	T18	T20	NoRel	true	gik	flåde
+Relation	T20	T21	NoRel	true	flåde	forlade
+Relation	T21	T14	NoRel	true	forlade	planer
+Relation	T21	T19	NoRel	true	forlade	anstrengt
+Relation	T22	T10	NoRel	true	imødegå	lykkedes
+Relation	T22	T17	NoRel	true	imødegå	stemningen
+Relation	T22	T5	NoRel	true	imødegå	dalede
+Relation	T3	T19	NoRel	true	mistro	anstrengt
+Relation	T7	T16	NoRel	true	erobret	sat fast
+Relation	T7	T17	NoRel	true	erobret	stemningen
+Relation	T8	T12	NoRel	true	bombardementer	landsætning

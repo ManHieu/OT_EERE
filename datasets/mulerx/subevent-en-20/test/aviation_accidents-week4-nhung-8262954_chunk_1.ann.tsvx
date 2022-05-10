@@ -1,0 +1,40 @@
+Text	The aircraft was scheduled to stop at Dharan in Saudi Arabia , Cairo and then Geneva before completing its journey to London .	As the aircraft was on final approach to Cairo International Airport , the pilot reported problems with the flaps ; shortly thereafter , the aircraft crashed southeast of the airport and broke up as it exploded into flames .	Six of the passengers were thrown clear of the wreckage , but everyone else on board was killed .	Among the dead was the Chinese aircraft designer Huang Zhiqian , who was chief designer of the fighter jet Shenyang J - 8 .	The aircraft was a Boeing 720 - 040B with the registration _ AP - AMH _ and manufacturer 's serial number 18379 ; it was first flown on 19 October 1962 and delivered to Pakistan International Airlines on 7 November 1962 .
+Event	T0	scheduled	EVENT	17
+Event	T1	stop	EVENT	30
+Event	T2	journey	EVENT	107
+Event	T3	approach	EVENT	156
+Event	T4	problems	EVENT	217
+Event	T5	flaps	EVENT	235
+Event	T6	crashed	EVENT	277
+Event	T7	flames	EVENT	343
+Event	T8	wreckage	EVENT	399
+Event	T9	killed	EVENT	441
+Event	T10	dead	EVENT	460
+Event	T11	flown	EVENT	701
+Event	T12	delivered	EVENT	730
+Event	T13	broke up	EVENT	314
+Event	T14	exploded	EVENT	329
+Event	T15	thrown	EVENT	379
+Relation	T2	T1	SuperSub	true	journey	stop
+Relation	T1	T2	SubSuper	true	stop	journey
+Relation	T3	T4	SuperSub	true	approach	problems
+Relation	T4	T3	SubSuper	true	problems	approach
+Relation	T4	T6	SuperSub	true	problems	crashed
+Relation	T6	T4	SubSuper	true	crashed	problems
+Relation	T6	T13	SuperSub	true	crashed	broke up
+Relation	T13	T6	SubSuper	true	broke up	crashed
+Relation	T13	T14	SuperSub	true	broke up	exploded
+Relation	T14	T13	SubSuper	true	exploded	broke up
+Relation	T11	T12	SuperSub	true	flown	delivered
+Relation	T12	T11	SubSuper	true	delivered	flown
+Relation	T0	T11	NoRel	true	scheduled	flown
+Relation	T1	T12	NoRel	true	stop	delivered
+Relation	T1	T5	NoRel	true	stop	flaps
+Relation	T1	T6	NoRel	true	stop	crashed
+Relation	T13	T2	NoRel	true	broke up	journey
+Relation	T13	T7	NoRel	true	broke up	flames
+Relation	T14	T8	NoRel	true	exploded	wreckage
+Relation	T14	T9	NoRel	true	exploded	killed
+Relation	T15	T12	NoRel	true	thrown	delivered
+Relation	T3	T10	NoRel	true	approach	dead
+Relation	T7	T11	NoRel	true	flames	flown

@@ -1,0 +1,71 @@
+Text	Woolsey probably could have parachuted to safety but apparently chose to ride his amphibian biplane down in an attempt to land because Benton was on the wing , without his chute , attempting to lower the landing gear by hand .	" I have never witnessed a more courageous sacrifice , " said Capt. Ira Eaker , who witnessed the crash from his plane .	Flight Commander Bert Dargue and Lt. Ennis Whitehead bailed out of Loening OA - 1A " New York " , while Woolsey and Benton rode OA - 1A " Detroit " in .	13 March : First of two Naval Aircraft Factory PN- 8 flying boats , BuNo__A -6799_ , delivered 8 May 1925 , intended for a flight by the Navy from San Francisco to Hawaii , is wrecked while being transported fully assembled on the deck of the .	Hit by heavy seas , the plane is lifted against its tie - down cables , which cut through the hull , airframe written off with 32:48 flying hours .
+Event	T0	parachuted	EVENT	28
+Event	T1	chose	EVENT	64
+Event	T2	ride	EVENT	73
+Event	T3	attempt	EVENT	111
+Event	T4	land	EVENT	122
+Event	T5	chute	EVENT	172
+Event	T6	attempting	EVENT	180
+Event	T7	lower	EVENT	194
+Event	T8	landing	EVENT	204
+Event	T9	witnessed	EVENT	242
+Event	T10	sacrifice	EVENT	270
+Event	T11	said	EVENT	284
+Event	T12	witnessed	EVENT	311
+Event	T13	crash	EVENT	325
+Event	T14	Loening	EVENT	415
+Event	T15	rode	EVENT	471
+Event	T16	delivered	EVENT	586
+Event	T17	intended	EVENT	609
+Event	T18	flight	EVENT	624
+Event	T19	wrecked	EVENT	677
+Event	T20	transported	EVENT	697
+Event	T21	assembled	EVENT	715
+Event	T22	Hit	EVENT	746
+Event	T23	lifted	EVENT	779
+Event	T24	flying	EVENT	879
+Event	T25	bailed	EVENT	401
+Event	T26	cut	EVENT	824
+Relation	T2	T3	SuperSub	true	ride	attempt
+Relation	T3	T2	SubSuper	true	attempt	ride
+Relation	T6	T3	SuperSub	true	attempting	attempt
+Relation	T3	T6	SubSuper	true	attempt	attempting
+Relation	T13	T12	SuperSub	true	crash	witnessed
+Relation	T12	T13	SubSuper	true	witnessed	crash
+Relation	T20	T19	SuperSub	true	transported	wrecked
+Relation	T19	T20	SubSuper	true	wrecked	transported
+Relation	T0	T16	NoRel	true	parachuted	delivered
+Relation	T1	T18	NoRel	true	chose	flight
+Relation	T10	T13	NoRel	true	sacrifice	crash
+Relation	T10	T9	NoRel	true	sacrifice	witnessed
+Relation	T11	T2	NoRel	true	said	ride
+Relation	T11	T23	NoRel	true	said	lifted
+Relation	T12	T23	NoRel	true	witnessed	lifted
+Relation	T12	T24	NoRel	true	witnessed	flying
+Relation	T12	T5	NoRel	true	witnessed	chute
+Relation	T13	T9	NoRel	true	crash	witnessed
+Relation	T14	T24	NoRel	true	Loening	flying
+Relation	T14	T4	NoRel	true	Loening	land
+Relation	T15	T11	NoRel	true	rode	said
+Relation	T16	T15	NoRel	true	delivered	rode
+Relation	T16	T20	NoRel	true	delivered	transported
+Relation	T16	T3	NoRel	true	delivered	attempt
+Relation	T16	T5	NoRel	true	delivered	chute
+Relation	T17	T12	NoRel	true	intended	witnessed
+Relation	T17	T20	NoRel	true	intended	transported
+Relation	T17	T6	NoRel	true	intended	attempting
+Relation	T19	T13	NoRel	true	wrecked	crash
+Relation	T19	T7	NoRel	true	wrecked	lower
+Relation	T2	T17	NoRel	true	ride	intended
+Relation	T21	T24	NoRel	true	assembled	flying
+Relation	T21	T25	NoRel	true	assembled	bailed
+Relation	T21	T8	NoRel	true	assembled	landing
+Relation	T22	T13	NoRel	true	Hit	crash
+Relation	T22	T2	NoRel	true	Hit	ride
+Relation	T22	T24	NoRel	true	Hit	flying
+Relation	T25	T14	NoRel	true	bailed	Loening
+Relation	T4	T25	NoRel	true	land	bailed
+Relation	T5	T18	NoRel	true	chute	flight
+Relation	T5	T4	NoRel	true	chute	land
+Relation	T6	T14	NoRel	true	attempting	Loening
+Relation	T8	T17	NoRel	true	landing	intended

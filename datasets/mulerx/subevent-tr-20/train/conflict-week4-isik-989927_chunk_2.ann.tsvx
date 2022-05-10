@@ -1,0 +1,18 @@
+Text	küçükresim | 200px | sağ | 1945 Moskova Zafer Geçit Töreni'nde Lenin'in Mozolesi'nin önüne atılmayı bekleyen Nazi Almanyası'nı sembolize eden orijinal pankartlar ve onları taşıyan Kızıl Ordu'ya bağlı askerler .	24 Haziran 1945'te SSCB başkenti Moskova'da zafer geçiti töreni düzenlenerek Sovyet zaferi anıldı .	Törende Stalin ve Sovyetler Birliği Komünist Partisi yöneticilerinin Lenin'in Mozolesi üzerinde izlediği törenin başlangıcında Sovyetler Birliği Mareşali Georgi Jukov ve Konstantin Rokossovski , sırasıyla beyaz ve siyah at üzerinde alana gelmişlerdir .	Törende Kızıl Ordu askerleri ve orduya ait savaş araçları Kızıl Meydan'dan geçiş yapmıştır .	NKVD askerleri Nazi Almanyası'nı sembolize eden orijinal pankartları taşımış ve onları Lenin'in Mozolesi'nin önüne atmışlardır .
+Event	T1	anıldı	EVENT	302
+Event	T2	yapmıştır	EVENT	645
+Event	T3	Töreni'nde	EVENT	52
+Event	T4	taşıyan	EVENT	172
+Event	T5	töreni	EVENT	268
+Event	T6	Törende	EVENT	311
+Event	T7	gelmişlerdir	EVENT	549
+Event	T8	Törende	EVENT	564
+Event	T9	taşımış	EVENT	726
+Event	T10	atmışlardır	EVENT	772
+Relation	T10	T7	NoRel	true	atmışlardır	gelmişlerdir
+Relation	T2	T1	NoRel	true	yapmıştır	anıldı
+Relation	T2	T6	NoRel	true	yapmıştır	Törende
+Relation	T3	T4	NoRel	true	Töreni'nde	taşıyan
+Relation	T7	T3	NoRel	true	gelmişlerdir	Töreni'nde
+Relation	T7	T6	NoRel	true	gelmişlerdir	Törende
+Relation	T7	T8	NoRel	true	gelmişlerdir	Törende

@@ -1,0 +1,14 @@
+Text	Parte de la composición cayó al río Túa .	Se produjo al menos un muerto y probablemente numerosos heridos entre los pasajeros .	- 11 DE AGOSTO : Un automóvil es arrollado por un tren cerca de la estación de Curia , en el municipio de Anadia .	Los cinco ocupantes del vehículo arrollado resultaron muertos .	- 1929 -___11 DE ENERO : Tres pasajeros resultan heridos leves en lisboa como consecuencia del descarrilamiento de un tren procedente de la línea del Norte cuando efectuaba su entrada en la estación de Santa Apolónia
+Event	T0	cayó	EVENT	24
+Event	T1	produjo	EVENT	45
+Event	T2	muerto	EVENT	65
+Event	T3	heridos	EVENT	98
+Event	T4	arrollado	EVENT	161
+Event	T5	muertos	EVENT	297
+Event	T6	descarrilamiento	EVENT	402
+Event	T7	efectuaba	EVENT	470
+Event	T8	entrada	EVENT	483
+Relation	T0	T6	NoRel	true	cayó	descarrilamiento
+Relation	T4	T0	NoRel	true	arrollado	cayó
+Relation	T8	T0	NoRel	true	entrada	cayó
+Relation	T8	T5	NoRel	true	entrada	muertos

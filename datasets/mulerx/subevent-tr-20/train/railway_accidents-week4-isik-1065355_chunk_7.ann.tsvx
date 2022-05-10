@@ -1,0 +1,36 @@
+Text	Çarpışma sonucu pek çok kişi yaralanır .	Bazısı erimiş tehlikeli Fenol asid_‘i içeren 47 vagon taşıyan bir CSX yük treni , üzerinde makinisti olmadan Toledo’da kaçmaktadır .	Tren , üzerine çıkmayı başaran bir demiryolu işçisi tarafından dudurulmadan önce Kenton , Ohio_‘ya doğru gitmekteydi ...	- 18 Temmuz , 2001 – Howard Street Tünel yangını , Baltimore , Maryland , Birleşik Devletler : Kimyasallar ve ağaç ürünleri taşıyan bir 60 - vagonlu dakikada 1, 7 km hızla giden CSX treni Baltimore altındaki uzun tünelde raydan çıkarak altı gün yanarak su kirlenmesine ve yangına sebep olur ..	- 19 Ağustos , 2001 – Kurunegala tren çarpışması , Sri_Lanka : Bir tren hız ve fazla kalabalık oluşu nedeniyle raydan çıktığında 13 kişi ölür .
+Event	T0	yaralanır	EVENT	29
+Event	T1	kaçmaktadır	EVENT	160
+Event	T2	gitmekteydi	EVENT	279
+Event	T3	yangını	EVENT	336
+Event	T4	yanarak	EVENT	540
+Event	T5	kirlenmesine	EVENT	551
+Event	T6	çarpışması	EVENT	627
+Event	T7	ölür	EVENT	726
+Event	T8	Çarpışma	EVENT	0
+Event	T9	erimiş	EVENT	48
+Event	T10	taşıyan	EVENT	95
+Event	T11	çıkmayı	EVENT	189
+Event	T12	dudurulmadan	EVENT	237
+Event	T13	giden	EVENT	467
+Event	T14	çıkarak	EVENT	523
+Event	T15	yangına	EVENT	567
+Event	T16	olur	EVENT	581
+Event	T17	taşıyan	EVENT	419
+Event	T18	çıktığında	EVENT	707
+Relation	T1	T15	NoRel	true	kaçmaktadır	yangına
+Relation	T1	T7	NoRel	true	kaçmaktadır	ölür
+Relation	T10	T2	NoRel	true	taşıyan	gitmekteydi
+Relation	T12	T2	NoRel	true	dudurulmadan	gitmekteydi
+Relation	T14	T12	NoRel	true	çıkarak	dudurulmadan
+Relation	T15	T2	NoRel	true	yangına	gitmekteydi
+Relation	T17	T2	NoRel	true	taşıyan	gitmekteydi
+Relation	T2	T9	NoRel	true	gitmekteydi	erimiş
+Relation	T3	T8	NoRel	true	yangını	Çarpışma
+Relation	T5	T15	NoRel	true	kirlenmesine	yangına
+Relation	T5	T7	NoRel	true	kirlenmesine	ölür
+Relation	T6	T14	NoRel	true	çarpışması	çıkarak
+Relation	T7	T12	NoRel	true	ölür	dudurulmadan
+Relation	T7	T13	NoRel	true	ölür	giden
+Relation	T7	T15	NoRel	true	ölür	yangına
+Relation	T9	T13	NoRel	true	erimiş	giden

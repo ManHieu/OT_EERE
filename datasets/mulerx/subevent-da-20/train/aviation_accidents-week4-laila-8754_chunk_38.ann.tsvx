@@ -1,0 +1,13 @@
+Text	Holder udtrykte sin tillid til , at de sagsøgte ville få en retfærdig rettergang , som var " åbent for offentligheden og er åben for verden " .	Fem personer er indtil videre blevet identificeret som havende kendskab til detaljerne omkring angrebet .	Personerne er Osama bin Laden , Khalid Sheikh Mohammed , Ramzi Binalshibh , Abu Turab al-Urduni og Mohammed Atef .	Til dato er kun få dømt for deltagelse i angrebene .	bin Laden er endnu ikke blevet formelt anklaget .
+Event	T0	udtrykte	EVENT	7
+Event	T1	rettergang	EVENT	70
+Event	T2	identificeret	EVENT	181
+Event	T3	angrebet	EVENT	239
+Event	T4	dømt	EVENT	384
+Event	T5	deltagelse	EVENT	393
+Event	T6	angrebene	EVENT	406
+Event	T7	anklaget	EVENT	457
+Relation	T3	T2	SuperSub	true	angrebet	identificeret
+Relation	T2	T3	SubSuper	true	identificeret	angrebet
+Relation	T1	T0	NoRel	true	rettergang	udtrykte
+Relation	T6	T2	NoRel	true	angrebene	identificeret

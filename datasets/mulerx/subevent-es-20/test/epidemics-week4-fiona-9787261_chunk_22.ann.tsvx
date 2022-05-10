@@ -1,0 +1,43 @@
+Text	También hubo varios casos de personas que figuraban como vacunadas , sin siquiera haberse registrado en el listado web del Ministerio de Salud para vacunarse .	El 30 de abril , se reportó el robo de vacunas en el Hospital de Calle'i , y que luego se estaban ofreciendo para su venta en la ciudad de San Lorenzo , departamento Central ; según la denuncia , las vacunas habrían sido robadas quince días atrás .	El 30 de abril , fue apartado del cargo el director de la XVIII Región Sanitaria por presunta vacunación " VIP " a personas con alto perfil político que no cumplían la edad mínima de vacunación ( 75 años ) , entre ellas la senadora Mirtha Gusinky , quien renunció al Senado por este hecho el 3 de mayo .	El sistema de vacunación por agendamiento tuvo que ser desactivado desde el 3 de mayo , debido a innumerables quejas debido a las fallas en el agendamiento .	Desde la fecha , se inocula según la terminación de cédula de identidad en días específicos .
+Event	T0	figuraban	EVENT	42
+Event	T1	vacunadas	EVENT	57
+Event	T2	registrado	EVENT	90
+Event	T3	reportó	EVENT	180
+Event	T4	robo	EVENT	191
+Event	T5	ofreciendo	EVENT	258
+Event	T6	venta	EVENT	277
+Event	T7	denuncia	EVENT	345
+Event	T8	robadas	EVENT	381
+Event	T9	apartado	EVENT	430
+Event	T10	vacunación	EVENT	503
+Event	T11	vacunación	EVENT	592
+Event	T12	renunció	EVENT	664
+Event	T13	hecho	EVENT	692
+Event	T14	vacunación	EVENT	727
+Event	T15	tuvo	EVENT	755
+Event	T16	desactivado	EVENT	768
+Event	T17	fallas	EVENT	843
+Event	T18	agendamiento	EVENT	856
+Event	T19	terminación	EVENT	908
+Relation	T10	T9	SuperSub	true	vacunación	apartado
+Relation	T9	T10	SubSuper	true	apartado	vacunación
+Relation	T0	T19	NoRel	true	figuraban	terminación
+Relation	T0	T6	NoRel	true	figuraban	venta
+Relation	T0	T7	NoRel	true	figuraban	denuncia
+Relation	T10	T1	NoRel	true	vacunación	vacunadas
+Relation	T10	T17	NoRel	true	vacunación	fallas
+Relation	T10	T18	NoRel	true	vacunación	agendamiento
+Relation	T12	T0	NoRel	true	renunció	figuraban
+Relation	T14	T10	NoRel	true	vacunación	vacunación
+Relation	T14	T8	NoRel	true	vacunación	robadas
+Relation	T15	T5	NoRel	true	tuvo	ofreciendo
+Relation	T16	T5	NoRel	true	desactivado	ofreciendo
+Relation	T18	T11	NoRel	true	agendamiento	vacunación
+Relation	T19	T15	NoRel	true	terminación	tuvo
+Relation	T2	T10	NoRel	true	registrado	vacunación
+Relation	T4	T11	NoRel	true	robo	vacunación
+Relation	T6	T11	NoRel	true	venta	vacunación
+Relation	T6	T16	NoRel	true	venta	desactivado
+Relation	T6	T18	NoRel	true	venta	agendamiento
+Relation	T7	T2	NoRel	true	denuncia	registrado
+Relation	T9	T13	NoRel	true	apartado	hecho

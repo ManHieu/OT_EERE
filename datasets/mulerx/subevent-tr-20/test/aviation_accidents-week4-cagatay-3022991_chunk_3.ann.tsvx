@@ -1,0 +1,22 @@
+Text	Uçaktaki herkes ölmüştü .	Sorumlu pilotun bulutların içinde tırmanırken muhtemelen uzaysal oryantasyon bozukluğu yaşadığı belirlendi .	Uçak bunun ardından dalışa girdi .	Mürettebat dalıştan kurtulmaya çalışırken , uçağın gövdesi aşırı yüklendi ve sağ kanadın kopmasına neden oldu .	Kategori : 1948'de Kazakistan Kategori : Kazakistan SSC'deki havacılık kazaları ve olayları Kategori : 1948'de havacılık kazaları ve olayları Kategori : Lisunov Li - 2 içeren kazalar ve olaylar Kategori : Aeroflot kazaları ve olayları
+Event	T0	ölmüştü	EVENT	16
+Event	T1	tırmanırken	EVENT	60
+Event	T2	belirlendi	EVENT	122
+Event	T3	girdi	EVENT	162
+Event	T4	yüklendi	EVENT	235
+Event	T9	bozukluğu	EVENT	103
+Event	T10	dalıştan	EVENT	181
+Event	T11	kurtulmaya	EVENT	190
+Event	T12	çalışırken	EVENT	201
+Event	T13	kopmasına	EVENT	259
+Relation	T1	T9	SuperSub	true	tırmanırken	bozukluğu
+Relation	T9	T1	SubSuper	true	bozukluğu	tırmanırken
+Relation	T0	T1	NoRel	true	ölmüştü	tırmanırken
+Relation	T1	T10	NoRel	true	tırmanırken	dalıştan
+Relation	T11	T13	NoRel	true	kurtulmaya	kopmasına
+Relation	T11	T9	NoRel	true	kurtulmaya	bozukluğu
+Relation	T2	T10	NoRel	true	belirlendi	dalıştan
+Relation	T2	T12	NoRel	true	belirlendi	çalışırken
+Relation	T2	T9	NoRel	true	belirlendi	bozukluğu
+Relation	T3	T11	NoRel	true	girdi	kurtulmaya
+Relation	T3	T2	NoRel	true	girdi	belirlendi

@@ -1,0 +1,53 @@
+Text	بات صرف ایرانی انقلاب کی قیادت کے شیعہ ہونے کی نہیں تھی ، ایران کی مذہبی قیادت نے انقلاب کی کامیابی کے بعد ایران سے باہر سب سے پہلے جس شخصیت سے رابطہ کیا وہ مولانا مودودی ؒتھے ۔	جماعت اسلامی کے قیام کے ابتدائی سالوں سے ہی دیوبندی علما بالعموم اور مولانا منظور احمد چنیوٹی بالخصوص ، مولانا مودودی ؒ سے پیشہ وارانہ مخاصمت رکھتے تھے اور ان کے خلاف کئی مضامین اور کتابیں لکھ چکے تھے ۔	انہوں نے " ایرانی انقلاب ، امام خمینی اور شیعیت " کے عنوان سے کتاب لکھ کر شیعہ سنی منافرت کو ہوا دی جس کے نتیجے میں جہاں جماعت اسلامی کی مقبولیت میں کمی آئی وہاں پاکستان میں شیعہ کشی میں مزید تیزی آئی ۔	دیوبندی علما کے خوفزدہ ہونے کی ایک وجہ یہ بھی تھی کہ اگر جماعت اسلامی ایران کے انقلاب کے اثرات درآمد کر کے کوئی تحریک چلانے میں کامیاب ہو جاتی تو جماعت اسلامی ان سرکاری منصبوں تک پہنچ سکتی تھی جن کے خواب دیوبندی علما اپنے لیے دیکھ رہے تھے ۔	1984ء میں مولانا نورالحسن بخاری کی وفات کے بعد کچھ عرصہ " تنظیم اہلسنت " کو " سواد اعظم " پکارا گیا اور اس کی سرپرستی مولانا سمیع الحق نے کی ۔
+Event	T0	کامیابی	EVENT	92
+Event	T1	قیام	EVENT	194
+Event	T2	لکھ	EVENT	448
+Event	T4	کشی	EVENT	560
+Event	T6	چلانے	EVENT	702
+Event	T7	پہنچ	EVENT	763
+Event	T8	دیکھ	EVENT	810
+Event	T9	وفات	EVENT	860
+Event	T10	سرپرستی	EVENT	935
+Event	T11	انقلاب	EVENT	15
+Event	T12	ہونے	EVENT	39
+Event	T13	انقلاب	EVENT	82
+Event	T14	رابطہ	EVENT	144
+Event	T15	مخاصمت	EVENT	313
+Event	T16	لکھ	EVENT	367
+Event	T17	انقلاب	EVENT	399
+Event	T18	دی	EVENT	478
+Event	T19	کمی	EVENT	530
+Event	T3	تیزی	EVENT	573
+Event	T5	خوفزدہ	EVENT	600
+Event	T20	انقلاب	EVENT	663
+Event	T21	کامیاب	EVENT	712
+Event	T22	درآمد	EVENT	679
+Event	T23	پکارا	EVENT	915
+Relation	T21	T22	SuperSub	true	کامیاب	درآمد
+Relation	T22	T21	SubSuper	true	درآمد	کامیاب
+Relation	T1	T11	NoRel	true	قیام	انقلاب
+Relation	T1	T13	NoRel	true	قیام	انقلاب
+Relation	T1	T19	NoRel	true	قیام	کمی
+Relation	T11	T13	NoRel	true	انقلاب	انقلاب
+Relation	T11	T17	NoRel	true	انقلاب	انقلاب
+Relation	T13	T11	NoRel	true	انقلاب	انقلاب
+Relation	T13	T15	NoRel	true	انقلاب	مخاصمت
+Relation	T13	T9	NoRel	true	انقلاب	وفات
+Relation	T14	T4	NoRel	true	رابطہ	کشی
+Relation	T15	T17	NoRel	true	مخاصمت	انقلاب
+Relation	T16	T0	NoRel	true	لکھ	کامیابی
+Relation	T17	T5	NoRel	true	انقلاب	خوفزدہ
+Relation	T18	T0	NoRel	true	دی	کامیابی
+Relation	T18	T16	NoRel	true	دی	لکھ
+Relation	T18	T17	NoRel	true	دی	انقلاب
+Relation	T18	T23	NoRel	true	دی	پکارا
+Relation	T18	T8	NoRel	true	دی	دیکھ
+Relation	T2	T18	NoRel	true	لکھ	دی
+Relation	T3	T20	NoRel	true	تیزی	انقلاب
+Relation	T4	T11	NoRel	true	کشی	انقلاب
+Relation	T6	T12	NoRel	true	چلانے	ہونے
+Relation	T8	T9	NoRel	true	دیکھ	وفات
+Relation	T9	T13	NoRel	true	وفات	انقلاب
+Relation	T9	T20	NoRel	true	وفات	انقلاب
+Relation	T9	T22	NoRel	true	وفات	درآمد
+Relation	T9	T4	NoRel	true	وفات	کشی

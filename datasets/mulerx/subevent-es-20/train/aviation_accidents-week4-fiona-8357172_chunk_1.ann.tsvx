@@ -1,0 +1,23 @@
+Text	El avión se desvió a CFB Goose Bay , una base aérea militar también utilizada para vuelos civiles , y aterrizó a las 3:42 p.m.	Hora del meridiano de Greenwich ( 15:42 UTC ) después de sufrir un fallo no contenido en su exterior de estribor ( N. º 4 ) motor mientras vuela 150 kilómetros ( 93 millas ) al sureste de Paamiut , Groenlandia .	El motor que falló había operado 3.527 ciclos desde que era nuevo .	No se reportaron heridos entre los 497 pasajeros y 24 tripulantes a bordo .	No se permitió a los pasajeros desembarcar del A380 hasta que otro avión de Air France y un avión fletado arribaron a la mañana siguiente , porque el aeropuerto ( ubicado en la base aérea de las Fuerzas Armadas canadienses ) no está equipado para acomodar un gran número de pasajeros
+Event	T0	desvió	EVENT	12
+Event	T1	vuelos	EVENT	83
+Event	T2	aterrizó	EVENT	102
+Event	T3	sufrir	EVENT	184
+Event	T4	fallo	EVENT	194
+Event	T5	contenido	EVENT	203
+Event	T6	vuela	EVENT	266
+Event	T7	falló	EVENT	352
+Event	T8	operado	EVENT	364
+Event	T9	heridos	EVENT	424
+Event	T10	permitió	EVENT	489
+Event	T11	desembarcar	EVENT	514
+Event	T12	arribaron	EVENT	589
+Event	T13	equipado	EVENT	716
+Relation	T13	T11	SuperSub	true	equipado	desembarcar
+Relation	T11	T13	SubSuper	true	desembarcar	equipado
+Relation	T0	T1	NoRel	true	desvió	vuelos
+Relation	T1	T2	NoRel	true	vuelos	aterrizó
+Relation	T2	T5	NoRel	true	aterrizó	contenido
+Relation	T4	T2	NoRel	true	fallo	aterrizó
+Relation	T5	T1	NoRel	true	contenido	vuelos
+Relation	T9	T5	NoRel	true	heridos	contenido

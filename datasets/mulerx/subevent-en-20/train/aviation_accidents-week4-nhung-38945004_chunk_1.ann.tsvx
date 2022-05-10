@@ -1,0 +1,63 @@
+Text	- February 20 : A Douglas C - 47A ( registration YU - ACB ) operated by JAT Yugoslav Airlines crashed near Belgrade while on a training flight , killing all five crew on board .	- March 8 : Fairways Flight 43 ( a Douglas DC - 3A , registration PI - C948 ) struck Mount Tangcong Vaca en route to Naga from Manila , killing ten of 12 on board .	- March 11 : A Douglas C - 47- DL ( registration HK - 153 ) operated by Avianca crashed on takeoff from Bucaramanga , Colombia ; there were no casualties , but the aircraft was written off .	- March 16 : A Douglas C - 47A ( registration CF - PQG ) operated by the Canada Department of Transport crashed at Blanc Sablon Airport after a loss of control on takeoff ; all nine on board survived , but the aircraft was written off .	- March 18 : A Douglas DC - 3C ( registration N4997E ) operated by Miami Aviation was being ferried from Miami to Manila when it crashed off Clarenville , Newfoundland , Canada after an undetermined emergency , killing both pilots .
+Event	T0	operated	EVENT	60
+Event	T1	crashed	EVENT	94
+Event	T2	flight	EVENT	136
+Event	T3	killing	EVENT	145
+Event	T4	registration	EVENT	231
+Event	T5	struck	EVENT	256
+Event	T6	killing	EVENT	314
+Event	T7	operated	EVENT	403
+Event	T8	takeoff	EVENT	434
+Event	T9	casualties	EVENT	486
+Event	T10	registration	EVENT	567
+Event	T11	operated	EVENT	591
+Event	T12	crashed	EVENT	638
+Event	T13	takeoff	EVENT	697
+Event	T14	survived	EVENT	725
+Event	T15	registration	EVENT	804
+Event	T16	operated	EVENT	826
+Event	T17	ferried	EVENT	863
+Event	T18	emergency	EVENT	970
+Event	T19	killing	EVENT	982
+Event	T20	crashed	EVENT	423
+Event	T21	written off	EVENT	520
+Event	T22	loss	EVENT	678
+Event	T23	written off	EVENT	757
+Event	T24	crashed	EVENT	900
+Relation	T2	T1	SuperSub	true	flight	crashed
+Relation	T1	T2	SubSuper	true	crashed	flight
+Relation	T8	T20	SuperSub	true	takeoff	crashed
+Relation	T20	T8	SubSuper	true	crashed	takeoff
+Relation	T13	T22	SuperSub	true	takeoff	loss
+Relation	T22	T13	SubSuper	true	loss	takeoff
+Relation	T17	T24	SuperSub	true	ferried	crashed
+Relation	T24	T17	SubSuper	true	crashed	ferried
+Relation	T0	T21	NoRel	true	operated	written off
+Relation	T1	T7	NoRel	true	crashed	operated
+Relation	T11	T16	NoRel	true	operated	operated
+Relation	T13	T10	NoRel	true	takeoff	registration
+Relation	T13	T3	NoRel	true	takeoff	killing
+Relation	T13	T9	NoRel	true	takeoff	casualties
+Relation	T14	T24	NoRel	true	survived	crashed
+Relation	T14	T8	NoRel	true	survived	takeoff
+Relation	T15	T19	NoRel	true	registration	killing
+Relation	T16	T1	NoRel	true	operated	crashed
+Relation	T16	T18	NoRel	true	operated	emergency
+Relation	T17	T8	NoRel	true	ferried	takeoff
+Relation	T19	T6	NoRel	true	killing	killing
+Relation	T2	T4	NoRel	true	flight	registration
+Relation	T2	T8	NoRel	true	flight	takeoff
+Relation	T20	T0	NoRel	true	crashed	operated
+Relation	T20	T19	NoRel	true	crashed	killing
+Relation	T22	T1	NoRel	true	loss	crashed
+Relation	T22	T5	NoRel	true	loss	struck
+Relation	T23	T17	NoRel	true	written off	ferried
+Relation	T23	T22	NoRel	true	written off	loss
+Relation	T4	T15	NoRel	true	registration	registration
+Relation	T4	T18	NoRel	true	registration	emergency
+Relation	T5	T0	NoRel	true	struck	operated
+Relation	T5	T15	NoRel	true	struck	registration
+Relation	T6	T2	NoRel	true	killing	flight
+Relation	T6	T5	NoRel	true	killing	struck
+Relation	T7	T4	NoRel	true	operated	registration
+Relation	T9	T0	NoRel	true	casualties	operated

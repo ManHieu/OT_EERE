@@ -1,0 +1,16 @@
+Text	İran ve Afganistan'da hâlâ yasak kapsamındadır , Mısırda yasaklama girişimleri sürmektedir .	_ Don Kişot _ Cervantes Roman 17. yüzyılın başında İspanya'da yazılan satirik roman , İspanyol engizisyonu tarafından “ Hayırseverliğin değersiz kılınması ” nedeniyle yasaklandı .	Daha sonra bazı bölümleri sansürlenerek basılan kitap İspanya'da ancak 19. yüzyılda eksiksiz olarak yayımlanabildi .	_ Çizgilerle Nazım Hikmet _ Müjdat Gezen , Savaş Dinçel Biyografi 1979'da yazarları mahkemeye verildi , hakim davayı saçma bulunca beraat ettiler .	Kitap 2011'de yeniden basıldı .
+Event	T0	yasak	EVENT	27
+Event	T1	sürmektedir	EVENT	79
+Event	T2	yazılan	EVENT	155
+Event	T3	yasaklandı	EVENT	260
+Event	T4	yayımlanabildi	EVENT	373
+Event	T5	verildi	EVENT	484
+Event	T6	ettiler	EVENT	528
+Event	T7	basıldı	EVENT	560
+Event	T8	sansürlenerek	EVENT	299
+Event	T9	basılan	EVENT	313
+Relation	T0	T1	NoRel	true	yasak	sürmektedir
+Relation	T2	T1	NoRel	true	yazılan	sürmektedir
+Relation	T3	T2	NoRel	true	yasaklandı	yazılan
+Relation	T5	T2	NoRel	true	verildi	yazılan
+Relation	T7	T0	NoRel	true	basıldı	yasak

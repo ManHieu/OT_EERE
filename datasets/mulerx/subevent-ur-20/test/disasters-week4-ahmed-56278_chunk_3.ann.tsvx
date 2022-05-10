@@ -1,0 +1,15 @@
+Text	File : Venezia - Venice -	Venedig -at-night JBU -02 .JPG| اٹلی کے شہر وینس میں " باقاعدہ " سیلاب ۔	File : Rapid Creek flooding 1 .jpg| شمالی علاقہ ، آسٹریلیا کے دارالحکومت ڈارون میں شدید مون سون کی بارش اور تیز جوار کی وجہ سے ایک نالے میں سیلاب ۔	File : Jeddah Flood - King Abdullah Street .jpg| جدہ سیلاب ، سعودی عرب میں کنگ عبداللہ اسٹریٹ کا احاطہ کرتا ہے ۔	File : House surrounded by flood Ilmajoki Finland .jpg| بہار کے موسم میں ، فن لینڈ میں ایک فلیٹ پڑے ہوئے علاقے آسٹروبوتھنیا میں سیلاب کافی عام ہے ۔
+Event	T0	سیلاب	EVENT	91
+Event	T1	flooding	EVENT	118
+Event	T2	بارش	EVENT	198
+Event	T3	سیلاب	EVENT	239
+Event	T4	Flood	EVENT	261
+Event	T5	سیلاب	EVENT	300
+Event	T6	کرتا	EVENT	350
+Event	T7	surrounded	EVENT	373
+Event	T8	flood	EVENT	387
+Event	T9	پڑے	EVENT	456
+Event	T10	سیلاب	EVENT	488
+Relation	T1	T9	NoRel	true	flooding	پڑے
+Relation	T6	T7	NoRel	true	کرتا	surrounded
+Relation	T8	T10	NoRel	true	flood	سیلاب
