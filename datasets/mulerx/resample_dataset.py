@@ -9,7 +9,6 @@ def resampling(dir_name, file_name, new_dir, sample_rate=1.0):
         _line = line.split('\t')
         if _line[0] == 'Relation':
             rel = _line[3]
-            print(rel)
             if rel == 'NoRel':
                 if random.random() < sample_rate:
                     new_lines.append(line)
