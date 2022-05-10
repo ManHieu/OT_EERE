@@ -412,7 +412,7 @@ def mulerx_datapoint(my_dict, doc_info=True):
                 if e2_point not in triggers:
                     triggers.append(e2_point)
                 labels.append((triggers.index(e1_point), triggers.index(e2_point), rel))
-                if e1['mention'] not in ' '.join([tokens[i] for i in e1_poss]) or e2['mention'] not in ' '.join([tokens[i] for i in e2_poss]):
+                if  any([tokens[i] not in e1['mention'] for i in e1_poss]) or any([tokens[i] not in e2['mention'] for i in e2_poss]):
                     print(f"{tokens} - {sents_tok_span}")
                     print(f"{e1_poss} - {' '.join([tokens[i] for i in e1_poss])} - {e1['mention']}")
                     print(f"{e2_poss} - {' '.join([tokens[i] for i in e2_poss])} - {e2['mention']}")

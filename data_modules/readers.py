@@ -265,8 +265,10 @@ def mulerx_tsvx_reader(dir_name, file_name):
             print(f"event: {event_dict}")
             continue
         my_dict["event_dict"][event_id]["token_id"] = id_lookup(my_dict["sentences"][sent_id]["token_span_DOC"], event_dict["start_char"], event_dict["end_char"])
-        if my_dict["event_dict"][event_id]["mention"] not in ' '.join(my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"][0]: my_dict["event_dict"][event_id]["token_id"][-1] + 1]):
-            print(f'{my_dict["event_dict"][event_id]}  - {my_dict["sentences"][sent_id]}')
+        if  any([tok not in my_dict["event_dict"][event_id]["mention"] for tok in my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"][0]: my_dict["event_dict"][event_id]["token_id"][-1] + 1]]):
+            print("Mention does not match!")
+            print(f'{my_dict["event_dict"][event_id]["mention"]} - {" ".join(my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"][0]: my_dict["event_dict"][event_id]["token_id"][-1] + 1])}')
+            # print(f'{my_dict["event_dict"][event_id]}  - {my_dict["sentences"][sent_id]}')
 
     return my_dict
 

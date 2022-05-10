@@ -152,22 +152,22 @@ if __name__ == '__main__':
     
     elif dataset=='mulerx_en':
         datapoint = 'mulerx_datapoint'
-        train_dir = 'datasets/mulerx/subevent-en-10/train/'
-        test_dir = 'datasets/mulerx/subevent-en-10/test/'
-        val_dir = 'datasets/mulerx/subevent-en-10/dev/'
+        train_dir = 'datasets/mulerx/subevent-en-20/train/'
+        test_dir = 'datasets/mulerx/subevent-en-20/test/'
+        val_dir = 'datasets/mulerx/subevent-en-20/dev/'
 
         processor = Preprocessor(dataset, datapoint)
         train = processor.load_dataset(train_dir)
         test = processor.load_dataset(test_dir)
         validate = processor.load_dataset(val_dir)
 
-        processed_path = 'datasets/mulerx/subevent-en-10/train.json'
+        processed_path = 'datasets/mulerx/subevent-en-20/train.json'
         train = processor.process_and_save(train, processed_path)
 
-        processed_path = 'datasets/mulerx/subevent-en-10/val.json'
+        processed_path = 'datasets/mulerx/subevent-en-20/val.json'
         val = processor.process_and_save(validate, processed_path)
 
-        processed_path = 'datasets/mulerx/subevent-en-10/test.json'
+        processed_path = 'datasets/mulerx/subevent-en-20/test.json'
         test = processor.process_and_save(test, processed_path)
 
         print("Statistic in HiEve")
@@ -178,22 +178,22 @@ if __name__ == '__main__':
     
     elif dataset=='mulerx_da':
         datapoint = 'mulerx_datapoint'
-        train_dir = 'datasets/mulerx/subevent-da-10/train/'
-        test_dir = 'datasets/mulerx/subevent-da-10/test/'
-        val_dir = 'datasets/mulerx/subevent-da-10/dev/'
+        train_dir = 'datasets/mulerx/subevent-da-20/train/'
+        test_dir = 'datasets/mulerx/subevent-da-20/test/'
+        val_dir = 'datasets/mulerx/subevent-da-20/dev/'
 
         processor = Preprocessor(dataset, datapoint)
         train = processor.load_dataset(train_dir)
         test = processor.load_dataset(test_dir)
         validate = processor.load_dataset(val_dir)
 
-        processed_path = 'datasets/mulerx/subevent-da-10/train.json'
+        processed_path = 'datasets/mulerx/subevent-da-20/train.json'
         train = processor.process_and_save(train, processed_path)
 
-        processed_path = 'datasets/mulerx/subevent-da-10/val.json'
+        processed_path = 'datasets/mulerx/subevent-da-20/val.json'
         val = processor.process_and_save(validate, processed_path)
 
-        processed_path = 'datasets/mulerx/subevent-da-10/test.json'
+        processed_path = 'datasets/mulerx/subevent-da-20/test.json'
         test = processor.process_and_save(test, processed_path)
 
         print("Statistic in HiEve")
@@ -202,25 +202,24 @@ if __name__ == '__main__':
         print("Number validate points: {}".format(len(val)))
         print("Number test points: {}".format(len(test)))
     
-
     elif dataset=='mulerx_es':
         datapoint = 'mulerx_datapoint'
-        train_dir = 'datasets/mulerx/subevent-es-10/train/'
-        test_dir = 'datasets/mulerx/subevent-es-10/test/'
-        val_dir = 'datasets/mulerx/subevent-es-10/dev/'
+        train_dir = 'datasets/mulerx/subevent-es-20/train/'
+        test_dir = 'datasets/mulerx/subevent-es-20/test/'
+        val_dir = 'datasets/mulerx/subevent-es-20/dev/'
 
         processor = Preprocessor(dataset, datapoint)
         train = processor.load_dataset(train_dir)
         test = processor.load_dataset(test_dir)
         validate = processor.load_dataset(val_dir)
 
-        processed_path = 'datasets/mulerx/subevent-es-10/train.json'
+        processed_path = 'datasets/mulerx/subevent-es-20/train.json'
         train = processor.process_and_save(train, processed_path)
 
-        processed_path = 'datasets/mulerx/subevent-es-10/val.json'
+        processed_path = 'datasets/mulerx/subevent-es-20/val.json'
         val = processor.process_and_save(validate, processed_path)
 
-        processed_path = 'datasets/mulerx/subevent-es-10/test.json'
+        processed_path = 'datasets/mulerx/subevent-es-20/test.json'
         test = processor.process_and_save(test, processed_path)
 
         print("Statistic in HiEve")
