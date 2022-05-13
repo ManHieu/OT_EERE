@@ -40,10 +40,10 @@ def run(defaults: Dict, random_state):
     elif job == 'ESL':
         defaults['loss_weights'] = [5.0/6, 1.0/6]
     elif job == 'subevent_mulerx':
-        defaults['loss_weights'] = [4062/146.0, 4062/146.0, 4062/3770.0]
+        defaults['loss_weights'] = [10.0/21, 10.0/21, 1.0/21]
         defaults['tokenizer'] = '/vinai/hieumdt/pretrained_models/tokenizers/mBERT-base'
         defaults['encoder_name_or_path'] = '/vinai/hieumdt/pretrained_models/models/mBERT-base'
-        defaults['data_dir'] = 'datasets/mulerx/subevent-en-10'
+        defaults['data_dir'] = 'datasets/mulerx/subevent-ur-20'
     
     # parse remaining arguments and divide them into three categories
     second_parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
@@ -183,12 +183,12 @@ def run(defaults: Dict, random_state):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [1e-5, 5e-5, 1e-4, 1e-3]),
+        'lr': trial.suggest_categorical('lr', [5e-6, 1e-5, 5e-5]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
         'encoder_lr': trial.suggest_categorical('encoder_lr', [5e-6, 1e-5, 5e-5]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [50]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [10, 20]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
@@ -213,7 +213,7 @@ def objective(trial: optuna.Trial):
 
     record_file_name = 'result.txt'
     if args.tuning:
-        record_file_name = 'tuning_result.txt'
+        record_file_name = f'tuning_result_{args.job}.txt'
 
     with open(record_file_name, 'a', encoding='utf-8') as f:
         f.write(f"{'--'*10} \n")
@@ -239,7 +239,7 @@ if __name__ == '__main__':
     
     if args.tuning:
         print("tuning ......")
-        sampler = optuna.samplers.TPESampler(seed=1741)
+        # sampler = optuna.samplers.TPESampler(seed=1741)
         study = optuna.create_study(direction='maximize')
         study.optimize(objective, n_trials=25)
         trial = study.best_trial

@@ -401,6 +401,8 @@ def mulerx_datapoint(my_dict, doc_info=True):
         labels = []
         for (eid1, eid2), rel in my_dict['relation_dict'].items():
             e1, e2 = my_dict['event_dict'][eid1], my_dict['event_dict'][eid2]
+            if e1.get('token_id') == None or e2.get('token_id') == None:
+                continue
             _s1, _s2 = e1['sent_id'], e2['sent_id']
             if (_s1 == s1 and _s2 == s2) or (_s1 == s2 and _s2 == s1):
                 e1_poss = get_new_poss(e1['token_id'], sents_tok_span[_s1][0], sents_tok_span)
