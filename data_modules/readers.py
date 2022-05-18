@@ -7,6 +7,14 @@ from utils.tools import *
 # from nltk import sent_tokenize
 from bs4 import BeautifulSoup as Soup
 import csv
+from trankit import Pipeline
+
+
+p = Pipeline('english', cache_dir='/home/ubuntu/cache/trankit')
+p.add('danish')
+p.add('spanish')
+p.add('turkish')
+p.add('urdu')
 
 
 # =========================
@@ -92,10 +100,20 @@ def tsvx_reader(dir_name, file_name):
     return my_dict
 
 
-# =========================
-#       mulerx Reader
-# =========================
+# ==========================
+# mulerx Reader with trankit
+# ==========================
 def mulerx_tsvx_reader_v2(dir_name, file_name):
+    if '-da-' in dir_name:
+        p.set_active('danish')
+    elif '-en-' in dir_name:
+        p.set_active('english')
+    elif '-es-' in dir_name:
+        p.set_active('spanish')
+    elif '-tr-' in dir_name:
+        p.set_active('turkish')
+    elif '-ur-' in dir_name:
+        p.set_active('urdu')
     my_dict = {}
     my_dict["doc_id"] = file_name.replace(".tsvx", "") # e.g., article-10901.tsvx
     my_dict["event_dict"] = {}
@@ -178,6 +196,8 @@ def mulerx_tsvx_reader_v2(dir_name, file_name):
             continue
         my_dict["event_dict"][event_id]["token_id"] = id_lookup(my_dict["sentences"][sent_id]["token_span_DOC"], event_dict["start_char"], event_dict["end_char"])
         if not all(tok in  my_dict["event_dict"][event_id]["mention"] for tok in my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"][0]: my_dict["event_dict"][event_id]["token_id"][-1] + 1]):
+            print(f'{my_dict["event_dict"][event_id]["mention"]} - \
+            {my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"][0]: my_dict["event_dict"][event_id]["token_id"][-1] + 1]}')
             print(f'{my_dict["event_dict"][event_id]}  - {my_dict["sentences"][sent_id]}')
 
     return my_dict

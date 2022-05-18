@@ -45,6 +45,7 @@ def tokenized_to_origin_span(text: str, token_list: List[str]):
             token_span.append([start, end])
             assert text[start: end] == token, f"{token}-{text}"
         else:
+            # print(f"We can find the possiton of {token} \ntext: {text}")
             token_span.append([-100, -100])
     return token_span
 
@@ -85,14 +86,20 @@ def id_lookup(span_SENT, start_char, end_char):
     # this function is applicable to RoBERTa subword or token from ltf/spaCy
     # id: start from 0
     token_id = []
+    nearest = 0
+    dist = 100000
     char_range = set(range(start_char, end_char))
     for i, token_span in enumerate(span_SENT):
         # if token_span[0] <= start_char or token_span[1] >= end_char:
         #     return token_id
         if len(set(range(token_span[0], token_span[1])).intersection(char_range)) > 0:
             token_id.append(i)
+        if abs(token_span[0]  - start_char) < dist:
+            dist = abs(token_span[0]  - start_char)
+            nearest = i
     if len(token_id) == 0: 
-        raise ValueError("Nothing is found. \n span sentence: {} \n start_char: {} \n end_char: {}".format(span_SENT, start_char, end_char))
+        token_id.append(nearest)
+        # raise ValueError("Nothing is found. \n span sentence: {} \n start_char: {} \n end_char: {}".format(span_SENT, start_char, end_char))
 
     return token_id
 
@@ -122,24 +129,24 @@ def get_dep_path(tree, nodes):
 
 def mapping_subtok_id(subtoks: List[str], tokens: List[str], text: str):
     token_spans = tokenized_to_origin_span(text, tokens)
-    subtok_spans = tokenized_to_origin_span(text.lower(), [t.lower() for t in subtoks])
+    subtok_spans = tokenized_to_origin_span(text, [t for t, index in subtoks])
+    subtok_spans = zip(subtok_spans, [index for t, index in subtoks])
 
     mapping_dict = defaultdict(list)
-    for i, subtok_span in enumerate(subtok_spans, start=1):
+    for i, (subtok_span, index) in enumerate(subtok_spans):
         tok_id = token_id_lookup(token_spans, start_char=subtok_span[0], end_char=subtok_span[1])
         if tok_id != None:
-            if subtoks[i-1].lower() in tokens[tok_id].lower() or tokens[tok_id].lower() in subtoks[i-1].lower():
-                mapping_dict[tok_id].append(i)
+            if subtoks[i][0] in tokens[tok_id] or tokens[tok_id] in subtoks[i][0]:
+                mapping_dict[tok_id].append(index)
             else:
-                mapping_dict[tok_id].append(i)
-                # print(f"{subtoks[i-1]} - {tokens[tok_id]}") # \n{subtoks} - {subtok_spans}\n{tokens} - {token_spans}
+                mapping_dict[tok_id].append(index)
+                # print(f"Found id but not exactly match: {subtoks[i]} - {tokens[tok_id]}") # \n{subtoks} - {subtok_spans}\n{tokens} - {token_spans}
             
-    
-    # mapping <unk> token:
-    for key in range(len(tokens)):
-        if mapping_dict.get(key) == None:
-            # print(f"haven't_mapping_tok: {tokens[key]}")
-            mapping_dict[key] = [random.randint(0, len(tokens)-1)]
+    # # mapping <unk> token:
+    # for key in range(len(tokens)):
+    #     if mapping_dict.get(key) == None:
+    #         print(f"haven't_mapping_tok: {tokens[key]}")
+    #         mapping_dict[key] = [0]
     
     # print(f"tokens: {tokens} \nsub_tokens: {subtoks} \nmapping_dict: {mapping_dict}")
     

@@ -88,9 +88,9 @@ class OTEERE(nn.Module):
         self.fc = nn.Linear(gcn_input_size, hidden_size)
 
         if self.residual_type == 'concat':
-            classifier_in_size = hidden_size * 3
+            classifier_in_size = hidden_size * 9
         elif self.residual_type == 'addtive':
-            classifier_in_size = hidden_size * 3                  
+            classifier_in_size = hidden_size * 6                   
         fc1 = nn.Linear(classifier_in_size, int(classifier_in_size/2))
         fc2 = nn.Linear(int(classifier_in_size/2), int(classifier_in_size/4))
         fc3 = nn.Linear(int(classifier_in_size/4), num_labels)
@@ -192,9 +192,12 @@ class OTEERE(nn.Module):
             ns = int(torch.sum(masks[i]))
             map[ns-1] = list(range(ns-1)) # ROOT mapping
             for tok_id in range(ns):
-                token_mapping = map[tok_id]
-                tok_presentation = _context_emb[i, token_mapping[0]: token_mapping[-1]+1, :]
-                tok_presentation = torch.max(tok_presentation, dim=0)[0] # (encoder_hidden_size)
+                token_mapping = map.get(tok_id)
+                if token_mapping != None:
+                    tok_presentation = _context_emb[i, token_mapping, :]
+                    tok_presentation = torch.max(tok_presentation, dim=0)[0] # (encoder_hidden_size)
+                else:
+                    tok_presentation = torch.zeros_like(_context_emb[0, 0])
                 # print(f"tok_presentation: {tok_presentation.size()}")
                 if self.use_wemb:
                     if tok_id != ns - 1:
@@ -216,148 +219,149 @@ class OTEERE(nn.Module):
         gcn_input = self.encode_with_rnn(emb, ls) # (bs, max_ns, gcn_input_size))
 
         # OT
-        # on_hosts = [] # on host token presentation
-        # off_hosts = [] # off host token presentation
-        # on_host_maginals = [] # on host maginal distribution
-        # off_host_maginals = [] # off host maginal distribution
-        # n_on_host = 0
-        # n_off_host = 0
-        # batch_on_host_ids = []
-        # batch_off_host_ids = []
-        # for i in range(bs):
-        #     host_sentence = host_sentences_masks[i]
-        #     on_host_ids = host_sentence.nonzero().squeeze(1)
-        #     batch_on_host_ids.append(on_host_ids)
-        #     if n_on_host < on_host_ids.size(0):
-        #         n_on_host = on_host_ids.size(0)
-        #     on_host_maginal = torch.tensor([1.0/on_host_ids.size(0)] * on_host_ids.size(0), dtype=torch.float).cuda()
-        #     off_host_masks = (1 - host_sentence) * masks[i]
-        #     off_host_ids = off_host_masks.nonzero().squeeze(1)
-        #     batch_off_host_ids.append(off_host_ids)
-        #     if n_off_host < off_host_ids.size(0):
-        #         n_off_host = off_host_ids.size(0)
-        #     off_host_maginal = torch.tensor([1.0/off_host_ids.size(0)] * off_host_ids.size(0), dtype=torch.float).cuda() # (ns-n_on_dp)
-        #     on_host_maginal = torch.cat([torch.Tensor([0.2]).cuda(), 0.8 * on_host_maginal], dim=0) # (n_on_dp + 1)
+        on_hosts = [] # on host token presentation
+        off_hosts = [] # off host token presentation
+        on_host_maginals = [] # on host maginal distribution
+        off_host_maginals = [] # off host maginal distribution
+        n_on_host = 0
+        n_off_host = 0
+        batch_on_host_ids = []
+        batch_off_host_ids = []
+        for i in range(bs):
+            host_sentence = host_sentences_masks[i]
+            on_host_ids = host_sentence.nonzero().squeeze(1)
+            batch_on_host_ids.append(on_host_ids)
+            if n_on_host < on_host_ids.size(0):
+                n_on_host = on_host_ids.size(0)
+            on_host_maginal = torch.tensor([1.0/on_host_ids.size(0)] * on_host_ids.size(0), dtype=torch.float).cuda()
+            off_host_masks = (1 - host_sentence) * masks[i]
+            off_host_ids = off_host_masks.nonzero().squeeze(1)
+            batch_off_host_ids.append(off_host_ids)
+            if n_off_host < off_host_ids.size(0):
+                n_off_host = off_host_ids.size(0)
+            off_host_maginal = torch.tensor([1.0/off_host_ids.size(0)] * off_host_ids.size(0), dtype=torch.float).cuda() # (ns-n_on_dp)
+            on_host_maginal = torch.cat([torch.Tensor([0.2]).cuda(), 0.8 * on_host_maginal], dim=0) # (n_on_dp + 1)
             
-        #     on_host = gcn_input[i] * host_sentence.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2)))
-        #     on_host = on_host[on_host_ids]
-        #     off_host = gcn_input[i] * off_host_masks.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2))) # (ns-n_on_dp, gcn_input_size)
-        #     off_host = off_host[off_host_ids]
-        #     null_presentation = torch.mean(off_host, dim=0).unsqueeze(0)
-        #     on_host = torch.cat([null_presentation, on_host], dim=0) # (n_on_dp+1, gcn_input_size)
+            on_host = gcn_input[i] * host_sentence.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2)))
+            on_host = on_host[on_host_ids]
+            off_host = gcn_input[i] * off_host_masks.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2))) # (ns-n_on_dp, gcn_input_size)
+            off_host = off_host[off_host_ids]
+            null_presentation = torch.mean(off_host, dim=0).unsqueeze(0)
+            on_host = torch.cat([null_presentation, on_host], dim=0) # (n_on_dp+1, gcn_input_size)
         
-        #     on_hosts.append(on_host)
-        #     off_hosts.append(off_host)
-        #     on_host_maginals.append(on_host_maginal)
-        #     off_host_maginals.append(off_host_maginal)
+            on_hosts.append(on_host)
+            off_hosts.append(off_host)
+            on_host_maginals.append(on_host_maginal)
+            off_host_maginals.append(off_host_maginal)
         
-        # on_hosts = pad_sequence(on_hosts, batch_first=True)
-        # off_hosts = pad_sequence(off_hosts, batch_first=True)
-        # on_host_maginals = pad_sequence(on_host_maginals, batch_first=True)
-        # off_host_maginals = pad_sequence(off_host_maginals, batch_first=True)
+        on_hosts = pad_sequence(on_hosts, batch_first=True)
+        off_hosts = pad_sequence(off_hosts, batch_first=True)
+        on_host_maginals = pad_sequence(on_host_maginals, batch_first=True)
+        off_host_maginals = pad_sequence(off_host_maginals, batch_first=True)
 
-        # cost, pi, C = self.sinkhorn(off_hosts, on_hosts, off_host_maginals, on_host_maginals, cuda=True)
-        # pi = pi.cuda()
-        # pi = F.gumbel_softmax(pi * pi.size(1) * pi.size(2), tau=1, dim=2, hard=True)
-        # _OT_adj = pi[:, :, 1:].clone()
-        # OT_adj = torch.zeros(adjs.size()).cuda()
-        # for i  in range(bs):
-        #     on_host_ids = batch_on_host_ids[i]
-        #     off_host_ids = batch_off_host_ids[i]
-        #     for j in range(on_host_ids.size(0)):
-        #         OT_adj[i, off_host_ids, on_host_ids[j]] = _OT_adj[i, :off_host_ids.size(0), j]
+        cost, pi, C = self.sinkhorn(off_hosts, on_hosts, off_host_maginals, on_host_maginals, cuda=True)
+        pi = pi.cuda()
+        pi = F.gumbel_softmax(pi * pi.size(1) * pi.size(2), tau=1, dim=2, hard=True)
+        _OT_adj = pi[:, :, 1:].clone()
+        OT_adj = torch.zeros(adjs.size()).cuda()
+        for i  in range(bs):
+            on_host_ids = batch_on_host_ids[i]
+            off_host_ids = batch_off_host_ids[i]
+            for j in range(on_host_ids.size(0)):
+                OT_adj[i, off_host_ids, on_host_ids[j]] = _OT_adj[i, :off_host_ids.size(0), j]
 
-        # OT_adj = OT_adj + OT_adj.transpose(1, 2)
-        # OT_adj = torch.clamp(OT_adj, min=0, max=1) # make sure all edge in (0,1)
+        OT_adj = OT_adj + OT_adj.transpose(1, 2)
+        OT_adj = torch.clamp(OT_adj, min=0, max=1) # make sure all edge in (0,1)
 
-        # max_ns = adjs.size(1)
-        # on_host_masks = torch.stack([host_sentences_masks] * max_ns, dim=2)
+        max_ns = adjs.size(1)
+        on_host_masks = torch.stack([host_sentences_masks] * max_ns, dim=2)
         
-        # host_adjs = adjs * on_host_masks * on_host_masks.transpose(1,2)
-        # pruned_adjs = host_adjs + OT_adj
-        # pruned_adjs[pruned_adjs > 1] = 1
+        host_adjs = adjs * on_host_masks * on_host_masks.transpose(1,2)
+        pruned_adjs = host_adjs + OT_adj
+        pruned_adjs[pruned_adjs > 1] = 1
 
-        # # GCN
-        # gcn_input = self.drop_out(gcn_input)
-        # gcn_outp = self.gcn(gcn_input, pruned_adjs, ls) # (bs x ns x gcn_hidden_size)
-        # full_doc_gcn_oupt = self.full_doc_gcn(gcn_input, adjs, ls)
+        # GCN
+        gcn_input = self.drop_out(gcn_input)
+        gcn_outp = self.gcn(gcn_input, pruned_adjs, ls) # (bs x ns x gcn_hidden_size)
+        full_doc_gcn_oupt = self.full_doc_gcn(gcn_input, adjs, ls)
 
         # Regularizarion and classification
         _labels = []
         
-        # full_doc_presentations = []
-        # full_doc_heads = []
-        # full_doc_tails = []
+        full_doc_presentations = []
+        full_doc_heads = []
+        full_doc_tails = []
         
-        # heads = []
-        # tails = []
-        # doc_presentations = []
+        heads = []
+        tails = []
+        doc_presentations = []
 
         input_doc_presentations = []
         input_heads = []
         input_tails = []
 
         _gcn_input = self.fc(gcn_input)
-        # full_doc_attn = self.doc_attn(full_doc_gcn_oupt)
+        full_doc_attn = self.doc_attn(full_doc_gcn_oupt)
         input_doc_attn = self.doc_attn(_gcn_input)
-        # doc_attn = self.doc_attn(gcn_outp)
+        doc_attn = self.doc_attn(gcn_outp)
 
         for i in range(bs):
             pairs = trigger_poss[i]
             label = labels[i]
             for pair, lb in zip(pairs, label):
                 _labels.append(lb)
-                # full_doc_presentation = torch.sum(full_doc_gcn_oupt[i, :, :] * full_doc_attn[i], dim=0)
-                # full_doc_presentations.append(full_doc_presentation)
+                full_doc_presentation = torch.sum(full_doc_gcn_oupt[i, :, :] * full_doc_attn[i], dim=0)
+                full_doc_presentations.append(full_doc_presentation)
 
                 input_doc_presentation = torch.sum(_gcn_input[i, :, :] * input_doc_attn[i], dim=0)
                 input_doc_presentations.append(input_doc_presentation)
                 
-                # doc_presentation = torch.sum(gcn_outp[i, :, :] * doc_attn[i], dim=0)
-                # doc_presentations.append(doc_presentation)
+                doc_presentation = torch.sum(gcn_outp[i, :, :] * doc_attn[i], dim=0)
+                doc_presentations.append(doc_presentation)
 
                 head_ids, tail_ids = pair
                 
-                # full_doc_head = torch.max(full_doc_gcn_oupt[i, head_ids[0]: head_ids[-1] + 1, :], dim=0)[0]
-                # full_doc_tail = torch.max(full_doc_gcn_oupt[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
-                # full_doc_heads.append(full_doc_head)
-                # full_doc_tails.append(full_doc_tail)
+                full_doc_head = torch.max(full_doc_gcn_oupt[i, head_ids[0]: head_ids[-1] + 1, :], dim=0)[0]
+                full_doc_tail = torch.max(full_doc_gcn_oupt[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
+                full_doc_heads.append(full_doc_head)
+                full_doc_tails.append(full_doc_tail)
 
                 input_head = torch.max(_gcn_input[i, head_ids[0]: head_ids[-1] + 1, :], dim=0)[0]
                 input_tail = torch.max(_gcn_input[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
                 input_heads.append(input_head)
                 input_tails.append(input_tail)
 
-                # head = torch.max(gcn_outp[i, head_ids[0]: head_ids[-1] + 1, :], dim=0)[0]
-                # tail = torch.max(gcn_outp[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
-                # heads.append(head)
-                # tails.append(tail)
+                head = torch.max(gcn_outp[i, head_ids[0]: head_ids[-1] + 1, :], dim=0)[0]
+                tail = torch.max(gcn_outp[i, tail_ids[0]: tail_ids[-1] + 1, :], dim=0)[0]
+                heads.append(head)
+                tails.append(tail)
         
         _labels = torch.tensor(_labels).cuda()
-        # heads = torch.stack(heads, dim= 0)
-        # tails = torch.stack(tails, dim=0)
-        # doc_presentations = torch.stack(doc_presentations, dim=0)
+        heads = torch.stack(heads, dim= 0)
+        tails = torch.stack(tails, dim=0)
+        doc_presentations = torch.stack(doc_presentations, dim=0)
 
         input_heads = torch.stack(input_heads, dim= 0)
         input_tails = torch.stack(input_tails, dim=0)
         input_doc_presentations = torch.stack(input_doc_presentations, dim=0)
 
-        # full_doc_heads = torch.stack(full_doc_heads, dim=0)
-        # full_doc_tails = torch.stack(full_doc_tails, dim=0)
-        # full_doc_presentations = torch.stack(full_doc_presentations, dim=0)
+        full_doc_heads = torch.stack(full_doc_heads, dim=0)
+        full_doc_tails = torch.stack(full_doc_tails, dim=0)
+        full_doc_presentations = torch.stack(full_doc_presentations, dim=0)
         
         # Classification
         if self.residual_type == 'concat':
-            presentations = torch.cat([input_heads,
-                                    input_tails,
-                                    input_doc_presentations], dim=1)
+            presentations = torch.cat([heads, full_doc_heads, input_heads,
+                                    tails, full_doc_tails, input_tails,
+                                    doc_presentations, full_doc_presentations, input_doc_presentations], dim=1)
         elif self.residual_type == 'addtive':
-            presentations = torch.cat([input_heads, input_tails, input_doc_presentations], dim=1)
+            presentations = torch.cat([heads + input_heads, full_doc_heads + input_heads,
+                                    tails + input_tails, full_doc_tails + input_tails,
+                                    doc_presentations + input_doc_presentations, full_doc_presentations + input_doc_presentations], dim=1)
         logits = self.classifier(presentations)
 
         # Compute loss
-        regu_loss = 0 # self.loss_regu(doc_presentations, full_doc_presentations)
-        cost = 0
+        regu_loss = self.loss_regu(doc_presentations, full_doc_presentations)
         pred_loss = self.loss_pred(logits, _labels)
         loss = (1- self.regular_loss_weight - self.OT_loss_weight) * pred_loss\
             + self.regular_loss_weight * regu_loss\
