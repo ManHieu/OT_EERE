@@ -155,7 +155,7 @@ class BaseDataset(Dataset, ABC):
                         try:
                             e1_subtok_ids.extend(mapping[t_id])
                         except:
-                            print(f"Do not have corresponding subtokens of {t_id}")
+                            # print(f"Do not have corresponding subtokens of {t_id}")
                             continue
                     if len(e1_subtok_ids) != 0:
                         if not all(self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() in relation.head.mention \
@@ -167,7 +167,7 @@ class BaseDataset(Dataset, ABC):
                         try:
                             e2_subtok_ids.extend(mapping[t_id])
                         except:
-                            print(f"Do not have corresponding subtokens of {t_id}")
+                            # print(f"Do not have corresponding subtokens of {t_id}")
                             continue
                     if len(e2_subtok_ids) != 0:
                         if not all(self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() in relation.tail.mention \

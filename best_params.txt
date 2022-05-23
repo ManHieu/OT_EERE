@@ -56,3 +56,13 @@ Hyperparams:
 F1: 0.4931921331316188 - 0.0 
 P: 0.5344262295081967 - 0.0 
 R: 0.45786516853932585 - 0.0 
+---------------------
+
+Dataset: subevent_mulerx 
+Random_state: 1741
+Hyperparams: 
+ {'lr': 7e-05, 'OT_max_iter': 50, 'encoder_lr': 7e-06, 'batch_size': 8, 'warmup_ratio': 0.1, 'num_epoches': 20, 'regular_loss_weight': 0.1, 'OT_loss_weight': 0.1, 'distance_emb_size': 0, 'seed': 1741, 'gcn_num_layers': 2, 'hidden_size': 768, 'rnn_num_layers': 1, 'fn_actv': 'leaky_relu', 'residual_type': 'addtive', 'data_dir': 'datasets/mulerx/subevent-tr-20', 'n_fold': '1', 'num_labels': '3', 'max_seq_length': '512', 'loss_weights': [4.0, 4.0, 1.0], 'tokenizer': '/vinai/hieumdt/pretrained_models/tokenizers/mBERT-base', 'encoder_name_or_path': '/vinai/hieumdt/pretrained_models/models/mBERT-base'}
+F1: 0.5011600928074247 - 0.0 
+P: 0.4576271186440678 - 0.0 
+R: 0.5538461538461539 - 0.0 
+-------------------- 
