@@ -186,7 +186,7 @@ def objective(trial: optuna.Trial):
     defaults = {
         'lr': trial.suggest_categorical('lr', [5e-5, 7e-5]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [5e-7, 1e-6, 3e-6, 5e-6, 7e-6, 1e-5]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 5e-7, 8e-7, 1e-6, 3e-6, 5e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [30, 50]), # 

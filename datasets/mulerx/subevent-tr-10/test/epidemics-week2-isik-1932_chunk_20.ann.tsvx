@@ -1,9 +1,0 @@
-Text	HIV / AIDS'in tedavisinde olumlu gelişmeler vardır .	HIV / AIDS , günümüz itibarıyla antiretroviral ilaçlar ile kontrol altında tutulabilmektedir .	Bu ilaçlar , günde en az bir adet ya da farklı ilaç kombinasyonları ile kullanılabilmektedir .	Ancak HIV / AIDS , doktor kontrolünde ve kesintisiz antiviral tedavi ile kontrol edilebilmektedir .	Bu şekilde HIV pozitif kişilerin kaliteli ve uzun bir yaşam sürdürebilmeleri sağlanmaktadır .
-Event	T1	tedavi	EVENT	305
-Event	T4	tutulabilmektedir	EVENT	128
-Event	T5	kullanılabilmektedir	EVENT	220
-Event	T6	sağlanmaktadır	EVENT	420
-Relation	T1	T4	SuperSub	true	tedavi	tutulabilmektedir
-Relation	T4	T1	SubSuper	true	tutulabilmektedir	tedavi
-Relation	T1	T5	SuperSub	true	tedavi	kullanılabilmektedir
-Relation	T5	T1	SubSuper	true	kullanılabilmektedir	tedavi

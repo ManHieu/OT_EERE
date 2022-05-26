@@ -1,9 +1,0 @@
-Text	جہاز پر سوار آدھے سے زائد مسافر چین سے تھے -	5 فروری کو صدر چین ژی جن پنگ نے ایک بیان جاری کیا جس میں حادثے کی وجوہات کو جلد سے جلد سامنے لائے جانے پر زور دیا اور زخمیوں کے علاج و معالجہ کے لیے ہر ممکن مدد کا اعلان کیا -	اسی دن چینی پریمیر لی کیچیانگ نے درخواست کی کہ اصل حقائق جلد سے جلد سامنے لائے جائیں -	-___復興航空 說明 2015 -02 -06 1930_版 -	Article showing van and another video of the crash -___[// www .youtube .com / watch?v=Q6oxXyvKBtc YouTube video including rescue and recovery efforts ]
-Event	T0	حادثے	EVENT	102
-Event	T1	درخواست	EVENT	254
-Event	T4	crash	EVENT	387
-Event	T6	efforts	EVENT	485
-Event	T7	بیان	EVENT	81
-Relation	T1	T4	NoRel	true	درخواست	crash
-Relation	T6	T1	NoRel	true	efforts	درخواست
-Relation	T7	T1	NoRel	true	بیان	درخواست

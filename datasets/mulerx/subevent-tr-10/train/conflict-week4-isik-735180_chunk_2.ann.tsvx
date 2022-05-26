@@ -1,9 +1,0 @@
-Text	Dolayısıyla Pakistan kuvvetleri daha fazla direnemedi ve 16 Kasım 1971'de Doğu Pakistan'ı kendi haline bıraktı .	Bu tarihten sonra iki Pakistan arasındaki savaşa müdahale etmiş olan Hindistan kuvvetleri Batı Pakistan'dan ayrılan Bangladeş'i Mart 1973'e kadar işgal altında tuttular .	Hindistan işgal kuvvetlerinin çekilmesinden sonra yeni kurulan Bangladeş'in cumhurbaşkanlığına Mucibur Rahman getirildi .		
-Event	T0	bıraktı	EVENT	103
-Event	T1	tuttular	EVENT	273
-Event	T3	çekilmesinden	EVENT	314
-Event	T4	kurulan	EVENT	339
-Event	T5	getirildi	EVENT	394
-Event	T6	ayrılan	EVENT	221
-Relation	T5	T0	NoRel	true	getirildi	bıraktı
-Relation	T6	T3	NoRel	true	ayrılan	çekilmesinden

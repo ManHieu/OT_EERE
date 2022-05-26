@@ -1,9 +1,0 @@
-Text	Los eventos del accidente son examinados en el sexto episodio de la primera temporada de _ Segundos catastróficos _ , titulado « La tragedia del Sunset Limited » .	- " Railroad-Marine Accident Report 94-1 " ( RAR-94-1 ) , U.S. National Transportation Safety Board , 1994-09-19 .			
-Event	T0	eventos	EVENT	4
-Event	T1	accidente	EVENT	16
-Event	T2	examinados	EVENT	30
-Event	T3	catastróficos	EVENT	100
-Event	T4	titulado	EVENT	118
-Event	T5	tragedia	EVENT	132
-Relation	T1	T2	SuperSub	true	accidente	examinados
-Relation	T2	T1	SubSuper	true	examinados	accidente
