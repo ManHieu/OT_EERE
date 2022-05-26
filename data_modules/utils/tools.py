@@ -2,12 +2,7 @@ from collections import defaultdict
 import datetime
 import re
 from typing import Dict, List, Tuple
-import numpy as np
-np.random.seed(1741)
 import torch
-torch.manual_seed(1741)
-import random
-random.seed(1741)
 import spacy
 import networkx as nx
 from sentence_transformers import SentenceTransformer, util
