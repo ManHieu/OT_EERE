@@ -37,7 +37,7 @@ class Entity:
     end: int = None                # end index in the sentence
     mention: str = None           # mention of entity
     type: Optional[EntityType] = None   # entity type
-    id: Optional[List[int]] = None    # id in the current training/test example
+    id: Optional[List[int]] = None    
 
     def to_tuple(self):
         return self.type.natural, self.start, self.end

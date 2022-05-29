@@ -3,7 +3,7 @@ import logging
 import math
 import os
 import pickle
-from typing import List
+from typing import List, Tuple
 import numpy as np
 import torch
 from torch.utils.data.dataset import Dataset
@@ -28,6 +28,7 @@ class BaseDataset(Dataset, ABC):
         max_input_length: int,
         seed: int = None,
         split = 'train',
+        range_dist: Tuple[int, int] = None
         ) -> None:
         super().__init__()
 
@@ -40,7 +41,7 @@ class BaseDataset(Dataset, ABC):
         self.data_path = data_dir
 
         self.split = split
-        self.examples: List[InputExample] = self.load_data(split=split)
+        self.examples: List[InputExample] = self.load_data(split=split, range_dist=range_dist)
         for example in self.examples:
             example.dataset = self
         
@@ -62,7 +63,7 @@ class BaseDataset(Dataset, ABC):
         pass
 
     @abstractmethod
-    def load_data(self, split: str) -> List[InputExample]:
+    def load_data(self, split: str, range_dist=None) -> List[InputExample]:
         """
         Load data for a single split (train, dev, or test).
         """

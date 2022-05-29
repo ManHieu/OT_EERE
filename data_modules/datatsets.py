@@ -1,7 +1,7 @@
 import json
 import os
 import random
-from typing import Dict, List
+from typing import Dict, List, Tuple
 from data_modules.base_dataset import BaseDataset
 from data_modules.input_example import Entity, InputExample, Relation, RelationType
 
@@ -20,7 +20,8 @@ def load_dataset(name:str,
                 data_dir: str,
                 max_input_length: int,
                 seed: int = None,
-                split = 'train',):
+                split = 'train',
+                range_dist = None):
     '''
     Load a registered dataset
     '''
@@ -31,6 +32,7 @@ def load_dataset(name:str,
         max_input_length=max_input_length,
         seed=seed,
         split=split,
+        range_dist=range_dist
     )
 
 
@@ -43,7 +45,7 @@ class EEREDataset(BaseDataset):
         self.relation_types = {natural: RelationType(short=short, natural=natural)
                             for short, natural in self.natural_relation_types.items()}
     
-    def load_data(self, split: str) -> List[InputExample]:
+    def load_data(self, split: str, range_dist: Tuple[int, int]=None) -> List[InputExample]:
         examples = []
         self.load_schema()
         file_path = os.path.join(self.data_path, f'{split}.json')
@@ -58,6 +60,12 @@ class EEREDataset(BaseDataset):
                 
                 relations = []
                 for relation in datapoint['labels']:
+
+                    dist = abs(triggers[relation[0]].id[0] - triggers[relation[1]].id[0])
+                    if range_dist != None:
+                        if dist > range_dist[1] or dist < range_dist[0]:
+                            continue
+
                     relation_type = self.relation_types[relation[2]]
                     if relation_type.natural == 'NoRel':
                         if random.uniform(0, 1) < self.sample:

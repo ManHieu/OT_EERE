@@ -125,7 +125,7 @@ def run(defaults: Dict, random_state):
         test_data_loader = DataLoader(
             dataset=test_data,
             batch_size=data_args.batch_size,
-            shuffle=True,
+            shuffle=False,
             collate_fn=test_data.my_collate,
         )
         test_loaders[lang] = test_data_loader
