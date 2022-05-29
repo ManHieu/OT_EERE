@@ -136,7 +136,7 @@ def run(defaults: Dict, random_state):
         training_args.output_dir,
         f'{args.job}'
         f'-{model_args.encoder_name_or_path.split("/")[-1]}'
-        f'-{defaults["data_dir"].split(r"/")[-1]}'
+        f'-cross'
         f'-random_state{random_state}'
         f'-{model_args.residual_type}'
         f'-lr{training_args.lr}'
@@ -175,7 +175,7 @@ def run(defaults: Dict, random_state):
         gpus=[args.gpu], 
         accumulate_grad_batches=training_args.gradient_accumulation_steps,
         num_sanity_val_steps=0, 
-        val_check_interval=1.0, # use float to check every n epochs 
+        val_check_interval=0.1, # use float to check every n epochs 
         callbacks = [lr_logger, checkpoint_callback],
     )
 
@@ -231,9 +231,9 @@ def objective(trial: optuna.Trial):
         'lr': trial.suggest_categorical('lr', [5e-5, 7e-5]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
         'encoder_lr': trial.suggest_categorical('encoder_lr', [5e-7, 1e-6, 3e-6, 5e-6, 7e-6, 1e-5]),
-        'batch_size': trial.suggest_categorical('batch_size', [8]),
+        'batch_size': trial.suggest_categorical('batch_size', [2]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [30, 50]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [1]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),

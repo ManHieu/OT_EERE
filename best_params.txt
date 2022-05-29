@@ -97,3 +97,51 @@ F1: 0.40460526315789475 - 0.0
 P: 0.3435754189944134 - 0.0 
 R: 0.492 - 0.0 
 -------------------- 
+
+Dataset: subevent_mulerx 
+XLM-R - tr
+Random_state: 1741
+Hyperparams: 
+ {'lr': 7e-05, 'OT_max_iter': 50, 'encoder_lr': 5e-06, 'batch_size': 8, 'warmup_ratio': 0.1, 'num_epoches': 30, 'regular_loss_weight': 0.1, 'OT_loss_weight': 0.1, 'distance_emb_size': 0, 'seed': 1741, 'gcn_num_layers': 3, 'hidden_size': 768, 'rnn_num_layers': 1, 'fn_actv': 'leaky_relu', 'residual_type': 'addtive', 'data_dir': 'datasets/mulerx/subevent-tr-20', 'n_fold': '1', 'num_labels': '3', 'max_seq_length': '512', 'loss_weights': [4.0, 4.0, 1.0], 'tokenizer': '/vinai/hieumdt/pretrained_models/tokenizers/XLM-R-base', 'encoder_name_or_path': '/vinai/hieumdt/pretrained_models/models/XLM-R-base'}
+F1: 0.5213793103448277 - 0.0 
+P: 0.564179104477612 - 0.0 
+R: 0.4846153846153846 - 0.0 
+--------------------
+
+Hyperparams: 
+XLM-R - cross
+ {'lr': 7e-05, 'OT_max_iter': 50, 'encoder_lr': 5e-07, 'batch_size': 16, 'warmup_ratio': 0.1, 'num_epoches': 50, 'regular_loss_weight': 0.1, 'OT_loss_weight': 0.1, 'distance_emb_size': 0, 'seed': 1741, 'gcn_num_layers': 3, 'hidden_size': 768, 'rnn_num_layers': 1, 'fn_actv': 'leaky_relu', 'residual_type': 'addtive', 'data_dir': 'datasets/mulerx/subevent-en-20', 'n_fold': '1', 'num_labels': '3', 'max_seq_length': '512', 'loss_weights': [4.0, 4.0, 1.0], 'tokenizer': '../pretrained_models/tokenizers/XLM-R-base', 'encoder_name_or_path': '../pretrained_models/models/XLM-R-base'}
+F1: 0.3142040044917337 - 0.4587706146926537 
+P: 0.3814080654223132 - 0.408 
+R: 0.30916666666666665 - 0.523972602739726 
+result_detail: {'da': (0.5315985130111525, 0.3575, 0.4275037369207773), 'es': (0.2615062761506276, 0.5, 0.3434065934065934), 'tr': (0.26, 0.2, 0.22608695652173913), 'ur': (0.4725274725274725, 0.17916666666666667, 0.2598187311178248)}
+---------------------
+
+Dataset: subevent_mulerx 
+XLM-R - ur
+Random_state: 1741
+Hyperparams: 
+ {'lr': 5e-05, 'OT_max_iter': 50, 'encoder_lr': 1e-07, 'batch_size': 8, 'warmup_ratio': 0.1, 'num_epoches': 50, 'regular_loss_weight': 0.1, 'OT_loss_weight': 0.1, 'distance_emb_size': 0, 'seed': 1741, 'gcn_num_layers': 3, 'hidden_size': 768, 'rnn_num_layers': 1, 'fn_actv': 'leaky_relu', 'residual_type': 'addtive', 'data_dir': 'datasets/mulerx/subevent-ur-20', 'n_fold': '1', 'num_labels': '3', 'max_seq_length': '512', 'loss_weights': [4.0, 4.0, 1.0], 'tokenizer': '/vinai/hieumdt/pretrained_models/tokenizers/XLM-R-base', 'encoder_name_or_path': '/vinai/hieumdt/pretrained_models/models/XLM-R-base'}
+F1: 0.5173745173745175 - 0.0 
+P: 0.48201438848920863 - 0.0 
+R: 0.5583333333333333 - 0.0 
+-------------------- 
+
+Dataset: subevent_mulerx
+XLM-R - es
+Random_state: 1741
+Hyperparams: 
+ {'lr': 7e-05, 'OT_max_iter': 50, 'encoder_lr': 1e-07, 'batch_size': 8, 'warmup_ratio': 0.1, 'num_epoches': 30, 'regular_loss_weight': 0.1, 'OT_loss_weight': 0.1, 'distance_emb_size': 0, 'seed': 1741, 'gcn_num_layers': 2, 'hidden_size': 768, 'rnn_num_layers': 1, 'fn_actv': 'leaky_relu', 'residual_type': 'addtive', 'data_dir': 'datasets/mulerx/subevent-es-20', 'n_fold': '1', 'num_labels': '3', 'max_seq_length': '512', 'loss_weights': [4.0, 4.0, 1.0], 'tokenizer': '/vinai/hieumdt/pretrained_models/tokenizers/XLM-R-base', 'encoder_name_or_path': '/vinai/hieumdt/pretrained_models/models/XLM-R-base'}
+F1: 0.4067796610169492 - 0.0 
+P: 0.3308270676691729 - 0.0 
+R: 0.528 - 0.0 
+-------------------- 
+
+Hyperparams: 
+mBERT - cross
+ {'lr': 5e-05, 'OT_max_iter': 50, 'encoder_lr': 1e-05, 'batch_size': 8, 'warmup_ratio': 0.1, 'num_epoches': 30, 'regular_loss_weight': 0.1, 'OT_loss_weight': 0.1, 'distance_emb_size': 0, 'seed': 1741, 'gcn_num_layers': 2, 'hidden_size': 768, 'rnn_num_layers': 1, 'fn_actv': 'leaky_relu', 'residual_type': 'addtive', 'data_dir': 'datasets/mulerx/subevent-en-20', 'n_fold': '1', 'num_labels': '3', 'max_seq_length': '512', 'loss_weights': [4.0, 4.0, 1.0], 'tokenizer': '/vinai/hieumdt/pretrained_models/tokenizers/mBERT-base', 'encoder_name_or_path': '/vinai/hieumdt/pretrained_models/models/mBERT-base'}
+F1: 0.2897648607340923 - 0.44936708860759494 
+P: 0.34280287921395003 - 0.4176470588235294 
+R: 0.2701826923076923 - 0.4863013698630137 
+result_detail: {'da': (0.4331983805668016, 0.2675, 0.33075734157650694), 'es': (0.31896551724137934, 0.444, 0.37123745819397996), 'tr': (0.21568627450980393, 0.16923076923076924, 0.1896551724137931), 'ur': (0.40336134453781514, 0.2, 0.2674094707520891)}-------------------- 
+--------------------
