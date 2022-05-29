@@ -184,19 +184,19 @@ def run(defaults: Dict, random_state):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [3e-5, 5e-5, 7e-5]),
+        'lr': trial.suggest_categorical('lr', [5e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 5e-7, 8e-7, 1e-6, 3e-6, 5e-6]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [3e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [40]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [30]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
-        'seed': 1741,
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3]),
+        'seed': 7890,
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [3]),
         'hidden_size': trial.suggest_categorical('hidden_size', [768]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
         'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu']), # 'relu', 'tanh', 'hardtanh', 'silu'

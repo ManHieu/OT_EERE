@@ -144,23 +144,23 @@ class BaseDataset(Dataset, ABC):
                     label = relation.type.short
 
                     e1_tok_ids = relation.head.id
-                    if not all(tok in relation.head.mention for tok in example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1]):
-                        print(f"{relation.head.mention} - {example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1]}")
+                    # if not all(tok in relation.head.mention for tok in example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1]):
+                    #     print(f"{relation.head.mention} - {example.tokens[e1_tok_ids[0]: e1_tok_ids[-1] + 1]}")
                     e2_tok_ids = relation.tail.id
-                    if not all(tok in relation.tail.mention for tok in example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1]):
-                        print(f"{relation.tail.mention} - {example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1]}")
+                    # if not all(tok in relation.tail.mention for tok in example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1]):
+                    #     print(f"{relation.tail.mention} - {example.tokens[e2_tok_ids[0]: e2_tok_ids[-1] + 1]}")
                     
                     e1_subtok_ids = []
                     for t_id in e1_tok_ids:
                         try:
                             e1_subtok_ids.extend(mapping[t_id])
                         except:
-                            # print(f"Do not have corresponding subtokens of {t_id}")
+                            print(f"Do not have corresponding subtokens of {t_id}")
                             continue
-                    if len(e1_subtok_ids) != 0:
-                        if not all(self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() in relation.head.mention \
-                                    for tok_id in e1_subtok_ids):
-                            print(f"Wrong mapping on subword!: {relation.head.mention} - {[self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() for tok_id in e1_subtok_ids]}")
+                    # if len(e1_subtok_ids) != 0:
+                    #     if not all(self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() in relation.head.mention \
+                    #                 for tok_id in e1_subtok_ids):
+                    #         print(f"Wrong mapping on subword!: {relation.head.mention} - {[self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() for tok_id in e1_subtok_ids]}")
                     
                     e2_subtok_ids = []
                     for t_id in e2_tok_ids:
@@ -169,10 +169,10 @@ class BaseDataset(Dataset, ABC):
                         except:
                             # print(f"Do not have corresponding subtokens of {t_id}")
                             continue
-                    if len(e2_subtok_ids) != 0:
-                        if not all(self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() in relation.tail.mention \
-                                    for tok_id in e2_subtok_ids):
-                            print(f"Wrong mapping on subword!: {relation.tail.mention} - {[self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() for tok_id in e2_subtok_ids]}")
+                    # if len(e2_subtok_ids) != 0:
+                    #     if not all(self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() in relation.tail.mention \
+                    #                 for tok_id in e2_subtok_ids):
+                    #         print(f"Wrong mapping on subword!: {relation.tail.mention} - {[self.tokenizer.decode([input_ids[tok_id]]).replace('#', '').strip() for tok_id in e2_subtok_ids]}")
                     trigger_poss = (e1_tok_ids, e2_tok_ids)
                     triggers.append(trigger_poss)
                     labels.append(label)

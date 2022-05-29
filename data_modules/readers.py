@@ -94,8 +94,12 @@ def tsvx_reader(dir_name, file_name):
     for event_id, event_dict in my_dict["event_dict"].items():
         my_dict["event_dict"][event_id]["sent_id"] = sent_id = sent_id_lookup(my_dict, event_dict["start_char"], event_dict["end_char"])
         my_dict["event_dict"][event_id]["token_id"] = id_lookup(my_dict["sentences"][sent_id]["token_span_DOC"], event_dict["start_char"], event_dict["end_char"])
-        assert my_dict["event_dict"][event_id]["mention"] in my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"]], \
-            f'{my_dict["event_dict"][event_id]}  - {my_dict["sentences"][sent_id]} - {my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"]]}'
+        # assert my_dict["event_dict"][event_id]["mention"] in my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"]], \
+        #     f'{my_dict["event_dict"][event_id]}  - {my_dict["sentences"][sent_id]} - {my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"]]}'
+        if not all(tok in  my_dict["event_dict"][event_id]["mention"] for tok in my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"][0]: my_dict["event_dict"][event_id]["token_id"][-1] + 1]):
+            print(f'{my_dict["event_dict"][event_id]["mention"]} - \
+            {my_dict["sentences"][sent_id]["tokens"][my_dict["event_dict"][event_id]["token_id"][0]: my_dict["event_dict"][event_id]["token_id"][-1] + 1]}')
+            print(f'{my_dict["event_dict"][event_id]}  - {my_dict["sentences"][sent_id]}')
 
     return my_dict
 
