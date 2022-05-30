@@ -1,5 +1,6 @@
 from collections import OrderedDict
 import math
+import pdb
 from typing import Dict, List, Tuple
 import pandas as pd
 import numpy as np
@@ -190,11 +191,15 @@ class OTEERE(nn.Module):
         for i, map in enumerate(mapping):
             emb = []
             ns = int(torch.sum(masks[i]))
-            map[ns-1] = list(range(ns-1)) # ROOT mapping
+            n_sub_tok = int(torch.sum(input_attention_mask[i]))
+            map[ns-1] = list(range(n_sub_tok-1)) # ROOT mapping
             for tok_id in range(ns):
                 token_mapping = map.get(tok_id)
                 if token_mapping != None:
-                    tok_presentation = _context_emb[i, token_mapping, :]
+                    try:
+                        tok_presentation = _context_emb[i, token_mapping, :]
+                    except:
+                        pdb.set_trace()
                     tok_presentation = torch.max(tok_presentation, dim=0)[0] # (encoder_hidden_size)
                 else:
                     tok_presentation = torch.zeros_like(_context_emb[0, 0])

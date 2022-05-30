@@ -131,10 +131,10 @@ Dataset: subevent_mulerx
 XLM-R - es
 Random_state: 1741
 Hyperparams: 
- {'lr': 7e-05, 'OT_max_iter': 50, 'encoder_lr': 1e-07, 'batch_size': 8, 'warmup_ratio': 0.1, 'num_epoches': 30, 'regular_loss_weight': 0.1, 'OT_loss_weight': 0.1, 'distance_emb_size': 0, 'seed': 1741, 'gcn_num_layers': 2, 'hidden_size': 768, 'rnn_num_layers': 1, 'fn_actv': 'leaky_relu', 'residual_type': 'addtive', 'data_dir': 'datasets/mulerx/subevent-es-20', 'n_fold': '1', 'num_labels': '3', 'max_seq_length': '512', 'loss_weights': [4.0, 4.0, 1.0], 'tokenizer': '/vinai/hieumdt/pretrained_models/tokenizers/XLM-R-base', 'encoder_name_or_path': '/vinai/hieumdt/pretrained_models/models/XLM-R-base'}
-F1: 0.4067796610169492 - 0.0 
-P: 0.3308270676691729 - 0.0 
-R: 0.528 - 0.0 
+ {'lr': 7e-05, 'OT_max_iter': 50, 'encoder_lr': 1e-07, 'batch_size': 8, 'warmup_ratio': 0.1, 'num_epoches': 40, 'regular_loss_weight': 0.1, 'OT_loss_weight': 0.1, 'distance_emb_size': 0, 'seed': 1741, 'gcn_num_layers': 3, 'hidden_size': 768, 'rnn_num_layers': 1, 'fn_actv': 'leaky_relu', 'residual_type': 'addtive', 'data_dir': 'datasets/mulerx/subevent-es-20', 'n_fold': '1', 'num_labels': '3', 'max_seq_length': '512', 'loss_weights': [4.0, 4.0, 1.0], 'tokenizer': '/vinai/hieumdt/pretrained_models/tokenizers/XLM-R-base', 'encoder_name_or_path': '/vinai/hieumdt/pretrained_models/models/XLM-R-base'}
+F1: 0.4268502581755594 - 0.0 
+P: 0.37462235649546827 - 0.0 
+R: 0.496 - 0.0 
 -------------------- 
 
 Hyperparams: 
