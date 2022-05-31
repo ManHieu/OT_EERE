@@ -18,7 +18,7 @@ from transformers import HfArgumentParser
 from pytorch_lightning.utilities.seed import seed_everything
 from arguments import DataTrainingArguments, ModelArguments, TrainingArguments
 from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
-from data_modules.data_modules import load_data_module
+from data_modules.datamodules import load_data_module
 from data_modules.datatsets import load_dataset
 from models.model import PlOTEERE
 import shutil
@@ -139,7 +139,8 @@ def run(defaults: Dict, random_state):
             val_check_interval=1.0, # use float to check every n epochs 
         )
 
-        best_model = PlOTEERE.load_from_checkpoint(args.model_path)
+        best_model = PlOTEERE.load_from_checkpoint('tuning_experiments/HiEve-roberta-large--random_state7890-addtive-lr0.0005-e_lr3e-06-eps30-regu_weight0.1-OT_weight0.1-gcn_num_layers3-fn_actvleaky_relu-rnn_hidden768/epoch=18-f1_dev=0.49.ckpt')
+        record_file_name = "exp_distant.txt"
         with open(record_file_name, 'a', encoding='UTF-8') as f:
             f.write(f"{'--'*100} \n")
             f.write(f"Dataset: {dataset} \n")
@@ -154,9 +155,11 @@ def run(defaults: Dict, random_state):
             trainer.test(best_model, test_loaders[key])
             p, r, f1 = best_model.model_results
             with open(record_file_name, 'a', encoding='UTF-8') as f:
-                f.write(f"---------Distance range: {key} \n----------")
+                f.write(f"---------Distance range: {key} ----------\n")
                 f.write(f"Dev_result: p: {val_p} - r: {val_r} - f1: {val_f1} \n")
                 f.write(f"Test_result: p: {p} - r: {r} - f1: {f1} \n")
+    
+    return [0]*6
 
 
 def objective(trial: optuna.Trial):
@@ -187,22 +190,8 @@ def objective(trial: optuna.Trial):
 
     dataset = args.job
     
-    p, f1, r, val_p, val_r, val_f1 = run(defaults=defaults, random_state=random_state)
-
-    record_file_name = 'result.txt'
-    if args.tuning:
-        record_file_name = f'result_{args.job}_{args.lang}_{defaults["tokenizer"].split(r"/")[-1]}.txt'
-
-    with open(record_file_name, 'a', encoding='utf-8') as f:
-        f.write(f"{'--'*10} \n")
-        f.write(f"Dataset: {dataset} \n")
-        f.write(f"Random_state: {random_state}\n")
-        f.write(f"Hyperparams: \n {defaults}\n")
-        f.write(f"F1: {f1} - {val_f1} \n")
-        f.write(f"P: {p} - {val_p} \n")
-        f.write(f"R: {r} - {val_r} \n")
-
-    return f1
+    run(defaults=defaults, random_state=random_state)
+    return 0
 
 
 if __name__ == '__main__':

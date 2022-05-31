@@ -141,6 +141,8 @@ class OTEERE(nn.Module):
                 trigger_poss: List[Tuple[List[int], List[int]]],
                 input_token_ids: torch.Tensor,
                 host_sentences_masks: torch.Tensor,
+                dep_path: torch.Tensor,
+                scores: torch.Tensor,
                 labels: torch.Tensor, 
                 ):
         
@@ -233,7 +235,8 @@ class OTEERE(nn.Module):
         batch_on_host_ids = []
         batch_off_host_ids = []
         for i in range(bs):
-            host_sentence = host_sentences_masks[i]
+            host_sentence = dep_path[i]
+            distance_score = scores[i]
             on_host_ids = host_sentence.nonzero().squeeze(1)
             batch_on_host_ids.append(on_host_ids)
             if n_on_host < on_host_ids.size(0):
@@ -245,6 +248,7 @@ class OTEERE(nn.Module):
             if n_off_host < off_host_ids.size(0):
                 n_off_host = off_host_ids.size(0)
             off_host_maginal = torch.tensor([1.0/off_host_ids.size(0)] * off_host_ids.size(0), dtype=torch.float).cuda() # (ns-n_on_dp)
+            off_host_maginal = F.softmax(distance_score[off_host_ids].cuda())
             on_host_maginal = torch.cat([torch.Tensor([0.2]).cuda(), 0.8 * on_host_maginal], dim=0) # (n_on_dp + 1)
             
             on_host = gcn_input[i] * host_sentence.unsqueeze(1).expand((gcn_input.size(1), gcn_input.size(2)))
@@ -279,7 +283,7 @@ class OTEERE(nn.Module):
         OT_adj = torch.clamp(OT_adj, min=0, max=1) # make sure all edge in (0,1)
 
         max_ns = adjs.size(1)
-        on_host_masks = torch.stack([host_sentences_masks] * max_ns, dim=2)
+        on_host_masks = torch.stack([dep_path] * max_ns, dim=2)
         
         host_adjs = adjs * on_host_masks * on_host_masks.transpose(1,2)
         pruned_adjs = host_adjs + OT_adj
