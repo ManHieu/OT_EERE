@@ -252,7 +252,7 @@ class BaseDataset(Dataset, ABC):
         dep_path = torch.tensor(dep_path)
         # k_walk_nodes = torch.tensor(k_walk_nodes)
         # labels = torch.tensor(labels)
-        scores = torch.tensor(scores)
+        scores = torch.tensor(scores, dtype=torch.float)
         host_sentences_masks = torch.tensor(host_sentences_masks)
 
         return (input_ids, input_attention_mask, masks, adj,
