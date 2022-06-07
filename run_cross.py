@@ -227,6 +227,7 @@ def run(defaults: Dict, random_state):
     val_p = sum(val_ps)/len(val_ps)
     val_r = sum(val_rs)/len(val_rs)
     print(f"F1: {f1} - P: {p} - R: {r}")
+    shutil.rmtree(f'{output_dir}')
     
     return p, f1, r, val_p, val_r, val_f1, test_results
 
@@ -263,7 +264,7 @@ def objective(trial: optuna.Trial):
 
     record_file_name = 'result.txt'
     if args.tuning:
-        record_file_name = f'result_{args.job}_{args.lang}_{defaults["tokenizer"].split(r"/")[-1]}.txt'
+        record_file_name = f'result_{args.job}_{defaults["tokenizer"].split(r"/")[-1]}.txt'
 
     with open(record_file_name, 'a', encoding='utf-8') as f:
         f.write(f"{'--'*10} \n")
