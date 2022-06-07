@@ -45,6 +45,11 @@ def run(defaults: Dict, random_state):
         defaults['tokenizer'] = f'/vinai/hieumdt/pretrained_models/tokenizers/{args.model}'
         defaults['encoder_name_or_path'] = f'/vinai/hieumdt/pretrained_models/models/{args.model}'
         defaults['data_dir'] = f'datasets/mulerx/subevent-en-20'
+    elif job == 'causal_mulerx':
+        defaults['loss_weights'] = [4.0, 4.0, 1.0]
+        defaults['tokenizer'] = f'/vinai/hieumdt/pretrained_models/tokenizers/{args.model}'
+        defaults['encoder_name_or_path'] = f'/vinai/hieumdt/pretrained_models/models/{args.model}'
+        defaults['data_dir'] = f'datasets/mulerx/causal-en-10'
     
     # parse remaining arguments and divide them into three categories
     second_parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
@@ -110,10 +115,10 @@ def run(defaults: Dict, random_state):
         collate_fn=train_data.my_collate,
     )
 
-    test_lang = ['da', 'es', 'tr', 'ur']
+    test_lang = ['ur']
     test_loaders = {}
     for lang in test_lang:
-        test_dir = f'datasets/mulerx/subevent-{lang}-20'
+        test_dir = f'datasets/mulerx/causal-{lang}-3'
         test_data = load_dataset(
             name=data_args.datasets,
             tokenizer=data_args.tokenizer,
@@ -175,7 +180,7 @@ def run(defaults: Dict, random_state):
         gpus=[args.gpu], 
         accumulate_grad_batches=training_args.gradient_accumulation_steps,
         num_sanity_val_steps=0, 
-        val_check_interval=0.1, # use float to check every n epochs 
+        val_check_interval=1.0, # use float to check every n epochs 
         callbacks = [lr_logger, checkpoint_callback],
     )
 
@@ -231,7 +236,7 @@ def objective(trial: optuna.Trial):
         'lr': trial.suggest_categorical('lr', [5e-5, 7e-5]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
         'encoder_lr': trial.suggest_categorical('encoder_lr', [5e-7, 1e-6, 3e-6, 5e-6, 7e-6, 1e-5]),
-        'batch_size': trial.suggest_categorical('batch_size', [2]),
+        'batch_size': trial.suggest_categorical('batch_size', [16]),
         'warmup_ratio': 0.1,
         'num_epoches': trial.suggest_categorical('num_epoches', [1]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),

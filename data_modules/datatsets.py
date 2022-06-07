@@ -142,6 +142,18 @@ class SubEventMulerxDataset(EEREDataset):
 
 
 @register_dataset
+class SubEventMulerxDataset(EEREDataset):
+    name = 'causal_mulerx'
+    sample = 1.0
+
+    natural_relation_types = {
+                            0: "CauseEffect", 
+                            1: "EffectCause",  
+                            2: "NoRel"
+                            }
+
+
+@register_dataset
 class ESLDataset(EEREDataset):
     name = 'ESL'
     sample = 1.0

@@ -283,6 +283,58 @@ if __name__ == '__main__':
         print("Number training points: {}".format(len(train)))
         print("Number validate points: {}".format(len(val)))
         print("Number test points: {}".format(len(test)))
+    
+    elif dataset=='mulerx_causal_ur':
+        datapoint = 'mulerx_datapoint'
+        train_dir = 'datasets/mulerx/causal-ur-3/train/'
+        test_dir = 'datasets/mulerx/causal-ur-3/test/'
+        val_dir = 'datasets/mulerx/causal-ur-3/dev/'
+
+        processor = Preprocessor(dataset, datapoint)
+        train = processor.load_dataset(train_dir)
+        test = processor.load_dataset(test_dir)
+        validate = processor.load_dataset(val_dir)
+
+        processed_path = 'datasets/mulerx/causal-ur-3/train.json'
+        train = processor.process_and_save(train, processed_path)
+
+        processed_path = 'datasets/mulerx/causal-ur-3/val.json'
+        val = processor.process_and_save(validate, processed_path)
+
+        processed_path = 'datasets/mulerx/causal-ur-3/test.json'
+        test = processor.process_and_save(test, processed_path)
+
+        print("Statistic in HiEve")
+        print("Number datapoints in dataset: {}".format(len(train + val + test)))
+        print("Number training points: {}".format(len(train)))
+        print("Number validate points: {}".format(len(val)))
+        print("Number test points: {}".format(len(test)))
+    
+    elif dataset=='mulerx_causal_en':
+        datapoint = 'mulerx_datapoint'
+        train_dir = 'datasets/mulerx/causal-en-10/train/'
+        test_dir = 'datasets/mulerx/causal-en-10/test/'
+        val_dir = 'datasets/mulerx/causal-en-10/dev/'
+
+        processor = Preprocessor(dataset, datapoint)
+        train = processor.load_dataset(train_dir)
+        test = processor.load_dataset(test_dir)
+        validate = processor.load_dataset(val_dir)
+
+        processed_path = 'datasets/mulerx/causal-en-10/train.json'
+        train = processor.process_and_save(train, processed_path)
+
+        processed_path = 'datasets/mulerx/causal-en-10/val.json'
+        val = processor.process_and_save(validate, processed_path)
+
+        processed_path = 'datasets/mulerx/causal-en-10/test.json'
+        test = processor.process_and_save(test, processed_path)
+
+        print("Statistic in HiEve")
+        print("Number datapoints in dataset: {}".format(len(train + val + test)))
+        print("Number training points: {}".format(len(train)))
+        print("Number validate points: {}".format(len(val)))
+        print("Number test points: {}".format(len(test)))
 
 
     
