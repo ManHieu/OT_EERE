@@ -17,11 +17,11 @@ RUN pip3 install scikit-learn
 RUN pip3 install scipy
 RUN pip3 install sklearn
 RUN pip3 install spacy
+RUN pip3 install sentence-transformers
 RUN pip3 install torch==1.8.1+cu101 torchvision==0.9.1+cu101 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
 RUN pip3 install adapter-transformers
 RUN pip3 install pytorch-lightning
 RUN pip3 install transformers
-RUN pip3 install sentence-transformers
 RUN pip3 install sentencepiece
 
 # docker build -t quangbd/dc-python:3.7-cuda10.1-cudnn7-ubuntu16.04 -f dc-python3.7-cuda10.1-cudnn7-ubuntu16.04-dockerfile .

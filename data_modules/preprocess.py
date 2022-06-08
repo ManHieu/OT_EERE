@@ -1,10 +1,11 @@
+import argparse
 from collections import defaultdict
 import json
 import os
 from sklearn.model_selection import KFold, train_test_split
 import tqdm
 from datapoint_formats import get_datapoint
-from readers import cat_xml_reader, mulerx_tsvx_reader, tsvx_reader
+from readers import cat_xml_reader, mulerx_tsvx_reader, mulerx_tsvx_reader_v2, tsvx_reader
 import random
 import numpy as np
 
@@ -23,7 +24,7 @@ class Preprocessor(object):
         elif dataset == 'ESL':
             self.reader = cat_xml_reader
         elif 'mulerx' in dataset:
-            self.reader = mulerx_tsvx_reader
+            self.reader = mulerx_tsvx_reader_v2
         else:
             raise ValueError("We have not supported this dataset {} yet!".format(self.dataset))
 
@@ -86,9 +87,12 @@ if __name__ == '__main__':
     random.seed(seed)
     import numpy as np
     np.random.seed(seed)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d', '--data', type=str, default='mulerx_en', help='Language')
+    # parser.add_argument('-la', '--lang', type=str, default='en', help='Language')
+    args, remaining_args = parser.parse_known_args()
 
-
-    dataset = 'mulerx_es'
+    dataset = f'{args.data}'
 
     if dataset == 'HiEve':
         datapoint = 'hieve_datapoint_v3'
@@ -209,17 +213,69 @@ if __name__ == '__main__':
         val_dir = 'datasets/mulerx/subevent-es-20/dev/'
 
         processor = Preprocessor(dataset, datapoint)
+        
+        train = processor.load_dataset(train_dir)
+        processed_path = 'datasets/mulerx/subevent-es-20/train.json'
+        train = processor.process_and_save(train, processed_path)
+
+        test = processor.load_dataset(test_dir)
+        processed_path = 'datasets/mulerx/subevent-es-20/test.json'
+        test = processor.process_and_save(test, processed_path)
+
+        validate = processor.load_dataset(val_dir)
+        processed_path = 'datasets/mulerx/subevent-es-20/val.json'
+        val = processor.process_and_save(validate, processed_path)
+
+        print("Statistic in HiEve")
+        print("Number datapoints in dataset: {}".format(len(train + val + test)))
+        print("Number training points: {}".format(len(train)))
+        print("Number validate points: {}".format(len(val)))
+        print("Number test points: {}".format(len(test)))
+    
+    elif dataset=='mulerx_tr':
+        datapoint = 'mulerx_datapoint'
+        train_dir = 'datasets/mulerx/subevent-tr-20/train/'
+        test_dir = 'datasets/mulerx/subevent-tr-20/test/'
+        val_dir = 'datasets/mulerx/subevent-tr-20/dev/'
+
+        processor = Preprocessor(dataset, datapoint)
         train = processor.load_dataset(train_dir)
         test = processor.load_dataset(test_dir)
         validate = processor.load_dataset(val_dir)
 
-        processed_path = 'datasets/mulerx/subevent-es-20/train.json'
+        processed_path = 'datasets/mulerx/subevent-tr-20/train.json'
         train = processor.process_and_save(train, processed_path)
 
-        processed_path = 'datasets/mulerx/subevent-es-20/val.json'
+        processed_path = 'datasets/mulerx/subevent-tr-20/val.json'
         val = processor.process_and_save(validate, processed_path)
 
-        processed_path = 'datasets/mulerx/subevent-es-20/test.json'
+        processed_path = 'datasets/mulerx/subevent-tr-20/test.json'
+        test = processor.process_and_save(test, processed_path)
+
+        print("Statistic in HiEve")
+        print("Number datapoints in dataset: {}".format(len(train + val + test)))
+        print("Number training points: {}".format(len(train)))
+        print("Number validate points: {}".format(len(val)))
+        print("Number test points: {}".format(len(test)))
+    
+    elif dataset=='mulerx_ur':
+        datapoint = 'mulerx_datapoint'
+        train_dir = 'datasets/mulerx/subevent-ur-20/train/'
+        test_dir = 'datasets/mulerx/subevent-ur-20/test/'
+        val_dir = 'datasets/mulerx/subevent-ur-20/dev/'
+
+        processor = Preprocessor(dataset, datapoint)
+        train = processor.load_dataset(train_dir)
+        test = processor.load_dataset(test_dir)
+        validate = processor.load_dataset(val_dir)
+
+        processed_path = 'datasets/mulerx/subevent-ur-20/train.json'
+        train = processor.process_and_save(train, processed_path)
+
+        processed_path = 'datasets/mulerx/subevent-ur-20/val.json'
+        val = processor.process_and_save(validate, processed_path)
+
+        processed_path = 'datasets/mulerx/subevent-ur-20/test.json'
         test = processor.process_and_save(test, processed_path)
 
         print("Statistic in HiEve")

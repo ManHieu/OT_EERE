@@ -37,7 +37,7 @@ class Entity:
     end: int = None                # end index in the sentence
     mention: str = None           # mention of entity
     type: Optional[EntityType] = None   # entity type
-    id: Optional[List[int]] = None    # id in the current training/test example
+    id: Optional[List[int]] = None    
 
     def to_tuple(self):
         return self.type.natural, self.start, self.end
@@ -88,9 +88,9 @@ class InputFeatures:
     mapping: Dict[int, List[int]]
     labels: List[int]
     triggers: List[Tuple[List[int], List[int]]]
-    # dep_path: List[int]
+    dep_path: List[int]
     adjacent_maxtrix: Tensor
-    # scores: List[Tuple[int, int]]                   # distance to triggers.
+    scores: List[int]                   # distance to triggers.
     # k_walk_nodes: List[int] = None
     host_sentence_mask: List[int] = None
     # input_presentation: Tensor

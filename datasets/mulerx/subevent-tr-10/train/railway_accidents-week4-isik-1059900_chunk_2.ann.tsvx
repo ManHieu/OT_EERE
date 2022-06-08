@@ -1,9 +1,0 @@
-Text	Sarayu Express’i bir traktör yük arabasını isimsiz bir demiryolu geçidinde parçaladı .	Gerçi bu kaza sonrasında hiç kimse yaralanmadı , fakat trenin motoru şiddetli bir şekilde zarar gördü .	- 3 Ocak 2010 .	Arunachal Pradesh Express’in bütün yedi vagonu , Murkongselek ve Rangiya arasında çalışıyordu , bugünün erken saatlerinde Assam’da Helem ve Nij Bogaon arasında raydan çıktı .	Fakat yolculardan hiçbiri yaralanmadı .
-Event	T0	parçaladı	EVENT	75
-Event	T1	kaza	EVENT	96
-Event	T3	gördü	EVENT	183
-Event	T4	çalışıyordu	EVENT	289
-Event	T5	çıktı	EVENT	374
-Relation	T0	T3	NoRel	true	parçaladı	gördü
-Relation	T4	T5	NoRel	true	çalışıyordu	çıktı
-Relation	T5	T4	NoRel	true	çıktı	çalışıyordu
