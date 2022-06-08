@@ -111,7 +111,7 @@ def run(defaults: Dict, random_state):
     val_data_loader = DataLoader(
         dataset=val_data,
         batch_size=data_args.batch_size,
-        shuffle=True,
+        shuffle=False,
         collate_fn=train_data.my_collate,
     )
 
@@ -185,7 +185,7 @@ def run(defaults: Dict, random_state):
     )
 
     print("Training....")
-    trainer.fit(model, train_dataloader=train_data_loader, val_dataloaders=val_data_loader)
+    trainer.fit(model, train_dataloaders=train_data_loader, val_dataloaders=val_data_loader)
     val_p, val_r, val_f1 = model.best_vals
 
     best_model = PlOTEERE.load_from_checkpoint(checkpoint_callback.best_model_path)
@@ -227,19 +227,19 @@ def run(defaults: Dict, random_state):
     val_p = sum(val_ps)/len(val_ps)
     val_r = sum(val_rs)/len(val_rs)
     print(f"F1: {f1} - P: {p} - R: {r}")
-    shutil.rmtree(f'{output_dir}')
+    # shutil.rmtree(f'{output_dir}')
     
     return p, f1, r, val_p, val_r, val_f1, test_results
 
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [5e-5, 7e-5]),
+        'lr': trial.suggest_categorical('lr', [1e-5, 3e-5, 5e-5, 7e-5, 1e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [5e-7, 1e-6, 3e-6, 5e-6, 7e-6, 1e-5]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 3e-7, 5e-7, 1e-6, 3e-6, 5e-6, 7e-6, 1e-5, 3e-5]),
         'batch_size': trial.suggest_categorical('batch_size', [16]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [1]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [20, 30, 40, 50]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
@@ -274,7 +274,7 @@ def objective(trial: optuna.Trial):
         f.write(f"F1: {f1} - {val_f1} \n")
         f.write(f"P: {p} - {val_p} \n")
         f.write(f"R: {r} - {val_r} \n")
-        f.write(f"result_detail: {test_results}")
+        f.write(f"result_detail: {test_results} \n")
 
     return f1
 
