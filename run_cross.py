@@ -17,7 +17,7 @@ from transformers import HfArgumentParser
 from pytorch_lightning.utilities.seed import seed_everything
 from arguments import DataTrainingArguments, ModelArguments, TrainingArguments
 from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
-from data_modules.data_modules import load_data_module
+from data_modules.datamodules import load_data_module
 from data_modules.datatsets import load_dataset
 from models.model import PlOTEERE
 import shutil

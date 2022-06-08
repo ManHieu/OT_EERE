@@ -135,7 +135,7 @@ def mapping_subtok_id(subtoks: List[str], tokens: List[str], text: str):
                 mapping_dict[tok_id].append(index)
             else:
                 mapping_dict[tok_id].append(index)
-                # print(f"Found id but not exactly match: {subtoks[i]} - {tokens[tok_id]}") # \n{subtoks} - {subtok_spans}\n{tokens} - {token_spans}
+                # print(f"Found id but not exactly match: {subtoks[i]} - {tokens[tok_id]} \n{subtoks} - {subtok_spans}\n{tokens} - {token_spans}") # \n{subtoks} - {subtok_spans}\n{tokens} - {token_spans}
             
     # # mapping <unk> token:
     # for key in range(len(tokens)):

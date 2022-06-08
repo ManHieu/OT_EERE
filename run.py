@@ -17,7 +17,7 @@ from transformers import HfArgumentParser
 from pytorch_lightning.utilities.seed import seed_everything
 from arguments import DataTrainingArguments, ModelArguments, TrainingArguments
 from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
-from data_modules.data_modules import load_data_module
+from data_modules.datamodules import load_data_module
 from models.model import PlOTEERE
 import shutil
 
@@ -164,7 +164,7 @@ def run(defaults: Dict, random_state):
         print(f"P: {p}")
         print(f"R: {r}")
 
-        shutil.rmtree(f'{output_dir}')
+        # shutil.rmtree(f'{output_dir}')
     
         # with open(output_dir+f'-{f1}', 'w', encoding='utf-8') as f:
         #     f.write(f"F1: {f1} \n")

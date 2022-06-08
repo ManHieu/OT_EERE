@@ -88,9 +88,9 @@ class InputFeatures:
     mapping: Dict[int, List[int]]
     labels: List[int]
     triggers: List[Tuple[List[int], List[int]]]
-    # dep_path: List[int]
+    dep_path: List[int]
     adjacent_maxtrix: Tensor
-    # scores: List[Tuple[int, int]]                   # distance to triggers.
+    scores: List[int]                   # distance to triggers.
     # k_walk_nodes: List[int] = None
     host_sentence_mask: List[int] = None
     # input_presentation: Tensor
