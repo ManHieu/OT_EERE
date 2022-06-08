@@ -164,7 +164,7 @@ def run(defaults: Dict, random_state):
         print(f"P: {p}")
         print(f"R: {r}")
 
-        # shutil.rmtree(f'{output_dir}')
+        shutil.rmtree(f'{output_dir}')
     
         # with open(output_dir+f'-{f1}', 'w', encoding='utf-8') as f:
         #     f.write(f"F1: {f1} \n")
