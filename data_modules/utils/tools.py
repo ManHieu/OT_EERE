@@ -1,3 +1,4 @@
+from trankit import Pipeline
 from collections import defaultdict
 import datetime
 import re
@@ -7,9 +8,13 @@ import spacy
 import networkx as nx
 from sentence_transformers import SentenceTransformer, util
 
-
+# p = Pipeline('english', cache_dir='/home/ubuntu/cache/trankit')
+# p.add('danish')
+# p.add('spanish')
+# p.add('turkish')
+# p.add('urdu')
 nlp = spacy.load("en_core_web_sm")
-sim_evaluator = SentenceTransformer('/vinai/hieumdt/all-MiniLM-L12-v1')
+# sim_evaluator = SentenceTransformer('/vinai/hieumdt/all-MiniLM-L12-v1')
 
 
 # Padding function

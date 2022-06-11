@@ -35,7 +35,7 @@ def run(defaults: Dict, random_state):
             defaults[key] = True if defaults[key]=='True' else False
         if defaults[key] == 'None':
             defaults[key] = None
-    if job == 'HiEve':
+    if job == 'HiEve' or job == 'IC':
         defaults['loss_weights'] = [6833.0/369, 6833.0/348, 6833.0/162, 6833.0/5954]
     elif job == 'ESL':
         defaults['loss_weights'] = [5.0/6, 1.0/6]
@@ -184,19 +184,19 @@ def run(defaults: Dict, random_state):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [5e-4]),
+        'lr': trial.suggest_categorical('lr', [3e-4, 5e-4, 7e-4]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [3e-6]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-6, 3e-6, 5e-6, 7e-6]),
         'batch_size': trial.suggest_categorical('batch_size', [8]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [30]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [20, 30, 50]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
         'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
         'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
         'seed': 7890,
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [3]),
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3]),
         'hidden_size': trial.suggest_categorical('hidden_size', [768]),
         'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
         'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu']), # 'relu', 'tanh', 'hardtanh', 'silu'
@@ -233,7 +233,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('job')
     parser.add_argument('-c', '--config_file', type=str, default='config.ini', help='configuration file')
-    parser.add_argument('-g', '--gpu', type=int, default=0, help='which GPU to use')
+    parser.add_argument('-g', '--gpu', type=int, default=2, help='which GPU to use')
     parser.add_argument('-t', '--tuning', action='store_true', default=False, help='tune hyperparameters')
     parser.add_argument('-m', '--model', type=str, default='mBERT-base', help='Encoder model')
     parser.add_argument('-la', '--lang', type=str, default='en', help='Language')

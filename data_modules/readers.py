@@ -1,3 +1,4 @@
+from trankit import Pipeline
 import json
 import bs4
 import xml.etree.ElementTree as ET
@@ -7,14 +8,6 @@ from utils.tools import *
 # from nltk import sent_tokenize
 from bs4 import BeautifulSoup as Soup
 import csv
-from trankit import Pipeline
-
-
-p = Pipeline('english', cache_dir='/home/ubuntu/cache/trankit')
-p.add('danish')
-p.add('spanish')
-p.add('turkish')
-p.add('urdu')
 
 
 # =========================

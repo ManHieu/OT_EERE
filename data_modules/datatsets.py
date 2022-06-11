@@ -130,6 +130,19 @@ class HiEveDataset(EEREDataset):
 
 
 @register_dataset
+class HiEveDataset(EEREDataset):
+    name = 'IC'
+    sample = 1.0
+
+    natural_relation_types = {
+                            0: "SuperSub", 
+                            1: "SubSuper", 
+                            2: "Coref", 
+                            3: "NoRel"
+                            }
+
+
+@register_dataset
 class SubEventMulerxDataset(EEREDataset):
     name = 'subevent_mulerx'
     sample = 1.0

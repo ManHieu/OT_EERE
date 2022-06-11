@@ -19,7 +19,7 @@ class Preprocessor(object):
         self.register_reader(self.dataset)
 
     def register_reader(self, dataset):
-        if self.dataset == 'HiEve':
+        if self.dataset == 'HiEve' or self.dataset == 'IC':
             self.reader = tsvx_reader
         elif dataset == 'ESL':
             self.reader = cat_xml_reader
@@ -110,6 +110,30 @@ if __name__ == '__main__':
         val = processor.process_and_save(validate, processed_path)
 
         processed_path = 'datasets/hievents_v2/test.json'
+        test = processor.process_and_save(test, processed_path)
+    
+    if dataset == 'IC':
+        datapoint = 'hieve_datapoint_v3'
+        corpus_dir = 'datasets/IC/IC_Processed/'
+        onlyfiles = [f for f in os.listdir(corpus_dir) if os.path.isfile(os.path.join(corpus_dir, f)) and f[-4:] == "tsvx"]
+        onlyfiles.sort()
+        train_doc_id = [f.replace(".tsvx", "") for f in onlyfiles[0:60]]
+        val_doc_id = [f.replace(".tsvx", "") for f in onlyfiles[60:80]]
+        test_doc_id = [f.replace(".tsvx", "") for f in onlyfiles[80:]]
+        processor = Preprocessor(dataset, datapoint)
+        corpus = processor.load_dataset(corpus_dir)
+        corpus = list(sorted(corpus, key=lambda x: x['doc_id']))
+        train = [doc for doc in corpus if doc['doc_id'] in train_doc_id]
+        test = [doc for doc in corpus if doc['doc_id'] in test_doc_id]
+        validate = [doc for doc in corpus if doc['doc_id'] in val_doc_id]
+
+        processed_path = 'datasets/IC/train.json'
+        train = processor.process_and_save(train, processed_path)
+
+        processed_path = 'datasets/IC/val.json'
+        val = processor.process_and_save(validate, processed_path)
+
+        processed_path = 'datasets/IC/test.json'
         test = processor.process_and_save(test, processed_path)
     
     elif dataset == 'ESL':

@@ -88,18 +88,22 @@ def hieve_datapoint_v3(my_dict, doc_info=True):
             if (_s1 == s1 and _s2 == s2) or (_s1 == s2 and _s2 == s1):
                 e1_poss = get_new_poss(e1['token_id'], sents_tok_span[_s1][0], sents_tok_span)
                 e2_poss = get_new_poss(e2['token_id'], sents_tok_span[_s2][0], sents_tok_span)
-                if e1['mention'] in tokens[e1_poss[0]] and e2['mention'] in tokens[e2_poss[0]]:
-                    e1_point = {'position': e1_poss, 'mention': e1['mention'], 'sid': _s1}
-                    e2_point = {'position': e2_poss, 'mention': e2['mention'], 'sid': _s2}
-                    if e1_point not in triggers:
-                        triggers.append(e1_point)
-                    if e2_point not in triggers:
-                        triggers.append(e2_point)
-                    labels.append((triggers.index(e1_point), triggers.index(e2_point), rel))
-                else:
-                    print(f"{tokens} - {sents_tok_span}")
-                    print(f"{e1_poss} - {tokens[e1_poss]} - {e1['mention']}")
-                    print(f"{e2_poss} - {tokens[e2_poss]} - {e2['mention']}")
+                e1_point = {'position': e1_poss, 'mention': e1['mention'], 'sid': _s1}
+                e2_point = {'position': e2_poss, 'mention': e2['mention'], 'sid': _s2}
+                if e1_point not in triggers:
+                    triggers.append(e1_point)
+                if e2_point not in triggers:
+                    triggers.append(e2_point)
+                labels.append((triggers.index(e1_point), triggers.index(e2_point), rel))
+                if  any([tokens[i] not in e1['mention'] for i in e1_poss]) or any([tokens[i] not in e2['mention'] for i in e2_poss]):
+                #     print(f"{tokens} - {sents_tok_span}")
+                #     print(f"{e1_poss} - {' '.join([tokens[i] for i in e1_poss])} - {e1['mention']}")
+                #     print(f"{e2_poss} - {' '.join([tokens[i] for i in e2_poss])} - {e2['mention']}")
+                #     continue
+                # else:
+                    print(f"tokens: {tokens} - sent_span: {sents_tok_span}")
+                    print(f"e1: {e1_poss} - {tokens[e1_poss[0]: e1_poss[-1] + 1]} - {e1['mention']}")
+                    print(f"e2: {e2_poss} - {tokens[e2_poss[0]: e2_poss[-1] + 1]} - {e2['mention']}")
                     continue
                 
         if len(labels) > 0:
