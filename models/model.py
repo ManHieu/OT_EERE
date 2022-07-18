@@ -48,6 +48,8 @@ class PlOTEERE(pl.LightningModule):
         self.best_vals = [0, 0, 0]
     
     def training_step(self, batch, batch_idx):
+        # if self.current_epoch > 0:
+        #     self.model.OT_loss_weight = 0
         logits, loss, pred_loss, regu_loss, cost, labels = self.model(*batch)
         self.log_dict({'train_loss': loss, 'pred_loss': pred_loss, 'regu_loss': regu_loss, 'OT_loss': cost}, prog_bar=True)
         return loss

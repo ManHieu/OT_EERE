@@ -31,7 +31,7 @@ class OTEERE(nn.Module):
                 fn_actv: str = 'relu',
                 regular_loss_weight: float = 0.1,
                 OT_loss_weight: float = 0.1,
-                tune_encoder: bool = True,
+                tune_encoder: bool = False,
                 residual_type: str = 'concat',
                 ) -> None:
         super().__init__()
@@ -201,7 +201,8 @@ class OTEERE(nn.Module):
                     try:
                         tok_presentation = _context_emb[i, token_mapping, :]
                     except:
-                        pdb.set_trace()
+                        # pdb.set_trace()
+                        pass
                     tok_presentation = torch.max(tok_presentation, dim=0)[0] # (encoder_hidden_size)
                 else:
                     tok_presentation = torch.zeros_like(_context_emb[0, 0])

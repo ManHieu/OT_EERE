@@ -100,21 +100,6 @@ def run(defaults: Dict, random_state):
         collate_fn=train_data.my_collate,
     )
         
-    val_data = load_dataset(
-            name=data_args.datasets,
-            tokenizer=data_args.tokenizer,
-            encoder=data_args.encoder,
-            data_dir=dev_fold_dir,
-            max_input_length=data_args.max_seq_length,
-            seed=1741,
-            split = 'val')
-    val_data_loader = DataLoader(
-        dataset=val_data,
-        batch_size=data_args.batch_size,
-        shuffle=False,
-        collate_fn=train_data.my_collate,
-    )
-
     test_lang = ['ur']
     test_loaders = {}
     for lang in test_lang:
@@ -134,6 +119,22 @@ def run(defaults: Dict, random_state):
             collate_fn=test_data.my_collate,
         )
         test_loaders[lang] = test_data_loader
+
+        val_data = load_dataset(
+                name=data_args.datasets,
+                tokenizer=data_args.tokenizer,
+                encoder=data_args.encoder,
+                data_dir=test_dir,
+                max_input_length=data_args.max_seq_length,
+                seed=1741,
+                split = 'val')
+        val_data_loader = DataLoader(
+            dataset=val_data,
+            batch_size=data_args.batch_size,
+            shuffle=False,
+            collate_fn=train_data.my_collate,
+        )
+
     
     number_step_in_epoch = len(train_data_loader)/training_args.gradient_accumulation_steps
     # construct name for the output directory
@@ -141,14 +142,14 @@ def run(defaults: Dict, random_state):
         training_args.output_dir,
         f'{args.job}'
         f'-{model_args.encoder_name_or_path.split("/")[-1]}'
-        f'-cross'
+        f'-cross-no_tune_encoder'
         f'-random_state{random_state}'
         f'-{model_args.residual_type}'
         f'-lr{training_args.lr}'
         f'-e_lr{training_args.encoder_lr}'
         f'-eps{training_args.num_epoches}'
         f'-regu_weight{training_args.regular_loss_weight}'
-        f'-OT_weight{training_args.OT_loss_weight}'
+        f'-OT_weight-yes-{training_args.OT_loss_weight}'
         f'-gcn_num_layers{model_args.gcn_num_layers}'
         f'-fn_actv{model_args.fn_actv}'
         f'-rnn_hidden{model_args.hidden_size}')
@@ -234,23 +235,23 @@ def run(defaults: Dict, random_state):
 
 def objective(trial: optuna.Trial):
     defaults = {
-        'lr': trial.suggest_categorical('lr', [1e-5, 3e-5, 5e-5, 7e-5, 1e-4]),
+        'lr': trial.suggest_categorical('lr', [3e-5, 5e-5, 7e-5]),
         'OT_max_iter': trial.suggest_categorical('OT_max_iter', [50]),
-        'encoder_lr': trial.suggest_categorical('encoder_lr', [1e-7, 3e-7, 5e-7, 1e-6, 3e-6, 5e-6, 7e-6, 1e-5, 3e-5]),
+        'encoder_lr': trial.suggest_categorical('encoder_lr', [3e-6, 5e-6, 7e-6, 1e-5]),
         'batch_size': trial.suggest_categorical('batch_size', [16]),
         'warmup_ratio': 0.1,
-        'num_epoches': trial.suggest_categorical('num_epoches', [20, 30, 40, 50]), # 
+        'num_epoches': trial.suggest_categorical('num_epoches', [40]), # 
         # 'use_pretrained_wemb': trial.suggest_categorical('wemb', [True, False]),
-        'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.1]),
-        'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.1]),
+        'regular_loss_weight': trial.suggest_categorical('regular_loss_weight', [0.05, 0.01, 0.07]),
+        'OT_loss_weight': trial.suggest_categorical('OT_loss_weight', [0.01, 0.005, 0.05, 0.007, 0.05]),
         'distance_emb_size': trial.suggest_categorical('distance_emb_size', [0]),
         # 'gcn_outp_size': trial.suggest_categorical('gcn_outp_size', [256, 512]),
         'seed': 1741,
-        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3]),
-        'hidden_size': trial.suggest_categorical('hidden_size', [768]),
-        'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [1]),
-        'fn_actv': trial.suggest_categorical('fn_actv', ['leaky_relu']), # 'relu', 'tanh', 'hardtanh', 'silu'
-        'residual_type': trial.suggest_categorical('residual_type', ['addtive'])
+        'gcn_num_layers': trial.suggest_categorical('gcn_num_layers', [2, 3, 4]),
+        'hidden_size': trial.suggest_categorical('hidden_size', [512, 768]),
+        'rnn_num_layers': trial.suggest_categorical('rnn_num_layers', [2]),
+        'fn_actv': trial.suggest_categorical('fn_actv', ['relu', 'leaky_relu', 'relu6', 'silu']), # 'relu', 'tanh', 'hardtanh', 'silu'
+        'residual_type': trial.suggest_categorical('residual_type', ['concat']) #, 'concat'])
     }
 
     random_state = defaults['seed']
